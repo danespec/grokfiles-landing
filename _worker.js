@@ -17,6 +17,12 @@ const FRONTDOOR_PATHS = new Set([
   "/support"
 ]);
 
+const FRESH_PROOF_PATHS = new Set([
+  "/sitemap.xml",
+  "/sitemap-index.xml",
+  "/robots.txt"
+]);
+
 function cleanPath(pathname) {
   return pathname.replace(/\/+$/, "") || "/";
 }
@@ -69,6 +75,12 @@ export default {
       path === "/app-ads.txt"
     ) {
       return serveFrontdoor(request, env);
+    }
+
+    if ((request.method === "GET" || request.method === "HEAD") && FRESH_PROOF_PATHS.has(path)) {
+      const freshUrl = new URL(request.url);
+      freshUrl.searchParams.set("gah_origin_fresh", "GAH-HARDENING-FOLLOWUP-001");
+      return proxyProofLayer(new Request(freshUrl.toString(), request));
     }
 
     return proxyProofLayer(request);
