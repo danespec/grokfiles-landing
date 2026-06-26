@@ -13,7 +13,8 @@ const FRONTDOOR_PATHS = new Set([
   "/live",
   "/donate",
   "/faq",
-  "/contact"
+  "/contact",
+  "/support"
 ]);
 
 function cleanPath(pathname) {
