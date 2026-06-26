@@ -65,7 +65,8 @@ export default {
     if (
       FRONTDOOR_PATHS.has(path) ||
       url.pathname.startsWith("/frontdoor/") ||
-      path === "/ads.txt"
+      path === "/ads.txt" ||
+      path === "/app-ads.txt"
     ) {
       return serveFrontdoor(request, env);
     }
