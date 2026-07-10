@@ -1,0 +1,100 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 237,
+  "page_id": "page_237",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_237.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_237.ocr.txt",
+  "image_metadata": {
+    "bytes": 12161140,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "43049cc74d36948684d1702a4f4212d20fde68342bc56c6ba719f30d0e9ca1ba"
+  },
+  "ocr_text": "| \\ 7 ‘ { a j\n\\ p \\ Te { : =f t Zab —— >. “\n\\ 4 Pee wh! Ds \\ 2 ’ x , [\n= . ee r\n} nt A Bai S Wi\n’ Sie Aaa ; ; he - |\n\\ Se? a 2 a. ‘ ae AT Ss pant\n| A Ym irs Hh / rie See ee CF viiam, “ UTLE sy \\ |\nDear : : eS aie me ae - “ee ce\nee f DRS i, f+: ine SF area .)\nSn es oe Se. =\nRate ae rh ‘ pes SSS ss, a fe i\nwoe — % Ew i “ ae YEE “SS “ ge, Se ae = a\nay\nx\nChe “les |\nHOUSE_OVERSIGHT_000237\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A color photograph shows a person reclining in a hammock tied between two small trees on a sandy area scattered with rocks and some driftwood. The person is wearing a white shirt and blue pants with sunglasses. In the background, there are several paddleboards and trees. Below the photograph, there is a handwritten note.",
+    "Layout: photo at top center",
+    "Layout: handwritten note below photo",
+    "Photo/image candidate at top center: Person reclining in a hammock outdoors among trees and paddleboards on sandy ground."
+  ],
+  "observations": [
+    "A color photograph shows a person reclining in a hammock tied between two small trees on a sandy area scattered with rocks and some driftwood. The person is wearing a white shirt and blue pants with sunglasses. In the background, there are several paddleboards and trees. Below the photograph, there is a handwritten note.",
+    "Layout: photo at top center",
+    "Layout: handwritten note below photo",
+    "Photo/image candidate at top center: Person reclining in a hammock outdoors among trees and paddleboards on sandy ground."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000237"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below photo",
+      "text_as_seen": "Let the next fifty years be more full of photos and time like these",
+      "confidence": "medium",
+      "note": "Handwriting is somewhat clear but 'time' is uncertain."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:46.224Z",
+    "response_id": "resp_01c865f04f26170c006a50313d17048193ab44f07b4e596ad9",
+    "raw_output_sha256": "c40fd56846d7b5b677d1730a6711cfe2ae3b2b611d3972294a9b34e602486c31"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01c865f04f26170c006a50313d17048193ab44f07b4e596ad9",
+    "enriched_at": "2026-07-09T23:39:46.224Z"
+  },
+  "visual_summary": "A color photograph shows a person reclining in a hammock tied between two small trees on a sandy area scattered with rocks and some driftwood. The person is wearing a white shirt and blue pants with sunglasses. In the background, there are several paddleboards and trees. Below the photograph, there is a handwritten note.",
+  "layout": [
+    "photo at top center",
+    "handwritten note below photo"
+  ],
+  "handwriting": [
+    {
+      "location": "below photo",
+      "text_as_seen": "Let the next fifty years be more full of photos and time like these",
+      "confidence": "medium",
+      "note": "Handwriting is somewhat clear but 'time' is uncertain."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Person reclining in a hammock outdoors among trees and paddleboards on sandy ground.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

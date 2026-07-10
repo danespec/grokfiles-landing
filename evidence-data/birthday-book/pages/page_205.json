@@ -1,0 +1,113 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 205,
+  "page_id": "page_205",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_205.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_205.ocr.txt",
+  "image_metadata": {
+    "bytes": 222776,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "50840926af318fc436323fd92579e2856d60ef08ea0ceb55a94cd218975e3afe"
+  },
+  "ocr_text": "yoses all over fhe yoom 50 ZL asked\niy) 0 xP ey Were for f Parlin fou had\nLA pel friend COMM TY OF EK ete.) and\nyt pres “ £or You... Phat Was\nDre @ She r70sh sweeter /speera!\npinenf Lee fad with you. JAep |\ndoer “was P| black A/e Litth vay\nParty. FT Mas $50 roc: ted Pha f- Lee\njavated FOIE Jee Green bers aas There\nfo ZL Joo fed really cool 4s Z just\nspake wor /5/ by ar fear SKearrt anv\nStere was One water for €ach) Coup le...\nyo te foot WAs CVO ZL SAM sare\nc® Orrae at VAC Vt fo re For KPa\npod ODD pee seh ye ne foe\nJily for my bith day... Jeftry tut\nZz Jove eto? ye /S Sha fF Some fin ef\nsor Cah Le Le SO Swees % sCactrmenrte |\nPda yee for sla i'n Shy t pat ye\npoursdt wil me! (Vert tas a Ame er |\nWere ofr7'vin aroun uth Jo Jo and\nhad On C14 for %FO¢CH f9° 78\nshed by for_ ar jm profile\nCAI Ov SIP Ob Zz a (weg! Jrave aR Treat\nS77 She Srer? en Las Yo Ute So Cese. |\nHOUSE_OVERSIGHT_000205\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten letter page, mostly clear handwriting with one blacked-out word near the middle. The letter describes personal anecdotes about roses, a black tie birthday party, people named Ace Greenbergs, waitress service, and a birthday in July. The bottom left corner of the page is partially cut off. The handwriting is cursive and legible except for the redacted word.",
+    "Layout: Handwritten text filling most of the page",
+    "Layout: A blacked-out rectangular area around the middle of the text"
+  ],
+  "observations": [
+    "Handwritten letter page, mostly clear handwriting with one blacked-out word near the middle. The letter describes personal anecdotes about roses, a black tie birthday party, people named Ace Greenbergs, waitress service, and a birthday in July. The bottom left corner of the page is partially cut off. The handwriting is cursive and legible except for the redacted word.",
+    "Layout: Handwritten text filling most of the page",
+    "Layout: A blacked-out rectangular area around the middle of the text"
+  ],
+  "dates": [
+    "July"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000205"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "full page except bottom left corner",
+      "text_as_seen": "roses all over the room so I asked who they were for (thinking you had a girlfriend coming over etc.) and you replied \"For You\"... that was one of the most sweetest/special moments I've had with you. Then there was [redacted] black tie birthday party. I was so excited that you invited me... Ace Greenbergs was there so I looked really cool as I just started working at 3ear Steams and there was one waiter for each couple... now that was \"chic\". I still smile each morning at the picture from that party which you sent me this past July for my birthday... Jeffrey what I love about you is that sometimes you can be just so sweet & sentimental... thank you for sharing that part of yourself with me! Next was a time you were driving around with Jo Jo and had a craving for frozen yogurt so stopped by for an impromptu visit cause you know I always have a treat in the freezer... you were so cute",
+      "confidence": "medium",
+      "note": "Contains one blacked-out word."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "middle of page, within text line about birthday party",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscures one word."
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Bottom left corner is partly cut off, some text missing."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:35:16.800Z",
+    "response_id": "resp_0498452d7fe75ff0006a50302d92d08194a4ffae57abab0fdc",
+    "raw_output_sha256": "82f8bde10d89c4a9a44af1547f07c8031b92c99a4757812b6f362e08577d600d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0498452d7fe75ff0006a50302d92d08194a4ffae57abab0fdc",
+    "enriched_at": "2026-07-09T23:35:16.800Z"
+  },
+  "visual_summary": "Handwritten letter page, mostly clear handwriting with one blacked-out word near the middle. The letter describes personal anecdotes about roses, a black tie birthday party, people named Ace Greenbergs, waitress service, and a birthday in July. The bottom left corner of the page is partially cut off. The handwriting is cursive and legible except for the redacted word.",
+  "layout": [
+    "Handwritten text filling most of the page",
+    "A blacked-out rectangular area around the middle of the text"
+  ],
+  "handwriting": [
+    {
+      "location": "full page except bottom left corner",
+      "text_as_seen": "roses all over the room so I asked who they were for (thinking you had a girlfriend coming over etc.) and you replied \"For You\"... that was one of the most sweetest/special moments I've had with you. Then there was [redacted] black tie birthday party. I was so excited that you invited me... Ace Greenbergs was there so I looked really cool as I just started working at 3ear Steams and there was one waiter for each couple... now that was \"chic\". I still smile each morning at the picture from that party which you sent me this past July for my birthday... Jeffrey what I love about you is that sometimes you can be just so sweet & sentimental... thank you for sharing that part of yourself with me! Next was a time you were driving around with Jo Jo and had a craving for frozen yogurt so stopped by for an impromptu visit cause you know I always have a treat in the freezer... you were so cute",
+      "confidence": "medium",
+      "note": "Contains one blacked-out word."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "middle of page, within text line about birthday party",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscures one word."
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "July"
+  ],
+  "confidence": "medium"
+}

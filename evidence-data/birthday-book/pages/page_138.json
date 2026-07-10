@@ -1,0 +1,103 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 138,
+  "page_id": "page_138",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_138.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_138.ocr.txt",
+  "image_metadata": {
+    "bytes": 5913398,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "55b8cd5c1f79b0942d57d9e704d29bbb796fe8e43d0d27ed6b3edd0854d337b3"
+  },
+  "ocr_text": "And + iin ko Sooacp Gere f™\n}\n’ 4\nI Ky local he Kauing Kita arouad\nju hk ouleol Muddealy Le Alone .+++\n°\na\na” eae\n4 + [Yh aas 3 . 3 fa ‘ee fi\n; Sa SIS 3:2 j on boleh mee ise Se «1:\ni. Sa oe ieee wo 8 SS .\nDOSS ee eae / A mT Re, | ee\na a\nao ~ Pa? Por.\n* OR a i\n, Seo eee\n. =e = : , ‘ :\nPS ae > a = ; 4\nRoe Si ah = lai lites ;\nle ie ee ae we -\n- ee uo ~~ — hs <\nnari sais ae pat\nzi — Ss ~~\nae pt ge\nHOUSE_OVERSIGHT_000138\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a handwritten note at the top half and a photograph in the bottom half. The note is written in black ink on a white background. The photograph depicts a solitary person in a small boat on a body of water with a distant shoreline and hills. The sunlight creates a reflective, shimmering effect on the water's surface.",
+    "Layout: handwritten text top half",
+    "Layout: photograph bottom half",
+    "Photo/image candidate at bottom half of page: Photograph of a person sitting alone in a small boat on shimmering water during sunset or sunrise, with distant hills visible on the horizon."
+  ],
+  "observations": [
+    "The page contains a handwritten note at the top half and a photograph in the bottom half. The note is written in black ink on a white background. The photograph depicts a solitary person in a small boat on a body of water with a distant shoreline and hills. The sunlight creates a reflective, shimmering effect on the water's surface.",
+    "Layout: handwritten text top half",
+    "Layout: photograph bottom half",
+    "Photo/image candidate at bottom half of page: Photograph of a person sitting alone in a small boat on shimmering water during sunset or sunrise, with distant hills visible on the horizon."
+  ],
+  "dates": [],
+  "document_strings": [
+    "And + iin ko Sooacp Gere f™",
+    "HOUSE_OVERSIGHT_000138"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "And often, no sooner were you getting used to having him around, you would suddenly be alone .... again",
+      "confidence": "medium",
+      "note": "Handwriting is cursive and legible, with slight variations in clarity."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Bottom edge of photo slightly tilted, exact dimensions unclear"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:24:46.849Z",
+    "response_id": "resp_00e899966711e957006a502dba1f5c8197b430e0e710c7c204",
+    "raw_output_sha256": "22ad696c84e75e8a9bf2d6da2a4c26b887395eb0b167769698e8ff6e634e1f0f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00e899966711e957006a502dba1f5c8197b430e0e710c7c204",
+    "enriched_at": "2026-07-09T23:24:46.849Z"
+  },
+  "visual_summary": "The page contains a handwritten note at the top half and a photograph in the bottom half. The note is written in black ink on a white background. The photograph depicts a solitary person in a small boat on a body of water with a distant shoreline and hills. The sunlight creates a reflective, shimmering effect on the water's surface.",
+  "layout": [
+    "handwritten text top half",
+    "photograph bottom half"
+  ],
+  "handwriting": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "And often, no sooner were you getting used to having him around, you would suddenly be alone .... again",
+      "confidence": "medium",
+      "note": "Handwriting is cursive and legible, with slight variations in clarity."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom half of page",
+      "description": "Photograph of a person sitting alone in a small boat on shimmering water during sunset or sunrise, with distant hills visible on the horizon.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

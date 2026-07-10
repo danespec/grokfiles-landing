@@ -1,0 +1,142 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 122,
+  "page_id": "page_122",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_122.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_122.ocr.txt",
+  "image_metadata": {
+    "bytes": 5570927,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "54658b85b130b7a617f227c2109913f480306faf43c1985a0db3b6da485031bc"
+  },
+  "ocr_text": "Nahe ee <a \" - 1\nmen ht fe eo\nOeics\nPaaS A, 7\na ane\nDS eae aaa\nMeme 4) f) - . es\nPectiaa ec yer. 2! F RCE os ta ' Anak\nae i 4 a! i!\naaa 4 Dy a 2 ‘\ni }, in ei :\nBeers | ' ‘ fa a Fe: An\nRetro tay) : pe .\nPORT UNn ss a 2\nBeret 57: Saree ht : .\nMarries ieelrt's 5\" . t\ntie ht i.\nRea are hip’,\nORS ear ®\nBEN! :\n2) EG a aaa :\nis\nReais? 2 5\nees '’. 2 F\nHOUSE_OVERSIGHT_000122\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page with a collage of four color photographs of the same person arranged in a 2x2 grid in the center. Handwritten text above and below the photo collage on a white background.",
+    "Layout: Handwritten text at top center",
+    "Layout: Four-photo collage in center",
+    "Layout: Handwritten text below photo collage",
+    "Photo/image candidate at center of page: Four color photographs arranged in a 2x2 grid showing the same elderly male individual in similar poses with varying color filters and slight changes in brightness."
+  ],
+  "observations": [
+    "Page with a collage of four color photographs of the same person arranged in a 2x2 grid in the center. Handwritten text above and below the photo collage on a white background.",
+    "Layout: Handwritten text at top center",
+    "Layout: Four-photo collage in center",
+    "Layout: Handwritten text below photo collage",
+    "Photo/image candidate at center of page: Four color photographs arranged in a 2x2 grid showing the same elderly male individual in similar poses with varying color filters and slight changes in brightness."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Nahe ee <a \" - 1",
+    "men ht fe eo",
+    "Oeics",
+    "PaaS A, 7",
+    "a ane",
+    "DS eae aaa",
+    "Meme 4) f) - . es",
+    "Pectiaa ec yer. 2! F RCE os ta ' Anak",
+    "ae i 4 a! i!",
+    "aaa 4 Dy a 2 ‘",
+    "i }, in ei :",
+    "Beers | ' ‘ fa a Fe: An",
+    "Retro tay) : pe .",
+    "PORT UNn ss a 2",
+    "Beret 57: Saree ht : .",
+    "Marries ieelrt's 5\" . t",
+    "tie ht i.",
+    "Rea are hip’,",
+    "ORS ear ®",
+    "BEN! :",
+    "2) EG a aaa :",
+    "is",
+    "Reais? 2 5",
+    "ees '’. 2 F",
+    "HOUSE_OVERSIGHT_000122",
+    "JOY",
+    "Keep going",
+    "Yng man"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Joy",
+      "confidence": "high",
+      "note": "Single word, centered above photos"
+    },
+    {
+      "location": "below photo collage",
+      "text_as_seen": "Keep going Young man",
+      "confidence": "high",
+      "note": "Two lines of text; second line starts with 'Yng' likely abbreviation for 'Young'"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:34.115Z",
+    "response_id": "resp_0dcb6461ccd7be12006a502d345c5c8194bc0ca0175f8af343",
+    "raw_output_sha256": "3fefabe830207a706d13a82334917a87b7e09daf17a8bb19074d944fb4388a3c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0dcb6461ccd7be12006a502d345c5c8194bc0ca0175f8af343",
+    "enriched_at": "2026-07-09T23:22:34.115Z"
+  },
+  "visual_summary": "Page with a collage of four color photographs of the same person arranged in a 2x2 grid in the center. Handwritten text above and below the photo collage on a white background.",
+  "layout": [
+    "Handwritten text at top center",
+    "Four-photo collage in center",
+    "Handwritten text below photo collage"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Joy",
+      "confidence": "high",
+      "note": "Single word, centered above photos"
+    },
+    {
+      "location": "below photo collage",
+      "text_as_seen": "Keep going Young man",
+      "confidence": "high",
+      "note": "Two lines of text; second line starts with 'Yng' likely abbreviation for 'Young'"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center of page",
+      "description": "Four color photographs arranged in a 2x2 grid showing the same elderly male individual in similar poses with varying color filters and slight changes in brightness.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

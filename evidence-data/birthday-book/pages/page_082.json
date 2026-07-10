@@ -1,0 +1,98 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 82,
+  "page_id": "page_082",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_082.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_082.ocr.txt",
+  "image_metadata": {
+    "bytes": 10594317,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "6e52aab9b3e2c73c09ded937a578cd589c890f572b94804c5641053e262e486e"
+  },
+  "ocr_text": "a 2 ; ao p=\nHOUSE_OVERSIGHT_000082\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "Image shows two postage stamps affixed to a piece of yellow paper. Both stamps have images of animals and text indicating a 37 cent USA postage value. Left stamp features a dog's face with text 'Neuter Spay USA 37'. Right stamp features a cat's face with text 'Spay Neuter USA 37'. Stamps show some creases and signs of wear.",
+    "Layout: yellow paper background",
+    "Layout: two postage stamps centered horizontally",
+    "Photo/image candidate at center left: postage stamp with dog's face, text includes 'Neuter', 'Spay', 'USA', and '37'",
+    "Photo/image candidate at center right: postage stamp with cat's face, text includes 'Spay', 'Neuter', 'USA', and '37'"
+  ],
+  "observations": [
+    "Image shows two postage stamps affixed to a piece of yellow paper. Both stamps have images of animals and text indicating a 37 cent USA postage value. Left stamp features a dog's face with text 'Neuter Spay USA 37'. Right stamp features a cat's face with text 'Spay Neuter USA 37'. Stamps show some creases and signs of wear.",
+    "Layout: yellow paper background",
+    "Layout: two postage stamps centered horizontally",
+    "Photo/image candidate at center left: postage stamp with dog's face, text includes 'Neuter', 'Spay', 'USA', and '37'",
+    "Photo/image candidate at center right: postage stamp with cat's face, text includes 'Spay', 'Neuter', 'USA', and '37'"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000082",
+    "a 2 ; ao p=",
+    "Neuter",
+    "Spay",
+    "USA",
+    "37"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:01.178Z",
+    "response_id": "resp_0a5737351e116894006a502bab8ba0819696d19cbb90367226",
+    "raw_output_sha256": "f2dc152e9b0e89bb786c2cabda8d8d933554735828f99468bdef6b7f9e9fcee7"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0a5737351e116894006a502bab8ba0819696d19cbb90367226",
+    "enriched_at": "2026-07-09T23:16:01.178Z"
+  },
+  "visual_summary": "Image shows two postage stamps affixed to a piece of yellow paper. Both stamps have images of animals and text indicating a 37 cent USA postage value. Left stamp features a dog's face with text 'Neuter Spay USA 37'. Right stamp features a cat's face with text 'Spay Neuter USA 37'. Stamps show some creases and signs of wear.",
+  "layout": [
+    "yellow paper background",
+    "two postage stamps centered horizontally"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center left",
+      "description": "postage stamp with dog's face, text includes 'Neuter', 'Spay', 'USA', and '37'",
+      "confidence": "high"
+    },
+    {
+      "location": "center right",
+      "description": "postage stamp with cat's face, text includes 'Spay', 'Neuter', 'USA', and '37'",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

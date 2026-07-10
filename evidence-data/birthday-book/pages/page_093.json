@@ -1,0 +1,84 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 93,
+  "page_id": "page_093",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_093.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_093.ocr.txt",
+  "image_metadata": {
+    "bytes": 20304227,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "270bd454071f70cf2f60111f3f705d33c049870d5d17a268b0b2e03f623a50d6"
+  },
+  "ocr_text": "|\n|\nHOUSE_OVERSIGHT_000093\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "The image shows a yellowed sheet of music with printed musical notation and lyrics. The text is partially faded and somewhat difficult to read, but musical bars, notes, and some textual lyrics are visible across the entire page. The sheet contains multiple staves arranged in two columns with text printed above and within the music notation. There is no handwriting, signatures, photographs, or drawings visible.",
+    "Layout: two-column page layout",
+    "Layout: musical notation with lyrics",
+    "Layout: text printed above and between music staves"
+  ],
+  "observations": [
+    "The image shows a yellowed sheet of music with printed musical notation and lyrics. The text is partially faded and somewhat difficult to read, but musical bars, notes, and some textual lyrics are visible across the entire page. The sheet contains multiple staves arranged in two columns with text printed above and within the music notation. There is no handwriting, signatures, photographs, or drawings visible.",
+    "Layout: two-column page layout",
+    "Layout: musical notation with lyrics",
+    "Layout: text printed above and between music staves"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000093",
+    "HEY CAN'T TAKE THAT AWAY FROM ME",
+    "John and lyrics by GEORGE GERSHWIN and IRA GERSHWIN"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [
+    "Some text is faded and difficult to read fully in this yellowed sheet music image"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:17:51.160Z",
+    "response_id": "resp_04f68ddd5a73bf3c006a502c18a3308190ae6e25a1555eb55b",
+    "raw_output_sha256": "175f4ae5a4dd584963dec13fda3c979eb80e6d962e8b0d732ac456515f8cff93"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04f68ddd5a73bf3c006a502c18a3308190ae6e25a1555eb55b",
+    "enriched_at": "2026-07-09T23:17:51.160Z"
+  },
+  "visual_summary": "The image shows a yellowed sheet of music with printed musical notation and lyrics. The text is partially faded and somewhat difficult to read, but musical bars, notes, and some textual lyrics are visible across the entire page. The sheet contains multiple staves arranged in two columns with text printed above and within the music notation. There is no handwriting, signatures, photographs, or drawings visible.",
+  "layout": [
+    "two-column page layout",
+    "musical notation with lyrics",
+    "text printed above and between music staves"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

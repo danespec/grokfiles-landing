@@ -1,0 +1,116 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 173,
+  "page_id": "page_173",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_173.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_173.ocr.txt",
+  "image_metadata": {
+    "bytes": 163855,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2226529e416cb05aae655bb02d587f8664f8e691d0e60b739115b74319c253ea"
+  },
+  "ocr_text": "oe a fof ® ie a at be Psue ; a of pea Edie tet 2) 4 we . é gel Met ugh? “3 af tg dpe\".\noe oa é of of e ig f\n\nae ey) ao, Oe oe 5 g sual Fn f Agu oce i aa wae\nSs re na dog teat fk ag ob genie fh fff iy og gg Wit, go é ga os Janis\nee Fy * i . , ‘ ; fi é .\nRE ow fF BO Peet a ov é 4 oa yf a wf we fe fey we pe Po oF\npee ge i of ftp poy sha wide few P*\n\neer af ea & 'd ai Jf § of ab & FI at a pe fel hed et fe gE } é “Hee G eared | eae ot ef\noe . fet f fo geodal pdt sel fF wf Ps gn bi bed\n\nBeOS . a ; f ! °\nae Pi 4 : aa 4 - og on ; ; * fs sf aA . waft P af £28 ad hel\nEe og fi ist wit AE oF ae fit 3 fife a eer ee Bos i pokey? at re bell - z fe fsishl aes\noe RP Lae hay ay Lee ftp B aie EG mee On dealt Bat eek 2, i / é\n\nee ‘a . aug foot Fate Af got feet ed eee a\n\nnea ogg per ae ; : a\n\nbees od et fo ea! #, fe aie on’\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a handwritten note in dark pencil or pen on a mostly blank white page. The note is located centrally and slightly rightward on the page. The handwriting is cursive and somewhat faint, making some words less distinct. There is a signature-like scribble at the bottom right of the note. The left margin of the page shows a shadow or darker vertical strip, possibly a binding edge or scan artifact. There are no photographs, drawings, or other visuals present on the page. No dates are specifically written as a date format.",
+    "Layout: handwritten note centered on page",
+    "Layout: signature-like text below the note",
+    "Layout: vertical dark strip on left edge"
+  ],
+  "observations": [
+    "The page contains a handwritten note in dark pencil or pen on a mostly blank white page. The note is located centrally and slightly rightward on the page. The handwriting is cursive and somewhat faint, making some words less distinct. There is a signature-like scribble at the bottom right of the note. The left margin of the page shows a shadow or darker vertical strip, possibly a binding edge or scan artifact. There are no photographs, drawings, or other visuals present on the page. No dates are specifically written as a date format.",
+    "Layout: handwritten note centered on page",
+    "Layout: signature-like text below the note",
+    "Layout: vertical dark strip on left edge"
+  ],
+  "dates": [
+    "3/8/"
+  ],
+  "document_strings": [
+    "Here are the pictures of J_____ found in an extensive search of the Daily News files reflecting his ascendancy and high profile - we found his vital statistics, his birthday (3/8/____), the date of birth (July 11), his ancestry of birth (______), his family life (wife, 3 children), and his profession to happy times, best wishes, and peace"
+  ],
+  "signatures": [
+    {
+      "location": "below handwriting at bottom right",
+      "text_as_seen": "signature scribble",
+      "confidence": "medium",
+      "note": "Signature-like text present but exact wording uncertain."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "center to right center of page",
+      "text_as_seen": "Here are the pictures of J_____ found in an extensive search of the Daily News files reflecting his ascendancy and high profile - we found his vital statistics, his birthday (3/8/____), the date of birth (July 11), his ancestry of birth (______), his family life (wife, 3 children), and his profession to happy times, best wishes, and peace",
+      "confidence": "medium",
+      "note": "Some words are unclear, including partial names and places."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Handwriting is faint and partially unclear, with some words and name characters uncertain or omitted"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:29:47.577Z",
+    "response_id": "resp_0b7be5cd5eb9e250006a502ee47d608195ab1be0ea8dd0d006",
+    "raw_output_sha256": "d2fc83ab1973d3556df6de2a8140abccee5829e1ec70f2be72d262264ad47258"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b7be5cd5eb9e250006a502ee47d608195ab1be0ea8dd0d006",
+    "enriched_at": "2026-07-09T23:29:47.577Z"
+  },
+  "visual_summary": "The page contains a handwritten note in dark pencil or pen on a mostly blank white page. The note is located centrally and slightly rightward on the page. The handwriting is cursive and somewhat faint, making some words less distinct. There is a signature-like scribble at the bottom right of the note. The left margin of the page shows a shadow or darker vertical strip, possibly a binding edge or scan artifact. There are no photographs, drawings, or other visuals present on the page. No dates are specifically written as a date format.",
+  "layout": [
+    "handwritten note centered on page",
+    "signature-like text below the note",
+    "vertical dark strip on left edge"
+  ],
+  "handwriting": [
+    {
+      "location": "center to right center of page",
+      "text_as_seen": "Here are the pictures of J_____ found in an extensive search of the Daily News files reflecting his ascendancy and high profile - we found his vital statistics, his birthday (3/8/____), the date of birth (July 11), his ancestry of birth (______), his family life (wife, 3 children), and his profession to happy times, best wishes, and peace",
+      "confidence": "medium",
+      "note": "Some words are unclear, including partial names and places."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "below handwriting at bottom right",
+      "text_as_seen": "signature scribble",
+      "confidence": "medium",
+      "note": "Signature-like text present but exact wording uncertain."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "3/8/"
+  ],
+  "confidence": "medium"
+}

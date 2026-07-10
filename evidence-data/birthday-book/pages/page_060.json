@@ -1,0 +1,128 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 60,
+  "page_id": "page_060",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_060.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_060.ocr.txt",
+  "image_metadata": {
+    "bytes": 130178,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d70b3353fd0797ae20f002e6c581d6f2c72784639c8f4da5f6423e551b4447c6"
+  },
+  "ocr_text": ": — Copeona Motel\n: “Yewish S 139 log 20 2nd 7 eu\nos (tv us DOWN at Tohle wrth ugly gies gat {\n{Hom Gout You have otoy Peoty OMe S\nNe qet iy (Zoom Tack Say 5 Doat ‘toucl ay\nhave You pum UDR Rig lh on US hsael\nOA j\nthew ue. Sey Popo OW Cte\nLoo 1A Dene [eno , M39 oe would\nRowiv\nee of -S0 fay Aub US By Kitcutad\n(Fm VS all ovuie Howes Isacl( Toll vs ty\nvenue ( Nav die Came (oa cew\nHOUSE_OVERSIGHT_000060\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains handwritten notes with several lines of text describing incidents and experiences at a hotel. The handwriting is in black ink on a white background. There are no images, drawings, or photographs on the page.",
+    "Layout: handwritten text in four distinct paragraphs, spaced vertically"
+  ],
+  "observations": [
+    "The page contains handwritten notes with several lines of text describing incidents and experiences at a hotel. The handwriting is in black ink on a white background. There are no images, drawings, or photographs on the page.",
+    "Layout: handwritten text in four distinct paragraphs, spaced vertically"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Concord Hotel",
+    "Jewish singles weekend sit us DOWN at table with ugly girls & I told them don't you have any pretty one's",
+    "We get in Room Jack say's Don't touch my hair, you DUMP water Right on his head then we set Room on fire.",
+    "throwing food in Dining Room, NO one would serve us - so they put us By Kitchen",
+    "Gave us all our Money Back & told us to Leave & Never come Back"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top half, first paragraph",
+      "text_as_seen": "Concord Hotel Jewish singles weekend sit us DOWN at table with ugly girls & I told them don't you have any pretty one's",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    },
+    {
+      "location": "middle, second paragraph",
+      "text_as_seen": "We get in Room Jack say's Don't touch my hair, you DUMP water Right on his head then we set Room on fire.",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    },
+    {
+      "location": "below second paragraph, third paragraph",
+      "text_as_seen": "throwing food in Dining Room, NO one would serve us - so they put us By Kitchen",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    },
+    {
+      "location": "bottom, fourth paragraph",
+      "text_as_seen": "Gave us all our Money Back & told us to Leave & Never come Back",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:16.074Z",
+    "response_id": "resp_076e7d59d5a7fbca006a502ac9f7a081968c61d833ffa60621",
+    "raw_output_sha256": "ccdfd717346d9c7f6543e975ab30a379ef93d32b659cdb57adc5a4a641e09ae2"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_076e7d59d5a7fbca006a502ac9f7a081968c61d833ffa60621",
+    "enriched_at": "2026-07-09T23:12:16.074Z"
+  },
+  "visual_summary": "The page contains handwritten notes with several lines of text describing incidents and experiences at a hotel. The handwriting is in black ink on a white background. There are no images, drawings, or photographs on the page.",
+  "layout": [
+    "handwritten text in four distinct paragraphs, spaced vertically"
+  ],
+  "handwriting": [
+    {
+      "location": "top half, first paragraph",
+      "text_as_seen": "Concord Hotel Jewish singles weekend sit us DOWN at table with ugly girls & I told them don't you have any pretty one's",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    },
+    {
+      "location": "middle, second paragraph",
+      "text_as_seen": "We get in Room Jack say's Don't touch my hair, you DUMP water Right on his head then we set Room on fire.",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    },
+    {
+      "location": "below second paragraph, third paragraph",
+      "text_as_seen": "throwing food in Dining Room, NO one would serve us - so they put us By Kitchen",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    },
+    {
+      "location": "bottom, fourth paragraph",
+      "text_as_seen": "Gave us all our Money Back & told us to Leave & Never come Back",
+      "confidence": "high",
+      "note": "Handwriting is legible and clear."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,155 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 180,
+  "page_id": "page_180",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_180.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_180.ocr.txt",
+  "image_metadata": {
+    "bytes": 4103751,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5533ab8db66fb28f99ad7d129cabf13d2aba6f74a5f97e6f55b0bfda22292bce"
+  },
+  "ocr_text": "| * .\n‘ae I lwddary\nMus Vv ; . ;\n‘y ‘\nHOUSE_OVERSIGHT_000180\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page with a centered photo of an older person with white hair, glasses, a blue shirt, and a backpack. The person has their mouth wide open. There are handwritten notes above, below, and to the sides of the photo in blue ink.",
+    "Layout: Handwritten text above photo",
+    "Layout: Photo centered",
+    "Layout: Handwritten text left, right, and below photo",
+    "Photo/image candidate at Center of page: Photograph of an older person with white hair and glasses, wearing a blue shirt and backpack, mouth wide open."
+  ],
+  "observations": [
+    "A page with a centered photo of an older person with white hair, glasses, a blue shirt, and a backpack. The person has their mouth wide open. There are handwritten notes above, below, and to the sides of the photo in blue ink.",
+    "Layout: Handwritten text above photo",
+    "Layout: Photo centered",
+    "Layout: Handwritten text left, right, and below photo",
+    "Photo/image candidate at Center of page: Photograph of an older person with white hair and glasses, wearing a blue shirt and backpack, mouth wide open."
+  ],
+  "dates": [],
+  "document_strings": [
+    "For Jeffrey with birthday greetings",
+    "from",
+    "Munday",
+    "from the collection of photos by the late Doug Adams *, all depicting people yawning",
+    "* author of the \"Hitchhiker's Guide to the Galaxy\""
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Above photo",
+      "text_as_seen": "For Jeffrey with birthday greetings",
+      "confidence": "high",
+      "note": "Handwritten text in blue ink above the photo."
+    },
+    {
+      "location": "Left of photo",
+      "text_as_seen": "from",
+      "confidence": "high",
+      "note": "Single word handwritten in blue ink."
+    },
+    {
+      "location": "Right of photo",
+      "text_as_seen": "Munday",
+      "confidence": "high",
+      "note": "Single word handwritten in blue ink."
+    },
+    {
+      "location": "Below photo",
+      "text_as_seen": "from the collection of photos by the late Doug Adams *, all depicting people yawning",
+      "confidence": "high",
+      "note": "Multiple lines of handwritten text in blue ink below the photo."
+    },
+    {
+      "location": "Bottom of page below previous text",
+      "text_as_seen": "* author of the \"Hitchhiker's Guide to the Galaxy\"",
+      "confidence": "high",
+      "note": "Single line handwritten text referring to the author."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:30:55.897Z",
+    "response_id": "resp_08ada1841fdd7a12006a502f290c0881949fd902dbcaba717d",
+    "raw_output_sha256": "9e72897c8f9c89ebe3205688e39ca9013855e082f37744bbe259fe24fab30c30"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08ada1841fdd7a12006a502f290c0881949fd902dbcaba717d",
+    "enriched_at": "2026-07-09T23:30:55.897Z"
+  },
+  "visual_summary": "A page with a centered photo of an older person with white hair, glasses, a blue shirt, and a backpack. The person has their mouth wide open. There are handwritten notes above, below, and to the sides of the photo in blue ink.",
+  "layout": [
+    "Handwritten text above photo",
+    "Photo centered",
+    "Handwritten text left, right, and below photo"
+  ],
+  "handwriting": [
+    {
+      "location": "Above photo",
+      "text_as_seen": "For Jeffrey with birthday greetings",
+      "confidence": "high",
+      "note": "Handwritten text in blue ink above the photo."
+    },
+    {
+      "location": "Left of photo",
+      "text_as_seen": "from",
+      "confidence": "high",
+      "note": "Single word handwritten in blue ink."
+    },
+    {
+      "location": "Right of photo",
+      "text_as_seen": "Munday",
+      "confidence": "high",
+      "note": "Single word handwritten in blue ink."
+    },
+    {
+      "location": "Below photo",
+      "text_as_seen": "from the collection of photos by the late Doug Adams *, all depicting people yawning",
+      "confidence": "high",
+      "note": "Multiple lines of handwritten text in blue ink below the photo."
+    },
+    {
+      "location": "Bottom of page below previous text",
+      "text_as_seen": "* author of the \"Hitchhiker's Guide to the Galaxy\"",
+      "confidence": "high",
+      "note": "Single line handwritten text referring to the author."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Center of page",
+      "description": "Photograph of an older person with white hair and glasses, wearing a blue shirt and backpack, mouth wide open.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

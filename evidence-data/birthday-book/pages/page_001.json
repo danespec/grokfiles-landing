@@ -1,0 +1,77 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 1,
+  "page_id": "page_001",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_001.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_001.ocr.txt",
+  "image_metadata": {
+    "bytes": 631564,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "72267b8814d973876e14b4ff163872b1f2d5c2e98a1a4850aea511ff4773bc65"
+  },
+  "ocr_text": "FIETY YEARS\n|\noe HOUSE_OVERSIGHT_000001\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "Image of a book spine titled 'THE FIRST FIFTY YEARS' with the Roman numeral I below the title. The background is dark and the text is white or light-colored.",
+    "Layout: Book spine centered vertically and horizontally"
+  ],
+  "observations": [
+    "Image of a book spine titled 'THE FIRST FIFTY YEARS' with the Roman numeral I below the title. The background is dark and the text is white or light-colored.",
+    "Layout: Book spine centered vertically and horizontally"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THE FIRST FIFTY YEARS",
+    "I",
+    "FIETY YEARS",
+    "HOUSE_OVERSIGHT_000001"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:02:03.399Z",
+    "response_id": "resp_0aa115e3da8deb3c006a502867138c81909d5d2e500ee9e65e",
+    "raw_output_sha256": "ffaffb7469de1d8e2090179a215cf9912ea86ed976f520cf441e71ed594b4ce0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0aa115e3da8deb3c006a502867138c81909d5d2e500ee9e65e",
+    "enriched_at": "2026-07-09T23:02:03.400Z"
+  },
+  "visual_summary": "Image of a book spine titled 'THE FIRST FIFTY YEARS' with the Roman numeral I below the title. The background is dark and the text is white or light-colored.",
+  "layout": [
+    "Book spine centered vertically and horizontally"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

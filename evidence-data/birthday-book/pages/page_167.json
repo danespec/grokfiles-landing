@@ -1,0 +1,132 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 167,
+  "page_id": "page_167",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_167.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_167.ocr.txt",
+  "image_metadata": {
+    "bytes": 12431735,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d4f1093dc43c5c4d9f4beeaab10820e7da838b47fd46b611e37feed305cf61a8"
+  },
+  "ocr_text": "Do a re Pew’. \\\nae Vig eo a oes i Maacue Botany. oes , ;\nEe |? ‘fe , pi We\" 4 ote ee eee ah seat eee ‘ ,\na ge ag Se aR tial RES ae\ntoe i ae, ay 4 tn hep A 0, Me: De \" \"\ns eH) /) I ; hehe TT a es pen rie) e Ready oe. ** OS . 0 Ye\nSS fi) < ad eS : “\\ ob Bhi: is SER etn ino se OS\nei eo Naa wre e785 c4 ony ag KGa Pa Te a IE oj ae Sy a t ,\n| ae ‘3 ist» Sige Perk eae Tee AL, Gi nate i tacoenic Jaa ce : ;\nim sc le, a ee re WR EAE Eat § hn RR aL oe |\n‘a BM heii it i He ogee EN! GALEN. §\n“s La cs aa See 6 Fibs tet ee i Ng RS OY\na bs PG, «i 2 cat ae ria ae a” +. ae Spt oe is\n4 4 * &\na ., . *\ni: & %\nie 5 Y 7 = @ ®\nBec 3 eo} f\nAS ‘7902.8 @ a ey °\ninal 4 : a\nBait £' i\nWak . ;\nrn F 3\nee : : 3 e\n> ae z 2\nan. f i\n‘hon s q ,\nior\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Abstract circular illustration with mixed colors including red, blue, and green splatters on a white background; handwritten text in blue ink below the illustration.",
+    "Layout: Abstract circular colored artwork near top-center of page",
+    "Layout: Blue ink handwritten text below artwork, slightly right of center",
+    "Drawing candidate at center top: Circular abstract artwork composed of red and blue pigment with green splotches and lines"
+  ],
+  "observations": [
+    "Abstract circular illustration with mixed colors including red, blue, and green splatters on a white background; handwritten text in blue ink below the illustration.",
+    "Layout: Abstract circular colored artwork near top-center of page",
+    "Layout: Blue ink handwritten text below artwork, slightly right of center",
+    "Drawing candidate at center top: Circular abstract artwork composed of red and blue pigment with green splotches and lines"
+  ],
+  "dates": [
+    "2002"
+  ],
+  "document_strings": [
+    "1st Print '2002"
+  ],
+  "signatures": [
+    {
+      "location": "below colored illustration, right side",
+      "text_as_seen": "(signature-like scribble)",
+      "confidence": "medium",
+      "note": "May be a signature but not verified identity"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "below colored illustration, center-right",
+      "text_as_seen": "1st Print '2002",
+      "confidence": "high",
+      "note": "Clearly written in cursive style"
+    },
+    {
+      "location": "below colored illustration, right side",
+      "text_as_seen": "(signature-like scribble)",
+      "confidence": "medium",
+      "note": "Handwritten text resembling a signature, exact text unclear"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:45.227Z",
+    "response_id": "resp_0e13733b80420df8006a502ea7fb048195ab110d573d0c11b7",
+    "raw_output_sha256": "21b4077ff9eefe9e83f34f480ada4eb34fde39c41fa8a68c506515fedabbc1dd"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e13733b80420df8006a502ea7fb048195ab110d573d0c11b7",
+    "enriched_at": "2026-07-09T23:28:45.227Z"
+  },
+  "visual_summary": "Abstract circular illustration with mixed colors including red, blue, and green splatters on a white background; handwritten text in blue ink below the illustration.",
+  "layout": [
+    "Abstract circular colored artwork near top-center of page",
+    "Blue ink handwritten text below artwork, slightly right of center"
+  ],
+  "handwriting": [
+    {
+      "location": "below colored illustration, center-right",
+      "text_as_seen": "1st Print '2002",
+      "confidence": "high",
+      "note": "Clearly written in cursive style"
+    },
+    {
+      "location": "below colored illustration, right side",
+      "text_as_seen": "(signature-like scribble)",
+      "confidence": "medium",
+      "note": "Handwritten text resembling a signature, exact text unclear"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "below colored illustration, right side",
+      "text_as_seen": "(signature-like scribble)",
+      "confidence": "medium",
+      "note": "May be a signature but not verified identity"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center top",
+      "description": "Circular abstract artwork composed of red and blue pigment with green splotches and lines",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "2002"
+  ],
+  "confidence": "high"
+}

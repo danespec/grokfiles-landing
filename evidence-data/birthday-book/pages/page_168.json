@@ -1,0 +1,122 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 168,
+  "page_id": "page_168",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_168.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_168.ocr.txt",
+  "image_metadata": {
+    "bytes": 13403934,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d59217794b40addba5d8774e16271739c76a071eb4d5b0d891bdee620f87b148"
+  },
+  "ocr_text": "ary,\nie\neat 8\naes\nj\ne: mn y)\nVig °\nae\n~i \\\" ; gsi Rae EZ\nBes fai PEt Mia eee fo PY he “ys A i ORE i ON\nBens eas ges ty Barr e BT OR ee a: cn aN oS SSS eae era\nee 1 UES, ta Ca eh mee int Lt kes Aa Ee A ea | Ree eer: Sega\nae. (i 2 FEED ei Aad a yet A et Mtb. ANME! 42 ee ‘ ait Xe. rer iett ;\nRae. pi EP WES ey So Sal aa > hee real af ae Pee koe hook\nee Bie he SRAM: NM OS? Bae pcr. NN a,\n3 lee! MEET go Re pet oe ra VP, SERS DH ¥ Poe Yoru) d oat MOR RRCRI Sie ole oh ie head) 2 fas\na 7 L Gel odie, PA! A Pera. We fii‘ ~ sd % : i Fas ae Ae RTE Ae WE ORG 0 Sei vate ge td ia et\na a 1 BS 6 Ae age “i ae ie, 4! b. Po ae MD. kif AR ay ess) eae ; .\nsig DT nag URL Co hs SUCHE REEL DEM 3, ESS ot See a oe\na Py , ae 4 edie TA ans s ~ er, -pSIEN SA Be END sa Stee ‘ORS laa iu .\n, ae 46. tS it ? fadl 9 AG ) ; yor. Re OLN Tomi iadicy «oc FPS 2 FE GS 4\n‘ 4 b ae, Ws mira Yi t; mgt hy anak % i BaP i Vr aie) RE besos KG Fd LA? me shine 7 5 Fh se Re ime .\nine = gs Uy TOS Be e315) Hi SS AL + AUS fy z Mice, ain Eat th eee M's, 2 Sul Psat ‘tS ae\ny Why A + ne? Le Ee + he 1 ae 5 Pe Seg SADR ap STOMA SE ARR. + 1 SVG TM ea, :\nae il 1 Me ove . m4. nites Roe SS None ena So bt be ithe) SHNhe e geet {\nPace) > iV, ede ad ie AY ; ; : we itt Rah on OD i LENS La Sy OR i tae ire ,\nae mee) +4 (Gi aie Bath igehsieg LX WUE eee it NPEe Ade SS Ae ee ieee pe Re 28 Nada ia ak : 4 .\nio tt - 9 CA ESSN eh 7 - ee Lzyo ae Be LT ag S% Gy Gataeg te Ne Le desk phe ‘aa eae *) r\nLae \" tah Lys 3 ins ENT et ag ILL NO eg, fey wee £8 Dn © Se ie MS yeaa, = A’ . ae\n: ae, hb ys Baye “GSS Ab . TIS Catal tid CED Ke gt VE Mo COR OR a4, ,\n- fe tren + , vi , See 3 Teed, ag iaties ge OR ihe 2’ Sree 5 RO ee APG Les ) ESTE ge. reed 4\nAes. 7D ae ae os Seve en , ane. hate, TNR oe eg Sees gets. ps Te RR A TE Linh” §\na | ‘ ; . a SMR Sere =. Suan, 5 eRe nye . in 8 DNS PE SEN SN AS Soe EB AE [ni]\ni Fe PE ee Mats)\n+ PRES Bre = ae: . LE aa TA UET ay ey) BS\nBear: : POS is ae ae Ps : wo EA ages LBs LEBEL CO ts =\na : NER RE oe re. Aare ~ oferes pana: SA CPS ee 9 Ay ‘\nBe S Sn BE: rs rg ® 3 “ a9 FS; ut” '\n‘a * . : eer R= .\nas oC ‘ i oa % 3h e\n2 ( 1. a\nae ‘ 4G ‘\nTOE 1! @&. sz ‘ _ .\neG te\n} cor wv. &\nla) i\neer Ay,\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page includes a circular artistic drawing in mainly purple, pink, and some yellow-green colors. Around the circle, handwritten text in blue ink curves along the top and bottom, reading: 'Specially commissioned by Henry Rosousky' at top, and 'in honor of Jeffrey Epstein's 50th Barfday' at bottom.",
+    "Layout: Handwritten text at top-curved",
+    "Layout: Central circular abstract colorful drawing",
+    "Layout: Handwritten text at bottom-curved",
+    "Drawing candidate at Center of page: Abstract circular drawing primarily with purple and pink colors, with traces of yellow-green"
+  ],
+  "observations": [
+    "The page includes a circular artistic drawing in mainly purple, pink, and some yellow-green colors. Around the circle, handwritten text in blue ink curves along the top and bottom, reading: 'Specially commissioned by Henry Rosousky' at top, and 'in honor of Jeffrey Epstein's 50th Barfday' at bottom.",
+    "Layout: Handwritten text at top-curved",
+    "Layout: Central circular abstract colorful drawing",
+    "Layout: Handwritten text at bottom-curved",
+    "Drawing candidate at Center of page: Abstract circular drawing primarily with purple and pink colors, with traces of yellow-green"
+  ],
+  "dates": [
+    "50th"
+  ],
+  "document_strings": [
+    "Specially commissioned by Henry Rosousky",
+    "in honor of Jeffrey Epstein's 50th Barfday",
+    "HOUSE_OVERSIGHT_000168"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top arc around the drawing",
+      "text_as_seen": "Specially commissioned by Henry Rosousky",
+      "confidence": "high",
+      "note": "Blue ink, cursive style"
+    },
+    {
+      "location": "Bottom arc around the drawing",
+      "text_as_seen": "in honor of Jeffrey Epstein's 50th Barfday",
+      "confidence": "high",
+      "note": "Blue ink, cursive style"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:54.332Z",
+    "response_id": "resp_0048a58173f45d8e006a502eb00e0c8193afce321b24c07c36",
+    "raw_output_sha256": "46aecfdf5a24c369e2a7188a7db8e8d10d2e9432e54396c5ded05e041aa22991"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0048a58173f45d8e006a502eb00e0c8193afce321b24c07c36",
+    "enriched_at": "2026-07-09T23:28:54.332Z"
+  },
+  "visual_summary": "The page includes a circular artistic drawing in mainly purple, pink, and some yellow-green colors. Around the circle, handwritten text in blue ink curves along the top and bottom, reading: 'Specially commissioned by Henry Rosousky' at top, and 'in honor of Jeffrey Epstein's 50th Barfday' at bottom.",
+  "layout": [
+    "Handwritten text at top-curved",
+    "Central circular abstract colorful drawing",
+    "Handwritten text at bottom-curved"
+  ],
+  "handwriting": [
+    {
+      "location": "Top arc around the drawing",
+      "text_as_seen": "Specially commissioned by Henry Rosousky",
+      "confidence": "high",
+      "note": "Blue ink, cursive style"
+    },
+    {
+      "location": "Bottom arc around the drawing",
+      "text_as_seen": "in honor of Jeffrey Epstein's 50th Barfday",
+      "confidence": "high",
+      "note": "Blue ink, cursive style"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "Center of page",
+      "description": "Abstract circular drawing primarily with purple and pink colors, with traces of yellow-green",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "50th"
+  ],
+  "confidence": "high"
+}

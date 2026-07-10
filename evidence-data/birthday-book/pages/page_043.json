@@ -1,0 +1,90 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 43,
+  "page_id": "page_043",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_043.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_043.ocr.txt",
+  "image_metadata": {
+    "bytes": 179612,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "6813f10a89d1ae1cb1ceb99b222faa2dadca38024d0feb9f46c35954e53d2615"
+  },
+  "ocr_text": ": 4\na students were dismayed, some to\nae the point of crying. When they Math Teacher\n- notified their parents of the\n7 administration's decision, students Is Hung! ;\n. along with their parents went on\nstrike the following day. They\ndemanded a reversal of the By Paul Medici\n: decision, stating that the teacher Math Team Newsletter\nwas the ane most influential\npersons contributing to the\nstudent's creative thinking. After a Famed diminutive math teacher\n; multi-hour standoff, the Joseph “Mighty Joe” Rothman, has\nadministration backed down and been a fixture at Mark Twain JHS\nallowed Mr, Goldsmith to continue for over 35 years, Students have\nteaching until the end of the term. taunted the midget math man ever\nEd Goldsmith stated that he would since he started teaching, Year\nnot return to the school after that after year of being teased by the\nyear. kids have caused the man to lash\nThe kids really loved that man. out at new students before they\never had the chance to bother him.\nThis year was different; when he\nfailed two students due to\npersonality conflicts, rather than\npoor grades, the students held a\n“ynching” right m the classroom.\nPeddle Pusher Mighty Joe was hung by his sport\ncoat, on a coat hook, in the\nThrows Party students’ wardrobe. Both studenis\nwere expelled from school and Mr.\nRothman only had his pride hurt.\nBy Scott Pearl To this day, Mighty Joe still\nMeroedes Aficionado teaches math at age 112.\nPaula the peddle pusher, threw a\nbirthday bash for her pride and joy\nJeffery Edward last week at the\nposh, exclusive, Surf Lanes in\nConey. She went hog wild and ° ®\nprovided free shoes, 2 games, hot Hot rides i\ndogs, hamburgers and soda to about 66 99\n15 of the boys friends. And who the gate\ndo you think bowled high score?\nYou guessed it. Later on, Paula\nadmitted , “I only invited the most By Larry John Streitman\ntalentless bowlers, just to make Double A Fuet Magazine\nJeffery look good”.\nit’s summertime in Sea Gate and\ncar enthusiasts from around the\nworld try their best to get into “the .\ngate” for the most craved auto\nexposition in history. Some of the\n{cont'd pg. 8, column 1)\nHOUSE_OVERSIGHT_000043\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three main article sections: 'Math Teacher Is Hung!!', 'Peddle Pusher Throws Party', and the beginning of 'Hot rides in \"the gate\"'. The text is in two columns with headings centered at the top of each article. The layout is plain with no images or drawings visible. The text is typed, with some titles in larger or stylized fonts. The page number '7' appears at the top right.",
+    "Layout: two-column text layout",
+    "Layout: centered article titles",
+    "Layout: page number at top right"
+  ],
+  "observations": [
+    "The page contains three main article sections: 'Math Teacher Is Hung!!', 'Peddle Pusher Throws Party', and the beginning of 'Hot rides in \"the gate\"'. The text is in two columns with headings centered at the top of each article. The layout is plain with no images or drawings visible. The text is typed, with some titles in larger or stylized fonts. The page number '7' appears at the top right.",
+    "Layout: two-column text layout",
+    "Layout: centered article titles",
+    "Layout: page number at top right"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Math Teacher Is Hung!!",
+    "By Paul Medici",
+    "Math Team Newsletter",
+    "Peddle Pusher Throws Party",
+    "By Scott Pearl",
+    "Mercedes Aficionado",
+    "Hot rides in \"the gate\"",
+    "By Larry John Streitman",
+    "Double A Fuel Magazine",
+    "(cont'd pg. 8, column 1)"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "The page is truncated at bottom right, ending mid-word with 'prov...' indicating missing content."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:08:55.330Z",
+    "response_id": "resp_04ae1bfeb42a75fd006a502a0277648194b6cd46e15d44ce3d",
+    "raw_output_sha256": "45e6e5161260f38b57ee0f9532226acb75433d4433a504d12eefead4e653459b"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04ae1bfeb42a75fd006a502a0277648194b6cd46e15d44ce3d",
+    "enriched_at": "2026-07-09T23:08:55.330Z"
+  },
+  "visual_summary": "The page contains three main article sections: 'Math Teacher Is Hung!!', 'Peddle Pusher Throws Party', and the beginning of 'Hot rides in \"the gate\"'. The text is in two columns with headings centered at the top of each article. The layout is plain with no images or drawings visible. The text is typed, with some titles in larger or stylized fonts. The page number '7' appears at the top right.",
+  "layout": [
+    "two-column text layout",
+    "centered article titles",
+    "page number at top right"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

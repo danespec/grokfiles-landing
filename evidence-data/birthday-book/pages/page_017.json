@@ -1,0 +1,75 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 17,
+  "page_id": "page_017",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_017.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_017.ocr.txt",
+  "image_metadata": {
+    "bytes": 504870,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "592b0a16dce4e0fdf6f9441a191979811e43c46862cc5ff296504fdbbeaa49a7"
+  },
+  "ocr_text": "HOUSE_OVERSIGHT_000017\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "The page displays a large, bold, white uppercase word 'FAMILY' centered on a predominantly black background.",
+    "Layout: single large text block"
+  ],
+  "observations": [
+    "The page displays a large, bold, white uppercase word 'FAMILY' centered on a predominantly black background.",
+    "Layout: single large text block"
+  ],
+  "dates": [],
+  "document_strings": [
+    "FAMILY",
+    "HOUSE_OVERSIGHT_000017"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:04:44.133Z",
+    "response_id": "resp_0bd43cccd554dbb4006a502906d6248196b10dd208af5ee082",
+    "raw_output_sha256": "829b26a6e28cb9b099cc0b77d5d36c16d7ef5f81599aa459d8f61d541a7283c0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bd43cccd554dbb4006a502906d6248196b10dd208af5ee082",
+    "enriched_at": "2026-07-09T23:04:44.133Z"
+  },
+  "visual_summary": "The page displays a large, bold, white uppercase word 'FAMILY' centered on a predominantly black background.",
+  "layout": [
+    "single large text block"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

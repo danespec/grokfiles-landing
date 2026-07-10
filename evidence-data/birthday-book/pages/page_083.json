@@ -1,0 +1,92 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 83,
+  "page_id": "page_083",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_083.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_083.ocr.txt",
+  "image_metadata": {
+    "bytes": 440895,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "da49151ed41bf04ccda050fe2a309ddf4e55b18e3c5d72ff2788c92d0c6b9e68"
+  },
+  "ocr_text": "PREY CANT H TARE FHA RWAY Foes ME — ;\nMusic ond bytics by : ayn Br a\nGEOnGt ease Besa e co oY 179\nModerato (figatty? Lp, gs en. They vet a = eee Be\nPune ies meee ees L oe SS\nGame oe 2 Sno\n, = i i —_— F 4 - 7 So pr ee\nverry cr? aaa ak 2 Et pe\ngh Grn Faia Bim ar on - == SSS as Sin tm\net ped i as ” Lp He. Bat though they tae eu pe — oe din er\nee at et LEG eg pote a eck ; Sage Saag el pos ed\nQur ro - nance wont end on 2 sor-raw-fa} note, Though by to -mor-raw youre ae a ok = Sa ines :\neas cae ee = eee pies Aer * : Eas 4 an a ss\nee eR gee eee ee a)\nwip a kempe | t 1 H m Sativwelnaventaas —— eh sity ae\nor ee ea Paes are ae i EES rope a Oo eS Be Refrai af a EE al Pras\nce ie oe Jy =e 2 ee mpage oF ie\n{ Fes ng coe eee sour hats, . Sees So ee aby\nPg epee goa be 8 nti a a its Beeway ously pur SS\nagers 3 hie EE es eee eee ae Hie tte ===\ngot The song is esd- cd, bas 38 tha gongerrit-er yrote, TRE pp ee Se eee a Hees ar! i “Ss 9 SS |\nee =p ad aay = ele SS\nSapa Patt) Pease ae\ni ae aa . ; amen gas wee a Dg, z ‘a i\noe arse nen ist SCE LEHI AI oh ORCA EE Sis 5 Cece tes ones ji. j ‘wiy fret met\nAS aot eet me Neigh ew _—\n| | SSS\nve ut Pree: ee eran :\n* ee ae ad i Ab oy Abraact 66 my Gin. ob ,\nae ang git eR fb pbeteen Hic nag TE cea gen Godan.\ntoe ae que wag soa8t98 “ eae feeb fy = Sse eae eee SL BT TE on ee i pe\ne = ee ee oa ae gan oP a SSS\nve eee ae cig, eee old your Kaifes- hee v2 danced til Hee\neee Fe eee ee __ eed - (Rees aay TF est Se aS\n7 et Pape eee ; ; ne geek er oo 3 3b\n“eee Et EE ‘Mewes a ~ :\n— wt oo mm e + —\nabe wae Ponwt Z aes a See e oie ram we . bere) peyote Bh? or TE gms gh CM gt\nene eee oe an oe Sat 2 — eae seem gunn ye a weyers Sep OE 5\nen So ee ed “pg ee ES\nBerit esi eee ES oO ra i a ie aad re\naes ee Oi ae a aa a= ,\noct ww Sai gatt - e ,\n\na gat gt Adis, 60 ep Ee pa pot. , Baa he OM gpm a aed\nee oe ee, Oe comps oe te pote Se arr a aE\ngare al ann es |e 26 BR ere “ : cate wake that away 16% ined Kol Ev ih tel oe aor\nra Vie Sees gue eee ae ee an a ov\n\n—— 463 eee ae = ane he te ee eee ee =\npr gon daiore ee KGET oe i me aa ap | 4 1\n~~ ot ee ES mare to ee ete ee a Ke we ae ae seoeeiree cee oon PERC: cnobes see TES ra\ngee Ea ae 2 eee ee eee MES: a on FEE 2e35\nEe oe abcd. WHT Gg BF Boe of 3\n7 ans aa ee aed cies ce\n\\ Bet ae eS a nee a LT\nes es a , it wh Be ed ih we | ja _ t\n; eb et ers Sar eet a ae een __ ened Bb Bh A ° qh ghearotae MY oa\nae reek ae ee a TS of ei Seeeeeia weer pa E ferreneee sae are te A Sa ee eS\nJove, “ Of eae = pp = , mel ——-—- phe way you wear your hat iano\nee ate a a gt Y  bpecteond Baths el oy a ae\nee ie 2 \\ <A Fee, | NEG ee SPT ET gees ae\n\\ eee = co A eee Ger eee > i £_ F caf? . # | ee q\nae EE ge eeb esi dt ss pe Per eer eee i\nHOUSE_OVE\n_ RSIGHT_000083\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "This page contains sheet music including musical notes and lyrics. There is a title, music notation, and some text annotations visible. The top left shows the title 'THEY CAN'T TAKE THAT AWAY FROM ME' including composer credits. Two main panels of sheet music are present, with musical staff lines, notes, and text lyrics aligned underneath the notation. The layout is split roughly into two columns of sheet music on the left and right sides. The musical notation includes time signatures, key signatures, and various musical symbols and voices.",
+    "Layout: Title area top left",
+    "Layout: Sheet music left column",
+    "Layout: Sheet music right column",
+    "Layout: Footer margins"
+  ],
+  "observations": [
+    "This page contains sheet music including musical notes and lyrics. There is a title, music notation, and some text annotations visible. The top left shows the title 'THEY CAN'T TAKE THAT AWAY FROM ME' including composer credits. Two main panels of sheet music are present, with musical staff lines, notes, and text lyrics aligned underneath the notation. The layout is split roughly into two columns of sheet music on the left and right sides. The musical notation includes time signatures, key signatures, and various musical symbols and voices.",
+    "Layout: Title area top left",
+    "Layout: Sheet music left column",
+    "Layout: Sheet music right column",
+    "Layout: Footer margins"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THEY CAN'T TAKE THAT AWAY FROM ME",
+    "Music and lyrics by GEORGE GERSHWIN and IRA GERSHWIN",
+    "Moderato (lightly)",
+    "The song is ended, but as the songwriter wrote",
+    "Though by tomorrow you're...",
+    "The way you hold your knife...",
+    "No, no! They can't take that away from me!",
+    "(Various partial lyrics and musical notations throughout)"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some text and musical symbols are faint and pixelated, making exact transcription difficult",
+    "Lower part of page text and notation partially obscured or distorted"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:08.525Z",
+    "response_id": "resp_0347604511b38631006a502bb2a9e88190bd1965533f4e067c",
+    "raw_output_sha256": "76d756e2b3a0b813829864ef73c147f1bfc53b43412b8c1e9866a5883509c5fa"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0347604511b38631006a502bb2a9e88190bd1965533f4e067c",
+    "enriched_at": "2026-07-09T23:16:08.525Z"
+  },
+  "visual_summary": "This page contains sheet music including musical notes and lyrics. There is a title, music notation, and some text annotations visible. The top left shows the title 'THEY CAN'T TAKE THAT AWAY FROM ME' including composer credits. Two main panels of sheet music are present, with musical staff lines, notes, and text lyrics aligned underneath the notation. The layout is split roughly into two columns of sheet music on the left and right sides. The musical notation includes time signatures, key signatures, and various musical symbols and voices.",
+  "layout": [
+    "Title area top left",
+    "Sheet music left column",
+    "Sheet music right column",
+    "Footer margins"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

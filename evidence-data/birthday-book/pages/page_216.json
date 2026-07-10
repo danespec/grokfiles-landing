@@ -1,0 +1,109 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 216,
+  "page_id": "page_216",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_216.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_216.ocr.txt",
+  "image_metadata": {
+    "bytes": 12595790,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "90455199573bc687c831adba6701233457d612215c979621aedc4da699bf3aa7"
+  },
+  "ocr_text": ": ae\nx =i Solamente so ws ' _———\n= one / 7 2-5 |\nm NC \\P _—\n2 (OMB ¥\n{ 4 fe - — f ees —_ S\n _ BARS ae ee Ae\ny * . a coe Bi 7 | y\n\" 4A) 2= ee\nHOUSE_OVERSIGHT_000216\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A collage of multiple photographs arranged in a grid-like pattern on a white background with a black border. Many parts of the images and text are obscured by black rectangles. Visible images show people in various settings, including indoors and outdoors, with some in swimsuits or casual attire. Some text is partially visible near the top left, including 'Solamente so'.",
+    "Layout: Multiple photographs",
+    "Layout: Black rectangular redactions over images and text",
+    "Layout: White background with black border",
+    "Layout: Partial visible text near top left",
+    "Photo/image candidate at Various locations across the page: Photographs of people in different indoor and outdoor settings, various poses and clothing, some recreational or leisure scenes"
+  ],
+  "observations": [
+    "A collage of multiple photographs arranged in a grid-like pattern on a white background with a black border. Many parts of the images and text are obscured by black rectangles. Visible images show people in various settings, including indoors and outdoors, with some in swimsuits or casual attire. Some text is partially visible near the top left, including 'Solamente so'.",
+    "Layout: Multiple photographs",
+    "Layout: Black rectangular redactions over images and text",
+    "Layout: White background with black border",
+    "Layout: Partial visible text near top left",
+    "Photo/image candidate at Various locations across the page: Photographs of people in different indoor and outdoor settings, various poses and clothing, some recreational or leisure scenes"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Solamente so"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "Throughout the center and sides of the page covering images and text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Multiple black rectangular redactions obscuring images and text"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Text underlying large black redactions is not visible",
+    "Details of many photos obscured by black rectangles"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:37:01.269Z",
+    "response_id": "resp_05062ed8a8cd1823006a503095c5e8819396411dde44420337",
+    "raw_output_sha256": "ccf31965661ede5255b02c12c636b040120158870daf59182aea1b7be4e18927"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05062ed8a8cd1823006a503095c5e8819396411dde44420337",
+    "enriched_at": "2026-07-09T23:37:01.269Z"
+  },
+  "visual_summary": "A collage of multiple photographs arranged in a grid-like pattern on a white background with a black border. Many parts of the images and text are obscured by black rectangles. Visible images show people in various settings, including indoors and outdoors, with some in swimsuits or casual attire. Some text is partially visible near the top left, including 'Solamente so'.",
+  "layout": [
+    "Multiple photographs",
+    "Black rectangular redactions over images and text",
+    "White background with black border",
+    "Partial visible text near top left"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Throughout the center and sides of the page covering images and text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Multiple black rectangular redactions obscuring images and text"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Various locations across the page",
+      "description": "Photographs of people in different indoor and outdoor settings, various poses and clothing, some recreational or leisure scenes",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

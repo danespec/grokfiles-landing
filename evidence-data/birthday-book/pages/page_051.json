@@ -1,0 +1,102 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 51,
+  "page_id": "page_051",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_051.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_051.ocr.txt",
+  "image_metadata": {
+    "bytes": 6419408,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "65393b113b5b629a8462734b01456f8c5d3b7369f7560062120a9d716bd1ec93"
+  },
+  "ocr_text": "besa 3 Te\ngz A as % re\n| , ©. \"e otie'.2e” —\" |\ni‘ ee ;«.,® * 4,\"\n. eo fe o*,e re ‘ |\n#¢ ‘e ©, *ete ® ” *e .\n» he! oa e os repr ee |\ne ne’ « , @ ove ou, 1e,\ne o 4° ae |: e © ee\n: Pd 4 | : ee’, 0,\" |\n“ _* y? & ® r 3 % a i e Be 4q\na eo?\" hy 7° i ee\n_ .¥\nPe whi ®@ oy a ® @ ~. ?s\ne . iy P bad | 4\nwe OF ob “=\n, > ‘@e @ 4 ; Sa ® nos\nOe Ve° ee ate) ~~\n& ee 4 |\n~ 7 e |\n. d i\np j\n_ — a = - _ -_ ae a ee ‘\nBACHELOR\nrt Financial strate- , |\ngist Jeffrey Epstein, Ys &\n27, talks only to peo- \\ al\nole who make over 4 3a, TA *\nmillion a year! Wf\nyou're ‘a cule Texas & ;\ngirl,” write this New «&\nYork dynamo at 55 | ae :\nWater St., 49th floor, aot x\nPHOTO BY STEPHEN OGILVY ei :\nities ii ner —\nHOUSE_OVERSIGHT_000051\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two photographs and a block of text. The top photo is a colored image of a man wearing a white shirt with large black polka dots and a patterned tie, standing with hands near his belt buckle. The background shows a curtain. The bottom photo is a black-and-white image of a man sitting on a couch, wearing a suit and tie. To the left of the bottom photo, there is a text block with the heading 'BACHELOR OF THE MONTH' in yellow. The text talks about a financial strategist named Jeffrey Epstein, aged 27, and includes a New York address. There is a photo credit to Stephen Ogilvy below the text block. The page number '51' is visible in the scanned document label at the bottom right.",
+    "Layout: top photo",
+    "Layout: text block with yellow heading 'BACHELOR OF THE MONTH'",
+    "Layout: bottom black-and-white photo",
+    "Photo/image candidate at top half, centered: Color photo of a man wearing a white shirt with large black polka dots and a patterned tie, standing indoors with hands near his belt buckle, curtain in background.",
+    "Photo/image candidate at bottom half, right side: Black-and-white photo of a man in a suit and tie sitting on a couch indoors."
+  ],
+  "observations": [
+    "The page contains two photographs and a block of text. The top photo is a colored image of a man wearing a white shirt with large black polka dots and a patterned tie, standing with hands near his belt buckle. The background shows a curtain. The bottom photo is a black-and-white image of a man sitting on a couch, wearing a suit and tie. To the left of the bottom photo, there is a text block with the heading 'BACHELOR OF THE MONTH' in yellow. The text talks about a financial strategist named Jeffrey Epstein, aged 27, and includes a New York address. There is a photo credit to Stephen Ogilvy below the text block. The page number '51' is visible in the scanned document label at the bottom right.",
+    "Layout: top photo",
+    "Layout: text block with yellow heading 'BACHELOR OF THE MONTH'",
+    "Layout: bottom black-and-white photo",
+    "Photo/image candidate at top half, centered: Color photo of a man wearing a white shirt with large black polka dots and a patterned tie, standing indoors with hands near his belt buckle, curtain in background.",
+    "Photo/image candidate at bottom half, right side: Black-and-white photo of a man in a suit and tie sitting on a couch indoors."
+  ],
+  "dates": [
+    "27"
+  ],
+  "document_strings": [
+    "BACHELOR OF THE MONTH",
+    "Financial strategist Jeffrey Epstein, 27, talks only to people who make over a million a year! If you're \"a cute Texas girl,\" write this New York dynamo at 55 Water St., 49th floor, N.Y.C. 10041.",
+    "PHOTO BY STEPHEN OGILVY"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:10:32.714Z",
+    "response_id": "resp_03eed8c5d18396f3006a502a622d4c8190a3fbef354f4de4b8",
+    "raw_output_sha256": "d97fdea40985f639c5a54c18def98a84c6605996934881664d661a8524f34f7d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03eed8c5d18396f3006a502a622d4c8190a3fbef354f4de4b8",
+    "enriched_at": "2026-07-09T23:10:32.714Z"
+  },
+  "visual_summary": "The page contains two photographs and a block of text. The top photo is a colored image of a man wearing a white shirt with large black polka dots and a patterned tie, standing with hands near his belt buckle. The background shows a curtain. The bottom photo is a black-and-white image of a man sitting on a couch, wearing a suit and tie. To the left of the bottom photo, there is a text block with the heading 'BACHELOR OF THE MONTH' in yellow. The text talks about a financial strategist named Jeffrey Epstein, aged 27, and includes a New York address. There is a photo credit to Stephen Ogilvy below the text block. The page number '51' is visible in the scanned document label at the bottom right.",
+  "layout": [
+    "top photo",
+    "text block with yellow heading 'BACHELOR OF THE MONTH'",
+    "bottom black-and-white photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half, centered",
+      "description": "Color photo of a man wearing a white shirt with large black polka dots and a patterned tie, standing indoors with hands near his belt buckle, curtain in background.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half, right side",
+      "description": "Black-and-white photo of a man in a suit and tie sitting on a couch indoors.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "27"
+  ],
+  "confidence": "high"
+}

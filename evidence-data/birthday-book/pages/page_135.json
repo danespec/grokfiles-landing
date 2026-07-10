@@ -1,0 +1,124 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 135,
+  "page_id": "page_135",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_135.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_135.ocr.txt",
+  "image_metadata": {
+    "bytes": 281764,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d9fa648a1170e31e3f26dfa7d10678f65c50c7066c967a4ec4ae36c32d140352"
+  },
+  "ocr_text": "You very dear boy, . es\n\"°°° 6ing back into the past as | have over the last few days has in some ways prooved a a\nmelancholy experience ail the old criminals suddenly came leaping out at me\nMac, Ogilvy, Swire, Baring, Alfonse, the Brigadier,the old man and all the good times that we ee\nhad together.One of the sad things in life is that faie conspires to move people apart to the ce\nextent that | hardly see you any more but,| suppose that is why we are compensated by\nmemories. :\ns99° | was speaking to BB last night before writing this e-mail and we both agreed that we Be\nwere at a loss to decide which of the hundreds of hilarious incidents to pinpoint for you, there a\nare just too many.inspecting the Royal School girls dorms, chasing rabbits with Toto in the 2\nold mans dino,trying to Sct husband out of the way in Manila,blocking Ogilvies loo Zz\nwith the illegal goose at Barings wedding ,doing three point turns in the tunnel in HK when =\nwe asked the Mandarin driver to find us some girls,dancing the night away in the Tin Mine in =\nKL,massage classes al Wraxall.....and $0 on and so on it brings tears to my eyes. a\n\"* Ligwever, there was one evening which | recall always had you howling with laughter. We |\nwere in Harry‘s Bar in London you ,me the old man ,Toto i and the usual extraordinary i\ngroup of camp followers Lord Long,lan Gruikshank,etc etc.Somehow Toto got it into his head\nthat [vas a call girl that doggie had fixed up for him.after dinner we all went off to a\nTramps and Toto and doggie got into the back of doggies car with , between — |\nthem.Toto grinning happily at the old man reached down and pulled skirt up to her =\npanties and put his hand on her pussy. The old man smiling sweetly leaned over stuffed his '\nhand into her pants so that Toto found his fingers playing with doggies.Suddenly the awful '\ntruth sunk in but Toto was too shocked to remove his hand so they drove to Tramps with — :\nboth of them still trapped in IEEE knickers.\n\"°° All my love and a very very happy birthday with many more years to come in the future Be\nthan there are years behind you. e\n|\n~1- q\nHOUSE_OVERSIGHT_000135\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a single dense block of typed text with some blacked-out redactions. The text is a personal, nostalgic message referencing past events and people. There is a salutation at the beginning and a signature at the end. Several names and locations are mentioned. There are multiple redacted words appearing as black rectangles. The text lines are left aligned and span nearly the full width of the page. The page has a white background and black text.",
+    "Layout: single column block of text with redactions"
+  ],
+  "observations": [
+    "The page contains a single dense block of typed text with some blacked-out redactions. The text is a personal, nostalgic message referencing past events and people. There is a salutation at the beginning and a signature at the end. Several names and locations are mentioned. There are multiple redacted words appearing as black rectangles. The text lines are left aligned and span nearly the full width of the page. The page has a white background and black text.",
+    "Layout: single column block of text with redactions"
+  ],
+  "dates": [],
+  "document_strings": [
+    "You very dear boy,",
+    "Going back into the past as I have over the last few days has in some ways prooved a melancholy experience all the old criminals suddenly came leaping out at me Mac, Ogilvy, Swire, Baring, Alfonse, the Brigadier, the old man and all the good times that we had together.",
+    "One of the sad things in life is that fate conspires to move people apart to the extent that I hardly see you any more but, I suppose that is why we are compensated by memories.",
+    "I was speaking to BB last night before writing this e-mail and we both agreed that we were at a loss to decide which of the hundreds of hilarious incidents to pinpoint for you, there are just too many, inspecting the Royal School girls dorms, chasing rabbits with Toto in the old mans dino, trying to get [redacted] husband out of the way in Manila, blocking Ogilvies loo with the illegal goose at Barings wedding, doing three point turns in the tunnel in HK when we asked the Mandarin driver to find us some girls, dancing the night away in the Tin Mine in KL, massage classes at Wraxall... and so on and so on it brings tears to my eyes.",
+    "However, there was one evening which I recall always had you howling with laughter. We were in Harry's Bar in London you, me, the old man, Toto, [redacted] and the usual extraordinary group of camp followers Lord Long, Ian Cruikshank, etc etc. Somehow Toto got it into his head that [redacted] was a call girl that doggie had fixed up for him. After dinner we all went off to Tramps and Toto and doggie got into the back of doggies car with [redacted] sitting between them. Toto grinning happily at the old man reached down and pulled [redacted] skirt up to her panties and put his hand on her pussy. The old man smiling sweetly leaned over stuffed his hand into her pants so that Toto found his fingers playing with doggies. Suddenly the awful truth sunk in but Toto was too shocked to remove his hand so they drove to Tramps with both of them still trapped in [redacted] knickers.",
+    "All my love and a very very happy birthday with many more years to come in the future than there are years behind you.",
+    "Nick."
+  ],
+  "signatures": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Nick.",
+      "confidence": "high",
+      "note": "Typed or printed text serving as a closing signature"
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "middle lines in block of text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Several blacked-out words or phrases, appearing as solid black rectangles"
+    },
+    {
+      "location": "middle section, at least 3 separate redacted blocks",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Redacted names or terms"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [
+    "Bottom right of image shows partial cropping which may have cut off last few words in some lines.",
+    "Certain redacted words prevent full reading or verification of parts of names and phrases."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:24:27.327Z",
+    "response_id": "resp_04a20389db3adadf006a502da372888196a278f59cd6e800d5",
+    "raw_output_sha256": "4cdc4ded71aaa737afa2829397124e2f8367f9e697c19e804debd9b770b7c9c1"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04a20389db3adadf006a502da372888196a278f59cd6e800d5",
+    "enriched_at": "2026-07-09T23:24:27.328Z"
+  },
+  "visual_summary": "The page contains a single dense block of typed text with some blacked-out redactions. The text is a personal, nostalgic message referencing past events and people. There is a salutation at the beginning and a signature at the end. Several names and locations are mentioned. There are multiple redacted words appearing as black rectangles. The text lines are left aligned and span nearly the full width of the page. The page has a white background and black text.",
+  "layout": [
+    "single column block of text with redactions"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Nick.",
+      "confidence": "high",
+      "note": "Typed or printed text serving as a closing signature"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "middle lines in block of text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Several blacked-out words or phrases, appearing as solid black rectangles"
+    },
+    {
+      "location": "middle section, at least 3 separate redacted blocks",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Redacted names or terms"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

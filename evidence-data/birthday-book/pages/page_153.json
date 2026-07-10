@@ -1,0 +1,80 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 153,
+  "page_id": "page_153",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_153.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_153.ocr.txt",
+  "image_metadata": {
+    "bytes": 22496253,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "5ecac736e94ee2c890caca27fea362df0b919be51084b0e33bdbc00a4c375e10"
+  },
+  "ocr_text": "ms nea on ERS RE) kare \"ABSA Fi” 0: A eam\nf > .\\ ey \\ wig gait tay mae. / {Poe es fe oS aaa a\n—% ~ Saree Oh, - - “u i - ats 6 Pare 0 oe ae .\nAe Ss En  Pigesgss / Fini stead wit” FS pag ae  ie\n‘ *. oad , , ioe 4\nis SE or ape LaF Pa > :\ny “S a Cy oe Feat 26 ie Ce : “a coed a Set 7 “\nvit . bs . 5 a BES ‘sf s sega ioe CS ee etl ox me 4.¥\n- * oe oe : Seas Te a EW at i ae fis ar ee Le Fi i oa carts etek Me ee Bran woe me. ny\nROBE OTS TRI Ren ea an ty whine 3 “on Noe ate Gee Ways ; SA ee re, ci\noA ie ‘ Pet a meee Da = se et ~ ‘ wR - ota ao Sra Varn aes pay\n; p , a A ered ~ —— oo\" Be ott ee — a : A. oy |\non 5 A SRY St . - ~ os an ae we - 5 ’ eek ee y ra\nP “a Y ra ely EN i Sey . ‘ — 2 a\nSaeae |6 Baie RO eters eee Reopens Othe ES Chet tea ah * | ¥e s ey z . : \": & |\n= + . mee) ae RS ae A ORS Stay a. a Re eat ‘ ’ ae ah =, eR Be /\n. . / Pig “ Shu. LO aay iA eae’ irae } * \\ Wale ARR or gate i\n>. ~ ae ie “— <a he ie oe ae” Yh? eae 4 se Res! ASN La x i . \\ - \\S ey Rano :\nLe ag 4 pe Ah \\ BON tt) sek eM os Ag N yt RY), ae N Bs pa i % ih | a Re Vee AC Resets ead\nSe , % A Se . al Kt ' ry eat 4 ” aay SS Al +2 SaaS Pi Wy WA My ACAD L ae |\ney Yar OO ee Mae ie Rote | ai Yewe ¥, Ba 2 EN bi Neeatai te eos aN ia eS Wi : te NE Be a\n‘; porns \\ \\ WF tu # TU ROPUIRY 2 ras oe AAG MR Ag ; HAL 1 1 7D PAR eG \\ a4 1\nines ‘ Piss i #4 | ‘ et Mest iG ag ys 3 rs oa a4 At nt a ANS Bl eo ‘ N Wes vi) yw Rese 4 |\n> y : 5 \\ Alas) a phere sg te ih i \\ NO bik int j ba ¥ i, SS 7\nf Ly Ute a LA . uf Bes: ds BF ph } 4) oy i aru mY ef Legos ¥ \\ A HE ee 1% ;\nPA ae ee, i ak. ‘ SE, Yast a eit 4 et hi Mal eee of ee 1S AAD By oi Bly as Sao A WS . 4\nwie! 7 ee ie Maat Of see ree i ai SBR Aeon 8) AEN NP GE! Mie hei OR DY Tat! i\n4 uf - Vike fy, tA yi j Piva Da Me ag Sif f iy Se OS iy rae ey Mt are |\nf a 1 i > Carsales A I: eles MERE i) fa Paes AE iy ey eh a Bi iha/ ’ } eee ey\n‘ ~~ ne: oat Bae e* s GX Mees Bes p “a ie / 4 if }: pa Mr Payee f if | ip yi. uy NY Wi /oRGe 1, ‘\\h ‘ oy Pee MN Fine . i\n“i as eee 8, Be weg) 81) f tl ee ie fae Han MPU, ty SHINE Ho Mae SI 1 et ri\ni ated gl Riots Tp Gf s f Oo ’ 7 us if aes yey Vales Se aa 4 A an hi! wikeat ~ {\nier, if by epee et Be ot yl) 3 ae i) iy Eas 3 f ; ¥ nS - }\nFe. ae i HE YR: | wy, iy | | Pe ee | \\ ij . we op |\nKe a pe ‘a Ogee! c) faa Ramey are? | AD , ‘ NW italeprn Pe tos iam Mie\nuy “a Shag Wee ar | AY a Je a Uva WEP / i BAM eran Neate ig Ye! ‘\nge ipeeea ets) a ae | F Ai a ha Sie ie ae eas ht waaay a Vn aan / |\nLe oe ALF a? tite: hy ot al Wi) AP SS RUD Nite Py Ney ¥\n' ate ie AY As “eae 3 Ae a a Baie? 3 La x or AY Lee ae ANN ERE Ih te AN 5\ni hak ¢ at i Liver —] = tl iy A - rae ae . Peer NS WTS neat on 5 tar P\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image depicts a close-up side profile of a male lion with a closed eye, a dense and fluffy golden mane, and tan fur. The background is blurred grass and greenery, focusing attention on the lion's head and upper body.",
+    "Layout: single full-page photo",
+    "Photo/image candidate at full page: Close-up side profile of a male lion lying on grass, eyes closed, with a thick mane and light tan fur."
+  ],
+  "observations": [
+    "The image depicts a close-up side profile of a male lion with a closed eye, a dense and fluffy golden mane, and tan fur. The background is blurred grass and greenery, focusing attention on the lion's head and upper body.",
+    "Layout: single full-page photo",
+    "Photo/image candidate at full page: Close-up side profile of a male lion lying on grass, eyes closed, with a thick mane and light tan fur."
+  ],
+  "dates": [],
+  "document_strings": [],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:26:57.614Z",
+    "response_id": "resp_00d2379ba57c0835006a502e3bf4088193af6b4b89831ba0cb",
+    "raw_output_sha256": "9f8b8690957fa2b0a53866e087e49f2933408894679f913d7677d8c91a027228"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00d2379ba57c0835006a502e3bf4088193af6b4b89831ba0cb",
+    "enriched_at": "2026-07-09T23:26:57.614Z"
+  },
+  "visual_summary": "The image depicts a close-up side profile of a male lion with a closed eye, a dense and fluffy golden mane, and tan fur. The background is blurred grass and greenery, focusing attention on the lion's head and upper body.",
+  "layout": [
+    "single full-page photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "full page",
+      "description": "Close-up side profile of a male lion lying on grass, eyes closed, with a thick mane and light tan fur.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,150 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 3,
+  "page_id": "page_003",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_003.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_003.ocr.txt",
+  "image_metadata": {
+    "bytes": 95698,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "c8cd688d43c8ead078c82aff7e422278a3b284dfbf802a237d4b2db81902b8a2"
+  },
+  "ocr_text": "Bran Ferren\nHenry Jarecki\nNick Leese\nPeter Mandelson\nGeorge Mitchel\nNathan Myhrvold\nJoel Pashcow\nJo Pagano\nAlberto Pinto\nStuart Pivar\nDonald Trump\n—_ — |\nLesley Wexner\nMort Zuckerman\nUnknown\nSCIENCE Gerry Edelman\nMurray Gellman\n- Steve Kosslyn\n: Martin Nowak\nLee Smolin\n|\n- | _\nSPECIAL ASSISTANTS pe\n: BUISNESS Ace Greenberg\nHOUSE_OVERSIGHT_000003\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a list of names organized under various categories, some text is redacted with black boxes, and the page has a vertical black line near the left edge. The categories include a group of names in a vertical list on the top right, followed by categories labeled SCIENCE, GIRL-FRIENDS, SPECIAL ASSISTANTS, and BUSINESS. The GIRL-FRIENDS and SPECIAL ASSISTANTS sections have redacted text. The BUSINESS section lists a single name.",
+    "Layout: Vertical line on far left margin",
+    "Layout: Title or header text absent",
+    "Layout: Main content on the right half of the page",
+    "Layout: Multiple sections with headings and lists",
+    "Layout: Black redactions in center-right and lower-center areas"
+  ],
+  "observations": [
+    "Page contains a list of names organized under various categories, some text is redacted with black boxes, and the page has a vertical black line near the left edge. The categories include a group of names in a vertical list on the top right, followed by categories labeled SCIENCE, GIRL-FRIENDS, SPECIAL ASSISTANTS, and BUSINESS. The GIRL-FRIENDS and SPECIAL ASSISTANTS sections have redacted text. The BUSINESS section lists a single name.",
+    "Layout: Vertical line on far left margin",
+    "Layout: Title or header text absent",
+    "Layout: Main content on the right half of the page",
+    "Layout: Multiple sections with headings and lists",
+    "Layout: Black redactions in center-right and lower-center areas"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Bran Ferren",
+    "Henry Jarecki",
+    "Nick Leese",
+    "Peter Mandelson",
+    "George Mitchel",
+    "Nathan Myhrvold",
+    "Joel Pashcow",
+    "Jo Pagano",
+    "Alberto Pinto",
+    "Stuart Pivar",
+    "Donald Trump",
+    "Henry Rosovsky",
+    "Lesley Wexner",
+    "Mort Zuckerman",
+    "Unknown",
+    "SCIENCE",
+    "Gerry Edelman",
+    "Murray Gellman",
+    "Steve Kosslyn",
+    "Martin Nowak",
+    "Lee Smolin",
+    "GIRL- FRIENDS",
+    "SPECIAL ASSISTANTS",
+    "BUISNESS",
+    "Ace Greenberg"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "center area below 'Henry Rosovsky' and above 'Lesley Wexner'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covering part of one line of text"
+    },
+    {
+      "location": "center area below 'GIRL-FRIENDS' heading",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black box redaction covering multiple lines of text"
+    },
+    {
+      "location": "center area below 'SPECIAL ASSISTANTS' heading",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covering one line of text"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Text redacted under 'GIRL-FRIENDS' and 'SPECIAL ASSISTANTS' headings obscures content"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:02:20.603Z",
+    "response_id": "resp_0258ea9f499c7538006a502873bb948197aa5c1309c4897448",
+    "raw_output_sha256": "69aecf4e3238eefe598925b1b3dfba75e7b38fe7416cdcf13425f08e93aefc23"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0258ea9f499c7538006a502873bb948197aa5c1309c4897448",
+    "enriched_at": "2026-07-09T23:02:20.603Z"
+  },
+  "visual_summary": "Page contains a list of names organized under various categories, some text is redacted with black boxes, and the page has a vertical black line near the left edge. The categories include a group of names in a vertical list on the top right, followed by categories labeled SCIENCE, GIRL-FRIENDS, SPECIAL ASSISTANTS, and BUSINESS. The GIRL-FRIENDS and SPECIAL ASSISTANTS sections have redacted text. The BUSINESS section lists a single name.",
+  "layout": [
+    "Vertical line on far left margin",
+    "Title or header text absent",
+    "Main content on the right half of the page",
+    "Multiple sections with headings and lists",
+    "Black redactions in center-right and lower-center areas"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "center area below 'Henry Rosovsky' and above 'Lesley Wexner'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covering part of one line of text"
+    },
+    {
+      "location": "center area below 'GIRL-FRIENDS' heading",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black box redaction covering multiple lines of text"
+    },
+    {
+      "location": "center area below 'SPECIAL ASSISTANTS' heading",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covering one line of text"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

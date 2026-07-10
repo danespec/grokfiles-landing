@@ -1,0 +1,139 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 176,
+  "page_id": "page_176",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_176.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_176.ocr.txt",
+  "image_metadata": {
+    "bytes": 5890701,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c59ab2533d0456d1461748a67836c1d7446ee85ac5130a4c41a37084bc4251e3"
+  },
+  "ocr_text": "| |\nWEEKLY WORLO 3 2\n: Ss ONLINE a7\naS epirion ae\nVANIER NATION?!\nReyvented AS jjJLie wv IN\n|} ATCOW ° wiSTER\nTacy AlL Exutl?\nVRICVS fo\nHOUSE_OVERSIGHT_000176\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page shows a printed 'WEEKLY WORLD NEWS ONLINE EDITION' header with a small photo of a man in the top right corner. Below is a handwritten note in blue ink with multiple lines of text separated by horizontal lines.",
+    "Layout: Header with 'WEEKLY WORLD NEWS ONLINE EDITION' text",
+    "Layout: Small photo of a man, upper right",
+    "Layout: Large block of handwritten text filling the page",
+    "Photo/image candidate at top right corner: Photo of a man, portrait-style, wearing a light-colored shirt with sleeves rolled up."
+  ],
+  "observations": [
+    "Page shows a printed 'WEEKLY WORLD NEWS ONLINE EDITION' header with a small photo of a man in the top right corner. Below is a handwritten note in blue ink with multiple lines of text separated by horizontal lines.",
+    "Layout: Header with 'WEEKLY WORLD NEWS ONLINE EDITION' text",
+    "Layout: Small photo of a man, upper right",
+    "Layout: Large block of handwritten text filling the page",
+    "Photo/image candidate at top right corner: Photo of a man, portrait-style, wearing a light-colored shirt with sleeves rolled up."
+  ],
+  "dates": [],
+  "document_strings": [
+    "WEEKLY WORLD NEWS ONLINE EDITION"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center page",
+      "text_as_seen": "INTERNATIONAL FUNNY MAN OF HISTORY REVEALED AS ALIEN IN DISGUISE",
+      "confidence": "high",
+      "note": "Handwritten in blue ink, all uppercase letters."
+    },
+    {
+      "location": "center page below first line",
+      "text_as_seen": "STRANGE BEINGS FROM PLANET NEAR DISTANT STAR HATCH SINISTER PLOT TO CORNER CHOICE REAL ESTATE ON EARTH",
+      "confidence": "high",
+      "note": "Handwritten, uppercase letters."
+    },
+    {
+      "location": "center page below second section",
+      "text_as_seen": "THEY ALL EXHIBIT CURIOUS AVERSION TO FOOD AND WINE",
+      "confidence": "high",
+      "note": "Handwritten, uppercase letters."
+    },
+    {
+      "location": "center page near bottom",
+      "text_as_seen": "EX-PRESIDENT TAKEN IN",
+      "confidence": "high",
+      "note": "Handwritten, uppercase letters."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:30:14.707Z",
+    "response_id": "resp_0abfb66d9e7ac57c006a502f00d12481968db7ceb46ce6896d",
+    "raw_output_sha256": "6b83158d2318fc4ffb226b5b3b362e6f9b868b73d2b222cb3e5c7ac26a7f755a"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0abfb66d9e7ac57c006a502f00d12481968db7ceb46ce6896d",
+    "enriched_at": "2026-07-09T23:30:14.707Z"
+  },
+  "visual_summary": "Page shows a printed 'WEEKLY WORLD NEWS ONLINE EDITION' header with a small photo of a man in the top right corner. Below is a handwritten note in blue ink with multiple lines of text separated by horizontal lines.",
+  "layout": [
+    "Header with 'WEEKLY WORLD NEWS ONLINE EDITION' text",
+    "Small photo of a man, upper right",
+    "Large block of handwritten text filling the page"
+  ],
+  "handwriting": [
+    {
+      "location": "center page",
+      "text_as_seen": "INTERNATIONAL FUNNY MAN OF HISTORY REVEALED AS ALIEN IN DISGUISE",
+      "confidence": "high",
+      "note": "Handwritten in blue ink, all uppercase letters."
+    },
+    {
+      "location": "center page below first line",
+      "text_as_seen": "STRANGE BEINGS FROM PLANET NEAR DISTANT STAR HATCH SINISTER PLOT TO CORNER CHOICE REAL ESTATE ON EARTH",
+      "confidence": "high",
+      "note": "Handwritten, uppercase letters."
+    },
+    {
+      "location": "center page below second section",
+      "text_as_seen": "THEY ALL EXHIBIT CURIOUS AVERSION TO FOOD AND WINE",
+      "confidence": "high",
+      "note": "Handwritten, uppercase letters."
+    },
+    {
+      "location": "center page near bottom",
+      "text_as_seen": "EX-PRESIDENT TAKEN IN",
+      "confidence": "high",
+      "note": "Handwritten, uppercase letters."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top right corner",
+      "description": "Photo of a man, portrait-style, wearing a light-colored shirt with sleeves rolled up.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

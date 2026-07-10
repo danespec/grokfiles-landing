@@ -1,0 +1,167 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 62,
+  "page_id": "page_062",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_062.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_062.ocr.txt",
+  "image_metadata": {
+    "bytes": 92187,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "1808192a8c67c07a2149f22dd411287419a39721ebf0195e56ff72e3c4426ebf"
+  },
+  "ocr_text": "SLO would cal! the hovge Rabbis Wie2.\nwk Soy Mars a\nLL wou lel SB enue lave up Yo Y Ovi. Mothees hovse\nSe Malte ete take hae fo (3 OLE Sy wt could touch |\nnar boobs |\nLet ht to $\nLie «BB 00d Ploy fopetee 7\nHOUSE_OVERSIGHT_000062\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note with some redacted text portions. The writing consists of several sentences arranged in lines, with a few redacted names or phrases obscured by black boxes. The note mentions a house, references to a 'Rabbi's Daughter,' and contains explicit content.",
+    "Layout: handwritten note with approximately five lines of text, some words redacted with black boxes"
+  ],
+  "observations": [
+    "A handwritten note with some redacted text portions. The writing consists of several sentences arranged in lines, with a few redacted names or phrases obscured by black boxes. The note mentions a house, references to a 'Rabbi's Daughter,' and contains explicit content.",
+    "Layout: handwritten note with approximately five lines of text, some words redacted with black boxes"
+  ],
+  "dates": [],
+  "document_strings": [
+    "the Rabbi's Daughter",
+    "Jeff would call the house Rabbi's voice & say this is [redacted] father.",
+    "I would Bring her up to your Mothers house & Make her take her top off so we could touch her boobs",
+    "Here & [redacted] would play together with toys",
+    "HOUSE_OVERSIGHT_000062"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "[Redacted] the Rabbi's Daughter.",
+      "confidence": "high",
+      "note": "Handwritten, left to right."
+    },
+    {
+      "location": "second line from top",
+      "text_as_seen": "Jeff would call the house Rabbi's voice & say this is [redacted] father.",
+      "confidence": "high",
+      "note": "Handwritten, left to right with some redacted text."
+    },
+    {
+      "location": "third line from top",
+      "text_as_seen": "I would Bring her up to your Mothers house & Make her take her top off so we could touch her boobs",
+      "confidence": "high",
+      "note": "Handwritten, left to right."
+    },
+    {
+      "location": "bottom line",
+      "text_as_seen": "Here & [redacted] would play together with toys",
+      "confidence": "high",
+      "note": "Handwritten, left to right with one redacted word."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "top line, first word",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscuring a word or name."
+    },
+    {
+      "location": "second line, near end",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscuring a word or name."
+    },
+    {
+      "location": "bottom line, second word",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscuring a word or name."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:32.163Z",
+    "response_id": "resp_08c32a4d8a9bc169006a502ad77cbc819785195cedeef3e1d3",
+    "raw_output_sha256": "b6e645cea8dc74cb7116899d027f9b1398a9662f1813d4a34d0ea620fe9ee0c3"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08c32a4d8a9bc169006a502ad77cbc819785195cedeef3e1d3",
+    "enriched_at": "2026-07-09T23:12:32.163Z"
+  },
+  "visual_summary": "A handwritten note with some redacted text portions. The writing consists of several sentences arranged in lines, with a few redacted names or phrases obscured by black boxes. The note mentions a house, references to a 'Rabbi's Daughter,' and contains explicit content.",
+  "layout": [
+    "handwritten note with approximately five lines of text, some words redacted with black boxes"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "[Redacted] the Rabbi's Daughter.",
+      "confidence": "high",
+      "note": "Handwritten, left to right."
+    },
+    {
+      "location": "second line from top",
+      "text_as_seen": "Jeff would call the house Rabbi's voice & say this is [redacted] father.",
+      "confidence": "high",
+      "note": "Handwritten, left to right with some redacted text."
+    },
+    {
+      "location": "third line from top",
+      "text_as_seen": "I would Bring her up to your Mothers house & Make her take her top off so we could touch her boobs",
+      "confidence": "high",
+      "note": "Handwritten, left to right."
+    },
+    {
+      "location": "bottom line",
+      "text_as_seen": "Here & [redacted] would play together with toys",
+      "confidence": "high",
+      "note": "Handwritten, left to right with one redacted word."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top line, first word",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscuring a word or name."
+    },
+    {
+      "location": "second line, near end",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscuring a word or name."
+    },
+    {
+      "location": "bottom line, second word",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscuring a word or name."
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,122 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 202,
+  "page_id": "page_202",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_202.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_202.ocr.txt",
+  "image_metadata": {
+    "bytes": 10020092,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "13bff47484cb6adfdf49978ad5c0d0524717b996d8b79163b2158250f669732f"
+  },
+  "ocr_text": "[008 some = @\n/\nr\nwor\nce\ne el “ = See pare . it 5h PO ce Es\nN me a “z ! 5 ie aera: Ato ma # ry\nee iia, \"Fs ae\nrs tae ~ te : Be pn eh\n— z 4 3 ;\n* “ ~ pete i\n» = .\npar as ad. 3\n\" ; o oy oie ai\n: ° Wee I - SS engin. ae Allo # . : ‘7? Se an ee ry o & : “y a\neS Oe ee aos\n’ x) i es = - Saye | Ai ss ae oc, 1: pa ee ‘ %. Fin ‘ -\n\\ ]Mitted | js esa ; > } a a. ns ees\n2 # im 4 es ‘rk aa ; 4, Pym: PIS eS a. Le RES he eis Hes vie}\nae Sse ear sie. eek es\nri ? Sy Ei - = sai Hy ‘ ‘Sa\n} ~ a Fae ea ae eu\neS in =) pl. ——\n| Ae — =. _ vie Beet 108\naaa . - € ii __ P cb + hth\na! Fy” . e ee ew\naf ey. a ay as ade $4\naaaneeseeimmenmenent Pi. “es - | et te\noo Leet\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three photographs arranged vertically with substantial white space between them. The top photo shows a person seated inside a blue race car. The middle photo depicts a man in snorkeling gear in a water body with tropical vegetation and buildings in the background. The bottom photo features three people sitting on a stone wall outdoors in a green, mountainous landscape; two individuals' faces are redacted by black boxes. The lower right corner of the page includes the text 'HOUSE_OVERSIGHT_000202'.",
+    "Layout: top centered photo",
+    "Layout: middle centered photo",
+    "Layout: bottom centered photo with redactions",
+    "Layout: footer text at bottom right",
+    "Photo/image candidate at top section: Person sitting inside a blue race car",
+    "Photo/image candidate at middle section: Man with snorkeling gear in water with tropical background",
+    "Photo/image candidate at bottom section: Three people sitting on stone wall outdoors in mountainous landscape, two faces redacted"
+  ],
+  "observations": [
+    "The page contains three photographs arranged vertically with substantial white space between them. The top photo shows a person seated inside a blue race car. The middle photo depicts a man in snorkeling gear in a water body with tropical vegetation and buildings in the background. The bottom photo features three people sitting on a stone wall outdoors in a green, mountainous landscape; two individuals' faces are redacted by black boxes. The lower right corner of the page includes the text 'HOUSE_OVERSIGHT_000202'.",
+    "Layout: top centered photo",
+    "Layout: middle centered photo",
+    "Layout: bottom centered photo with redactions",
+    "Layout: footer text at bottom right",
+    "Photo/image candidate at top section: Person sitting inside a blue race car",
+    "Photo/image candidate at middle section: Man with snorkeling gear in water with tropical background",
+    "Photo/image candidate at bottom section: Three people sitting on stone wall outdoors in mountainous landscape, two faces redacted"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000202"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "bottom photo, over faces of two people sitting on stone wall",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two faces are obscured by solid black boxes"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "No visible text captions accompanying photos"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:34:44.316Z",
+    "response_id": "resp_0be953e6d798894e006a50300e0c108197b3fada0b81a9c394",
+    "raw_output_sha256": "2404a7d7faa55a52adeca34fea919ff23aa7d086e7693f102cf4440374b6ad8d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0be953e6d798894e006a50300e0c108197b3fada0b81a9c394",
+    "enriched_at": "2026-07-09T23:34:44.316Z"
+  },
+  "visual_summary": "The page contains three photographs arranged vertically with substantial white space between them. The top photo shows a person seated inside a blue race car. The middle photo depicts a man in snorkeling gear in a water body with tropical vegetation and buildings in the background. The bottom photo features three people sitting on a stone wall outdoors in a green, mountainous landscape; two individuals' faces are redacted by black boxes. The lower right corner of the page includes the text 'HOUSE_OVERSIGHT_000202'.",
+  "layout": [
+    "top centered photo",
+    "middle centered photo",
+    "bottom centered photo with redactions",
+    "footer text at bottom right"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "bottom photo, over faces of two people sitting on stone wall",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two faces are obscured by solid black boxes"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top section",
+      "description": "Person sitting inside a blue race car",
+      "confidence": "high"
+    },
+    {
+      "location": "middle section",
+      "description": "Man with snorkeling gear in water with tropical background",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom section",
+      "description": "Three people sitting on stone wall outdoors in mountainous landscape, two faces redacted",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

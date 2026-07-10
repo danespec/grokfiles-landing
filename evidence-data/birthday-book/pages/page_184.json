@@ -1,0 +1,131 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 184,
+  "page_id": "page_184",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_184.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_184.ocr.txt",
+  "image_metadata": {
+    "bytes": 5595289,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8de57d3e595711a4a821b65308de628f901faeb936f56a5f6253d872edcaee2e"
+  },
+  "ocr_text": "Fitness landscape\nadesspue] UoHe,HY\nThe Quasispecies equation\nOpe SeqUeNG = 9\n«tl ey\nOrigin of life VO a\nHOUSE_OVERSIGHT_000184\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains educational content on biological concepts including fitness landscape and mutation landscape, with headers, highlighted text boxes, a mathematical equation, a small photo, and a small graph. Text and visual elements are arranged mostly top to bottom with some text upside down.",
+    "Layout: header with 'Fitness landscape' title",
+    "Layout: blue highlighted callout text blocks",
+    "Layout: central graphic with vertical lines and horizontal bar labeled 'Sequence space'",
+    "Layout: upside-down red and black text 'Mutation landscape' with an orange highlighted text line",
+    "Layout: section header 'The Quasispecies equation'",
+    "Layout: formula with orange highlight annotations",
+    "Layout: small photo with biological cells",
+    "Layout: list of biology terms in bold",
+    "Layout: small graph showing 'error catastrophe' and axis labels",
+    "Photo/image candidate at bottom left: Small microscopy-style photo showing cells or biological matter",
+    "Photo/image candidate at bottom right: Small scientific graph illustrating error catastrophe with color gradient and curved lines"
+  ],
+  "observations": [
+    "Page contains educational content on biological concepts including fitness landscape and mutation landscape, with headers, highlighted text boxes, a mathematical equation, a small photo, and a small graph. Text and visual elements are arranged mostly top to bottom with some text upside down.",
+    "Layout: header with 'Fitness landscape' title",
+    "Layout: blue highlighted callout text blocks",
+    "Layout: central graphic with vertical lines and horizontal bar labeled 'Sequence space'",
+    "Layout: upside-down red and black text 'Mutation landscape' with an orange highlighted text line",
+    "Layout: section header 'The Quasispecies equation'",
+    "Layout: formula with orange highlight annotations",
+    "Layout: small photo with biological cells",
+    "Layout: list of biology terms in bold",
+    "Layout: small graph showing 'error catastrophe' and axis labels",
+    "Photo/image candidate at bottom left: Small microscopy-style photo showing cells or biological matter",
+    "Photo/image candidate at bottom right: Small scientific graph illustrating error catastrophe with color gradient and curved lines"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Fitness landscape",
+    "Each sequence has a reproduction rate (=fitness).",
+    "Sequence space",
+    "Each sequence has a mutation rate.",
+    "Mutation landscape",
+    "Localization in mutation landscape = evolution of complexity",
+    "The Quasispecies equation",
+    "Frequency of type i",
+    "Mutation from j to i",
+    "Fitness of type j",
+    "Average fitness",
+    "Origin of life",
+    "Viruses",
+    "Bacteria",
+    "Cells",
+    "Cancer",
+    "error catastrophe",
+    "master sequence d = 0",
+    "HOUSE_OVERSIGHT_000184"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:31:43.882Z",
+    "response_id": "resp_075ba41e5fd68ded006a502f5524f481979de1052f225c25b4",
+    "raw_output_sha256": "cc2b653e35a864794745b2cdd2c496aeceb68b5252e1173bffc37a51bbb54195"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_075ba41e5fd68ded006a502f5524f481979de1052f225c25b4",
+    "enriched_at": "2026-07-09T23:31:43.882Z"
+  },
+  "visual_summary": "Page contains educational content on biological concepts including fitness landscape and mutation landscape, with headers, highlighted text boxes, a mathematical equation, a small photo, and a small graph. Text and visual elements are arranged mostly top to bottom with some text upside down.",
+  "layout": [
+    "header with 'Fitness landscape' title",
+    "blue highlighted callout text blocks",
+    "central graphic with vertical lines and horizontal bar labeled 'Sequence space'",
+    "upside-down red and black text 'Mutation landscape' with an orange highlighted text line",
+    "section header 'The Quasispecies equation'",
+    "formula with orange highlight annotations",
+    "small photo with biological cells",
+    "list of biology terms in bold",
+    "small graph showing 'error catastrophe' and axis labels"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom left",
+      "description": "Small microscopy-style photo showing cells or biological matter",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right",
+      "description": "Small scientific graph illustrating error catastrophe with color gradient and curved lines",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,146 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 107,
+  "page_id": "page_107",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_107.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_107.ocr.txt",
+  "image_metadata": {
+    "bytes": 18557559,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "f328da25708f86fcb49745cdc17b61dd2020fb8c9a0013766e0e6c4365d98577"
+  },
+  "ocr_text": "\"7 a , , F s) - y bn ies 2 c a i r\n— . af , We Ny\nRcal\n(y\nPOD 4\ney\n+ s Nae ry,\nei . _ ) Renee\n1 \"] ai . - *s x\ner | pre Ss ae ’\n\naes - a\n% o> a is a\n\na Pelee ay oe\n\nCA “royal digi lads —\nE 3 5 i 4 ong Tae Oe\n\n2 ah LW Veen : CR es me 4 » if Cee Se\n, - gill - << < S 4 tae eae J FF ba ew ae\n” al on sale sien a ee a och aes!\nMe e q. ea ee ar eg fl Fant = my cae ee i P\noo aa e _ ia wf <r =. 2, , Seg ay ry\neS le ees ee eee\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A color photograph of two people in a pool, one person behind the other, both partially submerged in clear water. The person in front appears to be laughing, and the person behind is holding the other's arms. There is black redaction over the chest area of the person in front. Handwritten text in black ink is present in the upper left corner of the photo.",
+    "Layout: photograph of two people in a pool",
+    "Layout: handwritten text in upper left corner",
+    "Layout: large rectangular black redaction over chest area",
+    "Photo/image candidate at full image: Two people partially submerged in a swimming pool with water visible around them. Facial expressions visible with one person laughing and the other holding their arms behind."
+  ],
+  "observations": [
+    "A color photograph of two people in a pool, one person behind the other, both partially submerged in clear water. The person in front appears to be laughing, and the person behind is holding the other's arms. There is black redaction over the chest area of the person in front. Handwritten text in black ink is present in the upper left corner of the photo.",
+    "Layout: photograph of two people in a pool",
+    "Layout: handwritten text in upper left corner",
+    "Layout: large rectangular black redaction over chest area",
+    "Photo/image candidate at full image: Two people partially submerged in a swimming pool with water visible around them. Facial expressions visible with one person laughing and the other holding their arms behind."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Happy Birthday Love",
+    "[signature-like scribble]"
+  ],
+  "signatures": [
+    {
+      "location": "upper left corner below handwritten text",
+      "text_as_seen": "[signature-like scribble]",
+      "confidence": "medium",
+      "note": "Appears to be a name or signature, unverified"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "upper left corner",
+      "text_as_seen": "Happy Birthday Love",
+      "confidence": "high",
+      "note": "Handwritten text in black ink, cursive style"
+    },
+    {
+      "location": "upper left corner below 'Happy Birthday Love'",
+      "text_as_seen": "[signature-like scribble]",
+      "confidence": "medium",
+      "note": "Handwritten text appears to be a signature or name, but cannot be verified"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "center of the image over the person's chest area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering chest area of person in front"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:20:23.280Z",
+    "response_id": "resp_016be869e537f95b006a502caf8e988190af2eef8826303f87",
+    "raw_output_sha256": "ef0f50af46ab7e93ea14e38e9f7705efec5e3751bf647c9b13f308ae4a3ae69f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_016be869e537f95b006a502caf8e988190af2eef8826303f87",
+    "enriched_at": "2026-07-09T23:20:23.280Z"
+  },
+  "visual_summary": "A color photograph of two people in a pool, one person behind the other, both partially submerged in clear water. The person in front appears to be laughing, and the person behind is holding the other's arms. There is black redaction over the chest area of the person in front. Handwritten text in black ink is present in the upper left corner of the photo.",
+  "layout": [
+    "photograph of two people in a pool",
+    "handwritten text in upper left corner",
+    "large rectangular black redaction over chest area"
+  ],
+  "handwriting": [
+    {
+      "location": "upper left corner",
+      "text_as_seen": "Happy Birthday Love",
+      "confidence": "high",
+      "note": "Handwritten text in black ink, cursive style"
+    },
+    {
+      "location": "upper left corner below 'Happy Birthday Love'",
+      "text_as_seen": "[signature-like scribble]",
+      "confidence": "medium",
+      "note": "Handwritten text appears to be a signature or name, but cannot be verified"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "upper left corner below handwritten text",
+      "text_as_seen": "[signature-like scribble]",
+      "confidence": "medium",
+      "note": "Appears to be a name or signature, unverified"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "center of the image over the person's chest area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering chest area of person in front"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "full image",
+      "description": "Two people partially submerged in a swimming pool with water visible around them. Facial expressions visible with one person laughing and the other holding their arms behind.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

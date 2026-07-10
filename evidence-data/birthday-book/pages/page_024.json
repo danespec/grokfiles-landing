@@ -1,0 +1,135 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 24,
+  "page_id": "page_024",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_024.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_024.ocr.txt",
+  "image_metadata": {
+    "bytes": 843037,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "986b3ebac13ed7f8db4ef876f7a0ccd7272ee3126c4836fca01e79b5d287106a"
+  },
+  "ocr_text": "JJ —\nyo on oo. Lo\n\nPe a oo — oo oo . SNe eo a _ a = a oe Sy : ee :\noe _ | [_ a — oe bs Ho Le\n\n. ae _ on. oe oo :\n\n_ oe lh oo | io. a. - oe wees Aa Co nee a a\n\n8 = Ae _ aoe oo a. — a :\n— A ae — - a. a oe ae Une ie ok. as ae : ee a we\noe | D2. a | | ale ee Sa _ eS a ee uv |\n\n_ a _ ke ia oO . _d oe _ : ae ae oe A | _ :\n| oo | _ 7 om a |. 2 _\n\n_ . ee ' a oo. 8 De a a _ a ;\n—. - be _ oo. _ — oo : oo Ad _ : - oo es see ; . 7\nae . 7 a a Coe. Le _ uo oo\n8 _ oo Ay Au ce 7 a a _ — sv : _. |\n| _ oo . oo. A 4 Bo uo a _ _ _\n\n— - |. oF ee So | S Alo fo oe : : ee oe a : . Be : .\nrl  . _ — We oe ~— -\nrh ~ << oo | oe a ae : : oe AES ee we as : ee ay ee : : :\n. a . . — a . Toe a Le oe oe ‘ Boe - ee i :\nBit: oo a oo oe : Fe CAS\n. - : |. a ea Pes ee : Lo Sey a : fe Be cee 8 fe pane\n[. oo oF _ — _ 2 ee _ Lo eo a ee\nae eee 7 . a boa oe | |\naa _. _. a. Le _ a i. ce oe ce : a. oe :\noe |. . a ce Loe oe oo ees oes ee Ses yes 2 . ye . :\na |. fo oe  . Te a a - oe oe ae oe a.\n[| ae oe oe : Ae _ coe be . : Lo oo be fo a oe a\n| es a — ee ok — PON ae . ee a oe bo c Les\n| a ee a oe ‘ oe i ee Be Ve . Oe oe foo a a ae f\na a a oo roe LS a oC ae bhp —\nAig ae hee. oe _\n| SN | ae a _ : Ue an ee ee Ay oe . : ao\n|: . ao oS oe 4 LG Aa — . L a. a\n| oo oe Ss so a a a : a oe ane _ | oe a . :\n. . . — _ a a oe a mo co : ; oe es a ee ee\na Lo - _. A . : oo : _ ee a = _\n6 ~ oo a8 Roe a e eo ae : eo y oe oo oe\nSt . eo. fe a ee : — oe\n| . aoe . Le woe | aS Le ne i oo\n— i oe - ro oe aS Nae us Be LES\n- — ar. ce ok o : | os SS\n_ 7... |\n[ — a _\n . _ . 8 me\n_ _\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page with faint handwritten cursive text in pencil. There are various numbers and dates written along the left margin and top left corner. There is a circled number '1' at the top right corner. The page appears to be a personal narrative or diary entry.",
+    "Layout: handwritten text filling most of the page",
+    "Layout: numbers and annotations in the top left corner and along the left margin",
+    "Layout: circled number '1' in the top right corner"
+  ],
+  "observations": [
+    "A page with faint handwritten cursive text in pencil. There are various numbers and dates written along the left margin and top left corner. There is a circled number '1' at the top right corner. The page appears to be a personal narrative or diary entry.",
+    "Layout: handwritten text filling most of the page",
+    "Layout: numbers and annotations in the top left corner and along the left margin",
+    "Layout: circled number '1' in the top right corner"
+  ],
+  "dates": [
+    "Dec 4 1916",
+    "June 28 19"
+  ],
+  "document_strings": [
+    "S.S.F 734-6701",
+    "189",
+    "7703",
+    "613 16",
+    "182",
+    "3446",
+    "WAS Born Dec 4 1916",
+    "I Remember moving to Willoughby Avenue at 19th",
+    "LAW School",
+    "My best friends were ...",
+    "I remember walking to my tutor at 31 Walton St",
+    "Then we moved to 44 Crown St",
+    "Then we moved to 510 Clinton St",
+    "graduated June 28 19",
+    "Went to Hebrew School until I was ...",
+    "twice as a minister",
+    "his name was ...",
+    "my first job as ...",
+    "Came to California when I ...",
+    "forgot her"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center and right half of the page",
+      "text_as_seen": "WAS Born Dec 4 1916. I remember moving to Willoughby Avenue at 19th LAW School ... next to a convent ... My best friends were ... I remember walking to my tutor at 31 Walton Street ... He would quite fair ... Then we moved to 44 Crown St where we stayed only ... Then we moved to 510 Clinton St ... graduated June 28 19 ... Went to Hebrew School until I was ... twice as a minister ... the morning ... his name was ... my first job as ... for my future ... Came to California when I ... forgot her ...",
+      "confidence": "medium",
+      "note": "Text is faint and partially obscured; some words difficult to decipher."
+    },
+    {
+      "location": "top left corner and left margin",
+      "text_as_seen": "numbers and text including 'S.S.F 734-6701', '189', '7703', '613 16', '182', '3446'",
+      "confidence": "high",
+      "note": "Numbers and text written in pencil or pen, more legible than main text."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some text faded and faint, causing incomplete OCR transcription.",
+    "Some words and phrases are unclear or partially illegible."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:05:50.604Z",
+    "response_id": "resp_0d58bdcf76baaed0006a5029447cfc8196bba8225cf9ac2d2f",
+    "raw_output_sha256": "4e74b085c78c632952f12b21dfce11ece43929abe56d4045c5838d8dbf6af396"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d58bdcf76baaed0006a5029447cfc8196bba8225cf9ac2d2f",
+    "enriched_at": "2026-07-09T23:05:50.604Z"
+  },
+  "visual_summary": "A page with faint handwritten cursive text in pencil. There are various numbers and dates written along the left margin and top left corner. There is a circled number '1' at the top right corner. The page appears to be a personal narrative or diary entry.",
+  "layout": [
+    "handwritten text filling most of the page",
+    "numbers and annotations in the top left corner and along the left margin",
+    "circled number '1' in the top right corner"
+  ],
+  "handwriting": [
+    {
+      "location": "center and right half of the page",
+      "text_as_seen": "WAS Born Dec 4 1916. I remember moving to Willoughby Avenue at 19th LAW School ... next to a convent ... My best friends were ... I remember walking to my tutor at 31 Walton Street ... He would quite fair ... Then we moved to 44 Crown St where we stayed only ... Then we moved to 510 Clinton St ... graduated June 28 19 ... Went to Hebrew School until I was ... twice as a minister ... the morning ... his name was ... my first job as ... for my future ... Came to California when I ... forgot her ...",
+      "confidence": "medium",
+      "note": "Text is faint and partially obscured; some words difficult to decipher."
+    },
+    {
+      "location": "top left corner and left margin",
+      "text_as_seen": "numbers and text including 'S.S.F 734-6701', '189', '7703', '613 16', '182', '3446'",
+      "confidence": "high",
+      "note": "Numbers and text written in pencil or pen, more legible than main text."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Dec 4 1916",
+    "June 28 19"
+  ],
+  "confidence": "medium"
+}

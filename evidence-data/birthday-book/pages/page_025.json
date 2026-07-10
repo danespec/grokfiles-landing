@@ -1,0 +1,111 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 25,
+  "page_id": "page_025",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_025.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_025.ocr.txt",
+  "image_metadata": {
+    "bytes": 764358,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "726b0d63e444208715a85bad9f255d631d6a4a7587c64cac5122da617fd1f76a"
+  },
+  "ocr_text": "— ca # f\n———$—]—&—{—_{_—_{_ __—_—_—_—_—\n: — cok 7.\nemus a ce 2: : eee ee : ie Loe 3 e os\nrT a8 : Qf ACa 4 S ey ce i ie e 2\nS| Po. a Cie, : eo oe a At\nae ] enn aed é A a. Oe - (eo . Akg. i\nae - Slee a AP pen. i ae ay A 64, oe\nee oo eee Jae oe _ — a.\n— - — —c Se Yo Pea oe (eo. : eo, _ co\n|. _ oo Co oe : oe  . a oS AACE 4\nft , ee hoe Ll. tp. bel\na |. oe _ — ‘ ee 3 oN oe ee. ay a Ay\nr | . - cy ae oo ce ak oe . OF a ae - ae : ae we ;\noe a So o a i. Eel. Pee ak i. A\n. 7. oe : 7. . Looe ee a a ee\nyt A L : cle Do . a a oe Aue Lo — : a\nr | oe | oe se te ies Ge Cr So oS oe cy Ne /\na _ a fo Se — a ' te . ee : : ’\nae ee : 4 “ ee ‘ \\ nee SS oe . a :\na |. a - _ . Se) _ co | A Ss S noe el oF . :\na de a o i a a ye oe a | | | ee a A Cee -\n| oe _ - i, . a : eae : co ee oF :\n_ - A oe oe . . A es A a Se oe 8 - S. one '\n.  . > — oo os coe oe Se So ce : ae ee .\nCt — LC a. oO ce a a :\n. : . oo. ae Sas Be A eee phe See ve ss e Ue : — :\n . oO - . od : _ 5 a oo oe So\n. . _ a ae poe ee oe bef oe oe a c .\ni ce 7 i Se oe S ee Bees a Re 2 ae ~~ oo : y S ee oe i ;\n. o . all oS a ee ee a, ee |. ae oe ve ee : ‘\n_ . oo — et & : i ee : ce Oe . oe sos a\na — - Poo Oo a 2 oe oe oo : \\ —\n|. — _ oo — a q coe _ oe fee oo : os Ss. : ao\n_ . - oe a oo fo. —o co _ : ke a 4\n_ oe — oe — a coe a a ee a. | — ‘\n| — oo a us sales Boe Ne eee ah eet 2 3 oe ay é os :\n_ . . mo oe _ ok = ee — hoe oo : : So -— :\n— ce — co — A — oF ee maar a coe ae Be mS ee © ae : eo a ES ee hee ie :\n. ee oe oo : ] eo = oo. : oe : ’\nfk — ae Bai ee eek . _\nae i “ _ oe fw fo AN a\n_ ae | — 5 : Sage Ae os Ve pe ge cae} -\noo ok co a . sole we8 aoe ey oe a oo & : oe :\n. . ce a oo eo [Ae a — (oe. _\n| & _ a _ ‘ | ae ~ UG LL. ae :\n; * oe . | oe fy | Ae\nSS — |. Aa. os foe\nri. - _- oe mer oo.\n_ _ a ao oO 5 ek c ae\n| S a |. . ~\nao\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A single page with lined paper containing dense handwritten cursive text in pencil. The top right corner has a circled number '2'. Some words are crossed out, and there are underlines and corrections. The handwriting is generally faded and uneven in darkness, making some words difficult to read. There are no printed elements, photos, drawings, or stamps visible.",
+    "Layout: lined paper background",
+    "Layout: handwritten cursive text filling most of page",
+    "Layout: circled number '2' in top right corner"
+  ],
+  "observations": [
+    "A single page with lined paper containing dense handwritten cursive text in pencil. The top right corner has a circled number '2'. Some words are crossed out, and there are underlines and corrections. The handwriting is generally faded and uneven in darkness, making some words difficult to read. There are no printed elements, photos, drawings, or stamps visible.",
+    "Layout: lined paper background",
+    "Layout: handwritten cursive text filling most of page",
+    "Layout: circled number '2' in top right corner"
+  ],
+  "dates": [
+    "1940",
+    "1941",
+    "1943",
+    "1952",
+    "1953",
+    "1956",
+    "May 16"
+  ],
+  "document_strings": [
+    "I was there for 6 months in 1940 and enlisted until 1940-1941. I was drafted in the Army. Before that I had my ant with the Bobby Dodson - After being discharged in 1943 I was out being a bar bell player - The FIRST JOB held in 1943 was for G M Bulson selling pretty may goods and also selling electri-TSII for the Knoll Electric Fanning Co. The net for I have was selling shirts for Mr Sepp and selling cutisy other broilees Lake 3-11th st selling shirts also Scott FIFTH ave - Then I got a job working for the pendulum DEPT - for vise The next held had was as conductor for the FRT D. Berry which lasted for about 3 years 1952 - 1956 Then I got a job in the DARK Dept - N. Fe from May 16 - 1956 Ann 1953 when I had 2 H - IN T ATTACK - Then I retired 27 years"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "full page",
+      "text_as_seen": "I was there for 6 months in 1940 and enlisted until 1940-1941. I was drafted in the Army. Before that I had my ant with the Bobby Dodson - After being discharged in 1943 I was out being a bar bell player - The FIRST JOB held in 1943 was for G M Bulson selling pretty may goods and also selling electri-TSII for the Knoll Electric Fanning Co. The net for I have was selling shirts for Mr Sepp and selling cutisy other broilees Lake 3-11th st selling shirts also Scott FIFTH ave - Then I got a job working for the pendulum DEPT - for vise The next held had was as conductor for the FRT D. Berry which lasted for about 3 years 1952 - 1956 Then I got a job in the DARK Dept - N. Fe from May 16 - 1956 Ann 1953 when I had 2 H - IN T ATTACK - Then I retired 27 years",
+      "confidence": "medium",
+      "note": "Handwriting is faded and some words or letters are unclear, so confidence is medium."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:06:02.152Z",
+    "response_id": "resp_0dbf7cb6d3bc9936006a5029500d1c819797010080be36dd27",
+    "raw_output_sha256": "a341a23826d91b927d56189b1709367e799ed80c766f90864eff16dc6ccdf94f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0dbf7cb6d3bc9936006a5029500d1c819797010080be36dd27",
+    "enriched_at": "2026-07-09T23:06:02.152Z"
+  },
+  "visual_summary": "A single page with lined paper containing dense handwritten cursive text in pencil. The top right corner has a circled number '2'. Some words are crossed out, and there are underlines and corrections. The handwriting is generally faded and uneven in darkness, making some words difficult to read. There are no printed elements, photos, drawings, or stamps visible.",
+  "layout": [
+    "lined paper background",
+    "handwritten cursive text filling most of page",
+    "circled number '2' in top right corner"
+  ],
+  "handwriting": [
+    {
+      "location": "full page",
+      "text_as_seen": "I was there for 6 months in 1940 and enlisted until 1940-1941. I was drafted in the Army. Before that I had my ant with the Bobby Dodson - After being discharged in 1943 I was out being a bar bell player - The FIRST JOB held in 1943 was for G M Bulson selling pretty may goods and also selling electri-TSII for the Knoll Electric Fanning Co. The net for I have was selling shirts for Mr Sepp and selling cutisy other broilees Lake 3-11th st selling shirts also Scott FIFTH ave - Then I got a job working for the pendulum DEPT - for vise The next held had was as conductor for the FRT D. Berry which lasted for about 3 years 1952 - 1956 Then I got a job in the DARK Dept - N. Fe from May 16 - 1956 Ann 1953 when I had 2 H - IN T ATTACK - Then I retired 27 years",
+      "confidence": "medium",
+      "note": "Handwriting is faded and some words or letters are unclear, so confidence is medium."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1940",
+    "1941",
+    "1943",
+    "1952",
+    "1953",
+    "1956",
+    "May 16"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,33 @@
+Memoryless learner ‘a
+= Diversity threshold ,
+N>nlogn 2 a,
+° NaN ,
+Communicative potential (ore SFT FIO Soe a
+| ae ‘4 538 Time
+P(LpLy)= 5, 2,0) Pid * Py Ws)
+i=l j=
+x0” psec Probability of escape a ae
+_ft \ P= Pil - ee \
+$10" = Mutation }-— 80%: f landscapes _
+2 ~ ——— ~- fen A os oT ha iE - 2
+N10 | asa — t 10 hy a mar settctawe mz
+se Threshold of CIN | Seer ee
+Se ee ee S (Lee (N12) |g aga a
+Selective positions, m u Selective positions, m
+An alphabet is a finite list of symbols. Sentences are strings of symbols. -
+A language is a set of sentences. A finite language has a finite number of
+sentences. An infinite language has an infinite number of sentences. There
+are infinitely many finite languages.
+Human languages are infinite.
+A grammar is a finite list of rules that generates a language. Grammars
+are equivalent to computers. Finite state grammars generate regular
+languages which are accepted by finite state machines. Phrase structure
+grammars give rise to computable languages which are Turing complete.
+For each such language there exists a Turing machine that accepts every
+sentence that is part of the language, but may compute forever on
+sentences that do not belong the language.
+, The language of mathematics is not computable.
+Learning is selection among a restricted set of hypothocos. .
+Ambitious learners exceed their teachers.
+emer |
+HOUSE_OVERSIGHT_000183

@@ -1,0 +1,84 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 226,
+  "page_id": "page_226",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_226.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_226.ocr.txt",
+  "image_metadata": {
+    "bytes": 139208,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "0ff87359646a15365c4db55fc43c307fd60bfdfbdb88bbc26746a697770cd013"
+  },
+  "ocr_text": ":\n. .\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "A white page with centered black text in a large, bold font. The text consists of a short passage arranged in five lines, with spacing between lines. The edges of the page are visible, with a light shadow or dark border on the right edge. No handwriting, drawings, or photos are present.",
+    "Layout: single column of text",
+    "Layout: five lines of text",
+    "Layout: centered alignment"
+  ],
+  "observations": [
+    "A white page with centered black text in a large, bold font. The text consists of a short passage arranged in five lines, with spacing between lines. The edges of the page are visible, with a light shadow or dark border on the right edge. No handwriting, drawings, or photos are present.",
+    "Layout: single column of text",
+    "Layout: five lines of text",
+    "Layout: centered alignment"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Before Jeffrey,",
+    "I was a 22 year old",
+    "divorcee working as a",
+    "hostess in a hotel",
+    "restaurant........"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:23.717Z",
+    "response_id": "resp_0b78f6c67bd5cf1a006a5030ec2b108196872005fd87382b3c",
+    "raw_output_sha256": "26f0285b5f6b575ae0573d24383d7d6a5683f6c3d1f78802ea6a378b57604700"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b78f6c67bd5cf1a006a5030ec2b108196872005fd87382b3c",
+    "enriched_at": "2026-07-09T23:38:23.717Z"
+  },
+  "visual_summary": "A white page with centered black text in a large, bold font. The text consists of a short passage arranged in five lines, with spacing between lines. The edges of the page are visible, with a light shadow or dark border on the right edge. No handwriting, drawings, or photos are present.",
+  "layout": [
+    "single column of text",
+    "five lines of text",
+    "centered alignment"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

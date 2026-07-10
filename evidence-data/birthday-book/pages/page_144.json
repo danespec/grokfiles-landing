@@ -1,0 +1,102 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 144,
+  "page_id": "page_144",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_144.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_144.ocr.txt",
+  "image_metadata": {
+    "bytes": 4817514,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2041f3c5664a18f8739aae6fa79cd3b89cc1c756c482183b71844f4f6168a3f9"
+  },
+  "ocr_text": "s un Am\nSu t Kkerevet Ke ts wm Me\n/\nhi orld ke Abeta a4 - 7\n/\nkan ae aif —— - ! / a\naN Pe, :.* ee ee |\n3.4 pal ; Bi, ae - as\n: s ae Pf a Fa ;\n2. To - ~ - Saas 2: > -\nHOUSE_OVERSIGHT_000144\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page has a handwritten note at the top center. Below the note, there is a color photo showing two people seated on wooden chairs on a wooden patio deck in front of a shingled building with a window and a hanging flower basket. One person wears a white bathrobe, the other wears a dark top and light pants. The scene is outdoors with trees visible.",
+    "Layout: handwritten note top center",
+    "Layout: photo bottom center",
+    "Photo/image candidate at bottom center: Color photo of two people sitting on wooden chairs on a wooden patio deck outside a shingled building with a window and a hanging basket with flowers. One person is in a white bathrobe, the other in casual clothes."
+  ],
+  "observations": [
+    "The page has a handwritten note at the top center. Below the note, there is a color photo showing two people seated on wooden chairs on a wooden patio deck in front of a shingled building with a window and a hanging flower basket. One person wears a white bathrobe, the other wears a dark top and light pants. The scene is outdoors with trees visible.",
+    "Layout: handwritten note top center",
+    "Layout: photo bottom center",
+    "Photo/image candidate at bottom center: Color photo of two people sitting on wooden chairs on a wooden patio deck outside a shingled building with a window and a hanging basket with flowers. One person is in a white bathrobe, the other in casual clothes."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000144"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "But, wherever he is in the World, he remains my best pal !",
+      "confidence": "high",
+      "note": "Handwritten text is clear and legible."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "No visible dates on the page."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:35.368Z",
+    "response_id": "resp_027be594c9000424006a502deabe84819085cd9a41a997cf83",
+    "raw_output_sha256": "1a669734882f2c1ab4d10ed389e9a845d6ce6301be1206adea312e200dcab742"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_027be594c9000424006a502deabe84819085cd9a41a997cf83",
+    "enriched_at": "2026-07-09T23:25:35.368Z"
+  },
+  "visual_summary": "The page has a handwritten note at the top center. Below the note, there is a color photo showing two people seated on wooden chairs on a wooden patio deck in front of a shingled building with a window and a hanging flower basket. One person wears a white bathrobe, the other wears a dark top and light pants. The scene is outdoors with trees visible.",
+  "layout": [
+    "handwritten note top center",
+    "photo bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "But, wherever he is in the World, he remains my best pal !",
+      "confidence": "high",
+      "note": "Handwritten text is clear and legible."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom center",
+      "description": "Color photo of two people sitting on wooden chairs on a wooden patio deck outside a shingled building with a window and a hanging basket with flowers. One person is in a white bathrobe, the other in casual clothes.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

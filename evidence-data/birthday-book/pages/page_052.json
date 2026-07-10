@@ -1,0 +1,151 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 52,
+  "page_id": "page_052",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_052.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_052.ocr.txt",
+  "image_metadata": {
+    "bytes": 11336771,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "90c8e23f69dedb3b68b27352a793f6f42755a81c5fa14fb812ddcd8edebacac8"
+  },
+  "ocr_text": "Sik 5 .\n39 | A reels “ s\n. in he : a q i\n3 , ‘ ee 9 $ ~\" . ms o\ny One: Bw | ; pagal 7, AOR amici al |\nFs ae 9 a po age bier 4 —\n—————— j\n: { b }\nee ee\n#¥ p . We -_ 4\nWe: £. . . ‘ ; a» - |\non | ei i \"2\n* q a ‘.\nba rial - a ” my q\n:\ny i\n: - iy E es ERE:\nye By vie. 5\n%, = Se } , 3 = a é . F\nele) | <a. amt’ = ts\na , a. a Re\" | = ic ab ae 3 » 4 - |\nHOUSE_OVERSIGHT_000052\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two groups of photos. The top group comprises four small color portrait photos of shirtless men or men with bare shoulders, arranged in a loose grid, with some photos overlapping horizontally. The bottom group contains six smaller sepia-toned or black-and-white photos, also loosely arranged with some overlap. These lower photos show groups of men in close proximity, some posing or interacting, with varied facial expressions. The photos appear to be pasted on a white background sheet. There is no visible text or handwriting on the page apart from faint printing marks or damage on the photos themselves.",
+    "Layout: top group of four color portrait photos",
+    "Layout: bottom group of six black-and-white or sepia photos arranged loosely",
+    "Layout: white background sheet",
+    "Photo/image candidate at top left quadrant: Small color photo of three men with bare shoulders, closely grouped, only upper torso and heads visible",
+    "Photo/image candidate at top right quadrant: Small color photo of a single man, shirtless, upper torso and head visible",
+    "Photo/image candidate at below top left photo: Small color photo of a single man, shirtless, upper torso and head visible",
+    "Photo/image candidate at below top right photo: Small color photo of a single man with dark shirt, upper torso and head visible",
+    "Photo/image candidate at bottom left: Black-and-white or sepia photo of several men close together, blurry and slightly damaged",
+    "Photo/image candidate at bottom center left: Black-and-white or sepia photo of several men smiling and crowded together, some faces partially obscured",
+    "Photo/image candidate at bottom center right: Black-and-white or sepia photo of multiple men, one looking downward, appearing relaxed",
+    "Photo/image candidate at bottom far left: Black-and-white or sepia photo of two men smiling closely at camera",
+    "Photo/image candidate at bottom center: Black-and-white or sepia photo of two older men; one wearing a cap, both facing forward",
+    "Photo/image candidate at bottom far right: Black-and-white or sepia photo of a group of men, one with mouth open, arranged closely"
+  ],
+  "observations": [
+    "The page contains two groups of photos. The top group comprises four small color portrait photos of shirtless men or men with bare shoulders, arranged in a loose grid, with some photos overlapping horizontally. The bottom group contains six smaller sepia-toned or black-and-white photos, also loosely arranged with some overlap. These lower photos show groups of men in close proximity, some posing or interacting, with varied facial expressions. The photos appear to be pasted on a white background sheet. There is no visible text or handwriting on the page apart from faint printing marks or damage on the photos themselves.",
+    "Layout: top group of four color portrait photos",
+    "Layout: bottom group of six black-and-white or sepia photos arranged loosely",
+    "Layout: white background sheet",
+    "Photo/image candidate at top left quadrant: Small color photo of three men with bare shoulders, closely grouped, only upper torso and heads visible",
+    "Photo/image candidate at top right quadrant: Small color photo of a single man, shirtless, upper torso and head visible",
+    "Photo/image candidate at below top left photo: Small color photo of a single man, shirtless, upper torso and head visible",
+    "Photo/image candidate at below top right photo: Small color photo of a single man with dark shirt, upper torso and head visible",
+    "Photo/image candidate at bottom left: Black-and-white or sepia photo of several men close together, blurry and slightly damaged",
+    "Photo/image candidate at bottom center left: Black-and-white or sepia photo of several men smiling and crowded together, some faces partially obscured",
+    "Photo/image candidate at bottom center right: Black-and-white or sepia photo of multiple men, one looking downward, appearing relaxed",
+    "Photo/image candidate at bottom far left: Black-and-white or sepia photo of two men smiling closely at camera",
+    "Photo/image candidate at bottom center: Black-and-white or sepia photo of two older men; one wearing a cap, both facing forward",
+    "Photo/image candidate at bottom far right: Black-and-white or sepia photo of a group of men, one with mouth open, arranged closely"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000052"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:10:43.809Z",
+    "response_id": "resp_01607dca4057d61e006a502a6b68188195b163ed3446d37d08",
+    "raw_output_sha256": "b5299e9de467585dcd928367caa72aef97f5a4651d51f1ee0172f27014c2f1e5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01607dca4057d61e006a502a6b68188195b163ed3446d37d08",
+    "enriched_at": "2026-07-09T23:10:43.809Z"
+  },
+  "visual_summary": "The page contains two groups of photos. The top group comprises four small color portrait photos of shirtless men or men with bare shoulders, arranged in a loose grid, with some photos overlapping horizontally. The bottom group contains six smaller sepia-toned or black-and-white photos, also loosely arranged with some overlap. These lower photos show groups of men in close proximity, some posing or interacting, with varied facial expressions. The photos appear to be pasted on a white background sheet. There is no visible text or handwriting on the page apart from faint printing marks or damage on the photos themselves.",
+  "layout": [
+    "top group of four color portrait photos",
+    "bottom group of six black-and-white or sepia photos arranged loosely",
+    "white background sheet"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left quadrant",
+      "description": "Small color photo of three men with bare shoulders, closely grouped, only upper torso and heads visible",
+      "confidence": "high"
+    },
+    {
+      "location": "top right quadrant",
+      "description": "Small color photo of a single man, shirtless, upper torso and head visible",
+      "confidence": "high"
+    },
+    {
+      "location": "below top left photo",
+      "description": "Small color photo of a single man, shirtless, upper torso and head visible",
+      "confidence": "high"
+    },
+    {
+      "location": "below top right photo",
+      "description": "Small color photo of a single man with dark shirt, upper torso and head visible",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left",
+      "description": "Black-and-white or sepia photo of several men close together, blurry and slightly damaged",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center left",
+      "description": "Black-and-white or sepia photo of several men smiling and crowded together, some faces partially obscured",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center right",
+      "description": "Black-and-white or sepia photo of multiple men, one looking downward, appearing relaxed",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom far left",
+      "description": "Black-and-white or sepia photo of two men smiling closely at camera",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center",
+      "description": "Black-and-white or sepia photo of two older men; one wearing a cap, both facing forward",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom far right",
+      "description": "Black-and-white or sepia photo of a group of men, one with mouth open, arranged closely",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

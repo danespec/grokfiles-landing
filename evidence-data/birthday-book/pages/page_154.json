@@ -1,0 +1,178 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 154,
+  "page_id": "page_154",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_154.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_154.ocr.txt",
+  "image_metadata": {
+    "bytes": 2575345,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "7f03691998135ccfb95b9623782150b0bdfaac72c83c1dab1a6d5c07ec0d59bb"
+  },
+  "ocr_text": "Dear Jeffrey :\nHAPPY\n> sot”\njo . | Joel\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "Page shows a birthday greeting with text 'Dear Jeffrey', 'HAPPY', and '50th' alongside illustrations including balloons, a birthday cake with a candle, a large airplane, three different women in various poses, a mermaid on a rock, and the name 'Joel'.",
+    "Layout: top-left text 'Dear Jeffrey'",
+    "Layout: center-top text 'HAPPY'",
+    "Layout: center text '50th'",
+    "Layout: top-left balloons illustration",
+    "Layout: top-right birthday cake illustration",
+    "Layout: center large airplane illustration",
+    "Layout: bottom-left woman in blue top and green skirt kicking",
+    "Layout: center woman in white tank top holding head",
+    "Layout: bottom-center woman in green swimsuit kneeling",
+    "Layout: bottom-right mermaid illustration in a square frame",
+    "Layout: bottom-right text 'Joel'",
+    "Drawing candidate at top-left: Three balloons: yellow, blue, and red",
+    "Drawing candidate at top-right: Birthday cake with single candle",
+    "Drawing candidate at center: Large airplane with red, white, and blue stripes",
+    "Drawing candidate at bottom-left: Woman in blue top and green skirt kicking",
+    "Drawing candidate at center: Woman in white tank top holding head",
+    "Drawing candidate at bottom-center: Woman in green swimsuit kneeling",
+    "Drawing candidate at bottom-right: Mermaid with green tail on a rock with ocean background in square frame"
+  ],
+  "observations": [
+    "Page shows a birthday greeting with text 'Dear Jeffrey', 'HAPPY', and '50th' alongside illustrations including balloons, a birthday cake with a candle, a large airplane, three different women in various poses, a mermaid on a rock, and the name 'Joel'.",
+    "Layout: top-left text 'Dear Jeffrey'",
+    "Layout: center-top text 'HAPPY'",
+    "Layout: center text '50th'",
+    "Layout: top-left balloons illustration",
+    "Layout: top-right birthday cake illustration",
+    "Layout: center large airplane illustration",
+    "Layout: bottom-left woman in blue top and green skirt kicking",
+    "Layout: center woman in white tank top holding head",
+    "Layout: bottom-center woman in green swimsuit kneeling",
+    "Layout: bottom-right mermaid illustration in a square frame",
+    "Layout: bottom-right text 'Joel'",
+    "Drawing candidate at top-left: Three balloons: yellow, blue, and red",
+    "Drawing candidate at top-right: Birthday cake with single candle",
+    "Drawing candidate at center: Large airplane with red, white, and blue stripes",
+    "Drawing candidate at bottom-left: Woman in blue top and green skirt kicking",
+    "Drawing candidate at center: Woman in white tank top holding head",
+    "Drawing candidate at bottom-center: Woman in green swimsuit kneeling",
+    "Drawing candidate at bottom-right: Mermaid with green tail on a rock with ocean background in square frame"
+  ],
+  "dates": [
+    "50th"
+  ],
+  "document_strings": [
+    "Dear Jeffrey",
+    "HAPPY",
+    "50th",
+    "Joel"
+  ],
+  "signatures": [
+    {
+      "location": "bottom-right corner",
+      "text_as_seen": "Joel",
+      "confidence": "high",
+      "note": "Printed text, not a signature"
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "openai-vision",
+    "signature",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:27:05.552Z",
+    "response_id": "resp_0c712912e00bfb6f006a502e438b0c8193a7aa1c5af75e77be",
+    "raw_output_sha256": "73ae0b0bb6830b370f32256cb53c28cc4506878f7fa58177756f6d2b7e7b1965"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c712912e00bfb6f006a502e438b0c8193a7aa1c5af75e77be",
+    "enriched_at": "2026-07-09T23:27:05.552Z"
+  },
+  "visual_summary": "Page shows a birthday greeting with text 'Dear Jeffrey', 'HAPPY', and '50th' alongside illustrations including balloons, a birthday cake with a candle, a large airplane, three different women in various poses, a mermaid on a rock, and the name 'Joel'.",
+  "layout": [
+    "top-left text 'Dear Jeffrey'",
+    "center-top text 'HAPPY'",
+    "center text '50th'",
+    "top-left balloons illustration",
+    "top-right birthday cake illustration",
+    "center large airplane illustration",
+    "bottom-left woman in blue top and green skirt kicking",
+    "center woman in white tank top holding head",
+    "bottom-center woman in green swimsuit kneeling",
+    "bottom-right mermaid illustration in a square frame",
+    "bottom-right text 'Joel'"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom-right corner",
+      "text_as_seen": "Joel",
+      "confidence": "high",
+      "note": "Printed text, not a signature"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "top-left",
+      "description": "Three balloons: yellow, blue, and red",
+      "confidence": "high"
+    },
+    {
+      "location": "top-right",
+      "description": "Birthday cake with single candle",
+      "confidence": "high"
+    },
+    {
+      "location": "center",
+      "description": "Large airplane with red, white, and blue stripes",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-left",
+      "description": "Woman in blue top and green skirt kicking",
+      "confidence": "high"
+    },
+    {
+      "location": "center",
+      "description": "Woman in white tank top holding head",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-center",
+      "description": "Woman in green swimsuit kneeling",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-right",
+      "description": "Mermaid with green tail on a rock with ocean background in square frame",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "50th"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,121 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 47,
+  "page_id": "page_047",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_047.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_047.ocr.txt",
+  "image_metadata": {
+    "bytes": 244814,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8e189239fa21f805b72a1eb06225c3879b5b49a6687af79c0604788bba3ac37a"
+  },
+  "ocr_text": "1\nPrexy’s The home of the “educated Personals\nHamburger” ee\nNedick’s hotdogs served on a folded Flagalong .. do ya have a flagalong, yes 1\npiece of toasted white bread. have a flagalong,do ya wear your jack-a-lot,\nYes [ wear my jock-a-lot, when I have a\n. . long Flagalong Call ES-3-2262\nWhite Castle crappy little square aed alah a are\nhamburgers with holes in them. They\nalways put those little oniens on them. The Watch owt .. where the huskies go, and\nidiots on the football team used to eat a you eat that yellow snow!\nVILLAGE FUGS \"SING BALLADS\n. OF CONTEMPORARY PROTEST, POINT\nConey Island Beach Kuishes “Hey OF VIEWS, AND GENERAL\ngetcher ice cold orange drink heah”, Hey DISSATISFACTION\"\ngetcher hot Knishes heah”. All sold by a SS\nloser walking with sneakers on the beach, « ng ;\ncarrying an old shopping bag with dry ice Looking for accordion fake books,\nRiviera Pizza Luigi’s famous pizza if Set, Gene was here, we woulda been\nmade with fake cheese thanks to Arthur il\nStern’s money savin’ schemes.\nae Get off the beach...beetch, get off the\n. . 8\n-  Jee’s Foccaceria Palermitana rice et OCU cn\nballs.\neS Horny Sea G irls.. lookin’ for\nFohm’s Hero’s Lafayette 11.5.’s favorite Se Nase\nhero joint. Best meatball or ham ‘n cheese\nhero. ee __\nExtra Bar Best Spumoni: pistachio, Three guys sittin’ in a boat, eatum\nchocolate and vanilla. No English spoken beatum and cheatum. Eatum says to\nbeatuma... ss... 227222290977\nGargiulo’s Spin the Tumbala you ee\nschmuck because you'll never win the free Shape up with Timmy the K. Must fully\ndinner. master these phrases: “OPEN..........4:\nTHE DOOR”, and, “Hiram Walker, where\ntea? d’ya wannit? No guarantees of working\nCar olina § good baked clams and good ANY DAY. Call ES 3-8888\n“spaghetti garlic andeat!”\nYan's Hh éthe “Kitehen Sink LULL LLI LY w-w-w-was almost\nam’s Wome of the “Kitchen Sink” : pres\nwhatever you can’t cat......... “ask Terry if\nhe would gladly throw itaway for you\"\nOO Bump cabs with us!!! Meet on\nEbinger’s Good Blackout, Coffee or Amsterdam Ave. at midnight and see if you\nCrumb Cake. All boxes are tied with string. have the balls a ram your cab into ours!! No\n; holds barred, it’s you against the other guy.\nJack’s Good Humor Jack, ya got a ;\ncreamsicle?... Ain’t got it!... Jack, ya got a Brighton Beach Baths Cafeteria:\nsundae??....Ain’t got itl... Jack, ya got a Employees are guaranteed to start a fight\nfudgesicle???....Ain’t got it!l!.... Jackl!, over food every hour on the hour. Ketchup,\nwhataya got/??7? Vanilla pop....... French Fries, Onions and gravy will always\nFugeddattaboudit. _— —\nBrooklyn Movie Theaters:\nSpumoni Garden cat pizza, zeppoli Memnaid, Shore, Oceana, Kingsway, Loews\nand stromboli with the rest og the gamba’s Oriental, Benson,\nBoston Baked Beans, Non-pareills, Ju Ju\nBe’s, Good ‘n Plenty, Bon-Bons, Chocolate\nBabies, Milk Duds, Malted Milk Bails,\nandy Com,\nHOUSE_OVERSIGHT_000047\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page of text from a 'Birthday Book' archive featuring snippets of text about food items, places, and casual personal ads or messages. The left column includes names and descriptions of food places or dishes. The right column includes informal messages and calls, sometimes with phone numbers redacted. The page contains some underscored headings and paragraph breaks.",
+    "Layout: two columns",
+    "Layout: left column with food-related text",
+    "Layout: right column with personals and casual messages"
+  ],
+  "observations": [
+    "Page of text from a 'Birthday Book' archive featuring snippets of text about food items, places, and casual personal ads or messages. The left column includes names and descriptions of food places or dishes. The right column includes informal messages and calls, sometimes with phone numbers redacted. The page contains some underscored headings and paragraph breaks.",
+    "Layout: two columns",
+    "Layout: left column with food-related text",
+    "Layout: right column with personals and casual messages"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Prexy's The home of the \"educated Hamburger\"",
+    "Nedick's hotdogs served on a folded piece of toasted white bread.",
+    "White Castle crappy little square hamburgers with holes in them. They always put those little onions on them. The idiots on the football team used to eat a dozen each at a sitting.",
+    "Coney Island Beach Knishes \"Hey getcher ice cold orange drink heah\", Hey getcher hot Knishes heah\". All sold by a loser walking with sneakers on the beach, carrying an old shopping bag with dry ice inside.",
+    "Riviera Pizza Luigi's famous pizza made with fake cheese thanks to Arthur Stern's money savin' schemes.",
+    "Joe's Foccaceria Palermitama rice balls.",
+    "John's Hero's Lafayette H.S.'s favorite hero joint. Best meatball or ham 'n cheese hero.",
+    "Extra Bar Best Spumoni: pistachio, chocolate and vanilla. No English spoken.",
+    "Gargiulo's Spin the Tumbala you schmuck because you'll never win the free dinner.",
+    "Carolina's good baked clams and good \"spaghetti garlic and carl\"",
+    "Jan's Home of the \"Kitchen Sink\" whatever you can't eat....... \"ask Terry if he would gladly throw it away for you\".",
+    "Ebinger's Good Blackout, Coffee or Crumb Cake. All boxes are tied with string.",
+    "Jack's Good Humor Jack, ya got a creamsicle?...Ain't got it!... Jack, ya got a sundae??... Ain't got it!!... Jack, ya got a fudgesicle???... Ain't got it!!!... Jack!!, whataya got????? Vanilla pop....... yeah ???? Fugedattaboudit.",
+    "Spumoni Garden eat pizza, zoppoli and stromboli with the rest og the gumba's",
+    "Personals",
+    "Flagalong .. do ya have a flagalong, yes I have a flagalong, do ya wear your jock-a-lot, Yes I wear my jock-a-lot, when I have a long Flagalong Call ES-3-2262",
+    "Watch out .. where the huskies go, and don't you eat that yellow snow!!",
+    "VILLAGE FUGS \"SING BALLADS OF CONTEMPORARY PROTEST, POINT OF VIEWS, AND GENERAL DISSATISFACTION\"",
+    "Looking for accordion fake books, prefer the yellow or blue versions.",
+    "If Sgt. Gene was here, we woulda been home already.",
+    "Get off the beach...beetch; get off the jetty, betty.",
+    "Horny Sea Gate Girls...lookin' for some thrills. Call [redacted]",
+    "Three guys sittin' in a boat; eatum beatum and cheatum. Eatum says to beatum............????????????",
+    "Shape up with Timmy the K. Must fully master these phrases: \"OPEN......... THE DOOR\", and, \"Hiram Walker, where d'ya wannit? No guarantees of working ANY DAY. Call ES 3-8888",
+    "IIIIIIIIII w-w-w-was almost means a nephew????",
+    "Bump cabs with us!!! Meet on Amsterdam Ave. at midnight and see if you have the balls to ram your cab into ours!! No holds barred, it's you against the other guy.",
+    "Brighton Beach Baths Cafeteria: Employees are guaranteed to start a fight over food every hour on the hour. Ketchup, French Fries, Onions and gravy will always fly. Call HI-9-5498",
+    "Brooklyn Movie Theaters: Mermaid, Shore, Oceana, Kingsway, Loews Oriental, Benson, Boston Baked Beans, Non-parcills, Ju Ju Be's, Good 'n Plenty, Bon-Bons, Chocolate Babies, Milk Duds, Malted Milk Balls, Candy Corn,"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "right column about midway down",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Block of redacted text obscuring part of a phone number or contact information"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:09:37.347Z",
+    "response_id": "resp_070d4f9f158bc3d6006a502a2550708194ac66a3b6ac5a3cf8",
+    "raw_output_sha256": "fe450d3b2f6b91dacbdf9ec5d10bda2ec63b89d70069ec4f74bee74e6031f827"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_070d4f9f158bc3d6006a502a2550708194ac66a3b6ac5a3cf8",
+    "enriched_at": "2026-07-09T23:09:37.347Z"
+  },
+  "visual_summary": "Page of text from a 'Birthday Book' archive featuring snippets of text about food items, places, and casual personal ads or messages. The left column includes names and descriptions of food places or dishes. The right column includes informal messages and calls, sometimes with phone numbers redacted. The page contains some underscored headings and paragraph breaks.",
+  "layout": [
+    "two columns",
+    "left column with food-related text",
+    "right column with personals and casual messages"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "right column about midway down",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Block of redacted text obscuring part of a phone number or contact information"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

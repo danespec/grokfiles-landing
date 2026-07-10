@@ -99,17 +99,27 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   gap: 4px;
 }
 .nav-links a {
+  min-height: 44px;
   padding: 9px 10px;
   border-radius: 8px;
   color: #c5c9cb;
   text-decoration: none;
   font-size: 14px;
   font-weight: 680;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-links a:hover,
 .nav-links a[aria-current="page"] {
   color: var(--ink);
   background: rgba(255,255,255,.065);
+}
+.nav-links .nav-support {
+  margin-left: 6px;
+  border: 1px solid rgba(231, 197, 108, 0.36);
+  color: var(--gold-soft);
+  background: rgba(231, 197, 108, 0.08);
 }
 .nav-links .nav-member {
   margin-left: 6px;
@@ -200,6 +210,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   gap: 10px;
   margin-top: 32px;
 }
+.button-row form { margin: 0; }
 .button {
   min-height: 48px;
   display: inline-flex;
@@ -626,6 +637,36 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   background: rgba(217,109,95,.06);
 }
 .notice p { margin: 0; color: #c9cdcf; }
+.table-wrap {
+  overflow-x: auto;
+  margin: 28px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+.signal-table {
+  width: 100%;
+  min-width: 860px;
+  border-collapse: collapse;
+}
+.signal-table th,
+.signal-table td {
+  padding: 15px;
+  border-bottom: 1px solid var(--line);
+  color: #c9cdcf;
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+.signal-table th {
+  color: var(--ink);
+  background: rgba(231,197,108,.065);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.signal-table tr:last-child td { border-bottom: 0; }
 
 .site-footer {
   padding: 52px 0 34px;
@@ -673,6 +714,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
     box-shadow: 0 25px 70px rgba(0,0,0,.5);
   }
   .nav-links.open { display: grid; }
+  .nav-links .nav-support,
   .nav-links .nav-member { margin-left: 0; }
   .hero-grid, .split, .membership-card, .footer-grid { grid-template-columns: 1fr; }
   .hero { min-height: auto; }
@@ -687,7 +729,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   .hero { padding: 64px 0 58px; }
   .hero h1, .page-hero h1 { font-size: clamp(48px, 15vw, 75px); }
   .hero-lede, .page-hero .lede { font-size: 17px; }
-  .hero-actions .button, .button-row .button { width: 100%; }
+  .hero-actions .button, .button-row .button, .button-row form { width: 100%; }
   .section { padding: 62px 0; }
   .section-head { display: block; }
   .section-head p { margin-top: 14px; }

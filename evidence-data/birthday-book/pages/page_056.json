@@ -1,0 +1,92 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 56,
+  "page_id": "page_056",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_056.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_056.ocr.txt",
+  "image_metadata": {
+    "bytes": 11141371,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "df2891ae596e6cd27af8272e1a045a6a07cf5d4652556bc118655262e36b5828"
+  },
+  "ocr_text": ": =X\na) ¥ 2\n~ 4 .\ny - A } - 4\n’ « 7 —. d 1\nf\n} \\\nf |\non. f :\nae = ; | P\n° eae a Eee $\n- 7 7 \"i raj ]\n! t i : ae aoe '\na i}\nle ee > « =a\n, e P\\ Z ‘7; 2) —\nS £ A - '\n——— eee!\nHOUSE_OVERSIGHT_000056\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographic images. The top photo shows four men standing in front of a wooden door, wearing briefs and sandals/sneakers. The bottom photo shows four men standing indoors in front of a wooden wall, also wearing briefs and shorts. All men appear shirtless.",
+    "Layout: top photo - four men standing outside",
+    "Layout: bottom photo - four men standing indoors",
+    "Photo/image candidate at top center: Four shirtless men standing side by side in briefs and footwear, standing outdoors in front of a wooden door.",
+    "Photo/image candidate at below top photo: Four shirtless men standing side by side in briefs or shorts indoors, with wooden paneling behind them."
+  ],
+  "observations": [
+    "Page contains two photographic images. The top photo shows four men standing in front of a wooden door, wearing briefs and sandals/sneakers. The bottom photo shows four men standing indoors in front of a wooden wall, also wearing briefs and shorts. All men appear shirtless.",
+    "Layout: top photo - four men standing outside",
+    "Layout: bottom photo - four men standing indoors",
+    "Photo/image candidate at top center: Four shirtless men standing side by side in briefs and footwear, standing outdoors in front of a wooden door.",
+    "Photo/image candidate at below top photo: Four shirtless men standing side by side in briefs or shorts indoors, with wooden paneling behind them."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000056"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:11:45.323Z",
+    "response_id": "resp_088c5ce8a33411b6006a502aa980b08195a8b6ccd4e1e8dff4",
+    "raw_output_sha256": "cbe2aad4ae69b28804f7b4e1a5c359b33a7986b248745997cfe472fa37b71bc1"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_088c5ce8a33411b6006a502aa980b08195a8b6ccd4e1e8dff4",
+    "enriched_at": "2026-07-09T23:11:45.323Z"
+  },
+  "visual_summary": "Page contains two photographic images. The top photo shows four men standing in front of a wooden door, wearing briefs and sandals/sneakers. The bottom photo shows four men standing indoors in front of a wooden wall, also wearing briefs and shorts. All men appear shirtless.",
+  "layout": [
+    "top photo - four men standing outside",
+    "bottom photo - four men standing indoors"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Four shirtless men standing side by side in briefs and footwear, standing outdoors in front of a wooden door.",
+      "confidence": "high"
+    },
+    {
+      "location": "below top photo",
+      "description": "Four shirtless men standing side by side in briefs or shorts indoors, with wooden paneling behind them.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

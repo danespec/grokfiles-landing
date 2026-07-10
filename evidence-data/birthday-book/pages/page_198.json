@@ -1,0 +1,120 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 198,
+  "page_id": "page_198",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_198.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_198.ocr.txt",
+  "image_metadata": {
+    "bytes": 12618466,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "0ddf8b6ee78209b9d77cc46554b3e3f5f3e63f11982fb7880314777cffe090ae"
+  },
+  "ocr_text": "sealbie ~ ‘ . 7 ‘ a a ——— 3 isa Spuapaaee ie\nue. : bige* i - : sos A ns ‘a wege\nvee a wm) cal) - (8 | «=. [Yee te\n- Pye ‘ . = P -s Fer ae 4 > Fo 4 | ute . eS | 3 RRR ricci ' <\nORE ' . ‘ga ry *. _~ re Os t ~ eRe * y — z\n. 4 q 3 Sz - , f* I : — ae ee eS <a R ¢\ntego S Ae ale i Peer y w won ae Fs j Ss q\nGages WES 4 . ie | oe J 3 eS a . q q -\n- ; oF oo a Spee. i. .. ae fy ee F . 5\n4 a A se & i * SR aS 8 eee cals —~ eT ae ae saan\n3 \\F ‘ % q : , ~—_ + y — tS tp ; eA pe =\" “a> rt Bek ee\n5 ’ = > ee whee oe ee ete yess ae \"3 q\niA ie * ‘ + «fi Ears Le: x P 2 \"tae § Spe et le Sg. te, ea\nLo.\" battens, = - ph APR $ Beste : ae : a F\nnnn a ee a aes es @f ' Se a) te FS i a - aie! = a .\n« oe oe ae “ Se 4 ae on ; or -\n32 Eee * ara . , “ys, ‘ . pen =: 7 a\n\\P ARES SE oa . é. = gga oo rt x cn . Goes \\ a -\n. \"shi. = See. paw eae a eg 2 3 Se . ee . Biss\n. = oy Beta ens Eee” . ERS ae ee Se | Was re — ‘ 4 ‘\n*s ae ee a\" ‘Z. . <a pbs : : r\nES Sie aS ih Bae (tes WR nus a . 4\na, oo ’ % yr asd ae ee, > : ade : = ro c , : * f -\n1 +i ‘ : : Pie Hg ¥ - : f\n4 ~ ‘3 . * . - e —_ t\n& tb ot { y , 4 en © te opttoge \" . ‘ = PY dng\nae 2 i oo ES Soham y - 73 = ail: x “ oe: sm : —_ ; i y\na ae . fe a PRIS hh. tg. _ °°, os a Se } ‘ame 4 e PEA;\n- 5 gee F ‘ a j 4 a - 3 -s 4 . wk DE ce er\nse a — aE De os 4G ot iwen +S & of. > ar ta T é were are fe Es a\naie 9 en? ae ooh Ap ad ze 5 5 . ; « LS fe ee 3 Leeyt ale\nBate od MEARE. a : f ; } , } SF he 8, <i ndan Saar OS SE Te\nHR ath tee tS RES Sor on pnt Meee cy Rae a ge SE OS KMS eG oak ee Ne\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Colored pencil drawing showing an indoor scene with three large windows with green curtains, several pink chairs arranged mostly in rows, and a grand piano near the center. There are multiple human figures sketched around the room and seated in the chairs, as well as one figure reclining horizontally on the piano. The floor and air have scattered speckles in red and black. There is a plant with a pot on the far left. The bottom right corner has a handwritten text string with a name and year.",
+    "Layout: three large windows at top",
+    "Layout: potted plant bottom left",
+    "Layout: multiple human figures distributed around the room",
+    "Layout: grand piano near center with one reclining figure on it",
+    "Layout: rows of pink chairs with green circles in center",
+    "Layout: handwritten text bottom right",
+    "Drawing candidate at entire page: Colored pencil drawing of a room with windows, chairs, human figures, a piano, and a plant."
+  ],
+  "observations": [
+    "Colored pencil drawing showing an indoor scene with three large windows with green curtains, several pink chairs arranged mostly in rows, and a grand piano near the center. There are multiple human figures sketched around the room and seated in the chairs, as well as one figure reclining horizontally on the piano. The floor and air have scattered speckles in red and black. There is a plant with a pot on the far left. The bottom right corner has a handwritten text string with a name and year.",
+    "Layout: three large windows at top",
+    "Layout: potted plant bottom left",
+    "Layout: multiple human figures distributed around the room",
+    "Layout: grand piano near center with one reclining figure on it",
+    "Layout: rows of pink chairs with green circles in center",
+    "Layout: handwritten text bottom right",
+    "Drawing candidate at entire page: Colored pencil drawing of a room with windows, chairs, human figures, a piano, and a plant."
+  ],
+  "dates": [
+    "2002"
+  ],
+  "document_strings": [
+    "Alberto Frederico Gómez 2002"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Alberto Frederico Gómez 2002",
+      "confidence": "high",
+      "note": "Appears as a signature and date string."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Individual identities or detailed facial features of human figures are not discernable from the drawing.",
+    "Exact meanings or context of the red and black speckles scattered around the page."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:33:59.211Z",
+    "response_id": "resp_0d83f7a086c839a8006a502fdfb3448196a959c85a20eb4e19",
+    "raw_output_sha256": "f3fe7da19c9643ca46b0614bc89fe41f9ea68aa78b784d1574f1a022e5ac6464"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d83f7a086c839a8006a502fdfb3448196a959c85a20eb4e19",
+    "enriched_at": "2026-07-09T23:33:59.211Z"
+  },
+  "visual_summary": "Colored pencil drawing showing an indoor scene with three large windows with green curtains, several pink chairs arranged mostly in rows, and a grand piano near the center. There are multiple human figures sketched around the room and seated in the chairs, as well as one figure reclining horizontally on the piano. The floor and air have scattered speckles in red and black. There is a plant with a pot on the far left. The bottom right corner has a handwritten text string with a name and year.",
+  "layout": [
+    "three large windows at top",
+    "potted plant bottom left",
+    "multiple human figures distributed around the room",
+    "grand piano near center with one reclining figure on it",
+    "rows of pink chairs with green circles in center",
+    "handwritten text bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Alberto Frederico Gómez 2002",
+      "confidence": "high",
+      "note": "Appears as a signature and date string."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "entire page",
+      "description": "Colored pencil drawing of a room with windows, chairs, human figures, a piano, and a plant.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "2002"
+  ],
+  "confidence": "high"
+}

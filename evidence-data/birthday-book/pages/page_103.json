@@ -1,0 +1,120 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 103,
+  "page_id": "page_103",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_103.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_103.ocr.txt",
+  "image_metadata": {
+    "bytes": 8511656,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "17ffacbfd7a307cfd30a355470d09cc9c2b91374a240cf7c246384c44cd2e2cb"
+  },
+  "ocr_text": "lei . “Ti Fe Pie oi 1 Zi } ¥ ae\nbomied ie — “ 2 aa x : <a\nEe et A » Fe Vee\n| yo & a\nIS | ( id ‘ a\nNS : EE d /\n]\nZo. (rke LL?\n4\nHOUSE_OVERSIGHT_000103\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains three photos and a handwritten caption. Top left photo shows a person in red and gray winter clothing and a blue hat, holding ski sticks, with snow and trees in the background. Top right photo shows a person sitting indoors on a wooden floor with chairs and tables visible. Bottom photo shows a snowy slope with pine trees and two people skiing, one in the foreground wearing red and gray clothing. Handwritten text below the top photos reads: \"This is what I am suppose to like !!?\"",
+    "Layout: top left photo",
+    "Layout: top right photo",
+    "Layout: handwritten text below top photos",
+    "Layout: bottom photo",
+    "Photo/image candidate at top left: Person dressed in red and gray winter gear and blue hat, holding ski poles, outdoors with snow and trees",
+    "Photo/image candidate at top right: Person sitting indoors on wooden floor with tables and chairs around",
+    "Photo/image candidate at bottom center: Snowy slope with pine trees and two people skiing, one closer in red and gray winter clothes"
+  ],
+  "observations": [
+    "Page contains three photos and a handwritten caption. Top left photo shows a person in red and gray winter clothing and a blue hat, holding ski sticks, with snow and trees in the background. Top right photo shows a person sitting indoors on a wooden floor with chairs and tables visible. Bottom photo shows a snowy slope with pine trees and two people skiing, one in the foreground wearing red and gray clothing. Handwritten text below the top photos reads: \"This is what I am suppose to like !!?\"",
+    "Layout: top left photo",
+    "Layout: top right photo",
+    "Layout: handwritten text below top photos",
+    "Layout: bottom photo",
+    "Photo/image candidate at top left: Person dressed in red and gray winter gear and blue hat, holding ski poles, outdoors with snow and trees",
+    "Photo/image candidate at top right: Person sitting indoors on wooden floor with tables and chairs around",
+    "Photo/image candidate at bottom center: Snowy slope with pine trees and two people skiing, one closer in red and gray winter clothes"
+  ],
+  "dates": [],
+  "document_strings": [
+    "This is what I am suppose to like !!?"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below top two photos, centered",
+      "text_as_seen": "This is what I am suppose to like !!?",
+      "confidence": "high",
+      "note": "Handwritten in greenish ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:38.467Z",
+    "response_id": "resp_0ecf0c5306796646006a502c850750819587a755005d2d8953",
+    "raw_output_sha256": "3585f5bacd083870e93a117f941a2e526f523a44527c27b60c2c99047347e27f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ecf0c5306796646006a502c850750819587a755005d2d8953",
+    "enriched_at": "2026-07-09T23:19:38.467Z"
+  },
+  "visual_summary": "Page contains three photos and a handwritten caption. Top left photo shows a person in red and gray winter clothing and a blue hat, holding ski sticks, with snow and trees in the background. Top right photo shows a person sitting indoors on a wooden floor with chairs and tables visible. Bottom photo shows a snowy slope with pine trees and two people skiing, one in the foreground wearing red and gray clothing. Handwritten text below the top photos reads: \"This is what I am suppose to like !!?\"",
+  "layout": [
+    "top left photo",
+    "top right photo",
+    "handwritten text below top photos",
+    "bottom photo"
+  ],
+  "handwriting": [
+    {
+      "location": "below top two photos, centered",
+      "text_as_seen": "This is what I am suppose to like !!?",
+      "confidence": "high",
+      "note": "Handwritten in greenish ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left",
+      "description": "Person dressed in red and gray winter gear and blue hat, holding ski poles, outdoors with snow and trees",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Person sitting indoors on wooden floor with tables and chairs around",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center",
+      "description": "Snowy slope with pine trees and two people skiing, one closer in red and gray winter clothes",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}
