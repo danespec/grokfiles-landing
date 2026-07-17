@@ -1,0 +1,213 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 125,
+  "bates": "HOUSE_OVERSIGHT_000125",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/125",
+  "related_people": [
+    "Jean-Luc Brunel"
+  ],
+  "priority_rank": 9,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_0d5bd6bc3d318190006a50eb4f4a588194b6467f6203bae83c",
+  "transcript_status": "transcribed",
+  "overall_confidence": "medium",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_publish_with_bracketed_uncertainty",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "The handwriting transcription does not identify or confirm authorship of the handwritten note or document content.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "top highlighted",
+      "text": "y - 3c = V 3 64 + 5 x 12 - a - 1",
+      "confidence": "high",
+      "uncertain_segments": [
+        "V 3 64"
+      ],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "y - 3c = [V 3 64] + 5 x 12 - a - 1"
+    },
+    {
+      "line_number": 2,
+      "location": "top highlighted",
+      "text": "x + y = V 2 81 + 2 x 20 + 4 2 - 1 = a",
+      "confidence": "medium",
+      "uncertain_segments": [
+        "V 2 81",
+        "4 2"
+      ],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "x + y = [V 2 81] + 2 x 20 + [4 2] - 1 = a"
+    },
+    {
+      "line_number": 3,
+      "location": "highlighted below line 2",
+      "text": "a = g + 15",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "a = g + 15"
+    },
+    {
+      "line_number": 4,
+      "location": "highlighted",
+      "text": "a < g + 16",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "a < g + 16"
+    },
+    {
+      "line_number": 5,
+      "location": "highlighted",
+      "text": "a > g + 12",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "a > g + 12"
+    },
+    {
+      "line_number": 6,
+      "location": "inside boxed math expression",
+      "text": "ln.e (( V 3 64 x 2 x 8x) x (b - 5 IQ.M) - 15)",
+      "confidence": "medium",
+      "uncertain_segments": [
+        "ln.e",
+        "V 3 64",
+        "IQ.M"
+      ],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "[ln.e] (( [V 3 64] x 2 x 8x) x (b - 5 [IQ.M]) - 15)"
+    },
+    {
+      "line_number": 7,
+      "location": "below boxed expression",
+      "text": "g = ln.e",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "g = ln.e"
+    },
+    {
+      "line_number": 8,
+      "location": "inside blue outlined box",
+      "text": "x + y + b + c - 2 + 3/1 + [square root] u = a = g + 15",
+      "confidence": "medium",
+      "uncertain_segments": [
+        "3/1",
+        "[square root] u"
+      ],
+      "illegible_segments": [],
+      "note": "The last 'g + 15' is highlighted in yellow inside the box",
+      "public_text": "x + y + b + c - 2 + [3/1] + [[square root] u] = a = g + 15"
+    },
+    {
+      "line_number": 9,
+      "location": "middle, left",
+      "text": "where - g = g stage",
+      "confidence": "medium",
+      "uncertain_segments": [
+        "g stage"
+      ],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "where - g = [g stage]"
+    },
+    {
+      "line_number": 10,
+      "location": "middle, left below previous line",
+      "text": "M = 8",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "M = 8"
+    },
+    {
+      "line_number": 11,
+      "location": "middle, left below previous line",
+      "text": "IQ = 90",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "IQ = 90"
+    },
+    {
+      "line_number": 12,
+      "location": "middle, left below previous line",
+      "text": "b = ? H. w ? = ? w. h",
+      "confidence": "low",
+      "uncertain_segments": [
+        "b = ?",
+        "H. w ?",
+        "? w. h"
+      ],
+      "illegible_segments": [
+        "?"
+      ],
+      "note": "Contains an obscured word marked with a black scribble",
+      "public_text": "[uncertain]"
+    },
+    {
+      "line_number": 13,
+      "location": "bottom handwritten note",
+      "text": "I wish you every new day happier",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "I wish you every new day happier"
+    },
+    {
+      "line_number": 14,
+      "location": "bottom handwritten note",
+      "text": "than every old happy days",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "than every old happy days"
+    },
+    {
+      "line_number": 15,
+      "location": "bottom handwritten note",
+      "text": "Your friend",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Your friend"
+    },
+    {
+      "line_number": 16,
+      "location": "bottom handwritten note",
+      "text": "Jean luc",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Jean luc"
+    }
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000125",
+    "g + 15"
+  ],
+  "visible_non_transcript_notes": [],
+  "gaps": [],
+  "raw_output_sha256": "65811faf4646ad33ffdac5e406a4c195db610f9a6835d0cf82b239125165e52a",
+  "transcribed_at": "2026-07-10T12:53:50.561Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

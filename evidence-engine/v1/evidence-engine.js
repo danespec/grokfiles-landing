@@ -8,7 +8,6 @@
     ["drawing", "Drawing"],
     ["photo", "Photo"],
     ["date", "Date"],
-    ["sparse-ocr", "Sparse OCR"],
     ["gaps", "GAPS"]
   ];
 
@@ -16,11 +15,53 @@
     ["", "Overview"],
     ["pages", "Pages"],
     ["people", "Document strings"],
-    ["open-identities", "Open identities"],
+    ["open-identities", "Unresolved strings"],
     ["visuals", "Visuals"],
     ["redactions", "Redactions"],
     ["handwriting", "Handwriting"]
   ];
+
+  const OCR_WITHHELD_MESSAGE = "Automated transcription withheld because the scan or handwriting did not meet publication-quality standards. View the original page image.";
+
+  const TECHNICAL_FLAGS = new Set([
+    "machine",
+    "openai",
+    "openai-vision",
+    "sparse-ocr",
+    "processing",
+    "safety-block",
+    "vision-enriched"
+  ]);
+
+  const PUBLIC_FLAG_LABELS = {
+    handwriting: "Handwritten",
+    signature: "Signature visible",
+    redaction: "Redaction",
+    drawing: "Drawing",
+    photo: "Photograph or image",
+    date: "Date visible",
+    gaps: "GAPS"
+  };
+
+  const DOCUMENT_STRING_STOPLIST = new Set([
+    "the first fifty years",
+    "first fifty years",
+    "fifty years",
+    "house oversight",
+    "house_oversight",
+    "birthday book",
+    "page",
+    "i",
+    "ii",
+    "iii",
+    "iv",
+    "v",
+    "vi",
+    "vii",
+    "viii",
+    "ix",
+    "x"
+  ]);
 
   function esc(value) {
     return String(value == null ? "" : value)
@@ -78,6 +119,54 @@
         seen.add(key);
         return true;
       });
+  }
+
+  function wordTokens(value) {
+    return cleanText(value).match(/[A-Za-z0-9']+/g) || [];
+  }
+
+  function garbageCharacterRatio(value) {
+    const text = cleanText(value);
+    if (!text) return 0;
+    const bad = text.match(/[^\w\s.,;:'"!?()[\]{}\/&%$#@*+=<>_\-]/g) || [];
+    return bad.length / text.length;
+  }
+
+  function fragmentedWordRatio(value) {
+    const tokens = wordTokens(value);
+    if (!tokens.length) return 1;
+    const allowed = new Set(["a", "i", "to", "of", "in", "is", "it", "as", "at", "on", "or", "if", "we", "my", "me", "he", "be", "by", "no", "so", "do", "go", "us", "am"]);
+    const short = tokens.filter((token) => token.length <= 2 && !allowed.has(token.toLowerCase())).length;
+    return short / tokens.length;
+  }
+
+  function hasObviousOcrNoise(value) {
+    const text = cleanText(value);
+    if (!text) return false;
+    const lower = text.toLowerCase();
+    return (
+      /\b(?:[a-z]{1,2}\s+){8,}/i.test(text) ||
+      /(?:[a-z]{1,3}['`´’]){3,}/i.test(text) ||
+      /(?:\b[a-z]\b[\s,.;:'"-]*){10,}/i.test(text) ||
+      /(?:[=~^]{2,}|[_]{4,})/.test(text) ||
+      lower.includes("ee") && fragmentedWordRatio(text) > 0.28
+    );
+  }
+
+  function isGenericDocumentString(value) {
+    const text = cleanText(value).replace(/\s+/g, " ").trim();
+    if (!text) return true;
+    const lower = text.toLowerCase();
+    if (DOCUMENT_STRING_STOPLIST.has(lower)) return true;
+    if (lower.includes("the first fifty years")) return true;
+    if (/^house[_\s-]?oversight[_\s-]?\d+$/i.test(text)) return true;
+    if (/^house[_\s-]?oversight/i.test(text)) return true;
+    if (/^[ivxlcdm]+$/i.test(text)) return true;
+    if (/^[\W_0-9]+$/.test(text)) return true;
+    if (text.length < 3) return true;
+    if (garbageCharacterRatio(text) > 0.08) return true;
+    if (fragmentedWordRatio(text) > 0.35 && wordTokens(text).length > 5) return true;
+    return false;
   }
 
   function pagePad(pageNumber) {
@@ -237,6 +326,8 @@
       this.image = safeHref(getAny(this.raw, ["image", "image_url", "imageUrl", "rendered_page_image", "page_image_url", "thumbnail"]));
       this.flags = this.normalizeFlags();
       this.safetyBlock = this.normalizeSafetyBlock();
+      this.ocrQuality = this.evaluateOcrQuality();
+      this.publicOcrText = this.ocrQuality.publish ? this.ocrText : "";
       this.searchText = this.buildSearchText();
     }
 
@@ -278,6 +369,79 @@
       if (this.gaps.length || this.raw.canonical_status === "missing" || this.raw.gaps === true) flags.add("gaps");
       if (this.pageNumber === 30) flags.add("gaps");
       return Array.from(flags);
+    }
+
+    evaluateOcrQuality() {
+      const text = this.ocrText;
+      const reasons = [];
+      const visual = `${this.observations.join(" ")} ${this.handwriting.join(" ")} ${cleanText(this.raw.visual_summary)} ${cleanText(this.raw.visual_type)} ${cleanText(this.raw.media_type)}`.toLowerCase();
+      const tokens = wordTokens(text);
+      const garbageRatio = garbageCharacterRatio(text);
+      const fragmentRatio = fragmentedWordRatio(text);
+      const handwritten = this.flags.includes("handwriting") || /\b(handwritten|handwriting|cursive|script)\b/.test(visual);
+      const sparse = !text || text.length < 40 || this.flags.includes("sparse-ocr");
+      const batesOnly = /^house[_\s-]?oversight[_\s-]?\d+$/i.test(text.replace(/\s+/g, " ").trim());
+
+      if (!text) reasons.push("OCR text is not available.");
+      if (handwritten) reasons.push("Page is classified as handwriting or cursive.");
+      if (sparse) reasons.push("OCR is too sparse for public transcription.");
+      if (garbageRatio > 0.08) reasons.push("OCR contains too many non-text artifacts.");
+      if (fragmentRatio > 0.28 && tokens.length > 12) reasons.push("OCR contains fragmented words.");
+      if (hasObviousOcrNoise(text)) reasons.push("OCR contains obvious recognition noise.");
+      if (batesOnly) reasons.push("OCR contains only source-control text.");
+      if (this.safetyBlock || this.pageNumber === 30) reasons.push("Page has a safety-block/GAPS notice.");
+
+      let score = 1;
+      if (handwritten) score -= 0.45;
+      if (sparse) score -= 0.25;
+      score -= Math.min(0.35, garbageRatio * 2.2);
+      score -= Math.min(0.3, fragmentRatio * 0.8);
+      if (hasObviousOcrNoise(text)) score -= 0.25;
+      if (batesOnly) score -= 0.25;
+      if (this.safetyBlock || this.pageNumber === 30) score -= 0.3;
+      score = Math.max(0, Math.min(1, score));
+      if (score < 0.85 && !reasons.length) reasons.push("OCR quality score is below the publication threshold.");
+
+      return {
+        publish: Boolean(text) && score >= 0.85 && !reasons.length,
+        score,
+        garbageRatio,
+        fragmentRatio,
+        reasons
+      };
+    }
+
+    publicBadges() {
+      const labels = [];
+      const seen = new Set();
+      for (const flag of this.flags) {
+        if (TECHNICAL_FLAGS.has(flag)) continue;
+        const label = PUBLIC_FLAG_LABELS[flag] || flag.replace(/-/g, " ");
+        if (!label || seen.has(label.toLowerCase())) continue;
+        labels.push(label);
+        seen.add(label.toLowerCase());
+      }
+      if (!labels.length) labels.push("Scanned page");
+      return labels;
+    }
+
+    technicalFlags() {
+      return this.flags.filter((flag) => TECHNICAL_FLAGS.has(flag) || !PUBLIC_FLAG_LABELS[flag]);
+    }
+
+    publicDocumentStrings() {
+      return this.documentStrings.filter((value) => !isGenericDocumentString(value));
+    }
+
+    publicPreview() {
+      const observation = this.observations.find(Boolean);
+      const docString = this.publicDocumentStrings().find((value) => value.length <= 180);
+      const gap = this.gaps.find(Boolean);
+      if (this.publicOcrText) return this.publicOcrText.replace(/\s+/g, " ");
+      if (observation) return observation;
+      if (docString) return `Document string visible: ${docString}`;
+      if (gap) return gap;
+      return "View scanned contribution.";
     }
 
     buildSearchText() {
@@ -428,7 +592,7 @@
     documentStrings(filterOpenOnly) {
       const rows = [];
       for (const page of this.indexPages) {
-        for (const value of page.documentStrings) {
+        for (const value of page.publicDocumentStrings()) {
           rows.push({ page: page.pageNumber, value, open: true, flags: page.flags });
         }
       }
@@ -471,9 +635,9 @@
           <div class="ee-title-row">
             <p class="ee-kicker">Grok Archive Hub evidence engine</p>
             <h1>${esc(this.dataset.title)}</h1>
-            <p class="ee-lede">${esc(this.dataset.subtitle || "Source-first archive reader for OCR text, vision observations, document strings, signatures, handwriting candidates, redactions, dates, receipt cards, provenance, and explicit GAPS labels.")}</p>
+            <p class="ee-lede">${esc(this.dataset.subtitle || "Source-first archive reader for page images, vetted observations, document strings, provenance, and explicit GAPS labels.")}</p>
             <div class="ee-status-row">
-              <span class="ee-status-badge">${esc(this.dataset.mode)}</span>
+              <span class="ee-status-badge">Research preview</span>
               ${this.dataset.visionPending ? `<span class="ee-status-badge ee-status-pending">Vision enrichment pending</span>` : ""}
             </div>
           </div>
@@ -532,8 +696,11 @@
     renderPage(page) {
       const prev = page.pageNumber > 1 ? `${this.dataset.baseRoute}/pages/${page.pageNumber - 1}` : "";
       const next = page.pageNumber < this.dataset.totalPages ? `${this.dataset.baseRoute}/pages/${page.pageNumber + 1}` : "";
-      const flags = page.flags.map((flag) => `<span class="ee-tag">${esc(flag)}</span>`).join("");
+      const flags = page.publicBadges().map((flag) => `<span class="ee-tag">${esc(flag)}</span>`).join("");
       const gaps = page.gaps.map((gap) => new EvidenceGapBadge("GAPS", gap).render()).join("");
+      const transcript = page.publicOcrText
+        ? `<div class="ee-transcript">${esc(page.publicOcrText)}</div>`
+        : `<p class="ee-withheld-note">${esc(OCR_WITHHELD_MESSAGE)}</p>`;
       const safety = page.safetyBlock ? `
         <section class="ee-panel ee-warning">
           <h2>${esc(page.safetyBlock.label)}</h2>
@@ -559,23 +726,49 @@
           <div class="ee-panels">
             ${safety}
             <section class="ee-panel">
-              <h2>Evidence labels</h2>
-              <div class="ee-badges">${flags || `<span class="ee-tag">no derived labels</span>`}${gaps}</div>
+              <h2>Birthday Book — Page ${esc(page.pageNumber)}</h2>
+              <p class="ee-page-meta">${esc(page.bates || "Bates not available in loaded data.")}</p>
+              <div class="ee-badges">${flags || `<span class="ee-tag">Scanned page</span>`}${gaps}</div>
+            </section>
+            <section class="ee-panel ee-transcript-panel">
+              <h2>Public transcription</h2>
+              ${transcript}
             </section>
             <section class="ee-panel">
-              <h2>OCR text</h2>
-              ${page.ocrText ? `<pre>${esc(page.ocrText)}</pre>` : `<p>GAPS - OCR text not available or too sparse in loaded data.</p>`}
+              <h2>Objective page description</h2>
+              ${itemList(page.observations, "GAPS - objective vision observations not loaded for this page.")}
             </section>
-            <section class="ee-panel"><h2>Objective vision observations</h2>${itemList(page.observations, "GAPS - objective vision observations not loaded for this page.")}</section>
-            <section class="ee-panel"><h2>Document strings</h2>${itemList(page.documentStrings, "No document strings loaded for this page.")}</section>
+            <section class="ee-panel">
+              <h2>Document strings detected</h2>
+              ${itemList(page.publicDocumentStrings(), "No publication-safe document strings loaded for this page.")}
+              <p class="ee-fineprint">Document strings are not identity verification. This reader does not infer authorship from OCR alone.</p>
+            </section>
             <section class="ee-panel"><h2>Signatures</h2>${itemList(page.signatures, pendingText)}</section>
             <section class="ee-panel"><h2>Handwriting candidates</h2>${itemList(page.handwriting, pendingText)}</section>
             <section class="ee-panel"><h2>Redactions</h2>${itemList(page.redactions, pendingText)}</section>
             <section class="ee-panel"><h2>Dates</h2>${itemList(page.dates, "No date strings loaded for this page.")}</section>
             ${new EvidenceSourcePanel(this.dataset, page).render()}
-            ${new EvidenceReceiptCard(`Receipt card - page ${page.pageNumber}`, "This card summarizes the loaded page record without adding authorship or identity claims beyond verified source fields.", { tags: page.flags }).render()}
+            ${new EvidenceReceiptCard(`Receipt card - page ${page.pageNumber}`, "This card summarizes the loaded page record without adding authorship or identity claims beyond verified source fields.", { tags: page.publicBadges() }).render()}
+            ${this.renderProcessingDetails(page)}
           </div>
         </section>
+      `;
+    }
+
+    renderProcessingDetails(page) {
+      const technicalFlags = page.technicalFlags().map((flag) => `<span class="ee-tag">${esc(flag)}</span>`).join("");
+      const reasons = page.ocrQuality.reasons.map((reason) => `<li>${esc(reason)}</li>`).join("");
+      return `
+        <details class="ee-processing-details">
+          <summary>Processing details</summary>
+          <div class="ee-processing-body">
+            <p><strong>Dataset mode:</strong> ${esc(this.dataset.mode || "Evidence Reader Mode")}</p>
+            <p><strong>OCR publication score:</strong> ${esc(page.ocrQuality.score.toFixed(2))}</p>
+            ${reasons ? `<div><strong>OCR withholding reasons:</strong><ul>${reasons}</ul></div>` : `<p>OCR passed the current public-display quality gate.</p>`}
+            <p>Raw OCR is retained for internal indexing/debugging and is withheld from public transcription when quality checks fail.</p>
+            <div class="ee-badges">${technicalFlags || `<span class="ee-tag">No technical flags</span>`}</div>
+          </div>
+        </details>
       `;
     }
 
@@ -585,20 +778,20 @@
         if (this.state.q && !row.value.toLowerCase().includes(this.state.q.toLowerCase())) return false;
         return true;
       });
-      const title = openOnly ? "Open identity strings" : "Document strings";
+      const title = openOnly ? "Unresolved document strings" : "Document strings";
       const cards = rows.map((row) => `
         <article class="ee-result">
           <h3>${esc(row.value)}</h3>
-          <p>${row.page ? `Document string on page ${esc(row.page)}. Identity remains open unless externally verified.` : "Dataset-level GAPS item."}</p>
+          <p>${row.page ? `Document string on page ${esc(row.page)}. This is not an identity claim or authorship finding.` : "Dataset-level GAPS item."}</p>
           ${row.page ? `<a class="ee-action" href="${attr(this.dataset.baseRoute)}/pages/${attr(row.page)}">Open page</a>` : ""}
         </article>
       `).join("");
       return `
         <section class="ee-listing-header">
           <h2>${esc(title)}</h2>
-          <p class="ee-lede">This route uses document string wording. It does not convert OCR, handwriting, or signatures into identity claims.</p>
+          <p class="ee-lede">This route uses document string wording. It excludes generic title text, source-control IDs, OCR fragments, and ordinary sentence fragments.</p>
         </section>
-        <div class="ee-results">${cards || `<div class="ee-empty">No matching document strings in the loaded data.</div>`}</div>
+        <div class="ee-results">${cards || `<div class="ee-empty">No matching publication-safe document strings in the loaded data.</div>`}</div>
       `;
     }
 
@@ -633,13 +826,13 @@
     }
 
     pageCard(page) {
-      const labels = page.flags.slice(0, 4).map((flag) => `<span class="ee-tag">${esc(flag)}</span>`).join("");
-      const snippet = page.ocrText || page.observations.join(" ") || page.gaps.join(" ") || "No loaded page text.";
+      const labels = page.publicBadges().slice(0, 4).map((flag) => `<span class="ee-tag">${esc(flag)}</span>`).join("");
+      const snippet = page.publicPreview();
       return `
         <article class="ee-page-card">
-          <h3>Page ${esc(page.pageNumber)}</h3>
+          <h3>Birthday Book — Page ${esc(page.pageNumber)}</h3>
           <p>${esc(snippet).slice(0, 170)}</p>
-          <div class="ee-badges">${labels || `<span class="ee-tag">unlabeled</span>`}</div>
+          <div class="ee-badges">${labels || `<span class="ee-tag">Scanned page</span>`}</div>
           <a class="ee-action" href="${attr(this.dataset.baseRoute)}/pages/${attr(page.pageNumber)}">Open page</a>
         </article>
       `;
@@ -651,19 +844,21 @@
 
     renderAdminDataBadge(stats) {
       return `
-        <section class="ee-panel ee-admin-badge">
-          <h2>Data status</h2>
-          <div class="ee-stat-grid">
-            ${this.stat("Pages loaded", stats.pages)}
-            ${this.stat("OCR files loaded", stats.ocrFiles || 0)}
-            ${this.stat("Images loaded", stats.images || 0)}
-            ${this.stat("Vision enrichment", stats.visionStatus || "pending")}
+        <details class="ee-processing-details ee-admin-badge">
+          <summary>Processing details</summary>
+          <div class="ee-processing-body">
+            <div class="ee-stat-grid">
+              ${this.stat("Pages loaded", stats.pages)}
+              ${this.stat("OCR files loaded", stats.ocrFiles || 0)}
+              ${this.stat("Images loaded", stats.images || 0)}
+              ${this.stat("Vision enrichment", stats.visionStatus || "pending")}
+            </div>
+            <div class="ee-index-status">
+              <strong>Signature/redaction/handwriting indexes:</strong>
+              <span>${esc(stats.indexStatus || "pending")}</span>
+            </div>
           </div>
-          <div class="ee-index-status">
-            <strong>Signature/redaction/handwriting indexes:</strong>
-            <span>${esc(stats.indexStatus || "pending")}</span>
-          </div>
-        </section>
+        </details>
       `;
     }
   }

@@ -1,0 +1,1640 @@
+page_start	page_end	method	text_extracted_yes_no	ocr_used_yes_no	confidence	notable_terms	notes
+1	1	pdftotext -layout	yes	no	high		form_feed_split
+2	2	pdftotext -layout	yes	no	high	The Board	form_feed_split
+3	3	pdftotext -layout	yes	no	high		form_feed_split
+4	4	pdftotext -layout	yes	no	high		form_feed_split
+5	5	pdftotext -layout	yes	no	high	Ghost Text; Financial Veins	form_feed_split
+6	6	pdftotext -layout	yes	no	high	Foreign Key	form_feed_split
+7	7	pdftotext -layout	yes	no	high	Foreign Key	form_feed_split
+8	8	pdftotext -layout	yes	no	high		form_feed_split
+9	9	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+10	10	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+11	11	pdftotext -layout	yes	no	high		form_feed_split
+12	12	pdftotext -layout	yes	no	high	NSO Group; Carbyne911; Carbyne	form_feed_split
+13	13	pdftotext -layout	yes	no	high		form_feed_split
+14	14	pdftotext -layout	yes	no	high		form_feed_split
+15	15	pdftotext -layout	yes	no	high	Quiet Corridors	form_feed_split
+16	16	pdftotext -layout	yes	no	high		form_feed_split
+17	17	pdftotext -layout	yes	no	high		form_feed_split
+18	18	pdftotext -layout	yes	no	high		form_feed_split
+19	19	pdftotext -layout	yes	no	high		form_feed_split
+20	20	pdftotext -layout	yes	no	high		form_feed_split
+21	21	pdftotext -layout	yes	no	high		form_feed_split
+22	22	pdftotext -layout	yes	no	high		form_feed_split
+23	23	pdftotext -layout	yes	no	high		form_feed_split
+24	24	pdftotext -layout	yes	no	high		form_feed_split
+25	25	pdftotext -layout	yes	no	high		form_feed_split
+26	26	pdftotext -layout	yes	no	high		form_feed_split
+27	27	pdftotext -layout	yes	no	high		form_feed_split
+28	28	pdftotext -layout	yes	no	high	The Board	form_feed_split
+29	29	pdftotext -layout	yes	no	high	The Board	form_feed_split
+30	30	pdftotext -layout	yes	no	high	C. F. Lauden; Marisa Denke; Raúl Brant; Eli Navarre	form_feed_split
+31	31	pdftotext -layout	yes	no	high	The Board	form_feed_split
+32	32	pdftotext -layout	yes	no	high	The Board; Surgejack	form_feed_split
+33	33	pdftotext -layout	yes	no	high	Mateo K. Durn; Silke van Romijn	form_feed_split
+34	34	pdftotext -layout	yes	no	high	Victor Shen; The Board	form_feed_split
+35	35	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+36	36	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+37	37	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+38	38	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+39	39	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+40	40	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+41	41	pdftotext -layout	yes	no	high	The Board	form_feed_split
+42	42	pdftotext -layout	yes	no	high	The Board	form_feed_split
+43	43	pdftotext -layout	yes	no	high	SWITCHMAN; The Board	form_feed_split
+44	44	pdftotext -layout	yes	no	high	The Board	form_feed_split
+45	45	pdftotext -layout	yes	no	high	The Board	form_feed_split
+46	46	pdftotext -layout	yes	no	high	The Board	form_feed_split
+47	47	pdftotext -layout	yes	no	high	The Board	form_feed_split
+48	48	pdftotext -layout	yes	no	high		form_feed_split
+49	49	pdftotext -layout	yes	no	high		form_feed_split
+50	50	pdftotext -layout	yes	no	high	The Board	form_feed_split
+51	51	pdftotext -layout	yes	no	high	The Board	form_feed_split
+52	52	pdftotext -layout	yes	no	high		form_feed_split
+53	53	pdftotext -layout	yes	no	high		form_feed_split
+54	54	pdftotext -layout	yes	no	high		form_feed_split
+55	55	pdftotext -layout	yes	no	high	The Board	form_feed_split
+56	56	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+57	57	pdftotext -layout	yes	no	high		form_feed_split
+58	58	pdftotext -layout	yes	no	high		form_feed_split
+59	59	pdftotext -layout	yes	no	high		form_feed_split
+60	60	pdftotext -layout	yes	no	high		form_feed_split
+61	61	pdftotext -layout	yes	no	high		form_feed_split
+62	62	pdftotext -layout	yes	no	high		form_feed_split
+63	63	pdftotext -layout	yes	no	high		form_feed_split
+64	64	pdftotext -layout	yes	no	high		form_feed_split
+65	65	pdftotext -layout	yes	no	high		form_feed_split
+66	66	pdftotext -layout	yes	no	high		form_feed_split
+67	67	pdftotext -layout	yes	no	high		form_feed_split
+68	68	pdftotext -layout	yes	no	high		form_feed_split
+69	69	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; NSO Group; Carbyne911; Carbyne	form_feed_split
+70	70	pdftotext -layout	yes	no	high		form_feed_split
+71	71	pdftotext -layout	yes	no	high		form_feed_split
+72	72	pdftotext -layout	yes	no	high		form_feed_split
+73	73	pdftotext -layout	yes	no	high		form_feed_split
+74	74	pdftotext -layout	yes	no	high		form_feed_split
+75	75	pdftotext -layout	yes	no	high		form_feed_split
+76	76	pdftotext -layout	yes	no	high		form_feed_split
+77	77	pdftotext -layout	yes	no	high		form_feed_split
+78	78	pdftotext -layout	yes	no	high		form_feed_split
+79	79	pdftotext -layout	yes	no	high		form_feed_split
+80	80	pdftotext -layout	yes	no	high		form_feed_split
+81	81	pdftotext -layout	yes	no	high		form_feed_split
+82	82	pdftotext -layout	yes	no	high		form_feed_split
+83	83	pdftotext -layout	yes	no	high		form_feed_split
+84	84	pdftotext -layout	yes	no	high		form_feed_split
+85	85	pdftotext -layout	yes	no	high		form_feed_split
+86	86	pdftotext -layout	yes	no	high		form_feed_split
+87	87	pdftotext -layout	yes	no	high		form_feed_split
+88	88	pdftotext -layout	yes	no	high		form_feed_split
+89	89	pdftotext -layout	yes	no	high		form_feed_split
+90	90	pdftotext -layout	yes	no	high		form_feed_split
+91	91	pdftotext -layout	yes	no	high	Leslie Wexner; Ghislaine Maxwell; Jean-Luc Brunel; Prince Andrew; Sarah Kellen	form_feed_split
+92	92	pdftotext -layout	yes	no	high	Carbyne911; Carbyne; Blue Raven; Iron Torch	form_feed_split
+93	93	pdftotext -layout	yes	no	high	Silver Lance; Night Pearl; Harbor Lock; Stone Chapel	form_feed_split
+94	94	pdftotext -layout	yes	no	high	Jean-Luc Brunel; Blue Raven; Iron Torch; Silver Lance	form_feed_split
+95	95	pdftotext -layout	yes	no	high	Ghislaine Maxwell; MC2; Blue Raven; Iron Torch; Night Pearl; Harbor Lock; Stone Chapel	form_feed_split
+96	96	pdftotext -layout	yes	no	high	Blue Raven; Iron Torch; Night Pearl; Harbor Lock	form_feed_split
+97	97	pdftotext -layout	yes	no	high	MC2; Silver Lance	form_feed_split
+98	98	pdftotext -layout	yes	no	high		form_feed_split
+99	99	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2; Blue Raven; Iron Torch; Night Pearl; Harbor Lock	form_feed_split
+100	100	pdftotext -layout	yes	no	high	NSO Group; Iron Torch; Silver Lance; Night Pearl; Harbor Lock	form_feed_split
+101	101	pdftotext -layout	yes	no	high	Blue Raven; Iron Torch; Silver Lance; Harbor Lock	form_feed_split
+102	102	pdftotext -layout	yes	no	high	Iron Torch; Night Pearl	form_feed_split
+103	103	pdftotext -layout	yes	no	high	Harbor Lock	form_feed_split
+104	104	pdftotext -layout	yes	no	high	Silver Lance; Night Pearl	form_feed_split
+105	105	pdftotext -layout	yes	no	high	MC2; NSO Group; Iron Torch; Night Pearl	form_feed_split
+106	106	pdftotext -layout	yes	no	high	Harbor Lock	form_feed_split
+107	107	pdftotext -layout	yes	no	high		form_feed_split
+108	108	pdftotext -layout	yes	no	high	NSO Group; Iron Torch; Harbor Lock	form_feed_split
+109	109	pdftotext -layout	yes	no	high	MC2; Blue Raven; Silver Lance; Night Pearl	form_feed_split
+110	110	pdftotext -layout	yes	no	high		form_feed_split
+111	111	pdftotext -layout	yes	no	high		form_feed_split
+112	112	pdftotext -layout	yes	no	high	Blue Raven; Iron Torch; Silver Lance; Night Pearl; Harbor Lock	form_feed_split
+113	113	pdftotext -layout	yes	no	high		form_feed_split
+114	114	pdftotext -layout	yes	no	high	Harbor Lock	form_feed_split
+115	115	pdftotext -layout	yes	no	high		form_feed_split
+116	116	pdftotext -layout	yes	no	high	Silver Lance	form_feed_split
+117	117	pdftotext -layout	yes	no	high		form_feed_split
+118	118	pdftotext -layout	yes	no	high		form_feed_split
+119	119	pdftotext -layout	yes	no	high		form_feed_split
+120	120	pdftotext -layout	yes	no	high		form_feed_split
+121	121	pdftotext -layout	yes	no	high		form_feed_split
+122	122	pdftotext -layout	yes	no	high		form_feed_split
+123	123	pdftotext -layout	yes	no	high		form_feed_split
+124	124	pdftotext -layout	yes	no	high		form_feed_split
+125	125	pdftotext -layout	yes	no	high		form_feed_split
+126	126	pdftotext -layout	yes	no	high		form_feed_split
+127	127	pdftotext -layout	yes	no	high		form_feed_split
+128	128	pdftotext -layout	yes	no	high		form_feed_split
+129	129	pdftotext -layout	yes	no	high		form_feed_split
+130	130	pdftotext -layout	yes	no	high		form_feed_split
+131	131	pdftotext -layout	yes	no	high		form_feed_split
+132	132	pdftotext -layout	yes	no	high		form_feed_split
+133	133	pdftotext -layout	yes	no	high		form_feed_split
+134	134	pdftotext -layout	yes	no	high		form_feed_split
+135	135	pdftotext -layout	yes	no	high		form_feed_split
+136	136	pdftotext -layout	yes	no	high		form_feed_split
+137	137	pdftotext -layout	yes	no	high		form_feed_split
+138	138	pdftotext -layout	yes	no	high		form_feed_split
+139	139	pdftotext -layout	yes	no	high		form_feed_split
+140	140	pdftotext -layout	yes	no	high		form_feed_split
+141	141	pdftotext -layout	yes	no	high		form_feed_split
+142	142	pdftotext -layout	yes	no	high		form_feed_split
+143	143	pdftotext -layout	yes	no	high		form_feed_split
+144	144	pdftotext -layout	yes	no	high		form_feed_split
+145	145	pdftotext -layout	yes	no	high		form_feed_split
+146	146	pdftotext -layout	yes	no	high		form_feed_split
+147	147	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+148	148	pdftotext -layout	yes	no	high		form_feed_split
+149	149	pdftotext -layout	yes	no	high		form_feed_split
+150	150	pdftotext -layout	yes	no	high		form_feed_split
+151	151	pdftotext -layout	yes	no	high		form_feed_split
+152	152	pdftotext -layout	yes	no	high		form_feed_split
+153	153	pdftotext -layout	yes	no	high		form_feed_split
+154	154	pdftotext -layout	yes	no	high		form_feed_split
+155	155	pdftotext -layout	yes	no	high		form_feed_split
+156	156	pdftotext -layout	yes	no	high		form_feed_split
+157	157	pdftotext -layout	yes	no	high		form_feed_split
+158	158	pdftotext -layout	yes	no	high		form_feed_split
+159	159	pdftotext -layout	yes	no	high		form_feed_split
+160	160	pdftotext -layout	yes	no	high		form_feed_split
+161	161	pdftotext -layout	yes	no	high		form_feed_split
+162	162	pdftotext -layout	yes	no	high		form_feed_split
+163	163	pdftotext -layout	yes	no	high		form_feed_split
+164	164	pdftotext -layout	yes	no	high		form_feed_split
+165	165	pdftotext -layout	yes	no	high		form_feed_split
+166	166	pdftotext -layout	yes	no	high		form_feed_split
+167	167	pdftotext -layout	yes	no	high		form_feed_split
+168	168	pdftotext -layout	yes	no	high		form_feed_split
+169	169	pdftotext -layout	yes	no	high		form_feed_split
+170	170	pdftotext -layout	yes	no	high		form_feed_split
+171	171	pdftotext -layout	yes	no	high		form_feed_split
+172	172	pdftotext -layout	yes	no	high		form_feed_split
+173	173	pdftotext -layout	yes	no	high		form_feed_split
+174	174	pdftotext -layout	yes	no	high		form_feed_split
+175	175	pdftotext -layout	yes	no	high		form_feed_split
+176	176	pdftotext -layout	yes	no	high		form_feed_split
+177	177	pdftotext -layout	yes	no	high		form_feed_split
+178	178	pdftotext -layout	yes	no	high		form_feed_split
+179	179	pdftotext -layout	yes	no	high		form_feed_split
+180	180	pdftotext -layout	yes	no	high		form_feed_split
+181	181	pdftotext -layout	yes	no	high		form_feed_split
+182	182	pdftotext -layout	yes	no	high		form_feed_split
+183	183	pdftotext -layout	yes	no	high		form_feed_split
+184	184	pdftotext -layout	yes	no	high		form_feed_split
+185	185	pdftotext -layout	yes	no	high		form_feed_split
+186	186	pdftotext -layout	yes	no	high		form_feed_split
+187	187	pdftotext -layout	yes	no	high		form_feed_split
+188	188	pdftotext -layout	yes	no	high		form_feed_split
+189	189	pdftotext -layout	yes	no	high		form_feed_split
+190	190	pdftotext -layout	yes	no	high		form_feed_split
+191	191	pdftotext -layout	yes	no	high		form_feed_split
+192	192	pdftotext -layout	yes	no	high		form_feed_split
+193	193	pdftotext -layout	yes	no	high		form_feed_split
+194	194	pdftotext -layout	yes	no	high		form_feed_split
+195	195	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+196	196	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+197	197	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+198	198	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+199	199	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+200	200	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+201	201	pdftotext -layout	yes	no	high		form_feed_split
+202	202	pdftotext -layout	yes	no	high		form_feed_split
+203	203	pdftotext -layout	yes	no	high	Ghost Node	form_feed_split
+204	204	pdftotext -layout	yes	no	high		form_feed_split
+205	205	pdftotext -layout	yes	no	high		form_feed_split
+206	206	pdftotext -layout	yes	no	high		form_feed_split
+207	207	pdftotext -layout	yes	no	high		form_feed_split
+208	208	pdftotext -layout	yes	no	high		form_feed_split
+209	209	pdftotext -layout	yes	no	high		form_feed_split
+210	210	pdftotext -layout	yes	no	high		form_feed_split
+211	211	pdftotext -layout	yes	no	high		form_feed_split
+212	212	pdftotext -layout	yes	no	high		form_feed_split
+213	213	pdftotext -layout	yes	no	high		form_feed_split
+214	214	pdftotext -layout	yes	no	high		form_feed_split
+215	215	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+216	216	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+217	217	pdftotext -layout	yes	no	high		form_feed_split
+218	218	pdftotext -layout	yes	no	high		form_feed_split
+219	219	pdftotext -layout	yes	no	high		form_feed_split
+220	220	pdftotext -layout	yes	no	high		form_feed_split
+221	221	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+222	222	pdftotext -layout	yes	no	high		form_feed_split
+223	223	pdftotext -layout	yes	no	high		form_feed_split
+224	224	pdftotext -layout	yes	no	high		form_feed_split
+225	225	pdftotext -layout	yes	no	high		form_feed_split
+226	226	pdftotext -layout	yes	no	high		form_feed_split
+227	227	pdftotext -layout	yes	no	high		form_feed_split
+228	228	pdftotext -layout	yes	no	high		form_feed_split
+229	229	pdftotext -layout	yes	no	high		form_feed_split
+230	230	pdftotext -layout	yes	no	high		form_feed_split
+231	231	pdftotext -layout	yes	no	high		form_feed_split
+232	232	pdftotext -layout	yes	no	high		form_feed_split
+233	233	pdftotext -layout	yes	no	high	Southern Trust	form_feed_split
+234	234	pdftotext -layout	yes	no	high	MC2; Carbyne911; Carbyne; Southern Trust; Financial Trust	form_feed_split
+235	235	pdftotext -layout	yes	no	high		form_feed_split
+236	236	pdftotext -layout	yes	no	high		form_feed_split
+237	237	pdftotext -layout	yes	no	high		form_feed_split
+238	238	pdftotext -layout	yes	no	high		form_feed_split
+239	239	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+240	240	pdftotext -layout	yes	no	high		form_feed_split
+241	241	pdftotext -layout	yes	no	high		form_feed_split
+242	242	pdftotext -layout	yes	no	high		form_feed_split
+243	243	pdftotext -layout	yes	no	high		form_feed_split
+244	244	pdftotext -layout	yes	no	high		form_feed_split
+245	245	pdftotext -layout	yes	no	high		form_feed_split
+246	246	pdftotext -layout	yes	no	high		form_feed_split
+247	247	pdftotext -layout	yes	no	high		form_feed_split
+248	248	pdftotext -layout	yes	no	high		form_feed_split
+249	249	pdftotext -layout	yes	no	high		form_feed_split
+250	250	pdftotext -layout	yes	no	high		form_feed_split
+251	251	pdftotext -layout	yes	no	high		form_feed_split
+252	252	pdftotext -layout	yes	no	high		form_feed_split
+253	253	pdftotext -layout	yes	no	high		form_feed_split
+254	254	pdftotext -layout	yes	no	high		form_feed_split
+255	255	pdftotext -layout	yes	no	high		form_feed_split
+256	256	pdftotext -layout	yes	no	high		form_feed_split
+257	257	pdftotext -layout	yes	no	high		form_feed_split
+258	258	pdftotext -layout	yes	no	high		form_feed_split
+259	259	pdftotext -layout	yes	no	high		form_feed_split
+260	260	pdftotext -layout	yes	no	high		form_feed_split
+261	261	pdftotext -layout	yes	no	high		form_feed_split
+262	262	pdftotext -layout	yes	no	high		form_feed_split
+263	263	pdftotext -layout	yes	no	high		form_feed_split
+264	264	pdftotext -layout	yes	no	high		form_feed_split
+265	265	pdftotext -layout	yes	no	high		form_feed_split
+266	266	pdftotext -layout	yes	no	high		form_feed_split
+267	267	pdftotext -layout	yes	no	high		form_feed_split
+268	268	pdftotext -layout	yes	no	high		form_feed_split
+269	269	pdftotext -layout	yes	no	high		form_feed_split
+270	270	pdftotext -layout	yes	no	high		form_feed_split
+271	271	pdftotext -layout	yes	no	high		form_feed_split
+272	272	pdftotext -layout	yes	no	high		form_feed_split
+273	273	pdftotext -layout	yes	no	high		form_feed_split
+274	274	pdftotext -layout	yes	no	high		form_feed_split
+275	275	pdftotext -layout	yes	no	high		form_feed_split
+276	276	pdftotext -layout	yes	no	high		form_feed_split
+277	277	pdftotext -layout	yes	no	high		form_feed_split
+278	278	pdftotext -layout	yes	no	high		form_feed_split
+279	279	pdftotext -layout	yes	no	high		form_feed_split
+280	280	pdftotext -layout	yes	no	high		form_feed_split
+281	281	pdftotext -layout	yes	no	high		form_feed_split
+282	282	pdftotext -layout	yes	no	high		form_feed_split
+283	283	pdftotext -layout	yes	no	high		form_feed_split
+284	284	pdftotext -layout	yes	no	high		form_feed_split
+285	285	pdftotext -layout	yes	no	high		form_feed_split
+286	286	pdftotext -layout	yes	no	high		form_feed_split
+287	287	pdftotext -layout	yes	no	high		form_feed_split
+288	288	pdftotext -layout	yes	no	high		form_feed_split
+289	289	pdftotext -layout	yes	no	high		form_feed_split
+290	290	pdftotext -layout	yes	no	high		form_feed_split
+291	291	pdftotext -layout	yes	no	high		form_feed_split
+292	292	pdftotext -layout	yes	no	high		form_feed_split
+293	293	pdftotext -layout	yes	no	high		form_feed_split
+294	294	pdftotext -layout	yes	no	high		form_feed_split
+295	295	pdftotext -layout	yes	no	high		form_feed_split
+296	296	pdftotext -layout	yes	no	high		form_feed_split
+297	297	pdftotext -layout	yes	no	high		form_feed_split
+298	298	pdftotext -layout	yes	no	high		form_feed_split
+299	299	pdftotext -layout	yes	no	high		form_feed_split
+300	300	pdftotext -layout	yes	no	high		form_feed_split
+301	301	pdftotext -layout	yes	no	high		form_feed_split
+302	302	pdftotext -layout	yes	no	high		form_feed_split
+303	303	pdftotext -layout	yes	no	high		form_feed_split
+304	304	pdftotext -layout	yes	no	high		form_feed_split
+305	305	pdftotext -layout	yes	no	high		form_feed_split
+306	306	pdftotext -layout	yes	no	high		form_feed_split
+307	307	pdftotext -layout	yes	no	high		form_feed_split
+308	308	pdftotext -layout	yes	no	high		form_feed_split
+309	309	pdftotext -layout	yes	no	high		form_feed_split
+310	310	pdftotext -layout	yes	no	high		form_feed_split
+311	311	pdftotext -layout	yes	no	high		form_feed_split
+312	312	pdftotext -layout	yes	no	high		form_feed_split
+313	313	pdftotext -layout	yes	no	high		form_feed_split
+314	314	pdftotext -layout	yes	no	high		form_feed_split
+315	315	pdftotext -layout	yes	no	high		form_feed_split
+316	316	pdftotext -layout	yes	no	high		form_feed_split
+317	317	pdftotext -layout	yes	no	high		form_feed_split
+318	318	pdftotext -layout	yes	no	high		form_feed_split
+319	319	pdftotext -layout	yes	no	high		form_feed_split
+320	320	pdftotext -layout	yes	no	high		form_feed_split
+321	321	pdftotext -layout	yes	no	high		form_feed_split
+322	322	pdftotext -layout	yes	no	high		form_feed_split
+323	323	pdftotext -layout	yes	no	high		form_feed_split
+324	324	pdftotext -layout	yes	no	high		form_feed_split
+325	325	pdftotext -layout	yes	no	high		form_feed_split
+326	326	pdftotext -layout	yes	no	high		form_feed_split
+327	327	pdftotext -layout	yes	no	high		form_feed_split
+328	328	pdftotext -layout	yes	no	high		form_feed_split
+329	329	pdftotext -layout	yes	no	high		form_feed_split
+330	330	pdftotext -layout	yes	no	high		form_feed_split
+331	331	pdftotext -layout	yes	no	high		form_feed_split
+332	332	pdftotext -layout	yes	no	high		form_feed_split
+333	333	pdftotext -layout	yes	no	high		form_feed_split
+334	334	pdftotext -layout	yes	no	high		form_feed_split
+335	335	pdftotext -layout	yes	no	high		form_feed_split
+336	336	pdftotext -layout	yes	no	high		form_feed_split
+337	337	pdftotext -layout	yes	no	high		form_feed_split
+338	338	pdftotext -layout	yes	no	high		form_feed_split
+339	339	pdftotext -layout	yes	no	high		form_feed_split
+340	340	pdftotext -layout	yes	no	high		form_feed_split
+341	341	pdftotext -layout	yes	no	high		form_feed_split
+342	342	pdftotext -layout	yes	no	high		form_feed_split
+343	343	pdftotext -layout	yes	no	high		form_feed_split
+344	344	pdftotext -layout	yes	no	high		form_feed_split
+345	345	pdftotext -layout	yes	no	high		form_feed_split
+346	346	pdftotext -layout	yes	no	high		form_feed_split
+347	347	pdftotext -layout	yes	no	high	Virginia Giuffre	form_feed_split
+348	348	pdftotext -layout	yes	no	high		form_feed_split
+349	349	pdftotext -layout	yes	no	high		form_feed_split
+350	350	pdftotext -layout	yes	no	high		form_feed_split
+351	351	pdftotext -layout	yes	no	high		form_feed_split
+352	352	pdftotext -layout	yes	no	high		form_feed_split
+353	353	pdftotext -layout	yes	no	high		form_feed_split
+354	354	pdftotext -layout	yes	no	high		form_feed_split
+355	355	pdftotext -layout	yes	no	high		form_feed_split
+356	356	pdftotext -layout	yes	no	high		form_feed_split
+357	357	pdftotext -layout	yes	no	high		form_feed_split
+358	358	pdftotext -layout	yes	no	high		form_feed_split
+359	359	pdftotext -layout	yes	no	high		form_feed_split
+360	360	pdftotext -layout	yes	no	high		form_feed_split
+361	361	pdftotext -layout	yes	no	high		form_feed_split
+362	362	pdftotext -layout	yes	no	high		form_feed_split
+363	363	pdftotext -layout	yes	no	high		form_feed_split
+364	364	pdftotext -layout	yes	no	high		form_feed_split
+365	365	pdftotext -layout	yes	no	high		form_feed_split
+366	366	pdftotext -layout	yes	no	high		form_feed_split
+367	367	pdftotext -layout	yes	no	high		form_feed_split
+368	368	pdftotext -layout	yes	no	high		form_feed_split
+369	369	pdftotext -layout	yes	no	high		form_feed_split
+370	370	pdftotext -layout	yes	no	high		form_feed_split
+371	371	pdftotext -layout	yes	no	high		form_feed_split
+372	372	pdftotext -layout	yes	no	high		form_feed_split
+373	373	pdftotext -layout	yes	no	high		form_feed_split
+374	374	pdftotext -layout	yes	no	high		form_feed_split
+375	375	pdftotext -layout	yes	no	high		form_feed_split
+376	376	pdftotext -layout	yes	no	high		form_feed_split
+377	377	pdftotext -layout	yes	no	high		form_feed_split
+378	378	pdftotext -layout	yes	no	high		form_feed_split
+379	379	pdftotext -layout	yes	no	high		form_feed_split
+380	380	pdftotext -layout	yes	no	high		form_feed_split
+381	381	pdftotext -layout	yes	no	high		form_feed_split
+382	382	pdftotext -layout	yes	no	high		form_feed_split
+383	383	pdftotext -layout	yes	no	high		form_feed_split
+384	384	pdftotext -layout	yes	no	high		form_feed_split
+385	385	pdftotext -layout	yes	no	high		form_feed_split
+386	386	pdftotext -layout	yes	no	high		form_feed_split
+387	387	pdftotext -layout	yes	no	high		form_feed_split
+388	388	pdftotext -layout	yes	no	high		form_feed_split
+389	389	pdftotext -layout	yes	no	high		form_feed_split
+390	390	pdftotext -layout	yes	no	high		form_feed_split
+391	391	pdftotext -layout	yes	no	high		form_feed_split
+392	392	pdftotext -layout	yes	no	high		form_feed_split
+393	393	pdftotext -layout	yes	no	high		form_feed_split
+394	394	pdftotext -layout	yes	no	high		form_feed_split
+395	395	pdftotext -layout	yes	no	high		form_feed_split
+396	396	pdftotext -layout	yes	no	high		form_feed_split
+397	397	pdftotext -layout	yes	no	high		form_feed_split
+398	398	pdftotext -layout	yes	no	high		form_feed_split
+399	399	pdftotext -layout	yes	no	high		form_feed_split
+400	400	pdftotext -layout	yes	no	high		form_feed_split
+401	401	pdftotext -layout	yes	no	high		form_feed_split
+402	402	pdftotext -layout	yes	no	high		form_feed_split
+403	403	pdftotext -layout	yes	no	high		form_feed_split
+404	404	pdftotext -layout	yes	no	high		form_feed_split
+405	405	pdftotext -layout	yes	no	high		form_feed_split
+406	406	pdftotext -layout	yes	no	high		form_feed_split
+407	407	pdftotext -layout	yes	no	high		form_feed_split
+408	408	pdftotext -layout	yes	no	high		form_feed_split
+409	409	pdftotext -layout	yes	no	high		form_feed_split
+410	410	pdftotext -layout	yes	no	high		form_feed_split
+411	411	pdftotext -layout	yes	no	high		form_feed_split
+412	412	pdftotext -layout	yes	no	high		form_feed_split
+413	413	pdftotext -layout	yes	no	high		form_feed_split
+414	414	pdftotext -layout	yes	no	high		form_feed_split
+415	415	pdftotext -layout	yes	no	high		form_feed_split
+416	416	pdftotext -layout	yes	no	high		form_feed_split
+417	417	pdftotext -layout	yes	no	high		form_feed_split
+418	418	pdftotext -layout	yes	no	high		form_feed_split
+419	419	pdftotext -layout	yes	no	high		form_feed_split
+420	420	pdftotext -layout	yes	no	high		form_feed_split
+421	421	pdftotext -layout	yes	no	high		form_feed_split
+422	422	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+423	423	pdftotext -layout	yes	no	high	MC2; NSO Group; Carbyne911; Carbyne	form_feed_split
+424	424	pdftotext -layout	yes	no	high		form_feed_split
+425	425	pdftotext -layout	yes	no	high	Ghislaine Maxwell; MC2; Carbyne911; Carbyne	form_feed_split
+426	426	pdftotext -layout	yes	no	high		form_feed_split
+427	427	pdftotext -layout	yes	no	high		form_feed_split
+428	428	pdftotext -layout	yes	no	high		form_feed_split
+429	429	pdftotext -layout	yes	no	high		form_feed_split
+430	430	pdftotext -layout	yes	no	high	Leslie Wexner	form_feed_split
+431	431	pdftotext -layout	yes	no	high		form_feed_split
+432	432	pdftotext -layout	yes	no	high		form_feed_split
+433	433	pdftotext -layout	yes	no	high		form_feed_split
+434	434	pdftotext -layout	yes	no	high		form_feed_split
+435	435	pdftotext -layout	yes	no	high		form_feed_split
+436	436	pdftotext -layout	yes	no	high		form_feed_split
+437	437	pdftotext -layout	yes	no	high		form_feed_split
+438	438	pdftotext -layout	yes	no	high		form_feed_split
+439	439	pdftotext -layout	yes	no	high		form_feed_split
+440	440	pdftotext -layout	yes	no	high		form_feed_split
+441	441	pdftotext -layout	yes	no	high		form_feed_split
+442	442	pdftotext -layout	yes	no	high		form_feed_split
+443	443	pdftotext -layout	yes	no	high		form_feed_split
+444	444	pdftotext -layout	yes	no	high		form_feed_split
+445	445	pdftotext -layout	yes	no	high		form_feed_split
+446	446	pdftotext -layout	yes	no	high		form_feed_split
+447	447	pdftotext -layout	yes	no	high		form_feed_split
+448	448	pdftotext -layout	yes	no	high		form_feed_split
+449	449	pdftotext -layout	yes	no	high		form_feed_split
+450	450	pdftotext -layout	yes	no	high		form_feed_split
+451	451	pdftotext -layout	yes	no	high		form_feed_split
+452	452	pdftotext -layout	yes	no	high		form_feed_split
+453	453	pdftotext -layout	yes	no	high		form_feed_split
+454	454	pdftotext -layout	yes	no	high		form_feed_split
+455	455	pdftotext -layout	yes	no	high		form_feed_split
+456	456	pdftotext -layout	yes	no	high		form_feed_split
+457	457	pdftotext -layout	yes	no	high		form_feed_split
+458	458	pdftotext -layout	yes	no	high		form_feed_split
+459	459	pdftotext -layout	yes	no	high		form_feed_split
+460	460	pdftotext -layout	yes	no	high		form_feed_split
+461	461	pdftotext -layout	yes	no	high		form_feed_split
+462	462	pdftotext -layout	yes	no	high		form_feed_split
+463	463	pdftotext -layout	yes	no	high		form_feed_split
+464	464	pdftotext -layout	yes	no	high		form_feed_split
+465	465	pdftotext -layout	yes	no	high		form_feed_split
+466	466	pdftotext -layout	yes	no	high		form_feed_split
+467	467	pdftotext -layout	yes	no	high		form_feed_split
+468	468	pdftotext -layout	yes	no	high		form_feed_split
+469	469	pdftotext -layout	yes	no	high		form_feed_split
+470	470	pdftotext -layout	yes	no	high		form_feed_split
+471	471	pdftotext -layout	yes	no	high		form_feed_split
+472	472	pdftotext -layout	yes	no	high		form_feed_split
+473	473	pdftotext -layout	yes	no	high		form_feed_split
+474	474	pdftotext -layout	yes	no	high		form_feed_split
+475	475	pdftotext -layout	yes	no	high		form_feed_split
+476	476	pdftotext -layout	yes	no	high		form_feed_split
+477	477	pdftotext -layout	yes	no	high		form_feed_split
+478	478	pdftotext -layout	yes	no	high		form_feed_split
+479	479	pdftotext -layout	yes	no	high		form_feed_split
+480	480	pdftotext -layout	yes	no	high		form_feed_split
+481	481	pdftotext -layout	yes	no	high		form_feed_split
+482	482	pdftotext -layout	yes	no	high		form_feed_split
+483	483	pdftotext -layout	yes	no	high		form_feed_split
+484	484	pdftotext -layout	yes	no	high		form_feed_split
+485	485	pdftotext -layout	yes	no	high		form_feed_split
+486	486	pdftotext -layout	yes	no	high		form_feed_split
+487	487	pdftotext -layout	yes	no	high		form_feed_split
+488	488	pdftotext -layout	yes	no	high		form_feed_split
+489	489	pdftotext -layout	yes	no	high		form_feed_split
+490	490	pdftotext -layout	yes	no	high		form_feed_split
+491	491	pdftotext -layout	yes	no	high		form_feed_split
+492	492	pdftotext -layout	yes	no	high		form_feed_split
+493	493	pdftotext -layout	yes	no	high		form_feed_split
+494	494	pdftotext -layout	yes	no	high		form_feed_split
+495	495	pdftotext -layout	yes	no	high		form_feed_split
+496	496	pdftotext -layout	yes	no	high		form_feed_split
+497	497	pdftotext -layout	yes	no	high		form_feed_split
+498	498	pdftotext -layout	yes	no	high		form_feed_split
+499	499	pdftotext -layout	yes	no	high		form_feed_split
+500	500	pdftotext -layout	yes	no	high		form_feed_split
+501	501	pdftotext -layout	yes	no	high		form_feed_split
+502	502	pdftotext -layout	yes	no	high		form_feed_split
+503	503	pdftotext -layout	yes	no	high		form_feed_split
+504	504	pdftotext -layout	yes	no	high		form_feed_split
+505	505	pdftotext -layout	yes	no	high	MC2	form_feed_split
+506	506	pdftotext -layout	yes	no	high		form_feed_split
+507	507	pdftotext -layout	yes	no	high		form_feed_split
+508	508	pdftotext -layout	yes	no	high		form_feed_split
+509	509	pdftotext -layout	yes	no	high	Leslie Wexner; Ehud Barak	form_feed_split
+510	510	pdftotext -layout	yes	no	high		form_feed_split
+511	511	pdftotext -layout	yes	no	high		form_feed_split
+512	512	pdftotext -layout	yes	no	high		form_feed_split
+513	513	pdftotext -layout	yes	no	high		form_feed_split
+514	514	pdftotext -layout	yes	no	high		form_feed_split
+515	515	pdftotext -layout	yes	no	high		form_feed_split
+516	516	pdftotext -layout	yes	no	high		form_feed_split
+517	517	pdftotext -layout	yes	no	high		form_feed_split
+518	518	pdftotext -layout	yes	no	high		form_feed_split
+519	519	pdftotext -layout	yes	no	high		form_feed_split
+520	520	pdftotext -layout	yes	no	high		form_feed_split
+521	521	pdftotext -layout	yes	no	high		form_feed_split
+522	522	pdftotext -layout	yes	no	high		form_feed_split
+523	523	pdftotext -layout	yes	no	high	MC2	form_feed_split
+524	524	pdftotext -layout	yes	no	high		form_feed_split
+525	525	pdftotext -layout	yes	no	high	NSO Group; TerraMar	form_feed_split
+526	526	pdftotext -layout	yes	no	high	Leon Black	form_feed_split
+527	527	pdftotext -layout	yes	no	high		form_feed_split
+528	528	pdftotext -layout	yes	no	high	Jean-Luc Brunel; NSO Group	form_feed_split
+529	529	pdftotext -layout	yes	no	high		form_feed_split
+530	530	pdftotext -layout	yes	no	high		form_feed_split
+531	531	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+532	532	pdftotext -layout	yes	no	high		form_feed_split
+533	533	pdftotext -layout	yes	no	high		form_feed_split
+534	534	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+535	535	pdftotext -layout	yes	no	high		form_feed_split
+536	536	pdftotext -layout	yes	no	high		form_feed_split
+537	537	pdftotext -layout	yes	no	high		form_feed_split
+538	538	pdftotext -layout	yes	no	high		form_feed_split
+539	539	pdftotext -layout	yes	no	high		form_feed_split
+540	540	pdftotext -layout	yes	no	high		form_feed_split
+541	541	pdftotext -layout	yes	no	high		form_feed_split
+542	542	pdftotext -layout	yes	no	high		form_feed_split
+543	543	pdftotext -layout	yes	no	high		form_feed_split
+544	544	pdftotext -layout	yes	no	high		form_feed_split
+545	545	pdftotext -layout	yes	no	high		form_feed_split
+546	546	pdftotext -layout	yes	no	high	Ehud Barak	form_feed_split
+547	547	pdftotext -layout	yes	no	high		form_feed_split
+548	548	pdftotext -layout	yes	no	high		form_feed_split
+549	549	pdftotext -layout	yes	no	high	Ehud Barak	form_feed_split
+550	550	pdftotext -layout	yes	no	high		form_feed_split
+551	551	pdftotext -layout	yes	no	high		form_feed_split
+552	552	pdftotext -layout	yes	no	high		form_feed_split
+553	553	pdftotext -layout	yes	no	high		form_feed_split
+554	554	pdftotext -layout	yes	no	high		form_feed_split
+555	555	pdftotext -layout	yes	no	high		form_feed_split
+556	556	pdftotext -layout	yes	no	high		form_feed_split
+557	557	pdftotext -layout	yes	no	high		form_feed_split
+558	558	pdftotext -layout	yes	no	high		form_feed_split
+559	559	pdftotext -layout	yes	no	high		form_feed_split
+560	560	pdftotext -layout	yes	no	high		form_feed_split
+561	561	pdftotext -layout	yes	no	high		form_feed_split
+562	562	pdftotext -layout	yes	no	high		form_feed_split
+563	563	pdftotext -layout	yes	no	high		form_feed_split
+564	564	pdftotext -layout	yes	no	high		form_feed_split
+565	565	pdftotext -layout	yes	no	high		form_feed_split
+566	566	pdftotext -layout	yes	no	high		form_feed_split
+567	567	pdftotext -layout	yes	no	high		form_feed_split
+568	568	pdftotext -layout	yes	no	high		form_feed_split
+569	569	pdftotext -layout	yes	no	high		form_feed_split
+570	570	pdftotext -layout	yes	no	high		form_feed_split
+571	571	pdftotext -layout	yes	no	high		form_feed_split
+572	572	pdftotext -layout	yes	no	high		form_feed_split
+573	573	pdftotext -layout	yes	no	high		form_feed_split
+574	574	pdftotext -layout	yes	no	high		form_feed_split
+575	575	pdftotext -layout	yes	no	high		form_feed_split
+576	576	pdftotext -layout	yes	no	high		form_feed_split
+577	577	pdftotext -layout	yes	no	high		form_feed_split
+578	578	pdftotext -layout	yes	no	high		form_feed_split
+579	579	pdftotext -layout	yes	no	high		form_feed_split
+580	580	pdftotext -layout	yes	no	high		form_feed_split
+581	581	pdftotext -layout	yes	no	high		form_feed_split
+582	582	pdftotext -layout	yes	no	high		form_feed_split
+583	583	pdftotext -layout	yes	no	high		form_feed_split
+584	584	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+585	585	pdftotext -layout	yes	no	high		form_feed_split
+586	586	pdftotext -layout	yes	no	high		form_feed_split
+587	587	pdftotext -layout	yes	no	high		form_feed_split
+588	588	pdftotext -layout	yes	no	high		form_feed_split
+589	589	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+590	590	pdftotext -layout	yes	no	high		form_feed_split
+591	591	pdftotext -layout	yes	no	high		form_feed_split
+592	592	pdftotext -layout	yes	no	high		form_feed_split
+593	593	pdftotext -layout	yes	no	high		form_feed_split
+594	594	pdftotext -layout	yes	no	high		form_feed_split
+595	595	pdftotext -layout	yes	no	high		form_feed_split
+596	596	pdftotext -layout	yes	no	high		form_feed_split
+597	597	pdftotext -layout	yes	no	high		form_feed_split
+598	598	pdftotext -layout	yes	no	high		form_feed_split
+599	599	pdftotext -layout	yes	no	high		form_feed_split
+600	600	pdftotext -layout	yes	no	high		form_feed_split
+601	601	pdftotext -layout	yes	no	high		form_feed_split
+602	602	pdftotext -layout	yes	no	high		form_feed_split
+603	603	pdftotext -layout	yes	no	high		form_feed_split
+604	604	pdftotext -layout	yes	no	high	MC2	form_feed_split
+605	605	pdftotext -layout	yes	no	high		form_feed_split
+606	606	pdftotext -layout	yes	no	high	Carbyne	form_feed_split
+607	607	pdftotext -layout	yes	no	high	MC2	form_feed_split
+608	608	pdftotext -layout	yes	no	high		form_feed_split
+609	609	pdftotext -layout	yes	no	high		form_feed_split
+610	610	pdftotext -layout	yes	no	high		form_feed_split
+611	611	pdftotext -layout	yes	no	high		form_feed_split
+612	612	pdftotext -layout	yes	no	high		form_feed_split
+613	613	pdftotext -layout	yes	no	high		form_feed_split
+614	614	pdftotext -layout	yes	no	high		form_feed_split
+615	615	pdftotext -layout	yes	no	high		form_feed_split
+616	616	pdftotext -layout	yes	no	high		form_feed_split
+617	617	pdftotext -layout	yes	no	high		form_feed_split
+618	618	pdftotext -layout	yes	no	high		form_feed_split
+619	619	pdftotext -layout	yes	no	high		form_feed_split
+620	620	pdftotext -layout	yes	no	high		form_feed_split
+621	621	pdftotext -layout	yes	no	high		form_feed_split
+622	622	pdftotext -layout	yes	no	high		form_feed_split
+623	623	pdftotext -layout	yes	no	high		form_feed_split
+624	624	pdftotext -layout	yes	no	high		form_feed_split
+625	625	pdftotext -layout	yes	no	high		form_feed_split
+626	626	pdftotext -layout	yes	no	high		form_feed_split
+627	627	pdftotext -layout	yes	no	high		form_feed_split
+628	628	pdftotext -layout	yes	no	high		form_feed_split
+629	629	pdftotext -layout	yes	no	high		form_feed_split
+630	630	pdftotext -layout	yes	no	high		form_feed_split
+631	631	pdftotext -layout	yes	no	high		form_feed_split
+632	632	pdftotext -layout	yes	no	high		form_feed_split
+633	633	pdftotext -layout	yes	no	high		form_feed_split
+634	634	pdftotext -layout	yes	no	high		form_feed_split
+635	635	pdftotext -layout	yes	no	high		form_feed_split
+636	636	pdftotext -layout	yes	no	high		form_feed_split
+637	637	pdftotext -layout	yes	no	high		form_feed_split
+638	638	pdftotext -layout	yes	no	high		form_feed_split
+639	639	pdftotext -layout	yes	no	high		form_feed_split
+640	640	pdftotext -layout	yes	no	high		form_feed_split
+641	641	pdftotext -layout	yes	no	high		form_feed_split
+642	642	pdftotext -layout	yes	no	high		form_feed_split
+643	643	pdftotext -layout	yes	no	high		form_feed_split
+644	644	pdftotext -layout	yes	no	high		form_feed_split
+645	645	pdftotext -layout	yes	no	high		form_feed_split
+646	646	pdftotext -layout	yes	no	high		form_feed_split
+647	647	pdftotext -layout	yes	no	high		form_feed_split
+648	648	pdftotext -layout	yes	no	high		form_feed_split
+649	649	pdftotext -layout	yes	no	high		form_feed_split
+650	650	pdftotext -layout	yes	no	high		form_feed_split
+651	651	pdftotext -layout	yes	no	high		form_feed_split
+652	652	pdftotext -layout	yes	no	high		form_feed_split
+653	653	pdftotext -layout	yes	no	high		form_feed_split
+654	654	pdftotext -layout	yes	no	high		form_feed_split
+655	655	pdftotext -layout	yes	no	high		form_feed_split
+656	656	pdftotext -layout	yes	no	high		form_feed_split
+657	657	pdftotext -layout	yes	no	high		form_feed_split
+658	658	pdftotext -layout	yes	no	high		form_feed_split
+659	659	pdftotext -layout	yes	no	high		form_feed_split
+660	660	pdftotext -layout	yes	no	high		form_feed_split
+661	661	pdftotext -layout	yes	no	high		form_feed_split
+662	662	pdftotext -layout	yes	no	high		form_feed_split
+663	663	pdftotext -layout	yes	no	high		form_feed_split
+664	664	pdftotext -layout	yes	no	high		form_feed_split
+665	665	pdftotext -layout	yes	no	high		form_feed_split
+666	666	pdftotext -layout	yes	no	high		form_feed_split
+667	667	pdftotext -layout	yes	no	high		form_feed_split
+668	668	pdftotext -layout	yes	no	high	Ehud Barak; Carbyne911; Carbyne	form_feed_split
+669	669	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2	form_feed_split
+670	670	pdftotext -layout	yes	no	high		form_feed_split
+671	671	pdftotext -layout	yes	no	high		form_feed_split
+672	672	pdftotext -layout	yes	no	high		form_feed_split
+673	673	pdftotext -layout	yes	no	high	MC2	form_feed_split
+674	674	pdftotext -layout	yes	no	high		form_feed_split
+675	675	pdftotext -layout	yes	no	high	MC2	form_feed_split
+676	676	pdftotext -layout	yes	no	high		form_feed_split
+677	677	pdftotext -layout	yes	no	high		form_feed_split
+678	678	pdftotext -layout	yes	no	high		form_feed_split
+679	679	pdftotext -layout	yes	no	low		form_feed_split
+680	680	pdftotext -layout	yes	no	high		form_feed_split
+681	681	pdftotext -layout	yes	no	high		form_feed_split
+682	682	pdftotext -layout	yes	no	high		form_feed_split
+683	683	pdftotext -layout	yes	no	high		form_feed_split
+684	684	pdftotext -layout	yes	no	high		form_feed_split
+685	685	pdftotext -layout	yes	no	high		form_feed_split
+686	686	pdftotext -layout	yes	no	high		form_feed_split
+687	687	pdftotext -layout	yes	no	high		form_feed_split
+688	688	pdftotext -layout	yes	no	high		form_feed_split
+689	689	pdftotext -layout	yes	no	high		form_feed_split
+690	690	pdftotext -layout	yes	no	high		form_feed_split
+691	691	pdftotext -layout	yes	no	high		form_feed_split
+692	692	pdftotext -layout	yes	no	high		form_feed_split
+693	693	pdftotext -layout	yes	no	high		form_feed_split
+694	694	pdftotext -layout	yes	no	high		form_feed_split
+695	695	pdftotext -layout	yes	no	high		form_feed_split
+696	696	pdftotext -layout	yes	no	high		form_feed_split
+697	697	pdftotext -layout	yes	no	high		form_feed_split
+698	698	pdftotext -layout	yes	no	high		form_feed_split
+699	699	pdftotext -layout	yes	no	high		form_feed_split
+700	700	pdftotext -layout	yes	no	high		form_feed_split
+701	701	pdftotext -layout	yes	no	high		form_feed_split
+702	702	pdftotext -layout	yes	no	high		form_feed_split
+703	703	pdftotext -layout	yes	no	high		form_feed_split
+704	704	pdftotext -layout	yes	no	high		form_feed_split
+705	705	pdftotext -layout	yes	no	high		form_feed_split
+706	706	pdftotext -layout	yes	no	high		form_feed_split
+707	707	pdftotext -layout	yes	no	high		form_feed_split
+708	708	pdftotext -layout	yes	no	high		form_feed_split
+709	709	pdftotext -layout	yes	no	high		form_feed_split
+710	710	pdftotext -layout	yes	no	high		form_feed_split
+711	711	pdftotext -layout	yes	no	high		form_feed_split
+712	712	pdftotext -layout	yes	no	high		form_feed_split
+713	713	pdftotext -layout	yes	no	high		form_feed_split
+714	714	pdftotext -layout	yes	no	high		form_feed_split
+715	715	pdftotext -layout	yes	no	high		form_feed_split
+716	716	pdftotext -layout	yes	no	high		form_feed_split
+717	717	pdftotext -layout	yes	no	high		form_feed_split
+718	718	pdftotext -layout	yes	no	high		form_feed_split
+719	719	pdftotext -layout	yes	no	high		form_feed_split
+720	720	pdftotext -layout	yes	no	high		form_feed_split
+721	721	pdftotext -layout	yes	no	high		form_feed_split
+722	722	pdftotext -layout	yes	no	high		form_feed_split
+723	723	pdftotext -layout	yes	no	high		form_feed_split
+724	724	pdftotext -layout	yes	no	high		form_feed_split
+725	725	pdftotext -layout	yes	no	high		form_feed_split
+726	726	pdftotext -layout	yes	no	high		form_feed_split
+727	727	pdftotext -layout	yes	no	high		form_feed_split
+728	728	pdftotext -layout	yes	no	high		form_feed_split
+729	729	pdftotext -layout	yes	no	high		form_feed_split
+730	730	pdftotext -layout	yes	no	high		form_feed_split
+731	731	pdftotext -layout	yes	no	high		form_feed_split
+732	732	pdftotext -layout	yes	no	high		form_feed_split
+733	733	pdftotext -layout	yes	no	high		form_feed_split
+734	734	pdftotext -layout	yes	no	high		form_feed_split
+735	735	pdftotext -layout	yes	no	high		form_feed_split
+736	736	pdftotext -layout	yes	no	high		form_feed_split
+737	737	pdftotext -layout	yes	no	high		form_feed_split
+738	738	pdftotext -layout	yes	no	high		form_feed_split
+739	739	pdftotext -layout	yes	no	high		form_feed_split
+740	740	pdftotext -layout	yes	no	high		form_feed_split
+741	741	pdftotext -layout	yes	no	high		form_feed_split
+742	742	pdftotext -layout	yes	no	high		form_feed_split
+743	743	pdftotext -layout	yes	no	high		form_feed_split
+744	744	pdftotext -layout	yes	no	high		form_feed_split
+745	745	pdftotext -layout	yes	no	high		form_feed_split
+746	746	pdftotext -layout	yes	no	high		form_feed_split
+747	747	pdftotext -layout	yes	no	high		form_feed_split
+748	748	pdftotext -layout	yes	no	high		form_feed_split
+749	749	pdftotext -layout	yes	no	high		form_feed_split
+750	750	pdftotext -layout	yes	no	high		form_feed_split
+751	751	pdftotext -layout	yes	no	high		form_feed_split
+752	752	pdftotext -layout	yes	no	high		form_feed_split
+753	753	pdftotext -layout	yes	no	high		form_feed_split
+754	754	pdftotext -layout	yes	no	high		form_feed_split
+755	755	pdftotext -layout	yes	no	high		form_feed_split
+756	756	pdftotext -layout	yes	no	high		form_feed_split
+757	757	pdftotext -layout	yes	no	high		form_feed_split
+758	758	pdftotext -layout	yes	no	high		form_feed_split
+759	759	pdftotext -layout	yes	no	high		form_feed_split
+760	760	pdftotext -layout	yes	no	high		form_feed_split
+761	761	pdftotext -layout	yes	no	high		form_feed_split
+762	762	pdftotext -layout	yes	no	high		form_feed_split
+763	763	pdftotext -layout	yes	no	high		form_feed_split
+764	764	pdftotext -layout	yes	no	high		form_feed_split
+765	765	pdftotext -layout	yes	no	high		form_feed_split
+766	766	pdftotext -layout	yes	no	high		form_feed_split
+767	767	pdftotext -layout	yes	no	high		form_feed_split
+768	768	pdftotext -layout	yes	no	high		form_feed_split
+769	769	pdftotext -layout	yes	no	high		form_feed_split
+770	770	pdftotext -layout	yes	no	high		form_feed_split
+771	771	pdftotext -layout	yes	no	high		form_feed_split
+772	772	pdftotext -layout	yes	no	high		form_feed_split
+773	773	pdftotext -layout	yes	no	high		form_feed_split
+774	774	pdftotext -layout	yes	no	high		form_feed_split
+775	775	pdftotext -layout	yes	no	high		form_feed_split
+776	776	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+777	777	pdftotext -layout	yes	no	high		form_feed_split
+778	778	pdftotext -layout	yes	no	high		form_feed_split
+779	779	pdftotext -layout	yes	no	high		form_feed_split
+780	780	pdftotext -layout	yes	no	high		form_feed_split
+781	781	pdftotext -layout	yes	no	high		form_feed_split
+782	782	pdftotext -layout	yes	no	high		form_feed_split
+783	783	pdftotext -layout	yes	no	high		form_feed_split
+784	784	pdftotext -layout	yes	no	high		form_feed_split
+785	785	pdftotext -layout	yes	no	high		form_feed_split
+786	786	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+787	787	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+788	788	pdftotext -layout	yes	no	high		form_feed_split
+789	789	pdftotext -layout	yes	no	high		form_feed_split
+790	790	pdftotext -layout	yes	no	high		form_feed_split
+791	791	pdftotext -layout	yes	no	high		form_feed_split
+792	792	pdftotext -layout	yes	no	high	Black Cube	form_feed_split
+793	793	pdftotext -layout	yes	no	high		form_feed_split
+794	794	pdftotext -layout	yes	no	high		form_feed_split
+795	795	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+796	796	pdftotext -layout	yes	no	high		form_feed_split
+797	797	pdftotext -layout	yes	no	high		form_feed_split
+798	798	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+799	799	pdftotext -layout	yes	no	high		form_feed_split
+800	800	pdftotext -layout	yes	no	high		form_feed_split
+801	801	pdftotext -layout	yes	no	high		form_feed_split
+802	802	pdftotext -layout	yes	no	high		form_feed_split
+803	803	pdftotext -layout	yes	no	high		form_feed_split
+804	804	pdftotext -layout	yes	no	high		form_feed_split
+805	805	pdftotext -layout	yes	no	high		form_feed_split
+806	806	pdftotext -layout	yes	no	high		form_feed_split
+807	807	pdftotext -layout	yes	no	high		form_feed_split
+808	808	pdftotext -layout	yes	no	high		form_feed_split
+809	809	pdftotext -layout	yes	no	high		form_feed_split
+810	810	pdftotext -layout	yes	no	high		form_feed_split
+811	811	pdftotext -layout	yes	no	high		form_feed_split
+812	812	pdftotext -layout	yes	no	high		form_feed_split
+813	813	pdftotext -layout	yes	no	high		form_feed_split
+814	814	pdftotext -layout	yes	no	high		form_feed_split
+815	815	pdftotext -layout	yes	no	high		form_feed_split
+816	816	pdftotext -layout	yes	no	high		form_feed_split
+817	817	pdftotext -layout	yes	no	high		form_feed_split
+818	818	pdftotext -layout	yes	no	high		form_feed_split
+819	819	pdftotext -layout	yes	no	high		form_feed_split
+820	820	pdftotext -layout	yes	no	high		form_feed_split
+821	821	pdftotext -layout	yes	no	high		form_feed_split
+822	822	pdftotext -layout	yes	no	high		form_feed_split
+823	823	pdftotext -layout	yes	no	high		form_feed_split
+824	824	pdftotext -layout	yes	no	high		form_feed_split
+825	825	pdftotext -layout	yes	no	high		form_feed_split
+826	826	pdftotext -layout	yes	no	high		form_feed_split
+827	827	pdftotext -layout	yes	no	high		form_feed_split
+828	828	pdftotext -layout	yes	no	high		form_feed_split
+829	829	pdftotext -layout	yes	no	high		form_feed_split
+830	830	pdftotext -layout	yes	no	high		form_feed_split
+831	831	pdftotext -layout	yes	no	high		form_feed_split
+832	832	pdftotext -layout	yes	no	high		form_feed_split
+833	833	pdftotext -layout	yes	no	high		form_feed_split
+834	834	pdftotext -layout	yes	no	high		form_feed_split
+835	835	pdftotext -layout	yes	no	high		form_feed_split
+836	836	pdftotext -layout	yes	no	high		form_feed_split
+837	837	pdftotext -layout	yes	no	high		form_feed_split
+838	838	pdftotext -layout	yes	no	high		form_feed_split
+839	839	pdftotext -layout	yes	no	high		form_feed_split
+840	840	pdftotext -layout	yes	no	high		form_feed_split
+841	841	pdftotext -layout	yes	no	high		form_feed_split
+842	842	pdftotext -layout	yes	no	high		form_feed_split
+843	843	pdftotext -layout	yes	no	high		form_feed_split
+844	844	pdftotext -layout	yes	no	high		form_feed_split
+845	845	pdftotext -layout	yes	no	high		form_feed_split
+846	846	pdftotext -layout	yes	no	high		form_feed_split
+847	847	pdftotext -layout	yes	no	high		form_feed_split
+848	848	pdftotext -layout	yes	no	high		form_feed_split
+849	849	pdftotext -layout	yes	no	high		form_feed_split
+850	850	pdftotext -layout	yes	no	high		form_feed_split
+851	851	pdftotext -layout	yes	no	high		form_feed_split
+852	852	pdftotext -layout	yes	no	high		form_feed_split
+853	853	pdftotext -layout	yes	no	high		form_feed_split
+854	854	pdftotext -layout	yes	no	high		form_feed_split
+855	855	pdftotext -layout	yes	no	high		form_feed_split
+856	856	pdftotext -layout	yes	no	high		form_feed_split
+857	857	pdftotext -layout	yes	no	high		form_feed_split
+858	858	pdftotext -layout	yes	no	high		form_feed_split
+859	859	pdftotext -layout	yes	no	high		form_feed_split
+860	860	pdftotext -layout	yes	no	high		form_feed_split
+861	861	pdftotext -layout	yes	no	high		form_feed_split
+862	862	pdftotext -layout	yes	no	high		form_feed_split
+863	863	pdftotext -layout	yes	no	high		form_feed_split
+864	864	pdftotext -layout	yes	no	high		form_feed_split
+865	865	pdftotext -layout	yes	no	high		form_feed_split
+866	866	pdftotext -layout	yes	no	high		form_feed_split
+867	867	pdftotext -layout	yes	no	high		form_feed_split
+868	868	pdftotext -layout	yes	no	high		form_feed_split
+869	869	pdftotext -layout	yes	no	high		form_feed_split
+870	870	pdftotext -layout	yes	no	high		form_feed_split
+871	871	pdftotext -layout	yes	no	high		form_feed_split
+872	872	pdftotext -layout	yes	no	high		form_feed_split
+873	873	pdftotext -layout	yes	no	high		form_feed_split
+874	874	pdftotext -layout	yes	no	high		form_feed_split
+875	875	pdftotext -layout	yes	no	high		form_feed_split
+876	876	pdftotext -layout	yes	no	high		form_feed_split
+877	877	pdftotext -layout	yes	no	high		form_feed_split
+878	878	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+879	879	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+880	880	pdftotext -layout	yes	no	high		form_feed_split
+881	881	pdftotext -layout	yes	no	high		form_feed_split
+882	882	pdftotext -layout	yes	no	high		form_feed_split
+883	883	pdftotext -layout	yes	no	high		form_feed_split
+884	884	pdftotext -layout	yes	no	high		form_feed_split
+885	885	pdftotext -layout	yes	no	high		form_feed_split
+886	886	pdftotext -layout	yes	no	high		form_feed_split
+887	887	pdftotext -layout	yes	no	high		form_feed_split
+888	888	pdftotext -layout	yes	no	high		form_feed_split
+889	889	pdftotext -layout	yes	no	high		form_feed_split
+890	890	pdftotext -layout	yes	no	high		form_feed_split
+891	891	pdftotext -layout	yes	no	high		form_feed_split
+892	892	pdftotext -layout	yes	no	high		form_feed_split
+893	893	pdftotext -layout	yes	no	high		form_feed_split
+894	894	pdftotext -layout	yes	no	high		form_feed_split
+895	895	pdftotext -layout	yes	no	high		form_feed_split
+896	896	pdftotext -layout	yes	no	high		form_feed_split
+897	897	pdftotext -layout	yes	no	high		form_feed_split
+898	898	pdftotext -layout	yes	no	high		form_feed_split
+899	899	pdftotext -layout	yes	no	high		form_feed_split
+900	900	pdftotext -layout	yes	no	high		form_feed_split
+901	901	pdftotext -layout	yes	no	high		form_feed_split
+902	902	pdftotext -layout	yes	no	high		form_feed_split
+903	903	pdftotext -layout	yes	no	high		form_feed_split
+904	904	pdftotext -layout	yes	no	high		form_feed_split
+905	905	pdftotext -layout	yes	no	high		form_feed_split
+906	906	pdftotext -layout	yes	no	high		form_feed_split
+907	907	pdftotext -layout	yes	no	high		form_feed_split
+908	908	pdftotext -layout	yes	no	high		form_feed_split
+909	909	pdftotext -layout	yes	no	high		form_feed_split
+910	910	pdftotext -layout	yes	no	high		form_feed_split
+911	911	pdftotext -layout	yes	no	high		form_feed_split
+912	912	pdftotext -layout	yes	no	high		form_feed_split
+913	913	pdftotext -layout	yes	no	high		form_feed_split
+914	914	pdftotext -layout	yes	no	high		form_feed_split
+915	915	pdftotext -layout	yes	no	high		form_feed_split
+916	916	pdftotext -layout	yes	no	high		form_feed_split
+917	917	pdftotext -layout	yes	no	high		form_feed_split
+918	918	pdftotext -layout	yes	no	high		form_feed_split
+919	919	pdftotext -layout	yes	no	high		form_feed_split
+920	920	pdftotext -layout	yes	no	high		form_feed_split
+921	921	pdftotext -layout	yes	no	high		form_feed_split
+922	922	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+923	923	pdftotext -layout	yes	no	high		form_feed_split
+924	924	pdftotext -layout	yes	no	high		form_feed_split
+925	925	pdftotext -layout	yes	no	high		form_feed_split
+926	926	pdftotext -layout	yes	no	high		form_feed_split
+927	927	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+928	928	pdftotext -layout	yes	no	high		form_feed_split
+929	929	pdftotext -layout	yes	no	high		form_feed_split
+930	930	pdftotext -layout	yes	no	high		form_feed_split
+931	931	pdftotext -layout	yes	no	high		form_feed_split
+932	932	pdftotext -layout	yes	no	high		form_feed_split
+933	933	pdftotext -layout	yes	no	high		form_feed_split
+934	934	pdftotext -layout	yes	no	high		form_feed_split
+935	935	pdftotext -layout	yes	no	high		form_feed_split
+936	936	pdftotext -layout	yes	no	high		form_feed_split
+937	937	pdftotext -layout	yes	no	high		form_feed_split
+938	938	pdftotext -layout	yes	no	high		form_feed_split
+939	939	pdftotext -layout	yes	no	high		form_feed_split
+940	940	pdftotext -layout	yes	no	high		form_feed_split
+941	941	pdftotext -layout	yes	no	high		form_feed_split
+942	942	pdftotext -layout	yes	no	high		form_feed_split
+943	943	pdftotext -layout	yes	no	high		form_feed_split
+944	944	pdftotext -layout	yes	no	high		form_feed_split
+945	945	pdftotext -layout	yes	no	high		form_feed_split
+946	946	pdftotext -layout	yes	no	high		form_feed_split
+947	947	pdftotext -layout	yes	no	high		form_feed_split
+948	948	pdftotext -layout	yes	no	high		form_feed_split
+949	949	pdftotext -layout	yes	no	high		form_feed_split
+950	950	pdftotext -layout	yes	no	high		form_feed_split
+951	951	pdftotext -layout	yes	no	high		form_feed_split
+952	952	pdftotext -layout	yes	no	high		form_feed_split
+953	953	pdftotext -layout	yes	no	high		form_feed_split
+954	954	pdftotext -layout	yes	no	high		form_feed_split
+955	955	pdftotext -layout	yes	no	high		form_feed_split
+956	956	pdftotext -layout	yes	no	high		form_feed_split
+957	957	pdftotext -layout	yes	no	high		form_feed_split
+958	958	pdftotext -layout	yes	no	high		form_feed_split
+959	959	pdftotext -layout	yes	no	high		form_feed_split
+960	960	pdftotext -layout	yes	no	high		form_feed_split
+961	961	pdftotext -layout	yes	no	high		form_feed_split
+962	962	pdftotext -layout	yes	no	high		form_feed_split
+963	963	pdftotext -layout	yes	no	high		form_feed_split
+964	964	pdftotext -layout	yes	no	high		form_feed_split
+965	965	pdftotext -layout	yes	no	high		form_feed_split
+966	966	pdftotext -layout	yes	no	high		form_feed_split
+967	967	pdftotext -layout	yes	no	high		form_feed_split
+968	968	pdftotext -layout	yes	no	high		form_feed_split
+969	969	pdftotext -layout	yes	no	high		form_feed_split
+970	970	pdftotext -layout	yes	no	high		form_feed_split
+971	971	pdftotext -layout	yes	no	high		form_feed_split
+972	972	pdftotext -layout	yes	no	high		form_feed_split
+973	973	pdftotext -layout	yes	no	high		form_feed_split
+974	974	pdftotext -layout	yes	no	high		form_feed_split
+975	975	pdftotext -layout	yes	no	high		form_feed_split
+976	976	pdftotext -layout	yes	no	high		form_feed_split
+977	977	pdftotext -layout	yes	no	high		form_feed_split
+978	978	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel	form_feed_split
+979	979	pdftotext -layout	yes	no	high		form_feed_split
+980	980	pdftotext -layout	yes	no	high		form_feed_split
+981	981	pdftotext -layout	yes	no	high		form_feed_split
+982	982	pdftotext -layout	yes	no	high		form_feed_split
+983	983	pdftotext -layout	yes	no	high		form_feed_split
+984	984	pdftotext -layout	yes	no	high		form_feed_split
+985	985	pdftotext -layout	yes	no	high		form_feed_split
+986	986	pdftotext -layout	yes	no	high		form_feed_split
+987	987	pdftotext -layout	yes	no	high		form_feed_split
+988	988	pdftotext -layout	yes	no	high		form_feed_split
+989	989	pdftotext -layout	yes	no	high		form_feed_split
+990	990	pdftotext -layout	yes	no	high		form_feed_split
+991	991	pdftotext -layout	yes	no	high		form_feed_split
+992	992	pdftotext -layout	yes	no	high		form_feed_split
+993	993	pdftotext -layout	yes	no	high		form_feed_split
+994	994	pdftotext -layout	yes	no	high		form_feed_split
+995	995	pdftotext -layout	yes	no	high		form_feed_split
+996	996	pdftotext -layout	yes	no	high		form_feed_split
+997	997	pdftotext -layout	yes	no	high		form_feed_split
+998	998	pdftotext -layout	yes	no	high		form_feed_split
+999	999	pdftotext -layout	yes	no	high		form_feed_split
+1000	1000	pdftotext -layout	yes	no	high		form_feed_split
+1001	1001	pdftotext -layout	yes	no	high		form_feed_split
+1002	1002	pdftotext -layout	yes	no	high		form_feed_split
+1003	1003	pdftotext -layout	yes	no	high		form_feed_split
+1004	1004	pdftotext -layout	yes	no	high		form_feed_split
+1005	1005	pdftotext -layout	yes	no	high		form_feed_split
+1006	1006	pdftotext -layout	yes	no	high		form_feed_split
+1007	1007	pdftotext -layout	yes	no	high		form_feed_split
+1008	1008	pdftotext -layout	yes	no	high		form_feed_split
+1009	1009	pdftotext -layout	yes	no	high		form_feed_split
+1010	1010	pdftotext -layout	yes	no	high		form_feed_split
+1011	1011	pdftotext -layout	yes	no	high		form_feed_split
+1012	1012	pdftotext -layout	yes	no	high	The Board	form_feed_split
+1013	1013	pdftotext -layout	yes	no	high		form_feed_split
+1014	1014	pdftotext -layout	yes	no	high		form_feed_split
+1015	1015	pdftotext -layout	yes	no	high		form_feed_split
+1016	1016	pdftotext -layout	yes	no	high	The Board	form_feed_split
+1017	1017	pdftotext -layout	yes	no	high		form_feed_split
+1018	1018	pdftotext -layout	yes	no	high		form_feed_split
+1019	1019	pdftotext -layout	yes	no	high		form_feed_split
+1020	1020	pdftotext -layout	yes	no	high		form_feed_split
+1021	1021	pdftotext -layout	yes	no	high		form_feed_split
+1022	1022	pdftotext -layout	yes	no	high		form_feed_split
+1023	1023	pdftotext -layout	yes	no	high		form_feed_split
+1024	1024	pdftotext -layout	yes	no	high		form_feed_split
+1025	1025	pdftotext -layout	yes	no	high		form_feed_split
+1026	1026	pdftotext -layout	yes	no	high		form_feed_split
+1027	1027	pdftotext -layout	yes	no	high		form_feed_split
+1028	1028	pdftotext -layout	yes	no	high		form_feed_split
+1029	1029	pdftotext -layout	yes	no	high		form_feed_split
+1030	1030	pdftotext -layout	yes	no	high		form_feed_split
+1031	1031	pdftotext -layout	yes	no	high		form_feed_split
+1032	1032	pdftotext -layout	yes	no	high		form_feed_split
+1033	1033	pdftotext -layout	yes	no	high		form_feed_split
+1034	1034	pdftotext -layout	yes	no	high		form_feed_split
+1035	1035	pdftotext -layout	yes	no	high		form_feed_split
+1036	1036	pdftotext -layout	yes	no	high	The Board	form_feed_split
+1037	1037	pdftotext -layout	yes	no	high		form_feed_split
+1038	1038	pdftotext -layout	yes	no	high		form_feed_split
+1039	1039	pdftotext -layout	yes	no	high		form_feed_split
+1040	1040	pdftotext -layout	yes	no	high		form_feed_split
+1041	1041	pdftotext -layout	yes	no	high		form_feed_split
+1042	1042	pdftotext -layout	yes	no	high		form_feed_split
+1043	1043	pdftotext -layout	yes	no	high		form_feed_split
+1044	1044	pdftotext -layout	yes	no	high		form_feed_split
+1045	1045	pdftotext -layout	yes	no	high		form_feed_split
+1046	1046	pdftotext -layout	yes	no	high		form_feed_split
+1047	1047	pdftotext -layout	yes	no	high		form_feed_split
+1048	1048	pdftotext -layout	yes	no	high		form_feed_split
+1049	1049	pdftotext -layout	yes	no	high		form_feed_split
+1050	1050	pdftotext -layout	yes	no	high		form_feed_split
+1051	1051	pdftotext -layout	yes	no	high		form_feed_split
+1052	1052	pdftotext -layout	yes	no	high		form_feed_split
+1053	1053	pdftotext -layout	yes	no	high		form_feed_split
+1054	1054	pdftotext -layout	yes	no	high		form_feed_split
+1055	1055	pdftotext -layout	yes	no	high		form_feed_split
+1056	1056	pdftotext -layout	yes	no	high		form_feed_split
+1057	1057	pdftotext -layout	yes	no	high		form_feed_split
+1058	1058	pdftotext -layout	yes	no	high		form_feed_split
+1059	1059	pdftotext -layout	yes	no	high		form_feed_split
+1060	1060	pdftotext -layout	yes	no	high		form_feed_split
+1061	1061	pdftotext -layout	yes	no	high		form_feed_split
+1062	1062	pdftotext -layout	yes	no	high	SWITCHMAN	form_feed_split
+1063	1063	pdftotext -layout	yes	no	high		form_feed_split
+1064	1064	pdftotext -layout	yes	no	high		form_feed_split
+1065	1065	pdftotext -layout	yes	no	high		form_feed_split
+1066	1066	pdftotext -layout	yes	no	high		form_feed_split
+1067	1067	pdftotext -layout	yes	no	high		form_feed_split
+1068	1068	pdftotext -layout	yes	no	high		form_feed_split
+1069	1069	pdftotext -layout	yes	no	high		form_feed_split
+1070	1070	pdftotext -layout	yes	no	high		form_feed_split
+1071	1071	pdftotext -layout	yes	no	high		form_feed_split
+1072	1072	pdftotext -layout	yes	no	high		form_feed_split
+1073	1073	pdftotext -layout	yes	no	high		form_feed_split
+1074	1074	pdftotext -layout	yes	no	high		form_feed_split
+1075	1075	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+1076	1076	pdftotext -layout	yes	no	high	Carbyne911; Carbyne; TerraMar	form_feed_split
+1077	1077	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1078	1078	pdftotext -layout	yes	no	high	MC2; NSO Group; Carbyne911; Carbyne; TerraMar	form_feed_split
+1079	1079	pdftotext -layout	yes	no	high		form_feed_split
+1080	1080	pdftotext -layout	yes	no	high	NSO Group; Carbyne911; Carbyne; TerraMar	form_feed_split
+1081	1081	pdftotext -layout	yes	no	high	MC2; Carbyne911; Carbyne	form_feed_split
+1082	1082	pdftotext -layout	yes	no	high		form_feed_split
+1083	1083	pdftotext -layout	yes	no	high		form_feed_split
+1084	1084	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+1085	1085	pdftotext -layout	yes	no	high		form_feed_split
+1086	1086	pdftotext -layout	yes	no	high		form_feed_split
+1087	1087	pdftotext -layout	yes	no	high		form_feed_split
+1088	1088	pdftotext -layout	yes	no	high		form_feed_split
+1089	1089	pdftotext -layout	yes	no	high		form_feed_split
+1090	1090	pdftotext -layout	yes	no	high		form_feed_split
+1091	1091	pdftotext -layout	yes	no	high		form_feed_split
+1092	1092	pdftotext -layout	yes	no	high		form_feed_split
+1093	1093	pdftotext -layout	yes	no	high		form_feed_split
+1094	1094	pdftotext -layout	yes	no	high		form_feed_split
+1095	1095	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1096	1096	pdftotext -layout	yes	no	high		form_feed_split
+1097	1097	pdftotext -layout	yes	no	high		form_feed_split
+1098	1098	pdftotext -layout	yes	no	high		form_feed_split
+1099	1099	pdftotext -layout	yes	no	high		form_feed_split
+1100	1100	pdftotext -layout	yes	no	high		form_feed_split
+1101	1101	pdftotext -layout	yes	no	high		form_feed_split
+1102	1102	pdftotext -layout	yes	no	high		form_feed_split
+1103	1103	pdftotext -layout	yes	no	high		form_feed_split
+1104	1104	pdftotext -layout	yes	no	high		form_feed_split
+1105	1105	pdftotext -layout	yes	no	high		form_feed_split
+1106	1106	pdftotext -layout	yes	no	high		form_feed_split
+1107	1107	pdftotext -layout	yes	no	high		form_feed_split
+1108	1108	pdftotext -layout	yes	no	high		form_feed_split
+1109	1109	pdftotext -layout	yes	no	high		form_feed_split
+1110	1110	pdftotext -layout	yes	no	high		form_feed_split
+1111	1111	pdftotext -layout	yes	no	high		form_feed_split
+1112	1112	pdftotext -layout	yes	no	high		form_feed_split
+1113	1113	pdftotext -layout	yes	no	high		form_feed_split
+1114	1114	pdftotext -layout	yes	no	high		form_feed_split
+1115	1115	pdftotext -layout	yes	no	high		form_feed_split
+1116	1116	pdftotext -layout	yes	no	high		form_feed_split
+1117	1117	pdftotext -layout	yes	no	high		form_feed_split
+1118	1118	pdftotext -layout	yes	no	high		form_feed_split
+1119	1119	pdftotext -layout	yes	no	high		form_feed_split
+1120	1120	pdftotext -layout	yes	no	high		form_feed_split
+1121	1121	pdftotext -layout	yes	no	high		form_feed_split
+1122	1122	pdftotext -layout	yes	no	high		form_feed_split
+1123	1123	pdftotext -layout	yes	no	high		form_feed_split
+1124	1124	pdftotext -layout	yes	no	high		form_feed_split
+1125	1125	pdftotext -layout	yes	no	high		form_feed_split
+1126	1126	pdftotext -layout	yes	no	high		form_feed_split
+1127	1127	pdftotext -layout	yes	no	high		form_feed_split
+1128	1128	pdftotext -layout	yes	no	high		form_feed_split
+1129	1129	pdftotext -layout	yes	no	high		form_feed_split
+1130	1130	pdftotext -layout	yes	no	high		form_feed_split
+1131	1131	pdftotext -layout	yes	no	high		form_feed_split
+1132	1132	pdftotext -layout	yes	no	high		form_feed_split
+1133	1133	pdftotext -layout	yes	no	high		form_feed_split
+1134	1134	pdftotext -layout	yes	no	high		form_feed_split
+1135	1135	pdftotext -layout	yes	no	high		form_feed_split
+1136	1136	pdftotext -layout	yes	no	high		form_feed_split
+1137	1137	pdftotext -layout	yes	no	high		form_feed_split
+1138	1138	pdftotext -layout	yes	no	high		form_feed_split
+1139	1139	pdftotext -layout	yes	no	high		form_feed_split
+1140	1140	pdftotext -layout	yes	no	high		form_feed_split
+1141	1141	pdftotext -layout	yes	no	high		form_feed_split
+1142	1142	pdftotext -layout	yes	no	high		form_feed_split
+1143	1143	pdftotext -layout	yes	no	high		form_feed_split
+1144	1144	pdftotext -layout	yes	no	high		form_feed_split
+1145	1145	pdftotext -layout	yes	no	high		form_feed_split
+1146	1146	pdftotext -layout	yes	no	high		form_feed_split
+1147	1147	pdftotext -layout	yes	no	high		form_feed_split
+1148	1148	pdftotext -layout	yes	no	high		form_feed_split
+1149	1149	pdftotext -layout	yes	no	high		form_feed_split
+1150	1150	pdftotext -layout	yes	no	high		form_feed_split
+1151	1151	pdftotext -layout	yes	no	high		form_feed_split
+1152	1152	pdftotext -layout	yes	no	high		form_feed_split
+1153	1153	pdftotext -layout	yes	no	high		form_feed_split
+1154	1154	pdftotext -layout	yes	no	high		form_feed_split
+1155	1155	pdftotext -layout	yes	no	high		form_feed_split
+1156	1156	pdftotext -layout	yes	no	high		form_feed_split
+1157	1157	pdftotext -layout	yes	no	high		form_feed_split
+1158	1158	pdftotext -layout	yes	no	high		form_feed_split
+1159	1159	pdftotext -layout	yes	no	high		form_feed_split
+1160	1160	pdftotext -layout	yes	no	high		form_feed_split
+1161	1161	pdftotext -layout	yes	no	high		form_feed_split
+1162	1162	pdftotext -layout	yes	no	high		form_feed_split
+1163	1163	pdftotext -layout	yes	no	high		form_feed_split
+1164	1164	pdftotext -layout	yes	no	high		form_feed_split
+1165	1165	pdftotext -layout	yes	no	high		form_feed_split
+1166	1166	pdftotext -layout	yes	no	high		form_feed_split
+1167	1167	pdftotext -layout	yes	no	high		form_feed_split
+1168	1168	pdftotext -layout	yes	no	high		form_feed_split
+1169	1169	pdftotext -layout	yes	no	high		form_feed_split
+1170	1170	pdftotext -layout	yes	no	high		form_feed_split
+1171	1171	pdftotext -layout	yes	no	high		form_feed_split
+1172	1172	pdftotext -layout	yes	no	high		form_feed_split
+1173	1173	pdftotext -layout	yes	no	high		form_feed_split
+1174	1174	pdftotext -layout	yes	no	high		form_feed_split
+1175	1175	pdftotext -layout	yes	no	high		form_feed_split
+1176	1176	pdftotext -layout	yes	no	high		form_feed_split
+1177	1177	pdftotext -layout	yes	no	high		form_feed_split
+1178	1178	pdftotext -layout	yes	no	high		form_feed_split
+1179	1179	pdftotext -layout	yes	no	high		form_feed_split
+1180	1180	pdftotext -layout	yes	no	high		form_feed_split
+1181	1181	pdftotext -layout	yes	no	high		form_feed_split
+1182	1182	pdftotext -layout	yes	no	high		form_feed_split
+1183	1183	pdftotext -layout	yes	no	high		form_feed_split
+1184	1184	pdftotext -layout	yes	no	high		form_feed_split
+1185	1185	pdftotext -layout	yes	no	high		form_feed_split
+1186	1186	pdftotext -layout	yes	no	high		form_feed_split
+1187	1187	pdftotext -layout	yes	no	high		form_feed_split
+1188	1188	pdftotext -layout	yes	no	high		form_feed_split
+1189	1189	pdftotext -layout	yes	no	high		form_feed_split
+1190	1190	pdftotext -layout	yes	no	high		form_feed_split
+1191	1191	pdftotext -layout	yes	no	high		form_feed_split
+1192	1192	pdftotext -layout	yes	no	high		form_feed_split
+1193	1193	pdftotext -layout	yes	no	high		form_feed_split
+1194	1194	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1195	1195	pdftotext -layout	yes	no	high		form_feed_split
+1196	1196	pdftotext -layout	yes	no	high		form_feed_split
+1197	1197	pdftotext -layout	yes	no	high		form_feed_split
+1198	1198	pdftotext -layout	yes	no	high		form_feed_split
+1199	1199	pdftotext -layout	yes	no	high		form_feed_split
+1200	1200	pdftotext -layout	yes	no	high		form_feed_split
+1201	1201	pdftotext -layout	yes	no	high		form_feed_split
+1202	1202	pdftotext -layout	yes	no	high		form_feed_split
+1203	1203	pdftotext -layout	yes	no	high		form_feed_split
+1204	1204	pdftotext -layout	yes	no	high		form_feed_split
+1205	1205	pdftotext -layout	yes	no	high		form_feed_split
+1206	1206	pdftotext -layout	yes	no	high		form_feed_split
+1207	1207	pdftotext -layout	yes	no	high		form_feed_split
+1208	1208	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+1209	1209	pdftotext -layout	yes	no	high		form_feed_split
+1210	1210	pdftotext -layout	yes	no	high		form_feed_split
+1211	1211	pdftotext -layout	yes	no	high		form_feed_split
+1212	1212	pdftotext -layout	yes	no	high	Carbyne911; Carbyne; Black Cube	form_feed_split
+1213	1213	pdftotext -layout	yes	no	high		form_feed_split
+1214	1214	pdftotext -layout	yes	no	high		form_feed_split
+1215	1215	pdftotext -layout	yes	no	high		form_feed_split
+1216	1216	pdftotext -layout	yes	no	high		form_feed_split
+1217	1217	pdftotext -layout	yes	no	high		form_feed_split
+1218	1218	pdftotext -layout	yes	no	high		form_feed_split
+1219	1219	pdftotext -layout	yes	no	high		form_feed_split
+1220	1220	pdftotext -layout	yes	no	high		form_feed_split
+1221	1221	pdftotext -layout	yes	no	high		form_feed_split
+1222	1222	pdftotext -layout	yes	no	high		form_feed_split
+1223	1223	pdftotext -layout	yes	no	high		form_feed_split
+1224	1224	pdftotext -layout	yes	no	high		form_feed_split
+1225	1225	pdftotext -layout	yes	no	high		form_feed_split
+1226	1226	pdftotext -layout	yes	no	high		form_feed_split
+1227	1227	pdftotext -layout	yes	no	high		form_feed_split
+1228	1228	pdftotext -layout	yes	no	high		form_feed_split
+1229	1229	pdftotext -layout	yes	no	high		form_feed_split
+1230	1230	pdftotext -layout	yes	no	high		form_feed_split
+1231	1231	pdftotext -layout	yes	no	high		form_feed_split
+1232	1232	pdftotext -layout	yes	no	high		form_feed_split
+1233	1233	pdftotext -layout	yes	no	high		form_feed_split
+1234	1234	pdftotext -layout	yes	no	high		form_feed_split
+1235	1235	pdftotext -layout	yes	no	high		form_feed_split
+1236	1236	pdftotext -layout	yes	no	high		form_feed_split
+1237	1237	pdftotext -layout	yes	no	high		form_feed_split
+1238	1238	pdftotext -layout	yes	no	high		form_feed_split
+1239	1239	pdftotext -layout	yes	no	high		form_feed_split
+1240	1240	pdftotext -layout	yes	no	high		form_feed_split
+1241	1241	pdftotext -layout	yes	no	high		form_feed_split
+1242	1242	pdftotext -layout	yes	no	high		form_feed_split
+1243	1243	pdftotext -layout	yes	no	high		form_feed_split
+1244	1244	pdftotext -layout	yes	no	high		form_feed_split
+1245	1245	pdftotext -layout	yes	no	high		form_feed_split
+1246	1246	pdftotext -layout	yes	no	high		form_feed_split
+1247	1247	pdftotext -layout	yes	no	high		form_feed_split
+1248	1248	pdftotext -layout	yes	no	high		form_feed_split
+1249	1249	pdftotext -layout	yes	no	high		form_feed_split
+1250	1250	pdftotext -layout	yes	no	high		form_feed_split
+1251	1251	pdftotext -layout	yes	no	high		form_feed_split
+1252	1252	pdftotext -layout	yes	no	high		form_feed_split
+1253	1253	pdftotext -layout	yes	no	high		form_feed_split
+1254	1254	pdftotext -layout	yes	no	high		form_feed_split
+1255	1255	pdftotext -layout	yes	no	high		form_feed_split
+1256	1256	pdftotext -layout	yes	no	high		form_feed_split
+1257	1257	pdftotext -layout	yes	no	high		form_feed_split
+1258	1258	pdftotext -layout	yes	no	high		form_feed_split
+1259	1259	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel; Glenn Dubin; MC2	form_feed_split
+1260	1260	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Leon Black; Bill Clinton; Alan Dershowitz; Prince Andrew; Sarah Kellen	form_feed_split
+1261	1261	pdftotext -layout	yes	no	high	Ehud Barak; Carbyne911; Carbyne; TerraMar	form_feed_split
+1262	1262	pdftotext -layout	yes	no	high		form_feed_split
+1263	1263	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel; Glenn Dubin; MC2	form_feed_split
+1264	1264	pdftotext -layout	yes	no	high	Bill Clinton; Alan Dershowitz; Prince Andrew; Virginia Giuffre	form_feed_split
+1265	1265	pdftotext -layout	yes	no	high	Ehud Barak; Leon Black; Sarah Kellen; Carbyne911; Carbyne; TerraMar	form_feed_split
+1266	1266	pdftotext -layout	yes	no	high		form_feed_split
+1267	1267	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Bill Clinton	form_feed_split
+1268	1268	pdftotext -layout	yes	no	high		form_feed_split
+1269	1269	pdftotext -layout	yes	no	high		form_feed_split
+1270	1270	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1271	1271	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1272	1272	pdftotext -layout	yes	no	high		form_feed_split
+1273	1273	pdftotext -layout	yes	no	high	Carbyne	form_feed_split
+1274	1274	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1275	1275	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1276	1276	pdftotext -layout	yes	no	high		form_feed_split
+1277	1277	pdftotext -layout	yes	no	high		form_feed_split
+1278	1278	pdftotext -layout	yes	no	high		form_feed_split
+1279	1279	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1280	1280	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2	form_feed_split
+1281	1281	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1282	1282	pdftotext -layout	yes	no	high	Ehud Barak; Carbyne911; Carbyne	form_feed_split
+1283	1283	pdftotext -layout	yes	no	high	Glenn Dubin	form_feed_split
+1284	1284	pdftotext -layout	yes	no	high	Bill Clinton	form_feed_split
+1285	1285	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1286	1286	pdftotext -layout	yes	no	high	Alan Dershowitz	form_feed_split
+1287	1287	pdftotext -layout	yes	no	high	Leon Black	form_feed_split
+1288	1288	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1289	1289	pdftotext -layout	yes	no	high		form_feed_split
+1290	1290	pdftotext -layout	yes	no	high	Carbyne911; Carbyne; TerraMar	form_feed_split
+1291	1291	pdftotext -layout	yes	no	high		form_feed_split
+1292	1292	pdftotext -layout	yes	no	high		form_feed_split
+1293	1293	pdftotext -layout	yes	no	high		form_feed_split
+1294	1294	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Prince Andrew	form_feed_split
+1295	1295	pdftotext -layout	yes	no	high	Ehud Barak; Bill Clinton; Alan Dershowitz	form_feed_split
+1296	1296	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Sarah Kellen	form_feed_split
+1297	1297	pdftotext -layout	yes	no	high		form_feed_split
+1298	1298	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1299	1299	pdftotext -layout	yes	no	high		form_feed_split
+1300	1300	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1301	1301	pdftotext -layout	yes	no	high		form_feed_split
+1302	1302	pdftotext -layout	yes	no	high		form_feed_split
+1303	1303	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Prince Andrew	form_feed_split
+1304	1304	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1305	1305	pdftotext -layout	yes	no	high	Bill Clinton	form_feed_split
+1306	1306	pdftotext -layout	yes	no	high	Ehud Barak; Glenn Dubin	form_feed_split
+1307	1307	pdftotext -layout	yes	no	high	Leon Black; Alan Dershowitz	form_feed_split
+1308	1308	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel; Virginia Giuffre	form_feed_split
+1309	1309	pdftotext -layout	yes	no	high	Bill Clinton; Prince Andrew; Sarah Kellen	form_feed_split
+1310	1310	pdftotext -layout	yes	no	high	Ehud Barak; Glenn Dubin; Sarah Kellen	form_feed_split
+1311	1311	pdftotext -layout	yes	no	high	Alan Dershowitz	form_feed_split
+1312	1312	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1313	1313	pdftotext -layout	yes	no	high	Ehud Barak; Leon Black; Prince Andrew	form_feed_split
+1314	1314	pdftotext -layout	yes	no	high		form_feed_split
+1315	1315	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; MC2	form_feed_split
+1316	1316	pdftotext -layout	yes	no	high	Prince Andrew; Sarah Kellen	form_feed_split
+1317	1317	pdftotext -layout	yes	no	high	Ehud Barak; Bill Clinton	form_feed_split
+1318	1318	pdftotext -layout	yes	no	high	Leon Black; Alan Dershowitz; Glenn Dubin	form_feed_split
+1319	1319	pdftotext -layout	yes	no	high	Carbyne911; Carbyne; TerraMar	form_feed_split
+1320	1320	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1321	1321	pdftotext -layout	yes	no	high		form_feed_split
+1322	1322	pdftotext -layout	yes	no	high		form_feed_split
+1323	1323	pdftotext -layout	yes	no	high		form_feed_split
+1324	1324	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Alan Dershowitz	form_feed_split
+1325	1325	pdftotext -layout	yes	no	high	Maria Farmer	form_feed_split
+1326	1326	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1327	1327	pdftotext -layout	yes	no	high		form_feed_split
+1328	1328	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1329	1329	pdftotext -layout	yes	no	high	Lesley Groff	form_feed_split
+1330	1330	pdftotext -layout	yes	no	high		form_feed_split
+1331	1331	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1332	1332	pdftotext -layout	yes	no	high		form_feed_split
+1333	1333	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1334	1334	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1335	1335	pdftotext -layout	yes	no	high		form_feed_split
+1336	1336	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2	form_feed_split
+1337	1337	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1338	1338	pdftotext -layout	yes	no	high		form_feed_split
+1339	1339	pdftotext -layout	yes	no	high	Prince Andrew; Virginia Giuffre	form_feed_split
+1340	1340	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1341	1341	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1342	1342	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1343	1343	pdftotext -layout	yes	no	high		form_feed_split
+1344	1344	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1345	1345	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1346	1346	pdftotext -layout	yes	no	high	Carbyne911; Carbyne	form_feed_split
+1347	1347	pdftotext -layout	yes	no	high		form_feed_split
+1348	1348	pdftotext -layout	yes	no	high		form_feed_split
+1349	1349	pdftotext -layout	yes	no	high		form_feed_split
+1350	1350	pdftotext -layout	yes	no	high		form_feed_split
+1351	1351	pdftotext -layout	yes	no	high		form_feed_split
+1352	1352	pdftotext -layout	yes	no	high		form_feed_split
+1353	1353	pdftotext -layout	yes	no	high		form_feed_split
+1354	1354	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+1355	1355	pdftotext -layout	yes	no	high		form_feed_split
+1356	1356	pdftotext -layout	yes	no	high		form_feed_split
+1357	1357	pdftotext -layout	yes	no	high		form_feed_split
+1358	1358	pdftotext -layout	yes	no	high		form_feed_split
+1359	1359	pdftotext -layout	yes	no	high		form_feed_split
+1360	1360	pdftotext -layout	yes	no	high	NSO Group	form_feed_split
+1361	1361	pdftotext -layout	yes	no	high		form_feed_split
+1362	1362	pdftotext -layout	yes	no	high		form_feed_split
+1363	1363	pdftotext -layout	yes	no	high		form_feed_split
+1364	1364	pdftotext -layout	yes	no	high		form_feed_split
+1365	1365	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2	form_feed_split
+1366	1366	pdftotext -layout	yes	no	high		form_feed_split
+1367	1367	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1368	1368	pdftotext -layout	yes	no	high		form_feed_split
+1369	1369	pdftotext -layout	yes	no	high	Prince Andrew	form_feed_split
+1370	1370	pdftotext -layout	yes	no	high		form_feed_split
+1371	1371	pdftotext -layout	yes	no	high		form_feed_split
+1372	1372	pdftotext -layout	yes	no	high		form_feed_split
+1373	1373	pdftotext -layout	yes	no	high		form_feed_split
+1374	1374	pdftotext -layout	yes	no	high		form_feed_split
+1375	1375	pdftotext -layout	yes	no	high		form_feed_split
+1376	1376	pdftotext -layout	yes	no	high		form_feed_split
+1377	1377	pdftotext -layout	yes	no	high		form_feed_split
+1378	1378	pdftotext -layout	yes	no	high		form_feed_split
+1379	1379	pdftotext -layout	yes	no	high	Leon Black	form_feed_split
+1380	1380	pdftotext -layout	yes	no	high		form_feed_split
+1381	1381	pdftotext -layout	yes	no	high		form_feed_split
+1382	1382	pdftotext -layout	yes	no	high	Jean-Luc Brunel	form_feed_split
+1383	1383	pdftotext -layout	yes	no	high		form_feed_split
+1384	1384	pdftotext -layout	yes	no	high		form_feed_split
+1385	1385	pdftotext -layout	yes	no	high		form_feed_split
+1386	1386	pdftotext -layout	yes	no	high		form_feed_split
+1387	1387	pdftotext -layout	yes	no	high	Leon Black	form_feed_split
+1388	1388	pdftotext -layout	yes	no	high		form_feed_split
+1389	1389	pdftotext -layout	yes	no	high		form_feed_split
+1390	1390	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1391	1391	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1392	1392	pdftotext -layout	yes	no	high		form_feed_split
+1393	1393	pdftotext -layout	yes	no	high		form_feed_split
+1394	1394	pdftotext -layout	yes	no	high		form_feed_split
+1395	1395	pdftotext -layout	yes	no	high		form_feed_split
+1396	1396	pdftotext -layout	yes	no	high		form_feed_split
+1397	1397	pdftotext -layout	yes	no	high		form_feed_split
+1398	1398	pdftotext -layout	yes	no	high		form_feed_split
+1399	1399	pdftotext -layout	yes	no	high		form_feed_split
+1400	1400	pdftotext -layout	yes	no	high		form_feed_split
+1401	1401	pdftotext -layout	yes	no	high		form_feed_split
+1402	1402	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2	form_feed_split
+1403	1403	pdftotext -layout	yes	no	high		form_feed_split
+1404	1404	pdftotext -layout	yes	no	high		form_feed_split
+1405	1405	pdftotext -layout	yes	no	high		form_feed_split
+1406	1406	pdftotext -layout	yes	no	high		form_feed_split
+1407	1407	pdftotext -layout	yes	no	high		form_feed_split
+1408	1408	pdftotext -layout	yes	no	high		form_feed_split
+1409	1409	pdftotext -layout	yes	no	high		form_feed_split
+1410	1410	pdftotext -layout	yes	no	high	Alan Dershowitz; Prince Andrew; Virginia Giuffre	form_feed_split
+1411	1411	pdftotext -layout	yes	no	high		form_feed_split
+1412	1412	pdftotext -layout	yes	no	high		form_feed_split
+1413	1413	pdftotext -layout	yes	no	high		form_feed_split
+1414	1414	pdftotext -layout	yes	no	high		form_feed_split
+1415	1415	pdftotext -layout	yes	no	high	Sarah Kellen; Lesley Groff	form_feed_split
+1416	1416	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel	form_feed_split
+1417	1417	pdftotext -layout	yes	no	high		form_feed_split
+1418	1418	pdftotext -layout	yes	no	high		form_feed_split
+1419	1419	pdftotext -layout	yes	no	high		form_feed_split
+1420	1420	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Bill Clinton; Alan Dershowitz; Prince Andrew; Virginia Giuffre	form_feed_split
+1421	1421	pdftotext -layout	yes	no	high		form_feed_split
+1422	1422	pdftotext -layout	yes	no	high		form_feed_split
+1423	1423	pdftotext -layout	yes	no	high		form_feed_split
+1424	1424	pdftotext -layout	yes	no	high		form_feed_split
+1425	1425	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel	form_feed_split
+1426	1426	pdftotext -layout	yes	no	high		form_feed_split
+1427	1427	pdftotext -layout	yes	no	high		form_feed_split
+1428	1428	pdftotext -layout	yes	no	high		form_feed_split
+1429	1429	pdftotext -layout	yes	no	high		form_feed_split
+1430	1430	pdftotext -layout	yes	no	high	Ehud Barak; Bill Gates	form_feed_split
+1431	1431	pdftotext -layout	yes	no	high		form_feed_split
+1432	1432	pdftotext -layout	yes	no	high		form_feed_split
+1433	1433	pdftotext -layout	yes	no	high		form_feed_split
+1434	1434	pdftotext -layout	yes	no	high	Ghislaine Maxwell; TerraMar	form_feed_split
+1435	1435	pdftotext -layout	yes	no	high	Virginia Giuffre	form_feed_split
+1436	1436	pdftotext -layout	yes	no	high	Sarah Kellen; Maria Farmer; Jennifer Araoz; Courtney Wild	form_feed_split
+1437	1437	pdftotext -layout	yes	no	high		form_feed_split
+1438	1438	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Sarah Kellen	form_feed_split
+1439	1439	pdftotext -layout	yes	no	high	Ehud Barak; Leon Black; Bill Clinton; Prince Andrew; Glenn Dubin	form_feed_split
+1440	1440	pdftotext -layout	yes	no	high	Alan Dershowitz; Alexander Acosta	form_feed_split
+1441	1441	pdftotext -layout	yes	no	high		form_feed_split
+1442	1442	pdftotext -layout	yes	no	high		form_feed_split
+1443	1443	pdftotext -layout	yes	no	high		form_feed_split
+1444	1444	pdftotext -layout	yes	no	high		form_feed_split
+1445	1445	pdftotext -layout	yes	no	high		form_feed_split
+1446	1446	pdftotext -layout	yes	no	high		form_feed_split
+1447	1447	pdftotext -layout	yes	no	high		form_feed_split
+1448	1448	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Sarah Kellen; Lesley Groff	form_feed_split
+1449	1449	pdftotext -layout	yes	no	high	Ehud Barak; Bill Clinton; Alan Dershowitz; Bill Gates; Prince Andrew; Glenn Dubin	form_feed_split
+1450	1450	pdftotext -layout	yes	no	high	Leon Black	form_feed_split
+1451	1451	pdftotext -layout	yes	no	high	Jean-Luc Brunel	form_feed_split
+1452	1452	pdftotext -layout	yes	no	high		form_feed_split
+1453	1453	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1454	1454	pdftotext -layout	yes	no	high		form_feed_split
+1455	1455	pdftotext -layout	yes	no	high		form_feed_split
+1456	1456	pdftotext -layout	yes	no	high		form_feed_split
+1457	1457	pdftotext -layout	yes	no	high	Sarah Kellen; Lesley Groff	form_feed_split
+1458	1458	pdftotext -layout	yes	no	high		form_feed_split
+1459	1459	pdftotext -layout	yes	no	high	Leon Black; Glenn Dubin	form_feed_split
+1460	1460	pdftotext -layout	yes	no	high	Alan Dershowitz; Tom Pritzker	form_feed_split
+1461	1461	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1462	1462	pdftotext -layout	yes	no	high		form_feed_split
+1463	1463	pdftotext -layout	yes	no	high		form_feed_split
+1464	1464	pdftotext -layout	yes	no	high		form_feed_split
+1465	1465	pdftotext -layout	yes	no	high		form_feed_split
+1466	1466	pdftotext -layout	yes	no	high	Bill Clinton; Donald Trump	form_feed_split
+1467	1467	pdftotext -layout	yes	no	high	Ehud Barak; Prince Andrew; George Mitchell; Bill Richardson	form_feed_split
+1468	1468	pdftotext -layout	yes	no	high	Jean-Luc Brunel; Alexander Acosta	form_feed_split
+1469	1469	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1470	1470	pdftotext -layout	yes	no	high		form_feed_split
+1471	1471	pdftotext -layout	yes	no	high		form_feed_split
+1472	1472	pdftotext -layout	yes	no	high	Ehud Barak; Bill Clinton; Alan Dershowitz; Prince Andrew; Glenn Dubin	form_feed_split
+1473	1473	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel	form_feed_split
+1474	1474	pdftotext -layout	yes	no	high	Bill Gates	form_feed_split
+1475	1475	pdftotext -layout	yes	no	high		form_feed_split
+1476	1476	pdftotext -layout	yes	no	high		form_feed_split
+1477	1477	pdftotext -layout	yes	no	high		form_feed_split
+1478	1478	pdftotext -layout	yes	no	high	Virginia Giuffre; Maria Farmer	form_feed_split
+1479	1479	pdftotext -layout	yes	no	high	Jennifer Araoz; Courtney Wild	form_feed_split
+1480	1480	pdftotext -layout	yes	no	high		form_feed_split
+1481	1481	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1482	1482	pdftotext -layout	yes	no	high		form_feed_split
+1483	1483	pdftotext -layout	yes	no	high		form_feed_split
+1484	1484	pdftotext -layout	yes	no	high		form_feed_split
+1485	1485	pdftotext -layout	yes	no	high		form_feed_split
+1486	1486	pdftotext -layout	yes	no	high		form_feed_split
+1487	1487	pdftotext -layout	yes	no	high		form_feed_split
+1488	1488	pdftotext -layout	yes	no	high		form_feed_split
+1489	1489	pdftotext -layout	yes	no	high		form_feed_split
+1490	1490	pdftotext -layout	yes	no	high		form_feed_split
+1491	1491	pdftotext -layout	yes	no	high		form_feed_split
+1492	1492	pdftotext -layout	yes	no	high		form_feed_split
+1493	1493	pdftotext -layout	yes	no	high	Darren Indyke	form_feed_split
+1494	1494	pdftotext -layout	yes	no	high	Jean-Luc Brunel; Glenn Dubin; MC2	form_feed_split
+1495	1495	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Bill Clinton; Donald Trump; Alan Dershowitz; Prince Andrew; Ken Starr; Virginia Giuffre	form_feed_split
+1496	1496	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Prince Andrew; Virginia Giuffre; NSO Group; Carbyne911; Carbyne; Black Cube	form_feed_split
+1497	1497	pdftotext -layout	yes	no	high	Prince Andrew; Maria Farmer; Carbyne911; Carbyne	form_feed_split
+1498	1498	pdftotext -layout	yes	no	high	Jennifer Araoz; Courtney Wild	form_feed_split
+1499	1499	pdftotext -layout	yes	no	high	Prince Andrew; Virginia Giuffre; Maria Farmer; Jennifer Araoz; Courtney Wild; Carbyne911; Carbyne	form_feed_split
+1500	1500	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Maria Farmer	form_feed_split
+1501	1501	pdftotext -layout	yes	no	high	Jean-Luc Brunel; Alan Dershowitz; Prince Andrew; Sarah Kellen; Virginia Giuffre	form_feed_split
+1502	1502	pdftotext -layout	yes	no	high	Ehud Barak; Bill Clinton; Donald Trump; George Mitchell; Bill Richardson	form_feed_split
+1503	1503	pdftotext -layout	yes	no	high	Leon Black; Bill Gates; Glenn Dubin; Larry Summers; Tom Pritzker	form_feed_split
+1504	1504	pdftotext -layout	yes	no	high		form_feed_split
+1505	1505	pdftotext -layout	yes	no	high	Ken Starr	form_feed_split
+1506	1506	pdftotext -layout	yes	no	high	MC2; NSO Group; Carbyne911; Carbyne	form_feed_split
+1507	1507	pdftotext -layout	yes	no	high	Virginia Giuffre	form_feed_split
+1508	1508	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Bill Clinton; Donald Trump; Alan Dershowitz; Prince Andrew; Glenn Dubin; George Mitchell; Bill Richardson; Maria Farmer	form_feed_split
+1509	1509	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Bill Clinton; Prince Andrew	form_feed_split
+1510	1510	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Leon Black; Jean-Luc Brunel; Bill Clinton; Alan Dershowitz; Prince Andrew; Glenn Dubin	form_feed_split
+1511	1511	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Donald Trump; Glenn Dubin; Bill Richardson	form_feed_split
+1512	1512	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Sarah Kellen	form_feed_split
+1513	1513	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Sarah Kellen; MC2	form_feed_split
+1514	1514	pdftotext -layout	yes	no	high	Leon Black; Jean-Luc Brunel; Bill Clinton; Glenn Dubin; MC2	form_feed_split
+1515	1515	pdftotext -layout	yes	no	high		form_feed_split
+1516	1516	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Prince Andrew; Glenn Dubin; MC2	form_feed_split
+1517	1517	pdftotext -layout	yes	no	high	Leon Black; Bill Clinton; Donald Trump; Alan Dershowitz; Bill Richardson; Sarah Kellen	form_feed_split
+1518	1518	pdftotext -layout	yes	no	high	Ehud Barak	form_feed_split
+1519	1519	pdftotext -layout	yes	no	high		form_feed_split
+1520	1520	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; MC2; Carbyne911; Carbyne	form_feed_split
+1521	1521	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1522	1522	pdftotext -layout	yes	no	high	Leon Black; Bill Gates; Glenn Dubin	form_feed_split
+1523	1523	pdftotext -layout	yes	no	high	Bill Clinton; Donald Trump; Alan Dershowitz; Prince Andrew; Bill Richardson; Virginia Giuffre	form_feed_split
+1524	1524	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1525	1525	pdftotext -layout	yes	no	high		form_feed_split
+1526	1526	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; MC2	form_feed_split
+1527	1527	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1528	1528	pdftotext -layout	yes	no	high		form_feed_split
+1529	1529	pdftotext -layout	yes	no	high		form_feed_split
+1530	1530	pdftotext -layout	yes	no	high		form_feed_split
+1531	1531	pdftotext -layout	yes	no	high		form_feed_split
+1532	1532	pdftotext -layout	yes	no	high		form_feed_split
+1533	1533	pdftotext -layout	yes	no	high		form_feed_split
+1534	1534	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Jean-Luc Brunel; Sarah Kellen; MC2	form_feed_split
+1535	1535	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1536	1536	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1537	1537	pdftotext -layout	yes	no	high	Ehud Barak; Leon Black; Darren Indyke	form_feed_split
+1538	1538	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Sarah Kellen; Ken Starr; Alexander Acosta	form_feed_split
+1539	1539	pdftotext -layout	yes	no	high	Alan Dershowitz; TerraMar	form_feed_split
+1540	1540	pdftotext -layout	yes	no	high		form_feed_split
+1541	1541	pdftotext -layout	yes	no	high		form_feed_split
+1542	1542	pdftotext -layout	yes	no	high		form_feed_split
+1543	1543	pdftotext -layout	yes	no	high		form_feed_split
+1544	1544	pdftotext -layout	yes	no	high		form_feed_split
+1545	1545	pdftotext -layout	yes	no	high	Virginia Giuffre; Maria Farmer	form_feed_split
+1546	1546	pdftotext -layout	yes	no	high	Financial Trust	form_feed_split
+1547	1547	pdftotext -layout	yes	no	high		form_feed_split
+1548	1548	pdftotext -layout	yes	no	high		form_feed_split
+1549	1549	pdftotext -layout	yes	no	high	Southern Trust	form_feed_split
+1550	1550	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Bill Clinton; Donald Trump; Alan Dershowitz; Bill Gates; Prince Andrew; Glenn Dubin; George Mitchell	form_feed_split
+1551	1551	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Sarah Kellen; Darren Indyke	form_feed_split
+1552	1552	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Glenn Dubin	form_feed_split
+1553	1553	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Bill Clinton; Donald Trump; Bill Gates; Sarah Kellen; Darren Indyke	form_feed_split
+1554	1554	pdftotext -layout	yes	no	high	Leon Black; Alan Dershowitz; Prince Andrew; Glenn Dubin; Virginia Giuffre; Maria Farmer	form_feed_split
+1555	1555	pdftotext -layout	yes	no	high	MC2	form_feed_split
+1556	1556	pdftotext -layout	yes	no	high	Leon Black; Glenn Dubin; Southern Trust; Financial Trust	form_feed_split
+1557	1557	pdftotext -layout	yes	no	high	Ken Starr	form_feed_split
+1558	1558	pdftotext -layout	yes	no	high		form_feed_split
+1559	1559	pdftotext -layout	yes	no	high		form_feed_split
+1560	1560	pdftotext -layout	yes	no	high		form_feed_split
+1561	1561	pdftotext -layout	yes	no	high		form_feed_split
+1562	1562	pdftotext -layout	yes	no	high	Leon Black; Glenn Dubin; Southern Trust	form_feed_split
+1563	1563	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Leon Black; Jean-Luc Brunel; Bill Clinton; Prince Andrew; Glenn Dubin	form_feed_split
+1564	1564	pdftotext -layout	yes	no	high		form_feed_split
+1565	1565	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel	form_feed_split
+1566	1566	pdftotext -layout	yes	no	high		form_feed_split
+1567	1567	pdftotext -layout	yes	no	high	MC2; Carbyne911; Carbyne; Southern Trust	form_feed_split
+1568	1568	pdftotext -layout	yes	no	high	Virginia Giuffre; Maria Farmer	form_feed_split
+1569	1569	pdftotext -layout	yes	no	high		form_feed_split
+1570	1570	pdftotext -layout	yes	no	high		form_feed_split
+1571	1571	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Prince Andrew; MC2	form_feed_split
+1572	1572	pdftotext -layout	yes	no	high	Southern Trust	form_feed_split
+1573	1573	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Alan Dershowitz; Glenn Dubin; Sarah Kellen; MC2; Carbyne911; Carbyne	form_feed_split
+1574	1574	pdftotext -layout	yes	no	high	NSO Group; Carbyne911; Carbyne; Black Cube	form_feed_split
+1575	1575	pdftotext -layout	yes	no	high	Virginia Giuffre	form_feed_split
+1576	1576	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel; Prince Andrew; Virginia Giuffre; MC2	form_feed_split
+1577	1577	pdftotext -layout	yes	no	high		form_feed_split
+1578	1578	pdftotext -layout	yes	no	high	Virginia Giuffre; MC2; Carbyne911; Carbyne; Southern Trust	form_feed_split
+1579	1579	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Alan Dershowitz; Glenn Dubin; Sarah Kellen; Virginia Giuffre	form_feed_split
+1580	1580	pdftotext -layout	yes	no	high	NSO Group; Carbyne911; Carbyne; Black Cube	form_feed_split
+1581	1581	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Sarah Kellen; Lesley Groff; Darren Indyke	form_feed_split
+1582	1582	pdftotext -layout	yes	no	high	Ehud Barak; Leon Black; Jean-Luc Brunel; Bill Clinton; Donald Trump; Prince Andrew; Glenn Dubin; George Mitchell; Bill Richardson; MC2; Southern Trust	form_feed_split
+1583	1583	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1584	1584	pdftotext -layout	yes	no	high		form_feed_split
+1585	1585	pdftotext -layout	yes	no	high	Leon Black	form_feed_split
+1586	1586	pdftotext -layout	yes	no	high	Alan Dershowitz; TerraMar	form_feed_split
+1587	1587	pdftotext -layout	yes	no	high		form_feed_split
+1588	1588	pdftotext -layout	yes	no	high	Ehud Barak; Bill Clinton; Donald Trump; Prince Andrew; George Mitchell; Bill Richardson; Alexander Acosta	form_feed_split
+1589	1589	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1590	1590	pdftotext -layout	yes	no	high	Virginia Giuffre; Maria Farmer; Jennifer Araoz	form_feed_split
+1591	1591	pdftotext -layout	yes	no	high		form_feed_split
+1592	1592	pdftotext -layout	yes	no	high		form_feed_split
+1593	1593	pdftotext -layout	yes	no	high		form_feed_split
+1594	1594	pdftotext -layout	yes	no	high		form_feed_split
+1595	1595	pdftotext -layout	yes	no	high		form_feed_split
+1596	1596	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel; Prince Andrew; Glenn Dubin; Sarah Kellen; Darren Indyke	form_feed_split
+1597	1597	pdftotext -layout	yes	no	high	Leon Black; Bill Clinton; Alan Dershowitz; Glenn Dubin; Larry Summers	form_feed_split
+1598	1598	pdftotext -layout	yes	no	high	Ehud Barak; Jean-Luc Brunel; Prince Andrew	form_feed_split
+1599	1599	pdftotext -layout	yes	no	high		form_feed_split
+1600	1600	pdftotext -layout	yes	no	high	Alan Dershowitz	form_feed_split
+1601	1601	pdftotext -layout	yes	no	high	Leon Black; George Mitchell; Bill Richardson	form_feed_split
+1602	1602	pdftotext -layout	yes	no	high		form_feed_split
+1603	1603	pdftotext -layout	yes	no	high		form_feed_split
+1604	1604	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1605	1605	pdftotext -layout	yes	no	high	Jean-Luc Brunel; MC2	form_feed_split
+1606	1606	pdftotext -layout	yes	no	high	Alan Dershowitz	form_feed_split
+1607	1607	pdftotext -layout	yes	no	high		form_feed_split
+1608	1608	pdftotext -layout	yes	no	high		form_feed_split
+1609	1609	pdftotext -layout	yes	no	high		form_feed_split
+1610	1610	pdftotext -layout	yes	no	high	Alan Dershowitz; Prince Andrew	form_feed_split
+1611	1611	pdftotext -layout	yes	no	high	Leslie Wexner; Ehud Barak; Leon Black; Jean-Luc Brunel; Bill Clinton; Donald Trump; Glenn Dubin; Sarah Kellen	form_feed_split
+1612	1612	pdftotext -layout	yes	no	high	Virginia Giuffre	form_feed_split
+1613	1613	pdftotext -layout	yes	no	high	Larry Summers	form_feed_split
+1614	1614	pdftotext -layout	yes	no	high		form_feed_split
+1615	1615	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Ehud Barak; Jean-Luc Brunel; Bill Clinton; Prince Andrew; George Mitchell; Sarah Kellen; Virginia Giuffre; Maria Farmer	form_feed_split
+1616	1616	pdftotext -layout	yes	no	high	Leslie Wexner; Leon Black; Bill Gates; Larry Summers	form_feed_split
+1617	1617	pdftotext -layout	yes	no	high		form_feed_split
+1618	1618	pdftotext -layout	yes	no	high	Bill Clinton; Donald Trump	form_feed_split
+1619	1619	pdftotext -layout	yes	no	high	Ehud Barak; Alan Dershowitz; Prince Andrew	form_feed_split
+1620	1620	pdftotext -layout	yes	no	high	Leon Black; Glenn Dubin	form_feed_split
+1621	1621	pdftotext -layout	yes	no	high	Maria Farmer; Jennifer Araoz	form_feed_split
+1622	1622	pdftotext -layout	yes	no	high		form_feed_split
+1623	1623	pdftotext -layout	yes	no	high	Courtney Wild	form_feed_split
+1624	1624	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1625	1625	pdftotext -layout	yes	no	high	Ehud Barak; Southern Trust; Financial Trust; TerraMar	form_feed_split
+1626	1626	pdftotext -layout	yes	no	high	Ghislaine Maxwell; Bill Gates	form_feed_split
+1627	1627	pdftotext -layout	yes	no	high		form_feed_split
+1628	1628	pdftotext -layout	yes	no	high	Sarah Kellen	form_feed_split
+1629	1629	pdftotext -layout	yes	no	high	Ghislaine Maxwell	form_feed_split
+1630	1630	pdftotext -layout	yes	no	high	Donald Trump	form_feed_split
+1631	1631	pdftotext -layout	yes	no	high	Maria Farmer; Jennifer Araoz	form_feed_split
+1632	1632	pdftotext -layout	yes	no	high	Leon Black; Larry Summers	form_feed_split
+1633	1633	pdftotext -layout	yes	no	high	Maria Farmer	form_feed_split
+1634	1634	pdftotext -layout	yes	no	high	NSO Group; Carbyne911; Carbyne	form_feed_split
+1635	1635	pdftotext -layout	yes	no	high	Prince Andrew; Virginia Giuffre; MC2	form_feed_split
+1636	1636	pdftotext -layout	yes	no	high		form_feed_split
+1637	1637	pdftotext -layout	yes	no	high	Sarah Kellen; Southern Trust	form_feed_split
+1638	1638	pdftotext -layout	yes	no	high	TerraMar	form_feed_split
+1639	1639	pdftotext -layout	yes	no	high		form_feed_split

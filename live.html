@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Live Operations Desk · Grok Archive Hub</title>
   <meta name="description" content="Live Grok Archive Hub operations desk: current investigations, verified task receipts, newly published pages, SEO/indexing status, open evidence gaps, archive changes, and next research priorities.">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://grokarchivehub.com/live">
   <link rel="stylesheet" href="/frontdoor/site.css">
   <style>
@@ -38,18 +38,20 @@
       <button class="menu-button" type="button" data-menu-button aria-expanded="false">Menu</button>
       <nav class="nav-links" data-nav-links>
         <a data-route-link href="/start">Start Here</a>
-        <a data-route-link href="/research-index">Research Index</a>
-        <a data-route-link href="/dispatches">Stories</a>
+        <a data-route-link href="/dispatches">Dispatches</a>
+        <a data-route-link href="/reading-room">Reading Room</a>
         <a data-route-link href="/archive">Archive</a>
         <a data-route-link href="/search">Search</a>
+        <a data-route-link href="/live">Live</a>
         <a class="nav-support" data-cta="support-archive-patreon" href="https://www.patreon.com/grokarchivehub?utm_source=grokarchivehub&amp;utm_medium=site&amp;utm_campaign=support_bridge" target="_blank" rel="noopener noreferrer" aria-label="Support Grok Archive Hub on Patreon (opens in a new tab)">Support</a>
+        <a class="nav-member" data-route-link href="/membership">Membership</a>
       </nav>
     </div>
   </header>
 
   <main class="page-shell">
     <section class="page-hero">
-      <p class="eyebrow">Live · Operations desk · Updated July 8, 2026</p>
+      <p class="eyebrow">Live · Operations desk · Updated July 10, 2026</p>
       <h1>What is live, what is checked, and what is still open.</h1>
       <p class="lede">This is the public status desk for Grok Archive Hub. It tracks current research lanes, verified operational receipts, recently published pages, indexing work, archive changes, and evidence gaps. It is not a claim page and does not turn unresolved leads into findings.</p>
       <div class="badge-row">
@@ -75,6 +77,21 @@
       <section class="section-block compact" id="current-investigations">
         <h2>Current investigations</h2>
         <div class="ops-grid">
+          <div class="ops-card">
+            <div class="ops-meta">
+              <time class="ops-pill" datetime="2026-07-10">July 10, 2026</time>
+              <span class="ops-pill pass">DEPLOYED_PASS</span>
+              <span class="ops-pill">Birthday Book V2 deployment</span>
+            </div>
+            <h3>Birthday Book evidence reader V2</h3>
+            <p>The Birthday Book reader is now a public evidence experience with server-rendered page content, source provenance, curated handwriting transcripts where available, conservative attribution labels, and a preserved page-30 GAPS notice.</p>
+            <div class="ops-links">
+              <a href="/research/evidence/birthday-book">Evidence reader</a>
+              <a href="/research/evidence/birthday-book/pages/30">Page 30 GAPS</a>
+              <a href="/research/evidence/birthday-book/methodology">Methodology</a>
+            </div>
+          </div>
+
           <div class="ops-card">
             <div class="ops-meta">
               <time class="ops-pill" datetime="2026-07-08">July 8, 2026</time>
@@ -166,6 +183,13 @@
           </thead>
           <tbody>
             <tr>
+              <td>July 10, 2026</td>
+              <td>DEPLOYED_PASS</td>
+              <td>Birthday Book V2 deployment</td>
+              <td>Birthday Book V2 promoted to the public Birthday Book routes with page images, curated transcripts, contributor-status separation, source/Bates citations, no unsupported photo identities, and page-30 GAPS preserved.</td>
+              <td><a class="text-link" href="/research/evidence/birthday-book">Birthday Book reader</a></td>
+            </tr>
+            <tr>
               <td>July 8, 2026</td>
               <td>DEPLOYED_PASS</td>
               <td>GAH-EPSTEIN-DEATH-REPAIR-003</td>
@@ -204,7 +228,7 @@
               <td>July 1, 2026</td>
               <td>PASS</td>
               <td>GAH-ADSENSE-LOW-VALUE-CONTENT-REMEDIATION-001</td>
-              <td>Public crawl footprint was cleaned: high-value pages remain indexable, utility/workbench/placeholder pages are noindex, and trust/privacy/corrections pages are live.</td>
+              <td>Public crawl footprint was cleaned: high-value pages remain indexable, utility/workbench/noindex utility pages are noindex, and trust/privacy/corrections pages are live.</td>
               <td><a class="text-link" href="/editorial-policy">Editorial policy</a></td>
             </tr>
           </tbody>
@@ -214,6 +238,22 @@
       <section class="section-block compact" id="new-pages">
         <h2>Newly published or strengthened pages</h2>
         <div class="ops-grid">
+          <div class="ops-card">
+            <div class="ops-meta">
+              <time class="ops-pill" datetime="2026-07-10">July 10, 2026</time>
+              <span class="ops-pill pass">DEPLOYED_PASS</span>
+              <span class="ops-pill">Birthday Book V2 deployment</span>
+            </div>
+            <h3>Birthday Book evidence reader</h3>
+            <p>The public Birthday Book routes now render source-bound evidence pages instead of a client-only shell. Low-quality handwriting OCR is withheld from public copy; attribution remains citation-bound.</p>
+            <div class="ops-links">
+              <a href="/research/evidence/birthday-book">Overview</a>
+              <a href="/research/evidence/birthday-book/pages">Pages</a>
+              <a href="/research/evidence/birthday-book/people">People</a>
+              <a href="/research/evidence/birthday-book/unresolved">Unresolved</a>
+            </div>
+          </div>
+
           <div class="ops-card">
             <div class="ops-meta">
               <time class="ops-pill" datetime="2026-07-01">July 1, 2026</time>
@@ -314,7 +354,7 @@
               <span class="ops-pill">GAH-ADSENSE-LOW-VALUE-CONTENT-REMEDIATION-001</span>
             </div>
             <h3>AdSense low-value-content remediation</h3>
-            <p>Trust pages, methodology pages, stronger public pages, and sitemap/noindex cleanup were completed. Workbench and placeholder routes stay out of the indexable public footprint.</p>
+            <p>Trust pages, methodology pages, stronger public pages, and sitemap/noindex cleanup were completed. Workbench and utility routes stay out of the indexable public footprint.</p>
             <div class="ops-links">
               <a href="/privacy">Privacy</a>
               <a href="/corrections">Corrections</a>
@@ -341,6 +381,20 @@
       <section class="section-block compact" id="open-gaps">
         <h2>Open evidence gaps</h2>
         <div class="ops-grid">
+          <div class="ops-card">
+            <div class="ops-meta">
+              <time class="ops-pill" datetime="2026-07-10">July 10, 2026</time>
+              <span class="ops-pill open">REVIEW QUEUE</span>
+              <span class="ops-pill">Birthday Book V2 deployment</span>
+            </div>
+            <h3>Birthday Book unresolved attributions</h3>
+            <p>Unresolved Birthday Book names, signatures, redactions, and handwriting cases remain grouped for review. A document string, OCR line, handwriting transcript, or photograph is not treated as contribution proof.</p>
+            <div class="ops-links">
+              <a href="/research/evidence/birthday-book/unresolved">Unresolved cases</a>
+              <a href="/research/evidence/birthday-book/methodology">Attribution rules</a>
+            </div>
+          </div>
+
           <div class="ops-card">
             <div class="ops-meta">
               <time class="ops-pill" datetime="2026-07-08">July 8, 2026</time>
@@ -458,6 +512,7 @@
           <li>Continue enriching metadata-only and thin OCR archive pages using source-backed fields only.</li>
           <li>Keep deterministic 404 archive IDs out of sitemap/search/navigation unless a real artifact is recovered.</li>
           <li>Build receipt-specific public pages only after source-lock review, caveats, and “what this does not prove” language are ready.</li>
+          <li>Continue Birthday Book identity and handwriting review without promoting document strings, OCR, or photographs into unsupported identity claims.</li>
           <li>Use methodology pages before claim-specific pages when a topic is useful but not source-locked.</li>
           <li>Keep Reading Room workbench queues noindex until they are converted into public-safe pages.</li>
         </ul>
@@ -481,10 +536,12 @@
     <div class="page-shell">
       <nav class="footer-links">
         <a href="/start">Start Here</a>
-        <a href="/research-index">Research Index</a>
-        <a href="/dispatches">Stories</a>
+        <a href="/dispatches">Dispatches</a>
+        <a href="/reading-room">Reading Room</a>
         <a href="/archive">Archive</a>
         <a href="/search">Search</a>
+        <a href="/live">Live</a>
+        <a href="/membership">Membership</a>
         <a href="/editorial-policy">Editorial Policy</a>
         <a href="/contact">Contact</a>
       </nav>

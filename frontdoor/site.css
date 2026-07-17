@@ -19,9 +19,15 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  max-width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: clip;
   min-height: 100vh;
   color: var(--ink);
   background:
@@ -46,6 +52,17 @@ body::before {
 }
 
 a { color: inherit; }
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+img,
+video {
+  height: auto;
+}
 button, input { font: inherit; }
 button:focus-visible, a:focus-visible, input:focus-visible {
   outline: 2px solid var(--gold);
@@ -225,6 +242,8 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   text-decoration: none;
   font-size: 14px;
   font-weight: 800;
+  text-align: center;
+  white-space: normal;
   transition: transform .18s ease, border-color .18s ease, background .18s ease;
 }
 .button:hover {
@@ -304,6 +323,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   min-height: 292px;
   grid-column: span 4;
   overflow: hidden;
+  min-width: 0;
   padding: 25px;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -370,6 +390,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   gap: 14px;
 }
 .stack-card {
+  min-width: 0;
   padding: 25px;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -414,6 +435,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   gap: 16px;
 }
 .feature-panel {
+  min-width: 0;
   min-height: 390px;
   padding: clamp(28px, 5vw, 58px);
   border: 1px solid var(--line);
@@ -431,6 +453,35 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   letter-spacing: -.04em;
 }
 .feature-panel p { max-width: 640px; color: #bdc3c5; font-size: 17px; }
+.content .feature-panel h2 {
+  max-width: 860px;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.05;
+}
+.article-meta {
+  margin: 18px 0 0;
+  color: var(--gold-soft);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.info-card[href] {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.info-card[href]:hover {
+  border-color: rgba(231,197,108,.44);
+  transform: translateY(-2px);
+}
+.info-card img {
+  display: block;
+  margin: 0 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-2);
+}
 .quote {
   margin: 0;
   padding: 0 0 0 24px;
@@ -445,6 +496,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   grid-template-columns: .72fr 1.28fr;
   gap: 0;
   overflow: hidden;
+  min-width: 0;
   border: 1px solid rgba(231,197,108,.38);
   border-radius: 14px;
   background: var(--paper);
@@ -644,6 +696,49 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   border-radius: 12px;
   background: var(--paper);
 }
+.status-table {
+  max-width: 100%;
+}
+main,
+section,
+article,
+.page-shell,
+.content,
+.section,
+.section-head,
+.hero-grid,
+.split,
+.route-list,
+.route-link,
+.dispatch-grid,
+.dispatch-card,
+.prose-grid,
+.info-card,
+.stack-grid,
+.stack-card,
+.membership-card,
+.membership-price,
+.membership-benefits,
+.feature-panel,
+.footer-grid,
+.footer-links,
+.search-row,
+.result-card,
+.notice {
+  min-width: 0;
+}
+.route-link,
+.dispatch-card,
+.info-card,
+.stack-card,
+.feature-panel,
+.result-card,
+.notice,
+.footer-links a,
+pre,
+code {
+  overflow-wrap: break-word;
+}
 .signal-table {
   width: 100%;
   min-width: 860px;
@@ -707,6 +802,8 @@ button:focus-visible, a:focus-visible, input:focus-visible {
     left: 18px;
     right: 18px;
     top: 68px;
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
     padding: 12px;
     border: 1px solid var(--line);
     border-radius: 12px;
@@ -727,6 +824,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   .page-shell { width: min(100% - 24px, var(--max)); }
   .nav-shell { padding: 0 12px; }
   .hero { padding: 64px 0 58px; }
+  .hero::after { display: none; }
   .hero h1, .page-hero h1 { font-size: clamp(48px, 15vw, 75px); }
   .hero-lede, .page-hero .lede { font-size: 17px; }
   .hero-actions .button, .button-row .button, .button-row form { width: 100%; }
@@ -741,4 +839,13 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   .content { padding: 50px 0 72px; }
   .search-row { display: grid; }
   .footer-links { grid-template-columns: 1fr 1fr; }
+  .status-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .status-table th,
+  .status-table td {
+    min-width: 145px;
+  }
 }

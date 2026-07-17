@@ -289,6 +289,13 @@ select {
   margin: 0 0 8px;
 }
 
+.ee-page-meta,
+.ee-fineprint {
+  color: var(--ee-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .ee-panel ul {
   margin: 0;
   padding-left: 18px;
@@ -303,6 +310,58 @@ select {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 13px;
   line-height: 1.55;
+}
+
+.ee-transcript {
+  white-space: pre-wrap;
+  color: #242930;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.ee-withheld-note {
+  border-left: 3px solid var(--ee-accent);
+  background: #fbf6ea;
+  padding: 10px 12px;
+  color: #483414;
+  font-weight: 700;
+}
+
+.ee-processing-details {
+  border: 1px solid var(--ee-line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.ee-processing-details summary {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  color: var(--ee-ink);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.ee-processing-body {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid var(--ee-line);
+  padding: 12px;
+  color: var(--ee-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ee-processing-body p,
+.ee-processing-body ul {
+  margin: 0;
+}
+
+.ee-processing-body ul {
+  padding-left: 18px;
 }
 
 .ee-badges,

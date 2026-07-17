@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-07-10T17:53:03.753Z",
+  "source": "TASK-BIRTHDAY-BOOK-V2-003 priority transcription result files",
+  "transcript_files": 10,
+  "pages_transcribed": [
+    125,
+    126,
+    146,
+    158,
+    165,
+    178,
+    187,
+    232,
+    233
+  ],
+  "pages_public_allowed": [
+    125,
+    126,
+    146,
+    158,
+    165,
+    178,
+    187,
+    232,
+    233
+  ],
+  "public_handwriting_transcript_pages": [
+    125,
+    126,
+    146,
+    158,
+    178,
+    187,
+    232,
+    233
+  ],
+  "public_text_recovery_pages": [
+    165
+  ],
+  "pages_no_handwriting_found": [
+    127
+  ],
+  "pages_withheld_low_confidence": [],
+  "medium_confidence_public_pages": [
+    125,
+    126
+  ],
+  "line_confidence_counts": {
+    "high": 121,
+    "medium": 7,
+    "low": 1,
+    "lines": 129
+  },
+  "public_rule": "Public handwritten text comes only from dedicated line-by-line transcript files. Transcription is not identity verification.",
+  "pages": [
+    {
+      "page": 125,
+      "bates": "HOUSE_OVERSIGHT_000125",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/125",
+      "related_people": [
+        "Jean-Luc Brunel"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "medium",
+      "public_transcript_allowed": true,
+      "line_count": 16,
+      "excerpt": "y - 3c = [V 3 64] + 5 x 12 - a - 1 x + y = [V 2 81] + 2 x 20 + [4 2] - 1 = a a = g + 15"
+    },
+    {
+      "page": 126,
+      "bates": "HOUSE_OVERSIGHT_000126",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/126",
+      "related_people": [
+        "Bill Clinton"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "medium",
+      "public_transcript_allowed": true,
+      "line_count": 10,
+      "excerpt": "Jeffrey - Happy 50th - It's dawning isn't it, to have"
+    },
+    {
+      "page": 127,
+      "bates": "HOUSE_OVERSIGHT_000127",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/127",
+      "related_people": [
+        "Alan Dershowitz"
+      ],
+      "transcript_status": "no_handwriting_found",
+      "overall_confidence": "high",
+      "public_transcript_allowed": false,
+      "line_count": 0,
+      "excerpt": ""
+    },
+    {
+      "page": 146,
+      "bates": "HOUSE_OVERSIGHT_000146",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/146",
+      "related_people": [
+        "George Mitchell"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 21,
+      "excerpt": "January 2003 Dear Jeffrey, The beginning of a new year is an appropriate time"
+    },
+    {
+      "page": 158,
+      "bates": "HOUSE_OVERSIGHT_000158",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/158",
+      "related_people": [
+        "Joseph Pagano"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 18,
+      "excerpt": "Your centered individuality, your lack of desire for public recognition, reminds me of a story I once heard about the"
+    },
+    {
+      "page": 165,
+      "bates": "HOUSE_OVERSIGHT_000165",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/165",
+      "related_people": [
+        "Donald Trump"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 16,
+      "excerpt": "Voice Over: There must be more to life than having everything. Donald"
+    },
+    {
+      "page": 178,
+      "bates": "HOUSE_OVERSIGHT_000178",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/178",
+      "related_people": [
+        "Jerry Edelman"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 34,
+      "excerpt": "Dear Jeffrey, On this occasion, I am reminded of your many conversations, fuelled by both your curiosity and your"
+    },
+    {
+      "page": 187,
+      "bates": "HOUSE_OVERSIGHT_000187",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/187",
+      "related_people": [
+        "Marvin Minsky"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 2,
+      "excerpt": "Marvin Minsky Happy Birthday!"
+    },
+    {
+      "page": 232,
+      "bates": "HOUSE_OVERSIGHT_000232",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/232",
+      "related_people": [
+        "Ari Gildery"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 1,
+      "excerpt": "Ari Gildery"
+    },
+    {
+      "page": 233,
+      "bates": "HOUSE_OVERSIGHT_000233",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/233",
+      "related_people": [
+        "Ted Serine"
+      ],
+      "transcript_status": "transcribed",
+      "overall_confidence": "high",
+      "public_transcript_allowed": true,
+      "line_count": 11,
+      "excerpt": "1/15/03 Dear Jeffrey, We started out behind the desk some"
+    }
+  ]
+}
