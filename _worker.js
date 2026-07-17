@@ -1548,7 +1548,37 @@ function truthyFlag(value) {
 }
 
 function adsenseApproved(env = {}) {
-  return Boolean(ADSENSE_CONFIG.approvedDefault) || truthyFlag(env.ADSENSE_APPROVED) || truthyFlag(env.AD_APPROVED);
+  const displayApproved = Boolean(ADSENSE_CONFIG.approvedDefault) || truthyFlag(env.ADSENSE_APPROVED) || truthyFlag(env.AD_APPROVED);
+  return displayApproved && truthyFlag(env.CMP_ADS_ENABLED);
+}
+
+function googleTagEnabled(env = {}) {
+  return truthyFlag(env.GAH_GOOGLE_TAG_ENABLED) && cleanText(env.GA4_MEASUREMENT_ID || env.GOOGLE_TAG_ID);
+}
+
+function consentBootTag(env = {}) {
+  const measurementId = cleanText(env.GA4_MEASUREMENT_ID || env.GOOGLE_TAG_ID || "");
+  const tagEnabled = googleTagEnabled(env);
+  const config = {
+    schema: "gah.consent.v1",
+    googleTagEnabled: tagEnabled,
+    ga4MeasurementId: tagEnabled ? measurementId : "",
+    adsenseApproved: adsenseApproved(env)
+  };
+  return `<script data-cfasync="false">window.GAH_CONSENT_BOOT=${JSON.stringify(config)};window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};window.gtag("consent","default",{analytics_storage:"denied",ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500});window.gtag("set","ads_data_redaction",true);</script>`;
+}
+
+function consentScriptTag(env = {}) {
+  const googleTag = googleTagEnabled(env)
+    ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(cleanText(env.GA4_MEASUREMENT_ID || env.GOOGLE_TAG_ID))}"></script>\n  <script data-cfasync="false">window.gtag("js",new Date());</script>`
+    : "";
+  return `${consentBootTag(env)}\n  ${googleTag}${googleTag ? "\n  " : ""}<script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-CONSENT-003"></script>`;
+}
+
+function ensureConsentScript(body, env = {}) {
+  if (body.includes("/frontdoor/consent.js")) return body;
+  if (!/<\/head>/i.test(body)) return body;
+  return body.replace(/<\/head>/i, `  ${consentScriptTag(env)}\n</head>`);
 }
 
 function adsenseScriptTag() {
@@ -1595,6 +1625,147 @@ function applyAdsensePlacements(body, policy, env = {}) {
   return nextBody;
 }
 
+function jsonResponse(payload, status = 200, extraHeaders = {}) {
+  const headers = new Headers(extraHeaders);
+  headers.set("Content-Type", "application/json; charset=utf-8");
+  headers.set("Cache-Control", "no-store");
+  return new Response(JSON.stringify(payload), { status, headers });
+}
+
+const GA4_ALLOWED_EVENTS = Object.freeze({
+  investigation_view: ["route", "content_id", "content_type", "event_id"],
+  evidence_open: ["route", "document_id_hash", "source_class", "event_id"],
+  pdf_render_success: ["route", "document_id_hash", "source_class", "event_id"],
+  pdf_render_failure: ["route", "document_id_hash", "source_class", "failure_class", "event_id"],
+  archive_search: ["route", "query_class", "result_count", "event_id"],
+  archive_search_zero_results: ["route", "query_class", "event_id"],
+  external_source_click: ["route", "destination_host", "source_class", "event_id"],
+  source_submission_start: ["route", "event_id"],
+  contact_submission: ["route", "form_type", "event_id"],
+  patreon_cta_click: ["route", "cta_id", "destination_host", "event_id"],
+  patreon_oauth_start: ["route", "result", "event_id"],
+  patreon_oauth_result: ["route", "result", "failure_class", "event_id"],
+  member_entitlement_success: ["route", "tier_class", "event_id"],
+  member_entitlement_failure: ["route", "failure_class", "event_id"],
+  correction_submission: ["route", "form_type", "event_id"]
+});
+
+const GA4_PROHIBITED_PARAM = /(?:email|token|secret|password|oauth|patreon_identity|patreon_token|session|cookie|authorization|ip_address|raw_text|document_text|source_text|content_body|full_query|search_term|user_id)/i;
+
+function ga4Config(env = {}) {
+  const measurementId = cleanText(env.GA4_MEASUREMENT_ID || "");
+  const hasSecret = Boolean(env.GA4_API_SECRET);
+  const enabled = truthyFlag(env.GA4_MP_ENABLED) && measurementId && hasSecret;
+  const dryRun = !enabled || truthyFlag(env.GA4_MP_DRY_RUN);
+  return {
+    enabled,
+    dryRun,
+    debug: truthyFlag(env.GA4_MP_DEBUG),
+    measurementId,
+    hasSecret,
+    endpoint: truthyFlag(env.GA4_MP_REGION1) ? "https://region1.google-analytics.com" : "https://www.google-analytics.com"
+  };
+}
+
+function ga4ConsentAllows(payload = {}) {
+  const consent = payload.consent || {};
+  return consent.analytics_storage === "granted";
+}
+
+function ga4CleanParamValue(value) {
+  if (value == null) return "";
+  if (typeof value === "number") return Number.isFinite(value) ? value : "";
+  if (typeof value === "boolean") return value;
+  return cleanText(value).slice(0, 100);
+}
+
+function ga4SanitizeEvent(payload = {}) {
+  const eventName = cleanText(payload.event_name || payload.name || "");
+  const allowed = GA4_ALLOWED_EVENTS[eventName];
+  if (!allowed) return { ok: false, error: "event_not_allowed" };
+  const params = {};
+  const input = payload.params && typeof payload.params === "object" ? payload.params : {};
+  for (const key of allowed) {
+    if (GA4_PROHIBITED_PARAM.test(key)) continue;
+    if (Object.prototype.hasOwnProperty.call(input, key) || Object.prototype.hasOwnProperty.call(payload, key)) {
+      const value = ga4CleanParamValue(input[key] ?? payload[key]);
+      if (value !== "") params[key] = value;
+    }
+  }
+  const route = cleanText(input.route || payload.route || "");
+  if (route && route.startsWith("/")) params.route = route.slice(0, 180);
+  const eventId = cleanText(input.event_id || payload.event_id || crypto.randomUUID());
+  params.event_id = eventId.slice(0, 80);
+  return {
+    ok: true,
+    event: {
+      name: eventName,
+      params
+    }
+  };
+}
+
+async function handleGa4Event(request, env) {
+  if (request.method === "GET" || request.method === "HEAD") {
+    return jsonResponse({
+      ok: true,
+      schema: "gah.ga4.mp.v1",
+      mode: ga4Config(env).dryRun ? "dry-run" : (ga4Config(env).debug ? "debug" : "live"),
+      allowed_events: Object.keys(GA4_ALLOWED_EVENTS)
+    }, 200, { "X-Robots-Tag": "noindex,nofollow" });
+  }
+  if (request.method !== "POST") return jsonResponse({ ok: false, error: "method_not_allowed" }, 405);
+  let payload = {};
+  try {
+    payload = await request.json();
+  } catch (_) {
+    return jsonResponse({ ok: false, error: "invalid_json" }, 400);
+  }
+  if (!ga4ConsentAllows(payload)) {
+    return jsonResponse({ ok: true, suppressed: true, reason: "analytics_consent_denied", outbound_send_count: 0 }, 200);
+  }
+  const sanitized = ga4SanitizeEvent(payload);
+  if (!sanitized.ok) return jsonResponse({ ok: false, error: sanitized.error, outbound_send_count: 0 }, 400);
+  const config = ga4Config(env);
+  const mpPayload = {
+    client_id: cleanText(payload.client_id || `gah.${sanitized.event.params.event_id}`),
+    events: [sanitized.event]
+  };
+  if (config.dryRun) {
+    return jsonResponse({
+      ok: true,
+      mode: "dry-run",
+      outbound_send_count: 0,
+      event: sanitized.event.name,
+      params: sanitized.event.params
+    });
+  }
+  const collectPath = config.debug ? "/debug/mp/collect" : "/mp/collect";
+  const endpoint = `${config.endpoint}${collectPath}?measurement_id=${encodeURIComponent(config.measurementId)}&api_secret=${encodeURIComponent(env.GA4_API_SECRET)}`;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 1500);
+  try {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(mpPayload),
+      signal: controller.signal
+    });
+    const body = config.debug ? await response.text().catch(() => "") : "";
+    return jsonResponse({
+      ok: response.ok,
+      mode: config.debug ? "debug" : "live",
+      outbound_send_count: response.ok ? 1 : 0,
+      status: response.status,
+      debug_response_present: Boolean(body)
+    }, response.ok ? 200 : 202);
+  } catch (_) {
+    return jsonResponse({ ok: true, mode: "fail-open-user-request", outbound_send_count: 0, error: "analytics_send_failed" }, 202);
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   let body = stripCloudflareHelperAssets(html);
   if (!/<head[\s>]/i.test(body)) return body;
@@ -1633,7 +1804,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   if (!htmlMetaContent(body, "name", "gah-adsense-approved")) tags.push(`<meta name="gah-adsense-approved" content="${adsenseApproved(env) ? "true" : "false"}">`);
   if (!htmlMetaContent(body, "name", "gah-indexability-policy")) tags.push(`<meta name="gah-indexability-policy" content="${escapeHtml(policy.indexability)}">`);
   if (tags.length) body = body.replace(/<\/head>/i, `  ${tags.join("\n  ")}\n</head>`);
-  return applyAdsensePlacements(body, policy, env);
+  return ensureConsentScript(applyAdsensePlacements(body, policy, env), env);
 }
 
 async function enhanceHtmlResponse(response, request, meta = {}, env = {}) {
@@ -6778,6 +6949,10 @@ export default {
 
     if (path === "/api/ai/admin/answer") {
       return handleAiApi(request, env, "admin");
+    }
+
+    if (path === "/api/analytics/event") {
+      return handleGa4Event(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/api/search") {
