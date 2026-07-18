@@ -1017,7 +1017,7 @@ async function proxyProofLayer(request, env = {}) {
   headers.set("Content-Type", "text/html; charset=utf-8");
   headers.set("X-GAH-Apex-Proxy", "wiki.grokarchivehub.com");
   applyRoutePolicyHeaders(headers, proxiedPath);
-  applyHtmlSecurityHeaders(headers, env);
+  applyHtmlSecurityHeaders(headers, env, request);
   return new Response(stripCloudflareHelperAssets(await upstream.text()), {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1590,11 +1590,23 @@ function ensureConsentScript(body, env = {}) {
   return body.replace(/<\/head>/i, `  ${consentScriptTag(env)}\n</head>`);
 }
 
-function htmlContentSecurityPolicy(env = {}) {
+function scriptSourceAllowlist(origin = "") {
+  const origins = origin
+    ? [origin]
+    : [
+        "https://grokarchivehub.com",
+        "https://www.grokarchivehub.com",
+        "https://*.grokfiles-landing.pages.dev"
+      ];
+  const directories = ["/frontdoor/", "/book-of-black/", "/evidence-engine/", "/pdfjs/build/", "/cdn-cgi/challenge-platform/"];
+  return origins.flatMap((allowedOrigin) => directories.map((dir) => `${allowedOrigin}${dir}`));
+}
+
+function htmlContentSecurityPolicy(env = {}, origin = "") {
   const googleAllowed = googleTagEnabled(env);
-  const scriptSrc = googleAllowed
-    ? "'self' 'unsafe-inline' https://www.googletagmanager.com"
-    : "'self' 'unsafe-inline'";
+  const scriptSources = ["'unsafe-inline'", ...scriptSourceAllowlist(origin)];
+  if (googleAllowed) scriptSources.push("https://www.googletagmanager.com");
+  const scriptSrc = scriptSources.join(" ");
   const connectSrc = googleAllowed
     ? "'self' https://www.google-analytics.com https://region1.google-analytics.com"
     : "'self'";
@@ -1613,8 +1625,18 @@ function htmlContentSecurityPolicy(env = {}) {
   ].join("; ");
 }
 
-function applyHtmlSecurityHeaders(headers, env = {}) {
-  headers.set("Content-Security-Policy", htmlContentSecurityPolicy(env));
+function applyHtmlSecurityHeaders(headers, env = {}, requestOrOrigin = "") {
+  let origin = "";
+  try {
+    origin = typeof requestOrOrigin === "string"
+      ? requestOrOrigin
+      : requestOrOrigin?.url
+        ? new URL(requestOrOrigin.url).origin
+        : "";
+  } catch (_) {
+    origin = "";
+  }
+  headers.set("Content-Security-Policy", htmlContentSecurityPolicy(env, origin));
   headers.set("X-Content-Type-Options", "nosniff");
   if (!headers.has("Referrer-Policy")) headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
 }
@@ -1870,7 +1892,7 @@ async function enhanceHtmlResponse(response, request, meta = {}, env = {}) {
   headers.set("X-GAH-Ad-Publisher", ADSENSE_CONFIG.publisherId);
   headers.set("X-GAH-Ad-Display-Slot", ADSENSE_CONFIG.displaySlot);
   headers.set("X-GAH-Ad-Multiplex", ADSENSE_CONFIG.multiplexApproved ? "enabled" : "disabled");
-  applyHtmlSecurityHeaders(headers, env);
+  applyHtmlSecurityHeaders(headers, env, request);
   return new Response(enhanceHtmlText(await response.text(), request, meta, env), {
     status: response.status,
     statusText: response.statusText,
