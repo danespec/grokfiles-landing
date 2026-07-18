@@ -1553,7 +1553,11 @@ function adsenseApproved(env = {}) {
 }
 
 function googleTagEnabled(env = {}) {
-  return truthyFlag(env.GAH_GOOGLE_TAG_ENABLED) && cleanText(env.GA4_MEASUREMENT_ID || env.GOOGLE_TAG_ID);
+  return Boolean(
+    truthyFlag(env.GAH_GOOGLE_TAG_ENABLED)
+    && cleanText(env.GA4_MEASUREMENT_ID || env.GOOGLE_TAG_ID)
+    && cleanText(env.CMP_ACCOUNT_ID || "")
+  );
 }
 
 function consentBootTag(env = {}) {
@@ -1569,10 +1573,7 @@ function consentBootTag(env = {}) {
 }
 
 function consentScriptTag(env = {}) {
-  const googleTag = googleTagEnabled(env)
-    ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(cleanText(env.GA4_MEASUREMENT_ID || env.GOOGLE_TAG_ID))}"></script>\n  <script data-cfasync="false">window.gtag("js",new Date());</script>`
-    : "";
-  return `${consentBootTag(env)}\n  ${googleTag}${googleTag ? "\n  " : ""}<script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-CONSENT-003"></script>`;
+  return `${consentBootTag(env)}\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-CONSENT-003"></script>`;
 }
 
 function ensureConsentScript(body, env = {}) {

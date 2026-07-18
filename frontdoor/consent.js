@@ -64,7 +64,22 @@
     var next = Object.assign({}, DEFAULT_CONSENT, consent || {});
     window.gtag("consent", "update", next);
     document.documentElement.dataset.gahConsent = JSON.stringify(next);
+    loadGoogleTagIfAllowed(next);
     window.dispatchEvent(new CustomEvent("gah:consent:update", { detail: next }));
+  }
+
+  function loadGoogleTagIfAllowed(consent) {
+    var boot = window.GAH_CONSENT_BOOT || {};
+    if (!boot.googleTagEnabled || !boot.ga4MeasurementId) return;
+    if (!consent || consent.analytics_storage !== "granted") return;
+    if (document.querySelector("script[data-gah-google-tag]")) return;
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(boot.ga4MeasurementId);
+    script.setAttribute("data-gah-google-tag", "true");
+    document.head.appendChild(script);
+    window.gtag("js", new Date());
+    window.gtag("config", boot.ga4MeasurementId, { send_page_view: true });
   }
 
   function currentConsent() {
