@@ -992,7 +992,7 @@ function isBirthdayBookEvidenceV2Path(path) {
   return path === "/research/evidence/birthday-book-v2" || path.startsWith("/research/evidence/birthday-book-v2/");
 }
 
-async function proxyProofLayer(request) {
+async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
   target.protocol = "https:";
@@ -1017,6 +1017,7 @@ async function proxyProofLayer(request) {
   headers.set("Content-Type", "text/html; charset=utf-8");
   headers.set("X-GAH-Apex-Proxy", "wiki.grokarchivehub.com");
   applyRoutePolicyHeaders(headers, proxiedPath);
+  applyHtmlSecurityHeaders(headers, env);
   return new Response(stripCloudflareHelperAssets(await upstream.text()), {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1054,6 +1055,7 @@ async function serveResearchIndexApex(request) {
     description: "Public research index for Grok Archive Hub evidence pages, reader routes, source-led investigations, and archive navigation."
   });
   headers.set("Content-Type", "text/html; charset=utf-8");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1100,6 +1102,7 @@ async function serveEpsteinEvidenceWithReaderReturn(request) {
   headers.set("Cache-Control", "no-store");
   headers.set("X-GAH-Navigation-Repair", "GAH-NAVIGATION-REPAIR-002");
   headers.delete("Content-Length");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1155,6 +1158,7 @@ async function serveCalendarEvidenceWithDossierContext(request) {
   headers.set("X-GAH-Calendar-Evidence-Dossier", "published");
   headers.delete("Content-Length");
   applyRoutePolicyHeaders(headers, "/research/evidence/calendar-epstein");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1236,6 +1240,7 @@ function serveArchiveOpenReceiptSlot(request, archiveId) {
     "X-GAH-Open-Receipt-Slot": id
   });
   applyRoutePolicyHeaders(headers, `/archive/${id}`);
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, { status: 200, headers });
 }
 
@@ -1281,6 +1286,7 @@ function serveSearchApiDocs() {
     "X-GAH-API-Docs": "search"
   });
   applyRoutePolicyHeaders(headers, "/api/search");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, { status: 200, headers });
 }
 
@@ -1395,6 +1401,7 @@ async function serveBarakPortalWithReviewLinks(request) {
   headers.set("X-GAH-Barak-Timeline-Link", "published");
   headers.set("X-GAH-Barak-FARA-Review-Link", "published");
   headers.delete("Content-Length");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1444,6 +1451,7 @@ async function serveBarakSearchWithContract(request) {
   headers.set("Content-Type", "text/html; charset=utf-8");
   headers.set("Cache-Control", "no-store");
   headers.set("X-GAH-Barak-Search-Contract", "published");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, {
     status: upstream.status,
     statusText: upstream.statusText,
@@ -1580,6 +1588,49 @@ function ensureConsentScript(body, env = {}) {
   if (body.includes("/frontdoor/consent.js")) return body;
   if (!/<\/head>/i.test(body)) return body;
   return body.replace(/<\/head>/i, `  ${consentScriptTag(env)}\n</head>`);
+}
+
+function htmlContentSecurityPolicy(env = {}) {
+  const googleAllowed = googleTagEnabled(env);
+  const scriptSrc = googleAllowed
+    ? "'self' 'unsafe-inline' https://www.googletagmanager.com"
+    : "'self' 'unsafe-inline'";
+  const connectSrc = googleAllowed
+    ? "'self' https://www.google-analytics.com https://region1.google-analytics.com"
+    : "'self'";
+  return [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "object-src 'none'",
+    "frame-ancestors 'none'",
+    "img-src 'self' data: https:",
+    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self' data:",
+    `script-src ${scriptSrc}`,
+    "worker-src 'self' blob:",
+    `connect-src ${connectSrc}`,
+    "form-action 'self'"
+  ].join("; ");
+}
+
+function applyHtmlSecurityHeaders(headers, env = {}) {
+  headers.set("Content-Security-Policy", htmlContentSecurityPolicy(env));
+  headers.set("X-Content-Type-Options", "nosniff");
+  if (!headers.has("Referrer-Policy")) headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+}
+
+function isAccountLevelAnalyticsGatewayPath(path) {
+  return path === "/xbjr" || path.startsWith("/xbjr/") || path.startsWith("/cdn-cgi/zaraz");
+}
+
+function blockedAccountAnalyticsResponse(request) {
+  const headers = new Headers({
+    "Cache-Control": "no-store",
+    "X-Robots-Tag": "noindex,nofollow",
+    "X-GAH-Account-Analytics": "blocked-until-consent-boundary"
+  });
+  headers.set("Content-Type", "text/plain; charset=utf-8");
+  return new Response(null, { status: 204, headers });
 }
 
 function adsenseScriptTag() {
@@ -1819,6 +1870,7 @@ async function enhanceHtmlResponse(response, request, meta = {}, env = {}) {
   headers.set("X-GAH-Ad-Publisher", ADSENSE_CONFIG.publisherId);
   headers.set("X-GAH-Ad-Display-Slot", ADSENSE_CONFIG.displaySlot);
   headers.set("X-GAH-Ad-Multiplex", ADSENSE_CONFIG.multiplexApproved ? "enabled" : "disabled");
+  applyHtmlSecurityHeaders(headers, env);
   return new Response(enhanceHtmlText(await response.text(), request, meta, env), {
     status: response.status,
     statusText: response.statusText,
@@ -2048,11 +2100,12 @@ async function serveBookOfBlackEntry(request, env, id) {
       <div class="bob-warning"><strong>No claim is made here.</strong><span>Thin, unresolved, or identity-sensitive entries stay noindex until attributable archive receipts and editorial analysis exist.</span></div>
       <div class="bob-actions"><a class="bob-button primary" href="/book-of-black/ledger">Open ledger</a><a class="bob-button" href="/book-of-black/search">Search manuscript</a></div>
     </section>
-  </main>
+    </main>
 </body>
 </html>`;
     const headers = new Headers({ "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
     applyRoutePolicyHeaders(headers, `/book-of-black/entry/${id || ""}`);
+    applyHtmlSecurityHeaders(headers);
     return new Response(body, { status: 404, headers });
   }
   const canonical = `https://grokarchivehub.com/book-of-black/entry/${encodeURIComponent(entry.id)}`;
@@ -2081,6 +2134,7 @@ async function serveBookOfBlackEntry(request, env, id) {
 </html>`;
   const headers = new Headers({ "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=300" });
   applyRoutePolicyHeaders(headers, `/book-of-black/entry/${entry.id}`);
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, { status: 200, headers });
 }
 
@@ -2578,6 +2632,7 @@ async function serveBirthdayBookSsr(request, env, baseRoute, htmlPath) {
       "Cache-Control": "public, max-age=300",
       "X-GAH-Birthday-Book-SSR": "root-cause-repair-002"
     });
+    applyHtmlSecurityHeaders(headers);
     return new Response(body, { status: 200, headers });
   } catch (error) {
     const response = await serveFrontdoorEnhanced(request, env, htmlPath, {
@@ -2657,14 +2712,13 @@ function serveBirthdayBookV2Alias(path) {
   <script src="/frontdoor/site.js" defer></script>
 </body>
 </html>`;
-  return new Response(html, {
-    status: 200,
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, max-age=300",
-      "X-GAH-Birthday-Book-V2-Alias": "canonical-handoff"
-    }
+  const headers = new Headers({
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "public, max-age=300",
+    "X-GAH-Birthday-Book-V2-Alias": "canonical-handoff"
   });
+  applyHtmlSecurityHeaders(headers);
+  return new Response(html, { status: 200, headers });
 }
 
 const TEXT_ENCODER = new TextEncoder();
@@ -2967,6 +3021,7 @@ function htmlResponse(body, status = 200, extraHeaders = {}) {
   headers.set("Content-Type", "text/html; charset=utf-8");
   headers.set("Cache-Control", "no-store");
   headers.set("X-GAH-Membership-Portal", "protected");
+  applyHtmlSecurityHeaders(headers);
   return new Response(body, { status, headers });
 }
 
@@ -6726,14 +6781,13 @@ async function serveBarakReceiptDetail(request, idOrArchiveId) {
     robots: "noindex,follow",
     ogType: "article"
   });
-  return new Response(enhancedBody, {
-    status: 200,
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "no-store",
-      "X-GAH-Barak-Receipt-Detail": record ? record.id : idOrArchiveId
-    }
+  const headers = new Headers({
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "no-store",
+    "X-GAH-Barak-Receipt-Detail": record ? record.id : idOrArchiveId
   });
+  applyHtmlSecurityHeaders(headers);
+  return new Response(enhancedBody, { status: 200, headers });
 }
 
 function archiveUnavailableResponse(request, archiveId) {
@@ -6772,6 +6826,7 @@ function archiveUnavailableResponse(request, archiveId) {
   applyRoutePolicyHeaders(headers, `/archive/${archiveId}`);
   headers.set("X-GAH-Indexability-Policy", "noindex,follow");
   headers.set("X-Robots-Tag", "noindex,follow");
+  applyHtmlSecurityHeaders(headers);
   return new Response(request.method === "HEAD" ? null : body, { status: 200, headers });
 }
 
@@ -6783,6 +6838,10 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
+
+    if (isAccountLevelAnalyticsGatewayPath(path)) {
+      return blockedAccountAnalyticsResponse(request);
+    }
 
     if (url.hostname === "www.grokarchivehub.com") {
       url.hostname = "grokarchivehub.com";
