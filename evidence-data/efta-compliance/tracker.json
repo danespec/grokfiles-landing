@@ -1,0 +1,999 @@
+{
+  "task": "GAH-CONTENT-001",
+  "generated_utc": "2026-07-18T12:00:00Z",
+  "current_status": "UNRESOLVED_SHOW_CAUSE_ENFORCEMENT_PHASE",
+  "current_status_basis": "DOJ filed ECF 19 show-cause response; Phang filed ECF 20/20-1 motion to enforce/proposed order; no later Phang/DOJ compliance ruling was acquired before July 18, 2026.",
+  "ordered_rows": [
+    {
+      "bates_id": "EFTA00749245",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ says the redacted portion is the same private email address twice, not a standalone name; it kept private email addresses redacted under its review protocol and Privacy Act position.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted version was verified.",
+      "redaction_status": "DOJ: private email address. Plaintiff: no victim information conceded and production should be ordered.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA01187999",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ groups this among six emails where the redacted sender or recipient names are victim names.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted sender/recipient version was verified.",
+      "redaction_status": "DOJ: victim PII. Plaintiff requests in camera review rather than public overclaiming.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA01930501",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ groups this among six emails where the redacted sender or recipient names are victim names.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted sender/recipient version was verified.",
+      "redaction_status": "DOJ: victim PII. Plaintiff requests in camera review.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "ETFA01928255",
+      "normalization_alias": "EFTA01928255",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the court-listed email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ repeats the court-text identifier ETFA01928255 and groups it among six emails where the redacted sender or recipient names are victim names.",
+      "released_status": "Raw ETFA01928255 archive route returns 404; labeled normalization alias EFTA01928255 returns 200. No unredacted sender/recipient version was verified.",
+      "redaction_status": "DOJ: victim PII. Alias is explicit and not a silent correction.",
+      "deadline": "2026-07-02",
+      "confidence": "High for court-text preservation and alias routing; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA00628112",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ says the redacted portion includes only a private email address, not a person's name, and was properly redacted under its protocol.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted version was verified.",
+      "redaction_status": "DOJ: private email address. Plaintiff: no victim information conceded and production should be ordered.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA02648868",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ groups this among six emails where the redacted sender or recipient names are victim names.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted sender/recipient version was verified.",
+      "redaction_status": "DOJ: victim PII. Plaintiff requests in camera review.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA02504630",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ groups this among six emails where the redacted sender or recipient names are victim names.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted sender/recipient version was verified.",
+      "redaction_status": "DOJ: victim PII. Plaintiff requests in camera review.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA01022356",
+      "document_class": "email sender/recipient line",
+      "relief_ordered": "Produce the email with sender and recipient names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ groups this among six emails where the redacted sender or recipient names are victim names.",
+      "released_status": "Archive route and PDF viewer return 200, but no unredacted sender/recipient version was verified.",
+      "redaction_status": "DOJ: victim PII. Plaintiff requests in camera review.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/party positions; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA01703108",
+      "document_class": "DOJ potential co-conspirator document",
+      "relief_ordered": "Produce the DOJ document with potential co-conspirator names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ says this is an old draft photocopy with redactions already present in the original file; DOJ says it has not located an unredacted version of that specific photocopy and points to substantially similar EFTA00194840.",
+      "released_status": "Archive route and PDF viewer return 200; no unredacted exact photocopy was acquired or verified.",
+      "redaction_status": "DOJ: original-file redactions and victim names in similar unredacted documents.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/DOJ statement; unresolved for court acceptance and exact source completeness.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA00038227",
+      "document_class": "DOJ potential co-conspirator document",
+      "relief_ordered": "Produce the DOJ document with potential co-conspirator names unredacted, or show cause why the redactions should not be removed.",
+      "doj_response": "DOJ says from/to redactions protect law-enforcement personnel, three co-conspirator-heading names are victims, and redactions for Leslie Groff were removed because she has not asserted victim status.",
+      "released_status": "Archive route and PDF viewer return 200; DOJ says a revised-redaction document is available, but full unredaction was not verified.",
+      "redaction_status": "DOJ: law-enforcement names/emails plus victim PII; one non-victim name unredacted per DOJ.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/DOJ statement; unresolved for court acceptance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA01245620",
+      "document_class": "FD-302 report; underlying FBI interview notes ordered",
+      "relief_ordered": "Produce the underlying FBI interview notes that formed the basis for the FD-302 report, with appropriate victim-information redactions, or show cause why the notes should not be produced.",
+      "doj_response": "DOJ says underlying handwritten notes have not been produced because they are deemed duplicative of typewritten reports and create added victim-PII redaction risk.",
+      "released_status": "Archive route and PDF viewer return 200 for the report; underlying notes were not acquired or verified.",
+      "redaction_status": "Underlying notes withheld/not produced; redaction status unresolved.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/DOJ statement; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA02858481",
+      "document_class": "FD-302 report; underlying FBI interview notes ordered",
+      "relief_ordered": "Produce the underlying FBI interview notes that formed the basis for the FD-302 report, with appropriate victim-information redactions, or show cause why the notes should not be produced.",
+      "doj_response": "DOJ says underlying handwritten notes have not been produced because they are deemed duplicative of typewritten reports and create added victim-PII redaction risk.",
+      "released_status": "Archive route and PDF viewer return 200 for the report; underlying notes were not acquired or verified.",
+      "redaction_status": "Underlying notes withheld/not produced; redaction status unresolved.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/DOJ statement; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA02858491",
+      "document_class": "FD-302 report; underlying FBI interview notes ordered",
+      "relief_ordered": "Produce the underlying FBI interview notes that formed the basis for the FD-302 report, with appropriate victim-information redactions, or show cause why the notes should not be produced.",
+      "doj_response": "DOJ says underlying handwritten notes have not been produced because they are deemed duplicative of typewritten reports and create added victim-PII redaction risk.",
+      "released_status": "Archive route and PDF viewer return 200 for the report; underlying notes were not acquired or verified.",
+      "redaction_status": "Underlying notes withheld/not produced; redaction status unresolved.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/DOJ statement; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "bates_id": "EFTA02858495",
+      "document_class": "FD-302 report; underlying FBI interview notes ordered",
+      "relief_ordered": "Produce the underlying FBI interview notes that formed the basis for the FD-302 report, with appropriate victim-information redactions, or show cause why the notes should not be produced.",
+      "doj_response": "DOJ says underlying handwritten notes have not been produced because they are deemed duplicative of typewritten reports and create added victim-PII redaction risk.",
+      "released_status": "Archive route and PDF viewer return 200 for the report; underlying notes were not acquired or verified.",
+      "redaction_status": "Underlying notes withheld/not produced; redaction status unresolved.",
+      "deadline": "2026-07-02",
+      "confidence": "High for order/DOJ statement; unresolved for final compliance.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    }
+  ],
+  "deadline_ledger": [
+    {
+      "item": "Order entered",
+      "deadline": "2026-06-25",
+      "established_record": "ECF 15 granted preliminary injunction and set a July 2, 2026 deadline for the listed compliance/show-cause items.",
+      "doj_position": "DOJ treated the order as a show-cause order and disputed that it had conceded any EFTA violation.",
+      "plaintiff_position": "Plaintiff later moved to enforce, arguing DOJ had refused to comply.",
+      "current_status": "Established docket event; compliance remains unresolved.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20"
+      ]
+    },
+    {
+      "item": "Eight email sender/recipient rows",
+      "deadline": "2026-07-02",
+      "established_record": "ECF 15 gave DOJ a produce-or-show-cause path for eight email records.",
+      "doj_position": "Six contain victim names; two contain private email-address redactions.",
+      "plaintiff_position": "Plaintiff seeks production for two conceded non-victim rows and in camera review for victim-information claims.",
+      "current_status": "No unredacted production verified in acquired filings.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "item": "Two potential co-conspirator-document rows",
+      "deadline": "2026-07-02",
+      "established_record": "ECF 15 gave DOJ a produce-or-show-cause path for EFTA01703108 and EFTA00038227.",
+      "doj_position": "DOJ cited victim PII, law-enforcement redactions, one removed non-victim redaction, and an unavailable exact unredacted old draft photocopy.",
+      "plaintiff_position": "Plaintiff seeks in camera review and production where DOJ concedes no victim information.",
+      "current_status": "Not finally resolved by acquired filings.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "item": "Four underlying FBI interview-note rows",
+      "deadline": "2026-07-02",
+      "established_record": "ECF 15 targeted notes underlying four FD-302 reports.",
+      "doj_position": "DOJ says handwritten notes are duplicative and hard to quality-control for victim PII.",
+      "plaintiff_position": "Plaintiff says EFTA has no duplicative-document or difficult-review exception.",
+      "current_status": "Underlying notes not acquired or verified.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "item": "Foreign-language materials review and production notice",
+      "deadline": "Act deadline: 2025-12-19; court notice: 2026-07-02",
+      "established_record": "ECF 15 ordered DOJ to initiate review and production and notify the court and parties that review was underway.",
+      "doj_position": "DOJ said it had advised Congress that first-level review of foreign-language responsiveness was not practicable and that the court should not supplant Congress's acceptance.",
+      "plaintiff_position": "Plaintiff says this directive had no show-cause alternative and DOJ ignored it.",
+      "current_status": "No review notice or production was acquired or verified.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20"
+      ]
+    },
+    {
+      "item": "Federal Register redaction log",
+      "deadline": "Act deadline: 2025-12-19; court deadline: 2026-07-02",
+      "established_record": "ECF 15 ordered DOJ either to publish the EFTA section 2(c)(2) Federal Register redaction log and update it with future releases, or show cause.",
+      "doj_position": "DOJ says it provided Congress categories and a summary and will submit the notice for Federal Register publication.",
+      "plaintiff_position": "Plaintiff says a summary is not the itemized redaction log required by section 2(c)(2).",
+      "current_status": "Federal Register API search returned zero documents for the exact Act name; no itemized log was acquired or verified.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20"
+      ]
+    },
+    {
+      "item": "Plaintiff enforcement motion",
+      "deadline": "2026-07-13",
+      "established_record": "ECF 20 asks for daily fines, expedited administrative-record production, and in camera review.",
+      "doj_position": "No later DOJ Phang/DOJ response was acquired before this July 18, 2026 publication run.",
+      "plaintiff_position": "Plaintiff proposed a $1,000-per-day enforcement order in ECF 20-1.",
+      "current_status": "Pending/unresolved in acquired primary filings.",
+      "sources": [
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "item": "Later non-party filing",
+      "deadline": "2026-07-15",
+      "established_record": "ECF 21 and 21-1 are a non-party motion/addendum, acquired but not used to state Phang/DOJ compliance.",
+      "doj_position": "Not a DOJ filing.",
+      "plaintiff_position": "Not a Phang filing.",
+      "current_status": "Excluded from compliance-status finding except as docket context.",
+      "sources": [
+        {
+          "id": "phang_ecf_21",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 21",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-motion-to-intervene-2026-07-15.pdf"
+        },
+        {
+          "id": "phang_ecf_21_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 21-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-1-addendum-2026-07-15.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_21",
+        "phang_ecf_21_1"
+      ]
+    }
+  ],
+  "claim_separation": [
+    {
+      "type": "Court finding",
+      "claim": "The court granted Phang's preliminary-injunction motion and stated that the Attorney General had conceded the EFTA merits arguments for purposes of the motion by not responding substantively.",
+      "status": "Established as a court finding in ECF 16; not a final merits judgment.",
+      "sources": [
+        {
+          "id": "phang_ecf_16",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 16",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-16-memorandum-opinion-2026-06-25.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_16"
+      ]
+    },
+    {
+      "type": "Plaintiff claim",
+      "claim": "Phang claims DOJ refused to review foreign-language documents, refused to produce an itemized redaction explanation, and refused to produce documents DOJ says contain no victim information.",
+      "status": "Plaintiff litigation position.",
+      "sources": [
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    },
+    {
+      "type": "DOJ position",
+      "claim": "DOJ says it has not knowingly violated EFTA and that the court should not order further production because redactions protect victims, law enforcement personnel, private email addresses, and departmental resources.",
+      "status": "DOJ litigation position.",
+      "sources": [
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_19"
+      ]
+    },
+    {
+      "type": "Maxwell allegation",
+      "claim": "Maxwell's post-conviction claims are published here only as DOJ characterizes them in ECF 863, not as established facts.",
+      "status": "Allegation category; underlying Maxwell motion/exhibits were not acquired in this task.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "type": "Established record",
+      "claim": "The acquired primary PDFs are ECF 15, 16, 19, 20, 20-1, 21, 21-1 in Phang v. Blanche and ECF 863 in United States v. Maxwell; every PDF has a SHA-256 hash and extracted text.",
+      "status": "Established by local acquisition and hashing.",
+      "sources": [
+        {
+          "id": "phang_ecf_15",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 15",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_16",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 16",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-16-memorandum-opinion-2026-06-25.pdf"
+        },
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_21",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 21",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-motion-to-intervene-2026-07-15.pdf"
+        },
+        {
+          "id": "phang_ecf_21_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 21-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-1-addendum-2026-07-15.pdf"
+        },
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_16",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1",
+        "phang_ecf_21",
+        "phang_ecf_21_1",
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "type": "Unresolved",
+      "claim": "Current compliance is unresolved: DOJ showed cause instead of verified public unredaction, Phang moved to enforce, and no later Phang/DOJ compliance ruling was acquired before July 18, 2026.",
+      "status": "Current-status statement with source gaps disclosed.",
+      "sources": [
+        {
+          "id": "phang_ecf_19",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 19",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf"
+        },
+        {
+          "id": "phang_ecf_20",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf"
+        },
+        {
+          "id": "phang_ecf_20_1",
+          "label": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.) ECF 20-1",
+          "url": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf"
+        }
+      ],
+      "source_ids": [
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ]
+    }
+  ],
+  "maxwell_matrix": [
+    {
+      "maxwell_allegation": "The non-prosecution agreement barred or undermined the later prosecution.",
+      "doj_position": "DOJ says the claim is procedurally barred and meritless, and that later public materials do not disturb the prior rulings described in ECF 863.",
+      "status": "Maxwell allegation vs DOJ position only.",
+      "source_limit": "Underlying Maxwell motion/exhibits were not acquired here; no petition-specific fact claim is treated as established.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "maxwell_allegation": "New EFTA material shows government failure tied to the NPA history.",
+      "doj_position": "DOJ says the cited EFTA material has no bearing on the NPA text or negotiation history; it also notes a citation/exhibit mismatch involving EFTA00190632 and EFTA00225523.",
+      "status": "DOJ characterization; not independently adopted.",
+      "source_limit": "The matrix does not publish the underlying Maxwell exhibit set.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "maxwell_allegation": "Victims, victim lawyers, or prosecution conduct undermined the conviction.",
+      "doj_position": "DOJ characterizes these claims as procedurally barred and meritless.",
+      "status": "Allegation/position separation.",
+      "source_limit": "No victim-identifying detail is repeated.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "maxwell_allegation": "Government Exhibit 52 and contact-book evidence warrant post-conviction relief.",
+      "doj_position": "DOJ characterizes the Exhibit 52/contact-book claims as procedurally barred and meritless.",
+      "status": "Allegation/position separation.",
+      "source_limit": "No standalone identity inference is published from the contact-book topic.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "maxwell_allegation": "Delay or lost/destroyed/missing records caused prejudice.",
+      "doj_position": "DOJ says the arguments are speculative, often based on materials available before trial, and do not show definite prejudice.",
+      "status": "Allegation/position separation.",
+      "source_limit": "No underlying-record absence claim is published as fact.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    },
+    {
+      "maxwell_allegation": "Financial evidence, sentencing, or miscellaneous new materials warrant relief.",
+      "doj_position": "DOJ characterizes the remaining categories as procedurally barred and meritless.",
+      "status": "Allegation/position separation.",
+      "source_limit": "Only the broad DOJ response category is published.",
+      "sources": [
+        {
+          "id": "maxwell_ecf_863",
+          "label": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.) ECF 863",
+          "url": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf"
+        }
+      ],
+      "source_ids": [
+        "maxwell_ecf_863"
+      ]
+    }
+  ],
+  "missing_primaries": [
+    "Unredacted sender/recipient versions for the eight email rows were not acquired or verified.",
+    "The exact unredacted old-draft photocopy for EFTA01703108 was not acquired; DOJ says it has not located that exact unredacted photocopy.",
+    "Underlying handwritten FBI interview notes for EFTA01245620, EFTA02858481, EFTA02858491, and EFTA02858495 were not acquired or verified.",
+    "A Federal Register itemized EFTA section 2(c)(2) redaction log was not acquired or verified.",
+    "A foreign-language review-and-production notice was not acquired or verified.",
+    "Maxwell's 2255 motion and exhibit set were not acquired; the Maxwell matrix uses only DOJ's ECF 863 characterizations.",
+    "No later Phang/DOJ compliance ruling or DOJ reply filing was acquired before this July 18, 2026 publication run; ECF 21 is non-party material."
+  ],
+  "claim_gate": {
+    "total_claims": 34,
+    "claims_with_primary_sources": 34,
+    "orphan_claims": 0
+  }
+}

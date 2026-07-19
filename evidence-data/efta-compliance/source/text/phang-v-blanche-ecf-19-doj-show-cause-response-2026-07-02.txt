@@ -1,0 +1,483 @@
+--- PAGE 1 ---
+UNITED STATES DISTRICT COURT 
+FOR THE DISTRICT OF COLUMBIA 
+ 
+ 
+KATIE PHANG, 
+ 
+ Plaintiff, 
+ 
+ v. 
+ 
+TODD BLANCHE, in his official capacity as 
+Acting Attorney General of the United States, 
+ 
+  Defendant. 
+ 
+Civil Action No. 26-1417 (EGS) 
+ 
+DEFENDANT’S RESPONSE TO  
+ORDER TO SHOW CAUSE 
+ 
+ 
+ 
+ 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 1 of 17
+
+
+--- PAGE 2 ---
+- 2 - 
+PRELIMINARY STATEMENT 
+Defendant Todd Blanche, in his official capacity as Acting Attorney General of the United 
+States (the “Government” or “Department”), through counsel, respectfully submit s this response 
+to the Court’s order styled as granting Plaintiff’s motion for a preliminary injunction (“Order”) 
+(ECF No. 15) .  As both the Order and the Court’s memorandum opinion (“Op.”) (ECF No. 16) 
+make clear, the Court has not ordered “the immediate production of documents,” but rather has 
+ordered the Department to “show cause if [it] declines to do so.”  Op. 48; see also Order 1-2.  The 
+Government thus treats this as a response to a show cause order. 
+ As discussed in more detail below, the Department has devoted incredible time and 
+resources to complying with the Epstein Files Transparency Act (“EFTA”).  The EFTA required 
+the Department to review over six million documents for responsiveness and potential withholding 
+and redactions to protect victims  and other sensitive or privileged information.  It did so without 
+providing resources or appropriations, such that the Department pulled attorneys away from their 
+important duties to complete this work. 
+Although the Government strongly disagrees with the Court’s ruling that the EFTA  is 
+enforceable by private parties through the Administrative Procedure Act, the Government 
+welcomes this opportunity to resolve any confusion regarding the records at issue in this case.
+1  To 
+be clear, the Department is committed to transparency and compliance with the EFTA.  Although 
+the Court stated that the Department “conceded that [it] is in violation of the Act,” the Court 
+elsewhere recognized that the Department did not expressly concede anything of the sort; rather, 
+because the Government raised only “jurisdictional arguments,” the Court “treat[ed] the 
+unaddressed arguments as conceded” under this Court’s local rule 7(b).  Op. 36, 46.  The 
+ 
+1 Pub. L. No. 119-38. 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 2 of 17
+
+
+--- PAGE 3 ---
+- 3 - 
+Government relied on those jurisdictional arguments because it was (and still is) confident they 
+were correct —not because the Department believes it has violated the EFTA .  Indeed, the 
+Department has not knowingly violated, nor has it ever acknowledged violating, the EFTA  as it 
+continues working to comply with statutory requirements.    
+As will become apparent, it would contravene  the settled application of the EFTA for the 
+Department to produce unredacted versions of many of the records at issue, and nothing requires  
+that result. “The purpose of a preliminary injunction is merely to preserve the relative positions of 
+the parties,” and “where a federal district court has granted a preliminary injunction, the parties 
+generally will have had the benefit neither of a full opportunity to present their cases nor of a final 
+judicial decision based on the actual merits of the controversy.”  Univ. of Tex. V. Camenisch, 451 
+U.S. 390, 396 (1981).  It follows that “a party addressing only issues of preliminary relief should 
+not ordinarily be bound by its abbreviated and only partially informed presentation of the merits.”  
+11A Charles Alan Wright & Arthur R. Miller, Fed. Prac. & Proc. Civ. § 2950 n.14 (3d ed. Apr. 
+2026 update).  In other words, while raising only threshold arguments may have impacted the 
+court’s consideration of the merits on the then-“pending motion,” Op. 36, it does not amount to a 
+concession that binds the Governme nt through the remainder of litigation.  Any other approach 
+would undermine the distinction between a preliminary injunction and a final judgment on the 
+merits.  See Camenisch, 451 U.S. at 395 (“[I]t is generally inappropriate for a federal court at the 
+preliminary-injunction stage to give a final judgment on the merits.”). 
+Below, the Government shows cause why the Court should not order it to take any 
+mandatory action requested by Plaintiff. 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 3 of 17
+
+
+--- PAGE 4 ---
+- 4 - 
+BACKGROUND 
+President Donald J. Trump signed the EFTA into law on November 19, 2025, the same day 
+the Senate passed it. Order, ECF No. 16 at 2–3 (citation omitted). The EFTA “requires the release 
+of documents relating to Mr. Epstein, subject to five permitted grounds for withholding, requires 
+any redactions to be accompanied by a written justification published in the Federal Register, and 
+a report to Congress upon the completion of the release of records.”  Id. at 3. 
+ Section 2(a) of the EFTA requires the Attorney General to “make publicly available in a 
+searchable and downloadable format all unclassified records, documents, communications, and 
+investigative materials in the possession of the Department of Justice, including the Federal Bureau 
+of Investigation and United S tates Attorneys’ Offices, that relate to” nine distinct categories 
+relating to the Mr. Epstein, Ghislaine Maxwell, and the Department of Justice’s investigations of 
+them. EFTA § 2(a). Section 2(a) did not require the release of materials that are subject to the 
+EFTA’s permitted grounds for withholding.  Id. 
+ Section 2(b) provides that “[n]o record shall be withheld, delayed or redacted on the basis 
+of embarrassment, reputational harm, or political sensitivity, including to any governmental 
+official, public figure, or foreign dignitary.”  EFTA § 2(a)(1)–(9). 
+ Section 2(c) identifies five categories of materials for which the Attorney General “may 
+withhold or redact the segregable portions ” and requires redactions to “be accompanied by a 
+written justification in the Federal Register and submitted to Congress.”  EFTA §  2(c)(1), (2).  
+These five categories are materials that: 
+(A) contain personally identifiable information of victims or 
+victims’ personal and medical files and similar files the 
+disclosure of which would constitute a clearly unwarranted 
+invasion of personal privacy; 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 4 of 17
+
+
+--- PAGE 5 ---
+- 5 - 
+(B) depict or contain child sexual abuse materials (CSAM) as 
+defined under 18 U.S.C. 2256 and prohibited under 18 
+U.S.C. 2252–2252A; 
+(C) would jeopardize an active federal investigation or ongoing 
+prosecution, provided that such withholding is narrowly 
+tailored and temporary; 
+(D) depict or contain images of death, physical abuse, or injury 
+of any person; or 
+(E) contain information specifically authorized under criteria 
+established by an Executive order to be kept secret in the 
+interest of national defense or foreign policy and are in fact 
+properly classified pursuant to such Executive order. 
+EFTA § 2(c)(1)(A)–E. 
+Section 2(c) also requires the Attorney General to declassify covered classified information 
+“to the maximum extent possible,” EFTA § 2(c)(3), a nd, for information that cannot be 
+declassified, “release an unclassified summary for each of the redacted or withheld classified 
+information.”  EFTA § 2(c)(3)(A).  It also requires that decisions to declassify covered information 
+be “published in the Federal Register and submitted to Congress, including the date of 
+classification, the identity of the classifying authority, and an unclassified summary of the 
+justification.”  EFTA § 2(c)(4). 
+Section 3 provides that within fifteen days of the public release of materials covered by the 
+EFTA, “the Attorney General shall submit to the House and Senate Committees on the Judiciary 
+a report listing:” 
+(A) All categories of records released and withheld. 
+(B) A summary of redactions made, including legal basis. 
+(C) A list of all government officials and politically exposed 
+persons named or referenced in the released materials, with 
+no redactions permitted under subsection (b)(1). 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 5 of 17
+
+
+--- PAGE 6 ---
+- 6 - 
+EFTA § 3. 
+ The EFTA did not provide any resources or appropriations to the Department of Justice to 
+enable compliance with these mandates. 
+The Department’s Compliance with the EFTA 
+The day that Congress passed the EFTA and President Trump signed it into law, Deputy 
+Attorney General Todd Blanche issued a letter to Congress stating  that the Department was 
+“producing hundreds of thousands of pages of responsive materials in compliance with” the EFTA. 
+Letter from Todd Blanche, Deputy U.S. Att’y Gen., to Members of Congress at 1 (Dec. 19, 2025), 
+Exhibit D to Ward -Packard Decl., ECF No. 9- 3. The letter explained that “the Department is 
+continuing to review additional documents and other ite ms for responsiveness” and would make 
+withholdings and redactions consistent with section 2(c) of EFTA and applicable privileges, which 
+EFTA did not abrogate. Id. at 2–3 (explaining that it is a “long-held principle that Congress speaks 
+clearly when it intends to abrogate a common law principle or privilege” (citing Bassett v. United 
+States, 137 U.S. 496, 505–06 (1890)).  The letter  also explained that “[a] privilege log will be 
+produced in due course as required under the Act.” Id. at 3. 
+In the same letter, Deputy Attorney General Blanche made clear that “[p]rotecting victims 
+is of the highest priority for President Trump, the Attorney General, the Federal Bureau of 
+Investigation, and the Department of Justice.”  Id. To protect victims, “the Department solicited 
+counsel for any victims of Jeffrey Epstein and invited counsel to provide [the Department] with 
+names of victims, whether previously identified or not.” Id.  This resulted in “ over 1,200 names 
+being identified as victims or their relatives,” which the Department redacted. Id. 
+The Department immediately made disclosures on the day the EFTA was enacted. See  
+Compl., ECF No. 1, ¶ 24–25.  It also made disclosures on December 20, 22, and 23, 2025, and on 
+January 30, 2026.  ECF No. 16 at 8 (citing Mot., ECF No. 9- 1, at 14).  And on February 2, 2026, 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 6 of 17
+
+
+--- PAGE 7 ---
+- 7 - 
+the Department issued a summary identifying the records that were withheld and the legal bases 
+for any redactions.  Compl. ¶ 25.  Then, on February 14, 2026, the Department sent a letter to the 
+Chairmen and Ranking Members of the Senate Judiciary Committee and House Judiciary 
+Committee embodying the r eport required by section 3 of the EFTA.  See Letter from Todd 
+Blanche, Deputy U.S. Att’y Gen. to Chairman Chuck Grassley, Ranking Member Dick Durbin, 
+Chairman Jim Jordan, Ranking Member Jamie Raskin (Feb. 14, 2026), Exhibit F to Ward-Packard 
+Decl., ECF No. 9-3.  This letter included a “Summary of Redactions Made and Legal Basis” and 
+a “List of All Government Officials and Politically Exposed Persons” named or referenced in the 
+released materials.  Id. at 2–6. 
+In addition to complying with the EFTA, the Department has gone beyond the EFTA’s 
+requirements by inviting Members of Congress to view unredacted versions of the more than three 
+million files released by the Department of Justice.
+2  Multiple  Members of Congress have done 
+so. 
+JURISDICTION 
+ This Court concluded that private litigants may enforce the provisions of the EFTA through 
+the Administrative Procedure Act (“APA”).  Op. 29-35.  The Government must reiterate its strong 
+disagreement with that conclusion, which threatens to disrupt the “interdependence” and 
+“reciprocity” that has characterized the relationship  between Congress and the Executive Branch  
+as the Department implements the EFTA.  See Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 
+579, 635 (1952) (Jackson, J., concurring).  Any disputes about the production of documents are 
+best “hashed out in the ‘hurly- burly, the give -and-take of the political process between the 
+ 
+2 See Stephen Groves, Lawmakers will have access to unredacted versions of released Epstein 
+files, Associated Press, Feb. 6, 2026, available at  https://apnews.com/article/epstein-files-
+congress-unredacted-justice-department-5219f89459e80a141b84e1aa2551b0d2.  
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 7 of 17
+
+
+--- PAGE 8 ---
+- 8 - 
+legislative and the executive.’”  Trump v. Mazars USA, LLP , 591 U.S. 848, 859 (2020) (quoting 
+Hearings on S. 2170 et al. before the Subcommittee on Intergovernmental Relations of the Senate 
+Committee on Government Operations, 94th Cong., 1st Sess., 87 (1975) (A. Scalia, Assistant 
+Attorney General, Office of Legal Counsel)). 
+ After all, “creating a cause of action is a legislative endeavor,” Egbert v. Boule , 596 U.S. 
+482, 491 (2022).  But Congress did not create one in the EFTA, see Pub. L. No. 119-38.  Nor can 
+private parties enforce the EFTA by way of the APA.  Under 5 U.S.C. § 704, judi cial review is 
+available only as to “final agency action for which there is no other adequate remedy in a court.”   
+This limitation “reflects Congress’ judgment that ‘the general grant of review in the APA’ ought 
+not [to] ‘duplicate existing procedures for review of agency action’ or ‘provide additional judicial 
+remedies in situations where Congress has provided special and adequate review procedures.’”  
+Citizens for Responsibility and Ethics in Washington (“CREW”) v. Dep’t of Just., 846 F.3d 1235, 
+1245-46 (D.C. Cir. 2017) (quoting Bowen v. Massachusetts, 487 U.S. 879, 903 (1988)). 
+ Here, the Freedom of Information Act (“FOIA”) provides an adequate remedy (as Congress 
+was well aware when it omitted a right of action from the EFTA) .  See Elec. Priv. Info. Ctr. V. 
+IRS, 910 F.3d 1232, 1244 (D.C. Cir. 2018) (concluding in a variety of circumstances that “FOIA 
+offers an ‘adequate remedy’ within the meaning of [the APA]”).  Indeed, courts have held time 
+and time again that “FOIA is the exclusive remedy for obtaining [purportedly] improperly withheld 
+agency records.”  Ray v. Fed. Bureau of Prisons, 811 F. Supp. 2d 245, 249 (D.D.C. 2011) (citing 
+Johnson v. Exec. Off. for U.S. Att’ys, 310 F.3d 771, 777 (D.C. Cir. 2002)).
+3 
+ 
+3 See also CREW, 846 F.3d at 1245-46 (concluding that FOIA provides an adequate remedy such 
+that review under the APA is barred); Harvey v. Lynch , 123 F. Supp. 3d 3, 7–8 (D.D.C. 2015) 
+(“[C]ourts in this Circuit have uniformly concluded that they lack jurisdiction over APA claims 
+that seek remedies available under FOIA.” (cleaned up)); Chaverra v. Immigr. & Customs Enf’t , 
+Civ. A. No. 18-289 (JEB), 2018 WL 4762259, at *3 (D.D.C. Oct. 2, 2018) (internal citations and 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 8 of 17
+
+
+--- PAGE 9 ---
+- 9 - 
+ This Court held otherwise based on its conclusion that Plaintiff  “likely would not be able 
+to obtain” the unredacted documents she seeks because “they would likely be subject to [FOIA] 
+exemptions” on disclosure.  Op. 30.  According to the Court, the EFTA “mandates broad 
+disclosures that would be exempted under FOIA,” id. at 32, so FOIA is not an adequate remedy. 
+ Respectfully, the Court’s reasoning misunderstands what counts as an adequate remedy.  
+Indeed, Chief Judge Boasberg has rejected this exact sort of reasoning.  See Chaberra, 2018 WL 
+4762259, at *4.  It does not matter that FOIA “exemptions might apply,” because “[i]t is well 
+settled that the alternate remedy must be only of the ‘same genre’; it need not be identical.”  Id. 
+(quoting Garcia v. Vilsack, 563 F.3d 519, 522 (D.C. Cir. 2009) (alternative remedy “need not 
+provide relief identical to relief under the APA, so long as it offers relief of the same genre”)).  
+“The relevant ‘genre’ here is easy to identify: the disclosure of documents[.]”  Id.  “That is what 
+Plaintiff seeks, and that is what FOI A provides.”  Id.  Simply put, “the possibility that a plaintiff 
+‘might fare worse’ under FOIA does not entitle her to bring a claim under the APA.”  Id. (quoting 
+Greenpeace, 311 F. Supp. 3d at 126.  The fact that EFTA is a disclosure law makes no difference.  
+Because the EFTA lacks a cause of action, Plaintiff must find one somewhere.  She  cannot do so 
+in the APA , because  “FOIA itself strikes the balance between statutory duties and judicial 
+enforcement that Congress desired.”  CREW, 846 F.3d at 1245.   
+ Ignoring that Congressional choice would have problematic consequences.  If other courts 
+took the same erroneous approach, they would soon be flooded with piecemeal litigation over 
+ 
+quotations omitted) (“There is ‘little doubt that FOIA offers an adequate remedy within the 
+meaning of section 704,’ . . . when litigants seek[]to ‘gain access to . . . records.’” (alterations in 
+original)); Greenpeace, Inc. v. Dep’t of Homeland Sec., 311 F. Supp. 3d 110, 126 (D.D.C. 2018) 
+(dismissing APA claim for failure to state a claim because “FOIA offers an ‘adequate remedy’”); 
+Cause of Action Inst. v. Eggleston, 224 F. Supp. 3d 63, 75 (D.D.C. 2016) (“Courts in this circuit 
+have [ ] uniformly declined jurisdiction over APA claims that sought remedies made available by 
+FOIA.”) (internal quotation marks and citations omitted). 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 9 of 17
+
+
+--- PAGE 10 ---
+- 10 - 
+every file in the library  while disincentivizing Congress from acting to address any lingering 
+concerns.  As in other instances, the better approach is for members of Congress to view the 
+unredacted materials and engage with the Department, which would respond accordingly.  That 
+productive exchange would better serve the interests of transparency and (where appropriate) 
+privacy than scattershot judicial enforcement.   
+ That said, the Government understands the Court has ruled on this issue.  Because the 
+Government views the Court’s Order as more in the nature of an (unappealable) show cause order, 
+the Government has not had occasion to consider appellate review.  But the G overnment’s 
+following discussion of the categories of records at issue should underscore the burdens, on private 
+parties, the Department, and courts, that this Court’s reasoning would impose. 
+DISCUSSION 
+The Court’s Order lists five required actions.  The Government addresses each in turn. 
+1.  The Court has ordered the Department to either produce to the public the emails bearing 
+Bates numbers (1) EFTA01187999, (2) EFTA01930501, (3) ETFA01928255, (4) 
+EFTA02648868, (5) EFTA02504630, (6) EFTA01022356, (7) EFTA00749245, and (8) 
+EFTA00628112, with sender and recipient names unredacted, or show cause why the redactions 
+should not be removed. 
+For the first six of the eight emails listed, the redacted sender and/or recipient names are 
+the names of victims.  One of the complicating aspects of administering the EFTA is that many 
+communications written by victims, without context, can appear disturbing on their face .  The 
+EFTA contemplates that the Department may withhold or redact the segregable portions of records 
+that contain the personally identifiable information ( “PII”) of victims.  EFTA §  2(c).  Consistent 
+with that statutory authority, the Department has sought to prevent victim PII from becoming 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 10 of 17
+
+
+--- PAGE 11 ---
+- 11 - 
+public even in instances where the victims eventually became complicit or engaged in 
+reprehensible activity or communications.  See, e.g., United States Department of Justice, Epstein 
+Files Transparency Act – Section 3 Report to Congress at 2 (Feb. 14, 2026) (“Section 3 Report”).
+4  
+The Government appreciates the Court’s recognition that “redactions to protect victims’ 
+information” is “appropriate.”  Order 2. 
+The redacted portion of the seventh email listed does not contain a standalone name—
+rather, for unclear technical reasons, it contains the same email address twice (once in quotation 
+marks (“”) and once in angle brackets (< >) .  In administering the EFTA , consistent with the 
+Privacy Act, the Department has left redacted individual email addresses to avoid “ clearly 
+unwarranted invasion of personal privacy.”  Section 3 Report at 2; see also EFTA First Level 
+Review Protocol at 8 (Jan. 4, 2026) (Under “Privacy Act Redactions,” “You must also redact PII 
+that may be present in the documents [including] . . . email addresses”).5  Duplicates of the seventh 
+email are in the Epstein Files Library and contain the same redaction.6  Further, the individual who 
+emailed Jeffrey Epstein that he “loved the torture video” has been repeatedly identified by 
+Members of Congress granted access to unredacted files.  Representative Thomas Massie detailed 
+his role in the identification via X, stating: 
+2) I forced the release of every man’s name that I could find in the redactions so 
+far. This includes the [individual]  (now resigned) who discussed the torture video 
+with Epstein. I was the one who got that out there. 
+… 
+6) You (or your staff) can post the EFTA# for documents that you believe contain 
+men’s names redacted, and I’ll go look at those documents at DOJ to see if those 
+documents contain men’s names. If the redacted identifier is an email address not 
+ 
+4 Available at https://www.justice.gov/opa/media/1434856/dl?inline. 
+5 Available at https://www.justice.gov/media/1426281/dl?inline. 
+6 See EFTA01827430, EFTA00881786, EFTA00749241, EFTA02524962, EFTA02441899, 
+EFTA00774231, EFTA00663685, and EFTA01781626. 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 11 of 17
+
+
+--- PAGE 12 ---
+- 12 - 
+associated with a name, I can put the email address back into the DOJ computer as 
+a search term to see if it is associated with a man’s name elsewhere in the 
+documents. This is how I discovered … who Epstein was discussing a torture video 
+with.
+7 
+ 
+Given this and widespread media attention as to the purported identity of the sender of this email—
+information Plaintiff could have readily obtained with a simple internet search —unredacting the 
+email address would not only be inconsistent with how other private email addresses have been 
+treated; it would serve no purpose beyond sharing that private email address.   
+The redacted portion of the eighth email listed also includes only a private email address, 
+not a person’s name.  Thus, it was properly redacted.  See EFTA First Level Review Protocol 8.  
+2. The Court has ordered the Department to either produce to the public the DOJ documents 
+bearing Bates numbers EFTA01703108 and EFTA00038227 with potential co-conspirator names 
+unredacted, or show cause why the redactions should not be removed. 
+The redactions in the “from” and “to” email lines of  EFTA00038227 are for law 
+enforcement personnel, including both names and official email addresses.  See EFTA First Level 
+Review Protocol 8 (“You must also redact . . .  Names of .  . . law enforcement ” and “Email 
+addresses”).  Three of the four names listed under the “co -conspirator” heading belong to 
+individuals who are, in fact, victims.  The redactions applied to the name of Leslie Groff have been 
+removed, as she has not asserted victim status. 8  As the Department explained in its January 30, 
+ 
+7 Representative Thomas Massie ( @RepThomasMassie), X (Feb. 22, 2026), 
+https://x.com/RepThomasMassie/status/2025552086151139488?s=20; see also 172 Cong. Rec. 
+H2428 (daily ed. Mar. 5, 2026) (statement of Rep. F rost of Florida) , noting: “The first one was 
+this file that talked about a torture video.  This right here is an email. The email belongs to...”). 
+8 See Letter by USA as to Ghislaine Maxwell, United States v. Ghislaine Maxwell, No. 20-cr-0330 
+(S.D.N.Y. J an. 31, 2026 ) (explaining that requests for “[r]equests for additional, or corrected, 
+redactions are submitted to an email account (EFTA@usdoj.gov) that is continuously monitored 
+by a team of dedicated Department personnel that are working to redact and replace the 
+documents.”) 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 12 of 17
+
+
+--- PAGE 13 ---
+- 13 - 
+2026 letter to Congress , during its review , the Department engaged extensively with counsel 
+representing victims and other interested parties.  Epstein Files Transparency Act – Production of 
+Department Materials (Jan. 30, 2026).9  Throughout that process, and following further review of 
+communications involving individuals initially identified as victims , the Department determined 
+that certain “individuals whose names were initially being redacted out of an abundance of caution 
+should no longer be redacted.”  The Department acknowledged that those names “were not 
+redacted on a go-forward basis” and that, notwithstanding “steps to minimize the inconsistencies 
+in redacting those individuals’ information, inconsistencies likely remain.”  Id.  A document with 
+revised redactions has been made available on the DOJ’s Epstein Library. 
+EFTA01703108 is a draft indictment from the Southern District of Florida , bearing 
+handwritten notation on page 1 stating “OLD Draft.”   The redactions appearing in this document 
+were present in the original file; the Department has not been able to locate an unredacted version 
+of this specific  photocopy.  The Department does, however, possess unredacted versions  of 
+substantially similar documents, including EFTA00194840, which confirm that all of the redacted 
+names are, once again, victims.10  
+3. The Court has ordered the Department to either produce to the public the underlying FBI 
+interview notes that formed the basis for the FD -302 interview reports bearing Bates numbers 
+EFTA01245620, EFTA02858481, EFTA02858491, and EFTA02858495, with appropriate 
+redactions to protect victims’ information, or show cause why the notes should not be produced. 
+ 
+9 Available at https://www.justice.gov/opa/media/1426091/dl. 
+10 Available at https://www.justice.gov/epstein/files/DataSet%209/EFTA00194840.pdf. 
+ 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 13 of 17
+
+
+--- PAGE 14 ---
+- 14 - 
+ The Department has not produced underlying handwritten notes for FD -302 interview 
+reports because , by their nature, the underlying notes are substantially similar to the ultimate 
+reports, and have accordingly been deemed duplicative of the typewritten reports memorializing 
+the interviews.  Their handwritten nature further complicates the redaction process and increases 
+the risk of inadvertent disclosure of victim P II - including because of technical limitations on the 
+Department’s ability to run meaningful  quality control checks for victim PII across handwritten 
+materials. 
+ 4. The Court has ordered the Department to initiate review and production of foreign-
+language materials that may be subject to production under the EFTA, and provide notice to the 
+Court and all parties that such review is underway. 
+ As the Department advised Congress on January 30, 2026,  “it was not practicable for a 
+first-level reviewer to determine the responsiveness of a foreign language document.”  Department 
+of Justice, Epstein Files Transparency Act – Production of Department Materials at 5 (Jan. 30, 
+2026).
+11  The Court should not supplant Congress’s acceptance of this explanation (and the 
+Government continues to believe the Court lacks the authority to do so). 
+ 5. The Court has ordered the Department to either publish in the Federal Register the 
+redaction log required under the EFTA § 2( c)(2), and update it concurrently with each future 
+release of redacted materials, or show cause why the Department cannot do so.  The Department 
+has provided Congress information about the categories of records released and withheld and a 
+summary of redactions made including the legal justification for those redactions, as required by 
+ 
+11 Available at https://www.justice.gov/opa/media/1426091/dl. 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 14 of 17
+
+
+--- PAGE 15 ---
+- 15 - 
+EFTA §§ 2(c)(2), 3.  The Department will submit the notice for publication in the Federal Register 
+as required under EFTA § 2(c)(2).12   
+CONCLUSION 
+ For these reasons, the Court should not order the Department to take further action as 
+requested by Plaintiff.  As noted, the Government can share additional details regarding specific 
+records in camera or with appropriate protections in place.   
+ In light of the information provided above, including the need to protect victims, law 
+enforcement personnel, and the Department’s resources, should the Court order the Department to 
+take further action, the Government respectfully requests that the Court grant a stay of sixty days 
+so that the Solicitor General has time to consider whether further appellate review is warranted.  
+At a minimum, any such order should be stayed for at least seven days to allow the Government 
+to determine whether to seek emergen cy appellate review.  The Court’s previous rationales for 
+denying a stay would be inapplicable  because the Government does not concede any EFTA 
+violation and the Court would be ordering the Department to take action without a show cause 
+alternative.  See Op. 48. 
+Dated: July 2, 2026 Respectfully submitted, 
+ 
+ /s/ Stanley E. Woodward, Jr.   
+Stanley E. Woodward, Jr. (D.C. Bar No. 997320) 
+Associate Attorney General 
+U.S. Department of Justice 
+950 Pennsylvania Avenue, Northwest 
+Washington, District of Columbia 20530 
+202-514-2000 (telephone) 
+stanley.woodward@usdoj.gov 
+ 
+Counsel for the United States of America 
+ 
+ 
+12 Unlike the 15- day summary report deadline set forth in § 3, the EFTA did not establish a 
+deadline for publication in the Federal Register and submission to Congress under § 2(C)(2). 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 15 of 17
+
+
+--- PAGE 16 ---
+- 16 - 
+ 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 16 of 17
+
+
+--- PAGE 17 ---
+CERTIFICATE OF SERVICE  
+On July 2, 2026, the undersigned hereby certifies that a true and correct copy of the 
+foregoing was electronically filed and served via the CM/ECF system, which will automatically 
+send electronic notification of such filing to all registered parties.  
+ /s/ Stanley E. Woodward, Jr.   
+Stanley E. Woodward, Jr. (D.C. Bar No. 997320) 
+Associate Attorney General 
+U.S. Department of Justice 
+950 Pennsylvania Avenue, Northwest 
+Washington, District of Columbia 20530 
+202-514-2000 (telephone) 
+stanley.woodward@usdoj.gov 
+ 
+Counsel for the United States of America 
+ 
+ 
+Case 1:26-cv-01417-EGS     Document 19     Filed 07/02/26     Page 17 of 17
