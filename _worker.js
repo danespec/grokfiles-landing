@@ -28,6 +28,7 @@ const FRONTDOOR_PATHS = new Set([
   "/evidence-briefs",
   "/banking-records",
   "/document-autopsies",
+  "/document-autopsies/leon-black-transcript",
   "/timeline-reconstructions",
   "/contradiction-ledger",
   "/open-questions",
@@ -182,6 +183,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/open-receipt-slots-epstein-death", "death-open-receipt-slots"],
   ["/investigations/birthday-book-source-object-not-identity-proof", "sensitive-source-reader"],
   ["/investigations/efta-compliance-tracker", "sensitive-efta-compliance-litigation-ad-free"],
+  ["/document-autopsies/leon-black-transcript", "sensitive-transcript-autopsy-ad-free"],
   ["/investigations/trump-in-the-epstein-files", "sensitive-allegation-investigation-ad-free"],
   ["/investigations/trump-in-the-epstein-files/timeline", "sensitive-allegation-investigation-ad-free"],
   ["/investigations/trump-in-the-epstein-files/source-map", "sensitive-allegation-investigation-ad-free"],
@@ -436,6 +438,10 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
   ["/book-of-black/ledger", "/book-of-black/ledger.html"],
   ["/book-of-black/methodology", "/book-of-black/methodology.html"]
 ]);
+
+const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/document-autopsies/leon-black-transcript", "/document-autopsies/leon-black-transcript.html"]
+]);
 const EFTA_DOSSIER_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/archive/EFTA00035147", "2026-07-13"],
   ["https://grokarchivehub.com/archive/EFTA00039025", "2026-07-13"],
@@ -491,6 +497,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/evidence-briefs", "2026-07-12"],
   ["https://grokarchivehub.com/banking-records", "2026-07-16"],
   ["https://grokarchivehub.com/document-autopsies", "2026-07-12"],
+  ["https://grokarchivehub.com/document-autopsies/leon-black-transcript", "2026-07-19"],
   ["https://grokarchivehub.com/timeline-reconstructions", "2026-07-12"],
   ["https://grokarchivehub.com/contradiction-ledger", "2026-07-12"],
   ["https://grokarchivehub.com/open-questions", "2026-07-12"],
@@ -7131,6 +7138,10 @@ export default {
         description: "Published Grok Archive Hub dispatches and source-first reading routes.",
         canonical: "https://grokarchivehub.com/dispatches"
       });
+    }
+
+    if ((request.method === "GET" || request.method === "HEAD") && FRONTDOOR_ROUTE_ASSETS.has(path)) {
+      return serveFrontdoorEnhanced(request, env, FRONTDOOR_ROUTE_ASSETS.get(path));
     }
 
     if (
