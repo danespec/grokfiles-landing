@@ -1,0 +1,8 @@
+1/ New primary-source autopsy: Doug Band's Epstein testimony, line-level and claim-level.
+https://grokarchivehub.com/document-autopsies/doug-band-transcript
+
+2/ Verified lead: the official House Oversight Band transcript was released July 17, 2026 and archived with SHA-256 63b062ff5d3f7a214c3630d2761701f659436ec461e222a55077463a48e72fe9.
+
+3/ The product separates testimony, documentary records, committee premises, denials, memory limits, and unresolved gaps.
+
+4/ Limitation: testimony proves the statement was made. It does not independently prove the truth of every recollection, travel detail, or denial.

@@ -1,0 +1,203 @@
+{
+  "route": "/document-autopsies/doug-band-transcript",
+  "matches": [
+    {
+      "archive_id": "EFTA00582326",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2003-04-13",
+      "named_entity": "Ghislaine Maxwell / WJC account / Doug Band",
+      "transcript_reference": "p.37 lines 14-20; p.38",
+      "exact_relevance": "Acquired exhibit discussed as Band Majority Exhibit 1.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00582326; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA00582156",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2002-10-13",
+      "named_entity": "Ghislaine Maxwell / WJC account",
+      "transcript_reference": "p.60 lines 16-20; p.61",
+      "exact_relevance": "Acquired exhibit discussed as Minority Exhibit B.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00582156; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA00579203",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2004-10-11",
+      "named_entity": "Doug Band / Ghislaine Maxwell",
+      "transcript_reference": "p.64 lines 5-21; p.65",
+      "exact_relevance": "Acquired exhibit discussed as Minority Exhibit D.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00579203; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA00579276",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2004-10-13",
+      "named_entity": "Doug Band / Ghislaine Maxwell",
+      "transcript_reference": "p.67 lines 1-24",
+      "exact_relevance": "Acquired exhibit discussed as Minority Exhibit F.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00579276; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA02335607",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2002-04-21",
+      "named_entity": "Ghislaine Maxwell / WJC account",
+      "transcript_reference": "p.79 lines 17-24; p.80-p.81",
+      "exact_relevance": "Acquired exhibit discussed as Band Majority Exhibit 2.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA02335607; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA00011434",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2001-09-17",
+      "named_entity": "Ghislaine Maxwell / Doug Band",
+      "transcript_reference": "p.82 lines 1-24",
+      "exact_relevance": "Acquired exhibit discussed as first chain in Band Majority Exhibit 3.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00011434; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA00581829",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2001-09-17",
+      "named_entity": "Ghislaine Maxwell / Philip Levine / Doug Band",
+      "transcript_reference": "p.82 lines 1-24",
+      "exact_relevance": "Acquired forwarded duplicate discussed in Band Majority Exhibit 3.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00581829; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "EFTA00582193",
+      "source_class": "DOJ EFTA email PDF",
+      "date": "2002-11-02",
+      "named_entity": "Ghislaine Maxwell / WJC account",
+      "transcript_reference": "p.84 lines 4-9",
+      "exact_relevance": "Acquired exhibit discussed as Band Majority Exhibit 4.",
+      "relationship_to_claim": "CORROBORATES",
+      "confidence": "high",
+      "source": "EFTA00582193; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "DOJ-FLIGHT-LOG",
+      "source_class": "official DOJ flight-log PDF",
+      "date": "2025-02-27",
+      "named_entity": "Clinton / Band / Epstein / Maxwell",
+      "transcript_reference": "pp.57-60; p.66; p.75; p.111",
+      "exact_relevance": "Official flight-log package acquired for flight prompts.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium",
+      "source": "DOJ-FLIGHT-LOG; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "CLINTON-STATEMENT-IMAGE",
+      "source_class": "public statement image",
+      "date": "2019-07-08",
+      "named_entity": "Bill Clinton / Secret Service / Epstein aircraft",
+      "transcript_reference": "pp.24, 35-37, 57-60",
+      "exact_relevance": "Clinton office statement provides a public denial/position about flights and properties.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium",
+      "source": "CLINTON-STATEMENT-IMAGE"
+    },
+    {
+      "archive_id": "HOC-LEON-BLACK-TRANSCRIPT",
+      "source_class": "prior House transcript",
+      "date": "2026-07-17",
+      "named_entity": "Leon Black",
+      "transcript_reference": "p.41; p.119",
+      "exact_relevance": "Band transcript names Black in dinner-attendee and communication-list contexts; prior transcript acquired.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium-high",
+      "source": "HOC-LEON-BLACK-TRANSCRIPT; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "HOC-GATES-TRANSCRIPT",
+      "source_class": "prior House transcript",
+      "date": "2026-06-23",
+      "named_entity": "Bill Gates",
+      "transcript_reference": "p.119",
+      "exact_relevance": "Band answered no to communications with Gates regarding Epstein or Maxwell; prior Gates transcript acquired.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium-high",
+      "source": "HOC-GATES-TRANSCRIPT; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "HOC-GROFF-TRANSCRIPT",
+      "source_class": "prior House transcript",
+      "date": "2026-06-23",
+      "named_entity": "Lesley Groff",
+      "transcript_reference": "p.115",
+      "exact_relevance": "Band answered no to communications with Groff regarding Epstein or Maxwell; Groff transcript acquired.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium-high",
+      "source": "HOC-GROFF-TRANSCRIPT; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "HOC-RUEMMLER-TI-REQUEST",
+      "source_class": "official committee request PDF",
+      "date": "2026-03-03",
+      "named_entity": "Kathryn Ruemmler",
+      "transcript_reference": "p.118",
+      "exact_relevance": "Ruemmler name appears in Band's communication list; request letter acquired, transcript not located.",
+      "relationship_to_claim": "UNRESOLVED",
+      "confidence": "medium",
+      "source": "HOC-RUEMMLER-TI-REQUEST; HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "archive_id": "Birthday Book page 002/126/127 local records",
+      "source_class": "GAH birthday-book derived records",
+      "date": "2003 source object / local data",
+      "named_entity": "Bill Clinton / Alan Dershowitz",
+      "transcript_reference": "source search",
+      "exact_relevance": "Local Birthday Book records mention Clinton but are not used to prove Band transcript claims.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium",
+      "source": "source manifest acquisition gaps"
+    },
+    {
+      "archive_id": "Book of Black local pages",
+      "source_class": "GAH derived dataset",
+      "date": "local derived work",
+      "named_entity": "Bill Clinton / Clinton Foundation / travel",
+      "transcript_reference": "source search",
+      "exact_relevance": "Derived/speculative Book of Black entries were inspected and excluded as proof without underlying primary records.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "high",
+      "source": "source manifest acquisition gaps"
+    },
+    {
+      "archive_id": "Trump-Epstein people-and-roles",
+      "source_class": "GAH structured dataset",
+      "date": "local current dataset",
+      "named_entity": "Bill Clinton",
+      "transcript_reference": "source search",
+      "exact_relevance": "Existing GAH people-and-roles entry treats Clinton as contextual public figure and does not strengthen unrelated claims.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium",
+      "source": "evidence-data/trump-epstein/people-and-roles.json"
+    },
+    {
+      "archive_id": "EFTA compliance tracker",
+      "source_class": "current GAH investigation",
+      "date": "2026-07-18",
+      "named_entity": "EFTA / flight logs",
+      "transcript_reference": "source links",
+      "exact_relevance": "EFTA tracker explains ordered Bates/status handling; linked as methodology context.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "medium",
+      "source": "investigations/efta-compliance-tracker.html"
+    }
+  ]
+}

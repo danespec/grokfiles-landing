@@ -29,6 +29,7 @@ const FRONTDOOR_PATHS = new Set([
   "/banking-records",
   "/document-autopsies",
   "/document-autopsies/leon-black-transcript",
+  "/document-autopsies/doug-band-transcript",
   "/timeline-reconstructions",
   "/contradiction-ledger",
   "/open-questions",
@@ -184,6 +185,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/birthday-book-source-object-not-identity-proof", "sensitive-source-reader"],
   ["/investigations/efta-compliance-tracker", "sensitive-efta-compliance-litigation-ad-free"],
   ["/document-autopsies/leon-black-transcript", "sensitive-transcript-autopsy-ad-free"],
+  ["/document-autopsies/doug-band-transcript", "sensitive-transcript-autopsy-ad-free"],
   ["/investigations/trump-in-the-epstein-files", "sensitive-allegation-investigation-ad-free"],
   ["/investigations/trump-in-the-epstein-files/timeline", "sensitive-allegation-investigation-ad-free"],
   ["/investigations/trump-in-the-epstein-files/source-map", "sensitive-allegation-investigation-ad-free"],
@@ -440,7 +442,8 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
-  ["/document-autopsies/leon-black-transcript", "/document-autopsies/leon-black-transcript.html"]
+  ["/document-autopsies/leon-black-transcript", "/document-autopsies/leon-black-transcript.html"],
+  ["/document-autopsies/doug-band-transcript", "/document-autopsies/doug-band-transcript.html"]
 ]);
 const EFTA_DOSSIER_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/archive/EFTA00035147", "2026-07-13"],
@@ -498,6 +501,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/banking-records", "2026-07-16"],
   ["https://grokarchivehub.com/document-autopsies", "2026-07-12"],
   ["https://grokarchivehub.com/document-autopsies/leon-black-transcript", "2026-07-19"],
+  ["https://grokarchivehub.com/document-autopsies/doug-band-transcript", "2026-07-19"],
   ["https://grokarchivehub.com/timeline-reconstructions", "2026-07-12"],
   ["https://grokarchivehub.com/contradiction-ledger", "2026-07-12"],
   ["https://grokarchivehub.com/open-questions", "2026-07-12"],
