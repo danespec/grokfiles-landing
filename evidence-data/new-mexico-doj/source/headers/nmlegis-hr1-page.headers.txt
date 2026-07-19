@@ -1,0 +1,7 @@
+URL: https://www.nmlegis.gov/Legislation/Legislation?chamber=H&legNo=1&legType=R&year=26
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: a809436767497ea7faf9887d2dd75a7a4f7988639d8bbaf115fe442835b88f85
+Bytes: 78856
+Acquisition method: verified existing local capture

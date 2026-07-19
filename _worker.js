@@ -19,6 +19,7 @@ const FRONTDOOR_PATHS = new Set([
   "/investigations/fara-review-signals-not-legal-conclusions",
   "/investigations/birthday-book-source-object-not-identity-proof",
   "/investigations/efta-compliance-tracker",
+  "/investigations/new-mexico-doj-epstein-records",
   "/investigations/trump-in-the-epstein-files",
   "/investigations/trump-in-the-epstein-files/timeline",
   "/investigations/trump-in-the-epstein-files/source-map",
@@ -184,6 +185,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/open-receipt-slots-epstein-death", "death-open-receipt-slots"],
   ["/investigations/birthday-book-source-object-not-identity-proof", "sensitive-source-reader"],
   ["/investigations/efta-compliance-tracker", "sensitive-efta-compliance-litigation-ad-free"],
+  ["/investigations/new-mexico-doj-epstein-records", "sensitive-legal-records-access-tracker-ad-free"],
   ["/document-autopsies/leon-black-transcript", "sensitive-transcript-autopsy-ad-free"],
   ["/document-autopsies/doug-band-transcript", "sensitive-transcript-autopsy-ad-free"],
   ["/investigations/trump-in-the-epstein-files", "sensitive-allegation-investigation-ad-free"],
@@ -442,6 +444,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/investigations/new-mexico-doj-epstein-records", "/investigations/new-mexico-doj-epstein-records.html"],
   ["/document-autopsies/leon-black-transcript", "/document-autopsies/leon-black-transcript.html"],
   ["/document-autopsies/doug-band-transcript", "/document-autopsies/doug-band-transcript.html"]
 ]);
@@ -491,6 +494,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/fara-review-signals-not-legal-conclusions", "2026-07-12"],
   ["https://grokarchivehub.com/investigations/birthday-book-source-object-not-identity-proof", "2026-07-12"],
   ["https://grokarchivehub.com/investigations/efta-compliance-tracker", "2026-07-18"],
+  ["https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records", "2026-07-19"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files", "2026-07-16"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files/timeline", "2026-07-16"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files/source-map", "2026-07-16"],
@@ -895,7 +899,7 @@ async function serveEvidenceAssetStrict(request, env, path) {
   const response = await serveFrontdoor(request, env);
   const contentType = response.headers.get("Content-Type") || "";
   if ((path.startsWith("/evidence-engine/v1/") || path.startsWith("/evidence-engine/v2/") || path.startsWith("/evidence-data/")) && contentType.toLowerCase().includes("text/html")) {
-    if (path.startsWith("/evidence-data/doug-band/source/html/") && response.status === 200) {
+    if ((path.startsWith("/evidence-data/doug-band/source/html/") || path.startsWith("/evidence-data/new-mexico-doj/source/html/")) && response.status === 200) {
       const headers = new Headers(response.headers);
       headers.set("Content-Type", "text/plain; charset=utf-8");
       headers.set("X-GAH-Asset-Guard", "archived-source-html-served-as-text");

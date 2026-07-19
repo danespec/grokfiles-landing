@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "order_id": "ORDER-001",
+      "title": "United States v. Maxwell protective order, Dkt. 36 / EFTA00009664",
+      "court": "U.S. District Court, Southern District of New York",
+      "docket": "1:20-cr-00330",
+      "date": "2020-07-30",
+      "source_id": "doj-efta00009664-maxwell-protective-order",
+      "relevance": "Concrete protective order in the Maxwell criminal case; may govern covered discovery, but the acquired record does not prove every NM-requested record is covered.",
+      "public_nm_specific_modification": "Not located",
+      "confidence": "High for order existence; medium for NM-specific application."
+    },
+    {
+      "order_id": "ORDER-002",
+      "title": "United States v. Maxwell Rule 17/EVCP confidentiality order / EFTA00009654",
+      "court": "U.S. District Court, Southern District of New York",
+      "docket": "1:20-cr-00330",
+      "date": "2020",
+      "source_id": "doj-efta00009654-rule17-confidentiality-order",
+      "relevance": "Concrete confidentiality order for covered Maxwell materials; record-specific application to NM requests unresolved.",
+      "public_nm_specific_modification": "Not located",
+      "confidence": "High for order existence; medium for NM-specific application."
+    },
+    {
+      "order_id": "ORDER-003",
+      "title": "SDNY EFTA public-production court orders referenced by DOJ",
+      "court": "U.S. District Court, Southern District of New York",
+      "docket": "1:20-cr-00330",
+      "date": "2025-2026",
+      "source_id": "doj-2026-02-14-congress-letter",
+      "relevance": "DOJ's February 14 letter identifies docket numbers for EFTA-related unsealing/public-production orders. They are public-production context, not a located NM-specific access order.",
+      "public_nm_specific_modification": "Not located",
+      "confidence": "Medium pending order-by-order inspection."
+    },
+    {
+      "order_id": "ORDER-004",
+      "title": "Unspecified protective order referenced by Jay Clayton in July 15 hearing exchange",
+      "court": "Unspecified in acquired hearing excerpt",
+      "docket": "Unspecified",
+      "date": "Unspecified",
+      "source_id": "sen-heinrich-2026-07-15-clayton",
+      "relevance": "Official public DOJ-side statement that requested documents are subject to court protective orders; not enough to name a particular order for every record requested by NMDOJ.",
+      "public_nm_specific_modification": "Not located",
+      "confidence": "Medium"
+    }
+  ]
+}

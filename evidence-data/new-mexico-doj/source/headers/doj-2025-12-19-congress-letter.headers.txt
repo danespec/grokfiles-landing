@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/opa/media/1434851/dl?inline=
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 5d112b90e6bfee4e35f0a0a5698cf3893a72325fcba4d5e91c5d76e5a3000846
+Bytes: 344876
+Acquisition method: verified existing local capture

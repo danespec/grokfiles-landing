@@ -1,0 +1,7 @@
+URL: https://drive.google.com/file/d/1BdTJiX8WwfTIcHpo_4FX0fgSDApMggzh/view?usp=drivesdk
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 4a8533de4aa40562ca2a432b5572a2ded887b3d9231d22c941be3ae7e11d24e7
+Bytes: 1180143
+Acquisition method: verified existing local capture

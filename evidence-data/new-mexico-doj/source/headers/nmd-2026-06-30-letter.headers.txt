@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/wp-content/uploads/NMDOJ-Correspondence-to-Acting-U.S.-Attorney-General-Todd-Blanche-6-30-26-1_6883-.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 6ada36bec2781a1e1eac9a2c859f55806c4e63df6d2a7d4843339a9068c0dd62
+Bytes: 181507
+Acquisition method: verified existing local capture

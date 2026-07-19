@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/press-release/statement-from-the-new-mexico-department-of-justice-regarding-zorro-ranch/
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 5627e81d2aa0effe5c0ad90c520c58baa5e9ad338d6d472feecc60873dd63253
+Bytes: 355274
+Acquisition method: verified existing local capture

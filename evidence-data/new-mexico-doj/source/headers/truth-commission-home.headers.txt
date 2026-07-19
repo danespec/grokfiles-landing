@@ -1,0 +1,7 @@
+URL: https://www.nmtruthcommission.com/
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: e275be948563a9742f05b9f129fe28bb49f35a7d849bfbf1e0d6b7aebfd3925d
+Bytes: 1444540
+Acquisition method: verified existing local capture

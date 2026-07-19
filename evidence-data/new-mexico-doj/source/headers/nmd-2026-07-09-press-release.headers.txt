@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/press-release/attorney-general-raul-torrez-usdoj-is-hindering-our-criminal-investigation-by-withholding-unredacted-epstein-files/
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 746674398f2db52701fa05cfb8a9e9b24587a5471775c1e2508a5145e57f89e5
+Bytes: 356944
+Acquisition method: verified existing local capture

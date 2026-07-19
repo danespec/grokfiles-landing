@@ -1,0 +1,223 @@
+[Type text] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+January 5, 2026 
+ 
+ 
+BY ECF 
+ 
+The Honorable Paul A. Engelmayer  
+United States District Judge  
+Southern District of New York  
+40 Foley Square  
+New York, New York 10007 
+ 
+Re: United States v. Ghislaine Maxwell, 
+20 Cr. 330 (PAE) 
+ 
+Dear Judge Engelmayer: 
+The Government respectfully submits this letter as an update to the Court’s November 25, 
+2025, Order ,  Dkt. 812, and the Government’s letter of December 19, 2025, describing the 
+procedures the Government initially implemented to comply with the Court’s Order requiring the 
+U.S. Attorney for the Southern District of New York  to certify that the SDNY had conducted a 
+pre-publication, victim privacy-related review and redaction of certain of the materials required to 
+be published pursuant to the directives of H.R. 4405, the Epstein Files Transparency Act (the 
+“Act”). While not all of the materials under review are covered by the Court’s prior Orders, the 
+Government writes to advise the Court as to how it intends to address its obligations under the 
+Court’s prior Orders in the context of how it is handling the review and publication process more 
+generally. 
+Specifically, the Government writes to update the Court  on the procedures it intends to 
+follow to comply with the Act, the Court’s Order, and related obligations and policy considerations 
+as it works to complete the review and release of files under the Act.  To date, the process described 
+in the Government’s December 19 letter has been used for the subset of materials released that fall 
+within the scope of the Court’s Order.   Since our last letter, (1) the Department has continued its 
+efforts to identify, process, and review materials from various components of the Department and 
+(2) the SDNY and the Department have worked together (including with input from  various 
+counsel for victims) to refine our review and redaction procedures.  The goal of all these efforts is 
+to facilitate the release of materials  under the Act promptly and to continue to protect victim 
+privacy to the maximum extent practicable as contemplated by the Act and  consistent with  
+Department policy and the Court’s Order. 
+Overview of Work in Progress and Documents Remaining to be Reviewed. To date, the 
+Department has now posted to the DOJ Epstein Library webpage approximately 12,285 documents 
+ 
+ 
+ 
+The Jacob K. Javits Federal Building 
+26 Federal Plaza, 37th Floor 
+New York, New York 10278 
+ 
+U.S. Department of Justice 
+ 
+United States Attorney 
+Southern District of New York 
+Case 1:20-cr-00330-PAE     Document 826     Filed 01/05/26     Page 1 of 5Hon. Paul A. Engelmayer, U.S.D.J. 
+January 5, 2026 
+Page 2 of 5 
+ 
+ 
+ 
+(comprising approximately 125,575 pages) in response to the Act , and there are more than  2 
+million documents potentially responsive to the Act that are in various phases of review.1   
+The key steps in this process include: (1) identifying documents potentially covered by the 
+Act, which as this Court is aware, is a voluminous set of materials, given the broad provisions of 
+the Act; (2) uploading those documents  to a data review platform;  (3) manually reviewing the 
+documents for victim identifying information , information required to be redacted under the 
+Privacy Act, and privileged information;  (4) making appropriate redactions ; (5) prior to posting 
+the documents to the Epstein Library webpage , engaging in global quality control checks ; (6) 
+engaging i n SDNY- specific quality control checks for victim information  consistent with the 
+Court’s Order; (7) posting responsive materials; and (8) responding to requests from victims and 
+other members of the public, including requests to remove or further redact posted materials that 
+inadvertently were published publicly.   
+This work has required and will continue to require substantial Department resources.  We 
+noted in our prior letter the hundreds of attorneys dedicated to the review at the time of that letter.  
+Currently, and anticipated for the next few weeks ahead, i n the range of over 400 lawyers across 
+the Department will dedicate all or a substantial portion of their workday to the Department’s 
+efforts to comply with the Act.  These efforts include over 125 lawyers in the Southern District of 
+New York as well as dozens of lawyers from each of the U.S. Attorney’s Office in the Southern 
+District of Florida, the Criminal Division of the Department, and the National Security Division 
+of the Department.  In addition, more than 100 specially trained document analysts with experience 
+handling sensitive victim materials are assisting from the Federal Bureau of Investigation.   Many 
+of the attorneys dedicated to this review from the Department have experience in victim- privacy 
+related matters, which is necessary given the nature of the materials and the types of documents 
+that require careful redaction (e.g., FBI interview notes and internal Department memoranda).  
+While the commitment of Department personnel to this effort has been substantial in 
+breadth and impressive in effort, substantial work remains to be done. As noted above, more than 
+2 million documents identified as potentially responsive to the Act remain in various phases of 
+review and redaction.
+2  This is a large volume of materials and t he types, sizes, and forms of the 
+ 
+1 The term “document” refers to materials of various types and sizes, including without limitation, 
+internal emails, internal memoranda, FBI interview notes, draft charging documents, Bureau of 
+Prisons materials, third party subpoena returns, court filings, external communications, and various 
+forms of media.  Some documents have multiple pages.  As a result, document counts and page 
+counts are different and the time required to review documents can vary substantially.   
+2 On December 24, 2025, the Department disclosed that it had identified approximately more than 
+one million potentially responsive documents from FBI files that had not yet been incorporated in 
+its review.  Based on broad initial reviews of those documents, the Department expects that a 
+meaningful portion of the documents are copies of ( or largely duplicative of) documents that had 
+already been collected by the Department for review but nonetheless still need to undergo a process 
+of processing and deduplication.  The Department’s identification and collection efforts span 
+Case 1:20-cr-00330-PAE     Document 826     Filed 01/05/26     Page 2 of 5Hon. Paul A. Engelmayer, U.S.D.J. 
+January 5, 2026 
+Page 3 of 5 
+ 
+ 
+ 
+documents that remain to be reviewed  vary widely.  As a result, and in light of its experience to 
+date in order to facilitate the prompt release of materials under the Act while continuing to protect 
+victim privacy to the maximum extent practicable, it is appropriate for the Department to modify 
+its procedures for their review  based on various factors including, without limitation, document 
+type and likelihood that the document contains victim identifying information or privileged 
+information. A more detailed  discussion of these  document type- specific procedures appears 
+below.  
+Victim Engagement and Modifications to the Department’s Victim Privacy Efforts.  Since 
+the passage of the Act, the Department has received dozens of  inquiries from victims, victim 
+representatives, and other members of the public requesting that materials be redacted to protect 
+victim privacy.  To date, the Department has compiled a list of hundreds of individuals for 
+redaction.  This list includes  names of victims and other individuals (such as immediate family 
+members) that should be redacted to provide as much protection of victim privacy  as is 
+practicable.
+3  
+Based on these interactions and its experience with the Act to date more generally, the 
+Department has modified its efforts to protect victim privacy.  R ecent modifications include, 
+without limitation, (1) modifying the processes for responding to requests to remove victim 
+identifying information ;
+4  (2) running additional electronic quality control searches (where 
+technology allows) to better ensure the protection of  victim identifying information ; (3) refining 
+internal guidance to reviewers (including as we receive feedback from victim counsel); (4) 
+proactively engaging with various offices within the Department to ensure that all potentially 
+responsive materials have been identified ; and (5) improving the processes for identifying and 
+handling duplicative materials, including duplicative materials located in separate records , that 
+require consistent redaction to protect victim privacy. 
+ 
+various federal agencies and U.S. Attorney’s Offices, many with separate record keeping systems, 
+policies, and procedures.  The Department is continuing to proactively engage with these offices  
+to ensure a comprehensive identification of responsive materials. 
+3 As noted in our prior letters to the Court, victims include individuals identified as victims, or 
+potential victims, through the Department’s prior prosecutions of Epstein and Maxwell as well as 
+all individuals who have (directly or through counsel) been identified, including self-identified, to 
+the Department as potential victims of state or federal offenses or other claims of sexual 
+exploitation or misconduct by Epstein or Maxwell.  The Department also has endeavored to redact 
+victim-identifying information beyond names to the extent practicable. 
+4 Any victim seeking to have information redacted that has been posted to the website is able to 
+submit that request to EFTA@usdoj.gov.  This email inbox is monitored by a team of Department 
+attorneys who review all such requests.  Separately, the Southern District of New York continues 
+to confer with certain counsel for victims and to provide updates as circumstances allow. 
+Case 1:20-cr-00330-PAE     Document 826     Filed 01/05/26     Page 3 of 5Hon. Paul A. Engelmayer, U.S.D.J. 
+January 5, 2026 
+Page 4 of 5 
+ 
+ 
+ 
+The Department remains committed to providing as much protection to the privacy 
+interests of victims and their relatives as is practicable.  Prior releases have included tens of 
+thousands of manual redactions of victim -identifying information.  Even with these efforts and 
+related quality control checks, unfortunately, information that victims believe should have been 
+redacted has been posted. The Department has applied additional redactions at the request of 
+victims, counsel, and others, and continues to engage with victim counsel about these matters in 
+an effort to best comply with the Act and also afford maximum privacy protections to victims.  In 
+particular, an issue that the Department is continuing to consider and confer with victim counsel 
+about is how to handle documents that have been filed in public court proceedings (other than the 
+case before this Court) that contain information that victims now seek to have redacted. 
+ 
+Update – Modifications to the Department’s Review  and Redaction Procedures.  In an 
+effort to publish responsive, non-duplicative documents as promptly as practicable under the Act, 
+while maintaining its commitment to victim privacy and complying with the Court’s Order s, the 
+Department intends to incorporate the following procedures as it completes its review of 
+potentially responsive materials: 
+ 
+• Undertaking manual and electronic efforts to deduplicate materials collected from 
+various components of the Department. 
+ 
+• Prioritizing the review of documents that are expected to be responsive and non-
+duplicative for review and publication. 
+ 
+• Classifying documents in broad types based on the Department’s assessment of key 
+characteristics, including whether the documents would be expected to include 
+sensitive victim-identifying information.   
+ 
+• For the prioritized documents  that are expected to include sensitive victim -
+identifying information , assigning Department lawyers, including in particular, 
+lawyers with experience in handling victim information and sensitive matters.   
+ 
+• Consistent with the Court’s Order, this review process includes SDNY lawyers, and 
+in particular SDNY attorneys are assigned to the materials most likely to contain 
+sensitive victim -identifying information (as identified through searches and 
+segregating categories of sensitive material, such as victim 3500).  SDNY lawyers 
+are also involved in quality control reviews for victim -related redactions of 
+materials that, while not expected to contain victim names, were produced under 
+the Maxwell Protective Orders (or are believed to be duplicative of materials 
+produced under such Orders). 
+ 
+The Department believes that these procedur es best serve the interests of victims, the 
+purposes of the Act and the Court’s Orders, and the public interest generally.   
+ 
+As always, the Government is available to respond to any questions from the Court. 
+Case 1:20-cr-00330-PAE     Document 826     Filed 01/05/26     Page 4 of 5Hon. Paul A. Engelmayer, U.S.D.J. 
+January 5, 2026 
+Page 5 of 5 
+ 
+ 
+ 
+ 
+Respectfully yours, 
+ 
+PAMELA J. BONDI 
+United States Attorney General 
+ 
+TODD BLANCHE 
+Deputy United States Attorney General  
+United States Department of Justice 
+ 
+ 
+/s/ Jay Clayton     
+JAY CLAYTON 
+United States Attorney 
+Southern District of New York 
+ 
+Case 1:20-cr-00330-PAE     Document 826     Filed 01/05/26     Page 5 of 5
