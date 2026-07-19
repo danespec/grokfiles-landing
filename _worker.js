@@ -895,6 +895,18 @@ async function serveEvidenceAssetStrict(request, env, path) {
   const response = await serveFrontdoor(request, env);
   const contentType = response.headers.get("Content-Type") || "";
   if ((path.startsWith("/evidence-engine/v1/") || path.startsWith("/evidence-engine/v2/") || path.startsWith("/evidence-data/")) && contentType.toLowerCase().includes("text/html")) {
+    if (path.startsWith("/evidence-data/doug-band/source/html/") && response.status === 200) {
+      const headers = new Headers(response.headers);
+      headers.set("Content-Type", "text/plain; charset=utf-8");
+      headers.set("X-GAH-Asset-Guard", "archived-source-html-served-as-text");
+      applyRoutePolicyHeaders(headers, path);
+      headers.set("X-Robots-Tag", "noindex,follow");
+      return new Response(request.method === "HEAD" ? null : await response.text(), {
+        status: response.status,
+        statusText: response.statusText,
+        headers
+      });
+    }
     return new Response("Evidence asset not found", {
       status: 404,
       headers: {
