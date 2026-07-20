@@ -580,17 +580,23 @@ write("PRODUCTION_PARITY.tsv", tsv(parityRows));
 write("CRAWLER_SEMANTIC_VARIANCE.tsv", tsv(crawlerRows));
 
 const mobileCaptures = [
-  ["/", "mobile/home-390.png"],
-  ["/evidence-briefs/todd-blanche-no-evidence", "mobile/todd-blanche-390.png"],
-  ["/investigations/new-mexico-doj-epstein-records", "mobile/new-mexico-390.png"],
-  ["/document-autopsies/doug-band-transcript", "mobile/doug-band-390.png"],
-  ["/document-autopsies/leon-black-transcript", "mobile/leon-black-390.png"],
-  ["/investigations/efta-compliance-tracker", "mobile/efta-390.png"],
+  ["local", "/", "mobile/home-390.png"],
+  ["local", "/evidence-briefs/todd-blanche-no-evidence", "mobile/todd-blanche-390.png"],
+  ["local", "/investigations/new-mexico-doj-epstein-records", "mobile/new-mexico-390.png"],
+  ["local", "/document-autopsies/doug-band-transcript", "mobile/doug-band-390.png"],
+  ["local", "/document-autopsies/leon-black-transcript", "mobile/leon-black-390.png"],
+  ["local", "/investigations/efta-compliance-tracker", "mobile/efta-390.png"],
+  ["production", "/", "mobile-production/home-390.png"],
+  ["production", "/evidence-briefs/todd-blanche-no-evidence", "mobile-production/todd-blanche-390.png"],
+  ["production", "/investigations/new-mexico-doj-epstein-records", "mobile-production/new-mexico-390.png"],
+  ["production", "/document-autopsies/doug-band-transcript", "mobile-production/doug-band-390.png"],
+  ["production", "/document-autopsies/leon-black-transcript", "mobile-production/leon-black-390.png"],
+  ["production", "/investigations/efta-compliance-tracker", "mobile-production/efta-390.png"],
 ];
-const mobileRows = [["viewport", "route", "status", "note"]];
-for (const [route, file] of mobileCaptures) {
+const mobileRows = [["scope", "viewport", "route", "status", "note"]];
+for (const [scope, route, file] of mobileCaptures) {
   const exists = fs.existsSync(path.join(artifactDir, file));
-  mobileRows.push(["390x844", route, exists ? "PASS" : "MANUAL_OR_PLAYWRIGHT_REQUIRED", exists ? `Playwright CLI screenshot captured: ${file}; h1 rendered.` : "Capture the route at 390px before final deployment gate signoff."]);
+  mobileRows.push([scope, "390x844", route, exists ? "PASS" : "MANUAL_OR_PLAYWRIGHT_REQUIRED", exists ? `Playwright CLI screenshot captured: ${file}; h1 rendered.` : "Capture the route at 390px before final deployment gate signoff."]);
 }
 write("MOBILE_VALIDATION.tsv", tsv(mobileRows));
 
