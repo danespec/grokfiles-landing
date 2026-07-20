@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "status": "PASS",
+  "day1_video": {
+    "source": "Official Senate Judiciary ISVP HLS remux",
+    "local_path": "/Volumes/homes/admin/GAH-CONTENT-005B-media/20260720T141644Z/senate-judiciary-2026-07-15-blanche-day1.mp4",
+    "sha256": "e6dfcc88af1d7dd8245aedb461b6e57534016bad85a3a3c5c0479df0422ddfa3",
+    "duration_seconds": 19092.999667,
+    "file_size_bytes": 1674477704,
+    "preservation_method": "ffmpeg HLS remux to MP4; no re-encode",
+    "hash_validation": "PASS"
+  },
+  "day2_video": {
+    "source": "Official Senate Judiciary ISVP HLS remux",
+    "local_path": "/Volumes/homes/admin/GAH-CONTENT-005B-media/20260720T141644Z/senate-judiciary-2026-07-16-blanche-day2.mp4",
+    "sha256": "4a05d8afb6fa7d3d48bf97e9380c94da539a62f29b814305e1e247d65ef8ac80",
+    "duration_seconds": 10379.066333,
+    "file_size_bytes": 910266897,
+    "preservation_method": "ffmpeg HLS remux to MP4; no re-encode",
+    "hash_validation": "PASS"
+  },
+  "day1_wav": {
+    "local_path": "/Volumes/homes/admin/GAH-CONTENT-005B-media/20260720T141644Z/senate-judiciary-2026-07-15-blanche-day1-audio.wav",
+    "sha256": "e5043daf1d2540763acf8fee8d0f11be19863c49d3466a86fcac5f81ec05c945",
+    "duration_seconds": 19092.928,
+    "file_size_bytes": 1832921166,
+    "hash_validation": "PASS"
+  },
+  "captions": {
+    "day1_sha256": "c5c2140242d9881123f0bfd105588e544a3fc84bfc39fea479c6164c9a5541a4",
+    "day2_sha256": "80e2637b438aaf6907aefbdeacd9669ad6a2bc125be3ba0bf2489aed21b98a01",
+    "status": "OFFICIAL_CAPTION_RETAINED_SEPARATE_FROM_HUMAN_CERTIFIED_WORDING"
+  },
+  "verification_clips": [
+    {
+      "exchange_id": "HEX-001",
+      "file_type": "source_quote_clip",
+      "start": "01:10:36",
+      "end": "01:10:48",
+      "duration": "12.066000",
+      "file_size": "1367448",
+      "sha256": "ec4ce68c4ea4593fe436117c21941bc46b1dc06f0c2b56a4463bff7a4456ab07",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-001-source.mp4"
+    },
+    {
+      "exchange_id": "HEX-001",
+      "file_type": "context_clip",
+      "start": "01:09:06",
+      "end": "01:12:18",
+      "duration": "192.066000",
+      "file_size": "17176546",
+      "sha256": "5a8b6e8016a7cdc1e5b3fd0a1cc68922f924482734fa2e4e0c689809934de775",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-001-context.mp4"
+    },
+    {
+      "exchange_id": "HEX-001",
+      "file_type": "normalized_review_video",
+      "start": "01:09:06",
+      "end": "01:12:18",
+      "duration": "192.033008",
+      "file_size": "40791750",
+      "sha256": "90e8d1da644daa8eddff1b42e3debb9351a1a458774aff2a3606eeae46d61617",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-001-review.mp4"
+    },
+    {
+      "exchange_id": "HEX-001",
+      "file_type": "normalized_review_audio",
+      "start": "01:09:06",
+      "end": "01:12:18",
+      "duration": "192.000000",
+      "file_size": "18432078",
+      "sha256": "f9ea9c56de96668a6f310e3a85abe5977403d17c7099603731b4a398601a20f0",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-001-review.wav"
+    },
+    {
+      "exchange_id": "HEX-001",
+      "file_type": "timecode_review_video",
+      "start": "01:09:06",
+      "end": "01:12:18",
+      "duration": "192.033008",
+      "file_size": "40001398",
+      "sha256": "8092872f4312bad0fd6c8ca7244a93d3554dec331e02d8b81f38a2fba38abea3",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-001-timecode.mp4"
+    },
+    {
+      "exchange_id": "HEX-002",
+      "file_type": "source_quote_clip",
+      "start": "01:18:36",
+      "end": "01:19:00",
+      "duration": "24.066000",
+      "file_size": "2441848",
+      "sha256": "c546b78911a793ee55bfa4ae37f334f410766a909a0aaebe3b84c28f8362fbaf",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-002-source.mp4"
+    },
+    {
+      "exchange_id": "HEX-002",
+      "file_type": "context_clip",
+      "start": "01:17:06",
+      "end": "01:20:30",
+      "duration": "204.066000",
+      "file_size": "17968200",
+      "sha256": "d833c9e70d358dab3d4fa5f7aa9707e8fe425588095f819223cb16c0401b1880",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-002-context.mp4"
+    },
+    {
+      "exchange_id": "HEX-002",
+      "file_type": "normalized_review_video",
+      "start": "01:17:06",
+      "end": "01:20:30",
+      "duration": "204.033008",
+      "file_size": "46803111",
+      "sha256": "4ed18d2338ae601a644433e7add263ac0b69ca556594963e9ad74e8627ba3e66",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-002-review.mp4"
+    },
+    {
+      "exchange_id": "HEX-002",
+      "file_type": "normalized_review_audio",
+      "start": "01:17:06",
+      "end": "01:20:30",
+      "duration": "204.000000",
+      "file_size": "19584078",
+      "sha256": "a774e7553c529cc8787bdfe139fc6649506856a2011711d5072bded248eb4285",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-002-review.wav"
+    },
+    {
+      "exchange_id": "HEX-002",
+      "file_type": "timecode_review_video",
+      "start": "01:17:06",
+      "end": "01:20:30",
+      "duration": "204.033008",
+      "file_size": "45972277",
+      "sha256": "8f5fc8a997d23f8244ba5576022f87a5cab2fc2dcda357c694b2c5f278438191",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-002-timecode.mp4"
+    },
+    {
+      "exchange_id": "HEX-003",
+      "file_type": "source_quote_clip",
+      "start": "01:51:00",
+      "end": "01:52:12",
+      "duration": "72.066000",
+      "file_size": "6644786",
+      "sha256": "f3ca8f262791611f142a419ac471ead4df5045dedb8d09b5a2c532e032e96b26",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-003-source.mp4"
+    },
+    {
+      "exchange_id": "HEX-003",
+      "file_type": "context_clip",
+      "start": "01:49:30",
+      "end": "01:53:42",
+      "duration": "252.066000",
+      "file_size": "22396143",
+      "sha256": "f31d21d5f53918330941fa355e667e4913d934a2a686e46beb6b5a50c2684469",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-003-context.mp4"
+    },
+    {
+      "exchange_id": "HEX-003",
+      "file_type": "normalized_review_video",
+      "start": "01:49:30",
+      "end": "01:53:42",
+      "duration": "252.033008",
+      "file_size": "59355473",
+      "sha256": "d8aad170177ed057f1a7df3a411910d21bc90e86af95fc1b0d10ce367c41f557",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-003-review.mp4"
+    },
+    {
+      "exchange_id": "HEX-003",
+      "file_type": "normalized_review_audio",
+      "start": "01:49:30",
+      "end": "01:53:42",
+      "duration": "252.000000",
+      "file_size": "24192078",
+      "sha256": "37cc12d80b704b60ad49cd7575bdeee109fa83a0f0c98a890fe3a23e6840568e",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-003-review.wav"
+    },
+    {
+      "exchange_id": "HEX-003",
+      "file_type": "timecode_review_video",
+      "start": "01:49:30",
+      "end": "01:53:42",
+      "duration": "252.033008",
+      "file_size": "57731391",
+      "sha256": "165cf88ff21f58730a8028c65eaafaf9ca1a2c8addea404b9d536ac2533c1261",
+      "path": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing/artifacts/GAH-CONTENT-005C-BLANCHE-HUMAN-VERIFICATION-20260720T145703Z/clips/HEX-003-timecode.mp4"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "entity_id": "ACT-001",
+      "public_identifier": "Jeffrey Epstein",
+      "role_category": "CHARGED_PRINCIPAL",
+      "conduct_category": "federal SDNY charged conduct",
+      "source": "epstein-sdny-indictment-2019-doj-dl",
+      "criminal_charge": "yes",
+      "conviction": "no federal adjudication in 19 Cr. 490",
+      "civil_allegation": "outside narrowed classification",
+      "sworn_testimony": "not used for this row",
+      "documentary_association": "not applicable",
+      "DOJ_assessment_located": "charging document located",
+      "current_classification": "CHARGED_NOT_ADJUDICATED",
+      "limitation": "Indictment allegations are not treated as proven."
+    },
+    {
+      "entity_id": "ACT-002",
+      "public_identifier": "Ghislaine Maxwell",
+      "role_category": "CONVICTED_FACILITATOR",
+      "conduct_category": "counts reflected in verdict, judgment, instructions, and appeal",
+      "source": "maxwell-verdict-form-2021; maxwell-judgment-2022-recap-document-696; maxwell-appellate-opinion-2024-justia",
+      "criminal_charge": "yes",
+      "conviction": "yes",
+      "civil_allegation": "outside narrowed classification",
+      "sworn_testimony": "not used for this row",
+      "documentary_association": "not applicable",
+      "DOJ_assessment_located": "conviction record located",
+      "current_classification": "CRIMINALLY_ESTABLISHED",
+      "limitation": "No inference beyond adjudicated counts and necessary elements."
+    },
+    {
+      "entity_id": "ACT-003",
+      "public_identifier": "Unnamed alleged third-party recipients",
+      "role_category": "ALLEGED_THIRD_PARTY_RECIPIENT",
+      "conduct_category": "category asked about in HEX-003",
+      "source": "HEX-003; human-certification-005c",
+      "criminal_charge": "no public charge located for category as framed",
+      "conviction": "no public conviction located for category as framed",
+      "civil_allegation": "some public civil allegations may exist outside the narrowed article",
+      "sworn_testimony": "not exhaustively republished",
+      "documentary_association": "association records do not prove conduct",
+      "DOJ_assessment_located": "NO_PUBLIC_CHARGING_ANALYSIS_LOCATED",
+      "current_classification": "UNRESOLVED",
+      "limitation": "No roster is published; absence of public charge is not an exoneration finding."
+    },
+    {
+      "entity_id": "ACT-004",
+      "public_identifier": "Survivors or victims",
+      "role_category": "VICTIM_OR_SURVIVOR",
+      "conduct_category": "testimony and submissions",
+      "source": "sjc-bensky-written-testimony-2026-07-16; HEX-002",
+      "criminal_charge": "not applicable",
+      "conviction": "not applicable",
+      "civil_allegation": "may vary by witness; not used as roster",
+      "sworn_testimony": "yes where publicly filed",
+      "documentary_association": "not applicable",
+      "DOJ_assessment_located": "meeting/review commitment located; person-specific response not located",
+      "current_classification": "IDENTITY_PROTECTED",
+      "limitation": "Privacy and dignity limits govern publication."
+    },
+    {
+      "entity_id": "ACT-005",
+      "public_identifier": "Social or professional contacts appearing in archive records",
+      "role_category": "SOCIAL_OR_PROFESSIONAL_CONTACT",
+      "conduct_category": "association-only records",
+      "source": "records-vs-proof matrix",
+      "criminal_charge": "not inferred",
+      "conviction": "not inferred",
+      "civil_allegation": "not inferred",
+      "sworn_testimony": "not inferred",
+      "documentary_association": "possible",
+      "DOJ_assessment_located": "not applicable unless source-specific",
+      "current_classification": "DOCUMENTARY_ASSOCIATION_ONLY",
+      "limitation": "Presence, contact, flight, photograph, or calendar entry is not proof of criminal conduct."
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ISVP</title>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8" />
+
+  <!-- Bitmovin Player -->
+  <script type="text/javascript" src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
+
+  <style>
+    .player-wrapper {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      height: 100%;
+      object-fit: cover;
+
+      }
+      .bmpui-ui-watermark {
+
+        display: none;
+      }
+      .bmpui-ui-uicontainer {
+
+        font-family: 'Roboto';
+
+        font-size: 10pt;
+      }
+
+  </style>
+</head>
+<body>
+<div class="player-wrapper">
+  <div id="player"></div>
+</div>
+
+<script type="text/javascript">
+
+  //Parsing URL query string variables
+
+  var url = window.location.search;
+  var searchParams = new URLSearchParams(url);
+  var type = searchParams.get("type");
+  var comm = searchParams.get("comm");
+  var filename = searchParams.get("filename");
+  var auto = searchParams.get("auto_play");
+  var poster_url = searchParams.get("poster");
+  //Get the stt paramter to start the video, needs to be in a specified time format: [seconds]|[mm:ss]|[hh:mm:ss]
+  var stt = searchParams.get("stt");
+  var s = Boolean(stt); //Prevent falsy variable
+  if (s !== false) {
+    var sttSec = parseTime(stt);
+  }
+  //Get the dur paramter to stop the video, needs to be in a specified time format: [seconds]|[mm:ss]|[hh:mm:ss]
+  var dur = searchParams.get("dur");
+  var d = Boolean(dur); //Prevent falsy variable
+  if (d !== false) {
+    var durSec = parseTime(dur);
+  }
+
+  var videoid = Math.floor(Math.random() * 999999) + 1; 
+
+  //var auto = ( searchParams('auto_play') == "true" ) ? true : false;
+  //Function to parse the time into seconds for the stt and dur url queries.  The possible time formats are [seconds], [mm:ss], and [hh:mm:ss]
+  function parseTime(str) {
+    var parse = str.split(':'),
+    s = 0, m = 1;
+
+    while (parse.length > 0) {
+      s += m * parseInt(parse.pop(), 10);
+      m *= 60;
+      }
+        return s;
+  }
+
+  var streamInfo = new Array
+  (
+    ["ag", "76440", "https://ag-f.akamaihd.net", "2036803", "agriculture"],
+    ["aging", "76442", "https://aging-f.akamaihd.net", "2036801", "aging"],
+    ["approps", "76441", "https://approps-f.akamaihd.net", "2036802", "appropriations"],
+    ["armed", "76445", "https://armed-f.akamaihd.net", "2036800", "armedservices"],
+    ["banking", "76446", "https://banking-f.akamaihd.net", "2036799", "banking"],
+    ["budget", "76447", "https://budget-f.akamaihd.net", "2036798", "budget"],
+    ["cecc", "76486", "https://srs-f.akamaihd.net", "2036782", "srs_cecc"],
+    ["commerce", "80177", "https://commerce1-f.akamaihd.net", "2036779", "commerce"],
+    ["csce", "75229", "https://srs-f.akamaihd.net", "2036777", "srs_srs"],
+    ["dpc", "76590", "https://dpc-f.akamaihd.net", "dpc"],
+    ["energy", "76448", "https://energy-f.akamaihd.net", "2036797", "energy"],
+    ["epw", "76478", "https://epw-f.akamaihd.net", "2036783", "environment"],
+    ["ethics", "76449", "https://ethics-f.akamaihd.net", "2036796", "ethics"],
+    ["finance", "76450", "https://finance-f.akamaihd.net", "2036795", "finance_finance"],
+    ["foreign", "76451", "https://foreign-f.akamaihd.net", "2036794", "foreignrelations"],
+    ["govtaff", "76453", "https://govtaff-f.akamaihd.net", "2036792", "hsgac"],
+    ["help", "76452", "https://help-f.akamaihd.net", "2036793", "help"],
+    ["indian", "76455", "https://indian-f.akamaihd.net", "2036791", "indianaffairs"],
+    ["intel", "76456", "https://intel-f.akamaihd.net", "2036790", "intelligence"],
+    ["intlnarc", "76457", "https://intlnarc-f.akamaihd.net", "internationalnarcoticscaucus"],
+    ["jccic", "85180", "https://jccic-f.akamaihd.net", "2036778", "jccic"],
+    ["jec", "76458", "https://jec-f.akamaihd.net", "2036789", "jointeconomic"],
+    ["judiciary", "76459", "https://judiciary-f.akamaihd.net", "2036788","judiciary"],
+    ["rpc", "76591", "https://rpc-f.akamaihd.net", "rpc"],
+    ["rules", "76460", "https://rules-f.akamaihd.net", "2036787", "rules"],
+    ["saa", "76489", "https://srs-f.akamaihd.net", "2036780", "srs_saa"],
+    ["smbiz", "76461", "https://smbiz-f.akamaihd.net", "2036786", "smallbusiness"],
+    ["srs", "75229", "https://srs-f.akamaihd.net", "2031966", "srs_srs"],
+    ["uscc", "76487", "https://srs-f.akamaihd.net", "2036781", "srs_uscc"],
+    ["vetaff", "76462", "https://vetaff-f.akamaihd.net", "2036785", "veteransaffairs"],
+    ["arch", "", "https://ussenate-f.akamaihd.net/"],
+    ["uscp", "", "", "2043685", "uscp"],
+    ["cio", "", "", "2043686", "cio"],
+    ["stv", "", "", "2096634", "stv"]
+  );
+// Iterates the array looking for comm which is defined in the url parameters.  If the committee name is found the j variable is increased by 1 to provide the Akamai stream number, and then j variable is also increased by 2 to provide the specific Akamai domain for the committee stream.
+for (var i = 0; i <streamInfo.length; i++) {
+    for (var j = 0; j < streamInfo[i].length; j++){
+      if (comm === false ){
+        break;
+      }else if (streamInfo[i][j] === comm) {
+          var streamNum = streamInfo[i][j+1];
+          var streamDomain = streamInfo[i][j+2];
+          var streamID = streamInfo[i][j+3];
+          var msl3 = streamInfo[i][j+4];
+          break;
+      }else {
+        var streamArch = streamInfo[i][j+2];
+        break;
+      }
+  }
+}
+var hostname = 'https://www-senate-gov-media-srs.akamaized.net/hls/live/';
+var hlslive = hostname + streamID + '/' + comm + '/' + filename + '/master.m3u8';
+var msl3arch = 'https://www-senate-gov-msl3archive.akamaized.net/' + msl3 + '/' + filename +'_1/master.m3u8';
+var hlsurl = streamDomain + '/i/'+ filename + '_1@' + streamNum + "/master.m3u8?";
+var hlsarch = streamArch + 'i/' + filename + '.mp4' + '/master.m3u8';
+var hlsvideos = [hlslive, msl3arch, hlsurl, hlsarch];
+var counter = 0;
+function add() {
+  counter +=1;
+}
+var errorHandler = function () {
+        player.load({
+          hls: hlsvideos[1],
+          poster: poster_url,
+          options:{
+            startOffset: sttSec,
+          }
+        })
+    };
+
+function durationCheck(event)
+{
+  if (durSec > 0)
+  {
+    durationHandler();
+  }
+}
+function durationHandler(event)
+{
+  currentTimeChecker = player.getCurrentTime();
+  if (currentTimeChecker > durSec)
+    {
+      player.unload();
+      //player.load(source);
+    }
+}
+
+
+
+  var conf = {
+    key: '61c87dea-0d26-49af-a51f-84c108be52d3',
+    analytics: {
+      key: '671a695e-2258-48b7-8d15-5632fa478b3f',
+      title: filename,
+      customData1: comm,
+      cdnProvider: 'Akamai',
+      videoID: videoid,
+      //customData2: duration
+    },
+     playback: {
+     autoplay: false,
+     muted: false
+    },
+    events: {
+      error: function (errObj) {
+                switch (errObj.code) {
+                    case 1208:
+                    //case 1209:
+                    //case 1210:
+                    //case 1400:
+                    //case 1401:
+                        errorHandler();
+                        break;
+                    default:
+                        console.error('error', errObj);
+                        break;
+                }
+            },
+      timechanged: function (event) {
+        durationCheck();
+      },
+      ready: function (event){
+         duration = player. getDuration();
+      }
+    }
+  }
+  
+
+  var source = {
+    hls: hlsvideos[0],
+    poster: poster_url,
+    options:{
+      startOffset: sttSec,
+    }
+  };
+
+  var player = new bitmovin.player.Player(document.getElementById('player'), conf);
+  //player.on("TimeChanged", durationCheck());
+ //console.log(duration);
+  player.load(source);
+</script>
+
+</body>
+</html>

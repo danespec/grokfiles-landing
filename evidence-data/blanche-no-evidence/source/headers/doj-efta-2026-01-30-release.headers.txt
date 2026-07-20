@@ -1,0 +1,26 @@
+accept-ranges: bytes
+alt-svc: h3=":443"; ma=93600
+cache-control: public, max-age=78783
+connection: keep-alive
+content-encoding: gzip
+content-language: en
+content-length: 13838
+content-security-policy: object-src 'none'; frame-ancestors 'self' https://doj365.sharepoint.us; report-uri /report-csp-violation
+content-type: text/html; charset=UTF-8
+date: Mon, 20 Jul 2026 00:01:26 GMT
+etag: "1784325269-gzip"
+expires: Mon, 20 Jul 2026 21:54:29 GMT
+last-modified: Fri, 17 Jul 2026 21:54:29 GMT
+referrer-policy: no-referrer-when-downgrade
+server: nginx
+set-cookie: ak_bmsc=A2ED226757777BC547A6F032060DA63E~000000000000000000000000000000~YAAQjmPKF25FPEmfAQAAa9rTfAC61N5MaE1YXjOLaQBZZx/6J8JBn0pguGKWmP2Q6SWYg6FzGAZkXv7urxLyXLJ2/3A+05aSvgUIWRJ2shg4HR6W3ucBmjB4GqCUAy259uUwmQmd1IzSa86u9RN6XzhQoLuZ9Y/BGNvsYrQr/WGrPwe3ZXOrAhOb5b2gjcY6w6tto8vf3CjgZKwA1r5ZHL9ypwWD3QD6qBHehEN3JIV7T8KdqNecQKkt9Q9Y4lWRFmm0/CSnG63vTJ34fqcYaxlWXLF8UYz0c/fa7FYVImiGDdAE6ULm/EjOblek+jl9l07QpMDoo24DhqPHc1vb2Ed3Snpz3as2yMpWBv+VZzkGwORDm3/yzsaRajyEv9zNhg==; Domain=.justice.gov; Path=/; Expires=Mon, 20 Jul 2026 02:01:26 GMT; Max-Age=7200; SameSite=None; Secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: Accept-Encoding
+x-age: 0
+x-ah-environment: prod
+x-content-type-options: nosniff
+x-drupal-dynamic-cache: HIT
+x-frame-options: ALLOW-FROM https://doj365.sharepoint.us
+x-generator: Drupal 11 (https://www.drupal.org)
+x-request-id: v-160562ce-822a-11f1-b0d6-d3b33a38be22
+x-xss-protection: 0

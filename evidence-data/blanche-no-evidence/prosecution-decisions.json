@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "matter_id": "PDL-001",
+      "person_or_conduct_class": "Jeffrey Epstein, SDNY 2019 case",
+      "investigating_component": "U.S. Attorney's Office SDNY",
+      "evidence_described": "charged indictment allegations",
+      "legal_theory": "federal sex-trafficking and conspiracy charges",
+      "charging_analysis_located": "charging document located",
+      "decision": "CHARGED",
+      "stated_reason": "indictment filed",
+      "date": "2019-07-08",
+      "source": "epstein-sdny-indictment-2019-doj-dl",
+      "limitation": "No federal conviction because case did not reach adjudication."
+    },
+    {
+      "matter_id": "PDL-002",
+      "person_or_conduct_class": "Ghislaine Maxwell",
+      "investigating_component": "U.S. Attorney's Office SDNY",
+      "evidence_described": "counts submitted to jury and judgment",
+      "legal_theory": "counts reflected in verdict/judgment",
+      "charging_analysis_located": "indictment, verdict, judgment, jury charge, appeal located",
+      "decision": "CONVICTED",
+      "stated_reason": "jury verdict and judgment entered; appeal affirmed",
+      "date": "2021-12-29 / 2022-06-28 / 2024-09-17",
+      "source": "maxwell-verdict-form-2021; maxwell-judgment-2022-recap-document-696; maxwell-appellate-opinion-2024-justia",
+      "limitation": "Does not establish conduct by unnamed third-party recipients."
+    },
+    {
+      "matter_id": "PDL-003",
+      "person_or_conduct_class": "Unnamed alleged third-party recipients",
+      "investigating_component": "DOJ/FBI public record",
+      "evidence_described": "not publicly itemized",
+      "legal_theory": "not publicly specified",
+      "charging_analysis_located": "NO_PUBLIC_CHARGING_ANALYSIS_LOCATED",
+      "decision": "NO_PUBLIC_DECISION_LOCATED",
+      "stated_reason": "none located in public record",
+      "date": "status checked 2026-07-20",
+      "source": "acquisition-gaps; source-manifest",
+      "limitation": "Do not classify anyone as exonerated."
+    },
+    {
+      "matter_id": "PDL-004",
+      "person_or_conduct_class": "Alleged facilitators, assistants, employees, or participants outside Maxwell adjudicated counts",
+      "investigating_component": "DOJ/FBI public record",
+      "evidence_described": "varies by person and source",
+      "legal_theory": "not publicly specified for uncharged actors in this article",
+      "charging_analysis_located": "NO_PUBLIC_CHARGING_ANALYSIS_LOCATED",
+      "decision": "INVESTIGATION_STATUS_UNKNOWN",
+      "stated_reason": "no public comprehensive charging analysis located",
+      "date": "status checked 2026-07-20",
+      "source": "acquisition-gaps; source-manifest",
+      "limitation": "Not charged is not the same as exonerated."
+    },
+    {
+      "matter_id": "PDL-005",
+      "person_or_conduct_class": "New survivor submissions after July 15 hearing",
+      "investigating_component": "DOJ / Senate Judiciary public record",
+      "evidence_described": "future submissions and meeting information",
+      "legal_theory": "investigative lead, if provided",
+      "charging_analysis_located": "not yet publicly located",
+      "decision": "INVESTIGATION_STATUS_UNKNOWN",
+      "stated_reason": "update trigger; QFR and written responses not located",
+      "date": "status checked 2026-07-20",
+      "source": "HEX-002; acquisition-gaps",
+      "limitation": "Future records are not a deployment blocker and are excluded from affirmative conclusions."
+    }
+  ]
+}

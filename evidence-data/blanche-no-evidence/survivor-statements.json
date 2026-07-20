@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "statement_id": "SUR-001",
+      "protected_speaker_id": "public-witness-dani-bensky",
+      "date": "2026-07-16",
+      "forum": "Senate Judiciary Day 2 written testimony",
+      "statement_summary": "Public written survivor testimony concerning DOJ's handling of Epstein-related evidence and survivor engagement.",
+      "direct_knowledge": "speaker's own testimony where stated",
+      "alleged_conduct": "classified by testimony posture; no gratuitous detail republished",
+      "named_evidence": "written testimony PDF",
+      "corroboration_located": "not assessed beyond official filing in narrowed article",
+      "DOJ_response": "no person-specific written response located",
+      "limitation": "Testimony is not treated as adjudicated fact.",
+      "status": "SWORN_BUT_UNCORROBORATED"
+    },
+    {
+      "statement_id": "SUR-002",
+      "protected_speaker_id": "survivor-group-discussed-by-senate",
+      "date": "2026-07-15",
+      "forum": "Senate Judiciary Day 1 hearing exchange",
+      "statement_summary": "Durbin referenced survivors seeking a meeting and review of information.",
+      "direct_knowledge": "committee framing and hearing exchange",
+      "alleged_conduct": "not republished as fact",
+      "named_evidence": "official Senate press excerpt and caption context",
+      "corroboration_located": "meeting commitment located; content of later submissions not located",
+      "DOJ_response": "Blanche agreed to survivor engagement in the hearing context",
+      "limitation": "Does not establish the truth of every underlying allegation.",
+      "status": "SUPPORTED"
+    }
+  ]
+}

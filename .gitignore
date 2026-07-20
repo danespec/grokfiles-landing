@@ -3,6 +3,9 @@
 .env.*
 .wrangler/
 node_modules/
+test-results/
+playwright-report/
+evidence-data/blanche-no-evidence/source/pdfs/maxwell-judgment-2022.pdf
 *.log
 *.tmp
 *.bak

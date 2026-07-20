@@ -27,6 +27,7 @@ const FRONTDOOR_PATHS = new Set([
   "/investigations/trump-in-the-epstein-files/locations",
   "/investigations/trump-in-the-epstein-files/contradictions",
   "/evidence-briefs",
+  "/evidence-briefs/todd-blanche-no-evidence",
   "/banking-records",
   "/document-autopsies",
   "/document-autopsies/leon-black-transcript",
@@ -186,6 +187,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/birthday-book-source-object-not-identity-proof", "sensitive-source-reader"],
   ["/investigations/efta-compliance-tracker", "sensitive-efta-compliance-litigation-ad-free"],
   ["/investigations/new-mexico-doj-epstein-records", "sensitive-legal-records-access-tracker-ad-free"],
+  ["/evidence-briefs/todd-blanche-no-evidence", "sensitive-hearing-evidence-standard-ad-free"],
   ["/document-autopsies/leon-black-transcript", "sensitive-transcript-autopsy-ad-free"],
   ["/document-autopsies/doug-band-transcript", "sensitive-transcript-autopsy-ad-free"],
   ["/investigations/trump-in-the-epstein-files", "sensitive-allegation-investigation-ad-free"],
@@ -445,6 +447,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/investigations/new-mexico-doj-epstein-records", "/investigations/new-mexico-doj-epstein-records.html"],
+  ["/evidence-briefs/todd-blanche-no-evidence", "/evidence-briefs/todd-blanche-no-evidence.html"],
   ["/document-autopsies/leon-black-transcript", "/document-autopsies/leon-black-transcript.html"],
   ["/document-autopsies/doug-band-transcript", "/document-autopsies/doug-band-transcript.html"]
 ]);
@@ -495,6 +498,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/birthday-book-source-object-not-identity-proof", "2026-07-12"],
   ["https://grokarchivehub.com/investigations/efta-compliance-tracker", "2026-07-18"],
   ["https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records", "2026-07-19"],
+  ["https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence", "2026-07-20"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files", "2026-07-16"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files/timeline", "2026-07-16"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files/source-map", "2026-07-16"],
