@@ -5130,8 +5130,8 @@ function xAutopostConfig(env) {
   return {
     postingEnabled: xPostingEnabled(env),
     autopostFlagEnabled: truthyFlag(env.X_AUTOPOST_ENABLED),
-    maxDaily: Number.isFinite(maxDaily) && maxDaily > 0 ? Math.min(maxDaily, X_DEFAULT_AUTOPOST_MAX_DAILY) : X_DEFAULT_AUTOPOST_MAX_DAILY,
-    minSpacingMinutes: Number.isFinite(minSpacingMinutes) && minSpacingMinutes >= X_DEFAULT_AUTOPOST_MIN_SPACING_MINUTES ? minSpacingMinutes : X_DEFAULT_AUTOPOST_MIN_SPACING_MINUTES,
+    maxDaily: Number.isFinite(maxDaily) && maxDaily > 0 ? X_DEFAULT_AUTOPOST_MAX_DAILY : X_DEFAULT_AUTOPOST_MAX_DAILY,
+    minSpacingMinutes: Number.isFinite(minSpacingMinutes) && minSpacingMinutes > 0 ? X_DEFAULT_AUTOPOST_MIN_SPACING_MINUTES : X_DEFAULT_AUTOPOST_MIN_SPACING_MINUTES,
     timezone: String(env.X_AUTOPOST_TIMEZONE || X_DEFAULT_AUTOPOST_TIMEZONE).trim() || X_DEFAULT_AUTOPOST_TIMEZONE
   };
 }
@@ -5431,6 +5431,15 @@ function xFindPostedCanonicalInRecords(records, canonicalUrl) {
   if (!normalized) return null;
   return records.find((record) =>
     record.status === "PUBLISHED" &&
+    xNormalizeCanonicalForDedupe(record.canonicalUrl || record.destinationUrl) === normalized
+  ) || null;
+}
+
+function xFindActiveCanonicalInRecords(records, canonicalUrl) {
+  const normalized = xNormalizeCanonicalForDedupe(canonicalUrl);
+  if (!normalized) return null;
+  return records.find((record) =>
+    !["CANCELLED", "DO_NOT_PUBLISH", "DUPLICATE_BLOCKED"].includes(record.status) &&
     xNormalizeCanonicalForDedupe(record.canonicalUrl || record.destinationUrl) === normalized
   ) || null;
 }
@@ -5848,7 +5857,7 @@ async function xDiscoverAndQueue(request, env, options = {}) {
     const dedupeRecord = await xGetDedupeRecord(env, page.publicationFingerprint);
     const knownRecords = [...existingRecords, ...createdRecords];
     const existingFingerprint = xFindRecordByFingerprintInRecords(knownRecords, page.publicationFingerprint);
-    const existingCanonical = xFindPostedCanonicalInRecords(knownRecords, page.canonicalUrl);
+    const existingCanonical = xFindActiveCanonicalInRecords(knownRecords, page.canonicalUrl);
     if (dedupeRecord?.xPostId || existingFingerprint || existingCanonical) {
       page.queueState = existingFingerprint ? "existing_queue_record" : "dedupe_or_posted_record";
       page.existingQueueId = existingFingerprint?.queueId || dedupeRecord?.queueId || existingCanonical?.queueId || "";
