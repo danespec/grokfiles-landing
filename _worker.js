@@ -592,6 +592,7 @@ const X_AUTO_POLICY_VERSION = "GAH_X_AUTOPUBLISH_POLICY_V1";
 const X_AUTO_APPROVAL_STATE = "AUTO_APPROVED";
 const X_AUTO_APPROVAL_SOURCE = "AUTOMATIC_EDITORIAL_POLICY";
 const X_AUTO_CAMPAIGN = "automatic_publication";
+const X_AUTO_PUBLICATION_START_DATE = "2026-07-18";
 const X_AUTO_STABILIZATION_MINUTES = 10;
 const X_AUTO_RETRY_MINUTES = [5, 15, 60, 360, 1440];
 const X_AUTO_FALLBACK_IMAGE_URL = "https://grokarchivehub.com/frontdoor/og/grok-archive-hub.svg";
@@ -5406,6 +5407,12 @@ async function xFindRecordByFingerprint(env, fingerprint) {
   const normalized = String(fingerprint || "").trim();
   if (!normalized) return null;
   const records = await xListQueueRecords(env);
+  return xFindRecordByFingerprintInRecords(records, normalized);
+}
+
+function xFindRecordByFingerprintInRecords(records, fingerprint) {
+  const normalized = String(fingerprint || "").trim();
+  if (!normalized) return null;
   return records.find((record) =>
     record.publicationFingerprint === normalized &&
     !["CANCELLED", "DO_NOT_PUBLISH"].includes(record.status)
@@ -5416,6 +5423,12 @@ async function xFindPostedCanonical(env, canonicalUrl) {
   const normalized = xNormalizeCanonicalForDedupe(canonicalUrl);
   if (!normalized) return null;
   const records = await xListQueueRecords(env);
+  return xFindPostedCanonicalInRecords(records, normalized);
+}
+
+function xFindPostedCanonicalInRecords(records, canonicalUrl) {
+  const normalized = xNormalizeCanonicalForDedupe(canonicalUrl);
+  if (!normalized) return null;
   return records.find((record) =>
     record.status === "PUBLISHED" &&
     xNormalizeCanonicalForDedupe(record.canonicalUrl || record.destinationUrl) === normalized
@@ -5528,11 +5541,12 @@ function xCoreSitemapDateMap() {
   return map;
 }
 
-function xCandidateRoutesFromManifest(registerMap) {
+function xCandidateRoutesFromManifest(registerMap, sitemapDates = xCoreSitemapDateMap()) {
   const routes = new Set();
   for (const path of FRONTDOOR_PATHS) {
     const clean = cleanPath(path);
-    if (xRouteFamily(clean) && !xAutoExcludedRoute(clean)) routes.add(clean);
+    const lastmod = sitemapDates.get(clean) || "";
+    if (xRouteFamily(clean) && !xAutoExcludedRoute(clean) && (registerMap.has(clean) || lastmod >= X_AUTO_PUBLICATION_START_DATE)) routes.add(clean);
   }
   for (const route of registerMap.keys()) {
     if (xRouteFamily(route) && !xAutoExcludedRoute(route)) routes.add(route);
@@ -5818,7 +5832,7 @@ async function xDiscoverAndQueue(request, env, options = {}) {
   const existingRecords = await xListQueueRecords(env);
   const createdRecords = [];
   const pages = [];
-  for (const route of xCandidateRoutesFromManifest(registerMap)) {
+  for (const route of xCandidateRoutesFromManifest(registerMap, sitemapDates)) {
     const page = await xBuildDiscoveryPage(request, env, route, registerMap.get(route), sitemapDates);
     if (page.eligible) {
       page.publicationFingerprint = await xPublicationFingerprint(page);
@@ -5832,8 +5846,9 @@ async function xDiscoverAndQueue(request, env, options = {}) {
     .sort((a, b) => String(a.publicationDate || "").localeCompare(String(b.publicationDate || "")) || a.route.localeCompare(b.route));
   for (const page of eligiblePages) {
     const dedupeRecord = await xGetDedupeRecord(env, page.publicationFingerprint);
-    const existingFingerprint = await xFindRecordByFingerprint(env, page.publicationFingerprint);
-    const existingCanonical = await xFindPostedCanonical(env, page.canonicalUrl);
+    const knownRecords = [...existingRecords, ...createdRecords];
+    const existingFingerprint = xFindRecordByFingerprintInRecords(knownRecords, page.publicationFingerprint);
+    const existingCanonical = xFindPostedCanonicalInRecords(knownRecords, page.canonicalUrl);
     if (dedupeRecord?.xPostId || existingFingerprint || existingCanonical) {
       page.queueState = existingFingerprint ? "existing_queue_record" : "dedupe_or_posted_record";
       page.existingQueueId = existingFingerprint?.queueId || dedupeRecord?.queueId || existingCanonical?.queueId || "";
