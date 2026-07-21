@@ -578,13 +578,50 @@ const X_TOKEN_STORE_BINDINGS = ["X_TOKEN_STORE", "X_PUBLISHER_KV", "X_AUTH_KV"];
 const X_POST_QUEUE_BINDINGS = ["X_POST_QUEUE"];
 const X_QUEUE_POST_PREFIX = "gah:x:queue:post:";
 const X_QUEUE_REQUEST_PREFIX = "gah:x:scheduler:request:";
+const X_DISCOVERY_RECORD_PREFIX = "gah:x:discovery:record:";
+const X_DEDUPE_RECORD_PREFIX = "gah:x:dedupe:publication:";
 const X_QUEUE_LOCK_KEY = "gah:x:scheduler:lock";
 const X_QUEUE_SETTINGS_KEY = "gah:x:queue:settings";
+const X_PUBLISHER_STATE_KEY = "gah:x:publisher:state";
 const X_QUEUE_LOCK_SECONDS = 60 * 5;
 const X_SCHEDULER_MAX_SKEW_MS = 5 * 60 * 1000;
-const X_DEFAULT_AUTOPOST_MAX_DAILY = 2;
-const X_DEFAULT_AUTOPOST_MIN_SPACING_MINUTES = 240;
+const X_DEFAULT_AUTOPOST_MAX_DAILY = 6;
+const X_DEFAULT_AUTOPOST_MIN_SPACING_MINUTES = 30;
 const X_DEFAULT_AUTOPOST_TIMEZONE = "America/Denver";
+const X_AUTO_POLICY_VERSION = "GAH_X_AUTOPUBLISH_POLICY_V1";
+const X_AUTO_APPROVAL_STATE = "AUTO_APPROVED";
+const X_AUTO_APPROVAL_SOURCE = "AUTOMATIC_EDITORIAL_POLICY";
+const X_AUTO_CAMPAIGN = "automatic_publication";
+const X_AUTO_STABILIZATION_MINUTES = 10;
+const X_AUTO_RETRY_MINUTES = [5, 15, 60, 360, 1440];
+const X_AUTO_FALLBACK_IMAGE_URL = "https://grokarchivehub.com/frontdoor/og/grok-archive-hub.svg";
+const X_AUTO_ELIGIBLE_ROUTE_FAMILIES = [
+  "/investigations/",
+  "/evidence-briefs/",
+  "/document-autopsies/",
+  "/timeline-reconstructions/",
+  "/dispatches/"
+];
+const X_AUTO_NESTED_TAB_SLUGS = new Set(["timeline", "source-map", "locations", "people-and-roles", "contradictions"]);
+const X_AUTO_EXCLUDED_PREFIXES = [
+  "/archive/",
+  "/evidence-data/",
+  "/source-renders/",
+  "/members/",
+  "/auth/",
+  "/api/"
+];
+const X_AUTO_EXCLUDED_EXACT_PATHS = new Set([
+  "/search",
+  "/explore",
+  "/membership",
+  "/members",
+  "/privacy",
+  "/terms",
+  "/corrections",
+  "/about",
+  "/methodology"
+]);
 const MEMBERSHIP_TIER_MATRIX = [
   {
     id: "PATREON_TIER_READING_ROOM",
@@ -5046,21 +5083,41 @@ function xQueueKey(id) {
 function xQueuePublicRecord(record) {
   return {
     queueId: record.queueId,
+    route: record.route || "",
+    pageType: record.pageType || "",
+    title: record.title || "",
     postText: record.postText,
+    canonicalUrl: record.canonicalUrl || "",
     destinationUrl: record.destinationUrl || "",
+    imageUrl: record.imageUrl || "",
+    publicationDate: record.publicationDate || "",
+    modifiedDate: record.modifiedDate || "",
+    discoveredAt: record.discoveredAt || "",
+    discoverySource: record.discoverySource || "",
+    eligibility: record.eligibility || "",
+    eligibilityReason: record.eligibilityReason || "",
     createdAt: record.createdAt,
     scheduledAt: record.scheduledAt || "",
     scheduledDisplay: record.scheduledDisplay || "",
     status: record.status,
     approved: Boolean(record.approved),
+    approvalState: record.approvalState || (record.approved ? "APPROVED" : "UNAPPROVED"),
+    approvalSource: record.approvalSource || "",
+    policyVersion: record.policyVersion || "",
     approvedAt: record.approvedAt || "",
     publishedAt: record.publishedAt || "",
     xPostId: record.xPostId || "",
     xPostUrl: record.xPostUrl || "",
     retryCount: Number(record.retryCount || 0),
+    nextRetryAt: record.nextRetryAt || "",
     failureCategory: record.failureCategory || "",
     safeFailureSummary: record.safeFailureSummary || "",
+    apiResult: record.apiResult || "",
     contentHash: record.contentHash || "",
+    postTextHash: record.postTextHash || record.contentHash || "",
+    publicationFingerprint: record.publicationFingerprint || "",
+    deploymentId: record.deploymentId || "",
+    commit: record.commit || "",
     idempotencyKey: record.idempotencyKey || "",
     updatedAt: record.updatedAt || ""
   };
@@ -5191,7 +5248,9 @@ async function xPutQueueRecord(env, record) {
       status: updated.status,
       approved: Boolean(updated.approved),
       scheduledAt: updated.scheduledAt || "",
-      contentHash: updated.contentHash || ""
+      contentHash: updated.contentHash || "",
+      publicationFingerprint: updated.publicationFingerprint || "",
+      canonicalUrl: updated.canonicalUrl || ""
     }
   });
   return { ok: true, record: updated };
@@ -5234,22 +5293,42 @@ async function xNewQueueRecord(env, payload) {
   const createdAt = nowIso();
   const record = {
     queueId,
+    route: String(payload.route || "").trim(),
+    pageType: String(payload.pageType || "").trim(),
+    title: String(payload.title || "").trim(),
     postText: validation.text,
+    canonicalUrl: xSafeDestinationUrl(payload.canonicalUrl),
     destinationUrl: xSafeDestinationUrl(payload.destinationUrl || payload.linkPreview),
+    imageUrl: xSafeDestinationUrl(payload.imageUrl),
+    publicationDate: String(payload.publicationDate || "").trim(),
+    modifiedDate: String(payload.modifiedDate || "").trim(),
+    discoveredAt: String(payload.discoveredAt || "").trim(),
+    discoverySource: String(payload.discoverySource || "").trim(),
+    eligibility: String(payload.eligibility || "").trim(),
+    eligibilityReason: String(payload.eligibilityReason || "").trim(),
     createdAt,
-    scheduledAt: "",
-    scheduledDisplay: "",
-    status: "DRAFT",
-    approved: false,
-    approvedAt: "",
+    scheduledAt: String(payload.scheduledAt || "").trim(),
+    scheduledDisplay: String(payload.scheduledDisplay || "").trim(),
+    status: String(payload.status || "DRAFT").trim() || "DRAFT",
+    approved: Boolean(payload.approved),
+    approvalState: String(payload.approvalState || (payload.approved ? "APPROVED" : "UNAPPROVED")).trim(),
+    approvalSource: String(payload.approvalSource || "").trim(),
+    policyVersion: String(payload.policyVersion || "").trim(),
+    approvedAt: String(payload.approvedAt || "").trim(),
     publishedAt: "",
     xPostId: "",
     xPostUrl: "",
     retryCount: 0,
+    nextRetryAt: "",
     failureCategory: "",
     safeFailureSummary: "",
+    apiResult: "",
     contentHash,
-    idempotencyKey: await sha256Hex(`${queueId}\n${contentHash}\n${createdAt}`),
+    postTextHash: contentHash,
+    publicationFingerprint: String(payload.publicationFingerprint || "").trim(),
+    deploymentId: String(payload.deploymentId || "").trim(),
+    commit: String(payload.commit || "").trim(),
+    idempotencyKey: String(payload.idempotencyKey || (await sha256Hex(`${queueId}\n${contentHash}\n${createdAt}`))).trim(),
     updatedAt: createdAt
   };
   return xPutQueueRecord(env, record);
@@ -5306,16 +5385,606 @@ async function xRecentPublishedWithHash(env, contentHash, withinDays = 30) {
   ) || null;
 }
 
+function xNormalizeCanonicalForDedupe(value) {
+  try {
+    const url = new URL(String(value || "").trim());
+    url.hash = "";
+    for (const key of Array.from(url.searchParams.keys())) {
+      if (/^utm_/i.test(key) || key === "fbclid" || key === "gclid" || key === "mc_cid" || key === "mc_eid") {
+        url.searchParams.delete(key);
+      }
+    }
+    url.hostname = url.hostname.toLowerCase();
+    url.pathname = cleanPath(url.pathname);
+    return url.toString();
+  } catch (_) {
+    return "";
+  }
+}
+
+async function xFindRecordByFingerprint(env, fingerprint) {
+  const normalized = String(fingerprint || "").trim();
+  if (!normalized) return null;
+  const records = await xListQueueRecords(env);
+  return records.find((record) =>
+    record.publicationFingerprint === normalized &&
+    !["CANCELLED", "DO_NOT_PUBLISH"].includes(record.status)
+  ) || null;
+}
+
+async function xFindPostedCanonical(env, canonicalUrl) {
+  const normalized = xNormalizeCanonicalForDedupe(canonicalUrl);
+  if (!normalized) return null;
+  const records = await xListQueueRecords(env);
+  return records.find((record) =>
+    record.status === "PUBLISHED" &&
+    xNormalizeCanonicalForDedupe(record.canonicalUrl || record.destinationUrl) === normalized
+  ) || null;
+}
+
+function xNormalizeSpace(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function xDecodeHtml(value) {
+  return String(value || "")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+function xHtmlAttr(tag, attr) {
+  return String(tag || "").match(new RegExp(`\\b${attr}\\s*=\\s*["']([^"']*)["']`, "i"))?.[1] || "";
+}
+
+function xLinkHref(html, relValue) {
+  const linkRegex = /<link\b[^>]*>/gi;
+  let match;
+  while ((match = linkRegex.exec(String(html || "")))) {
+    const tag = match[0];
+    const rel = xHtmlAttr(tag, "rel").toLowerCase().split(/\s+/);
+    if (rel.includes(relValue.toLowerCase())) return xDecodeHtml(xHtmlAttr(tag, "href"));
+  }
+  return "";
+}
+
+function xHtmlTitle(html) {
+  const raw = String(html || "").match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "";
+  return xNormalizeSpace(xDecodeHtml(raw.replace(/\s+\|\s+Grok Archive Hub$/i, "")));
+}
+
+function xFirstHeading(html) {
+  const raw = String(html || "").match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "";
+  return xNormalizeSpace(xDecodeHtml(raw.replace(/<[^>]+>/g, "")));
+}
+
+function xJsonLdValue(html, key) {
+  const match = String(html || "").match(new RegExp(`"${key}"\\s*:\\s*"([^"]+)"`, "i"));
+  return match ? xDecodeHtml(match[1]) : "";
+}
+
+function xArticleJsonLdPresent(html) {
+  return /"@type"\s*:\s*"(?:NewsArticle|Article|Report|AnalysisNewsArticle)"/i.test(String(html || ""));
+}
+
+function xRouteFamily(path) {
+  const clean = cleanPath(path || "/");
+  return X_AUTO_ELIGIBLE_ROUTE_FAMILIES.find((prefix) => clean.startsWith(prefix)) || "";
+}
+
+function xPageTypeForRoute(route, explicitType = "") {
+  if (explicitType) return explicitType;
+  if (route.startsWith("/evidence-briefs/")) return "Evidence Brief";
+  if (route.startsWith("/document-autopsies/")) return "Document Autopsy";
+  if (route.startsWith("/timeline-reconstructions/")) return "Timeline Reconstruction";
+  if (route.startsWith("/dispatches/")) return "Dispatch";
+  if (route.includes("compliance-tracker")) return "Compliance Tracker";
+  return "Investigation";
+}
+
+function xIsNestedEditorialRoute(route) {
+  const parts = cleanPath(route).split("/").filter(Boolean);
+  if (parts[0] !== "investigations") return parts.length > 2;
+  return parts.length > 2 || X_AUTO_NESTED_TAB_SLUGS.has(parts[parts.length - 1]);
+}
+
+function xAutoExcludedRoute(route) {
+  const path = cleanPath(route || "/");
+  if (X_AUTO_EXCLUDED_EXACT_PATHS.has(path)) return "excluded_exact_route";
+  if (X_AUTO_EXCLUDED_PREFIXES.some((prefix) => path.startsWith(prefix))) return "excluded_route_family";
+  if (/\.(?:json|pdf|txt|tsv|csv|xml)$/i.test(path)) return "machine_readable_or_viewer";
+  if (path.includes("?")) return "query_variant";
+  if (!xRouteFamily(path)) return "not_editorial_route_family";
+  return "";
+}
+
+function xExplicitBoolean(record, keys) {
+  for (const key of keys) {
+    if (Object.prototype.hasOwnProperty.call(record || {}, key)) return Boolean(record[key]);
+  }
+  return null;
+}
+
+function xPublicationRegisterMap(register) {
+  const map = new Map();
+  for (const item of Array.isArray(register?.routes) ? register.routes : []) {
+    const route = cleanPath(item.route || new URL(item.canonicalUrl || "https://grokarchivehub.com/").pathname);
+    if (route && route !== "/") map.set(route, item);
+  }
+  return map;
+}
+
+function xCoreSitemapDateMap() {
+  const map = new Map();
+  for (const [url, date] of CORE_SITEMAP_ENTRIES) {
+    try {
+      map.set(cleanPath(new URL(url).pathname), date);
+    } catch (_) {
+      // Static manifest values are trusted; malformed values are ignored.
+    }
+  }
+  return map;
+}
+
+function xCandidateRoutesFromManifest(registerMap) {
+  const routes = new Set();
+  for (const path of FRONTDOOR_PATHS) {
+    const clean = cleanPath(path);
+    if (xRouteFamily(clean) && !xAutoExcludedRoute(clean)) routes.add(clean);
+  }
+  for (const route of registerMap.keys()) {
+    if (xRouteFamily(route) && !xAutoExcludedRoute(route)) routes.add(route);
+  }
+  return Array.from(routes).sort();
+}
+
+function xAssetPathForRoute(route) {
+  const clean = cleanPath(route);
+  if (FRONTDOOR_ROUTE_ASSETS.has(clean)) return FRONTDOOR_ROUTE_ASSETS.get(clean);
+  if (clean === "/") return "/index.html";
+  return `${clean}.html`;
+}
+
+async function xReadRouteHtml(request, env, route) {
+  const assetPath = xAssetPathForRoute(route);
+  try {
+    return { ok: true, status: 200, html: await assetText(request, env, assetPath), assetPath };
+  } catch (error) {
+    try {
+      const assetUrl = new URL(request.url);
+      assetUrl.pathname = route;
+      assetUrl.search = "";
+      const response = await env.ASSETS.fetch(assetUrl.toString());
+      if (!response.ok) return { ok: false, status: response.status, html: "", assetPath };
+      return { ok: true, status: response.status, html: await response.text(), assetPath };
+    } catch (_) {
+      return { ok: false, status: 404, html: "", assetPath };
+    }
+  }
+}
+
+async function xLoadPublicationRegister(request, env) {
+  try {
+    return await assetJson(request, env, "/content/x-publication-register.json");
+  } catch (_) {
+    return { schemaVersion: 0, routes: [] };
+  }
+}
+
+function xRouteUtmContent(route) {
+  const parts = cleanPath(route).split("/").filter(Boolean);
+  return (parts[parts.length - 1] || "home").replace(/[^a-z0-9-]+/gi, "-").replace(/-+/g, "-").replace(/^-|-$/g, "").toLowerCase().slice(0, 80);
+}
+
+function xCampaignUrl(canonicalUrl, route) {
+  const url = new URL(canonicalUrl);
+  url.searchParams.set("utm_source", "x");
+  url.searchParams.set("utm_medium", "social");
+  url.searchParams.set("utm_campaign", X_AUTO_CAMPAIGN);
+  url.searchParams.set("utm_content", xRouteUtmContent(route));
+  return url.toString();
+}
+
+function xTruncateAtWord(value, maxChars) {
+  const text = xNormalizeSpace(value);
+  if (xCharacterCount(text) <= maxChars) return text;
+  if (maxChars <= 1) return "";
+  const slice = Array.from(text).slice(0, Math.max(0, maxChars - 1)).join("");
+  const trimmed = slice.replace(/\s+\S*$/, "").trim() || slice.trim();
+  return `${trimmed.replace(/[.,;:!?-]+$/, "")}...`;
+}
+
+function xAutoPostLabel(pageType) {
+  if (/evidence brief/i.test(pageType)) return "Evidence Brief";
+  if (/document autopsy/i.test(pageType)) return "Document Autopsy";
+  if (/timeline/i.test(pageType)) return "Timeline Reconstruction";
+  if (/dispatch/i.test(pageType)) return "Dispatch";
+  return "Investigation";
+}
+
+function xComposeAutoPost(page) {
+  const title = xTruncateAtWord(page.title, 92);
+  const description = xNormalizeSpace(page.socialDescription || page.description || "");
+  const url = xCampaignUrl(page.canonicalUrl, page.route);
+  const label = xAutoPostLabel(page.pageType);
+  const fixed = `${title}\n\n\n\n${url}\n\n${label}`;
+  const remaining = X_POST_MAX_CHARS - xCharacterCount(fixed);
+  const safeDescription = remaining > 12 ? xTruncateAtWord(description, remaining) : "";
+  const withDescription = safeDescription ? `${title}\n\n${safeDescription}\n\n${url}\n\n${label}` : `${title}\n\n${url}\n\n${label}`;
+  if (validateXPostText(withDescription).ok) return withDescription;
+  const withoutLabel = safeDescription ? `${title}\n\n${safeDescription}\n\n${url}` : `${title}\n\n${url}`;
+  return validateXPostText(withoutLabel).ok ? withoutLabel : `${xTruncateAtWord(title, 80)}\n\n${url}`;
+}
+
+function xDeploymentSnapshot(env) {
+  return {
+    deploymentId: String(env.GAH_DEPLOYMENT_ID || env.CF_PAGES_DEPLOYMENT_ID || env.CF_PAGES_URL || "").trim(),
+    commit: String(env.GAH_COMMIT_SHA || env.CF_PAGES_COMMIT_SHA || "").trim()
+  };
+}
+
+async function xValidateSocialImage(request, env, imageUrl) {
+  const raw = xSafeDestinationUrl(imageUrl);
+  if (!raw) return { ok: false, imageUrl: X_AUTO_FALLBACK_IMAGE_URL, reason: "missing_image" };
+  let url;
+  try {
+    url = new URL(raw);
+  } catch (_) {
+    return { ok: false, imageUrl: X_AUTO_FALLBACK_IMAGE_URL, reason: "invalid_image_url" };
+  }
+  if (url.protocol !== "https:") return { ok: false, imageUrl: X_AUTO_FALLBACK_IMAGE_URL, reason: "non_https_image" };
+  if (/pages\.dev$/i.test(url.hostname)) return { ok: false, imageUrl: X_AUTO_FALLBACK_IMAGE_URL, reason: "preview_image_url" };
+  const supported = new Set(["image/png", "image/jpeg", "image/jpg", "image/webp", "image/gif", "image/svg+xml"]);
+  try {
+    let response;
+    if (url.hostname === "grokarchivehub.com" && env?.ASSETS?.fetch) {
+      const assetUrl = new URL(request.url);
+      assetUrl.pathname = url.pathname;
+      assetUrl.search = "";
+      response = await env.ASSETS.fetch(assetUrl.toString());
+    } else {
+      response = await fetch(url.toString(), { method: "HEAD", headers: { "User-Agent": "Twitterbot/1.0" } });
+    }
+    const contentType = String(response.headers.get("Content-Type") || "").split(";")[0].toLowerCase();
+    if (response.ok && (!contentType || supported.has(contentType))) return { ok: true, imageUrl: raw, reason: "image_ok" };
+    return { ok: false, imageUrl: X_AUTO_FALLBACK_IMAGE_URL, reason: `image_http_${response.status || "unsupported"}` };
+  } catch (_) {
+    return { ok: false, imageUrl: X_AUTO_FALLBACK_IMAGE_URL, reason: "image_validation_failed" };
+  }
+}
+
+async function xPublicationFingerprint(page) {
+  const canonical = xNormalizeCanonicalForDedupe(page.canonicalUrl);
+  const version = page.xRepostOnMaterialUpdate ? (page.modifiedDate || page.publicationDate || "") : (page.publicationDate || "");
+  const summaryHash = await sha256Hex(`${page.title || ""}\n${page.socialDescription || page.description || ""}`);
+  return sha256Hex(`${canonical}\n${version}\n${summaryHash}`);
+}
+
+function xNextAutomaticSchedule(existingRecords, candidateRecords, config) {
+  const baseMs = Date.now() + X_AUTO_STABILIZATION_MINUTES * 60 * 1000;
+  const spacingMs = config.minSpacingMinutes * 60 * 1000;
+  const maxDaily = config.maxDaily;
+  const scheduled = [...existingRecords, ...candidateRecords]
+    .filter((record) => record.scheduledAt && ["APPROVED", "SCHEDULED", "PUBLISHING"].includes(record.status))
+    .map((record) => Date.parse(record.scheduledAt))
+    .filter(Number.isFinite)
+    .sort((a, b) => a - b);
+  const published = existingRecords
+    .filter((record) => record.status === "PUBLISHED" && record.publishedAt)
+    .map((record) => Date.parse(record.publishedAt))
+    .filter(Number.isFinite);
+  let next = Math.max(baseMs, scheduled.length ? scheduled[scheduled.length - 1] + spacingMs : baseMs);
+  for (let guard = 0; guard < 32; guard += 1) {
+    const windowStart = next - 24 * 60 * 60 * 1000;
+    const used = [...scheduled, ...published].filter((time) => time >= windowStart && time <= next).length;
+    if (used < maxDaily) break;
+    const oldest = [...scheduled, ...published].filter((time) => time >= windowStart && time <= next).sort((a, b) => a - b)[0];
+    next = oldest + 24 * 60 * 60 * 1000 + spacingMs;
+  }
+  return new Date(next).toISOString();
+}
+
+async function xReadPublisherState(env) {
+  const queue = xPostQueue(env);
+  if (!queue) return {};
+  const raw = await queue.binding.get(X_PUBLISHER_STATE_KEY);
+  try {
+    return raw ? JSON.parse(raw) : {};
+  } catch (_) {
+    return {};
+  }
+}
+
+async function xStorePublisherState(env, patch) {
+  const queue = xPostQueue(env);
+  if (!queue) return false;
+  const next = { ...(await xReadPublisherState(env)), ...patch, updatedAt: nowIso() };
+  await queue.binding.put(X_PUBLISHER_STATE_KEY, JSON.stringify(next));
+  return true;
+}
+
+async function xStoreDiscoveryRecord(env, page) {
+  const queue = xPostQueue(env);
+  if (!queue || !page?.route) return false;
+  const key = `${X_DISCOVERY_RECORD_PREFIX}${page.route}`;
+  await queue.binding.put(key, JSON.stringify({ ...page, recordedAt: nowIso() }));
+  return true;
+}
+
+async function xGetDedupeRecord(env, fingerprint) {
+  const queue = xPostQueue(env);
+  if (!queue || !fingerprint) return null;
+  const raw = await queue.binding.get(`${X_DEDUPE_RECORD_PREFIX}${fingerprint}`);
+  try {
+    return raw ? JSON.parse(raw) : null;
+  } catch (_) {
+    return null;
+  }
+}
+
+async function xStoreDedupeRecord(env, record) {
+  const queue = xPostQueue(env);
+  if (!queue || !record?.publicationFingerprint) return false;
+  await queue.binding.put(`${X_DEDUPE_RECORD_PREFIX}${record.publicationFingerprint}`, JSON.stringify({
+    fingerprint: record.publicationFingerprint,
+    canonicalUrl: xNormalizeCanonicalForDedupe(record.canonicalUrl || record.destinationUrl),
+    queueId: record.queueId,
+    xPostId: record.xPostId || "",
+    postedTimestamp: record.publishedAt || "",
+    deploymentId: record.deploymentId || "",
+    contentHash: record.contentHash || "",
+    postTextHash: record.postTextHash || record.contentHash || "",
+    updatedAt: nowIso()
+  }));
+  return true;
+}
+
+async function xBuildDiscoveryPage(request, env, route, registerItem, sitemapDates) {
+  const explicitPublish = xExplicitBoolean(registerItem, ["x_publish", "xPublish"]);
+  const legacyEligible = xExplicitBoolean(registerItem, ["eligibleForX"]);
+  const explicitMode = String(registerItem?.x_publish_mode || registerItem?.xPublishMode || "").trim().toLowerCase();
+  const htmlResult = await xReadRouteHtml(request, env, route);
+  const pageType = xPageTypeForRoute(route, registerItem?.pageType || "");
+  const base = {
+    route,
+    pageType,
+    status: htmlResult.status,
+    htmlPresent: htmlResult.ok,
+    discoverySource: registerItem ? "publication_register+frontdoor_manifest" : "frontdoor_manifest",
+    xPublishMode: explicitMode || "automatic",
+    xPublish: explicitPublish === null ? true : explicitPublish,
+    legacyEligible: legacyEligible === null ? true : legacyEligible
+  };
+  if (!htmlResult.ok) return { ...base, eligible: false, eligibility: "INELIGIBLE", exclusionReason: `http_${htmlResult.status}` };
+  const html = htmlResult.html;
+  const canonicalUrl = xLinkHref(html, "canonical");
+  const robots = htmlMetaContent(html, "name", "robots");
+  const title = registerItem?.title || htmlMetaContent(html, "property", "og:title") || htmlMetaContent(html, "name", "twitter:title") || xHtmlTitle(html) || xFirstHeading(html);
+  const socialDescription = registerItem?.socialSummary || htmlMetaContent(html, "name", "twitter:description") || htmlMetaContent(html, "property", "og:description") || htmlMetaContent(html, "name", "description") || xJsonLdValue(html, "description");
+  const rawImageUrl = registerItem?.imageUrl || htmlMetaContent(html, "property", "og:image") || htmlMetaContent(html, "name", "twitter:image");
+  const image = await xValidateSocialImage(request, env, rawImageUrl);
+  const publicationDate = registerItem?.publicationDate || htmlMetaContent(html, "property", "article:published_time").slice(0, 10) || xJsonLdValue(html, "datePublished").slice(0, 10) || sitemapDates.get(route) || "";
+  const modifiedDate = registerItem?.modifiedDate || htmlMetaContent(html, "property", "article:modified_time").slice(0, 10) || xJsonLdValue(html, "dateModified").slice(0, 10) || publicationDate;
+  const page = {
+    ...base,
+    canonicalUrl,
+    robots,
+    title: xNormalizeSpace(title),
+    socialDescription: xNormalizeSpace(socialDescription),
+    imageUrl: image.imageUrl,
+    imageValidation: image.reason,
+    publicationDate,
+    modifiedDate,
+    articleSchemaPresent: xArticleJsonLdPresent(html),
+    xRepostOnMaterialUpdate: Boolean(registerItem?.x_repost_on_material_update || registerItem?.xRepostOnMaterialUpdate)
+  };
+  let exclusionReason = xAutoExcludedRoute(route);
+  if (!exclusionReason && xIsNestedEditorialRoute(route) && explicitPublish !== true) exclusionReason = "nested_route_requires_explicit_x_publish_true";
+  if (!exclusionReason && explicitPublish === false) exclusionReason = "x_publish_false";
+  if (!exclusionReason && legacyEligible === false) exclusionReason = "legacy_eligible_for_x_false";
+  if (!exclusionReason && explicitMode === "manual") exclusionReason = "manual_mode";
+  if (!exclusionReason && !canonicalUrl) exclusionReason = "missing_canonical";
+  if (!exclusionReason && xNormalizeCanonicalForDedupe(canonicalUrl) !== `https://grokarchivehub.com${route}`) exclusionReason = "canonical_not_apex_route";
+  if (!exclusionReason && /noindex/i.test(robots)) exclusionReason = "noindex";
+  if (!exclusionReason && !page.title) exclusionReason = "missing_title";
+  if (!exclusionReason && !page.socialDescription) exclusionReason = "missing_social_description";
+  if (!exclusionReason && !page.imageUrl) exclusionReason = "missing_image";
+  if (!exclusionReason && !FRONTDOOR_PATHS.has(route) && !sitemapDates.has(route) && !registerItem) exclusionReason = "not_registered_in_manifest";
+  return {
+    ...page,
+    eligible: !exclusionReason,
+    eligibility: exclusionReason ? "INELIGIBLE" : "ELIGIBLE",
+    exclusionReason
+  };
+}
+
+async function xDiscoverAndQueue(request, env, options = {}) {
+  const dryRun = Boolean(options.dryRun);
+  if (!dryRun && new URL(request.url).hostname !== "grokarchivehub.com") {
+    return { ok: false, dryRun: false, error: "non_production_host", eligibleCount: 0, queuedCount: 0, pages: [] };
+  }
+  const config = xAutopostConfig(env);
+  const register = await xLoadPublicationRegister(request, env);
+  const registerMap = xPublicationRegisterMap(register);
+  const sitemapDates = xCoreSitemapDateMap();
+  const deployment = xDeploymentSnapshot(env);
+  const existingRecords = await xListQueueRecords(env);
+  const createdRecords = [];
+  const pages = [];
+  for (const route of xCandidateRoutesFromManifest(registerMap)) {
+    const page = await xBuildDiscoveryPage(request, env, route, registerMap.get(route), sitemapDates);
+    if (page.eligible) {
+      page.publicationFingerprint = await xPublicationFingerprint(page);
+      page.postText = xComposeAutoPost(page);
+      page.destinationUrl = xCampaignUrl(page.canonicalUrl, page.route);
+    }
+    pages.push(page);
+  }
+  const eligiblePages = pages
+    .filter((page) => page.eligible)
+    .sort((a, b) => String(a.publicationDate || "").localeCompare(String(b.publicationDate || "")) || a.route.localeCompare(b.route));
+  for (const page of eligiblePages) {
+    const dedupeRecord = await xGetDedupeRecord(env, page.publicationFingerprint);
+    const existingFingerprint = await xFindRecordByFingerprint(env, page.publicationFingerprint);
+    const existingCanonical = await xFindPostedCanonical(env, page.canonicalUrl);
+    if (dedupeRecord?.xPostId || existingFingerprint || existingCanonical) {
+      page.queueState = existingFingerprint ? "existing_queue_record" : "dedupe_or_posted_record";
+      page.existingQueueId = existingFingerprint?.queueId || dedupeRecord?.queueId || existingCanonical?.queueId || "";
+      page.xPostId = existingFingerprint?.xPostId || dedupeRecord?.xPostId || existingCanonical?.xPostId || "";
+      continue;
+    }
+    const scheduledAt = xNextAutomaticSchedule(existingRecords, createdRecords, config);
+    const scheduledDisplay = xTimezoneDisplay(scheduledAt, config.timezone);
+    page.queueState = dryRun ? "would_queue_auto_approved" : "queued_auto_approved";
+    page.scheduledAt = scheduledAt;
+    if (dryRun) continue;
+    const created = await xNewQueueRecord(env, {
+      route: page.route,
+      pageType: page.pageType,
+      title: page.title,
+      postText: page.postText,
+      canonicalUrl: page.canonicalUrl,
+      destinationUrl: page.destinationUrl,
+      imageUrl: page.imageUrl,
+      publicationDate: page.publicationDate,
+      modifiedDate: page.modifiedDate,
+      discoveredAt: nowIso(),
+      discoverySource: page.discoverySource,
+      eligibility: page.eligibility,
+      eligibilityReason: "automatic_editorial_policy",
+      scheduledAt,
+      scheduledDisplay,
+      status: "SCHEDULED",
+      approved: true,
+      approvalState: X_AUTO_APPROVAL_STATE,
+      approvalSource: X_AUTO_APPROVAL_SOURCE,
+      policyVersion: X_AUTO_POLICY_VERSION,
+      approvedAt: nowIso(),
+      publicationFingerprint: page.publicationFingerprint,
+      deploymentId: deployment.deploymentId,
+      commit: deployment.commit,
+      idempotencyKey: await sha256Hex(`${page.publicationFingerprint}\n${scheduledAt}`)
+    });
+    if (created.ok) {
+      createdRecords.push(created.record);
+      page.queueId = created.record.queueId;
+      await xStoreDedupeRecord(env, created.record);
+    } else {
+      page.queueState = "queue_write_failed";
+      page.exclusionReason = created.reason || created.error || "queue_write_failed";
+    }
+  }
+  if (!dryRun) {
+    for (const page of pages) await xStoreDiscoveryRecord(env, page);
+    await xStorePublisherState(env, {
+      lastDiscoveryRunAt: nowIso(),
+      lastDiscoveryResult: "ok",
+      lastDiscoveryEligibleCount: eligiblePages.length,
+      lastDiscoveryQueuedCount: createdRecords.length,
+      lastDiscoveryDryRun: false
+    });
+  }
+  return {
+    ok: true,
+    dryRun,
+    policyVersion: X_AUTO_POLICY_VERSION,
+    deployment,
+    eligibleCount: eligiblePages.length,
+    queuedCount: createdRecords.length,
+    pages
+  };
+}
+
+async function xPublisherHealthSnapshot(request, env, options = {}) {
+  const setupMissing = [...xOAuthSetupMissing(env), ...xPostQueueSetupMissing(env)];
+  const config = xAutopostConfig(env);
+  const settings = await xQueueSettings(env);
+  const state = await xReadPublisherState(env);
+  const records = await xListQueueRecords(env);
+  const tokenStatus = await xSafeTokenRecordStatus(env).catch(() => ({
+    storedAt: "",
+    grantedScopes: [],
+    requiredScopesPresent: false,
+    accessTokenPresent: false,
+    refreshTokenPresent: false,
+    connectedUser: { id: "", username: "", name: "" }
+  }));
+  const discovery = options.runDiscoveryCheck ? await xDiscoverAndQueue(request, env, { dryRun: true }) : null;
+  const queueWritable = Boolean(xPostQueue(env));
+  const dedupeStoreWritable = queueWritable;
+  const automaticEnabled = config.postingEnabled && config.autopostFlagEnabled && settings.autopostEnabled !== false;
+  const schedulerRecent = state.lastSchedulerRunAt && Date.now() - Date.parse(state.lastSchedulerRunAt) <= 90 * 60 * 1000;
+  const credentialsAvailable = !setupMissing.length && tokenStatus.accessTokenPresent && tokenStatus.refreshTokenPresent && tokenStatus.requiredScopesPresent;
+  const failedItemCount = records.filter((record) => ["FAILED", "FAILED_REQUIRES_ATTENTION", "AUTHENTICATION_FAILURE"].includes(record.status) || record.status === "DUPLICATE_BLOCKED").length;
+  const queueDepth = records.filter((record) => ["APPROVED", "SCHEDULED", "PUBLISHING"].includes(record.status)).length;
+  let classification = "HEALTHY_AUTOMATIC";
+  if (!automaticEnabled) classification = "PAUSED";
+  else if (!credentialsAvailable) classification = "CREDENTIALS_MISSING";
+  else if (!queueWritable) classification = "QUEUE_UNAVAILABLE";
+  else if (!schedulerRecent) classification = "SCHEDULER_INACTIVE";
+  else if (failedItemCount) classification = "DEGRADED_RETRYING";
+  return {
+    ok: classification === "HEALTHY_AUTOMATIC" || classification === "DEGRADED_RETRYING",
+    classification,
+    automaticPublishingEnabled: automaticEnabled,
+    schedulerState: schedulerRecent ? "ACTIVE" : "INACTIVE_OR_NOT_OBSERVED",
+    lastDiscoveryRun: state.lastDiscoveryRunAt || "",
+    lastPublishAttempt: state.lastPublishAttemptAt || "",
+    lastSuccessfulPost: state.lastSuccessfulPostAt || "",
+    nextScheduledRun: state.nextScheduledRunAt || "",
+    queueDepth,
+    failedItemCount,
+    activePolicyVersion: X_AUTO_POLICY_VERSION,
+    activeXAccount: tokenStatus.connectedUser.username || tokenStatus.connectedUser.id || "",
+    checks: {
+      discoveryWorking: discovery ? discovery.ok : Boolean(state.lastDiscoveryRunAt),
+      queueWritable,
+      schedulerActive: Boolean(schedulerRecent),
+      xCredentialsStructurallyAvailable: credentialsAvailable,
+      apiAuthenticationResult: credentialsAvailable ? "STRUCTURALLY_AVAILABLE" : "CREDENTIALS_MISSING",
+      mostRecentPostResult: state.lastPublishResult || "none",
+      dedupeStoreWritable,
+      automaticPostingEnabled: automaticEnabled
+    },
+    settings: {
+      postingEnabled: config.postingEnabled,
+      autopostFlagEnabled: config.autopostFlagEnabled,
+      autopostEffectiveEnabled: automaticEnabled,
+      emergencyStop: settings.autopostEnabled === false,
+      maxDaily: config.maxDaily,
+      minSpacingMinutes: config.minSpacingMinutes,
+      stabilizationMinutes: X_AUTO_STABILIZATION_MINUTES,
+      timezone: config.timezone
+    },
+    records: records.map(xQueuePublicRecord)
+  };
+}
+
 function xContainsAutomaticMention(text) {
   return /(^|[\s(])@[A-Za-z0-9_]{1,15}\b/.test(String(text || ""));
 }
 
 function xTransientFailureStatus(status) {
-  return [429, 500, 502, 503].includes(Number(status));
+  return [408, 429, 500, 502, 503, 504].includes(Number(status));
 }
 
 function xBackoffMinutes(retryCount) {
-  return Math.min(60, 15 * (2 ** Math.max(0, Number(retryCount || 0))));
+  const index = Math.max(0, Number(retryCount || 1) - 1);
+  return X_AUTO_RETRY_MINUTES[Math.min(index, X_AUTO_RETRY_MINUTES.length - 1)];
+}
+
+function xFailureClassification(failure = {}) {
+  const summary = String(failure.summary || failure.error || "").toLowerCase();
+  const status = Number(failure.status || 0);
+  if (summary.includes("duplicate")) return "DUPLICATE_BLOCKED";
+  if (status === 401 || status === 403 || summary.includes("token") || summary.includes("auth")) return "AUTHENTICATION_FAILURE";
+  if (status === 429) return "RATE_LIMITED";
+  if (failure.category === "transient" || xTransientFailureStatus(status)) return "RETRYABLE_FAILURE";
+  if (failure.category === "disabled") return "DISABLED";
+  if (failure.category === "ineligible") return "INELIGIBLE";
+  return "PERMANENT_FAILURE";
 }
 
 async function xAcquireExecutionLock(env) {
@@ -5394,9 +6063,43 @@ async function xFindRecentTweetByText(env, tokenRecord, text) {
   return (payload?.data || []).find((tweet) => String(tweet.text || "") === String(text || "")) || null;
 }
 
+function xExtractUrlsFromText(text) {
+  return Array.from(String(text || "").matchAll(/https?:\/\/[^\s)]+/gi)).map((match) => match[0].replace(/[.,;:!?]+$/, ""));
+}
+
+function xTweetExpandedUrls(tweet) {
+  const urls = xExtractUrlsFromText(tweet?.text || "");
+  for (const item of tweet?.entities?.urls || []) {
+    if (item?.expanded_url) urls.push(item.expanded_url);
+    if (item?.unwound_url) urls.push(item.unwound_url);
+    if (item?.url) urls.push(item.url);
+  }
+  return urls;
+}
+
+async function xFindRecentTweetByCanonical(env, tokenRecord, canonicalUrl) {
+  const userId = tokenRecord?.connected_user?.id;
+  const canonical = xNormalizeCanonicalForDedupe(canonicalUrl);
+  if (!userId || !tokenRecord?.access_token || !canonical) return null;
+  const url = new URL(`https://api.x.com/2/users/${encodeURIComponent(userId)}/tweets`);
+  url.searchParams.set("max_results", "10");
+  url.searchParams.set("tweet.fields", "created_at,entities");
+  const response = await fetch(url.toString(), {
+    headers: {
+      "Authorization": `Bearer ${tokenRecord.access_token}`,
+      "User-Agent": "Grok Archive Hub X Publisher"
+    }
+  });
+  if (!response.ok) return null;
+  const payload = await response.json().catch(() => ({}));
+  return (payload?.data || []).find((tweet) =>
+    xTweetExpandedUrls(tweet).some((urlText) => xNormalizeCanonicalForDedupe(urlText) === canonical)
+  ) || null;
+}
+
 async function xCreateTweet(env, text) {
   const tokenRecord = await refreshXTokenIfNeeded(env, await loadXTokenRecord(env));
-  if (!tokenRecord?.access_token) return { ok: false, status: 409, category: "permanent", summary: "missing_x_token" };
+  if (!tokenRecord?.access_token) return { ok: false, status: 409, category: "authentication", summary: "missing_x_token", apiResult: "AUTHENTICATION_FAILURE" };
   const response = await fetch(X_POST_URL, {
     method: "POST",
     headers: {
@@ -5413,7 +6116,8 @@ async function xCreateTweet(env, text) {
       ok: false,
       status: response.status,
       category: xTransientFailureStatus(response.status) ? "transient" : "permanent",
-      summary: `x_api_${response.status || "unknown"}`
+      summary: `x_api_${response.status || "unknown"}`,
+      apiResult: xFailureClassification({ status: response.status, category: xTransientFailureStatus(response.status) ? "transient" : "permanent" })
     };
   }
   return {
@@ -5421,6 +6125,7 @@ async function xCreateTweet(env, text) {
     status: response.status,
     postId: String(postId),
     postUrl: `https://x.com/i/web/status/${encodeURIComponent(String(postId))}`,
+    apiResult: "POSTED",
     tokenRecord
   };
 }
@@ -5437,10 +6142,21 @@ async function xPublishQueueRecord(env, record, actor) {
     return { ok: false, category: "permanent", summary: "automatic_mentions_blocked", status: 400 };
   }
   if (!xPostingEnabled(env)) {
-    return { ok: true, dryRun: true, postingEnabled: false, characterCount: validation.count };
+    return { ok: true, dryRun: true, postingEnabled: false, characterCount: validation.count, apiResult: "DISABLED" };
   }
 
   let tokenRecord = await refreshXTokenIfNeeded(env, await loadXTokenRecord(env));
+  if (!tokenRecord?.access_token) return { ok: false, category: "authentication", summary: "missing_x_token", status: 409, apiResult: "AUTHENTICATION_FAILURE" };
+  const postedCanonical = await xFindRecentTweetByCanonical(env, tokenRecord, record.canonicalUrl || record.destinationUrl).catch(() => null);
+  if (postedCanonical?.id) {
+    return {
+      ok: true,
+      postId: String(postedCanonical.id),
+      postUrl: `https://x.com/i/web/status/${encodeURIComponent(String(postedCanonical.id))}`,
+      reconciled: true,
+      apiResult: "DUPLICATE_BLOCKED"
+    };
+  }
   if (record.retryCount > 0 && record.failureCategory === "transient_timeout" && tokenRecord?.access_token) {
     const reconciled = await xFindRecentTweetByText(env, tokenRecord, validation.text).catch(() => null);
     if (reconciled?.id) {
@@ -5448,7 +6164,8 @@ async function xPublishQueueRecord(env, record, actor) {
         ok: true,
         postId: String(reconciled.id),
         postUrl: `https://x.com/i/web/status/${encodeURIComponent(String(reconciled.id))}`,
-        reconciled: true
+        reconciled: true,
+        apiResult: "POSTED"
       };
     }
   }
@@ -5457,31 +6174,44 @@ async function xPublishQueueRecord(env, record, actor) {
 
 async function xApplyPublishFailure(env, record, failure) {
   const retryCount = Number(record.retryCount || 0) + 1;
-  const transient = failure.category === "transient";
-  const nextStatus = transient && retryCount < 3 ? "SCHEDULED" : "FAILED";
-  const scheduledAt = transient && retryCount < 3 ? new Date(Date.now() + xBackoffMinutes(retryCount) * 60 * 1000).toISOString() : record.scheduledAt;
+  const classification = failure.apiResult || xFailureClassification(failure);
+  const retryable = classification === "RETRYABLE_FAILURE" || classification === "RATE_LIMITED";
+  const nextStatus = retryable && retryCount <= X_AUTO_RETRY_MINUTES.length ? "SCHEDULED" : "FAILED_REQUIRES_ATTENTION";
+  const scheduledAt = nextStatus === "SCHEDULED" ? new Date(Date.now() + xBackoffMinutes(retryCount) * 60 * 1000).toISOString() : record.scheduledAt;
   return xPutQueueRecord(env, {
     ...record,
     status: nextStatus,
     scheduledAt,
     scheduledDisplay: scheduledAt ? xTimezoneDisplay(scheduledAt, xAutopostConfig(env).timezone) : record.scheduledDisplay,
     retryCount,
-    failureCategory: transient ? "transient" : "permanent",
+    nextRetryAt: nextStatus === "SCHEDULED" ? scheduledAt : "",
+    failureCategory: classification,
+    apiResult: classification,
     safeFailureSummary: String(failure.summary || "publish_failed").slice(0, 120)
   });
 }
 
 async function xMarkPublished(env, record, published, actor) {
-  return xPutQueueRecord(env, {
+  const result = await xPutQueueRecord(env, {
     ...record,
     status: "PUBLISHED",
     publishedAt: nowIso(),
     publishedBy: actor,
     xPostId: published.postId,
     xPostUrl: published.postUrl,
+    apiResult: published.apiResult || "POSTED",
     failureCategory: "",
     safeFailureSummary: ""
   });
+  if (result.ok) {
+    await xStoreDedupeRecord(env, result.record);
+    await xStorePublisherState(env, {
+      lastSuccessfulPostAt: result.record.publishedAt,
+      lastSuccessfulPostId: result.record.xPostId,
+      lastPublishResult: result.record.apiResult || "POSTED"
+    });
+  }
+  return result;
 }
 
 async function xVerifySchedulerRequest(request, env) {
@@ -5516,6 +6246,7 @@ async function handleApiXQueue(request, env) {
   if (request.method === "GET") {
     const settings = await xQueueSettings(env);
     const config = xAutopostConfig(env);
+    const state = await xReadPublisherState(env);
     return xPublisherJsonResponse({
       ok: true,
       settings: {
@@ -5525,7 +6256,18 @@ async function handleApiXQueue(request, env) {
         emergencyStop: settings.autopostEnabled === false,
         maxDaily: config.maxDaily,
         minSpacingMinutes: config.minSpacingMinutes,
+        stabilizationMinutes: X_AUTO_STABILIZATION_MINUTES,
         timezone: config.timezone
+      },
+      systemState: {
+        automaticPublishingEnabled: config.postingEnabled && config.autopostFlagEnabled && settings.autopostEnabled !== false,
+        schedulerState: state.lastSchedulerRunAt ? "OBSERVED" : "NOT_OBSERVED",
+        lastSchedulerRun: state.lastSchedulerRunAt || "",
+        lastDiscoveryRun: state.lastDiscoveryRunAt || "",
+        lastPublishAttempt: state.lastPublishAttemptAt || "",
+        lastSuccessfulPost: state.lastSuccessfulPostAt || "",
+        nextScheduledRun: state.nextScheduledRunAt || "",
+        activePolicyVersion: X_AUTO_POLICY_VERSION
       },
       records: (await xListQueueRecords(env)).map(xQueuePublicRecord)
     });
@@ -5552,6 +6294,12 @@ async function handleApiXQueue(request, env) {
     await xStoreQueueSettings(env, { ...(await xQueueSettings(env)), autopostEnabled: false, emergencyStoppedAt: nowIso() });
     logXPublisherEvent("x_autopost_emergency_stop", { route: "/api/x/queue", success: true });
     return xPublisherJsonResponse({ ok: true, emergencyStop: true });
+  }
+
+  if (action === "resume_autopost") {
+    await xStoreQueueSettings(env, { ...(await xQueueSettings(env)), autopostEnabled: true, resumedAt: nowIso() });
+    logXPublisherEvent("x_autopost_resumed", { route: "/api/x/queue", success: true });
+    return xPublisherJsonResponse({ ok: true, emergencyStop: false });
   }
 
   const record = await xGetQueueRecord(env, queueId);
@@ -5595,13 +6343,25 @@ async function handleApiXQueue(request, env) {
     return xPublisherJsonResponse({ ok: true, record: xQueuePublicRecord(updated.record) });
   }
 
+  if (action === "mark_do_not_publish") {
+    const updated = await xPutQueueRecord(env, {
+      ...record,
+      status: "DO_NOT_PUBLISH",
+      approved: false,
+      approvalState: "DO_NOT_PUBLISH",
+      safeFailureSummary: "owner_marked_do_not_publish"
+    });
+    return xPublisherJsonResponse({ ok: true, record: xQueuePublicRecord(updated.record) });
+  }
+
   if (action === "retry") {
-    if (record.status !== "FAILED") return xPublisherJsonResponse({ ok: false, error: "retry_requires_failed_status" }, 409);
+    if (!["FAILED", "FAILED_REQUIRES_ATTENTION", "AUTHENTICATION_FAILURE"].includes(record.status)) return xPublisherJsonResponse({ ok: false, error: "retry_requires_failed_status" }, 409);
     const updated = await xPutQueueRecord(env, {
       ...record,
       status: record.scheduledAt ? "SCHEDULED" : "APPROVED",
       failureCategory: "",
-      safeFailureSummary: ""
+      safeFailureSummary: "",
+      apiResult: ""
     });
     return xPublisherJsonResponse({ ok: true, record: xQueuePublicRecord(updated.record) });
   }
@@ -5639,40 +6399,103 @@ async function handleScheduledXRun(request, env) {
     logXPublisherEvent("x_scheduler_rejected", { route: "/api/x/scheduled-run", success: false, reason: auth.error });
     return xPublisherJsonResponse({ ok: false, error: auth.error }, auth.status || 401);
   }
+  if (new URL(request.url).hostname !== "grokarchivehub.com") {
+    return xPublisherJsonResponse({ ok: true, skipped: true, reason: "non_production_host" });
+  }
   const config = xAutopostConfig(env);
   const settings = await xQueueSettings(env);
+  await xStorePublisherState(env, {
+    lastSchedulerRunAt: nowIso(),
+    lastSchedulerRequestId: auth.requestId || "",
+    nextScheduledRunAt: isoPlusSeconds(60 * 60)
+  });
   if (!config.postingEnabled || !config.autopostFlagEnabled || settings.autopostEnabled === false) {
+    await xStorePublisherState(env, { lastSchedulerResult: "autopost_disabled" });
     return xPublisherJsonResponse({ ok: true, skipped: true, reason: "autopost_disabled", postingEnabled: config.postingEnabled, autopostEnabled: config.autopostFlagEnabled, emergencyStop: settings.autopostEnabled === false });
   }
 
   const lockOwner = await xAcquireExecutionLock(env);
   if (!lockOwner) return xPublisherJsonResponse({ ok: true, skipped: true, reason: "execution_locked" });
   try {
+    const discovery = await xDiscoverAndQueue(request, env, { actor: "scheduler" });
     const records = await xListQueueRecords(env);
     const candidate = xEligibleScheduledRecord(records);
-    if (!candidate) return xPublisherJsonResponse({ ok: true, skipped: true, reason: "no_eligible_post" });
+    if (!candidate) {
+      await xStorePublisherState(env, { lastSchedulerResult: "no_eligible_post" });
+      return xPublisherJsonResponse({ ok: true, skipped: true, reason: "no_eligible_post", discovery: { eligibleCount: discovery.eligibleCount, queuedCount: discovery.queuedCount } });
+    }
     if (await xRecentPublishedWithHash(env, candidate.contentHash, 30)) {
-      const failed = await xPutQueueRecord(env, { ...candidate, status: "FAILED", failureCategory: "permanent", safeFailureSummary: "duplicate_content_30_days" });
+      const failed = await xPutQueueRecord(env, { ...candidate, status: "DUPLICATE_BLOCKED", failureCategory: "DUPLICATE_BLOCKED", apiResult: "DUPLICATE_BLOCKED", safeFailureSummary: "duplicate_content_30_days" });
+      await xStorePublisherState(env, { lastSchedulerResult: "duplicate_content_30_days" });
       return xPublisherJsonResponse({ ok: false, error: "duplicate_content_30_days", record: xQueuePublicRecord(failed.record) }, 409);
     }
     const stats = await xPublishedAutopostStats(env, config.timezone);
-    if (stats.todayCount >= config.maxDaily) return xPublisherJsonResponse({ ok: true, skipped: true, reason: "daily_limit_reached" });
-    if (stats.lastPublishedAt && Date.now() - Date.parse(stats.lastPublishedAt) < config.minSpacingMinutes * 60 * 1000) {
-      return xPublisherJsonResponse({ ok: true, skipped: true, reason: "minimum_spacing_not_met" });
+    if (stats.todayCount >= config.maxDaily) {
+      await xStorePublisherState(env, { lastSchedulerResult: "daily_limit_reached" });
+      return xPublisherJsonResponse({ ok: true, skipped: true, reason: "daily_limit_reached", discovery: { eligibleCount: discovery.eligibleCount, queuedCount: discovery.queuedCount } });
     }
+    if (stats.lastPublishedAt && Date.now() - Date.parse(stats.lastPublishedAt) < config.minSpacingMinutes * 60 * 1000) {
+      await xStorePublisherState(env, { lastSchedulerResult: "minimum_spacing_not_met" });
+      return xPublisherJsonResponse({ ok: true, skipped: true, reason: "minimum_spacing_not_met", discovery: { eligibleCount: discovery.eligibleCount, queuedCount: discovery.queuedCount } });
+    }
+    await xStorePublisherState(env, { lastPublishAttemptAt: nowIso(), lastPublishAttemptQueueId: candidate.queueId });
     const publishing = (await xPutQueueRecord(env, { ...candidate, status: "PUBLISHING" })).record;
     const result = await xPublishQueueRecord(env, publishing, "scheduler");
     if (result.ok && !result.dryRun) {
       const published = await xMarkPublished(env, publishing, result, "scheduler");
       logXPublisherEvent("x_scheduled_post_created", { route: "/api/x/scheduled-run", success: true, postId: result.postId });
-      return xPublisherJsonResponse({ ok: true, published: true, queueId: published.record.queueId, postId: result.postId, postUrl: result.postUrl });
+      await xStorePublisherState(env, { lastSchedulerResult: result.apiResult || "POSTED" });
+      return xPublisherJsonResponse({ ok: true, published: true, queueId: published.record.queueId, postId: result.postId, postUrl: result.postUrl, apiResult: result.apiResult || "POSTED" });
     }
     const failed = await xApplyPublishFailure(env, publishing, result);
     logXPublisherEvent("x_scheduled_post_failed", { route: "/api/x/scheduled-run", success: false, reason: result.summary || "publish_failed" });
+    await xStorePublisherState(env, { lastSchedulerResult: result.apiResult || result.summary || "publish_failed", lastPublishResult: result.apiResult || result.summary || "publish_failed" });
     return xPublisherJsonResponse({ ok: false, error: result.summary || "publish_failed", record: xQueuePublicRecord(failed.record) }, result.status || 502);
   } finally {
     await xReleaseExecutionLock(env, lockOwner);
   }
+}
+
+async function handleApiXDiscover(request, env) {
+  const setupMissing = [...xAdminSetupMissing(env), ...xPostQueueSetupMissing(env)];
+  if (setupMissing.length) return xPublisherJsonResponse({ ok: false, error: "setup_required", missing: setupMissing }, 503);
+  const adminAuth = await xAdminAuthContext(request, env);
+  if (!adminAuth.ok) return xPublisherJsonResponse({ ok: false, error: "unauthorized" }, 401);
+  if (request.method === "GET") {
+    return xPublisherJsonResponse(await xDiscoverAndQueue(request, env, { dryRun: true, actor: "admin" }));
+  }
+  if (request.method !== "POST") return xPublisherJsonResponse({ ok: false, error: "method_not_allowed" }, 405, { "Allow": "GET, POST" });
+  if (adminAuth.method !== "bearer" && !(await verifyXCsrf(request, env))) return xPublisherJsonResponse({ ok: false, error: "csrf_failed" }, 403);
+  const result = await xDiscoverAndQueue(request, env, { actor: "admin" });
+  return xPublisherJsonResponse(result, result.ok ? 200 : 409);
+}
+
+async function handleApiXHealth(request, env) {
+  const setupMissing = [...xAdminSetupMissing(env), ...xPostQueueSetupMissing(env)];
+  if (setupMissing.length) return xPublisherJsonResponse({ ok: false, error: "setup_required", missing: setupMissing }, 503);
+  const adminAuth = await xAdminAuthContext(request, env);
+  if (!adminAuth.ok) return xPublisherJsonResponse({ ok: false, error: "unauthorized" }, 401);
+  if (request.method !== "GET" && request.method !== "HEAD") return xPublisherJsonResponse({ ok: false, error: "method_not_allowed" }, 405, { "Allow": "GET" });
+  const url = new URL(request.url);
+  const runDiscoveryCheck = url.searchParams.get("discovery") === "1";
+  return xPublisherJsonResponse(await xPublisherHealthSnapshot(request, env, { runDiscoveryCheck }));
+}
+
+async function xRunInternalScheduledPublisher(env) {
+  if (!env.X_SCHEDULER_SECRET) return;
+  const timestamp = nowIso();
+  const requestId = `internal_${Date.now().toString(36)}_${randomBase64Url(8)}`;
+  const pathname = "/api/x/scheduled-run";
+  const signature = await hmacSha256Hex(env.X_SCHEDULER_SECRET, `${timestamp}\n${requestId}\nPOST\n${pathname}`);
+  const request = new Request(`https://grokarchivehub.com${pathname}`, {
+    method: "POST",
+    headers: {
+      "X-GAH-Scheduler-Timestamp": timestamp,
+      "X-GAH-Scheduler-Request-Id": requestId,
+      "X-GAH-Scheduler-Signature": `sha256=${signature}`
+    }
+  });
+  await handleScheduledXRun(request, env);
 }
 
 async function serveXPublisherAdmin(request, env) {
@@ -5719,7 +6542,7 @@ async function serveXPublisherAdmin(request, env) {
     <section class="page-hero">
       <p class="eyebrow">Admin only</p>
       <h1>X Publisher</h1>
-      <p class="lede">Draft, review, approve, and schedule posts. Automatic publishing requires explicit approval plus the Cloudflare posting and autopost flags.</p>
+      <p class="lede">Automatic publishing discovers eligible editorial releases, auto-approves them under policy, schedules them with spacing limits, and records dedupe state. Manual controls remain available for unusual posts.</p>
       <div class="button-row"><a class="button" href="/auth/x/start?return_to=/admin/x-publisher">Connect X</a><a class="button" href="/admin/logout">Log out</a></div>
     </section>
     <section class="content publisher-grid">
@@ -5742,6 +6565,8 @@ async function serveXPublisherAdmin(request, env) {
         <div class="publisher-row">
           <button class="button" type="button" id="schedule-draft" disabled>Schedule</button>
           <button class="button" type="button" id="publish-now" disabled>Publish Now</button>
+          <button class="button" type="button" id="run-discovery">Run Discovery</button>
+          <button class="button" type="button" id="resume-autopost">Resume Automatic</button>
           <button class="button danger" type="button" id="emergency-stop">Emergency Stop</button>
         </div>
         <div class="queue-preview" id="draft-preview" aria-live="polite"></div>
@@ -5749,6 +6574,7 @@ async function serveXPublisherAdmin(request, env) {
       </article>
       <aside class="publisher-panel">
         <div class="notice"><p><strong>Posting:</strong> ${config.postingEnabled ? "Enabled" : "Dry run only"}.</p><p><strong>Autopost flag:</strong> ${config.autopostFlagEnabled ? "Enabled" : "Disabled"}.</p><p><strong>Emergency stop:</strong> ${settings.autopostEnabled === false ? "Active" : "Clear"}.</p><p><strong>Timezone:</strong> ${escapeHtml(config.timezone)}.</p><p><strong>Token store:</strong> ${tokenStore ? "Bound" : "Not bound"}.</p></div>
+        <div class="notice" id="system-state"><p>Loading publisher state...</p></div>
       </aside>
     </section>
     <section class="content">
@@ -5772,9 +6598,12 @@ async function serveXPublisherAdmin(request, env) {
     var status = document.getElementById("publisher-status");
     var preview = document.getElementById("draft-preview");
     var list = document.getElementById("queue-list");
+    var system = document.getElementById("system-state");
     var activeFilter = "queue";
     var selectedId = "";
     var records = [];
+    var systemState = {};
+    var settings = {};
     function updateCount(){ count.textContent = Array.from((text.value || "").trim()).length; }
     function setStatus(message){ status.textContent = message; }
     function headers(){ return {"Content-Type":"application/json","X-GAH-CSRF":csrf}; }
@@ -5813,15 +6642,37 @@ async function serveXPublisherAdmin(request, env) {
       var data = await response.json().catch(function(){ return {ok:false,error:"invalid_response"}; });
       if (!response.ok || !data.ok) { setStatus("Queue unavailable: " + (data.error || response.status)); return; }
       records = data.records || [];
+      systemState = data.systemState || {};
+      settings = data.settings || {};
       render();
       setButtons();
     }
     function recordMatches(record){
       if (activeFilter === "published") return record.status === "PUBLISHED";
-      if (activeFilter === "failed") return record.status === "FAILED";
+      if (activeFilter === "failed") return ["FAILED","FAILED_REQUIRES_ATTENTION","DUPLICATE_BLOCKED","DO_NOT_PUBLISH"].indexOf(record.status) >= 0 || record.failureCategory;
       return ["DRAFT","APPROVED","SCHEDULED","PUBLISHING"].indexOf(record.status) >= 0;
     }
+    function renderSystem(){
+      system.innerHTML = "";
+      [
+        ["Automatic", systemState.automaticPublishingEnabled ? "enabled" : "disabled"],
+        ["Scheduler", systemState.schedulerState || "unknown"],
+        ["Last discovery", systemState.lastDiscoveryRun || "not observed"],
+        ["Last publish attempt", systemState.lastPublishAttempt || "not observed"],
+        ["Last success", systemState.lastSuccessfulPost || "not observed"],
+        ["Next run", systemState.nextScheduledRun || "not observed"],
+        ["Queue depth", records.filter(function(record){ return ["APPROVED","SCHEDULED","PUBLISHING"].indexOf(record.status) >= 0; }).length],
+        ["Failed", records.filter(function(record){ return ["FAILED","FAILED_REQUIRES_ATTENTION"].indexOf(record.status) >= 0; }).length],
+        ["Policy", systemState.activePolicyVersion || "unknown"],
+        ["Limits", (settings.maxDaily || "?") + "/day, " + (settings.minSpacingMinutes || "?") + " min spacing"]
+      ].forEach(function(pair){
+        var p = document.createElement("p");
+        p.innerHTML = "<strong>" + pair[0] + ":</strong> " + String(pair[1]);
+        system.appendChild(p);
+      });
+    }
     function render(){
+      renderSystem();
       var visible = records.filter(recordMatches);
       list.innerHTML = "";
       if (!visible.length) {
@@ -5832,15 +6683,21 @@ async function serveXPublisherAdmin(request, env) {
         var item = document.createElement("article");
         item.className = "queue-item";
         var title = document.createElement("h3");
-        title.textContent = record.status + " - " + record.queueId;
+        title.textContent = record.status + " - " + (record.route || record.queueId);
         var body = document.createElement("p");
-        body.textContent = record.postText || "";
+        body.textContent = record.title || record.postText || "";
+        var post = document.createElement("pre");
+        post.className = "queue-preview";
+        post.textContent = record.postText || "";
         var meta = document.createElement("p");
         meta.className = "queue-meta";
-        meta.textContent = "scheduled " + (record.scheduledDisplay || "not set") + " | approved " + (record.approved ? "yes" : "no") + " | retries " + record.retryCount + (record.xPostUrl ? " | " + record.xPostUrl : "") + (record.safeFailureSummary ? " | " + record.safeFailureSummary : "");
+        meta.textContent = "type " + (record.pageType || "manual") + " | discovered " + (record.discoveredAt || "manual") + " | eligibility " + (record.eligibility || "manual") + " | approval " + (record.approvalState || (record.approved ? "APPROVED" : "UNAPPROVED")) + " | scheduled " + (record.scheduledDisplay || record.scheduledAt || "not set") + " | attempts " + record.retryCount + " | result " + (record.apiResult || record.failureCategory || "pending") + (record.xPostUrl ? " | " + record.xPostUrl : "") + (record.safeFailureSummary ? " | " + record.safeFailureSummary : "");
+        var detail = document.createElement("p");
+        detail.className = "queue-meta";
+        detail.textContent = "deployment " + (record.deploymentId || "unknown") + " | fingerprint " + (record.publicationFingerprint || "none") + " | canonical " + (record.canonicalUrl || record.destinationUrl || "none");
         var row = document.createElement("div");
         row.className = "publisher-row";
-        [["Edit","edit"],["Approve","approve"],["Schedule","schedule"],["Publish Now","publish_now"],["Cancel","cancel"],["Retry","retry"]].forEach(function(pair){
+        [["Edit","edit"],["Approve","approve"],["Schedule","schedule"],["Publish Now","publish_now"],["Cancel","cancel"],["Retry","retry"],["Do Not Publish","mark_do_not_publish"]].forEach(function(pair){
           var button = document.createElement("button");
           button.type = "button";
           button.className = "button";
@@ -5860,7 +6717,7 @@ async function serveXPublisherAdmin(request, env) {
           });
           row.appendChild(button);
         });
-        item.append(title, body, meta, row);
+        item.append(title, body, post, meta, detail, row);
         list.appendChild(item);
       });
     }
@@ -5902,6 +6759,19 @@ async function serveXPublisherAdmin(request, env) {
         setStatus(data.dryRun ? "Dry run passed. No post was sent." : "Published: " + (data.postUrl || data.postId || "created"));
         await refresh();
       } catch (error) { setStatus("Blocked: " + error.message); }
+    });
+    document.getElementById("run-discovery").addEventListener("click", async function(){
+      try {
+        var response = await fetch("/api/x/discover", { method:"POST", credentials:"same-origin", headers: headers(), body: JSON.stringify({}) });
+        var data = await response.json().catch(function(){ return {ok:false,error:"invalid_response"}; });
+        if (!response.ok || !data.ok) throw new Error(data.error || response.status);
+        setStatus("Discovery complete: " + data.queuedCount + " queued, " + data.eligibleCount + " eligible.");
+        await refresh();
+      } catch (error) { setStatus("Blocked: " + error.message); }
+    });
+    document.getElementById("resume-autopost").addEventListener("click", async function(){
+      try { await api("resume_autopost", {}); setStatus("Automatic publishing resumed."); await refresh(); }
+      catch (error) { setStatus("Blocked: " + error.message); }
     });
     document.getElementById("emergency-stop").addEventListener("click", async function(){
       try { await api("emergency_stop", {}); setStatus("Emergency stop is active."); await refresh(); }
@@ -6889,6 +7759,7 @@ function archiveUnavailableResponse(request, archiveId) {
 export default {
   async scheduled(controller, env, ctx) {
     ctx.waitUntil(reconcilePatreonMembers(env).catch(() => undefined));
+    ctx.waitUntil(xRunInternalScheduledPublisher(env).catch(() => undefined));
   },
 
   async fetch(request, env) {
@@ -6993,6 +7864,14 @@ export default {
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/auth/x/callback") {
       return handleXCallback(request, env);
+    }
+
+    if (path === "/api/x/discover") {
+      return handleApiXDiscover(request, env);
+    }
+
+    if (path === "/api/x/health") {
+      return handleApiXHealth(request, env);
     }
 
     if (path === "/api/x/queue") {
