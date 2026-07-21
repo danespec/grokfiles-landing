@@ -5751,20 +5751,21 @@ async function xBuildDiscoveryPage(request, env, route, registerItem, sitemapDat
   const explicitMode = String(registerItem?.x_publish_mode || registerItem?.xPublishMode || "").trim().toLowerCase();
   const htmlResult = await xReadRouteHtml(request, env, route);
   const pageType = xPageTypeForRoute(route, registerItem?.pageType || "");
+  const registerFallbackAvailable = Boolean(registerItem?.canonicalUrl && (registerItem?.title || registerItem?.socialSummary));
   const base = {
     route,
     pageType,
-    status: htmlResult.status,
+    status: htmlResult.ok ? htmlResult.status : (registerFallbackAvailable ? 200 : htmlResult.status),
     htmlPresent: htmlResult.ok,
-    discoverySource: registerItem ? "publication_register+frontdoor_manifest" : "frontdoor_manifest",
+    discoverySource: registerItem ? `publication_register+frontdoor_manifest${htmlResult.ok ? "" : "+metadata_fallback"}` : "frontdoor_manifest",
     xPublishMode: explicitMode || "automatic",
     xPublish: explicitPublish === null ? true : explicitPublish,
     legacyEligible: legacyEligible === null ? true : legacyEligible
   };
-  if (!htmlResult.ok) return { ...base, eligible: false, eligibility: "INELIGIBLE", exclusionReason: `http_${htmlResult.status}` };
+  if (!htmlResult.ok && !registerFallbackAvailable) return { ...base, eligible: false, eligibility: "INELIGIBLE", exclusionReason: `http_${htmlResult.status}` };
   const html = htmlResult.html;
-  const canonicalUrl = xLinkHref(html, "canonical");
-  const robots = htmlMetaContent(html, "name", "robots");
+  const canonicalUrl = (htmlResult.ok ? xLinkHref(html, "canonical") : "") || registerItem?.canonicalUrl || "";
+  const robots = htmlResult.ok ? htmlMetaContent(html, "name", "robots") : "index,follow";
   const title = registerItem?.title || htmlMetaContent(html, "property", "og:title") || htmlMetaContent(html, "name", "twitter:title") || xHtmlTitle(html) || xFirstHeading(html);
   const socialDescription = registerItem?.socialSummary || htmlMetaContent(html, "name", "twitter:description") || htmlMetaContent(html, "property", "og:description") || htmlMetaContent(html, "name", "description") || xJsonLdValue(html, "description");
   const rawImageUrl = registerItem?.imageUrl || htmlMetaContent(html, "property", "og:image") || htmlMetaContent(html, "name", "twitter:image");
@@ -5781,7 +5782,7 @@ async function xBuildDiscoveryPage(request, env, route, registerItem, sitemapDat
     imageValidation: image.reason,
     publicationDate,
     modifiedDate,
-    articleSchemaPresent: xArticleJsonLdPresent(html),
+    articleSchemaPresent: htmlResult.ok ? xArticleJsonLdPresent(html) : false,
     xRepostOnMaterialUpdate: Boolean(registerItem?.x_repost_on_material_update || registerItem?.xRepostOnMaterialUpdate)
   };
   let exclusionReason = xAutoExcludedRoute(route);

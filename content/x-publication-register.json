@@ -8,6 +8,8 @@
     {
       "route": "/evidence-briefs/todd-blanche-no-evidence",
       "canonicalUrl": "https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence",
+      "title": "Todd Blanche \"No Evidence\" Evidence Brief",
+      "imageUrl": "https://grokarchivehub.com/frontdoor/og/blanche-no-evidence.svg",
       "publicationDate": "2026-07-20",
       "pageType": "Evidence Brief",
       "eligibleForX": true,
@@ -21,6 +23,8 @@
     {
       "route": "/investigations/new-mexico-doj-epstein-records",
       "canonicalUrl": "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records",
+      "title": "The New Mexico-DOJ Epstein Records Standoff",
+      "imageUrl": "https://grokarchivehub.com/frontdoor/og/new-mexico-doj-epstein-records.svg",
       "publicationDate": "2026-07-19",
       "pageType": "Investigation",
       "eligibleForX": true,
@@ -34,6 +38,8 @@
     {
       "route": "/document-autopsies/doug-band-transcript",
       "canonicalUrl": "https://grokarchivehub.com/document-autopsies/doug-band-transcript",
+      "title": "Doug Band's Epstein Testimony",
+      "imageUrl": "https://grokarchivehub.com/frontdoor/og/doug-band-transcript.svg",
       "publicationDate": "2026-07-19",
       "pageType": "Document Autopsy",
       "eligibleForX": true,
@@ -47,6 +53,8 @@
     {
       "route": "/document-autopsies/leon-black-transcript",
       "canonicalUrl": "https://grokarchivehub.com/document-autopsies/leon-black-transcript",
+      "title": "Leon Black Transcript Autopsy",
+      "imageUrl": "https://grokarchivehub.com/frontdoor/og/leon-black-transcript.svg",
       "publicationDate": "2026-07-19",
       "pageType": "Document Autopsy",
       "eligibleForX": true,
@@ -60,6 +68,8 @@
     {
       "route": "/investigations/efta-compliance-tracker",
       "canonicalUrl": "https://grokarchivehub.com/investigations/efta-compliance-tracker",
+      "title": "EFTA Compliance Tracker",
+      "imageUrl": "https://grokarchivehub.com/frontdoor/og/grok-archive-hub.svg",
       "publicationDate": "2026-07-18",
       "pageType": "Compliance Tracker",
       "eligibleForX": true,
