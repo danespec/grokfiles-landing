@@ -5557,8 +5557,12 @@ async function xReadRouteHtml(request, env, route) {
       assetUrl.pathname = route;
       assetUrl.search = "";
       const response = await env.ASSETS.fetch(assetUrl.toString());
-      if (!response.ok) return { ok: false, status: response.status, html: "", assetPath };
-      return { ok: true, status: response.status, html: await response.text(), assetPath };
+      if (response.ok) return { ok: true, status: response.status, html: await response.text(), assetPath };
+      const publicResponse = await fetch(`https://grokarchivehub.com${route}`, {
+        headers: { "User-Agent": "Grok Archive Hub X Publisher Discovery" }
+      });
+      if (!publicResponse.ok) return { ok: false, status: publicResponse.status || response.status, html: "", assetPath };
+      return { ok: true, status: publicResponse.status, html: await publicResponse.text(), assetPath: route };
     } catch (_) {
       return { ok: false, status: 404, html: "", assetPath };
     }
