@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "items": [
+    {"id": "LT-001", "sceneId": "SC-002", "primary": "Official Senate Hearing Page", "secondary": "July 15, 2026 - source manifest EVID-002", "sourceId": "EVID-002"},
+    {"id": "LT-002", "sceneId": "SC-003", "primary": "Sen. John Kennedy", "secondary": "Question scope from HEX-003", "sourceId": "EVID-005"},
+    {"id": "LT-003", "sceneId": "SC-004", "primary": "Todd Blanche", "secondary": "Answer qualifiers from HEX-003", "sourceId": "EVID-004"},
+    {"id": "LT-004", "sceneId": "SC-005", "primary": "Records Versus Proof", "secondary": "GAH evidentiary standard matrix", "sourceId": "EVID-009"},
+    {"id": "LT-005", "sceneId": "SC-006", "primary": "Charge Document", "secondary": "Party position, not conviction", "sourceId": "EVID-015"},
+    {"id": "LT-006", "sceneId": "SC-006", "primary": "Court Finding", "secondary": "Maxwell counts and elements only", "sourceId": "EVID-014"},
+    {"id": "LT-007", "sceneId": "SC-007", "primary": "Unresolved Public Gap", "secondary": "DOJ person-specific analyses not located", "sourceId": "EVID-012"},
+    {"id": "LT-008", "sceneId": "SC-009", "primary": "Correction Route", "secondary": "Claim ID + source ID + replacement record", "sourceId": "EVID-001"}
+  ]
+}

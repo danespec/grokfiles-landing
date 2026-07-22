@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "timingStatus": "PROVISIONAL_TIMING",
+  "scenes": [
+    {
+      "sceneId": "SC-001",
+      "title": "Cold open: the problem with shorthand",
+      "timeRange": "00:00-00:40",
+      "narrationParagraphs": ["P01", "P02"],
+      "visualType": "editorial graphic",
+      "visualPlan": "Black text on light document-texture field: NO EVIDENCE? then scope cards for what, where, standard, date, followed by DOES NOT MEAN NO RECORDS.",
+      "sourceIds": ["EVID-008", "EVID-009"],
+      "classificationLabels": ["editorial explanation"],
+      "notes": "No fake documents. Use typography and simple lines only."
+    },
+    {
+      "sceneId": "SC-002",
+      "title": "The source event",
+      "timeRange": "00:40-01:35",
+      "narrationParagraphs": ["P03", "P04", "P05"],
+      "visualType": "primary document",
+      "visualPlan": "Zoom from GAH brief URL to archived Senate hearing page and source manifest hash card. Add posture tags for official Senate source material, official caption source, GAH hearing-exchange summary, human-audio-certified exact short quotation, and editorial interpretation. State that only four short quotations are human-certified.",
+      "sourceIds": ["EVID-001", "EVID-002", "EVID-003", "EVID-006"],
+      "classificationLabels": ["established fact", "unresolved"],
+      "notes": "Show no official stenographic transcript located as a source-status card. Do not use blanket certified-record wording."
+    },
+    {
+      "sceneId": "SC-003",
+      "title": "The exact question and the narrow category",
+      "timeRange": "01:35-02:25",
+      "narrationParagraphs": ["P06"],
+      "visualType": "transcript",
+      "visualPlan": "Highlight the Kennedy question from the exchange ledger, then draw a boundary box around other men to whom Epstein trafficked young women.",
+      "sourceIds": ["EVID-004", "EVID-005"],
+      "classificationLabels": ["official statement"],
+      "notes": "Quote must match Q-VP-001 exactly."
+    },
+    {
+      "sceneId": "SC-004",
+      "title": "The answer and its qualifiers",
+      "timeRange": "02:25-03:25",
+      "narrationParagraphs": ["P07", "P08"],
+      "visualType": "transcript",
+      "visualPlan": "First card: GAH hearing-exchange summary describes Blanche's answer as tied to DOJ/FBI files. Separate cards: human-certified short quotations as of now; That does not mean it did not happen. Then show reviewed-corpus versus universal-claim split.",
+      "sourceIds": ["EVID-004", "EVID-005", "EVID-008"],
+      "classificationLabels": ["official statement", "inference"],
+      "notes": "Do not imply the complete surrounding sentence was human-certified unless the quote ledger is expanded."
+    },
+    {
+      "sceneId": "SC-005",
+      "title": "Records versus proof",
+      "timeRange": "03:25-05:05",
+      "narrationParagraphs": ["P09", "P10"],
+      "visualType": "editorial graphic",
+      "visualPlan": "Comparison table: record exists, can establish, cannot establish. Use icons for address book, calendar, photo, flight log, testimony.",
+      "sourceIds": ["EVID-008", "EVID-009"],
+      "classificationLabels": ["editorial explanation", "allegation"],
+      "notes": "No person-specific names in this sequence."
+    },
+    {
+      "sceneId": "SC-006",
+      "title": "What the public record establishes",
+      "timeRange": "05:05-06:35",
+      "narrationParagraphs": ["P11", "P12", "P13"],
+      "visualType": "primary document",
+      "visualPlan": "Timeline: 2019 charge document, 2021 verdict, 2022 judgment, 2024 appeal. Labels distinguish party position from court finding. Source-spine card separates GAH hearing-exchange summaries from human-certified short quotations.",
+      "sourceIds": ["EVID-010", "EVID-014", "EVID-015"],
+      "classificationLabels": ["party position", "court finding"],
+      "notes": "Do not imply Epstein conviction or unnamed third-party finding."
+    },
+    {
+      "sceneId": "SC-007",
+      "title": "What DOJ has not publicly shown",
+      "timeRange": "06:35-07:45",
+      "narrationParagraphs": ["P14", "P15"],
+      "visualType": "unresolved-gap indicator",
+      "visualPlan": "Four gap groups marked not publicly located in the reviewed package: Senate QFRs or written Blanche answers; person-specific DOJ declination, corroboration, credibility, or charging analyses; survivor-meeting follow-up documentation; complete official stenographic Day 1 transcript.",
+      "sourceIds": ["EVID-012", "EVID-013"],
+      "classificationLabels": ["official statement", "unresolved"],
+      "notes": "No hidden-record speculation."
+    },
+    {
+      "sceneId": "SC-008",
+      "title": "Related hearing exchanges",
+      "timeRange": "07:45-08:55",
+      "narrationParagraphs": ["P16", "P17", "P18"],
+      "visualType": "reconstructed timeline",
+      "visualPlan": "Three exchange blocks: Grassley, Durbin, Kennedy. For Grassley, show only the certified phrase investigate, indict, and prosecute as a direct quotation. Connect to contradiction-audit counters bounded by reviewed source package.",
+      "sourceIds": ["EVID-004", "EVID-005", "EVID-011"],
+      "classificationLabels": ["official statement", "established fact"],
+      "notes": "Keep Grassley and Durbin separate from the decisive Kennedy answer."
+    },
+    {
+      "sceneId": "SC-009",
+      "title": "The narrow conclusion",
+      "timeRange": "08:55-10:10",
+      "narrationParagraphs": ["P19", "P20", "P21", "P22", "P23", "P24"],
+      "visualType": "editorial graphic",
+      "visualPlan": "Final equation: no evidence in reviewed corpus does not mean no records, and records are not proof by themselves. End with corrections/source invitation.",
+      "sourceIds": ["EVID-009", "EVID-012", "EVID-001"],
+      "classificationLabels": ["editorial explanation", "unresolved"],
+      "notes": "End card points to corrections and package review sources."
+    }
+  ]
+}

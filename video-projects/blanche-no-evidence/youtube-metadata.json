@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "uploadStatus": "not-uploaded",
+  "proposedTitle": "\"No Evidence\" Does Not Mean \"No Records\" — What DOJ Actually Said",
+  "alternativeTitles": [
+    "\"No Evidence\" Is Not \"No Records\" - What DOJ Actually Said About the Epstein Files",
+    "Records Are Not Proof: The Todd Blanche Hearing Answer Explained"
+  ],
+  "description": "A source-first Grok Archive Hub evidence video explaining why disputed public interpretations of Todd Blanche's hearing answer should not be reduced to either a blanket exoneration claim or an all-purpose proof claim.\n\nThis draft package is based on the GAH evidence brief, official Senate source material, the quote-verification ledger, records-versus-proof matrix, prosecution-decision ledger, and acquisition-gap tracker. It separates official caption source, GAH hearing-exchange summary, human-certified short quotation, and editorial interpretation.\n\nRelated GAH sources:\n- Evidence brief: https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence\n- Source manifest: https://grokarchivehub.com/evidence-data/blanche-no-evidence/source-manifest.json\n- Claims ledger: https://grokarchivehub.com/evidence-data/blanche-no-evidence/claims.json\n- Corrections: https://grokarchivehub.com/corrections\n\nNo person is accused of criminal conduct in this video unless the cited primary record establishes the procedural posture. Charges, allegations, testimony, leads, association records, and court findings are separated by label.",
+  "chapterMarkers": [
+    {"time": "00:00", "title": "Cold open"},
+    {"time": "00:40", "title": "The source event"},
+    {"time": "01:35", "title": "The exact question"},
+    {"time": "02:25", "title": "The answer in context"},
+    {"time": "03:25", "title": "Records versus proof"},
+    {"time": "05:05", "title": "What the public record establishes"},
+    {"time": "06:35", "title": "What DOJ has not publicly shown"},
+    {"time": "07:45", "title": "Related hearing exchanges"},
+    {"time": "08:55", "title": "The narrow conclusion"}
+  ],
+  "tags": [
+    "Grok Archive Hub",
+    "Epstein files",
+    "Todd Blanche",
+    "DOJ",
+    "Senate Judiciary",
+    "evidence standards",
+    "records versus proof",
+    "source verification",
+    "public records",
+    "court records"
+  ],
+  "category": "News & Politics",
+  "language": "en",
+  "madeForKids": false,
+  "privacyStatus": "private",
+  "notifySubscribers": false,
+  "relatedGahUrls": [
+    "https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence",
+    "https://grokarchivehub.com/evidence-data/blanche-no-evidence/source-manifest.json",
+    "https://grokarchivehub.com/evidence-data/blanche-no-evidence/claims.json",
+    "https://grokarchivehub.com/corrections",
+    "https://grokarchivehub.com/editorial-policy",
+    "https://grokarchivehub.com/methodology"
+  ],
+  "archiveLinks": [
+    "/evidence-data/blanche-no-evidence/source-manifest.json",
+    "/evidence-data/blanche-no-evidence/quote-verification.json",
+    "/evidence-data/blanche-no-evidence/records-vs-proof.json",
+    "/evidence-data/blanche-no-evidence/acquisition-gaps.json"
+  ],
+  "pinnedCommentDraft": "Sources and correction route are in the description. This video separates official statements, charges, court findings, allegations, inferences, and unresolved public-record gaps. If you have a primary record that changes a claim, send the exact source location through the corrections page.",
+  "xQueueSummary": {
+    "status": "not-queued",
+    "summary": "Draft video package only. Do not post to X until final audio, captions timing, thumbnail, upload, and editorial approval are complete.",
+    "evidenceHook": "Disputed public interpretations of the answer are broader than the reviewed source package supports.",
+    "requiresSeparateXPublicationAction": true
+  }
+}

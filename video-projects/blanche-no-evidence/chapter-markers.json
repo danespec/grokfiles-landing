@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "timingStatus": "PROVISIONAL_TIMING",
+  "chapters": [
+    {"time": "00:00", "title": "Cold open", "paragraphs": ["P01", "P02"]},
+    {"time": "00:40", "title": "The source event", "paragraphs": ["P03", "P04", "P05"]},
+    {"time": "01:35", "title": "The exact question", "paragraphs": ["P06"]},
+    {"time": "02:25", "title": "The answer in context", "paragraphs": ["P07", "P08"]},
+    {"time": "03:25", "title": "Records versus proof", "paragraphs": ["P09", "P10"]},
+    {"time": "05:05", "title": "What the public record establishes", "paragraphs": ["P11", "P12", "P13"]},
+    {"time": "06:35", "title": "What DOJ has not publicly shown", "paragraphs": ["P14", "P15"]},
+    {"time": "07:45", "title": "Related hearing exchanges", "paragraphs": ["P16", "P17", "P18"]},
+    {"time": "08:55", "title": "The narrow conclusion", "paragraphs": ["P19", "P20", "P21", "P22", "P23", "P24"]}
+  ]
+}

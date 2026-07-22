@@ -177,10 +177,16 @@
           "type": "string"
         },
         "youtubeVideoId": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "youtubeUrl": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "thumbnailUrl": {
           "type": "string"

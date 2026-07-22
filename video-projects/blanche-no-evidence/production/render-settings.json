@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "output": {
+    "directory": "/Users/thomas/Library/Mobile Documents/com~apple~CloudDocs/GAH Reviews/GAH-VIDEO-PILOT-001/ROUGH-CUT",
+    "mp4File": "GAH-VIDEO-PILOT-001-ROUGH-CUT.mp4",
+    "captionsFile": "GAH-VIDEO-PILOT-001-ROUGH-CUT.en.vtt",
+    "reviewHtmlFile": "rough-cut-review.html",
+    "manifestFile": "rough-cut-manifest.json",
+    "checksumsFile": "rough-cut-checksums.txt",
+    "contactSheetFile": "frame-contact-sheet.jpg",
+    "instructionsFile": "REVIEW-INSTRUCTIONS.md"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "aspectRatio": "16:9",
+    "frameRate": 30,
+    "codec": "libx264",
+    "codecLabel": "H.264",
+    "pixelFormat": "yuv420p",
+    "durationToleranceSeconds": {
+      "min": 520,
+      "max": 650
+    }
+  },
+  "audio": {
+    "source": "macOS say",
+    "voice": "Samantha",
+    "rateWordsPerMinute": 150,
+    "codec": "aac",
+    "normalization": "conservative ffmpeg loudnorm pass in one-pass mode",
+    "purpose": "pacing and editorial review only",
+    "finalNarrationApproved": false,
+    "music": false,
+    "soundEffects": false,
+    "voiceImpersonation": false
+  },
+  "watermark": {
+    "openingText": "ROUGH CUT — NOT FOR PUBLICATION",
+    "persistentText": "ROUGH CUT — NOT FOR PUBLICATION",
+    "persistentPosition": "top-right",
+    "required": true
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg",
+    "ffprobe": "ffprobe",
+    "node": "node",
+    "say": "say",
+    "qlmanage": "qlmanage"
+  },
+  "style": {
+    "background": "#f7f1e6",
+    "ink": "#1f2328",
+    "muted": "#5b6470",
+    "accent": "#9a4f1c",
+    "danger": "#7f1d1d",
+    "safeGreen": "#1f6f43",
+    "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "cropPolicy": "Rough-cut source visuals use source-location cards and genuine local source references. Cropping, enlargement, contrast adjustment, highlights, arrows, and labels are allowed; invented text, fake stamps, fake classification markings, removed qualifiers, altered quotation wording, and editorial recreations presented as documents are prohibited.",
+  "crops": [
+    {
+      "assetId": "RC-ASSET-001",
+      "cropCoordinates": {"unit": "percent", "x": 0, "y": 0, "width": 100, "height": 35},
+      "textHighlighted": "Evidence brief route and correction route",
+      "redactionStatus": "public page",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Shown as a GAH-authored source-location card, not as a primary government document."
+    },
+    {
+      "assetId": "RC-ASSET-002",
+      "cropCoordinates": {"unit": "percent", "x": 0, "y": 0, "width": 100, "height": 30},
+      "textHighlighted": "Official Senate hearing page title and date",
+      "redactionStatus": "public official page archive",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Official source page context only."
+    },
+    {
+      "assetId": "RC-ASSET-003",
+      "cropCoordinates": {"unit": "timestamp-window", "start": "01:10:36", "end": "01:52:12"},
+      "textHighlighted": "Official caption source; provisional caption note",
+      "redactionStatus": "public official caption archive",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Caption text is not silently upgraded to official transcript."
+    },
+    {
+      "assetId": "RC-ASSET-004",
+      "cropCoordinates": {"unit": "ledger-items", "items": ["Q-VP-001", "Q-VP-002", "Q-VP-003", "Q-VP-004"]},
+      "textHighlighted": "Four approved human-audio-certified exact short quotations",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Only exact ledger quotations may appear in quotation marks."
+    },
+    {
+      "assetId": "RC-ASSET-005",
+      "cropCoordinates": {"unit": "ledger-items", "items": ["HEX-001", "HEX-002", "HEX-003"]},
+      "textHighlighted": "GAH hearing-exchange summary posture",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Exchange summary is not certified as a complete exchange."
+    },
+    {
+      "assetId": "RC-ASSET-006",
+      "cropCoordinates": {"unit": "percent", "x": 0, "y": 0, "width": 100, "height": 45},
+      "textHighlighted": "source IDs, original URLs, archived routes, hashes",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Manifest card identifies provenance, not proof beyond the ledger."
+    },
+    {
+      "assetId": "RC-ASSET-007",
+      "cropCoordinates": {"unit": "ledger-items", "items": ["CLM-001", "CLM-012"]},
+      "textHighlighted": "claim-routing metadata",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Claim ledger is shown as GAH metadata."
+    },
+    {
+      "assetId": "RC-ASSET-008",
+      "cropCoordinates": {"unit": "ledger-section", "section": "final_classification"},
+      "textHighlighted": "scope-limited evidentiary standard",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Displayed as editorial standard matrix."
+    },
+    {
+      "assetId": "RC-ASSET-009",
+      "cropCoordinates": {"unit": "ledger-section", "section": "records/proof matrix"},
+      "textHighlighted": "records can document facts; records do not automatically prove crimes",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Displayed as editorial proof matrix."
+    },
+    {
+      "assetId": "RC-ASSET-010",
+      "cropCoordinates": {"unit": "ledger-items", "items": ["PDL-001", "PDL-002", "PDL-003", "PDL-004", "PDL-005"]},
+      "textHighlighted": "charged, convicted, unknown, and not-publicly-located postures",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Displayed as procedural posture ledger."
+    },
+    {
+      "assetId": "RC-ASSET-011",
+      "cropCoordinates": {"unit": "ledger-section", "section": "confirmed_contradictions"},
+      "textHighlighted": "zero confirmed contradictions within the reviewed source package",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Bounded to reviewed package only."
+    },
+    {
+      "assetId": "RC-ASSET-012",
+      "cropCoordinates": {"unit": "ledger-items", "items": ["GAP-001", "GAP-002", "GAP-003", "GAP-004"]},
+      "textHighlighted": "NOT PUBLICLY LOCATED IN THE REVIEWED PACKAGE",
+      "redactionStatus": "public JSON ledger",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Gaps are not labeled nonexistent."
+    },
+    {
+      "assetId": "RC-ASSET-013",
+      "cropCoordinates": {"unit": "percent", "x": 0, "y": 0, "width": 100, "height": 35},
+      "textHighlighted": "DOJ EFTA reviewed-corpus context",
+      "redactionStatus": "public official page archive",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Official DOJ source used only for corpus context, not person-specific disposition."
+    },
+    {
+      "assetId": "RC-ASSET-014",
+      "cropCoordinates": {"unit": "page", "page": "verdict form"},
+      "textHighlighted": "court finding limited to counts and elements",
+      "redactionStatus": "public court record archive",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Court record is not extended to unnamed third-party conduct."
+    },
+    {
+      "assetId": "RC-ASSET-015",
+      "cropCoordinates": {"unit": "page", "page": "indictment cover and charge summary"},
+      "textHighlighted": "charging document, not conviction",
+      "redactionStatus": "public official PDF archive",
+      "cropAltered": false,
+      "contrastOrEnlargementApplied": true,
+      "provenanceNote": "Indictment is treated as party position/procedural record."
+    }
+  ]
+}

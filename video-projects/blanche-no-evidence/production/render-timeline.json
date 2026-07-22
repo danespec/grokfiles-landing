@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "timingStatus": "PROVISIONAL_TIMING",
+  "plannedDurationSeconds": 610,
+  "scenes": [
+    {
+      "sceneId": "SC-001",
+      "start": "00:00",
+      "durationSeconds": 40,
+      "title": "Cold open: the problem with shorthand",
+      "paragraphs": ["P01", "P02"],
+      "claimIds": ["CLM-VP-001", "CLM-VP-002", "CLM-VP-003", "CLM-VP-004"],
+      "sourceIds": ["EVID-008", "EVID-009"],
+      "quoteIds": [],
+      "gapIds": [],
+      "visualBeats": [
+        "ROUGH CUT — NOT FOR PUBLICATION",
+        "NO EVIDENCE?",
+        "scope / file corpus / standard / date",
+        "DOES NOT MEAN NO RECORDS"
+      ]
+    },
+    {
+      "sceneId": "SC-002",
+      "start": "00:40",
+      "durationSeconds": 55,
+      "title": "The source event",
+      "paragraphs": ["P03", "P04", "P05"],
+      "claimIds": ["CLM-VP-005", "CLM-VP-006", "CLM-VP-007", "CLM-VP-008", "CLM-VP-009", "CLM-VP-010", "CLM-VP-011"],
+      "sourceIds": ["EVID-001", "EVID-002", "EVID-003", "EVID-006"],
+      "quoteIds": [],
+      "gapIds": ["GAP-004"],
+      "visualBeats": [
+        "official Senate source material",
+        "official caption source",
+        "GAH hearing-exchange summary",
+        "human-audio-certified exact short quotation",
+        "editorial interpretation"
+      ]
+    },
+    {
+      "sceneId": "SC-003",
+      "start": "01:35",
+      "durationSeconds": 50,
+      "title": "The exact question and the narrow category",
+      "paragraphs": ["P06"],
+      "claimIds": ["CLM-VP-012", "CLM-VP-013"],
+      "sourceIds": ["EVID-004", "EVID-005"],
+      "quoteIds": ["Q-VP-001"],
+      "gapIds": [],
+      "visualBeats": [
+        "Kennedy question",
+        "narrow category boundary",
+        "Q-VP-001 exact quotation"
+      ]
+    },
+    {
+      "sceneId": "SC-004",
+      "start": "02:25",
+      "durationSeconds": 60,
+      "title": "The answer and its qualifiers",
+      "paragraphs": ["P07", "P08"],
+      "claimIds": ["CLM-VP-014", "CLM-VP-015", "CLM-VP-016", "CLM-VP-017", "CLM-VP-018"],
+      "sourceIds": ["EVID-004", "EVID-005", "EVID-008"],
+      "quoteIds": ["Q-VP-002", "Q-VP-003"],
+      "gapIds": [],
+      "visualBeats": [
+        "GAH summary: tied to DOJ/FBI files",
+        "Q-VP-002 exact short quotation",
+        "Q-VP-003 exact short quotation",
+        "reviewed corpus versus universal claim"
+      ]
+    },
+    {
+      "sceneId": "SC-005",
+      "start": "03:25",
+      "durationSeconds": 100,
+      "title": "Records versus proof",
+      "paragraphs": ["P09", "P10"],
+      "claimIds": ["CLM-VP-019", "CLM-VP-020", "CLM-VP-021", "CLM-VP-022"],
+      "sourceIds": ["EVID-008", "EVID-009"],
+      "quoteIds": [],
+      "gapIds": [],
+      "visualBeats": [
+        "address books",
+        "calendars",
+        "photographs",
+        "emails",
+        "financial records",
+        "visitor logs",
+        "flight logs"
+      ]
+    },
+    {
+      "sceneId": "SC-006",
+      "start": "05:05",
+      "durationSeconds": 90,
+      "title": "What the public record establishes",
+      "paragraphs": ["P11", "P12", "P13"],
+      "claimIds": ["CLM-VP-023", "CLM-VP-024", "CLM-VP-025", "CLM-VP-026", "CLM-VP-027", "CLM-VP-028", "CLM-VP-029"],
+      "sourceIds": ["EVID-010", "EVID-014", "EVID-015"],
+      "quoteIds": [],
+      "gapIds": [],
+      "visualBeats": [
+        "2019 indictment",
+        "2021 verdict",
+        "2022 judgment",
+        "jury instructions",
+        "appellate materials"
+      ]
+    },
+    {
+      "sceneId": "SC-007",
+      "start": "06:35",
+      "durationSeconds": 70,
+      "title": "What DOJ has not publicly shown",
+      "paragraphs": ["P14", "P15"],
+      "claimIds": ["CLM-VP-030", "CLM-VP-031", "CLM-VP-032", "CLM-VP-033"],
+      "sourceIds": ["EVID-012", "EVID-013"],
+      "quoteIds": [],
+      "gapIds": ["GAP-001", "GAP-002", "GAP-003", "GAP-004"],
+      "visualBeats": [
+        "Senate QFRs or written Blanche answers",
+        "person-specific DOJ analyses",
+        "survivor-meeting follow-up documentation",
+        "complete official stenographic Day 1 transcript"
+      ]
+    },
+    {
+      "sceneId": "SC-008",
+      "start": "07:45",
+      "durationSeconds": 70,
+      "title": "Related hearing exchanges",
+      "paragraphs": ["P16", "P17", "P18"],
+      "claimIds": ["CLM-VP-034", "CLM-VP-035", "CLM-VP-036", "CLM-VP-037", "CLM-VP-038", "CLM-VP-039"],
+      "sourceIds": ["EVID-004", "EVID-005", "EVID-011"],
+      "quoteIds": ["Q-VP-004"],
+      "gapIds": ["GAP-003"],
+      "visualBeats": [
+        "Grassley exchange context",
+        "Durbin exchange context",
+        "Kennedy exchange context",
+        "Q-VP-004 exact quotation",
+        "zero confirmed contradictions within reviewed source package"
+      ]
+    },
+    {
+      "sceneId": "SC-009",
+      "start": "08:55",
+      "durationSeconds": 75,
+      "title": "The narrow conclusion",
+      "paragraphs": ["P19", "P20", "P21", "P22", "P23", "P24"],
+      "claimIds": ["CLM-VP-040", "CLM-VP-041", "CLM-VP-042", "CLM-VP-043", "CLM-VP-044", "CLM-VP-045", "CLM-VP-046", "CLM-VP-047", "CLM-VP-048", "CLM-VP-049", "CLM-VP-050", "CLM-VP-051"],
+      "sourceIds": ["EVID-009", "EVID-012", "EVID-001"],
+      "quoteIds": [],
+      "gapIds": ["GAP-001", "GAP-002", "GAP-003", "GAP-004"],
+      "visualBeats": [
+        "no evidence does not mean no records",
+        "records are not proof by themselves",
+        "corrections route",
+        "Grok Archive Hub / @GrokArchiveHub"
+      ]
+    }
+  ]
+}

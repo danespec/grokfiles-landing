@@ -4,7 +4,8 @@
   "scripts": {
     "build:videos": "node scripts/build-video-pages.mjs",
     "check:videos": "node scripts/build-video-pages.mjs --check",
-    "test:videos": "node scripts/video-regression.mjs"
+    "test:videos": "node scripts/video-regression.mjs",
+    "test:video-pilot": "node scripts/validate-video-pilot-package.mjs"
   },
   "optionalDependencies": {
     "googleapis": "^173.0.0"

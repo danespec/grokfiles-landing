@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "quotePolicy": "Only Q-VP-001 through Q-VP-004 may appear as human-audio-certified direct quotations in narration or on-screen text unless this ledger is expanded and revalidated.",
+  "quotes": [
+    {
+      "quoteId": "Q-VP-001",
+      "exactQuotedText": "Other than to himself, who, if anyone else, would Mr. Epstein traffic young women to?",
+      "speaker": "Sen. John Kennedy",
+      "date": "2026-07-15",
+      "sourceFile": "evidence-data/blanche-no-evidence/hearing-exchanges.json",
+      "timestampOrPage": "HEX-003, 01:51:00-01:52:12",
+      "surroundingContext": "Kennedy supplied the narrow category for Blanche's answer.",
+      "truncationStatus": "complete certified question as recorded in the GAH exchange ledger",
+      "ellipsesUsed": false,
+      "verificationStatus": "HUMAN_AUDIO_CERTIFIED_EXACT"
+    },
+    {
+      "quoteId": "Q-VP-002",
+      "exactQuotedText": "as of now",
+      "speaker": "Todd Blanche",
+      "date": "2026-07-15",
+      "sourceFile": "evidence-data/blanche-no-evidence/quote-verification.json",
+      "timestampOrPage": "HEX-003, 01:51:00-01:52:12",
+      "surroundingContext": "Short certified phrase used to mark timing limit in Blanche's answer.",
+      "truncationStatus": "short phrase only",
+      "ellipsesUsed": false,
+      "verificationStatus": "HUMAN_AUDIO_CERTIFIED_EXACT"
+    },
+    {
+      "quoteId": "Q-VP-003",
+      "exactQuotedText": "That does not mean it did not happen",
+      "speaker": "Todd Blanche",
+      "date": "2026-07-15",
+      "sourceFile": "evidence-data/blanche-no-evidence/quote-verification.json",
+      "timestampOrPage": "HEX-003, 01:51:00-01:52:12",
+      "surroundingContext": "Qualifier that prevents the answer from becoming a universal no-event finding.",
+      "truncationStatus": "short phrase only",
+      "ellipsesUsed": false,
+      "verificationStatus": "HUMAN_AUDIO_CERTIFIED_EXACT"
+    },
+    {
+      "quoteId": "Q-VP-004",
+      "exactQuotedText": "investigate, indict, and prosecute",
+      "speaker": "Todd Blanche",
+      "date": "2026-07-15",
+      "sourceFile": "evidence-data/blanche-no-evidence/quote-verification.json",
+      "timestampOrPage": "HEX-001, 01:10:36-01:10:48",
+      "surroundingContext": "Separate Grassley exchange about future chargeable information.",
+      "truncationStatus": "short phrase only",
+      "ellipsesUsed": false,
+      "verificationStatus": "HUMAN_AUDIO_CERTIFIED_EXACT"
+    }
+  ]
+}
