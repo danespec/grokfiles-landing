@@ -24,3 +24,12 @@ credentials/
 *.tgz
 *.tar.gz
 *.zip
+!.env.example
+client_secret*.json
+client_secrets*.json
+token.json
+**/token.json
+.config/gah-youtube/
+**/.config/gah-youtube/
+*.p12
+.dev.vars

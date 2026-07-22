@@ -1090,7 +1090,12 @@ async function proxyProofLayer(request, env = {}) {
   headers.set("X-GAH-Apex-Proxy", "wiki.grokarchivehub.com");
   applyRoutePolicyHeaders(headers, proxiedPath);
   applyHtmlSecurityHeaders(headers, env, request);
-  return new Response(stripCloudflareHelperAssets(await upstream.text()), {
+  let body = stripCloudflareHelperAssets(await upstream.text());
+  if (proxiedPath === "/pdf-lite" || proxiedPath === "/pdf-lite.html") {
+    body = addRocketLoaderBypassToScriptTags(body);
+    headers.set("X-GAH-Rocket-Loader-Bypass", "pdf-lite-script-tags");
+  }
+  return new Response(body, {
     status: upstream.status,
     statusText: upstream.statusText,
     headers
@@ -1617,6 +1622,10 @@ function stripCloudflareHelperAssets(html) {
     .replace(/<link\b[^>]*href=["'][^"']*\/cdn-cgi\/styles\/cf\.errors(?:\.ie)?\.css[^"']*["'][^>]*>/gi, "");
 }
 
+function addRocketLoaderBypassToScriptTags(html) {
+  return String(html || "").replace(/<script\b(?![^>]*\bdata-cfasync=)/gi, '<script data-cfasync="false"');
+}
+
 function canonicalForRequest(requestOrUrl, routePath = "") {
   const url = new URL(typeof requestOrUrl === "string" ? requestOrUrl : requestOrUrl.url);
   const pathname = routePath || url.pathname;
@@ -1670,8 +1679,12 @@ function scriptSourceAllowlist(origin = "") {
         "https://www.grokarchivehub.com",
         "https://*.grokfiles-landing.pages.dev"
       ];
-  const directories = ["/frontdoor/", "/book-of-black/", "/evidence-engine/", "/pdfjs/build/", "/cdn-cgi/challenge-platform/"];
-  return origins.flatMap((allowedOrigin) => directories.map((dir) => `${allowedOrigin}${dir}`));
+  const directories = ["/frontdoor/", "/book-of-black/", "/evidence-engine/", "/pdfjs/build/", "/cdn-cgi/challenge-platform/", "/cdn-cgi/scripts/", "/xbjr/"];
+  return [
+    ...origins.flatMap((allowedOrigin) => directories.map((dir) => `${allowedOrigin}${dir}`)),
+    "https://static.cloudflareinsights.com",
+    "https://www.googletagmanager.com"
+  ];
 }
 
 function htmlContentSecurityPolicy(env = {}, origin = "") {
@@ -1679,9 +1692,11 @@ function htmlContentSecurityPolicy(env = {}, origin = "") {
   const scriptSources = ["'unsafe-inline'", ...scriptSourceAllowlist(origin)];
   if (googleAllowed) scriptSources.push("https://www.googletagmanager.com");
   const scriptSrc = scriptSources.join(" ");
+  const cloudflareAnalyticsConnect = "https://cloudflareinsights.com https://*.cloudflareinsights.com";
+  const googleAnalyticsConnect = "https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net";
   const connectSrc = googleAllowed
-    ? "'self' https://www.google-analytics.com https://region1.google-analytics.com"
-    : "'self'";
+    ? `'self' ${googleAnalyticsConnect} https://region1.google-analytics.com ${cloudflareAnalyticsConnect}`
+    : `'self' ${googleAnalyticsConnect} ${cloudflareAnalyticsConnect}`;
   return [
     "default-src 'self'",
     "base-uri 'self'",
@@ -2718,7 +2733,7 @@ async function serveBirthdayBookSsr(request, env, baseRoute, htmlPath) {
       <p class="disclaimer">Presence-only archival research. No guilt or conduct implied unless adjudicated. A source reference may establish presence in a record while remaining silent about purpose, knowledge, relationship, or wrongdoing.</p>
     </div>
   </footer>
-  <script src="/frontdoor/site.js"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
 </body>
 </html>`;
     const headers = new Headers({
@@ -2803,7 +2818,7 @@ function serveBirthdayBookV2Alias(path) {
       <nav><a href="/editorial-policy">Editorial policy</a><a href="/corrections">Corrections</a><a href="/privacy">Privacy</a></nav>
     </div>
   </footer>
-  <script src="/frontdoor/site.js" defer></script>
+  <script data-cfasync="false" defer src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
 </body>
 </html>`;
   const headers = new Headers({
@@ -7238,7 +7253,7 @@ function memberChrome(title, activePath, member, innerHtml) {
     </article>
   </main>
   <footer class="site-footer"><div class="page-shell"><nav class="footer-links"><a href="/membership">Membership</a><a href="/privacy">Privacy</a><a href="/contact">Contact / Source Tips</a><a href="/search">Public Search</a></nav><p class="disclaimer">Member tools do not remove, hide, or paywall public evidence.</p></div></footer>
-  <script src="/frontdoor/site.js"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
 </body>
 </html>`;
 }
@@ -7677,7 +7692,7 @@ function barakReceiptDetailHtml(record, requestUrl) {
       <p class="disclaimer">Presence-only archival research. No guilt or conduct implied unless adjudicated.</p>
     </div>
   </footer>
-  <script src="/frontdoor/site.js"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
 </body>
 </html>`;
 }
@@ -7814,6 +7829,16 @@ export default {
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/research-index") {
       return serveResearchIndexApex(request);
+    }
+
+    if ((request.method === "GET" || request.method === "HEAD") && path === "/favicon.ico") {
+      return new Response(null, {
+        status: 204,
+        headers: {
+          "Cache-Control": "public, max-age=86400",
+          "X-GAH-Favicon": "empty-no-content"
+        }
+      });
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/content/drafts/epstein-mcc-timeline") {

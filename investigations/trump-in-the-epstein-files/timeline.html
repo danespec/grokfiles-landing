@@ -189,7 +189,7 @@
     </article>
   </main>
   <footer class="site-footer"><div class="page-shell"><p class="disclaimer">Claim -> Source -> Bias -> Silence -> Confidence. Presence-only archival research. No guilt or conduct implied unless adjudicated.</p></div></footer>
-  <script src="/frontdoor/site.js"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
   <script>
     const q=document.getElementById('q'),dt=document.getElementById('dateType'),cl=document.getElementById('claim'),cf=document.getElementById('confidence'),cards=[...document.querySelectorAll('.timeline-event')];
     function runFilter(){const needle=q.value.trim().toLowerCase(),type=dt.value,claim=cl.value,conf=cf.value;cards.forEach(card=>{const text=card.textContent.toLowerCase();const okText=!needle||text.includes(needle);const okType=!type||card.dataset.type===type;const okClaim=!claim||card.dataset.claim.includes(claim);const okConf=!conf||card.dataset.confidence.includes(conf);card.hidden=!(okText&&okType&&okClaim&&okConf);});}
