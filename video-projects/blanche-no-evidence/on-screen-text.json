@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "items": [
+    {"id": "OST-001", "sceneId": "SC-001", "text": "NO EVIDENCE?", "classification": "editorial graphic", "sourceId": "EVID-008"},
+    {"id": "OST-002", "sceneId": "SC-001", "text": "No evidence of what?", "classification": "editorial graphic", "sourceId": "EVID-008"},
+    {"id": "OST-003", "sceneId": "SC-002", "text": "Source event: July 15, 2026 Senate Judiciary hearing", "classification": "primary document", "sourceId": "EVID-002"},
+    {"id": "OST-004", "sceneId": "SC-002", "text": "Transcript status: official stenographic transcript not located", "classification": "unresolved-gap indicator", "sourceId": "EVID-012"},
+    {"id": "OST-005", "sceneId": "SC-003", "text": "Narrow question: alleged trafficking to other men", "classification": "transcript", "sourceId": "EVID-005"},
+    {"id": "OST-006", "sceneId": "SC-004", "text": "Qualifier: \"as of now\"", "classification": "transcript", "sourceId": "EVID-004"},
+    {"id": "OST-007", "sceneId": "SC-004", "text": "Qualifier: \"That does not mean it did not happen\"", "classification": "transcript", "sourceId": "EVID-004"},
+    {"id": "OST-008", "sceneId": "SC-005", "text": "Records can document facts. Records do not automatically prove crimes.", "classification": "editorial graphic", "sourceId": "EVID-009"},
+    {"id": "OST-009", "sceneId": "SC-006", "text": "Charge document != conviction", "classification": "primary document", "sourceId": "EVID-015"},
+    {"id": "OST-010", "sceneId": "SC-006", "text": "Court finding: Maxwell counts and elements only", "classification": "primary document", "sourceId": "EVID-014"},
+    {"id": "OST-011", "sceneId": "SC-007", "text": "Public DOJ person-specific analyses: not located", "classification": "unresolved-gap indicator", "sourceId": "EVID-012"},
+    {"id": "OST-012", "sceneId": "SC-008", "text": "0 confirmed contradictions; standards still differ", "classification": "editorial graphic", "sourceId": "EVID-011"},
+    {"id": "OST-013", "sceneId": "SC-009", "text": "NO EVIDENCE? ≠ NO RECORDS", "classification": "editorial graphic", "sourceId": "EVID-009"},
+    {"id": "OST-014", "sceneId": "SC-009", "text": "Corrections require a primary source and exact source location.", "classification": "editorial graphic", "sourceId": "EVID-001"}
+  ]
+}

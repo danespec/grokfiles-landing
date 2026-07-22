@@ -20,7 +20,107 @@
     "archived"
   ],
   "schemaDocumentation": "Only entries in videos[] may generate public pages. A video becomes public only when status is published and visibility is public. Draft, private, unlisted, scheduled, failed, and archived entries are excluded from public watch-page generation, sitemap video entries, and X queue-ready records.",
-  "videos": [],
+  "videos": [
+    {
+      "id": "gah-video-pilot-001-blanche-no-evidence",
+      "slug": "no-evidence-is-not-no-records",
+      "status": "draft",
+      "title": "\"No Evidence\" Is Not the Same as \"No Records\": What DOJ Actually Said",
+      "description": "Review-only evidence-video package explaining the disputed Todd Blanche hearing answer, the difference between records and proof, and the unresolved public-record gaps without uploading or publishing a YouTube video.",
+      "shortDescription": "A review-only evidence-video package on what DOJ and Todd Blanche actually said, and what the public record does and does not establish.",
+      "youtubeVideoId": null,
+      "youtubeUrl": null,
+      "thumbnailUrl": "",
+      "durationIso8601": "",
+      "uploadDate": "",
+      "publishDate": "",
+      "updatedDate": "2026-07-22",
+      "category": "Evidence Explainers",
+      "tags": [
+        "Todd Blanche",
+        "Epstein files",
+        "DOJ",
+        "Senate Judiciary",
+        "records versus proof",
+        "evidence standards",
+        "source verification"
+      ],
+      "transcriptPath": "/video-projects/blanche-no-evidence/narration.txt",
+      "captionsPath": "/video-projects/blanche-no-evidence/captions.en.vtt",
+      "evidenceLinks": [
+        {
+          "label": "Evidence brief",
+          "url": "/evidence-briefs/todd-blanche-no-evidence",
+          "note": "Primary GAH public brief for the pilot."
+        },
+        {
+          "label": "Source manifest",
+          "url": "/evidence-data/blanche-no-evidence/source-manifest.json",
+          "note": "Primary source IDs, original URLs, archived routes, hashes, and usage notes."
+        },
+        {
+          "label": "Quote verification",
+          "url": "/evidence-data/blanche-no-evidence/quote-verification.json",
+          "note": "Human-certified quotation eligibility and timecodes."
+        },
+        {
+          "label": "Records versus proof",
+          "url": "/evidence-data/blanche-no-evidence/records-vs-proof.json",
+          "note": "Matrix distinguishing record existence from proof."
+        },
+        {
+          "label": "Acquisition gaps",
+          "url": "/evidence-data/blanche-no-evidence/acquisition-gaps.json",
+          "note": "Public-record gaps and update triggers."
+        }
+      ],
+      "archiveIds": [
+        "Blanche No Evidence Source Manifest",
+        "Todd Blanche No Evidence Evidence Brief",
+        "EFTA Compliance Tracker",
+        "New Mexico-DOJ Records Standoff",
+        "Leon Black Transcript Autopsy",
+        "Doug Band Transcript Autopsy"
+      ],
+      "batesIds": [],
+      "relatedArchiveDocuments": [
+        {
+          "label": "Epstein SDNY indictment",
+          "url": "/evidence-data/blanche-no-evidence/source/pdfs/epstein-sdny-indictment-2019-doj-dl.pdf",
+          "note": "Official charge document, not a conviction."
+        },
+        {
+          "label": "Maxwell verdict form",
+          "url": "/evidence-data/blanche-no-evidence/source/pdfs/maxwell-verdict-form-2021.pdf",
+          "note": "Court finding limited to counts and elements."
+        },
+        {
+          "label": "DOJ EFTA release",
+          "url": "/evidence-data/blanche-no-evidence/source/html/doj-efta-2026-01-30-release.html",
+          "note": "Reviewed-corpus context, not person-specific declination."
+        }
+      ],
+      "relatedInvestigation": {
+        "title": "What Todd Blanche Actually Said About Epstein Evidence",
+        "url": "/evidence-briefs/todd-blanche-no-evidence"
+      },
+      "factualStatusLabels": [
+        "established fact",
+        "court finding",
+        "party position",
+        "allegation",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "private",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-queued"
+    }
+  ],
   "sampleRecord": {
     "sampleOnly": true,
     "id": "sample-dormant-video",
