@@ -44,4 +44,4 @@ Source-posture rule:
 
 - `Q-VP-001` through `Q-VP-004` are the only human-audio-certified exact quotations.
 - Official caption source, GAH hearing-exchange summary, human-certified short quotation, and editorial interpretation are separate categories.
-- Do not describe mixed summary-and-quote paragraphs as a blanket certified record.
+- Do not describe mixed summary-and-quote paragraphs with blanket certification language.

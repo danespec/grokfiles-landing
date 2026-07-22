@@ -4,7 +4,7 @@ This episode is about the disputed public interpretations of Todd Blanche's hear
 
 Grok Archive Hub starts with a narrower rule: do not convert records into guilt, and do not convert missing public records into exoneration. A record can be real and still not prove criminal conduct. A public gap can be real and still not prove that no record exists somewhere else. That is not a dodge. It is the difference between an evidence archive and a verdict machine.
 
-The source event is the July 15, 2026 Senate Judiciary hearing involving Todd Blanche. The GAH evidence package preserves the official hearing page, official Senate media, official captions, and a human-certification layer for the short exchanges used in the published brief.
+The source event is the July 15, 2026 Senate Judiciary hearing involving Todd Blanche. The GAH evidence package preserves the official hearing page, official Senate media, official captions, and a human-certification layer for the four short quotations used in the published brief.
 
 No complete official stenographic transcript was located for the decisive exchange. That matters. The package therefore separates the official caption source, the GAH hearing-exchange summary, and the human-certified short quotation ledger. It limits direct quotations to wording that passed the review gate. Where the source is a caption, the video says caption. Where the source is a human-certified short quotation, the video says that. Where the source is editorial interpretation, the video labels it that way. It does not silently upgrade any of those categories into a stenographic transcript.
 
@@ -18,7 +18,7 @@ The second distinction is records versus proof. Address books, calendars, photog
 
 The third distinction is allegation versus adjudication. A survivor statement, a civil allegation, or a witness account can matter. It can be a lead. It can be testimony. It can be evidence in a broad sense. But unless a court has found the underlying fact, it should not be presented as a court finding. Respecting that boundary protects both the source and the people named in or near the source.
 
-The released GAH source package establishes the hearing context, the preserved caption source, the human-certified exchange summaries, and the public record spine for the brief. It also establishes that Epstein was federally charged in 2019 and that Ghislaine Maxwell was convicted on the counts reflected in the verdict and judgment record. The package does not need a headline shortcut, because the claim matrix already says what each source can carry and what it cannot carry.
+The released GAH source package establishes the hearing context, the preserved caption source, the GAH hearing-exchange summaries and human-certified short quotations, and the public record spine for the brief. It also establishes that Epstein was federally charged in 2019 and that Ghislaine Maxwell was convicted on the counts reflected in the verdict and judgment record. The package does not need a headline shortcut, because the claim matrix already says what each source can carry and what it cannot carry.
 
 Epstein's 2019 indictment is a charging document. It establishes that prosecutors filed charges. It does not establish a conviction. The prosecution did not reach trial following Epstein's death.
 

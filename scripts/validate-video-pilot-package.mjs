@@ -34,17 +34,31 @@ const REQUIRED_FILES = [
   "legal-risk-review.md",
   "production-checklist.md",
   "publication-checklist.md",
-  "MOBILE-REVIEW.md"
+  "MOBILE-REVIEW.md",
+  "production/README.md",
+  "production/rough-cut-manifest.json",
+  "production/render-settings.json",
+  "production/render-timeline.json",
+  "production/asset-ledger.json",
+  "production/source-crop-ledger.json",
+  "production/visual-style-guide.md",
+  "production/rough-cut-review-checklist.md",
+  "production/render-rough-cut.mjs",
+  "production/verify-rough-cut.mjs"
 ];
 const JSON_FILES = REQUIRED_FILES.filter((file) => file.endsWith(".json"));
-const MEDIA_EXTENSIONS = new Set([".mp4", ".mov", ".m4v", ".webm", ".wav", ".mp3", ".aac", ".aiff", ".psd", ".prproj"]);
+const MEDIA_EXTENSIONS = new Set([".mp4", ".mov", ".m4v", ".webm", ".wav", ".mp3", ".m4a", ".aac", ".aiff", ".psd", ".prproj"]);
 const SECRET_RE = /(client_secret|refresh_token|access_token|private_key|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|AIza[0-9A-Za-z_-]{20,}|gh[pousr]_[0-9A-Za-z]{20,})/i;
 const FORBIDDEN_EDITORIAL_RE = [
   { re: /\bthe certified record says\b/i, message: "blanket certified-record wording is prohibited" },
   { re: /\bcertified record\b/i, message: "certified record must not be used as a blanket source posture" },
   { re: /\bthe disputed Todd Blanche hearing answer\b/i, message: "disputed-answer wording must focus on public interpretations" },
   { re: /\blegally ambiguous\b/i, message: "use scope-limited evidentiary-standard wording instead of legally ambiguous" },
-  { re: /\bno closed investigations\b/i, message: "no-closed-investigations wording requires separate source posture and is not approved here" }
+  { re: /\bno closed investigations\b/i, message: "no-closed-investigations wording requires separate source posture and is not approved here" },
+  { re: /\bhuman-certified exchange summar(?:y|ies)\b/i, message: "exchange summaries are not human-certified" },
+  { re: /\bcertified exchange summar(?:y|ies)\b/i, message: "exchange summaries are not certified as complete exchanges" },
+  { re: /\bcertified exchange\b/i, message: "do not imply a complete exchange is certified" },
+  { re: /\bcertification layer for (?:the )?(?:short )?exchanges\b/i, message: "certification layer applies only to the four short quotations" }
 ];
 const REQUIRED_TITLE = "\"No Evidence\" Does Not Mean \"No Records\"";
 
@@ -183,7 +197,9 @@ for (const [label, text] of [
   ["narration.md", narrationMd],
   ["narration.txt", narrationTxt],
   ["captions.en.vtt", captions],
-  ["MOBILE-REVIEW.md", mobileReview]
+  ["MOBILE-REVIEW.md", mobileReview],
+  ["claim-ledger.json", collectStringValues(claimLedger).join("\n")],
+  ["scene-plan.json", collectStringValues(scenePlan).join("\n")]
 ]) {
   for (const rule of FORBIDDEN_EDITORIAL_RE) {
     if (rule.re.test(text)) errors.push(`${label}: ${rule.message}`);

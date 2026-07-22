@@ -136,7 +136,7 @@
     {
       "claimId": "CLM-VP-009",
       "narrationParagraph": "P04",
-      "exactClaim": "The GAH evidence package preserves the official hearing page, Senate media, captions, and human-certification layer for the exchanges used.",
+      "exactClaim": "The GAH evidence package preserves the official hearing page, Senate media, captions, and human-certification layer for the four short quotations used in the brief.",
       "classification": "established fact",
       "sourcePath": "evidence-data/blanche-no-evidence/source-manifest.json",
       "sourceIdentifier": "CLM-001; senate-day1-official-media; senate-day1-official-captions",
@@ -159,7 +159,7 @@
       "transcriptTimestamp": "HEX-003",
       "quotationStatus": "paraphrase",
       "confidence": "HIGH",
-      "editorialQualification": "Use caption-plus-human-certification layer until a transcript is located.",
+      "editorialQualification": "Use caption source, GAH hearing-exchange summary, and human-certified short quotation labels until a transcript is located.",
       "unresolvedGap": "GAP-004",
       "publicationApprovalStatus": "review-ready"
     },
@@ -346,7 +346,7 @@
     {
       "claimId": "CLM-VP-023",
       "narrationParagraph": "P11",
-      "exactClaim": "The released GAH source package establishes hearing context, caption source, human-certified exchange summaries, and source spine for the brief.",
+      "exactClaim": "The released GAH source package establishes hearing context, caption source, GAH hearing-exchange summaries and human-certified short quotations, and source spine for the brief.",
       "classification": "established fact",
       "sourcePath": "evidence-data/blanche-no-evidence/source-manifest.json",
       "sourceIdentifier": "source manifest; CLM-001; CLM-002",

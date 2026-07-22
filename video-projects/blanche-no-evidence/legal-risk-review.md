@@ -25,7 +25,7 @@ Prohibited language patterns:
 - "No public record exists, therefore no record exists."
 - "Withheld records contain proof."
 - "Victim statements are automatically adjudicated facts."
-- "The certified record says" where the paragraph mixes human-certified short quotations with GAH summary or editorial interpretation.
+- Blanket certification language where the paragraph mixes human-certified short quotations with GAH summary or editorial interpretation.
 - "No closed investigations" as a direct quote unless a new verified quote entry supports it.
 
 Person-specific caution:

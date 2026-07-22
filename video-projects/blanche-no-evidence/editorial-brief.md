@@ -29,8 +29,8 @@ What the video must not say:
 - It must not treat allegations or survivor statements as adjudicated findings.
 - It must not imply withheld or unreviewed records contain any particular fact.
 - It must not claim that DOJ has fully explained every charging or declination decision unless a public DOJ record is located.
-- It must not imply that "no closed investigations" is a direct quotation unless a separately verified quote entry is added.
-- It must not use "the certified record says" for paragraphs that mix human-certified short quotations with GAH summaries or editorial interpretation.
+- It must not treat the closed-investigation paraphrase as a direct quotation unless a separately verified quote entry is added.
+- It must not use blanket certification language for paragraphs that mix human-certified short quotations with GAH summaries or editorial interpretation.
 
 Classification vocabulary:
 

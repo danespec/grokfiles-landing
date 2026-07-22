@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "packageId": "GAH-VIDEO-PILOT-001",
+  "taskId": "GAH-VIDEO-PILOT-001RC",
+  "title": "\"No Evidence\" Does Not Mean \"No Records\" — What DOJ Actually Said",
+  "slug": "no-evidence-is-not-no-records",
+  "status": "rough-cut-workflow-ready",
+  "publicationStatus": "not-for-publication",
+  "roughCutNotice": "ROUGH CUT — NOT FOR PUBLICATION",
+  "target": {
+    "resolution": "1920x1080",
+    "aspectRatio": "16:9",
+    "videoCodec": "H.264",
+    "audioCodec": "AAC",
+    "runtime": "approximately 9-10 minutes"
+  },
+  "sourcePostureVocabulary": [
+    "official Senate source material",
+    "official public source material",
+    "official caption source",
+    "GAH hearing-exchange summary",
+    "human-audio-certified exact short quotation",
+    "editorial interpretation"
+  ],
+  "approvedQuoteIds": [
+    "Q-VP-001",
+    "Q-VP-002",
+    "Q-VP-003",
+    "Q-VP-004"
+  ],
+  "unresolvedGapIds": [
+    "GAP-001",
+    "GAP-002",
+    "GAP-003",
+    "GAP-004"
+  ],
+  "inputs": {
+    "narration": "video-projects/blanche-no-evidence/narration.txt",
+    "captionDraft": "video-projects/blanche-no-evidence/captions.en.vtt",
+    "scenePlan": "video-projects/blanche-no-evidence/scene-plan.json",
+    "claimLedger": "video-projects/blanche-no-evidence/claim-ledger.json",
+    "quoteLedger": "video-projects/blanche-no-evidence/source-quote-ledger.json",
+    "evidenceManifest": "video-projects/blanche-no-evidence/evidence-manifest.json",
+    "timeline": "video-projects/blanche-no-evidence/production/render-timeline.json",
+    "assetLedger": "video-projects/blanche-no-evidence/production/asset-ledger.json",
+    "sourceCropLedger": "video-projects/blanche-no-evidence/production/source-crop-ledger.json"
+  },
+  "outputs": {
+    "directory": "/Users/thomas/Library/Mobile Documents/com~apple~CloudDocs/GAH Reviews/GAH-VIDEO-PILOT-001/ROUGH-CUT",
+    "generatedMediaTrackedByGit": false
+  },
+  "nonActions": {
+    "youtubeApiWrite": false,
+    "youtubeUpload": false,
+    "xPost": false,
+    "deployment": false,
+    "publicWatchPage": false
+  }
+}

@@ -26,7 +26,7 @@ Claim refs: CLM-VP-005, CLM-VP-006, CLM-VP-007
 
 ## P04 - The source event
 
-The source event is the July 15, 2026 Senate Judiciary hearing involving Todd Blanche. The GAH evidence package preserves the official hearing page, official Senate media, official captions, and a human-certification layer for the short exchanges used in the published brief.
+The source event is the July 15, 2026 Senate Judiciary hearing involving Todd Blanche. The GAH evidence package preserves the official hearing page, official Senate media, official captions, and a human-certification layer for the four short quotations used in the published brief.
 
 Claim refs: CLM-VP-008, CLM-VP-009
 
@@ -68,7 +68,7 @@ Claim refs: CLM-VP-021, CLM-VP-022
 
 ## P11 - What the released material establishes
 
-The released GAH source package establishes the hearing context, the preserved caption source, the human-certified exchange summaries, and the public record spine for the brief. It also establishes that Epstein was federally charged in 2019 and that Ghislaine Maxwell was convicted on the counts reflected in the verdict and judgment record. The package does not need a headline shortcut, because the claim matrix already says what each source can carry and what it cannot carry.
+The released GAH source package establishes the hearing context, the preserved caption source, the GAH hearing-exchange summaries and human-certified short quotations, and the public record spine for the brief. It also establishes that Epstein was federally charged in 2019 and that Ghislaine Maxwell was convicted on the counts reflected in the verdict and judgment record. The package does not need a headline shortcut, because the claim matrix already says what each source can carry and what it cannot carry.
 
 Claim refs: CLM-VP-023, CLM-VP-024, CLM-VP-025
 
