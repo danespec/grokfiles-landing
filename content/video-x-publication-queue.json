@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "policy": "Queue-ready only. Publishing a YouTube video does not automatically post to X.",
+  "records": []
+}

@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:videos": "node scripts/build-video-pages.mjs",
+    "check:videos": "node scripts/build-video-pages.mjs --check",
+    "test:videos": "node scripts/video-regression.mjs"
+  },
+  "optionalDependencies": {
+    "googleapis": "^173.0.0"
+  }
+}

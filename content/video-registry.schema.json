@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grokarchivehub.com/content/video-registry.schema.json",
+  "title": "Grok Archive Hub Video Registry",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "updatedAt",
+    "channel",
+    "lifecycleStates",
+    "videos"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "updatedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "channel": {
+      "type": "object",
+      "required": [
+        "title",
+        "handle",
+        "youtubeUrl",
+        "expectedGoogleAccount"
+      ],
+      "properties": {
+        "title": {
+          "const": "Grok Archive Hub"
+        },
+        "handle": {
+          "const": "@GrokArchiveHub"
+        },
+        "youtubeUrl": {
+          "const": "https://www.youtube.com/@GrokArchiveHub"
+        },
+        "expectedGoogleAccount": {
+          "const": "grokcloudflare@gmail.com"
+        },
+        "officialXUrl": {
+          "type": "string"
+        },
+        "officialXStatus": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "lifecycleStates": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "draft",
+          "rendered",
+          "uploaded-private",
+          "uploaded-unlisted",
+          "scheduled",
+          "published",
+          "failed",
+          "archived"
+        ]
+      }
+    },
+    "schemaDocumentation": {
+      "type": "string"
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/video"
+      }
+    },
+    "sampleRecord": {
+      "$ref": "#/$defs/video"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "link": {
+      "type": "object",
+      "required": [
+        "label",
+        "url"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "relatedInvestigation": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "video": {
+      "type": "object",
+      "required": [
+        "id",
+        "slug",
+        "status",
+        "title",
+        "description",
+        "shortDescription",
+        "youtubeVideoId",
+        "youtubeUrl",
+        "thumbnailUrl",
+        "durationIso8601",
+        "uploadDate",
+        "publishDate",
+        "updatedDate",
+        "category",
+        "tags",
+        "transcriptPath",
+        "captionsPath",
+        "evidenceLinks",
+        "archiveIds",
+        "batesIds",
+        "relatedArchiveDocuments",
+        "relatedInvestigation",
+        "factualStatusLabels",
+        "featured",
+        "visibility",
+        "madeForKids",
+        "language",
+        "recordingDate",
+        "scheduledPublishAt",
+        "xPublicationStatus"
+      ],
+      "properties": {
+        "sampleOnly": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "rendered",
+            "uploaded-private",
+            "uploaded-unlisted",
+            "scheduled",
+            "published",
+            "failed",
+            "archived"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "youtubeVideoId": {
+          "type": "string"
+        },
+        "youtubeUrl": {
+          "type": "string"
+        },
+        "thumbnailUrl": {
+          "type": "string"
+        },
+        "durationIso8601": {
+          "type": "string"
+        },
+        "uploadDate": {
+          "type": "string"
+        },
+        "publishDate": {
+          "type": "string"
+        },
+        "updatedDate": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transcriptPath": {
+          "type": "string"
+        },
+        "captionsPath": {
+          "type": "string"
+        },
+        "evidenceLinks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "archiveIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "batesIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relatedArchiveDocuments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "relatedInvestigation": {
+          "$ref": "#/$defs/relatedInvestigation"
+        },
+        "factualStatusLabels": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "established fact",
+              "court finding",
+              "party position",
+              "allegation",
+              "inference",
+              "unresolved"
+            ]
+          }
+        },
+        "featured": {
+          "type": "boolean"
+        },
+        "visibility": {
+          "enum": [
+            "private",
+            "unlisted",
+            "public"
+          ]
+        },
+        "madeForKids": {
+          "type": "boolean"
+        },
+        "language": {
+          "type": "string"
+        },
+        "recordingDate": {
+          "type": "string"
+        },
+        "scheduledPublishAt": {
+          "type": "string"
+        },
+        "xPublicationStatus": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
