@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "packageId": "GAH-VIDEO-PILOT-001",
-  "quotePolicy": "Only short direct quotations with source verification may appear as quotations in narration or on-screen text.",
+  "quotePolicy": "Only Q-VP-001 through Q-VP-004 may appear as human-audio-certified direct quotations in narration or on-screen text unless this ledger is expanded and revalidated.",
   "quotes": [
     {
       "quoteId": "Q-VP-001",

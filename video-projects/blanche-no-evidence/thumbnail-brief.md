@@ -40,4 +40,8 @@ Prohibited treatments:
 - Do not put any uncharged person's face on the thumbnail.
 - Do not use red-string conspiracy board styling.
 - Do not imply the video proves criminal conduct beyond cited primary records.
+- Do not imply hidden proof has been found.
+- Do not imply DOJ admitted records exist.
+- Do not imply records establish criminal conduct by themselves.
+- Do not imply a named third party committed a crime.
 - Do not fake a DOJ, FBI, court, or Senate document.

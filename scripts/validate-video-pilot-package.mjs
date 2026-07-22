@@ -33,11 +33,20 @@ const REQUIRED_FILES = [
   "corrections-checklist.md",
   "legal-risk-review.md",
   "production-checklist.md",
-  "publication-checklist.md"
+  "publication-checklist.md",
+  "MOBILE-REVIEW.md"
 ];
 const JSON_FILES = REQUIRED_FILES.filter((file) => file.endsWith(".json"));
 const MEDIA_EXTENSIONS = new Set([".mp4", ".mov", ".m4v", ".webm", ".wav", ".mp3", ".aac", ".aiff", ".psd", ".prproj"]);
 const SECRET_RE = /(client_secret|refresh_token|access_token|private_key|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|AIza[0-9A-Za-z_-]{20,}|gh[pousr]_[0-9A-Za-z]{20,})/i;
+const FORBIDDEN_EDITORIAL_RE = [
+  { re: /\bthe certified record says\b/i, message: "blanket certified-record wording is prohibited" },
+  { re: /\bcertified record\b/i, message: "certified record must not be used as a blanket source posture" },
+  { re: /\bthe disputed Todd Blanche hearing answer\b/i, message: "disputed-answer wording must focus on public interpretations" },
+  { re: /\blegally ambiguous\b/i, message: "use scope-limited evidentiary-standard wording instead of legally ambiguous" },
+  { re: /\bno closed investigations\b/i, message: "no-closed-investigations wording requires separate source posture and is not approved here" }
+];
+const REQUIRED_TITLE = "\"No Evidence\" Does Not Mean \"No Records\"";
 
 function argValue(name, fallback) {
   const index = process.argv.indexOf(name);
@@ -110,6 +119,23 @@ function validateVtt(text) {
   return errors;
 }
 
+function extractQuotedPhrases(text) {
+  const phrases = [];
+  const quoteRe = /"([^"\n]{2,240})"/g;
+  let match;
+  while ((match = quoteRe.exec(text))) {
+    phrases.push(match[1].trim());
+  }
+  return phrases;
+}
+
+function collectStringValues(value, output = []) {
+  if (typeof value === "string") output.push(value);
+  else if (Array.isArray(value)) value.forEach((item) => collectStringValues(item, output));
+  else if (value && typeof value === "object") Object.values(value).forEach((item) => collectStringValues(item, output));
+  return output;
+}
+
 function renderTable(rows) {
   return `<table><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${htmlEscape(cell)}</td>`).join("")}</tr>`).join("\n")}</tbody></table>`;
 }
@@ -143,6 +169,7 @@ for (const file of JSON_FILES) {
 const narrationMd = readText("narration.md");
 const narrationTxt = readText("narration.txt");
 const captions = readText("captions.en.vtt");
+const mobileReview = readText("MOBILE-REVIEW.md");
 const claimLedger = parsed["claim-ledger.json"];
 const quoteLedger = parsed["source-quote-ledger.json"];
 const evidenceManifest = parsed["evidence-manifest.json"];
@@ -151,6 +178,20 @@ const metadata = parsed["youtube-metadata.json"];
 const registry = loadRegistry(ROOT);
 const registryValidation = validateVideoRegistry(registry);
 if (!registryValidation.ok) errors.push(...registryValidation.errors.map((error) => `registry invalid: ${error}`));
+
+for (const [label, text] of [
+  ["narration.md", narrationMd],
+  ["narration.txt", narrationTxt],
+  ["captions.en.vtt", captions],
+  ["MOBILE-REVIEW.md", mobileReview]
+]) {
+  for (const rule of FORBIDDEN_EDITORIAL_RE) {
+    if (rule.re.test(text)) errors.push(`${label}: ${rule.message}`);
+  }
+}
+if (!narrationMd.includes(REQUIRED_TITLE) && !mobileReview.includes(REQUIRED_TITLE)) {
+  errors.push(`missing required title wording: ${REQUIRED_TITLE}`);
+}
 
 const paragraphs = parseNarrationClaims(narrationMd);
 const claimIds = new Set((claimLedger?.claims || []).map((claim) => claim.claimId));
@@ -165,12 +206,45 @@ for (const claim of claimLedger?.claims || []) {
   if (!fs.existsSync(path.join(ROOT, claim.sourcePath))) errors.push(`${claim.claimId} source path missing: ${claim.sourcePath}`);
   if (claim.batesId) errors.push(`${claim.claimId} has unsupported Bates ID ${claim.batesId}`);
   if (claim.publicationApprovalStatus !== "review-ready") errors.push(`${claim.claimId} is not review-ready`);
+  if (!claim.classification) errors.push(`${claim.claimId} has no classification`);
+}
+
+const allowedClassifications = new Set(claimLedger?.allowedClassifications || []);
+for (const claim of claimLedger?.claims || []) {
+  if (!allowedClassifications.has(claim.classification)) errors.push(`${claim.claimId} has unsupported classification ${claim.classification}`);
 }
 
 for (const quote of quoteLedger?.quotes || []) {
   if (!fs.existsSync(path.join(ROOT, quote.sourceFile))) errors.push(`${quote.quoteId} source file missing: ${quote.sourceFile}`);
   if (!String(quote.verificationStatus || "").startsWith("HUMAN_AUDIO_CERTIFIED")) errors.push(`${quote.quoteId} is not human-certified`);
   if (!quote.exactQuotedText || quote.ellipsesUsed) errors.push(`${quote.quoteId} has unsupported quote text or ellipses`);
+}
+const quoteIds = new Set((quoteLedger?.quotes || []).map((quote) => quote.quoteId));
+for (const requiredQuoteId of ["Q-VP-001", "Q-VP-002", "Q-VP-003", "Q-VP-004"]) {
+  if (!quoteIds.has(requiredQuoteId)) errors.push(`missing approved direct quotation ${requiredQuoteId}`);
+}
+const allowedQuotedPhrases = new Set([
+  ...(quoteLedger?.quotes || []).map((quote) => quote.exactQuotedText),
+  "No Evidence",
+  "No Records",
+  "no evidence",
+  "no records",
+  "the records prove the allegation",
+  "No Evidence\" Does Not Mean \"No Records",
+  "No Evidence\" Is Not \"No Records",
+  "What DOJ Actually Said About No Evidence in the Epstein Files"
+]);
+for (const [label, text] of [
+  ["narration.md", narrationMd],
+  ["narration.txt", narrationTxt],
+  ["captions.en.vtt", captions],
+  ["MOBILE-REVIEW.md", mobileReview],
+  ["on-screen-text.json", collectStringValues(parsed["on-screen-text.json"]).join("\n")],
+  ["youtube-metadata.json", collectStringValues(parsed["youtube-metadata.json"]).join("\n")]
+]) {
+  for (const phrase of extractQuotedPhrases(text)) {
+    if (!allowedQuotedPhrases.has(phrase)) errors.push(`${label}: unsupported quoted phrase: ${phrase}`);
+  }
 }
 
 for (const source of evidenceManifest?.sources || []) {
@@ -210,6 +284,26 @@ if (fs.existsSync(path.join(ROOT, "videos", `${REGISTRY_SLUG}.html`))) errors.pu
 if (fs.readFileSync(path.join(ROOT, "videos.html"), "utf8").includes(REGISTRY_SLUG)) errors.push("draft pilot leaked into public video hub");
 if (metadata?.uploadStatus !== "not-uploaded") errors.push("youtube metadata must remain not-uploaded");
 if (metadata?.xQueueSummary?.status !== "not-queued") errors.push("x queue summary must remain not-queued");
+
+const icloudDir = argValue("--icloud-dir", "");
+if (icloudDir) {
+  const requiredExports = [
+    "MOBILE-REVIEW.md",
+    "preview.html",
+    "narration.html",
+    "claim-ledger.html",
+    "evidence-manifest.html",
+    "storyboard.html",
+    "captions.html",
+    "narration.txt",
+    "captions.en.vtt"
+  ];
+  for (const file of requiredExports) {
+    const exportPath = path.join(icloudDir, file);
+    if (!fs.existsSync(exportPath)) errors.push(`iCloud export missing: ${exportPath}`);
+    else if (SECRET_RE.test(fs.readFileSync(exportPath, "utf8"))) errors.push(`possible secret-like content in iCloud export: ${exportPath}`);
+  }
+}
 
 const wordCount = narrationTxt.trim().split(/\s+/).filter(Boolean).length;
 if (wordCount < 1300 || wordCount > 1800) errors.push(`narration word count out of target range: ${wordCount}`);

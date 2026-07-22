@@ -14,7 +14,7 @@ Claim refs: CLM-VP-001, CLM-VP-002
 
 ## P02 - What this episode is about
 
-This episode is about the disputed Todd Blanche hearing answer and the public record behind it. It is not an episode claiming that the files prove everything. It is also not an episode claiming that the files prove nothing.
+This episode is about the disputed public interpretations of Todd Blanche's hearing answer and the public record behind it. It is not an episode claiming that the files prove everything. It is also not an episode claiming that the files prove nothing.
 
 Claim refs: CLM-VP-003, CLM-VP-004
 
@@ -32,7 +32,7 @@ Claim refs: CLM-VP-008, CLM-VP-009
 
 ## P05 - Transcript limits
 
-No complete official stenographic transcript was located for the decisive exchange. That matters. The package therefore separates the official caption track from the human-certified quotation ledger, and it limits direct quotations to wording that passed the review gate. Where the record is a caption, the video says caption. Where the record is a human-certified short quotation, the video says that. It does not silently upgrade either one into a stenographic transcript.
+No complete official stenographic transcript was located for the decisive exchange. That matters. The package therefore separates the official caption source, the GAH hearing-exchange summary, and the human-certified short quotation ledger. It limits direct quotations to wording that passed the review gate. Where the source is a caption, the video says caption. Where the source is a human-certified short quotation, the video says that. Where the source is editorial interpretation, the video labels it that way. It does not silently upgrade any of those categories into a stenographic transcript.
 
 Claim refs: CLM-VP-010, CLM-VP-011
 
@@ -44,7 +44,7 @@ Claim refs: CLM-VP-012, CLM-VP-013
 
 ## P07 - The answer in context
 
-The certified record says Blanche tied his answer to what DOJ and FBI files showed. The same source package records the limiting phrase "as of now" and the qualifier "That does not mean it did not happen." Those qualifiers are not decorations. They define the safe boundary of the claim. Remove them, and the sentence becomes broader than the source will support. Keep them, and the answer becomes a statement about the described file set and the moment of the hearing.
+The GAH hearing-exchange summary describes Blanche's answer as tied to what DOJ and FBI files showed. Separately, the human-certified short quotations include "as of now" and "That does not mean it did not happen". Those certified phrases are narrow anchors, not certification of every surrounding summary sentence. The editorial interpretation is that the answer should be read as tied to the described file set and the moment of the hearing.
 
 Claim refs: CLM-VP-014, CLM-VP-015, CLM-VP-016
 
@@ -74,7 +74,7 @@ Claim refs: CLM-VP-023, CLM-VP-024, CLM-VP-025
 
 ## P12 - What charges do and do not establish
 
-Epstein's 2019 indictment is a charging document. It establishes that prosecutors filed charges. It does not establish a conviction, because the case did not reach trial after Epstein's death.
+Epstein's 2019 indictment is a charging document. It establishes that prosecutors filed charges. It does not establish a conviction. The prosecution did not reach trial following Epstein's death.
 
 Claim refs: CLM-VP-026, CLM-VP-027
 
@@ -98,7 +98,7 @@ Claim refs: CLM-VP-032, CLM-VP-033
 
 ## P16 - A separate hearing exchange
 
-A separate Grassley exchange matters because it records future-investigation language. The source package summarizes Blanche as saying there were no closed investigations and that DOJ would investigate, indict, and prosecute if new chargeable information emerged. That supports a future-information posture, not a finished public map of every file.
+A separate Grassley exchange matters because it records future-investigation language. The only direct quotation used from that exchange here is "investigate, indict, and prosecute". The GAH hearing-exchange summary treats the exchange as future-information context, not a finished public map of every file.
 
 Claim refs: CLM-VP-034, CLM-VP-035
 
@@ -110,7 +110,7 @@ Claim refs: CLM-VP-036, CLM-VP-037
 
 ## P18 - The contradiction audit
 
-The contradiction audit found zero confirmed contradictions in the current package. It did identify standard mismatches and ambiguous language. That is the point: the public fight often compresses different standards into one headline phrase. A contradiction requires the propositions to answer the same question under the same standard. Here, the standard is part of the dispute.
+The contradiction audit found zero confirmed contradictions within the reviewed source package. That audit result is bounded by the present corpus, not a conclusion about every government record. It did identify standard mismatches and ambiguous language. That is the point: the public fight often compresses different standards into one headline phrase. A contradiction requires the propositions to answer the same question under the same standard. Here, the standard is part of the dispute.
 
 Claim refs: CLM-VP-038, CLM-VP-039
 
@@ -122,13 +122,13 @@ Claim refs: CLM-VP-040, CLM-VP-041
 
 ## P20 - The safe conclusion
 
-The safe conclusion is narrower and less satisfying: the disputed answer was scope-limited, tied to a reviewed DOJ/FBI file frame, and legally ambiguous. It did not erase allegations, survivor testimony, leads, association records, or missing public records. It also did not transform association records into proof of crimes. The video should make that narrowness visible, because the narrow version is the one the sources can defend.
+The safe conclusion is narrower and less satisfying: the disputed answer was tied to a reviewed DOJ/FBI file frame, and it was scope-limited and ambiguous as to the evidentiary standard being applied. It did not erase allegations, survivor testimony, leads, association records, or missing public records. It also did not transform association records into proof of crimes. The video should make that narrowness visible, because the narrow version is the one the sources can defend.
 
 Claim refs: CLM-VP-042, CLM-VP-043
 
 ## P21 - The unresolved gap
 
-The unresolved gap is public documentation. Where are any Senate questions for the record? Where are any written answers? Where are public person-specific declination or charging analyses? Where is a complete official transcript of the decisive exchange? Those are acquisition questions, not conclusions. If those records appear later, they can narrow, correct, or complicate this package. Until then, the gap stays marked as a gap.
+The unresolved gap is public documentation. Senate questions for the record or written Blanche answers are not publicly located in the reviewed package. Person-specific DOJ declination, corroboration, credibility, or charging analyses are not publicly located in the reviewed package. Survivor-meeting follow-up documentation is not publicly located in the reviewed package. A complete official stenographic Day 1 transcript is not publicly located in the reviewed package. Those are acquisition questions, not conclusions that the records are nonexistent. If those records appear later, they can narrow, correct, or complicate this package. Until then, the gap stays marked as a gap.
 
 Claim refs: CLM-VP-044, CLM-VP-045
 
@@ -140,7 +140,7 @@ Claim refs: CLM-VP-046, CLM-VP-047
 
 ## P23 - Closing
 
-So "no evidence" is not the same as "no records." It is also not the same as "the records prove the allegation." The public record deserves the harder sentence: what was said, what was reviewed, what standard was used, what was not shown, and what remains unresolved.
+So "no evidence" does not mean "no records". It is also not the same as "the records prove the allegation". The public record deserves the harder sentence: what was said, what was reviewed, what standard was used, what was not shown, and what remains unresolved.
 
 Claim refs: CLM-VP-048, CLM-VP-049
 

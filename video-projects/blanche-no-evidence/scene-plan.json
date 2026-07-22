@@ -9,7 +9,7 @@
       "timeRange": "00:00-00:40",
       "narrationParagraphs": ["P01", "P02"],
       "visualType": "editorial graphic",
-      "visualPlan": "Black text on light document-texture field: NO EVIDENCE? then scope cards for what, where, standard, date.",
+      "visualPlan": "Black text on light document-texture field: NO EVIDENCE? then scope cards for what, where, standard, date, followed by DOES NOT MEAN NO RECORDS.",
       "sourceIds": ["EVID-008", "EVID-009"],
       "classificationLabels": ["editorial explanation"],
       "notes": "No fake documents. Use typography and simple lines only."
@@ -20,10 +20,10 @@
       "timeRange": "00:40-01:35",
       "narrationParagraphs": ["P03", "P04", "P05"],
       "visualType": "primary document",
-      "visualPlan": "Zoom from GAH brief URL to archived Senate hearing page and source manifest hash card.",
+      "visualPlan": "Zoom from GAH brief URL to archived Senate hearing page and source manifest hash card. Add posture tags for official caption source, GAH hearing-exchange summary, human-certified short quotation, and editorial interpretation.",
       "sourceIds": ["EVID-001", "EVID-002", "EVID-003", "EVID-006"],
       "classificationLabels": ["established fact", "unresolved"],
-      "notes": "Show no official stenographic transcript located as a source-status card."
+      "notes": "Show no official stenographic transcript located as a source-status card. Do not use blanket certified-record wording."
     },
     {
       "sceneId": "SC-003",
@@ -42,10 +42,10 @@
       "timeRange": "02:25-03:25",
       "narrationParagraphs": ["P07", "P08"],
       "visualType": "transcript",
-      "visualPlan": "Two highlighted qualifier cards: as of now; That does not mean it did not happen. Then show reviewed-corpus versus universal-claim split.",
+      "visualPlan": "First card: GAH hearing-exchange summary describes Blanche's answer as tied to DOJ/FBI files. Separate cards: human-certified short quotations as of now; That does not mean it did not happen. Then show reviewed-corpus versus universal-claim split.",
       "sourceIds": ["EVID-004", "EVID-005", "EVID-008"],
       "classificationLabels": ["official statement", "inference"],
-      "notes": "Do not add longer Blanche quotes unless reverified."
+      "notes": "Do not imply the complete surrounding sentence was human-certified unless the quote ledger is expanded."
     },
     {
       "sceneId": "SC-005",
@@ -75,7 +75,7 @@
       "timeRange": "06:35-07:45",
       "narrationParagraphs": ["P14", "P15"],
       "visualType": "unresolved-gap indicator",
-      "visualPlan": "Four gap cards: declination memo, credibility analysis, corroboration memo, charging analysis. Mark not publicly located.",
+      "visualPlan": "Four gap groups marked not publicly located in the reviewed package: Senate QFRs or written Blanche answers; person-specific DOJ declination, corroboration, credibility, or charging analyses; survivor-meeting follow-up documentation; complete official stenographic Day 1 transcript.",
       "sourceIds": ["EVID-012", "EVID-013"],
       "classificationLabels": ["official statement", "unresolved"],
       "notes": "No hidden-record speculation."
@@ -86,7 +86,7 @@
       "timeRange": "07:45-08:55",
       "narrationParagraphs": ["P16", "P17", "P18"],
       "visualType": "reconstructed timeline",
-      "visualPlan": "Three exchange blocks: Grassley, Durbin, Kennedy. Connect to contradiction-audit counters.",
+      "visualPlan": "Three exchange blocks: Grassley, Durbin, Kennedy. For Grassley, show only the certified phrase investigate, indict, and prosecute as a direct quotation. Connect to contradiction-audit counters bounded by reviewed source package.",
       "sourceIds": ["EVID-004", "EVID-005", "EVID-011"],
       "classificationLabels": ["official statement", "established fact"],
       "notes": "Keep Grassley and Durbin separate from the decisive Kennedy answer."
@@ -97,7 +97,7 @@
       "timeRange": "08:55-10:10",
       "narrationParagraphs": ["P19", "P20", "P21", "P22", "P23", "P24"],
       "visualType": "editorial graphic",
-      "visualPlan": "Final equation: no evidence in reviewed corpus is not no records, and records are not proof by themselves. End with corrections/source invitation.",
+      "visualPlan": "Final equation: no evidence in reviewed corpus does not mean no records, and records are not proof by themselves. End with corrections/source invitation.",
       "sourceIds": ["EVID-009", "EVID-012", "EVID-001"],
       "classificationLabels": ["editorial explanation", "unresolved"],
       "notes": "End card points to corrections and package review sources."

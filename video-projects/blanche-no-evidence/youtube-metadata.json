@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "packageId": "GAH-VIDEO-PILOT-001",
   "uploadStatus": "not-uploaded",
-  "proposedTitle": "\"No Evidence\" Is Not \"No Records\" - What DOJ Actually Said About the Epstein Files",
+  "proposedTitle": "\"No Evidence\" Does Not Mean \"No Records\" — What DOJ Actually Said",
   "alternativeTitles": [
-    "What DOJ Actually Said About No Evidence in the Epstein Files",
+    "\"No Evidence\" Is Not \"No Records\" - What DOJ Actually Said About the Epstein Files",
     "Records Are Not Proof: The Todd Blanche Hearing Answer Explained"
   ],
-  "description": "A source-first Grok Archive Hub evidence video explaining why the disputed Todd Blanche hearing answer should not be reduced to either a blanket exoneration claim or an all-purpose proof claim.\n\nThis draft package is based on the GAH evidence brief, official Senate source material, the quote-verification ledger, records-versus-proof matrix, prosecution-decision ledger, and acquisition-gap tracker.\n\nRelated GAH sources:\n- Evidence brief: https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence\n- Source manifest: https://grokarchivehub.com/evidence-data/blanche-no-evidence/source-manifest.json\n- Claims ledger: https://grokarchivehub.com/evidence-data/blanche-no-evidence/claims.json\n- Corrections: https://grokarchivehub.com/corrections\n\nNo person is accused of criminal conduct in this video unless the cited primary record establishes the procedural posture. Charges, allegations, testimony, leads, association records, and court findings are separated by label.",
+  "description": "A source-first Grok Archive Hub evidence video explaining why disputed public interpretations of Todd Blanche's hearing answer should not be reduced to either a blanket exoneration claim or an all-purpose proof claim.\n\nThis draft package is based on the GAH evidence brief, official Senate source material, the quote-verification ledger, records-versus-proof matrix, prosecution-decision ledger, and acquisition-gap tracker. It separates official caption source, GAH hearing-exchange summary, human-certified short quotation, and editorial interpretation.\n\nRelated GAH sources:\n- Evidence brief: https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence\n- Source manifest: https://grokarchivehub.com/evidence-data/blanche-no-evidence/source-manifest.json\n- Claims ledger: https://grokarchivehub.com/evidence-data/blanche-no-evidence/claims.json\n- Corrections: https://grokarchivehub.com/corrections\n\nNo person is accused of criminal conduct in this video unless the cited primary record establishes the procedural posture. Charges, allegations, testimony, leads, association records, and court findings are separated by label.",
   "chapterMarkers": [
     {"time": "00:00", "title": "Cold open"},
     {"time": "00:40", "title": "The source event"},
@@ -54,7 +54,7 @@
   "xQueueSummary": {
     "status": "not-queued",
     "summary": "Draft video package only. Do not post to X until final audio, captions timing, thumbnail, upload, and editorial approval are complete.",
-    "evidenceHook": "The disputed answer was narrower than the shorthand phrase no evidence.",
+    "evidenceHook": "Disputed public interpretations of the answer are broader than the reviewed source package supports.",
     "requiresSeparateXPublicationAction": true
   }
 }

@@ -1,10 +1,10 @@
-# GAH-VIDEO-PILOT-001: No Evidence Is Not No Records
+# GAH-VIDEO-PILOT-001: No Evidence Does Not Mean No Records
 
 Status: editorial review package only
 
 This directory contains the first review-ready Grok Archive Hub evidence-video package for:
 
-`"No Evidence" Is Not the Same as "No Records": What DOJ Actually Said`
+`"No Evidence" Does Not Mean "No Records" — What DOJ Actually Said`
 
 No rendered video, audio, thumbnail image, upload artifact, OAuth token, or YouTube API output belongs in this directory. The package is designed to be reviewed offline before final narration, retimed captions, thumbnail production, upload, or X publication.
 
@@ -28,7 +28,8 @@ Review order:
 3. Check direct quotations against `source-quote-ledger.json`.
 4. Check visual sourcing in `evidence-manifest.json`, `scene-plan.json`, and `shot-list.md`.
 5. Review `legal-risk-review.md` and `corrections-checklist.md`.
-6. Use `/private/tmp/gah-video-pilot-001/preview.html` for offline review after running the preview builder.
+6. Use `MOBILE-REVIEW.md` for phone-friendly review through GitHub.
+7. Use `/private/tmp/gah-video-pilot-001r/preview.html` for offline review after running the preview builder.
 
 Publication state:
 
@@ -38,3 +39,9 @@ Publication state:
 - Video registry status: draft/private
 - X publication: not queued
 - Deployment: not performed
+
+Source-posture rule:
+
+- `Q-VP-001` through `Q-VP-004` are the only human-audio-certified exact quotations.
+- Official caption source, GAH hearing-exchange summary, human-certified short quotation, and editorial interpretation are separate categories.
+- Do not describe mixed summary-and-quote paragraphs as a blanket certified record.

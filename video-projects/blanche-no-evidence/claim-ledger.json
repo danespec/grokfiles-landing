@@ -46,15 +46,15 @@
     {
       "claimId": "CLM-VP-003",
       "narrationParagraph": "P02",
-      "exactClaim": "The episode concerns the disputed Todd Blanche hearing answer and the public record behind it.",
-      "classification": "established fact",
+      "exactClaim": "The episode concerns disputed public interpretations of Todd Blanche's hearing answer and the public record behind it.",
+      "classification": "editorial explanation",
       "sourcePath": "evidence-briefs/todd-blanche-no-evidence.html",
       "sourceIdentifier": "article headline and executive finding",
       "batesId": "",
       "transcriptTimestamp": "",
       "quotationStatus": "paraphrase",
       "confidence": "HIGH",
-      "editorialQualification": "Scope statement for this package.",
+      "editorialQualification": "Scope statement for this package; does not imply the answer's existence or authenticity is disputed.",
       "unresolvedGap": "",
       "publicationApprovalStatus": "review-ready"
     },
@@ -211,15 +211,15 @@
     {
       "claimId": "CLM-VP-014",
       "narrationParagraph": "P07",
-      "exactClaim": "Blanche tied his answer to what DOJ and FBI files showed.",
+      "exactClaim": "The GAH hearing-exchange summary describes Blanche's answer as tied to what DOJ and FBI files showed.",
       "classification": "official statement",
-      "sourcePath": "evidence-data/blanche-no-evidence/quote-verification.json",
-      "sourceIdentifier": "HEX-003.human_certified_wording",
+      "sourcePath": "evidence-data/blanche-no-evidence/hearing-exchanges.json",
+      "sourceIdentifier": "HEX-003.blanche_exact_answer; HEX-003.referent",
       "batesId": "",
       "transcriptTimestamp": "01:51:00-01:52:12",
       "quotationStatus": "paraphrase",
       "confidence": "MEDIUM-HIGH",
-      "editorialQualification": "Use file-corpus framing, not universal fact framing.",
+      "editorialQualification": "GAH hearing-exchange summary, not a human-certified complete surrounding sentence.",
       "unresolvedGap": "",
       "publicationApprovalStatus": "review-ready"
     },
@@ -406,7 +406,7 @@
     {
       "claimId": "CLM-VP-027",
       "narrationParagraph": "P12",
-      "exactClaim": "Epstein's 2019 federal case did not reach a conviction after his death.",
+      "exactClaim": "The prosecution did not reach trial following Epstein's death.",
       "classification": "established fact",
       "sourcePath": "evidence-data/blanche-no-evidence/doj-language-chronology.json",
       "sourceIdentifier": "2019-07-08 later_modification",
@@ -526,7 +526,7 @@
     {
       "claimId": "CLM-VP-035",
       "narrationParagraph": "P16",
-      "exactClaim": "The Grassley exchange summarizes future action as investigate, indict, and prosecute if new chargeable information emerged.",
+      "exactClaim": "The only direct quotation used from the Grassley exchange is investigate, indict, and prosecute.",
       "classification": "official statement",
       "sourcePath": "evidence-data/blanche-no-evidence/quote-verification.json",
       "sourceIdentifier": "HEX-001; Q-VP-004",
@@ -534,7 +534,7 @@
       "transcriptTimestamp": "01:10:36-01:10:48",
       "quotationStatus": "direct quote verified",
       "confidence": "HIGH",
-      "editorialQualification": "Context for chargeability, not a substitute for Kennedy answer.",
+      "editorialQualification": "Short human-certified quotation only; broader Grassley context remains a GAH hearing-exchange summary.",
       "unresolvedGap": "",
       "publicationApprovalStatus": "review-ready"
     },
@@ -571,7 +571,7 @@
     {
       "claimId": "CLM-VP-038",
       "narrationParagraph": "P18",
-      "exactClaim": "The contradiction audit found zero confirmed contradictions in the current package.",
+      "exactClaim": "The contradiction audit found zero confirmed contradictions within the reviewed source package.",
       "classification": "established fact",
       "sourcePath": "evidence-data/blanche-no-evidence/contradiction-audit.json",
       "sourceIdentifier": "confirmed_contradictions",
@@ -579,7 +579,7 @@
       "transcriptTimestamp": "",
       "quotationStatus": "paraphrase",
       "confidence": "HIGH",
-      "editorialQualification": "Current package only.",
+      "editorialQualification": "Bounded by the present corpus; not a conclusion about every government record.",
       "unresolvedGap": "",
       "publicationApprovalStatus": "review-ready"
     },
@@ -631,7 +631,7 @@
     {
       "claimId": "CLM-VP-042",
       "narrationParagraph": "P20",
-      "exactClaim": "The disputed answer was scope-limited, tied to a reviewed DOJ/FBI file frame, and legally ambiguous.",
+      "exactClaim": "The disputed answer was tied to a reviewed DOJ/FBI file frame, and it was scope-limited and ambiguous as to the evidentiary standard being applied.",
       "classification": "inference",
       "sourcePath": "evidence-data/blanche-no-evidence/evidentiary-standards.json",
       "sourceIdentifier": "final_classification",
@@ -661,7 +661,7 @@
     {
       "claimId": "CLM-VP-044",
       "narrationParagraph": "P21",
-      "exactClaim": "Senate QFRs, written answers, public person-specific DOJ analyses, and a complete official transcript remain acquisition questions.",
+      "exactClaim": "Senate QFRs or written Blanche answers, person-specific DOJ analyses, survivor-meeting follow-up documentation, and a complete official Day 1 transcript remain acquisition questions not publicly located in the reviewed package.",
       "classification": "unresolved",
       "sourcePath": "evidence-data/blanche-no-evidence/acquisition-gaps.json",
       "sourceIdentifier": "GAP-001 through GAP-004",
@@ -669,8 +669,8 @@
       "transcriptTimestamp": "",
       "quotationStatus": "paraphrase",
       "confidence": "HIGH",
-      "editorialQualification": "Listed as public-record gaps, not conclusions.",
-      "unresolvedGap": "GAP-001; GAP-002; GAP-004",
+      "editorialQualification": "Listed as public-record gaps, not conclusions that the records are nonexistent.",
+      "unresolvedGap": "GAP-001; GAP-002; GAP-003; GAP-004",
       "publicationApprovalStatus": "review-ready"
     },
     {
@@ -721,7 +721,7 @@
     {
       "claimId": "CLM-VP-048",
       "narrationParagraph": "P23",
-      "exactClaim": "No evidence is not the same as no records.",
+      "exactClaim": "No evidence does not mean no records.",
       "classification": "editorial explanation",
       "sourcePath": "evidence-data/blanche-no-evidence/records-vs-proof.json",
       "sourceIdentifier": "records/proof matrix",
