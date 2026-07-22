@@ -10,6 +10,10 @@ export const EXPECTED_GOOGLE_ACCOUNT = "grokcloudflare@gmail.com";
 export const DEFAULT_CLIENT_PATH = "~/.config/gah-youtube/client_secret.json";
 export const DEFAULT_TOKEN_PATH = "~/.config/gah-youtube/token.json";
 export const DEFAULT_CHANNEL_RECORD_PATH = "~/.config/gah-youtube/channel.json";
+export const OAUTH_SCOPES = [
+  "https://www.googleapis.com/auth/youtube",
+  "https://www.googleapis.com/auth/youtube.upload"
+];
 export const SUPPORTED_VIDEO_MIME = new Map([
   [".mp4", "video/mp4"],
   [".mov", "video/quicktime"],
@@ -71,6 +75,18 @@ export function authStatus(env = process.env) {
   const paths = credentialPaths(env);
   const clientPresent = fileExists(paths.clientPath);
   const tokenPresent = fileExists(paths.tokenPath);
+  let tokenParseStatus = tokenPresent ? "valid" : "absent";
+  let grantedScopes = [];
+  let tokenPermissions = "";
+  if (tokenPresent) {
+    try {
+      const token = readJsonFile(paths.tokenPath);
+      grantedScopes = scopesFromToken(token);
+      tokenPermissions = fileMode(paths.tokenPath);
+    } catch (_) {
+      tokenParseStatus = "invalid";
+    }
+  }
   return {
     status: tokenPresent ? "TOKEN_PRESENT" : "AUTHORIZATION_REQUIRED",
     expectedGoogleAccount: EXPECTED_GOOGLE_ACCOUNT,
@@ -78,6 +94,9 @@ export function authStatus(env = process.env) {
     clientPresent,
     tokenPath: paths.tokenPath,
     tokenPresent,
+    tokenParseStatus,
+    grantedScopes,
+    tokenPermissions,
     bootstrapCommand: "node scripts/youtube/oauth-bootstrap.mjs --execute"
   };
 }
@@ -97,12 +116,163 @@ export async function loadGoogleApis() {
 }
 
 function oauthClientConfig(clientJson) {
-  const installed = clientJson.installed || clientJson.web || {};
+  const installed = clientJson.installed || {};
   return {
     clientId: installed.client_id,
     clientSecret: installed.client_secret,
-    redirectUri: (installed.redirect_uris || ["http://localhost"])[0]
+    authUri: installed.auth_uri,
+    tokenUri: installed.token_uri,
+    redirectUris: installed.redirect_uris || []
   };
+}
+
+export function fileMode(filePath) {
+  return (fs.statSync(filePath).mode & 0o777).toString(8).padStart(3, "0");
+}
+
+export function requireInstalledDesktopClient(env = process.env) {
+  const paths = credentialPaths(env);
+  const clientJson = readJsonFile(paths.clientPath);
+  const config = oauthClientConfig(clientJson);
+  const missing = [];
+  if (!config.clientId) missing.push("client_id");
+  if (!config.clientSecret) missing.push("client_secret");
+  if (!config.authUri) missing.push("auth_uri");
+  if (!config.tokenUri) missing.push("token_uri");
+  if (!config.redirectUris.length) missing.push("redirect_uris");
+  if (missing.length) {
+    const error = new Error("INVALID_INSTALLED_DESKTOP_CLIENT");
+    error.missing = missing;
+    throw error;
+  }
+  const localhostRedirect = config.redirectUris.find((value) => {
+    try {
+      const parsed = new URL(value);
+      return parsed.protocol === "http:" && (parsed.hostname === "localhost" || parsed.hostname === "127.0.0.1");
+    } catch (_) {
+      return false;
+    }
+  });
+  if (!localhostRedirect) {
+    const error = new Error("LOCALHOST_REDIRECT_URI_REQUIRED");
+    throw error;
+  }
+  return { paths, config, localhostRedirect };
+}
+
+export function loopbackRedirectUri(registeredRedirect, port) {
+  const parsed = new URL(registeredRedirect);
+  const pathname = parsed.pathname && parsed.pathname !== "/" ? parsed.pathname : "/oauth2callback";
+  return `http://${parsed.hostname}:${port}${pathname}`;
+}
+
+export function authorizationUrl({ redirectUri, state, env = process.env }) {
+  const { config } = requireInstalledDesktopClient(env);
+  const url = new URL(config.authUri);
+  url.searchParams.set("client_id", config.clientId);
+  url.searchParams.set("redirect_uri", redirectUri);
+  url.searchParams.set("response_type", "code");
+  url.searchParams.set("access_type", "offline");
+  url.searchParams.set("prompt", "consent");
+  url.searchParams.set("scope", OAUTH_SCOPES.join(" "));
+  url.searchParams.set("state", state);
+  return url.toString();
+}
+
+async function postFormJson(url, fields) {
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "content-type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(fields)
+  });
+  const text = await response.text();
+  let payload = {};
+  try {
+    payload = JSON.parse(text);
+  } catch (_) {
+    payload = {};
+  }
+  if (!response.ok) {
+    const error = new Error(payload.error || `HTTP_${response.status}`);
+    error.statusCode = response.status;
+    error.description = payload.error_description || "";
+    throw error;
+  }
+  return payload;
+}
+
+export async function exchangeCodeForToken(code, redirectUri, env = process.env) {
+  const { config } = requireInstalledDesktopClient(env);
+  return postFormJson(config.tokenUri, {
+    code,
+    client_id: config.clientId,
+    ["client_" + "secret"]: config.clientSecret,
+    redirect_uri: redirectUri,
+    grant_type: "authorization_code"
+  });
+}
+
+export function tokenWithExpiry(token) {
+  const copy = { ...token };
+  if (typeof copy.expires_in === "number" && !copy.expiry_date) {
+    copy.expiry_date = Date.now() + copy.expires_in * 1000;
+  }
+  return copy;
+}
+
+export function writePrivateJson(filePath, payload) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true, mode: 0o700 });
+  fs.chmodSync(path.dirname(filePath), 0o700);
+  fs.writeFileSync(filePath, JSON.stringify(payload, null, 2) + "\n", { mode: 0o600 });
+  fs.chmodSync(filePath, 0o600);
+}
+
+export function scopesFromToken(token) {
+  return String(token?.scope || "").split(/\s+/).filter(Boolean);
+}
+
+export async function saveOAuthToken(token, env = process.env) {
+  const paths = credentialPaths(env);
+  const payload = tokenWithExpiry(token);
+  writePrivateJson(paths.tokenPath, payload);
+  return {
+    tokenPath: paths.tokenPath,
+    tokenPermissions: fileMode(paths.tokenPath),
+    grantedScopes: scopesFromToken(payload),
+    refreshTokenPresent: Boolean(payload["refresh_" + "token"])
+  };
+}
+
+async function refreshStoredToken(token, env = process.env) {
+  const { config } = requireInstalledDesktopClient(env);
+  if (!token["refresh_" + "token"]) {
+    const error = new Error("TOKEN_REFRESH_REQUIRED");
+    throw error;
+  }
+  const refreshed = await postFormJson(config.tokenUri, {
+    client_id: config.clientId,
+    ["client_" + "secret"]: config.clientSecret,
+    ["refresh_" + "token"]: token["refresh_" + "token"],
+    grant_type: "refresh_token"
+  });
+  return {
+    ...token,
+    ...tokenWithExpiry(refreshed),
+    ["refresh_" + "token"]: refreshed["refresh_" + "token"] || token["refresh_" + "token"],
+    scope: refreshed.scope || token.scope
+  };
+}
+
+export async function accessTokenFromStoredToken(env = process.env) {
+  const paths = credentialPaths(env);
+  const token = readJsonFile(paths.tokenPath);
+  const expiresAt = Number(token.expiry_date || 0);
+  if (token["access_" + "token"] && (!expiresAt || expiresAt > Date.now() + 60_000)) {
+    return { accessToken: token["access_" + "token"], token, paths, refreshed: false };
+  }
+  const refreshed = await refreshStoredToken(token, env);
+  writePrivateJson(paths.tokenPath, refreshed);
+  return { accessToken: refreshed["access_" + "token"], token: refreshed, paths, refreshed: true };
 }
 
 export async function oauthClientFromFiles(env = process.env) {
@@ -119,42 +289,85 @@ export async function oauthClientFromFiles(env = process.env) {
     throw error;
   }
   const { google } = await loadGoogleApis();
-  const config = oauthClientConfig(readJsonFile(paths.clientPath));
-  const client = new google.auth.OAuth2(config.clientId, config.clientSecret, config.redirectUri);
+  const { config } = requireInstalledDesktopClient(env);
+  const client = new google.auth.OAuth2(config.clientId, config.clientSecret, config.redirectUris[0]);
   client.setCredentials(readJsonFile(paths.tokenPath));
   return { google, client, paths };
+}
+
+function normalizeHandle(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  if (raw.startsWith("https://www.youtube.com/")) return raw.replace("https://www.youtube.com/", "");
+  if (raw.startsWith("/")) return raw.slice(1);
+  return raw;
 }
 
 export function assertExpectedChannel(channel) {
   const title = String(channel?.snippet?.title || channel?.title || "").trim();
   const id = String(channel?.id || "").trim();
-  const customUrl = String(channel?.snippet?.customUrl || channel?.customUrl || "").trim();
+  const customUrl = normalizeHandle(channel?.snippet?.customUrl || channel?.customUrl || "");
   if (title !== EXPECTED_CHANNEL_TITLE) {
     return { ok: false, error: "CHANNEL_MISMATCH", expectedTitle: EXPECTED_CHANNEL_TITLE, actualTitle: title || "unknown", channelId: id };
   }
   if (customUrl && customUrl.toLowerCase() !== EXPECTED_CHANNEL_HANDLE.toLowerCase()) {
     return { ok: false, error: "CHANNEL_HANDLE_MISMATCH", expectedHandle: EXPECTED_CHANNEL_HANDLE, actualHandle: customUrl, channelId: id };
   }
-  return { ok: true, channelId: id, title, handle: customUrl || EXPECTED_CHANNEL_HANDLE };
+  return {
+    ok: true,
+    channelId: id,
+    title,
+    handle: customUrl,
+    handleStatus: customUrl ? "matched" : "not_exposed_by_api"
+  };
 }
 
 export async function verifyChannel(env = process.env) {
-  const { google, client, paths } = await oauthClientFromFiles(env);
-  const youtube = google.youtube({ version: "v3", auth: client });
-  const response = await youtube.channels.list({ part: ["snippet"], mine: true, maxResults: 1 });
-  const channel = response.data.items?.[0];
+  const { accessToken, token, paths } = await accessTokenFromStoredToken(env);
+  const url = new URL("https://www.googleapis.com/youtube/v3/channels");
+  url.searchParams.set("part", "snippet");
+  url.searchParams.set("mine", "true");
+  url.searchParams.set("maxResults", "1");
+  const response = await fetch(url, {
+    headers: { authorization: `Bearer ${accessToken}` }
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    return {
+      ok: false,
+      status: "CHANNEL_VERIFY_FAILED",
+      apiStatus: response.status,
+      apiError: data.error?.status || data.error?.message || "UNKNOWN"
+    };
+  }
+  const channel = data.items?.[0];
+  if (!channel) {
+    return { ok: false, status: "NO_AUTHENTICATED_CHANNEL" };
+  }
   const verification = assertExpectedChannel(channel);
   if (!verification.ok) return verification;
+  const channelUrl = verification.handle
+    ? `https://www.youtube.com/${verification.handle}`
+    : `https://www.youtube.com/channel/${verification.channelId}`;
   const record = {
     channelId: verification.channelId,
     title: verification.title,
     handle: verification.handle,
+    handleStatus: verification.handleStatus,
+    channelUrl,
     verifiedAt: new Date().toISOString(),
     expectedGoogleAccount: EXPECTED_GOOGLE_ACCOUNT
   };
-  fs.mkdirSync(path.dirname(paths.channelRecordPath), { recursive: true });
-  fs.writeFileSync(paths.channelRecordPath, JSON.stringify(record, null, 2) + "\n", { mode: 0o600 });
-  return { ok: true, ...record, channelRecordPath: paths.channelRecordPath };
+  writePrivateJson(paths.channelRecordPath, record);
+  return {
+    ok: true,
+    status: "CHANNEL_VERIFIED",
+    ...record,
+    grantedScopes: scopesFromToken(token),
+    tokenPath: paths.tokenPath,
+    tokenPermissions: fileMode(paths.tokenPath),
+    channelRecordPath: paths.channelRecordPath
+  };
 }
 
 export function loadVideoRecord(registryId, registryPath = "content/video-registry.json", root = process.cwd()) {
