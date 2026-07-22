@@ -46,7 +46,8 @@
     "ffmpeg": "ffmpeg",
     "ffprobe": "ffprobe",
     "node": "node",
-    "say": "say"
+    "say": "say",
+    "qlmanage": "qlmanage"
   },
   "style": {
     "background": "#f7f1e6",

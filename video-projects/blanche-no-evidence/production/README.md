@@ -30,12 +30,13 @@ Expected rendered files:
 node video-projects/blanche-no-evidence/production/render-rough-cut.mjs
 ```
 
-The renderer requires local `ffmpeg`, `ffprobe`, `node`, and macOS `say`. It does not download dependencies and does not call YouTube, X, or deployment APIs.
+The renderer requires local `ffmpeg`, `ffprobe`, `node`, macOS `say`, and macOS `qlmanage` for slide rasterization. It does not download dependencies and does not call YouTube, X, or deployment APIs.
 
 Optional overrides:
 
 - `FFMPEG_BIN`
 - `FFPROBE_BIN`
+- `QLMANAGE_BIN`
 - `GAH_ROUGH_CUT_EXPORT_DIR`
 - `GAH_ROUGH_CUT_WORK_DIR`
 

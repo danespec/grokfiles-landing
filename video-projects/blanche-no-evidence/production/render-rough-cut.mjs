@@ -20,6 +20,7 @@ const workDir = path.resolve(process.env.GAH_ROUGH_CUT_WORK_DIR || "/private/tmp
 const ffmpegBin = process.env.FFMPEG_BIN || settings.tools.ffmpeg;
 const ffprobeBin = process.env.FFPROBE_BIN || settings.tools.ffprobe;
 const sayBin = process.env.SAY_BIN || settings.tools.say;
+const qlmanageBin = process.env.QLMANAGE_BIN || settings.tools.qlmanage || "qlmanage";
 
 const outputMp4 = path.join(exportDir, settings.output.mp4File);
 const outputVtt = path.join(exportDir, settings.output.captionsFile);
@@ -167,6 +168,66 @@ function makeSvg(scene, index, scaledScene, quotesById, assetBySource) {
 </svg>`;
 }
 
+function makeQuickLookSvg(svg) {
+  const scaleX = settings.video.height / settings.video.width;
+  return svg
+    .replace(
+      `width="${settings.video.width}" height="${settings.video.height}" viewBox="0 0 ${settings.video.width} ${settings.video.height}"`,
+      `width="${settings.video.height}" height="${settings.video.height}" viewBox="0 0 ${settings.video.height} ${settings.video.height}"`
+    )
+    .replace(
+      /(\s*<rect class="bg" width="100%" height="100%"\/>\n)/,
+      `$1  <g transform="scale(${scaleX} 1)">\n`
+    )
+    .replace(/\n<\/svg>$/, "\n  </g>\n</svg>");
+}
+
+function rasterizeSlide(svg, sceneId, rasterDir) {
+  const svgPath = path.join(workDir, `${sceneId}.svg`);
+  const quickLookSvgPath = path.join(workDir, `${sceneId}.ql.svg`);
+  const quickLookPng = path.join(rasterDir, `${sceneId}.ql.svg.png`);
+  const framePath = path.join(workDir, `${sceneId}.png`);
+
+  fs.writeFileSync(svgPath, svg);
+  fs.writeFileSync(quickLookSvgPath, makeQuickLookSvg(svg));
+  run(qlmanageBin, [
+    "-t",
+    "-s", String(settings.video.height),
+    "-f", "1",
+    "-o", rasterDir,
+    quickLookSvgPath
+  ]);
+  if (!fs.existsSync(quickLookPng)) {
+    throw new Error(`qlmanage did not create expected thumbnail: ${quickLookPng}`);
+  }
+  run(ffmpegBin, [
+    "-y",
+    "-i", quickLookPng,
+    "-vf", `scale=${settings.video.width}:${settings.video.height},format=rgba`,
+    "-frames:v", "1",
+    "-update", "1",
+    framePath
+  ]);
+
+  return framePath;
+}
+
+function buildContactSheetFrames(scaledScenes, framePaths) {
+  const contactDir = path.join(workDir, "contact-sheet-frames");
+  fs.rmSync(contactDir, { recursive: true, force: true });
+  fs.mkdirSync(contactDir, { recursive: true });
+
+  scaledScenes.forEach(({ scene }, index) => {
+    const framePath = framePaths.get(scene.sceneId);
+    if (!framePath || !fs.existsSync(framePath)) {
+      throw new Error(`missing contact-sheet frame for ${scene.sceneId}`);
+    }
+    fs.copyFileSync(framePath, path.join(contactDir, `${String(index + 1).padStart(3, "0")}.png`));
+  });
+
+  return path.join(contactDir, "%03d.png");
+}
+
 function makeCaptions(paragraphs, durationSeconds) {
   const items = [...paragraphs.values()];
   const totalWords = items.reduce((sum, item) => sum + item.body.split(/\s+/).filter(Boolean).length, 0);
@@ -215,6 +276,9 @@ function main() {
   if (!commandExists(sayBin)) {
     missing.push("say");
   }
+  if (!commandExists(qlmanageBin)) {
+    missing.push("qlmanage");
+  }
   if (missing.length) {
     console.log(JSON.stringify({
       ok: false,
@@ -229,6 +293,8 @@ function main() {
 
   fs.mkdirSync(exportDir, { recursive: true });
   fs.mkdirSync(workDir, { recursive: true });
+  const rasterDir = path.join(workDir, "rasterized");
+  fs.mkdirSync(rasterDir, { recursive: true });
 
   const narrationPath = path.join(PACKAGE_DIR, "narration.txt");
   const audioPath = path.join(workDir, "provisional-narration.m4a");
@@ -241,6 +307,7 @@ function main() {
   const quotesById = new Map(quoteLedger.quotes.map((quote) => [quote.quoteId, quote]));
   const assetBySource = new Map(assets.assets.map((asset) => [asset.sourceId, asset]));
   const scaledScenes = [];
+  const framePaths = new Map();
   let cursor = 0;
 
   for (const [index, scene] of timeline.scenes.entries()) {
@@ -248,17 +315,17 @@ function main() {
     const scaledScene = { scene, start: cursor, end: cursor + duration, duration };
     scaledScenes.push(scaledScene);
     const svg = makeSvg(scene, index, scaledScene, quotesById, assetBySource);
-    fs.writeFileSync(path.join(workDir, `${scene.sceneId}.svg`), svg);
+    framePaths.set(scene.sceneId, rasterizeSlide(svg, scene.sceneId, rasterDir));
     cursor += duration;
   }
 
   const concatLines = [];
   for (const { scene, duration } of scaledScenes) {
-    const slidePath = path.join(workDir, `${scene.sceneId}.svg`).replace(/'/g, "'\\''");
+    const slidePath = framePaths.get(scene.sceneId).replace(/'/g, "'\\''");
     concatLines.push(`file '${slidePath}'`);
     concatLines.push(`duration ${duration.toFixed(3)}`);
   }
-  const lastSlide = path.join(workDir, `${scaledScenes.at(-1).scene.sceneId}.svg`).replace(/'/g, "'\\''");
+  const lastSlide = framePaths.get(scaledScenes.at(-1).scene.sceneId).replace(/'/g, "'\\''");
   concatLines.push(`file '${lastSlide}'`);
   const concatPath = path.join(workDir, "slides.txt");
   fs.writeFileSync(concatPath, concatLines.join("\n"));
@@ -282,10 +349,20 @@ function main() {
     outputMp4
   ]);
 
+  const actualVideoDuration = Number(run(ffprobeBin, [
+    "-v", "error",
+    "-show_entries", "format=duration",
+    "-of", "default=nw=1:nk=1",
+    outputMp4
+  ]).trim()) || videoDuration;
+  fs.writeFileSync(outputVtt, makeCaptions(paragraphs, actualVideoDuration));
+
   run(ffmpegBin, [
     "-y",
-    "-i", outputMp4,
-    "-vf", "fps=1/60,scale=320:180,tile=3x3:padding=4:margin=4",
+    "-framerate", "1",
+    "-start_number", "1",
+    "-i", buildContactSheetFrames(scaledScenes, framePaths),
+    "-vf", "scale=640:360,tile=3x3:padding=4:margin=4",
     "-frames:v", "1",
     outputContactSheet
   ]);
@@ -308,7 +385,7 @@ Review decision:
     ...manifest,
     status: "rough-cut-rendered",
     renderedAt: new Date().toISOString(),
-    durationSeconds: Number(videoDuration.toFixed(3)),
+    durationSeconds: Number(actualVideoDuration.toFixed(3)),
     audioDurationSeconds: Number(audioDuration.toFixed(3)),
     sourceAssetCount: assets.assets.length,
     cropCount: crops.crops.length,
@@ -333,7 +410,7 @@ Review decision:
     mp4: outputMp4,
     captions: outputVtt,
     contactSheet: outputContactSheet,
-    durationSeconds: Number(videoDuration.toFixed(3)),
+    durationSeconds: Number(actualVideoDuration.toFixed(3)),
     sourceAssetCount: assets.assets.length,
     youtubeApiWriteOccurred: false,
     xPostOccurred: false,
