@@ -1,0 +1,82 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 150,
+  "page_id": "page_150",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_150.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_150.ocr.txt",
+  "image_metadata": {
+    "bytes": 15801130,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "125816e6869f38b5a49fed4f33d06197b56f93eea4707b6a286dd186525efa76"
+  },
+  "ocr_text": "ai\n)\nwy j ae “ ' “I\n_\n¥\n‘. ‘\nv : Ww 4 yj “i ;\nReg ro .\nSer gis “>\nSPR doe Aegan ee a k ve\n% ; , = se\n; . : - ‘ 7 - . =. \" ei .\na > > | rape StF Pu ae Oa oh eat tele\nHOUSE_OVERSIGHT_000150\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "This page features a single photograph of a zebra standing on green grass. The zebra is shown in profile from the side, facing to the right. The background is primarily light and out of focus with a yellowish gradient. The zebra has distinctive black and white stripes and a tail hanging down with a tuft of hair at the end.",
+    "Layout: full-page photograph",
+    "Photo/image candidate at full page: Photograph of a zebra standing on grassy field, facing right in profile view with visible black and white stripes and tail."
+  ],
+  "observations": [
+    "This page features a single photograph of a zebra standing on green grass. The zebra is shown in profile from the side, facing to the right. The background is primarily light and out of focus with a yellowish gradient. The zebra has distinctive black and white stripes and a tail hanging down with a tuft of hair at the end.",
+    "Layout: full-page photograph",
+    "Photo/image candidate at full page: Photograph of a zebra standing on grassy field, facing right in profile view with visible black and white stripes and tail."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000150"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:26:25.807Z",
+    "response_id": "resp_0c8e717eb74d2e36006a502e1b5e5c8194906665a244bf653e",
+    "raw_output_sha256": "28abd035a4c391895f57b9e2e2b982a57563dd9585ccb215d4f9318a801dcc71"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c8e717eb74d2e36006a502e1b5e5c8194906665a244bf653e",
+    "enriched_at": "2026-07-09T23:26:25.807Z"
+  },
+  "visual_summary": "This page features a single photograph of a zebra standing on green grass. The zebra is shown in profile from the side, facing to the right. The background is primarily light and out of focus with a yellowish gradient. The zebra has distinctive black and white stripes and a tail hanging down with a tuft of hair at the end.",
+  "layout": [
+    "full-page photograph"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "full page",
+      "description": "Photograph of a zebra standing on grassy field, facing right in profile view with visible black and white stripes and tail.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

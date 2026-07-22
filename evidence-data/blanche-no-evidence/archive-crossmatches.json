@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "archive_id": "EFTA Compliance Tracker",
+      "source_class": "litigation/source-release tracker",
+      "date": "2026-07-18",
+      "entity": "DOJ/Epstein files",
+      "hearing_proposition": "DOJ reviewed-corpus language and public release limits.",
+      "evidentiary_value": "context for what DOJ says was reviewed/released",
+      "limitation": "Does not prove person-specific charging decisions.",
+      "classification": "CONTEXT_ONLY",
+      "confidence": "HIGH"
+    },
+    {
+      "archive_id": "New Mexico-DOJ Records Standoff",
+      "source_class": "records-access tracker",
+      "date": "2026-07-19",
+      "entity": "DOJ/Epstein records",
+      "hearing_proposition": "Withheld or disputed records can materially affect public conclusions.",
+      "evidentiary_value": "context for public-record incompleteness",
+      "limitation": "Does not establish the content of withheld records.",
+      "classification": "CONTEXT_ONLY",
+      "confidence": "HIGH"
+    },
+    {
+      "archive_id": "Leon Black Transcript Autopsy",
+      "source_class": "House transcript autopsy",
+      "date": "2026-07-19",
+      "entity": "testimony/source standards",
+      "hearing_proposition": "Testimony proves a statement was made, not necessarily that the underlying claim is true.",
+      "evidentiary_value": "methodological cross-reference",
+      "limitation": "Not proof of Blanche hearing claims.",
+      "classification": "DOES_NOT_PROVE_PROPOSITION",
+      "confidence": "HIGH"
+    },
+    {
+      "archive_id": "Doug Band Transcript Autopsy",
+      "source_class": "House transcript autopsy",
+      "date": "2026-07-19",
+      "entity": "testimony/source standards",
+      "hearing_proposition": "Memory, hearsay, and direct-knowledge distinctions apply across testimony products.",
+      "evidentiary_value": "methodological cross-reference",
+      "limitation": "Not proof of Blanche hearing claims.",
+      "classification": "CONTEXT_ONLY",
+      "confidence": "HIGH"
+    }
+  ]
+}

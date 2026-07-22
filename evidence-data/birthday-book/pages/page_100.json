@@ -1,0 +1,179 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 100,
+  "page_id": "page_100",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_100.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_100.ocr.txt",
+  "image_metadata": {
+    "bytes": 14437025,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "a709aba8d5f0dc58297b694d1d9a210e23b3fc98c5e47df55ec0ec6ea77473ff"
+  },
+  "ocr_text": "f 3 T4eks C a ‘ oj =\" . aby:\n™ . @ ’ ~ i ° ot\nPied Seale ee te Re: ee Soe\n# Tust give me t7e oa. e\na\n~ dloesn'€ Know where\nWS, Dee Ae 4rakes Ae\ni a. F :\n: aw 2 Say y i\nHOUSE_OVERSIGHT_000100\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page with four color photographs arranged in a collage style. Two photos at top, one middle left, and one bottom right. Handwritten text is present beside and below the photos. Two photos show two men standing outdoors on a paved road with grass, trees, and houses in the background. One photo shows a man standing by an open convertible car door with another person inside (face blacked out). The bottom right photo shows three people standing together outdoors near a building entrance (two faces blacked out). Handwritten text includes phrases about $100 and brakes.",
+    "Layout: photo top left",
+    "Layout: photo top right",
+    "Layout: photo middle left",
+    "Layout: photo bottom right",
+    "Layout: handwritten text top left photo",
+    "Layout: handwritten text middle right",
+    "Photo/image candidate at top left: Two men standing close together on a paved road with trees and houses in background.",
+    "Photo/image candidate at top right: Two men standing side by side on a paved road with trees, houses, and cars visible in background.",
+    "Photo/image candidate at middle left: Man standing beside open door of a blue convertible car with a second person seated inside (face redacted).",
+    "Photo/image candidate at bottom right: Three people standing close together outside near a building entrance with glass doors and plants; two faces redacted."
+  ],
+  "observations": [
+    "A page with four color photographs arranged in a collage style. Two photos at top, one middle left, and one bottom right. Handwritten text is present beside and below the photos. Two photos show two men standing outdoors on a paved road with grass, trees, and houses in the background. One photo shows a man standing by an open convertible car door with another person inside (face blacked out). The bottom right photo shows three people standing together outdoors near a building entrance (two faces blacked out). Handwritten text includes phrases about $100 and brakes.",
+    "Layout: photo top left",
+    "Layout: photo top right",
+    "Layout: photo middle left",
+    "Layout: photo bottom right",
+    "Layout: handwritten text top left photo",
+    "Layout: handwritten text middle right",
+    "Photo/image candidate at top left: Two men standing close together on a paved road with trees and houses in background.",
+    "Photo/image candidate at top right: Two men standing side by side on a paved road with trees, houses, and cars visible in background.",
+    "Photo/image candidate at middle left: Man standing beside open door of a blue convertible car with a second person seated inside (face redacted).",
+    "Photo/image candidate at bottom right: Three people standing close together outside near a building entrance with glass doors and plants; two faces redacted."
+  ],
+  "dates": [
+    "'91 8 30"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000100",
+    "Just give me the $100, I will not tell Paula!",
+    "Suppose if she doesn't know where the brakes are"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below top left photo",
+      "text_as_seen": "\"Just give me the $100, I will not tell Paula!\"",
+      "confidence": "high",
+      "note": "Handwritten in green ink."
+    },
+    {
+      "location": "to right of middle left photo",
+      "text_as_seen": "\"Suppose if she doesn’t know where the brakes are\"",
+      "confidence": "high",
+      "note": "Handwritten in green ink."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "face area of person sitting in car in middle left photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction of face."
+    },
+    {
+      "location": "face areas of two people in bottom right photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction of faces."
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:10.946Z",
+    "response_id": "resp_0bb7d907d8d63583006a502c6732f48195b2c7f85e77656a6d",
+    "raw_output_sha256": "25e87923cf917a94a7b4e10024b78bee3ddcf42ccf7c8e516576ad62aa79592b"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bb7d907d8d63583006a502c6732f48195b2c7f85e77656a6d",
+    "enriched_at": "2026-07-09T23:19:10.946Z"
+  },
+  "visual_summary": "A page with four color photographs arranged in a collage style. Two photos at top, one middle left, and one bottom right. Handwritten text is present beside and below the photos. Two photos show two men standing outdoors on a paved road with grass, trees, and houses in the background. One photo shows a man standing by an open convertible car door with another person inside (face blacked out). The bottom right photo shows three people standing together outdoors near a building entrance (two faces blacked out). Handwritten text includes phrases about $100 and brakes.",
+  "layout": [
+    "photo top left",
+    "photo top right",
+    "photo middle left",
+    "photo bottom right",
+    "handwritten text top left photo",
+    "handwritten text middle right"
+  ],
+  "handwriting": [
+    {
+      "location": "below top left photo",
+      "text_as_seen": "\"Just give me the $100, I will not tell Paula!\"",
+      "confidence": "high",
+      "note": "Handwritten in green ink."
+    },
+    {
+      "location": "to right of middle left photo",
+      "text_as_seen": "\"Suppose if she doesn’t know where the brakes are\"",
+      "confidence": "high",
+      "note": "Handwritten in green ink."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "face area of person sitting in car in middle left photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction of face."
+    },
+    {
+      "location": "face areas of two people in bottom right photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction of faces."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left",
+      "description": "Two men standing close together on a paved road with trees and houses in background.",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Two men standing side by side on a paved road with trees, houses, and cars visible in background.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle left",
+      "description": "Man standing beside open door of a blue convertible car with a second person seated inside (face redacted).",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right",
+      "description": "Three people standing close together outside near a building entrance with glass doors and plants; two faces redacted.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "'91 8 30"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,128 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 213,
+  "page_id": "page_213",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_213.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_213.ocr.txt",
+  "image_metadata": {
+    "bytes": 3702769,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b3e3de80b26bb8136e9dae127fe74ac4ecd528ce3ab550ab20d910e18556b1a3"
+  },
+  "ocr_text": "fi ¥ li-y pA ‘ Z\n7 oye BACH Lor\n/ ot bist\n, Ail,\nHOUSE_OVERSIGHT_000213\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains handwritten text in yellow ink with several star-shaped bullet points along the left margin. There is also a phrase in black ink crossing out or emphasizing some words. The text appears to list changes or rules, with some items in quotation marks. The right and bottom edges show a black border framing the page.",
+    "Layout: Handwritten text in yellow ink across the page",
+    "Layout: Black ink handwritten phrase superimposed on the yellow text",
+    "Layout: Star-shaped bullet points aligned to the left margin",
+    "Drawing candidate at left margin: Six star-shaped bullet points highlighting list items"
+  ],
+  "observations": [
+    "The page contains handwritten text in yellow ink with several star-shaped bullet points along the left margin. There is also a phrase in black ink crossing out or emphasizing some words. The text appears to list changes or rules, with some items in quotation marks. The right and bottom edges show a black border framing the page.",
+    "Layout: Handwritten text in yellow ink across the page",
+    "Layout: Black ink handwritten phrase superimposed on the yellow text",
+    "Layout: Star-shaped bullet points aligned to the left margin",
+    "Drawing candidate at left margin: Six star-shaped bullet points highlighting list items"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Things to change... or do -",
+    "NO MORE Wearing these nasty \"BLACK CARGO\" pants...",
+    "NO MORE \"deli\"...",
+    "NO MORE \"sweat pants\"",
+    "NO MORE \"Howard Stern\"",
+    "NO MORE \"DATING\"",
+    "or we'll put you on \"THE BACHELOR\"",
+    "A TRIP to the \"Silver\" star",
+    "for old time's sake",
+    "A TRIP to the \"SOLOW\" building",
+    "(ditto)",
+    "HOUSE_OVERSIGHT_000213"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center to bottom center",
+      "text_as_seen": "Things to change... or do - NO MORE Wearing these nasty \"BLACK CARGO\" pants... NO MORE \"deli\"... NO MORE \"sweat pants\" NO MORE \"Howard Stern\" NO MORE \"DATING\" or we'll put you on \"THE BACHELOR\" A TRIP to the \"Silver\" star for old time's sake A TRIP to the \"SOLOW\" building (ditto)",
+      "confidence": "medium",
+      "note": "Handwriting in yellow ink with a list format using stars; black ink text is present in the middle part of the list."
+    },
+    {
+      "location": "middle right",
+      "text_as_seen": "\"THE BACHELOR\"",
+      "confidence": "high",
+      "note": "Handwriting in black ink emphasizing a phrase within the yellow text."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some words are faint and harder to read, affecting confidence in transcription of handwriting."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:36:32.300Z",
+    "response_id": "resp_070d97f8483d3700006a503077c71c819381962a007126d08f",
+    "raw_output_sha256": "99fa0d65aa9471a5c21d27d953c62bf3a5077cd786d741de4285c543cf89b37d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_070d97f8483d3700006a503077c71c819381962a007126d08f",
+    "enriched_at": "2026-07-09T23:36:32.300Z"
+  },
+  "visual_summary": "The page contains handwritten text in yellow ink with several star-shaped bullet points along the left margin. There is also a phrase in black ink crossing out or emphasizing some words. The text appears to list changes or rules, with some items in quotation marks. The right and bottom edges show a black border framing the page.",
+  "layout": [
+    "Handwritten text in yellow ink across the page",
+    "Black ink handwritten phrase superimposed on the yellow text",
+    "Star-shaped bullet points aligned to the left margin"
+  ],
+  "handwriting": [
+    {
+      "location": "top center to bottom center",
+      "text_as_seen": "Things to change... or do - NO MORE Wearing these nasty \"BLACK CARGO\" pants... NO MORE \"deli\"... NO MORE \"sweat pants\" NO MORE \"Howard Stern\" NO MORE \"DATING\" or we'll put you on \"THE BACHELOR\" A TRIP to the \"Silver\" star for old time's sake A TRIP to the \"SOLOW\" building (ditto)",
+      "confidence": "medium",
+      "note": "Handwriting in yellow ink with a list format using stars; black ink text is present in the middle part of the list."
+    },
+    {
+      "location": "middle right",
+      "text_as_seen": "\"THE BACHELOR\"",
+      "confidence": "high",
+      "note": "Handwriting in black ink emphasizing a phrase within the yellow text."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "left margin",
+      "description": "Six star-shaped bullet points highlighting list items",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

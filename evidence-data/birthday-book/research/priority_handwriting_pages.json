@@ -1,0 +1,317 @@
+{
+  "generated_at": "2026-07-10T17:52:59.780Z",
+  "source": "identity_records.json + review_queue.json",
+  "model_task": "priority handwriting transcription only",
+  "rules": [
+    "Do not treat transcription as identity verification.",
+    "Use document string wording unless identity is externally verified.",
+    "Mark uncertain words in [brackets] and illegible spans as [illegible].",
+    "Do not expose low-confidence text as certain."
+  ],
+  "pages": [
+    {
+      "priority_rank": 1,
+      "page": 126,
+      "bates": "HOUSE_OVERSIGHT_000126",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/126",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_126.png",
+      "related_people": [
+        "Bill Clinton"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "famous-name attribution",
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 210,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 2,
+      "page": 146,
+      "bates": "HOUSE_OVERSIGHT_000146",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/146",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_146.png",
+      "related_people": [
+        "George Mitchell"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "famous-name attribution",
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 210,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 3,
+      "page": 158,
+      "bates": "HOUSE_OVERSIGHT_000158",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/158",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_158.png",
+      "related_people": [
+        "Joseph Pagano"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "famous-name attribution",
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript",
+        "multiple possible contributors"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 210,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 4,
+      "page": 165,
+      "bates": "HOUSE_OVERSIGHT_000165",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/165",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_165.png",
+      "related_people": [
+        "Donald Trump"
+      ],
+      "primary_record_status": "open",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "high_value_open",
+      "issues": [
+        "famous-name attribution",
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "highest-value open record tied to handwriting/signature review",
+      "score": 190,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 5,
+      "page": 178,
+      "bates": "HOUSE_OVERSIGHT_000178",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/178",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_178.png",
+      "related_people": [
+        "Jerry Edelman"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 170,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 6,
+      "page": 187,
+      "bates": "HOUSE_OVERSIGHT_000187",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/187",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_187.png",
+      "related_people": [
+        "Marvin Minsky"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript",
+        "redaction affecting attribution"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 170,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 7,
+      "page": 233,
+      "bates": "HOUSE_OVERSIGHT_000233",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/233",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_233.png",
+      "related_people": [
+        "Ted Serine"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 170,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 8,
+      "page": 127,
+      "bates": "HOUSE_OVERSIGHT_000127",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/127",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_127.png",
+      "related_people": [
+        "Alan Dershowitz"
+      ],
+      "primary_record_status": "probable",
+      "primary_classification": "signature_attribution",
+      "priority_bucket": "probable_attribution",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "probable attribution tied to handwriting/signature review",
+      "score": 170,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 9,
+      "page": 125,
+      "bates": "HOUSE_OVERSIGHT_000125",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/125",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_125.png",
+      "related_people": [
+        "Jean-Luc Brunel"
+      ],
+      "primary_record_status": "verified",
+      "primary_classification": "confirmed_contributor",
+      "priority_bucket": "former_probable_priority",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "former probable attribution downgraded but still tied to handwriting/signature review",
+      "score": 155,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 10,
+      "page": 232,
+      "bates": "HOUSE_OVERSIGHT_000232",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/232",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_232.png",
+      "related_people": [
+        "Ari Gildery"
+      ],
+      "primary_record_status": "open",
+      "primary_classification": "unresolved",
+      "priority_bucket": "former_probable_priority",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "former probable attribution downgraded but still tied to handwriting/signature review",
+      "score": 155,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    },
+    {
+      "priority_rank": 11,
+      "page": 8,
+      "bates": "HOUSE_OVERSIGHT_000008",
+      "evidence_page_url": "/research/evidence/birthday-book/pages/8",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+      "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+      "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+      "page_image_path": "/evidence-data/birthday-book/recovered_pages/page_008.png",
+      "related_people": [
+        "Jerry Gardens"
+      ],
+      "primary_record_status": "open",
+      "primary_classification": "mentioned_only",
+      "priority_bucket": "former_probable_priority",
+      "issues": [
+        "signature candidate",
+        "handwriting",
+        "low-confidence transcript"
+      ],
+      "reason": "former probable attribution downgraded but still tied to handwriting/signature review",
+      "score": 155,
+      "transcription_status": "pending_openai_transcription",
+      "public_rule": "Transcription is not identity verification; low-confidence words are bracketed or marked [uncertain] before public display."
+    }
+  ],
+  "test_plan": {
+    "limit": 10,
+    "command": "bash run_openai_priority_transcription_safe.sh",
+    "selected_pages": [
+      126,
+      146,
+      158,
+      165,
+      178,
+      187,
+      233,
+      127,
+      125,
+      232
+    ]
+  },
+  "counts": {
+    "total_priority_pages": 11,
+    "probable_records": 7,
+    "high_value_open_records": 7,
+    "grouped_review_cases": 224,
+    "raw_review_items": 466
+  }
+}

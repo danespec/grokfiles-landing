@@ -1,0 +1,158 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 233,
+  "page_id": "page_233",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_233.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_233.ocr.txt",
+  "image_metadata": {
+    "bytes": 169050,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8175c3391c47baa40265e18b99fb52a6539b3678267b5652b48db8285cfb7369"
+  },
+  "ocr_text": "\"5 ee\noa Tere,\n| he dik Some.\nwie stawtn owt ben the det i\nLO Wav age.\nSumchow | still behing whe of\nWave nore. | 4 or \\ {\nwhor Ly yan ! dame Vea. ) bt 4 CON TEAR, |\nely dene wi yt ian i-€ MAA ran .\nA i wa he An many DA ean elu ;\n| bA éY Ie i | UA... Low wen i ON bo! brut Mali, BARU OE | -\n- \\) \\\n(CO. SA\nHOUSE_OVERSIGHT_000233\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten letter dated 1/15/03, addressed to 'Jeffrey'. The letter is written in black ink on a white background. The handwriting is moderately legible cursive and print mix. The letter talks about starting out 'behind the desk' 25 years ago and mentions 'still behind the desk' with reflections on what the writer is doing now, referring to Jeffrey as a hero. The letter ends with birthday wishes and a signature-like text 'Ted Serine'. There are notes and faded OCR sidecar text at the top and some printed marks near the left margin, with no images or drawings on the page.",
+    "Layout: Date line in the top left corner: '1/15/03'",
+    "Layout: Salutation: 'Dear Jeffrey,'",
+    "Layout: Body of letter in central area",
+    "Layout: Signature line at bottom: 'Ted Serine'"
+  ],
+  "observations": [
+    "A handwritten letter dated 1/15/03, addressed to 'Jeffrey'. The letter is written in black ink on a white background. The handwriting is moderately legible cursive and print mix. The letter talks about starting out 'behind the desk' 25 years ago and mentions 'still behind the desk' with reflections on what the writer is doing now, referring to Jeffrey as a hero. The letter ends with birthday wishes and a signature-like text 'Ted Serine'. There are notes and faded OCR sidecar text at the top and some printed marks near the left margin, with no images or drawings on the page.",
+    "Layout: Date line in the top left corner: '1/15/03'",
+    "Layout: Salutation: 'Dear Jeffrey,'",
+    "Layout: Body of letter in central area",
+    "Layout: Signature line at bottom: 'Ted Serine'"
+  ],
+  "dates": [
+    "1/15/03"
+  ],
+  "document_strings": [
+    "Dear Jeffrey,",
+    "We started out behind the desk some 25 years ago.",
+    "Somehow I'm still behind the desk - you're not.... I'm asking myself now what I'm still doing there, but it certainly helps define why you're my hero.",
+    "All the best, happy birthday.",
+    "I wish you love + laughter always.",
+    "Ted Serine"
+  ],
+  "signatures": [
+    {
+      "location": "Bottom center",
+      "text_as_seen": "Ted Serine",
+      "confidence": "high",
+      "note": "Signature-like text"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "Top left corner",
+      "text_as_seen": "1/15/03",
+      "confidence": "high",
+      "note": "Date line handwritten"
+    },
+    {
+      "location": "Top center",
+      "text_as_seen": "Dear Jeffrey,",
+      "confidence": "high",
+      "note": "Handwritten salutation"
+    },
+    {
+      "location": "Center of page",
+      "text_as_seen": "We started out behind the desk some 25 years ago. Somehow I'm still behind the desk - you're not.... I'm asking myself now what I'm still doing there, but it certainly helps define why you're my hero. All the best, happy birthday. I wish you love + laughter always.",
+      "confidence": "high",
+      "note": "Body text of letter handwritten"
+    },
+    {
+      "location": "Bottom center",
+      "text_as_seen": "Ted Serine",
+      "confidence": "high",
+      "note": "Handwritten signature or name"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:20.600Z",
+    "response_id": "resp_08dc1691d2f18e64006a50312287ec8190b414813d6c825cef",
+    "raw_output_sha256": "be1fc2dd2e130f6797525243f301cbdf560c6e288036254c88b1b04880bc6f74"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08dc1691d2f18e64006a50312287ec8190b414813d6c825cef",
+    "enriched_at": "2026-07-09T23:39:20.600Z"
+  },
+  "visual_summary": "A handwritten letter dated 1/15/03, addressed to 'Jeffrey'. The letter is written in black ink on a white background. The handwriting is moderately legible cursive and print mix. The letter talks about starting out 'behind the desk' 25 years ago and mentions 'still behind the desk' with reflections on what the writer is doing now, referring to Jeffrey as a hero. The letter ends with birthday wishes and a signature-like text 'Ted Serine'. There are notes and faded OCR sidecar text at the top and some printed marks near the left margin, with no images or drawings on the page.",
+  "layout": [
+    "Date line in the top left corner: '1/15/03'",
+    "Salutation: 'Dear Jeffrey,'",
+    "Body of letter in central area",
+    "Signature line at bottom: 'Ted Serine'"
+  ],
+  "handwriting": [
+    {
+      "location": "Top left corner",
+      "text_as_seen": "1/15/03",
+      "confidence": "high",
+      "note": "Date line handwritten"
+    },
+    {
+      "location": "Top center",
+      "text_as_seen": "Dear Jeffrey,",
+      "confidence": "high",
+      "note": "Handwritten salutation"
+    },
+    {
+      "location": "Center of page",
+      "text_as_seen": "We started out behind the desk some 25 years ago. Somehow I'm still behind the desk - you're not.... I'm asking myself now what I'm still doing there, but it certainly helps define why you're my hero. All the best, happy birthday. I wish you love + laughter always.",
+      "confidence": "high",
+      "note": "Body text of letter handwritten"
+    },
+    {
+      "location": "Bottom center",
+      "text_as_seen": "Ted Serine",
+      "confidence": "high",
+      "note": "Handwritten signature or name"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "Bottom center",
+      "text_as_seen": "Ted Serine",
+      "confidence": "high",
+      "note": "Signature-like text"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1/15/03"
+  ],
+  "confidence": "high"
+}

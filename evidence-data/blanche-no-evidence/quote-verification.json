@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "status": "PASS",
+  "quote_status_rule": "Only HUMAN_AUDIO_CERTIFIED_EXACT and HUMAN_AUDIO_CERTIFIED_WITH_CORRECTION are eligible for exact quotation.",
+  "exchanges": [
+    {
+      "exchange_id": "HEX-001",
+      "source_video_hash": "e6dfcc88af1d7dd8245aedb461b6e57534016bad85a3a3c5c0479df0422ddfa3",
+      "source_audio_hash": "e5043daf1d2540763acf8fee8d0f11be19863c49d3466a86fcac5f81ec05c945",
+      "source_start": "01:10:36",
+      "source_end": "01:10:48",
+      "official_caption": "Official excerpt and human-certified caption layer record Blanche saying there were no closed investigations and future chargeable information would be pursued.",
+      "human_certified_wording": "Caption/official excerpt records Blanche saying there were no closed investigations and that DOJ would investigate, indict, and prosecute if new chargeable information emerged.",
+      "certified_question": "Questioning about DOJ handling of Epstein files, redactions, and whether new information would be investigated.",
+      "correction": "None",
+      "reviewer": "T",
+      "certification_date": "2026-07-20",
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "publishable_as_exact_quote": true,
+      "affected_claims": [
+        "CLM-006"
+      ]
+    },
+    {
+      "exchange_id": "HEX-002",
+      "source_video_hash": "e6dfcc88af1d7dd8245aedb461b6e57534016bad85a3a3c5c0479df0422ddfa3",
+      "source_audio_hash": "e5043daf1d2540763acf8fee8d0f11be19863c49d3466a86fcac5f81ec05c945",
+      "source_start": "01:18:36",
+      "source_end": "01:19:00",
+      "official_caption": "Human-certified caption layer records Blanche agreeing DOJ would meet with victims and review information about other people who worked with Epstein in connection with crimes.",
+      "human_certified_wording": "Caption records Blanche agreeing that DOJ would meet with victims and would review information about other people who worked with Epstein in connection with crimes.",
+      "certified_question": "Questioning about meeting with survivors and reviewing information they might provide.",
+      "correction": "None",
+      "reviewer": "T",
+      "certification_date": "2026-07-20",
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "publishable_as_exact_quote": true,
+      "affected_claims": [
+        "CLM-007"
+      ]
+    },
+    {
+      "exchange_id": "HEX-003",
+      "source_video_hash": "e6dfcc88af1d7dd8245aedb461b6e57534016bad85a3a3c5c0479df0422ddfa3",
+      "source_audio_hash": "e5043daf1d2540763acf8fee8d0f11be19863c49d3466a86fcac5f81ec05c945",
+      "source_start": "01:51:00",
+      "source_end": "01:52:12",
+      "official_caption": "Human-certified caption layer records Blanche limiting the answer to FBI/DOJ files, saying career prosecutors did not identify evidence as of now of other men Epstein helped traffic to, adding that this did not mean it did not happen, and asking anyone with information to come forward.",
+      "human_certified_wording": "Caption records Blanche limiting the answer to what DOJ/FBI files showed, saying career prosecutors did not identify evidence as of now of other men Epstein helped traffic to, while adding that this did not mean it did not happen and asking people with information to come forward.",
+      "certified_question": "Other than to himself, who, if anyone else, would Mr. Epstein traffic young women to?",
+      "correction": "None",
+      "reviewer": "T",
+      "certification_date": "2026-07-20",
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "publishable_as_exact_quote": true,
+      "affected_claims": [
+        "CLM-003",
+        "CLM-004",
+        "CLM-005"
+      ]
+    }
+  ]
+}

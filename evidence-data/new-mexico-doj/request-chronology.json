@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "date": "2019",
+      "event": "New Mexico prior investigation closed at request of SDNY according to NMDOJ",
+      "nmd_position": "NMDOJ says the earlier state investigation was closed in 2019 at the request of the U.S. Attorney's Office for the Southern District of New York.",
+      "doj_position": "No public DOJ record confirming or disputing that 2019 request was acquired.",
+      "documentary_record": "NMDOJ February 19 statement and June 30 letter.",
+      "source_id": "nmd-2026-02-19-zorro-reopen",
+      "limitation": "State position documented; underlying 2019 federal request not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-02-13",
+      "event": "NMDOJ says it sent its initial written request to then-Deputy Attorney General Blanche.",
+      "nmd_position": "Requested a specific EFTA document and all related investigative materials connected to Zorro Ranch.",
+      "doj_position": "No public DOJ response to the February 13 request was located.",
+      "documentary_record": "Described in the June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "The February 13 request letter itself was not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-02-19",
+      "event": "NMDOJ announced the Zorro Ranch investigation was reopened.",
+      "nmd_position": "Special agents and prosecutors would seek immediate access to the complete, unredacted federal case file.",
+      "doj_position": "No public DOJ response to the February 19 statement was acquired.",
+      "documentary_record": "NMDOJ press release.",
+      "source_id": "nmd-2026-02-19-zorro-reopen",
+      "limitation": "Press release only.",
+      "confidence": "High"
+    },
+    {
+      "date": "2026-03-09",
+      "event": "NMDOJ announced a search of the former Zorro Ranch property.",
+      "nmd_position": "The search was part of the reopened criminal investigation and current property owners cooperated.",
+      "doj_position": "No public DOJ response to the search statement was acquired.",
+      "documentary_record": "NMDOJ press release.",
+      "source_id": "nmd-2026-03-09-zorro-search",
+      "limitation": "Search warrant, inventory, and return were not acquired.",
+      "confidence": "High"
+    },
+    {
+      "date": "2026-03-13",
+      "event": "NMDOJ says it sent a formal letter to Attorney General Bondi.",
+      "nmd_position": "Identified five illustrative redacted EFTA documents and requested complete, unredacted versions of all pertinent records.",
+      "doj_position": "No public DOJ response to the March 13 letter was located.",
+      "documentary_record": "Described in the June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "The March 13 letter and five EFTA IDs were not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-04-01",
+      "event": "NMDOJ says DOJ directed it to submit a formal Touhy letter.",
+      "nmd_position": "NMDOJ describes a telephone conference with Associate Deputy Attorney General Diego Pestana in which DOJ affirmed cooperation and directed a Touhy letter.",
+      "doj_position": "No public DOJ call memorandum or written direction was acquired.",
+      "documentary_record": "Described in the June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Underlying call record not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-05-03",
+      "event": "NMDOJ says it submitted a comprehensive Touhy request.",
+      "nmd_position": "Sent to First Assistant U.S. Attorney Ryan Ellison and FBI Albuquerque SAC Justin Garris, requesting a response by May 11.",
+      "doj_position": "No public DOJ Touhy decision was located.",
+      "documentary_record": "Described in the June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Touhy request PDF/letter itself not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-05-11",
+      "event": "NMDOJ-requested Touhy response date.",
+      "nmd_position": "NMDOJ says no substantive response followed.",
+      "doj_position": "No public DOJ response by that date was located.",
+      "documentary_record": "June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Party-requested date, not a court deadline in acquired records.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-05-29",
+      "event": "NMDOJ says it sent written follow-up to Blanche and Pestana.",
+      "nmd_position": "Follow-up correspondence was sent after no substantive response.",
+      "doj_position": "No public DOJ answer to the follow-up was located.",
+      "documentary_record": "Described in the June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "The May 29 follow-up itself was not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-06-04/2026-06-05",
+      "event": "NMDOJ says it requested meetings with Blanche's office.",
+      "nmd_position": "NMDOJ says those meeting requests received no response.",
+      "doj_position": "No public DOJ scheduling response was located.",
+      "documentary_record": "Described in the June 30 NMDOJ letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Meeting-request messages not acquired.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-06-09",
+      "event": "NMDOJ public statement at World Without Exploitation conference.",
+      "nmd_position": "Called on DOJ to release records in full, unredacted form to law enforcement.",
+      "doj_position": "No public DOJ response to that release was acquired.",
+      "documentary_record": "NMDOJ press release.",
+      "source_id": "nmd-2026-06-09-world-without-exploitation",
+      "limitation": "Advocacy statement; not a production log.",
+      "confidence": "High"
+    },
+    {
+      "date": "2026-06-30",
+      "event": "NMDOJ sent new letter to Blanche and Pestana.",
+      "nmd_position": "Demanded immediate access to unredacted records and requested production/database access by July 31, 2026.",
+      "doj_position": "No public DOJ written response to this letter was located.",
+      "documentary_record": "Acquired June 30 letter.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "One-sided letter; does not establish DOJ's non-public rationale.",
+      "confidence": "High"
+    },
+    {
+      "date": "2026-07-09",
+      "event": "NMDOJ published press release and June 30 letter.",
+      "nmd_position": "NMDOJ described more than 130 days since its initial request and said unredacted access had not been granted.",
+      "doj_position": "No contemporaneous official DOJ release was located.",
+      "documentary_record": "NMDOJ press release.",
+      "source_id": "nmd-2026-07-09-press-release",
+      "limitation": "State characterization of DOJ response status.",
+      "confidence": "High for NMDOJ statement."
+    },
+    {
+      "date": "2026-07-15",
+      "event": "Senator Heinrich questioned Jay Clayton about the New Mexico request.",
+      "nmd_position": "Question framed the issue as DOJ blocking or failing to give New Mexico documents it needs.",
+      "doj_position": "Clayton said the request was for unredacted documents, documents were subject to protections including court protective orders, and DOJ personnel were seeking dialogue with NMDOJ to reach an accommodation consistent with those orders.",
+      "documentary_record": "Official Heinrich press release with Q/A excerpt.",
+      "source_id": "sen-heinrich-2026-07-15-clayton",
+      "limitation": "Public hearing exchange, not the full written DOJ response.",
+      "confidence": "High for public statement."
+    },
+    {
+      "date": "2026-07-15",
+      "event": "Senator Hirono press release summarized Todd Blanche's commitment to cooperate with New Mexico.",
+      "nmd_position": "Not a NMDOJ filing.",
+      "doj_position": "The Senate release says Blanche committed on record to cooperating with New Mexico's investigation.",
+      "documentary_record": "Official Hirono press release.",
+      "source_id": "sen-hirono-2026-07-15-blanche",
+      "limitation": "Summary page; underlying full hearing transcript/video not archived in this run.",
+      "confidence": "Medium"
+    },
+    {
+      "date": "2026-07-15",
+      "event": "NMDOJ announced support for EFTA II draft legislation.",
+      "nmd_position": "EFTA II would create new enforcement and access pathways if enacted.",
+      "doj_position": "No official DOJ position on the draft was acquired.",
+      "documentary_record": "NMDOJ press release and draft bill PDF.",
+      "source_id": "nmd-2026-07-15-efta-ii-release",
+      "limitation": "Proposed law only.",
+      "confidence": "High"
+    },
+    {
+      "date": "2026-07-31",
+      "event": "NMDOJ requested production/access date and House committee interim-report date.",
+      "nmd_position": "NMDOJ told DOJ that if access was not received by July 31, NMDOJ would treat the request as denied and pursue all available remedies; HR 1 separately requires an interim committee report by July 31.",
+      "doj_position": "No public DOJ written response agreeing to or rejecting the July 31 demand date was located.",
+      "documentary_record": "NMDOJ June 30 letter and New Mexico HR 1.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "July 31 is a party/request deadline in the NMDOJ letter and an interim legislative reporting deadline in HR 1; no acquired source makes it a federal court production deadline.",
+      "confidence": "High"
+    }
+  ]
+}

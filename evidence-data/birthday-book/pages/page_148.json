@@ -1,0 +1,85 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 148,
+  "page_id": "page_148",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_148.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_148.ocr.txt",
+  "image_metadata": {
+    "bytes": 17657589,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "efe0b4236645428d0ce6f9cb936c4d79579462827aad41db906246f0de197bff"
+  },
+  "ocr_text": "| : _ oo ¢ :\n- > : sN z, “eo\n. a . &\n*, Yer =\n| a 2; <M ‘\n, wh\n‘ A 4 ¢} |\n’ ‘ ah .\n; . 5 aie ,\nex At } :\nOe ; / 4 ey ’\nChas ~ iy i : a -\n, . bee ; ; enn,! 7 . 4 # + : mi. a\n4 - > @ . r ‘ ~ i ’ = ¥ ”\nF F x . - &\na : ia Se \" ’ f ; . t ‘\n| : hy - fg Za um i f § 4 d A j Be We\nLeaf Wises 5.) Rare on i\n? te ‘ (~ + : wie Te K : ‘ > |\n, ‘ f2-> , i\nAVs ‘a 5 Saat Nite wa ‘ #\n‘a _. ‘ Say Se ey SS *\n; Yo eg 2 a ' i>\nHOUSE_OVERSIGHT_000148\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Photograph of a baboon seated on a tree branch with mouth open, appearing to yawn or vocalize. The background is out of focus greenery, indicating a forest or wooded area.",
+    "Layout: Image occupies majority of the page, bordered by a black margin",
+    "Layout: Page number and document number printed at bottom right",
+    "Photo/image candidate at center: A baboon sitting on a tree branch with its mouth wide open, possibly yawning or vocalizing. The image is well-lit, with detailed texture of the baboon's fur visible."
+  ],
+  "observations": [
+    "Photograph of a baboon seated on a tree branch with mouth open, appearing to yawn or vocalize. The background is out of focus greenery, indicating a forest or wooded area.",
+    "Layout: Image occupies majority of the page, bordered by a black margin",
+    "Layout: Page number and document number printed at bottom right",
+    "Photo/image candidate at center: A baboon sitting on a tree branch with its mouth wide open, possibly yawning or vocalizing. The image is well-lit, with detailed texture of the baboon's fur visible."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000148"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:26:06.739Z",
+    "response_id": "resp_06fb81d3495c0fb7006a502e08d49081979aeacf5183c4ebbf",
+    "raw_output_sha256": "7a7d64fa4e078faa1552562882146dafede9ed35e388d82d12f61a904e12b9f9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_06fb81d3495c0fb7006a502e08d49081979aeacf5183c4ebbf",
+    "enriched_at": "2026-07-09T23:26:06.739Z"
+  },
+  "visual_summary": "Photograph of a baboon seated on a tree branch with mouth open, appearing to yawn or vocalize. The background is out of focus greenery, indicating a forest or wooded area.",
+  "layout": [
+    "Image occupies majority of the page, bordered by a black margin",
+    "Page number and document number printed at bottom right"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "A baboon sitting on a tree branch with its mouth wide open, possibly yawning or vocalizing. The image is well-lit, with detailed texture of the baboon's fur visible.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

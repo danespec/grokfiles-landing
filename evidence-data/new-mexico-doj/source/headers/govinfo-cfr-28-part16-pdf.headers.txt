@@ -1,0 +1,7 @@
+URL: https://www.govinfo.gov/link/cfr/28/16?link-type=pdf&year=mostrecent
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 56670661b256a8b1298c9e1d87cd8920e32795dbd762b156e16cc35c5d089616
+Bytes: 664482
+Acquisition method: verified existing local capture

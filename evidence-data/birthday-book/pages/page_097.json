@@ -1,0 +1,92 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 97,
+  "page_id": "page_097",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_097.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_097.ocr.txt",
+  "image_metadata": {
+    "bytes": 11794247,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "79e7c5d9207a35a6613f949036dfe25e750980e8db11ec7fdde13a9b69a8fefa"
+  },
+  "ocr_text": "a een a pO hig EA SS |\nni inc} a Fer t a 4 i\n— ft al > aan.\n“ee “y Li} / | \\\\ i\" | Sa\nee eS\ner\neG? FS i\na : Sm ' . : :\n& ae Y\n: aS » \" fe ; ~~\nei . bee . te +S ok _ 3 oe\n: re 4. . . Y . ~ _——\n_ 2 ‘ » z fae “el\n~ % — > ne\nfa \"| 7\nHOUSE_OVERSIGHT_000097\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two color photographs. The top photograph shows a man standing next to a vintage black car with the hood open. The background includes some trees and a dirt or gravel area. The bottom photograph shows a man standing poolside wearing a swimsuit. The background of this photo includes patio furniture, a covered area, and outdoor space with some shadowing.",
+    "Layout: top photo - man by vintage car with open hood",
+    "Layout: bottom photo - man poolside in swimsuit",
+    "Photo/image candidate at top photo: Man standing next to a vintage black car with the hood open, outdoor setting with trees and gravel",
+    "Photo/image candidate at bottom photo: Man standing poolside wearing a swimsuit, with patio chairs and covered area in the background"
+  ],
+  "observations": [
+    "The page contains two color photographs. The top photograph shows a man standing next to a vintage black car with the hood open. The background includes some trees and a dirt or gravel area. The bottom photograph shows a man standing poolside wearing a swimsuit. The background of this photo includes patio furniture, a covered area, and outdoor space with some shadowing.",
+    "Layout: top photo - man by vintage car with open hood",
+    "Layout: bottom photo - man poolside in swimsuit",
+    "Photo/image candidate at top photo: Man standing next to a vintage black car with the hood open, outdoor setting with trees and gravel",
+    "Photo/image candidate at bottom photo: Man standing poolside wearing a swimsuit, with patio chairs and covered area in the background"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000097"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:18:41.373Z",
+    "response_id": "resp_0780ea7a38d3a0a0006a502c4bce348196b511e8471a101062",
+    "raw_output_sha256": "2a3f645379cdc58d6a95ac105287f2dc60326c2c643b1fd41d4b26240253f980"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0780ea7a38d3a0a0006a502c4bce348196b511e8471a101062",
+    "enriched_at": "2026-07-09T23:18:41.374Z"
+  },
+  "visual_summary": "The page contains two color photographs. The top photograph shows a man standing next to a vintage black car with the hood open. The background includes some trees and a dirt or gravel area. The bottom photograph shows a man standing poolside wearing a swimsuit. The background of this photo includes patio furniture, a covered area, and outdoor space with some shadowing.",
+  "layout": [
+    "top photo - man by vintage car with open hood",
+    "bottom photo - man poolside in swimsuit"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Man standing next to a vintage black car with the hood open, outdoor setting with trees and gravel",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom photo",
+      "description": "Man standing poolside wearing a swimsuit, with patio chairs and covered area in the background",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,220 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 196,
+  "page_id": "page_196",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_196.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_196.ocr.txt",
+  "image_metadata": {
+    "bytes": 18143738,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b006a602d501fac82e9c7a75aec46585d81b27247687b095677dac7be4ed78cd"
+  },
+  "ocr_text": "——\n\nbia) we i i\n\n}. i 4, | \" (\n& / yo\n\n: tt]\n= ness\nA : f = eet - —— J |\n: 8\nHOUSE_OVERSIGHT_000196\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A scrapbook page with a blue painted background featuring five photos arranged in a collage style. There is handwritten text in black ink across the page. Some faces in the photos are redacted with black boxes.",
+    "Layout: Top left photo of a person standing and talking on the phone.",
+    "Layout: Top center photo of a person sitting at a table in front of a large window.",
+    "Layout: Top right photo of a person sitting wearing a white robe.",
+    "Layout: Center photo of two people sitting inside an airplane, one face obscured with a black box.",
+    "Layout: Bottom photo of multiple people sitting on a couch with faces redacted by black boxes.",
+    "Photo/image candidate at Top left: Person standing indoors talking on a phone.",
+    "Photo/image candidate at Top center: Person seated at a table with food, scenery visible through large windows.",
+    "Photo/image candidate at Top right: Person sitting indoors wearing a white robe.",
+    "Photo/image candidate at Center: Two people sitting inside an airplane interior, one face redacted.",
+    "Photo/image candidate at Bottom: Group of people sitting on a couch, multiple faces redacted with black boxes."
+  ],
+  "observations": [
+    "A scrapbook page with a blue painted background featuring five photos arranged in a collage style. There is handwritten text in black ink across the page. Some faces in the photos are redacted with black boxes.",
+    "Layout: Top left photo of a person standing and talking on the phone.",
+    "Layout: Top center photo of a person sitting at a table in front of a large window.",
+    "Layout: Top right photo of a person sitting wearing a white robe.",
+    "Layout: Center photo of two people sitting inside an airplane, one face obscured with a black box.",
+    "Layout: Bottom photo of multiple people sitting on a couch with faces redacted by black boxes.",
+    "Photo/image candidate at Top left: Person standing indoors talking on a phone.",
+    "Photo/image candidate at Top center: Person seated at a table with food, scenery visible through large windows.",
+    "Photo/image candidate at Top right: Person sitting indoors wearing a white robe.",
+    "Photo/image candidate at Center: Two people sitting inside an airplane interior, one face redacted.",
+    "Photo/image candidate at Bottom: Group of people sitting on a couch, multiple faces redacted with black boxes."
+  ],
+  "dates": [
+    "4th of July 1986"
+  ],
+  "document_strings": [
+    "4th of July 1986",
+    "Chip Chip Chip",
+    "I am so lucky to have you in my life",
+    "Love,"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top center above middle photo",
+      "text_as_seen": "4th of July 1986",
+      "confidence": "high",
+      "note": "Handwritten date in black ink on blue background."
+    },
+    {
+      "location": "Right center next to top right photo",
+      "text_as_seen": "Chip Chip Chip",
+      "confidence": "high",
+      "note": "Repeated word in black ink."
+    },
+    {
+      "location": "Bottom left below center photo",
+      "text_as_seen": "I am so lucky to have you in my life",
+      "confidence": "high",
+      "note": "Handwritten message in black ink on blue background."
+    },
+    {
+      "location": "Bottom right below bottom photo",
+      "text_as_seen": "Love,",
+      "confidence": "high",
+      "note": "Handwritten closing in black ink on blue background."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "Center photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting one person's face."
+    },
+    {
+      "location": "Bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Multiple black boxes redacting faces and parts of heads of several people."
+    },
+    {
+      "location": "Bottom right below bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting text following 'Love,'."
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:33:34.800Z",
+    "response_id": "resp_08e4be73db7ac08c006a502fc537588196826fa9199fcc3be4",
+    "raw_output_sha256": "3dc64f44e7b823f00cba6cc3038f55643375f8eb4fced9cac1826d6187a732d9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08e4be73db7ac08c006a502fc537588196826fa9199fcc3be4",
+    "enriched_at": "2026-07-09T23:33:34.800Z"
+  },
+  "visual_summary": "A scrapbook page with a blue painted background featuring five photos arranged in a collage style. There is handwritten text in black ink across the page. Some faces in the photos are redacted with black boxes.",
+  "layout": [
+    "Top left photo of a person standing and talking on the phone.",
+    "Top center photo of a person sitting at a table in front of a large window.",
+    "Top right photo of a person sitting wearing a white robe.",
+    "Center photo of two people sitting inside an airplane, one face obscured with a black box.",
+    "Bottom photo of multiple people sitting on a couch with faces redacted by black boxes."
+  ],
+  "handwriting": [
+    {
+      "location": "Top center above middle photo",
+      "text_as_seen": "4th of July 1986",
+      "confidence": "high",
+      "note": "Handwritten date in black ink on blue background."
+    },
+    {
+      "location": "Right center next to top right photo",
+      "text_as_seen": "Chip Chip Chip",
+      "confidence": "high",
+      "note": "Repeated word in black ink."
+    },
+    {
+      "location": "Bottom left below center photo",
+      "text_as_seen": "I am so lucky to have you in my life",
+      "confidence": "high",
+      "note": "Handwritten message in black ink on blue background."
+    },
+    {
+      "location": "Bottom right below bottom photo",
+      "text_as_seen": "Love,",
+      "confidence": "high",
+      "note": "Handwritten closing in black ink on blue background."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Center photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting one person's face."
+    },
+    {
+      "location": "Bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Multiple black boxes redacting faces and parts of heads of several people."
+    },
+    {
+      "location": "Bottom right below bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting text following 'Love,'."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Top left",
+      "description": "Person standing indoors talking on a phone.",
+      "confidence": "high"
+    },
+    {
+      "location": "Top center",
+      "description": "Person seated at a table with food, scenery visible through large windows.",
+      "confidence": "high"
+    },
+    {
+      "location": "Top right",
+      "description": "Person sitting indoors wearing a white robe.",
+      "confidence": "high"
+    },
+    {
+      "location": "Center",
+      "description": "Two people sitting inside an airplane interior, one face redacted.",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom",
+      "description": "Group of people sitting on a couch, multiple faces redacted with black boxes.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "4th of July 1986"
+  ],
+  "confidence": "high"
+}

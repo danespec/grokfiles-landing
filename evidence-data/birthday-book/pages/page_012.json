@@ -1,0 +1,127 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 12,
+  "page_id": "page_012",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_012.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_012.ocr.txt",
+  "image_metadata": {
+    "bytes": 11044689,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "4379b20a99cd7117c9c77666d02d56004eb5ea27040cd6d72b7f13c219155ada"
+  },
+  "ocr_text": "ae ‘ie ° ;\nte 4 i o |\nag Mode |\n3 pia |\noe ; , i\na ai ‘\nnt ee , *\n| ERENT ee wo\n| Fee BLS Ls |\n| 22 Ape ae hy |\nj ba 5 7. DAN 2 “v \\ if 7A 4 / » ‘ 2 Pe A iJ 7 a q\n\nBo) 21 5s Tear aes yi ag Vif Oy ot\n\nee cas, peta aS ey — — > ; H\n\n= i : tN] / c pee wef’\n\nBil £)) ae: wt oo SN Me Uae Aes | Xx whi!\n\n=. sgh. \\ Janae eS ee\n\nHOUSE_OVERSIGHT_000012\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two color photographs of amusement park rides. The top photo shows a tall structure resembling a parachute jump tower against a blue sky and buildings in the background. The lower photo shows a large Ferris wheel with the text 'WONDER WHEEL' prominently displayed in orange letters near the center. There is handwritten text in black ink on the page: 'Ya op fran Brooklyn' on the left side near the top, and 'to ....' near the bottom right side.",
+    "Layout: handwritten text top left",
+    "Layout: photo top right",
+    "Layout: photo bottom left",
+    "Layout: handwritten text bottom right",
+    "Photo/image candidate at top right: Color photo of a tall amusement park tower structure with buildings and a boardwalk in the background, under a partly cloudy blue sky.",
+    "Photo/image candidate at bottom left: Color photo of a Ferris wheel with multiple passenger cabins and the text 'WONDER WHEEL' in orange letters near the center, against a blue sky with a few clouds."
+  ],
+  "observations": [
+    "The page contains two color photographs of amusement park rides. The top photo shows a tall structure resembling a parachute jump tower against a blue sky and buildings in the background. The lower photo shows a large Ferris wheel with the text 'WONDER WHEEL' prominently displayed in orange letters near the center. There is handwritten text in black ink on the page: 'Ya op fran Brooklyn' on the left side near the top, and 'to ....' near the bottom right side.",
+    "Layout: handwritten text top left",
+    "Layout: photo top right",
+    "Layout: photo bottom left",
+    "Layout: handwritten text bottom right",
+    "Photo/image candidate at top right: Color photo of a tall amusement park tower structure with buildings and a boardwalk in the background, under a partly cloudy blue sky.",
+    "Photo/image candidate at bottom left: Color photo of a Ferris wheel with multiple passenger cabins and the text 'WONDER WHEEL' in orange letters near the center, against a blue sky with a few clouds."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Ya op fran Brooklyn",
+    "to ....",
+    "WONDER WHEEL"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top left",
+      "text_as_seen": "Ya op fran Brooklyn",
+      "confidence": "medium",
+      "note": "Handwritten cursive; some uncertainty in text interpretation."
+    },
+    {
+      "location": "bottom right",
+      "text_as_seen": "to ....",
+      "confidence": "high",
+      "note": "Handwritten cursive with four dots following 'to'."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:03:47.290Z",
+    "response_id": "resp_02e80334fb400d9d006a5028cb64948197ba5583c10b64c325",
+    "raw_output_sha256": "574cb1cc06d0e4276e815252581ef12f51784f16018a3ed74b901de5b7ff6aee"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_02e80334fb400d9d006a5028cb64948197ba5583c10b64c325",
+    "enriched_at": "2026-07-09T23:03:47.290Z"
+  },
+  "visual_summary": "The page contains two color photographs of amusement park rides. The top photo shows a tall structure resembling a parachute jump tower against a blue sky and buildings in the background. The lower photo shows a large Ferris wheel with the text 'WONDER WHEEL' prominently displayed in orange letters near the center. There is handwritten text in black ink on the page: 'Ya op fran Brooklyn' on the left side near the top, and 'to ....' near the bottom right side.",
+  "layout": [
+    "handwritten text top left",
+    "photo top right",
+    "photo bottom left",
+    "handwritten text bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top left",
+      "text_as_seen": "Ya op fran Brooklyn",
+      "confidence": "medium",
+      "note": "Handwritten cursive; some uncertainty in text interpretation."
+    },
+    {
+      "location": "bottom right",
+      "text_as_seen": "to ....",
+      "confidence": "high",
+      "note": "Handwritten cursive with four dots following 'to'."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top right",
+      "description": "Color photo of a tall amusement park tower structure with buildings and a boardwalk in the background, under a partly cloudy blue sky.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left",
+      "description": "Color photo of a Ferris wheel with multiple passenger cabins and the text 'WONDER WHEEL' in orange letters near the center, against a blue sky with a few clouds.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

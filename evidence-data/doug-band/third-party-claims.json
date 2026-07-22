@@ -1,0 +1,635 @@
+{
+  "route": "/document-autopsies/doug-band-transcript",
+  "claims": [
+    {
+      "person": "Bill Clinton",
+      "claim": "Band said yes to communications regarding Epstein or Maxwell, tied to travel/staffing and no specific remembered conversations.",
+      "direct_knowledge_or_hearsay": "PARTICIPANT KNOWLEDGE / LATER RECOLLECTION",
+      "transcript_location": "p.114 lines 1-2; p.121 lines 1-8",
+      "independent_support": "CLINTON-STATEMENT-IMAGE for public Clinton office position",
+      "denial_or_contrary_evidence": "",
+      "status": "SELF_REPORTED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Hillary Clinton",
+      "claim": "Band did not think he communicated with her about Epstein or Maxwell, while not ruling out possibility.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.114 lines 3-15",
+      "independent_support": "HOC-CLINTON-DEPOSITION-VIDEOS page confirms separate deposition release",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Cheryl Mills",
+      "claim": "Band said he spoke with Mills about appearing and counsel selection, and did not recall earlier substantive Epstein/Maxwell discussions.",
+      "direct_knowledge_or_hearsay": "PARTICIPANT KNOWLEDGE",
+      "transcript_location": "p.95 lines 22-24; p.96 lines 1-18; p.121 lines 10-20",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "SELF_REPORTED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Huma Abedin",
+      "claim": "Band did not recall specific conversations but said they were possible.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 1-4",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Richard Kahn",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.114 lines 17-18",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Darren Indyke",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.114 lines 19-20",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Sarah Kellen",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.114 lines 21-22",
+      "independent_support": "HOC-SEVEN-TI-REQUESTS identifies Kellen request context",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Noam Chomsky",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 5-6",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Lesley Groff",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 7-8",
+      "independent_support": "HOC-GROFF-TRANSCRIPT acquired",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "[redacted/inaudible name]",
+      "claim": "Transcript contains a blank/inaudible list item followed by a no answer.",
+      "direct_knowledge_or_hearsay": "UNKNOWN BASIS",
+      "transcript_location": "p.115 lines 9-10",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "Identity not reconstructed.",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Jean-Luc Brunel",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 11-12",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Alan Dershowitz",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 13-14",
+      "independent_support": "Birthday Book local records mention Dershowitz but are not used for Band claim support.",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Reid Hoffman",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 15-16",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Karyna Shuliak",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 17-18",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Woody Allen",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 19-20",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Sandy Berger",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 21-22",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Jes Staley",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 lines 23-24",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Paul Morris",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.115 line 25; p.116 line 1",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Justin Nelson",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 2-3",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Elie de Rothschild",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 4-5",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Ariane de Rothschild",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 6-7",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Lynn Forester de Rothschild",
+      "claim": "Band did not recall conversations but said they were possible given proximity and Clinton friendship.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 8-10; p.122 lines 2-10",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Glenn Dubin",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 13-14",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Eva Andersson-Dubin",
+      "claim": "Band answered no, then generally preserved possibility for some names.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 15-21",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Casey Wasserman",
+      "claim": "Band later clarified possible contact because Wasserman traveled and supported Clinton work, but no specific remembered conversations.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 line 17; p.123 lines 6-15",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Frederic Fekkai",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 lines 23-24",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Larry Visoski",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.116 line 25; p.117 lines 1-2",
+      "independent_support": "DOJ-FLIGHT-LOG acquired for flight-log context",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "David Rodgers",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.117 lines 3-7",
+      "independent_support": "DOJ-FLIGHT-LOG acquired for flight-log context",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Ira Magaziner",
+      "claim": "Band did not recall conversations but said possible due Clinton Foundation work and emails seen in preparation.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.117 lines 8-10; p.122 lines 11-21",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Daniel Gilbert",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.117 lines 11-12",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Karen Ewing",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.117 lines 13-14",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Stacey Plaskett",
+      "claim": "After inaudible clarification, Band answered no.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.117 lines 15-23",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Steve Bannon",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.117 line 25; p.118 line 1",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "David Gergen",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 2-3",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Louis Freeh",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 4-5",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Robert Rubin",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 6-7",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Larry Summers",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 8-9",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Pete Rathgeb",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 10-11",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "John Podesta",
+      "claim": "Band answered no, not that he recalled, but possible due longtime relationship.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 12-14; p.122 lines 22-25; p.123 lines 1-5",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Andrew Friendly",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 15-16",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Kathryn Ruemmler",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 17-18",
+      "independent_support": "HOC-RUEMMLER-TI-REQUEST acquired; public transcript not located",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Mark Middleton",
+      "claim": "Band did not know him beyond a vague name recollection and answered no in the final list.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.100 lines 3-21; p.118 lines 19-20",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Bill Richardson",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 21-22",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "George Mitchell",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 lines 23-24",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Leslie Wexner",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.118 line 25; p.119 line 1",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Bill Gates",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 2-3",
+      "independent_support": "HOC-GATES-TRANSCRIPT acquired",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Leon Black",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 4-5",
+      "independent_support": "HOC-LEON-BLACK-TRANSCRIPT acquired; Leon autopsy linked",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "David Copperfield",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 6-7",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "David Blaine",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 8-9",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Ehud Barak",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 10-11",
+      "independent_support": "Barak methodology pages linked for presence-only cautions",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Tony Blair",
+      "claim": "Band answered no, then clarified no specific memory but possible.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 12-13; p.120 lines 24-25; p.121 line 1",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Andrew Mountbatten-Windsor",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 14-15",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Peter Mandelson",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 16-17",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Mohammed bin Salman",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 18-19",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Sultan Ahmed bin Sulayem",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 20-21",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Abigail Johnson",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 22-23",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Jeff Bezos",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.119 lines 24-25",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Larry Page",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.120 lines 1-2",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Sergey Brin",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.120 lines 3-4",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Eric Schmidt",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.120 lines 5-6",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Ron Baron",
+      "claim": "Band answered no to communication regarding Epstein or Maxwell.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.120 lines 7-8",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "CONFIRMED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Tascha Alvarez",
+      "claim": "Band said Alvarez was staff and possible conversations occurred, with no specific memory.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.120 lines 9-11",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    },
+    {
+      "person": "Other Clinton staff/Foundation staff",
+      "claim": "Band said possible communications due travel and support work, without specific memory.",
+      "direct_knowledge_or_hearsay": "LATER RECOLLECTION",
+      "transcript_location": "p.120 lines 12-23",
+      "independent_support": "",
+      "denial_or_contrary_evidence": "",
+      "status": "UNRESOLVED",
+      "source": "HOC-BAND-TRANSCRIPT"
+    }
+  ]
+}

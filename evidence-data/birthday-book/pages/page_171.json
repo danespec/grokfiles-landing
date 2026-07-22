@@ -1,0 +1,153 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 171,
+  "page_id": "page_171",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_171.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_171.ocr.txt",
+  "image_metadata": {
+    "bytes": 134400,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ff0386d2bb96e85506377a3f7efa1780f9706fd1fa037dbdea0ead5398260de3"
+  },
+  "ocr_text": "greg got -os\nbean Spy\n\neet Be ge\nvr > oe\n\n2\n\nplot?\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note dated January 20th, 2003, addressed to someone named Jeffrey. The note expresses an intention to get Jeffrey what he wants and includes a simple hand-drawn sketch resembling a breast with a nipple. The note concludes with a birthday wish and a signature-like text.",
+    "Layout: Date in top right corner",
+    "Layout: Handwritten note central area",
+    "Layout: Hand-drawn sketch below note",
+    "Layout: Signature-like text at bottom right",
+    "Drawing candidate at center below main text: A simple hand-drawn outline of a breast with a nipple."
+  ],
+  "observations": [
+    "A handwritten note dated January 20th, 2003, addressed to someone named Jeffrey. The note expresses an intention to get Jeffrey what he wants and includes a simple hand-drawn sketch resembling a breast with a nipple. The note concludes with a birthday wish and a signature-like text.",
+    "Layout: Date in top right corner",
+    "Layout: Handwritten note central area",
+    "Layout: Hand-drawn sketch below note",
+    "Layout: Signature-like text at bottom right",
+    "Drawing candidate at center below main text: A simple hand-drawn outline of a breast with a nipple."
+  ],
+  "dates": [
+    "January 20th - 03"
+  ],
+  "document_strings": [
+    "Dear Jeffrey -",
+    "I wanted to get you what you want -- so here it is ....",
+    "Happy Birthday your friend",
+    "Lesli"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Lesli",
+      "confidence": "high",
+      "note": "Signature-like text possibly indicating a name, but not verified as identity."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top right",
+      "text_as_seen": "January 20th - 03",
+      "confidence": "high",
+      "note": "Date written in cursive handwriting."
+    },
+    {
+      "location": "upper center to middle",
+      "text_as_seen": "Dear Jeffrey - I wanted to get you what you want -- so here it is ....",
+      "confidence": "high",
+      "note": "Handwritten note in cursive."
+    },
+    {
+      "location": "bottom right",
+      "text_as_seen": "Happy Birthday your friend Lesli",
+      "confidence": "high",
+      "note": "Handwritten birthday wish and signature-like text."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:29:31.158Z",
+    "response_id": "resp_06a85751e11938dd006a502ed5ac188194a69e419e721b1c95",
+    "raw_output_sha256": "8f805fd070092d155201769a89b3e74d471616ce30c68e59ed769ff3a136ef41"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_06a85751e11938dd006a502ed5ac188194a69e419e721b1c95",
+    "enriched_at": "2026-07-09T23:29:31.158Z"
+  },
+  "visual_summary": "A handwritten note dated January 20th, 2003, addressed to someone named Jeffrey. The note expresses an intention to get Jeffrey what he wants and includes a simple hand-drawn sketch resembling a breast with a nipple. The note concludes with a birthday wish and a signature-like text.",
+  "layout": [
+    "Date in top right corner",
+    "Handwritten note central area",
+    "Hand-drawn sketch below note",
+    "Signature-like text at bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top right",
+      "text_as_seen": "January 20th - 03",
+      "confidence": "high",
+      "note": "Date written in cursive handwriting."
+    },
+    {
+      "location": "upper center to middle",
+      "text_as_seen": "Dear Jeffrey - I wanted to get you what you want -- so here it is ....",
+      "confidence": "high",
+      "note": "Handwritten note in cursive."
+    },
+    {
+      "location": "bottom right",
+      "text_as_seen": "Happy Birthday your friend Lesli",
+      "confidence": "high",
+      "note": "Handwritten birthday wish and signature-like text."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Lesli",
+      "confidence": "high",
+      "note": "Signature-like text possibly indicating a name, but not verified as identity."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center below main text",
+      "description": "A simple hand-drawn outline of a breast with a nipple.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "January 20th - 03"
+  ],
+  "confidence": "high"
+}

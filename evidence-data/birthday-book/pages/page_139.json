@@ -1,0 +1,132 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 139,
+  "page_id": "page_139",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_139.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_139.ocr.txt",
+  "image_metadata": {
+    "bytes": 5911328,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "fcca838237950b2ebb2d4d8c0553f260a5799618d017341e72e4544738bc44a1"
+  },
+  "ocr_text": "ee —_ You Ait Soue\nJ \" G&S\n/h Mer tr Akg / trols\n{\n) Sax is\nHOUSE_OVERSIGHT_000139\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page with a handwritten message at the top and a color photo below it. The photo shows three people near a table set with placemats and glassware. One person's face is obscured by a black square, and another person's face is scribbled over in blue and white. The background features a stone wall and white doors.",
+    "Layout: handwritten text at top center",
+    "Layout: photo at bottom center",
+    "Photo/image candidate at bottom center: Color photo of three people standing or sitting around a table set with green placemats and various small items. Background includes white doors, a stone wall, and some wall-mounted light fixtures."
+  ],
+  "observations": [
+    "Page with a handwritten message at the top and a color photo below it. The photo shows three people near a table set with placemats and glassware. One person's face is obscured by a black square, and another person's face is scribbled over in blue and white. The background features a stone wall and white doors.",
+    "Layout: handwritten text at top center",
+    "Layout: photo at bottom center",
+    "Photo/image candidate at bottom center: Color photo of three people standing or sitting around a table set with green placemats and various small items. Background includes white doors, a stone wall, and some wall-mounted light fixtures."
+  ],
+  "dates": [],
+  "document_strings": [
+    "ee —_ You Ait Soue",
+    "J \" G&S",
+    "/h Mer tr Akg / trols",
+    "{",
+    ") Sax is",
+    "HOUSE_OVERSIGHT_000139"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Leaving you with some \"interesting\" friends to entertain instead....",
+      "confidence": "high",
+      "note": "Handwritten message in cursive style"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "center of photo over one person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black square obscuring face"
+    },
+    {
+      "location": "right of center in photo over one person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Blue and white scribbles obscuring face"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:24:54.224Z",
+    "response_id": "resp_0e009394e537db5b006a502dc0f2208197b08f262485c18b1c",
+    "raw_output_sha256": "b003dfcd2546effebc26511a359309c8e295e7b91411af9e5c2ea7cc23d0f9f9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e009394e537db5b006a502dc0f2208197b08f262485c18b1c",
+    "enriched_at": "2026-07-09T23:24:54.224Z"
+  },
+  "visual_summary": "Page with a handwritten message at the top and a color photo below it. The photo shows three people near a table set with placemats and glassware. One person's face is obscured by a black square, and another person's face is scribbled over in blue and white. The background features a stone wall and white doors.",
+  "layout": [
+    "handwritten text at top center",
+    "photo at bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Leaving you with some \"interesting\" friends to entertain instead....",
+      "confidence": "high",
+      "note": "Handwritten message in cursive style"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "center of photo over one person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black square obscuring face"
+    },
+    {
+      "location": "right of center in photo over one person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Blue and white scribbles obscuring face"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom center",
+      "description": "Color photo of three people standing or sitting around a table set with green placemats and various small items. Background includes white doors, a stone wall, and some wall-mounted light fixtures.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

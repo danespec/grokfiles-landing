@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/letter-to-congress.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 40e4fd583cd30e927da99ccf822abb1196408243e053034a314fdcbc08b05206
+Bytes: 272836
+Acquisition method: verified existing local capture

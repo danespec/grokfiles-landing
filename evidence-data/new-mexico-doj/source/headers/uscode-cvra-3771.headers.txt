@@ -1,0 +1,7 @@
+URL: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3771&num=0&edition=prelim
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: c7506a5abedc57349327a39ec4cd8f1711e720db5ac356f9d638b9244e4c0131
+Bytes: 185435
+Acquisition method: verified existing local capture

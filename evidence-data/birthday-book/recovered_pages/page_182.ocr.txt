@@ -1,0 +1,19 @@
+The mathematics of life
+Martin Nowak
+Epstein institute, Harvard University
+The primordial soup, here or elsewhere, generated a
+quasispecies of aperiodic macromolecules. Quasispecies
+live in sequence space, which is a collection of hyper-
+dimensional cubes. Each cube arises by ordering all __
+" : possible sequences of a certain length in such a way that
+nearest neighbors differ in only one position. The length of
+ifte genome determines the dimension of the cube. A very
+small gene, for example, lives in a 1000 dimensional cube.
+its sequence is 1 particular choice out of 10° possibilities.
+For comparison there are only 40° protons in our universe.
+Quasispecies live in
+s sequence space
+L= 4 dimensions .
+~ a
+Retroviruses: L=10000 Bacteria: L=1000000 Humans:1=3000000000
+HOUSE_OVERSIGHT_000182

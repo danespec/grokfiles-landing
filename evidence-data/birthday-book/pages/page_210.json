@@ -1,0 +1,125 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 210,
+  "page_id": "page_210",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_210.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_210.ocr.txt",
+  "image_metadata": {
+    "bytes": 12315997,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "bc36ae8210d5c48929fe41fe1fa28f7b99c9bf9a8f217a47790b524cfd6939ee"
+  },
+  "ocr_text": ": «\n€ — = \\ Pee —\n= 3 ae - ss YZ |\né i\na roe ; is tj\nf cs 4 . — s = ot ” A x\nA a y . A ™\n~ ~ — a owe . ER 7\nail e : Bef \\ ie i\nPe. ¢ at aes ; me rs ¥ - ; \\ q\n' a f es\nen h enemas \\S rm\nf < M4 ; ie ‘ 2 5\n“ | ee Jaa\n, shy SS Aer P\nae | 2. gs\na ae 4 ay ux ; r aS 2a\ncar ta AN. ro at Poy\nReh Sete a pie\nSe he i\n-— 7 a* 8 - z bh >. oe\nie 5 7 i ae | Kos SF ate\n- ogg —————— og “i a EN\npeak ie ~~ on »\npe tek : | ¥ oo) tno, Sa\nTh Ae tr e., nom * . rr Cone\nfeng” las . ae Rta a) ad on\nog. ha me : a.\nro + i % sy “ ‘ a a\neee” =|” oe _ aR ee\nea Stns i Reo Cee a Seite Si Soy ) : } Z es he\nCes aOR : On oe as sf HER re\nPobe: ne oe é BA Ree Shae +e, So LR ee me\nos ee a (ee. ea\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains three color photographs on a white page with black background edges. Two of the photographs show groups of people with black boxes redacting faces, and one shows a seated older man relaxing on a wicker chair. The top photo shows three people standing outdoors in a courtyard with palm trees and a white building. The middle-right photo shows a man with silver hair in a wicker chair indoors near a large stone wall and an arched doorway. The bottom photo shows two people standing close together outdoors near a blue and white helicopter with another person standing near the helicopter.",
+    "Layout: Three photographs: top-left, middle-right, bottom-left",
+    "Photo/image candidate at top-left: Three people standing outdoors in a courtyard with palm trees and white building. Faces of two people obscured by black boxes.",
+    "Photo/image candidate at middle-right: Older man with silver hair seated in wicker chair indoors near stone wall and arched doorway.",
+    "Photo/image candidate at bottom-left: Two people standing close together near a blue and white helicopter in an outdoor rocky area. Faces of two people obscured by black box."
+  ],
+  "observations": [
+    "Page contains three color photographs on a white page with black background edges. Two of the photographs show groups of people with black boxes redacting faces, and one shows a seated older man relaxing on a wicker chair. The top photo shows three people standing outdoors in a courtyard with palm trees and a white building. The middle-right photo shows a man with silver hair in a wicker chair indoors near a large stone wall and an arched doorway. The bottom photo shows two people standing close together outdoors near a blue and white helicopter with another person standing near the helicopter.",
+    "Layout: Three photographs: top-left, middle-right, bottom-left",
+    "Photo/image candidate at top-left: Three people standing outdoors in a courtyard with palm trees and white building. Faces of two people obscured by black boxes.",
+    "Photo/image candidate at middle-right: Older man with silver hair seated in wicker chair indoors near stone wall and arched doorway.",
+    "Photo/image candidate at bottom-left: Two people standing close together near a blue and white helicopter in an outdoor rocky area. Faces of two people obscured by black box."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000210"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top-left photograph on faces of two people",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes obscuring faces"
+    },
+    {
+      "location": "bottom-left photograph on faces of two people",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscuring faces"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "No visible text captions or labels describing the photographs."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:36:02.520Z",
+    "response_id": "resp_0cee92eb53db118b006a50305b926081909b78f7f19c52a4f7",
+    "raw_output_sha256": "fc3f0542e956bb8e6baf4c7a913ff01a34e90f96baa18de2da8b2b8e4f7c7730"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0cee92eb53db118b006a50305b926081909b78f7f19c52a4f7",
+    "enriched_at": "2026-07-09T23:36:02.520Z"
+  },
+  "visual_summary": "Page contains three color photographs on a white page with black background edges. Two of the photographs show groups of people with black boxes redacting faces, and one shows a seated older man relaxing on a wicker chair. The top photo shows three people standing outdoors in a courtyard with palm trees and a white building. The middle-right photo shows a man with silver hair in a wicker chair indoors near a large stone wall and an arched doorway. The bottom photo shows two people standing close together outdoors near a blue and white helicopter with another person standing near the helicopter.",
+  "layout": [
+    "Three photographs: top-left, middle-right, bottom-left"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top-left photograph on faces of two people",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes obscuring faces"
+    },
+    {
+      "location": "bottom-left photograph on faces of two people",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscuring faces"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top-left",
+      "description": "Three people standing outdoors in a courtyard with palm trees and white building. Faces of two people obscured by black boxes.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle-right",
+      "description": "Older man with silver hair seated in wicker chair indoors near stone wall and arched doorway.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-left",
+      "description": "Two people standing close together near a blue and white helicopter in an outdoor rocky area. Faces of two people obscured by black box.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,107 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 109,
+  "page_id": "page_109",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_109.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_109.ocr.txt",
+  "image_metadata": {
+    "bytes": 201202,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "86b0981dcc26fc191c91b7268e6bfb9cab80bd5a137bf511d352acc43f8e3d82"
+  },
+  "ocr_text": "OMe chi | wae [\n4 Ce VVC VCV Scab SEET\"\niif a |\n( Venthy ne ?\neasiness ees ——_ . |\nO a t + YK OJ (G ic i\n\\ me O ( i. i pty €\ngy UN © | |\nS ry |. LAS ; } /y ~f. / _ L |\n| | — Was ren\nVe we dpi voy yang |\n~ = 7, A ON + ne. . eal :\nHOUSE_OVERSIGHT_000109\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page filled with handwritten text in a child's handwriting featuring a story titled 'Uncle Marks poppy'. The text is unevenly spaced and sized. There are no images or drawings, just text written in pencil. The page number '109' and the document ID 'HOUSE_OVERSIGHT_000109' are visible at the bottom of the page.",
+    "Layout: handwritten text across the page",
+    "Layout: header with three words inside a rectangular box at the top"
+  ],
+  "observations": [
+    "A page filled with handwritten text in a child's handwriting featuring a story titled 'Uncle Marks poppy'. The text is unevenly spaced and sized. There are no images or drawings, just text written in pencil. The page number '109' and the document ID 'HOUSE_OVERSIGHT_000109' are visible at the bottom of the page.",
+    "Layout: handwritten text across the page",
+    "Layout: header with three words inside a rectangular box at the top"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Uncle Marks poppy",
+    "one day uncle F desided to go poppy He hod never Seen popy in his life, eventhou he is 50 he has never seen it \"nararakar\" Why are you here? said uncel F get on with the story Ok So as I was saying he was going for the tolet",
+    "HOUSE_OVERSIGHT_000109"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center inside rectangular box",
+      "text_as_seen": "Uncle Marks poppy",
+      "confidence": "high",
+      "note": "Title or heading written with spacing between words"
+    },
+    {
+      "location": "below header box, large writing spanning most of the page",
+      "text_as_seen": "one day uncle F desided to go poppy He hod never Seen popy in his life, eventhou he is 50 he has never seen it \"nararakar\" Why are you here? said uncel F get on with the story Ok So as I was saying he was going for the tolet",
+      "confidence": "medium",
+      "note": "Handwriting is child-like, some spelling errors and irregular letter formation"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Text is somewhat scattered with irregular spacing making some phrases difficult to interpret fully"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:20:38.820Z",
+    "response_id": "resp_0d6a5d47d4f05585006a502cbdd77c81959552aae7f8954580",
+    "raw_output_sha256": "63ff08fbcef47fe2d0c77faa353f0e18c1aa990abdd48e226231fee9464391a5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d6a5d47d4f05585006a502cbdd77c81959552aae7f8954580",
+    "enriched_at": "2026-07-09T23:20:38.820Z"
+  },
+  "visual_summary": "A page filled with handwritten text in a child's handwriting featuring a story titled 'Uncle Marks poppy'. The text is unevenly spaced and sized. There are no images or drawings, just text written in pencil. The page number '109' and the document ID 'HOUSE_OVERSIGHT_000109' are visible at the bottom of the page.",
+  "layout": [
+    "handwritten text across the page",
+    "header with three words inside a rectangular box at the top"
+  ],
+  "handwriting": [
+    {
+      "location": "top center inside rectangular box",
+      "text_as_seen": "Uncle Marks poppy",
+      "confidence": "high",
+      "note": "Title or heading written with spacing between words"
+    },
+    {
+      "location": "below header box, large writing spanning most of the page",
+      "text_as_seen": "one day uncle F desided to go poppy He hod never Seen popy in his life, eventhou he is 50 he has never seen it \"nararakar\" Why are you here? said uncel F get on with the story Ok So as I was saying he was going for the tolet",
+      "confidence": "medium",
+      "note": "Handwriting is child-like, some spelling errors and irregular letter formation"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

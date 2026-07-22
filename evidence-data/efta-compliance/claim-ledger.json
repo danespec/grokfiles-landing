@@ -1,0 +1,341 @@
+{
+  "claims": [
+    {
+      "id": "ordered-row-01",
+      "published_claim": "EFTA00749245",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-02",
+      "published_claim": "EFTA01187999",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-03",
+      "published_claim": "EFTA01930501",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-04",
+      "published_claim": "ETFA01928255",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-05",
+      "published_claim": "EFTA00628112",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-06",
+      "published_claim": "EFTA02648868",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-07",
+      "published_claim": "EFTA02504630",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-08",
+      "published_claim": "EFTA01022356",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-09",
+      "published_claim": "EFTA01703108",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-10",
+      "published_claim": "EFTA00038227",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-11",
+      "published_claim": "EFTA01245620",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-12",
+      "published_claim": "EFTA02858481",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-13",
+      "published_claim": "EFTA02858491",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ordered-row-14",
+      "published_claim": "EFTA02858495",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-01",
+      "published_claim": "Order entered",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-02",
+      "published_claim": "Eight email sender/recipient rows",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-03",
+      "published_claim": "Two potential co-conspirator-document rows",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-04",
+      "published_claim": "Four underlying FBI interview-note rows",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-05",
+      "published_claim": "Foreign-language materials review and production notice",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-06",
+      "published_claim": "Federal Register redaction log",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_19",
+        "phang_ecf_20"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-07",
+      "published_claim": "Plaintiff enforcement motion",
+      "source_ids": [
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deadline-row-08",
+      "published_claim": "Later non-party filing",
+      "source_ids": [
+        "phang_ecf_21",
+        "phang_ecf_21_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "claim-separation-01",
+      "published_claim": "Court finding",
+      "source_ids": [
+        "phang_ecf_16"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "claim-separation-02",
+      "published_claim": "Plaintiff claim",
+      "source_ids": [
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "claim-separation-03",
+      "published_claim": "DOJ position",
+      "source_ids": [
+        "phang_ecf_19"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "claim-separation-04",
+      "published_claim": "Maxwell allegation",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "claim-separation-05",
+      "published_claim": "Established record",
+      "source_ids": [
+        "phang_ecf_15",
+        "phang_ecf_16",
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1",
+        "phang_ecf_21",
+        "phang_ecf_21_1",
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "claim-separation-06",
+      "published_claim": "Unresolved",
+      "source_ids": [
+        "phang_ecf_19",
+        "phang_ecf_20",
+        "phang_ecf_20_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "maxwell-matrix-01",
+      "published_claim": "The non-prosecution agreement barred or undermined the later prosecution.",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "maxwell-matrix-02",
+      "published_claim": "New EFTA material shows government failure tied to the NPA history.",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "maxwell-matrix-03",
+      "published_claim": "Victims, victim lawyers, or prosecution conduct undermined the conviction.",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "maxwell-matrix-04",
+      "published_claim": "Government Exhibit 52 and contact-book evidence warrant post-conviction relief.",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "maxwell-matrix-05",
+      "published_claim": "Delay or lost/destroyed/missing records caused prejudice.",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "maxwell-matrix-06",
+      "published_claim": "Financial evidence, sentencing, or miscellaneous new materials warrant relief.",
+      "source_ids": [
+        "maxwell_ecf_863"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "total_claims": 34,
+    "claims_with_primary_sources": 34,
+    "orphan_claims": 0
+  }
+}

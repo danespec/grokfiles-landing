@@ -1,0 +1,7 @@
+URL: https://www.nmlegis.gov/Committee/Interim_Committee?CommitteeCode=HISC
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: e6ea7da1921f4f8c74bc7334a8b1820b417d4341b35b04a66a3ad4ea77b33762
+Bytes: 52899
+Acquisition method: verified existing local capture

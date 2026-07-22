@@ -1,0 +1,714 @@
+UNITED STATES DISTRICT COURT 
+SOUTHERN DISTRICT OF NEW YORK 
+ 
+ 
+UNITED STATES OF AMERICA, 
+ 
+-v-  
+ 
+GHISLAINE MAXWELL, 
+ 
+Defendant. 
+ 
+ 
+ 
+20 Cr. 330 (PAE) 
+ 
+OPINION & ORDER 
+ 
+ 
+PAUL A. ENGELMAYER, District Judge:  
+ This decision resolves a motion pursuant to the Epstein Files Transparency Act (the 
+“Act”), H.R. 4405, signed into law on November 19, 2025.  The Department of Justice (“DOJ”) 
+moves for an order that would enable it to publicly release two categories of records from this 
+case that it contends are within the scope of the Act.   
+First, DOJ asks the Court to rule that the Act covers the grand jury transcripts and 
+exhibits in this case (the “grand jury materials”) and, as to these, overrides Federal Rule of 
+Criminal Procedure 6(e).  That ruling would authorize DOJ to publicly release the grand jury 
+materials pursuant to the Act.  Second, DOJ asks the Court to rule that the Act covers the 
+extensive discovery the prosecution provided to counsel for defendant Ghislaine Maxwell in 
+connection with her 2021 trial (the “discovery materials”) and to modify the protective order that 
+governs such discovery.  That modification would permit DOJ to publicly release the discovery 
+materials pursuant to the Act.  Consistent with a provision of the Act, DOJ has pledged—with 
+respect to both categories of materials—to withhol d or redact segregable portions that contain 
+personally identifiable and other victim-related information.  
+For the following reasons, the Court grants DOJ’s motion.  In modifying the protective 
+order, the Court, consistent with the Act, puts in place a mechanism to protect victims from the 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 1 of 242 
+ 
+inadvertent release of materials within the discovery in this case that would identify them or 
+otherwise invade their privacy. 
+I. Background 
+ 
+A. Maxwell’s Indictment, Trial, Sentencing, and Appeal 
+The history of this case spanning indictment through direct appeal is set out in the Court’s 
+August 11, 2025 decision denying DOJ’s motion to release grand jury transcripts and exhibits.  
+See United States v. Maxwell, 794 F. Supp. 3d 215, 216–19 (S.D.N.Y . 2025) (“GJ Decision”).  In 
+brief: 
+On June 29, 2020, a grand jury indicted Maxwell on charges arising from her facilitation 
+of and participation in a scheme by the notorious pedophile Jeffrey Epstein to abuse multiple 
+minor girls.  On March 29, 2021, a different grand jury returned a superseding indictment that 
+added related charges.   
+Maxwell’s jury trial commenced on November 29, 2021.  It entailed testimony from four 
+women who described the sexual abuse they had suffered, as girls, at the hands of Epstein and 
+Maxwell; testimony of individuals who had worked for Epstein and/or Maxwell; testimony of 
+law enforcement officials; and corroborating physical and documentary evidence, including 
+Epstein and Maxwell’s black address book, flight logs of Epstein’s private planes, and FedEx 
+records.  Trial ended on December 29, 2021 with Maxwell’s conviction on five felony counts: 
+conspiracy to entice minors to travel to engage in illegal sex acts; conspiracy to transport minors 
+with intent to engage in illegal sexual activity; transportation of a minor with intent to engage in 
+illegal sexual activity; participation in a sex-trafficking conspiracy; and the sex trafficking of a 
+minor.  
+On June 28, 2022, after resolving post-trial motions, the Honorable Alison J. Nathan, to 
+whom this case was then assigned, sentenced Maxwell to a term of 240 months’ imprisonment.   
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 2 of 243 
+ 
+Maxwell appealed.  On September 17, 2024, the United States Court of Appeals for the 
+Second Circuit affirmed Maxwell’s conviction.  United States v. Maxwell, 118 F.4th 256, 261 (2d 
+Cir. 2024).  On November 25, 2024, the Second Circuit denied Maxwell’s petition for rehearing.  
+United States v. Maxwell, No. 22-1426 (2d Cir. Nov. 25, 2024), Dkt. 120.  On October 6, 2025, 
+the Supreme Court denied Maxwell’s petition for certiorari.  Maxwell v. United States, No. 24-
+1073, 2025 WL 2823724 (U.S. Oct. 6, 2025). 
+B. DOJ’s First Motion to Unseal Grand Jury Materials 
+On July 18, 2025, DOJ moved to unseal the grand jury transcripts and exhibits in 
+Maxwell’s case.  Citing the “extensive public interest” in Epstein’s and Maxwell’s crimes, it 
+argued that unsealing these materials would serve the goal of “transparency to the American 
+public,” because the materials were “critical pieces of an important moment in our nation’s 
+history.”  GJ Decision, 794 F. Supp. 3d at 221, 225 (citation omitted).   
+The case was then reassigned to this judge.  Between July 29 and August 8, 2025, the 
+Court received submissions bearing on the motion.  These included the grand jury transcripts and 
+exhibits themselves, which the Court reviewed in camera; a DOJ letter identifying the limited 
+portions of the grand jury materials that were not already matters of public record; a brief from 
+Maxwell opposing unsealing; and letters from representatives of victims and other witnesses.  Id. 
+at 222. 
+On August 11, 2025, the Court denied the motion to unseal.  The Court held that the 
+narrow exceptions to Rule 6(e), which requires that grand jury proceedings generally remain 
+secret, did not apply.  Id. at 222–25.  And although the “special circumstances” doctrine 
+recognized in the Second Circuit gives a district court discretion in limited circumstances to 
+authorize the disclosure of grand jury materials of historical or public significance, see In re 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 3 of 244 
+ 
+Petition of Craig, 131 F.3d 99, 101–02 (2d Cir. 1997) (“Craig”), that exception, the Court held, 
+did not apply either, for two reasons.   
+First, contrary to DOJ’s depiction, the grand jury materials would not reveal new 
+information of any consequence.  GJ Decision, 794 F. Supp. 3d at 226 (DOJ’s “entire premise—
+that the Maxwell grand jury materials would bring to light meaningful new information about 
+Epstein’s and Maxwell’s crimes, or the Government’s investigation into them—is demonstrably 
+false.”).  On the contrary, the grand juries had met briefly, each receiving evidence on a single 
+day; they had not met to investigate, but solely to return an indictment; the only testimony they 
+had heard was summary testimony from two law enforcement officials; and, with minor 
+exceptions, the evidence before the grand juries was already a matter of public record, largely as 
+a result of Maxwell’s 2021 trial.  Id. at 226–27.  The premise of DOJ’s invocation of the special 
+circumstances doctrine—that the materials at issu e were of historical or public interest—was 
+thus false.  Id. at 227–28 (noting that the only arguable public interest served by disclosure 
+would be to “expose as disingenuous the Government’s public explanations for moving to 
+unseal”).   
+Second, even if the doctrine did apply, Craig’s multi-factor test weighed overwhelmingly 
+against disclosure.  Among the factors opposing disclosure: the grand jury materials were 
+quotidian, not significant; DOJ’s position in support of disclosure deserved limited weight, given 
+its false premise and irregularities with respect to the motion; DOJ did not seek tailored 
+disclosure but instead release of effectively the entire grand jury record; and the systemic interest 
+in grand jury secrecy would be harmed by the casual release of records in the unexceptional 
+circumstances here.  Id. at 229–34. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 4 of 245 
+ 
+DOJ did not appeal.1      
+II. DOJ’s Motion Based on the Epstein Files Transparency Act 
+A. The Act 
+On November 19, 2025, Congress nearly unanimously passed, and the President signed, 
+the Epstein Files Transparency Act.
+2   
+The Act’s operative section—Section 2, enti tled “Release of Documents Relating to 
+Jeffrey Epstein”—requires the Attorney General,  within 30 days of enactment and subject to 
+enumerated exceptions, to “make publicly available in a searchable and downloadable format all 
+unclassified records, documents, communications, and investigative materials in the possession 
+of [DOJ], including the Federal Bureau of Investigation and United States Attorneys’ Offices, 
+that relate to”: 
+(1) Jeffrey Epstein including all investig ations, prosecutions, or custodial 
+matters.  
+(2) Ghislaine Maxwell.  
+(3) Flight logs or travel records, including but not limited to manifests, itineraries, 
+pilot records, and customs or immig ration documentation, for any aircraft, 
+vessel, or vehicle owned, operated, or used by Jeffrey Epstein or any related 
+entity.  
+(4) Individuals, including government of ficials, named or  referenced in 
+connection with Epstein’s criminal activities, civil settlements, immunity or 
+plea agreements, or investigatory proceedings.  
+(5) Entities (corporate, nonpr ofit, academic, or governmental) with known or 
+alleged ties to Epstein’s trafficking or financial networks.  
+(6) Any immunity deals, non-prosecution agr eements, plea bargains, or sealed 
+settlements involving Epstein or his associates.  
+ 
+1 DOJ made a parallel motion to unseal the grand jury transcripts and exhibits in Epstein’s case.  
+On August 20, 2025, the Honorable Richard M. Berman denied that motion.  See United States v. 
+Epstein, 795 F. Supp. 3d 499, 502–03 (S.D.N.Y . 2025). 
+ 
+2 The Act passed the House by a vote of 427-1 and passed the Senate unanimously. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 5 of 246 
+ 
+(7) Internal DOJ communications, includi ng emails, memos, [and] meeting 
+notes, concerning decisions to charge, not  charge, investigate, or decline to 
+investigate Epstein or his associates.  
+(8) All communications, memoranda, directiv es, logs, or metadata concerning 
+the destruction, deletion, alteration, misplacement, or concealment of 
+documents, recordings, or el ectronic data related to Epstein, his associates, 
+his detention and death, or any investigative files.  
+(9) Documentation of Epstein’s detention or  death, including in cident reports, 
+witness interviews, medical examiner files, autopsy repo rts, and written 
+records detailing the circumstances and cause of death. 
+Act § 2(a).  Subsection 2(b), entitled “Prohibited Grounds for Withholding,” provides:  
+No record shall be withheld, delayed, or redacted on the basis of embarrassment, 
+reputational harm, or political sensitivity, including to any government official, 
+public figure, or foreign dignitary.   
+   
+Id. § 2(b)(1). 
+Subsection 2(c), titled “Permitted Withholdings,” identifies five categories of records as 
+to which the Attorney General “may withhold or redact the segregable portions.”  Id. § 2(c)(1).  
+The only one directly relevant to this motion is the first category.  It covers records that “contain 
+personally identifiable information of victims or victims’ personal and medical files and similar 
+files the disclosure of which would constitute a clearly unwarranted invasion of personal 
+privacy.”  Id. § 2(c)(1)(A).3  “All redactions must be accompanied by a written justification 
+published in the Federal Register and submitted to Congress.”  Id. § 2(c)(2).   
+Under Section 3, within 15 days of completing the public release of materials pursuant to 
+the Act, the Attorney General must submit to the House and Senate Committees on the Judiciary 
+a report listing: 
+ 
+3 The other four categories as to which the Attorney General is empowered to withhold or redact 
+records are those that (1) contain child sexual abuse materials; (2) would jeopardize active 
+federal investigations or prosecutions, provided such withholding is narrowly tailored and 
+temporary; (3) depict images of death, physical abuse, or injury of any person; or (4) contain 
+properly classified information.  Act § 2(c)(1)(B)–(E).  
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 6 of 247 
+ 
+(1)  All categories of reco rds released and withheld. 
+(2)  A summary of redactions  made, including legal basis. 
+(3)  A list of all government  officials and politically exposed persons named or 
+referenced in the released materials,  with no redactions permitted under 
+subsection (b)(1). 
+  Id. § 3(1)–(3). 
+B. The Present Motion 
+On November 24, 2025, DOJ moved for an expedited ruling authorizing it to (1) unseal 
+the grand jury transcripts and exhibits in Maxwell’s case, and (2) modify the protective order in 
+this case, to the extent that that order would otherwise prohibit DOJ from publicly disclosing 
+materials as required by the Act.  Dkt. 810 (“Mot.”) at 1.  As to the latter, DOJ’s motion cited the 
+protective order issued by Judge Nathan on July 30, 2020.  Id. at 3 (citing Dkt. 36).   
+DOJ stated that it interprets the Act to reach, and to require DOJ to publish, the grand 
+jury and discovery materials in this case, unless a statutory basis for withholding applies.  Id. 
+at 2.  As to such withholdings, DOJ stated that it would “make appropriate redactions of victim-
+related and other personal identifying information.”  Id. at 8.  DOJ did not indicate an intention 
+to withhold or redact materials on any other statutory basis.
+4  
+C. Ensuing Orders and Submissions 
+On November 24, 2025, upon receiving DOJ’s motion, the Court, mindful of the Act’s 
+30-day disclosure deadline, set an expedited schedule for responses by affected persons.  
+Dkt. 811.  The Court gave Maxwell until December 3, 2025 to respond.  It set the same deadline 
+ 
+4 DOJ filed a parallel motion in Epstein’s case.  See United States v. Epstein, No. 19 Cr. 490 
+(RMB) (S.D.N.Y . Nov. 24, 2025), Dkt. 85. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 7 of 248 
+ 
+for responses by victims and/or their representatives, and directed DOJ immediately to notify the 
+victims of its motion.  It gave DOJ until December 10, 2025 to file any response.  Id. at 2.5 
+On November 25, 2025, the Court issued a second order, seeking clarifications from 
+DOJ.  Dkt. 812.  The Court’s review of the docket had revealed that two protective orders had 
+issued in Maxwell’s case.  The first, issued July 30, 2020, shortly after Maxwell’s arraignment, 
+governed the discovery the prosecution would thereafter produce to the defense, pursuant to 
+Federal Rule of Criminal Procedure 16 and the prosecution’s other discovery obligations.  See 
+Dkt. 36 (“Protective Order”).  The second, issued November 24, 2021, five days before trial, 
+covered discovery produced to the defense and the Government pursuant to Federal Rule of 
+Criminal Procedure 17(c), which governs trial subpoenas.  See Dkt. 505 (“Rule 17(c) Protective 
+Order”).  To assure that the victims and Maxwell had fair notice of the materials covered by 
+DOJ’s motion, the Court directed DOJ to file a letter (1) stating whether it sought modification 
+of both protective orders or just one, and (2) enumerating the categories of materials covered by 
+each protective order that it sought to make public.  Dkt. 812 at 2.  The Court directed DOJ to 
+state whether these included—i n addition to materials produced pursuant to Rules 16 and 
+17(c)—materials produced pursuant to the Jencks Act, 18 U.S.C. § 3500 (i.e., witness 
+statements).  Id. 
+On November 26, 2025, DOJ responded.  Dkt. 813.  It stated that its motion covered both 
+protective orders and that the first subsumed the second; that the motion covered materials 
+produced pursuant to the Jencks Act as well as Rules 16 and 17(c); and that DOJ intended to 
+withhold victim information “to the fullest extent permitted by the Act.”  Id. at 1.   
+ 
+5 The Court later moved DOJ’s response deadline two days earlier—to December 8, 2025—to 
+align its briefing schedule with that in Epstein’s case.  Dkt. 814. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 8 of 249 
+ 
+As to the categories of materials to be publicly released subject to such withholding, DOJ 
+listed the following, based on its initial review: 
+ Judicial process obtained during the course of the investigations (e.g., search 
+warrants and related applications, pen register orders and related 
+applications); 
+ 
+ Financial records (e.g., bank records, credit checks and credit reports, credit 
+card records, money transmitter record s, brokerage or other investment 
+account records); 
+ 
+ Travel records (e.g., commercial airline records, private airline passenger 
+logs, online booking records, flight manifests); 
+ 
+ Grand jury subpoena returns from Internet service providers (e.g., Instagram, 
+Microsoft, Google, other email providers); 
+ 
+ Records obtained from various  government agencies ( e.g., New York State 
+Department of State, Bureau of Pris ons, U.S. Virgin Islands Division of 
+Corporations, NYPD computer checks, Delaware Division of Corporation 
+records, police reports from variou s law enforcement agencies, SORNA 
+records, FAA records); 
+ 
+ School records; 
+ 
+ Search warrant returns ( e.g., email, cloud, and other ISP searches; 
+photographs, scans, and copies of materials obtained during physical 
+searches; electronic search es of computers, telephones, and other electronic 
+devices); 
+ 
+ Materials produced by law firms, including firms representing victims; 
+ 
+ Arrest reports, booking records, post-arrest statements, and photographs 
+and/or copies of materials seized incident to arrest; 
+ 
+ Materials from related civil litigations ( e.g., recordings from depositions, 
+transcripts of depositions); 
+ 
+ Photographs and videos of rele vant properties and locations ( e.g., Epstein 
+properties, Maxwell residence, Interlochen); 
+ 
+ Immigration records
+ ; 
+ 
+ Records related to online purchases from various online retailers; 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 9 of 2410 
+ 
+ 
+ Materials obtained from the Palm Beach Police Department and the United 
+States Attorney’s Office for the Sout hern District of Florida, including 
+reports, photographs, and videos; 
+ 
+ Forensic examination reports related to electronic extrac tions of various 
+media; 
+ 
+ Copies of photographs and other materials vol untarily produced by third 
+parties, including victims; 
+ 
+ Postal and courier records (e.g., FedEx); 
+ 
+ Materials produced by the estate of Jeffrey Epstein; 
+ 
+ Driver’s licenses and DMV records; and 
+ 
+ Reports and notes of interviews of th ird parties and victims, and certain 
+communications relating to the same. 
+Id. at 2–3 (cleaned up). 
+On December 3, 2025, Maxwell, through counsel, responded.  Dkt. 815.  Her one-page 
+letter stated that she did not take a position on DOJ’s requests to unseal the grand jury materials 
+and modify the Protective Order pursuant to the Act.  Id. at 1. 
+On December 2, 2025, Annie Farmer, a victim who testified under her full name at 
+Maxwell’s trial, filed a letter through counsel.  Dkt. 816 (“Farmer Letter”).  Ms. Farmer’s letter 
+stated that she supports—subject to redactions for victims’ personal information—the unsealing 
+and release of grand jury and discovery materials in this case, as well as of investigative 
+materials held by DOJ outside the discovery in this case.  She expressed concern that DOJ might 
+not fully comply with the Act, and disappointment that, to date, DOJ has not taken action against 
+“other critical inner circle Epstein accomplices.”  Id. at 1–2.   
+On December 5, 2025, the Court docketed three additional letters that victims and others 
+had submitted to DOJ for transmittal to the Court.  Dkt. 818. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 10 of 2411 
+ 
+In the first letter, dated November 25, 2025, counsel for a consortium of victims of 
+Epstein and Maxwell faulted DOJ for having failed to redact victims’ names in documents DOJ 
+provided to the House of Representatives Oversight Committee and which that Committee later 
+published.  Id. at 4–10 (“Victim Consortium Letter”).  These victims asked the Court to assure 
+that DOJ adequately redact victims’ personal information in any materials that the Court 
+authorizes DOJ to release pursuant to the Act.  Id. at 10. 
+In the second letter, dated December 3, 2025, counsel for a victim’s family member 
+(“John Doe”)—who had been design ated to testify at Maxwell’s trial but ultimately did not do 
+so—asked that all personally identifiable inform ation regarding the family member be redacted 
+in any materials made public pursuant to the Act.  Id. at 11–12 (“John Doe Letter”).  Revelation 
+of the family member’s name, the letter stated, would tend to identify the victim.  Id. 
+In the third letter, dated December 3, 2025, Neil S. Binder, counsel for several non-party 
+individuals, opposed DOJ’s request to release grand jury and discovery materials under the Act.  
+Id. at 14–17 (“Binder Letter”).  The letter argued that the Act does not authorize the disclosure of 
+either set of records.  The letter separately asked the Court, were it to grant DOJ’s motion to 
+modify the Protective Order in this case, not to modify, sua sponte, a protective order governing 
+discovery in a separate civil action against Maxwell in this District.  Id. (citing Giuffre v. 
+Maxwell, No. 15 Civ. 7433 (LAP), 2023 WL 8715697 (S.D.N.Y. Dec. 18, 2023)). 
+On December 8, 2025, DOJ filed a response.  Dkt. 819.  DOJ stated that the consortium 
+of victims had unfairly accused it of releasing personally identifiable information about victims; 
+that information, DOJ stated, had earlier been publicly released.  Id. at 1 n.1, 3; Dkt. 819-1 at 1.  
+DOJ stated that it will nonetheless henceforth redact victim names even where earlier publicly 
+identified.  Dkt. 819 at 3.  DOJ stated that it is committed to respecting victims’ privacy, is 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 11 of 2412 
+ 
+collecting victim identities, and has put in place a mechanism for victims or their counsel to 
+contact DOJ.  Id. at 2–4 (“Any victims seeking redaction are able to reach the Department 
+directly (via USANYS.EpsteinMaxwellVictims@usdoj.gov).”).  
+III. Discussion 
+DOJ’s motion raises two questions.   
+First, does the Act reach the discovery materials covered by the Protective Order, and the 
+grand jury materials in this case?  And, as to the grand jury materials, does the Act override Rule 
+6(e)’s prohibition on disclosure?   
+Second, given the Court’s below holding that the Act covers such records, how should 
+the Protective Order be modified?  In particular, insofar as discovery in this case will be released 
+subject to the withholding of victim-related information as permitted by the Act, what 
+mechanism should the Protective Order include to assure that the privacy interests of victims are 
+protected?   
+A. Scope of the Act 
+1. Application to the Discovery Materials 
+The Protective Order in this case, issued by Judge Nathan on an application from the 
+Government, covers all “documents and materials” produced by the Government to Maxwell’s  
+counsel pursuant to Rule 16 and any other discovery obligations.  See Protective Order at 1 
+(defining such materials as the “Discovery”).  DOJ has clarified that the Protective Order also 
+covers discovery produced pursuant to the Jencks Act and Rule 17(c).  Dkt. 813 at 2 & n.3.
+6  In 
+other words, the Protective Order covers all discovery the prosecution made to the defense. 
+ 
+6 For this reason, the Government explains, the Protective Order subsumes the material covered 
+by the later Rule 17(c) Protective Order.  Dkt. 813 at 2 n.3.  This decision therefore solely refers 
+to the Protective Order. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 12 of 2413 
+ 
+The Protective Order mainly restricts the defense.  It prohibits Maxwell’s counsel from 
+disseminating or copying the discovery materials, subject to limited exceptions (e.g., for defense 
+experts).  Protective Order at 2–6.  But it also limits the Government’s dissemination of 
+discovery.  In the provisions relevant to the present motion, the Protective Order prohibits the 
+Government from “posting or causing to be posted any of the Discovery or information 
+contained in the Discovery on the Internet, including any social media website or other publicly 
+available medium,” and, except as required to discharge professional obligations in the case, 
+“from publicly disclosing or disseminating the identity of any victims or witnesses referenced in 
+the Discovery.”  Id. at 4–5.   
+The Act unambiguously applies to the discovery in this case.  It governs “all unclassified 
+records, documents, communications, and investigative materials in the possession of [DOJ], 
+including the Federal Bureau of Investigation and United States Attorneys’ Offices” related to 
+Maxwell, Epstein, and other enumerated subjects.  Act § 2(a) (emphasis added).  That broad 
+formulation embraces the voluminous discovery subject to the Protective Order in this case.  
+Such, by definition, was, and is, possessed by DOJ, and specifically by the United States 
+Attorney’s Office in this District (the “USAO”).7 
+The Court thus finds that modification of the Protective Order is necessary to enable DOJ 
+to carry out its legal obligations under the Act.  Such relief is authorized by the Protective Order, 
+which expressly provides for its modification by the Court.  See Protective Order at 11–12. 
+ 
+7 The Court, of course, cannot foreclose the possibility that the discovery furnished by the 
+Government to the defense in this case included extraneous items outside the scope of 
+Section 2(a) of the Act.  The Act would not require the Government to publicly release such 
+items. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 13 of 2414 
+ 
+  2. Application to Grand Jury Materials 
+  a. Scope of the Act 
+The Act does not explicitly refer to grand jury materials.  The Court nonetheless holds—
+again in agreement with DOJ—that the Act textually covers the grand jury materials in this case.  
+That is for three reasons.   
+First, the Act references Ghislaine Maxwell by name.  Act § 2(a)(2).  Indeed, in the 
+provision of the Act describing materials required to be publicly disclosed, one subsection is 
+devoted entirely to materials “that relate to . . . Ghislaine Maxwell.”  Id.; see Lamie v. U.S. Tr., 
+540 U.S. 526, 534 (2004) (collecting cases holding that “when the statute’s language is plain, the 
+sole function of the courts—at least where the di sposition required by the text is not absurd—is 
+to enforce it according to its terms” (citation omitted)). 
+Second, the Act covers “all unclassified records, documents, communications, and 
+investigative materials in the possession of [DOJ], including . . . United States Attorneys’ 
+Offices, that relate to . . . Maxwell,” as well as Epstein and other topics.  Id. § 2(a).  That 
+language is strikingly broad.  It thus applies to the grand jury materials in this case, which, like 
+the discovery subject to the Protective Order, are held by the USAO.  See United States v. 
+McCue, 301 F.2d 452, 455 (2d Cir. 1962) (“very broad language” of a statute indicated that the 
+statute’s mentions of specific examples were non-exhaustive).  
+Third, the Act does not exempt grand jury materials from disclosure, in contrast to its 
+exceptions permitting the withholding or redaction of five other categories of materials.  For 
+instance, it specifically exempted properly classified information from public release.  Act 
+§ 2(c)(1)(E).  Congress undeniably was aware—including from DOJ’s recent unsuccessful 
+motion to unseal the grand jury records—that the prosecution of Maxwell entailed grand jury 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 14 of 2415 
+ 
+materials held by the USAO.8  Its decision not to exclude grand jury materials despite knowledge 
+as to their existence, while expressly excluding other categories of materials (such as classified 
+information), indicates that the Act covers grand jury materials.  See Ruiz-Almanzar v. Ridge, 
+485 F.3d 193, 197 (2d Cir. 2007) (fact that Congress was “likely aware” of a category of 
+individuals but chose not to exclude them explicitly from a statute’s coverage suggested the 
+statute covered that category); Bd. of Trs. of Bakery Drivers Loc. 550 & Indus. Pension Fund v. 
+Pension Benefit Guar. Corp., 136 F.4th 26, 31 (2d Cir. 2025) (that one statutory provision did 
+not exclude certain items that were expressly excluded in other provisions supported that first 
+provision covered those items). 
+  b. Interplay with Rule 6(e) 
+A separate issue arises from the interplay between the Act and Rule 6(e).  The two 
+authorities squarely conflict: the Act, subject to permitted withholdings, mandates publication of 
+grand jury records, but Rule 6(e)—as this Court recently held—forbi ds such disclosure. 
+DOJ is correct that, as between the two, the Act controls.  As a general rule, “later 
+statutes receive precedence over earlier statutes and specific statutes receive precedence over 
+more general statutes.”  United States v. Mohammed, 27 F.3d 815, 820 (2d Cir. 1994).  Both 
+canons apply here with force.  The Act is specific, focused on evidence about Epstein and 
+Maxwell, where Rule 6(e) prescribes a general rule.  See, e.g., Busic v. United States, 446 
+ 
+8 The Act’s limited legislative history contains statements reflecting representatives’ awareness of 
+the existence of grand jury materials and their understanding that the Act could abrogate grand 
+jury secrecy.  See, e.g., 171 Cong. Rec. H4729 (daily ed. Nov. 18, 2025) (statement of Rep. Issa) 
+(urging amendment of the Act “so that it properly protects both the tradition of the grand jury 
+and . . . innocent people that would otherwise be swept up”); id. at H4731 (statement of Rep. 
+Johnson) (citing Judge Berman’s denial of DOJ’s request to release the Epstein grand jury 
+materials, and expressing concern that the Act, if not amended, “potentially jeopardizes grand 
+jury secrecy” in that it “raises a risk that the grand jury process will become politicized in the 
+future”).  
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 15 of 2416 
+ 
+U.S. 398, 406 (1980) (“a more specific statute will be given precedence over a more general 
+one”); Morton v. Mancari, 417 U.S. 535, 550–51 (1974) (absent “clear intention otherwise, a 
+specific statute will not be controlled or nullified by a general one”).  And the Act was passed 
+last month, whereas Rule 6(e) dates to 1946 with occasional amendments, the most 
+consequential in 1977.  See, e.g., In re Bernard L. Madoff Inv. Sec. LLC, 12 F.4th 171, 193 (2d 
+Cir. 2021) (holding later statute to govern over earlier statute because, “‘when the scope of the 
+earlier statute is broad but the subsequent statute more specifically addresses the topic at hand,’ 
+there is even greater reason to assume the later statute controls” (quoting Food & Drug Admin. v. 
+Brown & Williamson Tobacco Corp., 529 U.S. 120, 143 (2000)) (cleaned up)); Everytown for 
+Gun Safety Support Fund v. Bureau of Alcohol, Tobacco, Firearms & Explosives, 984 F.3d 30, 
+37 (2d Cir. 2020) (similar). 
+Furthermore, Section 2(b)(1) of the Act implicitly reflects Congress’s intent to overcome 
+grand jury secrecy.  A central purpose for the rule of secrecy, and one that continues to apply 
+after a grand jury’s investigation has concluded, is “to protect . . . unindicted individuals from the 
+anxiety and public castigation that may result from disclosure.”  In re Am. Hist. Ass’n, 62 F. 
+Supp. 2d 1100, 1103 (S.D.N.Y. 1999); see also Craig, 131 F.3d at 102 (grand jury secrecy 
+protects the “interests of other persons who may have been unfavorably mentioned by grand jury 
+witnesses or in questions of the prosecutor” (citation omitted)).  But Section 2(b)(1) of the Act 
+expressly provides that the reputational interests of unindicted persons—including public figures 
+who associated with Epstein and/or Maxwell—will not justify the withholding or redacting of 
+records required to be made public by the Act.  See Act § 2(b)(1) (“No record shall be withheld, 
+delayed, or redacted on the basis of embarrassment, reputational harm, or political sensitivity, 
+including to any governmental official, public figure, or foreign dignitary.”).  By repudiating that 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 16 of 2417 
+ 
+central purpose for grand jury secrecy, Congress signaled its expectation that the Act would 
+overcome grand jury secrecy.  See, e.g., Nat’l Ass’n of Home Builders v. Defs. of Wildlife, 551 
+U.S. 644, 664 n.8 (2007) (repeal can occur where new statute “displaces earlier, inconsistent 
+[statutory] commands”); Blanchette v. Conn. Gen. Ins. Corps., 419 U.S. 102, 134 (1974) (same 
+where “positive repugnancy” exists between earlier and later statutes “that cannot be 
+reconciled”).  This outcome accords with the limited case law resolving claims that a federal 
+statute has overridden Rule 6(e).9 
+The Court thus holds that, in passing the Act, Congress overrode Rule 6(e), in the very 
+limited context of the Maxwell and Epstein grand jury materials.  As to other grand juries, the 
+secrecy of testimony, exhibits, and any other materials remains the rule, subject to the limited 
+exceptions set out in Rule 6(e).  But, in the case of the Maxwell and Epstein grand juries, under 
+the Act, public disclosure of such materials is the rule, subject to the limited exceptions set out in 
+ 
+9 Illinois v. Abbott & Associates, Inc., the central case on whether a federal statute partly 
+abrogates Rule 6(e), addressed a quite different situation.  460 U.S. 557 (1983).  There, a state 
+attorney general sought to obtain federal grand jury records under the Clayton Act, 15 U.S.C. 
+§ 15f(b), despite Rule 6(e)’s prohibition on such disclosure absent a showing of “particularized 
+need.”  Id. at 560, 566.  The Clayton Act required federal investigative materials to be provided 
+to state attorneys general “to the extent permitted by law.”  15 U.S.C. § 15f(b).  The Supreme 
+Court held that the Clayton Act did not override Rule 6(e) with respect to grand jury materials.  
+Abbott, 460 U.S. at 568.  It held that the disclosure sought by the state attorney general “would 
+have been denied [under Rule 6(e)] because it was not permitted by law.”  Id.  Thus, the “plain 
+language” of the Clayton Act—with its caveat that investigative materials be disclosed only “to 
+the extent permitted by law”—di d not disturb Rule 6(e).  Id.  Rule 6(e)’s legislative history 
+strongly reinforced this conclusion, because Congress had specifically rejected a proposal for 
+Rule 6(e) to create a right of access similar to that which the state attorney general urged.  Id. 
+at 568–70.  In contrast to the Clayton Act, the Epstein Files Transparency Act does not contain 
+any caveat, even implicit, that the release of materials related to Epstein and Maxwell must be 
+consistent with Rule 6(e). 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 17 of 2418 
+ 
+the Act.  The Act thus requires the Attorney General to make public the Maxwell grand jury 
+materials, subject to the withholdings and redactions that the Act permits.10 
+B. Modifications of the Protective Order 
+ 1. Authorization to Release Records Pursuant to the Act 
+In light of the above, the Court modifies the Protective Order, governing discovery in this 
+case, to add the following paragraph:   
+“20.  Nothing in this Protective Orde r shall prohibit the Government from 
+publicly releasing materials whose disclo sure is required by the Epstein Files 
+Transparency Act.  The restrictions of this Protective Order, however, remain in 
+place with respect to the segregable portio ns of records that ‘contain personally 
+identifiable information of victims or victims’ personal a nd medical files and 
+similar files the disclosure of which would constitute a clearly unwarranted 
+invasion of personal privacy.’  Epstein Files Transparency Act § 2(c)(1)(A).” 
+ 
+  2. Mechanism to Protect Victims’ Privacy and Confidentiality  
+ 
+An additional modification of the Protective Order is necessary to assure that, in the 
+process of reviewing the extensive discovery in this case for release pursuant to the Act, DOJ 
+rigorously guards against releasing protected victim information. 
+A paramount goal of the Protective Order entered by Judge Nathan at the start of this case 
+was to protect the privacy interests of Maxwell’s and Epstein’s victims.  The Protective Order 
+lists the “privacy and confidentiality of individuals” as a basis—along with not impeding the 
+then-ongoing investigation and avoiding prejudicial pretrial publicity—for limiting the 
+dissemination of discovery.  Protective Order at 1.  It recognizes that the discovery would 
+contain “personal identification information of victims, witnesses, or other specific individuals 
+who are not parties to this action, and other confidential information.”  Id. at 6.  It prohibits the 
+ 
+10 In light of this holding, the Court does not have occasion to consider the Government’s 
+alternative argument: that, in light of the Act, the “special circumstances” exception to Rule 6(e) 
+recognized in the Second Circuit now supports disclosure of the Maxwell grand jury records. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 18 of 2419 
+ 
+defense from making public filings that identify victims or witnesses “who have not spoken by 
+name on the public record in this case, unless authorized by the Government in writing or by 
+Order of the Court.”  Id. at 5.  It authorizes the Government to designate individual records as 
+“Confidential” or “Highly Confidential,” and imposes heightened restrictions on the use and 
+disclosure of such discovery.  Id. at 6–10.  The Act recognizes these same privacy interests of 
+Maxwell’s and Epstein’s victims, in permitting the Attorney General to withhold release of 
+segregable portions of records that would personally identify or otherwise invade the privacy of 
+these victims if made public.  Act § 2(c)(1)(A).11 
+In moving to modify the Protective Order, DOJ has stated that it will “work with the 
+relevant United States Attorney’s Offices to make appropriate redactions of victim-related and 
+other personal identifying information.”  Mot. at 8.  The victims of Epstein and Maxwell who 
+have written the Court are largely supportive of the Act’s command that DOJ’s investigative 
+records relating to Epstein’s and Maxwell’s crimes be made public.  See, e.g., Farmer Letter at 1 
+(“Only transparency is likely to lead to justice, and for this reason the victims fought tirelessly to 
+achieve the [Act’s] passage.”).  But they have voiced concern that their identities and privacy 
+will be compromised in the course of the release of records pursuant to the Act.  See, e.g., Victim 
+Consortium Letter at 5–7.  These victims therefore “seek the Court’s assistance in ensuring that 
+[their] names and identifying information are protected from public disclosure.”  Id. at 9.  The 
+Court construes these victims to request that, in modifying the Protective Order, the Court put in 
+place a reliable mechanism to guard against disclosure of their names and other identifying 
+information in any discovery subject to that order. 
+ 
+11 With respect to the privacy interests of persons other than victims, however, the Act, departing 
+from the Protective Order, prohibits withholding “on the basis of embarrassment, reputational 
+harm, or political sensitivity.”  Act § 2(b)(1).   
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 19 of 2420 
+ 
+The victims’ concerns, regrettably, have a basis in fact.  In its two rounds of applications 
+to this Court to disclose records, DOJ, although paying lip service to Maxwell’s and Epstein’s 
+victims, has not treated them with the solicitude they deserve.  DOJ made its July 18, 2025 
+motions to unseal the grand jury materials in this case and Epstein’s without giving notice to 
+Maxwell’s and Epstein’s victims.  Only after this Court (and Judge Berman, in Epstein’s case) 
+inquired on this point and, sua sponte, set a schedule for victims’ input on the motion, directly or 
+through counsel, see Dkt. 789, did DOJ give such notice, see Dkt. 796 at 9.  The letters the Court 
+thereupon received from victims widely expressed distress at the lack of notice given to them by 
+DOJ, see Dkt. 804 at 8, 16, and alarm that the grand jury records DOJ would release, if 
+authorized to do so, would invade their privacy, see id. at 11–12, 17; see also GJ Decision, 794 
+F. Supp. 3d at 233 n.18 (summarizing victims’ concerns).  And, as the Court chronicled in 
+denying DOJ’s motion, the motion itself misled victims—and the publ ic at large—in holding out 
+the Maxwell grand jury materials as essential to the goal of “transparency to the American 
+public,” when in fact the grand jury materials would not add to public knowledge.12   
+ 
+12 As the Court put the point in denying that motion:  
+ 
+A member of the public familiar with the Maxwell trial record  who reviewed the 
+grand jury materials that the Government proposes to unseal would thus learn next 
+to nothing new.  The materials do not id entify any person othe r than Epstein and 
+Maxwell as having had sexual contact with a minor.  They do not discuss or identify 
+any client of Epstein’s or Maxwell’s.  They do not reveal any heretofore unknown 
+means or methods of Epstein’s or Maxwell’s crimes.  They do not reveal new 
+venues at which their crimes occurred.  They do not reveal new sources of their 
+wealth.  They do not explore the circumst ances of Epstein’s death.  They do not 
+reveal the path of the Government’s investigation. . . . 
+ 
+A “public official,” “lawmaker,” “pundit,” or “ordinary citizen” “deeply interested 
+and concerned about the Epstein matter,” Motion to Unseal at 3, and who reviewed 
+these materials expecting, based on the Government’s representations, to learn new 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 20 of 2421 
+ 
+In applying on November 24, 2025 for leave to release records pursuant to the Act, DOJ 
+again acted without notice to Maxwell’s and Epstein’s victims.  See Mot.; Dkt. 813 at 1.  The 
+Court (and Judge Berman) were compelled again to direct DOJ forthwith to notify these victims 
+of its latest motion, and to set a deadline for victims’ submissions.  Dkt. 811.  
+The Court accordingly, in modifying the Protective Order, will require that, before any 
+material subject to it is publicly released, the United States Attorney for this District personally 
+certify that such material has been rigorously reviewed for—and f ound to be in—compliance 
+with Section 2(c)(1)(A) of the Act, which protects victims against revelations of their identities 
+and invasions of their privacy.  Congress’s inclusion of that provision reflected its respect for the 
+privacy rights of Maxwell’s and Epstein’s victims.  DOJ has pledged to honor that provision.  
+See Mot. at 8; Dkt. 813 at 3–4; Dkt. 819 at 1–4.  And the Court has kept in place the Protective 
+Order’s prohibition on the disclosure of discovery in this case to the extent that such would 
+breach that provision.  The certification requirement that the Court is adding to the Protective 
+Order assures that an identifiable official within DOJ takes ownership of the sensitive and vitally 
+important process of reviewing discovery to be publicly released.  It will help assure that 
+victims’ statutory privacy rights are protected.    
+The United States Attorney for this District is the right person to make such a 
+certification with respect to the release of discovery subject to the Protective Order in this case, 
+for several reasons.  He signed DOJ’s motion seeking modification of the Protective Order while 
+pledging to heed Section 2(c)(1)(A).  The USAO he heads, having led the successful 
+ 
+information about Epstein’s and Maxwell’s crimes and the investigation into them, 
+would come away feeling disappointed and misled.  
+ 
+GJ Decision, 794 F. Supp. 3d at 227. 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 21 of 2422 
+ 
+investigation and prosecution of Maxwell, and having amassed the discovery in this case and 
+furnished it to the defense, is best situated to identify, and properly redact or withhold, victim-
+related information within that discovery.  And this Court has great confidence that the 
+professionals in the USAO will ably discharge this important and urgent duty.  Designating the 
+United States Attorney as the person responsible for certifying compliance with Section 
+2(c)(1)(A) with respect to the discovery in this case will also give victims an identifiable 
+forum—the USAO in this District—in which to raise concerns particular to them (e.g., that a 
+particular record, notation, or type thereof within that discovery may identify a victim).   
+In light of the above, the Court will further modify the Protective Order by adding the 
+following paragraph:   
+“21.  Prior to the release of any reco rds covered by this Protective Order, 
+the United States Attorney for the Southe rn District of New York shall personally 
+certify, in a sworn declaration filed on the docket of this case, that such records 
+have been rigorously review ed for compliance with Se ction 2(c)(1)(A) of the 
+Epstein Files Transparency Act, and that none of the records to be released ‘contain 
+personally identifiable information of victims or victims’ personal and medical files 
+and similar files the disclo sure of which would consti tute a clearly unwarranted 
+invasion of personal privacy.’  This re view is to be done by persons including 
+attorney(s) at the United States Attorney’s Office for the Southern District of New 
+York.”13 
+ 
+ 
+13 For avoidance of doubt, the requirement of a pre-disclosure certification by the United States 
+Attorney for this District applies only to the discovery covered by the Protective Order.  DOJ 
+undoubtedly possesses substantial records related to Maxwell and Epstein that were not produced 
+in discovery in this case, including records it may have obtained after Maxwell’s trial or records 
+outside the scope of Rule 16, Rule 17(c), and Jencks Act discovery in this case.  The Protective 
+Order, including the requirement the Court has added to it that the United States Attorney certify 
+compliance with Section 2(c)(1)(A) of the Act, does not apply to records covered by the Act that 
+are outside the discovery in this case, and this Court does not have any authority with respect to 
+such records.  DOJ’s reply letter of December 8 states that, to respect victims’ interests, it has 
+now developed a process for reviewing records covered by the Act before their release.  Dkt. 819 
+at 2–4.   
+ 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 22 of 2423 
+ 
+ 
+3. Letter-Specific Issues  
+ 
+Finally, two letters received by the Court—in  addition to addressing the construction of 
+the Act—raise issues specific to particular record s that may be within the discovery or grand jury 
+materials in this case. 
+The letter on behalf of “John Doe” argues that his identity should be redacted from any 
+such records because it would likely lead the public to identify his relative, an Epstein victim.  
+John Doe Letter at 11–12.  This letter raises the issue of whether Section 2(c)(1)(A) of the Act, 
+permitting victim-related withholdings or redactions, applies to records that could identify “John 
+Doe.”  The other letter, from counsel Neil Binder, seeks redaction of his clients’ names.  Binder 
+Letter at 15–16.  This letter does not appear to seek relief under Section 2(c)(1)(A), but it may 
+raise the issue of whether particular records fall within the scope of the Act (i.e., Section 2(a)).   
+These record-specific issues are properly taken up, in the first instance, with the USAO.14 
+CONCLUSION 
+ For the reasons above, the Court grants DOJ’s motion to unseal—subject to Section 
+2(c)(1)(A) of the Act—the grand jury materials in this case.  The Court also grants DOJ’s motion 
+to modify the Protective Order issued on July 30, 2020.15  The Court modifies the Protective 
+Order by adding to it the following two provisions as final paragraphs: 
+ 
+14 Mr. Binder’s letter separately asks the Court not to modify a protective order in a separate civil 
+lawsuit brought against Maxwell.  Binder Letter at 16 (citing Giuffre, 2023 WL 8715697, supra).  
+There is no need for such relief.  The Giuffre lawsuit is assigned to a different judge, Judge 
+Preska; this Court does not have any authority to modify it; DOJ has not asked this Court to do 
+so; and DOJ is not a party to that lawsuit.  See also Dkt. 819 at 3 (DOJ letter of December 8, 
+clarifying that it does not seek to modify civil-case protective orders). 
+ 
+15 For clarity for the public and the Court, the Court directs that, in making materials from this 
+case publicly available pursuant to the Act, DOJ clearly designate those that are (1) Maxwell 
+grand jury materials and (2) discovery materials covered by the Protective Order.  
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 23 of 24"20. Nothing in this Protective Order shall prohibit the Government from 
+publicly releasing materials whose disclosure is required by the Epstein Files 
+Transparency Act. The restrictions of this Protective Order, however, remain in 
+place with respect to the segregable portions of records that 'contain personally 
+identifiable information of victims or victims' personal and medical files and 
+similar files the disclosure of which would constitute a clearly unwarranted 
+invasion of personal privacy.' Epstein Files Transparency Act§ 2(c)(l)(A). 
+21. Prior to the release of any records covered by this Protective Order, the 
+United States Attorney for the Southern District of New York shall personally 
+certify, in a sworn declaration filed on the docket of this case, that such records 
+have been rigorously reviewed for compliance with Section 2(c)(l)(A) of the 
+Epstein Files Transparency Act, and that none of the records to be released 'contain 
+personally identifiable information of victims or victims' personal and medical files 
+and similar files the disclosure of which would constitute a clearly unwarranted 
+invasion of personal privacy.' This review is to be done by persons including 
+attorney(s) at the United States Attorney's Office for the Southern District of New 
+York." 
+The Clerk of Court is respectfully directed to terminate the motion pending at 
+docket 810. 
+SO ORDERED. 
+Dated: December 9, 2025 
+New York, New York 
+United States District Judge 
+24 
+Case 1:20-cr-00330-PAE     Document 820     Filed 12/09/25     Page 24 of 24

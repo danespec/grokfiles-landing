@@ -1,0 +1,146 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 61,
+  "page_id": "page_061",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_061.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_061.ocr.txt",
+  "image_metadata": {
+    "bytes": 119733,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "88ab78f55ce455ef57ddd9e019612ec618f2b263ee0e5245dc44cbc91efe6aa2"
+  },
+  "ocr_text": "a: a\nier Ute Yount quel Pre bably just (7 + |\nLA) Ave RAG tog ivy Ky fat hares caclely , Pavel Ak\n“tod Down Smooch ins Sup iA Cave, Deep cd.dac/\nLaw shri\nO aan (d2a4- tap ; |\nstaat off you set s pacoling Yiclat , Youve wth\na. pape Mothers Fool ras ay Me by hee lm ;\naN (Soy of Cont y a SHoung Crock the whole Erne\nOowW N Ky Mouzu! .\nttre Book Ride vr po Br reac Reoseat ISoatt\nHOUSE_OVERSIGHT_000061\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten page with two distinct paragraphs and two black redaction blocks on the top line and in the second paragraph. The text is written in black ink on white paper. The handwriting is mostly legible.",
+    "Layout: two black rectangular redactions on the top line",
+    "Layout: two paragraphs of handwritten text below the redactions"
+  ],
+  "observations": [
+    "A handwritten page with two distinct paragraphs and two black redaction blocks on the top line and in the second paragraph. The text is written in black ink on white paper. The handwriting is mostly legible.",
+    "Layout: two black rectangular redactions on the top line",
+    "Layout: two paragraphs of handwritten text below the redactions"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Two very young girls Probably just 17 + were riding in my fathers caddly, Park Ave top down smooching it up in cave. Drop dead Laughing",
+    "Ocean Reef Trip Start off you get speeding ticket, your with [redacted] + her mothers looking at me like I'm a box of candy + showing food the whole time down my mouth. The Boat Ride in [redacted] Birthday Present Boat"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top portion below redactions",
+      "text_as_seen": "Two very young girls Probably just 17 + were riding in my fathers caddly, Park Ave top down smooching it up in cave. Drop dead Laughing",
+      "confidence": "high",
+      "note": "Well-formed cursive and print mixed handwriting"
+    },
+    {
+      "location": "below first paragraph",
+      "text_as_seen": "Ocean Reef Trip Start off you get speeding ticket, your with [redacted] + her mothers looking at me like I'm a box of candy + showing food the whole time down my mouth. The Boat Ride in [redacted] Birthday Present Boat",
+      "confidence": "medium",
+      "note": "Some letters less clearly formed, several words are inferred with medium certainty; two black redactions block words in this paragraph"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "top line, two adjacent blocks",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two rectangular black redaction blocks covering text"
+    },
+    {
+      "location": "second paragraph, one word after 'your with'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction block covering a word"
+    },
+    {
+      "location": "second paragraph, one word after 'The Boat Ride in'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction block covering a word"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Exact age of girls partly unclear as 'just 17 +' may be followed by unclear symbol",
+    "Locations/objects blocked by redactions in two places"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:22.125Z",
+    "response_id": "resp_07f74b726c75c9b6006a502ad172288190b4eb1f377d1e183b",
+    "raw_output_sha256": "6248edb2692afd5b058487412d9060fb6e641143ea86d538bebe557d6f5160e8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_07f74b726c75c9b6006a502ad172288190b4eb1f377d1e183b",
+    "enriched_at": "2026-07-09T23:12:22.125Z"
+  },
+  "visual_summary": "A handwritten page with two distinct paragraphs and two black redaction blocks on the top line and in the second paragraph. The text is written in black ink on white paper. The handwriting is mostly legible.",
+  "layout": [
+    "two black rectangular redactions on the top line",
+    "two paragraphs of handwritten text below the redactions"
+  ],
+  "handwriting": [
+    {
+      "location": "top portion below redactions",
+      "text_as_seen": "Two very young girls Probably just 17 + were riding in my fathers caddly, Park Ave top down smooching it up in cave. Drop dead Laughing",
+      "confidence": "high",
+      "note": "Well-formed cursive and print mixed handwriting"
+    },
+    {
+      "location": "below first paragraph",
+      "text_as_seen": "Ocean Reef Trip Start off you get speeding ticket, your with [redacted] + her mothers looking at me like I'm a box of candy + showing food the whole time down my mouth. The Boat Ride in [redacted] Birthday Present Boat",
+      "confidence": "medium",
+      "note": "Some letters less clearly formed, several words are inferred with medium certainty; two black redactions block words in this paragraph"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top line, two adjacent blocks",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two rectangular black redaction blocks covering text"
+    },
+    {
+      "location": "second paragraph, one word after 'your with'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction block covering a word"
+    },
+    {
+      "location": "second paragraph, one word after 'The Boat Ride in'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction block covering a word"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

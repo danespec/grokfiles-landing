@@ -1,0 +1,118 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 189,
+  "page_id": "page_189",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_189.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_189.ocr.txt",
+  "image_metadata": {
+    "bytes": 140035,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c99970f554729d04668e8d1e8ef751732aed1d8aa1eaa28f789742e48bcb5ad8"
+  },
+  "ocr_text": "oo [fet |\nco | 29\nHOUSE_OVERSIGHT_000189\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains multiple technical line diagrams, arranged in a grid-like pattern. Top left features a 3D corner angle schematic with a shaded triangular region. Top right contains two Y-shaped line diagrams stacked vertically with an upward arrow between them. Bottom left shows a 3D rectangular prism with a curved surface inside, annotated with small labels. Bottom right has three horizontal oval shapes stacked with vertical arrows between them, each oval containing distinct line segments.",
+    "Layout: top-left diagram",
+    "Layout: top-right diagrams stacked",
+    "Layout: horizontal dotted line separator",
+    "Layout: bottom-left 3D box with curved surface",
+    "Layout: bottom-right three stacked ovals with arrows",
+    "Drawing candidate at top-left: 3D corner angle schematic with shaded triangular area",
+    "Drawing candidate at top-right: Two stacked Y-shaped line diagrams with upward arrow",
+    "Drawing candidate at bottom-left: 3D rectangular prism containing a curved surface with line annotations",
+    "Drawing candidate at bottom-right: Three stacked horizontal ovals with line segments and vertical arrows between them"
+  ],
+  "observations": [
+    "The page contains multiple technical line diagrams, arranged in a grid-like pattern. Top left features a 3D corner angle schematic with a shaded triangular region. Top right contains two Y-shaped line diagrams stacked vertically with an upward arrow between them. Bottom left shows a 3D rectangular prism with a curved surface inside, annotated with small labels. Bottom right has three horizontal oval shapes stacked with vertical arrows between them, each oval containing distinct line segments.",
+    "Layout: top-left diagram",
+    "Layout: top-right diagrams stacked",
+    "Layout: horizontal dotted line separator",
+    "Layout: bottom-left 3D box with curved surface",
+    "Layout: bottom-right three stacked ovals with arrows",
+    "Drawing candidate at top-left: 3D corner angle schematic with shaded triangular area",
+    "Drawing candidate at top-right: Two stacked Y-shaped line diagrams with upward arrow",
+    "Drawing candidate at bottom-left: 3D rectangular prism containing a curved surface with line annotations",
+    "Drawing candidate at bottom-right: Three stacked horizontal ovals with line segments and vertical arrows between them"
+  ],
+  "dates": [],
+  "document_strings": [
+    "oo [fet |",
+    "co | 29",
+    "HOUSE_OVERSIGHT_000189",
+    "29"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:31.693Z",
+    "response_id": "resp_05b36cd44461e410006a502f8aa99081979f61558014bd784f",
+    "raw_output_sha256": "a0182124e3f92d03ef353d03bbced885c3fef5c9d3e7e2c195e163fa8a61f178"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05b36cd44461e410006a502f8aa99081979f61558014bd784f",
+    "enriched_at": "2026-07-09T23:32:31.693Z"
+  },
+  "visual_summary": "The page contains multiple technical line diagrams, arranged in a grid-like pattern. Top left features a 3D corner angle schematic with a shaded triangular region. Top right contains two Y-shaped line diagrams stacked vertically with an upward arrow between them. Bottom left shows a 3D rectangular prism with a curved surface inside, annotated with small labels. Bottom right has three horizontal oval shapes stacked with vertical arrows between them, each oval containing distinct line segments.",
+  "layout": [
+    "top-left diagram",
+    "top-right diagrams stacked",
+    "horizontal dotted line separator",
+    "bottom-left 3D box with curved surface",
+    "bottom-right three stacked ovals with arrows"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "top-left",
+      "description": "3D corner angle schematic with shaded triangular area",
+      "confidence": "high"
+    },
+    {
+      "location": "top-right",
+      "description": "Two stacked Y-shaped line diagrams with upward arrow",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-left",
+      "description": "3D rectangular prism containing a curved surface with line annotations",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-right",
+      "description": "Three stacked horizontal ovals with line segments and vertical arrows between them",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

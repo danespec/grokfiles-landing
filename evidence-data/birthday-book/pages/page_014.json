@@ -1,0 +1,170 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 14,
+  "page_id": "page_014",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_014.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_014.ocr.txt",
+  "image_metadata": {
+    "bytes": 13055893,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "97771184203634ccec3fdcbdef6e2ffd237678faffae03c4ca288840c4e1a2b4"
+  },
+  "ocr_text": ". ris Sn re\nery. “Mi —_- °\nFaso CT, m Sop\n; Qoa Se | |\n{ Ru af hs! ra a {| ay\nAlm ll\n\ni\nHOUSE_OVERSIGHT_000014\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains four photographs showing different scenes: an aerial view of a large house with surrounding land, a house on a beach with blue water, a close-up of a decorative lamp with figurines and assorted objects in a classic interior setting, and a corner of a room with furniture including a chair and a window with curtains. There is handwritten text on the left side of the page in two columns, one starting from top left and one near top center.",
+    "Layout: top left photo showing aerial view of large house",
+    "Layout: top right photo showing a house on a beach",
+    "Layout: middle center photo showing interior with lamp and decor",
+    "Layout: bottom right photo showing interior with chair and window",
+    "Layout: left side handwriting column",
+    "Layout: center top handwriting",
+    "Photo/image candidate at top left: Aerial photo of a large estate house with multiple buildings and a gravel driveway surrounded by sparse vegetation",
+    "Photo/image candidate at top right: Photo of a coastal scene showing several houses on a small peninsula with a beach and blue ocean water",
+    "Photo/image candidate at middle center: Close-up interior photo showing a brass lamp with a yellow shade resting on a table with small statues and a plant, in a richly decorated room",
+    "Photo/image candidate at bottom right: Interior room photo showing a seating area with a beige armchair, a red artistic chair, a window with curtains, and framed pictures on walls"
+  ],
+  "observations": [
+    "Page contains four photographs showing different scenes: an aerial view of a large house with surrounding land, a house on a beach with blue water, a close-up of a decorative lamp with figurines and assorted objects in a classic interior setting, and a corner of a room with furniture including a chair and a window with curtains. There is handwritten text on the left side of the page in two columns, one starting from top left and one near top center.",
+    "Layout: top left photo showing aerial view of large house",
+    "Layout: top right photo showing a house on a beach",
+    "Layout: middle center photo showing interior with lamp and decor",
+    "Layout: bottom right photo showing interior with chair and window",
+    "Layout: left side handwriting column",
+    "Layout: center top handwriting",
+    "Photo/image candidate at top left: Aerial photo of a large estate house with multiple buildings and a gravel driveway surrounded by sparse vegetation",
+    "Photo/image candidate at top right: Photo of a coastal scene showing several houses on a small peninsula with a beach and blue ocean water",
+    "Photo/image candidate at middle center: Close-up interior photo showing a brass lamp with a yellow shade resting on a table with small statues and a plant, in a richly decorated room",
+    "Photo/image candidate at bottom right: Interior room photo showing a seating area with a beige armchair, a red artistic chair, a window with curtains, and framed pictures on walls"
+  ],
+  "dates": [],
+  "document_strings": [
+    "3mo",
+    "Parp",
+    "New York",
+    "Palm Beach",
+    "908 JE",
+    "909 JE",
+    "5 Beach",
+    "20 + cars",
+    "and Ten Yar.",
+    "added a",
+    "train",
+    "and Nan.....",
+    "House or Jeff",
+    "HOUSE_OVERSIGHT_000014"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "left side column beneath the top left photograph",
+      "text_as_seen": "Parp New York Palm Beach 908 JE 909 JE 5 Beach 20 + cars and Ten Yar. added a train and Nan.....",
+      "confidence": "medium",
+      "note": "Handwriting is mostly legible but some words may be misspelled or uncertain"
+    },
+    {
+      "location": "top center near top right photograph",
+      "text_as_seen": "House or Jeff",
+      "confidence": "medium",
+      "note": "Handwriting is slightly unclear but 'House or Jeff' is most likely text"
+    },
+    {
+      "location": "top left near top left photograph",
+      "text_as_seen": "3mo",
+      "confidence": "low",
+      "note": "Single unclear word or abbreviation"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:04:14.479Z",
+    "response_id": "resp_0d04aa61a76af673006a5028e4578c81909fdc811e20043ec3",
+    "raw_output_sha256": "0c809acbd5e0ec437625e8c55b4a0c02b9c144853abac82f005ae50b8688ad13"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d04aa61a76af673006a5028e4578c81909fdc811e20043ec3",
+    "enriched_at": "2026-07-09T23:04:14.479Z"
+  },
+  "visual_summary": "Page contains four photographs showing different scenes: an aerial view of a large house with surrounding land, a house on a beach with blue water, a close-up of a decorative lamp with figurines and assorted objects in a classic interior setting, and a corner of a room with furniture including a chair and a window with curtains. There is handwritten text on the left side of the page in two columns, one starting from top left and one near top center.",
+  "layout": [
+    "top left photo showing aerial view of large house",
+    "top right photo showing a house on a beach",
+    "middle center photo showing interior with lamp and decor",
+    "bottom right photo showing interior with chair and window",
+    "left side handwriting column",
+    "center top handwriting"
+  ],
+  "handwriting": [
+    {
+      "location": "left side column beneath the top left photograph",
+      "text_as_seen": "Parp New York Palm Beach 908 JE 909 JE 5 Beach 20 + cars and Ten Yar. added a train and Nan.....",
+      "confidence": "medium",
+      "note": "Handwriting is mostly legible but some words may be misspelled or uncertain"
+    },
+    {
+      "location": "top center near top right photograph",
+      "text_as_seen": "House or Jeff",
+      "confidence": "medium",
+      "note": "Handwriting is slightly unclear but 'House or Jeff' is most likely text"
+    },
+    {
+      "location": "top left near top left photograph",
+      "text_as_seen": "3mo",
+      "confidence": "low",
+      "note": "Single unclear word or abbreviation"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left",
+      "description": "Aerial photo of a large estate house with multiple buildings and a gravel driveway surrounded by sparse vegetation",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Photo of a coastal scene showing several houses on a small peninsula with a beach and blue ocean water",
+      "confidence": "high"
+    },
+    {
+      "location": "middle center",
+      "description": "Close-up interior photo showing a brass lamp with a yellow shade resting on a table with small statues and a plant, in a richly decorated room",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right",
+      "description": "Interior room photo showing a seating area with a beige armchair, a red artistic chair, a window with curtains, and framed pictures on walls",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

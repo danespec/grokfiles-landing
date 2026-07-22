@@ -1,0 +1,95 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 37,
+  "page_id": "page_037",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_037.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_037.ocr.txt",
+  "image_metadata": {
+    "bytes": 150891,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "6416fb8bedc88a119a92aa8817805eff0e15003dae2bb2a092cfef8cb151f22f"
+  },
+  "ocr_text": "QUINQUAGENARY EDYTION en EO UIAR 2 CENTS\nABSOLUTELY NO CIRCULATION No GUARANTEES\n° threatened to withhold his\nAccordion treasured Nathan’s lobster salad,\nif he refused to perform\nTorture perfectly. He performed once\n| again, and was treated to a one-\nBy Robert Wolfe pound container of his favorite\nSea Gate Gazette delicacy.\nA Sea Gate boy was forced by SN\nhis mother to play “Flight of the\nBumble bee” and “Saber Dance”\non his squeeze box, 100 times a\nday for 5 years. By the time the :\nlad became proficient, he was Seafood Diet? ?\nable to play the tunes 100 times\nin 10 minutes. Firemen from the\n318 Hook and Ladder Division By Ba bbbles Axelrod\nwere always called in for his\ndaily recital, in order to douse the\nflames if the boy’s fingers caught Coney Island Health officials\nfire from his dervish-like reported today, that a boy\nplaying. survived the first 13 years of his\nMonths later, the musical life eating only Nathan’s Lobster\nlad’s mom, again forced the boy Salad and drinking Sunny Boy\nagainst his will, to perfoun the Orange drinks. His mother\ntwo pieces at Carnegie Hall in (cont’d pg. 2, column !)\nfront of thousands attending. She -\nHOUSE_OVERSIGHT_000037\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The scanned page shows a newspaper page titled 'The Sea Gate Chronicle' with two main articles: 'Accordion Torture' by Robert Wolfe and 'Seafood Diet???' by Bubbles Axelrod. The texts describe stories involving a boy forced to play instruments and another boy surviving on a specific diet. The page header indicates it is the 'Quinquagenary Edition' priced at 2 cents with 'Absolutely No Circulation' and 'No Guarantees'. The text is formatted in two columns with clear titles and bylines.",
+    "Layout: Header section with edition and price details",
+    "Layout: Main newspaper title centered",
+    "Layout: Two article sections side by side: left column - Accordion Torture; right column - Seafood Diet???"
+  ],
+  "observations": [
+    "The scanned page shows a newspaper page titled 'The Sea Gate Chronicle' with two main articles: 'Accordion Torture' by Robert Wolfe and 'Seafood Diet???' by Bubbles Axelrod. The texts describe stories involving a boy forced to play instruments and another boy surviving on a specific diet. The page header indicates it is the 'Quinquagenary Edition' priced at 2 cents with 'Absolutely No Circulation' and 'No Guarantees'. The text is formatted in two columns with clear titles and bylines.",
+    "Layout: Header section with edition and price details",
+    "Layout: Main newspaper title centered",
+    "Layout: Two article sections side by side: left column - Accordion Torture; right column - Seafood Diet???"
+  ],
+  "dates": [],
+  "document_strings": [
+    "QUINQUAGENARY EDITION",
+    "2 CENTS",
+    "ABSOLUTELY NO CIRCULATION",
+    "NO GUARANTEES",
+    "THE",
+    "SEA GATE CHRONICLE",
+    "Accordion Torture",
+    "By Robert Wolfe",
+    "Sea Gate Gazette",
+    "A Sea Gate boy was forced by his mother to play 'Flight of the Bumble bee' and 'Saber Dance' on his squeeze box, 100 times a day for 5 years. By the time the lad became proficient, he was able to play the tunes 100 times in 10 minutes. Firemen from the 318 Hook and Ladder Division were always called in for his daily recital, in order to douse the flames if the boy's fingers caught fire from his dervish-like playing.",
+    "Months later, the musical lad's mom, again forced the boy against his will, to perform two pieces at Carnegie Hall in front of thousands attending. She threatened to withhold his treasured Nathan's lobster salad, if he refused to perform perfectly. He performed once again, and was treated to a one-pound container of his favorite delicacy.",
+    "Seafood Diet???",
+    "By Bubbles Axelrod",
+    "Coney Island Gourmet",
+    "Coney Island Health officials reported today, that a boy survived the first 13 years of his life eating only Nathan's Lobster Salad and drinking Sunny Boy Orange drinks. His mother (cont'd pg. 2, column 1)"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "End of the text on the right column is cut off or continues onto another page, visible as '(cont'd pg. 2, column 1)'."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:57.079Z",
+    "response_id": "resp_0bd95674463c3612006a5029c4deac8196a2fb0f21d4b69536",
+    "raw_output_sha256": "6ebd2854dc029b49a2ab874d54607cf840c613c85c7f2422cf2069f24c8e8654"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bd95674463c3612006a5029c4deac8196a2fb0f21d4b69536",
+    "enriched_at": "2026-07-09T23:07:57.079Z"
+  },
+  "visual_summary": "The scanned page shows a newspaper page titled 'The Sea Gate Chronicle' with two main articles: 'Accordion Torture' by Robert Wolfe and 'Seafood Diet???' by Bubbles Axelrod. The texts describe stories involving a boy forced to play instruments and another boy surviving on a specific diet. The page header indicates it is the 'Quinquagenary Edition' priced at 2 cents with 'Absolutely No Circulation' and 'No Guarantees'. The text is formatted in two columns with clear titles and bylines.",
+  "layout": [
+    "Header section with edition and price details",
+    "Main newspaper title centered",
+    "Two article sections side by side: left column - Accordion Torture; right column - Seafood Diet???"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

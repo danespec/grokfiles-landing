@@ -1,0 +1,205 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 197,
+  "page_id": "page_197",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_197.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_197.ocr.txt",
+  "image_metadata": {
+    "bytes": 321201,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8e758a4498d6e1bca985887a9e65b36ee08f53ef0f5d2c2604540dfb85d52397"
+  },
+  "ocr_text": "=< at Ne me e SCese TOR en\n| yn CR OE, a re cQ ake ft “ae ~\nAL. eloar  Vekieve Kall ther\nrr ae ~ au Q. £anm 89 2\nDe es wW Oo ne dh Wemno vee\naS tear\nUAW elrans bee eH RL hove\n_ : o 6 A mate waren ee ~ oo\nMm \\ Creve w¥ J \\ BoP Bh goed Kee S498\npies AO ples He Se dd pens\n= os > \\pold lether tee See |\nNe ee Qed h.\n_. S \\eve : S\nHOUSE_OVERSIGHT_000197\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note with medium density of text on a white page. The handwriting is cursive and somewhat slanted. There is a redacted portion toward the bottom of the page. The text contains names, a mention of a drawing, a mention of a girl sleeping on the floor, and expresses emotional content about memories and friendship. There are two question marks and a heart symbol. The left edge shows some distortion or shadow.",
+    "Layout: handwritten note occupying most of the page",
+    "Layout: redacted rectangular area near bottom center"
+  ],
+  "observations": [
+    "A handwritten note with medium density of text on a white page. The handwriting is cursive and somewhat slanted. There is a redacted portion toward the bottom of the page. The text contains names, a mention of a drawing, a mention of a girl sleeping on the floor, and expresses emotional content about memories and friendship. There are two question marks and a heart symbol. The left edge shows some distortion or shadow.",
+    "Layout: handwritten note occupying most of the page",
+    "Layout: redacted rectangular area near bottom center"
+  ],
+  "dates": [
+    "50 (implied birthday or age)"
+  ],
+  "document_strings": [
+    "Jeffrey",
+    "Look at this drawing",
+    "Picture the scene without the audience, the girl sleeping on the floor I believe had shorter hair then ...",
+    "Does it bring you back memories ??",
+    "I'm thinking of all the great times we had together! You know you will always be my very close friend even though we don't see each other so much anymore.",
+    "Have a Happy 50 (I can't believe it's) But the good news is: you look better than you did years ago when we first met, love always"
+  ],
+  "signatures": [
+    {
+      "location": "top-center",
+      "text_as_seen": "Jeffrey",
+      "confidence": "high",
+      "note": "May be a signature or name"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top-center",
+      "text_as_seen": "Jeffrey",
+      "confidence": "high",
+      "note": "Name-like text, possibly a heading or signature"
+    },
+    {
+      "location": "below heading center",
+      "text_as_seen": "Look at this drawing",
+      "confidence": "high",
+      "note": "Beginning of note"
+    },
+    {
+      "location": "center-left to center-right",
+      "text_as_seen": "Picture the scene without the audience, the girl sleeping on the floor I believe had shorter hair then ...",
+      "confidence": "medium",
+      "note": "Text contains some uncertain words"
+    },
+    {
+      "location": "center",
+      "text_as_seen": "Does it bring you back memories ??",
+      "confidence": "high",
+      "note": "Includes two question marks"
+    },
+    {
+      "location": "center-lower",
+      "text_as_seen": "I'm thinking of all the great times we had together! You know you will always be my very close friend even though we don't see each other so much anymore.",
+      "confidence": "medium",
+      "note": "Contains punctuation and emotional tone"
+    },
+    {
+      "location": "bottom-center",
+      "text_as_seen": "Have a Happy 50 - (I can't believe it's) But the good news is: you look better than you did years ago when we first met, love always",
+      "confidence": "medium",
+      "note": "Includes reference to \"Happy 50\" with heart symbol"
+    },
+    {
+      "location": "very bottom-center",
+      "text_as_seen": "[redacted]",
+      "confidence": "high",
+      "note": "Redacted area, content obscured"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular block obscures text"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [
+    "Some words and letters are unclear or uncertain due to cursive handwriting and image shadows"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:33:48.510Z",
+    "response_id": "resp_0f289865b8284629006a502fd02db08194b25335a1797044ed",
+    "raw_output_sha256": "c0593f9da9be2f24146b740d5214e73716df2a81d75f8b15af15490f306f0b3e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f289865b8284629006a502fd02db08194b25335a1797044ed",
+    "enriched_at": "2026-07-09T23:33:48.510Z"
+  },
+  "visual_summary": "A handwritten note with medium density of text on a white page. The handwriting is cursive and somewhat slanted. There is a redacted portion toward the bottom of the page. The text contains names, a mention of a drawing, a mention of a girl sleeping on the floor, and expresses emotional content about memories and friendship. There are two question marks and a heart symbol. The left edge shows some distortion or shadow.",
+  "layout": [
+    "handwritten note occupying most of the page",
+    "redacted rectangular area near bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top-center",
+      "text_as_seen": "Jeffrey",
+      "confidence": "high",
+      "note": "Name-like text, possibly a heading or signature"
+    },
+    {
+      "location": "below heading center",
+      "text_as_seen": "Look at this drawing",
+      "confidence": "high",
+      "note": "Beginning of note"
+    },
+    {
+      "location": "center-left to center-right",
+      "text_as_seen": "Picture the scene without the audience, the girl sleeping on the floor I believe had shorter hair then ...",
+      "confidence": "medium",
+      "note": "Text contains some uncertain words"
+    },
+    {
+      "location": "center",
+      "text_as_seen": "Does it bring you back memories ??",
+      "confidence": "high",
+      "note": "Includes two question marks"
+    },
+    {
+      "location": "center-lower",
+      "text_as_seen": "I'm thinking of all the great times we had together! You know you will always be my very close friend even though we don't see each other so much anymore.",
+      "confidence": "medium",
+      "note": "Contains punctuation and emotional tone"
+    },
+    {
+      "location": "bottom-center",
+      "text_as_seen": "Have a Happy 50 - (I can't believe it's) But the good news is: you look better than you did years ago when we first met, love always",
+      "confidence": "medium",
+      "note": "Includes reference to \"Happy 50\" with heart symbol"
+    },
+    {
+      "location": "very bottom-center",
+      "text_as_seen": "[redacted]",
+      "confidence": "high",
+      "note": "Redacted area, content obscured"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "top-center",
+      "text_as_seen": "Jeffrey",
+      "confidence": "high",
+      "note": "May be a signature or name"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular block obscures text"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "50 (implied birthday or age)"
+  ],
+  "confidence": "medium"
+}

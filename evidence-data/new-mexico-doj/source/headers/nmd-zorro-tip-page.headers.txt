@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/get-help/epstein-zorro-tips/
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 0508c24eae4f79c1f24547d54c24bfb9a6b956ccc4f383a88d087ef7ced1dbfd
+Bytes: 401413
+Acquisition method: verified existing local capture

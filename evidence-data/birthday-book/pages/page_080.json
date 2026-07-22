@@ -1,0 +1,178 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 80,
+  "page_id": "page_080",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_080.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_080.ocr.txt",
+  "image_metadata": {
+    "bytes": 306592,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "44235acca92345e90ca8ef09556e9d2298cecdac40ce7ca45a91ad9c681fb583"
+  },
+  "ocr_text": "Y class officers / Ware. tipler_\n, . president |\n; aS . 2 je€- president\ne secretary |\n: / treasurer 4\nnis Pout Gullerios oe ce iret ste epee monet\nbe, : 7 “og A * NAMES ADDRESSES f ee\n™ i upame Siptany ¥ LLG el (0. aan 7 fl wi a\nQe Til Lady age — \"a ememeeene\nPR wrest YU uf peti.) \\\nPost roruiae Lat) Webra Decnel\nse f lo Whe ELS ap,\na* MOST CHEERFUL; Sy eh 2\na! f\n ocrmnce Nop nel. Kaebeds-Ao!\n** esromns (yn A. Sate) gh. A\nats ig ~ i\nHOUSE_OVERSIGHT_000080\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains multiple handwritten sections with class-related information: class officers, a favorite things section, a classmates list with addresses, and class leaders categories with names filled in. There are decorative elements such as frames around text and a small illustration of a hand holding a pen at the top. The handwritten text is mostly legible with some overlapping and lighter strokes in certain areas. Some signatures or names are written in cursive. Printed labels and prompts accompany handwritten responses.",
+    "Layout: Top left: Class officers section with handwritten names and titles.",
+    "Layout: Middle left: Favorite section with handwritten entries for book, song, name, hero, chum, author, college, high school, profession, motto.",
+    "Layout: Top right: My classmates section inside a rounded rectangular frame with handwritten names and partial addresses.",
+    "Layout: Bottom right: Class leaders section with categories and handwritten names for brightest, wittiest, most popular, most cheerful, best athlete, best looking, and best dressed.",
+    "Drawing candidate at Top left corner: Illustration of hand holding a pen over a book with decorative swirls around 'class officers' text"
+  ],
+  "observations": [
+    "The page contains multiple handwritten sections with class-related information: class officers, a favorite things section, a classmates list with addresses, and class leaders categories with names filled in. There are decorative elements such as frames around text and a small illustration of a hand holding a pen at the top. The handwritten text is mostly legible with some overlapping and lighter strokes in certain areas. Some signatures or names are written in cursive. Printed labels and prompts accompany handwritten responses.",
+    "Layout: Top left: Class officers section with handwritten names and titles.",
+    "Layout: Middle left: Favorite section with handwritten entries for book, song, name, hero, chum, author, college, high school, profession, motto.",
+    "Layout: Top right: My classmates section inside a rounded rectangular frame with handwritten names and partial addresses.",
+    "Layout: Bottom right: Class leaders section with categories and handwritten names for brightest, wittiest, most popular, most cheerful, best athlete, best looking, and best dressed.",
+    "Drawing candidate at Top left corner: Illustration of hand holding a pen over a book with decorative swirls around 'class officers' text"
+  ],
+  "dates": [
+    "1949",
+    "1940"
+  ],
+  "document_strings": [
+    "class officers",
+    "president",
+    "vice-president",
+    "secretary",
+    "treasurer",
+    "my Favorite",
+    "book",
+    "song",
+    "name",
+    "hero",
+    "chum",
+    "author",
+    "college",
+    "high school",
+    "profession",
+    "motto",
+    "my classmates",
+    "NAMES ADDRESSES",
+    "class leaders",
+    "BRIGHTEST",
+    "WITTIEST",
+    "MOST POPULAR",
+    "MOST CHEERFUL",
+    "BEST ATHLETE",
+    "BEST LOOKING",
+    "BEST DRESSED",
+    "HOUSE_OVERSIGHT_000080"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top left, class officers section",
+      "text_as_seen": "Mark Lipton president Merrill Singer vice-president Debra Nessel secretary Barbara Schwartz treasurer",
+      "confidence": "high",
+      "note": "Legible cursive handwriting for names and titles."
+    },
+    {
+      "location": "Middle left, favorite section",
+      "text_as_seen": "book Cheaper By The Dozen song Climb Every Mt. Moon River name Tiffany Paige hero Melody Engel chum Melody Engel author (blank) college New York University high school Lincoln profession teaching motto (blank)",
+      "confidence": "high",
+      "note": "Mostly legible cursive and handwriting for responses, except author and motto fields are blank."
+    },
+    {
+      "location": "Top right, my classmates section",
+      "text_as_seen": "Enid Rossman 2588 West 87th Ellen Katz 2820 Ocean Ave Melody Veto 285 W 12th Ave Betty Snopkly 2720 W 5 Street Gale Rey 3970 Maple Ave Cheryl Thompson 2900 W 8 Sandy Stegman Patricia Sullivan Aaron Broyles Merrill Singer Debra Nessel",
+      "confidence": "medium",
+      "note": "Handwritten list of names and addresses; some overlapped and faint strokes affect legibility."
+    },
+    {
+      "location": "Bottom right, class leaders section",
+      "text_as_seen": "BRIGHTEST Bruce Reynick Ellen Katz WITTIEST Jeffrey Epstein MOST POPULAR (me) Debra Nessel MOST CHEERFUL Sharon Broyles, Mel Stein BEST ATHLETE Michael Rackoff '58 BEST LOOKING (me) Gale Rey BEST DRESSED (me) Gale Rey",
+      "confidence": "high",
+      "note": "Multiple handwritten names next to categories, some have multiple names or '(me)' designation."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Author and motto fields in favorite section are blank.",
+    "Some handwriting is faint or overlapped affecting clarity of partial addresses in classmates section."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:46.503Z",
+    "response_id": "resp_0aad504325dadf5b006a502b97aff88197b282aa59b7147894",
+    "raw_output_sha256": "1a03d0079db1eb57b5d175e14216775bdec838c86cf1056dc2740de813f112f1"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0aad504325dadf5b006a502b97aff88197b282aa59b7147894",
+    "enriched_at": "2026-07-09T23:15:46.503Z"
+  },
+  "visual_summary": "The page contains multiple handwritten sections with class-related information: class officers, a favorite things section, a classmates list with addresses, and class leaders categories with names filled in. There are decorative elements such as frames around text and a small illustration of a hand holding a pen at the top. The handwritten text is mostly legible with some overlapping and lighter strokes in certain areas. Some signatures or names are written in cursive. Printed labels and prompts accompany handwritten responses.",
+  "layout": [
+    "Top left: Class officers section with handwritten names and titles.",
+    "Middle left: Favorite section with handwritten entries for book, song, name, hero, chum, author, college, high school, profession, motto.",
+    "Top right: My classmates section inside a rounded rectangular frame with handwritten names and partial addresses.",
+    "Bottom right: Class leaders section with categories and handwritten names for brightest, wittiest, most popular, most cheerful, best athlete, best looking, and best dressed."
+  ],
+  "handwriting": [
+    {
+      "location": "Top left, class officers section",
+      "text_as_seen": "Mark Lipton president Merrill Singer vice-president Debra Nessel secretary Barbara Schwartz treasurer",
+      "confidence": "high",
+      "note": "Legible cursive handwriting for names and titles."
+    },
+    {
+      "location": "Middle left, favorite section",
+      "text_as_seen": "book Cheaper By The Dozen song Climb Every Mt. Moon River name Tiffany Paige hero Melody Engel chum Melody Engel author (blank) college New York University high school Lincoln profession teaching motto (blank)",
+      "confidence": "high",
+      "note": "Mostly legible cursive and handwriting for responses, except author and motto fields are blank."
+    },
+    {
+      "location": "Top right, my classmates section",
+      "text_as_seen": "Enid Rossman 2588 West 87th Ellen Katz 2820 Ocean Ave Melody Veto 285 W 12th Ave Betty Snopkly 2720 W 5 Street Gale Rey 3970 Maple Ave Cheryl Thompson 2900 W 8 Sandy Stegman Patricia Sullivan Aaron Broyles Merrill Singer Debra Nessel",
+      "confidence": "medium",
+      "note": "Handwritten list of names and addresses; some overlapped and faint strokes affect legibility."
+    },
+    {
+      "location": "Bottom right, class leaders section",
+      "text_as_seen": "BRIGHTEST Bruce Reynick Ellen Katz WITTIEST Jeffrey Epstein MOST POPULAR (me) Debra Nessel MOST CHEERFUL Sharon Broyles, Mel Stein BEST ATHLETE Michael Rackoff '58 BEST LOOKING (me) Gale Rey BEST DRESSED (me) Gale Rey",
+      "confidence": "high",
+      "note": "Multiple handwritten names next to categories, some have multiple names or '(me)' designation."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "Top left corner",
+      "description": "Illustration of hand holding a pen over a book with decorative swirls around 'class officers' text",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "1949",
+    "1940"
+  ],
+  "confidence": "high"
+}

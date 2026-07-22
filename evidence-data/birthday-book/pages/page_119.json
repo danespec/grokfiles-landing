@@ -1,0 +1,136 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 119,
+  "page_id": "page_119",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_119.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_119.ocr.txt",
+  "image_metadata": {
+    "bytes": 90927,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "08eb60ed099003014b65e55344d2cf12b07e16d21b1d0219dd7bf3799a88f285"
+  },
+  "ocr_text": "Warverdian povren, brain reseercdar, Lor erleabony wonne be.\nOvrtvegeers, yCono eshte, oncenvenbionel, Spe \\ Cree :\nBest o€ o\\\\, Cw Deer Friend, Repos Bie dey Sel€Erey | |\n| Jove meu lI rsses - | |\nVE a) *y Foie Poster AAN | | ,\nHOUSE_OVERSIGHT_000119\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page displays a handwritten birthday message written in black ink on a white background. The handwriting style is cursive and regular print, with moderate spacing between words. There is a signature-like text near the bottom center, and a handwritten phrase with an asterisk near the bottom left. The rest of the page is blank with some ink speckles.",
+    "Layout: Handwritten message at the top half of the page",
+    "Layout: Signature-like text near the middle below the message",
+    "Layout: Short handwritten phrase with asterisk toward bottom left",
+    "Layout: Blank space with minor ink speckles fills remaining area"
+  ],
+  "observations": [
+    "The page displays a handwritten birthday message written in black ink on a white background. The handwriting style is cursive and regular print, with moderate spacing between words. There is a signature-like text near the bottom center, and a handwritten phrase with an asterisk near the bottom left. The rest of the page is blank with some ink speckles.",
+    "Layout: Handwritten message at the top half of the page",
+    "Layout: Signature-like text near the middle below the message",
+    "Layout: Short handwritten phrase with asterisk toward bottom left",
+    "Layout: Blank space with minor ink speckles fills remaining area"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000119"
+  ],
+  "signatures": [
+    {
+      "location": "center below main message",
+      "text_as_seen": "Leon",
+      "confidence": "high",
+      "note": "Possible signature element"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "Maxwellian delight, a mother's treasure, great joy most surely Harvardian patron, brain researcher, for extending, wannabe Outrageous, iconoclastic, unconventional, spirit free Best of all, a Dear Friend, Happy Birthday Jeffrey!",
+      "confidence": "high",
+      "note": "Handwritten birthday message"
+    },
+    {
+      "location": "center below main message",
+      "text_as_seen": "Love and Kisses, Leon",
+      "confidence": "high",
+      "note": "Handwritten closing phrase and signature-like text"
+    },
+    {
+      "location": "bottom left of page",
+      "text_as_seen": "*Vanity Fair Poster Child",
+      "confidence": "high",
+      "note": "Handwritten phrase with asterisk"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:09.180Z",
+    "response_id": "resp_0a84d4eb0f44e3c2006a502d1b44e881948801c707428fd5fc",
+    "raw_output_sha256": "843d98848b2642aea1bc2a60d8007507842ee56cbb531982b51ed494ccb4d406"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0a84d4eb0f44e3c2006a502d1b44e881948801c707428fd5fc",
+    "enriched_at": "2026-07-09T23:22:09.180Z"
+  },
+  "visual_summary": "The page displays a handwritten birthday message written in black ink on a white background. The handwriting style is cursive and regular print, with moderate spacing between words. There is a signature-like text near the bottom center, and a handwritten phrase with an asterisk near the bottom left. The rest of the page is blank with some ink speckles.",
+  "layout": [
+    "Handwritten message at the top half of the page",
+    "Signature-like text near the middle below the message",
+    "Short handwritten phrase with asterisk toward bottom left",
+    "Blank space with minor ink speckles fills remaining area"
+  ],
+  "handwriting": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "Maxwellian delight, a mother's treasure, great joy most surely Harvardian patron, brain researcher, for extending, wannabe Outrageous, iconoclastic, unconventional, spirit free Best of all, a Dear Friend, Happy Birthday Jeffrey!",
+      "confidence": "high",
+      "note": "Handwritten birthday message"
+    },
+    {
+      "location": "center below main message",
+      "text_as_seen": "Love and Kisses, Leon",
+      "confidence": "high",
+      "note": "Handwritten closing phrase and signature-like text"
+    },
+    {
+      "location": "bottom left of page",
+      "text_as_seen": "*Vanity Fair Poster Child",
+      "confidence": "high",
+      "note": "Handwritten phrase with asterisk"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "center below main message",
+      "text_as_seen": "Leon",
+      "confidence": "high",
+      "note": "Possible signature element"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

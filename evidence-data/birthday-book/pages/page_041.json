@@ -1,0 +1,103 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 41,
+  "page_id": "page_041",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_041.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_041.ocr.txt",
+  "image_metadata": {
+    "bytes": 171473,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "a2824c45aeec1acc4ead0672a3fb4de86b2b27aae5bbb31f4579f3e7ef295aa6"
+  },
+  "ocr_text": ": 2 Barely\na Graduate\n2 Fast ‘56\n: By Carl Ashby\n: Pealth Ed Joumal\nBy Larry John Streitman\n- Double A Fuel Magazine\n: After making a mockery of phys-ed\n; . class for the majority of their senior\n: ’s Sat. Vv\n: nny a two teens from gym class 6 weeks\n: nitro methane burning “Stormin before graduation and gave them\n; 56 Plymouth. Custom painted i the bad news: they weren’t going\nan aqua blue funny car color, this to graduatel! Altbough the 2 boys\n: oye catcher a azzles alk One , had virtually straight A’s in\n; lookers. With it’s four-on-the- academics, they were total losers\nfloor Hurst T-shifter, twin Holley . when it came to gym. They\n4 barrel carbs, a blue printed 4 pleaded with Mr. Lasker and asked\nHemi, headers and extra le what they could do to make it up.\n: SPnines, Sgt. Gene brags, After thinking about a just\nwhattayamean?,,, it gets up to punishment, he required the\n50 on the Belt Pkwy. ....why students to double time in every\nthese Sea Gate snot rags could aym class, They had to do twice\nonly dream of owning a supercar the exercise, twice the running, as\nlike this”. well as lead the class in exercise\nuntil the end of the school year.\nLasker also humiliated the boys in\nfront of each and every class, but\n: allowed them to graduate with a\ngrade of one point over the\nCap, Gown minimum passing grade of 65.\nAnd What??\nBy Stanley Komito\nLafayette Legend Yellow Laundry\nMiystery Solve\nFour rebellious Sea Gate boys, y ry ol d\ntwo of whom barely graduated,\nwere caught wearing dungarees and .\n, Beatle Boots under their graduation By Beam it eee\ngowns. The graduation exercises\ntook place at a famous movie\ntheater in downtown Brooklyn.\nOne of the cocky boys remarked An obese Sea Gale family started\n“Hey what are they gonna fail me to notice that their laundry\nnow??? mysteriously started turning yellow\nevery time they removed it from\n: (cont'd pg, 6, columm 1)\nHOUSE_OVERSIGHT_000041\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is a black and white printed newspaper or magazine page containing four articles with various headings and bylines. The text is arranged in columns with distinct article titles and authors. There are no photographs or drawings visible. The page header shows the page number as 5. The articles include titles such as 'Fast '56', '2 Barely Graduate', 'Cap, Gown And What??', and 'Yellow Laundry Mystery Solved'. Each article has a byline with a name and publication or affiliation. The text is mainly printed in a clear, serif font, with some stylistic titles.",
+    "Layout: page header with page number 5 at top right",
+    "Layout: Four main articles arranged in separate areas: one top left, one top right, one bottom left, one bottom right",
+    "Layout: Article titles in larger bold font",
+    "Layout: Bylines under article titles in smaller font",
+    "Layout: Body text in columns below titles and bylines"
+  ],
+  "observations": [
+    "The page is a black and white printed newspaper or magazine page containing four articles with various headings and bylines. The text is arranged in columns with distinct article titles and authors. There are no photographs or drawings visible. The page header shows the page number as 5. The articles include titles such as 'Fast '56', '2 Barely Graduate', 'Cap, Gown And What??', and 'Yellow Laundry Mystery Solved'. Each article has a byline with a name and publication or affiliation. The text is mainly printed in a clear, serif font, with some stylistic titles.",
+    "Layout: page header with page number 5 at top right",
+    "Layout: Four main articles arranged in separate areas: one top left, one top right, one bottom left, one bottom right",
+    "Layout: Article titles in larger bold font",
+    "Layout: Bylines under article titles in smaller font",
+    "Layout: Body text in columns below titles and bylines"
+  ],
+  "dates": [
+    "1956"
+  ],
+  "document_strings": [
+    "Fast '56",
+    "By Larry John Streitman",
+    "Double A Fuel Magazine",
+    "2 Barely Graduate",
+    "By Carl Ashby",
+    "Health Ed Journal",
+    "Cap, Gown And What??",
+    "By Stanley Komito",
+    "Lafayette Legend",
+    "Yellow Laundry Mystery Solved",
+    "By Beatrice K. Cooper",
+    "Read a Book-a-Day Club"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision"
+  ],
+  "gaps": [
+    "The bottom right article is truncated at the bottom and continues elsewhere missing from this image."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:08:36.138Z",
+    "response_id": "resp_05fe07dc3ca36737006a5029ef6d648190946ad9b3cfb471dd",
+    "raw_output_sha256": "9dc1a301ae56217181526d6e2c944a85cc5a3c5f1f8dc6b846b4130f5c7f664e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05fe07dc3ca36737006a5029ef6d648190946ad9b3cfb471dd",
+    "enriched_at": "2026-07-09T23:08:36.138Z"
+  },
+  "visual_summary": "The page is a black and white printed newspaper or magazine page containing four articles with various headings and bylines. The text is arranged in columns with distinct article titles and authors. There are no photographs or drawings visible. The page header shows the page number as 5. The articles include titles such as 'Fast '56', '2 Barely Graduate', 'Cap, Gown And What??', and 'Yellow Laundry Mystery Solved'. Each article has a byline with a name and publication or affiliation. The text is mainly printed in a clear, serif font, with some stylistic titles.",
+  "layout": [
+    "page header with page number 5 at top right",
+    "Four main articles arranged in separate areas: one top left, one top right, one bottom left, one bottom right",
+    "Article titles in larger bold font",
+    "Bylines under article titles in smaller font",
+    "Body text in columns below titles and bylines"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1956"
+  ],
+  "confidence": "high"
+}

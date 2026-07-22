@@ -1,0 +1,65 @@
+{
+  "schema_version": "book_of_black_source_manifest_v1",
+  "task": "GAH-BOOK-OF-BLACK-001",
+  "generated_at": "2026-07-15T20:26:02.070Z",
+  "public_source_label": "Book of Black V6HHT manuscript PDF and extracted text",
+  "source_status": "CANONICAL_SOURCE_ACQUIRED",
+  "source_version": "Book_of_Black_V6HHT",
+  "source_files": [
+    {
+      "role": "authoritative_pdf",
+      "file_name": "Book_of_Black_V6HHT.pdf",
+      "public_asset": "/book-of-black/source/Book_of_Black_V6HHT.pdf",
+      "bytes": 17775835,
+      "sha256": "e28da16e03c8b7e9819bf5010874ab2d5ed13564636f59a55ca1ce70fbec5eff",
+      "media_type": "application/pdf"
+    },
+    {
+      "role": "page_text_jsonl",
+      "file_name": "Book_of_Black_pages.jsonl",
+      "public_asset": "/evidence-data/book-of-black/ocr/Book_of_Black_pages.jsonl",
+      "bytes": 1275366,
+      "sha256": "b8a88607ef433aba56af6e23c838dafeb6c4f929b564564f75a48d6386159726",
+      "media_type": "application/x-ndjson"
+    },
+    {
+      "role": "extraction_coverage",
+      "file_name": "BOOK_OF_BLACK_EXTRACTION_COVERAGE.tsv",
+      "public_asset": "/evidence-data/book-of-black/ocr/BOOK_OF_BLACK_EXTRACTION_COVERAGE.tsv",
+      "bytes": 101042,
+      "sha256": "d7896ec41552e2302354cfd9d80b68874814866dec4de825db6b1bc25078b35b",
+      "media_type": "text/tab-separated-values"
+    }
+  ],
+  "inventory": {
+    "pdf_count": 1,
+    "page_image_count": 0,
+    "ocr_file_count": 2,
+    "json_file_count": 2,
+    "index_file_count": 0,
+    "annotation_file_count": 0,
+    "prior_extracted_entity_file_count": 0,
+    "checksum_file_count": 1,
+    "public_accessibility": "No public Book of Black route existed in this Pages repo before this build. Raw manuscript access is noindex and acknowledgement-gated."
+  },
+  "determination": {
+    "authoritative_source_file": "Book_of_Black_V6HHT.pdf",
+    "page_count": 1639,
+    "file_size_bytes": 17775835,
+    "ocr_coverage_pages": 1639,
+    "ocr_coverage_percent": 100,
+    "missing_pages": [],
+    "corrupt_pages": [],
+    "duplicate_page_sets": [],
+    "duplicate_page_set_count": 0,
+    "page_size": "letter",
+    "extraction_method": "pdftotext -layout",
+    "text_layer_vs_verified_transcription": "Extracted text is treated as OCR/layout extraction, not verified transcription."
+  },
+  "limitations": [
+    "The manuscript is hypothesis-generating material, not evidence.",
+    "Extracted text may contain errors and must not be quoted as verified transcription without page review.",
+    "No ledger entries are promoted until archive records are examined and receipts are attached.",
+    "Local and NAS filesystem paths are intentionally omitted from public metadata."
+  ]
+}

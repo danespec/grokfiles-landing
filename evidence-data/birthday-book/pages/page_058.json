@@ -1,0 +1,130 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 58,
+  "page_id": "page_058",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_058.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_058.ocr.txt",
+  "image_metadata": {
+    "bytes": 144088,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "7829bd5c117c00cef6b2cd8c5d753ab8142a576f001143bb569416bb4c709f5e"
+  },
+  "ocr_text": "Castaways Vel. 4 | |\n\nTT was Co RK ing Some Gq 12h \\A Bert\n4 “Vel Vs mgs 14 the Mais te Nae ' -_\nShe le fe SEReMI MG of MLVESE COME isaclht\nWJ 2 ee Zo Zee Pooking Samk nee\nT Sanp What Bo you hy ruk., while hes\nS hovres Op yiclfen Powe ay th Rett.\nTT wept the whole clay vor thot 6 peel 1h\nCroelad Soke Toe! tue Bouly T was Carsecl ;\nne A Boa In (Bae | , whew L comes ote\ntye Bath oor RB Roshi my eet * | “he\nLoam on te flog , selS Says thats Now\nSo 7 n Bar|\n\nHOUSE_OVERSIGHT_000058\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains handwritten text in black ink on a white background. The handwriting is legible but informal, with some crossed-out words and corrections. There are no images, drawings, or printed text aside from handwriting. The text is organized in three distinct paragraphs with spaces between them.",
+    "Layout: handwritten title at top",
+    "Layout: three paragraphs of handwriting spaced vertically"
+  ],
+  "observations": [
+    "The page contains handwritten text in black ink on a white background. The handwriting is legible but informal, with some crossed-out words and corrections. There are no images, drawings, or printed text aside from handwriting. The text is organized in three distinct paragraphs with spaces between them.",
+    "Layout: handwritten title at top",
+    "Layout: three paragraphs of handwriting spaced vertically"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Castaways Vol. 1",
+    "I was porking some girl in bed + Jeff brings in the main to make bed She left screaming + never came back",
+    "Wee are both in bed porking some girls I said what do you think, while he's shoving penicillin down my throat.",
+    "I went the whole day without speaking English, Jeff told everybody I was raised on a boat in Brazil, when I come out of the bathroom brushing my teeth & spit the foam on the floor, Jeff says that's how they do it in Brazil"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Castaways Vol. 1",
+      "confidence": "high",
+      "note": "Appears as a heading or title"
+    },
+    {
+      "location": "top left to top right",
+      "text_as_seen": "I was porking some girl in bed + Jeff brings in the main to make bed She left screaming + never came back",
+      "confidence": "medium",
+      "note": "Handwriting is somewhat uneven; some letter forms are unusual"
+    },
+    {
+      "location": "middle left to middle right",
+      "text_as_seen": "Wee are both in bed porking some girls I said what do you think, while he's shoving penicillin down my throat.",
+      "confidence": "high",
+      "note": "Handwriting is clearer here"
+    },
+    {
+      "location": "bottom left to bottom right",
+      "text_as_seen": "I went the whole day without speaking English, Jeff told everybody I was raised on a boat in Brazil, when I come out of the bathroom brushing my teeth & spit the foam on the floor, Jeff says that's how they do it in Brazil",
+      "confidence": "high",
+      "note": "Relatively clear handwriting"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:01.020Z",
+    "response_id": "resp_01b295b5ca29dcbd006a502abb7b5c8197bd4aefb22a014937",
+    "raw_output_sha256": "b900e04a1d10893ad3da768aeacb5043dc21645a168ed9bc2444051deab7df06"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01b295b5ca29dcbd006a502abb7b5c8197bd4aefb22a014937",
+    "enriched_at": "2026-07-09T23:12:01.020Z"
+  },
+  "visual_summary": "The page contains handwritten text in black ink on a white background. The handwriting is legible but informal, with some crossed-out words and corrections. There are no images, drawings, or printed text aside from handwriting. The text is organized in three distinct paragraphs with spaces between them.",
+  "layout": [
+    "handwritten title at top",
+    "three paragraphs of handwriting spaced vertically"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Castaways Vol. 1",
+      "confidence": "high",
+      "note": "Appears as a heading or title"
+    },
+    {
+      "location": "top left to top right",
+      "text_as_seen": "I was porking some girl in bed + Jeff brings in the main to make bed She left screaming + never came back",
+      "confidence": "medium",
+      "note": "Handwriting is somewhat uneven; some letter forms are unusual"
+    },
+    {
+      "location": "middle left to middle right",
+      "text_as_seen": "Wee are both in bed porking some girls I said what do you think, while he's shoving penicillin down my throat.",
+      "confidence": "high",
+      "note": "Handwriting is clearer here"
+    },
+    {
+      "location": "bottom left to bottom right",
+      "text_as_seen": "I went the whole day without speaking English, Jeff told everybody I was raised on a boat in Brazil, when I come out of the bathroom brushing my teeth & spit the foam on the floor, Jeff says that's how they do it in Brazil",
+      "confidence": "high",
+      "note": "Relatively clear handwriting"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

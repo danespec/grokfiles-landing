@@ -1,0 +1,101 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 87,
+  "page_id": "page_087",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_087.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_087.ocr.txt",
+  "image_metadata": {
+    "bytes": 10346477,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c5438d2d0a2222673265410d937cd167f26a44da8092b32c838328e681de4ece"
+  },
+  "ocr_text": "ar ae\nOO es\nWHEY CANTY TAIE THAT AWAY FROM ME _\n4 ce TT\nMusic ond byrics by =) a on\nmel- 9. dy Hay Set os py = am\nSang ca SSS\nMaderato (igatty) 4 4 = “19 Gheyatrn S35\nDob n= : Trt os Pg} +b ewe aS . rT Ml2 your fond on.\ni am } —\" a ==\nPitta Sy sae Pal eerie eens oY ee mae i ’ i a ha oo a a ee\nie a as ee ae etree ee ee\n~ist ol flat 20 SSS\na a —\n1 ters, po SSS SS SE :\nuy cal. Bhdie Frat a oe w . a _ 7 theegh they Ft SSS % .\nOur ro- mance wos't end on a sor-row-fu) nOte, Thoagh by to-mor-row youre ‘ iin so =—— ss .\n_ <p 5 = el\nDS SS ee 2 = P BERR\n, —_“ = ts ' D SSS aed\nee —— rs nd din. at\n. eS ee ee Sus.¢\n= PW I Wer ur bat Ss 2—\nSe a Sa = >=\no aime? se Fein Ft a s on ¢ | SS _ eee Nsip yur fe\nae a eee Se Per Me Fs SS\ngon «The onag Se end OL, | bat 6 thesangemiver wrcte, TH SSS ~ adds lh\nSh ee ee ee ap ae a? SS\nee ee ee eS = Remendy or a3 thes Se niall a mm. gf “ .\n: J ee BOR com freen met\nte SAN NO eee ee BNET BRAS EEE EMME HIRE ood D8 CSIRO MOOT aa a — en - :\n: . : ==\n’ o : = ”\not che pole a = 3 2 ae\nv en ee ee : 2 ae mt. * a\nsmroway youre jms SSS. a ‘ ‘The way you hold your ksifr,— Te way oe danced till\nSy : 2S =\nDy wr = =\n. - 5 ee\nCS. Dig care & haw —— *\nal 2 2 —<— Se + pug Milne wr ae = wa “le mrt oh SM ws\n2 DO cece soem: is a aaa A OTN Ll : Reo — a Seago =s\" =\n——— ‘ : ee a ae - 1 — “ate ‘The vmyyoutechmngad my ife._——___———~- No, ne! They\ncrave youreast may A708 ii) a . a5 =\n{i = Sa ae ad se ( i —\n— ta ee OF eS 7; re or — din :\npo Sah PntS : » :\noe Gent gt Adan Sot ee = Ob She — bi Met wr 7 ‘Ae . ie ae Boas = =\na Sc ee a ane <a ee See Sa Sree Te SSS\nha PR = a se aah ogi ae :- 7 apait tthe thay a -way from aT... | Hof Thay ean take ther a + wy = from\n— fo mas ert Re ae > , —_\nSS == ——4 ime a a = * a 7 ; ’\n‘ \\- = Se 2 eee sos. hT a. a a\n: co. es, ana aia aie E\nee ; 1. » Yr [z a |\nMine 97 =< = a a ” > hr: Baby whoa7 whl S Lad\n= a ail i¢ Sr ee — = =\n\\ aoe eee see = ee a ae oe —-\nSS ee 2 ———— =z se 7 -\n, ° itiiaiaili BS SS Se eee Oe Se eee ee eS\n3\nrrr\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains printed sheet music titled 'THEY CAN'T TAKE THAT AWAY FROM ME' with musical notations, lyrics, and chords on a white background. The content is organized in four rectangular sections arranged in two rows and two columns. The page also includes printed text indicating the song title, musical key, tempo indications, and credits to music and lyrics authors. The music notation includes staff lines, notes, rests, and dynamic markings. Some text is faint or blurred, with portions of lyrics and chord names partially obscured or difficult to read. There are no visible images, photos, drawings, handwritten notes, signatures, or dates on the page.",
+    "Layout: top-left music notation block",
+    "Layout: top-right music notation block",
+    "Layout: bottom-left music notation block",
+    "Layout: bottom-right music notation block"
+  ],
+  "observations": [
+    "The page contains printed sheet music titled 'THEY CAN'T TAKE THAT AWAY FROM ME' with musical notations, lyrics, and chords on a white background. The content is organized in four rectangular sections arranged in two rows and two columns. The page also includes printed text indicating the song title, musical key, tempo indications, and credits to music and lyrics authors. The music notation includes staff lines, notes, rests, and dynamic markings. Some text is faint or blurred, with portions of lyrics and chord names partially obscured or difficult to read. There are no visible images, photos, drawings, handwritten notes, signatures, or dates on the page.",
+    "Layout: top-left music notation block",
+    "Layout: top-right music notation block",
+    "Layout: bottom-left music notation block",
+    "Layout: bottom-right music notation block"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THEY CAN'T TAKE THAT AWAY FROM ME",
+    "Music and lyrics by GEORGE GERSHWIN and IRA GERSHWIN",
+    "Moderato (slightly)",
+    "Our romance won't end on a sorrowful note, Though by to-morrow you're",
+    "The song is end-ed, but as the songwriter wrote, The",
+    "The way you smile just beams, The way you sing off key",
+    "The way you hush my dreams, No, no! They can't take that a-way from me!",
+    "We may never, never meet a-gain On the sunny road to our colors",
+    "Still I'll al-ways keep the mem'ry of",
+    "The way you take you from me, I'll always your fond ca-",
+    "rest",
+    "Det",
+    "Throgh they take you from, I'll still pass o-ges",
+    "Refrain (not fast)",
+    "The way you wear your hat, The way you sip your tea, The way you hold your knife, The way we danced till three-",
+    "The way you've changed my life, No, no! They can't take that a-way from me!",
+    "Not They can't take that a-way from me",
+    "The way you wear your hat"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some text and musical notation areas are faint or partially obscured, making exact transcription difficult in those sections."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:40.651Z",
+    "response_id": "resp_09451a91dfcdd3e9006a502bd1306c81949a54f775ae68fc5d",
+    "raw_output_sha256": "2669d6b1f2b5078b1c739c7061b65f0aa57d7a07d48c6ad83e1cd6bf7458bea9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09451a91dfcdd3e9006a502bd1306c81949a54f775ae68fc5d",
+    "enriched_at": "2026-07-09T23:16:40.651Z"
+  },
+  "visual_summary": "The page contains printed sheet music titled 'THEY CAN'T TAKE THAT AWAY FROM ME' with musical notations, lyrics, and chords on a white background. The content is organized in four rectangular sections arranged in two rows and two columns. The page also includes printed text indicating the song title, musical key, tempo indications, and credits to music and lyrics authors. The music notation includes staff lines, notes, rests, and dynamic markings. Some text is faint or blurred, with portions of lyrics and chord names partially obscured or difficult to read. There are no visible images, photos, drawings, handwritten notes, signatures, or dates on the page.",
+  "layout": [
+    "top-left music notation block",
+    "top-right music notation block",
+    "bottom-left music notation block",
+    "bottom-right music notation block"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

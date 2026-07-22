@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Search The Book of Black | Grok Archive Hub</title>
+  <meta name="description" content="Noindex ad-free search interface for Book of Black OCR and manuscript leads, with verification status and direct reader links.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://grokarchivehub.com/book-of-black/search">
+  <meta name="gah-ad-eligible" content="false">
+  <meta name="gah-ad-policy" content="book-of-black-search">
+  <meta name="gah-indexability-policy" content="noindex,follow">
+  <link rel="stylesheet" href="/frontdoor/site.css">
+  <link rel="stylesheet" href="/book-of-black/book-of-black.css?v=reader-ledger-002">
+</head>
+<body class="bob-page" data-bob-page="search">
+  <header class="site-header bob-site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/"><span class="brand-mark">GA</span><span>Grok Archive Hub</span></a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+        <a data-route-link href="/book-of-black">Overview</a>
+        <a data-route-link href="/book-of-black/read">Reader</a>
+        <a data-route-link href="/book-of-black/ledger">Ledger</a>
+        <a data-route-link href="/book-of-black/methodology">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="bob-shell bob-search-main">
+    <section class="bob-page-title">
+      <p class="bob-kicker">Searchable manuscript and OCR interface</p>
+      <h1>Search the Book of Black</h1>
+      <p class="bob-lede">Search results are manuscript leads. OCR text is not verified transcription, and inferred identity is never verified identity.</p>
+      <div class="bob-warning" role="note">
+        <strong>No result is evidence by itself.</strong>
+        <span>Use results to open the page, inspect the claim as written, and compare it against archive records.</span>
+      </div>
+    </section>
+
+    <section class="bob-ack-gate compact" data-bob-search-ack>
+      <label class="bob-ack-box">
+        <input type="checkbox" data-bob-ack-checkbox>
+        <span>I understand that the Book of Black contains unverified hypotheses, candidate relationships, inferred identities, and unresolved research leads. I will not treat inclusion as proof.</span>
+      </label>
+      <button class="bob-button primary" type="button" data-bob-ack-button disabled>Enable manuscript search</button>
+    </section>
+
+    <section class="bob-search-app" data-bob-search-app hidden>
+      <form class="bob-search-form" data-bob-search-form>
+        <input type="search" name="q" placeholder="Exact phrase, person/entity term, alias, location, date, page, or document identifier" autocomplete="off">
+        <select name="status" aria-label="Resolution status">
+          <option value="">Any status</option>
+          <option value="CORROBORATED">Corroborated</option>
+          <option value="PARTIALLY_SUPPORTED">Partially supported</option>
+          <option value="CONTRADICTED">Contradicted</option>
+          <option value="UNRESOLVED">Unresolved</option>
+          <option value="RETIRED">Retired</option>
+          <option value="NOT_YET_TESTED">Not yet tested</option>
+        </select>
+        <input type="number" name="page" min="1" placeholder="Page">
+        <label class="bob-toggle"><input type="checkbox" name="verified_connection"> Verified archive connection</label>
+        <button type="submit">Search</button>
+      </form>
+      <p class="bob-search-status" data-bob-search-status>Enter a term or page number.</p>
+      <div class="bob-search-results" data-bob-search-results></div>
+    </section>
+  </main>
+
+  <footer class="bob-footer">
+    <div class="bob-shell">
+      <nav aria-label="Book of Black footer">
+        <a href="/book-of-black">Overview</a>
+        <a href="/book-of-black/read">Reader</a>
+        <a href="/book-of-black/ledger">Ledger</a>
+        <a href="/search">Archive search</a>
+      </nav>
+      <p>Book search finds manuscript leads. Archive search tests them.</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
+  <script data-cfasync="false" src="/book-of-black/book-of-black.js?v=GAH-BOB-ROCKET-004"></script>
+</body>
+</html>

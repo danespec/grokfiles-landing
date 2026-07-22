@@ -1,0 +1,11 @@
+accept-ranges: bytes
+connection: keep-alive
+content-encoding: gzip
+content-length: 2701
+content-type: text/html; charset=UTF-8
+date: Mon, 20 Jul 2026 00:01:28 GMT
+etag: "1fef-6021d6cc7d8d3"
+last-modified: Fri, 04 Aug 2023 18:54:22 GMT
+server: Apache
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding

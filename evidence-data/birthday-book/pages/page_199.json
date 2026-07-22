@@ -1,0 +1,96 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 199,
+  "page_id": "page_199",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_199.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_199.ocr.txt",
+  "image_metadata": {
+    "bytes": 11566571,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2130877631532839cc6a508420c45f9ed1901cb551534b2271e155feb17294dd"
+  },
+  "ocr_text": "Es oe = reeeNied a Call fom Ghislaine , whe L\nite tae a 7 8 va ingdg\ny Vb ghe said thy fit Haomght nied Caras ane buniows :\ncond a Cur ow ofa man.\n| pa were s og behind an Crorators cab, we —_\n| office at home om Lb 4% street ina tan SAVE onal dl\nBy Secfenk gad ur fv pus erst bate\ni Hat L had blel’seen be longing aman. LT remember:\n| than ler sc to losked Lhe a rove hein el tee: Kelpr aq\naren ie ne faiigarn wd Etat\n; a And Woy) omer ‘ Dru, pe Ar Armenaur ‘\n9 iin he and Ches ee wor bea! om (far Skool fifher\n| fiw mares Yor pnt feat Syminched- eve lovk (a mayof ©\na Pilaf inal hiwert, both aeons and yet ne |\n| “frat ts So Yom and noaned « b4 L fhonght..» ok, fhe\n| Ud Going well. Wither (0 munwfed of. being there, Yor asktol the\n© dp leave. wate. Yd that night togo 7 Florede -LDhad never}\n| head fungi ohne d and farfethad and yet I brn) |\n|| pend Yom ore nd. ck ct preston aia peed ke\n| eanrre: Hp na\n| HOUSE_OVERSIGHT_000199\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page containing a single handwritten letter with a painted purple border. The letter is written in black ink with cursive handwriting, centered on the page, and is clearly legible. The page background is white. The border is painted in several shades of purple and violet forming a rectangular frame around the text.",
+    "Layout: painted purple border surrounding the handwritten text",
+    "Layout: single block of cursive handwriting centered on the page"
+  ],
+  "observations": [
+    "Page containing a single handwritten letter with a painted purple border. The letter is written in black ink with cursive handwriting, centered on the page, and is clearly legible. The page background is white. The border is painted in several shades of purple and violet forming a rectangular frame around the text.",
+    "Layout: painted purple border surrounding the handwritten text",
+    "Layout: single block of cursive handwriting centered on the page"
+  ],
+  "dates": [
+    "March 22, 1993"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000199"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center of the page",
+      "text_as_seen": "I received a call from Ghislaine, who I had worked on (massaged) twice in the last few months, to work on her employer: 'He is a business man and wants you to work on his feet at his desk,' she said. My first thought was, 'corns and bunions and a curmudgeon of a man'. When I first set eyes on you, on March 22, 1993, you were sitting behind an enormous desk, in your office at home on 69th street, in a jean shirt and sweatpants and your feet were possibly the most beautiful that I had ever seen belonging to a man. I remember thinking that you looked like a more handsome Ralph Lauren. We moved over to a sitting area and I sat on a footstool and worked on your feet, while you, in an armchair, watched me and Ghislaine worked on your shoulders. After a few minutes you gave me that squinched-eye look (a mix of calculation and enjoyment, both devouring and yet submissive) that is so you, and moaned a bit and I thought... ok, this is going well. Within 10 minutes of my being there, you asked me to leave with you guys that night to go to Florida. I had never heard of anything so spontaneous and far-fetched and yet I knew that you were serious. I had a previous engagement (I was throwing a dinner party) and so you said you would see me when you got back and have your secretary call and schedule. You did... and my life was forever changed.",
+      "confidence": "high",
+      "note": "Handwriting is cursive and mostly clear with some informal variations."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:34:14.385Z",
+    "response_id": "resp_03282228cbec04da006a502fea29388197953d499caf276704",
+    "raw_output_sha256": "a712b266875eb1a1c2d674848f4b234b2a64f3920b86d311378c9a195fbb5d59"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03282228cbec04da006a502fea29388197953d499caf276704",
+    "enriched_at": "2026-07-09T23:34:14.385Z"
+  },
+  "visual_summary": "Page containing a single handwritten letter with a painted purple border. The letter is written in black ink with cursive handwriting, centered on the page, and is clearly legible. The page background is white. The border is painted in several shades of purple and violet forming a rectangular frame around the text.",
+  "layout": [
+    "painted purple border surrounding the handwritten text",
+    "single block of cursive handwriting centered on the page"
+  ],
+  "handwriting": [
+    {
+      "location": "center of the page",
+      "text_as_seen": "I received a call from Ghislaine, who I had worked on (massaged) twice in the last few months, to work on her employer: 'He is a business man and wants you to work on his feet at his desk,' she said. My first thought was, 'corns and bunions and a curmudgeon of a man'. When I first set eyes on you, on March 22, 1993, you were sitting behind an enormous desk, in your office at home on 69th street, in a jean shirt and sweatpants and your feet were possibly the most beautiful that I had ever seen belonging to a man. I remember thinking that you looked like a more handsome Ralph Lauren. We moved over to a sitting area and I sat on a footstool and worked on your feet, while you, in an armchair, watched me and Ghislaine worked on your shoulders. After a few minutes you gave me that squinched-eye look (a mix of calculation and enjoyment, both devouring and yet submissive) that is so you, and moaned a bit and I thought... ok, this is going well. Within 10 minutes of my being there, you asked me to leave with you guys that night to go to Florida. I had never heard of anything so spontaneous and far-fetched and yet I knew that you were serious. I had a previous engagement (I was throwing a dinner party) and so you said you would see me when you got back and have your secretary call and schedule. You did... and my life was forever changed.",
+      "confidence": "high",
+      "note": "Handwriting is cursive and mostly clear with some informal variations."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "March 22, 1993"
+  ],
+  "confidence": "high"
+}

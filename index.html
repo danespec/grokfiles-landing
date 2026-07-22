@@ -1,92 +1,484 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The GrokFiles Archive</title>
-  <meta name="description" content="Searchable Jeffrey Epstein files. Request read-only access." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Grok Archive Hub | Epstein Files, Evidence Archive &amp; Source-First Investigations</title>
+  <meta name="description" content="Grok Archive Hub is a source-first public archive for Epstein files, Barak records, visual evidence lanes, redacted files, receipt cards, confidence labels, and open receipt slots.">
+  <meta name="robots" content="index,follow">
   <meta name="google-adsense-account" content="ca-pub-2417980244192018">
+  <link rel="canonical" href="https://grokarchivehub.com/">
+  <meta property="og:site_name" content="Grok Archive Hub">
+  <meta property="og:title" content="Read the receipts. Follow the silence.">
+  <meta property="og:description" content="Grok Archive Hub turns source records, timelines, and evidence cards into readable investigations.">
+  <meta property="og:url" content="https://grokarchivehub.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Grok Archive Hub">
+  <meta name="twitter:description" content="Primary source Epstein files, EFTA evidence archive, death timeline, MCC records, and source-first investigations.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://grokarchivehub.com/#organization",
+        "name": "Grok Archive Hub",
+        "url": "https://grokarchivehub.com",
+        "description": "Source-first investigations and evidence archive.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Contact / Source Tips",
+          "url": "https://grokarchivehub.com/contact"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://grokarchivehub.com/#website",
+        "url": "https://grokarchivehub.com",
+        "name": "Grok Archive Hub",
+        "publisher": {
+          "@id": "https://grokarchivehub.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://grokarchivehub.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/frontdoor/site.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <h1>The GrokFiles Archive</h1>
-      <p class="sub">Searchable Jeffrey Epstein files — indexed, tagged, and built for serious researchers.</p>
-
-      <ul class="checks">
-        <li>Extensive collection of searchable, source-linked documents</li>
-        <li>Wiki-style browsing + fast search</li>
-        <li>Read-only access by approval (VPN-only)</li>
-      </ul>
-
-      <div class="cta-row">
-        <a class="btn btn-primary" 
-           href="https://docs.google.com/forms/d/e/1FAIpQLScyDJhbaigt__r_3LaeI1s-WhSaaKI3QNpedKN0Iu9jDZ3HEw/viewform?usp=header" 
-           target="_blank"
-            rel"noopener noreferrer">Request Access</a>
-        <a class="btn ghost" href="#how">How it works</a>
-      </div>
-
-      <div class="shot">
-        <img src="public/assets/Hero.png" alt="GrokFiles Archive preview"/>
-      </div>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/"><span class="brand-mark">GA</span><span>Grok Archive Hub</span></a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+        <a data-route-link href="/start">Start Here</a>
+        <a data-route-link href="/investigations">Investigations</a>
+        <a data-route-link href="/evidence-briefs">Evidence Briefs</a>
+        <a data-route-link href="/banking-records">Banking Records</a>
+        <a data-route-link href="/methodology">Methodology</a>
+        <a data-route-link href="https://grokarchivehub.com/book-of-black">Book of Black</a>
+        <a data-route-link href="/corrections">Corrections</a>
+        <a data-route-link href="/about">About</a>
+        <a class="nav-support" data-route-link href="/explore">Explore</a>
+      </nav>
     </div>
   </header>
 
-  <main class="main">
-    <section class="panel" id="request">
-      <h2>Request Access to the Archive</h2>
-      <p>
-        Due to sensitive content, access is gated. We grant <strong>read-only</strong> access to approved users.
-        Use the request form to be considered.
-      </p>
-      <a class="btn btn-primary" 
-         href="https://docs.google.com/forms/d/e/1FAIpQLScyDJhbaigt__r_3LaeI1s-WhSaaKI3QNpedKN0Iu9jDZ3HEw/viewform?usp=header" 
-         target="_blank"
-         rel="noopener noreferrer">Request Access</a>
-      <p class="fine">
-        No public downloads. No self-signup. VPN-only access for approved users.
-      </p>
-    </section>
-
-    <section class="cards" id="how">
-      <h2>How it Works</h2>
-      <div class="card-grid">
-        <div class="card">
-          <div class="icon">📝</div>
-          <h3>Fill Out Form</h3>
-          <p>Provide your email + a short reason for access.</p>
+  <main>
+    <section class="hero">
+      <div class="page-shell hero-grid">
+        <div>
+          <p class="kicker">Evidence newsroom · Public records · Source-first</p>
+          <h1>Original investigations, attached to receipts.</h1>
+          <p class="hero-lede">Grok Archive Hub now leads with human-readable investigations, document autopsies, timeline reconstructions, contradiction ledgers, and open questions. Search remains available, but the public front door starts with the story and ends at the source.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="/investigations">Read Investigations <span aria-hidden="true">→</span></a>
+            <a class="button" href="/start">Start Here</a>
+            <a class="button ghost" href="/explore">Explore the Archive</a>
+          </div>
         </div>
-        <div class="card">
-          <div class="icon">🔍</div>
-          <h3>Review Process</h3>
-          <p>We review requests and follow up with next steps.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🔒</div>
-          <h3>VPN Access</h3>
-          <p>Approved users access the wiki via a secure VPN invite.</p>
-        </div>
-      </div>
-
-      <div class="rules">
-        <h3>Rules</h3>
-        <ul>
-          <li>No scraping, brute forcing, or automated downloading.</li>
-          <li>No reposting private links or mirrors.</li>
-          <li>Read-only. Curation/edits handled by admin.</li>
-        </ul>
+        <aside class="hero-note">
+          <span class="label">Archive standard</span>
+          <p>Claim -> Source -> Bias -> Silence -> Confidence. Absence is logged as silence, not converted into proof.</p>
+        </aside>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>© <span id="y"></span> GrokFiles Archive • Public landing only • Private vault via VPN</p>
-    </footer>
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Current work</p>
+            <h2>Newest editorial products.</h2>
+          </div>
+          <p>The latest public releases surface source-bound investigations, evidence briefs, and document autopsies without burying older featured work.</p>
+        </div>
+        <div class="dispatch-grid">
+          <article class="dispatch-card current-work-card">
+            <span class="number">01</span>
+            <p class="eyebrow">Latest evidence brief</p>
+            <h3>Todd Blanche “No Evidence” Evidence Brief</h3>
+            <p>A source-bound brief separating Todd Blanche's July 16 statement from DOJ's July 17 records-release posture.</p>
+            <p class="card-date">Evidence Brief · Published 2026-07-20</p>
+            <p class="card-url">https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence</p>
+            <div class="button-row"><a class="button primary" href="/evidence-briefs/todd-blanche-no-evidence" aria-label="Read evidence brief: Todd Blanche no evidence">Read evidence brief</a></div>
+          </article>
+          <article class="dispatch-card current-work-card">
+            <span class="number">02</span>
+            <p class="eyebrow">Latest investigation</p>
+            <h3>New Mexico-DOJ Epstein Records Standoff</h3>
+            <p>A legal-mechanism tracker for New Mexico DOJ's request, DOJ's public position, and the July 31 deadline path.</p>
+            <p class="card-date">Investigation · Published 2026-07-19</p>
+            <p class="card-url">https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records</p>
+            <div class="button-row"><a class="button primary" href="/investigations/new-mexico-doj-epstein-records" aria-label="Open investigation: New Mexico DOJ Epstein records standoff">Open investigation</a></div>
+          </article>
+          <article class="dispatch-card current-work-card">
+            <span class="number">03</span>
+            <p class="eyebrow">Latest document autopsy</p>
+            <h3>Doug Band Transcript Autopsy</h3>
+            <p>A claim-level reading of the House Oversight transcript that separates established testimony from unsupported inferences.</p>
+            <p class="card-date">Document Autopsy · Published 2026-07-19</p>
+            <p class="card-url">https://grokarchivehub.com/document-autopsies/doug-band-transcript</p>
+            <div class="button-row"><a class="button primary" href="/document-autopsies/doug-band-transcript" aria-label="Read document autopsy: Doug Band transcript">Read document autopsy</a></div>
+          </article>
+          <article class="dispatch-card current-work-card">
+            <span class="number">04</span>
+            <p class="eyebrow">More recent work</p>
+            <h3>Leon Black Transcript Autopsy</h3>
+            <p>A source-cited autopsy of the official transcript, subpoena record, Apollo disclosures, and adjacent release context.</p>
+            <p class="card-date">Document Autopsy · Published 2026-07-19</p>
+            <p class="card-url">https://grokarchivehub.com/document-autopsies/leon-black-transcript</p>
+            <div class="button-row"><a class="button primary" href="/document-autopsies/leon-black-transcript" aria-label="Read document autopsy: Leon Black transcript">Read document autopsy</a></div>
+          </article>
+          <article class="dispatch-card current-work-card">
+            <span class="number">05</span>
+            <p class="eyebrow">More recent work</p>
+            <h3>EFTA Compliance Tracker</h3>
+            <p>A primary-source tracker for Sullivan's EFTA order, DOJ's show-cause response, and unresolved source gaps.</p>
+            <p class="card-date">Compliance Tracker · Published 2026-07-18</p>
+            <p class="card-url">https://grokarchivehub.com/investigations/efta-compliance-tracker</p>
+            <div class="button-row"><a class="button primary" href="/investigations/efta-compliance-tracker" aria-label="Open compliance tracker: EFTA compliance tracker">Open compliance tracker</a></div>
+          </article>
+        </div>
+        <div class="button-row">
+          <a class="button primary" href="/investigations">Open all 15 investigations</a>
+          <a class="button" href="/document-autopsies">Document autopsies</a>
+          <a class="button" href="/evidence-briefs">Evidence briefs</a>
+          <a class="button" href="/timeline-reconstructions">Timeline reconstructions</a>
+          <a class="button" href="/contradiction-ledger">Contradiction ledger</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell split">
+        <div class="feature-panel gold">
+          <p class="eyebrow">Latest findings</p>
+          <h2>What changed in this originality pass.</h2>
+          <p>The public site now has a newsroom architecture with Investigations, Evidence Briefs, Document Autopsies, Timeline Reconstructions, Contradiction Ledger, Open Questions, Archive Dispatches, Methodology, Corrections, and About / Contact routes.</p>
+          <div class="route-list">
+            <a class="route-link" href="/investigations/doj-oig-report-as-backbone"><strong>OIG report backbone</strong><span>Official source, not shortcut.</span></a>
+            <a class="route-link" href="/investigations/autopsy-exhibit-list-limits"><strong>Autopsy pointer limits</strong><span>Pointer is not full report.</span></a>
+            <a class="route-link" href="/investigations/open-receipt-slots-epstein-death"><strong>Open receipt slots</strong><span>Gaps stay visible.</span></a>
+            <a class="route-link" href="/investigations/fara-review-signals-not-legal-conclusions"><strong>FARA review signals</strong><span>Review signal, not allegation.</span></a>
+          </div>
+        </div>
+        <div class="feature-panel">
+          <p class="eyebrow">Recent document discoveries</p>
+          <h2>Open the record, then read the claim.</h2>
+          <div class="route-list">
+            <a class="route-link" href="/archive/EFTA00039025"><strong>EFTA00039025</strong><span>DOJ OIG report source card.</span></a>
+            <a class="route-link" href="/archive/EFTA00039356"><strong>EFTA00039356</strong><span>Autopsy exhibit-list pointer.</span></a>
+            <a class="route-link" href="/archive/EFTA00039416"><strong>EFTA00039416</strong><span>CH0080 file-window card.</span></a>
+            <a class="route-link" href="/archive/EFTA00039660"><strong>EFTA00039660/661</strong><span>Watch-status review lane.</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Evidence images</p>
+            <h2>Primary records stay one click away.</h2>
+          </div>
+          <p>Visual source renders are evidence aids, not decoration. They let readers inspect the artifact before accepting the editorial claim.</p>
+        </div>
+        <div class="prose-grid">
+          <a class="info-card" href="/source-renders/EFTA00039356-exhibit-list.png">
+            <img src="/source-renders/EFTA00039356-exhibit-list.png" alt="EFTA00039356 exhibit-list source render" loading="lazy">
+            <h3>EFTA00039356 exhibit-list render</h3>
+            <p>Used by the autopsy exhibit-list limits investigation.</p>
+          </a>
+          <a class="info-card" href="/source-renders/EFTA00039416-page2.png">
+            <img src="/source-renders/EFTA00039416-page2.png" alt="EFTA00039416 page 2 source render" loading="lazy">
+            <h3>EFTA00039416 CH0080 page render</h3>
+            <p>Used by the CH0080 file-window document autopsy.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="feature-panel">
+          <p class="eyebrow">Reader path</p>
+          <h2>Start with the story. End at the receipt.</h2>
+          <p>Use one predictable path: start, read a story, open its evidence page, inspect the source layer, then return to the story or topic directory.</p>
+          <div class="route-list">
+            <a class="route-link" href="/start"><strong>Start Here</strong><span>Reader path</span></a>
+            <a class="route-link" href="/dispatches/epstein-death"><strong>Epstein Death Dispatch</strong><span>Story layer</span></a>
+            <a class="route-link" href="/research/evidence/epstein-death"><strong>Epstein Evidence Lanes</strong><span>Proof layer</span></a>
+            <a class="route-link" href="/search"><strong>Search Archive</strong><span>Inspect records</span></a>
+            <a class="route-link" href="https://wiki.grokarchivehub.com/research-index"><strong>Research Index</strong><span>Return to topic directory</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="feature-panel gold">
+          <p class="eyebrow">Recently added</p>
+          <h2>Latest public lanes and reader guides.</h2>
+          <p>Updated through July 20, 2026 — see <a class="text-link" href="/live">/live</a> for the full changelog. Recently added: Todd Blanche evidence brief, New Mexico-DOJ records standoff, Doug Band and Leon Black transcript autopsies, EFTA compliance tracker, Banking Records, the Birthday Book evidence reader, Visual Evidence Lane, Redacted Files Lane, and Barak source-review lanes.</p>
+          <div class="route-list">
+            <a class="route-link" href="/evidence-briefs/todd-blanche-no-evidence"><strong>Todd Blanche “No Evidence”</strong><span>Evidence brief separating the July 16 claim from the July 17 records-release posture.</span></a>
+            <a class="route-link" href="/investigations/new-mexico-doj-epstein-records"><strong>New Mexico-DOJ Standoff</strong><span>Legal-mechanism tracker for the records request and deadline path.</span></a>
+            <a class="route-link" href="/document-autopsies/doug-band-transcript"><strong>Doug Band Transcript Autopsy</strong><span>Claim-level reading of the House Oversight transcript.</span></a>
+            <a class="route-link" href="/document-autopsies/leon-black-transcript"><strong>Leon Black Transcript Autopsy</strong><span>Transcript, subpoena, disclosure, and context review.</span></a>
+            <a class="route-link" href="/investigations/efta-compliance-tracker"><strong>EFTA Compliance Tracker</strong><span>Order, show-cause, and unresolved-source-gap tracker.</span></a>
+            <a class="route-link" href="/visual-evidence"><strong>Visual Evidence</strong><span>Raw visual files stay separate from public receipt claims.</span></a>
+            <a class="route-link" href="/redacted-files"><strong>Redacted Files</strong><span>Redactions are document conditions, not hidden-fact proof.</span></a>
+            <a class="route-link" href="/barak/source-map"><strong>Barak Source Map</strong><span>Record-type legend before interpretation.</span></a>
+            <a class="route-link" href="/barak/receipts"><strong>Barak Receipts</strong><span>Source-linked receipt cards and open slots.</span></a>
+            <a class="route-link" href="/barak/entities"><strong>Barak Entities</strong><span>Identity-control layer for names and organizations.</span></a>
+            <a class="route-link" href="/barak/timeline"><strong>Barak Timeline</strong><span>Chronology context without causation claims.</span></a>
+            <a class="route-link" href="/dispatches/how-to-read-the-barak-records"><strong>How to Read the Barak Records</strong><span>Method-first public reader guide.</span></a>
+            <a class="route-link" href="/banking-records"><strong>Banking Records</strong><span>Search and contextualize more than 2,000 classified financial records by institution, account title, role, date, and archive ID.</span></a>
+            <a class="route-link" href="/research/evidence/birthday-book"><strong>Birthday Book Evidence Reader</strong><span>Page images, source provenance, curated transcripts, and attribution-status labels.</span></a>
+            <a class="route-link" href="https://grokarchivehub.com/book-of-black"><strong>Book of Black</strong><span>Adversarial manuscript access with warnings, source manifest, search, and ledger scaffolding.</span></a>
+            <a class="route-link" href="/methodology"><strong>Methodology</strong><span>How to read archive records without overclaiming.</span></a>
+            <a class="route-link" href="/live"><strong>Live changelog</strong><span>Current build notes and status.</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Featured stories</p>
+            <h2>Three places to begin.</h2>
+          </div>
+          <p>Home stays an orientation page. These three stories are the forward path into narrative, proof, and source-review lanes.</p>
+        </div>
+        <div class="dispatch-grid">
+          <a class="dispatch-card" href="/dispatches/epstein-death">
+            <span class="number">01</span>
+            <h3>Epstein Death: What the Records Actually Show</h3>
+            <p>A source-first reader dispatch through the timeline, receipts, confidence labels, silences, and unresolved open slots.</p>
+            <div class="card-meta"><span class="badge receipt">15 indexed source IDs</span><span class="badge live">Featured</span></div>
+          </a>
+          <a class="dispatch-card" href="/dispatches/how-to-read-the-barak-records">
+            <span class="number">02</span>
+            <h3>How to Read the Barak Records</h3>
+            <p>A method-first reader guide for source lanes, receipts, entities, timeline context, and FARA review signals.</p>
+            <div class="card-meta"><span class="badge receipt">Reader guide</span><span class="badge">Barak stack</span></div>
+          </a>
+          <a class="dispatch-card" href="/dispatches/epstein-open-receipt-slots">
+            <span class="number">03</span>
+            <h3>Open Receipt Slots in the Epstein Record</h3>
+            <p>A public-safe tracker for missing context, unresolved source checks, correction history, and evidence gaps.</p>
+            <div class="card-meta"><span class="badge open">Open slots</span><span class="badge">Review structure</span></div>
+          </a>
+          <a class="dispatch-card" href="/banking-records">
+            <span class="number">04</span>
+            <h3>Banking Records</h3>
+            <p>Search and contextualize more than 2,000 classified financial records by institution, account title, role, date, and archive ID.</p>
+            <div class="card-meta"><span class="badge receipt">Financial records</span><span class="badge">Discovery lane</span></div>
+            <span class="text-link">Explore Banking Records</span>
+          </a>
+          <a class="dispatch-card" href="https://grokarchivehub.com/book-of-black">
+            <span class="number">05</span>
+            <h3>The Book of Black</h3>
+            <p>An adversarial research manuscript for testing hypotheses against the documentary record.</p>
+            <div class="card-meta"><span class="badge open">Hypothesis engine</span><span class="badge">Unverified manuscript</span></div>
+            <span class="text-link">Enter the Book</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Investigation stacks</p>
+            <h2>Claim, confidence, receipts, status.</h2>
+          </div>
+          <p>Every stack shows its current evidentiary posture. Counts refer to published cards or unique source identifiers—not conclusions.</p>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <span class="badge live">Active</span>
+            <h3>Custody &amp; Death</h3>
+            <p><strong>Claim focus:</strong> reconstruct the custody timeline and identify where the public record is complete, conflicting, or silent.</p>
+            <div class="stack-metrics">
+              <div class="metric"><span>Confidence</span><strong>Mixed by claim</strong></div>
+              <div class="metric"><span>Receipt count</span><strong>15 source IDs</strong></div>
+              <div class="metric"><span>Status</span><strong>Published / updating</strong></div>
+              <div class="metric"><span>Reader path</span><strong>Updated through /live</strong></div>
+            </div>
+            <a class="text-link" href="/dispatches/epstein-death">Read the first dispatch →</a>
+          </article>
+          <article class="stack-card">
+            <span class="badge live">Active</span>
+            <h3>Barak Archive</h3>
+            <p><strong>Claim focus:</strong> organize source references, logistics, entities, and candidate lanes while preserving bias and silence notes.</p>
+            <div class="stack-metrics">
+              <div class="metric"><span>Confidence</span><strong>Card-specific</strong></div>
+              <div class="metric"><span>Receipt count</span><strong>298 published cards</strong></div>
+              <div class="metric"><span>Status</span><strong>Portal live</strong></div>
+              <div class="metric"><span>Navigation</span><strong>Updated through /live</strong></div>
+            </div>
+            <a class="text-link" href="/barak">Open evidence portal →</a>
+          </article>
+          <article class="stack-card">
+            <span class="badge receipt">Evidence lane</span>
+            <h3>Timelines &amp; Travel</h3>
+            <p><strong>Claim focus:</strong> compare calendar and flight-log references while avoiding identity merges or unsupported attendance claims.</p>
+            <div class="stack-metrics">
+              <div class="metric"><span>Confidence</span><strong>Source-bound</strong></div>
+              <div class="metric"><span>Receipt count</span><strong>162 source IDs</strong></div>
+              <div class="metric"><span>Status</span><strong>Indexed</strong></div>
+              <div class="metric"><span>Reader path</span><strong>See /live</strong></div>
+            </div>
+            <a class="text-link" href="/research/evidence/calendar-epstein">Open timeline evidence →</a>
+          </article>
+          <article class="stack-card">
+            <span class="badge open">Open receipt slots</span>
+            <h3>FARA &amp; Influence Leads</h3>
+            <p><strong>Claim focus:</strong> identify records relevant to direction, benefit, U.S. activity, and registration silence without asserting legal status.</p>
+            <div class="stack-metrics">
+              <div class="metric"><span>Confidence</span><strong>Lead-stage only</strong></div>
+              <div class="metric"><span>Receipt count</span><strong>0 adjudicated claims</strong></div>
+              <div class="metric"><span>Status</span><strong>Open slots</strong></div>
+              <div class="metric"><span>Review status</span><strong>See /live</strong></div>
+            </div>
+            <a class="text-link" href="/search?q=FARA">Search current records →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell split">
+        <div class="feature-panel">
+          <p class="eyebrow">Evidence vault</p>
+          <h2>Dispatches tell the story. The archive proves it.</h2>
+          <p>Move from readable narrative into the proof layer: original records, EFTA pages, source snippets, research indexes, methodology, and the full evidence cockpit.</p>
+          <div class="button-row">
+            <a class="button primary" href="/archive">Enter the Evidence Vault</a>
+            <a class="button" href="/banking-records">Explore Banking Records</a>
+            <a class="button" href="/wiki">Open the Wiki</a>
+            <a class="button" href="/search">Search Records</a>
+            <a class="button" href="https://grokarchivehub.com/book-of-black">Book of Black</a>
+          </div>
+        </div>
+        <div class="feature-panel gold">
+          <p class="eyebrow">How we read</p>
+          <blockquote class="quote">Claim. Source. Bias. Silence. Confidence.</blockquote>
+          <p>Those five checks travel with every responsible investigation. If a source does not support a conclusion, the conclusion does not get promoted.</p>
+          <a class="text-link" href="/faq">Read the evidence methodology FAQ →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="feature-panel">
+          <p class="eyebrow">Built by One Person</p>
+          <h2>Built by One Person</h2>
+          <p>Grok Archive Hub is built by one person: a husband, father, brother, son, blue-collar worker, and two-time OEF veteran who came home from war with his eyes open. The archive exists to make public records readable: receipts first, conclusions second, corrections visible, open questions preserved.</p>
+          <div class="button-row"><a class="button primary" href="/about-the-operator">Meet the Operator</a><a class="button" href="/start">Start Reading</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Membership layer</p>
+            <h2>All Access</h2>
+          </div>
+          <p>Membership supports the archive and unlocks the protected Reading Room experience when Patreon confirms an active entitled membership. External PayPal and Venmo support does not activate member access.</p>
+        </div>
+        <div class="membership-card">
+          <div class="membership-price">
+            <span class="badge receipt">Patreon access</span>
+            <h3>All Access</h3>
+            <div class="price">Priced on Patreon</div>
+            <p>Patreon handles checkout, billing, cancellation, and tier details. Portal access requires an active entitled Patreon membership. Public evidence remains open.</p>
+          </div>
+          <div class="membership-benefits">
+            <ul class="clean-list">
+              <li>Reading Room notes</li>
+              <li>Source request queue</li>
+              <li>Early receipt drops</li>
+              <li>Ask-the-archive requests</li>
+              <li>Timeline updates</li>
+              <li>Cancel anytime</li>
+            </ul>
+            <div class="button-row">
+              <a class="button primary" data-cta="patreon-home-membership" href="https://www.patreon.com/grokarchivehub/membership?utm_source=grokarchivehub&amp;utm_medium=site&amp;utm_campaign=home_membership_card" target="_blank" rel="noopener noreferrer">Join on Patreon</a>
+              <a class="button" href="/auth/patreon/start?return_to=/members">Sign in with Patreon</a>
+              <a class="button" href="/members">Member Portal</a>
+            </div>
+          </div>
+        </div>
+        <section class="feature-panel gold conversion-cta" data-cta="support-archive">
+          <p class="eyebrow">Support the Archive</p>
+          <h2>Support the Archive</h2>
+          <p>Grok Archive Hub keeps public proof open. Support helps pay for document hosting, OCR and archive processing, source preservation, search infrastructure, and evidence-page development. Contributions do not affect access to public evidence, findings, corrections, or editorial treatment.</p>
+          <div class="button-row">
+            <a class="button primary" data-cta="support-archive-patreon" href="https://www.patreon.com/grokarchivehub?utm_source=grokarchivehub&amp;utm_medium=site&amp;utm_campaign=support_bridge" target="_blank" rel="noopener noreferrer" aria-label="Support Grok Archive Hub on Patreon (opens in a new tab)">Support on Patreon</a>
+            <a class="button" href="/support">Support details</a>
+            <a class="button" href="/dispatches">View Public Dispatches</a>
+            <a class="button" href="/search">Search the Archive</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell split">
+        <div class="feature-panel gold">
+          <p class="eyebrow">Join the cause</p>
+          <h2>Support slower, source-first work.</h2>
+          <p>Contributions help maintain public archive access, source review, timeline upkeep, and reader-facing research tools. Support does not buy a conclusion, placement, or favorable coverage.</p>
+          <div class="button-row"><a class="button primary" data-cta="support-archive-patreon" href="https://www.patreon.com/grokarchivehub?utm_source=grokarchivehub&amp;utm_medium=site&amp;utm_campaign=support_bridge" target="_blank" rel="noopener noreferrer" aria-label="Support Grok Archive Hub on Patreon (opens in a new tab)">Support on Patreon</a><a class="button" data-cta="support-archive-paypal" href="https://www.paypal.com/ncp/payment/7AL9TB6477KRG" rel="noopener noreferrer" target="_blank">Support with PayPal</a><a class="button" data-cta="support-archive-venmo" href="https://account.venmo.com/u/grokarchivehub" rel="noopener noreferrer" target="_blank">Support with Venmo</a><a class="button" href="/support">Support details</a></div>
+        </div>
+        <div class="feature-panel">
+          <p class="eyebrow">Latest receipts</p>
+          <h2>Follow what changed.</h2>
+          <p>The live page separates newly published material, updated confidence notes, and open receipt slots so readers can see the difference.</p>
+          <div class="button-row"><a class="button" href="/live">Open live updates</a></div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <div class="footer-grid">
+        <div>
+          <h2>Grok Archive Hub</h2>
+          <p>Independent, source-first publishing built on public records, readable timelines, and an attached proof layer.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/start">Start Here</a><a href="/investigations">Investigations</a><a href="/evidence-briefs">Evidence Briefs</a><a href="/banking-records">Banking Records</a><a href="/document-autopsies">Document Autopsies</a><a href="/timeline-reconstructions">Timeline Reconstructions</a><a href="/contradiction-ledger">Contradiction Ledger</a><a href="/open-questions">Open Questions</a><a href="/dispatches">Archive Dispatches</a><a href="/methodology">Methodology</a><a href="https://grokarchivehub.com/book-of-black">Book of Black</a><a href="/corrections">Corrections</a><a href="/about">About</a><a href="/contact">Contact</a><a href="/explore">Explore the Archive</a>
+          <a href="/archive">Archive</a><a href="/search">Search</a>
+          <a href="/membership">Membership</a><a data-cta="support-archive-paypal" href="https://www.paypal.com/ncp/payment/7AL9TB6477KRG" rel="noopener noreferrer" target="_blank">Support with PayPal</a><a data-cta="support-archive-venmo" href="https://account.venmo.com/u/grokarchivehub" rel="noopener noreferrer" target="_blank">Venmo @grokarchivehub</a>
+          <a data-cta="support-archive-patreon" href="https://www.patreon.com/grokarchivehub?utm_source=grokarchivehub&amp;utm_medium=site&amp;utm_campaign=support_bridge" target="_blank" rel="noopener noreferrer">Support on Patreon</a><a href="/faq">FAQ</a><a href="/contact">Contact / Source Tips</a>
+        </nav>
+        <div>
+          <p><strong>Proof layer:</strong></p>
+          <p><a class="text-link" href="/wiki">Wiki / Evidence Cockpit</a><br><a class="text-link" href="https://wiki.grokarchivehub.com/research-index">Research Index</a><br><a class="text-link" href="/methodology">Methodology</a></p>
+        </div>
+      </div>
+      <p class="disclaimer">Presence-only archival research. No guilt or conduct implied unless adjudicated. A source reference may establish presence in a record while remaining silent about purpose, knowledge, relationship, or wrongdoing.</p>
+    </div>
+  </footer>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 149,
+  "page_id": "page_149",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_149.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_149.ocr.txt",
+  "image_metadata": {
+    "bytes": 18112371,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "56dc411af766adb9392b3a49ed34d164650331926ca8d417da677066a9fcb735"
+  },
+  "ocr_text": "|\nu ‘ =\nwie eae Se )))/,\na Oe Ce wee\n: en P\n: | So eee ere\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Two zebras standing on green grass with a blurred background; one zebra is mounting the other from behind.",
+    "Layout: Full-page color photograph of zebras",
+    "Photo/image candidate at Full page: Color photograph showing two zebras on grass: one zebra mounting another zebra from behind."
+  ],
+  "observations": [
+    "Two zebras standing on green grass with a blurred background; one zebra is mounting the other from behind.",
+    "Layout: Full-page color photograph of zebras",
+    "Photo/image candidate at Full page: Color photograph showing two zebras on grass: one zebra mounting another zebra from behind."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000149"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:26:15.980Z",
+    "response_id": "resp_074f1f896e171e2a006a502e122ff08193bd77ae1b699ab2cb",
+    "raw_output_sha256": "169c7c9b14c7c77d5c221bc76f3ab06a13e0ddf50dd8948c6218b3c3f90a1fbe"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_074f1f896e171e2a006a502e122ff08193bd77ae1b699ab2cb",
+    "enriched_at": "2026-07-09T23:26:15.980Z"
+  },
+  "visual_summary": "Two zebras standing on green grass with a blurred background; one zebra is mounting the other from behind.",
+  "layout": [
+    "Full-page color photograph of zebras"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Full page",
+      "description": "Color photograph showing two zebras on grass: one zebra mounting another zebra from behind.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

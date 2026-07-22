@@ -1,0 +1,105 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 182,
+  "page_id": "page_182",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_182.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_182.ocr.txt",
+  "image_metadata": {
+    "bytes": 3911560,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2497058fdf2d7cea7f67e3e813c78dbfb62fe8124714c7b52f3ad8a0dc5e26cc"
+  },
+  "ocr_text": "The mathematics of life\nMartin Nowak\nEpstein institute, Harvard University\nThe primordial soup, here or elsewhere, generated a\nquasispecies of aperiodic macromolecules. Quasispecies\nlive in sequence space, which is a collection of hyper-\ndimensional cubes. Each cube arises by ordering all __\n\" : possible sequences of a certain length in such a way that\nnearest neighbors differ in only one position. The length of\nifte genome determines the dimension of the cube. A very\nsmall gene, for example, lives in a 1000 dimensional cube.\nits sequence is 1 particular choice out of 10° possibilities.\nFor comparison there are only 40° protons in our universe.\nQuasispecies live in\ns sequence space\nL= 4 dimensions .\n~ a\nRetroviruses: L=10000 Bacteria: L=1000000 Humans:1=3000000000\nHOUSE_OVERSIGHT_000182\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a printed text passage titled 'The mathematics of life' by Martin Nowak, associated with the Epstein Institute, Harvard University. Below the title and text, there is a graphical diagram illustrating quasispecies living in a sequence space, represented as a 4-dimensional hypercube with nodes labeled by binary numbers. The diagram includes text labels such as 'L=4 dimensions', 'Manhattan metric', and lists 'Retroviruses: L=10000', 'Bacteria: L=1000000', and 'Humans: L=3000000000'. The page number 182 is indicated in the footer as 'HOUSE_OVERSIGHT_000182'.",
+    "Layout: Title at top: 'The mathematics of life' with author and affiliation below",
+    "Layout: Paragraph text body explaining sequence space and quasispecies",
+    "Layout: Graphic illustration of a 4-dimensional hypercube with binary node labels",
+    "Layout: Labels and annotations around the graphic",
+    "Layout: Footer with document ID and page number",
+    "Drawing candidate at center lower half: Colored nodes forming a hypercube diagram representing quasispecies sequence space with binary labels"
+  ],
+  "observations": [
+    "The page contains a printed text passage titled 'The mathematics of life' by Martin Nowak, associated with the Epstein Institute, Harvard University. Below the title and text, there is a graphical diagram illustrating quasispecies living in a sequence space, represented as a 4-dimensional hypercube with nodes labeled by binary numbers. The diagram includes text labels such as 'L=4 dimensions', 'Manhattan metric', and lists 'Retroviruses: L=10000', 'Bacteria: L=1000000', and 'Humans: L=3000000000'. The page number 182 is indicated in the footer as 'HOUSE_OVERSIGHT_000182'.",
+    "Layout: Title at top: 'The mathematics of life' with author and affiliation below",
+    "Layout: Paragraph text body explaining sequence space and quasispecies",
+    "Layout: Graphic illustration of a 4-dimensional hypercube with binary node labels",
+    "Layout: Labels and annotations around the graphic",
+    "Layout: Footer with document ID and page number",
+    "Drawing candidate at center lower half: Colored nodes forming a hypercube diagram representing quasispecies sequence space with binary labels"
+  ],
+  "dates": [],
+  "document_strings": [
+    "The mathematics of life",
+    "Martin Nowak",
+    "Epstein Institute, Harvard University",
+    "The primordial soup, here or elsewhere, generated a quasispecies of aperiodic macromolecules. Quasispecies live in sequence space, which is a collection of hyper-dimensional cubes. Each cube arises by ordering all possible sequences of a certain length in such a way that nearest neighbors differ in only one position. The length of the genome determines the dimension of the cube. A very small gene, for example, lives in a 1000 dimensional cube. Its sequence is 1 particular choice out of 10^600 possibilities.",
+    "For comparison there are only 10^80 protons in our universe.",
+    "Quasispecies live in sequence space",
+    "L= 4 dimensions",
+    "Manhattan metric",
+    "Retroviruses: L=10000",
+    "Bacteria: L=1000000",
+    "Humans: L=3000000000",
+    "HOUSE_OVERSIGHT_000182"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:31:19.591Z",
+    "response_id": "resp_0f581f5e20aa51e5006a502f3f62c88196b40a2fe9a748cebe",
+    "raw_output_sha256": "8d076e84e04093d2dc47805114fa77d933c1e900917265b29393b5015a908c03"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f581f5e20aa51e5006a502f3f62c88196b40a2fe9a748cebe",
+    "enriched_at": "2026-07-09T23:31:19.591Z"
+  },
+  "visual_summary": "The page contains a printed text passage titled 'The mathematics of life' by Martin Nowak, associated with the Epstein Institute, Harvard University. Below the title and text, there is a graphical diagram illustrating quasispecies living in a sequence space, represented as a 4-dimensional hypercube with nodes labeled by binary numbers. The diagram includes text labels such as 'L=4 dimensions', 'Manhattan metric', and lists 'Retroviruses: L=10000', 'Bacteria: L=1000000', and 'Humans: L=3000000000'. The page number 182 is indicated in the footer as 'HOUSE_OVERSIGHT_000182'.",
+  "layout": [
+    "Title at top: 'The mathematics of life' with author and affiliation below",
+    "Paragraph text body explaining sequence space and quasispecies",
+    "Graphic illustration of a 4-dimensional hypercube with binary node labels",
+    "Labels and annotations around the graphic",
+    "Footer with document ID and page number"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center lower half",
+      "description": "Colored nodes forming a hypercube diagram representing quasispecies sequence space with binary labels",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

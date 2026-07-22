@@ -1,0 +1,209 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 169,
+  "page_id": "page_169",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_169.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_169.ocr.txt",
+  "image_metadata": {
+    "bytes": 11890666,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "c415895f9023015bc8c2274a7a5cd82cc48cdad1c316e9d224120db7798b1dd1"
+  },
+  "ocr_text": "— eee ee ¢ es ~~ Gil eee\na * tile » val Suri?)\n= 3 ee ee f FF = 2 ‘ila m3 oe ? ~ 3\n34 e 2 “@.. 2S Val \\ >t | £\nPp _— ee ANS a8:\n2s “nY fe r a _ Fe Lie NS e\n* Tg PEEP a a ‘\na 7K Chocolate Chip Cookies\n= * « —_s yA ee aay s ype on\na Be ocr Prey YT ‘ ‘and 4\nHOUSE_OVERSIGHT_000169\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page features a colorful world map with animal images superimposed on continents. To the right is a hand-written note, an upside-down vertical 'Life.' title, and a chocolate chip cookie recipe. There are additional handwritten notes and decorations around the page, including gender symbol notations and a phrase about beauty and stereotypes.",
+    "Layout: Background including a map of the world with animal photos on continents, centered",
+    "Layout: Handwritten recipe for chocolate chip cookies on bottom right",
+    "Layout: Handwritten positive message on right side, vertically aligned 'Life.' title next to it",
+    "Layout: Handwritten notes and colorful text at bottom left including symbols and text",
+    "Layout: Partial black redaction around center bottom",
+    "Photo/image candidate at background map, North and South America: Composite image of animals e.g., wolves, bears, monkeys integrated over continents",
+    "Photo/image candidate at background map, Africa: Composite image of lions, rhinos, giraffes over continent",
+    "Photo/image candidate at background map, Asia: Composite image includes a panda bear on continent",
+    "Photo/image candidate at background map, Australia: Composite image of kangaroos on continent"
+  ],
+  "observations": [
+    "A page features a colorful world map with animal images superimposed on continents. To the right is a hand-written note, an upside-down vertical 'Life.' title, and a chocolate chip cookie recipe. There are additional handwritten notes and decorations around the page, including gender symbol notations and a phrase about beauty and stereotypes.",
+    "Layout: Background including a map of the world with animal photos on continents, centered",
+    "Layout: Handwritten recipe for chocolate chip cookies on bottom right",
+    "Layout: Handwritten positive message on right side, vertically aligned 'Life.' title next to it",
+    "Layout: Handwritten notes and colorful text at bottom left including symbols and text",
+    "Layout: Partial black redaction around center bottom",
+    "Photo/image candidate at background map, North and South America: Composite image of animals e.g., wolves, bears, monkeys integrated over continents",
+    "Photo/image candidate at background map, Africa: Composite image of lions, rhinos, giraffes over continent",
+    "Photo/image candidate at background map, Asia: Composite image includes a panda bear on continent",
+    "Photo/image candidate at background map, Australia: Composite image of kangaroos on continent"
+  ],
+  "dates": [
+    "1/2003"
+  ],
+  "document_strings": [
+    "Life.",
+    "You encourage everyone to live it! <3",
+    "SHIFT stereotypes",
+    "♀ like glitter ♂ like home-ade Beauty is subjective? xo, [redacted] 1/2003",
+    "Chocolate Chip Cookies",
+    "Ingredients: 2 cups butter 2 1/2 cups sugar 2 cups brown sugar 4 eggs 2 tbl vanilla 4 cups flour 5 cups oatmeal (before grinding) 1 tsp srit 2 tsp baking powder 2 tsp baking soda 1/2 cup unsweetened cocoa 1 24 oz bag chocolate chips (semi sweet)",
+    "Directions: preheat oven to 350° grind 5 cups oatmeal in blender (will reduce to approx 4 cups ground), mix all ingredients together in a large bowl. drop dough in rounded spoonfuls onto non stick cookie sheet, bake 8-10 minutes (makes approx 60-80 cookies depending on size)"
+  ],
+  "signatures": [
+    {
+      "location": "bottom left near colorful handwritten text and date",
+      "text_as_seen": "xo, [redacted] 1/2003",
+      "confidence": "medium",
+      "note": "Handwritten signature and date, part redacted"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "right margin, vertically oriented",
+      "text_as_seen": "Life.",
+      "confidence": "high",
+      "note": "Printed cut-out text placed vertically"
+    },
+    {
+      "location": "right side, next to 'Life.' text",
+      "text_as_seen": "You encourage everyone to live it! <3",
+      "confidence": "high",
+      "note": "Handwritten positive message in purple ink"
+    },
+    {
+      "location": "bottom left section",
+      "text_as_seen": "♀ like glitter ♂ like home-ade Beauty is subjective? xo, [redacted] 1/2003",
+      "confidence": "medium",
+      "note": "Colorful lettering with gender symbols and a philosophical statement"
+    },
+    {
+      "location": "bottom right, recipe title and ingredients",
+      "text_as_seen": "Chocolate Chip Cookies Ingredients: 2 cups butter 2 1/2 cups sugar 2 cups brown sugar 4 eggs 2 tbl vanilla 4 cups flour 5 cups oatmeal (before grinding) 1 tsp srit 2 tsp baking powder 2 tsp baking soda 1/2 cup unsweetened cocoa 1 24 oz bag chocolate chips (semi sweet) Directions: preheat oven to 350° grind 5 cups oatmeal in blender (will reduce to approx 4 cups ground), mix all ingredients together in a large bowl. drop dough in rounded spoonfuls onto non stick cookie sheet, bake 8-10 minutes (makes approx 60-80 cookies depending on size)",
+      "confidence": "medium",
+      "note": "Handwritten recipe with some unclear words and misspellings"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "bottom center, overlapping the recipe and print",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Rectangular black redaction obscuring some content"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [
+    "Some handwritten words unclear or misspelled, e.g., 'srit' may be 'salt'"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:29:11.545Z",
+    "response_id": "resp_0f0b8d2d54c00a23006a502eb90bac8195939d7bfee2ffb496",
+    "raw_output_sha256": "a14f23202ad6cbb143defc515d07de55f87d6603eb0eb904a07c0422ffb98fd8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f0b8d2d54c00a23006a502eb90bac8195939d7bfee2ffb496",
+    "enriched_at": "2026-07-09T23:29:11.545Z"
+  },
+  "visual_summary": "A page features a colorful world map with animal images superimposed on continents. To the right is a hand-written note, an upside-down vertical 'Life.' title, and a chocolate chip cookie recipe. There are additional handwritten notes and decorations around the page, including gender symbol notations and a phrase about beauty and stereotypes.",
+  "layout": [
+    "Background including a map of the world with animal photos on continents, centered",
+    "Handwritten recipe for chocolate chip cookies on bottom right",
+    "Handwritten positive message on right side, vertically aligned 'Life.' title next to it",
+    "Handwritten notes and colorful text at bottom left including symbols and text",
+    "Partial black redaction around center bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "right margin, vertically oriented",
+      "text_as_seen": "Life.",
+      "confidence": "high",
+      "note": "Printed cut-out text placed vertically"
+    },
+    {
+      "location": "right side, next to 'Life.' text",
+      "text_as_seen": "You encourage everyone to live it! <3",
+      "confidence": "high",
+      "note": "Handwritten positive message in purple ink"
+    },
+    {
+      "location": "bottom left section",
+      "text_as_seen": "♀ like glitter ♂ like home-ade Beauty is subjective? xo, [redacted] 1/2003",
+      "confidence": "medium",
+      "note": "Colorful lettering with gender symbols and a philosophical statement"
+    },
+    {
+      "location": "bottom right, recipe title and ingredients",
+      "text_as_seen": "Chocolate Chip Cookies Ingredients: 2 cups butter 2 1/2 cups sugar 2 cups brown sugar 4 eggs 2 tbl vanilla 4 cups flour 5 cups oatmeal (before grinding) 1 tsp srit 2 tsp baking powder 2 tsp baking soda 1/2 cup unsweetened cocoa 1 24 oz bag chocolate chips (semi sweet) Directions: preheat oven to 350° grind 5 cups oatmeal in blender (will reduce to approx 4 cups ground), mix all ingredients together in a large bowl. drop dough in rounded spoonfuls onto non stick cookie sheet, bake 8-10 minutes (makes approx 60-80 cookies depending on size)",
+      "confidence": "medium",
+      "note": "Handwritten recipe with some unclear words and misspellings"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom left near colorful handwritten text and date",
+      "text_as_seen": "xo, [redacted] 1/2003",
+      "confidence": "medium",
+      "note": "Handwritten signature and date, part redacted"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "bottom center, overlapping the recipe and print",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Rectangular black redaction obscuring some content"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "background map, North and South America",
+      "description": "Composite image of animals e.g., wolves, bears, monkeys integrated over continents",
+      "confidence": "high"
+    },
+    {
+      "location": "background map, Africa",
+      "description": "Composite image of lions, rhinos, giraffes over continent",
+      "confidence": "high"
+    },
+    {
+      "location": "background map, Asia",
+      "description": "Composite image includes a panda bear on continent",
+      "confidence": "high"
+    },
+    {
+      "location": "background map, Australia",
+      "description": "Composite image of kangaroos on continent",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "1/2003"
+  ],
+  "confidence": "medium"
+}

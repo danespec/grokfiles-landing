@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book of Black Resolution Ledger | Grok Archive Hub</title>
+  <meta name="description" content="Resolution ledger for Book of Black hypotheses, with status definitions, entry schema, and empty-state handling until source-tested entries exist.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://grokarchivehub.com/book-of-black/ledger">
+  <meta name="gah-ad-eligible" content="false">
+  <meta name="gah-ad-policy" content="book-of-black-ledger-empty">
+  <meta name="gah-indexability-policy" content="noindex,follow">
+  <link rel="stylesheet" href="/frontdoor/site.css">
+  <link rel="stylesheet" href="/book-of-black/book-of-black.css">
+</head>
+<body class="bob-page" data-bob-page="ledger">
+  <header class="site-header bob-site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/"><span class="brand-mark">GA</span><span>Grok Archive Hub</span></a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+        <a data-route-link href="/book-of-black">Overview</a>
+        <a data-route-link href="/book-of-black/read">Reader</a>
+        <a data-route-link href="/book-of-black/search">Search</a>
+        <a data-route-link href="/book-of-black/methodology">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="bob-shell">
+    <section class="bob-page-title">
+      <p class="bob-kicker">Resolution ledger</p>
+      <h1>What survived contact with evidence?</h1>
+      <p class="bob-lede">The ledger records tested hypotheses only. Thin, unresolved, identity-sensitive, or source-poor entries remain noindex and are not promoted as public findings.</p>
+    </section>
+
+    <section class="bob-ledger-board">
+      <div class="bob-status-grid" data-bob-ledger-counts></div>
+      <div class="bob-empty" data-bob-ledger-empty hidden>
+        <strong>No resolved entries are published yet.</strong>
+        <span>The ledger is being built. No invented entries, placeholder totals, or sample percentages are displayed.</span>
+      </div>
+    </section>
+
+    <section class="bob-bandless">
+      <div class="bob-section-head">
+        <p class="bob-eyebrow">Status Definitions</p>
+        <h2>Plain-language resolution states.</h2>
+      </div>
+      <div class="bob-definition-grid" data-bob-status-definitions></div>
+    </section>
+
+    <section class="bob-bandless">
+      <div class="bob-section-head">
+        <p class="bob-eyebrow">Entry Model</p>
+        <h2>Every tested claim must carry its limits.</h2>
+      </div>
+      <pre class="bob-schema" data-bob-entry-schema></pre>
+    </section>
+
+    <section class="bob-bandless">
+      <div class="bob-section-head">
+        <p class="bob-eyebrow">Latest Resolutions</p>
+        <h2>Recently changed entries.</h2>
+      </div>
+      <div data-bob-latest-resolutions></div>
+    </section>
+  </main>
+
+  <footer class="bob-footer">
+    <div class="bob-shell">
+      <nav aria-label="Book of Black footer">
+        <a href="/book-of-black">Overview</a>
+        <a href="/book-of-black/search">Search</a>
+        <a href="/book-of-black/methodology">Methodology</a>
+        <a href="/corrections">Corrections</a>
+      </nav>
+      <p>Contradiction, retirement, and silence are part of the public audit trail.</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
+  <script data-cfasync="false" src="/book-of-black/book-of-black.js?v=GAH-BOB-ROCKET-004"></script>
+</body>
+</html>

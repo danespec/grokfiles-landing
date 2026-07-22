@@ -1,0 +1,99 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 46,
+  "page_id": "page_046",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_046.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_046.ocr.txt",
+  "image_metadata": {
+    "bytes": 214863,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "58270b31b984c9bc944c2bd51331ef93d1ea8cbde2f6f8888a1f43b6413bcc03"
+  },
+  "ocr_text": "jected from CONEY\noy e mY\n. Singles ISLAND\n- Weekend CLASSIFIEDS\n: By Henny Youngman DINING\n_ Catskills Comics\n: ; ; Nathamn’s Fries Large or Big. Call\noo Coney Island teens signed up for Abey POTAOES OUT RIGHT?\na what should have been a fun RRRRROMs and Bar BEE Q. Large\n. singles weekend at Kutsher’s Pineapple drink.\n\nCountry Club, but something went Fried shrimp on a bun. Corn on the cob.\nawry. After causing disturbance at\n“+ the pool, the young men went f0\n: their room and made so much noise Sam’s Kinishes cherry cheese knishes,\n\n. . falafel, no splitting of drinks with friends\n‘ that secu rity had to come and warn allowed. Better Kashe Knishes at Mrs.\nthem of probable ejection from the Siahl’s across the street\n\npremises. Later on, the trouble- SE ——\nmakers arrived at the main bl Dubrew’s Home of the “Handsome\nballroom for dinner. Each table Sandwich”\n\n: was matched with boys and girls een\nfor the event. Again, the boys were Foofy’s Go for pancakes at 3 in the\n\ncausing more trouble, and by the moming, “Exira Butta”\ncrowning blow occurred. One of Mary’s Herees Peppers and Eggs\nthe teens known as “Neutral”, Hero, Meatball, and yeah, don’t forget my\nstarted eating directly out of the Ham and Cheese with no hairs please.\n‘ ing bowl. To mak . .\npee salad nee b a if © Lin’s Gardens Chinatown at 2 in the\nthings worse, € ate without knue morning. Burning hot tea served in water\nor fork, much like a mad dog. He glasses. War Won Ton Soup. Fly Ly and Et\nwas actually foaming at the mouth,\ngrowling, and jerking his head up\nand down as he chewed the salad. Randazzo’s Gimme 2 orders 0” scugeel’\nNeedless to say, the boys were\nimmediately escorted from the ; ;\nballroom, and promptly told to Atlantic Baking chocolate covered\n1 K t her’s without d le jelly, sprinkles, chocolate covered\neave Kutcher’s without Celay- marshmallow, chocolate covered everything.\nGitlers Lousy, but convenient\nsandwiches. — Hymiel! Cash customer!!!\nTetona’s Pizzeria Good burnt pizza\nwhile Vinnie Totona screams at his wife and\nkids. —\nMajor Meats Ail the doctors bought\n; their meat from them. No wonder we were\nalways sick,\nOrange Hoolius what the heck did\nthey put in that drink to make it foam up!\nHOUSE_OVERSIGHT_000046\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is divided into two main columns. The left column contains a text block titled 'Ejected from Singles Weekend' by Henny Youngman, Catskills Comics, describing a disruptive incident at a singles weekend event. The right column is titled 'Coney Island Classifieds' and 'Dining', with various listings of food items and eateries, each with brief descriptions or promotional text. The layout is mainly two columns, text-only, with some horizontal dividing lines.",
+    "Layout: Two-column text layout",
+    "Layout: Left column: article with title and subtitle",
+    "Layout: Right column: classifieds with headers and item listings"
+  ],
+  "observations": [
+    "The page is divided into two main columns. The left column contains a text block titled 'Ejected from Singles Weekend' by Henny Youngman, Catskills Comics, describing a disruptive incident at a singles weekend event. The right column is titled 'Coney Island Classifieds' and 'Dining', with various listings of food items and eateries, each with brief descriptions or promotional text. The layout is mainly two columns, text-only, with some horizontal dividing lines.",
+    "Layout: Two-column text layout",
+    "Layout: Left column: article with title and subtitle",
+    "Layout: Right column: classifieds with headers and item listings"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Ejected from Singles Weekend",
+    "By Henny Youngman",
+    "Catskills Comics",
+    "CONEY ISLAND CLASSIFIEDS",
+    "DINING",
+    "Nathan's Fries Large or Big. Call",
+    "Abey POTAOES OUT RIGHT??",
+    "RRRRROlls and Bar BEE Q. Large Pineapple drink.",
+    "Fried shrimp on a bun. Corn on the cob.",
+    "Burger with Tzibulis.",
+    "Sam's Knishes cherry cheese knishes, falafel, no splitting of drinks with friends allowed. Better Kashe Knishes at Mrs. Stahl's across the street.",
+    "Dubrow's Home of the 'Handsome Sandwich'",
+    "Foofy's Go for pancakes at 3 in the morning. 'Extra Butta'",
+    "Mary's Heroes Peppers and Eggs Hero, Meatball, and yeah, don't forget my Ham and Cheese with no hairs please.",
+    "Lin's Gardens Chinatown at 2 in the morning. Burning hot tea served in water glasses. War Won Ton Soup. Fly Ly and Et Lo for 4.",
+    "Randazzo's Gimme 2 orders o' scugell an' 2 orders o' baked clams oreganata.",
+    "Atlantic Baking chocolate covered jelly, sprinkles, chocolate covered marshmallow, chocolate covered everything.",
+    "Gitlers Lousy, but convenient sandwiches. Hymie!! Cash customer!!!",
+    "Totona's Pizzeria Good burnt pizza while Vinnie Totona screams at his wife and kids.",
+    "Major Meats All the doctors bought their meat from them. No wonder we were always sick.",
+    "Orange Hoolius what the heck did they put in that drink to make it foam up?"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:09:23.946Z",
+    "response_id": "resp_02c7561e5cf376c9006a502a1d32288196a3c72bfb157f65a1",
+    "raw_output_sha256": "b7849662aba0436ca65fc9735113f5162a6e61c9fd1748931506b0376d39d1f4"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_02c7561e5cf376c9006a502a1d32288196a3c72bfb157f65a1",
+    "enriched_at": "2026-07-09T23:09:23.946Z"
+  },
+  "visual_summary": "The page is divided into two main columns. The left column contains a text block titled 'Ejected from Singles Weekend' by Henny Youngman, Catskills Comics, describing a disruptive incident at a singles weekend event. The right column is titled 'Coney Island Classifieds' and 'Dining', with various listings of food items and eateries, each with brief descriptions or promotional text. The layout is mainly two columns, text-only, with some horizontal dividing lines.",
+  "layout": [
+    "Two-column text layout",
+    "Left column: article with title and subtitle",
+    "Right column: classifieds with headers and item listings"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

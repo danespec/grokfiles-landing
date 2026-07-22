@@ -1,0 +1,134 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 238,
+  "page_id": "page_238",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_238.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_238.ocr.txt",
+  "image_metadata": {
+    "bytes": 10109030,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "0fa2fb73a19ffa2482899b7fee6a5070883f5b5c5157b066d6b920e35b4bedc7"
+  },
+  "ocr_text": "~\n>\nJo Tle Kort ry i S\n|\nge sag y ry 1s ey EY Ta why i. tah a ,\niy AS Ba \\ ee % apt Sa Na ae Yh f , ane os mi hee j Me a tA\neo - 3 gt S ge i Seer ae * iN, e ae i s eae sae > * J > id\nae es Me? uy — : ; —. : os |\nie aE sae : oh i | CO\n7S i eee — —s — 7 |\ni Be a Sa Sige ohare 2 ie Ee OS aae oo.\noa | 5 Bia ih “key pee “i ctetk bs es Sy ‘ es Le ote ze p< S008\nLae. Oe ae Ste wa) Ug *\n|\n- —— aaa —\n.\n| k Aes hon |\nCW. JC_ AA\naw er &\nST\n~\n. ( a r/(A bre\nCrve- Ion aon alo-—\nLQ CO Slo\nHOUSE_OVERSIGHT_000238\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image features a handwritten message above and below a photo of a wooden plaque with engraved text. The wooden plaque is set against a stone background with variously colored stones. The engraved plaque text is faint but partially visible. Below the photo, there is a handwritten note in black ink, including a signature-like marking. The page has a white margin with no other visible elements.",
+    "Layout: handwritten text at top",
+    "Layout: photo of wooden plaque centered",
+    "Layout: handwritten note below photo",
+    "Photo/image candidate at center of page: Photo of a wooden plaque with engraved faint text set against a stone wall background of variously colored stones."
+  ],
+  "observations": [
+    "The image features a handwritten message above and below a photo of a wooden plaque with engraved text. The wooden plaque is set against a stone background with variously colored stones. The engraved plaque text is faint but partially visible. Below the photo, there is a handwritten note in black ink, including a signature-like marking. The page has a white margin with no other visible elements.",
+    "Layout: handwritten text at top",
+    "Layout: photo of wooden plaque centered",
+    "Layout: handwritten note below photo",
+    "Photo/image candidate at center of page: Photo of a wooden plaque with engraved faint text set against a stone wall background of variously colored stones."
+  ],
+  "dates": [],
+  "document_strings": [
+    "To the next fifty years.",
+    "'know when ya are winning' The next fifty years will be ever more wonderful Happy birthday Lots of love"
+  ],
+  "signatures": [
+    {
+      "location": "bottom of page below photo",
+      "text_as_seen": "[signature-like scribble]",
+      "confidence": "medium",
+      "note": "Indicative of a signature but content not verified."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top of page above photo",
+      "text_as_seen": "To the next fifty years.",
+      "confidence": "high",
+      "note": "Clear, legible handwriting."
+    },
+    {
+      "location": "bottom of page below photo",
+      "text_as_seen": "'know when ya are winning' The next fifty years will be ever more wonderful Happy birthday Lots of love",
+      "confidence": "medium",
+      "note": "Handwriting is mostly legible but some words are slightly unclear."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "signature"
+  ],
+  "gaps": [
+    "Exact content of faint engraved plaque text is difficult to discern clearly.",
+    "Signature text is not clearly identifiable."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:56.104Z",
+    "response_id": "resp_04ea56f87fe61477006a503144d2b0819484558124682b87c4",
+    "raw_output_sha256": "c28ee82034b2a9cab7fe837dd1452a73e4c821b1353f7cf77a44bbe48ab619ee"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04ea56f87fe61477006a503144d2b0819484558124682b87c4",
+    "enriched_at": "2026-07-09T23:39:56.104Z"
+  },
+  "visual_summary": "The image features a handwritten message above and below a photo of a wooden plaque with engraved text. The wooden plaque is set against a stone background with variously colored stones. The engraved plaque text is faint but partially visible. Below the photo, there is a handwritten note in black ink, including a signature-like marking. The page has a white margin with no other visible elements.",
+  "layout": [
+    "handwritten text at top",
+    "photo of wooden plaque centered",
+    "handwritten note below photo"
+  ],
+  "handwriting": [
+    {
+      "location": "top of page above photo",
+      "text_as_seen": "To the next fifty years.",
+      "confidence": "high",
+      "note": "Clear, legible handwriting."
+    },
+    {
+      "location": "bottom of page below photo",
+      "text_as_seen": "'know when ya are winning' The next fifty years will be ever more wonderful Happy birthday Lots of love",
+      "confidence": "medium",
+      "note": "Handwriting is mostly legible but some words are slightly unclear."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom of page below photo",
+      "text_as_seen": "[signature-like scribble]",
+      "confidence": "medium",
+      "note": "Indicative of a signature but content not verified."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center of page",
+      "description": "Photo of a wooden plaque with engraved faint text set against a stone wall background of variously colored stones.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

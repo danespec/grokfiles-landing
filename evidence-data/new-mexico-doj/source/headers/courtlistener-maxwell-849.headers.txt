@@ -1,0 +1,7 @@
+URL: https://storage.courtlistener.com/recap/gov.uscourts.nysd.539612/gov.uscourts.nysd.539612.849.0.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 5a27b2ab760fd74febde3e33b54c818240662bdad7660a26ee7a37d1a95427d1
+Bytes: 478360
+Acquisition method: verified existing local capture

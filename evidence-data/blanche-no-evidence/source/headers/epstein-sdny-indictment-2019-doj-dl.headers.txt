@@ -1,0 +1,22 @@
+HTTP/2 200 
+accept-ranges: bytes
+content-disposition: inline; filename=u.s._v._jeffrey_epstein_indictment.pdf
+content-language: en
+content-type: application/pdf
+last-modified: Tue, 09 Jul 2019 17:00:42 GMT
+server: nginx
+x-age: 370
+x-ah-environment: prod
+x-cache-hits: 1
+x-content-type-options: nosniff
+x-drupal-dynamic-cache: UNCACHEABLE (poor cacheability)
+x-frame-options: SAMEORIGIN
+x-generator: Drupal 10 (https://www.drupal.org)
+x-request-id: v-a8797cbc-db7c-11f0-bcda-13a929628414
+x-xss-protection: 1; mode=block
+content-length: 505273
+cache-control: public, max-age=126766
+date: Mon, 20 Jul 2026 14:24:11 GMT
+alt-svc: h3=":443"; ma=93600
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+

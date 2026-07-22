@@ -1,0 +1,106 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 147,
+  "page_id": "page_147",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_147.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_147.ocr.txt",
+  "image_metadata": {
+    "bytes": 175800,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "15d273f07a2f1ba3c3cad8ad0f0cbd744b365ca6633d417c5eb79fe68f92c246"
+  },
+  "ocr_text": "2 ————\nJeffery,\ntT have agonized long and hard about what to write for your\nbirthday.\nOne version was 4 highly philosophical take on personal\nperception. Tril\nspare you the tortured prose but the gist was that the way we. see\nthe world\ndepends on our experiences ~ how we parse things. youtre one of\nthe few\npeople who has influenced how i parse and understand the world,\nand that\nversion lauded you for it.\nBut, that seemed to heavy and pedantic, so out it went.-\nAnother version was silly and salacious, since your approach to\nLife has so\nmuch of each of these things. A few years ago somebody at a\nparty asked me\n“Does Jeffrey Epstein manage your money?\" I replied \"No, but he\nadvises |\nme on Lifestyle\". The guys eyes bugged out of his head and he |\nsaid\nUREALLY?\"-\nAlas I atm iil prepared to comment on your Lifestyle in any detail,\nsince lI\nam (sadly) 8° far behind that it would be talking about things I\nknow little\nof!\nyet another approach Was to comment on our shard interests in\nscience and\nexploration, but again it seemed lacking.\n‘ So, in the end I have wound up with this silly excuse for a\nmissive —\nneither profound nor funny. But, i've sncluded a few photos\nthat 1 took\non my recent trip to Africa. They seemed more appropriate than\nanything 1\ncould put in words.\nNathan\nHOUSE_OVERSIGHT_000147\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Typed letter on a single page addressing someone named Jeffery with reflections and anecdotes relating to birthday wishes and personal perception, signed 'Nathan' at the bottom; text is slightly tilted and the page edges are visible with some uneven cropping. The letter mentions including photos from a recent trip to Africa but no photos are seen on this page.",
+    "Layout: Single column of typed text, left aligned",
+    "Layout: Signature line near bottom right"
+  ],
+  "observations": [
+    "Typed letter on a single page addressing someone named Jeffery with reflections and anecdotes relating to birthday wishes and personal perception, signed 'Nathan' at the bottom; text is slightly tilted and the page edges are visible with some uneven cropping. The letter mentions including photos from a recent trip to Africa but no photos are seen on this page.",
+    "Layout: Single column of typed text, left aligned",
+    "Layout: Signature line near bottom right"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Jeffery,",
+    "I have agonized long and hard about what to write for your birthday.",
+    "One version was a highly philosophical take on personal perception.",
+    "I'll spare you the tortured prose but the gist was that the way we see the world depends on our experiences - how we parse things.",
+    "You're one of the few people who has influenced how I parse and understand the world, and that version lauded you for it.",
+    "But, that seemed too heavy and pedantic, so out it went..",
+    "Another version was silly and salacious, since your approach to life has so much of each of these things.",
+    "A few years ago somebody at a party asked me \"Does Jeffrey Epstein manage your money?\".",
+    "I replied \"No, but he advises me on lifestyle\".",
+    "The guys eyes bugged out of his head and he said \"REALLY?\".",
+    "Alas I am ill prepared to comment on your lifestyle in any detail, since I am (sadly) so far behind that it would be talking about things I know little of!",
+    "Yet another approach was to comment on our shared interests in science and exploration, but again it seemed lacking.",
+    "So, in the end I have wound up with this silly excuse for a missive — neither profound nor funny.",
+    "But, I've included a few photos that I took on my recent trip to Africa.",
+    "They seemed more appropriate than anything I could put in words.",
+    "Nathan"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Nathan",
+      "confidence": "high",
+      "note": "Typed signature or name line"
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:57.111Z",
+    "response_id": "resp_0583719cb538b313006a502e0021388196b705d8f5f7003426",
+    "raw_output_sha256": "a1ce8d2077fe9771d2b1d2f8b8fa334bdb35d46e18c5059fcc74a00d288d05a9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0583719cb538b313006a502e0021388196b705d8f5f7003426",
+    "enriched_at": "2026-07-09T23:25:57.111Z"
+  },
+  "visual_summary": "Typed letter on a single page addressing someone named Jeffery with reflections and anecdotes relating to birthday wishes and personal perception, signed 'Nathan' at the bottom; text is slightly tilted and the page edges are visible with some uneven cropping. The letter mentions including photos from a recent trip to Africa but no photos are seen on this page.",
+  "layout": [
+    "Single column of typed text, left aligned",
+    "Signature line near bottom right"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Nathan",
+      "confidence": "high",
+      "note": "Typed signature or name line"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

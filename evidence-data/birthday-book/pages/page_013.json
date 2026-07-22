@@ -1,0 +1,164 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 13,
+  "page_id": "page_013",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_013.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_013.ocr.txt",
+  "image_metadata": {
+    "bytes": 12870139,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "97c4becec9cffd4f7c66cc0198074aa0e774722e8b86435e565dc1034ddf3a67"
+  },
+  "ocr_text": "(| Se\n- ee aed. EL as a :\nvali e : | an Py ro c\nae ee ny “eas ie mi a ——ee? \"\n~4|\n:\nms - i\nSe a a a eS RS ea : i ——— A oer | Tom cro?\nee) See |. i ;\n}——- ee ae , 4 “ ; 2 ee z fs or Poe me, a}\noer ae eal @ ; = = |\nsaye / / ne id + ae ee 5° ; :™ a a 5 ‘bai It |\n| SN. a on a yo a .f\neee ‘ : ' -\nhu+r4.2 : aa ;\nbs =e eS . a : a 7 Bel A i\n= . faa 1 : E\nD> tao at | pl —_ a, sR STS ae Cem,\nsil Be ; pared = =\" 4 sg RASULAY : = | OK con, Aki bits\n, ee . 3 .\" ie = Ce. ie a _\ne mek a ie } ee ba\na § if se fo oa te a tet ae bei 5 2 ‘ |} {ioe = ed ert\n“ — << % \\ Rage - ies : see Py vad ae <— EN\nHOUSE_OVERSIGHT_000013\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "This page contains four photographs arranged in a roughly rectangular shape with handwritten notes adjacent to or between the images. The top photo shows two planes on an airport tarmac near a hangar. The second, larger photo shows a man standing in the entrance of a brick building with several pieces of luggage, including large suitcases and smaller bags, stacked on a dolly and the ground near the door. Below that are three photos: two side-by-side images showing multiple boxes and bags on pavement outside at night, with one photo featuring a long rolled-up item strapped to a box labeled 'Reebok Core Board'. The third photo shows the rear of an SUV with its tailgate open, loaded with numerous cardboard boxes and bags. Several handwritten notes appear to the right and between the images, referring to switching planes and the amount of luggage visible.",
+    "Layout: top photo",
+    "Layout: middle photo",
+    "Layout: bottom left photo",
+    "Layout: bottom center photo",
+    "Layout: bottom right photo",
+    "Layout: handwritten notes",
+    "Photo/image candidate at top photo: Two airplanes parked on an airport tarmac near a hangar.",
+    "Photo/image candidate at middle photo: Man standing in front of brick building entrance with multiple pieces of luggage on dolly and ground.",
+    "Photo/image candidate at bottom left photo: Multiple boxes and bags arranged on pavement outdoors at night.",
+    "Photo/image candidate at bottom center photo: Back of SUV with tailgate open, loaded with boxes and bags.",
+    "Photo/image candidate at bottom right photo: Boxes and bags outdoors at night, including a large rectangular box labeled 'Reebok Core Board' with a long rolled-up item strapped to it."
+  ],
+  "observations": [
+    "This page contains four photographs arranged in a roughly rectangular shape with handwritten notes adjacent to or between the images. The top photo shows two planes on an airport tarmac near a hangar. The second, larger photo shows a man standing in the entrance of a brick building with several pieces of luggage, including large suitcases and smaller bags, stacked on a dolly and the ground near the door. Below that are three photos: two side-by-side images showing multiple boxes and bags on pavement outside at night, with one photo featuring a long rolled-up item strapped to a box labeled 'Reebok Core Board'. The third photo shows the rear of an SUV with its tailgate open, loaded with numerous cardboard boxes and bags. Several handwritten notes appear to the right and between the images, referring to switching planes and the amount of luggage visible.",
+    "Layout: top photo",
+    "Layout: middle photo",
+    "Layout: bottom left photo",
+    "Layout: bottom center photo",
+    "Layout: bottom right photo",
+    "Layout: handwritten notes",
+    "Photo/image candidate at top photo: Two airplanes parked on an airport tarmac near a hangar.",
+    "Photo/image candidate at middle photo: Man standing in front of brick building entrance with multiple pieces of luggage on dolly and ground.",
+    "Photo/image candidate at bottom left photo: Multiple boxes and bags arranged on pavement outdoors at night.",
+    "Photo/image candidate at bottom center photo: Back of SUV with tailgate open, loaded with boxes and bags.",
+    "Photo/image candidate at bottom right photo: Boxes and bags outdoors at night, including a large rectangular box labeled 'Reebok Core Board' with a long rolled-up item strapped to it."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000013"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top right next to top photo",
+      "text_as_seen": "From a smaller plane to a bigger plane - Mica Griggs",
+      "confidence": "high",
+      "note": "Handwritten note referring to airplane sizes."
+    },
+    {
+      "location": "right middle next to second photo",
+      "text_as_seen": "From what you thought was a huge amount of luggage",
+      "confidence": "high",
+      "note": "Handwritten note commenting on luggage quantity."
+    },
+    {
+      "location": "center between bottom left and bottom center photos",
+      "text_as_seen": "To a much huge amount of luggage",
+      "confidence": "high",
+      "note": "Handwritten note emphasizing a larger quantity of luggage."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:04:01.460Z",
+    "response_id": "resp_01b040fd27f683a2006a5028d648b08193b806891954dee164",
+    "raw_output_sha256": "b3eda6c87a8a6b0a06eba7a1f1f623993cc328f6d18b278fce4677b9de6efc51"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01b040fd27f683a2006a5028d648b08193b806891954dee164",
+    "enriched_at": "2026-07-09T23:04:01.461Z"
+  },
+  "visual_summary": "This page contains four photographs arranged in a roughly rectangular shape with handwritten notes adjacent to or between the images. The top photo shows two planes on an airport tarmac near a hangar. The second, larger photo shows a man standing in the entrance of a brick building with several pieces of luggage, including large suitcases and smaller bags, stacked on a dolly and the ground near the door. Below that are three photos: two side-by-side images showing multiple boxes and bags on pavement outside at night, with one photo featuring a long rolled-up item strapped to a box labeled 'Reebok Core Board'. The third photo shows the rear of an SUV with its tailgate open, loaded with numerous cardboard boxes and bags. Several handwritten notes appear to the right and between the images, referring to switching planes and the amount of luggage visible.",
+  "layout": [
+    "top photo",
+    "middle photo",
+    "bottom left photo",
+    "bottom center photo",
+    "bottom right photo",
+    "handwritten notes"
+  ],
+  "handwriting": [
+    {
+      "location": "top right next to top photo",
+      "text_as_seen": "From a smaller plane to a bigger plane - Mica Griggs",
+      "confidence": "high",
+      "note": "Handwritten note referring to airplane sizes."
+    },
+    {
+      "location": "right middle next to second photo",
+      "text_as_seen": "From what you thought was a huge amount of luggage",
+      "confidence": "high",
+      "note": "Handwritten note commenting on luggage quantity."
+    },
+    {
+      "location": "center between bottom left and bottom center photos",
+      "text_as_seen": "To a much huge amount of luggage",
+      "confidence": "high",
+      "note": "Handwritten note emphasizing a larger quantity of luggage."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Two airplanes parked on an airport tarmac near a hangar.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle photo",
+      "description": "Man standing in front of brick building entrance with multiple pieces of luggage on dolly and ground.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left photo",
+      "description": "Multiple boxes and bags arranged on pavement outdoors at night.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center photo",
+      "description": "Back of SUV with tailgate open, loaded with boxes and bags.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right photo",
+      "description": "Boxes and bags outdoors at night, including a large rectangular box labeled 'Reebok Core Board' with a long rolled-up item strapped to it.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

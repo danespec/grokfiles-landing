@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-10T17:53:03.753Z",
+  "sections": [
+    {
+      "section": "Unassigned",
+      "page_count": 68,
+      "start_page": 1,
+      "end_page": 68,
+      "route": "/research/evidence/birthday-book/sections?q=Unassigned"
+    },
+    {
+      "section": "Science",
+      "page_count": 161,
+      "start_page": 69,
+      "end_page": 229,
+      "route": "/research/evidence/birthday-book/sections?q=Science"
+    },
+    {
+      "section": "Business",
+      "page_count": 9,
+      "start_page": 230,
+      "end_page": 238,
+      "route": "/research/evidence/birthday-book/sections?q=Business"
+    }
+  ]
+}

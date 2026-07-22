@@ -1,0 +1,84 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 234,
+  "page_id": "page_234",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_234.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_234.ocr.txt",
+  "image_metadata": {
+    "bytes": 122179,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "118d0ff4f9b568eb8672a7581eb69add30893af40e71d758f5df6bb17120d519"
+  },
+  "ocr_text": "Jeffiey I remember in the mid 1970s you being a star salesman for\nour tax advantaged strategies and hedged option program. I was\nrunning an account for Bob Maxwell. You always had the ability |\n- to know everyone and be charming. Was that when you first\ndiscovered the Maxwell teen-age daughter...... Happy Birthday\n_ Elbet Wolk \" ,\nHOUSE_OVERSIGHT_000234\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a single rectangular block of printed text near the top center, followed by a horizontal line below the text. The rest of the page is blank and white. The printed text is in black ink, slightly faded in areas, and includes a message referencing the mid-1970s, mentioning tax strategies, a person named Bob Maxwell, and ends with a birthday greeting attributed to 'Elliot Wolk'.",
+    "Layout: single block of printed text at top center",
+    "Layout: horizontal line below text",
+    "Layout: blank space remainder"
+  ],
+  "observations": [
+    "The page contains a single rectangular block of printed text near the top center, followed by a horizontal line below the text. The rest of the page is blank and white. The printed text is in black ink, slightly faded in areas, and includes a message referencing the mid-1970s, mentioning tax strategies, a person named Bob Maxwell, and ends with a birthday greeting attributed to 'Elliot Wolk'.",
+    "Layout: single block of printed text at top center",
+    "Layout: horizontal line below text",
+    "Layout: blank space remainder"
+  ],
+  "dates": [
+    "mid 1970s"
+  ],
+  "document_strings": [
+    "Jeffrey I remember in the mid 1970s you being a star salesman for our tax advantaged strategies and hedged option program. I was running an account for Bob Maxwell. You always had the ability to know everyone and be charming. Was that when you first discovered the Maxwell teen-age daughter...... Happy Birthday Elliot Wolk"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:25.255Z",
+    "response_id": "resp_0c560cc082d56b99006a503129ff5c81939241e45ca51a443a",
+    "raw_output_sha256": "a71f6e008d15709ef1bfadd56449198694450e948ccb525376a61c2c0f7c33d8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c560cc082d56b99006a503129ff5c81939241e45ca51a443a",
+    "enriched_at": "2026-07-09T23:39:25.255Z"
+  },
+  "visual_summary": "The page contains a single rectangular block of printed text near the top center, followed by a horizontal line below the text. The rest of the page is blank and white. The printed text is in black ink, slightly faded in areas, and includes a message referencing the mid-1970s, mentioning tax strategies, a person named Bob Maxwell, and ends with a birthday greeting attributed to 'Elliot Wolk'.",
+  "layout": [
+    "single block of printed text at top center",
+    "horizontal line below text",
+    "blank space remainder"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "mid 1970s"
+  ],
+  "confidence": "high"
+}

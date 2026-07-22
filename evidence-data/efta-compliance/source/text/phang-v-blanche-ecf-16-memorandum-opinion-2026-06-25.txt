@@ -1,0 +1,1541 @@
+--- PAGE 1 ---
+1 
+ 
+UNITED STATES DISTRICT COURT 
+FOR THE DISTRICT OF COLUMBIA 
+ 
+ 
+KATIE PHANG, 
+              Plaintiff, 
+         v.  
+TODD BLANCHE, in his official 
+capacity as Acting Attorney 
+General of the United States, 
+ 
+               Defendant. 
+ 
+ 
+ 
+ 
+ 
+Civil Action No. 26-1417 (EGS) 
+ 
+ 
+MEMORANDUM OPINION 
+ 
+Responding to public demands for information, Congress with 
+near unanimity passed the Epstein Files Transparency Act (the 
+“Epstein Act”), Pub. L. No. 119-38 on November 18 and 19, 2025, 
+which President Trump signed into law on November 19, 2025. The 
+Epstein Act is an unprecedented disclosure law requiring the 
+Attorney General, with few exceptions, to make publicly 
+available in a searchable and downloadable database all 
+unclassified Department of Justice (“Department”) files related 
+to its investigation of the notorious sexual predator and child 
+sex trafficker Jeffrey Epstein, the child sex trafficker 
+Ghislaine Maxwell, and their associates. The Epstein Act 
+required extremely timely compliance: the Attorney General was 
+required to make the information publicly available by December 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 1 of 48
+
+
+--- PAGE 2 ---
+2 
+ 
+19, 2025. The Attorney General made productions on December 19, 
+20, 22, and 23, 2025, and January 30, 2026. Following the 
+production of approximately 3.5 million pages of documents, the 
+Attorney General announced that the Department had complied with 
+its production obligations under the Epstein Act on January 30, 
+2026.   
+Katie Phang (“Ms. Phang”) brings this action against Todd 
+Blanche in his official capacity as Acting Attorney General of 
+the United States (the “Attorney General”), claiming that he has 
+improperly withheld information and failed to comply with other 
+requirements in violation of the Epstein Act. Pending before the 
+Court is Ms. Phang’s Motion for Preliminary Injunction in which 
+she seeks relief for a limited list of violations of the Epstein 
+Act. See Application for Prelim. Inj., ECF No. 9; and Mem. of 
+Points and Auths. in Support of Application for a Prelim. Inj. 
+(collectively “Mot.”), ECF No. 9-1. Upon careful consideration 
+of Ms. Phang’s motion, the Attorney General’s opposition, the 
+reply, the applicable law; and for the reasons discussed below, 
+the Court GRANTS Ms. Phang’s motion. 
+I. Background 
+A. Statutory and Factual Background 
+1. The Epstein Act 
+ The Epstein Act was passed with near unanimity by the House 
+of Representatives on November 18, 2025; by unanimous consent in 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 2 of 48
+
+
+--- PAGE 3 ---
+3 
+ 
+the Senate on November 19, 2025; and signed into law by 
+President Trump on the same day. See Clerk, United States House 
+of Representatives, Roll Call 289 | Bill Number: H.R. 4405, 
+https://clerk.house.gov/Votes/2025289 (last accessed June 22, 
+2026) (reporting that the roll call vote in the House of 
+Representatives was 427 ayes, 1 no, and 5 not voting); 171 119 
+Cong. Rec. S8211 (daily ed. Nov. 19, 2025) (reporting passage in 
+the Senate by unanimous consent). It requires the release of 
+documents relating to Mr. Epstein, subject to five permitted 
+grounds for withholding, requires any redactions to be 
+accompanied by a written justification published in the Federal 
+Register, and a report to Congress upon the completion of the 
+release of records.   
+ Section 2(a) of the Act requires the Attorney General, 
+within 30 days after enactment, and subject to the prohibited 
+and permitted grounds for withholding, to “make publicly 
+available in a searchable and downloadable format all 
+unclassified records, documents, communications, and 
+investigative materials in the possession of the Department of 
+Justice, including the Federal Bureau of Investigation and 
+United States Attorneys’ Offices, that relate to[:]” 
+(1) Jeffrey Epstein including all 
+investigations, prosecutions, or 
+custodial matters. 
+ 
+(2) Ghislaine Maxwell. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 3 of 48
+
+
+--- PAGE 4 ---
+4 
+ 
+ 
+(3) Flight logs or travel records, including 
+but not limited to manifests, 
+itineraries, pilot records, and customs 
+or immigration documentation, for any 
+aircraft, vessel, or vehicle owned, 
+operated, or used by Jeffrey Epstein or 
+any related entity. 
+ 
+(4) Individuals, including government 
+officials, named or referenced in 
+connection with Epstein’s criminal 
+activities, civil settlements, immunity 
+or plea agreements, or investigatory 
+proceedings. 
+ 
+(5) Entities (corporate, nonprofit, 
+academic, or governmental) with known or 
+alleged ties to Epstein’s trafficking or 
+financial networks. 
+ 
+(6) Any immunity deals, non-prosecution 
+agreements, plea bargains, or sealed 
+settlements involving Epstein or his 
+associates. 
+ 
+(7) Internal DOJ communications, including 
+emails, memos, meeting notes, concerning 
+decisions to charge, not charge, 
+investigate, or decline to investigate 
+Epstein or his associates. 
+ 
+(8) All communications, memoranda, 
+directives, logs, or metadata concerning 
+the destruction, deletion, alteration, 
+misplacement, or concealment of 
+documents, recordings, or electronic 
+data related to Epstein, his associates, 
+his detention and death, or any 
+investigative files. 
+ 
+(9) Documentation of Epstein’s detention or 
+death, including incident reports, 
+witness interviews, medical examiner 
+files, autopsy reports, and written 
+records detailing the circumstances and 
+cause of death. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 4 of 48
+
+
+--- PAGE 5 ---
+5 
+ 
+Epstein Act § 2(a)(1)-(9). 
+ Section 2(b), entitled “Prohibited Grounds for Withholding” 
+provides that “[n]o record shall be withheld, delayed or 
+redacted on the basis of embarrassment, reputational harm, or 
+political sensitivity, including to any government official, 
+public figure, or foreign dignitary.” Epstein Act § 2(a)(1)-(9). 
+ Section 2(c), entitled “Permitted Withholdings” identifies 
+five categories of records for which the Attorney General “may 
+withhold or redact the segregable portions,” and requires all 
+redactions to “be accompanied by a written justification 
+published in the Federal Register and submitted to Congress.” 
+Epstein Act § 2(c)(1), (2). The five categories of permitted 
+withholdings are records that: 
+(A) contain personally identifiable 
+information of victims or victims’ 
+personal and medical files and similar 
+files the disclosure of which would 
+constitute a clearly unwarranted 
+invasion of personal privacy; 
+ 
+(B) depict or contain child sexual abuse 
+materials (CSAM) as defined under 18 
+U.S.C. 2256 and prohibited under 18 
+U.S.C. 2252–2252A; 
+ 
+(C) would jeopardize an active federal 
+investigation or ongoing prosecution, 
+provided that such withholding is 
+narrowly tailored and temporary;  
+ 
+(D) depict or contain images of death, 
+physical abuse, or injury of any person; 
+or 
+ 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 5 of 48
+
+
+--- PAGE 6 ---
+6 
+ 
+(E) contain information specifically 
+authorized under criteria established by 
+an Executive order to be kept secret in 
+the interest of national defense or 
+foreign policy and are in fact properly 
+classified pursuant to such Executive 
+order. 
+ Epstein Act § 2(c)(1)(A)-(E). 
+ Section 2(c) also addresses classified information and 
+requires the Attorney General to declassify such information “to 
+the maximum extent possible.” Epstein Act § 2(c)(3). For 
+information that cannot be declassified, the Attorney General is 
+required to “release an unclassified summary for each of the 
+redacted or withheld classified information.” Epstein Act § 
+2(c)(3)(A). Decisions to classify information covered by the 
+Epstein Act after July 1, 2025 “shall be published in the 
+Federal Register and submitted to Congress, including the date 
+of classification, the identity of the classifying authority, 
+and an unclassified summary of the justification.” Epstein Act § 
+2(c)(4). 
+ Section 3, entitled “Report to Congress,” provides that 
+within fifteen days of the public release of the materials 
+required by the Act, “the Attorney General shall submit to the 
+House and Senate Committees on the Judiciary a report listing:” 
+(1) All categories of records released and 
+withheld. 
+ 
+(2) A summary of redactions made, including 
+legal basis. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 6 of 48
+
+
+--- PAGE 7 ---
+7 
+ 
+ 
+(3) A list of all government officials and 
+politically exposed persons named or 
+referenced in the released materials, 
+with no redactions permitted under 
+subsection (b)(1). 
+Epstein Act § 3.  
+2. The Attorney General’s Efforts to Comply with the 
+Epstein Act 
+ 
+The Epstein Act required the government to comply with its 
+requirements by December 19, 2025. See Epstein Act § 2(a). On 
+that date, the Attorney General issued a letter to Congress 
+stating that the Department was “producing hundreds of thousands 
+of pages of responsive materials in compliance with the [Epstein 
+Act].” Letter from Todd Blanche, Deputy U.S. Att’y Gen., to 
+Members of Congress at 1 (Dec. 19, 2025), Exhibit D to Ward-
+Packard Decl., ECF No. 9-3.
+1 The letter stated that “the 
+Department is continuing to review additional documents and 
+other items for potential responsiveness,” noting that 
+responsive documents are being provided to the Department by the 
+Department’s components on an ongoing basis. Id. The letter 
+ 
+1 Except for citations to the Attorney General’s letters of 
+December 19, 2025; January 30, 2026; February 2, 2026; and 
+February 14, 2026; and the Department’s letters of April 23, 
+2026, and May 8, 2026; where the citation to the original page 
+number of the respective letter is provided, the Court cites to 
+the ECF header page number of electronic filings throughout this 
+Memorandum Opinion, not the original page number of the filed 
+document.  
+ 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 7 of 48
+
+
+--- PAGE 8 ---
+8 
+ 
+stated that in addition to withholdings and redactions permitted 
+under section 2(c) of the Epstein Act, the Department “withheld 
+and redacted a limited amount of information otherwise covered 
+by various privileges, including deliberative-process privilege, 
+work-product privilege, and attorney-client privilege.” Id. at 
+2. The letter stated that “[a] privilege log will be produced in 
+due course,” and that “the Department will provide an 
+explanation for any redacted and withheld materials as part of 
+this production” as required by section 2(c)(2) of the Epstein 
+Act. Id. at 3, 4. The letter acknowledged that the Department 
+did not publicly produce all responsive material by the 
+deadline, stating that “the volume of materials to be reviewed—
+many of which continue to be produced to [the Justice Management 
+Division]—means that the Department must publicly produce 
+responsive documents on a rolling basis.” Id. at 5.  
+The Attorney General made further productions on December 
+20, 22, and 23, 2025, and on January 30, 2026. Mot., ECF No. 9-1 
+at 14. No production was accompanied by a privilege log. Id. 
+On January 30, 2026, the Attorney General issued a second 
+letter, stating that that day’s production “mark[ed] the 
+Department’s compliance with its production obligations under 
+the [Epstein] Act.” Letter from Todd Blanche, Deputy U.S. Att’y 
+Gen., Re: Epstein Files Transparency Act – Production of 
+Department Materials at 1 (Jan. 30, 2026), Exhibit E to Ward-
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 8 of 48
+
+
+--- PAGE 9 ---
+9 
+ 
+Packard Decl., ECF No. 9-3 (“January 30, 2026 Letter”). The 
+letter stated that “approximately 200,000 pages have been 
+redacted or withheld based on various privileges” and that a 
+“formal report with a summary of redactions made and list of all 
+government officials and politically exposed persons named or 
+referenced in the released materials will be submitted to the 
+House and Senate Committees on the Judiciary within 15 days of 
+today’s release.” Id. at 4. The letter stated that foreign 
+language materials had not been reviewed or produced “[b]ecause 
+it was not practicable for a first-level reviewer to determine 
+the responsiveness of a foreign-language document.” Id. at 5. 
+The letter also stated that some documents were not produced 
+because of technical issues with the files. Id. The letter 
+concluded that “[a]fter submitting the formal report to Congress 
+required under the [Epstein] Act and publishing the written 
+justifications in the Federal Register, the Department's 
+obligations under the [Epstein] Act will be completed.” Id. at 
+6. 
+On February 2, 2026, the Attorney General acknowledged that 
+“several thousands of documents and media that may [sic] have 
+inadvertently included victim-identifying information” were 
+disclosed in the January 30, 2026 production and were therefore 
+subsequently removed. See Letter from Todd Blanche, Deputy U.S. 
+Att’y Gen. to the Hon. Richard M. Berman & the Hon. Paul A. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 9 of 48
+
+
+--- PAGE 10 ---
+10 
+ 
+Engelmayer, United States v. Maxwell, ECF No. 848, 1:20-cr-
+00330-PAE (S.D.N.Y. Feb. 2, 2026). Attorneys representing Mr. 
+Epstein’s victims informed the Maxwell court that the Attorney 
+General’s disclosure of victim-identifying information began 
+with the December 20, 2025 production, that the impact to Mr. 
+Epstein’s victims from the disclosure had “escalated from 
+concern to suffering and fear for personal safety,” and that the 
+harm was “irreversible.” United States v. Maxwell, 20 Cr. 330, 
+2026 WL 279487, at *4, *5 (S.D.N.Y. Feb. 3, 2026). On April 23, 
+2026, the Department’s Inspector General announced that it had 
+initiated an audit of the Attorney General’s compliance with the 
+Epstein Act. U.S.
+ DEPARTMENT OF JUSTICE, DOJ OIG Announces Initiation 
+of Audit (April 23, 2026), https://oig.justice.gov/news/doj-oig-
+announces-initiation-audit.
+2 
+On February 14, 2026, the Attorney General issued the 
+report required in section 3 of the Epstein Act in the form of a 
+letter to the Chairmen and Ranking Members of the Senate 
+Judiciary Committee and House Judiciary Committee. See Letter 
+from Todd Blanche, Deputy U.S. Att’y Gen. to Chairman Chuck 
+Grassley, Ranking Member Dick Durbin, Chairman Jim Jordan, 
+Ranking Member Jamie Raskin (Feb. 14, 2026), Exhibit F to Ward-
+ 
+2 The Court may take judicial notice of information posted on 
+official public websites of government agencies. See Cannon v. 
+District of Columbia, 717 F.3d 200, 205 n.2 (D.C. Cir. 2013). 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 10 of 48
+
+
+--- PAGE 11 ---
+11 
+ 
+Packard Decl., ECF No. 9-3. With regard to withheld records, the 
+letter stated that “[t]he only category of records withheld were 
+those records where permitted withholdings under section 2(c) 
+and privileged materials were not segregable from material 
+responsive under section 2(a),” and that “the privileges that 
+applied to the withheld records were deliberative-process 
+privilege, work-product privilege, and attorney-client 
+privilege.” Id. at 2. The letter stated that “[no] records were 
+withheld or redacted ‘on the basis of embarrassment, 
+reputational harm, or political sensitivity, including to any 
+government official, public figure, or foreign dignitary’” 
+pursuant to section 2(b)(l) of the Epstein Act. Id. 
+The letter included a four-paragraph “Summary of Redactions 
+Made and Legal Basis.” Id. at 2-3. The first category in the 
+summary was the withholdings permitted under section 2(c) of the 
+Epstein Act. Id. at 2. For the second category, the letter 
+stated that “[a]lthough permitted by [section 2(c)(1)(E) of] the 
+[Epstein] Act, no materials were redacted or withheld on th[e] 
+basis that a record ‘contain[ed] information specifically 
+authorized under criteria established by an Executive order to 
+be kept secret in the interest of national defense or foreign 
+policy and are in fact properly classified pursuant to such 
+Executive order.’” Id. at 3. The third category were redactions 
+based on “various privileges, including deliberative-process 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 11 of 48
+
+
+--- PAGE 12 ---
+12 
+ 
+privilege, work-product privilege, and attorney-client 
+privilege.” Id. The letter cited Supreme Court precedent for 
+these withholdings. Id.  
+The letter concluded with a “List of All Government 
+Officials and Politically Exposed Persons” named or referenced 
+in the released materials. Id. at 3-6.  
+3. Plaintiff Katie Phang 
+Plaintiff Katie Phang is an “attorney and independent 
+journalist based in Miami, Florida.” Mot., ECF No. 9-1 at 15; 
+see also Phang Decl., ECF No. 9-2 ¶ 2. She has worked as a legal 
+analyst for a variety of media outlets, including hosting “The 
+Katie Phang Show” on MSNOW (then MSNBC). Phang Decl., ECF No. 9-
+2 ¶¶ 5, 6. Since April 2025, she has reported on “major domestic 
+and international events, with a focus on legal and political 
+news” on her YouTube channel and other platforms. Id. ¶ 7. She 
+has “extensively covered the crimes of Jeffrey Epstein, 
+Ghislaine Maxwell, and others in the ‘Epstein elite,’” including 
+publishing seventy-two videos about the subject in the last 
+year. Id. ¶¶ 8, 9. Her reporting on the Epstein files has 
+“realized more than 9.7 million views on [her] YouTube channel.” 
+Id. ¶ 10. 
+To conduct her reporting, Ms. Phang has “personally 
+reviewed many of the documents produced . . . pursuant to the 
+[Epstein Act],” and she has “relied and continue[s] to rely on 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 12 of 48
+
+
+--- PAGE 13 ---
+13 
+ 
+materials disclosed under the [Epstein] Act to develop [her] 
+reporting and to prepare and execute [her] reporting.” Id. ¶ 12. 
+Ms. Phang argues that “[the Attorney General’s] violations of 
+the [Epstein] Act have interfered with [her] ability to perform 
+[her] job as an investigative journalist.” Id. ¶ 13. 
+Specifically, the relief she seeks in her motion are 
+“particularly time-sensitive[] because they are preventing [her] 
+from moving forward with reporting [she] would otherwise conduct 
+over the coming weeks and months.” Id. ¶ 14.  
+Ms. Phang seeks the information that she claims has been 
+illegally withheld “because, as a journalist covering the 
+Epstein story, [she owes her] audience, the public, and the 
+victims of Epstein, Maxwell, and others the most accurate and 
+comprehensive reporting possible.” Id. ¶¶ 32, 33. “[The Attorney 
+General’s] illegal conduct has injured and continues to injure 
+[her] by preventing [her] from conducting the comprehensive 
+reporting [she] would otherwise conduct” about the specific 
+information she seeks to obtain through her motion. Id. ¶ 34. 
+Additionally, she states that “[the Attorney General’s] illegal 
+conduct has [] caused and continues to cause [her] to suffer 
+direct financial losses,” by “constraining [her] ability to 
+report” on the Epstein files. Id. ¶¶ 35, 42. 
+  
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 13 of 48
+
+
+--- PAGE 14 ---
+14 
+ 
+B. Procedural Background 
+Ms. Phang filed the Complaint on April 27, 2026, alleging 
+four claims: (1) Violation of the Administrative Procedure Act - 
+Contrary to Law and in Excess of Statutory Authority; (2) 
+Violation of the Administrative Procedure Act - Arbitrary, 
+Capricious, and an Abuse of Agency Discretion; (3) Ultra Vires 
+Agency Action;3 and (4) Declaratory Judgment Act. See Compl., ECF 
+No. 1 at 12-14. She asks the Court to provide the following 
+relief: (1) declare that the Attorney General has failed to 
+comply with the Act; (2) enjoin the Attorney General’s ongoing 
+violations of the Epstein Act and require him to: (a) remove all 
+unlawful redactions, (b) explain the bases for any remaining 
+lawful redactions, (c) re-produce all materials that were 
+produced but unlawfully redacted, and (d) produce all materials 
+that have not been produced but should be; (3) appoint a special 
+master to oversee the Attorney General’s compliance with the 
+law; (4) award attorneys’ fees and costs; and (5) grant any 
+other relief the Court deems just and proper. Id. at 14–15. 
+On May 28, 2026, Ms. Phang filed a motion for preliminary 
+injunction, seeking relief for a specific list of violations of 
+ 
+3   The Court does not address Ms. Phang’s likelihood of success 
+on her ultra vires claim in this Memorandum Opinion because she 
+does not invoke ultra vires in the pending motion. 
+ 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 14 of 48
+
+
+--- PAGE 15 ---
+15 
+ 
+the Epstein Act and requesting that the Court enter an order 
+requiring the Attorney General to: 
+(1) show cause why the redactions of sender 
+and recipient names in the emails bearing 
+Bates numbers EFTA00749245, 
+EFTA01187999, EFTA01930501, 
+ETFA01928255, EFTA00628112, 
+EFTA02648868, EFTA02504630, and 
+EFTA01022356 should not be removed; 
+ 
+(2) show cause why the redactions of 
+potential co-conspirator names in the DOJ 
+documents bearing Bates numbers 
+EFTA01703108 and EFTA00038227 should not 
+be removed; 
+ 
+(3) show cause why the underlying FBI 
+interview notes that formed the basis for 
+the FD-302 interview reports bearing 
+Bates numbers EFTA01245620, 
+EFTA02858481, EFTA02858491, and 
+EFTA02858495 should not be produced (with 
+appropriate redactions to protect 
+victims’ information); 
+ 
+(4) immediately initiate review and 
+production of foreign-language materials 
+that may be subject to production under 
+the Epstein Files Transparency Act; and 
+ 
+(5) immediately publish in the Federal 
+Register the redaction log required under 
+Epstein Files Transparency Act § 2(C)(2), 
+and update it concurrently with each 
+future release of redacted materials. 
+ 
+Mot., ECF No. 9-1 at 35-36. The Attorney General filed his 
+opposition to the motion on June 5, 2026, see Opp’n, ECF No. 12; 
+and Ms. Phang filed her reply on June 8, 2026. See Reply, ECF 
+No. 13. The motion is ripe and ready for the Court’s 
+adjudication. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 15 of 48
+
+
+--- PAGE 16 ---
+16 
+ 
+II. Standard of Review  
+ 
+“A preliminary injunction is an extraordinary remedy never 
+awarded as of right,” and only “upon a clear showing that the 
+plaintiff is entitled to such relief.” Winter v. Nat. Res. Def. 
+Council Inc., 555 U.S. 7, 22, 24 (2008). The moving party “must 
+establish that he is likely to succeed on the merits, that he is 
+likely to suffer irreparable harm in the absence of preliminary 
+relief, that the balance of equities tips in his favor, and that 
+an injunction is in the public interest.” Id. at 20. “[T]he 
+first and most important factor” is likelihood of success on the 
+merits. Aamer v. Obama, 742 F.3d 1023, 1038 (D.C. Cir. 2014). 
+Where the federal government is the opposing party, the balance 
+of equities and public interest factors merge. See Nken v. 
+Holder, 556 U.S. 418, 435 (2009).  
+In this Circuit, the four factors have typically been 
+evaluated on a “sliding scale,” such that if “the movant makes 
+an unusually strong showing on one of the factors, then it does 
+not necessarily have to make as strong a showing on another 
+factor.” Davis v. Pension Benefit Guar. Corp., 571 F.3d 1288, 
+1291–92 (D.C. Cir. 2009). In the wake of the Supreme Court’s 
+decision in Winter, 555 U.S. at 7; “the D.C. Circuit has 
+suggested that a positive showing on all four preliminary 
+injunction factors may be required.” Holmes v. FEC, 71 F. Supp. 
+3d 178, 183 n.4 (D.D.C. 2014); see also Sherley v. Sebelius, 644 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 16 of 48
+
+
+--- PAGE 17 ---
+17 
+ 
+F.3d 388, 393 (D.C. Cir. 2011) (“[W]e read Winter at least to 
+suggest if not to hold that a likelihood of success is an 
+independent, freestanding requirement for a preliminary 
+injunction.” (quotation marks omitted)). Nonetheless, “the 
+Circuit has had no occasion to decide this question because it 
+has not yet encountered a post-Winter case where a preliminary 
+injunction motion survived the less rigorous sliding-scale 
+analysis.” ConverDyn v. Moniz, 68 F. Supp. 3d 34, 46 n.2 (D.D.C. 
+2014); see also Changji Esquel Textile Co. v. Raimondo, 40 F.4th 
+716, 726 (D.C. Cir. 2022) (“In the past, we have . . . reserved 
+the question whether the sliding-scale approach remains valid. 
+We follow the same approach here because, even under the 
+sliding-scale approach, the movant must raise at least a serious 
+legal question on the merits.” (internal quotations and 
+citations omitted)); cf. Hanson v. District of Columbia, 120 
+F.4th 223, 243 (D.C. Cir. 2024) (citations omitted).  
+For the reasons explained below, all factors weigh in Ms. 
+Phang’s favor. 
+III. Analysis  
+A. The Court Likely Has Jurisdiction Over Ms. Phang’s 
+Claims 
+ 
+The Attorney General argues that the Court lacks 
+jurisdiction over Ms. Phang’s claims because: (1) the Epstein 
+Act does not provide for a private right of action; (2) Ms. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 17 of 48
+
+
+--- PAGE 18 ---
+18 
+ 
+Phang lacks Article III standing; and (3) the Administrative 
+Procedure Act’s (“APA”)4 waiver of sovereign immunity does not 
+apply here because Ms. Phang has an adequate remedy under the 
+Freedom of Information Act (“FOIA”)
+5. Opp’n, ECF No. 12 at 15. 
+For the reasons explained below, each of the Attorney General’s 
+arguments is without merit. 
+1. The APA Provides Ms. Phang With a Right of Action 
+The Attorney General argues that “[b]y its own terms, 
+nowhere does [the Epstein Act] expressly authorize private 
+individuals to sue for alleged violations, nor does the 
+statutory scheme indicate that Congress intended to create an 
+implied right of action,” and therefore “any claim premised on 
+an alleged violation of the Epstein Act fails as a matter of 
+law.” Opp’n, ECF No. 12 at 16–17.  
+ However, Ms. Phang sues under the APA, not under the 
+Epstein Act. “The APA, by its terms, provides a right to 
+judicial review of all final agency action for which there is no 
+other adequate remedy in a court, § 704, and applies universally 
+except to the extent that—(1) statutes preclude judicial review; 
+or (2) agency action is committed to agency discretion by law, § 
+701(a).” Bennett v. Spear, 520 U.S. 154, 175 (1997) (citation 
+ 
+4 5 U.S.C. § 706(2). 
+5 5 U.S.C. § 552. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 18 of 48
+
+
+--- PAGE 19 ---
+19 
+ 
+modified). The Attorney General has conceded that the production 
+of documents was final agency action. Opp’n, ECF No. 12 at 23.  
+Ms. Phang alleges that the Attorney General’s violations of 
+the Act are “not in accordance with law” pursuant to 5 U.S.C. § 
+706(2)(A) because they are contrary to the requirements of the 
+Epstein Act. Compl., ECF No. 1 ¶¶ 48-51. Ms. Phang also alleges 
+that the Attorney General’s violations of the Act are arbitrary 
+and capricious under 5 U.S.C. § 706(2)(A) because the Attorney 
+General’s production of materials “lacks a lawful basis and 
+because [the Attorney General] has not articulated an adequate, 
+reasoned, or lawful basis for redacting documents in whole or in 
+part, retracting documents, and failing to produce others.” Id. 
+¶¶ 52-55. For all these reasons, the Court rejects the Attorney 
+General’s argument that Ms. Phang’s claims fail because the 
+Epstein Act does not provide a private right of action. Ms. 
+Phang has a right of action under the APA. 
+2. Ms. Phang Likely Has Article III Standing 
+a.  Legal Standard 
+“Article III of the Constitution limits the jurisdiction of 
+federal courts to ‘Cases’ and ‘Controversies.’” Susan B. Anthony 
+List v. Driehaus, 573 U.S. 149, 157 (2014) (quoting U.S.
+ CONST. 
+art. III, § 2). “‘One element of the case-or-controversy 
+requirement’ is that plaintiffs ‘must establish that they have 
+standing to sue.’” Clapper v. Amnesty Int’l USA, 568 U.S. 398, 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 19 of 48
+
+
+--- PAGE 20 ---
+20 
+ 
+408 (2013) (quoting Raines v. Byrd, 521 U.S. 811, 818 (1997)); 
+see Lujan v. Nat’l Wildlife Fed’n, 504 U.S. 555, 560 (1990) 
+(calling standing “the irreducible constitutional minimum”); see 
+also Jibril v. Mayorkas, No. 19-cv-2457, 2023 WL 2240271, at *4 
+(D.D.C. Feb. 27, 2023) (“One way a court might lack subject-
+matter jurisdiction is if a plaintiff lacks Article III 
+standing.” (citing Haase v. Sessions, 835 F.2d 902, 906 (D.C. 
+Cir. 1987))).  
+To establish standing, “a plaintiff must show (1) an 
+‘injury in fact,’ (2) a sufficient ‘causal connection between 
+the injury and the conduct complained of,’ and (3) a 
+‘likel[ihood]’ that the injury ‘will be redressed by a favorable 
+decision.’” Susan B. Anthony List, 573 U.S. at 157-58 
+(alteration in original) (quoting Lujan, 504 U.S. at 560-61). 
+“The party invoking federal jurisdiction bears the burden of 
+establishing these elements.” Lujan, 504 U.S. at 561 (citing 
+FW/PBS, Inc. v. City of Dallas, 493 U.S. 215, 231 (1990)). 
+“Since they are not mere pleading requirements but rather an 
+indispensable part of the plaintiff’s case, each element must be 
+supported in the same way as any other matter on which the 
+plaintiff bears the burden of proof, i.e., with the manner and 
+degree of evidence required at the successive stages of the 
+litigation.” Id.  
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 20 of 48
+
+
+--- PAGE 21 ---
+21 
+ 
+Courts have recognized that plaintiffs can establish 
+standing based on an informational injury. See Am. Soc’y for the 
+Prevention of Cruelty to Animals v. Feld Ent., Inc., 659 F.3d 
+13, 22 (D.C. Cir. 2011). And an “actual economic loss” is “a 
+classic form of concrete and particularized harm” that suffices 
+by itself to ground Article III standing. Humane Soc’y of the 
+U.S. v. Vilsack, 797 F.3d 4, 9 (D.C. Cir. 2015). 
+b. Analysis 
+Ms. Phang argues that she has two redressable injuries: 
+first, she has suffered cognizable informational injuries, see 
+Mot., ECF No. 9-1 at 18–21; and second, she has suffered 
+cognizable economic injuries. Id. at 21. The Attorney General 
+responds that Ms. Phang is not suffering a cognizable 
+informational injury, and that her economic injury is not 
+redressable. See Opp’n, ECF No. 12 at 18–19. For the reasons 
+explained below, the Court concludes that Ms. Phang likely 
+suffers from informational injuries and her economic injury 
+Likely is redressable. 
+i. Ms. Phang Likely Has Suffered a Cognizable 
+Informational Injury 
+ 
+It is well-settled that “a denial of access to information 
+qualifies as an injury in fact where a statute (on the 
+claimants’ reading) requires that the information be publicly 
+disclosed and there is no reason to doubt their claim that the 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 21 of 48
+
+
+--- PAGE 22 ---
+22 
+ 
+information would help them.” Campaign Legal Ctr. v. FEC, 31 
+F.4th 781, 783 (D.C. Cir. 2022). To demonstrate that they have 
+an actionable informational injury, a plaintiff must show that: 
+“(1) it has been deprived of information that, on its 
+interpretation, a statute requires the government or a third 
+party to disclose to it, and (2) it suffers, by being denied 
+access to that information, the type of harm Congress sought to 
+prevent by requiring disclosure.” Friends of Animals v. Jewell, 
+828 F.3d 989, 992 (D.C. Cir. 2016) (citing FEC v. Akins, 524 
+U.S. 11, 21-22 (1998)). 
+“[T]he fact that a number of people could be similarly 
+injured does not render the claim an impermissible generalized 
+grievance[.]” Pub. Citizen, Inc. v. Nat’l Highway Traffic Safety 
+Admin., 489 F.3d 1279, 1292 (D.C. Cir. 2007). And “[t]he fact 
+that other citizens or groups of citizens” are also deprived of 
+the information a plaintiff seeks “does not lessen [a 
+plaintiff’s] asserted injury, any more than the fact that 
+numerous citizens might request the same information under the 
+[FOIA] entails that those who have been denied access do not 
+possess a sufficient basis to sue.” Pub. Citizen v. U.S. Dep’t 
+of Just., 491 U.S. 440, 449-50 (1989). Even if the statute 
+“entitles the public generally to the disclosure of” the 
+information, “that does not mean that the informational injury . 
+. . is not particular to Plaintiff.” Elec. Priv. Info. Ctr. v. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 22 of 48
+
+
+--- PAGE 23 ---
+23 
+ 
+Presidential Advisory Comm’n on Election Integrity, 266 F. Supp. 
+3d 297, 311 (D.D.C. 2017).  
+Ms. Phang argues that she satisfies the first part of the 
+test because she “reads the statute to require a host of 
+disclosures that have not occurred” and because disclosure is 
+owed to the “public at large.” Mot., ECF No. 9-1 at 19 (quoting 
+Citizens for Resp. & Ethics in Wash. v. Off. of Mgmt. & Budget, 
+791 F. Supp. 3d 29, 46 (D.D.C. 2025)). The Attorney General 
+disagrees, arguing that: (1) Ms. Phang does not “allege any harm 
+or individualized interests separate from ‘the interests of the 
+public at large,’” Opp’n, ECF No. 12 at 17 (quoting Hein v. 
+Freedom From Religion Found., Inc., 551 U.S. 587, 600 (2007)); 
+(2) she does not have a “personal ‘statutory right to seek the 
+information’ at issue,” id. at 18 (quoting Ctr. for Biological 
+Diversity v. U.S. Int’l Dev. Fin. Corp., 77 F.4th 679, 686 (D.C. 
+Cir. 2023)); and (3) because the statute is directed at the 
+government, she has no legally protected interest to assert. Id. 
+(citing Ctr. for Biological Diversity, 77. F.4th at 686). 
+The Attorney General’s arguments are unpersuasive. As to 
+his first argument, his reliance on Hein is inapposite since it 
+is not an informational injury case.  
+As to his second and third arguments, Center for Biological 
+Diversity supports Ms. Phang’s argument rather than his. There, 
+plaintiffs sued the U.S. International Development Finance 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 23 of 48
+
+
+--- PAGE 24 ---
+24 
+ 
+Corporation (“DFC”) under the APA and the Sunshine Act, a 
+statute directed at the government, after the DFC published a 
+rule exempting itself from the Sunshine Act. “Congress enacted 
+the Sunshine Act to open the deliberations of multi-member 
+federal agencies to public view.” Common Cause v. Nuclear Reg. 
+Comm'n, 674 F.2d 921, 928 (D.C. Cir. 1982). It requires, among 
+other things, a public announcement of meetings and logistical 
+information about them, and the right to a transcript, 
+recording, or minutes of any closed portion of a meeting. Cnt. 
+for Biological Diversity, 77 F.4th at 686. The court held that 
+Center for Biological Diversity (“CBD”) had informational 
+standing with regard to the first part of the test, because 
+“[o]n its interpretation of the Sunshine Act, CBD claims that it 
+was denied notice about certain meetings, preventing it from 
+attending and engaging with DFC.” Id. The court explained that 
+“[g]iven Congress’s clear command for any agency subject to the 
+Sunshine Act to provide robust public information, there can be 
+no doubt that these provisions create a right to information 
+sufficient for [the plaintiff’s] injury.” Id. As this Court has 
+explained, “[e]ven if the statute ‘entitles the public generally 
+to the disclosure of’ the information [from the government], 
+‘that does not mean that the informational injury ... is not 
+particular to Plaintiff.’” Citizens for Resp. & Ethics in Wash., 
+791 F. Supp. 3d at 46 (citing Elec. Priv. Info. Ctr., 266 F. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 24 of 48
+
+
+--- PAGE 25 ---
+25 
+ 
+Supp. 3d at 311). The Epstein Act requires “robust” disclosure 
+of information by the government to the public. 
+The Court concludes that Ms. Phang satisfies the first part 
+of the test: on her interpretation of the Epstein Act, it 
+requires the information to be disclosed to her as part of the 
+public at large, and the Attorney General’s alleged failure to 
+comply with the law deprives her of this information. See e.g., 
+Akins, 524 U.S. at 20–25 (emphasizing that an “inability to 
+obtain information” that Congress required to make public 
+constitutes an injury in fact for Article III). 
+Ms. Phang argues that she satisfies the second part of the 
+test because she is suffering the type of harm that Congress 
+sought to prevent in enacting the Act. Ms. Phang argues first 
+that “Congress enacted the Act to provide ‘complete truth’ for 
+survivors;” Mot., ECF No. 9-1 at 19 (quoting 171 Cong. Rec. 
+H4726 (daily ed. Nov. 18, 2025) (statement of Rep. Raskin)); and 
+to “achieve ‘maximum possible level of transparency when it 
+comes to the heinous crimes of Jeffrey Epstein.’” Id. (quoting 
+171 Cong. Rec. H4727 (daily ed. Nov. 18, 2025) (statement of 
+Rep. Kiley)); see also id. at 19 n.7 (listing more statements 
+from congressional representatives noting the purpose of the Act 
+is transparency for the American public). Ms. Phang then argues 
+that to realize these goals, journalists “through their 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 25 of 48
+
+
+--- PAGE 26 ---
+26 
+ 
+reporting are able to mediate the contents of the Epstein Files 
+for the general public.” Id. at 20. 
+The Attorney General disagrees, arguing that Ms. Phang 
+cannot demonstrate “downstream harm—some concrete consequences 
+of not receiving the information,” but that “[a]t best, [Ms. 
+Phang] asserts generalized grievances of seeking ‘complete 
+truth’ and ‘transparency.’” Opp’n, ECF No. 12 at 18–19.  
+The Attorney General’s arguments are unpersuasive. First, 
+Ms. Phang has identified “some concrete consequences of not 
+receiving the information.” Id. at 18. She has identified “half 
+a dozen stories she is currently unable to report” because the 
+Attorney General has not disclosed the information. See Reply, 
+ECF No. 13 at 8-9 (citing Phang Decl., ECF No. 9-2 ¶¶ 14–31). 
+She has identified harms to victims and the public who are being 
+denied the benefit of her reporting. Mot., ECF No. 9-1 at 20. 
+She also cited authority that supports her assertion that 
+journalists, and herself in particular, have suffered the type 
+of harm that the Epstein Act was meant to prevent. See Mot., ECF 
+No. 9-1 at 20–21 (citing Seife v. U.S. Dep’t of Health & Human 
+Servs., 440 F. Supp. 254 (S.D.N.Y. 2020) and Pub. Citizen v. 
+Carlin, 2 F. Supp. 2d 1 (D.D.C. 1997), rev’d on other grounds, 
+184 F.3d 900 (D.C. Cir. 1999)). The Attorney General does not 
+address this authority. See generally Opp’n, ECF No. 12 at 18. 
+Second, “the fact that a number of people could be similarly 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 26 of 48
+
+
+--- PAGE 27 ---
+27 
+ 
+injured does not render the claim an impermissible generalized 
+grievance: ‘where a harm is concrete, though widely shared, the 
+Court has found injury in fact.’” Pub. Citizen, Inc., 489 F.3d 
+at 1292 (quoting Akins, 524 U.S. at 24).  
+The Court concludes that Ms. Phang satisfies the second 
+part of the test: she is suffering the type of harm—lack of 
+transparency—that Congress sought to prevent by requiring 
+disclosure of the information and the disclosure of the 
+information that Ms. Phang seeks would help her in her work. See 
+e.g., Jewell, 828 F.3d at 992 (“[T]he existence and scope of an 
+injury for informational standing purposes is defined by 
+Congress: a plaintiff seeking to demonstrate that it has 
+informational standing, generally ‘need not allege any 
+additional harm beyond the one Congress identified.’” (quoting 
+Spokeo, Inc. v. Robbins, 578 U.S. 330, 342 (2016))). 
+For all these reasons, Ms. Phang has established that she 
+likely is suffering from an informational injury. 
+ii. Ms. Phang’s Economic Injuries Are Likely 
+Redressable 
+ 
+Ms. Phang also argues that she has suffered an economic 
+injury based on the Attorney General’s failure to disclose 
+materials in violation of the Epstein Act, which has caused her 
+“actual economic loss” because she has been unable to publish 
+additional videos about the Epstein files and consequently has 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 27 of 48
+
+
+--- PAGE 28 ---
+28 
+ 
+lost revenue. Mot., ECF No. 9-1 at 21. An “actual economic loss” 
+is “a classic form of concrete and particularized harm” that 
+suffices by itself to ground Article III standing. Humane Soc’y 
+of the U.S., 797 F.3d at 9. The Attorney General responds that 
+any alleged economic “injury cannot establish standing because 
+it is not redressable” since “monetary relief is not available 
+under the APA.” Opp’n, ECF No. 12 at 19 (citing 5 U.S.C. § 702). 
+The Attorney General’s argument is without merit. “A 
+‘plaintiff satisfies the redressability requirement’ by showing 
+‘that a favorable decision will relieve a discrete injury’ to 
+the plaintiff,” and “[t]he plaintiff ‘need not show that a 
+favorable decision will relieve’ his or her ‘every injury.’” 
+Energy Future Coal. v. E.P.A., 793 F.3d 141, 145–46 (D.C. Cir. 
+2015) (quoting Massachusetts v. E.P.A., 549 U.S. 497, 525 
+(2007)) (emphasis in original). Rather, the plaintiff needs to 
+show that her injury would be redressed by removing a “hurdle.” 
+Id. at 144. 
+Ms. Phang is not seeking monetary damages. See generally 
+Compl., ECF No. 1. Rather, she is requesting that the “hurdle”—
+the violations of the Act—be removed so she can continue to 
+publish her work and so she does not experience further economic 
+loss caused by the hurdle. Accordingly, her economy injury is 
+redressable by the relief she requests. 
+  
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 28 of 48
+
+
+--- PAGE 29 ---
+29 
+ 
+iii. Ms. Phang Likely Has Established the 
+Requisite Causal Connection, and Her 
+Informational Injury Likely Is Redressable 
+ 
+The Attorney General does not contest causal connection, 
+which is easily met here. See generally Opp’n, ECF No. 12. Ms. 
+Phang’s injuries are directly traceable to her claims that the 
+Attorney General has violated the Epstein Act. The Attorney 
+General also does not dispute that Ms. Phang’s informational 
+injuries are redressable by the relief she is seeking. See 
+generally id. A favorable ruling by the Court would resolve her 
+informational injuries, as she would be able to obtain and 
+report on the information she is seeking. 
+For all the reasons discussed above, the Court concludes 
+that Ms. Phang has established Article III standing. 
+3. FOIA Does Not Provide an Adequate Remedy 
+ 
+The Attorney General argues that Ms. Phang invoked the 
+APA’s waiver of sovereign immunity when she brought this action 
+under the APA, but because FOIA provides Ms. Phang with another 
+adequate remedy, there was no waiver of sovereign immunity and 
+so the Court lacks jurisdiction over her claims. See Opp’n, ECF 
+No. 12 at 19–21.  
+For a remedy to constitute an adequate remedy precluding 
+APA review, the remedy must not be “doubtful.” El Rio Santa Cruz 
+Neighborhood Health Ctr., Inc. v. DHS, 396 F.3d 1265, 1270 (D.C. 
+Cir. 2005). The disclosure mandate in the Epstein Act is 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 29 of 48
+
+
+--- PAGE 30 ---
+30 
+ 
+“strikingly broad.” United States v. Maxwell, 811 F. Supp. 3d 
+667, 676 (S.D.N.Y. 2025). The Court concludes that FOIA, a 
+fundamentally different disclosure law, does not provide Ms. 
+Phang with an adequate remedy for the reasons explained below. 
+First, Ms. Phang likely would not be able to obtain the 
+unredacted names of senders and recipients in email exchanges 
+with Mr. Epstein because such information would likely be 
+redacted under FOIA Exemption 6—information that, if disclosed, 
+would invade another individual’s personal privacy; and FOIA 
+Exemption 7—information compiled for law enforcement purposes. 
+See Clemente v. Fed. Bureau of Investigation, No. 1:20-cv-1527, 
+2022 WL 17092585, at *3–9 (D.D.C. Nov. 21, 2022) (holding that 
+the FBI properly asserted Exemptions 1, 3, 5, 6, 7(A), 7(C), 
+7(D), and 7(E) for records withheld in response to a broad FOIA 
+request for records related to Mr. Epstein and his alleged 
+criminal activities). Second, she would not be able to obtain 
+unredacted DOJ internal charging documents or the notes of the 
+interview with the person who accused Mr. Trump of assault 
+because they would likely be subject to the same exemptions, as 
+well as potentially being exempted as grand jury records under 5 
+U.S.C. § 552(b)(3) and Federal Rule of Criminal Procedure 6(e). 
+See id. Third, she likely would not be able to compel the review 
+of foreign-language documents because such a request likely 
+would be denied as “unduly burdensome.” FOIA “protects agencies 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 30 of 48
+
+
+--- PAGE 31 ---
+31 
+ 
+from undue burdens.” Inst. for Just. v. IRS, 941 F.3d 567, 570 
+(D.C. Cir. 2019). The Attorney General stated that foreign 
+language materials were not reviewed or produced because it was 
+“not practicable for a first-level reviewer to determine the 
+responsiveness of a foreign-language document,” January 30, 2026 
+Letter at 5; and provided no indication that there was any plan 
+to review and produce them. Id. And fourth, she would not be 
+able to obtain the redaction log because FOIA does not require 
+agencies “to create new records” that do not yet exist. Nat’l 
+Sec. Couns. v. CIA, 969 F.3d 406, 409 (D.C. Cir. 2020).  
+The Department’s own post-Epstein Act responses to FOIA 
+requests for the Mr. Epstein and Ms. Maxwell files refute the 
+Attorney General’s argument that FOIA provides an adequate 
+remedy. In responses to two FOIA requests for the files, the 
+Department stated that “the [Epstein Act] directed a much 
+broader and less redacted release of the files than would have 
+been made under the FOIA. Certain exemptions which may have been 
+made under FOIA were not made in the [Epstein Act] release.” 
+Letter from Andrew D. Fiorillo, Chief, Initial Request Staff, 
+U.S. Dep’t of Just. Off. of Info. Pol’y, to Joseph Elfelt at 2 
+(Apr. 23, 2026), Exhibit H to Ballou Decl., ECF No. 14-1; Letter 
+from Andrew D. Fiorillo, Chief, Initial Request Staff, U.S. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 31 of 48
+
+
+--- PAGE 32 ---
+32 
+ 
+Dep’t of Just. Off. of Info. Pol’y, to Joseph Elfelt at 2 (May 
+8, 2026), Exhibit I to Ballou Decl., ECF No. 14-1.6 
+The Attorney General relies on a string cite to assert that 
+FOIA provides an adequate remedy here. Opp’n, ECF No. 12 at 20-
+21. But the Attorney General does not even attempt to explain 
+why the cases cited are analogous to this case, where the  
+Epstein Act mandates broad disclosures that would be exempted 
+under FOIA and requires the publication of a redaction log that 
+the Attorney General has not yet published.  
+The Attorney General argues that the Epstein Act and FOIA 
+“must be construed as a whole and, indeed, they operate in 
+harmony.” Opp’n, ECF No. 12 at 22. But he provides no authority 
+for these propositions. He contends that the Epstein Act 
+“supplements FOIA by imposing additional disclosure obligations 
+with respect to a specific set of records; it does not supplant 
+FOIA or create a parallel enforcement framework.” Id. He 
+provides no authority for these propositions either. The Epstein 
+Act is a standalone piece of legislation. It does not reference 
+ 
+6 Ms. Phang filed a Notice of Supplemental Materials 
+(“Notice”) containing the Ballou Declaration and the letters 
+responding to the FOIA requests at 6:45 pm on June 24, 2026. See 
+Notice of Suppl. Materials, ECF No. 14. The next morning, the 
+Court posted a Minute Order directing the government to file a 
+response to the Notice by no later than 1:00 pm the same day—
+June 25, 2026. The Attorney General neither filed a response nor 
+requested additional time to respond as of the posting of this 
+Memorandum Opinion. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 32 of 48
+
+
+--- PAGE 33 ---
+33 
+ 
+FOIA or modify the FOIA provisions of the United States Code. 
+When enacting the Epstein Act, Congress was well aware of FOIA 
+and its requirements, “thereby indicating that [it] did not view 
+the alternatives [to the same information] as adequate.” 
+Citizens for Resp. & Ethics in Wash. 791 F. Supp. 3d at 51 
+(discussing that FOIA requests were not an adequate source for 
+the information sought by the plaintiff, as the plaintiff sought 
+to enforce the disclosure statute at issue through the APA).  
+The Attorney General asserts that since Ms. Phang “alleges 
+that the Department’s public disclosures violated the law by 
+failing to produce required records, improperly withholding 
+information, and neglecting to provide adequate justification 
+for any redactions applied,” which is similar to what a 
+plaintiff would contest under FOIA, “FOIA’s remedial scheme is 
+not merely adequate, but is substantively identical to the 
+relief Plaintiff seeks.” Opp’n, ECF No. 12 at 22. The Attorney 
+General cites Citizens for Responsibility and Ethics in 
+Washington (“CREW”) v. Dep’t of Just. to support this argument. 
+846 F.3d 1235, 1245–46 (D.C. Cir. 2017). CREW sued under section 
+704 of the APA to compel the Department of Justice’s Office of 
+Legal Counsel to disclose its opinions under the “reading-room” 
+provision of the FOIA. Id. at 1238. That provision “requires 
+agencies to ‘make [certain records] available for public 
+inspection in an electronic format[,]’ including ‘statements of 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 33 of 48
+
+
+--- PAGE 34 ---
+34 
+ 
+policy and interpretations which have been adopted by the agency 
+and are not published in the Federal Register.’” Id. at 1240 
+(quoting 5 U.S.C. §§ 552(a)(2), (a)(2)(B)). FOIA provides for 
+judicial review of an agency’s decision to withhold records 
+under this provision. Id. The court held that that FOIA offered 
+an adequate remedy to CREW because “a plaintiff in CREW's 
+position may bring a FOIA claim to enforce the reading-room 
+provision” and therefore, CREW’s APA claim was barred. Id. at 
+1246. The Attorney General’s reliance on this case is misplaced 
+since, as explained above, it is doubtful that Ms. Phang could 
+obtain the information she seeks here with a FOIA claim. And 
+FOIA’s remedial scheme is clearly not “substantively identical” 
+to the relief sought here for the reasons explained above. 
+The Attorney General also points to the Department’s “Cross 
+Walk” that correlates the exemptions under the Epstein Act to 
+FOIA exemptions. Opp’n, ECF No. 12 at 22 (citing Department of 
+Justice, Off. Of Info. Pol’y, EFTA-FOIA Crosswalk (2026), 
+https://www.justice.gov/oip/media/1438931/dl?inline.
+7 The 
+Attorney General argues that “the redactions and withholding 
+decisions [Ms. Phang] challenges align with FOIA’s exemption 
+framework.” Id. at 22. What the Cross Walk in fact shows is that 
+ 
+7 The Court may take judicial notice of information posted on 
+official public websites of government agencies. See Cannon, 717 
+F.3d at 205 n.2. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 34 of 48
+
+
+--- PAGE 35 ---
+35 
+ 
+the five very specific permitted grounds for withholding under 
+the Epstein Act simply correlate to certain broader FOIA 
+exemptions. There is nothing in the Epstein Act that required 
+the Attorney General to create the Cross Walk, and the Attorney 
+General ignores the fact that the Epstein Act requires 
+disclosures that would be exempt under FOIA, as explained above.  
+For all these reasons, it is highly “doubtful” that FOIA 
+would provide an adequate remedy. Therefore, Ms. Phang’s suit 
+under the APA is proper and is not barred by sovereign immunity.  
+B. Ms. Phang Is Likely to Prevail on Her Administrative 
+Procedure Act Claims Relevant to the Pending Motion 
+ 
+Ms. Phang argues that she is likely to succeed on the 
+merits of her APA claims relevant to the instant motion. Mot., 
+ECF No. 9-1 at 23-26. Ms. Phang identifies five categories of 
+violations of the Epstein Act. First, the Attorney General has 
+violated the Epstein Act by redacting the names of senders and 
+recipients in at least eight email exchanges with Mr. Epstein 
+regarding a “torture video” and sexual activity with young 
+women, including minors. Id. at 23-26. Second, the Attorney 
+General has violated the Epstein Act by redacting the names of 
+co-defendants in a draft indictment, the names of individuals 
+identified as “co-conspirators,” and the sender and recipients 
+in a Department briefing email. Id. at 26. Third, the Attorney 
+General has violated the Epstein Act by withholding certain 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 35 of 48
+
+
+--- PAGE 36 ---
+36 
+ 
+materials mentioning President Trump, specifically, “notes from 
+FBI interviews with a victim who has alleged that in the 1980s, 
+when she was about 13 years old, Epstein introduced her to 
+Trump, who in turn assaulted her.” Id. at 27. Fourth, the 
+Attorney General has violated the Epstein Act by not reviewing 
+or producing any foreign language materials. Id. at 28-30. 
+Fifth, the Attorney General has violated the Epstein Act by 
+failing to publish any redaction logs. Id. at 30-31. 
+The Attorney General does not respond substantively to any 
+of these arguments. Rather, he states that based on his 
+jurisdictional arguments, “[Ms. Phang’s] APA claims fail as a 
+matter of law.” Id. at 14. By not responding substantively, the 
+Attorney General has conceded Ms. Phang’s merits arguments in 
+the pending motion. Texas v. United States, 798 F.3d 1108, 1110 
+(D.C. Cir. 2015) (stating that D.D.C. Local Rule 7(b) is 
+“understood to mean that if a party files an opposition to a 
+motion and therein addresses only some of the movant's 
+arguments, the court may treat the unaddressed arguments as 
+conceded”). Accordingly, Ms. Phang is likely to succeed on the 
+merits of her APA claims relevant to the pending motion. 
+C. Ms. Phang Likely Has Established That She Faces 
+Irreparable Harm 
+ 
+“[T]he basis of injunctive relief in the federal courts has 
+always been irreparable harm;” thus “[a] movant's failure to 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 36 of 48
+
+
+--- PAGE 37 ---
+37 
+ 
+show any irreparable harm is . . . grounds for refusing to issue 
+a preliminary injunction, even if the other three factors 
+entering the calculus merit such relief.” Chaplaincy of Full 
+Gospel Churches v. England, 454 F.3d 290, 297 (D.C. Cir. 2006).  
+The D.C. Circuit “has set a high standard for irreparable 
+injury.” Id. “First, the injury must be both certain and great; 
+it must be actual and not theoretical.” Wis. Gas Co. v. Fed. 
+Energy Regul. Comm’n, 758 F.2d 669, 674 (D.C. Cir. 1985) (per 
+curiam). The movant must show that “[t]he injury complained of 
+is of such imminence that there is a clear and present need for 
+equitable relief to prevent irreparable harm.” Id. (internal 
+citations, brackets, and quotation marks omitted). “Second, the 
+injury must be beyond remediation.” Chaplaincy of Full Gospel 
+Churches, 454 F.3d at 297.  
+Ms. Phang argues that she “is suffering two kinds of 
+irreparable harm: an informational harm (because Blanche refuses 
+to produce time-sensitive information she is entitled to) and an 
+economic harm (because she cannot publish time-sensitive 
+reporting based on that information).” Reply, ECF No. 13 at 14-
+15; Mot., ECF No. 9-1 at 18–21, 32–34. The Attorney General 
+argues that her purported information injury is speculative and 
+conjectural, Opp’n, ECF No. 12 at 26-27; and that her economic 
+injury alone does not constitute irreparable harm. Id. at 27-28. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 37 of 48
+
+
+--- PAGE 38 ---
+38 
+ 
+The Court concludes that Ms. Phang has demonstrated irreparable 
+injury for the reasons explained below. 
+1. Ms. Phang’s Informational Injury Is Neither 
+Speculative Nor Conjectural 
+ 
+Ms. Phang argues that the information she seeks is time-
+sensitive because Congress has said so by requiring compliance 
+with the Epstein Act within thirty days of its enactment. Mot., 
+ECF No. 9-1 at 31. Ms. Phang argues that the information is 
+time-sensitive “in fact” because if she is able to report on the 
+names of the co-conspirators whose names have been redacted, 
+judicial redress for victims may be possible. Id. at 32. Ms. 
+Phang argues that the foreign language materials “are likely to 
+be a fruitful source of information about the identities of 
+those complicit in Epstein’s crimes.” Id.  Ms. Phang argues that 
+materials related to President Trump are particularly time-
+sensitive “because of the ongoing midterm elections” and the 
+fact that “[m]any candidates have highlighted the Epstein Files 
+as part of their campaigns.” Id. Finally, Ms. Phang argues that 
+the “redaction log is time-sensitive as a structural matter” 
+because without it, there is “no systematic way to evaluate the 
+productions that have occurred to date.” Id. at 34. 
+The Attorney General argues that Ms. Phang has not provided 
+adequate evidence “that any records are presently at risk of 
+destruction, that any relevant evidence is likely to be lost 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 38 of 48
+
+
+--- PAGE 39 ---
+39 
+ 
+during the pendency of this litigation, or that any witness 
+possesses information that is in imminent danger of becoming 
+unavailable.” Opp’n, ECF No. 12 at 26.8 This argument is beside 
+the point. Ms. Phang does not argue that she faces irreparable 
+harm because the records are at risk of destruction, that 
+evidence will be lost during the litigation, or that a witness 
+possesses information that is in imminent danger of becoming 
+unavailable; rather she points out that these are concerns with 
+any potential judicial redress for victims. The Attorney General 
+also argues that the fact that many of the “records at issue 
+concern alleged events that occurred decades ago” undermines her 
+“claim of urgency.” Opp’n, ECF No. 12 at 18. However, the 
+urgency is based on the fact that the Epstein Act required 
+disclosure within 30 days of enactment; not based on when the 
+underlying events occurred. 
+Finally, the Attorney General argues that Ms. Phang’s 
+argument regarding public interest fading after the upcoming 
+mid-term elections is speculative. Id. However, “the non-
+disclosure of information to which a plaintiff is entitled, 
+under certain circumstances itself constitutes an irreparable 
+ 
+8 The Attorney General also argues that injury from delay in 
+obtaining these materials is speculative because Ms. Phang only 
+states that delay “may impair” the search for truth. Opp’n, ECF 
+No. 12 at 26 (citing Mot., ECF No. 9-1 at 32.) The Attorney 
+General has taken this reference out of context and so the Court 
+does not address the argument. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 39 of 48
+
+
+--- PAGE 40 ---
+40 
+ 
+harm; specifically, where the information is highly relevant to 
+an ongoing and highly public matter.” Elec. Priv. Info. Ctr., 
+266 F. Supp. 3d at 319. One example of such a circumstance is 
+when a plaintiff was “precluded, absent a preliminary 
+injunction, from obtaining in a timely fashion information vital 
+to the current and ongoing debate surrounding the legality of 
+the Administration's warrantless surveillance Program.” Elec. 
+Priv. Info. Ctr. v. Dep't of Just., 416 F. Supp. 2d 30, 41 
+(D.D.C. 2006). Another example was “because the urgency with 
+which the plaintiff makes its FOIA request is predicated on a 
+matter of current national debate, due to the impending 
+election, a likelihood for irreparable harm exists if the 
+plaintiff's FOIA request does not receive expedited treatment.” 
+Washington Post v.DHS, 459 F. Supp. 2d 61, 75 (D.D.C. 2006). 
+Here, the current high level of interest in the Epstein Files 
+combined with the upcoming mid-term elections amounts to a 
+circumstance that itself constitutes irreparable harm, 
+especially where the Attorney General has not disputed that he 
+is in violation of the Epstein Act.    
+2. Ms. Phang’s Economic Injury Likely Is 
+Irreparable  
+ 
+Ms. Phang argues that the information she seeks is time-
+sensitive to her business interests because she “derives income 
+from each video and story she publishes,” and to maximize her 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 40 of 48
+
+
+--- PAGE 41 ---
+41 
+ 
+revenue, her reporting needs to be “about topics that are timely 
+and newsworthy.”  Mot., ECF No. 9-1 at 34. She notes that public 
+interest in the Epstein files is “extraordinarily high” now but 
+will diminish over time. Id. 
+As an initial matter, the Attorney General’s contention 
+that “economic loss does not, in and of itself, constitute 
+irreparable harm” misunderstands the applicable law. Opp’n, ECF 
+No. 13 at 16 (quoting Wis. Gas Co., 758 F.2d at 674). Rather, 
+where, as here, Ms. Phang cannot receive damages under the APA, 
+economic harm can be considered irreparable. See, e.g., Chef 
+Time 1520 LLC v. Small Bus. Admin., 646 F. Supp. 3d 101, 115–16 
+(D.D.C. 2022) (“[B]ecause [plaintiff] will not be able to seek 
+damages under the APA for any possibly unlawful agency action 
+once the fund has fully expired the Court concludes that 
+[plaintiff] is likely to suffer irreparable economic harm absent 
+a temporary restraining order.” (internal citations omitted)); 
+Nat’l Mining Ass'n v. Jackson, 768 F. Supp. 2d 34, 52 (D.D.C. 
+2011) (“[I]f a movant seeking a preliminary injunction will be 
+unable to sue to recover any monetary damages against a 
+government agency in the future because of, among other things, 
+sovereign immunity, financial loss can constitute irreparable 
+injury.” (internal quotations omitted)); E. Bay Sanctuary 
+Covenant v. Biden, 993 F.3d 640, 677 (9th Cir. 2021) (although 
+“economic harm is not generally considered irreparable . . . 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 41 of 48
+
+
+--- PAGE 42 ---
+42 
+ 
+where parties cannot typically recover monetary damages flowing 
+from their injury—as is often the case in APA cases—economic 
+harm can be considered irreparable”).  
+The Attorney General argues that Ms. Phang has acknowledged 
+that she “has continued to publish on her YouTube channel and 
+has not been prevented from covering the Epstein matter 
+generally.” Opp’n, ECF No. 12 at 28. He also argues that the 
+fact that “Plaintiff released an episode just two months ago 
+that recorded over 315,000 views to date, and another three 
+months ago that recorded over 841,000 views to date” has shown 
+that the absence of these records “has not silenced her.” Id. 
+However, that Ms. Phang has continued to work does not mean that 
+the economic harm is irreparable for the reasons explained above 
+and because she would do additional reporting based on the 
+information she seeks.  
+3. Ms. Phang Did Not Delay Seeking Preliminary 
+Injunctive Relief 
+“[A] party requesting a preliminary injunction must 
+generally show reasonable diligence.” Benisek v. Lamone, 585 
+U.S. 155, 159 (2018). While “a late filing, on its own, is [not] 
+a permissible basis for denying a preliminary injunction,” 
+“untimely filings may support a conclusion that the plaintiff 
+cannot satisfy the irreparable harm prong.” Gordon v. Holder, 
+632 F.3d 722, 724-25 (D.C. Cir. 2011).  
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 42 of 48
+
+
+--- PAGE 43 ---
+43 
+ 
+The Attorney General argues that Ms. Phang’s “delay in 
+seeking injunctive relief further undermines any claim of 
+irreparable harm.” Opp’n, ECF No. 12 at 28. He argues that she 
+had the information that forms the basis of her claims in early 
+February 2026 but did not file suit until April 27, 2026, and 
+then did not file her motion for preliminary injunction until 
+May 28, 2026. Id. at 29. Ms. Phang responds that there was no 
+delay because the scope of the production meant that it “took 
+weeks” to discover the gaps in the productions and that not 
+having the redaction log complicated that task. Reply, ECF No. 
+13 at 17.  
+On January 30, 2026, the Department announced that as of 
+that date, it had published approximately 3.5 million pages in 
+response to the Epstein Act. U.S.
+ DEPARTMENT OF JUSTICE, Department 
+of Justice Publishes 3.5 Million Responsive Pages in Compliance 
+with the Epstein Files Transparency Act (Jan. 30, 2026),  
+https://www.justice.gov/opa/pr/department-justice-publishes-35-
+million-responsive-pages-compliance-epstein-files.
+9 Ms. Phang 
+states that she “promptly filed this lawsuit after discovering 
+and confirming the scope of [the Attorney General’s]  
+noncompliance, but she delayed motion practice in the hope that 
+ 
+9 The Court may take judicial notice of information posted on 
+official public websites of government agencies. See Cannon, 717 
+F.3d at 205 n.2. 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 43 of 48
+
+
+--- PAGE 44 ---
+44 
+ 
+DOJ would quickly cure its most blatant errors (or at least 
+negotiate over them). But a month into the case, the government 
+had not . . . entered a notice of appearance” and so she filed 
+the motion. Reply, ECF No. 13 at 17. Ms. Phang filed suit 
+approximately four months after the Attorney General completed 
+the disclosure of 3.5 million pages of documents, and she filed 
+the pending motion approximately one month later. In view of the 
+volume of documents and the failure of the Attorney General to 
+publish the redaction log, Ms. Phang’s conduct does not 
+constitute delay. 
+D. The Balance of the Equities and the Public Interest 
+Favor an Injunction 
+“A party seeking a preliminary injunction must show that 
+‘the balance of equities favors preliminary relief’ and that ‘an 
+injunction is in the public interest.’” Hanson, 120 F.4th at 246 
+(quoting Singh v. Berger, 56 F.4th 88, 95 (D.C. Cir. 2022)). The 
+Court “must carefully balance the equities by weighing the harm 
+to the moving party and the public if there is no injunction 
+against the harm to the government and the public if there is.” 
+Id. The balance of the equities and the public interest “merge 
+when the Government is the opposing party.” Nken, 556 U.S. at 
+435.  
+Ms. Phang argues that because “[t]here is generally no 
+public interest in the perpetuation of unlawful agency action,” 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 44 of 48
+
+
+--- PAGE 45 ---
+45 
+ 
+Mot., ECF No. 9-1 at 34 (quoting League of Women Voters of U.S. 
+v. Newby, 838 F.3d 1, 12 (D.C. Cir. 2016)); granting the relief 
+she seeks is in the public interest. Id. She also argues that 
+granting relief is in the public interest because it is the 
+first step towards the “reckoning for America” that the Epstein 
+Act was meant to bring about. See Mot., ECF No. 9-1 at 35. The 
+Attorney General agrees that “there is public interest in 
+transparency and the disclosure of the information concerning 
+[Mr.] Epstein” but argues that the public interest is “not 
+served by compelling the Department to redirect personnel and 
+resources away from competing public interest and safety 
+priorities to address [Ms. Phang’s] preference for expedited 
+treatment.” Opp’n, ECF No. 12 at 29. 
+However, “there is no competing harm to the government with 
+the issuance of preliminary relief that orders compliance with . 
+. . statutes and the Constitution, while ‘[t]here is a 
+substantial public interest in having governmental agencies 
+abide by the federal laws that govern their existence and 
+operations.’” Widakuswara v. Lake, 779 F. Supp. 3d 10, 40 
+(D.D.C. 2025) (citing Newby, 838 F.3d at 12 (internal citation 
+omitted)). The Epstein Act requires the Attorney General to 
+publicly disclose the documents that are covered by it; 
+complying with the law does not harm the Attorney General. 
+Moreover, Ms. Phang is not seeking “expedited treatment.” Opp’n, 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 45 of 48
+
+
+--- PAGE 46 ---
+46 
+ 
+ECF No. 12 at 29. The Act required the production of the covered 
+documents and the redaction log by December 19, 2025. The 
+Attorney General conceded that he is in violation of the Act. 
+See generally id. And Ms. Phang is not seeking full relief on 
+the merits in the pending motion. For all these reasons, the 
+Court concludes that the balance of the equities weighs in favor 
+of entering a preliminary injunction. 
+E. The Court Imposes a Nominal Bond on Ms. Phang 
+ 
+The Federal Rules of Civil Procedure provide that “the 
+court may issue a preliminary injunction . . . only if the 
+movant gives security in an amount that the court considers 
+proper to pay the costs and damages sustained by any party found 
+to have been wrongfully enjoined or restrained.” Fed. R. Civ. P. 
+65(c). Courts in this district have found this rule “vest[s] 
+broad discretion in the district court to determine the 
+appropriate amount of an injunction bond.” DSE, Inc. v. United 
+States, 169 F.3d 21, 33 (D.C. Cir. 1999). “[F]ederal courts 
+typically require substantial bonds only in suits between 
+private parties with significant monetary interests at stake.” 
+League of United Latin Am. Citizens v. Exec. Off. of the 
+President, 780 F. Supp. 3d 135, 224 (D.D.C. 2025). “A bond ‘is 
+not necessary where requiring [one] would have the effect of 
+denying the plaintiffs their right to judicial review of 
+administrative action.’” Nat’l Council of Nonprofits v. Off. of 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 46 of 48
+
+
+--- PAGE 47 ---
+47 
+ 
+Mgmt. & Budget, No. 25-239, 2025 WL 597959, at *19 (D.D.C. Feb. 
+25, 2025) (quoting Nat’l Res. Def. Council, Inc. v. Morton, 337 
+F. Supp. 167, 168 (D.D.C. 1971)). 
+The Court of Appeals for the District of Columbia Circuit 
+(“D.C. Circuit”) recently clarified that injunction bonds are 
+“generally required” under Rule 65(c). Nat’l Treasury Emps. 
+Union v. Trump, No. 25-5157, 2025 WL 1441563, at *3 n.4 (D.C. 
+Cir. May 16, 2025) (per curiam). To ensure that the imposition 
+of a bond does not “unduly burden [p]laintiffs, impair [the] 
+ability to seek judicial relief, and chill access to justice,” 
+courts in this district “routinely require only nominal bonds 
+from parties obtaining preliminary relief against the Government 
+when the awarded relief will not impose an undue monetary burden 
+on the enjoined parties.” Se. Fisheries Ass’n v. Lutnick, Civil 
+Action No. 26-1533, 2026 WL 1430499, at *13 (D.D.C. May 21, 
+2026). 
+The Court agrees that anything more than a nominal bond 
+would prejudice Ms. Phang and potentially create a chilling 
+effect on other public-law plaintiffs. See Reply, ECF No. 13 at 
+20. Furthermore, the Attorney General has not shown that if the 
+Court grants preliminary relief the Department will incur any 
+significant costs or damages. Therefore, the Court joins other 
+judges in this district and imposes a nominal $1.00 bond. See, 
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 47 of 48
+
+
+--- PAGE 48 ---
+48 
+ 
+e.g., Beatty v. Trump, No. 25-cv-4480, 2026 WL 1505646, at *44 
+(D.D.C. May 29, 2026). 
+F. The Court Will Not Issue a Stay 
+ 
+The Attorney General requests a stay of seven days to 
+determine whether to seek emergency appellate review. Opp’n, ECF 
+No. 12 at 30. The Attorney General also requests a stay of sixty 
+days to determine whether further appellate review is warranted. 
+Id. The Court will not issue a stay for the reasons stated in 
+this Memorandum Opinion. The Attorney General has conceded that 
+he is in violation of the Act. Ms. Phang is not requesting the 
+immediate production of documents, but rather that the Attorney 
+General show cause if he declines to do so. As to the requests 
+to review of foreign language documents and publish the 
+redaction log, the Act required the Attorney General to produce 
+the documents and publish the log by December 19, 2025—more than 
+six months ago. 
+IV. Conclusion  
+ 
+For the foregoing reasons, the Court GRANTS Ms. Phang’s 
+Motion for Preliminary Injunction, ECF No. 9-1. An appropriate 
+Order accompanies this Memorandum Opinion. 
+SO ORDERED. 
+Signed: Emmet G. Sullivan 
+  United States District Judge 
+June 25, 2025 
+   
+Case 1:26-cv-01417-EGS     Document 16     Filed 06/25/26     Page 48 of 48

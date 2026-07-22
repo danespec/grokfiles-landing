@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "exchange_id": "HEX-001",
+      "date": "2026-07-15",
+      "hearing_timecode": "01:10:36-01:10:48",
+      "senator": "Sen. Chuck Grassley",
+      "exact_question": "Epstein-file follow-up about whether future information would be investigated.",
+      "blanche_exact_answer": "Official excerpt and human-certified caption layer record Blanche saying there were no closed investigations and future chargeable information would be pursued.",
+      "preceding_context": "Questioning about DOJ review of Epstein files, redactions, and future investigative posture.",
+      "following_context": "Exchange moved to other hearing topics after the future-investigation commitment.",
+      "qualifier": "investigate, indict and prosecute",
+      "referent": "new information emerging from the Epstein files or otherwise",
+      "apparent_evidentiary_standard": "NO_CHARGEABLE_EVIDENCE / INCOMPLETE_PUBLIC_RECORD",
+      "official_source": "sjc-grassley-epstein-exchange-2026-07-15; senate-day1-official-media",
+      "transcription_status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "confidence": "HIGH",
+      "source_clip_sha256": "ec4ce68c4ea4593fe436117c21941bc46b1dc06f0c2b56a4463bff7a4456ab07",
+      "context_clip_sha256": "5a8b6e8016a7cdc1e5b3fd0a1cc68922f924482734fa2e4e0c689809934de775"
+    },
+    {
+      "exchange_id": "HEX-002",
+      "date": "2026-07-15",
+      "hearing_timecode": "01:18:36-01:19:00",
+      "senator": "Sen. Dick Durbin",
+      "exact_question": "Questioning about meeting survivors and reviewing information survivors might provide.",
+      "blanche_exact_answer": "Human-certified caption layer records Blanche agreeing DOJ would meet with victims and review information about other people who worked with Epstein in connection with crimes.",
+      "preceding_context": "Durbin pressed for survivor access to DOJ leadership.",
+      "following_context": "Durbin continued pressing on the meeting format and Blanche's personal role.",
+      "qualifier": "review information provided by survivors",
+      "referent": "survivor-provided information and people who worked with Epstein in connection with crimes",
+      "apparent_evidentiary_standard": "INVESTIGATIVE_LEAD / INCOMPLETE_PUBLIC_RECORD",
+      "official_source": "sjc-durbin-epstein-survivors-2026-07-15; senate-day1-official-media",
+      "transcription_status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "confidence": "HIGH",
+      "source_clip_sha256": "c546b78911a793ee55bfa4ae37f334f410766a909a0aaebe3b84c28f8362fbaf",
+      "context_clip_sha256": "d833c9e70d358dab3d4fa5f7aa9707e8fe425588095f819223cb16c0401b1880"
+    },
+    {
+      "exchange_id": "HEX-003",
+      "date": "2026-07-15",
+      "hearing_timecode": "01:51:00-01:52:12",
+      "senator": "Sen. John Kennedy",
+      "exact_question": "Other than to himself, who, if anyone else, would Mr. Epstein traffic young women to?",
+      "blanche_exact_answer": "Human-certified caption layer records Blanche limiting the answer to FBI/DOJ files, saying career prosecutors did not identify evidence as of now of other men Epstein helped traffic to, adding that this did not mean it did not happen, and asking anyone with information to come forward.",
+      "preceding_context": "Kennedy asked about the Epstein trafficking operation and who, beyond Epstein, the files showed.",
+      "following_context": "Blanche explained that DOJ and FBI had to work from gathered evidence and asked victims or others with information to come forward.",
+      "qualifier": "from what we learned; from what we know; FBI files and DOJ files; as of now",
+      "referent": "other men to whom Epstein trafficked young women",
+      "apparent_evidentiary_standard": "NO_EVIDENCE_IN_REVIEWED_CORPUS + SCOPE_LIMITED_NO_EVIDENCE + AMBIGUOUS_STANDARD",
+      "official_source": "senate-day1-official-media; senate-day1-official-captions; human-certification-005c",
+      "transcription_status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "confidence": "MEDIUM-HIGH",
+      "source_clip_sha256": "f3ca8f262791611f142a419ac471ead4df5045dedb8d09b5a2c532e032e96b26",
+      "context_clip_sha256": "f31d21d5f53918330941fa355e667e4913d934a2a686e46beb6b5a50c2684469"
+    }
+  ]
+}

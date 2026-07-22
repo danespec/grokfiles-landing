@@ -1,0 +1,100 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 81,
+  "page_id": "page_081",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_081.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_081.ocr.txt",
+  "image_metadata": {
+    "bytes": 2922620,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "be6207cfdf42c3179efef094c9730c1f2b3aa6350bc32a6ca0e5268602a8b5ae"
+  },
+  "ocr_text": "ee ae oe a\nie ' ” haainyesa, > ¥ P ie 4 ‘ pate |\n| ie fs fake a Li : il ny . oe? be ae ree i) {\n| aha ¥ : aL oa ’ a di Peat Sh hs. i\n| uel “y) ; aH iy = nal aS Sct\n: ’ . TRS oa, | :\n“~y oe ais ai ROMER Tia ge ae asta? PIG\nEbel Rd hatnee ee be Waal e =. * ta 4\nrey aE ie ae AT Ot a he ae ae\ni oe ee fie\n. 1s aa ik Vee j\npete Ae {\na ..\na ber , - ue “ b '. Lb id\nta Sa a Re cara\nao Hye ie i\na0 eee w \\\npe) UG)\n|\n} j\nHOUSE_OVERSIGHT_000081\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A square image centered on the page shows a partially obscured photograph of two people outdoors. The people are sitting or kneeling, wearing colorful casual clothes including a striped shirt with blue, pink, and white lines and white bottoms. There are large flowers in the background. The photograph is obscured by a large gray rectangular redaction block covering the upper half of the image with a smaller overlapping rectangular block extending downward on the right side, hiding most facial and upper body details of the subjects.",
+    "Layout: image centered on page",
+    "Photo/image candidate at center of page: A photo showing two people outdoors in front of a backdrop of yellow and white flowers, wearing colorful casual clothing, partially obscured by redaction blocks."
+  ],
+  "observations": [
+    "A square image centered on the page shows a partially obscured photograph of two people outdoors. The people are sitting or kneeling, wearing colorful casual clothes including a striped shirt with blue, pink, and white lines and white bottoms. There are large flowers in the background. The photograph is obscured by a large gray rectangular redaction block covering the upper half of the image with a smaller overlapping rectangular block extending downward on the right side, hiding most facial and upper body details of the subjects.",
+    "Layout: image centered on page",
+    "Photo/image candidate at center of page: A photo showing two people outdoors in front of a backdrop of yellow and white flowers, wearing colorful casual clothing, partially obscured by redaction blocks."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000081"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "center of image",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large gray rectangular block obscuring upper half and right center of photograph"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "No visible text indicating date or context of photo",
+    "No visible handwriting or signatures"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:52.762Z",
+    "response_id": "resp_02b5422f80652d31006a502ba442a881948368dc440536883d",
+    "raw_output_sha256": "a8907d41b6511fb17c96da0584c1a942cc211cca94aa0755321183085479798b"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_02b5422f80652d31006a502ba442a881948368dc440536883d",
+    "enriched_at": "2026-07-09T23:15:52.762Z"
+  },
+  "visual_summary": "A square image centered on the page shows a partially obscured photograph of two people outdoors. The people are sitting or kneeling, wearing colorful casual clothes including a striped shirt with blue, pink, and white lines and white bottoms. There are large flowers in the background. The photograph is obscured by a large gray rectangular redaction block covering the upper half of the image with a smaller overlapping rectangular block extending downward on the right side, hiding most facial and upper body details of the subjects.",
+  "layout": [
+    "image centered on page"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "center of image",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large gray rectangular block obscuring upper half and right center of photograph"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center of page",
+      "description": "A photo showing two people outdoors in front of a backdrop of yellow and white flowers, wearing colorful casual clothing, partially obscured by redaction blocks.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

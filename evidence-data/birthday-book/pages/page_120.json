@@ -1,0 +1,147 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 120,
+  "page_id": "page_120",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_120.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_120.ocr.txt",
+  "image_metadata": {
+    "bytes": 208991,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5ed00f88f83baedf7af604b44b7b5b4d02b06cee9b7e479232449eae3c999362"
+  },
+  "ocr_text": "i _\n\n“ ar on ‘beth ae ek ote gs ae a vase 1\n\n— j r aS Poe fee y {. » # Pe ane ase 7 Cope my er} |\nfe ‘ pe LP OT eed oly C. egy Cc. .\n\ni if ypyrery Pe far Spee fe ae AOD th ee FOr Leib ty j\n—_ f . oe\nfron Stomerits, Yo Peetom Bosak » Marhece for\n- \"yt py oP pd a) Bag fin . a yt” pg\nf Pai pot cate PLE tee OP cod LAE gt ent Ket cory eye ft ben ia EL afb PPR ;\na] PPLE at eae) ote ae fof fhe fire. ; fo erik. F JER Bonne\n\nz Pd / ° wg ‘ ht ;\nat a e 4\neG \\ Og, ca : fe £ ; o/, “3 en Te oa gp fA!\nyi Awe é. \\efpfer<y Meee BI “ io Cptathee, tafe £, fink, AC j OPP egot es\nae A t . ve & 7\nf ce . tf .\n, ATTA CA Cotbed {ght 4 . je Oh. CEL / f ee ae to fee, a wr\nee foo . , he FP gee rh, gett Rae gitte ope oh fe Va “ge OA pg hE .\n4 A Ae ; wt Ko 00 <f emp tt CL. , a Lot e- FF | ee nt ee ee ea a oe a\not we |\ni) peg t ye : oF fone: 2 te get Ot oP oP OP te\nA ppt ‘a fot ia Fo aly ra el oma Mort, rod ett emt a Leet GF Chae 7A Cosi on |\na nee a fee ie] . ve a “eo, “he Pe ee eee ee) me |\nne torr (re ,, # A hott \"Ths eee, potomre feet of LEE Dare fir Bere Ea amar\nYe ett dbiccet af (a Lf wt Tok blo HM, Des [Cte cere\niy Ve f, , a Fe ee ee ee aoe. te CE tosh |\nbee CM A npr, AA 9G, BORE IA OP eG A | :\n- Lg 0 an ° 1g Moet owt ak etapa Ra ie ef mo wade BY LBP Borenitom\ncree PoC cepts obate [a of het. fet , ee J\nr . . “YG fi eo ‘a ig nag we % ;\nCte fel rg TeX chon] fer rtitt far (ihe PE Ce ae ‘\nY é ete gfcmet ‘tf oft gtd fie ce fe * va } Tages oy aces ae pre Chey\nbet bree “ we vy ae 2 i [ oe . Ph kf? £ |\n\n: ; } ld 7 / fe pees ot oot: fee coy dane\n\n~ ar ee .\nHOUSE_OVERSIGHT_000120\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten letter page with cursive text titled 'Birthday Greetings to Degenerate One'. Contains a personal message referencing locations, time, and a signature-like name at the bottom. The page has handwritten text occupying most of the left two-thirds and slightly faded ink. The right third of the page is blank with slight shadows from binding.",
+    "Layout: Handwritten text block",
+    "Layout: Empty margin on right side"
+  ],
+  "observations": [
+    "Handwritten letter page with cursive text titled 'Birthday Greetings to Degenerate One'. Contains a personal message referencing locations, time, and a signature-like name at the bottom. The page has handwritten text occupying most of the left two-thirds and slightly faded ink. The right third of the page is blank with slight shadows from binding.",
+    "Layout: Handwritten text block",
+    "Layout: Empty margin on right side"
+  ],
+  "dates": [
+    "mid century",
+    "2 decades",
+    "decades"
+  ],
+  "document_strings": [
+    "Birthday Greetings to Degenerate One",
+    "From Eaton Square to Burton Way",
+    "from St. Moritz to Palm Beach & Menlo Hts",
+    "so many girls, so little time",
+    "MYSTERIOUS mischievous lad",
+    "I remember it all with a smile",
+    "melancholy smile",
+    "vampires are supposed to age slowly",
+    "if at all",
+    "screaming commodity writers",
+    "other passengers say SHH!",
+    "Keep it up Jeffing",
+    "With great affection",
+    "Degenerate II",
+    "AKA [redacted]"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "Degenerate II AKA [redacted]",
+      "confidence": "medium",
+      "note": "Signature-like closing with name redacted"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top center to bottom left",
+      "text_as_seen": "Birthday Greetings to Degenerate One From Eaton Square to Burton Way from St. Moritz to Palm Beach & Menlo Hts — is it a mere 2 decades in Earth time (so many girls, so little time)? And you True Jeffrey always grinning like the MYSTERIOUS mischievous lad you are - I remember it all with a smile, though with a melancholy smile to think you were only at mid century a mere boy, (though we vampires are supposed to age slowly) (if at all). So There will be decades more of my screaming commodity writers or planes while the other passengers say SHH!, and you never failing to astonish me. I’ll look out the window and you’ll be shooting past on a rocket with a classic cut grin. Keep it up Jeffing, With great affection Degenerate II - AKA [redacted]",
+      "confidence": "medium",
+      "note": "Cursive handwriting, some words partially unclear, signature blacked out"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "bottom right near signature",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting text presumed to be a name"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [
+    "Exact words obscured by handwriting style and low contrast in some areas",
+    "The exact identity in redacted signature is not visible"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:17.367Z",
+    "response_id": "resp_03bb5d9edb674dd1006a502d228dfc8195a2dd7f3c8fb08a80",
+    "raw_output_sha256": "6a5b85904dc4c422aba1f014580a21a2f0ca0f8897c87729654745a92ca08a84"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03bb5d9edb674dd1006a502d228dfc8195a2dd7f3c8fb08a80",
+    "enriched_at": "2026-07-09T23:22:17.367Z"
+  },
+  "visual_summary": "Handwritten letter page with cursive text titled 'Birthday Greetings to Degenerate One'. Contains a personal message referencing locations, time, and a signature-like name at the bottom. The page has handwritten text occupying most of the left two-thirds and slightly faded ink. The right third of the page is blank with slight shadows from binding.",
+  "layout": [
+    "Handwritten text block",
+    "Empty margin on right side"
+  ],
+  "handwriting": [
+    {
+      "location": "top center to bottom left",
+      "text_as_seen": "Birthday Greetings to Degenerate One From Eaton Square to Burton Way from St. Moritz to Palm Beach & Menlo Hts — is it a mere 2 decades in Earth time (so many girls, so little time)? And you True Jeffrey always grinning like the MYSTERIOUS mischievous lad you are - I remember it all with a smile, though with a melancholy smile to think you were only at mid century a mere boy, (though we vampires are supposed to age slowly) (if at all). So There will be decades more of my screaming commodity writers or planes while the other passengers say SHH!, and you never failing to astonish me. I’ll look out the window and you’ll be shooting past on a rocket with a classic cut grin. Keep it up Jeffing, With great affection Degenerate II - AKA [redacted]",
+      "confidence": "medium",
+      "note": "Cursive handwriting, some words partially unclear, signature blacked out"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "Degenerate II AKA [redacted]",
+      "confidence": "medium",
+      "note": "Signature-like closing with name redacted"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "bottom right near signature",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting text presumed to be a name"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "mid century",
+    "2 decades",
+    "decades"
+  ],
+  "confidence": "medium"
+}

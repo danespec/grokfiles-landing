@@ -1,0 +1,126 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 113,
+  "page_id": "page_113",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_113.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_113.ocr.txt",
+  "image_metadata": {
+    "bytes": 6479945,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "7b4837544940ed4fb464096c191f00fd2ecb495cece9ea555ecee5a7ef085369"
+  },
+  "ocr_text": "f\n‘ fo E\n- isf—\nHOUSE_OVERSIGHT_000113\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "The page contains two photographs arranged vertically, both with large black redaction boxes obscuring the faces of the subjects. The top photo shows a child standing, wearing light-colored pajamas with cartoon patterns and holding a plush white teddy bear. The background behind this child is dark. The bottom photo shows a child lying down on a bed covered by a blue and white striped blanket. The child's pajamas appear light-colored with some colored patterns near the collar and sleeves. The page has a thick black border around the images and a white margin with the text HOUSE_OVERSIGHT_000113 typed at the bottom right corner.",
+    "Layout: top photograph",
+    "Layout: bottom photograph",
+    "Layout: page border",
+    "Layout: footer text",
+    "Photo/image candidate at top half: Child standing holding plush toy, wearing light-colored pajamas with cartoon patterns, face obscured by black box",
+    "Photo/image candidate at bottom half: Child lying on bed with blue and white striped sheets, wearing light-colored pajamas with colorful collar and sleeve patterns, face obscured by black box"
+  ],
+  "observations": [
+    "The page contains two photographs arranged vertically, both with large black redaction boxes obscuring the faces of the subjects. The top photo shows a child standing, wearing light-colored pajamas with cartoon patterns and holding a plush white teddy bear. The background behind this child is dark. The bottom photo shows a child lying down on a bed covered by a blue and white striped blanket. The child's pajamas appear light-colored with some colored patterns near the collar and sleeves. The page has a thick black border around the images and a white margin with the text HOUSE_OVERSIGHT_000113 typed at the bottom right corner.",
+    "Layout: top photograph",
+    "Layout: bottom photograph",
+    "Layout: page border",
+    "Layout: footer text",
+    "Photo/image candidate at top half: Child standing holding plush toy, wearing light-colored pajamas with cartoon patterns, face obscured by black box",
+    "Photo/image candidate at bottom half: Child lying on bed with blue and white striped sheets, wearing light-colored pajamas with colorful collar and sleeve patterns, face obscured by black box"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000113"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top photograph center covering face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black box redacting face"
+    },
+    {
+      "location": "bottom photograph center covering face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black box redacting face"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:17.933Z",
+    "response_id": "resp_0dd139558392a501006a502ce82bc881958681d00819d5b931",
+    "raw_output_sha256": "e8ada53d48bfadd056d8001d5d52c58c4f6604fd7b5f058b829d406b2120ab9f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0dd139558392a501006a502ce82bc881958681d00819d5b931",
+    "enriched_at": "2026-07-09T23:21:17.933Z"
+  },
+  "visual_summary": "The page contains two photographs arranged vertically, both with large black redaction boxes obscuring the faces of the subjects. The top photo shows a child standing, wearing light-colored pajamas with cartoon patterns and holding a plush white teddy bear. The background behind this child is dark. The bottom photo shows a child lying down on a bed covered by a blue and white striped blanket. The child's pajamas appear light-colored with some colored patterns near the collar and sleeves. The page has a thick black border around the images and a white margin with the text HOUSE_OVERSIGHT_000113 typed at the bottom right corner.",
+  "layout": [
+    "top photograph",
+    "bottom photograph",
+    "page border",
+    "footer text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top photograph center covering face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black box redacting face"
+    },
+    {
+      "location": "bottom photograph center covering face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black box redacting face"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half",
+      "description": "Child standing holding plush toy, wearing light-colored pajamas with cartoon patterns, face obscured by black box",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half",
+      "description": "Child lying on bed with blue and white striped sheets, wearing light-colored pajamas with colorful collar and sleeve patterns, face obscured by black box",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

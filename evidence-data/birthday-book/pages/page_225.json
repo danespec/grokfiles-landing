@@ -1,0 +1,92 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 225,
+  "page_id": "page_225",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_225.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_225.ocr.txt",
+  "image_metadata": {
+    "bytes": 9932394,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "a1d7fdbb114dc5eef8df7e7f7c31b8d8159930600d6c4e49a0f19cc2b6d6782b"
+  },
+  "ocr_text": ": |\n|\n99\n\na ig\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "Page contains a large black redacted rectangle at the top, above a green background with the phrase 'Who Am I ???' in blue text arranged in an arc.",
+    "Layout: black redacted rectangle at top",
+    "Layout: green section below with centered blue text"
+  ],
+  "observations": [
+    "Page contains a large black redacted rectangle at the top, above a green background with the phrase 'Who Am I ???' in blue text arranged in an arc.",
+    "Layout: black redacted rectangle at top",
+    "Layout: green section below with centered blue text"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Who Am I ???"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top portion of page",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangular redaction"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:18.814Z",
+    "response_id": "resp_077462b557354d26006a5030e5c2f88197ad39cf8235ecc1ed",
+    "raw_output_sha256": "207609dedbfd6d772c2e5f0d9894fb73ba4942a95beef726c93a7762047e1aed"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_077462b557354d26006a5030e5c2f88197ad39cf8235ecc1ed",
+    "enriched_at": "2026-07-09T23:38:18.814Z"
+  },
+  "visual_summary": "Page contains a large black redacted rectangle at the top, above a green background with the phrase 'Who Am I ???' in blue text arranged in an arc.",
+  "layout": [
+    "black redacted rectangle at top",
+    "green section below with centered blue text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top portion of page",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangular redaction"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

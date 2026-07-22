@@ -1,0 +1,704 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Interim Committee - New Mexico Legislature
+</title><link href="/Content/css?v=cUg5-MMViQqEs_YL2OMy5MuIBxWJlZhtcr11XxqzgVQ1" rel="stylesheet"/>
+<link href="../favicon.ico?v=1" rel="shortcut icon" type="image/x-icon" /><meta name="google-site-verification" content="kIaN-zm0G27sjSZ51sPSO18BHZ7cCqFoYrRjLwYxz4Y" />
+    <style>
+        #reciteme-button {
+            /* Button Styling and Placement */
+            background: #00344c;
+            width: 60px;
+            height: 60px;
+            bottom: 14px;
+            right: 14px;
+            position: fixed;
+            border-radius: 50%;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+            #reciteme-button:hover {
+                /* Hover Color */
+                background: #e9322e;
+            }
+
+            #reciteme-button img {
+                /** Button Image Size */
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        #announcement-banner {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid #ccc;
+        }
+        /* Announcement Banner */
+    </style>
+
+
+
+</head>
+<body>
+    <form method="post" action="./Interim_Committee?CommitteeCode=HISC" id="ctl01">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="../Scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="/bundles/MsAjaxJs?v=c42ygB2U07n37m_Sfa8ZbLGVu4Rr2gsBo7MvUEnJeZ81" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../Scripts/respond.js" type="text/javascript"></script>
+<script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="../Scripts/FooTable/footable.min.js" type="text/javascript"></script>
+<script src="/bundles/WebFormsJs?v=AAyiAYwMfvmwjNSBfIMrBAqfU5exDukMVhrRuZ-PDU01" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DD272C99" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="q4xO8pEaPRXCy3CnQUa0HhLFMXgUDPSkXtJt8S+akDaPoHrWCQjwersx9Y0zizc0WGDOXX1bPgXAnCTZENVyUY/CVvtbAdeHl6dKVeOLvdbP7qpRVaoazYOHag6v0VYc9XKAif+Lqgcr9WuDljQhGOZFikTteuHUS4IIXUGy5/qyiXMTg6lDVF+OH4VsClyH" />
+        
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-70773781-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- Recite Me code -->
+        <script type="text/javascript">
+            // Location of your button image:
+            var buttonSrc = '/images/reciteme_button.png';
+        </script>
+        <script type="text/javascript">
+            var serviceUrl = "//api.reciteme.com/asset/js?key=";
+            var serviceKey = "88137f490c474af25e9769770e124fc311560d88";
+            var options = {};  // Options can be added as needed
+            var autoLoad = false;
+            var enableFragment = "#reciteEnable";
+            var loaded = [], frag = !1; window.location.hash === enableFragment && (frag = !0); function loadScript(c, b) { var a = document.createElement("script"); a.type = "text/javascript"; a.readyState ? a.onreadystatechange = function () { if ("loaded" == a.readyState || "complete" == a.readyState) a.onreadystatechange = null, void 0 != b && b() } : void 0 != b && (a.onload = function () { b() }); a.src = c; document.getElementsByTagName("head")[0].appendChild(a) } function _rc(c) { c += "="; for (var b = document.cookie.split(";"), a = 0; a < b.length; a++) { for (var d = b[a]; " " == d.charAt(0);) d = d.substring(1, d.length); if (0 == d.indexOf(c)) return d.substring(c.length, d.length) } return null } function loadService(c) { for (var b = serviceUrl + serviceKey, a = 0; a < loaded.length; a++) if (loaded[a] == b) return; loaded.push(b); loadScript(serviceUrl + serviceKey, function () { "function" === typeof _reciteLoaded && _reciteLoaded(); "function" == typeof c && c(); Recite.load(options); Recite.Event.subscribe("Recite:load", function () { Recite.enable() }) }) } "true" == _rc("Recite.Persist") && loadService(); if (autoLoad && "false" != _rc("Recite.Persist") || frag) document.addEventListener ? document.addEventListener("DOMContentLoaded", function (c) { loadService() }) : loadService();
+
+            // Floating Button:
+            function _reciteLoaded() {
+                if (reciteMeButton && reciteMeButton.parentNode) {
+                    reciteMeButton.parentNode.removeChild(reciteMeButton);
+                }
+            }
+
+            var reciteMeButton;
+            function _createReciteButton() {
+                var buttonParentSelector = 'body';
+                var buttonContainer = document.createElement("div");
+                var buttonImage = document.createElement("img");
+                var buttonAlt = "Launch Recite Me Accessibility and Language Support";
+                var buttonTitle = "Launch Recite Me";
+
+                buttonContainer.setAttribute('id', 'reciteme-button');
+                buttonContainer.setAttribute('title', buttonTitle);
+                buttonImage.setAttribute('alt', buttonAlt);
+                buttonImage.setAttribute('src', buttonSrc);
+                buttonContainer.appendChild(buttonImage);
+                var buttonParent = document.querySelector(buttonParentSelector);
+                buttonParent.appendChild(buttonContainer);
+                buttonContainer.addEventListener("click", function () {
+                    loadService();
+                    return false;
+                });
+                reciteMeButton = buttonContainer;
+            }
+            _createReciteButton();
+        </script>
+
+        
+        <a class="skip-link" href="#maincontent">Skip to main content</a>
+
+
+        <div class="desktop-header hidden-xs" role="banner">
+            <div id="divBanner" style="background-color: transparent !important;">
+                <a id="linkHeader" href="../"><img id="imgHeader" class="center-block img-responsive" src="../Images/banner_logo.jpg" alt="New Mexico Legislature" /></a>
+            </div>
+        </div>
+        <div class="container body-content">
+            <nav class="navbar navbar-default yamm" role="navigation">
+                <div class="navbar-header main-navbar-header" role="menubar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <!--
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        -->
+                        Main Menu
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <ul class="collapse navbar-collapse nav navbar-nav" id="main-navigation" role="menubar" aria-label="Navigation">
+                    <li><a href="/" role="menuitem">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Districts</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Members/Find_By_Address_Redistrict">Find Your New District by Address</a></li>
+                            <li><a href="/Members/Districts">Districts</a></li>
+                            <li><a href="/Redistricting2021/Default">2021 Redistricting</a></li>
+                            <li><a href="/Redistricting2011/">2011 Redistricting (Archive)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legislators</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Members/Find_My_Legislator">Find my Legislator</a></li>
+                            <li><a href="/Website_Tutorials?Video=FindingLegislators">Find my Legislator – Tutorial</a></li>
+                            <li><a href="/Members/Leadership">Leadership</a></li>
+                            <li><a href="/Members/Legislator_List?T=R">House</a></li>
+                            <li><a href="/Members/Legislator_List?T=S">Senate</a></li>
+                            <li><a href="/Members/Political_Composition">Political Composition</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Members/Former_Legislator_List">Former Legislators</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legislation</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Legislation/BillFinder/Number">Find Legislation by Number</a></li>
+                            <li><a href="/Legislation/BillFinder/Sponsor">Find Legislation by Sponsor</a></li>
+                            <li><a href="/Search">Find Legislation by Keyword</a></li>
+                            <li><a href="/Legislation/BillFinder/Subject">Find Legislation by Subject</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Legislation/Bill_Finder">Bill Finder</a></li>
+                            <li><a href="/Legislation/BillFinder/Capital_Outlay">Capital Outlay</a></li>
+                            <li><a href="/Legislation/Legislation_List">Daily Bill Locator</a></li>
+                            <li><a href="/Legislation/Action_Abbreviations">Key to Abbreviations</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/MyRoundhouse/">MyRoundhouse</a></li>
+                            <li><a href="/Website_Tutorials?Video=FindingLegislation">Finding Legislation – Tutorial</a></li>
+                            <li><a href="/Website_Tutorials?Video=MyRoundhouse">How to Track Legislation – Tutorial</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://nmonesource.com/nmos/en/nav.do" target="_blank">New Mexico Law (Statutes)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown yamm-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Committees</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <div class="yamm-content" style="padding-top: 0;">
+
+                                    <div class="row hidden-xs" style="margin-top: 0;">
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p class="yamm-header"><strong>House of Representatives Session Committees</strong></p>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p class="yamm-header"><strong>Senate Session Committees</strong></p>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-sm-6 list-unstyled">
+                                            <li>
+                                                <p class="yamm-header"><strong>Interim Committees</strong></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row">
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p class="yamm-header hidden-sm hidden-md hidden-lg"><strong>House of Representatives Session Committees</strong></p>
+                                            </li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HAAWC">Agriculture, Acequias And Water Resources</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HAFC">Appropriations & Finance</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HCEDC">Commerce & Economic Development</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HCPAC">Consumer & Public Affairs</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HEC">Education</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HENRC">Energy, Environment & Natural Resources</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HGEIC">Government, Elections & Indian Affairs</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HHHC">Health & Human Services</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HJC">Judiciary</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HLVMC">Labor, Veterans' & Military Affairs</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HXRC">Rules & Order Of Business</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HRDLC">Rural Development, Land Grants And Cultural Affairs</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=HISC">Special Investigatory Committee</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HTRC">Taxation & Revenue</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=HTPWC">Transportation, Public Works & Capital Improvements</a></li>
+                                        </ul>
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p class="yamm-header hidden-sm hidden-md hidden-lg"><strong>Senate Session Committees</strong></p>
+                                            </li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SXCC">Committees' Committee</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SCONC">Conservation</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SEC">Education</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SFC">Finance</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SHPAC">Health and Public Affairs</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SIRC">Indian, Rural and Cultural Affairs</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SJC">Judiciary</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=SRC">Rules</a></li>
+                                            <li><a href="/Committee/Standing_Committee?CommitteeCode=STBTC">Tax, Business and Transportation</a></li>
+                                        </ul>
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p class="yamm-header hidden-sm hidden-md hidden-lg"><strong>Interim Committees</strong></p>
+                                            </li>
+                                            <!--<li><a href="/Committee/Interim_Committee?CommitteeCode=BHS">Behavioral Health Subcommittee</a></li>-->
+                                            <li><a href="/Committee/Capitol_Buildings_Planning_Commission">Capitol Buildings Planning Commission</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=CSS">Capitol Security Subcommittee</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=CCJ">Courts, Corrections & Justice</a></li>
+                                            <!--<li><a href="/Committee/Interim_Committee?CommitteeCode=CJRS">Criminal Justice Reform Subcommittee</a></li>-->
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=ERDPC">Economic & Rural Development & Policy Committee</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=FRS">Facilities Review Subcommittee</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=ZFFSS">Federal Funding Stabilization & Affordability Subcommittee</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=IAC">Indian Affairs</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=LEC">Interim Legislative Ethics </a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=IPOC">Investments & Pensions Oversight</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=LGC">Land Grant</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=ALC">Legislative Council</a></li>
+                                            <li><a href="/Entity/LESC/Default">Legislative Education Study</a></li>
+                                            <li><a href="/Entity/LFC/Default">Legislative Finance</a></li>
+                                            <li><a href="/Committee/Interim_Committee?CommitteeCode=ZLICW">Legislative Interim Committee Working Group</a></li>
+                            </li>
+                            <!--<ul class="list-unstyled">
+                                                    <li><a href="/Committee/Interim_Committee?CommitteeCode=DISC">Disabilities Concerns Subcommittee</a></li>
+                                                </ul>-->
+                        </ul>
+                        <ul class="col-sm-3 list-unstyled">
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=LHHS">Legislative Health & Human Services</a>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=MVAC">Military & Veterans' Affairs</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=MFA">Mortgage Finance Authority Act Oversight</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=NMFA">New Mexico Finance Authority Oversight</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=PSCO">Public School Capital Outlay Oversight Task Force</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=RHMC">Radioactive & Hazardous Materials</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=RSTP">Revenue Stabilization & Tax Policy</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=STTC">Science, Technology & Telecommunications</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=TSROC">Tobacco Settlement Revenue Oversight </a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=TIRS">Transportation Infrastructure Revenue Subcommittee</a></li>
+                            <li><a href="/Committee/Interim_Committee?CommitteeCode=WNR">Water & Natural Resources </a></li>
+                        </ul>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: -15px;">
+            <ul class="col-sm-6 list-unstyled text-center">
+                <li><strong><a href="/Publications/Handbook/House_Standing_Committees_26.pdf" target="_blank">2026 House Standing Committees PDF</a></strong></li>
+                <li><strong><a href="/Publications/Handbook/Senate_Standing_Committees_26.pdf" target="_blank">2026 Senate Standing Committees PDF</a></strong></li>
+            </ul>
+            <ul class="col-sm-6 list-unstyled text-center">
+                <li><strong><a href="/Publications/2026_Interim_Committees.pdf">2026 Interim Committees PDF</a></strong></li>
+                <!--<li><strong><a href="/Agendas/StateLegislativeCalendar.pdf">2025 Tentative Interim Committee Calendar</a></strong></li>-->
+                <li><strong><a href="/Committee/Default">Archived Interim Committee Information</a></strong></li>
+            </ul>
+        </div>
+        </div>
+                    </li>
+                    </ul>
+                        <!--</div>-->
+        </li>
+                    <li>
+                        <a href="/Publications/">Publications</a>
+                    </li>
+        <li>
+            <a href="/Calendar/Whats_Happening">What's Happening</a>
+            <!--<a-- href="/Calendar/Session">What's Happening</a-->
+        </li>
+        <li>
+            <!--<a href="/Webcast/">Webcast</a>-->
+            <a href="https://sg001-harmony.sliq.net/00293/harmony" target="_blank">Webcast</a>
+        </li>
+        <li>
+            <a href="/Legislative_Library" target="_blank">Library</a>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links</a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="/AccessibilityAccommodations/" target="_blank">ADA Access</a></li>
+                <li><a href="/AccessibilityAccommodations/pdfs/ADA Grievance Procedure25 final (1).pdf" target="_blank">ADA Grievance Procedure</a></li>
+                <li><a href="/Publications/anti_harassment_policy.pdf" target="_blank">Anti-Harassment Policy</a></li>
+                <li><a href="/Emergency_Notification" target="_blank">Capitol Emergency Notification Signup</a></li>
+                <li><a href="/Legislation/BillFinder/Capital_Outlay" target="_blank">Capital Outlay</a></li>
+                <li><a href="/Credits" target="_blank">Credits</a></li>
+                <li><a href="/Downloads" target="_blank">Downloads</a></li>
+                <li><a href="https://www.nmlegis.gov/Sessions/26 Regular/" target="_blank">Downloads- FTP</a></li>
+                <li><a href="/Employment" target="_blank">Employment</a></li>
+                <li><a href="/Glossary" target="_blank">Glossary of Legislative Terms</a></li>
+                <li><a href="/Legislation/Action_Abbreviations">Key to Abbreviations</a></li>
+                <li><a href="/Publications/Legislative_Contracts">Legislative Contracts</a></li>
+                <li><a href="/Publications/Handbook/Laws and Policies.pdf">Legislative Council Policies</a></li>
+                <li><a href="/MyRoundhouse/Default">MyRoundhouse</a></li>
+                <li><a href="/Other_Websites">Other Websites</a></li>
+                <li><a href="/Publications/Per_Diem_and_Mileage" target="_blank">Per Diem &amp; Mileage Rates for Legislators</a></li>
+                <li><a href="/Public_Records_Request">Public Records Request</a></li>
+                <li><a href="/Redistricting2021/">2021 Redistricting Information</a></li>
+                <li><a href="/Capitol_Flags">Request a Capitol Flag</a></li>
+                <li><a href="/Publications/Request_For_Proposals">Request for Proposals</a></li>
+                <li><a href="/Publications/Public%20Notice%20ADA%20Requirements.pdf">Public Notice: ADA Requirements</a></li>
+                <li><a href="/Publications/Session_Dates.pdf" target="_blank">Session Dates</a></li>
+                <li><a href="/Publications/Social_Calendar" target="_blank">Social Calendar</a></li>
+                <li><a href="/Visitors">Visit the Capitol</a></li>
+                <li><a href="/Website_Tutorials">Website Video Tutorials</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Publications/Highlights">Highlights</a>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+            <ul class="dropdown-menu contact-list" role="menu" style="list-style: none; margin-left: 0 !important; padding-left: 0;">
+                <li>
+                    <a href="/Members/Find_My_Legislator">Find My Legislator</a>
+                </li>
+                <li>
+                    <a href="/Staff_Directory?Entity=LCS">Legislative Council Service</a>
+                    <span>505-986-4600</span>
+                    <a href="mailto:lcs@nmlegis.gov">lcs@nmlegis.gov</a>
+                </li>
+                <li>
+                    <a href="/Entity/LESC/Default">Legislative Education Study Committee</a>
+                    <span>505-986-4591</span>
+                    <a href="https://goo.gl/maps/W53KByo46jk">325 Don Gaspar, Suite 100<br />
+                        Santa Fe, NM 87501</a>
+                    <a href="mailto:lesc@nmlegis.gov">lesc@nmlegis.gov</a>
+                </li>
+                <li>
+                    <a href="/Entity/LFC/Default">Legislative Finance Committee</a>
+                    <span>505-986-4550</span>
+                    <a href="https://goo.gl/maps/W53KByo46jk">325 Don Gaspar, Suite 101<br />
+                        Santa Fe, NM 87501</a>
+                    <a href="mailto:lfc@nmlegis.gov">lfc@nmlegis.gov</a>
+                </li>
+                <li>
+                    <a href="/Entity/House/Default">House of Representatives</a>
+                    <span>505-986-4751</span>
+                    <a href="mailto:house@nmlegis.gov">house@nmlegis.gov</a>
+                </li>
+                <li>
+                    <a href="/Entity/Senate/Default">Senate</a>
+                    <span>505-986-4714</span>
+                    <a href="mailto:senate@nmlegis.gov">senate@nmlegis.gov</a>
+                </li>
+                <li>
+                    <div style="padding: 3px 20px 3px 20px!important;"><strong>Session Switchboard</strong></div>
+                    <span>505-986-4300</span>
+                    <!--<br />
+                                <span>505-986-4610 (fax)</span>
+                                    -->
+                </li>
+                <li>
+                    <a href="/Visitors">Legislative Information and Tours</a>
+                    <span>505-986-4589</span>
+                </li>
+                <li>
+                    <a href="/Staff_Directory?Entity=LBS">Legislative Building Services</a>
+                    <span>505-986-4575</span>
+                </li>
+                <li>
+                    <!--
+                                <a href="https://goo.gl/1Kmmj3">411 State Capitol, Santa Fe, NM 87501</a>
+                                -->
+                    <a href="https://goo.gl/maps/rdxjh64jABm">The Capitol is located at the corner of
+                                    <br />
+                        Old Santa Fe Trail and Paseo de Peralta<br />
+                        in Santa Fe</a>
+                    <span>505-986-4600</span>
+                    <a href="mailto:lcs@nmlegis.gov">lcs@nmlegis.gov</a>
+                </li>
+            </ul>
+        </li>
+        </ul>
+            </nav>
+            <ol class="breadcrumb">
+                <span id="siteMapBreadcrumbs"><a href="#siteMapBreadcrumbs_SkipLink">Skip Navigation Links</a><span>
+                        <li>
+                            <a id="siteMapBreadcrumbs_lnkPage_0" title="Homepage" href="/">Home</a>
+                        </li>
+                    </span><span> / </span><span>
+                        <li>
+                            <a id="siteMapBreadcrumbs_lnkPage_1" title="Committees" href="/Committee/Default">Committees</a>
+                        </li>
+                    </span><span> / </span><span>
+                        <li>
+                            <a id="siteMapBreadcrumbs_lnkPage_2" title="Interim Committees" href="/Committee/Interim">Interim Committees</a>
+                        </li>
+                    </span><span> / </span><span class="active">
+                        <li>
+                            <a id="siteMapBreadcrumbs_lnkPage_3" title="Interim Committee" class="active" href="/Committee/Interim_Committee">Interim Committee</a>
+                        </li>
+                    </span><a id="siteMapBreadcrumbs_SkipLink"></a></span>
+            </ol>
+        <!--<div class="alert alert-danger text-center">The State Capitol will be closed on Wednesday 10/4/2023</div>-->
+        
+    <style type="text/css">
+        .glyphicon-calendar:before {
+            content: "📅";
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('.footable').footable({
+            });
+        });
+    </script>
+    <table cellspacing="0" id="MainContent_formViewCommitteeInformation" width="100%">
+	<tr>
+		<td colspan="2">
+            <div class="panel panel-default full-width">
+                <div class="panel-heading">
+                    <h1 class="panel-title">House Special Investigatory Committee</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="panel panel-default" style="width: 100%;">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center" style="font-weight: bold;">Upcoming Meetings</h3>
+                        </div>
+                        <div class="panel-body">
+                            <br />
+                            <div>
+			<table cellspacing="0" cellpadding="3" id="MainContent_formViewCommitteeInformation_gridViewUpcomingMeetings" width="100%">
+				<tr>
+					<td colspan="3"><font color="Black">Agenda will be posted when available</font></td>
+				</tr>
+			</table>
+		</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center" style="font-weight: bold;">Information</h3>
+                        </div>
+                        <div class="panel-body">
+                            <br />
+                            <table id="MainContent_formViewCommitteeInformation_ddlExtraLinks" cellspacing="0">
+			<tr>
+				<td>
+                                    <a id="MainContent_formViewCommitteeInformation_ddlExtraLinks_linkExtraLink_0" href="/Legislation/Legislation?chamber=H&amp;legType=R&amp;legNo=1&amp;year=26" target="_blank">Regular 2026 Session - HR 1                                                                                                                                                                                                                                    </a>
+                                    <br />
+                                </td>
+			</tr><tr>
+				<td>
+                                    <a id="MainContent_formViewCommitteeInformation_ddlExtraLinks_linkExtraLink_1" href="https://sg001-harmony.sliq.net/00293/Harmony/en/PowerBrowser/PowerBrowserV2/20260305/-1/79719" target="_blank">Meeting Recording from 2/17                                                                                                                                                                                                                                    </a>
+                                    <br />
+                                </td>
+			</tr>
+		</table>
+                            
+                            <br />
+                            
+                            <hr />
+                            <h4>Additional Information:</h4>
+                            <br />
+                            <span id="MainContent_formViewCommitteeInformation_lblExtraInfo"></span>
+                            
+
+                            <table id="MainContent_formViewCommitteeInformation_dataListZoomLinks" cellspacing="0" width="100%">
+			<tr>
+				<td>
+                                    <a id="MainContent_formViewCommitteeInformation_dataListZoomLinks_linkZoom_0" href="https://us02web.zoom.us/j/88271745882" target="_blank">
+                                        <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;Zoom Webinar</a>
+                                </td>
+			</tr>
+		</table>
+
+                            <span id="MainContent_formViewCommitteeInformation_lblPublicCommentEmail"></span>
+
+                            <br />
+                            
+
+                            <table cellspacing="0" id="MainContent_formViewCommitteeInformation_formViewCommitteeStaff">
+			<tr>
+				<td colspan="2">
+                                    <span id="MainContent_formViewCommitteeInformation_formViewCommitteeStaff_lblContact">For more information about this committee, call (505) 986-4600 or send an email to</span>
+                                    <a id="MainContent_formViewCommitteeInformation_formViewCommitteeStaff_linkEmail" href="mailto:Randall.Cherry@nmlegis.gov">Randall Cherry</a>
+                                </td>
+			</tr>
+		</table>
+                            <br />
+                            <table cellspacing="0" id="MainContent_formViewCommitteeInformation_formViewPublicComment">
+			<tr>
+				<td colspan="2">
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </td>
+			</tr>
+		</table>
+                            
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center" style="font-weight: bold;">Past Meetings</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+			<table cellspacing="0" cellpadding="3" id="MainContent_formViewCommitteeInformation_gridViewPastMeetings" width="100%">
+				<tr>
+					<th class="text-center" scope="col"><font color="Black" size="3">Meeting</font></th><th class="text-center" scope="col"><font color="Black" size="3">Agenda</font></th><th class="text-center" scope="col"><font color="Black" size="3">Minutes</font></th><th class="text-center" scope="col"><font color="Black" size="3">Handouts</font></th>
+				</tr><tr>
+					<td class="padding-5px" align="center"><font color="Black">
+                                            <span id="MainContent_formViewCommitteeInformation_gridViewPastMeetings_lblMeetingTitle_0">Jun 18, 2026</span>
+                                        </font></td><td class="padding-5px agenda-minutes-handout-column" align="center"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewPastMeetings_linkPastAgenda_0" title="Agenda" class="btn btn-primary btn-sm" href="../agendas/HISCageJun18.26.pdf" target="_blank">
+                                                        <span class="glyphicon glyphicon-calendar" />
+                                            </a>
+                                        </font></td><td class="padding-5px agenda-minutes-handout-column" align="center"><font color="Black">
+                                            
+                                        </font></td><td class="padding-5px agenda-minutes-handout-column" align="center"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewPastMeetings_linkHandouts_0" title="Handouts" class="btn btn-primary btn-sm" href="Handouts_List?CommitteeCode=HISC&amp;Date=6/18/2026" target="_blank">
+                                                        <span class="glyphicon glyphicon-file" />
+                                            </a>
+                                        </font></td>
+				</tr><tr bgcolor="#EEEEEE">
+					<td class="padding-5px" align="center"><font color="Black">
+                                            <span id="MainContent_formViewCommitteeInformation_gridViewPastMeetings_lblMeetingTitle_1">Jun 01, 2026</span>
+                                        </font></td><td class="padding-5px agenda-minutes-handout-column" align="center"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewPastMeetings_linkPastAgenda_1" title="Agenda" class="btn btn-primary btn-sm" href="../agendas/HISCageJun01.26.pdf" target="_blank">
+                                                        <span class="glyphicon glyphicon-calendar" />
+                                            </a>
+                                        </font></td><td class="padding-5px agenda-minutes-handout-column" align="center"><font color="Black">
+                                            
+                                        </font></td><td class="padding-5px agenda-minutes-handout-column" align="center"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewPastMeetings_linkHandouts_1" title="Handouts" class="btn btn-primary btn-sm" href="Handouts_List?CommitteeCode=HISC&amp;Date=6/1/2026" target="_blank">
+                                                        <span class="glyphicon glyphicon-file" />
+                                            </a>
+                                        </font></td>
+				</tr>
+			</table>
+		</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default full-width">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center" style="font-weight: bold;">
+                                <span id="MainContent_formViewCommitteeInformation_lblCommitteeMembersHeader">Committee Members</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+			<table class="footable" cellspacing="0" cellpadding="5" id="MainContent_formViewCommitteeInformation_gridViewCommitteeMembers">
+				<thead>
+					<tr>
+						<th data-breakpoints="xs" scope="col"><font color="Black"><a href="javascript:__doPostBack(&#39;ctl00$MainContent$formViewCommitteeInformation$gridViewCommitteeMembers&#39;,&#39;Sort$Title&#39;)"><font color="Black">Title</font></a></font></th><th scope="col"><font color="Black"><a href="javascript:__doPostBack(&#39;ctl00$MainContent$formViewCommitteeInformation$gridViewCommitteeMembers&#39;,&#39;Sort$LName&#39;)"><font color="Black">Name</font></a></font></th><th scope="col"><font color="Black"><a href="javascript:__doPostBack(&#39;ctl00$MainContent$formViewCommitteeInformation$gridViewCommitteeMembers&#39;,&#39;Sort$Party&#39;)"><font color="Black">Party</font></a></font></th><th scope="col"><font color="Black"><a href="javascript:__doPostBack(&#39;ctl00$MainContent$formViewCommitteeInformation$gridViewCommitteeMembers&#39;,&#39;Sort$Full Status&#39;)"><font color="Black">Role</font></a></font></th>
+					</tr>
+				</thead><tbody>
+					<tr bgcolor="White">
+						<td class="padding-5px"><font color="Black">Representative</font></td><td class="padding-5px"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewCommitteeMembers_linkLegislator_0" href="../Members/Legislator?SponCode=HROAN">Andrea Romero</a>
+                                        </font></td><td class="padding-5px"><font color="Black">D</font></td><td class="padding-5px"><font color="Black">Chair</font></td>
+					</tr><tr bgcolor="#EEEEEE">
+						<td class="padding-5px"><font color="Black">Representative</font></td><td class="padding-5px"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewCommitteeMembers_linkLegislator_1" href="../Members/Legislator?SponCode=HANMA">Marianna Anaya</a>
+                                        </font></td><td class="padding-5px"><font color="Black">D</font></td><td class="padding-5px"><font color="Black">Member</font></td>
+					</tr><tr bgcolor="White">
+						<td class="padding-5px"><font color="Black">Representative</font></td><td class="padding-5px"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewCommitteeMembers_linkLegislator_2" href="../Members/Legislator?SponCode=HHABI">William A. Hall II</a>
+                                        </font></td><td class="padding-5px"><font color="Black">R</font></td><td class="padding-5px"><font color="Black">Member</font></td>
+					</tr><tr bgcolor="#EEEEEE">
+						<td class="padding-5px"><font color="Black">Representative</font></td><td class="padding-5px"><font color="Black">
+                                            <a id="MainContent_formViewCommitteeInformation_gridViewCommitteeMembers_linkLegislator_3" href="../Members/Legislator?SponCode=HREEB">Andrea Reeb</a>
+                                        </font></td><td class="padding-5px"><font color="Black">R</font></td><td class="padding-5px"><font color="Black">Member</font></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default full-width">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center" style="font-weight: bold;">
+                                <span id="MainContent_formViewCommitteeInformation_lblPublicMembersHeader">Public Members</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+			<table class="footable" cellspacing="0" cellpadding="5" id="MainContent_formViewCommitteeInformation_gridViewPublicMembers">
+				<tr>
+					<td colspan="2"><font color="Black">No public members found</font></td>
+				</tr>
+			</table>
+		</div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center" style="font-weight: bold;">Archive</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table cellspacing="0" id="MainContent_formViewCommitteeInformation_formViewPastCommittee">
+			<tr>
+				<td colspan="2">
+                                    Go to past
+                                    <span id="MainContent_formViewCommitteeInformation_formViewPastCommittee_lblPastCommitteeCode">HOUSE SPECIAL INVESTIGATORY COMMITTEE</span>
+                                    information by year:
+                                </td>
+			</tr>
+		</table>
+                            <div class="input-group" style="margin-top: 5px;">
+                                
+                                <span class="input-group-btn">
+                                    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+	</tr>
+</table>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+        </div>
+        <div class="footer noprint" style="margin-top: -20px;">
+            <div class="row" style="margin-left: -5px; margin-right: -5px;">
+                <div class="col-xs-12 col-sm-8">
+                    <div style="display: block;">
+                        <img id="imgSeal" src="../Images/Capitol/seal.png" alt="State Seal" width="50" style="float: left; margin-left: 5px; margin-right: 5px;" />
+                        <div style="font-weight: bold;">
+                            <span>New Mexico Legislature © 2026</span>
+                            <br />
+                            <span>
+                                <a style="font-style: italic;" href="/Visitors" target="_blank">Visit the Capitol</a>
+                            </span>
+                            <br />
+                            <span>
+                                <a style="font-style: italic;" href="/PrivacyPolicy" target="_blank">Privacy Policy</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    Email <a href="mailto:legis.webmaster@nmlegis.gov">legis.webmaster@nmlegis.gov</a> if you encounter an issue with the website or have a suggestion to improve it. This email is NOT for use to contact your legislators. Please contact them directly.
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

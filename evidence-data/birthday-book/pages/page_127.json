@@ -1,0 +1,126 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 127,
+  "page_id": "page_127",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_127.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_127.ocr.txt",
+  "image_metadata": {
+    "bytes": 73344,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "788266752e6fd89a4acfa355e5d6279ca59573fb4bda57863ae3b1ab32b3eb9d"
+  },
+  "ocr_text": "ALAN M. DERSHOWITZ |\n1575 MASSACHUSETTS AVENUE\nCAMBRIDGE » MASSACHUSETTS « 02138\ni\n|\nDecember 11, 2002 . |\n: |\nDear Teffrey, |\nAs a birthday gift to you, I managed to obtain an early version of the Vanity Unfair -\narticle. I talked them into changing the focus from you to Bill Clinton, as you will see |\nfrom the enclosed excerpt. Happy birthday and best regards.\n{ie |\ni\n| |\n| |\nBe\nHOUSE_OVERSIGHT_000127\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A printed letter on white paper with the header 'ALAN M. DERSHOWITZ' followed by the address '1575 MASSACHUSETTS AVENUE CAMBRIDGE • MASSACHUSETTS • 02138'. The letter is dated 'December 11, 2002' and is addressed to 'Dear Jeffrey'. The body of the letter discusses obtaining an early version of a Vanity Unfair article, mentioning a focus change from the recipient to Bill Clinton, and concludes with birthday wishes and best regards. There is a cursive signature below the text. The page is otherwise blank with no other markings or images.",
+    "Layout: header with name and address at top center",
+    "Layout: date line centered below header",
+    "Layout: greeting line aligned left",
+    "Layout: main body text aligned left below greeting",
+    "Layout: signature/mark below main text, centered"
+  ],
+  "observations": [
+    "A printed letter on white paper with the header 'ALAN M. DERSHOWITZ' followed by the address '1575 MASSACHUSETTS AVENUE CAMBRIDGE • MASSACHUSETTS • 02138'. The letter is dated 'December 11, 2002' and is addressed to 'Dear Jeffrey'. The body of the letter discusses obtaining an early version of a Vanity Unfair article, mentioning a focus change from the recipient to Bill Clinton, and concludes with birthday wishes and best regards. There is a cursive signature below the text. The page is otherwise blank with no other markings or images.",
+    "Layout: header with name and address at top center",
+    "Layout: date line centered below header",
+    "Layout: greeting line aligned left",
+    "Layout: main body text aligned left below greeting",
+    "Layout: signature/mark below main text, centered"
+  ],
+  "dates": [
+    "December 11, 2002",
+    "2002"
+  ],
+  "document_strings": [
+    "ALAN M. DERSHOWITZ",
+    "1575 MASSACHUSETTS AVENUE",
+    "CAMBRIDGE • MASSACHUSETTS • 02138",
+    "December 11, 2002",
+    "Dear Jeffrey,",
+    "As a birthday gift to you, I managed to obtain an early version of the Vanity Unfair article. I talked them into changing the focus from you to Bill Clinton, as you will see from the enclosed excerpt. Happy birthday and best regards."
+  ],
+  "signatures": [
+    {
+      "location": "below main body text, center",
+      "text_as_seen": "signature",
+      "confidence": "medium",
+      "note": "signature present"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "below main body text, center",
+      "text_as_seen": "signature",
+      "confidence": "medium",
+      "note": "cursive signature, specific content uncertain"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:20.989Z",
+    "response_id": "resp_0b3189abd0a6065c006a502d626ea481959f62419cf34de198",
+    "raw_output_sha256": "8f9e6b36139a0e0fa7f74349031a931009b51dc05b47ac302abdae98e416477f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b3189abd0a6065c006a502d626ea481959f62419cf34de198",
+    "enriched_at": "2026-07-09T23:23:20.989Z"
+  },
+  "visual_summary": "A printed letter on white paper with the header 'ALAN M. DERSHOWITZ' followed by the address '1575 MASSACHUSETTS AVENUE CAMBRIDGE • MASSACHUSETTS • 02138'. The letter is dated 'December 11, 2002' and is addressed to 'Dear Jeffrey'. The body of the letter discusses obtaining an early version of a Vanity Unfair article, mentioning a focus change from the recipient to Bill Clinton, and concludes with birthday wishes and best regards. There is a cursive signature below the text. The page is otherwise blank with no other markings or images.",
+  "layout": [
+    "header with name and address at top center",
+    "date line centered below header",
+    "greeting line aligned left",
+    "main body text aligned left below greeting",
+    "signature/mark below main text, centered"
+  ],
+  "handwriting": [
+    {
+      "location": "below main body text, center",
+      "text_as_seen": "signature",
+      "confidence": "medium",
+      "note": "cursive signature, specific content uncertain"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "below main body text, center",
+      "text_as_seen": "signature",
+      "confidence": "medium",
+      "note": "signature present"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "December 11, 2002"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,228 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 94,
+  "page_id": "page_094",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_094.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_094.ocr.txt",
+  "image_metadata": {
+    "bytes": 15286424,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "f67cb38646dee75b9b45bd450b149c50019266a2b6a58a052bc8e3cd8daa35cf"
+  },
+  "ocr_text": "RAE = .\n{Ss\nvs ee\noirs ) ane d /\n! “ le el | ay fs *) 4 2.\nas = fe?)\n: pllbetes So \\\\ er\n: . — a —_ e@ \\\\\n7 4 as\nia on\nath ins ei ~~\n. to Wt nas _ f rn. ve ok \" q\nas. Jn igo r it, * a ¥ _\n» ~we j . \\ es 5 ‘\na er ae fe aes At\" ee i a\nL=s+ . eS \\ whe ia\n+ Vv, a “ it — #F ¥ / »\nay Ss May “i J P ¥ *g uu a i‘ , y ,\nce, eo » ay\ne : Ore pli\neen © Pla\nLinas: ‘ heh\na fe x 4 gS\nx a 7a Fe ‘\nrr} *) See ee § oe \" i £\neee _* ¢ : —— jae\n- (eae — E ee __\n2H >: vi Ce nent” * ’\nHOUSE_OVERSIGHT_000094\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page shows a collage of various photographs and cutout texts on a white background. The photos feature people in casual or candid settings, some outdoors near houses and cars, some indoors with furniture. Several photos have portions blacked out. The cutout texts read 'More play..', 'More play...', and 'Play!'.",
+    "Layout: photographs scattered across page",
+    "Layout: three cutout texts placed around photos",
+    "Photo/image candidate at center top: Photograph of person sitting on wooden bench outdoors with fence and greenery in background.",
+    "Photo/image candidate at top right: Photograph of person smiling, partially obscured with black rectangle.",
+    "Photo/image candidate at middle left: Photograph of person reclining or lying down indoors, redacted.",
+    "Photo/image candidate at center: Photograph of person seated outdoors on grass near house and car.",
+    "Photo/image candidate at middle right: Photograph of person sitting on outdoor steps with a building and a tall pillar behind them, partially redacted.",
+    "Photo/image candidate at middle lower left: Photograph of person sitting on couch indoors with large windows behind them, redacted.",
+    "Photo/image candidate at middle lower center: Photograph of person sitting indoors with legs crossed in front of a window showing outdoor landscape, redacted.",
+    "Photo/image candidate at bottom left: Photograph of a man standing next to a vintage car outdoors.",
+    "Photo/image candidate at bottom center: Photograph of a car parked outdoors with trees in background.",
+    "Photo/image candidate at bottom right: Photograph of person bending toward a cake with lit candles indoors.",
+    "Photo/image candidate at top left: Photograph of an outdoor scene with snow or ice.",
+    "Photo/image candidate at middle left above car photo: Photograph of a dog and smaller animal together, likely on a couch."
+  ],
+  "observations": [
+    "Page shows a collage of various photographs and cutout texts on a white background. The photos feature people in casual or candid settings, some outdoors near houses and cars, some indoors with furniture. Several photos have portions blacked out. The cutout texts read 'More play..', 'More play...', and 'Play!'.",
+    "Layout: photographs scattered across page",
+    "Layout: three cutout texts placed around photos",
+    "Photo/image candidate at center top: Photograph of person sitting on wooden bench outdoors with fence and greenery in background.",
+    "Photo/image candidate at top right: Photograph of person smiling, partially obscured with black rectangle.",
+    "Photo/image candidate at middle left: Photograph of person reclining or lying down indoors, redacted.",
+    "Photo/image candidate at center: Photograph of person seated outdoors on grass near house and car.",
+    "Photo/image candidate at middle right: Photograph of person sitting on outdoor steps with a building and a tall pillar behind them, partially redacted.",
+    "Photo/image candidate at middle lower left: Photograph of person sitting on couch indoors with large windows behind them, redacted.",
+    "Photo/image candidate at middle lower center: Photograph of person sitting indoors with legs crossed in front of a window showing outdoor landscape, redacted.",
+    "Photo/image candidate at bottom left: Photograph of a man standing next to a vintage car outdoors.",
+    "Photo/image candidate at bottom center: Photograph of a car parked outdoors with trees in background.",
+    "Photo/image candidate at bottom right: Photograph of person bending toward a cake with lit candles indoors.",
+    "Photo/image candidate at top left: Photograph of an outdoor scene with snow or ice.",
+    "Photo/image candidate at middle left above car photo: Photograph of a dog and smaller animal together, likely on a couch."
+  ],
+  "dates": [],
+  "document_strings": [
+    "More play..",
+    "More play...",
+    "Play!",
+    "HOUSE_OVERSIGHT_000094"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top right photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle redaction over part of face and background."
+    },
+    {
+      "location": "top middle left photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle redaction over upper body area."
+    },
+    {
+      "location": "middle left photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle redaction over central body portion."
+    },
+    {
+      "location": "bottom middle photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black rectangle redaction covering majority of photo."
+    },
+    {
+      "location": "middle left bottom photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Small black rectangle redaction over part of subject's face."
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:18:03.641Z",
+    "response_id": "resp_0c27e5cf103918f1006a502c2260848190a2bbfe0febbf93d5",
+    "raw_output_sha256": "2e9e5ff30a5dc4fcfc441009eb3a327538d5b994f4e412577ca0d38074ce9b1d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c27e5cf103918f1006a502c2260848190a2bbfe0febbf93d5",
+    "enriched_at": "2026-07-09T23:18:03.641Z"
+  },
+  "visual_summary": "Page shows a collage of various photographs and cutout texts on a white background. The photos feature people in casual or candid settings, some outdoors near houses and cars, some indoors with furniture. Several photos have portions blacked out. The cutout texts read 'More play..', 'More play...', and 'Play!'.",
+  "layout": [
+    "photographs scattered across page",
+    "three cutout texts placed around photos"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top right photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle redaction over part of face and background."
+    },
+    {
+      "location": "top middle left photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle redaction over upper body area."
+    },
+    {
+      "location": "middle left photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle redaction over central body portion."
+    },
+    {
+      "location": "bottom middle photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black rectangle redaction covering majority of photo."
+    },
+    {
+      "location": "middle left bottom photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Small black rectangle redaction over part of subject's face."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center top",
+      "description": "Photograph of person sitting on wooden bench outdoors with fence and greenery in background.",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Photograph of person smiling, partially obscured with black rectangle.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle left",
+      "description": "Photograph of person reclining or lying down indoors, redacted.",
+      "confidence": "high"
+    },
+    {
+      "location": "center",
+      "description": "Photograph of person seated outdoors on grass near house and car.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle right",
+      "description": "Photograph of person sitting on outdoor steps with a building and a tall pillar behind them, partially redacted.",
+      "confidence": "medium"
+    },
+    {
+      "location": "middle lower left",
+      "description": "Photograph of person sitting on couch indoors with large windows behind them, redacted.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle lower center",
+      "description": "Photograph of person sitting indoors with legs crossed in front of a window showing outdoor landscape, redacted.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left",
+      "description": "Photograph of a man standing next to a vintage car outdoors.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center",
+      "description": "Photograph of a car parked outdoors with trees in background.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right",
+      "description": "Photograph of person bending toward a cake with lit candles indoors.",
+      "confidence": "high"
+    },
+    {
+      "location": "top left",
+      "description": "Photograph of an outdoor scene with snow or ice.",
+      "confidence": "medium"
+    },
+    {
+      "location": "middle left above car photo",
+      "description": "Photograph of a dog and smaller animal together, likely on a couch.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,137 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 104,
+  "page_id": "page_104",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_104.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_104.ocr.txt",
+  "image_metadata": {
+    "bytes": 10279408,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "1cc760956a46594e64973e22d426a78e28ec6699a9a10dcf62989717f8a26682"
+  },
+  "ocr_text": "Be os: tS fe\ni J Af ee\n| Y Beet :\nPf CRML) g for the b4eC Sere,\nMake me up ftomapw {\ntre. Propysed You what | Ue\nHOUSE_OVERSIGHT_000104\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page features two photographs, each with handwritten captions beneath them. The first photo shows a person standing indoors in a room with wooden ceiling and floral curtains. The second photo shows three people in an indoor setting with one face redacted by a black box. Both captions are handwritten below each photo.",
+    "Layout: photo top with handwriting below",
+    "Layout: photo bottom with handwriting below",
+    "Photo/image candidate at top half of page: Indoors scene with a single standing person, wooden ceiling, floral curtains, dining chairs, and a hanging lamp",
+    "Photo/image candidate at bottom half of page: Indoors scene with three people, one face redacted by black box, one holding a drink, some furniture visible"
+  ],
+  "observations": [
+    "The page features two photographs, each with handwritten captions beneath them. The first photo shows a person standing indoors in a room with wooden ceiling and floral curtains. The second photo shows three people in an indoor setting with one face redacted by a black box. Both captions are handwritten below each photo.",
+    "Layout: photo top with handwriting below",
+    "Layout: photo bottom with handwriting below",
+    "Photo/image candidate at top half of page: Indoors scene with a single standing person, wooden ceiling, floral curtains, dining chairs, and a hanging lamp",
+    "Photo/image candidate at bottom half of page: Indoors scene with three people, one face redacted by black box, one holding a drink, some furniture visible"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000104"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "beneath top photo",
+      "text_as_seen": "Heading for the blue sofa. Wake me up tomorrow!",
+      "confidence": "high",
+      "note": "Handwriting is clear and legible"
+    },
+    {
+      "location": "beneath bottom photo",
+      "text_as_seen": "He promised you what ?!!",
+      "confidence": "high",
+      "note": "Handwriting is clear and legible"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "center of bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covers face of one individual"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "The exact context or location of the photos is unknown",
+    "No date or time information is visible"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:46.834Z",
+    "response_id": "resp_0e3d3c81f2ba8ad6006a502c8d006c8197925368579b0acf81",
+    "raw_output_sha256": "8e4fae1776802e1447fc7d78eb5d4b553ebd4dcc686ff9e975877fc4c46e20a3"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e3d3c81f2ba8ad6006a502c8d006c8197925368579b0acf81",
+    "enriched_at": "2026-07-09T23:19:46.834Z"
+  },
+  "visual_summary": "The page features two photographs, each with handwritten captions beneath them. The first photo shows a person standing indoors in a room with wooden ceiling and floral curtains. The second photo shows three people in an indoor setting with one face redacted by a black box. Both captions are handwritten below each photo.",
+  "layout": [
+    "photo top with handwriting below",
+    "photo bottom with handwriting below"
+  ],
+  "handwriting": [
+    {
+      "location": "beneath top photo",
+      "text_as_seen": "Heading for the blue sofa. Wake me up tomorrow!",
+      "confidence": "high",
+      "note": "Handwriting is clear and legible"
+    },
+    {
+      "location": "beneath bottom photo",
+      "text_as_seen": "He promised you what ?!!",
+      "confidence": "high",
+      "note": "Handwriting is clear and legible"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "center of bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covers face of one individual"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half of page",
+      "description": "Indoors scene with a single standing person, wooden ceiling, floral curtains, dining chairs, and a hanging lamp",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half of page",
+      "description": "Indoors scene with three people, one face redacted by black box, one holding a drink, some furniture visible",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,89 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 85,
+  "page_id": "page_085",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_085.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_085.ocr.txt",
+  "image_metadata": {
+    "bytes": 133234,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "427106fe44d9165a8235baf119af3c0530703a4fcf320af5aff8981def205ae6"
+  },
+  "ocr_text": "SACI a ratancrar tami Rae He RISER oe ronan ARDEP ATLA DODANE RESCH DES OSEEY ISIE NIRA SRO TERME DST ASUS EOL NU RRO SIE RIN\nSS aS NN EIS BORN ED LESSEE PNESIST SESE SI Tt SIENNA TERRE ANE Ay EEA SRR, DES TBR TIN OTOL NIE VEE EHO STAY oe\n~~ Sottero init tena oem pensation meaner eosin nce\nin :\nrove tan ca geonrcenstace nog abiga haope eodswncn meNIn a be sStind nt wesw begin Me ageing Cy ge wc aaqast\nor tnmbninnsnnganatpttitiiesuannonsesonnnsatiiatl nt nepmtin immer glace esp enassonenpbeainsnet\n. ~eetitcoteraieninnaateenmmansnote teens rennin irene tenants Dea eon chant Rae aaanhicb ioe\nwin oapie S RINSOSLOTS SEE tS SCOPLED EEN NES SII ISI BEDS ett\nsaccrntns betaine SSHRC MNRAS fhe ehenlad vinden tut Ds sas MENS aacencsemscaicn tine\n+ setae anaphase sera aiey anatanmengn se ounaaseresanonasen tesserae sonatas aetna atlanta 058\nveo aie A eS nti as MAYS UA Se  aDE REERTPNRNS SNLEEREDNRTPPTPE S\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page shows a dark background with white text in the center reading 'THE FIRST FIFTY YEARS' with two horizontal lines above and below the text, and the roman numeral 'II' further down with additional ornate horizontal lines above and below it.",
+    "Layout: Center text block",
+    "Layout: Top horizontal line",
+    "Layout: Middle horizontal lines",
+    "Layout: Roman numeral II centered",
+    "Layout: Bottom horizontal line"
+  ],
+  "observations": [
+    "Page shows a dark background with white text in the center reading 'THE FIRST FIFTY YEARS' with two horizontal lines above and below the text, and the roman numeral 'II' further down with additional ornate horizontal lines above and below it.",
+    "Layout: Center text block",
+    "Layout: Top horizontal line",
+    "Layout: Middle horizontal lines",
+    "Layout: Roman numeral II centered",
+    "Layout: Bottom horizontal line"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THE FIRST FIFTY YEARS",
+    "II"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "Exact context of the text not visible",
+    "No visible dates or additional content"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:18.272Z",
+    "response_id": "resp_0647696f0d8d86a9006a502bbf4648819796f488f3719c48f3",
+    "raw_output_sha256": "424f01150d55beadd59bac16f0e8cc3a7c4cad3dab924e96377142a549be0a18"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0647696f0d8d86a9006a502bbf4648819796f488f3719c48f3",
+    "enriched_at": "2026-07-09T23:16:18.272Z"
+  },
+  "visual_summary": "Page shows a dark background with white text in the center reading 'THE FIRST FIFTY YEARS' with two horizontal lines above and below the text, and the roman numeral 'II' further down with additional ornate horizontal lines above and below it.",
+  "layout": [
+    "Center text block",
+    "Top horizontal line",
+    "Middle horizontal lines",
+    "Roman numeral II centered",
+    "Bottom horizontal line"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,105 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 75,
+  "page_id": "page_075",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_075.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_075.ocr.txt",
+  "image_metadata": {
+    "bytes": 215298,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "80d9970f4e6ea3b10c5cfc33c14b1de34d342e33b8ad4af28a03e72ec41f5741"
+  },
+  "ocr_text": "Dearest Jeffrey,\nlf | were to list my life time achievements, surely scoring higher than you on the nineth\ngrade algebra regent would rank in the top ten. I'll never forget the exhilaration of\nconsidering myself smarter than Jeffrey Epstein in math. That same year, you not only\nperformed mathematical magic by tutoring me to get a perfect score on the regent,\nyou thrilled our class in music by playing \"California Dreaming” on the piano, and thrilled\nme even more by stealing a kiss after \"The Sound of Music\" at Radio City Music Hall.\nWhen we met again some time after college, you had shoulder length curls, wore\nwonderful hand-embroidered denim work shirts and tight jeans, and drove a brown\nCamaro with a glove compariment full of parking tickets. Needless to say, you had\noutgrown your shyness around girls and even confessed that you participated in peace\nmarches because they were the easiest places to get laid. A truly unique perspective\non political activism in the 70's.\n\nA few years later during a trip to Palm Beach, we were driving around admiring the\nhomes when you pointed in the direction of a particularly impressive mansion and said,\n\"One day, I'm going to own that.\" | smiled and considered your comment nothing more\nthan wishful thinking. Many mansions later, you have shown me the importance of\nhaving a vision and the determination to pursue it. A lesson | continue to rely upon for\n\ninspiration.\n\nErom lessons in algebra to lessons in life, the lessons I've learned from you during the\n\npast 35 years haven't always been easy or even ones that | would have chosen to learn,\n\nbut they were always important. I'm very grateful to have you for a friend and hope\n\nthat if you ever need help solving a rate/time/distance problem, you won't hesitate to\n\ncall.\n\nAll my love, -\n\nHOUSE_OVERSIGHT_000075\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a typed letter addressed to 'Dearest Jeffrey,' with the main text discussing various memories and reflections related to algebra, music, and life lessons over 35 years. There is a black redaction block obscuring text near the bottom left corner after the words 'All my love,'. The letter is formatted as a block of text left-aligned on a white page with ample margins. No handwriting, drawings, or photos are visible.",
+    "Layout: Typed letter covering majority of page",
+    "Layout: Redaction block near bottom left"
+  ],
+  "observations": [
+    "The page contains a typed letter addressed to 'Dearest Jeffrey,' with the main text discussing various memories and reflections related to algebra, music, and life lessons over 35 years. There is a black redaction block obscuring text near the bottom left corner after the words 'All my love,'. The letter is formatted as a block of text left-aligned on a white page with ample margins. No handwriting, drawings, or photos are visible.",
+    "Layout: Typed letter covering majority of page",
+    "Layout: Redaction block near bottom left"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Dearest Jeffrey,",
+    "If I were to list my life time achievements, surely scoring higher than you on the nineth grade algebra regent would rank in the top ten. I'll never forget the exhilaration of considering myself smarter than Jeffrey Epstein in math.",
+    "That same year, you not only performed mathematical magic by tutoring me to get a perfect score on the regent, you thrilled our class in music by playing \"California Dreaming\" on the piano, and thrilled me even more by stealing a kiss after \"The Sound of Music\" at Radio City Music Hall.",
+    "When we met again some time after college, you had shoulder length curls, wore wonderful hand-embroidered denim work shirts and tight jeans, and drove a brown Camaro with a glove compartment full of parking tickets.",
+    "Needless to say, you had outgrown your shyness around girls and even confessed that you participated in peace marches because they were the easiest places to get laid.",
+    "A truly unique perspective on political activism in the 70's.",
+    "A few years later during a trip to Palm Beach, we were driving around admiring the homes when you pointed in the direction of a particularly impressive mansion and said, \"One day, I'm going to own that.\"",
+    "I smiled and considered your comment nothing more than wishful thinking.",
+    "Many mansions later, you have shown me the importance of having a vision and the determination to pursue it.",
+    "A lesson I continue to rely upon for inspiration.",
+    "From lessons in algebra to lessons in life, the lessons I've learned from you during the past 35 years haven't always been easy or even ones that I would have chosen to learn, but they were always important.",
+    "I'm very grateful to have you for a friend and hope that if you ever need help solving a rate/time/distance problem, you won't hesitate to call.",
+    "All my love,"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "bottom left corner underneath 'All my love,',' covering name or signature block",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscuring text"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Text obscured by black redaction block near bottom left prevents transcription of the sender's name or signature."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:06.703Z",
+    "response_id": "resp_0c7d488a75b42ea1006a502b7272088194aea794289bfb073e",
+    "raw_output_sha256": "89eaf928186bb4151b12add1c82ec1f8f3e298cef958f429d0785df9c1a0bab6"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c7d488a75b42ea1006a502b7272088194aea794289bfb073e",
+    "enriched_at": "2026-07-09T23:15:06.703Z"
+  },
+  "visual_summary": "The page contains a typed letter addressed to 'Dearest Jeffrey,' with the main text discussing various memories and reflections related to algebra, music, and life lessons over 35 years. There is a black redaction block obscuring text near the bottom left corner after the words 'All my love,'. The letter is formatted as a block of text left-aligned on a white page with ample margins. No handwriting, drawings, or photos are visible.",
+  "layout": [
+    "Typed letter covering majority of page",
+    "Redaction block near bottom left"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "bottom left corner underneath 'All my love,',' covering name or signature block",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscuring text"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,102 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 143,
+  "page_id": "page_143",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_143.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_143.ocr.txt",
+  "image_metadata": {
+    "bytes": 7119827,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5aaa263f447877f7594238e58578d386edf612f50d66f100acc1e1a317f0a453"
+  },
+  "ocr_text": ".\n(Or Ww ohe v 4 J OY, uD\nKomct ke Kha & Skate\n! Ke\n1\n76) ith & thts\n(9 aa fe )\nFe pee io Aa ea tanec BOO a ae .\nee aaa ,\n- al 7 et Ts ; io » . E ‘\n. > >» ‘\n. ais ey\nne a ae | “77\nHOUSE_OVERSIGHT_000143\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page shows a handwritten note at the top center and a color photo at the bottom. The handwritten note appears to be a short message written in black ink. The photo depicts a coastal scene with blue ocean water in the foreground, a small white boat near a dock to the right, and a green landmass with dense trees and some large houses under a blue sky with a few clouds in the background.",
+    "Layout: handwritten note at top center",
+    "Layout: color photo at bottom spanning page width",
+    "Photo/image candidate at bottom: Color photo of a coastal landscape showing a small boat in water, a dock on the right, lush green land with large houses and palm trees, under a blue sky with scattered clouds."
+  ],
+  "observations": [
+    "The page shows a handwritten note at the top center and a color photo at the bottom. The handwritten note appears to be a short message written in black ink. The photo depicts a coastal scene with blue ocean water in the foreground, a small white boat near a dock to the right, and a green landmass with dense trees and some large houses under a blue sky with a few clouds in the background.",
+    "Layout: handwritten note at top center",
+    "Layout: color photo at bottom spanning page width",
+    "Photo/image candidate at bottom: Color photo of a coastal landscape showing a small boat in water, a dock on the right, lush green land with large houses and palm trees, under a blue sky with scattered clouds."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000143"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Or in one of his glorious homes he likes to share with his friends (yum yum)",
+      "confidence": "medium",
+      "note": "Some letters are unclear, reading is approximate"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Handwriting is not fully clear, some words are uncertain"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:28.792Z",
+    "response_id": "resp_090e191dfbfe6e1a006a502ddef2b88195a4c7362bf1e1d1ff",
+    "raw_output_sha256": "a096203d60dec5cbafcd633b1bbb165bed4f4c74eab6193e5cdbf33467bae331"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_090e191dfbfe6e1a006a502ddef2b88195a4c7362bf1e1d1ff",
+    "enriched_at": "2026-07-09T23:25:28.792Z"
+  },
+  "visual_summary": "The page shows a handwritten note at the top center and a color photo at the bottom. The handwritten note appears to be a short message written in black ink. The photo depicts a coastal scene with blue ocean water in the foreground, a small white boat near a dock to the right, and a green landmass with dense trees and some large houses under a blue sky with a few clouds in the background.",
+  "layout": [
+    "handwritten note at top center",
+    "color photo at bottom spanning page width"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Or in one of his glorious homes he likes to share with his friends (yum yum)",
+      "confidence": "medium",
+      "note": "Some letters are unclear, reading is approximate"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom",
+      "description": "Color photo of a coastal landscape showing a small boat in water, a dock on the right, lush green land with large houses and palm trees, under a blue sky with scattered clouds.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

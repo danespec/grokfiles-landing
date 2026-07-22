@@ -1,0 +1,16 @@
+cache-control: public, max-age=300
+connection: keep-alive
+content-encoding: gzip
+content-length: 29027
+content-security-policy: default-src blob: http: data: 'unsafe-eval' 'unsafe-inline';
+content-type: text/html; charset=utf-8
+date: Mon, 20 Jul 2026 00:01:25 GMT
+etag: W/"21ebc-ZGr8cNgsbZVHKgEJvXNFRNgGN1s"
+server: Apache
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+x-content-security-policy: default-src * data: 'unsafe-eval' 'unsafe-inline';
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-webkit-csp: default-src * data: 'unsafe-eval' 'unsafe-inline';
+x-xss-protection: 1; mode=block

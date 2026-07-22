@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Read The Book of Black | Grok Archive Hub</title>
+  <meta name="description" content="Noindex controlled manuscript reader for the Book of Black, with acknowledgement, source metadata, PDF navigation, OCR panel, and search results.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://grokarchivehub.com/book-of-black/read">
+  <meta name="gah-ad-eligible" content="false">
+  <meta name="gah-ad-policy" content="book-of-black-raw-reader">
+  <meta name="gah-indexability-policy" content="noindex,follow">
+  <link rel="stylesheet" href="/frontdoor/site.css">
+  <link rel="stylesheet" href="/book-of-black/book-of-black.css?v=reader-003d">
+</head>
+<body class="bob-page bob-reader-page" data-bob-page="reader">
+  <header class="site-header bob-site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/"><span class="brand-mark">GA</span><span>Grok Archive Hub</span></a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+        <a data-route-link href="/book-of-black">Overview</a>
+        <a data-route-link href="/book-of-black/search">Search</a>
+        <a data-route-link href="/book-of-black/ledger">Ledger</a>
+        <a data-route-link href="/book-of-black/methodology">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="bob-reader-shell">
+    <section class="bob-reader-intro">
+      <p class="bob-kicker">Explicit opt-in manuscript reader</p>
+      <h1>The Book of Black reader</h1>
+      <div class="bob-warning" role="note">
+        <strong>This manuscript is not evidence.</strong>
+        <span>Raw text may contain unverified hypotheses, candidate relationships, inferred identities, and unresolved research leads.</span>
+      </div>
+    </section>
+
+    <section class="bob-ack-gate" data-bob-ack-gate>
+      <div>
+        <p class="bob-eyebrow">Reader acknowledgement</p>
+        <h2>Accept the source boundary before loading the manuscript.</h2>
+        <p>The PDF and extracted text will not load until this acknowledgement is accepted. This sets a session cookie only; it does not require an account and stores no personal information.</p>
+        <label class="bob-ack-box">
+          <input type="checkbox" data-bob-ack-checkbox>
+          <span>I understand that the Book of Black contains unverified hypotheses, candidate relationships, inferred identities, and unresolved research leads. I will not treat inclusion as proof.</span>
+        </label>
+        <button class="bob-button primary" type="button" data-bob-ack-button disabled>Load controlled reader</button>
+      </div>
+    </section>
+
+    <section class="bob-reader-app" data-bob-reader-app hidden>
+      <div class="bob-reader-toolbar" aria-label="Reader controls">
+        <button class="bob-tool-button" type="button" data-bob-prev-page aria-label="Previous page">Prev</button>
+        <button class="bob-tool-button" type="button" data-bob-next-page aria-label="Next page">Next</button>
+        <label class="bob-page-control">Page <input type="number" min="1" value="1" data-bob-page-input></label>
+        <span data-bob-page-total>/ 1639</span>
+        <button class="bob-tool-button" type="button" data-bob-zoom-out aria-label="Zoom out">-</button>
+        <span class="bob-zoom-readout" data-bob-zoom-label>100%</span>
+        <button class="bob-tool-button" type="button" data-bob-zoom-in aria-label="Zoom in">+</button>
+        <button class="bob-tool-button" type="button" data-bob-fit="width">Width</button>
+        <button class="bob-tool-button" type="button" data-bob-fit="page">Page</button>
+        <button class="bob-tool-button" type="button" data-bob-rotate>Rotate</button>
+        <button class="bob-tool-button" type="button" data-bob-fullscreen>Full</button>
+        <button class="bob-tool-button" type="button" data-bob-toggle-ocr aria-expanded="true">OCR</button>
+        <button class="bob-tool-button" type="button" data-bob-toggle-meta aria-expanded="false">Info</button>
+        <button class="bob-tool-button" type="button" data-bob-copy-url>Copy link</button>
+        <details class="bob-reader-overflow" data-bob-source-menu>
+          <summary class="bob-tool-button secondary">Source</summary>
+          <div class="bob-overflow-menu">
+            <a class="bob-tool-button secondary" data-bob-download-pdf href="/book-of-black/source/Book_of_Black_V6HHT.pdf" download>Download PDF</a>
+            <a class="bob-tool-button secondary" data-bob-open-original href="/book-of-black/source/Book_of_Black_V6HHT.pdf" target="_blank" rel="noopener noreferrer">Open original</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="bob-reader-grid" data-bob-reader-grid>
+        <section class="bob-pdf-canvas-frame" aria-label="Manuscript page viewport" data-bob-document-stage>
+          <div class="bob-page-loading" data-bob-page-status>Loading manuscript page...</div>
+          <div class="bob-canvas-stage" data-bob-canvas-stage>
+            <canvas class="bob-page-canvas" data-bob-page-canvas></canvas>
+          </div>
+        </section>
+        <aside class="bob-ocr-panel" aria-label="Extracted OCR text panel" data-bob-ocr-panel>
+          <div class="bob-side-section">
+            <p class="bob-eyebrow">Extracted OCR — not verified transcription</p>
+            <p class="bob-reader-note">This panel shows extracted page text only. It is synchronized to the current manuscript page and does not contain interpretation.</p>
+            <div class="bob-button-row compact">
+              <button class="bob-tool-button" type="button" data-bob-copy-ocr>Copy text</button>
+              <a class="bob-tool-button secondary" data-bob-report-link href="/contact">Report OCR issue</a>
+            </div>
+            <pre class="bob-ocr-text" data-bob-ocr-text></pre>
+          </div>
+          <div class="bob-side-section">
+            <p class="bob-eyebrow">Search Within Manuscript</p>
+            <form class="bob-mini-search" data-bob-reader-search>
+              <input type="search" name="q" placeholder="Exact phrase, page, date, or term">
+              <button type="submit">Search</button>
+            </form>
+            <div class="bob-mini-results" data-bob-reader-results></div>
+            <div class="bob-result-nav">
+              <button type="button" data-bob-prev-result>Previous result</button>
+              <button type="button" data-bob-next-result>Next result</button>
+            </div>
+          </div>
+          <div class="bob-side-section">
+            <p class="bob-eyebrow">Current status</p>
+            <ul class="bob-status-list">
+              <li><strong>Page image:</strong> immutable PDF source.</li>
+              <li><strong>OCR extraction:</strong> machine/layout text layer.</li>
+              <li><strong>Editorial annotation:</strong> none on raw page.</li>
+              <li><strong>Verified archive connection:</strong> none unless ledgered.</li>
+              <li><strong>Hypothesis status:</strong> not yet tested unless ledgered.</li>
+            </ul>
+          </div>
+        </aside>
+        <aside class="bob-meta-drawer" aria-label="Document information" data-bob-meta-drawer hidden>
+          <div class="bob-drawer-head">
+            <div>
+              <p class="bob-eyebrow">Document info</p>
+              <h2>Source metadata</h2>
+            </div>
+            <button class="bob-tool-button" type="button" data-bob-close-meta>Close</button>
+          </div>
+          <dl class="bob-kv" data-bob-artifact-metadata></dl>
+          <p class="bob-reader-note">Metadata describes the immutable source artifact. Local filesystem paths are intentionally omitted from public metadata.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bob-footer">
+    <div class="bob-shell">
+      <nav aria-label="Book of Black footer">
+        <a href="/book-of-black">Overview</a>
+        <a href="/book-of-black/search">Search</a>
+        <a href="/book-of-black/ledger">Ledger</a>
+        <a href="/book-of-black/methodology">Methodology</a>
+      </nav>
+      <p>The source is preserved as an immutable artifact. The reader does not silently correct or rewrite original text.</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
+  <script data-cfasync="false" src="/book-of-black/book-of-black.js?v=GAH-BOB-ROCKET-004"></script>
+</body>
+</html>

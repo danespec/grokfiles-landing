@@ -1,0 +1,93 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 231,
+  "page_id": "page_231",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_231.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_231.ocr.txt",
+  "image_metadata": {
+    "bytes": 63205,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "456b7032da77cefdecaa4303e07c099fb571385b1012988e966fa1db2178dfa5"
+  },
+  "ocr_text": "MS — \\\nVWASTARET .\nwh eer SekE\n\\ LAS\ni)\nMeyy WO\nES a Woe\nAY\nPyoe thee?\ncen YK.\nHOUSE_OVERSIGHT_000231\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a handwritten birthday note addressed to 'JEFFREY' with a message of good wishes and a postscript.",
+    "Layout: handwritten note centered on the page"
+  ],
+  "observations": [
+    "Page contains a handwritten birthday note addressed to 'JEFFREY' with a message of good wishes and a postscript.",
+    "Layout: handwritten note centered on the page"
+  ],
+  "dates": [],
+  "document_strings": [
+    "JEFFREY ....",
+    "HAPPY BIRTHDAY!",
+    "JIMMY",
+    "P/S - FROM A \"SIX\" TO ANOTHER \"SIX\",....",
+    "GOOD HEALTH & GOOD LUCK!",
+    "HOUSE_OVERSIGHT_000231"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center of page",
+      "text_as_seen": "JEFFREY .... HAPPY BIRTHDAY! JIMMY P/S - FROM A \"SIX\" TO ANOTHER \"SIX\",.... GOOD HEALTH & GOOD LUCK!",
+      "confidence": "high",
+      "note": "Handwritten note with no additional marks or symbols."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:07.029Z",
+    "response_id": "resp_0278684f40d6d27e006a503117d8c48190aa3a13ef8f6672e4",
+    "raw_output_sha256": "7a81190004730a78ed101c40a19c263478bcfb3fb0673de52b43207ab04c5dad"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0278684f40d6d27e006a503117d8c48190aa3a13ef8f6672e4",
+    "enriched_at": "2026-07-09T23:39:07.029Z"
+  },
+  "visual_summary": "Page contains a handwritten birthday note addressed to 'JEFFREY' with a message of good wishes and a postscript.",
+  "layout": [
+    "handwritten note centered on the page"
+  ],
+  "handwriting": [
+    {
+      "location": "center of page",
+      "text_as_seen": "JEFFREY .... HAPPY BIRTHDAY! JIMMY P/S - FROM A \"SIX\" TO ANOTHER \"SIX\",.... GOOD HEALTH & GOOD LUCK!",
+      "confidence": "high",
+      "note": "Handwritten note with no additional marks or symbols."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

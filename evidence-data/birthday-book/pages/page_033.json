@@ -1,0 +1,98 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 33,
+  "page_id": "page_033",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_033.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_033.ocr.txt",
+  "image_metadata": {
+    "bytes": 8342670,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "f773cb8c61ad58175a77f117f85bbf7a88e37928735d1b4ffab7214b365ab735"
+  },
+  "ocr_text": "° MAY « 64 , =\n: ar Se |\n{ hy TS - > ok * a * |\nee nl ag . v A ¥\nMe a i of of ki\nne % # ~~ aew at ; : i\n7 ‘- aie\nital m < “ We X~ ae. key |\n7 < «\n2) oii ’ |\n) “s Y i |\neee —_ a\na\nHOUSE_OVERSIGHT_000033\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographs. The top photo shows three males standing outside in front of a stone or brick wall and greenery. The bottom photo shows one child indoors, standing on a chair, holding an accordion and a small stringed instrument, in a room with patterned curtains, a radio, and other furniture.",
+    "Layout: top photo",
+    "Layout: bottom photo",
+    "Photo/image candidate at top photo: Three males standing outside with greenery and a stone or brick wall in the background.",
+    "Photo/image candidate at bottom photo: One child standing on a chair indoors, holding an accordion and a small stringed instrument, with patterned curtains, radio, and furniture in the background."
+  ],
+  "observations": [
+    "Page contains two photographs. The top photo shows three males standing outside in front of a stone or brick wall and greenery. The bottom photo shows one child indoors, standing on a chair, holding an accordion and a small stringed instrument, in a room with patterned curtains, a radio, and other furniture.",
+    "Layout: top photo",
+    "Layout: bottom photo",
+    "Photo/image candidate at top photo: Three males standing outside with greenery and a stone or brick wall in the background.",
+    "Photo/image candidate at bottom photo: One child standing on a chair indoors, holding an accordion and a small stringed instrument, with patterned curtains, radio, and furniture in the background."
+  ],
+  "dates": [
+    "MAY 64"
+  ],
+  "document_strings": [
+    "MAY 64",
+    "HOUSE_OVERSIGHT_000033"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:29.003Z",
+    "response_id": "resp_0443f2e9cb0e7d5d006a5029ad2d2881979fc56b3761e441c9",
+    "raw_output_sha256": "37e7ba17dc915a6aa37df0c6a5837056d1acab0e081a5ef96fb763b221199828"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0443f2e9cb0e7d5d006a5029ad2d2881979fc56b3761e441c9",
+    "enriched_at": "2026-07-09T23:07:29.003Z"
+  },
+  "visual_summary": "Page contains two photographs. The top photo shows three males standing outside in front of a stone or brick wall and greenery. The bottom photo shows one child indoors, standing on a chair, holding an accordion and a small stringed instrument, in a room with patterned curtains, a radio, and other furniture.",
+  "layout": [
+    "top photo",
+    "bottom photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Three males standing outside with greenery and a stone or brick wall in the background.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom photo",
+      "description": "One child standing on a chair indoors, holding an accordion and a small stringed instrument, with patterned curtains, radio, and furniture in the background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "MAY 64"
+  ],
+  "confidence": "high"
+}

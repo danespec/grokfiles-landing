@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "date": "2019-07-08",
+      "official": "U.S. Attorney's Office SDNY",
+      "forum": "Epstein indictment",
+      "exact_or_verified_wording": "charging document",
+      "subject": "Epstein federal charges",
+      "evidentiary_standard": "CHARGED",
+      "scope": "Epstein case",
+      "qualifiers": "not adjudicated",
+      "source": "epstein-sdny-indictment-2019-doj-dl",
+      "later_modification": "case did not reach trial"
+    },
+    {
+      "date": "2021-12-29",
+      "official": "U.S. District Court SDNY jury",
+      "forum": "Maxwell verdict",
+      "exact_or_verified_wording": "verdict form",
+      "subject": "Maxwell counts",
+      "evidentiary_standard": "CONVICTION_SUFFICIENCY_FOR_COUNTS_OF_CONVICTION",
+      "scope": "submitted counts",
+      "qualifiers": "count-specific",
+      "source": "maxwell-verdict-form-2021",
+      "later_modification": "judgment and appeal followed"
+    },
+    {
+      "date": "2026-01-30",
+      "official": "DOJ",
+      "forum": "EFTA release statement",
+      "exact_or_verified_wording": "reviewed-corpus/release language",
+      "subject": "Epstein file review",
+      "evidentiary_standard": "NO_EVIDENCE_IN_REVIEWED_CORPUS / PUBLIC_RECORD_INCOMPLETE",
+      "scope": "released/reviewed corpus",
+      "qualifiers": "not person-specific charging memo",
+      "source": "doj-efta-2026-01-30-release",
+      "later_modification": "July hearing statements"
+    },
+    {
+      "date": "2026-07-15",
+      "official": "Todd Blanche",
+      "forum": "Senate Judiciary hearing",
+      "exact_or_verified_wording": "human-certified caption layer",
+      "subject": "other men to whom Epstein trafficked young women",
+      "evidentiary_standard": "NO_EVIDENCE_IN_REVIEWED_CORPUS + SCOPE_LIMITED_NO_EVIDENCE + AMBIGUOUS_STANDARD",
+      "scope": "Kennedy question and FBI/DOJ files",
+      "qualifiers": "as of now; does not mean it did not happen",
+      "source": "HEX-003",
+      "later_modification": "future QFRs not located"
+    }
+  ]
+}
