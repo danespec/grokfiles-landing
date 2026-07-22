@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-22T00:00:00Z",
+  "channel": {
+    "title": "Grok Archive Hub",
+    "handle": "@GrokArchiveHub",
+    "youtubeUrl": "https://www.youtube.com/@GrokArchiveHub",
+    "expectedGoogleAccount": "grokcloudflare@gmail.com",
+    "officialXUrl": "",
+    "officialXStatus": "not-asserted-until-profile-is-verified"
+  },
+  "lifecycleStates": [
+    "draft",
+    "rendered",
+    "uploaded-private",
+    "uploaded-unlisted",
+    "scheduled",
+    "published",
+    "failed",
+    "archived"
+  ],
+  "schemaDocumentation": "Only entries in videos[] may generate public pages. A video becomes public only when status is published and visibility is public. Draft, private, unlisted, scheduled, failed, and archived entries are excluded from public watch-page generation, sitemap video entries, and X queue-ready records.",
+  "videos": [],
+  "sampleRecord": {
+    "sampleOnly": true,
+    "id": "sample-dormant-video",
+    "slug": "sample-dormant-video",
+    "status": "draft",
+    "title": "Sample dormant video record",
+    "description": "Non-public schema example. This is not a real published video and must not generate a watch page.",
+    "shortDescription": "Non-public schema example.",
+    "youtubeVideoId": "",
+    "youtubeUrl": "",
+    "thumbnailUrl": "",
+    "durationIso8601": "",
+    "uploadDate": "",
+    "publishDate": "",
+    "updatedDate": "",
+    "category": "Workflow",
+    "tags": [
+      "sample"
+    ],
+    "transcriptPath": "",
+    "captionsPath": "",
+    "evidenceLinks": [],
+    "archiveIds": [],
+    "batesIds": [],
+    "relatedArchiveDocuments": [],
+    "relatedInvestigation": {
+      "title": "",
+      "url": ""
+    },
+    "factualStatusLabels": [
+      "unresolved"
+    ],
+    "featured": false,
+    "visibility": "private",
+    "madeForKids": false,
+    "language": "en",
+    "recordingDate": "",
+    "scheduledPublishAt": "",
+    "xPublicationStatus": "not-queued"
+  }
+}

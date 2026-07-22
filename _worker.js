@@ -28,6 +28,7 @@ const FRONTDOOR_PATHS = new Set([
   "/investigations/trump-in-the-epstein-files/contradictions",
   "/evidence-briefs",
   "/evidence-briefs/todd-blanche-no-evidence",
+  "/videos",
   "/banking-records",
   "/document-autopsies",
   "/document-autopsies/leon-black-transcript",
@@ -499,6 +500,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/efta-compliance-tracker", "2026-07-18"],
   ["https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records", "2026-07-19"],
   ["https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence", "2026-07-20"],
+  ["https://grokarchivehub.com/videos", "2026-07-22"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files", "2026-07-16"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files/timeline", "2026-07-16"],
   ["https://grokarchivehub.com/investigations/trump-in-the-epstein-files/source-map", "2026-07-16"],
@@ -1367,7 +1369,44 @@ function serveSearchApiDocs() {
   return new Response(body, { status: 200, headers });
 }
 
-async function serveSitemapWithPublishedDispatches(request) {
+function xmlEscape(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+async function videoSitemapEntries(request, env) {
+  if (!env?.ASSETS) return [];
+  try {
+    const manifest = await assetJson(request, env, "/content/video-sitemap.json");
+    return Array.isArray(manifest.videoUrls) ? manifest.videoUrls : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function sitemapEntryXml(entry) {
+  if (Array.isArray(entry)) {
+    const [loc, lastmod] = entry;
+    return `  <url><loc>${xmlEscape(loc)}</loc><lastmod>${xmlEscape(lastmod)}</lastmod></url>`;
+  }
+  const video = entry.video || null;
+  const videoXml = video ? `
+    <video:video>
+      <video:thumbnail_loc>${xmlEscape(video.thumbnail_loc)}</video:thumbnail_loc>
+      <video:title>${xmlEscape(video.title)}</video:title>
+      <video:description>${xmlEscape(video.description)}</video:description>
+      <video:content_loc>${xmlEscape(video.content_loc)}</video:content_loc>
+      <video:player_loc>${xmlEscape(video.player_loc)}</video:player_loc>
+      <video:publication_date>${xmlEscape(video.publication_date)}</video:publication_date>
+    </video:video>` : "";
+  return `  <url><loc>${xmlEscape(entry.loc)}</loc><lastmod>${xmlEscape(entry.lastmod)}</lastmod>${videoXml}</url>`;
+}
+
+async function serveSitemapWithPublishedDispatches(request, env) {
   const entries = [
     ...CORE_SITEMAP_ENTRIES,
     ...TRUST_SITEMAP_ENTRIES,
@@ -1388,18 +1427,22 @@ async function serveSitemapWithPublishedDispatches(request) {
     [BARAK_RECEIPTS_SITEMAP_URL, BARAK_RECEIPTS_LASTMOD],
     [BARAK_ENTITIES_SITEMAP_URL, BARAK_ENTITIES_LASTMOD],
     [BARAK_TIMELINE_SITEMAP_URL, BARAK_TIMELINE_LASTMOD],
-    [BARAK_FARA_REVIEW_SITEMAP_URL, BARAK_FARA_REVIEW_LASTMOD]
+    [BARAK_FARA_REVIEW_SITEMAP_URL, BARAK_FARA_REVIEW_LASTMOD],
+    ...(await videoSitemapEntries(request, env))
   ];
   const seen = new Set();
+  const hasVideoEntries = entries.some((entry) => !Array.isArray(entry) && entry.video);
   const urlEntries = entries
-    .filter(([loc]) => {
+    .filter((entry) => {
+      const loc = Array.isArray(entry) ? entry[0] : entry.loc;
       if (seen.has(loc)) return false;
       seen.add(loc);
       return true;
     })
-    .map(([loc, lastmod]) => `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`)
+    .map(sitemapEntryXml)
     .join("\n");
-  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
+  const videoNamespace = hasVideoEntries ? ` xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"` : "";
+  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"${videoNamespace}>\n${urlEntries}\n</urlset>\n`;
   const headers = new Headers();
   headers.set("Content-Type", "application/xml; charset=utf-8");
   headers.set("Cache-Control", "no-store");
@@ -7857,7 +7900,7 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/sitemap.xml") {
-      return serveSitemapWithPublishedDispatches(request);
+      return serveSitemapWithPublishedDispatches(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js") {
@@ -8099,6 +8142,10 @@ export default {
 
     if ((request.method === "GET" || request.method === "HEAD") && FRONTDOOR_ROUTE_ASSETS.has(path)) {
       return serveFrontdoorEnhanced(request, env, FRONTDOOR_ROUTE_ASSETS.get(path));
+    }
+
+    if ((request.method === "GET" || request.method === "HEAD") && path.startsWith("/videos/")) {
+      return serveFrontdoorEnhanced(request, env, `${path}.html`);
     }
 
     if (
