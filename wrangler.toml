@@ -29,6 +29,9 @@ GA4_MP_DEBUG = "false"
 GA4_MP_REGION1 = "false"
 GA4_MEASUREMENT_ID = ""
 OFFICIAL_X_HANDLE = ""
+PHANG_DOCKET_SCHEDULER_ENABLED = "false"
+PHANG_DOCKET_DRY_RUN = "true"
+PHANG_DOCKET_SOURCE_URL = ""
 
 [[kv_namespaces]]
 id = "15e5bc2664bc4f40b94e26526febd1ff"
@@ -38,10 +41,21 @@ binding = "X_TOKEN_STORE"
 id = "89076142700a45ecab7da26362d86ee9"
 binding = "X_POST_QUEUE"
 
+[[kv_namespaces]]
+binding = "PHANG_DOCKET_STORE"
+id = "e6853890e9b9443cbf44265c24454cc2"
+preview_id = "85d7fe5cda0846d1a0e745db0d15b339"
+
 [[d1_databases]]
 database_id = "f9b07e6b-1c35-4468-9420-60b37aa3b8bf"
 binding = "MEMBERS_DB"
 database_name = "MEMBERS_DB"
+
+
+[[durable_objects.bindings]]
+name = "PRESENCE_ROOM"
+class_name = "PresenceRoom"
+script_name = "gah-presence-worker"
 
 [env.production.vars]
 AI_GLOBAL_ENABLED = "false"
@@ -70,6 +84,9 @@ GA4_MP_DEBUG = "false"
 GA4_MP_REGION1 = "false"
 GA4_MEASUREMENT_ID = ""
 OFFICIAL_X_HANDLE = ""
+PHANG_DOCKET_SCHEDULER_ENABLED = "false"
+PHANG_DOCKET_DRY_RUN = "true"
+PHANG_DOCKET_SOURCE_URL = ""
 
 [[env.production.kv_namespaces]]
 id = "15e5bc2664bc4f40b94e26526febd1ff"
@@ -79,7 +96,17 @@ binding = "X_TOKEN_STORE"
 id = "89076142700a45ecab7da26362d86ee9"
 binding = "X_POST_QUEUE"
 
+[[env.production.kv_namespaces]]
+binding = "PHANG_DOCKET_STORE"
+id = "e6853890e9b9443cbf44265c24454cc2"
+
 [[env.production.d1_databases]]
 database_id = "f9b07e6b-1c35-4468-9420-60b37aa3b8bf"
 binding = "MEMBERS_DB"
 database_name = "MEMBERS_DB"
+
+[[env.production.durable_objects.bindings]]
+name = "PRESENCE_ROOM"
+class_name = "PresenceRoom"
+script_name = "gah-presence-worker"
+

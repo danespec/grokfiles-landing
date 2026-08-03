@@ -331,11 +331,77 @@
         "maxwell_ecf_863"
       ],
       "status": "PASS"
+    },
+    {
+      "id": "ordered-row-15",
+      "published_claim": "EFTA00194840",
+      "source_ids": [
+        "phang_ecf_25"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf25-01",
+      "published_claim": "DOJ says the disputed records and supporting materials were delivered for in-camera review.",
+      "source_ids": [
+        "phang_ecf_25"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf25-02",
+      "published_claim": "ECF 25 contains no court acceptance of compliance or merits ruling.",
+      "source_ids": [
+        "phang_ecf_25"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf25-03",
+      "published_claim": "No public unredaction is established by ECF 25.",
+      "source_ids": [
+        "phang_ecf_25"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf26-01",
+      "published_claim": "Jane Doe requested limited intervention.",
+      "source_ids": [
+        "phang_ecf_26"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf26-02",
+      "published_claim": "Jane Doe requested a fourteen-day notice period before affected victim redactions are lifted.",
+      "source_ids": [
+        "phang_ecf_26",
+        "phang_ecf_26_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf26-03",
+      "published_claim": "The acquired filing set does not show that Jane Doe's requested relief was granted.",
+      "source_ids": [
+        "phang_ecf_26",
+        "phang_ecf_26_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "court-update-ecf26-04",
+      "published_claim": "ECF 26-1 is a proposed order.",
+      "source_ids": [
+        "phang_ecf_26_1"
+      ],
+      "status": "PASS"
     }
   ],
   "summary": {
-    "total_claims": 34,
-    "claims_with_primary_sources": 34,
+    "total_claims": 42,
+    "claims_with_primary_sources": 42,
     "orphan_claims": 0
   }
 }

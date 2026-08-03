@@ -1,0 +1,408 @@
+
+--- PAGE 1 ---
+1 
+UNITED STATES DISTRICT COURT
+ 
+FOR THE DISTRICT OF COLUMBIA
+ 
+KATIE PHANG, 
+Plaintiff, 
+ 
+v. 
+ 
+TODD BLANCHE, in his official capacity as 
+Acting Attorney General of the United States, 
+ 
+Defendant. 
+ 
+ 
+ 
+     Civil Action No. 26-1417 (EGS) 
+ 
+ 
+ 
+ 
+ 
+ 
+MOTION OF NON-PARTY JANE DOE FOR LEAVE TO INTERVENE
+ 
+FOR THE LIMITED PURPOSE OF PRESERVING VICTIM REDACTIONS,
+ 
+AND FOR LEAVE TO PROCEED PSEUDONYMOUSLY TO SUBMIT
+ 
+HER IDENTITY EX PARTE AND UNDER SEAL
+ 
+Pursuant to Federal Rule of Civil Procedure 24(b), non-party movant “Jane Doe” 
+(“Movant”) respectfully moves for leave to intervene in this action for the sole and limited purpose 
+of preserving the redactions of her name from two documents presently before the Court for 
+in 
+camera
+ review, and further moves for leave to proceed pseudonymously and to submit her identity, 
+together with the Bates numbers of the two documents at issue, 
+ex parte
+ and under seal if requested 
+by the Court. 
+Movant is a victim of Jeffrey Epstein. It is for that reason, and no other, that her name was 
+redacted from records released by the United States Department of Justice under the Epstein Files 
+Transparency Act (“EFTA”), Pub. L. No. 119-38. Two of the documents identified in the Court’s 
+Order (ECF 15) are emails Movant authored during the period of her victimization. Movant seeks 
+nothing from this litigation. She asks only that the Court preserve the single protection Congress 
+afforded her under EFTA § 2(c)(1)(A): that her identity as a victim not be made available to the 
+public. A proposed order is submitted herewith in accordance with Local Civil Rule 7(c). 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 1 of 11
+
+--- PAGE 2 ---
+2 
+Pursuant to Local Civil Rule 7(m), undersigned counsel conferred with counsel for 
+Defendant on July 30, 2026 regarding the relief sought herein.  
+MEMORANDUM OF POINTS AND AUTHORITIES
+ 
+PRELIMINARY STATEMENT 
+ 
+Movant is one of the many women whose lives Jeffrey Epstein damaged, and one of the 
+more than 1,200 individuals the Department of Justice identified as victims or victims’ relatives in 
+the course of administering the EFTA. She is not a party to this action, has no interest in its 
+outcome, and takes no position on the questions of statutory enforceability that divide Plaintiff and 
+the Government. Her interest is narrow and personal: two of the documents this Court has set for 
+in camera
+ review are emails she wrote, and the redactions the Court has been asked to lift are 
+redactions of her name. 
+That distinction matters. Plaintiff’s stated purpose in this litigation is to compel the 
+disclosure of names that the Department has withheld. As to most of the redactions at issue, that 
+request implicates the public’s purported substantial interest in knowing which powerful men 
+appear in Epstein’s files and how the Department of Justice treated them. As to Movant, it 
+implicates nothing of the kind. Her name reveals nothing about the conduct of the Government. It 
+reveals only that she is a victim of a sexual predator—and it exposes her, by name, to a public that 
+has already demonstrated what it will do with that information. 
+Congress anticipated precisely this situation. EFTA § 2(c)(1)(A) expressly authorizes the 
+withholding or redaction of “personally identifiable information of victims” where disclosure 
+“would constitute a clearly unwarranted invasion of personal privacy.” This Court has already 
+recognized that “redactions to protect victims’ information” are “appropriate.” Order, ECF No. 15, 
+at 2. Movant asks the Court to hold the Government to that carve-out as to her, and no further. 
+ 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 2 of 11
+
+--- PAGE 3 ---
+3 
+BACKGROUND 
+ 
+Movant was subjected to years of sexual abuse and exploitation by Jeffrey Epstein. In 
+administering the EFTA, the Department “solicited counsel for any victims of Jeffrey Epstein and 
+invited counsel to provide [the Department] with names of victims, whether previously identified 
+or not,” a process that resulted in “over 1,200 names being identified as victims or their relatives,” 
+which the Department redacted. ECF No. 19, at 6. Movant’s name was redacted through that 
+process and on that basis. 
+The Government has confirmed to this Court that the redacted sender and recipient names 
+in the emails identified in the Court’s Order “are the names of victims.” ECF No. 19, at 10. It has 
+further explained, with candor, the dynamic that gives rise to Movant’s concern: “many 
+communications written by victims, without context, can appear disturbing on their face.” 
+Id.
+ at 
+10–11. Movant wrote the two emails at issue while she was under Epstein’s control and in the 
+midst of her victimization. Divorced from that context — as they necessarily are when they surface 
+as isolated documents in a public library of millions of files — the emails appear to be something 
+they are not. They are already public. Only her name is not. 
+Since the initial EFTA releases, Movant has been sought out, contacted, and publicly 
+vilified. She has been harassed and re-traumatized by press attention and online. The consequences 
+to her mental health have been severe, and she is at present struggling to carry out the ordinary 
+activities of daily life. Counsel is prepared to submit a declaration detailing these facts under seal 
+at the Court’s direction. 
+ 
+ 
+ 
+ 
+ 
+ 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 3 of 11
+
+--- PAGE 4 ---
+4 
+ARGUMENT 
+ 
+I. Movant Should Be Granted Leave to Intervene Under Rule 24(b) for the Limited 
+Purpose of Preserving the Redaction of Her Name. 
+ 
+A.
+ 
+Permissive intervention is the accepted vehicle in this Circuit for a non-party 
+seeking relief concerning the public availability of records. 
+ 
+The D.C. Circuit has squarely held that Rule 24(b) supplies the appropriate procedural 
+mechanism for a non-party who seeks relief with respect to the confidentiality or public availability 
+of materials in a case to which it is a stranger, and that district courts enjoy broad discretion in 
+entertaining such requests. 
+EEOC v. Nat’l Children’s Ctr., Inc.
+, 146 F.3d 1042, 1045–47 (D.C. 
+Cir. 1998). The court there emphasized that Rule 24 is not to be read “in a hyper-technical way” 
+when applied to such collateral requests, and that the Rule’s requirements are applied with a 
+measure of flexibility where the intervenor does not seek to litigate the merits of the underlying 
+dispute. 
+Id.
+ at 1045–46. Movant’s request falls comfortably within that framework, and indeed 
+presents a weaker case for denial than the ordinary access dispute. The typical Rule 24(b) 
+intervenor in this posture seeks to 
+expand
+ public access over the objection of the parties. Movant 
+seeks only to preserve a redaction that the Government itself applied, that Congress expressly 
+authorized, and that this Court has already described as appropriate. She asks the Court to change 
+nothing.  She asks only that necessary redactions remain as they are. 
+Rule 24(b)(1)(B)’s common-question requirement is satisfied. The question this Court has 
+directed the parties to address—whether the redactions are authorized under EFTA § 2(c)(1)(A)—
+is the identical question Movant seeks to be heard upon. She does not raise a new claim; she offers 
+the Court the perspective of the only person whose interests the statutory provision at issue was 
+written to protect in these particular documents, and the only person whose interests no existing 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 4 of 11
+
+--- PAGE 5 ---
+5 
+party is positioned to represent. Plaintiff seeks disclosure. The Government defends its own 
+administration of the statute and its institutional prerogatives. Neither speaks for Movant. 
+B. The motion is timely.
+ 
+Timeliness under Rule 24(b)(3) is assessed in light of all the circumstances, with particular 
+attention to prejudice. Movant moves promptly upon learning that documents she authored were 
+among those the Court identified for 
+in camera
+ review and possible un-redaction. No merits 
+judgment has entered; the Court is presently evaluating the Government’s response to its order to 
+show cause. Granting the limited relief Movant seeks will not delay these proceedings, will not 
+require additional discovery, and will not enlarge the issues before the Court, which must in any 
+event resolve whether these particular redactions are statutorily authorized. Movant will accept 
+any schedule the Court sets and will not seek to be heard on any other question in this case. 
+C.
+ 
+Rule 24(c)’s pleading requirement poses no obstacle to the limited relief sought. 
+ 
+Rule 24(c) directs that a motion to intervene be accompanied by a pleading setting out the 
+claim or defense for which intervention is sought. That requirement is not applied rigidly to non-
+parties seeking limited relief collateral to the merits, precisely because such movants assert no 
+claim or defense in the ordinary sense. 
+See Nat’l Children’s Ctr.
+, 146 F.3d at 1046–47. Movant 
+asserts no claim against Plaintiff or Defendant and seeks no relief from either. This motion and the 
+accompanying memorandum state the entirety of her position, and Movant respectfully submits 
+that they satisfy the purpose of Rule 24(c)—notice to the parties of what the intervenor seeks. 
+Should the Court prefer a separate filing in pleading form, Movant will submit one promptly. 
+II. The Redactions of Movant’s Name Are Authorized by the EFTA and Should Be 
+Preserved. 
+ 
+A. EFTA § 2(c)(1)(A) expressly authorizes redaction of victim identifying 
+information.
+ 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 5 of 11
+
+--- PAGE 6 ---
+6 
+Congress did not require the disclosure of victims’ identities. Section 2(c)(1)(A) authorizes 
+the Attorney General to withhold or redact the segregable portions of records that “contain 
+personally identifiable information of victims or victims’ personal and medical files and similar 
+files the disclosure of which would constitute a clearly unwarranted invasion of personal privacy.” 
+EFTA § 2(c)(1)(A). That provision is not a loophole to be construed grudgingly. It is a deliberate 
+legislative accommodation of the interests of the people the underlying conduct harmed, enacted 
+in a statute otherwise notable for the breadth of the disclosure it commands. That said, this Court 
+has recognized that “redactions to protect victims’ information” are “appropriate.” Order, ECF No. 
+15, at 2. 
+B. Section 2(b) does not compel disclosure of a victim’s name.
+ 
+To the extent it may be suggested that EFTA § 2(b) requires a different result, it does not. 
+That provision bars withholding “on the basis of embarrassment, reputational harm, or political 
+sensitivity, including to any governmental official, public figure, or foreign dignitary.” EFTA § 
+2(b). Its object is evident from its terms and from the legislative concern that produced the statute: 
+to prevent the shielding of the powerful. It says nothing of victims, and it cannot be read to override 
+the victim-protective authorization of § 2(c)(1)(A) without rendering that provision a nullity. A 
+statute must be read so that no provision is superfluous, and a construction under which § 2(b) 
+swallows § 2(c)(1)(A) would invert the very purpose of the carve-out Congress wrote. 
+Movant does not seek redaction because disclosure would embarrass her. She seeks it 
+because disclosure would identify her, publicly and permanently, as a victim of Epstein’s sexual 
+abuse—and would deliver her name to a public that has already shown what it will do with it. 
+C.
+ 
+The privacy interest at stake substantially outweighs any public interest in the 
+name itself. 
+ 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 6 of 11
+
+--- PAGE 7 ---
+7 
+The Supreme Court has long recognized that individuals retain a substantial privacy 
+interest in personal information contained in government files, and that the countervailing interest 
+in disclosure is measured by what the information reveals about the conduct of the government—
+not by public interest in private persons. 
+U.S. Dep’t of Justice v. Reporters Comm. for Freedom of 
+the Press
+, 489 U.S. 749, 762–65, 773–75 (1989); 
+see also Nat’l Archives & Records Admin. v. 
+Favish
+, 541 U.S. 157, 165–66 (2004) (recognizing privacy interests where disclosure would 
+subject individuals to intrusion, harassment, and distress). 
+That framework resolves this dispute. The public interest the EFTA serves—understanding 
+what the Department of Justice knew, when it knew it, and how it treated Jeffrey Epstein, Ghislaine 
+Maxwell, and those connected to them—is fully served by the substance of the two emails, which 
+have already been released to the public. Movant’s name adds nothing to the public’s 
+understanding of the Government’s conduct. It illuminates only her. The asymmetry is stark: the 
+marginal informational value of the name approaches zero, while the harm to Movant from its 
+release is severe and irreversible. 
+This weighing is consistent with the treatment Congress has directed for victims of federal 
+sex offenses, who are entitled to be “treated with fairness and with respect for the victim’s dignity 
+and privacy.” 18 U.S.C. § 3771(a)(8). Movant does not contend that the Crime Victims’ Rights 
+Act supplies an independent source of authority in this civil action. She submits only that the policy 
+Congress expressed there informs the balance the Court strikes under EFTA § 2(c)(1)(A). 
+III. Movant Should Be Permitted to Proceed Pseudonymously and to Identify Herself 
+Ex Parte and Under Seal. 
+ 
+Courts in this Circuit permit a litigant to proceed under a pseudonym where the matter is 
+of a sensitive and highly personal nature, where disclosure would expose the litigant to a risk of 
+retaliatory physical or mental harm, and where the countervailing public interest in knowing the 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 7 of 11
+
+--- PAGE 8 ---
+8 
+litigant’s identity is slight. 
+See In re Sealed Case
+, 931 F.3d 92, 96–97 (D.C. Cir. 2019). Each 
+consideration points the same way here. The subject matter is Movant’s sexual victimization of 
+Epstein’s exploitation. The harm from disclosure is not hypothetical; it is the exacerbation of the 
+harm she has already suffered and continues to suffer. And the public has no interest in her name 
+that is distinct from the interest Plaintiff asserts on the merits—an interest the Court will resolve 
+on this motion. 
+The pseudonymity question is unusual here in one respect that favors Movant rather than 
+counting against her: in the ordinary case, a plaintiff seeking to proceed as Jane Doe asks to litigate 
+a claim while withholding her identity from the party she has sued. Movant sues no one. She asks 
+only that her name not become the price of being heard on whether her name should be disclosed. 
+For the same reason, Movant respectfully requests leave to submit her identity and the two Bates 
+numbers 
+ex parte
+ and under seal, for the Court’s review 
+in camera
+, without service on Plaintiff. 
+Undersigned counsel states that request with candor as to its unusual character. It is grounded not 
+in convenience but in the singular posture of this dispute: the relief Plaintiff seeks 
+is
+ the disclosure 
+of Movant’s name. To serve that name on Plaintiff in order to litigate whether it should be disclosed 
+would grant Plaintiff the entirety of the relief she seeks before the question is adjudicated, and 
+would moot the controversy in the very act of presenting it. No protective order can restore a name 
+once it has been learned. 
+The Government has advised the Court that it “can share additional details regarding 
+specific records 
+in camera
+ or with appropriate protections in place.” ECF No. 19, at 15. Movant 
+respectfully submits that the same course is warranted as to her identity, and that 
+in camera
+ 
+treatment is fully consistent with the Court’s ability to resolve the redaction question on a complete 
+record.  
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 8 of 11
+
+--- PAGE 9 ---
+9 
+IV. The Court Should Direct That Notice Be Given to Other Victims Whose Names 
+Remain Redacted Before Any Redaction Is Lifted. 
+ 
+Undersigned counsel respectfully raises one further matter, and does so as an officer of the 
+Court rather than on behalf of any person not before it. Undersigned counsel represents more than 
+two hundred survivors of Jeffrey Epstein’s sexual abuse and exploitation. Movant is one of them. 
+The others are not parties here, have not been heard, and—critically—have no way of knowing 
+whether they should be. 
+That is the difficulty. Redactions are opaque by design. Neither Movant nor undersigned 
+counsel can determine who else stands behind the redactions in the documents this Court has set 
+for 
+in camera
+ review. Movant identified her own emails only because she recognized what she 
+had written. Another victim, whose name appears in a document she did not author, has no 
+comparable means of recognition. She will learn that her name was unredacted when she reads it 
+in the press, or when a reporter appears at her door. By then the remedy she might have sought 
+will no longer exist. 
+Notice is administratively feasible, and the Department is already equipped to provide it. 
+It assembled its list of more than 1,200 victims and victims’ relatives by soliciting counsel for 
+Epstein’s victims and inviting them to identify their clients. ECF No. 19, at 6. It maintains a 
+dedicated electronic mailbox, EFTA@usdoj.gov, that is “continuously monitored by a team of 
+dedicated Department personnel” who process redaction requests. 
+Id.
+ at 12 n.8. The Department 
+therefore already possesses both the identities and the ability to provide notice. What is missing is 
+a direction that notice be given and the ability to be heard thus be afforded before a redaction is 
+removed. 
+The principle is a familiar one. Before disclosing information in which a third party holds 
+a recognized interest, agencies routinely afford that party notice and an opportunity to object, and 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 9 of 11
+
+--- PAGE 10 ---
+10 
+courts routinely require notice to affected non-parties before unsealing materials implicating their 
+privacy. The interest at stake here—the interest of a survivor of sexual exploitation in not being 
+publicly identified as such—is as substantial as any that ordinarily commands that protection. 
+Movant therefore respectfully requests that, before any redaction applied under EFTA § 
+2(c)(1)(A) is lifted in any document presently before the Court, the Court direct the Department to 
+provide notice to the affected individual, or to that individual’s counsel of record where known, 
+and to afford a reasonable period within which she may seek appropriate relief from this Court. 
+Such a period may run concurrently with the Court’s 
+in camera
+ review and need not delay these 
+proceedings. 
+Movant makes this request with humility. She does not presume to speak for women she 
+cannot name. She asks only that the Court ensure they are given the chance to speak for 
+themselves—because unlike her, they may not know that the moment to do so has arrived. 
+CONCLUSION 
+ 
+For the foregoing reasons, Movant respectfully requests that the Court enter an order: 
+1.
+ 
+Granting leave to intervene pursuant to Federal Rule of Civil Procedure 24(b) for 
+the limited purpose of preserving the redaction of Movant’s name; 
+ 
+2.
+ 
+Granting leave for Movant to proceed under the pseudonym “Jane Doe”; 
+ 
+3.
+ 
+Granting leave for Movant to submit her identity and the Bates numbers of the two 
+documents at issue 
+ex parte
+ and under seal, for the Court’s review 
+in camera
+ and 
+without service on Plaintiff; 
+ 
+4.
+ 
+Directing that the redactions of Movant’s name in those documents remain in place, 
+and that no order entered in this action require production of those documents with 
+her name unredacted;  
+ 
+5.
+ 
+Directing that, before any redaction applied under EFTA § 2(c)(1)(A) is lifted in 
+any document, the Department of Justice provide notice to the affected individual, 
+or to that individual’s counsel of record where known, and afford that individual 
+fourteen days within which to seek relief from this Court; and,  
+ 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 10 of 11
+
+--- PAGE 11 ---
+11 
+6.
+ 
+Pending resolution of this motion, directing that the redactions of Movant’s name 
+be maintained. 
+ 
+Dated: July 30, 2026 
+Respectfully submitted, 
+/s/ Brittany N. Henderson 
+Brittany N. Henderson 
+D.C. Bar No. 1044812 
+EDWARDS HENDERSON 
+425 North Andrews Avenue, Suite 2 
+Fort Lauderdale, Florida 33301 
+Counsel for Non-Party Movant Jane Doe 
+CERTIFICATE OF SERVICE
+ 
+I hereby certify that on July 30, 2026, a true and correct copy of the foregoing was filed 
+and served via the CM/ECF system, which will send notification of such filing to all counsel of 
+record. 
+/s/ Brittany N. Henderson 
+Brittany N. Henderson 
+ 
+ 
+Case 1:26-cv-01417-EGS     Document 26     Filed 07/30/26     Page 11 of 11

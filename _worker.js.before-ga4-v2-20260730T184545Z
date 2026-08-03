@@ -1789,75 +1789,6 @@ function serveSearchApiDocs() {
   return new Response(body, { status: 200, headers });
 }
 
-
-async function handlePresenceRequest(request, env) {
-  if (!env.PRESENCE_ROOM) {
-    return new Response(
-      JSON.stringify({
-        ok: false,
-        error: "presence_binding_unavailable"
-      }),
-      {
-        status: 503,
-        headers: {
-          "Content-Type": "application/json; charset=utf-8",
-          "Cache-Control": "no-store",
-          "X-GAH-Presence": "GAH-PRESENCE-001"
-        }
-      }
-    );
-  }
-
-  const upgrade = String(
-    request.headers.get("Upgrade") || ""
-  ).toLowerCase();
-
-  if (upgrade === "websocket") {
-    const origin = String(
-      request.headers.get("Origin") || ""
-    ).toLowerCase();
-
-    const allowedOrigins = new Set([
-      "https://grokarchivehub.com",
-      "https://www.grokarchivehub.com",
-      "https://wiki.grokarchivehub.com"
-    ]);
-
-    if (!allowedOrigins.has(origin)) {
-      return new Response(
-        JSON.stringify({
-          ok: false,
-          error: "invalid_presence_origin"
-        }),
-        {
-          status: 403,
-          headers: {
-            "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "no-store"
-          }
-        }
-      );
-    }
-  }
-
-  const objectId = env.PRESENCE_ROOM.idFromName(
-    "grokarchivehub-sitewide-v1"
-  );
-
-  const stub = env.PRESENCE_ROOM.get(objectId);
-  const response = await stub.fetch(request);
-
-  if (request.method === "HEAD") {
-    return new Response(null, {
-      status: response.status,
-      statusText: response.statusText,
-      headers: response.headers
-    });
-  }
-
-  return response;
-}
-
 function xmlEscape(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -2009,6 +1940,7 @@ async function serveSitemapWithPublishedDispatches(request, env) {
   const entries = [
     ...CORE_SITEMAP_ENTRIES,
     ...TRUST_SITEMAP_ENTRIES,
+    ["https://grokarchivehub.com/dispatches/epstein-death", "2026-06-25"],
     [MCC_TIMELINE_SITEMAP_URL, MCC_TIMELINE_LASTMOD],
     [JAIL_LOGS_SITEMAP_URL, JAIL_LOGS_LASTMOD],
     [EFTA_GUIDE_SITEMAP_URL, EFTA_GUIDE_LASTMOD],
@@ -2288,6 +2220,17 @@ function adsenseApproved(env = {}) {
 const GAH_GA4_MEASUREMENT_ID = "G-48G8M0230N";
 
 function googleTagEnabled(env = {}) {
+  const explicitSetting = cleanText(
+    env.GAH_GOOGLE_TAG_ENABLED || ""
+  );
+
+  if (
+    explicitSetting
+    && !truthyFlag(explicitSetting)
+  ) {
+    return false;
+  }
+
   return Boolean(
     cleanText(
       env.GA4_MEASUREMENT_ID
@@ -2358,7 +2301,6 @@ function globalStatusHtml() {
         <span class="local-time-pill"><strong data-local-greeting>Hello</strong></span>
         <span class="local-time-pill"><time data-local-datetime aria-live="off">Local time loads from your browser</time></span>
         <span class="local-time-pill"><strong>Timezone</strong> <span data-local-timezone>Browser timezone</span></span>
-        <span class="local-time-pill presence-pill" data-gah-presence data-presence-state="connecting" aria-live="polite"><span class="presence-dot" aria-hidden="true"></span><strong data-presence-count>—</strong> <span data-presence-label>connecting</span></span>
         <span class="sr-only" aria-live="polite" data-local-time-status></span>
         <noscript><span class="local-time-pill"><strong>Local time</strong> enable JavaScript to show browser-local time; no location permission is requested.</span></noscript>
       </div>
@@ -2422,8 +2364,6 @@ function addHtmlClass(body, className) {
 
 function ensureGlobalExperienceShell(body) {
   let html = body;
-  html = html.replace(/\/frontdoor\/site\.css(?:\?[^"' ]*)?/gi, "/frontdoor/site.css?v=GAH-PRESENCE-002");
-  html = html.replace(/\/frontdoor\/site\.js(?:\?[^"' ]*)?/gi, "/frontdoor/site.js?v=GAH-PRESENCE-002");
   if (!/<link\b[^>]*href=["']\/frontdoor\/site\.css/i.test(html)) {
     html = html.replace(/<\/head>/i, `  <link rel="stylesheet" href="/frontdoor/site.css">\n</head>`);
   }
@@ -10136,12 +10076,6 @@ export default {
       return canonicalRedirectResponse("/dispatches/epstein-mcc-timeline", path);
     }
 
-    if ((request.method === "GET" || request.method === "HEAD") && path === "/dispatches/epstein-death") {
-      const response = canonicalRedirectResponse("/dispatches/epstein-mcc-timeline", path, 301);
-      response.headers.set("X-GAH-Route-Repair", "GAH-ROUTE-REPAIR-001");
-      return response;
-    }
-
     if ((request.method === "GET" || request.method === "HEAD") && path === "/wiki") {
       return new Response(null, {
         status: 301,
@@ -10345,10 +10279,6 @@ export default {
       return handleBookOfBlackEntryApi(request, env, decodeURIComponent(path.slice("/api/book-of-black/entry/".length)));
     }
 
-    if ((request.method === "GET" || request.method === "HEAD") && path === "/api/presence") {
-      return handlePresenceRequest(request, env);
-    }
-
     if (path.startsWith("/api/")) {
       return proxyProofLayer(request);
     }
@@ -10393,34 +10323,6 @@ export default {
 
     if (request.method === "GET" && path === "/barak") {
       return serveBarakPortalWithReviewLinks(request);
-    }
-
-    // GAH-INDEX-ROUTE-HOTFIX-001:
-    // Bind clean index URLs to their actual static HTML assets instead of
-    // allowing them to fall through to the proof-layer homepage fallback.
-    if (request.method === "GET" || request.method === "HEAD") {
-      const indexRouteAsset = {
-        "/archive": "/archive.html",
-        "/dispatches": "/dispatches.html",
-        "/barak/receipts": "/barak/receipts.html",
-        "/barak/entities": "/barak/entities.html",
-        "/barak/timeline": "/barak/timeline.html",
-        "/barak/fara-review": "/barak/fara-review.html"
-      }[path];
-
-      if (indexRouteAsset) {
-        const response = await serveFrontdoorEnhanced(request, env, indexRouteAsset);
-        const headers = new Headers(response.headers);
-        headers.set("Cache-Control", "no-store");
-        headers.set("CDN-Cache-Control", "no-store");
-        headers.set("X-GAH-Route-Repair", "GAH-INDEX-ROUTE-HOTFIX-001");
-
-        return new Response(request.method === "HEAD" ? null : response.body, {
-          status: response.status,
-          statusText: response.statusText,
-          headers
-        });
-      }
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/news") {

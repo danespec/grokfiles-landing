@@ -49,7 +49,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/frontdoor/site.css">
+  <link rel="stylesheet" href="/frontdoor/site.css?v=GAH-SHELL-005">
 </head>
 <body>
   <header class="site-header">
@@ -75,19 +75,46 @@
     <section class="hero">
       <div class="page-shell hero-grid">
         <div>
-          <p class="kicker">Evidence newsroom · Public records · Source-first</p>
-          <h1>Original investigations, attached to receipts.</h1>
-          <p class="hero-lede">Grok Archive Hub now leads with human-readable investigations, document autopsies, timeline reconstructions, contradiction ledgers, and open questions. Search remains available, but the public front door starts with the story and ends at the source.</p>
+          <p class="kicker">Investigative newsroom · Global archive desk · Source-first</p>
+          <h1>Evidence you can read, test, and trace.</h1>
+          <p class="hero-lede">Grok Archive Hub turns public records into investigations, evidence briefs, document autopsies, timeline reconstructions, contradiction ledgers, and open questions. Every claim points back to source provenance, confidence language, and what the record still does not prove.</p>
           <div class="hero-actions">
-            <a class="button primary" href="/investigations">Read Investigations <span aria-hidden="true">→</span></a>
-            <a class="button" href="/start">Start Here</a>
-            <a class="button ghost" href="/explore">Explore the Archive</a>
+            <a class="button primary" href="/investigations">Investigate</a>
+            <a class="button" href="/search">Search Evidence</a>
+            <a class="button ghost" href="/timeline-reconstructions">Follow a Timeline</a>
           </div>
         </div>
-        <aside class="hero-note">
-          <span class="label">Archive standard</span>
-          <p>Claim -> Source -> Bias -> Silence -> Confidence. Absence is logged as silence, not converted into proof.</p>
+        <aside class="hero-visual-stage" aria-label="Animated archive visual showing documents, flight path, and timeline markers">
+          <div class="gah-insignia" aria-hidden="true">GAH</div>
+          <div class="flight-path" aria-hidden="true"></div>
+          <div class="timeline-markers" aria-hidden="true">
+            <div class="timeline-marker"><strong>EFTA00039025</strong> official-source backbone</div>
+            <div class="timeline-marker"><strong>CH0080</strong> video-file window</div>
+            <div class="timeline-marker"><strong>Open slot</strong> unresolved record gap</div>
+          </div>
+          <div class="document-film" aria-hidden="true">
+            <div class="document-frame"></div>
+            <div class="document-frame"></div>
+            <div class="document-frame"></div>
+          </div>
         </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="court-update-heading">
+      <div class="page-shell">
+        <article class="feature-panel gold">
+          <p class="eyebrow">ACTIVE COURT REVIEW</p>
+          <h2 id="court-update-heading">Court reviewing 10 disputed Epstein-file redactions</h2>
+          <p>DOJ says it delivered the records and supporting materials to the Court for private in-camera review. Court validation remains pending, and no public unredaction has occurred.</p>
+          <p>A non-party Jane Doe, described in her motion as an Epstein victim, has separately moved to intervene to protect victim redactions. The acquired filing set does not show that request was granted.</p>
+          <div class="button-row">
+            <a class="button primary" href="/investigations/efta-compliance-tracker">Follow the live EFTA tracker</a>
+            <a class="button" href="/evidence-data/efta-compliance/source/pdfs/ecf25_notice_compliance.pdf">Read ECF 25</a>
+            <a class="button" href="/evidence-data/efta-compliance/source/pdfs/ecf26_motion_intervene.pdf">Read ECF 26</a>
+          </div>
+          <p class="card-date">Primary filings verified July 31, 2026 · Phang v. Blanche, D.D.C. No. 1:26-cv-01417</p>
+        </article>
       </div>
     </section>
 
@@ -153,6 +180,24 @@
           <a class="button" href="/evidence-briefs">Evidence briefs</a>
           <a class="button" href="/timeline-reconstructions">Timeline reconstructions</a>
           <a class="button" href="/contradiction-ledger">Contradiction ledger</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section archive-activity-section">
+      <div class="page-shell split">
+        <div class="feature-panel">
+          <p class="eyebrow">Archive activity</p>
+          <h2>Recent public archive events.</h2>
+          <p>This feed is generated from checked-in public route metadata. It does not show visitors, cities, live users, or any individual analytics.</p>
+        </div>
+        <div class="feature-panel gold">
+          <div class="activity-feed" data-activity-feed>
+            <article class="activity-item">
+              <time datetime="2026-07-23">Jul 23, 2026</time>
+              <div><strong>Manifest loading</strong><span> · Repository-backed activity appears here when available.</span></div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -243,7 +288,7 @@
             <a class="route-link" href="/barak/entities"><strong>Barak Entities</strong><span>Identity-control layer for names and organizations.</span></a>
             <a class="route-link" href="/barak/timeline"><strong>Barak Timeline</strong><span>Chronology context without causation claims.</span></a>
             <a class="route-link" href="/dispatches/how-to-read-the-barak-records"><strong>How to Read the Barak Records</strong><span>Method-first public reader guide.</span></a>
-            <a class="route-link" href="/banking-records"><strong>Banking Records</strong><span>Search and contextualize more than 2,000 classified financial records by institution, account title, role, date, and archive ID.</span></a>
+            <a class="route-link" href="/banking-records"><strong>Banking Records</strong><span>Search and contextualize more than 2,000 categorized financial-record discovery entries by institution, account title, role, date, and archive ID.</span></a>
             <a class="route-link" href="/research/evidence/birthday-book"><strong>Birthday Book Evidence Reader</strong><span>Page images, source provenance, curated transcripts, and attribution-status labels.</span></a>
             <a class="route-link" href="https://grokarchivehub.com/book-of-black"><strong>Book of Black</strong><span>Adversarial manuscript access with warnings, source manifest, search, and ledger scaffolding.</span></a>
             <a class="route-link" href="/methodology"><strong>Methodology</strong><span>How to read archive records without overclaiming.</span></a>
@@ -263,7 +308,7 @@
           <p>Home stays an orientation page. These three stories are the forward path into narrative, proof, and source-review lanes.</p>
         </div>
         <div class="dispatch-grid">
-          <a class="dispatch-card" href="/dispatches/epstein-death">
+          <a class="dispatch-card" href="/dispatches/epstein-mcc-timeline">
             <span class="number">01</span>
             <h3>Epstein Death: What the Records Actually Show</h3>
             <p>A source-first reader dispatch through the timeline, receipts, confidence labels, silences, and unresolved open slots.</p>
@@ -284,7 +329,7 @@
           <a class="dispatch-card" href="/banking-records">
             <span class="number">04</span>
             <h3>Banking Records</h3>
-            <p>Search and contextualize more than 2,000 classified financial records by institution, account title, role, date, and archive ID.</p>
+            <p>Search and contextualize more than 2,000 categorized financial-record discovery entries by institution, account title, role, date, and archive ID.</p>
             <div class="card-meta"><span class="badge receipt">Financial records</span><span class="badge">Discovery lane</span></div>
             <span class="text-link">Explore Banking Records</span>
           </a>
@@ -480,6 +525,6 @@
       <p class="disclaimer">Presence-only archival research. No guilt or conduct implied unless adjudicated. A source reference may establish presence in a record while remaining silent about purpose, knowledge, relationship, or wrongdoing.</p>
     </div>
   </footer>
-  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-ROCKET-004"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-SHELL-005"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "task": "GAH-CONTENT-001",
-  "generated_utc": "2026-07-18T12:00:00Z",
-  "acquisition_note": "CourtListener RECAP storage PDFs were downloaded, hashed, and text-extracted locally. Raw PDFs and text live under evidence-data/efta-compliance/source/ and are covered by the worker's noindex/ad-exclusion evidence-data policy.",
+  "generated_utc": "2026-07-31T14:24:29Z",
+  "acquisition_note": "CourtListener RECAP storage PDFs were downloaded, hashed, and text-extracted locally. ECF 25, ECF 26, and ECF 26-1 were acquired and verified on July 31, 2026. Raw PDFs and derivative text live under evidence-data/efta-compliance/source/ and are covered by the worker's noindex/ad-exclusion evidence-data policy.",
   "documents": [
     {
       "id": "phang_ecf_15",
@@ -109,6 +109,58 @@
       "pages_extracted": 2
     },
     {
+      "id": "phang_ecf_25",
+      "case": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.)",
+      "ecf": "25",
+      "date": "2026-07-30",
+      "filed": "July 30, 2026 at 2:45 p.m.",
+      "title": "DOJ Notice of Compliance",
+      "role": "DOJ filed a Notice of Compliance stating that hard-copy materials were delivered to the Court's Chambers at 2:28 p.m. on July 30, 2026 for in-camera review; referenced in-camera materials remain unavailable.",
+      "file": "ecf25_notice_compliance.pdf",
+      "remote_url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.25.0_1.pdf",
+      "classification": "public filing",
+      "local_url": "/evidence-data/efta-compliance/source/pdfs/ecf25_notice_compliance.pdf",
+      "text_url": "/evidence-data/efta-compliance/source/text/ecf25_notice_compliance.txt",
+      "sha256": "5289716162977d113d2698ddae877b15df9ff5ca045b08f39d4f6b2f39017bd7",
+      "pages_extracted": 5,
+      "bytes": 162573,
+      "note": "Referenced in-camera materials remain unavailable."
+    },
+    {
+      "id": "phang_ecf_26",
+      "case": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.)",
+      "ecf": "26",
+      "date": "2026-07-30",
+      "filed": "July 30, 2026 at 2:46 p.m.",
+      "title": "Jane Doe Motion to Intervene",
+      "role": "Jane Doe, publicly identified only as a non-party victim of Jeffrey Epstein, moved for limited intervention and requested protections concerning victim redactions.",
+      "file": "ecf26_motion_intervene.pdf",
+      "remote_url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.26.0.pdf",
+      "classification": "party motion/request, not an order",
+      "local_url": "/evidence-data/efta-compliance/source/pdfs/ecf26_motion_intervene.pdf",
+      "text_url": "/evidence-data/efta-compliance/source/text/ecf26_motion_intervene.txt",
+      "sha256": "6cf3580fe4b57a966f29caf84c01213d639ca3980b5aa9e282012fbd766d5c95",
+      "pages_extracted": 11,
+      "bytes": 499048
+    },
+    {
+      "id": "phang_ecf_26_1",
+      "case": "Phang v. Blanche, No. 1:26-cv-01417 (D.D.C.)",
+      "ecf": "26-1",
+      "date": "2026-07-30",
+      "filed": "July 30, 2026",
+      "title": "Text of Proposed Order",
+      "role": "Jane Doe's proposed order; not entered by the Court in the acquired filing set.",
+      "file": "ecf26_attachment1_proposed_order.pdf",
+      "remote_url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.26.1.pdf",
+      "classification": "proposed order only; not entered by the Court",
+      "local_url": "/evidence-data/efta-compliance/source/pdfs/ecf26_attachment1_proposed_order.pdf",
+      "text_url": "/evidence-data/efta-compliance/source/text/ecf26_attachment1_proposed_order.txt",
+      "sha256": "787d53e0e56fa1f25cc534fd78f7ccc1624ea1d3e378e6519d5d4a41c906ea5d",
+      "pages_extracted": 2,
+      "bytes": 284150
+    },
+    {
       "id": "maxwell_ecf_863",
       "case": "United States v. Maxwell, No. 1:20-cr-00330 (S.D.N.Y.)",
       "ecf": "863",
@@ -131,6 +183,10 @@
     "A Federal Register itemized EFTA section 2(c)(2) redaction log was not acquired or verified.",
     "A foreign-language review-and-production notice was not acquired or verified.",
     "Maxwell's 2255 motion and exhibit set were not acquired; the Maxwell matrix uses only DOJ's ECF 863 characterizations.",
-    "No later Phang/DOJ compliance ruling or DOJ reply filing was acquired before this July 18, 2026 publication run; ECF 21 is non-party material."
+    "Submitted in-camera evidence and supporting materials referenced by ECF 25 were not publicly acquired.",
+    "Supporting declarations and record-specific redaction explanations underlying DOJ's in-camera submission were not publicly acquired.",
+    "No court compliance, redaction-validation, merits, changed-redaction, or unsealing ruling is shown by the acquired July 30 filing set.",
+    "No intervention ruling or adoption or rejection of Jane Doe's fourteen-day proposal is shown by the acquired filing set.",
+    "No stay, appeal, or public Bates-level redaction log beyond the acquired filings was acquired or verified."
   ]
 }

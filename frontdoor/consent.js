@@ -70,6 +70,14 @@
 
   function loadGoogleTagIfAllowed(consent) {
     var boot = window.GAH_CONSENT_BOOT || {};
+    var hostname = String(
+      window.location.hostname || ""
+    ).toLowerCase();
+    var productionHost =
+      hostname === "grokarchivehub.com"
+      || hostname.endsWith(".grokarchivehub.com");
+
+    if (!productionHost) return;
     if (!boot.googleTagEnabled || !boot.ga4MeasurementId) return;
     if (!consent || consent.analytics_storage !== "granted") return;
     if (document.querySelector("script[data-gah-google-tag]")) return;

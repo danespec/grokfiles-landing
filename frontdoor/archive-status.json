@@ -1,0 +1,199 @@
+{
+  "schema": "gah_experience_manifest_v1",
+  "generatedAt": "2026-07-25T20:05:48.404Z",
+  "generatedFrom": [
+    "public HTML route files",
+    "evidence-data/**/* repository files",
+    "evidence-data/birthday-book/manifest.json",
+    "evidence-data/book-of-black/source-manifest.json"
+  ],
+  "archiveStatus": "active",
+  "lastEvidenceUpdate": "2026-07-23",
+  "counts": {
+    "publicRoutes": 96,
+    "investigations": 15,
+    "evidenceBriefs": 1,
+    "documentAutopsies": 2,
+    "timelines": 5,
+    "corrections": 2,
+    "publicEftaDossiers": 5,
+    "evidenceDataFiles": 3628,
+    "evidencePdfs": 91,
+    "birthdayBookPages": 238,
+    "bookOfBlackPages": 1639
+  },
+  "notes": [
+    "Counts are repository-derived and exact for the checked-in source tree.",
+    "No visitor, live-user, city, or country-level analytics are exposed by this manifest."
+  ],
+  "activity": [
+    {
+      "date": "2026-07-23",
+      "event": "Correction published",
+      "route": "/corrections/flight-log-count-and-aircraft-reconciliation",
+      "title": "Flight Log Count and Aircraft Reconciliation",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Investigation updated",
+      "route": "/investigations/trump-in-the-epstein-files",
+      "title": "Trump-Epstein Source Review Status",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Investigation updated",
+      "route": "/investigations/trump-in-the-epstein-files/contradictions",
+      "title": "Trump-Epstein Contradiction Review Status",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Investigation updated",
+      "route": "/investigations/trump-in-the-epstein-files/locations",
+      "title": "Trump-Epstein Location Review Status",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Investigation updated",
+      "route": "/investigations/trump-in-the-epstein-files/people-and-roles",
+      "title": "Trump-Epstein People and Roles Review Status",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Investigation updated",
+      "route": "/investigations/trump-in-the-epstein-files/source-map",
+      "title": "Trump-Epstein Source Map Review Status",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Timeline revised",
+      "route": "/investigations/trump-in-the-epstein-files/timeline",
+      "title": "Trump-Epstein Timeline Review Status",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-20",
+      "event": "Archive page updated",
+      "route": "/",
+      "title": "Evidence you can read, test, and trace.",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-20",
+      "event": "Evidence brief updated",
+      "route": "/evidence-briefs/todd-blanche-no-evidence",
+      "title": "What Todd Blanche Actually Said About Epstein Evidence-and What the Public Record Shows",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-19",
+      "event": "Document autopsy updated",
+      "route": "/document-autopsies/doug-band-transcript",
+      "title": "Doug Band's Epstein Testimony: What the Transcript Establishes-and What It Does Not",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-19",
+      "event": "Document autopsy updated",
+      "route": "/document-autopsies/leon-black-transcript",
+      "title": "Leon Black Transcript Autopsy",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-19",
+      "event": "Investigation updated",
+      "route": "/investigations/new-mexico-doj-epstein-records",
+      "title": "The New Mexico-DOJ Epstein Records Standoff",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-18",
+      "event": "Investigation updated",
+      "route": "/investigations/efta-compliance-tracker",
+      "title": "EFTA Compliance Tracker",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Document indexed",
+      "route": "/archive/EFTA00035147",
+      "title": "EFTA00035147 page 15 / footer EFTA00035161",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Document indexed",
+      "route": "/archive/EFTA00039025",
+      "title": "EFTA00039025 - DOJ OIG Report 23-085",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Document indexed",
+      "route": "/archive/EFTA00039356",
+      "title": "EFTA00039356 - OCME autopsy report listing pointer",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Document indexed",
+      "route": "/archive/EFTA00039416",
+      "title": "EFTA00039416 - CH0080 file windows are not video continuity",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Document indexed",
+      "route": "/archive/EFTA00039660",
+      "title": "EFTA00039660/661 - late-July psych-observation source line",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-12",
+      "event": "Archive page updated",
+      "route": "/contradiction-ledger",
+      "title": "Contradiction Ledger",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-12",
+      "event": "Archive page updated",
+      "route": "/document-autopsies",
+      "title": "Document Autopsies",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-12",
+      "event": "Archive page updated",
+      "route": "/evidence-briefs",
+      "title": "Evidence Briefs",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-12",
+      "event": "Archive page updated",
+      "route": "/investigations",
+      "title": "Original investigations, attached to receipts.",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-12",
+      "event": "Investigation updated",
+      "route": "/investigations/august-8-attorney-log-colon-miro",
+      "title": "The August 8 Attorney-Log Row Is a Candidate Match, Not a Verdict",
+      "source": "public HTML metadata"
+    },
+    {
+      "date": "2026-07-12",
+      "event": "Investigation updated",
+      "route": "/investigations/autopsy-exhibit-list-limits",
+      "title": "The Autopsy Exhibit-List Pointer Has a Narrow Job",
+      "source": "public HTML metadata"
+    }
+  ]
+}
