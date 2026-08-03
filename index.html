@@ -50,6 +50,8 @@
   }
   </script>
   <link rel="stylesheet" href="/frontdoor/site.css?v=GAH-SHELL-005">
+  <link rel="stylesheet"
+    href="/frontdoor/homepage-hero.css?v=GAH-HOMEPAGE-HERO-001">
 </head>
 <body>
   <header class="site-header">
@@ -72,30 +74,130 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="page-shell hero-grid">
-        <div>
-          <p class="kicker">Investigative newsroom · Global archive desk · Source-first</p>
-          <h1>Evidence you can read, test, and trace.</h1>
-          <p class="hero-lede">Grok Archive Hub turns public records into investigations, evidence briefs, document autopsies, timeline reconstructions, contradiction ledgers, and open questions. Every claim points back to source provenance, confidence language, and what the record still does not prove.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="/investigations">Investigate</a>
-            <a class="button" href="/search">Search Evidence</a>
-            <a class="button ghost" href="/timeline-reconstructions">Follow a Timeline</a>
+    <section class="homepage-hero-v2"
+      data-homepage-hero="GAH-HOMEPAGE-HERO-001">
+      <div class="page-shell homepage-hero-v2-grid">
+        <div class="homepage-hero-v2-copy">
+          <p class="kicker">Receipts first. Theory last.</p>
+
+          <h1>The public record, reconstructed.</h1>
+
+          <p class="homepage-hero-v2-lede">
+            Grok Archive Hub connects primary records, timelines,
+            contradictions, and unresolved gaps without asking readers
+            to accept a predetermined conclusion.
+          </p>
+
+          <div class="homepage-hero-v2-actions">
+            <a class="button primary" href="/start">
+              Start with the investigation
+            </a>
+            <a class="button" href="/search">
+              Search the evidence
+            </a>
+            <a class="button ghost" href="/explore">
+              Explore the archive
+            </a>
+          </div>
+
+          <div class="homepage-proof-strip"
+            aria-label="Archive scope">
+            <div>
+              <strong>3,628</strong>
+              <span>evidence files</span>
+            </div>
+            <div>
+              <strong>15</strong>
+              <span>investigations</span>
+            </div>
+            <div>
+              <strong>Open</strong>
+              <span>corrections record</span>
+            </div>
           </div>
         </div>
-        <aside class="hero-visual-stage" aria-label="Animated archive visual showing documents, flight path, and timeline markers">
-          <div class="gah-insignia" aria-hidden="true">GAH</div>
-          <div class="flight-path" aria-hidden="true"></div>
-          <div class="timeline-markers" aria-hidden="true">
-            <div class="timeline-marker"><strong>EFTA00039025</strong> official-source backbone</div>
-            <div class="timeline-marker"><strong>CH0080</strong> video-file window</div>
-            <div class="timeline-marker"><strong>Open slot</strong> unresolved record gap</div>
+
+        <aside class="homepage-evidence-stage"
+          aria-label="Layered public-record evidence dossier">
+          <div class="evidence-stage-grid" aria-hidden="true"></div>
+          <div class="evidence-stage-glow" aria-hidden="true"></div>
+
+          <article class="record-sheet record-sheet-back"
+            aria-hidden="true">
+            <div class="record-sheet-top">
+              <span>DOJ OIG</span>
+              <strong>EFTA00039025</strong>
+            </div>
+            <div class="record-rule"></div>
+            <div class="record-line long"></div>
+            <div class="record-line medium"></div>
+            <div class="record-redaction"></div>
+            <div class="record-line short"></div>
+          </article>
+
+          <article class="record-sheet record-sheet-main">
+            <div class="record-sheet-top">
+              <span>PUBLIC RECORD</span>
+              <strong>GAH / RECEIPT 001</strong>
+            </div>
+
+            <p class="record-stamp">SOURCE VERIFIED</p>
+
+            <h2>Every conclusion should survive the source.</h2>
+
+            <div class="record-metadata">
+              <span>Record</span>
+              <span>Receipt</span>
+              <span>Timeline</span>
+              <span>Limits</span>
+            </div>
+
+            <div class="record-lines" aria-hidden="true">
+              <div class="record-line long"></div>
+              <div class="record-line medium"></div>
+              <div class="record-redaction compact"></div>
+              <div class="record-line long"></div>
+              <div class="record-line short"></div>
+            </div>
+
+            <div class="record-verdict">
+              <span>STATUS</span>
+              <strong>Evidence available for inspection</strong>
+            </div>
+          </article>
+
+          <article class="record-sheet record-sheet-side"
+            aria-hidden="true">
+            <div class="record-sheet-top">
+              <span>VIDEO WINDOW</span>
+              <strong>CH0080</strong>
+            </div>
+            <div class="video-window">
+              <span>08/09</span>
+              <span>08/10</span>
+            </div>
+            <div class="record-line medium"></div>
+            <div class="record-line short"></div>
+          </article>
+
+          <div class="evidence-timeline-card">
+            <span class="timeline-card-label">
+              RECONSTRUCTED SEQUENCE
+            </span>
+            <div class="timeline-card-track">
+              <i></i><i></i><i></i><i class="open"></i>
+            </div>
+            <div class="timeline-card-dates">
+              <span>Notice</span>
+              <span>Custody</span>
+              <span>Record</span>
+              <span>Gap</span>
+            </div>
           </div>
-          <div class="document-film" aria-hidden="true">
-            <div class="document-frame"></div>
-            <div class="document-frame"></div>
-            <div class="document-frame"></div>
+
+          <div class="open-receipt-card">
+            <span>OPEN RECEIPT SLOT</span>
+            <strong>Unresolved records remain visible.</strong>
           </div>
         </aside>
       </div>

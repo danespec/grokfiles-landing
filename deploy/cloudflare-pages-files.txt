@@ -178,6 +178,7 @@ explore.html
 faq.html
 frontdoor/archive-status.json
 frontdoor/consent.js
+frontdoor/homepage-hero.css
 frontdoor/native-evidence.css
 frontdoor/site.css
 frontdoor/site.js
