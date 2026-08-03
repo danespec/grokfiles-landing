@@ -1447,6 +1447,50 @@ async function proxyProofLayer(request, env = {}) {
     headers.set("X-Robots-Tag", "noindex,follow");
   }
   let body = enhanceHtmlText(await upstream.text(), request, meta, env);
+
+  if (proxiedPath === "/research/evidence/mcc-epstein-control-spine") {
+    // The upstream MCC brief defines a dark document palette. The apex global
+    // stylesheet is intentionally loaded after that upstream style block and
+    // can override inherited text colors. Restore the upstream contrast only
+    // inside this route's wrapped main content.
+    if (!body.includes("data-gah-mcc-control-spine-repair")) {
+      const repairStyle = `
+  <style data-gah-mcc-control-spine-repair>
+    .global-main-shell {
+      color: #e8eef7;
+    }
+
+    .global-main-shell .summary,
+    .global-main-shell .card {
+      color: #e8eef7;
+      background: #0f172a;
+    }
+
+    .global-main-shell .summary a,
+    .global-main-shell .card a {
+      color: #93c5fd;
+    }
+  </style>`;
+
+      body = /<\/head>/i.test(body)
+        ? body.replace(/<\/head>/i, `${repairStyle}\n</head>`)
+        : `${repairStyle}\n${body}`;
+    }
+
+    // The upstream document already supplies its real H1. Remove only the
+    // generic wrapper heading so screen readers and structural parsers see
+    // one page heading.
+    body = body.replace(
+      /\s*<h1 class="sr-only">Grok Archive Hub public page<\/h1>/i,
+      ""
+    );
+
+    headers.set(
+      "X-GAH-MCC-Contrast-Repair",
+      "GAH-MCC-CONTRAST-001"
+    );
+  }
+
   if (proxiedPath === "/pdf-lite" || proxiedPath === "/pdf-lite.html") {
     body = addRocketLoaderBypassToScriptTags(body);
     headers.set("X-GAH-Rocket-Loader-Bypass", "pdf-lite-script-tags");
@@ -1589,12 +1633,10 @@ async function serveEpsteinEvidenceWithReaderReturn(request) {
         ? body.replace(/(<body[^>]*>)/i, `$1\n${returnBlock}`)
         : `${returnBlock}\n${body}`;
   }
-  body = enhanceHtmlText(body, request, {
-    title: "Epstein Death Evidence Lanes | Grok Archive Hub",
-    description: "Proof-layer evidence lanes for the Epstein final-48-hours research page, with source links, limits, and return path.",
-    canonical: "https://grokarchivehub.com/research/evidence/epstein-death",
-    ogType: "article"
-  });
+  // proxyProofLayer() already applied the global HTML enhancement pass.
+  // Running enhanceHtmlText() again duplicated the global status and local-time
+  // components on this route. Preserve the enhanced upstream document and add
+  // only the reader-return block above.
 
   const headers = new Headers(upstream.headers);
   headers.set("Content-Type", "text/html; charset=utf-8");
