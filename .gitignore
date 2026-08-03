@@ -46,3 +46,28 @@ token.json
 **/.config/gah-youtube/
 *.p12
 .dev.vars
+
+# BEGIN GAH CANONICAL HYGIENE
+.DS_Store
+.AppleDouble
+.env
+.env.*
+!.env.example
+.wrangler/
+node_modules/
+artifacts/
+coverage/
+dist/
+tmp/
+temp/
+*.bak
+*.backup
+*.orig
+*.rej
+*.tmp
+*.swp
+*.swo
+*~
+_worker.js.before-*
+_worker.js.pre-*
+# END GAH CANONICAL HYGIENE
