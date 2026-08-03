@@ -187,6 +187,7 @@ investigations.html
 investigations/efta-compliance-tracker.html
 investigations/new-mexico-doj-epstein-records.html
 methodology.html
+methodology/how-not-to-overread-flight-logs.html
 open-questions.html
 privacy.html
 redacted-files.html
