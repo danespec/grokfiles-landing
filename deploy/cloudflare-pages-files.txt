@@ -178,6 +178,7 @@ explore.html
 faq.html
 frontdoor/archive-status.json
 frontdoor/consent.js
+frontdoor/native-evidence.css
 frontdoor/site.css
 frontdoor/site.js
 frozen-assets/hashes.json
@@ -194,6 +195,8 @@ redacted-files.html
 research-heroes/v1/epstein-final-48-hours-mcc-cc0-1400.jpg
 research-heroes/v1/epstein-final-mugshot-doj.jpg
 research/epstein-final-48-hours-mcc.html
+research/evidence/epstein-death.html
+research/evidence/mcc-epstein-control-spine.html
 search.html
 source-renders/EFTA00035147-page15-footer-EFTA00035161.png
 source-renders/EFTA00039356-exhibit-list.png

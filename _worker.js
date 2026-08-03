@@ -730,6 +730,8 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/evidence-briefs/todd-blanche-no-evidence", "/evidence-briefs/todd-blanche-no-evidence.html"],
   ["/document-autopsies/leon-black-transcript", "/document-autopsies/leon-black-transcript.html"],
   ["/document-autopsies/doug-band-transcript", "/document-autopsies/doug-band-transcript.html"]
+  ["/research/evidence/epstein-death", "/research/evidence/epstein-death.html"],
+  ["/research/evidence/mcc-epstein-control-spine", "/research/evidence/mcc-epstein-control-spine.html"],
 ]);
 const EFTA_DOSSIER_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/archive/EFTA00035147", "2026-07-13"],
