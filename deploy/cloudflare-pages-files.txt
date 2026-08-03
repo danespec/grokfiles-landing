@@ -196,6 +196,7 @@ research-heroes/v1/epstein-final-mugshot-doj.jpg
 research/epstein-final-48-hours-mcc.html
 search.html
 source-renders/EFTA00035147-page15-footer-EFTA00035161.png
+source-renders/EFTA00039356-exhibit-list.png
 source-renders/EFTA00039416-page2.png
 source-renders/EFTA00039660-page459.png
 start.html
