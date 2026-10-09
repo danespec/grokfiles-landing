@@ -4,10 +4,33 @@ Pure functions only: ID normalization and missing-record response construction.
 The production Worker (TypeScript/JS) must implement identical semantics;
 these tests pin the expected behavior.
 """
+import os
 import re
 
 EFTA_CANONICAL = re.compile(r"^EFTA\d{8}$")
 BARAK_CANONICAL = re.compile(r"^BARAK-\d{3}-\d{3}$")
+
+
+def repo_root(start=None):
+    """Locate the GAH repo root from any checkout path.
+
+    Walks up from the calling file until a directory containing the
+    snapshot markers (_worker.js + docs/phase0) is found. Works on a
+    fresh checkout at any path — no $HOME or machine-specific
+    assumptions.
+    """
+    cur = os.path.abspath(start or __file__)
+    if os.path.isfile(cur):
+        cur = os.path.dirname(cur)
+    while True:
+        if os.path.isfile(os.path.join(cur, "_worker.js")) and os.path.isdir(
+            os.path.join(cur, "docs", "phase0")
+        ):
+            return cur
+        parent = os.path.dirname(cur)
+        if parent == cur:
+            raise RuntimeError("GAH repo root not found (missing _worker.js + docs/phase0)")
+        cur = parent
 
 
 def normalize_efta(raw):

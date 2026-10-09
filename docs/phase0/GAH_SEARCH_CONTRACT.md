@@ -147,7 +147,7 @@ came from each — never a bare total.
 
 | Count key | Value (snapshot) | Exact meaning | Status |
 |---|---|---|---|
-| `curated_files` | 3,628 | Files checked in under `evidence-data/**` in the repo snapshot (repository-derived; `frontdoor/archive-status.json` → `generatedFrom`) | Verified in repo. **This is the one public archive-file count.** |
+| `curated_files` | 3,628 | Files under `evidence-data/**` in the production source tree, per `frontdoor/archive-status.json` (`evidenceDataFiles`) | **Operator-attested, NOT snapshot-verified.** Fresh verification 2026-10-09: this snapshot holds 546 files under `evidence-data/`; the 3,628 figure predates the ~1.4GB binary exclusion and `archive-status.json` was not regenerated after sanitization. Re-derivation from the production tree required (ChatGPT). **This is the one public archive-file count** — but the manifest must carry `verification: operator_records` + reconciliation note until re-derived. |
 | `indexed_research_records` | ~1.38M (operator corpus) | Rows in the operator's offline DOJ OCR/index corpus. These are index rows, not individually downloadable files, not individually verified | NOT verifiable in repo. Label must always say "indexed research records", never "files" or "documents available". Requires live verification |
 | `searchable_documents` | 670,469 (unattributed) | Unknown — figure appears in planning material with no in-repo source | **Blocked.** Confirm provenance or remove from all public surfaces |
 | `visual_evidence_items` | 76,060 | `served_items` in `visual-evidence-index/manifest.json` (generated 2026-10-07) | Verified in repo. Replaces the 76,948 figure |

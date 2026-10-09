@@ -9,7 +9,8 @@ Verifies:
   - no duplicate archive ids
 """
 import sys, os, json, re
-REPO = os.path.expanduser("~/workspace/gah-repo")
+from gah_search import repo_root
+REPO = repo_root()
 failures = []
 def check(name, cond, detail=""):
     if not cond:
