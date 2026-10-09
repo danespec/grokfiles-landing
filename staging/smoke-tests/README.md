@@ -29,12 +29,14 @@ POSTs are to the read-only `/api/search` endpoint.
 ## auth.sh — authentication (separate, disposable fixtures)
 
 ```bash
-STAGING_ADMIN_TOKEN=<disposable-token> bash staging/smoke-tests/auth.sh https://<staging-url>
+STAGING_HOSTS=<staging-host> STAGING_ADMIN_TOKEN=<disposable-token> \
+  bash staging/smoke-tests/auth.sh https://<staging-url>
 ```
 
 Exercises the admin-login throttle (3 bad attempts → 401 each, then one good
-attempt → success). Uses a disposable staging-only token; refuses to run
-against anything that looks like production. Rotate the token after the run.
+attempt → success). Uses a disposable staging-only token. `STAGING_HOSTS`
+is an exact hostname allowlist — the target must match exactly or the
+script refuses. Rotate the token after the run.
 
 ## bindings.sh — Durable Object binding states
 
@@ -53,8 +55,8 @@ guided procedures (change the binding, re-run, observe).
 - Check 10 proves the live PayPal webhook is unconfigured in staging.
 - Check 9 proves live checkout is not available.
 - Staging must use its own secrets (see `staging/bindings.md`); production
-  `X_ADMIN_TOKEN`, PayPal live credentials, and `WIKI_INTERNAL_PROXY_HEADER`
-  values are never copied to staging.
+  `X_ADMIN_TOKEN` and PayPal live credentials are never copied to staging.
+  (`WIKI_INTERNAL_PROXY_HEADER` is a fixed Worker constant, not a secret.)
 
 ## Not covered here (covered elsewhere)
 

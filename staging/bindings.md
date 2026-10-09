@@ -42,10 +42,12 @@ include a binding-absent expectation (search still returns 200).
 No new secrets are required for the Phase 0 integration. The existing
 staging env vars carry over unchanged. In particular:
 
-- Do NOT copy production `X_ADMIN_TOKEN`, PayPal live credentials, or
-  `WIKI_INTERNAL_PROXY_HEADER` values into staging. Staging needs its own
-  values (or leave PayPal live vars unset — the smoke test verifies the
-  disabled-checkout state).
+- Do NOT copy production `X_ADMIN_TOKEN` or PayPal live credentials into
+  staging. Staging needs its own values (or leave PayPal live vars unset —
+  the smoke test verifies the disabled-checkout state).
+- `WIKI_INTERNAL_PROXY_HEADER` is a FIXED Worker constant
+  (`X-GAH-Internal-Wiki-Proxy`), not a secret — it needs no staging value.
+  Do not invent a per-environment variant.
 - `PAYPAL_LIVE_CLIENT_ID` / `PAYPAL_LIVE_CLIENT_SECRET` / `PAYPAL_LIVE_WEBHOOK_ID`
   must be **absent** in staging: `/api/commerce/paypal/live/launch-status`
   must report live checkout not configured.

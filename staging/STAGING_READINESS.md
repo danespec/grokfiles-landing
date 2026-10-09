@@ -32,7 +32,7 @@ Prepared: 2026-10-09. **Not deployed. No staging environment authorized.**
 
 ## Verified (tests, this branch)
 
-`bash tests/run_phase0_regression.sh` → **7/7 suites, 108 checks pass**:
+`bash tests/run_phase0_regression.sh` → **7/7 suites, 114 checks pass**:
 
 | Suite | Checks |
 |---|---|
@@ -57,11 +57,11 @@ checks); they have not run against a real staging URL (none exists).
       the staging project (`staging/edge-and-limits.md`).
 - [ ] Trusted-host allowlist in `validateExactIdSource`: confirm the wiki
       upstream never returns record URLs outside the listed hosts.
-- [ ] `GAH_WIKI_HOST`: set to a staging/mock backend for contract testing,
-      or leave unset to use the production wiki host (documented
-      dependency either way).
+- [ ] `GAH_WIKI_HOST`: REQUIRED — set to an isolated mock wiki backend
+      for initial contract testing. Staging must not hit the production
+      wiki host until the search contract is verified against the mock.
 - [ ] Staging secrets: fresh `X_ADMIN_TOKEN`, no production PayPal live
-      credentials, own `WIKI_INTERNAL_PROXY_HEADER`.
+      credentials. (`WIKI_INTERNAL_PROXY_HEADER` is a fixed constant.)
 - [ ] Barak arithmetic (5,587+5,505=11,092 vs 11,089) and the 19 parents:
       still unresolved; the viewer hard gate stands.
 - [ ] House OCR + DOJ provenance pipelines continue on their own schedule;

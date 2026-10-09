@@ -41,11 +41,44 @@ check "search text: hits list non-empty" jcheck "$TMPD/s2.json" "d.get('hit_coun
 
 # 3. Search — Barak namespace separation (never searched as EFTA text).
 post_json "/api/search" '{"q":"BARAK-174-001","no_ai":true}' s3.json
-check "search barak: classification=barak, hit_count=0" jcheck "$TMPD/s3.json" "d.get('query_classification')=='barak' and d.get('hit_count')==0 and d.get('collection_hint')=='barak'"
+check "search barak: classification=barak, hit_count=0" jcheck "$TMPD/s3.json" "d.get('query_classification')=='barak' and d.get('hit_count')==0 and d.get('hits',[{}])[0].get('collection_hint')=='barak'"
 
-# 4. Search — exact EFTA id: verified or missing, never fabricated.
-post_json "/api/search" '{"q":"EFTA00000001","no_ai":true}' s4.json
-check "search exact id: missing-or-verified shape" jcheck "$TMPD/s4.json" "(d.get('exact_identifier_missing')==True) or ('exact_identifier_route' in d)"
+# 4. Search — exact EFTA id, three legitimate states.
+# Missing is deterministic (EFTA00999999 is not a real id).
+post_json "/api/search" '{"q":"EFTA00999999","no_ai":true}' s4a.json
+check "exact id missing: card present, excluded from hits" jcheck "$TMPD/s4a.json" "d.get('exact_identifier_missing')==True and d.get('hits',[{}])[0].get('missing')==True and d.get('document_bundle_url') in (None,'')"
+# EFTA00000001 lands in verified or unverified depending on staging data;
+# assert the correct invariants for whichever state the backend returns.
+post_json "/api/search" '{"q":"EFTA00000001","no_ai":true}' s4b.json
+cat > "$TMPD/exact_state.py" <<'PYEOF2'
+import json, sys
+d = json.load(open(sys.argv[1]))
+URL_FIELDS = ["read_url","url","pdf_url","source_url","img_url","image_url","thumb_url","thumbnail_url","page_image_url","visual_evidence_url","document_bundle_url"]
+hits = d.get("hits", [])
+if "exact_identifier_route" in d:
+    # VERIFIED: route set, first hit labeled verified, links allowed, counted.
+    ok = (isinstance(d["exact_identifier_route"], str) and d["exact_identifier_route"]
+          and hits and hits[0].get("verification") == "verified"
+          and d.get("hit_count", 0) >= 1)
+    print("state=verified")
+elif d.get("exact_identifier_unverified"):
+    # UNVERIFIED: visible findings, link-free API-wide, no bundle URL, counted.
+    ok = (hits and all(h.get("verification") == "unverified" for h in hits if h.get("efta_id"))
+          and all(not h.get(k) for h in hits for k in URL_FIELDS)
+          and d.get("document_bundle_url") in (None, "")
+          and d.get("hit_count", 0) >= 1)
+    print("state=unverified")
+elif d.get("exact_identifier_missing"):
+    # MISSING: card present, excluded from hit count.
+    ok = (hits and hits[0].get("missing") == True
+          and d.get("hit_count", 0) == len([h for h in hits if not h.get("missing")]))
+    print("state=missing")
+else:
+    ok = False
+    print("state=unknown")
+sys.exit(0 if ok else 1)
+PYEOF2
+check "exact id: state-aware invariants hold" python3 "$TMPD/exact_state.py" "$TMPD/s4b.json"
 
 # 5. Search — limit clamp respected.
 post_json "/api/search" '{"q":"test","limit":5000,"no_ai":true}' s5.json

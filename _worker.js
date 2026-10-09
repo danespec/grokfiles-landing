@@ -5103,18 +5103,24 @@ function missingRecordResponse(kind, identifier, searchedCollection) {
 // never manufactured: the route comes only from the row's own validated
 // URL, or it is left unset. A trusted-host URL validates only when it
 // references the queried identifier — a trusted host alone does not
-// establish document existence. Returns {valid, reason} for testability.
+// establish document existence.
+// DISTINCTION: this function establishes SYNTACTIC plausibility only
+// (URL shape, trusted host, identifier reference) or accepts explicit
+// upstream attestation. It does NOT independently confirm that the record
+// exists or is accessible. Returns {valid, reason, basis} where basis is
+// "upstream_attestation" (independently confirmed by the indexer) or
+// "source_url_syntactic" (URL form only).
 function validateExactIdSource(row, exact) {
   if (row?.source_verified === true && String(row.source || "").trim()) {
-    return { valid: true, reason: "upstream_attested" };
+    return { valid: true, reason: "upstream_attested", basis: "upstream_attestation" };
   }
   const url = String(row?.read_url || row?.url || row?.pdf_url || row?.source_url || "").trim();
   if (!url) return { valid: false, reason: "no_url" };
   if (url.startsWith("/")) {
     const ok = /^\/archive\/EFTA\d{8}$/i.test(url) && url.toUpperCase().endsWith(String(exact).toUpperCase());
     return ok
-      ? { valid: true, reason: "canonical_route" }
-      : { valid: false, reason: "non_canonical_relative_url" };
+      ? { valid: true, reason: "canonical_route", basis: "source_url_syntactic" }
+      : { valid: false, reason: "non_canonical_relative_url", basis: null };
   }
   let u;
   try {
@@ -5135,8 +5141,8 @@ function validateExactIdSource(row, exact) {
   // must reference the queried identifier.
   const id = String(exact).toUpperCase();
   return url.toUpperCase().includes(id)
-    ? { valid: true, reason: "trusted_host_with_identifier" }
-    : { valid: false, reason: "trusted_host_without_identifier" };
+    ? { valid: true, reason: "trusted_host_with_identifier", basis: "source_url_syntactic" }
+    : { valid: false, reason: "trusted_host_without_identifier", basis: null };
 }
 
 // Explanatory missing-record cards are not hits.
@@ -5154,29 +5160,45 @@ function applyCanonicalUpstreamQuery(upstreamPayload, queryClassification) {
   return upstreamPayload;
 }
 
+// Strip every link-bearing field from an unverified row. Unverified
+// findings stay visible as labeled findings across the ENTIRE public API
+// (not just the embedded UI): no read/download/source/image/bundle/visual
+// URLs, and no enrichment may re-add them downstream.
+function stripUnverifiedRow(row) {
+  return {
+    ...row,
+    verification: "unverified",
+    read_url: null, url: null, pdf_url: null, source_url: null,
+    img_url: null, image_url: null, thumb_url: null, thumbnail_url: null,
+    page_image_url: null,
+    has_visual_evidence: false, visual_evidence_count: 0,
+    visual_evidence_url: null, document_bundle_url: null
+  };
+}
+
 function applyExactIdentifierPolicy(rows, exact, data) {
   const candidates = rows.filter((row) => publicSearchExactId(row) === exact);
   const others = rows.filter((row) => publicSearchExactId(row) !== exact);
-  const verified = candidates.find((row) => validateExactIdSource(row, exact).valid);
-  if (verified) {
+  const check = candidates.map((row) => ({ row, v: validateExactIdSource(row, exact) }));
+  const verifiedHit = check.find((c) => c.v.valid);
+  if (verifiedHit) {
     // Never manufacture archive routes: the route is the row's own
     // validated URL, or it is left unset.
+    const verified = { ...verifiedHit.row, verification: "verified", verification_basis: verifiedHit.v.basis || "source_url_syntactic" };
     const route = verified.read_url || verified.url || null;
     if (route) data.exact_identifier_route = route;
     // Same-id rows that failed validation stay visible as labeled,
-    // unverified findings — not dropped, not presented as verified.
-    const labeled = candidates
-      .filter((row) => row !== verified)
-      .map((row) => ({ ...row, verification: "unverified", read_url: null, url: null }));
+    // link-free unverified findings — not dropped, not presented as verified.
+    const labeled = check
+      .filter((c) => c.row !== verifiedHit.row)
+      .map((c) => stripUnverifiedRow(c.row));
     return [verified, ...labeled, ...others];
   }
   if (candidates.length) {
     // Identifier matched but nothing validated: visible as unverified
-    // findings, without verified archive access (no links).
+    // findings, without verified archive access (no links, no bundle URL).
     data.exact_identifier_unverified = true;
-    const labeled = candidates.map((row) => ({
-      ...row, verification: "unverified", read_url: null, url: null
-    }));
+    const labeled = candidates.map(stripUnverifiedRow);
     return [...labeled, ...others];
   }
   data.exact_identifier_missing = true;
@@ -5414,6 +5436,7 @@ async function enrichPublicSearchRowsWithVisualEvidence(rows, env) {
   const byShard = new Map();
 
   for (const row of rows) {
+    if (row.verification === "unverified") continue;
     const efta = publicSearchExactId(row);
     if (!/^EFTA[0-9]{8}$/.test(efta)) continue;
     const shardKey = efta.slice(0, 8);
@@ -5433,8 +5456,9 @@ async function enrichPublicSearchRowsWithVisualEvidence(rows, env) {
   }));
 
   return rows.map((row) => {
-    // Missing-record responses never carry bundle or visual-evidence URLs.
-    if (row.missing) return row;
+    // Missing-record responses and unverified findings never carry
+    // bundle or visual-evidence URLs.
+    if (row.missing || row.verification === "unverified") return row;
     const efta = publicSearchExactId(row);
     if (!/^EFTA[0-9]{8}$/.test(efta)) return row;
     const count = counts.get(efta) || 0;
@@ -5601,14 +5625,14 @@ async function handlePublicSearch(request, env) {
   } catch (_) {
     rows = rows.map((row) => {
       const efta = publicSearchExactId(row);
-      if (row.missing || !/^EFTA[0-9]{8}$/.test(efta)) return row;
+      if (row.missing || row.verification === "unverified" || !/^EFTA[0-9]{8}$/.test(efta)) return row;
       return { ...row, has_visual_evidence: false, visual_evidence_count: 0, visual_evidence_url: null, document_bundle_url: "/api/document-bundle/" + efta };
     });
   }
 
   if (exact) {
     const exactHit = rows.find((row) => publicSearchExactId(row) === exact);
-    const verified = exactHit && !exactHit.missing;
+    const verified = exactHit && exactHit.verification === "verified";
     data.visual_evidence = verified ? {
       available: Boolean(exactHit.has_visual_evidence),
       count: Number(exactHit.visual_evidence_count || 0),

@@ -9,7 +9,7 @@ explicit approval of the staging environment.**
 - Branch: `ren/phase0-integration`
 - Commit: `<RC-SHA>` (fill at release time; must match the pushed branch tip)
 - Base: `ren/production-snapshot-20261009` @ `7bfc664`
-- Regression: 7/7 suites, 108 checks pass (`tests/run_phase0_regression.sh`)
+- Regression: 7/7 suites, 114 checks pass (`tests/run_phase0_regression.sh`)
 
 ## Workers
 
@@ -33,18 +33,17 @@ script_name = "gah-sec-rate-limiter"
 
 | Variable | Value |
 |---|---|
-| `GAH_WIKI_HOST` | Staging/mock wiki host for contract testing, OR unset (uses `wiki.grokarchivehub.com`; document the choice) |
+| `GAH_WIKI_HOST` | **REQUIRED for initial contract testing**: isolated mock wiki backend. Staging must not hit the production wiki host until the contract is verified |
 | `X_ADMIN_TOKEN` | Fresh staging-only value (never production's) |
-| `WIKI_INTERNAL_PROXY_HEADER` | Fresh staging-only value |
 | `PAYPAL_LIVE_CLIENT_ID` / `PAYPAL_LIVE_CLIENT_SECRET` / `PAYPAL_LIVE_WEBHOOK_ID` | **ABSENT** (smoke test asserts disabled state) |
 
-No other new variables. No production secrets are copied to staging.
+No other new variables. No production secrets are copied to staging. `WIKI_INTERNAL_PROXY_HEADER` is a fixed Worker constant, not a secret.
 
 ## Verification order
 
 1. `bash staging/smoke-tests/smoke.sh https://<staging-url>` — 14 read-only checks.
 2. `bash staging/smoke-tests/bindings.sh https://<staging-url> configured` — DO binding evidence.
-3. `STAGING_ADMIN_TOKEN=<disposable> bash staging/smoke-tests/auth.sh https://<staging-url>` — then rotate the token.
+3. `STAGING_HOSTS=<staging-host> STAGING_ADMIN_TOKEN=<disposable> bash staging/smoke-tests/auth.sh https://<staging-url>` — then rotate the token.
 4. Optional: `bindings.sh … missing` / `… unavailable` guided procedures.
 5. Review open items in `staging/STAGING_READINESS.md`.
 
