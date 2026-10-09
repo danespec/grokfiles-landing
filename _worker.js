@@ -792,6 +792,10 @@ const FRONTDOOR_SITE_JS = String.raw`
       rows.forEach(function (row) {
         var id = pick(row, ["efta_id", "id", "efta", "document_id"]);
         var title = pick(row, ["title", "name"]) || id || "Archive result";
+        if (row.missing) {
+          addCard(title, "No verified record found for this identifier in the current index. The identifier may be mistyped, or the record may not be indexed yet.", "", "");
+          return;
+        }
         var text = pick(row, ["snippet", "summary", "text", "content", "combined_text", "body"]);
         var href = pick(row, ["read_url", "pdf_url", "url", "source_url"]);
         if (!href && /^EFTA[0-9]{8}$/i.test(id)) href = "/archive/" + id.toUpperCase();
@@ -4751,6 +4755,32 @@ function publicSearchRowRelevant(row, query) {
   return matched >= Math.min(2, Math.ceil(tokens.length / 2));
 }
 
+// Phase 0 (ren/phase0-exact-id): exact-identifier policy.
+//
+// An exact-identifier query (EFTA-shaped) must return the verified record
+// or a missing-record response — NEVER a fabricated /archive/{id} route.
+// Previously the handler invented a row ("Exact archive identifier route.")
+// for any EFTA-shaped query, even when no record existed in the index.
+// Pure function: unit-tested in tests/test_exact_id_policy.mjs.
+function applyExactIdentifierPolicy(rows, exact, data) {
+  const existing = rows.find((row) => publicSearchExactId(row) === exact);
+  if (existing) {
+    data.exact_identifier_route = `/archive/${exact}`;
+    return [existing, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
+  }
+  data.exact_identifier_missing = true;
+  return [{
+    title: exact,
+    id: exact,
+    efta_id: exact,
+    summary: "No verified record found for this identifier in the current index.",
+    missing: true,
+    read_url: null,
+    url: null,
+    dataset: ""
+  }];
+}
+
 function publicSearchExactId(row) {
   const id = row?.efta_id || row?.id || row?.efta || row?.document_id || row?.archive_id || "";
   return String(id).toUpperCase();
@@ -5103,18 +5133,7 @@ async function handlePublicSearch(request, env) {
   });
 
   if (exact) {
-    const existing = rows.find((row) => publicSearchExactId(row) === exact);
-    const exactRow = existing || {
-      title: exact,
-      id: exact,
-      efta_id: exact,
-      summary: "Exact archive identifier route.",
-      read_url: `/archive/${exact}`,
-      url: `/archive/${exact}`,
-      dataset: ""
-    };
-    rows = [exactRow, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
-    data.exact_identifier_route = `/archive/${exact}`;
+    rows = applyExactIdentifierPolicy(rows, exact, data);
   }
 
   const requestedLimit = Math.min(Math.max(Number(payload.limit) || 10, 1), 50);
@@ -5124,19 +5143,21 @@ async function handlePublicSearch(request, env) {
   } catch (_) {
     rows = rows.map((row) => {
       const efta = publicSearchExactId(row);
-      if (!/^EFTA[0-9]{8}$/.test(efta)) return row;
+      if (row.missing || !/^EFTA[0-9]{8}$/.test(efta)) return row;
       return { ...row, has_visual_evidence: false, visual_evidence_count: 0, visual_evidence_url: null, document_bundle_url: "/api/document-bundle/" + efta };
     });
   }
 
   if (exact) {
     const exactHit = rows.find((row) => publicSearchExactId(row) === exact);
-    data.visual_evidence = exactHit ? {
+    const verified = exactHit && !exactHit.missing;
+    data.visual_evidence = verified ? {
       available: Boolean(exactHit.has_visual_evidence),
       count: Number(exactHit.visual_evidence_count || 0),
       url: exactHit.visual_evidence_url || null
     } : { available: false, count: 0, url: null };
-    data.document_bundle_url = "/api/document-bundle/" + exact;
+    // No bundle URL for a missing record: the bundle endpoint has nothing to serve.
+    data.document_bundle_url = verified ? "/api/document-bundle/" + exact : null;
   }
 
   data.hits = rows;
