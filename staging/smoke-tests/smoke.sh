@@ -1,82 +1,80 @@
 #!/bin/bash
-# GAH staging smoke tests.
+# GAH staging smoke tests — READ-ONLY suite.
 #
 # Usage: STAGING_BASE_URL=https://staging.example.com bash staging/smoke-tests/smoke.sh
 #    or: bash staging/smoke-tests/smoke.sh https://staging.example.com
 #
-# Verifies: homepage, search (text / exact-ID / Barak namespace), A2A,
-# archive access, Barak viewer, member routes, PayPal disabled-checkout
-# state, research interfaces (MCP, api-catalog, openapi), admin login page.
+# This suite makes NO authenticated requests and NO state-changing requests.
+# The only POSTs are to read-only endpoints (/api/search). Authentication is
+# tested separately in auth.sh with disposable fixtures.
 #
-# Safe to run repeatedly: makes no purchases, no logins, no writes.
-# The admin-login throttle is NOT exercised here (that would consume the
-# staging lockout budget); it is covered by the Miniflare suite.
+# Every check asserts a DOCUMENTED status and response shape — there are no
+# permissive "not 500" checks.
 set -u
 BASE="${1:-${STAGING_BASE_URL:-}}"
 if [ -z "$BASE" ]; then echo "usage: $0 https://<staging-url>"; exit 2; fi
 BASE="${BASE%/}"
+TMPD="$(mktemp -d)"; trap 'rm -rf "$TMPD"' EXIT
 
 pass=0; fail=0; failed=()
-check() { # name, condition-command...
+check() { # name, then a command; passes if the command exits 0
   local name="$1"; shift
   if "$@" >/dev/null 2>&1; then pass=$((pass+1)); echo "PASS $name";
   else fail=$((fail+1)); failed+=("$name"); echo "FAIL $name"; fi
 }
-get()  { curl -sS -o /dev/null -w "%{http_code}" --max-time 25 "$BASE$1"; }
-get_body() { curl -sS --max-time 25 "$BASE$1"; }
-post_json() { curl -sS --max-time 25 -X POST -H "Content-Type: application/json" -d "$2" "$BASE$1"; }
-code_is() { [ "$(get "$1")" = "$2" ]; }
-json_has() { # body, python-expr -> exit 0 if truthy
-  python3 -c "import json,sys; d=json.load(sys.stdin); sys.exit(0 if ($2) else 1)" <<< "$1";
-}
+code() { curl -sS -o /dev/null -w "%{http_code}" --max-time 25 "$BASE$1"; }
+code_is() { [ "$(code "$1")" = "$2" ]; }
+# jcheck <file> <python-expr>: exit 0 iff the JSON file satisfies the expr (as d)
+jcheck() { python3 -c "import json,sys; d=json.load(open('$1')); sys.exit(0 if ($2) else 1)"; }
+get_json() { curl -sS --max-time 25 -o "$TMPD/$2" "$BASE$1"; }
+post_json() { curl -sS --max-time 25 -o "$TMPD/$3" -X POST -H "Content-Type: application/json" -d "$2" "$BASE$1"; }
 
 echo "Staging: $BASE"
 echo
 
-# 1. Homepage
+# 1. Homepage serves.
 check "homepage 200" code_is "/" "200"
 
-# 2. Search — text query returns hits
-BODY=$(post_json "/api/search" '{"q":"Epstein","limit":5,"no_ai":true,"fast":true}')
-check "search text 200 + hits" json_has "$BODY" "d.get('hit_count',0) > 0"
+# 2. Search — text query returns hits.
+post_json "/api/search" '{"q":"Epstein","limit":5,"no_ai":true,"fast":true}' s2.json
+check "search text: hits list non-empty" jcheck "$TMPD/s2.json" "d.get('hit_count',0)>0 and isinstance(d.get('hits'),list)"
 
-# 3. Search — Barak namespace separation (never searched as EFTA text)
-BODY=$(post_json "/api/search" '{"q":"BARAK-174-001","no_ai":true}')
-check "barak id -> cross-collection hint" json_has "$BODY" "d.get('query_classification')=='barak' and d.get('hit_count')==0"
+# 3. Search — Barak namespace separation (never searched as EFTA text).
+post_json "/api/search" '{"q":"BARAK-174-001","no_ai":true}' s3.json
+check "search barak: classification=barak, hit_count=0" jcheck "$TMPD/s3.json" "d.get('query_classification')=='barak' and d.get('hit_count')==0 and d.get('collection_hint')=='barak'"
 
-# 4. Search — exact EFTA id is not fabricated (either verified or missing, never invented)
-BODY=$(post_json "/api/search" '{"q":"EFTA00000001","no_ai":true}')
-check "exact id -> verified-or-missing (no fabrication)" json_has "$BODY" "(d.get('exact_identifier_missing')==True) or ('exact_identifier_route' in d)"
+# 4. Search — exact EFTA id: verified or missing, never fabricated.
+post_json "/api/search" '{"q":"EFTA00000001","no_ai":true}' s4.json
+check "search exact id: missing-or-verified shape" jcheck "$TMPD/s4.json" "(d.get('exact_identifier_missing')==True) or ('exact_identifier_route' in d)"
 
-# 5. Search — limit clamp respected
-BODY=$(post_json "/api/search" '{"q":"test","limit":5000,"no_ai":true}')
-check "limit clamped" json_has "$BODY" "len(d.get('hits',[])) <= 50"
+# 5. Search — limit clamp respected.
+post_json "/api/search" '{"q":"test","limit":5000,"no_ai":true}' s5.json
+check "search limit clamped to <=50" jcheck "$TMPD/s5.json" "len(d.get('hits',[]))<=50"
 
-# 6. A2A endpoint responds (auth may apply; must not 500)
-CODE=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 25 -X POST -H "Content-Type: application/json" -d '{"message":"ping"}' "$BASE/a2a/v1/message:send")
-check "a2a endpoint responsive (not 500)" test "$CODE" != "500"
+# 6. A2A — GET returns documented 405 (route intact; no message sent).
+check "a2a GET -> 405 (Allow: POST)" bash -c "[ \"\$(curl -sS -o /dev/null -w '%{http_code}' --max-time 25 '$BASE/a2a/v1/message:send')\" = 405 ]"
 
-# 7. Archive + Barak viewer render
+# 7. Barak viewer renders.
 check "barak viewer 200" code_is "/barak" "200"
 
-# 8. Member routes still challenge (redirect/login), not 500
-CODE=$(get "/members/account")
-check "member route challenges (not 500)" test "$CODE" != "500"
+# 8. Member route: documented behavior is 200 (portal page) or 302 (login redirect).
+check "member account: 200 or 302" bash -c "c=\$(curl -sS -o /dev/null -w '%{http_code}' --max-time 25 '$BASE/members/account'); [ \"\$c\" = 200 ] || [ \"\$c\" = 302 ]"
 
-# 9. PayPal live checkout stays disabled in staging
-BODY=$(get_body "/api/commerce/paypal/live/launch-status")
-check "paypal launch-status 200" json_has "$BODY" "True"
-check "paypal live NOT configured" json_has "$BODY" "not d.get('live_client_id_present', False)"
+# 9. PayPal live checkout disabled — REAL schema assertions.
+get_json "/api/commerce/paypal/live/launch-status" p9.json
+check "paypal launch-status: schema + disabled" jcheck "$TMPD/p9.json" "d.get('schema')=='gah.paypal-live-launch-gates.v1' and d.get('live_customer_checkout_available')==False and d.get('config',{}).get('live_client_id_present')==False"
 
-# 10. Research interfaces intact
-check "mcp server card" code_is "/.well-known/mcp/server-card.json" "200"
-check "api catalog" code_is "/.well-known/api-catalog" "200"
-check "openapi" code_is "/openapi.json" "200"
+# 10. PayPal live webhook is unconfigured in staging -> documented 503, never 200.
+#     (Proves no staging request can process live PayPal events.)
+check "paypal live webhook unconfigured (503)" bash -c "[ \"\$(curl -sS -o /dev/null -w '%{http_code}' --max-time 25 -X POST -H 'Content-Type: application/json' -d '{}' '$BASE/api/commerce/paypal/live/webhook')\" = 503 ]"
 
-# 11. Admin login page renders; bad token -> 401 (not 500)
+# 11. Research interfaces intact.
+check "mcp server card 200" code_is "/.well-known/mcp/server-card.json" "200"
+check "api catalog 200" code_is "/.well-known/api-catalog" "200"
+check "openapi 200" code_is "/openapi.json" "200"
+
+# 12. Admin login page renders (GET only — no credential attempts in this suite).
 check "admin login page 200" code_is "/admin/login" "200"
-CODE=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 25 -X POST --data "admin_token=wrong" "$BASE/admin/login")
-check "admin bad token -> 401" test "$CODE" = "401"
 
 echo
 echo "----------------------------------------"

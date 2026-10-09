@@ -474,6 +474,17 @@ const APEX_HOST = "grokarchivehub.com";
 const APEX_HOSTS = new Set([APEX_HOST, "www.grokarchivehub.com"]);
 const FILES_HOST = "files.grokarchivehub.com";
 const WIKI_HOST = "wiki.grokarchivehub.com";
+
+// Staging isolation: env.GAH_WIKI_HOST overrides the upstream wiki host so a
+// staging deployment can point at a staging wiki host or a mock backend for
+// contract testing. Production leaves it unset. The value must look like a
+// hostname; anything else falls back to WIKI_HOST (never to an arbitrary URL,
+// never to http).
+function wikiHost(env) {
+  const override = String(env?.GAH_WIKI_HOST || "").trim().toLowerCase();
+  if (/^[a-z0-9]([a-z0-9.-]{0,253}[a-z0-9])?\.[a-z]{2,}$/.test(override)) return override;
+  return WIKI_HOST;
+}
 const WIKI_INTERNAL_PROXY_HEADER = "X-GAH-Internal-Wiki-Proxy";
 const WIKI_TO_APEX_REDIRECT_PATHS = new Set([
   "/grok-command-v4",
@@ -794,6 +805,11 @@ const FRONTDOOR_SITE_JS = String.raw`
         var title = pick(row, ["title", "name"]) || id || "Archive result";
         if (row.missing) {
           addCard(title, "No verified record found for this identifier in the current index. The identifier may be mistyped, or the record may not be indexed yet.", "", "");
+          return;
+        }
+        if (row.verification === "unverified") {
+          var utext = pick(row, ["snippet", "summary", "text", "content", "combined_text", "body"]);
+          addCard(title, (utext ? utext + " " : "") + "Unverified finding: identifier match without validated source. Not verified archive access.", "", "");
           return;
         }
         var text = pick(row, ["snippet", "summary", "text", "content", "combined_text", "body"]);
@@ -4118,7 +4134,7 @@ async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
   target.protocol = "https:";
-  target.hostname = WIKI_HOST;
+  target.hostname = wikiHost(env);
   target.port = "";
   if (proxiedPath === "/photos") target.pathname = "/photos/incoming-visual/index.html";
 
@@ -4279,7 +4295,7 @@ function wikiToApexRedirectResponse(request, path) {
 async function serveWikiHostNoindexRoute(request, env, path) {
   const target = new URL(request.url);
   target.protocol = "https:";
-  target.hostname = WIKI_HOST;
+  target.hostname = wikiHost(env);
   target.port = "";
   const headersForUpstream = new Headers(request.headers);
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "wiki-host-noindex");
@@ -5085,7 +5101,9 @@ function missingRecordResponse(kind, identifier, searchedCollection) {
 //         and www variants).
 // A bare non-empty URL or source string is NEVER enough. Archive routes are
 // never manufactured: the route comes only from the row's own validated
-// URL, or it is left unset. Returns {valid, reason} for testability.
+// URL, or it is left unset. A trusted-host URL validates only when it
+// references the queried identifier — a trusted host alone does not
+// establish document existence. Returns {valid, reason} for testability.
 function validateExactIdSource(row, exact) {
   if (row?.source_verified === true && String(row.source || "").trim()) {
     return { valid: true, reason: "upstream_attested" };
@@ -5112,9 +5130,13 @@ function validateExactIdSource(row, exact) {
     host === "justice.gov" || host === "www.justice.gov" ||
     host === "congress.gov" || host === "www.congress.gov" ||
     host === "archives.gov" || host === "www.archives.gov";
-  return trusted
-    ? { valid: true, reason: "trusted_host" }
-    : { valid: false, reason: "untrusted_host" };
+  if (!trusted) return { valid: false, reason: "untrusted_host" };
+  // A trusted host alone does not establish document existence: the URL
+  // must reference the queried identifier.
+  const id = String(exact).toUpperCase();
+  return url.toUpperCase().includes(id)
+    ? { valid: true, reason: "trusted_host_with_identifier" }
+    : { valid: false, reason: "trusted_host_without_identifier" };
 }
 
 // Explanatory missing-record cards are not hits.
@@ -5122,15 +5144,40 @@ function actualHitCount(rows) {
   return rows.filter((row) => !row.missing).length;
 }
 
+// Pure helper: canonicalize the upstream search payload's query fields.
+// EFTA aliases all collapse to the canonical identifier before the backend
+// sees them, so "efta-123" and "EFTA00000123" query identically.
+function applyCanonicalUpstreamQuery(upstreamPayload, queryClassification) {
+  if (queryClassification && queryClassification.kind === "efta") {
+    return { ...upstreamPayload, q: queryClassification.canonical, query: queryClassification.canonical };
+  }
+  return upstreamPayload;
+}
+
 function applyExactIdentifierPolicy(rows, exact, data) {
   const candidates = rows.filter((row) => publicSearchExactId(row) === exact);
+  const others = rows.filter((row) => publicSearchExactId(row) !== exact);
   const verified = candidates.find((row) => validateExactIdSource(row, exact).valid);
   if (verified) {
     // Never manufacture archive routes: the route is the row's own
     // validated URL, or it is left unset.
     const route = verified.read_url || verified.url || null;
     if (route) data.exact_identifier_route = route;
-    return [verified, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
+    // Same-id rows that failed validation stay visible as labeled,
+    // unverified findings — not dropped, not presented as verified.
+    const labeled = candidates
+      .filter((row) => row !== verified)
+      .map((row) => ({ ...row, verification: "unverified", read_url: null, url: null }));
+    return [verified, ...labeled, ...others];
+  }
+  if (candidates.length) {
+    // Identifier matched but nothing validated: visible as unverified
+    // findings, without verified archive access (no links).
+    data.exact_identifier_unverified = true;
+    const labeled = candidates.map((row) => ({
+      ...row, verification: "unverified", read_url: null, url: null
+    }));
+    return [...labeled, ...others];
   }
   data.exact_identifier_missing = true;
   return [{
@@ -5142,7 +5189,7 @@ function applyExactIdentifierPolicy(rows, exact, data) {
     read_url: null,
     url: null,
     dataset: ""
-  }];
+  }, ...others];
 }
 
 function publicSearchExactId(row) {
@@ -5463,9 +5510,12 @@ async function handlePublicSearch(request, env) {
   // page size before proxying. The upstream engine must never receive an
   // unbounded limit.
   const clampedSearchLimit = Math.min(50, Math.max(1, Number(payload.limit) || 10));
-  const upstreamPayload = PUBLIC_SEARCH_EXACT_PERSON_PHRASES.has(normalizedQueryForFetch)
+  let upstreamPayload = PUBLIC_SEARCH_EXACT_PERSON_PHRASES.has(normalizedQueryForFetch)
     ? { ...payload, q: query, limit: 50 }
     : { ...payload, limit: clampedSearchLimit };
+  // Forward the canonical identifier upstream so alias spellings
+  // ("efta-123", "EFTA 123", ...) query the backend identically.
+  upstreamPayload = applyCanonicalUpstreamQuery(upstreamPayload, queryClassification);
   const upstreamRequest = new Request(request.url, {
     method: "POST",
     headers: request.headers,

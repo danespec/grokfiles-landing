@@ -9,9 +9,13 @@ deployment of the `ren/phase0-integration` branch for regression review:
 | File | Purpose |
 |---|---|
 | `STAGING_READINESS.md` | Readiness report: what was verified, what remains |
+| `DEPLOY_MANIFEST.md` | Precise deployment manifest (executed only on Thomas's approval) |
 | `bindings.md` | Pages project binding configuration (DO + env) |
+| `edge-and-limits.md` | Cloudflare IP-header assumptions, rate-limit budgets, wiki-host dependency |
 | `rollback.md` | Rollback instructions |
-| `smoke-tests/smoke.sh` | Automated smoke tests (run against staging URL) |
+| `smoke-tests/smoke.sh` | Read-only automated smoke tests (run against staging URL) |
+| `smoke-tests/auth.sh` | Auth tests with disposable fixtures (separate from read-only suite) |
+| `smoke-tests/bindings.sh` | DO binding three-state evidence (configured/missing/unavailable) |
 | `smoke-tests/README.md` | How to run the smoke tests |
 
 ## The two workers
