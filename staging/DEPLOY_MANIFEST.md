@@ -7,7 +7,7 @@ explicit approval of the staging environment.**
 
 - Repository: `danespec/grokfiles-landing`
 - Branch: `ren/phase0-integration`
-- Commit: `<RC-SHA>` (fill at release time; must match the pushed branch tip)
+- Commit: `7ff04dd97b41a01a084887c4a445a82b2e1ef37d` (verified pushed branch tip)
 - Base: `ren/production-snapshot-20261009` @ `7bfc664`
 - Regression: 7/7 suites, 114 checks pass (`tests/run_phase0_regression.sh`)
 
