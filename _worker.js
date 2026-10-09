@@ -3064,6 +3064,14 @@ async function handleGahA2aSend(request, env) {
       headers: { "Content-Type": "text/plain; charset=utf-8", "Allow": "POST", "Cache-Control": "no-store" }
     });
   }
+  // SEC-REMEDIATION: worker-side abuse throttle on the A2A send endpoint.
+  const a2aThrottle = await gahSecRateLimit(env, "a2a-send", request, GAH_SEC_A2A_SEND_MAX_PER_MIN);
+  if (a2aThrottle.limited) {
+    return new Response(JSON.stringify({ status: 429, detail: "Rate limited. Retry shortly." }), {
+      status: 429,
+      headers: { "Content-Type": "application/problem+json; charset=utf-8", "Cache-Control": "no-store", "Retry-After": "60" }
+    });
+  }
   let body;
   try { body = await request.json(); }
   catch (_) {
@@ -3933,6 +3941,162 @@ function isBirthdayBookEvidenceV2Path(path) {
   return path === "/research/evidence/birthday-book-v2" || path.startsWith("/research/evidence/birthday-book-v2/");
 }
 
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// SEC-REMEDIATION (ren/security-remediation): worker-side abuse throttles.
+//
+// Architecture (revised after review): atomic enforcement lives in the
+// GahSecRateLimiterDO Durable Object below. The first revision used KV
+// read-modify-write, which is NOT atomic — under concurrency, N simultaneous
+// requests can all read the same counter before any write lands (review
+// repro: 25 requests passed a limit of 3; 10 simultaneous admin failures
+// recorded as one). A Durable Object instance is single-threaded, so
+// check-and-increment inside one fetch() cannot interleave: the throttle
+// is exact.
+//
+// Wiring: [[durable_objects.bindings]] name = "GAH_SEC_RATE_LIMITER",
+// class_name = "GahSecRateLimiterDO" (see wrangler.example.toml), plus a
+// migrations new_classes entry. When the binding is absent the helpers
+// fall back to KV best-effort (documented approximate) and then fail open.
+// Throttles are defense-in-depth in front of the Cloudflare edge rules.
+// ---------------------------------------------------------------------------
+const GAH_SEC_RATE_PREFIX = "gah:sec:rate:";
+const GAH_SEC_RATE_WINDOW_MS = 60 * 1000;
+const GAH_SEC_PUBLIC_SEARCH_MAX_PER_MIN = 60;
+const GAH_SEC_A2A_SEND_MAX_PER_MIN = 30;
+const GAH_SEC_ADMIN_LOGIN_PREFIX = "gah:sec:admin-login-fail:";
+const GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS = 60 * 15; // matches X_ADMIN_LOGIN_WINDOW_SECONDS
+const GAH_SEC_ADMIN_LOGIN_MAX_FAILURES = 5;         // matches X_ADMIN_LOGIN_MAX_FAILURES
+
+// NOTE (ren/security-remediation): GahSecRateLimiterDO now lives in
+// workers/sec-rate-limiter/src/index.js (separate Worker project — Pages
+// cannot host Durable Objects). This worker reaches it through the
+// env.GAH_SEC_RATE_LIMITER binding (script_name).
+
+function gahSecClientIp(request) {
+  const fwd = request.headers.get("X-Forwarded-For");
+  return String(
+    request.headers.get("CF-Connecting-IP") ||
+    (fwd ? fwd.split(",")[0].trim() : "") ||
+    "unknown"
+  ).slice(0, 64);
+}
+
+// Subrequest to the rate-limiter DO. Returns the parsed JSON body, or null
+// when the binding is absent or the subrequest fails (caller falls back).
+async function gahSecDoCall(env, payload) {
+  const ns = env.GAH_SEC_RATE_LIMITER;
+  if (!ns || typeof ns.idFromName !== "function") return null;
+  try {
+    // Shard limiter instances by scope+key (usually scope + client IP) so
+    // all website traffic does not funnel through one global DO instance.
+    // Each shard is single-threaded; a spike from one IP cannot contend
+    // with anyone else's counters.
+    const shard = `${String(payload.scope || "default").slice(0, 64)}:${String(payload.key || "unknown").slice(0, 64)}`;
+    const stub = ns.get(ns.idFromName(shard));
+    // fetch(url, init) form: identical semantics to fetch(Request) in the
+    // workers runtime, and also accepted by Miniflare (which rejects a
+    // Request object here) so the throttle path is testable.
+    const res = await stub.fetch("https://gah-sec.internal/rate-limit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    return await res.json().catch(() => null);
+  } catch (_) {
+    return null;
+  }
+}
+
+async function gahSecKvRateLimit(env, scope, key, maxPerMinute) {
+  // Fallback path: KV read-modify-write. APPROXIMATE under concurrency —
+  // acceptable only as defense-in-depth until the DO binding is configured.
+  // NOTE: reads bypass the Phang KV read cache on purpose — throttles need
+  // fresh counters, not cached ones.
+  const store = phangStore(env);
+  if (!store) return { ok: true, limited: false, reason: "no_kv_fail_open" };
+  const kvKey = `${GAH_SEC_RATE_PREFIX}${scope}:${key}:${Math.floor(Date.now() / GAH_SEC_RATE_WINDOW_MS)}`;
+  let count = 0;
+  try {
+    count = Number(await store.binding.get(kvKey)) || 0;
+  } catch (_) {
+    return { ok: true, limited: false, reason: "kv_read_failed_fail_open" };
+  }
+  if (count >= maxPerMinute) return { ok: false, limited: true, via: "kv-approximate" };
+  try {
+    await store.binding.put(kvKey, String(count + 1), { expirationTtl: 180 });
+  } catch (_) { /* best-effort: never fail a legitimate request on a KV write error */ }
+  return { ok: true, limited: false, via: "kv-approximate" };
+}
+
+async function gahSecRateLimit(env, scope, request, maxPerMinute) {
+  const key = gahSecClientIp(request);
+  // Preferred path: atomic check-and-increment in the DO.
+  const viaDo = await gahSecDoCall(env, {
+    op: "check", scope, key, max: maxPerMinute, windowMs: GAH_SEC_RATE_WINDOW_MS,
+  });
+  if (viaDo) return { ok: !viaDo.limited, limited: !!viaDo.limited, via: "durable-object" };
+  return gahSecKvRateLimit(env, scope, key, maxPerMinute);
+}
+
+function gahSecRateLimitedJson(retryAfterSeconds = 60) {
+  return new Response(JSON.stringify({ ok: false, error: "rate_limited", retry_after_seconds: retryAfterSeconds }), {
+    status: 429,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
+      "Retry-After": String(retryAfterSeconds)
+    }
+  });
+}
+
+// Server-side admin-login throttle. The sealed-cookie counter used by
+// xAdminLoginRateState is client-resettable (clearing the cookie restarts
+// the count); the counter here is authoritative.
+//
+// Admission is ATOMIC: every POST attempt consumes one throttle slot at the
+// gate via a single DO check op (check-and-increment cannot interleave
+// inside a DO instance). The old peek -> verify -> record sequence let N
+// concurrent attempts all pass the gate before any failure was recorded;
+// now the N+1th concurrent attempt is blocked even if no verification has
+// completed yet. A successful login clears the counter.
+async function gahSecAdminLoginAdmit(env, request) {
+  const key = gahSecClientIp(request);
+  const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+  const viaDo = await gahSecDoCall(env, {
+    op: "check", scope: "admin-login", key,
+    max: GAH_SEC_ADMIN_LOGIN_MAX_FAILURES, windowMs,
+  });
+  if (viaDo) return !viaDo.limited;
+  // KV fallback: approximate under concurrency, then fail open.
+  const store = phangStore(env);
+  if (!store) return true;
+  try {
+    const now = Date.now();
+    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
+    const rec = raw ? JSON.parse(raw) : { firstAt: 0, failures: 0 };
+    const inWindow = rec.firstAt > now - windowMs;
+    const failures = inWindow ? Number(rec.failures || 0) + 1 : 1;
+    await store.binding.put(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`, JSON.stringify({
+      firstAt: inWindow ? rec.firstAt : now,
+      failures
+    }), { expirationTtl: GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS + 60 });
+    return failures <= GAH_SEC_ADMIN_LOGIN_MAX_FAILURES;
+  } catch (_) {
+    return true; // fail open
+  }
+}
+
+async function gahSecAdminLoginClear(env, request) {
+  const key = gahSecClientIp(request);
+  const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+  const cleared = await gahSecDoCall(env, { op: "clear", scope: "admin-login", key, windowMs });
+  if (cleared) return;
+  const store = phangStore(env);
+  if (!store) return;
+  try { await store.binding.delete(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`); } catch (_) { /* best-effort */ }
+}
+
 async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
@@ -3943,6 +4107,12 @@ async function proxyProofLayer(request, env = {}) {
 
   const headersForUpstream = new Headers(request.headers);
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "apex-proof-layer");
+  // SEC-REMEDIATION (ren/security-remediation): never forward client
+  // credentials to the upstream wiki host. The member session cookie and
+  // any Authorization header are apex-only; the upstream proof layer
+  // authenticates this hop via WIKI_INTERNAL_PROXY_HEADER.
+  headersForUpstream.delete("cookie");
+  headersForUpstream.delete("authorization");
   const upstreamInit = {
     method: request.method,
     headers: headersForUpstream,
@@ -5058,6 +5228,9 @@ async function enrichPublicSearchRowsWithVisualEvidence(rows, env) {
 }
 
 async function handlePublicSearch(request, env) {
+  // SEC-REMEDIATION: worker-side abuse throttle on the public search proxy.
+  const searchThrottle = await gahSecRateLimit(env, "public-search", request, GAH_SEC_PUBLIC_SEARCH_MAX_PER_MIN);
+  if (searchThrottle.limited) return gahSecRateLimitedJson();
   let raw = "";
   let payload = {};
   try {
@@ -5079,9 +5252,13 @@ async function handlePublicSearch(request, env) {
   }
 
   const normalizedQueryForFetch = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  // SEC-REMEDIATION (ren/security-remediation): clamp the client-supplied
+  // page size before proxying. The upstream engine must never receive an
+  // unbounded limit.
+  const clampedSearchLimit = Math.min(50, Math.max(1, Number(payload.limit) || 10));
   const upstreamPayload = PUBLIC_SEARCH_EXACT_PERSON_PHRASES.has(normalizedQueryForFetch)
     ? { ...payload, q: query, limit: 50 }
-    : payload;
+    : { ...payload, limit: clampedSearchLimit };
   const upstreamRequest = new Request(request.url, {
     method: "POST",
     headers: request.headers,
@@ -11611,10 +11788,23 @@ async function handleXAdminLogin(request, env) {
   }
 
   const rateState = await xAdminLoginRateState(request, env);
+  // SEC-REMEDIATION: authoritative server-side throttle. The sealed-cookie
+  // counter above resets when the client clears the cookie; this KV-backed
+  // per-IP counter does not.
+  // SEC-REMEDIATION: atomic admission — the attempt is recorded here, at
+  // the gate, so concurrent attempts cannot all slip past a peek.
+  if (!(await gahSecAdminLoginAdmit(env, request))) {
+    const blockedHeaders = xPublisherHeaders({
+      "Set-Cookie": await xAdminLoginRateCookie(env, rateState)
+    });
+    blockedHeaders.set("Content-Type", "text/html; charset=utf-8");
+    return new Response(xAdminLoginHtml({ error: true, returnTo: xSafeReturnPath(null) }), { status: 429, headers: blockedHeaders });
+  }
   const form = await request.formData().catch(() => null);
   const submitted = String(form?.get("admin_token") || "");
   const returnTo = xSafeReturnPath(form?.get("return_to"));
   if (xAdminLoginRateBlocked(rateState) || !submitted || !timingSafeEqualText(submitted, env.X_ADMIN_TOKEN)) {
+    // SEC-REMEDIATION: the failed attempt was already recorded at admission.
     const headers = xPublisherHeaders({
       "Set-Cookie": await xAdminLoginRateCookie(env, rateState)
     });
@@ -11628,6 +11818,7 @@ async function handleXAdminLogin(request, env) {
   });
   for (const cookie of await xAdminSessionCookies(env)) headers.append("Set-Cookie", cookie);
   headers.append("Set-Cookie", clearScopedSecureCookie(X_ADMIN_LOGIN_RATE_COOKIE_NAME, "/admin/login", "Strict"));
+  await gahSecAdminLoginClear(env, request); // SEC-REMEDIATION: successful login clears the server-side counter
   return new Response(null, { status: 302, headers });
 }
 

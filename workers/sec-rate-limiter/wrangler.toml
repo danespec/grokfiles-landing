@@ -1,0 +1,16 @@
+# gah-sec-rate-limiter — standalone Worker for the GAH security rate limiter.
+# Deploy FIRST, then bind it from the Pages project (see README.md).
+# No production deployment is authorized by this branch; this file documents
+# the required configuration for the reviewer (ChatGPT).
+
+name = "gah-sec-rate-limiter"
+main = "src/index.js"
+compatibility_date = "2026-10-09"
+
+[[durable_objects.bindings]]
+name = "GAH_SEC_RATE_LIMITER"
+class_name = "GahSecRateLimiterDO"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["GahSecRateLimiterDO"]

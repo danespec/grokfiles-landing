@@ -2,3 +2,20 @@ name = "grokfiles-landing"
 pages_build_output_dir = "."
 compatibility_date = "2026-10-09"
 # Production bindings and credentials are intentionally omitted.
+
+# --- Security rate limiter (ren/security-remediation, review only) ---
+# Architecture: the GahSecRateLimiterDO Durable Object lives in the
+# SEPARATE worker project workers/sec-rate-limiter/ (Pages cannot host
+# Durable Objects). Deploy that worker first, then bind it here via
+# script_name. Without this binding the throttles fall back to KV
+# best-effort (approximate under concurrency) and then fail open.
+# (Configure in the Pages project — dashboard or wrangler pages config;
+# shown here as wrangler TOML for reference. NOT active: commented out.)
+# [[durable_objects.bindings]]
+# name = "GAH_SEC_RATE_LIMITER"
+# class_name = "GahSecRateLimiterDO"
+# script_name = "gah-sec-rate-limiter"
+#
+# The rate-limiter worker's own wrangler.toml
+# (workers/sec-rate-limiter/wrangler.toml) carries the [[migrations]]
+# new_classes entry. Do not define migrations here.
