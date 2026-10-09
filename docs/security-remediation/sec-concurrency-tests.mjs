@@ -1,8 +1,12 @@
 // Concurrency tests for the SEC-REMEDIATION rate limiter.
 // Run: node sec-concurrency-tests.mjs
-// Extracts the REAL GahSecRateLimiterDO class from _worker.js and drives it
-// with a mock Durable-Object storage, serialized the way the DO runtime
+// Extracts the REAL GahSecRateLimiterDO class from
+// workers/sec-rate-limiter/src/index.js and drives it with a mock
+// Durable-Object storage, serialized the way the DO runtime
 // serializes fetch() handlers (one at a time per instance).
+// NOTE: workers/sec-rate-limiter/test/run.mjs runs the same scenarios
+// against the real class under Miniflare (workerd) — that is the
+// authoritative runtime evidence.
 
 class GahSecRateLimiterDO {
   constructor(state) {

@@ -3964,52 +3964,10 @@ const GAH_SEC_ADMIN_LOGIN_PREFIX = "gah:sec:admin-login-fail:";
 const GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS = 60 * 15; // matches X_ADMIN_LOGIN_WINDOW_SECONDS
 const GAH_SEC_ADMIN_LOGIN_MAX_FAILURES = 5;         // matches X_ADMIN_LOGIN_MAX_FAILURES
 
-export class GahSecRateLimiterDO {
-  constructor(state) {
-    this.state = state;
-  }
-
-  // Body: { op: "check"|"peek"|"clear", scope, key, max, windowMs }.
-  // check and peek are atomic: one DO instance serves one fetch at a time.
-  async fetch(request) {
-    let body;
-    try {
-      body = await request.json();
-    } catch (_) {
-      return Response.json({ ok: false, error: "invalid_body" }, { status: 400 });
-    }
-    const op = body.op === "peek" || body.op === "clear" ? body.op : "check";
-    const scope = String(body.scope || "default").slice(0, 64);
-    const key = String(body.key || "unknown").slice(0, 64);
-    const windowMs = Math.max(1000, Number(body.windowMs) || 60000);
-    const max = Math.max(1, Number(body.max) || 60);
-    const windowId = Math.floor(Date.now() / windowMs);
-    const keyPrefix = `rl:${scope}:${key}:`;
-    const storageKey = `${keyPrefix}${windowId}`;
-
-    if (op === "clear") {
-      // Drop this scope+key's counters (used after a successful admin login).
-      const listed = await this.state.storage.list({ prefix: keyPrefix });
-      for (const name of listed.keys()) {
-        await this.state.storage.delete(name);
-      }
-      return Response.json({ ok: true, cleared: true });
-    }
-
-    const count = Number((await this.state.storage.get(storageKey)) || 0);
-    if (op === "peek") {
-      return Response.json({ ok: true, limited: count >= max, count });
-    }
-    if (count >= max) {
-      return Response.json({ ok: false, limited: true, count }, { status: 429 });
-    }
-    // Best-effort cleanup of the previous window so storage stays bounded
-    // without depending on TTL support.
-    await this.state.storage.delete(`${keyPrefix}${windowId - 1}`).catch(() => undefined);
-    await this.state.storage.put(storageKey, count + 1);
-    return Response.json({ ok: true, limited: false, count: count + 1 });
-  }
-}
+// NOTE (ren/security-remediation): GahSecRateLimiterDO now lives in
+// workers/sec-rate-limiter/src/index.js (separate Worker project — Pages
+// cannot host Durable Objects). This worker reaches it through the
+// env.GAH_SEC_RATE_LIMITER binding (script_name).
 
 function gahSecClientIp(request) {
   const fwd = request.headers.get("X-Forwarded-For");
@@ -4026,7 +3984,12 @@ async function gahSecDoCall(env, payload) {
   const ns = env.GAH_SEC_RATE_LIMITER;
   if (!ns || typeof ns.idFromName !== "function") return null;
   try {
-    const stub = ns.get(ns.idFromName("gah-sec-global"));
+    // Shard limiter instances by scope+key (usually scope + client IP) so
+    // all website traffic does not funnel through one global DO instance.
+    // Each shard is single-threaded; a spike from one IP cannot contend
+    // with anyone else's counters.
+    const shard = `${String(payload.scope || "default").slice(0, 64)}:${String(payload.key || "unknown").slice(0, 64)}`;
+    const stub = ns.get(ns.idFromName(shard));
     const res = await stub.fetch(
       new Request("https://gah-sec.internal/rate-limit", {
         method: "POST",
