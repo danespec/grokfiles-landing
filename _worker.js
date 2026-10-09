@@ -3938,12 +3938,23 @@ function isBirthdayBookEvidenceV2Path(path) {
 }
 
 // ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 // SEC-REMEDIATION (ren/security-remediation): worker-side abuse throttles.
-// Defense-in-depth in front of the Cloudflare edge rules. Reuses the
-// KV-backed minute-window pattern already established by the Phang ingest
-// limiter. FAILS OPEN when no KV binding is present (availability first);
-// strict enforcement requires a bound KV namespace. Tunables are the
-// GAH_SEC_* constants below.
+//
+// Architecture (revised after review): atomic enforcement lives in the
+// GahSecRateLimiterDO Durable Object below. The first revision used KV
+// read-modify-write, which is NOT atomic — under concurrency, N simultaneous
+// requests can all read the same counter before any write lands (review
+// repro: 25 requests passed a limit of 3; 10 simultaneous admin failures
+// recorded as one). A Durable Object instance is single-threaded, so
+// check-and-increment inside one fetch() cannot interleave: the throttle
+// is exact.
+//
+// Wiring: [[durable_objects.bindings]] name = "GAH_SEC_RATE_LIMITER",
+// class_name = "GahSecRateLimiterDO" (see wrangler.example.toml), plus a
+// migrations new_classes entry. When the binding is absent the helpers
+// fall back to KV best-effort (documented approximate) and then fail open.
+// Throttles are defense-in-depth in front of the Cloudflare edge rules.
 // ---------------------------------------------------------------------------
 const GAH_SEC_RATE_PREFIX = "gah:sec:rate:";
 const GAH_SEC_RATE_WINDOW_MS = 60 * 1000;
@@ -3952,6 +3963,53 @@ const GAH_SEC_A2A_SEND_MAX_PER_MIN = 30;
 const GAH_SEC_ADMIN_LOGIN_PREFIX = "gah:sec:admin-login-fail:";
 const GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS = 60 * 15; // matches X_ADMIN_LOGIN_WINDOW_SECONDS
 const GAH_SEC_ADMIN_LOGIN_MAX_FAILURES = 5;         // matches X_ADMIN_LOGIN_MAX_FAILURES
+
+export class GahSecRateLimiterDO {
+  constructor(state) {
+    this.state = state;
+  }
+
+  // Body: { op: "check"|"peek"|"clear", scope, key, max, windowMs }.
+  // check and peek are atomic: one DO instance serves one fetch at a time.
+  async fetch(request) {
+    let body;
+    try {
+      body = await request.json();
+    } catch (_) {
+      return Response.json({ ok: false, error: "invalid_body" }, { status: 400 });
+    }
+    const op = body.op === "peek" || body.op === "clear" ? body.op : "check";
+    const scope = String(body.scope || "default").slice(0, 64);
+    const key = String(body.key || "unknown").slice(0, 64);
+    const windowMs = Math.max(1000, Number(body.windowMs) || 60000);
+    const max = Math.max(1, Number(body.max) || 60);
+    const windowId = Math.floor(Date.now() / windowMs);
+    const keyPrefix = `rl:${scope}:${key}:`;
+    const storageKey = `${keyPrefix}${windowId}`;
+
+    if (op === "clear") {
+      // Drop this scope+key's counters (used after a successful admin login).
+      const listed = await this.state.storage.list({ prefix: keyPrefix });
+      for (const name of listed.keys()) {
+        await this.state.storage.delete(name);
+      }
+      return Response.json({ ok: true, cleared: true });
+    }
+
+    const count = Number((await this.state.storage.get(storageKey)) || 0);
+    if (op === "peek") {
+      return Response.json({ ok: true, limited: count >= max, count });
+    }
+    if (count >= max) {
+      return Response.json({ ok: false, limited: true, count }, { status: 429 });
+    }
+    // Best-effort cleanup of the previous window so storage stays bounded
+    // without depending on TTL support.
+    await this.state.storage.delete(`${keyPrefix}${windowId - 1}`).catch(() => undefined);
+    await this.state.storage.put(storageKey, count + 1);
+    return Response.json({ ok: true, limited: false, count: count + 1 });
+  }
+}
 
 function gahSecClientIp(request) {
   const fwd = request.headers.get("X-Forwarded-For");
@@ -3962,23 +4020,55 @@ function gahSecClientIp(request) {
   ).slice(0, 64);
 }
 
-async function gahSecRateLimit(env, scope, request, maxPerMinute) {
+// Subrequest to the rate-limiter DO. Returns the parsed JSON body, or null
+// when the binding is absent or the subrequest fails (caller falls back).
+async function gahSecDoCall(env, payload) {
+  const ns = env.GAH_SEC_RATE_LIMITER;
+  if (!ns || typeof ns.idFromName !== "function") return null;
+  try {
+    const stub = ns.get(ns.idFromName("gah-sec-global"));
+    const res = await stub.fetch(
+      new Request("https://gah-sec.internal/rate-limit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+    );
+    return await res.json().catch(() => null);
+  } catch (_) {
+    return null;
+  }
+}
+
+async function gahSecKvRateLimit(env, scope, key, maxPerMinute) {
+  // Fallback path: KV read-modify-write. APPROXIMATE under concurrency —
+  // acceptable only as defense-in-depth until the DO binding is configured.
   // NOTE: reads bypass the Phang KV read cache on purpose — throttles need
   // fresh counters, not cached ones.
   const store = phangStore(env);
   if (!store) return { ok: true, limited: false, reason: "no_kv_fail_open" };
-  const kvKey = `${GAH_SEC_RATE_PREFIX}${scope}:${gahSecClientIp(request)}:${Math.floor(Date.now() / GAH_SEC_RATE_WINDOW_MS)}`;
+  const kvKey = `${GAH_SEC_RATE_PREFIX}${scope}:${key}:${Math.floor(Date.now() / GAH_SEC_RATE_WINDOW_MS)}`;
   let count = 0;
   try {
     count = Number(await store.binding.get(kvKey)) || 0;
   } catch (_) {
     return { ok: true, limited: false, reason: "kv_read_failed_fail_open" };
   }
-  if (count >= maxPerMinute) return { ok: false, limited: true };
+  if (count >= maxPerMinute) return { ok: false, limited: true, via: "kv-approximate" };
   try {
     await store.binding.put(kvKey, String(count + 1), { expirationTtl: 180 });
   } catch (_) { /* best-effort: never fail a legitimate request on a KV write error */ }
-  return { ok: true, limited: false };
+  return { ok: true, limited: false, via: "kv-approximate" };
+}
+
+async function gahSecRateLimit(env, scope, request, maxPerMinute) {
+  const key = gahSecClientIp(request);
+  // Preferred path: atomic check-and-increment in the DO.
+  const viaDo = await gahSecDoCall(env, {
+    op: "check", scope, key, max: maxPerMinute, windowMs: GAH_SEC_RATE_WINDOW_MS,
+  });
+  if (viaDo) return { ok: !viaDo.limited, limited: !!viaDo.limited, via: "durable-object" };
+  return gahSecKvRateLimit(env, scope, key, maxPerMinute);
 }
 
 function gahSecRateLimitedJson(retryAfterSeconds = 60) {
@@ -3994,15 +4084,22 @@ function gahSecRateLimitedJson(retryAfterSeconds = 60) {
 
 // Server-side admin-login throttle. The sealed-cookie counter used by
 // xAdminLoginRateState is client-resettable (clearing the cookie restarts
-// the count); this KV-backed per-IP counter is the authoritative gate.
+// the count); the counter here is authoritative.
 async function gahSecAdminLoginBlocked(env, request) {
+  const key = gahSecClientIp(request);
+  const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+  const viaDo = await gahSecDoCall(env, {
+    op: "peek", scope: "admin-login", key,
+    max: GAH_SEC_ADMIN_LOGIN_MAX_FAILURES, windowMs,
+  });
+  if (viaDo) return !!viaDo.limited;
   const store = phangStore(env);
   if (!store) return false; // fail open: the sealed-cookie mechanism still applies
   try {
-    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${gahSecClientIp(request)}`);
+    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
     if (!raw) return false;
     const rec = JSON.parse(raw);
-    const windowStart = Date.now() - GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+    const windowStart = Date.now() - windowMs;
     return rec.firstAt > windowStart && Number(rec.failures || 0) >= GAH_SEC_ADMIN_LOGIN_MAX_FAILURES;
   } catch (_) {
     return false;
@@ -4010,16 +4107,30 @@ async function gahSecAdminLoginBlocked(env, request) {
 }
 
 async function gahSecAdminLoginRecord(env, request, failed) {
+  const key = gahSecClientIp(request);
+  const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+  if (!failed) {
+    // Successful login clears the counter.
+    const cleared = await gahSecDoCall(env, { op: "clear", scope: "admin-login", key, windowMs });
+    if (cleared) return;
+    const store = phangStore(env);
+    if (!store) return;
+    try { await store.binding.delete(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`); } catch (_) { /* best-effort */ }
+    return;
+  }
+  const viaDo = await gahSecDoCall(env, {
+    op: "check", scope: "admin-login", key,
+    max: GAH_SEC_ADMIN_LOGIN_MAX_FAILURES, windowMs,
+  });
+  if (viaDo) return;
   const store = phangStore(env);
   if (!store) return;
-  const key = `${GAH_SEC_ADMIN_LOGIN_PREFIX}${gahSecClientIp(request)}`;
   try {
-    if (!failed) { await store.binding.delete(key); return; }
-    const raw = await store.binding.get(key);
+    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
     const rec = raw ? JSON.parse(raw) : { firstAt: 0, failures: 0 };
-    const windowStart = Date.now() - GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+    const windowStart = Date.now() - windowMs;
     const inWindow = rec.firstAt > windowStart;
-    await store.binding.put(key, JSON.stringify({
+    await store.binding.put(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`, JSON.stringify({
       firstAt: inWindow ? rec.firstAt : Date.now(),
       failures: inWindow ? Number(rec.failures || 0) + 1 : 1
     }), { expirationTtl: GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS + 60 });

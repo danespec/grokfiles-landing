@@ -2,3 +2,17 @@ name = "grokfiles-landing"
 pages_build_output_dir = "."
 compatibility_date = "2026-10-09"
 # Production bindings and credentials are intentionally omitted.
+
+# --- Security rate limiter (ren/security-remediation, review only) ---
+# The worker-side abuse throttles (POST /api/search, POST /a2a/v1/message:send,
+# admin-login) enforce atomically through this Durable Object. Without the
+# binding, the throttles fall back to KV best-effort (approximate under
+# concurrency) and then fail open. Uncomment and run `wrangler deploy` with
+# a migrations entry to enable strict enforcement.
+# [[durable_objects.bindings]]
+# name = "GAH_SEC_RATE_LIMITER"
+# class_name = "GahSecRateLimiterDO"
+#
+# [[migrations]]
+# tag = "v1"
+# new_classes = ["GahSecRateLimiterDO"]
