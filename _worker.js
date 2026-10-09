@@ -3060,6 +3060,14 @@ async function handleGahA2aSend(request, env) {
       headers: { "Content-Type": "text/plain; charset=utf-8", "Allow": "POST", "Cache-Control": "no-store" }
     });
   }
+  // SEC-REMEDIATION: worker-side abuse throttle on the A2A send endpoint.
+  const a2aThrottle = await gahSecRateLimit(env, "a2a-send", request, GAH_SEC_A2A_SEND_MAX_PER_MIN);
+  if (a2aThrottle.limited) {
+    return new Response(JSON.stringify({ status: 429, detail: "Rate limited. Retry shortly." }), {
+      status: 429,
+      headers: { "Content-Type": "application/problem+json; charset=utf-8", "Cache-Control": "no-store", "Retry-After": "60" }
+    });
+  }
   let body;
   try { body = await request.json(); }
   catch (_) {
@@ -3929,6 +3937,95 @@ function isBirthdayBookEvidenceV2Path(path) {
   return path === "/research/evidence/birthday-book-v2" || path.startsWith("/research/evidence/birthday-book-v2/");
 }
 
+// ---------------------------------------------------------------------------
+// SEC-REMEDIATION (ren/security-remediation): worker-side abuse throttles.
+// Defense-in-depth in front of the Cloudflare edge rules. Reuses the
+// KV-backed minute-window pattern already established by the Phang ingest
+// limiter. FAILS OPEN when no KV binding is present (availability first);
+// strict enforcement requires a bound KV namespace. Tunables are the
+// GAH_SEC_* constants below.
+// ---------------------------------------------------------------------------
+const GAH_SEC_RATE_PREFIX = "gah:sec:rate:";
+const GAH_SEC_RATE_WINDOW_MS = 60 * 1000;
+const GAH_SEC_PUBLIC_SEARCH_MAX_PER_MIN = 60;
+const GAH_SEC_A2A_SEND_MAX_PER_MIN = 30;
+const GAH_SEC_ADMIN_LOGIN_PREFIX = "gah:sec:admin-login-fail:";
+const GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS = 60 * 15; // matches X_ADMIN_LOGIN_WINDOW_SECONDS
+const GAH_SEC_ADMIN_LOGIN_MAX_FAILURES = 5;         // matches X_ADMIN_LOGIN_MAX_FAILURES
+
+function gahSecClientIp(request) {
+  const fwd = request.headers.get("X-Forwarded-For");
+  return String(
+    request.headers.get("CF-Connecting-IP") ||
+    (fwd ? fwd.split(",")[0].trim() : "") ||
+    "unknown"
+  ).slice(0, 64);
+}
+
+async function gahSecRateLimit(env, scope, request, maxPerMinute) {
+  // NOTE: reads bypass the Phang KV read cache on purpose — throttles need
+  // fresh counters, not cached ones.
+  const store = phangStore(env);
+  if (!store) return { ok: true, limited: false, reason: "no_kv_fail_open" };
+  const kvKey = `${GAH_SEC_RATE_PREFIX}${scope}:${gahSecClientIp(request)}:${Math.floor(Date.now() / GAH_SEC_RATE_WINDOW_MS)}`;
+  let count = 0;
+  try {
+    count = Number(await store.binding.get(kvKey)) || 0;
+  } catch (_) {
+    return { ok: true, limited: false, reason: "kv_read_failed_fail_open" };
+  }
+  if (count >= maxPerMinute) return { ok: false, limited: true };
+  try {
+    await store.binding.put(kvKey, String(count + 1), { expirationTtl: 180 });
+  } catch (_) { /* best-effort: never fail a legitimate request on a KV write error */ }
+  return { ok: true, limited: false };
+}
+
+function gahSecRateLimitedJson(retryAfterSeconds = 60) {
+  return new Response(JSON.stringify({ ok: false, error: "rate_limited", retry_after_seconds: retryAfterSeconds }), {
+    status: 429,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
+      "Retry-After": String(retryAfterSeconds)
+    }
+  });
+}
+
+// Server-side admin-login throttle. The sealed-cookie counter used by
+// xAdminLoginRateState is client-resettable (clearing the cookie restarts
+// the count); this KV-backed per-IP counter is the authoritative gate.
+async function gahSecAdminLoginBlocked(env, request) {
+  const store = phangStore(env);
+  if (!store) return false; // fail open: the sealed-cookie mechanism still applies
+  try {
+    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${gahSecClientIp(request)}`);
+    if (!raw) return false;
+    const rec = JSON.parse(raw);
+    const windowStart = Date.now() - GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+    return rec.firstAt > windowStart && Number(rec.failures || 0) >= GAH_SEC_ADMIN_LOGIN_MAX_FAILURES;
+  } catch (_) {
+    return false;
+  }
+}
+
+async function gahSecAdminLoginRecord(env, request, failed) {
+  const store = phangStore(env);
+  if (!store) return;
+  const key = `${GAH_SEC_ADMIN_LOGIN_PREFIX}${gahSecClientIp(request)}`;
+  try {
+    if (!failed) { await store.binding.delete(key); return; }
+    const raw = await store.binding.get(key);
+    const rec = raw ? JSON.parse(raw) : { firstAt: 0, failures: 0 };
+    const windowStart = Date.now() - GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+    const inWindow = rec.firstAt > windowStart;
+    await store.binding.put(key, JSON.stringify({
+      firstAt: inWindow ? rec.firstAt : Date.now(),
+      failures: inWindow ? Number(rec.failures || 0) + 1 : 1
+    }), { expirationTtl: GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS + 60 });
+  } catch (_) { /* best-effort */ }
+}
+
 async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
@@ -3939,6 +4036,12 @@ async function proxyProofLayer(request, env = {}) {
 
   const headersForUpstream = new Headers(request.headers);
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "apex-proof-layer");
+  // SEC-REMEDIATION (ren/security-remediation): never forward client
+  // credentials to the upstream wiki host. The member session cookie and
+  // any Authorization header are apex-only; the upstream proof layer
+  // authenticates this hop via WIKI_INTERNAL_PROXY_HEADER.
+  headersForUpstream.delete("cookie");
+  headersForUpstream.delete("authorization");
   const upstreamInit = {
     method: request.method,
     headers: headersForUpstream,
@@ -5006,6 +5109,9 @@ async function enrichPublicSearchRowsWithVisualEvidence(rows, env) {
 }
 
 async function handlePublicSearch(request, env) {
+  // SEC-REMEDIATION: worker-side abuse throttle on the public search proxy.
+  const searchThrottle = await gahSecRateLimit(env, "public-search", request, GAH_SEC_PUBLIC_SEARCH_MAX_PER_MIN);
+  if (searchThrottle.limited) return gahSecRateLimitedJson();
   let raw = "";
   let payload = {};
   try {
@@ -5027,9 +5133,13 @@ async function handlePublicSearch(request, env) {
   }
 
   const normalizedQueryForFetch = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  // SEC-REMEDIATION (ren/security-remediation): clamp the client-supplied
+  // page size before proxying. The upstream engine must never receive an
+  // unbounded limit.
+  const clampedSearchLimit = Math.min(50, Math.max(1, Number(payload.limit) || 10));
   const upstreamPayload = PUBLIC_SEARCH_EXACT_PERSON_PHRASES.has(normalizedQueryForFetch)
     ? { ...payload, q: query, limit: 50 }
-    : payload;
+    : { ...payload, limit: clampedSearchLimit };
   const upstreamRequest = new Request(request.url, {
     method: "POST",
     headers: request.headers,
@@ -11568,10 +11678,21 @@ async function handleXAdminLogin(request, env) {
   }
 
   const rateState = await xAdminLoginRateState(request, env);
+  // SEC-REMEDIATION: authoritative server-side throttle. The sealed-cookie
+  // counter above resets when the client clears the cookie; this KV-backed
+  // per-IP counter does not.
+  if (await gahSecAdminLoginBlocked(env, request)) {
+    const blockedHeaders = xPublisherHeaders({
+      "Set-Cookie": await xAdminLoginRateCookie(env, rateState)
+    });
+    blockedHeaders.set("Content-Type", "text/html; charset=utf-8");
+    return new Response(xAdminLoginHtml({ error: true, returnTo: xSafeReturnPath(null) }), { status: 429, headers: blockedHeaders });
+  }
   const form = await request.formData().catch(() => null);
   const submitted = String(form?.get("admin_token") || "");
   const returnTo = xSafeReturnPath(form?.get("return_to"));
   if (xAdminLoginRateBlocked(rateState) || !submitted || !timingSafeEqualText(submitted, env.X_ADMIN_TOKEN)) {
+    await gahSecAdminLoginRecord(env, request, true); // SEC-REMEDIATION
     const headers = xPublisherHeaders({
       "Set-Cookie": await xAdminLoginRateCookie(env, rateState)
     });
@@ -11585,6 +11706,7 @@ async function handleXAdminLogin(request, env) {
   });
   for (const cookie of await xAdminSessionCookies(env)) headers.append("Set-Cookie", cookie);
   headers.append("Set-Cookie", clearScopedSecureCookie(X_ADMIN_LOGIN_RATE_COOKIE_NAME, "/admin/login", "Strict"));
+  await gahSecAdminLoginRecord(env, request, false); // SEC-REMEDIATION: successful login clears the server-side counter
   return new Response(null, { status: 302, headers });
 }
 
