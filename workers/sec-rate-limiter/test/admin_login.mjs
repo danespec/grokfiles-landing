@@ -1,6 +1,6 @@
 // Handler-level tests for the atomic admin-login throttle.
 //
-// Drives the REAL gahSecAdminLoginAdmit / gahSecAdminLoginClear functions
+// Drives the REAL gahSecAdminLoginAdmit / gahSecAdminLoginRefund functions
 // (extracted from the Pages _worker.js) against a REAL Durable Object
 // namespace under Miniflare (workerd), exercising the complete handler
 // sequence — admit -> token verification -> clear — with simultaneous
@@ -62,11 +62,11 @@ const loader = new Function(
     extractFn(src, "gahSecClientIp"),
     extractAsyncFn(src, "gahSecDoCall"),
     extractAsyncFn(src, "gahSecAdminLoginAdmit"),
-    extractAsyncFn(src, "gahSecAdminLoginClear"),
-    `return { gahSecClientIp, gahSecAdminLoginAdmit, gahSecAdminLoginClear };`,
+    extractAsyncFn(src, "gahSecAdminLoginRefund"),
+    `return { gahSecClientIp, gahSecAdminLoginAdmit, gahSecAdminLoginRefund };`,
   ].join("\n")
 );
-const { gahSecClientIp, gahSecAdminLoginAdmit, gahSecAdminLoginClear } = loader();
+const { gahSecClientIp, gahSecAdminLoginAdmit, gahSecAdminLoginRefund } = loader();
 
 const mf = new Miniflare({
   modules: true,
@@ -88,7 +88,7 @@ const fakeReq = (ip, extraHeaders = {}) =>
 async function simulatedAdminLoginPost(env, req, tokenOk) {
   if (!(await gahSecAdminLoginAdmit(env, req))) return 429;
   if (!tokenOk) return 401; // failure recorded at admission
-  await gahSecAdminLoginClear(env, req);
+  await gahSecAdminLoginRefund(env, req);
   return 302;
 }
 
@@ -112,15 +112,36 @@ const env = { GAH_SEC_RATE_LIMITER: ns };
   t("10 simultaneous bad logins: 5 blocked at gate", blocked === 5, `blocked=${blocked}`);
 }
 
-// Test 2: a good token after failures clears the counter.
+// Test 2: failures-only counting — a success refunds one slot, it does not
+// wipe the counter. 2 failures + 1 success leaves count=1 (not 0).
 {
-  const r1 = await simulatedAdminLoginPost(env, fakeReq("203.0.113.51"), false);
-  const r2 = await simulatedAdminLoginPost(env, fakeReq("203.0.113.51"), false);
-  const ok = await simulatedAdminLoginPost(env, fakeReq("203.0.113.51"), true);
-  const after = await simulatedAdminLoginPost(env, fakeReq("203.0.113.51"), false);
-  t("failures admitted before success", r1 === 401 && r2 === 401);
-  t("good token succeeds and clears", ok === 302);
-  t("counter cleared: next failure admitted", after === 401);
+  const ip = "203.0.113.51";
+  await simulatedAdminLoginPost(env, fakeReq(ip), false); // count 1
+  await simulatedAdminLoginPost(env, fakeReq(ip), false); // count 2
+  const ok = await simulatedAdminLoginPost(env, fakeReq(ip), true); // admit+refund: net zero, count stays 2
+  t("good token succeeds and refunds one slot", ok === 302);
+  // Count is 2 (the two failures; the success left no trace). 2 more
+  // failures admitted, then blocked. (With clear-on-success the count would
+  // be 0 and all 4 would be admitted.)
+  const rs = [];
+  for (let i = 0; i < 4; i++) rs.push(await simulatedAdminLoginPost(env, fakeReq(ip), false));
+  t("only failures consume quota (3 admitted, 4th blocked)",
+    rs[0] === 401 && rs[1] === 401 && rs[2] === 401 && rs[3] === 429,
+    `got ${rs.join(",")}`);
+}
+
+// Test 2b: shared IP — one user's success does not wipe another's failures.
+// (With clear-on-success, the legit login would reset the attacker's count
+// to 0; with refund it stays at 2.)
+{
+  const ip = "203.0.113.52";
+  await simulatedAdminLoginPost(env, fakeReq(ip), false); // attacker: 1
+  await simulatedAdminLoginPost(env, fakeReq(ip), false); // attacker: 2
+  await simulatedAdminLoginPost(env, fakeReq(ip), true);  // legit user: net zero, count stays 2
+  const rs = [];
+  for (let i = 0; i < 4; i++) rs.push(await simulatedAdminLoginPost(env, fakeReq(ip), false));
+  t("shared IP: attacker's failures persist across another user's success",
+    rs[0] === 401 && rs[1] === 401 && rs[2] === 401 && rs[3] === 429, `got ${rs.join(",")}`);
 }
 
 // Test 3: trusted client IP — CF-Connecting-IP wins over spoofed X-Forwarded-For.

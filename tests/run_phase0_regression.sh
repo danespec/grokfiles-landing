@@ -3,12 +3,13 @@
 #
 # Runs every test suite from the three integrated workstreams against their
 # combined behavior:
-#   1. tests/test_exact_id_policy.mjs      — exact-ID policy (21 checks)
+#   1. tests/test_exact_id_policy.mjs      — exact-ID policy (27 checks)
 #   2. workers/lib/test_identifiers.mjs    — identifier module (37 checks)
-#   3. workers/sec-rate-limiter/test/run.mjs        — DO under Miniflare (8)
-#   4. workers/sec-rate-limiter/test/admin_login.mjs — handler-level (12)
-#   5. docs/security-remediation/sec-concurrency-tests.mjs (8)
-#   6. docs/security-remediation/sec-test-harness.mjs       (8)
+#   3. tests/test_identifiers_sync.mjs     — codegen sync + wiring (6 checks)
+#   4. workers/sec-rate-limiter/test/run.mjs        — DO under Miniflare (8)
+#   5. workers/sec-rate-limiter/test/admin_login.mjs — handler-level (12)
+#   6. docs/security-remediation/sec-concurrency-tests.mjs (8)
+#   7. docs/security-remediation/sec-test-harness.mjs       (8)
 #
 # Run: bash tests/run_phase0_regression.sh   (from the repo root)
 set -u
@@ -26,6 +27,7 @@ run() {
 
 run "exact-id policy" node tests/test_exact_id_policy.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
+run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 
 if [ ! -d workers/sec-rate-limiter/node_modules ]; then
   echo "Installing miniflare for DO runtime tests..."

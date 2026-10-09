@@ -16,7 +16,7 @@ export class GahSecRateLimiterDO {
     this.state = state;
   }
 
-  // Body: { op: "check"|"peek"|"clear", scope, key, max, windowMs }.
+  // Body: { op: "check"|"peek"|"clear"|"refund", scope, key, max, windowMs }.
   // check and peek are atomic: one DO instance serves one fetch at a time.
   async fetch(request) {
     let body;
@@ -25,7 +25,7 @@ export class GahSecRateLimiterDO {
     } catch (_) {
       return Response.json({ ok: false, error: "invalid_body" }, { status: 400 });
     }
-    const op = body.op === "peek" || body.op === "clear" ? body.op : "check";
+    const op = body.op === "peek" || body.op === "clear" || body.op === "refund" ? body.op : "check";
     const scope = String(body.scope || "default").slice(0, 64);
     const key = String(body.key || "unknown").slice(0, 64);
     const windowMs = Math.max(1000, Number(body.windowMs) || 60000);
@@ -33,6 +33,19 @@ export class GahSecRateLimiterDO {
     const windowId = Math.floor(Date.now() / windowMs);
     const keyPrefix = `rl:${scope}:${key}:`;
     const storageKey = `${keyPrefix}${windowId}`;
+
+    // Refund one failure (successful login). Floor at zero; delete the key
+    // when it reaches zero so storage stays bounded. Atomic like check.
+    if (op === "refund") {
+      const current = Number((await this.state.storage.get(storageKey)) || 0);
+      const next = Math.max(0, current - 1);
+      if (next === 0) {
+        await this.state.storage.delete(storageKey);
+      } else {
+        await this.state.storage.put(storageKey, next);
+      }
+      return Response.json({ ok: true, refunded: true, count: next });
+    }
 
     if (op === "clear") {
       // Drop this scope+key's counters (used after a successful admin login).

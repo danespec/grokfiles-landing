@@ -4087,14 +4087,31 @@ async function gahSecAdminLoginAdmit(env, request) {
   }
 }
 
-async function gahSecAdminLoginClear(env, request) {
+async function gahSecAdminLoginRefund(env, request) {
+  // Failures-only counting: a successful login refunds exactly one failure
+  // slot (atomic decrement, floor zero) instead of clearing the counter.
+  // Clearing would let one user's success wipe another user's failures on a
+  // shared IP; refunding preserves the "only failed credentials count"
+  // invariant even within bursts.
   const key = gahSecClientIp(request);
   const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
-  const cleared = await gahSecDoCall(env, { op: "clear", scope: "admin-login", key, windowMs });
-  if (cleared) return;
+  const refunded = await gahSecDoCall(env, { op: "refund", scope: "admin-login", key, windowMs });
+  if (refunded) return;
   const store = phangStore(env);
   if (!store) return;
-  try { await store.binding.delete(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`); } catch (_) { /* best-effort */ }
+  try {
+    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
+    if (!raw) return;
+    const rec = JSON.parse(raw);
+    const failures = Math.max(0, Number(rec.failures || 0) - 1);
+    if (failures === 0) {
+      await store.binding.delete(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
+    } else {
+      await store.binding.put(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`, JSON.stringify({
+        firstAt: rec.firstAt, failures
+      }), { expirationTtl: GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS + 60 });
+    }
+  } catch (_) { /* best-effort */ }
 }
 
 async function proxyProofLayer(request, env = {}) {
@@ -4925,25 +4942,179 @@ function publicSearchRowRelevant(row, query) {
   return matched >= Math.min(2, Math.ceil(tokens.length / 2));
 }
 
+// BEGIN GENERATED IDENTIFIERS (from workers/lib/gah_identifiers.js — do not edit by hand; run node tools/sync_identifiers.mjs)
+/**
+ * gah_identifiers.js — canonical EFTA / Barak identifier resolution.
+ *
+ * JS port of docs/phase0/search-contract-tests/gah_search.py (the contract
+ * reference implementation, §2 and §7). Semantics are intentionally identical;
+ * tests/test_identifiers.mjs pins the behavior against the same 37 checks.
+ *
+ * EFTA records and Barak archive records are separate collections with
+ * separate identifier namespaces. This module enforces the separation:
+ * classifyQuery() tells the caller which collection an identifier belongs
+ * to, and missingRecordResponse() builds the §7 cross-collection hint
+ * instead of silence.
+ *
+ * Pure functions only — no I/O, no Worker APIs. Usable from the Pages
+ * worker, the rate-limiter worker, and Node test harnesses.
+ */
+
+const EFTA_CANONICAL = /^EFTA\d{8}$/;
+const BARAK_CANONICAL = /^BARAK-\d{3}-\d{3}$/;
+
+/**
+ * Normalize to canonical EFTA + 8 digits, or null.
+ * Contract §2.1: strip whitespace/separators, uppercase, pad digit run to 8.
+ */
+function normalizeEfta(raw) {
+  if (typeof raw !== "string") return null;
+  const s = raw.trim().toUpperCase().replace(/[\s\-_.]/g, "");
+  const m = /^EFTA(\d{1,8})$/.exec(s);
+  if (!m) return null;
+  return "EFTA" + m[1].padStart(8, "0");
+}
+
+/**
+ * Normalize to canonical BARAK-XXX-XXX, or null.
+ * Contract §2.2: exactly two digit groups; separators required between
+ * groups (a bare 'BARAK-174' is rejected, not split). An unseparated
+ * 6-digit run is split 3+3 ('BARAK174001' -> 'BARAK-174-001').
+ */
+function normalizeBarak(raw) {
+  if (typeof raw !== "string") return null;
+  const s = raw.trim().toUpperCase();
+  let m = /^BARAK(\d{6})$/.exec(s);
+  if (m) {
+    const d = m[1];
+    return `BARAK-${d.slice(0, 3)}-${d.slice(3)}`;
+  }
+  const t = s.replace(/[\s_.]+/g, "-").replace(/-{2,}/g, "-");
+  m = /^BARAK-(\d{1,3})-(\d{1,3})$/.exec(t);
+  if (!m) return null;
+  return `BARAK-${m[1].padStart(3, "0")}-${m[2].padStart(3, "0")}`;
+}
+
+/**
+ * Classify a raw query string.
+ * Returns { kind: "efta" | "barak" | "text", canonical }.
+ */
+function classifyQuery(raw) {
+  const efta = normalizeEfta(raw);
+  if (efta) return { kind: "efta", canonical: efta };
+  const barak = normalizeBarak(raw);
+  if (barak) return { kind: "barak", canonical: barak };
+  return { kind: "text", canonical: typeof raw === "string" ? raw.trim() : "" };
+}
+
+/**
+ * Build the §7 missing-record response row. Never returns silence.
+ * kind: "efta" | "barak" | "text"; searched_collection names the collection
+ * that was actually searched ("efta" | "barak").
+ */
+function missingRecordResponse(kind, identifier, searchedCollection) {
+  if (kind === "barak" && searchedCollection === "efta") {
+    return {
+      result_type: "missing_record",
+      collection: "efta",
+      collection_hint: "barak",
+      message: `${identifier} is not an EFTA record \u2014 it belongs to the Barak email archive.`,
+      suggested_route: "/barak/search?receipt=",
+    };
+  }
+  if (kind === "efta" && searchedCollection === "barak") {
+    return {
+      result_type: "missing_record",
+      collection: "barak",
+      collection_hint: "efta",
+      message: `${identifier} is not a Barak archive record \u2014 it is a DOJ release document.`,
+      suggested_route: `/archive/${identifier}`,
+    };
+  }
+  if (kind === "efta") {
+    return {
+      result_type: "missing_record",
+      collection: searchedCollection,
+      collection_hint: "efta",
+      message: `No EFTA record ${identifier} in the public index. The DOJ release may hold material not yet indexed.`,
+      suggested_route: null,
+    };
+  }
+  if (kind === "barak") {
+    return {
+      result_type: "missing_record",
+      collection: searchedCollection,
+      collection_hint: "barak",
+      message: `No Barak archive record ${identifier}. Recovered parents and open slots are listed on /barak.`,
+      suggested_route: "/barak",
+    };
+  }
+  return {
+    result_type: "missing_record",
+    collection: searchedCollection,
+    collection_hint: null,
+    message: "No records matched. Identifiers look like EFTA00033413 or BARAK-174-001.",
+    suggested_route: null,
+  };
+}
+// END GENERATED IDENTIFIERS
+
 // Phase 0 (ren/phase0-exact-id): exact-identifier policy.
 //
 // An exact-identifier query (EFTA-shaped) must return a VERIFIED record or
 // a missing-record response — NEVER a fabricated /archive/{id} route.
 //
-// "Verified" requires documented source evidence, not a bare identifier
-// match: the row must carry a resolvable URL (read_url/url/pdf_url/
-// source_url) or a documented source. A row whose identifier matches but
-// carries no evidence is NOT a verified record — it gets the missing-record
-// response. Missing-record responses never carry document-bundle or
-// visual-evidence URLs, and explanatory missing-record cards are excluded
-// from hit counts. Pure functions; unit-tested in
-// tests/test_exact_id_policy.mjs.
-function exactIdRowHasSourceEvidence(row) {
-  const url = row?.read_url || row?.url || row?.pdf_url || row?.source_url;
-  if (url && String(url).trim()) return true;
-  const src = row?.source;
-  if (src && String(src).trim()) return true;
-  return false;
+// "Verified" requires validated source evidence (see validateExactIdSource),
+// not a bare identifier match and not a bare non-empty string. A row whose
+// identifier matches but whose evidence fails validation is NOT a verified
+// record — it gets the missing-record response. Missing-record responses
+// never carry document-bundle or visual-evidence URLs, and explanatory
+// missing-record cards are excluded from hit counts. Pure functions;
+// unit-tested in tests/test_exact_id_policy.mjs.
+// Testable source-validation policy for exact-identifier hits.
+//
+// A row is a VERIFIED record iff its identifier matches the queried
+// identifier AND its source evidence passes validation:
+//   1. `source_verified === true` with a non-empty `source` string
+//      (explicit upstream-indexer attestation with documented provenance), OR
+//   2. a URL that is a plausible canonical record route:
+//      a. site-relative: exactly the canonical route for THIS identifier
+//         (/archive/EFTA########), OR
+//      b. absolute https URL on a trusted host (grokarchivehub.com,
+//         wiki.grokarchivehub.com, justice.gov, congress.gov, archives.gov
+//         and www variants).
+// A bare non-empty URL or source string is NEVER enough. Archive routes are
+// never manufactured: the route comes only from the row's own validated
+// URL, or it is left unset. Returns {valid, reason} for testability.
+function validateExactIdSource(row, exact) {
+  if (row?.source_verified === true && String(row.source || "").trim()) {
+    return { valid: true, reason: "upstream_attested" };
+  }
+  const url = String(row?.read_url || row?.url || row?.pdf_url || row?.source_url || "").trim();
+  if (!url) return { valid: false, reason: "no_url" };
+  if (url.startsWith("/")) {
+    const ok = /^\/archive\/EFTA\d{8}$/i.test(url) && url.toUpperCase().endsWith(String(exact).toUpperCase());
+    return ok
+      ? { valid: true, reason: "canonical_route" }
+      : { valid: false, reason: "non_canonical_relative_url" };
+  }
+  let u;
+  try {
+    u = new URL(url);
+  } catch (_) {
+    return { valid: false, reason: "malformed_url" };
+  }
+  if (u.protocol !== "https:") return { valid: false, reason: "non_https_url" };
+  const host = u.hostname.toLowerCase();
+  const trusted =
+    host === "grokarchivehub.com" || host === "www.grokarchivehub.com" ||
+    host === "wiki.grokarchivehub.com" ||
+    host === "justice.gov" || host === "www.justice.gov" ||
+    host === "congress.gov" || host === "www.congress.gov" ||
+    host === "archives.gov" || host === "www.archives.gov";
+  return trusted
+    ? { valid: true, reason: "trusted_host" }
+    : { valid: false, reason: "untrusted_host" };
 }
 
 // Explanatory missing-record cards are not hits.
@@ -4953,9 +5124,12 @@ function actualHitCount(rows) {
 
 function applyExactIdentifierPolicy(rows, exact, data) {
   const candidates = rows.filter((row) => publicSearchExactId(row) === exact);
-  const verified = candidates.find((row) => exactIdRowHasSourceEvidence(row));
+  const verified = candidates.find((row) => validateExactIdSource(row, exact).valid);
   if (verified) {
-    data.exact_identifier_route = verified.read_url || verified.url || `/archive/${exact}`;
+    // Never manufacture archive routes: the route is the row's own
+    // validated URL, or it is left unset.
+    const route = verified.read_url || verified.url || null;
+    if (route) data.exact_identifier_route = route;
     return [verified, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
   }
   data.exact_identifier_missing = true;
@@ -5251,6 +5425,39 @@ async function handlePublicSearch(request, env) {
     });
   }
 
+  // Phase 0 identifier integration: canonicalize the query through the
+  // contract's identifier module (inlined from workers/lib/gah_identifiers.js).
+  // EFTA and Barak are separate namespaces — a Barak identifier is never
+  // searched as EFTA text; it gets the §7 cross-collection response.
+  const queryClassification = classifyQuery(query);
+  if (queryClassification.kind === "barak") {
+    const crossHint = missingRecordResponse("barak", queryClassification.canonical, "efta");
+    const hintRow = {
+      title: queryClassification.canonical,
+      id: queryClassification.canonical,
+      missing: true,
+      result_type: "missing_record",
+      collection: "efta",
+      collection_hint: "barak",
+      summary: crossHint.message,
+      suggested_route: crossHint.suggested_route,
+      read_url: null,
+      url: null,
+      dataset: ""
+    };
+    return new Response(JSON.stringify({
+      ok: true,
+      hits: [hintRow],
+      results: [hintRow],
+      hit_count: 0,
+      primary_hit_count: 0,
+      query_classification: "barak"
+    }), {
+      status: 200,
+      headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }
+    });
+  }
+
   const normalizedQueryForFetch = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   // SEC-REMEDIATION (ren/security-remediation): clamp the client-supplied
   // page size before proxying. The upstream engine must never receive an
@@ -5292,7 +5499,9 @@ async function handlePublicSearch(request, env) {
     });
   }
 
-  const exact = /^EFTA[0-9]{8}$/i.test(query) ? query.toUpperCase() : "";
+  // Canonical form from the identifier module: "efta-123", "EFTA 123"
+  // etc. all resolve to EFTA00000123 before the exact-identifier policy runs.
+  const exact = queryClassification.kind === "efta" ? queryClassification.canonical : "";
   const sourceRows = Array.isArray(data?.hits)
     ? data.hits
     : Array.isArray(data?.results)
@@ -11818,7 +12027,7 @@ async function handleXAdminLogin(request, env) {
   });
   for (const cookie of await xAdminSessionCookies(env)) headers.append("Set-Cookie", cookie);
   headers.append("Set-Cookie", clearScopedSecureCookie(X_ADMIN_LOGIN_RATE_COOKIE_NAME, "/admin/login", "Strict"));
-  await gahSecAdminLoginClear(env, request); // SEC-REMEDIATION: successful login clears the server-side counter
+  await gahSecAdminLoginRefund(env, request); // SEC-REMEDIATION: successful login refunds one failure slot
   return new Response(null, { status: 302, headers });
 }
 

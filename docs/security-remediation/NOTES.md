@@ -46,17 +46,18 @@ edge rules, not a replacement for them.
    `POST /a2a/v1/message:send` (30 req/min/IP), returning 429 with
    `Retry-After`. Ops: `check` / `peek` / `clear` against the sharded DO.
 
-4. **Server-side admin-login throttle — atomic admission.** Every POST to
-   `/admin/login` consumes one throttle slot AT THE GATE via a single DO
-   `check` op (`gahSecAdminLoginAdmit`); a successful login clears the
-   counter (`gahSecAdminLoginClear`). The previous peek → verify → record
-   sequence let N concurrent attempts all pass the gate before any failure
-   was recorded — now the (max+1)th concurrent attempt is blocked even if
-   no verification has completed. The sealed-cookie counter is
-   client-resettable (clearing the cookie restarts the count); the DO/KV
-   counter is authoritative. `gahSecDoCall` uses the `fetch(url, init)`
-   form (identical semantics to `fetch(Request)` in the workers runtime;
-   required for Miniflare testability).
+4. **Server-side admin-login throttle — atomic admission, failures-only
+   counting.** Every POST to `/admin/login` consumes one throttle slot AT
+   THE GATE via a single DO `check` op (`gahSecAdminLoginAdmit`); this
+   closes the race where concurrent attempts all passed a peek gate. A
+   successful login **refunds** exactly one slot (`gahSecAdminLoginRefund`
+   → DO `refund` op, atomic decrement, floor zero) instead of clearing the
+   counter — so only failed credentials consume quota, and one user's
+   success cannot wipe another user's failures on a shared IP. The sealed-
+   cookie counter is client-resettable (clearing the cookie restarts the
+   count); the DO/KV counter is authoritative. `gahSecDoCall` uses the
+   `fetch(url, init)` form (identical semantics to `fetch(Request)` in the
+   workers runtime; required for Miniflare testability).
 
 ## Verification
 
