@@ -1,0 +1,127 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 132,
+  "page_id": "page_132",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_132.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_132.ocr.txt",
+  "image_metadata": {
+    "bytes": 156981,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "e756002aed6532522023f7ef13d182a77a17f3a6a3348dd37d413bee5713fb2c"
+  },
+  "ocr_text": "' Paar > hy ef ag re Hohe :\n: ho Eee Boge, ‘ Ay :\nONE ee age : es a\nfm roe £, ae Se Bl. o 7 ” ’ ,\ni\n1\n|\n\\\ni\nbee a ey ¥ : . ty ¥ en tea 8 aeguReRa *.\nae s. % ot ‘\n4. Nh ai ss a we a |\nSe I tac Mee\nFae pe oe : 5 : : eee ee cee! ws Bare eee ae\nlee oe : ae : : Put Buse NES ae Ageth pb Pe a ee\nrr ee : oe ew ee\nM2 ea 5 Pee ee ies Se OR AE Oe is ae ee\nMe ee ee ey ee ee oe oe 1 oy\noe ESS i a ee Eee ae Aarts, Soe TS at Ng SRR TS he Diet Ce ain ter eee ORB RR Pe ty pa as ee ata B\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a large black-and-white photo of a person's upper body and arm, partially covered in water droplets. The person's face is partially obscured by hair and shadow. There is visible text in the photo area that resembles a signature or inscription in the lower right area, and some faint handwriting on the arm. The page has irregular white margins around the image and the overall tone is dark with highlights where light reflects off the water droplets.",
+    "Layout: full-page photograph with margins",
+    "Photo/image candidate at full central area of page: Black and white close-up photo of a person's upper body and arm, with visible water droplets on skin."
+  ],
+  "observations": [
+    "The page contains a large black-and-white photo of a person's upper body and arm, partially covered in water droplets. The person's face is partially obscured by hair and shadow. There is visible text in the photo area that resembles a signature or inscription in the lower right area, and some faint handwriting on the arm. The page has irregular white margins around the image and the overall tone is dark with highlights where light reflects off the water droplets.",
+    "Layout: full-page photograph with margins",
+    "Photo/image candidate at full central area of page: Black and white close-up photo of a person's upper body and arm, with visible water droplets on skin."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Paar > hy ef ag re Hohe :",
+    "ho Eee Boge, ‘ Ay :",
+    "ONE ee age : es a",
+    "fm roe £, ae Se Bl. o 7 ” ’ ,",
+    "bee a ey ¥ : . ty ¥ en tea 8 aeguReRa *.",
+    "ae s. % ot ‘",
+    "4. Nh ai ss a we a |",
+    "Se I tac Mee",
+    "Fae pe oe : 5 : : eee ee cee! ws Bare eee ae",
+    "lee oe : ae : : Put Buse NES ae Ageth pb Pe a ee",
+    "rr ee : oe ew ee",
+    "M2 ea 5 Pee ee ies Se OR AE Oe is ae ee",
+    "Me ee ee ey ee ee oe oe 1 oy",
+    "oe ESS i a ee Eee ae Aarts, Soe TS at Ng SRR TS he Diet Ce ain ter eee ORB RR Pe ty pa as ee ata B"
+  ],
+  "signatures": [
+    {
+      "location": "lower right corner of photograph",
+      "text_as_seen": "Bree (or similar cursive signature)",
+      "confidence": "medium",
+      "note": "Signature-like mark in cursive near bottom right"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "upper-left area of arm in photograph",
+      "text_as_seen": "(partly obscured cursive text)",
+      "confidence": "low",
+      "note": "Handwriting is partially legible near the upper left of the arm"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "signature"
+  ],
+  "gaps": [
+    "Some parts of text on the arm and signature area are unclear or obscured by water droplets and shadows."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:57.731Z",
+    "response_id": "resp_092328105f91e70d006a502d87c3788194ad056f1903b86452",
+    "raw_output_sha256": "f2af04c5854c6d1f41e2e90a57dc800e1407f5cb5cd77a86e1e5aaeb39683abc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_092328105f91e70d006a502d87c3788194ad056f1903b86452",
+    "enriched_at": "2026-07-09T23:23:57.732Z"
+  },
+  "visual_summary": "The page contains a large black-and-white photo of a person's upper body and arm, partially covered in water droplets. The person's face is partially obscured by hair and shadow. There is visible text in the photo area that resembles a signature or inscription in the lower right area, and some faint handwriting on the arm. The page has irregular white margins around the image and the overall tone is dark with highlights where light reflects off the water droplets.",
+  "layout": [
+    "full-page photograph with margins"
+  ],
+  "handwriting": [
+    {
+      "location": "upper-left area of arm in photograph",
+      "text_as_seen": "(partly obscured cursive text)",
+      "confidence": "low",
+      "note": "Handwriting is partially legible near the upper left of the arm"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "lower right corner of photograph",
+      "text_as_seen": "Bree (or similar cursive signature)",
+      "confidence": "medium",
+      "note": "Signature-like mark in cursive near bottom right"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "full central area of page",
+      "description": "Black and white close-up photo of a person's upper body and arm, with visible water droplets on skin.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

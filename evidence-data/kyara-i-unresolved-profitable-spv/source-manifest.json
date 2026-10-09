@@ -1,0 +1,83 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "kyara-i-unresolved-profitable-spv",
+  "title": "Kyara I: The Profitable SPV We Still Can't Identify",
+  "published": "2026-09-30",
+  "scope": "Corrected bank-first reconstruction of Southern Financial's Kyara I investment and recovered distributions, with the underlying issuer left unresolved.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+  "correction": {
+    "date": "2026-09-30",
+    "issue": "Run 12 originally attributed $307,301.44 to the Oct. 6 Kyara I return. Raw statement EFTA01285141 shows $301,099.27 from Kyara I plus a separate $6,202.17 Bear Stearns credit. The original debit was also normalized from rounded $99,999.00 to exact $99,999.74.",
+    "backups": "/Volumes/homes/admin/GAH-RUN12-CORRECTIONS-20260930/"
+  },
+  "sources": [
+    {
+      "id": "KYARA1-OUT",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01284908",
+      "url": "/pdf-lite?id=EFTA01284908",
+      "supports": "May 14, 2014 Southern Financial $99,999.74 outgoing wire to law-firm client-fund account.",
+      "limit": "Statement does not itself name underlying issuer."
+    },
+    {
+      "id": "KYARA1-CHART",
+      "class": "PRIMARY_BANK_INVESTIGATIVE_CHART",
+      "record": "EFTA00080260",
+      "url": "/pdf-lite?id=EFTA00080260",
+      "supports": "Wire details identify Southern Financial investment in Kyara Investments LLC.",
+      "limit": "Does not resolve operating company/security underneath SPV."
+    },
+    {
+      "id": "KYARA1-RETURN-2014",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285141",
+      "url": "/pdf-lite?id=EFTA01285141",
+      "supports": "Oct. 6, 2014 $301,099.27 incoming wire from Kyara Investments I.",
+      "limit": "Statement also contains unrelated $6,202.17 Bear Stearns credit; monthly total must not be misattributed."
+    },
+    {
+      "id": "KYARA1-KAHN",
+      "class": "PRIMARY_INTERNAL_EMAIL",
+      "record": "EFTA02505439",
+      "url": "/pdf-lite?id=EFTA02505439",
+      "supports": "Kahn describes Kyara I as approximately $100K invested and $300K returned for about $200K profit.",
+      "limit": "Rounded management/accounting correspondence; not tax-profit calculation."
+    },
+    {
+      "id": "KYARA1-RETURN-2016",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01286529",
+      "url": "/pdf-lite?id=EFTA01286529",
+      "supports": "Dec. 2, 2016 $10,000 Kyara Investments I incoming wire.",
+      "limit": "Does not identify underlying issuer."
+    },
+    {
+      "id": "KYARA1-RETURN-2018",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01287877",
+      "url": "/pdf-lite?id=EFTA01287877",
+      "supports": "Sep. 5, 2018 $11,391.86 Kyara Investments I incoming wire.",
+      "limit": "Does not identify underlying issuer."
+    }
+  ],
+  "reconciled_amounts": {
+    "original_debit": 99999.74,
+    "returns": [
+      301099.27,
+      10000.0,
+      11391.86
+    ],
+    "total_recovered_cash": 322491.13,
+    "gross_cash_excess": 222491.39
+  },
+  "open_questions": [
+    "The operating company/security held by Kyara I.",
+    "Whether additional Kyara I distributions or non-cash adjustments exist outside recovered statement periods.",
+    "The executed subscription/security document behind the May 2014 client-fund payment."
+  ],
+  "not_established": [
+    "A specific underlying issuer.",
+    "A tax or GAAP profit figure.",
+    "Wrongdoing associated with the investment or distributions."
+  ]
+}

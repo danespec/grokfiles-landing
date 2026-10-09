@@ -1,0 +1,125 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "scope": "Corrected source-chain audit covering the 2013 Putin 'private time' suggestion, the 2018-2019 Qatar/Carbyne/Lysys chain, and a NAS-wide raw-mail/DOJ-index audit of the unresolved anti-drone follow-up.",
+  "sources": [
+    {
+      "id": "EFTA01975333",
+      "role": "May 9, 2013 Epstein-Barak email in which Epstein suggests Barak let Putin know he will be in Moscow and see whether Putin wants private time",
+      "public_url": "https://epstein-data.com/full_text_corpus/pages?_search=putin",
+      "status": "DOJ-corpus record; public full-text occurrence verified"
+    },
+    {
+      "id": "EFTA02396786",
+      "role": "June 18, 2015 Barak-Epstein thread containing Epstein's 'already asked' statement and separate Putin-keynote reference",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02396786.pdf",
+      "sha256": "2f8a80c3457a24b38c2b9cd81eb8816dae10f5eb272fea3f438fabbdaaa8a915",
+      "status": "local hash-verified DOJ-released PDF"
+    },
+    {
+      "id": "EFTA00450694",
+      "role": "May 8, 2017 scheduling chain for a Barak visit to Epstein's New York house",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00450694.pdf",
+      "sha256": "d4469bf0cd6aec49cf6c90008924ef9187ff99856349f87477cc251d36ac944d",
+      "status": "local hash-verified DOJ-released PDF"
+    },
+    {
+      "id": "EFTA02609150",
+      "role": "November-December 2018 Epstein introduction and Barak-Jabor London meeting coordination",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02609150.pdf",
+      "sha256": "64b3ed359d6d6820a995ecf93d2830e9e87ab0362e27b74a3fce270723aa815e",
+      "status": "local hash-verified DOJ-released PDF"
+    },
+    {
+      "id": "EFTA02612143",
+      "role": "December 21, 2018 post-meeting confirmation and request for security-company detail",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02612143.pdf",
+      "sha256": "7ed8894f4e73a17284d89a14097e110b8c564152c33ad51aac499a2c9cbc117f",
+      "status": "local hash-verified DOJ-released PDF"
+    },
+    {
+      "id": "EFTA02607775",
+      "role": "January 1, 2019 Carbyne 911 Qatar pitch from Barak to Jabor with Epstein copied",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02607775.pdf",
+      "sha256": "7eb9d470f660e74f3bd0f515fe80f00a79420dee9e6286e39dc3ecb91590f261",
+      "status": "local hash-verified DOJ-released PDF"
+    },
+    {
+      "id": "EFTA02628004",
+      "role": "February 3, 2019 'First of two emails' naming Amir Elichai and promising a separate anti-drone email while waiting for information",
+      "public_url": "https://yirah.fi/epstein/en/document/EFTA02628004",
+      "status": "DOJ-released record; public machine-extracted transcript and local research index corroborated"
+    },
+    {
+      "id": "EFTA02628648",
+      "role": "Full January 1-February 4 Carbyne/Qatar thread including Jan. 20 request to commence discussions, anti-drone request, Feb. 3 Elichai handoff and Feb. 4 Lysys handoff",
+      "public_url": "https://yirah.fi/epstein/en/document/EFTA02628648",
+      "status": "DOJ-released record; public machine-extracted transcript and local research index corroborated"
+    },
+    {
+      "id": "EFTA02628761",
+      "role": "February 4, 2019 thread naming Lysys WLL country manager Dimitrios Demestichas and Elichai's confirmation that he had already been contacted",
+      "public_url": "https://yirah.fi/epstein/en/document/EFTA02628761",
+      "status": "DOJ-released record; public machine-extracted transcript and local research index corroborated"
+    },
+    {
+      "id": "MIAMI-HERALD-2026-QATAR-CARBYNE",
+      "role": "Attributed statement from Barak attorney Bruce Goodman that preliminary due diligence found Carbyne unsuited and Carbyne did not pursue a bid",
+      "public_url": "https://www.miamiherald.com/news/nation-world/national/article315250480.html",
+      "status": "secondary press source; participant-side response"
+    },
+    {
+      "id": "PENINSULA-QATAR-2021-BARZAN",
+      "role": "March 2021 report that Qatar's Ministry of Defence Executive Committee selected Barzan Holdings as a partner for World Cup anti-drone implementation",
+      "public_url": "https://thepeninsulaqatar.com/article/18/03/2021/Barzan-Holdings-chosen-as-partner-to-implement-anti-drone-system-during-FIFA-World-Cup-2022",
+      "status": "public Qatar press report"
+    },
+    {
+      "id": "SCS-FIFA-WORLD-CUP-2022",
+      "role": "SCS project record describing Ministry of Interior/Supreme Committee selection for a World Cup anti-drone system, stated project value $35M and U.S.-origin technology",
+      "public_url": "https://www.scs.me/projects/fifa-world-cup-2022",
+      "status": "vendor project claim; outcome corroboration, not independent procurement award file"
+    },
+    {
+      "id": "NAS-BARAK-RAW-MAIL-AUDIT-20261006",
+      "role": "Machine-readable audit of 40,976 original Barak mailbox HTML messages, date coverage, exact-term searches, drone/UAV semantic triage, and tested alternative leads",
+      "public_url": "/evidence-data/barak-epstein-putin-qatar-carbyne/nas-raw-mail-audit.json",
+      "status": "GAH derived search receipt; message contents remain in source archive"
+    },
+    {
+      "id": "EFTA02593250",
+      "role": "October 30, 2014 Barak-Epstein/Indyke thread independently preserving Barak's request for Epstein's lawyer contact 're the Drone'",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02593250.pdf",
+      "status": "DOJ-released record; local forensic index corroborated"
+    },
+    {
+      "id": "EFTA02656769",
+      "role": "May 21, 2018 Epstein email to Peter Thiel stating 'FYI trae is meeting carbyne Ehud Barak co'; tested as an alternative lead, not joined to the 2019 anti-drone request",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02656769.pdf",
+      "status": "DOJ-released record; local forensic index corroborated"
+    },
+    {
+      "id": "EFTA00326339",
+      "role": "April 2016 Barak-Epstein Levitection pitch describing advanced radar expertise and proposing a Reporty-style investment structure; tested as a possible radar/counter-UAS lead",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00326339.pdf",
+      "status": "DOJ-released record; raw Barak Gmail independently preserves the thread"
+    },
+    {
+      "id": "EFTA00599472",
+      "role": "July 7, 2016 proposed Levitection Series A term sheet naming an entity under Ehud Barak's control as investor; statement of intent, not proof of closing",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00599472.pdf",
+      "status": "DOJ-released proposed term sheet"
+    }
+  ],
+  "limits": [
+    "EFTA01975333 proves Epstein made the suggestion about contacting Putin; it does not prove Putin received, answered or accepted it.",
+    "EFTA02396786 does not identify whom Epstein had asked or join that inquiry to Putin.",
+    "EFTA00450694 establishes scheduling for a house visit, not overnight lodging.",
+    "The Qatar thread establishes active business-development contact through Carbyne CEO Amir Elichai and Lysys WLL, but no located source proves a bid, NDA, contract, payment or deployment.",
+    "No matching 'second of two emails' or primary record identifying the anti-drone information source/provider was located after reconciling the public/DOJ chain, local Barak/DOJ indexes, and the original 40,976-message NAS raw-mail archive. The raw archive's latest parsed message is March 12, 2018, before the 2019 request.",
+    "Barak counsel's no-bid account is attributed participant-side evidence and should not be treated as an independent procurement record.",
+    "Later Barzan/RBAT and SCS public records show other World Cup counter-UAS channels but do not prove the totality of Qatar's anti-drone architecture.",
+    "The 2014 Light & Strong drone-investment lane and the May 2018 'trae'/Carbyne contact are real historical context but are not document-level evidence of the 2019 anti-drone supplier.",
+    "Levitection was tested because of its advanced-radar technology and Barak/Epstein investment discussions. The located Q product is for near-field concealed-weapons detection; no source located joins it to the 2019 Qatar anti-drone request."
+  ]
+}

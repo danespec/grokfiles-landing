@@ -1,0 +1,7 @@
+URL: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section2256&num=0&edition=prelim
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: d950dbce812bc6afeec4659cb5c1be3b20b03e0f520d8b9ae48d1a0e66128988
+Bytes: 177248
+Acquisition method: verified existing local capture

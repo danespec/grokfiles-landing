@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Leon Black Transcript Autopsy</title>
+  <desc id="desc">Restrained share card for a primary-source document autopsy.</desc>
+  <rect width="1200" height="630" fill="#f6f4ed"/>
+  <rect x="56" y="56" width="1088" height="518" fill="#ffffff" stroke="#cfc6aa" stroke-width="2"/>
+  <text x="96" y="142" font-family="Georgia,serif" font-size="58" fill="#24211a">Leon Black Transcript Autopsy</text>
+  <text x="96" y="205" font-family="Arial,sans-serif" font-size="28" fill="#5a5549">House Oversight transcript · June 26, 2026 interview · Released July 17, 2026</text>
+  <line x1="96" y1="250" x2="1104" y2="250" stroke="#cfc6aa" stroke-width="2"/>
+  <text x="96" y="326" font-family="Arial,sans-serif" font-size="34" fill="#24211a">Claim -> Source -> Limitation</text>
+  <text x="96" y="390" font-family="Arial,sans-serif" font-size="26" fill="#5a5549">37 claim rows · source hashes · chronology · archive crossmatches</text>
+  <text x="96" y="504" font-family="Arial,sans-serif" font-size="24" fill="#7b6f52">Grok Archive Hub</text>
+</svg>

@@ -1,0 +1,145 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 39,
+  "page_id": "page_039",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_039.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_039.ocr.txt",
+  "image_metadata": {
+    "bytes": 224723,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "01dceb4b7927fd52118fca70f54b97acf018998944d29718e4aef102fd309247"
+  },
+  "ocr_text": "3 : . | Upon release, the elder\n\nes Kurope On brother commented, “screw it,\n\nee. next time we'll take it to the\n\nos a Budget grease monkey”\n\n= By Yehudah Leibig\n\nee Ans Sons of Israel Travel Guide\n\na : oS : Two Sea Gate teens claim to\n\nee have started out with $500 each,\n\noa and managed to travel Europe for\n\nee 2 months. The boys hitch-hiked,\n\noa wandered and adventured Hunchback\n\nOe. through Europe while their stupid Tye\n\nee friend served hamburgers and Dies\n\nee french fries at Nathan’s. The two\n\nee returned with long hair, suntans\n\nBes. and 2 brand new Triumph Tiger By Not so Lucky Luckfeid\n\nee. 500 Motorcycles, they even had Firecracker Chronicle\n\nee change to boot, One of the two\n\nee actually lost 40 pounds, because Robert Avner, Coney Island’s\n\noe a of the serious lobster shortage in only tiving hunchback died last\n\noe mS Europe. week of an infected hunch.\n\noe rn Observers witnessed Avner\n\nes screaming at his friends for help\n\noo aay with his itching back. “Scratch\n\nae like a bitch, scratch like a bitch”\n\nos he pleaded, but it was too late,\n\nSe no one would scratch the infected\n\noe ° hunch. Avner died of whiplash\n\non Dirt Bro thers from repeatedly turning his head\n\nes . to far left and far right during his\n\nDes Arrested last minutes.\n\noe | By Richard Freed\n\n- ee , ‘Tutoring Are Us Magazine\n\n- - Once again, the infamous Teen Bitten\n\ney \"Dirt Brothers” were seen on Sea\n\noS Gate Avenue illegally dumping\n\nae drain oil from their “Lemon” By Mrs, Shmolowitz\n\na ae Camaro. Sgt. Gino “Gene” Woolworth Newsletter\n\nee, Venezia arrested the two\n\nbrothers. Judge Phil Russick\n\nas found the Dirt Brothers guilty A Sea Gate teenager (name\n\nee and sentenced them to 48 hrs. witbheld) was viciously bitten on\n\nBo confinement with Bobby Wolfe, the neck by crazed Steve\n\neo Lary Dicky ere Jankowitz, The bitten youth was\n\nee onnte, era found crying after witness\n\nee “_ and | | “Count Hymie” recounted the\n\noe (cont'd. pg. 4, column 1)\nHOUSE_OVERSIGHT_000039\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Black and white scanned page with multiple columns of text and article headings. The page contains four main article sections with titles: 'Europe on a Budget', 'Dirt Brothers Arrested', 'Hunchback Dies', and 'Teen Bitten'. Some text passages and names are redacted with black boxes. The text appears printed in a serif font, with article titles in a stylized larger font. There are no photographs or images other than text. The layout is typical of a newspaper or newsletter page with dense textual content in columns.",
+    "Layout: Title 'Europe on a Budget' with byline 'By Yehudah Leibig Sons of Israel Travel Guide'",
+    "Layout: Article body text for 'Europe on a Budget'",
+    "Layout: Title 'Dirt Brothers Arrested' with byline 'By Richard Freed Tutoring Are Us Magazine'",
+    "Layout: Article body text for 'Dirt Brothers Arrested'",
+    "Layout: Redacted text blocks within 'Dirt Brothers Arrested' article",
+    "Layout: Section on right side with redacted header text followed by quoted text",
+    "Layout: Title 'Hunchback Dies' with byline 'By Not so Lucky Luckfeild Firecracker Chronicle'",
+    "Layout: Article body text for 'Hunchback Dies'",
+    "Layout: Title 'Teen Bitten' with byline 'By Mrs. Shmolowitz Woolworth Newsletter'",
+    "Layout: Article body text for 'Teen Bitten'"
+  ],
+  "observations": [
+    "Black and white scanned page with multiple columns of text and article headings. The page contains four main article sections with titles: 'Europe on a Budget', 'Dirt Brothers Arrested', 'Hunchback Dies', and 'Teen Bitten'. Some text passages and names are redacted with black boxes. The text appears printed in a serif font, with article titles in a stylized larger font. There are no photographs or images other than text. The layout is typical of a newspaper or newsletter page with dense textual content in columns.",
+    "Layout: Title 'Europe on a Budget' with byline 'By Yehudah Leibig Sons of Israel Travel Guide'",
+    "Layout: Article body text for 'Europe on a Budget'",
+    "Layout: Title 'Dirt Brothers Arrested' with byline 'By Richard Freed Tutoring Are Us Magazine'",
+    "Layout: Article body text for 'Dirt Brothers Arrested'",
+    "Layout: Redacted text blocks within 'Dirt Brothers Arrested' article",
+    "Layout: Section on right side with redacted header text followed by quoted text",
+    "Layout: Title 'Hunchback Dies' with byline 'By Not so Lucky Luckfeild Firecracker Chronicle'",
+    "Layout: Article body text for 'Hunchback Dies'",
+    "Layout: Title 'Teen Bitten' with byline 'By Mrs. Shmolowitz Woolworth Newsletter'",
+    "Layout: Article body text for 'Teen Bitten'"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Europe on a Budget",
+    "By Yehudah Leibig",
+    "Sons of Israel Travel Guide",
+    "Two Sea Gate teens claim to have started out with $500 each, and managed to travel Europe for 2 months. The boys hitch-hiked, wandered and adventured through Europe while their stupid friend served hamburgers and french fries at Nathan's. The two returned with long hair, suntans and 2 brand new Triumph Tiger 500 Motorcycles; they even had change to boot. One of the two actually lost 40 pounds, because of the serious lobster shortage in Europe.",
+    "Dirt Brothers Arrested",
+    "By Richard Freed",
+    "Tutoring Are Us Magazine",
+    "Once again, the infamous \"Dirt Brothers\" were seen on Sea Gate Avenue illegally dumping drain oil from their \"Lemon\" Camaro. Sgt. Gino \"Gene\" Venezia arrested the two brothers. Judge Phil Russick found the Dirt Brothers guilty and sentenced them to 48 hrs. confinement with Bobby Wolfe, Larry Dick, Dicky Friedman, Donnie DiPasquale, Gerald Bullah, [redacted] and [redacted]",
+    "Upon release, the elder brother commented, \"screw it, next time we'll take it to the grease monkey\".",
+    "Hunchback Dies",
+    "By Not so Lucky Luckfeild",
+    "Firecracker Chronicle",
+    "Robert Avner, Coney Island's only living hunchback died last week of an infected hunch. Observers witnessed Avner screaming at his friends for help with his itching back. \"Scratch like a bitch, scratch like a bitch\" he pleaded, but it was too late; no one would scratch the infected hunch. Avner died of whiplash from repeatedly turning his head to far left and far right during his last minutes.",
+    "Teen Bitten",
+    "By Mrs. Shmolowitz",
+    "Woolworth Newsletter",
+    "A Sea Gate teenager (name withheld) was viciously bitten on the neck by crazed Steve Jankowitz. The bitten youth was found crying after witness \"Count Hymie\" recounted the (cont'd. pg. 4, column 1)"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "Center-right column, near top, first paragraph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bars redact multiple words, including what appears to be a name and a phrase."
+    },
+    {
+      "location": "Bottom left column, near last line of 'Dirt Brothers Arrested' article",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two separate black bar redactions obscuring names or phrases."
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "The ending text of 'Teen Bitten' article continues on next page and is incomplete here."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:08:19.689Z",
+    "response_id": "resp_0bbd586296e88e7d006a5029d874f48196b5a3cc902381da4e",
+    "raw_output_sha256": "cc8b948830e79b9ebc738cb14b354817d29f74fb9c697731245e365139fb9366"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bbd586296e88e7d006a5029d874f48196b5a3cc902381da4e",
+    "enriched_at": "2026-07-09T23:08:19.689Z"
+  },
+  "visual_summary": "Black and white scanned page with multiple columns of text and article headings. The page contains four main article sections with titles: 'Europe on a Budget', 'Dirt Brothers Arrested', 'Hunchback Dies', and 'Teen Bitten'. Some text passages and names are redacted with black boxes. The text appears printed in a serif font, with article titles in a stylized larger font. There are no photographs or images other than text. The layout is typical of a newspaper or newsletter page with dense textual content in columns.",
+  "layout": [
+    "Title 'Europe on a Budget' with byline 'By Yehudah Leibig Sons of Israel Travel Guide'",
+    "Article body text for 'Europe on a Budget'",
+    "Title 'Dirt Brothers Arrested' with byline 'By Richard Freed Tutoring Are Us Magazine'",
+    "Article body text for 'Dirt Brothers Arrested'",
+    "Redacted text blocks within 'Dirt Brothers Arrested' article",
+    "Section on right side with redacted header text followed by quoted text",
+    "Title 'Hunchback Dies' with byline 'By Not so Lucky Luckfeild Firecracker Chronicle'",
+    "Article body text for 'Hunchback Dies'",
+    "Title 'Teen Bitten' with byline 'By Mrs. Shmolowitz Woolworth Newsletter'",
+    "Article body text for 'Teen Bitten'"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Center-right column, near top, first paragraph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bars redact multiple words, including what appears to be a name and a phrase."
+    },
+    {
+      "location": "Bottom left column, near last line of 'Dirt Brothers Arrested' article",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two separate black bar redactions obscuring names or phrases."
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

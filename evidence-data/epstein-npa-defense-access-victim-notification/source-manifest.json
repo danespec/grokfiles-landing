@@ -1,0 +1,31 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "scope": "Comparative documentary footprint of defense access and victim notification during the 2007–2008 NPA process.",
+  "sources": [
+    {
+      "id": "EFTA00013764",
+      "role": "native December 7 hold email",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf",
+      "sha256": "5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117",
+      "status": "local hash-verified primary DOJ PDF"
+    },
+    {
+      "id": "DOJ-OPR-2020",
+      "role": "official retrospective reconstruction and findings",
+      "public_url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.591653/gov.uscourts.nysd.591653.226.4.pdf",
+      "status": "public court-filed OPR copy"
+    },
+    {
+      "id": "GAH-JULY-2007-DECISION-GAP",
+      "role": "related source-locked decision chronology",
+      "public_url": "https://grokarchivehub.com/investigations/epstein-july-2007-decision-gap",
+      "status": "published GAH source chain"
+    }
+  ],
+  "limits": [
+    "Comparative access does not establish corrupt motive or unilateral defense control.",
+    "OPR found no professional misconduct or improper-purpose evidence while separately criticizing judgment, transparency and victim treatment.",
+    "Sloman’s later-recalled “somebody” remains unidentified."
+  ]
+}

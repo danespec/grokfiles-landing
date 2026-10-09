@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-07-19T14:49:43Z",
+  "chronology_rule": "Sequence is reported without inferring motive for departure.",
+  "events": [
+    {
+      "event_id": "T001",
+      "time_or_page": "2026-06-26 10:00",
+      "event": "Opening caption",
+      "record": "Interview commenced in Room 2154 Rayburn.",
+      "source": "HOC-BLACK-TRANSCRIPT p.1 lines 13-25",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T002",
+      "time_or_page": "p.5",
+      "event": "Record begins",
+      "record": "Witness identifies himself after the scope statement.",
+      "source": "HOC-BLACK-TRANSCRIPT p.5 lines 3-15",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T003",
+      "time_or_page": "pp.7-10",
+      "event": "Ground rules",
+      "record": "Majority and minority questioning order, exhibits, oath-equivalent warnings, privilege rule, and break protocol explained.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.7-10",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T004",
+      "time_or_page": "p.11",
+      "event": "Opening statement",
+      "record": "Black begins opening statement.",
+      "source": "HOC-BLACK-TRANSCRIPT p.11 lines 8-13",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T005",
+      "time_or_page": "pp.11-15",
+      "event": "Opening statement substance",
+      "record": "Black states the 18-year account, network context, 2008 plea knowledge, denials, Dechert account, $158 million, savings, tax-deductibility misunderstanding, loan dispute, and 2018 termination.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.11-15",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T006",
+      "time_or_page": "p.18",
+      "event": "Ready for questions",
+      "record": "Black says he is glad to take questions.",
+      "source": "HOC-BLACK-TRANSCRIPT p.18 lines 22-25",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T007",
+      "time_or_page": "p.19 10:27",
+      "event": "First substantive question",
+      "record": "Majority time starts with background and employment questions.",
+      "source": "HOC-BLACK-TRANSCRIPT p.19 lines 4-20",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T008",
+      "time_or_page": "pp.20-25",
+      "event": "Personal relationship and network",
+      "record": "Committee asks how Black met Epstein, what he learned about him, and the Rolodex/network.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.20-25",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T009",
+      "time_or_page": "pp.26-30",
+      "event": "Payment and Dechert questioning",
+      "record": "Black discusses family-office communications, Dechert review, $158 million, claimed services, conflicts committee, and Andrew Levander questions.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.26-30",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T010",
+      "time_or_page": "pp.31-33",
+      "event": "Relationship frequency",
+      "record": "Questions address personal/professional relationship, foundation appointment, and early social contact frequency.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.31-33",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T011",
+      "time_or_page": "p.34 11:00",
+      "event": "Birthday Book exhibit",
+      "record": "Black Majority Exhibit 1 is marked; Maxwell's request and the contribution are discussed.",
+      "source": "HOC-BLACK-TRANSCRIPT p.34 lines 2-24",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T012",
+      "time_or_page": "pp.35-38",
+      "event": "Birthday Book language",
+      "record": "VFPC, birds/bucks, women-language, Alhambra East, and the closing are questioned.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.35-38; Birthday Book pp.118-119",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T013",
+      "time_or_page": "pp.38-43",
+      "event": "Personal relationship and NDA dispute",
+      "record": "Questions about redacted personal relationships and NDAs lead to counsel objections, a recess, partial answers, and further redacted-name questioning.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.38-43",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T014",
+      "time_or_page": "p.40",
+      "event": "Recess",
+      "record": "Black asks for five minutes with counsel; the transcript goes off and back on the record.",
+      "source": "HOC-BLACK-TRANSCRIPT p.40 lines 12-20",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T015",
+      "time_or_page": "pp.45-46",
+      "event": "Refusals and qualifications",
+      "record": "Black refuses to answer how many NDAs and who in his circles has NDAs; he denies other NDAs with women affiliated with Epstein.",
+      "source": "HOC-BLACK-TRANSCRIPT pp.45-46",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T016",
+      "time_or_page": "p.46",
+      "event": "Subpoena service",
+      "record": "Committee staff serves a document subpoena and a July 16 deposition subpoena.",
+      "source": "HOC-BLACK-TRANSCRIPT p.46 lines 10-15; HOC-BLACK-SUBPOENA-RELEASE",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T017",
+      "time_or_page": "pp.46-47",
+      "event": "Counsel closing statement",
+      "record": "Cutler states the subpoenas are political, says no payment questions had been asked, and repeats Black's denials.",
+      "source": "HOC-BLACK-TRANSCRIPT p.46 line 23-p.47 line 15",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T018",
+      "time_or_page": "p.47",
+      "event": "Departure",
+      "record": "The transcript records witness and counsel leaving the room.",
+      "source": "HOC-BLACK-TRANSCRIPT p.47 line 16",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T019",
+      "time_or_page": "pp.47-48",
+      "event": "Committee and minority statements",
+      "record": "Majority staff disputes counsel's scope framing; minority members state they had questions that were not reached.",
+      "source": "HOC-BLACK-TRANSCRIPT p.47 line 17-p.48 line 13",
+      "status": "CONFIRMED"
+    },
+    {
+      "event_id": "T020",
+      "time_or_page": "p.48 12:22",
+      "event": "Adjournment",
+      "record": "The interview is adjourned at 12:22 p.m.",
+      "source": "HOC-BLACK-TRANSCRIPT p.48 lines 14-15",
+      "status": "CONFIRMED"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "D67-01",
+      "claim": "Acosta had set December 7 at 5 p.m. as the end of a temporary pause on victim notification.",
+      "source": "DOJ OPR report",
+      "confidence": "P4 official reconstruction"
+    },
+    {
+      "id": "D67-02",
+      "claim": "On December 6 the FBI lead agent reported that many original victim/witness letters were still being held.",
+      "source": "DOJ OPR report footnote 312",
+      "confidence": "P4 official reconstruction"
+    },
+    {
+      "id": "D67-03",
+      "claim": "On December 7 Sanchez asked Sloman to hold off on sending victim-notification letters pending further discussion of content.",
+      "source": "DOJ OPR report",
+      "confidence": "P4 official reconstruction"
+    },
+    {
+      "id": "D67-04",
+      "claim": "Villafana asked at 17:05:56 to send the letter; Sloman replied at 17:08:19 EST, 'Hold the letter.'",
+      "source": "EFTA00013764",
+      "confidence": "P4 native email"
+    },
+    {
+      "id": "D67-05",
+      "claim": "Sloman later said the hold was the product of speaking to 'somebody' but could not be definitive as to whom.",
+      "source": "DOJ OPR interview record",
+      "confidence": "P4 statement / unresolved identity"
+    },
+    {
+      "id": "D67-06",
+      "claim": "The available record does not establish a secret Main Justice order, corrupt motive, or intelligence role in the hold.",
+      "source": "DOJ OPR findings / evidentiary limits",
+      "confidence": "P4 boundary"
+    }
+  ]
+}

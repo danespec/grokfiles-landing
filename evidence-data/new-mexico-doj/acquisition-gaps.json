@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "gap_id": "GAP-001",
+      "missing_record": "NMDOJ February 13, 2026 initial request letter",
+      "needed_to_resolve": "Exact records requested and any initial deadline or legal basis.",
+      "last_attempt": "Official NMDOJ June 30 letter and July 9 release reviewed; standalone February 13 letter not located.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-002",
+      "missing_record": "NMDOJ March 13, 2026 formal letter and five illustrative EFTA IDs",
+      "needed_to_resolve": "Record-by-record production ledger and redaction basis.",
+      "last_attempt": "June 30 letter describes but does not attach the March 13 letter.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-003",
+      "missing_record": "NMDOJ May 3, 2026 Touhy letter",
+      "needed_to_resolve": "Formal demand scope, attached documents, legal basis, and requested production conditions.",
+      "last_attempt": "June 30 letter describes the Touhy letter; no standalone PDF located.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-004",
+      "missing_record": "DOJ written Touhy response or denial to NMDOJ",
+      "needed_to_resolve": "DOJ's official record-specific legal basis and any production/refusal status.",
+      "last_attempt": "Official DOJ, USAO-NM, NMDOJ, and Senate-source searches located no written response as of this run.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-005",
+      "missing_record": "Transmission logs or production inventory for any records provided by DOJ to NMDOJ",
+      "needed_to_resolve": "Whether DOJ produced anything, what, when, and under what restrictions.",
+      "last_attempt": "No official public production ledger located.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-006",
+      "missing_record": "NM-specific protective agreement, MOU, confidentiality agreement, or state-court subpoena",
+      "needed_to_resolve": "Whether controlled access was offered, accepted, rejected, or judicially compelled.",
+      "last_attempt": "June 30 NMDOJ offer located; no DOJ acceptance or state subpoena located.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-007",
+      "missing_record": "Rule 6(e) petition or protective-order modification motion specific to New Mexico access",
+      "needed_to_resolve": "Whether DOJ sought or refused a judicial route around court restrictions.",
+      "last_attempt": "DOJ EFTA public-production court-order trail acquired; no NM-specific petition located.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-008",
+      "missing_record": "House Special Investigatory Committee subpoena service proofs, returns, responses, and compliance records",
+      "needed_to_resolve": "Whether the 20 public June 2026 HR 1 subpoena PDFs were served, answered, complied with, narrowed, or challenged.",
+      "last_attempt": "Committee pages, handout, public Drive folder, and 20 subpoena PDFs acquired; service and response records not located.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-009",
+      "missing_record": "Full official July 15 hearing transcript or video for Blanche/Hirono exchange",
+      "needed_to_resolve": "Exact question-and-answer wording beyond official Senate summary.",
+      "last_attempt": "Official Senate release acquired; underlying full transcript/video not archived.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-010",
+      "missing_record": "Victim-notification, privacy, or controlled-access protocol tailored to NMDOJ",
+      "needed_to_resolve": "How privacy interests would be protected if unredacted law-enforcement access is granted.",
+      "last_attempt": "General EFTA and statutory privacy sources acquired; NM-specific protocol not located.",
+      "status": "ACQUISITION_PENDING"
+    }
+  ]
+}

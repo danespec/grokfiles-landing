@@ -1,0 +1,221 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 125,
+  "page_id": "page_125",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_125.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_125.ocr.txt",
+  "image_metadata": {
+    "bytes": 2344357,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "647e14e14edeb8f9364288b96ec26f5e1cef03ef98ba1359db902a0cf14a639e"
+  },
+  "ocr_text": "aaa omen\ntM. @ (( by ve . b -5 )\n59 = 4p |\n‘| wish ae cola’ whe Kau happen\nNe hn eta) od ha bey dows\nHOUSE_OVERSIGHT_000125\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains handwritten mathematical equations, annotations, and a handwritten note at the bottom. Several lines and blocks of math are highlighted in yellow, and some parts are outlined with black or blue ink. There is a small section of crossed out text near the middle. The note at the bottom appears to be a message written in cursive handwriting.",
+    "Layout: highlighted mathematical formula lines at top",
+    "Layout: black outlined math expression box below highlights",
+    "Layout: additional handwritten notes and small crossed-out section in middle",
+    "Layout: handwritten note/message at bottom"
+  ],
+  "observations": [
+    "The page contains handwritten mathematical equations, annotations, and a handwritten note at the bottom. Several lines and blocks of math are highlighted in yellow, and some parts are outlined with black or blue ink. There is a small section of crossed out text near the middle. The note at the bottom appears to be a message written in cursive handwriting.",
+    "Layout: highlighted mathematical formula lines at top",
+    "Layout: black outlined math expression box below highlights",
+    "Layout: additional handwritten notes and small crossed-out section in middle",
+    "Layout: handwritten note/message at bottom"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000125",
+    "g + 15"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Jean Luc",
+      "confidence": "high",
+      "note": "Appears as signature-like handwritten text."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top section",
+      "text_as_seen": "y - xc = √64^3 + 5 x 12 / 2 - a - 1",
+      "confidence": "high",
+      "note": "Handwritten mathematical expression highlighted in yellow."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "xc + y = √81^2 + 2 x 20 + 4 / 2 - 1 = a",
+      "confidence": "high",
+      "note": "Highlighted mathematical expression."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "a = g + 15",
+      "confidence": "high",
+      "note": "Highlighted formula."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "a < g + 16",
+      "confidence": "high",
+      "note": "Highlighted formula."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "a > g + 12",
+      "confidence": "high",
+      "note": "Highlighted formula."
+    },
+    {
+      "location": "middle box",
+      "text_as_seen": "ln.e (( √64 x^2 x 8 x ) x ( b - 5 / I9.M ) - 15)",
+      "confidence": "medium",
+      "note": "Handwritten mathematical expression inside black box; some characters uncertain."
+    },
+    {
+      "location": "middle box",
+      "text_as_seen": "g = ln.e",
+      "confidence": "medium",
+      "note": "Handwritten note under black box."
+    },
+    {
+      "location": "middle box",
+      "text_as_seen": "x + y - 1 b + c - 2 + 3/1 + √u = a = g + 15",
+      "confidence": "medium",
+      "note": "Mathematical expression inside blue box; 'g + 15' highlighted in orange."
+    },
+    {
+      "location": "middle lower",
+      "text_as_seen": "where - g = g stage M = 8 I9 = 90 b = ? H.w ? = ? w.h.",
+      "confidence": "low",
+      "note": "Mathematical or notation variables and definitions with some text crossed out and unclear."
+    },
+    {
+      "location": "bottom section",
+      "text_as_seen": "I wish you every new day happier than every old happy day Your friend Jean Luc",
+      "confidence": "high",
+      "note": "Personal handwritten message."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:07.451Z",
+    "response_id": "resp_0b8bf1d94c10781c006a502d50215c8194aa2c95b026ad2ce5",
+    "raw_output_sha256": "dc5b2751ec883fedac98b5d419e62addf05af8c2fa22b929c6b1471b444f2faa"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b8bf1d94c10781c006a502d50215c8194aa2c95b026ad2ce5",
+    "enriched_at": "2026-07-09T23:23:07.451Z"
+  },
+  "visual_summary": "The page contains handwritten mathematical equations, annotations, and a handwritten note at the bottom. Several lines and blocks of math are highlighted in yellow, and some parts are outlined with black or blue ink. There is a small section of crossed out text near the middle. The note at the bottom appears to be a message written in cursive handwriting.",
+  "layout": [
+    "highlighted mathematical formula lines at top",
+    "black outlined math expression box below highlights",
+    "additional handwritten notes and small crossed-out section in middle",
+    "handwritten note/message at bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "top section",
+      "text_as_seen": "y - xc = √64^3 + 5 x 12 / 2 - a - 1",
+      "confidence": "high",
+      "note": "Handwritten mathematical expression highlighted in yellow."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "xc + y = √81^2 + 2 x 20 + 4 / 2 - 1 = a",
+      "confidence": "high",
+      "note": "Highlighted mathematical expression."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "a = g + 15",
+      "confidence": "high",
+      "note": "Highlighted formula."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "a < g + 16",
+      "confidence": "high",
+      "note": "Highlighted formula."
+    },
+    {
+      "location": "top section",
+      "text_as_seen": "a > g + 12",
+      "confidence": "high",
+      "note": "Highlighted formula."
+    },
+    {
+      "location": "middle box",
+      "text_as_seen": "ln.e (( √64 x^2 x 8 x ) x ( b - 5 / I9.M ) - 15)",
+      "confidence": "medium",
+      "note": "Handwritten mathematical expression inside black box; some characters uncertain."
+    },
+    {
+      "location": "middle box",
+      "text_as_seen": "g = ln.e",
+      "confidence": "medium",
+      "note": "Handwritten note under black box."
+    },
+    {
+      "location": "middle box",
+      "text_as_seen": "x + y - 1 b + c - 2 + 3/1 + √u = a = g + 15",
+      "confidence": "medium",
+      "note": "Mathematical expression inside blue box; 'g + 15' highlighted in orange."
+    },
+    {
+      "location": "middle lower",
+      "text_as_seen": "where - g = g stage M = 8 I9 = 90 b = ? H.w ? = ? w.h.",
+      "confidence": "low",
+      "note": "Mathematical or notation variables and definitions with some text crossed out and unclear."
+    },
+    {
+      "location": "bottom section",
+      "text_as_seen": "I wish you every new day happier than every old happy day Your friend Jean Luc",
+      "confidence": "high",
+      "note": "Personal handwritten message."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Jean Luc",
+      "confidence": "high",
+      "note": "Appears as signature-like handwritten text."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

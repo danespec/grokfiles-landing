@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 145,
+  "page_id": "page_145",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_145.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_145.ocr.txt",
+  "image_metadata": {
+    "bytes": 7416022,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2de799151cebd4e08e3878eddf94338bd1ef9c7b802c75a1c764ab4b9ce8e00d"
+  },
+  "ocr_text": "kK £ fove |\n ~S a me\n; es pasy Hasdeeagitsfasaper = : ; ri\na\nHOUSE_OVERSIGHT_000145\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page with a handwritten birthday message at the top and a photo of two men on a yellow boat in the ocean at the bottom. The men are wearing sunglasses; one is making a peace sign. The ocean and sky are visible behind them.",
+    "Layout: handwritten message at top center",
+    "Layout: photo near bottom spanning page width",
+    "Photo/image candidate at bottom half: Color photo of two men sitting close together on a yellow boat in the ocean. Both wear sunglasses, one in a blue patterned shirt making a peace sign, the other in a light-colored shirt smiling. Ocean and sky visible in background."
+  ],
+  "observations": [
+    "A page with a handwritten birthday message at the top and a photo of two men on a yellow boat in the ocean at the bottom. The men are wearing sunglasses; one is making a peace sign. The ocean and sky are visible behind them.",
+    "Layout: handwritten message at top center",
+    "Layout: photo near bottom spanning page width",
+    "Photo/image candidate at bottom half: Color photo of two men sitting close together on a yellow boat in the ocean. Both wear sunglasses, one in a blue patterned shirt making a peace sign, the other in a light-colored shirt smiling. Ocean and sky visible in background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "kK £ fove |",
+    "~S a me",
+    "; es pasy Hasdeeagitsfasaper = : ; ri",
+    "a",
+    "HOUSE_OVERSIGHT_000145"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Happy Birthday, Jeffrey We love you !!",
+      "confidence": "high",
+      "note": "Handwritten birthday greeting with a name and an expression of love."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:43.060Z",
+    "response_id": "resp_07a11d9e5186e20f006a502df1736c8190bd3593066a39dda4",
+    "raw_output_sha256": "06bdd72c8e326432687c3fa2c9c109c813630b47cc361fe8d6d494703cf97816"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_07a11d9e5186e20f006a502df1736c8190bd3593066a39dda4",
+    "enriched_at": "2026-07-09T23:25:43.060Z"
+  },
+  "visual_summary": "A page with a handwritten birthday message at the top and a photo of two men on a yellow boat in the ocean at the bottom. The men are wearing sunglasses; one is making a peace sign. The ocean and sky are visible behind them.",
+  "layout": [
+    "handwritten message at top center",
+    "photo near bottom spanning page width"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Happy Birthday, Jeffrey We love you !!",
+      "confidence": "high",
+      "note": "Handwritten birthday greeting with a name and an expression of love."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom half",
+      "description": "Color photo of two men sitting close together on a yellow boat in the ocean. Both wear sunglasses, one in a blue patterned shirt making a peace sign, the other in a light-colored shirt smiling. Ocean and sky visible in background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

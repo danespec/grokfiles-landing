@@ -1,0 +1,26 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "route": "/investigations/george-mitchell-epstein-source-audit",
+  "generated_at": "2026-10-06",
+  "counting_rule": "Raw name occurrences are not reported as independent documents. Derivatives, duplicate representations, mixed-name artifacts and namesakes must be collapsed into source families before counting.",
+  "sources": [
+    {"id":"GIUFFRE-ECF-1106-1","class":"SWORN_DEPOSITION","title":"Virginia Giuffre deposition excerpt, May 3, 2016","url":"https://www.justice.gov/multimedia/Court%20Records/Giuffre%20v.%20Maxwell%2C%20No.%20115-cv-07433%20%28S.D.N.Y.%202015%29/1106-1.pdf","supports":"Giuffre named George Mitchell among men she said she was instructed to go to. The source proves the allegation was made under oath, not that it was true."},
+    {"id":"MITCHELL-2019-DENIAL","class":"PUBLIC_STATEMENT_AS_REPORTED","title":"Former Sen. George Mitchell denies contact with alleged Epstein victim","url":"https://www.pressherald.com/2019/08/12/former-sen-george-mitchell-denies-contact-with-alleged-epstein-victim/","supports":"Mitchell's denial, statement about learning of Epstein conduct, and his no-further-contact wording."},
+    {"id":"EFTA02411740","class":"CONTEMPORANEOUS_EMAIL","url":"/archive/EFTA02411740","supports":"June 2010 instruction to contact George Mitchell and mention Epstein/Mandelson availability."},
+    {"id":"EFTA02412411","class":"CONTEMPORANEOUS_EMAIL","url":"/archive/EFTA02412411","supports":"June 2010 follow-up through Mitchell's assistant; callback information left."},
+    {"id":"EFTA00428166","class":"CONTEMPORANEOUS_SCHEDULING_EMAIL","url":"/archive/EFTA00428166","supports":"September 2011 schedule says Senator Mitchell would come about 4:15; attendance itself remains unconfirmed."},
+    {"id":"EFTA00408367","class":"CONTEMPORANEOUS_EMAIL","url":"/archive/EFTA00408367","supports":"July 2012 office record says Senator Mitchell called and offered Friday/Saturday timing to catch up."},
+    {"id":"EFTA01752838","class":"MIXED_EMAIL_CALENDAR_ARTIFACT","url":"/archive/EFTA01752838","supports":"Artifact contains a David Mitchell email and a separate Senator George Mitchell calendar entry; demonstrates namesake collision risk."},
+    {"id":"EFTA00339592","class":"DIRECT_CORRESPONDENCE_RECORD","url":"/archive/EFTA00339592","supports":"September 2015 reply displayed as Mitchell, George; travel schedule and regards to Jeffrey."},
+    {"id":"HOUSE_OVERSIGHT_000146","class":"HOUSE_RELEASED_SOURCE_OBJECT","title":"Birthday book page 146","url":"/research/evidence/birthday-book/pages/146","release_url":"https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/","supports":"January 2003 handwritten letter addressed to Jeffrey with visible signature-like George Mitchell string; GAH attribution status is probable, not verified."},
+    {"id":"HOC-BAND-TRANSCRIPT","class":"OFFICIAL_COMMITTEE_TRANSCRIPT","title":"Doug Band Final Transcript","url":"https://oversight.house.gov/wp-content/uploads/2026/07/Band-Final-Transcript-7.16.26.pdf","archived_url":"/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-final-transcript-2026-06-30.pdf","sha256":"63b062ff5d3f7a214c3630d2761701f659436ec461e222a55077463a48e72fe9","supports":"Band answered No when asked about Senator George Mitchell in rapid name-list testimony context."},
+    {"id":"HOC-BLACK-TRANSCRIPT","class":"OFFICIAL_COMMITTEE_TRANSCRIPT","title":"Leon Black Final Transcript","url":"https://oversight.house.gov/wp-content/uploads/2026/07/Leon-Black-Final-Transcript-7.16.26.pdf","archived_url":"/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf","sha256":"633183545f7bff8ef8bf050af0cb7fc92b78a251b01d39e6c5526dc3f14c49be","supports":"Black characterized Epstein's network as including George Mitchell; testimony proves Black made the statement, not independent relationship facts."},
+    {"id":"EFTA01249058","class":"PROSECUTOR_EMAIL_RELAYING_ALLEGATION","url":"/archive/EFTA01249058","supports":"2011 prosecutor email records allegations relayed by civil counsel during preliminary review; not a finding and not treated as corroboration."}
+  ],
+  "acquisition_gaps": [
+    "Independent authorship authentication for HOUSE_OVERSIGHT_000146.",
+    "Attendance confirmation for scheduled 2011 and 2013 appointments.",
+    "Primary provenance for any 334-document George Mitchell count.",
+    "Additional direct records clarifying the intended cutoff in the 2019 no-further-contact statement."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "leon-black-158m-170m",
+  "title": "$158 Million Became $170 Million: Reconstructing Leon Black\u2019s Payments to Jeffrey Epstein",
+  "published": "2026-10-08",
+  "sources": [
+    {
+      "id": "DECHERT-2021",
+      "class": "PRIMARY_CORPORATE_INDEPENDENT_REVIEW",
+      "record": "Dechert LLP report to Apollo Conflicts Committee",
+      "url": "https://www.sec.gov/Archives/edgar/data/1411494/000119312521016405/d118102dex991.htm",
+      "supports": "$158M total, 2012\u20132017 period, services description, Dechert conclusions and limits.",
+      "limit": "Commissioned corporate review; not a judicial finding."
+    },
+    {
+      "id": "SFC-2023",
+      "class": "PRIMARY_CONGRESSIONAL_INVESTIGATION",
+      "record": "Senate Finance investigation announcement",
+      "url": "https://www.finance.senate.gov/chairmans-news/wyden-unveils-ongoing-investigation-into-private-equity-billionaire-leon-blacks-tax-planning-and-financial-ties-with-jeffrey-epstein",
+      "supports": "Compensation questions, lack of written agreements for at least some years, committee scrutiny of tax/estate transactions.",
+      "limit": "Investigative assertions and questions; not adjudicated tax findings."
+    },
+    {
+      "id": "SFC-2025",
+      "class": "PRIMARY_CONGRESSIONAL_INVESTIGATION",
+      "record": "Senate Finance March 2025 update",
+      "url": "https://www.finance.senate.gov/ranking-members-news/wyden-releases-new-information-on-financing-of-jeffrey-epsteins-operations-by-billionaire-leon-black-seeks-documents-from-trump-administration",
+      "supports": "Committee statement that true payment total was $170M.",
+      "limit": "Public release does not provide a full row-by-row reconciliation of the extra $12M."
+    },
+    {
+      "id": "SFC-2026",
+      "class": "PRIMARY_CONGRESSIONAL_LETTER",
+      "record": "Wyden letter to House Oversight",
+      "url": "https://www.finance.senate.gov/imo/media/doc/wyden_letter_to_house_oversight_on_leon_black-epstein_060426.pdf",
+      "supports": "2013\u20132014 ~$120M and 2013\u20132015 ~$150M payment reconstruction.",
+      "limit": "Committee reconstruction; underlying transaction records must be checked individually."
+    },
+    {
+      "id": "USVI-FS-2023",
+      "class": "PRIMARY_GOVERNMENT_FINANCIAL_STATEMENT",
+      "record": "Government of USVI financial statements",
+      "url": "https://dof.vi.gov/sites/default/files/docs/GVI%20Financial%20Statements%202023.pdf",
+      "supports": "$62.5M settlement amount and general settlement description.",
+      "limit": "Settlement is separate from advisory-payment totals and does not itself establish criminal conduct."
+    }
+  ],
+  "open_questions": [
+    "Which exact transactions account for the $12 million difference between the Dechert and Senate totals?",
+    "What contemporaneous documents set compensation for each project and year?",
+    "How did each relevant financial institution classify and report the payments?",
+    "Which underlying wires can be independently joined to the public bank-record corpus?"
+  ],
+  "not_established": [
+    "That the $12 million discrepancy proves concealment or criminal purpose.",
+    "That every payment lacked legitimate services.",
+    "That every Dechert service characterization resolves later Senate questions.",
+    "That the USVI settlement is equivalent to an admission of criminal liability."
+  ]
+}

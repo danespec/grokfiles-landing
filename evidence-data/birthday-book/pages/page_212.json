@@ -1,0 +1,126 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 212,
+  "page_id": "page_212",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_212.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_212.ocr.txt",
+  "image_metadata": {
+    "bytes": 4447066,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8a4c679651853d29c2fcd92985a2e965525dc52588b738de6381984233d21361"
+  },
+  "ocr_text": "* ; y 2 You'pe Wale\nmake it y the Mch- moliped,..\nSYARY bat sft ‘he ek\n_*\na j ing, Ladle\nOD oh Sider 28\n¥ ph te\nfuk 75 ds.\ny 1 a “Up AS apes nh. aa op x\nDy hear Pleud, Hyd  Iithay\nand mich Aappmness ‘\n(chav)\nHOUSE_OVERSIGHT_000212\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains handwritten text in cursive mainly on a white background with several green star-shaped stickers and some yellow highlight marks scattered around the text. There is a black background border around the white page. The handwriting varies in size and spacing with some words underlined or emphasized with additional marks. Text is generally centered on the page.",
+    "Layout: handwritten text",
+    "Layout: green star stickers scattered",
+    "Layout: some yellow highlighted words or punctuation",
+    "Layout: white page with black border"
+  ],
+  "observations": [
+    "The page contains handwritten text in cursive mainly on a white background with several green star-shaped stickers and some yellow highlight marks scattered around the text. There is a black background border around the white page. The handwriting varies in size and spacing with some words underlined or emphasized with additional marks. Text is generally centered on the page.",
+    "Layout: handwritten text",
+    "Layout: green star stickers scattered",
+    "Layout: some yellow highlighted words or punctuation",
+    "Layout: white page with black border"
+  ],
+  "dates": [
+    "58"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000212"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center of page",
+      "text_as_seen": "To Jeffrey.... what can \"I\" possibly say to you? You're finally made it to the much-maligned... SCARY \"58\".... but you're not getting older... you're getting better....... or is it \"richer\"???",
+      "confidence": "high",
+      "note": "Main body of text at top and middle of page"
+    },
+    {
+      "location": "middle-right",
+      "text_as_seen": "Think back all we've been through - growing-up is impossible to do! n'est-ce pas?",
+      "confidence": "high",
+      "note": "Continuation of handwritten text lower on page"
+    },
+    {
+      "location": "bottom",
+      "text_as_seen": "My dear friend, Happiest of Birthdays and much happiness! (OK w.s.v.p)",
+      "confidence": "high",
+      "note": "Closing line of handwritten text"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:36:21.952Z",
+    "response_id": "resp_0db7776d1a4a5973006a50306fe6c48195a0755247fe4dbdc0",
+    "raw_output_sha256": "348547c85e9c2264ddf0bf83d47b9b007f59900745b9bb50ba338b5bc79336a0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0db7776d1a4a5973006a50306fe6c48195a0755247fe4dbdc0",
+    "enriched_at": "2026-07-09T23:36:21.952Z"
+  },
+  "visual_summary": "The page contains handwritten text in cursive mainly on a white background with several green star-shaped stickers and some yellow highlight marks scattered around the text. There is a black background border around the white page. The handwriting varies in size and spacing with some words underlined or emphasized with additional marks. Text is generally centered on the page.",
+  "layout": [
+    "handwritten text",
+    "green star stickers scattered",
+    "some yellow highlighted words or punctuation",
+    "white page with black border"
+  ],
+  "handwriting": [
+    {
+      "location": "center of page",
+      "text_as_seen": "To Jeffrey.... what can \"I\" possibly say to you? You're finally made it to the much-maligned... SCARY \"58\".... but you're not getting older... you're getting better....... or is it \"richer\"???",
+      "confidence": "high",
+      "note": "Main body of text at top and middle of page"
+    },
+    {
+      "location": "middle-right",
+      "text_as_seen": "Think back all we've been through - growing-up is impossible to do! n'est-ce pas?",
+      "confidence": "high",
+      "note": "Continuation of handwritten text lower on page"
+    },
+    {
+      "location": "bottom",
+      "text_as_seen": "My dear friend, Happiest of Birthdays and much happiness! (OK w.s.v.p)",
+      "confidence": "high",
+      "note": "Closing line of handwritten text"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "58"
+  ],
+  "confidence": "high"
+}

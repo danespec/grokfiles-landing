@@ -1,0 +1,146 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 18,
+  "page_id": "page_018",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_018.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_018.ocr.txt",
+  "image_metadata": {
+    "bytes": 11467168,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "eb04f8123f50ecd783ff26376833a33680c52658bffab33327fcd8fe37d16ea9"
+  },
+  "ocr_text": "“ai ae\ni ae a.\nNao | ik Sa oe |\nHOUSE_OVERSIGHT_000018\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains four black-and-white photographs arranged in a block format with two images on the left column and two on the right column. The top-left photo depicts an adult male in a sleeveless bathing suit, outdoors. The top-right photo shows four people in formal attire, seated and standing against a dark backdrop. The bottom-left photo is a posed family portrait with seven individuals, some seated, some standing, in front of a painted indoor backdrop with a window. The bottom-right photo shows a young woman in a light-colored dress standing in front of a textured wooden door, with a handwritten date below the photo.",
+    "Layout: top-left photo: adult male in bathing suit",
+    "Layout: top-right photo: group of four formal adults",
+    "Layout: bottom-left photo: posed family group portrait",
+    "Layout: bottom-right photo: young woman standing in front of wooden door",
+    "Photo/image candidate at top-left quadrant: An adult man standing outdoors wearing a sleeveless bathing suit.",
+    "Photo/image candidate at top-right quadrant: A group portrait of four individuals dressed formally against a dark background.",
+    "Photo/image candidate at bottom-left quadrant: A family portrait featuring seven people, posed indoors before a painted backdrop with a window.",
+    "Photo/image candidate at bottom-right quadrant: A young woman in a light-colored dress standing in front of a wooden door with visible latch."
+  ],
+  "observations": [
+    "Page contains four black-and-white photographs arranged in a block format with two images on the left column and two on the right column. The top-left photo depicts an adult male in a sleeveless bathing suit, outdoors. The top-right photo shows four people in formal attire, seated and standing against a dark backdrop. The bottom-left photo is a posed family portrait with seven individuals, some seated, some standing, in front of a painted indoor backdrop with a window. The bottom-right photo shows a young woman in a light-colored dress standing in front of a textured wooden door, with a handwritten date below the photo.",
+    "Layout: top-left photo: adult male in bathing suit",
+    "Layout: top-right photo: group of four formal adults",
+    "Layout: bottom-left photo: posed family group portrait",
+    "Layout: bottom-right photo: young woman standing in front of wooden door",
+    "Photo/image candidate at top-left quadrant: An adult man standing outdoors wearing a sleeveless bathing suit.",
+    "Photo/image candidate at top-right quadrant: A group portrait of four individuals dressed formally against a dark background.",
+    "Photo/image candidate at bottom-left quadrant: A family portrait featuring seven people, posed indoors before a painted backdrop with a window.",
+    "Photo/image candidate at bottom-right quadrant: A young woman in a light-colored dress standing in front of a wooden door with visible latch."
+  ],
+  "dates": [
+    "1935",
+    "Aug. 5 - 1934"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000018"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "bottom edge of top-left photo",
+      "text_as_seen": "1935",
+      "confidence": "high",
+      "note": "Handwritten numeric string, possibly a date"
+    },
+    {
+      "location": "bottom edge of bottom-right photo",
+      "text_as_seen": "Aug. 5 - 1934",
+      "confidence": "high",
+      "note": "Handwritten date string"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:04:54.433Z",
+    "response_id": "resp_0c64518ca480a6e6006a50290ee80c81969a75c4b93497f351",
+    "raw_output_sha256": "9ce09aa550216e0b39c769d81a9afc74c80993b0bf4ac1fa6f895a6515187852"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c64518ca480a6e6006a50290ee80c81969a75c4b93497f351",
+    "enriched_at": "2026-07-09T23:04:54.433Z"
+  },
+  "visual_summary": "Page contains four black-and-white photographs arranged in a block format with two images on the left column and two on the right column. The top-left photo depicts an adult male in a sleeveless bathing suit, outdoors. The top-right photo shows four people in formal attire, seated and standing against a dark backdrop. The bottom-left photo is a posed family portrait with seven individuals, some seated, some standing, in front of a painted indoor backdrop with a window. The bottom-right photo shows a young woman in a light-colored dress standing in front of a textured wooden door, with a handwritten date below the photo.",
+  "layout": [
+    "top-left photo: adult male in bathing suit",
+    "top-right photo: group of four formal adults",
+    "bottom-left photo: posed family group portrait",
+    "bottom-right photo: young woman standing in front of wooden door"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom edge of top-left photo",
+      "text_as_seen": "1935",
+      "confidence": "high",
+      "note": "Handwritten numeric string, possibly a date"
+    },
+    {
+      "location": "bottom edge of bottom-right photo",
+      "text_as_seen": "Aug. 5 - 1934",
+      "confidence": "high",
+      "note": "Handwritten date string"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top-left quadrant",
+      "description": "An adult man standing outdoors wearing a sleeveless bathing suit.",
+      "confidence": "high"
+    },
+    {
+      "location": "top-right quadrant",
+      "description": "A group portrait of four individuals dressed formally against a dark background.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-left quadrant",
+      "description": "A family portrait featuring seven people, posed indoors before a painted backdrop with a window.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-right quadrant",
+      "description": "A young woman in a light-colored dress standing in front of a wooden door with visible latch.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "1935",
+    "Aug. 5 - 1934"
+  ],
+  "confidence": "high"
+}

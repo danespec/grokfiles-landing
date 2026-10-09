@@ -1,0 +1,246 @@
+{
+  "schema": "gah.source_manifest.v1",
+  "title": "Financial Trust and Environmental Solutions Worldwide — 2005–2012 Investment Lifecycle",
+  "route": "/investigations/financial-trust-environmental-solutions-worldwide",
+  "published": "2026-09-30",
+  "evidence_boundary": "The sources support an investment, ownership and exit chronology. They do not establish wrongdoing, operational control, or causation between Financial Trust capital and government adoption or procurement.",
+  "sources": [
+    {
+      "id": "SEC-2005-8K",
+      "class": "PRIMARY_SEC",
+      "role": "Initial $2 million issuer subscription",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000090901205000341/t301770.txt"
+    },
+    {
+      "id": "SEC-2005-SB2",
+      "class": "PRIMARY_SEC",
+      "role": "Initial shares, warrants and registration",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000090901205000864/t302130.txt"
+    },
+    {
+      "id": "EFTA00599516",
+      "class": "PRIMARY_INTERNAL",
+      "role": "Financial Trust ESW share/basis schedule; May 2005 lot; conversion and 2011 expansion",
+      "url": null
+    },
+    {
+      "id": "EFTA02441323",
+      "class": "PRIMARY_EMAIL",
+      "role": "2009 hold/sell consultation path involving Groff and Leon Black",
+      "url": null
+    },
+    {
+      "id": "EFTA02429133",
+      "class": "PRIMARY_EMAIL",
+      "role": "March 2010 approval/administration path",
+      "url": null
+    },
+    {
+      "id": "EFTA01585465",
+      "class": "PRIMARY_BANK",
+      "role": "$1 million ESW escrow wire instruction",
+      "url": null
+    },
+    {
+      "id": "EFTA01509627",
+      "class": "PRIMARY_BANK",
+      "role": "Posted JPMorgan debit confirming settlement",
+      "url": null
+    },
+    {
+      "id": "SEC-2010-8K",
+      "class": "PRIMARY_SEC",
+      "role": "Convertible debenture, subscription and closing terms",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000090901210000208/t305863.txt"
+    },
+    {
+      "id": "SEC-2010-Q1-10Q",
+      "class": "PRIMARY_SEC",
+      "role": "Mandatory conversion and aggregate conversion shares",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000090901210000301/t305914.txt"
+    },
+    {
+      "id": "SEC-2011-Q2-10Q",
+      "class": "PRIMARY_SEC",
+      "role": "2011 ownership expansion / rights context",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000090901211000469/t306475.htm"
+    },
+    {
+      "id": "SEC-2011-13G",
+      "class": "PRIMARY_SEC",
+      "role": "13,350,205 shares / 6.1% and non-control certification",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000090901211000390/t306414.txt"
+    },
+    {
+      "id": "EFTA01128206",
+      "class": "PRIMARY_LEGAL",
+      "role": "November 2012 ESW/AP package sale draft",
+      "url": null
+    },
+    {
+      "id": "EFTA00693690",
+      "class": "PRIMARY_ACCOUNTING",
+      "role": "$5m ESW / $250k AP SHL / $250k AP Technology allocation",
+      "url": null
+    },
+    {
+      "id": "EFTA01510783",
+      "class": "PRIMARY_BANK",
+      "role": "November 30, 2012 $5,500,030 Black Family Partners credit",
+      "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01510783.pdf"
+    },
+    {
+      "id": "EFTA01510763",
+      "class": "PRIMARY_BANK",
+      "role": "Duplicate representation of the same $5,500,030 economic receipt",
+      "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01510763.pdf"
+    },
+    {
+      "id": "EFTA00585846",
+      "class": "PRIMARY_LEGAL",
+      "role": "Stock power covering 13,198,711 certificate shares",
+      "url": null
+    },
+    {
+      "id": "EFTA00299927",
+      "class": "PRIMARY_CORPUS_MANIFEST",
+      "role": "Transaction-file inventory including broker-held share-transfer instruction",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00299927.pdf"
+    },
+    {
+      "id": "SEC-2014-S1A",
+      "class": "PRIMARY_SEC",
+      "role": "Post-split Black Family Partners beneficial ownership",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000108227814000028/kl2-2806582v20s1_eswrightsof.htm"
+    },
+    {
+      "id": "EFTA02403217",
+      "class": "PRIMARY_EMAIL",
+      "role": "2015 transfer-agent/certificate administration",
+      "url": null
+    },
+    {
+      "id": "CARB-DE-04-011-FAMILY",
+      "class": "PRIMARY_GOVERNMENT",
+      "role": "Pre-investment 2004 Particulate Reactor verification",
+      "url": "https://ww2.arb.ca.gov/verification-procedure-formerly-verified-level-2"
+    },
+    {
+      "id": "CARB-DE-09-015",
+      "class": "PRIMARY_GOVERNMENT",
+      "role": "2009 ThermaCat Level 3 Plus verification",
+      "url": "https://ww2.arb.ca.gov/sites/default/files/classic/diesel/verdev/pdf/executive_orders/de-09-015.pdf"
+    },
+    {
+      "id": "EPA-CLEAN-DIESEL-ARCHIVE",
+      "class": "PRIMARY_GOVERNMENT",
+      "role": "Third-party grant-supported marine deployment context",
+      "url": "https://archive.epa.gov/otaq/diesel/archive/web/html/index.html"
+    },
+    {
+      "id": "USASPENDING-ESW-CANADA",
+      "class": "PRIMARY_GOVERNMENT",
+      "role": "11 exact federal contract awards totaling $636,042; award IDs enumerated in the Run 13 workpaper",
+      "url": "https://www.usaspending.gov/"
+    },
+    {
+      "id": "SEC-2013-REVERSE-SPLIT",
+      "class": "PRIMARY_SEC",
+      "role": "1-for-2,000 reverse split and ticker transition",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000128634513000105/kl2-2799052v2esw_8karticleso.htm"
+    },
+    {
+      "id": "SEC-2015-10K",
+      "class": "PRIMARY_SEC",
+      "role": "Later ownership/operating record and reporting-suspension context",
+      "url": "https://www.sec.gov/Archives/edgar/data/1082278/000108227815000018/kfinal7.htm"
+    }
+  ],
+  "procurement_awards": [
+    {
+      "award": "DJU4500413982",
+      "agency": "DOJ / Federal Prison System-BOP",
+      "date": "2011-04-06",
+      "amount": 20598,
+      "description": "CARB retrofit kit"
+    },
+    {
+      "award": "DJU4500416787",
+      "agency": "DOJ / Federal Prison System-BOP",
+      "date": "2011-05-18",
+      "amount": 20598,
+      "description": "CARB retrofit kit"
+    },
+    {
+      "award": "SPM7L612M0150",
+      "agency": "DoD / DLA",
+      "date": "2011-10-17",
+      "amount": 143160,
+      "description": "Emergency commercial-hardware buy"
+    },
+    {
+      "award": "SPM7L512M0449",
+      "agency": "DoD / DLA",
+      "date": "2011-12-02",
+      "amount": 123284,
+      "description": "Exhaust muffler"
+    },
+    {
+      "award": "SPM7L512M1145",
+      "agency": "DoD / DLA",
+      "date": "2012-03-12",
+      "amount": 109802,
+      "description": "Exhaust muffler"
+    },
+    {
+      "award": "SPM7L612M1312",
+      "agency": "DoD / DLA",
+      "date": "2012-03-15",
+      "amount": 145040,
+      "description": "Emergency commercial-hardware buy"
+    },
+    {
+      "award": "DJU4500459209",
+      "agency": "DOJ / BOP",
+      "date": "2013-02-06",
+      "amount": 15920,
+      "description": "ESW DPF E145-14"
+    },
+    {
+      "award": "DJU4500459212",
+      "agency": "DOJ / BOP",
+      "date": "2013-02-06",
+      "amount": 13490,
+      "description": "ESW DPF E144-12"
+    },
+    {
+      "award": "DJU4500459219",
+      "agency": "DOJ / BOP",
+      "date": "2013-02-06",
+      "amount": 13490,
+      "description": "ESW DPF E144-12"
+    },
+    {
+      "award": "DJU4500459487",
+      "agency": "DOJ / BOP",
+      "date": "2013-02-11",
+      "amount": 15280,
+      "description": "ESW DPF E145-12"
+    },
+    {
+      "award": "DJU4500459492",
+      "agency": "DOJ / BOP",
+      "date": "2013-02-11",
+      "amount": 15380,
+      "description": "ESW DPF E145-12"
+    }
+  ],
+  "open_questions": [
+    "Who introduced Financial Trust to ESW in 2005?",
+    "Where is the original bank execution for the April 2005 $2 million subscription?",
+    "Who sold or sourced the separate May 2005 100,000-share lot?",
+    "Why is the November 30, 2012 bank credit $30 above the stated package price?",
+    "Why did transfer-agent/certificate administration remain unresolved after the economic exit?",
+    "No source recovered ties Financial Trust capital directly to CARB, EPA, DLA or Bureau of Prisons activity."
+  ]
+}

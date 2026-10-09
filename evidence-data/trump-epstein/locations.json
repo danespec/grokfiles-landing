@@ -1,0 +1,15 @@
+{
+  "schema_version": "r5-public-quarantine-20260723",
+  "public_route_family": "/investigations/trump-in-the-epstein-files",
+  "asset": "locations.json",
+  "public_state": "NOINDEX_STATUS_ONLY",
+  "updated_at": "2026-07-23",
+  "reason": "Explicit claim details and excerpts are withheld pending complete source packets.",
+  "publication_gate": "Do not use this public JSON as an allegation, identity, conduct, or corroboration source.",
+  "retained_public_fields": [
+    "source-genealogy status",
+    "adjudication state",
+    "review queue state"
+  ],
+  "records": []
+}

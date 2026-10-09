@@ -1,0 +1,79 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 160,
+  "page_id": "page_160",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_160.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_160.ocr.txt",
+  "image_metadata": {
+    "bytes": 1839449,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "796b8de537fa851d4dc1068efbcc6439bfdc66bd3ea7dbe1746a9876a9c19165"
+  },
+  "ocr_text": "JEFFREY\nI ‘y JEFFREY A CLIENT VERY\niL EVEN THOUGH WERE W Ei\nTOGETHER, WE & FRIENDS; SO I CONSIDER\nFIRST FRIEND. OF BECOMING\nCENE was INEVITABLE FOR 1\nFIRST TIME I MET MEOH CRAZIER THAN\n. ii!\nCAN MAYBE A , BUT MOSTLY 4 TEDDY\nHE IS MOST Ai AND. COOLEST\nTHAT CAN HAVE.\nHOUSE_OVERSIGHT_000160\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page displays a typed, colorful text centered on a white background. The text uses various colors including blue, yellow, pink, and purple. The headline 'JEFFREY' is prominently in larger, multi-colored letters at the top center. The body text consists of multiple sentences with certain words emphasized in bold colors. There are no photos or drawings. The page appears clean with a white margin and no additional graphics apart from the colorful text.",
+    "Layout: Centered colorful headline",
+    "Layout: Centered multi-line colored body text"
+  ],
+  "observations": [
+    "Page displays a typed, colorful text centered on a white background. The text uses various colors including blue, yellow, pink, and purple. The headline 'JEFFREY' is prominently in larger, multi-colored letters at the top center. The body text consists of multiple sentences with certain words emphasized in bold colors. There are no photos or drawings. The page appears clean with a white margin and no additional graphics apart from the colorful text.",
+    "Layout: Centered colorful headline",
+    "Layout: Centered multi-line colored body text"
+  ],
+  "dates": [],
+  "document_strings": [
+    "JEFFREY",
+    "I MET JEFFREY AS A CLIENT ALTHOUGH VERY QUICKLY, EVEN THOUGH WE WERE WORKING TOGETHER, WE BECAME FRIENDS; SO I CONSIDER HIM FIRST A FRIEND. OF COURSE, BECOMING FRIENDS WAS INEVITABLE BECAUSE FOR THE FIRST TIME I MET SOMEONE CRAZIER THAN ME...!!!",
+    "HE CAN MAYBE BE A BEAR, BUT MOSTLY A TEDDY BEAR. HE IS THE MOST ADORABLE AND COOLEST FRIEND THAT ANYONE CAN HAVE.",
+    "HOUSE_OVERSIGHT_000160"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:00.802Z",
+    "response_id": "resp_09374177188043b6006a502e7ac0388193aadf221f49771720",
+    "raw_output_sha256": "5dce403b175d256b2f0af1e42138229d893cd9e91fcf8d7abcb2c20aa7ab5d5b"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09374177188043b6006a502e7ac0388193aadf221f49771720",
+    "enriched_at": "2026-07-09T23:28:00.802Z"
+  },
+  "visual_summary": "Page displays a typed, colorful text centered on a white background. The text uses various colors including blue, yellow, pink, and purple. The headline 'JEFFREY' is prominently in larger, multi-colored letters at the top center. The body text consists of multiple sentences with certain words emphasized in bold colors. There are no photos or drawings. The page appears clean with a white margin and no additional graphics apart from the colorful text.",
+  "layout": [
+    "Centered colorful headline",
+    "Centered multi-line colored body text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

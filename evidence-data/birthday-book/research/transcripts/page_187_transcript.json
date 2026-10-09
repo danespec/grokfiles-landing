@@ -1,0 +1,76 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 187,
+  "bates": "HOUSE_OVERSIGHT_000187",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/187",
+  "related_people": [
+    "Marvin Minsky"
+  ],
+  "priority_rank": 6,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_03b0dcf9e567ff7f006a50eb32c21481979b4b2844a4e7f337",
+  "transcript_status": "transcribed",
+  "overall_confidence": "high",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_public",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "No identification or inference about authorship is made.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "below printed text block",
+      "text": "Marvin Minsky",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Marvin Minsky"
+    },
+    {
+      "line_number": 2,
+      "location": "below printed text block",
+      "text": "Happy Birthday!",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Happy Birthday!"
+    }
+  ],
+  "document_strings": [
+    "SELF-IDEALS",
+    "Jeffrey E.",
+    "GOALS",
+    "CENSORS",
+    "PERSONAE",
+    "SUPPRESSORS",
+    "COMMONSENSE KNOWLEDGE BASES",
+    "SELF-REFLECTIONS",
+    "ECONOMISTS",
+    "REASONERS",
+    "SIMULATORS",
+    "PREDICTORS",
+    "REFLECTIVE PROCESSES",
+    "PLANNERS",
+    "DESCRIPTIONS",
+    "SENSORS",
+    "DELIBERATIVE PROCESSES",
+    "GOALS & PLANS",
+    "MOTORS",
+    "REACTIVE PROCESSES"
+  ],
+  "visible_non_transcript_notes": [
+    "Printed diagram and text block on the page",
+    "Black redaction box below handwriting"
+  ],
+  "gaps": [
+    "No additional handwriting below the second line visible due to redaction"
+  ],
+  "raw_output_sha256": "bc4f509ee5c96ee67c59fa49a94275f95873a80eeeb976a50d6182b4e154b521",
+  "transcribed_at": "2026-07-10T12:53:14.029Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

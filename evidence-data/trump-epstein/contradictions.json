@@ -1,0 +1,128 @@
+{
+  "task_id": "GAH-TRUMP-TIMELINE-003",
+  "review_completed_utc": "2026-07-16T19:15:00Z",
+  "count_contradictions": 11,
+  "policy": "Both sides are shown without resolving the conflict unless attributable evidence resolves it.",
+  "contradictions": [
+    {
+      "contradiction_id": "TEP-CON-0001",
+      "type": "pleading versus denial",
+      "side_a": "EFTA00155390 reproduces Johnson pleading language alleging Trump assaulted her in summer 1994.",
+      "side_b": "EFTA00065479 and EFTA01433755 quote Trump / Alan Garten denying the allegations and saying they lack merit.",
+      "source_ids": ["EFTA00155390", "EFTA00065479", "EFTA01433755"],
+      "claim_connection": "TRUMP-CLAIM-0002",
+      "status": "unresolved; REVIEWED - DISPUTED",
+      "limitation": "The archive capture is not a certified court PDF and the denial is not independent disproof."
+    },
+    {
+      "contradiction_id": "TEP-CON-0002",
+      "type": "primary-record gap",
+      "side_a": "The Johnson claim appears in a social capture and secondary media accounts.",
+      "side_b": "The certified complaint, exhibits, and full docket history were not located in the reviewed archive set.",
+      "source_ids": ["EFTA00155390", "EFTA01433755", "EFTA00065479"],
+      "claim_connection": "TRUMP-CLAIM-0002",
+      "status": "unresolved source gap",
+      "limitation": "No claim should be strengthened beyond the captured pleading text."
+    },
+    {
+      "contradiction_id": "TEP-CON-0003",
+      "type": "firsthand versus verification",
+      "side_a": "Witness II gives a firsthand account of an alleged Trump room interaction in EFTA02858481.",
+      "side_b": "No independent attributable record was located that corroborates the specific alleged conduct.",
+      "source_ids": ["EFTA02858481"],
+      "claim_connection": "TRUMP-CLAIM-0001",
+      "status": "unresolved; REVIEWED - UNCORROBORATED",
+      "limitation": "The FBI 302 documents what the witness reported. It does not, by itself, establish that the allegation occurred."
+    },
+    {
+      "contradiction_id": "TEP-CON-0004",
+      "type": "location specificity conflict",
+      "side_a": "Witness II describes either New York or New Jersey and a very tall building with huge rooms.",
+      "side_b": "No building, date, travel record, or independent location record was identified.",
+      "source_ids": ["EFTA02858481"],
+      "claim_connection": "TRUMP-CLAIM-0001",
+      "status": "unresolved location gap",
+      "limitation": "The location cannot be normalized beyond the witness description."
+    },
+    {
+      "contradiction_id": "TEP-CON-0005",
+      "type": "deposition admission versus non-answer",
+      "side_a": "Epstein answered yes when asked if he socialized with Trump.",
+      "side_b": "Epstein asserted constitutional rights when asked if he socialized with Trump in the presence of females under 18.",
+      "source_ids": ["EFTA00081220"],
+      "claim_connection": "non-allegation deposition lane",
+      "status": "not resolved by inference",
+      "limitation": "The non-answer is not an admission and the yes answer establishes only socialization."
+    },
+    {
+      "contradiction_id": "TEP-CON-0006",
+      "type": "directory presence versus relationship inference",
+      "side_a": "Alessi prep notes say Donald Trump's name was in Epstein/Maxwell address books.",
+      "side_b": "The actual address-book page is not attached and the note does not establish interaction or conduct.",
+      "source_ids": ["EFTA00157631"],
+      "claim_connection": "non-allegation contact-directory lane",
+      "status": "resolved only as directory-context evidence",
+      "limitation": "Directory presence is not corroboration of any allegation."
+    },
+    {
+      "contradiction_id": "TEP-CON-0007",
+      "type": "draft versus published wording",
+      "side_a": "EFTA02631674 contains Wolff draft language alleging a Trump-Westerhout relationship through hearsay.",
+      "side_b": "The reviewed archive set does not establish whether the wording was published, changed, or omitted.",
+      "source_ids": ["EFTA02631674", "EFTA02605480"],
+      "claim_connection": "TRUMP-CLAIM-0003",
+      "status": "unresolved; REVIEWED - UNCORROBORATED",
+      "limitation": "A draft manuscript and attributed hearsay are not independent verification."
+    },
+    {
+      "contradiction_id": "TEP-CON-0008",
+      "type": "draft hearsay versus denial",
+      "side_a": "Wolff draft text contains the disputed allegation.",
+      "side_b": "External public reporting records denials by Westerhout and the White House.",
+      "source_ids": ["EFTA02631674"],
+      "claim_connection": "TRUMP-CLAIM-0003",
+      "status": "unresolved disputed hearsay",
+      "limitation": "Denial is visible context but not source-record disproof."
+    },
+    {
+      "contradiction_id": "TEP-CON-0009",
+      "type": "media repetition versus independent corroboration",
+      "side_a": "Katie Johnson material appears across social captures, articles, and forwarded media mirrors.",
+      "side_b": "Those repetitions trace back to the same allegation lane and do not independently corroborate the event.",
+      "source_ids": ["EFTA00155390", "EFTA00065479", "EFTA01433755", "EFTA01297785"],
+      "claim_connection": "TRUMP-CLAIM-0002",
+      "status": "derivative group identified",
+      "limitation": "Duplicate media mirrors are not counted as corroboration."
+    },
+    {
+      "contradiction_id": "TEP-CON-0010",
+      "type": "flight-count discrepancy",
+      "side_a": "Public and media references discuss flight logs and counts in varied ways.",
+      "side_b": "The reviewed sources contain a deposition question about flight logs but not an authoritative flight-log exhibit resolving counts.",
+      "source_ids": ["EFTA00081220", "EFTA00143627"],
+      "claim_connection": "non-allegation flight-log lane",
+      "status": "unresolved acquisition gap",
+      "limitation": "Private 2025 correspondence is not used as public evidence for flight-count claims."
+    },
+    {
+      "contradiction_id": "TEP-CON-0011",
+      "type": "Mar-a-Lago recruitment versus ban/exclusion record",
+      "side_a": "Press captures report Giuffre's Mar-a-Lago recruitment context.",
+      "side_b": "No primary Mar-a-Lago ban, exclusion registry, employment file, or comparable source was located.",
+      "source_ids": ["EFTA00208312", "EFTA00065479"],
+      "claim_connection": "non-allegation Mar-a-Lago lane",
+      "status": "unresolved acquisition gap",
+      "limitation": "Presence or recruitment at a property does not establish Trump misconduct."
+    }
+  ],
+  "questions_still_open": [
+    "Is there a primary document supporting the Mar-a-Lago ban claim?",
+    "What source underlies competing flight-count claims?",
+    "Does the archive contain the certified Johnson filing and docket history?",
+    "Was the Wolff draft language retained, changed, or removed in final publication?",
+    "Is Witness II independently corroborated?",
+    "Does any record establish the Witness II alleged event location and date?",
+    "Are later media accounts independent or copied from earlier claims?",
+    "Is there a fuller FBI record underlying Witness II beyond the 302 summary?"
+  ]
+}

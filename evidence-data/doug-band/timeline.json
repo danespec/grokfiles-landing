@@ -1,0 +1,257 @@
+{
+  "route": "/document-autopsies/doug-band-transcript",
+  "events": [
+    {
+      "date": "2001-2002 (approx.)",
+      "event": "Band first remembers Epstein",
+      "bands_account": "Band placed his first Epstein memory after Clinton left office, possibly 2001 or 2002, at a meal while staffing Clinton.",
+      "documentary_record": "Transcript only.",
+      "source": "HOC-BAND-TRANSCRIPT p.12 lines 20-24; p.13 lines 1-23",
+      "discrepancy_or_limitation": "Approximate and vague recollection.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2001-09-17",
+      "event": "Dinner-planning email chain",
+      "bands_account": "Band did not recall receiving the message.",
+      "documentary_record": "EFTA00011434 and EFTA00581829 are acquired DOJ EFTA PDFs.",
+      "source": "HOC-BAND-TRANSCRIPT p.82 lines 1-24; EFTA00011434; EFTA00581829",
+      "discrepancy_or_limitation": "Receipt memory and context remain unresolved.",
+      "confidence": "high"
+    },
+    {
+      "date": "2002-03-19 to 2002-03-21",
+      "event": "London flight-log prompt",
+      "bands_account": "Band did not remember the trip.",
+      "documentary_record": "Committee staff stated flight logs indicated JFK-London travel with Clinton, Epstein, Maxwell, Band, and others.",
+      "source": "HOC-BAND-TRANSCRIPT p.57 lines 7-19; DOJ-FLIGHT-LOG",
+      "discrepancy_or_limitation": "Official flight-log PDF acquired; row-level visual audit not completed.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2002-04-21",
+      "event": "WJC-Maxwell social-matchmaker email",
+      "bands_account": "Band did not recall the message or using the terms staff asked about for Maxwell.",
+      "documentary_record": "EFTA02335607 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT pp.79-81; EFTA02335607",
+      "discrepancy_or_limitation": "Email meaning is not established beyond visible text and testimony.",
+      "confidence": "high"
+    },
+    {
+      "date": "2002-05",
+      "event": "Asia flight-log prompt",
+      "bands_account": "Band did not recall the trip details.",
+      "documentary_record": "Committee staff stated flight logs showed a series of Asia flights with Clinton, Epstein, Maxwell, Band, and others.",
+      "source": "HOC-BAND-TRANSCRIPT p.58 lines 8-24; DOJ-FLIGHT-LOG",
+      "discrepancy_or_limitation": "Row-level visual flight-log audit remains open.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2002-09",
+      "event": "Africa trip prompt",
+      "bands_account": "Band remembered photographs of some travelers but did not remember the trip details.",
+      "documentary_record": "Transcript references flight logs and later photo prompts; Clinton office statement also describes Africa trips.",
+      "source": "HOC-BAND-TRANSCRIPT p.59 lines 18-24; CLINTON-STATEMENT-IMAGE; DOJ-FLIGHT-LOG",
+      "discrepancy_or_limitation": "Specific passenger rows and photograph source files were not fully acquired.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2002-10-13",
+      "event": "Bear Mini lunch email",
+      "bands_account": "Band did not recall the lunch or birthday-gift context.",
+      "documentary_record": "EFTA00582156 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT pp.60-61; EFTA00582156",
+      "discrepancy_or_limitation": "Purpose of gift and lunch unresolved.",
+      "confidence": "high"
+    },
+    {
+      "date": "2002-11-02",
+      "event": "Movies email prompt",
+      "bands_account": "Band did not recall the exhibit context.",
+      "documentary_record": "EFTA00582193 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT p.84 lines 4-9; EFTA00582193",
+      "discrepancy_or_limitation": "Visible exhibit only; broader relationship inference not supported.",
+      "confidence": "high"
+    },
+    {
+      "date": "2003-04-13",
+      "event": "WJC-Maxwell email prompt",
+      "bands_account": "Band did not recall sending the message and said it was possible he had account access.",
+      "documentary_record": "EFTA00582326 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT pp.37-39; EFTA00582326",
+      "discrepancy_or_limitation": "Authorship and account use remain qualified.",
+      "confidence": "high"
+    },
+    {
+      "date": "2003-04 (approx.)",
+      "event": "Dinner at Epstein townhouse",
+      "bands_account": "Band remembered a dinner with many people; he did not recall many named attendees.",
+      "documentary_record": "Transcript only; article staff used an article prompt but the underlying article is not used as proof.",
+      "source": "HOC-BAND-TRANSCRIPT pp.41-42; pp.62-63",
+      "discrepancy_or_limitation": "Secondary article not acquired as a proof source.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2003-11",
+      "event": "Russia/China flight-log prompt",
+      "bands_account": "Band had no memory of the trip.",
+      "documentary_record": "Committee staff referenced flight logs.",
+      "source": "HOC-BAND-TRANSCRIPT p.60 lines 11-13; DOJ-FLIGHT-LOG",
+      "discrepancy_or_limitation": "Row-level visual flight-log audit remains open.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2004-10-11",
+      "event": "Booboo email chain",
+      "bands_account": "Band did not recall the email and characterized language as silly banter.",
+      "documentary_record": "EFTA00579203 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT pp.64-65; EFTA00579203",
+      "discrepancy_or_limitation": "Meaning and context not established beyond text and testimony.",
+      "confidence": "high"
+    },
+    {
+      "date": "2004-10-13",
+      "event": "Forum/deal email chain",
+      "bands_account": "Band had no specific context.",
+      "documentary_record": "EFTA00579276 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT pp.67-68; EFTA00579276",
+      "discrepancy_or_limitation": "No underlying event/business records acquired.",
+      "confidence": "high"
+    },
+    {
+      "date": "2006-2008",
+      "event": "Epstein arrest, jail time, and NPA awareness",
+      "bands_account": "Band did not recall when he learned the details and assumed news reporting for some awareness.",
+      "documentary_record": "Transcript only in this product.",
+      "source": "HOC-BAND-TRANSCRIPT pp.101-102",
+      "discrepancy_or_limitation": "No contemporaneous Band communication acquired.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2011",
+      "event": "Maxwell removal email",
+      "bands_account": "Band said he emailed a senior staff member to remove Maxwell from contact lists.",
+      "documentary_record": "Underlying email not acquired.",
+      "source": "HOC-BAND-TRANSCRIPT p.108 lines 18-25",
+      "discrepancy_or_limitation": "Acquisition gap.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2012",
+      "event": "Band leaves Clinton work",
+      "bands_account": "Band said he stopped working for Clinton sometime in 2012 and never worked for CGI.",
+      "documentary_record": "Transcript only.",
+      "source": "HOC-BAND-TRANSCRIPT p.109 lines 1-4",
+      "discrepancy_or_limitation": "Employment records not acquired.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2013",
+      "event": "Maxwell CGI-recognition prompt",
+      "bands_account": "Band said he only learned later from reporting and was no longer working there.",
+      "documentary_record": "Transcript question only; primary CGI event record not acquired.",
+      "source": "HOC-BAND-TRANSCRIPT p.109 lines 5-17",
+      "discrepancy_or_limitation": "Acquisition gap.",
+      "confidence": "low-medium"
+    },
+    {
+      "date": "2019-07-08",
+      "event": "Clinton office public statement",
+      "bands_account": "No Band account in source.",
+      "documentary_record": "Public statement image posted by Angel Urena.",
+      "source": "CLINTON-STATEMENT-IMAGE; CLINTON-STATEMENT-X",
+      "discrepancy_or_limitation": "Statement is a public position, not a complete travel file.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2025-02-27",
+      "event": "DOJ Phase One flight-log release",
+      "bands_account": "No Band account in source.",
+      "documentary_record": "DOJ release and official flight-log PDF acquired.",
+      "source": "DOJ-PHASE-ONE-RELEASE; DOJ-FLIGHT-LOG",
+      "discrepancy_or_limitation": "OCR extraction was not sufficient for every row.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-03-03",
+      "event": "Band transcribed-interview request",
+      "bands_account": "No Band account in source.",
+      "documentary_record": "House Oversight request letter acquired.",
+      "source": "HOC-SEVEN-TI-REQUESTS; HOC-BAND-TI-REQUEST",
+      "discrepancy_or_limitation": "Procedural source only.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-06-30 09:57",
+      "event": "Interview commenced",
+      "bands_account": "Band appeared voluntarily according to the transcript opening.",
+      "documentary_record": "Transcript caption.",
+      "source": "HOC-BAND-TRANSCRIPT p.1 lines 21-24; p.4 lines 2-15",
+      "discrepancy_or_limitation": "Proceeding sequence only.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-06-30 10:08",
+      "event": "First substantive questioning",
+      "bands_account": "Band had given an opening statement and answered background questions.",
+      "documentary_record": "Transcript page-line record.",
+      "source": "HOC-BAND-TRANSCRIPT p.10 line 24; p.12 lines 1-24",
+      "discrepancy_or_limitation": "Proceeding sequence only.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-06-30",
+      "event": "Payment/Dechert analogue not at issue",
+      "bands_account": "Band was not questioned as a payment witness like Black; his product focuses on Clinton travel, Maxwell contacts, and memory limits.",
+      "documentary_record": "Transcript sequence.",
+      "source": "HOC-BAND-TRANSCRIPT",
+      "discrepancy_or_limitation": "This is an editorial scope distinction, not an external record.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-06-30 p.57",
+      "event": "Flight-log questioning starts",
+      "bands_account": "Band did not remember several flight details but accepted that the logs showed he flew while staffing Clinton.",
+      "documentary_record": "Transcript plus DOJ flight-log package.",
+      "source": "HOC-BAND-TRANSCRIPT pp.57-60, p.75 lines 6-8; DOJ-FLIGHT-LOG",
+      "discrepancy_or_limitation": "Row-level audit remains open.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2026-06-30 pp.79-84",
+      "event": "Majority exhibits 2-4",
+      "bands_account": "Band repeatedly did not recall the messages.",
+      "documentary_record": "EFTA02335607, EFTA00011434, EFTA00581829, and EFTA00582193 acquired.",
+      "source": "HOC-BAND-TRANSCRIPT pp.79-84; EFTA02335607; EFTA00011434; EFTA00581829; EFTA00582193",
+      "discrepancy_or_limitation": "Meaning and context unresolved.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-06-30 pp.90-92",
+      "event": "BlackBerry exhibit potential conflict",
+      "bands_account": "Band denied sharing a BlackBerry and qualified that the old email may have overstated access.",
+      "documentary_record": "Transcript read-in of Majority Exhibit 5.",
+      "source": "HOC-BAND-TRANSCRIPT pp.90-92",
+      "discrepancy_or_limitation": "Underlying exhibit PDF not separately acquired.",
+      "confidence": "medium"
+    },
+    {
+      "date": "2026-06-30 pp.113-124",
+      "event": "Third-party communication list and NDA questions",
+      "bands_account": "Band answered yes, no, or possible/no specific memory for named communications and denied NDAs.",
+      "documentary_record": "Transcript page-line record.",
+      "source": "HOC-BAND-TRANSCRIPT pp.113-124",
+      "discrepancy_or_limitation": "The list is presence-only and communication-limited.",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-06-30 13:48",
+      "event": "Interview concluded",
+      "bands_account": "Band said he could not think of additional relevant information.",
+      "documentary_record": "Transcript conclusion.",
+      "source": "HOC-BAND-TRANSCRIPT p.124 lines 8-12",
+      "discrepancy_or_limitation": "Proceeding sequence only.",
+      "confidence": "high"
+    }
+  ]
+}

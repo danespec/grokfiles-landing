@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/epstein/files/DataSet%207/EFTA00009664.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: f218b2d1dc4b4b3429924f12ea37764cf86894f15fcdd99ef9bfcddf1682e8e4
+Bytes: 1214134
+Acquisition method: verified existing local capture

@@ -1,0 +1,23 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "HTL-01",
+      "claim": "Villafa\u00f1a asked at 17:05:56 to send the victim-notification letter; Sloman replied at 17:08:19 EST, Hold the letter.",
+      "source": "EFTA00013764",
+      "confidence": "P4"
+    },
+    {
+      "id": "HTL-02",
+      "claim": "The elapsed interval is 2 minutes 23 seconds.",
+      "source": "EFTA00013764 timestamps",
+      "confidence": "P4 calculation"
+    },
+    {
+      "id": "HTL-03",
+      "claim": "The identity of Sloman\u2019s later-recalled somebody remains unresolved.",
+      "source": "OPR interview record",
+      "confidence": "P4 statement / unresolved identity"
+    }
+  ]
+}

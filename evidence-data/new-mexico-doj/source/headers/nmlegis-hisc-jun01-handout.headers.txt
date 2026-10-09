@@ -1,0 +1,7 @@
+URL: https://www.nmlegis.gov/handouts/HISC%20060126%20Item%201%20HISC.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 8d4b71115dbce46c047c2bf1ab25b09206c7882e902a05f6a1446d6a4ad97b65
+Bytes: 5793364
+Acquisition method: verified existing local capture

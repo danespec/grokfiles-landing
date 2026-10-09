@@ -1,0 +1,7 @@
+URL: https://www.nmlegis.gov/Sessions/26%20Regular/firs/HR01.PDF
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 75505d54367b7cb414955a0ff9ac8c4a21c86abb4a905195aadad59f4ec53c41
+Bytes: 203840
+Acquisition method: verified existing local capture

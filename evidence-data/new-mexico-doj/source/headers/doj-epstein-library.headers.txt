@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/epstein
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: a11f316c4df97db9abfa54126ea31386aaf86f6adc07d40d3931f046995a7b7d
+Bytes: 2207
+Acquisition method: verified existing local capture

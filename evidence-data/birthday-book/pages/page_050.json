@@ -1,0 +1,113 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 50,
+  "page_id": "page_050",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_050.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_050.ocr.txt",
+  "image_metadata": {
+    "bytes": 11864674,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "299de6e6398cb920da0f444d8cb06e98ebef5a77965da27a4609d3367f037cea"
+  },
+  "ocr_text": "bs: 2 Bes\n‘gS Wate giles A.\n, as , 5 | || , { Pe Se = ihe\nrr ) A puBel® ScHoot ’ recs\n9 Se\nBits 4 4 4 s ) F &\noF ‘ , eae :\nsé -~ hy ae 1\n. 2 ae Veen Eig (70 ‘= 3 ~~\nTN ts\n\"eo? Ss = Ww, ¥ a a. é '\n9SP3 '\nHOUSE_OVERSIGHT_000050\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three separate group photographs, each showing multiple individuals arranged in rows, with some small blackboards or placards in front displaying school names, years, and class designations. The background of the top two photos consists of bookshelves with books, while the bottom photo has a brick wall background. The placards provide some textual data about the schools and years.",
+    "Layout: Top group photo",
+    "Layout: Middle group photo",
+    "Layout: Bottom group photo",
+    "Photo/image candidate at Top group photo: Group photo of children and adults standing and sitting in rows in front of bookshelves, with a placard reading 'PUBLIC SCHOOL 198 BROOKLYN 1963 CLASS 5-3'",
+    "Photo/image candidate at Middle group photo: Group photo of children and adults standing and sitting in rows in front of bookshelves, with a placard reading 'PUBLIC SCHOOL 188 BROOKLYN 1964 CLASS 6-3'",
+    "Photo/image candidate at Bottom group photo: Group photo of adolescents and adults standing and sitting in rows in front of a brick wall, with a placard reading 'CLASS OF JUNE 1966 MARK TWAIN JHS 9SP3'"
+  ],
+  "observations": [
+    "The page contains three separate group photographs, each showing multiple individuals arranged in rows, with some small blackboards or placards in front displaying school names, years, and class designations. The background of the top two photos consists of bookshelves with books, while the bottom photo has a brick wall background. The placards provide some textual data about the schools and years.",
+    "Layout: Top group photo",
+    "Layout: Middle group photo",
+    "Layout: Bottom group photo",
+    "Photo/image candidate at Top group photo: Group photo of children and adults standing and sitting in rows in front of bookshelves, with a placard reading 'PUBLIC SCHOOL 198 BROOKLYN 1963 CLASS 5-3'",
+    "Photo/image candidate at Middle group photo: Group photo of children and adults standing and sitting in rows in front of bookshelves, with a placard reading 'PUBLIC SCHOOL 188 BROOKLYN 1964 CLASS 6-3'",
+    "Photo/image candidate at Bottom group photo: Group photo of adolescents and adults standing and sitting in rows in front of a brick wall, with a placard reading 'CLASS OF JUNE 1966 MARK TWAIN JHS 9SP3'"
+  ],
+  "dates": [
+    "1963",
+    "1964",
+    "June 1966"
+  ],
+  "document_strings": [
+    "PUBLIC SCHOOL 198 BROOKLYN 1963 CLASS 5-3",
+    "PUBLIC SCHOOL 188 BROOKLYN 1964 CLASS 6-3",
+    "CLASS OF JUNE 1966 MARK TWAIN JHS 9SP3"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:10:23.967Z",
+    "response_id": "resp_0f911e0af36ec112006a502a58900c81958ab7c86601ed6375",
+    "raw_output_sha256": "4b4138ab16babc3eeace1085f984fadcc3070062b9e8f562430602e5b882509a"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f911e0af36ec112006a502a58900c81958ab7c86601ed6375",
+    "enriched_at": "2026-07-09T23:10:23.967Z"
+  },
+  "visual_summary": "The page contains three separate group photographs, each showing multiple individuals arranged in rows, with some small blackboards or placards in front displaying school names, years, and class designations. The background of the top two photos consists of bookshelves with books, while the bottom photo has a brick wall background. The placards provide some textual data about the schools and years.",
+  "layout": [
+    "Top group photo",
+    "Middle group photo",
+    "Bottom group photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Top group photo",
+      "description": "Group photo of children and adults standing and sitting in rows in front of bookshelves, with a placard reading 'PUBLIC SCHOOL 198 BROOKLYN 1963 CLASS 5-3'",
+      "confidence": "high"
+    },
+    {
+      "location": "Middle group photo",
+      "description": "Group photo of children and adults standing and sitting in rows in front of bookshelves, with a placard reading 'PUBLIC SCHOOL 188 BROOKLYN 1964 CLASS 6-3'",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom group photo",
+      "description": "Group photo of adolescents and adults standing and sitting in rows in front of a brick wall, with a placard reading 'CLASS OF JUNE 1966 MARK TWAIN JHS 9SP3'",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "1963",
+    "1964",
+    "June 1966"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,77 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 218,
+  "page_id": "page_218",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_218.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_218.ocr.txt",
+  "image_metadata": {
+    "bytes": 32752,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "dafd22f1107322623099161011aef6592686b8a80e1f645862c7602648cc2bba"
+  },
+  "ocr_text": "—\nHOUSE_OVERSIGHT_000218\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "The page is almost entirely black with no discernible text, images, or handwriting visible. It appears to be a fully black or heavily redacted page from a document.",
+    "Layout: Full page black rectangle"
+  ],
+  "observations": [
+    "The page is almost entirely black with no discernible text, images, or handwriting visible. It appears to be a fully black or heavily redacted page from a document.",
+    "Layout: Full page black rectangle"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000218"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [
+    "No visible textual or visual content to extract beyond the black page.",
+    "Unclear if any underlying content is redacted or missing."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:37:14.732Z",
+    "response_id": "resp_04a283b8ff79722a006a5030a802408190a5d02d1738869c67",
+    "raw_output_sha256": "642d98a130846af00e034717bf33597bff3fe66f5c87c4f30e9b22cb61ba25b9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04a283b8ff79722a006a5030a802408190a5d02d1738869c67",
+    "enriched_at": "2026-07-09T23:37:14.732Z"
+  },
+  "visual_summary": "The page is almost entirely black with no discernible text, images, or handwriting visible. It appears to be a fully black or heavily redacted page from a document.",
+  "layout": [
+    "Full page black rectangle"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

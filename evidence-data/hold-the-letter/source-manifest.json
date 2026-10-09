@@ -1,0 +1,21 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "sources": [
+    {
+      "id": "EFTA00013764",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf",
+      "sha256": "5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117",
+      "status": "local hash-verified primary email"
+    },
+    {
+      "id": "DOJ-OPR-2020",
+      "public_url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.591653/gov.uscourts.nysd.591653.226.4.pdf",
+      "status": "public court-filed OPR copy"
+    }
+  ],
+  "limits": [
+    "The native email proves the inquiry/reply timing and wording.",
+    "It does not identify the person Sloman later recalled speaking to."
+  ]
+}

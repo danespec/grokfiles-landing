@@ -1,0 +1,7 @@
+URL: https://www.nmlegis.gov/agendas/HISCageJun18.26.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 69af3091b2c4825c5acd1598780134bbf45d6e14b5e9ec537b7c007e804fab42
+Bytes: 36147
+Acquisition method: verified existing local capture

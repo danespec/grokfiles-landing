@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "confirmed_contradictions": 0,
+  "standard_or_scope_mismatches": 2,
+  "ambiguous_statements": 1,
+  "data": [
+    {
+      "audit_id": "CON-001",
+      "proposition_a": "Blanche said DOJ/FBI files did not identify evidence as of now of other men Epstein helped traffic to.",
+      "source_a": "HEX-003",
+      "evidentiary_standard_a": "reviewed-corpus/scope-limited no evidence",
+      "proposition_b": "Survivors and civil records may contain allegations or testimony involving third parties.",
+      "source_b": "sjc-bensky-written-testimony-2026-07-16; public record gaps",
+      "evidentiary_standard_b": "testimony/allegation",
+      "can_both_coexist": "yes",
+      "missing_evidence": "public DOJ person-specific assessment, credibility analysis, corroboration analysis",
+      "final_classification": "STANDARD_MISMATCH",
+      "confidence": "HIGH"
+    },
+    {
+      "audit_id": "CON-002",
+      "proposition_a": "Media or political shorthand may report the answer as broad no evidence language.",
+      "source_a": "public paraphrase category; not treated as authoritative wording",
+      "evidentiary_standard_a": "paraphrase",
+      "proposition_b": "The certified exchange was scoped by Kennedy's question and Blanche's reference to FBI/DOJ files.",
+      "source_b": "HEX-003",
+      "evidentiary_standard_b": "official caption and human certification",
+      "can_both_coexist": "partly; paraphrase may be incomplete rather than false",
+      "missing_evidence": "official stenographic transcript not located",
+      "final_classification": "SCOPE_MISMATCH",
+      "confidence": "HIGH"
+    },
+    {
+      "audit_id": "CON-003",
+      "proposition_a": "Blanche did not expressly use credible, admissible, probable cause, or conviction-sufficient in the decisive answer.",
+      "source_a": "HEX-003",
+      "evidentiary_standard_a": "ambiguous standard",
+      "proposition_b": "Grassley exchange separately used investigate, indict, and prosecute language.",
+      "source_b": "HEX-001",
+      "evidentiary_standard_b": "chargeability posture",
+      "can_both_coexist": "yes",
+      "missing_evidence": "DOJ charging memoranda",
+      "final_classification": "AMBIGUOUS_LANGUAGE",
+      "confidence": "MEDIUM-HIGH"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 224,
+  "page_id": "page_224",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_224.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_224.ocr.txt",
+  "image_metadata": {
+    "bytes": 8635799,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "11a093f5ff9433f6af0b2a9edb38a97a73b7b2b35521265e46922ddcb8844cfb"
+  },
+  "ocr_text": "}\n\nDe : 4\n\n7 =, \\ Noe\n\n: \" > . iy | | \\ V\\ UA. \\ h -\n\nmeni : 6: A\\\\ y, \\ J :\nVAny* . \\ \\W\n\na LJ he \\ !\n\n\\ \\ \\ 7 oh . \\ y ¢ Gee: |\n\na ‘ i\n\nz ae : ; }\n\n1 }\n\nj yn . x i\n\nf i Hh 3\n\n~ i)\n\n|\n\n} Ak wd\n\n\\ 3 ke ‘ “” “|\n\n, ~x ¥ i - , | a\n\nHOUSE_OVERSIGHT_000224\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographs of a woman in a red bikini with a blue pattern, posing on a beach. The woman's face is obscured in both images. There are two handwritten notes in purple ink: one to the right of the top photo reads 'And thought you might like... some bikini shots!' and one to the left of the bottom photo reads 'Bye-bye! xxx'. The photos have small annotation marks in pink around the corners.",
+    "Layout: top left: photograph of a woman in a red bikini on a beach, face obscured",
+    "Layout: top right: handwritten note in purple ink",
+    "Layout: bottom left: handwritten note in purple ink",
+    "Layout: bottom right: photograph of a woman in a red bikini on a beach, face obscured",
+    "Drawing candidate at corners of photographs: Pink annotation marks at the corners of the photographs",
+    "Photo/image candidate at top left quadrant: Photograph of a woman in a red bikini at a beach with mountains and ocean in background, face obscured by black box",
+    "Photo/image candidate at bottom right quadrant: Photograph of a woman in red bikini kneeling on sand on a beach, face obscured by black box"
+  ],
+  "observations": [
+    "Page contains two photographs of a woman in a red bikini with a blue pattern, posing on a beach. The woman's face is obscured in both images. There are two handwritten notes in purple ink: one to the right of the top photo reads 'And thought you might like... some bikini shots!' and one to the left of the bottom photo reads 'Bye-bye! xxx'. The photos have small annotation marks in pink around the corners.",
+    "Layout: top left: photograph of a woman in a red bikini on a beach, face obscured",
+    "Layout: top right: handwritten note in purple ink",
+    "Layout: bottom left: handwritten note in purple ink",
+    "Layout: bottom right: photograph of a woman in a red bikini on a beach, face obscured",
+    "Drawing candidate at corners of photographs: Pink annotation marks at the corners of the photographs",
+    "Photo/image candidate at top left quadrant: Photograph of a woman in a red bikini at a beach with mountains and ocean in background, face obscured by black box",
+    "Photo/image candidate at bottom right quadrant: Photograph of a woman in red bikini kneeling on sand on a beach, face obscured by black box"
+  ],
+  "dates": [],
+  "document_strings": [
+    "And thought you might like... some bikini shots!",
+    "Bye-bye! xxx",
+    "6",
+    "715",
+    "HOUSE_OVERSIGHT_000224"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top right of page",
+      "text_as_seen": "And thought you might like... some bikini shots!",
+      "confidence": "high",
+      "note": "Handwritten in purple ink, diagonal orientation"
+    },
+    {
+      "location": "bottom left of page",
+      "text_as_seen": "Bye-bye! xxx",
+      "confidence": "high",
+      "note": "Handwritten in purple ink"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "both photographs covering the face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular overlays obscuring the face"
+    }
+  ],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:11.373Z",
+    "response_id": "resp_0a0fb71e791061cd006a5030db81448193bf767fe798d04e34",
+    "raw_output_sha256": "160e966f3b545f8cc1401e5e90016ef133fc687cb233bddd19e4f6328066fd70"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0a0fb71e791061cd006a5030db81448193bf767fe798d04e34",
+    "enriched_at": "2026-07-09T23:38:11.373Z"
+  },
+  "visual_summary": "Page contains two photographs of a woman in a red bikini with a blue pattern, posing on a beach. The woman's face is obscured in both images. There are two handwritten notes in purple ink: one to the right of the top photo reads 'And thought you might like... some bikini shots!' and one to the left of the bottom photo reads 'Bye-bye! xxx'. The photos have small annotation marks in pink around the corners.",
+  "layout": [
+    "top left: photograph of a woman in a red bikini on a beach, face obscured",
+    "top right: handwritten note in purple ink",
+    "bottom left: handwritten note in purple ink",
+    "bottom right: photograph of a woman in a red bikini on a beach, face obscured"
+  ],
+  "handwriting": [
+    {
+      "location": "top right of page",
+      "text_as_seen": "And thought you might like... some bikini shots!",
+      "confidence": "high",
+      "note": "Handwritten in purple ink, diagonal orientation"
+    },
+    {
+      "location": "bottom left of page",
+      "text_as_seen": "Bye-bye! xxx",
+      "confidence": "high",
+      "note": "Handwritten in purple ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "both photographs covering the face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular overlays obscuring the face"
+    }
+  ],
+  "drawings": [
+    {
+      "location": "corners of photographs",
+      "description": "Pink annotation marks at the corners of the photographs",
+      "confidence": "high"
+    }
+  ],
+  "photos": [
+    {
+      "location": "top left quadrant",
+      "description": "Photograph of a woman in a red bikini at a beach with mountains and ocean in background, face obscured by black box",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right quadrant",
+      "description": "Photograph of a woman in red bikini kneeling on sand on a beach, face obscured by black box",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

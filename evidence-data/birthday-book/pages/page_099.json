@@ -1,0 +1,171 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 99,
+  "page_id": "page_099",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_099.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_099.ocr.txt",
+  "image_metadata": {
+    "bytes": 6551050,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "a5646718fc164f705c30be4630a5f9770acb0a403c784648470df1b5f5fb4628"
+  },
+  "ocr_text": ": atc wd\nAad a Auge P ae a\nnyput ACE,\nTA ese are GN- 1% P| |\nSicleved. ASS Sy % ee: ae\now. Se! Pe ,\nWhe took this fretur e:\nHOUSE_OVERSIGHT_000099\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains three color photographs featuring a man engaged in different home settings, with one person partially or fully obscured by black redactions. There is cursive handwriting in green ink adjacent to the second and third photos. A printed timestamp '31 8 31' is visible in the bottom right corner of the third photograph. The photos depict indoor home scenes with household items like a television, globe, furniture, and floral bedding.",
+    "Layout: top photo of man playing string instrument sitting on couch in wood-paneled room",
+    "Layout: handwritten text to left of middle photo of man lying in bed covered with blanket, person to right of man redacted with black box",
+    "Layout: handwritten text below middle photo",
+    "Layout: bottom photo of man lying on pillow next to another person whose face is redacted, with date stamp",
+    "Photo/image candidate at top center: Photo of man sitting on couch playing string instrument in wood-paneled living room with television, globe and flower vase visible",
+    "Photo/image candidate at center left: Photo of man lying in bed covered with a blanket with a redacted person next to him; lamp and bookshelves visible in background",
+    "Photo/image candidate at bottom center: Photo of man smiling lying on pillow next to a person whose face is redacted, digital timestamp '31 8 31' visible in corner"
+  ],
+  "observations": [
+    "Page contains three color photographs featuring a man engaged in different home settings, with one person partially or fully obscured by black redactions. There is cursive handwriting in green ink adjacent to the second and third photos. A printed timestamp '31 8 31' is visible in the bottom right corner of the third photograph. The photos depict indoor home scenes with household items like a television, globe, furniture, and floral bedding.",
+    "Layout: top photo of man playing string instrument sitting on couch in wood-paneled room",
+    "Layout: handwritten text to left of middle photo of man lying in bed covered with blanket, person to right of man redacted with black box",
+    "Layout: handwritten text below middle photo",
+    "Layout: bottom photo of man lying on pillow next to another person whose face is redacted, with date stamp",
+    "Photo/image candidate at top center: Photo of man sitting on couch playing string instrument in wood-paneled living room with television, globe and flower vase visible",
+    "Photo/image candidate at center left: Photo of man lying in bed covered with a blanket with a redacted person next to him; lamp and bookshelves visible in background",
+    "Photo/image candidate at bottom center: Photo of man smiling lying on pillow next to a person whose face is redacted, digital timestamp '31 8 31' visible in corner"
+  ],
+  "dates": [
+    "31 8 31"
+  ],
+  "document_strings": [
+    "Alberto Pinto had a huge input here. These are considered his floor days.",
+    "Who took this picture ?",
+    "Whe took this fretur e:",
+    "HOUSE_OVERSIGHT_000099"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "upper left near middle photograph",
+      "text_as_seen": "Alberto Pinto had a huge input here. These are considered his floor days.",
+      "confidence": "high",
+      "note": "Cursive green ink handwriting"
+    },
+    {
+      "location": "below middle photograph",
+      "text_as_seen": "Who took this picture ?",
+      "confidence": "high",
+      "note": "Cursive green ink handwriting"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "middle photograph right side covering person's face and upper torso",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacted over person"
+    },
+    {
+      "location": "bottom photograph center covering person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacted over person"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "No date or time information beyond the visible timestamp",
+    "No clear indication of location from text or photos",
+    "No identifiable names beyond handwritten strings, no identities inferred"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:00.153Z",
+    "response_id": "resp_07834c431dc15d46006a502c5c2af481959f57f27fb9afc305",
+    "raw_output_sha256": "b2f31771aed3c2352b96a78ff47965b342472e705353befdc898e2b389372174"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_07834c431dc15d46006a502c5c2af481959f57f27fb9afc305",
+    "enriched_at": "2026-07-09T23:19:00.153Z"
+  },
+  "visual_summary": "Page contains three color photographs featuring a man engaged in different home settings, with one person partially or fully obscured by black redactions. There is cursive handwriting in green ink adjacent to the second and third photos. A printed timestamp '31 8 31' is visible in the bottom right corner of the third photograph. The photos depict indoor home scenes with household items like a television, globe, furniture, and floral bedding.",
+  "layout": [
+    "top photo of man playing string instrument sitting on couch in wood-paneled room",
+    "handwritten text to left of middle photo of man lying in bed covered with blanket, person to right of man redacted with black box",
+    "handwritten text below middle photo",
+    "bottom photo of man lying on pillow next to another person whose face is redacted, with date stamp"
+  ],
+  "handwriting": [
+    {
+      "location": "upper left near middle photograph",
+      "text_as_seen": "Alberto Pinto had a huge input here. These are considered his floor days.",
+      "confidence": "high",
+      "note": "Cursive green ink handwriting"
+    },
+    {
+      "location": "below middle photograph",
+      "text_as_seen": "Who took this picture ?",
+      "confidence": "high",
+      "note": "Cursive green ink handwriting"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "middle photograph right side covering person's face and upper torso",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacted over person"
+    },
+    {
+      "location": "bottom photograph center covering person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacted over person"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Photo of man sitting on couch playing string instrument in wood-paneled living room with television, globe and flower vase visible",
+      "confidence": "high"
+    },
+    {
+      "location": "center left",
+      "description": "Photo of man lying in bed covered with a blanket with a redacted person next to him; lamp and bookshelves visible in background",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center",
+      "description": "Photo of man smiling lying on pillow next to a person whose face is redacted, digital timestamp '31 8 31' visible in corner",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "31 8 31"
+  ],
+  "confidence": "high"
+}

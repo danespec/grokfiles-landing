@@ -1,0 +1,93 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 235,
+  "page_id": "page_235",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_235.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_235.ocr.txt",
+  "image_metadata": {
+    "bytes": 124107,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b71394898a519d0c671546a62ef1f36f392707dbfb38cba46a9cd68b818a0973"
+  },
+  "ocr_text": "| er Aa XM Co fe fe nw ge i\n¥\nWEL Comer TS Phe Chek\nCea Ther FURS TIE Fig ee TAP 0eR =)\nTH Cadoaires Aare Yeu te fhe [ot IA E\nAIC Ny | pak Tare |\n~ aw gd he v4 f fi L wef\n. ; . ge poses fD ea ae\njo pow at pos |\ni\nAA ‘| reeyp Ute hes mek FER /\nL | say\nPUA / PS 7x0 HL\nL fe Ah\nPS. To Srilf poss KY Haz\nPas. XT Cope Uf EAL ay Pe\nHOUSE_OVERSIGHT_000235\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note on a white page with text in black ink. The note is addressed to 'Jeffrey' and contains a birthday message with two postscript lines at the bottom. The handwriting is legible though varies in letter sizing and spacing. The note's bottom right corner contains a printed document ID 'HOUSE_OVERSIGHT_000235'.",
+    "Layout: handwritten note covering most of the page",
+    "Layout: document ID in bottom margin"
+  ],
+  "observations": [
+    "A handwritten note on a white page with text in black ink. The note is addressed to 'Jeffrey' and contains a birthday message with two postscript lines at the bottom. The handwriting is legible though varies in letter sizing and spacing. The note's bottom right corner contains a printed document ID 'HOUSE_OVERSIGHT_000235'.",
+    "Layout: handwritten note covering most of the page",
+    "Layout: document ID in bottom margin"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000235"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top to middle of page",
+      "text_as_seen": "DEAR JEFFREY WELCOME TO THE CLUB FROM THE FIRST TIME THAT WE TRAVELED TO COLUMBUS AND YOU HAD CHRISTINE CARRY YOUR BAGS AT THE AIRPORT. I KNEW I WOULD LEARN A LOT FROM YOU. MY BEST WISHES FOR A VERY HAPPY BIRTHDAY IRA P.S. I STILL MISS MY HAT P.S.S. I GAVE UP ON MY TIE",
+      "confidence": "high",
+      "note": "Entire note is handwritten in black ink, legible but informal cursive print."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Bottom line of text is partially cut off and incomplete"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:30.963Z",
+    "response_id": "resp_04e9d54d80c7feb3006a50312e98408193b00c5a044b8a99bd",
+    "raw_output_sha256": "6114fdf52e0a4d0b8d646bcf77451e9a237e6df8210a2bd6225ecd2b30ac1f15"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04e9d54d80c7feb3006a50312e98408193b00c5a044b8a99bd",
+    "enriched_at": "2026-07-09T23:39:30.963Z"
+  },
+  "visual_summary": "A handwritten note on a white page with text in black ink. The note is addressed to 'Jeffrey' and contains a birthday message with two postscript lines at the bottom. The handwriting is legible though varies in letter sizing and spacing. The note's bottom right corner contains a printed document ID 'HOUSE_OVERSIGHT_000235'.",
+  "layout": [
+    "handwritten note covering most of the page",
+    "document ID in bottom margin"
+  ],
+  "handwriting": [
+    {
+      "location": "top to middle of page",
+      "text_as_seen": "DEAR JEFFREY WELCOME TO THE CLUB FROM THE FIRST TIME THAT WE TRAVELED TO COLUMBUS AND YOU HAD CHRISTINE CARRY YOUR BAGS AT THE AIRPORT. I KNEW I WOULD LEARN A LOT FROM YOU. MY BEST WISHES FOR A VERY HAPPY BIRTHDAY IRA P.S. I STILL MISS MY HAT P.S.S. I GAVE UP ON MY TIE",
+      "confidence": "high",
+      "note": "Entire note is handwritten in black ink, legible but informal cursive print."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

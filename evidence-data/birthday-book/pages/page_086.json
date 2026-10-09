@@ -1,0 +1,212 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 86,
+  "page_id": "page_086",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_086.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_086.ocr.txt",
+  "image_metadata": {
+    "bytes": 13706926,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "1905e49030b855a7940be94ede4b787a4db40ece24c765e0e519a1dd468ac747"
+  },
+  "ocr_text": "4 4\na | rare. &»\nte gana HE ees th ‘Ri ‘ %\na fee’. ¢ By.\n¥ \\ : == v * ’ 4 - :\nvf this el , i ' i\nbus by * > | es /\nWo ee a Lore\nOe WOR™ Fa\nwi 7 4 “ eee ”\nRote We gee\nHOUSE_OVERSIGHT_000086\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image is a collage of photographs mostly depicting men in formal attire such as tuxedos and suits, set against urban backgrounds. Several black rectangular redactions obscure parts of some photos, covering faces or portions of individuals. The collage includes a repeated speech balloon graphic bearing the word 'WORK' in capital letters. The word 'WORK' appears three times inside these speech balloons at various locations on the page. There is a prominent building in the background of two larger photos showing a man in a suit and tie.",
+    "Layout: top center photo",
+    "Layout: middle center cluster of three photos",
+    "Layout: top right photo",
+    "Layout: bottom left photo",
+    "Layout: bottom right photo, partly obscured",
+    "Drawing candidate at various, white speech balloons: White speech balloons with the word 'WORK' printed in black text",
+    "Photo/image candidate at top center: Man in suit and tie in front of a cityscape",
+    "Photo/image candidate at top right: Two men in tuxedos outdoors, one face redacted",
+    "Photo/image candidate at middle left: Two men in tuxedos near a car, one face redacted",
+    "Photo/image candidate at middle center: Man in tuxedo standing outdoors in front of a building",
+    "Photo/image candidate at bottom left: Man in tuxedo smiling at camera outdoors",
+    "Photo/image candidate at bottom center: Two men conversing in formal attire indoors, one face redacted",
+    "Photo/image candidate at bottom right: Two people indoors, both faces redacted"
+  ],
+  "observations": [
+    "The image is a collage of photographs mostly depicting men in formal attire such as tuxedos and suits, set against urban backgrounds. Several black rectangular redactions obscure parts of some photos, covering faces or portions of individuals. The collage includes a repeated speech balloon graphic bearing the word 'WORK' in capital letters. The word 'WORK' appears three times inside these speech balloons at various locations on the page. There is a prominent building in the background of two larger photos showing a man in a suit and tie.",
+    "Layout: top center photo",
+    "Layout: middle center cluster of three photos",
+    "Layout: top right photo",
+    "Layout: bottom left photo",
+    "Layout: bottom right photo, partly obscured",
+    "Drawing candidate at various, white speech balloons: White speech balloons with the word 'WORK' printed in black text",
+    "Photo/image candidate at top center: Man in suit and tie in front of a cityscape",
+    "Photo/image candidate at top right: Two men in tuxedos outdoors, one face redacted",
+    "Photo/image candidate at middle left: Two men in tuxedos near a car, one face redacted",
+    "Photo/image candidate at middle center: Man in tuxedo standing outdoors in front of a building",
+    "Photo/image candidate at bottom left: Man in tuxedo smiling at camera outdoors",
+    "Photo/image candidate at bottom center: Two men conversing in formal attire indoors, one face redacted",
+    "Photo/image candidate at bottom right: Two people indoors, both faces redacted"
+  ],
+  "dates": [],
+  "document_strings": [
+    "WORK",
+    "HOUSE_OVERSIGHT_000086"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "middle left on photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering face"
+    },
+    {
+      "location": "middle right on photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering face"
+    },
+    {
+      "location": "middle center on small photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering face"
+    },
+    {
+      "location": "bottom right photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering at least two faces"
+    },
+    {
+      "location": "bottom center photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering part of a person's face"
+    }
+  ],
+  "flags": [
+    "drawing",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Exact identities of people shown are not visible due to redactions and lack of labels.",
+    "No handwritten text or signatures visible."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:30.477Z",
+    "response_id": "resp_026ef5014399fd70006a502bc569d08196b62ececc5b3bef16",
+    "raw_output_sha256": "79596a6bdc29b5f685dca266687f2ac0f9ebfccd66779f5ded075f75f990877a"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_026ef5014399fd70006a502bc569d08196b62ececc5b3bef16",
+    "enriched_at": "2026-07-09T23:16:30.477Z"
+  },
+  "visual_summary": "The image is a collage of photographs mostly depicting men in formal attire such as tuxedos and suits, set against urban backgrounds. Several black rectangular redactions obscure parts of some photos, covering faces or portions of individuals. The collage includes a repeated speech balloon graphic bearing the word 'WORK' in capital letters. The word 'WORK' appears three times inside these speech balloons at various locations on the page. There is a prominent building in the background of two larger photos showing a man in a suit and tie.",
+  "layout": [
+    "top center photo",
+    "middle center cluster of three photos",
+    "top right photo",
+    "bottom left photo",
+    "bottom right photo, partly obscured"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "middle left on photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering face"
+    },
+    {
+      "location": "middle right on photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering face"
+    },
+    {
+      "location": "middle center on small photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering face"
+    },
+    {
+      "location": "bottom right photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering at least two faces"
+    },
+    {
+      "location": "bottom center photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box covering part of a person's face"
+    }
+  ],
+  "drawings": [
+    {
+      "location": "various, white speech balloons",
+      "description": "White speech balloons with the word 'WORK' printed in black text",
+      "confidence": "high"
+    }
+  ],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Man in suit and tie in front of a cityscape",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Two men in tuxedos outdoors, one face redacted",
+      "confidence": "high"
+    },
+    {
+      "location": "middle left",
+      "description": "Two men in tuxedos near a car, one face redacted",
+      "confidence": "high"
+    },
+    {
+      "location": "middle center",
+      "description": "Man in tuxedo standing outdoors in front of a building",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left",
+      "description": "Man in tuxedo smiling at camera outdoors",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center",
+      "description": "Two men conversing in formal attire indoors, one face redacted",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right",
+      "description": "Two people indoors, both faces redacted",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

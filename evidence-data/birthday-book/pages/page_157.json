@@ -1,0 +1,95 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 157,
+  "page_id": "page_157",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_157.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_157.ocr.txt",
+  "image_metadata": {
+    "bytes": 305832,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d7329c6040eaa6ae6cd2f7b731d3ea7471e5a730e13b8a15411c2121bedb260b"
+  },
+  "ocr_text": "3 f if f /\nJ\n< * Ae 88 ful” { “a4 ee Ae eit : SPE BG fia Y\n”: ageMe be fL nistte. —\nage ) f fittta, eth a “afhe age\né, | gf 4 oth) # gaat pend. va wa “ i\nNy ghhe Ae Lb PLT Léa - _— A\né a f. aos vA Wan. of Et ff 4 .\nLy etiine talons / nol\nia | , abint Yyttl, ANA\n| / f if AA, / (ale Ale if i,\nYe ff rep , ° | : vy, ye fi yf re\ny éé ff F Ag - j tipo 4 ft iy LA ay\n4 hate vite peg fase Gh ”\nHyrce Moat Veewy / htm\nLose. tad d , a\n’ & 4y. 4. “slit FY Aa de os v hy ; / ' 7 - hy -\n| had not Ae va i } , ¢ ; Hhuk,, ot é 4 [peres Vi ,\n‘et jp GE ~ 5 o a if bul iO\nLMA pnadt Se BMASINE, 3M fa ad\nHast witht va\nFPO Ser , oF on hO®\n| Lado WOES\nhay Phe har agses& ¢ A ftaek\n; ad PAR fone, % ii\n7 Har ge S fy bee\nThe mage \" f a V Wntre at SGtg eas.\nvunjrde ble if Uhkcae. wold And. 7 Gp 7\ni atti. $HEV ee, ; Af\nHs alas a Ayyaep AIDE |\n4 den -Wat” pee, MO ampch§C 0\non Re ; , af Golf fA Hs (, - ee A, a fe\né ‘i. se pp Cepnve } wt uf. é- ny SC wcrd Wi\nrar Py. bon dod ed ” te pporicad UE\nGOW it, MASE | |\né J gue foo &\nHOUSE_OVERSIGHT_000157\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten letter on white lined paper in dark ink. The handwriting is cursive and moderately slanted to the right. The letter begins with a salutation 'Dear Jeffrey,' and continues with a personal, reflective message. The overall layout includes one continuous block of text, with a closing line at the bottom. The page background includes visible dark edges at the bottom margin.",
+    "Layout: handwritten letter block starting near top left, spanning most of the page vertically and horizontally"
+  ],
+  "observations": [
+    "A handwritten letter on white lined paper in dark ink. The handwriting is cursive and moderately slanted to the right. The letter begins with a salutation 'Dear Jeffrey,' and continues with a personal, reflective message. The overall layout includes one continuous block of text, with a closing line at the bottom. The page background includes visible dark edges at the bottom margin.",
+    "Layout: handwritten letter block starting near top left, spanning most of the page vertically and horizontally"
+  ],
+  "dates": [
+    "30 years"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000157"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top to bottom, full width",
+      "text_as_seen": "Dear Jeffrey, Since we first met, some 30 years ago, I never imagined I would open New York Magazine and read 'Jeffrey Epstein International Man of Mystery.' Jeffrey, I care about you, and those that really know you, know that you are not a 'mystery man.' You are enigmatic to most that think differently, those without your incisive sense as to how the world works. The magic that you possess is your remarkable capacity to arrive at solutions. It’s always been Oscar Wilde and Jeffrey Epstein – that were always right. You are perceptive, insightful, concise – all in 30 seconds. If you don't get it in 30 seconds, you will not get it – the moment will have passed.",
+      "confidence": "medium",
+      "note": "Cursive handwriting with some challenging areas requiring medium confidence."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some words are unclear or smudged in parts of the handwriting, leading to partial uncertainty in transcription."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:27:34.637Z",
+    "response_id": "resp_04af5ed9e4161ad5006a502e60f93081949eb74cb1410f4d93",
+    "raw_output_sha256": "578fe164a70245e6319a874052483a62c12c032feb4f81689c9acff56a43add2"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04af5ed9e4161ad5006a502e60f93081949eb74cb1410f4d93",
+    "enriched_at": "2026-07-09T23:27:34.637Z"
+  },
+  "visual_summary": "A handwritten letter on white lined paper in dark ink. The handwriting is cursive and moderately slanted to the right. The letter begins with a salutation 'Dear Jeffrey,' and continues with a personal, reflective message. The overall layout includes one continuous block of text, with a closing line at the bottom. The page background includes visible dark edges at the bottom margin.",
+  "layout": [
+    "handwritten letter block starting near top left, spanning most of the page vertically and horizontally"
+  ],
+  "handwriting": [
+    {
+      "location": "top to bottom, full width",
+      "text_as_seen": "Dear Jeffrey, Since we first met, some 30 years ago, I never imagined I would open New York Magazine and read 'Jeffrey Epstein International Man of Mystery.' Jeffrey, I care about you, and those that really know you, know that you are not a 'mystery man.' You are enigmatic to most that think differently, those without your incisive sense as to how the world works. The magic that you possess is your remarkable capacity to arrive at solutions. It’s always been Oscar Wilde and Jeffrey Epstein – that were always right. You are perceptive, insightful, concise – all in 30 seconds. If you don't get it in 30 seconds, you will not get it – the moment will have passed.",
+      "confidence": "medium",
+      "note": "Cursive handwriting with some challenging areas requiring medium confidence."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "30 years"
+  ],
+  "confidence": "medium"
+}

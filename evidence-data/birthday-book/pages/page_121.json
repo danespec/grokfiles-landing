@@ -1,0 +1,163 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 121,
+  "page_id": "page_121",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_121.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_121.ocr.txt",
+  "image_metadata": {
+    "bytes": 3215289,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "f9106f3f9dff0d48edd89986c5429d2d6fbef5efebf1972ac1a487f2f9d7cb2b"
+  },
+  "ocr_text": "=\nJ VO EXCu ses! Pie\nah to po Nuc |\nar \\ Wy ,\nOe, zh f Sige |\nWs ye pet all Ms\n7 i\n: | oh S7EL |\nHOUSE_OVERSIGHT_000121\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A hand-drawn sketch depicting two human figures and a palm tree, with handwritten speech bubbles and text. The left figure has a speech bubble saying 'NO I will not stop the CHRONOMETER! Keep coming! HA HA HA!' The right figure has a speech bubble saying 'TOO FAST Too MUCH! Please Stop!' Above the figures is a boxed text reading 'NO EXCUSES!'. There is additional handwritten text in the bottom right corner reading 'DATE 49 b. JF or 5762'.",
+    "Layout: boxed text centered near top reading 'NO EXCUSES!'",
+    "Layout: left human figure with speech bubble",
+    "Layout: right human figure with speech bubble",
+    "Layout: palm tree to left of left figure",
+    "Layout: handwritten date text bottom right",
+    "Drawing candidate at center left: Sketch of a palm tree with detailed fronds and trunk",
+    "Drawing candidate at center left and center right: Two rough human figure sketches with minimal facial features and detail"
+  ],
+  "observations": [
+    "A hand-drawn sketch depicting two human figures and a palm tree, with handwritten speech bubbles and text. The left figure has a speech bubble saying 'NO I will not stop the CHRONOMETER! Keep coming! HA HA HA!' The right figure has a speech bubble saying 'TOO FAST Too MUCH! Please Stop!' Above the figures is a boxed text reading 'NO EXCUSES!'. There is additional handwritten text in the bottom right corner reading 'DATE 49 b. JF or 5762'.",
+    "Layout: boxed text centered near top reading 'NO EXCUSES!'",
+    "Layout: left human figure with speech bubble",
+    "Layout: right human figure with speech bubble",
+    "Layout: palm tree to left of left figure",
+    "Layout: handwritten date text bottom right",
+    "Drawing candidate at center left: Sketch of a palm tree with detailed fronds and trunk",
+    "Drawing candidate at center left and center right: Two rough human figure sketches with minimal facial features and detail"
+  ],
+  "dates": [
+    "DATE 49 b. JF or 5762"
+  ],
+  "document_strings": [
+    "NO EXCUSES!",
+    "NO I will not stop the CHRONOMETER! Keep coming! HA HA HA!",
+    "TOO FAST Too Much! Please Stop!",
+    "DATE 49 b. JF or 5762"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center top inside a box",
+      "text_as_seen": "NO EXCUSES!",
+      "confidence": "high",
+      "note": "Appears as a heading or title"
+    },
+    {
+      "location": "top left speech bubble next to left figure",
+      "text_as_seen": "NO I will not stop the CHRONOMETER! Keep coming! HA HA HA!",
+      "confidence": "medium",
+      "note": "Some variability in letter clarity affecting confidence"
+    },
+    {
+      "location": "top right speech bubble next to right figure",
+      "text_as_seen": "TOO FAST Too MUCH! Please Stop!",
+      "confidence": "medium",
+      "note": "Mixed letter clarity, moderate legibility"
+    },
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "DATE 49 b. JF or 5762",
+      "confidence": "medium",
+      "note": "Date or code notation, some ambiguity in letters/numbers"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Exact meaning of 'DATE 49 b. JF or 5762' unclear",
+    "Context or purpose of drawing and text not determinable from image alone"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:26.288Z",
+    "response_id": "resp_0957f66785e6d052006a502d2b20e08196adeeb0fdf0383dfc",
+    "raw_output_sha256": "902d9f3aa35ddb8fd0e3a75427b3ef6bb1a1f26262fbd2cd757912061fc4e8ce"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0957f66785e6d052006a502d2b20e08196adeeb0fdf0383dfc",
+    "enriched_at": "2026-07-09T23:22:26.288Z"
+  },
+  "visual_summary": "A hand-drawn sketch depicting two human figures and a palm tree, with handwritten speech bubbles and text. The left figure has a speech bubble saying 'NO I will not stop the CHRONOMETER! Keep coming! HA HA HA!' The right figure has a speech bubble saying 'TOO FAST Too MUCH! Please Stop!' Above the figures is a boxed text reading 'NO EXCUSES!'. There is additional handwritten text in the bottom right corner reading 'DATE 49 b. JF or 5762'.",
+  "layout": [
+    "boxed text centered near top reading 'NO EXCUSES!'",
+    "left human figure with speech bubble",
+    "right human figure with speech bubble",
+    "palm tree to left of left figure",
+    "handwritten date text bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "center top inside a box",
+      "text_as_seen": "NO EXCUSES!",
+      "confidence": "high",
+      "note": "Appears as a heading or title"
+    },
+    {
+      "location": "top left speech bubble next to left figure",
+      "text_as_seen": "NO I will not stop the CHRONOMETER! Keep coming! HA HA HA!",
+      "confidence": "medium",
+      "note": "Some variability in letter clarity affecting confidence"
+    },
+    {
+      "location": "top right speech bubble next to right figure",
+      "text_as_seen": "TOO FAST Too MUCH! Please Stop!",
+      "confidence": "medium",
+      "note": "Mixed letter clarity, moderate legibility"
+    },
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "DATE 49 b. JF or 5762",
+      "confidence": "medium",
+      "note": "Date or code notation, some ambiguity in letters/numbers"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center left",
+      "description": "Sketch of a palm tree with detailed fronds and trunk",
+      "confidence": "high"
+    },
+    {
+      "location": "center left and center right",
+      "description": "Two rough human figure sketches with minimal facial features and detail",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "DATE 49 b. JF or 5762"
+  ],
+  "confidence": "medium"
+}

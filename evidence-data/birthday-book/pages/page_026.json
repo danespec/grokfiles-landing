@@ -1,0 +1,165 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 26,
+  "page_id": "page_026",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_026.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_026.ocr.txt",
+  "image_metadata": {
+    "bytes": 917776,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "9687bc44f64c6989e8a46f94da9f8dff73ccf549d85b6a88b61f5079a7944382"
+  },
+  "ocr_text": "oe te _ aA le a ae .  . ;\n\n: - ee -. > wore CO . — as a oo ee : . :\n\n_7e . , _- oo so ~ « : cde Sle a : = De /\n\na Lg od Yo AO ee a _ a ose cfg . : — ( a _\n. |. er ce . owe — — ee Lo : oo eee :\n- Be» Pn a ae oo _ oS oe oe u ey oo\n. i they ~ale oo _o- | 2 ye beter sp .\n. oS aaa Moa, 1 _ » So oo 2 ee ee\nao te. ae en oo a cc — . q Z oe oe\noe — ic | oe < oo |. & vee — Pad a isa vy oe = j Ae Ce :\n. a | . co . ier i : Ue _ a oho a, a\n\nco oF — — . a aoe | soe oe ee eC oa as oo _ A ENS oe : ae\n\n: i oo of SO She a a oo a — bo —- — seals\n\noF ee a a \\ ee Lo ee Oe ‘ . ed\n\n7 — jew A a Ue oo ee 2 : om oe\n\n[) “geal : ae os - eo : t POs  . a Poe : a oe\n\nTee — _ oF — gore ee ole Ss co ae me a oo a _. -— — oe rae cee\na nce — ace Dap oe a . | to a. |. =e :\n\n| sf  .. . _ . Oe are _ of oe potllog . :\n\noe  . oo oe ae v a ee - _ . ee SK oe Osc o ‘\n\n| — oo oo | oo. a ou a a - Poe oe\n\n| an. coma yes on Ty Coo > a\n\n. os ia | . Oo ~—— . Ue a — _. a\n\n— -_ . : oo oo SoG _ ee ee _ oes S ge : :\noo. [ee cunwatiad La i a i oe | . i: :\n. S . .. eee . of : oh a -—. : | ~ Aue oe\n\n— ce. ee ne \\ |. . mo — a . o coe ae ae ie : S :\nSEAS c .  . A oe oe ve ne Ses OOS ee Roe AEE see ea : &: 4 3 . 5 ¥ aes f &\n. oo ™ ) — a fi be os : . .\n| le eee yoo ae _ oe ee Cpe -_ : oo i. _\nDrees a ae of = oe ee See : ee a oe :\n| — _ oe ho 2 — a |. ae “ oe\n\noo | |. S \\ oe — _ — oo ee oe. Ss ee\n\n| . . |. _ a a oe |. a : :\n\nEO. oe _ , . | e\n\n- a a (fae : _\n\na oe oe | ce se Se eS is AR Ss :\n\no lL . _ a - oe oe ,\n\nSMa\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page shows a handwritten note with text largely about family history, places, and dates. The handwriting is somewhat faded and smudged with some lines crossed out. There are annotations in margins, including an arrow pointing to crossed-out text. The writing appears uneven in darkness and sometimes hard to decipher. No images or signatures are visible.",
+    "Layout: Full page contains handwritten text in paragraph form",
+    "Layout: Some lines crossed out mid-text",
+    "Layout: Margin annotation with arrow pointing to crossed-out text"
+  ],
+  "observations": [
+    "Page shows a handwritten note with text largely about family history, places, and dates. The handwriting is somewhat faded and smudged with some lines crossed out. There are annotations in margins, including an arrow pointing to crossed-out text. The writing appears uneven in darkness and sometimes hard to decipher. No images or signatures are visible.",
+    "Layout: Full page contains handwritten text in paragraph form",
+    "Layout: Some lines crossed out mid-text",
+    "Layout: Margin annotation with arrow pointing to crossed-out text"
+  ],
+  "dates": [
+    "December 4, 1916",
+    "1900",
+    "1940"
+  ],
+  "document_strings": [
+    "I born Supreme Epstein on December 4, 1916 was the first beautiful baby born to Julius & Bess.",
+    "Bess was the of a beautiful woman...",
+    "My father was born in Russia.",
+    "My mother was born in Brest LaTose in Poland.",
+    "My father started his business in the year of 1900.",
+    "He was in business for 44 years before he passed away.",
+    "Then we moved to Crown St...",
+    "Before... enlisted in the U.S. Army.",
+    "My mother had 1 step sister.",
+    "Her name was May Taebick.",
+    "My mother brother was large..."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "main body",
+      "text_as_seen": "I born Supreme Epstein on December 4, 1916 was the first beautiful baby born to Julius & Bess. Bess was the of a beautiful woman...",
+      "confidence": "medium",
+      "note": "Text is faded and handwriting sometimes unclear but mostly readable."
+    },
+    {
+      "location": "main body",
+      "text_as_seen": "My father was in the wrecking business - My father was born in Russia. My mother was born in Brest LaTose in Poland...",
+      "confidence": "medium",
+      "note": "Faded and smudged in places, making full transcription difficult."
+    },
+    {
+      "location": "main body",
+      "text_as_seen": "My father started his business in the year of 1900. He was in business for 44 years before he passed away...",
+      "confidence": "high",
+      "note": "More clear text."
+    },
+    {
+      "location": "main body",
+      "text_as_seen": "Then we moved to Crown St... before... enlisted in the U.S. army...",
+      "confidence": "low",
+      "note": "Crossed out text with multiple overwrites, difficult to read."
+    },
+    {
+      "location": "left margin",
+      "text_as_seen": "We lived my early life...",
+      "confidence": "medium",
+      "note": "Margin note written vertically."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some lines have heavy crossing out making content unreadable.",
+    "Text is faded in upper right corner and some smudging throughout.",
+    "Margin note partly obscured by edge of page."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:06:23.577Z",
+    "response_id": "resp_09c7d7cfde00a5b4006a50295b9f9c8194b734fcdfad3426a2",
+    "raw_output_sha256": "f9cf804305193a3b2ea2c850e38d3a18573aaef194a582d96ffed413c80dff55"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09c7d7cfde00a5b4006a50295b9f9c8194b734fcdfad3426a2",
+    "enriched_at": "2026-07-09T23:06:23.577Z"
+  },
+  "visual_summary": "Page shows a handwritten note with text largely about family history, places, and dates. The handwriting is somewhat faded and smudged with some lines crossed out. There are annotations in margins, including an arrow pointing to crossed-out text. The writing appears uneven in darkness and sometimes hard to decipher. No images or signatures are visible.",
+  "layout": [
+    "Full page contains handwritten text in paragraph form",
+    "Some lines crossed out mid-text",
+    "Margin annotation with arrow pointing to crossed-out text"
+  ],
+  "handwriting": [
+    {
+      "location": "main body",
+      "text_as_seen": "I born Supreme Epstein on December 4, 1916 was the first beautiful baby born to Julius & Bess. Bess was the of a beautiful woman...",
+      "confidence": "medium",
+      "note": "Text is faded and handwriting sometimes unclear but mostly readable."
+    },
+    {
+      "location": "main body",
+      "text_as_seen": "My father was in the wrecking business - My father was born in Russia. My mother was born in Brest LaTose in Poland...",
+      "confidence": "medium",
+      "note": "Faded and smudged in places, making full transcription difficult."
+    },
+    {
+      "location": "main body",
+      "text_as_seen": "My father started his business in the year of 1900. He was in business for 44 years before he passed away...",
+      "confidence": "high",
+      "note": "More clear text."
+    },
+    {
+      "location": "main body",
+      "text_as_seen": "Then we moved to Crown St... before... enlisted in the U.S. army...",
+      "confidence": "low",
+      "note": "Crossed out text with multiple overwrites, difficult to read."
+    },
+    {
+      "location": "left margin",
+      "text_as_seen": "We lived my early life...",
+      "confidence": "medium",
+      "note": "Margin note written vertically."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "December 4, 1916",
+    "1900",
+    "1940"
+  ],
+  "confidence": "medium"
+}

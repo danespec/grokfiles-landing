@@ -1,0 +1,29 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "FBI-SCRUB-01",
+      "claim": "A 2025 FBI email says a complete scrub found Epstein-associated documents not included in a 50D case file.",
+      "source": "EFTA02730468",
+      "confidence": "P4"
+    },
+    {
+      "id": "FBI-SCRUB-02",
+      "claim": "The sender said the records were outside the case file because they were not of evidentiary value.",
+      "source": "EFTA02730468",
+      "confidence": "P4 statement / internal characterization"
+    },
+    {
+      "id": "FBI-SCRUB-03",
+      "claim": "Visible attachment descriptions include a 1996 FD-71, 2019 operations-order material and a 2016 FD-71.",
+      "source": "EFTA02730468",
+      "confidence": "P4"
+    },
+    {
+      "id": "FBI-SCRUB-04",
+      "claim": "The email does not establish destruction or improper suppression of evidence.",
+      "source": "EFTA02730468",
+      "confidence": "P2 negative finding"
+    }
+  ]
+}

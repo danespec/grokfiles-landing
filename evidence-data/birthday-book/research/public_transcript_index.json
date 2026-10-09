@@ -1,0 +1,758 @@
+{
+  "generated_at": "2026-07-10T17:53:03.753Z",
+  "pages": [
+    {
+      "page": 125,
+      "bates": "HOUSE_OVERSIGHT_000125",
+      "route": "/research/evidence/birthday-book/pages/125",
+      "related_people": [
+        "Jean-Luc Brunel"
+      ],
+      "overall_confidence": "medium",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top highlighted",
+          "text": "y - 3c = [V 3 64] + 5 x 12 - a - 1"
+        },
+        {
+          "line_number": 2,
+          "location": "top highlighted",
+          "text": "x + y = [V 2 81] + 2 x 20 + [4 2] - 1 = a"
+        },
+        {
+          "line_number": 3,
+          "location": "highlighted below line 2",
+          "text": "a = g + 15"
+        },
+        {
+          "line_number": 4,
+          "location": "highlighted",
+          "text": "a < g + 16"
+        },
+        {
+          "line_number": 5,
+          "location": "highlighted",
+          "text": "a > g + 12"
+        },
+        {
+          "line_number": 6,
+          "location": "inside boxed math expression",
+          "text": "[ln.e] (( [V 3 64] x 2 x 8x) x (b - 5 [IQ.M]) - 15)"
+        },
+        {
+          "line_number": 7,
+          "location": "below boxed expression",
+          "text": "g = ln.e"
+        },
+        {
+          "line_number": 8,
+          "location": "inside blue outlined box",
+          "text": "x + y + b + c - 2 + [3/1] + [[square root] u] = a = g + 15"
+        },
+        {
+          "line_number": 9,
+          "location": "middle, left",
+          "text": "where - g = [g stage]"
+        },
+        {
+          "line_number": 10,
+          "location": "middle, left below previous line",
+          "text": "M = 8"
+        },
+        {
+          "line_number": 11,
+          "location": "middle, left below previous line",
+          "text": "IQ = 90"
+        },
+        {
+          "line_number": 12,
+          "location": "middle, left below previous line",
+          "text": "[uncertain]"
+        },
+        {
+          "line_number": 13,
+          "location": "bottom handwritten note",
+          "text": "I wish you every new day happier"
+        },
+        {
+          "line_number": 14,
+          "location": "bottom handwritten note",
+          "text": "than every old happy days"
+        },
+        {
+          "line_number": 15,
+          "location": "bottom handwritten note",
+          "text": "Your friend"
+        },
+        {
+          "line_number": 16,
+          "location": "bottom handwritten note",
+          "text": "Jean luc"
+        }
+      ]
+    },
+    {
+      "page": 126,
+      "bates": "HOUSE_OVERSIGHT_000126",
+      "route": "/research/evidence/birthday-book/pages/126",
+      "related_people": [
+        "Bill Clinton"
+      ],
+      "overall_confidence": "medium",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top left",
+          "text": "Jeffrey -"
+        },
+        {
+          "line_number": 2,
+          "location": "below line 1",
+          "text": "Happy 50th -"
+        },
+        {
+          "line_number": 3,
+          "location": "below line 2",
+          "text": "It's dawning isn't it, to have"
+        },
+        {
+          "line_number": 4,
+          "location": "below line 3",
+          "text": "[later] so long, above all the years"
+        },
+        {
+          "line_number": 5,
+          "location": "below line 4",
+          "text": "of learning and knowing,"
+        },
+        {
+          "line_number": 6,
+          "location": "below line 5",
+          "text": "adventure and wrong, and still"
+        },
+        {
+          "line_number": 7,
+          "location": "below line 6",
+          "text": "to lose your childlike curiosity,"
+        },
+        {
+          "line_number": 8,
+          "location": "below line 7",
+          "text": "the drive to make a difference,"
+        },
+        {
+          "line_number": 9,
+          "location": "below line 8",
+          "text": "and the value of friends -"
+        },
+        {
+          "line_number": 10,
+          "location": "signature line",
+          "text": "Bill Clinton"
+        }
+      ]
+    },
+    {
+      "page": 146,
+      "bates": "HOUSE_OVERSIGHT_000146",
+      "route": "/research/evidence/birthday-book/pages/146",
+      "related_people": [
+        "George Mitchell"
+      ],
+      "overall_confidence": "high",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top right",
+          "text": "January 2003"
+        },
+        {
+          "line_number": 2,
+          "location": "top left",
+          "text": "Dear Jeffrey,"
+        },
+        {
+          "line_number": 3,
+          "location": "left",
+          "text": "The beginning of a new year is an appropriate time"
+        },
+        {
+          "line_number": 4,
+          "location": "left",
+          "text": "to count our blessings."
+        },
+        {
+          "line_number": 5,
+          "location": "left",
+          "text": "Among mine is your friendship. It's been more than"
+        },
+        {
+          "line_number": 6,
+          "location": "left",
+          "text": "a decade since we met by chance at an airport in"
+        },
+        {
+          "line_number": 7,
+          "location": "left",
+          "text": "Washington. During that time you've been a good friend."
+        },
+        {
+          "line_number": 8,
+          "location": "left",
+          "text": "I'm grateful for that and for what I hope will be many"
+        },
+        {
+          "line_number": 9,
+          "location": "left",
+          "text": "more years of your friendship."
+        },
+        {
+          "line_number": 10,
+          "location": "left",
+          "text": "Among your blessings has been the opportunity"
+        },
+        {
+          "line_number": 11,
+          "location": "left",
+          "text": "to lead a full, exciting, and fantastically varied"
+        },
+        {
+          "line_number": 12,
+          "location": "left",
+          "text": "life. Now that you've reached a critical milestone,"
+        },
+        {
+          "line_number": 13,
+          "location": "left",
+          "text": "I hope you will intensify your activities in the"
+        },
+        {
+          "line_number": 14,
+          "location": "left",
+          "text": "widest possible range of issues, especially in the"
+        },
+        {
+          "line_number": 15,
+          "location": "left",
+          "text": "field of science where you've already done so much."
+        },
+        {
+          "line_number": 16,
+          "location": "left",
+          "text": "With my congratulations, gratitude and"
+        },
+        {
+          "line_number": 17,
+          "location": "left",
+          "text": "best wishes,"
+        },
+        {
+          "line_number": 18,
+          "location": "right",
+          "text": "George Mitchell"
+        },
+        {
+          "line_number": 19,
+          "location": "left",
+          "text": "P.S. As you know, Heather shares your birthday,"
+        },
+        {
+          "line_number": 20,
+          "location": "left",
+          "text": "confirming my belief that a lot of great people"
+        },
+        {
+          "line_number": 21,
+          "location": "left",
+          "text": "were born on January 20 !"
+        }
+      ]
+    },
+    {
+      "page": 158,
+      "bates": "HOUSE_OVERSIGHT_000158",
+      "route": "/research/evidence/birthday-book/pages/158",
+      "related_people": [
+        "Joseph Pagano"
+      ],
+      "overall_confidence": "high",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top left",
+          "text": "Your centered individuality, your lack"
+        },
+        {
+          "line_number": 2,
+          "location": "top left",
+          "text": "of desire for public recognition, reminds"
+        },
+        {
+          "line_number": 3,
+          "location": "top left",
+          "text": "me of a story I once heard about the"
+        },
+        {
+          "line_number": 4,
+          "location": "top left",
+          "text": "Irish playwright, Samuel Beckett - he spent"
+        },
+        {
+          "line_number": 5,
+          "location": "top left",
+          "text": "his life avoiding the public eye. None was a"
+        },
+        {
+          "line_number": 6,
+          "location": "top left",
+          "text": "greater sense of displeasure than recognition"
+        },
+        {
+          "line_number": 7,
+          "location": "top left",
+          "text": "from the teeming masses. So, the story goes"
+        },
+        {
+          "line_number": 8,
+          "location": "top left",
+          "text": "like this - Beckett was with his mistress"
+        },
+        {
+          "line_number": 9,
+          "location": "top left",
+          "text": "in Morocco and received a telegram from"
+        },
+        {
+          "line_number": 10,
+          "location": "top left",
+          "text": "Ireland with the news he had been awarded"
+        },
+        {
+          "line_number": 11,
+          "location": "top left",
+          "text": "the Nobel Prize. His reaction? \"This is the"
+        },
+        {
+          "line_number": 12,
+          "location": "top left",
+          "text": "worst news I have ever received.\""
+        },
+        {
+          "line_number": 13,
+          "location": "middle left",
+          "text": "A word from the wise, to the wise, is sufficient."
+        },
+        {
+          "line_number": 14,
+          "location": "middle left",
+          "text": "Jeffrey, I love you, as a brilliant and"
+        },
+        {
+          "line_number": 15,
+          "location": "middle left",
+          "text": "unpredictable friend. May you always maintain"
+        },
+        {
+          "line_number": 16,
+          "location": "middle left",
+          "text": "your inner solitude."
+        },
+        {
+          "line_number": 17,
+          "location": "middle left",
+          "text": "I wish you health, stealth & continued wealth,"
+        },
+        {
+          "line_number": 18,
+          "location": "middle left",
+          "text": "not necessarily in that order. Happy Birthday!"
+        }
+      ]
+    },
+    {
+      "page": 165,
+      "bates": "HOUSE_OVERSIGHT_000165",
+      "route": "/research/evidence/birthday-book/pages/165",
+      "related_people": [
+        "Donald Trump"
+      ],
+      "overall_confidence": "high",
+      "notice": "High-confidence text recovery; transcription alone does not establish authorship.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top center",
+          "text": "Voice Over:"
+        },
+        {
+          "line_number": 2,
+          "location": "top center",
+          "text": "There must be more to life than having everything."
+        },
+        {
+          "line_number": 3,
+          "location": "center",
+          "text": "Donald"
+        },
+        {
+          "line_number": 4,
+          "location": "center",
+          "text": "Yes, there is, but I won't tell you what it is."
+        },
+        {
+          "line_number": 5,
+          "location": "center",
+          "text": "Jeffrey"
+        },
+        {
+          "line_number": 6,
+          "location": "center",
+          "text": "Nor will I, since I also know what it is."
+        },
+        {
+          "line_number": 7,
+          "location": "center",
+          "text": "Donald"
+        },
+        {
+          "line_number": 8,
+          "location": "center",
+          "text": "We have certain things in common, Jeffrey."
+        },
+        {
+          "line_number": 9,
+          "location": "center",
+          "text": "Jeffrey"
+        },
+        {
+          "line_number": 10,
+          "location": "center",
+          "text": "Yes, we do, come to think of it."
+        },
+        {
+          "line_number": 11,
+          "location": "center",
+          "text": "Donald"
+        },
+        {
+          "line_number": 12,
+          "location": "center",
+          "text": "Enigmas never age, have you noticed that?"
+        },
+        {
+          "line_number": 13,
+          "location": "center",
+          "text": "Jeffrey"
+        },
+        {
+          "line_number": 14,
+          "location": "center",
+          "text": "As a matter of fact, it was clear to me the last time I saw you."
+        },
+        {
+          "line_number": 15,
+          "location": "center",
+          "text": "Donald"
+        },
+        {
+          "line_number": 16,
+          "location": "center",
+          "text": "A pal is a wonderful thing. Happy Birthday—and may every day be another wonderful secret."
+        }
+      ]
+    },
+    {
+      "page": 178,
+      "bates": "HOUSE_OVERSIGHT_000178",
+      "route": "/research/evidence/birthday-book/pages/178",
+      "related_people": [
+        "Jerry Edelman"
+      ],
+      "overall_confidence": "high",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top left",
+          "text": "Dear Jeffrey,"
+        },
+        {
+          "line_number": 2,
+          "location": "top left",
+          "text": "On this occasion, I am reminded of your many"
+        },
+        {
+          "line_number": 3,
+          "location": "top left",
+          "text": "conversations, fuelled by both your curiosity and your"
+        },
+        {
+          "line_number": 4,
+          "location": "top left",
+          "text": "skepticism. Quoting great minds may be the only"
+        },
+        {
+          "line_number": 5,
+          "location": "top left",
+          "text": "gift I can give you to stimulate the one and release"
+        },
+        {
+          "line_number": 6,
+          "location": "top left",
+          "text": "the other."
+        },
+        {
+          "line_number": 7,
+          "location": "left center",
+          "text": "First, Oliver Wendell Holmes, Jr.:"
+        },
+        {
+          "line_number": 8,
+          "location": "left center",
+          "text": "'Certitude is not the test of certainty. We have"
+        },
+        {
+          "line_number": 9,
+          "location": "left center",
+          "text": "been cock sure of many things that were just so.' Your"
+        },
+        {
+          "line_number": 10,
+          "location": "left center",
+          "text": "curiosity, continuing on with your skepticism, will"
+        },
+        {
+          "line_number": 11,
+          "location": "left center",
+          "text": "take care of this without hazard, birthday after birthday."
+        },
+        {
+          "line_number": 12,
+          "location": "center",
+          "text": "Next, Thoreau:"
+        },
+        {
+          "line_number": 13,
+          "location": "center",
+          "text": "\"Pursue, keep up with, circle round and round"
+        },
+        {
+          "line_number": 14,
+          "location": "center",
+          "text": "your life, as a dog does his master's chase. Do"
+        },
+        {
+          "line_number": 15,
+          "location": "center",
+          "text": "what you love. Know your own bone; gnaw at"
+        },
+        {
+          "line_number": 16,
+          "location": "center",
+          "text": "it, bury it, unearth it and gnaw it still.\" This"
+        },
+        {
+          "line_number": 17,
+          "location": "center",
+          "text": "too, you do admirably."
+        },
+        {
+          "line_number": 18,
+          "location": "center",
+          "text": "Then, Leonardo da Vinci:"
+        },
+        {
+          "line_number": 19,
+          "location": "center",
+          "text": "\"Iron rusts from disuse, stagnant water loses its"
+        },
+        {
+          "line_number": 20,
+          "location": "center",
+          "text": "purity and in cold weather becomes frozen; even so"
+        },
+        {
+          "line_number": 21,
+          "location": "center",
+          "text": "does inaction sap the vigor of the mind.\" Epstein is"
+        },
+        {
+          "line_number": 22,
+          "location": "center",
+          "text": "not at risk. When he is in the room, you do not"
+        },
+        {
+          "line_number": 23,
+          "location": "center",
+          "text": "fall asleep."
+        },
+        {
+          "line_number": 24,
+          "location": "center",
+          "text": "Finally, a remark from the not so great Gertrude Stein"
+        },
+        {
+          "line_number": 25,
+          "location": "center",
+          "text": "on your interests:"
+        },
+        {
+          "line_number": 26,
+          "location": "center",
+          "text": "\"As a cousin of mine once said about money,"
+        },
+        {
+          "line_number": 27,
+          "location": "center",
+          "text": "money is always there but the pockets change; it is"
+        },
+        {
+          "line_number": 28,
+          "location": "center",
+          "text": "not in the same pockets after a change, and that"
+        },
+        {
+          "line_number": 29,
+          "location": "center",
+          "text": "is all there is to say about money.\""
+        },
+        {
+          "line_number": 30,
+          "location": "lower center",
+          "text": "You have said more and, going beyond"
+        },
+        {
+          "line_number": 31,
+          "location": "lower center",
+          "text": "talk, have shown how to find it."
+        },
+        {
+          "line_number": 32,
+          "location": "bottom left",
+          "text": "And so, felicitations on the vigors of your"
+        },
+        {
+          "line_number": 33,
+          "location": "bottom left",
+          "text": "body and mind, and warm hopes for many occasions"
+        },
+        {
+          "line_number": 34,
+          "location": "bottom left",
+          "text": "celebrating their gifts."
+        }
+      ]
+    },
+    {
+      "page": 187,
+      "bates": "HOUSE_OVERSIGHT_000187",
+      "route": "/research/evidence/birthday-book/pages/187",
+      "related_people": [
+        "Marvin Minsky"
+      ],
+      "overall_confidence": "high",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "below printed text block",
+          "text": "Marvin Minsky"
+        },
+        {
+          "line_number": 2,
+          "location": "below printed text block",
+          "text": "Happy Birthday!"
+        }
+      ]
+    },
+    {
+      "page": 232,
+      "bates": "HOUSE_OVERSIGHT_000232",
+      "route": "/research/evidence/birthday-book/pages/232",
+      "related_people": [
+        "Ari Gildery"
+      ],
+      "overall_confidence": "high",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "bottom center-right",
+          "text": "Ari Gildery"
+        }
+      ]
+    },
+    {
+      "page": 233,
+      "bates": "HOUSE_OVERSIGHT_000233",
+      "route": "/research/evidence/birthday-book/pages/233",
+      "related_people": [
+        "Ted Serine"
+      ],
+      "overall_confidence": "high",
+      "notice": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+      "lines": [
+        {
+          "line_number": 1,
+          "location": "top left corner",
+          "text": "1/15/03"
+        },
+        {
+          "line_number": 2,
+          "location": "top left area below date",
+          "text": "Dear Jeffrey,"
+        },
+        {
+          "line_number": 3,
+          "location": "upper middle",
+          "text": "We started out behind the desk some"
+        },
+        {
+          "line_number": 4,
+          "location": "middle left",
+          "text": "25 years ago."
+        },
+        {
+          "line_number": 5,
+          "location": "middle center",
+          "text": "Somehow I'm still behind the desk -"
+        },
+        {
+          "line_number": 6,
+          "location": "middle right",
+          "text": "you're not.... I'm asking myself now"
+        },
+        {
+          "line_number": 7,
+          "location": "middle right",
+          "text": "what I'm still doing there, but it certainly"
+        },
+        {
+          "line_number": 8,
+          "location": "lower middle",
+          "text": "helps define why you're my hero."
+        },
+        {
+          "line_number": 9,
+          "location": "lower middle",
+          "text": "All the best, happy birthday."
+        },
+        {
+          "line_number": 10,
+          "location": "bottom left",
+          "text": "I wish you love + laughter always"
+        },
+        {
+          "line_number": 11,
+          "location": "bottom center",
+          "text": "Ted Serine"
+        }
+      ]
+    }
+  ]
+}

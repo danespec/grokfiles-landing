@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-gah-shell="v3">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document Digitization and OCR Pipeline | Grok Archive Hub</title>
+  <meta name="description" content="How Grok Archive Hub preserves source files, extracts native text, applies OCR to scanned pages, tracks errors, and separates derived text from evidence.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://grokarchivehub.com/methodology/digitization-ocr-pipeline">
+  <meta property="og:site_name" content="Grok Archive Hub">
+  <meta property="og:title" content="Document Digitization and OCR Pipeline | Grok Archive Hub">
+  <meta property="og:description" content="How Grok Archive Hub preserves source files, extracts native text, applies OCR to scanned pages, tracks errors, and separates derived text from evidence.">
+  <meta property="og:url" content="https://grokarchivehub.com/methodology/digitization-ocr-pipeline">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://grokarchivehub.com/frontdoor/hero-hold-the-letter.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Document Digitization and OCR Pipeline | Grok Archive Hub">
+  <meta name="twitter:description" content="How source scans become searchable text without treating OCR as the source of record.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","headline":"Document Digitization and OCR Pipeline","description":"How Grok Archive Hub preserves source files, extracts native text, applies OCR to scanned pages, tracks errors, and separates derived text from evidence.","datePublished":"2026-10-02","dateModified":"2026-10-02","author":{"@type":"Organization","name":"Grok Archive Hub Editorial Desk"},"publisher":{"@type":"NewsMediaOrganization","name":"Grok Archive Hub","url":"https://grokarchivehub.com"},"mainEntityOfPage":"https://grokarchivehub.com/methodology/digitization-ocr-pipeline","isAccessibleForFree":true},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Methodology","item":"https://grokarchivehub.com/methodology"},{"@type":"ListItem","position":2,"name":"Document Digitization and OCR Pipeline","item":"https://grokarchivehub.com/methodology/digitization-ocr-pipeline"}]}]}</script>
+  <link rel="stylesheet" href="/assets/v3-ui-054.css">
+  <link rel="stylesheet" href="/assets/consent-ui-054.css">
+  <meta name="gah-ad-eligible" content="false">
+  <meta name="gah-ad-status" content="AD-EXCLUDE">
+  <meta name="gah-ad-policy" content="methodology-reader-guide">
+  <meta name="gah-indexability-policy" content="index,follow">
+  <script data-cfasync="false">window.GAH_CONSENT_BOOT={"schema":"gah.consent.v2","googleTagEnabled":true,"ga4MeasurementId":"G-48G8M0230N","adsenseApproved":false,"deferToGoogleCmpWhenPresent":true,"googleCmpConfiguredByPublisher":false,"tcfVersionSupport":"2.3","adsDataRedaction":true};window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};window.gtag("consent","default",{analytics_storage:"denied",ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500});window.gtag("set","ads_data_redaction",true);</script>
+  <meta name="gah-ad-zone" content="none">
+  <meta name="gah-adsense-approved" content="false">
+</head>
+<body data-family="TRUST">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/">
+        <span class="brand-mark">GAH</span>
+        <span class="brand-copy"><strong>GROK ARCHIVE HUB</strong><span>Truth preserved. History unfiltered.</span></span>
+      </a>
+      <nav class="nav-main" aria-label="Primary">
+        <a href="/investigations">Investigations</a>
+        <a href="/latest">Latest</a>
+        <a href="/dispatches">Dispatches</a>
+        <a href="/evidence-briefs">Evidence</a>
+        <a href="/search">Search</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/corrections">Corrections</a>
+        <a href="/newsletter">Newsletter</a>
+        <a href="/membership">Membership</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search-mini" data-archive-search>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5"/></svg>
+          <input type="search" name="q" placeholder="Search the archive" aria-label="Search the archive">
+        </form>
+        <a class="btn btn-ghost" href="/membership">Support GAH</a>
+        <button class="btn menu-btn" type="button" data-menu aria-expanded="false" aria-controls="gah-v3-mobile-nav">Menu</button>
+      </div>
+    </div>
+    <nav class="nav-mobile" id="gah-v3-mobile-nav" data-mobile>
+      <a href="/investigations">Investigations</a>
+      <a href="/latest">Latest</a>
+      <a href="/dispatches">Dispatches</a>
+      <a href="/evidence-briefs">Evidence</a>
+      <a href="/search">Search</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/corrections">Corrections</a>
+      <a href="/membership">Membership</a>
+    </nav>
+  </header>
+
+  <span id="main-content" tabindex="-1"></span>
+  <main id="main">
+<section class="page-hero">
+      <p class="eyebrow">Methodology · Digitization · OCR</p>
+      <h1>Document Digitization and OCR Pipeline</h1>
+      <p class="lede">How Grok Archive Hub turns scanned records into searchable text while keeping the original file—not the OCR—as the source of record.</p>
+      <div class="button-row"><a class="button primary" href="/methodology">Back to Methodology</a><a class="button" href="/search">Search the archive</a><a class="button" href="/corrections">Corrections</a></div>
+    </section>
+    <article class="content wide">
+      <div class="notice">
+        <p><strong>Plain rule:</strong> OCR is a derived search and transcription layer. It can help locate a page or phrase; it does not replace the source image, PDF, filing, email, or other original record used to support a claim.</p>
+      </div>
+
+      <h2>Source object first</h2>
+      <p>The pipeline begins with the source object as received or acquired. Where the archive has durable file-level provenance, the original bytes, archive identifier, source path, and available integrity metadata are preserved separately from any text generated later. A re-render or re-OCR can change derived text without changing what the underlying source says.</p>
+
+      <h2>Text extraction order</h2>
+      <div class="prose-grid">
+        <div class="info-card"><h3>1. Native text</h3><p>If a document already contains a usable text layer, native extraction is preferred. It avoids inventing OCR errors where machine-readable text already exists.</p></div>
+        <div class="info-card"><h3>2. Page rendering</h3><p>Image-only or degraded pages may be rendered to page images for machine reading. Page order and source-page boundaries remain part of the review context.</p></div>
+        <div class="info-card"><h3>3. OCR derivative</h3><p>Optical character recognition produces searchable text tied back to the source page. That text is treated as a derivative, not a certified transcript.</p></div>
+      </div>
+
+      <h2>Normalization is intentionally limited</h2>
+      <p>Whitespace and obvious extraction artifacts may be normalized for indexing, but names, numbers, dates, account references, dollar figures, tail numbers, addresses, and other evidentiary details are not silently “fixed” because a correction that looks obvious can still change meaning. When exact wording matters, the page image or original text layer controls.</p>
+
+      <h2>Common OCR failure modes</h2>
+      <ul class="clean-list">
+        <li><strong>Character swaps:</strong> O/0, I/l/1, S/5, B/8, punctuation, and broken ligatures can change names, dates, identifiers, or amounts.</li>
+        <li><strong>Layout errors:</strong> multi-column pages, tables, marginal notes, stamps, headers, and footers can be read out of order.</li>
+        <li><strong>Image quality:</strong> skew, blur, bleed-through, low contrast, photocopy generations, handwriting, and compression can reduce recognition quality.</li>
+        <li><strong>Redactions:</strong> a black bar or missing region is a source condition. OCR does not authorize guessing what is underneath.</li>
+        <li><strong>False absence:</strong> a failed search hit does not prove a term is absent from the source; the OCR may simply have missed it.</li>
+      </ul>
+
+      <h2>How OCR hits become evidence checks</h2>
+      <p>OCR is useful for discovery: finding candidate pages, clustering repeated terms, locating date ranges, and narrowing a large corpus. Before a material claim is published, the relevant source page should be opened and read in context. High-consequence details—especially identities, money, dates, legal language, and quoted wording—should be checked against the original record rather than accepted from an OCR hit alone.</p>
+
+      <h2>Versioning and corrections</h2>
+      <p>Derived text may be regenerated when a better scan, text layer, extraction method, or OCR pass becomes available. A new derivative should not be presented as if the underlying historical document changed. Corrections to transcription or indexing should preserve the distinction between <em>source correction</em> and <em>derived-text correction</em>.</p>
+
+      <h2>Search and indexing boundary</h2>
+      <p>Searchable OCR helps readers find records, but raw OCR dumps and thin machine-generated directory pages are not substitutes for source-specific editorial analysis. Indexable public methodology and investigation pages provide context, limits, citations, and verification paths; machine-derived text remains subordinate to the underlying record.</p>
+
+      <h2>What this can show</h2>
+      <ul class="clean-list">
+        <li>How a scanned or image-only record became searchable.</li>
+        <li>Which text is native and which text is machine-derived.</li>
+        <li>Why an OCR result should be verified against the source page before relying on exact wording.</li>
+        <li>Why OCR can produce both false positives and false negatives.</li>
+      </ul>
+
+      <h2>What this does not prove</h2>
+      <ul class="clean-list">
+        <li>An OCR hit does not prove the recognized spelling, number, date, amount, or quotation is exact.</li>
+        <li>A missing OCR hit does not prove the term or fact is absent from the original record.</li>
+        <li>OCR cannot reveal text hidden by a true redaction or reconstruct a page that was never provided.</li>
+        <li>Digitization does not convert a source into a finding; interpretation still requires context and corroboration.</li>
+      </ul>
+
+      <h2>Related method guides</h2>
+      <div class="route-list">
+        <a class="route-link" href="/methodology/source-map-methodology"><strong>How Source Maps Work</strong><span>How records and review lanes are connected without turning navigation into conclusions.</span></a>
+        <a class="route-link" href="/methodology/redaction-breadcrumbs"><strong>How to Read Redactions</strong><span>Document conditions create questions, not hidden facts.</span></a>
+        <a class="route-link" href="/methodology/confidence-labels-open-slots"><strong>Confidence Labels and Open Receipt Slots</strong><span>Review posture and unresolved checks.</span></a>
+        <a class="route-link" href="/search"><strong>Search the Archive</strong><span>Use derived text for discovery, then open the source.</span></a>
+      </div>
+
+      <section class="feature-panel gold">
+        <p class="eyebrow">Review date</p>
+        <h2>Method reviewed October 2, 2026.</h2>
+        <p>This page describes the public evidence-handling rule for searchable text. If a specific record exposes a different extraction or provenance condition, the record-specific source note controls.</p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="wrap method">
+      <div class="method-lead">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 8-8 11-4.5-3-8-6-8-11V7z" stroke="currentColor" fill="none" stroke-width="1.6"/></svg>
+        <div>
+          <h2>Our method. Our promise.</h2>
+          <p>We lead with receipts, not rhetoric. Every document is sourced, linked, and open for you to verify.</p>
+        </div>
+      </div>
+      <div>
+        <p>Corrections welcome. The public record is a living record.</p>
+        <p><a class="view-all" href="/methodology">Learn how we work →</a></p>
+      </div>
+      <div class="promises">
+        <div>Source first</div><div>No paywalls</div><div>Open citations</div><div>Public benefit</div>
+      </div>
+      <form data-subscribe>
+        <h2>Stay informed</h2>
+        <p>Get new investigations, major evidence updates, and corrections by email. Unsubscribe anytime.</p>
+        <div class="subscribe">
+          <input type="email" name="email" aria-label="Email" placeholder="you@example.com" autocomplete="email" inputmode="email" required><input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+          <button class="btn btn-fill" type="submit">Subscribe</button>
+        </div>
+        <p data-subscribe-note></p>
+      </form>
+    </div>
+    <div class="wrap legal">
+      <span>© 2026 Grok Archive Hub</span>
+      <a href="/about">About</a><a href="/contact">Contact</a><a href="/corrections">Corrections</a><a href="/newsletter">Newsletter</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/methodology">Methodology</a>
+      <span>Independent investigative newsroom and evidence archive.</span>
+    </div>
+  </footer>
+
+  <div class="backdrop" id="gah-backdrop" hidden></div>
+  <div class="palette" id="command-palette" role="dialog" aria-label="Command palette" hidden>
+    <form data-palette-form><input data-palette-input type="search" placeholder="Jump to a desk, or search the record" aria-label="Command"></form>
+    <div data-palette-list>
+      <a href="/search">Search GAH</a>
+      <a href="/latest">Latest investigations</a>
+      <a href="/projects">Projects</a>
+      <a href="/open-questions">Open questions</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/corrections">Corrections</a>
+      <a href="/archive">Evidence archive</a>
+      <button class="btn" type="button" data-overlay-open="ask-gah-panel">Ask GAH</button>
+    </div>
+  </div>
+  <aside class="drawer drawer-right" id="ask-gah-panel" role="dialog" aria-label="Ask GAH" hidden>
+    <button class="btn" type="button" data-overlay-close="ask-gah-panel" aria-label="Close Ask GAH">Close</button>
+    <p class="kicker">Grok Archive Hub</p>
+    <h2 class="headline">Ask GAH</h2>
+    <p>Site help or archive search with linked sources. Open the source before relying on a claim.</p>
+    <div class="ask-actions btn-row">
+      <button class="btn" type="button" data-ask-gah-intent="help">Help using the site</button>
+      <button class="btn" type="button" data-ask-gah-intent="archive">Search the archive</button>
+    </div>
+    <form class="ask-form" data-ask-gah-form>
+      <label for="ask-gah-question">Question</label>
+      <textarea id="ask-gah-question" data-ask-gah-question maxlength="4000" placeholder="Ask about a document, archive record, correction, or site feature."></textarea>
+      <div class="btn-row"><button class="btn btn-fill" type="submit">Ask</button></div>
+    </form>
+    <div data-ask-gah-status role="status" aria-live="polite"></div>
+    <div data-ask-gah-response></div>
+  </aside>
+  <aside class="drawer drawer-right" id="evidence-lens" role="dialog" aria-label="Evidence lens" hidden>
+    <button class="btn" type="button" data-overlay-close="evidence-lens" aria-label="Close evidence lens">Close</button>
+    <p class="kicker">Evidence lens</p>
+    <h2 class="headline" id="lens-title">Inspect receipt</h2>
+    <dl class="lens-doc" id="lens-body"></dl>
+  </aside>
+
+  <script data-cfasync="false" src="/assets/v3-newsletter-062.js"></script>
+</body>
+</html>

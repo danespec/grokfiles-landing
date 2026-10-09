@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "action_id": "ACT-001",
+      "actor": "NMDOJ",
+      "action": "Reopened criminal investigation into alleged illegal activity at Zorro Ranch.",
+      "date": "2026-02-19",
+      "public_record": "Located",
+      "result": "Investigation publicly announced.",
+      "source_id": "nmd-2026-02-19-zorro-reopen",
+      "limitation": "Public statement only."
+    },
+    {
+      "action_id": "ACT-002",
+      "actor": "NMDOJ",
+      "action": "Searched former Zorro Ranch property with state/local assistance.",
+      "date": "2026-03-09",
+      "public_record": "Located",
+      "result": "Search publicly announced.",
+      "source_id": "nmd-2026-03-09-zorro-search",
+      "limitation": "Search warrant, affidavit, inventory, and return not acquired."
+    },
+    {
+      "action_id": "ACT-003",
+      "actor": "NMDOJ",
+      "action": "Submitted initial, formal, Touhy, and follow-up requests according to the June 30 letter.",
+      "date": "2026-02-13 to 2026-06-05",
+      "public_record": "Partial",
+      "result": "Chronology documented by NMDOJ; underlying letters not acquired except June 30.",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "One-sided chronology until underlying correspondence or DOJ response is public."
+    },
+    {
+      "action_id": "ACT-004",
+      "actor": "USDOJ",
+      "action": "Public EFTA releases with redactions and court-order/victim-review process.",
+      "date": "2025-2026",
+      "public_record": "Located",
+      "result": "Public release record exists; confidential NM access unresolved.",
+      "source_id": "doj-epstein-disclosures",
+      "limitation": "Public release is not the same event as NMDOJ production."
+    },
+    {
+      "action_id": "ACT-005",
+      "actor": "USDOJ / Jay Clayton",
+      "action": "Publicly stated that documents are subject to protections including protective orders and that DOJ personnel are seeking accommodation with NMDOJ.",
+      "date": "2026-07-15",
+      "public_record": "Located",
+      "result": "Official public position located.",
+      "source_id": "sen-heinrich-2026-07-15-clayton",
+      "limitation": "No written NM-specific response or accommodation terms acquired."
+    },
+    {
+      "action_id": "ACT-006",
+      "actor": "USDOJ / Todd Blanche",
+      "action": "Senate page says Blanche committed to cooperating with New Mexico investigation.",
+      "date": "2026-07-15",
+      "public_record": "Located",
+      "result": "Official Senate summary located.",
+      "source_id": "sen-hirono-2026-07-15-blanche",
+      "limitation": "Underlying full transcript/video not archived in this run."
+    },
+    {
+      "action_id": "ACT-007",
+      "actor": "New Mexico House Special Investigatory Committee",
+      "action": "Established oversight/investigatory track with subpoena power under HR 1.",
+      "date": "2026",
+      "public_record": "Located",
+      "result": "Legal authority and 20 public June 2026 HR 1 subpoena PDFs located; service/response/compliance records not located.",
+      "source_id": "nmlegis-hr1-final",
+      "limitation": "Public subpoena PDFs do not substitute for service proof, returns, responses, or compliance records."
+    },
+    {
+      "action_id": "ACT-008",
+      "actor": "NMDOJ / congressional sponsors",
+      "action": "Supported EFTA II draft as a proposed new access/enforcement mechanism.",
+      "date": "2026-07-15",
+      "public_record": "Located",
+      "result": "Proposed legislation located.",
+      "source_id": "nmd-efta-ii-draft",
+      "limitation": "Not current law."
+    }
+  ]
+}

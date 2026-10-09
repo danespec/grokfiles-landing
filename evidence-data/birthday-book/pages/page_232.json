@@ -1,0 +1,113 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 232,
+  "page_id": "page_232",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_232.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_232.ocr.txt",
+  "image_metadata": {
+    "bytes": 125331,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "47aa4f57c295e6e3904dd653dfdcf039f0388ef10d81a29d290f051daccc50f8"
+  },
+  "ocr_text": "When Jeffrey joined Bear, Stearns twenty-four years\n\nago, it was our plan to put him on the American Stock\nExchange floor to trade options on common stocks.\n\nUp until then, options had been traded Over the\nCounter. Jeff said no, and that was the last difference |\nwe ever had.\n\nWorking with Jeffrey has been a pleasure and watching\n\nhis meteoric success has given me many vicarious |\nthrills.\n\nTam sure that we will see Jeffrey’s star glow even\n\nbrighter. Y\nGood luck Jeffrey —\n\nHOUSE_OVERSIGHT_000232\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a typed message about Jeffrey's career at Bear Stearns and a faint handwritten signature at the bottom center-right.",
+    "Layout: Typed text block in upper two-thirds, left aligned",
+    "Layout: Faint handwritten text (signature) at bottom center right"
+  ],
+  "observations": [
+    "Page contains a typed message about Jeffrey's career at Bear Stearns and a faint handwritten signature at the bottom center-right.",
+    "Layout: Typed text block in upper two-thirds, left aligned",
+    "Layout: Faint handwritten text (signature) at bottom center right"
+  ],
+  "dates": [],
+  "document_strings": [
+    "When Jeffrey joined Bear, Stearns twenty-four years ago, it was our plan to put him on the American Stock Exchange floor to trade options on common stocks.",
+    "Up until then, options had been traded Over the Counter. Jeff said no, and that was the last difference we ever had.",
+    "Working with Jeffrey has been a pleasure and watching his meteoric success has given me many vicarious thrills.",
+    "I am sure that we will see Jeffrey's star glow even brighter.",
+    "Good luck Jeffrey —",
+    "Ari Gildery"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center-right",
+      "text_as_seen": "Ari Gildery",
+      "confidence": "low",
+      "note": "Likely signature due to placement and format"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "bottom center-right",
+      "text_as_seen": "Ari Gildery",
+      "confidence": "low",
+      "note": "Handwritten text appears faint and partially illegible, likely a signature"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Bottom handwritten text is faint and partially unclear"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:13.179Z",
+    "response_id": "resp_086ccf1c8dfd8063006a50311c607c819694522b2cf30459a2",
+    "raw_output_sha256": "44dd4f016ebba58856069fd130887928e1f44266234dc82aa2aa2d86a803158d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_086ccf1c8dfd8063006a50311c607c819694522b2cf30459a2",
+    "enriched_at": "2026-07-09T23:39:13.179Z"
+  },
+  "visual_summary": "Page contains a typed message about Jeffrey's career at Bear Stearns and a faint handwritten signature at the bottom center-right.",
+  "layout": [
+    "Typed text block in upper two-thirds, left aligned",
+    "Faint handwritten text (signature) at bottom center right"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom center-right",
+      "text_as_seen": "Ari Gildery",
+      "confidence": "low",
+      "note": "Handwritten text appears faint and partially illegible, likely a signature"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center-right",
+      "text_as_seen": "Ari Gildery",
+      "confidence": "low",
+      "note": "Likely signature due to placement and format"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

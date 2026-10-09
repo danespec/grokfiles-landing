@@ -1,0 +1,154 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 185,
+  "page_id": "page_185",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_185.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_185.ocr.txt",
+  "image_metadata": {
+    "bytes": 7644140,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "9b5fdead98f903bec7e69c1b08d19cd97c5498a3361bb78b226f0a78ad37a831"
+  },
+  "ocr_text": "Quasispecies give birth to Replicators\nonce their fitness is frequency dependent.\nFe John von Neumann Oskar Morgenstern\nThe conquest of\nas (ir)rationality\n3 Replicator equation ¢\ns ; 0 es\n\" of 5\na i:* ‘2 jou P= Di IX; 2 8 “= ®\n— Win stay lose shift\na _ _Generous tit for tat\n1S Tit for tat A2iog2-8\nHOUSE_OVERSIGHT_000185\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains text headers, mathematical equations, colored text boxes, and six photos of men. The page discusses replicators related to quasispecies, fitness that is frequency dependent, game theory, evolutionary game theory, and successful strategies through natural selection. There are multiple color highlights in blue and orange. Mathematical formulas labeled as replicator equations are present. Keywords such as 'Win stay lose shift,' 'Generous tit for tat,' 'Tit for tat,' and 'Reward and punishment' are visible. Photographs include six men's portraits, positioned near related text.",
+    "Layout: header text at top",
+    "Layout: photo group of six men near top center",
+    "Layout: blue text boxes with terms (Game Theory, Evolutionary game theory) near top and middle",
+    "Layout: orange text boxes with phrases (The conquest of (ir)rationality, Successful strategies spread by natural selection) near top center",
+    "Layout: large blue text header 'Replicator equation' mid page",
+    "Layout: mathematical formulas with colored labels below text header",
+    "Layout: groups of colored keywords near bottom",
+    "Photo/image candidate at top center: photo of a man with hat in outdoor environment",
+    "Photo/image candidate at top right: close-up photo of a man's face with glasses",
+    "Photo/image candidate at below first two photos left: photo of a man's face",
+    "Photo/image candidate at below first two photos center: photo of a man with glasses",
+    "Photo/image candidate at bottom center near text: photo of a man's face"
+  ],
+  "observations": [
+    "Page contains text headers, mathematical equations, colored text boxes, and six photos of men. The page discusses replicators related to quasispecies, fitness that is frequency dependent, game theory, evolutionary game theory, and successful strategies through natural selection. There are multiple color highlights in blue and orange. Mathematical formulas labeled as replicator equations are present. Keywords such as 'Win stay lose shift,' 'Generous tit for tat,' 'Tit for tat,' and 'Reward and punishment' are visible. Photographs include six men's portraits, positioned near related text.",
+    "Layout: header text at top",
+    "Layout: photo group of six men near top center",
+    "Layout: blue text boxes with terms (Game Theory, Evolutionary game theory) near top and middle",
+    "Layout: orange text boxes with phrases (The conquest of (ir)rationality, Successful strategies spread by natural selection) near top center",
+    "Layout: large blue text header 'Replicator equation' mid page",
+    "Layout: mathematical formulas with colored labels below text header",
+    "Layout: groups of colored keywords near bottom",
+    "Photo/image candidate at top center: photo of a man with hat in outdoor environment",
+    "Photo/image candidate at top right: close-up photo of a man's face with glasses",
+    "Photo/image candidate at below first two photos left: photo of a man's face",
+    "Photo/image candidate at below first two photos center: photo of a man with glasses",
+    "Photo/image candidate at bottom center near text: photo of a man's face"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Quasispecies give birth to Replicators",
+    "once their fitness is frequency dependent.",
+    "Game Theory",
+    "John von Neumann",
+    "Oskar Morgenstern",
+    "The conquest of (ir)rationality",
+    "Successful strategies spread by natural selection.",
+    "Evolutionary game theory",
+    "Replicator equation",
+    "Frequency of type i",
+    "Average fitness",
+    "Fitness of type i is frequency dependent",
+    "Payoff matrix",
+    "Win stay lose shift",
+    "Generous tit for tat",
+    "Tit for tat",
+    "12 log 2-8",
+    "Reward and punishment",
+    "Image scoring"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Exact content of the mathematical symbols and equations is partially unclear but broadly interpretable.",
+    "Some photographed faces lack clear contextual labels or captions, limiting detailed description."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:31:58.356Z",
+    "response_id": "resp_0c5f57b0a0ef9732006a502f62397481979f28bca146d47186",
+    "raw_output_sha256": "bf6d27b8c72a6bc2e6f2fc5ddc44e99861789bf6451ea341ec3e1f0742d23a02"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c5f57b0a0ef9732006a502f62397481979f28bca146d47186",
+    "enriched_at": "2026-07-09T23:31:58.356Z"
+  },
+  "visual_summary": "Page contains text headers, mathematical equations, colored text boxes, and six photos of men. The page discusses replicators related to quasispecies, fitness that is frequency dependent, game theory, evolutionary game theory, and successful strategies through natural selection. There are multiple color highlights in blue and orange. Mathematical formulas labeled as replicator equations are present. Keywords such as 'Win stay lose shift,' 'Generous tit for tat,' 'Tit for tat,' and 'Reward and punishment' are visible. Photographs include six men's portraits, positioned near related text.",
+  "layout": [
+    "header text at top",
+    "photo group of six men near top center",
+    "blue text boxes with terms (Game Theory, Evolutionary game theory) near top and middle",
+    "orange text boxes with phrases (The conquest of (ir)rationality, Successful strategies spread by natural selection) near top center",
+    "large blue text header 'Replicator equation' mid page",
+    "mathematical formulas with colored labels below text header",
+    "groups of colored keywords near bottom"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "photo of a man with hat in outdoor environment",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "close-up photo of a man's face with glasses",
+      "confidence": "high"
+    },
+    {
+      "location": "below first two photos left",
+      "description": "photo of a man's face",
+      "confidence": "high"
+    },
+    {
+      "location": "below first two photos center",
+      "description": "photo of a man with glasses",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center near text",
+      "description": "photo of a man's face",
+      "confidence": "medium"
+    },
+    {
+      "location": "bottom center near text",
+      "description": "photo of a man's face",
+      "confidence": "medium"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

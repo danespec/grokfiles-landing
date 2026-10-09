@@ -1,0 +1,113 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 126,
+  "page_id": "page_126",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_126.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_126.ocr.txt",
+  "image_metadata": {
+    "bytes": 105929,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "9eafec18e158e7f7971a354a768d78484020b15df25cbd0e0e5731ab0c642c02"
+  },
+  "ocr_text": "ene\nMen Bane Unt & Ue, Sto (sage,\nUke be sr in aod Nn\nfhe bose Se isda Soe\nHOUSE_OVERSIGHT_000126\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten note on a blank white page, tilted slightly to the left. The note consists of several lines of cursive text addressed to 'Jeffrey,' followed by a signature-like text below.",
+    "Layout: handwritten text top left"
+  ],
+  "observations": [
+    "Handwritten note on a blank white page, tilted slightly to the left. The note consists of several lines of cursive text addressed to 'Jeffrey,' followed by a signature-like text below.",
+    "Layout: handwritten text top left"
+  ],
+  "dates": [
+    "50th"
+  ],
+  "document_strings": [
+    "Jeffrey",
+    "Happy 50th",
+    "Bill Clinton",
+    "HOUSE_OVERSIGHT_000126"
+  ],
+  "signatures": [
+    {
+      "location": "beneath main handwritten note",
+      "text_as_seen": "Bill Clinton",
+      "confidence": "medium",
+      "note": "Handwritten cursive signature-like text."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "Jeffrey - Happy 50th - It's dawning isn't it, to leave late so long, above all the game of learning and knowing, adventure and wrong, and all to have your childlike curiosity, the drive to make a difference, and the value of friends -",
+      "confidence": "medium",
+      "note": "Handwritten cursive note; some words unclear, text partly difficult to read but mostly legible."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Some words within the handwritten text are partially unclear due to handwriting style and image quality."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:13.080Z",
+    "response_id": "resp_08d22df8d5acd26e006a502d5cd3848196a9dabab0b292148e",
+    "raw_output_sha256": "f4803347dc4d178b67fbd6bb38dd4c0819fdd6d3103382e70d1dd6942dd5199c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08d22df8d5acd26e006a502d5cd3848196a9dabab0b292148e",
+    "enriched_at": "2026-07-09T23:23:13.080Z"
+  },
+  "visual_summary": "Handwritten note on a blank white page, tilted slightly to the left. The note consists of several lines of cursive text addressed to 'Jeffrey,' followed by a signature-like text below.",
+  "layout": [
+    "handwritten text top left"
+  ],
+  "handwriting": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "Jeffrey - Happy 50th - It's dawning isn't it, to leave late so long, above all the game of learning and knowing, adventure and wrong, and all to have your childlike curiosity, the drive to make a difference, and the value of friends -",
+      "confidence": "medium",
+      "note": "Handwritten cursive note; some words unclear, text partly difficult to read but mostly legible."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "beneath main handwritten note",
+      "text_as_seen": "Bill Clinton",
+      "confidence": "medium",
+      "note": "Handwritten cursive signature-like text."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "50th"
+  ],
+  "confidence": "medium"
+}

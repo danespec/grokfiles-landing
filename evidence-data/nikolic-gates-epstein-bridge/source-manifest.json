@@ -1,0 +1,51 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "scope": "Boris Nikolic as the documented meeting bridge between Gates and Epstein, followed by Epstein's later involvement in Nikolic's 2013 exit discussions.",
+  "sources": [
+    {
+      "id": "HOUSE-GATES-TRANSCRIPT-2026-06-10",
+      "role": "controlling transcribed testimony and exhibit index",
+      "public_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Bill-Gates-Transcript.pdf",
+      "sha256": "7c8c5dd601a3d800ff3d9f459961c0227b8154c5552ebf2e3954c364b7ef7b93",
+      "status": "local hash-verified official House PDF"
+    },
+    {
+      "id": "HOUSE_OVERSIGHT_030887",
+      "role": "Jan. 30 2011 Nikolic-Epstein meeting-coordination email",
+      "public_url": "https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/",
+      "sha256": "be0a642a2d698d11259eaaa143a419cfac578a29e425291c925f2689093396b6",
+      "status": "local text extract from House estate-document production"
+    },
+    {
+      "id": "HOUSE_OVERSIGHT_031018",
+      "role": "duplicate/parallel Jan. 30 2011 chain",
+      "public_url": "https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/",
+      "sha256": "17a421712daa51b1858228ff88a6aa2a71f587fe08875edd2727702cb82353aa",
+      "status": "local text extract from House estate-document production"
+    },
+    {
+      "id": "EFTA00873874",
+      "role": "Gates Majority Exhibit 1; June 2013 Epstein-Nikolic exit-draft chain",
+      "public_url": "https://www.justice.gov/epstein",
+      "status": "DOJ-released EFTA exhibit identified by official House transcript"
+    },
+    {
+      "id": "EFTA01966988",
+      "role": "Gates Majority Exhibit 2; July 18 2013 Epstein-to-self draft",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01966988.pdf",
+      "status": "DOJ EFTA route identified by Bates number and official House transcript"
+    },
+    {
+      "id": "EFTA01967528",
+      "role": "Gates Majority Exhibit 3; second July 18 2013 Epstein-to-self draft",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01967528.pdf",
+      "status": "DOJ EFTA route identified by Bates number and official House transcript"
+    }
+  ],
+  "limits": [
+    "Self-addressed Epstein drafts prove Epstein created the draft text, not that every statement inside is true.",
+    "Gates testified he did not receive the June draft language and disputed multiple assertions in the July self-addressed drafts.",
+    "The record establishes Nikolic as an introduction/meeting bridge and later Epstein involvement in exit discussions; it does not establish a preplanned conspiracy between Nikolic and Epstein."
+  ]
+}

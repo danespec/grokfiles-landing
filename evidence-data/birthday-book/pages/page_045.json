@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 45,
+  "page_id": "page_045",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_045.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_045.ocr.txt",
+  "image_metadata": {
+    "bytes": 278841,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "614a1610da0bedb33b708bfbef7a255f23ec209f219bd4f4759863c567fbcacd"
+  },
+  "ocr_text": "oe then rinsing it with water”, he said.\n\na - Freak Sources also reported seeing used\n\n. Show Hellman’s mayo jars in the trash\n\noe cang behind the house. According\n\nog to national tuna experts, this could\n\noe - be another major breakthrough in\n\noe By Charles Shushan solving the “miracle tuna” puzzle,.\n\noe Coney Island Mentais The “tuna boy”, as he is now\n\nee , ; known, commented: “If you like\n\nes it's that time of the year when my tuna, wait till you taste my\n\n. the Coney Island frealc show comes fantastic “Wonder Slaw” cole slaw,\n\noe back to town. This year, the show and my soon-to-be famous Galliano\n\na will feature some of the Bear’s Milk Shake”\n\nfavorites: Dicky the Penguin\n\nMan... Watch Dicky as he\n\napparently shuffles cards with two\n\nstumps, The Tatooed Lady...\n\n2) “Mook!!! All meat and no potatoes”\n\n\"and to your own amazement,\n\nif move my muscles, you got\n\nmoving pictures!!!\n\nShows are every hour, on the Teen brings\n\nhour. No photos. home Brit\n\nce By Merton Boober\n\na : Vans wild over A cocky Coney Island teenager\n\noe ° met a genuine British Pachoochie\n\noe Dynamite Tuna and had the audacity to bring her\n\noe home to live in his parent’s house.\n\nos Wis mother never trusted the\n\noF : By Chaim Gider pachoochie and believed that she\n\nee Mermaid Ave. Gourmet insidiously sapped the intelligence\n\noe and manlihood from her son. After\n\noe . months of monitoring and\n\noe Every so often, a genus comes recording observed data, the\n\ncoe. along with a new recipe that takes mother supplied the INS. with all\n\n. a the world by storm. The gentus the dope on this wild Englander\n\nas this time?.,. the son of @ Coney and had her deported. When the\n\noo Island fireman, who worked for poy regained his senses, he had\n\na months honing the magic recipe For totally forgotten any details of the\n\noe the perfect tuna salad. The entire British p ach oachie\n\nee neighborhood waits on line for :\n\nee hours outside the fireman’s house,\n\noo for just one small taste of the\n\nae “miracle tuna”. Folks can’t believe .\n\n= that the young lad had the wisdom\n\noe or knowledge fo create such a\n\nae masterpiece in tuna.\n\noe When asked for the recipe, the\n\nteen will only reveal one part of the\n\noo secret “It has to do with squeezing\n\nthe oil out of the tuna,\nHOUSE_OVERSIGHT_000045\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "This is a scanned page of text from a document or magazine containing three short articles. The page has a clear two-column layout with text blocks separated by some whitespace and lines. The text includes titles, author bylines, and paragraphs discussing different topics. The main visible text is printed in black on a white background with varying font sizes for headings and body text. There is no visible handwriting, signature, redactions, drawings, or photographs on the page.",
+    "Layout: Top-left heading with article title and author",
+    "Layout: Body text below the first article title filling the left column",
+    "Layout: Middle left smaller heading and author",
+    "Layout: Body text below the second article title continuing in the left column",
+    "Layout: Horizontal line separator near middle right",
+    "Layout: Top right heading with article title and author",
+    "Layout: Body text in right column below third article title"
+  ],
+  "observations": [
+    "This is a scanned page of text from a document or magazine containing three short articles. The page has a clear two-column layout with text blocks separated by some whitespace and lines. The text includes titles, author bylines, and paragraphs discussing different topics. The main visible text is printed in black on a white background with varying font sizes for headings and body text. There is no visible handwriting, signature, redactions, drawings, or photographs on the page.",
+    "Layout: Top-left heading with article title and author",
+    "Layout: Body text below the first article title filling the left column",
+    "Layout: Middle left smaller heading and author",
+    "Layout: Body text below the second article title continuing in the left column",
+    "Layout: Horizontal line separator near middle right",
+    "Layout: Top right heading with article title and author",
+    "Layout: Body text in right column below third article title"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Freak Show",
+    "By Charles Shushan",
+    "Coney Island Mentais",
+    "It's that time of the year when the Coney Island freak show comes back to town. This year, the show will feature some of the Bear's favorites: Dicky the Penguin Man.... Watch Dicky as he apparently shuffles cards with two stumps; The Tatooed Lady.... 'look!!! All meat and no potatoes'.... 'and to your own amazement, if I move my muscles, you got moving pictures!!! Shows are every hour, on the hour. No photos.",
+    "then rinsing it with water\", he said. Sources also reported seeing used Hellman's mayo jars in the trash cans behind the house. According to national tuna experts, this could be another major breakthrough in solving the 'miracle tuna' puzzle.",
+    "The 'tuna boy', as he is now known, commented: 'If you like my tuna, wait till you taste my fantastic \"Wonder Slaw\" cole slaw, and my soon-to-be famous Galliano Milk Shake'.",
+    "Teen brings home Brit",
+    "By Merton Boober",
+    "I.N.A. Rescue Sheet",
+    "Fans wild over Dynamite Tuna",
+    "By Chaim Gider",
+    "Mermaid Ave. Gourmet",
+    "Every so often, a genius comes along with a new recipe that takes the world by storm. The genius this time?... the son of a Coney Island fireman, who worked for months honing the magic recipe for the perfect tuna salad. The entire neighborhood waits on line for hours outside the fireman's house, for just one small taste of the \"miracle tuna\". Folks can't believe that the young lad had the wisdom or knowledge to create such a masterpiece in tuna. When asked for the recipe, the teen will only reveal one part of the secret \"It has to do with squeezing the oil out of the tuna,\"",
+    "A cocky Coney Island teenager met a genuine British Pachoochie and had the audacity to bring her home to live in his parent's house. His mother never trusted the pachoochie and believed that she insidiously sapped the intelligence and manlihood from her son. After months of monitoring and recording observed data, the mother supplied the I.N.S. with all the dope on this wild Englander and had her deported. When the boy regained his senses, he had totally forgotten any details of the British pachoochie."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:09:15.796Z",
+    "response_id": "resp_01b61f817cff8b1e006a502a1370f48193974b23b1940a026e",
+    "raw_output_sha256": "75bad7637e47d59a12c54ae5c845a15d1b447bb266346706e0979a2d6e9ebe7b"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01b61f817cff8b1e006a502a1370f48193974b23b1940a026e",
+    "enriched_at": "2026-07-09T23:09:15.796Z"
+  },
+  "visual_summary": "This is a scanned page of text from a document or magazine containing three short articles. The page has a clear two-column layout with text blocks separated by some whitespace and lines. The text includes titles, author bylines, and paragraphs discussing different topics. The main visible text is printed in black on a white background with varying font sizes for headings and body text. There is no visible handwriting, signature, redactions, drawings, or photographs on the page.",
+  "layout": [
+    "Top-left heading with article title and author",
+    "Body text below the first article title filling the left column",
+    "Middle left smaller heading and author",
+    "Body text below the second article title continuing in the left column",
+    "Horizontal line separator near middle right",
+    "Top right heading with article title and author",
+    "Body text in right column below third article title"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

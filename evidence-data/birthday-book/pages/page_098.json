@@ -1,0 +1,129 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 98,
+  "page_id": "page_098",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_098.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_098.ocr.txt",
+  "image_metadata": {
+    "bytes": 12109886,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "04de336c8a57344f3658c093322910b1f1d230a689a705397120623e43bf2342"
+  },
+  "ocr_text": "BS Rvs\nft if |\nER es ee |\narom: yu Spee. 7 4\neae ae - || PAE, fae\nmes $ ool\n: |\n, -\n{ a\n“ wi\n{25 _ y i\n: mums cee COYTTENKL = OF\n~ hs iA OS ad >\na Fa 2? Se ee\n—. Cf, ‘ for tke .\nHOUSE_OVERSIGHT_000098\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Black and white photograph of two people standing side by side, one person on the left has their face obscured by a solid black rectangle; the person on the right is wearing a suit and tie and smiling slightly. Behind them is a framed rectangular mirror and a lamp. There is handwriting in blue pen below the photograph, containing two sentences.",
+    "Layout: One full-page black and white photograph centered on the page",
+    "Layout: Handwritten text below the photograph",
+    "Photo/image candidate at Center of page: Black and white photo of two people standing side by side, one with face redacted, the other in a suit and tie, with a framed mirror and lamp in the background."
+  ],
+  "observations": [
+    "Black and white photograph of two people standing side by side, one person on the left has their face obscured by a solid black rectangle; the person on the right is wearing a suit and tie and smiling slightly. Behind them is a framed rectangular mirror and a lamp. There is handwriting in blue pen below the photograph, containing two sentences.",
+    "Layout: One full-page black and white photograph centered on the page",
+    "Layout: Handwritten text below the photograph",
+    "Photo/image candidate at Center of page: Black and white photo of two people standing side by side, one with face redacted, the other in a suit and tie, with a framed mirror and lamp in the background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "\"He is the boyfriend of [redacted]\"",
+    "\"We think he works for the CIA.\"",
+    "HOUSE_OVERSIGHT_000098"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Below photograph",
+      "text_as_seen": "\"He is the boyfriend of [redacted]\" \"We think he works for the CIA.\"",
+      "confidence": "high",
+      "note": "Handwritten text in blue ink, quotation marks included; part of the text redacted in the image."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "Face of person on left in photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscures the face of the person on the left."
+    },
+    {
+      "location": "Handwritten text below photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Portion of the text is blacked out (redacted) in the phrase 'He is the boyfriend of [redacted]'."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:18:50.066Z",
+    "response_id": "resp_047dbba2281b9d8d006a502c5434c08195bf8f91195753617c",
+    "raw_output_sha256": "5ee94be18e45e767fe182359738400e06238e132e19efc6093efb3fa25131afc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_047dbba2281b9d8d006a502c5434c08195bf8f91195753617c",
+    "enriched_at": "2026-07-09T23:18:50.066Z"
+  },
+  "visual_summary": "Black and white photograph of two people standing side by side, one person on the left has their face obscured by a solid black rectangle; the person on the right is wearing a suit and tie and smiling slightly. Behind them is a framed rectangular mirror and a lamp. There is handwriting in blue pen below the photograph, containing two sentences.",
+  "layout": [
+    "One full-page black and white photograph centered on the page",
+    "Handwritten text below the photograph"
+  ],
+  "handwriting": [
+    {
+      "location": "Below photograph",
+      "text_as_seen": "\"He is the boyfriend of [redacted]\" \"We think he works for the CIA.\"",
+      "confidence": "high",
+      "note": "Handwritten text in blue ink, quotation marks included; part of the text redacted in the image."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Face of person on left in photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscures the face of the person on the left."
+    },
+    {
+      "location": "Handwritten text below photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Portion of the text is blacked out (redacted) in the phrase 'He is the boyfriend of [redacted]'."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Center of page",
+      "description": "Black and white photo of two people standing side by side, one with face redacted, the other in a suit and tie, with a framed mirror and lamp in the background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

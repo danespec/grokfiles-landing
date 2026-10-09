@@ -1,0 +1,97 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 174,
+  "page_id": "page_174",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_174.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_174.ocr.txt",
+  "image_metadata": {
+    "bytes": 12640683,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "bf415ba83f0189a96fbe84e23110c1b28af89d004337144f66aef74730bb47fb"
+  },
+  "ocr_text": "re Acs eee\n‘idee Agut pace : : zs raid hen Wiese e {\ni eae q ee ve, a |\nie x eat SM eet q te Fa, tay Veormpitte Ty aie } ,\nBs ae ‘ ; > ed =f Bs ae a Rees Sec 7 |\neR  Onoey - de SSN ne\n\\ y \\\nae if S b i\na we ™ 7\n4 . . .\ntie\n| *. c }\n| |\n| . { }\n;\n| a\n|\nHOUSE_OVERSIGHT_000174\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows a person from the waist up wearing a dark suit, white shirt, and red patterned tie. The person is making a gesture with their right hand, raising the index finger. The face is completely blurred or erased, making facial features unrecognizable. A small American flag pin is visible on the left lapel of the suit jacket. The background is plain and light-colored. The image is framed with a white border, and in the bottom right corner, text reads 'HOUSE_OVERSIGHT_000174'.",
+    "Layout: single central rectangular photo",
+    "Photo/image candidate at center: Person in a suit and tie making a hand gesture with index finger raised, face blurred or erased, American flag pin on lapel."
+  ],
+  "observations": [
+    "The image shows a person from the waist up wearing a dark suit, white shirt, and red patterned tie. The person is making a gesture with their right hand, raising the index finger. The face is completely blurred or erased, making facial features unrecognizable. A small American flag pin is visible on the left lapel of the suit jacket. The background is plain and light-colored. The image is framed with a white border, and in the bottom right corner, text reads 'HOUSE_OVERSIGHT_000174'.",
+    "Layout: single central rectangular photo",
+    "Photo/image candidate at center: Person in a suit and tie making a hand gesture with index finger raised, face blurred or erased, American flag pin on lapel."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000174"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Face is completely blurred or erased, no facial features visible."
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:29:56.576Z",
+    "response_id": "resp_0cfd4f58bd15942a006a502eee77808194818d562ec64bf6a8",
+    "raw_output_sha256": "eaf031500be870914aba644bb3c7ec2463467b6af53ffc8e550deaa2c808a07e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0cfd4f58bd15942a006a502eee77808194818d562ec64bf6a8",
+    "enriched_at": "2026-07-09T23:29:56.576Z"
+  },
+  "visual_summary": "The image shows a person from the waist up wearing a dark suit, white shirt, and red patterned tie. The person is making a gesture with their right hand, raising the index finger. The face is completely blurred or erased, making facial features unrecognizable. A small American flag pin is visible on the left lapel of the suit jacket. The background is plain and light-colored. The image is framed with a white border, and in the bottom right corner, text reads 'HOUSE_OVERSIGHT_000174'.",
+  "layout": [
+    "single central rectangular photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Face is completely blurred or erased, no facial features visible."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "Person in a suit and tie making a hand gesture with index finger raised, face blurred or erased, American flag pin on lapel.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

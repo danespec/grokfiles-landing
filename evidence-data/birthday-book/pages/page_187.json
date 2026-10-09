@@ -1,0 +1,175 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 187,
+  "page_id": "page_187",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_187.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_187.ocr.txt",
+  "image_metadata": {
+    "bytes": 4513646,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5c94809e9b222520776e0a67ec9fa6bf249458bfff3819aecc88b6b2d9d8c1b3"
+  },
+  "ocr_text": "SELFIDEALS Jeffrey E. “Goats\nenor aes Cae 2 e\nsy S$ \\\\ ~ } L\nTA] ih eS ae era :\nsg , | || , DELIBERATIVE PROCESSES -j | 2 T\n' oe Eee nibs Rai 4\nO | P [mie see ae ci aie\n“2 2 oom 7 or er ee ee p | R\nO | (NC a eae key” | A\nV THE OUTER WORLD Ns\nThere are six billion intellects on Earth, but this is\nthe quickest one I’ve met (aside from Isaac Asimov);\nhe sees things differently from all the rest, asks\nquestions that no one else ever asked, and suggests\nanswers that no one would ever expect.\n‘> cc)\nc /}) rate, Had ba\nHOUSE_OVERSIGHT_000187\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page containing a diagram with labeled boxes and arrows describing mental processes under the heading 'Jeffrey E.'; includes a block of text below the diagram, and two lines of handwriting below the text, with a redacted area under the handwriting.",
+    "Layout: Centered diagram with labels and arrows",
+    "Layout: Text block under the diagram",
+    "Layout: Handwriting under the text block",
+    "Layout: Black redaction box under the handwriting",
+    "Layout: Page footer with text 'HOUSE_OVERSIGHT_000187'",
+    "Drawing candidate at center of page: Diagram with arrows and labeled sections including 'PERSONAE', 'SELF-REFLECTIONS', 'REFLECTIVE PROCESSES', 'DELIBERATIVE PROCESSES', 'REACTIVE PROCESSES', and side labels 'SELF-IDEALS', 'GOALS', 'CENSORS', 'SUPPRESSORS', 'COMMONSENSE KNOWLEDGE BASES', 'ECONOMISTS', 'REASONERS', 'SIMULATORS', 'PREDICTORS', and 'PLANNERS'. There are two vertical ovals labeled 'SENSORS' and 'MOTORS' flanking the diagram."
+  ],
+  "observations": [
+    "Page containing a diagram with labeled boxes and arrows describing mental processes under the heading 'Jeffrey E.'; includes a block of text below the diagram, and two lines of handwriting below the text, with a redacted area under the handwriting.",
+    "Layout: Centered diagram with labels and arrows",
+    "Layout: Text block under the diagram",
+    "Layout: Handwriting under the text block",
+    "Layout: Black redaction box under the handwriting",
+    "Layout: Page footer with text 'HOUSE_OVERSIGHT_000187'",
+    "Drawing candidate at center of page: Diagram with arrows and labeled sections including 'PERSONAE', 'SELF-REFLECTIONS', 'REFLECTIVE PROCESSES', 'DELIBERATIVE PROCESSES', 'REACTIVE PROCESSES', and side labels 'SELF-IDEALS', 'GOALS', 'CENSORS', 'SUPPRESSORS', 'COMMONSENSE KNOWLEDGE BASES', 'ECONOMISTS', 'REASONERS', 'SIMULATORS', 'PREDICTORS', and 'PLANNERS'. There are two vertical ovals labeled 'SENSORS' and 'MOTORS' flanking the diagram."
+  ],
+  "dates": [],
+  "document_strings": [
+    "SELF-IDEALS",
+    "Jeffrey E.",
+    "GOALS",
+    "CENSORS",
+    "PERSONAE",
+    "SUPPRESSORS",
+    "COMMONSENSE KNOWLEDGE BASES",
+    "SELF-REFLECTIONS",
+    "ECONOMISTS",
+    "REASONERS",
+    "SIMULATORS",
+    "PREDICTORS",
+    "REFLECTIVE PROCESSES",
+    "PLANNERS",
+    "DESCRIPTIONS",
+    "SENSORS",
+    "DELIBERATIVE PROCESSES",
+    "GOALS & PLANS",
+    "MOTORS",
+    "REACTIVE PROCESSES",
+    "THE OUTER WORLD",
+    "There are six billion intellects on Earth, but this is the quickest one I’ve met (aside from Isaac Asimov); he sees things differently from all the rest, asks questions that no one else ever asked, and suggests answers that no one would ever expect.",
+    "Marvin Minsky",
+    "Happy Birthday!",
+    "HOUSE_OVERSIGHT_000187"
+  ],
+  "signatures": [
+    {
+      "location": "below text block, first handwriting line",
+      "text_as_seen": "Marvin Minsky",
+      "confidence": "high",
+      "note": "Appears like a signature but is recorded as handwriting"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "below text block, above redaction box",
+      "text_as_seen": "Marvin Minsky",
+      "confidence": "high",
+      "note": "Handwritten name or signature-like text"
+    },
+    {
+      "location": "below the name 'Marvin Minsky'",
+      "text_as_seen": "Happy Birthday!",
+      "confidence": "medium",
+      "note": "Handwritten greeting in cursive"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "below handwriting, rectangular area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting text"
+    }
+  ],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:20.025Z",
+    "response_id": "resp_05f78c03fdd5ab24006a502f78ca3c8197ab479e00777732a4",
+    "raw_output_sha256": "9a2dc5ba793ea9b1e5559a4042c72a836d79c14e2de88d431676837b31016158"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05f78c03fdd5ab24006a502f78ca3c8197ab479e00777732a4",
+    "enriched_at": "2026-07-09T23:32:20.025Z"
+  },
+  "visual_summary": "Page containing a diagram with labeled boxes and arrows describing mental processes under the heading 'Jeffrey E.'; includes a block of text below the diagram, and two lines of handwriting below the text, with a redacted area under the handwriting.",
+  "layout": [
+    "Centered diagram with labels and arrows",
+    "Text block under the diagram",
+    "Handwriting under the text block",
+    "Black redaction box under the handwriting",
+    "Page footer with text 'HOUSE_OVERSIGHT_000187'"
+  ],
+  "handwriting": [
+    {
+      "location": "below text block, above redaction box",
+      "text_as_seen": "Marvin Minsky",
+      "confidence": "high",
+      "note": "Handwritten name or signature-like text"
+    },
+    {
+      "location": "below the name 'Marvin Minsky'",
+      "text_as_seen": "Happy Birthday!",
+      "confidence": "medium",
+      "note": "Handwritten greeting in cursive"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "below text block, first handwriting line",
+      "text_as_seen": "Marvin Minsky",
+      "confidence": "high",
+      "note": "Appears like a signature but is recorded as handwriting"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "below handwriting, rectangular area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting text"
+    }
+  ],
+  "drawings": [
+    {
+      "location": "center of page",
+      "description": "Diagram with arrows and labeled sections including 'PERSONAE', 'SELF-REFLECTIONS', 'REFLECTIVE PROCESSES', 'DELIBERATIVE PROCESSES', 'REACTIVE PROCESSES', and side labels 'SELF-IDEALS', 'GOALS', 'CENSORS', 'SUPPRESSORS', 'COMMONSENSE KNOWLEDGE BASES', 'ECONOMISTS', 'REASONERS', 'SIMULATORS', 'PREDICTORS', and 'PLANNERS'. There are two vertical ovals labeled 'SENSORS' and 'MOTORS' flanking the diagram.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,177 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 111,
+  "page_id": "page_111",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_111.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_111.ocr.txt",
+  "image_metadata": {
+    "bytes": 9540665,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "461ec6185846a670c8d8c7c884159ed58b36926859386b683d965db89472edfe"
+  },
+  "ocr_text": "Ti\n\nhele COMthe bf 10e. di ( Ofessedig\nhit f. Wefe Ls- | }\ntes _ th the ™ ladys i\n\n2 uS ht lens :\n\nrt a) © Nag\nTERT \"> coy)\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A childlike drawing on a white page with a black border featuring five cartoonish figures: three at the top in a row (all with sad expressions and blonde hair) and three larger figures at the bottom, two adult-sized on the left and right and one child-sized in the center. The left adult figure wears a red dress, the right adult figure wears dark clothes, and the child figure in the center wears a pink dress. Above the bottom figures, there are large, bold blue handwritten texts and black musical notes interspersed among the words. The text is in English and somewhat legible but contains spelling and grammar irregularities. The overall page looks like a playful mix of drawing and handwriting with thematic elements suggesting a wedding or family scenario.",
+    "Layout: Five small figures in a row at top",
+    "Layout: Blue handwriting and black musical notes in the upper half",
+    "Layout: Three larger figures in the lower half (two adults, one child)",
+    "Drawing candidate at Top row: Five small doll-like figures with blonde hair and sad faces, wearing colorful clothes",
+    "Drawing candidate at Bottom area: Three larger figures: left adult in red dress, right adult in dark clothing, child in pink dress with yellow crowns or bows"
+  ],
+  "observations": [
+    "A childlike drawing on a white page with a black border featuring five cartoonish figures: three at the top in a row (all with sad expressions and blonde hair) and three larger figures at the bottom, two adult-sized on the left and right and one child-sized in the center. The left adult figure wears a red dress, the right adult figure wears dark clothes, and the child figure in the center wears a pink dress. Above the bottom figures, there are large, bold blue handwritten texts and black musical notes interspersed among the words. The text is in English and somewhat legible but contains spelling and grammar irregularities. The overall page looks like a playful mix of drawing and handwriting with thematic elements suggesting a wedding or family scenario.",
+    "Layout: Five small figures in a row at top",
+    "Layout: Blue handwriting and black musical notes in the upper half",
+    "Layout: Three larger figures in the lower half (two adults, one child)",
+    "Drawing candidate at Top row: Five small doll-like figures with blonde hair and sad faces, wearing colorful clothes",
+    "Drawing candidate at Bottom area: Three larger figures: left adult in red dress, right adult in dark clothing, child in pink dress with yellow crowns or bows"
+  ],
+  "dates": [],
+  "document_strings": [
+    "here comes the bride all dressed in",
+    "white were is the grom",
+    "hes in the ladys room",
+    "what is his reminder",
+    "work on his binder",
+    "is the gl his dog"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Center top",
+      "text_as_seen": "here comes the bride all dressed in",
+      "confidence": "high",
+      "note": "Blue handwriting with musical notes interspersed"
+    },
+    {
+      "location": "Center middle",
+      "text_as_seen": "white were is the grom",
+      "confidence": "medium",
+      "note": "Blue handwriting under musical notes, spelling of 'groom' is 'grom'"
+    },
+    {
+      "location": "Center middle",
+      "text_as_seen": "hes in the ladys room",
+      "confidence": "medium",
+      "note": "Blue handwriting, some merging of words"
+    },
+    {
+      "location": "Center middle-right",
+      "text_as_seen": "what is his reminder",
+      "confidence": "medium",
+      "note": "Blue handwriting, partially obscured by drawing"
+    },
+    {
+      "location": "Center middle-right",
+      "text_as_seen": "work on his binder",
+      "confidence": "medium",
+      "note": "Blue handwriting merging with other text"
+    },
+    {
+      "location": "Center middle",
+      "text_as_seen": "is the gl his dog",
+      "confidence": "low",
+      "note": "Fragmented text, possibly incomplete or partially obscured"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Text partially obscured by drawings, causing some phrases to be incomplete or unclear"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:00.638Z",
+    "response_id": "resp_0ced9b46758d2c2c006a502cd2ddb4819789c4efd5a34e6208",
+    "raw_output_sha256": "de4f66c199a6d58153e6b2837f86c6c1897efc1a13550dad95139362454ab479"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ced9b46758d2c2c006a502cd2ddb4819789c4efd5a34e6208",
+    "enriched_at": "2026-07-09T23:21:00.638Z"
+  },
+  "visual_summary": "A childlike drawing on a white page with a black border featuring five cartoonish figures: three at the top in a row (all with sad expressions and blonde hair) and three larger figures at the bottom, two adult-sized on the left and right and one child-sized in the center. The left adult figure wears a red dress, the right adult figure wears dark clothes, and the child figure in the center wears a pink dress. Above the bottom figures, there are large, bold blue handwritten texts and black musical notes interspersed among the words. The text is in English and somewhat legible but contains spelling and grammar irregularities. The overall page looks like a playful mix of drawing and handwriting with thematic elements suggesting a wedding or family scenario.",
+  "layout": [
+    "Five small figures in a row at top",
+    "Blue handwriting and black musical notes in the upper half",
+    "Three larger figures in the lower half (two adults, one child)"
+  ],
+  "handwriting": [
+    {
+      "location": "Center top",
+      "text_as_seen": "here comes the bride all dressed in",
+      "confidence": "high",
+      "note": "Blue handwriting with musical notes interspersed"
+    },
+    {
+      "location": "Center middle",
+      "text_as_seen": "white were is the grom",
+      "confidence": "medium",
+      "note": "Blue handwriting under musical notes, spelling of 'groom' is 'grom'"
+    },
+    {
+      "location": "Center middle",
+      "text_as_seen": "hes in the ladys room",
+      "confidence": "medium",
+      "note": "Blue handwriting, some merging of words"
+    },
+    {
+      "location": "Center middle-right",
+      "text_as_seen": "what is his reminder",
+      "confidence": "medium",
+      "note": "Blue handwriting, partially obscured by drawing"
+    },
+    {
+      "location": "Center middle-right",
+      "text_as_seen": "work on his binder",
+      "confidence": "medium",
+      "note": "Blue handwriting merging with other text"
+    },
+    {
+      "location": "Center middle",
+      "text_as_seen": "is the gl his dog",
+      "confidence": "low",
+      "note": "Fragmented text, possibly incomplete or partially obscured"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "Top row",
+      "description": "Five small doll-like figures with blonde hair and sad faces, wearing colorful clothes",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom area",
+      "description": "Three larger figures: left adult in red dress, right adult in dark clothing, child in pink dress with yellow crowns or bows",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

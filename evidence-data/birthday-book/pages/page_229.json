@@ -1,0 +1,86 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 229,
+  "page_id": "page_229",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_229.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_229.ocr.txt",
+  "image_metadata": {
+    "bytes": 16004912,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "230895d1061a983f478982425edacc0c15fab5fc28dba1905aecb96ae6ed4d25"
+  },
+  "ocr_text": "eee\n: 74\nA\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "Photo of two people from the waist down, walking close side by side with arms around each other. Below the photo, the text 'Thank You!!!' in blue font on a dark background.",
+    "Layout: photo top two-thirds",
+    "Layout: text at bottom",
+    "Photo/image candidate at top two-thirds: Photo of two people from waist down, one wearing blue clothing and the other black top with blue jeans, outdoors on a street."
+  ],
+  "observations": [
+    "Photo of two people from the waist down, walking close side by side with arms around each other. Below the photo, the text 'Thank You!!!' in blue font on a dark background.",
+    "Layout: photo top two-thirds",
+    "Layout: text at bottom",
+    "Photo/image candidate at top two-thirds: Photo of two people from waist down, one wearing blue clothing and the other black top with blue jeans, outdoors on a street."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Thank You!!!"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:58.896Z",
+    "response_id": "resp_059f2deb3d70d8ab006a50310c17508197b0c42af33aa71fae",
+    "raw_output_sha256": "0cef097c345602e28a4f4289e760751836f0ab5a53381d5cc607b72447956b7d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_059f2deb3d70d8ab006a50310c17508197b0c42af33aa71fae",
+    "enriched_at": "2026-07-09T23:38:58.897Z"
+  },
+  "visual_summary": "Photo of two people from the waist down, walking close side by side with arms around each other. Below the photo, the text 'Thank You!!!' in blue font on a dark background.",
+  "layout": [
+    "photo top two-thirds",
+    "text at bottom"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top two-thirds",
+      "description": "Photo of two people from waist down, one wearing blue clothing and the other black top with blue jeans, outdoors on a street.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

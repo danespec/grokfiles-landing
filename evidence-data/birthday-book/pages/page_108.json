@@ -1,0 +1,90 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 108,
+  "page_id": "page_108",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_108.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_108.ocr.txt",
+  "image_metadata": {
+    "bytes": 83580,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "dd2950954f2c43d419faa99305137dc9c797468594734863d822a2c336f95fa8"
+  },
+  "ocr_text": "‘i a é = Ce... : ; sg See = eee a\neee i aaa\nRd Ese eg pee SE es Sota om eet\nHOUSE_OVERSIGHT_000108\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page consists of a black background with the word 'H L D R E N' written in large, different colored letters horizontally across the center. The letters vary in texture and shading, indicating different materials or styles of lettering.",
+    "Layout: single centered text line"
+  ],
+  "observations": [
+    "The page consists of a black background with the word 'H L D R E N' written in large, different colored letters horizontally across the center. The letters vary in texture and shading, indicating different materials or styles of lettering.",
+    "Layout: single centered text line"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000108"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center",
+      "text_as_seen": "H L D R E N",
+      "confidence": "high",
+      "note": "Handwritten or stylized text with varied shading and coloring"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "The initial letter 'C' of the word 'CHILDREN' is missing or obscured, leaving the word incomplete as 'H LDREN'."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:20:28.470Z",
+    "response_id": "resp_0bd1656ad65865cb006a502cb8ad2481979e1dacd29d927467",
+    "raw_output_sha256": "3dc783d914545bffb1adf0c0aac5113bf3b3c8ea4e3b08eef61f65d886a3e399"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bd1656ad65865cb006a502cb8ad2481979e1dacd29d927467",
+    "enriched_at": "2026-07-09T23:20:28.470Z"
+  },
+  "visual_summary": "The page consists of a black background with the word 'H L D R E N' written in large, different colored letters horizontally across the center. The letters vary in texture and shading, indicating different materials or styles of lettering.",
+  "layout": [
+    "single centered text line"
+  ],
+  "handwriting": [
+    {
+      "location": "center",
+      "text_as_seen": "H L D R E N",
+      "confidence": "high",
+      "note": "Handwritten or stylized text with varied shading and coloring"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

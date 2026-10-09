@@ -1,0 +1,109 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 9,
+  "page_id": "page_009",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_009.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_009.ocr.txt",
+  "image_metadata": {
+    "bytes": 11758351,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ef4ffa6c0f36acac9223f12b5b9ecb8183204a420bf65166ffc4abcec321bc4e"
+  },
+  "ocr_text": "—————— —. Sa\nae ot @ % rt ean Bi\n; a ; f eas:\n; N° ‘ ‘ bas =\nJUL - 57\nHOUSE_OVERSIGHT_000009\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A black-and-white photo of three young boys standing in front of a brick wall. Below the photo is a handwritten note and a date stamp.",
+    "Layout: photo top center",
+    "Layout: date stamp below photo",
+    "Layout: handwritten text below date stamp",
+    "Photo/image candidate at top center: Black-and-white photo of three young boys standing in front of a brick wall."
+  ],
+  "observations": [
+    "A black-and-white photo of three young boys standing in front of a brick wall. Below the photo is a handwritten note and a date stamp.",
+    "Layout: photo top center",
+    "Layout: date stamp below photo",
+    "Layout: handwritten text below date stamp",
+    "Photo/image candidate at top center: Black-and-white photo of three young boys standing in front of a brick wall."
+  ],
+  "dates": [
+    "JUL - 57"
+  ],
+  "document_strings": [
+    "JUL - 57",
+    "HOUSE_OVERSIGHT_000009"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below photo, centered",
+      "text_as_seen": "The first surprised?",
+      "confidence": "medium",
+      "note": "Handwritten cursive text, possibly a question."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:03:17.088Z",
+    "response_id": "resp_09a05838570eba1f006a5028af92cc81969b67a64232780e78",
+    "raw_output_sha256": "729f2dc32b0269bd350f116b33ae4de692b08b6a9a52634a27cd6213ab7d2494"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09a05838570eba1f006a5028af92cc81969b67a64232780e78",
+    "enriched_at": "2026-07-09T23:03:17.088Z"
+  },
+  "visual_summary": "A black-and-white photo of three young boys standing in front of a brick wall. Below the photo is a handwritten note and a date stamp.",
+  "layout": [
+    "photo top center",
+    "date stamp below photo",
+    "handwritten text below date stamp"
+  ],
+  "handwriting": [
+    {
+      "location": "below photo, centered",
+      "text_as_seen": "The first surprised?",
+      "confidence": "medium",
+      "note": "Handwritten cursive text, possibly a question."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Black-and-white photo of three young boys standing in front of a brick wall.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "JUL - 57"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 10,
+  "page_id": "page_010",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_010.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_010.ocr.txt",
+  "image_metadata": {
+    "bytes": 7186455,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d87c8fee2ba3dc78352d66cbfdd3ed55bee685e3f0a7d0fa0bc3a38f604ccac0"
+  },
+  "ocr_text": "| ee\n) 4 ee\nHOUSE_OVERSIGHT_000010\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "Black-and-white photo of a person sitting, wearing a light-colored blazer over a dark shirt, with one hand near their face and holding a rolled-up document in the other. Part of another person is visible on the right edge, partially cut off. Below the photo is a handwritten note.",
+    "Layout: photo top center",
+    "Layout: handwritten text below photo",
+    "Layout: white background",
+    "Photo/image candidate at top center: Black-and-white photo of a person seated with a thoughtful pose, holding a rolled up paper, with another partially visible person on the right edge."
+  ],
+  "observations": [
+    "Black-and-white photo of a person sitting, wearing a light-colored blazer over a dark shirt, with one hand near their face and holding a rolled-up document in the other. Part of another person is visible on the right edge, partially cut off. Below the photo is a handwritten note.",
+    "Layout: photo top center",
+    "Layout: handwritten text below photo",
+    "Layout: white background",
+    "Photo/image candidate at top center: Black-and-white photo of a person seated with a thoughtful pose, holding a rolled up paper, with another partially visible person on the right edge."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000010"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below photo center",
+      "text_as_seen": "As if were non",
+      "confidence": "medium",
+      "note": "Cursive handwriting, some uncertainty in last word"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:03:24.808Z",
+    "response_id": "resp_027d5376d22dd6f4006a5028b760788195aac8ab63d0c4d7ae",
+    "raw_output_sha256": "2e65c1f044719a27a1b98ca6ac96d0149af66dd732d1b488ef35e35b80637d9a"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_027d5376d22dd6f4006a5028b760788195aac8ab63d0c4d7ae",
+    "enriched_at": "2026-07-09T23:03:24.808Z"
+  },
+  "visual_summary": "Black-and-white photo of a person sitting, wearing a light-colored blazer over a dark shirt, with one hand near their face and holding a rolled-up document in the other. Part of another person is visible on the right edge, partially cut off. Below the photo is a handwritten note.",
+  "layout": [
+    "photo top center",
+    "handwritten text below photo",
+    "white background"
+  ],
+  "handwriting": [
+    {
+      "location": "below photo center",
+      "text_as_seen": "As if were non",
+      "confidence": "medium",
+      "note": "Cursive handwriting, some uncertainty in last word"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Black-and-white photo of a person seated with a thoughtful pose, holding a rolled up paper, with another partially visible person on the right edge.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

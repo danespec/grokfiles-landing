@@ -1,0 +1,17 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "investigation": "sascha-riley-claims-evidence-audit",
+  "published": "2026-10-06",
+  "editorial_method": "Claim -> Source -> Bias -> Silence -> Confidence",
+  "boundary": "This manifest distinguishes biographical support from corroboration of alleged abuse. Unsupported does not mean knowingly fabricated.",
+  "sources": [
+    {"id":"RILEY-SRC-001","class":"primary-testimony-publication","title":"Don't Worry, Boys are Hard to Find","publisher":"Lisa Noelle Voldeng / Substack","url":"https://lisevoldeng.substack.com/p/dont-worry-boys-are-hard-to-find","use":"Original public allegation source; establishes what Riley said, not that the events occurred."},
+    {"id":"RILEY-SRC-002","class":"records-request-update","title":"FOIA Request Update: U.S. Army Investigations Do Not Substantiate William Sascha Riley's Claims","publisher":"Lisa Noelle Voldeng / Substack","date":"2026-06-19","url":"https://lisevoldeng.substack.com/p/foia-request-update-us-army-investigations","use":"Reproduces Army CID no-records language after initial and expanded searches; negative finding for the specific Fort Carson CSAM/court-martial lane."},
+    {"id":"RILEY-SRC-003","class":"presidential-diary","title":"Diary Entry - 09/24/1985","publisher":"Ronald Reagan Presidential Foundation & Institute","date":"1985-09-24","url":"https://www.reaganfoundation.org/ronald-reagan/white-house-diaries/diary-entry-09241985","use":"Establishes Knoxville-to-Athens day-trip chronology and return to Washington; contradicts GAH's earlier overnight-perimeter reconstruction."},
+    {"id":"RILEY-SRC-004","class":"aviation-profile","title":"Bill Riley Receives Master Pilot Award","publisher":"Air Evac Lifeteam / At a Moment's Notice","date":"2020-11-11","url":"https://www.atamomentsnotice.com/all-stories/bill-riley-receives-master-pilot-award","use":"Documents one Bill Riley aviation career; does not itself prove that the subject is William Kyle Riley."},
+    {"id":"RILEY-SRC-005","class":"federal-court-opinion","title":"Holiday Inns, Inc. v. Trump, 617 F. Supp. 1443 (D.N.J. 1985)","publisher":"OpenJurist","date":"1985-09-23","url":"https://openjurist.org/617/fsupp/1443/holiday-inns-inc-v-trump-2245697","use":"Documents the 1985 Atlantic City dispute involving Tennessee-based Holiday Inns; business context, not proof of a Tennessee trip."},
+    {"id":"RILEY-SRC-006","class":"independent-reporting","title":"The conspiratorial left needed proof Trump is a monster. They settled on Sascha Riley.","publisher":"MS NOW / Brandy Zadrozny","date":"2026-04-09","url":"https://www.ms.now/news/sascha-riley-trump-epstein-conspiracy-theory","use":"Independent reporting based on an in-person Riley interview and reporting around family/background claims."},
+    {"id":"RILEY-SRC-007","class":"fact-check","title":"Snopes review of the Trump/Epstein/Sascha Riley claims","publisher":"Snopes","date":"2026-01-21","url":"https://www.snopes.com/news/2026/01/21/trump-epstein-sascha-riley/","use":"External fact-check reference; GAH does not substitute it for primary receipts."}
+  ],
+  "working_archive_note": "GAH also used its January-February 2026 internal research archives to reconstruct leads pursued, corrections made, and negative findings. Those private conversation archives are not published as source objects."
+}

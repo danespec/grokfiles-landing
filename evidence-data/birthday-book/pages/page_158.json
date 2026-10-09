@@ -1,0 +1,116 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 158,
+  "page_id": "page_158",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_158.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_158.ocr.txt",
+  "image_metadata": {
+    "bytes": 322498,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "44dcf9d9f770decb35eea29d1bcb79fe4f82cd18764e86d5bb77d2356d798c6d"
+  },
+  "ocr_text": "sseaugaey f fa 4 , fie Po j ; f,\nYou (ee Werte, , tA fillint fabs Ad - fo“ fa Lhe,\nA mi f ra |\n/ ’ , v fy 2\nof digit fer path, Macogi AVM, senting\n| / v / if\nWie of oft Avs cbt f WUE: fidbehck Ad ibid SRE :\n» f . Ja . yD ofo < # a i yy ipo y} ° & ry a fo\nfers plapight, Samuel feehelf-~\"\" F\nfu! ; tif VE Vitis AS phe pe Ae 7 a va\n| é : é ” é .\nho we to fo howe  ftpgn Abc FE CW |\ngale HOSE of dys petit fost ALCHE\nrear, ee neg t € Ay Cheeta one § |\nft Efe hoe Laemmet 4. Massey ‘ JO j hd oped o 7 ° i\nLhe fhe - Seekel! uias wee Hp RE” -\nLR Mere ECO and Mehtvee, a. leper f wa\nf / f J / ee A ; f afl | ad A . | te (hed E ae\n/ufaned athe At nit[$ fe Adil eae ansee de\noy 4 ¢ Pe be peat trv 2 perf | fs |\n_ He A Upbeat SVL . fs sf @QCIIAT 3 Vlas # fhe;\n/ a fe f pg tae of AL e. ged 7\nwas 7 nits | fave CVO Oe |\nff uv we te Ma wnsye « seedy WA Ue\nMYO pom fil Wie , Ip fhe wis WY L\n| “4 7 — : ‘4 ch bo. “fh 7 if aId f- ARLE ‘a 5\n— efpeng, | WE YO) A ; a wey, vaunfller\n/? 7, . 4 fy Py 7 afr jd § FH anges\né hfe £. ol ft al) fe f WED Mb» e / we A ° / /\nPE og Cohiba. OG 4s\n| yeas ee ee atv Are , pf ~ nop pi yee f wee y rh fs 4,\nmed / with pre hMaak Ph. ) o pOCGLT HW . “_— . Pv oh pf /\nY Jat « Aa wit . tA at” ar At LE a ; f fel sept), 7 eid D ‘ ; 1,\nfe ~ AgCES SAO IT oe af fe é may Cy |\nbe (Westjok- Jagqare\nHOUSE_OVERSIGHT_000158\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a handwritten note covering most of the page. A signature-like document string reads Joseph Pagano. The handwriting is fairly clear but with some minor variations in legibility. The note discusses a story about Samuel Beckett, a playwright, and contains sentiments about individuality, public recognition, and birthday wishes.",
+    "Layout: handwritten text covering majority of the page",
+    "Layout: signature at bottom right"
+  ],
+  "observations": [
+    "Page contains a handwritten note covering most of the page. A signature-like document string reads Joseph Pagano. The handwriting is fairly clear but with some minor variations in legibility. The note discusses a story about Samuel Beckett, a playwright, and contains sentiments about individuality, public recognition, and birthday wishes.",
+    "Layout: handwritten text covering majority of the page",
+    "Layout: signature at bottom right"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Joseph Pagano",
+    "Samuel Beckett",
+    "Nobel Prize",
+    "Happy Birthday"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Joseph Pagano",
+      "confidence": "high",
+      "note": "Signature-like text at bottom right corner."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "full page",
+      "text_as_seen": "You centered individuality, your lack of desire for public recognition reminds me of a story I once heard about the Irish playwright, Samuel Beckett - he spent his life avoiding the public eye. None was a greater sense of displeasure than recognition from the teeming masses. So, the story goes like this - Beckett was with his mistress in Morocco and received a telegram from Ireland with the news he had been awarded the Nobel Prize. His reaction? \"This is the worst news I have ever received.\" If more from the wise, to the wise, is sufficient. Jeffrey, I love you as a brilliant and unpredictable friend. May you always maintain your innate solitude. I wish you health, stealth & continued wealth, not necessarily in that order. Happy Birthday! Joseph Pagano",
+      "confidence": "medium",
+      "note": "Text is handwritten cursive, some words approximated due to handwriting style."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Some letters and words are difficult to decipher with full confidence due to cursive handwriting style."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:27:41.919Z",
+    "response_id": "resp_021d70e511b37a6c006a502e6818188197afc6c75a895fe0d1",
+    "raw_output_sha256": "92ccf08c12d2df236555934506ce20f15768684e11b260f1c8463a2a453dfd64"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_021d70e511b37a6c006a502e6818188197afc6c75a895fe0d1",
+    "enriched_at": "2026-07-09T23:27:41.919Z"
+  },
+  "visual_summary": "Page contains a handwritten note covering most of the page. A signature-like document string reads Joseph Pagano. The handwriting is fairly clear but with some minor variations in legibility. The note discusses a story about Samuel Beckett, a playwright, and contains sentiments about individuality, public recognition, and birthday wishes.",
+  "layout": [
+    "handwritten text covering majority of the page",
+    "signature at bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "full page",
+      "text_as_seen": "You centered individuality, your lack of desire for public recognition reminds me of a story I once heard about the Irish playwright, Samuel Beckett - he spent his life avoiding the public eye. None was a greater sense of displeasure than recognition from the teeming masses. So, the story goes like this - Beckett was with his mistress in Morocco and received a telegram from Ireland with the news he had been awarded the Nobel Prize. His reaction? \"This is the worst news I have ever received.\" If more from the wise, to the wise, is sufficient. Jeffrey, I love you as a brilliant and unpredictable friend. May you always maintain your innate solitude. I wish you health, stealth & continued wealth, not necessarily in that order. Happy Birthday! Joseph Pagano",
+      "confidence": "medium",
+      "note": "Text is handwritten cursive, some words approximated due to handwriting style."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Joseph Pagano",
+      "confidence": "high",
+      "note": "Signature-like text at bottom right corner."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium",
+  "identity_cleanup": {
+    "task_id": "TASK-BIRTHDAY-BOOK-VISION-CLEANUP-001",
+    "cleaned_at": "2026-07-09T23:44:32.267Z",
+    "note": "Neutralized unsupported identity/authorship wording while preserving OCR text and document-string fields."
+  }
+}

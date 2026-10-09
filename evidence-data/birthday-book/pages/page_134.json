@@ -1,0 +1,187 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 134,
+  "page_id": "page_134",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_134.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_134.ocr.txt",
+  "image_metadata": {
+    "bytes": 390431,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "a08233a847f9de48bade42207022efb5386a00dea057f92661f3e15c2b07964d"
+  },
+  "ocr_text": "lg sted we (ouse a scraorer what te mele o€ ont |\nCO ALS S Sou |\naul Se gGae ne SOME MEO poclersiBle claws € e |\nvesy coucpueherske werds: | | :\nThe analysis: A fiercely intelligent, highly complex individual for whom the a\naccumulation of great wealth is no problem. Prefers working in private, or\nbetter yet, utter secrecy. Emotionally complicated: Can run hot and cold, can P\nlose interest in the blink of an eye, professes to be “available” but much goes\non behind the scenes and he decides what he gives. Extensive 4\nscientific/humanitarian/philanthropic strength and cointerest, which if\nharnessed and developed properly could have a significant impact (as in :\ntangibly changing the world for the better) and as an added bonus, beat the |\n| current masters at their own game.\n| Aida Kad oer? ancecls fo (G22 ew ister a ave. |\n* z\n\n7 heel ew eacldsl, (,\n\n: ( ave told fou by @€ere beet: eer “CUceaXs (fP, eG (\n\n‘ ; 0 you. _ dan 2 eed wy Aspects & Angular Separations :\n\nrece # SS ee TD DOU le I\n\n{ ri nate S°t a panera Oxo ¥ h YY BB wm mw |\n\nee : esses! >.\n\n| Hien | eepededto Hr Fs c slepzesrets|o. |\n\ni ra ae ores 3 | |e : cae 087° pra gos?| 117°] i §\n\n: o cAW 1°01's ES ' yf ge | ast | ao st | iv | a | 55° | oat | 5\n\n\\ Uae eat [Ge had to [es was 9 |S Ne gsi a9\" | 118°] t49°| 195° | 023° boas? fot] |\n\n“| h . f ROA fae! a 04°49 ss | ar | sot | so\" | os 438\" | 54' | 16 | 55\" | . 4\nH q o 49493 . $ $ é5°f isee| 119° a Be a r) a a :\n\n: ave sone adhuboral gen Eee) |e eS vai elo oe]\n\npr Powe ae] | bea SETS) S (S12) > |\n\n: ; Ih 3247's ty [oa SsalAs [As |Xa oor\" | ose fasz\" | 1s7°fas7*| if\nCeo caer aeage . 05°46, 05°58 04°01] 0OrCG 04°32 45! | o4t a | .\n\n3 ( hae oe (s [> ep sSceuned) THE joao y Pee lest INGA woo\" [ose Tiss] qs\n| a acer . a 034 te food ar lor] i\n\n: Hat ox AS (Qo. er Bay a8 =a P . + Pad \"Bk eo co oas° Pol |\n24 sass & one , Ogg Ne oe a |\n\nPek to ted abectas. [2 | Beer Ne\n: 3 5850's | ‘ aia 08°Ss 01°38 o4e4 af\n| : | ooy 8° 20's 2 5 xe ~ - ra ~\nP Fane and dlougess a* bX ie ee: eee co [ost 7\n‘ . : DOs e eT 4h YY EB Me\n+her baeGts au dd. Asses 5 Ca RS Se\nPp (Ag : Prose] 60] iets\nka os oOuLone whe has ma “Tf <Joas-og|osraafesraujorcanl - | | Tofofels|atalnis[vlelalielal 2) |\n: c | a| 20-0 arerloeranjoron| ve] [2[9|5)<]a]o|0)0) ]o|a/al¢ [> :\n\nB eS tH Same bearQens, alesoar|arcojr-co seve} 16) 3 ]%fa12)0|3) 43 I sa) a\n: 1 an xiifo|2}/sia}s141]2]1)2,1;9 S47 :\n4 Lo i. ; i | | I i\n7 leo. | Et HH io\na zi4[8lelete- 2 2 8:3! 31476 eal\n\nHOUSE_OVERSIGHT_000134\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains typed blocks of text, a handwritten note in black ink, and a large table with columns and rows showing angular separations and other numerical data. The top half has a typed text block analyzing a complex individual, with consistent, typed fonts. Below that is a handwritten passage referencing incomprehensible charts and words, written in cursive style. The right side is dominated by a detailed table labeled 'Aspects & Angular Separations' containing symbols, numbers, and letters in a grid format. Additional smaller tables and numeric data appear at the bottom right. The page number '134' is printed in the lower right corner.",
+    "Layout: handwritten note at top left",
+    "Layout: typed text block below handwritten note",
+    "Layout: large detailed tabular data on right side",
+    "Layout: smaller tables at bottom right"
+  ],
+  "observations": [
+    "The page contains typed blocks of text, a handwritten note in black ink, and a large table with columns and rows showing angular separations and other numerical data. The top half has a typed text block analyzing a complex individual, with consistent, typed fonts. Below that is a handwritten passage referencing incomprehensible charts and words, written in cursive style. The right side is dominated by a detailed table labeled 'Aspects & Angular Separations' containing symbols, numbers, and letters in a grid format. Additional smaller tables and numeric data appear at the bottom right. The page number '134' is printed in the lower right corner.",
+    "Layout: handwritten note at top left",
+    "Layout: typed text block below handwritten note",
+    "Layout: large detailed tabular data on right side",
+    "Layout: smaller tables at bottom right"
+  ],
+  "dates": [
+    "Jan 20, 1953",
+    "12:00:00 PM EST"
+  ],
+  "document_strings": [
+    "The analysis: A fiercely intelligent, highly complex individual for whom the accumulation of great wealth is no problem. Prefers working in private, or better yet, utter secrecy. Emotionally complicated: Can run hot and cold, can lose interest in the blink of an eye, professes to be “available” but much goes on behind the scenes and he decides what he gives. Extensive scientific/humanitarian/philanthropic strength and cointerest, which if harnessed and developed properly could have a significant impact (as in tangibly changing the world for the better) and as an added bonus, beat the current masters at their own game.",
+    "Aspects & Angular Separations",
+    "Jeffrey",
+    "Jan 20, 1953",
+    "Coney Island, NY",
+    "ZONE: +05:00",
+    "07°",
+    "078°",
+    "023°",
+    "024°",
+    "30°",
+    "163°",
+    "095°",
+    "165°",
+    "131°",
+    "057°",
+    "071°",
+    "038°",
+    "16°",
+    "54°",
+    "43°",
+    "38°",
+    "45°",
+    "33°",
+    "55°",
+    "36°",
+    "58°",
+    "12°",
+    "008°",
+    "046°",
+    "045°",
+    "101°",
+    "093°",
+    "096°",
+    "157°",
+    "012°",
+    "001°",
+    "108°",
+    "39°",
+    "31°",
+    "17°",
+    "80°",
+    "40°",
+    "42°",
+    "29°"
+  ],
+  "signatures": [
+    {
+      "location": "bottom left corner in handwriting",
+      "text_as_seen": "Henry",
+      "confidence": "high",
+      "note": "Signature-like handwritten text."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top half, above typed text block",
+      "text_as_seen": "I asked my house astrologer what to make of you and she gave me some incomprehensible charts + some very comprehensible words:",
+      "confidence": "high",
+      "note": "Handwritten cursive text, fairly legible."
+    },
+    {
+      "location": "below typed text block",
+      "text_as_seen": "I liked the part that suggested that you didn't know how much you liked how distant you are. I have told you before that our friendship, which I greatly enjoy and from which I have learned more than I expected to at this time of my life, had to have some additional goal for you.",
+      "confidence": "medium",
+      "note": "Handwritten cursive, some words less clear."
+    },
+    {
+      "location": "bottom left quadrant, continuing handwritten note",
+      "text_as_seen": "I have always assumed that you would one day want to talk about distance and closeness and their benefits and dissatisfaction with someone who has many of the same burdens. I'm ready when you are. Henry",
+      "confidence": "medium",
+      "note": "Handwritten cursive, signature included."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:24:18.085Z",
+    "response_id": "resp_0ee67809ef0f2c72006a502d95dc788195a6afb981a709fb57",
+    "raw_output_sha256": "a4ebf6070a7e90937bc6269fbbdac12c2ea830b9bb3203c89321e4cb4c653b21"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ee67809ef0f2c72006a502d95dc788195a6afb981a709fb57",
+    "enriched_at": "2026-07-09T23:24:18.085Z"
+  },
+  "visual_summary": "The page contains typed blocks of text, a handwritten note in black ink, and a large table with columns and rows showing angular separations and other numerical data. The top half has a typed text block analyzing a complex individual, with consistent, typed fonts. Below that is a handwritten passage referencing incomprehensible charts and words, written in cursive style. The right side is dominated by a detailed table labeled 'Aspects & Angular Separations' containing symbols, numbers, and letters in a grid format. Additional smaller tables and numeric data appear at the bottom right. The page number '134' is printed in the lower right corner.",
+  "layout": [
+    "handwritten note at top left",
+    "typed text block below handwritten note",
+    "large detailed tabular data on right side",
+    "smaller tables at bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top half, above typed text block",
+      "text_as_seen": "I asked my house astrologer what to make of you and she gave me some incomprehensible charts + some very comprehensible words:",
+      "confidence": "high",
+      "note": "Handwritten cursive text, fairly legible."
+    },
+    {
+      "location": "below typed text block",
+      "text_as_seen": "I liked the part that suggested that you didn't know how much you liked how distant you are. I have told you before that our friendship, which I greatly enjoy and from which I have learned more than I expected to at this time of my life, had to have some additional goal for you.",
+      "confidence": "medium",
+      "note": "Handwritten cursive, some words less clear."
+    },
+    {
+      "location": "bottom left quadrant, continuing handwritten note",
+      "text_as_seen": "I have always assumed that you would one day want to talk about distance and closeness and their benefits and dissatisfaction with someone who has many of the same burdens. I'm ready when you are. Henry",
+      "confidence": "medium",
+      "note": "Handwritten cursive, signature included."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom left corner in handwriting",
+      "text_as_seen": "Henry",
+      "confidence": "high",
+      "note": "Signature-like handwritten text."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Jan 20, 1953",
+    "12:00:00 PM EST"
+  ],
+  "confidence": "high"
+}

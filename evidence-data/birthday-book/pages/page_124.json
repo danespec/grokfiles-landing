@@ -1,0 +1,351 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 124,
+  "page_id": "page_124",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_124.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_124.ocr.txt",
+  "image_metadata": {
+    "bytes": 2889190,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "aba575c8c3452b51f6b9851c95e7b4398716c2be86c477c7722c09b34cb50bfb"
+  },
+  "ocr_text": "AO is He worl jreahfal rue ber , ZL, ”\nDe rok tosh le ke joe - oo when = * : _\nat jos\nDP i ( | ?\n!\nr Yt | wn\" 2 eff <a Ae i\nb* F / wee a/ : a= o* we\np ye : S) Ng\na ne ast *\\\n7 { om 24 phate @ AS\nHed” a: oy y \\ |\nba” Ao\ni To L, (? A\\ -\n+ Av abort weet be phen ger 7 b Te Myx\nHOUSE_OVERSIGHT_000124\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains handwritten mathematical notes, equations, and annotations. Names of historical mathematicians (Euclid, Archimede, Epstein, Pythagoras, Brunel) are written diagonally in large, yellow-highlighted letters across the page. Various mathematical expressions, inequalities, and symbols are written throughout. There are two blue circled numbers on the right side, '+10' and '10+15'. The text is predominantly pencil-written with mathematical and numeric content scattered across the page.",
+    "Layout: Handwritten text at top centered",
+    "Layout: Large yellow-highlighted diagonal names spaced across page",
+    "Layout: Mathematical expressions and annotations scattered throughout",
+    "Layout: Two blue circled numbers on right side",
+    "Layout: Handwritten notes at bottom"
+  ],
+  "observations": [
+    "The page contains handwritten mathematical notes, equations, and annotations. Names of historical mathematicians (Euclid, Archimede, Epstein, Pythagoras, Brunel) are written diagonally in large, yellow-highlighted letters across the page. Various mathematical expressions, inequalities, and symbols are written throughout. There are two blue circled numbers on the right side, '+10' and '10+15'. The text is predominantly pencil-written with mathematical and numeric content scattered across the page.",
+    "Layout: Handwritten text at top centered",
+    "Layout: Large yellow-highlighted diagonal names spaced across page",
+    "Layout: Mathematical expressions and annotations scattered throughout",
+    "Layout: Two blue circled numbers on right side",
+    "Layout: Handwritten notes at bottom"
+  ],
+  "dates": [
+    "10",
+    "15"
+  ],
+  "document_strings": [
+    "Euclid",
+    "ARCHIMEDE",
+    "EPSTEIN",
+    "PYTHAGORAS",
+    "BRUNEL",
+    "+10",
+    "10+15",
+    "perfect number",
+    "15",
+    "6",
+    "28",
+    "496",
+    "8128",
+    "ln e ((√64 x 2 x 82 x)(b - 5 / 19.14) - 15)",
+    "10 + 10/2 = d ; ln = d."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "10 is the most beautiful number.",
+      "confidence": "high",
+      "note": "Handwritten sentence."
+    },
+    {
+      "location": "top center below previous text",
+      "text_as_seen": "Do not rush to be 100 years old.",
+      "confidence": "high",
+      "note": "Handwritten sentence."
+    },
+    {
+      "location": "top center below previous text",
+      "text_as_seen": "it contains the first few integers",
+      "confidence": "medium",
+      "note": "Handwritten and partly faint."
+    },
+    {
+      "location": "mid left",
+      "text_as_seen": "5 x 10 to 2",
+      "confidence": "medium",
+      "note": "Mathematical notation, '10' is superscripted."
+    },
+    {
+      "location": "upper middle",
+      "text_as_seen": "10 = bn",
+      "confidence": "high",
+      "note": "Mathematical equation."
+    },
+    {
+      "location": "upper middle below previous",
+      "text_as_seen": "10 x 5 = y",
+      "confidence": "high",
+      "note": "Mathematical equation."
+    },
+    {
+      "location": "upper middle below previous",
+      "text_as_seen": "2n + 4/2",
+      "confidence": "high",
+      "note": "Mathematical notation."
+    },
+    {
+      "location": "center right",
+      "text_as_seen": "2n + 2n x 2/4 = d",
+      "confidence": "high",
+      "note": "Mathematical equation with fraction."
+    },
+    {
+      "location": "center right below previous",
+      "text_as_seen": "perfect number",
+      "confidence": "high",
+      "note": "Annotation near mathematical notation."
+    },
+    {
+      "location": "right middle below previous",
+      "text_as_seen": "15",
+      "confidence": "high",
+      "note": "Number circled and connected to previous annotation."
+    },
+    {
+      "location": "right middle below previous",
+      "text_as_seen": "6 28 496 8128",
+      "confidence": "high",
+      "note": "Sequence of numbers listed vertically."
+    },
+    {
+      "location": "mid left below previous text",
+      "text_as_seen": "x > y d > y",
+      "confidence": "high",
+      "note": "Inequalities."
+    },
+    {
+      "location": "center lower",
+      "text_as_seen": "bn + 5/2 = d",
+      "confidence": "medium",
+      "note": "Mathematical formula, some parts less clear."
+    },
+    {
+      "location": "center lower below previous",
+      "text_as_seen": "7 bn x 2/100 = d",
+      "confidence": "medium",
+      "note": "Equation, some parts crossed out and overwritten."
+    },
+    {
+      "location": "center lower",
+      "text_as_seen": "y = g > bn + bn/2",
+      "confidence": "medium",
+      "note": "Formula with inequalities."
+    },
+    {
+      "location": "center lower below previous",
+      "text_as_seen": "y = g + b n + 10",
+      "confidence": "medium",
+      "note": "Equation."
+    },
+    {
+      "location": "center lower",
+      "text_as_seen": "(y/7) > 7 bn < bn / 2 = xc < y = 15",
+      "confidence": "medium",
+      "note": "Complex expression with inequalities."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "ln e ((√64 x 2 x 82 x)(b - 5 / 19.14) - 15)",
+      "confidence": "medium",
+      "note": "Complex handwritten logarithmic expression inside an oval."
+    },
+    {
+      "location": "bottom center below previous",
+      "text_as_seen": "10 + 10/2 = d ; ln = d.",
+      "confidence": "medium",
+      "note": "Equation with semicolon."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "d should never be > than get % to J @ Any x",
+      "confidence": "low",
+      "note": "Handwritten note with possible unclear characters."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some handwriting and mathematical notations are partially faint or overwritten leading to some uncertainty in reading."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:54.299Z",
+    "response_id": "resp_077bd79a5be250f1006a502d431ec48194a66afa1a619c5325",
+    "raw_output_sha256": "aad8aaa46abc2698a67057b921b5baee8af962948c7a1fd298a6779c02b700bb"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_077bd79a5be250f1006a502d431ec48194a66afa1a619c5325",
+    "enriched_at": "2026-07-09T23:22:54.299Z"
+  },
+  "visual_summary": "The page contains handwritten mathematical notes, equations, and annotations. Names of historical mathematicians (Euclid, Archimede, Epstein, Pythagoras, Brunel) are written diagonally in large, yellow-highlighted letters across the page. Various mathematical expressions, inequalities, and symbols are written throughout. There are two blue circled numbers on the right side, '+10' and '10+15'. The text is predominantly pencil-written with mathematical and numeric content scattered across the page.",
+  "layout": [
+    "Handwritten text at top centered",
+    "Large yellow-highlighted diagonal names spaced across page",
+    "Mathematical expressions and annotations scattered throughout",
+    "Two blue circled numbers on right side",
+    "Handwritten notes at bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "10 is the most beautiful number.",
+      "confidence": "high",
+      "note": "Handwritten sentence."
+    },
+    {
+      "location": "top center below previous text",
+      "text_as_seen": "Do not rush to be 100 years old.",
+      "confidence": "high",
+      "note": "Handwritten sentence."
+    },
+    {
+      "location": "top center below previous text",
+      "text_as_seen": "it contains the first few integers",
+      "confidence": "medium",
+      "note": "Handwritten and partly faint."
+    },
+    {
+      "location": "mid left",
+      "text_as_seen": "5 x 10 to 2",
+      "confidence": "medium",
+      "note": "Mathematical notation, '10' is superscripted."
+    },
+    {
+      "location": "upper middle",
+      "text_as_seen": "10 = bn",
+      "confidence": "high",
+      "note": "Mathematical equation."
+    },
+    {
+      "location": "upper middle below previous",
+      "text_as_seen": "10 x 5 = y",
+      "confidence": "high",
+      "note": "Mathematical equation."
+    },
+    {
+      "location": "upper middle below previous",
+      "text_as_seen": "2n + 4/2",
+      "confidence": "high",
+      "note": "Mathematical notation."
+    },
+    {
+      "location": "center right",
+      "text_as_seen": "2n + 2n x 2/4 = d",
+      "confidence": "high",
+      "note": "Mathematical equation with fraction."
+    },
+    {
+      "location": "center right below previous",
+      "text_as_seen": "perfect number",
+      "confidence": "high",
+      "note": "Annotation near mathematical notation."
+    },
+    {
+      "location": "right middle below previous",
+      "text_as_seen": "15",
+      "confidence": "high",
+      "note": "Number circled and connected to previous annotation."
+    },
+    {
+      "location": "right middle below previous",
+      "text_as_seen": "6 28 496 8128",
+      "confidence": "high",
+      "note": "Sequence of numbers listed vertically."
+    },
+    {
+      "location": "mid left below previous text",
+      "text_as_seen": "x > y d > y",
+      "confidence": "high",
+      "note": "Inequalities."
+    },
+    {
+      "location": "center lower",
+      "text_as_seen": "bn + 5/2 = d",
+      "confidence": "medium",
+      "note": "Mathematical formula, some parts less clear."
+    },
+    {
+      "location": "center lower below previous",
+      "text_as_seen": "7 bn x 2/100 = d",
+      "confidence": "medium",
+      "note": "Equation, some parts crossed out and overwritten."
+    },
+    {
+      "location": "center lower",
+      "text_as_seen": "y = g > bn + bn/2",
+      "confidence": "medium",
+      "note": "Formula with inequalities."
+    },
+    {
+      "location": "center lower below previous",
+      "text_as_seen": "y = g + b n + 10",
+      "confidence": "medium",
+      "note": "Equation."
+    },
+    {
+      "location": "center lower",
+      "text_as_seen": "(y/7) > 7 bn < bn / 2 = xc < y = 15",
+      "confidence": "medium",
+      "note": "Complex expression with inequalities."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "ln e ((√64 x 2 x 82 x)(b - 5 / 19.14) - 15)",
+      "confidence": "medium",
+      "note": "Complex handwritten logarithmic expression inside an oval."
+    },
+    {
+      "location": "bottom center below previous",
+      "text_as_seen": "10 + 10/2 = d ; ln = d.",
+      "confidence": "medium",
+      "note": "Equation with semicolon."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "d should never be > than get % to J @ Any x",
+      "confidence": "low",
+      "note": "Handwritten note with possible unclear characters."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "10",
+    "15"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,119 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 5,
+  "page_id": "page_005",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_005.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_005.ocr.txt",
+  "image_metadata": {
+    "bytes": 273112,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "6b89bca8fd578be1230c22928b2a7687c73ef05ab83c1ffd4b39f2be220644d5"
+  },
+  "ocr_text": "beek wer Spl wes 7\nSo a Jd Sle Photo pmphy \"4\ni Ce PR MMF J | .\n, \\2 a - set Fo\ntoads Tory Bh See PCT |\n- q fe mas ; { Dn Fo — “T |\n|\n: em Stn Anis —~ ~~ poy\n.  Tregh Aa 7 OS\n: . a ar L ° ‘Dy sver fe ixnrele_y\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note consisting of about 21 lines of cursive text on a white page, with a signature at the bottom and a dark vertical stripe along the right edge of the page. The note appears to be a personal message referring to the idea behind a book, mentioning stories, photographs, letters, and wishing a happy birthday. There are no other visible images, drawings, or marks on the page except some dark low-contrast smudges and a vertical black border on the right side.",
+    "Layout: handwritten text block",
+    "Layout: signature area at bottom",
+    "Layout: vertical black border on right edge"
+  ],
+  "observations": [
+    "A handwritten note consisting of about 21 lines of cursive text on a white page, with a signature at the bottom and a dark vertical stripe along the right edge of the page. The note appears to be a personal message referring to the idea behind a book, mentioning stories, photographs, letters, and wishing a happy birthday. There are no other visible images, drawings, or marks on the page except some dark low-contrast smudges and a vertical black border on the right side.",
+    "Layout: handwritten text block",
+    "Layout: signature area at bottom",
+    "Layout: vertical black border on right edge"
+  ],
+  "dates": [],
+  "document_strings": [
+    "beek wer Spl wes 7",
+    "So a Jd Sle Photo pmphy \"4",
+    "i Ce PR MMF J | .",
+    ", \\2 a - set Fo",
+    "toads Tory Bh See PCT |",
+    "- q fe mas ; { Dn Fo — “T |",
+    ": em Stn Anis —~ ~~ poy",
+    ". Tregh Aa 7 OS",
+    ": . a ar L ° ‘Dy sver fe ixnrele_y"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "signature line below 'Love'",
+      "confidence": "medium",
+      "note": "A cursive signature below the closing word 'Love'. Exact text of signature uncertain."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top half to bottom half",
+      "text_as_seen": "Hey Tracy The idea behind this book was simply to gather stories and old photographs to jog your memory about places people and different events. Some of the letters will definitely achieve their intended goal-- some well... you will have to read them to see for yourself. I know you will enjoy looking through the book, and I hope you will derive as much pleasure looking through it as I did putting it together for you. Happy Happy Birthday Love",
+      "confidence": "high",
+      "note": "Complete handwritten note observed from top to near bottom of page."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Lower rightmost corner may be partially cut off or obscured by the black vertical border."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:02:35.580Z",
+    "response_id": "resp_057b06714259e689006a50288390448190b2c96c2b87092766",
+    "raw_output_sha256": "0fca5d4c25afbeaefae0cc193688384bda5d8265441f4ac5e1614b7f274df91f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_057b06714259e689006a50288390448190b2c96c2b87092766",
+    "enriched_at": "2026-07-09T23:02:35.580Z"
+  },
+  "visual_summary": "A handwritten note consisting of about 21 lines of cursive text on a white page, with a signature at the bottom and a dark vertical stripe along the right edge of the page. The note appears to be a personal message referring to the idea behind a book, mentioning stories, photographs, letters, and wishing a happy birthday. There are no other visible images, drawings, or marks on the page except some dark low-contrast smudges and a vertical black border on the right side.",
+  "layout": [
+    "handwritten text block",
+    "signature area at bottom",
+    "vertical black border on right edge"
+  ],
+  "handwriting": [
+    {
+      "location": "top half to bottom half",
+      "text_as_seen": "Hey Tracy The idea behind this book was simply to gather stories and old photographs to jog your memory about places people and different events. Some of the letters will definitely achieve their intended goal-- some well... you will have to read them to see for yourself. I know you will enjoy looking through the book, and I hope you will derive as much pleasure looking through it as I did putting it together for you. Happy Happy Birthday Love",
+      "confidence": "high",
+      "note": "Complete handwritten note observed from top to near bottom of page."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "signature line below 'Love'",
+      "confidence": "medium",
+      "note": "A cursive signature below the closing word 'Love'. Exact text of signature uncertain."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

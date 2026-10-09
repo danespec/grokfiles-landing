@@ -1,0 +1,161 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 146,
+  "page_id": "page_146",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_146.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_146.ocr.txt",
+  "image_metadata": {
+    "bytes": 186546,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "87e627640ff57223bff4ec31077c00de497647250f5040c9645cbc3b3d68302c"
+  },
+  "ocr_text": "( 2003\nas pes Danson\nMirah infin. MES te ents\n,  Durig Aes gaye fam « poorl patel.\nfp faire heeraiage fro bam He ppp Tone)\nSpgs Wentbtt\nCe frm ay bhi HbA « Let pant poole\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is a handwritten letter dated January 2003, addressed to 'Jeffrey'. It has a formal tone, discussing friendship, blessings, and hopes for continued activities in the field of science. The letter is signed 'George Mitchell' and includes a postscript about birthdays on January 20. The handwriting is cursive and moderately clear.",
+    "Layout: handwritten letter centered on page, single column"
+  ],
+  "observations": [
+    "The page is a handwritten letter dated January 2003, addressed to 'Jeffrey'. It has a formal tone, discussing friendship, blessings, and hopes for continued activities in the field of science. The letter is signed 'George Mitchell' and includes a postscript about birthdays on January 20. The handwriting is cursive and moderately clear.",
+    "Layout: handwritten letter centered on page, single column"
+  ],
+  "dates": [
+    "2003",
+    "January 2003",
+    "January 20"
+  ],
+  "document_strings": [
+    "Dear Jeffrey,",
+    "George Mitchell",
+    "P.S. As you know, Heather shares your birthday, confirming my belief that a lot of great people were born on January 20!"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right, below body",
+      "text_as_seen": "George Mitchell",
+      "confidence": "high",
+      "note": "Signature-like text detected."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top right",
+      "text_as_seen": "January 2003",
+      "confidence": "high",
+      "note": "Date in cursive,"
+    },
+    {
+      "location": "top left, below date",
+      "text_as_seen": "Dear Jeffrey,",
+      "confidence": "high",
+      "note": "Salutation clearly visible."
+    },
+    {
+      "location": "body of letter",
+      "text_as_seen": "The beginning of a new year is an appropriate time to count our blessings. Among mine is your friendship. It's been more than a decade since we met by chance at an airport in Washington. During that time you've been a good friend. I'm grateful for that and for what I hope will be many more years of your friendship. Among your blessings too been the opportunity to lead a full, exciting, and fantastically varied life. Now that you've reached a critical milestone, I hope you will intensify your activities in the widest possible range of issues, especially in the field of science where you've already done so much. With my congratulations, gratitudes and best wishes,",
+      "confidence": "medium",
+      "note": "Some words have minor uncertainty due to handwriting style."
+    },
+    {
+      "location": "bottom right, below body",
+      "text_as_seen": "George Mitchell",
+      "confidence": "high",
+      "note": "Signature-like text, treated as document string, not verified as identity."
+    },
+    {
+      "location": "bottom left corner",
+      "text_as_seen": "P.S. As you know, Heather shares your birthday, confirming my belief that a lot of great people were born on January 20!",
+      "confidence": "medium",
+      "note": "Postscript is readable but has some minor uncertainty in specific words."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:50.769Z",
+    "response_id": "resp_06fea640ae0bc719006a502df86ef88195a6911f91315e4417",
+    "raw_output_sha256": "7f729df986693122dbc10846e19c6d72d6f28d5d9ac32bb958882e613edb1260"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_06fea640ae0bc719006a502df86ef88195a6911f91315e4417",
+    "enriched_at": "2026-07-09T23:25:50.769Z"
+  },
+  "visual_summary": "The page is a handwritten letter dated January 2003, addressed to 'Jeffrey'. It has a formal tone, discussing friendship, blessings, and hopes for continued activities in the field of science. The letter is signed 'George Mitchell' and includes a postscript about birthdays on January 20. The handwriting is cursive and moderately clear.",
+  "layout": [
+    "handwritten letter centered on page, single column"
+  ],
+  "handwriting": [
+    {
+      "location": "top right",
+      "text_as_seen": "January 2003",
+      "confidence": "high",
+      "note": "Date in cursive,"
+    },
+    {
+      "location": "top left, below date",
+      "text_as_seen": "Dear Jeffrey,",
+      "confidence": "high",
+      "note": "Salutation clearly visible."
+    },
+    {
+      "location": "body of letter",
+      "text_as_seen": "The beginning of a new year is an appropriate time to count our blessings. Among mine is your friendship. It's been more than a decade since we met by chance at an airport in Washington. During that time you've been a good friend. I'm grateful for that and for what I hope will be many more years of your friendship. Among your blessings too been the opportunity to lead a full, exciting, and fantastically varied life. Now that you've reached a critical milestone, I hope you will intensify your activities in the widest possible range of issues, especially in the field of science where you've already done so much. With my congratulations, gratitudes and best wishes,",
+      "confidence": "medium",
+      "note": "Some words have minor uncertainty due to handwriting style."
+    },
+    {
+      "location": "bottom right, below body",
+      "text_as_seen": "George Mitchell",
+      "confidence": "high",
+      "note": "Signature-like text, treated as document string, not verified as identity."
+    },
+    {
+      "location": "bottom left corner",
+      "text_as_seen": "P.S. As you know, Heather shares your birthday, confirming my belief that a lot of great people were born on January 20!",
+      "confidence": "medium",
+      "note": "Postscript is readable but has some minor uncertainty in specific words."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right, below body",
+      "text_as_seen": "George Mitchell",
+      "confidence": "high",
+      "note": "Signature-like text detected."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "January 2003",
+    "January 20"
+  ],
+  "confidence": "medium"
+}

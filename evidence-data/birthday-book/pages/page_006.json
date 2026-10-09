@@ -1,0 +1,131 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 6,
+  "page_id": "page_006",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_006.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_006.ocr.txt",
+  "image_metadata": {
+    "bytes": 599557,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b570ef7181195155f583fb180fdbfc0c35ad204b88a11d7afc914c98a38b736c"
+  },
+  "ocr_text": "as. . Gita th |\nMESS Py Oe Ls Ae cae) canis Genny “tin pales ue Maree Pangan\n2k EEN SCE GNA DNS OSG SOG CCCI OLR MEI BRAC Cec ens ones OU aR a MERC CU\na a\nae Tabata REEGUIAS ARID STATESEIGS © en\n. eae sot ~ wee Loe 2, te Pwr aiDo qio he hyeebt ide\n{fo the Gartiiiecie comleits aay errers. F ere t\n, gotrent Psferailon du tab Bateu,s Begketi oy bh bbs eutaw, ad bom fen Oe eas i\n. .. o GH ign\n“ j ‘ . 4 1) Coal & datlacd,\n: {4 108 AR BE Gn Morne, TH. Coal ae\nae MARUATT OG 126 HORTH STREET ckeGeLty: 2a) Fteteese ty f ae\noe itg ghOna: (88h Aetaer Avenue geces: FAR NG fiseet\nRignOkG: §1 Stuyvesent flace, St, Gea gs, go te\npw ee Ne Oe eenyputan 2 REE ts |\nos eee OO Oe a Nenentille & i\nee ole pele Pe ATS\noe eee eee |\nSo — Se Gh Toy yet ;\nLES Hy Seen eM Re ae CRAs lpg SoS gS Ue Sede SSL ON RS Ay Coser suse Sanaa :\n= =  .. . 5 ”\noe Be eae anne\nes ag oe ee ee BI {\net |\nee oe Oe ee A ea ba {ie 4 F rR, URS\nBERS Be eee eee OS GREG SESS SEES EEC IR SSCS UR EES Se STE : ; : .\nes . ;\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two main document images: the upper half shows a scanned certificate of birth with multiple typed fields and signatures; the lower half contains a handwritten note with medical details. The certificate of birth is somewhat faded and dense with information such as certificate number, birth details, parent names, officials' signatures, and official stamps or seals. The handwritten note includes birth details, weights, measurements, and medical observations, written in cursive and somewhat faint ink.",
+    "Layout: Top half: Certificate of birth document",
+    "Layout: Bottom half: Handwritten note page"
+  ],
+  "observations": [
+    "The page contains two main document images: the upper half shows a scanned certificate of birth with multiple typed fields and signatures; the lower half contains a handwritten note with medical details. The certificate of birth is somewhat faded and dense with information such as certificate number, birth details, parent names, officials' signatures, and official stamps or seals. The handwritten note includes birth details, weights, measurements, and medical observations, written in cursive and somewhat faint ink.",
+    "Layout: Top half: Certificate of birth document",
+    "Layout: Bottom half: Handwritten note page"
+  ],
+  "dates": [
+    "Jan 20",
+    "April 1"
+  ],
+  "document_strings": [
+    "CERTIFICATE OF BIRTH REGISTRATION",
+    "Certificate of Birth",
+    "156-53-302973",
+    "PLACE OF BIRTH",
+    "Borough Hospital, Brooklyn",
+    "FATHER",
+    "MOTHER",
+    "Birth Date Jan 20",
+    "Weight 6 lbs 2 oz",
+    "Length 19 inches",
+    "Hospital Beth-El",
+    "Doctor Dr. Stevens",
+    "Nurses Muriel Hix",
+    "April 1 - Went to Dr. ...",
+    "Certificate is official record from City of New York",
+    "Registrar signatures"
+  ],
+  "signatures": [
+    {
+      "location": "certificate of birth, bottom section",
+      "text_as_seen": "Several handwritten signatures below typed text",
+      "confidence": "medium",
+      "note": "Signatures appear to be official, likely from registrars or certifying officials."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "bottom half",
+      "text_as_seen": "Born Jan 20 - Time 6:12 pm first name ... Weight 6 lbs 2 oz ... Length - 19 inches ... Hospital - Beth-El ... Doctor - Dr. Stevens ... Nurses - Muriel Hix ... ...",
+      "confidence": "medium",
+      "note": "Cursive handwriting describing birth details and medical notes, some parts faint and difficult to interpret fully."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Some text on handwritten note is illegible due to faint ink and cursive style.",
+    "Upper certificate document contains faded text limiting readability of specific typed details."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:02:45.082Z",
+    "response_id": "resp_0ab582ddfbd3303e006a50288cfda8819790dc16b7382b0154",
+    "raw_output_sha256": "54e1bc292ddab24fe8240cdc870d0123708af22bfa1b05d5d0654d9818d67ed2"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ab582ddfbd3303e006a50288cfda8819790dc16b7382b0154",
+    "enriched_at": "2026-07-09T23:02:45.082Z"
+  },
+  "visual_summary": "The page contains two main document images: the upper half shows a scanned certificate of birth with multiple typed fields and signatures; the lower half contains a handwritten note with medical details. The certificate of birth is somewhat faded and dense with information such as certificate number, birth details, parent names, officials' signatures, and official stamps or seals. The handwritten note includes birth details, weights, measurements, and medical observations, written in cursive and somewhat faint ink.",
+  "layout": [
+    "Top half: Certificate of birth document",
+    "Bottom half: Handwritten note page"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom half",
+      "text_as_seen": "Born Jan 20 - Time 6:12 pm first name ... Weight 6 lbs 2 oz ... Length - 19 inches ... Hospital - Beth-El ... Doctor - Dr. Stevens ... Nurses - Muriel Hix ... ...",
+      "confidence": "medium",
+      "note": "Cursive handwriting describing birth details and medical notes, some parts faint and difficult to interpret fully."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "certificate of birth, bottom section",
+      "text_as_seen": "Several handwritten signatures below typed text",
+      "confidence": "medium",
+      "note": "Signatures appear to be official, likely from registrars or certifying officials."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Jan 20",
+    "April 1"
+  ],
+  "confidence": "medium"
+}

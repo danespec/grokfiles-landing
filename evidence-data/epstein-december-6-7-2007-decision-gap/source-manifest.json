@@ -1,0 +1,47 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "epstein-december-6-7-2007-decision-gap",
+  "title": "December 6\u20137, 2007: The Victim Letters, the Defense Papers, and the Missing Decision Record",
+  "published": "2026-10-07",
+  "scope": "The December 6\u20137, 2007 victim-notification sequence and the unresolved decision record behind the final hold.",
+  "sources": [
+    {
+      "id": "EFTA00013764",
+      "class": "PRIMARY_NATIVE_EMAIL",
+      "record": "Villafana request / Sloman hold reply",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf",
+      "sha256": "5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117",
+      "supports": "17:05:56 request, 17:08:19 EST reply, exact wording 'Hold the letter.'",
+      "limit": "Does not identify who Sloman consulted."
+    },
+    {
+      "id": "DOJ-OPR-FULL",
+      "class": "PRIMARY_OFFICIAL_REPORT",
+      "record": "DOJ Office of Professional Responsibility report",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/United%20States%20v.%20Maxwell%2C%20No.%20120-cr-00330%20%28S.D.N.Y.%202020%29/204-03.pdf",
+      "supports": "Nov. 30 deadline, Dec. 6 FBI agent warning, Dec. 7 defense submissions, Sloman interview recollection, later notification chronology.",
+      "limit": "Retrospective report synthesizing documents and interviews."
+    },
+    {
+      "id": "DOJ-OPR-PUBLIC-FINDINGS",
+      "class": "PRIMARY_OFFICIAL_SUMMARY",
+      "record": "DOJ public statement on OPR findings",
+      "url": "https://www.justice.gov/archives/opa/pr/statement-doj-office-professional-responsibility-report-jeffrey-epstein-2006-2008",
+      "supports": "No professional misconduct finding; poor judgment; victims not treated with expected forthrightness and sensitivity.",
+      "limit": "Summary rather than full factual record."
+    }
+  ],
+  "open_questions": [
+    "Who was the 'somebody' Sloman later recalled speaking to before the hold instruction?",
+    "What was said in that conversation?",
+    "What exact time did Sloman receive/read the Sanchez request and the two independent ethics opinions?",
+    "Are there additional December 7 phone logs, notes, emails, or calendar records that narrow the decision chain?"
+  ],
+  "not_established": [
+    "That Lilly Ann Sanchez was Sloman's 'somebody'.",
+    "That Alexander Acosta personally ordered the final December 7 hold.",
+    "That Main Justice ordered victim silence.",
+    "That intelligence considerations caused the NPA or the December 7 hold.",
+    "That the missing decision record proves corruption or professional misconduct."
+  ]
+}

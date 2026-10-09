@@ -1,0 +1,242 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 181,
+  "page_id": "page_181",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_181.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_181.ocr.txt",
+  "image_metadata": {
+    "bytes": 1610419,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "da0ab5e20079b1b538b36672d6cc9e204a39f764707ea8c856a52cef4a89231c"
+  },
+  "ocr_text": "Mhsae ,\n| m= Ef 7) |\nDam h Caan | json anain ,\nHave th hap preox Bieta bag (why ast?)\n| HOUSE_OVERSIGHT_000181\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note addressed to 'Jeffrey' containing a series of crossed-out mathematical formulas, a short message expressing confusion and optimism about resolving the formula, and ending with birthday wishes and a signature-like mark at the bottom.",
+    "Layout: Handwritten text at top left",
+    "Layout: Multiple crossed-out formula lines below greeting",
+    "Layout: Paragraphs of handwritten note below formulas",
+    "Layout: Signature-like mark at bottom center"
+  ],
+  "observations": [
+    "A handwritten note addressed to 'Jeffrey' containing a series of crossed-out mathematical formulas, a short message expressing confusion and optimism about resolving the formula, and ending with birthday wishes and a signature-like mark at the bottom.",
+    "Layout: Handwritten text at top left",
+    "Layout: Multiple crossed-out formula lines below greeting",
+    "Layout: Paragraphs of handwritten note below formulas",
+    "Layout: Signature-like mark at bottom center"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Dear Jeffrey",
+    "M = B^c",
+    "M = C^B",
+    "M = I = C^B",
+    "M = V (B * C)",
+    "M = V (B + C) ^ a",
+    "M = E / c^2 ?!",
+    "Damn! Confused again.",
+    "I'm sure we can resolve this eventually, but it will probably take the next 50 years or so -- So, stay healthy, and stay tuned.",
+    "Have the happiest Birthday! (why not?)",
+    "Prosthetically yours,"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "[signature mark]",
+      "confidence": "medium",
+      "note": "Undecipherable handwritten mark, possibly a signature or sign-off."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top left",
+      "text_as_seen": "Dear Jeffrey",
+      "confidence": "high",
+      "note": "Greeting; not verified identity."
+    },
+    {
+      "location": "below greeting, left aligned",
+      "text_as_seen": "M = B^c (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, first line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = C^B (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, second line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = I = C^B (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, third line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = V (B * C) (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, fourth line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = V (B + C) ^ a (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, fifth line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = E / c^2 ?!",
+      "confidence": "high",
+      "note": "Mathematical formula with question and exclamation marks, not crossed out."
+    },
+    {
+      "location": "below formulas",
+      "text_as_seen": "Damn! Confused again.",
+      "confidence": "high",
+      "note": "Handwritten sentence expressing emotion and confusion."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "I'm sure we can resolve this eventually, but it will probably take the next 50 years or so -- So, stay healthy, and stay tuned.",
+      "confidence": "high",
+      "note": "Handwritten message about optimism and well wishes."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "Have the happiest Birthday! (why not?)",
+      "confidence": "high",
+      "note": "Birthday wish with rhetorical question in parentheses."
+    },
+    {
+      "location": "bottom left",
+      "text_as_seen": "Prosthetically yours,",
+      "confidence": "high",
+      "note": "Closing phrase or valediction."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:31:09.368Z",
+    "response_id": "resp_0ff3478b00879a54006a502f3170848193be0129b54650be06",
+    "raw_output_sha256": "047939bbcd0cc940b2a45b20b7fdd0180adf7321c031617530f28e0f2f737d94"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ff3478b00879a54006a502f3170848193be0129b54650be06",
+    "enriched_at": "2026-07-09T23:31:09.368Z"
+  },
+  "visual_summary": "A handwritten note addressed to 'Jeffrey' containing a series of crossed-out mathematical formulas, a short message expressing confusion and optimism about resolving the formula, and ending with birthday wishes and a signature-like mark at the bottom.",
+  "layout": [
+    "Handwritten text at top left",
+    "Multiple crossed-out formula lines below greeting",
+    "Paragraphs of handwritten note below formulas",
+    "Signature-like mark at bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top left",
+      "text_as_seen": "Dear Jeffrey",
+      "confidence": "high",
+      "note": "Greeting; not verified identity."
+    },
+    {
+      "location": "below greeting, left aligned",
+      "text_as_seen": "M = B^c (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, first line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = C^B (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, second line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = I = C^B (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, third line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = V (B * C) (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, fourth line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = V (B + C) ^ a (crossed out)",
+      "confidence": "high",
+      "note": "Mathematical formula, fifth line crossed out."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "M = E / c^2 ?!",
+      "confidence": "high",
+      "note": "Mathematical formula with question and exclamation marks, not crossed out."
+    },
+    {
+      "location": "below formulas",
+      "text_as_seen": "Damn! Confused again.",
+      "confidence": "high",
+      "note": "Handwritten sentence expressing emotion and confusion."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "I'm sure we can resolve this eventually, but it will probably take the next 50 years or so -- So, stay healthy, and stay tuned.",
+      "confidence": "high",
+      "note": "Handwritten message about optimism and well wishes."
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "Have the happiest Birthday! (why not?)",
+      "confidence": "high",
+      "note": "Birthday wish with rhetorical question in parentheses."
+    },
+    {
+      "location": "bottom left",
+      "text_as_seen": "Prosthetically yours,",
+      "confidence": "high",
+      "note": "Closing phrase or valediction."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "[signature mark]",
+      "confidence": "medium",
+      "note": "Undecipherable handwritten mark, possibly a signature or sign-off."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

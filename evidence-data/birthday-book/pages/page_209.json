@@ -1,0 +1,129 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 209,
+  "page_id": "page_209",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_209.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_209.ocr.txt",
+  "image_metadata": {
+    "bytes": 196622,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c24c5cd1da6b9a219ce6c20f77ccffb7305ac03631bdbacd59e3239236a9dcf3"
+  },
+  "ocr_text": "y can dhe. abo uct Sou 4 rests fe cea aon\n| into bird- haad pirncod arch choo “Mhrom Leto eo\" |\noud af tp. ( ht 13 1 dusk cos)\nen oid linus fouw ype neuer coos\nampattontley Scan fall prow how hoped\nhact . men Ba me. 3 am vgs\nBa> 4p res th “~ |\nto pove an mug Atte po ~Hhosk tre |\n“ y nook nme.\n4 weit be Shore Pr pee 4 pan ever\nPS. T de wot ainare.\nHOUSE_OVERSIGHT_000209\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A single page containing a handwritten letter in dark ink on white paper. There is a redacted rectangular black box near the bottom of the letter. The handwriting is neat and mostly cursive. Some portions of the letter have text crossed out or underlined. The letter begins with \"My dear Jeffrey,\" and ends with \"Happy Birthday!\" followed by a redacted signature and a postscript line at the bottom.",
+    "Layout: handwritten letter text",
+    "Layout: redacted rectangular box near bottom center",
+    "Layout: postscript at bottom left"
+  ],
+  "observations": [
+    "A single page containing a handwritten letter in dark ink on white paper. There is a redacted rectangular black box near the bottom of the letter. The handwriting is neat and mostly cursive. Some portions of the letter have text crossed out or underlined. The letter begins with \"My dear Jeffrey,\" and ends with \"Happy Birthday!\" followed by a redacted signature and a postscript line at the bottom.",
+    "Layout: handwritten letter text",
+    "Layout: redacted rectangular box near bottom center",
+    "Layout: postscript at bottom left"
+  ],
+  "dates": [],
+  "document_strings": [
+    "My dear Jeffrey,",
+    "(No stew, just raw)",
+    "(Thanks for taking me to Gospel.)",
+    "Happy Birthday!",
+    "P.S.: I do NOT share.",
+    "HOUSE_OVERSIGHT_000209"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center, above postscript",
+      "text_as_seen": "[Redacted]",
+      "confidence": "high",
+      "note": "Black rectangular box redacting signature-like text."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top to bottom, entire letter except blacked out area and postscript",
+      "text_as_seen": "My dear Jeffrey, I can write about how I want to cut you into bird-head pieces and chew them between my molars until I suck all the blood and juice out of you. (No stew, just raw) Or, I can write about how you never cease to amaze me with your kindness and generosity to so many, whose lives you touch in several ways. (Thanks for taking me to Gospel.) Most importantly, I can tell you how happy you make me by simply being “you.” Yet, no words would suffice to capture what you really mean to me. I am very lucky to have you in my life and hope that you know I will be there for you, if you ever need me. Happy Birthday! P.S.: I do NOT share.",
+      "confidence": "high",
+      "note": "Main body of the letter and postscript."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "bottom center, below 'Happy Birthday!' and above postscript",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular box covering text completely."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:35:52.572Z",
+    "response_id": "resp_09d022f3a55c3977006a503052060c8194947b110a6a5e62ad",
+    "raw_output_sha256": "06b1b8292779502bfb8d641e7c7d1a8868f8e4fe42bf05617e826369ccedd13c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09d022f3a55c3977006a503052060c8194947b110a6a5e62ad",
+    "enriched_at": "2026-07-09T23:35:52.572Z"
+  },
+  "visual_summary": "A single page containing a handwritten letter in dark ink on white paper. There is a redacted rectangular black box near the bottom of the letter. The handwriting is neat and mostly cursive. Some portions of the letter have text crossed out or underlined. The letter begins with \"My dear Jeffrey,\" and ends with \"Happy Birthday!\" followed by a redacted signature and a postscript line at the bottom.",
+  "layout": [
+    "handwritten letter text",
+    "redacted rectangular box near bottom center",
+    "postscript at bottom left"
+  ],
+  "handwriting": [
+    {
+      "location": "top to bottom, entire letter except blacked out area and postscript",
+      "text_as_seen": "My dear Jeffrey, I can write about how I want to cut you into bird-head pieces and chew them between my molars until I suck all the blood and juice out of you. (No stew, just raw) Or, I can write about how you never cease to amaze me with your kindness and generosity to so many, whose lives you touch in several ways. (Thanks for taking me to Gospel.) Most importantly, I can tell you how happy you make me by simply being “you.” Yet, no words would suffice to capture what you really mean to me. I am very lucky to have you in my life and hope that you know I will be there for you, if you ever need me. Happy Birthday! P.S.: I do NOT share.",
+      "confidence": "high",
+      "note": "Main body of the letter and postscript."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center, above postscript",
+      "text_as_seen": "[Redacted]",
+      "confidence": "high",
+      "note": "Black rectangular box redacting signature-like text."
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "bottom center, below 'Happy Birthday!' and above postscript",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular box covering text completely."
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

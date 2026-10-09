@@ -1,0 +1,47 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "michael-chertoff-reporty-advisory-agreement",
+  "title": "Michael Chertoff's Signed Reporty Advisory Agreement: Terms Without a Payout Trail",
+  "published": "2026-09-30",
+  "scope": "Source-bound reading of the executed March 2016 Reporty–Michael Chertoff advisory-board agreement and the bounded corpus negatives around actual contingent compensation or customer/investor referral outcomes.",
+  "sources": [
+    {
+      "id": "CHERTOFF-EXECUTED",
+      "class": "PRIMARY_PRIVATE_CONTRACT",
+      "record": "160320_michael_chertoff_reporty_advisory_board_agreement.pdf",
+      "url": "/barak/search?q=Michael%20Chertoff",
+      "sha256": "171118e88dfe3dee729fd45e72efce919caba4d2841dba28cd5d8fb099d3d796",
+      "supports": "Executed three-page advisory-board agreement; personal advisor identity; services; Approved Target mechanism; option and contingent compensation formulas; handwritten 'personally' change; District of Columbia law; Chertoff and Amir Elichai signatures.",
+      "limit": "Agreement proves the contractual framework, not actual target approvals, option issuance, commissions, referral payouts or customer-access outcomes."
+    },
+    {
+      "id": "RUN3",
+      "class": "GAH_BOUNDED_CORPUS_REVIEW",
+      "record": "GAH_US_RUN3_HOMELAND_NETWORK_MASTER.md",
+      "supports": "Chronology and negative search: no recovered Approved Target annexes, option-grant record, compensation payment trail, Chertoff Group corporate contract, named introducer, or first-U.S.-deployment referral chain.",
+      "limit": "Archive-created synthesis; negative findings are limited to the searched corpus and are not universal nonexistence claims."
+    },
+    {
+      "id": "OFFICIAL-ROLE",
+      "class": "OFFICIAL_HISTORICAL_CONTEXT",
+      "record": "White House archived Michael Chertoff biography",
+      "url": "https://georgewbush-whitehouse.archives.gov/government/chertoff-bio.html",
+      "supports": "Official historical identification of Chertoff as the second U.S. Secretary of Homeland Security, sworn in February 15, 2005.",
+      "limit": "Role context only; does not bear on performance under the 2016 private advisory agreement."
+    }
+  ],
+  "open_questions": [
+    "Whether any Approved Target annexes survive outside the recovered corpus.",
+    "Whether Reporty's board formally approved and issued the option grant described in the agreement.",
+    "Whether any invoices or payments were made under the 7.5%, 2.5%, or quarterly compensation provisions.",
+    "Who first introduced Michael Chertoff to Reporty.",
+    "Whether any later Reporty/Carbyne customer or investor was contractually credited to Chertoff."
+  ],
+  "not_established": [
+    "Actual payment of the contract's contingent compensation formulas.",
+    "Actual issuance of the maximum stated options.",
+    "Government endorsement, favoritism, procurement influence or improper access.",
+    "A Chertoff-attributable causal chain to later U.S. deployments.",
+    "A corporate Chertoff Group contract with Reporty."
+  ]
+}

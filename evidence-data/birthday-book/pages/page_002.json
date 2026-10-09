@@ -1,0 +1,150 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 2,
+  "page_id": "page_002",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_002.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_002.ocr.txt",
+  "image_metadata": {
+    "bytes": 72922,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "5303b464797f6853bfbaef4599e10cbd3b714bab23b10b8ea4472628261a44f5"
+  },
+  "ocr_text": ". |\nPROLOGUE Ghislaine Maxwell\nFAMILY Paula\nSeymour\nMark\nBROOKLYN |\nWarren Eisenstein\nNeutral\nTerry Kafka\nMichael Buchholtz\nDr Stephen Levy\n—_ a\n_ po\nFRIENDS Ron Altbach\n~ a\nJean lac Brunel\nBill Clinton\nAlan Dershowitz\nPill Elkus\nHOUSE_OVERSIGHT_000002\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page containing a table of contents with several section titles and names arranged in columns, some text is redacted with black bars.",
+    "Layout: Centered title at top",
+    "Layout: Left aligned section titles",
+    "Layout: Right aligned names or entries",
+    "Layout: Black redaction bars obscuring some entries"
+  ],
+  "observations": [
+    "Page containing a table of contents with several section titles and names arranged in columns, some text is redacted with black bars.",
+    "Layout: Centered title at top",
+    "Layout: Left aligned section titles",
+    "Layout: Right aligned names or entries",
+    "Layout: Black redaction bars obscuring some entries"
+  ],
+  "dates": [],
+  "document_strings": [
+    "PROLOGUE Ghislaine Maxwell",
+    "FAMILY Paula Seymour Mark",
+    "BROOKLYN",
+    "Warren Eisenstein",
+    "Neutral",
+    "Terry Kafka",
+    "Michael Buchholtz",
+    "Dr Stephen Levy",
+    "GIRLFRIENDS",
+    "CHILDREN",
+    "FRIENDS Ron Altbach",
+    "Jean lac Brunel",
+    "Bill Clinton",
+    "Alan Dershowitz",
+    "Bill Elkus",
+    "HOUSE_OVERSIGHT_000002"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "Middle left area under BROOKLYN section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    },
+    {
+      "location": "Middle right area under GIRLFRIENDS section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    },
+    {
+      "location": "Middle left area under CHILDREN section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    },
+    {
+      "location": "Lower right area under FRIENDS section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Some names or entries are obscured by black redaction bars"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:02:10.370Z",
+    "response_id": "resp_061cd4cfc7210be7006a50286cc0248193890e4d51c35dbf0a",
+    "raw_output_sha256": "10ee439f96cad74249b3bfc74ec1583f53001589e48eca46eb9aebe8dd8c9756"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_061cd4cfc7210be7006a50286cc0248193890e4d51c35dbf0a",
+    "enriched_at": "2026-07-09T23:02:10.370Z"
+  },
+  "visual_summary": "Page containing a table of contents with several section titles and names arranged in columns, some text is redacted with black bars.",
+  "layout": [
+    "Centered title at top",
+    "Left aligned section titles",
+    "Right aligned names or entries",
+    "Black redaction bars obscuring some entries"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Middle left area under BROOKLYN section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    },
+    {
+      "location": "Middle right area under GIRLFRIENDS section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    },
+    {
+      "location": "Middle left area under CHILDREN section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    },
+    {
+      "location": "Lower right area under FRIENDS section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar redacts one entry"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

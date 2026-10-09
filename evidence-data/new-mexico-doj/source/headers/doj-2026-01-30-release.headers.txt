@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: fd8781e5c718c17ff5393ddb213e2b00626bc8e4327d35b336f1a92ed2cf3582
+Bytes: 90532
+Acquisition method: verified existing local capture

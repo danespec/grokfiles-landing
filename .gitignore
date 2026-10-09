@@ -1,0 +1,9 @@
+.wrangler/
+.env
+.env.*
+*.pem
+*.p12
+*.key
+*.sqlite*
+.DS_Store
+evidence-data/birthday-book/recovered_pages/

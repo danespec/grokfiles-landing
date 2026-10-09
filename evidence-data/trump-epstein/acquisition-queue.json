@@ -1,0 +1,117 @@
+{
+  "task_id": "GAH-TRUMP-TIMELINE-003",
+  "review_completed_utc": "2026-07-16T19:15:00Z",
+  "count_missing_items": 10,
+  "queue": [
+    {
+      "queue_id": "TEP-GAP-0001",
+      "requested_artifact": "Certified PACER copy of the Johnson complaint, exhibits, affidavits, and docket history",
+      "why_it_matters": "Determines the exact filed allegations, sworn status, procedural history, and withdrawal/dismissal posture.",
+      "expected_custodian": "PACER / SDNY and California federal court records",
+      "search_paths_attempted": ["EFTA00155390", "EFTA00065479", "EFTA01433755", "EFTA01297785"],
+      "blocked_routes": ["No certified court PDF located in reviewed archive set"],
+      "acquisition_status": "missing primary record",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Pull docket and filed PDFs from PACER or a certified court-record vendor."
+    },
+    {
+      "queue_id": "TEP-GAP-0002",
+      "requested_artifact": "Primary or fuller FBI record underlying Witness II, including any attachments that remain lawfully public",
+      "why_it_matters": "Could clarify witness identity handling, exact questions, interview context, and corroboration efforts without unmasking protected identities.",
+      "expected_custodian": "FBI / DOJ release corpus",
+      "search_paths_attempted": ["EFTA02858481"],
+      "blocked_routes": ["Only FD-302 summary located"],
+      "acquisition_status": "source gap",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Search DOJ release indexes and FOIA/public court attachments for non-protected supplemental records."
+    },
+    {
+      "queue_id": "TEP-GAP-0003",
+      "requested_artifact": "Corroboration status for Witness II without unmasking protected identity",
+      "why_it_matters": "Determines whether the specific alleged Trump conduct has independent support.",
+      "expected_custodian": "FBI / DOJ / court-filed corroboration exhibits if any",
+      "search_paths_attempted": ["EFTA02858481", "contextual Trump archive searches"],
+      "blocked_routes": ["No independent source located"],
+      "acquisition_status": "unresolved",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Search public exhibits for matching date/location/travel corroboration while preserving redactions."
+    },
+    {
+      "queue_id": "TEP-GAP-0004",
+      "requested_artifact": "Reiter primary FBI 302 or attributable equivalent / Palm Beach Police memo",
+      "why_it_matters": "Separates primary investigative evidence from press accounts and defense responses.",
+      "expected_custodian": "Palm Beach Police Department, State Attorney records, DOJ/FBI release corpus",
+      "search_paths_attempted": ["EFTA00067339"],
+      "blocked_routes": ["Primary memo not present in reviewed archive set"],
+      "acquisition_status": "missing primary record",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Locate the May 1 Reiter memo or certified law-enforcement copy."
+    },
+    {
+      "queue_id": "TEP-GAP-0005",
+      "requested_artifact": "Primary Mar-a-Lago ban or exclusion registry source",
+      "why_it_matters": "Public claims about a ban/exclusion need a primary source before being treated as established.",
+      "expected_custodian": "Mar-a-Lago / Trump Organization records, court exhibits, attributable witness testimony",
+      "search_paths_attempted": ["EFTA00208312", "EFTA00065479"],
+      "blocked_routes": ["Only press/context records located"],
+      "acquisition_status": "missing primary record",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Search certified deposition exhibits, court filings, or attributable on-record testimony."
+    },
+    {
+      "queue_id": "TEP-GAP-0006",
+      "requested_artifact": "House Oversight 'dog that hasn't barked' email",
+      "why_it_matters": "Could clarify document-production silence or official framing around missing Trump/Epstein records.",
+      "expected_custodian": "House Oversight release / correspondence files",
+      "search_paths_attempted": ["targeted archive search notes from task scope"],
+      "blocked_routes": ["No primary email located in reviewed route data"],
+      "acquisition_status": "missing primary record",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Search House Oversight release index and archive ID mappings."
+    },
+    {
+      "queue_id": "TEP-GAP-0007",
+      "requested_artifact": "Authoritative flight-log exhibit resolving local-versus-public count discrepancies",
+      "why_it_matters": "Flight-count claims are easily overcounted and require an authoritative exhibit.",
+      "expected_custodian": "Court exhibits, FBI/DOJ release corpus, certified flight-log exhibit",
+      "search_paths_attempted": ["EFTA00081220", "EFTA00143627"],
+      "blocked_routes": ["Deposition question exists; private 2025 correspondence is not authoritative public evidence"],
+      "acquisition_status": "missing primary record",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Locate a certified flight-log exhibit and reconcile naming/count methodology."
+    },
+    {
+      "queue_id": "TEP-GAP-0008",
+      "requested_artifact": "Final published Wolff text compared with draft material",
+      "why_it_matters": "Determines whether draft allegation language was retained, changed, or omitted.",
+      "expected_custodian": "Published book/article text and editorial source records",
+      "search_paths_attempted": ["EFTA02631674", "EFTA02605480", "external denial report linked from reviewed card"],
+      "blocked_routes": ["No final publication comparison source in archive set"],
+      "acquisition_status": "unresolved",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Compare the draft passage to final published text using lawful excerpts and citation."
+    },
+    {
+      "queue_id": "TEP-GAP-0009",
+      "requested_artifact": "Complete denial sources and dates for all three reviewed claims",
+      "why_it_matters": "Ensures denials and rebuttals remain visible and dated.",
+      "expected_custodian": "Public statements, attorney statements, media records, court filings",
+      "search_paths_attempted": ["EFTA00065479", "EFTA01433755", "Newsweek external denial context"],
+      "blocked_routes": ["No source-specific Witness II denial located; Wolff denial exists externally, not as archive source"],
+      "acquisition_status": "partial",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Acquire original public statements or certified media transcripts where available."
+    },
+    {
+      "queue_id": "TEP-GAP-0010",
+      "requested_artifact": "Missing exhibits referenced inside reviewed documents",
+      "why_it_matters": "Referenced exhibits may contain primary source context that changes classification or confidence.",
+      "expected_custodian": "Court docket exhibits and DOJ release corpus",
+      "search_paths_attempted": ["EFTA00081220", "EFTA00157631"],
+      "blocked_routes": ["Exhibit fragments and prep-note references only"],
+      "acquisition_status": "partial",
+      "absence_limits_claim": true,
+      "next_lawful_acquisition_step": "Locate full exhibit packets by docket number, exhibit number, and archive ID neighborhood."
+    }
+  ]
+}

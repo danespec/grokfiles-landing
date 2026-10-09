@@ -1,0 +1,22 @@
+accept-ranges: bytes
+alt-svc: h3=":443"; ma=86400
+cache-control: max-age=315360000
+connection: keep-alive
+content-length: 162586
+content-type: application/pdf
+date: Mon, 20 Jul 2026 00:01:28 GMT
+etag: "2b76f3f8bde4c9c2a0eedf93fbac933e"
+expires: Thu, 31 Dec 2037 23:55:55 GMT
+last-modified: Sun, 26 Jun 2022 18:09:24 GMT
+referrer-policy: same-origin
+server: AmazonS3
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+via: 1.1 dbb24f3b9579454525416ef48c0f512c.cloudfront.net (CloudFront)
+x-amz-cf-id: LZ1PtK6na_nFMc_AM5bh9Ki5gxrvJOJY34AJHFBDHjU9TOHBDbJ-ag==
+x-amz-cf-pop: DEN52-P3
+x-amz-storage-class: INTELLIGENT_TIERING
+x-cache: Miss from cloudfront
+x-content-type-options: nosniff
+x-robots-tag: noindex, noodp, noarchive, noimageindex
+x-test: 2021-04-06T15
+x-xss-protection: 1; mode=block

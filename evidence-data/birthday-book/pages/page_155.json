@@ -1,0 +1,107 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 155,
+  "page_id": "page_155",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_155.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_155.ocr.txt",
+  "image_metadata": {
+    "bytes": 15006426,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "c713ae3c970d265f3b5c634f3d748de623a07376f81a94b9494f07601e3df7bb"
+  },
+  "ocr_text": "<< SE a gg ee ee eg 4\n - re = a —< = — = a aaa : : ae ne a =\nSj JSEGg ~~ ees = a —— ee aed\n\n—— oo @ N\\ es oy 1e IN\nLy \\ ) ee NN SS) Fj\neS Sa ee I Amok ROR Ss PLL \\e A i [JA eh\n| \\ letl Se Fa (ENE ae oN A\n\\ i = Fol eaters: Lig ad NY ie LP | |) RA\n| Chl ERE a re OG le pf), \\\n\nik dP Wan T\\\\ 26 j Gf TT On - Eas ~ CELE Liew Ff 7 2 ee if\nat!) aa) a \\\\ \\' $7 Per : NIA RB, eee |\nUf ff f ff / | he oes a. ; wy ZF ‘ ae ge f i ye “t]\n\n— p F i : / | / ~ > we S SS YA ee . Y Ne ZL va a H\n\n| r | Oss \\ e “a Ff\n\nas. | Z YS or iy\n\nHOUSE_OVERSIGHT_000155\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A colorful hand-drawn illustration divided into two sections, labeled 1983 and 2003. The 1983 section shows a man giving balloons to three young girls. The 2003 section depicts an older man reclining on a lounge chair on a beach, surrounded by three blonde women in swimwear, with a sunny sky, palm trees, a large house, and a sailboat in the background. An airplane with '908JE' on its side flies in the sky. The text 'what a great country!' is written in red below the 2003 section.",
+    "Layout: Two main inset drawings with overlapping frames inside a main rectangular frame.",
+    "Drawing candidate at entire page: Hand-colored drawing showing scenes from 1983 and 2003 with a man and children in 1983 and an older man with three blonde women on a beach in 2003, plus an airplane and a building in background."
+  ],
+  "observations": [
+    "A colorful hand-drawn illustration divided into two sections, labeled 1983 and 2003. The 1983 section shows a man giving balloons to three young girls. The 2003 section depicts an older man reclining on a lounge chair on a beach, surrounded by three blonde women in swimwear, with a sunny sky, palm trees, a large house, and a sailboat in the background. An airplane with '908JE' on its side flies in the sky. The text 'what a great country!' is written in red below the 2003 section.",
+    "Layout: Two main inset drawings with overlapping frames inside a main rectangular frame.",
+    "Drawing candidate at entire page: Hand-colored drawing showing scenes from 1983 and 2003 with a man and children in 1983 and an older man with three blonde women on a beach in 2003, plus an airplane and a building in background."
+  ],
+  "dates": [
+    "1983",
+    "2003"
+  ],
+  "document_strings": [
+    "908JE",
+    "1983",
+    "2003",
+    "what a great country!"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "bottom center below 2003 inset",
+      "text_as_seen": "what a great country!",
+      "confidence": "high",
+      "note": "Red ink in cursive style."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:27:16.670Z",
+    "response_id": "resp_096ab6f9b7d121e2006a502e4cbdf4819499057d4a20ba2741",
+    "raw_output_sha256": "b2f504c68b8d330e241dd4e7dad2f8646f055732bef42b62a570d0567dd8f797"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_096ab6f9b7d121e2006a502e4cbdf4819499057d4a20ba2741",
+    "enriched_at": "2026-07-09T23:27:16.670Z"
+  },
+  "visual_summary": "A colorful hand-drawn illustration divided into two sections, labeled 1983 and 2003. The 1983 section shows a man giving balloons to three young girls. The 2003 section depicts an older man reclining on a lounge chair on a beach, surrounded by three blonde women in swimwear, with a sunny sky, palm trees, a large house, and a sailboat in the background. An airplane with '908JE' on its side flies in the sky. The text 'what a great country!' is written in red below the 2003 section.",
+  "layout": [
+    "Two main inset drawings with overlapping frames inside a main rectangular frame."
+  ],
+  "handwriting": [
+    {
+      "location": "bottom center below 2003 inset",
+      "text_as_seen": "what a great country!",
+      "confidence": "high",
+      "note": "Red ink in cursive style."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "entire page",
+      "description": "Hand-colored drawing showing scenes from 1983 and 2003 with a man and children in 1983 and an older man with three blonde women on a beach in 2003, plus an airplane and a building in background.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "1983",
+    "2003"
+  ],
+  "confidence": "high"
+}

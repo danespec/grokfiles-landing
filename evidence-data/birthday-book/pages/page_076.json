@@ -1,0 +1,119 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 76,
+  "page_id": "page_076",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_076.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_076.ocr.txt",
+  "image_metadata": {
+    "bytes": 8641731,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "cf9e474e41cb075b135867dae6802cfb6e97342742f77a55a67bded94fcb1840"
+  },
+  "ocr_text": "{a i ear\nG i :\n_ om 4 4‘ .\n*s .’\n- X\nLe\n; *\n. Psa Sh\ne\nne\nee — ;\n> SS MG eee Se ees : ’\nyy : - : . os Pits oe ed, me «1 ¥ AE\n5 : hag 2) st a » eeeey 4 Oe he cee ;\nhae mi bk: oie ft ‘e , . | ia Bs py? a” ahem\nBE be 4 ae 4 : . aes si”) ep: : cae tt S os\nbs Lee. S243 > : yy — eS eat he Bat\na A qs i Or ems\n5 are ce frre Meare a oy Jr) 1 i\nJ ¥ rae 7 '\n_ 5 .\nJno. - 1a a 2 Pa Se\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Two separate printed color photographs on a page. The top photo shows three people standing indoors, two of whom have their faces redacted with black boxes; one person on the right is holding a drink and wearing a suit. The bottom photo shows two people standing indoors against a wood-paneled wall; one face is redacted with a black box; the visible person is wearing a suit with a tie. A patterned chair is partially visible in the bottom photo on the left.",
+    "Layout: top photo",
+    "Layout: bottom photo",
+    "Photo/image candidate at top photo: Indoor photo of three people standing, two faces redacted, a man in a suit holding a drink on the right.",
+    "Photo/image candidate at bottom photo: Indoor photo of two people standing against a wood-paneled wall, one face redacted, one person wearing a suit and tie."
+  ],
+  "observations": [
+    "Two separate printed color photographs on a page. The top photo shows three people standing indoors, two of whom have their faces redacted with black boxes; one person on the right is holding a drink and wearing a suit. The bottom photo shows two people standing indoors against a wood-paneled wall; one face is redacted with a black box; the visible person is wearing a suit with a tie. A patterned chair is partially visible in the bottom photo on the left.",
+    "Layout: top photo",
+    "Layout: bottom photo",
+    "Photo/image candidate at top photo: Indoor photo of three people standing, two faces redacted, a man in a suit holding a drink on the right.",
+    "Photo/image candidate at bottom photo: Indoor photo of two people standing against a wood-paneled wall, one face redacted, one person wearing a suit and tie."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000076"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top photo, left and center faces",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes redacting faces"
+    },
+    {
+      "location": "bottom photo, left face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting face"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:14.344Z",
+    "response_id": "resp_09934ead5e9cff68006a502b7d3ebc819696016e2ddd9c75e2",
+    "raw_output_sha256": "7d2283526c64c276b0bc80fe6969088a73001a0154eb059423b651f229969f96"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09934ead5e9cff68006a502b7d3ebc819696016e2ddd9c75e2",
+    "enriched_at": "2026-07-09T23:15:14.344Z"
+  },
+  "visual_summary": "Two separate printed color photographs on a page. The top photo shows three people standing indoors, two of whom have their faces redacted with black boxes; one person on the right is holding a drink and wearing a suit. The bottom photo shows two people standing indoors against a wood-paneled wall; one face is redacted with a black box; the visible person is wearing a suit with a tie. A patterned chair is partially visible in the bottom photo on the left.",
+  "layout": [
+    "top photo",
+    "bottom photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top photo, left and center faces",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes redacting faces"
+    },
+    {
+      "location": "bottom photo, left face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redacting face"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Indoor photo of three people standing, two faces redacted, a man in a suit holding a drink on the right.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom photo",
+      "description": "Indoor photo of two people standing against a wood-paneled wall, one face redacted, one person wearing a suit and tie.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

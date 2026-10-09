@@ -1,0 +1,139 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 207,
+  "page_id": "page_207",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_207.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_207.ocr.txt",
+  "image_metadata": {
+    "bytes": 7458610,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "7cfe4c16087f6d64f29d30e3a928a2054513ac64b0504d92efc2511289e3c667"
+  },
+  "ocr_text": "I. A ‘be ot -\n%\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "A page with two color photographs, one placed above the other, both with some portions blacked out. The upper photo shows a man in a tuxedo with a woman whose face is blacked out. The lower photo shows multiple people in a dimly lit indoor setting with some faces blacked out. Between the two photos, there is a handwritten note in black ink reading: 'Jeffry... you and I out at a Halloween Party!!'. The page is mostly white with a black border on the right and bottom edges. The upper photo includes visible balloons in the background. The lower photo depicts a person in a dark jacket and a white skirt or apron seated at a bar or counter with some glasses and bottles visible.",
+    "Layout: top photograph",
+    "Layout: handwritten text below top photograph",
+    "Layout: bottom photograph",
+    "Photo/image candidate at top half of page, tilted photo: Man in tuxedo smiling with eyes closed next to a person with long hair; dark background with balloons and party decoration",
+    "Photo/image candidate at bottom half of page, tilted photo: Indoor dimly lit scene with multiple people, some seated, one in white skirt or apron, with bottles and glasses in background"
+  ],
+  "observations": [
+    "A page with two color photographs, one placed above the other, both with some portions blacked out. The upper photo shows a man in a tuxedo with a woman whose face is blacked out. The lower photo shows multiple people in a dimly lit indoor setting with some faces blacked out. Between the two photos, there is a handwritten note in black ink reading: 'Jeffry... you and I out at a Halloween Party!!'. The page is mostly white with a black border on the right and bottom edges. The upper photo includes visible balloons in the background. The lower photo depicts a person in a dark jacket and a white skirt or apron seated at a bar or counter with some glasses and bottles visible.",
+    "Layout: top photograph",
+    "Layout: handwritten text below top photograph",
+    "Layout: bottom photograph",
+    "Photo/image candidate at top half of page, tilted photo: Man in tuxedo smiling with eyes closed next to a person with long hair; dark background with balloons and party decoration",
+    "Photo/image candidate at bottom half of page, tilted photo: Indoor dimly lit scene with multiple people, some seated, one in white skirt or apron, with bottles and glasses in background"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Jeffry... you and I out at a Halloween Party!!",
+    "HOUSE_OVERSIGHT_000207"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center of page between two photographs",
+      "text_as_seen": "Jeffry... you and I out at a Halloween Party!!",
+      "confidence": "high",
+      "note": "Handwritten in black ink, cursive style"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "top photograph center right area covering a person's face and hand",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscuring face and arm"
+    },
+    {
+      "location": "bottom photograph center covering multiple individuals",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redactions obscuring faces and parts of bodies"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:35:35.487Z",
+    "response_id": "resp_03080386b525dec4006a50303fbb248193ab9f4d79bf333a86",
+    "raw_output_sha256": "7ce010cded45191695b627bba428b16189776092002e91a94ba3b16d2980fafa"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03080386b525dec4006a50303fbb248193ab9f4d79bf333a86",
+    "enriched_at": "2026-07-09T23:35:35.487Z"
+  },
+  "visual_summary": "A page with two color photographs, one placed above the other, both with some portions blacked out. The upper photo shows a man in a tuxedo with a woman whose face is blacked out. The lower photo shows multiple people in a dimly lit indoor setting with some faces blacked out. Between the two photos, there is a handwritten note in black ink reading: 'Jeffry... you and I out at a Halloween Party!!'. The page is mostly white with a black border on the right and bottom edges. The upper photo includes visible balloons in the background. The lower photo depicts a person in a dark jacket and a white skirt or apron seated at a bar or counter with some glasses and bottles visible.",
+  "layout": [
+    "top photograph",
+    "handwritten text below top photograph",
+    "bottom photograph"
+  ],
+  "handwriting": [
+    {
+      "location": "center of page between two photographs",
+      "text_as_seen": "Jeffry... you and I out at a Halloween Party!!",
+      "confidence": "high",
+      "note": "Handwritten in black ink, cursive style"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top photograph center right area covering a person's face and hand",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscuring face and arm"
+    },
+    {
+      "location": "bottom photograph center covering multiple individuals",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redactions obscuring faces and parts of bodies"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half of page, tilted photo",
+      "description": "Man in tuxedo smiling with eyes closed next to a person with long hair; dark background with balloons and party decoration",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half of page, tilted photo",
+      "description": "Indoor dimly lit scene with multiple people, some seated, one in white skirt or apron, with bottles and glasses in background",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

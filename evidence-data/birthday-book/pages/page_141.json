@@ -1,0 +1,109 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 141,
+  "page_id": "page_141",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_141.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_141.ocr.txt",
+  "image_metadata": {
+    "bytes": 6996651,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "f5ce9289169db0fea331c4d2e9ca1b80c697c3e2d702016b4ea96cf600801717"
+  },
+  "ocr_text": "®\nfp RPFAC\nPla ae ot! ee petite a 5 a iis ss\n. é z Sess 5 + Seniesa yes ie re\n- ¥ Reais + Oa as ‘on ae\nae “aN 7 TSS ee aon rt ee!\nBE ia he fo 9 91 ao eee\nFea, SNS Sg AS) Soe ae ages oF mars :\nai 2 ail era ita ee ¥ 2\nHOUSE_OVERSIGHT_000141\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A photo at the bottom of the page shows a person parasailing with a yellow parachute against a blue sky with some white clouds. Above the photo, there is a handwritten note in black ink. The note reads: 'But then he would parachute back in ...'",
+    "Layout: Handwritten note at top center",
+    "Layout: Photo at bottom center",
+    "Photo/image candidate at bottom center: Person parasailing with a yellow parachute in a blue sky with white clouds"
+  ],
+  "observations": [
+    "A photo at the bottom of the page shows a person parasailing with a yellow parachute against a blue sky with some white clouds. Above the photo, there is a handwritten note in black ink. The note reads: 'But then he would parachute back in ...'",
+    "Layout: Handwritten note at top center",
+    "Layout: Photo at bottom center",
+    "Photo/image candidate at bottom center: Person parasailing with a yellow parachute in a blue sky with white clouds"
+  ],
+  "dates": [],
+  "document_strings": [
+    "®",
+    "fp RPFAC",
+    "Pla ae ot! ee petite a 5 a iis ss",
+    ". é z Sess 5 + Seniesa yes ie re",
+    "- ¥ Reais + Oa as ‘on ae",
+    "ae “aN 7 TSS ee aon rt ee!",
+    "BE ia he fo 9 91 ao eee",
+    "Fea, SNS Sg AS) Soe ae ages oF mars :",
+    "ai 2 ail era ita ee ¥ 2",
+    "HOUSE_OVERSIGHT_000141"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center above photo",
+      "text_as_seen": "But then he would parachute back in ...",
+      "confidence": "high",
+      "note": "Handwritten text in black ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:08.682Z",
+    "response_id": "resp_0b1830844ab52109006a502dcf70b4819582ab489f0d53caf4",
+    "raw_output_sha256": "21329b728291ed174797c76e2b7b8462aa7223a10ca97658eadd5fb7824dbca9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b1830844ab52109006a502dcf70b4819582ab489f0d53caf4",
+    "enriched_at": "2026-07-09T23:25:08.682Z"
+  },
+  "visual_summary": "A photo at the bottom of the page shows a person parasailing with a yellow parachute against a blue sky with some white clouds. Above the photo, there is a handwritten note in black ink. The note reads: 'But then he would parachute back in ...'",
+  "layout": [
+    "Handwritten note at top center",
+    "Photo at bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top center above photo",
+      "text_as_seen": "But then he would parachute back in ...",
+      "confidence": "high",
+      "note": "Handwritten text in black ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom center",
+      "description": "Person parasailing with a yellow parachute in a blue sky with white clouds",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

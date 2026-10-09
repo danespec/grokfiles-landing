@@ -1,0 +1,78 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "adfin-southern-trust-series-a-2013",
+  "title": "AdFin: Two Southern Trust Wires, 1,428,571 Series A Shares",
+  "published": "2026-09-30",
+  "scope": "BANK-5 reconstruction of Southern Trust Company's two funded 2013 AdFin Solutions Series A subsequent closings and resulting preferred-share ownership.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN9_ADFIN_VALAR_MASTER.md",
+  "sources": [
+    {
+      "id": "ADFIN-SPA",
+      "class": "PRIMARY_EXECUTED_LEGAL_AGREEMENT",
+      "record": "EFTA00289560",
+      "url": "/pdf-lite?id=EFTA00289560",
+      "supports": "Executed Series A SPA; $0.4375/share; April and July subsequent-closing purchaser schedules; Southern Trust 1,142,857 + 285,714 shares; scheduled prices $499,999.94 + $124,999.87.",
+      "limit": "Does not by itself prove bank settlement; bank records below do."
+    },
+    {
+      "id": "ADFIN-APRIL-BANK",
+      "class": "PRIMARY_BANK_TRANSFER_REQUEST",
+      "record": "EFTA01579892",
+      "url": "/pdf-lite?id=EFTA01579892",
+      "supports": "Apr. 10, 2013 Southern Trust $500,000 transfer to AdFin; payment details state subscription for Series A Preferred.",
+      "limit": "Nominal bank amount differs by $0.06 from scheduled legal purchase price."
+    },
+    {
+      "id": "ADFIN-JULY-BANK",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01500582",
+      "url": "/pdf-lite?id=EFTA01500582",
+      "supports": "Jul. 15, 2013 Southern Trust $125,000 Fedwire debit to AdFin for Series A preferred subscription.",
+      "limit": "Bank posting date precedes Jul. 23 legal subsequent-closing date."
+    },
+    {
+      "id": "ADFIN-CERT",
+      "class": "PRIMARY_INTERNAL_FILE_TRACKING_EMAIL",
+      "record": "EFTA00392047",
+      "url": "/pdf-lite?id=EFTA00392047",
+      "supports": "Groff tracks missing Southern Trust stock certificate for 1,142,857 April Series A shares.",
+      "limit": "Certificate image itself is not OCR-recovered; ownership also appears in executed SPA."
+    },
+    {
+      "id": "ADFIN-INTRO",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA00396676",
+      "url": "/pdf-lite?id=EFTA00396676",
+      "supports": "Jan. 2013 Mitchell request to meet Epstein on AdFin and CEO; Epstein approves scheduling.",
+      "limit": "Introduction evidence, not investment authority."
+    },
+    {
+      "id": "RUN9",
+      "class": "GAH_RECONSTRUCTION",
+      "record": "GAH_US_RUN9_ADFIN_VALAR_MASTER.md",
+      "supports": "Two-closing reconciliation, ownership totals, investor-role separation, product classification, negative-control searches and BANK-5 classification.",
+      "limit": "Archive-created synthesis; controlling ownership and cash claims remain tied to primary records."
+    }
+  ],
+  "reconciled_amounts": {
+    "bank_wires_total": 625000.0,
+    "executed_schedule_purchase_price": 624999.81,
+    "rounding_difference": 0.19,
+    "shares": 1428571,
+    "series_a_class_after_july": 7940935,
+    "series_a_percentage_approx": 18.0
+  },
+  "open_questions": [
+    "Whether Southern Trust ever disposed of or redeemed the AdFin position and at what value.",
+    "Whether the optional $225,280 later investment was ever funded outside the recovered bank set.",
+    "Whether the physical stock-certificate image can be recovered.",
+    "The final economic outcome of Southern Trust's stake after later dilution/financing events."
+  ],
+  "not_established": [
+    "A profitable exit or redemption.",
+    "Exercise of the later optional investment.",
+    "Epstein as an AdFin director or unilateral control person.",
+    "Political-ad, government/intelligence, or user-profile targeting activity by AdFin on the recovered record.",
+    "A technical/data bridge from AdFin to Reporty/Carbyne or Barak-linked companies."
+  ]
+}

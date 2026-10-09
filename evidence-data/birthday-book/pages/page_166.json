@@ -1,0 +1,110 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 166,
+  "page_id": "page_166",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_166.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_166.ocr.txt",
+  "image_metadata": {
+    "bytes": 110246,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d098ddfeeb7cd0e02d055ae0a2e837dad9885a69cd5fe3c86a1f6418d7374985"
+  },
+  "ocr_text": "New jeer F | _\n\n. ie ‘of fad ‘ ie ot th Cindi ¢\n\nos ; 2 ; 9 age ek eh PRAL LA j i\n\n3 4 Le a ae vous es ram] mo BF hd ad eta.\n\nCaaf with Gel“ yo |\nHOUSE_OVERSIGHT_000166\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A mostly blank page with a handwritten message in black ink in the upper left quadrant of the page.",
+    "Layout: handwritten text in upper left quadrant"
+  ],
+  "observations": [
+    "A mostly blank page with a handwritten message in black ink in the upper left quadrant of the page.",
+    "Layout: handwritten text in upper left quadrant"
+  ],
+  "dates": [
+    "50th birthday"
+  ],
+  "document_strings": [
+    "Dear Jeffry, For the man who has almost everything - but never enough of these! Said with best wishes for your 50th birthday. No one,"
+  ],
+  "signatures": [
+    {
+      "location": "below handwriting in upper left quadrant",
+      "text_as_seen": "No one,",
+      "confidence": "medium",
+      "note": "Possible signature or closing phrase"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "upper left quadrant",
+      "text_as_seen": "Dear Jeffry, For the man who has almost everything - but never enough of these! Said with best wishes for your 50th birthday. No one,",
+      "confidence": "medium",
+      "note": "Handwriting is mostly legible but some parts are faint and difficult to read"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Uncertainty in some words due to light or unclear handwriting"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:36.914Z",
+    "response_id": "resp_03c1733f28ac0f7a006a502ea06c488196bf69e8804605c272",
+    "raw_output_sha256": "9a6ae2daeefb502cf8501ed9e2275a6f96d2c8f916dddf452e133f17cfbcd4ad"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03c1733f28ac0f7a006a502ea06c488196bf69e8804605c272",
+    "enriched_at": "2026-07-09T23:28:36.914Z"
+  },
+  "visual_summary": "A mostly blank page with a handwritten message in black ink in the upper left quadrant of the page.",
+  "layout": [
+    "handwritten text in upper left quadrant"
+  ],
+  "handwriting": [
+    {
+      "location": "upper left quadrant",
+      "text_as_seen": "Dear Jeffry, For the man who has almost everything - but never enough of these! Said with best wishes for your 50th birthday. No one,",
+      "confidence": "medium",
+      "note": "Handwriting is mostly legible but some parts are faint and difficult to read"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "below handwriting in upper left quadrant",
+      "text_as_seen": "No one,",
+      "confidence": "medium",
+      "note": "Possible signature or closing phrase"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "50th birthday"
+  ],
+  "confidence": "medium"
+}

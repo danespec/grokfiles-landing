@@ -1,0 +1,68 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "coinbase-return-first-15m-exit",
+  "title": "Coinbase in Reverse: The $15M Exit That Proves the Position",
+  "published": "2026-09-30",
+  "scope": "Return-first reconstruction of a Coinbase Series C equity position and February 2018 half-position exit into The 2017 Caterpillar Trust.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+  "sources": [
+    {
+      "id": "COINBASE-SERIES-C",
+      "class": "PRIMARY_EMAIL_AND_ATTACHMENTS",
+      "record": "EFTA00679451",
+      "url": "/pdf-lite?id=EFTA00679451",
+      "supports": "December 2014 Coinbase Series C allocation opportunity and attached financing documents.",
+      "limit": "Opportunity/diligence evidence; not proof of settlement."
+    },
+    {
+      "id": "COINBASE-COST",
+      "class": "PRIMARY_INTERNAL_INVESTMENT_LEDGER_EMAIL",
+      "record": "EFTA02505439",
+      "url": "/pdf-lite?id=EFTA02505439",
+      "supports": "April 2015 Coinbase position recorded at $3,001,000 cost.",
+      "limit": "Does not identify original paying entity or bank debit."
+    },
+    {
+      "id": "COINBASE-NOT-JOI",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02505570",
+      "url": "/pdf-lite?id=EFTA02505570",
+      "supports": "Epstein corrects Kahn's classification: Coinbase is not a Joi investment.",
+      "limit": "Classification evidence only."
+    },
+    {
+      "id": "COINBASE-EXIT-CORR",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02523986",
+      "url": "/pdf-lite?id=EFTA02523986",
+      "supports": "Brock Pierce says Brad Stephens reported $15M wired for half of Epstein's Coinbase position, with $15M equity remaining if closed.",
+      "limit": "Correspondence describes transaction; bank statement below proves matching cash receipt."
+    },
+    {
+      "id": "COINBASE-EXIT-BANK",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01287396",
+      "url": "/pdf-lite?id=EFTA01287396",
+      "supports": "Feb. 21, 2018 Caterpillar Trust credits of $1.875M, $2.625M and $10.5M from Blockchain Capital-related vehicles, totaling $15M.",
+      "limit": "Statement does not itself label the credits 'Coinbase'; attribution comes from same-date correspondence."
+    },
+    {
+      "id": "RUN12",
+      "class": "GAH_RECONSTRUCTION",
+      "record": "GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+      "supports": "Transaction-group reconciliation and BANK-5 exit/economic-interest classification.",
+      "limit": "Archive-created synthesis; original funding leg remains unresolved."
+    }
+  ],
+  "open_questions": [
+    "Which Epstein-associated entity originally funded the Coinbase position.",
+    "Which bank/account carried the original outgoing investment wire.",
+    "Whether additional purchase tranches or basis adjustments existed between 2014 and 2018.",
+    "The precise tax-lot basis and realized gain on the half-position sale."
+  ],
+  "not_established": [
+    "Bank-proven original Coinbase funding.",
+    "A precise realized gain from the February 2018 transaction.",
+    "Wrongdoing arising from the investment or sale."
+  ]
+}

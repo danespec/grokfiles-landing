@@ -1,0 +1,162 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 8,
+  "page_id": "page_008",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_008.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_008.ocr.txt",
+  "image_metadata": {
+    "bytes": 12299198,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "4d15029bdda4d485089147cc68e35200f6c073a865eaca8925feca07c78d333e"
+  },
+  "ocr_text": "1\n- 4 i. 3 : —< k nea\no. Si ” ied Ress 7\na Mat re er\nECDs 3 -\n: , 4 ae tS\nwe y 4% y Sigereee!\n“fs y rity j ‘ ; % ‘1\n7 “1h 4 q ’ =\nCUE Ny : ; oP ee\ni Le FE 3 a oF Spans ~ fe\nSi ee Dee > .\nS c ¢ : \\ - =\nbaa ' ~S / a member of Pack Nb 7. YE “es z (Date ES scant 9, /9g,.2 |\noe (Renee! {FEEAS*: ‘ has achieved the i REY AP ie 7_xonk. After a sotisfactory review of the |\nutd ee ah y Tenderfoot requirements by his Sgoutmaster, he is eligible to become 6 Tenderfoot Scout\nSEN oler Ki XX y isa This certificate is awarded with the best wishes of every member of his Cub Scout pack, |\nReyes fe J Ot Pg ij 4 Ae CX (2 eet oi |\nRea he Mea ae ee eaidiall iF i. : Ciigirman, Pack Committee i\n=e = 2S a ne —— nea A ——— —\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows a Cub Scout graduation certificate with colorful illustrations of scouts and adults, text certifying Cub Scout achievements, and handwritten notes below the certificate. The certificate has a green background with yellow text at the top reading 'CUB SCOUT GRADUATION'. There are various Cub Scout badges on the left side. The certificate has printed and handwritten text certifying a member's achievement of the Tenderfoot rank, with signatures at the bottom. Below the certificate, there is a handwritten note in black ink reading 'No Graduates kept !'.",
+    "Layout: Top section with 'CUB SCOUT GRADUATION' text",
+    "Layout: Left side with Cub Scout badges",
+    "Layout: Center with illustrated figures (scouts and adults)",
+    "Layout: Bottom section with certificate text and signatures",
+    "Layout: Below certificate handwritten note",
+    "Drawing candidate at Main image area: Illustration of scouts and adults in uniform",
+    "Drawing candidate at Left side: Four Cub Scout badges with emblems and symbols",
+    "Drawing candidate at Bottom left beneath badges: Eagle emblem with shield"
+  ],
+  "observations": [
+    "The image shows a Cub Scout graduation certificate with colorful illustrations of scouts and adults, text certifying Cub Scout achievements, and handwritten notes below the certificate. The certificate has a green background with yellow text at the top reading 'CUB SCOUT GRADUATION'. There are various Cub Scout badges on the left side. The certificate has printed and handwritten text certifying a member's achievement of the Tenderfoot rank, with signatures at the bottom. Below the certificate, there is a handwritten note in black ink reading 'No Graduates kept !'.",
+    "Layout: Top section with 'CUB SCOUT GRADUATION' text",
+    "Layout: Left side with Cub Scout badges",
+    "Layout: Center with illustrated figures (scouts and adults)",
+    "Layout: Bottom section with certificate text and signatures",
+    "Layout: Below certificate handwritten note",
+    "Drawing candidate at Main image area: Illustration of scouts and adults in uniform",
+    "Drawing candidate at Left side: Four Cub Scout badges with emblems and symbols",
+    "Drawing candidate at Bottom left beneath badges: Eagle emblem with shield"
+  ],
+  "dates": [
+    "June 9, 1963"
+  ],
+  "document_strings": [
+    "CUB SCOUT GRADUATION",
+    "THIS IS TO CERTIFY THAT",
+    "a member of Pack No. 7 of Shepherd Dist.",
+    "has achieved the Tenderfoot rank. After a satisfactory review of the Tenderfoot requirements by his Scoutmaster, he is eligible to become a Tenderfoot Scout.",
+    "This certificate is awarded with the best wishes of every member of his Cub Scout pack.",
+    "Chairman, Pack Committee"
+  ],
+  "signatures": [
+    {
+      "location": "Bottom right of certificate",
+      "text_as_seen": "Jerry Gardens",
+      "confidence": "medium",
+      "note": "Signature on certificate"
+    },
+    {
+      "location": "Bottom left of certificate",
+      "text_as_seen": "[Illegible signature]",
+      "confidence": "low",
+      "note": "Signature on certificate, handwriting unclear"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "Below the certificate near bottom center",
+      "text_as_seen": "No Graduates kept !",
+      "confidence": "high",
+      "note": "Handwritten note in black ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Partial obscurity or blurring in some handwritten signatures at bottom of certificate"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:03:08.885Z",
+    "response_id": "resp_080f16ef52879397006a5028a07620819386abd5576d8937db",
+    "raw_output_sha256": "6fcb411be67482d6392b4600262838450eecff1668566c5a161335a064e79a96"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_080f16ef52879397006a5028a07620819386abd5576d8937db",
+    "enriched_at": "2026-07-09T23:03:08.885Z"
+  },
+  "visual_summary": "The image shows a Cub Scout graduation certificate with colorful illustrations of scouts and adults, text certifying Cub Scout achievements, and handwritten notes below the certificate. The certificate has a green background with yellow text at the top reading 'CUB SCOUT GRADUATION'. There are various Cub Scout badges on the left side. The certificate has printed and handwritten text certifying a member's achievement of the Tenderfoot rank, with signatures at the bottom. Below the certificate, there is a handwritten note in black ink reading 'No Graduates kept !'.",
+  "layout": [
+    "Top section with 'CUB SCOUT GRADUATION' text",
+    "Left side with Cub Scout badges",
+    "Center with illustrated figures (scouts and adults)",
+    "Bottom section with certificate text and signatures",
+    "Below certificate handwritten note"
+  ],
+  "handwriting": [
+    {
+      "location": "Below the certificate near bottom center",
+      "text_as_seen": "No Graduates kept !",
+      "confidence": "high",
+      "note": "Handwritten note in black ink"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "Bottom right of certificate",
+      "text_as_seen": "Jerry Gardens",
+      "confidence": "medium",
+      "note": "Signature on certificate"
+    },
+    {
+      "location": "Bottom left of certificate",
+      "text_as_seen": "[Illegible signature]",
+      "confidence": "low",
+      "note": "Signature on certificate, handwriting unclear"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "Main image area",
+      "description": "Illustration of scouts and adults in uniform",
+      "confidence": "high"
+    },
+    {
+      "location": "Left side",
+      "description": "Four Cub Scout badges with emblems and symbols",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom left beneath badges",
+      "description": "Eagle emblem with shield",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [
+    "June 9, 1963"
+  ],
+  "confidence": "high"
+}

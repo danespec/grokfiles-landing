@@ -1,0 +1,181 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 159,
+  "page_id": "page_159",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_159.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_159.ocr.txt",
+  "image_metadata": {
+    "bytes": 5061203,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "40c07dfc0d8795548475defc766c64c972e9a392c6367baaff774b64f35966c6"
+  },
+  "ocr_text": "x oC |\n57\ni woe\nxs\n\\ .:\nARIS “\n7\nSU\nAL) ail\n_——\n* ae Fe\nFaln Bea: \\ oe :\nlirrle 5\"). y ° nb * NY @,\ne ‘|\n0 9 GY On\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page shows a hand-drawn image of an airplane with a human head on top of the fuselage. The airplane and head are outlined in black with red highlights. Above and below the airplane are stylized globes with paper airplanes flying from them. Red lines connect the paper airplanes to text labels on the globes. The locations labeled are 'PARIS' (above), and 'SANTA FE', 'Palm Beach', 'N.Y', and 'Little St Jeff' (below). The tail of the airplane has red text 'Ng08 Je'.",
+    "Layout: black-and-white drawing with red annotations",
+    "Layout: upper globe with paper airplane and 'PARIS' label",
+    "Layout: lower globe with multiple paper airplanes and several city labels",
+    "Layout: airplane with human head on top",
+    "Drawing candidate at middle: An outlined airplane with a detailed human head sitting on top of it, in black ink with red accents and lettering",
+    "Drawing candidate at top and bottom of image: Black silhouettes of globe shapes with paper airplanes flying from them, connected by curly lines"
+  ],
+  "observations": [
+    "The page shows a hand-drawn image of an airplane with a human head on top of the fuselage. The airplane and head are outlined in black with red highlights. Above and below the airplane are stylized globes with paper airplanes flying from them. Red lines connect the paper airplanes to text labels on the globes. The locations labeled are 'PARIS' (above), and 'SANTA FE', 'Palm Beach', 'N.Y', and 'Little St Jeff' (below). The tail of the airplane has red text 'Ng08 Je'.",
+    "Layout: black-and-white drawing with red annotations",
+    "Layout: upper globe with paper airplane and 'PARIS' label",
+    "Layout: lower globe with multiple paper airplanes and several city labels",
+    "Layout: airplane with human head on top",
+    "Drawing candidate at middle: An outlined airplane with a detailed human head sitting on top of it, in black ink with red accents and lettering",
+    "Drawing candidate at top and bottom of image: Black silhouettes of globe shapes with paper airplanes flying from them, connected by curly lines"
+  ],
+  "dates": [],
+  "document_strings": [
+    "PARIS",
+    "SANTA FE",
+    "Palm Beach",
+    "N.Y",
+    "Little St Jeff",
+    "Ng08 Je"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "above upper globe",
+      "text_as_seen": "PARIS",
+      "confidence": "high",
+      "note": "Red handwritten capital letters next to a red line pointing to the globe"
+    },
+    {
+      "location": "lower globe right side",
+      "text_as_seen": "SANTA FE",
+      "confidence": "high",
+      "note": "Red handwritten capital letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "lower globe center",
+      "text_as_seen": "Palm Beach",
+      "confidence": "high",
+      "note": "Red handwritten letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "lower globe right",
+      "text_as_seen": "N.Y",
+      "confidence": "high",
+      "note": "Red handwritten letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "lower globe left",
+      "text_as_seen": "Little St Jeff",
+      "confidence": "high",
+      "note": "Red handwritten letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "airplane tail",
+      "text_as_seen": "Ng08 Je",
+      "confidence": "medium",
+      "note": "Red handwritten text on airplane tail"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "The specific identity of the human head is not identified.",
+    "The meaning or significance of the handwritten text 'Ng08 Je' is not clear."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:27:53.075Z",
+    "response_id": "resp_0961d7103007a0b9006a502e6fe8048196a1a7c961fa0b11d5",
+    "raw_output_sha256": "bd5ffe9cca77d30febb216ceb7b15fe895a7602e075ce5782d76df2da0c0e293"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0961d7103007a0b9006a502e6fe8048196a1a7c961fa0b11d5",
+    "enriched_at": "2026-07-09T23:27:53.075Z"
+  },
+  "visual_summary": "The page shows a hand-drawn image of an airplane with a human head on top of the fuselage. The airplane and head are outlined in black with red highlights. Above and below the airplane are stylized globes with paper airplanes flying from them. Red lines connect the paper airplanes to text labels on the globes. The locations labeled are 'PARIS' (above), and 'SANTA FE', 'Palm Beach', 'N.Y', and 'Little St Jeff' (below). The tail of the airplane has red text 'Ng08 Je'.",
+  "layout": [
+    "black-and-white drawing with red annotations",
+    "upper globe with paper airplane and 'PARIS' label",
+    "lower globe with multiple paper airplanes and several city labels",
+    "airplane with human head on top"
+  ],
+  "handwriting": [
+    {
+      "location": "above upper globe",
+      "text_as_seen": "PARIS",
+      "confidence": "high",
+      "note": "Red handwritten capital letters next to a red line pointing to the globe"
+    },
+    {
+      "location": "lower globe right side",
+      "text_as_seen": "SANTA FE",
+      "confidence": "high",
+      "note": "Red handwritten capital letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "lower globe center",
+      "text_as_seen": "Palm Beach",
+      "confidence": "high",
+      "note": "Red handwritten letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "lower globe right",
+      "text_as_seen": "N.Y",
+      "confidence": "high",
+      "note": "Red handwritten letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "lower globe left",
+      "text_as_seen": "Little St Jeff",
+      "confidence": "high",
+      "note": "Red handwritten letters next to a red line pointing to a paper airplane"
+    },
+    {
+      "location": "airplane tail",
+      "text_as_seen": "Ng08 Je",
+      "confidence": "medium",
+      "note": "Red handwritten text on airplane tail"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "middle",
+      "description": "An outlined airplane with a detailed human head sitting on top of it, in black ink with red accents and lettering",
+      "confidence": "high"
+    },
+    {
+      "location": "top and bottom of image",
+      "description": "Black silhouettes of globe shapes with paper airplanes flying from them, connected by curly lines",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,132 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 15,
+  "page_id": "page_015",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_015.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_015.ocr.txt",
+  "image_metadata": {
+    "bytes": 15647403,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "26e21a7d013fa1beee3f3c6ddd0b1b41b454bb94f1f94191bcea5b6ac5784920"
+  },
+  "ocr_text": "the accu yite aie xis ry ral Say ay Aye us Nit 1 * on * Tria aaa v4 Saya tunes ele a\n‘ eho soit Seti a, (¢ :\nSU -\nRe “\nA 9 ’\nmeee — _ - .\n: cee — . ‘ . :\nhey . ORS ~ - nd . f Lf F\nee, oa ae { * ;\nae a h\n. = 39919) ee)\nhea semins : 1 & theme td\neee 78 Se wii ge Cel es ie\n_ ~ * J\nBoe: sae ae . ;\n; wap a v= eee -_ LR alata ‘ 2 ’ eo aa — —— 4\n|\n|\n= ERE eg Ne a\n, i + i rf 7\ni] ns f ;\nH ye eyiiray 3 ef ‘\nof .* ‘ et r A 4\nP 7 a NS\n—- |\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Two photographs on a page. The top photo shows a red caboose-style train car with a 'Santa Fe' logo and the number ATSF 999131 on its side. Handwritten text is visible above and below this photo. The bottom photo shows the interior of a small room with wooden floor, white walls, wooden cabinets, and two windows with wooden frames. There is also a ladder near the cabinets. Handwritten text is visible on the left of this photo.",
+    "Layout: photo top",
+    "Layout: photo bottom",
+    "Photo/image candidate at top photo: Red caboose train car with 'Santa Fe' logo and number ATSF 999131 on side, outdoors on rail track.",
+    "Photo/image candidate at bottom photo: Interior of small room with wooden floor, white walls, wood cabinets, windows, and a ladder."
+  ],
+  "observations": [
+    "Two photographs on a page. The top photo shows a red caboose-style train car with a 'Santa Fe' logo and the number ATSF 999131 on its side. Handwritten text is visible above and below this photo. The bottom photo shows the interior of a small room with wooden floor, white walls, wooden cabinets, and two windows with wooden frames. There is also a ladder near the cabinets. Handwritten text is visible on the left of this photo.",
+    "Layout: photo top",
+    "Layout: photo bottom",
+    "Photo/image candidate at top photo: Red caboose train car with 'Santa Fe' logo and number ATSF 999131 on side, outdoors on rail track.",
+    "Photo/image candidate at bottom photo: Interior of small room with wooden floor, white walls, wood cabinets, windows, and a ladder."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Santa Fe",
+    "ATSF 999131"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "above top photo",
+      "text_as_seen": "From Planes to helicopters to trains. Happy Birthday,",
+      "confidence": "medium",
+      "note": "Cursive style handwriting, some letters faint or connected."
+    },
+    {
+      "location": "below top photo",
+      "text_as_seen": "Where do you want it? Coming through the pass?",
+      "confidence": "medium",
+      "note": "Cursive style handwriting, some letters faint or connected."
+    },
+    {
+      "location": "left side of bottom photo",
+      "text_as_seen": "It is like a good acod w/ a shower & a loo!",
+      "confidence": "low",
+      "note": "Handwriting unclear, OCR matches words with low confidence, original is cursive or hastily written."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:04:27.641Z",
+    "response_id": "resp_0d0ce295665629c8006a5028f1c1308195a4abca097936db51",
+    "raw_output_sha256": "adafe5cf55ac9ef3dd65879fdd37ee18939cace844c482efddb1889240fa9adc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d0ce295665629c8006a5028f1c1308195a4abca097936db51",
+    "enriched_at": "2026-07-09T23:04:27.641Z"
+  },
+  "visual_summary": "Two photographs on a page. The top photo shows a red caboose-style train car with a 'Santa Fe' logo and the number ATSF 999131 on its side. Handwritten text is visible above and below this photo. The bottom photo shows the interior of a small room with wooden floor, white walls, wooden cabinets, and two windows with wooden frames. There is also a ladder near the cabinets. Handwritten text is visible on the left of this photo.",
+  "layout": [
+    "photo top",
+    "photo bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "above top photo",
+      "text_as_seen": "From Planes to helicopters to trains. Happy Birthday,",
+      "confidence": "medium",
+      "note": "Cursive style handwriting, some letters faint or connected."
+    },
+    {
+      "location": "below top photo",
+      "text_as_seen": "Where do you want it? Coming through the pass?",
+      "confidence": "medium",
+      "note": "Cursive style handwriting, some letters faint or connected."
+    },
+    {
+      "location": "left side of bottom photo",
+      "text_as_seen": "It is like a good acod w/ a shower & a loo!",
+      "confidence": "low",
+      "note": "Handwriting unclear, OCR matches words with low confidence, original is cursive or hastily written."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Red caboose train car with 'Santa Fe' logo and number ATSF 999131 on side, outdoors on rail track.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom photo",
+      "description": "Interior of small room with wooden floor, white walls, wood cabinets, windows, and a ladder.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

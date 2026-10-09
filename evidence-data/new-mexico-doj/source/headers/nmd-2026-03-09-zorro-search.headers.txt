@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/press-release/statement-from-new-mexico-department-of-justice-spokesperson-regarding-todays-search-of-the-former-zorro-ranch/
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 1a7c8bb4e8b50772d2632def7502015a94d69a746d2b7daa53b99c33b6a85ae5
+Bytes: 356418
+Acquisition method: verified existing local capture

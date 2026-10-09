@@ -1,0 +1,111 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 29,
+  "page_id": "page_029",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_029.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_029.ocr.txt",
+  "image_metadata": {
+    "bytes": 504019,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "88bb1e9ba06bff489ab3ba96a3875b4cdc837e26c7fa9c9c5b427f0260a75e12"
+  },
+  "ocr_text": "_ ae . G2 vu hey D4 : :\noe a iva ae ye j @ {3 Exe PA fObG.o BPN GAw = a [Oh cea ' |\n_ a a # : ayes oa Ca a g fi fs es \\ foe ‘Ny ff J\n| x “ea . a Fes if fade fF BB. Me et REG. ere oat aon\na. if 4 GT VE J TPA ETI ME © Beets Vou F% |\na Ss be . Auocad a Fr peas é y yee os : f Pudi bebe i nara Bet iat a Na\n| Fl poor BE ROR Pion Boor caeveie Gb Bac! be Bere LS OP ame FEIN f Mabe f\na ae | an Aes§ a ee Cae . peed! Eaton L eed fe. * ey FETE nit Ge ani oa\nos Nox ny vor — Core Eo b bhete SaP ff @* oe, MG commen a\noF a , “e - é . €& ae | f f “y a cho t hs SRS ua eA A. Bihe ptt ws\n_ : | “| on Lee , ye | gobo & i A “f 4 & b hodact bet v eb Lae Ghee, A eens : fr ASE oles\nates ie ‘eh og a 4 Pas Se ee ae , f ~ i A os fibers Bh not AL\ni oe | vee d, gn SS ap toe sil BLOB Sic vP a £. As Bplay\na. oe : f - & 5 i — . oy ay yoo ; |\nRo , Pho wae & de hf ( ) ea be ae Peas TE Ae ot\n- So So a { { , hb 9 See crete Poy ia lh tat dg AON £ . “FY a wee a |\n2 a. Pihag An tate Heel Bor AMQU Rte\n . Bohs fa ue i? APR aa a aa \\e bye at i i = ae akon Mot tins a a beg Bsae® & P ts é oe\neee 4 ; i 3 ¢ -\n| AA pend te  S\\daw, Deen Om deg SP tee\n5 fo Bee “ & Chater oy \\ A vite Lo i & } a poe Lae GALE Pos ai aye EBs a\noe : a o ee me eo ihe co & fife sow . Laie bd gaee® e tot DA eihia RRO s , . “|\nae re, ah ne . : PY ERE & Aé OEP A As Bae bf a ee ee a ee ee ba goeae\ni. esis ALA, Be ph Beret os f ii a cae Le foe an af oe feos f fs # pee ef fe OA ae ee\n_ a 7 if me Fa : fof: a a rs ak . by Be oo ae oh ay ey. guanteens A 4\n: J ae & : ' \\ x hers uch HE, ke EAL td : re F; fle Robe ” & . 4 its sbidigies.c! wot otiells ; e & e ee : £ Ee fe 4) ace\ni aoe i Ladiiac, — es ee Bee Z edd es ol Uk Ge Ae, 7 é } (eh hae te ae fe Bik\n| 7 . mt & be S io é ra in ‘ 7 Ag 7 ee eee ger \\ he pac ar yi veh i i: ne a te RRR\noS . } semble” Po é ;\nee \\W LAY =) FA : Ag? | ARS fa fa Porte ‘woe ae tee a en nt Ge aerial a ]\n_ L, aptaneol, fathers Chae CWeragel Ahh tn\na eee 7, 4 Ya L& rg hte Peb sf CNR | |\na _ ool ey fe. ée . fh wee Pill “ A he eet ue “ fe f valley ite . Ot a oa foo. -\nhoe — on & Hacpitader LLEMPCTERD |\noe pepe ven (00 amen WV Bo TEU RAN EOE © SA TPRS 4\nHOUSE_OVERSIGHT_000029\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten page with cursive text recounting personal experiences during military service in Bermuda, mentions of various places and individuals, a note about a 36 month duration, and a medical treatment. The handwriting is moderately legible but some words are faded or unclear. There is a vertical strip on left side with '36 mos' and the main body text starts with 'I was sent to Bermuda...'.",
+    "Layout: vertical margin note on left",
+    "Layout: main handwritten text block"
+  ],
+  "observations": [
+    "A handwritten page with cursive text recounting personal experiences during military service in Bermuda, mentions of various places and individuals, a note about a 36 month duration, and a medical treatment. The handwriting is moderately legible but some words are faded or unclear. There is a vertical strip on left side with '36 mos' and the main body text starts with 'I was sent to Bermuda...'.",
+    "Layout: vertical margin note on left",
+    "Layout: main handwritten text block"
+  ],
+  "dates": [
+    "Oct. 12 1945",
+    "Sept 16 - 1960"
+  ],
+  "document_strings": [
+    "36 mos",
+    "I was sent to Bermuda where I stayed until Oct. 12 1945 - I made many friends in the army -",
+    "My duties in the army walked & faintly they made me a 1st class gunner on a big gun - My best friend was John Pearls -",
+    "and also I met my Sgt. Fred Roderick -",
+    "I enjoyed my stay in Bermuda very much",
+    "When I was discharged from Ft. Monmouth New Jersey I was sent home to a empty house.",
+    "My mother had an nervous breakdown - Sidney Dubin - a candy store owner told me where she was -",
+    "She was in NURSING HOME IN ASTORIA Queens -",
+    "When I arrived there I saw her my mother was - I then asked the doctor because she was he told me not any good.",
+    "They HAD TO give her a shock treatment for many days -",
+    "When I saw her again she seemed better. She stayed there for about 1 year.",
+    "They sent her home on and off - finally she passed away Sept 16 - 1960 - in a hospital in Hempstead L.I."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "full page except left margin",
+      "text_as_seen": "I was sent to Bermuda where I stayed until Oct. 12 1945 - I made many friends in the army - My duties in the army walked & faintly they made me a 1st class gunner on a big gun - My best friend was John Pearls - and also I met my Sgt. Fred Roderick - I enjoyed my stay in Bermuda very much When I was discharged from Ft. Monmouth New Jersey I was sent home to a empty house. My mother had an nervous breakdown - Sidney Dubin - a candy store owner told me where she was - She was in NURSING HOME IN ASTORIA Queens - When I arrived there I saw her my mother was - I then asked the doctor because she was he told me not any good. They HAD TO give her a shock treatment for many days - When I saw her again she seemed better. She stayed there for about 1 year. They sent her home on and off - finally she passed away Sept 16 - 1960 - in a hospital in Hempstead L.I.",
+      "confidence": "medium",
+      "note": "Text is cursive with moderate legibility; some words faded or unclear but overall understandable."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some words partially faded or unclear, causing slight uncertainty in transcription."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:06:58.392Z",
+    "response_id": "resp_02551d31023bfb7f006a502987d4708190986cac7b2bece8cb",
+    "raw_output_sha256": "463e5ce4d4278f85091360310857fc02c3c74f5a0b68ceb1f6b42062b48a8b76"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_02551d31023bfb7f006a502987d4708190986cac7b2bece8cb",
+    "enriched_at": "2026-07-09T23:06:58.392Z"
+  },
+  "visual_summary": "A handwritten page with cursive text recounting personal experiences during military service in Bermuda, mentions of various places and individuals, a note about a 36 month duration, and a medical treatment. The handwriting is moderately legible but some words are faded or unclear. There is a vertical strip on left side with '36 mos' and the main body text starts with 'I was sent to Bermuda...'.",
+  "layout": [
+    "vertical margin note on left",
+    "main handwritten text block"
+  ],
+  "handwriting": [
+    {
+      "location": "full page except left margin",
+      "text_as_seen": "I was sent to Bermuda where I stayed until Oct. 12 1945 - I made many friends in the army - My duties in the army walked & faintly they made me a 1st class gunner on a big gun - My best friend was John Pearls - and also I met my Sgt. Fred Roderick - I enjoyed my stay in Bermuda very much When I was discharged from Ft. Monmouth New Jersey I was sent home to a empty house. My mother had an nervous breakdown - Sidney Dubin - a candy store owner told me where she was - She was in NURSING HOME IN ASTORIA Queens - When I arrived there I saw her my mother was - I then asked the doctor because she was he told me not any good. They HAD TO give her a shock treatment for many days - When I saw her again she seemed better. She stayed there for about 1 year. They sent her home on and off - finally she passed away Sept 16 - 1960 - in a hospital in Hempstead L.I.",
+      "confidence": "medium",
+      "note": "Text is cursive with moderate legibility; some words faded or unclear but overall understandable."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Oct. 12 1945",
+    "Sept 16 - 1960"
+  ],
+  "confidence": "medium"
+}

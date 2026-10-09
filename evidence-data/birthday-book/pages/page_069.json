@@ -1,0 +1,253 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 69,
+  "page_id": "page_069",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_069.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_069.ocr.txt",
+  "image_metadata": {
+    "bytes": 7801602,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5993cc42a9476ac1613931a9854368cd07fb5c4fe1a09ab1b5a5c587299a77db"
+  },
+  "ocr_text": "fpstecn at H\ni 2 oe\nBOARD OF EDUCATION OF THE CITY OF NEW YORK. SUBJECTS ee | Second | Third [Fourth yea, p get\n\\ po Report Report Report iq\nMarie vi English i727 | ZL Ga too\nJUNIOR wie SCHOOL Aachnliuss- | er eearera) aan ee\nBOROUGH. OF\\2::.2.088 642 meen oe ——— ae ho | Biz} ae ey | owe\ni General Mathematics (th yr.) _ Cae Z a s .\n= > =~] Science _ 7 (Fo 172. fc S [ae 1o@\nREPORT TO PARENTS forage Tonponge Sen — 2 ea Sel ar | tee\n‘ _ ‘ At a 3 tc une a\npak pXein.._Seldecenr Pe | Mule eo sae\nPonte st Name 69 First c Middle Initial Hea Foo ¢ Le Z| 72. 100\n13 1969 Hygiene | 5 mex Ll soo\nTerm Beginning Official Class Home Room No. Talent Class ( y —s _¢oe 2\nfirs, R Sharistee —_—— _———— ae\n(eee een ee eer Sameer oe Lesa Se cae } apa Bees a I ——_\n“The work of the school is planned to discover and co develop your child's aptitudes, H i ne eS E:\nsagen acca ea pereal gE pret ge sai 5 ae = greatly Reading and Arithmetic Grades are the result of Standardized Tests equated to date,\nen —————— tok i\nFirss Report—Teacher's Comment Riff < of e wo™ yh HRHEES CH © 7 alti INDUSTRIAL ARTS AND HOME ECONOMICS ;\n\\ tn. Kendecel try Sosaet 2 epee ‘od a She ' ea Sane eG aaa eae i\nk Con bet goad We Ciaratal by Perot hitlen <f Vs Strat % — —_——_—__-+}-— |} —— —— 4\nPatear’s Signature \\ a a\ni prt ;\n= = Ue fhay Ye » fiber Ah Pai fo toyfrevs “> ‘\nyoo apt Sena BE WA vst dEivdbern, for sbdacel fsa | PERSONAL ADJUSTMENT\n3 An ~ en WR he aires ots eg * ee at ffort® > iv vy A d eo\n[ have read chis £epOrt ...---» Me OM DeSoto 07 Kh Qed tated | Responsibility* i Tw A |_3oe\nParent's Signatuye \\ Self-control® ae gis “| AW _:)\nThird Report—Teacher’s Comment <7, , ret ns atk YG — | o\nGauge OE as Bd tae Cony hae ae nai (eke ae aa Ez = I\nassis iad site Days a a 7 A wr tT) 3 ‘a oe §\nFourth Report—Tcacher's Comment 42 ~ apport A Sort “t+ Days Kare Te ee ee\n’ Lis as 3 cK é 5. He DHS ShED ' Tr eee ee ee ae |\nRatings in percents in multiples of 3, except in single units in grade 9: 90 = Ourstanding :\nJ bhave read (HIS REpONt nese innsnsermennereners et nt earn: Ability; 80 = Considerable Ability; 70 — Average Ability; 65 = Below Average \"\nParent's Signature Ability, bur Passing; Below 65 = Little Ability. Ratings in subjects marked with ao\nSe ee asterisk (%): “O\" = Ourstanding; “S\" = Satisfactory; “N“ Needs Improvement: q\n5 . “y\" == Unsatisfactory. Special Speech Class ratings: “I” = Improved; “NI” = a\naace a “ yf aa oe SEP 4 wart Nor Improved; “DC” = Discharged as Corrected, “D™ = Discharged for Other Reason.\nTRANSEERRED TO? Lease yi ked Bewaton HIGH scHooL BATe.1968 a \"\n[eee eee eens 77-7705-3504-2-61 <p 20\n“Reo a\nbad . q\nprayes* co al Y neal . ejfro, s QASCIA Aan\naaa a a edesdS CUS az Him\na . = 2\n: y o Jao 2K Specs =) fess\ncS \"4 ‘ - f\n- Sere oth fw sSUs~\n.\nP re a | a aLse\nc frie ca. Co col SI\nr ve\n7 a — ee aS ofbse aaa | ~\n~  CaDd*rA-t al Yo- werd,\nsto -\n; bo sew hs ~\nad —e\nhos trey Apexctrsad Je | RA.\n4 cyode\nFUusSsine\n‘ 4 ° hraan\n°\n>. ho forcm To “ev\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image is a scan of a two-page report card or school report from the Board of Education of the City of New York, Junior High School. The left page contains typed and handwritten comments, student information, and teacher signatures. The right page shows a table with subjects and four columns for report marks, with numbers and handwritten annotations. Additional handwritten text fills the bottom half of the page. Various standard headers and labels are visible.",
+    "Layout: Left page: typed form with handwritten annotations, signatures and stamps",
+    "Layout: Right page top: printed table of subjects with scores and handwritten report marks",
+    "Layout: Right page middle: printed text about grading standards",
+    "Layout: Right page bottom: handwritten notes"
+  ],
+  "observations": [
+    "The image is a scan of a two-page report card or school report from the Board of Education of the City of New York, Junior High School. The left page contains typed and handwritten comments, student information, and teacher signatures. The right page shows a table with subjects and four columns for report marks, with numbers and handwritten annotations. Additional handwritten text fills the bottom half of the page. Various standard headers and labels are visible.",
+    "Layout: Left page: typed form with handwritten annotations, signatures and stamps",
+    "Layout: Right page top: printed table of subjects with scores and handwritten report marks",
+    "Layout: Right page middle: printed text about grading standards",
+    "Layout: Right page bottom: handwritten notes"
+  ],
+  "dates": [
+    "1969",
+    "1968",
+    "SEP 13 1969",
+    "SEP 1968"
+  ],
+  "document_strings": [
+    "BOARD OF EDUCATION OF THE CITY OF NEW YORK",
+    "JUNIOR HIGH SCHOOL",
+    "BOROUGH OF BROOKLYN",
+    "REPORT TO PARENTS",
+    "PUPIL'S LAST NAME",
+    "FIRST NAME",
+    "MIDDLE INITIAL",
+    "TERM BEGINNING",
+    "OFFICIAL CLASS",
+    "OFFICIAL TEACHER",
+    "The work of the school is planned to discover and to develop your child's aptitudes",
+    "First Report - Teacher's Comment",
+    "Second Report - Teacher's Comment",
+    "Third Report - Teacher's Comment",
+    "Fourth Report - Teacher's Comment",
+    "NEW OFFICIAL CLASS",
+    "ROOM",
+    "TRANSFERRED TO",
+    "SUBJECTS",
+    "English",
+    "Speech (Special Class)",
+    "Social Studies",
+    "Mathematics",
+    "General Mathematics (9th yr.)",
+    "Science",
+    "Foreign Language",
+    "Art",
+    "Music",
+    "Health Education",
+    "Hygiene",
+    "Typewriting",
+    "Talent Class",
+    "Reading and Arithmetic Grades are the result of Standardized Tests equated to date.",
+    "INDUSTRIAL ARTS AND HOME ECONOMICS",
+    "PERSONAL ADJUSTMENT",
+    "Courtesy",
+    "Efforts",
+    "Responsibility",
+    "Self-control",
+    "Days Absent",
+    "Days Late",
+    "Ratings in percents in multiples of 5, except in single units in grade 9",
+    "Outstanding Ability",
+    "Considerable Ability",
+    "Average Ability",
+    "Below Average Ability",
+    "Passing",
+    "Little Ability",
+    "Needs Improvement",
+    "Unsatisfactory",
+    "Special Speech Class ratings",
+    "Improved",
+    "Not Improved",
+    "Discharged as Corrected",
+    "Discharged for Other Reason",
+    "I have read this report",
+    "Parent's Signature",
+    "Teacher's Signature"
+  ],
+  "signatures": [
+    {
+      "location": "Left page, near bottom under teacher comment sections",
+      "text_as_seen": "Several handwritten signatures of varying legibility",
+      "confidence": "medium",
+      "note": "Signatures appear near comments, but exact names unclear."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "Left page, under 'First Report - Teacher's Comment'",
+      "text_as_seen": "Mostly legible cursive comments with words such as 'responsible' and 'conduct grade'",
+      "confidence": "medium",
+      "note": "Cursive handwriting, moderately legible but some words unclear."
+    },
+    {
+      "location": "Left page, under 'Second Report - Teacher's Comment'",
+      "text_as_seen": "Handwritten comment with name-like text and remarks about student's work",
+      "confidence": "medium",
+      "note": "Handwriting is mostly cursive and some words uncertain."
+    },
+    {
+      "location": "Left page, under 'Third Report - Teacher's Comment'",
+      "text_as_seen": "Handwritten note mentioning 'effort is not meeting' and 'content has improved'",
+      "confidence": "medium",
+      "note": "Cursive handwriting; part of text illegible or partially obscured."
+    },
+    {
+      "location": "Left page, under 'Fourth Report - Teacher's Comment'",
+      "text_as_seen": "Handwritten brief comment possibly reading 'doing good' with date",
+      "confidence": "medium",
+      "note": "Short comment, some letters unclear."
+    },
+    {
+      "location": "Right page, table cells for subjects under 'First Report' to 'Fourth Report'",
+      "text_as_seen": "Handwritten numeric grades such as 70, 77, 71, 68; some scores marked",
+      "confidence": "high",
+      "note": "Handwritten numbers indicating scores."
+    },
+    {
+      "location": "Right page, below table in 'Personal Adjustment' rows",
+      "text_as_seen": "Handwritten marks like 'P', 'N', 'U', and 'A'",
+      "confidence": "high",
+      "note": "Single-letter marks handwritten in rows."
+    },
+    {
+      "location": "Bottom half of right page",
+      "text_as_seen": "Paragraph of cursive handwriting discussing student's progress, mentioning languages, science, health education, etc.",
+      "confidence": "medium",
+      "note": "Long handwritten note, partly legible, some words unclear or partially obscured."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Some handwritten text partially illegible or unclear due to handwriting style and scan quality.",
+    "Specific numerical scores or comments for some subjects may be incomplete or partially obscured."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:14:02.414Z",
+    "response_id": "resp_035204045c724d75006a502b2ccf1c8195b7feb66cef7588c6",
+    "raw_output_sha256": "c40c4efbeefbb5454d1c14be39cfe0531bd5244a0d55ba34b871e22058aaf39e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_035204045c724d75006a502b2ccf1c8195b7feb66cef7588c6",
+    "enriched_at": "2026-07-09T23:14:02.414Z"
+  },
+  "visual_summary": "The image is a scan of a two-page report card or school report from the Board of Education of the City of New York, Junior High School. The left page contains typed and handwritten comments, student information, and teacher signatures. The right page shows a table with subjects and four columns for report marks, with numbers and handwritten annotations. Additional handwritten text fills the bottom half of the page. Various standard headers and labels are visible.",
+  "layout": [
+    "Left page: typed form with handwritten annotations, signatures and stamps",
+    "Right page top: printed table of subjects with scores and handwritten report marks",
+    "Right page middle: printed text about grading standards",
+    "Right page bottom: handwritten notes"
+  ],
+  "handwriting": [
+    {
+      "location": "Left page, under 'First Report - Teacher's Comment'",
+      "text_as_seen": "Mostly legible cursive comments with words such as 'responsible' and 'conduct grade'",
+      "confidence": "medium",
+      "note": "Cursive handwriting, moderately legible but some words unclear."
+    },
+    {
+      "location": "Left page, under 'Second Report - Teacher's Comment'",
+      "text_as_seen": "Handwritten comment with name-like text and remarks about student's work",
+      "confidence": "medium",
+      "note": "Handwriting is mostly cursive and some words uncertain."
+    },
+    {
+      "location": "Left page, under 'Third Report - Teacher's Comment'",
+      "text_as_seen": "Handwritten note mentioning 'effort is not meeting' and 'content has improved'",
+      "confidence": "medium",
+      "note": "Cursive handwriting; part of text illegible or partially obscured."
+    },
+    {
+      "location": "Left page, under 'Fourth Report - Teacher's Comment'",
+      "text_as_seen": "Handwritten brief comment possibly reading 'doing good' with date",
+      "confidence": "medium",
+      "note": "Short comment, some letters unclear."
+    },
+    {
+      "location": "Right page, table cells for subjects under 'First Report' to 'Fourth Report'",
+      "text_as_seen": "Handwritten numeric grades such as 70, 77, 71, 68; some scores marked",
+      "confidence": "high",
+      "note": "Handwritten numbers indicating scores."
+    },
+    {
+      "location": "Right page, below table in 'Personal Adjustment' rows",
+      "text_as_seen": "Handwritten marks like 'P', 'N', 'U', and 'A'",
+      "confidence": "high",
+      "note": "Single-letter marks handwritten in rows."
+    },
+    {
+      "location": "Bottom half of right page",
+      "text_as_seen": "Paragraph of cursive handwriting discussing student's progress, mentioning languages, science, health education, etc.",
+      "confidence": "medium",
+      "note": "Long handwritten note, partly legible, some words unclear or partially obscured."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "Left page, near bottom under teacher comment sections",
+      "text_as_seen": "Several handwritten signatures of varying legibility",
+      "confidence": "medium",
+      "note": "Signatures appear near comments, but exact names unclear."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "SEP 13 1969",
+    "SEP 1968"
+  ],
+  "confidence": "medium"
+}

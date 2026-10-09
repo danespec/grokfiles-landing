@@ -1,0 +1,125 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "AAL-01",
+      "claim": "FBI records document a 2020 allegation stream and a February 16, 2021 FD-302 matching the Andriesz whistleblower record.",
+      "source": "EFTA00020515 / EFTA01249207 / EFTA01249210",
+      "confidence": "P4 document existence and wording; allegations remain unadjudicated"
+    },
+    {
+      "id": "AAL-02",
+      "claim": "The released FD-302 itself states that it contains neither recommendations nor conclusions of the FBI.",
+      "source": "EFTA01249207",
+      "confidence": "P4 document wording"
+    },
+    {
+      "id": "AAL-03",
+      "claim": "The interviewee said he had never interacted with Lutnick and had never met Epstein or Maxwell.",
+      "source": "EFTA01249207",
+      "confidence": "P4 source statement recorded in FD-302"
+    },
+    {
+      "id": "AAL-04",
+      "claim": "An internal FBI email says no investigation was opened as a result of the referenced fraud and money-laundering allegations.",
+      "source": "EFTA00173881",
+      "confidence": "P4 FBI status statement; bounded to this allegation stream"
+    },
+    {
+      "id": "AAL-05",
+      "claim": "Southern Trust and CVAFH I LLC were purchasers in the same amended AdFin financing package; the file identifies Jeffrey Epstein on the Southern Trust purchaser page and Howard W. Lutnick as President on the CVAFH purchaser page.",
+      "source": "EFTA00289560",
+      "confidence": "P4 executed corporate financing file"
+    },
+    {
+      "id": "AAL-06",
+      "claim": "The July 2013 AdFin schedule lists CVAFH I LLC for 800,000 shares at $350,000 and Southern Trust for 285,714 shares at $124,999.87.",
+      "source": "EFTA00289560",
+      "confidence": "P4 purchaser schedule"
+    },
+    {
+      "id": "AAL-07",
+      "claim": "On May 28, 2018 Epstein directly asked HWL about AdFin's prospects, and HWL replied about revenue and economic self-sufficiency.",
+      "source": "EFTA01050772",
+      "confidence": "P4 contemporaneous email"
+    },
+    {
+      "id": "AAL-08",
+      "claim": "Lutnick identified the HWL email as his during his May 6, 2026 House interview.",
+      "source": "HOUSE-LUTNICK-TRANSCRIPT-2026-05-06",
+      "confidence": "P4 congressional testimony"
+    },
+    {
+      "id": "AAL-09",
+      "claim": "Lutnick told the Committee he was not personally an AdFin investor, described Cantor Ventures as Cantor Fitzgerald's venture-capital arm, and said he did not know at the time that Epstein was an AdFin investor.",
+      "source": "HOUSE-LUTNICK-TRANSCRIPT-2026-05-06",
+      "confidence": "P4 testimony; retrospective self-account"
+    },
+    {
+      "id": "AAL-10",
+      "claim": "A 2016 investor letter says Cantor Venture had become AdFin's largest shareholder and the attached term summary says Cantor would become majority owner and effectively control board and stockholder decision-making subject to stated protections.",
+      "source": "EFTA01084694",
+      "confidence": "P4 contemporaneous investor materials"
+    },
+    {
+      "id": "AAL-11",
+      "claim": "EFTA01249210 records 26 New York division case-file query results for Howard Lutnick, including 272D-NY-306108 Serial 204 and 194-NY-C277070-B Serial 392, plus 34 DIVS results including three SARs.",
+      "source": "EFTA01249210 p.2",
+      "confidence": "P4 document wording; Lutnick's role in underlying records is not stated"
+    },
+    {
+      "id": "AAL-12",
+      "claim": "A July 24, 2025 FBI task email directed staff to compile derogatory information on a list of prominent names and annotated the Lutnick entry 'ponzi scheme and money laundering.'",
+      "source": "EFTA01648955",
+      "confidence": "P4 internal FBI email; later review does not establish a formal investigation or finding"
+    },
+    {
+      "id": "AAL-13",
+      "claim": "The CFTC ordered BGC Financial to pay a $3 million civil monetary penalty in November 2019 for supervision, reporting and recordkeeping violations spanning at least 2014 through March 2019.",
+      "source": "CFTC Release 8083-19",
+      "confidence": "P4 regulator enforcement action"
+    },
+    {
+      "id": "AAL-14",
+      "claim": "A September 2020 CFTC announcement describes a second whistleblower based overseas who supplied information about ongoing fraud and efforts to avoid CFTC detection.",
+      "source": "CFTC Release 8239-20",
+      "confidence": "P4 regulator announcement; whistleblower identity and action withheld"
+    },
+    {
+      "id": "AAL-15",
+      "claim": "HMRC issued Regulation 80 determinations totaling £96,037,893 on March 8, 2024 for tax years 2017/18 through 2019/20.",
+      "source": "BGC Services Holdings LLP v HMRC [2025] UKFTT 700 (TC)",
+      "confidence": "P4 official tribunal record"
+    },
+    {
+      "id": "AAL-16",
+      "claim": "BGC's August 2026 10-Q discloses a further 2021/22 HMRC determination, National Insurance proceedings for 2017/18–2021/22, and a $40.6 million accrued liability including a $24.5 million Q2 2026 addition.",
+      "source": "BGC Group Form 10-Q filed 2026-08-10",
+      "confidence": "P4 issuer SEC filing; company states matters are contested"
+    },
+    {
+      "id": "AAL-17",
+      "claim": "The primary public HMRC, tribunal and SEC records reviewed do not identify Simon Andriesz as the referral source that caused the £96,037,893 determinations.",
+      "source": "UKFTT-2025-700-TC / BGC-2026-Q2-10Q",
+      "confidence": "P3 bounded negative finding from reviewed public primary sources; causation remains open"
+    },
+    {
+      "id": "AAL-18",
+      "claim": "The FCA acknowledged that it incorrectly told the complainant that removing anonymity ended PIDA whistleblower protection; it later said PIDA protection was unaffected and that it corrected and apologized.",
+      "source": "FCA response to Complaints Commissioner report 202201760",
+      "confidence": "P4 regulator admission"
+    },
+    {
+      "id": "AAL-19",
+      "claim": "The FCA asked independent non-executive director Lea Paterson to review how it interacted with Simon Andriesz and said it plans to share lessons and its response early next year.",
+      "source": "FCA 'Looking at how we interact with whistleblowers' (Oct. 2026)",
+      "confidence": "P4 current regulator statement; review findings pending"
+    },
+    {
+      "id": "AAL-20",
+      "claim": "The Employment Tribunal struck out Andriesz's 2025 claim; the written reasons record limitation/prospects and alternative abuse-of-process grounds and state that no oral evidence was called at the preliminary hearing.",
+      "source": "Employment Tribunal 3200408/2025 written reasons, 2026-08-11",
+      "confidence": "P4 official judicial decision; not treated as a merits trial of every external allegation"
+    }
+  ]
+}

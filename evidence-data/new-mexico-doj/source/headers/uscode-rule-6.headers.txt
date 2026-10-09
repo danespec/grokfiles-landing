@@ -1,0 +1,7 @@
+URL: https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title18a-node35-node48-rule6
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 6e69e285ff3474630fff8a22c7c66721970acd1c88b0fe05ba0391416db8b3fd
+Bytes: 269201
+Acquisition method: verified existing local capture

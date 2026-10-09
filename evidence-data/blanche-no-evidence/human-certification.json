@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "status": "PASS",
+  "nonnegotiable_honesty_rule": "Codex did not certify by listening. Human reviewer certification is preserved as the publication gate.",
+  "certification_rows": [
+    {
+      "Exchange ID": "HEX-001",
+      "reviewer": "T",
+      "certification date": "2026-07-20",
+      "complete context reviewed": "YES",
+      "certified question": "Questioning about DOJ handling of Epstein files, redactions, and whether new information would be investigated.",
+      "certified answer": "Caption/official excerpt records Blanche saying there were no closed investigations and that DOJ would investigate, indict, and prosecute if new chargeable information emerged.",
+      "official-caption correction": "None",
+      "overlap or interruption": "None",
+      "uncertainty": "None",
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "notes": "Human reviewer listened to the complete context clip and certified an exact match to the official caption. High-quality video and audio. Source transcription status: OFFICIAL_CAPTION plus official Senate press excerpt."
+    },
+    {
+      "Exchange ID": "HEX-002",
+      "reviewer": "T",
+      "certification date": "2026-07-20",
+      "complete context reviewed": "YES",
+      "certified question": "Questioning about meeting with survivors and reviewing information they might provide.",
+      "certified answer": "Caption records Blanche agreeing that DOJ would meet with victims and would review information about other people who worked with Epstein in connection with crimes.",
+      "official-caption correction": "None",
+      "overlap or interruption": "None",
+      "uncertainty": "None",
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "notes": "Human reviewer listened to the complete context clip and certified an exact match to the official caption. High-quality video and audio. Source transcription status: OFFICIAL_CAPTION plus official Senate press excerpt."
+    },
+    {
+      "Exchange ID": "HEX-003",
+      "reviewer": "T",
+      "certification date": "2026-07-20",
+      "complete context reviewed": "YES",
+      "certified question": "Other than to himself, who, if anyone else, would Mr. Epstein traffic young women to?",
+      "certified answer": "Caption records Blanche limiting the answer to what DOJ/FBI files showed, saying career prosecutors did not identify evidence as of now of other men Epstein helped traffic to, while adding that this did not mean it did not happen and asking people with information to come forward.",
+      "official-caption correction": "None",
+      "overlap or interruption": "None",
+      "uncertainty": "None",
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "notes": "Human reviewer listened to the complete context clip and certified an exact match to the official caption. High-quality video and audio. Source transcription status: OFFICIAL_CAPTION."
+    }
+  ],
+  "validation": [
+    {
+      "exchange_id": "HEX-001",
+      "reviewer_present": true,
+      "certification_date_present": true,
+      "complete_context_reviewed": true,
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "publishable_as_exact_quote": true,
+      "limitation": "Certification answer field is summary-level for two exchanges; article quotes only short caption-covered phrases and preserves the full certification row separately."
+    },
+    {
+      "exchange_id": "HEX-002",
+      "reviewer_present": true,
+      "certification_date_present": true,
+      "complete_context_reviewed": true,
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "publishable_as_exact_quote": true,
+      "limitation": "Certification answer field is summary-level for two exchanges; article quotes only short caption-covered phrases and preserves the full certification row separately."
+    },
+    {
+      "exchange_id": "HEX-003",
+      "reviewer_present": true,
+      "certification_date_present": true,
+      "complete_context_reviewed": true,
+      "status": "HUMAN_AUDIO_CERTIFIED_EXACT",
+      "publishable_as_exact_quote": true,
+      "limitation": "Certification answer field is summary-level for two exchanges; article quotes only short caption-covered phrases and preserves the full certification row separately."
+    }
+  ]
+}

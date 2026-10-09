@@ -1,0 +1,66 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "truesec-il-energy-twin-spvs-2013",
+  "title": "Twin Delaware Vehicles, Different First Deals: TrueSec and IL Energy in 2013",
+  "published": "2026-09-30",
+  "scope": "Legal-document comparison of TrueSec Investments LLC and IL Energy LLC, their common ownership/manager architecture, distinct approved transactions, and the absence of documented legal succession from the earlier CSIC concept.",
+  "sources": [
+    {
+      "id": "TRUESEC-OA",
+      "class": "PRIMARY_PRIVATE_LLC_AGREEMENT",
+      "record": "ZURDMS-#387097-v1-GMF_TrueSec_Investments_LLC_-_Operating_Agreement.pdf",
+      "url": "/barak/search?q=TrueSec%20Investments",
+      "sha256": "5114e9853d7473f1b52ddf4e1f354ae43f6dbd06158873a57339296a74a7948d",
+      "supports": "Delaware formation; broad lawful-business purpose; Hyperion manager; GMF Capital AG and Ehud Barak at 50% each; $50K initial contribution each; contemplated additional $385K Class A contribution.",
+      "limit": "Structure does not prove transaction settlement or CSIC succession."
+    },
+    {
+      "id": "TRUESEC-GUARDICORE",
+      "class": "PRIMARY_UNANIMOUS_CONSENT",
+      "record": "ZURDMS-#386639-v1-TrS_Approval_of_Investment_1.pdf",
+      "url": "/barak/search?q=Guardicore",
+      "sha256": "26ca833460aa06855b1d9fc8a2029ce21a6ae9e432b388a5ff5155fe9ab03b06",
+      "supports": "TrueSec members approve investment into Guardicore Ltd. under draft Series A Preferred Share Purchase Agreement and authorize manager to execute/perform.",
+      "limit": "Corporate authorization, not independent bank-settlement proof."
+    },
+    {
+      "id": "ILENERGY-OA",
+      "class": "PRIMARY_PRIVATE_LLC_AGREEMENT",
+      "record": "ZURDMS-#386902-v3-GMF_IL_Energy_LLC_-_Operating_Agreement.pdf",
+      "url": "/barak/search?q=IL%20Energy",
+      "sha256": "7c15230999b7f3289b4115223afe4604c72c4a63380d5269ed166cd025a974f4",
+      "supports": "Parallel Delaware formation; same broad purpose, Hyperion manager, 50/50 GMF/Barak ownership and $50K initial contributions.",
+      "limit": "Structural similarity does not make IL Energy and TrueSec the same entity or business."
+    },
+    {
+      "id": "ILENERGY-MOU",
+      "class": "PRIMARY_UNANIMOUS_CONSENT",
+      "record": "ZURDMS-#387094-v1-ILE_Approval_of_MoU.pdf",
+      "url": "/barak/search?q=IL%20Energy",
+      "sha256": "f86ec2d707c68da1b2438e9a07546ca4ea13ecc790363f3ee3aaac67bbe0413a",
+      "supports": "Operative body identifies IL Energy LLC and approves MOU for natural-gas-powered power stations; heading retains TrueSec name.",
+      "limit": "Template-heading inconsistency is not proof of legal identity; consent does not prove project closing/funding."
+    },
+    {
+      "id": "RUN13",
+      "class": "GAH_CORPUS_RECONSTRUCTION",
+      "record": "GAH_BRIDGE_RUN13_CSIC_TRUESEC_MASTER.md",
+      "supports": "Chronology and negative search around CSIC concept, TrueSec/IL Energy formation package and lack of documented legal succession.",
+      "limit": "Archive-created synthesis; CSIC claims should remain attributed to the workpaper unless the underlying email wrapper is re-recovered."
+    }
+  ],
+  "open_questions": [
+    "Whether independent bank-settlement evidence for the Guardicore investment can be recovered.",
+    "Whether an executed IL Energy MOU or project-funding record survives.",
+    "Whether signed/final operating-agreement signature pages exist beyond the recovered legal package.",
+    "Whether any contemporaneous document explicitly describes the intended relationship, if any, between CSIC and TrueSec."
+  ],
+  "not_established": [
+    "That TrueSec Investments LLC was the legal successor to CSIC.",
+    "That TrueSec and IL Energy were the same legal entity.",
+    "That the IL Energy consent's TrueSec heading proves merger or common assets.",
+    "Guardicore cash settlement solely from the corporate approval.",
+    "Closing or funding of the IL Energy power-station project.",
+    "Misconduct arising from parallel SPV formation or template reuse."
+  ]
+}

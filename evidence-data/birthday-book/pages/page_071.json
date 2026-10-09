@@ -1,0 +1,106 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 71,
+  "page_id": "page_071",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_071.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_071.ocr.txt",
+  "image_metadata": {
+    "bytes": 12893601,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "eefac48e9adba46723fb6811400a85aad0207c8cdc6aa34a6a3dd8bbc5dd49c6"
+  },
+  "ocr_text": "; Fe ie ees 4 7 a _ Sa\n4 eet \\ prem (mle ee a A Patt\ner ye = ‘Oa ‘Seen eo Go  &\n. — yy WT ew\n> —y = . 4\nSg hy ; hb agp eo ;\nar a q bia? y 2 “a a f EF\nv t f * i { i ~ ===\n: 4 ke ie | \\ f Ses\nod 23 fe oy E> 1h Reea. 5 4.37} ' : .\nee oe’ e eS ie\nee Je re = Peri get ty: ‘ }\nClass 9SP3\nRow 1: Merrill Singer, Sharon Broyde, Judith Tlumak, Stephen Schwartz, Joel Man-\ndelman, Elliott Raines, Melody Stern, Gale Reif, Sandra Steigman. ;\nRow 2: Barbara Schwartz, Audrey Roth, Ellen Katz, Kathleen Suter, Mrs. Sharfstein,\nBetty Brodsky, Cheryl Greenspan, Enid Rosman, Debra Nessel. :\nRow 3: Paul Kaminsky, Howard Glatzman, Carey Kuplowitz, Jeffrey Epstein, Mark\nLepton, Stephen Garone, Scott Ehrlich, Warren Eisenstein.\nClass 9SPE\nRow 1: Barry Cohen, Bruce Edelman, David Peck, Diane McGuire, Cynthia Dobson,\nSonia Goldstein, Barry Rosenman, Andrew Hom, Joel Levine.\nRow 2: Esther Gouldin, Leslie Wenderoff, Meryl Viadimer, David Deutch, Mrs. Heslin,\nHerbert Sevush, Jesse Grossman, Lorraine Dade, Carol Rohr.\nRow 3: Kirk Zachary, Robert Weissman, Anthony De Natale, Leonard Levinson.\nCamera Shy: Michele Victor.\n; iS RSE CER IN ME\ngent ERNE A aa ome Pik al tl eee ee\n: 4 me oR Re o. <\n ) pd v i ae a se eyed ;\n| |e aS (9.9 Maas mee *\nx ; ’ pate ¥ PR\nBe a oe ‘\n4 . - A ‘ — e 4\nei: oi Bae pe ae ae\nSEN ey SL, ao Ma oe’ 3a\né ee | De at ee oN '? 4\nHOUSE_OVERSIGHT_000071\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A black and white group photograph of two class groups, each with several rows of students standing and seated, with a brick wall background. Below each group photo are printed class labels and rows with names.",
+    "Layout: top group photograph",
+    "Layout: text block under top photograph",
+    "Layout: bottom group photograph",
+    "Layout: text block under bottom photograph",
+    "Photo/image candidate at top half: Black and white group photograph of Class 9SP3 with students in multiple rows in front of brick wall",
+    "Photo/image candidate at bottom half: Black and white group photograph of Class 9SPE with students in multiple rows in front of brick wall"
+  ],
+  "observations": [
+    "A black and white group photograph of two class groups, each with several rows of students standing and seated, with a brick wall background. Below each group photo are printed class labels and rows with names.",
+    "Layout: top group photograph",
+    "Layout: text block under top photograph",
+    "Layout: bottom group photograph",
+    "Layout: text block under bottom photograph",
+    "Photo/image candidate at top half: Black and white group photograph of Class 9SP3 with students in multiple rows in front of brick wall",
+    "Photo/image candidate at bottom half: Black and white group photograph of Class 9SPE with students in multiple rows in front of brick wall"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Class 9SP3",
+    "Row 1: Merrill Singer, Sharon Broyde, Judith Tlumak, Stephen Schwartz, Joel Mandelman, Elliott Raines, Melody Stern, Gale Reif, Sandra Steigman.",
+    "Row 2: Barbara Schwartz, Audrey Roth, Ellen Katz, Kathleen Suter, Mrs. Sharfstein, Betty Brodsky, Cheryl Greenspan, Enid Rosman, Debra Nessel.",
+    "Row 3: Paul Kaminsky, Howard Glatzman, Carey Kuplowitz, Jeffrey Epstein, Mark Lepton, Stephen Garone, Scott Ehrlich, Warren Eisenstein.",
+    "Class 9SPE",
+    "Row 1: Barry Cohen, Bruce Edelman, David Peck, Diane McGuire, Cynthia Dobson, Sonia Goldstein, Barry Rosenman, Andrew Hom, Joel Levine.",
+    "Row 2: Esther Gouldin, Leslie Wenderoff, Meryl Vladimer, David Deutch, Mrs. Heslin, Herbert Sevush, Jesse Grossman, Lorraine Dade, Carol Rohr.",
+    "Row 3: Kirk Zachary, Robert Weissman, Anthony De Natale, Leonard Levinson.",
+    "Camera Shy: Michele Victor."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:14:28.986Z",
+    "response_id": "resp_08f32fa962e27062006a502b4bdddc8196a32d83802ae0022f",
+    "raw_output_sha256": "a5dba71f1e076c6944a47bda0c9e7697eaa2f1ed6a3b30d4b62f7e8c051a88e0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08f32fa962e27062006a502b4bdddc8196a32d83802ae0022f",
+    "enriched_at": "2026-07-09T23:14:28.986Z"
+  },
+  "visual_summary": "A black and white group photograph of two class groups, each with several rows of students standing and seated, with a brick wall background. Below each group photo are printed class labels and rows with names.",
+  "layout": [
+    "top group photograph",
+    "text block under top photograph",
+    "bottom group photograph",
+    "text block under bottom photograph"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half",
+      "description": "Black and white group photograph of Class 9SP3 with students in multiple rows in front of brick wall",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half",
+      "description": "Black and white group photograph of Class 9SPE with students in multiple rows in front of brick wall",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

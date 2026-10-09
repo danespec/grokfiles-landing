@@ -1,0 +1,126 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 73,
+  "page_id": "page_073",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_073.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_073.ocr.txt",
+  "image_metadata": {
+    "bytes": 222403,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5b5c5e9bfcf2575d1f7ed70aa9f66b8127fe25035c3dd970cbe4d22088aa01f5"
+  },
+  "ocr_text": "Dr. Stephen Levy ;\n6 Lerey Court\nCommack, New York 11725\n(631) 543-4783 Fax: (631) 543-4697 Cell: (516) 316-2303 e-mail: slevy@pipeling.com\n\nDecember, 2002\nJeffrey,\nYou could never imagine the surprise | felt when Ghislaine first contacted me about writing something for your\nmemory book.\nOver the years I have thought of Class 5-3 & 6-3, numerous times with affection and really fond memories. After all,\nyou guys were my second class EVER and { had just transferred from my first job, which was in, of all places, Fort\nApache, The Bronx! Imagine, coming from a class of hold-overs, delinquents, and worse, to a class of “Intellectually ©\nGifted Children.” Believe me, it was quite a chore just to keep one step ahead of that class.\nOne day, about 2 weeks ago, I was on the Northern State Parkway on my way home, creeping along at 5 miles an\nhour, in the midst of a snowstorm, when my cell phone rang. I spent the next 15 minutes or so reliving the past with\nWarren, who was calling from sunny Dallas, Texas. As we talked and he mentioned students’ names, most of the\nfaces flashed before my eyes. I even told him.... Jeffrey, saxophone, Michael, clarinet, Warren, saxophone and so on\nfor most of the class. He later sent me a picture of the class and there | was, much thinner, with black horn-rimmed\nglasses and a full head of dark brown hair. There you were, just as | remembered you, with a Mona Lisa smile that\nhid what was really going on in that interesting brain of yours. Who could have guessed the wonderful, fascinating\nthings that were in store for you?\nI remember discussing Abraham Lincoln with the class and staring in wonder at the student who had read all of\nSandberg’s Life of Lincoln and spouted facts of which I was totally unaware. | also remember my math (never my\nstrong suit) being corrected from time to time, very respectfully, by Jeffrey. I also remember the Coney Island\nCleanup Parade and performing onstage at Lafayette and blowing away the audience who had just listened to a\nJunior High orchestra.\nI have many awards and plaques on my office walls, at home and at work.... too many for any one place, but for all\nthese years | still treasure and display the goid painted, wooden plaque that I received from your class for being the\n“Best Teacher.”\nI’m thrilled and delighted that you still remember me and that in some small way 1 may have made a difference and\ntouched your life. Happy Birthday!\n\n“on 1963, you were around 10 and J was 23.... twice as old as you. Today you are 50 and I’m 63.... somehow you’re\ncatching up! How did that happen?\n>it eae oa a le ae ak ofa eae af af oe ae ae ae af al eae ab af af ab al fe ae ae ae af a al le oe afaik aff ae ake age ake fe oe sea a\nDr. Stephen Levy, Principal, General Studies\nHebrew Academy of Nassau County (HANC), West Hempstead Campus\nPresident, PDI, Columbia University.\nMember, Children's Scholarship Fund National Teachers Advisory Board.\nFICCI OIC IOR AGIOS ICI CR ek ak ka ff ake ake ak a]. oi ok okt ae oe ofa ak of fe a ok rico ak ae ak aks\n\nHOUSE_OVERSIGHT_000073\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is a typed letter dated December 2002, from Dr. Stephen Levy, Principal and General Studies at Hebrew Academy of Nassau County. The letter is addressed to Jeffrey and reflects on past memories related to school classes, music, and teaching experiences. The letter includes a signature mark at the bottom. The letterhead includes Dr. Stephen Levy's contact information and affiliations.",
+    "Layout: letterhead",
+    "Layout: date",
+    "Layout: salutation",
+    "Layout: body text",
+    "Layout: signature",
+    "Layout: footer"
+  ],
+  "observations": [
+    "The page is a typed letter dated December 2002, from Dr. Stephen Levy, Principal and General Studies at Hebrew Academy of Nassau County. The letter is addressed to Jeffrey and reflects on past memories related to school classes, music, and teaching experiences. The letter includes a signature mark at the bottom. The letterhead includes Dr. Stephen Levy's contact information and affiliations.",
+    "Layout: letterhead",
+    "Layout: date",
+    "Layout: salutation",
+    "Layout: body text",
+    "Layout: signature",
+    "Layout: footer"
+  ],
+  "dates": [
+    "2002",
+    "1963",
+    "December, 2002"
+  ],
+  "document_strings": [
+    "Dr. Stephen Levy",
+    "6 Leroy Court",
+    "Commack, New York 11725",
+    "(631) 543-4783 Fax: (631) 543-4697 Cell: (516) 316-2303 e-mail: slevy@pipeline.com",
+    "December, 2002",
+    "Jeffrey,",
+    "You could never imagine the surprise I felt when Ghislaine first contacted me about writing something for your memory book.",
+    "Over the years I have thought of Class 5-3 & 6-3, numerous times with affection and really fond memories. After all, you guys were my second class EVER and I had just transferred from my first job, which was in, of all places, Fort Apache, The Bronx! Imagine, coming from a class of hold-overs, delinquents, and worse, to a class of \"Intellectually Gifted Children.\" Believe me, it was quite a chore just to keep one step ahead of that class.",
+    "One day, about 2 weeks ago, I was on the Northern State Parkway on my way home, creeping along at 5 miles an hour, in the midst of a snowstorm, when my cell phone rang. I spent the next 15 minutes or so reliving the past with Warren, who was calling from sunny Dallas, Texas. As we talked and he mentioned students’ names, most of the faces flashed before my eyes. I even told him.... Jeffrey, saxophone, Michael, clarinet, Warren, saxophone and so on for most of the class. He later sent me a picture of the class and there I was, much thinner, with black horn-rimmed glasses and a full head of dark brown hair. There you were, just as I remembered you, with a Mona Lisa smile that hid what was really going on in that interesting brain of yours. Who could have guessed the wonderful, fascinating things that were in store for you?",
+    "I remember discussing Abraham Lincoln with the class and staring in wonder at the student who had read all of Sandberg’s Life of Lincoln and spouted facts of which I was totally unaware. I also remember my math (never my strong suit) being corrected from time to time, very respectfully, by Jeffrey. I also remember the Coney Island Cleanup Parade and performing onstage at Lafayette and blowing away the audience who had just listened to a Junior High orchestra.",
+    "I have many awards and plaques on my office walls, at home and at work…. too many for any one place, but for all these years I still treasure and display the gold painted, wooden plaque that I received from your class for being the \"Best Teacher.\"",
+    "I’m thrilled and delighted that you still remember me and that in some small way I may have made a difference and touched your life. Happy Birthday!",
+    "In 1963, you were around 10 and I was 23…. twice as old as you. Today you are 50 and I’m 63…. somehow you’re catching up! How did that happen?",
+    "Dr. Stephen Levy, Principal, General Studies",
+    "Hebrew Academy of Nassau County (HANC), West Hempstead Campus",
+    "President, PDK, Columbia University.",
+    "Member, Children's Scholarship Fund National Teachers Advisory Board."
+  ],
+  "signatures": [
+    {
+      "location": "bottom left quadrant",
+      "text_as_seen": "signature",
+      "confidence": "medium",
+      "note": "A handwritten signature appears below the letter closing."
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:14:50.134Z",
+    "response_id": "resp_04d04e6621d1dcc9006a502b5f31b48194a46dab61ef84b320",
+    "raw_output_sha256": "fcc19bd93d77bbabe686801b609a852af74f16a8d9ed7d83113a386b4b94efef"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04d04e6621d1dcc9006a502b5f31b48194a46dab61ef84b320",
+    "enriched_at": "2026-07-09T23:14:50.134Z"
+  },
+  "visual_summary": "The page is a typed letter dated December 2002, from Dr. Stephen Levy, Principal and General Studies at Hebrew Academy of Nassau County. The letter is addressed to Jeffrey and reflects on past memories related to school classes, music, and teaching experiences. The letter includes a signature mark at the bottom. The letterhead includes Dr. Stephen Levy's contact information and affiliations.",
+  "layout": [
+    "letterhead",
+    "date",
+    "salutation",
+    "body text",
+    "signature",
+    "footer"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom left quadrant",
+      "text_as_seen": "signature",
+      "confidence": "medium",
+      "note": "A handwritten signature appears below the letter closing."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "December, 2002"
+  ],
+  "confidence": "high"
+}

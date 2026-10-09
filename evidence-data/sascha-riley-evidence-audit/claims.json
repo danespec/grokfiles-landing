@@ -1,0 +1,21 @@
+{
+  "schema": "gah.claim-ledger.v1",
+  "investigation": "sascha-riley-claims-evidence-audit",
+  "updated": "2026-10-06",
+  "labels": ["SUPPORTED","PARTIALLY_SUPPORTED","UNSUPPORTED","CONTRADICTED_AS_RECONSTRUCTED","NOT_FOUND","NOT_CORROBORATED","UNPRODUCED","OPEN"],
+  "claims": [
+    {"id":"RILEY-C01","claim":"1978 adoption/name change to William Sascha Riley","status":"SUPPORTED","limit":"Reproduced decree used; GAH has not published a newly certified court copy."},
+    {"id":"RILEY-C02","claim":"Army service biography","status":"PARTIALLY_SUPPORTED","limit":"Circulated DD-214 image, not an official personnel release obtained by GAH."},
+    {"id":"RILEY-C03","claim":"Adoptive father had rotorcraft/medevac aviation background","status":"PARTIALLY_SUPPORTED","limit":"William Kyle Riley aviation footprint exists; viral Master Pilot article identity merge remains disputed."},
+    {"id":"RILEY-C04","claim":"Riley family owned or occupied the investigated Mount Hope farm during the alleged period","status":"UNSUPPORTED","limit":"No deed, lease, tax, or occupancy record tying the family to the property was found in the audit."},
+    {"id":"RILEY-C05","claim":"Donald Trump was present at the alleged Tennessee farm encounter","status":"UNSUPPORTED","limit":"Tennessee-adjacent sports/business context does not place him at the site."},
+    {"id":"RILEY-C06","claim":"Reagan/Secret Service created an overnight Greene County perimeter","status":"CONTRADICTED_AS_RECONSTRUCTED","limit":"Reagan diary shows a day trip through Knoxville and Athens followed by return to Washington."},
+    {"id":"RILEY-C07","claim":"Jim Jordan, Lindsey Graham or Andy Biggs were present at the alleged Tennessee site","status":"UNSUPPORTED","limit":"GAH found no relevant Tennessee placement and removed the three names from its working theory."},
+    {"id":"RILEY-C08","claim":"Clarence Thomas was present at the alleged Tennessee site","status":"UNSUPPORTED","limit":"No source located by GAH places him at the site or encounter."},
+    {"id":"RILEY-C09","claim":"Riley or his adoptive father appears in the reviewed public Epstein address-book/flight-log record","status":"NOT_FOUND","limit":"Negative result applies only to the public sets and name variants examined by GAH."},
+    {"id":"RILEY-C10","claim":"A helicopter evacuation followed a severe injury at the alleged farm","status":"UNSUPPORTED","limit":"No flight, aircraft, hospital, medical, pilot, or independent witness record was located."},
+    {"id":"RILEY-C11","claim":"Fort Carson CSAM/court-martial records identify Riley as victim or witness","status":"NOT_CORROBORATED","limit":"Expanded Army CID search reproduced by Voldeng found no record containing Riley's name or identifiers in the requested lane."},
+    {"id":"RILEY-C12","claim":"Medical records independently identify a named public figure as an abuser","status":"UNPRODUCED","limit":"The underlying medical record has not been published/authenticated in the source set used here."},
+    {"id":"RILEY-C13","claim":"Independent co-victim or second-survivor corroboration of the named-person account","status":"NOT_FOUND","limit":"No independent corroborating survivor/witness was located in the audit."}
+  ]
+}

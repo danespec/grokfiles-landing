@@ -1,0 +1,19 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "scope": "One-page 2025 FBI email explaining why a small set of Epstein-associated documents was outside a 50D case file.",
+  "sources": [
+    {
+      "id": "EFTA02730468",
+      "role": "controlling 2025 FBI scrub email",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2012/EFTA02730468.pdf",
+      "sha256": "17f4a6cf417e41c68d14c464cffafb3a83939aa16324d0c5bcd4f258fbd333ce",
+      "status": "local hash-verified primary DOJ PDF"
+    }
+  ],
+  "limits": [
+    "“Not of evidentiary value” is the sender’s characterization, not a judicial finding.",
+    "The email does not establish destruction, suppression or a universal rule for all out-of-file records.",
+    "Two attachment descriptions remain redacted and are not inferred."
+  ]
+}

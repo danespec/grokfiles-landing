@@ -1,0 +1,202 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 112,
+  "page_id": "page_112",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_112.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_112.ocr.txt",
+  "image_metadata": {
+    "bytes": 6804679,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ae7cd45e0ebf8b6e2879637182b87c879f9881d55a236bf9e32336823b16bc9d"
+  },
+  "ocr_text": "\\\neA 4\n+f\n: # a\nhd, : at ee\nLS\nng i.” | ~es\nHOUSE_OVERSIGHT_000112\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains four color photographs arranged in a grid-like layout, each showing a person wearing a white garment with blue stars. Three photographs are partially obscured by black redactions covering faces and identifying features. The person in the unredacted areas is standing or playing the piano. Handwritten captions are present next to the photographs.",
+    "Layout: Top left photo with partial redaction",
+    "Layout: Top right photo with partial redaction",
+    "Layout: Bottom left photo with partial redaction",
+    "Layout: Bottom right photo with partial redaction",
+    "Photo/image candidate at Top left quadrant: Color photo of a person in white clothes with blue stars, side view, hands on hips, background wall",
+    "Photo/image candidate at Top right quadrant: Color photo of a person wearing a white garment with blue stars, upper body visible, background obscured",
+    "Photo/image candidate at Bottom left quadrant: Color photo of a person playing piano keys, wearing white sleeveless top with blue stars, piano keyboard and sheet music visible",
+    "Photo/image candidate at Bottom right quadrant: Color photo focusing on hands playing piano keys, wearing white sleeveless top with blue stars, side view"
+  ],
+  "observations": [
+    "The page contains four color photographs arranged in a grid-like layout, each showing a person wearing a white garment with blue stars. Three photographs are partially obscured by black redactions covering faces and identifying features. The person in the unredacted areas is standing or playing the piano. Handwritten captions are present next to the photographs.",
+    "Layout: Top left photo with partial redaction",
+    "Layout: Top right photo with partial redaction",
+    "Layout: Bottom left photo with partial redaction",
+    "Layout: Bottom right photo with partial redaction",
+    "Photo/image candidate at Top left quadrant: Color photo of a person in white clothes with blue stars, side view, hands on hips, background wall",
+    "Photo/image candidate at Top right quadrant: Color photo of a person wearing a white garment with blue stars, upper body visible, background obscured",
+    "Photo/image candidate at Bottom left quadrant: Color photo of a person playing piano keys, wearing white sleeveless top with blue stars, piano keyboard and sheet music visible",
+    "Photo/image candidate at Bottom right quadrant: Color photo focusing on hands playing piano keys, wearing white sleeveless top with blue stars, side view"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000112"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top right near photo",
+      "text_as_seen": "A new series of pictures",
+      "confidence": "high",
+      "note": "Handwritten in black ink"
+    },
+    {
+      "location": "Middle right near photo",
+      "text_as_seen": "looking looking",
+      "confidence": "high",
+      "note": "Handwritten in black ink"
+    },
+    {
+      "location": "Middle left below photo",
+      "text_as_seen": "Playing the Steinway",
+      "confidence": "high",
+      "note": "Handwritten in black ink"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "Top left photo, covering upper body and face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring face and upper body"
+    },
+    {
+      "location": "Top right photo, covering face and shoulder area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring face and shoulder"
+    },
+    {
+      "location": "Bottom left photo, covering upper body",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring chest and face"
+    },
+    {
+      "location": "Bottom right photo, covering face area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring face"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:10.090Z",
+    "response_id": "resp_099ccf7e8f6d75d0006a502cdef77c8193bd8d9a24fc48c3ad",
+    "raw_output_sha256": "413d79fdd97a0f79279bf346cae596da099ed6496c8e7c25a65b02a88e750dfd"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_099ccf7e8f6d75d0006a502cdef77c8193bd8d9a24fc48c3ad",
+    "enriched_at": "2026-07-09T23:21:10.090Z"
+  },
+  "visual_summary": "The page contains four color photographs arranged in a grid-like layout, each showing a person wearing a white garment with blue stars. Three photographs are partially obscured by black redactions covering faces and identifying features. The person in the unredacted areas is standing or playing the piano. Handwritten captions are present next to the photographs.",
+  "layout": [
+    "Top left photo with partial redaction",
+    "Top right photo with partial redaction",
+    "Bottom left photo with partial redaction",
+    "Bottom right photo with partial redaction"
+  ],
+  "handwriting": [
+    {
+      "location": "Top right near photo",
+      "text_as_seen": "A new series of pictures",
+      "confidence": "high",
+      "note": "Handwritten in black ink"
+    },
+    {
+      "location": "Middle right near photo",
+      "text_as_seen": "looking looking",
+      "confidence": "high",
+      "note": "Handwritten in black ink"
+    },
+    {
+      "location": "Middle left below photo",
+      "text_as_seen": "Playing the Steinway",
+      "confidence": "high",
+      "note": "Handwritten in black ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Top left photo, covering upper body and face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring face and upper body"
+    },
+    {
+      "location": "Top right photo, covering face and shoulder area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring face and shoulder"
+    },
+    {
+      "location": "Bottom left photo, covering upper body",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring chest and face"
+    },
+    {
+      "location": "Bottom right photo, covering face area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring face"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Top left quadrant",
+      "description": "Color photo of a person in white clothes with blue stars, side view, hands on hips, background wall",
+      "confidence": "high"
+    },
+    {
+      "location": "Top right quadrant",
+      "description": "Color photo of a person wearing a white garment with blue stars, upper body visible, background obscured",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom left quadrant",
+      "description": "Color photo of a person playing piano keys, wearing white sleeveless top with blue stars, piano keyboard and sheet music visible",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom right quadrant",
+      "description": "Color photo focusing on hands playing piano keys, wearing white sleeveless top with blue stars, side view",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

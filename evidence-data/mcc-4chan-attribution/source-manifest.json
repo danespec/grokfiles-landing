@@ -1,0 +1,27 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "sources": [
+    {
+      "id": "EFTA00133349",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00133349.pdf",
+      "status": "official DOJ public route; local hash not acquired in this build"
+    },
+    {
+      "id": "EFTA00123462",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00123462.pdf",
+      "status": "official DOJ public route; local hash not acquired in this build"
+    },
+    {
+      "id": "EFTA00133182",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00133182.pdf",
+      "status": "official DOJ public route; local hash not acquired in this build"
+    },
+    {
+      "id": "EFTA00048963",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00048963.pdf",
+      "status": "separate MCC record; not an authorship join"
+    }
+  ],
+  "correction": "A prior internal GAH thread capture stated Grijalva was the identified 4chan poster. This public brief withdraws that categorical attribution pending an explicit identity join."
+}

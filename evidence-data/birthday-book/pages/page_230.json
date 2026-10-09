@@ -1,0 +1,75 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 230,
+  "page_id": "page_230",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_230.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_230.ocr.txt",
+  "image_metadata": {
+    "bytes": 67081,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c7689d2cf1580fcc50f56143513106b9bbced155d3e8a6634afdb41aa5317e15"
+  },
+  "ocr_text": "Business\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "A black page with the single white word 'Business' centered on it in a serif font.",
+    "Layout: full page centered text"
+  ],
+  "observations": [
+    "A black page with the single white word 'Business' centered on it in a serif font.",
+    "Layout: full page centered text"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Business",
+    "HOUSE_OVERSIGHT_000230"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:02.510Z",
+    "response_id": "resp_0c29b531e7d764f6006a503114444c8195ab36c3b78ce2b700",
+    "raw_output_sha256": "80f2b0424bd1db416a5be7586a23a8156277dad30e6dd35d692377b01e7f201d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c29b531e7d764f6006a503114444c8195ab36c3b78ce2b700",
+    "enriched_at": "2026-07-09T23:39:02.511Z"
+  },
+  "visual_summary": "A black page with the single white word 'Business' centered on it in a serif font.",
+  "layout": [
+    "full page centered text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

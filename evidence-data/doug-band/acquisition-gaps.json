@@ -1,0 +1,65 @@
+{
+  "route": "/document-autopsies/doug-band-transcript",
+  "gaps": [
+    {
+      "gap_id": "GAP-001",
+      "missing_primary_record": "Underlying 2011 email or memo removing Maxwell from Clinton contact lists",
+      "needed_to_resolve": "Whether the removal instruction existed, who received it, and what lists or systems it covered.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-002",
+      "missing_primary_record": "Clinton Foundation / CGI annual reports, event records, and primary recognition materials for the 2013 Maxwell event",
+      "needed_to_resolve": "Whether Maxwell was recognized in 2013 and what internal systems still listed her.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-003",
+      "missing_primary_record": "Row-level visual flight-log audit and Secret Service travel records",
+      "needed_to_resolve": "Which legs list Clinton, Band, Epstein, Maxwell, staff, and protection personnel and how those records compare with the 2019 Clinton statement.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-004",
+      "missing_primary_record": "Full Clinton deposition transcripts or downloaded deposition videos",
+      "needed_to_resolve": "Direct comparison with Clinton's own House testimony.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-005",
+      "missing_primary_record": "Public Kathryn Ruemmler transcript",
+      "needed_to_resolve": "Whether Ruemmler testimony overlaps Band's final communication list.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-006",
+      "missing_primary_record": "Underlying Vanity Fair interview notes/audio or article file used in committee questioning",
+      "needed_to_resolve": "Whether a Little Saint James assertion was actually attributed to Band and with what wording.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-007",
+      "missing_primary_record": "Majority Exhibit 5 standalone EFTA/source PDF",
+      "needed_to_resolve": "Independent source route for the BlackBerry email read into the transcript.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-008",
+      "missing_primary_record": "Primary photograph/source file for the redacted massage and Moroccan pool/hot-tub prompts",
+      "needed_to_resolve": "Exact image provenance while preserving transcript redactions.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-009",
+      "missing_primary_record": "White House visitor logs and post-presidency office visitor records tied to Epstein, Maxwell, Clinton, and Band",
+      "needed_to_resolve": "Whether visitor records independently support or complicate Band's recollections.",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "gap_id": "GAP-010",
+      "missing_primary_record": "Complete Clinton office travel files, manifests, staff itineraries, invoices, and aircraft-use records for 2001-2004",
+      "needed_to_resolve": "Purpose, authorization, and passenger composition for trips discussed in testimony.",
+      "status": "ACQUISITION_PENDING"
+    }
+  ]
+}

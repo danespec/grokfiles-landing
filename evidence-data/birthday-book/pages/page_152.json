@@ -1,0 +1,82 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 152,
+  "page_id": "page_152",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_152.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_152.ocr.txt",
+  "image_metadata": {
+    "bytes": 21623983,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "887e116ba07ad66e0dc51a0167339a2f84364c04d4be2339ec6851b8d82ee405"
+  },
+  "ocr_text": "He ee Fe Sf eee & oF PS ok te e i ee See. et a,\nf.* ; t ‘ ® # . bs , Y a ‘eae, . ie a + . \" a\n; a 2 4 7 4 \" i . % eS = ie = eR i , Som, ae » oe\nF + + i at e 77. » 17 it a ; i te) ph! % pA ys Eg @ 4 “ee | , f\n' = \"a ; ie 7 a ¥ ” coal Tree oh bs Me ¥ Sg p Bde * a! Bie set 5: | ‘\n? oy ; % , “3 wa ’ . oe\" ee ¥. * *\nif Fé ‘ >, F ; a : os : 7 - lee . ‘Vines #\n’ ¢ Ry bi 4 Bos oR. f % , ay ; ( epg gers 8 ete *3 %, - a Be Me ‘ . iil\nae ee ™\" , Px Vas. eS ie a 4 SD aee See\n. a | \\ 3: . 7 a * a ' : é ee q “ Pu Vika nae ‘i Pe . . a4 ey\n- F , =. ‘ a a tT Z ~ Per i - sy rf 4\n- a ry Se 2 sf . ae & fy , a 7 3 am ¥ ey e.* a q “hy rs\nae \" come Li. > he . oy, f j ag 4 a “*. ; he\nyom ’ Sa ’ ‘ - . Sa \\ es i . , a . Pa : RY. ;\n. Boo : 2, w a ¢ % * a ~ 498 al ws at ait ; gl bby : sie ; an ys ; q 2; | ~? \" , 1\nas | bre og A . ‘ ae R.. he ,, \\ ‘ t, vr) j a , Pt) _ wr iy - ~~\nq 4 ’ *, ‘of Poa ze Roe, ~ 3 _ < +; ee |\na vw 4 m ; ~ : 7 | ~ — cy SO, “\n} ~ Ate very eer ee: * © Ge wes . Oh * maha gic J a ~ el a, ae\n+¢ A pean ae £9 ‘ x Bis * 5 i +» * Ai pores 7 Sa ~ ’ \\ ; pw *es.\nweet’ PRP, oie fet pe z % : a er oy it i r = : + >\" weil\nSs 2. . : ret. 7 nti “ : , . “4 4 \" - i Sh BS * a 3 e<\\ ' +a a\nOe ed tb aleg oe tg. oy i - 5 Ava -. iS . AM : bli can) i . oe ~% a 4\nee eee - ee - e, ev wee 7 Po oe 7s r ae ci\" tab\nom) - pertace’s Pe ps ie Bayes mat ‘3 .. yest , ? a F | oe NaF a 8\nReo GS ere : ~s / = res . ce . tas Be sd J 5 ra | WG — = he >. me, . a “= Sy\nsth eee . 4 tial a - css eet ie “ ; RS ee et Baral ata ‘=\nfot cee am ae, : “—% Od af ; a be eRe NY LO - Bay,\npula Cal pes - - . es (We Ne Sos “ ; 3 7 . [> ay . a aa yess = hs:\nSe A coats Pe ee a Sinegies pushin geaP a yo #3! ag ee seed re es , EF Cath ere Ne eng 2 ered Sete WO en eet Rn gk ;\npre oon) IED en eS PTL Ty dE Tan ERR cn ie ho” Wate ee a eg gS pr et a on Atk oat Te SPR MA Spang ic aio\nhes fe ARES te RS Cs Seen P Ses ¢. end, ERPS T ere ee he ae Oe Se “rn : Syne Ad ER ee AS aan ios Spy id\nsens Ea POR ey ans ad as ae ee ee er or oraens that oe Bosra oer oe Be OTe a aoe\nBESS yore os -\" = + 4 See ef wise eek Ic, ~~ i fee Riga ! . OWE ‘io \"ye rd q ~ aur - a ae “= si ‘. Sein a a! ~e a > ant 3 mete ~~ \\ “\nne aa One ange bg atta el A NA ot Pi eet aiametle 8 OF I RC (ai) Beoac a eS RO eae Ne a OR\nThe ae f s Viisie tas a nan . « ws - fee ng Oe ~ ey et, < - . Ba” f . a * ’ = :\nHOUSE_OVERSIGHT_000152\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows two lions mating outdoors on the ground. One lion with a mane is mounting a lioness lying on the ground amidst sparse green vegetation and gray soil.",
+    "Layout: single full-page photo",
+    "Photo/image candidate at full page: Two lions mating outdoors; one lion with a mane mounting a lioness lying on the ground with some greenery in the background."
+  ],
+  "observations": [
+    "The image shows two lions mating outdoors on the ground. One lion with a mane is mounting a lioness lying on the ground amidst sparse green vegetation and gray soil.",
+    "Layout: single full-page photo",
+    "Photo/image candidate at full page: Two lions mating outdoors; one lion with a mane mounting a lioness lying on the ground with some greenery in the background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000152"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:26:48.042Z",
+    "response_id": "resp_0e57dedbc8e9f449006a502e314fcc81939db8bace1b08d26f",
+    "raw_output_sha256": "5b252a8d06b29affee4d92b3992014ebc0bb2d8ee08487ac887bd433826126d4"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e57dedbc8e9f449006a502e314fcc81939db8bace1b08d26f",
+    "enriched_at": "2026-07-09T23:26:48.042Z"
+  },
+  "visual_summary": "The image shows two lions mating outdoors on the ground. One lion with a mane is mounting a lioness lying on the ground amidst sparse green vegetation and gray soil.",
+  "layout": [
+    "single full-page photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "full page",
+      "description": "Two lions mating outdoors; one lion with a mane mounting a lioness lying on the ground with some greenery in the background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

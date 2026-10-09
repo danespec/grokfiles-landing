@@ -1,0 +1,80 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 48,
+  "page_id": "page_048",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_048.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_048.ocr.txt",
+  "image_metadata": {
+    "bytes": 83991,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b63044191ced2551f76b9a940cd1114e14fe49bee2e66cdd48df7ff3de43a9aa"
+  },
+  "ocr_text": ": 12\n= Bus Passes Cheap tired of paying full\ncoe fare on buses?? Call for bargain prices on\noo NYC Student Bus Passes C1242\no Free Long Distance phone calls\n: anywhere with our famous “GOO-GOO\n: Box”. Order now and never pay long,\n: distance rates again!!! R192 -\n' Subway Tokens getting\nexpensive?? Ask us about the “Wonder\n. Slug”. Not just an aluminum punch-out\na from electrical switch boxes... these are\ncustom made at a fraction of the cost. B77\n2 _ Swingles, if you are wild and crazy and\nwant it bad, you’re invited to Botany Tatk\nQ House. If you’re hacky you'll be selected to\na attend one of NY’s most uninhibited orgies.\nHOUSE_OVERSIGHT_000048\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The document page displays text blocks aligned to the upper left side of the page with a page number '12' at top right. The text advertises various offers such as bus passes, long distance phone calls, subway tokens, and an invitation to an event, each followed by a code. The text appears in varying font sizes and styles, including bolded headers and underlined codes.",
+    "Layout: Page number top right",
+    "Layout: Four main text blocks in left mid area arranged vertically"
+  ],
+  "observations": [
+    "The document page displays text blocks aligned to the upper left side of the page with a page number '12' at top right. The text advertises various offers such as bus passes, long distance phone calls, subway tokens, and an invitation to an event, each followed by a code. The text appears in varying font sizes and styles, including bolded headers and underlined codes.",
+    "Layout: Page number top right",
+    "Layout: Four main text blocks in left mid area arranged vertically"
+  ],
+  "dates": [],
+  "document_strings": [
+    "12",
+    "Bus Passes Cheap tired of paying full fare on buses?? Call for bargain prices on NYC Student Bus Passes C1242",
+    "Free Long Distance phone calls anywhere with our famous “GOO-GOO Box”. Order now and never pay long distance rates again!!! R1912",
+    "Subway Tokens getting expensive?? Ask us about the “Wonder Slug”. Not just an aluminum punch-out from electrical switch boxes... these are custom made at a fraction of the cost. B177",
+    "Swingles, if you are wild and crazy and want it bad, you’re invited to Botany Talk House. If you’re lucky you’ll be selected to attend one of NY’s most uninhibited orgies. See ya there. S1969"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:09:56.477Z",
+    "response_id": "resp_0bc26519c57de61e006a502a32b7cc81939735f463fa057012",
+    "raw_output_sha256": "0898c0140af8750b5fee1aae250b3d8f30dfb60a03d92c1fb64a0972e67f10af"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bc26519c57de61e006a502a32b7cc81939735f463fa057012",
+    "enriched_at": "2026-07-09T23:09:56.477Z"
+  },
+  "visual_summary": "The document page displays text blocks aligned to the upper left side of the page with a page number '12' at top right. The text advertises various offers such as bus passes, long distance phone calls, subway tokens, and an invitation to an event, each followed by a code. The text appears in varying font sizes and styles, including bolded headers and underlined codes.",
+  "layout": [
+    "Page number top right",
+    "Four main text blocks in left mid area arranged vertically"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

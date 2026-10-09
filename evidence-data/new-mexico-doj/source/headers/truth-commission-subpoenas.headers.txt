@@ -1,0 +1,7 @@
+URL: https://www.nmtruthcommission.com/subpoenas
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 0a6d9a174ecfe1283bd29a52f3f69e2e59c4ddc8f4f3fa1d30851264453a8e0a
+Bytes: 785641
+Acquisition method: verified existing local capture

@@ -1,0 +1,20 @@
+accept-ranges: bytes
+alt-svc: h3=":443"; ma=93600
+cache-control: public, max-age=178835
+connection: keep-alive
+content-disposition: inline; filename="EFTA First Level Review Protocol - Final - Jan 26 - 508.pdf"
+content-language: en
+content-length: 423826
+content-type: application/pdf
+date: Mon, 20 Jul 2026 00:01:26 GMT
+last-modified: Sat, 07 Feb 2026 22:31:21 GMT
+server: nginx
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-age: 0
+x-ah-environment: prod
+x-content-type-options: nosniff
+x-drupal-dynamic-cache: UNCACHEABLE (poor cacheability)
+x-frame-options: ALLOW-FROM http://doj365.sharepoint.us/
+x-generator: Drupal 10 (https://www.drupal.org)
+x-request-id: v-67b5f846-0475-11f1-84c9-93f9178d098d
+x-xss-protection: 1; mode=block

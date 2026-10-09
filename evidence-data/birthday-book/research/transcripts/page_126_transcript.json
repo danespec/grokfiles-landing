@@ -1,0 +1,137 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 126,
+  "bates": "HOUSE_OVERSIGHT_000126",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/126",
+  "related_people": [
+    "Bill Clinton"
+  ],
+  "priority_rank": 1,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_085e7ad26e1a940e006a50ead414388190b472afaed2777a65",
+  "transcript_status": "transcribed",
+  "overall_confidence": "medium",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_publish_with_bracketed_uncertainty",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "Names and signatures are document strings only; do not infer authorship from handwriting.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "top left",
+      "text": "Jeffrey -",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Jeffrey -"
+    },
+    {
+      "line_number": 2,
+      "location": "below line 1",
+      "text": "Happy 50th -",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Happy 50th -"
+    },
+    {
+      "line_number": 3,
+      "location": "below line 2",
+      "text": "It's dawning isn't it, to have",
+      "confidence": "medium",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "It's dawning isn't it, to have"
+    },
+    {
+      "line_number": 4,
+      "location": "below line 3",
+      "text": "later so long, above all the years",
+      "confidence": "medium",
+      "uncertain_segments": [
+        "later"
+      ],
+      "illegible_segments": [],
+      "note": "Uncertain if 'later' or another word",
+      "public_text": "[later] so long, above all the years"
+    },
+    {
+      "line_number": 5,
+      "location": "below line 4",
+      "text": "of learning and knowing,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "of learning and knowing,"
+    },
+    {
+      "line_number": 6,
+      "location": "below line 5",
+      "text": "adventure and wrong, and still",
+      "confidence": "medium",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "adventure and wrong, and still"
+    },
+    {
+      "line_number": 7,
+      "location": "below line 6",
+      "text": "to lose your childlike curiosity,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "to lose your childlike curiosity,"
+    },
+    {
+      "line_number": 8,
+      "location": "below line 7",
+      "text": "the drive to make a difference,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "the drive to make a difference,"
+    },
+    {
+      "line_number": 9,
+      "location": "below line 8",
+      "text": "and the value of friends -",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "and the value of friends -"
+    },
+    {
+      "line_number": 10,
+      "location": "signature line",
+      "text": "Bill Clinton",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Bill Clinton"
+    }
+  ],
+  "document_strings": [
+    "Jeffrey",
+    "Happy 50th",
+    "Bill Clinton",
+    "HOUSE_OVERSIGHT_000126"
+  ],
+  "visible_non_transcript_notes": [],
+  "gaps": [],
+  "raw_output_sha256": "21a63223b6707cbe12671c07510c6570d4a8f9ee0bf1c0681635d71cbde1ff89",
+  "transcribed_at": "2026-07-10T12:51:42.070Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

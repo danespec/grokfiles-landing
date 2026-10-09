@@ -1,0 +1,47 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 232,
+  "bates": "HOUSE_OVERSIGHT_000232",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/232",
+  "related_people": [
+    "Ari Gildery"
+  ],
+  "priority_rank": 10,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_0e066bc29c4a6c34006a50eb5ff0948195b2b7eed5dd793809",
+  "transcript_status": "transcribed",
+  "overall_confidence": "high",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_public",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "Names, signatures, captions, and labels are document strings only.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "bottom center-right",
+      "text": "Ari Gildery",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "Handwritten signature",
+      "public_text": "Ari Gildery"
+    }
+  ],
+  "document_strings": [
+    "When Jeffrey joined Bear, Stearns twenty-four years ago, it was our plan to put him on the American Stock Exchange floor to trade options on common stocks.",
+    "Up until then, options had been traded Over the Counter. Jeff said no, and that was the last difference we ever had.",
+    "Working with Jeffrey has been a pleasure and watching his meteoric success has given me many vicarious thrills.",
+    "I am sure that we will see Jeffrey's star glow even brighter.",
+    "Good luck Jeffrey —",
+    "Ari Gildery"
+  ],
+  "visible_non_transcript_notes": [],
+  "gaps": [],
+  "raw_output_sha256": "2a0526c0026945b7f4f4e2291469a9342be21f00c6b8aedf5a10b5b7ce7545c9",
+  "transcribed_at": "2026-07-10T12:53:56.395Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

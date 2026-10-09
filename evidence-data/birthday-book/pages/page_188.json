@@ -1,0 +1,135 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 188,
+  "page_id": "page_188",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_188.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_188.ocr.txt",
+  "image_metadata": {
+    "bytes": 77966,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "9cb1e1f64ada83d1072f64a001e5a2f8c99c7ffdc326b2051d5b00610a69baf1"
+  },
+  "ocr_text": "Happy\nf : vey .\nee |\nHOUSE_OVERSIGHT_000188\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A white page with black handwriting in three lines and a signature-like scribble at the bottom.",
+    "Layout: handwritten text in three lines near the top and center of the page",
+    "Layout: a signature-like scribble near the bottom center"
+  ],
+  "observations": [
+    "A white page with black handwriting in three lines and a signature-like scribble at the bottom.",
+    "Layout: handwritten text in three lines near the top and center of the page",
+    "Layout: a signature-like scribble near the bottom center"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Happy",
+    "f : vey .",
+    "ee |",
+    "HOUSE_OVERSIGHT_000188"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "signature-like scribble",
+      "confidence": "medium",
+      "note": "Indistinct signature-like curved line with unclear letters"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "Happy",
+      "confidence": "high",
+      "note": "Clear handwriting of the word 'Happy'"
+    },
+    {
+      "location": "middle left quadrant",
+      "text_as_seen": "Birthday",
+      "confidence": "high",
+      "note": "Clear handwriting of the word 'Birthday'"
+    },
+    {
+      "location": "middle right quadrant",
+      "text_as_seen": "Jettvey!!!!",
+      "confidence": "medium",
+      "note": "Handwritten text resembling 'Jettvey' followed by four exclamation marks; last letter's clarity is medium"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "The precise identity or meaning of 'Jettvey' is unclear"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:25.311Z",
+    "response_id": "resp_02b8e4791bef52c2006a502f8568f8819780b5ef4404c1185e",
+    "raw_output_sha256": "dc0f9ef1684e5a7e17e3908f21cbb95848f56254cda4716453dac1863f65bef0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_02b8e4791bef52c2006a502f8568f8819780b5ef4404c1185e",
+    "enriched_at": "2026-07-09T23:32:25.311Z"
+  },
+  "visual_summary": "A white page with black handwriting in three lines and a signature-like scribble at the bottom.",
+  "layout": [
+    "handwritten text in three lines near the top and center of the page",
+    "a signature-like scribble near the bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "Happy",
+      "confidence": "high",
+      "note": "Clear handwriting of the word 'Happy'"
+    },
+    {
+      "location": "middle left quadrant",
+      "text_as_seen": "Birthday",
+      "confidence": "high",
+      "note": "Clear handwriting of the word 'Birthday'"
+    },
+    {
+      "location": "middle right quadrant",
+      "text_as_seen": "Jettvey!!!!",
+      "confidence": "medium",
+      "note": "Handwritten text resembling 'Jettvey' followed by four exclamation marks; last letter's clarity is medium"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "signature-like scribble",
+      "confidence": "medium",
+      "note": "Indistinct signature-like curved line with unclear letters"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

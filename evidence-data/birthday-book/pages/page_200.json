@@ -1,0 +1,106 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 200,
+  "page_id": "page_200",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_200.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_200.ocr.txt",
+  "image_metadata": {
+    "bytes": 11304201,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "3204b4ec23a3b74fc67305c2a1bcc4be0703803eb2f77b05073d326f617ffd76"
+  },
+  "ocr_text": "PT camart fel really bend ang srdathe Fo?\nss sole al NY, for ner pS belief “ z\nDe, forall thatyn hale fragile all the |\nPe opphani nes Jah hak gimme, and all\n\nAS | Man © “ LT Wed $0 fy woe digtel f :\nF rediuim Yom sheded me had mach more Tam\nee Aven TL wler thonghA £ Wed. Yow Aw. dante hip 4\nZ Ligh mt entack and trtrnsegd the ay ane! MMM\n£ oa hove Sa Vhe ™ travels rat ie : avons, : : ,\ni avon aver 4p mes Then bere alien nde a\na wl fit Pm aig pad ne an a ee\n— With up, deer Jaffe, F laugh hile a tle gicl oud feel »\n4 We Werner = lofe “n Wy |\n_ HOUSE_OVERSIGHT_000200\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page shows a handwritten letter with black ink on white paper, bordered by a pink scalloped and wavy painted margin. The handwriting is neat cursive, covering most of the central white space. No printed text or images other than the handwriting and border paint.",
+    "Layout: pink scalloped painted border around edges",
+    "Layout: handwritten letter centered within white space"
+  ],
+  "observations": [
+    "Page shows a handwritten letter with black ink on white paper, bordered by a pink scalloped and wavy painted margin. The handwriting is neat cursive, covering most of the central white space. No printed text or images other than the handwriting and border paint.",
+    "Layout: pink scalloped painted border around edges",
+    "Layout: handwritten letter centered within white space"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000200"
+  ],
+  "signatures": [
+    {
+      "location": "end of handwritten text",
+      "text_as_seen": "I love you",
+      "confidence": "high",
+      "note": "Potential closing phrase, not treated as a signature"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "center white space",
+      "text_as_seen": "I am grateful, really beyond any words that I can put here, for your friendship, your belief in me, for all that you have taught me, all the opportunities that you have given me, and all the fascinating people you have introduced me to. When I met you, I was so tightly wound and you were so crazy and you gave me a happy medium. You showed me how much more I am than I ever thought I was. Your guidance has kept me on track and encouraged me to grow and think bigger. You built my business and my confidence; have sent me on travels that changed my life; given, given, given to me; taken care of my friends and family members. You have taught me how to laugh and think in new ways; protected me and made me feel safe. You have been infinitely patient with me and I am so blessed. With you, dear Jeffrey, I laugh like a little girl and feel like a woman. I love you",
+      "confidence": "high",
+      "note": "No obvious corrections or smudges, text is continuous and legible"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:34:26.643Z",
+    "response_id": "resp_0bd401dc9b366c1d006a502ff934708193b90f9161454ea239",
+    "raw_output_sha256": "0e3cad7287b9f0b9dffc181005d9ea6fd797634544647d720d6be584ee1d6a2e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bd401dc9b366c1d006a502ff934708193b90f9161454ea239",
+    "enriched_at": "2026-07-09T23:34:26.643Z"
+  },
+  "visual_summary": "Page shows a handwritten letter with black ink on white paper, bordered by a pink scalloped and wavy painted margin. The handwriting is neat cursive, covering most of the central white space. No printed text or images other than the handwriting and border paint.",
+  "layout": [
+    "pink scalloped painted border around edges",
+    "handwritten letter centered within white space"
+  ],
+  "handwriting": [
+    {
+      "location": "center white space",
+      "text_as_seen": "I am grateful, really beyond any words that I can put here, for your friendship, your belief in me, for all that you have taught me, all the opportunities that you have given me, and all the fascinating people you have introduced me to. When I met you, I was so tightly wound and you were so crazy and you gave me a happy medium. You showed me how much more I am than I ever thought I was. Your guidance has kept me on track and encouraged me to grow and think bigger. You built my business and my confidence; have sent me on travels that changed my life; given, given, given to me; taken care of my friends and family members. You have taught me how to laugh and think in new ways; protected me and made me feel safe. You have been infinitely patient with me and I am so blessed. With you, dear Jeffrey, I laugh like a little girl and feel like a woman. I love you",
+      "confidence": "high",
+      "note": "No obvious corrections or smudges, text is continuous and legible"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "end of handwritten text",
+      "text_as_seen": "I love you",
+      "confidence": "high",
+      "note": "Potential closing phrase, not treated as a signature"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

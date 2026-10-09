@@ -1,0 +1,130 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 123,
+  "page_id": "page_123",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_123.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_123.ocr.txt",
+  "image_metadata": {
+    "bytes": 4146946,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "7a9f0b0ccf50a99e0a538c97e482021030b1de8413e37800ec6634540dfa2ae1"
+  },
+  "ocr_text": "; ; piace? Ae See\n; F SEER Lote ot malas\ni bes) a 1 4 ad tae ee\n\n¢ ‘ fe y ast ih : ae x Oe ee\n\nees - —.  +4*\n\nfa! et 2 f “5 Oo a a 4a\n\nLSE eae is Ta une. ill pega Se:\n\nBape: . ie ee “ha Oe a Roh eee ka\n\nBeet? 5\n\nBeatie ony: -\n\nlat os aan ‘s\n\nPe eiei ae\n\nOUSE_OVERSIGHT_000123\nea\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page with the word 'PEACE' handwritten at the top, a cluster of eight cropped repeated black-and-white and color headshots of a man with closed eyes and slight smile in the center, and handwritten text at the bottom reading 'Keep going Young man'.",
+    "Layout: handwritten text at top",
+    "Layout: photo collage in center",
+    "Layout: handwritten text at bottom",
+    "Photo/image candidate at center: A collage of eight images showing the same person's face repeated multiple times in black-and-white and color, eyes closed, with slight smiles or neutral expression."
+  ],
+  "observations": [
+    "Page with the word 'PEACE' handwritten at the top, a cluster of eight cropped repeated black-and-white and color headshots of a man with closed eyes and slight smile in the center, and handwritten text at the bottom reading 'Keep going Young man'.",
+    "Layout: handwritten text at top",
+    "Layout: photo collage in center",
+    "Layout: handwritten text at bottom",
+    "Photo/image candidate at center: A collage of eight images showing the same person's face repeated multiple times in black-and-white and color, eyes closed, with slight smiles or neutral expression."
+  ],
+  "dates": [],
+  "document_strings": [
+    "PEACE",
+    "Keep going",
+    "Young man",
+    "HOUSE_OVERSIGHT_000123"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "PEACE",
+      "confidence": "high",
+      "note": "Single word, uppercase letters."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "Keep going",
+      "confidence": "high",
+      "note": "Two words, cursive style."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "Young man",
+      "confidence": "high",
+      "note": "Two words, cursive style."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:41.457Z",
+    "response_id": "resp_096ce7433b58bd4e006a502d3c05c08193815ae1e868a01ea0",
+    "raw_output_sha256": "797e3adea8d59c061bfb378fe22da40f8cf730f3318e24ad37b94f10ebf8597e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_096ce7433b58bd4e006a502d3c05c08193815ae1e868a01ea0",
+    "enriched_at": "2026-07-09T23:22:41.457Z"
+  },
+  "visual_summary": "Page with the word 'PEACE' handwritten at the top, a cluster of eight cropped repeated black-and-white and color headshots of a man with closed eyes and slight smile in the center, and handwritten text at the bottom reading 'Keep going Young man'.",
+  "layout": [
+    "handwritten text at top",
+    "photo collage in center",
+    "handwritten text at bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "PEACE",
+      "confidence": "high",
+      "note": "Single word, uppercase letters."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "Keep going",
+      "confidence": "high",
+      "note": "Two words, cursive style."
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "Young man",
+      "confidence": "high",
+      "note": "Two words, cursive style."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "A collage of eight images showing the same person's face repeated multiple times in black-and-white and color, eyes closed, with slight smiles or neutral expression.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

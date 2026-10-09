@@ -1,0 +1,105 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 77,
+  "page_id": "page_077",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_077.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_077.ocr.txt",
+  "image_metadata": {
+    "bytes": 4417443,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "24f211498c1a255a401265667e911fff3ba8d3499311c3e7abf8c2d3a764e3e9"
+  },
+  "ocr_text": "final |\n| Ber i -\n yeiag y: '\nge Sy\nlo tn ~“!\nNY TWAIN ONY\nNy, JHS AVA\nNW\noe Sel ?\n4 « k oS\n* ¥-\nKen \\.. +.\n *\neG eee\n— & % * KK |\ntO | sf\n* * ;\nee\ni\n4 |\n|\n™ |\n* ve\ng\n4f * a |\n] |\nI pledge allegiance to the flag of the United States|\nof America and to the Republic for which it stands, |\n: ting one nation, under God, indivisible, with liberty and |\nHOUSE_OVERSIGHT_000077\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three distinct images: a black and white photograph of a building entrance with columns and steps, a color image of a small blue and white book or booklet with 'MARK TWAIN JHS' on the cover, and a postcard-sized image of a waving United States flag with stars arranged in a circle and the 'I pledge allegiance' text below.",
+    "Layout: top left photo of building entrance",
+    "Layout: center small book with logo",
+    "Layout: bottom right flag with text",
+    "Photo/image candidate at top left corner: black and white photo showing the entrance of a building with three large columns and several steps leading up to it, a lamp post is visible near the entrance",
+    "Photo/image candidate at center: color photo of a small booklet or book with a blue cover and white central panel, embossed with 'MARK TWAIN JHS' inside a laurel wreath",
+    "Photo/image candidate at bottom right: color image of a United States flag on a flag pole with stars arranged in a circle, with printed text below beginning with 'I pledge allegiance to the flag of the United States of America...'"
+  ],
+  "observations": [
+    "The page contains three distinct images: a black and white photograph of a building entrance with columns and steps, a color image of a small blue and white book or booklet with 'MARK TWAIN JHS' on the cover, and a postcard-sized image of a waving United States flag with stars arranged in a circle and the 'I pledge allegiance' text below.",
+    "Layout: top left photo of building entrance",
+    "Layout: center small book with logo",
+    "Layout: bottom right flag with text",
+    "Photo/image candidate at top left corner: black and white photo showing the entrance of a building with three large columns and several steps leading up to it, a lamp post is visible near the entrance",
+    "Photo/image candidate at center: color photo of a small booklet or book with a blue cover and white central panel, embossed with 'MARK TWAIN JHS' inside a laurel wreath",
+    "Photo/image candidate at bottom right: color image of a United States flag on a flag pole with stars arranged in a circle, with printed text below beginning with 'I pledge allegiance to the flag of the United States of America...'"
+  ],
+  "dates": [],
+  "document_strings": [
+    "MARK TWAIN JHS",
+    "I pledge allegiance to the flag of the United States of America and to the Republic for which it stands, one nation, under God, indivisible, with liberty and justice for all.",
+    "© 1949 Paul Galleries",
+    "HOUSE_OVERSIGHT_000077"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:21.887Z",
+    "response_id": "resp_0837199284086c8a006a502b84571c81949a8721eb4064ded3",
+    "raw_output_sha256": "630c06e9f316cda1ee5a5631d26c267ae8a9c82335473af144ccea4df05e98dc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0837199284086c8a006a502b84571c81949a8721eb4064ded3",
+    "enriched_at": "2026-07-09T23:15:21.887Z"
+  },
+  "visual_summary": "The page contains three distinct images: a black and white photograph of a building entrance with columns and steps, a color image of a small blue and white book or booklet with 'MARK TWAIN JHS' on the cover, and a postcard-sized image of a waving United States flag with stars arranged in a circle and the 'I pledge allegiance' text below.",
+  "layout": [
+    "top left photo of building entrance",
+    "center small book with logo",
+    "bottom right flag with text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left corner",
+      "description": "black and white photo showing the entrance of a building with three large columns and several steps leading up to it, a lamp post is visible near the entrance",
+      "confidence": "high"
+    },
+    {
+      "location": "center",
+      "description": "color photo of a small booklet or book with a blue cover and white central panel, embossed with 'MARK TWAIN JHS' inside a laurel wreath",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right",
+      "description": "color image of a United States flag on a flag pole with stars arranged in a circle, with printed text below beginning with 'I pledge allegiance to the flag of the United States of America...'",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

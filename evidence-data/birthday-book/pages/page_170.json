@@ -1,0 +1,138 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 170,
+  "page_id": "page_170",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_170.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_170.ocr.txt",
+  "image_metadata": {
+    "bytes": 6369359,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "00bd94c44c923cb2ecdc7b70fb367c5f6aed97af3a00f1736e1e7e010d662a64"
+  },
+  "ocr_text": "4 f of the\nisualization of Euclid's proof o eon\nane. ualization © e big squar\nty of the The first picture is a e He wanted to show that site tal Squats\nion is a fundamental property 1 gorean theorem. ly equal to those of th the one in\nThe first equation is a (that it is both a sum over all Pythag tenuse had area exactly + a perpendicular line ( sangl\nfunction zeta function the hypo is, he droppe big square\nRiemann zeta rimes). The - ined. To do this, jangle and the big ‘nto had areas\nroduct over p is equation partially combined. through the trian io square into ha\nintegers and a p tion, and this equ q ot icture that cuts thro it divided the big sq howed\n; ‘ rtant function, ; h this may n the pictur ctangles it ish that, he sho\nis a very impo care about it (although tt on imed that the two re To establish that, nt t too\n: hy people care al :-): it encodes information claime: he small squares. ea (which is no\no explains why th ation :-): it enc . rimes. those of the s d the same ar jangles).\n— m the equ involve p ual to les ha for triangl\n32 be apparent tro Paci think doesn't obviously eq t all four shaded tnang s-height area formula singl e\n= about primes in a ae using the is soften obscured by using a\n. S a ard us root 1S 0 . : things. :\n2 a5 e The structure of oe letters labeling various thing\n& sSes & iagram covered wi |\nB,°88 eS ey\" Aa «\\ diagram §)\nebeoa38 A ~ ¢ “\n= qi Zz as at\nFSt Bt s Sf KNW Vy oe | | 4\n=e s 7 4 S - > > XN | |\nES5s Be 3 e- %e aver i we oF | | Lo\nnr . - | in\n2328 3 a A -, Ee) - ~2 ms — a>\nae | ro) & ae ° Z AN & > ~*~ AS © 5 Gis\nBet S eS e 2 f= &F 50° & wr ON a}\ng5eed: YB see Vw CS Eo i\n225s Ae i fee os on |\n2ee25 3 VAC FF 9g Na | ie\nS£°8 s 3 Ce OY PS + & ss ty * . eS Oo; | =\nSachse a F329 wv 4d Ay | =\n* YES\neisiae ; Ue SPS wh Kye of |\nceue & r/ ae oe ‘ee es = 9\nao82e Pa ES 4g Y oe} coo 13x 13=8x21\nFeSzBee * SP os S \\SRSS See on\nBossqe SS \\O im Ht} Lt te\nARGEE, ve Wy PREECE PCE\nZee5Sez ¥ oO | ih BSS? 28 SRRSBE = BES\nSeoees 8 is Carroll. HEN FRBSUE Ce SURES\nSaas ; ed by Lewis bled [TTR TT eagen oe SEE Eee\nvered by : sem aha ERE=. Su Ewe\nicture is a paradox disco ieces, which are reas did the | T TN ee Sae7 -seeaeeEE ae\nfinal picture 1s ¢ into four p' *21 +1, Where pj tt AE B= SERED S EEE.\nber by-13 square is a aah 1342 = 8*21 + 1. tt A Eee — are vie hs wee\n: * Bella patlaed\ninto an 8-by-21 rectan: x = = RRS\nmissing wait of =H HOUSE_OVERSIGHT_000170\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains mathematical equations, explanatory text about the Riemann zeta function and Euclid's proof of the Pythagorean theorem, diagrams illustrating geometrical proofs, and a paradox related to a 13x13 square divided into four pieces. There are some handwritten notes and a red-colored vertical text on the right edge. The page is formatted with multiple blocks of text, formulas, diagrams, and hand-drawn shapes.",
+    "Layout: top left text block with mathematical equations",
+    "Layout: top right text block explaining Euclid's proof with diagrams",
+    "Layout: center diagonal blue banner with white text: 'Solutions beyond the obvious.'",
+    "Layout: bottom left text block describing the Lewis Carroll paradox",
+    "Layout: bottom right two grids illustrating the paradox",
+    "Drawing candidate at top right quadrant: Four small geometric diagrams illustrating Euclid's Pythagorean theorem with squares and triangles.",
+    "Drawing candidate at bottom right quadrant: Two grid diagrams showing squares subdivided with lines illustrating the 13x13 paradox."
+  ],
+  "observations": [
+    "Page contains mathematical equations, explanatory text about the Riemann zeta function and Euclid's proof of the Pythagorean theorem, diagrams illustrating geometrical proofs, and a paradox related to a 13x13 square divided into four pieces. There are some handwritten notes and a red-colored vertical text on the right edge. The page is formatted with multiple blocks of text, formulas, diagrams, and hand-drawn shapes.",
+    "Layout: top left text block with mathematical equations",
+    "Layout: top right text block explaining Euclid's proof with diagrams",
+    "Layout: center diagonal blue banner with white text: 'Solutions beyond the obvious.'",
+    "Layout: bottom left text block describing the Lewis Carroll paradox",
+    "Layout: bottom right two grids illustrating the paradox",
+    "Drawing candidate at top right quadrant: Four small geometric diagrams illustrating Euclid's Pythagorean theorem with squares and triangles.",
+    "Drawing candidate at bottom right quadrant: Two grid diagrams showing squares subdivided with lines illustrating the 13x13 paradox."
+  ],
+  "dates": [],
+  "document_strings": [
+    "The first equation is a fundamental property of the Riemann zeta function (that it is both a sum over all integers and a product over primes). The zeta function is a very important function, and this equation partially explains why people care about it (although this may not be apparent from the equation :-): it encodes information about primes in a form that doesn't obviously involve primes.",
+    "The first picture is a visualization of Euclid's proof of the Pythagorean theorem. He wanted to show that the big square on the hypotenuse had area exactly equal to those of the small squares combined. To do this, he dropped a perpendicular line (the one in the picture that cuts through the triangle and the big square) and claimed that the two rectangles it divided the big square into had areas equal to those of the small squares. To establish that, he showed that all four shaded triangles had the same area (which is not too hard using the 1/2-base-times-height area formula for triangles). The structure of the proof is often obscured by using a single diagram covered with letters labeling various things.",
+    "Solutions beyond the obvious.",
+    "The final picture is a paradox discovered by Lewis Carroll. A 13-by-13 square is cut up into four pieces, which are reassembled into an 8-by-21 rectangle. However 13^2 = 8*21 + 1. Where did the missing unit of area go?",
+    "The second equation is one of the Rogers-Ramanujan identities. These are some pretty important identities discovered by Ramanujan towards the end of his short life (and it turns out, Rogers had published them earlier but nobody had noticed). Incidentally, are you familiar with Ramanujan? He was a remarkable self-taught mathematician who grew up in India a century ago."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "near center, above blue banner",
+      "text_as_seen": "F and only F would ask Mandevsky F ***ed up are your kids?",
+      "confidence": "medium",
+      "note": "Handwriting is cursive and partially obscured by the blue banner."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "top left text block, rectangular black box obscuring part of text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscures some text at the start of the page."
+    }
+  ],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Some text obscured by black box at top left.",
+    "Handwritten text partially obscured by blue banner."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:29:24.083Z",
+    "response_id": "resp_0f151f1c5939f564006a502ec9d3cc8194acc1d6b33e31c3d9",
+    "raw_output_sha256": "cffca5dd6d456309e7ee1f455ed56df3e193fbc9e6082a845eaf069edaa13bbe"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f151f1c5939f564006a502ec9d3cc8194acc1d6b33e31c3d9",
+    "enriched_at": "2026-07-09T23:29:24.083Z"
+  },
+  "visual_summary": "Page contains mathematical equations, explanatory text about the Riemann zeta function and Euclid's proof of the Pythagorean theorem, diagrams illustrating geometrical proofs, and a paradox related to a 13x13 square divided into four pieces. There are some handwritten notes and a red-colored vertical text on the right edge. The page is formatted with multiple blocks of text, formulas, diagrams, and hand-drawn shapes.",
+  "layout": [
+    "top left text block with mathematical equations",
+    "top right text block explaining Euclid's proof with diagrams",
+    "center diagonal blue banner with white text: 'Solutions beyond the obvious.'",
+    "bottom left text block describing the Lewis Carroll paradox",
+    "bottom right two grids illustrating the paradox"
+  ],
+  "handwriting": [
+    {
+      "location": "near center, above blue banner",
+      "text_as_seen": "F and only F would ask Mandevsky F ***ed up are your kids?",
+      "confidence": "medium",
+      "note": "Handwriting is cursive and partially obscured by the blue banner."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top left text block, rectangular black box obscuring part of text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscures some text at the start of the page."
+    }
+  ],
+  "drawings": [
+    {
+      "location": "top right quadrant",
+      "description": "Four small geometric diagrams illustrating Euclid's Pythagorean theorem with squares and triangles.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom right quadrant",
+      "description": "Two grid diagrams showing squares subdivided with lines illustrating the 13x13 paradox.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

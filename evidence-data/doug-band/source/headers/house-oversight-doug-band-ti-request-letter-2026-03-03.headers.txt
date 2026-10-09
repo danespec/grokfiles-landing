@@ -1,0 +1,16 @@
+HTTP/2 200 
+server: Apache
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+referrer-policy: strict-origin
+x-xss-protection: 1; mode=block
+x-frame-options: SAMEORIGIN
+last-modified: Tue, 03 Mar 2026 22:04:53 GMT
+etag: "1b588-64c25e4a830d9"
+accept-ranges: bytes
+content-length: 112008
+access-control-allow-methods: GET, POST, OPTIONS, HEAD
+content-type: application/pdf
+x-served-by: wp
+date: Sun, 19 Jul 2026 16:03:58 GMT
+

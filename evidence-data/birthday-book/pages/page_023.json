@@ -1,0 +1,96 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 23,
+  "page_id": "page_023",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_023.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_023.ocr.txt",
+  "image_metadata": {
+    "bytes": 336222,
+    "width": 2550,
+    "height": 3369,
+    "sha256": "65883699f7b39c980e3ff92076ad197eee406a02a47fcc427e8b1524c6f5809e"
+  },
+  "ocr_text": "ee\na |. LOOK ~ Uo ~OUSama, Cute ;\na | con Oui COONS\na GU Oe Ce a, eatnece wee\na |. oS q\n| 1 fra eo! ~ CN OA GK, Cry FT\nSs Ae NACIhYS “Wwe Wve. | TR GLO &\nCone cc . 17 ye ued Ld ba, = leo\nPos OchuioemenlbG, FE Wee AVE SI\n| . _ \\ t . + . arctie te Ci \\. . +\nF Cver\\ OYA STECGOLNG ye TRL NOE\nrf! e Neo Acer Mago Zane.\nANE “ vs “s “ AVY AA\n. . le WIGS om ungp Gy CAV \\\n7 on\nCr ae Sed, le ASIC AYN OTY A ) VV1dlaru, PG rlitus\n . NAV ON SOU RAMA BA SLA Bos ya h. ar lay ec\nve VVC WL.\ni a NEY ee WAL RUA\n . ' \\odau eo fAYve C a,\n. ; C Ss mS ~ ‘\n_.. CONG de a Cte WN.\nic - me )\n_ Venue Tr AE OM cock lang (\\\na. » CARA Caan, el\na re ~ rks Vin Sariusk te\nieee\n|_|. _ —T KAO rc ~ 2 Smo.\n_ af te AEA ANE CR ROO VN\n_ Ns we NOUN CA St CAPR hk AU, on. [ ;\nPee Goh aw oT Slneubd =a (Daa ch. a\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A scanned page with handwritten text in cursive writing, centered and filling most of the page. The handwriting is moderately neat and written in pen or pencil. There's a circled number 4 near the bottom right. The page background is slightly textured.",
+    "Layout: Handwritten text in cursive, centered on page"
+  ],
+  "observations": [
+    "A scanned page with handwritten text in cursive writing, centered and filling most of the page. The handwriting is moderately neat and written in pen or pencil. There's a circled number 4 near the bottom right. The page background is slightly textured.",
+    "Layout: Handwritten text in cursive, centered on page"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Today - a limousine awaits you as a dignitary.",
+    "Jeff, I'm so sorry that Dad can't share the NACHUS we have regarding your achivements.",
+    "He would have been overjoyed reading the article about you in the New York magazine.",
+    "I was looking at family tapes.",
+    "We had many, many parties, anniversary parties etc, you enjoyed being there.",
+    "Today you avoid gatherings, parties - why?",
+    "Tonite is the deadline I must get this manuscript to Ghislaine.",
+    "If I know me, as soon as I mail it I will think of WHAT I should have said.",
+    "(4)"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Today - a limousine awaits you as a dignitary. Jeff, I'm so sorry that Dad can't share the NACHUS we have regarding your achivements. He would have been overjoyed reading the article about you in the New York magazine. I was looking at family tapes. We had many, many parties, anniversary parties etc, you enjoyed being there. Today you avoid gatherings, parties - why? Tonite is the deadline I must get this manuscript to Ghislaine. If I know me, as soon as I mail it I will think of WHAT I should have said. (4)",
+      "confidence": "medium",
+      "note": "Text is legible but contains minor spelling and punctuation variations."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:05:39.061Z",
+    "response_id": "resp_029d7379cfe48a75006a50293d49a481958328bd20d2b5b285",
+    "raw_output_sha256": "669bfac21cd0accf76327608362f5348234789f13fa48bcfede447344257e3ac"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_029d7379cfe48a75006a50293d49a481958328bd20d2b5b285",
+    "enriched_at": "2026-07-09T23:05:39.061Z"
+  },
+  "visual_summary": "A scanned page with handwritten text in cursive writing, centered and filling most of the page. The handwriting is moderately neat and written in pen or pencil. There's a circled number 4 near the bottom right. The page background is slightly textured.",
+  "layout": [
+    "Handwritten text in cursive, centered on page"
+  ],
+  "handwriting": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Today - a limousine awaits you as a dignitary. Jeff, I'm so sorry that Dad can't share the NACHUS we have regarding your achivements. He would have been overjoyed reading the article about you in the New York magazine. I was looking at family tapes. We had many, many parties, anniversary parties etc, you enjoyed being there. Today you avoid gatherings, parties - why? Tonite is the deadline I must get this manuscript to Ghislaine. If I know me, as soon as I mail it I will think of WHAT I should have said. (4)",
+      "confidence": "medium",
+      "note": "Text is legible but contains minor spelling and punctuation variations."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

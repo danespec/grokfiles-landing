@@ -1,0 +1,7 @@
+URL: https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-presses-jay-clayton-on-doj-obstruction-of-new-mexico-investigation-into-jeffrey-epsteins-crimes-at-zorro-ranch
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: b6cce652a2d454304c6ab14900a093a2e223fad7aecb07e4cad69099fe7341c8
+Bytes: 110814
+Acquisition method: verified existing local capture

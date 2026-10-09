@@ -1,0 +1,142 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 59,
+  "page_id": "page_059",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_059.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_059.ocr.txt",
+  "image_metadata": {
+    "bytes": 126709,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2382c84e17aaa1a53a7bb03f9bc7ff8858132883865e3d573227cf570d156852"
+  },
+  "ocr_text": "Coneors Hertel\nTVYewrsl S 139 los weelend\n| ~ Le ff\nthom Sout you have ody Neat OME S\nWe get in Room Sack says Dost tovel AY\nHare, you Dum UB Rig lft om his heal\nther we Sety [erom 9% Cine -\nth eowi Leon tA Drm Cnoky , 0 oAle Lu oul\nCQ (evh os ~ So thay Aub US By Kite Gea\nGat us all oufa Moun RJaclt + tell vg To\n. Jpeoue + Ajaveie Come (Sac\n| HOUSE_OVERSIGHT_000059\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten note on a white page with black ink, consisting of multiple lines describing an incident at Concord Hotel involving a Jewish singles weekend.",
+    "Layout: Title at top: Concord Hotel",
+    "Layout: Paragraph 1: Jewish singles weekend sit us down at table with ugly girls and I told them don't you have any pretty ones",
+    "Layout: Paragraph 2: We get in room Jack says Don't touch my hair, you dump water right on his head then we set room on fire.",
+    "Layout: Paragraph 3: Throwing food in dining room, no one would serve us - so they put us by kitchen",
+    "Layout: Paragraph 4: Gave us all our money back and told us to leave and never come back"
+  ],
+  "observations": [
+    "Handwritten note on a white page with black ink, consisting of multiple lines describing an incident at Concord Hotel involving a Jewish singles weekend.",
+    "Layout: Title at top: Concord Hotel",
+    "Layout: Paragraph 1: Jewish singles weekend sit us down at table with ugly girls and I told them don't you have any pretty ones",
+    "Layout: Paragraph 2: We get in room Jack says Don't touch my hair, you dump water right on his head then we set room on fire.",
+    "Layout: Paragraph 3: Throwing food in dining room, no one would serve us - so they put us by kitchen",
+    "Layout: Paragraph 4: Gave us all our money back and told us to leave and never come back"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Concord Hotel",
+    "Jewish singles weekend",
+    "sit us down at table with ugly girls & I told them don't you have any pretty one's",
+    "We get in room Jack says Don't touch my hair, you dump water right on his head then we set room on fire.",
+    "throwing food in Dining Room, NO one would serve us - so they put us by kitchen",
+    "Gave us all our money back & told us to leave & never come back",
+    "HOUSE_OVERSIGHT_000059"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Concord Hotel Jewish singles weekend sit us down at table with ugly girls & I told them don't you have any pretty one's",
+      "confidence": "high",
+      "note": "Legible cursive handwriting"
+    },
+    {
+      "location": "middle center",
+      "text_as_seen": "We get in room Jack says Don't touch my hair, you dump water right on his head then we set room on fire.",
+      "confidence": "high",
+      "note": "Legible, slightly cramped cursive handwriting"
+    },
+    {
+      "location": "below middle",
+      "text_as_seen": "throwing food in Dining Room, NO one would serve us - so they put us by kitchen",
+      "confidence": "high",
+      "note": "Clear cursive handwriting"
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "Gave us all our money back & told us to leave & never come back",
+      "confidence": "high",
+      "note": "Clear cursive handwriting"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:08.484Z",
+    "response_id": "resp_0912b2af711a1a5d006a502ac262f881979a501a3469f9b76a",
+    "raw_output_sha256": "9bfba738ccd50402fe883bfcf1bf3aa1cbb365700a0a813843218d84283eaed9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0912b2af711a1a5d006a502ac262f881979a501a3469f9b76a",
+    "enriched_at": "2026-07-09T23:12:08.484Z"
+  },
+  "visual_summary": "Handwritten note on a white page with black ink, consisting of multiple lines describing an incident at Concord Hotel involving a Jewish singles weekend.",
+  "layout": [
+    "Title at top: Concord Hotel",
+    "Paragraph 1: Jewish singles weekend sit us down at table with ugly girls and I told them don't you have any pretty ones",
+    "Paragraph 2: We get in room Jack says Don't touch my hair, you dump water right on his head then we set room on fire.",
+    "Paragraph 3: Throwing food in dining room, no one would serve us - so they put us by kitchen",
+    "Paragraph 4: Gave us all our money back and told us to leave and never come back"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Concord Hotel Jewish singles weekend sit us down at table with ugly girls & I told them don't you have any pretty one's",
+      "confidence": "high",
+      "note": "Legible cursive handwriting"
+    },
+    {
+      "location": "middle center",
+      "text_as_seen": "We get in room Jack says Don't touch my hair, you dump water right on his head then we set room on fire.",
+      "confidence": "high",
+      "note": "Legible, slightly cramped cursive handwriting"
+    },
+    {
+      "location": "below middle",
+      "text_as_seen": "throwing food in Dining Room, NO one would serve us - so they put us by kitchen",
+      "confidence": "high",
+      "note": "Clear cursive handwriting"
+    },
+    {
+      "location": "bottom center",
+      "text_as_seen": "Gave us all our money back & told us to leave & never come back",
+      "confidence": "high",
+      "note": "Clear cursive handwriting"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

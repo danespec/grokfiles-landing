@@ -1,0 +1,200 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 221,
+  "page_id": "page_221",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_221.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_221.ocr.txt",
+  "image_metadata": {
+    "bytes": 4302732,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "e9399398d31b663844c4c8024a21c7315ce257abffde3792020125f4a3ca0b24"
+  },
+  "ocr_text": "beg pores V4\nFri adres 4M so} ,\nFO sey ie andl, yan ane\n| nes\n| us tad. Reauh, Nl York\nFen VY\n| rien\n3\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A white page with large colorful vertical letters spelling 'JEFFREY' on the left side. Next to each letter is a short handwritten phrase in blue ink. There are two hand-drawn pink hearts on the right side, one near the top and one near the middle of the page. The page is bordered by a black frame. A small number '3' is written in blue ink at bottom right corner.",
+    "Layout: large colorful letters vertically down left side",
+    "Layout: handwritten text to the right of each letter",
+    "Layout: two pink hearts on right side",
+    "Layout: black border around page",
+    "Layout: small number '3' in bottom right",
+    "Drawing candidate at top right: Hand-drawn pink heart",
+    "Drawing candidate at center right below text: Hand-drawn pink heart"
+  ],
+  "observations": [
+    "A white page with large colorful vertical letters spelling 'JEFFREY' on the left side. Next to each letter is a short handwritten phrase in blue ink. There are two hand-drawn pink hearts on the right side, one near the top and one near the middle of the page. The page is bordered by a black frame. A small number '3' is written in blue ink at bottom right corner.",
+    "Layout: large colorful letters vertically down left side",
+    "Layout: handwritten text to the right of each letter",
+    "Layout: two pink hearts on right side",
+    "Layout: black border around page",
+    "Layout: small number '3' in bottom right",
+    "Drawing candidate at top right: Hand-drawn pink heart",
+    "Drawing candidate at center right below text: Hand-drawn pink heart"
+  ],
+  "dates": [],
+  "document_strings": [
+    "J",
+    "E",
+    "F",
+    "R",
+    "Y",
+    "Jeffrey you are one in a billion!",
+    "verybody admires you so!",
+    "unny, gorgeous, intellectual and kind, you are",
+    "abulous through and through!",
+    "anch, Island, Paris, Palm Beach, New York",
+    "verywhere you go",
+    "on have got it all .... and we love you so!",
+    "3"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center to mid right",
+      "text_as_seen": "Jeffrey you are one in a billion!",
+      "confidence": "high",
+      "note": "Handwritten in blue ink to right of 'J'"
+    },
+    {
+      "location": "mid upper left to mid center",
+      "text_as_seen": "verybody admires you so!",
+      "confidence": "high",
+      "note": "Handwritten to right of 'E' (complete phrase likely 'Everybody admires you so!')"
+    },
+    {
+      "location": "mid upper right",
+      "text_as_seen": "unny, gorgeous, intellectual and kind, you are",
+      "confidence": "high",
+      "note": "Handwritten to right of 'F' (likely phrase 'Funny, gorgeous, intellectual and kind, you are')"
+    },
+    {
+      "location": "center right",
+      "text_as_seen": "abulous through and through!",
+      "confidence": "high",
+      "note": "Handwritten to right of 'F' (likely phrase 'Fabulous through and through!')"
+    },
+    {
+      "location": "lower center left to mid center right",
+      "text_as_seen": "anch, Island, Paris, Palm Beach, New York",
+      "confidence": "high",
+      "note": "Handwritten to right of 'R' (likely phrase 'Ranch, Island, Paris, Palm Beach, New York')"
+    },
+    {
+      "location": "mid lower center",
+      "text_as_seen": "verywhere you go",
+      "confidence": "high",
+      "note": "Handwritten to right of 'E' (likely phrase 'Everywhere you go')"
+    },
+    {
+      "location": "bottom center to bottom right",
+      "text_as_seen": "on have got it all .... and we love you so!",
+      "confidence": "high",
+      "note": "Handwritten to right of 'Y' (likely phrase 'You have got it all .... and we love you so!')"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:37:41.742Z",
+    "response_id": "resp_085de8db3d067093006a5030bca390819495e18eb6f76d3444",
+    "raw_output_sha256": "88309b01af75da67261f9bca7eedb5f0720ff19b74906989d8f043285a063a01"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_085de8db3d067093006a5030bca390819495e18eb6f76d3444",
+    "enriched_at": "2026-07-09T23:37:41.742Z"
+  },
+  "visual_summary": "A white page with large colorful vertical letters spelling 'JEFFREY' on the left side. Next to each letter is a short handwritten phrase in blue ink. There are two hand-drawn pink hearts on the right side, one near the top and one near the middle of the page. The page is bordered by a black frame. A small number '3' is written in blue ink at bottom right corner.",
+  "layout": [
+    "large colorful letters vertically down left side",
+    "handwritten text to the right of each letter",
+    "two pink hearts on right side",
+    "black border around page",
+    "small number '3' in bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top center to mid right",
+      "text_as_seen": "Jeffrey you are one in a billion!",
+      "confidence": "high",
+      "note": "Handwritten in blue ink to right of 'J'"
+    },
+    {
+      "location": "mid upper left to mid center",
+      "text_as_seen": "verybody admires you so!",
+      "confidence": "high",
+      "note": "Handwritten to right of 'E' (complete phrase likely 'Everybody admires you so!')"
+    },
+    {
+      "location": "mid upper right",
+      "text_as_seen": "unny, gorgeous, intellectual and kind, you are",
+      "confidence": "high",
+      "note": "Handwritten to right of 'F' (likely phrase 'Funny, gorgeous, intellectual and kind, you are')"
+    },
+    {
+      "location": "center right",
+      "text_as_seen": "abulous through and through!",
+      "confidence": "high",
+      "note": "Handwritten to right of 'F' (likely phrase 'Fabulous through and through!')"
+    },
+    {
+      "location": "lower center left to mid center right",
+      "text_as_seen": "anch, Island, Paris, Palm Beach, New York",
+      "confidence": "high",
+      "note": "Handwritten to right of 'R' (likely phrase 'Ranch, Island, Paris, Palm Beach, New York')"
+    },
+    {
+      "location": "mid lower center",
+      "text_as_seen": "verywhere you go",
+      "confidence": "high",
+      "note": "Handwritten to right of 'E' (likely phrase 'Everywhere you go')"
+    },
+    {
+      "location": "bottom center to bottom right",
+      "text_as_seen": "on have got it all .... and we love you so!",
+      "confidence": "high",
+      "note": "Handwritten to right of 'Y' (likely phrase 'You have got it all .... and we love you so!')"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "top right",
+      "description": "Hand-drawn pink heart",
+      "confidence": "high"
+    },
+    {
+      "location": "center right below text",
+      "description": "Hand-drawn pink heart",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

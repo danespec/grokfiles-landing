@@ -1,0 +1,78 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 34,
+  "page_id": "page_034",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_034.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_034.ocr.txt",
+  "image_metadata": {
+    "bytes": 317384,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b5d170988f76e55c9301b6e260cdad06aebd47aef7b77b04d97bb9a8b2567014"
+  },
+  "ocr_text": ". _ ae Eats ae a\n\n_ - a oe re _\n\na ee ie Sone fy . a\noS Be ; = a\n\nfe : , |\n\nce a oes ane\n\nae ee _ : . :\n\n_ a8 oe\n\nte a ee Be fe .\n\n: _ oe Bes . ~ 0\n— eh ae Le BES ne\n\n: a See aaa\n\nSa\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page shows the word 'BROOKLYN' centered on a mostly white background with a textured gradient or shadow effect along the left edge.",
+    "Layout: single centered word",
+    "Layout: left edge gradient texture"
+  ],
+  "observations": [
+    "Page shows the word 'BROOKLYN' centered on a mostly white background with a textured gradient or shadow effect along the left edge.",
+    "Layout: single centered word",
+    "Layout: left edge gradient texture"
+  ],
+  "dates": [],
+  "document_strings": [
+    "BROOKLYN"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "No other text or image content visible besides the word 'BROOKLYN' and left edge texture."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:36.306Z",
+    "response_id": "resp_07b724fc87626fba006a5029b25eb48197a74c7346db11bcbc",
+    "raw_output_sha256": "faac7cdc6fa4edbc7179c4dea8f331dc6bc66bd217887f11a7f883cd20b18a1c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_07b724fc87626fba006a5029b25eb48197a74c7346db11bcbc",
+    "enriched_at": "2026-07-09T23:07:36.306Z"
+  },
+  "visual_summary": "Page shows the word 'BROOKLYN' centered on a mostly white background with a textured gradient or shadow effect along the left edge.",
+  "layout": [
+    "single centered word",
+    "left edge gradient texture"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,218 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 49,
+  "page_id": "page_049",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_049.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_049.ocr.txt",
+  "image_metadata": {
+    "bytes": 10514099,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "720bd3fa75cf83d3a69461c12dabcc974e5e4b18059573f36f9d2cef33d59dc7"
+  },
+  "ocr_text": "LARGEST DUDE RK ANCH IN TI {f& EAST | Ot ‘iby & iN 4 re }\n— .... ~ | jp Bea Hale z Banriaiion Te\nDirect New York Line Milford 296.7281 SEA GATE, NEW Y ORK HARBOR, N y i\n<eanyu BE i :\nSee argues ae ps TE NT 1\n7 i f ' Issued to i ro 7) |\net al, Pe = Address Re x - 5 I ‘ & |\nSteve Emanuel Bob Schnur tc) essen eee Seen hg A to\n—— — —— en a ;\nQo Good fer one person only © Not Transferable 9\nCarry this card os if must be shown on request. |\na eeeceminns a a = ff\ntr % a © >\n(Ss Sa 3 “a\nAa WASURFACE & RAPID TRANSIT (G53) , —\nNPY Reduced Fare Eligibitity Card For High School Pupils “Sz | SEN YORK CITY TAXI and LIMOUSINE COMMISSION {\n———— ee a | ~ ' ‘\nsued to WARKEY pees Te ee 4196) 5? | | nines: Bey ane eS\nraf Son ria ote EXPIRES MAY 31, 1974\nstudent at... it F pe 77 a co AEP ALTE |\n=f Name or Number of Schaoi (Print) Boro’ \\ |\nuring the school year SEPTEMBER, 8, 1968.to JUNE 27, 1969. 5 |\nignature of Official Teacher. 83 a oe | |\nie student named above may U he surface line routes and the stations of the | '\nwid it Divisions named below ™ der the conditions stated on the reverse side. 1 }\nPEE WE bate pv i 2 P Tr |\non ee ie Division } i\n— ‘ ) “OU MUST RENEW THIS LICENSE BETWEEN. --—-—— = AND: iy Bes § =\n\\ NEW YORK CILY TAXi ane | sau ume etal ae |\nTAXICAB DRIV TAXI and LIMOUSINE COMMISSION “4\nH 37 BEAVER ST. - NEW YORK 10005 N.Y. }\n| | EXPIRES Mia\n{ | !\n') TERRY B. \\.\n1 t\nApetpui AcAveMY | Sas ca i | : - wed\n8515 RIDGE BOULEVARD iG 7 eg! ! -\nBROOKLYN, N.Y. 11208 Ses | | 2 i 8 T & 3 . ,\njune 7, 1969 ae\n| OU MUST RENEW THIS LICENSE BETWEEN A 4\n! NEw YORK OCF fs bs\nTo Whom It May Concern: ! TAXI and LIMOUSINE COMMISS\" | :\n| 87 BEAVER ST. — NEW YORK 10005 »\nThis is to eertify jvhat 30M/12/75 MICHAEL J. LAZSP, Chair? Fad\n\\ =e ar aio = ee aoa\nsuccessfully completed an approved course q\nin Driver Education at Adelphi Academy, | ~ © . * q\nsonsisting of six hours behind-the-wheel : :\ninstruction as well as classroom lecture. = SS )/\n‘ ‘\nyery truly yours, i : } a\nf a RAL ~. }\nH. B. Kesslin | ve f |\nDirector of } 2\nDriver Education |\n, A\ne i\n< —\ni tet i wal\nHOUSE_OVERSIGHT_000049\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page containing multiple documents and photos including a business card, membership card, transit eligibility card, taxi license, driver certificate, and two photographs. The documents show typed and handwritten text, stamps, dates, and signatures. The layout is cluttered with overlapping elements, predominantly rectangular documents and two portrait photos at the lower right. The documents appear to pertain to transit, licensing, and educational certification dated mostly from the late 1960s to 1974.",
+    "Layout: Top left business card with logo and names",
+    "Layout: Top right membership card with printed and handwritten text",
+    "Layout: Middle left transit eligibility card with typed and handwritten text",
+    "Layout: Middle right taxi license with photo and text",
+    "Layout: Bottom left typed letter with signature",
+    "Layout: Bottom middle small license card with photo and text",
+    "Layout: Bottom right black-and-white photo of a person",
+    "Drawing candidate at Top left business card: Drawing of a calf or bull with label 'MALIBU RANCH'",
+    "Photo/image candidate at Middle right taxi license: Black and white photo of a person with afro hairstyle and glasses",
+    "Photo/image candidate at Bottom right corner: Black and white photo of a person with curly hair wearing a jacket"
+  ],
+  "observations": [
+    "Page containing multiple documents and photos including a business card, membership card, transit eligibility card, taxi license, driver certificate, and two photographs. The documents show typed and handwritten text, stamps, dates, and signatures. The layout is cluttered with overlapping elements, predominantly rectangular documents and two portrait photos at the lower right. The documents appear to pertain to transit, licensing, and educational certification dated mostly from the late 1960s to 1974.",
+    "Layout: Top left business card with logo and names",
+    "Layout: Top right membership card with printed and handwritten text",
+    "Layout: Middle left transit eligibility card with typed and handwritten text",
+    "Layout: Middle right taxi license with photo and text",
+    "Layout: Bottom left typed letter with signature",
+    "Layout: Bottom middle small license card with photo and text",
+    "Layout: Bottom right black-and-white photo of a person",
+    "Drawing candidate at Top left business card: Drawing of a calf or bull with label 'MALIBU RANCH'",
+    "Photo/image candidate at Middle right taxi license: Black and white photo of a person with afro hairstyle and glasses",
+    "Photo/image candidate at Bottom right corner: Black and white photo of a person with curly hair wearing a jacket"
+  ],
+  "dates": [
+    "MAY 31, 1974",
+    "JUNE 27, 1969",
+    "june 7, 1969",
+    "1974",
+    "1968",
+    "1969",
+    "APR 15 1974",
+    "APR 19 1974",
+    "MAY 6 1974",
+    "30M/12/71",
+    "September 8, 1968 to June 27, 1969"
+  ],
+  "document_strings": [
+    "LARGEST DUDE RANCH IN THE EAST",
+    "Direct New York Line Milford 296 7281",
+    "Steve Emanuel Bob Schnur",
+    "The Sea Gate Association SEA GATE NEW YORK HARBOR, N.Y.",
+    "TENANT 1",
+    "Good for one person only Not transferable Carry this card as it must be shown on request.",
+    "TYPE 3 SURFACE & RAPID TRANSIT Reduced Fare Eligibility Card For High School Pupils",
+    "suited to WARREN EISENSTEIN 4/26/52 Name of Student (Print) Date of birth 4/26/52",
+    "student at LAFAYETTE H S Boro",
+    "Name or Number of School (Print)",
+    "DURING THE SCHOOL YEAR SEPTEMBER 8 1968 to JUNE 27, 1969",
+    "Signature of Official Teacher",
+    "The student named above may use the surface line routes and the stations of the Transit Divisions named below under the conditions stated on the reverse side.",
+    "HOME STATION AVE Division",
+    "SCHOOL STATION Division",
+    "LICENSE VOID UNLESS DRIVER WEARS GLASSES - NEW YORK CITY TAXI and LIMOUSINE COMMISSION - TAXICAB DRIVER'S LICENSE",
+    "EXPIRES MAY 31, 1974",
+    "YOU MUST RENEW THIS LICENSE BETWEEN AND NEW YORK CITY TAXI and LIMOUSINE COMMISSION 87 BEAVER ST., NEW YORK 10005 N.Y.",
+    "TERRY B. KAFKA 218763 MAY 6 1974",
+    "YOU MUST RENEW THIS LICENSE BETWEEN NEW YORK CITY TAXI and LIMOUSINE COMMISSION 87 BEAVER ST., NEW YORK 10005",
+    "ADELPHI ACADEMY 8515 RIDGE BOULEVARD BROOKLYN, N.Y. 11209 June 7, 1969",
+    "This is to certify that WARREN EISENSTEIN has successfully completed an approved course in Driver Education at Adelphi Academy, consisting of six hours behind-the-wheel instruction as well as classroom lecture.",
+    "Very truly yours, H. B. Kesslin Director of Driver Education",
+    "30M/12/71 MICHAEL J. LAZAR Chairman"
+  ],
+  "signatures": [
+    {
+      "location": "Bottom left typed letter",
+      "text_as_seen": "H. B. Kesslin",
+      "confidence": "high",
+      "note": "Signature of Director of Driver Education"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "Top right membership card",
+      "text_as_seen": "Warren Eisenstein 38-10 14th AV",
+      "confidence": "high",
+      "note": "Handwritten name and address"
+    },
+    {
+      "location": "Middle left transit eligibility card",
+      "text_as_seen": "warren eisenstein 4/26/52 LAFAYETTE H S",
+      "confidence": "medium",
+      "note": "Handwritten name, date and school info"
+    },
+    {
+      "location": "Bottom left typed letter signature line",
+      "text_as_seen": "H. B. Kesslin",
+      "confidence": "high",
+      "note": "Handwritten signature on typed letter"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "signature"
+  ],
+  "gaps": [
+    "Some text on license and letter partially obscured or cut off in image",
+    "Partial name or signature elements may be incomplete or unclear due to document overlap"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:10:13.620Z",
+    "response_id": "resp_0e53434ea05b032e006a502a482d7c8196a90fe8ee9e670ad9",
+    "raw_output_sha256": "b8b4d0efaafd09c288c79fb4d0aa2c1ee926008853f57005f8c07e121ec44591"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e53434ea05b032e006a502a482d7c8196a90fe8ee9e670ad9",
+    "enriched_at": "2026-07-09T23:10:13.620Z"
+  },
+  "visual_summary": "Page containing multiple documents and photos including a business card, membership card, transit eligibility card, taxi license, driver certificate, and two photographs. The documents show typed and handwritten text, stamps, dates, and signatures. The layout is cluttered with overlapping elements, predominantly rectangular documents and two portrait photos at the lower right. The documents appear to pertain to transit, licensing, and educational certification dated mostly from the late 1960s to 1974.",
+  "layout": [
+    "Top left business card with logo and names",
+    "Top right membership card with printed and handwritten text",
+    "Middle left transit eligibility card with typed and handwritten text",
+    "Middle right taxi license with photo and text",
+    "Bottom left typed letter with signature",
+    "Bottom middle small license card with photo and text",
+    "Bottom right black-and-white photo of a person"
+  ],
+  "handwriting": [
+    {
+      "location": "Top right membership card",
+      "text_as_seen": "Warren Eisenstein 38-10 14th AV",
+      "confidence": "high",
+      "note": "Handwritten name and address"
+    },
+    {
+      "location": "Middle left transit eligibility card",
+      "text_as_seen": "warren eisenstein 4/26/52 LAFAYETTE H S",
+      "confidence": "medium",
+      "note": "Handwritten name, date and school info"
+    },
+    {
+      "location": "Bottom left typed letter signature line",
+      "text_as_seen": "H. B. Kesslin",
+      "confidence": "high",
+      "note": "Handwritten signature on typed letter"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "Bottom left typed letter",
+      "text_as_seen": "H. B. Kesslin",
+      "confidence": "high",
+      "note": "Signature of Director of Driver Education"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "Top left business card",
+      "description": "Drawing of a calf or bull with label 'MALIBU RANCH'",
+      "confidence": "high"
+    }
+  ],
+  "photos": [
+    {
+      "location": "Middle right taxi license",
+      "description": "Black and white photo of a person with afro hairstyle and glasses",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom right corner",
+      "description": "Black and white photo of a person with curly hair wearing a jacket",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "JUNE 27, 1969",
+    "APR 15 1974",
+    "APR 19 1974",
+    "MAY 31, 1974",
+    "MAY 6 1974",
+    "30M/12/71",
+    "September 8, 1968 to June 27, 1969",
+    "June 7, 1969"
+  ],
+  "confidence": "high"
+}

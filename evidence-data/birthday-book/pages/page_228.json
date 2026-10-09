@@ -1,0 +1,208 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 228,
+  "page_id": "page_228",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_228.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_228.ocr.txt",
+  "image_metadata": {
+    "bytes": 11315598,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "39db4c3e90609fd3259cfe3b4ace9560e4ca9dca66d97d7cdc802e43b2878534"
+  },
+  "ocr_text": "|\ni\ni. 5 ; fe : at\nrepate |\nHOUSE_OVERSIGHT_000228\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page has a blue-green background with multiple areas blacked out obscuring parts of the content, including photographs and some text. Visible located text in blue script font is present in the upper right and middle left parts of the page. Several photographs of a person at a beach are distributed around the page but partially redacted.",
+    "Layout: blue-green background",
+    "Layout: black redactions over text and photographs",
+    "Layout: text block in upper right quadrant",
+    "Layout: text line in middle left quadrant",
+    "Layout: several photographs arranged around center and lower half",
+    "Photo/image candidate at upper middle below large black redaction: Color photograph of a person sitting on sand at a beach, partially redacted from neck up",
+    "Photo/image candidate at center right, partially redacted: Black and white photograph showing a palm tree or plant, partially redacted",
+    "Photo/image candidate at lower left, partially redacted: Black and white photograph of an arm and torso area of a person, partially redacted",
+    "Photo/image candidate at lower right, partially redacted: Color photograph of a person performing a backbend on a white sandy beach with blue sky background, partially redacted"
+  ],
+  "observations": [
+    "The page has a blue-green background with multiple areas blacked out obscuring parts of the content, including photographs and some text. Visible located text in blue script font is present in the upper right and middle left parts of the page. Several photographs of a person at a beach are distributed around the page but partially redacted.",
+    "Layout: blue-green background",
+    "Layout: black redactions over text and photographs",
+    "Layout: text block in upper right quadrant",
+    "Layout: text line in middle left quadrant",
+    "Layout: several photographs arranged around center and lower half",
+    "Photo/image candidate at upper middle below large black redaction: Color photograph of a person sitting on sand at a beach, partially redacted from neck up",
+    "Photo/image candidate at center right, partially redacted: Black and white photograph showing a palm tree or plant, partially redacted",
+    "Photo/image candidate at lower left, partially redacted: Black and white photograph of an arm and torso area of a person, partially redacted",
+    "Photo/image candidate at lower right, partially redacted: Color photograph of a person performing a backbend on a white sandy beach with blue sky background, partially redacted"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Jeffrey, there are no words to describe how much I appreciate and admire you. I believe you are the most extraordinary person I've ever met and can't believe how lucky I am to have become a part of your life. What you have shown and taught me in one year is more than most people experience in a lifetime.",
+    "What else can I say butt..."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "upper right quadrant",
+      "text_as_seen": "Jeffrey, there are no words to describe how much I appreciate and admire you. I believe you are the most extraordinary person I've ever met and can't believe how lucky I am to have become a part of your life. What you have shown and taught me in one year is more than most people experience in a lifetime.",
+      "confidence": "high",
+      "note": "Blue printed script font, not cursive handwriting"
+    },
+    {
+      "location": "middle left quadrant",
+      "text_as_seen": "What else can I say butt...",
+      "confidence": "high",
+      "note": "Blue printed script font, not cursive handwriting"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "upper left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black rectangle covering text and part of photo"
+    },
+    {
+      "location": "center right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    },
+    {
+      "location": "center lower quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    },
+    {
+      "location": "lower right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    },
+    {
+      "location": "center right below middle right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Content and images obscured by black redactions cause some textual and visual gaps."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:48.939Z",
+    "response_id": "resp_028c6974af027080006a5030fe53348197b7d34c9a5ea5d69f",
+    "raw_output_sha256": "7e05eda15ce7b8bfab2c98b59caa1a2050eb935b923b242befdb329587b3adb2"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_028c6974af027080006a5030fe53348197b7d34c9a5ea5d69f",
+    "enriched_at": "2026-07-09T23:38:48.939Z"
+  },
+  "visual_summary": "The page has a blue-green background with multiple areas blacked out obscuring parts of the content, including photographs and some text. Visible located text in blue script font is present in the upper right and middle left parts of the page. Several photographs of a person at a beach are distributed around the page but partially redacted.",
+  "layout": [
+    "blue-green background",
+    "black redactions over text and photographs",
+    "text block in upper right quadrant",
+    "text line in middle left quadrant",
+    "several photographs arranged around center and lower half"
+  ],
+  "handwriting": [
+    {
+      "location": "upper right quadrant",
+      "text_as_seen": "Jeffrey, there are no words to describe how much I appreciate and admire you. I believe you are the most extraordinary person I've ever met and can't believe how lucky I am to have become a part of your life. What you have shown and taught me in one year is more than most people experience in a lifetime.",
+      "confidence": "high",
+      "note": "Blue printed script font, not cursive handwriting"
+    },
+    {
+      "location": "middle left quadrant",
+      "text_as_seen": "What else can I say butt...",
+      "confidence": "high",
+      "note": "Blue printed script font, not cursive handwriting"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "upper left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black rectangle covering text and part of photo"
+    },
+    {
+      "location": "center right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    },
+    {
+      "location": "center lower quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    },
+    {
+      "location": "lower right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    },
+    {
+      "location": "center right below middle right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle obscuring part of photograph"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "upper middle below large black redaction",
+      "description": "Color photograph of a person sitting on sand at a beach, partially redacted from neck up",
+      "confidence": "high"
+    },
+    {
+      "location": "center right, partially redacted",
+      "description": "Black and white photograph showing a palm tree or plant, partially redacted",
+      "confidence": "high"
+    },
+    {
+      "location": "lower left, partially redacted",
+      "description": "Black and white photograph of an arm and torso area of a person, partially redacted",
+      "confidence": "high"
+    },
+    {
+      "location": "lower right, partially redacted",
+      "description": "Color photograph of a person performing a backbend on a white sandy beach with blue sky background, partially redacted",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

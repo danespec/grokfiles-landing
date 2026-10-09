@@ -1,0 +1,85 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "levitection-signed-term-sheet-no-close",
+  "title": "Levitection: The Signed Term Sheet That Never Closed",
+  "published": "2026-09-30",
+  "scope": "Source-bound reconstruction of the 2016 Levitection financing from negotiation authorization through proposed economics, signed term sheet, budget review, explicit decline and negative bank-close test.",
+  "evidence_packages": [
+    "/Volumes/homes/admin/GAH_US_RUN6_LEVITECTION_BIRD_DHS_MASTER.md",
+    "/Volumes/homes/admin/GAH_US_RUN7_EPSTEIN_TECH_BANKING_MASTER.md"
+  ],
+  "sources": [
+    {
+      "id": "APRIL-PITCH",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA01802733",
+      "url": "/pdf-lite?id=EFTA01802733",
+      "supports": "Barak proposes Udi negotiate better terms using the Reporty construct; Epstein or Darren and Barak to be updated.",
+      "limit": "Investment discussion/negotiation request, not closing."
+    },
+    {
+      "id": "APRIL-YES",
+      "class": "PRIMARY_EMAIL_THREAD",
+      "record": "EFTA00326339",
+      "url": "/pdf-lite?id=EFTA00326339",
+      "supports": "Preserves Epstein's 'Yes' response to the request to send Udi to negotiate.",
+      "limit": "Authorization to negotiate, not authorization to fund a final transaction."
+    },
+    {
+      "id": "JUNE-TS",
+      "class": "PRIMARY_TERM_SHEET_MARKUP",
+      "record": "EFTA00589112",
+      "url": "/pdf-lite?id=EFTA00589112",
+      "supports": "Proposed investor entity under Barak control; $1.02M initial + $680K deferred; 38.50% FD after both tranches; statement-of-intent status.",
+      "limit": "June markup is not the exact signed July attachment."
+    },
+    {
+      "id": "MAY-JUNE-REDLINE",
+      "class": "PRIMARY_TERM_SHEET_REDLINE",
+      "record": "EFTA00588982",
+      "url": "/pdf-lite?id=EFTA00588982",
+      "supports": "Earlier redline showing evolution of proposed economics and cap-table terms.",
+      "limit": "Draft/redline, not final signed instrument."
+    },
+    {
+      "id": "SIGNED-COVER",
+      "class": "PRIMARY_EMAIL_WITH_SIGNED_ATTACHMENT_NAMES",
+      "record": "EFTA00636238",
+      "url": "/pdf-lite?id=EFTA00636238",
+      "supports": "July 14 FWMK cover states signed term sheet attached and sent to Darren; Barak forwards to Epstein.",
+      "limit": "Signed attachment bodies are not separately exposed as clean OCR EFTA text; exact signed terms should not be assumed identical to June markup."
+    },
+    {
+      "id": "DECLINE",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02346720",
+      "url": "/pdf-lite?id=EFTA02346720",
+      "supports": "Aug. 13 Epstein budget review and explicit decision to decline further investment; Barak accepts.",
+      "limit": "Explains decision not to proceed, not every prior negotiation detail."
+    },
+    {
+      "id": "RUN7-BANK-NEGATIVE",
+      "class": "GAH_BANK_CORPUS_NEGATIVE_TEST",
+      "record": "GAH_US_RUN7_EPSTEIN_TECH_BANKING_MASTER.md",
+      "supports": "Search of available Southern Trust technology-banking corpus found no Levitection-family funded transaction; Reporty positive control was recovered.",
+      "limit": "Negative result is bounded by completeness of recovered banking corpus."
+    }
+  ],
+  "proposed_terms": {
+    "initial_investment": 1020000,
+    "deferred_investment": 680000,
+    "total_contemplated": 1700000,
+    "fd_ownership_after_both_cash_tranches_pct": 38.5
+  },
+  "open_questions": [
+    "The exact text of the July signed term-sheet attachments.",
+    "Whether any definitive documents were drafted but are absent from the recovered corpus.",
+    "Whether a non-Southern-Trust vehicle ever advanced funds outside the available bank records."
+  ],
+  "not_established": [
+    "A funded Levitection investment by Epstein, Southern Trust or another Epstein-associated vehicle.",
+    "The final identity of the unnamed Barak-controlled investor entity.",
+    "Share ownership, board rights or warrants arising from a completed closing.",
+    "Any causal connection from the unfunded 2016 proposal to later BIRD/DHS-related activity."
+  ]
+}

@@ -1,0 +1,7 @@
+8462b3a9c5a6643b323596683c20389cb582926e30e492b829bf568aec5bea31  ./investigations/andriesz-adfin-lutnick-paper-trail.html
+7a3f2bda27b465dff03477d2eed211faf89b39c6ee4e177bfd6e7cb48f66828b  ./evidence-data/andriesz-adfin-lutnick/source-manifest.json
+894adaee7058f98a7395b63f0bcaa2dff14c841b0fb5c250ca5c6eb48b8fca5e  ./evidence-data/andriesz-adfin-lutnick/claims.json
+61a70da23cc10262f248b54392b47ca126171d4423a44d5e59f99c52352bf360  ./index.html
+5273ab6ca4a810fb255b15e46d410a909e6dc1aa02ee5c167883cf34a4f22045  ./investigations.html
+507153201bc94a47599a47f0118771b3709beef5d5831d37b69b92dd507661c2  ./latest.html
+28410d407a374663e91e5acf1f9da5b7453d768f29a2525a9c8986184e9af4af  ./GAH_ANDRIESZ_REGULATORY_EXPANSION_REPORT.json

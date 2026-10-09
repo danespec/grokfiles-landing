@@ -1,0 +1,74 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 236,
+  "page_id": "page_236",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_236.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_236.ocr.txt",
+  "image_metadata": {
+    "bytes": 1444822,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8fbb22a7979210acd698659214ae7702b45df7348563c8398241b3a0e0247880"
+  },
+  "ocr_text": "",
+  "ocr_status": "empty",
+  "objective_vision_observations": [
+    "A single page with centered large black text in a decorative serif font on a plain light background, reading 'THE NEXT FIFTY YEARS'.",
+    "Layout: Centered text in two lines"
+  ],
+  "observations": [
+    "A single page with centered large black text in a decorative serif font on a plain light background, reading 'THE NEXT FIFTY YEARS'.",
+    "Layout: Centered text in two lines"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THE NEXT FIFTY YEARS"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:39:38.219Z",
+    "response_id": "resp_0c27f008da093013006a50313469c081948a1b60cd736c9b12",
+    "raw_output_sha256": "3832832f601744991d093086834dedaf0f6d1293afe1df21aa035a29c47b2f7d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c27f008da093013006a50313469c081948a1b60cd736c9b12",
+    "enriched_at": "2026-07-09T23:39:38.219Z"
+  },
+  "visual_summary": "A single page with centered large black text in a decorative serif font on a plain light background, reading 'THE NEXT FIFTY YEARS'.",
+  "layout": [
+    "Centered text in two lines"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,89 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 89,
+  "page_id": "page_089",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_089.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_089.ocr.txt",
+  "image_metadata": {
+    "bytes": 11452528,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "decca12a6fd39ff1398ea005da87f2a5b2d62409784f98f98d17ed8f06e3d9ad"
+  },
+  "ocr_text": "Ge eee FROM ME ; ane\nWHEY CAN'T WARE SHAT ' we a\nag, = aii a a ~ coor i\nDA ts ie are tas o SiS eet er ce\nea ‘and IRA GERSHWIN. mal- 0- dy Hnieciy on, \"eee SS a a oe eS\n“ee (. Sree Se = TD Miso your fond on.\nees a2 Sage ae ape Sa ee ae as Pi\nAC (tziae - t Y ; See ees Se oe a\neel ete £6 ——£> ee eS ho a\neae 4, al ‘ - See wy nw <= S oS } . 3\n£ ee, We iF “ | et es coe os pp === Sie Ss seal\n. 4 ae. . a ——— a a\n|) Se ths a a Er tt - Gm.\neee wr Lg, _Stngtitng tebe yen from ime, Th ann ——\n| Co a : 5 ied Fl “a ws ee oes (SS SSE ee : .\n2 ee V hnnhdid rh i je \\ oe SSS ST\nj a ara ee a — Though by to-mor-row youre | — ei sees\nh i ee) F - rowel . oS\" Ie |\na we JY Gar co-miance wniit cud on § SOF = os, 7 a inl et |\nMaas AY] aoe sires Poe a a = ‘ie — —\n= Ya) r a ae\n* ; amt SS a 3 as ae ee ee — jj\n' a eer ree me ae oan ae a | ee id — ; 9 SS SS ho\n| ana secee' mere aso roe Momeeey eee saad . etiam ome nm fe Sel meena eee 1?\nb sil i  ~ jo mde ct, «but 09 the songartt-er SS ass\n+ Troe Sen seas an ph aa iy ;\nhte eee = oS SS: SS SS ee oe eb re a a a a Gers & Pai oh iy ;\naxepeamme 3 ; ae ee ht i hele\nae 2 ——— ee re (FS — Semmy Crom sat\noe,» Ud = a SS a el 4? fea > = = a a\nae Bed ON = Sea eh \" — < - Ss — — — _ =\naie sh _* ees =e te eS\n7 a . aeaien pe ee\nee oe _ a na . . 181\nbi By 7< (a : = * din.\n‘ae a : wo aban 6 we 2 aS se\nONES ae Gert. eS ee os ae ee — aa ah ee a en ep Se SS\n‘a i cal Stsce si ei er is % fee _ SS a aos a —_\nep di Py = aes rs =e eee a : a , The wayzovechanpelmay Hie————————-_ 3) >\n‘s id = Eee ee = De re Be a\n. = aa ‘ a * i =. 4 — Ee ek -\nSpa a | itd a ate v iq : ;] =\nc Ai a =< SS \" Fe eon. OC BW\na a a ee m : a» ahr bai! T+ oe Sf\noat wt fat? Fri. sas BhT age SS Sg\nay ot 8 a ee ase tele ue oO - way = from j\nEee, <1 2, , a ot 8 ot SS rere CUO | fe hat away from MT Nos They\nSains ra ‘ , SS a eae vamp © a > SS ee\neee ae, vce - on <= ee Be oe ee\nSea ae = ee ee oe SS So Soe! SS a ee i ee \\\n3 Raetag) ——— ye Se ee mma fic: Se ae ee oe ae ie\n‘ Cage < — a bd eS 2 ee ri » oa o Stoarstass St we a.\na as = — a ‘Pho wey you wear your\n\\e | 0 ae. = he ——<—= : eae\nay oy —— fae i a oe eae\nsags ir a 2. 2 —— + a VK ae :\nAles id\nPS pinta. can:\n*}- OS See\nHOUSE_OVERSIGHT_000089\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page consists of printed sheet music titled 'THEY CAN'T TAKE THAT AWAY FROM ME' by George Gershwin and Ira Gershwin. The sheet music contains standard musical notation with staff lines, musical notes, clefs, and lyrics placed below the notes. The music is organized into two columns, with multiple staves per column. There is visible text including the title, composer credits, and musical directions such as 'Moderato'. Some parts of the lyrics visible include phrases like 'The way you hold your knife' and 'Though by to-morrow you're'. The page number '89' is visible at the bottom right and top left corners. The sheet music appears slightly tilted and photographed or scanned, with some blurring and distortion around edges and notes.",
+    "Layout: Title at top center",
+    "Layout: Composer credit below title",
+    "Layout: Two main columns of sheet music",
+    "Layout: Page number in corners"
+  ],
+  "observations": [
+    "The page consists of printed sheet music titled 'THEY CAN'T TAKE THAT AWAY FROM ME' by George Gershwin and Ira Gershwin. The sheet music contains standard musical notation with staff lines, musical notes, clefs, and lyrics placed below the notes. The music is organized into two columns, with multiple staves per column. There is visible text including the title, composer credits, and musical directions such as 'Moderato'. Some parts of the lyrics visible include phrases like 'The way you hold your knife' and 'Though by to-morrow you're'. The page number '89' is visible at the bottom right and top left corners. The sheet music appears slightly tilted and photographed or scanned, with some blurring and distortion around edges and notes.",
+    "Layout: Title at top center",
+    "Layout: Composer credit below title",
+    "Layout: Two main columns of sheet music",
+    "Layout: Page number in corners"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THEY CAN'T TAKE THAT AWAY FROM ME",
+    "Music and lyrics by GEORGE GERSHWIN and IRA GERSHWIN",
+    "Moderato (♩=112)",
+    "The way you hold your knife",
+    "Though by to-morrow you're",
+    "HOUSE_OVERSIGHT_000089"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some musical notation and lyrics are partially blurred or hard to read due to image quality and tilt."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:17:02.582Z",
+    "response_id": "resp_0d1ec0b3ff0525f0006a502be6d7d0819496ce3509ee13b6f7",
+    "raw_output_sha256": "92006194f1f603984c073b4bcb7bb22c13c4c6e92482a10dedc174e429ba2d91"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d1ec0b3ff0525f0006a502be6d7d0819496ce3509ee13b6f7",
+    "enriched_at": "2026-07-09T23:17:02.582Z"
+  },
+  "visual_summary": "The page consists of printed sheet music titled 'THEY CAN'T TAKE THAT AWAY FROM ME' by George Gershwin and Ira Gershwin. The sheet music contains standard musical notation with staff lines, musical notes, clefs, and lyrics placed below the notes. The music is organized into two columns, with multiple staves per column. There is visible text including the title, composer credits, and musical directions such as 'Moderato'. Some parts of the lyrics visible include phrases like 'The way you hold your knife' and 'Though by to-morrow you're'. The page number '89' is visible at the bottom right and top left corners. The sheet music appears slightly tilted and photographed or scanned, with some blurring and distortion around edges and notes.",
+  "layout": [
+    "Title at top center",
+    "Composer credit below title",
+    "Two main columns of sheet music",
+    "Page number in corners"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,1510 @@
+{
+  "schema": "gah.agent-citation-quality-summary.v1",
+  "generated_at": "2026-10-08T22:29:10.002Z",
+  "scope": "Published /evidence-data/*/source-manifest.json files present in the release package",
+  "count_manifests": 47,
+  "source_entries": 325,
+  "manifest_with_errors": 0,
+  "manifest_with_warnings": 21,
+  "manifest_needing_manual_review": 47,
+  "total_structural_errors": 0,
+  "total_structural_warnings": 196,
+  "categories": {
+    "link_liveness": "NOT_CHECKED",
+    "primary_document_authenticity": "NOT_CHECKED",
+    "claim_truth": "NOT_CHECKED",
+    "quote_accuracy": "NOT_CHECKED",
+    "structure": "LOCAL_STATIC_CHECK"
+  },
+  "limitations": "This is a structural inventory audit, not evidence substantiation. Missing per-source fields may be valid for an alternate manifest schema; findings should be manually reviewed.",
+  "manifests": [
+    {
+      "manifest_id": "adfin-southern-trust-series-a-2013",
+      "status": "requires_source_review",
+      "source_entries": 6,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "andrew-judicial-review-2026",
+      "status": "requires_source_review",
+      "source_entries": 6,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "andriesz-adfin-lutnick",
+      "status": "requires_source_review",
+      "source_entries": 17,
+      "errors": 0,
+      "warnings": 17,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00020515"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01249207"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01249210"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00173881"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00289560"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01050772"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01084694"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOUSE-LUTNICK-TRANSCRIPT-2026-05-06"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01648955"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CFTC-8083-19"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CFTC-8239-20"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "UKFTT-2025-700-TC"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "BGC-2026-Q2-10Q"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "FCA-CC-202201760"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "FCA-RESPONSE-202201760"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "FCA-ANDRIESZ-REVIEW-2026-10"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ET-3200408-2025"
+        }
+      ]
+    },
+    {
+      "manifest_id": "barak-epstein-putin-qatar-carbyne",
+      "status": "requires_source_review",
+      "source_entries": 17,
+      "errors": 0,
+      "warnings": 17,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01975333"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02396786"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00450694"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02609150"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02612143"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02607775"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02628004"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02628648"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02628761"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "MIAMI-HERALD-2026-QATAR-CARBYNE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "PENINSULA-QATAR-2021-BARZAN"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SCS-FIFA-WORLD-CUP-2022"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "NAS-BARAK-RAW-MAIL-AUDIT-20261006"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02593250"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02656769"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00326339"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00599472"
+        }
+      ]
+    },
+    {
+      "manifest_id": "barak-hfa-cycurity-2015",
+      "status": "requires_source_review",
+      "source_entries": 9,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "barak-scheduling-record-2010-2018",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 0,
+      "information": 2,
+      "findings": [
+        {
+          "severity": "info",
+          "code": "alternate_schema"
+        },
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "black-family-partners-18m-to-5-5m-repricing",
+      "status": "requires_source_review",
+      "source_entries": 7,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "black-family-partners-source-of-funds",
+      "status": "requires_source_review",
+      "source_entries": 4,
+      "errors": 0,
+      "warnings": 4,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA01510783"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA00589888-EFTA00589921"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA00634299"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA01556835"
+        }
+      ]
+    },
+    {
+      "manifest_id": "blanche-no-evidence",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 1,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "missing_schema"
+        },
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "book-of-black",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 1,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "missing_schema"
+        },
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "coinbase-return-first-15m-exit",
+      "status": "requires_source_review",
+      "source_entries": 6,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "darren-indyke-investment-execution-layer",
+      "status": "requires_source_review",
+      "source_entries": 13,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "doug-band",
+      "status": "requires_source_review",
+      "source_entries": 27,
+      "errors": 0,
+      "warnings": 28,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "missing_schema"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BAND-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BAND-RELEASE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-SEVEN-TI-REQUESTS"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BAND-TI-REQUEST-PAGE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BAND-TI-REQUEST"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-CLINTON-SUBPOENAS"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-CLINTON-CONTEMPT-REMARKS"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-CLINTONS-CAVED"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-CLINTON-DEPOSITION-VIDEOS"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "DOJ-PHASE-ONE-RELEASE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "DOJ-FLIGHT-LOG-MEDIA"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "DOJ-FLIGHT-LOG"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CLINTON-STATEMENT-X"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CLINTON-STATEMENT-X-OEMBED"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CLINTON-STATEMENT-IMAGE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-LEON-BLACK-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-GATES-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-GROFF-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-RUEMMLER-TI-REQUEST"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00582326"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00582156"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00579203"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00579276"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02335607"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00011434"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00581829"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00582193"
+        },
+        {
+          "severity": "info",
+          "code": "limitations_not_structured"
+        }
+      ]
+    },
+    {
+      "manifest_id": "efta-compliance",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 1,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "missing_schema"
+        },
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "epstein-code-words-documentary-test",
+      "status": "requires_source_review",
+      "source_entries": 5,
+      "errors": 0,
+      "warnings": 5,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02440165"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02309912"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02162755"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01616214"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00841659"
+        }
+      ]
+    },
+    {
+      "manifest_id": "epstein-december-6-7-2007-decision-gap",
+      "status": "requires_source_review",
+      "source_entries": 3,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "epstein-july-2007-decision-gap",
+      "status": "requires_source_review",
+      "source_entries": 5,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "epstein-npa-defense-access-victim-notification",
+      "status": "requires_source_review",
+      "source_entries": 3,
+      "errors": 0,
+      "warnings": 3,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00013764"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "DOJ-OPR-2020"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "GAH-JULY-2007-DECISION-GAP"
+        }
+      ]
+    },
+    {
+      "manifest_id": "fbi-epstein-not-evidentiary-scrub",
+      "status": "requires_source_review",
+      "source_entries": 1,
+      "errors": 0,
+      "warnings": 1,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02730468"
+        }
+      ]
+    },
+    {
+      "manifest_id": "financial-trust-black-family-partners-2012",
+      "status": "requires_source_review",
+      "source_entries": 9,
+      "errors": 0,
+      "warnings": 9,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-000"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-001"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-002"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-003"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-004"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-005"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-006"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-007"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SRC-008"
+        }
+      ]
+    },
+    {
+      "manifest_id": "financial-trust-esw-lifecycle",
+      "status": "requires_source_review",
+      "source_entries": 25,
+      "errors": 0,
+      "warnings": 34,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "info",
+          "code": "alternate_schema"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2005-8K"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2005-SB2"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA00599516"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00599516"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02441323"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02441323"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02429133"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02429133"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA01585465"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01585465"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA01509627"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01509627"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2010-8K"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2010-Q1-10Q"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2011-Q2-10Q"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2011-13G"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA01128206"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01128206"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA00693690"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00693690"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01510783"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01510763"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA00585846"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00585846"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00299927"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2014-S1A"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02403217"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02403217"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CARB-DE-04-011-FAMILY"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CARB-DE-09-015"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EPA-CLEAN-DIESEL-ARCHIVE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "USASPENDING-ESW-CANADA"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2013-REVERSE-SPLIT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-2015-10K"
+        }
+      ]
+    },
+    {
+      "manifest_id": "george-mitchell-epstein-source-audit",
+      "status": "requires_source_review",
+      "source_entries": 12,
+      "errors": 0,
+      "warnings": 0,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "info",
+          "code": "limitations_not_structured"
+        }
+      ]
+    },
+    {
+      "manifest_id": "giuffre-maxwell-docket-1320",
+      "status": "requires_source_review",
+      "source_entries": 17,
+      "errors": 0,
+      "warnings": 17,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-1320"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-1320-16"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-1320-18"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-1326-4"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-264-1"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-1078"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "CR-ECF-285-EFTA00029100"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "ECF-1367"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "DOCKET"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00080976"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00090979"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00090983"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00090986"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00030122"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00010245"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00010252"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00088205"
+        }
+      ]
+    },
+    {
+      "manifest_id": "hold-the-letter",
+      "status": "requires_source_review",
+      "source_entries": 2,
+      "errors": 0,
+      "warnings": 2,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00013764"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "DOJ-OPR-2020"
+        }
+      ]
+    },
+    {
+      "manifest_id": "honeycomb-spv-spotify-tencent-music",
+      "status": "requires_source_review",
+      "source_entries": 8,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "jpmorgan-4725-wires",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 0,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "jpmorgan-amador-forensic-report",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 0,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "kyara-i-unresolved-profitable-spv",
+      "status": "requires_source_review",
+      "source_entries": 6,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "kyara-spv-wearality-blockstream-oh2",
+      "status": "requires_source_review",
+      "source_entries": 8,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "leon-black",
+      "status": "requires_source_review",
+      "source_entries": 15,
+      "errors": 0,
+      "warnings": 16,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "missing_schema"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BLACK-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BLACK-RELEASE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BLACK-SUBPOENA-RELEASE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BLACK-TI-REQUEST"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "APOLLO-2021-REVIEW-RELEASE"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "APOLLO-2026-LETTER"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-APOLLO-8K-2021-01-25"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-DECHERT-REPORT-EX99-1"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "SEC-BLACK-LP-LETTER-EX99-2"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-GROFF-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-GATES-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOC-BAND-TRANSCRIPT"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "BIRTHDAY-BOOK-PAGE-118"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "BIRTHDAY-BOOK-PAGE-119"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "GAH-EFTA02412232"
+        },
+        {
+          "severity": "info",
+          "code": "limitations_not_structured"
+        }
+      ]
+    },
+    {
+      "manifest_id": "leon-black-158m-170m",
+      "status": "requires_source_review",
+      "source_entries": 5,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "leon-black-2023",
+      "status": "requires_source_review",
+      "source_entries": 10,
+      "errors": 0,
+      "warnings": 20,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731478"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731478"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731482"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731482"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731486"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731486"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731488"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731488"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731480"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731480"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731484"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731484"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731485"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731485"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731490"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731490"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02731018"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02731018"
+        },
+        {
+          "severity": "warning",
+          "code": "source_locator_missing",
+          "source_id": "EFTA02730996"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA02730996"
+        },
+        {
+          "severity": "info",
+          "code": "limitations_not_structured"
+        }
+      ]
+    },
+    {
+      "manifest_id": "levitection-signed-term-sheet-no-close",
+      "status": "requires_source_review",
+      "source_entries": 7,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "mcc-4chan-attribution",
+      "status": "requires_source_review",
+      "source_entries": 4,
+      "errors": 0,
+      "warnings": 4,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00133349"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00123462"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00133182"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00048963"
+        },
+        {
+          "severity": "info",
+          "code": "limitations_not_structured"
+        }
+      ]
+    },
+    {
+      "manifest_id": "mcc-final-48-hours",
+      "status": "requires_source_review",
+      "source_entries": 4,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "michael-chertoff-reporty-advisory-agreement",
+      "status": "requires_source_review",
+      "source_entries": 3,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "neoteny-3-fund-subscription-no-portfolio-attribution",
+      "status": "requires_source_review",
+      "source_entries": 5,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "new-mexico-doj",
+      "status": "requires_source_review",
+      "source_entries": 0,
+      "errors": 0,
+      "warnings": 0,
+      "information": 2,
+      "findings": [
+        {
+          "severity": "info",
+          "code": "alternate_schema"
+        },
+        {
+          "severity": "info",
+          "code": "no_sources_array"
+        }
+      ]
+    },
+    {
+      "manifest_id": "ng911-email-planned-fcc-meetings-no-proven-access-chain",
+      "status": "requires_source_review",
+      "source_entries": 7,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "nikolic-gates-epstein-bridge",
+      "status": "requires_source_review",
+      "source_entries": 6,
+      "errors": 0,
+      "warnings": 6,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOUSE-GATES-TRANSCRIPT-2026-06-10"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOUSE_OVERSIGHT_030887"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOUSE_OVERSIGHT_031018"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA00873874"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01966988"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01967528"
+        }
+      ]
+    },
+    {
+      "manifest_id": "norway-brende-hearing",
+      "status": "requires_source_review",
+      "source_entries": 3,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "reporty-southern-trust-ergo-1m-2015",
+      "status": "requires_source_review",
+      "source_entries": 8,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "sascha-riley-evidence-audit",
+      "status": "requires_source_review",
+      "source_entries": 7,
+      "errors": 0,
+      "warnings": 7,
+      "information": 1,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-001"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-002"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-003"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-004"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-005"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-006"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "RILEY-SRC-007"
+        },
+        {
+          "severity": "info",
+          "code": "limitations_not_structured"
+        }
+      ]
+    },
+    {
+      "manifest_id": "shared-administration-no-money-crossover",
+      "status": "requires_source_review",
+      "source_entries": 9,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "southern-trust-gates-client-definition",
+      "status": "requires_source_review",
+      "source_entries": 2,
+      "errors": 0,
+      "warnings": 2,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "HOUSE-GATES-TRANSCRIPT-2026-06-10"
+        },
+        {
+          "severity": "warning",
+          "code": "support_scope_missing",
+          "source_id": "EFTA01111961"
+        }
+      ]
+    },
+    {
+      "manifest_id": "truesec-il-energy-twin-spvs-2013",
+      "status": "requires_source_review",
+      "source_entries": 5,
+      "errors": 0,
+      "warnings": 0,
+      "information": 0,
+      "findings": []
+    },
+    {
+      "manifest_id": "wyden-deutsche-302-gap",
+      "status": "requires_source_review",
+      "source_entries": 9,
+      "errors": 0,
+      "warnings": 1,
+      "information": 0,
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "claim_source_missing",
+          "source_id": "WYDEN302-005"
+        }
+      ]
+    }
+  ]
+}

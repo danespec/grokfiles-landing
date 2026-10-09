@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/epstein/doj-disclosures
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 0e2d908f194830fb4f99a4e230529e9dd40f92df018dbf7cef6bd8b800007ef3
+Bytes: 90490
+Acquisition method: verified existing local capture

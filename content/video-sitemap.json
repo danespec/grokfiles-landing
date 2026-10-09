@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "content/video-registry.json",
+  "hub": {
+    "loc": "https://grokarchivehub.com/videos",
+    "lastmod": "2026-07-22"
+  },
+  "videoUrls": []
+}

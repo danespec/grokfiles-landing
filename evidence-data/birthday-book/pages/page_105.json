@@ -1,0 +1,115 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 105,
+  "page_id": "page_105",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_105.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_105.ocr.txt",
+  "image_metadata": {
+    "bytes": 10660780,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "35933bf432b8abfafa976ea7102aa6b4bd61d0b0b082f0d96db5b50c500f3b34"
+  },
+  "ocr_text": "Os\nO |\nUV |\nD i\nAREAS RTE atiy iy € sess ME oe ES a) A aN rE a in i acid\nHOUSE_OVERSIGHT_000105\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three color photographs vertically aligned. The top photo shows a person lying on a bed inside a room near a balcony. The middle photo shows a person sitting behind a table with breakfast items, including a coffee pot, cups, and food, on a balcony. The bottom photo is an outdoor scene framed by balcony rails, overlooking a body of water with a small boat visible. On the left side of the page, a vertical handwritten note in green ink reads 'NOT A CLOUD IN MY SKY!'.",
+    "Layout: vertical strip of three photos",
+    "Layout: left side vertical handwritten note",
+    "Photo/image candidate at top photo: Person lying on a bed in a room near balcony, curtains drawn, daylight visible through window",
+    "Photo/image candidate at middle photo: Person sitting behind a table set with breakfast items including coffee pot, cups, and food, on balcony",
+    "Photo/image candidate at bottom photo: View through balcony railings overlooking body of water with small boat visible"
+  ],
+  "observations": [
+    "The page contains three color photographs vertically aligned. The top photo shows a person lying on a bed inside a room near a balcony. The middle photo shows a person sitting behind a table with breakfast items, including a coffee pot, cups, and food, on a balcony. The bottom photo is an outdoor scene framed by balcony rails, overlooking a body of water with a small boat visible. On the left side of the page, a vertical handwritten note in green ink reads 'NOT A CLOUD IN MY SKY!'.",
+    "Layout: vertical strip of three photos",
+    "Layout: left side vertical handwritten note",
+    "Photo/image candidate at top photo: Person lying on a bed in a room near balcony, curtains drawn, daylight visible through window",
+    "Photo/image candidate at middle photo: Person sitting behind a table set with breakfast items including coffee pot, cups, and food, on balcony",
+    "Photo/image candidate at bottom photo: View through balcony railings overlooking body of water with small boat visible"
+  ],
+  "dates": [],
+  "document_strings": [
+    "NOT A CLOUD IN MY SKY!",
+    "HOUSE_OVERSIGHT_000105"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "left margin vertically",
+      "text_as_seen": "NOT A CLOUD IN MY SKY!",
+      "confidence": "high",
+      "note": "Vertical handwritten text in green ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:56.166Z",
+    "response_id": "resp_0ca295483034fad2006a502c95ca488194869084a43566bacf",
+    "raw_output_sha256": "cc1ac75192b499ccb8a6e273ae47b716ef0bb8c97e666d14e602fa2b1da1ef3c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ca295483034fad2006a502c95ca488194869084a43566bacf",
+    "enriched_at": "2026-07-09T23:19:56.166Z"
+  },
+  "visual_summary": "The page contains three color photographs vertically aligned. The top photo shows a person lying on a bed inside a room near a balcony. The middle photo shows a person sitting behind a table with breakfast items, including a coffee pot, cups, and food, on a balcony. The bottom photo is an outdoor scene framed by balcony rails, overlooking a body of water with a small boat visible. On the left side of the page, a vertical handwritten note in green ink reads 'NOT A CLOUD IN MY SKY!'.",
+  "layout": [
+    "vertical strip of three photos",
+    "left side vertical handwritten note"
+  ],
+  "handwriting": [
+    {
+      "location": "left margin vertically",
+      "text_as_seen": "NOT A CLOUD IN MY SKY!",
+      "confidence": "high",
+      "note": "Vertical handwritten text in green ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Person lying on a bed in a room near balcony, curtains drawn, daylight visible through window",
+      "confidence": "high"
+    },
+    {
+      "location": "middle photo",
+      "description": "Person sitting behind a table set with breakfast items including coffee pot, cups, and food, on balcony",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom photo",
+      "description": "View through balcony railings overlooking body of water with small boat visible",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

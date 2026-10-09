@@ -1,0 +1,488 @@
+/* GAH-EXPLORE-HUB-001 */
+
+/* GAH-EXPLORE-HUB-001 */
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] {
+  --da-panel: #121923;
+  --da-panel-raised: #192330;
+  --da-text: #f4f0e7;
+  --da-muted: #b8c0cc;
+  --da-dim: #8793a2;
+  --da-line: rgba(255, 255, 255, 0.12);
+  --da-accent: #d7a956;
+  --da-accent-strong: #a3dfcf;
+  --da-gold: #d4b36e;
+
+  position: relative;
+  isolation: isolate;
+  width: min(1160px, calc(100% - 2rem));
+  margin-inline: auto;
+  padding:
+    clamp(1rem, 4vw, 3rem)
+    0
+    clamp(4rem, 8vw, 7rem);
+  color: var(--da-text);
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 50%;
+  width: min(100vw, 1440px);
+  height: 38rem;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(
+      circle at 18% 8%,
+      rgba(215, 169, 86, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 86% 5%,
+      rgba(212, 179, 110, 0.12),
+      transparent 32%
+    );
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] * {
+  box-sizing: border-box;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] section {
+  margin-block: clamp(1.5rem, 5vw, 4rem);
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  section:first-of-type {
+  margin-top: 0;
+  padding: clamp(1.6rem, 5vw, 4rem);
+  border: 1px solid var(--da-line);
+  border-radius: 1.7rem;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(27, 38, 49, 0.98),
+      rgba(11, 15, 20, 0.98)
+    );
+  box-shadow:
+    0 26px 74px rgba(0, 0, 0, 0.34);
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  section:first-of-type::before {
+  content: "EVIDENCE BRIEFS";
+  display: inline-flex;
+  margin-bottom: 1.2rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid rgba(215, 169, 86, 0.5);
+  border-radius: 999px;
+  background: rgba(215, 169, 86, 0.12);
+  color: var(--da-accent-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  :is(h1, h2, h3) {
+  color: var(--da-text);
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+  text-wrap: balance;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] h1 {
+  max-width: 12ch;
+  margin: 0 0 1rem;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] h2 {
+  max-width: 26ch;
+  margin: 0 0 1rem;
+  font-size: clamp(1.7rem, 4vw, 3rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] h3 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.18;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"] p {
+  color: var(--da-muted);
+  line-height: 1.68;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 0.72rem;
+  height: 100%;
+  padding: clamp(1.2rem, 2.4vw, 1.75rem);
+  border: 1px solid var(--da-line);
+  border-radius: 1.15rem;
+  background:
+    linear-gradient(
+      145deg,
+      var(--da-panel-raised),
+      var(--da-panel)
+    );
+  box-shadow:
+    0 15px 38px rgba(0, 0, 0, 0.24);
+  color: var(--da-text);
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-card::after {
+  content: "↗";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid var(--da-line);
+  border-radius: 50%;
+  color: var(--da-dim);
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(215, 169, 86, 0.5);
+  box-shadow:
+    0 22px 48px rgba(0, 0, 0, 0.33);
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-card
+  h3 {
+  padding-right: 2.4rem;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-card
+  p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .is-featured-document-autopsy {
+  grid-column: 1 / -1;
+  min-height: 20rem;
+  padding: clamp(1.6rem, 4vw, 3rem);
+  border-color: rgba(215, 169, 86, 0.5);
+  background:
+    radial-gradient(
+      circle at 90% 12%,
+      rgba(215, 169, 86, 0.18),
+      transparent 34%
+    ),
+    linear-gradient(
+      140deg,
+      #332a1d,
+      #14100b
+    );
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .is-featured-document-autopsy
+  h3 {
+  max-width: 23ch;
+  font-size: clamp(1.7rem, 4vw, 3.1rem);
+  line-height: 1.04;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  margin: 0.3rem 0.45rem 0.3rem 0;
+  padding: 0.72rem 1.05rem;
+  border: 1px solid var(--da-line);
+  border-radius: 999px;
+  color: var(--da-text);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .button.primary {
+  border-color: var(--da-accent);
+  background: var(--da-accent);
+  color: #07110e;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  section:last-of-type {
+  padding: clamp(1.3rem, 3vw, 2.2rem);
+  border: 1px solid var(--da-line);
+  border-left: 3px solid var(--da-gold);
+  border-radius: 1.15rem;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 179, 110, 0.12),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  :is(a, button):focus-visible {
+  outline: 3px solid var(--da-accent-strong);
+  outline-offset: 4px;
+}
+
+@supports (display: grid) {
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    section:has(> article) {
+    display: grid;
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    gap: clamp(0.9rem, 2vw, 1.35rem);
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    section:has(> article)
+    > :is(h2, p) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"] {
+    width: min(100% - 1rem, 1160px);
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    section:has(> article) {
+    grid-template-columns: 1fr;
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .is-featured-document-autopsy {
+    grid-column: auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    section:first-of-type,
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-card {
+    padding: 1.15rem;
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .button {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-card {
+    transition: none;
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-card:hover {
+    transform: none;
+  }
+}
+
+@media print {
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"] {
+    width: 100%;
+    color: #111;
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    section,
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-card {
+    border-color: #999 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    color: #111 !important;
+  }
+}
+
+/*
+ * GAH-OPEN-QUESTIONS-DISPATCH-GRID-R1
+ *
+ * The five editorial cards are direct anchor children of
+ * .dispatch-grid. This rule targets that actual grid instead of
+ * unrelated section/article elements.
+ */
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-grid {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-flow: row !important;
+  gap: clamp(0.9rem, 2vw, 1.35rem) !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  margin: clamp(1.5rem, 5vw, 4rem) 0 !important;
+  padding: 0 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-grid
+  > a.dispatch-card {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-column: auto !important;
+  justify-self: stretch !important;
+  align-self: stretch !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  writing-mode: horizontal-tb !important;
+  white-space: normal !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-grid
+  > a.dispatch-card.is-featured-document-autopsy {
+  grid-column: 1 / -1 !important;
+  min-height: 20rem !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .dispatch-grid
+  > a.dispatch-card
+  > * {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  writing-mode: horizontal-tb !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+@media (max-width: 760px) {
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-grid {
+    grid-template-columns:
+      minmax(0, 1fr) !important;
+    grid-auto-columns:
+      minmax(0, 1fr) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-grid
+    > a.dispatch-card,
+  main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+    .dispatch-grid
+    > a.dispatch-card.is-featured-document-autopsy {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    justify-self: stretch !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+
+/*
+ * GAH-EXPLORE-CONTRAST-R2
+ *
+ * Restores readable contrast on light editorial surfaces and corrects
+ * the inherited Evidence Briefs hero label.
+ */
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .page-hero::before {
+  content: "EXPLORE" !important;
+  color: #287867 !important;
+  -webkit-text-fill-color: #287867 !important;
+  opacity: 1 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  :is(.page-hero, .feature-panel:not(.gold), .info-card) {
+  color: #263449 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  :is(.page-hero, .feature-panel:not(.gold), .info-card)
+  :is(h1, h2, h3) {
+  color: #172337 !important;
+  -webkit-text-fill-color: #172337 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  :is(.page-hero, .feature-panel:not(.gold), .info-card)
+  p {
+  color: #46546a !important;
+  -webkit-text-fill-color: #46546a !important;
+  opacity: 1 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  :is(.page-hero, .feature-panel:not(.gold))
+  .eyebrow {
+  color: #526078 !important;
+  -webkit-text-fill-color: #526078 !important;
+  opacity: 1 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .feature-panel.gold {
+  color: #f7f3e9 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .feature-panel.gold
+  :is(h2, h3, p, .eyebrow) {
+  color: #f7f3e9 !important;
+  -webkit-text-fill-color: #f7f3e9 !important;
+  opacity: 1 !important;
+}
+
+main[data-native-open-questions="GAH-EXPLORE-HUB-001"]
+  .button:not(.primary) {
+  color: #172337 !important;
+  -webkit-text-fill-color: #172337 !important;
+  background: #fffaf0 !important;
+  border-color: rgba(23, 35, 55, 0.22) !important;
+  opacity: 1 !important;
+}

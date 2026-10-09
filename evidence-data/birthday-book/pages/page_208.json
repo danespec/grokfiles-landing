@@ -1,0 +1,134 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 208,
+  "page_id": "page_208",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_208.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_208.ocr.txt",
+  "image_metadata": {
+    "bytes": 7053421,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "86001c90cb5592029f9d5d2f70c1ba9c72b41045254f47abad1438e28b789b8c"
+  },
+  "ocr_text": "ov pa cen\nwor é —— | wy\nfis Wr FP ae. » ba\n\\ 7 iv ° Ww nv . 1 a\n| 1b ‘ ay ve | 7\n, |\nA | wl\nHOUSE_OVERSIGHT_000208\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographs adhered to the page. The top left photograph shows a man seated at a dining table with plates and glasses; another person is leaning towards him. The bottom right photograph shows a person standing in a closet, viewed from the side, wearing minimal clothing. Handwritten text is present to the left of the lower photo, stating a message referencing Palm Beach and mentioning piracy and a camera. Both visible faces in the photographs are obscured with black boxes.",
+    "Layout: two photographs on page",
+    "Layout: handwritten text to left of lower photograph",
+    "Photo/image candidate at top-left corner: Color photograph of a man seated at dining table with plates, glasses; another person leaning towards the man.",
+    "Photo/image candidate at bottom-right corner: Black and white photograph of a person standing sideways in closet wearing minimal clothing with shoes on floor."
+  ],
+  "observations": [
+    "Page contains two photographs adhered to the page. The top left photograph shows a man seated at a dining table with plates and glasses; another person is leaning towards him. The bottom right photograph shows a person standing in a closet, viewed from the side, wearing minimal clothing. Handwritten text is present to the left of the lower photo, stating a message referencing Palm Beach and mentioning piracy and a camera. Both visible faces in the photographs are obscured with black boxes.",
+    "Layout: two photographs on page",
+    "Layout: handwritten text to left of lower photograph",
+    "Photo/image candidate at top-left corner: Color photograph of a man seated at dining table with plates, glasses; another person leaning towards the man.",
+    "Photo/image candidate at bottom-right corner: Black and white photograph of a person standing sideways in closet wearing minimal clothing with shoes on floor."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000208"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center-left of page, between the two photographs",
+      "text_as_seen": "Visiting you down in Palm Beach... Can't get a second of Piracy with you and a camera around Ha! Ha!",
+      "confidence": "high",
+      "note": "Handwritten in black ink, readable cursive style."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "face of seated person in top photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscures face."
+    },
+    {
+      "location": "face of person standing in closet in bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscures face."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:35:44.644Z",
+    "response_id": "resp_01f1b6a84d120163006a503049bf1481969f70f5c027b3d03b",
+    "raw_output_sha256": "ef5c791faeee1877511efa12a68ced66bec2be3b57e751bdee9c4fd2acab3448"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01f1b6a84d120163006a503049bf1481969f70f5c027b3d03b",
+    "enriched_at": "2026-07-09T23:35:44.644Z"
+  },
+  "visual_summary": "Page contains two photographs adhered to the page. The top left photograph shows a man seated at a dining table with plates and glasses; another person is leaning towards him. The bottom right photograph shows a person standing in a closet, viewed from the side, wearing minimal clothing. Handwritten text is present to the left of the lower photo, stating a message referencing Palm Beach and mentioning piracy and a camera. Both visible faces in the photographs are obscured with black boxes.",
+  "layout": [
+    "two photographs on page",
+    "handwritten text to left of lower photograph"
+  ],
+  "handwriting": [
+    {
+      "location": "center-left of page, between the two photographs",
+      "text_as_seen": "Visiting you down in Palm Beach... Can't get a second of Piracy with you and a camera around Ha! Ha!",
+      "confidence": "high",
+      "note": "Handwritten in black ink, readable cursive style."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "face of seated person in top photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscures face."
+    },
+    {
+      "location": "face of person standing in closet in bottom photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscures face."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top-left corner",
+      "description": "Color photograph of a man seated at dining table with plates, glasses; another person leaning towards the man.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-right corner",
+      "description": "Black and white photograph of a person standing sideways in closet wearing minimal clothing with shoes on floor.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

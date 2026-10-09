@@ -1,0 +1,97 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 222,
+  "page_id": "page_222",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_222.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_222.ocr.txt",
+  "image_metadata": {
+    "bytes": 15625934,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "6b59030a45d34059c5dc2176a56f2545f8fe98058e0c1c98200f267f343c70ee"
+  },
+  "ocr_text": "eS ? mee ph CAPR Sta anit alam at coach cuaii Ba aR ts RE td CRN RS Pa ACS RE as 3 RR ates AG HS ee ae Ea tad eS a\n4 ; a .\norcs pea: . £37 os \\: = eS Sc ee 3 x m ; tie : 3\n7 oe Bees afay FR - eee Eee ‘a shh BRAS 5 wrt “\\ ey - 2 pee Baer oe x i\ny a eee Se eN tithe LFA SS - Oya Ps et are 2st analy >. yee E25 5 =e! bs -\nts q pe Gag. hes See SSP ean Stes . Fy “se ake Fe ES : aii. iserean alle Be 8 > Si  . pee is i :\n— Seon Sone es Te Fars ere q 4 Cotes set Ser recog eomeeerens na So J ; ge.\nyy. Whe pstath 2 j ase ee 3 % le RE Og ste oe oe res” ere ee A\n& as eee OP fect ey See ra ye eri a Ko ATED arm nee A eS, a\n* (fe 4 4 ae Ase ae pS GEN Ca aoe eRe Ce Sale 0 ee ae = oe\neS = a. =e By $. =\n7 1g g BS 3\na q A 9 3 4\na . ree :\n¥# : ped ie & oe.\nzw t Omir. q +\nss ae sae 4 aes oa\na } “Ser bat =\nZ_ ‘ ea A) Na a ,\nme : ene he\n: ‘4 MEARE A 4\ny ie ABS vet Pitshna\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image depicts two people standing close together near a small airplane parked on a tarmac, with one person hugging the other from behind. A third person is seen walking away on the left side of the image, pulling a suitcase. The airplane has a distinct flame design on its side and multiple windows. The sky is clear and blue, indicating daytime. The image is framed with a light brown border.",
+    "Layout: A single photograph centered on the page, framed by a light brown border.",
+    "Photo/image candidate at center: Photo shows three people near a small airplane parked on a tarmac, one person pulling a suitcase, two people embracing."
+  ],
+  "observations": [
+    "The image depicts two people standing close together near a small airplane parked on a tarmac, with one person hugging the other from behind. A third person is seen walking away on the left side of the image, pulling a suitcase. The airplane has a distinct flame design on its side and multiple windows. The sky is clear and blue, indicating daytime. The image is framed with a light brown border.",
+    "Layout: A single photograph centered on the page, framed by a light brown border.",
+    "Photo/image candidate at center: Photo shows three people near a small airplane parked on a tarmac, one person pulling a suitcase, two people embracing."
+  ],
+  "dates": [],
+  "document_strings": [],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "center of the image over the face of one person hugging the other",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "A black box obscures the face of the person being hugged."
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "No visible text or date strings on the page for further identification."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:37:51.737Z",
+    "response_id": "resp_06c8c1036a3ced25006a5030c8e67c81909eedf26c092f4883",
+    "raw_output_sha256": "bd00470b00b9ddcafdfde745667f69ae977033448fb70cc7ff84bcd8c3f420a6"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_06c8c1036a3ced25006a5030c8e67c81909eedf26c092f4883",
+    "enriched_at": "2026-07-09T23:37:51.737Z"
+  },
+  "visual_summary": "The image depicts two people standing close together near a small airplane parked on a tarmac, with one person hugging the other from behind. A third person is seen walking away on the left side of the image, pulling a suitcase. The airplane has a distinct flame design on its side and multiple windows. The sky is clear and blue, indicating daytime. The image is framed with a light brown border.",
+  "layout": [
+    "A single photograph centered on the page, framed by a light brown border."
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "center of the image over the face of one person hugging the other",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "A black box obscures the face of the person being hugged."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "Photo shows three people near a small airplane parked on a tarmac, one person pulling a suitcase, two people embracing.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,145 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 63,
+  "page_id": "page_063",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_063.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_063.ocr.txt",
+  "image_metadata": {
+    "bytes": 315055,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "98bdf942648e9c6b0824fa0ab47ccdaaac802163027ad0b841323072899b8093"
+  },
+  "ocr_text": "JOHNNY BOY KAFKA\n\n5917 GLENDORA AVE.\n\nDALLAS, TEXAS 75230\n\n214 987 3595\nJanuary 15, 2003\nDallas, Texas\nDearest Jeff:\nFifty years old. You really have had a pretty amazing life. Amazing because of where and when it started.\nPaula and Seymour fucking. Who was there to tell him where to stick it? Who told him to spit on her cunt\nfo make it wet? Maybe they had more on the ball then we all give them credit for.\nAnyway from that night back in May of 1953, as they lay there intoxicated from their lovemaking, little did\nthey know what they would be bringing into the world early the next year. Lets fast forward to you. |\nremember summers when Warren would always work some shii ass job (Nathan’s) for mmimum wage, |\nwould always find something (Male Ego in Brighten Beach) and Frog would too (Cabana Boy). But you,\nJeff would never work. Yes, you were special. You did things like music camps in Michigan, etc. Which\nbrings me to when you lost your virginity. You may not remember, but I was under the same roof that\ncould new years eve in °66 or 67 (not sure). The first tume 1 ever flew was with you. I went with you to\nMichigan to visit your friend fi. the Interlochen girl for new years eve. It was also the first time | bad .\never laid eyes on a bright, attractive, bubbly, blue eyed, mid western female. She was like an alien to me.\nShe wasn’t Jewish or Italian. Wasn’t she your first? My first was up in Monticello, where I spent part of\nthe summer with Lloyd and Andy working at Playland Arcade in Monticello. It was Lloyd’s girlfriend.\nAnyway, back to the Michigan trip, because it was significant. Jeff, you took me with you. It was my first\ntime out of Brooklyn. It was no big deal, but we went. And nobody else ever WENT anywhere back when\nand where we came from.\nAnd then on to Europe. The second time I ever flew. Sabena Airlines to Brussels. Wasn’t it $800 RT. In\nEurope, I really saw a true transformation in you. You lost all of your chubbiness and | remember noticing\nthat you grew a few inches. We both got absolutely skinny in those weeks abroad. I will always remember\nhow you were constantly working the train schedules — riding by night so would have a free place to sleep\nand arriving to our destinations in the morning ready to hit the sites. We’d drink in all that the cities had to\noffer on a budget of $2 a day. Author Frommer’s EUROPE ON $5 A DAY was for suckers. We did it\ncheaper, deeper, wider and better. We saw and learned so much on that memorable trip. We hitch hiked,\nwe biked, we trained, we ferried, we walked, we ran, we always somehow managed to get where we\nwanted to go and see what we wanted to see. We_slept on trains, boats, beaches, abandoned houses, flop\nhouses, people’s homes, friend’s apts. Everywhere but hotels and hostels. We were too savvy to stay ina\nyouth hostel — weren’t we? Hell, I can’t even remember us having a sit down meal on that trip. We\ncouldn’t care less about food. But we did enjoy all that cheese and bread and train station soup.\nRemember our first night in Europe. It probably was our worst. But, we did steal two heavy, itchy\nblankets from that youth hostel. It was freezing and wet. But things went way up from there. Especially\nthe time J had a wet dream sleeping in my seat on the ferry from Brendizi (or Bari?) to Corfu. Did I share\nthat with you? Remember the Corfu police detained me on arrival to the Island? We had some scary\nmoments. That’s what made it such a great experience. We siayed on Corfu for 2 weeks or so. Never got\nto London because of that. Corfu was great on the budget and I remember it being great sleeping on the\nbeach with kids from all over the world -- Matt an ico and those two girls from Cleveland.\nThat trip to Europe could get more space but the main point is that it really opened your eyes to another\nworld. And mine too. But you Jeff seized it. I did too in a sense. But you spent the next summer in\nLondon and came home with a beautiful British babe named I You had such chuzpah to\nHOUSE_OVERSIGHT_000063\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a typed letter dated January 15, 2003, from Johnny Boy Kafka at 5917 Glendora Ave., Dallas, Texas, addressed to Jeff. The letter discusses personal memories, including events from 1953, work experiences, travels to Michigan and Europe, and various personal anecdotes. Some names and locations are redacted with black bars. The letter mentions Europe travel details, food, and lodging experiences, as well as relationships and people from different places.",
+    "Layout: header with sender's name, address, and phone number",
+    "Layout: date and location line",
+    "Layout: greeting line",
+    "Layout: multi-paragraph typed letter text",
+    "Layout: page footer with document ID"
+  ],
+  "observations": [
+    "Page contains a typed letter dated January 15, 2003, from Johnny Boy Kafka at 5917 Glendora Ave., Dallas, Texas, addressed to Jeff. The letter discusses personal memories, including events from 1953, work experiences, travels to Michigan and Europe, and various personal anecdotes. Some names and locations are redacted with black bars. The letter mentions Europe travel details, food, and lodging experiences, as well as relationships and people from different places.",
+    "Layout: header with sender's name, address, and phone number",
+    "Layout: date and location line",
+    "Layout: greeting line",
+    "Layout: multi-paragraph typed letter text",
+    "Layout: page footer with document ID"
+  ],
+  "dates": [
+    "January 15, 2003",
+    "2003",
+    "1953"
+  ],
+  "document_strings": [
+    "JOHNNY BOY KAFKA",
+    "5917 GLENDORA AVE.",
+    "DALLAS, TEXAS 75230",
+    "214 987 3595",
+    "January 15, 2003",
+    "Dallas, Texas",
+    "Dearest Jeff:",
+    "Fifty years old.",
+    "Paula and Seymour fucking.",
+    "May of 1953",
+    "Nathan's",
+    "Male Ego in Brighten Beach",
+    "Cabana Boy",
+    "music camps in Michigan",
+    "New years eve in '66 or '67",
+    "Interlochen girl",
+    "Monticello",
+    "Playland Arcade in Monticello",
+    "Europe",
+    "Sabena Airlines",
+    "Brussels",
+    "EUROPE ON $5 A DAY",
+    "Corfu",
+    "London",
+    "British babe"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "middle of page, within body text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two instances of redacted names or words using black bars"
+    },
+    {
+      "location": "near bottom of page, within body text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Redacted name or word using a black bar"
+    }
+  ],
+  "flags": [
+    "date",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "The OCR sidecar text is truncated, so latter parts of the letter are cut off and not fully visible."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:38.923Z",
+    "response_id": "resp_0c52dee970e81954006a502ae18abc8195b6507ef26d6316e2",
+    "raw_output_sha256": "9d1e9d49a2bac4f91152afd3c9ebeb875ffabeedeffe4b17892fd676e284fc80"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c52dee970e81954006a502ae18abc8195b6507ef26d6316e2",
+    "enriched_at": "2026-07-09T23:12:38.923Z"
+  },
+  "visual_summary": "Page contains a typed letter dated January 15, 2003, from Johnny Boy Kafka at 5917 Glendora Ave., Dallas, Texas, addressed to Jeff. The letter discusses personal memories, including events from 1953, work experiences, travels to Michigan and Europe, and various personal anecdotes. Some names and locations are redacted with black bars. The letter mentions Europe travel details, food, and lodging experiences, as well as relationships and people from different places.",
+  "layout": [
+    "header with sender's name, address, and phone number",
+    "date and location line",
+    "greeting line",
+    "multi-paragraph typed letter text",
+    "page footer with document ID"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "middle of page, within body text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Two instances of redacted names or words using black bars"
+    },
+    {
+      "location": "near bottom of page, within body text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Redacted name or word using a black bar"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "January 15, 2003"
+  ],
+  "confidence": "high"
+}

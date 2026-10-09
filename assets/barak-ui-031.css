@@ -1,0 +1,181 @@
+/* GAH-BARAK-MOBILE-CONTRAST-028 */
+body.barak-portal .search-panel {
+  color: #1f2933;
+  background: #ffffff;
+}
+
+body.barak-portal .search-panel .search-label,
+body.barak-portal .search-panel h2,
+body.barak-portal .search-panel h3 {
+  color: #0a4d57;
+}
+
+body.barak-portal .portal-search-input {
+  color: #1f2933;
+  background: #ffffff;
+  border-color: #6b7280;
+}
+
+body.barak-portal .portal-search-input::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+body.barak-portal .filter-set {
+  color: #1f2933;
+  border-color: #d8dee6;
+}
+
+body.barak-portal .filter-set legend {
+  color: #5d6b7a;
+}
+
+body.barak-portal .filter-set label {
+  color: #334155;
+}
+
+body.barak-portal .filter-set input,
+body.barak-portal .filter-set select {
+  color: #1f2933;
+}
+
+body.barak-portal .filter-set input[type="date"],
+body.barak-portal .filter-set select {
+  background: #ffffff;
+  border-color: #6b7280;
+}
+
+body.barak-portal .filter-set input[type="checkbox"],
+body.barak-portal .filter-set input[type="radio"] {
+  accent-color: #0f6b78;
+}
+
+@media (max-width: 720px) {
+  body.barak-portal .search-panel {
+    padding: 16px;
+  }
+
+  body.barak-portal .filter-set {
+    gap: 10px 12px;
+  }
+
+  body.barak-portal .filter-set label {
+    line-height: 1.35;
+  }
+
+  body.barak-portal main {
+    padding-bottom: 5.5rem;
+  }
+
+  body.barak-portal .consent-reopen {
+    min-height: 32px;
+    padding: .35rem .65rem;
+    font-size: .62rem;
+  }
+}
+
+/* Barak result cards are light surfaces inside the dark V3 shell. */
+body.barak-portal .receipt-card,
+body.barak-portal .detail-shell,
+body.barak-portal .claim-frame {
+  color: #1f2933;
+}
+
+body.barak-portal .receipt-card h3,
+body.barak-portal .receipt-card h3 a {
+  color: #1f2933;
+}
+
+body.barak-portal .receipt-card .card-topline {
+  color: #6b7280;
+}
+
+body.barak-portal .receipt-card .meta-row {
+  color: #1f2933;
+}
+
+body.barak-portal .receipt-card .meta-row span {
+  color: #64748b;
+}
+
+body.barak-portal .receipt-card .meta-row strong {
+  color: #1f2933;
+}
+
+body.barak-portal .receipt-card .chip-row,
+body.barak-portal .receipt-card .csbs,
+body.barak-portal .receipt-card .csbs p,
+body.barak-portal .receipt-card .csbs b,
+body.barak-portal .receipt-card .snippet {
+  color: #334155;
+}
+
+body.barak-portal .receipt-card .muted {
+  color: #64748b;
+}
+
+body.barak-portal .receipt-card .detail-link {
+  color: #ffffff;
+  background: #0a4d57;
+  border: 1px solid #0a4d57;
+  border-radius: 8px;
+  padding: .62rem .9rem;
+  text-decoration: none;
+}
+
+body.barak-portal .receipt-card .link-disabled,
+body.barak-portal .receipt-card .detail-link[aria-disabled="true"] {
+  color: #5f6772;
+  background: #e5e7eb;
+  border-color: #cbd5e1;
+  opacity: 1;
+}
+
+/* On mobile, privacy controls must not float over Barak records. */
+@media (max-width: 720px) {
+  body.barak-portal .consent-reopen {
+    position: static !important;
+    inset: auto !important;
+    display: block;
+    width: max-content;
+    max-width: calc(100% - 2rem);
+    margin: 1rem auto 1.5rem;
+  }
+}
+
+/* GAH-BARAK-VISUAL-POLISH-031 */
+body.barak-portal .note { color:#334155; }
+body.barak-portal .note p, body.barak-portal .note strong, body.barak-portal .note a { color:inherit; }
+body[data-family="BARAK_APPLICATION"] main > .page-hero, body[data-family="BARAK_APPLICATION"] main > .content, body.barak-guide main > .page-hero, body.barak-guide main > .content { width:min(calc(100% - 2.4rem),70rem); max-width:70rem; margin-inline:auto; }
+body[data-family="BARAK_APPLICATION"] .button-row, body.barak-guide .button-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; max-width:52rem; margin-top:1rem; }
+body[data-family="BARAK_APPLICATION"] .button-row .button, body.barak-guide .button-row .button { width:100%; min-height:44px; padding:.65rem .85rem; line-height:1.2; text-align:center; }
+body[data-family="BARAK_APPLICATION"] .button-row .primary, body.barak-guide .button-row .primary { grid-column:1 / -1; }
+body[data-family="BARAK_APPLICATION"] .notice, body.barak-guide .notice { max-width:70rem; margin:1.25rem 0; padding:1rem 1.1rem; border-left:3px solid var(--gold); border-radius:0 8px 8px 0; background:rgba(212,170,47,.07); }
+@media (max-width:560px){ body[data-family="BARAK_APPLICATION"] main > .page-hero, body[data-family="BARAK_APPLICATION"] main > .content, body.barak-guide main > .page-hero, body.barak-guide main > .content { width:calc(100% - 2rem); } body[data-family="BARAK_APPLICATION"] .page-hero h1, body.barak-guide .page-hero h1 { font-size:2rem; line-height:.98; } body[data-family="BARAK_APPLICATION"] .button-row, body.barak-guide .button-row { grid-template-columns:1fr; } body[data-family="BARAK_APPLICATION"] .button-row .primary, body.barak-guide .button-row .primary { grid-column:auto; } }
+
+body[data-family="BARAK_APPLICATION"] .prose-grid,
+body.barak-guide .prose-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.75rem;
+}
+body[data-family="BARAK_APPLICATION"] .route-link,
+body.barak-guide .route-link {
+  display:flex;
+  flex-direction:column;
+  gap:.28rem;
+  padding:.9rem 1rem;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:var(--panel);
+  color:var(--text);
+  text-decoration:none;
+}
+body[data-family="BARAK_APPLICATION"] .route-link strong,
+body.barak-guide .route-link strong { color:var(--gold); }
+body[data-family="BARAK_APPLICATION"] .route-link span,
+body.barak-guide .route-link span { color:#cfc6b6; line-height:1.45; }
+
+body.barak-portal .media-route-grid a span {
+  color: #64748b;
+}

@@ -1,0 +1,7 @@
+URL: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section552&num=0&edition=prelim
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 5280c5fffb769057a82b8a7d8d7cc8b114cbbbe3458e43badbb8fae9a8deb3b9
+Bytes: 374607
+Acquisition method: verified existing local capture

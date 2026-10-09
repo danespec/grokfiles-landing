@@ -1,0 +1,190 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 203,
+  "page_id": "page_203",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_203.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_203.ocr.txt",
+  "image_metadata": {
+    "bytes": 5065935,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "127050a3e933dcf1da52aff34f20c9b7b55e7c4a720cdde34f5e88143d231243"
+  },
+  "ocr_text": "ee ———————\na y |\n| UZDZUCS .00 A highly excited and distracted state of mind |\nY ‘ ; |\nte: SE. . ye . : |\n2 4 y te 4 rT) v |\n1 o a collector of mare thaw ‘beautiful minds” |\ntf e whom appreciates architecture; undulating landscapes, \"beauty marks” and... |\n1 understood. years ago after Ghislaine came to the Palm Beach |\nHorse Show looking for what: I thought was a horse that she was |\nott a Weissiow. |\nFor a collection of breast photoc A compilation, of course, for you. |\nT came to see your SOME months later your told me to take off ny |\ntop: With the usual Epteiw sw le you looked at my breasts and\nsaid ‘yeah, I was right. \" Memory served your correctly. The beau- |\nty mark was ow the right breast. One quotable memory. |\nTo aw true friend, witty whour I have shared mary complictties.... |\nz love you and, wish you the best next SO years. 4 ’ |\n7\" ps. Lknow fi vom the\n6 ( \\ phone exchange some\n~~ * Tet yous like wy bra-r!\n50 Jeffrey, which word out of this text do you not understand? Just a beauty ae es) |\n|\nHOUSE_OVERSIGHT_000203\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page titled 'Jizzies... A highly excited and distracted state of mind' features various blocks of printed text, decorative colored circles, two redacted photographs, a small line drawing of a bra, and a signature-like mark near the bottom. The text includes fancy and cursive fonts with plays on words about beauty marks and personal anecdotes. There are no visible dates on the page.",
+    "Layout: Page title header at top",
+    "Layout: Decorative colored circles on top half",
+    "Layout: Two redacted photo blocks side by side on right half",
+    "Layout: Main body text left center",
+    "Layout: Small bra image bottom left",
+    "Layout: Signature-like mark below main text left center",
+    "Layout: Footer text bottom right",
+    "Drawing candidate at Bottom left: Small stylized drawing of a bra.",
+    "Photo/image candidate at Top center right below page title left of redaction: Circular photo blocked by redaction.",
+    "Photo/image candidate at Center right, large rectangular area: Photo obscured by black redaction block.",
+    "Photo/image candidate at Lower right rectangular area: Photo obscured by black redaction block."
+  ],
+  "observations": [
+    "The page titled 'Jizzies... A highly excited and distracted state of mind' features various blocks of printed text, decorative colored circles, two redacted photographs, a small line drawing of a bra, and a signature-like mark near the bottom. The text includes fancy and cursive fonts with plays on words about beauty marks and personal anecdotes. There are no visible dates on the page.",
+    "Layout: Page title header at top",
+    "Layout: Decorative colored circles on top half",
+    "Layout: Two redacted photo blocks side by side on right half",
+    "Layout: Main body text left center",
+    "Layout: Small bra image bottom left",
+    "Layout: Signature-like mark below main text left center",
+    "Layout: Footer text bottom right",
+    "Drawing candidate at Bottom left: Small stylized drawing of a bra.",
+    "Photo/image candidate at Top center right below page title left of redaction: Circular photo blocked by redaction.",
+    "Photo/image candidate at Center right, large rectangular area: Photo obscured by black redaction block.",
+    "Photo/image candidate at Lower right rectangular area: Photo obscured by black redaction block."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Jizzies... A highly excited and distracted state of mind",
+    "not a Cloud in the sky",
+    "To a collector of more than \"beautiful minds\"",
+    "He whom appreciates architecture; undulating landscapes, \"beauty marks\" and....",
+    "I understood years ago after Ghislaine came to the Palm Beach Horse Show looking for what I thought was a horse that she was on a mission.",
+    "For a collection of breast photos. A compilation, of course, for you.",
+    "I came to see you some months later you told me to take off my top. With the usual Epstein smile you looked at my breasts and said 'yeah, I was right.' Memory served you correctly. The beauty mark was on the right breast. One quotable memory.",
+    "To a true friend with whom I have shared many complicities.... I love you and wish you the best next 50 years.",
+    "p.s. I know from the phone exchange some years back... you like my bra-r!",
+    "So Jeffrey, which word out of this text do you not understand?",
+    "Just a beauty mark.................."
+  ],
+  "signatures": [
+    {
+      "location": "Below main text near bottom center-left",
+      "text_as_seen": "Stylized letter 'J' or similar symbol",
+      "confidence": "high",
+      "note": "Decorative signature-like mark or flourish."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "Above small bra image at bottom left",
+      "text_as_seen": "p.s. I know from the phone exchange some years back... you like my bra-r!",
+      "confidence": "high",
+      "note": "Handwritten style cursive text situated near bra image, clearly legible."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "Top center right rectangle",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large rectangular black redaction covering an area that likely contained a photo."
+    },
+    {
+      "location": "Lower center right rectangle",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Smaller rectangular black redaction covering an area that likely contained a photo or image."
+    }
+  ],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:34:57.417Z",
+    "response_id": "resp_00da50501661dbcb006a50301664c08195bb26ed5abaff2228",
+    "raw_output_sha256": "a19fee08d3e2a54872422502cec12a346be4563afd7be0d92ee9506daa9a4e0f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00da50501661dbcb006a50301664c08195bb26ed5abaff2228",
+    "enriched_at": "2026-07-09T23:34:57.417Z"
+  },
+  "visual_summary": "The page titled 'Jizzies... A highly excited and distracted state of mind' features various blocks of printed text, decorative colored circles, two redacted photographs, a small line drawing of a bra, and a signature-like mark near the bottom. The text includes fancy and cursive fonts with plays on words about beauty marks and personal anecdotes. There are no visible dates on the page.",
+  "layout": [
+    "Page title header at top",
+    "Decorative colored circles on top half",
+    "Two redacted photo blocks side by side on right half",
+    "Main body text left center",
+    "Small bra image bottom left",
+    "Signature-like mark below main text left center",
+    "Footer text bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "Above small bra image at bottom left",
+      "text_as_seen": "p.s. I know from the phone exchange some years back... you like my bra-r!",
+      "confidence": "high",
+      "note": "Handwritten style cursive text situated near bra image, clearly legible."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "Below main text near bottom center-left",
+      "text_as_seen": "Stylized letter 'J' or similar symbol",
+      "confidence": "high",
+      "note": "Decorative signature-like mark or flourish."
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "Top center right rectangle",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large rectangular black redaction covering an area that likely contained a photo."
+    },
+    {
+      "location": "Lower center right rectangle",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Smaller rectangular black redaction covering an area that likely contained a photo or image."
+    }
+  ],
+  "drawings": [
+    {
+      "location": "Bottom left",
+      "description": "Small stylized drawing of a bra.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [
+    {
+      "location": "Top center right below page title left of redaction",
+      "description": "Circular photo blocked by redaction.",
+      "confidence": "high"
+    },
+    {
+      "location": "Center right, large rectangular area",
+      "description": "Photo obscured by black redaction block.",
+      "confidence": "high"
+    },
+    {
+      "location": "Lower right rectangular area",
+      "description": "Photo obscured by black redaction block.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,95 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 42,
+  "page_id": "page_042",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_042.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_042.ocr.txt",
+  "image_metadata": {
+    "bytes": 200526,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "80f206884e340941e0787da3d7bd48acae7805169ddce2ebfa147276ee5cb47f"
+  },
+  "ocr_text": "- 6\n. the clothes line. Mrs. Bulla claims , Campaign “ award. Because of :\nshe uses Clorox bleach in every the notoriety the student gave Keds, . ‘ . ;\nwash load, but the laundry they offered him a lifetime supply\ncuriously turns yellow and has an of the sneakers, as long as those ;\nammonia smell after it dries, This were the only shoes he would ever\nhappened for months until her son wear in the future. The same offer\nGerald started doing some detective came from a local sweatshirt\nwork on his own. After 2 more _ manufacturer, but they eventually\nmonths of surveillance, Gerald went out of business after giving\n. Bulla caught the culprit red (or ; the kid so many free sweatshirts. ;\nshould I say yellow) handed. The He still wears them today, but has\nBulla’s downstairs neighbor's son his kid brother silk screen different ;\nhad been repeatedly squirting the logos on them such as “POLICE”,\nlaundry with a squirt gun filled “ZORRO” and “SHMITKA”\nwith an unknown yellow liquid. , _\nThe Bullas were forced to move .\naway after more highjinks\noccurred.\n—_— Teacher Almost\nGets the Boot\n; By Emil Suskin\n5th Graders 1S. iia Now q ,\nClean up Sixth grade teacher Ed :\nGoldsmith, was never known to be\nC oncy a conventional thinker by his peers,\n, but his students really enjoyed his\n_ non-conformism. With his dry wit\nBy Nelly Bi. and different way of looking at\nthings, the students were always\neducated, as well as eniertained. .\nMr. Stephen Levy whip-trained His colleagues never respected \\\nhis over-achieving class 5-3 until Goldsmith and probably resented ;\nthey mastered Easy Steps March his odd approach.\nand Aida, Only then would he On assembly day in April of\nallow them to be featured in the 1964, Mr. Goldsmith, an\nPrestigious Coney Island Clean Up accomplished jazz pianist, played\nCampaign Parade. The long the national anthem in a “jazzed-\n; awaited Parade arrived, and the up” version, and sent the ,\nfifth graders had to march in auditorium reeling into a near riot.\nsweltering 110 degree heat. Fifteen The teachers hated the rendition,\nof the 45 kids suffered heat calling it a mockery and a disgrace,\nexhaustion, and one saxophone while the children clapped and\nplayer continued marching and snapped to the coolest version of ;\nplaying until midnight. The Sea the anthem they’d ever heard! |\n; Gate boy marched until his pinky On the next day, Mr. Goldsmith ;\ntoe popped through the side of his was handed his walking papers by\nsignature blue Keds boat sneakers. the school administration, and\nHe was awarded the “Schmuck of made an announcement to his class,\nthe Coney Island Clean up that he was forced to leave. The\n(cont'd pg. 7, column 1)\n; ;\nHOUSE_OVERSIGHT_000042\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains text columns with articles about school events and personal stories related to students and teachers. The text is arranged in two main sections with distinct headings and columns. There are no images or drawings present.",
+    "Layout: two columns of text",
+    "Layout: headings in bold",
+    "Layout: some italic text",
+    "Layout: section breaks indicated by spacing and lines"
+  ],
+  "observations": [
+    "Page contains text columns with articles about school events and personal stories related to students and teachers. The text is arranged in two main sections with distinct headings and columns. There are no images or drawings present.",
+    "Layout: two columns of text",
+    "Layout: headings in bold",
+    "Layout: some italic text",
+    "Layout: section breaks indicated by spacing and lines"
+  ],
+  "dates": [
+    "1964"
+  ],
+  "document_strings": [
+    "the clothes line. Mrs. Bulla claims she uses Clorox bleach in every wash load, but the laundry curiously turns yellow and has an ammonia smell after it dries. This happened for months until her son Gerald started doing some detective work on his own. After 2 more months of surveillance, Gerald Bulla caught the culprit red (or should I say yellow) handed. The Bulla's downstairs neighbor's son had been repeatedly squirting the laundry with a squirt gun filled with an unknown yellow liquid. The Bullas were forced to move away after more highjinks occurred.",
+    "Campaign \"award. Because of the notoriety the student gave Keds, they offered him a lifetime supply of the sneakers, as long as those were the only shoes he would ever wear in the future. The same offer came from a local sweatshirt manufacturer, but they eventually went out of business after giving the kid so many free sweatshirts. He still wears them today, but has his kid brother silk screen different logos on them such as \"POLICE\", \"ZORRO\" and \"SHMITKA\"",
+    "Teacher Almost Gets the Boot",
+    "By Emil Suskind P.S. 188 News",
+    "Sixth grade teacher Ed Goldsmith, was never known to be a conventional thinker by his peers, but his students really enjoyed his non-conformism. With his dry wit and different way of looking at things, the students were always educated; as well as entertained. His colleagues never respected Goldsmith and probably resented his odd approach.",
+    "On assembly day in April of 1964, Mr. Goldsmith, an accomplished jazz pianist, played the national anthem in a \"jazzed-up\" version, and sent the auditorium reeling into a near riot. The teachers hated the rendition, calling it a mockery and a disgrace, while the children clapped and snapped to the coolest version of the anthem they'd ever heard!",
+    "On the next day, Mr. Goldsmith was handed his walking papers by the school administration, and made an announcement to his class, that he was forced to leave. The (cont'd pg. 7, column 1)"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Page is truncated before the end of the second article, missing continuation text."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:08:49.083Z",
+    "response_id": "resp_0eb77def4d9d1135006a5029f58b748196a8e2cd0d661a1750",
+    "raw_output_sha256": "8d3177092df8390c2db406182575fca0253ba477408db37d2a3b2c9a574704f0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0eb77def4d9d1135006a5029f58b748196a8e2cd0d661a1750",
+    "enriched_at": "2026-07-09T23:08:49.083Z"
+  },
+  "visual_summary": "Page contains text columns with articles about school events and personal stories related to students and teachers. The text is arranged in two main sections with distinct headings and columns. There are no images or drawings present.",
+  "layout": [
+    "two columns of text",
+    "headings in bold",
+    "some italic text",
+    "section breaks indicated by spacing and lines"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1964"
+  ],
+  "confidence": "high"
+}

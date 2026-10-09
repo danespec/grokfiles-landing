@@ -1,0 +1,126 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "darren-indyke-investment-execution-layer",
+  "title": "The Execution Layer: Darren Indyke Across Four Technology Deals",
+  "published": "2026-09-30",
+  "scope": "Cross-deal reconstruction of Darren Indyke's documented legal, administrative and transaction-execution role across ESW, Blockstream/Kyara III, Reporty/ERGO and Levitection/Radar.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN1_MASTER.md",
+  "sources": [
+    {
+      "id": "ESW-APPROVAL",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02429133",
+      "url": "/pdf-lite?id=EFTA02429133",
+      "supports": "Epstein email to Darren Indyke, with Kahn copied, subject 'go ahead with the million for esw'.",
+      "limit": "Approval routing does not prove sourcing or original investment selection."
+    },
+    {
+      "id": "ESW-WIRE",
+      "class": "PRIMARY_BANK_INSTRUCTION",
+      "record": "EFTA01585465",
+      "url": "/pdf-lite?id=EFTA01585465",
+      "supports": "March 19, 2010 $1M Financial Trust wire instruction for ESW convertible-debenture subscription.",
+      "limit": "OCR of sender name is degraded; companion approval email identifies Indyke as execution recipient."
+    },
+    {
+      "id": "ESW-SETTLEMENT",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01509627",
+      "url": "/pdf-lite?id=EFTA01509627",
+      "supports": "Posted JPM debit confirming ESW funding settled.",
+      "limit": "Settlement evidence does not identify the investment selector."
+    },
+    {
+      "id": "BLOCKSTREAM-AUTH",
+      "class": "PRIMARY_BANK_AUTHORIZATION",
+      "record": "EFTA01401059",
+      "url": "/pdf-lite?id=EFTA01401059",
+      "supports": "$500,001 Kyara III wire authorization to fund Blockstream, bearing Darren Indyke signature.",
+      "limit": "Signing/authorization does not establish sourcing or strategy."
+    },
+    {
+      "id": "BLOCKSTREAM-SETTLEMENT",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285099",
+      "url": "/pdf-lite?id=EFTA01285099",
+      "supports": "Posted Southern Financial banking evidence for Kyara III transaction.",
+      "limit": "Statement is less descriptive than signed authorization."
+    },
+    {
+      "id": "REPORTY-TS",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA00654146",
+      "url": "/pdf-lite?id=EFTA00654146",
+      "supports": "Barak sends Reporty term sheet to 'Jeff and Darren' and asks for approval/movement forward.",
+      "limit": "Term-sheet review is not closing proof."
+    },
+    {
+      "id": "REPORTY-REMARKS",
+      "class": "PRIMARY_EMAIL_CHAIN",
+      "record": "EFTA02512061",
+      "url": "/pdf-lite?id=EFTA02512061",
+      "supports": "Barak refers to Darren's remarks and asks whether Darren should join the call.",
+      "limit": "Does not establish authorship of every economic term."
+    },
+    {
+      "id": "REPORTY-CAPTABLE",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02397684",
+      "url": "/pdf-lite?id=EFTA02397684",
+      "supports": "Barak says Darren already has the Reporty term sheet and capital table.",
+      "limit": "Possession/review does not equal investment selection."
+    },
+    {
+      "id": "REPORTY-WIRE",
+      "class": "PRIMARY_BANK_INSTRUCTION",
+      "record": "EFTA01404004",
+      "url": "/pdf-lite?id=EFTA01404004",
+      "supports": "Southern Trust $1M ERGO wire memorandum with reference 'Reporty investment' and Indyke in header.",
+      "limit": "Destination-bank rendering differs across instruction/posted statement; amount/date/beneficiary/account reconcile."
+    },
+    {
+      "id": "REPORTY-SETTLEMENT",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285411",
+      "url": "/pdf-lite?id=EFTA01285411",
+      "supports": "Posted Southern Trust $1M Reporty/ERGO transaction evidence.",
+      "limit": "BANK-4 funding does not fully reconstruct final holder/share count."
+    },
+    {
+      "id": "REPORTY-LAWYER-HANDOFF",
+      "class": "PRIMARY_EMAIL_CHAIN",
+      "record": "EFTA01732215 / EFTA02475911",
+      "url": "/pdf-lite?id=EFTA01732215",
+      "supports": "Barak describes Darren as JE's lawyer and proposes lawyer-to-lawyer follow-through on Reporty investment paperwork.",
+      "limit": "Role description does not prove every task performed."
+    },
+    {
+      "id": "LEVITECTION-HANDOFF",
+      "class": "PRIMARY_EMAIL_AND_TERM_SHEET",
+      "record": "EFTA00636238",
+      "url": "/pdf-lite?id=EFTA00636238",
+      "supports": "Signed Levitection/Radar term-sheet materials described as sent to Darren.",
+      "limit": "No definitive close or funding recovered."
+    },
+    {
+      "id": "DB-AFFILIATE-EXHIBIT",
+      "class": "PRIMARY_BANK_INVESTIGATIVE_EXHIBIT",
+      "record": "EFTA01681865",
+      "url": "/pdf-lite?id=EFTA01681865",
+      "supports": "Deutsche exhibit lists Darren K. Indyke PLLC, profession Attorney, within SFR affiliate/account framework.",
+      "limit": "Onboarding category can mean several roles and does not identify deal-selection authority."
+    }
+  ],
+  "open_questions": [
+    "Who originally sourced each of the four companies/opportunities.",
+    "Who held final investment-decision authority deal by deal.",
+    "Whether additional Indyke-executed technology investments exist outside the four source-locked examples.",
+    "Which transaction documents, if any, further separate legal review from bank-signatory authority."
+  ],
+  "not_established": [
+    "That Indyke selected the portfolio companies.",
+    "That his presence proves a deal funded.",
+    "That he controlled the operating companies.",
+    "Criminal purpose arising from recurring legal, administrative or banking work."
+  ]
+}

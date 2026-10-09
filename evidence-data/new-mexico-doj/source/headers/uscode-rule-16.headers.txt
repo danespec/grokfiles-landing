@@ -1,0 +1,7 @@
+URL: https://uscode.house.gov/view.xhtml?edition=2023&num=0&req=granuleid%3AUSC-2023-title18a-node35-node54-rule16
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 625e112a2a38f80f7810369dabd9fc82df431514d3a48b906af0339386c942b8
+Bytes: 272475
+Acquisition method: verified existing local capture

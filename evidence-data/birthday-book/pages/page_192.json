@@ -1,0 +1,165 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 192,
+  "page_id": "page_192",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_192.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_192.ocr.txt",
+  "image_metadata": {
+    "bytes": 17539184,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "82e1a09b5b144a433ee17e39c63e86d02fc82064ad34ab7297f6efd13dda9d23"
+  },
+  "ocr_text": "Vv : (¥) aS 4: _ mee ras a2 ’ : eee, “hn ee ke. | Fee, ed : a oy, i\nfo) Pr, 5 20) = See ae Ka) t f\nSng SE ny SO eae\n* p X t “ae f= = a ees ee eo 2s eae 2 \\* < Met SE\nhf > = AS Lee ae ‘ee\n, ) sft | ) ? I\nff fo : ie eee\nHOUSE_OVERSIGHT_000192\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Image of a large blackboard filled with complex mathematical and physics-related chalk writings and drawings. There are numerous integrals, formulas, graphs, sketches of geometric shapes, and annotated diagrams mostly in white and yellow chalk. The writing is dense and covers almost the entire board. There is a chalk tray at the bottom with a blue chalkboard eraser resting in the center. The overall setting appears to be an academic or research environment such as a classroom or seminar room.",
+    "Layout: Large rectangular blackboard centered in image",
+    "Layout: Text and drawings densely covering board surface",
+    "Layout: Chalk tray and eraser at bottom center",
+    "Drawing candidate at top right quadrant: Geometric shapes including diamonds and lines forming a diagram in yellow chalk",
+    "Drawing candidate at center quadrant: Complex graph with labeled axes, wave patterns and peak distributions",
+    "Drawing candidate at multiple locations: Various geometric sketches and diagrams combining straight lines and curves scattered across board"
+  ],
+  "observations": [
+    "Image of a large blackboard filled with complex mathematical and physics-related chalk writings and drawings. There are numerous integrals, formulas, graphs, sketches of geometric shapes, and annotated diagrams mostly in white and yellow chalk. The writing is dense and covers almost the entire board. There is a chalk tray at the bottom with a blue chalkboard eraser resting in the center. The overall setting appears to be an academic or research environment such as a classroom or seminar room.",
+    "Layout: Large rectangular blackboard centered in image",
+    "Layout: Text and drawings densely covering board surface",
+    "Layout: Chalk tray and eraser at bottom center",
+    "Drawing candidate at top right quadrant: Geometric shapes including diamonds and lines forming a diagram in yellow chalk",
+    "Drawing candidate at center quadrant: Complex graph with labeled axes, wave patterns and peak distributions",
+    "Drawing candidate at multiple locations: Various geometric sketches and diagrams combining straight lines and curves scattered across board"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000192"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "∫A(x) dx, ∫T(x)+ ...",
+      "confidence": "high",
+      "note": "Mathematical integral expressions and variables"
+    },
+    {
+      "location": "center quadrant",
+      "text_as_seen": "V(t) = ... , graphs, peaks and valleys",
+      "confidence": "high",
+      "note": "Multiple equations with graphs and wave forms"
+    },
+    {
+      "location": "top right quadrant",
+      "text_as_seen": "ds = ... , d+ ...",
+      "confidence": "medium",
+      "note": "Equations including derivative notation and labeled diagrams"
+    },
+    {
+      "location": "bottom right quadrant",
+      "text_as_seen": "∫ dτ + ...",
+      "confidence": "medium",
+      "note": "Integral and other mathematical notations"
+    },
+    {
+      "location": "scattered throughout",
+      "text_as_seen": "Other mathematical variables, symbols, graphical elements",
+      "confidence": "high",
+      "note": "Equations and geometric sketches in white and yellow chalk"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:57.625Z",
+    "response_id": "resp_05478a1b6cc8f5ec006a502fa064b481959b5292f91e33677f",
+    "raw_output_sha256": "81deab5d814e8a0a946c467cb9f3a89c7e16638151be8bf6a55663acff485dc0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05478a1b6cc8f5ec006a502fa064b481959b5292f91e33677f",
+    "enriched_at": "2026-07-09T23:32:57.625Z"
+  },
+  "visual_summary": "Image of a large blackboard filled with complex mathematical and physics-related chalk writings and drawings. There are numerous integrals, formulas, graphs, sketches of geometric shapes, and annotated diagrams mostly in white and yellow chalk. The writing is dense and covers almost the entire board. There is a chalk tray at the bottom with a blue chalkboard eraser resting in the center. The overall setting appears to be an academic or research environment such as a classroom or seminar room.",
+  "layout": [
+    "Large rectangular blackboard centered in image",
+    "Text and drawings densely covering board surface",
+    "Chalk tray and eraser at bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "∫A(x) dx, ∫T(x)+ ...",
+      "confidence": "high",
+      "note": "Mathematical integral expressions and variables"
+    },
+    {
+      "location": "center quadrant",
+      "text_as_seen": "V(t) = ... , graphs, peaks and valleys",
+      "confidence": "high",
+      "note": "Multiple equations with graphs and wave forms"
+    },
+    {
+      "location": "top right quadrant",
+      "text_as_seen": "ds = ... , d+ ...",
+      "confidence": "medium",
+      "note": "Equations including derivative notation and labeled diagrams"
+    },
+    {
+      "location": "bottom right quadrant",
+      "text_as_seen": "∫ dτ + ...",
+      "confidence": "medium",
+      "note": "Integral and other mathematical notations"
+    },
+    {
+      "location": "scattered throughout",
+      "text_as_seen": "Other mathematical variables, symbols, graphical elements",
+      "confidence": "high",
+      "note": "Equations and geometric sketches in white and yellow chalk"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "top right quadrant",
+      "description": "Geometric shapes including diamonds and lines forming a diagram in yellow chalk",
+      "confidence": "high"
+    },
+    {
+      "location": "center quadrant",
+      "description": "Complex graph with labeled axes, wave patterns and peak distributions",
+      "confidence": "high"
+    },
+    {
+      "location": "multiple locations",
+      "description": "Various geometric sketches and diagrams combining straight lines and curves scattered across board",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

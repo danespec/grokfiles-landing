@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "generated_from_editorial_records": true,
+  "events": [
+    {
+      "date": "2026-08-25",
+      "type": "publication",
+      "title": "Hold the letter",
+      "url": "/investigations/hold-the-letter",
+      "what_changed": "Published the investigation. The page says that on December 7, 2007, victim-notification letters were prepared, Epstein defense counsel asked DOJ to hold them, and Sloman emailed Villafaña: Hold the letter.",
+      "source_checked": "The page prints Published August 25, 2026. Structured data datePublished and dateModified are both 2026-08-25."
+    },
+    {
+      "date": "2026-07-31",
+      "type": "verification",
+      "title": "EFTA Compliance Tracker source check",
+      "url": "/investigations/efta-compliance-tracker",
+      "what_changed": "Updated the tracker. The page says it is current through July 30, 2026 docket filings, that DOJ says disputed records and supporting materials were delivered for in-camera review, and that sources were acquired and verified on July 31, 2026.",
+      "source_checked": "The page states ECF 25, ECF 26, and ECF 26-1 were verified from public CourtListener/RECAP storage on July 31, 2026."
+    },
+    {
+      "date": "2026-07-23",
+      "type": "correction",
+      "title": "Flight Log Count and Aircraft Reconciliation",
+      "url": "/corrections/flight-log-count-and-aircraft-reconciliation",
+      "what_changed": "Recorded the 2026-07-23 correction for Clinton and Maxwell passenger-row counts, the N505LS aircraft-tail repair, and N474-family quarantine language.",
+      "source_checked": "The correction page names the 116-page Epstein flight-log PDF and the R3 source-derived passenger parse as the controlling source chain."
+    },
+    {
+      "date": "2026-07-20",
+      "type": "publication",
+      "title": "What Todd Blanche Actually Said About Epstein Evidence",
+      "url": "/evidence-briefs/todd-blanche-no-evidence",
+      "what_changed": "Published a primary-source evidence brief separating Todd Blanche's July 15, 2026 Senate testimony from allegations, association records, charges, convictions, and DOJ public gaps.",
+      "source_checked": "The page description identifies the July 15, 2026 Senate testimony. Structured data datePublished is 2026-07-20."
+    },
+    {
+      "date": "2026-07-19",
+      "type": "publication",
+      "title": "Doug Band transcript autopsy",
+      "url": "/document-autopsies/doug-band-transcript",
+      "what_changed": "Published the claim-level autopsy of the official House Oversight Doug Band transcript. The page says that transcript was released July 17, 2026.",
+      "source_checked": "The page cites the House Oversight Doug Band transcript and says it was released July 17, 2026. GAH datePublished is 2026-07-19."
+    },
+    {
+      "date": "2026-07-19",
+      "type": "publication",
+      "title": "Leon Black transcript autopsy",
+      "url": "/document-autopsies/leon-black-transcript",
+      "what_changed": "Published the claim-level autopsy of the official House Oversight Leon Black transcript. The page says that transcript was released July 17, 2026.",
+      "source_checked": "The page cites the House Oversight Leon Black transcript and says it was released July 17, 2026. GAH datePublished is 2026-07-19."
+    },
+    {
+      "date": "2026-07-19",
+      "type": "publication",
+      "title": "The New Mexico-DOJ Epstein Records Standoff",
+      "url": "/investigations/new-mexico-doj-epstein-records",
+      "what_changed": "Published the legal-mechanism tracker for New Mexico DOJ's request for unredacted Epstein/Zorro Ranch records, DOJ's public response posture, and the July 31 deadline classification.",
+      "source_checked": "The page identifies New Mexico DOJ's acquired June 30 letter and Jay Clayton's July 15 Senate exchange. Structured data datePublished is 2026-07-19."
+    },
+    {
+      "date": "2026-07-18",
+      "type": "publication",
+      "title": "EFTA Compliance Tracker",
+      "url": "/investigations/efta-compliance-tracker",
+      "what_changed": "Published the tracker. The page's article line says Published 2026-07-18. Structured data describes it as a primary-source tracker for Sullivan's EFTA order, DOJ's show-cause response, and remaining source gaps.",
+      "source_checked": "The publication date is printed on the page. The July 31 CourtListener/RECAP check is a separate later event."
+    },
+    {
+      "date": "2026-07-12",
+      "type": "publication",
+      "title": "The Final 48 Hours at MCC: A Source Chain, Not a Theory",
+      "url": "/investigations/mcc-final-48-hours-source-chain",
+      "what_changed": "Published the source-chain reconstruction of Jeffrey Epstein's final 48 hours at MCC using existing Grok Archive Hub evidence routes, source cards, and open receipt slots.",
+      "source_checked": "The page description names those existing evidence routes, source cards, and open receipt slots. Structured data datePublished is 2026-07-12."
+    },
+    {
+      "date": "2026-07-08",
+      "type": "investigation_update",
+      "title": "Final 48 hours timeline repair",
+      "url": "/research/epstein-final-48-hours-mcc",
+      "what_changed": "The timeline's revision history states that the 2026-07-06 initial build was corrected and superseded by REPAIR-003. The page footer dates build GAH-EPSTEIN-DEATH-REPAIR-003 to 2026-07-08. The revision line does not itemize which sentence changed.",
+      "source_checked": "The methodology section names DOJ Epstein EFTA releases, SDNY discovery letter EFTA00039416, and DOJ OIG Report 23-085."
+    },
+    {
+      "date": "2026-07-06",
+      "type": "publication",
+      "title": "Final 48 hours timeline, initial build",
+      "url": "/research/epstein-final-48-hours-mcc",
+      "what_changed": "The revision history dates the initial timeline build, GAH-SEO-STORY-002, to 2026-07-06. Structured data datePublished is 2026-07-06.",
+      "source_checked": "The methodology section names DOJ Epstein EFTA releases, SDNY discovery letter EFTA00039416, and DOJ OIG Report 23-085."
+    },
+    {
+      "date": "2026-06-29",
+      "type": "publication",
+      "title": "How to Read the Barak Records",
+      "url": "/dispatches/how-to-read-the-barak-records",
+      "what_changed": "Published the reader guide for the Barak archive lane: source maps, receipts, entities, timeline, FARA review, confidence labels, and open receipt slots.",
+      "source_checked": "The page description names those Barak lane materials. Structured data datePublished is 2026-06-29."
+    }
+  ]
+}

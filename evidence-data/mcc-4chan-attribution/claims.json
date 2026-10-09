@@ -1,0 +1,23 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "MCC4-01",
+      "claim": "Released 4chan response contains four posts associated with two poster identities / IPs.",
+      "source": "EFTA00133349",
+      "confidence": "P4"
+    },
+    {
+      "id": "MCC4-02",
+      "claim": "The switch-out allegation is a different poster identity from the early death/medical-detail posts.",
+      "source": "EFTA00133349",
+      "confidence": "P4"
+    },
+    {
+      "id": "MCC4-03",
+      "claim": "The public bundle does not by itself prove Roberto Grijalva authored either identity.",
+      "source": "source-join audit",
+      "confidence": "P2/negative finding"
+    }
+  ]
+}

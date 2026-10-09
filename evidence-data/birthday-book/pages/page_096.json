@@ -1,0 +1,191 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 96,
+  "page_id": "page_096",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_096.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_096.ocr.txt",
+  "image_metadata": {
+    "bytes": 8715866,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "0afcf1a9117c67b695a1e7b9aca8bbc58e7a2b3f847bfd0f5490fe65485ff5fb"
+  },
+  "ocr_text": "y\n, - -\n4\nBisa .\na a\n\" stg Seay ‘ ine Sg eS ee ies Se SS - & i,\nEsse Away fy, =~) ae = —,*\nopel a fib ir Bites FF — A at,\neg\n. Nast ~~ == A ee — == \"\nom ao veal md = = Me, 4. aFy :\n-. i a b==: ae = Sey\n3 ae SEE } Fe ome\ni ws __| Oras SSS.\neS egy ESS SSS as ~~ AF\nBae: | ~S,  ea = | a Ls\nr= Ses oe = =) SJ FSS ee nea\nee ite ey id ee] ses,\nBeer cy Tn SS eee ee\n= Lee < oar ~ ay “a RS ww LS ge ae\nv5: oe “Gn a % WSS. — aS S| ane, eae =|\n| Daa ee Se: ee =< \\ ae | —O—e\n_ SSS SS SR 0 es\na =. : 7 ae ee ee\na a | e/ \\ ae =\n2 \\ eer Ch aearr\nLS’ \\ =e eee\n= SS—>- SS \\ 1 EE \\ i, parte eee\nSS SS | ee  —”\n“SS SS \\ ee eg BE =,\n>>>  —_—_a ™ wer —— Pe\n_ ee O_o\n\\ sae ve, ou vA\nease ere Sal\nete\nwas\nwat\n- ate Se\na\nHOUSE_OVERSIGHT_000096\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows a flat surface with multiple overlapping printed sheet music pages and two small printed images or album covers on the left and the bottom center. Several large rectangular sections of the image are blacked out, obscuring some underlying details. The sheet music includes visible staff lines, musical notes, and lyrics/text in printed font. Scattered stains or discolorations appear on the white flat surface. The two small printed images visible show photographic portraits of adult men, but these images are partially obscured by black redactions. No handwritten text or signatures are visible in the unredacted areas. No dates are clearly visible in the image.",
+    "Layout: top left blacked-out rectangle",
+    "Layout: middle left blacked-out rectangle",
+    "Layout: bottom left blacked-out rectangle",
+    "Layout: top center printed sheet music page",
+    "Layout: center printed sheet music page",
+    "Layout: bottom center printed sheet music page",
+    "Layout: top right color photograph with blacked-out rectangular area",
+    "Layout: bottom right large blacked-out rectangular area",
+    "Layout: two small printed images on left and bottom center",
+    "Photo/image candidate at top left corner partially blacked out: partially obscured photograph of person(s)",
+    "Photo/image candidate at top right quadrant beneath black rectangle: partially visible color photograph of person(s)",
+    "Photo/image candidate at bottom center area: two small printed images with photographs of men, partially obscured by black rectangles"
+  ],
+  "observations": [
+    "The image shows a flat surface with multiple overlapping printed sheet music pages and two small printed images or album covers on the left and the bottom center. Several large rectangular sections of the image are blacked out, obscuring some underlying details. The sheet music includes visible staff lines, musical notes, and lyrics/text in printed font. Scattered stains or discolorations appear on the white flat surface. The two small printed images visible show photographic portraits of adult men, but these images are partially obscured by black redactions. No handwritten text or signatures are visible in the unredacted areas. No dates are clearly visible in the image.",
+    "Layout: top left blacked-out rectangle",
+    "Layout: middle left blacked-out rectangle",
+    "Layout: bottom left blacked-out rectangle",
+    "Layout: top center printed sheet music page",
+    "Layout: center printed sheet music page",
+    "Layout: bottom center printed sheet music page",
+    "Layout: top right color photograph with blacked-out rectangular area",
+    "Layout: bottom right large blacked-out rectangular area",
+    "Layout: two small printed images on left and bottom center",
+    "Photo/image candidate at top left corner partially blacked out: partially obscured photograph of person(s)",
+    "Photo/image candidate at top right quadrant beneath black rectangle: partially visible color photograph of person(s)",
+    "Photo/image candidate at bottom center area: two small printed images with photographs of men, partially obscured by black rectangles"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THEY CAN'T TAKE THAT AWAY FROM ME",
+    "Moderato",
+    "George Gershwin",
+    "I GOT RHYTHM",
+    "JAZZ MASTERS FRANK SINATRA",
+    "MICKEY JAS WORLD TO SWING"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    },
+    {
+      "location": "middle left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    },
+    {
+      "location": "bottom left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    },
+    {
+      "location": "top right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering part of a color photograph"
+    },
+    {
+      "location": "bottom right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "content under black redactions not visible",
+    "small text portions on sheet music partially unclear due to image resolution"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:18:32.919Z",
+    "response_id": "resp_09d6d698a3d0f1af006a502c37d7008195bbe6bb4d1754fa81",
+    "raw_output_sha256": "ee39091881c594e6f0a31a0540e7abadb5596ab73f17ba6b5439246a1ef96b6d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09d6d698a3d0f1af006a502c37d7008195bbe6bb4d1754fa81",
+    "enriched_at": "2026-07-09T23:18:32.919Z"
+  },
+  "visual_summary": "The image shows a flat surface with multiple overlapping printed sheet music pages and two small printed images or album covers on the left and the bottom center. Several large rectangular sections of the image are blacked out, obscuring some underlying details. The sheet music includes visible staff lines, musical notes, and lyrics/text in printed font. Scattered stains or discolorations appear on the white flat surface. The two small printed images visible show photographic portraits of adult men, but these images are partially obscured by black redactions. No handwritten text or signatures are visible in the unredacted areas. No dates are clearly visible in the image.",
+  "layout": [
+    "top left blacked-out rectangle",
+    "middle left blacked-out rectangle",
+    "bottom left blacked-out rectangle",
+    "top center printed sheet music page",
+    "center printed sheet music page",
+    "bottom center printed sheet music page",
+    "top right color photograph with blacked-out rectangular area",
+    "bottom right large blacked-out rectangular area",
+    "two small printed images on left and bottom center"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    },
+    {
+      "location": "middle left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    },
+    {
+      "location": "bottom left quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    },
+    {
+      "location": "top right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering part of a color photograph"
+    },
+    {
+      "location": "bottom right quadrant",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "large black rectangle covering photo or content"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left corner partially blacked out",
+      "description": "partially obscured photograph of person(s)",
+      "confidence": "high"
+    },
+    {
+      "location": "top right quadrant beneath black rectangle",
+      "description": "partially visible color photograph of person(s)",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom center area",
+      "description": "two small printed images with photographs of men, partially obscured by black rectangles",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "last_checked": "2026-07-20T18:06:37.500Z",
+  "last_material_update": "2026-07-20T18:06:37.500Z",
+  "latest_official_statement": "July 15-16, 2026 Senate Judiciary hearing materials acquired in artifact packages 005/005B/005C.",
+  "latest_survivor_submission": "Dani Bensky written testimony acquired; later submissions not located.",
+  "latest_DOJ_action": "Public person-specific follow-up action not located.",
+  "current_evidentiary_classification": {
+    "classification": "NO_EVIDENCE_IN_REVIEWED_CORPUS + SCOPE_LIMITED_NO_EVIDENCE + AMBIGUOUS_STANDARD",
+    "confidence": "MEDIUM-HIGH",
+    "reasoning": [
+      "The exact Kennedy question supplied a narrow referent: other men to whom Epstein trafficked young women.",
+      "Blanche anchored his answer to what DOJ/FBI files showed, using from what we learned, from what we know, and as of now framing.",
+      "The certified exchange did not expressly use credible, admissible, probable cause, charging sufficiency, or conviction sufficiency.",
+      "A separate Grassley exchange used investigate, indict, and prosecute language, so chargeability is relevant context but not the only express standard in the decisive answer.",
+      "Survivor statements and civil allegations can coexist with a DOJ claim about reviewed-corpus evidence or chargeability; no confirmed contradiction is established on the current public record."
+    ]
+  },
+  "unresolved_acquisition_gaps": [
+    "GAP-001",
+    "GAP-002",
+    "GAP-003",
+    "GAP-004"
+  ],
+  "data": [
+    {
+      "trigger_id": "UPD-001",
+      "trigger": "Senate QFRs or Blanche written responses are published",
+      "action": "Reopen exact-language and evidentiary-standard classification."
+    },
+    {
+      "trigger_id": "UPD-002",
+      "trigger": "DOJ publishes survivor-meeting records or follow-up investigative steps",
+      "action": "Update survivor-statement and prosecution-decision ledgers."
+    },
+    {
+      "trigger_id": "UPD-003",
+      "trigger": "DOJ releases declination, credibility, corroboration, or charging memoranda",
+      "action": "Replace DOJ_ASSESSMENT_UNKNOWN fields with source-specific classifications."
+    },
+    {
+      "trigger_id": "UPD-004",
+      "trigger": "New EFTA or court records are released",
+      "action": "Run source acquisition and claim-source audit before changing article claims."
+    },
+    {
+      "trigger_id": "UPD-005",
+      "trigger": "Official stenographic transcript is published",
+      "action": "Compare against caption and human-certification layers and record discrepancies."
+    }
+  ]
+}

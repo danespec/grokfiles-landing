@@ -1,0 +1,48 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "mcc-final-48-hours",
+  "title": "The Final 48 Hours at MCC: What the Video Shows\u2014and What It Doesn\u2019t",
+  "updated": "2026-10-08",
+  "sources": [
+    {
+      "id": "DOJ-OIG-23-085",
+      "class": "PRIMARY_OFFICIAL_REPORT",
+      "url": "https://oig.justice.gov/sites/default/files/reports/23-085.pdf",
+      "supports": "Custody timeline, camera-system failure, surviving-video finding, staff misconduct, autopsy discussion, OIG conclusions.",
+      "limit": "Official retrospective investigation; some underlying materials are not reproduced publicly in full."
+    },
+    {
+      "id": "DOJ-OIG-RELEASE-2023-06-27",
+      "class": "PRIMARY_OFFICIAL_SUMMARY",
+      "url": "https://oig.justice.gov/sites/default/files/2023-06/6-27-2023_0.pdf",
+      "supports": "Summary of major failures and no-evidence-contradicting-FBI conclusion.",
+      "limit": "Summary; full details reside in 23-085."
+    },
+    {
+      "id": "SDNY-2019-NOEL-THOMAS",
+      "class": "PRIMARY_PROSECUTOR_RELEASE",
+      "url": "https://www.justice.gov/usao-sdny/pr/correctional-officers-charged-falsifying-records-august-9th-and-10th-metropolitan",
+      "supports": "Charges alleging skipped counts/rounds and false certifications.",
+      "limit": "Charging allegations; later dismissed after deferred prosecution agreements."
+    },
+    {
+      "id": "AG-BARR-2019-08-10",
+      "class": "PRIMARY_OFFICIAL_STATEMENT",
+      "url": "https://www.justice.gov/archives/opa/pr/statement-attorney-general-william-p-barr-death-jeffrey-epstein",
+      "supports": "Immediate opening of FBI and OIG investigations.",
+      "limit": "Initial statement before investigations concluded."
+    }
+  ],
+  "open_questions": [
+    "Full native surviving video with preservation metadata and chain of custody.",
+    "Complete DVR error, maintenance, and repair logs surrounding the July 29 failure.",
+    "Underlying SHU key-control and access records for the overnight period.",
+    "Complete cell-search history showing the last verified search of Epstein's cell."
+  ],
+  "not_established": [
+    "That missing recordings establish third-party entry or homicide.",
+    "That the surviving camera recorded Epstein's cell door.",
+    "That staff falsification proves a conspiracy concerning the death.",
+    "Any evidence contradicting the FBI's no-criminality determination, according to DOJ OIG."
+  ]
+}

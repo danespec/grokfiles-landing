@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "data": [
+    {
+      "record_type": "address books",
+      "record_exists": "yes in broader archive",
+      "what_it_can_establish": "contact information or recorded association",
+      "what_it_cannot_establish": "conduct, knowledge, or criminal participation",
+      "example_source": "records-vs-proof matrix",
+      "misuse_risk": "treating contact as guilt"
+    },
+    {
+      "record_type": "flight logs",
+      "record_exists": "yes in broader archive",
+      "what_it_can_establish": "presence on a logged trip if identity is reliable",
+      "what_it_cannot_establish": "purpose, knowledge, or conduct",
+      "example_source": "flight-log archive links",
+      "misuse_risk": "overreading travel"
+    },
+    {
+      "record_type": "photographs",
+      "record_exists": "yes in broader public record",
+      "what_it_can_establish": "co-presence at a time/place",
+      "what_it_cannot_establish": "relationship meaning or criminal conduct",
+      "example_source": "records-vs-proof matrix",
+      "misuse_risk": "visual guilt by association"
+    },
+    {
+      "record_type": "calendars",
+      "record_exists": "yes in broader archive",
+      "what_it_can_establish": "scheduled or recorded event",
+      "what_it_cannot_establish": "attendance, purpose, or conduct by itself",
+      "example_source": "calendar archive links",
+      "misuse_risk": "assuming completed event"
+    },
+    {
+      "record_type": "emails",
+      "record_exists": "yes in broader archive",
+      "what_it_can_establish": "communication text and metadata",
+      "what_it_cannot_establish": "truth of all statements inside",
+      "example_source": "email archive links",
+      "misuse_risk": "hearsay or context collapse"
+    },
+    {
+      "record_type": "financial transfers",
+      "record_exists": "yes in broader archive",
+      "what_it_can_establish": "payment existence if authenticated",
+      "what_it_cannot_establish": "criminal purpose without other evidence",
+      "example_source": "banking records links",
+      "misuse_risk": "assuming corrupt purpose"
+    },
+    {
+      "record_type": "witness interviews",
+      "record_exists": "yes in public and nonpublic forms",
+      "what_it_can_establish": "statement made to investigators",
+      "what_it_cannot_establish": "truth without corroboration",
+      "example_source": "hearing/source manifest",
+      "misuse_risk": "treating interview as adjudication"
+    },
+    {
+      "record_type": "sworn testimony",
+      "record_exists": "yes where acquired",
+      "what_it_can_establish": "testimony was made under oath or public hearing posture",
+      "what_it_cannot_establish": "automatic truth of underlying event",
+      "example_source": "Bensky testimony",
+      "misuse_risk": "overclaiming"
+    },
+    {
+      "record_type": "civil complaints",
+      "record_exists": "yes in broader record",
+      "what_it_can_establish": "allegations filed in court",
+      "what_it_cannot_establish": "adjudicated fact",
+      "example_source": "not used as proof here",
+      "misuse_risk": "charge/proof confusion"
+    },
+    {
+      "record_type": "criminal indictments",
+      "record_exists": "yes",
+      "what_it_can_establish": "charges and allegations",
+      "what_it_cannot_establish": "conviction",
+      "example_source": "Epstein/Maxwell indictments",
+      "misuse_risk": "treating charges as proof"
+    },
+    {
+      "record_type": "convictions",
+      "record_exists": "yes for Maxwell",
+      "what_it_can_establish": "adjudicated counts and necessary elements",
+      "what_it_cannot_establish": "unnamed third-party conduct beyond elements",
+      "example_source": "verdict/judgment/appeal",
+      "misuse_risk": "overextending jury findings"
+    },
+    {
+      "record_type": "search evidence",
+      "record_exists": "publicly partial",
+      "what_it_can_establish": "items seized where documented",
+      "what_it_cannot_establish": "criminal culpability by itself",
+      "example_source": "not used as narrow proof",
+      "misuse_risk": "chain-of-custody gaps"
+    },
+    {
+      "record_type": "FBI tips",
+      "record_exists": "not publicly comprehensive",
+      "what_it_can_establish": "lead existence",
+      "what_it_cannot_establish": "truth or chargeability",
+      "example_source": "acquisition gaps",
+      "misuse_risk": "lead/proof confusion"
+    },
+    {
+      "record_type": "hearsay statements",
+      "record_exists": "possible",
+      "what_it_can_establish": "what another person reported",
+      "what_it_cannot_establish": "admissibility or truth",
+      "example_source": "not used as exact proof",
+      "misuse_risk": "unmarked hearsay"
+    },
+    {
+      "record_type": "contact lists",
+      "record_exists": "yes in broader archive",
+      "what_it_can_establish": "listed contact",
+      "what_it_cannot_establish": "conduct, knowledge, or relationship depth",
+      "example_source": "Book of Black links",
+      "misuse_risk": "association as guilt"
+    },
+    {
+      "record_type": "visitor logs",
+      "record_exists": "possible",
+      "what_it_can_establish": "recorded visit or access",
+      "what_it_cannot_establish": "conduct or knowledge without more",
+      "example_source": "archive links",
+      "misuse_risk": "presence overread"
+    },
+    {
+      "record_type": "settlement agreements",
+      "record_exists": "publicly partial",
+      "what_it_can_establish": "terms where public",
+      "what_it_cannot_establish": "admission absent text",
+      "example_source": "not used here",
+      "misuse_risk": "settlement/admission confusion"
+    },
+    {
+      "record_type": "non-prosecution agreements",
+      "record_exists": "yes in foundational criminal record",
+      "what_it_can_establish": "agreement terms",
+      "what_it_cannot_establish": "all later charging decisions",
+      "example_source": "acquisition gaps",
+      "misuse_risk": "scope overread"
+    }
+  ]
+}

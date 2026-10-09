@@ -1,0 +1,29 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "CODE-01",
+      "claim": "The EFTA02440165 “cream cheese baby” chain continues into explicit vegetable-cream-cheese sourcing, TooJay’s and bagels.",
+      "source": "EFTA02440165",
+      "confidence": "P4"
+    },
+    {
+      "id": "CODE-02",
+      "claim": "Jerky is documented through kitchen equipment, beef/turkey production and a later 70-pounds-of-steak supply note.",
+      "source": "EFTA02309912; EFTA02162755",
+      "confidence": "P4"
+    },
+    {
+      "id": "CODE-03",
+      "claim": "The Fisch materials contain pizza/grape-soda phrasing plus literal food/cookie material; no authenticated hidden-code mapping appears in the reviewed set.",
+      "source": "EFTA01616214; EFTA00841659",
+      "confidence": "P4 context / P2 negative finding"
+    },
+    {
+      "id": "CODE-04",
+      "claim": "No tested term met the review threshold for CODE_SUPPORTED.",
+      "source": "bounded documentary test",
+      "confidence": "negative finding; bounded corpus"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/media/1426281/dl?inline=
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: eff4797fa8485116c82948d7d73dea83fd5914451db275a9f05d75d340d3c2e4
+Bytes: 423826
+Acquisition method: verified existing local capture

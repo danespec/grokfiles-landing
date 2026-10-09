@@ -1,0 +1,84 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 38,
+  "page_id": "page_038",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_038.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_038.ocr.txt",
+  "image_metadata": {
+    "bytes": 200486,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8293a2e4bea7fd7e14c6c97bbb6adf40cda2d75ece017f261a0327b2412e7750"
+  },
+  "ocr_text": "ae specifically went to the beach to throwing a fit and clamming, as\nas, buy the Sunny Boys complete . it scared the schoot of whitefish\noo with conical wax coated off. All beaches are flying a\na containers and the metal ring at Coney island Whitefish warming\nou the mouth. She claimed the flag for the remainder of the\na metal ring gave her son bigger swimming season.\n= lips for playing saxophone and\nDe bassoon, and the lobster salad, eee\noo she betieved would make her son\nae agenius. The mother was\noa committed to an insane asylum in\n\nFlorida, and the boy believes he ° °\n\nS has 2 jets, an island, a ranch, . Nickel Artist\nnoe mansions and a sexy English\noe, socialite girlfriend. Arrested\nas After the boy was taken inte\nee custody by officials and fed lox, By Lillian Fisher\n\na bagels and cream cheese, the Handicap Times Magazine\nae hallucinations disappeared. He\nao was given a %4 length black\n\na leather coat and returned to his\ns daily activities of providing free Coney Island’s Melvin\nae ice cream and candy to his Fromholder was best known as\n\ns friends {courtesy of Jack’s “Mad Mel” the nickel carver.\n\nS Firestone juncheonette). Mel had the uncanny ability to\n28 cut everything off a buffalo ;\n- nickel, leaving only the buffalo\nSe and the “ring” surrounding it.\n-_ Customers would travel from all\n\n\" 5 boroughs and wait monihs to\nao buy one of the hard-to-get coins.\nOS A local wisecracker named\nS Larry-John Streitman, tried to\n- : Beach Attack pump Mel for information on\naa how to mass-produce these coins.\nos Fromholder was insulted and\naS became enraged. Mad Mei lived\n= By Lawrence Dyck up to his name when he stabbed\nae Streitman in the “Stomach and\na the Leg” 10 times. Ironically,\na Lloyd Bridges “Human. Fish”, Streitman was wearing a cheap\n\nee a water monger, and a local t- copy of Mel’s original “No\noo shirt clad Hippo were attacked by Hassle Band” on his wrist when\n& 4 school of deadly Coney Island he was attacked. “If it wasn’t for\na Whitefish. The attack occurred the “No Hassle Band”, said\na last Saturday just off the Sea Streitman, “ 1 woulda been\n— Gate Cabanas at Beach One. The dead”.\n\nBes enraged Hippo then clammed _ Fromholder is doing hard\noo indiscriminately, and repeatedly time, and can’t fill customer's\nae on the chests and faces of the orders for the nickels because\nother victims. The “Human officials refused to let Mel have\na Fish”, and the water monger also his tools. You'd better get in\ns reported a curious yellow warmth linc; Mad Mel’s in for 5 years\n: in the seawater when they came and he’s got 5125 orders for the\n: close to the Hippo. The prized buffalo nickels. ae\nswimmers thanked the Hippo for\nHOUSE_OVERSIGHT_000038\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page with dense printed text arranged in two main columns. Left column starts with a section titled 'Beach Attack' followed by an article by Lawrence Dyck about an incident at Coney Island involving a water monger and a hippo. Right column contains a section titled 'Nickel Artist Arrested' by Lillian Fisher about Melvin Fromholder, a nickel carver from Coney Island. Text is black on white background. No images, drawings, or photos present.",
+    "Layout: left column text block",
+    "Layout: right column text block"
+  ],
+  "observations": [
+    "Page with dense printed text arranged in two main columns. Left column starts with a section titled 'Beach Attack' followed by an article by Lawrence Dyck about an incident at Coney Island involving a water monger and a hippo. Right column contains a section titled 'Nickel Artist Arrested' by Lillian Fisher about Melvin Fromholder, a nickel carver from Coney Island. Text is black on white background. No images, drawings, or photos present.",
+    "Layout: left column text block",
+    "Layout: right column text block"
+  ],
+  "dates": [],
+  "document_strings": [
+    "specifically went to the beach to buy the Sunny Boys complete with conical wax coated containers and the metal ring at the mouth. She claimed the metal ring gave her son bigger lips for playing saxophone and bassoon; and the lobster salad, she believed would make her son a genius. The mother was committed to an insane asylum in Florida, and the boy believes he has 2 jets, an island, a ranch, mansions and a sexy English socialite girlfriend. After the boy was taken into custody by officials and fed lox, bagels and cream cheese, the hallucinations disappeared. He was given a 3/4 length black leather coat and returned to his daily activities of providing free ice cream and candy to his friends (courtesy of Jack's Firestone luncheonette).",
+    "Beach Attack",
+    "By Lawrence Dyck",
+    "Sea Gate Observer",
+    "Lloyd Bridges \"Human Fish\", a water monger, and a local t-shirt clad Hippo were attacked by a school of deadly Coney Island Whitefish. The attack occurred last Saturday just off the Sea Gate Cabanas at Beach One. The enraged Hippo then clammed indiscriminately, and repeatedly on the chests and faces of the other victims. The \"Human Fish\", and the water monger also reported a curious yellow warmth in the seawater when they came close to the Hippo. The swimmers thanked the Hippo for throwing a fit and clamming, as it scared the school of whitefish off. All beaches are flying a Coney Island Whitefish warning flag for the remainder of the swimming season.",
+    "Nickel Artist Arrested",
+    "By Lillian Fisher",
+    "Handicap Times Magazine",
+    "Coney Island's Melvin Fromholder was best known as \"Mad Mel\" the nickel carver. Mel had the uncanny ability to cut everything off a buffalo nickel, leaving only the buffalo and the \"ring\" surrounding it. Customers would travel from all 5 boroughs and wait months to buy one of the hard-to-get coins. A local wisecracker named Larry-John Streitman, tried to pump Mel for information on how to mass-produce these coins. Fromholder was insulted and became enraged. Mad Mel lived up to his name when he stabbed Streitman in the \"Stomach and the Leg\" 10 times. Ironically, Streitman was wearing a cheap copy of Mel's original \"No Hassle Band\" on his wrist when he was attacked. \"If it wasn't for the \"No Hassle Band\", said Streitman, \"I woulda been dead\". Fromholder is doing hard time, and can't fill customer's orders for the nickels because officials refused to let Mel have his tools. You'd better get in line; Mad Mel's in for 5 years and he's got 5125 orders for the prized buffalo nickels."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:08:07.087Z",
+    "response_id": "resp_0c15e761c3651864006a5029ce7324819386f9f4c0df6cc497",
+    "raw_output_sha256": "fcf6aaf16a6a9f43f30f2b3d4bda7acebef03b49881fb99f9ff3a47dc67883d5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c15e761c3651864006a5029ce7324819386f9f4c0df6cc497",
+    "enriched_at": "2026-07-09T23:08:07.087Z"
+  },
+  "visual_summary": "Page with dense printed text arranged in two main columns. Left column starts with a section titled 'Beach Attack' followed by an article by Lawrence Dyck about an incident at Coney Island involving a water monger and a hippo. Right column contains a section titled 'Nickel Artist Arrested' by Lillian Fisher about Melvin Fromholder, a nickel carver from Coney Island. Text is black on white background. No images, drawings, or photos present.",
+  "layout": [
+    "left column text block",
+    "right column text block"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

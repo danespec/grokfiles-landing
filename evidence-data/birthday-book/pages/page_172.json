@@ -1,0 +1,98 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 172,
+  "page_id": "page_172",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_172.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_172.ocr.txt",
+  "image_metadata": {
+    "bytes": 8565176,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "552717c6f41b59603e66a1f708a8e0c1055db8c7eb200fb4fe9343c5301d6520"
+  },
+  "ocr_text": "ie © * , j , : i\nh brs U 4 ee ee a ;\nTo) ayer * ;\nae : SE a ay 4 i\nes } ' Ri\" oe Oe H\nNy i 7 . _ a. . ~ o ‘ ij ; e ig ,\nee a , F 7 Ro iy aici |\né ———— _ ’ bit y a ‘ a a) ila =i ae | ~\nPer eee - é * f ; 2 3 ob sated | ac ee\n=>. cs, , + g ’ i :\n¢ 4 .. & ees\n\" =: : et er, +\noe \\j 4 s 7 Pi : fi = . % :\ni * Fi] ve) es \" 4 i\noie tt 4 ee i oe = Se Se ae a re ease a ood\n- ee eae iT Sa | Cee > 1. oe Perk\nfe VR ae ae 2 wn\n<p pitt 0 AR «at deri RRS, ead} tay Wee TES LT ASS naa sas : 9\nYeni = wm s yale\". ve i a f eS RAS MRIS) eaten coo\nambi 2 ? tM ar D0 oe 4 . ay a 5 ‘Se ae\n5 =e,\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows a group of people outdoors, standing close together. The foreground features two men, one wearing a blue sweater and holding a wine glass with a light-colored beverage. The other man is wearing a red and white striped shirt with a pocket. There is a black rectangle over part of the image, obscuring one person's face. In the background to the right, another person dressed in dark clothing is holding a wine glass and appears to be in conversation or observing something. Further back to the right, a person dressed in a dark jacket is taking a photograph with a camera held up to their face. The setting appears to be outside near a building with light-colored walls and windows.",
+    "Layout: image centered, rectangular",
+    "Layout: white border surrounding image",
+    "Photo/image candidate at center of page: Photograph of a group of people outdoors, several holding glasses of light-colored beverage, one person obscured by black rectangle, one person taking a photograph in background"
+  ],
+  "observations": [
+    "The image shows a group of people outdoors, standing close together. The foreground features two men, one wearing a blue sweater and holding a wine glass with a light-colored beverage. The other man is wearing a red and white striped shirt with a pocket. There is a black rectangle over part of the image, obscuring one person's face. In the background to the right, another person dressed in dark clothing is holding a wine glass and appears to be in conversation or observing something. Further back to the right, a person dressed in a dark jacket is taking a photograph with a camera held up to their face. The setting appears to be outside near a building with light-colored walls and windows.",
+    "Layout: image centered, rectangular",
+    "Layout: white border surrounding image",
+    "Photo/image candidate at center of page: Photograph of a group of people outdoors, several holding glasses of light-colored beverage, one person obscured by black rectangle, one person taking a photograph in background"
+  ],
+  "dates": [],
+  "document_strings": [],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "center-right area covering a person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle overlay obscuring the face of one person in the image"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:29:39.133Z",
+    "response_id": "resp_077b9b554bed4f07006a502edd9f988197835d69fa46423c75",
+    "raw_output_sha256": "97bd850e5ef88dd526320a50f0feb11568f9ea5df14808a4b3ecc010fb29f6ca"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_077b9b554bed4f07006a502edd9f988197835d69fa46423c75",
+    "enriched_at": "2026-07-09T23:29:39.133Z"
+  },
+  "visual_summary": "The image shows a group of people outdoors, standing close together. The foreground features two men, one wearing a blue sweater and holding a wine glass with a light-colored beverage. The other man is wearing a red and white striped shirt with a pocket. There is a black rectangle over part of the image, obscuring one person's face. In the background to the right, another person dressed in dark clothing is holding a wine glass and appears to be in conversation or observing something. Further back to the right, a person dressed in a dark jacket is taking a photograph with a camera held up to their face. The setting appears to be outside near a building with light-colored walls and windows.",
+  "layout": [
+    "image centered, rectangular",
+    "white border surrounding image"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "center-right area covering a person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangle overlay obscuring the face of one person in the image"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center of page",
+      "description": "Photograph of a group of people outdoors, several holding glasses of light-colored beverage, one person obscured by black rectangle, one person taking a photograph in background",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

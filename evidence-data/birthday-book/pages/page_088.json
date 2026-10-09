@@ -1,0 +1,120 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 88,
+  "page_id": "page_088",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_088.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_088.ocr.txt",
+  "image_metadata": {
+    "bytes": 8985561,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "4d7a8ee423b8c313e5f9cb49fb9967baf7fcbdff0337e2746d696fc0307d5f31"
+  },
+  "ocr_text": "ete: i ; : () es \",\n2° “< a Sced ‘.\nRe, Title page of the first\nsae edition of the Pathétigue | '\nes — (Gesellschaft der 2\n. ee usikfreunde, Vienna)\nFF ‘ $a\n., vie: - a] <6. Go Ai ae ‘ , Se 4\nCe | eek\nae 2 ee a\n= ie g a ccs ee pe open AS\nwa Cloke iad Yer Gomme s eS brs\na Sey Ailaw oy fone KEE wou if ae\n2 OF all the works composed Or planned or published in this period esas\nt | one stands out for both its fame and its substance: the Piano Sonata}\n% in C minor, Op 13, called by Beethoven himself the Pathétique and\n— published by Hoffmeister of Vienna in December 1799 with algae\n1 dedication to Prince Karl Lichnowsky. The Allgemeine Musika- a\nilische Zeitung (19 February 1800) praised it in high terms. Modelled}\nin its formal outline on ideas first tried out in one of the early\npoe lectoral Sonatas of 1783, it more than any other of Beethoven’s}\n»jworks up to this time seemed to herald the dawn of the new\nFicentury. From its dramatic opening grave chords, through its\nahs Nsearchingly expressive, emotional Adagio to the nervous intensity\nJand defiance of the final Allegro, the Pathétique was a burial of the 9\n'Y) jpast, a celebration of the future. . . <a\n: The years of apprenticeship were Over, Beethoven had finally | eis\nDjarrived. _ 2\nBa at\nHOUSE_OVERSIGHT_000088\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains five pasted elements: two photographs of a person at a piano (top left and top right), a small color image of a man with a hat and large text 'Sinatra' (bottom left), a centered printed page with the title 'Title page of the first edition of the Pathétique Sonata (Gesellschaft der Musikfreunde, Vienna)' surrounded by some text and a decorative emblem, and a text excerpt pasted at the bottom describing the history and acclaim of Beethoven's Piano Sonata Op 13, called 'Pathétique'. The background is white with brown adhesive stains around and under the pasted elements.",
+    "Layout: Top left: black and white photo of a man at a piano",
+    "Layout: Top right: black and white photo of a man at a piano",
+    "Layout: Middle left: small color photo of a man with a hat and 'Sinatra' text",
+    "Layout: Center: black and white printed title page of the Pathétique Sonata",
+    "Layout: Bottom: pasted text block with historical description",
+    "Photo/image candidate at Top left: Black and white photo of a man seated at a piano with sheet music visible",
+    "Photo/image candidate at Top right: Black and white photo of a man seated at a piano with sheet music visible",
+    "Photo/image candidate at Bottom left: Small color photo of a man wearing a hat with text 'Sinatra'"
+  ],
+  "observations": [
+    "Page contains five pasted elements: two photographs of a person at a piano (top left and top right), a small color image of a man with a hat and large text 'Sinatra' (bottom left), a centered printed page with the title 'Title page of the first edition of the Pathétique Sonata (Gesellschaft der Musikfreunde, Vienna)' surrounded by some text and a decorative emblem, and a text excerpt pasted at the bottom describing the history and acclaim of Beethoven's Piano Sonata Op 13, called 'Pathétique'. The background is white with brown adhesive stains around and under the pasted elements.",
+    "Layout: Top left: black and white photo of a man at a piano",
+    "Layout: Top right: black and white photo of a man at a piano",
+    "Layout: Middle left: small color photo of a man with a hat and 'Sinatra' text",
+    "Layout: Center: black and white printed title page of the Pathétique Sonata",
+    "Layout: Bottom: pasted text block with historical description",
+    "Photo/image candidate at Top left: Black and white photo of a man seated at a piano with sheet music visible",
+    "Photo/image candidate at Top right: Black and white photo of a man seated at a piano with sheet music visible",
+    "Photo/image candidate at Bottom left: Small color photo of a man wearing a hat with text 'Sinatra'"
+  ],
+  "dates": [
+    "19 February 1800",
+    "December 1799",
+    "1783"
+  ],
+  "document_strings": [
+    "Title page of the first edition of the Pathétique Sonata (Gesellschaft der Musikfreunde, Vienna)",
+    "Charles de Lichnowsky",
+    "Louis van Beethoven",
+    "Of all the works composed or planned or published in this period, one stands out for both its fame and its substance: the Piano Sonata in C minor, Op 13, called by Beethoven himself the Pathétique and published by Hoffmeister of Vienna in December 1799 with a dedication to Prince Karl Lichnowsky. The Allgemeine Musikalische Zeitung (19 February 1800) praised it in high terms. Modelled in its formal outline on ideas first tried out in one of the early Electoral Sonatas of 1783, it more than any other of Beethoven’s works up to this time seemed to herald the dawn of the new century. From its dramatic opening grave chords, through its searchingly expressive, emotional Adagio to the nervous intensity and defiance of the final Allegro, the Pathétique was a burial of the past, a celebration of the future. The years of apprenticeship were over, Beethoven had finally arrived."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:52.176Z",
+    "response_id": "resp_0cff91a6a76bb4de006a502bdb21c4819393a81754d4a2ead5",
+    "raw_output_sha256": "eef22de6bea3738506f3e1ff114d69bf90a45ab9956996ec4b10304ae7da8857"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0cff91a6a76bb4de006a502bdb21c4819393a81754d4a2ead5",
+    "enriched_at": "2026-07-09T23:16:52.176Z"
+  },
+  "visual_summary": "Page contains five pasted elements: two photographs of a person at a piano (top left and top right), a small color image of a man with a hat and large text 'Sinatra' (bottom left), a centered printed page with the title 'Title page of the first edition of the Pathétique Sonata (Gesellschaft der Musikfreunde, Vienna)' surrounded by some text and a decorative emblem, and a text excerpt pasted at the bottom describing the history and acclaim of Beethoven's Piano Sonata Op 13, called 'Pathétique'. The background is white with brown adhesive stains around and under the pasted elements.",
+  "layout": [
+    "Top left: black and white photo of a man at a piano",
+    "Top right: black and white photo of a man at a piano",
+    "Middle left: small color photo of a man with a hat and 'Sinatra' text",
+    "Center: black and white printed title page of the Pathétique Sonata",
+    "Bottom: pasted text block with historical description"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Top left",
+      "description": "Black and white photo of a man seated at a piano with sheet music visible",
+      "confidence": "high"
+    },
+    {
+      "location": "Top right",
+      "description": "Black and white photo of a man seated at a piano with sheet music visible",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom left",
+      "description": "Small color photo of a man wearing a hat with text 'Sinatra'",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "19 February 1800",
+    "December 1799",
+    "1783"
+  ],
+  "confidence": "high"
+}

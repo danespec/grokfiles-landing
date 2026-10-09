@@ -1,0 +1,49 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "black-family-partners-source-of-funds",
+  "title": "Where Did the $5.5 Million Come From? The Black Family Partners Source-of-Funds Gap",
+  "published": "2026-10-08",
+  "core_finding": "The Nov. 30, 2012 Financial Trust receipt identifies Black Family Partners, Bank of America, and originator account 000001200135. October 3 records independently identify 000001200135 as a Black Family Partners BofA account. The immediate source of the Nov. 30 balance remains unresolved.",
+  "sources": [
+    {
+      "id": "EFTA01510783",
+      "class": "PRIMARY_BANK_RECEIPT",
+      "date": "2012-11-30",
+      "supports": "$5,500,030 CHIPS credit; BFP as ordering party; Bank of America; originator account 000001200135.",
+      "limit": "Receiving-side record; does not show buyer balance or antecedent credits."
+    },
+    {
+      "id": "EFTA00589888-EFTA00589921",
+      "class": "PRIMARY_BUYER_SIDE_TRANSFER_PACKET",
+      "date": "2012-10-03",
+      "supports": "Account 000001200135 belongs to BFP and handled large internal transfers; packet includes separate source-of-funds material for Phaidon investment.",
+      "limit": "October activity cannot be assigned as source of Nov. 30 payment without intervening ledger."
+    },
+    {
+      "id": "EFTA00634299",
+      "class": "PRIMARY_CLOSING_EMAIL",
+      "date": "2012-11-26",
+      "supports": "$5.5M aggregate package price and Nov. 30 closing target.",
+      "limit": "Does not identify buyer funding source."
+    },
+    {
+      "id": "EFTA01556835",
+      "class": "PRIMARY_SELLER_BANK_STATEMENT",
+      "date": "2012-11",
+      "supports": "Financial Trust November account context and ending-value increase.",
+      "limit": "Seller-side statement, not buyer funding proof."
+    }
+  ],
+  "open_questions": [
+    "Where is the Nov. 30, 2012 Bank of America debit advice for BFP account 000001200135?",
+    "Where is the November 2012 statement for BFP account 000001200135?",
+    "What credits and debits occurred between Oct. 3 and Nov. 30?",
+    "What Black Family Partners accounting entry records the purchase and funding source?"
+  ],
+  "not_established": [
+    "That Apollo Credit Opportunity Fund funded the Nov. 30 purchase.",
+    "That art-sale proceeds or Neuberger & Berman liquidation proceeds funded the Nov. 30 purchase.",
+    "That any Oct. 3 inflow remained in the account through Nov. 30.",
+    "That the transaction constituted laundering, fraud, concealment, or a sham."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "andrew-search-warrants-quashed-2026-doj-judicial-review",
+  "published": "2026-10-08",
+  "title": "Andrew's Search Warrants Were Quashed in July. A 2020 DOJ File Shows UK Officials Anticipated a Different Judicial-Review Challenge.",
+  "core_finding": "Search warrants quashed July 22, 2026; the June 2020 DOJ documents anticipated a judicial-review challenge involving a different MLA proceeding.",
+  "sources": [
+    {
+      "id": "COURT-2026-10-08",
+      "class": "HIGH_COURT_CASE_ENTRY",
+      "url": "https://www.judiciary.uk/judgments/andrew-mountbatten-windsor-v-the-central-criminal-court-and-another/",
+      "supports": "Confirms case identity and October 8 entry; accessible public page does not include full judgment text."
+    },
+    {
+      "id": "TVP-ITV-2026-10-08",
+      "class": "POLICE_STATEMENT_AND_COURT_REPORTING",
+      "url": "https://www.itv.com/news/2026-10-08/police-raids-on-andrew-mountbatten-windsors-homes-were-unlawful-court-rules",
+      "supports": "Court account, PACE material categories, retention proceeding, Oct 7 withdrawal."
+    },
+    {
+      "id": "REUTERS-2026-10-08",
+      "class": "INDEPENDENT_REPORTING",
+      "url": "https://www.reuters.com/world/uk/ex-prince-andrew-search-warrants-quashed-after-police-accept-legal-error-2026-10-08/",
+      "supports": "Police acknowledgment, continuing investigation, warrant outcome."
+    },
+    {
+      "id": "EFTA00088020-00088023",
+      "class": "DOJ_RELEASED_CORRESPONDENCE_MIRROR_EXTRACT",
+      "url": "https://yirah.fi/epstein/dokumentti/EFTA00088020",
+      "supports": "June 18, 2020 expectation of a Blackfords judicial-review action against Home Office approval of MLA. Extracted-text mirror; original page scans remain a verification item."
+    },
+    {
+      "id": "EFTA00022062-00022083",
+      "class": "DOJ_MLA_REQUEST_MIRROR_EXTRACT",
+      "url": "https://tommycarstensen.com/epstein/data/documents/set8/00022/EFTA00022062.html",
+      "supports": "April 3, 2020 U.S. request describes Andrew as witness in Epstein and separate Nygard investigations; mirror of DOJ PDF."
+    },
+    {
+      "id": "DOJ-EFTA00022062",
+      "class": "DOJ_PRIMARY_PDF_LINK",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00022062.pdf",
+      "supports": "Official DOI file (may require age verification); not independently visually checked in this publication run."
+    }
+  ],
+  "boundaries": [
+    "Different 2020/2026 proceedings; no evidence the 2026 filing was predicted in 2020.",
+    "2020 MLA describes Andrew as witness, not target.",
+    "DOJ scanned originals and full court order not visually verified in this publication run.",
+    "The 2026 criminal investigation is ongoing; seized-material retention remains unresolved."
+  ],
+  "open_questions": [
+    "Why did the July 22 order only become public October 8?",
+    "Can police retain the material seized under defective warrants?",
+    "Was the anticipated 2020 MLA judicial review filed?"
+  ]
+}

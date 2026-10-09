@@ -1,0 +1,105 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 35,
+  "page_id": "page_035",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_035.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_035.ocr.txt",
+  "image_metadata": {
+    "bytes": 255513,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "e827cf105a30a7293ee6992755fa02d5e75bdab9d260e868504d890a7d2b2890"
+  },
+  "ocr_text": "ELSE sero ey Scianee TS SIE ee ee -' See 9 Ny { 3 utp, Per peo :\n: CEE SCR ee ee a ee f ee : .\n. rn re a LO : :\n; eet 2 ee an Spee\nTESS SS Sain ee EMM cue ii es Ber ae EE is\nCe a ws f & @ he\n2 ee er eee ae pes | . Parcel\nee en eee i ee! feat\nFe ee ee ee : % Qe\nme 2 ,...hrt—<—™sSSsi—“(<i;é*i‘C‘“‘C*C*C*C Gy & gi 4 ;\n\nWe . an “SOR wen EL Beart Me,\n\n: I .\n\n. :\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two distinct sections: on the left, a black and white photograph of a smiling toddler sitting on a surface, wearing a light-colored shirt with dark suspender shorts and shoes; on the right, a handwritten note with a date at the top and a short dedication.",
+    "Layout: left photo",
+    "Layout: right handwriting note",
+    "Photo/image candidate at left side: Black and white photo of a toddler child smiling and sitting on a raised surface, wearing suspenders and shoes."
+  ],
+  "observations": [
+    "The page contains two distinct sections: on the left, a black and white photograph of a smiling toddler sitting on a surface, wearing a light-colored shirt with dark suspender shorts and shoes; on the right, a handwritten note with a date at the top and a short dedication.",
+    "Layout: left photo",
+    "Layout: right handwriting note",
+    "Photo/image candidate at left side: Black and white photo of a toddler child smiling and sitting on a raised surface, wearing suspenders and shoes."
+  ],
+  "dates": [
+    "Jan 20, 1954"
+  ],
+  "document_strings": [
+    "Jan 20, 1954 To Frances from Your best boy Jeffrey Edwards Engleheim"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "right side",
+      "text_as_seen": "Jan 20, 1954 To Frances from Your best boy Jeffrey Edwards Engleheim",
+      "confidence": "high",
+      "note": "Handwritten dedication with a date and names."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:41.688Z",
+    "response_id": "resp_08beb96f0463ca54006a5029b9afe481958780b0867a6d45d1",
+    "raw_output_sha256": "8acccb0bab74f827286cce3885964a40cef9b9980006a293c39815df47ff84e5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08beb96f0463ca54006a5029b9afe481958780b0867a6d45d1",
+    "enriched_at": "2026-07-09T23:07:41.688Z"
+  },
+  "visual_summary": "The page contains two distinct sections: on the left, a black and white photograph of a smiling toddler sitting on a surface, wearing a light-colored shirt with dark suspender shorts and shoes; on the right, a handwritten note with a date at the top and a short dedication.",
+  "layout": [
+    "left photo",
+    "right handwriting note"
+  ],
+  "handwriting": [
+    {
+      "location": "right side",
+      "text_as_seen": "Jan 20, 1954 To Frances from Your best boy Jeffrey Edwards Engleheim",
+      "confidence": "high",
+      "note": "Handwritten dedication with a date and names."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "left side",
+      "description": "Black and white photo of a toddler child smiling and sitting on a raised surface, wearing suspenders and shoes.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "Jan 20, 1954"
+  ],
+  "confidence": "high"
+}

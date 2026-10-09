@@ -1,0 +1,110 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 55,
+  "page_id": "page_055",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_055.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_055.ocr.txt",
+  "image_metadata": {
+    "bytes": 10097602,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "bb566f6dc76f7a56b252276aaa0e03d6875406205d48875f2c3b677a3253cc0f"
+  },
+  "ocr_text": "| i |\n| ~iahpaneman pa & To fee joed by tw Hh cleeke ie\nB® Ew THIS POOR | er\nY Stmgyime Shib> |e .\nDY OF NATURE & |\n| NIGH CAN OF\n4 SYN AMITE TUNA |\nCOULD You Hae IT pee | YH\n— ON YouR Conscience | a ee -\nee NOT ToT. | Sitges CC\n| 3 . ey | 3 a\nage ke oe\n|\nHOUSE_OVERSIGHT_000055\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page displays an open book with a handwritten note on the right side, a printed or drawn poster-like page on the left, and a color photo of four people sitting on brick steps near the bottom right.",
+    "Layout: Handwritten note on an open pink page in an open book at the top right",
+    "Layout: A paper with bold block letters and a black and white photo of a person on the left",
+    "Layout: Color photograph of four people sitting on outdoor brick steps at bottom right",
+    "Photo/image candidate at bottom right photograph: Color photo of four people with varied hairstyles sitting on outdoor brick steps in front of a brick wall and window",
+    "Photo/image candidate at left side insert: Black and white photo of a person below text in bold block letters"
+  ],
+  "observations": [
+    "The page displays an open book with a handwritten note on the right side, a printed or drawn poster-like page on the left, and a color photo of four people sitting on brick steps near the bottom right.",
+    "Layout: Handwritten note on an open pink page in an open book at the top right",
+    "Layout: A paper with bold block letters and a black and white photo of a person on the left",
+    "Layout: Color photograph of four people sitting on outdoor brick steps at bottom right",
+    "Photo/image candidate at bottom right photograph: Color photo of four people with varied hairstyles sitting on outdoor brick steps in front of a brick wall and window",
+    "Photo/image candidate at left side insert: Black and white photo of a person below text in bold block letters"
+  ],
+  "dates": [],
+  "document_strings": [
+    "SEND THIS POOR STARVING CHILD OF NATURE A NICE CAN OF DYNAMITE TUNA COULD YOU HAVE IT ON YOUR CONSCIENCE NOT TO?"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top right open book pink page",
+      "text_as_seen": "To Warren Dark as the night not witty not bright. As he goes through the hills people stop and stare, to see a jewish boy with dark fuzzy hair. Your tutor Jeff Epstein",
+      "confidence": "high",
+      "note": "Blue ink handwriting on pink paper"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:11:34.755Z",
+    "response_id": "resp_04b56181749b1499006a502a9426608195a141c03546d67215",
+    "raw_output_sha256": "e7723d7a19e3a5c67fca6630b244e800ab58e7adfa38d275b53e6f3e03ca31b6"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04b56181749b1499006a502a9426608195a141c03546d67215",
+    "enriched_at": "2026-07-09T23:11:34.755Z"
+  },
+  "visual_summary": "The page displays an open book with a handwritten note on the right side, a printed or drawn poster-like page on the left, and a color photo of four people sitting on brick steps near the bottom right.",
+  "layout": [
+    "Handwritten note on an open pink page in an open book at the top right",
+    "A paper with bold block letters and a black and white photo of a person on the left",
+    "Color photograph of four people sitting on outdoor brick steps at bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top right open book pink page",
+      "text_as_seen": "To Warren Dark as the night not witty not bright. As he goes through the hills people stop and stare, to see a jewish boy with dark fuzzy hair. Your tutor Jeff Epstein",
+      "confidence": "high",
+      "note": "Blue ink handwriting on pink paper"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom right photograph",
+      "description": "Color photo of four people with varied hairstyles sitting on outdoor brick steps in front of a brick wall and window",
+      "confidence": "high"
+    },
+    {
+      "location": "left side insert",
+      "description": "Black and white photo of a person below text in bold block letters",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

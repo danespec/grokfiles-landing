@@ -1,0 +1,10 @@
+alt-svc: h3=":443"; ma=86400
+connection: keep-alive
+content-type: application/xml
+date: Mon, 20 Jul 2026 00:01:27 GMT
+server: AmazonS3
+transfer-encoding: chunked
+via: 1.1 dbb24f3b9579454525416ef48c0f512c.cloudfront.net (CloudFront)
+x-amz-cf-id: ahBO343sPoRA9KHcyxtDpCnVvJKWBIfjlGyD4BxyqPv6pKHaB2XdvA==
+x-amz-cf-pop: DEN52-P3
+x-cache: Error from cloudfront

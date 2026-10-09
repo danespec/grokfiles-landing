@@ -1,0 +1,107 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 31,
+  "page_id": "page_031",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_031.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_031.ocr.txt",
+  "image_metadata": {
+    "bytes": 452570,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "85b34526a7442a856edf99da31a5f91dc600d004f4d79ead45a0bc151ed109b9"
+  },
+  "ocr_text": "| ee . og | pring sce oy | :\nover . a . ; a ae , fh. ef batdl pice LO vay : i ‘ a\nee SE f P &. bay . iz Ae Rog ais mee ae = _ “ ~ as on : —_\n| oS & oes E y Att fl f } py ed ee | & Te. af oe BPG iw “ S I ae\neen my i D Coin Aber NOME oo |\n— lp Fine k 2 7 ee OF Te € ce a Ag : as Ax\nPepe Se Ev wal O Owl S rad oom ) PEAY ME\noo eee! ee oes ~ a _ 7 ih oy. of . o> fete Ae JE. ALE a : | :\nake procédé. FO. urvell  <abeecigecdbe GE Me I ee\n- — CP Bgl jay aie an eat ee t 26 Ab Fact bate i f ABR py)\nre ee ee\nen SQthen oberg. VATS Ts Ee Foe fs + ies Seeman\n2 | oL dé ey eas ( « @ _ eee ; f Vey ey: Lo 4 foot ee es ae t aa 7\n| Am Sf Lue kine for (MARE\nCC Ay A gw Aik, oT. oT (SME LAN NODE\nSl peer. We verre D pray ores KeedeT VE Se\noo or era He Of Brg fer FIDE GTA ANN\n| wa. ableuges Ato TNS CIR me\nOd pwrhee une mrt Te Prg Atert flan\nee. . Mo Cee nU ew UN TELA VIG FOR\n| pays. Then 7 Ween Ton) HE WONG DAVID |\nLNA SUR WE b Loma Urheray 1 ne ‘Gass ae\nGd ae ElMe— To TANG: ead BR OUMm\nNN Re Ste A “Y. Pom ne aeT A OAGS\nee. Doan fh bob dM Bsn, prifr PIRTAAT\nPde BS UNE. Ed hace. EE 8 AA Oem ee\nIR ee es ee\nHOUSE_OVERSIGHT_000031\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten note on a white paper with black ink. The note details personal travel and work history including locations such as Beekman Downstate, Israel, Tel Aviv, and Jerusalem, mentions of hotels, a limo, and dates around 1985-1986. The handwriting is cursive, somewhat messy, with some overwritten text and corrections. There are no images, drawings, or redactions.",
+    "Layout: Handwritten text covering the majority of the page, aligned mostly left, with some lines overwritten"
+  ],
+  "observations": [
+    "A handwritten note on a white paper with black ink. The note details personal travel and work history including locations such as Beekman Downstate, Israel, Tel Aviv, and Jerusalem, mentions of hotels, a limo, and dates around 1985-1986. The handwriting is cursive, somewhat messy, with some overwritten text and corrections. There are no images, drawings, or redactions.",
+    "Layout: Handwritten text covering the majority of the page, aligned mostly left, with some lines overwritten"
+  ],
+  "dates": [
+    "Aug 3rd 1986",
+    "NOVEMBER 1985",
+    "DEC. 4, 1985"
+  ],
+  "document_strings": [
+    "Sir JE FFFREY transfered me TO BEEKMAN DOWNSTATE INA PRIVATE AMBULANCE - AFTER COMING HOME FROM BEEKMAN DOWNSTATE.",
+    "I AM STILL WORKING for MARK",
+    "TRIP TO ISRAEL IN NOVEMBER 1985",
+    "VISITED MY WIFE'S Relatives",
+    "STAYED AT THE PLAZA MOTEL IN TEL-AVIV",
+    "WEDDING",
+    "THE KING DAVID IN JURUSOLUM",
+    "HIRED a LIMO",
+    "STAYED IN J. FOR ABOUT 4 DAYS",
+    "ARRIVING BACK HOME",
+    "on my BIRTHDAY DEC. 4, 1985"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Sir JE FFFREY transfered me TO BEEKMAN DOWNSTATE INA PRIVATE AMBULANCE - AFTER COMING HOME FROM BEEKMAN DOWNSTATE. I never went back to work because the work was TO STRANGE - I retired after 27 years But then I STARTED to work for Mark Aug 3rd 1986 for 3 DAYS a week. Man - we DON'T FOL - I AM STILL WORKING for MARK - We then took a TRIP TO ISRAEL IN NOVEMBER 1985 - WE VISITED MY WIFE'S Relatives - WE STAYD AT THE PLAZA MOTEL IN TEL-AVIV where we went to my sons friends WEDDING. We STAYED IN TEL AVIV FOR 5 DAYS. THEN - We went to THE KING DAVID IN JURUSOLUM - where my son JEFF HIRED a LIMO TO TAKE us AROUND WE STAYED IN J. FOR ABOUT 4 DAYS ARRIVING BACK HOME on my BIRTHDAY DEC. 4, 1985",
+      "confidence": "medium",
+      "note": "Text is somewhat difficult to read, some words may have spelling errors or unclear letters."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:15.273Z",
+    "response_id": "resp_00015052addfc568006a5029950a7c81949a8095f8a34753e6",
+    "raw_output_sha256": "d7d6a511357a096ea87ba7536ac46145d2fd190a80b77989727117d6fd75f644"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00015052addfc568006a5029950a7c81949a8095f8a34753e6",
+    "enriched_at": "2026-07-09T23:07:15.273Z"
+  },
+  "visual_summary": "A handwritten note on a white paper with black ink. The note details personal travel and work history including locations such as Beekman Downstate, Israel, Tel Aviv, and Jerusalem, mentions of hotels, a limo, and dates around 1985-1986. The handwriting is cursive, somewhat messy, with some overwritten text and corrections. There are no images, drawings, or redactions.",
+  "layout": [
+    "Handwritten text covering the majority of the page, aligned mostly left, with some lines overwritten"
+  ],
+  "handwriting": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Sir JE FFFREY transfered me TO BEEKMAN DOWNSTATE INA PRIVATE AMBULANCE - AFTER COMING HOME FROM BEEKMAN DOWNSTATE. I never went back to work because the work was TO STRANGE - I retired after 27 years But then I STARTED to work for Mark Aug 3rd 1986 for 3 DAYS a week. Man - we DON'T FOL - I AM STILL WORKING for MARK - We then took a TRIP TO ISRAEL IN NOVEMBER 1985 - WE VISITED MY WIFE'S Relatives - WE STAYD AT THE PLAZA MOTEL IN TEL-AVIV where we went to my sons friends WEDDING. We STAYED IN TEL AVIV FOR 5 DAYS. THEN - We went to THE KING DAVID IN JURUSOLUM - where my son JEFF HIRED a LIMO TO TAKE us AROUND WE STAYED IN J. FOR ABOUT 4 DAYS ARRIVING BACK HOME on my BIRTHDAY DEC. 4, 1985",
+      "confidence": "medium",
+      "note": "Text is somewhat difficult to read, some words may have spelling errors or unclear letters."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Aug 3rd 1986",
+    "NOVEMBER 1985",
+    "DEC. 4, 1985"
+  ],
+  "confidence": "medium"
+}

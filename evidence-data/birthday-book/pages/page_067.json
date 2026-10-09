@@ -1,0 +1,126 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 67,
+  "page_id": "page_067",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_067.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_067.ocr.txt",
+  "image_metadata": {
+    "bytes": 8406236,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d08e7f08085343598f266047a2fa7138109173450558e2d127ae8161df937045"
+  },
+  "ocr_text": "A y f . inwieu erv0M daeowe |\n{ | Se i 7 5 Sal ~ , rey clas oi Cobley?\nM th T { i $ . << 4 ST iS cms wenin wte: tg. 4\nH a eCa | re » oN - | . = vepen Ace, hrwcaivn wot |\n} } Ja W \\ “>, b ‘ YY on. e baa\n| | site; wm Lon a S ~ LS 2 See ee ee\nt . - _ mee wee new aver nae os caus waco I\nme RRS t i : tow rloox vanes tems cies geome seuss case cin 100s, to |\n: 4 i] . ———\n‘ P ~~ 7 7 \\ | , Z Ys pays * - 2 = i aa pcs ones SCM spellers Be |\nee eee Vase BN ee - : aa NS \\ ~S i / j = | } Lonrawe aucci aacoep |\n¥ + yatros J eS . . \\! | 2\n7 ae i Mh Pine $ ce, ’ . Z| . ‘a cay SAAHART |\ni ‘ i | f . } coll J Toe ‘ 2 dia pets, wee a, maces Bhcly\nid ; BY dh \\: ig “alg. snows tine re Bn verge muCMOU pee !\nSs Z . ‘ ieee ee pe Cattew Sins\n) ; ee via\n- Lh ” a . — can MUCK dog secre |\naf oy ‘ at) , —— ty 1 ANS 1\n— : ks er = H\nry te i} 5 J oy § ERA MURSION boxe |\nwale poems Ss , | — : § ~ ~ y« may © aon ag crreng ae. |\nz . roe = rr vay Be ne. = = oo 7 een to tant, |\nPe as ; * b> | Da paraumrcana berries |\n~ i 7, i] r = EN as, Wiha, et ee eelabetty aK\n: iE one, le CARIN CARAS. at archon\n% —\". P 7 } aca vote dee cut. bowling |\n- ms 4 4 a? J oh eos cto = ons |\ne, v4 & sot onsen town ‘\nBe é ms path feat ~ LT |\nal dere a a wlio i\nrf 4 ow mea mate, volent\n= ———— EEE gp es\nee ihe ok re ~ = —_ “= — i\nees : a : —\nres ( Fh y. =“ ARS Lé\ner ee ye L a y < <a | & 2 4 $\nsey ~ / = Sins > aes ace Fay }\nKS ing erate ES a * i i His i) va a FS %\nTELA EON een ’ =74 = ‘J\n% ethene aeyet, hoes q ‘Sr? e 7) 4 } “Ar *\na. e ~ 2 oe ’ *. vg r\n> LRAAN bows po | ,\n2 Geena whet, mw } % e\n3 gro 2a om i r se os } i. ee , : a Se\nis ap aged Yee Py : A / > i\n— = ’ “+ i * ¥ -\n . : ¥ eH, | Senior ; y L, ; ’\nah : > PE. Council  saset%S<\nm Y\n= } ‘ own oo 2 oes as\nCARTER bake t ren. J me _\n) reped = <j eo } a\n\\ WACaS Leghorns ca GYR ims :\nEe aaa — —— dD» ———$—$$— A —————\nSAAS COPS seer, betes |\na J ew '\n= =o r romr KATO deer |\n3 y iz f | Rae, Aiyplcewendy comenansy\nA » > 4 dey\njoni F = tas, bieery wea ave\nae gnats a ~~ \" 4 ARANCKE SEER egerd at\n1 aw shee, muoger ot bone”\nr - — eniincn * tenes wnees, are\n, =. Bees = DEBRA JONAS sec. Tanne\ni a~- ‘ pedieger-tend weeretany\n“ip H a « 3 * onvin FARK ade, oiten\n—~w ™ } bend at\npc 1 apamy CATKA Lieptaeent\n& = aise ce semeit OSE\n“ee F dangg choreaeapty «ht en. meee i\nwal mares eo ad 1 cata beehive colege |\nf eee oo | daar ' | PAU RAMEN Bemter co }\n1 q ue i\n») Fes “Pp i- + soit sata th |\n: 4 a ' < ¢ Bakaly Wa, oe rg Dae ch |\nlo, = : ? vie A “ }\n¢ ee { - ARIE RANTERMAN UO |\naA A Seontges Linn, af. ta Nate\nsata =\nee saute eS “tatent  ARLULN RADIAN Boeher't\nbersed wn teloer, gts den’ otis,\nras a ,  RRARAFLAN ety Utotiame Bile t\ni oa = AQIS KAPLAN ie. Baed FY\n; ’ LS A ore mates b\n} t ' = wires 4\non mA a0 4 wer, SANDZA KAPLAN Pees = ;\nhe: Fee a 6 . He w 2 ! coc bone Buasioaens erase, WAZ CTE :\nnd ~ “id as | at queens Galere 4\n. _. Eta i _Jae an son _ SS OE—E—E——\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "This page contains multiple black and white group photos and individual portrait-style photos arranged mostly in grids, presumably from a yearbook or similar archive. The top left shows a larger group photo labeled 'Math Team'. To the right and below are several smaller individual portraits arranged with names or labels underneath. The bottom right contains another group photo labeled 'Senior Council'. There are blocks of text in the right margin and below some portrait grids. Overall, the layout is a collage of photos with corresponding name blocks and captions.",
+    "Layout: Top left: large group photo labeled 'Math Team'",
+    "Layout: Top right: grid of individual portraits with names",
+    "Layout: Middle left: grid of individual portraits with names",
+    "Layout: Middle right: group photo labeled 'Senior Council'",
+    "Layout: Bottom: grid of individual portraits with names",
+    "Layout: Right margins: blocks of small text, likely descriptions or captions",
+    "Photo/image candidate at Top left: Large group photo with multiple people standing in one room, labeled 'Math Team'",
+    "Photo/image candidate at Top right: Grid of individual black and white portrait photos with names underneath",
+    "Photo/image candidate at Middle left: Grid of individual black and white portrait photos with names underneath",
+    "Photo/image candidate at Middle right: Group photo of seated people labeled 'Senior Council'",
+    "Photo/image candidate at Bottom: Grid of individual black and white portrait photos with names underneath"
+  ],
+  "observations": [
+    "This page contains multiple black and white group photos and individual portrait-style photos arranged mostly in grids, presumably from a yearbook or similar archive. The top left shows a larger group photo labeled 'Math Team'. To the right and below are several smaller individual portraits arranged with names or labels underneath. The bottom right contains another group photo labeled 'Senior Council'. There are blocks of text in the right margin and below some portrait grids. Overall, the layout is a collage of photos with corresponding name blocks and captions.",
+    "Layout: Top left: large group photo labeled 'Math Team'",
+    "Layout: Top right: grid of individual portraits with names",
+    "Layout: Middle left: grid of individual portraits with names",
+    "Layout: Middle right: group photo labeled 'Senior Council'",
+    "Layout: Bottom: grid of individual portraits with names",
+    "Layout: Right margins: blocks of small text, likely descriptions or captions",
+    "Photo/image candidate at Top left: Large group photo with multiple people standing in one room, labeled 'Math Team'",
+    "Photo/image candidate at Top right: Grid of individual black and white portrait photos with names underneath",
+    "Photo/image candidate at Middle left: Grid of individual black and white portrait photos with names underneath",
+    "Photo/image candidate at Middle right: Group photo of seated people labeled 'Senior Council'",
+    "Photo/image candidate at Bottom: Grid of individual black and white portrait photos with names underneath"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Math Team",
+    "Senior Council"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:13:32.932Z",
+    "response_id": "resp_0547ca04c8b333ae006a502b1686288190b27b43949681257b",
+    "raw_output_sha256": "a90a68ef19092d7c6719302f1ed61242499d0c28d9c3407669f4e0d9aacaaf5e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0547ca04c8b333ae006a502b1686288190b27b43949681257b",
+    "enriched_at": "2026-07-09T23:13:32.932Z"
+  },
+  "visual_summary": "This page contains multiple black and white group photos and individual portrait-style photos arranged mostly in grids, presumably from a yearbook or similar archive. The top left shows a larger group photo labeled 'Math Team'. To the right and below are several smaller individual portraits arranged with names or labels underneath. The bottom right contains another group photo labeled 'Senior Council'. There are blocks of text in the right margin and below some portrait grids. Overall, the layout is a collage of photos with corresponding name blocks and captions.",
+  "layout": [
+    "Top left: large group photo labeled 'Math Team'",
+    "Top right: grid of individual portraits with names",
+    "Middle left: grid of individual portraits with names",
+    "Middle right: group photo labeled 'Senior Council'",
+    "Bottom: grid of individual portraits with names",
+    "Right margins: blocks of small text, likely descriptions or captions"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Top left",
+      "description": "Large group photo with multiple people standing in one room, labeled 'Math Team'",
+      "confidence": "high"
+    },
+    {
+      "location": "Top right",
+      "description": "Grid of individual black and white portrait photos with names underneath",
+      "confidence": "high"
+    },
+    {
+      "location": "Middle left",
+      "description": "Grid of individual black and white portrait photos with names underneath",
+      "confidence": "high"
+    },
+    {
+      "location": "Middle right",
+      "description": "Group photo of seated people labeled 'Senior Council'",
+      "confidence": "high"
+    },
+    {
+      "location": "Bottom",
+      "description": "Grid of individual black and white portrait photos with names underneath",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}
