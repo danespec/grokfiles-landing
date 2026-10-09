@@ -3990,13 +3990,14 @@ async function gahSecDoCall(env, payload) {
     // with anyone else's counters.
     const shard = `${String(payload.scope || "default").slice(0, 64)}:${String(payload.key || "unknown").slice(0, 64)}`;
     const stub = ns.get(ns.idFromName(shard));
-    const res = await stub.fetch(
-      new Request("https://gah-sec.internal/rate-limit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      })
-    );
+    // fetch(url, init) form: identical semantics to fetch(Request) in the
+    // workers runtime, and also accepted by Miniflare (which rejects a
+    // Request object here) so the throttle path is testable.
+    const res = await stub.fetch("https://gah-sec.internal/rate-limit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
     return await res.json().catch(() => null);
   } catch (_) {
     return null;
@@ -4048,56 +4049,48 @@ function gahSecRateLimitedJson(retryAfterSeconds = 60) {
 // Server-side admin-login throttle. The sealed-cookie counter used by
 // xAdminLoginRateState is client-resettable (clearing the cookie restarts
 // the count); the counter here is authoritative.
-async function gahSecAdminLoginBlocked(env, request) {
+//
+// Admission is ATOMIC: every POST attempt consumes one throttle slot at the
+// gate via a single DO check op (check-and-increment cannot interleave
+// inside a DO instance). The old peek -> verify -> record sequence let N
+// concurrent attempts all pass the gate before any failure was recorded;
+// now the N+1th concurrent attempt is blocked even if no verification has
+// completed yet. A successful login clears the counter.
+async function gahSecAdminLoginAdmit(env, request) {
   const key = gahSecClientIp(request);
   const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
-  const viaDo = await gahSecDoCall(env, {
-    op: "peek", scope: "admin-login", key,
-    max: GAH_SEC_ADMIN_LOGIN_MAX_FAILURES, windowMs,
-  });
-  if (viaDo) return !!viaDo.limited;
-  const store = phangStore(env);
-  if (!store) return false; // fail open: the sealed-cookie mechanism still applies
-  try {
-    const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
-    if (!raw) return false;
-    const rec = JSON.parse(raw);
-    const windowStart = Date.now() - windowMs;
-    return rec.firstAt > windowStart && Number(rec.failures || 0) >= GAH_SEC_ADMIN_LOGIN_MAX_FAILURES;
-  } catch (_) {
-    return false;
-  }
-}
-
-async function gahSecAdminLoginRecord(env, request, failed) {
-  const key = gahSecClientIp(request);
-  const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
-  if (!failed) {
-    // Successful login clears the counter.
-    const cleared = await gahSecDoCall(env, { op: "clear", scope: "admin-login", key, windowMs });
-    if (cleared) return;
-    const store = phangStore(env);
-    if (!store) return;
-    try { await store.binding.delete(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`); } catch (_) { /* best-effort */ }
-    return;
-  }
   const viaDo = await gahSecDoCall(env, {
     op: "check", scope: "admin-login", key,
     max: GAH_SEC_ADMIN_LOGIN_MAX_FAILURES, windowMs,
   });
-  if (viaDo) return;
+  if (viaDo) return !viaDo.limited;
+  // KV fallback: approximate under concurrency, then fail open.
   const store = phangStore(env);
-  if (!store) return;
+  if (!store) return true;
   try {
+    const now = Date.now();
     const raw = await store.binding.get(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`);
     const rec = raw ? JSON.parse(raw) : { firstAt: 0, failures: 0 };
-    const windowStart = Date.now() - windowMs;
-    const inWindow = rec.firstAt > windowStart;
+    const inWindow = rec.firstAt > now - windowMs;
+    const failures = inWindow ? Number(rec.failures || 0) + 1 : 1;
     await store.binding.put(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`, JSON.stringify({
-      firstAt: inWindow ? rec.firstAt : Date.now(),
-      failures: inWindow ? Number(rec.failures || 0) + 1 : 1
+      firstAt: inWindow ? rec.firstAt : now,
+      failures
     }), { expirationTtl: GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS + 60 });
-  } catch (_) { /* best-effort */ }
+    return failures <= GAH_SEC_ADMIN_LOGIN_MAX_FAILURES;
+  } catch (_) {
+    return true; // fail open
+  }
+}
+
+async function gahSecAdminLoginClear(env, request) {
+  const key = gahSecClientIp(request);
+  const windowMs = GAH_SEC_ADMIN_LOGIN_WINDOW_SECONDS * 1000;
+  const cleared = await gahSecDoCall(env, { op: "clear", scope: "admin-login", key, windowMs });
+  if (cleared) return;
+  const store = phangStore(env);
+  if (!store) return;
+  try { await store.binding.delete(`${GAH_SEC_ADMIN_LOGIN_PREFIX}${key}`); } catch (_) { /* best-effort */ }
 }
 
 async function proxyProofLayer(request, env = {}) {
@@ -11755,7 +11748,9 @@ async function handleXAdminLogin(request, env) {
   // SEC-REMEDIATION: authoritative server-side throttle. The sealed-cookie
   // counter above resets when the client clears the cookie; this KV-backed
   // per-IP counter does not.
-  if (await gahSecAdminLoginBlocked(env, request)) {
+  // SEC-REMEDIATION: atomic admission — the attempt is recorded here, at
+  // the gate, so concurrent attempts cannot all slip past a peek.
+  if (!(await gahSecAdminLoginAdmit(env, request))) {
     const blockedHeaders = xPublisherHeaders({
       "Set-Cookie": await xAdminLoginRateCookie(env, rateState)
     });
@@ -11766,7 +11761,7 @@ async function handleXAdminLogin(request, env) {
   const submitted = String(form?.get("admin_token") || "");
   const returnTo = xSafeReturnPath(form?.get("return_to"));
   if (xAdminLoginRateBlocked(rateState) || !submitted || !timingSafeEqualText(submitted, env.X_ADMIN_TOKEN)) {
-    await gahSecAdminLoginRecord(env, request, true); // SEC-REMEDIATION
+    // SEC-REMEDIATION: the failed attempt was already recorded at admission.
     const headers = xPublisherHeaders({
       "Set-Cookie": await xAdminLoginRateCookie(env, rateState)
     });
@@ -11780,7 +11775,7 @@ async function handleXAdminLogin(request, env) {
   });
   for (const cookie of await xAdminSessionCookies(env)) headers.append("Set-Cookie", cookie);
   headers.append("Set-Cookie", clearScopedSecureCookie(X_ADMIN_LOGIN_RATE_COOKIE_NAME, "/admin/login", "Strict"));
-  await gahSecAdminLoginRecord(env, request, false); // SEC-REMEDIATION: successful login clears the server-side counter
+  await gahSecAdminLoginClear(env, request); // SEC-REMEDIATION: successful login clears the server-side counter
   return new Response(null, { status: 302, headers });
 }
 

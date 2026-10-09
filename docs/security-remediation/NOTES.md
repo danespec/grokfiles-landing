@@ -46,17 +46,30 @@ edge rules, not a replacement for them.
    `POST /a2a/v1/message:send` (30 req/min/IP), returning 429 with
    `Retry-After`. Ops: `check` / `peek` / `clear` against the sharded DO.
 
-4. **Server-side admin-login throttle** — `peek`/`check`/`clear` against the
-   same DO (15-min window, 5 failures, matching the existing
-   `X_ADMIN_LOGIN_*` constants), KV per-IP counter as fallback.
-   The sealed-cookie counter is client-resettable (clearing the cookie
-   restarts the count); the DO/KV counter is authoritative. Checked on every
-   login POST before the existing logic; recorded on failure; cleared on
-   success.
+4. **Server-side admin-login throttle — atomic admission.** Every POST to
+   `/admin/login` consumes one throttle slot AT THE GATE via a single DO
+   `check` op (`gahSecAdminLoginAdmit`); a successful login clears the
+   counter (`gahSecAdminLoginClear`). The previous peek → verify → record
+   sequence let N concurrent attempts all pass the gate before any failure
+   was recorded — now the (max+1)th concurrent attempt is blocked even if
+   no verification has completed. The sealed-cookie counter is
+   client-resettable (clearing the cookie restarts the count); the DO/KV
+   counter is authoritative. `gahSecDoCall` uses the `fetch(url, init)`
+   form (identical semantics to `fetch(Request)` in the workers runtime;
+   required for Miniflare testability).
 
 ## Verification
 
 - `node --check _worker.js` — syntax OK.
+- `workers/sec-rate-limiter/test/admin_login.mjs` — **12/12 pass**: drives
+  the real `gahSecAdminLoginAdmit`/`Clear` from `_worker.js` against a real
+  Miniflare DO namespace through the complete handler sequence
+  (admit → verify → clear). 10 simultaneous bad-token logins → exactly 5
+  admitted (401) and 5 blocked at the gate (429); good token clears;
+  per-IP isolation; `CF-Connecting-IP` preferred over spoofable
+  `X-Forwarded-For` (trusted because the Cloudflare edge overwrites it;
+  direct-to-worker access would need separate review); missing binding and
+  DO outage both fail open.
 - `workers/sec-rate-limiter/test/run.mjs` — **8/8 pass under real Miniflare
   (workerd)** with TRUE concurrent subrequests against the actual DO class:
   25-way race → exactly 3 allowed / 22 blocked; 10 concurrent admin failures
