@@ -7,7 +7,11 @@ explicit approval of the staging environment.**
 
 - Repository: `danespec/grokfiles-landing`
 - Branch: `ren/phase0-integration`
-- Commit: `7ff04dd97b41a01a084887c4a445a82b2e1ef37d` (verified pushed branch tip)
+- Commit: the tip of `ren/phase0-integration` at deploy-authorization time.
+  Verify with: `git ls-remote origin refs/heads/ren/phase0-integration`.
+  Code under test: `7ff04dd97b41a01a084887c4a445a82b2e1ef37d` (regression run:
+  7/7 suites, 114 checks). Only manifest text changed after that commit —
+  no code delta. Deploy the verified tip, not a stale SHA.
 - Base: `ren/production-snapshot-20261009` @ `7bfc664`
 - Regression: 7/7 suites, 114 checks pass (`tests/run_phase0_regression.sh`)
 
