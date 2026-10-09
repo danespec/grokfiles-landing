@@ -4757,16 +4757,36 @@ function publicSearchRowRelevant(row, query) {
 
 // Phase 0 (ren/phase0-exact-id): exact-identifier policy.
 //
-// An exact-identifier query (EFTA-shaped) must return the verified record
-// or a missing-record response — NEVER a fabricated /archive/{id} route.
-// Previously the handler invented a row ("Exact archive identifier route.")
-// for any EFTA-shaped query, even when no record existed in the index.
-// Pure function: unit-tested in tests/test_exact_id_policy.mjs.
+// An exact-identifier query (EFTA-shaped) must return a VERIFIED record or
+// a missing-record response — NEVER a fabricated /archive/{id} route.
+//
+// "Verified" requires documented source evidence, not a bare identifier
+// match: the row must carry a resolvable URL (read_url/url/pdf_url/
+// source_url) or a documented source. A row whose identifier matches but
+// carries no evidence is NOT a verified record — it gets the missing-record
+// response. Missing-record responses never carry document-bundle or
+// visual-evidence URLs, and explanatory missing-record cards are excluded
+// from hit counts. Pure functions; unit-tested in
+// tests/test_exact_id_policy.mjs.
+function exactIdRowHasSourceEvidence(row) {
+  const url = row?.read_url || row?.url || row?.pdf_url || row?.source_url;
+  if (url && String(url).trim()) return true;
+  const src = row?.source;
+  if (src && String(src).trim()) return true;
+  return false;
+}
+
+// Explanatory missing-record cards are not hits.
+function actualHitCount(rows) {
+  return rows.filter((row) => !row.missing).length;
+}
+
 function applyExactIdentifierPolicy(rows, exact, data) {
-  const existing = rows.find((row) => publicSearchExactId(row) === exact);
-  if (existing) {
-    data.exact_identifier_route = `/archive/${exact}`;
-    return [existing, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
+  const candidates = rows.filter((row) => publicSearchExactId(row) === exact);
+  const verified = candidates.find((row) => exactIdRowHasSourceEvidence(row));
+  if (verified) {
+    data.exact_identifier_route = verified.read_url || verified.url || `/archive/${exact}`;
+    return [verified, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
   }
   data.exact_identifier_missing = true;
   return [{
@@ -5022,6 +5042,8 @@ async function enrichPublicSearchRowsWithVisualEvidence(rows, env) {
   }));
 
   return rows.map((row) => {
+    // Missing-record responses never carry bundle or visual-evidence URLs.
+    if (row.missing) return row;
     const efta = publicSearchExactId(row);
     if (!/^EFTA[0-9]{8}$/.test(efta)) return row;
     const count = counts.get(efta) || 0;
@@ -5162,8 +5184,8 @@ async function handlePublicSearch(request, env) {
 
   data.hits = rows;
   data.results = rows;
-  data.hit_count = rows.length;
-  data.primary_hit_count = rows.length;
+  data.hit_count = actualHitCount(rows);
+  data.primary_hit_count = actualHitCount(rows);
   data.estimatedTotalHits = rows.length;
   data.query = query;
 
