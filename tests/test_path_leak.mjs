@@ -145,6 +145,19 @@ t("EFTA ID preserved", sanitizePublicSearchValue("EFTA00000001") === "EFTA000000
   t("/evidence-data/ path preserved", out.includes("/evidence-data/report.json"), out);
 }
 
+// --- Backend container path roots (GAH wiki runtime defense in depth) ---
+for (const root of ["doj", "var", "tmp", "root"]) {
+  t("standalone /" + root + "/ path omitted",
+    sanitizePublicSearchValue("/" + root + "/private/archive.txt") === undefined);
+  const cleaned = sanitizePublicSearchValue("Raw reference /" + root + "/private/archive.txt retained ID EFTA00500001");
+  t("embedded /" + root + "/ redacted",
+    !cleaned.includes("/" + root + "/") && cleaned.includes("EFTA00500001"));
+}
+t("public source reader preserved",
+  sanitizePublicSearchValue("/api/source?id=EFTA00500001") === "/api/source?id=EFTA00500001");
+t("public PDF reader preserved",
+  sanitizePublicSearchValue("/pdf-lite?id=EFTA00500001") === "/pdf-lite?id=EFTA00500001");
+
 // --- 9. Unexpected upstream content types (defense in depth) ---
 t("null -> null", sanitizePublicSearchValue(null) === null);
 t("number passthrough", sanitizePublicSearchValue(42) === 42);
