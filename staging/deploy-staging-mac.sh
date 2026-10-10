@@ -19,8 +19,11 @@
 # ============================================================================
 set -euo pipefail
 
-# ---- Pinned release (update only for a new authorized RC) -----------------
-PINNED_COMMIT="c45f469d689a723f70d8b3938d9d2776bd76b7a7"
+# ---- Pinned release -------------------------------------------------------
+# We pin the SHA-256 of _worker.js (the deployed artifact), not a commit SHA,
+# so script-only commits don't invalidate the pin. Update ONLY for a new
+# authorized RC (re-run: git show <rc>:_worker.js | sha256sum).
+WORKER_SHA256="cabcda93295dd3af9509c64daed72c303ef7b4b036aaff8da71261603b8fcd6a"
 BRANCH="ren/phase0-integration"
 REPO_URL="git@github.com:danespec/grokfiles-landing.git"
 
@@ -70,9 +73,12 @@ if [ ! -d "$REPO_DIR/.git" ]; then
 fi
 cd "$REPO_DIR"
 git fetch origin -q
+git checkout -q "$BRANCH"
+git pull -q --ff-only origin "$BRANCH" || true
 HEAD_SHA="$(git rev-parse HEAD)"
-[ "$HEAD_SHA" = "$PINNED_COMMIT" ] || die "HEAD is $HEAD_SHA, expected pinned $PINNED_COMMIT. Checkout the pinned commit first."
-log "Git state OK: $BRANCH @ $PINNED_COMMIT"
+WORKER_HASH="$(git show HEAD:_worker.js | sha256sum | awk '{print $1}')"
+[ "$WORKER_HASH" = "$WORKER_SHA256" ] || die "_worker.js hash $WORKER_HASH != pinned $WORKER_SHA256. Deploying an unreviewed worker is refused."
+log "Git state OK: $BRANCH @ $HEAD_SHA (_worker.js matches pinned hash)"
 
 # ============================================================================
 # Confirmation gate — print the plan, require explicit YES.
@@ -81,7 +87,7 @@ cat <<EOF
 
 ================ STAGING DEPLOYMENT PLAN ================
 Branch:  $BRANCH
-Commit:  $PINNED_COMMIT  (verified above)
+_worker.js sha256: $WORKER_SHA256  (verified above)
 Account: (from wrangler whoami above)
 
 Will CREATE/DEPLOY (staging-only):
@@ -136,8 +142,8 @@ esac
 # ============================================================================
 log "Phase 3: preparing Pages deploy directory ..."
 PAGES_DIR="$(mktemp -d)"
-git -C "$REPO_DIR" show "$PINNED_COMMIT:_worker.js" > "$PAGES_DIR/_worker.js"
-[ -s "$PAGES_DIR/_worker.js" ] || die "failed to extract _worker.js at $PINNED_COMMIT"
+git -C "$REPO_DIR" show "HEAD:_worker.js" > "$PAGES_DIR/_worker.js"
+[ -s "$PAGES_DIR/_worker.js" ] || die "failed to extract _worker.js at HEAD"
 
 # wrangler.toml for the Pages project: DO binding (script_name) + staging vars.
 # X_ADMIN_TOKEN is set as a secret afterwards, never in this file.
@@ -161,7 +167,7 @@ wrangler pages project create "$PAGES_PROJECT" --production-branch="$BRANCH" 2>&
 
 log "Deploying Pages project ..."
 cd "$PAGES_DIR"
-wrangler pages deploy . --project-name="$PAGES_PROJECT" --commit-hash="$PINNED_COMMIT" --branch="$BRANCH" > "$WORK_DIR/pages-deploy.log" 2>&1
+wrangler pages deploy . --project-name="$PAGES_PROJECT" --commit-hash="$HEAD_SHA" --branch="$BRANCH" > "$WORK_DIR/pages-deploy.log" 2>&1
 tail -5 "$WORK_DIR/pages-deploy.log"
 PAGES_URL="$(grep -oE 'https://[a-z0-9.-]+\.pages\.dev' "$WORK_DIR/pages-deploy.log" | head -1)"
 [ -n "$PAGES_URL" ] || die "could not determine Pages URL (see $WORK_DIR/pages-deploy.log)"
