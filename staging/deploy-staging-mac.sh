@@ -20,7 +20,7 @@
 set -euo pipefail
 
 # ---- Pinned release (update only for a new authorized RC) -----------------
-PINNED_COMMIT="d4b3b3fea3ac0d80943ba578c21df8174102b5ff"
+PINNED_COMMIT="c45f469d689a723f70d8b3938d9d2776bd76b7a7"
 BRANCH="ren/phase0-integration"
 REPO_URL="git@github.com:danespec/grokfiles-landing.git"
 
