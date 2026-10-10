@@ -1,4 +1,4 @@
-name = "gah-mock-wiki-staging"
+name = "gah-mock-staging-517b8499"
 main = "src/index.js"
 compatibility_date = "2025-06-01"
 workers_dev = true

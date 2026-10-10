@@ -5,7 +5,7 @@
 #
 # Rolls back, in order:
 #   1. Pages project gah-staging -> previous deployment (or delete project)
-#   2. Workers gah-sec-rate-limiter-staging / gah-mock-wiki-staging -> delete
+#   2. Workers gah-limiter-staging-517b8499 / gah-mock-staging-517b8499 -> delete
 #
 # The staging DO namespace holds only staging throttle counters (15-min
 # windows); deleting the worker discards them harmlessly.
@@ -13,8 +13,8 @@
 set -euo pipefail
 
 PAGES_PROJECT="gah-staging"
-LIMITER_WORKER="gah-sec-rate-limiter-staging"
-MOCK_WORKER="gah-mock-wiki-staging"
+LIMITER_WORKER="gah-limiter-staging-517b8499"
+MOCK_WORKER="gah-mock-staging-517b8499"
 
 PROD_BLOCKLIST=(
   "gah-sec-rate-limiter"

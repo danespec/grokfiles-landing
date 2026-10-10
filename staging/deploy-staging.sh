@@ -4,10 +4,10 @@
 # Requires: CLOUDFLARE_API_TOKEN with Pages/Workers/Durable Objects scope.
 #
 # Order:
-#   1. Deploy gah-sec-rate-limiter-staging (DO host)
-#   2. Deploy gah-mock-wiki-staging (isolated mock backend)
+#   1. Deploy gah-limiter-staging-517b8499 (DO host)
+#   2. Deploy gah-mock-staging-517b8499 (isolated mock backend)
 #   3. Create staging Pages project, deploy _worker.js @ pinned commit
-#   4. Bind GAH_SEC_RATE_LIMITER -> gah-sec-rate-limiter-staging (script_name)
+#   4. Bind GAH_SEC_RATE_LIMITER -> gah-limiter-staging-517b8499 (script_name)
 #   5. Set env vars: GAH_STAGING=true, GAH_WIKI_HOST=<mock host>,
 #      X_ADMIN_TOKEN=<staging-only>
 #   6. Run validation sequence (see staging/DEPLOY_MANIFEST.md)

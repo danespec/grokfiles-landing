@@ -9,6 +9,7 @@
 #   3b. tests/test_wiki_host_failclosed.mjs — staging fail-closed (11 checks)
 #   3c. tests/test_staging_harden.mjs       — STAGING-HARDEN-001 (20 checks)
 #   3d. tests/test_worker_entrypoint.mjs    — Workers-runtime entrypoint (9 checks)
+#   3e. tests/test_path_leak.mjs              — SEC-PATH-LEAK-001 (27 checks)
 #   4. workers/sec-rate-limiter/test/run.mjs        — DO under Miniflare (8)
 #   5. workers/sec-rate-limiter/test/admin_login.mjs — handler-level (12)
 #   6. docs/security-remediation/sec-concurrency-tests.mjs (8)
@@ -34,6 +35,7 @@ run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 run "wiki-host fail-closed" node tests/test_wiki_host_failclosed.mjs
 run "staging harden-001" node tests/test_staging_harden.mjs
 run "worker entrypoint" node tests/test_worker_entrypoint.mjs
+run "path-leak sec" node tests/test_path_leak.mjs
 
 if [ ! -d workers/sec-rate-limiter/node_modules ]; then
   echo "Installing miniflare for DO runtime tests..."

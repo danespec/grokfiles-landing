@@ -6,8 +6,8 @@
 # Deploys ONLY isolated staging resources. Never touches production.
 #
 # What it deploys (in order):
-#   1. gah-sec-rate-limiter-staging  (Worker + Durable Object, staging-only)
-#   2. gah-mock-wiki-staging         (Worker, deterministic fixtures)
+#   1. gah-limiter-staging-517b8499  (Worker + Durable Object, staging-only)
+#   2. gah-mock-staging-517b8499         (Worker, deterministic fixtures)
 #   3. gah-staging                   (Pages project, _worker.js @ pinned commit)
 #
 # Safety properties:
@@ -29,8 +29,8 @@ REPO_URL="git@github.com:danespec/grokfiles-landing.git"
 
 # ---- Staging-only resource names ------------------------------------------
 PAGES_PROJECT="gah-staging"
-LIMITER_WORKER="gah-sec-rate-limiter-staging"
-MOCK_WORKER="gah-mock-wiki-staging"
+LIMITER_WORKER="gah-limiter-staging-517b8499"
+MOCK_WORKER="gah-mock-staging-517b8499"
 
 # ---- Production names that must NEVER appear as deploy targets ------------
 PROD_BLOCKLIST=(

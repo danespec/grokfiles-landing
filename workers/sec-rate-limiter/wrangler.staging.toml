@@ -1,7 +1,7 @@
-# gah-sec-rate-limiter-staging — isolated staging rate limiter.
+# gah-limiter-staging-517b8499 — isolated staging rate limiter.
 # Staging-only. Never points at production. Deployed BEFORE the Pages project.
 
-name = "gah-sec-rate-limiter-staging"
+name = "gah-limiter-staging-517b8499"
 main = "src/index.js"
 compatibility_date = "2026-10-09"
 

@@ -4675,8 +4675,19 @@ function sanitizePublicSearchValue(value, depth = 0) {
     return output;
   }
   if (typeof value === "string") {
+    // SEC-PATH-LEAK-001: redact internal filesystem paths (defense in depth).
+    // The wiki backend may return paths embedded in summaries; strip them
+    // whether standalone or embedded. Preserve EFTA IDs, public URLs
+    // (https://, /archive/, /evidence-data/), and legitimate text.
     if (/^\/(?:Volumes|volume[0-9]+|Users|mnt)\//i.test(value) || /^[A-Za-z]:\\/.test(value)) return undefined;
-    return publicSearchCleanString(value);
+    let redacted = value;
+    // Unix-style: /Volumes/..., /Users/..., /mnt/..., /volume0/... (embedded or standalone)
+    redacted = redacted.replace(/\/(?:Volumes|volume[0-9]+|Users|mnt)\/[^\s"'<>]*/gi, "[path-redacted]");
+    // Windows-style: C:\..., D:\... (embedded or standalone)
+    redacted = redacted.replace(/[A-Za-z]:\\[^\s"'<>]*/g, "[path-redacted]");
+    // Home directory references: /homes/admin/..., /home/...
+    redacted = redacted.replace(/\/(?:homes|home)\/[^\s"'<>]*/gi, "[path-redacted]");
+    return publicSearchCleanString(redacted);
   }
   return value;
 }

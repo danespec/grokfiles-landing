@@ -11,6 +11,10 @@ compatibility_date = "2026-10-09"
 name = "GAH_SEC_RATE_LIMITER"
 class_name = "GahSecRateLimiterDO"
 
+# SEC-PATH-LEAK-001: Use new_sqlite_classes for the greenfield production
+# deployment. There is no existing production DO namespace to preserve.
+# Do NOT change the staging worker (gah-limiter-staging-517b8499) — it already
+# exists with the legacy migration; changing it requires a new class name.
 [[migrations]]
 tag = "v1"
-new_classes = ["GahSecRateLimiterDO"]
+new_sqlite_classes = ["GahSecRateLimiterDO"]
