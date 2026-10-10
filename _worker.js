@@ -509,6 +509,7 @@ function wikiHost(env) {
   }
   return WIKI_HOST;
 }
+
 const WIKI_INTERNAL_PROXY_HEADER = "X-GAH-Internal-Wiki-Proxy";
 const WIKI_TO_APEX_REDIRECT_PATHS = new Set([
   "/grok-command-v4",
@@ -6365,6 +6366,16 @@ function consentScriptTag(env = {}) {
 }
 
 function ensureConsentScript(body, env = {}) {
+  // STAGING-HARDEN-001: sanitize any baked-in GAH_CONSENT_BOOT config on staging.
+  // Static HTML may contain production GA4 config; replace it with a disabled config.
+  if (isStagingEnv(env) && body.includes("window.GAH_CONSENT_BOOT=")) {
+    const sanitized = consentBootTag(env);
+    // Replace the entire GAH_CONSENT_BOOT script tag with the sanitized version.
+    body = body.replace(
+      /<script[^>]*>window\.GAH_CONSENT_BOOT=.*?<\/script>/s,
+      sanitized.replace(/\$/g, "$$$$")
+    );
+  }
   if (body.includes("/frontdoor/consent.js")) return body;
   if (!/<\/head>/i.test(body)) return body;
   const v3ManagedConsent = /data-gah-shell=["']v3["']/i.test(body);
@@ -17783,7 +17794,7 @@ export default {
 
   async fetch(request, env) {
     // STAGING-HARDEN-001: all staging responses carry privacy headers.
-    return applyStagingPrivacyHeaders(await handleStagingFetch(request, env), env);
+    return applyStagingPrivacyHeaders(await this.handleStagingFetch(request, env), env);
   },
 
   async handleStagingFetch(request, env) {

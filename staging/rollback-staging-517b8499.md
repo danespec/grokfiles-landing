@@ -40,9 +40,9 @@ must show `noindex, nofollow, noarchive` (proves the hardened worker is serving)
 # are per-window and expire naturally):
 wrangler rollback --name=gah-limiter-staging-517b8499
 
-# Or redeploy the known-good source:
+# Or redeploy the known-good source (explicit --name: never rely on wrangler.toml):
 cd workers/sec-rate-limiter
-wrangler deploy --config wrangler.staging.toml
+wrangler deploy --config wrangler.staging.toml --name=gah-limiter-staging-517b8499
 ```
 
 The Pages site degrades gracefully without the limiter (fail-open by design;
@@ -52,8 +52,8 @@ smoke test `bindings.sh` covers the missing/unavailable states).
 
 ```bash
 cd workers/mock-wiki-backend
-# Redeploy from the reviewed source:
-wrangler deploy
+# Redeploy from the reviewed source (explicit --name: never rely on wrangler.toml):
+wrangler deploy --name=gah-mock-staging-517b8499
 ```
 
 If the mock is down, staging search returns 503 `wiki_host_unconfigured`

@@ -34,16 +34,20 @@ function extractFn(source, name) {
 
 const loader = new Function(
   [
-    // Stubs for googleTagEnabled's dependencies.
+    // Stubs for dependencies.
     `function cleanText(v){ return String(v || "").trim(); }`,
     `const GAH_GA4_MEASUREMENT_ID = "";`,
+    `function adsenseApproved(env){ return false; }`,
+    extractFn(src, "consentScriptTag"),
     extractFn(src, "isStagingEnv"),
     extractFn(src, "applyStagingPrivacyHeaders"),
     extractFn(src, "googleTagEnabled"),
-    `return { isStagingEnv, applyStagingPrivacyHeaders, googleTagEnabled };`,
+    extractFn(src, "consentBootTag"),
+    extractFn(src, "ensureConsentScript"),
+    `return { isStagingEnv, applyStagingPrivacyHeaders, googleTagEnabled, consentBootTag, consentScriptTag, ensureConsentScript };`,
   ].join("\n")
 );
-const { isStagingEnv, applyStagingPrivacyHeaders, googleTagEnabled } = loader();
+const { isStagingEnv, applyStagingPrivacyHeaders, googleTagEnabled, consentBootTag, ensureConsentScript } = loader();
 
 let pass = 0,
   fail = 0;
@@ -91,8 +95,20 @@ t(
 // --- 5. Fetch handler wrapped ---
 t(
   "fetch handler applies staging privacy headers",
-  src.includes("return applyStagingPrivacyHeaders(await handleStagingFetch(request, env), env);")
+  src.includes("return applyStagingPrivacyHeaders(await this.handleStagingFetch(request, env), env);")
 );
+
+// --- 6. Staging HTML sanitization: GAH_CONSENT_BOOT ---
+{
+  const prodBody = `<html><head><script data-cfasync="false">window.GAH_CONSENT_BOOT={"schema":"gah.consent.v2","googleTagEnabled":true,"ga4MeasurementId":"G-48G8M0230N","adsenseApproved":false};</script></head><body></body></html>`;
+  const stagingOut = ensureConsentScript(prodBody, { GAH_STAGING: "true" });
+  t("staging sanitizes baked-in GAH_CONSENT_BOOT", !stagingOut.includes("G-48G8M0230N"));
+  t("staging GAH_CONSENT_BOOT disables googleTag", stagingOut.includes('"googleTagEnabled":false'));
+  t("staging GAH_CONSENT_BOOT clears measurement ID", stagingOut.includes('"ga4MeasurementId":""'));
+
+  const prodOut = ensureConsentScript(prodBody, {});
+  t("production does not strip GA4 ID", prodOut.includes("G-48G8M0230N"));
+}
 
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);
