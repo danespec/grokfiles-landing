@@ -483,6 +483,12 @@ const WIKI_HOST = "wiki.grokarchivehub.com";
 function wikiHost(env) {
   const override = String(env?.GAH_WIKI_HOST || "").trim().toLowerCase();
   if (/^[a-z0-9]([a-z0-9.-]{0,253}[a-z0-9])?\.[a-z]{2,}$/.test(override)) return override;
+  // FAIL CLOSED: a staging deployment must NEVER silently fall back to the
+  // production wiki host. Set GAH_STAGING=true with a valid GAH_WIKI_HOST
+  // (isolated mock backend) or the proxy refuses with 503.
+  if (String(env?.GAH_STAGING || "").toLowerCase() === "true") {
+    throw new Error("GAH_STAGING=true requires a valid GAH_WIKI_HOST; refusing fallback to the production wiki host");
+  }
   return WIKI_HOST;
 }
 const WIKI_INTERNAL_PROXY_HEADER = "X-GAH-Internal-Wiki-Proxy";
@@ -4134,7 +4140,14 @@ async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
   target.protocol = "https:";
-  target.hostname = wikiHost(env);
+  try {
+    target.hostname = wikiHost(env);
+  } catch (err) {
+    return new Response(JSON.stringify({ error: "wiki_host_unconfigured", detail: String(err && err.message || err) }), {
+      status: 503,
+      headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }
+    });
+  }
   target.port = "";
   if (proxiedPath === "/photos") target.pathname = "/photos/incoming-visual/index.html";
 
@@ -6136,8 +6149,8 @@ function barakSearchEvidenceContractHtml() {
 </section>`;
 }
 
-async function serveBarakSearchWithContract(request) {
-  const upstream = await proxyProofLayer(request);
+async function serveBarakSearchWithContract(request, env = {}) {
+  const upstream = await proxyProofLayer(request, env);
   const contentType = upstream.headers.get("Content-Type") || "";
   if (!contentType.toLowerCase().includes("text/html")) return upstream;
 
@@ -17190,11 +17203,11 @@ function barakReceiptArchiveAliasHtml(records, archiveId) {
 </html>`;
 }
 
-async function serveBarakReceiptDetail(request, idOrArchiveId) {
+async function serveBarakReceiptDetail(request, idOrArchiveId, env = {}) {
   const record = BARAK_RECEIPT_DETAIL_BY_ID.get(idOrArchiveId);
   const groupedRecords = BARAK_RECEIPT_DETAIL_BY_ARCHIVE_ID.get(idOrArchiveId);
   if (!record && !groupedRecords) {
-    return proxyProofLayer(request);
+    return proxyProofLayer(request, env);
   }
   const body = record
     ? barakReceiptDetailHtml(record, request.url)
@@ -17606,7 +17619,7 @@ function sanitizeAskGahPayload(value, depth = 0) {
 }
 
 // GAH_ASK_GAH_BRIDGE_V1
-async function handleAskGahBridge(request) {
+async function handleAskGahBridge(request, env = {}) {
   if (request.method !== "POST") {
     return new Response(JSON.stringify({
       ok: false,
@@ -17703,7 +17716,7 @@ async function handleAskGahBridge(request) {
     body: JSON.stringify(upstreamBody)
   });
 
-  const upstreamResponse = await proxyProofLayer(upstreamRequest);
+  const upstreamResponse = await proxyProofLayer(upstreamRequest, env);
   const headers = new Headers(upstreamResponse.headers);
   const contentType = headers.get("Content-Type") || "";
 
@@ -18069,7 +18082,7 @@ export default {
     }
 
     if (path === "/api/ai/query") {
-      return handleAskGahBridge(request);
+      return handleAskGahBridge(request, env);
     }
 
     if (path === "/api/ai/context-preview") {
@@ -18327,7 +18340,7 @@ export default {
 
     if ((request.method === "GET" || request.method === "HEAD") && path.startsWith("/barak/receipts/")) {
       const idOrArchiveId = decodeURIComponent(path.slice("/barak/receipts/".length));
-      return serveBarakReceiptDetail(request, idOrArchiveId);
+      return serveBarakReceiptDetail(request, idOrArchiveId, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/dispatches/queue") {
@@ -18361,7 +18374,7 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path.startsWith("/barak/search")) {
-      return serveBarakSearchWithContract(request);
+      return serveBarakSearchWithContract(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/research/evidence/epstein-death") {

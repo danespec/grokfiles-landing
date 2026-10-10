@@ -14,6 +14,14 @@ set -u
 BASE="${1:-${STAGING_BASE_URL:-}}"
 if [ -z "$BASE" ]; then echo "usage: $0 https://<staging-url>"; exit 2; fi
 BASE="${BASE%/}"
+
+# Refuse production hostnames: this suite must never run against production.
+PROD_HOST="$(python3 -c "import sys,urllib.parse; print(urllib.parse.urlparse(sys.argv[1]).hostname or '')" "$BASE")"
+case "$PROD_HOST" in
+  grokarchivehub.com|www.grokarchivehub.com|wiki.grokarchivehub.com)
+    echo "REFUSAL: '$PROD_HOST' looks like production. This suite is staging-only."; exit 3;;
+esac
+
 TMPD="$(mktemp -d)"; trap 'rm -rf "$TMPD"' EXIT
 
 pass=0; fail=0; failed=()
