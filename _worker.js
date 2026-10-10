@@ -475,6 +475,24 @@ const APEX_HOSTS = new Set([APEX_HOST, "www.grokarchivehub.com"]);
 const FILES_HOST = "files.grokarchivehub.com";
 const WIKI_HOST = "wiki.grokarchivehub.com";
 
+// STAGING-HARDEN-001: staging environment detection.
+function isStagingEnv(env) {
+  return String(env?.GAH_STAGING || "").toLowerCase() === "true";
+}
+
+// STAGING-HARDEN-001: enforce privacy headers on all staging responses.
+// Clones the response with X-Robots-Tag: noindex, nofollow, noarchive.
+function applyStagingPrivacyHeaders(response, env) {
+  if (!isStagingEnv(env) || !response || !(response instanceof Response)) return response;
+  const headers = new Headers(response.headers);
+  headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers
+  });
+}
+
 // Staging isolation: env.GAH_WIKI_HOST overrides the upstream wiki host so a
 // staging deployment can point at a staging wiki host or a mock backend for
 // contract testing. Production leaves it unset. The value must look like a
@@ -6310,6 +6328,8 @@ function adsenseApproved(env = {}) {
 const GAH_GA4_MEASUREMENT_ID = "G-48G8M0230N";
 
 function googleTagEnabled(env = {}) {
+  // STAGING-HARDEN-001: GA4 and advertising integrations are disabled on staging.
+  if (isStagingEnv(env)) return false;
   return Boolean(
     cleanText(
       env.GA4_MEASUREMENT_ID
@@ -13386,6 +13406,9 @@ async function xReadRouteHtml(request, env, route) {
       assetUrl.search = "";
       const response = await env.ASSETS.fetch(assetUrl.toString());
       if (response.ok) return { ok: true, status: response.status, html: await response.text(), assetPath };
+      // STAGING-HARDEN-001: never retrieve pages from the production
+      // host during staging. The mock wiki backend is the only upstream.
+      if (isStagingEnv(env)) return { ok: false, status: 404, html: "", assetPath };
       const publicResponse = await fetch(`https://grokarchivehub.com${route}`, {
         headers: { "User-Agent": "Grok Archive Hub X Publisher Discovery" }
       });
@@ -17759,6 +17782,11 @@ export default {
   },
 
   async fetch(request, env) {
+    // STAGING-HARDEN-001: all staging responses carry privacy headers.
+    return applyStagingPrivacyHeaders(await handleStagingFetch(request, env), env);
+  },
+
+  async handleStagingFetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
 
