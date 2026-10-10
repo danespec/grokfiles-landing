@@ -511,6 +511,7 @@ function wikiHost(env) {
 }
 
 const WIKI_INTERNAL_PROXY_HEADER = "X-GAH-Internal-Wiki-Proxy";
+const WIKI_SERVICE_TOKEN_HEADER = "X-GAH-Wiki-Service-Token";
 const WIKI_TO_APEX_REDIRECT_PATHS = new Set([
   "/grok-command-v4",
   "/research/evidence/calendar-epstein",
@@ -4155,6 +4156,28 @@ async function gahSecAdminLoginRefund(env, request) {
   } catch (_) { /* best-effort */ }
 }
 
+// SEC-WIKI-BACKEND-002: browsers hosted on wiki.grokarchivehub.com can
+// query public apex search without exposing any server-only authentication.
+const WIKI_PUBLIC_SEARCH_ORIGIN = "https://wiki.grokarchivehub.com";
+function wikiSearchCorsHeaders(request) {
+  if (request.headers.get("Origin") !== WIKI_PUBLIC_SEARCH_ORIGIN) return null;
+  return {
+    "Access-Control-Allow-Origin": WIKI_PUBLIC_SEARCH_ORIGIN,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age": "300",
+    "Vary": "Origin",
+    "Cache-Control": "no-store"
+  };
+}
+function decorateWikiSearchCors(response, request) {
+  const cors = wikiSearchCorsHeaders(request);
+  if (!cors) return response;
+  const headers = new Headers(response.headers);
+  for (const [key, value] of Object.entries(cors)) headers.set(key, value);
+  headers.delete("Content-Length");
+  return new Response(response.body, {status:response.status,statusText:response.statusText,headers});
+}
 async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
@@ -4171,7 +4194,14 @@ async function proxyProofLayer(request, env = {}) {
   if (proxiedPath === "/photos") target.pathname = "/photos/incoming-visual/index.html";
 
   const headersForUpstream = new Headers(request.headers);
+  // SEC-WIKI-BACKEND-002: client-provided token cannot impersonate the apex Worker.
+  headersForUpstream.delete(WIKI_SERVICE_TOKEN_HEADER);
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "apex-proof-layer");
+  // Inject only server-side Cloudflare secret; never send production token to a staging mock.
+  const wikiServiceToken = typeof env?.GAH_WIKI_SERVICE_TOKEN === "string" ? env.GAH_WIKI_SERVICE_TOKEN : "";
+  if (!isStagingEnv(env) && target.hostname === WIKI_HOST && wikiServiceToken.length >= 32) {
+    headersForUpstream.set(WIKI_SERVICE_TOKEN_HEADER, wikiServiceToken);
+  }
   // SEC-REMEDIATION (ren/security-remediation): never forward client
   // credentials to the upstream wiki host. The member session cookie and
   // any Authorization header are apex-only; the upstream proof layer
@@ -4331,6 +4361,14 @@ async function serveWikiHostNoindexRoute(request, env, path) {
   target.port = "";
   const headersForUpstream = new Headers(request.headers);
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "wiki-host-noindex");
+  // A browser cannot supply either the internal wiki token or apex credentials.
+  headersForUpstream.delete(WIKI_SERVICE_TOKEN_HEADER);
+  headersForUpstream.delete("cookie");
+  headersForUpstream.delete("authorization");
+  const serviceToken = typeof env?.GAH_WIKI_SERVICE_TOKEN === "string" ? env.GAH_WIKI_SERVICE_TOKEN : "";
+  if (!isStagingEnv(env) && target.hostname === WIKI_HOST && serviceToken.length >= 32) {
+    headersForUpstream.set(WIKI_SERVICE_TOKEN_HEADER, serviceToken);
+  }
   const upstream = await fetch(new Request(target.toString(), {
     method: request.method,
     headers: headersForUpstream,
@@ -4366,7 +4404,7 @@ async function serveWikiHostNoindexRoute(request, env, path) {
   });
 }
 
-async function serveResearchIndexApex(request) {
+async function serveResearchIndexApex(request, env = {}) {
   const routePath = "/research-index";
   const target = new URL(RESEARCH_INDEX_UPSTREAM_URL);
   target.search = new URL(request.url).search;
@@ -4374,6 +4412,13 @@ async function serveResearchIndexApex(request) {
 
   const headersForUpstream = new Headers(request.headers);
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "research-index-apex-proxy");
+  headersForUpstream.delete(WIKI_SERVICE_TOKEN_HEADER);
+  headersForUpstream.delete("cookie");
+  headersForUpstream.delete("authorization");
+  const serviceToken = typeof env?.GAH_WIKI_SERVICE_TOKEN === "string" ? env.GAH_WIKI_SERVICE_TOKEN : "";
+  if (!isStagingEnv(env) && target.hostname === WIKI_HOST && serviceToken.length >= 32) {
+    headersForUpstream.set(WIKI_SERVICE_TOKEN_HEADER, serviceToken);
+  }
   const upstream = await fetch(new Request(target.toString(), {
     method: request.method,
     headers: headersForUpstream,
@@ -4654,7 +4699,7 @@ const PUBLIC_SEARCH_PRIVATE_FIELDS = new Set([
 function publicSearchCleanString(value) {
   let text = String(value || "");
   text = text.replace(/SourcePDF:\s*[^\r\n]*?\.(?:pdf|txt)\s*/gi, "");
-  text = text.replace(/\/(?:Volumes|volume[0-9]+|Users|mnt)\/[^\r\n]*?\.(?:pdf|txt)\b/gi, "");
+  text = text.replace(/\/(?:Volumes|volume[0-9]+|Users|mnt|doj|var|tmp|root)\/[^\r\n]*?\.(?:pdf|txt)\b/gi, "");
   return text.trim();
 }
 
@@ -4679,10 +4724,10 @@ function sanitizePublicSearchValue(value, depth = 0) {
     // The wiki backend may return paths embedded in summaries; strip them
     // whether standalone or embedded. Preserve EFTA IDs, public URLs
     // (https://, /archive/, /evidence-data/), and legitimate text.
-    if (/^\/(?:Volumes|volume[0-9]+|Users|mnt)\//i.test(value) || /^[A-Za-z]:\\/.test(value)) return undefined;
+    if (/^\/(?:Volumes|volume[0-9]+|Users|mnt|doj|var|tmp|root)\//i.test(value) || /^[A-Za-z]:\\/.test(value)) return undefined;
     let redacted = value;
     // Unix-style: /Volumes/..., /Users/..., /mnt/..., /volume0/... (embedded or standalone)
-    redacted = redacted.replace(/\/(?:Volumes|volume[0-9]+|Users|mnt)\/[^\s"'<>]*/gi, "[path-redacted]");
+    redacted = redacted.replace(/\/(?:Volumes|volume[0-9]+|Users|mnt|doj|var|tmp|root)\/[^\s"'<>]*/gi, "[path-redacted]");
     // Windows-style: C:\..., D:\... (embedded or standalone)
     redacted = redacted.replace(/[A-Za-z]:\\[^\s"'<>]*/g, "[path-redacted]");
     // Home directory references: /homes/admin/..., /home/...
@@ -17898,7 +17943,7 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/research-index") {
-      return serveResearchIndexApex(request);
+      return serveResearchIndexApex(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/grok-command-v4") {
@@ -18215,8 +18260,15 @@ export default {
       return serveSearchApiDocs(request);
     }
 
+    if (request.method === "OPTIONS" && path === "/api/search") {
+      const cors = wikiSearchCorsHeaders(request);
+      return new Response(null, {
+        status: cors ? 204 : 403,
+        headers: cors || { "Cache-Control": "no-store", "Vary": "Origin" }
+      });
+    }
     if (request.method === "POST" && path === "/api/search") {
-      return handlePublicSearch(request, env);
+      return decorateWikiSearchCors(await handlePublicSearch(request, env), request);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/book-of-black/source/Book_of_Black_V6HHT.pdf") {
