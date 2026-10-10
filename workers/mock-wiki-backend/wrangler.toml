@@ -1,0 +1,7 @@
+name = "gah-mock-wiki-staging"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+# Staging-only mock. Never deploy to production.
+# The staging Pages worker points at this via GAH_WIKI_HOST.

@@ -1,0 +1,14 @@
+# gah-sec-rate-limiter-staging — isolated staging rate limiter.
+# Staging-only. Never points at production. Deployed BEFORE the Pages project.
+
+name = "gah-sec-rate-limiter-staging"
+main = "src/index.js"
+compatibility_date = "2026-10-09"
+
+[[durable_objects.bindings]]
+name = "GAH_SEC_RATE_LIMITER"
+class_name = "GahSecRateLimiterDO"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["GahSecRateLimiterDO"]
