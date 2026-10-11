@@ -1,0 +1,45 @@
+import assert from "node:assert/strict";
+import {readFile} from "node:fs/promises";
+import {fileURLToPath} from "node:url";
+import path from "node:path";
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const worker=(await import(new URL("../_worker.js?vaultaudit",import.meta.url))).default;
+const route="/investigations/fbi-vault-redaction-chronology-phang";
+const base="https://grokarchivehub.com";
+const assetFetch=async input=>{
+ const u=new URL(typeof input==="string"?input:input.url);
+ let file=u.pathname==="/"?"/index.html":u.pathname==="/latest"?"/latest.html":u.pathname;
+ try{
+  return new Response(await readFile(root+file),{status:200,headers:{"Content-Type":"text/html"}});
+ }catch{return new Response("not found",{status:404});}
+};
+const env=(staging=false)=>({ASSETS:{fetch:assetFetch},X_TOKEN_STORE:{get:async()=>null},...(staging?{GAH_STAGING:"true"}:{})});
+const checks=[];
+const check=(name,test)=>{assert.ok(test,name);checks.push(name);};
+const resp=await worker.fetch(new Request(base+route),env());
+const text=await resp.text();
+check("new route returns 200",resp.status===200);
+check("exact canonical URL",text.includes('rel="canonical" href="'+base+route+'"'));
+check("search index permitted",text.includes('name="robots" content="index,follow"')&&resp.headers.get("X-Robots-Tag")!=="noindex, nofollow, noarchive");
+check("single H1",(text.match(/<h1>/g)||[]).length===1);
+check("March 22 categories",text.includes("March 22")&&text.includes("witnesses")&&text.includes("116,792"));
+check("victim list distinguished",text.includes("1,115")&&text.includes("not described as a clientele list"));
+check("July 3 email limitations",text.includes("July 3")&&text.includes("actual proposed sentence is withheld"));
+check("agency pdf primary source",text.includes("vault.fbi.gov/records-regarding-the-review-of-the-investigative-holdings-related-to-jeffrey-epstein/"));
+check("court orders cited",text.includes("/291779/42/")&&text.includes("/291779/43/"));
+check("statutory source cited",text.includes("PLAW-119publ38"));
+check("administrative record boundary",text.includes("certified administrative record without that list"));
+const staging=await worker.fetch(new Request(base+route),env(true));
+check("staging protected from indexing",staging.status===200&&staging.headers.get("X-Robots-Tag")==="noindex, nofollow, noarchive");
+const map=await worker.fetch(new Request(base+"/sitemap.xml"),env());
+const xml=await map.text();
+check("sitemap includes route",xml.includes(base+route));
+const home=await worker.fetch(new Request(base+"/"),env());
+check("homepage links source audit",(await home.text()).includes('href="'+route+'"'));
+const latest=await worker.fetch(new Request(base+"/latest"),env());
+check("latest includes evidence framing",(await latest.text()).includes("FBI Vault Part 13: March 22"));
+const act=await worker.fetch(new Request(base+"/guides/epstein-files-transparency-act"),env());
+check("EFTA guide crosslink",(await act.text()).includes('href="'+route+'"'));
+const data=[...text.matchAll(/<script type="application\/ld\+json">([^<]+)<\/script>/g)].map(x=>JSON.parse(x[1]));
+check("news article structured data",data.some(x=>x["@type"]==="NewsArticle"&&x.url===base+route));
+console.log("RESULT",checks.length+"/"+checks.length,"PASS");
