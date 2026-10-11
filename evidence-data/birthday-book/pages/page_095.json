@@ -1,0 +1,93 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 95,
+  "page_id": "page_095",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_095.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_095.ocr.txt",
+  "image_metadata": {
+    "bytes": 13485915,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "e7faca91d795d9db90496ce434f603fa036479727b6956a4368a428f360b3d77"
+  },
+  "ocr_text": "\" 4 oii a ce co Dy\n~ SSS eS =e earn Gms 6s 6 a pb\nape ‘fee ae Sais Es een a SS =\na 20, ; * { er es Se S-\nsat? . a mel- o-dy Hinges on Whey wiry take you SE\n~ Si 9, oe a VD miso your fond cx\nwai 5 § (ee Rei cs ghee ee\nSn ‘ tae. os ae ee\nzs . \\ ES Ss Ss Ss ee SS a ee ae\n” — nn me =\nKaew pee Gas. oa)\n; oa oe = c+ gg ra *,\nian an ess ea\n5 Spares Se ES = — =\nata sch Wh & tes. Bet thtbegh they take a\nees yostrom wc, I sii} pox sans.\neae Ld = { eo ae a ee a i\nTS: 2 fehl | “eee & SEE T\nse 4 ? Though by to -aen-row you {i == eat eae ee mm reate i\n‘score ro v . eh tc ye pene\nee : y ee SES SSS al\nio | . ap Be iad\n‘ Ft | aE? ee Se SP -3 : sid dion ase aly\naa - = Se oa ie ss ES = SS = res\ni EDS | Sager) te _— Ss SS SSS SSS\n‘ he. Sete 2\nxo “ ” ( —— nit oun avi 4 ‘Fheweyyou sip your fad\nge * Foe , Soe Sr eS ee ae i Da Soren ee kee ey ee ae ee ral at ala phe\nse The A a oe)\nee ae ae es we = = os - ie ear’ “ear a . te 2d 7 :\nee: Ee eS\n; j egal Tsmemby or thes BL gals yy don Se\n: a manip “0, evi They canbe sway from met\n< ee Naar | ras — = ee ee. er ——\nos ee == == SS SS ES SS\nREA 3 wer\nee ae es 381\n=e : a —— abwat Av a <a\nras. yi: Sie ian — : a Sa ep a ee os\ni am Oe eet\n—2 t we knife,— aero\n-» et pe f Mae way yon Bald 208 Se a a ee 6\n| eee ——— > pie =e ee oe aa ae = bal\n[ m ze | mn — =\n= 1 ; i 22, gmrs pb Cel. gt\n— 7 17 ert SSS\n‘ 4 20 = ger: pee: Bee ome\nae pO Men Load —— co. os\ntz. Fil ~ a SS el area aa es ite ———— 3\nger eal Mé. wo eae oe =\naes a eee é 4 ;\niP * (eee -\n=. ei mae Y 080 eS ee = .\nae Bile ; — = ‘= =— i =\n* ‘ . . r tT t - » wo oe ae a\nCri 7% ee =)\ngt w i a Fost bead ae ga? 2 —\nae om: os ee ee ee eee a m_ms- a\n= eee, ae — = 7S oe ae a cea a tot Thay cant tele\neh —— 6 OF ode take tss won from > SS\n; wt SS eS Se ee ee eee\ni - ‘ —_ ae my? —-+ ==\n- ae oe ae\na — OR NE, eas\naoe omeb ae ‘ = en ay ee =i = = oo\nee ‘ > See pho wey you wear our Mae\nie : SS ee ee\n‘ \\) is? : a a ” Save eo\n= > aa : tz ae ee SS at\n9 te j 1\nPeace Bt Ss\nto) Se ;\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Black and white photograph of a printed music sheet titled 'THEY CAN'T TAKE THAT AWAY FROM ME'. The page contains musical notes, lyrics and chords for a song, arranged in two main columns roughly centered on the page. Top left corner shows the main title, beneath it the text 'Music and Lyrics by GEORGE GERSHWIN and IRA GERSHWIN'. Lyrics and musical notation cover most of the page, distributed in multiple staves and sections labeled with chord symbols and textual lyrics. The photo shows the sheet at a slight angle, causing minor distortion and shadowing, primarily along the page edges. There are no visible handwriting, drawings, photos, or signatures. The background behind the sheet is dark and plain.",
+    "Layout: title at top left",
+    "Layout: composer credits under title",
+    "Layout: two-column music staves with lyrics and chords",
+    "Layout: page number in bottom right corner"
+  ],
+  "observations": [
+    "Black and white photograph of a printed music sheet titled 'THEY CAN'T TAKE THAT AWAY FROM ME'. The page contains musical notes, lyrics and chords for a song, arranged in two main columns roughly centered on the page. Top left corner shows the main title, beneath it the text 'Music and Lyrics by GEORGE GERSHWIN and IRA GERSHWIN'. Lyrics and musical notation cover most of the page, distributed in multiple staves and sections labeled with chord symbols and textual lyrics. The photo shows the sheet at a slight angle, causing minor distortion and shadowing, primarily along the page edges. There are no visible handwriting, drawings, photos, or signatures. The background behind the sheet is dark and plain.",
+    "Layout: title at top left",
+    "Layout: composer credits under title",
+    "Layout: two-column music staves with lyrics and chords",
+    "Layout: page number in bottom right corner"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THEY CAN'T TAKE THAT AWAY FROM ME",
+    "Music and Lyrics by GEORGE GERSHWIN and IRA GERSHWIN",
+    "Moderato (slightly)",
+    "Though by to -mor-row you’re",
+    "The way you hold your knife...",
+    "The way you sip your fond cx-",
+    "I'll miss your fond cx-",
+    "Refrain (cut fast)",
+    "No, no! They can't take that away from me!",
+    "HOUSE_OVERSIGHT_000095"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some lyrics partially obscured by image angle and shadowing, causing low legibility in text near bottom and right side sections."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:18:13.435Z",
+    "response_id": "resp_0dab353998d579b2006a502c2e71dc8193b253b8295122fe23",
+    "raw_output_sha256": "e5fa06ed5dddd509c6a08f0850849d2a40b15f5e688e54a3c1c22fbf7e49a24e"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0dab353998d579b2006a502c2e71dc8193b253b8295122fe23",
+    "enriched_at": "2026-07-09T23:18:13.435Z"
+  },
+  "visual_summary": "Black and white photograph of a printed music sheet titled 'THEY CAN'T TAKE THAT AWAY FROM ME'. The page contains musical notes, lyrics and chords for a song, arranged in two main columns roughly centered on the page. Top left corner shows the main title, beneath it the text 'Music and Lyrics by GEORGE GERSHWIN and IRA GERSHWIN'. Lyrics and musical notation cover most of the page, distributed in multiple staves and sections labeled with chord symbols and textual lyrics. The photo shows the sheet at a slight angle, causing minor distortion and shadowing, primarily along the page edges. There are no visible handwriting, drawings, photos, or signatures. The background behind the sheet is dark and plain.",
+  "layout": [
+    "title at top left",
+    "composer credits under title",
+    "two-column music staves with lyrics and chords",
+    "page number in bottom right corner"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

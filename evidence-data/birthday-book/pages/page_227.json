@@ -1,0 +1,93 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 227,
+  "page_id": "page_227",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_227.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_227.ocr.txt",
+  "image_metadata": {
+    "bytes": 1338921,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "084fe0d97b33febc73428913dd6baf5726752529e3d9bdb20d21fda6461f4087"
+  },
+  "ocr_text": "ei\na now five in New York City, fave traveled to\nParis, Condon, Milan, Copenfiagen, Tokyo,\nong Kong, Stackholm, Cosa, Singapore,\nBrunei, Bangkok, Bali, Ghana, Nigeria,\nMozambique, Rwanda, South Africa,\nmorocco, treland, St. Tropez, Florida, ==\n© Moscow, St. Petersburg, Aspen\nhave met Prince Andrew, President Clinton,\nSultan of Brunet, Donald Trump, =\n—_Antoiio Verglas, Naomi Campbel\n Stophanie Seymour, Peter Brant,\nKevin Spacey, Chris Tucker, Diana Ross,\nMichael Jackson, Griliant scientists,\n Gaunjers and business mem\ntaken a flying lesson, been snubadiving,\n-paransaig attend Victoria’ Sere fashion show,\n“seen the private quarcers of Buckingham Palace\n© wit Max Paps earned countless SA\n0\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A page with elegant, cursive handwriting presenting a personal narrative. The text lists numerous cities, experiences, and notable names. The background is dark with light text. The text is centered and fills most of the page width. There are no photos, drawings, or visible signatures aside from the handwriting itself.",
+    "Layout: centered cursive handwriting text block"
+  ],
+  "observations": [
+    "A page with elegant, cursive handwriting presenting a personal narrative. The text lists numerous cities, experiences, and notable names. The background is dark with light text. The text is centered and fills most of the page width. There are no photos, drawings, or visible signatures aside from the handwriting itself.",
+    "Layout: centered cursive handwriting text block"
+  ],
+  "dates": [],
+  "document_strings": [
+    "After Jeffrey",
+    "I now live in New York City, have traveled to Paris, London, Milan, Copenhagen, Tokyo, Hong Kong, Stockholm, China, Singapore, Brunei, Bangkok, Bali, Ghana, Nigeria, Mozambique, Rwanda, South Africa, Morocco, Ireland, St. Tropez, Florida, St. Barts, St. Thomas, St. John, New Mexico, Moscow, St. Petersburg, Aspen...",
+    "I have met Prince Andrew, President Clinton, Sultan of Brunei, Donald Trump, Antonio Verglas, Naomi Campbell, Stephanie Seymour, Peter Brant, Kevin Spacey, Chris Tucker, Diana Ross, Michael Jackson, brilliant scientists, lawyers and business men,",
+    "I have flown on the Concorde, gone sky-diving, taken a flying lesson, been snuba-diving, para-sailing, attended a Victoria’s Secret fashion show, seen the private quarters of Buckingham Palace, sat on the Queen of England’s throne, rode on a race-track with Max Papis, learned countless skills..."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center",
+      "text_as_seen": "After Jeffrey, I now live in New York City, have traveled to Paris, London, Milan, Copenhagen, Tokyo, Hong Kong, Stockholm, China, Singapore, Brunei, Bangkok, Bali, Ghana, Nigeria, Mozambique, Rwanda, South Africa, Morocco, Ireland, St. Tropez, Florida, St. Barts, St. Thomas, St. John, New Mexico, Moscow, St. Petersburg, Aspen... I have met Prince Andrew, President Clinton, Sultan of Brunei, Donald Trump, Antonio Verglas, Naomi Campbell, Stephanie Seymour, Peter Brant, Kevin Spacey, Chris Tucker, Diana Ross, Michael Jackson, brilliant scientists, lawyers and business men, I have flown on the Concorde, gone sky-diving, taken a flying lesson, been snuba-diving, para-sailing, attended a Victoria’s Secret fashion show, seen the private quarters of Buckingham Palace, sat on the Queen of England’s throne, rode on a race-track with Max Papis, learned countless skills...",
+      "confidence": "medium",
+      "note": "Text is stylized cursive handwriting making some letters difficult to discern clearly."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some letters and words are somewhat unclear due to the cursive handwriting style and lighting of the image, preventing full certainty on spelling in a few areas."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:35.710Z",
+    "response_id": "resp_033f7c10c6e15426006a5030f1312c819380d7c9598a67145a",
+    "raw_output_sha256": "d2157d446c9117f630ddb06cac066abfe64e67956f1a348fe70edc4acedf6844"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_033f7c10c6e15426006a5030f1312c819380d7c9598a67145a",
+    "enriched_at": "2026-07-09T23:38:35.710Z"
+  },
+  "visual_summary": "A page with elegant, cursive handwriting presenting a personal narrative. The text lists numerous cities, experiences, and notable names. The background is dark with light text. The text is centered and fills most of the page width. There are no photos, drawings, or visible signatures aside from the handwriting itself.",
+  "layout": [
+    "centered cursive handwriting text block"
+  ],
+  "handwriting": [
+    {
+      "location": "center",
+      "text_as_seen": "After Jeffrey, I now live in New York City, have traveled to Paris, London, Milan, Copenhagen, Tokyo, Hong Kong, Stockholm, China, Singapore, Brunei, Bangkok, Bali, Ghana, Nigeria, Mozambique, Rwanda, South Africa, Morocco, Ireland, St. Tropez, Florida, St. Barts, St. Thomas, St. John, New Mexico, Moscow, St. Petersburg, Aspen... I have met Prince Andrew, President Clinton, Sultan of Brunei, Donald Trump, Antonio Verglas, Naomi Campbell, Stephanie Seymour, Peter Brant, Kevin Spacey, Chris Tucker, Diana Ross, Michael Jackson, brilliant scientists, lawyers and business men, I have flown on the Concorde, gone sky-diving, taken a flying lesson, been snuba-diving, para-sailing, attended a Victoria’s Secret fashion show, seen the private quarters of Buckingham Palace, sat on the Queen of England’s throne, rode on a race-track with Max Papis, learned countless skills...",
+      "confidence": "medium",
+      "note": "Text is stylized cursive handwriting making some letters difficult to discern clearly."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

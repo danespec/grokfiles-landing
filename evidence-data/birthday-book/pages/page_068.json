@@ -1,0 +1,116 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 68,
+  "page_id": "page_068",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_068.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_068.ocr.txt",
+  "image_metadata": {
+    "bytes": 13732682,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "11afe3764f9bbe0cd1982e295dd92c4d4d476fed59a50a9f0e486a4efebfc3e1"
+  },
+  "ocr_text": "== ja i Bg Baie :\nFe Re, Bye = OS see ‘ CaaS ete ee fxce tise me) 2 f r\nBuy! fey oe “YR fcas oe “Re ye See | fue Wee \\% t. ‘am\na” —_ ~~ ~\n‘ ¥ 7\nstn, . 1 ‘\ni 5. Ln, << ; om }\n\\ a es ) r / 4 ’\n: 5 tg ; ‘ 1\nAm Me; vel | <) | Do i\nR| SS * : mot Et si |\ni y a\n~ a 5, ® ia\nF > é | vo } ~\n\\ \\ere! = ee ei ; ® v Ue! me }\nClass 9SP1\nRow 1: Robert Speer, Howard Bernstein, Michael Perillo, Phyllis Malina, Dale Silver-\nman, Kathy ‘Abolatia, Philip Messing, Mitchel Alvo. - Fi\nRow 2: Philip Bronowitz, Steven Idell, Marshall Silfen, Mark Lefkowitz, Mr. Fried-\nlander, William Molenaor, Mitchell Paris, Gary Daniels, Michael Buchholtz.\nRow 3: Donna Orlando, Gloria Goldstein, Jennifer Moss, Lisa Schneider, Joyce Pell,\nSharon Klicka, Susan Fishbein, Barbara Smollik, Robin Glyn, Shirley Steinhauer.\nRow 4: Kenneth Hirsch, Jeffrey O'Connor, Mark Kappel, Arnold Widelitz, Zing Eng,\nBarry Gordon, David Brown, Ira Leibin, Michael Rackoff.\nCamera Shy: Joel Gedacht. F\nClass 9SP2\nRow 1: Sharon Lustbader, Rose Weg, James Braude, Isaac Terkeltaub, Stewart Wino-\ngrad, Arthur Goldfarb, Bruce Reznick, Sheryl Buchholtz, Ellen Light,\nRow 2: Suellen Naham, Sindee Smolowitz, hn Schonhaut, Debra Spilfogel, Mr.\nGoldstein, Francine Rosen, Koren Wozvock, Beth Milgrim, Evelyn Lagerman.\nRow 3: Gary Strauch, Paul Tubin, Eileen Gress,. Linda Krakower, Susan Rice, Andrea\nReiber, Betly Buckbinder, James Rosen, Alan Ellis.\nRow 4: Barry Weiner, Joseph Bressler, Jay Meizlish, Mark Schier, Marc Levenstein. ‘\ni ee = ao |\nca . i VES - J ' = f ’ mre .\nos EN ; _ + ‘ t, | oe - r ; ri\nOS RES S00 ( ; ger y —~ grad\naye ee | (ie ie\n« _ gy © xe: * 1\nbs ‘ ’ Dru! fe¢ af |\n3 y i |\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A black and white photograph showing two groups of students arranged in rows against a wall, with document strings reading Class 9SP1 and Class 9SP2. The image includes printed text beneath each group listing apparent student names in rows. The photo is bordered by a white margin, with clear separation between the two classes' sections. The background is a brick wall.",
+    "Layout: top group photo (Class 9SP1)",
+    "Layout: text block with names labeled Class 9SP1",
+    "Layout: text block with names labeled Class 9SP2",
+    "Layout: bottom group photo (Class 9SP2)",
+    "Layout: footer text HOUSE_OVERSIGHT_000068",
+    "Photo/image candidate at top half: Black and white group photo of students with document string reading Class 9SP1 in formal attire, arranged in rows against a brick wall background.",
+    "Photo/image candidate at bottom half: Black and white group photo of students with document string reading Class 9SP2 in formal attire, arranged in rows against a brick wall background."
+  ],
+  "observations": [
+    "A black and white photograph showing two groups of students arranged in rows against a wall, with document strings reading Class 9SP1 and Class 9SP2. The image includes printed text beneath each group listing apparent student names in rows. The photo is bordered by a white margin, with clear separation between the two classes' sections. The background is a brick wall.",
+    "Layout: top group photo (Class 9SP1)",
+    "Layout: text block with names labeled Class 9SP1",
+    "Layout: text block with names labeled Class 9SP2",
+    "Layout: bottom group photo (Class 9SP2)",
+    "Layout: footer text HOUSE_OVERSIGHT_000068",
+    "Photo/image candidate at top half: Black and white group photo of students with document string reading Class 9SP1 in formal attire, arranged in rows against a brick wall background.",
+    "Photo/image candidate at bottom half: Black and white group photo of students with document string reading Class 9SP2 in formal attire, arranged in rows against a brick wall background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Class 9SP1",
+    "Row 1: Robert Speer, Howard Bernstein, Michael Perillo, Phyllis Malina, Dale Silverman, Kathy Abolafia, Philip Messing, Mitchel Alvo.",
+    "Row 2: Philip Bronowitz, Steven Idell, Marshall Silfen, Mark Lefkowitz, Mr. Friedlander, William Molenaar, Mitchell Paris, Gary Daniels, Michael Buchholtz.",
+    "Row 3: Donna Orlando, Gloria Goldstein, Jennifer Moss, Lisa Schneider, Joyce Pell, Sharon Klicka, Susan Fishbein, Barbara Smollik, Robin Glyn, Shirley Steinhauer.",
+    "Row 4: Kenneth Hirsch, Jeffrey O'Connor, Mark Kappel, Arnold Widelitz, Zing Eng, Barry Gordon, David Brown, Ira Leibin, Michael Rackoff.",
+    "Camera Shy: Joel Gedacht.",
+    "Class 9SP2",
+    "Row 1: Sharon Lustbader, Rose Weg, James Braude, Isaac Terkeltaub, Stewart Winograd, Arthur Goldfarb, Bruce Reznick, Sheryl Buchholtz, Ellen Light.",
+    "Row 2: Suellen Naham, Sindee Smolowitz, Jhn Schonhaut, Debra Spilfogel, Mr. Goldstein, Francine Rosen, Koren Wozvock, Beth Milgrim, Evelyn Lagerman.",
+    "Row 3: Gary Strauch, Paul Tubin, Eileen Gress, Linda Krakower, Susan Rice, Andrea Reiber, Betty Buckbinder, James Rosen, Alan Ellis.",
+    "Row 4: Barry Weiner, Joseph Bressler, Jay Meizlish, Mark Schier, Marc Levenstein."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:13:46.376Z",
+    "response_id": "resp_031793ad66e9db58006a502b1fd2c88194acdb3a6266a34908",
+    "raw_output_sha256": "b46d1e700ef5dc37de4ccf98aa1ad1b0d063284744ef13c0c79b5c7e73589c56"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_031793ad66e9db58006a502b1fd2c88194acdb3a6266a34908",
+    "enriched_at": "2026-07-09T23:13:46.376Z"
+  },
+  "visual_summary": "A black and white photograph showing two groups of students arranged in rows against a wall, with document strings reading Class 9SP1 and Class 9SP2. The image includes printed text beneath each group listing apparent student names in rows. The photo is bordered by a white margin, with clear separation between the two classes' sections. The background is a brick wall.",
+  "layout": [
+    "top group photo (Class 9SP1)",
+    "text block with names labeled Class 9SP1",
+    "text block with names labeled Class 9SP2",
+    "bottom group photo (Class 9SP2)",
+    "footer text HOUSE_OVERSIGHT_000068"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half",
+      "description": "Black and white group photo of students with document string reading Class 9SP1 in formal attire, arranged in rows against a brick wall background.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half",
+      "description": "Black and white group photo of students with document string reading Class 9SP2 in formal attire, arranged in rows against a brick wall background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high",
+  "identity_cleanup": {
+    "task_id": "TASK-BIRTHDAY-BOOK-VISION-CLEANUP-001",
+    "cleaned_at": "2026-07-09T23:44:32.263Z",
+    "note": "Neutralized unsupported identity/authorship wording while preserving OCR text and document-string fields."
+  }
+}

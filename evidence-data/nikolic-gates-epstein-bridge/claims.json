@@ -1,0 +1,35 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "NGE-01",
+      "claim": "Nikolic coordinated the Jan. 31, 2011 meeting and the surviving email says he would come with 'bill'.",
+      "source": "HOUSE_OVERSIGHT_030887 / 031018",
+      "confidence": "P4 for email wording"
+    },
+    {
+      "id": "NGE-02",
+      "claim": "Gates testified that Nikolic arranged his first dinner with Epstein and that the Jan. 31 dinner itself was Gates, Nikolic and Epstein.",
+      "source": "HOUSE-GATES-TRANSCRIPT-2026-06-10",
+      "confidence": "P4 testimony"
+    },
+    {
+      "id": "NGE-03",
+      "claim": "Gates testified that Nikolic ultimately told him he was involving Epstein in Nikolic's exit discussions.",
+      "source": "HOUSE-GATES-TRANSCRIPT-2026-06-10",
+      "confidence": "P4 testimony"
+    },
+    {
+      "id": "NGE-04",
+      "claim": "The July 2013 Epstein-to-self drafts are not proof that Gates received them or that every assertion in them was true.",
+      "source": "EFTA01966988 / EFTA01967528 + Gates transcript",
+      "confidence": "P4 provenance / bounded negative control"
+    },
+    {
+      "id": "NGE-05",
+      "claim": "Gates rejected the proposition that Nikolic and Epstein had conspired before the first dinner to draw him in.",
+      "source": "HOUSE-GATES-TRANSCRIPT-2026-06-10",
+      "confidence": "P4 testimony; not an independent factual adjudication"
+    }
+  ]
+}

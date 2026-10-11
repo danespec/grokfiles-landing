@@ -1,0 +1,99 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 214,
+  "page_id": "page_214",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_214.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_214.ocr.txt",
+  "image_metadata": {
+    "bytes": 3834349,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "de3b430c56e310730145023516ffac12594ce3675465c6d3c66b6ec4b6a6c301"
+  },
+  "ocr_text": "ee i!\nPS ell\nHOUSE_OVERSIGHT_000214\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "A mostly white page featuring two colored images: one of a dessert with garnish on the upper left and another of a grand piano on the lower right side. The background is completely white with no additional text or handwriting present. A label 'HOUSE_OVERSIGHT_000214' is printed near the bottom right corner.",
+    "Layout: top-left image",
+    "Layout: bottom-right image",
+    "Layout: white background",
+    "Layout: bottom-right printed label",
+    "Photo/image candidate at top-left: Image of a dessert with garnishing green leaves, this appears to be a food item like a small cake or mousse served in a dish.",
+    "Photo/image candidate at bottom-right: Image of a glossy black grand piano shown with the lid open."
+  ],
+  "observations": [
+    "A mostly white page featuring two colored images: one of a dessert with garnish on the upper left and another of a grand piano on the lower right side. The background is completely white with no additional text or handwriting present. A label 'HOUSE_OVERSIGHT_000214' is printed near the bottom right corner.",
+    "Layout: top-left image",
+    "Layout: bottom-right image",
+    "Layout: white background",
+    "Layout: bottom-right printed label",
+    "Photo/image candidate at top-left: Image of a dessert with garnishing green leaves, this appears to be a food item like a small cake or mousse served in a dish.",
+    "Photo/image candidate at bottom-right: Image of a glossy black grand piano shown with the lid open."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000214"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "sparse-ocr"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:36:39.251Z",
+    "response_id": "resp_01b573a17dd5bb7a006a5030822f1c819490b5d62faf145238",
+    "raw_output_sha256": "6404f7be128e7f3db65f435979a1345f3d9866e9a5812ff4b32dd12f3029d8c5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01b573a17dd5bb7a006a5030822f1c819490b5d62faf145238",
+    "enriched_at": "2026-07-09T23:36:39.251Z"
+  },
+  "visual_summary": "A mostly white page featuring two colored images: one of a dessert with garnish on the upper left and another of a grand piano on the lower right side. The background is completely white with no additional text or handwriting present. A label 'HOUSE_OVERSIGHT_000214' is printed near the bottom right corner.",
+  "layout": [
+    "top-left image",
+    "bottom-right image",
+    "white background",
+    "bottom-right printed label"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top-left",
+      "description": "Image of a dessert with garnishing green leaves, this appears to be a food item like a small cake or mousse served in a dish.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-right",
+      "description": "Image of a glossy black grand piano shown with the lid open.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

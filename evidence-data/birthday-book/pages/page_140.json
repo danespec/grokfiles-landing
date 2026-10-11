@@ -1,0 +1,118 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 140,
+  "page_id": "page_140",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_140.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_140.ocr.txt",
+  "image_metadata": {
+    "bytes": 5280146,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "fa524a3f3cc68f2c54dfdd08af8bbb1b11d21c0f6a68af2ec9c6e61540b01f09"
+  },
+  "ocr_text": "j\nOr pe ~/ Dane oLogA a deep\n, [Ke kaga't a ke hee\non Kea ) |\nSe) Ree\nHOUSE_OVERSIGHT_000140\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a handwritten note near the top and a color photograph near the bottom. The handwritten text is in black ink and appears to be a casual note. The photograph shows an outdoor veranda or porch area with three arched openings, potted palm plants flanking the central steps, and two dogs on the porch near a person whose face is obscured by a black box. There are sofas visible inside the porch area.",
+    "Layout: handwritten text at top",
+    "Layout: photograph at bottom",
+    "Photo/image candidate at bottom center: Color photo of a porch area with three arches, two potted palm plants, two dogs on the steps, a person with face obscured, and outdoor sofas visible inside the porch."
+  ],
+  "observations": [
+    "The page contains a handwritten note near the top and a color photograph near the bottom. The handwritten text is in black ink and appears to be a casual note. The photograph shows an outdoor veranda or porch area with three arched openings, potted palm plants flanking the central steps, and two dogs on the porch near a person whose face is obscured by a black box. There are sofas visible inside the porch area.",
+    "Layout: handwritten text at top",
+    "Layout: photograph at bottom",
+    "Photo/image candidate at bottom center: Color photo of a porch area with three arches, two potted palm plants, two dogs on the steps, a person with face obscured, and outdoor sofas visible inside the porch."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Or just some dogs to keep you company (he wasn't always so keen on them)",
+    "HOUSE_OVERSIGHT_000140"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "upper center",
+      "text_as_seen": "Or just some dogs to keep you company (he wasn't always so keen on them)",
+      "confidence": "high",
+      "note": "Handwritten note comprising two sentences."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "photograph center on person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscuring person's face"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Exact location of the handwritten text on the page uncertain beyond general top area."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:01.226Z",
+    "response_id": "resp_03e0c46a7dbdfe82006a502dc837a88196b065549348484462",
+    "raw_output_sha256": "b9e3ebb37f84fa1c79acc266d105ab7d9b7e891987c751cd418e8efd81cb9104"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03e0c46a7dbdfe82006a502dc837a88196b065549348484462",
+    "enriched_at": "2026-07-09T23:25:01.227Z"
+  },
+  "visual_summary": "The page contains a handwritten note near the top and a color photograph near the bottom. The handwritten text is in black ink and appears to be a casual note. The photograph shows an outdoor veranda or porch area with three arched openings, potted palm plants flanking the central steps, and two dogs on the porch near a person whose face is obscured by a black box. There are sofas visible inside the porch area.",
+  "layout": [
+    "handwritten text at top",
+    "photograph at bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "upper center",
+      "text_as_seen": "Or just some dogs to keep you company (he wasn't always so keen on them)",
+      "confidence": "high",
+      "note": "Handwritten note comprising two sentences."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "photograph center on person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box obscuring person's face"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom center",
+      "description": "Color photo of a porch area with three arches, two potted palm plants, two dogs on the steps, a person with face obscured, and outdoor sofas visible inside the porch.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

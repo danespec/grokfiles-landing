@@ -1,0 +1,83 @@
+{
+  "schema": "gah.corpus-audit.v1",
+  "created": "2026-10-06",
+  "purpose": "Test the missing February 2019 anti-drone follow-up against the original raw Ehud Barak mailbox archive on the GAH NAS, then reconcile that result with DOJ/EFTA Barak indexes.",
+  "raw_mail_corpus": {
+    "total_html_messages": 40976,
+    "accounts": [
+      {
+        "account": "ehbarak1@gmail.com",
+        "html_messages": 38886,
+        "date_headers_parsed": 38822,
+        "unparsed_date_headers": 64,
+        "earliest_parsed": "2009-04-19T20:34:29",
+        "latest_parsed": "2018-03-12T13:51:02"
+      },
+      {
+        "account": "ehud.barak@hyperion-eb.com",
+        "html_messages": 2090,
+        "date_headers_parsed": 2090,
+        "unparsed_date_headers": 0,
+        "earliest_parsed": "2013-03-30T20:45:51",
+        "latest_parsed": "2016-03-23T13:03:29"
+      }
+    ],
+    "combined_latest_parsed": "2018-03-12T13:51:02",
+    "coverage_limit": "The located raw mailbox archive ends before the January-February 2019 Qatar/anti-drone exchange, so it cannot contain Barak's promised 2019 follow-up unless a later mailbox export exists elsewhere."
+  },
+  "exact_term_scan": {
+    "anti-drone": 0,
+    "anti drone": 0,
+    "counter-drone": 0,
+    "counter UAS": 0,
+    "Carbyne": 0,
+    "Lysys": 0,
+    "Demestichas": 0,
+    "Qatar Presentation": 0,
+    "First of two emails": 0,
+    "Second of two emails": 0,
+    "note": "A raw 'Jabor' hit was an unrelated 2012 news reference to Hamad bin Jassim bin Jabor Al Thani, not the 2018-2019 correspondent chain."
+  },
+  "drone_uav_semantic_scan": {
+    "messages_with_drone_uav_uas_language": 204,
+    "broad_counter_uas_context_candidates": 67,
+    "result": "The candidate set resolved to news/newsletters, military or policy material, consumer-drone mail, the 2014 Light & Strong solar-UAV investment lane, and the separate 2016 Levitection advanced-radar/security investment lane. Follow-up review of Levitection found concealed-weapons/near-field detection rather than counter-UAS technology. No personal raw-mail message identified the 2019 anti-drone supplier."
+  },
+  "tested_leads": [
+    {
+      "lead": "Light & Strong / solar high-altitude persistent UAV",
+      "date_window": "October-November 2014",
+      "evidence": "Raw Barak Gmail messages sent investment material to Jeffrey Epstein; Barak discussed a possible chairman role and investment up to $1M. EFTA02593250 independently preserves Barak asking Epstein for his lawyer's contact 're the Drone.'",
+      "result": "Real Barak-Epstein drone investment lane, but the technology is an unmanned aircraft platform, not counter-drone technology. No bridge to the 2019 Qatar anti-drone request was located.",
+      "attachment_sha256": "89a6db8ef2f98d9b6ae3ab688274718efbbed9972317a1b2a578d682c1c72b15"
+    },
+    {
+      "lead": "Levitection / CWEW-Q advanced-radar security system",
+      "date_window": "April-August 2016",
+      "evidence": "Raw Barak Gmail records Barak pitching Levitection to Epstein, describing the team as Rafael veterans and experts in advanced radars. The investor brief identifies Q as a 70GHz electromagnetic/radar system for detecting concealed guns, knives, rifles and explosive belts in public spaces. EFTA00599472 records a July 2016 proposed investment term sheet naming an entity under Barak's control as investor.",
+      "result": "Tested because radar is relevant to counter-UAS sensing. The located product and patent record concern near-field concealed-object/weapons detection, not aerial drone detection or defeat, and no document joins Levitection to Jabor's February 2019 anti-drone request.",
+      "raw_thread_sha256": "06d8cb555809bd4d38f972cf281e3c63cd795eb5efb5a4469b715521f71d55d0",
+      "investor_brief_sha256": "60995b2dfc59b4d96f09be22c8af9742ee437e604af6668646c18a15611d61de",
+      "engagement_terms_sha256": "211bc0b6f736f8f56207e4ef4eafab4692d53c64e88b766781f7d96bdf6fb576"
+    },
+    {
+      "lead": "May 2018 'trae' / Carbyne contact",
+      "evidence": "EFTA02656769 records Epstein telling Peter Thiel, 'FYI trae is meeting carbyne Ehud Barak co.'",
+      "result": "Tested as a possible later counter-UAS bridge. No Barak/DOJ source located joins this contact to Barak's February 2019 anti-drone promise."
+    }
+  ],
+  "february_2019_jabor_index_reconciliation": {
+    "documents": [
+      "EFTA02627830",
+      "EFTA02628004",
+      "EFTA02628648",
+      "EFTA02628761"
+    ],
+    "result": "Across the local Barak/DOJ forensic indexes, these were the only February 2019 Jabor-containing EFTA records located. They are the 'First of two emails' chain and its Carbyne/Lysys continuation; no second anti-drone email was located."
+  },
+  "conclusion": "The supplier behind Barak's 'still waiting for some information' remark remains unidentified. The negative finding is stronger after the NAS-wide audit, but it is not proof that the second email never existed: it may not have copied Epstein, may be outside the released corpus, or may survive in an unlocated later Barak mailbox export.",
+  "audit_artifact_sha256": {
+    "raw_mail_exact_term_scan": "b20571de91beaf35152cc9ade536f58ca18aacd590fe61155c7affcbe8249419",
+    "raw_mail_drone_cuas_scan": "28594a4968c3f4f713ac63214c9df94142699560442e89a28760b3111ed0a941"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 116,
+  "page_id": "page_116",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_116.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_116.ocr.txt",
+  "image_metadata": {
+    "bytes": 11038489,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "363a6a5b73c946dfb51dff8288109146cfa568b042c5e58c9775dde2dfe537dd"
+  },
+  "ocr_text": "oS Seer :\nsie | wd b al +? 5 = j i\na Sa SS :\n\nJeffrey was such a nice man, a sweet, innocent type. One of my employees\ncalled him Mr. Epstein, the math teacher. Always ready to lend a hand, help\na friend in need. He even volunteered to help out in surgery at UCLA,\n\nscrubbed, put on the.gown, the whole bit, just to do his part.\nHOUSE_OVERSIGHT_000116\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a photograph at the top depicting two people sitting closely at a dining table. The face of one person on the left is blacked out. The person on the right, wearing a light-colored shirt, appears to be leaning in with eyes closed or nearly closed. The table is set with various drinking glasses, plates, and a large clear glass vase with white flowers. Behind the people, there are dark chairs and a wall with a decorative item featuring an elephant figure. Below the photograph, there is a block of printed text describing a person named Jeffrey, mentioning his character and activities, formatted as a paragraph. The lower margin shows the file identifier 'HOUSE_OVERSIGHT_000116'.",
+    "Layout: photo top half",
+    "Layout: text paragraph beneath photo",
+    "Layout: page margins with file identifier",
+    "Photo/image candidate at top half: Photograph of two people sitting at a dining table with glassware, plates, and a large vase with white flowers; left person's face is blacked out"
+  ],
+  "observations": [
+    "The page contains a photograph at the top depicting two people sitting closely at a dining table. The face of one person on the left is blacked out. The person on the right, wearing a light-colored shirt, appears to be leaning in with eyes closed or nearly closed. The table is set with various drinking glasses, plates, and a large clear glass vase with white flowers. Behind the people, there are dark chairs and a wall with a decorative item featuring an elephant figure. Below the photograph, there is a block of printed text describing a person named Jeffrey, mentioning his character and activities, formatted as a paragraph. The lower margin shows the file identifier 'HOUSE_OVERSIGHT_000116'.",
+    "Layout: photo top half",
+    "Layout: text paragraph beneath photo",
+    "Layout: page margins with file identifier",
+    "Photo/image candidate at top half: Photograph of two people sitting at a dining table with glassware, plates, and a large vase with white flowers; left person's face is blacked out"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Jeffrey was such a nice man, a sweet, innocent type. One of my employees called him Mr. Epstein, the math teacher. Always ready to lend a hand, help a friend in need. He even volunteered to help out in surgery at UCLA, scrubbed, put on the gown, the whole bit, just to do his part.",
+    "HOUSE_OVERSIGHT_000116"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "photo area around left person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Face blacked out with solid black box"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:44.784Z",
+    "response_id": "resp_0b3f8d984fddee58006a502d01cd4c8193b5af5f8b02687062",
+    "raw_output_sha256": "da5e8e62b4af47e71ee2df5be4157e98ceddee65b9af7e37e5b333e9b2448e1d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b3f8d984fddee58006a502d01cd4c8193b5af5f8b02687062",
+    "enriched_at": "2026-07-09T23:21:44.784Z"
+  },
+  "visual_summary": "The page contains a photograph at the top depicting two people sitting closely at a dining table. The face of one person on the left is blacked out. The person on the right, wearing a light-colored shirt, appears to be leaning in with eyes closed or nearly closed. The table is set with various drinking glasses, plates, and a large clear glass vase with white flowers. Behind the people, there are dark chairs and a wall with a decorative item featuring an elephant figure. Below the photograph, there is a block of printed text describing a person named Jeffrey, mentioning his character and activities, formatted as a paragraph. The lower margin shows the file identifier 'HOUSE_OVERSIGHT_000116'.",
+  "layout": [
+    "photo top half",
+    "text paragraph beneath photo",
+    "page margins with file identifier"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "photo area around left person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Face blacked out with solid black box"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half",
+      "description": "Photograph of two people sitting at a dining table with glassware, plates, and a large vase with white flowers; left person's face is blacked out",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

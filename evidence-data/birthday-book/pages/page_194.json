@@ -1,0 +1,82 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 194,
+  "page_id": "page_194",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_194.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_194.ocr.txt",
+  "image_metadata": {
+    "bytes": 10356727,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "91b49acd026d2457c7e73d023177bfef51daa1984c4f6c783f4afba36ea27ed5"
+  },
+  "ocr_text": "~\n- ~ = ~\n| ‘ oy\nA . 4 , j\n; TS seg i . '\nTT he! da or, (A\n‘ , , ) ; +7 Wee, ——- , i ;\nHOUSE_OVERSIGHT_000194\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Black and white photograph of a man outdoors. The man has medium-length hair and a beard, and wears glasses and a zipped-up jacket. The background shows tall grasses or plants with some trees visible, suggesting a natural setting.",
+    "Layout: One large central photo",
+    "Photo/image candidate at center: Black and white photo of a man outdoors wearing glasses and a jacket, smiling in natural light with trees and tall grasses in the background."
+  ],
+  "observations": [
+    "Black and white photograph of a man outdoors. The man has medium-length hair and a beard, and wears glasses and a zipped-up jacket. The background shows tall grasses or plants with some trees visible, suggesting a natural setting.",
+    "Layout: One large central photo",
+    "Photo/image candidate at center: Black and white photo of a man outdoors wearing glasses and a jacket, smiling in natural light with trees and tall grasses in the background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000194"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:33:17.255Z",
+    "response_id": "resp_0ef9ba9e4b95c66a006a502fb7fe8c8193a7707b0abdafc303",
+    "raw_output_sha256": "66b980d7e384deaaa422753e595f282785e564522c5d3e5291adc50425c97456"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0ef9ba9e4b95c66a006a502fb7fe8c8193a7707b0abdafc303",
+    "enriched_at": "2026-07-09T23:33:17.255Z"
+  },
+  "visual_summary": "Black and white photograph of a man outdoors. The man has medium-length hair and a beard, and wears glasses and a zipped-up jacket. The background shows tall grasses or plants with some trees visible, suggesting a natural setting.",
+  "layout": [
+    "One large central photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "Black and white photo of a man outdoors wearing glasses and a jacket, smiling in natural light with trees and tall grasses in the background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

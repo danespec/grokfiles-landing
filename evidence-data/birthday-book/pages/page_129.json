@@ -1,0 +1,81 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 129,
+  "page_id": "page_129",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_129.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_129.ocr.txt",
+  "image_metadata": {
+    "bytes": 151343,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8291ed4adaa594eada8372e6b9b5a66fa34c2c4c98f21f737693bdc8908611d8"
+  },
+  "ocr_text": "|\nWho Was That Man With Epstein? |\ni\nEnquiring minds are asking, “Who was that man with Epstein?” Jeffrey Epstein is, of |\n; course, one of the world’s most famous men, a household name throughout the planet. .\nHis picture has appeared on the cover of every magazine in the world. Everyone knows\nhis story - - from his humble roots on Coney Island to his rise as one of the most envied\npublic figures of the western world. But what was he doing flying to Africa with an\nobscure former politician from Hope, Arkansas? Who is that politician and why would i\nEpstein have picked him for the coveted seat on his private jet. Vanity Unfair was |\ndetermined to get to the bottom of this mystery man and to reveal the story behind the |\nstory. Normally we would not pry into the private life of an obscure Arkansas\npolitician, particularly one who has tried so hard, and up to now 80 successfully, to keep |\nhis private life to himself. But the moment this obscure man stepped onto the Epstein |\njet, he became fair game for probing enquiry. Why would a man like Epstein, who can\npick and choose his companions from princes to professors, select a flying companion |\nfrom the Ozark Mountains? To be sure, he was a Rhodes Scholar, but we all know how\neasy it is to get a Rhodes if you’re from Arkansas. There must be something else. |\nVanity Unfair decided to snoop around. The obscure politician reluctantly agreed to an\ninterview, on the express condition that it was completely off the record. This is what |\nhe told us... |\n| |\n|\n|\n| 3\n|\nHOUSE_OVERSIGHT_000129\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A scanned text page titled 'Who Was That Man With Epstein?' The page contains printed text discussing Jeffrey Epstein and an obscure politician from Arkansas. The page is clean with no images, drawings, or visible signatures. The bottom right corner contains a document identifier: 'HOUSE_OVERSIGHT_000129'.",
+    "Layout: Page title centered at top: 'Who Was That Man With Epstein?'",
+    "Layout: Body text paragraphs below title",
+    "Layout: Page footer with document code"
+  ],
+  "observations": [
+    "A scanned text page titled 'Who Was That Man With Epstein?' The page contains printed text discussing Jeffrey Epstein and an obscure politician from Arkansas. The page is clean with no images, drawings, or visible signatures. The bottom right corner contains a document identifier: 'HOUSE_OVERSIGHT_000129'.",
+    "Layout: Page title centered at top: 'Who Was That Man With Epstein?'",
+    "Layout: Body text paragraphs below title",
+    "Layout: Page footer with document code"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Who Was That Man With Epstein?",
+    "Enquiring minds are asking, \"Who was that man with Epstein?\" Jeffrey Epstein is, of course, one of the world's most famous men, a household name throughout the planet. His picture has appeared on the cover of every magazine in the world. Everyone knows his story - - from his humble roots on Coney Island to his rise as one of the most envied public figures of the western world. But what was he doing flying to Africa with an obscure former politician from Hope, Arkansas? Who is that politician and why would Epstein have picked him for the coveted seat on his private jet. Vanity Unfair was determined to get to the bottom of this mystery man and to reveal the story behind the story. Normally we would not pry into the private life of an obscure Arkansas politician, particularly one who has tried so hard, and up to now so successfully, to keep his private life to himself. But the moment this obscure man stepped onto the Epstein jet, he became fair game for probing enquiry. Why would a man like Epstein, who can pick and choose his companions from princes to professors, select a flying companion from the Ozark Mountains? To be sure, he was a Rhodes Scholar, but we all know how easy it is to get a Rhodes if you're from Arkansas. There must be something else. Vanity Unfair decided to snoop around. The obscure politician reluctantly agreed to an interview, on the express condition that it was completely off the record. This is what he told us...",
+    "HOUSE_OVERSIGHT_000129"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:36.001Z",
+    "response_id": "resp_0d4bfab027cd1560006a502d70b8d881939d6731228ccbbf64",
+    "raw_output_sha256": "daae6b012b5ad30f31af9a3305ce312b42d1381166687a8889a604f867d23c55"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d4bfab027cd1560006a502d70b8d881939d6731228ccbbf64",
+    "enriched_at": "2026-07-09T23:23:36.001Z"
+  },
+  "visual_summary": "A scanned text page titled 'Who Was That Man With Epstein?' The page contains printed text discussing Jeffrey Epstein and an obscure politician from Arkansas. The page is clean with no images, drawings, or visible signatures. The bottom right corner contains a document identifier: 'HOUSE_OVERSIGHT_000129'.",
+  "layout": [
+    "Page title centered at top: 'Who Was That Man With Epstein?'",
+    "Body text paragraphs below title",
+    "Page footer with document code"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

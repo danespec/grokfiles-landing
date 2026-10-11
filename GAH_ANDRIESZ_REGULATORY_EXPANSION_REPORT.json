@@ -1,0 +1,24 @@
+{
+  "published_at": "2026-10-07",
+  "investigation": "andriesz-adfin-lutnick-paper-trail",
+  "update": "Multi-regulator expansion: FBI database/SAR query boundaries, July 2025 derog review, CFTC enforcement, HMRC tax dispute, FCA PIDA correction and Paterson review, Employment Tribunal disposition, four open receipts",
+  "sources_added": [
+    "EFTA01648955",
+    "CFTC-8083-19",
+    "CFTC-8239-20",
+    "UKFTT-2025-700-TC",
+    "BGC-2026-Q2-10Q",
+    "FCA-CC-202201760",
+    "FCA-RESPONSE-202201760",
+    "FCA-ANDRIESZ-REVIEW-2026-10",
+    "ET-3200408-2025"
+  ],
+  "open_receipts": [
+    "272D-NY-306108 Serial 204 and 194-NY-C277070-B Serial 392 underlying FBI records / Lutnick role",
+    "three SAR metadata records",
+    "HMRC causal referral/source record",
+    "CFTC award determination identified as Exhibit CCC"
+  ],
+  "preview": "https://5225ca44.grokfiles-landing.pages.dev",
+  "preview_checks": "passed: /, /investigations, /latest, article, source-manifest and claims all HTTP 200; eight content assertions passed"
+}

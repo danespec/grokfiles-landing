@@ -1,0 +1,81 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 162,
+  "page_id": "page_162",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_162.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_162.ocr.txt",
+  "image_metadata": {
+    "bytes": 750330,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "bdf1da26e1436f0f99b649873e9b96a9431acffc0491ba5dd52c33f7fef93a1b"
+  },
+  "ocr_text": "FoR THIS OCCASION I HIM ALL M™ |\n: AND MY MOST SINC AND\n“EP FRIENDSHIP, EVEN THOUGH SOMETIMES\n| CAN BE A ROYAL IN THE 2\nHOUSE_OVERSIGHT_000162\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A white page with a centered, typed message in multiple colors including yellow, blue, and pink. The text consists of a single paragraph spread over multiple lines. The bottom right corner shows 'HOUSE_OVERSIGHT_000162' text in black small font.",
+    "Layout: Single block of colored typed text centered horizontally on the page",
+    "Layout: Page number and document code in lower right corner"
+  ],
+  "observations": [
+    "A white page with a centered, typed message in multiple colors including yellow, blue, and pink. The text consists of a single paragraph spread over multiple lines. The bottom right corner shows 'HOUSE_OVERSIGHT_000162' text in black small font.",
+    "Layout: Single block of colored typed text centered horizontally on the page",
+    "Layout: Page number and document code in lower right corner"
+  ],
+  "dates": [],
+  "document_strings": [
+    "FOR THIS OCCASION, I GIVE HIM ALL MY TENDERNESS AND MY MOST SINCERE AND DEEPEST FRIENDSHIP, EVEN THOUGH SOMETIMES HE CAN BE A ROYAL PAIN IN THE ASS!",
+    "HOUSE_OVERSIGHT_000162"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "No clear indication of author or recipient",
+    "No handwriting or signature present",
+    "No date visible"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:11.852Z",
+    "response_id": "resp_01f5cb0c3690f79b006a502e88895881939533f5adc8b91cdd",
+    "raw_output_sha256": "e707d1462f13e45734fe28dc70a95f24500506c3b6c71d17902f449abc3d5063"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01f5cb0c3690f79b006a502e88895881939533f5adc8b91cdd",
+    "enriched_at": "2026-07-09T23:28:11.852Z"
+  },
+  "visual_summary": "A white page with a centered, typed message in multiple colors including yellow, blue, and pink. The text consists of a single paragraph spread over multiple lines. The bottom right corner shows 'HOUSE_OVERSIGHT_000162' text in black small font.",
+  "layout": [
+    "Single block of colored typed text centered horizontally on the page",
+    "Page number and document code in lower right corner"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

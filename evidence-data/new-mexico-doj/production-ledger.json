@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "row_id": "PROD-001",
+      "record_category": "Specific EFTA document named in NMDOJ's February 13 request",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-02-13",
+      "public_request_document": "Not acquired",
+      "doj_response": "No public written response located",
+      "production_status": "NOT_PUBLICLY_VERIFIED",
+      "redaction_status": "Unknown",
+      "deadline": "Not public; July 31 later requested in June 30 letter",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "Medium"
+    },
+    {
+      "row_id": "PROD-002",
+      "record_category": "All Zorro Ranch investigative materials related to the specific EFTA document",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-02-13",
+      "public_request_document": "Not acquired",
+      "doj_response": "No public written response located",
+      "production_status": "NOT_PUBLICLY_VERIFIED",
+      "redaction_status": "Unknown",
+      "deadline": "Not public; July 31 later requested in June 30 letter",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "Medium"
+    },
+    {
+      "row_id": "PROD-003",
+      "record_category": "Five illustrative redacted EFTA records identified in NMDOJ's March 13 letter",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-03-13",
+      "public_request_document": "Not acquired",
+      "doj_response": "No public written response located",
+      "production_status": "NOT_PUBLICLY_VERIFIED",
+      "redaction_status": "Public IDs not located; underlying redactions untested.",
+      "deadline": "None acquired",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "Medium"
+    },
+    {
+      "row_id": "PROD-004",
+      "record_category": "Comprehensive Touhy request to USAO-DNM and FBI Albuquerque",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-05-03",
+      "public_request_document": "Not acquired",
+      "doj_response": "No public Touhy decision located",
+      "production_status": "NOT_PUBLICLY_VERIFIED",
+      "redaction_status": "Unknown",
+      "deadline": "2026-05-11 requested response date",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "Medium"
+    },
+    {
+      "row_id": "PROD-005",
+      "record_category": "Unredacted names of survivors, witnesses, co-conspirators, and other individuals under public redactions",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-06-30",
+      "public_request_document": "Acquired",
+      "doj_response": "Clayton public testimony cited protective orders and accommodation efforts; written NM-specific DOJ response not located.",
+      "production_status": "NOT_PUBLICLY_VERIFIED",
+      "redaction_status": "Public versions remain redacted under DOJ public-release protocols; confidential law-enforcement access unresolved.",
+      "deadline": "2026-07-31 party-requested date",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "High for request; low for production status."
+    },
+    {
+      "row_id": "PROD-006",
+      "record_category": "Secure database or bulk access path for NMDOJ",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-06-30",
+      "public_request_document": "Acquired",
+      "doj_response": "No public DOJ acceptance or denial located",
+      "production_status": "PENDING_OR_UNKNOWN",
+      "redaction_status": "Would require protected handling if granted.",
+      "deadline": "2026-07-31 party-requested date",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "High for request; unknown for response."
+    },
+    {
+      "row_id": "PROD-007",
+      "record_category": "Protective agreement, confidentiality agreement, or state-court subpoena accommodation",
+      "requested_by": "NMDOJ",
+      "request_date": "2026-06-30",
+      "public_request_document": "Acquired",
+      "doj_response": "No public DOJ acceptance or denial located",
+      "production_status": "NOT_PUBLICLY_LOCATED",
+      "redaction_status": "Would depend on final terms or order.",
+      "deadline": "2026-07-31 party-requested date",
+      "source_id": "nmd-2026-06-30-letter",
+      "confidence": "High for NMDOJ offer; unknown for DOJ response."
+    },
+    {
+      "row_id": "PROD-008",
+      "record_category": "Public EFTA disclosure datasets",
+      "requested_by": "Congress/EFTA public release process",
+      "request_date": "2025-2026",
+      "public_request_document": "EFTA statute and DOJ public release records acquired",
+      "doj_response": "DOJ published public datasets with redactions and identified withholding categories.",
+      "production_status": "PUBLIC_RELEASE_EXISTS",
+      "redaction_status": "Public redactions remain; not proof of NMDOJ confidential access.",
+      "deadline": "EFTA public-release deadlines, not NMDOJ July 31 demand",
+      "source_id": "doj-epstein-disclosures",
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 54,
+  "page_id": "page_054",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_054.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_054.ocr.txt",
+  "image_metadata": {
+    "bytes": 12907561,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b1c5be49cf41d426734a767d9f33dd2831f253e28109f568135695429dec790e"
+  },
+  "ocr_text": "SEP ae eae Sie ree oe nee a ans seam SESS eee Soe ll ee ae a .\nBeate Se. TREES ‘ gs See See a\nSeccc Spratt oe d rene | a Paten.7 See ry\na se 4 P| pa ee : eg\nieee Coe . TEINS ee OL CRS UL cae TOE\nBs Sen oa Beamon. cae a Seis Be\nimma NSna ayaa LON = it aes ‘ Sa cencnmenn ~ieemerc Se pense ea |\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains four black-and-white portrait photographs of young men arranged in a grid of two rows and two columns. Each subject wears formal attire with a tie and gown, typical of graduation photos. The background behind each person is plain and light-colored. There is some visible text along the right edge and bottom of the page, but it is partially obscured or unclear.",
+    "Layout: top-left photo",
+    "Layout: top-right photo",
+    "Layout: bottom-left photo",
+    "Layout: bottom-right photo",
+    "Layout: text on right edge",
+    "Layout: text bottom center",
+    "Photo/image candidate at top-left photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing slightly to the right.",
+    "Photo/image candidate at top-right photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing front.",
+    "Photo/image candidate at bottom-left photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing slightly to the left.",
+    "Photo/image candidate at bottom-right photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing front."
+  ],
+  "observations": [
+    "The page contains four black-and-white portrait photographs of young men arranged in a grid of two rows and two columns. Each subject wears formal attire with a tie and gown, typical of graduation photos. The background behind each person is plain and light-colored. There is some visible text along the right edge and bottom of the page, but it is partially obscured or unclear.",
+    "Layout: top-left photo",
+    "Layout: top-right photo",
+    "Layout: bottom-left photo",
+    "Layout: bottom-right photo",
+    "Layout: text on right edge",
+    "Layout: text bottom center",
+    "Photo/image candidate at top-left photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing slightly to the right.",
+    "Photo/image candidate at top-right photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing front.",
+    "Photo/image candidate at bottom-left photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing slightly to the left.",
+    "Photo/image candidate at bottom-right photo: Black-and-white portrait of a young man wearing a formal gown and tie, facing front."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000054"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Text on the right edge is partially visible but unreadable in the image and OCR sidecar, thus content is uncertain."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:11:13.585Z",
+    "response_id": "resp_0dae22f608dd3e08006a502a80d73881948f8281a584164510",
+    "raw_output_sha256": "b22a7893f1e50ae470f17ee26901963361f0b0b2b87146598c4e0bee5c2b998f"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0dae22f608dd3e08006a502a80d73881948f8281a584164510",
+    "enriched_at": "2026-07-09T23:11:13.585Z"
+  },
+  "visual_summary": "The page contains four black-and-white portrait photographs of young men arranged in a grid of two rows and two columns. Each subject wears formal attire with a tie and gown, typical of graduation photos. The background behind each person is plain and light-colored. There is some visible text along the right edge and bottom of the page, but it is partially obscured or unclear.",
+  "layout": [
+    "top-left photo",
+    "top-right photo",
+    "bottom-left photo",
+    "bottom-right photo",
+    "text on right edge",
+    "text bottom center"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top-left photo",
+      "description": "Black-and-white portrait of a young man wearing a formal gown and tie, facing slightly to the right.",
+      "confidence": "high"
+    },
+    {
+      "location": "top-right photo",
+      "description": "Black-and-white portrait of a young man wearing a formal gown and tie, facing front.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-left photo",
+      "description": "Black-and-white portrait of a young man wearing a formal gown and tie, facing slightly to the left.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-right photo",
+      "description": "Black-and-white portrait of a young man wearing a formal gown and tie, facing front.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,108 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 110,
+  "page_id": "page_110",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_110.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_110.ocr.txt",
+  "image_metadata": {
+    "bytes": 224423,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8e083d055223368dd02b96f9b16cb85cb126fe741ec8cbb297613e7c12f7f2d9"
+  },
+  "ocr_text": "(> ln Coes. } l 8 ) 7 °5 1\n/ Oy eC) Or) > +L eC LA _ |\nie Unicel. | Kon\n; /\\ oo . aye my a) eo é Uf\n| he . Ve Vv ) | CO) A ) f# liy> /\nVY Ye V Gpy fay,\nla \\ y v 7 CIP\nVey ONS J + hric.., 2 . i? ia\nfy PVC ID not the\nfor Los M\\ ci a — |\nVv Ol UA OY | } LV hy | (A / co\n| 7 A \\ | j ly rey lore .\n~ ioe Min cand A See\nOt an al\n\\ol+ SO hufy Ve wer rie\n— mh ~ . ° 4 i : ok TO OG Se |\n5 Very. C) K - VACA 4 Wats © ' + v J eS pected He\nHOUSE_OVERSIGHT_000110\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten page with multiple lines of text, some words are underlined or emphasized, with evident spacing irregularities and corrections. The page contains phrases and words scattered across the page, including 'Ploop' underlined at the top center. There are faint writings along the bottom margin, partly overlapping the main text. The handwriting appears informal and varies in size, with some words slanting or overlapping slightly. Overall, the page shows a single sheet with pencil-written text.",
+    "Layout: handwritten text across entire page",
+    "Layout: underline under 'Ploop' near top center",
+    "Layout: text lines mostly left aligned with some words spread out"
+  ],
+  "observations": [
+    "A handwritten page with multiple lines of text, some words are underlined or emphasized, with evident spacing irregularities and corrections. The page contains phrases and words scattered across the page, including 'Ploop' underlined at the top center. There are faint writings along the bottom margin, partly overlapping the main text. The handwriting appears informal and varies in size, with some words slanting or overlapping slightly. Overall, the page shows a single sheet with pencil-written text.",
+    "Layout: handwritten text across entire page",
+    "Layout: underline under 'Ploop' near top center",
+    "Layout: text lines mostly left aligned with some words spread out"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Ploop",
+    "Mommy",
+    "HOUSE_OVERSIGHT_000110"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center underlined",
+      "text_as_seen": "Ploop",
+      "confidence": "high",
+      "note": "Title or emphasized word"
+    },
+    {
+      "location": "throughout page",
+      "text_as_seen": "as he.. poped on the flar so uncel F ran to tell his Mommy that he had popd on the flar 'Mommy' me popy on flar and me see popy for first time no not the narater agin, why are you here said uncel F because you only have 1 min and 2 sec left so hury up with the story. OK. that's so so to end the silusory he cleard the story up.",
+      "confidence": "medium",
+      "note": "Main body handwritten text with some spelling variations and irregular spacing; bottom margin text is faint and partly occluded"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:20:48.266Z",
+    "response_id": "resp_0eebe0c5ad99d8dd006a502cc84ae88194a2ce0ae5e2b0c4d3",
+    "raw_output_sha256": "a7513c45fcb3b89e48a530d935e6d29e1840f2ed8835486a9ee3a88ed92dc384"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0eebe0c5ad99d8dd006a502cc84ae88194a2ce0ae5e2b0c4d3",
+    "enriched_at": "2026-07-09T23:20:48.266Z"
+  },
+  "visual_summary": "A handwritten page with multiple lines of text, some words are underlined or emphasized, with evident spacing irregularities and corrections. The page contains phrases and words scattered across the page, including 'Ploop' underlined at the top center. There are faint writings along the bottom margin, partly overlapping the main text. The handwriting appears informal and varies in size, with some words slanting or overlapping slightly. Overall, the page shows a single sheet with pencil-written text.",
+  "layout": [
+    "handwritten text across entire page",
+    "underline under 'Ploop' near top center",
+    "text lines mostly left aligned with some words spread out"
+  ],
+  "handwriting": [
+    {
+      "location": "top center underlined",
+      "text_as_seen": "Ploop",
+      "confidence": "high",
+      "note": "Title or emphasized word"
+    },
+    {
+      "location": "throughout page",
+      "text_as_seen": "as he.. poped on the flar so uncel F ran to tell his Mommy that he had popd on the flar 'Mommy' me popy on flar and me see popy for first time no not the narater agin, why are you here said uncel F because you only have 1 min and 2 sec left so hury up with the story. OK. that's so so to end the silusory he cleard the story up.",
+      "confidence": "medium",
+      "note": "Main body handwritten text with some spelling variations and irregular spacing; bottom margin text is faint and partly occluded"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

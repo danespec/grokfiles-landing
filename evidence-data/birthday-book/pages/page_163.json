@@ -1,0 +1,81 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 163,
+  "page_id": "page_163",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_163.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_163.ocr.txt",
+  "image_metadata": {
+    "bytes": 77950,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "1549fa7b1c7b0c0a6bbf6ff10c3f4abeb360b991868c2cbef0254e9d1aa14b08"
+  },
+  "ocr_text": "THE FIRST\n| FIFTY YEARS\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "This page features a centered title in uppercase serif font stating 'THE FIRST FIFTY YEARS' with the Roman numeral 'III' centered below. The background is dark with some lighter horizontal lines or artifacts, and the text is white. There are no photos, drawings, handwriting, signatures, or redactions visible.",
+    "Layout: Centered title text",
+    "Layout: Centered Roman numeral"
+  ],
+  "observations": [
+    "This page features a centered title in uppercase serif font stating 'THE FIRST FIFTY YEARS' with the Roman numeral 'III' centered below. The background is dark with some lighter horizontal lines or artifacts, and the text is white. There are no photos, drawings, handwriting, signatures, or redactions visible.",
+    "Layout: Centered title text",
+    "Layout: Centered Roman numeral"
+  ],
+  "dates": [],
+  "document_strings": [
+    "THE FIRST",
+    "FIFTY YEARS",
+    "III"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "sparse-ocr"
+  ],
+  "gaps": [
+    "No additional textual or illustrative content detected beyond the main title and numeral."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:15.841Z",
+    "response_id": "resp_002ab52ebfc47d29006a502e8d33088195847aa22eba2a3988",
+    "raw_output_sha256": "812e5f9999175113f434255d149a88b60b71ec65f3bba47246ab1c66329228c3"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_002ab52ebfc47d29006a502e8d33088195847aa22eba2a3988",
+    "enriched_at": "2026-07-09T23:28:15.841Z"
+  },
+  "visual_summary": "This page features a centered title in uppercase serif font stating 'THE FIRST FIFTY YEARS' with the Roman numeral 'III' centered below. The background is dark with some lighter horizontal lines or artifacts, and the text is white. There are no photos, drawings, handwriting, signatures, or redactions visible.",
+  "layout": [
+    "Centered title text",
+    "Centered Roman numeral"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

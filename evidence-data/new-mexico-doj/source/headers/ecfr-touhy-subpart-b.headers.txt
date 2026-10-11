@@ -1,0 +1,7 @@
+URL: https://www.ecfr.gov/current/title-28/chapter-I/part-16/subpart-B
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 604777dd8d69be85cf809295f57eb82f235a659ada6f5f2c9780b35016a3d28a
+Bytes: 10596
+Acquisition method: verified existing local capture

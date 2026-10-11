@@ -1,0 +1,95 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 191,
+  "page_id": "page_191",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_191.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_191.ocr.txt",
+  "image_metadata": {
+    "bytes": 2087491,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "018125be7a36073ac5727b225d27893897559a88c487189eb449153fd164d482"
+  },
+  "ocr_text": "Yi.\n7 \\\nKoo\n| 1 ’\naf 7 a 2 —_\nwee 7 ee sa —\n\\ eo ae\nae) PX\nwna, \\ .\n\\ | Ms a_i / \\, 2\nVt | Wer ON rd\nfst tn 4 “ | ae > = awe\ni = a . a Bey Pa ; J a\nie ian Cl fF ‘, # eee ee\n, F. ay f ‘ f - *, f\n\\ | \\ ff ; / Fi > ie 7 f __\noy a, Aen % I ;\nhy ‘ ZF i Ne\n\\Y N\ner |\n31\nHOUSE_OVERSIGHT_000191\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page shows a technical line diagram featuring a network of cones and ellipses connected by lines. The cones are arranged in a structured pattern with connecting nodes. There are labels on the right side with variables or indices: r3, r2, r1, r0. At the bottom right, the number 31 is printed. The page is mostly white space with the diagram occupying the upper half or middle portion.",
+    "Layout: Technical diagram centered on page",
+    "Layout: Labels to right side",
+    "Layout: Page number at bottom right",
+    "Drawing candidate at center of page: Technical line diagram with connected cones and ellipses with labeled variables (r3, r2, r1, r0)"
+  ],
+  "observations": [
+    "The page shows a technical line diagram featuring a network of cones and ellipses connected by lines. The cones are arranged in a structured pattern with connecting nodes. There are labels on the right side with variables or indices: r3, r2, r1, r0. At the bottom right, the number 31 is printed. The page is mostly white space with the diagram occupying the upper half or middle portion.",
+    "Layout: Technical diagram centered on page",
+    "Layout: Labels to right side",
+    "Layout: Page number at bottom right",
+    "Drawing candidate at center of page: Technical line diagram with connected cones and ellipses with labeled variables (r3, r2, r1, r0)"
+  ],
+  "dates": [],
+  "document_strings": [
+    "r3",
+    "r2",
+    "r1",
+    "r0",
+    "31",
+    "HOUSE_OVERSIGHT_000191"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "openai-vision"
+  ],
+  "gaps": [
+    "No visible textual explanation or captions to describe the diagram."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:44.861Z",
+    "response_id": "resp_00a88799fe3c7c2a006a502f98c6fc819396fd8852e4732b5c",
+    "raw_output_sha256": "2b42a0462adbc89dee1701a78313a48f4f1b8bfc58ed97ff6b15faff230480c3"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00a88799fe3c7c2a006a502f98c6fc819396fd8852e4732b5c",
+    "enriched_at": "2026-07-09T23:32:44.861Z"
+  },
+  "visual_summary": "The page shows a technical line diagram featuring a network of cones and ellipses connected by lines. The cones are arranged in a structured pattern with connecting nodes. There are labels on the right side with variables or indices: r3, r2, r1, r0. At the bottom right, the number 31 is printed. The page is mostly white space with the diagram occupying the upper half or middle portion.",
+  "layout": [
+    "Technical diagram centered on page",
+    "Labels to right side",
+    "Page number at bottom right"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center of page",
+      "description": "Technical line diagram with connected cones and ellipses with labeled variables (r3, r2, r1, r0)",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

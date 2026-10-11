@@ -1,0 +1,76 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 114,
+  "page_id": "page_114",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_114.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_114.ocr.txt",
+  "image_metadata": {
+    "bytes": 1362597,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ec001265f4db1879c5988afc482af847c29e95ff81d10de6175a332e43933890"
+  },
+  "ocr_text": "Se ee a SOS ES ae Be ea ae eee oC eee RRS Beane Speen eee ORS CER ace nd pee Re es ere ee tas SIERRAS DESO san CHEE PORES\nPaO SRSA eee ee SAS C ERE OU Oa ee SIRS Se EP e oh ee CO OSU SOUS U IS SOE USE\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page primarily contains a large, centered word 'FRIENDS' in all capital letters on a dark background. The text is light-colored and stands out clearly from the background. There is additional noise and some unclear blurry areas above and below the main text. The bottom right corner shows a white margin with text 'HOUSE_OVERSIGHT_000114'.",
+    "Layout: large single centered word"
+  ],
+  "observations": [
+    "The page primarily contains a large, centered word 'FRIENDS' in all capital letters on a dark background. The text is light-colored and stands out clearly from the background. There is additional noise and some unclear blurry areas above and below the main text. The bottom right corner shows a white margin with text 'HOUSE_OVERSIGHT_000114'.",
+    "Layout: large single centered word"
+  ],
+  "dates": [],
+  "document_strings": [
+    "FRIENDS",
+    "HOUSE_OVERSIGHT_000114"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [
+    "Content above and below 'FRIENDS' is difficult to discern due to noise and blurry quality."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:25.714Z",
+    "response_id": "resp_05b33e7e5f8d06da006a502cef744881908348d3be4237b273",
+    "raw_output_sha256": "f6491b87355a7d5b2a26b45d521191b9800faafc7bd6acbe95cbd40446403184"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05b33e7e5f8d06da006a502cef744881908348d3be4237b273",
+    "enriched_at": "2026-07-09T23:21:25.714Z"
+  },
+  "visual_summary": "The page primarily contains a large, centered word 'FRIENDS' in all capital letters on a dark background. The text is light-colored and stands out clearly from the background. There is additional noise and some unclear blurry areas above and below the main text. The bottom right corner shows a white margin with text 'HOUSE_OVERSIGHT_000114'.",
+  "layout": [
+    "large single centered word"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,7 @@
+URL: https://www.justice.gov/oip/available-documents-oip
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 84661b29a843304182a830ae4281bbb7ff489096f1d89796ca7a2de9eaca0e8d
+Bytes: 429363
+Acquisition method: verified existing local capture

@@ -1,0 +1,90 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 40,
+  "page_id": "page_040",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_040.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_040.ocr.txt",
+  "image_metadata": {
+    "bytes": 149883,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d94ce85d0dd5433911cb6efc22c6bc9df760ceaf12367e4e5bd4ccb53f0d2c4b"
+  },
+  "ocr_text": "4\ngruesome details. Sea Gate cops\nwere unable to capture the\nfoaming-mad Jankowitz, which\nresulted in the victim being .\nforced to have 29 injections in\nthe stomach. A Bite Alert has\nbeen announced and posted on\nthe Sea Gate Chapel Bulletin\nBoard. °\n3 oar Dermatologist\nFights Fire\nBy Robert Ardigo\n¢ Pizza Pace Pages\nPizza Man\nWorld renowned Pimple\nGoes Berserk! Expert Dr. Shin Ho Yep claims\nthe secret to a great complexion\nis in his secret formula.\nBy Yetta Parnes Hundreds of butter face teens\nYenta Tues flock to Dr. Yep’s office off\nOcean Pkwy. in Brooklyn to\nPizza man Luigi Tortoni flew obtain much needed help. The\ninto a fit of rage after employer Dr. applies his “secret formula”\nArthur Stern (owner of the famed to kid’s faces and within seconds\nrestaurants, “The Spot” and “The their skin feels like a raging ;\nRiviera Snack Bar”) told Luigi inferno. Some patients wail in\nthat he would start using fake agony from the fiery concoction,\ncheese in his pizza. Tortoni and if they scream loud enough,\nexploded and held Stern at knife Yep says “just 10 more minutes”.\npoint until Sgt. Gino “Gene” if they start to cry, Dr. Yep\nVenezia of Sea Gate Police proclaims “OK we put out fire\nS.W.A.T. team negotiated with now”. He takes a tissue and puts\nthe mad Halian. The straight- 2 drops of water on it and barely\njacketed Tortoni was promptly dabs at the blistering skin.\nshipped back to Italy. Sources Chemical analysis of Yep’s\nreport that Luigi Tortoni is now a “secret formula” found it to be\nfamous spumoni scoop designer nothing but a combination of\nfrequently seen on the prestigious straight hydrochloric and sulfuric\nVespa racing circuit. acids.\nThe results: a cranberry sauce\n: ee red appearance immediately after\ntreatment, but after two weeks,\nall but one kinky haired Sea Gate\nboy , had a peaches and cream\ncomplexion.\neR\nHOUSE_OVERSIGHT_000040\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is divided into two columns containing text blocks resembling newspaper or magazine articles. The left column features an article titled 'Pizza Man Goes Berserk!' by Yetta Parnes from Yenta Times. The right column contains an article titled 'Dermatologist Fights Fire' by Robert Ardigo from Pizza Face Pages. The text is mostly well-aligned and printed in a serif font. There is a page number '4' at the top right of the right column. Both articles contain multiple paragraphs with some subheadings. There is a horizontal line above and below each article for separation.",
+    "Layout: left column text block",
+    "Layout: right column text block"
+  ],
+  "observations": [
+    "The page is divided into two columns containing text blocks resembling newspaper or magazine articles. The left column features an article titled 'Pizza Man Goes Berserk!' by Yetta Parnes from Yenta Times. The right column contains an article titled 'Dermatologist Fights Fire' by Robert Ardigo from Pizza Face Pages. The text is mostly well-aligned and printed in a serif font. There is a page number '4' at the top right of the right column. Both articles contain multiple paragraphs with some subheadings. There is a horizontal line above and below each article for separation.",
+    "Layout: left column text block",
+    "Layout: right column text block"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Pizza Man Goes Berserk!",
+    "By Yetta Parnes",
+    "Yenta Times",
+    "Pizza man Luigi Tortoni flew into a fit of rage after employer Arthur Stern (owner of the famed restaurants, \"The Spot\" and \"The Riviera Snack Bar\") told Luigi that he would start using fake cheese in his pizza. Tortoni exploded and held Stern at knife point until Sgt. Gino \"Gene\" Venezia of Sea Gate Police S.W.A.T. team negotiated with the mad Italian. The straight-jacketed Tortoni was promptly shipped back to Italy. Sources report that Luigi Tortoni is now a famous spumoni scoop designer frequently seen on the prestigious Vespa racing circuit.",
+    "Dermatologist Fights Fire",
+    "By Robert Ardigo",
+    "Pizza Face Pages",
+    "World renowned Pimple Expert Dr. Shin Ho Yep claims the secret to a great complexion is in his secret formula.",
+    "Hundreds of butter face teens flock to Dr. Yep’s office off Ocean Pkwy. in Brooklyn to obtain much needed help.",
+    "The Dr. applies his “secret formula” to kid’s faces and within seconds their skin feels like a raging inferno.",
+    "Some patients wail in agony from the fiery concoction, and if they scream loud enough, Yep says “just 10 more minutes”.",
+    "If they start to cry, Dr. Yep proclaims “OK we put out fire now”.",
+    "He takes a tissue and puts 2 drops of water on it and barely dabs at the blistering skin.",
+    "Chemical analysis of Yep’s “secret formula” found it to be nothing but a combination of straight hydrochloric and sulfuric acids.",
+    "The results: a cranberry sauce red appearance immediately after treatment, but after two weeks, all but one kinky haired Sea Gate boy, had a peaches and cream complexion."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:08:30.067Z",
+    "response_id": "resp_08b07438e80fb8f7006a5029e51270819482a77d507c80cd93",
+    "raw_output_sha256": "b2fd9dd4accde42862f1ccce0974418dced72e6ff18dc1c8307766ae7f2549a8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08b07438e80fb8f7006a5029e51270819482a77d507c80cd93",
+    "enriched_at": "2026-07-09T23:08:30.067Z"
+  },
+  "visual_summary": "The page is divided into two columns containing text blocks resembling newspaper or magazine articles. The left column features an article titled 'Pizza Man Goes Berserk!' by Yetta Parnes from Yenta Times. The right column contains an article titled 'Dermatologist Fights Fire' by Robert Ardigo from Pizza Face Pages. The text is mostly well-aligned and printed in a serif font. There is a page number '4' at the top right of the right column. Both articles contain multiple paragraphs with some subheadings. There is a horizontal line above and below each article for separation.",
+  "layout": [
+    "left column text block",
+    "right column text block"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

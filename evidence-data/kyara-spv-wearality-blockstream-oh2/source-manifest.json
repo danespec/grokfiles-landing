@@ -1,0 +1,84 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "kyara-spv-wearality-blockstream-oh2",
+  "title": "Three Kyara SPVs: Wearality, Blockstream, and OH2",
+  "published": "2026-09-30",
+  "scope": "Bank-first reconstruction of three Southern Financial LLC subscriptions through Kyara II, III and IV into Wearality, Blockstream and OH2 Laboratories.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+  "sources": [
+    {
+      "id": "WEARALITY-BANK",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285003",
+      "url": "/pdf-lite?id=EFTA01285003",
+      "supports": "July 2, 2014 Southern Financial $250,000 outgoing debit used in the Kyara II transaction reconstruction.",
+      "limit": "Statement OCR does not by itself print the full Wearality look-through."
+    },
+    {
+      "id": "WEARALITY-ACK",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA01855432",
+      "url": "/pdf-lite?id=EFTA01855432",
+      "supports": "Wearality principal explicitly thanks Epstein for the Wearality investment.",
+      "limit": "Acknowledgement does not by itself identify the paying bank account/SPV."
+    },
+    {
+      "id": "BLOCKSTREAM-AUTH",
+      "class": "PRIMARY_BANK_AUTHORIZATION",
+      "record": "EFTA01401059",
+      "url": "/pdf-lite?id=EFTA01401059",
+      "supports": "$500,001 Southern Financial wire authorization; subscription to Kyara Investment III to fund Blockstream investment.",
+      "limit": "Indirect SPV route, not direct operating-company wire."
+    },
+    {
+      "id": "BLOCKSTREAM-STMT",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285099",
+      "url": "/pdf-lite?id=EFTA01285099",
+      "supports": "Posted Southern Financial banking evidence for the September 2014 Kyara III transaction.",
+      "limit": "Statement OCR alone is less descriptive than the signed authorization."
+    },
+    {
+      "id": "OH2-BANK-CHART",
+      "class": "PRIMARY_BANK_INVESTIGATIVE_CHART",
+      "record": "EFTA00080260",
+      "url": "/pdf-lite?id=EFTA00080260",
+      "supports": "Deutsche transaction chart ties Kyara Investment IV subscription to OH2 Laboratories.",
+      "limit": "Bank/investigative exhibit is not a substitute for every underlying raw statement field."
+    },
+    {
+      "id": "OH2-DEAL",
+      "class": "PRIMARY_EMAIL_CHAIN",
+      "record": "EFTA02338495",
+      "url": "/pdf-lite?id=EFTA02338495",
+      "supports": "Joi Ito identifies the electronic-nose project and discusses anti-dilution / MIT conflict controls around the investment.",
+      "limit": "Deal correspondence; does not by itself prove settlement."
+    },
+    {
+      "id": "OH2-INVEST",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02595658",
+      "url": "/pdf-lite?id=EFTA02595658",
+      "supports": "Joi Ito forwards OH2 update and says he thinks they should invest.",
+      "limit": "Intent/diligence evidence, not bank execution."
+    },
+    {
+      "id": "RUN12",
+      "class": "GAH_RECONSTRUCTION",
+      "record": "GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+      "supports": "Transaction-group deduplication, SPV look-through joins and BANK-4 classifications for Kyara II/III/IV.",
+      "limit": "Archive-created synthesis; controlling factual claims remain tied to primary records."
+    }
+  ],
+  "open_questions": [
+    "The exact source instrument/cap table for Southern Financial's economic interest in each Kyara vehicle.",
+    "The unresolved operating-company identity behind Kyara I.",
+    "Additional distributions or exits from Kyara II/III/IV not captured in the available banking periods.",
+    "The exact corporate suffix/legal-entity resolution for OH2 Laboratories."
+  ],
+  "not_established": [
+    "Direct Southern Financial share ownership in Wearality, Blockstream or OH2 without the SPV layer.",
+    "Wrongdoing arising from any of the three investments.",
+    "That later company customers, technology deployments or public-sector relationships were caused by these investments."
+  ]
+}

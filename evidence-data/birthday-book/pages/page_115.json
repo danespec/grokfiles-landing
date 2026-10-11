@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 115,
+  "page_id": "page_115",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_115.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_115.ocr.txt",
+  "image_metadata": {
+    "bytes": 9750392,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "08420fe92420183c680e3e3adeb06b2076e293ca58331b932ab3dbefffdfd70c"
+  },
+  "ocr_text": "| ~ f\na iE\n“ ™ , , f | mo\nd ° . J) 4\n° 7 ; y : on : a ° 7 - q\n| & 4 4 , ray * we. Ww eZ\n- “ Pe . :\n%. 4 te ae\n‘ - > I eg axe\nFinally, at the home of our friend, let’s call him Mr. Brown, Jeffrey\nunveiled his plan. To some it may have seemed a get-rich-quick scheme, but\n| to me it was pure genius: Rob and Kill was the name of the plan. The first\nvictim, 0 be attacked and brutally plundered ( would\nshe want more than that?) on the boardwalk in Venice Beach. Broad\ndaylight. The dastardly thieves were never caught.\nPostscript: I retired from “the life”, but I recently read an article in New :\nYork which led me to believe that my old friend Mr. E had continued on and\nbecome an industry leader. |\ninal\nHOUSE_OVERSIGHT_000115\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a color photograph at the top showing two adult males standing indoors in front of a floral-patterned couch and a decorative cabinet with a mirror. Both individuals wear black head coverings that reveal only their eyes, and casual clothing: the left person wears a sleeveless black shirt and light-colored pants while the right person wears a blue satin bomber jacket, jeans, and holds a small object resembling a pen or knife. Below the photo is a block of printed text describing a plan named 'Rob and Kill,' mentioning an attack on the boardwalk in Venice Beach, plus a postscript about retirement and an old friend continuing as an industry leader. There is a black redaction bar obscuring one line within the paragraph, covering part of the text about the first victim.",
+    "Layout: color photograph top half",
+    "Layout: printed text bottom half",
+    "Layout: one black redaction bar within text",
+    "Photo/image candidate at top half of page: Color photograph of two adult males wearing black head covers standing indoors in front of a floral-patterned couch and decorative cabinet with mirror, one wearing a sleeveless black shirt, the other a blue satin bomber jacket and jeans, holding a small object."
+  ],
+  "observations": [
+    "The page contains a color photograph at the top showing two adult males standing indoors in front of a floral-patterned couch and a decorative cabinet with a mirror. Both individuals wear black head coverings that reveal only their eyes, and casual clothing: the left person wears a sleeveless black shirt and light-colored pants while the right person wears a blue satin bomber jacket, jeans, and holds a small object resembling a pen or knife. Below the photo is a block of printed text describing a plan named 'Rob and Kill,' mentioning an attack on the boardwalk in Venice Beach, plus a postscript about retirement and an old friend continuing as an industry leader. There is a black redaction bar obscuring one line within the paragraph, covering part of the text about the first victim.",
+    "Layout: color photograph top half",
+    "Layout: printed text bottom half",
+    "Layout: one black redaction bar within text",
+    "Photo/image candidate at top half of page: Color photograph of two adult males wearing black head covers standing indoors in front of a floral-patterned couch and decorative cabinet with mirror, one wearing a sleeveless black shirt, the other a blue satin bomber jacket and jeans, holding a small object."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Finally, at the home of our friend, let's call him Mr. Brown, Jeffrey unveiled his plan. To some it may have seemed a get-rich-quick scheme, but to me it was pure genius: Rob and Kill was the name of the plan. The first victim, [redacted], to be attacked and brutally plundered (would she want more than that?) on the boardwalk in Venice Beach. Broad daylight. The dastardly thieves were never caught.",
+    "Postscript: I retired from \"the life\", but I recently read an article in New York which led me to believe that my old friend Mr. E had continued on and become an industry leader."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "within printed text paragraph below photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "A black redaction bar obscures part of one line about the victim."
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:35.024Z",
+    "response_id": "resp_0d16287d25489b0c006a502cf82c7081968aef5794da6ba795",
+    "raw_output_sha256": "b008a05028bbcdd8a0d3e0efdba70a9d531c2c1630f7361652d4d5deb8e1cffe"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0d16287d25489b0c006a502cf82c7081968aef5794da6ba795",
+    "enriched_at": "2026-07-09T23:21:35.024Z"
+  },
+  "visual_summary": "The page contains a color photograph at the top showing two adult males standing indoors in front of a floral-patterned couch and a decorative cabinet with a mirror. Both individuals wear black head coverings that reveal only their eyes, and casual clothing: the left person wears a sleeveless black shirt and light-colored pants while the right person wears a blue satin bomber jacket, jeans, and holds a small object resembling a pen or knife. Below the photo is a block of printed text describing a plan named 'Rob and Kill,' mentioning an attack on the boardwalk in Venice Beach, plus a postscript about retirement and an old friend continuing as an industry leader. There is a black redaction bar obscuring one line within the paragraph, covering part of the text about the first victim.",
+  "layout": [
+    "color photograph top half",
+    "printed text bottom half",
+    "one black redaction bar within text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "within printed text paragraph below photograph",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "A black redaction bar obscures part of one line about the victim."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half of page",
+      "description": "Color photograph of two adult males wearing black head covers standing indoors in front of a floral-patterned couch and decorative cabinet with mirror, one wearing a sleeveless black shirt, the other a blue satin bomber jacket and jeans, holding a small object.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

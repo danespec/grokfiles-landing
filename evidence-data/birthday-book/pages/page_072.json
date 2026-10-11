@@ -1,0 +1,120 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 72,
+  "page_id": "page_072",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_072.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_072.ocr.txt",
+  "image_metadata": {
+    "bytes": 8125614,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "9036bdf29ad3f7d7903813a4b494c6cb3023346c38da7e3b8bacc7a5e15e7705"
+  },
+  "ocr_text": "j j\n| : ne\n' H i / !\neR] > {too ' A + ea CL ( he\n| “Y Lo : | 5 j , &\n| |\nj 4 }\n!\nok Mees f .\n\" = $ |\nae i H\ni ee |\n» - zs mee Ls = : a —* c rn FS\nHOUSE_OVERSIGHT_000072\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two handwritten notes on branded paper labeled 'Actonel (risedronate sodium tablets)' with annotations about a wedding and a honeymoon, above a color photograph of three men in formal attire, two on the left side standing close together and one man standing slightly apart on the right side. The photo has a white border with a scalloped edge on the right side.",
+    "Layout: Two handwritten notes on Actonel branded paper at top",
+    "Layout: Photograph of three men in formal clothing at bottom",
+    "Photo/image candidate at Bottom half of page: Color photograph of three men, two on left in formal wear, one with tuxedo and one with gray jacket, and one man on right in dark suit and tie, standing on an outdoor deck or patio."
+  ],
+  "observations": [
+    "Page contains two handwritten notes on branded paper labeled 'Actonel (risedronate sodium tablets)' with annotations about a wedding and a honeymoon, above a color photograph of three men in formal attire, two on the left side standing close together and one man standing slightly apart on the right side. The photo has a white border with a scalloped edge on the right side.",
+    "Layout: Two handwritten notes on Actonel branded paper at top",
+    "Layout: Photograph of three men in formal clothing at bottom",
+    "Photo/image candidate at Bottom half of page: Color photograph of three men, two on left in formal wear, one with tuxedo and one with gray jacket, and one man on right in dark suit and tie, standing on an outdoor deck or patio."
+  ],
+  "dates": [
+    "May 30th 1988"
+  ],
+  "document_strings": [
+    "Actonel (risedronate sodium tablets)",
+    "My wedding! May 30th 1988 at the WATER CLUB NYC.",
+    "The 'empty' yardnuke represents Terry",
+    "who could not attend (he was in Spain - I met him there a few days later on my honeymoon!!"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top left quadrant on Actonel branded paper",
+      "text_as_seen": "My wedding! May 30th 1988 at the WATER CLUB NYC. The 'empty' yardnuke represents Terry",
+      "confidence": "high",
+      "note": "Clear handwritten note detailing a wedding date and location with mention of 'empty yardnuke' representing Terry."
+    },
+    {
+      "location": "Top right quadrant on Actonel branded paper",
+      "text_as_seen": "who could not attend (he was in Spain - I met him there a few days later on my honeymoon!!",
+      "confidence": "high",
+      "note": "Clear handwritten note explaining absence of someone who was in Spain and mention of honeymoon."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:14:37.818Z",
+    "response_id": "resp_0cc68162232a124e006a502b5755f081978d0eef4c0468671a",
+    "raw_output_sha256": "abcd2c29f80f988e6718342a03ab7cf22ffe0882361bc8cebfd96cfbbc05802c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0cc68162232a124e006a502b5755f081978d0eef4c0468671a",
+    "enriched_at": "2026-07-09T23:14:37.818Z"
+  },
+  "visual_summary": "Page contains two handwritten notes on branded paper labeled 'Actonel (risedronate sodium tablets)' with annotations about a wedding and a honeymoon, above a color photograph of three men in formal attire, two on the left side standing close together and one man standing slightly apart on the right side. The photo has a white border with a scalloped edge on the right side.",
+  "layout": [
+    "Two handwritten notes on Actonel branded paper at top",
+    "Photograph of three men in formal clothing at bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "Top left quadrant on Actonel branded paper",
+      "text_as_seen": "My wedding! May 30th 1988 at the WATER CLUB NYC. The 'empty' yardnuke represents Terry",
+      "confidence": "high",
+      "note": "Clear handwritten note detailing a wedding date and location with mention of 'empty yardnuke' representing Terry."
+    },
+    {
+      "location": "Top right quadrant on Actonel branded paper",
+      "text_as_seen": "who could not attend (he was in Spain - I met him there a few days later on my honeymoon!!",
+      "confidence": "high",
+      "note": "Clear handwritten note explaining absence of someone who was in Spain and mention of honeymoon."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "Bottom half of page",
+      "description": "Color photograph of three men, two on left in formal wear, one with tuxedo and one with gray jacket, and one man on right in dark suit and tie, standing on an outdoor deck or patio.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "May 30th 1988"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "norway-brende-epstein-hearing-2026",
+  "published": "2026-10-05",
+  "status": "SOURCE_LOCKED_WITH_OPEN_IDENTITY_SLOT",
+  "sources": [
+    {
+      "id": "stortinget-hearing-2026-09-30",
+      "type": "PRIMARY_OFFICIAL_TRANSCRIPT",
+      "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Referater/Horinger/2025-2026/refh-202526-09-30?all=true",
+      "supports": [
+        "Brende testimony on first meeting/contact chronology",
+        "2017 Norwegian-friend question put by committee",
+        "2018 WEF/UN email quoted and discussed",
+        "Brende explanation of resignation and review"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "ce02884cbb24ceffbecb7ef612459003bfaa11dcf753c327c57a988acd9575f5",
+        "archivePath": "GAH-NORWAY-BRENDE-072/source-captures/stortinget-hearing-2026-09-30.html"
+      }
+    },
+    {
+      "id": "stortinget-hearing-scope",
+      "type": "PRIMARY_OFFICIAL_PROGRAM",
+      "url": "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/Hva-skjer-nyheter/2025-2026/horing-om-kontroll-og-kultur-i-utenrikstjenesten/",
+      "supports": [
+        "committee scope",
+        "hearing dates",
+        "institutional-control questions"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "4fe28e9754e1413e279a303c81d5e7f53eebd7c821bf2aea1a628c317eb27067",
+        "archivePath": "GAH-NORWAY-BRENDE-072/source-captures/stortinget-hearing-scope.html"
+      }
+    },
+    {
+      "id": "wef-2026-02-26-statement",
+      "type": "PRIMARY_ORGANIZATION_STATEMENT",
+      "url": "https://www.weforum.org/press/2026/02/press-statement-from-co-chairs-andre-hoffmann-and-larry-fink-on-behalf-of-the-board-of-trustees/",
+      "supports": [
+        "Brende stepped down",
+        "board respected decision",
+        "outside-counsel review summary",
+        "Alois Zwinggi transition"
+      ],
+      "capture": {
+        "status": "LIVE_SOURCE_LINK_VERIFIED_NO_LOCAL_CAPTURE",
+        "note": "Origin returned HTTP 403 to archival command-line capture; article cites the live official WEF page."
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "NO-BRENDE-001",
+      "status": "SOURCE_SUPPORTED_TESTIMONY",
+      "claim": "Brende told parliament he first met Epstein in 2018 and had no contact with him as foreign minister.",
+      "source": "stortinget-hearing-2026-09-30",
+      "limit": "Testimony is not a complete independent contact log."
+    },
+    {
+      "id": "NO-BRENDE-002",
+      "status": "SOURCE_SUPPORTED_UNRESOLVED_IDENTITY",
+      "claim": "The hearing quoted a September 2017 Rød-Larsen/Epstein email referring to an unnamed Norwegian friend.",
+      "source": "stortinget-hearing-2026-09-30",
+      "limit": "The quoted record does not identify Brende as that person."
+    },
+    {
+      "id": "NO-BRENDE-003",
+      "status": "SOURCE_SUPPORTED",
+      "claim": "The hearing quoted a September 2018 Brende/Epstein WEF/UN exchange.",
+      "source": "stortinget-hearing-2026-09-30",
+      "limit": "The exchange occurred after Brende left government."
+    },
+    {
+      "id": "NO-BRENDE-004",
+      "status": "SOURCE_SUPPORTED",
+      "claim": "WEF publicly described Brende's February 2026 departure as his decision to step down.",
+      "source": "wef-2026-02-26-statement",
+      "limit": "The source does not support calling the departure an ouster."
+    }
+  ],
+  "open_receipt_slots": [
+    "Identity of the September 2017 Norwegian friend",
+    "Complete contemporaneous Brende/Epstein contact and calendar record",
+    "Full September 2018 email thread and surrounding context",
+    "Underlying outside-counsel WEF review report/workpapers"
+  ],
+  "acquiredAt": "2026-10-05T00:36:00-06:00"
+}

@@ -1,0 +1,374 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 178,
+  "bates": "HOUSE_OVERSIGHT_000178",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/178",
+  "related_people": [
+    "Jerry Edelman"
+  ],
+  "priority_rank": 5,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_0f400028ff35cec8006a50eb135a4c8190bc2c6d3b7db28b29",
+  "transcript_status": "transcribed",
+  "overall_confidence": "high",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_public",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "Do not identify or infer authorship of the handwriting.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "top left",
+      "text": "Dear Jeffrey,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Dear Jeffrey,"
+    },
+    {
+      "line_number": 2,
+      "location": "top left",
+      "text": "On this occasion, I am reminded of your many",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "On this occasion, I am reminded of your many"
+    },
+    {
+      "line_number": 3,
+      "location": "top left",
+      "text": "conversations, fuelled by both your curiosity and your",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "conversations, fuelled by both your curiosity and your"
+    },
+    {
+      "line_number": 4,
+      "location": "top left",
+      "text": "skepticism. Quoting great minds may be the only",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "skepticism. Quoting great minds may be the only"
+    },
+    {
+      "line_number": 5,
+      "location": "top left",
+      "text": "gift I can give you to stimulate the one and release",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "gift I can give you to stimulate the one and release"
+    },
+    {
+      "line_number": 6,
+      "location": "top left",
+      "text": "the other.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "the other."
+    },
+    {
+      "line_number": 7,
+      "location": "left center",
+      "text": "First, Oliver Wendell Holmes, Jr.:",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "First, Oliver Wendell Holmes, Jr.:"
+    },
+    {
+      "line_number": 8,
+      "location": "left center",
+      "text": "'Certitude is not the test of certainty. We have",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "'Certitude is not the test of certainty. We have"
+    },
+    {
+      "line_number": 9,
+      "location": "left center",
+      "text": "been cock sure of many things that were just so.' Your",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "been cock sure of many things that were just so.' Your"
+    },
+    {
+      "line_number": 10,
+      "location": "left center",
+      "text": "curiosity, continuing on with your skepticism, will",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "curiosity, continuing on with your skepticism, will"
+    },
+    {
+      "line_number": 11,
+      "location": "left center",
+      "text": "take care of this without hazard, birthday after birthday.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "take care of this without hazard, birthday after birthday."
+    },
+    {
+      "line_number": 12,
+      "location": "center",
+      "text": "Next, Thoreau:",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Next, Thoreau:"
+    },
+    {
+      "line_number": 13,
+      "location": "center",
+      "text": "\"Pursue, keep up with, circle round and round",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "\"Pursue, keep up with, circle round and round"
+    },
+    {
+      "line_number": 14,
+      "location": "center",
+      "text": "your life, as a dog does his master's chase. Do",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "your life, as a dog does his master's chase. Do"
+    },
+    {
+      "line_number": 15,
+      "location": "center",
+      "text": "what you love. Know your own bone; gnaw at",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "what you love. Know your own bone; gnaw at"
+    },
+    {
+      "line_number": 16,
+      "location": "center",
+      "text": "it, bury it, unearth it and gnaw it still.\" This",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "it, bury it, unearth it and gnaw it still.\" This"
+    },
+    {
+      "line_number": 17,
+      "location": "center",
+      "text": "too, you do admirably.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "too, you do admirably."
+    },
+    {
+      "line_number": 18,
+      "location": "center",
+      "text": "Then, Leonardo da Vinci:",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Then, Leonardo da Vinci:"
+    },
+    {
+      "line_number": 19,
+      "location": "center",
+      "text": "\"Iron rusts from disuse, stagnant water loses its",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "\"Iron rusts from disuse, stagnant water loses its"
+    },
+    {
+      "line_number": 20,
+      "location": "center",
+      "text": "purity and in cold weather becomes frozen; even so",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "purity and in cold weather becomes frozen; even so"
+    },
+    {
+      "line_number": 21,
+      "location": "center",
+      "text": "does inaction sap the vigor of the mind.\" Epstein is",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "does inaction sap the vigor of the mind.\" Epstein is"
+    },
+    {
+      "line_number": 22,
+      "location": "center",
+      "text": "not at risk. When he is in the room, you do not",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "not at risk. When he is in the room, you do not"
+    },
+    {
+      "line_number": 23,
+      "location": "center",
+      "text": "fall asleep.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "fall asleep."
+    },
+    {
+      "line_number": 24,
+      "location": "center",
+      "text": "Finally, a remark from the not so great Gertrude Stein",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Finally, a remark from the not so great Gertrude Stein"
+    },
+    {
+      "line_number": 25,
+      "location": "center",
+      "text": "on your interests:",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "on your interests:"
+    },
+    {
+      "line_number": 26,
+      "location": "center",
+      "text": "\"As a cousin of mine once said about money,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "\"As a cousin of mine once said about money,"
+    },
+    {
+      "line_number": 27,
+      "location": "center",
+      "text": "money is always there but the pockets change; it is",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "money is always there but the pockets change; it is"
+    },
+    {
+      "line_number": 28,
+      "location": "center",
+      "text": "not in the same pockets after a change, and that",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "not in the same pockets after a change, and that"
+    },
+    {
+      "line_number": 29,
+      "location": "center",
+      "text": "is all there is to say about money.\"",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "is all there is to say about money.\""
+    },
+    {
+      "line_number": 30,
+      "location": "lower center",
+      "text": "You have said more and, going beyond",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "You have said more and, going beyond"
+    },
+    {
+      "line_number": 31,
+      "location": "lower center",
+      "text": "talk, have shown how to find it.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "talk, have shown how to find it."
+    },
+    {
+      "line_number": 32,
+      "location": "bottom left",
+      "text": "And so, felicitations on the vigors of your",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "And so, felicitations on the vigors of your"
+    },
+    {
+      "line_number": 33,
+      "location": "bottom left",
+      "text": "body and mind, and warm hopes for many occasions",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "body and mind, and warm hopes for many occasions"
+    },
+    {
+      "line_number": 34,
+      "location": "bottom left",
+      "text": "celebrating their gifts.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "celebrating their gifts."
+    }
+  ],
+  "document_strings": [
+    "Dear Jeffrey, On this occasion, I am reminded of your many conversations, fuelled by both your curiosity and your skepticism. Quoting great minds may be the only gift I can give you to stimulate the one and release the other. First, Oliver Wendell Holmes Jr.: 'Certitude is not the test of certainty. We have been cock sure of many things that were just so.' Your curiosity, continuing on with your skepticism, will take care of this without hazard, birthday after birthday. Next, Thoreau: 'Pursue, keep up with, circle round and round your life, as a dog does his master’s chase. Do what you love. Know your own bone; gnaw at it, bury it, unearth it, and gnaw it still.' This too, you do admirably. Then, Leonardo da Vinci: 'Iron rusts from disuse, stagnant water loses its purity and in cold weather becomes frozen; even so does inaction sap the vigor of the mind.' Epstein is not at risk. When he is in the room, you do not fall asleep. Finally, a remark from the not so great Gertrude Stein on your interests: 'As a cousin of mine once said about money, money is always there but the pockets change; it is not in the same pockets after a change, and that is all there is to say about money.' You have said more and, going beyond talk, have shown how to find it. And so, felicitations on the vigors of your body and mind and warm hopes for many occasions celebrating their gifts. Jerry Edelman"
+  ],
+  "visible_non_transcript_notes": [
+    "Handwritten letter on page, signed at the bottom right."
+  ],
+  "gaps": [],
+  "raw_output_sha256": "3ccf3e57da0fac85b895bbdcb065e8bf64f93d1885ff01dee538439a24e597ba",
+  "transcribed_at": "2026-07-10T12:53:04.806Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

@@ -1,0 +1,133 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 156,
+  "page_id": "page_156",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_156.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_156.ocr.txt",
+  "image_metadata": {
+    "bytes": 7270876,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "fd48eff42bfbeeb4b68af81668690092cd13165fadf7644b41dee4f72d9606fe"
+  },
+  "ocr_text": "i ._— eee y\na ‘ & o ; 4 ix Se p .\n! es wh e.. I]\n“eS mE, | 8 \\ ( ae by 4 i . Se Ny = a\ny AW — ee 4 ~~,\n4 : « i _ f Kel 4d ’\n: ; =\nnie oR! tg er hh CF EPI Ls AS kG SCO\" # “ae\nt >, - i fort Fre fie pdt —— pou vans OBR\ni SENATE a\nZZ . 4 / + aa / f pone °\nOCLACT INKY\niJ ci fa! p | A Wat a: de) - :\nHOUSE_OVERSIGHT_000156\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A color photograph depicts four men posing with a large oversized check on a grassy outdoor area with palm trees. Two of the faces are redacted by black boxes. In the background, there are two people seated at a white table with white folding chairs. Below the photo, a handwritten note is visible, partially redacted, containing commentary about Jeffrey and Donald Trump. OCR text overlays some of the handwritten text.",
+    "Layout: Color photo top center, 4 men holding an oversized check",
+    "Layout: Handwritten note below the photo, some text redacted",
+    "Photo/image candidate at top half, center: Four men posing outdoors holding a large oversized check. Two faces obscured by black boxes. Palm trees and a lawn visible in background. Two people seated at table behind them."
+  ],
+  "observations": [
+    "A color photograph depicts four men posing with a large oversized check on a grassy outdoor area with palm trees. Two of the faces are redacted by black boxes. In the background, there are two people seated at a white table with white folding chairs. Below the photo, a handwritten note is visible, partially redacted, containing commentary about Jeffrey and Donald Trump. OCR text overlays some of the handwritten text.",
+    "Layout: Color photo top center, 4 men holding an oversized check",
+    "Layout: Handwritten note below the photo, some text redacted",
+    "Photo/image candidate at top half, center: Four men posing outdoors holding a large oversized check. Two faces obscured by black boxes. Palm trees and a lawn visible in background. Two people seated at table behind them."
+  ],
+  "dates": [],
+  "document_strings": [
+    "PAY TO JEFFREY EPSTEIN $22,500 00",
+    "twenty two five hundred DOLLARS",
+    "DTUMP Signature",
+    "JEFFREY SHOWING EARLY TALENTS WITH MONEY + WOMEN! SELLS \"FULLY DEPRECIATED\" [REDACTED] TO DONALD TRUMP FOR $22,500. SHOWED EARLY \"PEOPLE SKILLS\" TOO. EVEN THOUGH I HANDLED THE DEAL I DIDN'T GET ANY OF THE MONEY OR THE GIRL!"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "bottom half, below the photo",
+      "text_as_seen": "JEFFREY SHOWING EARLY TALENTS WITH MONEY + WOMEN! SELLS \"FULLY DEPRECIATED\" [redacted] TO DONALD TRUMP FOR $22,500. SHOWED EARLY \"PEOPLE SKILLS\" TOO. EVEN THOUGH I HANDLED THE DEAL I DIDN'T GET ANY OF THE MONEY OR THE GIRL!",
+      "confidence": "medium",
+      "note": "Handwriting is legible but some areas are faint and partially obscured by black redaction block."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "photo, faces of two men covering center and left",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Faces are covered by large black rectangles to obscure identities."
+    },
+    {
+      "location": "handwritten note, middle section line 3 and 4",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Redaction block obscures part of the text."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Lower part of handwritten text partially obscured by black redaction block",
+    "Detailed check text partially difficult to read due to handwriting and partial OCR overlap"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:27:27.613Z",
+    "response_id": "resp_0e9b47f26a2f2553006a502e56f4308194b48663ed85ee5ddf",
+    "raw_output_sha256": "0ef7166a98322041e31e804dde49f7e40cb76dd77c3a1247c28831e8c73693e1"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e9b47f26a2f2553006a502e56f4308194b48663ed85ee5ddf",
+    "enriched_at": "2026-07-09T23:27:27.613Z"
+  },
+  "visual_summary": "A color photograph depicts four men posing with a large oversized check on a grassy outdoor area with palm trees. Two of the faces are redacted by black boxes. In the background, there are two people seated at a white table with white folding chairs. Below the photo, a handwritten note is visible, partially redacted, containing commentary about Jeffrey and Donald Trump. OCR text overlays some of the handwritten text.",
+  "layout": [
+    "Color photo top center, 4 men holding an oversized check",
+    "Handwritten note below the photo, some text redacted"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom half, below the photo",
+      "text_as_seen": "JEFFREY SHOWING EARLY TALENTS WITH MONEY + WOMEN! SELLS \"FULLY DEPRECIATED\" [redacted] TO DONALD TRUMP FOR $22,500. SHOWED EARLY \"PEOPLE SKILLS\" TOO. EVEN THOUGH I HANDLED THE DEAL I DIDN'T GET ANY OF THE MONEY OR THE GIRL!",
+      "confidence": "medium",
+      "note": "Handwriting is legible but some areas are faint and partially obscured by black redaction block."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "photo, faces of two men covering center and left",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Faces are covered by large black rectangles to obscure identities."
+    },
+    {
+      "location": "handwritten note, middle section line 3 and 4",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Redaction block obscures part of the text."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half, center",
+      "description": "Four men posing outdoors holding a large oversized check. Two faces obscured by black boxes. Palm trees and a lawn visible in background. Two people seated at table behind them.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

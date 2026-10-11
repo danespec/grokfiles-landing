@@ -1,0 +1,108 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 128,
+  "page_id": "page_128",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_128.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_128.ocr.txt",
+  "image_metadata": {
+    "bytes": 586469,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b42e38926e0b5866b504da3546ee0c0c13d3689f415641bbfd492f1a3cfcfbdc"
+  },
+  "ocr_text": "Rep Bee e\\ Gel el Wee) a ae ol el fe) el] eae oe o| coo\noe ee Ropes RN Se ae one Foro Beal Eos oe Geran Mae ad ers ed ee)\nWee el ates” i RRS Bache \"\naS I g er\" xg, is Oa i DECEMBER 2002,\na a s.r . Life ina pure flame.\nal : ie :: and we live by an iwisible\nviata i aes Seer ae ting ee See OQecnde: fg Pear ger Le -3 JEFFREY EPSTEIN gif:\nfasta bai 3 IPPER? ee So og wi 24 a\nWAS i deFF ani Al a ae hoe OS 2 |\n=) E as Sea Pa are ica AAT eee oc aad fake - f\n2 ER, EE Nel ERSTIEINE 2 EES OL Os ae Pr ag ue ae |\nfrieipstonel afl onl yale (afl. we AER TOE a Bee Ss coe’\nee) i ae | e ; ‘ + Oi SOR HSS Uae PUTA Boba be RR RAH ERS SS Base: » PER ne Cea ge aa B.\nBed NANGED BY EPSTEIN? -  -aoee.6h 6 6h4AlUy mes\nBeen ar pi erninh TEE UE SURS ti SO ER e.- :\nae 2S eres f : we RS ey MS aca\nuy “COU DISPA ms, OE threes\n= aa 2 OE ee ee : Ae mfee \"Lathe ie ES a\ney. man” OE in io JEFFREY. a Bo ae . woe sce\nFeco.€ Cee % * ‘ a oh a et re\nae eel Nae 7 ae ae i . ce ORS\nies a d _ y oe ee - i . Wi a cee\nae ey OR OB em Nae re ** ‘BY MAUREEN ORTH.\non ee ii Por ee . iii scant.\n' ha i | | oe TES ie ee ‘a Bee - By GRE ee ft\n. oR a [EE | a eat atts | 2; 4 wedi, f° 9 BR Re: ee eee - DB THREW A ve\nrath : : . aa Re ANCE Ta Ee pega! SRR keg TT an wa\n|\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is a magazine cover from December 2002 titled 'VANITY UNFAIR'. It features a large black and white close-up photo of a person smiling. The cover has multiple article titles and captions in bold and varied fonts scattered around the photo. Notable text includes references to Jeffrey Epstein and Nicole Kidman. There is a barcode in the lower-left corner.",
+    "Layout: Large title at top",
+    "Layout: Main photograph of a person occupying most of the page",
+    "Layout: Text blocks arranged around the photograph",
+    "Layout: Barcode near bottom left",
+    "Photo/image candidate at center and right side: Black and white close-up photo of a person smiling"
+  ],
+  "observations": [
+    "The page is a magazine cover from December 2002 titled 'VANITY UNFAIR'. It features a large black and white close-up photo of a person smiling. The cover has multiple article titles and captions in bold and varied fonts scattered around the photo. Notable text includes references to Jeffrey Epstein and Nicole Kidman. There is a barcode in the lower-left corner.",
+    "Layout: Large title at top",
+    "Layout: Main photograph of a person occupying most of the page",
+    "Layout: Text blocks arranged around the photograph",
+    "Layout: Barcode near bottom left",
+    "Photo/image candidate at center and right side: Black and white close-up photo of a person smiling"
+  ],
+  "dates": [
+    "2002",
+    "DECEMBER 2002"
+  ],
+  "document_strings": [
+    "VANITY UNFAIR",
+    "DECEMBER 2002",
+    "Life is a pure flame and we live by an invisible sun within us. - JEFFREY EPSTEIN",
+    "WHO WAS THE RIPPER?",
+    "WAS IT JEFFREY EPSTEIN?",
+    "THE 100-YEAR-OLD MYSTERY SOLVED BY PATRICIA CORNWELL",
+    "AL-QAEDA IN SOUTH AMERICA FINANCED BY EPSTEIN?",
+    "JEFFREY EPSTEIN STOLE MY HEART AND OTHER COURTROOM DISPATCHES BY DOMINICK DUNNE",
+    "\"BRING IT ON, JEFFREY! CONSUME ME, JEFFREY! INTOXICATE ME, JEFFREY!!\"",
+    "NICOLE KIDMAN BARES HER SOUL PHOTOGRAPHS BY MARIO TESTINO",
+    "JEFFREY EPSTEIN'S BLOODY SUMMER BY MAUREEN ORTH",
+    "JEFFREY EPSTEIN'S %&*#@ RAMPAGE BY JUDITH NEWMAN"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:27.363Z",
+    "response_id": "resp_0343db9d6fed98ec006a502d6a83a88195bc2e43a893aa1246",
+    "raw_output_sha256": "2c188163fc4f47baca44ce546f678dbefd0aae3db2322b87adfa10708d5fdbcc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0343db9d6fed98ec006a502d6a83a88195bc2e43a893aa1246",
+    "enriched_at": "2026-07-09T23:23:27.363Z"
+  },
+  "visual_summary": "The page is a magazine cover from December 2002 titled 'VANITY UNFAIR'. It features a large black and white close-up photo of a person smiling. The cover has multiple article titles and captions in bold and varied fonts scattered around the photo. Notable text includes references to Jeffrey Epstein and Nicole Kidman. There is a barcode in the lower-left corner.",
+  "layout": [
+    "Large title at top",
+    "Main photograph of a person occupying most of the page",
+    "Text blocks arranged around the photograph",
+    "Barcode near bottom left"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center and right side",
+      "description": "Black and white close-up photo of a person smiling",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "DECEMBER 2002"
+  ],
+  "confidence": "high"
+}

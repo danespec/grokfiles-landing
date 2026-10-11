@@ -1,0 +1,152 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 101,
+  "page_id": "page_101",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_101.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_101.ocr.txt",
+  "image_metadata": {
+    "bytes": 8630425,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "310d03a2102bb6b8b689b8df101a4358626f5d3dfa282b259b7ca250c4b458c3"
+  },
+  "ocr_text": "v ee mae OTE tunity ~e'\nif r ae tee at ee ‘aad\ni | fy Bin |\nie. ® SG te\nRees = a L owe lk :\nae eA. val | ted Ps, i . |\n. x } . bnes = \" ry * 3 \"7\naw\" lel ' ; 4 ” at\n7\n* ~ | -\n@ Foie\nHOUSE_OVERSIGHT_000101\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three photographs arranged vertically, each with handwritten captions above or below them. The first photograph shows three people inside a store with shelves stocked with various items. The second photograph shows a street scene with a man standing next to a cart loaded with baskets, with signs and buildings in the background. The third photograph shows a person relaxing in a bathtub in a bathroom with dark walls and mirrors. Handwritten text is present near each photograph.",
+    "Layout: handwritten text above first photo",
+    "Layout: first photo centered near top",
+    "Layout: handwritten text between first and second photo",
+    "Layout: second photo centered in middle",
+    "Layout: handwritten text between second and third photo",
+    "Layout: third photo centered near bottom",
+    "Photo/image candidate at top photo: Three people inside a store with shelves containing various jars and boxes; one person is behind a counter while two customers stand in front of it.",
+    "Photo/image candidate at middle photo: Street scene with a man standing next to a cart full of woven baskets; other people and vehicles are visible, as well as banners and signs with Asian characters.",
+    "Photo/image candidate at bottom photo: Person relaxing in a bathtub in a bathroom with dark walls, mirrors, and countertop with towels and toiletries visible."
+  ],
+  "observations": [
+    "The page contains three photographs arranged vertically, each with handwritten captions above or below them. The first photograph shows three people inside a store with shelves stocked with various items. The second photograph shows a street scene with a man standing next to a cart loaded with baskets, with signs and buildings in the background. The third photograph shows a person relaxing in a bathtub in a bathroom with dark walls and mirrors. Handwritten text is present near each photograph.",
+    "Layout: handwritten text above first photo",
+    "Layout: first photo centered near top",
+    "Layout: handwritten text between first and second photo",
+    "Layout: second photo centered in middle",
+    "Layout: handwritten text between second and third photo",
+    "Layout: third photo centered near bottom",
+    "Photo/image candidate at top photo: Three people inside a store with shelves containing various jars and boxes; one person is behind a counter while two customers stand in front of it.",
+    "Photo/image candidate at middle photo: Street scene with a man standing next to a cart full of woven baskets; other people and vehicles are visible, as well as banners and signs with Asian characters.",
+    "Photo/image candidate at bottom photo: Person relaxing in a bathtub in a bathroom with dark walls, mirrors, and countertop with towels and toiletries visible."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Are you sure this will make my \"winkie\" grow ?",
+    "Oh my, never seen those pants before !",
+    "Waiting for my foot massage"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top of page above first photo",
+      "text_as_seen": "Are you sure this will make my \"winkie\" grow ?",
+      "confidence": "high",
+      "note": "Clear cursive handwriting with a question."
+    },
+    {
+      "location": "middle of page between first and second photo",
+      "text_as_seen": "Oh my, never seen those pants before !",
+      "confidence": "high",
+      "note": "Clear cursive handwriting with exclamation mark."
+    },
+    {
+      "location": "bottom of page between second and third photo",
+      "text_as_seen": "Waiting for my foot massage",
+      "confidence": "high",
+      "note": "Clear cursive handwriting."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:19.860Z",
+    "response_id": "resp_03512afb2e56c95a006a502c713c2c8197895cf1f5fe453fd3",
+    "raw_output_sha256": "be5936da3dd3af3b3f07863a38301465a2b35ea459e8a37898b895a61bc82d92"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_03512afb2e56c95a006a502c713c2c8197895cf1f5fe453fd3",
+    "enriched_at": "2026-07-09T23:19:19.860Z"
+  },
+  "visual_summary": "The page contains three photographs arranged vertically, each with handwritten captions above or below them. The first photograph shows three people inside a store with shelves stocked with various items. The second photograph shows a street scene with a man standing next to a cart loaded with baskets, with signs and buildings in the background. The third photograph shows a person relaxing in a bathtub in a bathroom with dark walls and mirrors. Handwritten text is present near each photograph.",
+  "layout": [
+    "handwritten text above first photo",
+    "first photo centered near top",
+    "handwritten text between first and second photo",
+    "second photo centered in middle",
+    "handwritten text between second and third photo",
+    "third photo centered near bottom"
+  ],
+  "handwriting": [
+    {
+      "location": "top of page above first photo",
+      "text_as_seen": "Are you sure this will make my \"winkie\" grow ?",
+      "confidence": "high",
+      "note": "Clear cursive handwriting with a question."
+    },
+    {
+      "location": "middle of page between first and second photo",
+      "text_as_seen": "Oh my, never seen those pants before !",
+      "confidence": "high",
+      "note": "Clear cursive handwriting with exclamation mark."
+    },
+    {
+      "location": "bottom of page between second and third photo",
+      "text_as_seen": "Waiting for my foot massage",
+      "confidence": "high",
+      "note": "Clear cursive handwriting."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top photo",
+      "description": "Three people inside a store with shelves containing various jars and boxes; one person is behind a counter while two customers stand in front of it.",
+      "confidence": "high"
+    },
+    {
+      "location": "middle photo",
+      "description": "Street scene with a man standing next to a cart full of woven baskets; other people and vehicles are visible, as well as banners and signs with Asian characters.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom photo",
+      "description": "Person relaxing in a bathtub in a bathroom with dark walls, mirrors, and countertop with towels and toiletries visible.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

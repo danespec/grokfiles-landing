@@ -1,0 +1,99 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 21,
+  "page_id": "page_021",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_021.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_021.ocr.txt",
+  "image_metadata": {
+    "bytes": 368626,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "f72c8b3de6727c09b03bbb2b15aa5dbdd7714c8c7d4ae4cae505557325d27d61"
+  },
+  "ocr_text": "| a 4ED Te kee ’ ’\nee: | ve boxes PR PUS ES . 2\na | | i oan iO. ‘ | ') A. ees yey oj WAS\noe Lema - \\ ya tac . |\nie ; Copy yey Vie) a. ; Le AA ,*\nbo 2 4 aa c rae > Coco “ Oo a sterucliel,\nee : ™ os . . q Le ae . ” Ry, “ % Hera\nbak . coco? FER Ses ( wos CRS i\nos ARNON. eR (ree\n= : a Vs Prey Dewy :\npe ) Le Ce. Sk Ka yest,\na Ni C eu a ey oo eC adol\\\npo Vs mo Sede WO da\n@ WEYW€é Cus\n_ ae Soe ore\nYe 4 “| cam yal CY a ee\nq | a Vv ened uw\noo sory lh ee.\nPo Wor MeOe\n= va’ ew ouns: he SM : eee 4 uy\na ye mee trier \"y Cs Sop &\npf gles (F - > WN PYo LAS Q\nox Te help\nTreaehes 5\noo a rar ay RUA > en\nbe | ACLAG yi ele 3 oy iy sl\neo . os A Abe. oat ou tA,\nS yos 48k Y tin. Tacaclren,\na | nS ges Ere Valin, VY |\nee \" cue, £ | wy SN.\nCyr | Q : Le Joep. vt |\nEa Lordion : OU ELO cm ¢\n_ | eae | 2 A Wa FN D he bow He Col me |\nPon 1a be oka ck “\\ , ay fas de,\nMr. Me log ve wy Ceasper VRE\nee Th “ry AS So rope | de dS\nee a es “h. 2 > oy ey} Rae en “or\noe WON? GK “ SO ru Z\nthou Ue \\ c i Cesyea eck _\na is p : : 5 . aaa a 4 ‘e fat Ae &\nae § se gst y AL OA,\n[+ aco Wy Chad _ |\noO 4 & ~— . kW ~ >\nB ltok+ © Hct “De Moe own 1S 5 |\noN ACEC a WO Aye LOV\na _ ey ige ONE Sey to\n. C Wau . V\\\\ TMA\n| \\ ay fan. Wt 5\nae Se : Jar ac m2 [vy re VIA oe\nae} YW hho Ss “Baw f¥ ——— 1\nlewnuis %B | ‘GHT 00002\na } , SVN x” OS HOUSE_OVERSIGHT_\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a handwritten note referencing childhood memories of reading, school reports, accordion lessons, and participation in Bar Mitzvah events. The text is mainly left aligned with consistent spacing, no images, drawings, or signatures visible.",
+    "Layout: handwritten text in a single block on a white background"
+  ],
+  "observations": [
+    "Page contains a handwritten note referencing childhood memories of reading, school reports, accordion lessons, and participation in Bar Mitzvah events. The text is mainly left aligned with consistent spacing, no images, drawings, or signatures visible.",
+    "Layout: handwritten text in a single block on a white background"
+  ],
+  "dates": [],
+  "document_strings": [
+    "I recall you refused To go to sleep",
+    "Grandma's Golden Book that she bought for 25¢",
+    "Grandma visited us every Saturday",
+    "You are still An Avid reader",
+    "Books cost ? dollars",
+    "report cards were 'A plus'",
+    "At P.T.A meetings I begged your Teachers To help improve your handwriting",
+    "At age 5 you had your first accordion lesson",
+    "lessons later Teacher Mr. Matos booked you in Carnegie Hall",
+    "You won prizes in Prospect Park, Central Park & other local competitive prizes",
+    "Do you know where your accordion is ?",
+    "You also played at your Bar Mitzvah and Uncle Lenny's Bar Mitzvah"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "full page",
+      "text_as_seen": "I recall you refused To go to sleep unless I read a story from Grandma's Golden Book that she bought for 25¢. Grandma visited us every Saturday. To Day You are still An Avid reader. Books cost ? dollars. I know you were an ex•cellent student because your report cards were 'A plus.' At P.T.A meetings I begged your teachers To help improve your handwriting. At age 5 you had your first accordion lesson. Lessons later Teacher Mr. Matos booked you in Carnegie Hall. You won prizes in Prospect Park, Central Park & other local competitive prizes. Today, Do you know where your accordion is ? You also played at your Bar Mitzvah and Uncle Lenny's Bar Mitzvah.",
+      "confidence": "medium",
+      "note": "Main text, legible but slight smudging on edges, some words faint"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:05:22.725Z",
+    "response_id": "resp_022f08aa36c700fe006a50292bcf9c8196894efc6ce0103755",
+    "raw_output_sha256": "7ed6904ac6e6ddf39b7a2a6abede348fe1fe8b5413459c671a5ad096d223ac94"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_022f08aa36c700fe006a50292bcf9c8196894efc6ce0103755",
+    "enriched_at": "2026-07-09T23:05:22.725Z"
+  },
+  "visual_summary": "Page contains a handwritten note referencing childhood memories of reading, school reports, accordion lessons, and participation in Bar Mitzvah events. The text is mainly left aligned with consistent spacing, no images, drawings, or signatures visible.",
+  "layout": [
+    "handwritten text in a single block on a white background"
+  ],
+  "handwriting": [
+    {
+      "location": "full page",
+      "text_as_seen": "I recall you refused To go to sleep unless I read a story from Grandma's Golden Book that she bought for 25¢. Grandma visited us every Saturday. To Day You are still An Avid reader. Books cost ? dollars. I know you were an ex•cellent student because your report cards were 'A plus.' At P.T.A meetings I begged your teachers To help improve your handwriting. At age 5 you had your first accordion lesson. Lessons later Teacher Mr. Matos booked you in Carnegie Hall. You won prizes in Prospect Park, Central Park & other local competitive prizes. Today, Do you know where your accordion is ? You also played at your Bar Mitzvah and Uncle Lenny's Bar Mitzvah.",
+      "confidence": "medium",
+      "note": "Main text, legible but slight smudging on edges, some words faint"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

@@ -1,0 +1,102 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 190,
+  "page_id": "page_190",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_190.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_190.ocr.txt",
+  "image_metadata": {
+    "bytes": 1016204,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "726410057c0f7fe102de888396fdd2e8d3a60148826443a0da19abf0080f248d"
+  },
+  "ocr_text": ". = fad oe eS Kt --[-\" i es\n| Lt y | a |\n1 : -_ j\ni ete Tet Le\nMe ™ iia ee al oo oa a Nag.\n30\nHOUSE_OVERSIGHT_000190\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A predominantly blank white page with two simple line diagrams near the top left and top right portions. The left diagram shows a cylindrical shape with multiple internal intersecting lines and dashed ellipse outlines at the tops and bottoms. The right diagram shows two Y-shaped line segments with an arrow pointing upward between them. Black printed page number '30' is located towards the right center. Text 'HOUSE_OVERSIGHT_000190' is printed at the bottom right corner. The background is otherwise blank and white.",
+    "Layout: top left diagram",
+    "Layout: top right diagram",
+    "Layout: center page number",
+    "Layout: bottom right text",
+    "Drawing candidate at top left: A cylindrical shape with internal intersecting straight lines and dashed elliptical outlines on top and bottom",
+    "Drawing candidate at top right: Two Y-shaped line segments with an upward pointing arrow between them"
+  ],
+  "observations": [
+    "A predominantly blank white page with two simple line diagrams near the top left and top right portions. The left diagram shows a cylindrical shape with multiple internal intersecting lines and dashed ellipse outlines at the tops and bottoms. The right diagram shows two Y-shaped line segments with an arrow pointing upward between them. Black printed page number '30' is located towards the right center. Text 'HOUSE_OVERSIGHT_000190' is printed at the bottom right corner. The background is otherwise blank and white.",
+    "Layout: top left diagram",
+    "Layout: top right diagram",
+    "Layout: center page number",
+    "Layout: bottom right text",
+    "Drawing candidate at top left: A cylindrical shape with internal intersecting straight lines and dashed elliptical outlines on top and bottom",
+    "Drawing candidate at top right: Two Y-shaped line segments with an upward pointing arrow between them"
+  ],
+  "dates": [],
+  "document_strings": [
+    "30",
+    "HOUSE_OVERSIGHT_000190"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "openai-vision"
+  ],
+  "gaps": [
+    "No visible text blocks or paragraphs besides document strings",
+    "No visible handwriting or signatures"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:38.971Z",
+    "response_id": "resp_06f355238be3eb3b006a502f9120ac8194874b86b1479951b5",
+    "raw_output_sha256": "d6a7b0a2c793f66dbb3a233282e7e56d34ac19c9f39bc02641fb2e348d3fc2a0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_06f355238be3eb3b006a502f9120ac8194874b86b1479951b5",
+    "enriched_at": "2026-07-09T23:32:38.971Z"
+  },
+  "visual_summary": "A predominantly blank white page with two simple line diagrams near the top left and top right portions. The left diagram shows a cylindrical shape with multiple internal intersecting lines and dashed ellipse outlines at the tops and bottoms. The right diagram shows two Y-shaped line segments with an arrow pointing upward between them. Black printed page number '30' is located towards the right center. Text 'HOUSE_OVERSIGHT_000190' is printed at the bottom right corner. The background is otherwise blank and white.",
+  "layout": [
+    "top left diagram",
+    "top right diagram",
+    "center page number",
+    "bottom right text"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "top left",
+      "description": "A cylindrical shape with internal intersecting straight lines and dashed elliptical outlines on top and bottom",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Two Y-shaped line segments with an upward pointing arrow between them",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

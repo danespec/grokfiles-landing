@@ -1,0 +1,103 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 178,
+  "page_id": "page_178",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_178.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_178.ocr.txt",
+  "image_metadata": {
+    "bytes": 291281,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "121eaf43a10d26633a0416326289b12d0b4cab660b1610c2ea580393b1a5dd24"
+  },
+  "ocr_text": "1 ber,\n| Cou kts fran, fgeGa. GOUh, peer cen lesity aud \\\nShepp breisea: (Yeo ; af ut viily aicey fe- lle\nJef? ot Cex gue bee. ve Svetnele fe Llp pub Big\n| he other.\n\nFist, DEtwes Lees Me@t Nb bg #3 :\n\n“Cork bufle \"5 24g f tho tee\" Bi ceteihy Lt have\nltt Coch, cur 4 Wantr eect, ef see bso” Gforen\nres the cme ao Let YOO Sapo bie t 52 el\nVehe exe Y Lec oer / Aegon Lenthp af ler Lait\n\n\"Plarsut, peep if uxt , ricle racer aca Dowie\npoe? Life, 49 2 0, doce tea eee chine. Uy\ntie Lee | Mp a, Bee OH bert, faeat |\nef éF, “tnéirl, Aik Pua thaptlee | red\ntoo , Guu bb ed onaially .\n\nThe, hecnardo te Veuce °\npre reea ts fo ome Ltasere, Seepasee | vt ber Corea the\npoly Leaf Ath Cale Meresllas becomee PGS Cu-Ete SG\n\nAtle tuatfiou ws vege. s of thee vend Spoleen ts\n\nAte ¥ af nsk, He td aa He aoe, Yyave dp aes\n\npeel\n\nFu pp Bema h frou The mor 52 gueke be, beude Dy\nOn 210!\n\nIng, A Cotezin of ence 0 20. Aetel a bot! Mee) |\nmee A elucryyd ‘hore but Ue pochets claege, his\nwot Vie the auce (po cliote “ftel ach lacpey but hak\nbs bE thet 1s ta pay elout mm 7\n\n| valk | htt @hedsmn haw Lo fod &f,\nboda uct Diy ead, (eer Ag ~~) a\n4 tetey Sif be La |\nHOUSE. OVERSIGHT 000178\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten letter on an otherwise blank page, addressed to 'Dear Jeffrey'. The writing is dense and cursive, filling nearly the entire page. The handwriting is legible but with some characters blending. The letter references quotes from Oliver Wendell Holmes Jr., Thoreau, Leonardo da Vinci, and a remark from a 'Bertrude Stein'. It discusses themes of curiosity, skepticism, life, money, and congratulations. The bottom right corner contains a signature-like text.",
+    "Layout: handwritten text filling page"
+  ],
+  "observations": [
+    "A handwritten letter on an otherwise blank page, addressed to 'Dear Jeffrey'. The writing is dense and cursive, filling nearly the entire page. The handwriting is legible but with some characters blending. The letter references quotes from Oliver Wendell Holmes Jr., Thoreau, Leonardo da Vinci, and a remark from a 'Bertrude Stein'. It discusses themes of curiosity, skepticism, life, money, and congratulations. The bottom right corner contains a signature-like text.",
+    "Layout: handwritten text filling page"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Dear Jeffrey, On this occasion, I am reminded of your many conversations, fuelled by both your curiosity and your skepticism. Quoting great minds may be the only gift I can give you to stimulate the one and release the other. First, Oliver Wendell Holmes Jr.: 'Certitude is not the test of certainty. We have been cock sure of many things that were just so.' Your curiosity, continuing on with your skepticism, will take care of this without hazard, birthday after birthday. Next, Thoreau: 'Pursue, keep up with, circle round and round your life, as a dog does his master’s chase. Do what you love. Know your own bone; gnaw at it, bury it, unearth it, and gnaw it still.' This too, you do admirably. Then, Leonardo da Vinci: 'Iron rusts from disuse, stagnant water loses its purity and in cold weather becomes frozen; even so does inaction sap the vigor of the mind.' Epstein is not at risk. When he is in the room, you do not fall asleep. Finally, a remark from the not so great Gertrude Stein on your interests: 'As a cousin of mine once said about money, money is always there but the pockets change; it is not in the same pockets after a change, and that is all there is to say about money.' You have said more and, going beyond talk, have shown how to find it. And so, felicitations on the vigors of your body and mind and warm hopes for many occasions celebrating their gifts. Jerry Edelman"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Jerry Edelman",
+      "confidence": "medium",
+      "note": "Appears as a signature but treated as document string."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Dear Jeffrey, On this occasion, I am reminded of your many conversations, fuelled by both your curiosity and your skepticism. Quoting great minds may be the only gift I can give you to stimulate the one and release the other. First, Oliver Wendell Holmes Jr.: 'Certitude is not the test of certainty. We have been cock sure of many things that were just so.' Your curiosity, continuing on with your skepticism, will take care of this without hazard, birthday after birthday. Next, Thoreau: 'Pursue, keep up with, circle round and round your life, as a dog does his master’s chase. Do what you love. Know your own bone; gnaw at it, bury it, unearth it, and gnaw it still.' This too, you do admirably. Then, Leonardo da Vinci: 'Iron rusts from disuse, stagnant water loses its purity and in cold weather becomes frozen; even so does inaction sap the vigor of the mind.' Epstein is not at risk. When he is in the room, you do not fall asleep. Finally, a remark from the not so great Gertrude Stein on your interests: 'As a cousin of mine once said about money, money is always there but the pockets change; it is not in the same pockets after a change, and that is all there is to say about money.' You have said more and, going beyond talk, have shown how to find it. And so, felicitations on the vigors of your body and mind and warm hopes for many occasions celebrating their gifts. Jerry Edelman",
+      "confidence": "high",
+      "note": "The entire page is handwritten script with some minor difficulty in certain words due to cursive style."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:30:35.021Z",
+    "response_id": "resp_0265a6447ceab020006a502f0f90748197b7e04c6e5ff886cb",
+    "raw_output_sha256": "538b325450e2f4fc4596e8ccda56fa1771e2f78aab4eea3c470c4a37abb5cab3"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0265a6447ceab020006a502f0f90748197b7e04c6e5ff886cb",
+    "enriched_at": "2026-07-09T23:30:35.021Z"
+  },
+  "visual_summary": "A handwritten letter on an otherwise blank page, addressed to 'Dear Jeffrey'. The writing is dense and cursive, filling nearly the entire page. The handwriting is legible but with some characters blending. The letter references quotes from Oliver Wendell Holmes Jr., Thoreau, Leonardo da Vinci, and a remark from a 'Bertrude Stein'. It discusses themes of curiosity, skepticism, life, money, and congratulations. The bottom right corner contains a signature-like text.",
+  "layout": [
+    "handwritten text filling page"
+  ],
+  "handwriting": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Dear Jeffrey, On this occasion, I am reminded of your many conversations, fuelled by both your curiosity and your skepticism. Quoting great minds may be the only gift I can give you to stimulate the one and release the other. First, Oliver Wendell Holmes Jr.: 'Certitude is not the test of certainty. We have been cock sure of many things that were just so.' Your curiosity, continuing on with your skepticism, will take care of this without hazard, birthday after birthday. Next, Thoreau: 'Pursue, keep up with, circle round and round your life, as a dog does his master’s chase. Do what you love. Know your own bone; gnaw at it, bury it, unearth it, and gnaw it still.' This too, you do admirably. Then, Leonardo da Vinci: 'Iron rusts from disuse, stagnant water loses its purity and in cold weather becomes frozen; even so does inaction sap the vigor of the mind.' Epstein is not at risk. When he is in the room, you do not fall asleep. Finally, a remark from the not so great Gertrude Stein on your interests: 'As a cousin of mine once said about money, money is always there but the pockets change; it is not in the same pockets after a change, and that is all there is to say about money.' You have said more and, going beyond talk, have shown how to find it. And so, felicitations on the vigors of your body and mind and warm hopes for many occasions celebrating their gifts. Jerry Edelman",
+      "confidence": "high",
+      "note": "The entire page is handwritten script with some minor difficulty in certain words due to cursive style."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Jerry Edelman",
+      "confidence": "medium",
+      "note": "Appears as a signature but treated as document string."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

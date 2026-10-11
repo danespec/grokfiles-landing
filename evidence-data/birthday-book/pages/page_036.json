@@ -1,0 +1,92 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 36,
+  "page_id": "page_036",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_036.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_036.ocr.txt",
+  "image_metadata": {
+    "bytes": 103711,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "3aa575753e22b26a5dfbc64222e35dfe61f35412a58251cf20d8dec4b608c372"
+  },
+  "ocr_text": "7 | HOW I REMEMBER JEFFREY\n: JSRFREY WAS BORN AVERAGE IN S20\n- A DAZZLING SHILG , LAUGHING BLUE BYES\n{We MIND OF A TRULY CREAT MATHEMATICIAN\n| §O bi Hi TS SOMBONS BEYOND ALL DESCRIPETON\n: MY CONLREBUTIOU, A SIMPLE TOL\n| HOR SUCH AN GUISTANDING LITTLE BOY\n| He, AB pAMBLED Ts THOUNSAND OF NUTS, SCREWS & BOLTS\nRUATEDA EMPIRE WITH ASTOUNDING RESULTS\n(aS MEMORY L SHALL NEVER FORGET\nTr ALL STARTED WITH AN ERECTOR ST.\nLOVE YOU FOREVER\nFRAN\nHOUSE_OVERSIGHT_000036\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a centered typed poem or message titled 'HOW I REMEMBER JEFFREY' with text lines below arranged in several stanzas. The text is in uppercase serif font, black ink on a white background. There are no images, drawings, or handwritten annotations. The page number '36' and identifier 'HOUSE_OVERSIGHT_000036' appear on the bottom right.",
+    "Layout: Centered title at top",
+    "Layout: Seven lines of poem text in center",
+    "Layout: Bottom right page number and identifier"
+  ],
+  "observations": [
+    "The page contains a centered typed poem or message titled 'HOW I REMEMBER JEFFREY' with text lines below arranged in several stanzas. The text is in uppercase serif font, black ink on a white background. There are no images, drawings, or handwritten annotations. The page number '36' and identifier 'HOUSE_OVERSIGHT_000036' appear on the bottom right.",
+    "Layout: Centered title at top",
+    "Layout: Seven lines of poem text in center",
+    "Layout: Bottom right page number and identifier"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOW I REMEMBER JEFFREY",
+    "JEFFREY WAS BORN AVERAGE IN SIZE",
+    "A DAZZLING SMILE , LAUGHING BLUE EYES",
+    "THE MIND OF A TRULY GREAT MATHEMATICIAN",
+    "TO ME HE IS SOMEONE BEYOND ALL DESCRIPTION",
+    "MY CONTRIBUTION, A SIMPLE TOY",
+    "FOR SUCH AN OUTSTANDING LITTLE BOY",
+    "HE ASSEMBLED THE THOUSAND OF NUTS, SCREWS & BOLTS",
+    "CREATED AN EMPIRE WITH ASTOUNDING RESULTS",
+    "THE MEMORY I SHALL NEVER FORGET",
+    "IT ALL STARTED WITH AN ERECTOR SET.",
+    "LOVE YOU FOREVER",
+    "FRAN",
+    "HOUSE_OVERSIGHT_000036"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:47.475Z",
+    "response_id": "resp_069793e4467b6f4a006a5029bf0ddc8195ba5c38a7f944ffe6",
+    "raw_output_sha256": "b6912cf447b32cff56ca75e9330bf3dff4934cba4ae01e1cbe78728609dc7264"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_069793e4467b6f4a006a5029bf0ddc8195ba5c38a7f944ffe6",
+    "enriched_at": "2026-07-09T23:07:47.475Z"
+  },
+  "visual_summary": "The page contains a centered typed poem or message titled 'HOW I REMEMBER JEFFREY' with text lines below arranged in several stanzas. The text is in uppercase serif font, black ink on a white background. There are no images, drawings, or handwritten annotations. The page number '36' and identifier 'HOUSE_OVERSIGHT_000036' appear on the bottom right.",
+  "layout": [
+    "Centered title at top",
+    "Seven lines of poem text in center",
+    "Bottom right page number and identifier"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

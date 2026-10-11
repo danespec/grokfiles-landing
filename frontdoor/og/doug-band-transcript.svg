@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Doug Band Transcript Autopsy</title>
+  <desc id="desc">Restrained Grok Archive Hub share card for a primary-source transcript autopsy.</desc>
+  <rect width="1200" height="630" fill="#f8f5ec"/>
+  <rect x="64" y="64" width="1072" height="502" rx="8" fill="#ffffff" stroke="#d9cfb5" stroke-width="2"/>
+  <text x="96" y="142" font-family="Georgia,serif" font-size="52" fill="#24211a">Doug Band Transcript Autopsy</text>
+  <text x="96" y="214" font-family="Arial,sans-serif" font-size="26" fill="#5d5748">House Oversight transcript released July 17, 2026</text>
+  <text x="96" y="304" font-family="Arial,sans-serif" font-size="31" fill="#24211a">What the transcript establishes - and what it does not</text>
+  <text x="96" y="388" font-family="Arial,sans-serif" font-size="24" fill="#5d5748">Claim matrix | chronology | memory ledger | source hashes</text>
+  <text x="96" y="505" font-family="Arial,sans-serif" font-size="20" fill="#8a7d5d">Grok Archive Hub - primary-source analysis, no guilt by association</text>
+</svg>

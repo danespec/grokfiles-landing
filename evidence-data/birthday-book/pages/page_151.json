@@ -1,0 +1,80 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 151,
+  "page_id": "page_151",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_151.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_151.ocr.txt",
+  "image_metadata": {
+    "bytes": 22192504,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "ba55c14babc21adb7e7855ecdb20c44c44afc15cda2dd753429ddff3477cf7ce"
+  },
+  "ocr_text": ": Ee Sage = =\nNein ~ Fg ty Meee geo = nS, ae +,\n: LE ee ee | a i SS Sin ce Solan = he fee) ibe\n6 y a chat ae se a a Sat Bates St = ’ Bi. Shi\nats Yas! ae oe ae ig fh ate > AS SASS a ee SF5 5 pe .\n2 . 7 Se . Od Ce GYD oni: i am Sea nists eee eal +9 BA 1%\nGSAT ELE eS ger Ch ae RRS Be ee nate ee So = Fea eats rail < gt\n: a r pf’ ieh Vi hat! . wi LER LG Nie = 7 ch eee\n, 4 fi d : Ay Ri dais _ ng? ea te d Bes | , =\n: ry ae ig Ae 4 oe 6 ORS Bi 7 a an =H:\n. veh 3 os Gs 2 pee fae LO a eS. vm yur } 45\nme fae Rr ae te! | } Pe. a, eS Bo <i Ty , iq S aM\nA uk Ape yi eae! | Rives & yar & oY i ol gg LS... ee 2 Sa ; - <4\n7: RRS 7 . AIAG : P hs A i a a oe OO ar a :\n4 . Mg =~ Ape a’ i 4d i D 7 Te eu 6 as la ~ a e. i ee a a . :\n. i Boy, ( ef ee af x pia) . . + at wd c\npote Gh HY (VES Ue! * Thi {ai cA ‘ # ae afi s F re\nj ? , Babe) «2 te ’ iB Rae ee eres 3 ae hfe. . i on\n4 ‘ogg 7a aie A 5 ut oe age Bt St ie ee ; a r: : — . | a :\n< ty 2 ‘ : ee \" 4 Mi af re “ Dey\nse itia~ > * ws: tan 71 Bae. ee rr ]\n. : * pe A mal frets te , eg = 2 725 4 Soe hay e\n3 e 4 Be ae’ ‘ ea 2) ets te . ae Me BS ek\nfigs a he he ; : Seed vu tie pss | eee. ~ >\n= ee P r - ae ay ee ; Bes ner me. . eee ies > . - , ’\nok : 7 \" ee op i eeeny eS AL Mond . * Je A i Y BY pn! = S v F\nBie - | ae eee i see ag aiteges Pot {ee\n. ae a ee lit SS” ee ae Pe ae j 5, eg\nA tt of 9 i = este oe a. le i i hes ware i were i ee / : ae ¥ ; ts : * - ia 2.\ni. ” +g aS w ah ae - - . pt ie Pe 7 4 4\ni ‘ of “ag ‘eel oe > ~ << bag a . * aie ek ey ee . |\naan 8G + : Se mae re *, “ GO os i a\n: es \" er ~~ > hie Pa Fong!\n: 4 StS ely\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page features a color photograph showing two lions outdoors. One lion is standing, mostly visible from the front and side, with a mane indicating it is likely male. The other lion, possibly female due to lack of mane, is lying on the ground next to the standing lion and has its mouth open wide as if yawning or roaring. The background is green and natural, suggesting an outdoor setting like a wildlife reserve or park.",
+    "Layout: full-page photograph",
+    "Photo/image candidate at full page: Color photo of two lions, one standing male with mane facing side, and one lying female with mouth open"
+  ],
+  "observations": [
+    "The page features a color photograph showing two lions outdoors. One lion is standing, mostly visible from the front and side, with a mane indicating it is likely male. The other lion, possibly female due to lack of mane, is lying on the ground next to the standing lion and has its mouth open wide as if yawning or roaring. The background is green and natural, suggesting an outdoor setting like a wildlife reserve or park.",
+    "Layout: full-page photograph",
+    "Photo/image candidate at full page: Color photo of two lions, one standing male with mane facing side, and one lying female with mouth open"
+  ],
+  "dates": [],
+  "document_strings": [],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:26:36.476Z",
+    "response_id": "resp_00cec3b179deabb4006a502e25bcb0819494a7f389b35e96b3",
+    "raw_output_sha256": "3873da408ba50e2489975df4764eeecbf002e2eafec844f60621b293647c3023"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00cec3b179deabb4006a502e25bcb0819494a7f389b35e96b3",
+    "enriched_at": "2026-07-09T23:26:36.476Z"
+  },
+  "visual_summary": "The page features a color photograph showing two lions outdoors. One lion is standing, mostly visible from the front and side, with a mane indicating it is likely male. The other lion, possibly female due to lack of mane, is lying on the ground next to the standing lion and has its mouth open wide as if yawning or roaring. The background is green and natural, suggesting an outdoor setting like a wildlife reserve or park.",
+  "layout": [
+    "full-page photograph"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "full page",
+      "description": "Color photo of two lions, one standing male with mane facing side, and one lying female with mouth open",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

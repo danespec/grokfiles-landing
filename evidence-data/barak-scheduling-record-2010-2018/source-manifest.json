@@ -1,0 +1,90 @@
+{
+  "schema": "gah.source_manifest.v1",
+  "title": "The Barak Record, 2010–2018: What the Scheduling Files Actually Show",
+  "route": "/investigations/barak-scheduling-records-2010-2018",
+  "published": "2026-09-30",
+  "evidence_boundary": "The source set establishes recurring scheduling, proposed meetings, calendar entries, call coordination and invitations. It does not by itself establish attendance for every proposed event, discussion content, political influence, agency, agreement, legal liability or misconduct.",
+  "primary_records": [
+    {
+      "id": "EFTA00559539",
+      "date": "2010-11-11",
+      "artifact": "DS9_chunk_363 / EFTA00559539.pdf",
+      "route": "/archive/EFTA00559539",
+      "role": "Priell scheduling chain; official/unofficial visit question; possible Barak-Epstein meeting and private four-eyes conversation; Saban/NY travel context"
+    },
+    {
+      "id": "EFTA00404605",
+      "date": "2012-09-24",
+      "artifact": "DS9_chunk_189 / EFTA00404605.pdf",
+      "route": "/archive/EFTA00404605",
+      "role": "Sep. 23–24 scheduling chain around Barak/Larry Summers and proposed additional guests"
+    },
+    {
+      "id": "EFTA00389664",
+      "date": "2013-06-03",
+      "artifact": "DS9_chunk_170 / EFTA00389664.pdf",
+      "route": "/archive/EFTA00389664",
+      "role": "Multi-day schedule listing Jun. 3 appointment with Barak and Jun. 4 lunch with Barak/Bob Kerrey"
+    },
+    {
+      "id": "EFTA02574127",
+      "date": "2013-09-03",
+      "artifact": "DS11_chunk_464 / EFTA02574127.pdf",
+      "route": "/archive/EFTA02574127",
+      "role": "Email proposing Barak around Sep. 22 and Joshua Cooper Ramo; reply asks what options exist for Barak"
+    },
+    {
+      "id": "EFTA00366797",
+      "date": "2014-07-15",
+      "artifact": "DS9_chunk_142 / EFTA00366797.pdf",
+      "route": "/archive/EFTA00366797",
+      "role": "Groff invitation to Kathy Ruemmler to sit with Barak at Epstein's home"
+    },
+    {
+      "id": "EFTA00322817",
+      "date": "2016-07-08",
+      "artifact": "DS9_chunk_095 / EFTA00322817.pdf",
+      "route": "/archive/EFTA00322817",
+      "role": "Groff/Priell coordination of a proposed Barak-Epstein telephone call"
+    },
+    {
+      "id": "EFTA00473701",
+      "date": "2018-05-07",
+      "artifact": "DS9_chunk_276 / EFTA00473701.pdf",
+      "route": "/archive/EFTA00473701",
+      "role": "Dinner invitation to Noam/Valeria Chomsky saying Steve Bannon and Ehud Barak would be there"
+    }
+  ],
+  "external_context": [
+    {
+      "id": "KNESSET-BARAK-BIO",
+      "class": "OFFICIAL_PUBLIC_CONTEXT",
+      "role": "Ehud Barak public-service biography; former prime minister and ministerial roles",
+      "url": "https://main.knesset.gov.il/EN/About/Lexicon/Pages/barak.aspx"
+    },
+    {
+      "id": "BROOKINGS-SABAN-2010",
+      "class": "INSTITUTIONAL_EVENT_RECORD",
+      "role": "Confirms Dec. 10–12, 2010 Saban Forum in Washington and Barak participation as Israeli defense minister",
+      "url": "https://www.brookings.edu/events/the-saban-forum-2010-u-s-israeli-relations-facing-hard-choices/"
+    }
+  ],
+  "corrections": [
+    {
+      "record": "EFTA00389664",
+      "change": "Public Barak timeline previously labeled the Barak context as Wed. June 5, 2013 at noon. OCR shows a June 3 4pm appointment with Barak and a June 4 noon lunch with Barak and Bob Kerrey."
+    },
+    {
+      "record": "EFTA00404605",
+      "change": "Previously left as an undated/open receipt slot. OCR now source-locks a Sep. 23–24, 2012 scheduling chain and proposed roster."
+    }
+  ],
+  "open_questions": [
+    "Which proposed meetings in these scheduling chains were actually attended?",
+    "What was discussed in any meeting or call that did occur?",
+    "What does a source outside the scheduling layer independently establish about purpose?",
+    "Do additional records corroborate the proposed September 2012 guest roster as attendance?",
+    "Do additional records independently corroborate the May 2018 dinner attendance?",
+    "No inference of political influence, agency, illegal activity or misconduct is made from scheduling records alone."
+  ]
+}

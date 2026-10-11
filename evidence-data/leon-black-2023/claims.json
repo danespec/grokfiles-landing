@@ -1,0 +1,23 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "LB-2023-01",
+      "claim": "SDNY said on June 12, 2023 that it had not opened an investigation and was deconflicting with DANY.",
+      "source": "EFTA02731478",
+      "confidence": "P4"
+    },
+    {
+      "id": "LB-2023-02",
+      "claim": "Allegations were referred to SDNY; the intake notes are not adjudicated findings.",
+      "source": "EFTA02731488/EFTA02731486",
+      "confidence": "P4 for what notes say; not proof of allegations"
+    },
+    {
+      "id": "LB-2023-03",
+      "claim": "No opening EC, federal charging memo, indictment or declination letter appears in this reviewed batch.",
+      "source": "bounded Data Set 12 batch",
+      "confidence": "P2 silence map"
+    }
+  ]
+}

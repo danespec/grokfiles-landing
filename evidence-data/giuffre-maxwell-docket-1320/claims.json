@@ -1,0 +1,84 @@
+{
+  "schema": "gah.claims.v1",
+  "investigation": "giuffre-maxwell-docket-1320-privilege-gap",
+  "claims": [
+    {
+      "id": "C1",
+      "status": "supported",
+      "claim": "ECF 1320 was a rolling unseal and excluded Does 105, 107 and 110 while review continued.",
+      "sources": [
+        "ECF-1320"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "supported-with-limit",
+      "claim": "Maxwell's privilege log records attorney-client/work-product/common-interest communication lanes involving named lawyers, agents and Epstein/Dershowitz.",
+      "sources": [
+        "ECF-1320-16"
+      ],
+      "limit": "Does not disclose contents or prove misconduct."
+    },
+    {
+      "id": "C3",
+      "status": "party-argument",
+      "claim": "Giuffre's June 2016 brief characterized Maxwell as sharing common-interest arrangements with Dershowitz and Epstein.",
+      "sources": [
+        "ECF-1320-18"
+      ],
+      "limit": "Adversarial characterization; underlying agreements/orders require separate review."
+    },
+    {
+      "id": "C4",
+      "status": "supported",
+      "claim": "Redacted refiling ECF 1326-4 Log 153 identifies about 57 withheld documents concerning the then-ongoing criminal investigation of Defendant and others.",
+      "sources": [
+        "ECF-1326-4"
+      ],
+      "limit": "Does not identify others, agency, contents, theory or disposition."
+    },
+    {
+      "id": "C5",
+      "status": "supported",
+      "claim": "Judge Sweet reviewed the submitted law-enforcement materials in camera, found the qualified public-interest privilege established, denied Maxwell's motion to compel, and ordered a comprehensive copy of the log and documents preserved under seal.",
+      "sources": [
+        "ECF-264-1"
+      ],
+      "limit": "The ruling does not reveal the documents' contents, the law-enforcement agency, the unnamed others, investigative theory, or disposition."
+    },
+    {
+      "id": "C6",
+      "status": "party-argument",
+      "claim": "Later Maxwell filings stated that the law-enforcement materials were never produced to the defense and tied the privilege dispute to 57 separate documents.",
+      "sources": [
+        "ECF-1078",
+        "CR-ECF-285-EFTA00029100"
+      ],
+      "limit": "These are defense representations; the court's 2016 ruling independently establishes in-camera review and privilege protection, not every later defense characterization."
+    },
+    {
+      "id": "C7",
+      "status": "supported-with-limit",
+      "claim": "ECF 1367 modified the protective order in August 2026 to permit government production of documents received from Boies Schiller in response to the 2019 grand-jury subpoena, subject to EFTA withholding and redaction rules.",
+      "sources": [
+        "ECF-1367"
+      ],
+      "limit": "The order does not establish that the approximately 57 public-interest-privilege documents were part of the 2019 subpoena production or have been released."
+    },
+    {
+      "id": "C8",
+      "status": "supported-with-limit",
+      "claim": "The 2019 BSF subpoena expressly excluded validly privileged documents; released March/April BSF production indexes map a large civil-discovery production but do not identify a separate approximately 57-document law-enforcement tranche matching Log 153.",
+      "sources": [
+        "EFTA00080976",
+        "EFTA00090979",
+        "EFTA00090983",
+        "EFTA00090986",
+        "EFTA00030122",
+        "EFTA00010245",
+        "EFTA00010252"
+      ],
+      "limit": "This is a negative join. It does not prove DOJ never obtained copies through another route, later waiver, or separate law-enforcement channel."
+    }
+  ]
+}

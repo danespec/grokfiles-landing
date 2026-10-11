@@ -1,0 +1,62 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "epstein-july-2007-decision-gap",
+  "title": "The Week the Federal Epstein Case Changed Course: July 19–31, 2007",
+  "published": "2026-09-30",
+  "scope": "A source-bound chronology of the July 19–31, 2007 shift toward a state-based resolution of the federal Epstein investigation, with the unresolved basis for the exact two-year term identified as the decision-record gap.",
+  "sources": [
+    {
+      "id": "EFTA00225044",
+      "class": "PRIMARY_WITNESS_STATEMENT_TO_DOJ",
+      "record": "Marie Villafana 2019 statement",
+      "url": "/api/pdf?id=EFTA00225044",
+      "supports": "July 19 hold-off account; July 26 announcement account; July 31 term-sheet account; later explanation of internal disagreements.",
+      "limit": "Prepared in 2019; later recollection must be distinguished from contemporaneous records."
+    },
+    {
+      "id": "EFTA00020711",
+      "class": "PRIMARY_COURT_PRIVILEGE_LOG",
+      "record": "Second Supplemental Privilege Log Box #4",
+      "url": "/api/pdf?id=EFTA00020711",
+      "supports": "Contemporaneous document chronology: July 19 target-letter chains, July 26 indictment-change email, July 31 proposed plea terms and subsequent negotiations.",
+      "limit": "Privilege log describes documents but does not disclose their full privileged content."
+    },
+    {
+      "id": "DOJ-OPR-FULL",
+      "class": "PRIMARY_OFFICIAL_REPORT",
+      "record": "DOJ Office of Professional Responsibility Report on the Epstein investigation",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/United%20States%20v.%20Maxwell%2C%20No.%20120-cr-00330%20%28S.D.N.Y.%202020%29/293-01.pdf",
+      "supports": "OPR witness reconciliation; finding that Acosta ultimately made the two-year resolution decision; inability to identify contemporaneous basis/initial proposer of exact two-year term; no professional misconduct/improper motive evidence; poor-judgment conclusion.",
+      "limit": "Retrospective investigative report synthesizing records and interviews."
+    },
+    {
+      "id": "DOJ-OPR-EXEC",
+      "class": "PRIMARY_OFFICIAL_SUMMARY",
+      "record": "DOJ OPR executive summary / public findings",
+      "url": "https://www.justice.gov/opr/page/file/1336471/dl?inline=",
+      "supports": "Official summary of OPR conclusions regarding Acosta's authority, absence of professional misconduct/improper motive evidence, and poor-judgment finding.",
+      "limit": "Summary; full factual detail is in the full report."
+    },
+    {
+      "id": "JUL31-TERM-SHEET",
+      "class": "PRIMARY_COURT_RECORD",
+      "record": "Terms of Epstein Non-Prosecution Agreement, July 31, 2007",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/CA%20Florida%20Holdings%2C%20LLC%2C%20Publisher%20of%20the%20Palm%20Beach%20Post%20v.%20Aronberg%2C%20No.%2050-2019-CA-014681-XXXX-MB%20%28Fla.%2015th%20Cir.%20Ct.%202019%29/168.pdf",
+      "supports": "Opening state-resolution terms presented July 31: state guilty pleas, at least two years, offender registration, victim damages mechanism, closure of federal investigation after plea/sentence.",
+      "limit": "Opening term sheet, not the final September 24 NPA."
+    }
+  ],
+  "open_questions": [
+    "Who first proposed the exact two-year term of incarceration.",
+    "What contemporaneous analysis, if any, justified selecting two years rather than another term.",
+    "Whether the full unredacted July 19 management response and related July 26 decision communications can be publicly recovered.",
+    "What additional oral discussions between July 19 and July 26 informed the decision."
+  ],
+  "not_established": [
+    "That the July 19 hold instruction itself came from Acosta.",
+    "That the two-year decision had already been made on July 19.",
+    "That the missing contemporaneous rationale proves corruption, favoritism, political influence or another improper motive.",
+    "That the July 31 term sheet was identical to the final September 24 NPA.",
+    "Professional misconduct by Acosta or the other subjects; OPR expressly did not find it."
+  ]
+}

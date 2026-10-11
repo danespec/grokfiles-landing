@@ -1,0 +1,107 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "BEQC-01",
+      "claim": "On May 9, 2013 Epstein suggested that Barak let Putin know he would be in Moscow and see whether Putin wanted private time.",
+      "source": "EFTA01975333",
+      "confidence": "P4 direct contemporaneous document wording"
+    },
+    {
+      "id": "BEQC-02",
+      "claim": "EFTA01975333 does not establish that Putin received, answered or accepted the proposed contact, or that Epstein communicated directly with Putin.",
+      "source": "EFTA01975333",
+      "confidence": "P4 bounded negative control"
+    },
+    {
+      "id": "BEQC-03",
+      "claim": "The June 2015 thread contains Epstein's 'already asked' statement and a separate Putin keynote reference but does not join the inquiry to Putin.",
+      "source": "EFTA02396786",
+      "confidence": "P4 document wording; person asked unresolved"
+    },
+    {
+      "id": "BEQC-04",
+      "claim": "The May 2017 record schedules Barak to visit Epstein's New York house but does not establish an overnight stay.",
+      "source": "EFTA00450694",
+      "confidence": "P4 document wording / bounded negative control"
+    },
+    {
+      "id": "BEQC-05",
+      "claim": "Epstein introduced Barak and Jabor Al Thani in November 2018; a London meeting occurred and post-meeting correspondence refers to a security company discussed there.",
+      "source": "EFTA02609150 / EFTA02612143",
+      "confidence": "P4 contemporaneous chain"
+    },
+    {
+      "id": "BEQC-06",
+      "claim": "On January 1, 2019 Barak sent Jabor a Carbyne Qatar presentation, copied Epstein and proposed participation in 2022 Games security.",
+      "source": "EFTA02607775",
+      "confidence": "P4 direct proposal email"
+    },
+    {
+      "id": "BEQC-07",
+      "claim": "On January 20 Jabor said his security-services company wanted to commence discussions and separately asked for anti-drone services or technologies.",
+      "source": "EFTA02628648 / EFTA02628761",
+      "confidence": "P4 contemporaneous thread"
+    },
+    {
+      "id": "BEQC-08",
+      "claim": "On February 3 Barak named Carbyne CEO Amir Elichai as contact and promised a separate anti-drone email while still waiting for information; the subject identifies this as the first of two emails.",
+      "source": "EFTA02628004 / EFTA02628648",
+      "confidence": "P4 direct document wording"
+    },
+    {
+      "id": "BEQC-09",
+      "claim": "On February 4 Jabor named Lysys WLL country manager Dimitrios Demestichas and Elichai replied that Demestichas had already contacted him.",
+      "source": "EFTA02628761",
+      "confidence": "P4 direct contemporaneous thread"
+    },
+    {
+      "id": "BEQC-11",
+      "claim": "Barak attorney Bruce Goodman said Carbyne was found unsuited to the World Cup role and did not pursue a bid.",
+      "source": "Miami Herald, 2026",
+      "confidence": "P2 attributed participant-side response"
+    },
+    {
+      "id": "BEQC-12",
+      "claim": "Public 2021-2022 records document Barzan/RBAT and SCS as later Qatar World Cup counter-UAS channels, with no located procurement join to Carbyne.",
+      "source": "The Peninsula Qatar / SCS project record",
+      "confidence": "P2 public outcome context; not proof of entire Qatar architecture"
+    },
+    {
+      "id": "BEQC-10",
+      "claim": "No located source identifies the person/company behind Barak's awaited anti-drone information or supplies the promised second email after reconciliation of the EFTA chain, local DOJ/Barak indexes, and the original NAS raw-mail archive.",
+      "source": "EFTA02627830 / EFTA02628004 / EFTA02628648 / EFTA02628761 + NAS-BARAK-RAW-MAIL-AUDIT-20261006",
+      "confidence": "P3 strengthened negative finding; absence is not proof the email never existed"
+    },
+    {
+      "id": "BEQC-13",
+      "claim": "The located original Barak mailbox archive contains 40,976 HTML messages; the latest parsed message in the Gmail account is March 12, 2018, and the Hyperion account ends March 23, 2016, so the located raw archive predates the 2019 anti-drone promise.",
+      "source": "NAS-BARAK-RAW-MAIL-AUDIT-20261006",
+      "confidence": "P4 corpus inventory / date-header audit"
+    },
+    {
+      "id": "BEQC-14",
+      "claim": "A 2014 Barak-Epstein drone investment lane concerns Light & Strong, a solar high-altitude persistent UAV project; it is not evidence of a counter-drone supplier for Qatar in 2019.",
+      "source": "Raw Barak Gmail / EFTA02593250",
+      "confidence": "P4 direct historical context; negative bridge control"
+    },
+    {
+      "id": "BEQC-15",
+      "claim": "EFTA02656769 documents a May 2018 'trae' / Carbyne contact, but no reviewed source joins that contact to Barak's February 2019 anti-drone promise.",
+      "source": "EFTA02656769 + corpus audit",
+      "confidence": "P4 contact wording / P3 negative bridge finding"
+    },
+    {
+      "id": "BEQC-16",
+      "claim": "Across local Barak/DOJ indexes, the February 2019 Jabor-containing documents located in this lane are EFTA02627830, EFTA02628004, EFTA02628648 and EFTA02628761; they comprise the first-email chain and Carbyne/Lysys continuation, not a separate anti-drone reply.",
+      "source": "NAS-BARAK-RAW-MAIL-AUDIT-20261006",
+      "confidence": "P3 index reconciliation"
+    },
+    {
+      "id": "BEQC-17",
+      "claim": "Barak pitched Levitection to Epstein in 2016 as an advanced-radar/security investment, but the located Q technology concerns near-field concealed-weapons detection and no reviewed source joins it to the February 2019 anti-drone request.",
+      "source": "Raw Barak Gmail / EFTA00326339 / EFTA00599472 / Levitection investor brief",
+      "confidence": "P4 historical technology characterization / P3 negative bridge finding"
+    }
+  ]
+}

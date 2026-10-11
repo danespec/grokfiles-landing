@@ -1,0 +1,60 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "neoteny-3-fund-subscription-no-portfolio-attribution",
+  "title": "Neoteny 3: The $1M Fund Wire That Does Not Prove a Portfolio-Company Investment",
+  "published": "2026-09-30",
+  "scope": "Source-locked reconstruction of Southern Financial LLC's $1M Neoteny 3 LP subscription and the boundary against unsupported portfolio-company attribution.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+  "sources": [
+    {
+      "id": "NEOTENY-CALL",
+      "class": "PRIMARY_CAPITAL_CALL_AND_EMAIL",
+      "record": "EFTA02505285",
+      "url": "/pdf-lite?id=EFTA02505285",
+      "supports": "Neoteny 3 LP capital call; Southern Financial LLC partner; $1M subscribed interest; 100% call; due Apr. 16; First Republic wire instructions.",
+      "limit": "No portfolio-company allocation is identified."
+    },
+    {
+      "id": "NEOTENY-APPROVAL",
+      "class": "PRIMARY_EMAIL_CHAIN",
+      "record": "EFTA02505378",
+      "url": "/pdf-lite?id=EFTA02505378",
+      "supports": "Kahn asks to send $1M from Southern Financial; Epstein replies 'ok'.",
+      "limit": "Approval does not specify deployment to a portfolio company."
+    },
+    {
+      "id": "NEOTENY-BANK",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285436",
+      "url": "/pdf-lite?id=EFTA01285436",
+      "supports": "Apr. 13, 2015 $1M outgoing Southern Financial transfer to First Republic Bank / Neoteny 3 LP.",
+      "limit": "Statement proves fund payment, not company-level use."
+    },
+    {
+      "id": "NEOTENY-POSITION",
+      "class": "PRIMARY_INTERNAL_INVESTMENT_LEDGER_EMAIL",
+      "record": "EFTA02505439",
+      "url": "/pdf-lite?id=EFTA02505439",
+      "supports": "Apr. 13 Kahn update lists Neoteny at $1M among Joi-associated positions.",
+      "limit": "Does not identify a capital-attributable portfolio company."
+    },
+    {
+      "id": "RUN12",
+      "class": "GAH_BANK_FIRST_SYNTHESIS",
+      "record": "GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+      "supports": "BANK-4 fund classification and bounded no-look-through finding.",
+      "limit": "Archive-created synthesis; controlling claims remain tied to primary records."
+    }
+  ],
+  "open_questions": [
+    "Whether Neoteny 3 issued later partner statements identifying company-level cost allocations.",
+    "Whether Southern Financial received distributions tied to identifiable Neoteny 3 portfolio exits.",
+    "Whether side letters or deal notices exist outside the recovered corpus that would support company-level attribution."
+  ],
+  "not_established": [
+    "Direct Southern Financial ownership in any specific Neoteny 3 portfolio company.",
+    "Proportional attribution of Neoteny 3's public portfolio to Southern Financial.",
+    "Personal receipt of the $1M by Joi Ito.",
+    "Wrongdoing associated with the fund subscription."
+  ]
+}

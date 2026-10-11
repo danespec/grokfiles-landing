@@ -1,0 +1,125 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 164,
+  "page_id": "page_164",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_164.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_164.ocr.txt",
+  "image_metadata": {
+    "bytes": 100394,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "1b29585dc2d2fb1e4453399d50ad16be53ddacfd269c2e0025fb163ad7767203"
+  },
+  "ocr_text": "Who is that bum over there\nWhy it’s Jeffrey, | declare\nThe man of means\nin sweat shirt and jeans\nAt a black tie formal affair\nTo add to life’s piquancy .\nJeffery, with increasing frequency.\non any occasion ;\nwith little persuasion, _\nWill outrage the public decency. .\n; I have heard that Jeffrey will act\nWith morals, decorum and tact,\nwith honor, good will\nand truth, but forsooth,\nThis information may be inexact. |\nAs far as I can detect,\nJeffrey seems to select\nTo express his mood,\nTerms rude, crude and lewd,\nand politically incorrect.\nJeffrey at half a century,\nwith credentials plenipotentiary,\nthough up tono good =\nwhenever he could,\nhas avoided the penitentiary. -\n- Stuey\nee ee eee eee ee ee ee eee eee ee ee ee Ae\nHOUSE_OVERSIGHT_000164\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains typed and formatted text arranged in five distinct blocks, with varying indentation and boxed lines. The text appears to be a poem or verse speaking about a character named Jeffrey, describing his personality and actions. There are no images, drawings, photos, or handwriting on the page. The text is black on a white background, aligned mainly left with some lines indented or boxed.",
+    "Layout: top left text box",
+    "Layout: small right centered text box below top left",
+    "Layout: centered boxed text block",
+    "Layout: bottom right aligned boxed text",
+    "Layout: bottom right small signed text"
+  ],
+  "observations": [
+    "The page contains typed and formatted text arranged in five distinct blocks, with varying indentation and boxed lines. The text appears to be a poem or verse speaking about a character named Jeffrey, describing his personality and actions. There are no images, drawings, photos, or handwriting on the page. The text is black on a white background, aligned mainly left with some lines indented or boxed.",
+    "Layout: top left text box",
+    "Layout: small right centered text box below top left",
+    "Layout: centered boxed text block",
+    "Layout: bottom right aligned boxed text",
+    "Layout: bottom right small signed text"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Who is that bum over there",
+    "Why it’s Jeffrey, I declare",
+    "The man of means",
+    "in sweat shirt and jeans",
+    "At a black tie formal affair",
+    "To add to life’s piquancy",
+    "Jeffery, with increasing frequency.",
+    "on any occasion",
+    "with little persuasion,",
+    "Will outrage the public decency.",
+    "I have heard that Jeffrey will act",
+    "With morals, decorum and tact,",
+    "with honor, good will",
+    "and truth, but forsooth,",
+    "This information may be inexact.",
+    "As far as I can detect,",
+    "Jeffrey seems to select",
+    "To express his mood,",
+    "Terms rude, crude and lewd,",
+    "and politically incorrect.",
+    "Jeffrey at half a century,",
+    "with credentials plenipotentiary,",
+    "though up tono good",
+    "whenever he could,",
+    "has avoided the penitentiary.",
+    "Stuey"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Stuey",
+      "confidence": "high",
+      "note": "Printed signature-like text"
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:22.013Z",
+    "response_id": "resp_0121558e6234ee08006a502e9131c8819584546012241eebc9",
+    "raw_output_sha256": "e3843b6bfd1c47c97aebe9abc51e1cf55f208c6fc0198898882c000593447516"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0121558e6234ee08006a502e9131c8819584546012241eebc9",
+    "enriched_at": "2026-07-09T23:28:22.013Z"
+  },
+  "visual_summary": "The page contains typed and formatted text arranged in five distinct blocks, with varying indentation and boxed lines. The text appears to be a poem or verse speaking about a character named Jeffrey, describing his personality and actions. There are no images, drawings, photos, or handwriting on the page. The text is black on a white background, aligned mainly left with some lines indented or boxed.",
+  "layout": [
+    "top left text box",
+    "small right centered text box below top left",
+    "centered boxed text block",
+    "bottom right aligned boxed text",
+    "bottom right small signed text"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom right corner",
+      "text_as_seen": "Stuey",
+      "confidence": "high",
+      "note": "Printed signature-like text"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

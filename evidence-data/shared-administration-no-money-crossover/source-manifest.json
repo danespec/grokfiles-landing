@@ -1,0 +1,93 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "shared-administration-no-money-crossover",
+  "title": "Same Office, Same Bank Relationship, Different Money Rails",
+  "published": "2026-09-30",
+  "scope": "Negative-finding review of whether Southern Trust technology-investment funds can be traced into the 2006 Butterfly Trust beneficiary-payment rail.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN11_FINANCIAL_MACHINERY_MASTER.md",
+  "sources": [
+    {
+      "id": "FBI-SFI",
+      "class": "PRIMARY_GOVERNMENT_EMAIL",
+      "record": "EFTA00037690",
+      "url": "/pdf-lite?id=EFTA00037690",
+      "supports": "FBI Senior Financial Investigator characterization of Butterfly as a possible conduit based on SAR/FinCEN material.",
+      "limit": "The email itself warns SARs contain unsubstantiated allegations; named native PPTX/XLSX attachments are not recovered."
+    },
+    {
+      "id": "NYDFS",
+      "class": "PRIMARY_REGULATOR_RECORD",
+      "record": "EFTA00151495",
+      "url": "/pdf-lite?id=EFTA00151495",
+      "supports": "More than 120 wires totaling $2.65M from Butterfly and various other Epstein accounts to Butterfly beneficiaries; stated purposes included hotel, tuition, rent.",
+      "limit": "Mixed-account beneficiary aggregate; not every beneficiary is classified as a victim."
+    },
+    {
+      "id": "BUTTERFLY-TRUST",
+      "class": "PRIMARY_TRUST_INSTRUMENT",
+      "record": "EFTA01282018",
+      "url": "/pdf-lite?id=EFTA01282018",
+      "supports": "2006 Butterfly formation; Epstein grantor; Indyke and Kahn trustees.",
+      "limit": "Trust instrument does not identify later transaction-by-transaction signers."
+    },
+    {
+      "id": "DB-SFR",
+      "class": "PRIMARY_BANK_KYC",
+      "record": "EFTA01281966",
+      "url": "/pdf-lite?id=EFTA01281966",
+      "supports": "Southern Financial Relationship and Stewart Oldfield relationship-manager identification; Butterfly within relationship KYC.",
+      "limit": "Relationship-level evidence is not same-account evidence."
+    },
+    {
+      "id": "BUTTERFLY-CLOSE",
+      "class": "PRIMARY_BANK_RECORD",
+      "record": "EFTA01376144",
+      "url": "/pdf-lite?id=EFTA01376144",
+      "supports": "Butterfly deposit account ending 0552; Deutsche Bank operational record also lists Southern Trust accounts separately.",
+      "limit": "Operational grouping does not establish transfers between listed accounts."
+    },
+    {
+      "id": "STC-HONEYCOMB",
+      "class": "PRIMARY_BANK_WIRE",
+      "record": "EFTA01376049",
+      "url": "/pdf-lite?id=EFTA01376049",
+      "supports": "Southern Trust MMDA ending 9244; $20M Honeycomb Partners wire.",
+      "limit": "One technology-investment transaction; does not identify Butterfly as recipient."
+    },
+    {
+      "id": "STC-REPORTY",
+      "class": "PRIMARY_PAYMENT_MEMO",
+      "record": "EFTA01404004",
+      "url": "/pdf-lite?id=EFTA01404004",
+      "supports": "Southern Trust $1M Reporty investment to ERGO; From-line identifies Darren.",
+      "limit": "Does not establish any downstream beneficiary-payment use."
+    },
+    {
+      "id": "BUTTERFLY-TRANSACTIONS",
+      "class": "PRIMARY_TRANSACTION_EXTRACT",
+      "record": "EFTA01282041",
+      "url": "/pdf-lite?id=EFTA01282041",
+      "supports": "Recovered Butterfly transaction extract used for cross-entity search.",
+      "limit": "Extract is incomplete; absence of tech strings is a recovered-record negative, not proof of universal absence."
+    },
+    {
+      "id": "RUN11",
+      "class": "GAH_RECONSTRUCTION",
+      "record": "GAH_US_RUN11_FINANCIAL_MACHINERY_MASTER.md",
+      "supports": "Cross-domain account/entity/person/bank reconciliation and completeness assessment.",
+      "limit": "Archive-created synthesis; controlling claims remain tied to primary records above."
+    }
+  ],
+  "open_questions": [
+    "Whether the missing FinCEN flow-of-funds presentation and spreadsheet can be recovered.",
+    "Whether unusable JPMorgan wire workbooks contain additional cross-entity transfers.",
+    "Whether missing statement periods change the negative transaction-chain result.",
+    "Which human operator authorized or signed each individual beneficiary wire."
+  ],
+  "not_established": [
+    "A Southern Trust or technology-investment proceeds chain into the 2006 Butterfly payment rail.",
+    "A shared bank account between Southern Trust and the 2006 Butterfly Trust.",
+    "That every Butterfly beneficiary was a victim.",
+    "Money laundering, layering, conspiracy or facilitation from the documented administrative overlap."
+  ]
+}

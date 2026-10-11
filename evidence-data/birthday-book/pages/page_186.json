@@ -1,0 +1,97 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 186,
+  "page_id": "page_186",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_186.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_186.ocr.txt",
+  "image_metadata": {
+    "bytes": 5523087,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ef62f1f8b57034104138988ee81470532e7de7ca1316050e0a55bdc25127fdfb"
+  },
+  "ocr_text": "And the one truly interesting\nthing that happened in the last\n| 500 million years was\n. Quasispecies equation\nLanguage eens\nconstant fitness\n, , i perfect learning |\n. gon a V4 i Replicator equation\n; : aa | / | Aft Coherence\n0.705 : : y ty\n; ea . 200 300 400 | “rr re\ni Se sample sentences), b Accuracy of grammar acquisition, ¢ —\nHOUSE_OVERSIGHT_000186\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains text discussing language and equations related to quasispecies and replicators. There is a large blue oval with the word 'Language' in white, containing two smaller ovals labeled 'Quasispecies' and 'Replicators'. Below are headings 'Language equation' in orange and 'Quasispecies equation' and 'Replicator equation' in black, with mathematical formulas highlighted in orange and blue boxes. There are two line graphs: one labeled 'Grammatical coherence, φ' against 'Learning period (in sample sentences), b' and another titled 'Replicator equation' with axes labeled 'Coherence threshold' and 'Accuracy of grammar acquisition, q'.",
+    "Layout: Top text header",
+    "Layout: Large blue oval with 'Language' and two smaller ovals labeled 'Quasispecies' and 'Replicators' inside",
+    "Layout: Section titled 'Language equation' with formula in orange box",
+    "Layout: Section titled 'Quasispecies equation' with formulas in blue boxes",
+    "Layout: Two graphs below equations"
+  ],
+  "observations": [
+    "The page contains text discussing language and equations related to quasispecies and replicators. There is a large blue oval with the word 'Language' in white, containing two smaller ovals labeled 'Quasispecies' and 'Replicators'. Below are headings 'Language equation' in orange and 'Quasispecies equation' and 'Replicator equation' in black, with mathematical formulas highlighted in orange and blue boxes. There are two line graphs: one labeled 'Grammatical coherence, φ' against 'Learning period (in sample sentences), b' and another titled 'Replicator equation' with axes labeled 'Coherence threshold' and 'Accuracy of grammar acquisition, q'.",
+    "Layout: Top text header",
+    "Layout: Large blue oval with 'Language' and two smaller ovals labeled 'Quasispecies' and 'Replicators' inside",
+    "Layout: Section titled 'Language equation' with formula in orange box",
+    "Layout: Section titled 'Quasispecies equation' with formulas in blue boxes",
+    "Layout: Two graphs below equations"
+  ],
+  "dates": [],
+  "document_strings": [
+    "And the one truly interesting thing that happened in the last 500 million years was",
+    "Language",
+    "Quasispecies",
+    "Replicators",
+    "Language equation",
+    "Quasispecies equation",
+    "constant fitness",
+    "perfect learning",
+    "Replicator equation",
+    "Coherence threshold",
+    "Accuracy of grammar acquisition, q",
+    "Grammatical coherence, φ",
+    "Learning period (in sample sentences), b"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:32:06.764Z",
+    "response_id": "resp_09d50d8e07d6ff89006a502f705ea481959001c09b49e2ec6f",
+    "raw_output_sha256": "6dc4c037ed3e07079f80c391e4f04e54411f9efb28685141477021a8629224a6"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09d50d8e07d6ff89006a502f705ea481959001c09b49e2ec6f",
+    "enriched_at": "2026-07-09T23:32:06.764Z"
+  },
+  "visual_summary": "The page contains text discussing language and equations related to quasispecies and replicators. There is a large blue oval with the word 'Language' in white, containing two smaller ovals labeled 'Quasispecies' and 'Replicators'. Below are headings 'Language equation' in orange and 'Quasispecies equation' and 'Replicator equation' in black, with mathematical formulas highlighted in orange and blue boxes. There are two line graphs: one labeled 'Grammatical coherence, φ' against 'Learning period (in sample sentences), b' and another titled 'Replicator equation' with axes labeled 'Coherence threshold' and 'Accuracy of grammar acquisition, q'.",
+  "layout": [
+    "Top text header",
+    "Large blue oval with 'Language' and two smaller ovals labeled 'Quasispecies' and 'Replicators' inside",
+    "Section titled 'Language equation' with formula in orange box",
+    "Section titled 'Quasispecies equation' with formulas in blue boxes",
+    "Two graphs below equations"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

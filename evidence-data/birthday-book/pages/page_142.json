@@ -1,0 +1,112 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 142,
+  "page_id": "page_142",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_142.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_142.ocr.txt",
+  "image_metadata": {
+    "bytes": 3400634,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "84cb52116f58086dbe45ddd56fbbc4602b861d65f50a1beb6d2b8b1049ad49bf"
+  },
+  "ocr_text": "J™ Sy Palpetiite tr, Loase\n[i Ft po 2\nvy\nve ay\n3 THE 4\nOt kk 7a)\nHleo SINGLE MALT? |\n“ wy Ve Lk 2 amis ee\nS PURE POT STILL |\ni) IRISH WHISKEY\n%| Specially Bottled By His Friends in Ireland for\n‘ Rt, Hon Peter Mandelson MP,\n| Secretary of State for Northern Ireland 1999 to 2001\n= wnceeen. Rue. tealaid,\n® 40% Vol. Product of Ireland 70cle€ |8\nHOUSE_OVERSIGHT_000142\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page features a handwritten note above a colorful printed label of an Irish whiskey bottle. The handwritten note is cursive and dark pen or ink on a white background. The label is bordered in gold with the text THE TYRCONNELL SINGLE MALT with an illustration of horse jockeys racing. The text below describes the whiskey as PURE POT STILL IRISH WHISKEY specially bottled for the Rt. Hon Peter Mandelson MP, Secretary of State for Northern Ireland 1999 to 2001 by Andrew A. Watt & Co in Ireland. The label includes alcohol volume 40% and product volume 70cl, with a note on Riverstown, Dundalk, Ireland. The label and handwritten note are placed centrally on the page with ample white margin around.",
+    "Layout: handwritten text at top half center",
+    "Layout: printed whiskey bottle label at bottom half center",
+    "Photo/image candidate at bottom center: Colour illustrated whiskey bottle label with text and horse racing image"
+  ],
+  "observations": [
+    "The page features a handwritten note above a colorful printed label of an Irish whiskey bottle. The handwritten note is cursive and dark pen or ink on a white background. The label is bordered in gold with the text THE TYRCONNELL SINGLE MALT with an illustration of horse jockeys racing. The text below describes the whiskey as PURE POT STILL IRISH WHISKEY specially bottled for the Rt. Hon Peter Mandelson MP, Secretary of State for Northern Ireland 1999 to 2001 by Andrew A. Watt & Co in Ireland. The label includes alcohol volume 40% and product volume 70cl, with a note on Riverstown, Dundalk, Ireland. The label and handwritten note are placed centrally on the page with ample white margin around.",
+    "Layout: handwritten text at top half center",
+    "Layout: printed whiskey bottle label at bottom half center",
+    "Photo/image candidate at bottom center: Colour illustrated whiskey bottle label with text and horse racing image"
+  ],
+  "dates": [
+    "1999",
+    "2001",
+    "1999 to 2001"
+  ],
+  "document_strings": [
+    "THE TYRCONNELL SINGLE MALT",
+    "PURE POT STILL",
+    "IRISH WHISKEY",
+    "Specially Bottled By His Friends in Ireland for the Rt. Hon Peter Mandelson MP, Secretary of State for Northern Ireland 1999 to 2001",
+    "ANDREW A. WATT & CO Riverstown, Dundalk, Ireland.",
+    "40% Vol. Product of Ireland 70cl"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Very occasionally, taking you by surprise in some far off places",
+      "confidence": "high",
+      "note": "Clear cursive handwriting in dark ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:25:16.029Z",
+    "response_id": "resp_035bb1232337eac4006a502dd681b88197ba1c627213ece1b8",
+    "raw_output_sha256": "bbcd7dffb9cfa10ae347a7ffe24257d29b9ef32b6e81383487584cebb941c0c6"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_035bb1232337eac4006a502dd681b88197ba1c627213ece1b8",
+    "enriched_at": "2026-07-09T23:25:16.029Z"
+  },
+  "visual_summary": "The page features a handwritten note above a colorful printed label of an Irish whiskey bottle. The handwritten note is cursive and dark pen or ink on a white background. The label is bordered in gold with the text THE TYRCONNELL SINGLE MALT with an illustration of horse jockeys racing. The text below describes the whiskey as PURE POT STILL IRISH WHISKEY specially bottled for the Rt. Hon Peter Mandelson MP, Secretary of State for Northern Ireland 1999 to 2001 by Andrew A. Watt & Co in Ireland. The label includes alcohol volume 40% and product volume 70cl, with a note on Riverstown, Dundalk, Ireland. The label and handwritten note are placed centrally on the page with ample white margin around.",
+  "layout": [
+    "handwritten text at top half center",
+    "printed whiskey bottle label at bottom half center"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Very occasionally, taking you by surprise in some far off places",
+      "confidence": "high",
+      "note": "Clear cursive handwriting in dark ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom center",
+      "description": "Colour illustrated whiskey bottle label with text and horse racing image",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "1999 to 2001"
+  ],
+  "confidence": "high"
+}

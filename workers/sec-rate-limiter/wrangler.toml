@@ -1,0 +1,20 @@
+# gah-sec-rate-limiter — standalone Worker for the GAH security rate limiter.
+# Deploy FIRST, then bind it from the Pages project (see README.md).
+# No production deployment is authorized by this branch; this file documents
+# the required configuration for the reviewer (ChatGPT).
+
+name = "gah-sec-rate-limiter"
+main = "src/index.js"
+compatibility_date = "2026-10-09"
+
+[[durable_objects.bindings]]
+name = "GAH_SEC_RATE_LIMITER"
+class_name = "GahSecRateLimiterDO"
+
+# SEC-PATH-LEAK-001: Use new_sqlite_classes for the greenfield production
+# deployment. There is no existing production DO namespace to preserve.
+# Do NOT change the staging worker (gah-limiter-staging-517b8499) — it already
+# exists with the legacy migration; changing it requires a new class name.
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["GahSecRateLimiterDO"]

@@ -1,0 +1,96 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 27,
+  "page_id": "page_027",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_027.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_027.ocr.txt",
+  "image_metadata": {
+    "bytes": 463110,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "21975647e116eef1fcef259a22ce9a2c8c924ad9df82334cdc180296179015ba"
+  },
+  "ocr_text": "oo 4 De ems f ; é Reg fist aoe Aa . (pry bias . oy of ba. | 7 7 .\nen ee oe ee be I ee\noe | Aa Laeasheg OME cantn. Dy hala oe te Meet net oo Soe\naes fiat Abe ge uber [RAs | Ree (As ont Ce\nLO DSAA TEES ecleeurhen Sumew &ytars ¢ 1b\nPee a i nn reir ai : ; A &e 7 - on : : ay - j - fi 7 f A K , ne ;\nonal Law aw An Pvt oeks Downe a2 ucfe Kafe | f a. if rn\neee eee coe ne a coe igh os Poe\nS ae | ado te powet lo O.Grukts AS ire ai . “ & os : :\n| phar Tease Q Liked eel wie\nee i ae AWA Be FRA PNET AE MS NER\nQl Prony Madre FAG bree Wpe® Foor tn Ober me\nUL Axe Fey weed pe Mele Mite hketigte ted\nee eee) ee ee ee oe ee se SLE . (Ay Mid ky ee\noes | tb. CREM Fal ho ett Abe GREE\ngent | 4 thors cet acer cco ARN 0 Fk A? Ne Mees ee URED es\ni en gh Eg Ae er ea Po a + “_ ae : oe . - ae . a hed 8 ne\noy ae a nl a be fh Casall aa NG S. Pe . f\\ Ke Reed Ay = 5 he Ay PUA Fee. oT\nok “Che S fo OSTEO Oe, Ee a Vey JAR ee\neee 4 be Ak Cte thn baie he PRE EN CREE 3\nHOUSE_OVERSIGHT_000027\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten page with black ink on white paper, the handwriting is somewhat cursive and slanted. The text is mostly legible but contains some crossing-out and smudging. The page appears old and slightly worn. There is a vertical line on the left margin. No images, drawings, or signature marks are present.",
+    "Layout: handwritten text in upper two thirds",
+    "Layout: blank lower third"
+  ],
+  "observations": [
+    "A handwritten page with black ink on white paper, the handwriting is somewhat cursive and slanted. The text is mostly legible but contains some crossing-out and smudging. The page appears old and slightly worn. There is a vertical line on the left margin. No images, drawings, or signature marks are present.",
+    "Layout: handwritten text in upper two thirds",
+    "Layout: blank lower third"
+  ],
+  "dates": [
+    "Nov. 11 - 19"
+  ],
+  "document_strings": [
+    "I don't recall how many or there names - My grandfather died at an early age - I have one Brother that was born Nov. 11 - 19 - I STARTED school when I was 6 years old - While in school I was a fairly good student - until I graduated - The Teachers I liked and who was Mr. Fox - Mr. FRANK & Mr. Merra also my history Teacher - Mrs. Forzendennan Mrs. Fox used to take the class to Ebbets Field to see the Brooklyn Dodgers play - Mr. FRANK was the SHOP Teacher Amy Millender was the dance Teacher -"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top left to mid right",
+      "text_as_seen": "I don't recall how many or there names - My grandfather died at an early age - I have one Brother that was born Nov. 11 - 19 - I STARTED school when I was 6 years old - While in school I was a fairly good student - until I graduated - The Teachers I liked and who was Mr. Fox - Mr. FRANK & Mr. Merra also my history Teacher - Mrs. Forzendennan Mrs. Fox used to take the class to Ebbets Field to see the Brooklyn Dodgers play - Mr. FRANK was the SHOP Teacher Amy Millender was the dance Teacher -",
+      "confidence": "medium",
+      "note": "Text is legible with minor smudges, some difficulty distinguishing some letters."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:06:32.495Z",
+    "response_id": "resp_0e47378a2225d5fe006a502970fb048193914fe65085aba3aa",
+    "raw_output_sha256": "63e6a20a7d5d1bae6f3f1718bfa333df72bd29ee88ecc9f30e285a35136a02ac"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e47378a2225d5fe006a502970fb048193914fe65085aba3aa",
+    "enriched_at": "2026-07-09T23:06:32.495Z"
+  },
+  "visual_summary": "A handwritten page with black ink on white paper, the handwriting is somewhat cursive and slanted. The text is mostly legible but contains some crossing-out and smudging. The page appears old and slightly worn. There is a vertical line on the left margin. No images, drawings, or signature marks are present.",
+  "layout": [
+    "handwritten text in upper two thirds",
+    "blank lower third"
+  ],
+  "handwriting": [
+    {
+      "location": "top left to mid right",
+      "text_as_seen": "I don't recall how many or there names - My grandfather died at an early age - I have one Brother that was born Nov. 11 - 19 - I STARTED school when I was 6 years old - While in school I was a fairly good student - until I graduated - The Teachers I liked and who was Mr. Fox - Mr. FRANK & Mr. Merra also my history Teacher - Mrs. Forzendennan Mrs. Fox used to take the class to Ebbets Field to see the Brooklyn Dodgers play - Mr. FRANK was the SHOP Teacher Amy Millender was the dance Teacher -",
+      "confidence": "medium",
+      "note": "Text is legible with minor smudges, some difficulty distinguishing some letters."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Nov. 11 - 19"
+  ],
+  "confidence": "medium"
+}

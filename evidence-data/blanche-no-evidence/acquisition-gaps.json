@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-07-20T18:06:37.500Z",
+  "nonblocking_policy": "Unavailable or unpublished records are blockers only when a published claim requires them.",
+  "data": [
+    {
+      "gap_id": "GAP-001",
+      "exact_question": "Has the Senate published official questions for the record or Blanche's written answers?",
+      "why_it_matters": "Could narrow or modify the hearing language.",
+      "record_needed": "QFRs and written responses",
+      "likely_custodian": "Senate Judiciary Committee",
+      "acquisition_route": "official committee and nomination-record check",
+      "current_effort": "not located during 005B/005C check",
+      "status": "NOT_YET_PUBLICLY_LOCATED_AS_OF_2026-07-20T18:06:37.500Z"
+    },
+    {
+      "gap_id": "GAP-002",
+      "exact_question": "Did DOJ create public person-specific declination, credibility, or corroboration analyses for uncharged actors?",
+      "why_it_matters": "Would distinguish insufficient evidence from no public assessment.",
+      "record_needed": "declination/prosecution memoranda or public charging analyses",
+      "likely_custodian": "DOJ/FBI",
+      "acquisition_route": "public DOJ releases, litigation, EFTA productions",
+      "current_effort": "not publicly located",
+      "status": "NO_PUBLIC_ASSESSMENT_LOCATED_NONBLOCKING"
+    },
+    {
+      "gap_id": "GAP-003",
+      "exact_question": "Will DOJ document the July 16 survivor meeting and any follow-up intake?",
+      "why_it_matters": "Could change the current evidence classification.",
+      "record_needed": "meeting record, intake log, referral, or official public statement",
+      "likely_custodian": "DOJ/Senate Judiciary",
+      "acquisition_route": "official statements and future filings",
+      "current_effort": "not located",
+      "status": "UPDATE_TRIGGER"
+    },
+    {
+      "gap_id": "GAP-004",
+      "exact_question": "Is a complete official stenographic Day 1 transcript available?",
+      "why_it_matters": "Would replace or supersede the caption-plus-human-certification layer.",
+      "record_needed": "official transcript",
+      "likely_custodian": "Senate Judiciary Committee",
+      "acquisition_route": "official hearing page and committee document releases",
+      "current_effort": "not located",
+      "status": "NOT_PUBLICLY_LOCATED_NONBLOCKING"
+    }
+  ]
+}

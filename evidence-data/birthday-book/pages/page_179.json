@@ -1,0 +1,223 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 179,
+  "page_id": "page_179",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_179.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_179.ocr.txt",
+  "image_metadata": {
+    "bytes": 3257563,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "638b8c39a1c1981c76449f9f2addaf997b7dd2198f8700618176341b0286c31b"
+  },
+  "ocr_text": "“\\ | } 's | _— Ys & canst .\nMad ol ovdiy am, \\ i/ ee — J\nop\nwet. 4%\n‘\\ *| - i Winasaas\nHOUSE_OVERSIGHT_000179\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page with 'HAPPY BIRTHDAY' in large red text at top and 'MANY HAPPY RETURNS' in large red text at bottom. In the center, a doodle resembling a structure with seven handwritten arrows pointing outwards, each labeled with different phrases. Below this are two shapes with colored dots and letters, and a simple sketch of a person's face with glasses and curly hair, with a handwritten word next to it.",
+    "Layout: Top red text line",
+    "Layout: Central cluster of handwritten phrases with arrows and doodle",
+    "Layout: Two colored dot shapes with letters",
+    "Layout: Simple face sketch with handwritten label",
+    "Layout: Bottom red text line",
+    "Drawing candidate at center, under handwritten arrows cluster: Doodle with a central geometric shape and arrows emanating outward",
+    "Drawing candidate at center, below doodle: Irregular shapes outlined in blue with colored dots labeled 'b', 'c', 'g'",
+    "Drawing candidate at center, below shapes and text: Simple face sketch with eyeglasses and curly hair drawn in blue ink"
+  ],
+  "observations": [
+    "Page with 'HAPPY BIRTHDAY' in large red text at top and 'MANY HAPPY RETURNS' in large red text at bottom. In the center, a doodle resembling a structure with seven handwritten arrows pointing outwards, each labeled with different phrases. Below this are two shapes with colored dots and letters, and a simple sketch of a person's face with glasses and curly hair, with a handwritten word next to it.",
+    "Layout: Top red text line",
+    "Layout: Central cluster of handwritten phrases with arrows and doodle",
+    "Layout: Two colored dot shapes with letters",
+    "Layout: Simple face sketch with handwritten label",
+    "Layout: Bottom red text line",
+    "Drawing candidate at center, under handwritten arrows cluster: Doodle with a central geometric shape and arrows emanating outward",
+    "Drawing candidate at center, below doodle: Irregular shapes outlined in blue with colored dots labeled 'b', 'c', 'g'",
+    "Drawing candidate at center, below shapes and text: Simple face sketch with eyeglasses and curly hair drawn in blue ink"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HAPPY BIRTHDAY",
+    "JEE",
+    "QCD",
+    "Munny",
+    "MANY HAPPY RETURNS"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center, around doodle with arrows",
+      "text_as_seen": "Evolution of Human Languages",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, right of doodle",
+      "text_as_seen": "Real Meaning of Quantum Mechanics",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, right of doodle, below previous",
+      "text_as_seen": "Mathematical Regularities in Human Affairs",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, right of doodle, below previous",
+      "text_as_seen": "Other seeking laws",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, left of doodle",
+      "text_as_seen": "Significity & Complexity",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, left of doodle, below previous",
+      "text_as_seen": "Mind - body",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, below doodle cluster",
+      "text_as_seen": "JEE",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "below colored shapes",
+      "text_as_seen": "QCD",
+      "confidence": "high",
+      "note": "Handwritten in pencil or very light ink"
+    },
+    {
+      "location": "below face sketch, right",
+      "text_as_seen": "Munny",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:30:47.215Z",
+    "response_id": "resp_0613568f52fedf80006a502f1cdaec81969e7e17b6dcc2bb74",
+    "raw_output_sha256": "c77091acad07d66fd97517ab3a650183488f880ec54411397cb4de0249b49d35"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0613568f52fedf80006a502f1cdaec81969e7e17b6dcc2bb74",
+    "enriched_at": "2026-07-09T23:30:47.215Z"
+  },
+  "visual_summary": "Page with 'HAPPY BIRTHDAY' in large red text at top and 'MANY HAPPY RETURNS' in large red text at bottom. In the center, a doodle resembling a structure with seven handwritten arrows pointing outwards, each labeled with different phrases. Below this are two shapes with colored dots and letters, and a simple sketch of a person's face with glasses and curly hair, with a handwritten word next to it.",
+  "layout": [
+    "Top red text line",
+    "Central cluster of handwritten phrases with arrows and doodle",
+    "Two colored dot shapes with letters",
+    "Simple face sketch with handwritten label",
+    "Bottom red text line"
+  ],
+  "handwriting": [
+    {
+      "location": "center, around doodle with arrows",
+      "text_as_seen": "Evolution of Human Languages",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, right of doodle",
+      "text_as_seen": "Real Meaning of Quantum Mechanics",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, right of doodle, below previous",
+      "text_as_seen": "Mathematical Regularities in Human Affairs",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, right of doodle, below previous",
+      "text_as_seen": "Other seeking laws",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, left of doodle",
+      "text_as_seen": "Significity & Complexity",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, left of doodle, below previous",
+      "text_as_seen": "Mind - body",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "center, below doodle cluster",
+      "text_as_seen": "JEE",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    },
+    {
+      "location": "below colored shapes",
+      "text_as_seen": "QCD",
+      "confidence": "high",
+      "note": "Handwritten in pencil or very light ink"
+    },
+    {
+      "location": "below face sketch, right",
+      "text_as_seen": "Munny",
+      "confidence": "high",
+      "note": "Handwritten in blue ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center, under handwritten arrows cluster",
+      "description": "Doodle with a central geometric shape and arrows emanating outward",
+      "confidence": "high"
+    },
+    {
+      "location": "center, below doodle",
+      "description": "Irregular shapes outlined in blue with colored dots labeled 'b', 'c', 'g'",
+      "confidence": "high"
+    },
+    {
+      "location": "center, below shapes and text",
+      "description": "Simple face sketch with eyeglasses and curly hair drawn in blue ink",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

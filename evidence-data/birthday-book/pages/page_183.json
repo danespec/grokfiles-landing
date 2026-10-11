@@ -1,0 +1,99 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 183,
+  "page_id": "page_183",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_183.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_183.ocr.txt",
+  "image_metadata": {
+    "bytes": 3845417,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "cad2e7f4255a350b638929f23846aae3f49dd8e779c67050098e7a662dd4fe38"
+  },
+  "ocr_text": "Memoryless learner ‘a\n= Diversity threshold ,\nN>nlogn 2 a,\n° NaN ,\nCommunicative potential (ore SFT FIO Soe a\n| ae ‘4 538 Time\nP(LpLy)= 5, 2,0) Pid * Py Ws)\ni=l j=\nx0” psec Probability of escape a ae\n_ft \\ P= Pil - ee \\\n$10\" = Mutation }-— 80%: f landscapes _\n2 ~ ——— ~- fen A os oT ha iE - 2\nN10 | asa — t 10 hy a mar settctawe mz\nse Threshold of CIN | Seer ee\nSe ee ee S (Lee (N12) |g aga a\nSelective positions, m u Selective positions, m\nAn alphabet is a finite list of symbols. Sentences are strings of symbols. -\nA language is a set of sentences. A finite language has a finite number of\nsentences. An infinite language has an infinite number of sentences. There\nare infinitely many finite languages.\nHuman languages are infinite.\nA grammar is a finite list of rules that generates a language. Grammars\nare equivalent to computers. Finite state grammars generate regular\nlanguages which are accepted by finite state machines. Phrase structure\ngrammars give rise to computable languages which are Turing complete.\nFor each such language there exists a Turing machine that accepts every\nsentence that is part of the language, but may compute forever on\nsentences that do not belong the language.\n, The language of mathematics is not computable.\nLearning is selection among a restricted set of hypothocos. .\nAmbitious learners exceed their teachers.\nemer |\nHOUSE_OVERSIGHT_000183\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains typed text and mathematical formulas related to language and mathematics theory, with some highlighted text and two small graphs. The page has a purple highlighted title area at the top, mathematical notation and formulas in the middle, and paragraphs of text below with words highlighted in orange and blue. There are no handwritten notes or photos.",
+    "Layout: Title highlighted in purple at top",
+    "Layout: Mathematical formulas and two small graphs below title",
+    "Layout: Paragraphs of text below the graphs with selective colored highlights"
+  ],
+  "observations": [
+    "Page contains typed text and mathematical formulas related to language and mathematics theory, with some highlighted text and two small graphs. The page has a purple highlighted title area at the top, mathematical notation and formulas in the middle, and paragraphs of text below with words highlighted in orange and blue. There are no handwritten notes or photos.",
+    "Layout: Title highlighted in purple at top",
+    "Layout: Mathematical formulas and two small graphs below title",
+    "Layout: Paragraphs of text below the graphs with selective colored highlights"
+  ],
+  "dates": [],
+  "document_strings": [
+    "and with language we can write our own evolution (and its mathematics)",
+    "Memoryless learner",
+    "N > n log n",
+    "Diversity threshold",
+    "Virus load",
+    "Time",
+    "Communicative potential",
+    "F(L_i,L_j) = 1\\/2 \\sum_{i=1}^{1} \\/\\sum_{j=1}^{\\infty} \\sigma_i (p_i^j q_i^j + p_i^j q_i^j)",
+    "Probability of escape",
+    "P = e^{-NzCu^r}",
+    "Mutation",
+    "Threshold of CIN",
+    "n_c > (1 + \\frac{p_0}{u}) K(N,r,p)",
+    "landscapes",
+    "Selective positions, m",
+    "An alphabet is a finite list of symbols. Sentences are strings of symbols. A language is a set of sentences. A finite language has a finite number of sentences. An infinite language has an infinite number of sentences. There are infinitely many finite languages.",
+    "Human languages are infinite.",
+    "A grammar is a finite list of rules that generates a language. Grammars are equivalent to computers. Finite state grammars generate regular languages which are accepted by finite state machines. Phrase structure grammars give rise to computable languages which are Turing complete. For each such language there exists a Turing machine that accepts every sentence that is part of the language, but may compute forever on sentences that do not belong the language.",
+    "The language of mathematics is not computable.",
+    "Learning is selection among a restricted set of hypotheses.",
+    "Ambitious learners exceed their teachers."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:31:31.093Z",
+    "response_id": "resp_0aecb6fd9479ea69006a502f495ac8819396f402726a98f28a",
+    "raw_output_sha256": "537e3a33cb373308c8e6704baf80dadb68d6b275f0615e9adfd13b8149ca3060"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0aecb6fd9479ea69006a502f495ac8819396f402726a98f28a",
+    "enriched_at": "2026-07-09T23:31:31.093Z"
+  },
+  "visual_summary": "Page contains typed text and mathematical formulas related to language and mathematics theory, with some highlighted text and two small graphs. The page has a purple highlighted title area at the top, mathematical notation and formulas in the middle, and paragraphs of text below with words highlighted in orange and blue. There are no handwritten notes or photos.",
+  "layout": [
+    "Title highlighted in purple at top",
+    "Mathematical formulas and two small graphs below title",
+    "Paragraphs of text below the graphs with selective colored highlights"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

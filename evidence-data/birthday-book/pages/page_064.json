@@ -1,0 +1,139 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 64,
+  "page_id": "page_064",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_064.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_064.ocr.txt",
+  "image_metadata": {
+    "bytes": 315132,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "81565d977a8afa5ae1189d32b8af8c42946e8e96804b6eedb2d101dea2b8c969"
+  },
+  "ocr_text": "bring her to your beautiful, civilized, impressive home on Maple Ave. Think back on that now. That\nshows a lot. It really does. You didn’t give a shit about what she thought. And she couldn’t have been too\nimpressed. You were seriously easy going ~ never up tight. Never worried, always confident. That aspect\nof your personality, of course coupled with your brilliance and intellect is what made you who and what\nyou are today. That don’t give a shit attitude, your calculated aloofness, your sense of humor and most\nimportantly that confidence came to you carly on. You had to have confidence and an 1 don’t give a shit\nattitude to bringli—finto your Sea Gate world. It worked! You began to realize that you could get away\nwith shit! That chicks and people in general were schmucks! You sensed that you were sharper and more\nastute than most.\nEspecially the ones who had women, money, position and power. Yes, your charisma and persuasive ways\ncame very early on. And you didn’t learn life’s lessons in your house. You learned them from us (ne,\nfrog, WE) from Europe, Interlochen, our trips to the city and all the people you met along the way. Maybe\nyou picked up a little from Timmy, too. Remember meeting Phillie? He’s 16. He said he’ll always\nremember how you said that Timmy taught you a lot about business. I know you enhanced that a bit, but\nthat was a great thing to say to a kid., and Pil never forget it either. Warren and Phillie are crazy about\neach other and the kid is obviously enamoured by you and loved meeting you. It meant a lot to him and\nme, He’s really a great kid — has that easy going, confident manner. Good looking kid.\nSo now you’re fifty. No sweat Jeff. You look great, you’re probably in the best shape of your life and\nyou're not slowing down one bit. If no one told you how old you were — wouldn't you think you were 36\nor something? Just don’t get bored and stay healthy.\nAnd then there’s Warren. He’s as hilarious as ever and exactly the same as he was 35 yrs. ago with his\ntrench coat and his business man’s boots BACK THEN! We see each other pretty often. When can\nWarren and I get together w/ you for at least an evening and just get Warren started, you know the way we\nused to, Maybe we need to include Zucca as a prop for Warren.\nff you look at our little group of you , Warren, Frog and me. We were very close, although we never said\nor knew it back then. We didn’t have girlfriends, we never even dated. We didn’t look to our families\nreally for anything, we had cach other. That was through high school. Then when we went to college we\nwere still close but we each began go branch out from the group. We had great times and I’m convinced —\nand | know this as fact: You guys made me what I became today and there’s not a day that goes by that I\ndon’t think about you. So Jeff, even though we don’t speak that often, and our lives don’t intersect, you\nreally are a part of me and I will always be grateful for the great times we had. You have been and still are\na preat influence for me. You don’t know it, but you’re my kid’s role model. That’s why it’s so satisfying\nto recall the past with you. It has shaped both of us. When Warren and | get together, who and what do\nyou think we talk about? You, You, You, You, its constant — If can’t stand it anymore. :\nThat’s it for now. 1 know I got a bit sentimental, but it’s the occasion. Take good care. Pil always have\nthe fondest memories of our past and I can honestly say they were the best years of my life — even though J\ncouldn’t ever get laid.\nEternally and with love,\nJohnny B py .\nHOUSE_OVERSIGHT_000064\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains a typed letter with a redacted word in the first paragraph. The letter discusses personal reflections and mentions various names. There is a signature at the bottom, comprising a cursive handwritten mark and a printed name below it. The text is left aligned in paragraphs, and there is a solid blacked-out redaction over part of one word in the first paragraph. The letter is on a white background with black text. The bottom right corner contains a page identifier 'HOUSE_OVERSIGHT_000064'.",
+    "Layout: typed text block in paragraphs",
+    "Layout: redacted text block in first paragraph",
+    "Layout: handwritten signature below letter",
+    "Layout: printed name below handwritten signature",
+    "Layout: page identifier bottom right corner"
+  ],
+  "observations": [
+    "Page contains a typed letter with a redacted word in the first paragraph. The letter discusses personal reflections and mentions various names. There is a signature at the bottom, comprising a cursive handwritten mark and a printed name below it. The text is left aligned in paragraphs, and there is a solid blacked-out redaction over part of one word in the first paragraph. The letter is on a white background with black text. The bottom right corner contains a page identifier 'HOUSE_OVERSIGHT_000064'.",
+    "Layout: typed text block in paragraphs",
+    "Layout: redacted text block in first paragraph",
+    "Layout: handwritten signature below letter",
+    "Layout: printed name below handwritten signature",
+    "Layout: page identifier bottom right corner"
+  ],
+  "dates": [],
+  "document_strings": [
+    "bring her to your beautiful, civilized, impressive home on Maple Ave. Think back on that now. That shows a lot. It really does. You didn't give a shit about what she thought. And she couldn't have been too impressed. You were seriously easy going - never up tight. Never worried, always confident. That aspect of your personality, of course coupled with your brilliance and intellect is what made you who and what you are today. That don't give a shit attitude, your calculated aloofness, your sense of humor and most importantly that confidence came to you early on. You had to have confidence and an I don't give a shit attitude to bring [redacted] into your Sea Gate world. It worked! You began to realize that you could get away with shit! That chicks and people in general were schmucks! You sensed that you were sharper and more astute than most.",
+    "Especially the ones who had women, money, position and power. Yes, your charisma and persuasive ways came very early on. And you didn't learn life's lessons in your house. You learned them from us (me, frog, WE) from Europe, Interlochen, our trips to the city and all the people you met along the way. Maybe you picked up a little from Timmy, too. Remember meeting Phillie? He's 16. He said he'll always remember how you said that Timmy taught you a lot about business. I know you enhanced that a bit, but that was a great thing to say to a kid., and I'll never forget it either. Warren and Phillie are crazy about each other and the kid is obviously enamoured by you and loved meeting you. It meant a lot to him and me. He's really a great kid - has that easy going, confident manner. Good looking kid.",
+    "So now you're fifty. No sweat Jeff. You look great, you're probably in the best shape of your life and you're not slowing down one bit. If no one told you how old you were - wouldn't you think you were 36 or something? Just don't get bored and stay healthy.",
+    "And then there's Warren. He's as hilarious as ever and exactly the same as he was 35 yrs. ago with his trench coat and his business man's boots BACK THEN! We see each other pretty often. When can Warren and I get together w/ you for at least an evening and just get Warren started, you know the way we used to. Maybe we need to include Zucca as a prop for Warren.",
+    "If you look at our little group of you, Warren, Frog and me. We were very close, although we never said or knew it back then. We didn't have girlfriends, we never even dated. We didn't look to our families really for anything, we had each other. That was through high school. Then when we went to college we were still close but we each began go branch out from the group. We had great times and I'm convinced - and I know this as fact: You guys made me what I became today and there's not a day that goes by that I don't think about you. So Jeff, even though we don't speak that often, and our lives don't intersect, you really are a part of me and I will always be grateful for the great times we had. You have been and still are a great influence for me. You don't know it, but you're my kid's role model. That's why it's so satisfying to recall the past with you. It has shaped both of us. When Warren and I get together, who and what do you think we talk about? You, You, You, You, it's constant - I can't stand it anymore.",
+    "That's it for now. I know I got a bit sentimental, but it's the occasion. Take good care. I'll always have the fondest memories of our past and I can honestly say they were the best years of my life - even though I couldn't ever get laid.",
+    "Eternally and with love,",
+    "Johnny B y"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center below main text",
+      "text_as_seen": "Johnny B y",
+      "confidence": "high",
+      "note": "printed name below cursive signature"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "bottom center below main text",
+      "text_as_seen": "signature cursive mark",
+      "confidence": "medium",
+      "note": "single cursive line resembling a signature"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "first paragraph approximately middle left",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "solid black redaction obscuring part of one word"
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [
+    "The redacted word in the first paragraph is obscured, so the full text and meaning there are incomplete."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:12:53.875Z",
+    "response_id": "resp_0b48951e8ee0e445006a502ae84df48194a45f99bd766ffdac",
+    "raw_output_sha256": "db56233e70d7292b92cb7322ca42813cf83554ac9254be31397f46698fc539d6"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b48951e8ee0e445006a502ae84df48194a45f99bd766ffdac",
+    "enriched_at": "2026-07-09T23:12:53.875Z"
+  },
+  "visual_summary": "Page contains a typed letter with a redacted word in the first paragraph. The letter discusses personal reflections and mentions various names. There is a signature at the bottom, comprising a cursive handwritten mark and a printed name below it. The text is left aligned in paragraphs, and there is a solid blacked-out redaction over part of one word in the first paragraph. The letter is on a white background with black text. The bottom right corner contains a page identifier 'HOUSE_OVERSIGHT_000064'.",
+  "layout": [
+    "typed text block in paragraphs",
+    "redacted text block in first paragraph",
+    "handwritten signature below letter",
+    "printed name below handwritten signature",
+    "page identifier bottom right corner"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom center below main text",
+      "text_as_seen": "signature cursive mark",
+      "confidence": "medium",
+      "note": "single cursive line resembling a signature"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center below main text",
+      "text_as_seen": "Johnny B y",
+      "confidence": "high",
+      "note": "printed name below cursive signature"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "first paragraph approximately middle left",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "solid black redaction obscuring part of one word"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

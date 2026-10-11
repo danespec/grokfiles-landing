@@ -1,0 +1,138 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 165,
+  "page_id": "page_165",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_165.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_165.ocr.txt",
+  "image_metadata": {
+    "bytes": 124354,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "9c8736bd7d3a00734b8c659979d1ae5d1875e1fe35d559fcfbf491e3125e72cd"
+  },
+  "ocr_text": "y 4 Voice Over: .\ngP There mast be more to life than having everything.\nDonald\nee, 4 Ves. there is, but { won’t tell you what itis. }\n%, Jeffrey\n° Ner will t, since I also krow what it is.\n: Donald\nA We have certain things in common, Jeffrey.\nJeifrey\nYes, we de, come to think of it.\n| Donsle\n: Enigmas never age, have you noticed that?\n, Jetfrey\n; As a matier of fact, it was clear to me fire last time i saw you.\n’ y\nPonaid\n# A palis a wonderful thing. Happy Birthcday—aaa giay every day be another\nt wonderful secre’.\nf Donald J. Prema\nHOUSE_OVERSIGHT_000165\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains centered text laid out within an outline resembling a stylized torso or vase shape created by thick black curved lines. The text consists of a dialogue exchange between 'Donald' and 'Jeffrey.' Beneath the text, there is a printed name 'Donald J. Trump' with a black ink signature below it.",
+    "Layout: title at top center",
+    "Layout: dialogue text centered vertically",
+    "Layout: printed name centered below text",
+    "Layout: handwritten signature below printed name",
+    "Layout: thick black curved lines forming an outline around text",
+    "Drawing candidate at border surrounding dialogue text: thick black curved lines forming a shape resembling a stylized torso or vase"
+  ],
+  "observations": [
+    "The page contains centered text laid out within an outline resembling a stylized torso or vase shape created by thick black curved lines. The text consists of a dialogue exchange between 'Donald' and 'Jeffrey.' Beneath the text, there is a printed name 'Donald J. Trump' with a black ink signature below it.",
+    "Layout: title at top center",
+    "Layout: dialogue text centered vertically",
+    "Layout: printed name centered below text",
+    "Layout: handwritten signature below printed name",
+    "Layout: thick black curved lines forming an outline around text",
+    "Drawing candidate at border surrounding dialogue text: thick black curved lines forming a shape resembling a stylized torso or vase"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Voice Over:",
+    "There must be more to life than having everything.",
+    "Donald",
+    "Yes, there is, but I won't tell you what it is.",
+    "Jeffrey",
+    "Nor will I, since I also know what it is.",
+    "We have certain things in common, Jeffrey.",
+    "Yes, we do, come to think of it.",
+    "Enigmas never age, have you noticed that?",
+    "As a matter of fact, it was clear to me the last time I saw you.",
+    "A pal is a wonderful thing. Happy Birthday— and may every day be another wonderful secret.",
+    "Donald J. Trump"
+  ],
+  "signatures": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "Donald J. Trump",
+      "confidence": "high",
+      "note": "printed name above signature"
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "bottom center, below printed name",
+      "text_as_seen": "signature in black ink",
+      "confidence": "high",
+      "note": "signature is present below printed text"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "Exact material of page not specified",
+    "Context for names 'Donald' and 'Jeffrey' not provided"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:31.077Z",
+    "response_id": "resp_04bab9a2cb3a3c48006a502e976b048190ad2782efb53213bf",
+    "raw_output_sha256": "bdf08f56fc6ab6b96640e5b6231228592a02ba7c70a70f70939c15eafeccaae8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04bab9a2cb3a3c48006a502e976b048190ad2782efb53213bf",
+    "enriched_at": "2026-07-09T23:28:31.077Z"
+  },
+  "visual_summary": "The page contains centered text laid out within an outline resembling a stylized torso or vase shape created by thick black curved lines. The text consists of a dialogue exchange between 'Donald' and 'Jeffrey.' Beneath the text, there is a printed name 'Donald J. Trump' with a black ink signature below it.",
+  "layout": [
+    "title at top center",
+    "dialogue text centered vertically",
+    "printed name centered below text",
+    "handwritten signature below printed name",
+    "thick black curved lines forming an outline around text"
+  ],
+  "handwriting": [
+    {
+      "location": "bottom center, below printed name",
+      "text_as_seen": "signature in black ink",
+      "confidence": "high",
+      "note": "signature is present below printed text"
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom center",
+      "text_as_seen": "Donald J. Trump",
+      "confidence": "high",
+      "note": "printed name above signature"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "border surrounding dialogue text",
+      "description": "thick black curved lines forming a shape resembling a stylized torso or vase",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

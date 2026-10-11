@@ -1,0 +1,84 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 161,
+  "page_id": "page_161",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_161.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_161.ocr.txt",
+  "image_metadata": {
+    "bytes": 1895748,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "b1c38ef1f44a4ad0a29d799fe7097a6a6a08214c537f0ef0505cc8a6a90e1710"
+  },
+  "ocr_text": "HIM | DID NOT ~ ANY CONSTRUCTION; |\n\nCOULD | STAND TO LOOK AT | << WITH\n\nPRINTED PATTERNS: HE ETE: CHINESE\n\nCURIO AND TODAY BEGS FOR ALL OF Tui\n\n| THE LAST TIME TI HIM WE MET TO REVTEYW\n\nA PLAN. DURING OUR HE MADE “ANY\n\nCONSTRUCTIVE <oOMm, AND WHEN We LEFT =\n\n_ SAID TO MY COLLEAGUES KNOW, HE WAS\n\nRIGHT!\". LEARNS SO QUICKLY THAT SOON\nHE WILL BE OUTTHINKING : .\nHOUSE_OVERSIGHT_000161\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows a typed page with multi-colored text: some words are in red, yellow, blue, and pink. The text is aligned left with uneven color distribution, appearing as a mixture of highlighted and regular text. The document appears to be a transcript or a report with a focus on a narrative about a person’s preferences and behavior in construction and patterns. The bottom right corner contains the text 'HOUSE_OVERSIGHT_000161'.",
+    "Layout: page with typed multi-colored text arranged in lines, left aligned",
+    "Layout: footer with document identifier 'HOUSE_OVERSIGHT_000161'"
+  ],
+  "observations": [
+    "The image shows a typed page with multi-colored text: some words are in red, yellow, blue, and pink. The text is aligned left with uneven color distribution, appearing as a mixture of highlighted and regular text. The document appears to be a transcript or a report with a focus on a narrative about a person’s preferences and behavior in construction and patterns. The bottom right corner contains the text 'HOUSE_OVERSIGHT_000161'.",
+    "Layout: page with typed multi-colored text arranged in lines, left aligned",
+    "Layout: footer with document identifier 'HOUSE_OVERSIGHT_000161'"
+  ],
+  "dates": [],
+  "document_strings": [
+    "COLLECTING HOMES IS HIS HOBBY.",
+    "WHEN I MET HIM HE DID NOT WANT ANY CONSTRUCTION;",
+    "HE COULD NOT STAND TO LOOK AT FABRIC WITH PRINTED PATTERNS;",
+    "HE DETESTED CHINESE CURIO",
+    "AND TODAY HE BEGS FOR ALL OF THESE!",
+    "THE LAST TIME I SAW HIM WE MET TO REVIEW A PLAN.",
+    "DURING OUR MEETING HE MADE MANY CONSTRUCTIVE COMMENTS AND WHEN WE LEFT I SAID TO MY COLLEAGUES 'YOU KNOW, HE WAS RIGHT!'.",
+    "HE LEARNS SO QUICKLY THAT SOON HE WILL BE OUTTHINKING ME!",
+    "HOUSE_OVERSIGHT_000161"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:28:07.110Z",
+    "response_id": "resp_0e10b342878d7c30006a502e825ef88195b09decc718bdaab9",
+    "raw_output_sha256": "c6aae9b9a1e1db14a70bb013212d38be9df8eddf7131e1129167d71eec144803"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e10b342878d7c30006a502e825ef88195b09decc718bdaab9",
+    "enriched_at": "2026-07-09T23:28:07.110Z"
+  },
+  "visual_summary": "The image shows a typed page with multi-colored text: some words are in red, yellow, blue, and pink. The text is aligned left with uneven color distribution, appearing as a mixture of highlighted and regular text. The document appears to be a transcript or a report with a focus on a narrative about a person’s preferences and behavior in construction and patterns. The bottom right corner contains the text 'HOUSE_OVERSIGHT_000161'.",
+  "layout": [
+    "page with typed multi-colored text arranged in lines, left aligned",
+    "footer with document identifier 'HOUSE_OVERSIGHT_000161'"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

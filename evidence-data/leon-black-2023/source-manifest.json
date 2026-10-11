@@ -1,0 +1,58 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "public_source": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
+  "redistribution": "Sensitive intake PDFs are not mirrored by GAH on this route. Hashes verify local copies only.",
+  "sources": [
+    {
+      "id": "EFTA02731478",
+      "sha256": "8aecc068c4591441f96932f382a2af2efc2e32e329f26a61f2a14557268ecab3",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731482",
+      "sha256": "b4017d4c19d40785c87198ebf213e8fe8e200de060f5b3081a5a780458c0b09d",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731486",
+      "sha256": "efdae1f25ac075e041e7e33d94f5be4ddd32c4285a06859076680a2363bcf7e3",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731488",
+      "sha256": "e8e3b128b2e1c27bb7777cb6d863c11946604e9fbd779647c0f3c021c7fcc58a",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731480",
+      "sha256": "0d1d9dd734876478048fb755587c7f0ec1bbddf082551046dc4209d78ddf48a7",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731484",
+      "sha256": "f062839a9b335e40381ed5dcbde65aff0b1bb0dd4a1832349c5d04c0b5138765",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731485",
+      "sha256": "8203a023de0bb84fd77728af4ea5840f9d651addedf8cec2803b632a26f9fb03",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731490",
+      "sha256": "5a585b4e307274e4231033dc182d6f3c113bb54c8775c9cde711f53b0e292c61",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02731018",
+      "sha256": "35294a2cb0148ff1d45791cea6a56999391fe04c28144f32c7f7a30c2c29259f",
+      "status": "local-hash-verified; public DOJ source route"
+    },
+    {
+      "id": "EFTA02730996",
+      "sha256": "3f3227f62d8b449becef597d2b25f2b557394449ed2dd8d6d37c61e1393167b5",
+      "status": "local-hash-verified; public DOJ source route"
+    }
+  ]
+}

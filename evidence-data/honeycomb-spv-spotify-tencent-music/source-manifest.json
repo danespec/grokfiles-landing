@@ -1,0 +1,31 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "honeycomb-spv-spotify-tencent-music",
+  "title": "Two Honeycomb SPVs, Two Different Timelines: Spotify and Tencent Music",
+  "published": "2026-09-30",
+  "scope": "Comparison of Honeycomb Ventures I/Spotify and Honeycomb Ventures IV/Tencent Music with bank timing, subscriber identity, and recovered distributions kept separate.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN10_HONEYCOMB_BUTTERFLY_MASTER.md",
+  "sources": [
+    {"id":"SPOTIFY-WIRE","class":"PRIMARY_DEAL_EMAIL_AND_WIRE_INSTRUCTIONS","record":"EFTA02366568","url":"/pdf-lite?id=EFTA02366568","supports":"Spotify-specific Honeycomb Ventures I allocation; Southern Trust wire reference; $1M existing allocation and additional $2M capacity.","limit":"Additional $2M capacity was offered but no recovered document proves it was taken."},
+    {"id":"SPOTIFY-DISTRIBUTION","class":"PRIMARY_BANK_STATEMENT","record":"EFTA01287619","url":"/pdf-lite?id=EFTA01287619","supports":"May 24, 2018 $1,752,515.84 incoming transfer to Southern Trust from HONEYCOMB VENTURES LP.","limit":"Statement does not itself call the transfer Spotify proceeds or establish full liquidation."},
+    {"id":"TME-PITCH","class":"PRIMARY_DEAL_EMAIL","record":"EFTA02519406","url":"/pdf-lite?id=EFTA02519406","supports":"June 2018 Honeycomb offer of TME as a single-name co-investment through Honeycomb Ventures IV; expected July funding schedule.","limit":"Pitch schedule is not bank settlement."},
+    {"id":"TME-WIRE","class":"PRIMARY_BANK_STATEMENT","record":"EFTA01288327","url":"/pdf-lite?id=EFTA01288327","supports":"March 13, 2019 $10M Caterpillar Trust outgoing wire to HONEYCOMB VENTURES IV LP.","limit":"Wire line does not itself say TME; attribution relies on the deal-specific Ventures IV corpus."},
+    {"id":"VENTURES-IV-LEGAL","class":"PRIMARY_LEGAL_ACKNOWLEDGMENT","record":"EFTA00313991","url":"/api/pdf?id=EFTA00313991","supports":"Existence of Honeycomb Ventures IV legal-document package; notarized acknowledgment.","limit":"Does not identify TME or explain March 2019 funding timing."},
+    {"id":"RUN10","class":"GAH_RECONSTRUCTION","record":"GAH_US_RUN10_HONEYCOMB_BUTTERFLY_MASTER.md","supports":"Vehicle separation, Spotify/TME look-through, Honeycomb Partners distinction, listing chronology, and transaction reconciliation.","limit":"Archive-created synthesis; controlling monetary claims remain tied to primary records."},
+    {"id":"SPOTIFY-PUBLIC","class":"OFFICIAL_PUBLIC_COMPANY_RECORD","record":"Spotify SEC 6-K / direct-listing context","url":"https://www.sec.gov/Archives/edgar/data/1639920/000156459018017613/ck0001639920-6k_20180726.htm","supports":"Spotify completed its NYSE direct listing on April 3, 2018.","limit":"Public listing context only."},
+    {"id":"TME-PUBLIC","class":"OFFICIAL_COMPANY_RECORD","record":"Tencent Music IPO pricing release","url":"https://ir.tencentmusic.com/Press-Releases?item=18","supports":"TME IPO priced Dec. 11, 2018 and ADSs began NYSE trading Dec. 12, 2018.","limit":"Public listing context only."}
+  ],
+  "open_questions": [
+    "Whether Southern Trust took any of the additional $2M Spotify capacity offered in July 2017.",
+    "Whether the May 2018 Ventures distribution represented partial or full realization of the Spotify SPV.",
+    "Why the recovered $10M Ventures IV bank funding occurred in March 2019 rather than the July 2018 schedule described in the original TME pitch.",
+    "Whether the March 2019 TME-route payment was a delayed capital call, secondary acquisition, remaining allocation, or another settlement mechanic.",
+    "Whether any TME exit/distribution to Caterpillar is recoverable."
+  ],
+  "not_established": [
+    "A complete Spotify exit or precise realized profit.",
+    "Pre-IPO bank funding of TME from the recovered March 2019 wire.",
+    "That Honeycomb Partners, Ventures I, Ventures IV, Southern Trust, Caterpillar, or Butterfly were the same legal vehicle.",
+    "Wrongdoing or operational control of Spotify or Tencent Music."
+  ]
+}

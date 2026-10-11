@@ -1,0 +1,131 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 11,
+  "page_id": "page_011",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_011.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_011.ocr.txt",
+  "image_metadata": {
+    "bytes": 10325193,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "817e9d85d5add08f7f1401743c45dd984d00a979cce8ae881481dc240cfa2d51"
+  },
+  "ocr_text": "on PIANO ACCORDION\nAchf Epstein |\ne PHONE (212) ES 3-2262 |\nOe = peracid sasisciclclaantanincetiaesanesamameemmmennenets\nPHPPSeDY sh Bock\nFS de at 4 if ee |\nhie — 4 : da eo\n> i / ae | ; i — / ) ;\n| \"= bs ii g\nAAR BRexve Bese ree _ tdilated Phat kt, Privcet._ SEPE 22 1964 |\nHOUSE_OVERSIGHT_000011\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a business card at the top center and a black-and-white photograph below it. The business card includes musical notes, text indicating piano and accordion services, the name 'Jeff Epstein', a highlighted phrase 'ALL OCCASIONS', and a phone number '(212) ES 3-2262'. The photograph shows a group of five men, including one child holding an accordion, all dressed formally. Above the photograph is handwritten text 'RHAPSODY IN BLUE'. Below the photograph is further handwritten text including 'BARRON BROWN BAR MITZVAH', 'WYNN HOTEL', 'PHILA', and the date 'SEPT 22 1961'. An exit sign is partially visible in the background of the photo to the right. The photograph and business card are affixed to a plain page with a slight shadow or discoloration around the photo's edges.",
+    "Layout: top center business card",
+    "Layout: center photograph with handwritten annotations above and below",
+    "Photo/image candidate at center: Black-and-white photograph of five men including a child holding an accordion on a stage with microphones and musical instruments, dressed formally.",
+    "Photo/image candidate at top center: Photographic reproduction of a business card with musical notes and text including 'Jeff Epstein', 'ALL OCCASIONS', and a phone number."
+  ],
+  "observations": [
+    "The page contains a business card at the top center and a black-and-white photograph below it. The business card includes musical notes, text indicating piano and accordion services, the name 'Jeff Epstein', a highlighted phrase 'ALL OCCASIONS', and a phone number '(212) ES 3-2262'. The photograph shows a group of five men, including one child holding an accordion, all dressed formally. Above the photograph is handwritten text 'RHAPSODY IN BLUE'. Below the photograph is further handwritten text including 'BARRON BROWN BAR MITZVAH', 'WYNN HOTEL', 'PHILA', and the date 'SEPT 22 1961'. An exit sign is partially visible in the background of the photo to the right. The photograph and business card are affixed to a plain page with a slight shadow or discoloration around the photo's edges.",
+    "Layout: top center business card",
+    "Layout: center photograph with handwritten annotations above and below",
+    "Photo/image candidate at center: Black-and-white photograph of five men including a child holding an accordion on a stage with microphones and musical instruments, dressed formally.",
+    "Photo/image candidate at top center: Photographic reproduction of a business card with musical notes and text including 'Jeff Epstein', 'ALL OCCASIONS', and a phone number."
+  ],
+  "dates": [
+    "1964",
+    "SEPT 22 1961"
+  ],
+  "document_strings": [
+    "PIANO",
+    "ACCORDION",
+    "Jeff Epstein",
+    "ALL OCCASIONS",
+    "PHONE (212) ES 3-2262"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "above photograph",
+      "text_as_seen": "RHAPSODY IN BLUE",
+      "confidence": "high",
+      "note": "Handwritten title in capital letters"
+    },
+    {
+      "location": "below photograph",
+      "text_as_seen": "BARRON BROWN BAR MITZVAH WYNN HOTEL PHILA SEPT 22 1961",
+      "confidence": "medium",
+      "note": "Handwritten annotation including event type, place, and date"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Exact identities of people in photograph cannot be verified but appear to be five males, one child holding accordion."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:03:36.388Z",
+    "response_id": "resp_050cbb7837c99ac8006a5028bf47888194a055a2dca89815be",
+    "raw_output_sha256": "ef717d680755458b5632b1e51ec23ff07aaf5d4d57a55399d5585b3a83d57624"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_050cbb7837c99ac8006a5028bf47888194a055a2dca89815be",
+    "enriched_at": "2026-07-09T23:03:36.388Z"
+  },
+  "visual_summary": "The page contains a business card at the top center and a black-and-white photograph below it. The business card includes musical notes, text indicating piano and accordion services, the name 'Jeff Epstein', a highlighted phrase 'ALL OCCASIONS', and a phone number '(212) ES 3-2262'. The photograph shows a group of five men, including one child holding an accordion, all dressed formally. Above the photograph is handwritten text 'RHAPSODY IN BLUE'. Below the photograph is further handwritten text including 'BARRON BROWN BAR MITZVAH', 'WYNN HOTEL', 'PHILA', and the date 'SEPT 22 1961'. An exit sign is partially visible in the background of the photo to the right. The photograph and business card are affixed to a plain page with a slight shadow or discoloration around the photo's edges.",
+  "layout": [
+    "top center business card",
+    "center photograph with handwritten annotations above and below"
+  ],
+  "handwriting": [
+    {
+      "location": "above photograph",
+      "text_as_seen": "RHAPSODY IN BLUE",
+      "confidence": "high",
+      "note": "Handwritten title in capital letters"
+    },
+    {
+      "location": "below photograph",
+      "text_as_seen": "BARRON BROWN BAR MITZVAH WYNN HOTEL PHILA SEPT 22 1961",
+      "confidence": "medium",
+      "note": "Handwritten annotation including event type, place, and date"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "Black-and-white photograph of five men including a child holding an accordion on a stage with microphones and musical instruments, dressed formally.",
+      "confidence": "high"
+    },
+    {
+      "location": "top center",
+      "description": "Photographic reproduction of a business card with musical notes and text including 'Jeff Epstein', 'ALL OCCASIONS', and a phone number.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "SEPT 22 1961"
+  ],
+  "confidence": "high"
+}

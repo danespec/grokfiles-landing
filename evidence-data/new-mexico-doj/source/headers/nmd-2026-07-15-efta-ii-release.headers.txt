@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/press-release/attorney-general-raul-torrez-representative-leger-fernandez-push-new-legislation-to-force-doj-to-release-remaining-epstein-files/
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 262ddfe9814d639bffdc968b0b4bf36f7ce04f39d2792327c51f2b92ca977080
+Bytes: 359112
+Acquisition method: verified existing local capture

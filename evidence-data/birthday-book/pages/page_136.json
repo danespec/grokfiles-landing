@@ -1,0 +1,100 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 136,
+  "page_id": "page_136",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_136.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_136.ocr.txt",
+  "image_metadata": {
+    "bytes": 4830524,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "502162dd857823fb93b46d847e5f48a8aa5b4e6051526f291ea295c5af801002"
+  },
+  "ocr_text": "Ui\n0 Ae Q Kue aha (aPbhigenk P\n/\n/Kosp bk ' hed MQW hey CoQ\n/ * .\ndays Mined | in Lh,\nAidy d fe es 6 8\n’ a ‘\nEL ene 1 ee S =——_ es\nHOUSE_OVERSIGHT_000136\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A single page with a handwritten note near the top and a color photograph of a yellow parachute descending against a partly cloudy sky at the bottom.",
+    "Layout: handwritten text at top center",
+    "Layout: photograph at bottom center",
+    "Photo/image candidate at bottom center: Color photograph of a yellow parachute in the sky with two figures visible beneath it, amidst white and blue clouds."
+  ],
+  "observations": [
+    "A single page with a handwritten note near the top and a color photograph of a yellow parachute descending against a partly cloudy sky at the bottom.",
+    "Layout: handwritten text at top center",
+    "Layout: photograph at bottom center",
+    "Photo/image candidate at bottom center: Color photograph of a yellow parachute in the sky with two figures visible beneath it, amidst white and blue clouds."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000136"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "Once upon a time, an intelligent, sharp-witted man they call \"mysterious\" parachuted into my life...",
+      "confidence": "high",
+      "note": "Handwritten text in black ink, cursive style."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:24:33.005Z",
+    "response_id": "resp_0363f5bca21ff8d5006a502dad4bd48197af9053ce45280012",
+    "raw_output_sha256": "6d7f4864f8cae046f2599a7025aa55e4adfde6d7c028808758d31bb61d3c4c85"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0363f5bca21ff8d5006a502dad4bd48197af9053ce45280012",
+    "enriched_at": "2026-07-09T23:24:33.005Z"
+  },
+  "visual_summary": "A single page with a handwritten note near the top and a color photograph of a yellow parachute descending against a partly cloudy sky at the bottom.",
+  "layout": [
+    "handwritten text at top center",
+    "photograph at bottom center"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "Once upon a time, an intelligent, sharp-witted man they call \"mysterious\" parachuted into my life...",
+      "confidence": "high",
+      "note": "Handwritten text in black ink, cursive style."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom center",
+      "description": "Color photograph of a yellow parachute in the sky with two figures visible beneath it, amidst white and blue clouds.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,130 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 220,
+  "page_id": "page_220",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_220.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_220.ocr.txt",
+  "image_metadata": {
+    "bytes": 149682,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "3a1decc83c22bd00bce05a3a317761301eb8a6eaaa5678d10770fdcf815dca17"
+  },
+  "ocr_text": "M\\ de Vy DB aes\n\nYoanerr SEAN , |\n\nne, (SHU ur a a\", We) vie a\nHAPPY BIRTHDAY! |\n\nNo4 AW ad We the best Get | :\nSenda, Yor (ity and Uty and CA |\nvf [pve uns and VARA aluays,\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten note on a white page with a black redaction block at the bottom right. The note addresses someone named Jeffrey and wishes them a happy birthday with multiple expressions of good wishes and affection. The handwriting is in black ink and mostly clear, with some words underlined for emphasis. The page number '2' appears at the bottom left.",
+    "Layout: handwritten note",
+    "Layout: black redaction block bottom right",
+    "Layout: page number bottom left"
+  ],
+  "observations": [
+    "Handwritten note on a white page with a black redaction block at the bottom right. The note addresses someone named Jeffrey and wishes them a happy birthday with multiple expressions of good wishes and affection. The handwriting is in black ink and mostly clear, with some words underlined for emphasis. The page number '2' appears at the bottom left.",
+    "Layout: handwritten note",
+    "Layout: black redaction block bottom right",
+    "Layout: page number bottom left"
+  ],
+  "dates": [],
+  "document_strings": [
+    "M\\ de Vy DB aes",
+    "Yoanerr SEAN , |",
+    "ne, (SHU ur a a\", We) vie a",
+    "HAPPY BIRTHDAY! |",
+    "No4 AW ad We the best Get | :",
+    "Senda, Yor (ity and Uty and CA |",
+    "vf [pve uns and VARA aluays,"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "[redacted black block]",
+      "confidence": "high",
+      "note": "Large black redaction obscuring text, possibly a signature or name."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "top left to bottom center",
+      "text_as_seen": "Dearest Jeffrey, Wishing you a very, very, very, very HAPPY BIRTHDAY! I hope that your day is filled with everything that you thought you could only have dreamed about! May this year be the best yet! Sending you lots and lots and lots of love, hugs and kisses always,",
+      "confidence": "high",
+      "note": "Handwritten message with multiple emphasis on 'very' and 'HAPPY BIRTHDAY!' with some words underlined."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black redaction block covering text."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:37:30.615Z",
+    "response_id": "resp_0b34eb76ee79d648006a5030b338188193871980770d0c8a0e",
+    "raw_output_sha256": "96d37fc44897d6f453b5058b335a7749b5f942a525c6e8b00d497354bd8ae2a0"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b34eb76ee79d648006a5030b338188193871980770d0c8a0e",
+    "enriched_at": "2026-07-09T23:37:30.615Z"
+  },
+  "visual_summary": "Handwritten note on a white page with a black redaction block at the bottom right. The note addresses someone named Jeffrey and wishes them a happy birthday with multiple expressions of good wishes and affection. The handwriting is in black ink and mostly clear, with some words underlined for emphasis. The page number '2' appears at the bottom left.",
+  "layout": [
+    "handwritten note",
+    "black redaction block bottom right",
+    "page number bottom left"
+  ],
+  "handwriting": [
+    {
+      "location": "top left to bottom center",
+      "text_as_seen": "Dearest Jeffrey, Wishing you a very, very, very, very HAPPY BIRTHDAY! I hope that your day is filled with everything that you thought you could only have dreamed about! May this year be the best yet! Sending you lots and lots and lots of love, hugs and kisses always,",
+      "confidence": "high",
+      "note": "Handwritten message with multiple emphasis on 'very' and 'HAPPY BIRTHDAY!' with some words underlined."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "[redacted black block]",
+      "confidence": "high",
+      "note": "Large black redaction obscuring text, possibly a signature or name."
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Large black redaction block covering text."
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,157 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 193,
+  "page_id": "page_193",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_193.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_193.ocr.txt",
+  "image_metadata": {
+    "bytes": 16627793,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "38f336293369941108436396df99e62160c87d4eaa705456fb739e41f702a1c9"
+  },
+  "ocr_text": "St a a a\na “te Se oe = . eee) See . o- rr rats > Y ‘\nsi . oe ¥. } he agp em — a taal os . E. ia ey og ROY ; = sia at oo RE ae 5 ties a\nNe eee ay i - WOES. aa, Pei stg a} ia 2k Bi ; e 4 : hee a =. Bie lee haces Ps... —\n2 4 >. fete y ee Se ot ‘eae a on es , 3 : . ot ae f,\n4 si j--\nae oe = |\n\n= Ae < pe : = TE.\n\na ‘ : Sakae p 2 _,— r = \\ pe oe i i rome . 7 & >\nr » e .\n\n- *\n\nbes \\ f X\n\n~ -\n\nNONI m,\nes — — }\n~ ae \\ we 5 “ & - -\n. * ’ 3 . eS -\n:\n. '\ni . / ;\n; , r —— -* r ¢\nHOUSE_OVERSIGHT_000193\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A group photograph featuring 15 people, with two individuals obscured by black boxes; there is a television mounted on the upper left corner showing a person, a brick wall background with a chalkboard filled with mathematical notations, and a white ventilation duct on the upper right. The floor appears to be tiled.",
+    "Layout: television with image of a person at top left",
+    "Layout: main group of people in front of a chalkboard covering most of the mid section",
+    "Layout: chalkboard with handwritten mathematical symbols across width of image",
+    "Layout: brick wall background covering upper half",
+    "Layout: ventilation pipe and fixtures at upper right",
+    "Layout: white door partially visible at right edge",
+    "Layout: two black rectangles obscuring individuals in group",
+    "Photo/image candidate at upper left corner television screen: Photo of a person shown on a small monitor in the upper left",
+    "Photo/image candidate at main group: Group photo of 15 people standing and sitting, two obscured by black rectangles"
+  ],
+  "observations": [
+    "A group photograph featuring 15 people, with two individuals obscured by black boxes; there is a television mounted on the upper left corner showing a person, a brick wall background with a chalkboard filled with mathematical notations, and a white ventilation duct on the upper right. The floor appears to be tiled.",
+    "Layout: television with image of a person at top left",
+    "Layout: main group of people in front of a chalkboard covering most of the mid section",
+    "Layout: chalkboard with handwritten mathematical symbols across width of image",
+    "Layout: brick wall background covering upper half",
+    "Layout: ventilation pipe and fixtures at upper right",
+    "Layout: white door partially visible at right edge",
+    "Layout: two black rectangles obscuring individuals in group",
+    "Photo/image candidate at upper left corner television screen: Photo of a person shown on a small monitor in the upper left",
+    "Photo/image candidate at main group: Group photo of 15 people standing and sitting, two obscured by black rectangles"
+  ],
+  "dates": [
+    "'02"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000193"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "chalkboard across middle background",
+      "text_as_seen": "Mathematical symbols, formulas and notations ranging in size and orientation",
+      "confidence": "medium",
+      "note": "Writing is somewhat unclear due to contrast and overlapping objects"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "black rectangle obscuring two individuals in the group, left center and center",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Blocks conceal persons behind"
+    },
+    {
+      "location": "black rectangle obscuring one individual in the group, center lower",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Block conceals person behind"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Exact specific text on chalkboard is largely unreadable due to image resolution and overlap",
+    "No clear individual names or labels visible on image"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:33:09.369Z",
+    "response_id": "resp_0f1125c6ba657d1b006a502fad10048197b75199fff80b2327",
+    "raw_output_sha256": "39f39a19d896bafeb8975d2d7973f496d815d61817a5cba5a0e195ddce1f46cf"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f1125c6ba657d1b006a502fad10048197b75199fff80b2327",
+    "enriched_at": "2026-07-09T23:33:09.369Z"
+  },
+  "visual_summary": "A group photograph featuring 15 people, with two individuals obscured by black boxes; there is a television mounted on the upper left corner showing a person, a brick wall background with a chalkboard filled with mathematical notations, and a white ventilation duct on the upper right. The floor appears to be tiled.",
+  "layout": [
+    "television with image of a person at top left",
+    "main group of people in front of a chalkboard covering most of the mid section",
+    "chalkboard with handwritten mathematical symbols across width of image",
+    "brick wall background covering upper half",
+    "ventilation pipe and fixtures at upper right",
+    "white door partially visible at right edge",
+    "two black rectangles obscuring individuals in group"
+  ],
+  "handwriting": [
+    {
+      "location": "chalkboard across middle background",
+      "text_as_seen": "Mathematical symbols, formulas and notations ranging in size and orientation",
+      "confidence": "medium",
+      "note": "Writing is somewhat unclear due to contrast and overlapping objects"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "black rectangle obscuring two individuals in the group, left center and center",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Blocks conceal persons behind"
+    },
+    {
+      "location": "black rectangle obscuring one individual in the group, center lower",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Block conceals person behind"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "upper left corner television screen",
+      "description": "Photo of a person shown on a small monitor in the upper left",
+      "confidence": "high"
+    },
+    {
+      "location": "main group",
+      "description": "Group photo of 15 people standing and sitting, two obscured by black rectangles",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "'02"
+  ],
+  "confidence": "high"
+}

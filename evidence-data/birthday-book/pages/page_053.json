@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 53,
+  "page_id": "page_053",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_053.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_053.ocr.txt",
+  "image_metadata": {
+    "bytes": 10094243,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "02308356b90c7f0e71989f88c24368c1f7c17353a383ca41f3145917518f1b29"
+  },
+  "ocr_text": "* £ i\n= we siti\ne * fiat ~ bat\n\" | . _ , >. er :\ny . i \\ j d } : ’ 4 a § £* 5\ni , | te ,\n! ; . . ,\n* 1 -\n‘ j I wohy\nG vt \\ . , =\n», { or ete y D\neid 4 - ! j 7 f in ae < a |\niZ Pe a ee a _ Raa . ~~: &\nmass, | > Late , “Ny We * < 2 s |\nae seo aie ee\nHOUSE_OVERSIGHT_000053\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains three black-and-white photographs arranged on a white background. The top-left photograph shows two people standing side by side; one wears a double-breasted coat and the other holds a coat or jacket. Below, centered on the page, a photograph depicts two people sitting on motorcycles parked on a street with leafless shrubs and houses in the background. The top-right photograph shows two people bending over the back of a car, possibly working on or inspecting it; the car is parked outdoors with trees in the background.",
+    "Layout: top-left photo",
+    "Layout: top-right photo",
+    "Layout: bottom-center photo",
+    "Photo/image candidate at top-left: Two people standing side by side; one in a double-breasted coat, the other holding a coat or jacket, both have curly hair.",
+    "Photo/image candidate at top-right: Two people bending over the back of a car outdoors; the car is a sedan, with trees visible in the background.",
+    "Photo/image candidate at bottom-center: Two people sitting on motorcycles parked on a street, with leafless shrubs and houses in the background."
+  ],
+  "observations": [
+    "The page contains three black-and-white photographs arranged on a white background. The top-left photograph shows two people standing side by side; one wears a double-breasted coat and the other holds a coat or jacket. Below, centered on the page, a photograph depicts two people sitting on motorcycles parked on a street with leafless shrubs and houses in the background. The top-right photograph shows two people bending over the back of a car, possibly working on or inspecting it; the car is parked outdoors with trees in the background.",
+    "Layout: top-left photo",
+    "Layout: top-right photo",
+    "Layout: bottom-center photo",
+    "Photo/image candidate at top-left: Two people standing side by side; one in a double-breasted coat, the other holding a coat or jacket, both have curly hair.",
+    "Photo/image candidate at top-right: Two people bending over the back of a car outdoors; the car is a sedan, with trees visible in the background.",
+    "Photo/image candidate at bottom-center: Two people sitting on motorcycles parked on a street, with leafless shrubs and houses in the background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000053"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "No visible text or labels on the page beyond document identifiers."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:10:53.792Z",
+    "response_id": "resp_007946096dc314af006a502a7672d881909d1a82525846492a",
+    "raw_output_sha256": "516324a9578976fe3d0ffb4da23a06719cc0789251ae2d6b442a18a848e02787"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_007946096dc314af006a502a7672d881909d1a82525846492a",
+    "enriched_at": "2026-07-09T23:10:53.792Z"
+  },
+  "visual_summary": "The page contains three black-and-white photographs arranged on a white background. The top-left photograph shows two people standing side by side; one wears a double-breasted coat and the other holds a coat or jacket. Below, centered on the page, a photograph depicts two people sitting on motorcycles parked on a street with leafless shrubs and houses in the background. The top-right photograph shows two people bending over the back of a car, possibly working on or inspecting it; the car is parked outdoors with trees in the background.",
+  "layout": [
+    "top-left photo",
+    "top-right photo",
+    "bottom-center photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top-left",
+      "description": "Two people standing side by side; one in a double-breasted coat, the other holding a coat or jacket, both have curly hair.",
+      "confidence": "high"
+    },
+    {
+      "location": "top-right",
+      "description": "Two people bending over the back of a car outdoors; the car is a sedan, with trees visible in the background.",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom-center",
+      "description": "Two people sitting on motorcycles parked on a street, with leafless shrubs and houses in the background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "gah.publication-report.v1",
+  "created": "2026-10-06",
+  "batch": "nikolic-gates-source-control",
+  "preview": "https://oct6-nikolic-gates-source-co.grokfiles-landing.pages.dev",
+  "validation": {
+    "preview_routes": "PASS",
+    "public_search": "PASS",
+    "sitemap": "PASS",
+    "runtime_counts": {
+      "storiesPublished": 56,
+      "investigations": 30,
+      "evidenceBriefs": 17,
+      "dispatches": 7
+    }
+  },
+  "files": [
+    {
+      "path": "investigations/nikolic-gates-epstein-bridge.html",
+      "sha256": "9f7fe46483a946c0d61a00200f5c1ad687bd75252e439b8730e48ce5b44f07c6",
+      "bytes": 19558
+    },
+    {
+      "path": "evidence-briefs/southern-trust-gates-client-definition.html",
+      "sha256": "e8ac46368c59ee03b1a53ab2dc250518bfb6caee90071439201199a34871b99b",
+      "bytes": 14559
+    },
+    {
+      "path": "evidence-data/nikolic-gates-epstein-bridge/source-manifest.json",
+      "sha256": "5770cb5f2d3f41ba2e4c32ef53368f469435237656c127f6d20cfb45cb60bf34",
+      "bytes": 2763
+    },
+    {
+      "path": "evidence-data/nikolic-gates-epstein-bridge/claims.json",
+      "sha256": "e05eb77f8157be7ffd84b590ce171b47bf42b5d3c96350c7aafe3eeb5c31f1fe",
+      "bytes": 1412
+    },
+    {
+      "path": "evidence-data/southern-trust-gates-client-definition/source-manifest.json",
+      "sha256": "e0b86694a6114c77668b7607185a981066f0d61a10107b4e18356702925d4fb5",
+      "bytes": 1255
+    },
+    {
+      "path": "evidence-data/southern-trust-gates-client-definition/claims.json",
+      "sha256": "9d0c82d465ea3185ba92976e59d85e4e3624c0f64bbfa982695e0f86f956fc81",
+      "bytes": 863
+    },
+    {
+      "path": "_worker.js",
+      "sha256": "246ba590f547a20656011aeb111b668e03fbdce59ad77518a136fb71ffbd1de0",
+      "bytes": 686440
+    },
+    {
+      "path": "index.html",
+      "sha256": "1c56c99e813e4edf071da8165988dd396dc076430fb675639aa059cb28676a51",
+      "bytes": 36676
+    },
+    {
+      "path": "investigations.html",
+      "sha256": "6e104338ce4946a610072a125fff4367d0d51da43c0614af151d2836a97765e4",
+      "bytes": 27880
+    },
+    {
+      "path": "evidence-briefs.html",
+      "sha256": "5ea54a86a3e150b5c46861b9056231c631d5efe10561866f0c11fa9ff0f351c0",
+      "bytes": 23390
+    },
+    {
+      "path": "latest.html",
+      "sha256": "8d7fb99351c839e5d956e666f5d6017dc7861a1a2cc64d7455c965fed4280e31",
+      "bytes": 44728
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 223,
+  "page_id": "page_223",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_223.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_223.ocr.txt",
+  "image_metadata": {
+    "bytes": 4047825,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "751072a0519dd09a705700fbc8ff633a4b3d4864a395824f62c9ac264bec8170"
+  },
+  "ocr_text": "| _\nF. Gn AN Sun |\nC un wt tor fun |\nHOUSE_OVERSIGHT_000223\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page with colorful large letters vertically forming the word JEFFREY on the left side. Each letter is decorated with a different texture or color (red, green, yellow, etc). To the right of each letter is handwritten blue ink text forming a playful acrostic message. There are three pink heart drawings on the right side with blue outlines: one large heart near the top right and two smaller hearts near the bottom right. The page has a white background and black border.",
+    "Layout: Large colorful vertical letters forming 'JEFFREY' on left margin",
+    "Layout: Handwritten blue ink text to the right of each letter",
+    "Layout: Three pink hearts with blue outlines on right side",
+    "Drawing candidate at Right upper quadrant: Large pink heart with blue outline",
+    "Drawing candidate at Right lower quadrant: Two smaller pink hearts with blue outlines"
+  ],
+  "observations": [
+    "Page with colorful large letters vertically forming the word JEFFREY on the left side. Each letter is decorated with a different texture or color (red, green, yellow, etc). To the right of each letter is handwritten blue ink text forming a playful acrostic message. There are three pink heart drawings on the right side with blue outlines: one large heart near the top right and two smaller hearts near the bottom right. The page has a white background and black border.",
+    "Layout: Large colorful vertical letters forming 'JEFFREY' on left margin",
+    "Layout: Handwritten blue ink text to the right of each letter",
+    "Layout: Three pink hearts with blue outlines on right side",
+    "Drawing candidate at Right upper quadrant: Large pink heart with blue outline",
+    "Drawing candidate at Right lower quadrant: Two smaller pink hearts with blue outlines"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000223"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Right of letter J",
+      "text_as_seen": "effrey, oh Jeffrey!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter E",
+      "text_as_seen": "veryone loves you!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter F (first)",
+      "text_as_seen": "un in the sun!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter F (second)",
+      "text_as_seen": "un just for fun!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter R",
+      "text_as_seen": "emember...... don't forget me soon!",
+      "confidence": "medium",
+      "note": "Handwritten personal message with some uncertainty on punctuation"
+    },
+    {
+      "location": "Right of letter E (second)",
+      "text_as_seen": "pstein.... you Rock!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter Y",
+      "text_as_seen": "ou are the best!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:38:01.042Z",
+    "response_id": "resp_00e76109b62d56bf006a5030d19b6481939551df8305576a95",
+    "raw_output_sha256": "d5ccc44531645f54dfc28c6a4c8ea100ab739954148909ac7993cece7a2fa260"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_00e76109b62d56bf006a5030d19b6481939551df8305576a95",
+    "enriched_at": "2026-07-09T23:38:01.042Z"
+  },
+  "visual_summary": "Page with colorful large letters vertically forming the word JEFFREY on the left side. Each letter is decorated with a different texture or color (red, green, yellow, etc). To the right of each letter is handwritten blue ink text forming a playful acrostic message. There are three pink heart drawings on the right side with blue outlines: one large heart near the top right and two smaller hearts near the bottom right. The page has a white background and black border.",
+  "layout": [
+    "Large colorful vertical letters forming 'JEFFREY' on left margin",
+    "Handwritten blue ink text to the right of each letter",
+    "Three pink hearts with blue outlines on right side"
+  ],
+  "handwriting": [
+    {
+      "location": "Right of letter J",
+      "text_as_seen": "effrey, oh Jeffrey!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter E",
+      "text_as_seen": "veryone loves you!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter F (first)",
+      "text_as_seen": "un in the sun!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter F (second)",
+      "text_as_seen": "un just for fun!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter R",
+      "text_as_seen": "emember...... don't forget me soon!",
+      "confidence": "medium",
+      "note": "Handwritten personal message with some uncertainty on punctuation"
+    },
+    {
+      "location": "Right of letter E (second)",
+      "text_as_seen": "pstein.... you Rock!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    },
+    {
+      "location": "Right of letter Y",
+      "text_as_seen": "ou are the best!",
+      "confidence": "high",
+      "note": "Handwritten personal message"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "Right upper quadrant",
+      "description": "Large pink heart with blue outline",
+      "confidence": "high"
+    },
+    {
+      "location": "Right lower quadrant",
+      "description": "Two smaller pink hearts with blue outlines",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

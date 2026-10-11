@@ -1,0 +1,137 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 65,
+  "page_id": "page_065",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_065.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_065.ocr.txt",
+  "image_metadata": {
+    "bytes": 366935,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "d6dd3654833b1bd525cddef78b864c7fd883bbe1c217411370572b36642475a2"
+  },
+  "ocr_text": "| Dear ep | flan “Loe |\n: . a wos cok fo uur ke. som Hey furerd ~ willl\nQ 2 Cacn' Pew f svekos vale @p rsoctie. bu falter” wap] Vera\n: a| 4 reat hemes, Sea Cote, Coat \\sleool, Magic Toaes ¥ 138 |\n: : Carag ate. KS. ~ Oger Kye ips te G fe2P unc V, i [ Wypeg\n7 Seca Late) Fhe a (A Yin PR eG acy cr Ww “4 Levan i cabs, |\n: Mas Koes oy J BORO g rey nary forge’\n, joer Crear Nomde, fone qi vee): pont ch _hbscntens\nbooks frm Thre Boole lore “an 6 Aue + SE Seat\n— (peyt fs Prenys — “ide of Che Edocatecd H-va mb veg evr\n Shotuds aha chrome OTM prastale MARSSATE | OGL tg,\"\n«(CR SKATING Pros pec} prac with Teaty Ry Lal ed\nww ths $ CADA VES SK f7hne honacl SO We old < Kye\ndues ‘covples ala\" music | bale Cog is ow. cont es\n(Ke riding ve Ine midtl, af The ry a wy,\ni if nN\nalleray gees mm 5 Le @h Alpea7 recorha Nhe “oF\nCreare Cx Pregues Lev BS exe plrgs Back}) Pare. Seymore”\nhay “Chugua ieler” Greenlag , Kncolel Steal Maye Avene\njot cogpect ux Waren! Gol dl Viu/ Geatle\n} ; heed es\nwives ‘Shed! Neuse.’ e Ly Str hs wil nee st pes,\nAe a OE aeead NO yedereer | “Thee SS hewe. Theahee |\nTe Huber ~ Huber Lunchconelte, Canales The Bl Ree\n(r The Sear Firma Ree ( IAc2-) ) Cooper iw your visee\nto Ltalg (via Poneto lfm, 29 |) emery, yw Aecondeael\n(+ “Tha Lf amr-ons Pla We ol Tee Bu vnb& Be, Bees hetow\nBeas Bards’ —Terdy, Wriee Me btrow you —\nSO yews ole. | Wo tw | Haagpeyy bie day ~ Bert nis Ma\nHOUSE_OVERSIGHT_000065\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten note dated Jan 2003 addressed to 'Jeff' discussing various memories and experiences including locations, events, and people. The note contains multiple references to places, activities, and names, written in a casual cursive style.",
+    "Layout: Handwritten note in cursive script, centered on the page, with a date in the upper right corner and a greeting at the top left."
+  ],
+  "observations": [
+    "Handwritten note dated Jan 2003 addressed to 'Jeff' discussing various memories and experiences including locations, events, and people. The note contains multiple references to places, activities, and names, written in a casual cursive style.",
+    "Layout: Handwritten note in cursive script, centered on the page, with a date in the upper right corner and a greeting at the top left."
+  ],
+  "dates": [
+    "Jan 2003"
+  ],
+  "document_strings": [
+    "Dear ep",
+    "flan “Loe",
+    "a wos cok fo uur ke. som Hey furerd ~ willl",
+    "Q 2 Cacn' Pew f svekos vale @p rsoctie. bu falter” wap] Vera",
+    "a| 4 reat hemes, Sea Cote, Coat \\sleool, Magic Toaes ¥ 138",
+    "Carag ate. KS. ~ Oger Kye ips te G fe2P unc V, i [ Wypeg",
+    "Seca Late) Fhe a (A Yin PR eG acy cr Ww “4 Levan i cabs,",
+    "Mas Koes oy J BORO g rey nary forge’",
+    "joer Crear Nomde, fone qi vee): pont ch _hbscntens",
+    "books frm Thre Boole lore “an 6 Aue + SE Seat",
+    "— (peyt fs Prenys — “ide of Che Edocatecd H-va mb veg evr",
+    "Shotuds aha chrome OTM prastale MARSSATE | OGL tg,",
+    "«(CR SKATING Pros pec} prac with Teaty Ry Lal ed",
+    "ww ths $ CADA VES SK f7hne honacl SO We old < Kye",
+    "dues ‘covples ala\" music | bale Cog is ow. cont es",
+    "(Ke riding ve Ine midtl, af The ry a wy,",
+    "i if nN",
+    "alleray gees mm 5 Le @h Alpea7 recorha Nhe “oF",
+    "Creare Cx Pregues Lev BS exe plrgs Back}) Pare. Seymore”",
+    "hay “Chugua ieler” Greenlag , Kncolel Steal Maye Avene",
+    "jot cogpect ux Waren! Gol dl Viu/ Geatle",
+    "} ; heed es",
+    "wives ‘Shed! Neuse.’ e Ly Str hs wil nee st pes,",
+    "Ae a OE aeead NO yedereer | “Thee SS hewe. Theahee |",
+    "Te Huber ~ Huber Lunchconelte, Canales The Bl Ree",
+    "(r The Sear Firma Ree ( IAc2-) ) Cooper iw your visee",
+    "to Ltalg (via Poneto lfm, 29 |) emery, yw Aecondeael",
+    "(+ “Tha Lf amr-ons Pla We ol Tee Bu vnb& Be, Bees hetow",
+    "Beas Bards’ —Terdy, Wriee Me btrow you —",
+    "SO yews ole. | Wo tw | Haagpeyy bie day ~ Bert nis Ma"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Love Always Michael",
+      "confidence": "high",
+      "note": "Signature-like closing at bottom right of the note."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Dear Jeff Jan 2003 I'm supposed to write something funny - well I can't think of just a single episode but rather many years of great times; Sea Gate, Coney Island, March Twain, 188 Lafayette HS - our trips to Greenwich Village; sneaking into the Fillmore East, driving taxi cabs, Maps' Kansas City, wearing my green army fatigue jacket (what \"Uncle Stanley\" gave me), and \"liberating\" books from The Book Store on 6th Ave + 8th street (next to Pastry's - \"Home of the Educated Hamburger!\"). Stories about chronic UTIs, prostate massage, orgies; ICE SKATING in Prospect Park with Terry + me + Warren with scarves on our hand so we could skate during \"couples only\" music; lake lights on center ice; bike riding in the middle of the night during allergy season; Herb Alpert records like \"Whipped Cream\" (and Jacques Loussier plays Bach!); Paula, Seymour, Ruggy, \"Chowler Greenberg\", Arnold Sabel, Mayle Avenue getting stopped in Warren's Gold VW Beetle, The \"Ished House\" + big scarves with huge stripes; bikini underwear, no underwear, The Shore Theatre; The Huba-Huba Lunchconette, CAROLINAS; The Riviera ( + the Shaw Family Pizza place), Cooper Union, your visit to Italy (Via Pandolfini, 27!) Florence, your record deal (+ the infamous flight of The Bumble Bee), Brighton Beach Baths! - Terry, Warren, Me + now you 50 years old! WOW! Happy Birthday - Best wishes Love Always Michael",
+      "confidence": "medium",
+      "note": "The handwriting is legible but some words are difficult to fully confirm, hence medium confidence."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:13:09.308Z",
+    "response_id": "resp_081b52a07e712d3f006a502af745a081958145904d8ce324f7",
+    "raw_output_sha256": "7eb5b611cd03225c3b9676d578ac8d5bb8883b883366b143ea294f1d9908c115"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_081b52a07e712d3f006a502af745a081958145904d8ce324f7",
+    "enriched_at": "2026-07-09T23:13:09.308Z"
+  },
+  "visual_summary": "Handwritten note dated Jan 2003 addressed to 'Jeff' discussing various memories and experiences including locations, events, and people. The note contains multiple references to places, activities, and names, written in a casual cursive style.",
+  "layout": [
+    "Handwritten note in cursive script, centered on the page, with a date in the upper right corner and a greeting at the top left."
+  ],
+  "handwriting": [
+    {
+      "location": "entire page",
+      "text_as_seen": "Dear Jeff Jan 2003 I'm supposed to write something funny - well I can't think of just a single episode but rather many years of great times; Sea Gate, Coney Island, March Twain, 188 Lafayette HS - our trips to Greenwich Village; sneaking into the Fillmore East, driving taxi cabs, Maps' Kansas City, wearing my green army fatigue jacket (what \"Uncle Stanley\" gave me), and \"liberating\" books from The Book Store on 6th Ave + 8th street (next to Pastry's - \"Home of the Educated Hamburger!\"). Stories about chronic UTIs, prostate massage, orgies; ICE SKATING in Prospect Park with Terry + me + Warren with scarves on our hand so we could skate during \"couples only\" music; lake lights on center ice; bike riding in the middle of the night during allergy season; Herb Alpert records like \"Whipped Cream\" (and Jacques Loussier plays Bach!); Paula, Seymour, Ruggy, \"Chowler Greenberg\", Arnold Sabel, Mayle Avenue getting stopped in Warren's Gold VW Beetle, The \"Ished House\" + big scarves with huge stripes; bikini underwear, no underwear, The Shore Theatre; The Huba-Huba Lunchconette, CAROLINAS; The Riviera ( + the Shaw Family Pizza place), Cooper Union, your visit to Italy (Via Pandolfini, 27!) Florence, your record deal (+ the infamous flight of The Bumble Bee), Brighton Beach Baths! - Terry, Warren, Me + now you 50 years old! WOW! Happy Birthday - Best wishes Love Always Michael",
+      "confidence": "medium",
+      "note": "The handwriting is legible but some words are difficult to fully confirm, hence medium confidence."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "bottom right",
+      "text_as_seen": "Love Always Michael",
+      "confidence": "high",
+      "note": "Signature-like closing at bottom right of the note."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Jan 2003"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,7 @@
+URL: https://drive.google.com/drive/folders/1W0Kt0AzFjnZj0SqQnGyw1L9IUXFQ6CWc?usp=sharing
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 4da43586209bb114a7fae6ebc9f1456a05f99cfe753bbd756b40bb07eb26fd91
+Bytes: 292187
+Acquisition method: verified existing local capture

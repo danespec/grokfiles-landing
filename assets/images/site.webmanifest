@@ -1,0 +1,11 @@
+{
+  "name": "Grok Archive Hub",
+  "short_name": "Grok Archive Hub",
+  "description": "A source-first investigative archive and evidence newsroom.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#060708",
+  "theme_color": "#060708",
+  "lang": "en-US"
+}

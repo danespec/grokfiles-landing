@@ -1,0 +1,29 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "NPA-ACCESS-01",
+      "claim": "Defense counsel had repeated direct meetings and communications with SDFL prosecutors during the NPA process.",
+      "source": "DOJ OPR chronology",
+      "confidence": "P4 official reconstruction"
+    },
+    {
+      "id": "NPA-ACCESS-02",
+      "claim": "Victims were not consulted about the NPA before it was signed.",
+      "source": "DOJ OPR / September 2007 record",
+      "confidence": "P4 official finding"
+    },
+    {
+      "id": "NPA-ACCESS-03",
+      "claim": "Sloman issued the December 7 hold at 17:08:19 EST, 2 minutes 23 seconds after Villafaña’s inquiry.",
+      "source": "EFTA00013764",
+      "confidence": "P4"
+    },
+    {
+      "id": "NPA-ACCESS-04",
+      "claim": "The access asymmetry does not establish corruption or a purpose to silence victims; OPR rejected that motive finding.",
+      "source": "DOJ OPR final findings",
+      "confidence": "P4 official finding"
+    }
+  ]
+}

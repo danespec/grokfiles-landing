@@ -1,0 +1,115 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 201,
+  "page_id": "page_201",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_201.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_201.ocr.txt",
+  "image_metadata": {
+    "bytes": 8939470,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ae8b8c721b87faa71de0400d57f739536dfc158e7be6e3ca38eb8e2f4e1249a3"
+  },
+  "ocr_text": ": * :\n2 ae e P ‘ :\n; a: Rey oe ee . @,'e oa\n. & . % 4 . ° , ~ . ‘ : ela\n. i - \"Ms PR tem Sr : » 8 I, : r\ni ; baer } , * ‘ , c : : sy : © )\n. ® % : 2 ‘ “ * 4. . ° ; °\nz Fat ee 52 » *3ae ee. a 4 tA % BE per hk cate 23 ’ OT\nee) Woe). :\na. 9 a oe an ; pera ly}\ng al y » SRR a LY tie\n: : y : = ras N SY dist Y) fi 7 j Ve . te De r :\nFs ee ; « ¥ op *: :: a\nd ; : + . s — bs . ca ;\n: ° ae . 3 5 i .\n- : ? ¥ v * 7 E “di - 2 - «\n« > _ee SS s\n‘ : ‘ - ; * Ne Ei t n e *\n.. *. : s “Se :\ne ¢ 5 . aig eo \"\n- id P cmged . : - 7 . - . : “4 . e :\na: JLe AWFUL ; , 4\nad e oI . Es) * ’\nHOUSE_OVERSIGHT_000201\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a painted square with a pink heart inside, centered in the upper half. Inside the lower right corner of the square, there is a small color photograph depicting the backside of a person wearing purple bottoms. Below the square, there is a handwritten note in blue ink.",
+    "Layout: painted square",
+    "Layout: pink heart inside square",
+    "Layout: small photo inside lower right of square",
+    "Layout: handwritten text below square",
+    "Drawing candidate at center of page, within square: Painted pink heart with a blue/green background and a dark purple outline forming a square shape",
+    "Photo/image candidate at inside lower right corner of painted square: Color photo showing the backside of a person wearing purple bottoms"
+  ],
+  "observations": [
+    "The page contains a painted square with a pink heart inside, centered in the upper half. Inside the lower right corner of the square, there is a small color photograph depicting the backside of a person wearing purple bottoms. Below the square, there is a handwritten note in blue ink.",
+    "Layout: painted square",
+    "Layout: pink heart inside square",
+    "Layout: small photo inside lower right of square",
+    "Layout: handwritten text below square",
+    "Drawing candidate at center of page, within square: Painted pink heart with a blue/green background and a dark purple outline forming a square shape",
+    "Photo/image candidate at inside lower right corner of painted square: Color photo showing the backside of a person wearing purple bottoms"
+  ],
+  "dates": [],
+  "document_strings": [
+    "Forever Aspen with Francis, Snowdays, The Real mushroom"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below painted square",
+      "text_as_seen": "Forever Aspen with Francis, Snowdays, The Real mushroom",
+      "confidence": "medium",
+      "note": "Handwriting is mostly clear but some characters are slightly difficult to confirm."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:34:35.543Z",
+    "response_id": "resp_0dd9ada486e45373006a5030050660819594ce4d6436373be5",
+    "raw_output_sha256": "d6f01c2f7c8ed754b7025b25c495a2b5912bc626de9aa47d399f6234056e5a99"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0dd9ada486e45373006a5030050660819594ce4d6436373be5",
+    "enriched_at": "2026-07-09T23:34:35.543Z"
+  },
+  "visual_summary": "The page contains a painted square with a pink heart inside, centered in the upper half. Inside the lower right corner of the square, there is a small color photograph depicting the backside of a person wearing purple bottoms. Below the square, there is a handwritten note in blue ink.",
+  "layout": [
+    "painted square",
+    "pink heart inside square",
+    "small photo inside lower right of square",
+    "handwritten text below square"
+  ],
+  "handwriting": [
+    {
+      "location": "below painted square",
+      "text_as_seen": "Forever Aspen with Francis, Snowdays, The Real mushroom",
+      "confidence": "medium",
+      "note": "Handwriting is mostly clear but some characters are slightly difficult to confirm."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center of page, within square",
+      "description": "Painted pink heart with a blue/green background and a dark purple outline forming a square shape",
+      "confidence": "high"
+    }
+  ],
+  "photos": [
+    {
+      "location": "inside lower right corner of painted square",
+      "description": "Color photo showing the backside of a person wearing purple bottoms",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

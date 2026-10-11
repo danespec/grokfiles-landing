@@ -1,0 +1,100 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 137,
+  "page_id": "page_137",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_137.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_137.ocr.txt",
+  "image_metadata": {
+    "bytes": 6151181,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c89a6c4a2a8c27dee18b00208cc4377a778c648dd08ec1b3df5e3b7845911526"
+  },
+  "ocr_text": "Tre ky orld ae ae Keine\njot hai tikg fo Kin B Poca ufo\n\non 5\nfait bie =\n1 =m =\nes =\n= 3\n= -=\n\noo! F ee |\n\n\\ ;\n\nHOUSE_OVERSIGHT_000137\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a single photograph positioned near the lower center. The photo shows a person standing barefoot indoors in front of open double doors leading outside. The person faces away from the camera, with hands on hips, wearing shorts and no shirt. Above the photo is a handwritten note in black ink.",
+    "Layout: handwritten note at top center",
+    "Layout: photo centered below handwriting",
+    "Photo/image candidate at lower center: Person standing barefoot indoors facing open double doors leading outside, wearing shorts and no shirt, hands on hips, viewed from behind."
+  ],
+  "observations": [
+    "The page contains a single photograph positioned near the lower center. The photo shows a person standing barefoot indoors in front of open double doors leading outside. The person faces away from the camera, with hands on hips, wearing shorts and no shirt. Above the photo is a handwritten note in black ink.",
+    "Layout: handwritten note at top center",
+    "Layout: photo centered below handwriting",
+    "Photo/image candidate at lower center: Person standing barefoot indoors facing open double doors leading outside, wearing shorts and no shirt, hands on hips, viewed from behind."
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000137"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center above photo",
+      "text_as_seen": "You would spend many hours just waiting for him to turn up",
+      "confidence": "high",
+      "note": "Handwritten note in black ink, cursive style."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:24:39.939Z",
+    "response_id": "resp_0f5d7977234c63ae006a502db3045c8197933ea6f917589dae",
+    "raw_output_sha256": "de6c4a25ad3916886e55f067aa39d54121baf6c301b7018d3d596b344d2f6410"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0f5d7977234c63ae006a502db3045c8197933ea6f917589dae",
+    "enriched_at": "2026-07-09T23:24:39.939Z"
+  },
+  "visual_summary": "The page contains a single photograph positioned near the lower center. The photo shows a person standing barefoot indoors in front of open double doors leading outside. The person faces away from the camera, with hands on hips, wearing shorts and no shirt. Above the photo is a handwritten note in black ink.",
+  "layout": [
+    "handwritten note at top center",
+    "photo centered below handwriting"
+  ],
+  "handwriting": [
+    {
+      "location": "top center above photo",
+      "text_as_seen": "You would spend many hours just waiting for him to turn up",
+      "confidence": "high",
+      "note": "Handwritten note in black ink, cursive style."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "lower center",
+      "description": "Person standing barefoot indoors facing open double doors leading outside, wearing shorts and no shirt, hands on hips, viewed from behind.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

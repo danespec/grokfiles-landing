@@ -1,0 +1,136 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 78,
+  "page_id": "page_078",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_078.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_078.ocr.txt",
+  "image_metadata": {
+    "bytes": 182850,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "58cd234ebc5aeaf6f71317996f10c040129bf38c5ede5cdc8bf6a6ffff8e05de"
+  },
+  "ocr_text": ". 2 ;. oe eo\nMme: 5): . . Ba: Ln i pes Ot COE Bae\nos Bite Pe 2 (p. ¢ BAL ie a he oa ae\na vida SE ee Terai oan al “\n. \\\n|\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A photograph depicting an open book or album on a white surface. The open page on the right side contains a handwritten note with a redacted name at the top left. The left page is blank. The note is written in cursive handwriting and signed underneath. The entire book image is centered on the page with a black border surrounding it.",
+    "Layout: full-page photograph of open book",
+    "Layout: left page blank",
+    "Layout: right page contains handwritten note and signature",
+    "Photo/image candidate at center: Photograph of an open book or album with blank left page and handwritten note on right page."
+  ],
+  "observations": [
+    "A photograph depicting an open book or album on a white surface. The open page on the right side contains a handwritten note with a redacted name at the top left. The left page is blank. The note is written in cursive handwriting and signed underneath. The entire book image is centered on the page with a black border surrounding it.",
+    "Layout: full-page photograph of open book",
+    "Layout: left page blank",
+    "Layout: right page contains handwritten note and signature",
+    "Photo/image candidate at center: Photograph of an open book or album with blank left page and handwritten note on right page."
+  ],
+  "dates": [],
+  "document_strings": [
+    "To",
+    "As she goes through the hall, people stop and stare. To see such a pretty girl with long yellow hair."
+  ],
+  "signatures": [
+    {
+      "location": "right page bottom right under text",
+      "text_as_seen": "[signature]",
+      "confidence": "medium",
+      "note": "Cursive signature below handwritten note."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "right page center",
+      "text_as_seen": "As she goes through the hall, people stop and stare. To see such a pretty girl with long yellow hair.",
+      "confidence": "high",
+      "note": "Handwritten message in cursive."
+    }
+  ],
+  "redactions": [
+    {
+      "location": "right page top left corner above text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "A rectangular redaction censoring a name or label."
+    }
+  ],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction",
+    "signature"
+  ],
+  "gaps": [
+    "No date or additional markings visible on the page."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:28.547Z",
+    "response_id": "resp_0c8cafad440cb919006a502b8b47ec8194943f3cc56f21f5ca",
+    "raw_output_sha256": "4482e108ec88c494912798b011572845650b48d927274f579b700d2dc13d25a5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c8cafad440cb919006a502b8b47ec8194943f3cc56f21f5ca",
+    "enriched_at": "2026-07-09T23:15:28.547Z"
+  },
+  "visual_summary": "A photograph depicting an open book or album on a white surface. The open page on the right side contains a handwritten note with a redacted name at the top left. The left page is blank. The note is written in cursive handwriting and signed underneath. The entire book image is centered on the page with a black border surrounding it.",
+  "layout": [
+    "full-page photograph of open book",
+    "left page blank",
+    "right page contains handwritten note and signature"
+  ],
+  "handwriting": [
+    {
+      "location": "right page center",
+      "text_as_seen": "As she goes through the hall, people stop and stare. To see such a pretty girl with long yellow hair.",
+      "confidence": "high",
+      "note": "Handwritten message in cursive."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "right page bottom right under text",
+      "text_as_seen": "[signature]",
+      "confidence": "medium",
+      "note": "Cursive signature below handwritten note."
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "right page top left corner above text",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "A rectangular redaction censoring a name or label."
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "Photograph of an open book or album with blank left page and handwritten note on right page.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

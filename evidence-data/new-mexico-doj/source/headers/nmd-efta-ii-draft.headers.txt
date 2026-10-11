@@ -1,0 +1,7 @@
+URL: https://nmdoj.gov/wp-content/uploads/Epstein_Files_Transparency_Act_II_Final_3503.pdf
+Status: 200
+Content-Type: application/pdf
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 98f0161fb3b601bba8765ab1865a9891f22eb7daf13d2987012845702efcc95f
+Bytes: 174926
+Acquisition method: verified existing local capture

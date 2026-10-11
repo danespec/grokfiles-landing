@@ -1,0 +1,25 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "scope": "Negative-control reading of EFTA01111961's defined-client language versus proof of an actual Gates-Southern Trust engagement.",
+  "sources": [
+    {
+      "id": "HOUSE-GATES-TRANSCRIPT-2026-06-10",
+      "role": "controlling testimony and Majority Exhibit 5 description",
+      "public_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Bill-Gates-Transcript.pdf",
+      "sha256": "7c8c5dd601a3d800ff3d9f459961c0227b8154c5552ebf2e3954c364b7ef7b93",
+      "status": "local hash-verified official House PDF"
+    },
+    {
+      "id": "EFTA01111961",
+      "role": "May 28 2013 Southern Trust consulting contract / Majority Exhibit 5",
+      "public_url": "https://www.justice.gov/epstein",
+      "status": "DOJ-released EFTA exhibit identified by official House transcript; underlying PDF not re-hashed in this build"
+    }
+  ],
+  "limits": [
+    "Contract definition language is not equivalent to proof of engagement, payment or services.",
+    "Gates's denial is first-person testimony and should remain distinguishable from independent bank evidence.",
+    "This brief does not claim that no other Gates-related financial record exists in the broader corpus."
+  ]
+}

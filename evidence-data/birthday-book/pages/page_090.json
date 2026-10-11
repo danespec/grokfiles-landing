@@ -1,0 +1,152 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 90,
+  "page_id": "page_090",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_090.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_090.ocr.txt",
+  "image_metadata": {
+    "bytes": 19333582,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8c2cf7923fae261e6cf859886f9ca9b193d41b3f8297cabe51b5d3fe3dfb6b31"
+  },
+  "ocr_text": "SINATRA-BASIE\nPRANK\nSINATIRY bd\n! | ® | Yo my fl OY i¢ } i\nie 4 r 1 oJ wil eu\nee i eae : y - { we ng gs ON A\n| Ag y bd - - ne v3 -\n7 a ¥ : we 3 3\ni ‘ ; \" Y ’ ve a ie — a ——\n. 1. . T —_ SRSA — wail aot sh ee maggie\naf | yy ete re MS ae “i ie x Ee, er\n4 a te % +. My ¢ ee ee. r omg es is > exks 5r* :\n| f 4 4 Lease 2 y . z “4\n & as ' Ve. SS de | : ra |\nwes ) = “7 wy, = Me f * y : eer 4 4\ne LO a OT, A Li) ae.\nor huge’ mei 2 Oe « gewv + : ws - $e 7% 4 é ay 4\ng f ~~. ae , ‘ale t * i ar ay ’ > - j\n; Pee i Mc gil rh 1 cea 4 i ig p APES : : ; fl}\nHOUSE_OVERSIGHT_000090\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A scrapbook-style collage of multiple color photographs printed on a page with a flamingo-themed background and a central text element. There are at least five individual photos arranged on the page, with two photos having redaction blocks obscuring parts. The central text in a stylized font reads 'Not a Cloud in the Sky'. The photographs feature people, cars, and outdoor scenes. The page has some yellow stains or marks on the right and top edges.",
+    "Layout: background flamingo pattern",
+    "Layout: center text in banner shape",
+    "Layout: five photos arranged over background",
+    "Layout: two photos with black redaction blocks",
+    "Photo/image candidate at top left corner: Photograph of a person wearing a hat and glasses, with text 'TRANK' and 'SINATIRY' visible",
+    "Photo/image candidate at top right area: Photograph of a person in swimwear at an outdoor location, redacted area present",
+    "Photo/image candidate at center left: Photograph of a shirtless person standing outdoors with palm trees and a volleyball net in the background",
+    "Photo/image candidate at center right: Photograph of a person in white clothing leaning against an older model vehicle in a residential or street setting",
+    "Photo/image candidate at bottom left corner: Photograph of a person standing by a classic car parked by a house, partially redacted"
+  ],
+  "observations": [
+    "A scrapbook-style collage of multiple color photographs printed on a page with a flamingo-themed background and a central text element. There are at least five individual photos arranged on the page, with two photos having redaction blocks obscuring parts. The central text in a stylized font reads 'Not a Cloud in the Sky'. The photographs feature people, cars, and outdoor scenes. The page has some yellow stains or marks on the right and top edges.",
+    "Layout: background flamingo pattern",
+    "Layout: center text in banner shape",
+    "Layout: five photos arranged over background",
+    "Layout: two photos with black redaction blocks",
+    "Photo/image candidate at top left corner: Photograph of a person wearing a hat and glasses, with text 'TRANK' and 'SINATIRY' visible",
+    "Photo/image candidate at top right area: Photograph of a person in swimwear at an outdoor location, redacted area present",
+    "Photo/image candidate at center left: Photograph of a shirtless person standing outdoors with palm trees and a volleyball net in the background",
+    "Photo/image candidate at center right: Photograph of a person in white clothing leaning against an older model vehicle in a residential or street setting",
+    "Photo/image candidate at bottom left corner: Photograph of a person standing by a classic car parked by a house, partially redacted"
+  ],
+  "dates": [],
+  "document_strings": [
+    "SINATRA-BASIE",
+    "PRANK",
+    "SINATIRY bd",
+    "Not a Cloud in the Sky"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "top right photograph center area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular block redacting part of the photo content"
+    },
+    {
+      "location": "bottom left photograph center area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular block redacting part of the photo content"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "No date information visible",
+    "No handwritten text identified"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:17:16.277Z",
+    "response_id": "resp_09642777ee924c30006a502bf21b288193a5fd396c54d81473",
+    "raw_output_sha256": "4d4278c161c2bf4f297c25a0195f7c208cc71c9050110b372e0c349ab7e0fd65"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_09642777ee924c30006a502bf21b288193a5fd396c54d81473",
+    "enriched_at": "2026-07-09T23:17:16.277Z"
+  },
+  "visual_summary": "A scrapbook-style collage of multiple color photographs printed on a page with a flamingo-themed background and a central text element. There are at least five individual photos arranged on the page, with two photos having redaction blocks obscuring parts. The central text in a stylized font reads 'Not a Cloud in the Sky'. The photographs feature people, cars, and outdoor scenes. The page has some yellow stains or marks on the right and top edges.",
+  "layout": [
+    "background flamingo pattern",
+    "center text in banner shape",
+    "five photos arranged over background",
+    "two photos with black redaction blocks"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top right photograph center area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular block redacting part of the photo content"
+    },
+    {
+      "location": "bottom left photograph center area",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular block redacting part of the photo content"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top left corner",
+      "description": "Photograph of a person wearing a hat and glasses, with text 'TRANK' and 'SINATIRY' visible",
+      "confidence": "high"
+    },
+    {
+      "location": "top right area",
+      "description": "Photograph of a person in swimwear at an outdoor location, redacted area present",
+      "confidence": "high"
+    },
+    {
+      "location": "center left",
+      "description": "Photograph of a shirtless person standing outdoors with palm trees and a volleyball net in the background",
+      "confidence": "high"
+    },
+    {
+      "location": "center right",
+      "description": "Photograph of a person in white clothing leaning against an older model vehicle in a residential or street setting",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left corner",
+      "description": "Photograph of a person standing by a classic car parked by a house, partially redacted",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "investigation": "giuffre-maxwell-docket-1320-privilege-gap",
+  "published": "2026-10-06",
+  "source_control_note": "Original ECF 1320-39 was struck on 2024-01-04 for personally identifiable information. GAH does not republish that copy and cites the redacted refiling ECF 1326-4 for Log 153. Update 2026-10-06: ECF 264-1 confirms Judge Sweet reviewed the law-enforcement materials in camera, upheld the qualified public-interest privilege, denied compelled disclosure, and ordered the log and documents preserved under seal. Update 2026-10-06: the 2019 BSF subpoena and released March/April production indexes were mapped. The subpoena expressly excluded validly privileged documents; the reviewed indexes do not identify a separate approximately 57-document law-enforcement tranche. DOJ direct automated PDF retrieval was age-gated during this pass, so no local hash is asserted for the added EFTA sources.",
+  "sources": [
+    {
+      "id": "ECF-1320",
+      "role": "rolling-unseal-cover",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.447706/gov.uscourts.nysd.447706.1320.0.pdf",
+      "local_sha256": "4fe5b6e4aa6c26555b30280ad0bf03a5afb57cebb90983b827dac6abdd151aac"
+    },
+    {
+      "id": "ECF-1320-16",
+      "role": "maxwell-amended-privilege-log",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.447706/gov.uscourts.nysd.447706.1320.16_3.pdf",
+      "local_sha256": "72eb1b7b71a37d9f52f80cec77b4dab5536c4ab54093b87596ed27e939b73364"
+    },
+    {
+      "id": "ECF-1320-18",
+      "role": "giuffre-response-to-motion-to-compel",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.447706/gov.uscourts.nysd.447706.1320.18_4.pdf",
+      "local_sha256": "54fdcf60428c37b9133c36a348d11f323f98d6965c41b615e7d4be0349b899c2"
+    },
+    {
+      "id": "ECF-1326-4",
+      "role": "redacted-refiling-DE-235-10-and-log-153",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.447706/gov.uscourts.nysd.447706.1326.4.pdf",
+      "sha256_verified_2026_10_06": "8145df2a8896c17d2a153f8c58427f3d562c8d7a97e0d76e6d056487145343e2"
+    },
+    {
+      "id": "ECF-264-1",
+      "role": "judicial-in-camera-review-and-public-interest-privilege-ruling",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/Giuffre%20v.%20Maxwell%2C%20No.%20115-cv-07433%20%28S.D.N.Y.%202015%29/264-01.pdf"
+    },
+    {
+      "id": "ECF-1078",
+      "role": "2020-defense-statement-that-law-enforcement-materials-had-not-been-produced-to-defense",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/Giuffre%20v.%20Maxwell%2C%20No.%20115-cv-07433%20%28S.D.N.Y.%202015%29/1078.pdf"
+    },
+    {
+      "id": "CR-ECF-285-EFTA00029100",
+      "role": "2021-criminal-reply-connecting-privilege-dispute-to-57-separate-documents",
+      "url": "https://media-cdn.rollcall.com/epstein-files/DOJ-OGR-00004136-00004169.pdf",
+      "posture": "defense-briefing-not-independent-judicial-finding"
+    },
+    {
+      "id": "ECF-1367",
+      "role": "2026-protective-order-modification-authorizing-government-release-of-2019-BSF-subpoena-material-subject-to-EFTA",
+      "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2015cv07433/447706/1367/"
+    },
+    {
+      "id": "DOCKET",
+      "role": "docket-status-and-strike-refile-chain",
+      "url": "https://www.courtlistener.com/docket/4355835/giuffre-v-maxwell/"
+    },
+    {
+      "id": "EFTA00080976",
+      "role": "2019-bsf-grand-jury-subpoena-and-privilege-carveout",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00080976.pdf",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    },
+    {
+      "id": "EFTA00090979",
+      "role": "bsf-first-production-index-non-confidential",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00090979.pdf",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    },
+    {
+      "id": "EFTA00090983",
+      "role": "bsf-second-production-index-part-1",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00090983.pdf",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    },
+    {
+      "id": "EFTA00090986",
+      "role": "bsf-second-production-index-part-2",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00090986.pdf",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    },
+    {
+      "id": "EFTA00030122",
+      "role": "doj-relativity-processing-first-bsf-response",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00030122.pdf",
+      "verification_note": "public DOJ EFTA source; no local hash asserted"
+    },
+    {
+      "id": "EFTA00010245",
+      "role": "doj-relativity-processing-second-bsf-response",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00010245.pdf",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    },
+    {
+      "id": "EFTA00010252",
+      "role": "doj-relativity-processing-april-23-followup",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00010252.pdf",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    },
+    {
+      "id": "EFTA00088205",
+      "role": "maxwell-defense-characterization-nearly-90000-pages-bsf-material",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00088205.pdf",
+      "posture": "defense-characterization-not-independent-judicial-finding",
+      "verification_note": "public DOJ EFTA source; automated direct fetch age-gated; no local hash asserted"
+    }
+  ],
+  "limits": [
+    "Privilege logs are metadata, not the withheld contents.",
+    "Party briefing is adversarial advocacy unless separately adopted by a court.",
+    "The phrase 'Defendant and others' does not identify the others.",
+    "Names in the record do not imply wrongdoing.",
+    "The 2016 privilege ruling establishes judicial review and protection of the submitted materials; it does not identify the agency, unnamed others, contents, investigative theory, or disposition.",
+    "The August 2026 protective-order modification does not by itself prove the approximately 57 documents were among the 2019 subpoenaed BSF materials or were released under EFTA.",
+    "The released BSF production indexes do not prove that Log 153 materials were absent from every DOJ channel; they establish only that no matching approximately 57-document tranche is identified in the reviewed indexes."
+  ]
+}

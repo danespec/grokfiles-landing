@@ -1,0 +1,160 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 118,
+  "page_id": "page_118",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_118.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_118.ocr.txt",
+  "image_metadata": {
+    "bytes": 130241,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "4992e27b50a3196e1bab0045d2f564e5084717ee34702498e261dc9f077eccaf"
+  },
+  "ocr_text": "O al The | Dcen sian ot Jefte ey EPS +e 1S |\nSo Bicthdsy _ |\nak | | | a\n. rs liver, oe Lover, nw Delt, oO Serer, ct . |\nles Fok ty? |\n| ets o\\\\ my Ve cheer Lor today @ Fox‘)\n| ceaket\nFive ecedes, L, oc he\\k ~ \\ » lars (Ce :\nVe cab by Beets, C's ond M's oct »)\n\\ 2d or PB conedte SP reek ov h NS > oy\nBlonde, \\ } , bey es \\ © Ve See\nWal Asis nek of Gish, Ses now The OLA Men\n. = ow _ : L c + . ae prtoo TOR\nHOUSE_OVERSIGHT_000118\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Handwritten text on a white page. The handwriting is mostly legible and in black ink.",
+    "Layout: Title line at top center",
+    "Layout: Large “50th Birthday” subtitle below title",
+    "Layout: Four stanzas of handwritten text below subtitle"
+  ],
+  "observations": [
+    "Handwritten text on a white page. The handwriting is mostly legible and in black ink.",
+    "Layout: Title line at top center",
+    "Layout: Large “50th Birthday” subtitle below title",
+    "Layout: Four stanzas of handwritten text below subtitle"
+  ],
+  "dates": [
+    "50th"
+  ],
+  "document_strings": [
+    "On The Occasion of Jeffrey Epstein's",
+    "50th Birthday",
+    "A V.F.P.C.* is something to be",
+    "A V.F.P.C. is something to see",
+    "A Liver, a Lover, a Jeff, a Jeffrey",
+    "Let's all give a cheer, for today he's Fifty!",
+    "Five decades, L, or half century",
+    "By Birds and by Bucks, C's and M's are his key",
+    "Blonde, Red or Brunette, spread out geographically",
+    "With this net of fish, Jeff’s now 'The Old Man and The Sea'",
+    "Teaching math, trading options or foreign currency",
+    "Green eyeshades, schemes and plans, a unique tax strategy",
+    "Wet dream and cauchemar, an architect's wild spree",
+    "Moscow, Paris, Santa Fe, Alhambra East jamboree"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "On The Occasion of Jeffrey Epstein's",
+      "confidence": "high",
+      "note": "Title line, underlined"
+    },
+    {
+      "location": "below title line center",
+      "text_as_seen": "50th Birthday",
+      "confidence": "high",
+      "note": "Centered subtitle, underlined"
+    },
+    {
+      "location": "below subtitle first stanza",
+      "text_as_seen": "A V.F.P.C.* is something to be A V.F.P.C. is something to see A Liver, a Lover, a Jeff, a Jeffrey Let's all give a cheer, for today he's Fifty!",
+      "confidence": "high",
+      "note": "First stanza"
+    },
+    {
+      "location": "below first stanza second stanza",
+      "text_as_seen": "Five decades, L, or half century By Birds and by Bucks, C's and M's are his key Blonde, Red or Brunette, spread out geographically With this net of fish, Jeff’s now 'The Old Man and The Sea'",
+      "confidence": "high",
+      "note": "Second stanza"
+    },
+    {
+      "location": "below second stanza third stanza",
+      "text_as_seen": "Teaching math, trading options or foreign currency Green eyeshades, schemes and plans, a unique tax strategy Wet dream and cauchemar, an architect's wild spree Moscow, Paris, Santa Fe, Alhambra East jamboree",
+      "confidence": "high",
+      "note": "Third stanza"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:22:01.875Z",
+    "response_id": "resp_0b2a8b0a4ca81cec006a502d13c4bc81948cda8a8a7b48f917",
+    "raw_output_sha256": "bf52d6d59dc49a7054a1d2b964253a63de596e7db7a473a17a7244513f4c6953"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0b2a8b0a4ca81cec006a502d13c4bc81948cda8a8a7b48f917",
+    "enriched_at": "2026-07-09T23:22:01.875Z"
+  },
+  "visual_summary": "Handwritten text on a white page. The handwriting is mostly legible and in black ink.",
+  "layout": [
+    "Title line at top center",
+    "Large “50th Birthday” subtitle below title",
+    "Four stanzas of handwritten text below subtitle"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "On The Occasion of Jeffrey Epstein's",
+      "confidence": "high",
+      "note": "Title line, underlined"
+    },
+    {
+      "location": "below title line center",
+      "text_as_seen": "50th Birthday",
+      "confidence": "high",
+      "note": "Centered subtitle, underlined"
+    },
+    {
+      "location": "below subtitle first stanza",
+      "text_as_seen": "A V.F.P.C.* is something to be A V.F.P.C. is something to see A Liver, a Lover, a Jeff, a Jeffrey Let's all give a cheer, for today he's Fifty!",
+      "confidence": "high",
+      "note": "First stanza"
+    },
+    {
+      "location": "below first stanza second stanza",
+      "text_as_seen": "Five decades, L, or half century By Birds and by Bucks, C's and M's are his key Blonde, Red or Brunette, spread out geographically With this net of fish, Jeff’s now 'The Old Man and The Sea'",
+      "confidence": "high",
+      "note": "Second stanza"
+    },
+    {
+      "location": "below second stanza third stanza",
+      "text_as_seen": "Teaching math, trading options or foreign currency Green eyeshades, schemes and plans, a unique tax strategy Wet dream and cauchemar, an architect's wild spree Moscow, Paris, Santa Fe, Alhambra East jamboree",
+      "confidence": "high",
+      "note": "Third stanza"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "50th"
+  ],
+  "confidence": "high"
+}

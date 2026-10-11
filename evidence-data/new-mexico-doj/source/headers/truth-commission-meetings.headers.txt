@@ -1,0 +1,7 @@
+URL: https://www.nmtruthcommission.com/meetingsandarchives
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: fa7bcea1674be0d5bf323bb92f3ef16dde619d2b29ba37d35dd57dc37c4e718c
+Bytes: 152665
+Acquisition method: verified existing local capture

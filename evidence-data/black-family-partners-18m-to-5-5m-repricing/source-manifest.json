@@ -1,0 +1,97 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "black-family-partners-18m-to-5-5m-repricing",
+  "title": "From $18M Draft to $5.5M Closing: The Black Family Partners Repricing",
+  "published": "2026-09-30",
+  "scope": "Forensic-accounting reconstruction of Financial Trust Company's 2012 three-asset sale package to Black Family Partners, including aggregate repricing, intra-package reallocation and bank settlement.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN15_FORENSIC_ACCOUNTING_MASTER.md",
+  "sources": [
+    {
+      "id": "FTC-ANALYSIS",
+      "class": "PRIMARY_INTERNAL_ANALYSIS",
+      "record": "EFTA00593830",
+      "url": "/pdf-lite?id=EFTA00593830",
+      "supports": "Oct. 31 Financial Trust 'Summary of Leon Black deals'; historical net-investment figures and compounded-return scenarios.",
+      "limit": "Internal model, not independent appraisal or formal tax-basis determination."
+    },
+    {
+      "id": "NOV2-DRAFT",
+      "class": "PRIMARY_DRAFT_AGREEMENT",
+      "record": "EFTA00586106",
+      "url": "/pdf-lite?id=EFTA00586106",
+      "supports": "Unsigned Nov. 2 draft purchase-and-sale agreement with $18M aggregate and $7,793,608 / $3,496,424 / $6,709,968 asset allocations.",
+      "limit": "Draft contains incomplete purchaser/signature fields and does not prove an $18M closing."
+    },
+    {
+      "id": "INTERMEDIATE-SCHEDULE",
+      "class": "PRIMARY_ALLOCATION_SCHEDULE",
+      "record": "EFTA00585575",
+      "url": "/pdf-lite?id=EFTA00585575",
+      "supports": "Standalone Schedule 3.2 allocating $5.5M as $3.5M ESWW / $1M AP SHL / $1M AP Tech.",
+      "limit": "Provenance does not establish it as the final operative closing schedule."
+    },
+    {
+      "id": "NOV26-CLOSING",
+      "class": "PRIMARY_CLOSING_EMAIL",
+      "record": "EFTA00634299",
+      "url": "/pdf-lite?id=EFTA00634299",
+      "supports": "Nov. 26 counsel transmission confirming $5.5M aggregate purchase price, Schedule 3.2 allocation and planned Nov. 30 closing.",
+      "limit": "Closing instruction is not by itself proof of final executed signatures."
+    },
+    {
+      "id": "NOV28-ALLOCATION",
+      "class": "PRIMARY_EMAIL_AND_ACCOUNTING_CHAIN",
+      "record": "EFTA00693690",
+      "url": "/pdf-lite?id=EFTA00693690",
+      "supports": "Nov. 28 $5M ESWW / $250K AP SHL / $250K AP Tech allocation; 2014 later confirmation that those sales prices were used and AJE existed.",
+      "limit": "Does not explain why allocation changed or establish tax motive."
+    },
+    {
+      "id": "NOV30-BANK",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01510783 / EFTA01510763",
+      "url": "/pdf-lite?id=EFTA01510783",
+      "supports": "Nov. 30 $5,500,030 CHIPS credit from Black Family Partners, L.P. to Financial Trust Company.",
+      "limit": "Two JPM statement representations support the amount/originator; the $30 above the stated $5.5M contract price is unexplained."
+    },
+    {
+      "id": "RUN15",
+      "class": "GAH_FORENSIC_ACCOUNTING_SYNTHESIS",
+      "record": "GAH_US_RUN15_FORENSIC_ACCOUNTING_MASTER.md",
+      "supports": "Chronology, arithmetic reconciliation, laundering-screen negative findings and open forensic questions.",
+      "limit": "Archive-created synthesis; substantive claims remain tied to primary sources above."
+    }
+  ],
+  "reconciliations": {
+    "draft_total": 18000000,
+    "closing_total": 5500000,
+    "aggregate_reduction": 12500000,
+    "aggregate_reduction_pct": 69.44,
+    "intermediate_allocation": {
+      "ESWW": 3500000,
+      "AP_SHL": 1000000,
+      "AP_Tech": 1000000
+    },
+    "final_allocation": {
+      "ESWW": 5000000,
+      "AP_SHL": 250000,
+      "AP_Tech": 250000
+    },
+    "bank_credit": 5500030,
+    "bank_credit_excess_over_stated_price": 30
+  },
+  "open_questions": [
+    "Why the aggregate package moved from $18M to $5.5M between Nov. 2 and Nov. 26.",
+    "Why the $5.5M allocation changed from $3.5M/$1M/$1M to $5M/$250K/$250K.",
+    "Who authored the Oct. 31 return model and selected its assumptions.",
+    "Whether the final executed purchase-and-sale agreement and signed transfer documents can be recovered.",
+    "Buyer- and seller-side 2012 tax treatment and the 2014 adjusting journal entry.",
+    "Why the Nov. 30 bank credit was $30 above the stated $5.5M purchase price."
+  ],
+  "not_established": [
+    "That the $18M draft ever closed or was funded.",
+    "That the repricing/reallocation was tax-driven, valuation-driven, negotiation-driven or accounting-driven.",
+    "Money laundering, tax fraud, concealment, structuring, layering or a sham transaction.",
+    "That historical net-investment figures equal fair market value or formal tax basis."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "title": "Financial Trust to Black Family Partners: What the November 2012 Records Show",
+  "generated": "2026-09-30",
+  "editorial_boundary": "The records establish a documented sale package and bank receipt. They do not, by themselves, establish wrongdoing, motive, operational control, or causation.",
+  "sources": [
+    {
+      "id": "SRC-000",
+      "type": "EFTA",
+      "record": "EFTA01128206",
+      "role": "November 2012 draft package sale; $5.5 million aggregate price",
+      "access": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01128206.pdf"
+    },
+    {
+      "id": "SRC-001",
+      "type": "EFTA",
+      "record": "EFTA00634299",
+      "role": "Nov. 26 email forwarding purchase-and-sale package; $5.5 million price; Nov. 30 target close",
+      "access": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00634299.pdf"
+    },
+    {
+      "id": "SRC-002",
+      "type": "EFTA",
+      "record": "EFTA00693690",
+      "role": "Accounting allocation: $5m ESW, $250k AP SHL, $250k AP Technology",
+      "access": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00693690.pdf"
+    },
+    {
+      "id": "SRC-003",
+      "type": "EFTA",
+      "record": "EFTA01510783 / EFTA01510763",
+      "role": "Nov. 30 JPMorgan statement representation of $5,500,030 CHIPS credit from Black Family Partners",
+      "access": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01510783.pdf"
+    },
+    {
+      "id": "SRC-004",
+      "type": "EFTA",
+      "record": "EFTA00299930",
+      "role": "File-cabinet index describing purchase and sale, allocation schedule, assignments, stock powers, and wire-transfer notice",
+      "access": "/search?q=EFTA00299930"
+    },
+    {
+      "id": "SRC-005",
+      "type": "EFTA",
+      "record": "EFTA00585846",
+      "role": "Stock power covering 13,198,711 certificate shares; separate instruction for 151,494 broker-held shares",
+      "access": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00585846.pdf"
+    },
+    {
+      "id": "SRC-006",
+      "type": "SEC",
+      "record": "0000909012-11-000390",
+      "role": "2011 Financial Trust Schedule 13G: 13,350,205 ESW shares / 6.1%",
+      "access": "https://www.sec.gov/Archives/edgar/data/1082278/000090901211000390/0000909012-11-000390-index.htm"
+    },
+    {
+      "id": "SRC-007",
+      "type": "SEC",
+      "record": "0001082278-14-000028",
+      "role": "2014 filing attributing post-split ESW position to Black Family Partners",
+      "access": "https://www.sec.gov/Archives/edgar/data/1082278/000108227814000028/kl2-2806582v20s1_eswrightsof.htm"
+    },
+    {
+      "id": "SRC-008",
+      "type": "SEC",
+      "record": "Apollo / Dechert Exhibit 99.1 (2021-01-22)",
+      "role": "Independent review describing Financial Trust investments in AP SHL, AP Technology, and ESWW alongside Black-family interests",
+      "access": "https://www.sec.gov/Archives/edgar/data/1411494/000119312521016405/d118102dex991.htm"
+    }
+  ],
+  "open_questions": [
+    "Why the Nov. 30 bank credit is $30 above the stated $5.5 million price.",
+    "Released signature pages are incomplete; later SEC filings provide post-closing ownership corroboration.",
+    "Transfer-agent/certificate administration continued after the economic sale."
+  ]
+}

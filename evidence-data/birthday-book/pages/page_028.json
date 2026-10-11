@@ -1,0 +1,176 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 28,
+  "page_id": "page_028",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_028.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_028.ocr.txt",
+  "image_metadata": {
+    "bytes": 444133,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "688716f732aa07bea3a2dfa6de0ebda5b6b7adb4d49012f1e008c2128af4897f"
+  },
+  "ocr_text": ": ; | ge| fate a : _ “ ue £ ‘f . - cgi - Ace tl gt Ke on, -\na 7 \\ ¢ @ | p fyb. _- | £ ; cael ao oe a cae a £ Tr PS baer - ae. - . dp n) :\nns a 7 2 tes éye > agit er |\n_ Ga) py > nn vt vmae ne boo — ane Cie e\n- : - F & fh & YER. om ae fe BPs Pe meee 7 ae vy, é _\n[he Oe oe ee erry : | . oe peg Af bl\nCN ty nee Pe Le Atw VLE\na | ey potbedberd Mend. VAG TE Coo, MA 1s a\nGa teertat OS VoL\nee ar, SG afuated “2 Aprtat FO\na a 4 . A 'f ‘ i. i , } ae os aa : te oe a aa ee anaim a fies . /\nee a) ae ee Tete |\na | A. - i wo. ys fe cee 8 sok teen? eat pee ,\n- | ag Te ag hee? OR ee ee ee ean Ning gp\nby ygahe f sc Aplepo MW THY OUTER Meee\nS| Meg Te chetas Mrtcrmte SS PRR Be\nen ke vps AC ANE BARS Cie Keme |\n_ | REWER GRRE AVG Oe EM |\nepi I a a ol whl id ihe ee iitoe comm\nle ateo lk. ute Ti Seged- pt ae\n7 es: _ _é og 4 ; A 7 “. (ge, f an - bof ab CB Een jae Atel dte :\nen | Never ee piustéy — ~ Gate TS Eee |\n. So ae RB ' ewe oo he Peet vo Cae e a mo 4 CY\nee 0 ee ere | So apne Df eae PROP |\nETI Squats chool. S wiebed gre MP |\nSt ho a ee % ws BE ~ . came . agin sane MBE: cee a . i vs a ; ‘\n| a 7 c ‘ . Wepre “feck va) A Le ; 7 & Af wif os Be l. el we eo\nNS yup dead ftv than Fee BA oe T. DAE\noa I be fre WE = ETE WOR\nre Sn eee tp AR vy\n2 no 2B, thy RA, sone No) Aaa J ai € Canes. em ain a oe\nad a ee ¢ ON\nBe , Fe aie pee Re AS ectibaa, A alyhe bet : pe cos\nbe po UF Sd “a kid ee eee fF eieen Vo fed Thee rn tf ame oo ed om eit ; .\nCL Se eee a eo Hen 9 Cone TO\nee | tHe CpOW M & Gane Gov Walt PAN O we ean’, wy aes\nee. —_ 4 RO Oe “ - _ . . . Px, a ee %,. ; . ot had a tal dig a fi AR |\nHOUSE_OVERSIGHT_000028\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten page consisting of personal notes about family members and educational history. The text is written in cursive and print styles, somewhat faded and uneven but mostly legible. Mentions family members, schools attended, work history, and military draft details.",
+    "Layout: Header with title line",
+    "Layout: Numbered list (3 items) about father's brothers",
+    "Layout: Paragraph about sister and school attendance",
+    "Layout: Paragraph about teacher's name and schooling",
+    "Layout: Paragraph about work and military draft"
+  ],
+  "observations": [
+    "A handwritten page consisting of personal notes about family members and educational history. The text is written in cursive and print styles, somewhat faded and uneven but mostly legible. Mentions family members, schools attended, work history, and military draft details.",
+    "Layout: Header with title line",
+    "Layout: Numbered list (3 items) about father's brothers",
+    "Layout: Paragraph about sister and school attendance",
+    "Layout: Paragraph about teacher's name and schooling",
+    "Layout: Paragraph about work and military draft"
+  ],
+  "dates": [
+    "1939-1940",
+    "AUG 7 1941"
+  ],
+  "document_strings": [
+    "My fathers brothers",
+    "RHINE - Died of an HEART ATTACK",
+    "MAX - was a PLUMBER also DIED OF HEART ATTACK",
+    "MEYER - was a P.A.",
+    "He died stepping away Lost by NAIL",
+    "My father had 1 sister. Her name was Mammie RABINOWITZ",
+    "I attended P.S. 161",
+    "After I graduated - I went to Hebre School on Crown Street",
+    "My teachers name was Mrs. Blenden",
+    "I was Bar Mitzvah ed on Thu Afternoon",
+    "My teachers name was MR. ZWERDING",
+    "AFTER GRADUATING HEBREW SCHOOL",
+    "I went to ALEXANDER HAMILTON High School where I stayed for 3 1/2 years",
+    "NEVER GRADUATED",
+    "I quit school because I NEVER LIKED SCHOOL",
+    "After I quit school I worked for my Father on WALTON ST. BROWNS",
+    "I worked for him for about 3 years",
+    "Farming house - After working for him - I joined THE CCC CAMP",
+    "They sent me to Bronx CADE where I stayed from 1939-1940",
+    "then I came home to CROWN ST. Couldn't find a job until I was DRAFTED in the U.S. ARMY AUG 7 1941"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "My fathers brothers 1) RHINE - Died of an HEART ATTACK 2) MAX - was a PLUMBER also DIED OF HEART ATTACK 3) MEYER - was a P.A. He died stepping away Lost by NAIL",
+      "confidence": "high",
+      "note": "Clearly visible text about father's brothers and their deaths."
+    },
+    {
+      "location": "middle of page",
+      "text_as_seen": "My father had 1 sister. Her name was Mammie RABINOWITZ",
+      "confidence": "high",
+      "note": "Name and relation specified clearly."
+    },
+    {
+      "location": "middle to lower half",
+      "text_as_seen": "I attended P.S. 161 After I graduated - I went to Hebre School on Crown Street My teachers name was Mrs. Blenden I was Bar Mitzvah ed on Thu Afternoon My teachers name was MR. ZWERDING AFTER GRADUATING HEBREW SCHOOL",
+      "confidence": "medium",
+      "note": "Some words partially unclear; Hebrew spelled 'Hebre'."
+    },
+    {
+      "location": "lower half",
+      "text_as_seen": "I went to ALEXANDER HAMILTON High School where I stayed for 3 1/2 years - NEVER GRADUATED - I quit school because I NEVER LIKED SCHOOL - After I quit school I worked for my Father on WALTON ST. BROWNS - I worked for him for about 3 years",
+      "confidence": "medium",
+      "note": "Some fading and smudging slightly affect clarity."
+    },
+    {
+      "location": "bottom of page",
+      "text_as_seen": "Farming - house - After working for him - I joined THE CCC CAMP They sent me to Bronx CADE where I stayed from 1939-1940 - then I came home to CROWN ST. Couldn't find a job until I was DRAFTED in the U.S. ARMY AUG 7 1941",
+      "confidence": "medium",
+      "note": "Date and event details present but some words partially unclear."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some words partially unclear or faded especially in middle and bottom lines."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:06:46.344Z",
+    "response_id": "resp_0934deb70ae5648e006a502979e5d881978c3ed0e80d286176",
+    "raw_output_sha256": "de9fea9d9ada9ca5801cfcf6533ae4ee784e8cb7bfeec4cff90b4991794b87f4"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0934deb70ae5648e006a502979e5d881978c3ed0e80d286176",
+    "enriched_at": "2026-07-09T23:06:46.344Z"
+  },
+  "visual_summary": "A handwritten page consisting of personal notes about family members and educational history. The text is written in cursive and print styles, somewhat faded and uneven but mostly legible. Mentions family members, schools attended, work history, and military draft details.",
+  "layout": [
+    "Header with title line",
+    "Numbered list (3 items) about father's brothers",
+    "Paragraph about sister and school attendance",
+    "Paragraph about teacher's name and schooling",
+    "Paragraph about work and military draft"
+  ],
+  "handwriting": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "My fathers brothers 1) RHINE - Died of an HEART ATTACK 2) MAX - was a PLUMBER also DIED OF HEART ATTACK 3) MEYER - was a P.A. He died stepping away Lost by NAIL",
+      "confidence": "high",
+      "note": "Clearly visible text about father's brothers and their deaths."
+    },
+    {
+      "location": "middle of page",
+      "text_as_seen": "My father had 1 sister. Her name was Mammie RABINOWITZ",
+      "confidence": "high",
+      "note": "Name and relation specified clearly."
+    },
+    {
+      "location": "middle to lower half",
+      "text_as_seen": "I attended P.S. 161 After I graduated - I went to Hebre School on Crown Street My teachers name was Mrs. Blenden I was Bar Mitzvah ed on Thu Afternoon My teachers name was MR. ZWERDING AFTER GRADUATING HEBREW SCHOOL",
+      "confidence": "medium",
+      "note": "Some words partially unclear; Hebrew spelled 'Hebre'."
+    },
+    {
+      "location": "lower half",
+      "text_as_seen": "I went to ALEXANDER HAMILTON High School where I stayed for 3 1/2 years - NEVER GRADUATED - I quit school because I NEVER LIKED SCHOOL - After I quit school I worked for my Father on WALTON ST. BROWNS - I worked for him for about 3 years",
+      "confidence": "medium",
+      "note": "Some fading and smudging slightly affect clarity."
+    },
+    {
+      "location": "bottom of page",
+      "text_as_seen": "Farming - house - After working for him - I joined THE CCC CAMP They sent me to Bronx CADE where I stayed from 1939-1940 - then I came home to CROWN ST. Couldn't find a job until I was DRAFTED in the U.S. ARMY AUG 7 1941",
+      "confidence": "medium",
+      "note": "Date and event details present but some words partially unclear."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1939-1940",
+    "AUG 7 1941"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,142 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "created": "2026-10-06",
+  "scope": "Cross-source audit separating the Andriesz allegation stream from FBI database/review records, CFTC enforcement, HMRC tax proceedings, FCA whistleblower handling, the UK Employment Tribunal disposition, and independently documented AdFin corporate records.",
+  "sources": [
+    {
+      "id": "EFTA00020515",
+      "role": "October 19, 2020 FBI NTOC intake under the Epstein case number",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00020515.pdf",
+      "sha256": "390fa95871565fa2c4b436e89c870f820395c116dc5959ac1536931c15780f42",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA01249207",
+      "role": "Three-page FBI FD-302 memorializing the February 16, 2021 whistleblower interview",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01249207.pdf",
+      "sha256": "02508baebfa2043f7c48a1b252482f8d9bf7d8be6f9d45ff364084090beb8aa2",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA01249210",
+      "role": "FBI Guardian complaint import documenting the allegation stream and database-query summary",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01249210.pdf",
+      "sha256": "12289873ad71bbb36753ab70eb8ba48062449b2cf4020c954201679bcd27afb7",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA00173881",
+      "role": "January 30, 2025 FBI ARMS Reach vetting email stating no investigation was opened as a result of the referenced allegations",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00173881.pdf",
+      "sha256": "cbc262c226706423caea79cc3ae811ba5c61311608680a68b6f19e2219b9930a",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA00289560",
+      "role": "AdFin Series A financing file containing Southern Trust and CVAFH purchaser signature pages, purchaser schedules, and Cantor side letter",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00289560.pdf",
+      "sha256": "38d7927e9fc6ffccaf80ebbccfc4e4320572d0c698fedd8731b3032f98398e69",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA01050772",
+      "role": "May 28, 2018 direct Epstein-HWL email exchange about AdFin's prospects",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01050772.pdf",
+      "sha256": "c295909e8dd1241b62227cd7240432081029ad79a52c5bc2b21519c64df7c896",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA01084694",
+      "role": "February 2016 AdFin investor letter and financing summary describing Cantor's later funding and control position",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01084694.pdf",
+      "sha256": "33d9a872403350f7c189b108601f339b84de3afcac8085b0d6943530a9a75525",
+      "status": "current DOJ PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "HOUSE-LUTNICK-TRANSCRIPT-2026-05-06",
+      "role": "Official House Oversight transcribed interview identifying HWL as Lutnick, his account of Cantor Ventures, and his stated lack of contemporaneous knowledge of Epstein's AdFin investment",
+      "public_url": "https://oversight.house.gov/wp-content/uploads/2026/05/Lutnick-Transcript.pdf",
+      "sha256": "7494e23aec03543ed534b729dba63b14cb8dc7d515bec49304d85df83ad30235",
+      "status": "official House PDF fetched and hash-verified 2026-10-06"
+    },
+    {
+      "id": "EFTA01648955",
+      "role": "July 24, 2025 FBI 'JE tasks 7/24' email directing a derogatory-information spreadsheet; Lutnick entry annotated 'ponzi scheme and money laundering'",
+      "public_url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01648955.pdf",
+      "sha256": "7e4597dc2d6d1f056e8ac26daf959665870d2f472a2dc133b3f48854c0f47823",
+      "status": "current DOJ PDF fetched and hash-frozen 2026-10-07"
+    },
+    {
+      "id": "CFTC-8083-19",
+      "role": "November 22, 2019 CFTC order announcing $3 million BGC Financial penalty for supervision, reporting and recordkeeping violations",
+      "public_url": "https://www.cftc.gov/PressRoom/PressReleases/8083-19",
+      "sha256": "7094d0057613cdc3ec830aa5dc4ff46bd6199da5a0f7ac094b5ac358d24674a0",
+      "status": "official CFTC release locally frozen 2026-10-07"
+    },
+    {
+      "id": "CFTC-8239-20",
+      "role": "September 11, 2020 CFTC announcement of awards to two anonymous whistleblowers, including an overseas second whistleblower",
+      "public_url": "https://www.cftc.gov/PressRoom/PressReleases/8239-20",
+      "sha256": "4ea6db1c60b710732cebd5159f170938b6ee39ec57656392ecf7668abdf941fc",
+      "status": "official CFTC release locally frozen 2026-10-07"
+    },
+    {
+      "id": "UKFTT-2025-700-TC",
+      "role": "First-tier Tribunal record confirming £96,037,893 Regulation 80 determinations issued March 8, 2024 for 2017/18–2019/20",
+      "public_url": "https://www.bailii.org/uk/cases/UKFTT/TC/2025/TC09548.html",
+      "sha256": "dc645cbcc6be07fe6ef3c3511acf5204d36b0a17610a7d27fa42630a905d7dc3",
+      "status": "BAILII judgment locally frozen 2026-10-07"
+    },
+    {
+      "id": "BGC-2026-Q2-10Q",
+      "role": "BGC Group Form 10-Q filed August 10, 2026 describing later HMRC determination, NIC proceedings and $40.6m accrued liability",
+      "public_url": "https://www.sec.gov/Archives/edgar/data/1094831/000162828026055187/bgcg-20260630.htm",
+      "sha256": null,
+      "status": "official SEC filing verified 2026-10-07; local automated fetch blocked by SEC access controls, no local hash recorded"
+    },
+    {
+      "id": "FCA-CC-202201760",
+      "role": "Complaints Commissioner report 202201760, revised after the FCA corrected its PIDA-protection statement",
+      "public_url": "https://frccommissioner.org.uk/wp-content/uploads/202201760-Issued-01-August-2023.-Published-17-August-2023.-Revised-12-October-2023-.pdf",
+      "sha256": "b96ca484f75257a9a11948693904b01efa40c651f61ccfabaf51fcaec1f12e2a",
+      "status": "published report locally frozen 2026-10-07"
+    },
+    {
+      "id": "FCA-RESPONSE-202201760",
+      "role": "FCA response acknowledging its statement about loss of PIDA protection was incorrect and saying it corrected and apologized",
+      "public_url": "https://www.fca.org.uk/publication/corporate/response-complaints-commissioner-report-208125268.pdf",
+      "sha256": "ddfc0d39d391d5d9881f6c0976f86fab7b3e011e3a8cedce3bc0fe47c724f014",
+      "status": "official FCA PDF fetched and hash-frozen 2026-10-07"
+    },
+    {
+      "id": "FCA-ANDRIESZ-REVIEW-2026-10",
+      "role": "FCA post announcing Lea Paterson review of FCA interactions with Simon Andriesz and planned publication of lessons early next year",
+      "public_url": "https://www.fca.org.uk/news/blogs/looking-how-we-interact-whistleblowers",
+      "sha256": "86efa0e7660cb3ac715328cc2711457b66de3c61e50f7de54bc813bbdf91b882",
+      "status": "official FCA page fetched and hash-frozen 2026-10-07"
+    },
+    {
+      "id": "ET-3200408-2025",
+      "role": "Employment Tribunal written reasons dated August 11, 2026 striking out Andriesz's 2025 claim",
+      "public_url": "https://www.gov.uk/employment-tribunal-decisions/mr-s-andriesz-v-bgc-partners-lp-and-others-3200408-slash-2025",
+      "sha256": "7fce47db8ec48831f35689d185ec7826de2f599d12c5c778c30febd5e11b8caf",
+      "status": "official written-reasons PDF fetched and hash-frozen 2026-10-07"
+    }
+  ],
+  "corrections": [
+    "Initial lead 'no Andriesz 302 in the releases' is withdrawn: EFTA01249207 is a released three-page FD-302 and contains the surname rendered ANDREISZ.",
+    "Initial lead 'no direct Lutnick-Epstein AdFin email' is withdrawn: EFTA01050772 is a direct 2018 AdFin exchange, and Lutnick identified the HWL email as his during the House interview."
+  ],
+  "limits": [
+    "FBI intake, Guardian, and FD-302 records preserve allegations and source statements; they are not FBI findings that the allegations are true.",
+    "EFTA00173881 says no investigation was opened as a result of the referenced allegation stream; that does not establish that no regulator or other agency ever reviewed related conduct.",
+    "The AdFin record establishes corporate co-investment by Southern Trust and a Cantor venture vehicle; it does not establish a personal investment partnership between Epstein and Lutnick.",
+    "Lutnick denied contemporaneous knowledge that Epstein was an AdFin investor. This source set does not independently adjudicate Lutnick's state of knowledge.",
+    "The 2018 AdFin email establishes direct communication about the company, not criminal conduct or a broader business partnership.",
+    "EFTA01249210 reports case-file and SAR query hits but does not state Lutnick's role in the underlying records; a database hit is not proof of subject status or wrongdoing.",
+    "CFTC Release 8239-20 does not publicly identify Simon Andriesz, the underlying enforcement action, or the exact award; GAH does not make that identification by pattern match alone.",
+    "The public HMRC, tribunal, and SEC records reviewed do not identify Andriesz as the source that caused the £96,037,893 determinations.",
+    "The August 2026 Employment Tribunal decision struck out the employment claim on limitation/procedural/prospects grounds and records that no oral evidence was called; it is not treated as a merits trial of all external allegations."
+  ],
+  "updated": "2026-10-07"
+}

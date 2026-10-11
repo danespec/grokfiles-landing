@@ -1,0 +1,117 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 217,
+  "page_id": "page_217",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_217.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_217.ocr.txt",
+  "image_metadata": {
+    "bytes": 10974819,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "f0f3d93af1acb20ea731e6774e3dbc22c0f34c2e0b8b70df961a583244bb8b33"
+  },
+  "ocr_text": "a s Newey a ] = Fay | -\nOf : “9 ye 2 i\nI. i? ak + 7 ; } My b wd =\n\nae eee U8 @ 2’ j\ny i ~ y ee ‘ r re\ne | = . Ot ay | ! eI i OO -\n\n| _—— . “i = : Be = 7 | : n X \\ ‘ —\nj = 4 “1 a\n\ne i\nAig | 2\" <a tow AR ey\n|\nww Ps onl ; ‘a ' ,\n¥ ye = _ f y fe . - = re ae ib —/ |\nHOUSE_OVERSIGHT_000217\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page is a collage of multiple photographs closely arranged in a rectangular layout. Most photographs depict individuals in casual or swimwear poses, with many parts of the images redacted with black boxes. The photos show a variety of indoor and outdoor scenes, including beach settings, a grassy area, and interior spaces. Some images show groups while others focus on single people. The overall tone suggests casual or leisure moments. There is a black border around the collage. Along the bottom edge, the text 'HOUSE_OVERSIGHT_000217' is visible. Many areas of the collage are obscured by black redaction boxes of varying sizes, making identification or detailed description impossible in those spots.",
+    "Layout: multiple small to medium rectangular photographs arranged in a roughly rectangular collage with black borders",
+    "Layout: distributed with some overlap",
+    "Layout: photographs oriented upright",
+    "Photo/image candidate at throughout the collage behind black redactions: Photos mostly of people, often in swimwear or casual clothing, in indoor and outdoor settings such as beach and grassy areas"
+  ],
+  "observations": [
+    "The page is a collage of multiple photographs closely arranged in a rectangular layout. Most photographs depict individuals in casual or swimwear poses, with many parts of the images redacted with black boxes. The photos show a variety of indoor and outdoor scenes, including beach settings, a grassy area, and interior spaces. Some images show groups while others focus on single people. The overall tone suggests casual or leisure moments. There is a black border around the collage. Along the bottom edge, the text 'HOUSE_OVERSIGHT_000217' is visible. Many areas of the collage are obscured by black redaction boxes of varying sizes, making identification or detailed description impossible in those spots.",
+    "Layout: multiple small to medium rectangular photographs arranged in a roughly rectangular collage with black borders",
+    "Layout: distributed with some overlap",
+    "Layout: photographs oriented upright",
+    "Photo/image candidate at throughout the collage behind black redactions: Photos mostly of people, often in swimwear or casual clothing, in indoor and outdoor settings such as beach and grassy areas"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000217"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "scattered across the collage in multiple rectangles varying from small to large",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes fully obscuring parts of the photographs"
+    },
+    {
+      "location": "top edge black border section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar across the top border of the page"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Details and identities in redacted parts cannot be described due to black boxes obscuring content"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:37:10.668Z",
+    "response_id": "resp_01d874ae908c8c22006a50309fd6c88193a7fa740526725969",
+    "raw_output_sha256": "851519a62b9a592cfb8a46b408c62a30e1f06b73ddd67bb4ebdf520c0878d8dc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_01d874ae908c8c22006a50309fd6c88193a7fa740526725969",
+    "enriched_at": "2026-07-09T23:37:10.668Z"
+  },
+  "visual_summary": "The page is a collage of multiple photographs closely arranged in a rectangular layout. Most photographs depict individuals in casual or swimwear poses, with many parts of the images redacted with black boxes. The photos show a variety of indoor and outdoor scenes, including beach settings, a grassy area, and interior spaces. Some images show groups while others focus on single people. The overall tone suggests casual or leisure moments. There is a black border around the collage. Along the bottom edge, the text 'HOUSE_OVERSIGHT_000217' is visible. Many areas of the collage are obscured by black redaction boxes of varying sizes, making identification or detailed description impossible in those spots.",
+  "layout": [
+    "multiple small to medium rectangular photographs arranged in a roughly rectangular collage with black borders",
+    "distributed with some overlap",
+    "photographs oriented upright"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "scattered across the collage in multiple rectangles varying from small to large",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes fully obscuring parts of the photographs"
+    },
+    {
+      "location": "top edge black border section",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black bar across the top border of the page"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "throughout the collage behind black redactions",
+      "description": "Photos mostly of people, often in swimwear or casual clothing, in indoor and outdoor settings such as beach and grassy areas",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

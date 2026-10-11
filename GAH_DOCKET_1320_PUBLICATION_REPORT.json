@@ -1,0 +1,15 @@
+{
+  "schema": "gah.publication.v1",
+  "created_utc": "2026-10-06T17:00:30.694710+00:00",
+  "source_package": "/Users/thomas/_gah_builds/GAH-PAGES-PACKAGE-20261006T163252Z",
+  "output_package": "/Users/thomas/_gah_builds/GAH-PAGES-PACKAGE-20261006T170027Z",
+  "article": "/investigations/giuffre-maxwell-docket-1320-privilege-gap",
+  "changed": [
+    "investigations/giuffre-maxwell-docket-1320-privilege-gap.html",
+    "investigations.html",
+    "latest.html",
+    "evidence-data/giuffre-maxwell-docket-1320/source-manifest.json",
+    "evidence-data/giuffre-maxwell-docket-1320/claims.json"
+  ],
+  "privacy": "Struck ECF 1320-39 not copied or linked; redacted ECF 1326-4 used."
+}

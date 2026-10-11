@@ -1,0 +1,110 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 130,
+  "page_id": "page_130",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_130.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_130.ocr.txt",
+  "image_metadata": {
+    "bytes": 113089,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "62cb946ea675bddda4ad9f74f579e66666a6ee7c142f833c928b96da2060eeef"
+  },
+  "ocr_text": ": ab at MANKaTE .\n|\n“Pye done a lot of soul searching, and I've come to. the conclusion that I should\nbe thinking less about money and more about naked women , and biomathematical research.\nHOUSE_OVERSIGHT_000130\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A black and white cartoon-style image shows two men in a room sitting or standing near a table. One man, wearing a bow tie and apron, presumably a waiter, stands facing the other man who is seated in a suit and tie. There are three framed pictures on the wall behind the seated man. Below the image is a caption in italicized text.",
+    "Layout: top: image of two men in conversation at a table in a room with framed pictures on the wall",
+    "Layout: below image: italicized caption text",
+    "Drawing candidate at center of page: Two men in conversation, one standing wearing a bow tie and apron, the other seated in a suit and tie at a table with a glass and an ashtray",
+    "Drawing candidate at top background: Three rectangular framed pictures on the wall"
+  ],
+  "observations": [
+    "A black and white cartoon-style image shows two men in a room sitting or standing near a table. One man, wearing a bow tie and apron, presumably a waiter, stands facing the other man who is seated in a suit and tie. There are three framed pictures on the wall behind the seated man. Below the image is a caption in italicized text.",
+    "Layout: top: image of two men in conversation at a table in a room with framed pictures on the wall",
+    "Layout: below image: italicized caption text",
+    "Drawing candidate at center of page: Two men in conversation, one standing wearing a bow tie and apron, the other seated in a suit and tie at a table with a glass and an ashtray",
+    "Drawing candidate at top background: Three rectangular framed pictures on the wall"
+  ],
+  "dates": [],
+  "document_strings": [
+    "I've done a lot of soul searching, and I've come to the conclusion that I should be thinking less about money and more about naked women , and biomathematical research."
+  ],
+  "signatures": [
+    {
+      "location": "bottom right corner, beneath the table's edge",
+      "text_as_seen": "MANKOFF",
+      "confidence": "high",
+      "note": "Artist's printed signature"
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "drawing",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [
+    "No visible date on this page",
+    "No visible title or heading besides cartoon caption"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:23:41.978Z",
+    "response_id": "resp_08725d4730f3e130006a502d796124819095f1666a897d50da",
+    "raw_output_sha256": "3a4d10c63e0ecc55a9a189bc1e574c6883a54e60e0834c00fdd14d1c5ae6fd84"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08725d4730f3e130006a502d796124819095f1666a897d50da",
+    "enriched_at": "2026-07-09T23:23:41.978Z"
+  },
+  "visual_summary": "A black and white cartoon-style image shows two men in a room sitting or standing near a table. One man, wearing a bow tie and apron, presumably a waiter, stands facing the other man who is seated in a suit and tie. There are three framed pictures on the wall behind the seated man. Below the image is a caption in italicized text.",
+  "layout": [
+    "top: image of two men in conversation at a table in a room with framed pictures on the wall",
+    "below image: italicized caption text"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom right corner, beneath the table's edge",
+      "text_as_seen": "MANKOFF",
+      "confidence": "high",
+      "note": "Artist's printed signature"
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [
+    {
+      "location": "center of page",
+      "description": "Two men in conversation, one standing wearing a bow tie and apron, the other seated in a suit and tie at a table with a glass and an ashtray",
+      "confidence": "high"
+    },
+    {
+      "location": "top background",
+      "description": "Three rectangular framed pictures on the wall",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

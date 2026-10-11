@@ -1,0 +1,207 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "wyden-banker-302-deutsche-interviews",
+  "published": "2026-10-05",
+  "status": "SOURCE_LOCKED_WITH_THREE_ACQUISITION_PATHS",
+  "sources": [
+    {
+      "id": "wyden-2026-09-30-fbi-302-letter",
+      "type": "PRIMARY_CONGRESSIONAL_LETTER",
+      "url": "https://www.finance.senate.gov/imo/media/doc/fbi_on_fbi_302_for_epstein_banker.pdf",
+      "supports": [
+        "Wyden says FBI possesses an unreleased FD-302 memorializing an interview with a banker tied to Epstein",
+        "request for all Epstein-related 302s including employees of JPMorgan, Deutsche Bank and Bank of America"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "1f51d79ec8088eb788caa9f36d6b26de90faa45259e1778da16b16ec084ebf7c",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/wyden-2026-09-30-fbi-302-letter.pdf"
+      }
+    },
+    {
+      "id": "wyden-2026-08-04-wall-street-report",
+      "type": "PRIMARY_CONGRESSIONAL_REPORT",
+      "url": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf",
+      "supports": [
+        "Paul Morris identified as Epstein relationship manager at Deutsche Bank and previously JPMorgan",
+        "committee request for Morris civil deposition transcript"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "18ff5992b5d8dabc02b769df5944641cc287f2220354e8f13834bcf586c8c8e3",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/wyden-2026-08-04-wall-street-report.pdf"
+      }
+    },
+    {
+      "id": "EFTA00037187",
+      "type": "PRIMARY_FBI_EMAIL_CHAIN",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00037187.pdf",
+      "supports": [
+        "March 2020 FBI interest in Deutsche transaction monitoring and Paul Morris",
+        "August 2020 FBI statement that Morris had been engaged, retained counsel, and a proffer was anticipated"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "55f95af93a672114fd02b1a4660358026c89910c7a5ca2e67fcee487e416ae84",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/EFTA00037187.pdf"
+      }
+    },
+    {
+      "id": "EFTA00128987",
+      "type": "PRIMARY_FBI_FD302",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00128987.pdf",
+      "interviewee": "Tammy Hill-McFadden",
+      "interviewDate": "2019-07-12",
+      "supports": [
+        "Deutsche AML/KYC process testimony",
+        "Hill-McFadden account of Epstein-related concerns and internal escalation"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "5ab9c12b73e0e491716d8dfdc550c1ea2443d563f7f1fb65704a50bb3df73a3c",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/EFTA00128987.pdf"
+      }
+    },
+    {
+      "id": "EFTA00128968",
+      "type": "PRIMARY_FBI_FD302",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00128968.pdf",
+      "interviewee": "Cherie Quigley",
+      "interviewDate": "2019-10-10",
+      "supports": [
+        "Deutsche transaction-monitoring process testimony",
+        "Quigley account that narrows or disputes portions of Hill-McFadden account",
+        "Epstein transaction-monitoring observations"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "0c6475cf8008bba2a8bb88cdf804e7e6f7e01d58b9a27b0334ad35c377d48001",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/EFTA00128968.pdf"
+      }
+    },
+    {
+      "id": "EFTA00128765",
+      "type": "PRIMARY_FBI_FD302",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00128765.pdf",
+      "interviewee": "Amanda Kirby",
+      "interviewDate": "2021-08-10",
+      "supports": [
+        "Deutsche onboarding/KYC testimony",
+        "Paul Morris and Epstein relationship context",
+        "wire-processing and compliance context"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "0a1e0aa204f2bb42c3561ca69371c688b3610ca072c7acb33e3074330e652e21",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/EFTA00128765.pdf"
+      }
+    },
+    {
+      "id": "EFTA01482084",
+      "type": "PRIMARY_JPMORGAN_DUE_DILIGENCE_RECORD",
+      "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01482084.pdf",
+      "supports": [
+        "Paul V. Morris/JPMCHASE identified as Epstein banker of record",
+        "March 2010 banker change to Morris",
+        "March 7, 2011 Morris sponsorship approval of Epstein as client"
+      ],
+      "capture": {
+        "status": "PRESERVED_ON_NAS",
+        "sha256": "2fc494100044a1ba1466cb282aee41f8e74b3ea23c097c8366fbb4c9ab93b7cf",
+        "archivePath": "GAH-WYDEN-302-073/source-captures/EFTA01482084.pdf"
+      }
+    },
+    {
+      "id": "wyden-meidas-2026-09-30",
+      "type": "PUBLIC_INTERVIEW_REPORT",
+      "url": "https://meidasnews.com/news/exclusive-senator-accuses-doj-and-fbi-of-withholding-secret-epstein-banker-interview-demands-release-of-all-fbi-302s",
+      "supports": [
+        "Wyden publicly says he is not naming the interviewed person in order to protect his source"
+      ],
+      "capture": {
+        "status": "LIVE_SOURCE_LINK_VERIFIED",
+        "note": "Direct quote also independently reproduced by multiple contemporaneous outlets; original interview identity remains protected."
+      }
+    },
+    {
+      "id": "phang-v-blanche-docket",
+      "type": "PRIMARY_COURT_DOCKET",
+      "url": "https://www.courtlistener.com/docket/73246595/phang-v-blanche/",
+      "supports": [
+        "September 16 order set October 1 certified-list deadline and October 15 administrative-record production deadline"
+      ],
+      "capture": {
+        "status": "LIVE_DOCKET_LINK_VERIFIED",
+        "note": "GAH docket tracking records a Sept. 30 extension motion not yet mirrored in CourtListener/RECAP during the Oct. 5 review; motion text remains an acquisition target."
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "WYDEN302-001",
+      "status": "SOURCE_SUPPORTED_CONGRESSIONAL_ASSERTION",
+      "claim": "Wyden says FBI possesses an unreleased FD-302 memorializing an interview with a banker tied to Epstein.",
+      "source": "wyden-2026-09-30-fbi-302-letter",
+      "limit": "The letter does not identify the banker, employer, interview date, case serial, or report number."
+    },
+    {
+      "id": "WYDEN302-002",
+      "status": "SOURCE_SUPPORTED",
+      "claim": "DOJ Data Set 9 publicly contains three Deutsche-linked FD-302 interview reports reviewed by GAH: Hill-McFadden, Quigley, and Kirby.",
+      "sources": [
+        "EFTA00128987",
+        "EFTA00128968",
+        "EFTA00128765"
+      ],
+      "limit": "These public reports cannot themselves be the unreleased report described by Wyden."
+    },
+    {
+      "id": "WYDEN302-003",
+      "status": "SOURCE_SUPPORTED_PROSPECTIVE_EVENT",
+      "claim": "An FBI email chain says investigators engaged Paul Morris in August 2020, he retained counsel, and investigators expected a proffer.",
+      "source": "EFTA00037187",
+      "limit": "The email is prospective; it does not establish that a proffer occurred or that an FD-302 was produced."
+    },
+    {
+      "id": "WYDEN302-004",
+      "status": "SOURCE_SUPPORTED",
+      "claim": "The Senate Finance Committee report identifies Paul Morris as Epstein’s relationship manager at Deutsche Bank and previously JPMorgan.",
+      "source": "wyden-2026-08-04-wall-street-report",
+      "limit": "That role does not identify Morris as the unnamed banker in Wyden’s later 302 letter."
+    },
+    {
+      "id": "WYDEN302-005",
+      "status": "SEARCH_NEGATIVE_NOT_ABSENCE_PROOF",
+      "claim": "GAH has not located a publicly released Paul Morris FD-302 in the DOJ source set reviewed for this investigation.",
+      "limit": "Failure to locate a released report is not proof that no interview occurred, no report exists, or no report appears elsewhere."
+    },
+    {
+      "id": "WYDEN302-006",
+      "status": "SOURCE_SUPPORTED_PUBLIC_STATEMENT",
+      "claim": "Wyden publicly stated that he is not naming the interviewed person in order to protect his source.",
+      "source": "wyden-meidas-2026-09-30",
+      "limit": "The statement confirms deliberate non-disclosure but does not disclose the banker, bank, interview date or report serial."
+    },
+    {
+      "id": "WYDEN302-007",
+      "status": "SOURCE_SUPPORTED",
+      "claim": "EFTA01482084 identifies Paul V. Morris/JPMCHASE as Epstein banker of record and records Morris sponsorship approval of Epstein as a client.",
+      "source": "EFTA01482084",
+      "limit": "The due-diligence record is not interview evidence and does not identify Morris as Wyden’s unnamed banker."
+    },
+    {
+      "id": "WYDEN302-008",
+      "status": "SOURCE_SUPPORTED_DOCKET_DEADLINE",
+      "claim": "The Phang v. Blanche schedule set an October 1 certified-list deadline and October 15 administrative-record production deadline.",
+      "source": "phang-v-blanche-docket",
+      "limit": "The public mirror had not captured the reported Sept. 30 extension motion during this review; future orders may change deadlines."
+    }
+  ],
+  "open_receipt_slots": [
+    "Wyden’s protected source or a later voluntary identification of the banker/report",
+    "Phang v. Blanche certified administrative-record list and October 15 administrative-record production, subject to any subsequent court order",
+    "A future DOJ/FBI release, index, serial list, or inventory entry that identifies or produces the missing banker FD-302"
+  ],
+  "acquiredAt": "2026-10-05T04:45:00-06:00",
+  "updatedAt": "2026-10-05T05:41:00-06:00"
+}

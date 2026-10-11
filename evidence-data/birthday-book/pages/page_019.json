@@ -1,0 +1,112 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 19,
+  "page_id": "page_019",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_019.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_019.ocr.txt",
+  "image_metadata": {
+    "bytes": 9440761,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2262c3be7c8b933a21565cc2bcc7ebf502dc66d72cae5d532e2261294cf1d3cd"
+  },
+  "ocr_text": "os ae > 7 ay re she F ty co = ee {\n*’ a J 2 S ; ae ig 4 ay 2s\n* - * q t oa i “ae A: i Bee i\nes $ ae: | ee |\na % 4 4 rie |\n* yur. 3D ~~ Se |\n~ é 2\n|\nwa |\nee ve foe Fo\nFF |\ney\n\\ 3\n;\nv fe\n\\ SI (f\na re Bb A Ths \\ i \\\\ {\nHOUSE_OVERSIGHT_000019\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographs. The top photograph shows one older man seated against a floral curtain with two young boys sitting on his lap, one boy holding a doll, the other holding a small rectangular object. There is handwriting beneath this photo reading 'JAN. 1957'. The bottom photograph shows two adults, a man and a woman, standing behind an elderly man seated in a chair; all three are smiling. There are two chairs and part of a table in the room.",
+    "Layout: top photograph with handwritten date below",
+    "Layout: bottom photograph",
+    "Photo/image candidate at top half: Color photograph with an older man seated with two young boys on his lap, one boy holding a doll and the other holding a small rectangular object, floral curtains in background",
+    "Photo/image candidate at bottom half: Color photograph with a man and woman standing behind an elderly man seated in a chair, three people smiling, part of room furniture visible"
+  ],
+  "observations": [
+    "Page contains two photographs. The top photograph shows one older man seated against a floral curtain with two young boys sitting on his lap, one boy holding a doll, the other holding a small rectangular object. There is handwriting beneath this photo reading 'JAN. 1957'. The bottom photograph shows two adults, a man and a woman, standing behind an elderly man seated in a chair; all three are smiling. There are two chairs and part of a table in the room.",
+    "Layout: top photograph with handwritten date below",
+    "Layout: bottom photograph",
+    "Photo/image candidate at top half: Color photograph with an older man seated with two young boys on his lap, one boy holding a doll and the other holding a small rectangular object, floral curtains in background",
+    "Photo/image candidate at bottom half: Color photograph with a man and woman standing behind an elderly man seated in a chair, three people smiling, part of room furniture visible"
+  ],
+  "dates": [
+    "JAN. 1957"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000019"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below top photograph",
+      "text_as_seen": "JAN. 1957",
+      "confidence": "high",
+      "note": "Handwritten date beneath the first photograph"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:05:04.971Z",
+    "response_id": "resp_0c0aeaa6115ab993006a50291901088193a52d3be10828ecce",
+    "raw_output_sha256": "627e8b0e80a892b1d241340afdc3b310a9aecd1d4c8473b352903cae7fbd0d5c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c0aeaa6115ab993006a50291901088193a52d3be10828ecce",
+    "enriched_at": "2026-07-09T23:05:04.971Z"
+  },
+  "visual_summary": "Page contains two photographs. The top photograph shows one older man seated against a floral curtain with two young boys sitting on his lap, one boy holding a doll, the other holding a small rectangular object. There is handwriting beneath this photo reading 'JAN. 1957'. The bottom photograph shows two adults, a man and a woman, standing behind an elderly man seated in a chair; all three are smiling. There are two chairs and part of a table in the room.",
+  "layout": [
+    "top photograph with handwritten date below",
+    "bottom photograph"
+  ],
+  "handwriting": [
+    {
+      "location": "below top photograph",
+      "text_as_seen": "JAN. 1957",
+      "confidence": "high",
+      "note": "Handwritten date beneath the first photograph"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half",
+      "description": "Color photograph with an older man seated with two young boys on his lap, one boy holding a doll and the other holding a small rectangular object, floral curtains in background",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half",
+      "description": "Color photograph with a man and woman standing behind an elderly man seated in a chair, three people smiling, part of room furniture visible",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "JAN. 1957"
+  ],
+  "confidence": "high"
+}

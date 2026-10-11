@@ -1,0 +1,35 @@
+{
+  "schema_version": "book_of_black_ledger_v1",
+  "generated_at": "2026-07-15T20:26:02.068Z",
+  "task": "GAH-BOOK-OF-BLACK-001",
+  "premise": "The Book of Black is allowed to be wrong. Its purpose is to generate testable questions, not supply answers.",
+  "status_definitions": {
+    "CORROBORATED": "Archive records independently support the narrow hypothesis as written, with attributable source receipts.",
+    "PARTIALLY_SUPPORTED": "Some parts are supported by records, but scope, identity, timing, or meaning remains limited.",
+    "CONTRADICTED": "Reviewed records conflict with the hypothesis or make the narrower claim untenable.",
+    "UNRESOLVED": "A plausible test remains open because available records are incomplete, ambiguous, or silent.",
+    "RETIRED": "The hypothesis is preserved for accountability but should not be used because review found it unreliable, duplicative, or unsafe.",
+    "NOT_YET_TESTED": "No source-chain review has been completed for this hypothesis."
+  },
+  "confidence_definitions": {
+    "INSUFFICIENT": "Not enough reviewed source material to assign evidentiary confidence.",
+    "LOW": "Thin or conflicting source support; use only as a research lead.",
+    "MEDIUM": "Multiple records support a narrow reading, with meaningful caveats still visible.",
+    "HIGH": "Strong source-chain support for a narrow factual statement; still not broader conduct proof."
+  },
+  "counts": {
+    "CORROBORATED": 0,
+    "PARTIALLY_SUPPORTED": 0,
+    "CONTRADICTED": 0,
+    "UNRESOLVED": 0,
+    "RETIRED": 0,
+    "NOT_YET_TESTED": 0
+  },
+  "entries": [],
+  "latest_resolutions": [],
+  "indexing_policy": {
+    "ledger": "NOINDEX_UNTIL_SUBSTANTIAL_ORIGINAL_ANALYSIS_EXISTS",
+    "default_entry": "NOINDEX_UNTIL_SOURCE_RECEIPTS_AND_EDITORIAL_ANALYSIS_EXIST",
+    "identity_sensitive_entries": "NOINDEX"
+  }
+}

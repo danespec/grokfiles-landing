@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "deadline_id": "DEADLINE-001",
+      "date": "2026-05-11",
+      "deadline_classification": "NMDOJ-requested Touhy response date",
+      "source_id": "nmd-2026-06-30-letter",
+      "legally_binding": false,
+      "court_ordered": false,
+      "status_as_of_publication": "Passed; NMDOJ says no substantive response by June 30.",
+      "consequence": "No court-ordered consequence located.",
+      "confidence": "Medium"
+    },
+    {
+      "deadline_id": "DEADLINE-002",
+      "date": "2026-07-31",
+      "deadline_classification": "NMDOJ party demand/denial trigger",
+      "source_id": "nmd-2026-06-30-letter",
+      "legally_binding": false,
+      "court_ordered": false,
+      "status_as_of_publication": "Future/pending as of July 19, 2026.",
+      "consequence": "NMDOJ says it will deem the request denied and pursue all available remedies if access is not received.",
+      "confidence": "High"
+    },
+    {
+      "deadline_id": "DEADLINE-003",
+      "date": "2026-07-31",
+      "deadline_classification": "New Mexico House Special Investigatory Committee interim report deadline",
+      "source_id": "nmlegis-hr1-final",
+      "legally_binding": true,
+      "court_ordered": false,
+      "status_as_of_publication": "Future/pending as of July 19, 2026.",
+      "consequence": "Interim legislative report due under HR 1.",
+      "confidence": "High"
+    },
+    {
+      "deadline_id": "DEADLINE-004",
+      "date": "2026-12-31",
+      "deadline_classification": "New Mexico House Special Investigatory Committee final report deadline",
+      "source_id": "nmlegis-hr1-final",
+      "legally_binding": true,
+      "court_ordered": false,
+      "status_as_of_publication": "Future/pending as of July 19, 2026.",
+      "consequence": "Final legislative report due under HR 1.",
+      "confidence": "High"
+    }
+  ]
+}

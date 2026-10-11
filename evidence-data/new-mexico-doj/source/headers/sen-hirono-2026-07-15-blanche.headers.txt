@@ -1,0 +1,7 @@
+URL: https://www.hirono.senate.gov/news/press-releases/hirono-presses-attorney-general-nominee-todd-blanche-on-doj-weaponization-rule-of-law
+Status: 200
+Content-Type: text/html; charset=utf-8
+Retrieved: 2026-07-19T19:28:39.081Z
+SHA-256: 770c840a91ee30fc0ac2abe8935dd5cc29f8e6094d4c5361cef210dfcc598ed1
+Bytes: 102035
+Acquisition method: verified existing local capture

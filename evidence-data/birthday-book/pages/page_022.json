@@ -1,0 +1,103 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 22,
+  "page_id": "page_022",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_022.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_022.ocr.txt",
+  "image_metadata": {
+    "bytes": 316004,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "72918b8ff55591053c2c10e89cdd2574a9d07a770792460aa2d291260444315e"
+  },
+  "ocr_text": "~ . Sst Ache on\n_, \" ™ . ak a vy eer QL ‘ ; ; |\noo aa me OG ‘ \\ bane Peco yaw def\n\nae ae ae a aa, eal 1. rs Xi asee | .\n\nB CUeS sevewme Se Ves “vecommen\nBean ney BO Pen'e, Youy bare\nRee or oe Litre © yr ; wf OL our ' ,\npane > / Tal. ‘ Pr nat go Ie eG.\n\nee Sty AIX . a a PVIN YOYEALSE e. f\n\noe BOW at Me f aw Ve \\ 4 td CP ed\nLQ Vy bSincus Lines CLAD y\n\naS. RHO ae sip GOUOR Ry be \\\n\npoy ck “has WO LG Sot |\noa * at ee t. thy ’ . . 4 AO tha “pe hote® q\n\n- a 8 ee opel lyk bAa c\\ Q } |\no My C Cyr i io ;\n\na | (-) OAS HE Pow hh.\n\nBee, gf { stant ye '\ni | | oe ene Torte\n\n| Gtmwred ne SMLL holders\n\naN. on A . KAEOLE oy\n\nme _ f Aes a nae. 5 omhy\n\nae C wh =~ ROU G\n\nce : Tere lo Age CAR OX NN j ache &\n\na : we Adee bea “ iS . ' - -y “ ALIKE locec : a ey\n\na Cae O-KRor Ke |\n\na CO roy xl rf a8 Vivien 7 AYO ote\n\nie Sr Re oe Nore, we are ; “™ F\n\ni ete Aton oka U VA op A\n\na sold ave | 4) eter)\na “a , oO. Auvinen — (hfe\n\nNn ore | ace - lle te Cho |\nbe ar oye OX\n\na O00 Wey lowe Th reek |\n\neo noe “oe ph EX © & - on\na Picks MnO! \\ mv CSL\n\nBe 4 prey ke Ons ae ©\n\na oN - Qual \\ . |\n\nee E ’ . H 4 a? at at 7% a Pr, ok i cae\n\npo . ou bookies obec |\na | POPC of 7 | |\nBe @. GQreatk hme eae |\npa p. och ce. ty” , - Sinope _\nBee ~ fee eRe SAAC Buy LUN, a\nae [Nene ~ SA QOLAN ; 4 J\nes Ge Nelo eth Vx a\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a black-and-white scanned image of handwritten text. The handwriting is cursive and slightly styled, spanning the entire page with multiple lines of continuous script. The text appears to be a personal narrative or note discussing piano lessons, ownership of a log cabin, a mention of Cosmopolitan magazine, and travel experiences. The paper has some visible noise and slight artifacts but the text is mostly legible. There are no images, drawings, or other graphic elements besides the text.",
+    "Layout: handwritten text spanning entire page"
+  ],
+  "observations": [
+    "The page contains a black-and-white scanned image of handwritten text. The handwriting is cursive and slightly styled, spanning the entire page with multiple lines of continuous script. The text appears to be a personal narrative or note discussing piano lessons, ownership of a log cabin, a mention of Cosmopolitan magazine, and travel experiences. The paper has some visible noise and slight artifacts but the text is mostly legible. There are no images, drawings, or other graphic elements besides the text.",
+    "Layout: handwritten text spanning entire page"
+  ],
+  "dates": [
+    "age 24"
+  ],
+  "document_strings": [
+    "After a Time you switched to Piano Lessons Mr. Jerome Tolles recommended you to Interlochen where you had fun.",
+    "I don't know if it improved your Piano.",
+    "Today you own A Log cabin there.",
+    "AT age 24 Cosmopolitan magazine featured you as \"Bachelor of the Month.\"",
+    "Today you still hold that TITLE,",
+    "We objected 100% your going to Europe at that Time.",
+    "After graduation we would have seen to it you would Travel as a Gentleman tourist.",
+    "Instead you went with Terry Kafka.",
+    "We pictured you coming home tired, under-nourished - sickly.",
+    "To our surprise you looked great and had a great time -",
+    "Your experiences in Europe helped you get the job at Dalton."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "full page",
+      "text_as_seen": "After a Time you switched to Piano Lessons Mr. Jerome Tolles recommended you to Interlochen where you had fun. I don’t know if it improved your Piano. Today you own A Log cabin there. AT age 24 Cosmopolitan magazine featured you as \"Bachelor of the Month.\" Today you still hold that TITLE, We objected 100% your going to Europe at that Time. After graduation we would have seen to it you would Travel as a Gentleman tourist. Instead you went with Terry Kafka. We pictured you coming home tired, under-nourished - sickly. To our surprise you looked great and had a great time - Your experiences in Europe helped you get the job at Dalton.",
+      "confidence": "medium",
+      "note": "Some words are interpreted with medium confidence due to handwriting legibility."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:05:31.892Z",
+    "response_id": "resp_074d225bd0b3fafa006a5029343364819786364b5d4e462a2e",
+    "raw_output_sha256": "11f65dd257c3bace72760d13491c8eef4055d051a094dd659d8527c58e1d835d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_074d225bd0b3fafa006a5029343364819786364b5d4e462a2e",
+    "enriched_at": "2026-07-09T23:05:31.892Z"
+  },
+  "visual_summary": "The page contains a black-and-white scanned image of handwritten text. The handwriting is cursive and slightly styled, spanning the entire page with multiple lines of continuous script. The text appears to be a personal narrative or note discussing piano lessons, ownership of a log cabin, a mention of Cosmopolitan magazine, and travel experiences. The paper has some visible noise and slight artifacts but the text is mostly legible. There are no images, drawings, or other graphic elements besides the text.",
+  "layout": [
+    "handwritten text spanning entire page"
+  ],
+  "handwriting": [
+    {
+      "location": "full page",
+      "text_as_seen": "After a Time you switched to Piano Lessons Mr. Jerome Tolles recommended you to Interlochen where you had fun. I don’t know if it improved your Piano. Today you own A Log cabin there. AT age 24 Cosmopolitan magazine featured you as \"Bachelor of the Month.\" Today you still hold that TITLE, We objected 100% your going to Europe at that Time. After graduation we would have seen to it you would Travel as a Gentleman tourist. Instead you went with Terry Kafka. We pictured you coming home tired, under-nourished - sickly. To our surprise you looked great and had a great time - Your experiences in Europe helped you get the job at Dalton.",
+      "confidence": "medium",
+      "note": "Some words are interpreted with medium confidence due to handwriting legibility."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "age 24"
+  ],
+  "confidence": "medium"
+}

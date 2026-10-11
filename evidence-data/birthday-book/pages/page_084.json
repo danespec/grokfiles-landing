@@ -1,0 +1,86 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 84,
+  "page_id": "page_084",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_084.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_084.ocr.txt",
+  "image_metadata": {
+    "bytes": 145569,
+    "width": 3320,
+    "height": 2619,
+    "sha256": "de24fab27fe9bdba3ec1bd8921268ba06968118b661d21cef3d6980de036b607"
+  },
+  "ocr_text": "| This album was specially designed and hand-bound for you by WEITZ-COLEMAN\nusing only the finest calf and Moroccan skins which are individually selected and\nvegetable tanned for bookbinding. Variations in color and surface markings are natural\ncharacteristics of fine leather and are your assurance of its quality. The buttery softness\nof calfskin give it great tactile appeal and lends itself to easy scuffing which develops\n\n| into an exquisite antique patina. We recommend that the binding be treated with lanolin\nand neatsfoot oil at least once a year. You may bring in your WEITZ-COLEMAN\nbinding for a complimentary treatment.\n\n: SIMPLY THE FINEST BOOKBINDING - ESTABLISHED 1909\nWEITZ & COLEMAN - 1377 LEXINGTON AVENUE, NEW YORK, N.Y. 10128\n(212)831-2213 :\n. www.weitzcoleman.com .\n| | www.albumsalbumsalbums.com\nHOUSE_OVERSIGHT_000084\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A white page with centered text describing the quality and care instructions of a hand-bound album by WEITZ-COLEMAN, including contact information and websites.",
+    "Layout: Block paragraph at top center",
+    "Layout: Centered contact info and URLs below paragraph"
+  ],
+  "observations": [
+    "A white page with centered text describing the quality and care instructions of a hand-bound album by WEITZ-COLEMAN, including contact information and websites.",
+    "Layout: Block paragraph at top center",
+    "Layout: Centered contact info and URLs below paragraph"
+  ],
+  "dates": [
+    "1909"
+  ],
+  "document_strings": [
+    "This album was specially designed and hand-bound for you by WEITZ-COLEMAN using only the finest calf and Moroccan skins which are individually selected and vegetable tanned for bookbinding. Variations in color and surface markings are natural characteristics of fine leather and are your assurance of its quality. The buttery softness of calfskin give it great tactile appeal and lends itself to easy scuffing which develops into an exquisite antique patina. We recommend that the binding be treated with lanolin and neatsfoot oil at least once a year. You may bring in your WEITZ-COLEMAN binding for a complimentary treatment.",
+    "SIMPLY THE FINEST BOOKBINDING - ESTABLISHED 1909",
+    "WEITZ & COLEMAN - 1377 LEXINGTON AVENUE, NEW YORK, N.Y. 10128",
+    "(212)831-2213",
+    "www.weitzcoleman.com",
+    "www.albumsalbumsalbums.com"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "date",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:16:13.906Z",
+    "response_id": "resp_0abb662b14998c64006a502bb9e26c8197863e9dae2a9ffa5e",
+    "raw_output_sha256": "f48dd551a7cdddfee692d158fa3e79b58529b1eba90d310d700f1a840f916a9c"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0abb662b14998c64006a502bb9e26c8197863e9dae2a9ffa5e",
+    "enriched_at": "2026-07-09T23:16:13.906Z"
+  },
+  "visual_summary": "A white page with centered text describing the quality and care instructions of a hand-bound album by WEITZ-COLEMAN, including contact information and websites.",
+  "layout": [
+    "Block paragraph at top center",
+    "Centered contact info and URLs below paragraph"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1909"
+  ],
+  "confidence": "high"
+}

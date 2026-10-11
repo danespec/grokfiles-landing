@@ -1,0 +1,92 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 117,
+  "page_id": "page_117",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_117.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_117.ocr.txt",
+  "image_metadata": {
+    "bytes": 10548177,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8751108e3894239ea88c046655e632e4d272cf515d7492be6e42b7223cf08f62"
+  },
+  "ocr_text": "io pe a s } ‘\ned Pa\nThen, things began to change. I think it was shortly after he encouraged\nMorgan to say “woof” on the phone to me that I noticed the beginning. And\nthen, while his friends were willing to either go blissfully ahead, eyes closed,\ntrusting in the Almighty, J effrey began to get that look in his eye. He was\ncooking up something, something either evil or at least deadly. I always\nhoped he wasn’t spurred to action by my action — the unforgivable, immortal\nsin of getting married.\nHOUSE_OVERSIGHT_000117\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains a color photograph at the top showing five men standing closely together with their arms around each other, dressed in various styles including formal and casual wear. Below the photo is a block of printed text spanning about half the page width, with a visible fold or crease along the top of the page. The bottom right corner has a small printed string 'HOUSE_OVERSIGHT_000117'.",
+    "Layout: photo top",
+    "Layout: text block below photo",
+    "Layout: footer text bottom right",
+    "Photo/image candidate at top of page: Color photo of five adult men standing close together with arms around each other, dressed in suits and casual clothing, background with plants and wallpapered wall."
+  ],
+  "observations": [
+    "The page contains a color photograph at the top showing five men standing closely together with their arms around each other, dressed in various styles including formal and casual wear. Below the photo is a block of printed text spanning about half the page width, with a visible fold or crease along the top of the page. The bottom right corner has a small printed string 'HOUSE_OVERSIGHT_000117'.",
+    "Layout: photo top",
+    "Layout: text block below photo",
+    "Layout: footer text bottom right",
+    "Photo/image candidate at top of page: Color photo of five adult men standing close together with arms around each other, dressed in suits and casual clothing, background with plants and wallpapered wall."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Then, things began to change. I think it was shortly after he encouraged Morgan to say “woof” on the phone to me that I noticed the beginning. And then, while his friends were willing to either go blissfully ahead, eyes closed, trusting in the Almighty, Jeffrey began to get that look in his eye. He was cooking up something, something either evil or at least deadly. I always hoped he wasn’t spurred to action by my action – the unforgivable, immortal sin of getting married.",
+    "HOUSE_OVERSIGHT_000117"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [],
+  "flags": [
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Exact identities of individuals in photo unknown",
+    "Specific date of photograph or text creation not visible"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:21:54.430Z",
+    "response_id": "resp_013a8d12ab087213006a502d0b792881949feee2f83a7eda15",
+    "raw_output_sha256": "e9248b4c02eee11cf748bfe64a78726b67e89db9eb597109c49dfa81f7aac9aa"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_013a8d12ab087213006a502d0b792881949feee2f83a7eda15",
+    "enriched_at": "2026-07-09T23:21:54.430Z"
+  },
+  "visual_summary": "The page contains a color photograph at the top showing five men standing closely together with their arms around each other, dressed in various styles including formal and casual wear. Below the photo is a block of printed text spanning about half the page width, with a visible fold or crease along the top of the page. The bottom right corner has a small printed string 'HOUSE_OVERSIGHT_000117'.",
+  "layout": [
+    "photo top",
+    "text block below photo",
+    "footer text bottom right"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top of page",
+      "description": "Color photo of five adult men standing close together with arms around each other, dressed in suits and casual clothing, background with plants and wallpapered wall.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

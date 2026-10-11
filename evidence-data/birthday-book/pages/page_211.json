@@ -1,0 +1,185 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 211,
+  "page_id": "page_211",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_211.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_211.ocr.txt",
+  "image_metadata": {
+    "bytes": 7499178,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ad8ccb47525c1c0042e312f7095c546eb96a4eb047c34b830b57920685df3d7b"
+  },
+  "ocr_text": "Mire Padday Cyar off fort.) ey\nDa + woly In Yall Case Hehe ae a\n| | by ht\nWet PA 3 Sasate — ML lnene\ni, 4 a G Boy it eh (10> © 9\npiesa aM An <i a parsonal stoP pe -_\n5. Chic UP : Ale y q cH\nSS tho's a loose, Sony\n. q. rye An\n4 Ve Wage IT ~\nHOUSE_OVERSIGHT_000211\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains handwritten text in black ink with a colored drawing of a cake with candles and red and green elements on the left side. Text includes a large stylized heading at top, followed by a message and numbered list below.",
+    "Layout: Large stylized heading at top",
+    "Layout: Handwritten message beneath heading",
+    "Layout: Colored drawing of a cake with candles on left side",
+    "Layout: Numbered list of 10 items in handwritten text beneath message",
+    "Drawing candidate at Middle left: Hand-drawn image of a cake with lit candles and decorations in black, green, and red ink"
+  ],
+  "observations": [
+    "Page contains handwritten text in black ink with a colored drawing of a cake with candles and red and green elements on the left side. Text includes a large stylized heading at top, followed by a message and numbered list below.",
+    "Layout: Large stylized heading at top",
+    "Layout: Handwritten message beneath heading",
+    "Layout: Colored drawing of a cake with candles on left side",
+    "Layout: Numbered list of 10 items in handwritten text beneath message",
+    "Drawing candidate at Middle left: Hand-drawn image of a cake with lit candles and decorations in black, green, and red ink"
+  ],
+  "dates": [],
+  "document_strings": [
+    "BOOBIE",
+    "Happy Birthday (you old fart...)",
+    "Don't worry in your case getting better -> getting better",
+    "Fun Memories :",
+    "1. 265 : the elevator ride",
+    "2. Bloomie's lingerie department Are you lost ?",
+    "3. Sasgate - The roots...",
+    "4. Buying en gros (5) la lingerie Am I a personal shopper ?",
+    "5. Chicken Soup : Are you JEWISH (j oowish ?)",
+    "6. Who's the floosie",
+    "7. A++",
+    "8. What does he do for a living ?",
+    "9. Do pigs fly ???",
+    "10. I have made it - does Shimi know ?"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top center",
+      "text_as_seen": "BOOBIE",
+      "confidence": "high",
+      "note": "Large stylized heading in blue ink with decorative dots"
+    },
+    {
+      "location": "Below heading",
+      "text_as_seen": "Happy Birthday (you old fart...) Don't worry in your case getting better -> getting better",
+      "confidence": "medium",
+      "note": "Text is legible but slightly cramped; last portion partially redacted with black box"
+    },
+    {
+      "location": "Center left below message",
+      "text_as_seen": "Fun Memories :",
+      "confidence": "high",
+      "note": "Heading for numbered list"
+    },
+    {
+      "location": "Center right and below 'Fun Memories :'",
+      "text_as_seen": "1. 265 : the elevator ride 2. Bloomie's lingerie department Are you lost ? 3. Sasgate - The roots... 4. Buying en gros (5) la lingerie Am I a personal shopper ? 5. Chicken Soup : Are you JEWISH (j oowish ?) 6. Who's the floosie 7. A++ 8. What does he do for a living ? 9. Do pigs fly ??? 10. I have made it - does Shimi know ?",
+      "confidence": "medium",
+      "note": "Some words unclear or uncertain; parentheses and symbols present"
+    },
+    {
+      "location": "Bottom left",
+      "text_as_seen": "",
+      "confidence": "low",
+      "note": "No additional text below numbered list"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "Upper middle following text 'getting better -> getting better'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscures some text"
+    }
+  ],
+  "flags": [
+    "drawing",
+    "handwriting",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Some text partly obscured by redaction box",
+    "Certain handwritten portions slightly unclear or ambiguous"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:36:14.002Z",
+    "response_id": "resp_055f59cc2e765ab2006a503064d0148197a500c0b1b0699303",
+    "raw_output_sha256": "df7c3fab5d129af3f11843ea4e7be7486e095a8a54ccb3d0db06ffcd824ed2e7"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_055f59cc2e765ab2006a503064d0148197a500c0b1b0699303",
+    "enriched_at": "2026-07-09T23:36:14.002Z"
+  },
+  "visual_summary": "Page contains handwritten text in black ink with a colored drawing of a cake with candles and red and green elements on the left side. Text includes a large stylized heading at top, followed by a message and numbered list below.",
+  "layout": [
+    "Large stylized heading at top",
+    "Handwritten message beneath heading",
+    "Colored drawing of a cake with candles on left side",
+    "Numbered list of 10 items in handwritten text beneath message"
+  ],
+  "handwriting": [
+    {
+      "location": "Top center",
+      "text_as_seen": "BOOBIE",
+      "confidence": "high",
+      "note": "Large stylized heading in blue ink with decorative dots"
+    },
+    {
+      "location": "Below heading",
+      "text_as_seen": "Happy Birthday (you old fart...) Don't worry in your case getting better -> getting better",
+      "confidence": "medium",
+      "note": "Text is legible but slightly cramped; last portion partially redacted with black box"
+    },
+    {
+      "location": "Center left below message",
+      "text_as_seen": "Fun Memories :",
+      "confidence": "high",
+      "note": "Heading for numbered list"
+    },
+    {
+      "location": "Center right and below 'Fun Memories :'",
+      "text_as_seen": "1. 265 : the elevator ride 2. Bloomie's lingerie department Are you lost ? 3. Sasgate - The roots... 4. Buying en gros (5) la lingerie Am I a personal shopper ? 5. Chicken Soup : Are you JEWISH (j oowish ?) 6. Who's the floosie 7. A++ 8. What does he do for a living ? 9. Do pigs fly ??? 10. I have made it - does Shimi know ?",
+      "confidence": "medium",
+      "note": "Some words unclear or uncertain; parentheses and symbols present"
+    },
+    {
+      "location": "Bottom left",
+      "text_as_seen": "",
+      "confidence": "low",
+      "note": "No additional text below numbered list"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Upper middle following text 'getting better -> getting better'",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction obscures some text"
+    }
+  ],
+  "drawings": [
+    {
+      "location": "Middle left",
+      "description": "Hand-drawn image of a cake with lit candles and decorations in black, green, and red ink",
+      "confidence": "high"
+    }
+  ],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "gah.shell.repair.v2",
+  "build": "GAH-SHELL-005",
+  "created_utc": "2026-07-29T01:53:07.156418+00:00",
+  "frozen_source": "/Users/thomas/Desktop/gah-apex-forensic-audit-20260727T052806Z/seo-indexing-repair-v1-20260728T164041Z/site",
+  "current_frontend_source": "/Users/thomas/gah_frontdoor_002_20260625/grokfiles-landing",
+  "stage": "/Users/thomas/Desktop/gah-shell-005-v2-20260729T015237Z/site",
+  "file_count": 6607,
+  "worker_sha256": "99f4ee1c6fd95067584f9795749569255c638e8ca854720c43b8f6810603587b",
+  "site_js_sha256": "b64c12d1073064a4c881b902a59e85135ba9c8d2ff30e3af801deb3c6d7dc0ec",
+  "site_css_sha256": "9bffe93fdf1cf6c48db45a6ca1f952f2a57b90eca8f175762132c41311e92c82",
+  "production_changed": false,
+  "deployment_executed": false,
+  "cache_purge_executed": false
+}

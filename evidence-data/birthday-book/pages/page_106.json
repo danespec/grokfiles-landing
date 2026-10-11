@@ -1,0 +1,206 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 106,
+  "page_id": "page_106",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_106.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_106.ocr.txt",
+  "image_metadata": {
+    "bytes": 9105786,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "ed833d3696f33abb0b3cbd64ca5f6bef1ffffb849de5f22c8909ba6ae49be4b8"
+  },
+  "ocr_text": "cordially invites you\nfor = cpektails anol climner\naan fue & ‘ Graduation Gue\nat WK o'clock\nBel-hir Country AA\nOy © IN 2-950-9095. :\n| tru ly SAaure t€A/s clip fomea wttB\n‘ a ; ; ; ~ Y\nYOu . TANK YOU sir\ni (Ks a\nbo 4 ~ af . pass jhe, :\noe VWAr& was @ OF7°AF celehrarion\n. va r\nHOUSE_OVERSIGHT_000106\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains an invitation card with printed and handwritten text at the top, four photographs arranged below it in a 2x2 grid format, and handwritten notes in green ink both above and below the photographs. Several black redactions obscure certain text areas on the card and parts of individuals' faces and bodies in each photo.",
+    "Layout: top: invitation card with text and redactions",
+    "Layout: middle: handwritten text in green ink",
+    "Layout: middle: four photographs in a 2x2 grid with redactions",
+    "Layout: bottom: handwritten text in green ink",
+    "Photo/image candidate at bottom left, top row left photo: Outdoor group photo showing people in graduation gowns and others standing, partially obscured by redactions",
+    "Photo/image candidate at bottom left, top row right photo: Outdoor photo of an individual in a white garment holding a diploma, with outdoor building background, partially obscured by redactions",
+    "Photo/image candidate at bottom left, bottom row left photo: Indoor photo of two individuals sitting at a table with glasses and cups, partially obscured by redactions",
+    "Photo/image candidate at bottom left, bottom row right photo: Indoor photo of an individual with glass in hand beside another seated at a piano, partially obscured by redactions"
+  ],
+  "observations": [
+    "The page contains an invitation card with printed and handwritten text at the top, four photographs arranged below it in a 2x2 grid format, and handwritten notes in green ink both above and below the photographs. Several black redactions obscure certain text areas on the card and parts of individuals' faces and bodies in each photo.",
+    "Layout: top: invitation card with text and redactions",
+    "Layout: middle: handwritten text in green ink",
+    "Layout: middle: four photographs in a 2x2 grid with redactions",
+    "Layout: bottom: handwritten text in green ink",
+    "Photo/image candidate at bottom left, top row left photo: Outdoor group photo showing people in graduation gowns and others standing, partially obscured by redactions",
+    "Photo/image candidate at bottom left, top row right photo: Outdoor photo of an individual in a white garment holding a diploma, with outdoor building background, partially obscured by redactions",
+    "Photo/image candidate at bottom left, bottom row left photo: Indoor photo of two individuals sitting at a table with glasses and cups, partially obscured by redactions",
+    "Photo/image candidate at bottom left, bottom row right photo: Indoor photo of an individual with glass in hand beside another seated at a piano, partially obscured by redactions"
+  ],
+  "dates": [
+    "June 8"
+  ],
+  "document_strings": [
+    "Jeffrey and Dr. [redacted]",
+    "cordially invites you",
+    "for cocktails and dinner",
+    "on June 8, Graduation Eve",
+    "at Six o'clock",
+    "Bel-air Country Club",
+    "10768 Bellagio Rd.",
+    "R.s.v.p.",
+    "any regrets 212-750-9895"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below invitation card, above photos center",
+      "text_as_seen": "I truly share this diploma with",
+      "confidence": "high",
+      "note": "Green ink cursive handwriting"
+    },
+    {
+      "location": "below invitation card, above photos right",
+      "text_as_seen": "you. THANK YOU!!!!",
+      "confidence": "high",
+      "note": "Green ink cursive and capitalized handwriting"
+    },
+    {
+      "location": "below four photos",
+      "text_as_seen": "This was a great celebration!",
+      "confidence": "high",
+      "note": "Green ink cursive handwriting"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "top right area of invitation card",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black redaction obscuring a name after 'Dr.'"
+    },
+    {
+      "location": "middle section of invitation card, lines near RSVP and phone number",
+      "text_as_seen": "",
+      "confidence": "medium",
+      "note": "Small redaction over RSVP number handwritten text"
+    },
+    {
+      "location": "faces and torsos of individuals in all four photographs",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black redaction obscuring facial and bodily features"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Exact names and all identifiers hidden behind redactions",
+    "Details of handwritten RSVP phone number partly obscured"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:20:11.987Z",
+    "response_id": "resp_0a3510d440648259006a502c9e86908193a4674db55b6e4cff",
+    "raw_output_sha256": "87669b14d02c36677d66de8b0b220f0c97a546feab46c1fe2c93dec4cd9050a8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0a3510d440648259006a502c9e86908193a4674db55b6e4cff",
+    "enriched_at": "2026-07-09T23:20:11.987Z"
+  },
+  "visual_summary": "The page contains an invitation card with printed and handwritten text at the top, four photographs arranged below it in a 2x2 grid format, and handwritten notes in green ink both above and below the photographs. Several black redactions obscure certain text areas on the card and parts of individuals' faces and bodies in each photo.",
+  "layout": [
+    "top: invitation card with text and redactions",
+    "middle: handwritten text in green ink",
+    "middle: four photographs in a 2x2 grid with redactions",
+    "bottom: handwritten text in green ink"
+  ],
+  "handwriting": [
+    {
+      "location": "below invitation card, above photos center",
+      "text_as_seen": "I truly share this diploma with",
+      "confidence": "high",
+      "note": "Green ink cursive handwriting"
+    },
+    {
+      "location": "below invitation card, above photos right",
+      "text_as_seen": "you. THANK YOU!!!!",
+      "confidence": "high",
+      "note": "Green ink cursive and capitalized handwriting"
+    },
+    {
+      "location": "below four photos",
+      "text_as_seen": "This was a great celebration!",
+      "confidence": "high",
+      "note": "Green ink cursive handwriting"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top right area of invitation card",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black redaction obscuring a name after 'Dr.'"
+    },
+    {
+      "location": "middle section of invitation card, lines near RSVP and phone number",
+      "text_as_seen": "",
+      "confidence": "medium",
+      "note": "Small redaction over RSVP number handwritten text"
+    },
+    {
+      "location": "faces and torsos of individuals in all four photographs",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black redaction obscuring facial and bodily features"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom left, top row left photo",
+      "description": "Outdoor group photo showing people in graduation gowns and others standing, partially obscured by redactions",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left, top row right photo",
+      "description": "Outdoor photo of an individual in a white garment holding a diploma, with outdoor building background, partially obscured by redactions",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left, bottom row left photo",
+      "description": "Indoor photo of two individuals sitting at a table with glasses and cups, partially obscured by redactions",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left, bottom row right photo",
+      "description": "Indoor photo of an individual with glass in hand beside another seated at a piano, partially obscured by redactions",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "June 8"
+  ],
+  "confidence": "high"
+}

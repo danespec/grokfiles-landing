@@ -1,0 +1,107 @@
+{
+  "task_id": "GAH-TRUMP-TIMELINE-003",
+  "review_completed_utc": "2026-07-16T19:15:00Z",
+  "policy": "Repetition, forwarding, clipping, or media mirroring is not counted as corroboration unless an independent attributable source supports the narrow claim.",
+  "groups": [
+    {
+      "group_id": "TEP-SG-0001",
+      "name": "Witness II FD-302 chain",
+      "claim_connection": "TRUMP-CLAIM-0001",
+      "chain": ["Redacted Witness II", "FBI interviewing agents", "FD-302 Interview #2", "Archive PDF/OCR EFTA02858481", "Reviewed claim card"],
+      "source_ids": ["EFTA02858481"],
+      "independence": "single-source",
+      "classification": "REVIEWED - UNCORROBORATED",
+      "limitation": "The 302 records what the witness reported and is not independent verification."
+    },
+    {
+      "group_id": "TEP-SG-0002",
+      "name": "Katie Johnson pleading and denial chain",
+      "claim_connection": "TRUMP-CLAIM-0002",
+      "chain": ["Katie Johnson / Jane Doe pseudonym", "Court pleading path not certified in reviewed archive set", "Social capture EFTA00155390", "Secondary articles and denials", "Archive press capture EFTA00065479", "Reviewed claim card"],
+      "source_ids": ["EFTA00155390", "EFTA00065479", "EFTA01433755", "EFTA01297785"],
+      "independence": "pleading capture plus derivative media; certified docket missing",
+      "classification": "REVIEWED - DISPUTED",
+      "limitation": "A legal pleading records allegations made by a party; filing an allegation does not establish that the allegation is true."
+    },
+    {
+      "group_id": "TEP-SG-0003",
+      "name": "Wolff draft hearsay chain",
+      "claim_connection": "TRUMP-CLAIM-0003",
+      "chain": ["Michael Wolff", "Draft manuscript language", "Epstein email copy EFTA02631674", "Related Wolff note EFTA02605480", "External denial reporting", "Reviewed claim card"],
+      "source_ids": ["EFTA02631674", "EFTA02605480"],
+      "independence": "draft/email hearsay; related note supports only elevator-girl context",
+      "classification": "REVIEWED - UNCORROBORATED",
+      "limitation": "A draft manuscript and attributed hearsay are not independent verification."
+    },
+    {
+      "group_id": "TEP-SG-0004",
+      "name": "Epstein deposition socialization chain",
+      "claim_connection": "non-allegation deposition lane",
+      "chain": ["Jack Scarola questions", "Jeffrey Epstein sworn answers / assertions", "Court reporter transcript", "FLSD Exhibit 24", "Archive PDF/OCR EFTA00081220"],
+      "source_ids": ["EFTA00081220"],
+      "independence": "independent legal transcript for narrow socialization admission",
+      "classification": "CONTEXT - SOCIALIZATION ONLY",
+      "limitation": "Epstein's admission that he socialized with Trump does not establish misconduct; constitutional assertions are not admissions."
+    },
+    {
+      "group_id": "TEP-SG-0005",
+      "name": "Contact-directory recollection chain",
+      "claim_connection": "non-allegation contact-directory lane",
+      "chain": ["JA / Alessi prep-note witness", "Government prep notes", "Archive PDF/OCR EFTA00157631"],
+      "source_ids": ["EFTA00157631"],
+      "independence": "witness recollection of a directory; original directory page missing",
+      "classification": "CONTEXT - DIRECTORY PRESENCE ONLY",
+      "limitation": "Contact information or a recalled name in a directory is not evidence of interaction or misconduct."
+    },
+    {
+      "group_id": "TEP-SG-0006",
+      "name": "Mar-a-Lago and Giuffre context chain",
+      "claim_connection": "non-allegation Mar-a-Lago context lane",
+      "chain": ["Giuffre-related account / court-paper references", "Daily Mail archive capture EFTA00208312", "Daily Beast archive capture EFTA00065479"],
+      "source_ids": ["EFTA00208312", "EFTA00065479"],
+      "independence": "press captures drawing on prior accounts; primary employment and ban records missing",
+      "classification": "CONTEXT - LOCATION ONLY",
+      "limitation": "Presence at or employment by Mar-a-Lago does not prove interaction with Trump or misconduct by Trump."
+    },
+    {
+      "group_id": "TEP-SG-0007",
+      "name": "Palm Beach / Reiter investigation chain",
+      "claim_connection": "non-allegation Reiter lane",
+      "chain": ["Palm Beach Police investigation", "Michael Reiter memo described by press", "Palm Beach Post archive capture EFTA00067339"],
+      "source_ids": ["EFTA00067339"],
+      "independence": "local press account; primary memo not present",
+      "classification": "CONTEXT - PRIMARY MEMO MISSING",
+      "limitation": "The source supports the existence of press reporting about the memo and defense rebuttal, not a Trump-specific allegation."
+    },
+    {
+      "group_id": "TEP-SG-0008",
+      "name": "Trump Tower correspondence chain",
+      "claim_connection": "non-allegation location lane",
+      "chain": ["Epstein correspondence", "Archive email EFTA02412232", "Archive email EFTA02697644"],
+      "source_ids": ["EFTA02412232", "EFTA02697644"],
+      "independence": "independent email location strings",
+      "classification": "CONTEXT - LOCATION STRING ONLY",
+      "limitation": "The emails mention Trump Tower or Trump Tower Istanbul but do not establish Trump-Epstein interaction."
+    }
+  ],
+  "duplicate_or_derivative_groups": [
+    {
+      "duplicate_group_id": "TEP-DUP-0001",
+      "name": "Katie Johnson media mirrors and forwards",
+      "source_ids": ["EFTA00155390", "EFTA00065479", "EFTA01433755", "EFTA01297785", "EFTA02669956", "EFTA02670011", "EFTA02670188", "EFTA02670198", "EFTA02670201", "EFTA02670312", "EFTA02670323"],
+      "rule": "Count as one allegation lane unless a certified court record or independent evidence is acquired."
+    },
+    {
+      "duplicate_group_id": "TEP-DUP-0002",
+      "name": "Daily Mail Giuffre / Mar-a-Lago duplicate capture",
+      "source_ids": ["EFTA00208312", "EFTA00212332"],
+      "rule": "Duplicate press scans do not increase corroboration."
+    },
+    {
+      "duplicate_group_id": "TEP-DUP-0003",
+      "name": "Wolff draft and related Westerhout note",
+      "source_ids": ["EFTA02631674", "EFTA02605480"],
+      "rule": "Related emails are not independent verification of the draft allegation."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema":"gah.source-manifest.v1",
+  "slug":"barak-hfa-cycurity-2015",
+  "title":"The HFA Proposal in Barak's Archive: Cycurity's 2015 Influence Pitch and the Investment Diligence Around It",
+  "published":"2026-09-30",
+  "scope":"A source-bound reconstruction of a July 2015 Cycurity election-campaign influence proposal preserved in Ehud Barak's archive and the contemporaneous record of Barak considering possible participation in Cycurity.",
+  "sources":[
+    {"id":"HFA-PDF","class":"PRIMARY_ARCHIVE_ATTACHMENT","record":"HFA Campaign Proposal_F.pdf","origin":"ehbarak1@gmail.com/Sent!3/1 (272)_files/","sha256":"a82f9bc79eb8af6c16cedf44dd07c41bbd1bd87b2956703079fc49ef8f598308","pages":7,"supports":"July 2015 HFA U.S. elections proposal; VIP mapping, localized social channels, micro-targeting, relationship/influence engines, KPI ladder; Cycurity named in operational section.","limit":"Proposal content does not prove commissioning, retention, payment, deployment or results."},
+    {"id":"GA-INFLUENCE","class":"PRIMARY_ARCHIVE_ATTACHMENT","record":"GA_Large Scale Relations Management 2015.pdf","origin":"ehbarak1@gmail.com/Inbox!12/1 (464)_files/","sha256":"a0502f6e53b31871c7e604dcd8ecd52a0911d34f2cce11eef70a9a00d6f25cca","supports":"Cycurity's same 2015 influence-product vocabulary before the HFA proposal.","limit":"Company capability claims are not independent proof of performance."},
+    {"id":"CYCURITY-PROFILE","class":"PRIMARY_ARCHIVE_ATTACHMENT","record":"Cycurity Company Profile.pdf","origin":"ehbarak1@gmail.com/Inbox!12/1 (464)_files/","sha256":"0a8ece23bb8bc73366967edbdf7880bff13d213b232b135d35646f4e4e2900af","supports":"2015 company description of compliance, intelligence, reputation, lobbying and large-scale 1:1 marketing services.","limit":"Its statements about 2013 formation are retrospective 2015 company claims."},
+    {"id":"BARAK-PARTICIPATION","class":"HASHED_EMAIL_WORKPAPER","record":"Sent!3/1 (276).html","sha256":"d5c87936540cff8caf7d44c165cc709f27a37f150f9c0011992639365c38db98","supports":"Barak asked Halevi/Mark to contact Udi regarding Barak's possible participation in the company.","limit":"Raw HTML is not currently mounted; wording is preserved in prior forensic workpapers."},
+    {"id":"UDI-AUG6","class":"HASHED_EMAIL_WORKPAPER","record":"Inbox!11/1 (461).html","sha256":"390e3dd960a62b799a826aa5261287be45dcb60c1f906df8f3dc325793c28d50","supports":"Udi said Aug. 6 he was meeting them that day and would update Barak.","limit":"The promised post-meeting update was not recovered."},
+    {"id":"CYFLOW-BP","class":"PRIMARY_ARCHIVE_ATTACHMENT","record":"CyFlow Business Plan - Aug 2015 v2 .pdf","origin":"ehbarak1@gmail.com/Inbox!10/1 (492)_files/","sha256":"92b7fbbedc5a783f1dc3e6c31efa1b87fc31e35fe38ed771332d319f43dce98c","supports":"Proposed $2M investment for 10%; 45/45/10 ownership; Pearls/Sapphires; Elections X2 and Anti BDS pipeline labels; retrospective JV/revenue claims.","limit":"Investment proposal is not proof of acceptance/funding; 2013 JV claims are retrospective."},
+    {"id":"CYFLOW-ANNEX","class":"PRIMARY_ARCHIVE_ATTACHMENT","record":"CyFlow Annex Presentation_0815.pdf","origin":"ehbarak1@gmail.com/Inbox!10/1 (492)_files/","sha256":"2b5fa1e76da79391f58be1cc8246a81c28976a3604579917cc700a1046b0a025","supports":"Relationship Strength Index, Individual Importance Index and influence workflow.","limit":"Product presentation, not deployment evidence."},
+    {"id":"PHOENIX","class":"PRIMARY_ARCHIVE_ATTACHMENT","record":"Thunder Proposal_0815.pdf","origin":"ehbarak1@gmail.com/Inbox!10/1 (492)_files/","sha256":"8b231050c446a9723ac45de1848474ef76d77facc07a8d4263e84c264c26988e","supports":"Related 2015 influence proposal using 100+ localized channels, up to 1,000 opinion leaders and 6,000 monthly interactions; $45K/quarter.","limit":"Client is unnamed."},
+    {"id":"FEC-HFA","class":"PRIMARY_PUBLIC_RECORD","record":"Hillary for America committee C00575795","url":"https://www.fec.gov/data/committee/C00575795/","supports":"Hillary for America was Hillary Clinton's principal presidential campaign committee, registered April 13, 2015.","limit":"FEC identity does not establish that the campaign commissioned, received or used the archived Cycurity proposal."}
+  ],
+  "open_questions":[
+    "Who commissioned the HFA proposal, if anyone.",
+    "Whether Hillary for America or any campaign representative received, retained, paid for, approved or deployed Cycurity's proposal.",
+    "Whether Barak ultimately invested in Cycurity or CyFlow.",
+    "What Udi Knaani reported after the Aug. 6, 2015 diligence meeting.",
+    "Whether the 2015 company claim of a Cycurity-Starter JV since July 2013 can be corroborated by contemporaneous 2013 records."
+  ],
+  "not_established":[
+    "That Ehud Barak ran or directed an HFA influence operation.",
+    "That Hillary for America hired or used Cycurity.",
+    "That the HFA proposal was operationalized.",
+    "That Barak completed an investment in Cycurity or CyFlow.",
+    "That later 2015 CyFlow technical capabilities existed in the same form in 2013."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "jpmorgan-4725-wires",
+  "title": "4,725 Wires, ~$1.1 Billion: What the JPMorgan Number Actually Means",
+  "published": "2026-10-07",
+  "core_claim": {
+    "wires": 4725,
+    "amount_description": "approximately $1.1 billion",
+    "bank": "JPMorgan Chase",
+    "filing_year": 2019,
+    "scope": "Epstein and associates; wires through Epstein's JPMorgan accounts",
+    "public_source": "https://www.finance.senate.gov/imo/media/doc/letter_from_senator_wyden_to_jpmorgan_chase_epstein_accounts_09-24-25pdf.pdf"
+  },
+  "supporting_sources": [
+    {
+      "title": "Wyden letter to DOJ",
+      "date": "2025-07-21",
+      "url": "https://www.finance.senate.gov/imo/media/doc/wyden_letter_to_doj_-_follow_the_money_on_jeffrey_epstein_7-21-25pdf.pdf"
+    },
+    {
+      "title": "Senate Finance JPMorgan memorandum",
+      "date": "2025-11-19",
+      "url": "https://www.finance.senate.gov/imo/media/doc/memorandum_to_senator_wyden_on_jpmc-epstein_redactedpdf.pdf"
+    },
+    {
+      "title": "Senate Finance multi-bank report",
+      "date": "2026-08-04",
+      "url": "https://www.finance.senate.gov/ranking-members-news/wyden-releases-new-report-on-failure-of-wall-street-banks-to-blow-the-whistle-on-jeffrey-epsteins-sex-trafficking-and-money-laundering-schemes"
+    }
+  ],
+  "evidence_boundaries": [
+    "The complete 4,725-row transaction ledger is not public in the cited Senate materials.",
+    "The aggregate does not identify one single payer or recipient.",
+    "The existence of a transfer does not establish criminal purpose or counterparty knowledge.",
+    "The ~$1.1 billion wire aggregate is distinct from the ~$1.283 billion combined amount of the two 2019 SARs."
+  ]
+}

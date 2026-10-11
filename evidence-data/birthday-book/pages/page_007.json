@@ -1,0 +1,102 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 7,
+  "page_id": "page_007",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_007.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_007.ocr.txt",
+  "image_metadata": {
+    "bytes": 8516121,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "5c1098497b88d4a620e864f1bd8802649ebeb38810c294aab68c9f9327587971"
+  },
+  "ocr_text": "i\nfai! (pe \" |\n| ia\nOF a £ ’ ee o A a\n3 i. Bs - - he ey ae ry ae ae “ £\n=i va = , — oS m4 ao i . -\nS. +h sie \"a ay a 5 ——\ni ae Oe Pe a. Te ee\nve ast oe ‘ a Pete Sad \\\n{a a , ~ 3 one A on inches ee |\niM az i 3 ; ’\n. “Se 4 LE hae RE Nae ch i> PER Lhe eles\na ee ee |\ni aaN ; i, E i\nSe\nee [ } itn,\na “ia en\n.. , fice Tre\n- is aie ,\nHOUSE_OVERSIGHT_000007\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows a photograph of four men standing together. Three men are wearing military camouflage uniforms and one man is dressed in a dark suit with a white shirt. Below the photo, there is a handwritten note in black ink.",
+    "Layout: photo at top center",
+    "Layout: handwritten note below photo",
+    "Photo/image candidate at top center: Group photograph of four men, three in military camouflage uniforms holding rifles, one in a dark suit."
+  ],
+  "observations": [
+    "The image shows a photograph of four men standing together. Three men are wearing military camouflage uniforms and one man is dressed in a dark suit with a white shirt. Below the photo, there is a handwritten note in black ink.",
+    "Layout: photo at top center",
+    "Layout: handwritten note below photo",
+    "Photo/image candidate at top center: Group photograph of four men, three in military camouflage uniforms holding rifles, one in a dark suit."
+  ],
+  "dates": [],
+  "document_strings": [
+    "These were you body guards before you began traveling with president and nothing true any ad secret service to guard you."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "below photo",
+      "text_as_seen": "These were you body guards before you began traveling with president and nothing true any ad secret service to guard you.",
+      "confidence": "medium",
+      "note": "Some words are unclear, 'anything' may be written as 'nothing', 'any ad' could be unclear."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Handwriting contains some unclear words and phrases; exact transcription uncertain."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:02:53.709Z",
+    "response_id": "resp_0bed4d1b579a5b21006a50289794708197aa007b5eb1b92c0c",
+    "raw_output_sha256": "6924db081075b4b47904b5de8e4ec5a04b648244fb0fe659633a7e5f96abc1a5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bed4d1b579a5b21006a50289794708197aa007b5eb1b92c0c",
+    "enriched_at": "2026-07-09T23:02:53.709Z"
+  },
+  "visual_summary": "The image shows a photograph of four men standing together. Three men are wearing military camouflage uniforms and one man is dressed in a dark suit with a white shirt. Below the photo, there is a handwritten note in black ink.",
+  "layout": [
+    "photo at top center",
+    "handwritten note below photo"
+  ],
+  "handwriting": [
+    {
+      "location": "below photo",
+      "text_as_seen": "These were you body guards before you began traveling with president and nothing true any ad secret service to guard you.",
+      "confidence": "medium",
+      "note": "Some words are unclear, 'anything' may be written as 'nothing', 'any ad' could be unclear."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top center",
+      "description": "Group photograph of four men, three in military camouflage uniforms holding rifles, one in a dark suit.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

@@ -1,0 +1,108 @@
+=== exact-id policy ===
+PASS canonical relative route validates
+PASS canonical route for a different id fails
+PASS non-canonical relative url fails
+PASS trusted host WITH identifier validates
+PASS trusted host WITHOUT identifier fails
+PASS untrusted host fails
+PASS non-https url fails
+PASS bare source string without attestation fails
+PASS upstream attestation with provenance validates
+PASS attestation basis is upstream_attestation
+PASS URL basis is syntactic only
+PASS canonical route basis is syntactic only
+PASS no evidence fails
+PASS S1: verified record first
+PASS S1: route is the row's own URL
+PASS S1: id-only row kept as unverified finding
+PASS S1: unverified row has no links
+PASS S1: unverified row link-free API-wide
+PASS S1: verified row carries basis
+PASS S1: unrelated rows preserved
+PASS S1: hit count includes findings, excludes nothing here
+PASS S2: no verified label
+PASS S2: rows labeled unverified
+PASS S2: no links on unverified rows
+PASS S2: unverified rows link-free API-wide
+PASS S2: top-level bundle URL stays null
+PASS S2: no route manufactured
+PASS S2: unverified flag set
+PASS S2: findings counted as hits
+PASS S3: missing-record card present
+PASS S3: other rows preserved
+PASS S3: missing card carries no URLs
+PASS S3: missing flag set, no route
+PASS S3: missing card excluded from hit count
+PASS S3: top-level bundle URL stays null
+PASS all aliases produce identical upstream q  [EFTA00000123,EFTA00000123,EFTA00000123,EFTA00000123,EFTA00000123]
+PASS text queries untouched
+
+37 passed, 0 failed
+
+=== identifier module ===
+test_identifiers: all 37 checks passed
+
+=== identifier sync + wiring ===
+PASS generated markers present
+PASS inlined copy matches the lib source
+PASS handlePublicSearch calls classifyQuery
+PASS handlePublicSearch handles the barak namespace
+PASS handlePublicSearch derives exact from canonical
+PASS handlePublicSearch uses missingRecordResponse
+
+6 passed, 0 failed
+
+=== DO concurrency (Miniflare) ===
+PASS 25-way concurrency: exactly 3 allowed  [allowed=3]
+PASS 25-way concurrency: 22 blocked with 429 shape
+PASS 10 concurrent admin failures: 5 recorded, 5 over-limit  [recorded=5]
+PASS peek reports blocked with exact count  [count=5]
+PASS clear resets the counter
+PASS shard isolation: other key unaffected
+PASS malformed body -> invalid_body
+PASS default export returns 404
+
+8 passed, 0 failed
+
+=== admin-login handler (Miniflare) ===
+PASS 10 simultaneous bad logins: 5 admitted  [admitted=5]
+PASS 10 simultaneous bad logins: 5 blocked at gate  [blocked=5]
+PASS good token succeeds and refunds one slot
+PASS only failures consume quota (3 admitted, 4th blocked)  [got 401,401,401,429]
+PASS shared IP: attacker's failures persist across another user's success  [got 401,401,401,429]
+PASS CF-Connecting-IP preferred
+PASS XFF fallback when no CF header
+PASS missing headers -> unknown bucket
+PASS attacker locked out after 5
+PASS other IP unaffected
+PASS missing binding + no KV admits (fail-open)
+PASS DO outage admits (fail-open)
+
+12 passed, 0 failed
+
+=== security concurrency mock ===
+PASS OLD architecture: race reproduced (25 concurrent, limit 3)  [allowed=25]
+PASS NEW architecture: exactly 3 allowed under 25-way concurrency  [allowed=3]
+PASS NEW architecture: remaining 22 blocked  [blocked=22]
+PASS NEW architecture: all 10 admin failures recorded (5 allowed, 5 over-limit)  [recorded=5]
+PASS admin blocked after 5 failures (peek)  [count=5]
+PASS admin counter cleared on success
+PASS different client key unaffected
+PASS malformed DO body rejected
+
+8 passed, 0 failed
+
+=== security fallback harness ===
+PASS KV fallback: blocks 4th sequential request
+PASS fail-open with no KV and no DO
+PASS 429 JSON shape
+PASS per-IP isolation (fallback)
+PASS CF-Connecting-IP preferred
+PASS unknown IP fallback
+PASS admin KV fallback: blocked after 5
+PASS admin KV fallback: cleared on success
+
+8 passed, 0 failed
+
+----------------------------------------
+ALL 7 SUITES PASSED

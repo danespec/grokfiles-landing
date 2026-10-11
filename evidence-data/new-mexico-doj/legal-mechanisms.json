@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "mechanism_id": "NMDOJ_TOUHY_REQUEST_PROCESS",
+      "legal_barrier_or_procedure": "DOJ Touhy approval process for requests or demands for agency records or employee testimony in proceedings where the United States is not a party.",
+      "authority_source_id": "ecfr-touhy-subpart-b",
+      "party_position": "NMDOJ states that DOJ directed a formal Touhy letter on April 1, 2026 and that NMDOJ sent a comprehensive Touhy request on May 3, 2026.",
+      "confirmed_barrier": "CONDITIONAL",
+      "applies_to_public_release_or_law_enforcement_access": "Law-enforcement access; Touhy governs demand/approval procedure and does not itself prove that every requested record is barred.",
+      "required_action_or_path": "DOJ component authorization, narrowing, confidentiality terms, or judicial process if required.",
+      "public_action_located": "No NM-specific DOJ written Touhy decision located.",
+      "status": "UNRESOLVED",
+      "confidence": "High for existence of Touhy procedure; medium for application because the actual Touhy request and DOJ response were not public."
+    },
+    {
+      "mechanism_id": "GRAND_JURY_RULE_6E",
+      "legal_barrier_or_procedure": "Grand jury secrecy for matters occurring before a grand jury.",
+      "authority_source_id": "uscode-rule-6",
+      "party_position": "DOJ EFTA materials cite grand jury secrecy as a limit on prior and public production; no NM-specific Rule 6(e) invocation letter was located.",
+      "confirmed_barrier": "CONDITIONAL",
+      "applies_to_public_release_or_law_enforcement_access": "Can bar disclosure of covered grand-jury material unless an exception or court authorization applies.",
+      "required_action_or_path": "Identify covered material and seek court authorization or other applicable Rule 6(e) route where necessary.",
+      "public_action_located": "No NM-specific Rule 6(e) petition or order located.",
+      "status": "ACQUISITION_PENDING",
+      "confidence": "High for legal rule; low for record-specific application."
+    },
+    {
+      "mechanism_id": "MAXWELL_PROTECTIVE_ORDER_DKT36",
+      "legal_barrier_or_procedure": "Protective order governing confidential discovery in United States v. Maxwell.",
+      "authority_source_id": "doj-efta00009664-maxwell-protective-order",
+      "party_position": "Jay Clayton publicly said requested documents were subject to protections, including a court protective order, and that DOJ personnel were seeking dialogue with NMDOJ to reach an accommodation consistent with those orders.",
+      "confirmed_barrier": "CONFIRMED_FOR_CASE_RECORDS",
+      "applies_to_public_release_or_law_enforcement_access": "Applies to covered Maxwell discovery; it does not establish that every NM-requested record is covered.",
+      "required_action_or_path": "Court modification, accommodation under the order, or controlled production consistent with the order.",
+      "public_action_located": "Maxwell protective order acquired; no NM-specific modification motion located.",
+      "status": "CONDITIONAL_BARRIER",
+      "confidence": "High for order existence; medium for NM application."
+    },
+    {
+      "mechanism_id": "MAXWELL_RULE17_EVCF_ORDER",
+      "legal_barrier_or_procedure": "Confidentiality order for Rule 17 materials and the EVCP in United States v. Maxwell.",
+      "authority_source_id": "doj-efta00009654-rule17-confidentiality-order",
+      "party_position": "DOJ public EFTA court-record context points to protective orders and court restrictions around certain Maxwell materials.",
+      "confirmed_barrier": "CONFIRMED_FOR_CASE_RECORDS",
+      "applies_to_public_release_or_law_enforcement_access": "Covered Maxwell case material only; application to NM-requested Zorro Ranch investigative materials remains record-specific.",
+      "required_action_or_path": "Court authorization, modification, or controlled access path.",
+      "public_action_located": "Order acquired; no NM-specific motion located.",
+      "status": "CONDITIONAL_BARRIER",
+      "confidence": "High for order existence; medium for NM application."
+    },
+    {
+      "mechanism_id": "EFTA_PUBLIC_RELEASE_REDACTION_CATEGORIES",
+      "legal_barrier_or_procedure": "EFTA public-release redaction and withholding categories.",
+      "authority_source_id": "govinfo-plaw-119-38-efta",
+      "party_position": "DOJ's public EFTA protocol redacts victim-identifying information, CSAM, ongoing federal-investigation information, classified material, and other categories listed by the Act and protocol.",
+      "confirmed_barrier": "CONFIRMED_FOR_PUBLIC_RELEASE",
+      "applies_to_public_release_or_law_enforcement_access": "Public release; does not by itself decide confidential state law-enforcement access.",
+      "required_action_or_path": "Written justification for public withholdings; controlled law-enforcement sharing must still satisfy applicable privacy, protective-order, and case-specific limits.",
+      "public_action_located": "DOJ EFTA review protocol and public disclosures acquired.",
+      "status": "CONFIRMED_PUBLIC_REDACTION_AUTHORITY",
+      "confidence": "High."
+    },
+    {
+      "mechanism_id": "CVRA_PRIVACY_DIGNITY",
+      "legal_barrier_or_procedure": "Crime Victims' Rights Act dignity and privacy protections.",
+      "authority_source_id": "uscode-cvra-3771",
+      "party_position": "DOJ public materials emphasize redaction of victim-identifying information; NMDOJ says it needs names through law-enforcement access while offering confidentiality terms.",
+      "confirmed_barrier": "CONDITIONAL",
+      "applies_to_public_release_or_law_enforcement_access": "Victim privacy is a real legal interest; controlled disclosure and victim-protective terms may be possible depending on the record.",
+      "required_action_or_path": "Victim-sensitive review, protective terms, or court-supervised process.",
+      "public_action_located": "No NM-specific victim-notification or CVRA accommodation record located.",
+      "status": "UNRESOLVED",
+      "confidence": "High for legal interest; medium for procedural path."
+    },
+    {
+      "mechanism_id": "PRIVACY_ACT_552A",
+      "legal_barrier_or_procedure": "Privacy Act restrictions and exceptions for federal records maintained on individuals.",
+      "authority_source_id": "uscode-privacy-act-552a",
+      "party_position": "DOJ public EFTA materials cite privacy-related redactions, but no NM-specific DOJ written Privacy Act refusal was located.",
+      "confirmed_barrier": "CONDITIONAL",
+      "applies_to_public_release_or_law_enforcement_access": "May restrict disclosure unless an exception, routine use, law-enforcement request, or court order applies.",
+      "required_action_or_path": "Identify system of records, routine use, law-enforcement request fit, or court-order route.",
+      "public_action_located": "No NM-specific Privacy Act analysis located.",
+      "status": "ACQUISITION_PENDING",
+      "confidence": "High for statute; low for record-specific application."
+    },
+    {
+      "mechanism_id": "CHILD_VICTIM_WITNESS_AND_CSAM_CONTROLS",
+      "legal_barrier_or_procedure": "Child-victim privacy and child sexual-abuse-material custody controls.",
+      "authority_source_id": "uscode-child-victim-3509",
+      "party_position": "DOJ EFTA protocol treats CSAM and victim-identifying material as protected categories; NMDOJ does not request public republication of such material in the acquired letter.",
+      "confirmed_barrier": "CONFIRMED_FOR_PROTECTED_CONTENT",
+      "applies_to_public_release_or_law_enforcement_access": "Protected-content controls are categorical for public republication; controlled investigative access is a separate question.",
+      "required_action_or_path": "Secure law-enforcement handling, court authorization if needed, and no public release.",
+      "public_action_located": "No NM-specific CSAM handling protocol located.",
+      "status": "CONFIRMED_BARRIER_WITH_CONTROLLED_ACCESS_QUESTION",
+      "confidence": "High for public-release barrier."
+    },
+    {
+      "mechanism_id": "FOIA_PUBLIC_RELEASE_DISTINCTION",
+      "legal_barrier_or_procedure": "FOIA and EFTA public-release frameworks do not automatically answer confidential state law-enforcement access.",
+      "authority_source_id": "uscode-foia-552",
+      "party_position": "NMDOJ asks for unredacted records as law enforcement; DOJ public pages describe public EFTA release redactions.",
+      "confirmed_barrier": "NOT_A_CATEGORICAL_BARRIER",
+      "applies_to_public_release_or_law_enforcement_access": "Public disclosure versus controlled investigative sharing.",
+      "required_action_or_path": "Record-classification review and disclosure agreement/order tailored to law-enforcement use.",
+      "public_action_located": "No public DOJ record resolving this distinction for NM located.",
+      "status": "UNRESOLVED",
+      "confidence": "Medium."
+    },
+    {
+      "mechanism_id": "NM_HR1_LEGISLATIVE_SUBPOENA_POWER",
+      "legal_barrier_or_procedure": "New Mexico House Special Investigatory Committee subpoena and hearing authority.",
+      "authority_source_id": "nmlegis-hr1-final",
+      "party_position": "HR 1 authorizes hearings, oaths, subpoenas, and enforcement for the committee; the public Truth Commission folder contains 20 June 2026 HR 1 subpoena PDFs.",
+      "confirmed_barrier": "STATE_INVESTIGATORY_TOOL",
+      "applies_to_public_release_or_law_enforcement_access": "Legislative oversight track, separate from NMDOJ criminal access request.",
+      "required_action_or_path": "Service proof, return, compliance response, enforcement, or litigation record.",
+      "public_action_located": "Committee agenda, handout, public folder, and 20 subpoena PDFs acquired; service/response/compliance records not located.",
+      "status": "SUBPOENAS_ACQUIRED_COMPLIANCE_PENDING",
+      "confidence": "High for HR 1 authority and public subpoena PDFs; low for service and compliance details."
+    },
+    {
+      "mechanism_id": "PROPOSED_EFTA_II",
+      "legal_barrier_or_procedure": "Proposed legislation to add state/survivor enforcement and access routes.",
+      "authority_source_id": "nmd-efta-ii-draft",
+      "party_position": "NMDOJ supports EFTA II as a new statutory route; the acquired source is a draft/proposal, not enacted law.",
+      "confirmed_barrier": "NOT_CURRENT_LAW",
+      "applies_to_public_release_or_law_enforcement_access": "Future/potential enforcement route only.",
+      "required_action_or_path": "Congressional enactment before it can create enforceable rights.",
+      "public_action_located": "Draft and press release acquired.",
+      "status": "PROPOSED_ONLY",
+      "confidence": "High."
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 233,
+  "bates": "HOUSE_OVERSIGHT_000233",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/233",
+  "related_people": [
+    "Ted Serine"
+  ],
+  "priority_rank": 7,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_0b769afa9b13d592006a50eb3b679081938c94a351927cfc04",
+  "transcript_status": "transcribed",
+  "overall_confidence": "high",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_public",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "Names, signatures, captions, and labels are document strings only.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "top left corner",
+      "text": "1/15/03",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "1/15/03"
+    },
+    {
+      "line_number": 2,
+      "location": "top left area below date",
+      "text": "Dear Jeffrey,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Dear Jeffrey,"
+    },
+    {
+      "line_number": 3,
+      "location": "upper middle",
+      "text": "We started out behind the desk some",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "We started out behind the desk some"
+    },
+    {
+      "line_number": 4,
+      "location": "middle left",
+      "text": "25 years ago.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "25 years ago."
+    },
+    {
+      "line_number": 5,
+      "location": "middle center",
+      "text": "Somehow I'm still behind the desk -",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Somehow I'm still behind the desk -"
+    },
+    {
+      "line_number": 6,
+      "location": "middle right",
+      "text": "you're not.... I'm asking myself now",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "you're not.... I'm asking myself now"
+    },
+    {
+      "line_number": 7,
+      "location": "middle right",
+      "text": "what I'm still doing there, but it certainly",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "what I'm still doing there, but it certainly"
+    },
+    {
+      "line_number": 8,
+      "location": "lower middle",
+      "text": "helps define why you're my hero.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "helps define why you're my hero."
+    },
+    {
+      "line_number": 9,
+      "location": "lower middle",
+      "text": "All the best, happy birthday.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "All the best, happy birthday."
+    },
+    {
+      "line_number": 10,
+      "location": "bottom left",
+      "text": "I wish you love + laughter always",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "I wish you love + laughter always"
+    },
+    {
+      "line_number": 11,
+      "location": "bottom center",
+      "text": "Ted Serine",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Ted Serine"
+    }
+  ],
+  "document_strings": [
+    "Dear Jeffrey,",
+    "We started out behind the desk some 25 years ago.",
+    "Somehow I'm still behind the desk - you're not.... I'm asking myself now what I'm still doing there, but it certainly helps define why you're my hero.",
+    "All the best, happy birthday.",
+    "I wish you love + laughter always",
+    "Ted Serine"
+  ],
+  "visible_non_transcript_notes": [],
+  "gaps": [],
+  "raw_output_sha256": "ef2e998fe4c3d5a22dfe983964f42a042f0c8cf834368c7bfe14c57baf87498e",
+  "transcribed_at": "2026-07-10T12:53:24.748Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

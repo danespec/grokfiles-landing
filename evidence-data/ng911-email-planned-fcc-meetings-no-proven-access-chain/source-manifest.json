@@ -1,0 +1,78 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "ng911-email-planned-fcc-meetings-no-proven-access-chain",
+  "title": "The NG911 Email: Planned FCC Meetings, No Proven Access Chain",
+  "published": "2026-09-30",
+  "scope": "Source-locked reconstruction of the Nov. 23, 2015 Reporty/NG911 email thread, distinguishing public information sharing and prospective outreach from completed FCC access or later-customer causality.",
+  "evidence_package": "/Volumes/homes/admin/GAH_US_RUN2_NG911_CARBYNE_MASTER.md",
+  "sources": [
+    {
+      "id": "NG911-PRIMARY",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA00672765",
+      "url": "/pdf-lite?id=EFTA00672765",
+      "supports": "Epstein forwards Wheeler article URL; Barak reports Barcelona activity, prospective Wheeler and Schulzrinne contacts, advisory-board intent and investor interest.",
+      "limit": "Statements about prior meetings are Barak's account; prospective language does not prove completion."
+    },
+    {
+      "id": "NG911-DUPLICATE",
+      "class": "PRIMARY_EMAIL_DUPLICATE",
+      "record": "EFTA02372377",
+      "url": "/pdf-lite?id=EFTA02372377",
+      "supports": "Duplicate production copy of same Nov. 23 exchange.",
+      "limit": "Noisier OCR; used as duplicate corroboration, not a separate event."
+    },
+    {
+      "id": "WHEELER-FCC",
+      "class": "PRIMARY_GOVERNMENT_CONTEXT",
+      "record": "FCC Chairman Tom Wheeler remarks, Mar. 27, 2015",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-332731A1.pdf",
+      "supports": "Tom Wheeler's status as FCC chairman in 2015.",
+      "limit": "Role context only; does not establish any Reporty meeting."
+    },
+    {
+      "id": "SCHULZRINNE-COLUMBIA",
+      "class": "AUTHORITATIVE_ROLE_HISTORY",
+      "record": "Columbia Engineering faculty profile",
+      "url": "https://www.engineering.columbia.edu/faculty-staff/directory/henning-g-schulzrinne",
+      "supports": "Schulzrinne role history: FCC Technology Advisor Sep. 2014-Aug. 2016; prior CTO Jan. 2012-Aug. 2014.",
+      "limit": "Public role context only."
+    },
+    {
+      "id": "SCHULZRINNE-2016",
+      "class": "AUTHORITATIVE_APPOINTMENT_NOTICE",
+      "record": "Columbia/FCC Senior Advisor appointment notice",
+      "url": "https://www.ee.columbia.edu/prof-henning-schulzrinne-appointed-fccs-senior-advisor-technology",
+      "supports": "Scott Jordan remained FCC Chief Technologist until late 2016; Schulzrinne returned as Senior Advisor in 2016.",
+      "limit": "Later notice used to clarify Nov. 2015 title."
+    },
+    {
+      "id": "CARBYNE-2018",
+      "class": "COMPANY_PRESS_RELEASE",
+      "record": "Carbyne c-Lite U.S. early adopters, Aug. 2, 2018",
+      "url": "https://www.prnewswire.com/news-releases/carbyne-makes-history-announces-early-adopters-of-next-gen-911-plugin-fayette-county-ga-and-ocean-county-nj-822828443.html",
+      "supports": "Company announcement naming Fayette County GA and Ocean County NJ as early c-Lite adopters and describing the product as an NG911 plugin.",
+      "limit": "Company-issued announcement; does not connect those deployments to the 2015 FCC contacts."
+    },
+    {
+      "id": "RUN2",
+      "class": "GAH_RECONSTRUCTION",
+      "record": "GAH_US_RUN2_NG911_CARBYNE_MASTER.md",
+      "supports": "Bounded corpus search for follow-up/meeting completion and later-customer causal bridge.",
+      "limit": "Archive-created synthesis; negative findings are bounded to searched/recovered records."
+    }
+  ],
+  "open_questions": [
+    "Whether a Wheeler meeting was scheduled or completed after Nov. 23, 2015.",
+    "Whether the planned Nov. 24 Schulzrinne meeting occurred.",
+    "Whether Schulzrinne ever accepted an advisory role with Reporty/Carbyne.",
+    "Who, if anyone, introduced Reporty to Wheeler or Schulzrinne.",
+    "Whether any later U.S. customer referral can be source-linked to the 2015 contacts."
+  ],
+  "not_established": [
+    "That Epstein introduced Reporty or Barak to Wheeler or Schulzrinne.",
+    "That the Wheeler or Schulzrinne meetings occurred.",
+    "Improper government influence, favoritism, endorsement or lobbying success.",
+    "A causal path from the Nov. 2015 email to the 2018 Fayette County or Ocean County deployments."
+  ]
+}

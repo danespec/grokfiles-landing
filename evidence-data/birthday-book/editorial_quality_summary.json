@@ -1,0 +1,2772 @@
+{
+  "reviewed_at": "2026-07-10T17:53:03.753Z",
+  "pages": 238,
+  "source_provenance": {
+    "label": "House Oversight Epstein Estate Documents - First Production",
+    "release_title": "Oversight Committee Releases Records Provided by the Epstein Estate, Chairman Comer Provides Statement",
+    "release_publisher": "U.S. House Committee on Oversight and Government Reform",
+    "release_date": "2025-09-08",
+    "release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+    "source_collection_url": "https://drive.google.com/drive/folders/1ZSVpXEhI7gKI0zatJdYe6QhKJ5pjUo4b",
+    "backup_collection_url": "https://www.dropbox.com/scl/fo/azl4abiwwixtvezmz0617/ANVZACgh4aPQ-TcxCKi0FDw?dl=0&e=1&rlkey=aqg68si6y246f2b15kro9zmqh&st=7nh3wzuq",
+    "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+    "source_pdf_url_status": "Public file URL located for the full album; direct HEAD checks may return Google access responses, so the official House release and collection URL remain the canonical provenance.",
+    "bates_prefix": "HOUSE_OVERSIGHT_",
+    "bates_mapping_rule": "Page N maps to HOUSE_OVERSIGHT_000NNN in the recovered House Oversight scan."
+  },
+  "page_bates_mapping": [
+    {
+      "page": 1,
+      "bates": "HOUSE_OVERSIGHT_000001",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 2,
+      "bates": "HOUSE_OVERSIGHT_000002",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 3,
+      "bates": "HOUSE_OVERSIGHT_000003",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 4,
+      "bates": "HOUSE_OVERSIGHT_000004",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 5,
+      "bates": "HOUSE_OVERSIGHT_000005",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 6,
+      "bates": "HOUSE_OVERSIGHT_000006",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 7,
+      "bates": "HOUSE_OVERSIGHT_000007",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 8,
+      "bates": "HOUSE_OVERSIGHT_000008",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 9,
+      "bates": "HOUSE_OVERSIGHT_000009",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 10,
+      "bates": "HOUSE_OVERSIGHT_000010",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 11,
+      "bates": "HOUSE_OVERSIGHT_000011",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 12,
+      "bates": "HOUSE_OVERSIGHT_000012",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 13,
+      "bates": "HOUSE_OVERSIGHT_000013",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 14,
+      "bates": "HOUSE_OVERSIGHT_000014",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 15,
+      "bates": "HOUSE_OVERSIGHT_000015",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 16,
+      "bates": "HOUSE_OVERSIGHT_000016",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 17,
+      "bates": "HOUSE_OVERSIGHT_000017",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 18,
+      "bates": "HOUSE_OVERSIGHT_000018",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 19,
+      "bates": "HOUSE_OVERSIGHT_000019",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 20,
+      "bates": "HOUSE_OVERSIGHT_000020",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 21,
+      "bates": "HOUSE_OVERSIGHT_000021",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 22,
+      "bates": "HOUSE_OVERSIGHT_000022",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 23,
+      "bates": "HOUSE_OVERSIGHT_000023",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 24,
+      "bates": "HOUSE_OVERSIGHT_000024",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 25,
+      "bates": "HOUSE_OVERSIGHT_000025",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 26,
+      "bates": "HOUSE_OVERSIGHT_000026",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 27,
+      "bates": "HOUSE_OVERSIGHT_000027",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 28,
+      "bates": "HOUSE_OVERSIGHT_000028",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 29,
+      "bates": "HOUSE_OVERSIGHT_000029",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 30,
+      "bates": "HOUSE_OVERSIGHT_000030",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 31,
+      "bates": "HOUSE_OVERSIGHT_000031",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 32,
+      "bates": "HOUSE_OVERSIGHT_000032",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 33,
+      "bates": "HOUSE_OVERSIGHT_000033",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 34,
+      "bates": "HOUSE_OVERSIGHT_000034",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 35,
+      "bates": "HOUSE_OVERSIGHT_000035",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 36,
+      "bates": "HOUSE_OVERSIGHT_000036",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 37,
+      "bates": "HOUSE_OVERSIGHT_000037",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 38,
+      "bates": "HOUSE_OVERSIGHT_000038",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 39,
+      "bates": "HOUSE_OVERSIGHT_000039",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 40,
+      "bates": "HOUSE_OVERSIGHT_000040",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 41,
+      "bates": "HOUSE_OVERSIGHT_000041",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 42,
+      "bates": "HOUSE_OVERSIGHT_000042",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 43,
+      "bates": "HOUSE_OVERSIGHT_000043",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 44,
+      "bates": "HOUSE_OVERSIGHT_000044",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 45,
+      "bates": "HOUSE_OVERSIGHT_000045",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 46,
+      "bates": "HOUSE_OVERSIGHT_000046",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 47,
+      "bates": "HOUSE_OVERSIGHT_000047",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 48,
+      "bates": "HOUSE_OVERSIGHT_000048",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 49,
+      "bates": "HOUSE_OVERSIGHT_000049",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 50,
+      "bates": "HOUSE_OVERSIGHT_000050",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 51,
+      "bates": "HOUSE_OVERSIGHT_000051",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 52,
+      "bates": "HOUSE_OVERSIGHT_000052",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 53,
+      "bates": "HOUSE_OVERSIGHT_000053",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 54,
+      "bates": "HOUSE_OVERSIGHT_000054",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 55,
+      "bates": "HOUSE_OVERSIGHT_000055",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 56,
+      "bates": "HOUSE_OVERSIGHT_000056",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 57,
+      "bates": "HOUSE_OVERSIGHT_000057",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 58,
+      "bates": "HOUSE_OVERSIGHT_000058",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 59,
+      "bates": "HOUSE_OVERSIGHT_000059",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 60,
+      "bates": "HOUSE_OVERSIGHT_000060",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 61,
+      "bates": "HOUSE_OVERSIGHT_000061",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 62,
+      "bates": "HOUSE_OVERSIGHT_000062",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 63,
+      "bates": "HOUSE_OVERSIGHT_000063",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 64,
+      "bates": "HOUSE_OVERSIGHT_000064",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 65,
+      "bates": "HOUSE_OVERSIGHT_000065",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 66,
+      "bates": "HOUSE_OVERSIGHT_000066",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 67,
+      "bates": "HOUSE_OVERSIGHT_000067",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 68,
+      "bates": "HOUSE_OVERSIGHT_000068",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 69,
+      "bates": "HOUSE_OVERSIGHT_000069",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 70,
+      "bates": "HOUSE_OVERSIGHT_000070",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 71,
+      "bates": "HOUSE_OVERSIGHT_000071",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 72,
+      "bates": "HOUSE_OVERSIGHT_000072",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 73,
+      "bates": "HOUSE_OVERSIGHT_000073",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 74,
+      "bates": "HOUSE_OVERSIGHT_000074",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 75,
+      "bates": "HOUSE_OVERSIGHT_000075",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 76,
+      "bates": "HOUSE_OVERSIGHT_000076",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 77,
+      "bates": "HOUSE_OVERSIGHT_000077",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 78,
+      "bates": "HOUSE_OVERSIGHT_000078",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 79,
+      "bates": "HOUSE_OVERSIGHT_000079",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 80,
+      "bates": "HOUSE_OVERSIGHT_000080",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 81,
+      "bates": "HOUSE_OVERSIGHT_000081",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 82,
+      "bates": "HOUSE_OVERSIGHT_000082",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 83,
+      "bates": "HOUSE_OVERSIGHT_000083",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 84,
+      "bates": "HOUSE_OVERSIGHT_000084",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 85,
+      "bates": "HOUSE_OVERSIGHT_000085",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 86,
+      "bates": "HOUSE_OVERSIGHT_000086",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 87,
+      "bates": "HOUSE_OVERSIGHT_000087",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 88,
+      "bates": "HOUSE_OVERSIGHT_000088",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 89,
+      "bates": "HOUSE_OVERSIGHT_000089",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 90,
+      "bates": "HOUSE_OVERSIGHT_000090",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 91,
+      "bates": "HOUSE_OVERSIGHT_000091",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 92,
+      "bates": "HOUSE_OVERSIGHT_000092",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 93,
+      "bates": "HOUSE_OVERSIGHT_000093",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 94,
+      "bates": "HOUSE_OVERSIGHT_000094",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 95,
+      "bates": "HOUSE_OVERSIGHT_000095",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 96,
+      "bates": "HOUSE_OVERSIGHT_000096",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 97,
+      "bates": "HOUSE_OVERSIGHT_000097",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 98,
+      "bates": "HOUSE_OVERSIGHT_000098",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 99,
+      "bates": "HOUSE_OVERSIGHT_000099",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 100,
+      "bates": "HOUSE_OVERSIGHT_000100",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 101,
+      "bates": "HOUSE_OVERSIGHT_000101",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 102,
+      "bates": "HOUSE_OVERSIGHT_000102",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 103,
+      "bates": "HOUSE_OVERSIGHT_000103",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 104,
+      "bates": "HOUSE_OVERSIGHT_000104",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 105,
+      "bates": "HOUSE_OVERSIGHT_000105",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 106,
+      "bates": "HOUSE_OVERSIGHT_000106",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 107,
+      "bates": "HOUSE_OVERSIGHT_000107",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 108,
+      "bates": "HOUSE_OVERSIGHT_000108",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 109,
+      "bates": "HOUSE_OVERSIGHT_000109",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 110,
+      "bates": "HOUSE_OVERSIGHT_000110",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 111,
+      "bates": "HOUSE_OVERSIGHT_000111",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 112,
+      "bates": "HOUSE_OVERSIGHT_000112",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 113,
+      "bates": "HOUSE_OVERSIGHT_000113",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 114,
+      "bates": "HOUSE_OVERSIGHT_000114",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 115,
+      "bates": "HOUSE_OVERSIGHT_000115",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 116,
+      "bates": "HOUSE_OVERSIGHT_000116",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 117,
+      "bates": "HOUSE_OVERSIGHT_000117",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 118,
+      "bates": "HOUSE_OVERSIGHT_000118",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 119,
+      "bates": "HOUSE_OVERSIGHT_000119",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 120,
+      "bates": "HOUSE_OVERSIGHT_000120",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 121,
+      "bates": "HOUSE_OVERSIGHT_000121",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 122,
+      "bates": "HOUSE_OVERSIGHT_000122",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 123,
+      "bates": "HOUSE_OVERSIGHT_000123",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 124,
+      "bates": "HOUSE_OVERSIGHT_000124",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 125,
+      "bates": "HOUSE_OVERSIGHT_000125",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 126,
+      "bates": "HOUSE_OVERSIGHT_000126",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 127,
+      "bates": "HOUSE_OVERSIGHT_000127",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 128,
+      "bates": "HOUSE_OVERSIGHT_000128",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 129,
+      "bates": "HOUSE_OVERSIGHT_000129",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 130,
+      "bates": "HOUSE_OVERSIGHT_000130",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 131,
+      "bates": "HOUSE_OVERSIGHT_000131",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 132,
+      "bates": "HOUSE_OVERSIGHT_000132",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 133,
+      "bates": "HOUSE_OVERSIGHT_000133",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 134,
+      "bates": "HOUSE_OVERSIGHT_000134",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 135,
+      "bates": "HOUSE_OVERSIGHT_000135",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 136,
+      "bates": "HOUSE_OVERSIGHT_000136",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 137,
+      "bates": "HOUSE_OVERSIGHT_000137",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 138,
+      "bates": "HOUSE_OVERSIGHT_000138",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 139,
+      "bates": "HOUSE_OVERSIGHT_000139",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 140,
+      "bates": "HOUSE_OVERSIGHT_000140",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 141,
+      "bates": "HOUSE_OVERSIGHT_000141",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 142,
+      "bates": "HOUSE_OVERSIGHT_000142",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 143,
+      "bates": "HOUSE_OVERSIGHT_000143",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 144,
+      "bates": "HOUSE_OVERSIGHT_000144",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 145,
+      "bates": "HOUSE_OVERSIGHT_000145",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 146,
+      "bates": "HOUSE_OVERSIGHT_000146",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 147,
+      "bates": "HOUSE_OVERSIGHT_000147",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 148,
+      "bates": "HOUSE_OVERSIGHT_000148",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 149,
+      "bates": "HOUSE_OVERSIGHT_000149",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 150,
+      "bates": "HOUSE_OVERSIGHT_000150",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 151,
+      "bates": "HOUSE_OVERSIGHT_000151",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 152,
+      "bates": "HOUSE_OVERSIGHT_000152",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 153,
+      "bates": "HOUSE_OVERSIGHT_000153",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 154,
+      "bates": "HOUSE_OVERSIGHT_000154",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 155,
+      "bates": "HOUSE_OVERSIGHT_000155",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 156,
+      "bates": "HOUSE_OVERSIGHT_000156",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 157,
+      "bates": "HOUSE_OVERSIGHT_000157",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 158,
+      "bates": "HOUSE_OVERSIGHT_000158",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 159,
+      "bates": "HOUSE_OVERSIGHT_000159",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 160,
+      "bates": "HOUSE_OVERSIGHT_000160",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 161,
+      "bates": "HOUSE_OVERSIGHT_000161",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 162,
+      "bates": "HOUSE_OVERSIGHT_000162",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 163,
+      "bates": "HOUSE_OVERSIGHT_000163",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 164,
+      "bates": "HOUSE_OVERSIGHT_000164",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 165,
+      "bates": "HOUSE_OVERSIGHT_000165",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 166,
+      "bates": "HOUSE_OVERSIGHT_000166",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 167,
+      "bates": "HOUSE_OVERSIGHT_000167",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 168,
+      "bates": "HOUSE_OVERSIGHT_000168",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 169,
+      "bates": "HOUSE_OVERSIGHT_000169",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 170,
+      "bates": "HOUSE_OVERSIGHT_000170",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 171,
+      "bates": "HOUSE_OVERSIGHT_000171",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 172,
+      "bates": "HOUSE_OVERSIGHT_000172",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 173,
+      "bates": "HOUSE_OVERSIGHT_000173",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 174,
+      "bates": "HOUSE_OVERSIGHT_000174",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 175,
+      "bates": "HOUSE_OVERSIGHT_000175",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 176,
+      "bates": "HOUSE_OVERSIGHT_000176",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 177,
+      "bates": "HOUSE_OVERSIGHT_000177",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 178,
+      "bates": "HOUSE_OVERSIGHT_000178",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 179,
+      "bates": "HOUSE_OVERSIGHT_000179",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 180,
+      "bates": "HOUSE_OVERSIGHT_000180",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 181,
+      "bates": "HOUSE_OVERSIGHT_000181",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 182,
+      "bates": "HOUSE_OVERSIGHT_000182",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 183,
+      "bates": "HOUSE_OVERSIGHT_000183",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 184,
+      "bates": "HOUSE_OVERSIGHT_000184",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 185,
+      "bates": "HOUSE_OVERSIGHT_000185",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 186,
+      "bates": "HOUSE_OVERSIGHT_000186",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 187,
+      "bates": "HOUSE_OVERSIGHT_000187",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 188,
+      "bates": "HOUSE_OVERSIGHT_000188",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 189,
+      "bates": "HOUSE_OVERSIGHT_000189",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 190,
+      "bates": "HOUSE_OVERSIGHT_000190",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 191,
+      "bates": "HOUSE_OVERSIGHT_000191",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 192,
+      "bates": "HOUSE_OVERSIGHT_000192",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 193,
+      "bates": "HOUSE_OVERSIGHT_000193",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 194,
+      "bates": "HOUSE_OVERSIGHT_000194",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 195,
+      "bates": "HOUSE_OVERSIGHT_000195",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 196,
+      "bates": "HOUSE_OVERSIGHT_000196",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 197,
+      "bates": "HOUSE_OVERSIGHT_000197",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 198,
+      "bates": "HOUSE_OVERSIGHT_000198",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 199,
+      "bates": "HOUSE_OVERSIGHT_000199",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 200,
+      "bates": "HOUSE_OVERSIGHT_000200",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 201,
+      "bates": "HOUSE_OVERSIGHT_000201",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 202,
+      "bates": "HOUSE_OVERSIGHT_000202",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 203,
+      "bates": "HOUSE_OVERSIGHT_000203",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 204,
+      "bates": "HOUSE_OVERSIGHT_000204",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 205,
+      "bates": "HOUSE_OVERSIGHT_000205",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 206,
+      "bates": "HOUSE_OVERSIGHT_000206",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 207,
+      "bates": "HOUSE_OVERSIGHT_000207",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 208,
+      "bates": "HOUSE_OVERSIGHT_000208",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 209,
+      "bates": "HOUSE_OVERSIGHT_000209",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 210,
+      "bates": "HOUSE_OVERSIGHT_000210",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 211,
+      "bates": "HOUSE_OVERSIGHT_000211",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 212,
+      "bates": "HOUSE_OVERSIGHT_000212",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 213,
+      "bates": "HOUSE_OVERSIGHT_000213",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 214,
+      "bates": "HOUSE_OVERSIGHT_000214",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 215,
+      "bates": "HOUSE_OVERSIGHT_000215",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 216,
+      "bates": "HOUSE_OVERSIGHT_000216",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 217,
+      "bates": "HOUSE_OVERSIGHT_000217",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 218,
+      "bates": "HOUSE_OVERSIGHT_000218",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 219,
+      "bates": "HOUSE_OVERSIGHT_000219",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 220,
+      "bates": "HOUSE_OVERSIGHT_000220",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 221,
+      "bates": "HOUSE_OVERSIGHT_000221",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 222,
+      "bates": "HOUSE_OVERSIGHT_000222",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 223,
+      "bates": "HOUSE_OVERSIGHT_000223",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 224,
+      "bates": "HOUSE_OVERSIGHT_000224",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 225,
+      "bates": "HOUSE_OVERSIGHT_000225",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 226,
+      "bates": "HOUSE_OVERSIGHT_000226",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 227,
+      "bates": "HOUSE_OVERSIGHT_000227",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 228,
+      "bates": "HOUSE_OVERSIGHT_000228",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 229,
+      "bates": "HOUSE_OVERSIGHT_000229",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 230,
+      "bates": "HOUSE_OVERSIGHT_000230",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 231,
+      "bates": "HOUSE_OVERSIGHT_000231",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 232,
+      "bates": "HOUSE_OVERSIGHT_000232",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 233,
+      "bates": "HOUSE_OVERSIGHT_000233",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 234,
+      "bates": "HOUSE_OVERSIGHT_000234",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 235,
+      "bates": "HOUSE_OVERSIGHT_000235",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 236,
+      "bates": "HOUSE_OVERSIGHT_000236",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 237,
+      "bates": "HOUSE_OVERSIGHT_000237",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    },
+    {
+      "page": 238,
+      "bates": "HOUSE_OVERSIGHT_000238",
+      "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link"
+    }
+  ],
+  "public_transcript_publishable": 34,
+  "public_transcript_withheld": 204,
+  "withheld_pages": [
+    {
+      "page": 1,
+      "reasons": [
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 4,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 5,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 6,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 7,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 8,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 9,
+      "reasons": [
+        "handwriting/cursive",
+        "garbage-character ratio above threshold",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 10,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 11,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 12,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 13,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 14,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 15,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 16,
+      "reasons": [
+        "handwriting/cursive",
+        "garbage-character ratio above threshold"
+      ]
+    },
+    {
+      "page": 17,
+      "reasons": [
+        "sparse OCR",
+        "Bates/source-control text only"
+      ]
+    },
+    {
+      "page": 18,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 19,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 20,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 21,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 22,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 23,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 24,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 25,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 26,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 27,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 28,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 29,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 30,
+      "reasons": [
+        "fragmented words",
+        "safety-block/GAPS"
+      ]
+    },
+    {
+      "page": 31,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 32,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 33,
+      "reasons": [
+        "garbage-character ratio above threshold",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 34,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 35,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 36,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 45,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 49,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 50,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 51,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 52,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 53,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 54,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 55,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 56,
+      "reasons": [
+        "garbage-character ratio above threshold",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 57,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 58,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 59,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 60,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 61,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 62,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 64,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 65,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 67,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 68,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 69,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 70,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 71,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 72,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 73,
+      "reasons": [
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 74,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 75,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 76,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 77,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 78,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 79,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 80,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 81,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 82,
+      "reasons": [
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 83,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 85,
+      "reasons": [
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 86,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 87,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 89,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 90,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 91,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 92,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 93,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 94,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 95,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 96,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 97,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 98,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 99,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 100,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 101,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 102,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 103,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 104,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 105,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 106,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 107,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 108,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 109,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 110,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 111,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 112,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 113,
+      "reasons": [
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 114,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 118,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 119,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 120,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 121,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 122,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 123,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 124,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 125,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 126,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 127,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 128,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 132,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 133,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 134,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 136,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 137,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 138,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 139,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 140,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 141,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 142,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 143,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 144,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 145,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 146,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 148,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 149,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 150,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 151,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 152,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 153,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 154,
+      "reasons": [
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 155,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 156,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 157,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 158,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 159,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 163,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 164,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 165,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 166,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 167,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 168,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 169,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 170,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 171,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 172,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 173,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 174,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 175,
+      "reasons": [
+        "sparse OCR",
+        "Bates/source-control text only"
+      ]
+    },
+    {
+      "page": 176,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 177,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 178,
+      "reasons": [
+        "handwriting/cursive",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 179,
+      "reasons": [
+        "handwriting/cursive",
+        "garbage-character ratio above threshold",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 180,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 181,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 183,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 187,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 188,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 190,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 191,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 192,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 193,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 194,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 195,
+      "reasons": [
+        "sparse OCR",
+        "Bates/source-control text only"
+      ]
+    },
+    {
+      "page": 196,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 197,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 198,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 199,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 200,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 201,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 202,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 203,
+      "reasons": [
+        "handwriting/cursive",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 204,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 205,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 206,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 207,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 208,
+      "reasons": [
+        "handwriting/cursive",
+        "garbage-character ratio above threshold",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 209,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 210,
+      "reasons": [
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 211,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 212,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 213,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 214,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 215,
+      "reasons": [
+        "handwriting/cursive",
+        "garbage-character ratio above threshold",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 216,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 217,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 218,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 219,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 220,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 221,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 222,
+      "reasons": [
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 223,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 224,
+      "reasons": [
+        "handwriting/cursive",
+        "garbage-character ratio above threshold",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 225,
+      "reasons": [
+        "sparse OCR",
+        "garbage-character ratio above threshold"
+      ]
+    },
+    {
+      "page": 226,
+      "reasons": [
+        "handwriting/cursive",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 227,
+      "reasons": [
+        "handwriting/cursive",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 228,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 229,
+      "reasons": [
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 230,
+      "reasons": [
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 231,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 232,
+      "reasons": [
+        "handwriting/cursive"
+      ]
+    },
+    {
+      "page": 233,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 235,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words",
+        "obvious OCR noise"
+      ]
+    },
+    {
+      "page": 236,
+      "reasons": [
+        "missing OCR",
+        "sparse OCR"
+      ]
+    },
+    {
+      "page": 237,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    },
+    {
+      "page": 238,
+      "reasons": [
+        "handwriting/cursive",
+        "fragmented words"
+      ]
+    }
+  ],
+  "section_pages": [
+    {
+      "page": 69,
+      "section": "Science"
+    },
+    {
+      "page": 177,
+      "section": "Science"
+    },
+    {
+      "page": 230,
+      "section": "Business"
+    }
+  ],
+  "identity_counts": {
+    "toc_attribution": 24,
+    "open": 81,
+    "signature_attribution": 9,
+    "probable": 7,
+    "unresolved": 52,
+    "confirmed_contributor": 2,
+    "verified": 2,
+    "mentioned_only": 3
+  },
+  "review_queue": {
+    "items": 466,
+    "high": 392,
+    "medium": 74,
+    "low": 0,
+    "dedupe_rule": "page + issue + current extraction + recommended action",
+    "ranking_rule": "public value + attribution risk + readability risk"
+  },
+  "identity_research": {
+    "records": 90,
+    "records_with_external_sources": 90,
+    "verified": [
+      "Jean-Luc Brunel",
+      "Peter Mandelson"
+    ],
+    "probable_reviewed_first": [
+      "Ari Gildery",
+      "George Mitchell",
+      "Jean-Luc Brunel",
+      "Jerry Edelman",
+      "Jerry Gardens",
+      "Joseph Pagano",
+      "Marvin Minsky",
+      "Ted Serine"
+    ],
+    "high_value_unresolved_reviewed": [
+      "Donald Trump",
+      "Bill Clinton",
+      "Peter Mandelson",
+      "Alan Dershowitz"
+    ]
+  },
+  "transcription_review": {
+    "openai_api_key_present": false,
+    "dedicated_openai_transcription_run": true,
+    "result_files_imported": 10,
+    "priority_handwritten_pages": [
+      125,
+      126,
+      127,
+      146,
+      158,
+      165,
+      178,
+      187,
+      232,
+      233
+    ],
+    "public_handwriting_transcript_pages": [
+      125,
+      126,
+      146,
+      158,
+      178,
+      187,
+      232,
+      233
+    ],
+    "public_rule": "Handwritten public transcripts come only from the imported dedicated line-by-line result files; uncertain words are bracketed and transcription is not attribution verification."
+  },
+  "gaps": [
+    "External identity research is incomplete beyond the priority records in this generated review build.",
+    "Handwritten public transcription is limited to the imported priority transcription result files and still requires human review for quotation use.",
+    "Table-of-contents names are not treated as confirmed contributors without matching contribution-page evidence.",
+    "Direct Google Drive source-PDF HEAD checks may return access-control responses; the official House release and collection URL remain canonical."
+  ],
+  "priority_transcription": {
+    "generated_at": "2026-07-10T17:53:03.753Z",
+    "priority_pages": 11,
+    "ten_page_test_pages": [
+      125,
+      126,
+      127,
+      146,
+      158,
+      165,
+      178,
+      187,
+      232,
+      233
+    ],
+    "status": "imported_publication_ready",
+    "transcription_quality_counts": {
+      "transcript_files": 10,
+      "pages_transcribed": 9,
+      "pages_public_allowed": 9,
+      "pages_no_handwriting_found": 1,
+      "pages_withheld_low_confidence": 0,
+      "line_confidence_counts": {
+        "high": 121,
+        "medium": 7,
+        "low": 1,
+        "lines": 129
+      }
+    },
+    "transcript_files": 10,
+    "public_handwriting_transcript_pages": [
+      125,
+      126,
+      146,
+      158,
+      178,
+      187,
+      232,
+      233
+    ],
+    "public_text_recovery_pages": [
+      165
+    ],
+    "no_handwriting_found_pages": [
+      127
+    ]
+  },
+  "indexes": {
+    "page_search_index": "/evidence-data/birthday-book/research/page_search_index.json",
+    "contributor_index": "/evidence-data/birthday-book/research/contributor_index.json",
+    "section_index": "/evidence-data/birthday-book/research/section_index.json",
+    "public_transcript_index": "/evidence-data/birthday-book/research/public_transcript_index.json"
+  },
+  "gates": {
+    "unsupported_identity_claims": 0,
+    "public_attribution_citation_gaps": 0,
+    "raw_handwritten_ocr_publicly_visible": 0,
+    "low_confidence_text_presented_as_certain": 0,
+    "book_title_identity_records": 0,
+    "verified_contributors": 2
+  },
+  "review_cases": {
+    "raw_review_items": 466,
+    "grouped_cases": 224,
+    "ranking_rule": "grouped page/person cases sorted by public value, attribution risk, and readability risk"
+  }
+}

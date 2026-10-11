@@ -1,0 +1,191 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 92,
+  "page_id": "page_092",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_092.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_092.ocr.txt",
+  "image_metadata": {
+    "bytes": 19004235,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "1867822cb3c49ec5dbfc35279aedcee39658b269970a7c7111aea35c54e6aefe"
+  },
+  "ocr_text": "4\n‘ “¥ wae a an.\nfos te EH, iy 7\n“a 2 Ff : Fi ey :\nees hs 5 ot\nZ a), = rane “> [Mey OE .\na #6} Bk\ngeeg ie Be\n. A aa te y , —<—< i\na2 << 4 ~ Tor: z\nS77 a s -& x y 4 f\nrei 7 SEE - jeg —\nEee ie, \"4 =a\noe | 2 ~ | wl\nos. a 2 P Zz al ¥ 3 adi\nae” <r\nope. ¥ 1. - ae a: \\% “NS a aut\ne mI \\ : , ee 3\n: ie e we ote Ps ; ee ._ i\n|\nSkee\nHOUSE_OVERSIGHT_000092\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A yellow background page with the title text 'A FEW FRIENDS AND FAMILY' at the top and bottom. The page contains 10 photographs arranged loosely in an oval shape with decorated corners on some. Two cut-out images of dogs are placed at the top left and right corners of the page. Most photographs depict people in various settings including dining, outdoors, and social gatherings. Several faces and parts of the images are blacked out for privacy. The photographs vary between color and black and white.",
+    "Layout: title top",
+    "Layout: dog cutout top left",
+    "Layout: dog cutout top right",
+    "Layout: photo cluster center",
+    "Layout: title bottom",
+    "Drawing candidate at top left: Black and white image cutout of a sitting dog facing right.",
+    "Drawing candidate at top right: Black and white image cutout of a sitting dog facing left.",
+    "Photo/image candidate at center, top left: Color photo, people dining at a restaurant or home indoor setting, partially obscured faces.",
+    "Photo/image candidate at center, top middle: Color photo of a label or package, unclear detail but rectangular shape with text and emblem.",
+    "Photo/image candidate at center, top right: Color photo of people dining in eating setting with partially obscured faces.",
+    "Photo/image candidate at center, middle left: Color photo of two women standing outdoors, wearing dresses.",
+    "Photo/image candidate at center, middle: Color photo of an indoor social gathering showing several people, faces blacked out.",
+    "Photo/image candidate at center, middle right: Color photo of people in a poolside or outdoor seating area with yellow umbrellas, faces obscured.",
+    "Photo/image candidate at center, bottom left: Black and white photo of three people sitting indoors, faces obscured.",
+    "Photo/image candidate at center, bottom middle: Black and white photo of a person standing near a rearing horse, face obscured.",
+    "Photo/image candidate at center, bottom right: Black and white photo of two men standing outdoors near a building, one holding a stick or cane, faces obscured.",
+    "Photo/image candidate at center, bottom middle-left: Black and white photo of a single person in outdoor setting, standing shirtless, holding an object."
+  ],
+  "observations": [
+    "A yellow background page with the title text 'A FEW FRIENDS AND FAMILY' at the top and bottom. The page contains 10 photographs arranged loosely in an oval shape with decorated corners on some. Two cut-out images of dogs are placed at the top left and right corners of the page. Most photographs depict people in various settings including dining, outdoors, and social gatherings. Several faces and parts of the images are blacked out for privacy. The photographs vary between color and black and white.",
+    "Layout: title top",
+    "Layout: dog cutout top left",
+    "Layout: dog cutout top right",
+    "Layout: photo cluster center",
+    "Layout: title bottom",
+    "Drawing candidate at top left: Black and white image cutout of a sitting dog facing right.",
+    "Drawing candidate at top right: Black and white image cutout of a sitting dog facing left.",
+    "Photo/image candidate at center, top left: Color photo, people dining at a restaurant or home indoor setting, partially obscured faces.",
+    "Photo/image candidate at center, top middle: Color photo of a label or package, unclear detail but rectangular shape with text and emblem.",
+    "Photo/image candidate at center, top right: Color photo of people dining in eating setting with partially obscured faces.",
+    "Photo/image candidate at center, middle left: Color photo of two women standing outdoors, wearing dresses.",
+    "Photo/image candidate at center, middle: Color photo of an indoor social gathering showing several people, faces blacked out.",
+    "Photo/image candidate at center, middle right: Color photo of people in a poolside or outdoor seating area with yellow umbrellas, faces obscured.",
+    "Photo/image candidate at center, bottom left: Black and white photo of three people sitting indoors, faces obscured.",
+    "Photo/image candidate at center, bottom middle: Black and white photo of a person standing near a rearing horse, face obscured.",
+    "Photo/image candidate at center, bottom right: Black and white photo of two men standing outdoors near a building, one holding a stick or cane, faces obscured.",
+    "Photo/image candidate at center, bottom middle-left: Black and white photo of a single person in outdoor setting, standing shirtless, holding an object."
+  ],
+  "dates": [],
+  "document_strings": [
+    "A FEW FRIENDS AND FAMILY",
+    "HOUSE_OVERSIGHT_000092"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "photos",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes applied to obscure faces and figure details in multiple photographs."
+    }
+  ],
+  "flags": [
+    "drawing",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [
+    "Exact text on the label/package in photograph is unclear due to image angle and resolution."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:17:41.003Z",
+    "response_id": "resp_0c0efd5c5baf2e04006a502c0919608193b2a0f9ab05b114d5",
+    "raw_output_sha256": "993f53591995254919b994887e2106eb36eb1245df929f288ab20c2437f3c1fe"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c0efd5c5baf2e04006a502c0919608193b2a0f9ab05b114d5",
+    "enriched_at": "2026-07-09T23:17:41.003Z"
+  },
+  "visual_summary": "A yellow background page with the title text 'A FEW FRIENDS AND FAMILY' at the top and bottom. The page contains 10 photographs arranged loosely in an oval shape with decorated corners on some. Two cut-out images of dogs are placed at the top left and right corners of the page. Most photographs depict people in various settings including dining, outdoors, and social gatherings. Several faces and parts of the images are blacked out for privacy. The photographs vary between color and black and white.",
+  "layout": [
+    "title top",
+    "dog cutout top left",
+    "dog cutout top right",
+    "photo cluster center",
+    "title bottom"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "photos",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black boxes applied to obscure faces and figure details in multiple photographs."
+    }
+  ],
+  "drawings": [
+    {
+      "location": "top left",
+      "description": "Black and white image cutout of a sitting dog facing right.",
+      "confidence": "high"
+    },
+    {
+      "location": "top right",
+      "description": "Black and white image cutout of a sitting dog facing left.",
+      "confidence": "high"
+    }
+  ],
+  "photos": [
+    {
+      "location": "center, top left",
+      "description": "Color photo, people dining at a restaurant or home indoor setting, partially obscured faces.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, top middle",
+      "description": "Color photo of a label or package, unclear detail but rectangular shape with text and emblem.",
+      "confidence": "medium"
+    },
+    {
+      "location": "center, top right",
+      "description": "Color photo of people dining in eating setting with partially obscured faces.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, middle left",
+      "description": "Color photo of two women standing outdoors, wearing dresses.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, middle",
+      "description": "Color photo of an indoor social gathering showing several people, faces blacked out.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, middle right",
+      "description": "Color photo of people in a poolside or outdoor seating area with yellow umbrellas, faces obscured.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, bottom left",
+      "description": "Black and white photo of three people sitting indoors, faces obscured.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, bottom middle",
+      "description": "Black and white photo of a person standing near a rearing horse, face obscured.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, bottom right",
+      "description": "Black and white photo of two men standing outdoors near a building, one holding a stick or cane, faces obscured.",
+      "confidence": "high"
+    },
+    {
+      "location": "center, bottom middle-left",
+      "description": "Black and white photo of a single person in outdoor setting, standing shirtless, holding an object.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

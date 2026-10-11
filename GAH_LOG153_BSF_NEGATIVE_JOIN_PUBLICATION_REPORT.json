@@ -1,0 +1,35 @@
+{
+  "schema": "gah.publication-report.v1",
+  "publication": "log153-bsf-negative-join-update",
+  "date": "2026-10-06",
+  "route": "/investigations/giuffre-maxwell-docket-1320-privilege-gap",
+  "finding": "The 2019 BSF subpoena expressly excluded validly privileged documents. Released March/April BSF production indexes map a large civil-discovery production but do not identify a separate approximately 57-document law-enforcement tranche matching Log 153.",
+  "boundary": "This is a negative join and does not prove DOJ never obtained the Log 153 materials through another route, later waiver, or separate law-enforcement channel.",
+  "sources_added": [
+    "EFTA00080976",
+    "EFTA00090979",
+    "EFTA00090983",
+    "EFTA00090986",
+    "EFTA00030122",
+    "EFTA00010245",
+    "EFTA00010252",
+    "EFTA00088205"
+  ],
+  "local_hash_status": "No local hashes asserted for added DOJ EFTA PDFs; automated direct fetch encountered DOJ age-verification HTML.",
+  "preview": "https://oct6-log153-bsf-negative-joi.grokfiles-landing.pages.dev",
+  "preview_checks": [
+    "article clean route 200 + marker",
+    "latest 200 + update marker",
+    "investigations 200 + updated card marker",
+    "sitemap 200 + slug",
+    "source manifest valid JSON",
+    "claims valid JSON",
+    "POST /api/search query Boies Schiller 57 returns article"
+  ],
+  "counts_unchanged": {
+    "stories": 56,
+    "investigations": 30,
+    "evidence_briefs": 17,
+    "dispatches": 7
+  }
+}

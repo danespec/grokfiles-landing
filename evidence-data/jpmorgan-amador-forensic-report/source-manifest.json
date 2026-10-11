@@ -1,0 +1,39 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "jpmorgan-amador-forensic-report",
+  "title": "EFTA02810827: What Jorge Amador\u2019s Forensic Report Actually Found",
+  "published": "2026-10-07",
+  "primary_document": {
+    "id": "EFTA02810827",
+    "type": "expert_report",
+    "author": "Jorge Amador",
+    "organization": "Asia Advisors, LLC",
+    "date": "2023-06-16",
+    "pages": 161,
+    "case": "Government of the United States Virgin Islands v. JPMorgan Chase Bank, N.A., No. 1:22-cv-10904-JSR",
+    "url": "https://www.justice.gov/epstein/files/Court%20Records/Government%20of%20the%20United%20States%20Virgin%20Islands%20v.%20JPMorgan%20Chase%20Bank%2C%20N.A.%2C%20No.%20122-cv-10904%20(S.D.N.Y.%202022)/EFTA02810827.pdf"
+  },
+  "supporting_sources": [
+    {
+      "title": "Senate Finance staff memorandum on JPMorgan and Epstein",
+      "date": "2025-11-19",
+      "url": "https://www.finance.senate.gov/imo/media/doc/memorandum_to_senator_wyden_on_jpmc-epstein_redactedpdf.pdf"
+    },
+    {
+      "title": "Senate Finance: Looking the Other Way",
+      "date": "2026-08-04",
+      "url": "https://www.finance.senate.gov/ranking-members-news/wyden-releases-new-report-on-failure-of-wall-street-banks-to-blow-the-whistle-on-jeffrey-epsteins-sex-trafficking-and-money-laundering-schemes"
+    },
+    {
+      "title": "GAH nine-SAR reconstruction",
+      "date": "2026-10-07",
+      "url": "https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein"
+    }
+  ],
+  "evidence_boundaries": [
+    "The Amador report is an expert report prepared for contested civil litigation.",
+    "Expert characterizations of suspiciousness or legitimate business purpose are not judicial findings.",
+    "Transaction existence, amount, date, sender, and recipient should be validated against underlying bank records where available.",
+    "GAH does not infer redacted report content."
+  ]
+}

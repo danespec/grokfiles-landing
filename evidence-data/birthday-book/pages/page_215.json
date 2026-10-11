@@ -1,0 +1,161 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 215,
+  "page_id": "page_215",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_215.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_215.ocr.txt",
+  "image_metadata": {
+    "bytes": 3630414,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "c226e8ded1d1a66fb0cec80e8b9e1a965c972bac85d8615fe9421300660a9b66"
+  },
+  "ocr_text": "SS ————:_——_-=- ~~\n$e A ner er oar Comes!\nF 7 i iy f (} POLE Z sf! if LP CL J ;\nj \\ } )\n| 2\nof,\nof (¢) » if att »\nP pris ff U/ yr\n‘ ‘ .\ni) Kunin ona tor!\nHOUSE_OVERSIGHT_000215\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A white page with handwritten text in yellow and black ink. There are five printed star symbols vertically aligned on the left side. The handwriting is cursive and varies in size and color, mostly in yellow with one section in black ink. The text is in multiple lines, some underlined and some with parentheses and quotation marks. The bottom portion contains repeated cursive writing in yellow ink.",
+    "Layout: Five vertically aligned black star symbols on the left margin",
+    "Layout: Handwritten text in yellow ink beside each star, except one with black ink text",
+    "Layout: Repeated cursive yellow handwriting at the bottom of the page"
+  ],
+  "observations": [
+    "A white page with handwritten text in yellow and black ink. There are five printed star symbols vertically aligned on the left side. The handwriting is cursive and varies in size and color, mostly in yellow with one section in black ink. The text is in multiple lines, some underlined and some with parentheses and quotation marks. The bottom portion contains repeated cursive writing in yellow ink.",
+    "Layout: Five vertically aligned black star symbols on the left margin",
+    "Layout: Handwritten text in yellow ink beside each star, except one with black ink text",
+    "Layout: Repeated cursive yellow handwriting at the bottom of the page"
+  ],
+  "dates": [],
+  "document_strings": [
+    "A \"concert\" on your \"concert\" grand!... how - time? Lindelania?",
+    "girl lessons... It's time now - and video-taped !?!",
+    "A \"mint julep\" at the \"Rebis Plaza\"?",
+    "A \"shopping trip with your \"old\"... (and I am!!!) friend ???",
+    "A \"COLONOSCOPY\" once a year!",
+    "Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "Top section, next to first black star",
+      "text_as_seen": "A \"concert\" on your \"concert\" grand!... how - time? Lindelania?",
+      "confidence": "medium",
+      "note": "Yellow cursive handwriting, partially unclear due to color and faintness"
+    },
+    {
+      "location": "Below first star, next to second star",
+      "text_as_seen": "girl lessons... It's time now - and video-taped !?!",
+      "confidence": "medium",
+      "note": "Yellow cursive handwriting"
+    },
+    {
+      "location": "Below second star, next to third star",
+      "text_as_seen": "A \"mint julep\" at the \"Rebis Plaza\"?",
+      "confidence": "medium",
+      "note": "Yellow cursive handwriting"
+    },
+    {
+      "location": "Middle right section, next to third star",
+      "text_as_seen": "A \"shopping trip with your \"old\"... (and I am!!!) friend ???",
+      "confidence": "high",
+      "note": "Black ink cursive handwriting, clear text with quotation marks and parentheses"
+    },
+    {
+      "location": "Below third star, next to fourth star",
+      "text_as_seen": "A \"COLONOSCOPY\" once a year!",
+      "confidence": "high",
+      "note": "Yellow cursive handwriting, 'COLONOSCOPY' underlined"
+    },
+    {
+      "location": "Bottom section",
+      "text_as_seen": "Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love",
+      "confidence": "medium",
+      "note": "Repeated 'Love' in yellow cursive handwriting across the bottom of the page"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "Some yellow handwriting is faint and difficult to fully decipher"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:36:50.777Z",
+    "response_id": "resp_05b3807339411918006a503089065481948a6300090fdb0f67",
+    "raw_output_sha256": "add4a6eda5755d172ddcbc83cf5e8fda1a1dddbe8ba19adf4d3474b02c130872"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05b3807339411918006a503089065481948a6300090fdb0f67",
+    "enriched_at": "2026-07-09T23:36:50.777Z"
+  },
+  "visual_summary": "A white page with handwritten text in yellow and black ink. There are five printed star symbols vertically aligned on the left side. The handwriting is cursive and varies in size and color, mostly in yellow with one section in black ink. The text is in multiple lines, some underlined and some with parentheses and quotation marks. The bottom portion contains repeated cursive writing in yellow ink.",
+  "layout": [
+    "Five vertically aligned black star symbols on the left margin",
+    "Handwritten text in yellow ink beside each star, except one with black ink text",
+    "Repeated cursive yellow handwriting at the bottom of the page"
+  ],
+  "handwriting": [
+    {
+      "location": "Top section, next to first black star",
+      "text_as_seen": "A \"concert\" on your \"concert\" grand!... how - time? Lindelania?",
+      "confidence": "medium",
+      "note": "Yellow cursive handwriting, partially unclear due to color and faintness"
+    },
+    {
+      "location": "Below first star, next to second star",
+      "text_as_seen": "girl lessons... It's time now - and video-taped !?!",
+      "confidence": "medium",
+      "note": "Yellow cursive handwriting"
+    },
+    {
+      "location": "Below second star, next to third star",
+      "text_as_seen": "A \"mint julep\" at the \"Rebis Plaza\"?",
+      "confidence": "medium",
+      "note": "Yellow cursive handwriting"
+    },
+    {
+      "location": "Middle right section, next to third star",
+      "text_as_seen": "A \"shopping trip with your \"old\"... (and I am!!!) friend ???",
+      "confidence": "high",
+      "note": "Black ink cursive handwriting, clear text with quotation marks and parentheses"
+    },
+    {
+      "location": "Below third star, next to fourth star",
+      "text_as_seen": "A \"COLONOSCOPY\" once a year!",
+      "confidence": "high",
+      "note": "Yellow cursive handwriting, 'COLONOSCOPY' underlined"
+    },
+    {
+      "location": "Bottom section",
+      "text_as_seen": "Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love Love",
+      "confidence": "medium",
+      "note": "Repeated 'Love' in yellow cursive handwriting across the bottom of the page"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "medium"
+}

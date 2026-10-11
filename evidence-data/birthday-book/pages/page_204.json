@@ -1,0 +1,100 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 204,
+  "page_id": "page_204",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_204.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_204.ocr.txt",
+  "image_metadata": {
+    "bytes": 253703,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "e65fcb6d135ffd17175cff8d87670d5bfa9196634a340e6abba92af22f21d3a7"
+  },
+  "ocr_text": "Te fhrey we ef sr Pre Svmmer of I9E5,\n7 at “Dndo thine which pra 14€5 “us Lien If\na fOr / (OYE co ia byt fsOvE 17 ..\n— Dering Z/I CSE for Lee Dave fra of a lo of\n: fur We Aching 2a ch Ofer gee Mp - ie\n: There fre A few py Er7orres Aty a F Por tieelacly\nStand ovt wlth Spouvld papa ke Mee CDK le /\nFret the day Clk Schebach browht me\nber wo your ap 7 Quad Per Je XL Gt pm |\ntla ti) YOr- a brA VE Llur ted out yee\nare B V7F/ 0 Lg hh... bj f#r- LECOYEr | ry trot\nembarassment DL arswerey LES how dd\nJor SOO? gee you Sarl “hecacse you\nta [KO £0 asd || Hel Ha | Ter WrtreC tras\n| tbe day we eeare £9 GFE yew at\n7 Bloor 175 0a and Wee Plow’ co /o Pho\nype down en fhe” Soo. +7 ht §maele\n(yn Pie. peddle of Pre choe dypt and\nSfarKed HEAT: ry Geol Al 60g me aif\nover /! [Vert PAI CrE the #ime LX | |\n| ayed at your /jovse CHSC ny apt: leas\n579 ver fea dy A rypove jri7e Ld one |\nQO) ZL wore Up are PPICre were white |\n~ HOUSE_OVERSIGHT_000204\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten letter titled 'Happy Birthday to \"My Favorite\"!' recounting memories between the writer and Jeffrey, including meeting in summer 1985 at Indochine, various anecdotes, and time spent together. The text is written in black ink on white paper, filling most of the page except for margins. The handwriting is relatively clear and consistent.",
+    "Layout: Handwritten text covering most of the page"
+  ],
+  "observations": [
+    "A handwritten letter titled 'Happy Birthday to \"My Favorite\"!' recounting memories between the writer and Jeffrey, including meeting in summer 1985 at Indochine, various anecdotes, and time spent together. The text is written in black ink on white paper, filling most of the page except for margins. The handwriting is relatively clear and consistent.",
+    "Layout: Handwritten text covering most of the page"
+  ],
+  "dates": [
+    "1985"
+  ],
+  "document_strings": [
+    "Happy Birthday to \"My Favorite\"!",
+    "Jeffrey, we met in the summer of 1985 at \"Indochine\" which makes up friends for 17 yrs... can you believe it!!",
+    "During these years we have had a lot of fun watching each other grow up. But there are a few memories that particularly stand out which should make you chuckle!",
+    "First, the day Clark Schubach brought me over to your apt. and then left! After chatting for a bit you blurted out \"you are a virgin right\"... After recovering from embarassment I answered yes, how did you know and you said \"because you talk so fast\" Ha! Ha!",
+    "Then there was the day we went shopping together at Bloomingdales and you proceeded to throw me down on the floor... right smack in the middle of the shoe dept. and started tickling and kissing me all over!!",
+    "Next, there was the time I stayed at your house because my apt. was not yet ready to move into and one morning I woke up and there were white"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "full page",
+      "text_as_seen": "Happy Birthday to \"My Favorite\"! Jeffrey, we met in the summer of 1985 at \"Indochine\" which makes up friends for 17 yrs... can you believe it!! During these years we have had a lot of fun watching each other grow up. But there are a few memories that particularly stand out which should make you chuckle! First, the day Clark Schubach brought me over to your apt. and then left! After chatting for a bit you blurted out \"you are a virgin right\"... After recovering from embarassment I answered yes, how did you know and you said \"because you talk so fast\" Ha! Ha! Then there was the day we went shopping together at Bloomingdales and you proceeded to throw me down on the floor... right smack in the middle of the shoe dept. and started tickling and kissing me all over!! Next, there was the time I stayed at your house because my apt. was not yet ready to move into and one morning I woke up and there were white",
+      "confidence": "high",
+      "note": "Handwriting is mostly clear and legible."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [
+    "The letter cuts off abruptly at the bottom of the page, incomplete sentence ending with 'and there were white'."
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:35:08.149Z",
+    "response_id": "resp_0bf19f3bbbc600cf006a503022c89c819393ae6b0d4f6e4c4b",
+    "raw_output_sha256": "47ce32653727f2e71ac2f87ec9a126c8d39fa6e69b30b2c49aeeb14af6e5fac9"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0bf19f3bbbc600cf006a503022c89c819393ae6b0d4f6e4c4b",
+    "enriched_at": "2026-07-09T23:35:08.149Z"
+  },
+  "visual_summary": "A handwritten letter titled 'Happy Birthday to \"My Favorite\"!' recounting memories between the writer and Jeffrey, including meeting in summer 1985 at Indochine, various anecdotes, and time spent together. The text is written in black ink on white paper, filling most of the page except for margins. The handwriting is relatively clear and consistent.",
+  "layout": [
+    "Handwritten text covering most of the page"
+  ],
+  "handwriting": [
+    {
+      "location": "full page",
+      "text_as_seen": "Happy Birthday to \"My Favorite\"! Jeffrey, we met in the summer of 1985 at \"Indochine\" which makes up friends for 17 yrs... can you believe it!! During these years we have had a lot of fun watching each other grow up. But there are a few memories that particularly stand out which should make you chuckle! First, the day Clark Schubach brought me over to your apt. and then left! After chatting for a bit you blurted out \"you are a virgin right\"... After recovering from embarassment I answered yes, how did you know and you said \"because you talk so fast\" Ha! Ha! Then there was the day we went shopping together at Bloomingdales and you proceeded to throw me down on the floor... right smack in the middle of the shoe dept. and started tickling and kissing me all over!! Next, there was the time I stayed at your house because my apt. was not yet ready to move into and one morning I woke up and there were white",
+      "confidence": "high",
+      "note": "Handwriting is mostly clear and legible."
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "1985"
+  ],
+  "confidence": "high"
+}

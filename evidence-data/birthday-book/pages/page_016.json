@@ -1,0 +1,145 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 16,
+  "page_id": "page_016",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_016.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_016.ocr.txt",
+  "image_metadata": {
+    "bytes": 9430918,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "afaa647d3c82a139995fe379438bc0d5635dac69bca575ac6fabee4ab5f3aea8"
+  },
+  "ocr_text": "i... tes\nGit tee .\n4 ™, . tad |\n— |\n—=@ ||\na\nHOUSE_OVERSIGHT_000016\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographs: top right image showing two people in swimwear on a boat with one person's face blacked out; bottom left image of two people standing outdoors on a wooden bridge with snowy background. Handwritten texts are present around the photos.",
+    "Layout: handwritten text top left",
+    "Layout: photograph top right",
+    "Layout: photograph bottom left",
+    "Layout: handwritten text bottom right",
+    "Photo/image candidate at top right: Color photo of two people on a boat, one person hugging another from behind; one face is blacked out",
+    "Photo/image candidate at bottom left: Color photo of two people standing on a wooden bridge outdoors with snowy background"
+  ],
+  "observations": [
+    "Page contains two photographs: top right image showing two people in swimwear on a boat with one person's face blacked out; bottom left image of two people standing outdoors on a wooden bridge with snowy background. Handwritten texts are present around the photos.",
+    "Layout: handwritten text top left",
+    "Layout: photograph top right",
+    "Layout: photograph bottom left",
+    "Layout: handwritten text bottom right",
+    "Photo/image candidate at top right: Color photo of two people on a boat, one person hugging another from behind; one face is blacked out",
+    "Photo/image candidate at bottom left: Color photo of two people standing on a wooden bridge outdoors with snowy background"
+  ],
+  "dates": [
+    "1991"
+  ],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000016"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top left adjacent to bottom left photo",
+      "text_as_seen": "look closely and you can see me like you have been looking for",
+      "confidence": "high",
+      "note": "handwritten text in cursive style"
+    },
+    {
+      "location": "right side center, next to top right photo and above bottom left photo",
+      "text_as_seen": "to the first date Christmas 1991.",
+      "confidence": "high",
+      "note": "handwritten text, likely a note or dedication"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "top right photograph center over face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscuring face of one person"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:04:37.429Z",
+    "response_id": "resp_05af0c4de358bf37006a5028fe2224819386fefaafc8d1603b",
+    "raw_output_sha256": "e80be994125c193f5104d48080bba90ce4211627ee79e3f87127ed74e9c97770"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_05af0c4de358bf37006a5028fe2224819386fefaafc8d1603b",
+    "enriched_at": "2026-07-09T23:04:37.429Z"
+  },
+  "visual_summary": "Page contains two photographs: top right image showing two people in swimwear on a boat with one person's face blacked out; bottom left image of two people standing outdoors on a wooden bridge with snowy background. Handwritten texts are present around the photos.",
+  "layout": [
+    "handwritten text top left",
+    "photograph top right",
+    "photograph bottom left",
+    "handwritten text bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top left adjacent to bottom left photo",
+      "text_as_seen": "look closely and you can see me like you have been looking for",
+      "confidence": "high",
+      "note": "handwritten text in cursive style"
+    },
+    {
+      "location": "right side center, next to top right photo and above bottom left photo",
+      "text_as_seen": "to the first date Christmas 1991.",
+      "confidence": "high",
+      "note": "handwritten text, likely a note or dedication"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "top right photograph center over face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black rectangular redaction obscuring face of one person"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top right",
+      "description": "Color photo of two people on a boat, one person hugging another from behind; one face is blacked out",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom left",
+      "description": "Color photo of two people standing on a wooden bridge outdoors with snowy background",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "1991"
+  ],
+  "confidence": "high"
+}

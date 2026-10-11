@@ -1,0 +1,384 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "orphan_claims": 0,
+  "primary_sourced_claims": 36,
+  "data": [
+    {
+      "claim_id": "NMDOJ-CLAIM-001",
+      "claim_summary": "NMDOJ published a June 30, 2026 letter to Acting U.S. Attorney General Todd Blanche and Associate Deputy Attorney General Diego Pestana about access to unredacted Epstein/Zorro Ranch records.",
+      "claim_type": "DOCUMENTARY_FACT",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Document existence and text only.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-002",
+      "claim_summary": "NMDOJ says its initial written request was sent on February 13, 2026.",
+      "claim_type": "PARTY_POSITION",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Underlying February 13 letter not acquired.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-003",
+      "claim_summary": "NMDOJ says it sent a March 13, 2026 formal letter identifying five illustrative redacted EFTA documents.",
+      "claim_type": "PARTY_POSITION",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "The March 13 letter and five EFTA IDs were not acquired.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-004",
+      "claim_summary": "NMDOJ says DOJ directed it during an April 1, 2026 telephone conference to submit a Touhy letter.",
+      "claim_type": "PARTY_POSITION",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Underlying call record not acquired.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-005",
+      "claim_summary": "NMDOJ says it sent a comprehensive Touhy request on May 3, 2026 and requested a response by May 11, 2026.",
+      "claim_type": "PARTY_POSITION",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Touhy letter not acquired.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-006",
+      "claim_summary": "NMDOJ says it sent a May 29 follow-up and June 4-5 meeting requests, and that it had received no substantive response by June 30.",
+      "claim_type": "PARTY_POSITION",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Follow-up letters and meeting requests not acquired; no DOJ written response located.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-007",
+      "claim_summary": "NMDOJ requested access or production by July 31, 2026 and said it would treat non-receipt by then as a denial.",
+      "claim_type": "DOCUMENTARY_FACT",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Party demand date; not a federal court production deadline in acquired sources.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-008",
+      "claim_summary": "The July 31, 2026 date is not classified as a court deadline in the acquired records.",
+      "claim_type": "LEGAL_CLASSIFICATION",
+      "speaker_or_actor": "Grok Archive Hub",
+      "source_id": "nmd-2026-06-30-letter",
+      "secondary_source_id": "nmlegis-hr1-final",
+      "limitation": "Based on acquired record set; a non-public court order could change this classification.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-009",
+      "claim_summary": "NMDOJ offered to abide by security, confidentiality, protective agreements, and to secure a state-court subpoena if DOJ wanted that process.",
+      "claim_type": "DOCUMENTARY_FACT",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "Offer documented; DOJ acceptance not located.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-010",
+      "claim_summary": "NMDOJ says the earlier state investigation closed in 2019 at SDNY's request.",
+      "claim_type": "PARTY_POSITION",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-02-19-zorro-reopen",
+      "secondary_source_id": "nmd-2026-06-30-letter",
+      "limitation": "Underlying 2019 SDNY request not acquired.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-011",
+      "claim_summary": "NMDOJ announced a March 9, 2026 search of the former Zorro Ranch property as part of the reopened criminal investigation.",
+      "claim_type": "DOCUMENTARY_FACT",
+      "speaker_or_actor": "NMDOJ",
+      "source_id": "nmd-2026-03-09-zorro-search",
+      "limitation": "Search warrant and return not acquired.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-012",
+      "claim_summary": "New Mexico HR 1 created or empowered the House Special Investigatory Committee with subpoena and hearing authority.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "New Mexico Legislature",
+      "source_id": "nmlegis-hr1-final",
+      "limitation": "Authority only; does not prove any particular subpoena was served.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-013",
+      "claim_summary": "HR 1 set an interim-report deadline of July 31, 2026 and a final-report deadline of December 31, 2026 for the committee.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "New Mexico Legislature",
+      "source_id": "nmlegis-hr1-final",
+      "limitation": "Legislative reporting deadline, separate from NMDOJ's DOJ-records demand date.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-014",
+      "claim_summary": "The June 18 committee agenda included updates on subpoenas, correspondence, and survivor testimony.",
+      "claim_type": "DOCUMENTARY_FACT",
+      "speaker_or_actor": "New Mexico Legislature",
+      "source_id": "nmlegis-hisc-jun18-agenda",
+      "limitation": "Agenda item only; does not include underlying subpoena PDFs.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-015",
+      "claim_summary": "The June 1 committee handout lists DOJ, FBI, USAO-DNM, USAO-SDNY, the FAA, Deutsche Bank, JPMorgan, and state agencies as subpoena targets, and the public Truth Commission folder contains 20 June 2026 HR 1 subpoena PDFs.",
+      "claim_type": "COMMITTEE_POSITION",
+      "speaker_or_actor": "House Special Investigatory Committee staff/material",
+      "source_id": "nmlegis-hisc-jun01-handout",
+      "secondary_source_id": "truth-subpoena-usao-sdny",
+      "limitation": "Public subpoena PDFs are acquired; acquisition does not prove service, return, response, enforcement, or compliance.",
+      "confidence": "High for public files; medium for service/compliance status.",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-016",
+      "claim_summary": "DOJ maintains a public EFTA library and public disclosure pages with privacy notices and redacted releases.",
+      "claim_type": "DOCUMENTARY_FACT",
+      "speaker_or_actor": "DOJ",
+      "source_id": "doj-epstein-library",
+      "secondary_source_id": "doj-epstein-disclosures",
+      "limitation": "Public-release record; does not establish confidential production to NMDOJ.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-017",
+      "claim_summary": "DOJ's public EFTA materials cite redactions or restrictions including victim privacy, Rule 6(e), CVRA, 18 U.S.C. 3509, and protective orders.",
+      "claim_type": "DOJ_POSITION",
+      "speaker_or_actor": "DOJ",
+      "source_id": "doj-epstein-disclosures",
+      "secondary_source_id": "doj-efta-review-protocol",
+      "limitation": "Public-release rationale; record-specific application to NMDOJ access unresolved.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-018",
+      "claim_summary": "EFTA permits specified public redactions and requires written explanations for withheld or redacted material.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "Congress",
+      "source_id": "govinfo-plaw-119-38-efta",
+      "limitation": "Public EFTA framework, not a complete state-law-enforcement access answer.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-019",
+      "claim_summary": "DOJ's January 30 public statement says it published more than three million responsive pages under EFTA and identified categories not produced publicly.",
+      "claim_type": "DOJ_POSITION",
+      "speaker_or_actor": "DOJ",
+      "source_id": "doj-2026-01-30-release",
+      "limitation": "Public release; not proof of NMDOJ confidential access.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-020",
+      "claim_summary": "DOJ's January 30 letter describes additional SDNY review and certification obligations before certain court-record release.",
+      "claim_type": "DOJ_POSITION",
+      "speaker_or_actor": "DOJ",
+      "source_id": "doj-2026-01-30-congress-letter",
+      "limitation": "Court-record/public-release context; not a NM-specific decision.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-021",
+      "claim_summary": "Jay Clayton publicly said the New Mexico request involves unredacted documents subject to protections including court protective orders, and that DOJ personnel were seeking an accommodation consistent with those orders.",
+      "claim_type": "DOJ_POSITION",
+      "speaker_or_actor": "Jay Clayton / DOJ",
+      "source_id": "sen-heinrich-2026-07-15-clayton",
+      "limitation": "Public hearing excerpt; not a complete written response.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-022",
+      "claim_summary": "An official Senate page says Todd Blanche committed on record to cooperating with New Mexico's investigation.",
+      "claim_type": "DOJ_POSITION",
+      "speaker_or_actor": "Todd Blanche / Senate summary",
+      "source_id": "sen-hirono-2026-07-15-blanche",
+      "limitation": "Official Senate summary, not underlying full transcript archived in this run.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-023",
+      "claim_summary": "DOJ Touhy regulations govern production or disclosure in proceedings where the United States is not a party, and include criteria for authorization.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "DOJ regulation",
+      "source_id": "ecfr-touhy-subpart-b",
+      "secondary_source_id": "govinfo-cfr-28-part16-pdf",
+      "limitation": "Legal procedure; actual NMDOJ request/decision not public.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-024",
+      "claim_summary": "Rule 6(e) can restrict disclosure of matters occurring before a grand jury, but the acquired record does not establish that all NMDOJ-requested records fall under Rule 6(e).",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "Federal rule / GAH classification",
+      "source_id": "uscode-rule-6",
+      "secondary_source_id": "doj-2025-12-19-congress-letter",
+      "limitation": "Record-by-record application unresolved.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-025",
+      "claim_summary": "The Crime Victims' Rights Act protects victim dignity and privacy interests relevant to public disclosure and controlled access decisions.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "Congress",
+      "source_id": "uscode-cvra-3771",
+      "limitation": "Does not alone resolve whether confidential production to a state prosecutor is permitted.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-026",
+      "claim_summary": "The Privacy Act may restrict federal records maintained on individuals but includes exceptions and does not become a record-specific bar unless DOJ invokes and applies it.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "Congress / GAH classification",
+      "source_id": "uscode-privacy-act-552a",
+      "limitation": "No NM-specific Privacy Act analysis located.",
+      "confidence": "Medium",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-027",
+      "claim_summary": "Child-victim and CSAM authorities support strong public-release restrictions for protected material.",
+      "claim_type": "LEGAL_AUTHORITY",
+      "speaker_or_actor": "Congress / DOJ protocol",
+      "source_id": "uscode-child-victim-3509",
+      "secondary_source_id": "doj-efta-review-protocol",
+      "limitation": "Controlled law-enforcement access remains a separate handling question.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-028",
+      "claim_summary": "EFTA II is proposed legislation and is not treated as governing law in this tracker.",
+      "claim_type": "LEGAL_CLASSIFICATION",
+      "speaker_or_actor": "GAH / NMDOJ draft source",
+      "source_id": "nmd-efta-ii-draft",
+      "secondary_source_id": "nmd-2026-07-15-efta-ii-release",
+      "limitation": "Could change if enacted.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-029",
+      "claim_summary": "The acquired sources do not include a DOJ written response to NMDOJ's June 30 letter.",
+      "claim_type": "ACQUISITION_FINDING",
+      "speaker_or_actor": "GAH acquisition audit",
+      "source_id": "nmd-2026-06-30-letter",
+      "secondary_source_id": "sen-heinrich-2026-07-15-clayton",
+      "limitation": "Negative finding based on official-source searches and acquired source set as of retrieval.",
+      "confidence": "Medium",
+      "status": "UNRESOLVED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-030",
+      "claim_summary": "The acquired sources do not include a record-by-record DOJ production ledger for the NMDOJ request.",
+      "claim_type": "ACQUISITION_FINDING",
+      "speaker_or_actor": "GAH acquisition audit",
+      "source_id": "nmd-2026-06-30-letter",
+      "limitation": "A non-public ledger may exist.",
+      "confidence": "Medium",
+      "status": "UNRESOLVED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-031",
+      "claim_summary": "No court or official authority acquired in this run states that DOJ legally obstructed New Mexico's request.",
+      "claim_type": "LEGAL_CLASSIFICATION",
+      "speaker_or_actor": "GAH contradiction and legal-authority audit",
+      "source_id": "nmd-2026-07-09-press-release",
+      "secondary_source_id": "sen-heinrich-2026-07-15-clayton",
+      "limitation": "NMDOJ and Senator Heinrich use obstruction/hindering language as party or political framing; not adopted as an adjudicated finding.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-032",
+      "claim_summary": "The DOJ EFTA00009664 and EFTA00009654 records show actual Maxwell-case protective/confidentiality orders, but they do not prove all NM-requested records are covered.",
+      "claim_type": "COURT_ORDER_FINDING",
+      "speaker_or_actor": "GAH court-order audit",
+      "source_id": "doj-efta00009664-maxwell-protective-order",
+      "secondary_source_id": "doj-efta00009654-rule17-confidentiality-order",
+      "limitation": "Record-specific mapping not public.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-033",
+      "claim_summary": "The archive contains New Mexico/Zorro Ranch overlap records in EFTA and transcript datasets, but presence in those records is context only and does not imply wrongdoing by named people.",
+      "claim_type": "ARCHIVE_CONTEXT",
+      "speaker_or_actor": "GAH archive audit",
+      "source_id": "doj-epstein-disclosures",
+      "limitation": "Archive cross-matches require independent claim testing.",
+      "confidence": "High",
+      "status": "CONFIRMED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-034",
+      "claim_summary": "The House Special Investigatory Committee's public June 2026 subpoena PDFs were acquired, but service proofs, returns, responses, and compliance records were not acquired.",
+      "claim_type": "ACQUISITION_FINDING",
+      "speaker_or_actor": "GAH acquisition audit",
+      "source_id": "truth-commission-subpoenas",
+      "secondary_source_id": "truth-subpoena-usao-sdny",
+      "limitation": "The public folder establishes document availability, not service or compliance.",
+      "confidence": "Medium",
+      "status": "ACQUISITION_PENDING"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-035",
+      "claim_summary": "DOJ public release redaction standards cannot be silently imported as the full legal answer to NMDOJ's confidential law-enforcement access request.",
+      "claim_type": "LEGAL_CLASSIFICATION",
+      "speaker_or_actor": "GAH legal-authority audit",
+      "source_id": "govinfo-plaw-119-38-efta",
+      "secondary_source_id": "ecfr-touhy-subpart-b",
+      "limitation": "Requires record-by-record legal analysis and any DOJ written decision.",
+      "confidence": "High",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "NMDOJ-CLAIM-036",
+      "claim_summary": "As of the July 19, 2026 acquisition run, the current compliance posture is pending/source-gated, not resolved.",
+      "claim_type": "STATUS_FINDING",
+      "speaker_or_actor": "GAH claim-source audit",
+      "source_id": "nmd-2026-06-30-letter",
+      "secondary_source_id": "sen-heinrich-2026-07-15-clayton",
+      "limitation": "Status should be updated if DOJ publishes a response, a court rules, or NMDOJ reports receipt/non-receipt after July 31.",
+      "confidence": "High",
+      "status": "UNRESOLVED"
+    }
+  ]
+}

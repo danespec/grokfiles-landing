@@ -1,0 +1,23 @@
+{
+  "schema": "gah.claims.v1",
+  "claims": [
+    {
+      "id": "STG-01",
+      "claim": "House counsel read EFTA01111961 as referencing Bill Gates and affiliated entities inside a group defined collectively as clients.",
+      "source": "HOUSE-GATES-TRANSCRIPT-2026-06-10 pp.126-127",
+      "confidence": "P4 transcript"
+    },
+    {
+      "id": "STG-02",
+      "claim": "Gates testified that he made no financial payments or arrangements with Epstein and was never a Southern Trust client.",
+      "source": "HOUSE-GATES-TRANSCRIPT-2026-06-10 pp.126-127",
+      "confidence": "P4 testimony; self-interested source"
+    },
+    {
+      "id": "STG-03",
+      "claim": "EFTA01111961 alone does not prove Gates retained, paid or received services from Southern Trust.",
+      "source": "source-class analysis",
+      "confidence": "P3/P4 negative control"
+    }
+  ]
+}

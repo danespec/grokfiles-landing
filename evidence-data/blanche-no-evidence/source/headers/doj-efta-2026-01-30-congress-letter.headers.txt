@@ -1,0 +1,21 @@
+accept-ranges: bytes
+alt-svc: h3=":443"; ma=93600
+cache-control: public, max-age=180251
+connection: keep-alive
+content-disposition: inline; filename="Letter re Compliance with Act - Jan 26 - 508.pdf"
+content-language: en
+content-length: 272836
+content-type: application/pdf
+date: Mon, 20 Jul 2026 00:01:26 GMT
+last-modified: Fri, 30 Jan 2026 16:07:05 GMT
+server: nginx
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-age: 415
+x-ah-environment: prod
+x-cache-hits: 5
+x-content-type-options: nosniff
+x-drupal-dynamic-cache: UNCACHEABLE (poor cacheability)
+x-frame-options: ALLOW-FROM https://doj365.sharepoint.us/
+x-generator: Drupal 10 (https://www.drupal.org)
+x-request-id: v-503c91a0-fdf6-11f0-b298-3b992db4098e
+x-xss-protection: 1; mode=block

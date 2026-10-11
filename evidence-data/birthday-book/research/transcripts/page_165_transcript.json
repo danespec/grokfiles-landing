@@ -1,0 +1,211 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 165,
+  "bates": "HOUSE_OVERSIGHT_000165",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/165",
+  "related_people": [
+    "Donald Trump"
+  ],
+  "priority_rank": 4,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_090b2af7df7399de006a50eb01382c81979d2eaa88a9a80f94",
+  "transcript_status": "transcribed",
+  "overall_confidence": "high",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_public",
+  "public_safety_rule": "High-confidence text recovery; transcription alone does not establish authorship.",
+  "attribution_warning": "The recovered text is public page content. The Donald Trump attribution remains open/disputed unless independent documentary verification satisfies the identity rules.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "top center",
+      "text": "Voice Over:",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Voice Over:"
+    },
+    {
+      "line_number": 2,
+      "location": "top center",
+      "text": "There must be more to life than having everything.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "There must be more to life than having everything."
+    },
+    {
+      "line_number": 3,
+      "location": "center",
+      "text": "Donald",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Donald"
+    },
+    {
+      "line_number": 4,
+      "location": "center",
+      "text": "Yes, there is, but I won't tell you what it is.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Yes, there is, but I won't tell you what it is."
+    },
+    {
+      "line_number": 5,
+      "location": "center",
+      "text": "Jeffrey",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Jeffrey"
+    },
+    {
+      "line_number": 6,
+      "location": "center",
+      "text": "Nor will I, since I also know what it is.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Nor will I, since I also know what it is."
+    },
+    {
+      "line_number": 7,
+      "location": "center",
+      "text": "Donald",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Donald"
+    },
+    {
+      "line_number": 8,
+      "location": "center",
+      "text": "We have certain things in common, Jeffrey.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "We have certain things in common, Jeffrey."
+    },
+    {
+      "line_number": 9,
+      "location": "center",
+      "text": "Jeffrey",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Jeffrey"
+    },
+    {
+      "line_number": 10,
+      "location": "center",
+      "text": "Yes, we do, come to think of it.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Yes, we do, come to think of it."
+    },
+    {
+      "line_number": 11,
+      "location": "center",
+      "text": "Donald",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Donald"
+    },
+    {
+      "line_number": 12,
+      "location": "center",
+      "text": "Enigmas never age, have you noticed that?",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Enigmas never age, have you noticed that?"
+    },
+    {
+      "line_number": 13,
+      "location": "center",
+      "text": "Jeffrey",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Jeffrey"
+    },
+    {
+      "line_number": 14,
+      "location": "center",
+      "text": "As a matter of fact, it was clear to me the last time I saw you.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "As a matter of fact, it was clear to me the last time I saw you."
+    },
+    {
+      "line_number": 15,
+      "location": "center",
+      "text": "Donald",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Donald"
+    },
+    {
+      "line_number": 16,
+      "location": "center",
+      "text": "A pal is a wonderful thing. Happy Birthday—and may every day be another wonderful secret.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "A pal is a wonderful thing. Happy Birthday—and may every day be another wonderful secret."
+    }
+  ],
+  "document_strings": [
+    "Voice Over:",
+    "There must be more to life than having everything.",
+    "Donald",
+    "Yes, there is, but I won't tell you what it is.",
+    "Jeffrey",
+    "Nor will I, since I also know what it is.",
+    "Donald",
+    "We have certain things in common, Jeffrey.",
+    "Jeffrey",
+    "Yes, we do, come to think of it.",
+    "Donald",
+    "Enigmas never age, have you noticed that?",
+    "Jeffrey",
+    "As a matter of fact, it was clear to me the last time I saw you.",
+    "Donald",
+    "A pal is a wonderful thing. Happy Birthday—and may every day be another wonderful secret."
+  ],
+  "visible_non_transcript_notes": [
+    "Donald J. Trump (printed)",
+    "Handwritten signature below printed name",
+    "Thick black curved lines forming an outline around text"
+  ],
+  "gaps": [],
+  "raw_output_sha256": "dd694a374ed5920947b80e65c2ceb70dde3e3fe916ce377fc5d04bdad9d599da",
+  "transcribed_at": "2026-07-10T12:52:33.926Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}

@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-07-19T19:28:39.081Z",
+  "route": "/investigations/new-mexico-doj-epstein-records",
+  "noindex": true,
+  "data": [
+    {
+      "archive_id": "EFTA00208312",
+      "source_class": "EFTA location record / archive location context",
+      "date": "Unknown in local source map",
+      "named_entity_or_term": "Epstein New Mexico Ranch / Zorro Ranch",
+      "transcript_or_investigation_reference": "NMDOJ request seeks Zorro Ranch materials.",
+      "exact_relevance": "Existing GAH Trump/Epstein location evidence maps Zorro Ranch as an archive location reference.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "Medium",
+      "local_context": "/investigations/trump-in-the-epstein-files/locations"
+    },
+    {
+      "archive_id": "US-v-Maxwell-ECF-863",
+      "source_class": "court filing text archived under EFTA compliance release",
+      "date": "2026-06-24",
+      "named_entity_or_term": "New Mexico ranch",
+      "transcript_or_investigation_reference": "Records involving Epstein's New Mexico property.",
+      "exact_relevance": "DOJ Maxwell opposition contains New Mexico ranch references and related testimony context.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "High",
+      "local_context": "/evidence-data/efta-compliance/source/text/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.txt"
+    },
+    {
+      "archive_id": "Doug-Band-Transcript",
+      "source_class": "House Oversight transcript autopsy source",
+      "date": "2026-07-17 release",
+      "named_entity_or_term": "New Mexico ranch",
+      "transcript_or_investigation_reference": "Band was asked whether he visited the New Mexico ranch and denied visiting Epstein's ranch.",
+      "exact_relevance": "Context-only overlap with a witness transcript; not proof about NMDOJ's request.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "High",
+      "local_context": "/document-autopsies/doug-band-transcript"
+    },
+    {
+      "archive_id": "Leon-Black-Transcript",
+      "source_class": "House Oversight transcript autopsy source",
+      "date": "2026-07-17 release",
+      "named_entity_or_term": "Santa Fe / New Mexico",
+      "transcript_or_investigation_reference": "Black transcript contains Santa Fe references in questions and answers.",
+      "exact_relevance": "Context-only overlap; not proof about NMDOJ production status.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "High",
+      "local_context": "/document-autopsies/leon-black-transcript"
+    },
+    {
+      "archive_id": "Apollo-Dechert-Report",
+      "source_class": "public corporate disclosure archived for Leon Black autopsy",
+      "date": "2021-01-25",
+      "named_entity_or_term": "Santa Fe property",
+      "transcript_or_investigation_reference": "Existing archive source mentions a visit to Epstein's Santa Fe property.",
+      "exact_relevance": "Context-only network/archive overlap; does not imply wrongdoing or prove NM production.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "Medium",
+      "local_context": "/document-autopsies/leon-black-transcript"
+    },
+    {
+      "archive_id": "Phang-ECF-21",
+      "source_class": "non-party court filing archived under EFTA compliance release",
+      "date": "2026-07-15",
+      "named_entity_or_term": "Torrez / New Mexico",
+      "transcript_or_investigation_reference": "Non-party motion cites the NMDOJ dispute.",
+      "exact_relevance": "Docket-context crossmatch only; not used to characterize DOJ compliance.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "Medium",
+      "local_context": "/evidence-data/efta-compliance/source/text/phang-v-blanche-ecf-21-motion-to-intervene-2026-07-15.txt"
+    },
+    {
+      "archive_id": "trump-epstein-locations-json",
+      "source_class": "machine-readable GAH dataset",
+      "date": "2026-07-16",
+      "named_entity_or_term": "Zorro Ranch",
+      "transcript_or_investigation_reference": "Zorro Ranch location normalization.",
+      "exact_relevance": "Machine-readable location crossmatch; context only.",
+      "relationship_to_claim": "CONTEXT_ONLY",
+      "confidence": "Medium",
+      "local_context": "/evidence-data/trump-epstein/locations.json"
+    }
+  ]
+}

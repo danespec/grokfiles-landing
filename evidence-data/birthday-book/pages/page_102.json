@@ -1,0 +1,131 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 102,
+  "page_id": "page_102",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_102.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_102.ocr.txt",
+  "image_metadata": {
+    "bytes": 7497283,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "05d068f333558d39c77027502503b4c78d843df1754c8080af37e341cd9ca5ce"
+  },
+  "ocr_text": "|\n|\n— NSOBJE 2 -\nz ; Dips Cry ec Se ¥ C/O ty rs © “rz\n: Ait hO—- Co: the F2F¥,\nes), Ss bs i a te y ,\nfs y > 4 |\nhe r <i 4 + Be\nHOUSE_OVERSIGHT_000102\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains two photographs and handwritten text. The top photograph shows a small private jet on an airport tarmac with a person standing near the aircraft door. The jet tail number is visible as N908JE. The bottom photograph shows the interior of a private jet with two people seated; one person's face is visible while the other's face is blacked out. Handwritten text is located between the two photographs. There is a visible timestamp on the top photograph reading '9 1 8 29'.",
+    "Layout: handwritten text below top photo",
+    "Layout: top photo of private jet on tarmac with person standing by door",
+    "Layout: bottom photo of two people seated inside a private jet, one face blacked out",
+    "Photo/image candidate at top half of page: Private jet on airport tarmac with open door and person standing outside; tail number N908JE visible",
+    "Photo/image candidate at bottom half of page: Interior view of private jet with two people seated, one face visible, the other blacked out"
+  ],
+  "observations": [
+    "Page contains two photographs and handwritten text. The top photograph shows a small private jet on an airport tarmac with a person standing near the aircraft door. The jet tail number is visible as N908JE. The bottom photograph shows the interior of a private jet with two people seated; one person's face is visible while the other's face is blacked out. Handwritten text is located between the two photographs. There is a visible timestamp on the top photograph reading '9 1 8 29'.",
+    "Layout: handwritten text below top photo",
+    "Layout: top photo of private jet on tarmac with person standing by door",
+    "Layout: bottom photo of two people seated inside a private jet, one face blacked out",
+    "Photo/image candidate at top half of page: Private jet on airport tarmac with open door and person standing outside; tail number N908JE visible",
+    "Photo/image candidate at bottom half of page: Interior view of private jet with two people seated, one face visible, the other blacked out"
+  ],
+  "dates": [
+    "9 1 8 29"
+  ],
+  "document_strings": [
+    "N908JE",
+    "HOUSE_OVERSIGHT_000102"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "center of page between the two photos",
+      "text_as_seen": "It all happened so quickly. From the Hawker to the 727.",
+      "confidence": "high",
+      "note": "Clear cursive handwriting between two photos"
+    }
+  ],
+  "redactions": [
+    {
+      "location": "bottom photo over one person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covering a face"
+    }
+  ],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo",
+    "redaction"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:19:30.699Z",
+    "response_id": "resp_054926548acd1754006a502c7a1578819787230f721c7557db",
+    "raw_output_sha256": "f39aea6cdf7f88048fd9bab57341d3871cff6ced87530daa3c01386228119948"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_054926548acd1754006a502c7a1578819787230f721c7557db",
+    "enriched_at": "2026-07-09T23:19:30.699Z"
+  },
+  "visual_summary": "Page contains two photographs and handwritten text. The top photograph shows a small private jet on an airport tarmac with a person standing near the aircraft door. The jet tail number is visible as N908JE. The bottom photograph shows the interior of a private jet with two people seated; one person's face is visible while the other's face is blacked out. Handwritten text is located between the two photographs. There is a visible timestamp on the top photograph reading '9 1 8 29'.",
+  "layout": [
+    "handwritten text below top photo",
+    "top photo of private jet on tarmac with person standing by door",
+    "bottom photo of two people seated inside a private jet, one face blacked out"
+  ],
+  "handwriting": [
+    {
+      "location": "center of page between the two photos",
+      "text_as_seen": "It all happened so quickly. From the Hawker to the 727.",
+      "confidence": "high",
+      "note": "Clear cursive handwriting between two photos"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "bottom photo over one person's face",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Black box redaction covering a face"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "top half of page",
+      "description": "Private jet on airport tarmac with open door and person standing outside; tail number N908JE visible",
+      "confidence": "high"
+    },
+    {
+      "location": "bottom half of page",
+      "description": "Interior view of private jet with two people seated, one face visible, the other blacked out",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "9 1 8 29"
+  ],
+  "confidence": "high"
+}

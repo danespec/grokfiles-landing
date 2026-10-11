@@ -1,0 +1,38 @@
+{
+  "schema": "gah.publication-report.v1",
+  "date": "2026-10-06",
+  "batch": "oct6-unpublished-three",
+  "publications": [
+    {
+      "route": "/evidence-briefs/epstein-code-words-documentary-test",
+      "type": "evidence-brief",
+      "status": "preview-validated"
+    },
+    {
+      "route": "/investigations/epstein-npa-defense-access-victim-notification",
+      "type": "investigation",
+      "status": "preview-validated"
+    },
+    {
+      "route": "/evidence-briefs/fbi-epstein-not-evidentiary-scrub",
+      "type": "evidence-brief",
+      "status": "preview-validated"
+    }
+  ],
+  "primary_hashes": {
+    "EFTA02440165": "6321e9bd6f33716cc21a7933a20d6b6287361ac7f614c54ab270e4d921fc39a9",
+    "EFTA02309912": "01d17ecc19a3b5edf27bc4f9c5fc3393ef15e8bf732769a5aba57249b7eeb418",
+    "EFTA02162755": "6ee113e2baf9b023cc30c390dea2bb118729191fbb8491362b5270486dd14f69",
+    "EFTA01616214": "7b6293df8b2258ab84b623f6e6f98a73e3f995f720a7c9d994f5408891537f8f",
+    "EFTA00841659": "368f27a7618cc10efc4d0d6b99f69f83e9771e8013584ba683a96b1b3fa457c4",
+    "EFTA00013764": "5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117",
+    "EFTA02730468": "17f4a6cf417e41c68d14c464cffafb3a83939aa16324d0c5bcd4f258fbd333ce"
+  },
+  "expected_stats": {
+    "storiesPublished": 54,
+    "investigations": 29,
+    "evidenceBriefs": 16,
+    "dispatches": 7
+  },
+  "preview": "https://oct6-unpublished-three.grokfiles-landing.pages.dev"
+}

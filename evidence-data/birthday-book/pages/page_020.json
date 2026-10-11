@@ -1,0 +1,180 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 20,
+  "page_id": "page_020",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_020.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_020.ocr.txt",
+  "image_metadata": {
+    "bytes": 219132,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "2853e3826b8ba39ff008e7790ec27298d9d8b0a0cc16d4f80a20a72ce773c5d0"
+  },
+  "ocr_text": "Be 4A PY je oir Aa a\nOY ar QoHos P rover le We\nUe tho Year You are mes! HAP t\nvA eae Jor reer Very Verh\nac am ig CNA (Lad Or\nSR EMUN I “. te, QQoad =\n OAsgtack Me Xo vo ge RAs or\neure Weeat. . ;\non AG | hye \\vos eel ok. | A e\na YNNNE. UO = yee te CRESS OT.\nee , So Venger ©. VP ARES\na ‘ AWe wrateice ans ~ ao\nEge : ~ 7 {. ; ( 1 ; . ¢ on - fi ay) \\\na . , oon. fee\nRiou A Are leat ca res a\nay ere. AVA WE Hae BAN -\non Bou oir Batis\nHOUSE_OVERSIGHT_000020\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A handwritten letter on a white page, written in black ink. The handwriting is mostly cursive with some printed letters mixed in. The letter is addressed to 'Son JEFF' and mentions a 50th birthday in 2003. There are no images or drawings, only text.",
+    "Layout: title at top",
+    "Layout: body text below title, left aligned",
+    "Layout: page number at bottom right"
+  ],
+  "observations": [
+    "A handwritten letter on a white page, written in black ink. The handwriting is mostly cursive with some printed letters mixed in. The letter is addressed to 'Son JEFF' and mentions a 50th birthday in 2003. There are no images or drawings, only text.",
+    "Layout: title at top",
+    "Layout: body text below title, left aligned",
+    "Layout: page number at bottom right"
+  ],
+  "dates": [
+    "2003",
+    "January"
+  ],
+  "document_strings": [
+    "HAPPY 50th Birthday",
+    "may 2003 prove to be the year you are most HAPPY",
+    "Dear Son JEFF",
+    "I HAVE been very busy reminiscing since Ghislaine asked me to write about you for your book.",
+    "I keep thinking about then and now.",
+    "My father drove Seymour and me to the hospital that cold, snowy day in January to become parents of a beautiful, healthy son, Jeff.",
+    "You have been a good son from day one and we have been proud of you ever since.",
+    "HOUSE_OVERSIGHT_000020"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top center",
+      "text_as_seen": "HAPPY 50th Birthday",
+      "confidence": "high",
+      "note": "Title of the letter"
+    },
+    {
+      "location": "below title",
+      "text_as_seen": "may 2003 prove to be the year you are most HAPPY",
+      "confidence": "high",
+      "note": "First line of letter body"
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "Dear Son JEFF,",
+      "confidence": "high",
+      "note": "The greeting line"
+    },
+    {
+      "location": "below greeting",
+      "text_as_seen": "I HAVE been very busy reminiscing since Ghislaine asked me to write about you for your book.",
+      "confidence": "high",
+      "note": "First sentence of paragraph"
+    },
+    {
+      "location": "next line",
+      "text_as_seen": "I keep thinking about then and now.",
+      "confidence": "high",
+      "note": "Continued sentence"
+    },
+    {
+      "location": "following lines",
+      "text_as_seen": "My father drove Seymour and me to the hospital that cold, snowy day in January to become parents of a beautiful, healthy son, Jeff.",
+      "confidence": "high",
+      "note": "Narrative sentence"
+    },
+    {
+      "location": "next lines",
+      "text_as_seen": "You have been a good son from day one and we have been proud of you ever since.",
+      "confidence": "high",
+      "note": "Closing sentence of the letter body"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:05:14.403Z",
+    "response_id": "resp_0755dc1f6b39adcb006a5029225470819797839127a5cc54bc",
+    "raw_output_sha256": "3a2c0c8061691da1d704d3b87cd7ec6484d86c96749949b92a4ee0ba34b83ee8"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0755dc1f6b39adcb006a5029225470819797839127a5cc54bc",
+    "enriched_at": "2026-07-09T23:05:14.403Z"
+  },
+  "visual_summary": "A handwritten letter on a white page, written in black ink. The handwriting is mostly cursive with some printed letters mixed in. The letter is addressed to 'Son JEFF' and mentions a 50th birthday in 2003. There are no images or drawings, only text.",
+  "layout": [
+    "title at top",
+    "body text below title, left aligned",
+    "page number at bottom right"
+  ],
+  "handwriting": [
+    {
+      "location": "top center",
+      "text_as_seen": "HAPPY 50th Birthday",
+      "confidence": "high",
+      "note": "Title of the letter"
+    },
+    {
+      "location": "below title",
+      "text_as_seen": "may 2003 prove to be the year you are most HAPPY",
+      "confidence": "high",
+      "note": "First line of letter body"
+    },
+    {
+      "location": "below previous line",
+      "text_as_seen": "Dear Son JEFF,",
+      "confidence": "high",
+      "note": "The greeting line"
+    },
+    {
+      "location": "below greeting",
+      "text_as_seen": "I HAVE been very busy reminiscing since Ghislaine asked me to write about you for your book.",
+      "confidence": "high",
+      "note": "First sentence of paragraph"
+    },
+    {
+      "location": "next line",
+      "text_as_seen": "I keep thinking about then and now.",
+      "confidence": "high",
+      "note": "Continued sentence"
+    },
+    {
+      "location": "following lines",
+      "text_as_seen": "My father drove Seymour and me to the hospital that cold, snowy day in January to become parents of a beautiful, healthy son, Jeff.",
+      "confidence": "high",
+      "note": "Narrative sentence"
+    },
+    {
+      "location": "next lines",
+      "text_as_seen": "You have been a good son from day one and we have been proud of you ever since.",
+      "confidence": "high",
+      "note": "Closing sentence of the letter body"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "2003",
+    "January"
+  ],
+  "confidence": "high"
+}

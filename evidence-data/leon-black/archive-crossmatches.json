@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-07-19T14:49:43Z",
+  "matches": [
+    {
+      "match_id": "X001",
+      "archive_id": "BIRTHDAY-BOOK-PAGE-118",
+      "source_class": "Birthday Book source image",
+      "date": null,
+      "exact_relevance": "Birthday Book page containing the VFPC and birds/bucks contribution text discussed in the transcript.",
+      "classification": "corroborates visible exhibit text",
+      "confidence": "high"
+    },
+    {
+      "match_id": "X002",
+      "archive_id": "BIRTHDAY-BOOK-PAGE-119",
+      "source_class": "Birthday Book source image",
+      "date": null,
+      "exact_relevance": "Birthday Book continuation page containing the affectionate signoff discussed in the transcript.",
+      "classification": "corroborates visible exhibit text",
+      "confidence": "high"
+    },
+    {
+      "match_id": "X003",
+      "archive_id": "EFTA02412232 / TEP-EVT-0013",
+      "source_class": "EFTA-derived email/timeline record",
+      "date": null,
+      "exact_relevance": "2010 Trump Tower location-string context includes Leon Black with other names.",
+      "classification": "context only",
+      "confidence": "medium"
+    },
+    {
+      "match_id": "X004",
+      "archive_id": "TEP-PER-0028",
+      "source_class": "GAH people-and-roles dataset",
+      "date": null,
+      "exact_relevance": "Leon Black appears as a contextual witness/correspondence subject tied to EFTA02412232.",
+      "classification": "context only",
+      "confidence": "medium"
+    },
+    {
+      "match_id": "X005",
+      "archive_id": "Groff transcript p.29",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Groff says Epstein might instruct her to schedule meetings with Black and other named people.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X006",
+      "archive_id": "Groff transcript p.41",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Groff answers no when asked if she scheduled massages for Black while distinguishing meetings from massage appointments.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X007",
+      "archive_id": "Groff transcript p.160",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Groff understood Black as business/client, a frequent visitor, and said she did not know the purpose of meetings.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X008",
+      "archive_id": "Groff transcript p.193",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Groff says she was not aware of Epstein paying women in relationships with Black or being involved in Black NDA negotiations.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X009",
+      "archive_id": "Gates transcript pp.96-98",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Gates describes a meeting at Black's office and says he had no awareness of a Black sexual relationship with women or girls connected to Epstein.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X010",
+      "archive_id": "Band transcript p.41",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Band does not recall whether Black attended an Epstein-house dinner listed by staff.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X011",
+      "archive_id": "Band transcript pp.113-119",
+      "source_class": "House prior testimony",
+      "date": null,
+      "exact_relevance": "Band says no to communicating with Black regarding Epstein or Maxwell.",
+      "classification": "context only",
+      "confidence": "medium-high"
+    },
+    {
+      "match_id": "X012",
+      "archive_id": "Book of Black derived pages.json",
+      "source_class": "GAH derived dataset",
+      "date": null,
+      "exact_relevance": "Derived/speculative Leon Black entries were inspected and not used as source support because the underlying primary payment or entity records are not cited in the current package.",
+      "classification": "exclusion",
+      "confidence": "high"
+    }
+  ],
+  "missing_primary_categories": [
+    "Actual subpoena PDFs were not located; this package uses the transcript service moment and House subpoena release.",
+    "Underlying bank wires, invoices, workpapers, tax filings, insurance files, estate-planning files, and demand-loan instruments were not publicly acquired.",
+    "NDA and settlement documents were not acquired; redacted identities remain redacted.",
+    "Dechert interview notes, document corpus, and declined-witness details were not public in the acquired sources.",
+    "No current local GAH flight-log, calendar, banking, or EFTA Bates primary record was found that independently proves the $158 million payment ledger or demand-loan details.",
+    "Derived Book of Black Leon Black entries were inspected but not used as source support without underlying primary PDFs or records."
+  ]
+}

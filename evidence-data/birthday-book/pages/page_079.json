@@ -1,0 +1,118 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 79,
+  "page_id": "page_079",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_079.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_079.ocr.txt",
+  "image_metadata": {
+    "bytes": 120697,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "41ce134d189d047fe0282b13bbe031327fd28580aad89d2cfdb6a1fbd615025d"
+  },
+  "ocr_text": "pe we oS a\n\nBe ee 5. oe e .\n\n7 Bo vfose- a ums aa\nHOUSE_OVERSIGHT_000079\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The image shows an open book with handwriting on the right page. The left page appears blank. The handwriting is a poem or message with a crossed out header and a signature at the bottom.",
+    "Layout: left page blank",
+    "Layout: right page handwritten note"
+  ],
+  "observations": [
+    "The image shows an open book with handwriting on the right page. The left page appears blank. The handwriting is a poem or message with a crossed out header and a signature at the bottom.",
+    "Layout: left page blank",
+    "Layout: right page handwritten note"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000079"
+  ],
+  "signatures": [
+    {
+      "location": "right page bottom right",
+      "text_as_seen": "YOURS DARLY Warm Edmonston",
+      "confidence": "high",
+      "note": "Signature-like text in handwriting at the bottom."
+    }
+  ],
+  "handwriting_candidates": [
+    {
+      "location": "right page",
+      "text_as_seen": "ROSES ARE RED VIOLETS ARE BLUE YOUR HAIR IS LIKE GOLD I WISH MINE WERE TOO (DID HAVE TO SEE WHAT I'D LOOK LIKE) YOURS DARLY Warm Edmonston",
+      "confidence": "high",
+      "note": "Poem or message with a signature-like text at the bottom."
+    },
+    {
+      "location": "right page top left margin",
+      "text_as_seen": "TO JEFFS WOMAN H.",
+      "confidence": "medium",
+      "note": "Crossed out or emphasized text, possibly a dedication or header."
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "signature"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:15:34.303Z",
+    "response_id": "resp_08a4e65c520292b3006a502b91e9648190b60f7207dd425fa4",
+    "raw_output_sha256": "78c69e2e8a51eaf22bc90ff247b54ee3281ff52e3b1ed1a26eda5f7554710eba"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_08a4e65c520292b3006a502b91e9648190b60f7207dd425fa4",
+    "enriched_at": "2026-07-09T23:15:34.303Z"
+  },
+  "visual_summary": "The image shows an open book with handwriting on the right page. The left page appears blank. The handwriting is a poem or message with a crossed out header and a signature at the bottom.",
+  "layout": [
+    "left page blank",
+    "right page handwritten note"
+  ],
+  "handwriting": [
+    {
+      "location": "right page",
+      "text_as_seen": "ROSES ARE RED VIOLETS ARE BLUE YOUR HAIR IS LIKE GOLD I WISH MINE WERE TOO (DID HAVE TO SEE WHAT I'D LOOK LIKE) YOURS DARLY Warm Edmonston",
+      "confidence": "high",
+      "note": "Poem or message with a signature-like text at the bottom."
+    },
+    {
+      "location": "right page top left margin",
+      "text_as_seen": "TO JEFFS WOMAN H.",
+      "confidence": "medium",
+      "note": "Crossed out or emphasized text, possibly a dedication or header."
+    }
+  ],
+  "signature_marks": [
+    {
+      "location": "right page bottom right",
+      "text_as_seen": "YOURS DARLY Warm Edmonston",
+      "confidence": "high",
+      "note": "Signature-like text in handwriting at the bottom."
+    }
+  ],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [],
+  "confidence": "high"
+}

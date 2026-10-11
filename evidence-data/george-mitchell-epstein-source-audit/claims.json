@@ -1,0 +1,13 @@
+{
+  "schema": "gah.claims.v1",
+  "route": "/investigations/george-mitchell-epstein-source-audit",
+  "claims": [
+    {"id":"GM-001","claim":"Giuffre named George Mitchell in sworn testimony.","status":"SUPPORTED_AS_ALLEGATION","source_ids":["GIUFFRE-ECF-1106-1"],"limit":"Sworn allegation is not an adjudicated fact; Mitchell denied it."},
+    {"id":"GM-002","claim":"Mitchell publicly denied Giuffre's allegation.","status":"SUPPORTED","source_ids":["MITCHELL-2019-DENIAL"],"limit":"Denial does not independently resolve the allegation."},
+    {"id":"GM-003","claim":"Dated records show continuing Epstein-Mitchell contact or attempted contact from 2010 through 2015.","status":"SUPPORTED_WITH_EVENT_LEVEL_LIMITS","source_ids":["EFTA02411740","EFTA02412411","EFTA00428166","EFTA00408367","EFTA01752838","EFTA00339592"],"limit":"Some records prove outreach, scheduling or correspondence rather than completed meetings."},
+    {"id":"GM-004","claim":"The post-2008 contact records prove Giuffre's sexual allegation or Mitchell's knowledge of abuse.","status":"NOT_SUPPORTED","source_ids":["EFTA02411740","EFTA00428166","EFTA00408367","EFTA00339592"],"limit":"Association/contact evidence is not conduct evidence."},
+    {"id":"GM-005","claim":"A broad reading of Mitchell's 2019 no-further-contact wording is difficult to reconcile with dated 2010-2015 records.","status":"SUPPORTED_AS_TEXTUAL_TENSION","source_ids":["MITCHELL-2019-DENIAL","EFTA02411740","EFTA00428166","EFTA00408367","EFTA00339592"],"limit":"GAH does not infer intent or call the statement a lie; the exact intended cutoff is unresolved."},
+    {"id":"GM-006","claim":"HOUSE_OVERSIGHT_000146 is authenticated as authored by George Mitchell.","status":"UNRESOLVED","source_ids":["HOUSE_OVERSIGHT_000146"],"limit":"Visible document string/signature-like text is present; GAH contributor status remains probable."},
+    {"id":"GM-007","claim":"Raw Mitchell hit counts equal independent George Mitchell documents.","status":"NOT_SUPPORTED","source_ids":["EFTA01752838"],"limit":"Namesakes, OCR derivatives and duplicate representations inflate raw hit counts."}
+  ]
+}

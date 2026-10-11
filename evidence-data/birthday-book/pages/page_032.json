@@ -1,0 +1,105 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 32,
+  "page_id": "page_032",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_032.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_032.ocr.txt",
+  "image_metadata": {
+    "bytes": 6964091,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "3b90bd568b52985e179c4e422d364157829edb4705f1bd57c29ebfb7c232e8c4"
+  },
+  "ocr_text": "é | |\na '\n: P : }\nis |\n= he 5\n> i Sand \"ll 7”\nBas \\ i arte\nie , Sita SNS :\n\n<a aye . ; .4 ‘+ ~*~ BE sd H\nRi its , a bee creat *\\ “4 a\nr s Paras ti testis ‘#4 : é\neh Sane SANS SS ATS SRS . |\nBie tae i3 Pte eee bees. ik “ /\nBats Wuijta ts Fase | eeeis |\nBe eee ee © , \\ i 5 }\naay’ Ll? hey ee ——\" 1\n‘ Shiite ase i = ; : H\n\n: Tee) 80 ba 5 SS ' ,\n\nfic’: he en 7 vf ¥ 4\n\n. 7. 4 4 ‘by t P 5) '\n\nee a cee) |\n\nee >) 9 ‘ i as 4 ™ j\n\n. '\n\nt\n\n{\n\n|\n\nj\n\nrr es ee ae Si lla\nHOUSE_OVERSIGHT_000032\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "A black and white photograph of two young children sitting together. The older child on the left is smiling broadly and wearing a checkered short-sleeve shirt and dark shorts. The younger child on the right is a baby, also appearing to smile, wearing a light-colored outfit. There is a handwritten inscription in black ink at the top right of the photo that reads 'TO SIMPLER DAYS: HAPPY 50th MARK'. The photo is bordered by a white margin and is placed on a white background with no other notable objects.",
+    "Layout: handwriting at top right",
+    "Layout: photograph centered",
+    "Photo/image candidate at center: Black and white photograph of two young children, one older boy and one baby, sitting together and smiling."
+  ],
+  "observations": [
+    "A black and white photograph of two young children sitting together. The older child on the left is smiling broadly and wearing a checkered short-sleeve shirt and dark shorts. The younger child on the right is a baby, also appearing to smile, wearing a light-colored outfit. There is a handwritten inscription in black ink at the top right of the photo that reads 'TO SIMPLER DAYS: HAPPY 50th MARK'. The photo is bordered by a white margin and is placed on a white background with no other notable objects.",
+    "Layout: handwriting at top right",
+    "Layout: photograph centered",
+    "Photo/image candidate at center: Black and white photograph of two young children, one older boy and one baby, sitting together and smiling."
+  ],
+  "dates": [
+    "50th"
+  ],
+  "document_strings": [
+    "TO SIMPLER DAYS: HAPPY 50th MARK"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top right above photograph",
+      "text_as_seen": "TO SIMPLER DAYS: HAPPY 50th MARK",
+      "confidence": "high",
+      "note": "Handwritten inscription in black ink"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "date",
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:07:22.797Z",
+    "response_id": "resp_04dc8867f330aef0006a5029a58b3c81938b11fc14a6f01239",
+    "raw_output_sha256": "cbf52cd786e7256917e91a242dd7a4001d27734061d06b5c60f95770f7ed3dc5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_04dc8867f330aef0006a5029a58b3c81938b11fc14a6f01239",
+    "enriched_at": "2026-07-09T23:07:22.797Z"
+  },
+  "visual_summary": "A black and white photograph of two young children sitting together. The older child on the left is smiling broadly and wearing a checkered short-sleeve shirt and dark shorts. The younger child on the right is a baby, also appearing to smile, wearing a light-colored outfit. There is a handwritten inscription in black ink at the top right of the photo that reads 'TO SIMPLER DAYS: HAPPY 50th MARK'. The photo is bordered by a white margin and is placed on a white background with no other notable objects.",
+  "layout": [
+    "handwriting at top right",
+    "photograph centered"
+  ],
+  "handwriting": [
+    {
+      "location": "top right above photograph",
+      "text_as_seen": "TO SIMPLER DAYS: HAPPY 50th MARK",
+      "confidence": "high",
+      "note": "Handwritten inscription in black ink"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center",
+      "description": "Black and white photograph of two young children, one older boy and one baby, sitting together and smiling.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [
+    "50th"
+  ],
+  "confidence": "high"
+}

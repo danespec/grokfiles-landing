@@ -1,0 +1,104 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 57,
+  "page_id": "page_057",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_057.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_057.ocr.txt",
+  "image_metadata": {
+    "bytes": 7273330,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "935552723ecea72320340a077bd03e7b689a855edd13256cd4526fbffef70645"
+  },
+  "ocr_text": "($1els ON My Boat\nWe. prekecl of Girls OA) Beach oe went out\nod otk. Il them wilh Wane 4 my Mad\nto tale Cuts OFF. Buf Warren tells Pont\nWolly i's Name 1 MA, Nes just Yan tq\nhe lw at sovso, L Tey Marty to thaow bind\ninte wataz, he Prd\na oe} * ees\nHOUSE_OVERSIGHT_000057\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "Page contains handwritten text at the top and a printed color photograph below. The handwriting appears informal and is written in black ink. The photograph shows two men standing outdoors next to a car on a street with houses and trees in the background.",
+    "Layout: handwritten text top half",
+    "Layout: color photograph bottom half",
+    "Photo/image candidate at bottom half of page: Color photo of two men standing next to a car on a street in a residential area with houses and trees in the background."
+  ],
+  "observations": [
+    "Page contains handwritten text at the top and a printed color photograph below. The handwriting appears informal and is written in black ink. The photograph shows two men standing outdoors next to a car on a street with houses and trees in the background.",
+    "Layout: handwritten text top half",
+    "Layout: color photograph bottom half",
+    "Photo/image candidate at bottom half of page: Color photo of two men standing next to a car on a street in a residential area with houses and trees in the background."
+  ],
+  "dates": [],
+  "document_strings": [
+    "Girls On My Boat",
+    "HOUSE_OVERSIGHT_000057"
+  ],
+  "signatures": [],
+  "handwriting_candidates": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "GIRLS ON MY BOAT we picked up girls on Beach - went out on Boat. I tell them with knife in my hand to take suits off. But Warren tells Don't worry his name is J.N. hes just joking he live at so & so, I tell Mark to throw him into water, he did",
+      "confidence": "medium",
+      "note": "Some words unclear or partially illegible, transcribed to best ability"
+    }
+  ],
+  "redactions": [],
+  "flags": [
+    "handwriting",
+    "openai-vision",
+    "photo"
+  ],
+  "gaps": [
+    "Handwriting has some unclear words and phrases",
+    "No explicit dates or timestamps visible"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:11:54.113Z",
+    "response_id": "resp_0e0a23f45bd6f182006a502ab39ecc81978d87ddca3c0233b5",
+    "raw_output_sha256": "07b75863f85af71e68f60a0f0fe2e203421ece2289be551713844f1815246eb5"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0e0a23f45bd6f182006a502ab39ecc81978d87ddca3c0233b5",
+    "enriched_at": "2026-07-09T23:11:54.113Z"
+  },
+  "visual_summary": "Page contains handwritten text at the top and a printed color photograph below. The handwriting appears informal and is written in black ink. The photograph shows two men standing outdoors next to a car on a street with houses and trees in the background.",
+  "layout": [
+    "handwritten text top half",
+    "color photograph bottom half"
+  ],
+  "handwriting": [
+    {
+      "location": "top half of page",
+      "text_as_seen": "GIRLS ON MY BOAT we picked up girls on Beach - went out on Boat. I tell them with knife in my hand to take suits off. But Warren tells Don't worry his name is J.N. hes just joking he live at so & so, I tell Mark to throw him into water, he did",
+      "confidence": "medium",
+      "note": "Some words unclear or partially illegible, transcribed to best ability"
+    }
+  ],
+  "signature_marks": [],
+  "visual_redactions": [],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "bottom half of page",
+      "description": "Color photo of two men standing next to a car on a street in a residential area with houses and trees in the background.",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "medium"
+}

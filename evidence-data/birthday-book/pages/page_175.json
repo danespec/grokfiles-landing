@@ -1,0 +1,119 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 175,
+  "page_id": "page_175",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_175.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_175.ocr.txt",
+  "image_metadata": {
+    "bytes": 9227098,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "8d0f2d7dcfa44b86c162657e82700e04e00187d529a0b8a8a8d205c475e18106"
+  },
+  "ocr_text": "HOUSE_OVERSIGHT_000175\n",
+  "ocr_status": "sparse",
+  "objective_vision_observations": [
+    "The image shows a single, predominantly dark photograph with a person's head and upper body. The face is obscured by a large, peach-colored area. The person's hair and right ear are visible. The background is dark, and the person appears to be wearing a dark top. There are no other visible objects or text within the photographic portion. At the bottom right corner outside the photograph, there is black text reading 'HOUSE_OVERSIGHT_000175'.",
+    "Layout: one large central photo",
+    "Layout: text at bottom right corner outside photo",
+    "Photo/image candidate at center of page: Photo of a person with face obscured by a peach-colored overlay, dark hair, right ear visible, dark clothing, dark background"
+  ],
+  "observations": [
+    "The image shows a single, predominantly dark photograph with a person's head and upper body. The face is obscured by a large, peach-colored area. The person's hair and right ear are visible. The background is dark, and the person appears to be wearing a dark top. There are no other visible objects or text within the photographic portion. At the bottom right corner outside the photograph, there is black text reading 'HOUSE_OVERSIGHT_000175'.",
+    "Layout: one large central photo",
+    "Layout: text at bottom right corner outside photo",
+    "Photo/image candidate at center of page: Photo of a person with face obscured by a peach-colored overlay, dark hair, right ear visible, dark clothing, dark background"
+  ],
+  "dates": [],
+  "document_strings": [
+    "HOUSE_OVERSIGHT_000175"
+  ],
+  "signatures": [
+    {
+      "location": "bottom right corner outside photo",
+      "text_as_seen": "HOUSE_OVERSIGHT_000175",
+      "confidence": "high",
+      "note": "Document string label"
+    }
+  ],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "central face area within photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Face area obscured with a solid peach-colored overlay"
+    }
+  ],
+  "flags": [
+    "openai-vision",
+    "photo",
+    "redaction",
+    "signature",
+    "sparse-ocr"
+  ],
+  "gaps": [
+    "No visible text other than document string",
+    "No visible dates or handwritten notes"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:30:06.524Z",
+    "response_id": "resp_0c53bbd427963bef006a502ef717488193a82e3efc2ae9e2c8",
+    "raw_output_sha256": "b2e1455ac6d4f52a19f3fbd308c3b0447c5621f0e267390f0ff06962d6757f9d"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_0c53bbd427963bef006a502ef717488193a82e3efc2ae9e2c8",
+    "enriched_at": "2026-07-09T23:30:06.524Z"
+  },
+  "visual_summary": "The image shows a single, predominantly dark photograph with a person's head and upper body. The face is obscured by a large, peach-colored area. The person's hair and right ear are visible. The background is dark, and the person appears to be wearing a dark top. There are no other visible objects or text within the photographic portion. At the bottom right corner outside the photograph, there is black text reading 'HOUSE_OVERSIGHT_000175'.",
+  "layout": [
+    "one large central photo",
+    "text at bottom right corner outside photo"
+  ],
+  "handwriting": [],
+  "signature_marks": [
+    {
+      "location": "bottom right corner outside photo",
+      "text_as_seen": "HOUSE_OVERSIGHT_000175",
+      "confidence": "high",
+      "note": "Document string label"
+    }
+  ],
+  "visual_redactions": [
+    {
+      "location": "central face area within photo",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Face area obscured with a solid peach-colored overlay"
+    }
+  ],
+  "drawings": [],
+  "photos": [
+    {
+      "location": "center of page",
+      "description": "Photo of a person with face obscured by a peach-colored overlay, dark hair, right ear visible, dark clothing, dark background",
+      "confidence": "high"
+    }
+  ],
+  "dates_visible": [],
+  "confidence": "high"
+}

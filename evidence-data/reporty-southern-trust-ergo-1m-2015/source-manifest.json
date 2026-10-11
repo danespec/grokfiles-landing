@@ -1,0 +1,97 @@
+{
+  "schema": "gah.source-manifest.v1",
+  "slug": "reporty-southern-trust-ergo-1m-2015",
+  "title": "Reporty’s $1M March 2015 Funding: Proven Cash, Incomplete Holder Chain",
+  "published": "2026-09-30",
+  "scope": "BANK-4 reconstruction of Southern Trust's March 16, 2015 $1M Reporty funding through ERGO, keeping bank payer, intermediary/legal vehicle and final holder separate.",
+  "evidence_packages": [
+    "/Volumes/homes/admin/GAH_US_RUN11_FINANCIAL_MACHINERY_MASTER.md",
+    "/Volumes/homes/admin/GAH_US_RUN12_ALL_BANKS_TECH_MASTER.md",
+    "/Volumes/homes/admin/GAH_US_RUN5_REPORTY_A1_CLOSING_MASTER.md"
+  ],
+  "correction": {
+    "date": "2026-09-30",
+    "issue": "Run 12 normalized evidence originally mislabeled the origin bank as JPMorgan. EFTA01360528 and EFTA01285411 establish Southern Trust Deutsche account *9244 as the origin. The memo names Bank Leumi as receiving bank; the posted statement renders 'TO DEUTSCHE BANK A/C 19200190 ERGO LTD.' This destination-label discrepancy is preserved.",
+    "backup": "/Volumes/homes/admin/GAH-RUN12-CORRECTIONS-20260930/GAH_US_RUN12_ALL_BANKS_TECH_EVIDENCE.pre-reporty-bank-fix.csv"
+  },
+  "sources": [
+    {
+      "id": "REPORTY-TS-1",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA00654146",
+      "url": "/pdf-lite?id=EFTA00654146",
+      "supports": "Jan. 20–21 Reporty term-sheet negotiation; Barak recommends moving forward; terms still subject to company response.",
+      "limit": "Negotiation/proposal evidence, not settlement."
+    },
+    {
+      "id": "REPORTY-TS-2",
+      "class": "PRIMARY_EMAIL_CHAIN",
+      "record": "EFTA02512061",
+      "url": "/pdf-lite?id=EFTA02512061",
+      "supports": "Proposed $1.5M investment, valuation/equity and warrant negotiations; Darren/legal-call context.",
+      "limit": "Negotiating figures, not final funded ownership."
+    },
+    {
+      "id": "REPORTY-TS-3",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02512020",
+      "url": "/pdf-lite?id=EFTA02512020",
+      "supports": "Jan. 28 statement that term sheet remained non-binding and Darren already had it/cap table.",
+      "limit": "Proposal status only."
+    },
+    {
+      "id": "REPORTY-WIRE-MEMO",
+      "class": "PRIMARY_BANK_WIRE_MEMORANDUM",
+      "record": "EFTA01360528",
+      "url": "/pdf-lite?id=EFTA01360528",
+      "supports": "Southern Trust account *9244; Mar. 16, 2015 $1M instruction; ERGO Ltd.; account 19200/90; memo reference Reporty Investment; receiving bank rendered as Bank Leumi.",
+      "limit": "Instruction requires settlement corroboration."
+    },
+    {
+      "id": "REPORTY-WIRE-MEMO-DUP",
+      "class": "PRIMARY_BANK_WIRE_MEMORANDUM",
+      "record": "EFTA01404004",
+      "url": "/pdf-lite?id=EFTA01404004",
+      "supports": "Duplicate/alternate rendering of same $1M ERGO / Reporty investment instruction.",
+      "limit": "OCR omits some account detail visible in EFTA01360528."
+    },
+    {
+      "id": "REPORTY-POSTED-DEBIT",
+      "class": "PRIMARY_BANK_STATEMENT",
+      "record": "EFTA01285411",
+      "url": "/pdf-lite?id=EFTA01285411",
+      "supports": "Southern Trust Deutsche statement posts Mar. 16 $1M outgoing transfer to ERGO account 19200190.",
+      "limit": "Rendered line says 'TO DEUTSCHE BANK' while wire memo names Bank Leumi; destination-bank label not harmonized."
+    },
+    {
+      "id": "REPORTY-SUM-SIDELETTER",
+      "class": "PRIMARY_ARCHIVE_ATTACHMENT",
+      "record": "Reporty - Additional Closing 1522016.doc",
+      "archive_path": "Inbox!1/1 (491)_files/Reporty - Additional Closing 1522016.doc",
+      "supports": "SUM (E.B.) 2015 LP / GP Ergo (E.B. 2014) Ltd.; Series A additional closing under SPA dated Mar. 29, 2015.",
+      "limit": "Archive-only attachment; later side letter does not establish exact share count/registered holder for the Mar. 16 cash transfer."
+    },
+    {
+      "id": "REPORTY-SUM-WARRANTS",
+      "class": "PRIMARY_EMAIL",
+      "record": "EFTA02621721",
+      "url": "/pdf-lite?id=EFTA02621721",
+      "supports": "2018 'Carbine/Reporty - SUM warrants' correspondence showing continuing SUM-related economic/legal paper.",
+      "limit": "Later context; does not reconstruct original 2015 ownership certificate."
+    }
+  ],
+  "classification": "BANK-4",
+  "open_questions": [
+    "The exact executed instrument and share count tied to the Mar. 16, 2015 $1M transfer.",
+    "The final registered holder for the economic interest funded by that specific transfer.",
+    "Why the memo receiving-bank label and statement transaction label differ for ERGO account 19200/90.",
+    "Whether a public-receipt copy of the 2016 SUM/ERGO additional-closing side letter can be added to the Barak search index."
+  ],
+  "not_established": [
+    "That the January $1.5M proposal equals the final funded amount.",
+    "That Southern Trust, SUM, ERGO and Reporty were the same legal entity.",
+    "BANK-5 final ownership from the March $1M funding leg.",
+    "Southern Trust funding of the separately reported 2017 Series A-1 close.",
+    "Wrongdoing arising from the investment structure."
+  ]
+}

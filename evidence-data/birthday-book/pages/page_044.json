@@ -1,0 +1,115 @@
+{
+  "dataset_id": "birthday-book",
+  "recovery_id": "TASK-BIRTHDAY-BOOK-RECOVER-001",
+  "page": 44,
+  "page_id": "page_044",
+  "source_label": "Birthday Book recovered PNG/OCR working files",
+  "canonical_status": "openai_vision_enriched_from_recovered_png_ocr",
+  "model_status": "openai_vision_model_enriched",
+  "image": "/evidence-data/birthday-book/recovered_pages/page_044.png",
+  "ocr_source": "/evidence-data/birthday-book/recovered_pages/page_044.ocr.txt",
+  "image_metadata": {
+    "bytes": 318711,
+    "width": 2550,
+    "height": 3389,
+    "sha256": "bd8eeb2a2930129944cfc852116ba08db7a1f256cd5cd96388ee117c0c0fc27c"
+  },
+  "ocr_text": "ae fix”, the doctor, said. The crater-\n| __ most treasured vehicles include: face teen now has to check his oil\nLarry John Streitman’s Flamin’ 69 every 10 minutes, for fear of greasy\nAMC Javelin, Howie Dorf’s build-up. As punishment, his\noF . _< “Listen-my-friend” 68 Plymouth friends were required to provide\nee : Barracuda, the Amazing “Dirt him with a lifetime supply of Oxy\n— Brothers” Camaro (so many mixed 10.\n— up parts, it has no year), Stoned ;\na _- Lloyd Kaplan’s Super Smoker 69\n_ T-Bird, Harold Sokol’s 69 Dime-\noo + Pitch Karmann Ghia, Warren M °\n___ Bioatei’ fly extonized 6 Near Miss on\nVW Bug with special hand applic\na. gold metal flake paint and flame Belt Pkwy.\nke striping, Mike Buchholtz’s\nNeck Bracing 69 VW Squareback,\nBW Rock-me “Baby Carriage” VW\nConvertible, ‘Timmy the K’s Super\n . _= Stock- runs-good-downhill ‘62 Last Friday, 3 Sea Gate boys\nee Chevy, and don’t forget world perpetrated a hoax on popular math\n‘famous Sgt. Gene’s Stormin’ 56 tutor Richard “Dicky” Freed, One\ni “>. Plymouth!! boy set the scam up by mentioning\nem that he needed math tutoring,\noe knowing that Dicky would surely\noe zero in on this “needy student”.\n| - Freed took the boy onto the Belt\nee Ploy. in his navy blue 63 Chevy\noe oe Belair. Once they reached the large\noe . an gas tanks on the way to Sheepshead\n . i Bay, two other boys who were\noe hiding behind the back seat popped\nos ° up and scared the dickens out of\noe ree Near Drowning Dicky. He temporarily lost control\noe ° of the vehicle when both arms went\noe ce in Chocolate off the steering wheel and up to the\nee roof of the vehicle as he shrieked in\neS By Willy the Soda Jerk fear. The 3 boys laughed\neee Firestone Candy Papers hysterically as Freed “s car\nee: careened through 3 lanes of traffic,\noe almost flipping over the guard rail.\noe - Police reported the incident to the\noo. - A brillo haired teenager was boys’ parents. The punishment: 2\ncoe oe nearly drowned in Fox’s U bet boys- no color TV for One week!\noe chocolate syrup when his four The 3\" boy was deprived of his\noe = friends held him down and poured precious lobster salad for one week.\noo 10 jars of the thick, rich, velvety Freed returned to normal tutoring\noe a ; egg cream component. After 5 after 4 week of shoe polishing and\nie minutes of the syrup torture, the recuperation from the mental\n| ae kinky teen suffered from terminal trauma.\nes acne and was immediately\noe ambulanced to Dr. Shin Ho Yep, a\nes. pimple specialist. The Dr. refused\nae treatment, as the acne was too far-\nHOUSE_OVERSIGHT_000044\n",
+  "ocr_status": "present",
+  "objective_vision_observations": [
+    "The page contains two main articles. The left column article titled 'Near Drowning in Chocolate' describes an incident involving a teenager and chocolate syrup, with a medical mention. The right column article titled 'Near Miss on Belt Pkwy.' describes a prank involving several boys and a driver on the Belt Parkway, mentioning the consequences for the pranksters. There is one blacked-out rectangular redaction in the left article under the list of vehicles. The text is in a typical newspaper or bulletin layout with two columns, headings in bold, and some italicized text and smaller captions.",
+    "Layout: Two-column text layout",
+    "Layout: Black rectangular redaction near bottom of left column",
+    "Layout: Title headings present",
+    "Layout: Body text paragraphs",
+    "Layout: Byline under headlines",
+    "Layout: Italicized byline text",
+    "Layout: Some underlined text observed"
+  ],
+  "observations": [
+    "The page contains two main articles. The left column article titled 'Near Drowning in Chocolate' describes an incident involving a teenager and chocolate syrup, with a medical mention. The right column article titled 'Near Miss on Belt Pkwy.' describes a prank involving several boys and a driver on the Belt Parkway, mentioning the consequences for the pranksters. There is one blacked-out rectangular redaction in the left article under the list of vehicles. The text is in a typical newspaper or bulletin layout with two columns, headings in bold, and some italicized text and smaller captions.",
+    "Layout: Two-column text layout",
+    "Layout: Black rectangular redaction near bottom of left column",
+    "Layout: Title headings present",
+    "Layout: Body text paragraphs",
+    "Layout: Byline under headlines",
+    "Layout: Italicized byline text",
+    "Layout: Some underlined text observed"
+  ],
+  "dates": [
+    "Last Friday, 3"
+  ],
+  "document_strings": [
+    "most treasured vehicles include: Larry John Streitman's Flamin' 69 AMC Javelin, Howie Dorf's 'Listen-my-friend' 68 Plymouth Barracuda, the Amazing 'Dirt Brothers' Camaro (so many mixed up parts, it has no year), Stoned Lloyd Kaplan's Super Smoker 69 T-Bird, Harold Sokol's 69 Dime-Pitch Karmann Ghia, Warren M Eisenstein's fully customized 62 VW Bug with special hand applied gold metal flake paint and flame pin striping, Mike Buchholtz's Neck Bracing 69 VW Squareback, Terry the K's Black 58 Little Window VW Bug, [redacted] 70 Rock-me 'Baby Carriage' VW Convertible, Timmy the K's Super Stock- runs-good-downhill '62 Chevy, and don't forget world famous Sgt. Gene's Stormin' 56 Plymouth!!",
+    "Near Drowning in Chocolate By Willy the Soda Jerk Firestone Candy Papers A brillo haired teenager was nearly drowned in Fox's U bet chocolate syrup when his four friends held him down and poured 10 jars of the thick, rich, velvety egg cream component. After 5 minutes of the syrup torture, the kinky teen suffered from terminal acne and was immediately ambulanced to Dr. Shin Ho Yep, a pimple specialist. The Dr. refused treatment, as the acne was too far gone. 'To much peempoo; cannot fix', the doctor, said. The crater-face teen now has to check his oil every 10 minutes, for fear of greasy build-up. As punishment, his friends were required to provide him with a lifetime supply of Oxy 10.",
+    "Near Miss on Belt Pkwy. By Officer Bits Sea Gate Police Bulletin Last Friday, 3 Sea Gate boys perpetrated a hoax on popular math tutor Richard 'Dicky' Freed. One boy set the scam up by mentioning that he needed math tutoring, knowing that Dicky would surely zero in on this 'needy student'. Freed took the boy onto the Belt Pkwy. in his navy blue 63 Chevy Belair. Once they reached the large gas tanks on the way to Sheepshead Bay, two other boys who were hiding behind the back seat popped up and scared the dickens out of Dicky. He temporarily lost control of the vehicle when both arms went off the steering wheel and up to the roof of the vehicle as he shrieked in fear. The 3 boys laughed hysterically as Freed's car careened through 3 lanes of traffic, almost flipping over the guard rail. Police reported the incident to the boys' parents. The punishment: 2 boys - no color TV for One week!! The 3rd boy was deprived of his precious lobster salad for one week. Freed returned to normal tutoring after a week of shoe polishing and recuperation from the mental trauma."
+  ],
+  "signatures": [],
+  "handwriting_candidates": [],
+  "redactions": [
+    {
+      "location": "Left column, paragraph list of vehicles, near bottom middle",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Rectangular black redaction obscuring text"
+    }
+  ],
+  "flags": [
+    "date",
+    "openai-vision",
+    "redaction"
+  ],
+  "gaps": [
+    "Incomplete OCR text suggests there might be more text at the bottom right corner obscured or truncated"
+  ],
+  "evidence_rules": [
+    "Use document string wording unless identity is externally verified.",
+    "Never imply authorship from OCR alone.",
+    "OpenAI vision observations are model-generated objective visual labels and should preserve uncertainty."
+  ],
+  "enrichment_id": "TASK-BIRTHDAY-BOOK-OPENAI-VISION-001",
+  "openai_vision_status": "enriched",
+  "vision_model_enriched": true,
+  "vision_model": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "task": "objective page evidence observation",
+    "enriched_at": "2026-07-09T23:09:06.040Z",
+    "response_id": "resp_02c930df51aa073d006a502a08b5e48193b3bb021b6db348de",
+    "raw_output_sha256": "1a6108c0a2ffb9770de2dcb1bbb5eca993db6925dbb54a4665bc9a6a14cab6dc"
+  },
+  "openai_vision": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "api": "responses",
+    "response_id": "resp_02c930df51aa073d006a502a08b5e48193b3bb021b6db348de",
+    "enriched_at": "2026-07-09T23:09:06.040Z"
+  },
+  "visual_summary": "The page contains two main articles. The left column article titled 'Near Drowning in Chocolate' describes an incident involving a teenager and chocolate syrup, with a medical mention. The right column article titled 'Near Miss on Belt Pkwy.' describes a prank involving several boys and a driver on the Belt Parkway, mentioning the consequences for the pranksters. There is one blacked-out rectangular redaction in the left article under the list of vehicles. The text is in a typical newspaper or bulletin layout with two columns, headings in bold, and some italicized text and smaller captions.",
+  "layout": [
+    "Two-column text layout",
+    "Black rectangular redaction near bottom of left column",
+    "Title headings present",
+    "Body text paragraphs",
+    "Byline under headlines",
+    "Italicized byline text",
+    "Some underlined text observed"
+  ],
+  "handwriting": [],
+  "signature_marks": [],
+  "visual_redactions": [
+    {
+      "location": "Left column, paragraph list of vehicles, near bottom middle",
+      "text_as_seen": "",
+      "confidence": "high",
+      "note": "Rectangular black redaction obscuring text"
+    }
+  ],
+  "drawings": [],
+  "photos": [],
+  "dates_visible": [
+    "Last Friday, 3"
+  ],
+  "confidence": "high"
+}

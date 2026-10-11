@@ -1,0 +1,244 @@
+{
+  "transcription_id": "TASK-BIRTHDAY-BOOK-V2-003",
+  "page": 146,
+  "bates": "HOUSE_OVERSIGHT_000146",
+  "source_pdf_url": "https://drive.google.com/file/d/1rR1BzSxbCkV6LGWTUJuIoze_xSvzOfUD/view?usp=drive_link",
+  "source_release_url": "https://oversight.house.gov/release/oversight-committee-releases-records-provided-by-the-epstein-estate-chairman-comer-provides-statement/",
+  "evidence_page_url": "/research/evidence/birthday-book/pages/146",
+  "related_people": [
+    "George Mitchell"
+  ],
+  "priority_rank": 2,
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "api": "responses",
+  "response_id": "resp_0978025bc11021e7006a50eadf7ec08193aba09804405a010c",
+  "transcript_status": "transcribed",
+  "overall_confidence": "high",
+  "public_transcript_allowed": true,
+  "reviewer_status": "model_transcript_candidate_public",
+  "public_safety_rule": "Machine-assisted handwriting transcription; uncertain words are bracketed.",
+  "attribution_warning": "Do not identify people in the image or infer authorship.",
+  "lines": [
+    {
+      "line_number": 1,
+      "location": "top right",
+      "text": "January 2003",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "January 2003"
+    },
+    {
+      "line_number": 2,
+      "location": "top left",
+      "text": "Dear Jeffrey,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Dear Jeffrey,"
+    },
+    {
+      "line_number": 3,
+      "location": "left",
+      "text": "The beginning of a new year is an appropriate time",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "The beginning of a new year is an appropriate time"
+    },
+    {
+      "line_number": 4,
+      "location": "left",
+      "text": "to count our blessings.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "to count our blessings."
+    },
+    {
+      "line_number": 5,
+      "location": "left",
+      "text": "Among mine is your friendship. It's been more than",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Among mine is your friendship. It's been more than"
+    },
+    {
+      "line_number": 6,
+      "location": "left",
+      "text": "a decade since we met by chance at an airport in",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "a decade since we met by chance at an airport in"
+    },
+    {
+      "line_number": 7,
+      "location": "left",
+      "text": "Washington. During that time you've been a good friend.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Washington. During that time you've been a good friend."
+    },
+    {
+      "line_number": 8,
+      "location": "left",
+      "text": "I'm grateful for that and for what I hope will be many",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "I'm grateful for that and for what I hope will be many"
+    },
+    {
+      "line_number": 9,
+      "location": "left",
+      "text": "more years of your friendship.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "more years of your friendship."
+    },
+    {
+      "line_number": 10,
+      "location": "left",
+      "text": "Among your blessings has been the opportunity",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "Among your blessings has been the opportunity"
+    },
+    {
+      "line_number": 11,
+      "location": "left",
+      "text": "to lead a full, exciting, and fantastically varied",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "to lead a full, exciting, and fantastically varied"
+    },
+    {
+      "line_number": 12,
+      "location": "left",
+      "text": "life. Now that you've reached a critical milestone,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "life. Now that you've reached a critical milestone,"
+    },
+    {
+      "line_number": 13,
+      "location": "left",
+      "text": "I hope you will intensify your activities in the",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "I hope you will intensify your activities in the"
+    },
+    {
+      "line_number": 14,
+      "location": "left",
+      "text": "widest possible range of issues, especially in the",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "widest possible range of issues, especially in the"
+    },
+    {
+      "line_number": 15,
+      "location": "left",
+      "text": "field of science where you've already done so much.",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "field of science where you've already done so much."
+    },
+    {
+      "line_number": 16,
+      "location": "left",
+      "text": "With my congratulations, gratitude and",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "With my congratulations, gratitude and"
+    },
+    {
+      "line_number": 17,
+      "location": "left",
+      "text": "best wishes,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "best wishes,"
+    },
+    {
+      "line_number": 18,
+      "location": "right",
+      "text": "George Mitchell",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "signature",
+      "public_text": "George Mitchell"
+    },
+    {
+      "line_number": 19,
+      "location": "left",
+      "text": "P.S. As you know, Heather shares your birthday,",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "P.S. As you know, Heather shares your birthday,"
+    },
+    {
+      "line_number": 20,
+      "location": "left",
+      "text": "confirming my belief that a lot of great people",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "confirming my belief that a lot of great people"
+    },
+    {
+      "line_number": 21,
+      "location": "left",
+      "text": "were born on January 20 !",
+      "confidence": "high",
+      "uncertain_segments": [],
+      "illegible_segments": [],
+      "note": "",
+      "public_text": "were born on January 20 !"
+    }
+  ],
+  "document_strings": [
+    "Dear Jeffrey,",
+    "George Mitchell",
+    "P.S. As you know, Heather shares your birthday, confirming my belief that a lot of great people were born on January 20!"
+  ],
+  "visible_non_transcript_notes": [],
+  "gaps": [],
+  "raw_output_sha256": "e533a545ccec2fc7dac63424d8cfadfe59d0bf82ce9dd03aed25f40b4288b0c2",
+  "transcribed_at": "2026-07-10T12:51:59.541Z",
+  "finalized_at": "2026-07-10T17:53:03.753Z"
+}
