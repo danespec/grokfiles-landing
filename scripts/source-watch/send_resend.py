@@ -14,6 +14,8 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
+import tempfile
 import urllib.error
 import urllib.request
 
@@ -111,6 +113,36 @@ def plan(private_dir, acknowledged, now=None):
             "subject":subject,"body":"\n".join(lines),
             "event_count":len(events),"court_outage":len(broken)}
 
+def verified_curl_post(req, credential, idempotency):
+    """Post through curl's verified macOS TLS store, with auth on stdin."""
+    fd, path=tempfile.mkstemp(prefix=".gah-resend-",dir=str(PRIVATE_DIR))
+    try:
+        with os.fdopen(fd,"wb") as out:
+            out.write(req.data)
+            out.flush()
+        os.chmod(path,0o600)
+        config=(
+            'url = "https://api.resend.com/emails"\n'
+            'request = "POST"\n'
+            'header = "Authorization: Bearer '+credential+'"\n'
+            'header = "Content-Type: application/json"\n'
+            'header = "Idempotency-Key: '+idempotency+'"\n'
+            'data-binary = "@'+path+'"\n')
+        proc=subprocess.run(
+            ["/usr/bin/curl","--config","-","--silent","--show-error",
+             "--max-time","18","--max-filesize","200000",
+             "--proto","=https","--proto-redir","=https",
+             "--write-out","\n__GAH_RESEND_STATUS__%{http_code}"],
+            input=config.encode(),capture_output=True,timeout=24)
+        marker=b"\n__GAH_RESEND_STATUS__"
+        if proc.returncode or marker not in proc.stdout:
+            raise RuntimeError("email_verified_transport_failure")
+        response,tail=proc.stdout.rsplit(marker,1)
+        return int(tail.decode("ascii").strip()),response
+    finally:
+        if os.path.exists(path):
+            os.unlink(path)
+
 def send(payload, credential, transport=None):
     body={"from":EXPECTED_FROM,"to":[EXPECTED_TO],
           "subject":payload["subject"],"text":payload["body"]}
@@ -123,8 +155,7 @@ def send(payload, credential, transport=None):
     if transport:
         status,reply=transport(req)
     else:
-        with urllib.request.urlopen(req,timeout=18) as res:
-            status,reply=res.status,res.read(200_000)
+        status,reply=verified_curl_post(req, credential, payload["idempotency"])
     if status not in (200,201,202):
         raise RuntimeError("email_server_did_not_accept")
     try:
