@@ -1,0 +1,217 @@
+{
+  "schema": "gah.ren_seo_19_coverage.v1",
+  "source": "Epstein Keyword Strategy.html",
+  "source_date": "2026-10-11",
+  "reviewed_date": "2026-10-11",
+  "scope": "GAH site editorial relevance, canonical route and content presence. Does NOT certify Google indexing, rankings, traffic or paid keyword volumes.",
+  "privacy": "The only redacted source phrase is rank 17 (a specific email address); exact private copy kept off Git and outside published assets.",
+  "statuses": {
+    "strong": "A dedicated page or coherent hub cluster answers the primary search intent and has relevant contextual evidence.",
+    "partial": "An existing page overlaps with part of the intent, but a material subtopic, verification or source requirement remains.",
+    "gap": "No justified dedicated page identified. No auto-publishing or fabricated matching."
+  },
+  "items": [
+    {
+      "rank": 1,
+      "phrase": "how to search the epstein files",
+      "lane": "now",
+      "status": "strong",
+      "routes": [
+        "/guides/how-to-search-epstein-files"
+      ],
+      "evidence": "Dedicated five-step DOJ/EFTA workflow, OCR limitations, worked EFTA example.",
+      "next_action": "Maintain official-source citations and verify live behavior after releases."
+    },
+    {
+      "rank": 2,
+      "phrase": "what are the epstein data sets",
+      "lane": "now",
+      "status": "strong",
+      "routes": [
+        "/guides/doj-epstein-data-sets"
+      ],
+      "evidence": "Dedicated canonical DOJ Data Sets 1–12 hub with primary DOJ release links.",
+      "next_action": "Maintain source-link accuracy and page-by-page coverage."
+    },
+    {
+      "rank": 3,
+      "phrase": "[EFTA number]: what this document is",
+      "lane": "now",
+      "status": "partial",
+      "routes": [
+        "/investigations/hold-the-letter",
+        "/guides/how-to-search-epstein-files"
+      ],
+      "evidence": "EFTA00013764 case study exists, but no proven repeatable set of context pages for arbitrary EFTA IDs.",
+      "next_action": "Write only individual ID explainers where original PDF, provenance, limitations, and independent editorial analysis can be documented."
+    },
+    {
+      "rank": 4,
+      "phrase": "epstein files data set 10 / 11 / 12 download",
+      "lane": "now",
+      "status": "strong",
+      "routes": [
+        "/guides/doj-epstein-data-sets"
+      ],
+      "evidence": "Official DOJ links for numbered sets 10–12; page explicitly distinguishes index links from ZIP downloads.",
+      "next_action": "Retain direct links and clarify how to download an individual original PDF; never invent a consolidated zip."
+    },
+    {
+      "rank": 5,
+      "phrase": "missing / redacted Epstein files document tracker",
+      "lane": "build",
+      "status": "partial",
+      "routes": [
+        "/investigations/efta-compliance-tracker",
+        "/redacted-files"
+      ],
+      "evidence": "Existing compliance/redaction reviews but no verified exhaustive, per-document removed/re-redacted census.",
+      "next_action": "Track only observed document snapshots with dates, hashes, availability, and access errors distinctly."
+    },
+    {
+      "rank": 6,
+      "phrase": "epstein flight logs pdf 1997–2006 download",
+      "lane": "build",
+      "status": "partial",
+      "routes": [
+        "/methodology/how-not-to-overread-flight-logs"
+      ],
+      "evidence": "Method explains how not to overread manifests; does not serve an authenticated, date-bounded source download guide.",
+      "next_action": "Identify official/public primary flight-log PDFs and publication provenance before writing a download/source index."
+    },
+    {
+      "rank": 7,
+      "phrase": "epstein black book pdf / contact book explained",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "No verified dedicated Epstein contact-book/PDF explainer. GAH Book of Black manuscript is a different work and must NOT be treated as the same source.",
+      "next_action": "Source the correct contact-book scans and limits; make a focused explainer only with verified provenance."
+    },
+    {
+      "rank": 8,
+      "phrase": "leon black 158 million epstein Southern Trust wire transfers",
+      "lane": "build",
+      "status": "partial",
+      "routes": [
+        "/evidence-briefs/leon-black-158m-170m-epstein-payments",
+        "/investigations/black-family-partners-financial-trust-esww-sale"
+      ],
+      "evidence": "Strong separately documented Leon Black $158M/$170M payment evidence and independent Financial Trust reporting; not proof they are one wire-transfer chain.",
+      "next_action": "Create any cross-entity join only from verified underlying financial statements; maintain distinct amounts and transactions."
+    },
+    {
+      "rank": 9,
+      "phrase": "kathryn ruemmler epstein emails",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "No identified dedicated source-backed page matching named-person email query.",
+      "next_action": "Require authenticated released email, precise dates and full context before an indexable explainer."
+    },
+    {
+      "rank": 10,
+      "phrase": "marie joseph experton epstein",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "No identified dedicated source-backed page.",
+      "next_action": "Require attributed original record and avoid personal speculation before indexing."
+    },
+    {
+      "rank": 11,
+      "phrase": "karyna shuliak epstein dentist New Mexico",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "New Mexico records reporting exists, but that is not a sourced profile of this individual.",
+      "next_action": "Require primary record that actually substantiates each described role and location; avoid using unrelated investigation for topical match."
+    },
+    {
+      "rank": 12,
+      "phrase": "tommy mottola epstein emails",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "No identified dedicated source-backed email explainer.",
+      "next_action": "Require exact message provenance and context; association or names in a log are not proof of misconduct."
+    },
+    {
+      "rank": 13,
+      "phrase": "epstein 2007 draft indictment 56 pages explained",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "No identified dedicated 56-page draft-indictment document analysis.",
+      "next_action": "Obtain and verify exact primary draft, date, completeness, and procedural status before publishing."
+    },
+    {
+      "rank": 14,
+      "phrase": "epstein non-prosecution agreement 2008 timeline",
+      "lane": "build",
+      "status": "partial",
+      "routes": [
+        "/investigations/epstein-npa-defense-access-victim-notification",
+        "/investigations/epstein-december-6-7-2007-decision-gap"
+      ],
+      "evidence": "Detailed NPA access/notification evidence exists, but the landing page does not function as a full 2007–08 agreement timeline.",
+      "next_action": "Create chronology only from signed NPA, DOJ OPR findings and dated correspondence, avoiding unsupported motive claims."
+    },
+    {
+      "rank": 15,
+      "phrase": "37 withheld Epstein FBI 302s",
+      "lane": "build",
+      "status": "partial",
+      "routes": [
+        "/investigations/fbi-vault-redaction-chronology-phang",
+        "/investigations/wyden-banker-302-deutsche-interviews"
+      ],
+      "evidence": "Related FBI record/redaction and 302 reporting exists; exact '37 withheld' count not independently corroborated in this audit.",
+      "next_action": "Do not promote the number as fact until docket or agency primary-source accounting supports it."
+    },
+    {
+      "rank": 16,
+      "phrase": "epstein MCC timeline jail logs missing minutes",
+      "lane": "build",
+      "status": "strong",
+      "routes": [
+        "/dispatches/epstein-mcc-timeline",
+        "/dispatches/epstein-jail-logs"
+      ],
+      "evidence": "Dedicated MCC records and jail-log timelines with source and limitation framing.",
+      "next_action": "Preserve separation between documented gaps and claims about what unseen minutes contain."
+    },
+    {
+      "rank": 17,
+      "phrase": "[specific released mailbox] epstein emails search",
+      "lane": "build",
+      "status": "gap",
+      "routes": [],
+      "evidence": "Exact address deliberately suppressed from public SEO audit; no verified dedicated indexed page tied to the published evidence.",
+      "next_action": "Keep original literal only in private audit file; do not republish contact details without verified official records and editorial need."
+    },
+    {
+      "rank": 18,
+      "phrase": "epstein files · PDF · 2026 · DOJ · download",
+      "lane": "long",
+      "status": "strong",
+      "routes": [
+        "/guides/doj-epstein-data-sets",
+        "/guides/how-to-search-epstein-files"
+      ],
+      "evidence": "Hub-and-guide cluster serves the broad search/download intent without duplicating official PDFs.",
+      "next_action": "Monitor canonical navigation and original DOJ links; no assertion of search rank from presence alone."
+    },
+    {
+      "rank": 19,
+      "phrase": "epstein list / client list / unredacted",
+      "lane": "long",
+      "status": "strong",
+      "routes": [
+        "/guides/epstein-client-list-explained"
+      ],
+      "evidence": "Dedicated claim-versus-records guide answers misconception; avoids treating names in records as a roster of proven misconduct.",
+      "next_action": "Keep DOJ positions dated and distinguish redactions, address books, flight records, and adjudicated facts."
+    }
+  ]
+}
