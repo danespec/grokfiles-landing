@@ -131,19 +131,81 @@ def write_json_private(path,data):
     path.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
     fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_TRUNC,0o600)
     with os.fdopen(fd,'w') as f:json.dump(data,f,indent=2,ensure_ascii=False);f.write('\n')
-def put_kv(key,payload):
-    # Reuse exactly the traffic dashboard's established Cloudflare OAuth path.
+def oauth_for_kv():
+    """Use the existing Wrangler OAuth refresh, never write credentials to Git/logs."""
     import tomllib
-    cfg=tomllib.loads((Path.home()/'.wrangler/config/default.toml').read_text())
-    token=cfg['oauth_token']
+    path=Path.home()/'.wrangler/config/default.toml'
+    def read():
+        obj=tomllib.loads(path.read_text())
+        value=obj.get('expiration_time')
+        if not isinstance(value,str):
+            raise RuntimeError('Wrangler token expiry unavailable')
+        expires=dt.datetime.fromisoformat(value.replace('Z','+00:00'))
+        if expires.tzinfo is None:
+            raise RuntimeError('Wrangler token expiry unzoned')
+        return obj,expires
+    cfg,expiry=read()
+    if expiry<=dt.datetime.now(dt.timezone.utc)+dt.timedelta(minutes=10):
+        portable=Path.home()/'grok-tools/node-portable/current/bin'
+        npx=portable/'npx'
+        if not npx.is_file():
+            raise RuntimeError('Cached Wrangler CLI unavailable')
+        env={**os.environ,'PATH':str(portable)+':'+os.environ.get('PATH','/usr/bin:/bin:/usr/sbin:/sbin')}
+        refreshed=subprocess.run([str(npx),'--no-install','wrangler','whoami'],
+                                 env=env,cwd=str(WORK),capture_output=True,timeout=35)
+        if refreshed.returncode:
+            raise RuntimeError('Wrangler OAuth refresh failed; no KV write')
+        cfg,expiry=read()
+    if expiry<=dt.datetime.now(dt.timezone.utc)+dt.timedelta(minutes=2):
+        raise RuntimeError('Wrangler OAuth refresh still expired')
+    token=cfg.get('oauth_token')
+    if not isinstance(token,str) or len(token)<20:
+        raise RuntimeError('Wrangler OAuth token invalid')
+    return token
+
+def put_kv(key,payload):
+    if key not in (KEY_PRIVATE,KEY_PUBLIC):
+        raise ValueError('Trending writer limited to two approved KV keys')
+    if not isinstance(payload,dict) or payload.get('schema') not in ('gah_trending_topics_v1','gah_trending_gaplog_v1'):
+        raise ValueError('Trending writer requires approved payload schema')
+    if (key==KEY_PRIVATE)!=(payload['schema']=='gah_trending_gaplog_v1'):
+        raise ValueError('Trending key and payload type mismatch')
+    # Reuse the verified Wrangler identity and refresh before short-lived OAuth expiry.
+    token=oauth_for_kv()
     url=f'https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/storage/kv/namespaces/{NS}/values/'+urllib.parse.quote(key,safe='')
-    from urllib.request import Request,urlopen
+    import tempfile
     data=json.dumps(payload,separators=(',',':'),ensure_ascii=False).encode()
-    req=Request(url,data=data,method='PUT',headers={'Authorization':'Bearer '+token,
-                 'Content-Type':'application/json','User-Agent':'GAH-TrendingResearch/1.0'})
-    with urlopen(req,timeout=30) as resp:
-        result=json.loads(resp.read())
-    if not result.get('success'):raise RuntimeError('Cloudflare KV write not accepted')
+    fd,path=tempfile.mkstemp(prefix='gah-trending-kv-',suffix='.json',dir=WORK)
+    try:
+        with os.fdopen(fd,'wb') as out:
+            out.write(data)
+            out.flush()
+            os.fsync(out.fileno())
+        cfgtext='header = "Authorization: Bearer '+token+'"\n'
+        cfgtext+='header = "Content-Type: application/json"\n'
+        proc=subprocess.run(['/usr/bin/curl','--silent','--show-error','--fail','--max-time','25',
+           '--proto','=https','--request','PUT','-K','-','--data-binary','@'+path,url],
+           input=cfgtext,text=True,capture_output=True,timeout=30)
+        if proc.returncode:raise RuntimeError('Cloudflare KV write unavailable')
+        result=json.loads(proc.stdout)
+        if not result.get('success'):raise RuntimeError('Cloudflare KV rejected the write')
+        # A provider-accepted PUT is not sufficient. Read the EXACT same key
+        # back via authenticated GET and verify canonical JSON, fail-closed.
+        # Retry briefly for Cloudflare KV edge consistency.
+        import time
+        for attempt in range(3):
+            readback=subprocess.run(['/usr/bin/curl','--silent','--show-error','--fail',
+               '--max-time','18','--proto','=https','-K','-',url],
+               input=cfgtext,text=True,capture_output=True,timeout=23)
+            if readback.returncode==0:
+                try:
+                    confirmed=json.loads(readback.stdout)
+                    if confirmed==payload:return
+                except (ValueError,TypeError):pass
+            if attempt<2:time.sleep(2)
+        raise RuntimeError('Cloudflare KV readback did not match the payload')
+    finally:
+        os.unlink(path)
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--publish',action='store_true',help='Write namespaced public and private Cloudflare KV')
@@ -158,12 +220,13 @@ def main():
     print('SOURCE_COUNTS='+str(private['source_totals']),flush=True)
     print('GAPS='+str(len(private['unmatched_queries'])),'DENY='+str(len(private['denied_queries'])),flush=True)
     if args.publish:
-        # Preserve existing public feed when upstream yields insufficient evidence;
-        # stale data will hide automatically after 24 hours.
+        # Gap intelligence is private and useful even on quiet news days.
+        put_kv(KEY_PRIVATE,private)
+        print('PRIVATE_GAP_KV_UPDATED',flush=True)
+        # Do not invent public trends. Existing valid feed ages out after 24h.
         if public['status']!='active':
             print('NOT_PUBLISHED_INSUFFICIENT_SIGNALS',flush=True)
             return
-        put_kv(KEY_PRIVATE,private)
         put_kv(KEY_PUBLIC,public)
-        print('PUBLIC_AND_PRIVATE_KV_UPDATED',flush=True)
+        print('PUBLIC_KV_UPDATED',flush=True)
 if __name__=='__main__':main()

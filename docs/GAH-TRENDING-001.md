@@ -43,6 +43,16 @@ The first private KV PUT probe could not verify completion due to a URL/network 
 6. Recheck search and wiki CORS, rate limits, membership, false webhook rejection, sitemap pages, indexability, and rollback readiness. Never deploy stale GitHub main or touch live billing.
 7. The next content feed becomes active only when verified public trend signals produce 5–8 confidently matched, ethically safe queries and authorized KV publishing works.
 
+## Oct 11 authenticated KV gate hardening (GAH-TRENDING-017)
+
+The live six-hour `com.grokarchivehub.trending-research` LaunchAgent was **already** configured with `--publish`, contrary to the older snapshot note above. Its latest pre-hardening run wrote the **private** admin gap-log key and safely declined a public refresh because only three suggested items qualified. The public trending box remains suppressed by the unchanged 5-item minimum and 24-hour expiration.
+
+During an explicit readback regression, the Mac's cached Wrangler OAuth token had expired. Running cached `npx --no-install wrangler whoami` refreshed it without interactive reauthorization, new bindings, or account changes. An authorized subsequent Cloudflare KV write/readback to `gah:admin:trending:gaps:v1` succeeded. No public feed was written because the source data remained below threshold.
+
+The source-controlled refresher now refreshes expired or near-expired Wrangler OAuth via the already installed CLI with captured logs, never printing tokens. Its KV writer allows **only** the original two keys and their approved payload schemas, sends credentials through a private `curl --config -` stdin stream (not CLI args), then performs an authenticated exact-key GET and compares returned JSON to the intended payload. Three brief attempts accommodate short propagation lag. A mismatch or error marks the refresh failed and cannot claim a verified publication. Temp payload is deleted in a `finally` block; generated local logs are private. No credentials or production previews are committed.
+
+Verification gates: `python3 scripts/trending/test_trending_kv.py` checks refresh, key restrictions, secret-safe argv, transport failure, readback mismatch and cleanup; `node scripts/trending/test-trending.mjs` covers the fail-closed public renderer. Successful private KV verification does **not** certify 5–8 meaningful public trends or the full 19-target SEO keyword coverage. Original Ren keyword-strategy document is not present in this checked-out source snapshot, so do not invent an exact 19-term completeness count.
+
 ## Production post-release verification — 2026-10-11
 
 Live release of two guides and fail-closed Trending logic was verified across 116/116 sitemap URLs, with apex search HTTP 200, invalid Patreon webhook HTTP 401, invalid PayPal webhook HTTP 400, and all Pages settings/bindings preserved. Current production rollback is available.
