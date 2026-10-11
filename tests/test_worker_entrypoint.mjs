@@ -79,6 +79,25 @@ const mfProd = new Miniflare({
   t("staging search 503 carries privacy headers", res.headers.get("X-Robots-Tag") === "noindex, nofollow, noarchive");
 }
 
+// --- 3b. Every protected direct API route carries env into the proxy. ---
+for (const route of ["/api/answer", "/api/story", "/api/help"]) {
+  const res = await mf.dispatchFetch("https://staging.test" + route, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ q: "EFTA00000001", query: "EFTA00000001", no_ai: true }),
+  });
+  const body = await res.text();
+  t(route + " fail-closed 503", res.status === 503, `status=${res.status}`);
+  t(route + " uses staging env", body.includes("wiki_host_unconfigured"));
+}
+
+// --- 3c. Wrapped public routes also keep staging isolated from production. ---
+for (const route of ["/barak", "/research/evidence/calendar-epstein"]) {
+  const res = await mf.dispatchFetch("https://staging.test" + route);
+  const body = await res.text();
+  t(route + " fails closed on invalid staging host", res.status === 503 && body.includes("wiki_host_unconfigured"));
+}
+
 // --- 4. Staging HTML has no production GA4/AdSense activation ---
 {
   const res = await mf.dispatchFetch("https://staging.test/", {

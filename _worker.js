@@ -512,6 +512,7 @@ function wikiHost(env) {
 
 const WIKI_INTERNAL_PROXY_HEADER = "X-GAH-Internal-Wiki-Proxy";
 const WIKI_SERVICE_TOKEN_HEADER = "X-GAH-Wiki-Service-Token";
+const WIKI_SERVICE_AUTH_PATHS = new Set(["/api/search", "/api/answer", "/api/story", "/api/help"]);
 const WIKI_TO_APEX_REDIRECT_PATHS = new Set([
   "/grok-command-v4",
   "/research/evidence/calendar-epstein",
@@ -4199,7 +4200,13 @@ async function proxyProofLayer(request, env = {}) {
   headersForUpstream.set(WIKI_INTERNAL_PROXY_HEADER, "apex-proof-layer");
   // Inject only server-side Cloudflare secret; never send production token to a staging mock.
   const wikiServiceToken = typeof env?.GAH_WIKI_SERVICE_TOKEN === "string" ? env.GAH_WIKI_SERVICE_TOKEN : "";
-  if (!isStagingEnv(env) && target.hostname === WIKI_HOST && wikiServiceToken.length >= 32) {
+  if (
+    request.method === "POST" &&
+    WIKI_SERVICE_AUTH_PATHS.has(proxiedPath) &&
+    !isStagingEnv(env) &&
+    target.hostname === WIKI_HOST &&
+    wikiServiceToken.length >= 32
+  ) {
     headersForUpstream.set(WIKI_SERVICE_TOKEN_HEADER, wikiServiceToken);
   }
   // SEC-REMEDIATION (ren/security-remediation): never forward client
@@ -4365,10 +4372,7 @@ async function serveWikiHostNoindexRoute(request, env, path) {
   headersForUpstream.delete(WIKI_SERVICE_TOKEN_HEADER);
   headersForUpstream.delete("cookie");
   headersForUpstream.delete("authorization");
-  const serviceToken = typeof env?.GAH_WIKI_SERVICE_TOKEN === "string" ? env.GAH_WIKI_SERVICE_TOKEN : "";
-  if (!isStagingEnv(env) && target.hostname === WIKI_HOST && serviceToken.length >= 32) {
-    headersForUpstream.set(WIKI_SERVICE_TOKEN_HEADER, serviceToken);
-  }
+  // This public GET/HEAD proxy never needs the protected AI bearer token.
   const upstream = await fetch(new Request(target.toString(), {
     method: request.method,
     headers: headersForUpstream,
@@ -4415,10 +4419,7 @@ async function serveResearchIndexApex(request, env = {}) {
   headersForUpstream.delete(WIKI_SERVICE_TOKEN_HEADER);
   headersForUpstream.delete("cookie");
   headersForUpstream.delete("authorization");
-  const serviceToken = typeof env?.GAH_WIKI_SERVICE_TOKEN === "string" ? env.GAH_WIKI_SERVICE_TOKEN : "";
-  if (!isStagingEnv(env) && target.hostname === WIKI_HOST && serviceToken.length >= 32) {
-    headersForUpstream.set(WIKI_SERVICE_TOKEN_HEADER, serviceToken);
-  }
+  // This public GET/HEAD proxy never needs the protected AI bearer token.
   const upstream = await fetch(new Request(target.toString(), {
     method: request.method,
     headers: headersForUpstream,
@@ -4457,10 +4458,10 @@ async function serveResearchIndexApex(request, env = {}) {
   });
 }
 
-async function serveEpsteinEvidenceWithReaderReturn(request) {
+async function serveEpsteinEvidenceWithReaderReturn(request, env = {}) {
   const freshUrl = new URL(request.url);
   freshUrl.searchParams.set("gah_origin_fresh", `GAH-NAVIGATION-REPAIR-002-${Date.now()}`);
-  const upstream = await proxyProofLayer(new Request(freshUrl.toString(), request));
+  const upstream = await proxyProofLayer(new Request(freshUrl.toString(), request), env);
   const contentType = upstream.headers.get("Content-Type") || "";
   if (!contentType.toLowerCase().includes("text/html")) return upstream;
 
@@ -4502,10 +4503,10 @@ async function serveEpsteinEvidenceWithReaderReturn(request) {
   });
 }
 
-async function serveCalendarEvidenceWithDossierContext(request) {
+async function serveCalendarEvidenceWithDossierContext(request, env = {}) {
   const freshUrl = new URL(request.url);
   freshUrl.searchParams.set("gah_origin_fresh", `GAH-CALENDAR-EVIDENCE-DOSSIER-001-${Date.now()}`);
-  const upstream = await proxyProofLayer(new Request(freshUrl.toString(), request));
+  const upstream = await proxyProofLayer(new Request(freshUrl.toString(), request), env);
   const contentType = upstream.headers.get("Content-Type") || "";
   if (!contentType.toLowerCase().includes("text/html")) return upstream;
 
@@ -6151,10 +6152,10 @@ async function serveSitemapWithPublishedDispatches(request, env) {
   });
 }
 
-async function serveBarakPortalWithReviewLinks(request) {
+async function serveBarakPortalWithReviewLinks(request, env = {}) {
   const freshUrl = new URL(request.url);
   freshUrl.searchParams.set("gah_origin_fresh", `GAH-BARAK-SOURCE-MAP-001-${Date.now()}`);
-  const upstream = await proxyProofLayer(new Request(freshUrl.toString(), request));
+  const upstream = await proxyProofLayer(new Request(freshUrl.toString(), request), env);
   const contentType = upstream.headers.get("Content-Type") || "";
   if (!contentType.includes("text/html")) return upstream;
 
@@ -11127,7 +11128,7 @@ async function aiSearchInternalArchive(request, env, query, limit = 6) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ q, query: q, limit, fast: true, no_ai: true, ai_layer: "grounding_retrieval" })
   });
-  const response = await proxyProofLayer(searchRequest);
+  const response = await proxyProofLayer(searchRequest, env);
   const text = await response.text();
   let data = {};
   try {
@@ -18325,13 +18326,13 @@ export default {
     }
 
     if (path.startsWith("/api/")) {
-      return proxyProofLayer(request);
+      return proxyProofLayer(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && (path === "/pdf-lite" || path === "/pdf-lite.html")) {
       const freshUrl = new URL(request.url);
       freshUrl.searchParams.set("gah_origin_fresh", `SOURCE-2-PDF-HOTFIX-${Date.now()}`);
-      return proxyProofLayer(new Request(freshUrl.toString(), request));
+      return proxyProofLayer(new Request(freshUrl.toString(), request), env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && (url.pathname.startsWith("/evidence-engine/v1/") || url.pathname.startsWith("/evidence-engine/v2/") || url.pathname.startsWith("/evidence-data/"))) {
@@ -18367,7 +18368,7 @@ export default {
     }
 
     if (request.method === "GET" && path === "/barak") {
-      return serveBarakPortalWithReviewLinks(request);
+      return serveBarakPortalWithReviewLinks(request, env);
     }
 
     // GAH-INDEX-ROUTE-HOTFIX-001:
@@ -18442,11 +18443,11 @@ export default {
       if (/^EFTA[0-9]{8}$/.test(archiveId)) {
         const freshUrl = new URL(request.url);
         freshUrl.searchParams.set("gah_origin_fresh", `SOURCE-2-PDF-HOTFIX-${Date.now()}`);
-        let upstream = await proxyProofLayer(new Request(freshUrl.toString(), request));
+        let upstream = await proxyProofLayer(new Request(freshUrl.toString(), request), env);
         if ([502, 503, 504].includes(upstream.status)) {
           const retryUrl = new URL(request.url);
           retryUrl.searchParams.set("gah_origin_fresh", `SOURCE-2-PDF-RETRY-${Date.now()}`);
-          upstream = await proxyProofLayer(new Request(retryUrl.toString(), request));
+          upstream = await proxyProofLayer(new Request(retryUrl.toString(), request), env);
         }
         if (upstream.status === 404) return archiveUnavailableResponse(request, archiveId);
         return rewriteArchiveOcrSourceLink(upstream, request, archiveId);
@@ -18493,11 +18494,11 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/research/evidence/epstein-death") {
-      return serveEpsteinEvidenceWithReaderReturn(request);
+      return serveEpsteinEvidenceWithReaderReturn(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/research/evidence/calendar-epstein") {
-      return serveCalendarEvidenceWithDossierContext(request);
+      return serveCalendarEvidenceWithDossierContext(request, env);
     }
 
     if (
@@ -18627,9 +18628,9 @@ export default {
     if ((request.method === "GET" || request.method === "HEAD") && FRESH_PROOF_PATHS.has(path)) {
       const freshUrl = new URL(request.url);
       freshUrl.searchParams.set("gah_origin_fresh", `GAH-SEO-AUTHORITY-GRAPH-002-${Date.now()}`);
-      return proxyProofLayer(new Request(freshUrl.toString(), request));
+      return proxyProofLayer(new Request(freshUrl.toString(), request), env);
     }
 
-    return proxyProofLayer(request);
+    return proxyProofLayer(request, env);
   }
 };

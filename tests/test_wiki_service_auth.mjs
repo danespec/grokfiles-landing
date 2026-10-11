@@ -18,16 +18,24 @@ test('CORS restricted to wiki origin, no cookies',async()=>{
  assert.equal((await res.json()).ok,true);
 });
 const proxyChunk=slice('async function proxyProofLayer(request, env = {}) {','  const upstream = await fetch(');
-const proxyContext={Request,Response,Headers,URL,WIKI_HOST:'wiki.grokarchivehub.com',WIKI_INTERNAL_PROXY_HEADER:'X-GAH-Internal-Wiki-Proxy',WIKI_SERVICE_TOKEN_HEADER:'X-GAH-Wiki-Service-Token',cleanPath:p=>p,isStagingEnv:env=>String(env?.GAH_STAGING)==='true',wikiHost:env=>env?.GAH_WIKI_HOST||'wiki.grokarchivehub.com'};
+const proxyContext={Request,Response,Headers,URL,WIKI_HOST:'wiki.grokarchivehub.com',WIKI_INTERNAL_PROXY_HEADER:'X-GAH-Internal-Wiki-Proxy',WIKI_SERVICE_TOKEN_HEADER:'X-GAH-Wiki-Service-Token',WIKI_SERVICE_AUTH_PATHS:new Set(['/api/search','/api/answer','/api/story','/api/help']),cleanPath:p=>p,isStagingEnv:env=>String(env?.GAH_STAGING)==='true',wikiHost:env=>env?.GAH_WIKI_HOST||'wiki.grokarchivehub.com'};
 vm.runInNewContext(proxyChunk+'\n return {url:target.toString(),headers:headersForUpstream};\n}\nglobalThis.hop=proxyProofLayer;',proxyContext);
 function input(){return new Request('https://grokarchivehub.com/api/search',{method:'POST',headers:{'X-GAH-Wiki-Service-Token':'ATTACKER_VALUE',Cookie:'apex_session=sensitive',Authorization:'Bearer sample'},body:'{}'});}
-test('server token replaces spoofed token and strips credentials',async()=>{
- const h=(await proxyContext.hop(input(),{GAH_WIKI_SERVICE_TOKEN:'T'.repeat(40)})).headers;
- assert.equal(h.get('X-GAH-Wiki-Service-Token'),'T'.repeat(40));
- assert.equal(h.get('cookie'),null);assert.equal(h.get('authorization'),null);
+test('server token replaces spoofed token on all protected POST routes',async()=>{
+ for(const path of ['/api/search','/api/answer','/api/story','/api/help']){
+  const req=new Request('https://grokarchivehub.com'+path,{method:'POST',headers:{'X-GAH-Wiki-Service-Token':'ATTACKER_VALUE',Cookie:'apex_session=sensitive',Authorization:'Bearer sample'},body:'{}'});
+  const h=(await proxyContext.hop(req,{GAH_WIKI_SERVICE_TOKEN:'T'.repeat(40)})).headers;
+  assert.equal(h.get('X-GAH-Wiki-Service-Token'),'T'.repeat(40));
+  assert.equal(h.get('cookie'),null);assert.equal(h.get('authorization'),null);
+ }
 });
 test('no token secret means spoofed browser token stripped',async()=>{
  const h=(await proxyContext.hop(input(),{})).headers;
+ assert.equal(h.get('X-GAH-Wiki-Service-Token'),null);
+});
+test('service token is limited to the four protected POST routes',async()=>{
+ const request=new Request('https://grokarchivehub.com/api/source?id=EFTA00000001',{headers:{'X-GAH-Wiki-Service-Token':'ATTACKER_VALUE'}});
+ const h=(await proxyContext.hop(request,{GAH_WIKI_SERVICE_TOKEN:'T'.repeat(40)})).headers;
  assert.equal(h.get('X-GAH-Wiki-Service-Token'),null);
 });
 test('production token not sent to staging mock',async()=>{
