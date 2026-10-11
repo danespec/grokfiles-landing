@@ -9,6 +9,7 @@ This is a **single-recipient, owner-authorized, transactional notification chann
 - Fixed recipient: `grokcloudflare@gmail.com`.
 - Credentials: a **domain-scoped, sending-only** Resend API key restricted to the verified domain, stored outside Git in `~/_gah_builds/GAH-SIGNALS-004-private/resend-alerts.key` with mode **0600** and its containing directory **0700**. Never paste into repository, notes, terminal logs, browser, or an issue.
 - Private `resend-alerts-config.json` holds sender, recipient, key-file location and enabled status; mode **0600**. Both addresses are hardcoded in the program as additional accidental-misaddress protection.
+- HTTPS transport uses macOS `/usr/bin/curl` with normal certificate verification. The restricted credential is supplied via curl configuration on **stdin** rather than the process argument list or logs; the transient email payload file has mode 0600 and is deleted after the request. The local Homebrew Python HTTPS client did not provide a working certificate chain/API transport, so direct `urllib` was not activated.
 
 ## Behavior
 

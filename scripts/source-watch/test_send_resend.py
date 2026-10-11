@@ -41,6 +41,25 @@ class ResendTests(unittest.TestCase):
         self.assertTrue(req.headers["Authorization"].startswith("Bearer re_"))
         self.assertIn("Idempotency-key",req.headers)
         return (200,b'{"id":"sent-0001"}')
+    def test_curl_transport_keeps_credential_out_of_process_args(self):
+        from unittest.mock import patch
+        import urllib.request
+        req=urllib.request.Request(m.API_URL,data=b'{"test":true}',method="POST")
+        original=m.PRIVATE_DIR
+        m.PRIVATE_DIR=self.root
+        try:
+            def fake(args,**kw):
+                self.assertNotIn("re_secret-test-value",repr(args))
+                self.assertIn(b"Authorization: Bearer re_secret-test-value",kw["input"])
+                self.assertTrue((self.root).is_dir())
+                return types.SimpleNamespace(returncode=0,stdout=b'{"id":"fixture"}\n__GAH_RESEND_STATUS__200')
+            with patch.object(m.subprocess,"run",fake):
+                status,body=m.verified_curl_post(req,"re_secret-test-value","gah-test-01")
+            self.assertEqual(status,200)
+            self.assertIn(b"fixture",body)
+            self.assertFalse(list(self.root.glob(".gah-resend-*")))
+        finally:
+            m.PRIVATE_DIR=original
     def test_no_events_no_send(self):
         self.report({})
         self.assertEqual(m.deliver(self.root,self.cfg,transport=lambda r:self.fail("unwanted email"))["status"],"idle")
