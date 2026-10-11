@@ -46,3 +46,5 @@ The September 16 ECF 42 order calls for production of the administrative record 
 ## Scope and rate-control safeguards
 
 `official_pdf` validates `%PDF-` and hashes source bytes; no PDF contents are stored or reproduced. Paris press-release index changes are unfiltered publisher activity and do not establish involvement in any case. DOJ Data Sets 1 and 12 are *first-page* listings, not the full catalog. First successful source fetch is a baseline, not proof of a new filing or new press release. Source availability is reported per run and errors preserve prior hashes/links. FBI Vault remains HTTP 403 from both Mac and NAS; do not use alternate mirrors as conclusive proof of the official current part count.
+
+Transient transport timeouts receive **one retry** after one second; HTTP 403/404, malformed responses, expired RSS windows, and unexpected content are **not** retried. Failed runs retain their previous successful source baseline. This is bounded, not an unlimited crawler.

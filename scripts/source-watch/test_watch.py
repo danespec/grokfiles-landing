@@ -165,5 +165,24 @@ class WatchTests(unittest.TestCase):
         self.assertEqual(fail["failed"],1)
         good=notify.deliver(directory,lambda *a,**k:types.SimpleNamespace(returncode=0))
         self.assertEqual(good["delivered"],1)
+ def test_transient_network_retry_only(self):
+    s={"id":"commission","mode":"document", "url":"https://www.stortinget.no/a"}
+    calls=[]
+    long_html=("<html>"+"A relevant government status statement "+"text "*70+"</html>").encode()
+    def unstable(u):
+        calls.append(u)
+        if len(calls)==1:
+            raise RuntimeError("source_transport_failure")
+        return long_html
+    got=mod.observe_with_retry(s,unstable,lambda _:None)
+    self.assertEqual(got["mode"],"document")
+    self.assertEqual(len(calls),2)
+    blocked=[]
+    def forbidden(u):
+        blocked.append(u)
+        raise RuntimeError("source_unavailable_http_403")
+    with self.assertRaisesRegex(RuntimeError,"403"):
+        mod.observe_with_retry(s,forbidden,lambda _:None)
+    self.assertEqual(len(blocked),1)
 if __name__=="__main__":
  unittest.main(verbosity=2)
