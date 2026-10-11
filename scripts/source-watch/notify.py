@@ -52,6 +52,42 @@ def deliver(private_dir, runner=subprocess.run):
     return {"pending":count,"delivered":count if okay else 0,"failed":0 if okay else count,
             "channel":"mac_notification_center_only"}
 
+CRITICAL_COURT_SOURCES=("phang-dcd-official-rss","phang-dc-circuit-appeals-rss")
+
+def deliver_court_health(private_dir, report, runner=subprocess.run):
+    """Alert only for unavailable *court* feeds, at most once per condition/day.
+
+    Do not confuse access failure with no docket filing, legal noncompliance,
+    an underlying PACER document, or an evidence event. No remote delivery.
+    """
+    from datetime import datetime, timezone
+    private_dir=Path(private_dir)
+    unavailable=report.get("unavailable",{})
+    broken=sorted(name for name in CRITICAL_COURT_SOURCES if name in unavailable)
+    if not broken:
+        return {"critical_sources_unavailable":0,"delivered":0,"failed":0}
+    date=datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    fingerprint=date+"|"+"|".join(broken)
+    path=private_dir/"court-health-notified.json"
+    history=set(json.loads(path.read_text()).get("fingerprints",[])) if path.exists() else set()
+    if fingerprint in history:
+        return {"critical_sources_unavailable":len(broken),"delivered":0,"failed":0,"already_notified_today":True}
+    body="Official court activity feed unavailable; check GAH's private source-watch diagnostics."
+    script='display notification '+json.dumps(body)+' with title "GAH Court Watch degraded"'
+    try:
+        result=runner(["/usr/bin/osascript","-e",script],capture_output=True,timeout=12)
+        okay=(result.returncode==0)
+    except (OSError,subprocess.TimeoutExpired):
+        okay=False
+    if okay:
+        # Bound history to 365 entries and persist only on successful send.
+        from watch import write_secure
+        history.add(fingerprint)
+        write_secure(path,{"schema":"gah.source_watch.court_health.v1",
+                           "fingerprints":sorted(history)[-365:]})
+    return {"critical_sources_unavailable":len(broken),"delivered":1 if okay else 0,
+            "failed":0 if okay else 1,"channel":"mac_notification_center_only"}
+
 if __name__=="__main__":
     import sys
     dest=Path(sys.argv[1]) if len(sys.argv)>1 else Path.home()/"_gah_builds/GAH-SIGNALS-004-private"
