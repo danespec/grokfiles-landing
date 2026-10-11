@@ -90,5 +90,41 @@ class WatchTests(unittest.TestCase):
         mod.write_secure(p,{"ok":True})
         self.assertEqual(os.stat(p).st_mode & 0o777,0o600)
         self.assertEqual(os.stat(p.parent).st_mode & 0o777,0o700)
+ def test_court_rss_filters_target_and_stores_safe_id(self):
+    stamp="Sun, 11 Oct 2026 18:45:21 GMT"
+    feed=('<?xml version="1.0"?><rss version="2.0"><channel><lastBuildDate>'+stamp+'</lastBuildDate>'+
+          '<item><title>1:26-cv-01417 PHANG v. BLANCHE</title><description>[Notice of Filing] (ECF 52)</description><link>https://ecf.dcd.uscourts.gov/cgi-bin/DktRpt.pl?292000</link><guid>same-guid</guid><pubDate>'+stamp+'</pubDate></item>'+
+          '<item><title>1:26-cv-01417 PHANG v. BLANCHE</title><description>[Order] (ECF 53)</description><link>https://ecf.dcd.uscourts.gov/cgi-bin/DktRpt.pl?292000</link><guid>same-guid</guid><pubDate>'+stamp+'</pubDate></item>'+
+          '<item><title>1:26-cv-01418 PHANG v. DIFFERENT</title><description>[Notice]</description><link>https://ecf.dcd.uscourts.gov/cgi-bin/DktRpt.pl?292001</link></item></channel></rss>').encode()
+    source={'id':'phang','mode':'court_rss','url':'https://ecf.dcd.uscourts.gov/cgi-bin/rss_outside.pl',
+            'case_regex':r'(?:1:26-cv-0?1417\b|PHANG\s+v\.?\s+BLANCHE)'}
+    now=mod.dt.datetime(2026,10,11,19,0,tzinfo=mod.UTC)
+    item=mod.parse_court_rss(source,feed,now=now)
+    self.assertEqual(item['rss_items_in_window'],3)
+    self.assertEqual(len(item['links']),2)
+    ev,status=mod.compare(None,item,'phang')
+    self.assertEqual(len(ev),2)
+    self.assertEqual({x['kind'] for x in ev},{'target_case_entry_first_observed'})
+    second,status=mod.compare({'mode':'court_rss','links':item['links']},item,'phang')
+    self.assertEqual(second,[])
+    smaller=feed.replace(b'<item><title>1:26-cv-01417 PHANG v. BLANCHE</title><description>[Order] (ECF 53)</description><link>https://ecf.dcd.uscourts.gov/cgi-bin/DktRpt.pl?292000</link><guid>same-guid</guid><pubDate>'+stamp.encode()+b'</pubDate></item>',b'')
+    fresh=mod.parse_court_rss(source,smaller,now=now)
+    ev,_=mod.compare({'mode':'court_rss','links':item['links']},fresh,'phang')
+    self.assertEqual(ev,[])
+ def test_court_rss_stale_feed_rejected(self):
+    bad=b'<rss><channel><lastBuildDate>Sun, 01 Oct 2023 13:00:00 GMT</lastBuildDate><item><title>Other case</title></item></channel></rss>'
+    s={'id':'phang','mode':'court_rss','url':'https://ecf.dcd.uscourts.gov/cgi-bin/rss_outside.pl','case_regex':'phang'}
+    with self.assertRaisesRegex(RuntimeError,'stale_or_future'):
+        mod.parse_court_rss(s,bad,now=mod.dt.datetime(2026,10,11,tzinfo=mod.UTC))
+ def test_court_rss_invalid_xml_and_host(self):
+    s={'id':'phang','mode':'court_rss','url':'https://ecf.dcd.uscourts.gov/cgi-bin/rss_outside.pl','case_regex':'phang'}
+    with self.assertRaisesRegex(RuntimeError,'invalid_xml'):
+        mod.parse_court_rss(s,b'<rss>')
+    timestamp=mod.email.utils.format_datetime(mod.dt.datetime.now(mod.UTC))
+    injected=('<rss><channel><lastBuildDate>'+timestamp+'</lastBuildDate><item>'+
+      '<title>PHANG v. BLANCHE</title><description>Notice</description>'+
+      '<link>https://evil.example/docket/1417</link></item></channel></rss>').encode()
+    with self.assertRaisesRegex(RuntimeError,'unsafe_docket_link'):
+        mod.parse_court_rss(s,injected)
 if __name__=="__main__":
  unittest.main(verbosity=2)
