@@ -37,6 +37,12 @@
       "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=Epstein%20Files%20Transparency%20Act&per_page=100"
     },
     {
+      "id": "phang-govinfo-opinions",
+      "scope": "Official USCOURTS opinions for Phang case; NOT all docket filings",
+      "mode": "document",
+      "url": "https://www.govinfo.gov/app/details/USCOURTS-dcd-1_26-cv-01417/USCOURTS-dcd-1_26-cv-01417-2/context"
+    },
+    {
       "id": "phang-courtlistener",
       "scope": "Public RECAP mirror, coverage and freshness not guaranteed",
       "mode": "document",

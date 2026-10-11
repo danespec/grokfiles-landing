@@ -22,7 +22,7 @@ from urllib.parse import urljoin, urlparse
 HERE = Path(__file__).resolve().parent
 DEFAULT_PRIVATE = Path.home() / "_gah_builds" / "GAH-SIGNALS-004-private"
 ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
-           "www.federalregister.gov", "www.finance.senate.gov", "www.courtlistener.com",
+           "www.federalregister.gov", "www.govinfo.gov", "www.finance.senate.gov", "www.courtlistener.com",
            "dockets.justia.com", "www.stortinget.no", "stortinget.no"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
@@ -74,7 +74,7 @@ class Extract(HTMLParser):
             if self.href is not None:
                 self.label.append(value)
 
-def fetch(url, timeout=18):
+def fetch(url, timeout=28):
     if not safe_url(url):
         raise ValueError("disallowed source URL")
     cmd = ["curl", "--silent", "--show-error", "--location",
@@ -92,7 +92,9 @@ def fetch(url, timeout=18):
     target = fields[1] if len(fields)>1 else ""
     if not safe_url(target):
         raise RuntimeError("redirect_to_unapproved_host")
-    if proc.returncode or status != 200:
+    if proc.returncode:
+        raise RuntimeError("source_transport_failure")
+    if status != 200:
         raise RuntimeError("source_unavailable_http_"+str(status))
     if len(data) > 3500000 or not data:
         raise RuntimeError("source_empty_or_oversized")

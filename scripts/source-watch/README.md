@@ -10,7 +10,7 @@ Run `python3 scripts/source-watch/watch.py --update` on the authorized Mac to cr
 - Federal Register keyword search: observe new search results; this is not proof of full legal compliance with the Act's redaction-justification requirement.
 - Norway Storting September 30 and October 1 hearing transcript pages: observe changed visible text; changes are editorial review leads, not criminal findings.
 - FBI Vault Parts index: configured, but Mac requests receive HTTP 403. Status **unavailable**, not “no new parts.”
-- Phang CourtListener and Justia mirrors: unavailable from this Mac; no docket freshness guarantee.
+- Official GovInfo Phang *opinions* page: accessible; can flag revisions/new judicial opinions but **not docket filings or party submissions**. CourtListener and Justia docket mirrors remain unavailable from this Mac; no docket freshness guarantee.
 - Additional coverage gaps remain listed in `sources.json`: French prosecutors, UK source-specific orders, October grand-jury filings, UCL event source URL, ad data, litigation records, and item-level DOJ before/after hashes.
 
 ## Source integrity rules
@@ -28,6 +28,6 @@ State and events remain outside the repository. `latest-report.json` is a privat
 To stop a macOS LaunchAgent used with this script: `launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.gah.primary-source-watch.plist`. This does not delete the private evidence ledger. The standalone runner has no credentials or privileged operations. Do not assume a sleeping or powered-off Mac ran the checks.
 
 ## Gating before Issue #9 closure
-The 6/9 successfully accessible configured sources do **not** qualify as complete eight-lead monitoring. Add reliable FBI Vault and Phang docket access, expand the missing official-source adapters, test archival per-file hashes and dates, provide a non-sensitive health report, and add editorial review/acknowledgement before considering automatic delivery. Keep the public Trending mechanism separate.
+The reachable configured sources (7/10 as of the initial test, with occasional source timeouts) do **not** qualify as complete eight-lead monitoring. Add reliable FBI Vault and Phang docket access, expand the missing official-source adapters, test archival per-file hashes and dates, provide a non-sensitive health report, and add editorial review/acknowledgement before considering automatic delivery. Keep the public Trending mechanism separate.
 
 GitHub: https://github.com/danespec/grokfiles-landing/issues/9
