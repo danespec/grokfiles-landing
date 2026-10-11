@@ -16932,9 +16932,10 @@ function entitlementFromWebhookPayload(payload) {
 
 async function recordPatreonWebhookEvent(env, payload, request, body, commit = false) {
   // Patreon webhook data.id identifies the *member*, not an individual delivery.
-  // Derive a stable event fingerprint from the signed body plus event type.
+  // Derive a stable event fingerprint only from the signed body. The event
+  // type header is not signed, and must not allow replay-ID manipulation.
   const eventType = String(request.headers.get("X-Patreon-Event") || payload?.type || payload?.data?.type || "unknown").slice(0, 80);
-  const eventId = "sha256:" + await sha256Hex(eventType + "\n" + body);
+  const eventId = "sha256:" + await sha256Hex(body);
   try {
     await env.MEMBERS_DB.prepare(
       "CREATE TABLE IF NOT EXISTS patreon_webhook_events (event_id TEXT PRIMARY KEY, event_type TEXT, received_at TEXT)"
