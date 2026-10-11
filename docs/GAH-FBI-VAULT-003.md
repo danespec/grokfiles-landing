@@ -32,3 +32,12 @@ Original PDF: https://vault.fbi.gov/records-regarding-the-review-of-the-investig
 ## Deployment checkpoints
 Protected staging must return 302 to Cloudflare Access; production routes, canonical, 121 unique sitemap URLs (including both existing source-watch routes), wiki and PayPal activation flag must be verified before and after release.
 Record production deployment ID and previous rollback target. Never enable payment or alter credentials.
+
+## Production release — October 11, 2026
+- Combined source-watch commit: 7b3db25 (merges source-watch 9b06d77 and deep-dive eef7dde).
+- Production Cloudflare Pages deployment: fb60a41d (grokfiles-landing, branch main, manual Wrangler deploy from tracked git archive).
+- Previous production rollback target: 81ed8f9f-5390-4abc-89fa-4389c4cab544.
+- Protected staging combined deployment: c63e6741, HTTP 302 to Cloudflare Access.
+- Production home, latest, search, archive, both existing source-watch articles, new deep-dive, client-list and EFTA guides, sitemap and wiki: HTTP 200.
+- Live sitemap: 121 unique canonical entries. All three source-watch pieces have a single H1, exact canonical, robots index/follow.
+- PayPal launch-status after deployment still showed checkout false and operator approval false. No commerce, secrets, DB, or Ren security branch mutation.
