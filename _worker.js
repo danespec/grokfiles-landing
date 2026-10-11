@@ -16930,34 +16930,35 @@ function entitlementFromWebhookPayload(payload) {
   };
 }
 
-async function recordPatreonWebhookEvent(env, payload, request) {
-  const eventId = String(
-    request.headers.get("X-Patreon-Event-Id")
-    || payload?.event_id
-    || payload?.id
-    || payload?.data?.id
-    || ""
-  ).trim();
-  if (!eventId) return { duplicate: false, recorded: false, eventId: "" };
-  const eventType = String(payload?.type || payload?.data?.type || "unknown").slice(0, 80);
+async function recordPatreonWebhookEvent(env, payload, request, body, commit = false) {
+  // Patreon webhook data.id identifies the *member*, not an individual delivery.
+  // Derive a stable event fingerprint from the signed body plus event type.
+  const eventType = String(request.headers.get("X-Patreon-Event") || payload?.type || payload?.data?.type || "unknown").slice(0, 80);
+  const eventId = "sha256:" + await sha256Hex(eventType + "\n" + body);
   try {
     await env.MEMBERS_DB.prepare(
       "CREATE TABLE IF NOT EXISTS patreon_webhook_events (event_id TEXT PRIMARY KEY, event_type TEXT, received_at TEXT)"
     ).run();
-    await env.MEMBERS_DB.prepare(
-      "INSERT INTO patreon_webhook_events (event_id, event_type, received_at) VALUES (?, ?, ?)"
+    if (!commit) {
+      const prior = await env.MEMBERS_DB.prepare(
+        "SELECT event_id FROM patreon_webhook_events WHERE event_id = ? LIMIT 1"
+      ).bind(eventId).first();
+      return { ok: true, duplicate: Boolean(prior), eventId, eventType };
+    }
+    // Commit only AFTER member updates and revocations succeed, so provider
+    // retries can recover interrupted deliveries rather than being discarded.
+    const inserted = await env.MEMBERS_DB.prepare(
+      "INSERT OR IGNORE INTO patreon_webhook_events (event_id, event_type, received_at) VALUES (?, ?, ?)"
     ).bind(eventId, eventType, nowIso()).run();
-    return { duplicate: false, recorded: true, eventId };
-  } catch (error) {
-    if (/unique|constraint|primary/i.test(String(error?.message || error))) return { duplicate: true, recorded: true, eventId };
+    if (inserted?.success === false) throw new Error("event_commit_failed");
+    return { ok: true, duplicate: inserted?.meta?.changes === 0, eventId, eventType };
+  } catch (_) {
     await auditMembershipEvent(env, "webhook_idempotency_unavailable", {
-      route: new URL(request.url).pathname,
-      detail: { eventType }
+      route: new URL(request.url).pathname, detail: { eventType }
     });
-    return { duplicate: false, recorded: false, eventId };
+    return { ok: false, duplicate: false, eventId, eventType };
   }
 }
-
 async function handlePatreonWebhook(request, env) {
   const setupMissing = [];
   if (!env.MEMBERS_DB || typeof env.MEMBERS_DB.prepare !== "function") setupMissing.push("Bind D1 as MEMBERS_DB");
@@ -16979,7 +16980,12 @@ async function handlePatreonWebhook(request, env) {
   } catch (_) {
     return new Response("Invalid JSON", { status: 400, headers: { "Cache-Control": "no-store" } });
   }
-  const webhookEvent = await recordPatreonWebhookEvent(env, payload, request);
+  const webhookEvent = await recordPatreonWebhookEvent(env, payload, request, body);
+  if (!webhookEvent.ok) {
+    return new Response("Webhook temporarily unavailable", {
+      status: 503, headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" }
+    });
+  }
   if (webhookEvent.duplicate) {
     await auditMembershipEvent(env, "webhook_duplicate_ignored", {
       route: new URL(request.url).pathname,
@@ -17004,6 +17010,12 @@ async function handlePatreonWebhook(request, env) {
     });
   } else {
     await auditMembershipEvent(env, "webhook_unmapped_payload", { route: new URL(request.url).pathname });
+  }
+  const completed = await recordPatreonWebhookEvent(env, payload, request, body, true);
+  if (!completed.ok) {
+    return new Response("Webhook temporarily unavailable", {
+      status: 503, headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" }
+    });
   }
   return new Response("ok", {
     status: 200,
