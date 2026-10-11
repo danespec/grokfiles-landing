@@ -1,0 +1,187 @@
+{
+  "schema": "gah.ren_seo_19_live_audit.v1",
+  "checked_at_utc": "2026-10-11T23:16:00+00:00",
+  "source": "Ren’s 2026-10-11 Epstein Keyword Strategy.html (19 exact rows; rank 17 mailbox redacted in public matrix)",
+  "status": "public_route_metadata_only",
+  "google_indexed": null,
+  "search_rankings": null,
+  "keyword_volumes": null,
+  "total_keywords": 19,
+  "counts": {
+    "strong": 6,
+    "partial": 6,
+    "gap": 7
+  },
+  "sitemap_http": 200,
+  "sitemap_urls": 121,
+  "mapped_routes": 15,
+  "mapped_routes_all_pass": true,
+  "unexpected_route_results": [],
+  "routes": {
+    "/dispatches/epstein-jail-logs": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Epstein Jail Logs: How to Read the Record | Grok Archive Hub",
+      "h1": "Epstein Jail Logs: How to Read the Record",
+      "canonical": "https://grokarchivehub.com/dispatches/epstein-jail-logs",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/dispatches/epstein-mcc-timeline": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Epstein MCC Timeline: Records, Jail Logs & Open Gaps (dispatches) · Grok Archive Hub",
+      "h1": "Epstein MCC Timeline: What the Records Actually Show",
+      "canonical": "https://grokarchivehub.com/dispatches/epstein-mcc-timeline",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/evidence-briefs/leon-black-158m-170m-epstein-payments": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "$158 Million Became $170 Million: Reconstructing Leon Black’s Payments to Jeffrey Epstein | Grok Archive Hub",
+      "h1": "$158 Million Became $170 Million: Reconstructing Leon Black’s Payments to Jeffrey Epstein",
+      "canonical": "https://grokarchivehub.com/evidence-briefs/leon-black-158m-170m-epstein-payments",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/guides/doj-epstein-data-sets": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Epstein Files Data Sets 1–12: Official DOJ Release Guide | Grok Archive Hub",
+      "h1": "Epstein Files Data Sets 1–12",
+      "canonical": "https://grokarchivehub.com/guides/doj-epstein-data-sets",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 3,
+      "official_doj_links": 16
+    },
+    "/guides/epstein-client-list-explained": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Was There an Epstein Client List? What DOJ Said—and What the Records Show | Grok Archive Hub",
+      "h1": "Was there really an Epstein “client list”?",
+      "canonical": "https://grokarchivehub.com/guides/epstein-client-list-explained",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 3,
+      "official_doj_links": 2
+    },
+    "/guides/how-to-search-epstein-files": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "How to Search the Epstein Files: DOJ Library, PDF Search and EFTA Numbers | Grok Archive Hub",
+      "h1": "How to search the Epstein files",
+      "canonical": "https://grokarchivehub.com/guides/how-to-search-epstein-files",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 3,
+      "official_doj_links": 7
+    },
+    "/investigations/black-family-partners-financial-trust-esww-sale": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "$5.5M Paid in 2012. ESWW Transfer Still Broken in 2015. | Grok Archive Hub",
+      "h1": "$5.5 Million Paid in 2012. The ESWW Stock Transfer Was Still Being Fixed in 2015.",
+      "canonical": "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/investigations/efta-compliance-tracker": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "EFTA Compliance Tracker | Grok Archive Hub",
+      "h1": "EFTA Compliance Tracker",
+      "canonical": "https://grokarchivehub.com/investigations/efta-compliance-tracker",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/investigations/epstein-december-6-7-2007-decision-gap": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "December 6–7, 2007: The Victim Letters, the Defense Papers, and the Missing Decision Record | Grok Archive Hub",
+      "h1": "December 6–7, 2007: The Victim Letters, the Defense Papers, and the Missing Decision Record",
+      "canonical": "https://grokarchivehub.com/investigations/epstein-december-6-7-2007-decision-gap",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 3
+    },
+    "/investigations/epstein-npa-defense-access-victim-notification": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Who Got a Seat at the Table? Defense Access, Victim Silence and the Epstein NPA | Grok Archive Hub",
+      "h1": "Who Got a Seat at the Table? Defense Access, Victim Silence and the Epstein NPA",
+      "canonical": "https://grokarchivehub.com/investigations/epstein-npa-defense-access-victim-notification",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/investigations/fbi-vault-redaction-chronology-phang": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "FBI Vault Part 13: March Redaction Orders, July Statement Emails, and the Phang Case | GAH",
+      "h1": "FBI Vault Part 13: what the March redaction instructions and July statement emails actually show",
+      "canonical": "https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 0
+    },
+    "/investigations/hold-the-letter": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Hold the letter | Grok Archive Hub",
+      "h1": "The letters were ready. Then came the instruction: “Hold the letter.”",
+      "canonical": "https://grokarchivehub.com/investigations/hold-the-letter",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 1
+    },
+    "/investigations/wyden-banker-302-deutsche-interviews": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Wyden’s Missing Banker 302 vs. Three Public Deutsche Interviews | GAH",
+      "h1": "Three Deutsche Bank 302s Are Public. Wyden Says a Banker Report Is Still Missing.",
+      "canonical": "https://grokarchivehub.com/investigations/wyden-banker-302-deutsche-interviews",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 2,
+      "official_doj_links": 8
+    },
+    "/methodology/how-not-to-overread-flight-logs": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "How Not to Overread Flight Logs | Grok Archive Hub",
+      "h1": "How Not to Overread Flight Logs",
+      "canonical": "https://grokarchivehub.com/methodology/how-not-to-overread-flight-logs",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 1,
+      "official_doj_links": 0
+    },
+    "/redacted-files": {
+      "http": 200,
+      "sitemap": true,
+      "self_canonical": true,
+      "title": "Redacted Files Lane | Grok Archive Hub",
+      "h1": "Redacted Files Lane",
+      "canonical": "https://grokarchivehub.com/redacted-files",
+      "robots_meta": "index,follow",
+      "jsonld_blocks": 1,
+      "official_doj_links": 0
+    }
+  }
+}
