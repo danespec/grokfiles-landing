@@ -26,7 +26,7 @@ HERE = Path(__file__).resolve().parent
 DEFAULT_PRIVATE = Path.home() / "_gah_builds" / "GAH-SIGNALS-004-private"
 ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
            "www.federalregister.gov", "www.govinfo.gov", "www.finance.senate.gov",
-           "ecf.dcd.uscourts.gov", "www.courtlistener.com",
+           "ecf.dcd.uscourts.gov", "ecf.cadc.uscourts.gov", "www.courtlistener.com",
            "dockets.justia.com", "www.stortinget.no", "stortinget.no",
            "www.tribunal-de-paris.justice.fr", "www.ucl.ac.uk"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
@@ -120,8 +120,12 @@ def parse_court_rss(source, raw, now=None):
         raise RuntimeError("court_rss_invalid_schema")
     items = channel.findall("item")
     build = channel.findtext("lastBuildDate")
-    if not build or not items:
+    if not build or (not items and not source.get("rss_allow_empty",False)):
         raise RuntimeError("court_rss_empty_or_undated")
+    # D.C. Circuit emits EDT/EST abbreviations, which email.utils may parse
+    # as naive/local timestamps. Normalize the offset explicitly to UTC.
+    build = re.sub(r"\s+EDT$"," -0400",build)
+    build = re.sub(r"\s+EST$"," -0500",build)
     try:
         when = email.utils.parsedate_to_datetime(build).astimezone(UTC)
     except (TypeError, ValueError) as exc:

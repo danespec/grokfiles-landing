@@ -44,6 +44,14 @@
       "case_regex": "(?:1:26-cv-0?1417\\b|PHANG\\s+v\\.?\\s+BLANCHE)"
     },
     {
+      "id": "phang-dc-circuit-appeals-rss",
+      "scope": "Official D.C. Circuit orders/opinions/judgments RSS for related Blanche appeals 26-5299 and 26-5334; not a complete docket",
+      "mode": "court_rss",
+      "url": "https://ecf.cadc.uscourts.gov/n/beam/servlet/TransportRoom?servlet=RSSGenerator",
+      "rss_allow_empty": true,
+      "case_regex": "(?:\\b26-5299\\b|\\b26-5334\\b|PHANG\\s+v\\.?\\s+BLANCHE)"
+    },
+    {
       "id": "phang-govinfo-opinions",
       "scope": "Official USCOURTS opinions for Phang case; NOT all docket filings",
       "mode": "document",
@@ -121,6 +129,7 @@
     "Phang: official D.D.C. public RSS detects recent public docket activity only. Filing text may require PACER; administrative record delivered solely to plaintiff or sealed is invisible",
     "France prosecutor primary PDF tracked; press list is broad and new case documents might appear elsewhere. The 13 potential victims count is a separate assertion requiring direct source confirmation",
     "UCL lecture exact primary URL identified but Mac HTTP 403; monitor cannot observe it until access is restored",
-    "DOJ Data Set 1 and 12 monitors cover only first index pages; complete pagination, per-file byte hashing and authenticated archived comparisons remain unimplemented"
+    "DOJ Data Set 1 and 12 monitors cover only first index pages; complete pagination, per-file byte hashing and authenticated archived comparisons remain unimplemented",
+    "D.C. Circuit appeals RSS is orders/opinions/judgments only and may be empty on quiet days; motions and sealed appellate filings still require verified PACER/authorized review"
   ]
 }

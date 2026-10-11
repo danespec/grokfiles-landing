@@ -184,5 +184,22 @@ class WatchTests(unittest.TestCase):
     with self.assertRaisesRegex(RuntimeError,"403"):
         mod.observe_with_retry(s,forbidden,lambda _:None)
     self.assertEqual(len(blocked),1)
+ def test_official_appellate_rss_empty_fresh_window(self):
+    s={"id":"phang-dc-circuit-appeals-rss","mode":"court_rss","url":"https://ecf.cadc.uscourts.gov/n/beam/servlet/TransportRoom?servlet=RSSGenerator", "case_regex":r"(?:26-5299|26-5334)", "rss_allow_empty":True}
+    feed=b'<rss><channel><title>D.C. Circuit Recent Entries</title><lastBuildDate>Sun, 11 Oct 2026 15:27:07 EDT</lastBuildDate></channel></rss>'
+    at=mod.dt.datetime(2026,10,11,19,30,tzinfo=mod.UTC)
+    obj=mod.parse_court_rss(s,feed,now=at)
+    self.assertEqual(obj["links"],{})
+    self.assertEqual(obj["rss_items_in_window"],0)
+    self.assertEqual(obj["rss_last_build"],"2026-10-11T19:27:07+00:00")
+    with self.assertRaisesRegex(RuntimeError,"empty_or_undated"):
+        mod.parse_court_rss({**s,"rss_allow_empty":False},feed,now=at)
+ def test_official_appellate_rss_matches_consolidated_case(self):
+    s={"id":"phang-dc-circuit-appeals-rss","mode":"court_rss","url":"https://ecf.cadc.uscourts.gov/n/beam/servlet/TransportRoom?servlet=RSSGenerator", "case_regex":r"(?:26-5299|26-5334)", "rss_allow_empty":True}
+    feed=b'<rss><channel><lastBuildDate>Sun, 11 Oct 2026 15:27:07 EDT</lastBuildDate><item><title>26-5334 Phang v. Blanche</title><description>[ORDER] (ECF 2195511)</description><link>https://ecf.cadc.uscourts.gov/n/beam/servlet/TransportRoom?servlet=CaseSummary&amp;caseId=5334</link><guid>case-5334-3</guid><pubDate>Sun, 11 Oct 2026 15:26:00 EDT</pubDate></item></channel></rss>'
+    at=mod.dt.datetime(2026,10,11,19,30,tzinfo=mod.UTC)
+    obj=mod.parse_court_rss(s,feed,now=at)
+    self.assertEqual(len(obj["links"]),1)
+    self.assertEqual(mod.compare({},obj,s["id"])[0][0]["kind"],"target_case_docket_activity")
 if __name__=="__main__":
  unittest.main(verbosity=2)
