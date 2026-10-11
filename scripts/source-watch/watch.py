@@ -17,6 +17,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -237,6 +238,16 @@ def compare(previous, current, name):
                                else "Text change needs primary document/version audit; no allegation implied"})
     return events, "compared"
 
+def observe_with_retry(source, transport=fetch, sleeper=time.sleep):
+    """Retry one transient network failure; never retry 403/404 or bad source data."""
+    try:
+        return observe(source,transport)
+    except RuntimeError as exc:
+        if str(exc) not in {"source_transport_failure", "fetch_transport_failure"}:
+            raise
+    sleeper(1)
+    return observe(source,transport)
+
 def build_report(catalog, previous, transport=fetch, now=utcnow):
     ids = [x["id"] for x in catalog["sources"]]
     if len(ids) != len(set(ids)):
@@ -244,7 +255,7 @@ def build_report(catalog, previous, transport=fetch, now=utcnow):
     observations = {}
     errors = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        futures = {pool.submit(observe, s, transport): s["id"] for s in catalog["sources"]}
+        futures = {pool.submit(observe_with_retry, s, transport): s["id"] for s in catalog["sources"]}
         for future in concurrent.futures.as_completed(futures):
             key = futures[future]
             try:
