@@ -14,6 +14,8 @@ Date: October 11, 2026. Owner approval for **production publication has not been
 - Both existing guides gain visible Q&A and matching schema.org `FAQPage` JSON-LD. They retain existing `TechArticle` JSON-LD.
 - New articles include visible Q&A and matching `FAQPage`, plus `Article`/`TechArticle` schema, canonical and descriptive metadata.
 - The homepage and `/latest` include permanent internal links to the articles, independent of whether the dynamic Trending feed has adequate signals.
+- Review corrections: direct reciprocal cross-links between the new guides; a direct official PDF link for EFTA00013764 with age-verification notice; Section 2(c)(2) Federal Register justification duty and Section 3 post-completion congressional report clarified in the Act guide.
+- Test assertions now independently inspect all four `/latest` links and both article cross-links rather than relying on homepage-only proxies. Security tests re-run after installing locked `miniflare` dependency in the isolated checkout.
 
 **Search markup realism:** Google's 2023-onward `FAQPage` rich result display is generally restricted to well-known authoritative government and health websites. These schema blocks are semantically valid and reflect visible text, but GAH should not forecast FAQ rich results or higher search rankings solely from them. Reference: https://developers.google.com/search/blog/2023/08/howto-faq-changes
 
@@ -27,7 +29,7 @@ Date: October 11, 2026. Owner approval for **production publication has not been
 
 ## Tests and staging status
 
-- `node tests/test_seo_source_audits.mjs`: 28/28 checks passed, covering four route responses, canonical/H1, structured FAQ answers appearing in visible page text, staging noindex, internal links, sitemap coverage, exact primary-source links, and all 12 DOJ index links.
+- `node tests/test_seo_source_audits.mjs`: 29/29 checks passed, covering four route responses, canonical/H1, structured FAQ answers appearing in visible page text, staging noindex, internal links, sitemap coverage, exact primary-source links, and all 12 DOJ index links.
 - Inherited `node --test tests/test_worker_entrypoint.mjs tests/test_wiki_service_auth.mjs tests/test_path_leak.mjs`: 6/6 test files passed, with no failures; staging isolation remains enforced.
 - Cloudflare Pages staging compilation and deployment passed: `https://83e5ce84.gah-staging-517b8499.pages.dev` (Access HTTP 302, owner-only).
 - No Cloudflare Pages production deployment, secret changes, billing settings, Patreon activity or database writes occurred.
