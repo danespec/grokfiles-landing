@@ -24,6 +24,7 @@ EXPECTED_FROM="Grok Archive Hub Alerts <alerts@grokarchivehub.com>"
 EXPECTED_TO="grokcloudflare@gmail.com"
 CRITICAL=("phang-dcd-official-rss","phang-dc-circuit-appeals-rss")
 PRIVATE_DIR=Path.home()/"_gah_builds/GAH-SIGNALS-004-private"
+FEC_PRIVATE_DIR=Path.home()/"_gah_builds/GAH-FEC-009-private"
 BATCH_LIMIT=20
 SOURCE_RE=re.compile(r"^[a-z0-9][a-z0-9-]{0,80}$")
 
@@ -85,7 +86,10 @@ def court_health(current_report, sent, now):
 
 def plan(private_dir, acknowledged, now=None):
     now=now or dt.datetime.now(dt.timezone.utc)
-    events=read_review_events(private_dir/"events.jsonl",set(acknowledged))
+    primary=read_review_events(private_dir/"events.jsonl",set(acknowledged))
+    fec=read_review_events(FEC_PRIVATE_DIR/"events.jsonl",set(acknowledged))
+    # Fair-share the fixed 20-event batch between public-record pipelines.
+    events=(primary[:10]+fec[:10]+primary[10:]+fec[10:])[:BATCH_LIMIT]
     report_file=private_dir/"latest-report.json"
     health=json.loads(report_file.read_text()) if report_file.exists() else {"unavailable":{}}
     broken,health_marker=court_health(health,set(acknowledged),now)

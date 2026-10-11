@@ -17,6 +17,9 @@ class ResendTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root=Path(self.temp.name)
         os.chmod(self.root,0o700)
+        original_fec=m.FEC_PRIVATE_DIR
+        m.FEC_PRIVATE_DIR=self.root/"fec-test-events"
+        self.addCleanup(lambda: setattr(m,"FEC_PRIVATE_DIR",original_fec))
         self.key=self.root/"send.key"
         self.key.write_text("re_"+"x"*32)
         os.chmod(self.key,0o600)
@@ -60,6 +63,27 @@ class ResendTests(unittest.TestCase):
             self.assertFalse(list(self.root.glob(".gah-resend-*")))
         finally:
             m.PRIVATE_DIR=original
+    def test_separate_fec_ledger_triggers_one_redacted_email(self):
+        fec_dir=m.FEC_PRIVATE_DIR
+        fec_dir.mkdir(parents=True,exist_ok=True)
+        (fec_dir/"events.jsonl").write_text(json.dumps({
+            "event_id":"fec-4101020261612210538",
+            "source":"fec-schedule-e-h6co05142",
+            "kind":"official_fec_independent_expenditure_filing",
+            "candidate_id":"H6CO05142",
+            "committee_id":"C00953588",
+            "amount_usd":20581.24
+        })+"\n")
+        self.report({})
+        def check(req):
+            body=json.loads(req.data)
+            self.assertIn("fec-schedule-e-h6co05142",body["text"])
+            self.assertNotIn("20581",body["text"])
+            self.assertNotIn("C00953588",body["text"])
+            return 200,b'{"id":"fec-test"}'
+        result=m.deliver(self.root,self.cfg,transport=check)
+        self.assertEqual(result["events"],1)
+        self.assertEqual(m.deliver(self.root,self.cfg,transport=lambda _:self.fail("repeat"))["status"],"idle")
     def test_no_events_no_send(self):
         self.report({})
         self.assertEqual(m.deliver(self.root,self.cfg,transport=lambda r:self.fail("unwanted email"))["status"],"idle")
