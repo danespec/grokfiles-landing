@@ -42,3 +42,11 @@ The first private KV PUT probe could not verify completion due to a URL/network 
 5. Production package must **exclude the staging example feed**. New guide URLs should return HTTP200 with canonical tags; both home and latest must retain permanent guide links. If KV has no qualifying live signal the Trending box is intentionally absent.
 6. Recheck search and wiki CORS, rate limits, membership, false webhook rejection, sitemap pages, indexability, and rollback readiness. Never deploy stale GitHub main or touch live billing.
 7. The next content feed becomes active only when verified public trend signals produce 5–8 confidently matched, ethically safe queries and authorized KV publishing works.
+
+## Production post-release verification — 2026-10-11
+
+Live release of two guides and fail-closed Trending logic was verified across 116/116 sitemap URLs, with apex search HTTP 200, invalid Patreon webhook HTTP 401, invalid PayPal webhook HTTP 400, and all Pages settings/bindings preserved. Current production rollback is available.
+
+The demo fixture `frontdoor/trending-demo-v1.json` was **excluded from the production package** and preview samples do not render in production. A direct request to that missing file returns the site's generic 200 HTML fallback, not JSON. This is due to the existing Cloudflare Pages `_routes.json` exclusion for `/frontdoor/*`, which bypasses the Worker entirely for static assets. A proposed Worker-only 404 guard could not alter that response; its rollout automatically reverted to the stable guide/Trending release. Do not alter all frontdoor routing just to force 404 without a separate regression audit. Acceptance is **no sample JSON or preview content exposed**, rather than a particular HTTP status on a missing static asset.
+
+Mac LaunchAgent `com.grokarchivehub.trending-research` is enabled every six hours in research-only mode, with a private gap log and no public KV writes. The feed currently hides itself because fewer than five validated trend items qualify. No false search-trend assertions were published.

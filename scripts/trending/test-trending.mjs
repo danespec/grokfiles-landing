@@ -55,6 +55,8 @@ for(const [label,data] of [
 }
 const cssResponse=await check("/frontdoor/trending.css",mkEnv(valid));
 yes("trending CSS served",cssResponse.status===200&&(await cssResponse.text()).includes(".gah-trend-box"));
+yes("production never renders illustrative preview feed",!html.includes("Design preview only")&&!html.includes("data-preview=\"true\""));
+yes("missing production feed never renders preview",!noneHtml.includes("Design preview only")&&!noneHtml.includes('class="gah-trend-box"'));
 const guide=await check("/guides/how-to-search-epstein-files",mkEnv(valid));
 yes("guide route loads real HTML",guide.status===200&&(await guide.text()).includes("How to search the Epstein files"));
 const guideStaging=await check("/guides/doj-epstein-data-sets",mkEnv(null,true));
