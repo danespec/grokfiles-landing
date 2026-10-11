@@ -137,6 +137,18 @@
       "scope": "FEC public committee overview for DCCC C00000935; summary page may lag later line-item expenditures",
       "mode": "article_main",
       "url": "https://www.fec.gov/data/committee/C00000935/?cycle=2026"
+    },
+    {
+      "id": "uk-andrew-search-warrants-judiciary",
+      "scope": "UK Administrative Court publication of Oct 8 2026 AC 2026-LON-002321 order, judicial publication not news report",
+      "mode": "article_main",
+      "url": "https://www.judiciary.uk/judgments/andrew-mountbatten-windsor-v-the-central-criminal-court-and-another/"
+    },
+    {
+      "id": "uk-andrew-search-warrants-order-pdf",
+      "scope": "Official ten-page Oct 8 order, Hilliard J; s8 PACE warrant invalid, s59 retention application pending, investigation continues, redacted access to legal records",
+      "mode": "official_pdf",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2026/10/AC-2026-LON-002321-Mountbatten-Windsor-v-Central-Criminal-Court-and-another.pdf"
     }
   ],
   "coverage_gaps": [
@@ -148,6 +160,7 @@
     "UCL lecture exact primary URL identified but Mac HTTP 403; monitor cannot observe it until access is restored",
     "DOJ Data Set 1 and 12 monitors cover only first index pages; complete pagination, per-file byte hashing and authenticated archived comparisons remain unimplemented",
     "D.C. Circuit appeals RSS is orders/opinions/judgments only and may be empty on quiet days; motions and sealed appellate filings still require verified PACER/authorized review",
-    "Colorado 5th ad Virginia: DCCC Oct 5 press release calls it DCCC + Killin COORDINATED six-figure buy; this is a partisan self-description not audited FEC amount. Schedule E independent-expenditure-only FEC watch does not identify the ad. Need FEC Schedule F coordinated party expenditure and/or Schedule B disbursements matched to exact ad creative, dates, sponsor; DEMO_KEY returned HTTP 429 on Oct 11 query"
+    "Colorado 5th ad Virginia: DCCC Oct 5 press release calls it DCCC + Killin COORDINATED six-figure buy; this is a partisan self-description not audited FEC amount. Schedule E independent-expenditure-only FEC watch does not identify the ad. Need FEC Schedule F coordinated party expenditure and/or Schedule B disbursements matched to exact ad creative, dates, sponsor; DEMO_KEY returned HTTP 429 on Oct 11 query",
+    "UK Andrew Mountbatten-Windsor: Oct 8 order and official PDF monitored. Future s59 retention decision (listed as potentially 2027), challenges to officer-identity redactions (14 days from order), and other proceedings are not covered by live docket RSS; no PACER-like UK case-specific authenticated docket source configured"
   ]
 }
