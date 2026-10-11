@@ -30,5 +30,5 @@ Original PDF: https://vault.fbi.gov/records-regarding-the-review-of-the-investig
 - PR branch is separate from Ren's security branch. Production PayPal checkout activation is not part of this release.
 
 ## Deployment checkpoints
-Protected staging must return 302 to Cloudflare Access; production routes, canonical, 119 unique sitemap URLs, wiki and PayPal activation flag must be verified before and after release.
+Protected staging must return 302 to Cloudflare Access; production routes, canonical, 121 unique sitemap URLs (including both existing source-watch routes), wiki and PayPal activation flag must be verified before and after release.
 Record production deployment ID and previous rollback target. Never enable payment or alter credentials.

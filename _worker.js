@@ -974,6 +974,8 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/investigations/fbi-vault-redaction-chronology-phang", "/investigations/fbi-vault-redaction-chronology-phang.html"],
+  ["/dispatches/epstein-source-watch-october-2026", "/dispatches/epstein-source-watch-october-2026.html"],
+  ["/investigations/fbi-review-holdings-vault-parts-12-13", "/investigations/fbi-review-holdings-vault-parts-12-13.html"],
   ["/guides/epstein-client-list-explained", "/guides/epstein-client-list-explained.html"],
   ["/guides/epstein-files-transparency-act", "/guides/epstein-files-transparency-act.html"],
   ["/guides/how-to-search-epstein-files", "/guides/how-to-search-epstein-files.html"],
@@ -1073,6 +1075,8 @@ const TRUST_SITEMAP_ENTRIES = [
 ];
 const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang", "2026-10-11"],
+  ["https://grokarchivehub.com/dispatches/epstein-source-watch-october-2026", "2026-10-11"],
+  ["https://grokarchivehub.com/investigations/fbi-review-holdings-vault-parts-12-13", "2026-10-11"],
   ["https://grokarchivehub.com/guides/epstein-client-list-explained", "2026-10-11"],
   ["https://grokarchivehub.com/guides/epstein-files-transparency-act", "2026-10-11"],
   ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-11"],
