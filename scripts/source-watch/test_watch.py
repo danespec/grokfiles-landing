@@ -3,10 +3,13 @@
 import importlib.util
 import json
 import os
+import sys
+import types
 from pathlib import Path
 import tempfile
 import unittest
 root=Path(__file__).resolve().parent
+sys.path.insert(0,str(root))
 spec=importlib.util.spec_from_file_location("gah_source_watch",root/"watch.py")
 mod=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
@@ -126,5 +129,41 @@ class WatchTests(unittest.TestCase):
       '<link>https://evil.example/docket/1417</link></item></channel></rss>').encode()
     with self.assertRaisesRegex(RuntimeError,'unsafe_docket_link'):
         mod.parse_court_rss(s,injected)
+ def test_official_pdf_content_hash(self):
+    item={"id":"french-pnf","mode":"official_pdf","url":"https://www.tribunal-de-paris.justice.fr/test.pdf"}
+    a=mod.observe(item,lambda url:b"%PDF-1.7 "+b"evidence"*120)
+    b=mod.observe(item,lambda url:b"%PDF-1.7 "+b"revised"*120)
+    self.assertEqual(a["mode"],"official_pdf")
+    self.assertNotEqual(a["digest"],b["digest"])
+    events,_=mod.compare(a,b,item["id"])
+    self.assertEqual(events[0]["kind"],"official_pdf_hash_changed")
+    with self.assertRaisesRegex(RuntimeError,"unexpected_content"):
+        mod.observe(item,lambda url:b"<html>blocked</html>"*90)
+ def test_mac_notification_idempotent_privacy(self):
+    import notify
+    with tempfile.TemporaryDirectory() as td:
+        directory=Path(td)
+        item={"event_id":"test-notice-1","source":"phang-dcd-official-rss", "kind":"target_case_docket_activity", "url":"https://ecf.dcd.uscourts.gov/cgi-bin/DktRpt.pl?234", "label":"Potentially sensitive witness details"}
+        (directory/"events.jsonl").write_text(json.dumps(item)+"\n")
+        commands=[]
+        def runner(args,**kwargs):
+            commands.append(args)
+            return types.SimpleNamespace(returncode=0)
+        sent=notify.deliver(directory,runner)
+        self.assertEqual(sent["delivered"],1)
+        self.assertEqual(notify.deliver(directory,runner)["delivered"],0)
+        self.assertEqual(len(commands),1)
+        self.assertNotIn("sensitive witness",str(commands).lower())
+        self.assertNotIn("234",str(commands))
+        self.assertEqual(os.stat(directory/"notified.json").st_mode & 0o777,0o600)
+ def test_mac_notification_retry_on_failure(self):
+    import notify
+    with tempfile.TemporaryDirectory() as td:
+        directory=Path(td)
+        (directory/"events.jsonl").write_text(json.dumps({"source":"france-pnf", "kind":"official_pdf_hash_changed"})+"\n")
+        fail=notify.deliver(directory,lambda *a,**k:types.SimpleNamespace(returncode=1))
+        self.assertEqual(fail["failed"],1)
+        good=notify.deliver(directory,lambda *a,**k:types.SimpleNamespace(returncode=0))
+        self.assertEqual(good["delivered"],1)
 if __name__=="__main__":
  unittest.main(verbosity=2)

@@ -26,7 +26,8 @@ DEFAULT_PRIVATE = Path.home() / "_gah_builds" / "GAH-SIGNALS-004-private"
 ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
            "www.federalregister.gov", "www.govinfo.gov", "www.finance.senate.gov",
            "ecf.dcd.uscourts.gov", "www.courtlistener.com",
-           "dockets.justia.com", "www.stortinget.no", "stortinget.no"}
+           "dockets.justia.com", "www.stortinget.no", "stortinget.no",
+           "www.tribunal-de-paris.justice.fr", "www.ucl.ac.uk"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
 
@@ -157,6 +158,10 @@ def observe(source, transport=fetch):
     mode = source["mode"]
     if mode == "court_rss":
         return parse_court_rss(source, raw)
+    if mode == "official_pdf":
+        if not raw.startswith(b"%PDF-") or len(raw)<500:
+            raise RuntimeError("official_pdf_unexpected_content")
+        return {"mode":mode,"links":{},"digest":digest(raw),"size_bytes":len(raw)}
     if mode == "federalregister":
         obj = json.loads(raw)
         docs = obj.get("results")
@@ -225,9 +230,11 @@ def compare(previous, current, name):
                            "count": len(missing), "review_required": True,
                            "note": "NOT verified deletion or withholding"})
     elif previous.get("digest") != current["digest"]:
-        events.append({"source": name, "kind": "page_text_changed",
+        is_pdf = current["mode"] == "official_pdf"
+        events.append({"source": name, "kind": "official_pdf_hash_changed" if is_pdf else "page_text_changed",
                        "review_required": True,
-                       "note": "Text change needs primary document/version audit; no allegation implied"})
+                       "note": "Raw official PDF bytes differ; verify agency revision and document history" if is_pdf
+                               else "Text change needs primary document/version audit; no allegation implied"})
     return events, "compared"
 
 def build_report(catalog, previous, transport=fetch, now=utcnow):
@@ -307,12 +314,30 @@ def main(argv=None):
             raise RuntimeError("unexpected_state_schema")
         report, snapshots = build_report(catalog,previous.get("sources",{}))
         if a.update:
-            write_secure(state,{"schema":"gah.primary_source_watch.state.v1","sources":snapshots})
-            write_secure(a.private_dir/"latest-report.json",report)
-            with (a.private_dir/"events.jsonl").open("a") as f:
+            # Persist review events before updating their source baseline.
+            # Identifiers are content-based, so retrying a failed run is safe.
+            from notify import event_id, deliver
+            event_path=a.private_dir/"events.jsonl"
+            known=set()
+            if event_path.exists():
+                for line in event_path.read_text(encoding="utf-8").splitlines():
+                    if line.strip():
+                        prior=json.loads(line)
+                        known.add(prior.get("event_id") or event_id(prior))
+            with event_path.open("a",encoding="utf-8") as f:
                 for event in report["review_events"]:
-                    f.write(json.dumps({"observed_at":report["generated_at"],**event},ensure_ascii=False)+"\n")
-            os.chmod(a.private_dir/"events.jsonl", 0o600)
+                    item={"observed_at":report["generated_at"],**event,
+                          "observed_digest":snapshots[event["source"]]["digest"]}
+                    item["event_id"]=event_id(item)
+                    if item["event_id"] not in known:
+                        f.write(json.dumps(item,ensure_ascii=False)+"\n")
+                        known.add(item["event_id"])
+                f.flush()
+                os.fsync(f.fileno())
+            os.chmod(event_path,0o600)
+            write_secure(state,{"schema":"gah.primary_source_watch.state.v1","sources":snapshots})
+            report["desktop_notification"]=deliver(a.private_dir)
+            write_secure(a.private_dir/"latest-report.json",report)
         print(json.dumps({"updated":a.update,"health":report["health"],"seen":len(report["observed"]),
                           "unavailable":report["unavailable"],"review_events":len(report["review_events"]),
                           "baseline_count":report["baseline_count"],
