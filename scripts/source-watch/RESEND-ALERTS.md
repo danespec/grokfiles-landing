@@ -13,7 +13,7 @@ This is a **single-recipient, owner-authorized, transactional notification chann
 
 ## Behavior
 
-Every 15 minutes while the Mac is awake, `send_resend.py` checks the existing **private** `events.jsonl` and `latest-report.json` for events that have not already been accepted by Resend. Sends at most 20 source-review events in one email. Tracks successful Resend acceptance in `resend-alerts-ack.json` and latest receipt in `resend-alerts-last.json`, both mode 0600.
+Every 15 minutes while the Mac is awake, `send_resend.py` checks the existing **private** primary-source `events.jsonl` and `latest-report.json` as well as the separately maintained `~/_gah_builds/GAH-FEC-009-private/events.jsonl` for FEC monitoring events that have not already been accepted by Resend. Sends at most 20 source-review events in one email, fairly allocating initial capacity between primary-source and FEC queues. FEC records are category/type-only notifications; no candidate identities, dollar amounts, committees, or ad content are included in the email. Tracks successful Resend acceptance in `resend-alerts-ack.json` and latest receipt in `resend-alerts-last.json`, both mode 0600.
 
 - A new event email contains only source IDs and coarse event types. It does **not** include source title/labels, user or victim names, HTML/PDF contents, internal ledger URLs, personal identity data, or allegations.
 - Critical official `phang-dcd-official-rss` and `phang-dc-circuit-appeals-rss` unavailability is marked operational health only, at most once per distinct outage combination per UTC day. A network outage is **not** a court ruling, filing, or compliance finding.
