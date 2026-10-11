@@ -31,7 +31,8 @@ Date: October 11, 2026. Owner approval for **production publication has not been
 
 - `node tests/test_seo_source_audits.mjs`: 29/29 checks passed, covering four route responses, canonical/H1, structured FAQ answers appearing in visible page text, staging noindex, internal links, sitemap coverage, exact primary-source links, and all 12 DOJ index links.
 - Inherited `node --test tests/test_worker_entrypoint.mjs tests/test_wiki_service_auth.mjs tests/test_path_leak.mjs`: 6/6 test files passed, with no failures; staging isolation remains enforced.
-- Cloudflare Pages staging compilation and deployment passed: `https://83e5ce84.gah-staging-517b8499.pages.dev` (Access HTTP 302, owner-only).
+- Cloudflare Pages staging compilation and deployment passed: `https://1e734eef.gah-staging-517b8499.pages.dev` (Access HTTP 302, owner-only).
+- Updated protected staging deployment from reviewed source commit `01dfbac` completed via Wrangler; both new preview aliases and staging root returned HTTP 302 to Access without authentication. The Git-connected preview on the production Pages project is also Access-protected; its production environment was not deployed.
 - No Cloudflare Pages production deployment, secret changes, billing settings, Patreon activity or database writes occurred.
 - Public homepage and wiki return HTTP 200. Both proposed production URLs still return HTTP 404 before approval, as expected.
 - This branch is intentionally independent of Ren's `ren/phase0-integration` staging-only safeguards. Do not integrate staging noindex or staging GA4-off headers into production.
