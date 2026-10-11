@@ -28,7 +28,8 @@ ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
            "www.federalregister.gov", "www.govinfo.gov", "www.finance.senate.gov",
            "ecf.dcd.uscourts.gov", "ecf.cadc.uscourts.gov", "www.courtlistener.com",
            "dockets.justia.com", "www.stortinget.no", "stortinget.no",
-           "www.tribunal-de-paris.justice.fr", "www.ucl.ac.uk"}
+           "www.tribunal-de-paris.justice.fr", "www.ucl.ac.uk",
+           "dccc.org", "www.killinforcolorado.com", "www.fec.gov"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
 
@@ -78,6 +79,36 @@ class Extract(HTMLParser):
             self.text.append(value)
             if self.href is not None:
                 self.label.append(value)
+
+class MainText(HTMLParser):
+    """Canonical document text from <main>; disregard dynamic nav/script/footer."""
+    EXCLUDE={"script","style","noscript","svg","nav","footer","header","aside"}
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.depth=0
+        self.suppressed=0
+        self.chunks=[]
+    def handle_starttag(self, tag, attrs):
+        if tag=="main":
+            self.depth+=1
+        elif self.depth and tag in self.EXCLUDE:
+            self.suppressed+=1
+    def handle_endtag(self, tag):
+        if tag=="main" and self.depth:
+            self.depth-=1
+        elif self.depth and tag in self.EXCLUDE and self.suppressed:
+            self.suppressed-=1
+    def handle_data(self, data):
+        if self.depth and not self.suppressed and data.strip():
+            self.chunks.append(normalize(data))
+
+def main_text_digest(raw):
+    parser=MainText()
+    parser.feed(raw.decode("utf-8",errors="replace"))
+    body=normalize(" ".join(parser.chunks))
+    if len(body)<180:
+        raise RuntimeError("official_article_main_missing_or_empty")
+    return {"mode":"article_main","links":{},"digest":digest(body)}
 
 def fetch(url, timeout=28):
     if not safe_url(url):
@@ -163,6 +194,8 @@ def observe(source, transport=fetch):
     mode = source["mode"]
     if mode == "court_rss":
         return parse_court_rss(source, raw)
+    if mode == "article_main":
+        return main_text_digest(raw)
     if mode == "official_pdf":
         if not raw.startswith(b"%PDF-") or len(raw)<500:
             raise RuntimeError("official_pdf_unexpected_content")

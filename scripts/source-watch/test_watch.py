@@ -244,5 +244,22 @@ class WatchTests(unittest.TestCase):
         self.assertFalse((Path(td)/"court-health-notified.json").exists())
         good=notify.deliver_court_health(td,report,lambda *a,**k:types.SimpleNamespace(returncode=0))
         self.assertEqual(good["delivered"],1)
+ def test_article_main_does_not_hash_dynamic_navigation(self):
+    phrase="DCCC and campaign joint ad release from an original authorized publisher. "*6
+    a=("<html><header>Navigation One</header><main><article><h1>Original announcement</h1><p>"+phrase+"</p><nav>Top nav one</nav><script>random(a)</script></article></main><footer>Different date</footer></html>").encode()
+    b=("<html><header>Navigation Two</header><main><article><h1>Original announcement</h1><p>"+phrase+"</p><nav>Top nav two</nav><script>random(b)</script></article></main><footer>Another date</footer></html>").encode()
+    self.assertEqual(mod.main_text_digest(a)["digest"],mod.main_text_digest(b)["digest"])
+ def test_article_main_detects_source_change(self):
+    a=("<html><main><p>"+"Initial authoritative publisher statement. "*8+"</p></main></html>").encode()
+    b=("<html><main><p>"+"Initial authoritative publisher statement. "*8+"Updated content!</p></main></html>").encode()
+    x=mod.main_text_digest(a)
+    y=mod.main_text_digest(b)
+    self.assertNotEqual(x["digest"],y["digest"])
+    self.assertEqual(mod.compare(x,y,"ad-release")[0][0]["kind"],"page_text_changed")
+ def test_article_main_rejects_blank_or_blocked_source(self):
+    with self.assertRaisesRegex(RuntimeError,"main_missing_or_empty"):
+        mod.main_text_digest(b"<html><body>Access Denied</body></html>")
+    with self.assertRaisesRegex(RuntimeError,"main_missing_or_empty"):
+        mod.main_text_digest(b"<main>Bot check</main>")
 if __name__=="__main__":
  unittest.main(verbosity=2)
