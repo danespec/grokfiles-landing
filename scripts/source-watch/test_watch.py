@@ -201,5 +201,48 @@ class WatchTests(unittest.TestCase):
     obj=mod.parse_court_rss(s,feed,now=at)
     self.assertEqual(len(obj["links"]),1)
     self.assertEqual(mod.compare({},obj,s["id"])[0][0]["kind"],"target_case_docket_activity")
+ def test_court_health_alert_only_for_primary_court_sources(self):
+    import notify
+    with tempfile.TemporaryDirectory() as td:
+        calls=[]
+        def runner(args,**kwargs):
+            calls.append(args)
+            return types.SimpleNamespace(returncode=0)
+        no=notify.deliver_court_health(td,{"unavailable":{"fbi-vault-review":"source_unavailable_http_403"}},runner)
+        self.assertEqual(no["critical_sources_unavailable"],0)
+        self.assertEqual(len(calls),0)
+        result=notify.deliver_court_health(td,{"unavailable":{"phang-dcd-official-rss":"source_transport_failure"}},runner)
+        self.assertEqual(result["delivered"],1)
+        self.assertEqual(len(calls),1)
+        self.assertNotIn("phang",str(calls[0]).lower())
+        self.assertNotIn("403",str(calls[0]))
+        prior=notify.deliver_court_health(td,{"unavailable":{"phang-dcd-official-rss":"source_transport_failure"}},runner)
+        self.assertEqual(prior["delivered"],0)
+        self.assertTrue(prior.get("already_notified_today"))
+        self.assertEqual(len(calls),1)
+        self.assertEqual(os.stat(Path(td)/"court-health-notified.json").st_mode & 0o777,0o600)
+ def test_court_health_new_failure_combination(self):
+    import notify
+    with tempfile.TemporaryDirectory() as td:
+        sent=[]
+        def runner(args,**kwargs):
+            sent.append(args)
+            return types.SimpleNamespace(returncode=0)
+        first={"unavailable":{"phang-dcd-official-rss":"source_transport_failure"}}
+        both={"unavailable":{"phang-dcd-official-rss":"source_transport_failure","phang-dc-circuit-appeals-rss":"source_unavailable_http_503"}}
+        notify.deliver_court_health(td,first,runner)
+        result=notify.deliver_court_health(td,both,runner)
+        self.assertEqual(result["critical_sources_unavailable"],2)
+        self.assertEqual(result["delivered"],1)
+        self.assertEqual(len(sent),2)
+ def test_court_health_retries_failed_delivery(self):
+    import notify
+    with tempfile.TemporaryDirectory() as td:
+        report={"unavailable":{"phang-dc-circuit-appeals-rss":"source_unavailable_http_503"}}
+        failed=notify.deliver_court_health(td,report,lambda *a,**k:types.SimpleNamespace(returncode=1))
+        self.assertEqual(failed["failed"],1)
+        self.assertFalse((Path(td)/"court-health-notified.json").exists())
+        good=notify.deliver_court_health(td,report,lambda *a,**k:types.SimpleNamespace(returncode=0))
+        self.assertEqual(good["delivered"],1)
 if __name__=="__main__":
  unittest.main(verbosity=2)

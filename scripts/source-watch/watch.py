@@ -331,7 +331,7 @@ def main(argv=None):
         if a.update:
             # Persist review events before updating their source baseline.
             # Identifiers are content-based, so retrying a failed run is safe.
-            from notify import event_id, deliver
+            from notify import event_id, deliver, deliver_court_health
             event_path=a.private_dir/"events.jsonl"
             known=set()
             if event_path.exists():
@@ -352,6 +352,7 @@ def main(argv=None):
             os.chmod(event_path,0o600)
             write_secure(state,{"schema":"gah.primary_source_watch.state.v1","sources":snapshots})
             report["desktop_notification"]=deliver(a.private_dir)
+            report["court_health_notification"]=deliver_court_health(a.private_dir,report)
             write_secure(a.private_dir/"latest-report.json",report)
         print(json.dumps({"updated":a.update,"health":report["health"],"seen":len(report["observed"]),
                           "unavailable":report["unavailable"],"review_events":len(report["review_events"]),
