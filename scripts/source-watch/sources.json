@@ -149,6 +149,36 @@
       "scope": "Official ten-page Oct 8 order, Hilliard J; s8 PACE warrant invalid, s59 retention application pending, investigation continues, redacted access to legal records",
       "mode": "official_pdf",
       "url": "https://www.judiciary.uk/wp-content/uploads/2026/10/AC-2026-LON-002321-Mountbatten-Windsor-v-Central-Criminal-Court-and-another.pdf"
+    },
+    {
+      "id": "phang-ecf42-ordered-list-20260916",
+      "scope": "govinfo official PDF of ECF 42: Oct 1 certified list, Oct 15 record delivery to plaintiff, distinct duties",
+      "mode": "official_pdf",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_26-cv-01417/pdf/USCOURTS-dcd-1_26-cv-01417-1.pdf"
+    },
+    {
+      "id": "phang-ecf54-notice-in-camera-20261005",
+      "scope": "Court-stamped ECF 54 via public RECAP storage: govt notice of Sept 24 in-camera hand delivery, NOT proof of administrative record list filing",
+      "mode": "official_pdf",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.54.0.pdf"
+    },
+    {
+      "id": "phang-ecf55-opposition-20261008",
+      "scope": "Court-stamped ECF 55 via public RECAP storage: plaintiff opposes October 1 ECF 51 record postponement motion; is advocacy not court ruling",
+      "mode": "official_pdf",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.55.0_13.pdf"
+    },
+    {
+      "id": "phang-ecf56-extension-motion-20261008",
+      "scope": "Court-stamped ECF 56 via public RECAP storage: unopposed request for extension of response to Rule12c; motion not necessarily granted",
+      "mode": "official_pdf",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.56.0_2.pdf"
+    },
+    {
+      "id": "phang-ecf57-redacted-notes-due-20261016",
+      "scope": "Court-stamped ECF 57 via public RECAP storage: court Oct 9 order requires redacted handwritten notes for three FD302 reports by Oct 16 12pm ET for in-camera review",
+      "mode": "official_pdf",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.57.0_1.pdf"
     }
   ],
   "coverage_gaps": [
@@ -161,6 +191,7 @@
     "DOJ Data Set 1 and 12 monitors cover only first index pages; complete pagination, per-file byte hashing and authenticated archived comparisons remain unimplemented",
     "D.C. Circuit appeals RSS is orders/opinions/judgments only and may be empty on quiet days; motions and sealed appellate filings still require verified PACER/authorized review",
     "Colorado 5th ad Virginia: DCCC Oct 5 press release calls it DCCC + Killin COORDINATED six-figure buy; this is a partisan self-description not audited FEC amount. Schedule E independent-expenditure-only FEC watch does not identify the ad. Need FEC Schedule F coordinated party expenditure and/or Schedule B disbursements matched to exact ad creative, dates, sponsor; DEMO_KEY returned HTTP 429 on Oct 11 query",
-    "UK Andrew Mountbatten-Windsor: Oct 8 order and official PDF monitored. Future s59 retention decision (listed as potentially 2027), challenges to officer-identity redactions (14 days from order), and other proceedings are not covered by live docket RSS; no PACER-like UK case-specific authenticated docket source configured"
+    "UK Andrew Mountbatten-Windsor: Oct 8 order and official PDF monitored. Future s59 retention decision (listed as potentially 2027), challenges to officer-identity redactions (14 days from order), and other proceedings are not covered by live docket RSS; no PACER-like UK case-specific authenticated docket source configured",
+    "Phang: certified list due Oct 1 ECF42, on Oct 1 govt filed ECF51 postponement motion and ECF52 Rule12c judgment motion; ECF55 Oct8 opposition, ECF57 Oct9 additional in-camera compliance order. Public RECAP filing PDFs are *known* court-stamped originals but do NOT constitute a complete or current live docket. No inference of a granted stay or final compliance."
   ]
 }
