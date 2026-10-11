@@ -38,3 +38,27 @@ The branch does **not** contain a production service token or enable backend aut
 ## Release decision
 
 **No production Pages cutover from this branch until deployment-bundle reconciliation and browser-authentication sequencing are verified.** The wiki path-leak and Story Mode repairs, unlike the remaining Pages authentication work, have been deployed and verified independently.
+
+
+## Updated production reality — 2026-10-11, 10:50 MDT
+
+This section supersedes historical statements above wherever they conflict. The historical checkpoints remain as an audit trail.
+
+**Already deployed and tested:**
+- Production Pages canonical: `7dc526ff-7a6f-48ab-88d1-cbedac4469bd`; prior recovery target: `a896b139-83f3-4152-91e2-29a2b1eac2b3`.
+- Cloudflare `GAH_SEC_RATE_LIMITER` Durable Object is bound to Pages and was empirically proven to return HTTP 429. The wiki backend has its own verified HTTP 429 limiter.
+- The three known wiki browser search callers were migrated to the public apex API, with wiki-origin CORS. Public apex search, AI Story Mode, evidence readers and sitemap worked after deployment; 114/114 sitemap URLs passed in the production release test.
+- Final signed-body-only Patreon webhook deduplication and retry hardening are live in Pages, documented at reviewed commit `7645ffc`.
+- Production NAS gateway image remains `gah-wiki-gateway-sec-rate:20261011-browser`; secure auth-enabled image `gah-wiki-gateway-secure:20261011` was tested in isolation, not deployed to production.
+
+**Auth implementation ready, service credential NOT installed:**
+- Review branch `chatgpt/sec-wiki-backend-003-20261010` commit `5b1c61d` passed the wiki/auth regression suite (recent focused run 10/10 suites passed). Protected staging `e815dc1e` tested.
+- The first coordinated production auth attempt was rejected by the Free-plan 64-binding limit; production Pages and NAS were rolled back intact.
+- A later audit confirmed `CMP_ACCOUNT_ID` was not referenced anywhere in current live or reviewed Worker source. Its plain-text Pages binding was backed up in a private mode-600 file at `/Users/thomas/_gah_builds/GAH_CMP_ACCOUNT_ID_BACKUP_20261011.json`, then removed. Read-back proved the original 60 production `env_vars` became 59 and every other environment variable, secret, KV, D1, Durable Object, and canonical deployment remained unchanged. This frees a slot for `GAH_WIKI_SERVICE_TOKEN` **without requiring a paid-plan upgrade**.
+- The remote tool blocked subsequent credential provisioning. `GAH_WIKI_SERVICE_TOKEN` is absent on Pages; the production NAS `.env` still contains only the existing `API_SHARED_SECRET`. **Do not flip `GAH_WIKI_AUTH_REQUIRED` or deploy the auth gate until the matching secret is installed and verified on both sides.** Use the authorized Work Cloud Browser/Cloudflare dashboard secret UI, not bypasses or unsafe token handling.
+
+**Other membership and commerce dependencies:**
+- Patreon OAuth callback, published All Access tier and webhook URL were verified in the authenticated creator dashboard by Work; the tier has zero members and no genuine provider webhook delivery was confirmed. A separate read-only check found `PATREON_CREATOR_ACCESS_TOKEN` absent from all Pages production bindings. The scheduled/member-list reconciliation function explicitly requires that token and currently cannot function. It must be obtained via an authorized creator OAuth grant, never fabricated or copied from browser internals. Webhook and member login paths remain logically separate.
+- PayPal Developer UI accessed by Work only had Sandbox mode and required a Business upgrade for Live; production live app, signed webhook delivery and real subscription lifecycle remain independently unverified. The existing $5.99 All Access product/plan and secrets are configured, but checkout is intentionally disabled. Do not enable charges or invent a real transaction to satisfy a test.
+
+**Decision:** Public archive **GO**. Full wiki service-auth **BLOCKED** pending authorized secret distribution despite code readiness and available binding capacity. Patreon member lifecycle **BLOCKED** pending provider authorization/real entitlement. PayPal live commerce **BLOCKED** pending correct Business account Live access, webhook delivery and explicit owner charge approval. No false full-platform GO.
