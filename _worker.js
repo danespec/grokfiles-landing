@@ -1,3 +1,67 @@
+
+const GAH_TRENDING_SLOT = "<!-- GAH-TRENDING-001 -->";
+const GAH_TRENDING_KV_KEY = "gah:public:trending:topics:v1";
+const GAH_TRENDING_PATH_OK = /^\/(?:guides|investigations|evidence-briefs|dispatches|archive|research|document-autopsies|topics|search)(?:\/[a-z0-9-]+)*$/;
+const GAH_TRENDING_DENY = /\b(?:arrested|pedophile|rapist|guilty|criminal|client list|sex offender|molester|trafficker|abuser)\b/i;
+function gahTrendingVerifiedFeed(data, staging) {
+  if (!data || data.schema !== "gah_trending_topics_v1") return null;
+  if (!staging && (data.preview !== false || data.status !== "active")) return null;
+  if (staging && data.preview !== true) return null;
+  const timestamp = Date.parse(data.generated_at || "");
+  const age = Date.now() - timestamp;
+  if (!Number.isFinite(timestamp) || age < -300000 || age > 86400000) return null;
+  if (!Array.isArray(data.items) || data.items.length < 5 || data.items.length > 8) return null;
+  const seen = new Set();
+  const items = [];
+  for (const item of data.items) {
+    if (!item || typeof item.query !== "string" || typeof item.url !== "string") return null;
+    const query = item.query.trim();
+    if (query.length < 6 || query.length > 140 || GAH_TRENDING_DENY.test(query)) return null;
+    if (!GAH_TRENDING_PATH_OK.test(item.url) || item.url.startsWith("//")) return null;
+    if (seen.has(query.toLowerCase())) return null;
+    if (item.signal !== "google_trends_rss" && item.signal !== "search_suggestion_plus_news" && !(staging && item.signal === "preview")) return null;
+    seen.add(query.toLowerCase());
+    items.push({query,url:item.url});
+  }
+  return {items,ageHours:Math.max(0,Math.floor(age/3600000)),preview:staging};
+}
+function gahTrendingHtml(feed) {
+  if (!feed) return "";
+  const links=feed.items.map((item)=>'<li><a href="'+escapeHtml(item.url)+'">'+escapeHtml(item.query)+'</a></li>').join("");
+  const caption=feed.preview
+    ? "Design preview only — these are example topics, not verified live trends."
+    : "Public search interest signals, updated "+feed.ageHours+"h ago · not a search-volume estimate.";
+  const heading=feed.preview ? "Trending in the Epstein files — preview" : "Trending in the Epstein files";
+  return '<aside class="gah-trend-box" data-preview="'+String(feed.preview)+'" aria-label="Trending Epstein-file topics">'
+    +'<h2>'+heading+'</h2><p class="gah-trend-lede">Explore verified source-linked GAH research on questions people are discussing.</p>'
+    +'<ul class="gah-trend-items">'+links+'</ul><p class="gah-trend-footer">'+caption
+    +' <a href="/methodology#trending-topics">What we track and why →</a></p></aside>';
+}
+async function gahTrendingDecorate(response, request, env) {
+  const p = new URL(request.url).pathname;
+  if ((p !== "/" && p !== "/latest") || request.method !== "GET" || !response.ok ||
+      !String(response.headers.get("Content-Type") || "").toLowerCase().includes("text/html")) return response;
+  let html = await response.text();
+  if (!html.includes(GAH_TRENDING_SLOT)) return new Response(html,{status:response.status,headers:response.headers});
+  let feed=null;
+  try {
+    const staging=isStagingEnv(env);
+    let data=null;
+    if (staging) {
+      const demo=await env.ASSETS.fetch(new Request(new URL("/frontdoor/trending-demo-v1.json",request.url)));
+      if (demo.ok) data=await demo.json();
+    } else if (env.X_TOKEN_STORE && typeof env.X_TOKEN_STORE.get === "function") {
+      data=await env.X_TOKEN_STORE.get(GAH_TRENDING_KV_KEY,"json");
+    }
+    feed=gahTrendingVerifiedFeed(data,staging);
+  } catch (_) {feed=null;}
+  html=html.replace(GAH_TRENDING_SLOT,gahTrendingHtml(feed));
+  const headers=new Headers(response.headers);
+  headers.delete("Content-Length");headers.delete("Content-Encoding");headers.delete("ETag");
+  headers.set("Cache-Control","public, max-age=300");
+  return new Response(html,{status:response.status,statusText:response.statusText,headers});
+}
+
 const FRONTDOOR_PATHS = new Set([
   "/",
   "/start",
@@ -909,6 +973,8 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/guides/how-to-search-epstein-files", "/guides/how-to-search-epstein-files.html"],
+  ["/guides/doj-epstein-data-sets", "/guides/doj-epstein-data-sets.html"],
   ["/entities", "/entities.html"],
   ["/archive-scope", "/archive-scope.html"],
   ["/methodology/digitization-ocr-pipeline", "/methodology/digitization-ocr-pipeline.html"],
@@ -1003,6 +1069,8 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-11"],
+  ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-10-11"],
   ["https://grokarchivehub.com/photos", "2026-10-07"],
   ["https://grokarchivehub.com/archive", "2026-10-07"],
   ["https://grokarchivehub.com/investigations/epstein-december-6-7-2007-decision-gap", "2026-10-07"],
@@ -3662,7 +3730,8 @@ async function serveFrontdoor(request, env, assetPath = "") {
 
 async function serveFrontdoorEnhanced(request, env, assetPath = "", meta = {}) {
   const response = await serveFrontdoor(request, env, assetPath);
-  return enhanceHtmlResponse(response, request, meta, env);
+  const enhanced = await enhanceHtmlResponse(response, request, meta, env);
+  return gahTrendingDecorate(enhanced, request, env);
 }
 
 async function serveFrontdoorSiteJs(request, env) {
