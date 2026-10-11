@@ -17,5 +17,5 @@ const fbi=await readFile(path.join(root,'investigations/fbi-review-holdings-vaul
 check('FBI files sourced directly',fbi.includes('part-12/view')&&fbi.includes('part-13/view'));
 check('scope of visual verification explicit',fbi.includes('direct visual examination')&&fbi.includes('not establish intentional deletion'));
 for(const p of ['/','/latest']){const r=await worker.fetch(new Request('https://grokarchivehub.com'+p),env());const s=await r.text();check(p+' both editorials linked',routes.every(q=>s.includes('href="'+q+'"')))}
-const sitemap=await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env());const xml=await sitemap.text();check('both routes in sitemap',routes.every(q=>xml.includes('https://grokarchivehub.com'+q)));const all=[...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1]);check('sitemap count 120 and unique',all.length===120&&new Set(all).size===120);
+const sitemap=await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env());const xml=await sitemap.text();check('both routes in sitemap',routes.every(q=>xml.includes('https://grokarchivehub.com'+q)));const all=[...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1]);check('combined sitemap count 121 and unique',all.length===121&&new Set(all).size===121);
 console.log('RESULT '+count+'/'+count+' PASS');
