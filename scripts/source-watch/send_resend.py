@@ -26,7 +26,7 @@ CRITICAL=("phang-dcd-official-rss","phang-dc-circuit-appeals-rss")
 PRIVATE_DIR=Path.home()/"_gah_builds/GAH-SIGNALS-004-private"
 FEC_PRIVATE_DIR=Path.home()/"_gah_builds/GAH-FEC-009-private"
 BATCH_LIMIT=20
-SOURCE_RE=re.compile(r"^[a-z0-9][a-z0-9-]{0,80}$")
+SOURCE_RE=re.compile(r"^[a-z0-9][a-z0-9_-]{0,80}$")
 
 def secure_file(path, label):
     path=Path(path)

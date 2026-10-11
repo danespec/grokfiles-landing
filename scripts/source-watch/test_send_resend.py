@@ -151,6 +151,9 @@ class ResendTests(unittest.TestCase):
     def test_safe_title_rejects_names_and_markup(self):
         self.assertEqual(m.safe_title("<person name>"),"source-redacted")
         self.assertEqual(m.safe_title("phang-dcd-official-rss"),"phang-dcd-official-rss")
+        self.assertEqual(m.safe_title("manual_verification_milestone"),"manual_verification_milestone")
+        self.assertEqual(m.safe_title("official_pdf_hash_changed"),"official_pdf_hash_changed")
+        self.assertEqual(m.safe_title("name with spaces"),"source-redacted")
     def test_test_message_has_no_event_claim(self):
         def fake(req):
             body=json.loads(req.data)
