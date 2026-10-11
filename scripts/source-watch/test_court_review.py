@@ -31,9 +31,71 @@ class PhangDeadlineTests(unittest.TestCase):
             with self.subTest(day=day):
                 self.assertEqual(len(court_review.due_reviews(day)),total)
         all_events=court_review.due_reviews(dt.date(2026,10,17))
-        self.assertEqual(len({x["event_id"] for x in all_events}),5)
+        self.assertEqual(len({x["event_id"] for x in all_events}),6)
         self.assertTrue(all(x["kind"]=="manual_verification_milestone" for x in all_events))
-        self.assertTrue(any("NOON Eastern" in x["label"] for x in all_events))
+        self.assertTrue(any("NOON EASTERN" in x["label"].upper() for x in all_events))
+    def test_oct16_eastern_noon_vs_denver_morning_gate(self):
+        from zoneinfo import ZoneInfo
+        local=ZoneInfo("America/Denver")
+        before=dt.datetime(2026,10,16,8,29,tzinfo=local)
+        morning=dt.datetime(2026,10,16,8,30,tzinfo=local)
+        not_due_yet=dt.datetime(2026,10,16,9,59,tzinfo=local)
+        deadline=dt.datetime(2026,10,16,10,0,tzinfo=local)
+        self.assertEqual(len(court_review.due_reviews(before)),4)
+        checkpoint=court_review.due_reviews(morning)[-1]
+        self.assertEqual(len(court_review.due_reviews(morning)),5)
+        self.assertEqual(checkpoint["obligation_state"],"pending_due_noon_eastern")
+        self.assertIn("PENDING",checkpoint["label"])
+        self.assertIn("10:00 MDT",checkpoint["label"])
+        self.assertIn("pending_due_noon_eastern",
+                      court_review.current_status(not_due_yet)["oct16_redacted_fbi_notes"])
+        ledger=court_review.current_status(morning)
+        self.assertEqual(ledger["oct16_deadline_denver"],"2026-10-16T10:00-06:00")
+        self.assertEqual(ledger["oct16_deadline_eastern"],"2026-10-16T12:00-04:00")
+        self.assertEqual(ledger["compliance_verdict"],"unresolved_without_independent_primary_confirmation")
+        elapsed=court_review.current_status(deadline)
+        self.assertEqual(elapsed["oct16_redacted_fbi_notes"],"deadline_elapsed_verification_deferred_to_oct17")
+        self.assertEqual(elapsed["compliance_verdict"],ledger["compliance_verdict"])
+        self.assertIn("UNVERIFIED",court_review.due_reviews(deadline)[-1]["label"])
+    def test_oct17_check_is_separate_and_not_a_automatic_noncompliance_verdict(self):
+        from zoneinfo import ZoneInfo
+        local=ZoneInfo("America/Denver")
+        before=dt.datetime(2026,10,17,8,29,tzinfo=local)
+        follow=dt.datetime(2026,10,17,8,30,tzinfo=local)
+        self.assertEqual(len(court_review.due_reviews(before)),5)
+        events=court_review.due_reviews(follow)
+        self.assertEqual(len(events),6)
+        self.assertEqual(events[-1]["source"],"phang-in-camera-docket-review-20261017")
+        self.assertIn("UNRESOLVED",events[-1]["label"])
+        state=court_review.current_status(follow)
+        self.assertEqual(state["oct16_redacted_fbi_notes"],"post_deadline_check_required_not_verified")
+        self.assertEqual(state["ecf51_postponement_order"],"unverified_requires_signed_court_order")
+        self.assertEqual(state["oct01_certified_record_list"],"unverified_requires_complete_docket")
+        self.assertEqual(state["compliance_verdict"],"unresolved_without_independent_primary_confirmation")
+    def test_naive_timestamp_rejected(self):
+        with self.assertRaisesRegex(ValueError,"timezone-aware"):
+            court_review.current_status(dt.datetime(2026,10,16,8,30))
+    def test_calendar_snapshot_is_private_and_status_only(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            os.chmod(root,0o700)
+            catalog=root/"catalog.json"
+            catalog.write_text(json.dumps({"schema":"gah.primary_source_watch.catalog.v1","sources":[],"coverage_gaps":[]}))
+            fixture={"schema":"gah.primary_source_watch.report.v1","generated_at":"2026-10-16T14:30:00Z",
+                     "health":"complete_for_configured_sources","observed":[],"unavailable":{},
+                     "review_events":[],"baseline_count":0,"coverage_gaps":[]}
+            with patch.object(watch,"build_report",return_value=(fixture,{})), \
+                 patch("notify.deliver",return_value={"pending":0,"delivered":0,"failed":0}), \
+                 patch("notify.deliver_court_health",return_value={"critical_sources_unavailable":0,"delivered":0}):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    watch.main(["--update","--private-dir",str(root),"--catalog",str(catalog)])
+            ledger=root/"phang-compliance-review.json"
+            saved=json.loads(ledger.read_text())
+            self.assertEqual(os.stat(ledger).st_mode&0o777,0o600)
+            self.assertEqual(saved["oct16_redacted_fbi_notes"],"pending_due_noon_eastern")
+            self.assertEqual(saved["compliance_verdict"],"unresolved_without_independent_primary_confirmation")
+            events=[json.loads(line) for line in (root/"events.jsonl").read_text().splitlines()]
+            self.assertEqual(events[-1]["obligation_state"],"pending_due_noon_eastern")
     def test_first_ledger_review_enqueued_then_deduplicated(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)

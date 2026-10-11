@@ -366,7 +366,9 @@ def main(argv=None):
             # Persist review events before updating their source baseline.
             # Identifiers are content-based, so retrying a failed run is safe.
             from notify import event_id, deliver, deliver_court_health
-            from court_review import due_reviews
+            from court_review import due_reviews, current_status
+            as_of=dt.datetime.fromisoformat(report["generated_at"].replace("Z","+00:00"))
+            report["phang_compliance_review"]=current_status(as_of)
             event_path=a.private_dir/"events.jsonl"
             known=set()
             if event_path.exists():
@@ -374,7 +376,7 @@ def main(argv=None):
                     if line.strip():
                         prior=json.loads(line)
                         known.add(prior.get("event_id") or event_id(prior))
-            milestones=[m for m in due_reviews() if m["event_id"] not in known]
+            milestones=[m for m in due_reviews(as_of) if m["event_id"] not in known]
             report["scheduled_review_milestones"]=len(milestones)
             report["review_events"].extend(milestones)
             with event_path.open("a",encoding="utf-8") as f:
@@ -391,6 +393,9 @@ def main(argv=None):
             write_secure(state,{"schema":"gah.primary_source_watch.state.v1","sources":snapshots})
             report["desktop_notification"]=deliver(a.private_dir)
             report["court_health_notification"]=deliver_court_health(a.private_dir,report)
+            # Current verification state is refreshed every run; one-time
+            # milestone emails do not determine or freeze legal compliance.
+            write_secure(a.private_dir/"phang-compliance-review.json",report["phang_compliance_review"])
             write_secure(a.private_dir/"latest-report.json",report)
         print(json.dumps({"updated":a.update,"health":report["health"],"seen":len(report["observed"]),
                           "unavailable":report["unavailable"],"review_events":len(report["review_events"]),
