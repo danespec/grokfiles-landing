@@ -119,10 +119,27 @@
       "mode": "links",
       "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
       "pattern": "/epstein/files/"
+    },
+    {
+      "id": "dccc-virginia-ad-release",
+      "scope": "DCCC Oct 5 2026 release: coordinated DCCC/Killin six-figure TV ad claim; first-party political statement, not FEC-expenditure verification",
+      "mode": "article_main",
+      "url": "https://dccc.org/dccc-releases-new-tv-ad-in-co-05-featuring-family-of-jeffrey-epstein-victim-virginia/"
+    },
+    {
+      "id": "killin-campaign-epstein-ad",
+      "scope": "Killin campaign Oct 5 original Epstein-related ad announcement; partisan source, not independent factual verification",
+      "mode": "article_main",
+      "url": "https://www.killinforcolorado.com/news/new-killin-ad-epstein-victim-virginia-giuffres-family-slams-jeff-crank-over-epstein-coverup"
+    },
+    {
+      "id": "fec-dccc-committee-overview",
+      "scope": "FEC public committee overview for DCCC C00000935; summary page may lag later line-item expenditures",
+      "mode": "article_main",
+      "url": "https://www.fec.gov/data/committee/C00000935/?cycle=2026"
     }
   ],
   "coverage_gaps": [
-    "Campaign advertising: independent FEC/ad library evidence adapter not yet in catalog",
     "Grand jury unsealing: no verified October docket case and filing IDs in catalog",
     "Island trespass creator litigation: no verified complaint/docket in catalog",
     "DOJ per-file item hashes and removals: no archived before/after inventory; no deletion claim",
@@ -130,6 +147,7 @@
     "France prosecutor primary PDF tracked; press list is broad and new case documents might appear elsewhere. The 13 potential victims count is a separate assertion requiring direct source confirmation",
     "UCL lecture exact primary URL identified but Mac HTTP 403; monitor cannot observe it until access is restored",
     "DOJ Data Set 1 and 12 monitors cover only first index pages; complete pagination, per-file byte hashing and authenticated archived comparisons remain unimplemented",
-    "D.C. Circuit appeals RSS is orders/opinions/judgments only and may be empty on quiet days; motions and sealed appellate filings still require verified PACER/authorized review"
+    "D.C. Circuit appeals RSS is orders/opinions/judgments only and may be empty on quiet days; motions and sealed appellate filings still require verified PACER/authorized review",
+    "Colorado 5th ad Virginia: DCCC Oct 5 press release calls it DCCC + Killin COORDINATED six-figure buy; this is a partisan self-description not audited FEC amount. Schedule E independent-expenditure-only FEC watch does not identify the ad. Need FEC Schedule F coordinated party expenditure and/or Schedule B disbursements matched to exact ad creative, dates, sponsor; DEMO_KEY returned HTTP 429 on Oct 11 query"
   ]
 }
