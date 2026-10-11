@@ -29,7 +29,7 @@ ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
            "ecf.dcd.uscourts.gov", "ecf.cadc.uscourts.gov", "www.courtlistener.com",
            "dockets.justia.com", "www.stortinget.no", "stortinget.no",
            "www.tribunal-de-paris.justice.fr", "www.ucl.ac.uk",
-           "dccc.org", "www.killinforcolorado.com", "www.fec.gov"}
+           "dccc.org", "www.killinforcolorado.com", "www.fec.gov", "www.judiciary.uk"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
 
