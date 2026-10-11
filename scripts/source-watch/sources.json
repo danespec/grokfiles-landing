@@ -1,0 +1,79 @@
+{
+  "schema": "gah.primary_source_watch.catalog.v1",
+  "notes": "Read-only primary-source monitoring; a 403, missing index item, or late-updated mirror is never proof of removal or noncompliance.",
+  "sources": [
+    {
+      "id": "fbi-vault-review",
+      "scope": "FBI Vault Parts 01+",
+      "mode": "links",
+      "url": "https://vault.fbi.gov/records-regarding-the-review-of-the-investigative-holdings-related-to-jeffrey-epstein/",
+      "pattern": "/records-regarding-the-review-of-the-investigative-holdings-related-to-jeffrey-epstein/[^?#]*/?"
+    },
+    {
+      "id": "doj-efta-disclosures",
+      "scope": "DOJ Data Set indices and notices",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures",
+      "pattern": "/epstein/doj-disclosures/(?:data-set-[0-9]+-files|[a-z0-9-]+)"
+    },
+    {
+      "id": "senate-finance-epstein",
+      "scope": "Wyden and Finance Committee news index",
+      "mode": "links",
+      "url": "https://www.finance.senate.gov/ranking-members-news",
+      "pattern": "/ranking-members-news/[^?#]*epstein[^?#]*"
+    },
+    {
+      "id": "wyden-302-letter",
+      "scope": "September 30 FBI FD-302 demand, source and attachments",
+      "mode": "links",
+      "url": "https://www.finance.senate.gov/ranking-members-news/wyden-demands-immediate-release-of-epstein-investigation-document-illegally-concealed-by-trumps-doj-and-fbi",
+      "pattern": "(?:epstein|\\.pdf|letter|302)"
+    },
+    {
+      "id": "federal-register-efta",
+      "scope": "EFTA-related Federal Register document search, not comprehensive redaction register",
+      "mode": "federalregister",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=Epstein%20Files%20Transparency%20Act&per_page=100"
+    },
+    {
+      "id": "phang-govinfo-opinions",
+      "scope": "Official USCOURTS opinions for Phang case; NOT all docket filings",
+      "mode": "document",
+      "url": "https://www.govinfo.gov/app/details/USCOURTS-dcd-1_26-cv-01417/USCOURTS-dcd-1_26-cv-01417-2/context"
+    },
+    {
+      "id": "phang-courtlistener",
+      "scope": "Public RECAP mirror, coverage and freshness not guaranteed",
+      "mode": "document",
+      "url": "https://www.courtlistener.com/docket/73246595/phang-v-blanche/"
+    },
+    {
+      "id": "phang-justia",
+      "scope": "Secondary docket mirror, may be stale",
+      "mode": "document",
+      "url": "https://dockets.justia.com/docket/district-of-columbia/dcdce/1%3A2026cv01417/291779"
+    },
+    {
+      "id": "storting-sept30",
+      "scope": "Norway parliament official Sept 30 hearing",
+      "mode": "document",
+      "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Referater/Horinger/2025-2026/refh-202526-09-30/?all=true"
+    },
+    {
+      "id": "storting-oct01",
+      "scope": "Norway parliament official Oct 1 hearing, transcript in progress",
+      "mode": "document",
+      "url": "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Referater/Horinger/2026-2027/refh-202627-10-01?all=true"
+    }
+  ],
+  "coverage_gaps": [
+    "France prosecutors: no validated durable public case index in this version",
+    "UCL November lecture: exact official event URL not yet in catalog",
+    "Campaign advertising: independent FEC/ad library evidence adapter not yet in catalog",
+    "Grand jury unsealing: no verified October docket case and filing IDs in catalog",
+    "Island trespass creator litigation: no verified complaint/docket in catalog",
+    "DOJ per-file item hashes and removals: no archived before/after inventory; no deletion claim",
+    "Phang docket freshness: public mirror may lag PACER"
+  ]
+}
