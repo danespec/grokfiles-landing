@@ -72,15 +72,55 @@
       "scope": "Norway parliament official Oct 1 hearing, transcript in progress",
       "mode": "document",
       "url": "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Referater/Horinger/2026-2027/refh-202627-10-01?all=true"
+    },
+    {
+      "id": "norway-commission-official",
+      "scope": "Stortinget official parliamentary Epstein inquiry commission decision and mandate; status page, not transcript",
+      "mode": "document",
+      "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=107923&target=case-status"
+    },
+    {
+      "id": "france-pnf-feb-press",
+      "scope": "Paris Financial Prosecutor official February 16 press notice on its investigation; immutable-content assumption NOT made",
+      "mode": "official_pdf",
+      "url": "https://www.tribunal-de-paris.justice.fr/sites/default/files/2026-02/260216_CP%20perquisitions%20IMA.pdf"
+    },
+    {
+      "id": "france-paris-press-index",
+      "scope": "Paris judicial tribunal press releases index; observe newly added official PDFs, all topics, NOT an Epstein-case-specific discovery guarantee",
+      "mode": "links",
+      "url": "https://www.tribunal-de-paris.justice.fr/75/communiques-de-presse",
+      "pattern": "/sites/default/files/2026-[0-9]{2}/[^?#]+\\.pdf"
+    },
+    {
+      "id": "ucl-freeman-nov16",
+      "scope": "Official UCL November 16 Michael Freeman talk announcing intended release of supporting materials; Mac currently blocked 403",
+      "mode": "document",
+      "url": "https://www.ucl.ac.uk/laws/events/2026/nov/scientific-analysis-cause-manner-jeffrey-epsteins-death"
+    },
+    {
+      "id": "doj-dataset-1-firstpage",
+      "scope": "DOJ EFTA Data Set 1 first page only; new PDF link changes, not full 50+ page archive inventory",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-1-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-12-firstpage",
+      "scope": "DOJ EFTA Data Set 12 first page only; new PDF link changes, not full archive inventory",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
+      "pattern": "/epstein/files/"
     }
   ],
   "coverage_gaps": [
-    "France prosecutors: no validated durable public case index in this version",
-    "UCL November lecture: exact official event URL not yet in catalog",
     "Campaign advertising: independent FEC/ad library evidence adapter not yet in catalog",
     "Grand jury unsealing: no verified October docket case and filing IDs in catalog",
     "Island trespass creator litigation: no verified complaint/docket in catalog",
     "DOJ per-file item hashes and removals: no archived before/after inventory; no deletion claim",
-    "Phang: official D.D.C. public RSS detects recent public docket activity only. Filing text may require PACER; administrative record delivered solely to plaintiff or sealed is invisible"
+    "Phang: official D.D.C. public RSS detects recent public docket activity only. Filing text may require PACER; administrative record delivered solely to plaintiff or sealed is invisible",
+    "France prosecutor primary PDF tracked; press list is broad and new case documents might appear elsewhere. The 13 potential victims count is a separate assertion requiring direct source confirmation",
+    "UCL lecture exact primary URL identified but Mac HTTP 403; monitor cannot observe it until access is restored",
+    "DOJ Data Set 1 and 12 monitors cover only first index pages; complete pagination, per-file byte hashing and authenticated archived comparisons remain unimplemented"
   ]
 }
