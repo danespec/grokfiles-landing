@@ -10,6 +10,8 @@ import datetime as dt
 import fcntl
 import hashlib
 import json
+import email.utils
+import xml.etree.ElementTree as ET
 import os
 import re
 import subprocess
@@ -22,7 +24,8 @@ from urllib.parse import urljoin, urlparse
 HERE = Path(__file__).resolve().parent
 DEFAULT_PRIVATE = Path.home() / "_gah_builds" / "GAH-SIGNALS-004-private"
 ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
-           "www.federalregister.gov", "www.govinfo.gov", "www.finance.senate.gov", "www.courtlistener.com",
+           "www.federalregister.gov", "www.govinfo.gov", "www.finance.senate.gov",
+           "ecf.dcd.uscourts.gov", "www.courtlistener.com",
            "dockets.justia.com", "www.stortinget.no", "stortinget.no"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
@@ -100,11 +103,60 @@ def fetch(url, timeout=28):
         raise RuntimeError("source_empty_or_oversized")
     return data
 
+def parse_court_rss(source, raw, now=None):
+    """Live official D.D.C. docket-activity RSS, *not* an exhaustive case docket.
+
+    The public feed rotates. Only the matching case is retained; event IDs are
+    persistent across rotations to prevent rediscovery of prior filings.
+    """
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError as exc:
+        raise RuntimeError("court_rss_invalid_xml") from exc
+    channel = root.find("channel")
+    if root.tag != "rss" or channel is None:
+        raise RuntimeError("court_rss_invalid_schema")
+    items = channel.findall("item")
+    build = channel.findtext("lastBuildDate")
+    if not build or not items:
+        raise RuntimeError("court_rss_empty_or_undated")
+    try:
+        when = email.utils.parsedate_to_datetime(build).astimezone(UTC)
+    except (TypeError, ValueError) as exc:
+        raise RuntimeError("court_rss_invalid_build_time") from exc
+    current = now or dt.datetime.now(UTC)
+    age = (current-when).total_seconds()
+    if age < -900 or age > 72*3600:
+        raise RuntimeError("court_rss_stale_or_future")
+    match = re.compile(source["case_regex"], re.I)
+    found = {}
+    for item in items:
+        title = normalize(item.findtext("title") or "")
+        description = normalize(item.findtext("description") or "")
+        summary = normalize(title+" "+re.sub("<[^>]*>", " ", description))
+        if not match.search(summary):
+            continue
+        link = item.findtext("link") or ""
+        if not safe_url(link):
+            raise RuntimeError("court_rss_unsafe_docket_link")
+        guid = item.findtext("guid") or ""
+        published = item.findtext("pubDate") or ""
+        # GUIDs may be reused for multiple simultaneous docket events.
+        event_id = digest("|".join([title, description, guid, published]))
+        key = link.split("#")[0]+"#gah-rss-"+event_id[:20]
+        found[key] = normalize(published+" | "+summary)[:260]
+    return {"mode": "court_rss", "links": dict(sorted(found.items())),
+            "digest": digest(json.dumps(found,sort_keys=True)),
+            "rss_last_build":when.isoformat(),
+            "rss_items_in_window":len(items)}
+
 def observe(source, transport=fetch):
     """No state mutations. HTML is untrusted, parsed as data only."""
     url = source["url"]
     raw = transport(url)
     mode = source["mode"]
+    if mode == "court_rss":
+        return parse_court_rss(source, raw)
     if mode == "federalregister":
         obj = json.loads(raw)
         docs = obj.get("results")
@@ -146,8 +198,21 @@ def observe(source, transport=fetch):
 
 def compare(previous, current, name):
     if previous is None:
+        if current["mode"] == "court_rss":
+            return ([{"source":name,"kind":"target_case_entry_first_observed",
+                     "url":url,"label":label,"review_required":True,
+                     "note":"New to GAH monitoring, not necessarily a newly filed docket entry"}
+                    for url,label in current["links"].items()], "baseline")
         return [], "baseline"
     events = []
+    if current["mode"] == "court_rss":
+        for url in sorted(set(current["links"]) - set(previous.get("links", {}))):
+            events.append({"source":name,"kind":"target_case_docket_activity",
+                           "url":url,"label":current["links"][url],
+                           "review_required":True,
+                           "note":"Public RSS entry only; underlying filing and compliance need independent verification"})
+        # RSS is a short rolling window; disappearance never means deletion.
+        return events, "compared"
     if current["mode"] in ("links", "federalregister"):
         old = previous.get("links", {})
         for url in sorted(set(current["links"]) - set(old)):
@@ -190,7 +255,13 @@ def build_report(catalog, previous, transport=fetch, now=utcnow):
         curr = observations[name]
         new, _ = compare(previous.get(name), curr, name)
         events.extend(new)
-        snapshots[name] = {"mode": curr["mode"], "links": curr["links"],
+        links = curr["links"]
+        if curr["mode"] == "court_rss":
+            links = {**previous.get(name, {}).get("links", {}), **links}
+            # Guard against uncontrolled private state growth.
+            if len(links) > 5000:
+                raise RuntimeError("court_rss_history_limit_reached")
+        snapshots[name] = {"mode": curr["mode"], "links": links,
                            "digest": curr["digest"], "last_success": now(),
                            "source_url": s["url"]}
     report = {"schema": "gah.primary_source_watch.report.v1", "generated_at": now(),

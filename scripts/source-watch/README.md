@@ -10,6 +10,7 @@ Run `python3 scripts/source-watch/watch.py --update` on the authorized Mac to cr
 - Federal Register keyword search: observe new search results; this is not proof of full legal compliance with the Act's redaction-justification requirement.
 - Norway Storting September 30 and October 1 hearing transcript pages: observe changed visible text; changes are editorial review leads, not criminal findings.
 - FBI Vault Parts index: configured, but Mac requests receive HTTP 403. Status **unavailable**, not “no new parts.”
+- **Official D.D.C. CM/ECF RSS feed:** `https://ecf.dcd.uscourts.gov/cgi-bin/rss_outside.pl` is reachable without PACER login and carries recent publicly docketed activity. Filter exactly to **1:26-cv-01417, Phang v. Blanche**. The monitored window rotates; store unique matching events permanently across polls and never equate disappearance from the feed with deletion. Entry summaries and public docket metadata do not include the full underlying filing. A no-match poll does **not** establish no filing or compliance.
 - Official GovInfo Phang *opinions* page: accessible; can flag revisions/new judicial opinions but **not docket filings or party submissions**. CourtListener and Justia docket mirrors remain unavailable from this Mac; no docket freshness guarantee.
 - Additional coverage gaps remain listed in `sources.json`: French prosecutors, UK source-specific orders, October grand-jury filings, UCL event source URL, ad data, litigation records, and item-level DOJ before/after hashes.
 
@@ -20,7 +21,7 @@ Run `python3 scripts/source-watch/watch.py --update` on the authorized Mac to cr
 4. Only a new primary-source link or text change produces a **review-required** event. No automated allegation or public posting follows.
 5. First successful fetch is a silent baseline, not proof of recent publication. Original publication dates must be verified separately.
 6. Do not republish victim names; no PDF bodies or full hearing transcripts are persisted. Link labels come from official sources and require privacy review before any public display.
-7. Run `python3 scripts/source-watch/test_watch.py` to check isolated fixture scenarios, including a mock HTTP 403 and a false-removal test.
+7. Run `python3 scripts/source-watch/test_watch.py` to check isolated fixture scenarios, including a mock HTTP 403, rolling RSS entry preservation, court-URL rejection, and a false-removal test.
 
 ## State, scheduling, and recovery
 State and events remain outside the repository. `latest-report.json` is a private operational diagnostic; `events.jsonl` is a *triage inbox*, not publishable evidence. Recommended polling cadence is one hour, using one process lock and read-only GETs. On an unavailable source, the snapshot remains unchanged; a subsequent successful fetch is compared with the last successful baseline.
@@ -28,6 +29,10 @@ State and events remain outside the repository. `latest-report.json` is a privat
 To stop a macOS LaunchAgent used with this script: `launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.gah.primary-source-watch.plist`. This does not delete the private evidence ledger. The standalone runner has no credentials or privileged operations. Do not assume a sleeping or powered-off Mac ran the checks.
 
 ## Gating before Issue #9 closure
-The reachable configured sources (7/10 as of the initial test, with occasional source timeouts) do **not** qualify as complete eight-lead monitoring. Add reliable FBI Vault and Phang docket access, expand the missing official-source adapters, test archival per-file hashes and dates, provide a non-sensitive health report, and add editorial review/acknowledgement before considering automatic delivery. Keep the public Trending mechanism separate.
+The reachable configured sources (8/11 in the October 11 live dry-run, with occasional source timeouts) do **not** qualify as complete eight-lead monitoring. Add reliable FBI Vault access and complete Phang docket access (the public court RSS is only a recent activity signal), expand the missing official-source adapters, test archival per-file hashes and dates, provide a non-sensitive health report, and add editorial review/acknowledgement before considering automatic delivery. Keep the public Trending mechanism separate.
 
 GitHub: https://github.com/danespec/grokfiles-landing/issues/9
+
+## October 15–16 readiness and hard limitations
+
+The September 16 ECF 42 order calls for production of the administrative record **to the plaintiff by October 15**, which need not itself produce a publicly visible docket entry. The separate October 16 judicial review deadline for FBI notes is also not guaranteed to produce an immediately accessible public document. Monitoring the official court RSS can detect relevant newly docketed events; it cannot certify compliance, inspect sealed/in-camera papers, or prove nothing happened when no entry appears. Where the RSS indicates activity, follow the official docket through properly authorized access before making a public factual claim.
