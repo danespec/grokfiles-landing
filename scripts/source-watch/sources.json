@@ -114,6 +114,76 @@
       "pattern": "/epstein/files/"
     },
     {
+      "id": "doj-dataset-2-firstpage",
+      "scope": "DOJ official Epstein Data Set 2 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-2-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-3-firstpage",
+      "scope": "DOJ official Epstein Data Set 3 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-3-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-4-firstpage",
+      "scope": "DOJ official Epstein Data Set 4 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-5-firstpage",
+      "scope": "DOJ official Epstein Data Set 5 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-6-firstpage",
+      "scope": "DOJ official Epstein Data Set 6 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-6-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-7-firstpage",
+      "scope": "DOJ official Epstein Data Set 7 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-7-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-8-firstpage",
+      "scope": "DOJ official Epstein Data Set 8 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-8-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-9-firstpage",
+      "scope": "DOJ official Epstein Data Set 9 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-9-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-10-firstpage",
+      "scope": "DOJ official Epstein Data Set 10 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-10-files",
+      "pattern": "/epstein/files/"
+    },
+    {
+      "id": "doj-dataset-11-firstpage",
+      "scope": "DOJ official Epstein Data Set 11 first public listing page only; tracked links are a nonexhaustive sample and do not cover pagination, all PDF bytes, or removals",
+      "mode": "links",
+      "url": "https://www.justice.gov/epstein/doj-disclosures/data-set-11-files",
+      "pattern": "/epstein/files/"
+    },
+    {
       "id": "doj-dataset-12-firstpage",
       "scope": "DOJ EFTA Data Set 12 first page only; new PDF link changes, not full archive inventory",
       "mode": "links",
@@ -192,6 +262,7 @@
     "D.C. Circuit appeals RSS is orders/opinions/judgments only and may be empty on quiet days; motions and sealed appellate filings still require verified PACER/authorized review",
     "Colorado 5th ad Virginia: DCCC Oct 5 press release calls it DCCC + Killin COORDINATED six-figure buy; this is a partisan self-description not audited FEC amount. Schedule E independent-expenditure-only FEC watch does not identify the ad. Need FEC Schedule F coordinated party expenditure and/or Schedule B disbursements matched to exact ad creative, dates, sponsor; DEMO_KEY returned HTTP 429 on Oct 11 query",
     "UK Andrew Mountbatten-Windsor: Oct 8 order and official PDF monitored. Future s59 retention decision (listed as potentially 2027), challenges to officer-identity redactions (14 days from order), and other proceedings are not covered by live docket RSS; no PACER-like UK case-specific authenticated docket source configured",
-    "Phang: certified list due Oct 1 ECF42, on Oct 1 govt filed ECF51 postponement motion and ECF52 Rule12c judgment motion; ECF55 Oct8 opposition, ECF57 Oct9 additional in-camera compliance order. Public RECAP filing PDFs are *known* court-stamped originals but do NOT constitute a complete or current live docket. No inference of a granted stay or final compliance."
+    "Phang: certified list due Oct 1 ECF42, on Oct 1 govt filed ECF51 postponement motion and ECF52 Rule12c judgment motion; ECF55 Oct8 opposition, ECF57 Oct9 additional in-camera compliance order. Public RECAP filing PDFs are *known* court-stamped originals but do NOT constitute a complete or current live docket. No inference of a granted stay or final compliance.",
+    "DOJ Data Sets 1–12: monitor only the first public listing page per dataset. Many paginated listing pages (and file bytes) are not accessible through authorized Mac/NAS network paths. First-page additions/changes do NOT establish complete corpus totals, disappearance of records, or a full changed-file inventory."
   ]
 }
