@@ -21,6 +21,21 @@ const proxyChunk=slice('async function proxyProofLayer(request, env = {}) {','  
 const proxyContext={Request,Response,Headers,URL,WIKI_HOST:'wiki.grokarchivehub.com',WIKI_INTERNAL_PROXY_HEADER:'X-GAH-Internal-Wiki-Proxy',WIKI_SERVICE_TOKEN_HEADER:'X-GAH-Wiki-Service-Token',cleanPath:p=>p,isStagingEnv:env=>String(env?.GAH_STAGING)==='true',wikiHost:env=>env?.GAH_WIKI_HOST||'wiki.grokarchivehub.com'};
 vm.runInNewContext(proxyChunk+'\n return {url:target.toString(),headers:headersForUpstream};\n}\nglobalThis.hop=proxyProofLayer;',proxyContext);
 function input(){return new Request('https://grokarchivehub.com/api/search',{method:'POST',headers:{'X-GAH-Wiki-Service-Token':'ATTACKER_VALUE',Cookie:'apex_session=sensitive',Authorization:'Bearer sample'},body:'{}'});}
+test('all protected API fallback routes forward the Cloudflare env',()=>{
+  const match=s.match(/if \(path\.startsWith\("\/api\/"\)\)\s*\{([^}]+)\}/);
+  assert.ok(match,'API catchall exists');
+  assert.match(match[1],/return proxyProofLayer\(request, env\);/,
+    'all API routes must receive secret-bearing server env');
+});
+test('help, Story, and answer receive only the server-side token',async()=>{
+  for(const route of ['/api/help','/api/story','/api/answer']){
+    const req=new Request('https://grokarchivehub.com'+route,{
+      method:'POST',headers:{'X-GAH-Wiki-Service-Token':'BROWSER_SPOOF'},body:'{}'
+    });
+    const h=(await proxyContext.hop(req,{GAH_WIKI_SERVICE_TOKEN:'S'.repeat(48)})).headers;
+    assert.equal(h.get('X-GAH-Wiki-Service-Token'),'S'.repeat(48),route);
+  }
+});
 test('server token replaces spoofed token and strips credentials',async()=>{
  const h=(await proxyContext.hop(input(),{GAH_WIKI_SERVICE_TOKEN:'T'.repeat(40)})).headers;
  assert.equal(h.get('X-GAH-Wiki-Service-Token'),'T'.repeat(40));

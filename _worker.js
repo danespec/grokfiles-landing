@@ -18404,7 +18404,9 @@ export default {
     }
 
     if (path.startsWith("/api/")) {
-      return proxyProofLayer(request);
+      // Preserve Pages server-only bindings for all wiki API routes.
+      // Without env the gateway auth token is absent on Story/Help/Answer.
+      return proxyProofLayer(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && (path === "/pdf-lite" || path === "/pdf-lite.html")) {
