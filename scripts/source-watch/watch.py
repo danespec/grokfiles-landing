@@ -29,6 +29,7 @@ ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
            "ecf.dcd.uscourts.gov", "ecf.cadc.uscourts.gov", "www.courtlistener.com",
            "dockets.justia.com", "www.stortinget.no", "stortinget.no",
            "www.tribunal-de-paris.justice.fr", "www.ucl.ac.uk",
+           "storage.courtlistener.com",
            "dccc.org", "www.killinforcolorado.com", "www.fec.gov", "www.judiciary.uk"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
@@ -365,6 +366,7 @@ def main(argv=None):
             # Persist review events before updating their source baseline.
             # Identifiers are content-based, so retrying a failed run is safe.
             from notify import event_id, deliver, deliver_court_health
+            from court_review import due_reviews
             event_path=a.private_dir/"events.jsonl"
             known=set()
             if event_path.exists():
@@ -372,11 +374,14 @@ def main(argv=None):
                     if line.strip():
                         prior=json.loads(line)
                         known.add(prior.get("event_id") or event_id(prior))
+            milestones=[m for m in due_reviews() if m["event_id"] not in known]
+            report["scheduled_review_milestones"]=len(milestones)
+            report["review_events"].extend(milestones)
             with event_path.open("a",encoding="utf-8") as f:
                 for event in report["review_events"]:
                     item={"observed_at":report["generated_at"],**event,
-                          "observed_digest":snapshots[event["source"]]["digest"]}
-                    item["event_id"]=event_id(item)
+                          "observed_digest":snapshots.get(event["source"],{}).get("digest","scheduled_review_not_source_observation")}
+                    item["event_id"]=event.get("event_id") or event_id(item)
                     if item["event_id"] not in known:
                         f.write(json.dumps(item,ensure_ascii=False)+"\n")
                         known.add(item["event_id"])
