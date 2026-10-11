@@ -37,6 +37,13 @@
       "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=Epstein%20Files%20Transparency%20Act&per_page=100"
     },
     {
+      "id": "phang-dcd-official-rss",
+      "scope": "U.S. District Court for D.C. public CM/ECF activity; Phang 1:26-cv-01417 only, NOT complete docket",
+      "mode": "court_rss",
+      "url": "https://ecf.dcd.uscourts.gov/cgi-bin/rss_outside.pl",
+      "case_regex": "(?:1:26-cv-0?1417\\b|PHANG\\s+v\\.?\\s+BLANCHE)"
+    },
+    {
       "id": "phang-govinfo-opinions",
       "scope": "Official USCOURTS opinions for Phang case; NOT all docket filings",
       "mode": "document",
@@ -74,6 +81,6 @@
     "Grand jury unsealing: no verified October docket case and filing IDs in catalog",
     "Island trespass creator litigation: no verified complaint/docket in catalog",
     "DOJ per-file item hashes and removals: no archived before/after inventory; no deletion claim",
-    "Phang docket freshness: public mirror may lag PACER"
+    "Phang: official D.D.C. public RSS detects recent public docket activity only. Filing text may require PACER; administrative record delivered solely to plaintiff or sealed is invisible"
   ]
 }
