@@ -1,0 +1,16 @@
+{
+  "schema": "gah.editorial-source-summary.v1",
+  "published": "2026-10-12",
+  "scope": "selected primary records",
+  "public_originals_included": false,
+  "redactions": "No original signatures, banking details or personal contact information",
+  "verification_note": "Cited source containers were reviewed; a proposed meeting, payment or investment is not counted as completed unless independently established",
+  "documents": [
+    {
+      "description": "Grynberg-side finder-fee proposal",
+      "date": "2014-11-18",
+      "sha256": "f7296ca9925e48ae89d68fa0b72db81bfd2b86b493401eeeca36808e486c7bd1",
+      "boundary": "Seller-side signature apparent but unauthenticated; no buyer closing"
+    }
+  ]
+}
