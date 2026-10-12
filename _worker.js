@@ -7563,6 +7563,12 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   const escapedCanonical = escapeHtml(canonical);
   const socialImage = meta.image || htmlMetaContent(body, "property", "og:image") || "https://grokarchivehub.com/frontdoor/hero-hold-the-letter.jpg";
   const escapedSocialImage = escapeHtml(socialImage);
+  // NEWS-DESK-001: these image-free editorial briefs must not inherit an unrelated featured-story photo.
+  const imageFreeNewsDesk = policyPath === "/news" || [
+    "/news/doj-march-2025-review-emails-released",
+    "/news/phang-fbi-notes-in-camera-october-16",
+    "/news/gadeco-chinese-consortium-declined"
+  ].includes(policyPath);
   const tags = [];
 
   if (/<title[\s>]/i.test(body)) {
@@ -7596,11 +7602,11 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
     tags.push(`<meta property="og:url" content="${escapedCanonical}">`);
   }
   if (!htmlMetaContent(body, "property", "og:type")) tags.push(`<meta property="og:type" content="${escapeHtml(meta.ogType || "website")}">`);
-  if (!htmlMetaContent(body, "property", "og:image")) tags.push(`<meta property="og:image" content="${escapedSocialImage}">`);
+  if (!imageFreeNewsDesk && !htmlMetaContent(body, "property", "og:image")) tags.push(`<meta property="og:image" content="${escapedSocialImage}">`);
   if (!htmlMetaContent(body, "name", "twitter:card")) tags.push(`<meta name="twitter:card" content="summary_large_image">`);
   if (!htmlMetaContent(body, "name", "twitter:title")) tags.push(`<meta name="twitter:title" content="${escapedTitle}">`);
   if (!htmlMetaContent(body, "name", "twitter:description")) tags.push(`<meta name="twitter:description" content="${escapedDescription}">`);
-  if (!htmlMetaContent(body, "name", "twitter:image")) tags.push(`<meta name="twitter:image" content="${escapedSocialImage}">`);
+  if (!imageFreeNewsDesk && !htmlMetaContent(body, "name", "twitter:image")) tags.push(`<meta name="twitter:image" content="${escapedSocialImage}">`);
   if (!/<link\b(?=[^>]*\brel\s*=\s*["'][^"']*\balternate\b[^"']*["'])(?=[^>]*\btype\s*=\s*["']application\/rss\+xml["'])[^>]*>/i.test(body)) {
     tags.push(`<link rel="alternate" type="application/rss+xml" title="Grok Archive Hub RSS" href="https://grokarchivehub.com/feed.xml">`);
   }
