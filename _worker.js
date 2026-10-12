@@ -63,6 +63,9 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/news/doj-march-2025-review-emails-released",
+  "/news/phang-fbi-notes-in-camera-october-16",
+  "/news/gadeco-chinese-consortium-declined",
   "/",
   "/start",
   "/about",
@@ -276,6 +279,10 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/news", "original-editorial-news-desk-ad-free"],
+  ["/news/doj-march-2025-review-emails-released", "sensitive-public-records-news-ad-free"],
+  ["/news/phang-fbi-notes-in-camera-october-16", "sensitive-public-records-news-ad-free"],
+  ["/news/gadeco-chinese-consortium-declined", "sensitive-public-records-news-ad-free"],
   ["/entities", "sensitive-entity-index-ad-free"],
   ["/search", "search-results-finding-aid"],
   ["/live", "temporary-operational-changelog"],
@@ -527,7 +534,7 @@ const UTILITY_NOINDEX_EXACT_PATHS = new Map([
   ["/projects", "thin-duplicate-investigation-hub"],
   ["/timeline-reconstructions", "redundant-timeline-card-hub"],
   ["/research/evidence/calendar-epstein", "query-lane-finding-aid"],
-  ["/news", "phang-news-backing-files-absent"],
+
   // GAH-ADSENSE-REMEDIATION-006A: Thomas approved noindex for these two review pages.
   ["/contradiction-ledger", "ledger-single-entry-not-standalone-result"],
   ["/open-questions", "open-questions-hub-not-standalone-result"]
@@ -983,6 +990,10 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/news", "/news.html"],
+  ["/news/doj-march-2025-review-emails-released", "/news/doj-march-2025-review-emails-released.html"],
+  ["/news/phang-fbi-notes-in-camera-october-16", "/news/phang-fbi-notes-in-camera-october-16.html"],
+  ["/news/gadeco-chinese-consortium-declined", "/news/gadeco-chinese-consortium-declined.html"],
   ["/investigations/fbi-vault-redaction-chronology-phang", "/investigations/fbi-vault-redaction-chronology-phang.html"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "/investigations/doj-oip-epstein-review-public-figure-flags-2026.html"],
   ["/dispatches/epstein-source-watch-october-2026", "/dispatches/epstein-source-watch-october-2026.html"],
@@ -1089,6 +1100,10 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/news", "2026-10-12"],
+  ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
+  ["https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16", "2026-10-12"],
+  ["https://grokarchivehub.com/news/gadeco-chinese-consortium-declined", "2026-10-12"],
   ["https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang", "2026-10-12"],
   ["https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026", "2026-10-12"],
   ["https://grokarchivehub.com/dispatches/epstein-source-watch-october-2026", "2026-10-11"],
@@ -4837,6 +4852,9 @@ function sanitizePublicSearchValue(value, depth = 0) {
 }
 
 const PUBLIC_EDITORIAL_SEARCH_ROWS = [
+  {id: "GAH-NEWS-001-1", title: "New DOJ Release Documents March 2025 Epstein File Review Instructions", summary: "A 41-page DOJ disclosure identifies instructions to flag public figures and protect victim identities. The approved review plan remains partly withheld.", read_url: "/news/doj-march-2025-review-emails-released", url: "/news/doj-march-2025-review-emails-released", tags: ["news","DOJ","court","GADECO","source audit"]},
+  {id: "GAH-NEWS-001-2", title: "Judge Orders Redacted FBI Notes for Private Review by October 16", summary: "A signed October 9 order requires three sets of handwritten FBI notes to be submitted to the judge. It does not require public release.", read_url: "/news/phang-fbi-notes-in-camera-october-16", url: "/news/phang-fbi-notes-in-camera-october-16", tags: ["news","DOJ","court","GADECO","source audit"]},
+  {id: "GAH-NEWS-001-3", title: "Why a Chinese Consortium Declined a Proposed $1.6 Billion Oil Deal", summary: "November 2014 correspondence and engineering forecasts explain the dispute over financial disclosure and price. A completed sale has not been established.", read_url: "/news/gadeco-chinese-consortium-declined", url: "/news/gadeco-chinese-consortium-declined", tags: ["news","DOJ","court","GADECO","source audit"]},
   {id: "GAH-DOJ-OIP-EPSTEIN-REVIEW-20261009", title: "DOJ's March 2025 Epstein Review Emails: Public-Figure Flags, Victim Protections and the Missing Plan", summary: "October 9 DOJ FOIA disclosure documents March 2025 public-figure review flags, victim-protection guidance and a partly withheld project plan; separate Phang ECF 57 sets the October 16 in-camera deadline.", read_url: "/investigations/doj-oip-epstein-review-public-figure-flags-2026", url: "/investigations/doj-oip-epstein-review-public-figure-flags-2026", tags: ["DOJ OIP","Epstein","FOIA","2026","Phang v Blanche","ECF 57","public figures","victim redactions"]},
   {id: "GAH-BARAK-RELEASE-BARAK_SAUDI_ROTHSCHILD_PROPOSAL_2015", title: "A Proposed $200 Million Saudi–Israeli Healthcare Fund, Documented but Not Funded", summary: "2015 correspondence describes Saudi investor recruitment, a proposed Luxembourg healthcare fund naming Ehud Barak, and preliminary Rothschild discussions. No funding or launch is proven.", read_url: "/investigations/barak-saudi-rothschild-proposal-2015", url: "/investigations/barak-saudi-rothschild-proposal-2015", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
   {id: "GAH-BARAK-RELEASE-BARAK_GADECO_FEE_2014", title: "The GADECO Deal Did Not End with Barak's November 3 Withdrawal", summary: "A November 3 withdrawal was followed by an amended contingent 3% finder-fee proposal and additional Chinese-buyer discussions. Neither a closing nor fee payment is proven.", read_url: "/investigations/barak-gadeco-fee-2014", url: "/investigations/barak-gadeco-fee-2014", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
@@ -7763,6 +7781,7 @@ async function assetJson(request, env, assetPath) {
 
 function rssEligibleEditorialPath(path) {
   const clean = cleanPath(path);
+  if (clean === "/news/doj-march-2025-review-emails-released" || clean === "/news/phang-fbi-notes-in-camera-october-16" || clean === "/news/gadeco-chinese-consortium-declined") return true;
   if (/^\/evidence-briefs\/[^/]+$/.test(clean)) return true;
   if (/^\/document-autopsies\/[^/]+$/.test(clean)) return true;
   if (/^\/dispatches\/[^/]+$/.test(clean)) return true;
