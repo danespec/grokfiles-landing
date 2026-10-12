@@ -86,6 +86,7 @@ const FRONTDOOR_PATHS = new Set([
   "/investigations/andriesz-adfin-lutnick-paper-trail",
   "/investigations/barak-epstein-putin-qatar-carbyne",
   "/investigations/barak-14-leads-evidence-index",
+  "/investigations/doj-oip-epstein-review-public-figure-flags-2026",
   "/investigations/barak-saudi-rothschild-proposal-2015",
   "/investigations/barak-gadeco-fee-2014",
   "/investigations/barak-ushakov-2013-2015",
@@ -301,6 +302,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/andriesz-adfin-lutnick-paper-trail", "sensitive-financial-whistleblower-investigation-ad-free"],
   ["/investigations/barak-epstein-putin-qatar-carbyne", "sensitive-geopolitical-public-records-investigation-ad-free"],
   ["/investigations/barak-14-leads-evidence-index", "sensitive-geopolitical-public-records-investigation-ad-free"],
+  ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "sensitive-victim-privacy-public-records-ad-free"],
   ["/investigations/barak-saudi-rothschild-proposal-2015", "sensitive-geopolitical-public-records-investigation-ad-free"],
   ["/investigations/barak-gadeco-fee-2014", "sensitive-geopolitical-public-records-investigation-ad-free"],
   ["/investigations/barak-ushakov-2013-2015", "sensitive-geopolitical-public-records-investigation-ad-free"],
@@ -982,6 +984,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/investigations/fbi-vault-redaction-chronology-phang", "/investigations/fbi-vault-redaction-chronology-phang.html"],
+  ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "/investigations/doj-oip-epstein-review-public-figure-flags-2026.html"],
   ["/dispatches/epstein-source-watch-october-2026", "/dispatches/epstein-source-watch-october-2026.html"],
   ["/investigations/fbi-review-holdings-vault-parts-12-13", "/investigations/fbi-review-holdings-vault-parts-12-13.html"],
   ["/guides/epstein-client-list-explained", "/guides/epstein-client-list-explained.html"],
@@ -1086,7 +1089,8 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
-  ["https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang", "2026-10-11"],
+  ["https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang", "2026-10-12"],
+  ["https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026", "2026-10-12"],
   ["https://grokarchivehub.com/dispatches/epstein-source-watch-october-2026", "2026-10-11"],
   ["https://grokarchivehub.com/investigations/fbi-review-holdings-vault-parts-12-13", "2026-10-11"],
   ["https://grokarchivehub.com/guides/epstein-client-list-explained", "2026-10-11"],
@@ -4833,6 +4837,7 @@ function sanitizePublicSearchValue(value, depth = 0) {
 }
 
 const PUBLIC_EDITORIAL_SEARCH_ROWS = [
+  {id: "GAH-DOJ-OIP-EPSTEIN-REVIEW-20261009", title: "DOJ's March 2025 Epstein Review Emails: Public-Figure Flags, Victim Protections and the Missing Plan", summary: "October 9 DOJ FOIA disclosure documents March 2025 public-figure review flags, victim-protection guidance and a partly withheld project plan; separate Phang ECF 57 sets the October 16 in-camera deadline.", read_url: "/investigations/doj-oip-epstein-review-public-figure-flags-2026", url: "/investigations/doj-oip-epstein-review-public-figure-flags-2026", tags: ["DOJ OIP","Epstein","FOIA","2026","Phang v Blanche","ECF 57","public figures","victim redactions"]},
   {id: "GAH-BARAK-RELEASE-BARAK_SAUDI_ROTHSCHILD_PROPOSAL_2015", title: "A Proposed $200 Million Saudi–Israeli Healthcare Fund, Documented but Not Funded", summary: "2015 correspondence describes Saudi investor recruitment, a proposed Luxembourg healthcare fund naming Ehud Barak, and preliminary Rothschild discussions. No funding or launch is proven.", read_url: "/investigations/barak-saudi-rothschild-proposal-2015", url: "/investigations/barak-saudi-rothschild-proposal-2015", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
   {id: "GAH-BARAK-RELEASE-BARAK_GADECO_FEE_2014", title: "The GADECO Deal Did Not End with Barak's November 3 Withdrawal", summary: "A November 3 withdrawal was followed by an amended contingent 3% finder-fee proposal and additional Chinese-buyer discussions. Neither a closing nor fee payment is proven.", read_url: "/investigations/barak-gadeco-fee-2014", url: "/investigations/barak-gadeco-fee-2014", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
   {id: "GAH-BARAK-RELEASE-BARAK_USHAKOV_2013_2015", title: "Barak's 2015 Putin Meeting Request: An Official Refusal, Not a Completed Appointment", summary: "A Russian presidential aide's office declined a June 2015 appointment request from Ehud Barak. Separate claims of an earlier Putin meeting require independent corroboration.", read_url: "/investigations/barak-ushakov-2013-2015", url: "/investigations/barak-ushakov-2013-2015", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
