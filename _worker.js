@@ -5682,6 +5682,22 @@ async function enrichPublicSearchRowsWithVisualEvidence(rows, env) {
   });
 }
 
+async function proxyApiWithNormalizedErrors(request, env) {
+  const upstream = await proxyProofLayer(request, env);
+  const upstreamType = String(upstream.headers.get("Content-Type") || "").toLowerCase();
+  if (upstream.status !== 404 || upstreamType.includes("json")) return upstream;
+  return new Response(request.method === "HEAD" ? null : JSON.stringify({ ok: false, error: "not_found" }), {
+    status: 404,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
+      "X-Robots-Tag": "noindex, nofollow",
+      "X-GAH-API-Error": "normalized-not-found"
+    }
+  });
+}
+
 async function handlePublicSearch(request, env) {
   // SEC-REMEDIATION: worker-side abuse throttle on the public search proxy.
   const searchThrottle = await gahSecRateLimit(env, "public-search", request, GAH_SEC_PUBLIC_SEARCH_MAX_PER_MIN);
@@ -18455,8 +18471,9 @@ export default {
 
     if (path.startsWith("/api/")) {
       // Preserve Pages server-only bindings for all wiki API routes.
-      // Without env the gateway auth token is absent on Story/Help/Answer.
-      return proxyProofLayer(request, env);
+      // Normalize an unknown upstream API route's HTML 404 to JSON; never
+      // send an HTML wiki error page (and its possible internals) to an API client.
+      return proxyApiWithNormalizedErrors(request, env);
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && (path === "/pdf-lite" || path === "/pdf-lite.html")) {
