@@ -34,8 +34,8 @@ run "identifier module" node workers/lib/test_identifiers.mjs
 run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 run "wiki-host fail-closed" node tests/test_wiki_host_failclosed.mjs
 run "staging harden-001" node tests/test_staging_harden.mjs
-run "worker entrypoint" node tests/test_worker_entrypoint.mjs
 run "path-leak sec" node tests/test_path_leak.mjs
+run "unknown API JSON contract" node tests/test_api_error_contract.mjs
 
 if [ ! -d workers/sec-rate-limiter/node_modules ]; then
   echo "Installing miniflare for DO runtime tests..."
@@ -43,6 +43,7 @@ if [ ! -d workers/sec-rate-limiter/node_modules ]; then
     || { echo "npm install failed — skipping Miniflare suites"; failed_suites+=("miniflare install"); }
 fi
 if [ -d workers/sec-rate-limiter/node_modules ]; then
+  run "worker entrypoint" node tests/test_worker_entrypoint.mjs
   run "DO concurrency (Miniflare)" node workers/sec-rate-limiter/test/run.mjs
   run "admin-login handler (Miniflare)" node workers/sec-rate-limiter/test/admin_login.mjs
 fi
