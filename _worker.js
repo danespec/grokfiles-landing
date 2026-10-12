@@ -18523,8 +18523,9 @@ export default {
       }
     }
 
+    // NEWS-DESK-001: Serve editorially reviewed news index; retain legacy Phang watch at its own subroutes.
     if ((request.method === "GET" || request.method === "HEAD") && path === "/news") {
-      return serveNewsIndex(request, env);
+      return serveFrontdoorEnhanced(request, env, "/news.html");
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/news/phang-docket-watch") {
