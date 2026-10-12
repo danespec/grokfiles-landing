@@ -6,12 +6,15 @@
 import {
   normalizeEfta,
   normalizeBarak,
+  normalizeBarakParent,
   classifyQuery,
   missingRecordResponse,
 } from "./gah_identifiers.js";
 
 const failures = [];
+let checksRun = 0;
 const check = (name, got, want) => {
+  checksRun++;
   if (JSON.stringify(got) !== JSON.stringify(want)) {
     failures.push(`${name}: got ${JSON.stringify(got)}, want ${JSON.stringify(want)}`);
   }
@@ -31,6 +34,19 @@ check("efta letters rejected", normalizeEfta("EFTA0003341A"), null);
 check("efta no prefix rejected", normalizeEfta("00033413"), null);
 check("efta empty", normalizeEfta(""), null);
 check("efta none", normalizeEfta(null), null);
+
+// --- BARAK recovered-parent namespace (V2 viewer, distinct from receipt IDs) ---
+check("parent canonical", normalizeBarakParent("BARAK-EML-001"), "BARAK-EML-001");
+check("parent lowercase short", normalizeBarakParent("barak-eml-1"), "BARAK-EML-001");
+check("parent spaces", normalizeBarakParent("barak eml 19"), "BARAK-EML-019");
+check("parent zero rejected", normalizeBarakParent("BARAK-EML-000"), null);
+check("parent excessive digits rejected", normalizeBarakParent("BARAK-EML-1000"), null);
+check("parent classified in Barak namespace", classifyQuery("BARAK-EML-001"), { kind: "barak", canonical: "BARAK-EML-001" });
+check("parent short classified in Barak namespace", classifyQuery("barak-eml-1"), { kind: "barak", canonical: "BARAK-EML-001" });
+const parentHint = missingRecordResponse("barak", "BARAK-EML-001", "efta");
+check("parent redirect to index not fabricated PDF", parentHint.suggested_route, "/barak/emails");
+check("parent does not become EFTA collection", parentHint.collection, "efta");
+check("parent evidence availability unverified", parentHint.message.includes("does not verify"), true);
 
 // --- BARAK normalization (§2.2) ---
 check("barak canonical", normalizeBarak("BARAK-174-001"), "BARAK-174-001");
@@ -78,4 +94,4 @@ if (failures.length) {
   for (const f of failures) console.log("  " + f);
   process.exit(1);
 }
-console.log("test_identifiers: all 37 checks passed");
+console.log(`test_identifiers: all ${checksRun} checks passed`);

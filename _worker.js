@@ -5188,6 +5188,7 @@ function publicSearchRowRelevant(row, query) {
 
 const EFTA_CANONICAL = /^EFTA\d{8}$/;
 const BARAK_CANONICAL = /^BARAK-\d{3}-\d{3}$/;
+const BARAK_PARENT_CANONICAL = /^BARAK-EML-\d{3}$/;
 
 /**
  * Normalize to canonical EFTA + 8 digits, or null.
@@ -5222,6 +5223,18 @@ function normalizeBarak(raw) {
 }
 
 /**
+ * Normalize a Barak recovered-parent reference, BARAK-EML-NNN.
+ * This is an identifier namespace, not attestation that a parent message
+ * exists in the public archive. Never manufacture a source-file link.
+ */
+function normalizeBarakParent(raw) {
+  if (typeof raw !== "string") return null;
+  const match = /^BARAK[-\s_.]*EML[-\s_.]*(\d{1,3})$/i.exec(raw.trim());
+  if (!match || Number(match[1]) < 1) return null;
+  return `BARAK-EML-${match[1].padStart(3, "0")}`;
+}
+
+/**
  * Classify a raw query string.
  * Returns { kind: "efta" | "barak" | "text", canonical }.
  */
@@ -5230,6 +5243,8 @@ function classifyQuery(raw) {
   if (efta) return { kind: "efta", canonical: efta };
   const barak = normalizeBarak(raw);
   if (barak) return { kind: "barak", canonical: barak };
+  const parent = normalizeBarakParent(raw);
+  if (parent) return { kind: "barak", canonical: parent };
   return { kind: "text", canonical: typeof raw === "string" ? raw.trim() : "" };
 }
 
@@ -5239,6 +5254,15 @@ function classifyQuery(raw) {
  * that was actually searched ("efta" | "barak").
  */
 function missingRecordResponse(kind, identifier, searchedCollection) {
+  if (kind === "barak" && searchedCollection === "efta" && BARAK_PARENT_CANONICAL.test(identifier)) {
+    return {
+      result_type: "missing_record",
+      collection: "efta",
+      collection_hint: "barak",
+      message: `${identifier} is a Barak recovered-parent identifier, not an EFTA record. Check the public Barak email index; this result does not verify that a parent message or attachment is available.`,
+      suggested_route: "/barak/emails",
+    };
+  }
   if (kind === "barak" && searchedCollection === "efta") {
     return {
       result_type: "missing_record",
