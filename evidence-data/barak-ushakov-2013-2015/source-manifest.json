@@ -9,13 +9,13 @@
     {
       "description": "Ushakov office scheduling response",
       "date": "2015-06-04",
-      "sha256": null,
+      "sha256": "940512363e9b080bc9afad121b9fbe00f9134f9d05be7a93759b8f71f919015a",
       "boundary": "Aide refused dates; no meeting verified"
     },
     {
       "description": "Barak follow-up",
       "date": "2015-06-05",
-      "sha256": null,
+      "sha256": "b8281aac68915b84c04b59efa999e6636ca143c4d0aca7b06e774475bac811b1",
       "boundary": "Follow-up request; acceptance not shown"
     },
     {
