@@ -1,0 +1,34 @@
+{
+  "schema": "gah.editorial-source-summary.v1",
+  "published": "2026-10-12",
+  "scope": "selected primary records",
+  "public_originals_included": false,
+  "redactions": "No original signatures, banking details or personal contact information",
+  "verification_note": "Cited source containers were reviewed; a proposed meeting, payment or investment is not counted as completed unless independently established",
+  "documents": [
+    {
+      "description": "May 21 SAK introduction",
+      "date": "2015-05-21",
+      "sha256": "53113135c3e8c13fd918195b874fe1a5b458e5d8eb8c6cea259af38e0886205c",
+      "boundary": "Corporate presentation; signature not authenticated"
+    },
+    {
+      "description": "May 21 SAK best-efforts letter",
+      "date": "2015-05-21",
+      "sha256": "2f40e85bb25b4fe6eb4d4edfce7a1ecbe3ef5cc50e06d461c8e5737e88abab90",
+      "boundary": "Fundraising target; no committed capital"
+    },
+    {
+      "description": "Saudi Backed life-sciences concept",
+      "date": "2015-05-21",
+      "sha256": "9f422c09549230864e439a8803fd6149beec5822e7743e6172176d6dd45a6646",
+      "boundary": "Participant-side concept; not bank approval"
+    },
+    {
+      "description": "July lawyer-reviewed proposal",
+      "date": "2015-07-01",
+      "sha256": "d4b5dc71e36e3cb2696d6a78805cc264ab9a5dd7eb56762cad834e1e3e8e69ab",
+      "boundary": "Nonbinding, unexecuted, no fund settlement"
+    }
+  ]
+}

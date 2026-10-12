@@ -1,0 +1,28 @@
+{
+  "schema": "gah.editorial-source-summary.v1",
+  "published": "2026-10-12",
+  "scope": "selected primary records",
+  "public_originals_included": false,
+  "redactions": "No original signatures, banking details or personal contact information",
+  "verification_note": "Cited source containers were reviewed; a proposed meeting, payment or investment is not counted as completed unless independently established",
+  "documents": [
+    {
+      "description": "Ushakov office scheduling response",
+      "date": "2015-06-04",
+      "sha256": "940512363e9b080bc9afad121b9fbe00f9134f9d05be7a93759b8f71f919015a",
+      "boundary": "Aide refused dates; no meeting verified"
+    },
+    {
+      "description": "Barak follow-up",
+      "date": "2015-06-05",
+      "sha256": "b8281aac68915b84c04b59efa999e6636ca143c4d0aca7b06e774475bac811b1",
+      "boundary": "Follow-up request; acceptance not shown"
+    },
+    {
+      "description": "EFTA01975333",
+      "date": "2013-05-09",
+      "sha256": null,
+      "boundary": "Separate proposal, no confirmed outcome"
+    }
+  ]
+}

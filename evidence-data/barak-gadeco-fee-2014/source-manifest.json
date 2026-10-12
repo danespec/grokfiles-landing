@@ -1,0 +1,34 @@
+{
+  "schema": "gah.editorial-source-summary.v1",
+  "published": "2026-10-12",
+  "scope": "selected primary records",
+  "public_originals_included": false,
+  "redactions": "No original signatures, banking details or personal contact information",
+  "verification_note": "Cited source containers were reviewed; a proposed meeting, payment or investment is not counted as completed unless independently established",
+  "documents": [
+    {
+      "description": "Grynberg-side finder-fee proposal",
+      "date": "2014-11-18",
+      "sha256": "f7296ca9925e48ae89d68fa0b72db81bfd2b86b493401eeeca36808e486c7bd1",
+      "boundary": "Seller-side signature apparent but unauthenticated; no buyer closing"
+    },
+    {
+      "description": "November 3 withdrawal email",
+      "date": "2014-11-03",
+      "sha256": "c2e92b7827d1163dcbd6936e5ca6566eb737cc027bf3f91e596c163a91961c8f",
+      "boundary": "Later renewed communications contradict treating withdrawal as terminal"
+    },
+    {
+      "description": "November 18 finder-fee correspondence",
+      "date": "2014-11-18",
+      "sha256": "2477ca4d5fed7350764a273c19c1f2131539ba279e0b141ec4aa54e1607f6d7f",
+      "boundary": "Seller-side instrument not proof of a completed deal"
+    },
+    {
+      "description": "November 24 buyer/fee update",
+      "date": "2014-11-24",
+      "sha256": "837ae63f97e67d63cf55a694fdc94bc7586d15e42407a5193e089c9baa7b40f6",
+      "boundary": "Continued negotiation, no sale or payment verified"
+    }
+  ]
+}
