@@ -541,6 +541,18 @@
     return "";
   }
 
+  // Source-first result policy: never construct an archive URL from an ID.
+  // A missing or unverified backend record is a finding aid, not an openable file.
+  function sourceHrefForResult(row) {
+    if (!row || typeof row !== "object" || row.missing === true ||
+        row.unverified === true || row.verified === false ||
+        row.result_type === "missing_record" ||
+        String(row.verification_status || "").toLowerCase() === "unverified") return "";
+    var href = pick(row, ["read_url", "pdf_url", "url", "source_url"]);
+    if (/^\/(?:Volumes|volume[0-9]+|Users|homes|home|mnt)\//i.test(href)) return "";
+    return href;
+  }
+
   function initSearch() {
     var forms = $$("[data-archive-search]");
     if (!forms.length) return;
@@ -579,7 +591,7 @@
       });
     }
     renderRecents();
-    function addResult(title, text, href, id) {
+    function addResult(title, text, href, id, isMissing) {
       var article = document.createElement("article");
       article.className = "search-result";
       var h3 = document.createElement("h3");
@@ -596,7 +608,13 @@
         p.textContent = text.slice(0, 1600);
         article.appendChild(p);
       }
-      if (href) {
+      if (isMissing) {
+        var notice = document.createElement("p");
+        notice.className = "caption";
+        notice.textContent = "Source unavailable or unverified — no verified document link.";
+        article.appendChild(notice);
+      }
+      if (href && !isMissing) {
         var a = document.createElement("a");
         if (applySafeLink(a, href, "Open source")) article.appendChild(a);
       }
@@ -629,24 +647,24 @@
           try { data = JSON.parse(pack.raw); } catch (_) { data = { answer: pack.raw }; }
           if (!pack.res.ok) throw new Error(pick(data, ["error", "message"]) || ("HTTP " + pack.res.status));
           results.innerHTML = "";
-          var answer = pick(data, ["answer", "summary", "response", "text"]);
-          if (answer) addResult("Source-grounded summary", answer, "", "");
+          // Deliberately suppress generated answer summaries: only source rows
+          // with reviewable provenance belong in public archive search cards.
           var rows = firstArray(data);
           rows.forEach(function (row) {
             var id = pick(row, ["efta_id", "id", "efta", "document_id"]);
             var title = pick(row, ["title", "name"]) || id || "Archive result";
             var text = pick(row, ["snippet", "summary", "text", "content", "combined_text", "body"]);
-            var href = pick(row, ["read_url", "pdf_url", "url", "source_url"]);
-            if (href && (href.indexOf("/volume") === 0 || href.indexOf("/homes") === 0)) href = "";
-            if (!href && /^EFTA[0-9]{8}$/i.test(id)) href = "/archive/" + id.toUpperCase();
-            addResult(title, text, href, id);
+            var isMissing = row.missing === true || row.unverified === true ||
+              row.verified === false || row.result_type === "missing_record" ||
+              String(row.verification_status || "").toLowerCase() === "unverified";
+            addResult(title, text, sourceHrefForResult(row), id, isMissing);
           });
           if (/^EFTA[0-9]{8}$/i.test(query)) {
             var wanted = query.toUpperCase();
             var found = rows.some(function (row) { return pick(row, ["efta_id", "id", "efta", "document_id"]).toUpperCase() === wanted; });
-            if (!found) addResult(wanted, "Exact archive identifier route. The search index did not return an OCR hit for this identifier.", "/archive/" + wanted, wanted);
+            if (!found) addResult(wanted, "The search index returned no verified source record for this identifier. A matching file must be established before an open-file link is shown.", "", wanted, true);
           }
-          if (!answer && !results.children.length) {
+          if (!results.children.length) {
             results.innerHTML = "<div class='empty'>No readable results. Try a spelling variant, exact phrase, or EFTA identifier.</div>";
           }
           var shown = results.querySelectorAll(".search-result").length;
