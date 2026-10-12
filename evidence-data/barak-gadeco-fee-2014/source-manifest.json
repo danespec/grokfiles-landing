@@ -1,34 +1,125 @@
 {
   "schema": "gah.editorial-source-summary.v1",
   "published": "2026-10-12",
-  "scope": "selected primary records",
+  "scope": "GADECO 2014 full source closeout: Nov 3–Dec 3 buyer/seller emails, both success-fee proposals, finance packet, engineering and production data, public background",
   "public_originals_included": false,
   "redactions": "No original signatures, banking details or personal contact information",
-  "verification_note": "Cited source containers were reviewed; a proposed meeting, payment or investment is not counted as completed unless independently established",
+  "verification_note": "Private source documents independently reviewed. Buyer declined this proposal on Nov 27; no GADECO acquisition or fee payment proven. Pro forma management estimates and engineering forecasts are not audited historical statements. The $1.6B affiliate identity remains unknown.",
   "documents": [
     {
-      "description": "Grynberg-side finder-fee proposal",
-      "date": "2014-11-18",
-      "sha256": "f7296ca9925e48ae89d68fa0b72db81bfd2b86b493401eeeca36808e486c7bd1",
-      "boundary": "Seller-side signature apparent but unauthenticated; no buyer closing"
-    },
-    {
-      "description": "November 3 withdrawal email",
+      "description": "Nov 3 Barak withdrawal correspondence",
       "date": "2014-11-03",
       "sha256": "c2e92b7827d1163dcbd6936e5ca6566eb737cc027bf3f91e596c163a91961c8f",
-      "boundary": "Later renewed communications contradict treating withdrawal as terminal"
+      "boundary": "Later discussions resumed"
     },
     {
-      "description": "November 18 finder-fee correspondence",
+      "description": "Nov 17 buyer-side 2% contingent success-fee PDF",
+      "date": "2014-11-17",
+      "sha256": "50dc5924bdc5d93706a7c65ffba7ca1521ab69a06307a64e8a7b4c5223a82774",
+      "boundary": "Buyer signature appearance unverified; seller-side fee separately contemplated; no closing or payment"
+    },
+    {
+      "description": "Nov 18 seller-side 3% contingent fee PDF",
       "date": "2014-11-18",
-      "sha256": "2477ca4d5fed7350764a273c19c1f2131539ba279e0b141ec4aa54e1607f6d7f",
-      "boundary": "Seller-side instrument not proof of a completed deal"
+      "sha256": "f7296ca9925e48ae89d68fa0b72db81bfd2b86b493401eeeca36808e486c7bd1",
+      "boundary": "Not evidence of a paid fee"
     },
     {
-      "description": "November 24 buyer/fee update",
-      "date": "2014-11-24",
-      "sha256": "837ae63f97e67d63cf55a694fdc94bc7586d15e42407a5193e089c9baa7b40f6",
-      "boundary": "Continued negotiation, no sale or payment verified"
+      "description": "Nov 19 Barak communication about prospective buyer-side countersignature",
+      "date": "2014-11-19",
+      "sha256": "725fe1fe1cbb575ba4de9f2fc14c1bd413d8757d05297847d4d354e54bcfa57f",
+      "boundary": "Promise to countersign is not evidence of execution"
+    },
+    {
+      "description": "Nov 25 Barak email reporting Sept pro forma sent and new 3-year P&L request",
+      "date": "2014-11-25",
+      "sha256": "d4fff2fdc51bc53baa59f59c3e809a1154a8c10d7fb344bd3373f1de578f673a",
+      "boundary": "Original outgoing recipient copy not independently verified from this excerpt"
+    },
+    {
+      "description": "Nov 26 Grynberg refusal of three-year P&Ls before on-site due diligence",
+      "date": "2014-11-26",
+      "sha256": "6c930d9098e244364617858b8bb1802bd9b3dee46f01de49b87d8d6ec1572607",
+      "boundary": "Seller's commercial evaluation, not proof of fabrication"
+    },
+    {
+      "description": "Nov 26 Barak warning about absence of operating history",
+      "date": "2014-11-26",
+      "sha256": "8af4c2cf3366fc33411f97a942a598219fea9b64bd120b00e4814c089951f802",
+      "boundary": "Barak's evaluation, not independently audited operating margins"
+    },
+    {
+      "description": "Nov 27 Joachim Chao direct rejection",
+      "date": "2014-11-27",
+      "sha256": "6b15f0a6be05bc7609ae0c9a0e43a21e5d732a18ce70afd3cd011d078b823ed6",
+      "boundary": "Rejects this consortium's proposed deal only"
+    },
+    {
+      "description": "Dec 3 Grynberg reaction to buyer withdrawal",
+      "date": "2014-12-03",
+      "sha256": "d7c2d346b59b45a5c25b41e7c3b17fffdd0e8c7a5ba3b1730dbce2063b82f572",
+      "boundary": "Post-dates Chao's direct decision"
+    },
+    {
+      "description": "Six-page September 30 combined-entity pro forma financial statement",
+      "date": "2014-09-30",
+      "sha256": "74dd83f847917c47dde76cf5b867c2b34ce416197a96b41abddb19d37d4bcde4",
+      "boundary": "Management estimated receivables, affiliate unidentified, not 2011–2013 P&Ls"
+    },
+    {
+      "description": "Revised GADECO executive summary proposing $400m/25% or $1.6B/100%",
+      "date": "2014-11",
+      "sha256": "538c36d11a6432e6929e6984eda8823a53cc63aebd41707dd5e0ad74c3db48a4",
+      "boundary": "Document filename refers to Dec 1, but the file is attached to Nov 26–27 messages; proposed terms not closing"
+    },
+    {
+      "description": "GADECO June 1 petroleum reserve and cash-flow forecast",
+      "date": "2014-06-01",
+      "sha256": "13575b601ad7b5729a625d3be2243d7d095a9ad00602659e8fc3585d5e4e604d",
+      "boundary": "Unrisked and future-oriented; NPV not equivalent to audited business price"
+    },
+    {
+      "description": "September 3 production versus drilling schedule",
+      "date": "2014-09-03",
+      "sha256": "99b5234832cf840aae6b7461114a64189d5613890367d0a4d47d418003397158",
+      "boundary": "Planned wells not equivalent to producing wells; BOE conversion unexplained"
+    },
+    {
+      "description": "Actual 2013 well-level lease-operating expenses and realized prices",
+      "date": "2013",
+      "sha256": "26b1c22d27e68f0f1d8c989764b13bab991546716cc9ecbf1d51bccf212935fe",
+      "boundary": "Not 3-year company P&Ls"
+    },
+    {
+      "description": "January 2014 GADECO reserve-category model",
+      "date": "2014-01-01",
+      "sha256": "bb40b93869b42e94e1e52e53eeb5070e0caf3e274d3f31d116c480c4ba474273",
+      "boundary": "Different date and scope from June forecast; category estimates unrisked"
     }
+  ],
+  "last_updated": "2026-10-12",
+  "public_references": [
+    {
+      "source": "Al Jazeera Dec 9 2025 previous GADECO reporting",
+      "url": "https://www.aljazeera.com/news/2025/12/9/israels-ex-pm-ehud-barak-and-jeffrey-epstein-had-close-relationship-emails-reveal"
+    },
+    {
+      "source": "EIA Nov 12 2014 energy outlook",
+      "url": "https://www.eia.gov/outlooks/steo/archives/nov14.pdf"
+    },
+    {
+      "source": "2015 Colorado court ruling, separate garnishment case",
+      "url": "https://law.justia.com/cases/colorado/court-of-appeals/2015/14ca0403.html"
+    },
+    {
+      "source": "2018 Colorado Supreme Court later corporate-control litigation",
+      "url": "https://law.justia.com/cases/colorado/supreme-court/2018/17sa247.html"
+    }
+  ],
+  "unresolved": [
+    "Note 2 affiliate identity and estimated $1.6B receivable source ledger",
+    "Engineering original spreadsheet for revised commodity-price and drilling sensitivity",
+    "Verified final acquisition or commission payment (none in reviewed documents)",
+    "BOE conversion assumption behind September combined production schedule"
   ]
 }
