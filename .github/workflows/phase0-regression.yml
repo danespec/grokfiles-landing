@@ -1,0 +1,51 @@
+name: GAH Phase 0 regression
+
+on:
+  pull_request:
+    branches:
+      - main
+      - chatgpt/gah-barak-publication-002-20261012
+  push:
+    branches:
+      - main
+      - chatgpt/gah-barak-publication-002-20261012
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase0-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  phase0-regression:
+    name: Phase 0 regression / 18 suites
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: workers/sec-rate-limiter/package-lock.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install isolated Worker runtime test dependencies
+        run: npm ci --prefix workers/sec-rate-limiter --ignore-scripts --no-audit --no-fund
+
+      - name: Validate Worker and evidence viewer syntax
+        run: |
+          node --check _worker.js
+          node --check assets/barak-portal.js
+          node --check assets/barak-portal-027.js
+
+      - name: Run complete Phase 0 regression suite
+        run: bash tests/run_phase0_regression.sh
