@@ -1,0 +1,32 @@
+name: GAH Source Watch offline regression
+
+on:
+  pull_request:
+    branches:
+      - chatgpt/gah-primary-sources-004-20261011
+  push:
+    branches:
+      - chatgpt/gah-primary-sources-004-20261011
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-watch-regression:
+    name: Source Watch offline tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check catalog and syntax
+        run: |
+          python3 -m json.tool scripts/source-watch/sources.json > /dev/null
+          python3 -m compileall -q scripts/source-watch
+      - name: Run offline synthetic regression
+        run: python3 -m unittest discover -s scripts/source-watch -p 'test_*.py' -v
