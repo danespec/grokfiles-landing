@@ -35,6 +35,7 @@ run "search versioned asset" node tests/test_search_frontend_versioned_asset.mjs
 run "Barak private manifest audit" python3 tests/test_barak_slot_manifest_audit.py
 run "Barak active class-count reconciliation" python3 scripts/barak/test_barak_count_gate.py
 run "Barak PDF attachment hash audit (synthetic)" python3 tests/test_barak_attachment_integrity.py
+run "Barak recovered-reference integrity (synthetic)" python3 tests/test_barak_recovered_references_030.py
 run "Barak source-link integrity" node tests/test_barak_source_link_integrity.mjs
 run "Barak backend-manifest proxy" node tests/test_barak_manifest_proxy.mjs
 run "Barak cache delivery" node tests/test_barak_cache_delivery.mjs
