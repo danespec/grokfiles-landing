@@ -39,6 +39,9 @@ run "Barak source-link integrity" node tests/test_barak_source_link_integrity.mj
 run "Barak backend-manifest proxy" node tests/test_barak_manifest_proxy.mjs
 run "Barak cache delivery" node tests/test_barak_cache_delivery.mjs
 run "Barak count and asset-query normalization" node tests/test_barak_count_cache_normalization.mjs
+run "Patreon OAuth member lifecycle (synthetic)" node tests/test_patreon_member_lifecycle.mjs
+run "Patreon webhook idempotency (synthetic)" node tests/test_patreon_webhook_idempotency.mjs
+run "PayPal live checkout fail-closed gates (synthetic)" node tests/test_commerce_release_gates.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
 run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 run "wiki-host fail-closed" node tests/test_wiki_host_failclosed.mjs
