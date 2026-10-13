@@ -48,6 +48,7 @@ run "Indexable research hubs in sitemap" node tests/test_sitemap_hubs.mjs
 run "DOJ-verified 2007 NPA chronology" node tests/test_npa_chronology_018.mjs
 run "2007 NPA court opinion and edition gates" node tests/test_npa_court_chain_025.mjs
 run "2007 NPA separate signed counterparts" node tests/test_npa_counterparts_028.mjs
+run "Internal discovery and source-led hub links" node tests/test_internal_discovery_029.mjs
 run "DOJ official flight logs and redacted contact book" node tests/test_doj_primary_source_guides_020.mjs
 run "DOJ-linked 2007 draft indictment source finder" node tests/test_doj_draft_indictment_021.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
