@@ -33,6 +33,11 @@ ALLOWED = {"vault.fbi.gov", "www.justice.gov", "finance.senate.gov",
            "dccc.org", "www.killinforcolorado.com", "www.fec.gov", "www.judiciary.uk"}
 UA = "GAH-SourceWatch/0.1 (+https://grokarchivehub.com/methodology)"
 UTC = dt.timezone.utc
+# Exception is deliberately exact-URL and bounded. Do not use a broad DOJ
+# hostname exemption: other sources retain the established 3.5 MB cap.
+DEFAULT_FETCH_MAX_BYTES = 3_500_000
+OIP_REVIEW_INTERIM_URL = "https://www.justice.gov/oip/media/1465356/dl?inline="
+OIP_REVIEW_INTERIM_MAX_BYTES = 5_000_000
 
 def utcnow():
     return dt.datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
@@ -114,10 +119,12 @@ def main_text_digest(raw):
 def fetch(url, timeout=28):
     if not safe_url(url):
         raise ValueError("disallowed source URL")
+    max_bytes = (OIP_REVIEW_INTERIM_MAX_BYTES if url == OIP_REVIEW_INTERIM_URL
+                 else DEFAULT_FETCH_MAX_BYTES)
     cmd = ["curl", "--silent", "--show-error", "--location",
            "--max-redirs", "3", "--max-time", str(timeout),
            "--proto", "=https", "--proto-redir", "=https",
-           "--max-filesize", "3500000", "--compressed",
+           "--max-filesize", str(max_bytes), "--compressed",
            "--user-agent", UA, "--write-out", "\\n__GAH_FETCH__%{http_code} %{url_effective}", url]
     proc = subprocess.run(cmd, capture_output=True, timeout=timeout+5)
     marker = b"\n__GAH_FETCH__"
@@ -133,7 +140,7 @@ def fetch(url, timeout=28):
         raise RuntimeError("source_transport_failure")
     if status != 200:
         raise RuntimeError("source_unavailable_http_"+str(status))
-    if len(data) > 3500000 or not data:
+    if len(data) > max_bytes or not data:
         raise RuntimeError("source_empty_or_oversized")
     return data
 

@@ -249,6 +249,12 @@
       "scope": "Court-stamped ECF 57 via public RECAP storage: court Oct 9 order requires redacted handwritten notes for three FD302 reports by Oct 16 12pm ET for in-camera review",
       "mode": "official_pdf",
       "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.57.0_1.pdf"
+    },
+    {
+      "id": "doj-oip-investigative-holdings-20261009",
+      "scope": "DOJ OIP FOIA Library release posted October 9, 2026: interim March 18–27, 2025 investigative holdings review records; separate from FBI Vault and not complete FBI holdings",
+      "mode": "official_pdf",
+      "url": "https://www.justice.gov/oip/media/1465356/dl?inline="
     }
   ],
   "coverage_gaps": [
@@ -263,6 +269,7 @@
     "Colorado 5th ad Virginia: DCCC Oct 5 press release calls it DCCC + Killin COORDINATED six-figure buy; this is a partisan self-description not audited FEC amount. Schedule E independent-expenditure-only FEC watch does not identify the ad. Need FEC Schedule F coordinated party expenditure and/or Schedule B disbursements matched to exact ad creative, dates, sponsor; DEMO_KEY returned HTTP 429 on Oct 11 query",
     "UK Andrew Mountbatten-Windsor: Oct 8 order and official PDF monitored. Future s59 retention decision (listed as potentially 2027), challenges to officer-identity redactions (14 days from order), and other proceedings are not covered by live docket RSS; no PACER-like UK case-specific authenticated docket source configured",
     "Phang: certified list due Oct 1 ECF42, on Oct 1 govt filed ECF51 postponement motion and ECF52 Rule12c judgment motion; ECF55 Oct8 opposition, ECF57 Oct9 additional in-camera compliance order. Public RECAP filing PDFs are *known* court-stamped originals but do NOT constitute a complete or current live docket. No inference of a granted stay or final compliance.",
-    "DOJ Data Sets 1–12: monitor only the first public listing page per dataset. Many paginated listing pages (and file bytes) are not accessible through authorized Mac/NAS network paths. First-page additions/changes do NOT establish complete corpus totals, disappearance of records, or a full changed-file inventory."
+    "DOJ Data Sets 1–12: monitor only the first public listing page per dataset. Many paginated listing pages (and file bytes) are not accessible through authorized Mac/NAS network paths. First-page additions/changes do NOT establish complete corpus totals, disappearance of records, or a full changed-file inventory.",
+    "DOJ OIP 2026-10-09 interim: official PDF snapshot only (bounded 5 MB, SHA-256). This is NOT FBI Vault Parts 01–13, a full FBI investigative-holdings census, or proof that an unobserved document did not exist. A revised hash requires human review."
   ]
 }
