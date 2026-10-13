@@ -65,3 +65,23 @@ The three newly configured primary pages are monitored by hashing the visible ar
 ## UK source of record — Oct 8, 2026 High Court
 
 Official judicial publication: https://www.judiciary.uk/judgments/andrew-mountbatten-windsor-v-the-central-criminal-court-and-another/ with court order https://www.judiciary.uk/wp-content/uploads/2026/10/AC-2026-LON-002321-Mountbatten-Windsor-v-Central-Criminal-Court-and-another.pdf (claim AC 2026-LON-002321, 10 pages). The order says Thames Valley Police conceded unlawful warrants under section 8 of PACE; the warrants/searches/seizures were found unlawful for that reason, **not** that every possible ground for challenge succeeded, and **not** that the criminal investigation ended. Whether material may still be retained under s59 remains pending. Court-ordered publication of specified proceedings documents is subject to redaction of police officer/staff names/contact details and certain legal-representative details. Press and parties may apply concerning those redactions within 14 days of Oct 8 order. Monitor court HTML main content plus PDF SHA-256. The source is primary, but the PDF by itself is not proof of a future retention ruling or a new charge.
+
+
+## DOJ OIP interim investigative-holdings release (2026-10-13)
+The official [DOJ OIP FOIA Library](https://www.justice.gov/oip/available-documents-oip)
+lists a release posted October 9, 2026, labeled
+"Review of Investigative Holdings Relating to Jeffrey Epstein and his Criminal Case,"
+with interim record dates March 18–27, 2025.
+The single [government PDF](https://www.justice.gov/oip/media/1465356/dl?inline=)
+is separately monitored as a first-party PDF digest and byte count, not mirrored.
+The authorized Mac fetched exactly 4,203,552 bytes on October 13, 2026;
+that DOJ-hosted response had SHA-256
+`27e80537984876c80512ea360ae8e1e674636d2540d8c112d40adcd0127351ac`.
+This is a dated one-source byte fingerprint, not a guarantee of archival completeness.
+The payload exceeds the existing 3,500,000-byte transport cap. Only this exact URL receives a 5,000,000-byte bound; all other
+sources retain 3,500,000 bytes. Source change is a private review event, never
+an automatic accusation, deletion claim, or publication. The OIP release is
+**not** the unavailable FBI Vault part series or a complete inventory.
+After merge, install the revised `watch.py` and `sources.json` on the
+authorized hourly Mac watcher; merging alone does not change its installed catalog.
+Fixture test: `python3 scripts/source-watch/test_oip_pdf_022.py`.
