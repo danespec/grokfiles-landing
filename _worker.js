@@ -7130,7 +7130,7 @@ function ensureV3DocumentShell(body) {
       .replace(/\/assets\/barak-data-027\.js/gi, "/assets/barak-data-050.js")
       .replace(/\/assets\/barak-data-036\.js/gi, "/assets/barak-data-050.js")
       .replace(/\/assets\/barak-data-048\.js/gi, "/assets/barak-data-050.js")
-      .replace(/\/assets\/barak-portal\.js/gi, "/assets/barak-portal-027.js?v=ren-barak-007-20261012")
+      .replace(/\/assets\/barak-portal\.js/gi, "/assets/barak-portal-027.js?v=ren-barak-cache-008-20261012")
       .replace(/\/assets\/images\/barak-archive-hero\.png/gi, "/assets/images/barak-archive-hero-027.png");
     html = addBodyClass(html, "barak-portal");
   }

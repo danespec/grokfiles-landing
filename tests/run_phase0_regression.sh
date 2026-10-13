@@ -35,6 +35,7 @@ run "search versioned asset" node tests/test_search_frontend_versioned_asset.mjs
 run "Barak private manifest audit" python3 tests/test_barak_slot_manifest_audit.py
 run "Barak source-link integrity" node tests/test_barak_source_link_integrity.mjs
 run "Barak backend-manifest proxy" node tests/test_barak_manifest_proxy.mjs
+run "Barak cache-versioned asset" node tests/test_barak_cache_delivery.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
 run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 run "wiki-host fail-closed" node tests/test_wiki_host_failclosed.mjs

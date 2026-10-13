@@ -230,7 +230,12 @@
       const loadPdfs = pdfScopes.has(scope) && archiveIndex.pdfsUrl;
       const fetchJson = async (url) => {
         if (!url) return null;
-        const response = await fetch(url);
+        // REN-BARAK-CACHE-008: bypass the long-lived cached 404 from
+        // before the dedicated wiki JSON manifest proxy was deployed.
+        const resolvedUrl = url === "/assets/barak-archive-emails.json"
+          ? "/assets/barak-archive-emails.json?v=ren-barak-cache-008-20261012"
+          : url;
+        const response = await fetch(resolvedUrl);
         const contentType = response.headers.get("content-type") || "";
         if (!response.ok || !contentType.toLowerCase().includes("application/json")) return null;
         return response.json();

@@ -18,5 +18,5 @@ assert.ok(source.includes('Linked attachment PDFs are separate indexed sources')
 assert.ok(source.includes('Parent PDF flag'));
 assert.deepEqual(fs.readFileSync(new URL('../assets/barak-portal-027.js',import.meta.url)),Buffer.from(source),'active apex alias matches hardened source');
 const worker=fs.readFileSync(new URL('../_worker.js',import.meta.url),'utf8');
-assert.ok(worker.includes('/assets/barak-portal-027.js?v=ren-barak-007-20261012'),'apex forces fresh script');
+assert.match(worker,/\/assets\/barak-portal-027\.js\?v=ren-barak-(?:007|cache-008)-20261012/,'apex forces fresh versioned script');
 console.log('PASS 12 Barak source attribution integrity checks');

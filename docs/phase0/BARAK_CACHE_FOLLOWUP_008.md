@@ -1,0 +1,9 @@
+# REN-BARAK-CACHE-008 — Versioned manifest delivery
+
+This is a targeted follow-up to PR #49. The main-site Pages Worker now proxies two public wiki JSON manifests, but Cloudflare retained a stale 404 for the unversioned email index. The new frontend uses a fixed versioned URL for `/assets/barak-archive-emails.json`; the public Barak viewer script is likewise versioned in HTML rewriting. PDFs and non-Barak routes are unchanged. No raw corpus or personally identifying source rows are in this branch.
+
+Observed 2026-10-13 UTC: `/assets/barak-archive-emails.json` returned cached 404 (Age 522), while `?v=ren-barak-cache-008-20261012` returned HTTP 200 and a source-index SHA-256 of `38ebc8dbe4906c1fe6132b75f2af2d5cf690e5c829d34615fddf514d74d3bb73`. 11,089 email rows remain; no email rows have individually claimed source PDF links. The underlying PDF inventory has 14,728 distinct URL entries and must remain a separate evidence class.
+
+The live wiki container's /app files are **baked into the security-hardened image**, not bind-mounted to the old NAS source directory. Wiki HTML and viewer were applied to the running container separately, and a restorable image snapshot `gah-wiki-gateway-secure:ren-barak-cache-010-20261013` was created without replacing secure `server.js`. The original `ren-barak-007-20261012` image was preserved. The wiki HTML references the distinct script query `?v=ren-barak-cache-010-20261013`; any already cached unversioned HTML may remain stale until its Cloudflare cache entry expires or is explicitly purged.
+
+**Acceptance:** all 18 Phase 0 suites; a fresh apex Barak page must load versioned viewer JS with source-link safeguards, fetch 11,089 email manifest entries, and keep all 14,728 PDF entries independently browseable. This release does not verify 19 unique recovered parent emails or resolve repeated slot-key semantics. The public parent-body count gate remains BLOCKED.
