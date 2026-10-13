@@ -2,6 +2,18 @@
 
 **Status: OPEN — do not describe the inventory as reconciled.** Reviewed October 11, 2026. This document describes *source-labeled populations*, not a master email count. It does not publish raw correspondence, personal data, or unverified persons.
 
+## October 12 source-verified update (supersedes historical site counter)
+
+The recovered *public* email-slot manifest is now independently accessible from the verified wiki archive. Its actual corrected bytes (SHA-256 `38ebc8dbe4906c1fe6132b75f2af2d5cf690e5c829d34615fddf514d74d3bb73`) contain **11,089 distinct row IDs and archive IDs**, with a **mutually exclusive, exhaustive partition of manifest rows**:
+
+- **5,587** `attachment_backed_slot` rows; **5,483** `metadata_only_slot` rows; **19** `recovered_email`-labeled rows. Total **5,587 + 5,483 + 19 = 11,089**. Zero unlabeled or unknown-class rows, zero missing mailbox/slot values, and zero enabled direct email-source links after the separate PR #49 remediation.
+- There are **7,310** distinct normalized `(mailbox, messageSlot)` pairs and **3,779** repeated-pair groups (7,558 rows). Each row has a unique ID, but the repeated keys **do not establish** independent email messages or explain whether duplication is intentional. A group ID/slot is not a cryptographically authenticated parent.
+- The prior **5,505 metadata-only** portal counter is an outdated *display label*, not a supported class count in the hash-verified 11,089-row snapshot. Its historical mismatch (**11,092**, over by three if adding only attachment and metadata counters) is retained below as the October 11 finding, **not** as the corrected present-state result.
+- The updated `assets/barak-data-050.js` active data source now reports **5,483** metadata-only *inventory rows* in both `sourceTypeCounts` and `emailSourceRecovery`, and the viewer labels the **19** as *archive-labeled recovered slots (unverified)*. Older versioned data scripts remain immutable historical snapshots, not the active routed payload.
+- This is a **row-class reconciliation only**. There are **zero independently authenticated recovered parent bodies** in this audit; it does not certify attachment authenticity, prove 7,310 unique messages, or join the separate 31,718 full-body/40,976 HTML corpora. This is **not a master email count**.
+
+Reproduce the observed row-level aggregate with `python3 scripts/barak/reconcile_slot_classes.py --manifest /private/owner-only/barak-archive-emails.json --expect-sha256 38ebc8dbe4906c1fe6132b75f2af2d5cf690e5c829d34615fddf514d74d3bb73`. The private data file must never enter GitHub. This command only emits aggregate counts, SHA-256, missing-key and source-link flags. The source-document authenticity gate remains **OPEN/BLOCKED**; this addendum **supersedes the outdated "row-level copy missing" requirement** in the historical October 11 acceptance checklist below.
+
 ## Independent datasets, distinct counting units
 
 | Dataset / checkpoint | Unit | Count | Source & custody | Join readiness |
@@ -39,4 +51,4 @@
 
 ## Repeatable guard
 
-Run `python3 scripts/barak/test_barak_count_gate.py`. It checks live-source counter **inconsistency** remains accurately acknowledged and will flag metadata changes without a revised, evidenced reconciliation. It intentionally does **not** declare the reconciliation solved.
+Run `python3 scripts/barak/test_barak_count_gate.py`. It verifies the corrected active class counters against synthetic classification invariants, preserves the legacy mismatch as history, and keeps the parent-source authenticity gate open.
