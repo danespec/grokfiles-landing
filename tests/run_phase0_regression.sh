@@ -51,6 +51,7 @@ run "2007 NPA separate signed counterparts" node tests/test_npa_counterparts_028
 run "Internal discovery and source-led hub links" node tests/test_internal_discovery_029.mjs
 run "Exact IndexNow public verification route" node tests/test_indexnow_asset_030.mjs
 run "Source-accurate meta and social descriptions" node tests/test_meta_snippets_031.mjs
+run "Real GAH favicon with exact static route" node tests/test_favicon_032.mjs
 run "DOJ official flight logs and redacted contact book" node tests/test_doj_primary_source_guides_020.mjs
 run "DOJ-linked 2007 draft indictment source finder" node tests/test_doj_draft_indictment_021.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
