@@ -990,6 +990,8 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/guides", "/guides/index.html"],
+  ["/guides/", "/guides/index.html"],
   ["/news", "/news.html"],
   ["/news/doj-march-2025-review-emails-released", "/news/doj-march-2025-review-emails-released.html"],
   ["/news/phang-fbi-notes-in-camera-october-16", "/news/phang-fbi-notes-in-camera-october-16.html"],
@@ -1100,6 +1102,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/guides", "2026-10-13"],
   ["https://grokarchivehub.com/news", "2026-10-12"],
   ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
   ["https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16", "2026-10-12"],
