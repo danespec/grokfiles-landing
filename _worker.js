@@ -1102,6 +1102,9 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  // GAH-SEO-HUBS-017: canonical, indexable research entry points.
+  ["https://grokarchivehub.com/research-index", "2026-10-13"],
+  ["https://grokarchivehub.com/barak/emails", "2026-10-13"],
   ["https://grokarchivehub.com/guides", "2026-10-13"],
   ["https://grokarchivehub.com/news", "2026-10-12"],
   ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
