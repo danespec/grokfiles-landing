@@ -18,3 +18,7 @@
 5. **Rollback:** use the preserved original SHA above and a separately verified original viewer SHA. Restore both atomically if any source IDs/classes or attachment links regress.
 
 This does **not** verify the 19 recovered parents, resolve all duplicate mailbox-slot keys, validate each attachment PDF, or approve public counts. The source-identity gate stays **BLOCKED** until parent evidence is individually authenticated. No original email contents, personal identifiers, or raw source manifests are committed to GitHub.
+
+## Main-site manifest routing defect (REN-BARAK-008)
+
+The main-site static Pages bundle does not contain either of the two 11,089/14,728-row JSON indexes, and previously returned HTTP 404 for `/assets/barak-archive-emails.json` and `/assets/barak-archive-pdfs.json`. The wiki backend served them under those same paths. `_worker.js` now uses the existing credential-stripping, optional server-secret-injecting `proxyProofLayer` with a two-path exact allowlist before the static asset fallback. Successful upstream JSON streams through on the same origin; unexpected HTML, 404 or other upstream failures normalize to 502 JSON without falsely claiming an empty record set. No other asset routes are proxied. The staged and production route must be smoke tested after deployment; source-file integrity still requires the private NAS manifest replacement and reader test.

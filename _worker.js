@@ -7130,7 +7130,7 @@ function ensureV3DocumentShell(body) {
       .replace(/\/assets\/barak-data-027\.js/gi, "/assets/barak-data-050.js")
       .replace(/\/assets\/barak-data-036\.js/gi, "/assets/barak-data-050.js")
       .replace(/\/assets\/barak-data-048\.js/gi, "/assets/barak-data-050.js")
-      .replace(/\/assets\/barak-portal\.js/gi, "/assets/barak-portal-027.js")
+      .replace(/\/assets\/barak-portal\.js/gi, "/assets/barak-portal-027.js?v=ren-barak-007-20261012")
       .replace(/\/assets\/images\/barak-archive-hero\.png/gi, "/assets/images/barak-archive-hero-027.png");
     html = addBodyClass(html, "barak-portal");
   }
@@ -18671,6 +18671,36 @@ export default {
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/research/evidence/calendar-epstein") {
       return serveCalendarEvidenceWithDossierContext(request);
+    }
+
+    // REN-BARAK-008: Two published manifests live on the wiki backend,
+    // not in the static Pages asset bundle. Exact allowlist only.
+    if ((request.method === "GET" || request.method === "HEAD") &&
+      (path === "/assets/barak-archive-emails.json" ||
+       path === "/assets/barak-archive-pdfs.json")) {
+      const upstream = await proxyProofLayer(request, env);
+      const type = String(upstream.headers.get("Content-Type") || "").toLowerCase();
+      if (!upstream.ok || !type.includes("application/json")) {
+        return new Response(request.method === "HEAD" ? null : JSON.stringify({
+          ok: false, error: "barak_manifest_temporarily_unavailable"
+        }), {
+          status: 502,
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+            "Cache-Control": "no-store",
+            "X-Content-Type-Options": "nosniff"
+          }
+        });
+      }
+      const headers = new Headers(upstream.headers);
+      headers.set("Content-Type", "application/json; charset=utf-8");
+      headers.set("Cache-Control", "public, max-age=60");
+      headers.set("CDN-Cache-Control", "public, max-age=60");
+      headers.set("X-GAH-Barak-Manifest-Proxy", "verified-wiki-json");
+      headers.set("X-Content-Type-Options", "nosniff");
+      return new Response(request.method === "HEAD" ? null : upstream.body, {
+        status: upstream.status, headers
+      });
     }
 
     if (
