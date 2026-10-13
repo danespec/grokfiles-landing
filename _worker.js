@@ -992,6 +992,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/guides", "/guides/index.html"],
   ["/guides/", "/guides/index.html"],
+  ["/guides/epstein-2007-npa-chronology", "/guides/epstein-2007-npa-chronology.html"],
   ["/news", "/news.html"],
   ["/news/doj-march-2025-review-emails-released", "/news/doj-march-2025-review-emails-released.html"],
   ["/news/phang-fbi-notes-in-camera-october-16", "/news/phang-fbi-notes-in-camera-october-16.html"],
