@@ -4364,6 +4364,24 @@ function contextualizePhotoIndexHtml(html) {
   return result;
 }
 
+// GAH-BARAK-LEDGER-036: rectify one out-of-date human-readable count.
+// The browser's active JS and the hashed source ledger already say 5,483;
+// this exact-route editorial HTML must not imply source authentication.
+function qualifyBarakLandingLedgerHtml(html) {
+  const source = String(html || "");
+  const old = /<p>Only recovered parent messages appear here\. Attachment-backed slots \(5,587\) and metadata-only (?:records|placeholders) \(5,505\) are indexed separately and are not presented as full emails\.<\/p>/;
+  return source.replace(old,
+    '<p data-gah-barak-ledger-036="v1">The email-reference inventory contains ' +
+    '<strong>5,587 attachment-backed records</strong>, ' +
+    '<strong>5,483 metadata-only records</strong>, and ' +
+    '<strong>19 records labeled recovered_email</strong>. ' +
+    'Some mailbox/slot combinations have two classified records, so these ' +
+    'figures count inventory rows, not independently authenticated messages. ' +
+    'A recovered label or linked PDF alone does not establish original-message ' +
+    'authorship, contents, or transmission. ' +
+    '<a href="/barak/emails">Read the source-verification limitations</a>.</p>');
+}
+
 async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
@@ -4432,6 +4450,10 @@ async function proxyProofLayer(request, env = {}) {
     headers.set("X-Robots-Tag", "noindex,follow");
   }
   let body = enhanceHtmlText(await upstream.text(), request, meta, env);
+  if (proxiedPath === "/barak") {
+    body = qualifyBarakLandingLedgerHtml(body);
+    headers.set("X-GAH-Barak-Ledger-Count", "verified-036");
+  }
   if (proxiedPath === "/barak/emails") {
     body = qualifyBarakEmailIndexHtml(body);
     headers.set("X-GAH-Barak-Source-Qualification", "v1");
