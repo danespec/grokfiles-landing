@@ -4306,6 +4306,64 @@ function decorateWikiSearchCors(response, request) {
   headers.delete("Content-Length");
   return new Response(response.body, {status:response.status,statusText:response.statusText,headers});
 }
+// GAH-CONTENT-PROVENANCE-035: only public editorial qualification;
+// the source-record inventory is not evidence of original-parent authentication.
+function qualifyBarakEmailIndexHtml(html) {
+  let result = String(html || "");
+  const replacements = [
+    [
+      "Recovered Barak parent email messages only. Attachment-backed slots are indexed separately and are not shown as full emails.",
+      "Barak email-reference inventory and source-verification limits. Internal recovered_email labels are not authenticated original messages."
+    ],
+    ["<title>Barak Recovered Emails</title>", "<title>Barak Email Reference Index | Grok Archive Hub</title>"],
+    ["<p class=\"eyebrow\">Recovered parent messages only</p>", "<p class=\"eyebrow\">Inventory classification · source checks open</p>"],
+    ["<h1>Barak Recovered Emails</h1>", "<h1>Barak Email Reference Index</h1>"],
+    [
+      "This lane lists only <strong>recovered_email</strong> records where sender, date, subject, and body excerpt were recovered from a parent source. Attachment-backed slots (5,587) and metadata-only placeholders (5,505) are not shown here as full emails.",
+      "This lane filters records assigned the internal <strong>recovered_email</strong> classification. The classification alone does not authenticate an original message, sender, date, subject, body excerpt, or transmission. Attachment-backed and metadata-only references are tracked separately; the inventory class totals remain under reconciliation."
+    ],
+    [
+      "The docker archive export contains attachment folders only: no native <code>.html</code>, <code>.eml</code>, or <code>.mbox</code> parent files were found. Nineteen parent messages were recovered from matching Gmail-export PDF sources where mailbox and slot aligned.",
+      "An earlier reconstruction associated <strong>19 inventory entries</strong> with matching Gmail-export PDF references. These are <strong>labeled records, not 19 independently authenticated complete parent messages</strong>. The reviewed attachment export did not establish native <code>.eml</code> or <code>.mbox</code> parent files. Original-body provenance, metadata fields, and population counts require further source-level checks."
+    ],
+    ["Search recovered emails</label>", "Search indexed email references</label>"],
+    ["placeholder=\"Search sender, subject, mailbox, date, or excerpt\"", "placeholder=\"Search recorded source-reference fields\""]
+  ];
+  for (const [before, after] of replacements) result = result.replace(before, after);
+  // This caveat remains visible even if an upstream paragraph changes independently.
+  const marker = 'data-gah-barak-source-qualification="v1"';
+  if (!result.includes(marker)) {
+    const note = '<section class="note" ' + marker + ' aria-label="Original-source verification notice">' +
+      '<p><strong>Source-verification notice:</strong> An archive classification or PDF cross-reference ' +
+      'does not prove a complete original parent email, its authorship, or transmission. ' +
+      'Read source-limited summaries as research leads, not established communications or conduct. ' +
+      '<a href="/methodology">Methodology</a> · <a href="/corrections">Report a source correction</a>.</p></section>';
+    result = result.replace(/(<section\b[^>]*\bdata-barak-detail\b[^>]*><\/section>)/i, note + "$1");
+  }
+  return result;
+}
+
+// The raw photo index is a finder, not editorial authentication of 76,060 images.
+// Counts/date below were read from the published upstream source-manifest status.
+function contextualizePhotoIndexHtml(html) {
+  let result = String(html || "");
+  const marker = 'data-gah-visual-source-qualification="v1"';
+  if (result.includes(marker)) return result;
+  const note = '<section class="note" ' + marker + ' aria-labelledby="gah-visual-source-title">' +
+    '<h2 id="gah-visual-source-title">How to interpret this image index</h2>' +
+    '<p>The source manifest, last generated May 4, 2026, reports <strong>76,060 indexed image objects</strong> ' +
+    'from 76,948 extraction rows, with 888 duplicate rows skipped. Counts describe extracted objects, ' +
+    'not necessarily unique photographs, authenticated originals, or verified evidence.</p>' +
+    '<p>Images and screenshots may omit the surrounding document or contain sensitive material. ' +
+    'Before drawing conclusions, verify the cited EFTA identifier in its full-source context, check ' +
+    'provenance and privacy, and do not infer identity or conduct attributable to a person from an isolated image.</p>' +
+    '<p>This browser is <strong>not an editorially authenticated gallery</strong> and carries no display ads. ' +
+    '<a href="/visual-evidence">Review visual-evidence methodology</a> · ' +
+    '<a href="/corrections">Report a privacy or source concern</a>.</p></section>';
+  result = result.replace(/(<div\b[^>]*class="controls"[^>]*>)/i, note + "\n$1");
+  return result;
+}
+
 async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
@@ -4374,6 +4432,14 @@ async function proxyProofLayer(request, env = {}) {
     headers.set("X-Robots-Tag", "noindex,follow");
   }
   let body = enhanceHtmlText(await upstream.text(), request, meta, env);
+  if (proxiedPath === "/barak/emails") {
+    body = qualifyBarakEmailIndexHtml(body);
+    headers.set("X-GAH-Barak-Source-Qualification", "v1");
+  }
+  if (proxiedPath === "/photos") {
+    body = contextualizePhotoIndexHtml(body);
+    headers.set("X-GAH-Visual-Source-Qualification", "v1");
+  }
 
   if (proxiedPath === "/photos") {
     const visualApiBridge = '<script data-cfasync="false" data-gah-visual-evidence-api="v1">(function(){const install=function(){' +
