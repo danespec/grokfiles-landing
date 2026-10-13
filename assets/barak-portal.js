@@ -111,6 +111,9 @@
   }
 
   function validSourceFile(item) {
+    // Email slots shared one source URL across 5,603 distinct rows.
+    // Source links are limited to separately identified PDF inventory records.
+    if (item.type === "email" || item.slotClass === "recovered_email") return false;
     if (item.sourceFileEnabled === false) return false;
     return Boolean(item.sourceFile && SOURCE_SID_RE.test(String(item.sourceFile)));
   }
@@ -145,9 +148,9 @@
       item.resultType = item.resultType || slotLabels[slotClass] || "Attachment-backed slot";
       item.title = item.subject || `${item.mailbox || "Archive"} slot ${item.messageSlot || ""}`;
       if (slotClass === "recovered_email") {
-        item.sourceType = "Recovered parent message";
-        item.claim = "Parent message recovered from a Gmail-export PDF mirror or docker attachment proxy.";
-        item.bias = "Recovered headers and body excerpt are archive context only.";
+        item.sourceType = "Archive-labeled recovered slot — parent source unverified";
+        item.claim = "The original manifest labels this slot recovered, but the shared source URL does not independently verify its parent message.";
+        item.bias = "Parent PDF identity remains unresolved. Linked attachment PDFs are separate indexed sources, not proof of the parent body.";
       } else if (slotClass === "attachment_backed_slot") {
         item.sourceType = "Attachment-backed slot";
         item.claim = "Attachment folder indexed; parent email body was not recovered from the docker archive export.";
@@ -166,8 +169,8 @@
       item.sourceLabel = item.sourceLabel || emailLabel;
       item.silence = "No purpose, relationship, legal meaning, or conduct is inferred.";
       if (item.parentPdfMirror) {
-        item.parentPdfLabel = item.parentPdfLabel || "Parent PDF mirror (partial headers only)";
-        item.parentPdfNote = item.parentPdfNote || "Parent PDF mirror present; slot class unchanged.";
+        item.parentPdfLabel = "Unverified parent-mirror flag";
+        item.parentPdfNote = "Legacy flag retained for provenance only; a distinct parent PDF has not been established.";
       }
       item.filters = {
         emails: slotClass === "recovered_email",
@@ -287,7 +290,9 @@
 
   function sourceLink(item) {
     if (!validSourceFile(item)) {
-      return disabledAction("Open source PDF", "No verified public PDF reader URL for this record.");
+      return disabledAction("Open source PDF", item.type === "email"
+        ? "No independently verified email-specific PDF. Linked attachments are separate source records."
+        : "No verified public PDF reader URL for this record.");
     }
     return `<a class="detail-link" href="${escapeHtml(item.sourceFile)}" target="_blank" rel="noopener">Open source PDF</a>`;
   }
@@ -311,8 +316,8 @@
       <div class="email-meta slot-warning">
         <span><b>Slot class</b> ${escapeHtml(slotLabels[item.slotClass] || item.slotClass || "Attachment-backed slot")}</span>
         <span><b>Attachments</b> ${escapeHtml(item.attachmentCount ?? 0)}</span>
-        <span>${escapeHtml(item.slotClass === "metadata_only_slot" ? "No parent email body or attachments recovered." : "Parent email body missing; attachment folder only.")}</span>
-        ${item.parentPdfMirror ? `<span><b>Parent PDF</b> ${escapeHtml(item.parentPdfLabel || "Gmail export parent PDF mirror")}</span>` : ""}
+        <span>${escapeHtml(item.slotClass === "metadata_only_slot" ? "No parent email body or attachments recovered." : "Parent-body source not independently verified; inspect linked attachments separately.")}</span>
+        ${item.parentPdfMirror ? `<span><b>Parent PDF flag</b> ${escapeHtml(item.parentPdfLabel || "Unverified parent-mirror flag")}</span>` : ""}
       </div>` : "";
     const readerStatus = item.type === "pdf" ? `<p class="reader-status">${escapeHtml(item.readerStatus || "Public PDF reader link pending review")}</p>` : "";
     const transcript = /audio|video|photo/.test(item.type) ? `
