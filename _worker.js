@@ -7126,10 +7126,10 @@ function ensureV3DocumentShell(body) {
   if (isBarakRuntime) {
     html = html
       .replace(/\/assets\/site\.js/gi, "/assets/barak-site-027.js")
-      .replace(/\/assets\/barak-data\.v298\.js/gi, "/assets/barak-data-050.js")
-      .replace(/\/assets\/barak-data-027\.js/gi, "/assets/barak-data-050.js")
-      .replace(/\/assets\/barak-data-036\.js/gi, "/assets/barak-data-050.js")
-      .replace(/\/assets\/barak-data-048\.js/gi, "/assets/barak-data-050.js")
+      .replace(/\/assets\/barak-data\.v298\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
+      .replace(/\/assets\/barak-data-027\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
+      .replace(/\/assets\/barak-data-036\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
+      .replace(/\/assets\/barak-data-048\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
       .replace(/\/assets\/barak-portal\.js/gi, "/assets/barak-portal-027.js?v=ren-barak-007-20261012")
       .replace(/\/assets\/images\/barak-archive-hero\.png/gi, "/assets/images/barak-archive-hero-027.png");
     html = addBodyClass(html, "barak-portal");
@@ -7138,7 +7138,7 @@ function ensureV3DocumentShell(body) {
   // V3 CSS is injected after it, so the shared header/navigation chrome wins while
   // route-specific typography, evidence cards, and custom variables remain intact.
   html = html.replace(/<script\b[^>]*\bsrc=["']\/frontdoor\/site\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>\s*/gi, "");
-  html = html.replace(/<script\b([^>]*\bsrc=["']\/assets\/(?:barak-site-027\.js|barak-data-027\.js|barak-data-036\.js|barak-data-048\.js|barak-data-050\.js|barak-portal-027\.js)["'][^>]*)>/gi, (full, attrs) => {
+  html = html.replace(/<script\b([^>]*\bsrc=["']\/assets\/(?:barak-site-027\.js|barak-data-027\.js|barak-data-036\.js|barak-data-048\.js|barak-data-050\.js|barak-portal-027\.js)(?:\?[^"']*)?["'][^>]*)>/gi, (full, attrs) => {
     const cleanAttrs = attrs
       .replace(/\s+data-cfasync=["'][^"']*["']/gi, "")
       .replace(/\s+type=["'][^"']*["']/gi, "");
