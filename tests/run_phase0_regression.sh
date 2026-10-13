@@ -45,6 +45,7 @@ run "PayPal live checkout fail-closed gates (synthetic)" node tests/test_commerc
 run "source-first guides hub" node tests/test_guides_hub.mjs
 run "Indexable research hubs in sitemap" node tests/test_sitemap_hubs.mjs
 run "DOJ-verified 2007 NPA chronology" node tests/test_npa_chronology_018.mjs
+run "DOJ official flight logs and redacted contact book" node tests/test_doj_primary_source_guides_020.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
 run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 run "wiki-host fail-closed" node tests/test_wiki_host_failclosed.mjs
