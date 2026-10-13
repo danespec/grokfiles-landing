@@ -24,6 +24,7 @@ for(const phrase of ["the NPA was an agreement","The signed NPA's complete prove
  assert.ok(page.includes(phrase),"Missing editorial uncertainty "+phrase);
 }
 assert.ok(guides.includes('href="/guides/epstein-2007-npa-chronology"'));
+assert.ok(worker.includes('["/guides/epstein-2007-npa-chronology", "/guides/epstein-2007-npa-chronology.html"]'), "Clean URL must route to deployed HTML asset");
 assert.ok(guides.includes('"position":5'));
 assert.ok(guides.includes('"url":"https://grokarchivehub.com/guides/epstein-2007-npa-chronology"'));
 const sitemap="https://grokarchivehub.com/guides/epstein-2007-npa-chronology";
