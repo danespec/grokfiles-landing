@@ -63,6 +63,8 @@ class BarakCountGate(unittest.TestCase):
         self.assertEqual(r["repeated_mailbox_slot_pair_groups"],1)
         self.assertEqual(r["rows_in_repeated_pair_groups"],2)
         self.assertEqual(r["class_counts"],{"attachment_backed_slot":1,"metadata_only_slot":1,"recovered_email":1})
+        self.assertEqual(r["pair_class_composition_counts"],{"attachment_backed_slot+metadata_only_slot":1,"recovered_email":1})
+        self.assertEqual(r["recovered_rows_without_linked_pdf_ids"],1)
         self.assertFalse(r["recovered_parent_documents_verified"])
         self.assertTrue(r["count_reconciles_inventory_rows_only"])
 

@@ -26,3 +26,10 @@ The active `barak-data-050.js` now reports **5,483** metadata-only *inventory ro
 4. Do not infer wrongdoing, withheld files, deletion, relationship, or absence from counting metadata.
 
 **Tests:** `scripts/barak/test_barak_count_gate.py`, `tests/test_barak_count_cache_normalization.mjs`, and **21 Phase 0 suites**. Production route verification is required after approved deploy; the source authenticity/count gate remains **OPEN/PARTIAL**, not closed.
+
+
+## Additional class-pair profile (REN-BARAK-JOINS-013)
+
+The same source snapshot additionally contains **3,763** pairs of `attachment_backed_slot + metadata_only_slot` and **16** pairs of `metadata_only_slot + recovered_email`, plus **1,824** standalone attachment-backed rows, **1,704** standalone metadata-only rows and **3** standalone recovered-labeled rows. Thus the 3,779 repeated pairs all have exactly two *rows*, classified across different categories; no within-class repeated key was observed in this snapshot.
+
+Of the **19** archive-labeled recovered rows, **16** reference one or more `linkedPdfIds` while **3** have none. This is a manifest foreign-key field, **not** proof that a recovered parent body exists or has been authenticated. These aggregate patterns must not be reverse-engineered into a claim that three emails were missing/withheld or that an attachment proves the parent correspondence.
