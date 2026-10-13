@@ -39,6 +39,29 @@ DEFAULT_FETCH_MAX_BYTES = 3_500_000
 OIP_REVIEW_INTERIM_URL = "https://www.justice.gov/oip/media/1465356/dl?inline="
 OIP_REVIEW_INTERIM_MAX_BYTES = 5_000_000
 
+# Owner-supplied current CA bundle, scoped to one exact Justia mirror URL.
+# HTTPS certificate verification is always required; no --insecure allowed.
+JUSTIA_DOCKET_URL = "https://dockets.justia.com/docket/district-of-columbia/dcdce/1%3A2026cv01417/291779"
+JUSTIA_CA_ENV = "GAH_SOURCEWATCH_JUSTIA_CA_BUNDLE"
+
+def curl_justia_ca(url):
+    if url != JUSTIA_DOCKET_URL:
+        return []
+    value = os.environ.get(JUSTIA_CA_ENV)
+    if not value:
+        return []
+    pem = Path(value)
+    if not pem.is_absolute() or pem.is_symlink() or not pem.is_file():
+        raise RuntimeError("justia_ca_bundle_invalid")
+    info = pem.stat()
+    if info.st_uid != os.getuid() or info.st_mode & 0o077 or not 10_000 <= info.st_size <= 500_000:
+        raise RuntimeError("justia_ca_bundle_unsafe")
+    with pem.open("rb") as stream:
+        if b"Bundle of CA Root Certificates" not in stream.read(1024):
+            raise RuntimeError("justia_ca_bundle_unrecognized")
+    return ["--cacert", str(pem)]
+
+
 def utcnow():
     return dt.datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
 
@@ -125,7 +148,7 @@ def fetch(url, timeout=28):
            "--max-redirs", "3", "--max-time", str(timeout),
            "--proto", "=https", "--proto-redir", "=https",
            "--max-filesize", str(max_bytes), "--compressed",
-           "--user-agent", UA, "--write-out", "\\n__GAH_FETCH__%{http_code} %{url_effective}", url]
+           "--user-agent", UA, "--write-out", "\\n__GAH_FETCH__%{http_code} %{url_effective}", *curl_justia_ca(url), url]
     proc = subprocess.run(cmd, capture_output=True, timeout=timeout+5)
     marker = b"\n__GAH_FETCH__"
     if marker not in proc.stdout:

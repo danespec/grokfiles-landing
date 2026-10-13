@@ -85,3 +85,27 @@ an automatic accusation, deletion claim, or publication. The OIP release is
 After merge, install the revised `watch.py` and `sources.json` on the
 authorized hourly Mac watcher; merging alone does not change its installed catalog.
 Fixture test: `python3 scripts/source-watch/test_oip_pdf_022.py`.
+
+## Justia TLS root-store diagnostic — GAH-SIGNALS-023 (October 13, 2026)
+
+The Mac's curl originally failed Justia TLS verification with exit code 60.
+An owner-private Mozilla CA bundle downloaded over verified HTTPS from
+https://curl.se/ca/cacert.pem (Mozilla export dated September 25, 2026,
+SHA-256 a41b5d356aea97a529fe27e0f7316d2f9d946d75927476cf9cf1b90637d00505)
+passes curl TLS verification for the Justia mirror; the upstream then returns
+HTTP 403. FBI Vault, CourtListener, and UCL also return HTTP 403 from the
+authorized Mac. These statuses do not prove files were removed or withheld.
+
+For only the exact configured Justia source URL, the watcher accepts an
+owner-supplied CA bundle in the GAH_SOURCEWATCH_JUSTIA_CA_BUNDLE environment
+variable. The selected absolute path must point to an owner-owned, 0600,
+non-symlink file of a bounded size (10–500 KB) with the expected Mozilla
+bundle header. Other sources use the unchanged default TLS trust path.
+No global certificate installation or TLS-verification bypass occurs.
+Watch runs do not download or update CA roots. Malformed configurations
+fail closed; HTTP 403 remains unavailable, not successful monitoring.
+Private PDF bodies, docket contents and other fetched material are not saved.
+
+Reproduce offline with test_justia_trust_023.py. Keep issue #9 OPEN;
+this resolves only the misleading TLS transport failure for Justia,
+not the remote site's access restrictions or court docket freshness.
