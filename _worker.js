@@ -1106,6 +1106,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/research-index", "2026-10-13"],
   ["https://grokarchivehub.com/barak/emails", "2026-10-13"],
   ["https://grokarchivehub.com/guides", "2026-10-13"],
+  ["https://grokarchivehub.com/guides/epstein-2007-npa-chronology", "2026-10-13"],
   ["https://grokarchivehub.com/news", "2026-10-12"],
   ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
   ["https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16", "2026-10-12"],
