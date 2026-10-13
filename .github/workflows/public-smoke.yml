@@ -1,0 +1,32 @@
+name: GAH public production smoke
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - chatgpt/gah-barak-publication-002-20261012
+  push:
+    branches:
+      - chatgpt/gah-barak-publication-002-20261012
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gah-public-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  public-smoke:
+    name: Verify live public routes (read-only)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Public route and disabled-checkout smoke
+        run: node scripts/qa/public_smoke.mjs
