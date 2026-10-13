@@ -1,0 +1,13 @@
+# GAH-SEO-INDEXNOW-030 — narrow public key file
+
+As of October 13, 2026, GSC Wizard lists 40 URL indexing checks with 7 indexed; three obsolete Wiki sitemap URLs remain erroneous. The connected GSC Wizard app can list/re-submit sitemaps but cannot delete submissions, and current Cloudflare Wrangler token has no zone read/WAF Security Events scope. Neither is changed by this release.
+
+IndexNow is a **different indexing system** than Google Search Console: participating engines (including Bing and Yandex) accept notification requests and subsequently validate this site's publicly published API key. Submissions do not guarantee crawling or indexing by any engine.
+
+GSC Wizard site property: sc-domain:grokarchivehub.com. Owner-generated IndexNow key file must be reachable at https://grokarchivehub.com/4843e5196190a1e2fc249c49d3172510.txt and contain EXACTLY the same ASCII key with no newline. Its security model REQUIRES public disclosure of the key (it is not an application secret). Owner-operator generated it on the authorized Mac, and registered the same key through the connected GSC Wizard plugin, which acknowledged masked suffix 2510. Do not confuse this key with authentication tokens, Cloudflare secrets or membership credentials.
+
+The initial one-file static Pages deployment returned HTTP404 on the apex because the existing catch-all Pages Worker intercepted the static key path. Its source and bundle were otherwise unchanged. This repair adds precisely ONE exact route to _routes.json exclude: /4843e5196190a1e2fc249c49d3172510.txt; all previously excluded static assets, Worker route coverage and protected API routes remain the same, and no generic .txt bypass is made. The public host serves the static text file directly. Staging and preview hosts MUST retain Cloudflare Access protection; static file bypass does not change the external Access policy.
+
+Acceptance: GitHub Phase0 34-suite regression, protected staging on Pages, compare the final static artifact bundle against the previous release (one key file + only _routes.json), deploy main Pages via approved Wrangler, verify live apex and www-to-apex key response byte-for-byte, verify Wiki unauthorized API remains HTTP401 and staging HTTP302, then confirm get_indexnow_settings keyFileVerified=true. ONLY AFTER THAT submit a small bounded group of updated canonical URLs; report engine HTTP202 as accepted/pending validation, NOT indexed.
+
+If the key file doesn't become accessible, DO NOT send IndexNow submissions and DO NOT weaken Worker WAF/Access or disable authentication. Previous production deployment from PR #71 is the rollback base. No payment, newsletter, member, rate-limit, protected Wiki or Google sitemap settings change.
