@@ -380,7 +380,7 @@
     const typeCounts = data.coverage?.sourceTypeCounts || {};
     const recovery = data.coverage?.emailSourceRecovery || {};
     const stats = [
-      ["Recovered emails", recovery.recoveredEmail || typeCounts["Recovered emails"] || 0],
+      ["Archive-labeled recovered slots (unverified)", recovery.recoveredEmail || typeCounts["Recovered emails"] || 0],
       ["Attachment-backed slots", recovery.attachmentBackedSlot || typeCounts["Attachment-backed slots"] || 0],
       ["Metadata-only slots", recovery.metadataOnlySlot || typeCounts["Metadata-only slots"] || 0],
       ["Archive PDF files", counts.archivePdfFiles || archiveIndex.pdfCount || 0],

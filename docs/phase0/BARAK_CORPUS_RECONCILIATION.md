@@ -64,3 +64,8 @@ All figures above were produced by SQL against `barak_emails.db` and by
 parsing `assets/barak-data.v298.js` directly on 2026-10-09 — not by trusting
 prose. Re-run: the queries are listed inline; the validator
 `docs/phase0/validate_barak_deps.py` covers the site side.
+
+
+## October 12 source-verification addendum (inventory rows only)
+
+The public Barak email manifest SHA-256 `38ebc8dbe4906c1fe6132b75f2af2d5cf690e5c829d34615fddf514d74d3bb73` was inspected row by row. Its 11,089 unique row IDs partition into 5,587 attachment-backed, 5,483 metadata-only and 19 recovered-labeled rows, with no unknown class. A distinct `(mailbox, messageSlot)` join key appears only 7,310 times because 3,779 pairs repeat. This is a count of *records/keys*, **not** a validated corpus of distinct underlying emails. The older portal metadata-only counter of 5,505 was a display inconsistency, now corrected in the active data script by REN-BARAK-COUNT-012. The 19 claimed recovered parents remain unverified, and distinct attachment PDF URLs cannot by themselves establish parent-body provenance. Keep all cross-corpus joins and negative-search claims gated behind independently versioned source evidence.

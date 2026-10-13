@@ -7126,11 +7126,9 @@ function ensureV3DocumentShell(body) {
   if (isBarakRuntime) {
     html = html
       .replace(/\/assets\/site\.js/gi, "/assets/barak-site-027.js")
-      .replace(/\/assets\/barak-data\.v298\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
-      .replace(/\/assets\/barak-data-027\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
-      .replace(/\/assets\/barak-data-036\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
-      .replace(/\/assets\/barak-data-048\.js/gi, "/assets/barak-data-050.js?v=ren-barak-009-20261012")
-      .replace(/\/assets\/barak-portal\.js/gi, "/assets/barak-portal-027.js?v=ren-barak-007-20261012")
+      // Normalize previously stacked cache versions to one canonical script URL.
+      .replace(/\/assets\/barak-data(?:\.v298|-027|-036|-048|-050)\.js(?:\?[^"'<>\s]*)?/gi, "/assets/barak-data-050.js?v=ren-barak-count-012-20261012")
+      .replace(/\/assets\/barak-portal(?:-027)?\.js(?:\?[^"'<>\s]*)?/gi, "/assets/barak-portal-027.js?v=ren-barak-count-012-20261012")
       .replace(/\/assets\/images\/barak-archive-hero\.png/gi, "/assets/images/barak-archive-hero-027.png");
     html = addBodyClass(html, "barak-portal");
   }
