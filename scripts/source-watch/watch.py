@@ -19,6 +19,7 @@ import sys
 import tempfile
 import time
 from html.parser import HTMLParser
+from html import unescape
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -38,6 +39,7 @@ UTC = dt.timezone.utc
 DEFAULT_FETCH_MAX_BYTES = 3_500_000
 OIP_REVIEW_INTERIM_URL = "https://www.justice.gov/oip/media/1465356/dl?inline="
 OIP_REVIEW_INTERIM_MAX_BYTES = 5_000_000
+OIP_FOIA_INDEX_URL = "https://www.justice.gov/oip/available-documents-oip"
 
 # Owner-supplied current CA bundle, scoped to one exact Justia mirror URL.
 # HTTPS certificate verification is always required; no --insecure allowed.
@@ -218,11 +220,58 @@ def parse_court_rss(source, raw, now=None):
             "rss_last_build":when.isoformat(),
             "rss_items_in_window":len(items)}
 
+def oip_epstein_recent_links(raw, url):
+    """Only Epstein-titled entries under OIP's *Recent Releases* heading.
+
+    A general FOIA-library page digest would generate noisy, unrelated alerts.
+    No scraping of historical FOIA logs, private contact data or PDF bodies.
+    """
+    if url != OIP_FOIA_INDEX_URL:
+        raise ValueError("oip_recent_source_url_mismatch")
+    page = raw.decode("utf-8", errors="replace")
+    headings = []
+    for match in re.finditer(r"<h2\b[^>]*>.*?</h2>", page, re.I | re.S):
+        title = normalize(unescape(re.sub(r"<[^>]+>", " ", match.group(0))))
+        headings.append((title, match.start(), match.end()))
+    sections = [i for i,(title,_,_) in enumerate(headings) if title == "Recent Releases"]
+    if len(sections) != 1:
+        raise RuntimeError("oip_recent_heading_not_found")
+    i = sections[0]
+    if i+1 >= len(headings) or headings[i+1][0] != "FOIA-Processed Documents":
+        raise RuntimeError("oip_recent_boundary_changed")
+    chunk = page[headings[i][2]:headings[i+1][1]]
+    blocks = re.findall(
+        r"<p\b[^>]*>\s*<strong\b[^>]*>(.*?)</strong>\s*</p>\s*<ul\b[^>]*>(.*?)</ul>",
+        chunk, re.I | re.S)
+    observed = {}
+    candidates = 0
+    for heading, items in blocks:
+        title = normalize(unescape(re.sub(r"<[^>]+>", " ", heading)))
+        if "epstein" not in title.casefold():
+            continue
+        candidates += 1
+        parser = Extract()
+        parser.feed(items)
+        for href, label in parser.anchors:
+            target = urljoin(url, href).split("#")[0]
+            if not re.fullmatch(r"https://www\.justice\.gov/oip/media/[0-9]+/dl\?inline=?", target):
+                continue
+            observed[target] = normalize(title + " | " + label)[:200]
+            if len(observed) > 100:
+                raise RuntimeError("oip_recent_too_many_links")
+    if not candidates or not observed:
+        raise RuntimeError("oip_epstein_recent_section_empty_or_changed")
+    return {"mode":"links", "links":dict(sorted(observed.items())),
+            "digest":digest(json.dumps(observed,sort_keys=True))}
+
+
 def observe(source, transport=fetch):
     """No state mutations. HTML is untrusted, parsed as data only."""
     url = source["url"]
     raw = transport(url)
     mode = source["mode"]
+    if mode == "oip_recent_epstein":
+        return oip_epstein_recent_links(raw, url)
     if mode == "court_rss":
         return parse_court_rss(source, raw)
     if mode == "article_main":
