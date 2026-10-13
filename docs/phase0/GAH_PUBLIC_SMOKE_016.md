@@ -19,3 +19,8 @@ GA4 recorded historic error-page views for `/photos` and `/hold-the-letter.html`
 ### Explicit non-signoff
 
 Passing these 15 checks does **not** verify every PDF source, mobile accessibility, every image/media asset, real member-provider payment and entitlement flow, SEO indexing, end-to-end browser interactions, or recovered-parent body authenticity. Those gates remain independently tracked. It establishes only the listed public route and fail-closed billing invariants on the check date.
+
+
+### GitHub runner limitation (observed October 13)
+
+A trial workflow executing this same read-only script on a GitHub-hosted Ubuntu runner received HTTP **403 on 14/15 routes** (the public `robots.txt` was 200), while the authorized Mac returned 15/15 expected responses. This is a network origin/WAF access difference, **not** an observed production outage, and it must not be interpreted as deleted evidence. The trial workflow was removed before merge so unrelated pull requests are not blocked by Cloudflare treating GitHub runner traffic differently. Use this script from an authorized, known test machine and record `unavailable` when a network fails. Do not relax Cloudflare rules for shared build runners.
