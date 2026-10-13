@@ -4324,7 +4324,7 @@ function qualifyBarakEmailIndexHtml(html) {
     ],
     [
       "The docker archive export contains attachment folders only: no native <code>.html</code>, <code>.eml</code>, or <code>.mbox</code> parent files were found. Nineteen parent messages were recovered from matching Gmail-export PDF sources where mailbox and slot aligned.",
-      "An earlier reconstruction associated <strong>19 inventory entries</strong> with matching Gmail-export PDF references. These are <strong>labeled records, not 19 independently authenticated complete parent messages</strong>. The reviewed attachment export did not establish native <code>.eml</code> or <code>.mbox</code> parent files. Original-body provenance, metadata fields, and population counts require further source-level checks."
+      "A mailbox-and-slot review has located HTML exports and PDF printouts corresponding to <strong>19 inventory entries</strong>. These are <strong>labeled records, not 19 independently authenticated complete parent messages</strong>. The HTML/PDF copies appear to be representations of the same export rather than independent transmission evidence. None of the 19 has been joined to a native <code>.eml</code> original; the broader mailbox archive contains native-format files for other slots. Sender, recipient, subject and date fields in this inventory remain unreconciled with the exported source headers."
     ],
     ["Search recovered emails</label>", "Search indexed email references</label>"],
     ["placeholder=\"Search sender, subject, mailbox, date, or excerpt\"", "placeholder=\"Search recorded source-reference fields\""]
@@ -4336,6 +4336,7 @@ function qualifyBarakEmailIndexHtml(html) {
     const note = '<section class="note" ' + marker + ' aria-label="Original-source verification notice">' +
       '<p><strong>Source-verification notice:</strong> An archive classification or PDF cross-reference ' +
       'does not prove a complete original parent email, its authorship, or transmission. ' +
+      'The extracted sender, recipient, subject and date fields have not been reconciled to source HTML/PDF headers and must not be cited as verified original message metadata. ' +
       'Read source-limited summaries as research leads, not established communications or conduct. ' +
       '<a href="/methodology">Methodology</a> · <a href="/corrections">Report a source correction</a>.</p></section>';
     result = result.replace(/(<section\b[^>]*\bdata-barak-detail\b[^>]*><\/section>)/i, note + "$1");
