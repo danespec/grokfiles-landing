@@ -109,3 +109,44 @@ Private PDF bodies, docket contents and other fetched material are not saved.
 Reproduce offline with test_justia_trust_023.py. Keep issue #9 OPEN;
 this resolves only the misleading TLS transport failure for Justia,
 not the remote site's access restrictions or court docket freshness.
+
+## OIP FOIA recent-release inventory and July 2025 memorandum records (GAH-SIGNALS-024; October 13, 2026)
+
+The DOJ OIP FOIA Library (https://www.justice.gov/oip/available-documents-oip)
+contains two Epstein-titled entries in the Recent Releases section.
+Targeted source mode oip_recent_epstein reads ONLY those named entries and their
+DOJ OIP media links, not the entire changing FOIA Library, older FOIA Logs,
+other political or legal topics, or unrelated media links. One current entry
+is the Oct 9 investigative-holdings interim PDF already watched under 022.
+The other is a September 23, 2026 OIP Final Response on July 6-7, 2025
+DOJ/FBI memorandum acquisition/reporting communications.
+
+New distinct official PDFs monitored by digest only, with first-party Mac
+responses verified on October 13, 2026:
+
+- DOJ OIP communications (29 pages by official PDF rendering),
+  https://www.justice.gov/oip/media/1462251/dl?inline= ,
+  1,274,587 bytes, SHA-256 f8ad8ea91200259af6ccefb7a247870b34a7aa44ac4d2d13f3038578eb081ccd.
+- Original DOJ/FBI July 2025 memorandum hosted by the Office of Public Affairs,
+  https://www.justice.gov/opa/media/1407001/dl?inline ,
+  141,171 bytes, SHA-256 ec70cb11a7f246d79aa23b7fb15cf38e9cb0cb96411ef9a7c3ec569073ffb724.
+
+The OIP released communications include an official public-affairs response
+identifying the DOJ/FBI memorandum URL as authentic (PDF p.10 / zero-index 9).
+That authentication of the *memo as a government communication* does not
+independently prove each substantive assertion in the memo. The memo,
+press correspondence, and separate OIP investigative-holdings review must
+not be merged as a single source, nor used as personal allegations.
+
+All new PDFs remain below the existing 3.5MB global size cap; the exact
+5MB exception from GAH-SIGNALS-022 still applies ONLY to the earlier
+October 9 PDF. No document bytes are persisted. For HTML release-index
+changes, new official media links are review-required events, and a link
+disappearing from the currently observed index is NEVER proof of deletion.
+Interleaved unrelated updates to the massive OIP page do not trigger alerts.
+Changes to a PDF hash require human assessment of document revisions.
+Tests: python3 -m unittest discover -s scripts/source-watch -p 'test_*.py' -q.
+
+Live Mac runtime requires installing the updated watch.py and sources.json
+separately from merging the source-watch branch. Preserve the private 0600
+state and existing hourly LaunchAgent / CA trust, and do not modify production.

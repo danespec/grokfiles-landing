@@ -255,6 +255,24 @@
       "scope": "DOJ OIP FOIA Library release posted October 9, 2026: interim March 18–27, 2025 investigative holdings review records; separate from FBI Vault and not complete FBI holdings",
       "mode": "official_pdf",
       "url": "https://www.justice.gov/oip/media/1465356/dl?inline="
+    },
+    {
+      "id": "doj-oip-epstein-recent-index",
+      "scope": "DOJ OIP FOIA Recent Releases list, ONLY headings containing Epstein; observes new first-party media links, not historical library or FBI Vault",
+      "mode": "oip_recent_epstein",
+      "url": "https://www.justice.gov/oip/available-documents-oip"
+    },
+    {
+      "id": "doj-oip-axios-memo-comms-20260923",
+      "scope": "DOJ OIP 2026-09-23 release: 29-page July 6-7 2025 public-affairs communications about reporting on the DOJ/FBI Epstein memo; official record not leaked-media account",
+      "mode": "official_pdf",
+      "url": "https://www.justice.gov/oip/media/1462251/dl?inline="
+    },
+    {
+      "id": "doj-opa-epstein-memo-20250707",
+      "scope": "DOJ Office of Public Affairs original published 2025 DOJ/FBI Epstein memorandum PDF; distinguish original memo from journalist correspondence and later OIP investigative holdings",
+      "mode": "official_pdf",
+      "url": "https://www.justice.gov/opa/media/1407001/dl?inline"
     }
   ],
   "coverage_gaps": [
@@ -270,6 +288,6 @@
     "UK Andrew Mountbatten-Windsor: Oct 8 order and official PDF monitored. Future s59 retention decision (listed as potentially 2027), challenges to officer-identity redactions (14 days from order), and other proceedings are not covered by live docket RSS; no PACER-like UK case-specific authenticated docket source configured",
     "Phang: certified list due Oct 1 ECF42, on Oct 1 govt filed ECF51 postponement motion and ECF52 Rule12c judgment motion; ECF55 Oct8 opposition, ECF57 Oct9 additional in-camera compliance order. Public RECAP filing PDFs are *known* court-stamped originals but do NOT constitute a complete or current live docket. No inference of a granted stay or final compliance.",
     "DOJ Data Sets 1–12: monitor only the first public listing page per dataset. Many paginated listing pages (and file bytes) are not accessible through authorized Mac/NAS network paths. First-page additions/changes do NOT establish complete corpus totals, disappearance of records, or a full changed-file inventory.",
-    "DOJ OIP 2026-10-09 interim: official PDF snapshot only (bounded 5 MB, SHA-256). This is NOT FBI Vault Parts 01–13, a full FBI investigative-holdings census, or proof that an unobserved document did not exist. A revised hash requires human review."
+    "DOJ OIP 2026-10-09 interim: official PDF snapshot only (bounded 5 MB, SHA-256). This is NOT FBI Vault Parts 01–13, a full FBI investigative-holdings census, or proof that an unobserved document did not exist. A revised hash requires human review. DOJ OIP recent index watches only first-party media links under Epstein-named Recent Releases titles; it is not a complete FOIA log, full FBI Vault catalog or proof of records that never appeared. The July 2025 DOJ/FBI memorandum, the July 2025 media inquiries, and the March 2025 investigative holdings review are three different official record sets; no identity or conclusions may be inferred from presence in press correspondence."
   ]
 }
