@@ -7,7 +7,7 @@ const routes=JSON.parse(fs.readFileSync(new URL("_routes.json",base),"utf8"));
 const worker=fs.readFileSync(new URL("_worker.js",base),"utf8");
 const ico=fs.readFileSync(new URL("favicon.ico",base));
 
-assert.ok(home.includes('<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48">'));
+assert.ok(home.includes('<link rel="icon" type="image/x-icon" href="/favicon.ico?v=032" sizes="48x48">'));
 assert.deepEqual(routes.include,["/*"],"Default Worker routing must remain");
 assert.equal(routes.exclude.filter(x=>x==="/favicon.ico").length,1,"Only the exact icon path must be excluded");
 assert.ok(routes.exclude.includes("/4843e5196190a1e2fc249c49d3172510.txt"),"IndexNow verification remains");
