@@ -1,0 +1,27 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+
+const root=new URL("../",import.meta.url);
+const html=fs.readFileSync(new URL("guides/epstein-2007-npa-chronology.html",root),"utf8");
+const worker=fs.readFileSync(new URL("_worker.js",root),"utf8");
+const COURT="https://media.ca11.uscourts.gov/opinions/pub/files/201913843.enb.pdf";
+const EXHIBIT="https://www.justice.gov/multimedia/Court%20Records/Government%20of%20the%20United%20States%20Virgin%20Islands%20v.%20JPMorgan%20Chase%20Bank%2C%20N.A.%2C%20No.%20122-cv-10904%20%28S.D.N.Y.%202022%29/239-19.pdf";
+assert.ok(html.includes(COURT),"Missing appellate original PDF");
+assert.ok(html.includes(EXHIBIT),"Missing government original-document locator");
+const articleLD=html.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1];
+assert.ok(articleLD,"Missing structured article data");
+const schema=JSON.parse(articleLD);
+assert.ok(schema.citation.includes(COURT),"Appellate authority should appear in structured data");
+assert.ok(html.includes("seven-page"),"Missing signed NPA judicial page count");
+assert.ok(html.includes("53-page"),"Missing appellate 53-page characterization");
+assert.ok(html.includes("EFTA01703108"),"Missing separate 56-page document locator");
+assert.ok(html.includes("original, version relationship"),"Missing unverified DOJ draft version qualification");
+assert.ok(html.includes("denied the CVRA mandamus petition in April 2021"),"Missing dispositive appellate posture");
+assert.ok(html.includes("February 2019"),"Missing distinct lower-court ruling");
+assert.ok(html.includes("freestanding civil action"),"Missing legal procedural limitation");
+assert.ok(html.includes("age-verification page"),"Missing government exhibit gating");
+assert.ok(html.includes("not</strong> authenticated"),"Cannot assert original signed copy authenticated");
+assert.ok(html.includes("signature pages"),"Missing source original signature caveat");
+assert.ok(!html.includes("automatically proved all 19 originals"),"No false confirmation");
+assert.ok(worker.includes('["/guides/epstein-2007-npa-chronology", "/guides/epstein-2007-npa-chronology.html"]'));
+console.log("PASS NPA-025 court disposition, original-document versions and age-gate limits");
