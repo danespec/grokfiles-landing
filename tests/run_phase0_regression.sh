@@ -59,6 +59,7 @@ run "Barak source-metadata notice and retained private evidence" node tests/test
 run "REN desktop header responsive fit at medium viewports" node tests/test_ren_header_fit_041.mjs
 run "Editorial visible byline provenance for primary-source pages" node tests/test_editorial_byline_042.mjs
 run "Article social sharing literal dollar-title injection" node tests/test_social_share_dollar_043.mjs
+run "Financial ledger table horizontal mobile access" node tests/test_ledger_table_scroll_044.mjs
 run "DOJ official flight logs and redacted contact book" node tests/test_doj_primary_source_guides_020.mjs
 run "DOJ-linked 2007 draft indictment source finder" node tests/test_doj_draft_indictment_021.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
