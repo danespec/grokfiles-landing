@@ -53,6 +53,7 @@ run "Exact IndexNow public verification route" node tests/test_indexnow_asset_03
 run "Source-accurate meta and social descriptions" node tests/test_meta_snippets_031.mjs
 run "Real GAH favicon with exact static route" node tests/test_favicon_032.mjs
 run "AdSense policy and original-source value gate" node tests/test_adsense_quality_gate_034.mjs
+run "Sensitive Barak and FARA ad-placement hold" node tests/test_adsense_sensitive_hold_046.mjs
 run "Barak and visual source-provenance correction" node tests/test_content_provenance_035.mjs
 run "Barak hashed ledger and public count reconciliation" node tests/test_barak_inventory_reconciliation_036.mjs
 run "Barak source-metadata notice and retained private evidence" node tests/test_barak_metadata_notice_040.mjs

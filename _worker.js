@@ -241,20 +241,23 @@ const AD_ELIGIBLE_EXACT_PATHS = new Map([
   ["/", { reason: "home-newsroom-lower-section", zone: "home-newsroom-lower-display" }],
   ["/investigations", { reason: "investigation-hub-lower-section", zone: "investigation-hub-lower-display" }],
   ["/evidence-briefs", { reason: "evidence-brief-hub-lower-section", zone: "evidence-brief-hub-lower-display" }],
-  ["/timeline-reconstructions", { reason: "non-graphic-timeline-hub", zone: "timeline-hub-lower-display" }],
-  ["/investigations/barak-receipts-presence-not-conduct", { reason: "evidence-brief-after-article", zone: "evidence-brief-after-article-display" }],
-  ["/investigations/barak-entity-control-layer", { reason: "evidence-brief-after-article", zone: "evidence-brief-after-article-display" }],
-  ["/investigations/barak-timeline-without-causation", { reason: "non-graphic-timeline-after-article", zone: "timeline-after-article-display" }]
+  ["/timeline-reconstructions", { reason: "non-graphic-timeline-hub", zone: "timeline-hub-lower-display" }]
 ]);
 
 const AD_LIMITED_RISK_EXACT_PATHS = new Map([
   ["/document-autopsies", { reason: "document-analysis-hub-non-graphic-context", zone: "document-analysis-hub-lower-display" }],
   ["/contradiction-ledger", { reason: "contradiction-ledger-editorial-context", zone: "contradiction-ledger-lower-display" }],
   ["/open-questions", { reason: "open-questions-editorial-context", zone: "open-questions-lower-display" }],
-  ["/investigations/fara-review-signals-not-legal-conclusions", { reason: "legal-signal-explainer-after-article", zone: "evidence-brief-after-article-display" }]
 ]);
 
 const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
+  // GAH-ADSENSE-046: Sensitive source-derived and legal-signal analyses require
+  // human policy/fairness review before any placement, even after future approval.
+  // Remain public and index,follow; do not deindex these editorial pages.
+  ["/investigations/barak-receipts-presence-not-conduct", "barak-source-editorial-ad-review-pending"],
+  ["/investigations/barak-entity-control-layer", "barak-source-editorial-ad-review-pending"],
+  ["/investigations/barak-timeline-without-causation", "barak-source-editorial-ad-review-pending"],
+  ["/investigations/fara-review-signals-not-legal-conclusions", "fara-legal-claims-ad-review-pending"],
   ["/start", "reader-onboarding"],
   ["/about", "trust-page"],
   ["/archive-scope", "trust-page-archive-scope"],
