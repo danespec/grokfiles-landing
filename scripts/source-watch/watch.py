@@ -220,6 +220,76 @@ def parse_court_rss(source, raw, now=None):
             "rss_last_build":when.isoformat(),
             "rss_items_in_window":len(items)}
 
+def parse_recap_v4_search(source, raw):
+    """CourtListener v4 type=rd: recent indexed RECAP documents for one exact docket.
+
+    The search result is a *rolling, cached window*, not a complete PACER
+    docket or a substitute for reading the filing. Each attachment is distinct
+    from its parent entry. Failure to see an entry is never proof of no filing.
+    """
+    try:
+        payload = json.loads(raw)
+    except (ValueError, UnicodeDecodeError) as exc:
+        raise RuntimeError("recap_v4_invalid_json") from exc
+    if not isinstance(payload, dict) or not isinstance(payload.get("results"), list):
+        raise RuntimeError("recap_v4_invalid_schema")
+    if not isinstance(payload.get("count"), int) or isinstance(payload["count"], bool):
+        raise RuntimeError("recap_v4_invalid_count")
+    items = payload["results"]
+    if not items or len(items) > 100:
+        raise RuntimeError("recap_v4_empty_or_oversized_page")
+    docket = source.get("docket_id")
+    if type(docket) is not int or docket <= 0:
+        raise RuntimeError("recap_v4_invalid_docket_configuration")
+    # Reject mixed dockets instead of creating cross-case false joins.
+    found = {}
+    for item in items:
+        if not isinstance(item, dict) or type(item.get("docket_id")) is not int or item["docket_id"] != docket:
+            raise RuntimeError("recap_v4_foreign_docket")
+        number = item.get("document_number")
+        if number is None:
+            # Docket housekeeping entries can have no numbered, public PDF.
+            continue
+        if type(number) is not int or number < 1:
+            raise RuntimeError("recap_v4_invalid_document_number")
+        attachment = item.get("attachment_number")
+        if attachment is not None and (type(attachment) is not int or attachment < 1):
+            raise RuntimeError("recap_v4_invalid_attachment_number")
+        filed = item.get("entry_date_filed")
+        if not isinstance(filed, str):
+            raise RuntimeError("recap_v4_invalid_filing_date")
+        try:
+            dt.date.fromisoformat(filed)
+        except ValueError as exc:
+            raise RuntimeError("recap_v4_invalid_filing_date") from exc
+        path = item.get("absolute_url")
+        # Match canonical docket, filing and optional attachment path exactly.
+        expected = f"/docket/{docket}/{number}/"
+        attachment_segment = (str(attachment) + "/") if attachment is not None else ""
+        if not isinstance(path, str) or not path.startswith(expected) or not re.fullmatch(
+            rf"/docket/{docket}/{number}/{attachment_segment}[a-z0-9][a-z0-9-]*/",
+            path
+        ):
+            raise RuntimeError("recap_v4_invalid_document_link")
+        link = "https://www.courtlistener.com" + path
+        if not safe_url(link):
+            raise RuntimeError("recap_v4_unsafe_document_link")
+        description = normalize(str(item.get("description") or ""))
+        kind = f"Attachment {attachment} to" if attachment is not None else "Filing"
+        # Keep this clearly a description from a secondary index, not a court
+        # ruling on motions or a finding that deadlines changed.
+        label = f"{kind} ECF {number} | Filed {filed} | RECAP indexed record"
+        if description:
+            label += " | " + description[:140]
+        found[link] = label
+    if not found:
+        raise RuntimeError("recap_v4_no_numbered_documents")
+    return {"mode": "recap_v4_search", "links": dict(sorted(found.items())),
+            "digest": digest(json.dumps(found, sort_keys=True)),
+            "window_count": len(items),
+            "result_count": payload["count"], "truncated": bool(payload.get("next"))}
+
+
 def oip_epstein_recent_links(raw, url):
     """Only Epstein-titled entries under OIP's *Recent Releases* heading.
 
@@ -274,6 +344,8 @@ def observe(source, transport=fetch):
         return oip_epstein_recent_links(raw, url)
     if mode == "court_rss":
         return parse_court_rss(source, raw)
+    if mode == "recap_v4_search":
+        return parse_recap_v4_search(source, raw)
     if mode == "article_main":
         return main_text_digest(raw)
     if mode == "official_pdf":
@@ -320,6 +392,14 @@ def observe(source, transport=fetch):
     raise ValueError("unknown_source_mode")
 
 def compare(previous, current, name):
+    if current["mode"] == "recap_v4_search":
+        if previous is None or previous.get("mode") != "recap_v4_search":
+            return [], "baseline"
+        old = previous.get("links", {})
+        return ([{"source": name, "kind": "recap_docket_document_first_observed",
+                  "url": url, "label": current["links"][url], "review_required": True,
+                  "note": "New to rolling RECAP search; verify filing text, legal effect, and posting date independently"}
+                 for url in sorted(set(current["links"]) - set(old))], "compared")
     if previous is None:
         if current["mode"] == "court_rss":
             return ([{"source":name,"kind":"target_case_entry_first_observed",
@@ -391,11 +471,11 @@ def build_report(catalog, previous, transport=fetch, now=utcnow):
         new, _ = compare(previous.get(name), curr, name)
         events.extend(new)
         links = curr["links"]
-        if curr["mode"] == "court_rss":
+        if curr["mode"] in ("court_rss", "recap_v4_search"):
             links = {**previous.get(name, {}).get("links", {}), **links}
             # Guard against uncontrolled private state growth.
             if len(links) > 5000:
-                raise RuntimeError("court_rss_history_limit_reached")
+                raise RuntimeError("rolling_court_history_limit_reached")
         snapshots[name] = {"mode": curr["mode"], "links": links,
                            "digest": curr["digest"], "last_success": now(),
                            "source_url": s["url"]}

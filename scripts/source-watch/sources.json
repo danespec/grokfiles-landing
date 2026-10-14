@@ -59,9 +59,10 @@
     },
     {
       "id": "phang-courtlistener",
-      "scope": "Public RECAP mirror, coverage and freshness not guaranteed",
-      "mode": "document",
-      "url": "https://www.courtlistener.com/docket/73246595/phang-v-blanche/"
+      "scope": "CourtListener RECAP v4 anonymous document search for exact D.D.C. docket 73246595 (Phang 1:26-cv-01417); rolling cached search, not complete court docket or judicial ruling",
+      "mode": "recap_v4_search",
+      "url": "https://www.courtlistener.com/api/rest/v4/search/?type=rd&q=docket_id%3A73246595&order_by=entry_date_filed+desc",
+      "docket_id": 73246595
     },
     {
       "id": "phang-justia",

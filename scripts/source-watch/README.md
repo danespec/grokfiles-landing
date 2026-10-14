@@ -150,3 +150,49 @@ Tests: python3 -m unittest discover -s scripts/source-watch -p 'test_*.py' -q.
 Live Mac runtime requires installing the updated watch.py and sources.json
 separately from merging the source-watch branch. Preserve the private 0600
 state and existing hourly LaunchAgent / CA trust, and do not modify production.
+
+## GAH-SIGNALS-025 — Phang RECAP v4 exact-docket search, October 13–14
+
+The former `phang-courtlistener` HTML docket mirror returned persistent HTTP 403
+from the owner's Mac. CourtListener's **v3 anonymous search** also returns HTTP
+403 and its database `/dockets/` detail route requires authentication. In
+contrast, read-only `/api/rest/v4/search/` currently returns HTTP 200 without
+credentials when querying the **exact CourtListener docket ID 73246595**.
+The official Free Law Project v4 migration documentation distinguishes
+`type=r` (one case with only up to three matching nested documents) from
+`type=rd` (individual RECAP filing documents).
+
+The configured `phang-courtlistener` adapter is now **v4 `type=rd`** with
+`q=docket_id:73246595`, `order_by=entry_date_filed desc`, and strict
+per-document `docket_id` validation. This avoids false joins with other courts'
+cases numbered `1:26-cv-01417`. Individual parent filings and attachments
+are separately identified; one parent+attachment is NOT two motions/orders.
+The initial successful page is a **silent baseline**. Therefore the already
+known October 13 ECF **58 + 58-1** is not re-announced merely because this
+source was enabled. New subsequently indexed documents require private review.
+Transient 403/429/transport errors retain prior baseline.
+
+Confirmed October 13 late-evening local live search: 200, one rolling first
+page of 20 indexed results with 14 numbered records, total 151 indexed
+documents/records in the search result (NOT 151 independently authenticated
+filings). It included ECF 58 + attachment 1, dated October 13. This is a
+**cached, rolling RECAP index**; not a complete PACER docket, not cryptographic
+authentication of the PDF contents, and not proof that a motion was granted.
+CourtListener recommends its alert/webhook API rather than polling queries for
+high-scale real-time monitoring; GAH limits this query to the existing hourly
+watcher and preserves the official CM/ECF RSS, court orders and separate deadlines.
+
+The reporter-provided October 13 text summary of ECF 58 describes a DOJ reply
+**advocating** postponement of the certified administrative-record-list deadline
+pending Rule 12(c), not a judicial order. ECF 51 remains a motion until the
+judge rules. Do **not** mark October 15 production or October 16 in-camera
+review as suspended based solely on this reply; those are distinct duties.
+Independent document-level judicial review is required before changing status.
+
+FBI Vault: direct Mac requests to the exact Parts URL still encounter 403,
+while other networks have observed official Vault HTML return 200. Categorize
+as *client/request-dependent source unavailability*, never as a permanent
+provider shutdown, deleted records, or new source absence. Do not bypass
+challenge protections. No auto-publication, ad or Cloudflare settings change.
+
+Offline tests: `python3 scripts/source-watch/test_recap_v4_025.py`.
