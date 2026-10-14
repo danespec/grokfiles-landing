@@ -44,6 +44,7 @@ run "Patreon OAuth member lifecycle (synthetic)" node tests/test_patreon_member_
 run "Patreon webhook idempotency (synthetic)" node tests/test_patreon_webhook_idempotency.mjs
 run "PayPal live checkout fail-closed gates (synthetic)" node tests/test_commerce_release_gates.mjs
 run "PayPal sandbox subscriber approval and cleanup security" node tests/test_paypal_sandbox_subscription_058.mjs
+run "EFTA468 source-verified public removal/restoration audit" node tests/test_efta468_publication_059.mjs
 run "source-first guides hub" node tests/test_guides_hub.mjs
 run "Indexable research hubs in sitemap" node tests/test_sitemap_hubs.mjs
 run "DOJ-verified 2007 NPA chronology" node tests/test_npa_chronology_018.mjs
