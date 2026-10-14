@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   phase0-regression:
-    name: Phase 0 regression / 42 suites
+    name: Phase 0 regression / 43 suites
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

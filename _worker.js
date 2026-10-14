@@ -7282,9 +7282,10 @@ function ensureV3DocumentShell(body) {
   if (!html.includes("data-gah-social-share")) {
     const socialShare = v3ArticleSocialShareHtml(html);
     if (socialShare && socialArticlePattern.test(html)) {
-      html = html.replace(socialArticlePattern, `$1${socialShare}\n$2`);
+      // Function-valued replacement avoids expanding $1, $&, $' or $' back-references in article titles.
+      html = html.replace(socialArticlePattern, (_match, articleContent, articleClose) => `${articleContent}${socialShare}\n${articleClose}`);
     } else if (socialShare && /<\/main>/i.test(html)) {
-      html = html.replace(/<\/main>/i, `${socialShare}\n</main>`);
+      html = html.replace(/<\/main>/i, () => `${socialShare}\n</main>`);
     }
   }
   if (!html.includes("data-gah-discovery-links") && /<footer\b[\s\S]*?<\/footer>/i.test(html)) {
