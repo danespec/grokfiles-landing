@@ -1625,6 +1625,128 @@ async function gah088Bootstrap(request,env) {
  }
 }
 
+// GAH-PAYPAL-SANDBOX-058 — owner-only, separately tokenized, sandbox recurring
+// subscription approval diagnostics. This NEVER touches live PayPal, real funds,
+// live entitlement, or checkout activation. A dedicated high-entropy token is
+// independently configured as a Cloudflare secret; no user identities logged.
+function gah058OperatorAuthorized(request, env) {
+  const stored=String(env?.GAH_SANDBOX_TEST_TOKEN||"");
+  const supplied=(request.headers.get("Authorization")||"").match(/^Bearer ([a-f0-9]{64})$/);
+  if(!/^[a-f0-9]{64}$/.test(stored)||!supplied) return false;
+  let different=0;
+  for(let i=0;i<64;i++) different |= stored.charCodeAt(i)^supplied[1].charCodeAt(i);
+  return different===0;
+}
+function gah058Reply(data,status=200) {
+  return new Response(JSON.stringify({schema:"gah.paypal.sandbox.subscription-test.v1",...data}),{
+    status,headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store",
+    "X-GAH-Commerce-Mode":"sandbox-only","X-Robots-Tag":"noindex,nofollow"}
+  });
+}
+async function gah058SandboxSubscriptionTest(request,env) {
+  if(request.method!=="POST") return gah058Reply({error:"method_not_allowed"},405);
+  if(!gah058OperatorAuthorized(request,env)) return gah058Reply({error:"operator_authorization_required"},401);
+  if(String(env?.PAYPAL_LIVE_CHECKOUT_ENABLED||"")==="true")
+    return gah058Reply({error:"sandbox_probe_disabled_while_live_checkout_enabled"},423);
+  if(!gahPaypal085Ready(env)||!env?.MEMBERS_DB?.prepare)
+    return gah058Reply({error:"sandbox_services_unavailable"},424);
+  if(Number(request.headers.get("content-length")||0)>1024)
+    return gah058Reply({error:"request_too_large"},413);
+  let body;
+  try {
+    const raw=await request.text();
+    if(raw.length>1024) return gah058Reply({error:"request_too_large"},413);
+    body=JSON.parse(raw);
+    if(!body||typeof body!=="object"||Array.isArray(body)||body.confirm_sandbox!==true)
+      return gah058Reply({error:"sandbox_confirmation_required"},400);
+  }catch(_) {return gah058Reply({error:"invalid_json"},400);}
+  const action=body.action;
+  if(!["create","status","cancel"].includes(action))
+    return gah058Reply({error:"invalid_sandbox_action"},400);
+  const id=String(body.subscription_id||"");
+  if(action!=="create"&&!/^I-[A-Z0-9]{8,40}$/.test(id))
+    return gah058Reply({error:"invalid_sandbox_subscription_id"},400);
+  try {
+    const row=await gah088PlanRow(env);
+    if(!row?.plan_id||row.environment!=="sandbox"||row.price_minor!==599||
+        row.currency!=="USD"||row.sku!=="gah-research-access-monthly")
+      return gah058Reply({error:"sandbox_plan_contract_mismatch"},409);
+    const token=(await gahPaypal085AccessToken(env)).accessToken;
+    if(action==="create") {
+      if(body.subscription_id) return gah058Reply({error:"unexpected_subscription_id"},400);
+      const plan=await gah089RequestPaypal(env,token,"/v1/billing/plans/"+encodeURIComponent(row.plan_id));
+      const regular=Array.isArray(plan.billing_cycles)&&plan.billing_cycles.find(x=>
+        x.tenure_type==="REGULAR"&&x.frequency?.interval_unit==="MONTH"&&
+        x.frequency?.interval_count===1);
+      if(plan.id!==row.plan_id||plan.status!=="ACTIVE"||
+         regular?.pricing_scheme?.fixed_price?.currency_code!=="USD"||
+         Number(regular.pricing_scheme.fixed_price.value)!==5.99)
+        return gah058Reply({error:"sandbox_provider_plan_mismatch"},409);
+      const form={
+        plan_id:row.plan_id,custom_id:"gah-sandbox-058-diagnostics",
+        application_context:{
+          brand_name:"Grok Archive Hub SANDBOX TEST",
+          shipping_preference:"NO_SHIPPING",user_action:"SUBSCRIBE_NOW",
+          return_url:"https://grokarchivehub.com/membership?sandbox_test=returned",
+          cancel_url:"https://grokarchivehub.com/membership?sandbox_test=cancelled"
+        }
+      };
+      // The static request ID makes repeated authenticated test attempts
+      // idempotent for PayPal's provider-retention window.
+      const res=await fetch(GAH_088_SANDBOX+"/v1/billing/subscriptions",{
+        method:"POST",headers:{"Authorization":"Bearer "+token,"Content-Type":"application/json",
+          "PayPal-Request-Id":"GAH-PAYPAL-SANDBOX-058-20261014"},
+        body:JSON.stringify(form),redirect:"error",signal:AbortSignal.timeout(12000)
+      });
+      if(!res.ok) return gah058Reply({error:"sandbox_subscription_creation_rejected",
+        provider_http_status:res.status},502);
+      const data=await res.json();
+      const approve=data.links?.find(x=>x.rel==="approve"&&x.method==="GET");
+      const url=new URL(String(approve?.href||"https://invalid.invalid/"));
+      if(!/^I-[A-Z0-9]{8,40}$/.test(String(data.id||""))||
+         url.protocol!=="https:"||!["www.sandbox.paypal.com","sandbox.paypal.com"].includes(url.hostname))
+        return gah058Reply({error:"sandbox_provider_response_invalid"},502);
+      return gah058Reply({ok:true,environment:"sandbox",subscription_id:data.id,
+        subscription_status:data.status,approve_url:url.href,
+        price_usd:"5.99",billing:"MONTH",
+        buyer_approval_completed:false,live_charges_allowed:false,entitlement_granted:false},201);
+    }
+    if(action==="status") {
+      const sub=await gah089RequestPaypal(env,token,
+        "/v1/billing/subscriptions/"+encodeURIComponent(id));
+      if(sub.id!==id||sub.plan_id!==row.plan_id||
+         sub.custom_id!=="gah-sandbox-058-diagnostics")
+        return gah058Reply({error:"sandbox_subscription_contract_mismatch"},409);
+      const pay=sub.billing_info?.last_payment;
+      return gah058Reply({ok:true,environment:"sandbox",subscription_status:String(sub.status||"UNKNOWN"),
+        payment_seen:Boolean(pay?.time),payment_amount_matches_five_ninetynine:Boolean(
+          pay?.amount?.currency_code==="USD"&&Number(pay.amount.value)===5.99),
+        live_charges_allowed:false,entitlement_granted:false});
+    }
+    const sub=await gah089RequestPaypal(env,token,
+      "/v1/billing/subscriptions/"+encodeURIComponent(id));
+    if(sub.id!==id||sub.plan_id!==row.plan_id||
+         sub.custom_id!=="gah-sandbox-058-diagnostics")
+      return gah058Reply({error:"sandbox_subscription_contract_mismatch"},409);
+    if(["CANCELLED","EXPIRED"].includes(sub.status))
+      return gah058Reply({ok:true,already_terminated:true,environment:"sandbox",
+        entitlement_granted:false});
+    const res=await fetch(GAH_088_SANDBOX+
+      "/v1/billing/subscriptions/"+encodeURIComponent(id)+"/cancel",{
+        method:"POST",headers:{"Authorization":"Bearer "+token,
+          "Content-Type":"application/json"},body:JSON.stringify({
+          reason:"GAH owner-authorized sandbox acceptance test cleanup"
+        }),redirect:"error",signal:AbortSignal.timeout(12000)});
+    if(!res.ok&&res.status!==204) return gah058Reply({error:"sandbox_cancel_rejected",
+      provider_http_status:res.status},502);
+    return gah058Reply({ok:true,cancellation_requested:true,
+      environment:"sandbox",entitlement_granted:false,live_charges_allowed:false});
+  }catch(_) {
+    return gah058Reply({error:"sandbox_provider_unavailable",
+      live_charges_allowed:false,entitlement_granted:false},502);
+  }
+}
+
 // GAH-PAYPAL-WEBHOOK-089: sandbox-only, verifier-backed intake. NEVER grants access.
 const GAH_089_ALLOWED_SUBSCRIPTION_EVENTS = new Set([
  "BILLING.SUBSCRIPTION.ACTIVATED","BILLING.SUBSCRIPTION.UPDATED",
@@ -2183,6 +2305,7 @@ function gahPayPalVenmo083Handler(request,path,env) {
   if(path==="/api/commerce/paypal/live/webhook") return gah090LiveWebhook(request,env);
   if(path==="/api/commerce/paypal/live/login/request") return gah090RequestCode(request,env);
   if(path==="/api/commerce/paypal/live/login/verify") return gah090VerifyCode(request,env);
+  if(path==="/api/commerce/paypal/sandbox/subscription-test") return gah058SandboxSubscriptionTest(request,env);
   if(path==="/api/commerce/paypal/sandbox/webhook") return gah089Webhook(request,env);
   if(path==="/api/commerce/paypal/plan-status") return gah088PlanStatus(request,env);
   if(path==="/api/commerce/paypal/sandbox/bootstrap-plan") return gah088Bootstrap(request,env);
