@@ -1,0 +1,7 @@
+# GAH-LEDGER-VIEW-044 — Mobile access to financial source tables
+
+October 13, 2026 Chrome 155 production acceptance exposed a narrow overflow: /investigations/black-family-partners-18m-to-5-5m-repricing at 390px had a 99px offscreen content extension traced specifically to an unstyled ledger-table table inside an existing table-scroll wrapper. No overrun at 1365px. Source calculations, original articles and underlying documents were unchanged.
+
+Remediation is local to the original HTML page: add a scoped overflow-x:auto/max-width:100% CSS rule to existing table-scroll wrappers. Both table wrappers become named, tabindex=0, role=region keyboard focus targets, so tables are still reachable with arrow-key/touch horizontal scrolling. Does not hide or remove columns, collapse values, restate financial amounts or change source links. The official photo gallery, Barak corpus, search, access control, Ads, payments and Wiki are untouched.
+
+Live Chrome CSS-injection simulation at viewport widths 390,430,768,1365 passed four of four without body overflow or missing image elements. Regression tests/test_ledger_table_scroll_044.mjs confirms two focusable wrappers, two original ledger tables, source header labels and original numeric figures. Full local Phase 0 suite 44/44 passed. Independent GitHub CI, owner-only staging, exact one-static-file deployment diff and post-deployment Chrome/route/security checks remain required for release.
