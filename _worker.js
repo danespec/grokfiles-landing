@@ -1463,7 +1463,7 @@ async function gahPaypal085AccessToken(env) {
         "Accept":"application/json"
       },
       body:"grant_type=client_credentials",
-      redirect:"error",
+      redirect:"manual",
       signal:abort.signal
     });
     if(!response.ok) throw new Error("paypal_sandbox_auth_failed");
@@ -1514,7 +1514,7 @@ async function gahPaypal085OperatorRoute(request,env,path) {
           "PayPal-Request-Id":idempotency
         },
         body:JSON.stringify(requestPayload),
-        redirect:"error",
+        redirect:"manual",
         signal:abort.signal
       });
       if(!response.ok)throw new Error("paypal_sandbox_create_order_failed");
@@ -1570,7 +1570,7 @@ async function gah088CallSandbox(token,path,body,requestId) {
   method:"POST",headers:{"Authorization":"Bearer "+token,
    "Content-Type":"application/json","Accept":"application/json",
    "PayPal-Request-Id":requestId},
-  body:JSON.stringify(body),redirect:"error",signal
+  body:JSON.stringify(body),redirect:"manual",signal
  });
  if(!res.ok)throw Error("paypal_api_failed");
  return res.json();
@@ -1700,7 +1700,7 @@ async function gah058SandboxSubscriptionTest(request,env) {
       const res=await fetch(GAH_088_SANDBOX+"/v1/billing/subscriptions",{
         method:"POST",headers:{"Authorization":"Bearer "+token,"Content-Type":"application/json",
           "PayPal-Request-Id":"GAH-PAYPAL-SANDBOX-058-20261014"},
-        body:JSON.stringify(form),redirect:"error",signal:AbortSignal.timeout(12000)
+        body:JSON.stringify(form),redirect:"manual",signal:AbortSignal.timeout(12000)
       });
       if(!res.ok) return gah058Reply({error:"sandbox_subscription_creation_rejected",
         provider_http_status:res.status},502);
@@ -1740,7 +1740,7 @@ async function gah058SandboxSubscriptionTest(request,env) {
         method:"POST",headers:{"Authorization":"Bearer "+token,
           "Content-Type":"application/json"},body:JSON.stringify({
           reason:"GAH owner-authorized sandbox acceptance test cleanup"
-        }),redirect:"error",signal:AbortSignal.timeout(12000)});
+        }),redirect:"manual",signal:AbortSignal.timeout(12000)});
     if(!res.ok&&res.status!==204) return gah058Reply({error:"sandbox_cancel_rejected",
       provider_http_status:res.status},502);
     return gah058Reply({ok:true,cancellation_requested:true,
@@ -1759,7 +1759,7 @@ const GAH_089_ALLOWED_SUBSCRIPTION_EVENTS = new Set([
 ]);
 async function gah089RequestPaypal(env,token,path,method="GET",payload=null) {
  const init={method,headers:{"Authorization":"Bearer "+token,"Accept":"application/json",
-   "Content-Type":"application/json"},redirect:"error",signal:AbortSignal.timeout(9000)};
+   "Content-Type":"application/json"},redirect:"manual",signal:AbortSignal.timeout(9000)};
  if(payload)init.body=JSON.stringify(payload);
  const r=await fetch(GAH_088_SANDBOX+path,init);
  if(!r.ok)throw Error("paypal_verification_unavailable");
@@ -1776,15 +1776,24 @@ function gah089HeadersOk(request) {
  if(!Number.isFinite(time)||Math.abs(Date.now()-time)>10*60*1000)return null;
  return h;
 }
-async function gah089VerifySignature(env,token,event,h) {
- const answer=await gah089RequestPaypal(env,token,"/v1/notifications/verify-webhook-signature","POST",{
+async function gah089VerifySignature(env,token,h,raw) {
+ const meta={
   transmission_id:h["paypal-transmission-id"],
   transmission_time:h["paypal-transmission-time"],
   cert_url:h["paypal-cert-url"],auth_algo:h["paypal-auth-algo"],
   transmission_sig:h["paypal-transmission-sig"],
-  webhook_id:env.PAYPAL_SANDBOX_WEBHOOK_ID,
-  webhook_event:event
+  webhook_id:env.PAYPAL_SANDBOX_WEBHOOK_ID
+ };
+ // PayPal signs the exact webhook bytes. Preserve the received event JSON verbatim
+ // when embedding it in the provider verification request.
+ const head=JSON.stringify(meta);
+ const body=head.slice(0,-1)+',"webhook_event":'+raw+"}";
+ const r=await fetch(GAH_088_SANDBOX+"/v1/notifications/verify-webhook-signature",{
+  method:"POST",headers:{"Authorization":"Bearer "+token,"Accept":"application/json",
+   "Content-Type":"application/json"},body,redirect:"manual",signal:AbortSignal.timeout(9000)
  });
+ if(!r.ok){console.error("GAH089 paypal verification HTTP",r.status);throw Error("paypal_verification_http_"+r.status);}
+ const answer=await r.json();
  return answer.verification_status==="SUCCESS";
 }
 function gah089SubscriptionVerified(data,row) {
@@ -1819,7 +1828,7 @@ async function gah089Webhook(request,env) {
  }catch(_){return gah088Json({error:"invalid_body"},400);}
  try {
   const access=(await gahPaypal085AccessToken(env)).accessToken;
-  if(!(await gah089VerifySignature(env,access,payload,h)))
+  if(!(await gah089VerifySignature(env,access,h,raw)))
    return gah088Json({error:"webhook_signature_invalid"},401);
   const eventId=String(payload.id||"");
   const type=String(payload.event_type||"");
@@ -1851,7 +1860,7 @@ async function gah089Webhook(request,env) {
   return gah088Json({signature_verified:true,recorded:true,
    subscription_status:allowed?providerStatus:null,payment_amount_verified:paid,
    membership_access_granted:false,live_charges_enabled:false});
- }catch(_){return gah088Json({error:"verified_webhook_processing_failed",membership_access_granted:false},502);}
+ }catch(error){console.error("GAH089 processing",String(error?.message||"error"));return gah088Json({error:"verified_webhook_processing_failed",membership_access_granted:false},502);}
 }
 
 // GAH-PAYPAL-IDENTITY-090 — independent PayPal subscription login.
