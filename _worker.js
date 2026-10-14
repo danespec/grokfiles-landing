@@ -6930,6 +6930,7 @@ function globalFooterHtml() {
           <a href="/terms">Terms</a>
           <a href="/contact">Contact</a>
           <a href="/membership">Membership</a>
+          <a href="https://www.instagram.com/grokarchivehub/" target="_blank" rel="me noopener noreferrer">Instagram @grokarchivehub</a>
         </nav>
         <div>
           <p><strong>Reader standard:</strong></p>
@@ -7068,7 +7069,8 @@ function isV3ShellHtml(body) {
 
 const GAH_X_PROFILE_URL = "https://x.com/DaneMilSpec";
 const GAH_REDDIT_PROFILE_URL = "https://www.reddit.com/user/Salt_Cry2674/";
-const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL];
+const GAH_INSTAGRAM_PROFILE_URL = "https://www.instagram.com/grokarchivehub/";
+const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL, GAH_INSTAGRAM_PROFILE_URL];
 
 function v3CanonicalFromHtml(html) {
   return firstHtmlMatch(String(html || ""), /<link\b(?=[^>]*\brel=["']canonical["'])[^>]*\bhref=["']([^"']+)["']/i) || "";
@@ -7088,6 +7090,7 @@ function v3SocialProfilesHtml() {
       <span class="gah-social-label">Follow GAH</span>
       <a href="${GAH_X_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">X @DaneMilSpec</a>
       <a href="${GAH_REDDIT_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">Reddit u/Salt_Cry2674</a>
+      <a href="${GAH_INSTAGRAM_PROFILE_URL}" target="_blank" rel="me noopener noreferrer" aria-label="GAH on Instagram, @grokarchivehub">Instagram @grokarchivehub</a>
     </div>`;
 }
 
@@ -7319,6 +7322,7 @@ function v3DocumentHeaderHtml() {
       <a href="/corrections">Corrections</a>
       <a href="/newsletter">Newsletter</a>
       <a href="/membership">Membership</a>
+      <a href="${GAH_INSTAGRAM_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">Instagram @grokarchivehub</a>
     </nav>
   </header>`;
 }
