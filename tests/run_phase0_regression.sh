@@ -56,6 +56,7 @@ run "AdSense policy and original-source value gate" node tests/test_adsense_qual
 run "Barak and visual source-provenance correction" node tests/test_content_provenance_035.mjs
 run "Barak hashed ledger and public count reconciliation" node tests/test_barak_inventory_reconciliation_036.mjs
 run "Barak source-metadata notice and retained private evidence" node tests/test_barak_metadata_notice_040.mjs
+run "REN desktop header responsive fit at medium viewports" node tests/test_ren_header_fit_041.mjs
 run "DOJ official flight logs and redacted contact book" node tests/test_doj_primary_source_guides_020.mjs
 run "DOJ-linked 2007 draft indictment source finder" node tests/test_doj_draft_indictment_021.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
