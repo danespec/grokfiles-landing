@@ -7689,6 +7689,22 @@ function editorialStructuredDataTag(path, title, description, canonical, image) 
   return `<script type="application/ld+json">${payload}</script>`;
 }
 
+// GAH-REN-HEADER-041: avoid hiding the last header action beyond the
+// available desktop viewport. The full navigation already includes Search;
+// retain the compact menu at 1100–1199px and make the mini-search redundant.
+function qualifyRenHeaderFit041(html) {
+  const source = String(html || "");
+  if (!source.includes("header-tools") || source.includes("data-gah-ren-header-fit-041")) return source;
+  const style = '<style data-gah-ren-header-fit-041>' +
+    '@media (min-width:1100px){.site-header .search-mini{display:none!important;}}' +
+    '@media (min-width:1100px) and (max-width:1199px){' +
+    '.site-header .nav-main{display:none!important;}' +
+    '.site-header .menu-btn{display:inline-flex!important;}' +
+    '}' +
+    '</style>';
+  return source.replace(new RegExp("</head>", "i"), style + String.fromCharCode(10) + "</head>");
+}
+
 function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   let body = stripCloudflareHelperAssets(html);
   if (!/<head[\s>]/i.test(body)) return body;
@@ -7769,6 +7785,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   if (!isV3ShellHtml(body)) {
     body = ensureV3DocumentShell(body);
   }
+  body = qualifyRenHeaderFit041(body);
   body = applyEditorialPublicationStats(body);
   if (!/<link\b[^>]*rel=["'][^"']*\bai-catalog\b/i.test(body)) {
     body = body.replace(/<\/head>/i, '  <link rel="ai-catalog" href="/.well-known/ai-catalog.json">\n</head>');
