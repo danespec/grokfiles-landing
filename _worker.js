@@ -4365,6 +4365,27 @@ function contextualizePhotoIndexHtml(html) {
   return result;
 }
 
+// GAH-PHOTOS-045: the Wiki's Cloudflare Rocket Loader can pre-transform
+// the raw gallery's trusted inline initializer to a non-executable script type,
+// while the apex strips the upstream Rocket Loader helper. Repair only the
+// known incoming-visual gallery initializer; never execute arbitrary scripts.
+function repairIncomingVisualGalleryInitializer045(html) {
+  return String(html || "").replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, (whole, attrs, source) => {
+    if (!/\bconst\s+SLUG\s*=\s*["']incoming-visual["']/.test(source) ||
+        !/\bfunction\s+card\s*\(x\)/.test(source)) return whole;
+    const cleanAttrs = String(attrs).replace(/\s+type\s*=\s*["'](?:[a-f0-9]{12,64}-text\/javascript|text\/javascript)["']/i, "");
+    if (/\btype\s*=/.test(cleanAttrs)) return whole; // unrecognized type; do not override
+    const marked = /\bdata-cfasync\s*=/.test(cleanAttrs)
+      ? cleanAttrs
+      : cleanAttrs + ' data-cfasync="false"';
+    const accessible = source.replace(
+      '<img loading="lazy" src="${esc(x.thumb_url)}">',
+      '<img loading="lazy" alt="Extracted source image for ${esc(x.efta)}" src="${esc(x.thumb_url)}">'
+    );
+    return '<script' + marked + ' type="text/javascript">' + accessible + '</script>';
+  });
+}
+
 // GAH-BARAK-LEDGER-036: rectify one out-of-date human-readable count.
 // The browser's active JS and the hashed source ledger already say 5,483;
 // this exact-route editorial HTML must not imply source authentication.
@@ -4460,8 +4481,10 @@ async function proxyProofLayer(request, env = {}) {
     headers.set("X-GAH-Barak-Source-Qualification", "v1");
   }
   if (proxiedPath === "/photos") {
+    body = repairIncomingVisualGalleryInitializer045(body);
     body = contextualizePhotoIndexHtml(body);
     headers.set("X-GAH-Visual-Source-Qualification", "v1");
+    headers.set("X-GAH-Photos-Script-Repair", "045");
   }
 
   if (proxiedPath === "/photos") {
