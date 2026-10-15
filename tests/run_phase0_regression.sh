@@ -48,6 +48,7 @@ run "PayPal sandbox exact-body signed webhook verification" node tests/test_payp
 run "EFTA468 source-verified public removal/restoration audit" node tests/test_efta468_publication_059.mjs
 run "GAH Instagram verified footer and mobile discoverability" node tests/test_instagram_profile_060.mjs
 run "GAH readership cross-platform share and Patreon discoverability" node tests/test_readership_distribution_063.mjs
+run "GAH 14-day nonduplicate editorial queue" node tests/test_readership_queue_065.mjs
 run "source-first guides hub" node tests/test_guides_hub.mjs
 run "Indexable research hubs in sitemap" node tests/test_sitemap_hubs.mjs
 run "DOJ-verified 2007 NPA chronology" node tests/test_npa_chronology_018.mjs
