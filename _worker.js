@@ -7079,7 +7079,8 @@ function isV3ShellHtml(body) {
 const GAH_X_PROFILE_URL = "https://x.com/DaneMilSpec";
 const GAH_REDDIT_PROFILE_URL = "https://www.reddit.com/user/Salt_Cry2674/";
 const GAH_INSTAGRAM_PROFILE_URL = "https://www.instagram.com/grokarchivehub/";
-const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL, GAH_INSTAGRAM_PROFILE_URL];
+const GAH_PATREON_PROFILE_URL = "https://www.patreon.com/cw/grokarchivehub";
+const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL, GAH_INSTAGRAM_PROFILE_URL, GAH_PATREON_PROFILE_URL];
 
 function v3CanonicalFromHtml(html) {
   return firstHtmlMatch(String(html || ""), /<link\b(?=[^>]*\brel=["']canonical["'])[^>]*\bhref=["']([^"']+)["']/i) || "";
@@ -7100,6 +7101,7 @@ function v3SocialProfilesHtml() {
       <a href="${GAH_X_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">X @DaneMilSpec</a>
       <a href="${GAH_REDDIT_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">Reddit u/Salt_Cry2674</a>
       <a href="${GAH_INSTAGRAM_PROFILE_URL}" target="_blank" rel="me noopener noreferrer" aria-label="GAH on Instagram, @grokarchivehub">Instagram @grokarchivehub</a>
+      <a href="${GAH_PATREON_PROFILE_URL}" target="_blank" rel="me noopener noreferrer" aria-label="Support the free GAH research archive on Patreon">Patreon · Support the research</a>
     </div>`;
 }
 
@@ -7120,6 +7122,7 @@ function v3IsShareableCanonical(canonical, html) {
   if (/^\/(?:search|privacy|terms|contact|about|membership|newsletter|corrections)(?:\/|$)/i.test(path)) return false;
   if (/^\/book-of-black\/(?:read|search)(?:\/|$)/i.test(path)) return false;
   return /^\/(?:investigations|evidence-briefs|dispatches|reading-room|document-autopsies|research|barak)(?:\/[^/]+)+$/i.test(path)
+    || /^\/news\/[^/]+$/i.test(path)
     || /^\/book-of-black(?:\/methodology|\/ledger)?$/i.test(path);
 }
 
