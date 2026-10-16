@@ -176,6 +176,7 @@ const FRONTDOOR_PATHS = new Set([
   "/dispatches/efta-files-guide",
   "/dispatches/august-8-attorney-log-colon-miro",
   "/dispatches/epstein-open-receipt-slots",
+  "/dispatches/phang-ecf59-oct16-2026",
   "/dispatches/fara-leads-explained",
   "/dispatches/how-to-read-the-barak-records",
   "/dispatches/barak-archive",
