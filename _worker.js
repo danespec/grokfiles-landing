@@ -81,6 +81,7 @@ const FRONTDOOR_PATHS = new Set([
   "/investigations/the-motherlode/us-runs",
   "/investigations/the-motherlode/phone-cdr",
   "/investigations/the-motherlode/survivor-accountability",
+  "/investigations/clinton-foundation-cgi-epstein-source-audit",
   "/investigations/epstein-december-6-7-2007-decision-gap",
   "/investigations/jpmorgan-nine-sars-epstein",
   "/investigations/andriesz-adfin-lutnick-paper-trail",
@@ -296,6 +297,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/the-motherlode/us-runs", "sensitive-investigative-recovery-collection-ad-free"],
   ["/investigations/the-motherlode/phone-cdr", "sensitive-telecom-research-collection-ad-free"],
   ["/investigations/the-motherlode/survivor-accountability", "sensitive-survivor-accountability-collection-ad-free"],
+  ["/investigations/clinton-foundation-cgi-epstein-source-audit", "sensitive-clinton-cgi-financial-audit-ad-free"],
   ["/investigations/epstein-december-6-7-2007-decision-gap", "sensitive-victim-rights-decision-gap-ad-free"],
   ["/investigations/jpmorgan-nine-sars-epstein", "sensitive-financial-compliance-investigation-ad-free"],
   ["/investigations/andriesz-adfin-lutnick-paper-trail", "sensitive-financial-whistleblower-investigation-ad-free"],
@@ -997,6 +999,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/investigations/the-motherlode/us-runs", "/investigations/the-motherlode/us-runs.html"],
   ["/investigations/the-motherlode/phone-cdr", "/investigations/the-motherlode/phone-cdr.html"],
   ["/investigations/the-motherlode/survivor-accountability", "/investigations/the-motherlode/survivor-accountability.html"],
+  ["/investigations/clinton-foundation-cgi-epstein-source-audit", "/investigations/clinton-foundation-cgi-epstein-source-audit.html"],
   ["/investigations/epstein-december-6-7-2007-decision-gap", "/investigations/epstein-december-6-7-2007-decision-gap.html"],
   ["/investigations/jpmorgan-nine-sars-epstein", "/investigations/jpmorgan-nine-sars-epstein.html"],
   ["/investigations/andriesz-adfin-lutnick-paper-trail", "/investigations/andriesz-adfin-lutnick-paper-trail.html"],
@@ -1095,6 +1098,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-10-11"],
   ["https://grokarchivehub.com/photos", "2026-10-07"],
   ["https://grokarchivehub.com/archive", "2026-10-07"],
+  ["https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit", "2026-10-16"],
   ["https://grokarchivehub.com/investigations/epstein-december-6-7-2007-decision-gap", "2026-10-07"],
   ["https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein", "2026-10-07"],
   ["https://grokarchivehub.com/investigations/andriesz-adfin-lutnick-paper-trail", "2026-10-07"],
@@ -4833,6 +4837,7 @@ function sanitizePublicSearchValue(value, depth = 0) {
 }
 
 const PUBLIC_EDITORIAL_SEARCH_ROWS = [
+  {"id":"GAH-CLINTON-CGI-072","title":"Clinton Foundation, CGI and Epstein: What the Financial and Organizational Records Establish","summary":"Proposed $1M Publicis wire instructions, $25K C.O.U.Q. grant record, distinct CGI and TerraMar activities, and 2014–17 revenue decline. Payment and causal gaps remain unresolved.","read_url":"/investigations/clinton-foundation-cgi-epstein-source-audit","url":"/investigations/clinton-foundation-cgi-epstein-source-audit","tags":["Clinton Foundation","Clinton Global Initiative","CGI","TerraMar","C.O.U.Q.","Ghislaine Maxwell","Epstein","Doug Band","Publicis","source audit"]},
   {id: "GAH-BARAK-RELEASE-BARAK_SAUDI_ROTHSCHILD_PROPOSAL_2015", title: "A Proposed $200 Million Saudi–Israeli Healthcare Fund, Documented but Not Funded", summary: "2015 correspondence describes Saudi investor recruitment, a proposed Luxembourg healthcare fund naming Ehud Barak, and preliminary Rothschild discussions. No funding or launch is proven.", read_url: "/investigations/barak-saudi-rothschild-proposal-2015", url: "/investigations/barak-saudi-rothschild-proposal-2015", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
   {id: "GAH-BARAK-RELEASE-BARAK_GADECO_FEE_2014", title: "The GADECO Deal Did Not End with Barak's November 3 Withdrawal", summary: "A November 3 withdrawal was followed by an amended contingent 3% finder-fee proposal and additional Chinese-buyer discussions. Neither a closing nor fee payment is proven.", read_url: "/investigations/barak-gadeco-fee-2014", url: "/investigations/barak-gadeco-fee-2014", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
   {id: "GAH-BARAK-RELEASE-BARAK_USHAKOV_2013_2015", title: "Barak's 2015 Putin Meeting Request: An Official Refusal, Not a Completed Appointment", summary: "A Russian presidential aide's office declined a June 2015 appointment request from Ehud Barak. Separate claims of an earlier Putin meeting require independent corroboration.", read_url: "/investigations/barak-ushakov-2013-2015", url: "/investigations/barak-ushakov-2013-2015", tags: ["Ehud Barak","Barak source audit","2026 October publication"]},
