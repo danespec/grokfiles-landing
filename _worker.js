@@ -63,6 +63,8 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/news/epstein-wall-street-records-act-hr10820-2026",
+  "/news/seventeen-attorneys-general-efta-ii-october-2026",
   "/news/bank-of-america-aml-penalties-epstein-settlement-2026",
   "/news/doj-march-2025-review-emails-released",
   "/news/phang-fbi-notes-in-camera-october-16",
@@ -285,6 +287,8 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/news", "original-editorial-news-desk-ad-free"],
+  ["/news/epstein-wall-street-records-act-hr10820-2026", "sensitive-public-records-news-ad-free"],
+  ["/news/seventeen-attorneys-general-efta-ii-october-2026", "sensitive-public-records-news-ad-free"],
   ["/news/bank-of-america-aml-penalties-epstein-settlement-2026", "sensitive-public-records-news-ad-free"],
   ["/news/doj-march-2025-review-emails-released", "sensitive-public-records-news-ad-free"],
   ["/news/phang-fbi-notes-in-camera-october-16", "sensitive-public-records-news-ad-free"],
@@ -1004,6 +1008,8 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/guides/epstein-flight-logs-doj", "/guides/epstein-flight-logs-doj.html"],
   ["/guides/epstein-2007-draft-federal-indictment", "/guides/epstein-2007-draft-federal-indictment.html"],
   ["/news", "/news.html"],
+  ["/news/epstein-wall-street-records-act-hr10820-2026", "/news/epstein-wall-street-records-act-hr10820-2026.html"],
+  ["/news/seventeen-attorneys-general-efta-ii-october-2026", "/news/seventeen-attorneys-general-efta-ii-october-2026.html"],
   ["/news/bank-of-america-aml-penalties-epstein-settlement-2026", "/news/bank-of-america-aml-penalties-epstein-settlement-2026.html"],
   ["/news/doj-march-2025-review-emails-released", "/news/doj-march-2025-review-emails-released.html"],
   ["/news/phang-fbi-notes-in-camera-october-16", "/news/phang-fbi-notes-in-camera-october-16.html"],
@@ -1123,7 +1129,10 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/epstein-black-book-redacted-doj", "2026-10-13"],
   ["https://grokarchivehub.com/guides/epstein-flight-logs-doj", "2026-10-13"],
   ["https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment", "2026-10-13"],
-  ["https://grokarchivehub.com/news", "2026-10-15"],
+  ["https://grokarchivehub.com/news", "2026-10-16"],
+  ["https://grokarchivehub.com/news/epstein-wall-street-records-act-hr10820-2026", "2026-10-16"],
+  ["https://grokarchivehub.com/news/seventeen-attorneys-general-efta-ii-october-2026", "2026-10-16"],
+
   ["https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026", "2026-10-15"],
   ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
   ["https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16", "2026-10-12"],
@@ -5121,6 +5130,8 @@ function sanitizePublicSearchValue(value, depth = 0) {
 }
 
 const PUBLIC_EDITORIAL_SEARCH_ROWS = [
+  {id: "GAH-NEWS-067-1", title: "Bipartisan Lawmakers Introduce Epstein Wall Street Records Act", summary: "H.R. 10820 proposes disclosure of supervisory records and regulator investigations. No automatic sanctions or new criminal findings arise from its introduction.", read_url: "/news/epstein-wall-street-records-act-hr10820-2026", url: "/news/epstein-wall-street-records-act-hr10820-2026", tags: ["news", "Congress", "Epstein", "EFTA", "legislation", "financial accountability"]},
+  {id: "GAH-NEWS-067-2", title: "17 State Attorneys General Urge Congress to Advance Epstein Files Transparency Act II", summary: "Seventeen state attorneys general signed an October 15 letter supporting H.R. 9694 / S. 5005. The requested enforcement powers have not been enacted.", read_url: "/news/seventeen-attorneys-general-efta-ii-october-2026", url: "/news/seventeen-attorneys-general-efta-ii-october-2026", tags: ["news", "Congress", "states", "EFTA II", "attorneys general", "Phang"]},
   {id: "GAH-NEWS-066", title: "Bank of America Faces $1.2B AML Penalty After Separate Epstein Settlement", summary: "A new $1.2 billion AML penalty and $11.66 million sanctions settlement are legally separate from the bank’s August $72.5 million Epstein-survivor civil settlement.", read_url: "/news/bank-of-america-aml-penalties-epstein-settlement-2026", url: "/news/bank-of-america-aml-penalties-epstein-settlement-2026", tags: ["news","banking","Bank of America","AML","FinCEN","Epstein settlement","civil litigation"]},
   {id: "GAH-NEWS-001-1", title: "New DOJ Release Documents March 2025 Epstein File Review Instructions", summary: "A 41-page DOJ disclosure identifies instructions to flag public figures and protect victim identities. The approved review plan remains partly withheld.", read_url: "/news/doj-march-2025-review-emails-released", url: "/news/doj-march-2025-review-emails-released", tags: ["news","DOJ","court","GADECO","source audit"]},
   {id: "GAH-NEWS-001-2", title: "Judge Orders Redacted FBI Notes for Private Review by October 16", summary: "A signed October 9 order requires three sets of handwritten FBI notes to be submitted to the judge. It does not require public release.", read_url: "/news/phang-fbi-notes-in-camera-october-16", url: "/news/phang-fbi-notes-in-camera-october-16", tags: ["news","DOJ","court","GADECO","source audit"]},
@@ -7898,6 +7909,8 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   const escapedSocialImage = escapeHtml(socialImage);
   // NEWS-DESK-001: these image-free editorial briefs must not inherit an unrelated featured-story photo.
   const imageFreeNewsDesk = policyPath === "/news" || [
+    "/news/epstein-wall-street-records-act-hr10820-2026",
+    "/news/seventeen-attorneys-general-efta-ii-october-2026",
     "/news/bank-of-america-aml-penalties-epstein-settlement-2026",
     "/news/doj-march-2025-review-emails-released",
     "/news/phang-fbi-notes-in-camera-october-16",
@@ -8123,7 +8136,7 @@ async function assetJson(request, env, assetPath) {
 
 function rssEligibleEditorialPath(path) {
   const clean = cleanPath(path);
-  if (clean === "/news/bank-of-america-aml-penalties-epstein-settlement-2026" || clean === "/news/doj-march-2025-review-emails-released" || clean === "/news/phang-fbi-notes-in-camera-october-16" || clean === "/news/gadeco-chinese-consortium-declined" || clean === "/news/efta00000468-removal-restoration-audit") return true;
+  if (clean === "/news/epstein-wall-street-records-act-hr10820-2026" || clean === "/news/seventeen-attorneys-general-efta-ii-october-2026" || clean === "/news/bank-of-america-aml-penalties-epstein-settlement-2026" || clean === "/news/doj-march-2025-review-emails-released" || clean === "/news/phang-fbi-notes-in-camera-october-16" || clean === "/news/gadeco-chinese-consortium-declined" || clean === "/news/efta00000468-removal-restoration-audit") return true;
   if (/^\/evidence-briefs\/[^/]+$/.test(clean)) return true;
   if (/^\/document-autopsies\/[^/]+$/.test(clean)) return true;
   if (/^\/dispatches\/[^/]+$/.test(clean)) return true;
