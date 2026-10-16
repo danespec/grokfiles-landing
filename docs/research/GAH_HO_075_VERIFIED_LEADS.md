@@ -28,7 +28,7 @@ Source pages:
 
 A separate **February–May 2016** exchange, identified as **EFTA00827905**, describes a proposed **$110,000 Gratitude America check** to independent nonprofit **Verse Video Education**. Correspondence asks that the check not be deposited until receipt of IRS nonprofit recognition; a later message seeks Epstein's approval for the recipient to cash it. **Gratitude America's 2016 tax return reports a $110,000 grant** to Verse Video; **Harvard's May 2020 investigation (footnote 6)** explicitly says that this gift was *not made to Harvard* and was excluded from its direct-gift review. Donor tax-return reporting is stronger evidence than a mere pledge, but **original clearing records have not been inspected**.
 
-A **December 2016 year-end letter** attributed to New (HOUSE_OVERSIGHT_019205) calls the money **“100K”**, while donor-side reporting identifies **$110,000**. That may be approximate shorthand or a different accounting convention; it does **not establish a missing $10,000**. Keep as an accounting and denomination reconciliation question.
+The independently inspected **HOUSE_OVERSIGHT_019205** image describes a contribution Epstein **“made last year”** to Verse Video Education and says **“100K makes so much possible.”** Gratitude America separately reported **$110,000 in its 2016 filing**. The letter names no foundation or transaction identifier for its earlier-described gift, and the relative date raises a separate-payment possibility. **There is no evidence that these figures describe the same transfer or establish a $10,000 shortfall.** Keep as an unresolved transaction join, not a financial discrepancy finding. Source image: https://files.epstein.media/HOUSE_OVERSIGHT_019205.jpg.
 
 **Critical separation:** the **2015 Leon Black gift** (specific amount and vehicle not independently established here) is **not automatically the same money** as the **2016 Gratitude America $110,000 grant**. Nor does Harvard provision of space imply the latter grant was a Harvard donation. These documents do not establish complicity in Epstein's crimes by New, Harvard, Black or the nonprofit.
 
@@ -62,7 +62,7 @@ Original page scans:
 | Apollo charter payments mentioned in model = cash collected | Not established; no invoicing or settlement record |
 | Named .xlsx attachment = workbook contents reviewed | Not established; attachment name is visible, bytes absent |
 | 2015 Black gift = 2016 Gratitude America grant | Different year and described source; no matching transaction |
-| Donor 990 $110K vs letter “100K” = money missing | Not established; may be shorthand |
+| Donor 990 $110K and a letter describing prior-year “100K” = one transaction | Not established; the letter may refer to a different gift |
 | Maxwells' response strategy = underlying allegations disproved | Not established |
 | Same Jet Aviation name in 2005 and 2017 = one aircraft/event | Not established |
 
