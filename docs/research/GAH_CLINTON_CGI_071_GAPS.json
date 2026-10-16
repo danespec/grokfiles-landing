@@ -1,0 +1,44 @@
+{
+  "mission": "GAH-CLINTON-CGI-071",
+  "prepared": "2026-10-16",
+  "state": "INTERIM_SOURCE_LEDGER_NOT_PUBLISHED",
+  "link_to_prior": "https://grokarchivehub.com/document-autopsies/doug-band-transcript",
+  "high_priority_unknowns": [
+    {
+      "id": "CGI-U01",
+      "topic": "2004 Publicis $1M",
+      "known": "Wire instructions in EFTA00579182 and EFTA02333012",
+      "unverified": "Actual debit/credit, ultimate source of funds, payer, scope",
+      "primary": "https://yirah.fi/epstein/en/document/EFTA00579182"
+    },
+    {
+      "id": "CGI-U02",
+      "topic": "2006 C.O.U.Q. grant",
+      "known": "Donor-side IRS 990-PF names $25,000 unrestricted July 18 2006",
+      "unverified": "Recipient statement or check clearing",
+      "primary": "https://epstein-data.com/EFTA00224262"
+    },
+    {
+      "id": "CGI-U03",
+      "topic": "2005 CGI conception",
+      "known": "2007 lawyers' claim; Maxwell 2025 recollection; Band 2026 conflicting recollection",
+      "unverified": "Original founding minutes, Publicis contract, staffing/board role",
+      "primary": "https://oversight.house.gov/wp-content/uploads/2026/07/Band-Final-Transcript-7.16.26.pdf"
+    },
+    {
+      "id": "CGI-U04",
+      "topic": "2013 TerraMar CGI commitment",
+      "known": "Public 2013 commitment and later media confirmation, TerraMar independent IRS returns",
+      "unverified": "Native CGI commitment receipt, funders, metrics, approval chain",
+      "primary": "https://projects.propublica.org/nonprofits/organizations/455091884"
+    },
+    {
+      "id": "CGI-U05",
+      "topic": "2016 CGI annual pause",
+      "known": "2016 Foundation announcement and 2022 annual-meeting restart",
+      "unverified": "Archival 2017 WARN, program-specific funding rollforward and annual donor reconciliation",
+      "primary": "https://www.p2016.org/clinton/clintonfoundation0816pr.html"
+    }
+  ],
+  "release_policy": "No live story or social until verified; never infer illegal motives from associations."
+}
