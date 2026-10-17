@@ -1,0 +1,29 @@
+event_date,payer,recipient_descriptive,usd,classification,bank_bates_locator,source_pdf_page_index_0based,source_document,source_type
+2015-10-14,BV70 LLC,Gratitude America MMDA,10000000,external_capital_in,DB-SDNY-0004999,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-01-07,Gratitude America MMDA,Moskowitz Foundation,50000,external_charity_out,DB-SDNY-0005198,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-01-21,Gratitude America MMDA,Gratitude America FirstBank Puerto Rico,50000,same_entity_transfer_out,DB-SDNY-0005198,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-01-29,Gratitude America MMDA,Melanoma Research Alliance,225000,external_charity_out,DB-SDNY-0005198,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-02-03,Gratitude America MMDA,Gratitude America Checking,150000,same_entity_transfer_out,DB-SDNY-0005264,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-03-02,Gratitude America MMDA,Gratitude America Morgan Stanley/Citibank,5000000,same_entity_transfer_out,DB-SDNY-0005334,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-03-08,Gratitude America MMDA,Gratitude America Checking,250000,same_entity_transfer_out,DB-SDNY-0005334,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-03-08,Gratitude America MMDA,Gratitude America Checking,250000,same_entity_transfer_out,DB-SDNY-0005334,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-04-06,Gratitude America MMDA,Gratitude America FirstBank Puerto Rico,250000,same_entity_transfer_out,DB-SDNY-0005401,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-07-12,Gratitude America MMDA,Moskowitz Foundation,50000,external_charity_out,DB-SDNY-0005605,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-07-14,Gratitude America MMDA,Gratitude America Morgan Stanley/Citibank,2000000,same_entity_transfer_out,DB-SDNY-0005605,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2016-07-19,Gratitude America MMDA,Gratitude America Morgan Stanley/Citibank,500000,same_entity_transfer_out,DB-SDNY-0005605,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-01-20,Gratitude America MMDA,Gratitude America Checking,200000,same_entity_transfer_out,DB-SDNY-0006006,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-03-06,Gratitude America MMDA,Gratitude America Checking,250000,same_entity_transfer_out,DB-SDNY-0006165,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-06-01,Gratitude America MMDA,Gratitude America Checking,250000,same_entity_transfer_out,DB-SDNY-0006333,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-06-07,Gratitude America MMDA,Gratitude America Checking,200000,same_entity_transfer_out,DB-SDNY-0006333,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-10-02,Gratitude America MMDA,Cancer Research Wellness Institute,25000,external_charity_out,DB-SDNY-0006658,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-11-01,Gratitude America MMDA,Gratitude America Checking,50000,same_entity_transfer_out,DB-SDNY-0006739,7,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-11-01,Gratitude America MMDA,Gratitude America Checking,100000,same_entity_transfer_out,DB-SDNY-0006739,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-11-13,Gratitude America MMDA,Gratitude America Checking,100000,same_entity_transfer_out,DB-SDNY-0006739,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-12-06,Gratitude America MMDA,Moskowitz Foundation,50000,external_charity_out,DB-SDNY-0006822,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-12-11,Gratitude America MMDA,Gratitude America FirstBank Puerto Rico,150000,same_entity_transfer_out,DB-SDNY-0006822,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2017-12-11,Gratitude America Checking,Gratitude America MMDA,2500000,same_entity_transfer_in,DB-SDNY-0006822,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2018-01-30,Gratitude America MMDA,Gratitude America Checking,2000000,same_entity_transfer_out,DB-SDNY-0006907,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2018-02-28,Gratitude America MMDA,Cancer Research Wellness Institute,25000,external_charity_out,DB-SDNY-0006991,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2018-04-02,Gratitude America MMDA,NPO Baleto Teatras,18493,external_charity_out,DB-SDNY-0007170,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2018-09-17,Gratitude America MMDA,VSJ Baleto Teatras,10000,external_charity_out,DB-SDNY-0007629,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
+2019-01-10,Gratitude America MMDA,Gratitude America Checking,314876,same_entity_transfer_out,DB-SDNY-0007994,8,EFTA00080260,bank-derived legal exhibit; not raw account statement
