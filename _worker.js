@@ -521,7 +521,6 @@ const UTILITY_NOINDEX_EXACT_PATHS = new Map([
   ["/grok-regression", "public-regression-console-utility"],
   // GAH-ADSENSE-REMEDIATION-002 Phase A: shells whose file meta or role is noindex,
   // and which routePolicy previously rewrote to index,follow.
-  ["/forum", "private-communication-shell"],
   ["/tips", "source-submission-utility-page"],
   ["/explore", "raw-tool-directory"],
   ["/grok-command-v4", "search-console-utility"],
@@ -1103,6 +1102,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/forum", "2026-10-18"],
   ["https://grokarchivehub.com/community", "2026-10-18"],
   ["https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019", "2026-10-18"],
   ["https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang", "2026-10-11"],
