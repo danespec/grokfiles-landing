@@ -1,6 +1,6 @@
 # GAH-HO-079 — Follow the money: bank accounts, investment, France and IRS review
 
-**Research date:** October 17, 2026 · **Status:** SOURCE-VERIFIED RESEARCH ONLY; no public article, criminal finding, social post or Cloudflare deployment.
+**Research date:** October 17, 2026 · **Publication status (updated October 18):** Public source-audit article authorized and published at [https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019](https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019). Original Oct. 17 research-only gate is superseded for website publication only; this is not permission to assert a criminal finding or publish social posts.
 **Parent:** [Issue #103](https://github.com/danespec/grokfiles-landing/issues/103) · [HO-078](https://github.com/danespec/grokfiles-landing/blob/main/docs/research/GAH_HO_078_CONSULTING_RECONCILIATION.md)
 **Entity:** Gratitude America Ltd., EIN 66-0789697; do not confuse with Gratitude America Inc., EIN 45-3969258.
 
@@ -68,4 +68,4 @@ The companion CSV 'GAH_HO_079_EXHIBIT_E_TRANSCRIBED_ROWS.csv' contains **all 28 
 5. 2016–18 consulting payment reconciliation ($545K Form 990-PF expense category), Forms 1099, contracts and bank postings; original EFTA01345259/290 redaction comparison still unverified.
 6. August 2015 unverified $5M letter and missing 'Odysseus Profit Model.xlsx' remain independent open gaps.
 
-**Non-findings:** No proof here of illicit proceeds, tax fraud, money laundering, illegal donor influence, unlawful conduct by recipients, or deliberate DOJ redaction changes. A SAR is a suspicion report, not proof. A name in correspondence is not proof of criminal knowledge. Do not republish survivor PII or private banking data. This research does **not** authorize an Instagram/X post or production deploy.
+**Non-findings:** No proof here of illicit proceeds, tax fraud, money laundering, illegal donor influence, unlawful conduct by recipients, or deliberate DOJ redaction changes. A SAR is a suspicion report, not proof. A name in correspondence is not proof of criminal knowledge. Do not republish survivor PII or private banking data. The October 18 user authorization permits the specified GAH website article and release deployment; social-network publication remains a separate decision.

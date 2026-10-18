@@ -1,0 +1,143 @@
+{
+  "schema": "gah_source_manifest_v1",
+  "publication_id": "GAH-HO-079",
+  "public_url": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+  "published": "2026-10-18",
+  "entity": {
+    "name": "Gratitude America Ltd.",
+    "ein": "66-0789697",
+    "distinguish_from": "Gratitude America Inc. (EIN 45-3969258)"
+  },
+  "source_grade": "Source-backed documentary audit with identified missing bank statements, SARs, primary French request and IRS forensic enclosure.",
+  "transaction_ledger": {
+    "path": "/evidence-data/gratitude-america-money-trail-2015-2019/transaction-ledger.csv",
+    "row_count": 28,
+    "coverage": "Exhibit E of EFTA00080260 only: transactions on the named money-market deposit account, not complete grant/payment history.",
+    "classification_totals": [
+      {
+        "year": "2015",
+        "category": "external_capital_in",
+        "amount_usd": 10000000
+      },
+      {
+        "year": "2016",
+        "category": "external_charity_out",
+        "amount_usd": 325000
+      },
+      {
+        "year": "2016",
+        "category": "same_entity_transfer_out",
+        "amount_usd": 8450000
+      },
+      {
+        "year": "2017",
+        "category": "external_charity_out",
+        "amount_usd": 75000
+      },
+      {
+        "year": "2017",
+        "category": "same_entity_transfer_in",
+        "amount_usd": 2500000
+      },
+      {
+        "year": "2017",
+        "category": "same_entity_transfer_out",
+        "amount_usd": 1300000
+      },
+      {
+        "year": "2018",
+        "category": "external_charity_out",
+        "amount_usd": 53493
+      },
+      {
+        "year": "2018",
+        "category": "same_entity_transfer_out",
+        "amount_usd": 2000000
+      },
+      {
+        "year": "2019",
+        "category": "same_entity_transfer_out",
+        "amount_usd": 314876
+      }
+    ],
+    "disclosure": "CSV omits account numbers, routing numbers, signatures and private contact data; names are generalized; Bates locations refer to public documents."
+  },
+  "sources": [
+    {
+      "id": "EFTA00080260",
+      "type": "bank-derived transaction schedule",
+      "title": "Exhibits A and E; nine pages, pages 8–9 for MMDA movements",
+      "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00080260.pdf",
+      "sha256": "0286422265c4305e8d979823b9601f58e4aecb24806879ec5a9ad05ae1c143b2",
+      "verification": "PDF downloaded and SHA-256 independently matched to Oct. 17 research fingerprint. Not the unabridged bank ledger."
+    },
+    {
+      "id": "SEC-Dechert-2021",
+      "type": "SEC-filed external counsel review",
+      "title": "Apollo Conflicts Committee, Dechert LLP, January 22, 2021, section VI and note 4",
+      "url": "https://www.sec.gov/Archives/edgar/data/1411494/000119312521016405/d118102dex991.htm",
+      "verification": "Public SEC exhibit; separate corroboration of October 2015 $10M donation. Not SEC or IRS adjudication."
+    },
+    {
+      "id": "EFTA00643676",
+      "type": "released email",
+      "title": "March 2, 2016 bank wire and broker trade-report exchange",
+      "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00643676.pdf",
+      "sha256": "8f1dd609eed57450cea47855547d474d7f5695342d1d58bfdfcf000a11d7574c",
+      "verification": "Original public-release PDF accessed and text inspected; not a brokerage statement."
+    },
+    {
+      "id": "EFTA00704168",
+      "type": "released email",
+      "title": "March 2016 EDIT security price and unrealized-gain discussion",
+      "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00704168.pdf",
+      "sha256": "1bd46551b890e412968f20a6f7f4289174cf84def36a01d4c969ffe1e0ed89c5",
+      "verification": "Original public-release PDF accessed and text inspected."
+    },
+    {
+      "id": "EFTA00153569–571",
+      "type": "released FBI/FinCEN correspondence",
+      "title": "January 17 to March 6, 2020 French TRACFIN / Egmont inquiry and SAR references",
+      "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00153569.pdf",
+      "sha256": "9a0f6e67701d852cf0c6c809765d8127560f8120463fdc5affdd2afbd12f528e",
+      "verification": "Three-page original public-release PDF accessed and text inspected. SARs and response attachment not obtained."
+    },
+    {
+      "id": "EFTA00128841",
+      "type": "released FBI import form",
+      "title": "April 26, 2021 reference to IRS contract forensic accountant’s review",
+      "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00128841.pdf",
+      "sha256": "a8c6758fa877312f0f80d5397ea430e31f545a0c4b1453b4a9b6bbc17b2c2d01",
+      "verification": "One-page original public-release PDF accessed and text inspected. Attached accountant’s report not obtained."
+    },
+    {
+      "id": "990-PF-2016",
+      "type": "filed tax return",
+      "title": "Gratitude America Ltd. 2016 Form 990-PF, part I and grants schedule",
+      "url": "https://www.foundationsearch.com/990/ARCHIVE/6/GRATITUDE%20AMERICA%20LTD%202016%20660789697.PDF",
+      "verification": "Nineteen-page PDF accessed; page 1 records $580,000 grants paid, page 11 repeats the total, recipient schedule on page 14."
+    },
+    {
+      "id": "990-PF-2018",
+      "type": "filed tax return index",
+      "title": "Gratitude America Ltd. 2018 Form 990-PF, IRS-derived ProPublica index and PDF link",
+      "url": "https://projects.propublica.org/nonprofits/organizations/660789697",
+      "verification": "Original 2018 990-PF reviewed for earlier GAH HO-079 research. ProPublica index independently checked for year/entity; granular $891,440 grant total comes from the prior original-form analysis; original PDF download unavailable during this publication pass."
+    },
+    {
+      "id": "GAH-HO-079",
+      "type": "GAH source research ledger",
+      "title": "Research reconciliation and methodological limits, October 17, 2026",
+      "url": "https://github.com/danespec/grokfiles-landing/blob/main/docs/research/GAH_HO_079_FINANCIAL_FLOW_AND_FIU_LEDGER.md",
+      "verification": "Source-reconciled research; not a court verdict, forensic accountant’s report, or proof of criminal wrongdoing."
+    }
+  ],
+  "legal_limit": "No proof of tax fraud, money laundering, illicit proceeds, wrongdoing by recipients, or convictions. SAR references are intelligence reports of suspicion, not findings. French €50,000 inquiry cannot be transaction-matched to the separately reported 2018 $57,897 grant.",
+  "open_receipts": [
+    "Full checking/Morgan Stanley/FirstBank account statements and actual checks",
+    "French €50,000 wire advice and beneficiary receipt",
+    "Any legally releasable underlying Egmont exchange/response materials (not protected SAR contents)",
+    "IRS forensic-accountant enclosure, investigative disposition or court finding",
+    "Correct transaction-level 2018 grant reconciliation"
+  ]
+}
