@@ -1,0 +1,47 @@
+title: "[Source check] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask one narrow, verifiable question. Do not allege guilt from a document mention or submit private or protected records. Public GitHub posts are visible immediately and require a GitHub login.
+  - type: input
+    id: investigation
+    attributes:
+      label: GAH investigation URL or source ID
+      placeholder: https://grokarchivehub.com/investigations/...
+    validations:
+      required: true
+  - type: input
+    id: public-primary
+    attributes:
+      label: Original public source URL or document number
+      placeholder: EFTA / ECF / other source
+    validations:
+      required: true
+  - type: textarea
+    id: what-seen
+    attributes:
+      label: Direct observation with date and page
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Narrow verification question
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Alternative explanations, unknowns and privacy limits
+    validations:
+      required: true
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Public discussion safeguards
+      options:
+        - label: No anonymous-victim identity, private contact or bank details, or unlawful/nonpublic material appears here.
+          required: true
+        - label: I will not present unverified allegations as established findings.
+          required: true

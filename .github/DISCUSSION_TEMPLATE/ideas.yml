@@ -1,0 +1,32 @@
+title: "[Archive improvement] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest improvements to GAH research, search, evidence readers or accessibility. This public forum is not a source-protection channel. Do not include credentials or confidential evidence.
+  - type: input
+    id: page
+    attributes:
+      label: Affected GAH page or feature
+      placeholder: https://grokarchivehub.com/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Reproducible issue or requested improvement
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Proposed change and supporting public sources
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public forum privacy
+      options:
+        - label: I have removed private data, protected material and credentials.
+          required: true

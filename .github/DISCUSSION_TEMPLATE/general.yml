@@ -1,0 +1,45 @@
+title: "[Records] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Public source discussions only.** Do not include survivor identities, unredacted protected records, bank/account numbers, private contacts, protected SARs, unlawful files or unsupported assertions of wrongdoing.
+        This is a public GitHub Discussion visible immediately after posting, not confidential source intake.
+  - type: input
+    id: primary-source
+    attributes:
+      label: Public original source URL
+      description: Link to an official filing or lawfully released primary record, rather than an unsupported repost.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: document-id
+    attributes:
+      label: EFTA / Bates / ECF / public case number
+      placeholder: EFTA00080260, DB-SDNY-0004999, or 1:23-cv-06418
+    validations:
+      required: true
+  - type: textarea
+    id: record-fact
+    attributes:
+      label: What the document actually establishes
+      description: State the date, page and a narrow observation. Keep interpretation separate.
+    validations:
+      required: true
+  - type: textarea
+    id: open-question
+    attributes:
+      label: What remains uncertain
+      description: State competing interpretations, missing records and limitations.
+    validations:
+      required: true
+  - type: checkboxes
+    id: protection
+    attributes:
+      label: Public record and privacy safeguards
+      options:
+        - label: I excluded survivor/private-person identifying information, protected financial details, nonpublic SARs and unlawful material.
+          required: true
+        - label: I understand this is public and will be visible before any human moderation.
+          required: true
