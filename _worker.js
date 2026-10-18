@@ -293,7 +293,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/news/phang-docket-watch/methodology", "sensitive-docket-methodology-ad-free"],
   ["/news/phang-docket-watch/source-status", "sensitive-docket-source-status-ad-free"],
   ["/reading-room", "internal-workbench"],
-  ["/forum", "private-communication-risk"],
+  ["/forum", "public-source-forum-gateway-ad-free"],
   ["/login", "login-flow"],
   ["/account", "account-flow"],
   ["/membership", "membership-checkout-separation"],
