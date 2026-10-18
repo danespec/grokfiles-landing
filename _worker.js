@@ -63,6 +63,7 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/community",
   "/investigations/gratitude-america-money-trail-2015-2019",
   "/",
   "/start",
@@ -281,6 +282,7 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/community", "source-first-community-intake-ad-free"],
   ["/investigations/gratitude-america-money-trail-2015-2019", "sensitive-financial-records-investigation-ad-free"],
   ["/entities", "sensitive-entity-index-ad-free"],
   ["/search", "search-results-finding-aid"],
@@ -991,6 +993,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/community", "/community.html"],
   ["/investigations/gratitude-america-money-trail-2015-2019", "/investigations/gratitude-america-money-trail-2015-2019.html"],
   ["/investigations/fbi-vault-redaction-chronology-phang", "/investigations/fbi-vault-redaction-chronology-phang.html"],
   ["/dispatches/epstein-source-watch-october-2026", "/dispatches/epstein-source-watch-october-2026.html"],
@@ -1100,6 +1103,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/community", "2026-10-18"],
   ["https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019", "2026-10-18"],
   ["https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang", "2026-10-11"],
   ["https://grokarchivehub.com/dispatches/epstein-source-watch-october-2026", "2026-10-11"],
