@@ -31,3 +31,6 @@ Revert the GAH forum gateway release through Pages, remove link if social modera
 - /forum accurately discloses public posting, GitHub identity, privacy limits, rate-control pilot.
 - Former contact email composer still functions and no source tips are auto-published.
 - Website routes indexable when intended, ads excluded. No duplicate/imaginary Reddit/Discord links.
+
+## Search indexing correction
+The legacy route table still contained /forum under UTILITY_NOINDEX_EXACT_PATHS (private-communication-shell). This is now a public editorial gateway and is removed from that old noindex treatment. /forum is added to CORE_SITEMAP_ENTRIES while retaining AD-EXCLUDE. Verify actual live policy headers and meta robots after deployment.
