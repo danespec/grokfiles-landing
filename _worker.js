@@ -63,6 +63,7 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/guides",
   "/investigations/doj-oip-epstein-review-public-figure-flags-2026",
   "/investigations/doj-oip-epstein-review-public-figure-flags-2026",
   "/internet-vs-receipts",
@@ -295,6 +296,8 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/guides", "curated-research-guide-directory-ad-free"],
+  ["/news", "curated-newsroom-directory-ad-free"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "doj-oip-source-audit-ad-free"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "source-first-public-figure-foia-audit-ad-free"],
   ["/internet-vs-receipts", "source-first-explainer-ad-free"],
@@ -562,7 +565,6 @@ const UTILITY_NOINDEX_EXACT_PATHS = new Map([
   ["/projects", "thin-duplicate-investigation-hub"],
   ["/timeline-reconstructions", "redundant-timeline-card-hub"],
   ["/research/evidence/calendar-epstein", "query-lane-finding-aid"],
-  ["/news", "phang-news-backing-files-absent"],
   // GAH-ADSENSE-REMEDIATION-006A: Thomas approved noindex for these two review pages.
   ["/contradiction-ledger", "ledger-single-entry-not-standalone-result"],
   ["/open-questions", "open-questions-hub-not-standalone-result"]
@@ -1018,6 +1020,8 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/guides", "/guides.html"],
+  ["/news", "/news.html"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "/investigations/doj-oip-epstein-review-public-figure-flags-2026.html"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "/investigations/doj-oip-epstein-review-public-figure-flags-2026.html"],
   ["/internet-vs-receipts", "/internet-vs-receipts.html"],
@@ -1141,6 +1145,8 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/news", "2026-10-19"],
+  ["https://grokarchivehub.com/guides", "2026-10-19"],
   ["https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026", "2026-10-12"],
   ["https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026", "2026-10-12"],
   ["https://grokarchivehub.com/internet-vs-receipts", "2026-10-19"],
@@ -18577,7 +18583,9 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/news") {
-      return serveNewsIndex(request, env);
+      // GAH-SEO-001: full editorial landing replaces the thin Phang-only page.
+      // /news/phang-docket-watch and its review gates are preserved.
+      return serveFrontdoorEnhanced(request, env, "/news.html");
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/news/phang-docket-watch") {
