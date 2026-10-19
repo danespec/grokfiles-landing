@@ -1,0 +1,225 @@
+{
+  "schema": "gah_forum_topics_v1",
+  "generated": "2026-10-18",
+  "repository": "danespec/grokfiles-landing",
+  "forum": "https://grokarchivehub.com/forum",
+  "discussion_count_verified": 22,
+  "existing": [
+    120,
+    121,
+    122,
+    123
+  ],
+  "new": [
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143
+  ],
+  "groups": [
+    {
+      "name": "Financial trails and bank records",
+      "discussion_numbers": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "name": "The 2007 plea deal and court records",
+      "discussion_numbers": [
+        132,
+        133,
+        134,
+        135
+      ]
+    },
+    {
+      "name": "MCC detention and FBI releases",
+      "discussion_numbers": [
+        136,
+        137
+      ]
+    },
+    {
+      "name": "International correspondence and proposals",
+      "discussion_numbers": [
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "name": "Documentary source checks",
+      "discussion_numbers": [
+        142,
+        143
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "title": "[Source Check] JPMorgan's nine SARs — reconcile reporting dates and totals",
+      "category": "Q&A",
+      "topic": "/investigations/jpmorgan-nine-sars-epstein",
+      "number": 126,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/126",
+      "question": "Which original public filings or dated supervisory records establish precisely when each relevant concern was escalated, reported, and acted on?"
+    },
+    {
+      "title": "[Source Check] 4,725 JPMorgan wires — why the $1.1B and $1.283B figures differ",
+      "category": "Q&A",
+      "topic": "/evidence-briefs/jpmorgan-4725-wires-1-1-billion-explainer",
+      "number": 127,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/127",
+      "question": "What original publicly released source most clearly defines the relevant date windows, account populations, and transaction types for each total?"
+    },
+    {
+      "title": "[Source Check] Black Family Partners — source of the November 2012 $5.5M payment",
+      "category": "Q&A",
+      "topic": "/investigations/black-family-partners-source-of-funds-gap",
+      "number": 128,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/128",
+      "question": "Is there a lawful public original statement, wire advice, or contemporaneous account entry that traces the specific $5.5 million balance before the November 30 debit?"
+    },
+    {
+      "title": "[Source Check] Black Family Partners — the $18M draft versus $5.5M closing",
+      "category": "Q&A",
+      "topic": "/investigations/black-family-partners-18m-to-5-5m-repricing",
+      "number": 129,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/129",
+      "question": "Which public emails, contract versions, appraisal materials or closing schedules document why the valuations changed and whether any required independent valuation took place?"
+    },
+    {
+      "title": "[Source Check] Wyden's missing Deutsche Bank FD-302 — what is actually public?",
+      "category": "Q&A",
+      "topic": "/investigations/wyden-banker-302-deutsche-interviews",
+      "number": 130,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/130",
+      "question": "Can a public release catalog, Bates index, transmittal, or authenticated agency response identify the separate FD-302 without relying on name inference?"
+    },
+    {
+      "title": "[Source Check] Coinbase position — reconcile $3.001M cost with later $15M exit",
+      "category": "Q&A",
+      "topic": "/evidence-briefs/coinbase-return-first-15m-exit",
+      "number": 131,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/131",
+      "question": "Can a publicly released contemporaneous bank debit, subscription record, or investment confirmation identify the initial funding source independently of the eventual proceeds?"
+    },
+    {
+      "title": "[Source Check] December 6–7, 2007 — who authorized the victim-letter hold?",
+      "category": "Q&A",
+      "topic": "/investigations/epstein-december-6-7-2007-decision-gap",
+      "number": 132,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/132",
+      "question": "Does a public original email, OPR exhibit, routing instruction, signed order, or sworn testimony identify who made the final decision and when?"
+    },
+    {
+      "title": "[Source Check] July 19–31, 2007 — which record explains the federal case's pivot?",
+      "category": "Q&A",
+      "topic": "/investigations/epstein-july-2007-decision-gap",
+      "number": 133,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/133",
+      "question": "What original dated record explains the choice of proposed state resolution terms and the specific decision makers behind the July change?"
+    },
+    {
+      "title": "[Source Check] 2007–08 NPA — defense access versus victim consultation",
+      "category": "Q&A",
+      "topic": "/investigations/epstein-npa-defense-access-victim-notification",
+      "number": 134,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/134",
+      "question": "Which primary dated correspondence and consultation logs can establish exactly what each side was told before and after the September 2007 agreement?"
+    },
+    {
+      "title": "[Source Check] Giuffre v. Maxwell — where are the 57 privilege-log documents?",
+      "category": "Q&A",
+      "topic": "/investigations/giuffre-maxwell-docket-1320-privilege-gap",
+      "number": 135,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/135",
+      "question": "Can an authenticated later unsealing order, production index or court inventory map the 57-document category to actually released public files?"
+    },
+    {
+      "title": "[Source Check] MCC final 48 hours — what does the surviving video really show?",
+      "category": "Q&A",
+      "topic": "/investigations/mcc-final-48-hours-source-chain",
+      "number": 136,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/136",
+      "question": "What original OIG camera map, video provenance record or sworn exhibit best delineates which doorways and movements were visible versus unrecorded during the overnight window?"
+    },
+    {
+      "title": "[Source Check] FBI Vault Part 13 — chronology of redaction instructions",
+      "category": "Q&A",
+      "topic": "/investigations/fbi-vault-redaction-chronology-phang",
+      "number": 137,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/137",
+      "question": "Which dated released instructions actually changed redaction scope, and is there a public record establishing implementation rather than only a proposal or email request?"
+    },
+    {
+      "title": "[Source Check] Epstein–Barak 2013 'private time' and 2018–19 Carbyne chain",
+      "category": "Q&A",
+      "topic": "/investigations/barak-epstein-putin-qatar-carbyne",
+      "number": 138,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/138",
+      "question": "Can a contemporaneous third-party schedule, travel record, contract or independent correspondence corroborate any claimed meeting or completed business transaction beyond the email discussions?"
+    },
+    {
+      "title": "[Source Check] GADECO 2014 — did the contingent finder fee ever mature?",
+      "category": "Q&A",
+      "topic": "/investigations/barak-gadeco-fee-2014",
+      "number": 139,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/139",
+      "question": "Is there a lawfully public signed definitive agreement, closing statement, later invoice or payment record that confirms or rules out a completed fee event?"
+    },
+    {
+      "title": "[Source Check] Proposed Saudi–Israeli healthcare fund — did any capital close?",
+      "category": "Q&A",
+      "topic": "/investigations/barak-saudi-rothschild-proposal-2015",
+      "number": 140,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/140",
+      "question": "Can a publicly released fund registration, final offering document, bank-subscription record or regulatory filing show whether the proposal proceeded beyond negotiation?"
+    },
+    {
+      "title": "[Source Check] Clinton Foundation and CGI — proposal versus documented transfer",
+      "category": "Q&A",
+      "topic": "/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "number": 141,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/141",
+      "question": "What original public check, audited account, executed instruction or recipient acknowledgment could confirm or refute completion of the specific proposed 2004 transaction?"
+    },
+    {
+      "title": "[Source Check] Palm Beach 2006 — what do aviation arrivals and phone records establish?",
+      "category": "Q&A",
+      "topic": "/investigations/palm-beach-2006-police-jet-aviation-call-records",
+      "number": 142,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/142",
+      "question": "Which underlying public arrival log, affidavit exhibit or contemporaneous call-record summary allows independent verification of the specific chronology without exposing private phone numbers?"
+    },
+    {
+      "title": "[Source Check] New Mexico–DOJ Epstein records — what production was actually ordered?",
+      "category": "Q&A",
+      "topic": "/investigations/new-mexico-doj-epstein-records",
+      "number": 143,
+      "url": "https://github.com/danespec/grokfiles-landing/discussions/143",
+      "question": "What authenticated public request, response, court order or production receipt establishes which Epstein-related New Mexico records were requested and delivered, if any?"
+    }
+  ],
+  "note": "Dates, GitHub discussion URLs and source URLs verified on launch. Public posts are not pre-moderated; index does not imply editorial adoption."
+}
