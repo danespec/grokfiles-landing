@@ -1,0 +1,205 @@
+{
+  "schema": "gah_community_forum_directory_v1",
+  "date": "2026-10-18",
+  "forum_url": "https://grokarchivehub.com/forum",
+  "provider": "GitHub Discussions",
+  "live_discussion_count": 22,
+  "source_question_count": 21,
+  "groups": [
+    {
+      "id": "banking",
+      "name": "Financial Records",
+      "description": "Transfers, investments, funds and account reconciliation.",
+      "count": 7
+    },
+    {
+      "id": "legal",
+      "name": "Court Records and the 2007 Plea Process",
+      "description": "Signed rulings, legal negotiations, notices and record requests.",
+      "count": 5
+    },
+    {
+      "id": "federal",
+      "name": "DOJ, FBI and Investigative Records",
+      "description": "Detention records, agency releases, court reporting and access to original files.",
+      "count": 5
+    },
+    {
+      "id": "international",
+      "name": "International and Institutional Leads",
+      "description": "Test proposals and introductions against actual meetings, payments and records.",
+      "count": 4
+    }
+  ],
+  "topics": [
+    {
+      "number": 121,
+      "group": "banking",
+      "title": "Gratitude America — the French transfer inquiry",
+      "question": "Which original, lawfully public wire receipt—if any—connects the French FIU inquiry to the separately reported grant?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/121",
+      "article_url": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019"
+    },
+    {
+      "number": 126,
+      "group": "banking",
+      "title": "JPMorgan's nine SARs — reconcile reporting dates and totals",
+      "question": "Which original public filings or dated supervisory records establish precisely when each relevant concern was escalated, reported, and acted on?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/126",
+      "article_url": "https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein"
+    },
+    {
+      "number": 127,
+      "group": "banking",
+      "title": "4,725 JPMorgan wires — why the $1.1B and $1.283B figures differ",
+      "question": "What original publicly released source most clearly defines the relevant date windows, account populations, and transaction types for each total?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/127",
+      "article_url": "https://grokarchivehub.com/evidence-briefs/jpmorgan-4725-wires-1-1-billion-explainer"
+    },
+    {
+      "number": 128,
+      "group": "banking",
+      "title": "Black Family Partners — source of the November 2012 $5.5M payment",
+      "question": "Is there a lawful public original statement, wire advice, or contemporaneous account entry that traces the specific $5.5 million balance before the November 30 debit?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/128",
+      "article_url": "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap"
+    },
+    {
+      "number": 129,
+      "group": "banking",
+      "title": "Black Family Partners — the $18M draft versus $5.5M closing",
+      "question": "Which public emails, contract versions, appraisal materials or closing schedules document why the valuations changed and whether any required independent valuation took place?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/129",
+      "article_url": "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing"
+    },
+    {
+      "number": 130,
+      "group": "banking",
+      "title": "Wyden's missing Deutsche Bank FD-302 — what is actually public?",
+      "question": "Can a public release catalog, Bates index, transmittal, or authenticated agency response identify the separate FD-302 without relying on name inference?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/130",
+      "article_url": "https://grokarchivehub.com/investigations/wyden-banker-302-deutsche-interviews"
+    },
+    {
+      "number": 131,
+      "group": "banking",
+      "title": "Coinbase position — reconcile $3.001M cost with later $15M exit",
+      "question": "Can a publicly released contemporaneous bank debit, subscription record, or investment confirmation identify the initial funding source independently of the eventual proceeds?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/131",
+      "article_url": "https://grokarchivehub.com/evidence-briefs/coinbase-return-first-15m-exit"
+    },
+    {
+      "number": 122,
+      "group": "legal",
+      "title": "Doe v. Black — obtain the signed dismissal order",
+      "question": "Which authenticated court order records the exact procedural dismissal, apart from the earlier sanctions findings?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/122",
+      "article_url": "https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal"
+    },
+    {
+      "number": 132,
+      "group": "legal",
+      "title": "December 6–7, 2007 — who authorized the victim-letter hold?",
+      "question": "Does a public original email, OPR exhibit, routing instruction, signed order, or sworn testimony identify who made the final decision and when?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/132",
+      "article_url": "https://grokarchivehub.com/investigations/epstein-december-6-7-2007-decision-gap"
+    },
+    {
+      "number": 133,
+      "group": "legal",
+      "title": "July 19–31, 2007 — which record explains the federal case's pivot?",
+      "question": "What original dated record explains the choice of proposed state resolution terms and the specific decision makers behind the July change?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/133",
+      "article_url": "https://grokarchivehub.com/investigations/epstein-july-2007-decision-gap"
+    },
+    {
+      "number": 134,
+      "group": "legal",
+      "title": "2007–08 NPA — defense access versus victim consultation",
+      "question": "Which primary dated correspondence and consultation logs can establish exactly what each side was told before and after the September 2007 agreement?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/134",
+      "article_url": "https://grokarchivehub.com/investigations/epstein-npa-defense-access-victim-notification"
+    },
+    {
+      "number": 135,
+      "group": "legal",
+      "title": "Giuffre v. Maxwell — where are the 57 privilege-log documents?",
+      "question": "Can an authenticated later unsealing order, production index or court inventory map the 57-document category to actually released public files?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/135",
+      "article_url": "https://grokarchivehub.com/investigations/giuffre-maxwell-docket-1320-privilege-gap"
+    },
+    {
+      "number": 123,
+      "group": "federal",
+      "title": "Phang v. Blanche — distinguish separate filing obligations",
+      "question": "What dated public docket document resolves the status of the separate certified-record-list obligation?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/123",
+      "article_url": "https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026"
+    },
+    {
+      "number": 136,
+      "group": "federal",
+      "title": "MCC final 48 hours — what does the surviving video really show?",
+      "question": "What original OIG camera map, video provenance record or sworn exhibit best delineates which doorways and movements were visible versus unrecorded during the overnight window?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/136",
+      "article_url": "https://grokarchivehub.com/investigations/mcc-final-48-hours-source-chain"
+    },
+    {
+      "number": 137,
+      "group": "federal",
+      "title": "FBI Vault Part 13 — chronology of redaction instructions",
+      "question": "Which dated released instructions actually changed redaction scope, and is there a public record establishing implementation rather than only a proposal or email request?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/137",
+      "article_url": "https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang"
+    },
+    {
+      "number": 142,
+      "group": "federal",
+      "title": "Palm Beach 2006 — what do aviation arrivals and phone records establish?",
+      "question": "Which underlying public arrival log, affidavit exhibit or contemporaneous call-record summary allows independent verification of the specific chronology without exposing private phone numbers?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/142",
+      "article_url": "https://grokarchivehub.com/investigations/palm-beach-2006-police-jet-aviation-call-records"
+    },
+    {
+      "number": 143,
+      "group": "federal",
+      "title": "New Mexico–DOJ Epstein records — what production was actually ordered?",
+      "question": "What authenticated public request, response, court order or production receipt establishes which Epstein-related New Mexico records were requested and delivered, if any?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/143",
+      "article_url": "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records"
+    },
+    {
+      "number": 138,
+      "group": "international",
+      "title": "Epstein–Barak 2013 'private time' and 2018–19 Carbyne chain",
+      "question": "Can a contemporaneous third-party schedule, travel record, contract or independent correspondence corroborate any claimed meeting or completed business transaction beyond the email discussions?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/138",
+      "article_url": "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne"
+    },
+    {
+      "number": 139,
+      "group": "international",
+      "title": "GADECO 2014 — did the contingent finder fee ever mature?",
+      "question": "Is there a lawfully public signed definitive agreement, closing statement, later invoice or payment record that confirms or rules out a completed fee event?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/139",
+      "article_url": "https://grokarchivehub.com/investigations/barak-gadeco-fee-2014"
+    },
+    {
+      "number": 140,
+      "group": "international",
+      "title": "Proposed Saudi–Israeli healthcare fund — did any capital close?",
+      "question": "Can a publicly released fund registration, final offering document, bank-subscription record or regulatory filing show whether the proposal proceeded beyond negotiation?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/140",
+      "article_url": "https://grokarchivehub.com/investigations/barak-saudi-rothschild-proposal-2015"
+    },
+    {
+      "number": 141,
+      "group": "international",
+      "title": "Clinton Foundation and CGI — proposal versus documented transfer",
+      "question": "What original public check, audited account, executed instruction or recipient acknowledgment could confirm or refute completion of the specific proposed 2004 transaction?",
+      "discussion_url": "https://github.com/danespec/grokfiles-landing/discussions/141",
+      "article_url": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit"
+    }
+  ],
+  "warning": "GitHub login required; public posts appear before human moderation; questions are not editorial findings."
+}
