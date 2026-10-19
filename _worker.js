@@ -1155,7 +1155,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/internet-vs-receipts/2007-draft-indictment", "2026-10-19"],
   ["https://grokarchivehub.com/guides/epstein-flight-logs-doj", "2026-10-13"],
   ["https://grokarchivehub.com/guides/epstein-black-book-redacted-doj", "2026-10-13"],
-  ["https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment", "2026-10-13"],
+  ["https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment", "2026-10-19"],
   ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
   ["https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16", "2026-10-12"],
   ["https://grokarchivehub.com/news/gadeco-chinese-consortium-declined", "2026-10-12"],
