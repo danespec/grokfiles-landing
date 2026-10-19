@@ -18181,6 +18181,28 @@ export default {
     if ((request.method === "GET" || request.method === "HEAD") && path === "/sitemap.xml") {
       return serveSitemapWithPublishedDispatches(request, env);
     }
+    // GAH-SEO-SITEMAP-002: apex sitemap index must not advertise wiki-host
+    // legacy sitemap endpoints, which currently return empty URL sets.
+    // Preserve /sitemap.xml as the canonical, live editorial sitemap.
+    if (
+      (request.method === "GET" || request.method === "HEAD") &&
+      url.hostname === APEX_HOST &&
+      path === "/sitemap-index.xml"
+    ) {
+      const xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+        + '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + '  <sitemap><loc>https://grokarchivehub.com/sitemap.xml</loc></sitemap>\n'
+        + '</sitemapindex>\n';
+      return new Response(request.method === "HEAD" ? null : xml, {
+        status: 200,
+        headers: {
+          "Content-Type": "application/xml; charset=utf-8",
+          "Cache-Control": "public, max-age=300",
+          "X-GAH-Sitemap-Index": "apex-authoritative-sitemap"
+        }
+      });
+    }
+
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/feed.xml") {
       return serveRssFeed(request, env);
