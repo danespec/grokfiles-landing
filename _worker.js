@@ -18820,6 +18820,23 @@ export default {
       });
     }
 
+    // GAH-INDEXNOW-001: public key used by IndexNow participating engines.
+    if (
+      (request.method === "GET" || request.method === "HEAD") &&
+      url.hostname === APEX_HOST &&
+      path === "/e025f0275de249a091e10566081e81ba.txt"
+    ) {
+      return new Response(request.method === "HEAD" ? null : "e025f0275de249a091e10566081e81ba", {
+        status: 200,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=3600",
+          "X-Robots-Tag": "noindex,nofollow",
+          "X-GAH-IndexNow": "verification-key"
+        }
+      });
+    }
+
     if ((request.method === "GET" || request.method === "HEAD") && path === "/robots.txt") {
       return new Response(request.method === "HEAD" ? null : AGENT_READY_ROBOTS_TXT, {
         status: 200,
