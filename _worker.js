@@ -63,6 +63,13 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/guides/epstein-flight-logs-doj",
+  "/guides/epstein-black-book-redacted-doj",
+  "/guides/epstein-2007-draft-federal-indictment",
+  "/news/doj-march-2025-review-emails-released",
+  "/news/phang-fbi-notes-in-camera-october-16",
+  "/news/gadeco-chinese-consortium-declined",
+  "/news/efta00000468-removal-restoration-audit",
   "/community",
   "/investigations/gratitude-america-money-trail-2015-2019",
   "/",
@@ -282,6 +289,13 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/guides/epstein-flight-logs-doj", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/guides/epstein-black-book-redacted-doj", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/guides/epstein-2007-draft-federal-indictment", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/news/doj-march-2025-review-emails-released", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/news/phang-fbi-notes-in-camera-october-16", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/news/gadeco-chinese-consortium-declined", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/news/efta00000468-removal-restoration-audit", "sensitive-public-records-news-or-guide-ad-free"],
   ["/community", "source-first-community-intake-ad-free"],
   ["/investigations/gratitude-america-money-trail-2015-2019", "sensitive-financial-records-investigation-ad-free"],
   ["/entities", "sensitive-entity-index-ad-free"],
@@ -992,6 +1006,13 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/guides/epstein-flight-logs-doj", "/guides/epstein-flight-logs-doj.html"],
+  ["/guides/epstein-black-book-redacted-doj", "/guides/epstein-black-book-redacted-doj.html"],
+  ["/guides/epstein-2007-draft-federal-indictment", "/guides/epstein-2007-draft-federal-indictment.html"],
+  ["/news/doj-march-2025-review-emails-released", "/news/doj-march-2025-review-emails-released.html"],
+  ["/news/phang-fbi-notes-in-camera-october-16", "/news/phang-fbi-notes-in-camera-october-16.html"],
+  ["/news/gadeco-chinese-consortium-declined", "/news/gadeco-chinese-consortium-declined.html"],
+  ["/news/efta00000468-removal-restoration-audit", "/news/efta00000468-removal-restoration-audit.html"],
   ["/community", "/community.html"],
   ["/investigations/gratitude-america-money-trail-2015-2019", "/investigations/gratitude-america-money-trail-2015-2019.html"],
   ["/investigations/fbi-vault-redaction-chronology-phang", "/investigations/fbi-vault-redaction-chronology-phang.html"],
@@ -1102,6 +1123,13 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/guides/epstein-flight-logs-doj", "2026-10-13"],
+  ["https://grokarchivehub.com/guides/epstein-black-book-redacted-doj", "2026-10-13"],
+  ["https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment", "2026-10-13"],
+  ["https://grokarchivehub.com/news/doj-march-2025-review-emails-released", "2026-10-12"],
+  ["https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16", "2026-10-12"],
+  ["https://grokarchivehub.com/news/gadeco-chinese-consortium-declined", "2026-10-12"],
+  ["https://grokarchivehub.com/news/efta00000468-removal-restoration-audit", "2026-10-14"],
   ["https://grokarchivehub.com/forum", "2026-10-18"],
   ["https://grokarchivehub.com/community", "2026-10-18"],
   ["https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019", "2026-10-18"],
