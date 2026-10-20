@@ -15,6 +15,19 @@ assert(start>=0 && end>start,"dossier map found");
 const coreMap=Function(worker.slice(start,end).replace("const CORE_ARCHIVE_DOSSIERS =","return"))();
 const entry=coreMap.get("EFTA00013764");
 assert(entry,"EFTA00013764 resolves to local verified source dossier");
+
+const pinStart=worker.indexOf("const GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS = new Map([");
+const pinEnd=worker.indexOf("\n]);",pinStart)+4;
+assert(pinStart>0 && pinEnd>pinStart,"exact-ID search pin registered");
+const pinnedMap=Function(worker.slice(pinStart,pinEnd).replace("const GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS =","return"))();
+const pinned=pinnedMap.get("EFTA00013764");
+assert(pinned && pinned.read_url==="/archive/EFTA00013764","search result links to verified dossier");
+assert(pinned.source_url==="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf");
+assert(pinned.local_pdf_available===false,"search does not invent a local PDF");
+assert(worker.includes('verification_basis: "gah_local_hash_verified_primary_source_manifest"'),"search discloses local source provenance");
+assert(worker.includes('data.document_bundle_url = verified && !localExactSource ?'),"search does not advertise a missing bundle route");
+assert(pinnedMap.size===1,"only specifically proven identifiers are pinned");
+
 assert(worker.includes('["https://grokarchivehub.com/archive/EFTA00013764", "2026-10-20"]'),"sitemap includes new authoritative dossier");
 assert(entry.provenance.includes("5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117"));
 assert(entry.links.some((r)=>r[1]==="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf"));
