@@ -30,6 +30,7 @@ run() {
 }
 
 run "exact-id policy" node tests/test_exact_id_policy.mjs
+run "Bank of America AML campaign URL recovery" node tests/test_boa_aml_recovery.mjs
 run "EFTA00013764 archive resolver" node tests/test_efta13764_repair.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
 run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
