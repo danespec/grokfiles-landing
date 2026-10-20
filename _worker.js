@@ -431,6 +431,26 @@ const OPEN_RECEIPT_SLOT_ARCHIVE_IDS = new Set([
 ]);
 
 const CORE_ARCHIVE_DOSSIERS = new Map([
+  ["EFTA00013764", {
+    description: "Verified source dossier for the one-page December 7, 2007 email instructing a hold on prepared Epstein victim-notification letters; includes an official DOJ PDF pointer.",
+    timelineRelation: "On December 7, 2007, Villafana requested permission to send prepared victim-notification letters, and Sloman responded with the instruction to hold the letter. This email alone cannot establish the reason for the decision.",
+    relevantDates: [
+      "December 7, 2007: inquiry sent at 17:05:56 EST; reply recorded at 22:08:19 UTC (17:08:19 EST).",
+      "The elapsed interval in the original email chain is 2 minutes 23 seconds."
+    ],
+    provenance: "DOJ Epstein Library Data Set 8, EFTA00013764.pdf; GAH's published source manifest records locally verified SHA-256 5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117.",
+    establishes: "The original one-page email records the instruction 'Hold the letter' after Villafana's request. It does not explain any unrecorded consultations or motives.",
+    limitations: [
+      "The static GAH route is a source dossier, not a locally served copy of the PDF; DOJ may require age verification.",
+      "Neither an intelligence explanation nor an unnamed decision-maker can be identified from this email alone.",
+      "The OPR report and other records provide context but must not be mistaken for this native email."
+    ],
+    links: [
+      ["Official DOJ source PDF (age verification may apply)", "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf"],
+      ["GAH: Hold the Letter primary-source investigation", "/investigations/hold-the-letter"],
+      ["GAH: December 6-7 decision gap", "/investigations/epstein-december-6-7-2007-decision-gap"]
+    ]
+  }],
   ["EFTA00035147", {
     description: "Source card for the August 8 attorney-log row and Colon Miro candidate match in the Epstein final-48-hours timeline.",
     timelineRelation: "Use this record only as a late-August-8 custody-log lead tied to the visible row and footer evidence. It supports timeline placement for a candidate attorney-log entry, not an inference about the meeting.",
@@ -1114,6 +1134,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/research/evidence/mcc-epstein-control-spine", "/research/evidence/mcc-epstein-control-spine.html"],
 ]);
 const EFTA_DOSSIER_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/archive/EFTA00013764", "2026-10-20"],
   ["https://grokarchivehub.com/archive/EFTA00035147", "2026-07-13"],
   ["https://grokarchivehub.com/archive/EFTA00039025", "2026-07-13"],
   ["https://grokarchivehub.com/archive/EFTA00039356", "2026-07-13"],
@@ -17550,7 +17571,7 @@ function archiveUnavailableResponse(request, archiveId) {
   headers.set("X-Robots-Tag", "noindex,follow");
   applyHtmlSecurityHeaders(headers, {}, request);
   const html = request.method === "HEAD" ? "" : ensureV3DocumentShell(body);
-  return new Response(request.method === "HEAD" ? null : html, { status: 200, headers });
+  return new Response(request.method === "HEAD" ? null : html, { status: 404, headers });
 }
 
 function forceNamedMeta(body, name, content) {
