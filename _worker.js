@@ -5467,6 +5467,28 @@ function stripUnverifiedRow(row) {
   };
 }
 
+// Source-backed bridge for an exact ID with a published local dossier and a
+// dated, hash-verified primary-source manifest. Do not turn arbitrary upstream
+// text hits or inferred EFTA numbers into verified local archive records.
+const GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS = new Map([
+  ["EFTA00013764", Object.freeze({
+    id: "EFTA00013764",
+    efta_id: "EFTA00013764",
+    title: "EFTA00013764: December 7, 2007 Hold the Letter email",
+    summary: "Source-verified one-page email. GAH hosts a provenance dossier, not a PDF mirror; DOJ holds the primary PDF (age confirmation may apply).",
+    read_url: "/archive/EFTA00013764",
+    source_url: "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf",
+    source: "GAH hold-the-letter source manifest, verified 2026-10-06 (SHA-256 5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117)",
+    dataset: "Data Set 8",
+    source_kind: "verified_primary_source_pointer",
+    local_pdf_available: false,
+    has_visual_evidence: false,
+    visual_evidence_count: 0,
+    visual_evidence_url: null,
+    document_bundle_url: null
+  })]
+]);
+
 function applyExactIdentifierPolicy(rows, exact, data) {
   const candidates = rows.filter((row) => publicSearchExactId(row) === exact);
   const others = rows.filter((row) => publicSearchExactId(row) !== exact);
@@ -5905,8 +5927,18 @@ async function handlePublicSearch(request, env) {
     return true;
   });
 
+  // The upstream proof index can lag a GAH-published, hash-verified
+  // source dossier. Inject ONLY the explicitly verified source record,
+  // before exact-ID validation; do not synthesize links for other IDs.
+  const localExactSource = exact ? GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS.get(exact) : null;
+  if (localExactSource && CORE_ARCHIVE_DOSSIERS.has(exact)) {
+    rows = [{ ...localExactSource }, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
+  }
   if (exact) {
     rows = applyExactIdentifierPolicy(rows, exact, data);
+    if (localExactSource && rows[0]?.read_url === localExactSource.read_url) {
+      rows[0] = { ...rows[0], verification_basis: "gah_local_hash_verified_primary_source_manifest" };
+    }
   }
 
   const requestedLimit = Math.min(Math.max(Number(payload.limit) || 10, 1), 50);
@@ -5921,6 +5953,14 @@ async function handlePublicSearch(request, env) {
     });
   }
 
+  // A source dossier is not a backend document bundle; do not advertise
+  // a bundle endpoint that still depends on the missing wiki archive shell.
+  if (localExactSource) {
+    rows = rows.map((row) => publicSearchExactId(row) === exact
+      ? { ...row, document_bundle_url: null }
+      : row);
+  }
+
   if (exact) {
     const exactHit = rows.find((row) => publicSearchExactId(row) === exact);
     const verified = exactHit && exactHit.verification === "verified";
@@ -5930,7 +5970,7 @@ async function handlePublicSearch(request, env) {
       url: exactHit.visual_evidence_url || null
     } : { available: false, count: 0, url: null };
     // No bundle URL for a missing record: the bundle endpoint has nothing to serve.
-    data.document_bundle_url = verified ? "/api/document-bundle/" + exact : null;
+    data.document_bundle_url = verified && !localExactSource ? "/api/document-bundle/" + exact : null;
   }
 
   data.hits = rows;
