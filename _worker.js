@@ -63,6 +63,7 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/news/bank-of-america-aml-penalties-epstein-settlement-2026",
   "/guides",
   "/investigations/doj-oip-epstein-review-public-figure-flags-2026",
   "/investigations/doj-oip-epstein-review-public-figure-flags-2026",
@@ -298,6 +299,7 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/news/bank-of-america-aml-penalties-epstein-settlement-2026", "sensitive-public-records-news-ad-free"],
   ["/guides", "curated-research-guide-directory-ad-free"],
   ["/news", "curated-newsroom-directory-ad-free"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "doj-oip-source-audit-ad-free"],
@@ -1046,6 +1048,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/guides", "/guides.html"],
   ["/news", "/news.html"],
+  ["/news/bank-of-america-aml-penalties-epstein-settlement-2026", "/news/bank-of-america-aml-penalties-epstein-settlement-2026.html"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "/investigations/doj-oip-epstein-review-public-figure-flags-2026.html"],
   ["/investigations/doj-oip-epstein-review-public-figure-flags-2026", "/investigations/doj-oip-epstein-review-public-figure-flags-2026.html"],
   ["/internet-vs-receipts", "/internet-vs-receipts.html"],
@@ -1172,6 +1175,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026", "2026-10-15"],
   ["https://grokarchivehub.com/news", "2026-10-19"],
   ["https://grokarchivehub.com/guides", "2026-10-19"],
   ["https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026", "2026-10-19"],
@@ -4940,6 +4944,7 @@ function sanitizePublicSearchValue(value, depth = 0) {
 }
 
 const PUBLIC_EDITORIAL_SEARCH_ROWS = [
+  {id: "GAH-NEWS-066", title: "Bank of America Faces $1.2B AML Penalty After Separate Epstein Settlement", summary: "October 13 FinCEN $1.2B anti-money-laundering action and separate $11.66M OFAC settlement; a distinct August 28 $72.5M Epstein-survivor civil judgment does not establish a connection between the proceedings.", read_url: "/news/bank-of-america-aml-penalties-epstein-settlement-2026", url: "/news/bank-of-america-aml-penalties-epstein-settlement-2026", tags: ["news","Bank of America","AML","FinCEN","OCC","OFAC","Epstein settlement","2026"]},
   {"id": "GAH-HO-074-palm-beach-2006-police-jet-aviation-call-records", "title": "Palm Beach Police’s 2006 Evidence Chain: Grand Jury Scheduling and Jet Aviation Call Records", "summary": "Original detective narratives and a May 1 sworn affidavit describe a postponed grand-jury session and the comparison of aircraft arrivals with telephone records. They are investigative records, not a fresh judicial finding.", "read_url": "/investigations/palm-beach-2006-police-jet-aviation-call-records", "url": "/investigations/palm-beach-2006-police-jet-aviation-call-records", "tags": ["House Oversight", "Epstein", "source audit", "primary documents", "Palm Beach police"]},
   {"id": "GAH-HO-074-black-phaidon-2015-tax-model-house-oversight", "title": "Epstein’s 2015 Phaidon Tax Model: The $38.7M–$44M Projection and Its Correction", "summary": "House Oversight correspondence contains an October 2015 estimated capital-loss scenario; a second page corrects the assumed rate from 28% to 20%. A 2021 SEC-filed private investigation establishes broader advisory activity, not realization of this particular modeled tax benefit.", "read_url": "/investigations/black-phaidon-2015-tax-model-house-oversight", "url": "/investigations/black-phaidon-2015-tax-model-house-oversight", "tags": ["House Oversight", "Epstein", "source audit", "primary documents", "Leon Black"]},
   {"id":"GAH-CLINTON-CGI-072","title":"Clinton Foundation, CGI and Epstein: What the Financial and Organizational Records Establish","summary":"Proposed $1M Publicis wire instructions, $25K C.O.U.Q. grant record, distinct CGI and TerraMar activities, and 2014–17 revenue decline. Payment and causal gaps remain unresolved.","read_url":"/investigations/clinton-foundation-cgi-epstein-source-audit","url":"/investigations/clinton-foundation-cgi-epstein-source-audit","tags":["Clinton Foundation","Clinton Global Initiative","CGI","TerraMar","C.O.U.Q.","Ghislaine Maxwell","Epstein","Doug Band","Publicis","source audit"]},
@@ -7908,6 +7913,7 @@ async function assetJson(request, env, assetPath) {
 
 function rssEligibleEditorialPath(path) {
   const clean = cleanPath(path);
+  if (clean === "/news/bank-of-america-aml-penalties-epstein-settlement-2026") return true;
   if (/^\/evidence-briefs\/[^/]+$/.test(clean)) return true;
   if (/^\/document-autopsies\/[^/]+$/.test(clean)) return true;
   if (/^\/dispatches\/[^/]+$/.test(clean)) return true;
