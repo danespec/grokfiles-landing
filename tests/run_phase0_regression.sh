@@ -30,6 +30,7 @@ run() {
 }
 
 run "exact-id policy" node tests/test_exact_id_policy.mjs
+run "EFTA00013764 archive resolver" node tests/test_efta13764_repair.mjs
 run "identifier module" node workers/lib/test_identifiers.mjs
 run "identifier sync + wiring" node tests/test_identifiers_sync.mjs
 run "wiki-host fail-closed" node tests/test_wiki_host_failclosed.mjs
