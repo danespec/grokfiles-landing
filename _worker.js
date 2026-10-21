@@ -6902,7 +6902,7 @@ function isV3ShellHtml(body) {
 }
 
 const GAH_X_PROFILE_URL = "https://x.com/DaneMilSpec";
-const GAH_REDDIT_PROFILE_URL = "https://www.reddit.com/user/Salt_Cry2674/";
+const GAH_REDDIT_PROFILE_URL = "https://www.reddit.com/r/GrokArchiveHub/";
 const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL];
 
 function v3CanonicalFromHtml(html) {
@@ -6922,7 +6922,7 @@ function v3SocialProfilesHtml() {
   return `<div class="wrap gah-social-profiles" data-gah-social-profiles aria-label="Grok Archive Hub social profiles">
       <span class="gah-social-label">Follow GAH</span>
       <a href="${GAH_X_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">X @DaneMilSpec</a>
-      <a href="${GAH_REDDIT_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">Reddit u/Salt_Cry2674</a>
+      <a href="${GAH_REDDIT_PROFILE_URL}" target="_blank" rel="me noopener noreferrer">Reddit r/GrokArchiveHub</a>
     </div>`;
 }
 
