@@ -30,6 +30,7 @@ run() {
 }
 
 run "exact-id policy" node tests/test_exact_id_policy.mjs
+run "Organic SEO visibility and source-linking" node tests/test_organic_visibility_20261020.mjs
 run "Official Reddit community social link" node tests/test_reddit_community_social_link.mjs
 run "Bank of America AML campaign URL recovery" node tests/test_boa_aml_recovery.mjs
 run "EFTA00013764 archive resolver" node tests/test_efta13764_repair.mjs
