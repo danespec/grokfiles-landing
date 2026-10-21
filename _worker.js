@@ -1320,6 +1320,35 @@ const FRESH_PROOF_PATHS = new Set([
   "/sitemap-index.xml"
 ]);
 
+// GAH-ARCHIVE-SITEMAP-FOUNDATION-001 — six previously curated source dossiers.
+const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
+  ["/archive/EFTA00013764", "2026-10-20"],
+  ["/archive/EFTA00035147", "2026-07-13"],
+  ["/archive/EFTA00039025", "2026-07-13"],
+  ["/archive/EFTA00039356", "2026-07-13"],
+  ["/archive/EFTA00039416", "2026-07-13"],
+  ["/archive/EFTA00039660", "2026-07-13"]
+]);
+
+function serveCuratedArchiveSitemap(request) {
+  const entries = GAH_APPROVED_ARCHIVE_SITEMAP.map(([path, updated]) =>
+    "  <url><loc>https://grokarchivehub.com" + path
+    + "</loc><lastmod>" + updated + "</lastmod></url>"
+  ).join("\n");
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + entries + '\n</urlset>\n';
+  return new Response(request.method === "HEAD" ? null : xml, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/xml; charset=utf-8",
+      "Cache-Control": "public, max-age=300",
+      "X-Content-Type-Options": "nosniff",
+      "X-GAH-Archive-Sitemap": "six-curated-dossiers-only"
+    }
+  });
+}
+
 const AGENT_READY_ROBOTS_TXT = [
   "User-agent: *",
   "Content-signal: search=yes, ai-input=yes, ai-train=no, use=reference",
@@ -1332,6 +1361,7 @@ const AGENT_READY_ROBOTS_TXT = [
   "Disallow: /pdf-viewer",
   "Disallow: /pdf-viewer.html",
   "Sitemap: https://grokarchivehub.com/sitemap.xml",
+  "Sitemap: https://grokarchivehub.com/sitemap-archive.xml",
   "Agentmap: https://grokarchivehub.com/.well-known/ai-catalog.json",
   "# GAH-AGENT-READINESS-L1-001",
   "# search=yes: indexing and link/snippet discovery allowed",
@@ -18251,6 +18281,10 @@ export default {
       });
     }
 
+    if ((request.method === "GET" || request.method === "HEAD") && url.hostname === APEX_HOST && path === "/sitemap-archive.xml") {
+      return serveCuratedArchiveSitemap(request);
+    }
+
     if ((request.method === "GET" || request.method === "HEAD") && path === "/sitemap.xml") {
       return serveSitemapWithPublishedDispatches(request, env);
     }
@@ -18265,6 +18299,7 @@ export default {
       const xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
         + '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + '  <sitemap><loc>https://grokarchivehub.com/sitemap.xml</loc></sitemap>\n'
+        + '  <sitemap><loc>https://grokarchivehub.com/sitemap-archive.xml</loc></sitemap>\n'
         + '</sitemapindex>\n';
       return new Response(request.method === "HEAD" ? null : xml, {
         status: 200,
