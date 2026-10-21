@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const worker=fs.readFileSync("_worker.js","utf8");
+const home=fs.readFileSync("index.html","utf8");
+const community=fs.readFileSync("community.html","utf8");
+const subreddit="https://www.reddit.com/r/GrokArchiveHub/";
+assert(worker.includes('const GAH_REDDIT_PROFILE_URL = "'+subreddit+'";'));
+assert(worker.includes('>Reddit r/GrokArchiveHub</a>'));
+assert(!worker.includes('>Reddit u/Salt_Cry2674</a>'));
+assert(worker.includes('const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL]'));
+assert(worker.includes('sameAs: GAH_SOCIAL_PROFILE_URLS'));
+assert(home.includes('href="'+subreddit+'"'));
+assert(community.includes('href="'+subreddit+'"'));
+assert(community.includes('id="reddit-live"'));
+assert(community.includes('r/GrokArchiveHub on Reddit'));
+console.log("PASS official r/GrokArchiveHub on homepage, Community Desk, sitewide footer, and organization metadata; old personal-account label removed");
