@@ -33,5 +33,8 @@ for(const [name,content] of [["home",home],["EFTA dossier",exact],["search guide
  assert.equal(canonicals.length,1,name+" unique canonical");
 }
 assert(worker.includes('["https://grokarchivehub.com/archive/EFTA00013764", "2026-10-20"]'));
+for (const url of ["/", "/guides/how-to-search-epstein-files", "/guides/doj-epstein-data-sets"]) {
+ assert(worker.includes('["https://grokarchivehub.com'+url+'", "2026-10-20"]'),"sitemap lastmod for edited page: "+url);
+}
 assert(worker.includes('const GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS'));
 console.log("PASS niche homepage metadata and source directory; exact-ID dossier and direct links; canonical, sitemap, search provenance and caution");
