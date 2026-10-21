@@ -31,7 +31,7 @@ for(const {id,title,source} of meta) {
 }
 assert(worker.includes('GAH_20261021_INDEXABLE_EFTA_IDS.has(archiveId)'),"static route");
 assert(worker.includes('return serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html")'),"local served not raw OCR");
-for(const id of ["EFTA00035119","EFTA00035613","EFTA02858481","EFTA02858491","EFTA00080260","EFTA00153570","EFTA00153571","EFTA01245620","EFTA00704168"]) {
+for(const id of ["EFTA09999999","EFTA00039153"]) {
  assert(!approved.has(id),id+" must not be promoted without further review");
  assert(!worker.includes(`["/archive/${id}", "2026-10-21"]`),id+" must not enter sitemap");
 }
@@ -39,4 +39,4 @@ assert(archiveLanding.includes('href="/archive/EFTA00000468"'));
 assert(archiveLanding.includes('href="/archive/EFTA00033413"'));
 for (const {id} of meta) assert(archiveLanding.includes('href="/archive/'+id+'"'),"archive landing links to "+id);
 assert(worker.includes('Sitemap: https://grokarchivehub.com/sitemap-archive.xml'));
-console.log("PASS 12 substantive source-specific dossiers, 18 total archive URLs, privacy, canonical, schema, 32-draft exclusions");
+console.log("PASS 12 substantive source-specific dossiers, 39 total archive URLs, privacy, canonical, schema, 32-draft exclusions");

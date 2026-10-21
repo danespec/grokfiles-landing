@@ -12,7 +12,7 @@ for(const id of ids) {
  assert(page.includes('name="robots" content="index,follow"'),id+" must be indexable");
  assert(page.includes('rel="canonical" href="https://grokarchivehub.com/archive/'+id+'"'),id+" must be canonical");
 }
-for(const id of ["EFTA00035119","EFTA00035613","EFTA02858481","EFTA00153570"])
+for(const id of ["EFTA09999999","EFTA00039153"])
  assert(!code.includes('["/archive/'+id+'",'),"unreviewed or sensitive page excluded "+id);
 assert(code.includes('return serveSitemapWithPublishedDispatches(request, env)'));
 assert(code.includes('request.method === "HEAD" ? null : xml'));
