@@ -37,5 +37,6 @@ for(const id of ["EFTA00035119","EFTA00035613","EFTA02858481","EFTA02858491","EF
 }
 assert(archiveLanding.includes('href="/archive/EFTA00000468"'));
 assert(archiveLanding.includes('href="/archive/EFTA00033413"'));
+for (const {id} of meta) assert(archiveLanding.includes('href="/archive/'+id+'"'),"archive landing links to "+id);
 assert(worker.includes('Sitemap: https://grokarchivehub.com/sitemap-archive.xml'));
 console.log("PASS 12 substantive source-specific dossiers, 18 total archive URLs, privacy, canonical, schema, 32-draft exclusions");
