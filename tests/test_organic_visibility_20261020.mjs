@@ -8,8 +8,8 @@ const datasetGuide=read("guides/doj-epstein-data-sets.html");
 const worker=read("_worker.js");
 const pages=[home,exact,searchGuide,datasetGuide];
 const target="/archive/EFTA00013764";
-assert(home.includes("<title>Epstein Files & Document Investigations | Grok Archive Hub</title>"));
-assert(home.includes('name="description" content="Explore Grok Archive Hub\'s source-verified Epstein investigations:'));
+assert(home.includes("<title>GrokArchiveHub | Epstein Files & Original Investigations</title>"));
+assert(home.includes('name="description" content="GrokArchiveHub (Grok Archive Hub) publishes source-verified Epstein files investigations'));
 assert(home.includes('rel="canonical" href="https://grokarchivehub.com/"'));
 assert(home.includes('id="epstein-evidence-directory-heading"'));
 assert(home.includes('GrokArchiveHub)'));
@@ -33,8 +33,9 @@ for(const [name,content] of [["home",home],["EFTA dossier",exact],["search guide
  assert.equal(canonicals.length,1,name+" unique canonical");
 }
 assert(worker.includes('["https://grokarchivehub.com/archive/EFTA00013764", "2026-10-20"]'));
-for (const url of ["/", "/guides/how-to-search-epstein-files", "/guides/doj-epstein-data-sets"]) {
+for (const url of ["/guides/how-to-search-epstein-files", "/guides/doj-epstein-data-sets"]) {
  assert(worker.includes('["https://grokarchivehub.com'+url+'", "2026-10-20"]'),"sitemap lastmod for edited page: "+url);
 }
 assert(worker.includes('const GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS'));
+for(const path of ["", "archive"]) assert(worker.includes('["https://grokarchivehub.com/'+path+'", "2026-10-21"]'),"updated sitemap lastmod: "+path);
 console.log("PASS niche homepage metadata and source directory; exact-ID dossier and direct links; canonical, sitemap, search provenance and caution");
