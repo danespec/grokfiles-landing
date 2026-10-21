@@ -1,0 +1,149 @@
+[
+  {
+    "id": "EFTA00035119",
+    "title": "MCC Visitor Log: Handwritten Record and Verification Limits",
+    "subject": "MCC operations",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00035206",
+    "title": "MCC Source Record: No Displayable OCR and Open Verification Slot",
+    "subject": "MCC operations",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00035715",
+    "title": "MCC Source Record: Metadata-Only Archive Entry",
+    "subject": "MCC operations",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00035828",
+    "title": "MCC Record Locator: Image-Dependent Source Verification",
+    "subject": "MCC operations",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00035613",
+    "title": "July 2019 Letter: Personal-Information Redaction Boundary",
+    "subject": "MCC correspondence",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA02858481",
+    "title": "FBI FD-302 Interview Record: Court-Ordered Note Review",
+    "subject": "FBI interview / court filing",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA02858491",
+    "title": "FBI FD-302 Follow-Up Interview: Protect-Source Review",
+    "subject": "FBI interview / court filing",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00579174",
+    "title": "Financial Source Record: Missing OCR and Account-Data Boundary",
+    "subject": "Financial source index",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00579182",
+    "title": "Financial Source Record: Unresolved Text Extraction",
+    "subject": "Financial source index",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00224262",
+    "title": "Koni Foundation Corporate Filing: Registry Context",
+    "subject": "Corporate records",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00176507",
+    "title": "2007 Legal Correspondence: Filing and Provenance Questions",
+    "subject": "Legal correspondence",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00080260",
+    "title": "Leon Black / Rothschild Transaction Exhibit: Limits of a List",
+    "subject": "Financial exhibit",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00153569",
+    "title": "March 2020 Financial-Intelligence Deconfliction Email",
+    "subject": "Financial intelligence / correspondence",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00128841",
+    "title": "IRS Forensic-Accounting Import Record: Scope and Caveats",
+    "subject": "Financial oversight",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00643676",
+    "title": "Financial Evidence Locator: No Displayable Extract",
+    "subject": "Financial source index",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA00646811",
+    "title": "July 2012 Private Valuation Correspondence: Document Scope",
+    "subject": "Financial correspondence",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA01410768",
+    "title": "July 2019 Confidential Bank-Article Correspondence",
+    "subject": "Financial correspondence",
+    "previously_resolved": true,
+    "status": "verified-metadata"
+  },
+  {
+    "id": "EFTA01245620",
+    "title": "FBI FD-302 Interview: Missing Notes and Judicial Oversight",
+    "subject": "FBI interview / missing source",
+    "previously_resolved": false,
+    "status": "unresolved-original-404"
+  },
+  {
+    "id": "EFTA00704168",
+    "title": "2016 Financial Trade Correspondence: Source Route Repair",
+    "subject": "Financial correspondence / missing source",
+    "previously_resolved": false,
+    "status": "unresolved-original-404"
+  },
+  {
+    "id": "EFTA00153570",
+    "title": "Financial-Intelligence Sequence: Unresolved Bates Page",
+    "subject": "Financial intelligence / missing source",
+    "previously_resolved": false,
+    "status": "unresolved-original-404"
+  },
+  {
+    "id": "EFTA00153571",
+    "title": "Financial-Intelligence Sequence: Second Unresolved Bates Page",
+    "subject": "Financial intelligence / missing source",
+    "previously_resolved": false,
+    "status": "unresolved-original-404"
+  }
+]

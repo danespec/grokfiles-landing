@@ -572,6 +572,32 @@ const GAH_20261021_INDEXABLE_EFTA_IDS = new Set([
   "EFTA01703108",
 ]);
 
+// GAH-REDACTED-ARCHIVE-WAVE2-20261021: exact-ID source-status/editorial pages.
+// No raw OCR, source images, victim details, or source PDF in these indexable pages.
+const GAH_REDACTED_WAVE2_INDEXABLE_IDS = new Set([
+  "EFTA00035119",
+  "EFTA00035206",
+  "EFTA00035715",
+  "EFTA00035828",
+  "EFTA00035613",
+  "EFTA02858481",
+  "EFTA02858491",
+  "EFTA00579174",
+  "EFTA00579182",
+  "EFTA00224262",
+  "EFTA00176507",
+  "EFTA00080260",
+  "EFTA00153569",
+  "EFTA00128841",
+  "EFTA00643676",
+  "EFTA00646811",
+  "EFTA01410768",
+  "EFTA01245620",
+  "EFTA00704168",
+  "EFTA00153570",
+  "EFTA00153571",
+]);
+
 const UTILITY_NOINDEX_EXACT_PATHS = new Map([
   ["/pdf-lite", "pdf-viewer-utility"],
   ["/pdf-lite.html", "pdf-viewer-utility"],
@@ -834,6 +860,7 @@ function routePolicyForPath(pathname) {
     const id = path.slice("/archive/".length).toUpperCase();
     if (CORE_ARCHIVE_DOSSIERS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "verified-contextualized-archive-dossier", "index,follow");
     if (GAH_20261021_INDEXABLE_EFTA_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "privacy-screened-editorial-source-dossier", "index,follow");
+    if (GAH_REDACTED_WAVE2_INDEXABLE_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "redaction-safe-public-record-guide", "index,follow");
     if (OPEN_RECEIPT_SLOT_ARCHIVE_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "open-receipt-slot-placeholder", "noindex,follow");
     return routePolicy(AD_ROUTE_STATUS.exclude, "raw-or-generated-archive-source-card", "noindex,follow");
   }
@@ -1358,7 +1385,28 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA00035574", "2026-10-21"],
   ["/archive/EFTA00035657", "2026-10-21"],
   ["/archive/EFTA00035773", "2026-10-21"],
-  ["/archive/EFTA01703108", "2026-10-21"]
+  ["/archive/EFTA01703108", "2026-10-21"],
+  ["/archive/EFTA00035119", "2026-10-21"],
+  ["/archive/EFTA00035206", "2026-10-21"],
+  ["/archive/EFTA00035715", "2026-10-21"],
+  ["/archive/EFTA00035828", "2026-10-21"],
+  ["/archive/EFTA00035613", "2026-10-21"],
+  ["/archive/EFTA02858481", "2026-10-21"],
+  ["/archive/EFTA02858491", "2026-10-21"],
+  ["/archive/EFTA00579174", "2026-10-21"],
+  ["/archive/EFTA00579182", "2026-10-21"],
+  ["/archive/EFTA00224262", "2026-10-21"],
+  ["/archive/EFTA00176507", "2026-10-21"],
+  ["/archive/EFTA00080260", "2026-10-21"],
+  ["/archive/EFTA00153569", "2026-10-21"],
+  ["/archive/EFTA00128841", "2026-10-21"],
+  ["/archive/EFTA00643676", "2026-10-21"],
+  ["/archive/EFTA00646811", "2026-10-21"],
+  ["/archive/EFTA01410768", "2026-10-21"],
+  ["/archive/EFTA01245620", "2026-10-21"],
+  ["/archive/EFTA00704168", "2026-10-21"],
+  ["/archive/EFTA00153570", "2026-10-21"],
+  ["/archive/EFTA00153571", "2026-10-21"]
 ]);
 
 function serveCuratedArchiveSitemap(request) {
@@ -1375,7 +1423,7 @@ function serveCuratedArchiveSitemap(request) {
       "Content-Type": "application/xml; charset=utf-8",
       "Cache-Control": "public, max-age=300",
       "X-Content-Type-Options": "nosniff",
-      "X-GAH-Archive-Sitemap": "six-existing-plus-twelve-reviewed-editorial-dossiers"
+      "X-GAH-Archive-Sitemap": "thirty-nine-reviewed-public-record-guides"
     }
   });
 }
@@ -18785,6 +18833,10 @@ export default {
       }
       if (GAH_20261021_INDEXABLE_EFTA_IDS.has(archiveId)) {
         // The curated page is served locally, never the raw wiki/OCR source card.
+        return serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html");
+      }
+      if (GAH_REDACTED_WAVE2_INDEXABLE_IDS.has(archiveId)) {
+        // Serve the redaction-safe editorial card, including where raw upstream was 404.
         return serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html");
       }
       if (OPEN_RECEIPT_SLOT_ARCHIVE_IDS.has(archiveId)) {
