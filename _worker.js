@@ -1085,6 +1085,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/investigations/gratitude-america-money-trail-2015-2019", "/investigations/gratitude-america-money-trail-2015-2019.html"],
   ["/investigations/fbi-vault-redaction-chronology-phang", "/investigations/fbi-vault-redaction-chronology-phang.html"],
   ["/dispatches/epstein-source-watch-october-2026", "/dispatches/epstein-source-watch-october-2026.html"],
+  ["/dispatches/doj-oip-epstein-records-oct21-2026", "/dispatches/doj-oip-epstein-records-oct21-2026.html"],
   ["/investigations/fbi-review-holdings-vault-parts-12-13", "/investigations/fbi-review-holdings-vault-parts-12-13.html"],
   ["/guides/epstein-client-list-explained", "/guides/epstein-client-list-explained.html"],
   ["/guides/epstein-files-transparency-act", "/guides/epstein-files-transparency-act.html"],
@@ -1192,6 +1193,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/dispatches/doj-oip-epstein-records-oct21-2026", "2026-10-21"],
   ["https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026", "2026-10-15"],
   ["https://grokarchivehub.com/news", "2026-10-19"],
   ["https://grokarchivehub.com/guides", "2026-10-19"],
