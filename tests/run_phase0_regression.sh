@@ -33,6 +33,7 @@ run "exact-id policy" node tests/test_exact_id_policy.mjs
 run "Organic SEO visibility and source-linking" node tests/test_organic_visibility_20261020.mjs
 run "Curated archive sitemap foundation" node tests/test_archive_sitemap_foundation_20261020.mjs
 run "October 21 indexable archive promotion" node tests/test_archive_promotion_20261021.mjs
+run "NM Indyke-Kahn October 21 verified source investigation" node tests/test_nm_indyke_kahn_lawsuit_20261021.mjs
 run "Archive sitemap Worker runtime" node tests/test_archive_promotion_sitemap_runtime_20261021.mjs
 run "21 redaction-safe archive source guides" node tests/test_redacted_archive_wave2_20261021.mjs
 run "Official Reddit community social link" node tests/test_reddit_community_social_link.mjs
