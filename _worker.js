@@ -139,6 +139,7 @@ const FRONTDOOR_PATHS = new Set([
   "/investigations/birthday-book-source-object-not-identity-proof",
   "/investigations/efta-compliance-tracker",
   "/investigations/new-mexico-doj-epstein-records",
+  "/investigations/new-mexico-indyke-kahn-financial-network-2026",
   "/investigations/hold-the-letter",
   "/investigations/financial-trust-environmental-solutions-worldwide",
   "/investigations/barak-scheduling-records-2010-2018",
@@ -377,6 +378,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/investigations/black-family-partners-18m-to-5-5m-repricing", "sensitive-financial-investigation-ad-free"],
   ["/investigations/truesec-il-energy-twin-spvs-2013", "sensitive-private-corporate-investigation-ad-free"],
   ["/investigations/darren-indyke-investment-execution-layer", "sensitive-financial-investigation-ad-free"],
+  ["/investigations/new-mexico-indyke-kahn-financial-network-2026", "sensitive-financial-investigation-ad-free"],
   ["/archive", "raw-record-overview"],
   ["/barak", "presence-only-public-portal"],
   ["/barak/receipts", "receipt-index-source-navigation"],
@@ -1169,6 +1171,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/projects", "/projects.html"],
   ["/tips", "/tips.html"],
   ["/investigations/new-mexico-doj-epstein-records", "/investigations/new-mexico-doj-epstein-records.html"],
+  ["/investigations/new-mexico-indyke-kahn-financial-network-2026", "/investigations/new-mexico-indyke-kahn-financial-network-2026.html"],
   ["/evidence-briefs/todd-blanche-no-evidence", "/evidence-briefs/todd-blanche-no-evidence.html"],
   ["/evidence-briefs/financial-trust-black-family-partners-2012", "/evidence-briefs/financial-trust-black-family-partners-2012.html"],
   ["/evidence-briefs/shared-administration-no-money-crossover", "/evidence-briefs/shared-administration-no-money-crossover.html"],
@@ -1220,6 +1223,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/investigations/new-mexico-indyke-kahn-financial-network-2026", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/doj-oip-epstein-records-oct21-2026", "2026-10-21"],
   ["https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026", "2026-10-15"],
   ["https://grokarchivehub.com/news", "2026-10-19"],
