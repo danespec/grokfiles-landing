@@ -556,6 +556,22 @@ const CORE_ARCHIVE_DOSSIERS = new Map([
   }]
 ]);
 
+// GAH-ARCHIVE-PROMOTION-20261021: exact-ID privacy-screened static editorial pages only.
+const GAH_20261021_INDEXABLE_EFTA_IDS = new Set([
+  "EFTA00000468",
+  "EFTA00033413",
+  "EFTA00035053",
+  "EFTA00035035",
+  "EFTA00035420",
+  "EFTA00035421",
+  "EFTA00035442",
+  "EFTA00035570",
+  "EFTA00035574",
+  "EFTA00035657",
+  "EFTA00035773",
+  "EFTA01703108",
+]);
+
 const UTILITY_NOINDEX_EXACT_PATHS = new Map([
   ["/pdf-lite", "pdf-viewer-utility"],
   ["/pdf-lite.html", "pdf-viewer-utility"],
@@ -817,6 +833,7 @@ function routePolicyForPath(pathname) {
   if (path.startsWith("/archive/EFTA")) {
     const id = path.slice("/archive/".length).toUpperCase();
     if (CORE_ARCHIVE_DOSSIERS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "verified-contextualized-archive-dossier", "index,follow");
+    if (GAH_20261021_INDEXABLE_EFTA_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "privacy-screened-editorial-source-dossier", "index,follow");
     if (OPEN_RECEIPT_SLOT_ARCHIVE_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "open-receipt-slot-placeholder", "noindex,follow");
     return routePolicy(AD_ROUTE_STATUS.exclude, "raw-or-generated-archive-source-card", "noindex,follow");
   }
@@ -1327,7 +1344,19 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA00039025", "2026-07-13"],
   ["/archive/EFTA00039356", "2026-07-13"],
   ["/archive/EFTA00039416", "2026-07-13"],
-  ["/archive/EFTA00039660", "2026-07-13"]
+  ["/archive/EFTA00039660", "2026-07-13"],
+  ["/archive/EFTA00000468", "2026-10-21"],
+  ["/archive/EFTA00033413", "2026-10-21"],
+  ["/archive/EFTA00035053", "2026-10-21"],
+  ["/archive/EFTA00035035", "2026-10-21"],
+  ["/archive/EFTA00035420", "2026-10-21"],
+  ["/archive/EFTA00035421", "2026-10-21"],
+  ["/archive/EFTA00035442", "2026-10-21"],
+  ["/archive/EFTA00035570", "2026-10-21"],
+  ["/archive/EFTA00035574", "2026-10-21"],
+  ["/archive/EFTA00035657", "2026-10-21"],
+  ["/archive/EFTA00035773", "2026-10-21"],
+  ["/archive/EFTA01703108", "2026-10-21"]
 ]);
 
 function serveCuratedArchiveSitemap(request) {
@@ -1344,7 +1373,7 @@ function serveCuratedArchiveSitemap(request) {
       "Content-Type": "application/xml; charset=utf-8",
       "Cache-Control": "public, max-age=300",
       "X-Content-Type-Options": "nosniff",
-      "X-GAH-Archive-Sitemap": "six-curated-dossiers-only"
+      "X-GAH-Archive-Sitemap": "six-existing-plus-twelve-reviewed-editorial-dossiers"
     }
   });
 }
@@ -18751,6 +18780,10 @@ export default {
       const archiveId = path.slice("/archive/".length).toUpperCase();
       if (CORE_ARCHIVE_DOSSIERS.has(archiveId)) {
         return serveCoreArchiveDossier(request, env, archiveId);
+      }
+      if (GAH_20261021_INDEXABLE_EFTA_IDS.has(archiveId)) {
+        // The curated page is served locally, never the raw wiki/OCR source card.
+        return serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html");
       }
       if (OPEN_RECEIPT_SLOT_ARCHIVE_IDS.has(archiveId)) {
         return serveArchiveOpenReceiptSlot(request, archiveId);

@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import worker from "../_worker.js";
+const resp=await worker.fetch(new Request("https://grokarchivehub.com/sitemap-archive.xml"),{});
+assert.equal(resp.status,200);
+assert((resp.headers.get("Content-Type")||"").includes("application/xml"));
+const xml=await resp.text();
+const urls=[...xml.matchAll(/<loc>(https:\/\/grokarchivehub\.com\/archive\/(EFTA\d{8}))<\/loc>/g)];
+assert.equal(urls.length,18,"six original plus twelve curated");
+assert.equal(new Set(urls.map(x=>x[2])).size,18,"no duplicate");
+for(const id of ["EFTA00000468","EFTA00033413","EFTA00035035","EFTA00035053","EFTA00035420","EFTA00035421","EFTA00035442","EFTA00035570","EFTA00035574","EFTA00035657","EFTA00035773","EFTA01703108"]) assert(xml.includes("/archive/"+id+"</loc>"),"promoted "+id);
+for(const id of ["EFTA00035119","EFTA00035613","EFTA02858481","EFTA02858491","EFTA00080260","EFTA00153570","EFTA00153571","EFTA01245620","EFTA00704168"]) assert(!xml.includes("/archive/"+id+"</loc>"),"excluded "+id);
+const r=await worker.fetch(new Request("https://grokarchivehub.com/sitemap-index.xml"),{});
+assert.equal(r.status,200);
+assert((await r.text()).includes("https://grokarchivehub.com/sitemap-archive.xml"));
+console.log("PASS live Worker router renders 18-entry archive sitemap, excludes gated candidates, and advertises sitemap index");
