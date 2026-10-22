@@ -18946,7 +18946,20 @@ export default {
         headers.set("X-Robots-Tag", "noindex,follow");
         headers.set("X-GAH-Source-Gap", "underlying-original-unverified");
         headers.delete("Content-Length");
-        return new Response(request.method === "HEAD" ? null : editorial.body, {
+        // The shared front-door HTML transformer applies a generic index
+        // directive. Override that generated HTML for these four known gaps.
+        let safeBody = null;
+        if (request.method !== "HEAD") {
+          safeBody = await editorial.text();
+          safeBody = safeBody.replace(
+            /(<meta\s+name="robots"\s+content=")index,follow(?:,max-image-preview:none)?/i,
+            "$1noindex,follow,max-image-preview:none"
+          ).replace(
+            /(<meta\s+name="gah-indexability-policy"\s+content=")index,follow/i,
+            "$1noindex,follow"
+          );
+        }
+        return new Response(safeBody, {
           status: editorial.status, statusText: editorial.statusText, headers
         });
       }
