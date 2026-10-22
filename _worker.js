@@ -7827,7 +7827,7 @@ const GAH_EDITORIAL_BYLINES = new Set(["Grok Archive Hub Editorial Desk", "Grok 
 
 function publishedAuthorProfile(author) {
   if (!author || typeof author !== "object") return "";
-  if (author["@type"] === "Person" && author.name === "Thomas Werner") return GAH_OPERATOR_PROFILE;
+  if (author["@type"] === "Person" && author.name === "Thomas") return GAH_OPERATOR_PROFILE;
   if (["Organization", "NewsMediaOrganization"].includes(author["@type"]) && GAH_EDITORIAL_BYLINES.has(author.name)) return GAH_EDITORIAL_PROFILE;
   return "";
 }
@@ -7863,8 +7863,8 @@ function enhanceEditorialAuthorship(html, canonical) {
     if (/<a\b/i.test(contents)) return whole;
     const linked = contents.split(/(<[^>]*>)/g).map(part => {
       if (part.startsWith("<")) return part;
-      return part.replace(/Grok Archive Hub (?:Editorial|News|Research) Desk|Thomas Werner/g, name => {
-        const profile = name === "Thomas Werner" ? GAH_OPERATOR_PROFILE : GAH_EDITORIAL_PROFILE;
+      return part.replace(/Grok Archive Hub (?:Editorial|News|Research) Desk|Thomas/g, name => {
+        const profile = name === "Thomas" ? GAH_OPERATOR_PROFILE : GAH_EDITORIAL_PROFILE;
         return '<a rel="author" href="' + profile + '">' + name + "</a>";
       });
     }).join("");

@@ -13,7 +13,7 @@ assert.equal(parse(output).author['@type'],'Organization');
 assert.equal(parse(output).datePublished,'2026-09-01');
 assert.match(output, /<a rel="author" href="[^"]+#editorial-responsibility">Grok Archive Hub Editorial Desk<\/a>/);
 assert.equal(enhanceEditorialAuthorship(output,canonical),output,'idempotent links and schema');
-const person={...article,author:{'@type':'Person',name:'Thomas Werner'}};
+const person={...article,author:{'@type':'Person',name:'Thomas'}};
 assert.equal(parse(enhanceEditorialAuthorship(wrap(person),canonical)).author.url,'https://grokarchivehub.com/about-the-operator#operator');
 const external={...article,author:{'@type':'Person',name:'Independent Contributor',url:'https://example.com/profile'}};
 assert.deepEqual(parse(enhanceEditorialAuthorship(wrap(external),canonical)),external,'external authors preserved');
