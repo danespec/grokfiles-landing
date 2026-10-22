@@ -11,7 +11,10 @@ for(const r of records){
  const path="archive/"+r.id+".html", url="https://grokarchivehub.com/archive/"+r.id;
  const source=fs.readFileSync(new URL(path,root),"utf8");
  assert(source.includes('<link rel="canonical" href="'+url+'">'),r.id+" self canonical");
- if(unresolved.has(r.id)) assert(source.includes('name="robots" content="noindex,follow'),r.id+" source-gap noindex");
+ if(unresolved.has(r.id)) {
+   assert(source.includes('name="robots" content="noindex,follow'),r.id+" source-gap noindex");
+   assert(source.includes('name="gah-indexability-policy" content="noindex,follow"'),r.id+" frontend noindex policy");
+ }
  else assert(source.includes('name="robots" content="index,follow'),r.id+" verified guide indexable");
  assert(source.includes('name="gah-ad-eligible" content="false"'),r.id+" ads disabled");
  assert(source.includes('<script type="application/ld+json">'),r.id+" JSON-LD");
@@ -29,6 +32,7 @@ for(const r of records){
  }
 }
 assert(worker.includes('GAH_REDACTED_WAVE2_INDEXABLE_IDS.has(archiveId)'),"exact static route");
+assert(worker.includes('safeBody.replace(') && worker.includes('"$1noindex,follow,max-image-preview:none"'),"Worker must override shared-shell index metadata for source gaps");
 const olds=JSON.parse(fs.readFileSync(new URL("docs/seo/GAH_20261021_PROMOTED_EDITORIAL_SOURCES.json",root),"utf8"));
 assert.equal(olds.length,12);
 for(const r of olds) assert(!records.some(x=>x.id===r.id),"no duplicate canonical "+r.id);
