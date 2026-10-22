@@ -53,5 +53,7 @@ for(const slug of ['verified-source-cards','source-card-efta00067364-calendar-ep
  assert.ok(!body.includes('pending manual visual confirmation'));
  assert.ok(!body.includes('V110 can publish'));
  assert.ok(body.includes('AI-assisted'));
+ assert.equal((body.match(/<header\b/g)||[]).length,1,'one shared header');
+ assert.equal((body.match(/>Skip to content<\/a>/g)||[]).length,1,'one skip link');
 }
 console.log('PASS authorship identity, visible links, arrays, preserved external authors/dates, idempotency, real pipeline and four routed source reviews');
