@@ -576,6 +576,12 @@ const GAH_20261021_INDEXABLE_EFTA_IDS = new Set([
   "EFTA01703108",
 ]);
 
+// GAH-ARCHIVE-SOURCE-GAP-GATE-20261022:
+// Keep original-source gap guides browseable, but noindex until verified.
+const GAH_UNVERIFIED_ARCHIVE_SOURCE_GAPS = new Set([
+  "EFTA01245620", "EFTA00704168", "EFTA00153570", "EFTA00153571"
+]);
+
 // GAH-REDACTED-ARCHIVE-WAVE2-20261021: exact-ID source-status/editorial pages.
 // No raw OCR, source images, victim details, or source PDF in these indexable pages.
 const GAH_REDACTED_WAVE2_INDEXABLE_IDS = new Set([
@@ -1416,10 +1422,6 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA00643676", "2026-10-21"],
   ["/archive/EFTA00646811", "2026-10-21"],
   ["/archive/EFTA01410768", "2026-10-21"],
-  ["/archive/EFTA01245620", "2026-10-21"],
-  ["/archive/EFTA00704168", "2026-10-21"],
-  ["/archive/EFTA00153570", "2026-10-21"],
-  ["/archive/EFTA00153571", "2026-10-21"]
 ]);
 
 function serveCuratedArchiveSitemap(request) {
@@ -1436,7 +1438,7 @@ function serveCuratedArchiveSitemap(request) {
       "Content-Type": "application/xml; charset=utf-8",
       "Cache-Control": "public, max-age=300",
       "X-Content-Type-Options": "nosniff",
-      "X-GAH-Archive-Sitemap": "thirty-nine-reviewed-public-record-guides"
+      "X-GAH-Archive-Sitemap": "thirty-five-reviewed-four-source-gaps-excluded"
     }
   });
 }
@@ -18937,8 +18939,16 @@ export default {
         return serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html");
       }
       if (GAH_REDACTED_WAVE2_INDEXABLE_IDS.has(archiveId)) {
-        // Serve the redaction-safe editorial card, including where raw upstream was 404.
-        return serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html");
+        // Source-gap guides remain available, but not eligible for indexing.
+        const editorial = await serveFrontdoorEnhanced(request, env, "/archive/" + archiveId + ".html");
+        if (!GAH_UNVERIFIED_ARCHIVE_SOURCE_GAPS.has(archiveId)) return editorial;
+        const headers = new Headers(editorial.headers);
+        headers.set("X-Robots-Tag", "noindex,follow");
+        headers.set("X-GAH-Source-Gap", "underlying-original-unverified");
+        headers.delete("Content-Length");
+        return new Response(request.method === "HEAD" ? null : editorial.body, {
+          status: editorial.status, statusText: editorial.statusText, headers
+        });
       }
       if (OPEN_RECEIPT_SLOT_ARCHIVE_IDS.has(archiveId)) {
         return serveArchiveOpenReceiptSlot(request, archiveId);
