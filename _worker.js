@@ -4569,6 +4569,9 @@ async function proxyProofLayer(request, env = {}) {
     headers.set("X-Robots-Tag", "noindex,follow");
   }
   let body = enhanceHtmlText(await upstream.text(), request, meta, env);
+  if (proxiedPath === "/research/evidence/verified-source-cards") {
+    body = body.replaceAll("Verified Source Cards", "Source Review Leads");
+  }
 
   if (proxiedPath === "/photos") {
     const visualApiBridge = '<script data-cfasync="false" data-gah-visual-evidence-api="v1">(function(){const install=function(){' +
