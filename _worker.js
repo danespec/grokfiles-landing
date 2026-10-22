@@ -19128,6 +19128,20 @@ export default {
       });
     }
 
+    // Brave Creators owner verification: serve exact uploaded text through Pages Worker.
+    if ((request.method === "GET" || request.method === "HEAD") &&
+        url.hostname === APEX_HOST &&
+        path === "/.well-known/brave-rewards-verification.txt") {
+      return new Response(request.method === "HEAD" ? null : "This is a Brave Creators publisher verification file.\n\nDomain: grokarchivehub.com\nToken: 75c20646c6bd99026e0b8e9f1da358094651bc5fe9169eb97d9c1a4fa024addb\n", {
+        status: 200,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=300",
+          "X-Robots-Tag": "noindex,nofollow"
+        }
+      });
+    }
+
     if ((request.method === "GET" || request.method === "HEAD") && path === "/robots.txt") {
       return new Response(request.method === "HEAD" ? null : AGENT_READY_ROBOTS_TXT, {
         status: 200,
