@@ -6711,14 +6711,23 @@ function firstHtmlMatch(html, regex) {
 }
 
 function htmlMetaContent(html, key, value) {
-  const tagRegex = /<meta\b[^>]*>/gi;
+  // Keep quoted punctuation intact: apostrophes and > are valid inside a
+  // double-quoted attribute, and double quotes are valid inside single quotes.
+  const tagRegex = /<meta\b(?:"[^"]*"|'[^']*'|[^'">])*>/gi;
   let match;
   while ((match = tagRegex.exec(String(html || "")))) {
-    const tag = match[0];
-    const name = tag.match(/\bname\s*=\s*["']([^"']+)["']/i)?.[1];
-    const property = tag.match(/\bproperty\s*=\s*["']([^"']+)["']/i)?.[1];
-    if ((key === "name" && name === value) || (key === "property" && property === value)) {
-      return tag.match(/\bcontent\s*=\s*["']([^"']*)["']/i)?.[1] || "";
+    const attributes = Object.create(null);
+    const attributeRegex = /\s([^\s=<>/'"]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))/g;
+    let attribute;
+    while ((attribute = attributeRegex.exec(match[0]))) {
+      const name = attribute[1].toLowerCase();
+      // HTML keeps the first occurrence of a duplicate attribute.
+      if (!Object.prototype.hasOwnProperty.call(attributes, name)) {
+        attributes[name] = attribute[2] ?? attribute[3] ?? attribute[4];
+      }
+    }
+    if ((key === "name" || key === "property") && attributes[key] === value) {
+      return attributes.content || "";
     }
   }
   return "";
@@ -7853,12 +7862,18 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
     const structuredTag = editorialStructuredDataTag(policyPath, title, description, canonical, socialImage);
     if (structuredTag) tags.push(structuredTag);
   }
-  if (!htmlMetaContent(body, "name", "gah-ad-eligible")) tags.push(`<meta name="gah-ad-eligible" content="${policy.adEligible ? "true" : "false"}">`);
-  if (!htmlMetaContent(body, "name", "gah-ad-status")) tags.push(`<meta name="gah-ad-status" content="${escapeHtml(policy.adStatus)}">`);
-  if (!htmlMetaContent(body, "name", "gah-ad-policy")) tags.push(`<meta name="gah-ad-policy" content="${escapeHtml(policy.reason)}">`);
-  if (!htmlMetaContent(body, "name", "gah-ad-zone")) tags.push(`<meta name="gah-ad-zone" content="${escapeHtml(policy.zone || "none")}">`);
-  if (!htmlMetaContent(body, "name", "gah-adsense-approved")) tags.push(`<meta name="gah-adsense-approved" content="${adsenseApproved(env) ? "true" : "false"}">`);
-  if (!htmlMetaContent(body, "name", "gah-indexability-policy")) tags.push(`<meta name="gah-indexability-policy" content="${escapeHtml(policy.indexability)}">`);
+  // Static snapshots can carry obsolete policy tags. Reflect the same current
+  // route policy used for response headers and placements, not the snapshot.
+  for (const [name, content] of [
+    ["gah-ad-eligible", policy.adEligible ? "true" : "false"],
+    ["gah-ad-status", policy.adStatus],
+    ["gah-ad-policy", policy.reason],
+    ["gah-ad-zone", policy.zone || "none"],
+    ["gah-adsense-approved", adsenseApproved(env) ? "true" : "false"],
+    ["gah-indexability-policy", policy.indexability]
+  ]) {
+    body = forceNamedMeta(body, name, content);
+  }
   if (tags.length) body = body.replace(/<\/head>/i, `  ${tags.join("\n  ")}\n</head>`);
   if (policyPath === "/pdf-lite" || policyPath === "/pdf-lite.html") {
     body = addHtmlClass(body, "gah-pdf-lite-document");
