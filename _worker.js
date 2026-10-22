@@ -6738,7 +6738,7 @@ function stripCloudflareHelperAssets(html) {
   // Preserve ordinary data scripts, including JSON-LD, unchanged.
   return String(html || "")
     .replace(/<script\b[^>]*>/gi, tag => {
-      const restored = tag.replace(/\btype=(["'])[a-f0-9]{32}-(text\/javascript|application\/javascript|module)\1/gi, 'type=$1$2$1');
+      const restored = tag.replace(/\btype=(["'])(?:[a-f0-9]{24}|[a-f0-9]{32})-(text\/javascript|application\/javascript|module)\1/gi, 'type=$1$2$1');
       if (restored === tag || /\bdata-cfasync=/.test(restored)) return restored;
       return restored.replace(/<script\b/i, '<script data-cfasync="false"');
     })
