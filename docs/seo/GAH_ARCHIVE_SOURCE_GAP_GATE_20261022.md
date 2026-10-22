@@ -17,3 +17,6 @@ of document destruction or court noncompliance.
 Renew promotion only with independently verified original evidence,
 document-specific source context, and completed victim/financial privacy
 review. Google controls actual indexing; noindex is a request to deindex.
+
+## Rendering correction
+The shared HTML enhancement was overriding static noindex meta with index,follow. The Worker now enforces noindex in the rendered HTML as well as the response header. Both directives are checked on the live hostname.
