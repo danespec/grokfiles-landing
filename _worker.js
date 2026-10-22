@@ -4511,6 +4511,10 @@ async function proxyProofLayer(request, env = {}) {
   }
   target.port = "";
   if (proxiedPath === "/photos") target.pathname = "/photos/incoming-visual/index.html";
+  // Fetch the corrected editorial snapshots without reusing older CDN objects.
+  if (["/research-index", "/research/evidence/verified-source-cards", "/research/evidence/source-card-efta00095936"].includes(proxiedPath)) {
+    target.searchParams.set("gah_editorial_revision", "20261021");
+  }
 
   const headersForUpstream = new Headers(request.headers);
   // SEC-WIKI-BACKEND-002: client-provided token cannot impersonate the apex Worker.
@@ -7894,7 +7898,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
     body = body.replace(/<\/head>/i, '  <link rel="ai-catalog" href="/.well-known/ai-catalog.json">\n</head>');
   }
   if (!/src=["']\/agent-tools\.js["']/i.test(body)) {
-    body = body.replace(/<\/head>/i, '  <script src="/agent-tools.js" defer></script>\n</head>');
+    body = body.replace(/<\/head>/i, '  <script src="/agent-tools.js?v=20261021" defer></script>\n</head>');
   }
   return ensureConsentScript(applyAdsensePlacements(body, policy, env), env);
 }
