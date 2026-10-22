@@ -1092,6 +1092,11 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/research/evidence/verified-source-cards", "/research/evidence/verified-source-cards.html"],
+  ["/research/evidence/source-card-efta00067364-calendar-epstein", "/research/evidence/source-card-efta00067364-calendar-epstein.html"],
+  ["/research/evidence/source-card-efta00082040-black-book-epstein", "/research/evidence/source-card-efta00082040-black-book-epstein.html"],
+  ["/research/evidence/source-card-efta00095936", "/research/evidence/source-card-efta00095936.html"],
+
   ["/guides", "/guides.html"],
   ["/news", "/news.html"],
   ["/news/bank-of-america-aml-penalties-epstein-settlement-2026", "/news/bank-of-america-aml-penalties-epstein-settlement-2026.html"],
@@ -4513,7 +4518,7 @@ async function proxyProofLayer(request, env = {}) {
   if (proxiedPath === "/photos") target.pathname = "/photos/incoming-visual/index.html";
   // Fetch the corrected editorial snapshots without reusing older CDN objects.
   if (["/research-index", "/research/evidence/verified-source-cards", "/research/evidence/source-card-efta00095936"].includes(proxiedPath)) {
-    target.searchParams.set("gah_editorial_revision", "20261021");
+    target.searchParams.set("gah_editorial_revision", "20261021-source-context");
   }
 
   const headersForUpstream = new Headers(request.headers);
@@ -7816,6 +7821,63 @@ function editorialStructuredDataTag(path, title, description, canonical, image) 
   return `<script type="application/ld+json">${payload}</script>`;
 }
 
+const GAH_EDITORIAL_PROFILE = "https://grokarchivehub.com/about-the-operator#editorial-responsibility";
+const GAH_OPERATOR_PROFILE = "https://grokarchivehub.com/about-the-operator#operator";
+const GAH_EDITORIAL_BYLINES = new Set(["Grok Archive Hub Editorial Desk", "Grok Archive Hub News Desk", "Grok Archive Hub Research Desk", "Grok Archive Hub"]);
+
+function publishedAuthorProfile(author) {
+  if (!author || typeof author !== "object") return "";
+  if (author["@type"] === "Person" && author.name === "Thomas Werner") return GAH_OPERATOR_PROFILE;
+  if (["Organization", "NewsMediaOrganization"].includes(author["@type"]) && GAH_EDITORIAL_BYLINES.has(author.name)) return GAH_EDITORIAL_PROFILE;
+  return "";
+}
+
+function enhanceEditorialAuthorship(html, canonical) {
+  let primaryAuthor = null;
+  let body = String(html || "").replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, (whole, attrs, json) => {
+    if (!/\btype\s*=\s*["']application\/ld\+json["']/i.test(attrs)) return whole;
+    let data;
+    try { data = JSON.parse(json); } catch { return whole; }
+    let changed = false;
+    const visit = node => {
+      if (!node || typeof node !== "object") return;
+      if (Array.isArray(node)) { node.forEach(visit); return; }
+      const types = Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]];
+      if (types.some(type => ["Article", "NewsArticle", "BlogPosting"].includes(type))) {
+        const authors = Array.isArray(node.author) ? node.author : [node.author];
+        const identity = typeof node.mainEntityOfPage === "string" ? node.mainEntityOfPage : node.mainEntityOfPage?.["@id"] || node.mainEntityOfPage?.url || node.url;
+        for (const author of authors) {
+          const profile = publishedAuthorProfile(author);
+          if (!profile) continue;
+          if (!author.url) { author.url = profile; changed = true; }
+          if (identity === canonical && !primaryAuthor) primaryAuthor = { name: author.name, url: author.url };
+        }
+      }
+      Object.values(node).forEach(visit);
+    };
+    visit(data);
+    return changed ? "<script" + attrs + ">" + JSON.stringify(data).replace(/</g, "\\u003c") + "</script>" : whole;
+  });
+  body = body.replace(/<(p|div|span)\b([^>]*\bclass\s*=\s*["'][^"']*\bbyline\b[^"']*["'][^>]*)>([\s\S]*?)<\/\1>/gi, (whole, tag, attrs, contents) => {
+    // Preserve bylines already linked by the publisher.
+    if (/<a\b/i.test(contents)) return whole;
+    const linked = contents.split(/(<[^>]*>)/g).map(part => {
+      if (part.startsWith("<")) return part;
+      return part.replace(/Grok Archive Hub (?:Editorial|News|Research) Desk|Thomas Werner/g, name => {
+        const profile = name === "Thomas Werner" ? GAH_OPERATOR_PROFILE : GAH_EDITORIAL_PROFILE;
+        return '<a rel="author" href="' + profile + '">' + name + "</a>";
+      });
+    }).join("");
+    return "<" + tag + attrs + ">" + linked + "</" + tag + ">";
+  });
+  if (primaryAuthor && !/\bclass\s*=\s*["'][^"']*\bbyline\b/i.test(body) && !body.includes('data-gah-authorship="v1"')) {
+    const note = '<aside class="note" data-gah-authorship="v1" aria-label="Editorial responsibility"><p>Editorial responsibility: <a rel="author" href="' + escapeHtml(primaryAuthor.url) + '">' + escapeHtml(primaryAuthor.name) + '</a> · <a href="/editorial-policy">Editorial process</a> · <a href="/corrections">Corrections</a></p></aside>';
+    if (/<\/main>/i.test(body)) body = body.replace(/<\/main>/i, note + "</main>");
+    else if (/<\/article>/i.test(body)) body = body.replace(/<\/article>/i, note + "</article>");
+  }
+  return body;
+}
+
 function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   let body = stripCloudflareHelperAssets(html);
   if (!/<head[\s>]/i.test(body)) return body;
@@ -7903,6 +7965,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   if (!/src=["']\/agent-tools\.js["']/i.test(body)) {
     body = body.replace(/<\/head>/i, '  <script src="/agent-tools.js?v=20261021" defer></script>\n</head>');
   }
+  body = enhanceEditorialAuthorship(body, canonical);
   return ensureConsentScript(applyAdsensePlacements(body, policy, env), env);
 }
 
