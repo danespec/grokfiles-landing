@@ -1,0 +1,112 @@
+{
+  "schema": "gah.source-context-reviews.v1",
+  "review_date": "2026-10-21",
+  "method": "AI-assisted extracted-text search and rendered-page inspection",
+  "human_certification": false,
+  "review_count": 3,
+  "reviews": [
+    {
+      "id": "EFTA00067364",
+      "slug": "source-card-efta00067364-calendar-epstein",
+      "title": "A defense memorandum’s reference to requested calendars",
+      "description": "The calendar match is a subpoena quotation in a defense memorandum, not a produced calendar.",
+      "pages": 11,
+      "sha256": "c06476279304483040848db26cf4337e66bd23a6cc980befadd93025bef3e7d0",
+      "checked_pages": [
+        1,
+        2,
+        11
+      ],
+      "record_type": "Defense advocacy memorandum",
+      "finding": "The earlier Calendar label was too broad. The PDF is an 11-page Kirkland & Ellis memorandum arguing that prosecutors mishandled the Epstein matter. Its calendar reference appears in a footnote describing records requested from a defense investigator. It is not a calendar, appointment ledger or proof that the requested records were produced.",
+      "checks": [
+        [
+          "1 · EFTA00067364",
+          "The heading identifies Kirkland & Ellis and a summary of alleged misconduct in the Epstein matter.",
+          "The document presents defense counsel’s position; its accusations are not findings adopted by GAH."
+        ],
+        [
+          "2 · EFTA00067365",
+          "Paragraph 9 and footnote 1 discuss a subpoena directed at a defense investigator. The footnote lists appointment calendars/datebooks among requested materials.",
+          "The word match describes the requested scope. It does not show a calendar entry, meeting, production return or attendee."
+        ],
+        [
+          "11 · EFTA00067374",
+          "The concluding page asks for a further investigation before prosecution proceeds.",
+          "This reinforces the advocacy context; it is not a court ruling on the memorandum’s allegations."
+        ]
+      ],
+      "limits": "The subpoena cited as Tab 17 is not reproduced in this 11-page PDF. This review does not independently authenticate that subpoena, establish the completeness of any production, or assess every misconduct allegation. Redacted identities are not inferred.",
+      "correction": "The generic Calendar heading and unverified links to other document anchors have been replaced with the record’s actual type and page-specific limits."
+    },
+    {
+      "id": "EFTA00082040",
+      "slug": "source-card-efta00082040-black-book-epstein",
+      "title": "An email chain containing a Black Book news reference",
+      "description": "A Black Book reference appears in a pasted news excerpt within a three-page email chain, not in an address-book scan.",
+      "pages": 3,
+      "sha256": "e8a4baf9a58f311154d3f66791c035c2133fc7cad806d685c8d1f647d80b8fe4",
+      "checked_pages": [
+        1,
+        2,
+        3
+      ],
+      "record_type": "Redacted email chain with pasted reporting and embedded email images",
+      "finding": "The phrase match is real, but the original Black Book label hid the source layer. Page 1 contains a pasted Bloomberg excerpt that discusses Epstein’s contact book. The three-page PDF is an email chain, not the book itself and not a complete list of its entries.",
+      "checks": [
+        [
+          "1 · EFTA00082040",
+          "A forwarded email dated July 26, 2019 contains a Bloomberg link and pasted reporting. The contact-book reference sits inside that reporting.",
+          "This establishes where the reference appears. It does not independently verify the news report or authenticate a contact-book entry."
+        ],
+        [
+          "2 · EFTA00082041",
+          "An embedded email image shows a September 2005 business solicitation and forwarding text.",
+          "Its presence in the chain does not establish a completed investment or prove that a redacted account belonged to a particular person."
+        ],
+        [
+          "3 · EFTA00082042",
+          "A second embedded email image concerns a 2005 meeting invitation; older forwarding text appears below it.",
+          "An invitation or later attribution is not evidence of attendance, agreement or completed action."
+        ]
+      ],
+      "limits": "The pasted news excerpt is a secondary source within the released record. A contact-book claim requires the actual book page and separate identity checks. This review does not identify redacted accounts, validate the embedded messages’ complete transmission history, or infer wrongdoing from correspondence.",
+      "correction": "The generic Black Book heading and unverified cross-document anchors have been replaced with the email-chain context. The copied news article is not reproduced here."
+    },
+    {
+      "id": "EFTA00095936",
+      "slug": "source-card-efta00095936",
+      "title": "A shell-company match in the Parnas section of a news digest",
+      "description": "The shell-company match belongs to Parnas reporting inside a mixed SDNY news digest; it does not establish an Epstein-company link.",
+      "pages": 19,
+      "sha256": "685959b2819cccea8db6fe775c5c0e8ecf6d9c6d9ed7b868a84e9b706a1ce8e7",
+      "checked_pages": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "record_type": "SDNY news-clips email and multi-topic press compilation",
+      "finding": "The earlier Shell Company card omitted the article boundary. This 19-page PDF is a news digest dated February 5, 2020. Its shell-company phrase appears in reporting about Lev Parnas and campaign financing, separately from the digest’s Epstein coverage. Sharing one PDF does not establish a connection between the subjects.",
+      "checks": [
+        [
+          "1 · EFTA00095936",
+          "The email subject and attachment identify the February 5, 2020 SDNY news-clips digest.",
+          "The file is a compilation of press coverage, not a transaction record or investigative finding."
+        ],
+        [
+          "2 · EFTA00095937",
+          "The contents list Epstein and Parnas as separate topics alongside several other matters.",
+          "The shared digest container is not evidence that the listed matters form one case or relationship."
+        ],
+        [
+          "5–6 · EFTA00095940–EFTA00095941",
+          "Page 5 credits ProPublica and Ilya Marritz. The article continues on page 6, where the shell-company phrase discusses Parnas.",
+          "The match belongs to that press article. It does not establish an Epstein-related company, payment or financial link."
+        ]
+      ],
+      "limits": "This review verifies the phrase’s source context, not the underlying campaign-finance allegations. It does not treat the press compilation as a bank record or a substitute for the cited filings. No conclusion is drawn from redacted sender or recipient identities.",
+      "correction": "The old liability-focused keyword card, mismatched line anchor and copied OCR excerpt have been replaced with a page-based context correction. The file hash matches the hash previously displayed."
+    }
+  ]
+}
