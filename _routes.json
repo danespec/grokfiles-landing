@@ -4,6 +4,7 @@
     "/*"
   ],
   "exclude": [
+    "/.well-known/brave-rewards-verification.txt",
     "/assets/images/barak-archive-hero-027.png",
     "/assets/v3-barak-027.js",
     "/assets/barak-portal-027.js",
