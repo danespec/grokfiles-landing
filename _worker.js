@@ -78,6 +78,7 @@ const FRONTDOOR_PATHS = new Set([
   "/news/phang-fbi-notes-in-camera-october-16",
   "/news/epstein-wall-street-records-act-2026",
   "/news/state-attorneys-general-efta-ii-2026",
+  "/news/raskin-epstein-state-foreign-mlat-oversight-2026",
   "/news/gadeco-chinese-consortium-declined",
   "/news/efta00000468-removal-restoration-audit",
   "/community",
@@ -316,6 +317,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/news/phang-fbi-notes-in-camera-october-16", "sensitive-public-records-news-or-guide-ad-free"],
   ["/news/epstein-wall-street-records-act-2026", "sensitive-public-records-news-or-guide-ad-free"],
   ["/news/state-attorneys-general-efta-ii-2026", "sensitive-public-records-news-or-guide-ad-free"],
+  ["/news/raskin-epstein-state-foreign-mlat-oversight-2026", "sensitive-public-records-news-or-guide-ad-free"],
   ["/news/gadeco-chinese-consortium-declined", "sensitive-public-records-news-or-guide-ad-free"],
   ["/news/efta00000468-removal-restoration-audit", "sensitive-public-records-news-or-guide-ad-free"],
   ["/community", "source-first-community-intake-ad-free"],
@@ -1113,6 +1115,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/news/phang-fbi-notes-in-camera-october-16", "/news/phang-fbi-notes-in-camera-october-16.html"],
   ["/news/epstein-wall-street-records-act-2026", "/news/epstein-wall-street-records-act-2026.html"],
   ["/news/state-attorneys-general-efta-ii-2026", "/news/state-attorneys-general-efta-ii-2026.html"],
+  ["/news/raskin-epstein-state-foreign-mlat-oversight-2026", "/news/raskin-epstein-state-foreign-mlat-oversight-2026.html"],
   ["/news/gadeco-chinese-consortium-declined", "/news/gadeco-chinese-consortium-declined.html"],
   ["/news/efta00000468-removal-restoration-audit", "/news/efta00000468-removal-restoration-audit.html"],
   ["/community", "/community.html"],
@@ -1228,6 +1231,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/news/raskin-epstein-state-foreign-mlat-oversight-2026", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/new-mexico-indyke-kahn-financial-network-2026", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/doj-oip-epstein-records-oct21-2026", "2026-10-21"],
   ["https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026", "2026-10-15"],
@@ -8119,6 +8123,7 @@ async function assetJson(request, env, assetPath) {
 function rssEligibleEditorialPath(path) {
   const clean = cleanPath(path);
   if (clean === "/news/bank-of-america-aml-penalties-epstein-settlement-2026") return true;
+  if (clean === "/news/raskin-epstein-state-foreign-mlat-oversight-2026") return true;
   if (/^\/evidence-briefs\/[^/]+$/.test(clean)) return true;
   if (/^\/document-autopsies\/[^/]+$/.test(clean)) return true;
   if (/^\/dispatches\/[^/]+$/.test(clean)) return true;
