@@ -1097,7 +1097,7 @@ const METHODOLOGY_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/methodology/confidence-labels-open-slots", "2026-07-01"]
 ];
 const BOOK_OF_BLACK_SITEMAP_ENTRIES = [
-  ["https://grokarchivehub.com/book-of-black", "2026-07-15"],
+  ["https://grokarchivehub.com/book-of-black", "2026-10-23"],
   ["https://grokarchivehub.com/book-of-black/methodology", "2026-07-15"]
 ];
 const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
@@ -1287,7 +1287,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-20"],
   ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-10-20"],
   ["https://grokarchivehub.com/photos", "2026-10-07"],
-  ["https://grokarchivehub.com/archive", "2026-10-21"],
+  ["https://grokarchivehub.com/archive", "2026-10-23"],
   ["https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit", "2026-10-16"],
   ["https://grokarchivehub.com/investigations/black-phaidon-2015-tax-model-house-oversight", "2026-10-16"],
   ["https://grokarchivehub.com/investigations/palm-beach-2006-police-jet-aviation-call-records", "2026-10-16"],
@@ -1337,7 +1337,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/projects", "2026-08-25"],
   ["https://grokarchivehub.com/tips", "2026-08-25"],
   ["https://grokarchivehub.com/start", "2026-07-01"],
-  ["https://grokarchivehub.com/archive-scope", "2026-10-05"],
+  ["https://grokarchivehub.com/archive-scope", "2026-10-23"],
   ["https://grokarchivehub.com/investigations", "2026-10-06"],
   ["https://grokarchivehub.com/investigations/mcc-final-48-hours-source-chain", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/doj-oig-report-as-backbone", "2026-07-12"],
@@ -7082,6 +7082,7 @@ function v3DiscoveryLinksHtml() {
       <a href="/topics">Topics</a>
       <a href="https://files.grokarchivehub.com/">File Host</a>
       <a href="/research-index">Research Index</a>
+      <a href="/photos">Photos &amp; screenshots</a>
     </div>`;
 }
 
