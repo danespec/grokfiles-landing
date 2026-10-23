@@ -6993,6 +6993,7 @@ function addHtmlClass(body, className) {
 }
 
 const V3_STATIC_ASSET_PATHS = new Set([
+  "/assets/header-responsive-063.css",
   "/assets/card-chalkboard.jpg",
   "/assets/card-courthouse.jpg",
   "/assets/card-pinboard.jpg",
@@ -7455,6 +7456,10 @@ function ensureV3DocumentShell(body) {
   }
   if (!html.includes("data-gah-social-ui") && /<\/head>/i.test(html)) {
     html = html.replace(/<\/head>/i, `  ${v3SocialUiStyle()}\n</head>`);
+  }
+  // Fresh asset URL avoids stale copies of the old header breakpoint.
+  if (!html.includes("/assets/header-responsive-063.css") && /<\/head>/i.test(html)) {
+    html = html.replace(/<\/head>/i, '  <link rel="stylesheet" href="/assets/header-responsive-063.css">\n</head>');
   }
   const compatStyle = v3LegacyCompatibilityStyle(html);
   if (compatStyle && !html.includes("data-gah-v3-legacy-compat") && /<\/head>/i.test(html)) {

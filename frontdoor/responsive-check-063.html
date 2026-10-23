@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="gah-ad-eligible" content="false">
+  <title>Responsive layout check · GAH maintenance</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#20242a;color:#f4f4f4;font:16px/1.5 system-ui,sans-serif}
+    header{padding:16px;position:sticky;top:0;background:#20242a;z-index:1}h1{font-size:20px;margin:0 0 8px}p{margin:4px 0 12px}
+    label{display:inline-flex;align-items:center;gap:8px;margin:0 16px 8px 0}select{padding:8px;font:inherit}
+    .stage{padding:16px;overflow:auto}iframe{display:block;width:375px;height:900px;border:0;background:#0b0907;box-sizing:content-box}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive layout check</h1>
+    <p>Maintenance preview. The frame loads the real public site at the selected CSS viewport width.</p>
+    <label>Viewport width <select id="width" aria-label="Viewport width">
+      <option>320</option><option selected>375</option><option>390</option><option>430</option><option>720</option><option>768</option>
+      <option>1024</option><option>1100</option><option>1280</option><option>1348</option><option>1440</option><option>1600</option>
+    </select></label>
+    <label>Test page <select id="route" aria-label="Test page">
+      <option value="/">Homepage</option><option value="/search">Archive search</option>
+      <option value="/investigations/hold-the-letter">Investigation</option>
+    </select></label>
+  </header>
+  <div class="stage"><iframe title="Responsive site preview" src="/" width="375" height="900"></iframe></div>
+  <script>
+    const preview=document.querySelector('iframe');
+    document.getElementById('width').addEventListener('change',event=>{preview.style.width=event.target.value+'px';});
+    document.getElementById('route').addEventListener('change',event=>{preview.src=event.target.value;});
+  </script>
+</body>
+</html>
