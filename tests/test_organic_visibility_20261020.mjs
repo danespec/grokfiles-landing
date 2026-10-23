@@ -37,5 +37,5 @@ for (const url of ["/guides/how-to-search-epstein-files", "/guides/doj-epstein-d
  assert(worker.includes('["https://grokarchivehub.com'+url+'", "2026-10-20"]'),"sitemap lastmod for edited page: "+url);
 }
 assert(worker.includes('const GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS'));
-for(const path of ["", "archive"]) assert(worker.includes('["https://grokarchivehub.com/'+path+'", "2026-10-21"]'),"updated sitemap lastmod: "+path);
+for(const [path,date] of [["","2026-10-23"],["archive","2026-10-23"]]) assert(worker.includes('["https://grokarchivehub.com/'+path+'", "'+date+'"]'),"updated sitemap lastmod: "+path);
 console.log("PASS niche homepage metadata and source directory; exact-ID dossier and direct links; canonical, sitemap, search provenance and caution");

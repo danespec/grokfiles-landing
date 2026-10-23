@@ -1328,7 +1328,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale", "2026-09-30"],
-  ["https://grokarchivehub.com/", "2026-10-21"],
+  ["https://grokarchivehub.com/", "2026-10-23"],
   ["https://grokarchivehub.com/investigations/hold-the-letter", "2026-10-06"],
   ["https://grokarchivehub.com/research/epstein-final-48-hours-mcc", "2026-10-02"],
   ["https://grokarchivehub.com/research/evidence/birthday-book", "2026-10-02"],
