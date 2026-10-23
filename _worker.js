@@ -589,7 +589,13 @@ const GAH_20261021_INDEXABLE_EFTA_IDS = new Set([
 // GAH-ARCHIVE-SOURCE-GAP-GATE-20261022:
 // Keep original-source gap guides browseable, but noindex until verified.
 const GAH_UNVERIFIED_ARCHIVE_SOURCE_GAPS = new Set([
-  "EFTA01245620", "EFTA00704168", "EFTA00153570", "EFTA00153571"
+  "EFTA01245620", "EFTA00704168", "EFTA00153570", "EFTA00153571",
+  "EFTA00035206",
+  "EFTA00035715",
+  "EFTA00035828",
+  "EFTA00579174",
+  "EFTA00579182",
+  "EFTA00643676",
 ]);
 
 // GAH-REDACTED-ARCHIVE-WAVE2-20261021: exact-ID source-status/editorial pages.
@@ -878,6 +884,7 @@ function routePolicyForPath(pathname) {
   if (path.startsWith("/news/phang-docket-watch")) return routePolicy(AD_ROUTE_STATUS.exclude, "phang-news-backing-files-absent", "noindex,follow");
   if (path.startsWith("/archive/EFTA")) {
     const id = path.slice("/archive/".length).toUpperCase();
+    if (GAH_UNVERIFIED_ARCHIVE_SOURCE_GAPS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "unverified-source-locator", "noindex,follow");
     if (CORE_ARCHIVE_DOSSIERS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "verified-contextualized-archive-dossier", "index,follow");
     if (GAH_20261021_INDEXABLE_EFTA_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "privacy-screened-editorial-source-dossier", "index,follow");
     if (GAH_REDACTED_WAVE2_INDEXABLE_IDS.has(id)) return routePolicy(AD_ROUTE_STATUS.exclude, "redaction-safe-public-record-guide", "index,follow");
@@ -1091,10 +1098,10 @@ const REDACTED_FILES_LASTMOD = "2026-06-29";
 const METHODOLOGY_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/methodology", "2026-10-02"],
   ["https://grokarchivehub.com/methodology/digitization-ocr-pipeline", "2026-10-02"],
-  ["https://grokarchivehub.com/methodology/how-not-to-overread-flight-logs", "2026-07-01"],
-  ["https://grokarchivehub.com/methodology/redaction-breadcrumbs", "2026-07-01"],
-  ["https://grokarchivehub.com/methodology/source-map-methodology", "2026-07-01"],
-  ["https://grokarchivehub.com/methodology/confidence-labels-open-slots", "2026-07-01"]
+  ["https://grokarchivehub.com/methodology/how-not-to-overread-flight-logs", "2026-10-23"],
+  ["https://grokarchivehub.com/methodology/redaction-breadcrumbs", "2026-10-23"],
+  ["https://grokarchivehub.com/methodology/source-map-methodology", "2026-10-23"],
+  ["https://grokarchivehub.com/methodology/confidence-labels-open-slots", "2026-10-23"]
 ];
 const BOOK_OF_BLACK_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/book-of-black", "2026-10-23"],
@@ -1286,7 +1293,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/epstein-files-transparency-act", "2026-10-11"],
   ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-20"],
   ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-10-20"],
-  ["https://grokarchivehub.com/photos", "2026-10-07"],
+  ["https://grokarchivehub.com/photos", "2026-10-23"],
   ["https://grokarchivehub.com/archive", "2026-10-23"],
   ["https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit", "2026-10-16"],
   ["https://grokarchivehub.com/investigations/black-phaidon-2015-tax-model-house-oversight", "2026-10-16"],
@@ -1426,20 +1433,14 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA00035773", "2026-10-21"],
   ["/archive/EFTA01703108", "2026-10-21"],
   ["/archive/EFTA00035119", "2026-10-21"],
-  ["/archive/EFTA00035206", "2026-10-21"],
-  ["/archive/EFTA00035715", "2026-10-21"],
-  ["/archive/EFTA00035828", "2026-10-21"],
   ["/archive/EFTA00035613", "2026-10-21"],
   ["/archive/EFTA02858481", "2026-10-21"],
   ["/archive/EFTA02858491", "2026-10-21"],
-  ["/archive/EFTA00579174", "2026-10-21"],
-  ["/archive/EFTA00579182", "2026-10-21"],
   ["/archive/EFTA00224262", "2026-10-21"],
   ["/archive/EFTA00176507", "2026-10-21"],
   ["/archive/EFTA00080260", "2026-10-21"],
   ["/archive/EFTA00153569", "2026-10-21"],
   ["/archive/EFTA00128841", "2026-10-21"],
-  ["/archive/EFTA00643676", "2026-10-21"],
   ["/archive/EFTA00646811", "2026-10-21"],
   ["/archive/EFTA01410768", "2026-10-21"],
 ]);
@@ -4528,6 +4529,31 @@ function decorateWikiSearchCors(response, request) {
   headers.delete("Content-Length");
   return new Response(response.body, {status:response.status,statusText:response.statusText,headers});
 }
+function improvePhotosDiscoveryHtml(body) {
+  let html = String(body || "");
+  if (html.includes('data-gah-photo-guide')) return html;
+  html = html.replace(/<h1>Incoming Visual Evidence<\/h1>/i, '<h1>Photos and screenshots</h1>');
+  html = html.replace(/<p>Filtered photos and screenshots extracted from[\s\S]*?<\/p>/i,
+    '<p>Browse extracted archive images and document screenshots. Search by an exact EFTA identifier, filename or source batch, then inspect the source before interpreting an image.</p>');
+  const guide = `<section data-gah-photo-guide aria-labelledby="photo-guide-heading" class="hero">
+    <h2 id="photo-guide-heading">How to use this collection</h2>
+    <p>Enter an EFTA number to narrow the results to one record. A result is an extracted image or screenshot, not an independent confirmation of its caption, date or subject. Open the corresponding <a href="/search">archive record</a> to check the document and page context.</p>
+    <p>For a reviewed example, inspect the <a href="/source-renders/EFTA00035147-page15-footer-EFTA00035161.png">attorney-log page render</a> alongside <a href="/archive/EFTA00035147">its source dossier</a>. The PDF page number and printed Bates footer identify different parts of the citation; keep both when recording a source.</p>
+    <p>Use the <a href="/methodology/redaction-breadcrumbs">redaction guide</a> when text is obscured and the <a href="/methodology/confidence-labels-open-slots">confidence-label guide</a> when a claim remains unresolved. Image counts describe extracted items, not unique documents or verified findings.</p>
+    <noscript><p>Image search and pagination require JavaScript. The source dossier, page render and methodology links above remain available without it.</p></noscript>
+  </section>`;
+  html = html.replace(/(<div class="controls">)/i, guide + '\n$1');
+  if (!/<main\b/i.test(html)) {
+    html = html.replace(/<div class="wrap">\s*(?=<section class="hero">)/i, '<main id="main" class="wrap">\n');
+    html = html.replace(/(<div id="grid" class="grid"><\/div>)\s*<\/div>/i, '$1\n</main>');
+  }
+  html = html.replace('<input id="q"', '<input aria-label="Search images by EFTA, filename or batch" id="q"');
+  html = html.replace('<select id="pageSelect"', '<select aria-label="Image results page" id="pageSelect"');
+  html = html.replace('<div id="stats" class="stats">', '<div id="stats" class="stats" role="status" aria-live="polite">');
+  html = html.replace('<img loading="lazy" src="${esc(x.thumb_url)}">', '<img loading="lazy" src="${esc(x.thumb_url)}" alt="${esc(x.efta || "Archive image")} - ${esc(x.name || "source image")}">');
+  return html;
+}
+
 async function proxyProofLayer(request, env = {}) {
   const proxiedPath = cleanPath(new URL(request.url).pathname);
   const target = new URL(request.url);
@@ -4594,6 +4620,10 @@ async function proxyProofLayer(request, env = {}) {
   applyRoutePolicyHeaders(headers, proxiedPath);
   applyHtmlSecurityHeaders(headers, env, request);
   const meta = { routePath: proxiedPath };
+  if (proxiedPath === "/photos") {
+    meta.title = "Photos and Screenshots | Grok Archive Hub";
+    meta.description = "Search archive photos and document screenshots by EFTA identifier, filename or source batch, with source-verification guidance and reviewed document examples.";
+  }
   if (upstream.status === 404) {
     meta.robots = "noindex,follow";
     headers.set("X-GAH-Indexability-Policy", "noindex,follow");
@@ -4605,6 +4635,7 @@ async function proxyProofLayer(request, env = {}) {
   }
 
   if (proxiedPath === "/photos") {
+    body = improvePhotosDiscoveryHtml(body);
     const visualApiBridge = '<script data-cfasync="false" data-gah-visual-evidence-api="v1">(function(){const install=function(){' +
       'window.loadPage=async function(n){q.value="";const pageSize=Number(SUMMARY?.page_size||1000);const cursor=Math.max(0,(Number(n||1)-1)*pageSize);const r=await fetch("/api/visual-evidence/items?cursor="+encodeURIComponent(cursor)+"&limit="+encodeURIComponent(pageSize));const data=await r.json();if(!r.ok){stats.textContent=data.error||("Visual evidence API HTTP "+r.status);grid.innerHTML="";return;}CURRENT=data.items||[];render(CURRENT,"items on page "+n);};' +
       'window.doSearch=async function(){const needle=q.value.trim();if(!needle){loadPage(Number(pageSelect.value||1));return;}stats.textContent="Searching visual evidence…";const r=await fetch("/api/visual-evidence/search?q="+encodeURIComponent(needle)+"&limit=500");const data=await r.json();if(!r.ok){stats.textContent=data.error||("Visual evidence search HTTP "+r.status);grid.innerHTML="";return;}render(data.items||[],"search results");if(data.truncated)stats.textContent+=" | "+Number(data.matched||0).toLocaleString()+" total matches; showing first "+Number(data.count||0).toLocaleString();};' +
@@ -18965,10 +18996,10 @@ export default {
         if (!GAH_UNVERIFIED_ARCHIVE_SOURCE_GAPS.has(archiveId)) return editorial;
         const headers = new Headers(editorial.headers);
         headers.set("X-Robots-Tag", "noindex,follow");
-        headers.set("X-GAH-Source-Gap", "underlying-original-unverified");
+        headers.set("X-GAH-Source-Gap", "source-text-or-original-unverified");
         headers.delete("Content-Length");
         // The shared front-door HTML transformer applies a generic index
-        // directive. Override that generated HTML for these four known gaps.
+        // directive. Override generated HTML for source-text and original-source gaps.
         let safeBody = null;
         if (request.method !== "HEAD") {
           safeBody = await editorial.text();
