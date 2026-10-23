@@ -1,0 +1,243 @@
+{
+  "schema": "gah.trump-campaign-records.v1",
+  "review_date": "2026-10-22",
+  "scope": "Selected 2014–2017 events; later legal outcomes retained. First release, not an exhaustive dossier.",
+  "methods": [
+    "Read selected Mueller Volume I sections and Cohen criminal information text",
+    "Visually inspected House email PDF page 3",
+    "Read Flynn statement of offense and checked later pardon",
+    "Compared official case outcomes, appointment record, UN outcome and presidential proclamation",
+    "Read both congressional release notices and contemporaneous White House response"
+  ],
+  "sources": {
+    "fec": {
+      "title": "FEC MUR 6961: campaign response, background section",
+      "url": "https://www.fec.gov/files/legal/murs/6961/17044405310.pdf",
+      "kind": "Campaign legal response filed with FEC",
+      "locator": "I. Background, opening paragraph",
+      "limit": "A party submission; establishes the campaign’s stated announcement and filing dates, not an FEC finding on other allegations."
+    },
+    "explore": {
+      "title": "March 18, 2015 campaign exploratory announcement",
+      "url": "https://www.p2016.org/trump/trump031815st.html",
+      "kind": "Archived campaign press release",
+      "locator": "Dated opening paragraph",
+      "limit": "Campaign-authored statement preserved by Democracy in Action."
+    },
+    "nh": {
+      "title": "New Hampshire visits, 2013–2014",
+      "url": "https://www.p2016.org/chrnnewh/nhvisits14.html",
+      "kind": "Contemporaneous campaign-event chronology",
+      "locator": "April 12, 2014 Donald Trump / Freedom Summit entry",
+      "limit": "Event context, not a formal candidacy filing."
+    },
+    "mueller": {
+      "title": "Mueller report, Volume I",
+      "url": "https://www.justice.gov/storage/report_volume1.pdf",
+      "kind": "Official investigative report",
+      "locator": "Printed pp. 1–2, 67–71; page numbers are report pagination, not viewer count",
+      "sha256": "0df965b7b0b8835311715f15dbf50cba371d06114ed8eebdf1a246a3c28ce3d0",
+      "limit": "Selected sections reviewed. Findings and declination language must stay together; underlying exhibits are distinct records."
+    },
+    "cohen": {
+      "title": "United States v. Cohen, 18-cr-850: criminal information",
+      "url": "https://www.justice.gov/archives/sco/file/1115596/dl",
+      "kind": "Filed charging document underlying guilty plea",
+      "locator": "Paragraphs 4 and 7, printed pp. 2–8",
+      "sha256": "db8bb8ccc61007e4380a60033909887242003f92703a23b8d32e68cba25db797",
+      "limit": "Read with the plea/sentencing record. Describes Cohen’s false statements; not a conviction of Trump."
+    },
+    "cohenoutcome": {
+      "title": "DOJ Special Counsel case archive: Cohen entry",
+      "url": "https://www.justice.gov/archives/sco-mueller",
+      "kind": "Official case-outcome index",
+      "locator": "U.S. v. Michael Cohen, 1:18-cr-850",
+      "limit": "The Moscow false-statements sentence is distinct from Cohen’s other criminal case."
+    },
+    "trumpresponse": {
+      "title": "Trump’s November 29, 2018 remarks to reporters",
+      "url": "https://www.presidency.ucsb.edu/documents/remarks-exchange-with-reporters-prior-departure-for-buenos-aires-argentina",
+      "kind": "Presidential remarks transcript",
+      "locator": "Opening Cohen / private-business exchange",
+      "limit": "Trump’s response and characterization, not an independent adjudication."
+    },
+    "house": {
+      "title": "House release: three redacted Epstein email records",
+      "url": "https://oversightdemocrats.house.gov/imo/media/doc/3-emails_redacted.pdf",
+      "kind": "Congressional publication of estate-produced email images",
+      "locator": "PDF p. 3: Heads up, December 15–16, 2015",
+      "sha256": "2f9271261f62214cf04bd2c93f22aaf6e41f0bee38a5b1fa852ad7c0ee8034fe",
+      "limit": "Page 3 visually reviewed. Publication provenance is not independent authentication of every underlying assertion; no recipient bridge to Trump shown."
+    },
+    "houserelease": {
+      "title": "Oversight Democrats’ November 12, 2025 release",
+      "url": "https://oversightdemocrats.house.gov/news/press-releases/house-oversight-committee-releases-jeffrey-epstein-email-correspondence-raising",
+      "kind": "Congressional minority press release",
+      "locator": "Email #3 and linked three-page PDF",
+      "limit": "Partisan characterization is attributed, not adopted as a factual finding."
+    },
+    "housemajority": {
+      "title": "Oversight majority: additional Epstein estate documents",
+      "url": "https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/",
+      "kind": "Congressional majority release notice",
+      "locator": "November 12, 2025 notice and document links",
+      "limit": "Release notice reviewed; the full estate production was not exhaustively reviewed for this series."
+    },
+    "whresponse": {
+      "title": "White House response to the email release, reported by Reuters",
+      "url": "https://www.reuters.com/world/us/white-house-says-epstein-emails-released-smear-trump-2025-11-12/",
+      "kind": "Contemporaneous reporting of an official response",
+      "locator": "November 12, 2025, opening statement",
+      "limit": "Secondary source for the White House response; not evidence resolving the emails."
+    },
+    "israel2015": {
+      "title": "Trump postpones Israel visit, December 10, 2015",
+      "url": "https://www.jta.org/2015/12/10/politics/trump-cancels-israel-visit-in-wake-of-controversy-over-his-call-to-ban-muslim-entry",
+      "kind": "Contemporaneous news report quoting Trump and Netanyahu",
+      "locator": "December 10, 2015 report, opening paragraphs",
+      "limit": "Secondary reporting of public statements; no covert relationship established."
+    },
+    "aipac": {
+      "title": "Trump’s March 21, 2016 AIPAC remarks",
+      "url": "https://www.presidency.ucsb.edu/documents/remarks-the-aipac-policy-conference-washington-dc",
+      "kind": "Campaign speech transcript",
+      "locator": "UN Security Council / veto discussion and Jerusalem embassy pledge",
+      "limit": "Evidence of what the candidate promised, not independent verification of all factual assertions in the speech."
+    },
+    "flynn": {
+      "title": "United States v. Flynn: signed statement of offense",
+      "url": "https://www.justice.gov/archives/sco/file/1015126/download",
+      "kind": "Signed plea factual basis",
+      "locator": "Paragraph 4(a)–(d), printed pp. 4–5; signature p. 6",
+      "sha256": "d38da1d34b3d0af56acf21ec3fb2d117717b1eb632c5201625f81de8167da6b5",
+      "limit": "Historical plea admission. Flynn later challenged the prosecution and received a full pardon; this is not presented as an outstanding conviction."
+    },
+    "un": {
+      "title": "UN record of Security Council Resolution 2334",
+      "url": "https://www.un.org/unispal/document/auto-insert-200647/",
+      "kind": "Official meeting coverage and resolution record",
+      "locator": "December 23, 2016 adoption and vote",
+      "limit": "Establishes resolution outcome, not motives for every government’s vote."
+    },
+    "jerusalem": {
+      "title": "December 6, 2017 Jerusalem proclamation",
+      "url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-proclamation-recognizing-jerusalem-capital-state-israel-relocating-united-states-embassy-israel-jerusalem/",
+      "kind": "Presidential proclamation",
+      "locator": "Operative recognition and embassy-relocation paragraph",
+      "limit": "The proclamation is a policy act; actual embassy opening is a later event."
+    },
+    "pardon": {
+      "title": "November 25, 2020 Flynn pardon announcement",
+      "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grant-clemency-general-michael-t-flynn/",
+      "kind": "Official White House announcement and defense",
+      "locator": "Dated opening paragraph",
+      "limit": "Confirms pardon and the administration’s position. Its partisan narrative is attributed, not independently adopted."
+    },
+    "acosta": {
+      "title": "Acosta sworn in as Labor Secretary, April 28, 2017",
+      "url": "https://www.dol.gov/newsroom/releases/opa/opa20170428",
+      "kind": "Official Department of Labor appointment record",
+      "locator": "Dated opening paragraph",
+      "limit": "Confirms office and date; does not establish the reason he was selected."
+    },
+    "opr": {
+      "title": "DOJ OPR statement on Epstein’s 2006–2008 investigation",
+      "url": "https://www.justice.gov/archives/opa/pr/statement-doj-office-professional-responsibility-report-jeffrey-epstein-2006-2008",
+      "kind": "Official statement of OPR findings",
+      "locator": "November 12, 2020, findings paragraphs",
+      "limit": "Poor judgment and failure in victim treatment were found; professional misconduct was not found."
+    },
+    "epsteincharge": {
+      "title": "SDNY announces Epstein sex-trafficking charges",
+      "url": "https://www.justice.gov/usao-sdny/pr/jeffrey-epstein-charged-manhattan-federal-court-sex-trafficking-minors",
+      "kind": "Official prosecution announcement",
+      "locator": "July 8, 2019 announcement and indictment link",
+      "limit": "Charges are accusations, not a trial verdict; does not identify Trump as a charged participant."
+    },
+    "epsteincase": {
+      "title": "United States v. Epstein: case status",
+      "url": "https://www.justice.gov/usao-sdny/programs/victim-witness-services/united-states-v-jeffrey-epstein-19-cr-490-rmb",
+      "kind": "Official case-status record",
+      "locator": "August 2019 dismissal / death update",
+      "limit": "Epstein died before the 2019 charges were tried."
+    }
+  },
+  "articles": [
+    {
+      "route": "/investigations/trump-2015-campaign-records",
+      "title": "Before the White House: Trump’s 2014–2017 Paper Trail",
+      "description": "A dated source guide to Trump’s campaign launch, Moscow negotiations, Epstein’s 2015 emails, Israel policy and the Acosta–DOJ chronology.",
+      "sources": [
+        "nh",
+        "explore",
+        "fec",
+        "mueller",
+        "cohen",
+        "house",
+        "aipac",
+        "flynn",
+        "acosta",
+        "epsteincharge",
+        "opr"
+      ],
+      "share_text": "Trump’s campaign-era paper trail: Moscow negotiations, Epstein’s 2015 emails, Israel policy and DOJ decisions. Read the records and the gaps."
+    },
+    {
+      "route": "/investigations/trump-moscow-deal-campaign-2015-2016",
+      "title": "Trump Was Running for President. The Moscow Project Was Still Alive.",
+      "description": "Cohen’s admitted false January cutoff, the 2015 Moscow letter of intent, Trump’s response and what the record establishes about the campaign-era deal.",
+      "sources": [
+        "mueller",
+        "cohen",
+        "cohenoutcome",
+        "trumpresponse"
+      ],
+      "share_text": "The Moscow project did not end in January 2016. Cohen’s admitted correction moved it into June, during Trump’s campaign. Read the court record and Trump’s response."
+    },
+    {
+      "route": "/investigations/epstein-wolff-trump-cnn-emails-2015",
+      "title": "The 2015 Emails Where Epstein and Wolff Discussed Trump’s CNN Answer",
+      "description": "A close reading of the December 15–16, 2015 Epstein–Wolff email page: the political strategy discussed, publication provenance and absent campaign connection.",
+      "sources": [
+        "house",
+        "houserelease",
+        "housemajority",
+        "whresponse"
+      ],
+      "share_text": "December 2015: Epstein and Wolff discussed Trump’s possible CNN answer. The released email shows the proposal—not Trump receiving or approving it. Read page 3."
+    },
+    {
+      "route": "/investigations/trump-israel-russia-un-vote-2016",
+      "title": "The UN Vote Where Trump’s Israel Policy Met His Russia Outreach",
+      "description": "From the postponed 2015 Israel visit to AIPAC promises and Flynn’s December 2016 request to Russia: a policy chronology with the pardon and vote outcome.",
+      "sources": [
+        "israel2015",
+        "aipac",
+        "flynn",
+        "un",
+        "pardon",
+        "jerusalem"
+      ],
+      "share_text": "A specific Israel–Russia intersection: Flynn asked Russia to oppose or delay the 2016 settlements resolution. The UN record shows it passed. Read the request and outcome."
+    },
+    {
+      "route": "/investigations/trump-acosta-epstein-doj-timeline",
+      "title": "Acosta, Epstein and Trump: The Timeline That Prevents a False Shortcut",
+      "description": "The earlier Epstein non-prosecution agreement, Trump’s 2017 Acosta appointment, the 2019 federal case and DOJ’s mixed 2020 findings, separated by date and authority.",
+      "sources": [
+        "opr",
+        "acosta",
+        "epsteincharge",
+        "epsteincase"
+      ],
+      "share_text": "The earlier Epstein deal, Acosta’s 2017 appointment and the 2019 federal prosecution are three separate decisions. Here is the dated DOJ record—and what it cannot prove."
+    }
+  ],
+  "not_established": [
+    "One coordinated Epstein–Russia–Israel operation involving Trump",
+    "Trump received or approved the Epstein–Wolff proposed advice",
+    "Trump directed the earlier Epstein non-prosecution agreement or selected Acosta as a reward",
+    "A completed Trump Moscow project or a proven election-interference agreement inferred from the project",
+    "Current military events were manufactured to distract from Epstein"
+  ]
+}
