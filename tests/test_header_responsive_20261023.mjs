@@ -29,5 +29,5 @@ for(const method of ['GET','HEAD']){
 }
 const fixture=await readFile(path.join(root,'frontdoor/responsive-check-063.html'),'utf8');
 assert.match(fixture,/name="robots" content="noindex,nofollow"/);
-assert.match(fixture,/iframe title="Responsive site preview" src="\/"/);
+assert.match(fixture,/iframe title="Responsive site preview" src="about:blank"/);
 console.log('PASS shared stylesheet delivery and idempotent integration across homepage, trust page and investigation; ads remain disabled; maintenance fixture is noindex');

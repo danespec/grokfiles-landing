@@ -16,7 +16,7 @@
 <body>
   <header>
     <h1>Responsive layout check</h1>
-    <p>Maintenance preview. The frame loads the real public site at the selected CSS viewport width.</p>
+    <p>Maintenance preview. Read-only HTML layout preview at the selected CSS viewport width. Links open the live site in a new tab. This does not emulate a physical phone.</p>
     <label>Viewport width <select id="width" aria-label="Viewport width">
       <option>320</option><option selected>375</option><option>390</option><option>430</option><option>720</option><option>768</option>
       <option>1024</option><option>1100</option><option>1280</option><option>1348</option><option>1440</option><option>1600</option>
@@ -26,11 +26,20 @@
       <option value="/investigations/hold-the-letter">Investigation</option>
     </select></label>
   </header>
-  <div class="stage"><iframe title="Responsive site preview" src="/" width="375" height="900"></iframe></div>
+  <p id="preview-status" role="status"></p>
+  <div class="stage"><iframe title="Responsive site preview" src="about:blank" width="375" height="900"></iframe></div>
   <script>
     const preview=document.querySelector('iframe');
     document.getElementById('width').addEventListener('change',event=>{preview.style.width=event.target.value+'px';});
-    document.getElementById('route').addEventListener('change',event=>{preview.src=event.target.value;});
+    async function loadPreview(route){
+      const response=await fetch(route,{credentials:'omit',cache:'no-store'});
+      if(!response.ok)throw new Error('Preview response '+response.status);
+      let html=await response.text();
+      html=html.replace(/<head([^>]*)>/i,'<head$1><base href="'+location.origin+'/" target="_blank">');
+      preview.srcdoc=html;
+    }
+    document.getElementById('route').addEventListener('change',event=>{loadPreview(event.target.value).catch(error=>{document.getElementById('preview-status').textContent=error.message;});});
+    loadPreview('/').catch(error=>{document.getElementById('preview-status').textContent=error.message;});
   </script>
 </body>
 </html>
