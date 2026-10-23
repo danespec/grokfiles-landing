@@ -63,6 +63,11 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/investigations/trump-2015-campaign-records",
+  "/investigations/trump-moscow-deal-campaign-2015-2016",
+  "/investigations/epstein-wolff-trump-cnn-emails-2015",
+  "/investigations/trump-israel-russia-un-vote-2016",
+  "/investigations/trump-acosta-epstein-doj-timeline",
   "/news/bank-of-america-aml-penalties-epstein-settlement-2026",
   "/guides",
   "/investigations/doj-oip-epstein-review-public-figure-flags-2026",
@@ -301,6 +306,11 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/investigations/trump-2015-campaign-records", "public-records-historical-analysis-ad-free"],
+  ["/investigations/trump-moscow-deal-campaign-2015-2016", "public-records-historical-analysis-ad-free"],
+  ["/investigations/epstein-wolff-trump-cnn-emails-2015", "public-records-historical-analysis-ad-free"],
+  ["/investigations/trump-israel-russia-un-vote-2016", "public-records-historical-analysis-ad-free"],
+  ["/investigations/trump-acosta-epstein-doj-timeline", "public-records-historical-analysis-ad-free"],
   ["/news/bank-of-america-aml-penalties-epstein-settlement-2026", "sensitive-public-records-news-ad-free"],
   ["/guides", "curated-research-guide-directory-ad-free"],
   ["/news", "curated-newsroom-directory-ad-free"],
@@ -1100,6 +1110,11 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/investigations/trump-2015-campaign-records", "/investigations/trump-2015-campaign-records.html"],
+  ["/investigations/trump-moscow-deal-campaign-2015-2016", "/investigations/trump-moscow-deal-campaign-2015-2016.html"],
+  ["/investigations/epstein-wolff-trump-cnn-emails-2015", "/investigations/epstein-wolff-trump-cnn-emails-2015.html"],
+  ["/investigations/trump-israel-russia-un-vote-2016", "/investigations/trump-israel-russia-un-vote-2016.html"],
+  ["/investigations/trump-acosta-epstein-doj-timeline", "/investigations/trump-acosta-epstein-doj-timeline.html"],
   ["/research/evidence/verified-source-cards", "/research/evidence/verified-source-cards.html"],
   ["/research/evidence/source-card-efta00067364-calendar-epstein", "/research/evidence/source-card-efta00067364-calendar-epstein.html"],
   ["/research/evidence/source-card-efta00082040-black-book-epstein", "/research/evidence/source-card-efta00082040-black-book-epstein.html"],
@@ -1237,6 +1252,11 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/investigations/trump-2015-campaign-records", "2026-10-22"],
+  ["https://grokarchivehub.com/investigations/trump-moscow-deal-campaign-2015-2016", "2026-10-22"],
+  ["https://grokarchivehub.com/investigations/epstein-wolff-trump-cnn-emails-2015", "2026-10-22"],
+  ["https://grokarchivehub.com/investigations/trump-israel-russia-un-vote-2016", "2026-10-22"],
+  ["https://grokarchivehub.com/investigations/trump-acosta-epstein-doj-timeline", "2026-10-22"],
   ["https://grokarchivehub.com/news/raskin-epstein-state-foreign-mlat-oversight-2026", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/new-mexico-indyke-kahn-financial-network-2026", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/doj-oip-epstein-records-oct21-2026", "2026-10-21"],
