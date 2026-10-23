@@ -6,7 +6,8 @@ const archive=fs.readFileSync(new URL("archive.html",root),"utf8");
 const records=JSON.parse(fs.readFileSync(new URL("docs/seo/GAH_REDACTED_ARCHIVE_WAVE2_20261021.json",root),"utf8"));
 assert.equal(records.length,21);
 assert.equal(new Set(records.map(r=>r.id)).size,21);
-const unresolved=new Set(["EFTA01245620","EFTA00704168","EFTA00153570","EFTA00153571"]);
+const locatorOnly=new Set(["EFTA00035206", "EFTA00035715", "EFTA00035828", "EFTA00579174", "EFTA00579182", "EFTA00643676"]);
+const unresolved=new Set([...locatorOnly,"EFTA01245620","EFTA00704168","EFTA00153570","EFTA00153571"]);
 for(const r of records){
  const path="archive/"+r.id+".html", url="https://grokarchivehub.com/archive/"+r.id;
  const source=fs.readFileSync(new URL(path,root),"utf8");
@@ -36,4 +37,4 @@ assert(worker.includes('safeBody.replace(') && worker.includes('"$1noindex,follo
 const olds=JSON.parse(fs.readFileSync(new URL("docs/seo/GAH_20261021_PROMOTED_EDITORIAL_SOURCES.json",root),"utf8"));
 assert.equal(olds.length,12);
 for(const r of olds) assert(!records.some(x=>x.id===r.id),"no duplicate canonical "+r.id);
-console.log("PASS 17 wave2 + 12 wave1 + 6 foundational indexable; four source-gap guides noindex");
+console.log("PASS 11 wave2 + 12 wave1 + 6 foundational indexable; ten source-gap guides noindex");

@@ -34,3 +34,7 @@ Renderer checks cover absent, short and longer OCR, HTML escaping, source access
 The main-domain sample URLs serve the correction. Direct wiki ordinary URLs were still serving old cached HTML (Cloudflare HIT with age 816 seconds) while a fresh cache key served the corrected template. A repeat request to the fresh key also returned HIT (age 187) despite `Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0` and `CDN-Cache-Control: no-store`. This confirms that header changes alone do not prevent this wiki caching behavior. Existing configured credentials previously lacked cache-purge permission; no permission bypass was attempted. The remaining operational step is an authorized cache-rule correction for wiki archive HTML and purge of old objects. The origin and apex correction is live, but ordinary wiki cache rollout remains incomplete.
 
 This release does not submit a new AdSense review or claim approval. Google controls subsequent crawling, indexing and advertising eligibility.
+
+## Cache blocker resolved — subsequent October 23 verification
+
+After the owner applied a wiki archive bypass rule and purged the cache, all twenty ordinary archive samples served the corrected utility template. Three repeated requests to a previously stale wiki URL returned `CF-Cache-Status: DYNAMIC`, with no cached `Age` header. The earlier cache-rule/eviction blocker described above is resolved in these checks.
