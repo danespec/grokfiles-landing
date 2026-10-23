@@ -7442,10 +7442,12 @@ function ensureV3DocumentShell(body) {
       return `<html${attrs} data-gah-shell="v3">`;
     });
   }
-  if (!/\/assets\/v3-ui-032\.css/i.test(html) && /<\/head>/i.test(html)) {
+  // Keep one current base stylesheet, after legacy route styles.
+  html = html.replace(/<link\b(?=[^>]*\brel=["']stylesheet["'])(?=[^>]*\bhref=["']\/assets\/(?:v3-ui-054|consent-ui-054)\.css(?:\?[^"']*)?["'])[^>]*>\s*/gi, "");
+  if (/<\/head>/i.test(html)) {
     html = html.replace(/<\/head>/i, `  <link rel="stylesheet" href="/assets/v3-ui-054.css">\n</head>`);
   }
-  if (!/\/assets\/consent-ui-036\.css/i.test(html) && /<\/head>/i.test(html)) {
+  if (/<\/head>/i.test(html)) {
     html = html.replace(/<\/head>/i, `  <link rel="stylesheet" href="/assets/consent-ui-054.css">\n</head>`);
   }
   if ((isBarakRuntime || isBarakApplication) && !/\/assets\/barak-ui-031\.css/i.test(html) && /<\/head>/i.test(html)) {
@@ -7465,8 +7467,17 @@ function ensureV3DocumentShell(body) {
   if (compatStyle && !html.includes("data-gah-v3-legacy-compat") && /<\/head>/i.test(html)) {
     html = html.replace(/<\/head>/i, `  ${compatStyle}\n</head>`);
   }
+  let mainTarget = "main";
+  html = html.replace(/<main\b([^>]*)>/i, (full, attrs) => {
+    const existingId = attrs.match(/\bid\s*=\s*["']([^"']+)["']/i);
+    mainTarget = existingId ? existingId[1] : "main";
+    return '<main' + (existingId ? "" : ' id="main"') + attrs
+      + (/\btabindex\s*=/i.test(attrs) ? "" : ' tabindex="-1"') + '>';
+  });
+  html = html.replace(/<a\b(?=[^>]*\bclass=["'][^"']*\b(?:skip|skip-link)\b)[^>]*>/gi,
+    tag => tag.replace(/\bhref=["']#(?:main|main-content)["']/i, () => 'href="#' + escapeHtml(mainTarget) + '"'));
   const hasSkip = /<a\b[^>]*class=["'][^"']*\b(?:skip|skip-link)\b/i.test(html);
-  const header = `${hasSkip ? "" : '<a class="skip" href="#main">Skip to content</a>\n'}${v3DocumentHeaderHtml()}`;
+  const header = `${hasSkip ? "" : '<a class="skip" href="#' + escapeHtml(mainTarget) + '">Skip to content</a>\n'}${v3DocumentHeaderHtml()}`;
   const headerPattern = /<header\b(?=[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'])[\s\S]*?<\/header>/i;
   if (headerPattern.test(html)) html = html.replace(headerPattern, header);
   else if (/<body\b/i.test(html)) html = html.replace(/<body\b([^>]*)>/i, `<body$1>\n${header}`);
@@ -7477,9 +7488,9 @@ function ensureV3DocumentShell(body) {
   if (!html.includes("data-gah-social-share")) {
     const socialShare = v3ArticleSocialShareHtml(html);
     if (socialShare && socialArticlePattern.test(html)) {
-      html = html.replace(socialArticlePattern, `$1${socialShare}\n$2`);
+      html = html.replace(socialArticlePattern, (_match, article, close) => `${article}${socialShare}\n${close}`);
     } else if (socialShare && /<\/main>/i.test(html)) {
-      html = html.replace(/<\/main>/i, `${socialShare}\n</main>`);
+      html = html.replace(/<\/main>/i, () => `${socialShare}\n</main>`);
     }
   }
   if (!html.includes("data-gah-discovery-links") && /<footer\b[\s\S]*?<\/footer>/i.test(html)) {
@@ -7959,7 +7970,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   const tags = [];
 
   if (/<title[\s>]/i.test(body)) {
-    body = body.replace(/<title[^>]*>[\s\S]*?<\/title>/i, `<title>${escapedTitle}</title>`);
+    body = body.replace(/<title[^>]*>[\s\S]*?<\/title>/i, () => `<title>${escapedTitle}</title>`);
   } else {
     tags.push(`<title>${escapedTitle}</title>`);
   }
@@ -7971,7 +7982,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
     }
   }
   if (meta.description && htmlMetaContent(body, "name", "description")) {
-    body = body.replace(/<meta\b(?=[^>]*\bname\s*=\s*["']description["'])[^>]*>/i, `<meta name="description" content="${escapedDescription}">`);
+    body = body.replace(/<meta\b(?=[^>]*\bname\s*=\s*["']description["'])[^>]*>/i, () => `<meta name="description" content="${escapedDescription}">`);
   } else if (!htmlMetaContent(body, "name", "description")) {
     tags.push(`<meta name="description" content="${escapedDescription}">`);
   }
@@ -8013,7 +8024,7 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   ]) {
     body = forceNamedMeta(body, name, content);
   }
-  if (tags.length) body = body.replace(/<\/head>/i, `  ${tags.join("\n  ")}\n</head>`);
+  if (tags.length) body = body.replace(/<\/head>/i, () => `  ${tags.join("\n  ")}\n</head>`);
   if (policyPath === "/pdf-lite" || policyPath === "/pdf-lite.html") {
     body = addHtmlClass(body, "gah-pdf-lite-document");
     body = addBodyClass(body, "gah-pdf-lite-shell");
