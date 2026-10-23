@@ -1,0 +1,33 @@
+/* Shared header: use the compact menu until the complete row fits. */
+.site-header .header-row {
+  width: min(calc(100% - 2rem), 1600px);
+  min-width: 0;
+  overflow: visible;
+}
+.site-header .brand { flex: 0 0 auto; }
+.site-header .header-tools { flex: 0 1 auto; min-width: 0; }
+.site-header .header-tools > .btn { flex: 0 0 auto; min-height: 44px; }
+.site-header .nav-main { display: none; min-width: 0; }
+.site-header .menu-btn { display: inline-flex; min-height: 44px; }
+.site-header .search-mini {
+  display: none;
+  flex: 0 1 13.8rem;
+  min-width: 0;
+  width: clamp(10rem, 18vw, 13.8rem);
+  height: 44px;
+}
+.site-header .search-mini input { min-width: 0; }
+.site-header .nav-mobile {
+  max-height: calc(100dvh - var(--header-h, 58px) - var(--gah-consent-reserve, 0px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+@media (min-width: 721px) {
+  .site-header .search-mini { display: flex; }
+}
+@media (min-width: 1440px) {
+  .site-header .nav-main { display: flex; }
+  .site-header .menu-btn { display: none; }
+  .site-header .nav-mobile,
+  .site-header .nav-mobile.is-open { display: none; }
+}
