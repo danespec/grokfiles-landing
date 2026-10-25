@@ -1,0 +1,17 @@
+{
+  "checkedOn": "2026-10-25",
+  "gates": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA02730265.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "archiveStatuses": {
+    "EFTA02730265": 404,
+    "EFTA02338119": 200,
+    "EFTA00034221": 200,
+    "EFTA02262778": 200
+  }
+}

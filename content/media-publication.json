@@ -74,6 +74,61 @@
         "The underlying SAR narratives, French inquiry attachments and forensic accountant’s report referenced in released correspondence.",
         "A complete account-by-account and year-by-year reconciliation before making charity-wide spending claims."
       ]
+    },
+    {
+      "id": "gates",
+      "status": "ready",
+      "series": "Bill Gates: the Nikolic exit draft",
+      "investigation": "/investigations/nikolic-gates-epstein-bridge",
+      "investigationTitle": "The existing Nikolic–Gates–Epstein bridge investigation",
+      "entity": "/entities#media-gates",
+      "card": "/assets/media-gates.png",
+      "documents": {
+        "EFTA02730265": "August 23–24, 2013 Points email chain. Larry Cohen forwards separation terms for input; Nikolic responds about the end date and job-help wording. The draft contains a typed Signed: Bill Gates block, not proof of an executed agreement. GAH’s archive locator returns 404; this is a publisher-hosted EFTA-stamped released PDF, not byte-authenticated against DOJ."
+      },
+      "limits": "The email establishes draft circulation and requested input. It does not establish that Gates signed or adopted these terms, that every clause became binding, or any criminal conduct. The original caption’s “Signed: Bill Gates” describes a typed draft block, not an authenticated signature.",
+      "questions": [
+        "An executed agreement and its final terms, if any.",
+        "Evidence showing which proposed changes were accepted."
+      ],
+      "documentLinks": {
+        "EFTA02730265": "https://media-cdn.rollcall.com/epstein-files/EFTA02730265.pdf"
+      }
+    },
+    {
+      "id": "musk",
+      "status": "ready",
+      "series": "Elon Musk: proposed holiday visit",
+      "investigation": "/archive/EFTA02338119",
+      "investigationTitle": "Read the December 2013 correspondence",
+      "entity": "/entities#media-musk",
+      "card": "/assets/media-musk.png",
+      "documents": {
+        "EFTA02338119": "December 2013 holiday correspondence: a question about a good time to visit and a follow-up about recommended dates. The displayed OCR contains nested December 13–14 timestamps; it is not a reconciled travel chronology."
+      },
+      "limits": "The correspondence concerns possible plans. It does not establish an island visit, boarding, arrival or criminal conduct. The original GAH caption reports Musk’s public statement that he declined an island visit; the caption is the attribution preserved here, not a newly authenticated response interview.",
+      "questions": [
+        "Arrival, transport or contemporaneous attendance records would be needed to establish a completed visit.",
+        "Reconcile nested message timestamps before assigning a single timezone to the exchange."
+      ]
+    },
+    {
+      "id": "zuckerberg",
+      "status": "ready",
+      "series": "Mark Zuckerberg: mentions and contact evidence",
+      "investigation": "/archive/EFTA00034221",
+      "investigationTitle": "Read the released donation-pitch record",
+      "entity": "/entities#media-zuckerberg",
+      "card": "/assets/media-zuckerberg.png",
+      "documents": {
+        "EFTA00034221": "July 2019 donation solicitation to Epstein invokes Zuckerberg’s Breakthrough Awards as a comparison. That is the writer’s pitch, not correspondence from Zuckerberg or independent verification of its claims.",
+        "EFTA02262778": "November 2018 forwarded Davos accommodation/event promotion names Zuckerberg among people attendees might meet. Promotional copy is not an attendance record or evidence of contact with Epstein."
+      },
+      "limits": "These two records are third-party mentions, not evidence of direct communication. The original caption’s “Contact: zero” is a negative-search finding attributed to GAH’s stated research scope. This page does not independently certify an exhaustive search of every corpus, prove that contact never occurred, or establish wrongdoing.",
+      "questions": [
+        "A direct communication or authenticated meeting record would be different evidence from a third-party mention.",
+        "A reproducible search log is needed to independently audit the caption’s corpus-wide negative finding."
+      ]
     }
   ],
   "media": [
@@ -241,6 +296,64 @@
       ],
       "sourceUrl": "https://www.instagram.com/reel/Deu_w9ngp3Z/",
       "socialDate": "2026-10-20"
+    },
+    {
+      "id": "gates-reel",
+      "package": "gates",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/bill-gates-nikolic-points-efta02730265",
+      "title": "Bill Gates, Boris Nikolic and EFTA02730265: the Points draft",
+      "description": "Bill Gates: the Nikolic exit draft. Read EFTA02730265 with the original GAH reel caption, source notes and documentary limits.",
+      "documents": [
+        "EFTA02730265"
+      ],
+      "analysis": [
+        "The August 2013 chain places separation terms inside Epstein’s correspondence and records a request for input. Nikolic’s reply asks for changes to the employment end date and the point about help finding a job.",
+        "Read the typed signature block in its draft context. It does not turn this circulated proposal into an executed agreement. The existing investigation provides the broader meeting and exit-discussion source trail."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DexeXchDTke/",
+      "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "musk-reel",
+      "package": "musk",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/elon-musk-holiday-email-efta02338119",
+      "title": "Elon Musk and EFTA02338119: correspondence is not a completed visit",
+      "description": "Elon Musk: proposed holiday visit. Read EFTA02338119 with the original GAH reel caption, source notes and documentary limits.",
+      "documents": [
+        "EFTA02338119"
+      ],
+      "analysis": [
+        "The released correspondence asks about a possible holiday visit and a recommended day or night. It supplies evidence of an exchange about plans; it supplies no completed-trip record.",
+        "The original reel carries Musk’s reported public decline alongside the email. Neither a question about visiting nor a general denial should be silently converted into a passenger manifest or an independently established arrival."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DexelAdDxHi/",
+      "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "zuckerberg-reel",
+      "package": "zuckerberg",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/mark-zuckerberg-mentions-efta00034221",
+      "title": "Mark Zuckerberg: EFTA00034221, EFTA02262778 and the limits of mentions",
+      "description": "Mark Zuckerberg: mentions and contact evidence. Read EFTA00034221, EFTA02262778 with the original GAH reel caption, source notes and documentary limits.",
+      "documents": [
+        "EFTA00034221",
+        "EFTA02262778"
+      ],
+      "analysis": [
+        "A donation solicitation uses Zuckerberg’s awards as a model; an unrelated Davos promotional email uses his name to advertise networking. In both, someone else names him.",
+        "Neither released record shows Zuckerberg writing to Epstein, agreeing to a meeting or attending an event with him. The caption’s wider negative-search claim remains attributed to its original scope rather than promoted into proof that no contact ever occurred."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DexesF4EkHl/",
+      "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
     }
   ]
 }
