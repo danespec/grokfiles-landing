@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-22T00:00:00Z",
+  "updatedAt": "2026-10-24T00:00:00Z",
   "channel": {
     "title": "Grok Archive Hub",
     "handle": "@GrokArchiveHub",
@@ -119,6 +119,231 @@
       "recordingDate": "",
       "scheduledPublishAt": "",
       "xPublicationStatus": "not-queued"
+    },
+    {
+      "id": "barak-trip-long",
+      "slug": "barak-st-thomas-december-2014",
+      "status": "published",
+      "title": "Barak St. Thomas 2014: the trip, the ticket and two readings",
+      "description": "Watch GAH’s December 2014 Barak investigation with source notes for Ronen Cohen, PNR 7HLSOQ and EFTA00356456.",
+      "shortDescription": "Watch GAH’s December 2014 Barak investigation with source notes for Ronen Cohen, PNR 7HLSOQ and EFTA00356456.",
+      "youtubeVideoId": "ukhO7KsskqQ",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ukhO7KsskqQ",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+      "durationIso8601": "PT284S",
+      "uploadDate": "2026-10-24T19:50:13-07:00",
+      "publishDate": "2026-10-24T19:50:13-07:00",
+      "updatedDate": "2026-10-24",
+      "category": "Barak St. Thomas, December 2014",
+      "tags": [
+        "18414",
+        "18310",
+        "18018",
+        "18243",
+        "19004",
+        "15729",
+        "14998",
+        "EFTA00356456",
+        "EFTA02596796",
+        "EFTA02346686",
+        "EFTA02300238"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [
+        {
+          "label": "EFTA00356456",
+          "url": "/archive/EFTA00356456"
+        },
+        {
+          "label": "EFTA02596796",
+          "url": "/archive/EFTA02596796"
+        },
+        {
+          "label": "EFTA02346686",
+          "url": "/archive/EFTA02346686"
+        },
+        {
+          "label": "EFTA02300238",
+          "url": "/archive/EFTA02300238"
+        }
+      ],
+      "archiveIds": [
+        "18414",
+        "18310",
+        "18018",
+        "18243",
+        "19004",
+        "15729",
+        "14998",
+        "EFTA00356456",
+        "EFTA02596796",
+        "EFTA02346686",
+        "EFTA02300238"
+      ],
+      "batesIds": [
+        "EFTA00356456",
+        "EFTA02596796",
+        "EFTA02346686",
+        "EFTA02300238"
+      ],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "The full St. Thomas trip-and-ticket investigation",
+        "url": "/investigations/barak-st-thomas-dec-2014"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": true,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
+    },
+    {
+      "id": "barak-ticket-short",
+      "slug": "barak-ronen-cohen-ticket-7hlsoq",
+      "status": "published",
+      "title": "Ronen Cohen and PNR 7HLSOQ: what the ticket identifies",
+      "description": "The Barak St. Thomas itinerary names COHEN/RONEN MR. Read the document scope and the unresolved identity behind GAH’s ticket Short.",
+      "shortDescription": "The Barak St. Thomas itinerary names COHEN/RONEN MR. Read the document scope and the unresolved identity behind GAH’s ticket Short.",
+      "youtubeVideoId": "EgYM0u4w1sA",
+      "youtubeUrl": "https://www.youtube.com/shorts/EgYM0u4w1sA",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+      "durationIso8601": "PT37S",
+      "uploadDate": "2026-10-24T20:06:16-07:00",
+      "publishDate": "2026-10-24T20:06:16-07:00",
+      "updatedDate": "2026-10-24",
+      "category": "Barak St. Thomas, December 2014",
+      "tags": [
+        "19004"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [],
+      "archiveIds": [
+        "19004"
+      ],
+      "batesIds": [],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "The full St. Thomas trip-and-ticket investigation",
+        "url": "/investigations/barak-st-thomas-dec-2014"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
+    },
+    {
+      "id": "barak-hotel-short",
+      "slug": "barak-hotel-name-efta00356456",
+      "status": "published",
+      "title": "EFTA00356456: the Baraks’ St. Thomas hotel-name exchange",
+      "description": "Watch the Lesley Groff and Nili Barak hotel-name exchange, then read what EFTA00356456 establishes and leaves unresolved.",
+      "shortDescription": "Watch the Lesley Groff and Nili Barak hotel-name exchange, then read what EFTA00356456 establishes and leaves unresolved.",
+      "youtubeVideoId": "dHwT8S3B0Og",
+      "youtubeUrl": "https://www.youtube.com/shorts/dHwT8S3B0Og",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+      "durationIso8601": "PT27S",
+      "uploadDate": "2026-10-24T19:55:28-07:00",
+      "publishDate": "2026-10-24T19:55:28-07:00",
+      "updatedDate": "2026-10-24",
+      "category": "Barak St. Thomas, December 2014",
+      "tags": [
+        "EFTA00356456"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [
+        {
+          "label": "EFTA00356456",
+          "url": "/archive/EFTA00356456"
+        }
+      ],
+      "archiveIds": [
+        "EFTA00356456"
+      ],
+      "batesIds": [
+        "EFTA00356456"
+      ],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "The full St. Thomas trip-and-ticket investigation",
+        "url": "/investigations/barak-st-thomas-dec-2014"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
+    },
+    {
+      "id": "barak-invitation-short",
+      "slug": "barak-epstein-caribbean-invitation-2014",
+      "status": "published",
+      "title": "Barak and Epstein’s December 2014 Caribbean invitation",
+      "description": "The “Come to Carib?” invitation and proposed St. Thomas flights, traced to Barak leak IDs 18414, 18310 and 18018.",
+      "shortDescription": "The “Come to Carib?” invitation and proposed St. Thomas flights, traced to Barak leak IDs 18414, 18310 and 18018.",
+      "youtubeVideoId": "TIJmqHyke9I",
+      "youtubeUrl": "https://www.youtube.com/shorts/TIJmqHyke9I",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+      "durationIso8601": "PT38S",
+      "uploadDate": "2026-10-24T19:52:32-07:00",
+      "publishDate": "2026-10-24T19:52:32-07:00",
+      "updatedDate": "2026-10-24",
+      "category": "Barak St. Thomas, December 2014",
+      "tags": [
+        "18414",
+        "18310",
+        "18018"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [],
+      "archiveIds": [
+        "18414",
+        "18310",
+        "18018"
+      ],
+      "batesIds": [],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "The full St. Thomas trip-and-ticket investigation",
+        "url": "/investigations/barak-st-thomas-dec-2014"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
     }
   ],
   "sampleRecord": {

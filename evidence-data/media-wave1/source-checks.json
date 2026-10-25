@@ -1,0 +1,36 @@
+{
+  "checkedOn": "2026-10-24",
+  "documents": [
+    {
+      "id": "EFTA02730996",
+      "archiveStatus": 404,
+      "replacement": "https://media-cdn.rollcall.com/epstein-files/EFTA02730996.pdf",
+      "httpStatus": 200,
+      "mime": "application/pdf",
+      "pages": 22,
+      "sha256": "3f3227f62d8b449becef597d2b25f2b557394449ed2dd8d6d37c61e1393167b5",
+      "review": "First page visually checked for title, date and EFTA stamp; payment passages checked in extracted text. Not byte-authenticated against DOJ."
+    },
+    {
+      "id": "EFTA02731023",
+      "archiveStatus": 404,
+      "replacement": "https://media-cdn.rollcall.com/epstein-files/EFTA02731023.pdf",
+      "httpStatus": 200,
+      "mime": "application/pdf",
+      "pages": 16,
+      "sha256": "eb21e327d83f3130a7dec8706d6dcc5cacc432854aa40b9edde47220fb54cac3",
+      "review": "First page visually checked for title, date and EFTA stamp; payment passages checked in extracted text. Not byte-authenticated against DOJ."
+    }
+  ],
+  "otherEftaIdsHttp200": [
+    "EFTA00356456",
+    "EFTA02596796",
+    "EFTA02346686",
+    "EFTA02300238",
+    "EFTA00080260",
+    "EFTA00153569",
+    "EFTA00153570",
+    "EFTA00153571",
+    "EFTA00128841"
+  ]
+}

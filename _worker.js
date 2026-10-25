@@ -627,7 +627,6 @@ const GAH_REDACTED_WAVE2_INDEXABLE_IDS = new Set([
 const UTILITY_NOINDEX_EXACT_PATHS = new Map([
   ["/pdf-lite", "pdf-viewer-utility"],
   ["/pdf-lite.html", "pdf-viewer-utility"],
-  ["/videos", "video-index-not-yet-substantive"],
   ["/global", "incomplete-language-and-global-stub"],
   ["/membership", "membership-checkout-separation"],
   ["/donate", "donation-action-separation"],
@@ -1116,7 +1115,22 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
   ["/book-of-black/methodology", "/book-of-black/methodology.html"]
 ]);
 
+// GAH-MEDIA-VIDEO-PATHS BEGIN
+const GAH_MEDIA_VIDEO_PATHS = new Set(["/videos/barak-st-thomas-december-2014", "/videos/barak-ronen-cohen-ticket-7hlsoq", "/videos/barak-hotel-name-efta00356456", "/videos/barak-epstein-caribbean-invitation-2014"]);
+// GAH-MEDIA-VIDEO-PATHS END
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  // GAH-MEDIA-ROUTES BEGIN
+  ["/videos/barak-st-thomas-december-2014", "/videos/barak-st-thomas-december-2014.html"],
+  ["/videos/barak-ronen-cohen-ticket-7hlsoq", "/videos/barak-ronen-cohen-ticket-7hlsoq.html"],
+  ["/videos/barak-hotel-name-efta00356456", "/videos/barak-hotel-name-efta00356456.html"],
+  ["/videos/barak-epstein-caribbean-invitation-2014", "/videos/barak-epstein-caribbean-invitation-2014.html"],
+  ["/reels/barak-st-thomas-ronen-cohen", "/reels/barak-st-thomas-ronen-cohen.html"],
+  ["/reels/leon-black-dechert-158-million-efta02730996", "/reels/leon-black-dechert-158-million-efta02730996.html"],
+  ["/reels/gratitude-america-10-million-efta00080260", "/reels/gratitude-america-10-million-efta00080260.html"],
+  ["/videos", "/videos.html"],
+  ["/reels", "/reels.html"],
+  // GAH-MEDIA-ROUTES END
+
   ["/investigations/barak-st-thomas-dec-2014", "/investigations/barak-st-thomas-dec-2014.html"],
   ["/investigations/trump-2015-campaign-records", "/investigations/trump-2015-campaign-records.html"],
   ["/investigations/trump-moscow-deal-campaign-2015-2016", "/investigations/trump-moscow-deal-campaign-2015-2016.html"],
@@ -1260,6 +1274,14 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  // GAH-MEDIA-SITEMAP BEGIN
+  ["https://grokarchivehub.com/reels/barak-st-thomas-ronen-cohen", "2026-10-24"],
+  ["https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996", "2026-10-24"],
+  ["https://grokarchivehub.com/reels/gratitude-america-10-million-efta00080260", "2026-10-24"],
+  ["https://grokarchivehub.com/videos", "2026-10-24"],
+  ["https://grokarchivehub.com/reels", "2026-10-24"],
+  // GAH-MEDIA-SITEMAP END
+
   ["https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014", "2026-10-24"],
   ["https://grokarchivehub.com/investigations/trump-2015-campaign-records", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/trump-moscow-deal-campaign-2015-2016", "2026-10-22"],
@@ -6311,7 +6333,7 @@ function serveApexTopicsGuide(request, env) {
   </section>
 
   <section>
-    <h2>Current Public Topic Lanes</h2>
+    <h2>Current Public Topic Lanes</h2><!-- GAH-MEDIA-TOPICS --><section><h2>Watch and verify: GAH media source notes</h2><p>Three existing source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p><ul><li><a href="/videos/barak-st-thomas-december-2014">Barak St. Thomas 2014: the trip, the ticket and two readings</a></li><li><a href="/videos/barak-ronen-cohen-ticket-7hlsoq">Ronen Cohen and PNR 7HLSOQ: what the ticket identifies</a></li><li><a href="/videos/barak-hotel-name-efta00356456">EFTA00356456: the Baraks’ St. Thomas hotel-name exchange</a></li><li><a href="/videos/barak-epstein-caribbean-invitation-2014">Barak and Epstein’s December 2014 Caribbean invitation</a></li><li><a href="/reels/barak-st-thomas-ronen-cohen">Barak St. Thomas 2014: the reel, the receipts and the unresolved ticket</a></li><li><a href="/reels/leon-black-dechert-158-million-efta02730996">Leon Black’s $158 million: EFTA02730996 and the Senate questions</a></li><li><a href="/reels/gratitude-america-10-million-efta00080260">Gratitude America’s $10 million: EFTA00080260 and the account trail</a></li></ul></section><!-- /GAH-MEDIA-TOPICS -->
     <p>These are the strongest indexable subject lanes on GAH right now. Each one points to original reporting or a source-controlled evidence hub, not a generated name page.</p>
 
     <article>
@@ -6440,7 +6462,7 @@ function sitemapEntryXml(entry) {
       <video:thumbnail_loc>${xmlEscape(video.thumbnail_loc)}</video:thumbnail_loc>
       <video:title>${xmlEscape(video.title)}</video:title>
       <video:description>${xmlEscape(video.description)}</video:description>
-      <video:content_loc>${xmlEscape(video.content_loc)}</video:content_loc>
+      ${video.content_loc ? `<video:content_loc>${xmlEscape(video.content_loc)}</video:content_loc>` : ""}
       <video:player_loc>${xmlEscape(video.player_loc)}</video:player_loc>
       <video:publication_date>${xmlEscape(video.publication_date)}</video:publication_date>
     </video:video>` : "";
@@ -7104,7 +7126,7 @@ function isV3ShellHtml(body) {
 
 const GAH_X_PROFILE_URL = "https://x.com/DaneMilSpec";
 const GAH_REDDIT_PROFILE_URL = "https://www.reddit.com/r/GrokArchiveHub/";
-const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL];
+const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL, "https://www.instagram.com/grokarchivehub/", "https://www.youtube.com/@GrokArchiveHub"];
 
 function v3CanonicalFromHtml(html) {
   return firstHtmlMatch(String(html || ""), /<link\b(?=[^>]*\brel=["']canonical["'])[^>]*\bhref=["']([^"']+)["']/i) || "";
@@ -7278,7 +7300,8 @@ function v3SocialOrganizationStructuredData() {
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     "@id": "https://grokarchivehub.com/#organization",
-    name: "Grok Archive Hub",
+    name: "GrokArchiveHub",
+    alternateName: ["Grok Archive Hub", "GAH"],
     url: "https://grokarchivehub.com/",
     sameAs: GAH_SOCIAL_PROFILE_URLS
   }).replace(/</g, "\\u003c");
@@ -7587,7 +7610,7 @@ function scriptSourceAllowlist(origin = "") {
   ];
 }
 
-function htmlContentSecurityPolicy(env = {}, origin = "") {
+function htmlContentSecurityPolicy(env = {}, origin = "", videoPage = false) {
   const googleAllowed = googleTagEnabled(env);
   const scriptSources = ["'unsafe-inline'", ...scriptSourceAllowlist(origin)];
   if (googleAllowed) scriptSources.push("https://www.googletagmanager.com");
@@ -7609,7 +7632,7 @@ function htmlContentSecurityPolicy(env = {}, origin = "") {
     "font-src 'self' data:",
     `script-src ${scriptSrc}`,
     // GAH-ADSENSE-REMEDIATION-001: allow Google Privacy & messaging frames when CMP is configured
-    "frame-src 'self' https://fundingchoicesmessages.google.com https://www.google.com https://www.gstatic.com https://bid.g.doubleclick.net https://tpc.googlesyndication.com",
+    "frame-src 'self' https://fundingchoicesmessages.google.com https://www.google.com https://www.gstatic.com https://bid.g.doubleclick.net https://tpc.googlesyndication.com" + (videoPage ? " https://www.youtube-nocookie.com" : ""),
     "worker-src 'self' blob:",
     `connect-src ${connectSrc}`,
     "form-action 'self'"
@@ -7628,7 +7651,8 @@ function applyHtmlSecurityHeaders(headers, env = {}, requestOrOrigin = "") {
   } catch (_) {
     origin = "";
   }
-  headers.set("Content-Security-Policy", htmlContentSecurityPolicy(env, origin));
+  const videoPage = typeof requestOrOrigin !== "string" && requestOrOrigin?.url && GAH_MEDIA_VIDEO_PATHS.has(cleanPath(new URL(requestOrOrigin.url).pathname));
+  headers.set("Content-Security-Policy", htmlContentSecurityPolicy(env, origin, Boolean(videoPage)));
   headers.set("Permissions-Policy", "tools=(self)");
   const webMcpOriginTrialToken = String(env?.WEBMCP_ORIGIN_TRIAL_TOKEN || "").trim();
   if (webMcpOriginTrialToken) headers.set("Origin-Trial", webMcpOriginTrialToken);
