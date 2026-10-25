@@ -1,0 +1,246 @@
+{
+  "schema": "gah.media-publication.v1",
+  "publicationDate": "2026-10-24",
+  "packages": [
+    {
+      "id": "barak",
+      "status": "ready",
+      "series": "Barak St. Thomas, December 2014",
+      "investigation": "/investigations/barak-st-thomas-dec-2014",
+      "investigationTitle": "The full St. Thomas trip-and-ticket investigation",
+      "entity": "/barak/entities",
+      "card": "/assets/media-barak-st-thomas.png",
+      "documents": {
+        "18414": "Nili and Epstein invitation and early return-plan thread, December 5–6, 2014. The thread records plans, not completed travel.",
+        "18310": "Nili’s December 7 St Thomas email proposes AA 1275 into St. Thomas on December 12 at 12:55 PM and a December 15 return.",
+        "18018": "Epstein accepts the proposed visit and assigns Lesley to coordinate. Approval is not evidence of boarding.",
+        "18243": "Hadassim’s Trip Details: TEST booking email. The subject anomaly does not identify the traveler.",
+        "19004": "Headerless COHEN/RONEN MR itinerary, PNR 7HLSOQ, AA ref YGVYVP. Inbound matches Nili’s proposal; the return booking leaves December 14. A ticket is not a boarding record or an authenticated alias identification.",
+        "15729": "Nili writes that they are in the Caribbean on December 13, 2014.",
+        "14998": "February 2, 2015 exchange asks about Barak’s St. Thomas bodyguard; the named person is Jarrod Nadel. This does not exclude a second officer.",
+        "EFTA00356456": "December hotel, arrival and farewell correspondence. The hotel-name exchange chooses Nili’s name; December 12 arrival, island-lunch arrangements and December 15 farewell establish the visit. Hotel naming does not establish an airline alias.",
+        "EFTA02596796": "Epstein invites Tom Pritzker: ehud on island for weekend, come visit. An invitation does not establish Pritzker attended.",
+        "EFTA02346686": "Epstein’s Summers island-weekend invitation. It does not establish Summers attended that weekend.",
+        "EFTA02300238": "November 30 Hoffman/Ito departure logistics. Island-operations context, not evidence of attendance during the Baraks’ visit."
+      },
+      "limits": "The completed December 12–15 visit is documented. Cohen = Barak is Thomas’s unproven hypothesis; a real associate traveling in parallel is the alternative. The return dates differ, and the records do not establish boarding under another identity, criminal conduct, or attendance by Summers or Pritzker. Corpus-wide negative searches are findings attributed to the supplied research scope, not proof that no such person exists.",
+      "questions": [
+        "Hadassim’s account and payment records for PNR 7HLSOQ and the TEST booking.",
+        "An arrival-party or passenger record that joins the itinerary to an independently established traveler identity.",
+        "Independent whereabouts records for December 12–14, and any changed or unused return reservation."
+      ]
+    },
+    {
+      "id": "black",
+      "status": "ready",
+      "series": "Leon Black: the payment record",
+      "investigation": "/evidence-briefs/leon-black-158m-170m-epstein-payments",
+      "investigationTitle": "$158 million became $170 million: the payment reconstruction",
+      "entity": "/entities#media-leon-black",
+      "card": "/assets/media-leon-black.png",
+      "documents": {
+        "EFTA02730996": "DOJ-released copy of the Dechert review. Its $158 million compensation total for 2012–2017 is a commissioned review’s account, not a judicial determination of all underlying transactions or the purposes of every payment. The SEC-filed original is linked in GAH’s full source manifest. The GAH archive route currently returns 404; this link uses the exact EFTA-stamped release at a publisher-hosted mirror. It has not been byte-compared against the DOJ-hosted copy.",
+        "EFTA02731023": "Wyden’s July 24, 2023 letter asks about calculation and substantiation of the payments. This is the Senate Finance inquiry and an attributed committee position, separate from later House proceedings. The GAH archive route currently returns 404; this link uses the exact EFTA-stamped release at a publisher-hosted mirror. It has not been byte-compared against the DOJ-hosted copy."
+      },
+      "limits": "The payment record does not establish a crime. Dechert described tax and estate work and said it found no evidence tying the payments to Epstein’s criminal activity; it was a commissioned review, not a court verdict. The 2023 Senate questions are not adjudicated findings. The later $170 million Senate total is a different scope from the review’s $158 million and must not be silently substituted.",
+      "questions": [
+        "A transaction-level reconciliation of the later $170 million figure against Dechert’s $158 million total.",
+        "The written agreements, calculation methodology and underlying deliverables requested by Senate Finance.",
+        "Independent records that support or challenge the commissioned review’s explanation of the compensation."
+      ],
+      "documentLinks": {
+        "EFTA02730996": "https://media-cdn.rollcall.com/epstein-files/EFTA02730996.pdf",
+        "EFTA02731023": "https://media-cdn.rollcall.com/epstein-files/EFTA02731023.pdf"
+      }
+    },
+    {
+      "id": "gratitude",
+      "status": "ready",
+      "series": "Gratitude America: follow the accounts",
+      "investigation": "/investigations/gratitude-america-money-trail-2015-2019",
+      "investigationTitle": "The full Gratitude America investigation and 28-row ledger",
+      "entity": "/entities#media-leon-black",
+      "card": "/assets/media-gratitude-america.png",
+      "documents": {
+        "EFTA00080260": "Bank-derived legal exhibit, including the October 14, 2015 $10 million BV70 credit and the account schedule in Exhibit E. The $8.775 million 2016 outflows comprise $8.45 million in same-charity transfers and $325,000 in external payments; this is one tracked account, not a complete all-year charitable-spending total.",
+        "EFTA00153569": "FinCEN/FBI correspondence concerning a French financial-intelligence inquiry. A request for information and referenced SARs are not findings of criminal conduct.",
+        "EFTA00153570": "Continuation of the foreign-inquiry correspondence. Referenced underlying attachments and SAR narratives are not supplied by the correspondence itself.",
+        "EFTA00153571": "Continuation of the FinCEN/FBI source chain. Read with the surrounding release, not as an independent transaction or adjudication.",
+        "EFTA00128841": "April 26, 2021 FBI import form referencing a federal forensic account review. The one-page released form does not include the accountant’s full report."
+      },
+      "limits": "The $325,000 figure concerns external payments from the tracked account in 2016, not every grant made by the charity across all accounts and years. Transfers between the charity’s own accounts are not outside grants. A financial-intelligence inquiry, referenced SAR or forensic-review form does not itself establish a crime. Dechert’s donor attribution is a separate source from the bank-derived exhibit.",
+      "questions": [
+        "The receiving-account records needed to follow the $8.45 million beyond the tracked money-market account.",
+        "The underlying SAR narratives, French inquiry attachments and forensic accountant’s report referenced in released correspondence.",
+        "A complete account-by-account and year-by-year reconciliation before making charity-wide spending claims."
+      ]
+    }
+  ],
+  "media": [
+    {
+      "id": "barak-trip-long",
+      "package": "barak",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/barak-st-thomas-december-2014",
+      "title": "Barak St. Thomas 2014: the trip, the ticket and two readings",
+      "description": "Watch GAH’s December 2014 Barak investigation with source notes for Ronen Cohen, PNR 7HLSOQ and EFTA00356456.",
+      "documents": [
+        "18414",
+        "18310",
+        "18018",
+        "18243",
+        "19004",
+        "15729",
+        "14998",
+        "EFTA00356456",
+        "EFTA02596796",
+        "EFTA02346686",
+        "EFTA02300238"
+      ],
+      "analysis": [
+        "The long video reconstructs the invitation, proposed flights, hotel arrangements and completed December 12–15 visit. Its source families are kept separate: the Barak mailbox and Epstein office correspondence in the DOJ release.",
+        "The itinerary printed COHEN/RONEN MR matches the proposed inbound flight but lists an earlier return. That difference is central to evaluating an alias hypothesis against the alternative of a real associate on a parallel trip.",
+        "The written investigation carries the full anomaly register, both readings and the records that could settle the identity question. The video is an introduction to that evidence, not an additional passenger record."
+      ],
+      "youtubeId": "ukhO7KsskqQ",
+      "format": "long",
+      "sourceUrl": "https://www.youtube.com/watch?v=ukhO7KsskqQ"
+    },
+    {
+      "id": "barak-ticket-short",
+      "package": "barak",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/barak-ronen-cohen-ticket-7hlsoq",
+      "title": "Ronen Cohen and PNR 7HLSOQ: what the ticket identifies",
+      "description": "The Barak St. Thomas itinerary names COHEN/RONEN MR. Read the document scope and the unresolved identity behind GAH’s ticket Short.",
+      "documents": [
+        "19004"
+      ],
+      "analysis": [
+        "This Short isolates the airline-itinerary anomaly: the printed passenger name, booking locator, inbound flight and arrival time. It is useful to compare those fields against Nili’s proposal in the full investigation.",
+        "The source is a headerless itinerary record. It supports the existence of that booking in the reviewed mailbox; it does not identify who physically boarded or authenticate an alternate identity.",
+        "The December 14 booked return differs from the documented visit ending December 15. Any interpretation that treats the return as unused or changed requires a record not yet obtained."
+      ],
+      "youtubeId": "EgYM0u4w1sA",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/EgYM0u4w1sA",
+      "extraLimit": "The original YouTube title says “a man who doesn’t exist.” That is rhetorical shorthand for a scoped exact-name search finding, not an established fact that Ronen Cohen is fictitious. GAH does not adopt it as a passenger identification."
+    },
+    {
+      "id": "barak-hotel-short",
+      "package": "barak",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/barak-hotel-name-efta00356456",
+      "title": "EFTA00356456: the Baraks’ St. Thomas hotel-name exchange",
+      "description": "Watch the Lesley Groff and Nili Barak hotel-name exchange, then read what EFTA00356456 establishes and leaves unresolved.",
+      "documents": [
+        "EFTA00356456"
+      ],
+      "analysis": [
+        "This Short focuses on the office’s question about the hotel booking name and Nili’s answer choosing her own name. The same correspondence also describes the security detail’s separate nearby accommodation.",
+        "That is direct evidence of a hotel reservation instruction. It is not direct evidence of concealment motive, an airline alias or the identity printed on a separate itinerary.",
+        "The surrounding arrival and farewell messages help distinguish a completed visit from the earlier planning emails. Read the thread as a sequence rather than treating the striking phrase as a conclusion."
+      ],
+      "youtubeId": "dHwT8S3B0Og",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/dHwT8S3B0Og"
+    },
+    {
+      "id": "barak-invitation-short",
+      "package": "barak",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/barak-epstein-caribbean-invitation-2014",
+      "title": "Barak and Epstein’s December 2014 Caribbean invitation",
+      "description": "The “Come to Carib?” invitation and proposed St. Thomas flights, traced to Barak leak IDs 18414, 18310 and 18018.",
+      "documents": [
+        "18414",
+        "18310",
+        "18018"
+      ],
+      "analysis": [
+        "This Short follows the initial exchange: Nili asks about meeting in New York, Epstein says he is in the Caribbean, and the discussion becomes a proposed St. Thomas visit.",
+        "The later email names the proposed inbound flight and asks whether the schedule suits Epstein. His reply approves the plan and assigns coordination; neither email alone proves travel occurred.",
+        "The completed visit is established by the separate office arrival and farewell thread linked in the written investigation. The clock time in the original video title is not treated here as a timezone-reconciled date finding."
+      ],
+      "youtubeId": "TIJmqHyke9I",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/TIJmqHyke9I"
+    },
+    {
+      "id": "barak-st-thomas-reel",
+      "package": "barak",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/barak-st-thomas-ronen-cohen",
+      "title": "Barak St. Thomas 2014: the reel, the receipts and the unresolved ticket",
+      "description": "Original GAH reel caption and source notes for EFTA00356456, Ronen Cohen and PNR 7HLSOQ.",
+      "documents": [
+        "18414",
+        "18310",
+        "18018",
+        "18243",
+        "19004",
+        "15729",
+        "14998",
+        "EFTA00356456",
+        "EFTA02596796",
+        "EFTA02346686",
+        "EFTA02300238"
+      ],
+      "analysis": [
+        "The reel condenses a documented visit and a separate itinerary anomaly. The travel proposal, office coordination and completed visit belong to different stages of the evidence and should not be merged into a boarding narrative.",
+        "The original caption is preserved below. Its mailbox-wide statements are attributed to the research described in the full investigation; those exact-name negative searches do not establish that a person is fictitious.",
+        "The video and Short pages add the original YouTube descriptions and narrower document readings. The investigation remains the definitive written account of the contested identity and both alternatives."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DeyQU7ylNfe/",
+      "socialDate": "2026-10-21"
+    },
+    {
+      "id": "leon-black-payments-reel",
+      "package": "black",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/leon-black-dechert-158-million-efta02730996",
+      "title": "Leon Black’s $158 million: EFTA02730996 and the Senate questions",
+      "description": "The original GAH Leon Black reel, Dechert’s $158 million review and Wyden’s EFTA02731023 letter, with their different evidentiary limits.",
+      "documents": [
+        "EFTA02730996",
+        "EFTA02731023"
+      ],
+      "analysis": [
+        "This reel joins two dated source types: a commissioned corporate review’s compensation total and a later Senate chairman’s questions about how those payments were calculated and substantiated. One is not a court validation of the other.",
+        "The original reel discusses $158 million for work in 2012–2017. The related evidence brief separately examines the later Senate total of $170 million; the difference requires a reconciliation rather than silently changing the reel’s historical claim.",
+        "The caption’s 9,131-document count is a reported search-scope figure, not a count of meetings, payments, independent events or criminal acts. The underlying review’s conclusions and limitations remain attached to the source notes."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De2vEwkAhVh/",
+      "socialDate": "2026-10-23"
+    },
+    {
+      "id": "gratitude-account-flow-reel",
+      "package": "gratitude",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/gratitude-america-10-million-efta00080260",
+      "title": "Gratitude America’s $10 million: EFTA00080260 and the account trail",
+      "description": "The GAH reel behind the $10 million deposit, $8.45 million in internal transfers and $325,000 in 2016 external payments.",
+      "documents": [
+        "EFTA00080260",
+        "EFTA00153569",
+        "EFTA00153570",
+        "EFTA00153571",
+        "EFTA00128841"
+      ],
+      "analysis": [
+        "The reel’s most important distinction is classification: $8.45 million of the tracked 2016 outflows moved to other accounts of Gratitude America, while $325,000 went to outside recipients. Calling every debit a charitable grant would change the meaning of the record.",
+        "Those numbers come from one account schedule. They cannot establish how much the entire charity gave across every account or year. The full investigation’s 28-row ledger keeps dates, destinations and source-page references visible.",
+        "The later correspondence records a foreign financial-intelligence inquiry and a forensic-review reference. The underlying SAR narratives and accountant’s report remain gaps; a reference to scrutiny is not a finding of criminal conduct."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Deu_w9ngp3Z/",
+      "socialDate": "2026-10-20"
+    }
+  ]
+}

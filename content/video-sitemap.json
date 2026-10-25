@@ -1,9 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedFrom": "content/video-registry.json",
+  "generatedFrom": "content/media-publication.json",
   "hub": {
     "loc": "https://grokarchivehub.com/videos",
-    "lastmod": "2026-07-22"
+    "lastmod": "2026-10-24"
   },
-  "videoUrls": []
+  "videoUrls": [
+    {
+      "loc": "https://grokarchivehub.com/videos/barak-st-thomas-december-2014",
+      "lastmod": "2026-10-24",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+        "title": "Barak St. Thomas 2014: the trip, the ticket and two readings",
+        "description": "Watch GAH’s December 2014 Barak investigation with source notes for Ronen Cohen, PNR 7HLSOQ and EFTA00356456.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/ukhO7KsskqQ",
+        "publication_date": "2026-10-24T19:50:13-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/barak-ronen-cohen-ticket-7hlsoq",
+      "lastmod": "2026-10-24",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+        "title": "Ronen Cohen and PNR 7HLSOQ: what the ticket identifies",
+        "description": "The Barak St. Thomas itinerary names COHEN/RONEN MR. Read the document scope and the unresolved identity behind GAH’s ticket Short.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/EgYM0u4w1sA",
+        "publication_date": "2026-10-24T20:06:16-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/barak-hotel-name-efta00356456",
+      "lastmod": "2026-10-24",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+        "title": "EFTA00356456: the Baraks’ St. Thomas hotel-name exchange",
+        "description": "Watch the Lesley Groff and Nili Barak hotel-name exchange, then read what EFTA00356456 establishes and leaves unresolved.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/dHwT8S3B0Og",
+        "publication_date": "2026-10-24T19:55:28-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/barak-epstein-caribbean-invitation-2014",
+      "lastmod": "2026-10-24",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-barak-st-thomas.png",
+        "title": "Barak and Epstein’s December 2014 Caribbean invitation",
+        "description": "The “Come to Carib?” invitation and proposed St. Thomas flights, traced to Barak leak IDs 18414, 18310 and 18018.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/TIJmqHyke9I",
+        "publication_date": "2026-10-24T19:52:32-07:00"
+      }
+    }
+  ]
 }
