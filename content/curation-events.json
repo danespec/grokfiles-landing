@@ -3,6 +3,14 @@
   "generated_from_editorial_records": true,
   "events": [
     {
+      "date": "2026-10-24",
+      "type": "publication",
+      "title": "St. Thomas, December 2014: The Trip and the Ticket in Another Man's Name",
+      "url": "/investigations/barak-st-thomas-dec-2014",
+      "what_changed": "Standalone trip-and-ticket investigation with both readings labeled and source-family register.",
+      "source_checked": "Prepared from Thomas/Ren publication specification; production pending Thomas approval."
+    },
+    {
       "date": "2026-08-25",
       "type": "publication",
       "title": "Hold the letter",

@@ -1117,6 +1117,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 ]);
 
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/investigations/barak-st-thomas-dec-2014", "/investigations/barak-st-thomas-dec-2014.html"],
   ["/investigations/trump-2015-campaign-records", "/investigations/trump-2015-campaign-records.html"],
   ["/investigations/trump-moscow-deal-campaign-2015-2016", "/investigations/trump-moscow-deal-campaign-2015-2016.html"],
   ["/investigations/epstein-wolff-trump-cnn-emails-2015", "/investigations/epstein-wolff-trump-cnn-emails-2015.html"],
@@ -1259,6 +1260,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014", "2026-10-24"],
   ["https://grokarchivehub.com/investigations/trump-2015-campaign-records", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/trump-moscow-deal-campaign-2015-2016", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/epstein-wolff-trump-cnn-emails-2015", "2026-10-22"],
@@ -6345,7 +6347,7 @@ function serveApexTopicsGuide(request, env) {
     <article>
       <h3>Ehud Barak: Source Map, Scheduling, Investments and FARA Review</h3>
       <p>The Barak lane is organized around a source corpus unavailable elsewhere on GAH's competitors in the same form. It distinguishes scheduling, presence, proposals, investment diligence, entity control and FARA-review signals from attendance, implementation, agency or criminal conclusions.</p>
-      <p><a href="/barak/source-map">Open the Barak source map</a> · <a href="/investigations/barak-scheduling-records-2010-2018">Read the scheduling-record investigation</a> · <a href="/investigations/barak-hfa-cycurity-2015">Read the HFA proposal investigation</a></p>
+      <p><a href="/barak/source-map">Open the Barak source map</a> · <a href="/investigations/barak-scheduling-records-2010-2018">Read the scheduling-record investigation</a> · <a href="/investigations/barak-hfa-cycurity-2015">Read the HFA proposal investigation</a> · <a href="/investigations/barak-st-thomas-dec-2014">Read the December 2014 St. Thomas trip and ticket investigation</a></p>
     </article>
 
     <article>
