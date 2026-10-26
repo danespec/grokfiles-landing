@@ -1,0 +1,47 @@
+{
+  "capturedOn": "2026-10-26",
+  "query": "Which documents mention Leon Black?",
+  "note": "Result titles and IDs only; response correctness not certified.",
+  "rows": [
+    {
+      "id": "EFTA00128780",
+      "title": "EFTA00128780",
+      "status": "200"
+    },
+    {
+      "id": "EFTA01410768",
+      "title": "EFTA01410768",
+      "status": "200"
+    },
+    {
+      "id": "EFTA00204650",
+      "title": "EFTA00204650",
+      "status": "200"
+    },
+    {
+      "id": "EFTA02511049",
+      "title": "EFTA02511049",
+      "status": "200"
+    },
+    {
+      "id": "EFTA02508179",
+      "title": "EFTA02508179",
+      "status": "200"
+    },
+    {
+      "id": "EFTA02508197",
+      "title": "EFTA02508197",
+      "status": "200"
+    },
+    {
+      "id": "EFTA02464053",
+      "title": "EFTA02464053",
+      "status": "200"
+    },
+    {
+      "id": "EFTA00646811",
+      "title": "EFTA00646811",
+      "status": "200"
+    }
+  ]
+}

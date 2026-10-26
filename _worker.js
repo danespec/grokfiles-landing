@@ -7145,7 +7145,9 @@ const V3_STATIC_ASSET_PATHS = new Set([
   "/assets/consent-ui-054.css",
   "/assets/v3.js",
   "/assets/v3-b99ae8a1fb124e76.js",
-  "/assets/v3-newsletter-062.js"
+  "/assets/v3-newsletter-062.js",
+  "/assets/v3-source-links-063.js",
+  "/assets/v3-barak-source-links-063.js"
 ]);
 
 async function serveV3StaticAssetStrict(request, env) {
@@ -7581,6 +7583,9 @@ function ensureV3DocumentShell(body) {
   if (isBarakRuntime) {
     html = html.replace(/\/assets\/v3-b5428de00ce3bd32\.js/gi, "/assets/v3-barak-027.js");
   }
+  html = html
+    .replace(/(\bsrc=["'])\/assets\/v3-newsletter-062\.js(?:\?[^"']*)?(["'])/gi, '$1/assets/v3-source-links-063.js$2')
+    .replace(/(\bsrc=["'])\/assets\/v3-barak-027\.js(?:\?[^"']*)?(["'])/gi, '$1/assets/v3-barak-source-links-063.js$2');
   return html;
 }
 
@@ -7635,6 +7640,8 @@ function scriptSourceAllowlist(origin = "") {
   const directories = ["/frontdoor/", "/book-of-black/", "/evidence-engine/", "/pdfjs/build/", "/cdn-cgi/challenge-platform/", "/cdn-cgi/scripts/", "/xbjr/"];
   const exactScripts = [
     "/assets/v3-newsletter-062.js",
+    "/assets/v3-source-links-063.js",
+    "/assets/v3-barak-source-links-063.js",
     "/agent-tools.js",
     "/assets/site.js",
     "/assets/barak-data.v298.js",
