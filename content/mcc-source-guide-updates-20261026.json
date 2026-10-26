@@ -1,0 +1,44 @@
+[
+  {
+    "id": "EFTA00035613",
+    "title": "the five-million-dollar proposal in a July 2019 letter",
+    "lead": "Read the two-page EFTA00035613 letter with GAH’s original MCC reel caption, the proposed gift, institutional limits and source provenance.",
+    "evidence": [
+      "The July 30 letter proposes financial support as a way to improve Epstein’s public position. The two-page document supplies the proposal and the author’s assertions; it does not supply a university decision, donation receipt or response from Epstein.",
+      "The letter is signed Jonathan Farley and lists an Oxford doctorate. It describes Oxford as his alma mater and presents a possible future lectureship as conditional. The original caption’s Oxford mathematician shorthand is therefore qualified rather than presented as proof he spoke for Oxford.",
+      "Morgan State is a proposed recipient in the author’s account, not a verified institutional participant in an accepted arrangement. The letter’s references to conversations and reputation benefits remain attributed to its author. No contact details or portraits from the source pages are reproduced."
+    ],
+    "limits": "The letter does not establish that Epstein replied, paid, accepted the proposal or received the letter. It does not establish Morgan State University or Oxford approved an arrangement. The author describes Oxford as his alma mater and a future lectureship as hypothetical; the caption’s Oxford shorthand is not proof of a current Oxford appointment. His descriptions of institutional conversations remain his statements. Source access: the reviewed PDF is a Roll Call-hosted mirror of the released record. Its visible Bates footer was checked against the filename; no byte-for-byte comparison with a fresh DOJ download is claimed. The DOJ URL returned age verification. Source portraits, signatures, private contact details and neighboring inmates’ identities are not republished.",
+    "companion": "/reels/efta00035613-july-2019-donation-proposal",
+    "mirror": "https://media-cdn.rollcall.com/epstein-files/EFTA00035613.pdf",
+    "robots": "index,follow,max-image-preview:none"
+  },
+  {
+    "id": "EFTA00035773",
+    "title": "the OIG interview waiver and its date discrepancy",
+    "lead": "Read EFTA00035773 with GAH’s original caption, voluntary-interview terms, redactions and the unresolved August 21 versus August 27 date reading.",
+    "evidence": [
+      "The form explains that an employee is being asked to provide information voluntarily and may decline without disciplinary action for that choice. It also states that a furnished statement may be used in later criminal or disciplinary proceedings. Those are the form’s terms, not a finding about an employee’s conduct.",
+      "The original reel calls the date August 21. Visual inspection of the mirrored page suggests the handwritten field reads 8/27/19. That discrepancy is visible here and remains subject to confirmation against the original release or matching interview record.",
+      "The handwritten subject concerns Epstein and employee misconduct at the MCC. The redacted signature fields do not identify an interviewee, and a signed waiver does not publish their answers or establish that misconduct occurred. This one form is not proof of a universal staff-interview practice."
+    ],
+    "limits": "This is a warning-and-waiver form, not an interview transcript, a finding of misconduct or proof that every staff member signed the same form. It records voluntary participation terms and the possible evidentiary use of a statement. The handwritten date appears to read August 27, 2019; the caption’s August 21 is not adopted as a verified date. Redactions prevent identification of the employee, and the form alone does not establish what was said or whether an interview was completed. Source access: the reviewed PDF is a Roll Call-hosted mirror of the released record. Its visible Bates footer was checked against the filename; no byte-for-byte comparison with a fresh DOJ download is claimed. The DOJ URL returned age verification. Source portraits, signatures, private contact details and neighboring inmates’ identities are not republished.",
+    "companion": "/reels/efta00035773-oig-voluntary-interview-waiver",
+    "mirror": "https://media-cdn.rollcall.com/epstein-files/EFTA00035773.pdf",
+    "robots": "index,follow,max-image-preview:none"
+  },
+  {
+    "id": "EFTA00035828",
+    "title": "the diagram labeled Epstein’s cell",
+    "lead": "Read EFTA00035828 with GAH’s original caption, a visual check of the cell diagram, its undated labels and the limits of the EFTA00035574 connection.",
+    "evidence": [
+      "The source image labels Epstein’s cell and points to it with a red outline. Other callouts use anonymous inmate numbers. The source note describes those labels without trying to identify the people behind them.",
+      "The image has no visible date or author. It can serve as a layout reference, but cannot independently establish timed occupancy, movements, camera coverage or what a witness could see.",
+      "The caption connects this page to EFTA00035574. That is a claim to verify using a dated report or exhibit chain; the diagram alone does not prove that connection. The former source-text gap is narrowed by direct visual inspection of a mirrored PDF, with its provenance limit disclosed."
+    ],
+    "limits": "The diagram establishes what is drawn and labeled on this release page. It does not by itself establish the date of the layout, who annotated it, who occupied any neighboring cell at a particular time, a person’s movements, a line of sight or camera coverage. The caption’s same-unit connection to EFTA00035574 is not independently established by this undated diagram. An image-dependent record can be legible even when its extracted text is sparse. Source access: the reviewed PDF is a Roll Call-hosted mirror of the released record. Its visible Bates footer was checked against the filename; no byte-for-byte comparison with a fresh DOJ download is claimed. The DOJ URL returned age verification. Source portraits, signatures, private contact details and neighboring inmates’ identities are not republished.",
+    "companion": "/reels/efta00035828-epstein-cell-diagram",
+    "mirror": "https://media-cdn.rollcall.com/epstein-files/EFTA00035828.pdf",
+    "robots": "noindex,follow"
+  }
+]

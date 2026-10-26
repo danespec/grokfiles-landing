@@ -1,0 +1,15 @@
+{
+  "reviewedOn": "2026-10-26",
+  "reviewedReels": [
+    "https://www.instagram.com/reel/Deu4uUqFb4e/",
+    "https://www.instagram.com/reel/Deu41GdES5I/",
+    "https://www.instagram.com/reel/Deu47cLDA18/"
+  ],
+  "profileMetadata": "Public profile metadata fetched; says 69 posts but does not expose post permalinks in returned HTML. No permalink was inferred from sequence or guessed.",
+  "unresolved": [
+    "Photo batches 1\u20135: exact public permalinks and EFTA anchors.",
+    "MCC arc P7\u2013P12: exact public permalinks and EFTA anchors.",
+    "Three silent October 16 carousel/reel duplicate pairs: exact pairings."
+  ],
+  "scope": "Only P13\u2013P15 prepared. Other photo/MCC stories remain uncreated until identified and source-checked."
+}
