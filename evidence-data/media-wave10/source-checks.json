@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://www.finance.senate.gov/imo/media/doc/memorandum_to_senator_wyden_on_jpmc-epstein_redactedpdf.pdf",
+    "response": "403 text/html https://www.finance.senate.gov/imo/media/doc/memorandum_to_senator_wyden_on_jpmc-epstein_redactedpdf.pdf",
+    "sha256": "6ba99020ac37ca215966f2c9a450ca611637de0ac5975127e32e5268cffc4c7c",
+    "bytes": 533,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.591653/gov.uscourts.nysd.591653.226.4.pdf",
+    "response": "200 application/pdf https://storage.courtlistener.com/recap/gov.uscourts.nysd.591653/gov.uscourts.nysd.591653.226.4.pdf",
+    "sha256": "04e9ad0ffb2b1aa50c1ab2a84e48a7f04f51e9ecf1fc12e1aeafccfccf7ec5f0",
+    "bytes": 7365090,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://www.justice.gov/archives/opa/pr/statement-doj-office-professional-responsibility-report-jeffrey-epstein-2006-2008",
+    "response": "200 text/html https://www.justice.gov/archives/opa/pr/statement-doj-office-professional-responsibility-report-jeffrey-epstein-2006-2008",
+    "sha256": "5b0d07f8dcd000fa646147e7dfbc53cefb4f28a039ed5b5e2dc8f38a0356194a",
+    "bytes": 2552,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/archive/EFTA00013764",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/archive/EFTA00013764",
+    "sha256": "586e381d561dd61c90d7c6cfb10734ec4654bc22b0e5e1e286553f0c758a7b64",
+    "bytes": 17747,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/archive/EFTA01703108",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/archive/EFTA01703108",
+    "sha256": "3b0640fd9e741bc23ac58b39e256c35c472614e4791f7b3666bff9cf1fcc1cd6",
+    "bytes": 15727,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/archive/EFTA00646811",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/archive/EFTA00646811",
+    "sha256": "814601a07a88e1404d969bbeb3bc477dd52c8588e16b8924f364a0601d9bc8cd",
+    "bytes": 15735,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/archive/EFTA01410768",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/archive/EFTA01410768",
+    "sha256": "372500eed93a56ace8a7cb2cdb1af02c2aca5a1321751404ec1dd43495bcca10",
+    "bytes": 15733,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/guides/how-to-search-epstein-files",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/guides/how-to-search-epstein-files",
+    "sha256": "fa3814d7cf50ca5c4c728f4245703c966f329af3177bd827348b44768d362fca",
+    "bytes": 20989,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein",
+    "sha256": "d314202cd9b3a31676803a803518944a588aa2938b1c77b098ac442e1a4915ae",
+    "bytes": 39918,
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "url": "https://grokarchivehub.com/investigations/hold-the-letter",
+    "response": "200 text/html; charset=utf-8 https://grokarchivehub.com/investigations/hold-the-letter",
+    "sha256": "44acd6896b4c758e3af9a9166e0eccb7cb9fa0228ce6044943c337385214a938",
+    "bytes": 32092,
+    "checkedOn": "2026-10-26"
+  }
+]

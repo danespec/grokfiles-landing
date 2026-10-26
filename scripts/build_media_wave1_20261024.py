@@ -127,14 +127,14 @@ def cards(items):
     return '<div class="media-grid">'+''.join('<article class="media-card"><p class="kicker">'+e('Video' if r['family']=='video' else 'Reel source notes')+'</p><h3><a href="'+e(r['route'])+'">'+e(r['title'])+'</a></h3><p>'+e(r['description'])+'</p><p class="small">Receipts: '+e(' · '.join(r['documents']))+'</p></article>' for r in items)+'</div>'
 
 for family,route,title,intro in [
-    ('video','/videos','GrokArchiveHub Videos: Watch, Read and Verify','Watch GAH’s published documentaries and Shorts with original metadata, documentary source notes, responses and their limits. Browse the Barak and Ryan source trails.'),
+    ('video','/videos','GrokArchiveHub Videos: Watch, Read and Verify','Watch GAH’s published documentaries and Shorts with original metadata, documentary source notes, responses and their limits. Browse the Barak, Ryan, banking, victim-notification and research-tool source trails.'),
     ('reel','/reels','GrokArchiveHub Reels: The Documents Behind the Story','Permanent source notes for GAH’s Instagram reporting: Famous Names and News Desk, with published captions, document receipts and their limits.')]:
     selected=[r for r in records if r['family']==family]
     selected.sort(key=lambda r:captures[r['youtubeId']]['publishDate'] if family=='video' else r['socialDate'],reverse=True)
     body='<header class="article-hero wrap-narrow"><p class="kicker">GrokArchiveHub · '+str(len(selected))+' reviewed publications</p><h1 class="headline">'+title+'</h1><p class="lede">'+intro+'</p></header><article class="prose wrap-wide"><section><h2>Browse by source trail</h2>'
     for p in packages:
         items=[r for r in selected if r['package']==p['id']]
-        if items:body+='<section class="media-series"><h2>'+e(p['series'])+'</h2><p><a href="'+e(p['investigation'])+'">Read the full investigation</a></p>'+cards(items)+'</section>'
+        if items:body+='<section class="media-series"><h2>'+e(p['series'])+'</h2><p><a href="'+e(p['investigation'])+'">Open the source trail</a></p>'+cards(items)+'</section>'
     body+='</section><p><a href="/about">About GrokArchiveHub</a> · <a href="/topics">Explore research topics</a> · <a href="'+('/reels' if family=='video' else '/videos')+'">'+('Reel source notes' if family=='video' else 'Video watch pages')+'</a></p></article>'
     schema={'@context':'https://schema.org','@type':'CollectionPage','name':title,'url':BASE+route,'mainEntity':{'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':BASE+r['route'],'name':r['title']} for i,r in enumerate(selected)]}}
     save(route[1:]+'.html',render_page(route,title,intro,body,schema,'/assets/media-grokarchivehub.png'))
