@@ -98,8 +98,11 @@ def render_page(route,title,description,body,schema,card):
 
 for r in records:
     p=by_id[r['package']]
+    publication=r.get('publicationDate',data['publicationDate'])
+    from datetime import date
+    publication_label=date.fromisoformat(publication).strftime('%B %d, %Y').replace(' 0',' ')
     description=r['description']
-    body='<header class="article-hero wrap-narrow"><p class="kicker">'+('Watch and verify' if r['family']=='video' else 'Reel source notes')+' · '+e(p['series'])+'</p><h1 class="headline">'+e(r['title'])+'</h1><p class="lede">'+e(description)+'</p><p class="byline">GrokArchiveHub · Source notes published <time datetime="'+data['publicationDate']+'">October 24, 2026</time></p></header><article class="prose wrap-narrow media-article">'
+    body='<header class="article-hero wrap-narrow"><p class="kicker">'+('Watch and verify' if r['family']=='video' else 'Reel source notes')+' · '+e(p['series'])+'</p><h1 class="headline">'+e(r['title'])+'</h1><p class="lede">'+e(description)+'</p><p class="byline">GrokArchiveHub · Source notes published <time datetime="'+publication+'">'+publication_label+'</time></p></header><article class="prose wrap-narrow media-article">'
     citations=[('DOJ EFTA ' if x.startswith('EFTA') else 'Barak leak id ')+x for x in r['documents']]
     if r['family']=='video':
         v=captures[r['youtubeId']];duration='PT'+str(int(v['durationSeconds']))+'S';embed='https://www.youtube-nocookie.com/embed/'+r['youtubeId']
@@ -112,12 +115,12 @@ for r in records:
         c=captions[r['sourceUrl']]
         body+='<section id="summary"><h2>Read the document behind the reel</h2>'+''.join('<p>'+e(x)+'</p>' for x in r['analysis'])+'</section>'
         body+='<section id="original-caption"><h2>Original published Instagram caption</h2><p><a href="'+e(r['sourceUrl'])+'" rel="noopener noreferrer">Open the original GAH reel</a> · Instagram publication: <time datetime="'+r['socialDate']+'">'+r['socialDate']+'</time></p><blockquote class="media-caption">'+e(c['caption'])+'</blockquote><p class="small">Caption preserved from the public post metadata. It is the social publication, not a new finding. The document readings and limitations on this page control the interpretation.</p></section>'
-        schema={'@context':'https://schema.org','@type':'Article','headline':r['title'],'description':description,'datePublished':data['publicationDate'],'dateModified':data['publicationDate'],'author':{'@type':'Organization','name':'GrokArchiveHub'},'publisher':{'@type':'Organization','@id':BASE+'/#organization','name':'GrokArchiveHub'},'mainEntityOfPage':BASE+r['route'],'image':BASE+p['card'],'citation':citations,'isAccessibleForFree':True}
+        schema={'@context':'https://schema.org','@type':'Article','headline':r['title'],'description':description,'datePublished':publication,'dateModified':publication,'author':{'@type':'Organization','name':'GrokArchiveHub'},'publisher':{'@type':'Organization','@id':BASE+'/#organization','name':'GrokArchiveHub'},'mainEntityOfPage':BASE+r['route'],'image':BASE+p['card'],'citation':citations,'isAccessibleForFree':True}
     body+=source_register(p,r['documents'])
     body+='<section id="limits" class="media-limit"><h2>What this does not prove</h2><p>'+e(p['limits'])+'</p>'
     if r.get('extraLimit'):body+='<p>'+e(r['extraLimit'])+'</p>'
     body+='</section><section id="questions"><h2>Open questions and records still needed</h2><ul>'+''.join('<li>'+e(q)+'</li>' for q in p['questions'])+'</ul></section>'
-    body+=related(r)+'<p class="small">Source method: these notes connect an existing GAH investigation to its published social material. Corpus counts in the original caption are attributed to that publication’s search scope, not independent people, contacts or findings. See <a href="/methodology">methodology</a>, <a href="/editorial-policy">editorial responsibility</a> and <a href="/corrections">corrections</a>.</p></article>'
+    body+=related(r)+'<p class="small">Source method: these notes connect released source records to GAH’s published social material. Corpus counts in the original caption are attributed to that publication’s search scope, not independent people, contacts or findings. See <a href="/methodology">methodology</a>, <a href="/editorial-policy">editorial responsibility</a> and <a href="/corrections">corrections</a>.</p></article>'
     save(r['route'][1:]+'.html',render_page(r['route'],r['title'],description,body,schema,p['card']))
 
 def cards(items):
@@ -125,7 +128,7 @@ def cards(items):
 
 for family,route,title,intro in [
     ('video','/videos','GrokArchiveHub Videos: Watch, Read and Verify','Watch GAH’s published videos alongside their source notes, original descriptions and documentary limits. Explore the December 2014 Barak trip through the full documentary, three Shorts and their linked evidence.'),
-    ('reel','/reels','GrokArchiveHub Reels: The Documents Behind the Story','Permanent source notes for GAH’s Instagram reporting. Explore the St. Thomas trip, Leon Black’s payment records and Gratitude America’s account trail through the published captions, documents and their limits.')]:
+    ('reel','/reels','GrokArchiveHub Reels: The Documents Behind the Story','Permanent source notes for GAH’s Instagram reporting: Famous Names and News Desk, with published captions, document receipts and their limits.')]:
     selected=[r for r in records if r['family']==family]
     selected.sort(key=lambda r:captures[r['youtubeId']]['publishDate'] if family=='video' else r['socialDate'],reverse=True)
     body='<header class="article-hero wrap-narrow"><p class="kicker">GrokArchiveHub · '+str(len(selected))+' reviewed publications</p><h1 class="headline">'+title+'</h1><p class="lede">'+intro+'</p></header><article class="prose wrap-wide"><section><h2>Browse by source trail</h2>'
@@ -143,7 +146,7 @@ for relative in ['latest.html','entities.html','about.html']:
     text=(ROOT/relative).read_text()
     if relative=='entities.html':
         groups=''
-        for entity,title in [('barak','Ehud Barak: St. Thomas'),('leon-black','Leon Black and Gratitude America')]:
+        for entity,title in [('barak','Ehud Barak: St. Thomas'),('leon-black','Leon Black and Gratitude America')]+[(p['id'],p['series']) for p in packages if p['id'] not in {'barak','black','gratitude'}]:
             items=[r for r in records if by_id[r['package']]['entity'].endswith('#media-'+entity) or (entity=='barak' and r['package']=='barak')]
             groups+='<section id="media-'+entity+'"><h2>'+title+'</h2>'+cards(items)+'</section>'
         text=block(text,'GAH-MEDIA-DISCOVERY',groups,'<main id="main">')
@@ -156,6 +159,8 @@ for relative in ['latest.html','entities.html','about.html']:
 
 for p in packages:
     associated=[r for r in records if r['package']==p['id']]
+    if p['investigation'].startswith('/archive/'):
+        continue # Source access records are not editable investigation pages.
     text=(ROOT/(p['investigation'][1:]+'.html')).read_text()
     content='<section class="media-discovery"><h2>Related GAH videos and reel source notes</h2>'+cards(associated)+'</section>'
     # Related media follows the investigation; its text and headings remain unchanged.
@@ -171,7 +176,7 @@ home=block(home,'GAH-WEBSITE-IDENTITY','<script type="application/ld+json">'+jso
 home=block(home,'GAH-MEDIA-HOME','<p class="wrap media-home"><a href="/about">About GrokArchiveHub and its official channels</a> · <a href="/videos">Watch GAH videos with source notes</a> · <a href="/reels">Read the documents behind the reels</a></p>','</main>')
 save('index.html',home)
 
-for relative in ['index.html','about.html','latest.html','entities.html','barak/entities.html']+[p['investigation'][1:]+'.html' for p in packages]:
+for relative in ['index.html','about.html','latest.html','entities.html','barak/entities.html']+[p['investigation'][1:]+'.html' for p in packages if not p['investigation'].startswith('/archive/')]:
     # The existing story templates remain intact; only their new media sections use this sheet.
     text=(ROOT/relative).read_text()
     if '/assets/media-publication.css' not in text:
@@ -206,7 +211,7 @@ start='  // GAH-MEDIA-SITEMAP BEGIN';end='  // GAH-MEDIA-SITEMAP END';rendered=s
 if start in worker:worker=re.sub(re.escape(start)+r'[\s\S]*?'+re.escape(end)+r'\n?',lambda _:rendered,worker,count=1)
 else:worker=worker.replace('const CORE_SITEMAP_ENTRIES = [','const CORE_SITEMAP_ENTRIES = [\n'+rendered,1)
 worker=worker.replace('  ["/videos", "video-index-not-yet-substantive"],\n','')
-topic_html='<section><h2>Watch and verify: GAH media source notes</h2><p>Three existing source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p>'+all_links+'</section>'
+topic_html='<section><h2>Watch and verify: GAH media source notes</h2><p>Reviewed source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p>'+all_links+'</section>'
 worker=block(worker,'GAH-MEDIA-TOPICS',topic_html,'<h2>Current Public Topic Lanes</h2>')
 worker=worker.replace('const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL];','const GAH_SOCIAL_PROFILE_URLS = [GAH_X_PROFILE_URL, GAH_REDDIT_PROFILE_URL, "https://www.instagram.com/grokarchivehub/", "https://www.youtube.com/@GrokArchiveHub"];')
 worker=worker.replace('    name: "Grok Archive Hub",\n    url: "https://grokarchivehub.com/",\n    sameAs:', '    name: "GrokArchiveHub",\n    alternateName: ["Grok Archive Hub", "GAH"],\n    url: "https://grokarchivehub.com/",\n    sameAs:',1)

@@ -19,7 +19,7 @@ globalThis.fetch=async()=>{throw Error('Unexpected external fallback')};
 const get=(p,staging=false)=>worker.fetch(new Request('https://grokarchivehub.com'+p),env(staging));
 const jsonLd=html=>[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
 
-assert.equal(ready.length,7);
+assert.equal(ready.length,10);
 for(const r of ready){
   const response=await get(r.route);const html=await response.text();
   assert.equal(response.status,200,r.route);
@@ -64,7 +64,7 @@ for(const incoming of ['/topics','/latest','/entities']){
   const r=await get(incoming);assert.equal(r.status,200);const h=await r.text();
   for(const row of ready)assert.ok(h.includes('href="'+row.route+'"'),incoming+' -> '+row.route);
 }
-for(const p of manifest.packages){
+for(const p of manifest.packages.filter(p=>!p.investigation.startsWith("/archive/"))){
   const r=await get(p.investigation);assert.equal(r.status,200);const h=await r.text();
   for(const row of ready.filter(x=>x.package===p.id))assert.ok(h.includes('href="'+row.route+'"'));
 }
@@ -84,4 +84,16 @@ const missing=await get('/videos/not-a-published-video');assert.equal(missing.st
 const registry=JSON.parse(await readFile(path.join(root,'content/video-registry.json'),'utf8'));
 assert.equal(registry.videos.filter(v=>v.status==='published').length,4);
 assert.equal(registry.videos.find(v=>v.id==='gah-video-pilot-001-blanche-no-evidence').status,'draft');
-console.log('PASS media wave 1: 7 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
+console.log('PASS media catalog: 10 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
+
+for(const id of ['gates','musk','zuckerberg']){
+ const p=packages.get(id), row=ready.find(r=>r.package===id);
+ const entityHtml=await (await get('/entities')).text();
+ assert.ok(entityHtml.includes('id="media-'+id+'"'));
+ assert.ok(entityHtml.includes('href="'+row.route+'"'));
+ const html=await(await get(row.route)).text();
+ assert.ok(jsonLd(html).some(x=>x['@type']==='Article' && x.datePublished==='2026-10-25'));
+ if(id==='gates')assert.ok(html.includes('not proof of an executed agreement'));
+ if(id==='musk')assert.ok(html.includes('does not establish an island visit'));
+ if(id==='zuckerberg')assert.ok(html.includes('does not independently certify an exhaustive search'));
+}
