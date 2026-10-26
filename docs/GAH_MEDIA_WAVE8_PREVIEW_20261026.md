@@ -1,0 +1,18 @@
+# News Desk completion — preview receipts
+
+Two new reel source pages; production approval pending. These complete the seven-item News Desk inventory in preview, alongside the fourteen Famous Names pages already live.
+
+| Route | Source trail | Existing report |
+|---|---|---|
+| /reels/raskin-epstein-mlat-letter-october-2026 | Signed October 21 letter, four pages, official House PDF | /news/raskin-epstein-state-foreign-mlat-oversight-2026 |
+| /reels/shawn-ryan-peter-thiel-account-response | Original account URL with partial metadata; publisher response/released interview; official Anduril Series H announcement; EFTA02656769; labeled unverified raw leak 28568 reference | /investigations/barak-epstein-putin-qatar-carbyne |
+
+Captions captured completely from original Instagram metadata with hashes. Dates: Raskin October 24; Ryan October 20. No duplicate source publication or dedicated reel page found. Both pages include analysis, full caption, receipts, limitations, open questions, original social and existing report links. Both receive generated /topics, /latest, /entities and /reels links plus reciprocal links from existing reports. Article JSON-LD required fields, canonical, index,follow, shared document/text card and generated main sitemap entries checked. New notes dated October 26.
+
+Raskin: official PDF downloaded and text checked, including page 4. The letter has two record categories and a November 4, 5 pm requested deadline with no stated time zone. Allegations of obstruction remain Raskin’s characterizations. The source is not a subpoena or adjudication. Original no-response claim remains historical; no fresh exhaustive DOJ response search or verbatim audio certification claimed. State records litigation and executors litigation are separate.
+
+Ryan/Thiel: original X endpoint returned 200 with partial metadata; full original account was not authenticated here. Naming-condition allegation remains attributed to Leah via the original GAH caption. Crucially, the publisher’s Apple Podcasts episode listing (October 20, 2026, 01:30 UTC, about 1h44m) now supplies both a release record and Ryan’s response: initial withholding over truthfulness concerns, investment acknowledgment and military-technology rationale. The caption’s never-aired line is explicitly superseded, not adopted as current status. No full-audio comparison or completeness assessment claimed. Official Anduril May 13, 2026 Series H announcement checked; its financing does not establish editorial motive. The earlier LinkedIn start dates, Series G financing and 2014–2016 mailbox claims remain unverified historical caption assertions. Raw leak 28568 not retrieved; family-labeled instead of assigned a fake URL. EFTA02656769 archive OCR checked; it is a separate May 2018 communication and no proof of a completed meeting or a motive behind a 2026 podcast decision.
+
+Passed: actual Worker integration for 25 catalog pages and hubs, exact captions, Article dates, metadata, source anchors, named entity/discovery links, reciprocal report links, sitemap membership/uniqueness, indexability, staged privacy, scoped video CSP and held/draft exclusions; St. Thomas regression; 20 staging checks; idempotent generator and whitespace checks. No third-party rich-results, actual Google indexing or ranking claims. Public new-route HTTP 200 and live sitemap lines remain pending deploy.
+
+Preview first; deploy only on Thomas’s explicit word. Production sitemap baseline 182. Remaining work: YouTube catalog and transcripts, photo/MCC stories, investigation audit and final link/sitemap sweep. No recurring ingestion service or automatic account poller installed.
