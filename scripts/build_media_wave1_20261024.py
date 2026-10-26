@@ -54,6 +54,14 @@ captions = {c['sourceUrl']:c for c in source['captions']}
 records = [r for r in data['media'] if r['status']=='ready' and r['package'] in by_id]
 assert len({r['route'] for r in records})==len(records), 'Duplicate media routes'
 assert len({r['sourceUrl'] for r in records})==len(records), 'Duplicate source publication'
+associated_uploads = [dict(a, canonicalWatchRoute=r['route']) for r in records for a in r.get('associatedUploads',[])]
+assert len({a['youtubeId'] for a in associated_uploads})==len(associated_uploads), 'Duplicate associated upload'
+assert not ({a['youtubeId'] for a in associated_uploads} & {r.get('youtubeId') for r in records}), 'Associated upload already has a watch page'
+for a in associated_uploads:
+    v=captures[a['youtubeId']]
+    assert v['author']=='Grok Archive Hub' and v['channelId']=='UCtoujFSO4434iKT6HwmWEUA' and v['playability']=='OK'
+    assert a['sourceUrl']=='https://www.youtube.com/watch?v='+a['youtubeId']
+
 for r in records:
     assert r['route'].startswith('/videos/' if r['family']=='video' else '/reels/')
     if r['family']=='video':
@@ -110,7 +118,15 @@ for r in records:
         body+='<section id="summary"><h2>What this video examines</h2>'+''.join('<p>'+e(x)+'</p>' for x in r['analysis'])+'</section>'
         body+='<details class="media-original"><summary>Original YouTube title and published description</summary><p><strong>'+e(v['title'])+'</strong></p><div class="media-caption">'+e(v['description'] or 'No published YouTube description was available in the retrieved metadata. These source notes are not a narration transcript.')+'</div></details>'
         body+='<p class="small">These source notes accompany the video; a narration transcript is not available on this page. Use YouTube’s caption controls where available.</p>'
+        if r.get('associatedUploads'):
+            body+='<section id="associated-uploads"><h2>Earlier upload of this investigation</h2><p>Upload comparison reviewed <time datetime="'+e(r['updatedDate'])+'">'+e(r['updatedDate'])+'</time>.</p><ul>'
+            for a in r['associatedUploads']:
+                av=captures[a['youtubeId']]
+                body+='<li><a href="'+e(a['sourceUrl'])+'" rel="noopener noreferrer">'+e(av['title'])+'</a> · YouTube publication: '+e(av['publishDate'][:10])+' · '+e(av['durationSeconds'])+' seconds.</li>'
+            body+='</ul><p>'+e(r['captionComparisonSummary'])+'</p></section>'
+
         schema={'@context':'https://schema.org','@type':'VideoObject','name':r['title'],'description':description,'thumbnailUrl':[BASE+p['card']],'uploadDate':v['publishDate'],'duration':duration,'embedUrl':embed,'url':BASE+r['route'],'publisher':{'@type':'Organization','@id':BASE+'/#organization','name':'GrokArchiveHub'},'citation':citations,'isAccessibleForFree':True}
+        if r.get('updatedDate'):schema['dateModified']=r['updatedDate']
     else:
         c=captions[r['sourceUrl']]
         body+='<section id="summary"><h2>Read the document behind the reel</h2>'+''.join('<p>'+e(x)+'</p>' for x in r['analysis'])+'</section>'
@@ -190,9 +206,9 @@ video_urls=[]
 for r in records:
     if r['family']!='video':continue
     v=captures[r['youtubeId']];p=by_id[r['package']];duration='PT'+v['durationSeconds']+'S'
-    registry['videos'].append({'id':r['id'],'slug':r['route'].split('/')[-1],'status':'published','title':r['title'],'description':r['description'],'shortDescription':r['description'],'youtubeVideoId':r['youtubeId'],'youtubeUrl':r['sourceUrl'],'thumbnailUrl':BASE+p['card'],'durationIso8601':duration,'uploadDate':v['publishDate'],'publishDate':v['publishDate'],'updatedDate':r.get('publicationDate',data['publicationDate']),'category':p['series'],'tags':r['documents'],'transcriptPath':'','captionsPath':'','evidenceLinks':[{'label':x,'url':'/archive/'+x} for x in r['documents'] if x.startswith('EFTA')],'archiveIds':r['documents'],'batesIds':[x for x in r['documents'] if x.startswith('EFTA')],'relatedArchiveDocuments':[],'relatedInvestigation':{'title':p['investigationTitle'],'url':p['investigation']},'factualStatusLabels':['documented','inference','unresolved'],'featured':r['format']=='long','visibility':'public','madeForKids':False,'language':'en','recordingDate':'','scheduledPublishAt':'','xPublicationStatus':'not-requested'})
-    video_urls.append({'loc':BASE+r['route'],'lastmod':r.get('publicationDate',data['publicationDate']),'video':{'thumbnail_loc':BASE+p['card'],'title':r['title'],'description':r['description'],'player_loc':'https://www.youtube-nocookie.com/embed/'+r['youtubeId'],'publication_date':v['publishDate']}})
-registry['updatedAt']=max(r.get('publicationDate',data['publicationDate']) for r in records)+'T00:00:00Z'
+    registry['videos'].append({'id':r['id'],'slug':r['route'].split('/')[-1],'status':'published','title':r['title'],'description':r['description'],'shortDescription':r['description'],'youtubeVideoId':r['youtubeId'],'youtubeUrl':r['sourceUrl'],'thumbnailUrl':BASE+p['card'],'durationIso8601':duration,'uploadDate':v['publishDate'],'publishDate':v['publishDate'],'updatedDate':r.get('updatedDate',r.get('publicationDate',data['publicationDate'])),'category':p['series'],'tags':r['documents'],'transcriptPath':'','captionsPath':'','evidenceLinks':[{'label':x,'url':'/archive/'+x} for x in r['documents'] if x.startswith('EFTA')],'archiveIds':r['documents'],'batesIds':[x for x in r['documents'] if x.startswith('EFTA')],'relatedArchiveDocuments':[],'relatedInvestigation':{'title':p['investigationTitle'],'url':p['investigation']},'factualStatusLabels':['documented','inference','unresolved'],'featured':r['format']=='long','visibility':'public','madeForKids':False,'language':'en','recordingDate':'','scheduledPublishAt':'','xPublicationStatus':'not-requested'})
+    video_urls.append({'loc':BASE+r['route'],'lastmod':r.get('updatedDate',r.get('publicationDate',data['publicationDate'])),'video':{'thumbnail_loc':BASE+p['card'],'title':r['title'],'description':r['description'],'player_loc':'https://www.youtube-nocookie.com/embed/'+r['youtubeId'],'publication_date':v['publishDate']}})
+registry['updatedAt']=max(r.get('updatedDate',r.get('publicationDate',data['publicationDate'])) for r in records)+'T00:00:00Z'
 save('content/video-registry.json',json.dumps(registry,ensure_ascii=False,indent=2)+'\n')
 save('content/video-sitemap.json',json.dumps({'schemaVersion':1,'generatedFrom':'content/media-publication.json','hub':{'loc':BASE+'/videos','lastmod':data['publicationDate']},'videoUrls':video_urls},ensure_ascii=False,indent=2)+'\n')
 
@@ -224,7 +240,7 @@ save('_worker.js',worker)
 
 # Full scope and held inventory stay explicit; unreviewed entries never create a page.
 selected={r['youtubeId'] for r in records if r['family']=='video'}
-held=[{'youtubeId':ident,'channelLabel':label,'reason':'Not yet reviewed for a source-complete watch page; no page generated.'} for ident,label in source['channelInventory'].items() if ident not in selected]
-save('evidence-data/media-wave1/publication-inventory.json',json.dumps({'scope':'Reviewed media catalog; remaining master-script inventory is held until source review.','publicationDate':data['publicationDate'],'readyRoutes':routes,'upgradedInvestigations':[p['investigation'] for p in packages],'heldYouTube':held,'transcriptGap':source['transcriptStatus'],'olderBarakLong':'0WSgi2Ds17o has a similar title; not assumed to be byte-identical and no second story page is created in this tranche.'},ensure_ascii=False,indent=2)+'\n')
+held=[{'youtubeId':ident,'channelLabel':label,'reason':'Not yet reviewed for a source-complete watch page; no page generated.'} for ident,label in source['channelInventory'].items() if ident not in selected and ident not in {a['youtubeId'] for a in associated_uploads}]
+save('evidence-data/media-wave1/publication-inventory.json',json.dumps({'scope':'Reviewed media catalog; remaining master-script inventory is held until source review.','publicationDate':data['publicationDate'],'readyRoutes':routes,'upgradedInvestigations':[p['investigation'] for p in packages],'heldYouTube':held,'associatedYouTube':associated_uploads,'transcriptGap':source['transcriptStatus'],'olderBarakLong':'0WSgi2Ds17o is associated with the existing watch page after metadata and automatic-caption comparison; identical media is not certified.'},ensure_ascii=False,indent=2)+'\n')
 print(('STALE: ' if CHECK and CHANGES else 'Generated: ')+', '.join(CHANGES or ['no changes']))
 if CHECK and CHANGES:sys.exit(1)

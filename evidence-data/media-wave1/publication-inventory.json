@@ -63,13 +63,14 @@
     "/investigations/jpmorgan-nine-sars-epstein",
     "/investigations/hold-the-letter"
   ],
-  "heldYouTube": [
+  "heldYouTube": [],
+  "associatedYouTube": [
     {
       "youtubeId": "0WSgi2Ds17o",
-      "channelLabel": "Ehud Barak's Island Weekend — and the Flight Ticket in Another Man's Name | Epstein Documents",
-      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
+      "sourceUrl": "https://www.youtube.com/watch?v=0WSgi2Ds17o",
+      "canonicalWatchRoute": "/videos/barak-st-thomas-december-2014"
     }
   ],
-  "transcriptGap": "YouTube advertises caption tracks, but all four caption requests returned empty bodies. No transcript has been invented.",
-  "olderBarakLong": "0WSgi2Ds17o has a similar title; not assumed to be byte-identical and no second story page is created in this tranche."
+  "transcriptGap": "Initial October 24 timedtext requests returned empty bodies. On October 26, browser exports retrieved automatic captions for the current and older Barak long uploads; they remain unverified against complete audio and no transcript is published. Other watch-page transcript gaps remain open.",
+  "olderBarakLong": "0WSgi2Ds17o is associated with the existing watch page after metadata and automatic-caption comparison; identical media is not certified."
 }
