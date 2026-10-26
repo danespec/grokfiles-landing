@@ -181,6 +181,67 @@
         "Contemporaneous arrival records, follow-up correspondence or accounts establishing whether each listed event happened.",
         "Independent records of any discussion; a dinner title is not a transcript."
       ]
+    },
+    {
+      "id": "hawking",
+      "status": "ready",
+      "series": "Stephen Hawking: the contact-details request",
+      "investigation": "/archive/EFTA00695049",
+      "investigationTitle": "Read the source record",
+      "entity": "/entities#media-hawking",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00695049": "June 23, 2015 Lesley Groff email asks Epstein whether to give Hawking’s email address to Steven Pinker. A forwarded Lawrence Krauss message supplies contact information and asserts that Epstein flew Hawking on a plane. This is Krauss’s statement in correspondence, not a flight manifest. This source link is a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA00695049": "https://media-cdn.rollcall.com/epstein-files/EFTA00695049.pdf"
+      },
+      "limits": "This request does not establish its purpose, Hawking’s response, a completed exchange with Pinker, a specific flight or wrongdoing. The original caption says the address is obscured; the reviewed released-PDF mirror contains readable contact information. That redaction claim is not adopted here, and the address is not reproduced. The 276-document figure is the caption’s historical search count.",
+      "questions": [
+        "The stated purpose of the request and any actual subsequent communication.",
+        "A flight or transport record before treating Krauss’s remark as an independently established flight finding."
+      ]
+    },
+    {
+      "id": "bezos",
+      "status": "ready",
+      "series": "Jeff Bezos: the shared email recipient list",
+      "investigation": "https://media-cdn.rollcall.com/epstein-files/EFTA00759004.pdf",
+      "investigationTitle": "Read EFTA00759004 — publisher-hosted released PDF",
+      "entity": "/entities#media-bezos",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00759004": "May 11, 2010 RE: It was Nassim!! thread. The outer message is from Nathan Myhrvold and includes a quoted John Brockman message. The recipient fields name Bezos, Epstein and others; the content discusses a book and its promotion. The list is evidence of inclusion in this thread, not direct communication between every named recipient. This source link is a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA00759004": "https://media-cdn.rollcall.com/epstein-files/EFTA00759004.pdf"
+      },
+      "limits": "Being listed as a recipient does not establish that Bezos read, answered or acted on the message, knew every other recipient, met Epstein, made a deal or committed wrongdoing. The caption’s “one circle” and “proximity” are rhetorical descriptions of a shared thread, not a verified social network. Its 199-document count remains attributed to the original search scope.",
+      "questions": [
+        "Any direct reply or separately authenticated communication before claiming a bilateral relationship.",
+        "Independent meeting or transaction records before inferring an event or deal from a recipient list."
+      ]
+    },
+    {
+      "id": "maxwell",
+      "status": "ready",
+      "series": "Ghislaine Maxwell: travel coordination and household records",
+      "investigation": "/archive/EFTA02332402",
+      "investigationTitle": "Read the source record",
+      "entity": "/entities#media-maxwell",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA02332402": "September 6, 2002 G. Max / James Attaway exchange requests a Palm Beach schedule change and identifies an assistant. Attaway replies that arrangements have him arriving Sunday and a driver will meet him. This records a scheduling exchange and reported arrangements, not an independent arrival log.",
+        "EFTA00007893": "Released Palm Beach household evidence binder, beginning with an evidence cover sheet. Later contact/residence sections include Epstein and Maxwell; other pages contain operational notes. A multi-page binder contains different kinds of entries and does not make every address listing a finding of ownership or residence. This source link is a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA00007893": "https://media-cdn.rollcall.com/epstein-files/EFTA00007893.pdf"
+      },
+      "limits": "These records document scheduling and household administration; they are not trial findings establishing the criminal significance of each entry. The caption’s “operating officer” is an editorial characterization, not a documented corporate title. Its claim that both people are principals at every named property is broader than the entry-level findings established here and is not adopted. The 2021 verdict context is separate from these documents; this page does not independently reconstruct the trial. The 10,828-document count is an attributed historical search result.",
+      "questions": [
+        "Arrival records or later correspondence establishing whether the proposed trip occurred.",
+        "A page-by-page property and role analysis before treating all binder listings as identical findings."
+      ]
     }
   ],
   "media": [
@@ -463,6 +524,64 @@
       ],
       "sourceUrl": "https://www.instagram.com/reel/DexmH3OgIGU/",
       "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "hawking-reel",
+      "package": "hawking",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/stephen-hawking-email-request-efta00695049",
+      "title": "Stephen Hawking and EFTA00695049: the contact-details request",
+      "description": "Stephen Hawking: the contact-details request. Read EFTA00695049 with the original GAH caption and carefully bounded source notes.",
+      "documents": [
+        "EFTA00695049"
+      ],
+      "analysis": [
+        "The June 2015 chain concerns obtaining and sharing contact information. The striking flight remark belongs to Lawrence Krauss; it does not become an independently authenticated passenger record by being quoted.",
+        "The original reel caption is preserved below, including a redaction description that differs from the PDF mirror reviewed for this page. GAH does not display the address. The archive landing page has no displayed OCR; the labeled released-PDF mirror supplies the reviewed text."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De1sic8l1mt/",
+      "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "bezos-reel",
+      "package": "bezos",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/jeff-bezos-email-list-efta00759004",
+      "title": "Jeff Bezos and EFTA00759004: what a shared email list establishes",
+      "description": "Jeff Bezos: the shared email recipient list. Read EFTA00759004 with the original GAH caption and carefully bounded source notes.",
+      "documents": [
+        "EFTA00759004"
+      ],
+      "analysis": [
+        "The artifact is an email thread, with an outer Myhrvold reply and a quoted Brockman message. Its recipient list contains Bezos and Epstein among many names.",
+        "That makes the list useful evidence for a narrowly stated fact: these names appear in this correspondence. It does not establish relationships among all recipients or show that anyone received, read or endorsed its contents."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De1silwkXdK/",
+      "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "maxwell-reel",
+      "package": "maxwell",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/ghislaine-maxwell-travel-coordination-efta02332402",
+      "title": "Ghislaine Maxwell: EFTA02332402 and the household-record trail",
+      "description": "Ghislaine Maxwell: travel coordination and household records. Read EFTA02332402, EFTA00007893 with the original GAH caption and carefully bounded source notes.",
+      "documents": [
+        "EFTA02332402",
+        "EFTA00007893"
+      ],
+      "analysis": [
+        "The email shows Maxwell requesting a schedule change and Attaway reporting revised travel arrangements through an assistant. It supplies direct evidence of coordination, without independently establishing the actual arrival.",
+        "The binder supplies a different source family within the released records: household and contact paperwork. Its entries should be read individually. The source note does not reproduce private addresses or turn the caption’s role description into a formal job title."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De2u7XAlHl2/",
+      "socialDate": "2026-10-23",
       "publicationDate": "2026-10-25"
     }
   ]

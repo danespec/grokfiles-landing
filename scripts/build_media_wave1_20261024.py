@@ -159,7 +159,7 @@ for relative in ['latest.html','entities.html','about.html']:
 
 for p in packages:
     associated=[r for r in records if r['package']==p['id']]
-    if p['investigation'].startswith('/archive/'):
+    if p['investigation'].startswith(('/archive/','/reels/','https://')):
         continue # Source access records are not editable investigation pages.
     text=(ROOT/(p['investigation'][1:]+'.html')).read_text()
     content='<section class="media-discovery"><h2>Related GAH videos and reel source notes</h2>'+cards(associated)+'</section>'
@@ -176,7 +176,7 @@ home=block(home,'GAH-WEBSITE-IDENTITY','<script type="application/ld+json">'+jso
 home=block(home,'GAH-MEDIA-HOME','<p class="wrap media-home"><a href="/about">About GrokArchiveHub and its official channels</a> · <a href="/videos">Watch GAH videos with source notes</a> · <a href="/reels">Read the documents behind the reels</a></p>','</main>')
 save('index.html',home)
 
-for relative in ['index.html','about.html','latest.html','entities.html','barak/entities.html']+[p['investigation'][1:]+'.html' for p in packages if not p['investigation'].startswith('/archive/')]:
+for relative in ['index.html','about.html','latest.html','entities.html','barak/entities.html']+[p['investigation'][1:]+'.html' for p in packages if not p['investigation'].startswith(('/archive/','/reels/','https://'))]:
     # The existing story templates remain intact; only their new media sections use this sheet.
     text=(ROOT/relative).read_text()
     if '/assets/media-publication.css' not in text:
