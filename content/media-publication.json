@@ -412,6 +412,69 @@
         "Underlying flight, carrier and payment records for each actual movement.",
         "Docket responses and orders, original trust provisions and estate accounting before treating requested relief or possible bequests as completed outcomes."
       ]
+    },
+    {
+      "id": "raskin",
+      "status": "ready",
+      "series": "Raskin: the MLAT and state-records request",
+      "investigation": "/news/raskin-epstein-state-foreign-mlat-oversight-2026",
+      "investigationTitle": "Read the existing report and its source register",
+      "entity": "/entities#media-raskin",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "RASKIN-LETTER-20261021": "Four-page signed October 21, 2026 letter to Blanche and Ary. Page 4 requests records about foreign MLAT assistance and decisions to deny or oppose state/local cooperation, with a November 4, 2026, 5 pm response deadline. The document does not specify a time zone. It is an oversight request, not a subpoena or court finding."
+      },
+      "documentLinks": {
+        "RASKIN-LETTER-20261021": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-10-21-raskin-to-blanche-ary-doj-re-epstein-mlat-obstruction.pdf"
+      },
+      "documentLabels": {
+        "RASKIN-LETTER-20261021": "Signed House Judiciary letter, October 21, 2026"
+      },
+      "documentLinkLabels": {
+        "RASKIN-LETTER-20261021": "official congressional PDF"
+      },
+      "limits": "Raskin’s obstruction language is his allegation, not a judicial finding. The letter does not prove that DOJ received, agreed to or complied with the request, or that every dispute it describes is established. The New Mexico records lawsuit is separate from its executors case; DOJ’s stated privacy and court-order defenses are carried in the existing report. The original caption’s no-response statement is historical, not a fresh exhaustive search certification. The caption condenses the requests; this page does not certify the audio as a verbatim transcription.",
+      "questions": [
+        "A publicly authenticated DOJ response, production record or subsequent congressional action.",
+        "The underlying state/DOJ pleadings and foreign requests, rather than treating the letter as adjudication of those disputes."
+      ]
+    },
+    {
+      "id": "ryan-thiel",
+      "status": "ready",
+      "series": "Ryan and Thiel: allegation, response and separate records",
+      "investigation": "/investigations/barak-epstein-putin-qatar-carbyne",
+      "investigationTitle": "Read the existing report and its source register",
+      "entity": "/entities#media-ryan-thiel",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "LEAH-ACCOUNT-202610": "Original Leah post URL attached to GAH’s caption. Direct retrieval returned a page with partial post metadata about her episode account, but not the complete underlying post in this check. The naming-restriction allegation is preserved as GAH’s attribution to her, not independently authenticated as fact.",
+        "RYAN-RESPONSE-202610": "Publisher episode listing for My Unredacted Interview with The Leah Files, dated October 20, 2026, 01:30 UTC, about 1 hour 44 minutes. Ryan’s description says he initially withheld the episode over truthfulness concerns and presents the interview for viewers. He acknowledges investing in Shield AI and Anduril and gives a military-technology rationale. These are his statements, not an adjudication of the dispute.",
+        "ANDURIL-SERIES-H-2026": "Company’s May 13, 2026 announcement of a 5 billion Series H led by Thrive Capital and Andreessen Horowitz. This establishes the company’s financing announcement, not why a host made an editorial decision.",
+        "EFTA02656769": "May 21, 2018 Epstein email to Peter Thiel says Trae is meeting Carbyne, Ehud Barak’s company. It records Epstein’s statement, not independent proof of a completed meeting. It does not establish the 2014–2016 claims or the cause of a 2026 podcast decision.",
+        "28568": "Barak mailbox leak identifier cited in the original GAH caption for a February 2016 fund description. The raw attachment was not retrieved in this pass; this remains a separately labeled source-family reference and is not treated as a newly authenticated fund-ownership finding."
+      },
+      "documentLinks": {
+        "LEAH-ACCOUNT-202610": "https://x.com/leahfiles/status/2112000867058557393",
+        "RYAN-RESPONSE-202610": "https://podcasts.apple.com/us/podcast/my-unredacted-interview-with-the-leah-files/id1492492083?i=1000797160445",
+        "ANDURIL-SERIES-H-2026": "https://www.anduril.com/news/anduril-announces-usd5b-series-h-raise"
+      },
+      "documentLabels": {
+        "LEAH-ACCOUNT-202610": "Leah’s original account — partial source retrieval",
+        "RYAN-RESPONSE-202610": "Ryan’s publisher description and released interview",
+        "ANDURIL-SERIES-H-2026": "Anduril financing announcement"
+      },
+      "documentLinkLabels": {
+        "LEAH-ACCOUNT-202610": "original X post; full text not authenticated here",
+        "RYAN-RESPONSE-202610": "publisher episode listing on Apple Podcasts",
+        "ANDURIL-SERIES-H-2026": "official company announcement"
+      },
+      "limits": "The naming restriction remains an allegation attributed to Leah in GAH’s original caption. Ryan’s stated reason for initially withholding the interview was concern about truthfulness; he says his investments support military technology. A published interview listing now exists, so the caption’s “The episode never aired” is not adopted as current status. No frame-by-frame comparison has authenticated completeness or editing. Financing and older Epstein correspondence do not establish motive, censorship on an investor’s instruction or criminal conduct. The earlier LinkedIn start dates, 2025 financing and 2014–2016 mailbox claims are historical caption assertions whose underlying records were not freshly authenticated here.",
+      "questions": [
+        "The complete original account, booking messages and production instructions concerning the alleged naming condition.",
+        "Original recordings and publication versions before assessing editing or completeness.",
+        "The raw leak record and fund-ownership documents before treating the quoted 2016 fund description as an established ownership structure."
+      ]
     }
   ],
   "media": [
@@ -897,6 +960,49 @@
       "sourceUrl": "https://www.instagram.com/reel/Dex6ysgiBNu/",
       "socialDate": "2026-10-21",
       "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "raskin-reel",
+      "package": "raskin",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/raskin-epstein-mlat-letter-october-2026",
+      "title": "Raskin’s October 21 letter: Epstein MLAT records and the November 4 deadline",
+      "description": "Raskin: the MLAT and state-records request. Original GAH caption, documentary receipts, responses and limits.",
+      "documents": [
+        "RASKIN-LETTER-20261021"
+      ],
+      "analysis": [
+        "The source is the signed four-page letter, not merely a press release about it. Its records requests and deadline can be checked on page 4.",
+        "The reel introduces a testable oversight inquiry. Characterizations of obstruction remain attributed to the letter’s author, with the agency’s separate legal position kept distinct from an outcome on the request."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De4JiMMk9W8/",
+      "socialDate": "2026-10-24",
+      "publicationDate": "2026-10-26"
+    },
+    {
+      "id": "ryan-thiel-reel",
+      "package": "ryan-thiel",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/shawn-ryan-peter-thiel-account-response",
+      "title": "Shawn Ryan, Peter Thiel and Leah: the allegation, response and release record",
+      "description": "Ryan and Thiel: allegation, response and separate records. Original GAH caption, documentary receipts, responses and limits.",
+      "documents": [
+        "LEAH-ACCOUNT-202610",
+        "RYAN-RESPONSE-202610",
+        "ANDURIL-SERIES-H-2026",
+        "EFTA02656769",
+        "28568"
+      ],
+      "analysis": [
+        "The original caption reports a disputed restriction and says the episode never aired. That last statement is superseded by a publisher listing for the released interview; the historical caption is retained below with the correction visible here.",
+        "Ryan’s published description gives a different explanation for initially withholding it and acknowledges his investments. The page carries his position beside the attributed allegation; neither account is treated as a verdict.",
+        "Anduril’s financing announcement and an older Epstein email are independent context. Their existence does not join them into a causal explanation for a podcast publication decision."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DevD2a5EoKF/",
+      "socialDate": "2026-10-20",
+      "publicationDate": "2026-10-26"
     }
   ]
 }

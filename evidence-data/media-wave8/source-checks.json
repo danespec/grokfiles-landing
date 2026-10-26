@@ -1,0 +1,32 @@
+{
+  "raskin": {
+    "url": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-10-21-raskin-to-blanche-ary-doj-re-epstein-mlat-obstruction.pdf",
+    "status": 200,
+    "sha256": "54255378fdfa93ce5ce961293ac121c082c9a7fd19891450e8a00df236ff4832",
+    "scope": "Document text or publisher metadata checked"
+  },
+  "episode": {
+    "url": "https://podcasts.apple.com/us/podcast/my-unredacted-interview-with-the-leah-files/id1492492083?i=1000797160445",
+    "status": 200,
+    "sha256": "0217ddc209bab7f41999dbd709a682974e75683f32f82a8faf5833766abd426b",
+    "scope": "Document text or publisher metadata checked"
+  },
+  "anduril": {
+    "url": "https://www.anduril.com/news/anduril-announces-usd5b-series-h-raise",
+    "status": 200,
+    "sha256": "51af45e41c52f6bac9c2d47d6c408821bd30851b3486a9c0d958771901b3bd88",
+    "scope": "Document text or publisher metadata checked"
+  },
+  "leah": {
+    "url": "https://x.com/leahfiles/status/2112000867058557393",
+    "status": 200,
+    "sha256": "37b464cdab9380e0d8839d0005437567016114dd98b01aea8cf9abbb718b45b9",
+    "scope": "Partial metadata only; full post not authenticated"
+  },
+  "EFTA02656769": {
+    "url": "https://grokarchivehub.com/archive/EFTA02656769",
+    "status": 200,
+    "sha256": "3333797eed62423b0f12bb1b4d718955ece4d2c851831a3f36199eca1640f60a",
+    "scope": "Document text or publisher metadata checked"
+  }
+}
