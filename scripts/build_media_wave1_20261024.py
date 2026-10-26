@@ -224,7 +224,7 @@ save('_worker.js',worker)
 
 # Full scope and held inventory stay explicit; unreviewed entries never create a page.
 selected={r['youtubeId'] for r in records if r['family']=='video'}
-held=[{'youtubeId':ident,'channelLabel':label,'reason':'Not in the first three reviewed story packages; no page generated.'} for ident,label in source['channelInventory'].items() if ident not in selected]
-save('evidence-data/media-wave1/publication-inventory.json',json.dumps({'scope':'Brand identity plus three existing source trails; not the full master-script backfill.','publicationDate':data['publicationDate'],'readyRoutes':routes,'upgradedInvestigations':[p['investigation'] for p in packages],'heldYouTube':held,'transcriptGap':source['transcriptStatus'],'olderBarakLong':'0WSgi2Ds17o has a similar title; not assumed to be byte-identical and no second story page is created in this tranche.'},ensure_ascii=False,indent=2)+'\n')
+held=[{'youtubeId':ident,'channelLabel':label,'reason':'Not yet reviewed for a source-complete watch page; no page generated.'} for ident,label in source['channelInventory'].items() if ident not in selected]
+save('evidence-data/media-wave1/publication-inventory.json',json.dumps({'scope':'Reviewed media catalog; remaining master-script inventory is held until source review.','publicationDate':data['publicationDate'],'readyRoutes':routes,'upgradedInvestigations':[p['investigation'] for p in packages],'heldYouTube':held,'transcriptGap':source['transcriptStatus'],'olderBarakLong':'0WSgi2Ds17o has a similar title; not assumed to be byte-identical and no second story page is created in this tranche.'},ensure_ascii=False,indent=2)+'\n')
 print(('STALE: ' if CHECK and CHANGES else 'Generated: ')+', '.join(CHANGES or ['no changes']))
 if CHECK and CHANGES:sys.exit(1)

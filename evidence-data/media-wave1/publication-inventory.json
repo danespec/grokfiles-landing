@@ -1,5 +1,5 @@
 {
-  "scope": "Brand identity plus three existing source trails; not the full master-script backfill.",
+  "scope": "Reviewed media catalog; remaining master-script inventory is held until source review.",
   "publicationDate": "2026-10-24",
   "readyRoutes": [
     "/videos/barak-st-thomas-december-2014",
@@ -12,6 +12,9 @@
     "/reels/bill-gates-nikolic-points-efta02730265",
     "/reels/elon-musk-holiday-email-efta02338119",
     "/reels/mark-zuckerberg-mentions-efta00034221",
+    "/reels/larry-summers-harvard-planning-efta02239873",
+    "/reels/reid-hoffman-island-logistics-efta02300238",
+    "/reels/steve-bannon-barak-calendar-efta02240144",
     "/videos",
     "/reels"
   ],
@@ -21,48 +24,51 @@
     "/investigations/gratitude-america-money-trail-2015-2019",
     "/investigations/nikolic-gates-epstein-bridge",
     "/archive/EFTA02338119",
-    "/archive/EFTA00034221"
+    "/archive/EFTA00034221",
+    "/archive/EFTA02239873",
+    "/archive/EFTA02300238",
+    "/archive/EFTA02240144"
   ],
   "heldYouTube": [
     {
       "youtubeId": "0WSgi2Ds17o",
       "channelLabel": "Ehud Barak's Island Weekend — and the Flight Ticket in Another Man's Name | Epstein Documents",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "BM2Yeds1f2o",
       "channelLabel": "Shawn Ryan Released the Episode He Wouldn't Release — In His Own Words",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "7XceJkxfF4w",
       "channelLabel": "Peter Thiel Is Already in the Epstein Files #ai @ShawnRyanShow, 29 views - play Short",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "8lXk63Zyk9U",
       "channelLabel": "The Names She Wasn't Allowed to Say on Shawn Ryan's Show #ai @ShawnRyanShow, 12 views - play Short",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "ykZ_ImbdAYs",
       "channelLabel": "Shawn Ryan Released the Episode — In His Own Words #ai @ShawnRyanShow, 27 views - play Short",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "fwd1SQbAKOI",
       "channelLabel": "AI search engine is turned…on. Come to my website. Time to research. #ai #aivideo #aishorts #fyp, 11 views - play Short",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "3pfD3DW2cxU",
       "channelLabel": "A $1.28B reporting question. We examine Epstein’s JPMorgan timeline—and the limits of the evidence., 1 view - play Short",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     },
     {
       "youtubeId": "z39leXbW_2I",
       "channelLabel": "GrokArchiveHub.com Every Epstein claim traceable to the the document. #Epstein #EpsteinFiles #fyp, 4 views - play Short",
-      "reason": "Not in the first three reviewed story packages; no page generated."
+      "reason": "Not yet reviewed for a source-complete watch page; no page generated."
     }
   ],
   "transcriptGap": "YouTube advertises caption tracks, but all four caption requests returned empty bodies. No transcript has been invented.",

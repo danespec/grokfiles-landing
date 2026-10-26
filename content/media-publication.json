@@ -129,6 +129,58 @@
         "A direct communication or authenticated meeting record would be different evidence from a third-party mention.",
         "A reproducible search log is needed to independently audit the caption’s corpus-wide negative finding."
       ]
+    },
+    {
+      "id": "summers",
+      "status": "ready",
+      "series": "Larry Summers: Harvard visit planning",
+      "investigation": "/archive/EFTA02239873",
+      "investigationTitle": "Read the flagship source record",
+      "entity": "/entities#media-summers",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA02239873": "March 20, 2018 Lesley Groff inquiry asking whether Larry Summers is available during a proposed March 25 Harvard visit. This is a scheduling inquiry, not a meeting confirmation.",
+        "EFTA02239649": "March 21, 2018 Harvard Trip office memo says Summers is potentially returning from Beijing and that his assistant will tell him Epstein will be at Harvard. Its named schedule lists other appointments; it does not confirm a Summers meeting."
+      },
+      "limits": "The emails document efforts to arrange contact, not a completed March 25 meeting. Historical Harvard funding and the 5,378-document count in the original caption are separate attributed context, not conclusions established by these two scheduling emails. No criminal allegation follows from the correspondence.",
+      "questions": [
+        "A confirmation, contemporaneous attendance record or follow-up identifying an actual meeting.",
+        "Independent primary records for the separate historical funding context, rather than using scheduling emails to substantiate donations."
+      ]
+    },
+    {
+      "id": "hoffman",
+      "status": "ready",
+      "series": "Reid Hoffman: island departure logistics",
+      "investigation": "/archive/EFTA02300238",
+      "investigationTitle": "Read the flagship source record",
+      "entity": "/entities#media-hoffman",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA02300238": "November 28, 2014 email from Lesley Groff to Reid Hoffman and Joi Ito forwards pilot information for a proposed November 30 island-to-Bedford trip. It requests US home addresses for customs pre-clearance. The note describes flight duration and projected arrival; it is not a passenger manifest or proof of boarding."
+      },
+      "limits": "This email records departure arrangements. It does not itself prove that the flight operated or identify everyone who boarded. The earlier Vancouver itinerary and 2019 apology in the original caption are separate attributed claims whose underlying primary records are not supplied by EFTA02300238. A logistics email does not establish criminal conduct.",
+      "questions": [
+        "A flight movement, manifest or arrival record for the proposed November 30 route.",
+        "The earlier Vancouver itinerary and original 2019 statement, before independently treating those caption claims as verified findings."
+      ]
+    },
+    {
+      "id": "bannon",
+      "status": "ready",
+      "series": "Steve Bannon: the March 2018 schedule",
+      "investigation": "/archive/EFTA02240144",
+      "investigationTitle": "Read the flagship source record",
+      "entity": "/entities#media-bannon",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA02240144": "March 21, 2018 scheduling chain includes a March 22 calendar listing separate Ehud and Steve Bannon appointments and a dinner with both. Continuation entries list Miro joining and a Leon Black breakfast the next morning. They remain planned entries, not attendance certifications."
+      },
+      "limits": "The calendar lists plans. It does not prove that Bannon, Barak, Black or anyone else attended, what was discussed, or criminal conduct. The original caption’s 1,891-document count measures its reported search scope, not meetings or acts. Unrelated private contact details in the source are not reproduced.",
+      "questions": [
+        "Contemporaneous arrival records, follow-up correspondence or accounts establishing whether each listed event happened.",
+        "Independent records of any discussion; a dinner title is not a transcript."
+      ]
     }
   ],
   "media": [
@@ -352,6 +404,64 @@
         "Neither released record shows Zuckerberg writing to Epstein, agreeing to a meeting or attending an event with him. The caption’s wider negative-search claim remains attributed to its original scope rather than promoted into proof that no contact ever occurred."
       ],
       "sourceUrl": "https://www.instagram.com/reel/DexesF4EkHl/",
+      "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "summers-reel",
+      "package": "summers",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/larry-summers-harvard-planning-efta02239873",
+      "title": "Larry Summers: EFTA02239873 and the proposed Harvard visit",
+      "description": "Larry Summers: Harvard visit planning. Read EFTA02239873, EFTA02239649 with GAH’s original reel caption, document receipts and limits.",
+      "documents": [
+        "EFTA02239873",
+        "EFTA02239649"
+      ],
+      "analysis": [
+        "On March 20, 2018 Epstein’s office asks whether Summers might be available for a Sunday visit. The next day’s memo describes a potential return from Beijing and communication through his assistant.",
+        "Those are two stages of arranging a schedule. They do not supply a completed-meeting record. The original caption’s wider Harvard funding context is preserved as social text, separately from what these two receipts establish."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DexlzxWgkmB/",
+      "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "hoffman-reel",
+      "package": "hoffman",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/reid-hoffman-island-logistics-efta02300238",
+      "title": "Reid Hoffman and EFTA02300238: the island-to-Bedford flight arrangements",
+      "description": "Reid Hoffman: island departure logistics. Read EFTA02300238 with GAH’s original reel caption, document receipts and limits.",
+      "documents": [
+        "EFTA02300238"
+      ],
+      "analysis": [
+        "The November 28 email addresses Hoffman and Ito and relays the pilot’s information for Sunday’s island-to-Bedford route. It requests customs information and gives an expected arrival time.",
+        "The document shows that the office was coordinating travel. A request for addresses and an expected arrival are different evidence from a signed passenger manifest or proof that a flight completed. The source note does not republish the requested private addresses."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DexmACgHIOG/",
+      "socialDate": "2026-10-21",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "bannon-reel",
+      "package": "bannon",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/steve-bannon-barak-calendar-efta02240144",
+      "title": "Steve Bannon, Ehud Barak and EFTA02240144: the calendar is a plan",
+      "description": "Steve Bannon: the March 2018 schedule. Read EFTA02240144 with GAH’s original reel caption, document receipts and limits.",
+      "documents": [
+        "EFTA02240144"
+      ],
+      "analysis": [
+        "The March 2018 calendar gives a sequence of appointments and a proposed dinner. Its precision makes it useful for testing a chronology; precision alone does not establish attendance.",
+        "The next-morning breakfast is a separate planned entry. The page does not collapse adjacent names into a finding that everyone met, or invent the subject of a conversation."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/DexmH3OgIGU/",
       "socialDate": "2026-10-21",
       "publicationDate": "2026-10-25"
     }

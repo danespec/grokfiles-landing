@@ -1132,6 +1132,9 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/reels/bill-gates-nikolic-points-efta02730265", "/reels/bill-gates-nikolic-points-efta02730265.html"],
   ["/reels/elon-musk-holiday-email-efta02338119", "/reels/elon-musk-holiday-email-efta02338119.html"],
   ["/reels/mark-zuckerberg-mentions-efta00034221", "/reels/mark-zuckerberg-mentions-efta00034221.html"],
+  ["/reels/larry-summers-harvard-planning-efta02239873", "/reels/larry-summers-harvard-planning-efta02239873.html"],
+  ["/reels/reid-hoffman-island-logistics-efta02300238", "/reels/reid-hoffman-island-logistics-efta02300238.html"],
+  ["/reels/steve-bannon-barak-calendar-efta02240144", "/reels/steve-bannon-barak-calendar-efta02240144.html"],
   ["/videos", "/videos.html"],
   ["/reels", "/reels.html"],
   // GAH-MEDIA-ROUTES END
@@ -1287,6 +1290,9 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/reels/bill-gates-nikolic-points-efta02730265", "2026-10-24"],
   ["https://grokarchivehub.com/reels/elon-musk-holiday-email-efta02338119", "2026-10-24"],
   ["https://grokarchivehub.com/reels/mark-zuckerberg-mentions-efta00034221", "2026-10-24"],
+  ["https://grokarchivehub.com/reels/larry-summers-harvard-planning-efta02239873", "2026-10-24"],
+  ["https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238", "2026-10-24"],
+  ["https://grokarchivehub.com/reels/steve-bannon-barak-calendar-efta02240144", "2026-10-24"],
   ["https://grokarchivehub.com/videos", "2026-10-24"],
   ["https://grokarchivehub.com/reels", "2026-10-24"],
   // GAH-MEDIA-SITEMAP END
@@ -6343,7 +6349,7 @@ function serveApexTopicsGuide(request, env) {
   </section>
 
   <section>
-    <h2>Current Public Topic Lanes</h2><!-- GAH-MEDIA-TOPICS --><section><h2>Watch and verify: GAH media source notes</h2><p>Reviewed source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p><ul><li><a href="/videos/barak-st-thomas-december-2014">Barak St. Thomas 2014: the trip, the ticket and two readings</a></li><li><a href="/videos/barak-ronen-cohen-ticket-7hlsoq">Ronen Cohen and PNR 7HLSOQ: what the ticket identifies</a></li><li><a href="/videos/barak-hotel-name-efta00356456">EFTA00356456: the Baraks’ St. Thomas hotel-name exchange</a></li><li><a href="/videos/barak-epstein-caribbean-invitation-2014">Barak and Epstein’s December 2014 Caribbean invitation</a></li><li><a href="/reels/barak-st-thomas-ronen-cohen">Barak St. Thomas 2014: the reel, the receipts and the unresolved ticket</a></li><li><a href="/reels/leon-black-dechert-158-million-efta02730996">Leon Black’s $158 million: EFTA02730996 and the Senate questions</a></li><li><a href="/reels/gratitude-america-10-million-efta00080260">Gratitude America’s $10 million: EFTA00080260 and the account trail</a></li><li><a href="/reels/bill-gates-nikolic-points-efta02730265">Bill Gates, Boris Nikolic and EFTA02730265: the Points draft</a></li><li><a href="/reels/elon-musk-holiday-email-efta02338119">Elon Musk and EFTA02338119: correspondence is not a completed visit</a></li><li><a href="/reels/mark-zuckerberg-mentions-efta00034221">Mark Zuckerberg: EFTA00034221, EFTA02262778 and the limits of mentions</a></li></ul></section><!-- /GAH-MEDIA-TOPICS -->
+    <h2>Current Public Topic Lanes</h2><!-- GAH-MEDIA-TOPICS --><section><h2>Watch and verify: GAH media source notes</h2><p>Reviewed source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p><ul><li><a href="/videos/barak-st-thomas-december-2014">Barak St. Thomas 2014: the trip, the ticket and two readings</a></li><li><a href="/videos/barak-ronen-cohen-ticket-7hlsoq">Ronen Cohen and PNR 7HLSOQ: what the ticket identifies</a></li><li><a href="/videos/barak-hotel-name-efta00356456">EFTA00356456: the Baraks’ St. Thomas hotel-name exchange</a></li><li><a href="/videos/barak-epstein-caribbean-invitation-2014">Barak and Epstein’s December 2014 Caribbean invitation</a></li><li><a href="/reels/barak-st-thomas-ronen-cohen">Barak St. Thomas 2014: the reel, the receipts and the unresolved ticket</a></li><li><a href="/reels/leon-black-dechert-158-million-efta02730996">Leon Black’s $158 million: EFTA02730996 and the Senate questions</a></li><li><a href="/reels/gratitude-america-10-million-efta00080260">Gratitude America’s $10 million: EFTA00080260 and the account trail</a></li><li><a href="/reels/bill-gates-nikolic-points-efta02730265">Bill Gates, Boris Nikolic and EFTA02730265: the Points draft</a></li><li><a href="/reels/elon-musk-holiday-email-efta02338119">Elon Musk and EFTA02338119: correspondence is not a completed visit</a></li><li><a href="/reels/mark-zuckerberg-mentions-efta00034221">Mark Zuckerberg: EFTA00034221, EFTA02262778 and the limits of mentions</a></li><li><a href="/reels/larry-summers-harvard-planning-efta02239873">Larry Summers: EFTA02239873 and the proposed Harvard visit</a></li><li><a href="/reels/reid-hoffman-island-logistics-efta02300238">Reid Hoffman and EFTA02300238: the island-to-Bedford flight arrangements</a></li><li><a href="/reels/steve-bannon-barak-calendar-efta02240144">Steve Bannon, Ehud Barak and EFTA02240144: the calendar is a plan</a></li></ul></section><!-- /GAH-MEDIA-TOPICS -->
     <p>These are the strongest indexable subject lanes on GAH right now. Each one points to original reporting or a source-controlled evidence hub, not a generated name page.</p>
 
     <article>

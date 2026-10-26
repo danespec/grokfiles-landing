@@ -19,7 +19,7 @@ globalThis.fetch=async()=>{throw Error('Unexpected external fallback')};
 const get=(p,staging=false)=>worker.fetch(new Request('https://grokarchivehub.com'+p),env(staging));
 const jsonLd=html=>[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
 
-assert.equal(ready.length,10);
+assert.equal(ready.length,13);
 for(const r of ready){
   const response=await get(r.route);const html=await response.text();
   assert.equal(response.status,200,r.route);
@@ -84,7 +84,7 @@ const missing=await get('/videos/not-a-published-video');assert.equal(missing.st
 const registry=JSON.parse(await readFile(path.join(root,'content/video-registry.json'),'utf8'));
 assert.equal(registry.videos.filter(v=>v.status==='published').length,4);
 assert.equal(registry.videos.find(v=>v.id==='gah-video-pilot-001-blanche-no-evidence').status,'draft');
-console.log('PASS media catalog: 10 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
+console.log('PASS media catalog: 13 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
 
 for(const id of ['gates','musk','zuckerberg']){
  const p=packages.get(id), row=ready.find(r=>r.package===id);
@@ -97,3 +97,5 @@ for(const id of ['gates','musk','zuckerberg']){
  if(id==='musk')assert.ok(html.includes('does not establish an island visit'));
  if(id==='zuckerberg')assert.ok(html.includes('does not independently certify an exhaustive search'));
 }
+
+for(const id of ["summers","hoffman","bannon"]){const row=ready.find(r=>r.package===id);const h=await(await get(row.route)).text();assert.ok(h.includes("not a")||h.includes("not prove"));const entity=await(await get("/entities")).text();assert.ok(entity.includes("id=\"media-"+id+"\""));}
