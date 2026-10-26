@@ -1,0 +1,35 @@
+{
+  "reviewedOn": "2026-10-26",
+  "captionRetrieval": {
+    "0WSgi2Ds17o": "Public English ASR track found; timedtext JSON request returned zero bytes. No transcript published.",
+    "fwd1SQbAKOI": "Public English ASR track found; timedtext JSON request returned zero bytes. No transcript published.",
+    "z39leXbW_2I": "Public English ASR track found; timedtext JSON request returned zero bytes. No transcript published."
+  },
+  "jpmorganCaptions": "No caption track in retrieved public player response.",
+  "olderBarak": "0WSgi2Ds17o is public, 284 seconds, same runtime as the existing long. Similar title and subject do not prove identical content. Held for comparison; no duplicate story or watch page created.",
+  "askGahSmoke": {
+    "endpoint": "/api/ai/query",
+    "query": "Which documents mention Leon Black?",
+    "httpStatus": 200,
+    "resultCount": 8,
+    "meaning": "Availability check only. Results returned identifiers without read_url/url/source_url fields; copy IDs into archive search. Response correctness not certified."
+  },
+  "primaryChecks": [
+    {
+      "url": "https://www.finance.senate.gov/imo/media/doc/memorandum_to_senator_wyden_on_jpmc-epstein_redactedpdf.pdf",
+      "checked": "Official 18-page PDF: page 5 table, page 3 grouped sums, page 7 bank response. Amounts re-summed; overlap explicitly labeled."
+    },
+    {
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.591653/gov.uscourts.nysd.591653.226.4.pdf",
+      "checked": "349-page court-filed copy; first page gives July 24, 2023 filing; page 242 / printed 215 records hold and unresolved consultation."
+    },
+    {
+      "url": "https://www.justice.gov/archives/opa/pr/statement-doj-office-professional-responsibility-report-jeffrey-epstein-2006-2008",
+      "checked": "November 12, 2020 statement: no professional misconduct; poor judgment and victim-treatment criticisms."
+    },
+    {
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf",
+      "checked": "Age-verification redirect observed. No fresh PDF hash asserted; existing investigation provenance plus independently checked OPR account used."
+    }
+  ]
+}

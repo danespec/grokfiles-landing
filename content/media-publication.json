@@ -475,6 +475,99 @@
         "Original recordings and publication versions before assessing editing or completeness.",
         "The raw leak record and fund-ownership documents before treating the quoted 2016 fund description as an established ownership structure."
       ]
+    },
+    {
+      "id": "ask-gah",
+      "status": "ready",
+      "series": "Ask GAH: search and source verification",
+      "investigation": "/guides/how-to-search-epstein-files",
+      "investigationTitle": "How to search the Epstein files",
+      "entity": "/entities#media-ask-gah",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "GAH-SEARCH-GUIDE": "GAH’s field guide explains precise EFTA identifiers, spelling variants, original-PDF checks and the limits of OCR. It is a navigation guide, not independent evidence about anyone named in a query.",
+        "EFTA00646811": "An example identifier in the video’s published description. The current GAH page is a curated guide to July 2012 valuation correspondence; no raw valuation attachment or tax conclusion is authenticated by this watch page.",
+        "EFTA01410768": "A second example identifier in the published description. The current GAH page is a curated guide to July 2019 correspondence reacting to reporting. It is not a bank confirmation or proof that an inferred reference identifies a person."
+      },
+      "documentLabels": {
+        "GAH-SEARCH-GUIDE": "GAH research field guide"
+      },
+      "documentLinks": {
+        "GAH-SEARCH-GUIDE": "/guides/how-to-search-epstein-files"
+      },
+      "limits": "Source citations make an answer checkable, not infallible. The original promotional description’s “Nothing invented. No hallucinations.” is not an accuracy guarantee adopted by this page. A search mention is not proof of contact, knowledge or wrongdoing. An empty result is not proof of absence. The October 26 smoke check returned an answer and eight document identifiers; that is an availability check, not a benchmark or verification of every answer sentence.",
+      "questions": [
+        "Can every answer sentence be supported by the original page and its surrounding record?",
+        "Does each result identify an explicit mention, an inferred reference or a separate contextual record?",
+        "If an answer or source link fails, can the exact identifier be located through archive search and the official DOJ source?"
+      ],
+      "documentLinkLabels": {
+        "GAH-SEARCH-GUIDE": "GAH source guide"
+      }
+    },
+    {
+      "id": "jpmorgan-sars",
+      "status": "ready",
+      "series": "JPMorgan: nine suspicious-activity reports",
+      "investigation": "/investigations/jpmorgan-nine-sars-epstein",
+      "investigationTitle": "The full nine-SAR reporting timeline",
+      "entity": "/entities#media-jpmorgan-sars",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "SENATE-JPMC-MEMO-20251119": "November 19, 2025 Senate Finance staff memorandum. PDF page 5 lists nine SARs, filing dates, reported amounts and activity periods; page 3 gives the grouped amounts. PDF page 7 quotes JPMorgan’s October 10 response. Staff conclusions about intent and legal violations are staff positions, not adjudicated findings."
+      },
+      "documentLabels": {
+        "SENATE-JPMC-MEMO-20251119": "Senate Finance staff memorandum, November 19, 2025"
+      },
+      "documentLinks": {
+        "SENATE-JPMC-MEMO-20251119": "https://www.finance.senate.gov/imo/media/doc/memorandum_to_senator_wyden_on_jpmc-epstein_redactedpdf.pdf"
+      },
+      "limits": "The two 2019 reports sum to $1,282,799,188 in reported amounts; their activity windows overlap. This is not a deduplicated unique-dollar total, a total of criminal proceeds or proof that each transfer was unlawful. Seven earlier reports sum to $4,316,424. Filing chronology alone does not establish why a particular monitoring or reporting decision was made. Senate staff’s allegations and JPMorgan’s response remain attributed.",
+      "questions": [
+        "Which transactions overlap between the two 2019 reports, and what is the deduplicated total?",
+        "What do the complete underlying SAR narratives and transaction ledgers show?",
+        "Which contemporaneous escalation records establish who knew what, when, and how reporting decisions were made?"
+      ],
+      "documentLinkLabels": {
+        "SENATE-JPMC-MEMO-20251119": "official Senate PDF"
+      }
+    },
+    {
+      "id": "hold-letter",
+      "status": "ready",
+      "series": "Hold the letter: victim-notification records",
+      "investigation": "/investigations/hold-the-letter",
+      "investigationTitle": "The full Hold the Letter investigation",
+      "entity": "/entities#media-hold-letter",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00013764": "The native December 7, 2007 email underlying the existing investigation. The reply instructs that prepared notification be held. The official DOJ PDF may require age verification; the linked GAH dossier explains source provenance. This watch-page pass relies on the existing hash-controlled investigation and the separately checked OPR account, not a new download of the age-gated file.",
+        "OPR-REPORT-2020": "November 2020 DOJ Office of Professional Responsibility report, court-filed as ECF 226-4 on July 24, 2023 in case 1:22-cv-10904-JSR. PDF page 242 (printed page 215) describes Sloman’s hold instruction and his later uncertainty about whom he consulted. This is a later investigative reconstruction, separate from the contemporaneous email.",
+        "OPR-STATEMENT-20201112": "DOJ’s November 12, 2020 public statement says OPR found no professional misconduct, while finding poor judgment and shortcomings in how victims were treated. These findings belong beside the notification chronology.",
+        "EFTA01703108": "An additional identifier in the original YouTube description. GAH’s current curated dossier describes an indictment-form document and warns that its filing status needs independent checking. It is separate charging-document context, not the Hold the letter email and not evidence that charges were returned."
+      },
+      "documentLabels": {
+        "OPR-REPORT-2020": "DOJ OPR report, court-filed copy, ECF 226-4",
+        "OPR-STATEMENT-20201112": "DOJ public statement, November 12, 2020"
+      },
+      "documentLinks": {
+        "EFTA00013764": "/archive/EFTA00013764",
+        "OPR-REPORT-2020": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.591653/gov.uscourts.nysd.591653.226.4.pdf",
+        "OPR-STATEMENT-20201112": "https://www.justice.gov/archives/opa/pr/statement-doj-office-professional-responsibility-report-jeffrey-epstein-2006-2008",
+        "EFTA01703108": "/archive/EFTA01703108"
+      },
+      "limits": "The December 2007 instruction is documented; the identity of the person Sloman recalled consulting is unresolved. A missing decision record is not proof of a secret order, intelligence involvement or criminal intent. The November 2020 report date, July 2023 court-filing date and December 2007 email date identify different events. EFTA01703108 does not substitute for EFTA00013764.",
+      "questions": [
+        "What contemporaneous record identifies whom Sloman consulted before issuing the hold?",
+        "What was said in that discussion, and which records explain the change from the notification deadline?",
+        "Can the complete notification and decision record be reconstructed without exposing protected victim information?"
+      ],
+      "documentLinkLabels": {
+        "EFTA00013764": "GAH source guide",
+        "OPR-REPORT-2020": "court-filed report via RECAP",
+        "OPR-STATEMENT-20201112": "official DOJ statement",
+        "EFTA01703108": "GAH source guide"
+      }
     }
   ],
   "media": [
@@ -1094,6 +1187,80 @@
       "sourceUrl": "https://www.youtube.com/shorts/ykZ_ImbdAYs",
       "publicationDate": "2026-10-26",
       "extraLimit": "These notes were prepared from published metadata and the cited documentary records, not a verified narration transcript or frame-by-frame review. The original description’s additional financing claims are not independently authenticated by this page."
+    },
+    {
+      "id": "ask-gah-short",
+      "package": "ask-gah",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/ask-gah-search-epstein-files",
+      "title": "Ask GAH: search the Epstein files and check the receipts",
+      "description": "Use Ask GAH with exact EFTA identifiers, original-source checks and clear limits. Watch the original 35-second introduction.",
+      "documents": [
+        "GAH-SEARCH-GUIDE",
+        "EFTA00646811",
+        "EFTA01410768"
+      ],
+      "analysis": [
+        "The Short introduces Ask GAH as a way into the archive. On the site, open Ask GAH, select Search the archive, enter a precise question and check the source records before relying on the answer. Archive search is also available at /search.",
+        "The published description uses Leon Black as an example and names EFTA00646811 and EFTA01410768. These are locators to inspect, not certification that an answer’s interpretation is correct. An inferred reference should not be represented as an explicit name mention.",
+        "A read-only live query on October 26 returned HTTP 200, a summary and eight result identifiers. That verifies a response at that time, not the answer’s completeness, correctness or repeatability. If a result shows only a title, copy its exact EFTA identifier into archive search.",
+        "The promotional description’s absolute reliability language is preserved below as historical metadata. This page does not adopt it. Read the PDF, distinguish source text from generated synthesis, and report unsupported claims through Corrections."
+      ],
+      "youtubeId": "fwd1SQbAKOI",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/fwd1SQbAKOI",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These source notes were prepared from published metadata and the cited records, not a verified narration transcript or a full audio/video review. No usable caption text was retrieved in this pass; no transcript or timecodes have been invented."
+    },
+    {
+      "id": "jpmorgan-sars-short",
+      "package": "jpmorgan-sars",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/jpmorgan-nine-sars-reporting-timeline",
+      "title": "JPMorgan’s nine SARs: the $1.28 billion reporting question",
+      "description": "Watch GAH’s JPMorgan Short with the Senate’s nine-SAR table, overlapping activity windows, JPMorgan’s response and source limits.",
+      "documents": [
+        "SENATE-JPMC-MEMO-20251119"
+      ],
+      "analysis": [
+        "The Short points to a dated reporting sequence: the Senate staff table lists seven reports from 2002 through 2016 and two more in August and September 2019. The reported amounts differ sharply; the filing dates and the underlying activity dates are different fields.",
+        "The earlier amounts sum to $4,316,424. The two 2019 amounts sum to $1,282,799,188, with both activity windows beginning October 1, 2003. Because those windows overlap, adding the report amounts does not establish a unique-dollar total.",
+        "Senate staff calls for investigation of whether reporting failures were deliberate. The same memorandum quotes JPMorgan’s position that, excepting Jes Staley, its executives acted with integrity and would not have retained Epstein as a client had they known of ongoing crimes. These are competing positions, not a verdict on intent.",
+        "The separate 4,725-wire figure belongs to one filing described in Senate material; it should not be interchanged with the two-report sum. The linked full investigation and evidence brief preserve that distinction."
+      ],
+      "youtubeId": "3pfD3DW2cxU",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/3pfD3DW2cxU",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These source notes were prepared from published metadata and the cited records, not a verified narration transcript or a full audio/video review. No usable caption text was retrieved in this pass; no transcript or timecodes have been invented."
+    },
+    {
+      "id": "hold-letter-short",
+      "package": "hold-letter",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/hold-the-letter-victim-notification",
+      "title": "“Hold the letter”: the email, the OPR report and the unresolved decision",
+      "description": "Watch the GAH Short with EFTA00013764, the November 2020 OPR report, DOJ’s findings and the limits of the decision record.",
+      "documents": [
+        "EFTA00013764",
+        "OPR-REPORT-2020",
+        "OPR-STATEMENT-20201112",
+        "EFTA01703108"
+      ],
+      "analysis": [
+        "Although its YouTube title promotes the archive generally, the published description identifies a specific source trail: victim-notification letters and the December 7, 2007 hold instruction. This watch page connects that upload to the existing investigation rather than creating another investigation.",
+        "The central email is EFTA00013764. The original description’s EFTA01703108 reference belongs to separate charging-document context. It does not identify the hold email or establish an indictment’s filing status.",
+        "The later OPR report recounts the instruction and Sloman’s uncertainty about whom he consulted. The instruction is documentary evidence; the unresolved identity remains an open question. The report was written in November 2020 and the cited court copy was filed in July 2023.",
+        "DOJ’s public findings include both no professional-misconduct finding and criticism of judgment and victim treatment. This page carries that outcome beside the chronology without inferring a hidden official, intelligence explanation or adjudicated criminal intent."
+      ],
+      "youtubeId": "z39leXbW_2I",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/z39leXbW_2I",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These source notes were prepared from published metadata and the cited records, not a verified narration transcript or a full audio/video review. No usable caption text was retrieved in this pass; no transcript or timecodes have been invented."
     }
   ]
 }

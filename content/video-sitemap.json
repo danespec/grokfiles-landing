@@ -93,6 +93,39 @@
         "player_loc": "https://www.youtube-nocookie.com/embed/ykZ_ImbdAYs",
         "publication_date": "2026-10-21T08:17:09-07:00"
       }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/ask-gah-search-epstein-files",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "Ask GAH: search the Epstein files and check the receipts",
+        "description": "Use Ask GAH with exact EFTA identifiers, original-source checks and clear limits. Watch the original 35-second introduction.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/fwd1SQbAKOI",
+        "publication_date": "2026-10-19T22:17:31-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/jpmorgan-nine-sars-reporting-timeline",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "JPMorgan’s nine SARs: the $1.28 billion reporting question",
+        "description": "Watch GAH’s JPMorgan Short with the Senate’s nine-SAR table, overlapping activity windows, JPMorgan’s response and source limits.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/3pfD3DW2cxU",
+        "publication_date": "2026-10-18T13:11:42-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/hold-the-letter-victim-notification",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "“Hold the letter”: the email, the OPR report and the unresolved decision",
+        "description": "Watch the GAH Short with EFTA00013764, the November 2020 OPR report, DOJ’s findings and the limits of the decision record.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/z39leXbW_2I",
+        "publication_date": "2026-10-18T12:42:07-07:00"
+      }
     }
   ]
 }

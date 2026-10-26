@@ -542,6 +542,169 @@
       "recordingDate": "",
       "scheduledPublishAt": "",
       "xPublicationStatus": "not-requested"
+    },
+    {
+      "id": "ask-gah-short",
+      "slug": "ask-gah-search-epstein-files",
+      "status": "published",
+      "title": "Ask GAH: search the Epstein files and check the receipts",
+      "description": "Use Ask GAH with exact EFTA identifiers, original-source checks and clear limits. Watch the original 35-second introduction.",
+      "shortDescription": "Use Ask GAH with exact EFTA identifiers, original-source checks and clear limits. Watch the original 35-second introduction.",
+      "youtubeVideoId": "fwd1SQbAKOI",
+      "youtubeUrl": "https://www.youtube.com/shorts/fwd1SQbAKOI",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+      "durationIso8601": "PT35S",
+      "uploadDate": "2026-10-19T22:17:31-07:00",
+      "publishDate": "2026-10-19T22:17:31-07:00",
+      "updatedDate": "2026-10-26",
+      "category": "Ask GAH: search and source verification",
+      "tags": [
+        "GAH-SEARCH-GUIDE",
+        "EFTA00646811",
+        "EFTA01410768"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [
+        {
+          "label": "EFTA00646811",
+          "url": "/archive/EFTA00646811"
+        },
+        {
+          "label": "EFTA01410768",
+          "url": "/archive/EFTA01410768"
+        }
+      ],
+      "archiveIds": [
+        "GAH-SEARCH-GUIDE",
+        "EFTA00646811",
+        "EFTA01410768"
+      ],
+      "batesIds": [
+        "EFTA00646811",
+        "EFTA01410768"
+      ],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "How to search the Epstein files",
+        "url": "/guides/how-to-search-epstein-files"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
+    },
+    {
+      "id": "jpmorgan-sars-short",
+      "slug": "jpmorgan-nine-sars-reporting-timeline",
+      "status": "published",
+      "title": "JPMorgan’s nine SARs: the $1.28 billion reporting question",
+      "description": "Watch GAH’s JPMorgan Short with the Senate’s nine-SAR table, overlapping activity windows, JPMorgan’s response and source limits.",
+      "shortDescription": "Watch GAH’s JPMorgan Short with the Senate’s nine-SAR table, overlapping activity windows, JPMorgan’s response and source limits.",
+      "youtubeVideoId": "3pfD3DW2cxU",
+      "youtubeUrl": "https://www.youtube.com/shorts/3pfD3DW2cxU",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+      "durationIso8601": "PT60S",
+      "uploadDate": "2026-10-18T13:11:42-07:00",
+      "publishDate": "2026-10-18T13:11:42-07:00",
+      "updatedDate": "2026-10-26",
+      "category": "JPMorgan: nine suspicious-activity reports",
+      "tags": [
+        "SENATE-JPMC-MEMO-20251119"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [],
+      "archiveIds": [
+        "SENATE-JPMC-MEMO-20251119"
+      ],
+      "batesIds": [],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "The full nine-SAR reporting timeline",
+        "url": "/investigations/jpmorgan-nine-sars-epstein"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
+    },
+    {
+      "id": "hold-letter-short",
+      "slug": "hold-the-letter-victim-notification",
+      "status": "published",
+      "title": "“Hold the letter”: the email, the OPR report and the unresolved decision",
+      "description": "Watch the GAH Short with EFTA00013764, the November 2020 OPR report, DOJ’s findings and the limits of the decision record.",
+      "shortDescription": "Watch the GAH Short with EFTA00013764, the November 2020 OPR report, DOJ’s findings and the limits of the decision record.",
+      "youtubeVideoId": "z39leXbW_2I",
+      "youtubeUrl": "https://www.youtube.com/shorts/z39leXbW_2I",
+      "thumbnailUrl": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+      "durationIso8601": "PT60S",
+      "uploadDate": "2026-10-18T12:42:07-07:00",
+      "publishDate": "2026-10-18T12:42:07-07:00",
+      "updatedDate": "2026-10-26",
+      "category": "Hold the letter: victim-notification records",
+      "tags": [
+        "EFTA00013764",
+        "OPR-REPORT-2020",
+        "OPR-STATEMENT-20201112",
+        "EFTA01703108"
+      ],
+      "transcriptPath": "",
+      "captionsPath": "",
+      "evidenceLinks": [
+        {
+          "label": "EFTA00013764",
+          "url": "/archive/EFTA00013764"
+        },
+        {
+          "label": "EFTA01703108",
+          "url": "/archive/EFTA01703108"
+        }
+      ],
+      "archiveIds": [
+        "EFTA00013764",
+        "OPR-REPORT-2020",
+        "OPR-STATEMENT-20201112",
+        "EFTA01703108"
+      ],
+      "batesIds": [
+        "EFTA00013764",
+        "EFTA01703108"
+      ],
+      "relatedArchiveDocuments": [],
+      "relatedInvestigation": {
+        "title": "The full Hold the Letter investigation",
+        "url": "/investigations/hold-the-letter"
+      },
+      "factualStatusLabels": [
+        "documented",
+        "inference",
+        "unresolved"
+      ],
+      "featured": false,
+      "visibility": "public",
+      "madeForKids": false,
+      "language": "en",
+      "recordingDate": "",
+      "scheduledPublishAt": "",
+      "xPublicationStatus": "not-requested"
     }
   ],
   "sampleRecord": {
