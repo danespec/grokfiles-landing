@@ -366,21 +366,22 @@
       "documents": {
         "EFTA00088020": "June 18, 2020 DOJ email chain records UK officials anticipating that Blackfords might seek judicial review of Home Office approval of a mutual legal assistance request. An anticipated filing is not a docket entry proving it happened.",
         "EFTA00022062": "April 3, 2020 DOJ assistance request seeks an interview and related records. It describes Andrew as a witness, not then a target, in the Epstein and separate Nygard investigations. That status is time-bounded. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
-        "UK-CASE-2026": "The existing investigation cites the October 8 High Court case entry and reports the separate July 22 warrant outcome using court/police reporting. This companion does not newly authenticate the full order; the court website presented a verification screen during this check."
+        "UK-CASE-2026": "Official October 8, 2026 order and reasons, 10 PDF pages, AC 2026-LON-002321. Paragraphs 4–6 explain the unlawful warrants and pending retention application. Paragraph 10 says the judge approved allowing the claim on July 22 but the order remained unsealed. Paragraphs 11–19 explain the publicity/access dispute."
       },
       "documentLinks": {
-        "EFTA00022062": "https://media-cdn.rollcall.com/epstein-files/EFTA00022062.pdf"
+        "EFTA00022062": "https://media-cdn.rollcall.com/epstein-files/EFTA00022062.pdf",
+        "UK-CASE-2026": "https://www.judiciary.uk/wp-content/uploads/2026/10/AC-2026-LON-002321-Mountbatten-Windsor-v-Central-Criminal-Court-and-another.pdf"
       },
       "documentLabels": {
-        "UK-CASE-2026": "High Court / 2026 reporting source family — original order verification open"
+        "UK-CASE-2026": "Official High Court order and reasons — October 8, 2026"
       },
       "documentLinkLabels": {
-        "UK-CASE-2026": "official court case entry; verification screen observed"
+        "UK-CASE-2026": "official Judiciary PDF; text checked October 25"
       },
-      "limits": "The 2020 request and 2026 warrant proceeding are different matters. The correspondence proves neither that the expected 2020 challenge was filed nor that officials predicted the 2026 outcome. A quashed warrant does not by itself end an investigation or establish guilt. Andrew’s denial is carried in the existing investigation. The 2026 outcome here remains the original reporting’s historical context; the complete court order was not independently re-audited in this pass.",
+      "limits": "The 2020 request and 2026 warrant proceeding are different matters. The correspondence proves neither that the expected 2020 challenge was filed nor that officials predicted the later outcome. The official October 8 order is now checked; it does not resolve every underlying court-file question or establish any later retention outcome. Andrew’s denial remains carried in the existing investigation. The warrant ruling is not a finding of guilt and did not end the investigation.",
       "questions": [
         "The 2020 docket, if any, for the anticipated MLA challenge.",
-        "The complete 2026 court order and separate retention decisions, without treating the 2020 email as their evidence."
+        "The underlying consent order, statement of reasons and later retention decisions, separate from the verified October 8 order."
       ]
     },
     {

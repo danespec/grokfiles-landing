@@ -1,3 +1,7 @@
+# Update: official October 8 court order verified October 25
+
+The earlier access limit below is superseded. Official PDF downloaded and fully read; paragraph 10 page image checked. July 22 approval did not equal a sealed order at that point. Publicity/access dispute is explained in paragraphs 10–19. Companion and existing investigation updated in preview; production unchanged. Provenance: evidence-data/media-wave7/andrew-official-order.json.
+
 # News Desk companions — preview receipts
 
 Three new source-note pages, linked to three existing full investigations. No investigation text duplicated or replaced.
