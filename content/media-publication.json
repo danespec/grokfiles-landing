@@ -242,6 +242,69 @@
         "Arrival records or later correspondence establishing whether the proposed trip occurred.",
         "A page-by-page property and role analysis before treating all binder listings as identical findings."
       ]
+    },
+    {
+      "id": "brunel",
+      "status": "ready",
+      "series": "Jean-Luc Brunel: MC2 correspondence and apartment repairs",
+      "investigation": "https://media-cdn.rollcall.com/epstein-files/EFTA01972778.pdf",
+      "investigationTitle": "Read the flagship source record — publisher-hosted released PDF",
+      "entity": "/entities#media-brunel",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA01972778": "December 5, 2012 Richard Kahn email forwards MC2 correspondence and describes returning 4,380 of 5,000 mistakenly withheld. The forwarded statement concerns an account closure; the payee is redacted and is not identified here. Copy fields place Brunel and Epstein within the correspondence, without establishing the purpose of every underlying payment. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "EFTA00962798": "June 5, 2013 Brunel email discusses permission to repaint an apartment, maintenance problems and gratitude for what Jeffrey is doing. It does not itself supply a lease, ownership record, payment ledger or an Epstein follow-up instruction. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA01972778": "https://media-cdn.rollcall.com/epstein-files/EFTA01972778.pdf",
+        "EFTA00962798": "https://media-cdn.rollcall.com/epstein-files/EFTA00962798.pdf"
+      },
+      "limits": "These are financial-office and maintenance communications, not findings of criminal conduct. The redacted payee remains unidentified. The caption’s characterization of an apartment provided by Epstein and its one-word follow-up account go beyond what the reviewed EFTA00962798 page independently establishes; they are not adopted as new findings here. Corpus counts are attributed historical search results.",
+      "questions": [
+        "The underlying account statement and check records, with lawful evidence identifying the payee.",
+        "A lease, ownership or payment record for the apartment and the separate claimed follow-up message."
+      ]
+    },
+    {
+      "id": "dershowitz",
+      "status": "ready",
+      "series": "Alan Dershowitz: appointments in the 2015 schedule",
+      "investigation": "/archive/EFTA00352969",
+      "investigationTitle": "Read the flagship source record",
+      "entity": "/entities#media-dershowitz",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00352969": "February 12, 2015 itinerary-change email says Alan is confirmed and includes a proposed 4 pm appointment with Alan Dershowitz. Confirmation in scheduling correspondence is not a contemporaneous record of a completed meeting.",
+        "EFTA00338082": "October 14, 2015 office schedule lists a 5 pm appointment with Dershowitz. A planned appointment is not evidence of actual attendance or a record of what was discussed."
+      },
+      "documentLinks": {},
+      "limits": "The documents establish scheduled appointments, not completed meetings or wrongdoing. The original caption carries Dershowitz’s denial and the November 2022 resolution: Giuffre dropped her lawsuit and said she may have mistaken his identity. That later litigation context is separate from these 2015 schedules, and this pass does not authenticate the original dismissal filing. Neither the schedules nor a civil dismissal is a criminal verdict.",
+      "questions": [
+        "Contemporaneous arrivals or follow-up records establishing whether the appointments occurred.",
+        "The original 2022 dismissal filing and joint statement for a primary-source reconstruction of the later litigation, separate from these schedules."
+      ]
+    },
+    {
+      "id": "richardson",
+      "status": "ready",
+      "series": "Bill Richardson: counsel memo and proposed callback",
+      "investigation": "https://media-cdn.rollcall.com/epstein-files/EFTA00014374.pdf",
+      "investigationTitle": "Read the flagship source record — publisher-hosted released PDF",
+      "entity": "/entities#media-richardson",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00014374": "August 18, 2019 prosecutor’s note of a call with Richardson’s counsel. It summarizes an allegation in civil testimony and says the office did not at that time intend to subpoena or request an interview. It also requests a possible attorney proffer and leaves open later inquiries. These are the memo writer’s contemporaneous characterizations, not a court’s findings. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "EFTA02662212": "Groff email relays that Richardson, between flights, says he will call back in about ten minutes and hopes to speak with Epstein. It establishes callback coordination, not a completed call, call duration or conversation contents. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA00014374": "https://media-cdn.rollcall.com/epstein-files/EFTA00014374.pdf",
+        "EFTA02662212": "https://media-cdn.rollcall.com/epstein-files/EFTA02662212.pdf"
+      },
+      "limits": "The allegation is attributed in the prosecutor’s memo, not established as fact. The original GAH caption carries Richardson’s denial and reports that he was never charged. The memo’s no-interview position is expressly time-bounded and is not an exoneration or a permanent immunity decision. The proposed callback does not establish that contact actually occurred. Historical search counts and their composition are attributed to the original caption, not freshly audited here.",
+      "questions": [
+        "Any subsequent attorney proffer or later prosecutorial decision before extrapolating from the August 18 memo.",
+        "Call records or follow-up correspondence establishing whether the proposed callback happened."
+      ]
     }
   ],
   "media": [
@@ -581,6 +644,66 @@
         "The binder supplies a different source family within the released records: household and contact paperwork. Its entries should be read individually. The source note does not reproduce private addresses or turn the caption’s role description into a formal job title."
       ],
       "sourceUrl": "https://www.instagram.com/reel/De2u7XAlHl2/",
+      "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "brunel-reel",
+      "package": "brunel",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/jean-luc-brunel-mc2-account-efta01972778",
+      "title": "Jean-Luc Brunel: EFTA01972778, MC2 and the redacted payee",
+      "description": "Jean-Luc Brunel: MC2 correspondence and apartment repairs. Read EFTA01972778, EFTA00962798 with GAH’s original caption, receipts, denials where relevant and source limits.",
+      "documents": [
+        "EFTA01972778",
+        "EFTA00962798"
+      ],
+      "analysis": [
+        "Kahn’s email supplies a payment-adjustment statement and forwards MC2 correspondence. Its redactions matter: the page does not identify who receives the returned amount.",
+        "The separate apartment email concerns repairs and requests for permission. These records support a limited account of business and practical coordination; they do not themselves establish a criminal purpose or every wider claim in the original caption."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De2wtxlAeDG/",
+      "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "dershowitz-reel",
+      "package": "dershowitz",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/alan-dershowitz-schedule-efta00352969",
+      "title": "Alan Dershowitz: EFTA00352969, EFTA00338082 and planned appointments",
+      "description": "Alan Dershowitz: appointments in the 2015 schedule. Read EFTA00352969, EFTA00338082 with GAH’s original caption, receipts, denials where relevant and source limits.",
+      "documents": [
+        "EFTA00352969",
+        "EFTA00338082"
+      ],
+      "analysis": [
+        "The February itinerary contains both confirmation language and a proposed schedule; the October source supplies a second calendar entry. The page preserves those administrative distinctions rather than narrating either as an observed meeting.",
+        "Dershowitz’s denial and the original reel’s 2022 dropped-suit context appear beside the association records. The 2015 schedules do not adjudicate the disputed allegation and supply no basis for inferring criminal conduct."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De2w2XwiLXJ/",
+      "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "richardson-reel",
+      "package": "richardson",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/bill-richardson-counsel-memo-efta00014374",
+      "title": "Bill Richardson: EFTA00014374 and the limits of the counsel-call memo",
+      "description": "Bill Richardson: counsel memo and proposed callback. Read EFTA00014374, EFTA02662212 with GAH’s original caption, receipts, denials where relevant and source limits.",
+      "documents": [
+        "EFTA00014374",
+        "EFTA02662212"
+      ],
+      "analysis": [
+        "The prosecutor’s note records a discussion with counsel about an allegation and the investigation’s position at that time. Its language about possible later inquiries and an attorney proffer matters alongside the decision not to seek an interview then.",
+        "A different document records a proposed callback to Epstein. It supplies evidence of a communication channel and an intention to call; it does not independently establish a completed conversation. Richardson’s reported denial remains beside the attributed allegation."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De2-A9AnBaX/",
       "socialDate": "2026-10-23",
       "publicationDate": "2026-10-25"
     }

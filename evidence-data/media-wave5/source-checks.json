@@ -1,0 +1,30 @@
+{
+  "EFTA01972778": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA01972778.pdf",
+    "status": 200,
+    "sha256": "b0fd1cf86a8276fdc81acece3643e44981869446781b5ae35c9f6c650a61d9a7",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00962798": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00962798.pdf",
+    "status": 200,
+    "sha256": "7bd17d4fefb02206d8c5dc58f3bbe37e1bc63ad5a762fbc15bde78d7311f11c9",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00014374": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00014374.pdf",
+    "status": 200,
+    "sha256": "3ebe6358d35cfe5e417fd239a13462eead609dc2863e286ada5d0aca9839f0ff",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA02662212": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA02662212.pdf",
+    "status": 200,
+    "sha256": "878e10be7f31b2f4f5061e99642327ce00a64d4efcfcf31bf2d1663dd8b125ac",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  }
+}
