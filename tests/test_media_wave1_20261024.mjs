@@ -19,7 +19,7 @@ globalThis.fetch=async()=>{throw Error('Unexpected external fallback')};
 const get=(p,staging=false)=>worker.fetch(new Request('https://grokarchivehub.com'+p),env(staging));
 const jsonLd=html=>[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
 
-assert.equal(ready.length,25);
+assert.equal(ready.length,29);
 for(const r of ready){
   const response=await get(r.route);const html=await response.text();
   assert.equal(response.status,200,r.route);
@@ -38,7 +38,7 @@ for(const r of ready){
   const csp=response.headers.get('Content-Security-Policy');
   if(r.family==='video'){
     const video=ld.find(x=>x['@type']==='VideoObject');
-    assert.ok(video);assert.ok(video.duration.startsWith('PT'));assert.ok(video.uploadDate.startsWith('2026-10-24'));
+    assert.ok(video);assert.ok(video.duration.startsWith('PT'));assert.ok(video.uploadDate===capture.videos.find(v=>v.id===r.youtubeId).publishDate);
     assert.ok(video.embedUrl.endsWith(r.youtubeId));
     assert.ok(html.includes('<iframe src="https://www.youtube-nocookie.com/embed/'+r.youtubeId+'"'));
     assert.match(csp,/frame-src[^;]*https:\/\/www.youtube-nocookie.com/);
@@ -77,14 +77,14 @@ const about=await (await get('/about')).text();assert.ok(about.includes('the off
 const sitemap=await get('/sitemap.xml');const xml=await sitemap.text();
 const locs=[...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);assert.equal(new Set(locs).size,locs.length);
 for(const route of [...ready.map(r=>r.route),'/videos','/reels'])assert.ok(locs.includes('https://grokarchivehub.com'+route),route);
-assert.equal((xml.match(/<video:video>/g)||[]).length,4);assert.ok(!xml.includes('<video:content_loc></video:content_loc>'));
+assert.equal((xml.match(/<video:video>/g)||[]).length,8);assert.ok(!xml.includes('<video:content_loc></video:content_loc>'));
 assert.ok(!xml.includes('no-evidence-is-not-no-records'),'draft pilot remains excluded');
 assert.ok(xml.includes('https://grokarchivehub.com/archive/EFTA00013764'),'existing main-sitemap dossier preserved');
 const missing=await get('/videos/not-a-published-video');assert.equal(missing.status,404);
 const registry=JSON.parse(await readFile(path.join(root,'content/video-registry.json'),'utf8'));
-assert.equal(registry.videos.filter(v=>v.status==='published').length,4);
+assert.equal(registry.videos.filter(v=>v.status==='published').length,8);
 assert.equal(registry.videos.find(v=>v.id==='gah-video-pilot-001-blanche-no-evidence').status,'draft');
-console.log('PASS media catalog: 25 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
+console.log('PASS media catalog: 29 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
 
 for(const id of ['gates','musk','zuckerberg']){
  const p=packages.get(id), row=ready.find(r=>r.package===id);
@@ -109,3 +109,5 @@ for(const id of ["brunel","dershowitz","richardson"]){const row=ready.find(r=>r.
 for(const id of ["clinton-cgi","andrew-doj","indyke-kahn"]){const row=ready.find(r=>r.package===id);const h=await(await get(row.route)).text();assert.ok(h.includes("not")||h.includes("No matched"));const entity=await(await get("/entities")).text();assert.ok(entity.includes("id=\"media-"+id+"\""));}
 
 for(const id of ["raskin","ryan-thiel"]){const row=ready.find(r=>r.package===id);const h=await(await get(row.route)).text();assert.ok(jsonLd(h).some(x=>x.datePublished==="2026-10-26"));if(id==="ryan-thiel"){assert.ok(h.includes("superseded"));assert.ok(h.includes("truthfulness"));assert.ok(h.includes("not adopted as current status"));}else assert.ok(h.includes("not specify a time zone"));}
+
+for(const id of ["ryan-response-long","thiel-record-short","ryan-names-short","ryan-release-short"]){const row=ready.find(r=>r.id===id);const h=await(await get(row.route)).text();assert.ok(h.includes("not a verified narration transcript"));assert.ok(h.includes("RYAN-RESPONSE")||h.includes("source-28568"));}

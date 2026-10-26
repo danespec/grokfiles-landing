@@ -1003,6 +1003,97 @@
       "sourceUrl": "https://www.instagram.com/reel/DevD2a5EoKF/",
       "socialDate": "2026-10-20",
       "publicationDate": "2026-10-26"
+    },
+    {
+      "id": "ryan-response-long",
+      "package": "ryan-thiel",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/shawn-ryan-leah-interview-response",
+      "title": "Shawn Ryan and Leah: the released interview and two accounts",
+      "description": "Shawn Ryan and Leah: the released interview and two accounts. Watch GAH’s video with documentary source notes, responses and limits.",
+      "documents": [
+        "LEAH-ACCOUNT-202610",
+        "RYAN-RESPONSE-202610",
+        "ANDURIL-SERIES-H-2026",
+        "EFTA02656769",
+        "28568"
+      ],
+      "analysis": [
+        "This documentary introduces the interview dispute, Ryan’s response and separate investment context. The linked publisher episode listing establishes a public release and supplies Ryan’s own stated explanation; it does not establish which account of a pre-recording naming condition is correct.",
+        "Leah’s attributed account and Ryan’s explanation remain separate from the company financing record. Neither a public investment nor older Epstein correspondence establishes the cause of a podcast decision. The February 2016 raw leak reference remains labeled and not newly authenticated.",
+        "The original video description also mentions Flock Safety financing. That claim is preserved as published metadata and is not independently re-audited in this page; it must not be substituted for evidence of editorial instructions."
+      ],
+      "youtubeId": "BM2Yeds1f2o",
+      "format": "long",
+      "sourceUrl": "https://www.youtube.com/watch?v=BM2Yeds1f2o",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These notes were prepared from published metadata and the cited documentary records, not a verified narration transcript or frame-by-frame review. The original description’s additional financing claims are not independently authenticated by this page."
+    },
+    {
+      "id": "thiel-record-short",
+      "package": "ryan-thiel",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/peter-thiel-epstein-record-efta02656769",
+      "title": "Peter Thiel and EFTA02656769: the record and its boundary",
+      "description": "Peter Thiel and EFTA02656769: the record and its boundary. Watch GAH’s video with documentary source notes, responses and limits.",
+      "documents": [
+        "EFTA02656769",
+        "28568"
+      ],
+      "analysis": [
+        "This source note separates the released May 2018 Epstein-to-Thiel email from the earlier mailbox reference quoted in GAH’s social reporting. They concern different dates and are not interchangeable proof.",
+        "The released email records Epstein’s statement about a Carbyne meeting. It is not independent confirmation that the meeting occurred, nor a document about the 2026 interview dispute. The raw 28568 source was not retrieved for this pass."
+      ],
+      "youtubeId": "7XceJkxfF4w",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/7XceJkxfF4w",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These notes were prepared from published metadata and the cited documentary records, not a verified narration transcript or frame-by-frame review. The original description’s additional financing claims are not independently authenticated by this page."
+    },
+    {
+      "id": "ryan-names-short",
+      "package": "ryan-thiel",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/shawn-ryan-leah-naming-allegation",
+      "title": "Leah’s reported naming restriction: the allegation and Ryan’s response",
+      "description": "Leah’s reported naming restriction: the allegation and Ryan’s response. Watch GAH’s video with documentary source notes, responses and limits.",
+      "documents": [
+        "LEAH-ACCOUNT-202610",
+        "RYAN-RESPONSE-202610"
+      ],
+      "analysis": [
+        "The original Short title presents a naming restriction as a declarative phrase. This watch page treats that restriction as an allegation attributed to Leah, not an independently established production instruction.",
+        "Ryan’s published description says his initial withholding reflected truthfulness concerns and presents the interview. Those are his explanations; their existence does not settle what was said before recording. Original booking messages and unedited production records remain needed."
+      ],
+      "youtubeId": "8lXk63Zyk9U",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/8lXk63Zyk9U",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These notes were prepared from published metadata and the cited documentary records, not a verified narration transcript or frame-by-frame review. The original description’s additional financing claims are not independently authenticated by this page."
+    },
+    {
+      "id": "ryan-release-short",
+      "package": "ryan-thiel",
+      "family": "video",
+      "status": "ready",
+      "route": "/videos/shawn-ryan-released-interview-response",
+      "title": "Shawn Ryan’s release statement: what the publisher record confirms",
+      "description": "Shawn Ryan’s release statement: what the publisher record confirms. Watch GAH’s video with documentary source notes, responses and limits.",
+      "documents": [
+        "RYAN-RESPONSE-202610"
+      ],
+      "analysis": [
+        "The publisher lists My Unredacted Interview with The Leah Files and supplies Ryan’s explanation for originally withholding it. The source establishes the listing and his statement, not the accuracy of every claim in the interview.",
+        "The published title’s “Unredacted” wording is the publisher’s description. This page has not compared original recordings against released versions and does not certify completeness, editing or a resolution of the disputed naming allegation."
+      ],
+      "youtubeId": "ykZ_ImbdAYs",
+      "format": "short",
+      "sourceUrl": "https://www.youtube.com/shorts/ykZ_ImbdAYs",
+      "publicationDate": "2026-10-26",
+      "extraLimit": "These notes were prepared from published metadata and the cited documentary records, not a verified narration transcript or frame-by-frame review. The original description’s additional financing claims are not independently authenticated by this page."
     }
   ]
 }
