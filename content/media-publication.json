@@ -599,7 +599,16 @@
       ],
       "youtubeId": "ukhO7KsskqQ",
       "format": "long",
-      "sourceUrl": "https://www.youtube.com/watch?v=ukhO7KsskqQ"
+      "sourceUrl": "https://www.youtube.com/watch?v=ukhO7KsskqQ",
+      "associatedUploads": [
+        {
+          "youtubeId": "0WSgi2Ds17o",
+          "sourceUrl": "https://www.youtube.com/watch?v=0WSgi2Ds17o"
+        }
+      ],
+      "updatedDate": "2026-10-26",
+      "captionComparisonSummary": "Both uploads run 4 minutes 44 seconds. The October 26 comparison of their automatic-caption exports found the same narrative sequence and no additional source document or distinct story section. They share this watch page and the full investigation; a second page would repeat that source trail. The caption comparison does not establish identical audio, images or encoded video files.",
+      "extraLimit": "The automatic-caption exports contain inconsistent name renderings and have not been verified against the complete audio. They are not published here as a transcript. The video’s broad wording about a paper trail does not establish that every document omitted Barak’s name: the hotel booking chose Nili’s name, while the office correspondence names the couple. Invitations to Pritzker and Summers do not establish their attendance. A hotel-name instruction does not authenticate an airline alias. The video’s characterization of Barak’s public account has not been checked against a dated original statement in this pass."
     },
     {
       "id": "barak-ticket-short",

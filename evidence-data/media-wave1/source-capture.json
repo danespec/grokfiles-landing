@@ -518,6 +518,20 @@
       "isPrivate": false,
       "capturedOn": "2026-10-26",
       "htmlSha256": "5c685b2eb1b6e151d64e0a62f55b9f2141bb73d44d4dab7be48c4d0b4a7a1cc7"
+    },
+    {
+      "id": "0WSgi2Ds17o",
+      "title": "Ehud Barak's Island Weekend — and the Flight Ticket in Another Man's Name | Epstein Documents",
+      "description": "In December 2014, Jeffrey Epstein invited former Israeli prime minister Ehud Barak and his wife Nili to his Caribbean island. The public story has always been that Barak's island visit was brief and all business. The documents tell a longer story.\n\"Come to Carib?\" — Epstein, 2:27 AM, December 6, 2014.\nTold entirely from the primary record — the Baraks' own email, Epstein's office files from the DOJ release — this video walks the full timeline: the invitation, Nili's flight proposal (American Airlines 1275 into St. Thomas, Dec 12), Epstein's same-night approval, his office asking in writing whether to book the hotel under the name \"Ehud Barak\" — \"or do you go by something else?\" — the room booked under Nili's name instead, four days hosted on St. Thomas with lunch on the island, simultaneous invitations to Larry Summers and Tom Pritzker, and the staff farewell: \"Mr. Epstein truly enjoyed this weekend.\"\nAnd then the anomaly: the only flight itinerary for that trip anywhere in Barak's own email names a different passenger — COHEN/RONEN MR, on the Baraks' exact flight, arriving at the exact proposed minute, First class home to Tel Aviv (PNR 7HLSOQ). \"Ronen Cohen\" appears nowhere else in seven years of Barak's email, or in 1.38 million released DOJ documents. This video presents both readings of that ticket — and labels them as readings. The documents are the story.\nDOCUMENTS CITED\nBarak email leak: ids 18414, 18310, 18018, 18243, 19004 (PNR 7HLSOQ), 15729, 14998\nDOJ release: EFTA00356456 (Wallace/Groff St. Thomas thread), EFTA02596796 (\"ehud on island for weekend\"), EFTA02346686 (Summers invitation), EFTA02300238 (island flight logistics)\nFull investigation — timeline, anomaly register, both readings, acquisition list:\nhttps://grokarchivehub.com\nGrokArchiveHub is an independent, source-first archive of the public Epstein record. Every claim traceable to its document.",
+      "author": "Grok Archive Hub",
+      "channelId": "UCtoujFSO4434iKT6HwmWEUA",
+      "durationSeconds": "284",
+      "publishDate": "2026-10-21T22:56:02-07:00",
+      "uploadDate": "2026-10-21T22:56:02-07:00",
+      "playability": "OK",
+      "isPrivate": false,
+      "capturedOn": "2026-10-26",
+      "htmlSha256": "2c3283e7288cb89d6ad42f7ba6f35e9ea750de21bb21948b3fe53a24f24090f2"
     }
   ],
   "channelInventory": {
@@ -534,5 +548,17 @@
     "3pfD3DW2cxU": "A $1.28B reporting question. We examine Epstein’s JPMorgan timeline—and the limits of the evidence., 1 view - play Short",
     "z39leXbW_2I": "GrokArchiveHub.com Every Epstein claim traceable to the the document. #Epstein #EpsteinFiles #fyp, 4 views - play Short"
   },
-  "transcriptStatus": "YouTube advertises caption tracks, but all four caption requests returned empty bodies. No transcript has been invented."
+  "transcriptStatus": "Initial October 24 timedtext requests returned empty bodies. On October 26, browser exports retrieved automatic captions for the current and older Barak long uploads; they remain unverified against complete audio and no transcript is published. Other watch-page transcript gaps remain open.",
+  "captionReviews": {
+    "0WSgi2Ds17o": {
+      "reviewedOn": "2026-10-26",
+      "type": "YouTube automatic-caption export",
+      "status": "Compared with current upload; not an audio-verified transcript"
+    },
+    "ukhO7KsskqQ": {
+      "reviewedOn": "2026-10-26",
+      "type": "YouTube automatic-caption export",
+      "status": "Compared with older upload; not an audio-verified transcript"
+    }
+  }
 }

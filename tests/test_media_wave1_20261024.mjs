@@ -119,3 +119,21 @@ for(const id of ['ask-gah-short','jpmorgan-sars-short','hold-letter-short']){
  if(id==='jpmorgan-sars-short'){assert.ok(h.includes('not a deduplicated unique-dollar total'));assert.ok(h.includes('JPMorgan’s response'));assert.ok(h.includes('overlap'));}
  if(id==='hold-letter-short'){assert.ok(h.includes('separate charging-document context'));assert.ok(h.includes('no professional-misconduct finding'));assert.ok(h.includes('PDF page 242'));}
 }
+
+{
+ const row=ready.find(r=>r.id==='barak-trip-long');
+ const html=await(await get(row.route)).text();
+ assert.ok(html.includes('id="associated-uploads"'));
+ assert.ok(html.includes('https://www.youtube.com/watch?v=0WSgi2Ds17o'));
+ assert.ok(html.includes('does not establish identical audio'));
+ assert.ok(html.includes('do not establish their attendance'));
+ const ld=jsonLd(html).filter(x=>x['@type']==='VideoObject');
+ assert.equal(ld.length,1);assert.equal(ld[0].dateModified,'2026-10-26');
+ assert.ok(ld[0].embedUrl.endsWith('ukhO7KsskqQ'));
+ const inventory=JSON.parse(await readFile(path.join(root,'evidence-data/media-wave1/publication-inventory.json'),'utf8'));
+ assert.equal(inventory.heldYouTube.length,0);
+ assert.equal(inventory.associatedYouTube.length,1);
+ assert.equal(inventory.associatedYouTube[0].canonicalWatchRoute,row.route);
+ const xml=await(await get('/sitemap.xml')).text();
+ assert.ok(!xml.includes('0WSgi2Ds17o'),'associated upload does not duplicate sitemap player entry');
+}

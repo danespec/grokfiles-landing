@@ -1,0 +1,22 @@
+{
+  "reviewedOn": "2026-10-26",
+  "method": "Public YouTube automatic-caption exports; metadata duration; narrative-sequence comparison. Not an audio waveform or frame comparison.",
+  "captionSegments": {
+    "0WSgi2Ds17o": 131,
+    "ukhO7KsskqQ": 131
+  },
+  "identicalTimedLines": 123,
+  "normalizedWordSequenceSimilarity": 0.989983305509182,
+  "captionExportSha256": {
+    "0WSgi2Ds17o": "056b53f46c4cc3c57ec7a5f41f31e99cc3e74a11071c8bf92f51f31154d836f0",
+    "ukhO7KsskqQ": "b6ee12903783145e4edc4d210763051fa2230e52875b685e2efe107552c87c37"
+  },
+  "findings": [
+    "Both caption sequences follow the invitation, proposed flights, hotel-name exchange, completed visit, Cohen itinerary, bodyguard echo and two unresolved readings.",
+    "Differences include punctuation, verb tense, name recognition and one shifted segment boundary. One export introduces an unrelated-person name not present in the other; it is not adopted as a fact or silently corrected into a verified transcript.",
+    "No additional source document or distinct narrative section was identified in these caption exports.",
+    "The uploads can share the existing investigation and watch page without asserting identical encoded media or audio."
+  ],
+  "decision": "Associate the older upload with the existing watch page; create no duplicate route or second video-sitemap entry.",
+  "limits": "Machine captions are not verified audio. Full narration accuracy and visual comparison remain pending. No complete transcript published in this patch."
+}
