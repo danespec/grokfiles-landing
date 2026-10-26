@@ -305,6 +305,27 @@
         "Any subsequent attorney proffer or later prosecutorial decision before extrapolating from the August 18 memo.",
         "Call records or follow-up correspondence establishing whether the proposed callback happened."
       ]
+    },
+    {
+      "id": "wexner",
+      "status": "ready",
+      "series": "Les Wexner: the attorney-proffer account",
+      "investigation": "https://media-cdn.rollcall.com/epstein-files/EFTA02731082.pdf",
+      "investigationTitle": "Read the released memo — pages 65–66, publisher-hosted PDF",
+      "entity": "/entities#media-wexner",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA02731082": "December 19, 2019 SDNY investigative memorandum, section Counsel for Leslie Wexner, printed pages 65–66 (Bates EFTA02731146–EFTA02731147). It summarizes a July 25 attorney proffer. The passage records counsel’s account of financial control, alleged misappropriation, the described 1991 power of attorney and later separation. It also records counsel’s denial that Wexner knew of Epstein’s inappropriate or unlawful activity with young women. This is a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA02731082": "https://media-cdn.rollcall.com/epstein-files/EFTA02731082.pdf"
+      },
+      "limits": "The passage is prosecutors’ summary of Wexner’s lawyers’ account, not sworn testimony, underlying bank records, the executed power of attorney or an adjudicated accounting. Counsel denied Wexner knew about Epstein’s inappropriate or unlawful activity with young women and characterized the relationship as more professional than social; those are attributed positions, not findings adopted here. The misappropriation and wealth explanations likewise remain attributed. The reel’s claims that the power of attorney is absent across the releases and that there is no Wexner-authored document are historical scoped search findings, not independently re-run corpus-wide conclusions. This page does not establish wrongdoing by Wexner.",
+      "questions": [
+        "The executed 1991 power of attorney, amendments and revocation records.",
+        "Transaction-level records for the transfers, compensation and described settlement, before treating counsel’s account as an independently reconciled financial history.",
+        "A reproducible search log to audit the original caption’s absence claims and document counts."
+      ]
     }
   ],
   "media": [
@@ -704,6 +725,26 @@
         "A different document records a proposed callback to Epstein. It supplies evidence of a communication channel and an intention to call; it does not independently establish a completed conversation. Richardson’s reported denial remains beside the attributed allegation."
       ],
       "sourceUrl": "https://www.instagram.com/reel/De2-A9AnBaX/",
+      "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "wexner-reel",
+      "package": "wexner",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/les-wexner-attorney-proffer-efta02731082",
+      "title": "Les Wexner and EFTA02731082: the attorney proffer and the missing instrument",
+      "description": "Read the Wexner attorney-proffer account in EFTA02731082, pages 65–66, with the original GAH reel caption, counsel’s denial and source limits.",
+      "documents": [
+        "EFTA02731082"
+      ],
+      "analysis": [
+        "The released artifact is dated December 19, 2019. Its Wexner section describes a July 25 meeting with counsel; the meeting date and the memo date should not be conflated. The relevant passage is on printed pages 65–66, not the file’s opening page.",
+        "The financial-control and misappropriation account comes from Wexner’s lawyers as summarized by prosecutors. The same passage records their denial that he knew about Epstein’s abuse. The page carries both parts with the same attribution.",
+        "The memo describes a 1991 power of attorney but does not supply the executed instrument in this passage. The caption’s wider negative-search findings are preserved as attributed claims, without asserting that a fresh exhaustive search proved their absence."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/De2-IgjD7_2/",
       "socialDate": "2026-10-23",
       "publicationDate": "2026-10-25"
     }

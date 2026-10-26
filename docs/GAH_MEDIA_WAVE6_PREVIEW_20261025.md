@@ -1,0 +1,13 @@
+# Wexner reel — preview receipt
+
+Proposed public route: /reels/les-wexner-attorney-proffer-efta02731082. Family: reel source notes. New page; no duplicate source publication or dedicated reel page found in the manifest. This is the final Famous Names entry; it is not production-published yet.
+
+All sections present: original caption in full, source analysis, receipt register, limitations, open records, original Instagram link and released-document source. Named entity entry /entities#media-wexner plus generated inbound links from /topics, /latest and /reels. Canonical, index,follow, Article JSON-LD required fields, document/text social card and generated main sitemap membership checked. Proposed sitemap line: <loc>https://grokarchivehub.com/reels/les-wexner-attorney-proffer-efta02731082</loc>. Public route HTTP 200 and that live sitemap line remain pending production approval.
+
+Source: EFTA02731082, an 86-page December 19, 2019 SDNY memo. The Wexner passage is printed pages 65–66, Bates EFTA02731146–EFTA02731147, summarizing a July 25 attorney proffer. Extracted text reviewed. Original archive locator returns 404, so the page links an explicitly labeled publisher-hosted EFTA-stamped PDF mirror. No byte authentication against DOJ claimed. Original Instagram post returned 200; exact caption and HTML hash captured, with October 23 publication date preserved.
+
+Editorial gate: all financial/misappropriation statements stay attributed to Wexner’s counsel as summarized by prosecutors. Counsel’s denial of knowledge of Epstein’s inappropriate or unlawful activity with young women is carried equally. The memo is not underlying bank records, sworn testimony, the executed 1991 instrument or an adjudicated accounting. The original caption’s 244/7/44 corpus counts and absence assertions are historical research claims, not a fresh exhaustive corpus search. No wrongdoing by Wexner inferred. Private addresses and real-person photos are not reproduced.
+
+Passed: actual Worker integration for all 20 catalog pages plus hubs; exact caption preservation; source anchors; metadata and Article/VideoObject required-field parsing; sitemap uniqueness/membership; named entity fragments and internal links; staged noindex privacy; scoped video CSP; held/draft exclusions; original St. Thomas eight-section regression; 20 staging checks; generator idempotency; diff whitespace. Third-party rich-results validation and Google indexing/rankings are not certified.
+
+Preview first; deploy only on Thomas’s explicit word. Post-deploy verification must cover the public page, source/social/card links, incoming links and actual sitemap. Current production sitemap baseline is 178 URLs. News Desk, photo/MCC catalog and remaining YouTube/transcripts still need review.
