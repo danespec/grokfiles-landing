@@ -49,6 +49,50 @@
         "player_loc": "https://www.youtube-nocookie.com/embed/TIJmqHyke9I",
         "publication_date": "2026-10-24T19:52:32-07:00"
       }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/shawn-ryan-leah-interview-response",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "Shawn Ryan and Leah: the released interview and two accounts",
+        "description": "Shawn Ryan and Leah: the released interview and two accounts. Watch GAH’s video with documentary source notes, responses and limits.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/BM2Yeds1f2o",
+        "publication_date": "2026-10-21T07:46:41-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/peter-thiel-epstein-record-efta02656769",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "Peter Thiel and EFTA02656769: the record and its boundary",
+        "description": "Peter Thiel and EFTA02656769: the record and its boundary. Watch GAH’s video with documentary source notes, responses and limits.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/7XceJkxfF4w",
+        "publication_date": "2026-10-21T08:21:38-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/shawn-ryan-leah-naming-allegation",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "Leah’s reported naming restriction: the allegation and Ryan’s response",
+        "description": "Leah’s reported naming restriction: the allegation and Ryan’s response. Watch GAH’s video with documentary source notes, responses and limits.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/8lXk63Zyk9U",
+        "publication_date": "2026-10-21T08:19:15-07:00"
+      }
+    },
+    {
+      "loc": "https://grokarchivehub.com/videos/shawn-ryan-released-interview-response",
+      "lastmod": "2026-10-26",
+      "video": {
+        "thumbnail_loc": "https://grokarchivehub.com/assets/media-grokarchivehub.png",
+        "title": "Shawn Ryan’s release statement: what the publisher record confirms",
+        "description": "Shawn Ryan’s release statement: what the publisher record confirms. Watch GAH’s video with documentary source notes, responses and limits.",
+        "player_loc": "https://www.youtube-nocookie.com/embed/ykZ_ImbdAYs",
+        "publication_date": "2026-10-21T08:17:09-07:00"
+      }
     }
   ]
 }
