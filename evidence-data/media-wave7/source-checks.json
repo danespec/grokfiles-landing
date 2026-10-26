@@ -1,0 +1,57 @@
+{
+  "EFTA00579174": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00579174.pdf",
+    "status": 200,
+    "sha256": "fd82f3693d19b04e025ae436aebee1cfb9a66d1e025be5910e16c7135bfa9233",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00579182": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00579182.pdf",
+    "status": 200,
+    "sha256": "25083ac21ba5f6a23aae332ef8e1040092336e42536ed79c88939217773be687",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00224262": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00224262.pdf",
+    "status": 200,
+    "sha256": "98ec5c171fa6fff353a7157ed24d1e59c5f4187067d7bc01dbd96553150ee761",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00176507": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00176507.pdf",
+    "status": 200,
+    "sha256": "cc98128cefc5ab1e015b35ef07d6ead7c9c80840caeab3b68c2722ad49370b11",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00022062": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00022062.pdf",
+    "status": 200,
+    "sha256": "7fd8b0aa32df56c309de9043be41da39dfc061fb9f44a4b645a0443427613012",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "EFTA00016622": {
+    "url": "https://media-cdn.rollcall.com/epstein-files/EFTA00016622.pdf",
+    "status": 200,
+    "sha256": "d9f92a0fb168335364f78c97e2bd7561fee2b1b6ecd438de0254bb89eaa76fc8",
+    "textChecked": true,
+    "dojByteAuthentication": false
+  },
+  "/investigations/clinton-foundation-cgi-epstein-source-audit": {
+    "status": 200
+  },
+  "/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review": {
+    "status": 200
+  },
+  "/investigations/new-mexico-indyke-kahn-financial-network-2026": {
+    "status": 200
+  },
+  "NMDOJ-COMPLAINT-2026": {
+    "status": 200,
+    "source": "Official NMDOJ PDF"
+  }
+}

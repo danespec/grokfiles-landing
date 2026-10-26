@@ -326,6 +326,91 @@
         "Transaction-level records for the transfers, compensation and described settlement, before treating counsel’s account as an independently reconciled financial history.",
         "A reproducible search log to audit the original caption’s absence claims and document counts."
       ]
+    },
+    {
+      "id": "clinton-cgi",
+      "status": "ready",
+      "series": "Clinton CGI: the source audit",
+      "investigation": "/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "investigationTitle": "Read the full existing investigation and its source register",
+      "entity": "/entities#media-clinton-cgi",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00579174": "October 7, 2004 Mary Morrison correspondence provides wire instructions and says a million US dollars is expected for a Clinton-related Publicis project. It requests notification when done; it is not a bank posting. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "EFTA00579182": "October 8 follow-up chain includes Maxwell’s instruction to liaise with Darren while she is in Europe. The repeated transfer instructions do not establish settlement or the ultimate payer. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "EFTA00224262": "C.O.U.Q. return compilation includes a July 18, 2006 grant-schedule entry listing William J. Clinton Foundation, 25,000, unrestricted. This is donor-side reporting, not recipient-bank confirmation. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "EFTA00176507": "2007 defense submission describes Epstein as part of the group conceiving CGI. That is counsel’s advocacy for a client, not an independently established founding history. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ."
+      },
+      "documentLinks": {
+        "EFTA00579174": "https://media-cdn.rollcall.com/epstein-files/EFTA00579174.pdf",
+        "EFTA00579182": "https://media-cdn.rollcall.com/epstein-files/EFTA00579182.pdf",
+        "EFTA00224262": "https://media-cdn.rollcall.com/epstein-files/EFTA00224262.pdf",
+        "EFTA00176507": "https://media-cdn.rollcall.com/epstein-files/EFTA00176507.pdf"
+      },
+      "documentLabels": {},
+      "documentLinkLabels": {},
+      "limits": "No matched debit, beneficiary credit, invoice or ultimate payer establishes that the proposed 2004 transfer completed. A donor tax-return entry is not a cleared recipient deposit. A CGI commitment is not necessarily Foundation revenue. No wrongdoing or causal explanation of later Foundation revenue changes follows from these sources. Later TerraMar and witness accounts belong to the separate source tracks in the existing audit.",
+      "questions": [
+        "The originating debit, beneficiary credit and invoice for the proposed Publicis transfer.",
+        "Recipient acknowledgement of the reported grant, and contemporaneous CGI formation and TerraMar commitment records."
+      ]
+    },
+    {
+      "id": "andrew-doj",
+      "status": "ready",
+      "series": "Andrew: the separate 2020 DOJ request",
+      "investigation": "/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review",
+      "investigationTitle": "Read the full existing investigation and its source register",
+      "entity": "/entities#media-andrew-doj",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00088020": "June 18, 2020 DOJ email chain records UK officials anticipating that Blackfords might seek judicial review of Home Office approval of a mutual legal assistance request. An anticipated filing is not a docket entry proving it happened.",
+        "EFTA00022062": "April 3, 2020 DOJ assistance request seeks an interview and related records. It describes Andrew as a witness, not then a target, in the Epstein and separate Nygard investigations. That status is time-bounded. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "UK-CASE-2026": "The existing investigation cites the October 8 High Court case entry and reports the separate July 22 warrant outcome using court/police reporting. This companion does not newly authenticate the full order; the court website presented a verification screen during this check."
+      },
+      "documentLinks": {
+        "EFTA00022062": "https://media-cdn.rollcall.com/epstein-files/EFTA00022062.pdf"
+      },
+      "documentLabels": {
+        "UK-CASE-2026": "High Court / 2026 reporting source family — original order verification open"
+      },
+      "documentLinkLabels": {
+        "UK-CASE-2026": "official court case entry; verification screen observed"
+      },
+      "limits": "The 2020 request and 2026 warrant proceeding are different matters. The correspondence proves neither that the expected 2020 challenge was filed nor that officials predicted the 2026 outcome. A quashed warrant does not by itself end an investigation or establish guilt. Andrew’s denial is carried in the existing investigation. The 2026 outcome here remains the original reporting’s historical context; the complete court order was not independently re-audited in this pass.",
+      "questions": [
+        "The 2020 docket, if any, for the anticipated MLA challenge.",
+        "The complete 2026 court order and separate retention decisions, without treating the 2020 email as their evidence."
+      ]
+    },
+    {
+      "id": "indyke-kahn",
+      "status": "ready",
+      "series": "Indyke and Kahn: roles, travel and the civil complaint",
+      "investigation": "/investigations/new-mexico-indyke-kahn-financial-network-2026",
+      "investigationTitle": "Read the full existing investigation and its source register",
+      "entity": "/entities#media-indyke-kahn",
+      "card": "/assets/media-grokarchivehub.png",
+      "documents": {
+        "EFTA00016622": "FAA aircraft paperwork identifies Shmitka Air as owner and Darren Indyke as signer with the typed title Vice President. A corporate role is not proof of passenger travel, knowledge of abuse or criminal participation. Linked as a publisher-hosted EFTA-stamped released PDF mirror, not byte-authenticated against DOJ.",
+        "EFTA02213201": "May 2017 Groff/Kahn chain concerns proposed one-way JFK-to-St. Thomas travel for Michael and Kimberly, including carrier information and coordination. It is not a Little St. James arrival record or a log of Kahn’s own travel.",
+        "NMDOJ-COMPLAINT-2026": "October 21, 2026 civil complaint supplied by NMDOJ, 49 pages, case 1:26-cv-03543. It alleges knowing facilitation and seeks relief. It describes possible 50 million and 25 million trust bequests subject to available funds, not cash already paid."
+      },
+      "documentLinks": {
+        "EFTA00016622": "https://media-cdn.rollcall.com/epstein-files/EFTA00016622.pdf",
+        "NMDOJ-COMPLAINT-2026": "https://nmdoj.gov/wp-content/uploads/1-10.21.2026-Complaint.pdf"
+      },
+      "documentLabels": {
+        "NMDOJ-COMPLAINT-2026": "NMDOJ filed civil complaint, October 21, 2026"
+      },
+      "documentLinkLabels": {
+        "NMDOJ-COMPLAINT-2026": "official NMDOJ complaint PDF"
+      },
+      "limits": "The State’s allegations are not findings or a criminal conviction. Indyke and Kahn, through counsel, deny knowingly assisting Epstein’s abuse and dispute the suit, as carried in the existing investigation. The reel’s “They weren’t passengers” goes beyond an absence in reviewed logs and is not adopted as a universal travel finding. The travel email concerns St. Thomas, not independently proven island arrival. Potential trust bequests are conditional, not paid distributions.",
+      "questions": [
+        "Underlying flight, carrier and payment records for each actual movement.",
+        "Docket responses and orders, original trust provisions and estate accounting before treating requested relief or possible bequests as completed outcomes."
+      ]
     }
   ],
   "media": [
@@ -746,6 +831,70 @@
       ],
       "sourceUrl": "https://www.instagram.com/reel/De2-IgjD7_2/",
       "socialDate": "2026-10-23",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "clinton-cgi-reel",
+      "package": "clinton-cgi",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/clinton-cgi-publicis-transfer-source-audit",
+      "title": "Clinton CGI and Publicis: the proposed million-dollar transfer",
+      "description": "Clinton CGI: the source audit. Original GAH reel caption, primary-source receipts and the limits of the documented record.",
+      "documents": [
+        "EFTA00579174",
+        "EFTA00579182",
+        "EFTA00224262",
+        "EFTA00176507"
+      ],
+      "analysis": [
+        "The reel introduces the existing five-track audit. The strongest distinction is between a transfer anticipated in correspondence and a completed payment independently matched at both banks.",
+        "The reported 2006 grant and the 2007 advocacy about CGI’s origins are different evidence types and different events. The companion preserves that separation and sends readers to the full audit for the other organizational and testimonial tracks."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Deu7hpIiqoO/",
+      "socialDate": "2026-10-20",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "andrew-doj-reel",
+      "package": "andrew-doj",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/andrew-doj-judicial-review-efta00088020",
+      "title": "Andrew and EFTA00088020: anticipated judicial review in 2020",
+      "description": "Andrew: the separate 2020 DOJ request. Original GAH reel caption, primary-source receipts and the limits of the documented record.",
+      "documents": [
+        "EFTA00088020",
+        "EFTA00022062",
+        "UK-CASE-2026"
+      ],
+      "analysis": [
+        "The June 2020 email describes an expected legal argument about a U.S. witness-interview request and UK voluntary-cooperation guidance. It supplies a procedural paper trail, not proof that litigation was filed.",
+        "The original reel contrasts that trail with later warrant reporting. The parallel is editorial comparison, not one continuous proceeding, a prediction, obstruction finding or a conclusion about criminal liability."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Deu7ut8j--3/",
+      "socialDate": "2026-10-20",
+      "publicationDate": "2026-10-25"
+    },
+    {
+      "id": "indyke-kahn-reel",
+      "package": "indyke-kahn",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/indyke-kahn-civil-complaint-flight-records",
+      "title": "Indyke and Kahn: the complaint, FAA role and St. Thomas travel email",
+      "description": "Indyke and Kahn: roles, travel and the civil complaint. Original GAH reel caption, primary-source receipts and the limits of the documented record.",
+      "documents": [
+        "EFTA00016622",
+        "EFTA02213201",
+        "NMDOJ-COMPLAINT-2026"
+      ],
+      "analysis": [
+        "The civil complaint and the two older records perform different jobs: the complaint states the State’s allegations, the FAA paperwork records a corporate role, and the email records travel coordination. None automatically substantiates the others’ criminal significance.",
+        "The original caption and the defendants’ reported denial stay together. This page does not turn names missing from a reviewed passenger log into proof that they never traveled, or turn a conditional bequest into a completed estate payment."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Dex6ysgiBNu/",
+      "socialDate": "2026-10-21",
       "publicationDate": "2026-10-25"
     }
   ]
