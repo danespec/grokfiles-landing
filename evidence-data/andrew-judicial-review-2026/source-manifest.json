@@ -3,7 +3,7 @@
   "slug": "andrew-search-warrants-quashed-2026-doj-judicial-review",
   "published": "2026-10-08",
   "title": "Andrew's Search Warrants Were Quashed in July. A 2020 DOJ File Shows UK Officials Anticipated a Different Judicial-Review Challenge.",
-  "core_finding": "Search warrants quashed July 22, 2026; the June 2020 DOJ documents anticipated a judicial-review challenge involving a different MLA proceeding.",
+  "core_finding": "July 22 approval of warrant challenge, with order still unsealed as recorded October 8; 2020 DOJ matter is separate.",
   "sources": [
     {
       "id": "COURT-2026-10-08",
@@ -40,17 +40,24 @@
       "class": "DOJ_PRIMARY_PDF_LINK",
       "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00022062.pdf",
       "supports": "Official DOI file (may require age verification); not independently visually checked in this publication run."
+    },
+    {
+      "id": "COURT-ORDER-2026-10-08",
+      "class": "OFFICIAL_HIGH_COURT_ORDER_AND_REASONS",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2026/10/AC-2026-LON-002321-Mountbatten-Windsor-v-Central-Criminal-Court-and-another.pdf",
+      "sha256": "430353d21244b77e020e63e0f3acd302485ba48833e73a6ea0a5488e96e31296",
+      "supports": "October 8 order/reasons; paragraph 10 sealing nuance; statutory defect; ongoing retention and publicity dispute."
     }
   ],
   "boundaries": [
     "Different 2020/2026 proceedings; no evidence the 2026 filing was predicted in 2020.",
     "2020 MLA describes Andrew as witness, not target.",
-    "DOJ scanned originals and full court order not visually verified in this publication run.",
+    "DOJ scanned originals and underlying court-file documents remain separate verification items; official October 8 order text checked October 25.",
     "The 2026 criminal investigation is ongoing; seized-material retention remains unresolved."
   ],
   "open_questions": [
-    "Why did the July 22 order only become public October 8?",
     "Can police retain the material seized under defective warrants?",
     "Was the anticipated 2020 MLA judicial review filed?"
-  ]
+  ],
+  "verifiedUpdate": "2026-10-25"
 }

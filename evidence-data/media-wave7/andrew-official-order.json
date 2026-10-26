@@ -1,0 +1,20 @@
+{
+  "url": "https://www.judiciary.uk/wp-content/uploads/2026/10/AC-2026-LON-002321-Mountbatten-Windsor-v-Central-Criminal-Court-and-another.pdf",
+  "status": 200,
+  "sha256": "430353d21244b77e020e63e0f3acd302485ba48833e73a6ea0a5488e96e31296",
+  "pages": 10,
+  "checkedOn": "2026-10-25",
+  "method": "Official PDF downloaded; all extracted text read; original page image for paragraph 10 inspected.",
+  "verifiedParagraphs": [
+    4,
+    5,
+    6,
+    10,
+    11,
+    14,
+    15,
+    19,
+    24
+  ],
+  "scope": "October 8 order and reasons; not every underlying court-file document or later decision."
+}

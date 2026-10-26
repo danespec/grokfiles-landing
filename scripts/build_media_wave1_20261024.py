@@ -76,10 +76,10 @@ def source_register(p, selected):
     rows=[]
     for ident in selected:
         doc=p['documents'][ident]
-        label=('DOJ '+ident) if ident.startswith('EFTA') else ('Barak leak id '+ident)
+        label=('DOJ '+ident) if ident.startswith('EFTA') else (('Barak leak id '+ident) if ident.isdigit() else p.get('documentLabels',{}).get(ident,ident))
         target=p.get('documentLinks',{}).get(ident)
         if target:
-            link='<a href="'+e(target)+'" rel="noopener noreferrer">'+e(label)+' — publisher-hosted released PDF</a>'
+            link='<a href="'+e(target)+'" rel="noopener noreferrer">'+e(label)+' — '+e(p.get('documentLinkLabels',{}).get(ident,'publisher-hosted released PDF'))+'</a>'
         else:
             link='<a href="/archive/'+ident+'">'+e(label)+'</a>' if ident.startswith('EFTA') else e(label)
         rows.append('<li id="source-'+e(ident)+'"><h3>'+link+'</h3><p>'+e(doc)+'</p></li>')
@@ -103,7 +103,7 @@ for r in records:
     publication_label=date.fromisoformat(publication).strftime('%B %d, %Y').replace(' 0',' ')
     description=r['description']
     body='<header class="article-hero wrap-narrow"><p class="kicker">'+('Watch and verify' if r['family']=='video' else 'Reel source notes')+' · '+e(p['series'])+'</p><h1 class="headline">'+e(r['title'])+'</h1><p class="lede">'+e(description)+'</p><p class="byline">GrokArchiveHub · Source notes published <time datetime="'+publication+'">'+publication_label+'</time></p></header><article class="prose wrap-narrow media-article">'
-    citations=[('DOJ EFTA ' if x.startswith('EFTA') else 'Barak leak id ')+x for x in r['documents']]
+    citations=[('DOJ EFTA ' if x.startswith('EFTA') else ('Barak leak id ' if x.isdigit() else 'Primary source '))+x for x in r['documents']]
     if r['family']=='video':
         v=captures[r['youtubeId']];duration='PT'+str(int(v['durationSeconds']))+'S';embed='https://www.youtube-nocookie.com/embed/'+r['youtubeId']
         body+='<section id="watch"><h2>Watch the video</h2><p><a href="'+e(r['sourceUrl'])+'" rel="noopener noreferrer">Watch on GAH’s YouTube channel</a> · '+e(v['durationSeconds'])+' seconds · YouTube publication: <time datetime="'+e(v['publishDate'])+'">'+e(v['publishDate'][:10])+'</time></p><div class="media-player'+(' media-player-short' if r['format']=='short' else '')+'"><iframe src="'+embed+'" title="'+e(r['title'])+'" loading="eager" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div><p class="small">The embedded player connects to YouTube. GAH’s Archivist is openly a synthetic character; the narration is synthetic and the cited records are the evidence.</p></section>'
