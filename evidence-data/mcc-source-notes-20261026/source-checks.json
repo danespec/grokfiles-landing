@@ -1,0 +1,50 @@
+[
+  {
+    "id": "EFTA00035613",
+    "source": "https://media-cdn.rollcall.com/epstein-files/EFTA00035613.pdf",
+    "response": "200 application/pdf https://media-cdn.rollcall.com/epstein-files/EFTA00035613.pdf",
+    "bytes": 266048,
+    "isPdf": true,
+    "sha256": "9da5fb04e9a31961df40be69dd34c0f5c3a292b6c36fd30e9570306603314800"
+  },
+  {
+    "id": "EFTA00035613",
+    "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035613.pdf",
+    "response": "200 text/html; charset=UTF-8 https://www.justice.gov/age-verify?destination=/epstein/files/DataSet%208/EFTA00035613.pdf",
+    "bytes": 54055,
+    "isPdf": false,
+    "sha256": "d39eba9e8bbee8e6f7a60c4337d28a470d0e47e7fec38d7a268a7eec1c08eea6"
+  },
+  {
+    "id": "EFTA00035773",
+    "source": "https://media-cdn.rollcall.com/epstein-files/EFTA00035773.pdf",
+    "response": "200 application/pdf https://media-cdn.rollcall.com/epstein-files/EFTA00035773.pdf",
+    "bytes": 100147,
+    "isPdf": true,
+    "sha256": "dd60fa02f4dda21582ba09e5ca49bd13f833436e9a7c88072fee5d68a2ced77e"
+  },
+  {
+    "id": "EFTA00035773",
+    "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035773.pdf",
+    "response": "200 text/html; charset=UTF-8 https://www.justice.gov/age-verify?destination=/epstein/files/DataSet%208/EFTA00035773.pdf",
+    "bytes": 54055,
+    "isPdf": false,
+    "sha256": "d39eba9e8bbee8e6f7a60c4337d28a470d0e47e7fec38d7a268a7eec1c08eea6"
+  },
+  {
+    "id": "EFTA00035828",
+    "source": "https://media-cdn.rollcall.com/epstein-files/EFTA00035828.pdf",
+    "response": "200 application/pdf https://media-cdn.rollcall.com/epstein-files/EFTA00035828.pdf",
+    "bytes": 56011,
+    "isPdf": true,
+    "sha256": "33d8e9ed15a5463ce35044dfcdc8fe5ef06a674862b6e2bbf223d500ddd3dbe4"
+  },
+  {
+    "id": "EFTA00035828",
+    "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035828.pdf",
+    "response": "200 text/html; charset=UTF-8 https://www.justice.gov/age-verify?destination=/epstein/files/DataSet%208/EFTA00035828.pdf",
+    "bytes": 54055,
+    "isPdf": false,
+    "sha256": "d39eba9e8bbee8e6f7a60c4337d28a470d0e47e7fec38d7a268a7eec1c08eea6"
+  }
+]

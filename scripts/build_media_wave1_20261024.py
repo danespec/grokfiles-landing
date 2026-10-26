@@ -144,7 +144,7 @@ def cards(items):
 
 for family,route,title,intro in [
     ('video','/videos','GrokArchiveHub Videos: Watch, Read and Verify','Watch GAH’s published documentaries and Shorts with original metadata, documentary source notes, responses and their limits. Browse the Barak, Ryan, banking, victim-notification and research-tool source trails.'),
-    ('reel','/reels','GrokArchiveHub Reels: The Documents Behind the Story','Permanent source notes for GAH’s Instagram reporting: Famous Names and News Desk, with published captions, document receipts and their limits.')]:
+    ('reel','/reels','GrokArchiveHub Reels: The Documents Behind the Story','Permanent source notes for GAH’s Instagram reporting: Famous Names, News Desk and the MCC arc, with published captions, document receipts and their limits.')]:
     selected=[r for r in records if r['family']==family]
     selected.sort(key=lambda r:captures[r['youtubeId']]['publishDate'] if family=='video' else r['socialDate'],reverse=True)
     body='<header class="article-hero wrap-narrow"><p class="kicker">GrokArchiveHub · '+str(len(selected))+' reviewed publications</p><h1 class="headline">'+title+'</h1><p class="lede">'+intro+'</p></header><article class="prose wrap-wide"><section><h2>Browse by source trail</h2>'
@@ -174,7 +174,7 @@ for relative in ['latest.html','entities.html','about.html']:
     save(relative,text)
 
 for p in packages:
-    associated=[r for r in records if r['package']==p['id']]
+    associated=[r for r in records if by_id[r['package']]['investigation']==p['investigation']]
     if p['investigation'].startswith(('/archive/','/reels/','https://')):
         continue # Source access records are not editable investigation pages.
     text=(ROOT/(p['investigation'][1:]+'.html')).read_text()

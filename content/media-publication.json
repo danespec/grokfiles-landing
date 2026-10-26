@@ -568,6 +568,81 @@
         "OPR-STATEMENT-20201112": "official DOJ statement",
         "EFTA01703108": "GAH source guide"
       }
+    },
+    {
+      "id": "mcc-letter",
+      "series": "MCC arc P13: the July 30 letter",
+      "documents": {
+        "EFTA00035613": "Two-page letter dated July 30, 2019, addressed to Epstein at MCC New York, with the second page bearing EFTA00035614. The signature block names Jonathan Farley and an Oxford doctorate. It proposes a five-million-dollar university gift and alternatives. This is the author’s proposal, not acceptance, delivery confirmation or a completed payment."
+      },
+      "limits": "The letter does not establish that Epstein replied, paid, accepted the proposal or received the letter. It does not establish Morgan State University or Oxford approved an arrangement. The author describes Oxford as his alma mater and a future lectureship as hypothetical; the caption’s Oxford shorthand is not proof of a current Oxford appointment. His descriptions of institutional conversations remain his statements. Source access: the reviewed PDF is a Roll Call-hosted mirror of the released record. Its visible Bates footer was checked against the filename; no byte-for-byte comparison with a fresh DOJ download is claimed. The DOJ URL returned age verification. Source portraits, signatures, private contact details and neighboring inmates’ identities are not republished.",
+      "questions": [
+        "Is there a delivery record, Epstein response or follow-up correspondence?",
+        "Did either institution authorize, consider or reject any proposal, according to its own records?",
+        "Do bank and institutional records show any completed payment or appointment?"
+      ],
+      "status": "ready",
+      "investigation": "/investigations/mcc-final-48-hours-source-chain",
+      "investigationTitle": "MCC final 48 hours: the source-chain investigation",
+      "entity": "/entities#media-mcc-letter",
+      "card": "/assets/media-grokarchivehub.png",
+      "documentLinks": {
+        "EFTA00035613": "https://media-cdn.rollcall.com/epstein-files/EFTA00035613.pdf"
+      },
+      "documentLinkLabels": {
+        "EFTA00035613": "released-record PDF via Roll Call mirror; DOJ bytes not independently matched"
+      }
+    },
+    {
+      "id": "mcc-waiver",
+      "series": "MCC arc P14: the interview waiver",
+      "documents": {
+        "EFTA00035773": "One-page DOJ Office of Inspector General voluntary employee information form, with a waiver and redacted identifying fields. The handwritten subject names Jeffrey Epstein and employee misconduct at the MCC. The visible date appears to read 8/27/19, and the place field reads SDNY. The original caption says August 21; that discrepancy is not silently resolved."
+      },
+      "limits": "This is a warning-and-waiver form, not an interview transcript, a finding of misconduct or proof that every staff member signed the same form. It records voluntary participation terms and the possible evidentiary use of a statement. The handwritten date appears to read August 27, 2019; the caption’s August 21 is not adopted as a verified date. Redactions prevent identification of the employee, and the form alone does not establish what was said or whether an interview was completed. Source access: the reviewed PDF is a Roll Call-hosted mirror of the released record. Its visible Bates footer was checked against the filename; no byte-for-byte comparison with a fresh DOJ download is claimed. The DOJ URL returned age verification. Source portraits, signatures, private contact details and neighboring inmates’ identities are not republished.",
+      "questions": [
+        "Can the original release copy or matching interview record resolve the handwritten date?",
+        "Which interview memorandum, if publicly released and privacy-screened, belongs with this waiver?",
+        "What findings, if any, were later made on the matters covered by that interview?"
+      ],
+      "status": "ready",
+      "investigation": "/investigations/mcc-final-48-hours-source-chain",
+      "investigationTitle": "MCC final 48 hours: the source-chain investigation",
+      "entity": "/entities#media-mcc-waiver",
+      "card": "/assets/media-grokarchivehub.png",
+      "documentLinks": {
+        "EFTA00035773": "https://media-cdn.rollcall.com/epstein-files/EFTA00035773.pdf"
+      },
+      "documentLinkLabels": {
+        "EFTA00035773": "released-record PDF via Roll Call mirror; DOJ bytes not independently matched"
+      }
+    },
+    {
+      "id": "mcc-diagram",
+      "series": "MCC arc P15: the cell diagram",
+      "documents": {
+        "EFTA00035828": "One-page diagram with a red outline and label for Epstein’s cell, labels for Inmate 7 and Inmates 5 and 6, and a visible EFTA00035828 footer. The image was visually inspected after text extraction supplied only fragments. The page has no visible date, author or explanatory narrative.",
+        "EFTA00035574": "A separate identifier mentioned by the original caption in connecting the diagram to a 1:27 a.m. memorandum. GAH’s existing curated guide describes a July 23, 2019 administrative memo. This pass did not authenticate a unit match or reconstruct the incident from that memorandum."
+      },
+      "limits": "The diagram establishes what is drawn and labeled on this release page. It does not by itself establish the date of the layout, who annotated it, who occupied any neighboring cell at a particular time, a person’s movements, a line of sight or camera coverage. The caption’s same-unit connection to EFTA00035574 is not independently established by this undated diagram. An image-dependent record can be legible even when its extracted text is sparse. Source access: the reviewed PDF is a Roll Call-hosted mirror of the released record. Its visible Bates footer was checked against the filename; no byte-for-byte comparison with a fresh DOJ download is claimed. The DOJ URL returned age verification. Source portraits, signatures, private contact details and neighboring inmates’ identities are not republished.",
+      "questions": [
+        "Which dated report or exhibit explains who created and annotated this diagram?",
+        "Which approved layout and dated occupancy records establish the unit and relevant cell assignments?",
+        "What original records support the asserted connection with EFTA00035574, without identifying anonymized inmates?"
+      ],
+      "status": "ready",
+      "investigation": "/investigations/mcc-final-48-hours-source-chain",
+      "investigationTitle": "MCC final 48 hours: the source-chain investigation",
+      "entity": "/entities#media-mcc-diagram",
+      "card": "/assets/media-grokarchivehub.png",
+      "documentLinks": {
+        "EFTA00035828": "https://media-cdn.rollcall.com/epstein-files/EFTA00035828.pdf",
+        "EFTA00035574": "/archive/EFTA00035574"
+      },
+      "documentLinkLabels": {
+        "EFTA00035828": "released-record PDF via Roll Call mirror; DOJ bytes not independently matched",
+        "EFTA00035574": "GAH source guide; unit match not authenticated here"
+      }
     }
   ],
   "media": [
@@ -1270,6 +1345,67 @@
       "sourceUrl": "https://www.youtube.com/shorts/z39leXbW_2I",
       "publicationDate": "2026-10-26",
       "extraLimit": "These source notes were prepared from published metadata and the cited records, not a verified narration transcript or a full audio/video review. No usable caption text was retrieved in this pass; no transcript or timecodes have been invented."
+    },
+    {
+      "id": "mcc-letter-reel",
+      "package": "mcc-letter",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/efta00035613-july-2019-donation-proposal",
+      "title": "EFTA00035613: the five-million-dollar proposal in a July 2019 letter",
+      "description": "Read the two-page EFTA00035613 letter with GAH’s original MCC reel caption, the proposed gift, institutional limits and source provenance.",
+      "documents": [
+        "EFTA00035613"
+      ],
+      "analysis": [
+        "The July 30 letter proposes financial support as a way to improve Epstein’s public position. The two-page document supplies the proposal and the author’s assertions; it does not supply a university decision, donation receipt or response from Epstein.",
+        "The letter is signed Jonathan Farley and lists an Oxford doctorate. It describes Oxford as his alma mater and presents a possible future lectureship as conditional. The original caption’s Oxford mathematician shorthand is therefore qualified rather than presented as proof he spoke for Oxford.",
+        "Morgan State is a proposed recipient in the author’s account, not a verified institutional participant in an accepted arrangement. The letter’s references to conversations and reputation benefits remain attributed to its author. No contact details or portraits from the source pages are reproduced."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Deu4uUqFb4e/",
+      "socialDate": "2026-10-20",
+      "publicationDate": "2026-10-26"
+    },
+    {
+      "id": "mcc-waiver-reel",
+      "package": "mcc-waiver",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/efta00035773-oig-voluntary-interview-waiver",
+      "title": "EFTA00035773: the OIG interview waiver and its date discrepancy",
+      "description": "Read EFTA00035773 with GAH’s original caption, voluntary-interview terms, redactions and the unresolved August 21 versus August 27 date reading.",
+      "documents": [
+        "EFTA00035773"
+      ],
+      "analysis": [
+        "The form explains that an employee is being asked to provide information voluntarily and may decline without disciplinary action for that choice. It also states that a furnished statement may be used in later criminal or disciplinary proceedings. Those are the form’s terms, not a finding about an employee’s conduct.",
+        "The original reel calls the date August 21. Visual inspection of the mirrored page suggests the handwritten field reads 8/27/19. That discrepancy is visible here and remains subject to confirmation against the original release or matching interview record.",
+        "The handwritten subject concerns Epstein and employee misconduct at the MCC. The redacted signature fields do not identify an interviewee, and a signed waiver does not publish their answers or establish that misconduct occurred. This one form is not proof of a universal staff-interview practice."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Deu41GdES5I/",
+      "socialDate": "2026-10-20",
+      "publicationDate": "2026-10-26"
+    },
+    {
+      "id": "mcc-diagram-reel",
+      "package": "mcc-diagram",
+      "family": "reel",
+      "status": "ready",
+      "route": "/reels/efta00035828-epstein-cell-diagram",
+      "title": "EFTA00035828: the diagram labeled Epstein’s cell",
+      "description": "Read EFTA00035828 with GAH’s original caption, a visual check of the cell diagram, its undated labels and the limits of the EFTA00035574 connection.",
+      "documents": [
+        "EFTA00035828",
+        "EFTA00035574"
+      ],
+      "analysis": [
+        "The source image labels Epstein’s cell and points to it with a red outline. Other callouts use anonymous inmate numbers. The source note describes those labels without trying to identify the people behind them.",
+        "The image has no visible date or author. It can serve as a layout reference, but cannot independently establish timed occupancy, movements, camera coverage or what a witness could see.",
+        "The caption connects this page to EFTA00035574. That is a claim to verify using a dated report or exhibit chain; the diagram alone does not prove that connection. The former source-text gap is narrowed by direct visual inspection of a mirrored PDF, with its provenance limit disclosed."
+      ],
+      "sourceUrl": "https://www.instagram.com/reel/Deu47cLDA18/",
+      "socialDate": "2026-10-20",
+      "publicationDate": "2026-10-26"
     }
   ]
 }

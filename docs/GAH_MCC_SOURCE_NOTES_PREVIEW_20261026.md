@@ -1,0 +1,27 @@
+# MCC arc P13–P15: source notes and guide updates
+
+Scope: three new reel companion pages, three existing archive guides updated in place, and shared MCC investigation backlinks. No second investigation and no raw image republication. This is the first known-permalink MCC batch, not a claim that the broader photo/MCC inventory is complete. Production approval remains Thomas’s final gate.
+
+| Proposed production URL | Family | Source | Sections |
+|---|---|---|---|
+| https://grokarchivehub.com/reels/efta00035613-july-2019-donation-proposal | Reel source notes / MCC P13 | EFTA00035613, second PDF page EFTA00035614 | Summary, full original caption, receipts, limits, open questions, related links: present |
+| https://grokarchivehub.com/reels/efta00035773-oig-voluntary-interview-waiver | Reel source notes / MCC P14 | EFTA00035773 | All six sections: present |
+| https://grokarchivehub.com/reels/efta00035828-epstein-cell-diagram | Reel source notes / MCC P15 | EFTA00035828; EFTA00035574 labeled caption-context reference | All six sections: present |
+
+Expected main sitemap additions (public membership remains pending deployment):
+
+<loc>https://grokarchivehub.com/reels/efta00035613-july-2019-donation-proposal</loc>
+<loc>https://grokarchivehub.com/reels/efta00035773-oig-voluntary-interview-waiver</loc>
+<loc>https://grokarchivehub.com/reels/efta00035828-epstein-cell-diagram</loc>
+
+Each new page has Article JSON-LD with author and publication date, searchable EFTA title/description, canonical and index,follow metadata, document/text social card, AD-EXCLUDE policy and a working original Instagram URL. Actual Worker tests return HTTP 200 and check incoming links from /reels, /topics, /latest and named /entities fragments. All three also have reciprocal links from /investigations/mcc-final-48-hours-source-chain (current public route checked HTTP 200). The generator now groups companions sharing the same investigation so the final package cannot overwrite the earlier packages’ backlink block. Public new-page HTTP 200, live sitemap membership and production incoming links remain post-deploy checks.
+
+Source review: each Roll Call-hosted PDF mirror returned HTTP 200 and application/pdf; local text extraction and visual inspection covered both letter pages, the full waiver and the full diagram. Filename/Bates footers match the records discussed. No fresh byte match against DOJ is asserted: direct DOJ URLs returned HTTP 200 age-verification HTML, not PDF bytes. Exact responses and SHA-256 hashes are in evidence-data/mcc-source-notes-20261026/source-checks.json. Full original captions and their HTML hashes are captured alongside them. Raw PDFs, portraits, signatures and screenshots of private/source details remain review intermediates outside this repository.
+
+Editorial gates: the July 30 letter is a proposal, not proof of delivery, reply, payment or institutional acceptance. The author’s Oxford doctorate/alma-mater wording and hypothetical future lectureship do not prove a current Oxford position or authority to bind an institution. His accounts of conversations remain attributed. The waiver caption says August 21, while the handwriting appears to read 8/27/19; the conflict is flagged rather than silently corrected or declared settled. A waiver is not testimony, a universal staff practice or a finding of misconduct. The undated diagram supports its visible labels, not timed occupancy, movement, camera coverage, anonymous inmate identification or the caption’s unverified unit match to EFTA00035574. The three original captions remain verbatim as historical publications beside these readings.
+
+Existing archive guides upgraded: /archive/EFTA00035613, /archive/EFTA00035773 and /archive/EFTA00035828. They now carry the dated mirror/visual review and link to the new companion pages, while keeping source-access and privacy limits. EFTA00035828 remains in the Worker’s noindex gap set and has noindex,follow file metadata. No raw archive indexing policy or new source-guide sitemap promotion is included. The dedicated source-guide generator supports --check; run it after the older archive-generation scripts if those historical builders are rerun.
+
+Checks passed: actual Worker media catalog (35 pages, including all three new source notes), guide status/indexability, full caption retention, shared-report backlinks, parsed JSON-LD/required fields, canonical and social metadata, no page img tags, existing St. Thomas editorial regression, Ask GAH rendering/delivery regression, 20 staging tests, both generator idempotency checks and git diff whitespace check. Browser review confirms all three new summaries and sections render. This is not a third-party rich-results certification. Expected catalog after deployment: 24 reel pages, 11 watch pages and 195 main sitemap URLs; the latter is verified publicly only after release.
+
+Remaining GAPs: the public Instagram profile HTML exposes account totals but no post permalinks. Photo batches 1–5, MCC P7–P12 and the three October 16 carousel/reel duplicate pairings therefore remain unidentified and uncreated; no guessed permalink, source ID or duplicate page was used. Exact P13, P14 and P15 permalinks came from the master script and their live post metadata. See evidence-data/mcc-source-notes-20261026/backlog-status.json. The older backlog still needs live grid inventory or an authoritative permalink log. Full media transcripts and video/audio accuracy review remain open.

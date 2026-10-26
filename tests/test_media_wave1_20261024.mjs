@@ -11,7 +11,7 @@ const packages=new Map(manifest.packages.map(p=>[p.id,p]));
 const env=staging=>({ASSETS:{fetch:async input=>{
   const url=new URL(typeof input==='string'?input:input.url);
   let file=url.pathname==='/'?'index.html':url.pathname.slice(1);
-  if(['latest','investigations','videos','reels','about','entities'].includes(file))file+='.html';
+  if(!path.extname(file))file+='.html';
   try{return new Response(await readFile(path.join(root,file)),{headers:{'Content-Type':file.endsWith('.json')?'application/json':file.endsWith('.css')?'text/css':file.endsWith('.png')?'image/png':'text/html'}})}
   catch{return new Response('Missing asset',{status:404})}
 }},X_TOKEN_STORE:{get:async()=>null},...(staging?{GAH_STAGING:'true'}:{})});
@@ -19,7 +19,7 @@ globalThis.fetch=async()=>{throw Error('Unexpected external fallback')};
 const get=(p,staging=false)=>worker.fetch(new Request('https://grokarchivehub.com'+p),env(staging));
 const jsonLd=html=>[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
 
-assert.equal(ready.length,32);
+assert.equal(ready.length,35);
 for(const r of ready){
   const response=await get(r.route);const html=await response.text();
   assert.equal(response.status,200,r.route);
@@ -84,7 +84,7 @@ const missing=await get('/videos/not-a-published-video');assert.equal(missing.st
 const registry=JSON.parse(await readFile(path.join(root,'content/video-registry.json'),'utf8'));
 assert.equal(registry.videos.filter(v=>v.status==='published').length,11);
 assert.equal(registry.videos.find(v=>v.id==='gah-video-pilot-001-blanche-no-evidence').status,'draft');
-console.log('PASS media catalog: 32 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
+console.log('PASS media catalog: 35 complete pages, 2 hubs, 3 investigations preserved, all discovery links, brand schema, original captions, exact-source video metadata, scoped iframe CSP, staging privacy, video sitemap and held/draft exclusions.');
 
 for(const id of ['gates','musk','zuckerberg']){
  const p=packages.get(id), row=ready.find(r=>r.package===id);
@@ -136,4 +136,23 @@ for(const id of ['ask-gah-short','jpmorgan-sars-short','hold-letter-short']){
  assert.equal(inventory.associatedYouTube[0].canonicalWatchRoute,row.route);
  const xml=await(await get('/sitemap.xml')).text();
  assert.ok(!xml.includes('0WSgi2Ds17o'),'associated upload does not duplicate sitemap player entry');
+}
+
+for(const id of ['mcc-letter','mcc-waiver','mcc-diagram']){
+ const row=ready.find(r=>r.package===id);const h=await(await get(row.route)).text();
+ assert.ok(h.includes('Roll Call-hosted mirror'));assert.ok(h.includes('no byte-for-byte comparison'));
+ assert.ok(h.includes('https://media-cdn.rollcall.com/epstein-files/'));
+ if(id==='mcc-letter'){assert.ok(h.includes('alma mater'));assert.ok(h.includes('not a verified institutional participant'));}
+ if(id==='mcc-waiver'){assert.ok(h.includes('8/27/19'));assert.ok(h.includes('August 21'));assert.ok(h.includes('not an interview transcript'));}
+ if(id==='mcc-diagram'){assert.ok(h.includes('no visible date or author'));assert.ok(h.includes('not independently established'));}
+}
+{const h=await(await get('/investigations/mcc-final-48-hours-source-chain')).text();
+ for(const id of ['mcc-letter','mcc-waiver','mcc-diagram'])assert.ok(h.includes(ready.find(r=>r.package===id).route));
+}
+for(const id of ['EFTA00035613','EFTA00035773','EFTA00035828']){
+ const response=await get('/archive/'+id);assert.equal(response.status,200,id);
+ const html=await response.text();assert.ok(html.includes('October 26 source review'));assert.ok(html.includes('media-cdn.rollcall.com'));assert.doesNotMatch(html,/<img\b/);
+ if(id==='EFTA00035828')assert.match(response.headers.get('X-Robots-Tag'),/noindex/);
+ else assert.match(response.headers.get('X-Robots-Tag'),/index,follow/);
+ assert.ok(jsonLd(html).some(x=>x.dateModified==='2026-10-26'));
 }
