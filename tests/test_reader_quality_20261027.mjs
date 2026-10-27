@@ -16,6 +16,11 @@ for(const e of reg.entries){
  for(const m of main.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>Read the related source notes/g))assert.ok(!m[1].includes('/archive/'+e.id)&&!m[1].includes('rollcall.com'));
  if(e.sourceSha256)assert.ok(h.includes(e.sourceSha256),e.id+' source fingerprint retained');
 }
+const held=await(await worker.fetch(new Request('https://grokarchivehub.com/archive/EFTA00013764'),env)).text();
+const section=id=>held.match(new RegExp('<section id="'+id+'">([\\s\\S]*?)</section>'))?.[1]||'';
+assert.match(section('record-support'),/2-minute-23-second/,'Hold-letter observation belongs under record support');
+assert.match(section('source-access'),/5e4075e08ec2a1248eea0ecdb530cfa0c6751ed57ebe8ef3049fbbf64cab0117/,'Source hash belongs with provenance');
+assert.match(section('evidence-boundaries'),/does <strong>not<\/strong> identify|does not identify/,'Document limits belong under limits');
 const archive=await(await worker.fetch(new Request('https://grokarchivehub.com/archive'),env)).text();
 assert.doesNotMatch(archive,/Source locators awaiting verification|excluded from search indexing and the editorial sitemap/);
 assert.ok(archive.indexOf('Start with these six records')<archive.indexOf('All 69 published dossiers'));

@@ -62,22 +62,30 @@ for id,e in entries.items():
  for old in list(main.select('#where-cited, #related-published-records, .archive-navigation')):old.decompose()
  first=main.find('p',class_='source-first');first=first.extract() if first else None
  groups={'context':[],'analysis':[],'source':[],'limits':[]}
+ # Preserve the heading's following prose and split paired grid panels by their own subjects.
+ nodes=[]
  for node in list(main.contents):
+  if getattr(node,'name',None) and 'grid' in node.get('class',[]):
+   nodes.extend(x for x in node.contents if str(x).strip())
+  else:nodes.append(node)
+ current='context'
+ for node in nodes:
   if not str(node).strip():continue
   if getattr(node,'name',None) in ['script','style']:groups['context'].append(str(node));continue
-  txt=node.get_text(' ',strip=True) if getattr(node,'name',None) else str(node)
-  heading=node.find(re.compile('^h[2-4]$')) if getattr(node,'name',None) else None
+  direct=getattr(node,'name',None) in ['h2','h3','h4']
+  heading=node if direct else node.find(re.compile('^h[2-4]$')) if getattr(node,'name',None) else None
   label=heading.get_text(' ',strip=True) if heading else ''
   ident=node.get('id','') if getattr(node,'name',None) else ''
   if re.search(r'nearby|neighbou?r',label,re.I):continue
-  key='analysis'
-  if ident in ['evidence-boundaries','limits'] or re.search(r'cannot|does not prove|limits|privacy|editorial.*boundary|open questions',label,re.I):key='limits'
-  elif re.search(r'source.*(?:identity|availability|verification)|retrieve|provenance|document references|original source|reading.*source',label,re.I) or ident in ['source-verification','mirror-provenance']:key='source'
-  elif not heading:key='context'
+  if heading:
+   if ident in ['evidence-boundaries','limits'] or re.search(r'cannot|does not|do not|not establish|limits|privacy|editorial.*boundary|open (?:questions|receipt)|competing|counterevidence',label,re.I):current='limits'
+   elif re.search(r'source.*(?:identity|availability|verification)|retrieve|provenance|custody|document references|original source|reading.*source|exact source|source render',label,re.I) or ident in ['source-verification','mirror-provenance']:current='source'
+   elif re.search(r'what (?:this|the) record is|document context|research purpose|published, updated',label,re.I):current='context'
+   else:current='analysis'
   if getattr(node,'name',None):
    if node.name=='h2':node.name='h3'
    for h in node.find_all('h2'):h.name='h3'
-  groups[key].append(str(node))
+  groups[current].append(str(node))
  # Correct falsely self-referential and mirror-bound links without inventing another review.
  for key in groups:
   chunk=BeautifulSoup(''.join(groups[key]),'html.parser')
@@ -87,7 +95,8 @@ for id,e in entries.items():
     a['href']=ref['path'] if ref else '/archive/ids';a.string='Read the related source notes' if ref else 'Browse published dossiers'
   groups[key]=str(chunk)
  context=groups['context'] or '<p>'+esc(e['description'])+'</p>'
- analysis=groups['analysis'] or '<p>The receipt above states the document-specific observation. Its limits and source identity are recorded below.</p>'
+ claim=receipt.find('dd')
+ analysis=groups['analysis'] or '<p>'+esc(claim.get_text(' ',strip=True) if claim else e['description'])+'</p>'
  source='<p><a href="'+esc(e['source'])+'">Official DOJ PDF for '+id+'</a>. The official site may require age verification.</p>'+groups['source']
  limits=groups['limits'] or '<p>A source record preserves its author’s statements. It is not independent proof of every event described.</p>'
  where='<ul>'+''.join('<li><a href="'+esc(x['path'])+'">'+esc(x['title'])+'</a></li>' for x in refs[id])+'</ul>' if refs[id] else '<p>No separate article citation is recorded for this ID in the current public article index. The dossier and linked receipt card preserve its source context.</p>'
@@ -103,7 +112,8 @@ for p in repo.rglob('*.html'):
  s=p.read_text(errors='replace');s=s.replace('on this indexable page','in this source note').replace('ASCEND evidence context','Document context').replace('Claim-source gate','Source references reviewed').replace('42/42 sourced','')
  s=s.replace('<div><strong>Ad policy</strong><span>Sensitive route; ad-excluded by worker policy</span></div>','').replace('<div><strong>Source references reviewed</strong><span></span></div>','')
  s=re.sub(r'<p\b[^>]*>\s*(?:<strong>)?Ad policy:(?:</strong>)?\s*Sensitive route; ad-excluded by worker policy\.?\s*</p>','',s,flags=re.I)
- p.write_text("\n".join(x.rstrip() for x in s.splitlines())+"\n")
+ if p==repo/"investigations/efta-compliance-tracker.html":s="\n".join(x.rstrip() for x in s.splitlines())+"\n"
+ p.write_text(s)
 # Deterministic, page-specific share cards for all editorial sitemap routes and wiki hubs.
 cards={};out=repo/'assets/page-cards';out.mkdir(exist_ok=True);font=os.environ.get('GAH_CARD_FONT') or next((p for p in ['/System/Library/Fonts/Supplemental/Arial.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'] if Path(p).exists()),None);assert font,'Set GAH_CARD_FONT to a readable TrueType font'
 rows=[r for r in baseline if urlsplit(r['url']).hostname=='grokarchivehub.com' and r['url'] not in ['https://grokarchivehub.com/sitemap-archive.xml'] and r['status']==200 and not re.search(r'/archive/EFTA\d{8}$',r['url'])]
