@@ -1,3 +1,5 @@
+> Follow-up: seven source holds were reviewed and released in PR #217 / Pages de213e64. Current register: 67 indexable dossiers, two holds. See SOURCE-HOLDS.md for current acceptance and the newly identified stale Cloudflare wiki-sitemap cache. The 60/9 acceptance below is historical.
+
 # Production acceptance — October 27, 2026
 
 PR #215 was merged and released to Pages deployment `3c001c46` from merge commit `3ab22ebf541522631b3fd7c53d4e5c6a27e2f09c`. The wiki companion was also deployed persistently, with the original container and a fresh full-filesystem image snapshot retained for rollback.

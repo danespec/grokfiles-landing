@@ -1,0 +1,20 @@
+{
+  "mainDossiers": 69,
+  "wikiReceiptCards": 69,
+  "indexableDossiers": 67,
+  "sourceHoldsPreserved": 2,
+  "mainSitemapUrls": 192,
+  "eftaSitemapUrls": 67,
+  "wikiSitemapOriginUrls": 70,
+  "wikiSitemapCanonicalCachedUrls": 63,
+  "wikiSitemapCacheStatus": "stale edge entry; credential cannot purge",
+  "sitemapOverlap": 0,
+  "identifierAliasRedirects": "passed on both hosts",
+  "wikiNavigation": "one-hop main aliases; reciprocal per-ID links passed",
+  "shareImages": "PNG 200 for Black, Musk and Hold the Letter",
+  "rawPlistRemoved": true,
+  "robotsOriginSitemapDeclarations": "passed",
+  "cloudflareManagedRobotsWildcardGroups": 2,
+  "pagesDeployment": "de213e64",
+  "mergeCommit": "b91c8e370b2bc5da449d27210cd972762b66aaa9"
+}

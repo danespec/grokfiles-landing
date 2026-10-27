@@ -1,0 +1,38 @@
+[
+  {
+    "id": "EFTA00035206",
+    "status": 200,
+    "localSourceHashMatches": true,
+    "sha256": "fb7ed1af9e25cd99f212b81d2edb08d3d833d8732bc3dc5e9fd4259d2b035017"
+  },
+  {
+    "id": "EFTA00035715",
+    "status": 200,
+    "localSourceHashMatches": true,
+    "sha256": "ad07fc0e0badabb974de2887f007221c53305866cc4814e386edcb08ef3c23dd"
+  },
+  {
+    "id": "EFTA00153569",
+    "status": 200,
+    "localSourceHashMatches": true,
+    "sha256": "9a0f6e67701d852cf0c6c809765d8127560f8120463fdc5affdd2afbd12f528e"
+  },
+  {
+    "id": "EFTA00579174",
+    "status": 200,
+    "localSourceHashMatches": true,
+    "sha256": "fd82f3693d19b04e025ae436aebee1cfb9a66d1e025be5910e16c7135bfa9233"
+  },
+  {
+    "id": "EFTA00579182",
+    "status": 200,
+    "localSourceHashMatches": true,
+    "sha256": "25083ac21ba5f6a23aae332ef8e1040092336e42536ed79c88939217773be687"
+  },
+  {
+    "id": "EFTA00643676",
+    "status": 200,
+    "localSourceHashMatches": true,
+    "sha256": "8f1dd609eed57450cea47855547d474d7f5695342d1d58bfdfcf000a11d7574c"
+  }
+]

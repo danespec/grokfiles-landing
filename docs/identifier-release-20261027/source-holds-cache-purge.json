@@ -1,0 +1,21 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "code": 10000,
+      "message": "Authentication error"
+    }
+  ],
+  "urls": [
+    "https://wiki.grokarchivehub.com/sitemap.xml",
+    "https://wiki.grokarchivehub.com/",
+    "https://wiki.grokarchivehub.com/archive",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00035206",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00035715",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00153570",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00153571",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00579174",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00579182",
+    "https://wiki.grokarchivehub.com/receipts/EFTA00643676"
+  ]
+}

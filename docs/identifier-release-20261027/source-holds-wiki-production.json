@@ -1,0 +1,15 @@
+{
+  "image": "sha256:160b0ce89b6ebc2f4e85cb1e61eab2bd194f92f8802fa347c193e851e7fdd404",
+  "tag": "gah-wiki-gateway:source-holds-20261027",
+  "rollbackContainer": "grok_wiki_gateway_before_source_holds_20261027",
+  "production": {
+    "receiptCards": 69,
+    "indexable": 67,
+    "holds": 2,
+    "sitemapUrls": 70,
+    "protectedApi": 401,
+    "publicResolver": 200,
+    "parentViewers": 6
+  },
+  "guardsUnchanged": true
+}
