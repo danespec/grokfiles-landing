@@ -1,0 +1,9 @@
+# Fifth review: remaining reader-copy cleanup
+
+The independent spot-check confirmed the dossier layout and wiki cache corrections, while identifying additional operational language in public prose. This patch rewrites the remaining /latest build and revision labels, the Motherlode survivor-review scope, and indexing questions in four investigations. It also relabels review-queue cards, simplifies two category quality notes, removes internal manifest/run labels from the death-source guide and timeline, and replaces the Leon Black transcript table label with its actual EFTA record reference.
+
+The /latest event source is updated alongside its generated HTML, preserving the July 6 first-publication and July 8 correction dates without referring to removed footer codes. The survivor-review title, metadata, structured-data name/description and social image now use parts 95–98, with a new image filename to avoid reusing the older cached image. Protected-identity boundaries and legal-status caveats remain intact.
+
+Validation before publication: all 261 main sitemap pages were rendered and scanned for the expanded operational-copy patterns. No unexpected matches remain; publishing-policy explanations are retained on the editorial policy, corrections and Book of Black pages. Existing reader-quality tests pass, along with all 852 internal identifier links. All 18 edited HTML sources retain the same link URLs, image sources, stylesheet/canonical links and robots metadata as before. No application routing, API/security guards, bot policy or wiki runtime changed.
+
+Production acceptance is pending publication and a fresh canonical crawl; local checks are not production evidence. Source record identifiers, court docket numbers and links remain traceable. The accepted robots formatting exception remains unchanged.

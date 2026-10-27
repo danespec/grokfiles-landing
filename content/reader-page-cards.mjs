@@ -376,8 +376,8 @@ export const PAGE_CARDS = {
     "image": "https://grokarchivehub.com/assets/page-cards/db451aaa2b27379a5470.png"
   },
   "https://grokarchivehub.com/investigations/the-motherlode/survivor-accountability": {
-    "title": "Motherlode: Survivor & Institutional Accountability GROK 095–098",
-    "image": "https://grokarchivehub.com/assets/page-cards/bae27a9f1d0eaacb004e.png"
+    "title": "Motherlode: Survivor & Institutional Accountability Parts 95–98",
+    "image": "https://grokarchivehub.com/assets/page-cards/b50e212e840213cdf777.png"
   },
   "https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review": {
     "title": "Andrew's Quashed Warrants and the 2020 DOJ Judicial-Review Trail",
