@@ -20,6 +20,7 @@ function linkIdentifiers(fragment,entries,omitId=""){
    if(/^<\/(a|pre|button|h1)\b/i.test(token))depth=Math.max(0,depth-1);
    return token;
   }
+  token=token.replace(/GAH-SEARCH-GUIDE/g,'Archive search guide').replace(/GAH-HO-079/g,'Financial records').replace(/GAH-COMMUNITY-001 · /g,'');
   return depth?token:token.replace(/\bEFTA\d{8}\b/g,id=>ids.has(id)?'<a class="identifier-link" href="https://grokarchivehub.com/archive/'+id+'">'+id+'</a>':id);
  });
 }
@@ -62,7 +63,7 @@ export function qualityHtml(input,href,entries=[]){
   return open+body+close;
  });
  // Add a page entity alongside the existing publisher entity; retain record-specific schemas.
- if(path==='/barak/entities'){const h=html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i);if(h){html=html.replace(h[0],'');html=html.replace(/<h[2-6]\b/i,h[0]+'<h'+(html.match(/<h([2-6])\b/i)||[])[1]);}}
+ if(path==='/barak/entities'){const h=html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i);if(h){html=html.replace(h[0],'');html=html.replace(/<h[2-6]\b/i,h[0]+'<h2>People and organizations in the records</h2><h'+(html.match(/<h([2-6])\b/i)||[])[1]);}}
  const types=[...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].flatMap(m=>{
   try{const d=JSON.parse(m[1]);return (Array.isArray(d)?d:d['@graph']||[d]).flatMap(n=>n['@type']||[]);}catch{return [];}
  });

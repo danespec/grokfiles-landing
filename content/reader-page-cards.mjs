@@ -782,5 +782,9 @@ export const PAGE_CARDS = {
   "https://wiki.grokarchivehub.com/research/evidence/black-book-epstein": {
     "title": "Epstein contact-book source guide",
     "image": "https://grokarchivehub.com/assets/page-cards/1f4e5689a9344ee09f31.png"
+  },
+  "https://grokarchivehub.com/search": {
+    "title": "Search the evidence archive",
+    "image": "https://grokarchivehub.com/assets/page-cards/595d79f0ec9027d68a45.png"
   }
 };
