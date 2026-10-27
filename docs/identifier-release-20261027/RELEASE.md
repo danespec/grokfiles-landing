@@ -1,3 +1,5 @@
+> Latest source review: all 69 dossiers in this cohort are indexable; the final two use explicitly labelled reviewed mirror copies. Repeated robots wildcard groups were verified as valid, with merged crawl-policy checks passing on both hosts. See FINAL-HOLDS.md for scope and evidence. Earlier counts and the prior robots blocker below are historical.
+
 > Follow-up: seven source holds were reviewed and released in PR #217 / Pages de213e64. Current register: 67 indexable dossiers, two holds. See SOURCE-HOLDS.md for current acceptance and the resolved wiki-sitemap cache issue. The 60/9 acceptance below is historical.
 
 # Production acceptance — October 27, 2026

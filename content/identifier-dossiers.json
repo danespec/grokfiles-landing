@@ -462,13 +462,19 @@
     },
     {
       "id": "EFTA00704168",
-      "title": "2016 Financial Trade Correspondence: Source Route Repair",
-      "description": "EFTA00704168: 2016 Financial Trade Correspondence: Source Route Repair. Read the source, document context and limits of what this record establishes.",
+      "title": "March 2016 EDIT correspondence and unrealized gains",
+      "description": "EFTA00704168: A three-page March 2016 email chain reports EDIT share prices and describes an unrealized gain. Its printed identifiers run from EFTA00704168 through EFTA00704170.",
       "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00704168.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00704168.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00704168.png",
+      "mirrorSource": "https://media-cdn.rollcall.com/epstein-files/EFTA00704168.pdf",
+      "sourceCopyType": "third-party-mirror",
+      "reviewBasis": "Third-party mirror captured October 27, 2026; printed identifiers and document metadata checked on rendered pages. No fresh byte comparison against DOJ is claimed.",
+      "sourceDocument": "EFTA00704168",
+      "sourcePage": 1,
+      "sourceSha256": "1bd46551b890e412968f20a6f7f4289174cf84def36a01d4c969ffe1e0ed89c5"
     },
     {
       "id": "EFTA00759004",
@@ -492,13 +498,19 @@
     },
     {
       "id": "EFTA01245620",
-      "title": "FBI FD-302 Interview: Missing Notes and Judicial Oversight",
-      "description": "EFTA01245620: FBI FD-302 Interview: Missing Notes and Judicial Oversight. Read the source, document context and limits of what this record establishes.",
+      "title": "Nine-page FD-302 report: source identity and limits",
+      "description": "EFTA01245620: The reviewed access copy is a nine-page FBI FD-302 interview report, serial 216 in file 31E-NY-3027571. Its printed EFTA identifiers run from EFTA01245620 through EFTA01245628.",
       "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01245620.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA01245620.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA01245620.png",
+      "mirrorSource": "https://assets.getkino.com/documents/EFTA01245620.pdf",
+      "sourceCopyType": "third-party-mirror",
+      "reviewBasis": "Third-party mirror captured October 27, 2026; printed identifiers and document metadata checked on rendered pages. No fresh byte comparison against DOJ is claimed.",
+      "sourceDocument": "EFTA01245620",
+      "sourcePage": 1,
+      "sourceSha256": "2cfb18e22aa4920de1b8d65e950d2872f4f1aeea59fc071aef950ad1cec3bcc4"
     },
     {
       "id": "EFTA01410768",
