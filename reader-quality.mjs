@@ -32,7 +32,7 @@ export function qualityHtml(input,href,entries=[]){
  html=meta(html,'og:title',title,'property');html=meta(html,'twitter:title',title);
  const card=PAGE_CARDS[canonical];
  const oldImage=decode((html.match(/<meta\b(?=[^>]*property=["']og:image["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
- if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png/.test(oldImage))){
+ if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png|card-pinboard\.jpg|hero-desk\.jpg/.test(oldImage))){
   html=meta(html,'og:image',card.image,'property');html=meta(html,'twitter:image',card.image);html=meta(html,'twitter:card','summary_large_image');
  }
  html=html.replace(/href=(["'])(?:https:\/\/grokarchivehub\.com)?\/(?:wiki|grok-command-v4)\1/gi,'href="https://wiki.grokarchivehub.com/"');
@@ -41,6 +41,7 @@ export function qualityHtml(input,href,entries=[]){
  html=html.replace(/A topic remains indexable here only when/gi,'This guide includes a topic only when');
  html=html.replace(/The default path for unreviewed topic material is[\s\S]*?finished landing page\./i,'Material that still needs review remains available through the research tools, with its status and limits stated.');
  html=html.replace(/<p\b[^>]*>\s*(?:<strong>)?Ad policy:(?:<\/strong>)?\s*Sensitive route; ad-excluded by worker policy\.?\s*<\/p>/gi,'');
+ if(path==='/topics')html=html.replace(/strongest indexable subject lanes/g,'main subject guides').replace(/What Stays Off This Indexable Page/g,'Research material still under review').replace(/<p\b[^>]*>(?:(?!<\/p>)[\s\S])*not included in the sitemap(?:(?!<\/p>)[\s\S])*?<\/p>/g,'<p>Research directories and source collections remain available while their records receive source-specific editorial review.</p>');
  html=html.replace(/(<main\b[^>]*>)([\s\S]*?)(<\/main>)/i,(_,open,body,close)=>{
   if(path==='/barak/entities'&&!/<h1\b/i.test(body))body='<h1>Barak entities and documentary roles</h1>'+body;
   body=linkIdentifiers(body,entries,path.startsWith("/archive/")?path.slice(9):"");
@@ -61,6 +62,7 @@ export function qualityHtml(input,href,entries=[]){
   return open+body+close;
  });
  // Add a page entity alongside the existing publisher entity; retain record-specific schemas.
+ if(path==='/barak/entities'){const h=html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i);if(h){html=html.replace(h[0],'');html=html.replace(/<h[2-6]\b/i,h[0]+'<h'+(html.match(/<h([2-6])\b/i)||[])[1]);}}
  const types=[...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].flatMap(m=>{
   try{const d=JSON.parse(m[1]);return (Array.isArray(d)?d:d['@graph']||[d]).flatMap(n=>n['@type']||[]);}catch{return [];}
  });

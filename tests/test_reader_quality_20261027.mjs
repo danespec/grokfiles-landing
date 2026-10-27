@@ -26,7 +26,7 @@ assert.doesNotMatch(archive,/Source locators awaiting verification|excluded from
 assert.ok(archive.indexOf('Start with these six records')<archive.indexOf('All 69 published dossiers'));
 const all=archive.match(/<section[^>]*id="all-published-dossiers"[^>]*>([\s\S]*?)<\/section>/)[1];assert.equal((all.match(/<li>/g)||[]).length,69);
 const topics=await(await worker.fetch(new Request('https://grokarchivehub.com/topics'),env)).text();
-assert.doesNotMatch(topics,/A topic remains indexable|href="\/wiki"/);assert.match(topics,/href="https:\/\/wiki.grokarchivehub.com\/"/);
+assert.doesNotMatch(topics,/strongest indexable|noindex,follow|A topic remains indexable|href="\/wiki"/);assert.match(topics,/href="https:\/\/wiki.grokarchivehub.com\/"/);
 const alias=await worker.fetch(new Request('https://grokarchivehub.com/sitemap-archive.xml'),env);assert.equal(alias.status,301);assert.equal(alias.headers.get('Location'),'https://grokarchivehub.com/sitemap-efta.xml');
 const blackBookAlias=await worker.fetch(new Request('https://grokarchivehub.com/research/evidence/black-book-epstein'),env);assert.equal(blackBookAlias.status,301);assert.equal(blackBookAlias.headers.get('Location'),'https://wiki.grokarchivehub.com/research/evidence/black-book-epstein');
 const sample='<html><head><title>GrokArchiveHub Videos: Watch | Grok Archive Hub</title></head><body><main><a href="/story">Read EFTA00013764</a><code>EFTA02730996</code><script>const untouched="EFTA02338119";</script></main></body></html>';
@@ -37,4 +37,12 @@ assert.equal(normalizeReaderTitle('GrokArchiveHub Reels: Source notes | Grok Arc
 const err=await readerQualityResponse(new Response('<html><head><title>Semantic AI wiki search</title></head><body>Page Not Found</body></html>',{status:404,headers:{'Content-Type':'text/html','Content-Security-Policy':"default-src 'self'"}}),new Request('https://grokarchivehub.com/archive/foo'),reg.entries);
 assert.equal(err.status,404);assert.equal(err.headers.get('X-Robots-Tag'),'noindex,follow');assert.equal(err.headers.get('Content-Security-Policy'),"default-src 'self'");assert.doesNotMatch(await err.text(),/Semantic AI/);
 const api=new Response('private contract',{status:401,headers:{'Content-Type':'text/html'}});assert.equal(await readerQualityResponse(api,new Request('https://grokarchivehub.com/api/search'),reg.entries),api);
+for(const id of ['EFTA00035147','EFTA00039025','EFTA00039356','EFTA00039416','EFTA00039660']){
+ const page=await fs.readFile(new URL('archive/'+id+'.html',root),'utf8');assert.match(page,/class="identifier-dossier shell"/);assert.doesNotMatch(page,/id="ask-gah-panel"|STAY INFORMED/);
+}
+for(const path of ['/investigations/gratitude-america-money-trail-2015-2019','/guides/how-to-search-epstein-files']){
+ const page=await(await worker.fetch(new Request('https://grokarchivehub.com'+path),env)).text();
+ for(const id of path.includes('gratitude')?['EFTA00153570','EFTA00153571']:['EFTA00646811','EFTA01410768'])assert.match(page,new RegExp('href="(?:https://grokarchivehub.com)?/archive/'+id+'"'));
+}
+for(const name of ['card-pinboard.jpg','hero-desk.jpg'])assert.ok(!qualityHtml('<html><head><title>Topics</title><meta property="og:image" content="https://grokarchivehub.com/assets/'+name+'"></head><body><main></main></body></html>','https://grokarchivehub.com/topics',reg.entries).includes(name));
 console.log('PASS full dossier section order, complete archive register, topic links, sitemap alias, safe ID linking, '+Object.keys(PAGE_CARDS).length+' share-card assets, branded 404 and API isolation');
