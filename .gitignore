@@ -7,3 +7,5 @@
 *.sqlite*
 .DS_Store
 evidence-data/birthday-book/recovered_pages/
+
+node_modules/
