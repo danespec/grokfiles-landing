@@ -1,3 +1,5 @@
+> Cache blocker resolved: after the owner purged the three wiki URLs on October 27, the canonical sitemap returned 70 URLs (initial cache status MISS), with both held IDs excluded. Wiki home and archive show the reviewed links. See source-holds-cache-purge-verified.json. Earlier cache-failure observations below are retained as history.
+
 # Source hold follow-up — October 27, 2026
 
 Seven source-content holds are cleared using existing NAS PDFs, extracted text and rendered-page inspection. The register now has 67 indexable dossiers and two held locators. These are existing records, not newly acquired documents; corpus counts are unchanged. Local file hashes are not fresh byte comparisons against DOJ.
