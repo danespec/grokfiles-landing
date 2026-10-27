@@ -1,0 +1,29 @@
+{
+  "oldImage": "sha256:59cd2899876f813b1a1fd43ba5316ee513a1ed5bdcaceba81314097261920f4c",
+  "newImage": "sha256:c8208c4b004243aa8c8ec58f146ce224f2616819e844b42d8a5156400534fdde",
+  "snapshot": "gah-wiki-gateway:before-full-reaudit-20261027",
+  "guards": {
+    "wiki-security-guard.cjs": "f9c8de2218d188299576a864a4a78483dd27fc2ddcbd91e8f76a36f8e099b371",
+    "wiki-service-auth.cjs": "404fef12760b796d3b24598d493a137fc9d40c3b914002b7921a8389f7ca55a3",
+    "wiki-request-limit.cjs": "aae9229eef738d5f761e038db60d83f8b7b101ea355488c145f85ae7c6bf2db5"
+  },
+  "sourceBefore": "8738e90b8cc7a8fbbb938729f76359c77b860bcaa83abad96faf0655ba2e8ba9",
+  "codeAfter": {
+    "server.js": "1e311e2089ff74aca72579c712991ac3f2a4a188971fc9fa7b1de7667159abd8",
+    "identifier-host-policy.mjs": "3880d81ee0307c914acbbaec53c876c148a70fa1225acb01b65304f735647450",
+    "reader-quality.mjs": "dee975ce885c31eb48b0d79ec0bbe6242d8026562e5dabcf5ec27bfafd3c7a7c",
+    "content/reader-page-cards.mjs": "dfbd8c994cc55fdd57b43e86357fa5474cf89427c933862c97bf1d6f332a325e"
+  },
+  "preview": {
+    "receiptCards": 69,
+    "wikiHubSchemas": 3,
+    "blackBookIds": 83,
+    "blackBookOfficialLinks": 80,
+    "blackBookUnconfirmedIds": 3,
+    "blackBookNoindexConsistent": true,
+    "generic404sBranded": 2,
+    "sitemapUrls": 72,
+    "protectedApi": 401,
+    "publicResolver": 200
+  }
+}
