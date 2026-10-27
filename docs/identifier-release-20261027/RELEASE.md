@@ -1,10 +1,24 @@
+# Production acceptance — October 27, 2026
+
+PR #215 was merged and released to Pages deployment `3c001c46` from merge commit `3ab22ebf541522631b3fd7c53d4e5c6a27e2f09c`. The wiki companion was also deployed persistently, with the original container and a fresh full-filesystem image snapshot retained for rollback.
+
+Public acceptance passed for all **69 main dossier pages and 69 reciprocal wiki receipt cards**, with **60 indexable dossiers and nine retained source holds**. Main sitemap: 192 URLs; EFTA sitemap: 60 URLs; wiki sitemap: 63 URLs; no overlap between main and EFTA sitemaps. Identifier case/padding redirects pass on both hosts. Per-ID PNG share images return 200. The Musk page no longer publishes raw plist/OCR. Live browser inspection confirmed the corrected single dossier navigation and a working main-to-wiki receipt link.
+
+The isolated gateway passed 78 checks before cutover. Its original environment, readonly source mounts, host mappings, port binding, restart policy, service-authentication guard, security guard and rate-limit guard were preserved. Public document resolution returns 200 and protected API requests without a service token return 401. Temporary preview containers are stopped after acceptance; the original gateway rollback container remains retained.
+
+**Still open:** Cloudflare's managed robots injection leaves two wildcard groups. The available Wrangler OAuth credential has zone read access but no Bot Management edit scope. No crawler/training protection was weakened to remove the duplicate. Nine original-source holds remain noindex, and the audit's unenumerated 29-ID promotional cohort has not been certified beyond the identifiers present in the checked-out source and media register. External social captions were not edited. The entire 23-item audit is not claimed closed.
+
+See `production-verification.json` and `wiki-production-release.json` for measured results. The preparation record below describes the state before rollout and is retained as history.
+
+---
+
 # Repair the identifier back door
 
 Promoted EFTA identifiers can currently land on missing archive pages or generic OCR records. This patch supplies 30 dossier pages from existing published source reviews, serves all 69 local dossier pages through one register, and repairs story-to-dossier and dossier-to-receipt links. Existing record-specific analysis, hashes, source footers and evidentiary limits are retained.
 
 ## Review state
 
-Prepared on the exact current `main` baseline `2b0a4a43f39dd283d6a028afa945e44dcbd8d039`. No production deployment, wiki cutover, Cloudflare setting change, merge, social post or caption change has occurred.
+Prepared on the exact current `main` baseline `2b0a4a43f39dd283d6a028afa945e44dcbd8d039`. At that initial preparation point, no production deployment, wiki cutover, Cloudflare setting change, merge, social post or caption change had occurred.
 
 An initial private Pages preview was built successfully as `2917a29d`. It predates the final stylesheet, neighbour navigation and release checks. A final-source preview was subsequently built successfully as `0429e25d`; it includes the common dossier stylesheet and nearby navigation. Browser inspection was blocked by automatic approval review at `https://grokfiles.cloudflareaccess.com`; the gate was not bypassed. Owner authorization for that sign-in is required to finish visual review.
 

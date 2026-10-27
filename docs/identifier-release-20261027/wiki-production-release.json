@@ -1,0 +1,12 @@
+{
+  "deployed": true,
+  "preparedImage": "sha256:e2c82f3db9e5dac8d1517e4168cb1e9753090f4048b9a613833dd3ead0d8220d",
+  "oldContainer": "grok_wiki_gateway_before_identifiers_20261027",
+  "newContainer": "grok_wiki_gateway",
+  "receiptCards": 69,
+  "wikiSitemapUrls": 63,
+  "apiAuthentication": "401 without service token",
+  "sourceResolver": 200,
+  "guards": "unchanged",
+  "composeImageUpdated": true
+}
