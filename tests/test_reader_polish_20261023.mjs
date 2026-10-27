@@ -1,8 +1,9 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 const root=new URL('../',import.meta.url);
 const source=await readFile(new URL('_worker.js',root),'utf8');
-const {enhanceHtmlText}=await import('data:text/javascript;base64,'+Buffer.from(source+'\nexport {enhanceHtmlText};').toString('base64'));
+const {enhanceHtmlText}=await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)+'\nexport {enhanceHtmlText};').toString('base64'));
 const url='https://grokarchivehub.com/investigations/reader-test';
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll("'",'&#39;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 for(const title of ['Nine SARs, $1.28 Billion','From $18M to $5.5M','A $2 million record','$& receipt',"$` and $' remain literal"]){

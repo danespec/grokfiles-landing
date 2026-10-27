@@ -1,9 +1,10 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 const root=path.resolve(new URL('..',import.meta.url).pathname);
 const source=await readFile(path.join(root,'_worker.js'),'utf8');
-const {default:worker,enhanceHtmlText}=await import('data:text/javascript;base64,'+Buffer.from(source+'\nexport {enhanceHtmlText};').toString('base64'));
+const {default:worker,enhanceHtmlText}=await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)+'\nexport {enhanceHtmlText};').toString('base64'));
 for(const file of ['index.html','about.html','investigations/hold-the-letter.html']){
   const input=await readFile(path.join(root,file),'utf8');
   const url='https://grokarchivehub.com/'+(file==='index.html'?'':file.replace(/\.html$/,''));

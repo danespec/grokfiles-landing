@@ -16,3 +16,5 @@ jobs:
         run: node tests/test_identifier_release_20261027.mjs
       - name: Verify wiki host and receipt contracts
         run: node tests/test_identifier_wiki_20261027.mjs
+      - name: Verify full reader quality regression gates
+        run: node tests/test_reader_quality_20261027.mjs

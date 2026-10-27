@@ -1,8 +1,9 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const source = await readFile(new URL('../_worker.js', import.meta.url), 'utf8');
-const moduleUrl = 'data:text/javascript;base64,' + Buffer.from(source + '\nexport { htmlMetaContent, enhanceHtmlText };\n').toString('base64');
+const moduleUrl = 'data:text/javascript;base64,' + Buffer.from(workerTestSource(source) + '\nexport { htmlMetaContent, enhanceHtmlText };\n').toString('base64');
 const { htmlMetaContent, enhanceHtmlText } = await import(moduleUrl);
 
 const cases = [

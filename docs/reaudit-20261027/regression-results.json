@@ -1,0 +1,46 @@
+[
+  {
+    "test": "test_identifier_release_20261027.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_identifier_wiki_20261027.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_reader_quality_20261027.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_browser_scripts.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_html_meta_content.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_reader_polish_20261023.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_header_responsive_20261023.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_editorial_authorship.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_home_064.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_editorial_quality_20261023.mjs",
+    "passed": true
+  },
+  {
+    "test": "test_identifier_link_gate_20261027.py",
+    "passed": true
+  }
+]

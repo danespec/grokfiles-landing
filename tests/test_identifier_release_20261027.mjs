@@ -1,3 +1,4 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import worker from '../_worker.js';
@@ -24,7 +25,7 @@ for(const e of registry.entries){
  const img=await fs.readFile(new URL('assets/identifier-cards/'+e.id+'.png',root));assert.ok(img.length>1000);
 }
 // A stale proxy transcript is never republished by the locator renderer.
-const source=await fs.readFile(new URL('_worker.js',root),'utf8');const {rewriteArchiveOcrSourceLink,enhanceHtmlText}=await import('data:text/javascript;base64,'+Buffer.from(source+'\nexport {rewriteArchiveOcrSourceLink,enhanceHtmlText};').toString('base64'));
+const source=await fs.readFile(new URL('_worker.js',root),'utf8');const {rewriteArchiveOcrSourceLink,enhanceHtmlText}=await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)+'\nexport {rewriteArchiveOcrSourceLink,enhanceHtmlText};').toString('base64'));
 const locator=await rewriteArchiveOcrSourceLink(new Response('<html><head></head><body>UNREVIEWED_PRIVATE_OCR <?xml plist</body></html>',{headers:{'Content-Type':'text/html'}}),new Request('https://grokarchivehub.com/archive/EFTA09999999'),'EFTA09999999');assert.equal(locator.status,200);assert.match(locator.headers.get('X-Robots-Tag'),/noindex/);assert.doesNotMatch(await locator.text(),/UNREVIEWED_PRIVATE_OCR|<\?xml|plist/);
 for(const path of ['/latest','/dispatches','/investigations','/entities']){const h=enhanceHtmlText('<html><head><title>Hub</title></head><body><main><h2>Section</h2><h1>Hub</h1></main></body></html>','https://grokarchivehub.com'+path,{},{});assert.ok(h.indexOf('<h1')<h.indexOf('<h2'));}
 console.log('PASS '+registry.entries.length+' dossier routes, '+expected.length+' sitemap entries, identifier redirects, cross-host navigation, no OCR locators, JSON-LD, per-ID images and H1 order');
