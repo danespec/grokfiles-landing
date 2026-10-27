@@ -17985,6 +17985,7 @@ function archiveUnavailableResponse(request, archiveId) {
       <h1>${escapeHtml(archiveId)}</h1>
       <p class="lede">This archive route is linked by source-navigation material, but the document shell is not available from the current proof layer. Public access is not paywalled; this page records the unavailable state explicitly instead of sending readers to a broken link.</p>
       <div class="button-row"><a class="button primary" href="/archive">Return to Archive</a><a class="button" href="/search?q=${encodeURIComponent(archiveId)}">Search this ID</a></div>
+      <form action="/search"><label>Search the archive <input name="q" value="${escapeHtml(archiveId)}"></label><button type="submit">Search</button></form><p><a href="https://www.justice.gov/epstein/search">Search the DOJ library for this identifier</a></p>
     </section>
     <article class="content">
       <p>No factual claim should rely on this route alone. Use the parent investigation, source map, or PDF viewer links when a validated source page is available.</p>
