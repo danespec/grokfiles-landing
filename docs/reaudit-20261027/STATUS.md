@@ -1,3 +1,7 @@
+## Cache rule closure — October 27, 2026, 20:36 UTC
+
+Owner saved the corrected final wiki bypass condition. All five formerly stale canonical URLs now return current content with DYNAMIC cache status. All 72 canonical wiki sitemap pages pass; all 69 receipt descriptions match the register. See CACHE_DIAGNOSIS.md and cache-rule-acceptance.json. No further purge was needed.
+
 # Full re-audit — October 27, 2026
 
 **Latest verification after the owner’s cache purge:** all three previously stale canonical wiki URLs now pass status, robots, title, canonical, metadata and navigation checks as applicable. See `post-purge-verification.json`. The earlier crawl below is historical evidence, not the current cache status. Physical wildcard consolidation remains unimplemented; retain Bot Preference Sync to preserve the configured training policy and edge enforcement. Matching groups are valid under RFC 9309 section 2.2.1, so physical consolidation is an optional formatting criterion, not a required indexing repair.
