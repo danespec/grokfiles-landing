@@ -1,5 +1,7 @@
 # Full re-audit — October 27, 2026
 
+**Latest verification after the owner’s cache purge:** all three previously stale canonical wiki URLs now pass status, robots, title, canonical, metadata and navigation checks as applicable. See `post-purge-verification.json`. The earlier crawl below is historical evidence, not the current cache status. Physical wildcard consolidation remains unimplemented; retain Bot Preference Sync to preserve the configured training policy and edge enforcement. Matching groups are valid under RFC 9309 section 2.2.1, so physical consolidation is an optional formatting criterion, not a required indexing repair.
+
 Scope: all 23 findings in the owner's [independent re-audit](https://cursor.com/canvas/store-6bd0f6da-0bdb-492e-8b5c-09f71d9880a1/27ce28b8-e96f-42a9-8fdd-c4599fd301b9), plus the listed internal-link and heading follow-ups. Baseline: `d5e2a9f`. A local pass or an origin pass does not establish that a cached public URL is current.
 
 ## Current release gate
