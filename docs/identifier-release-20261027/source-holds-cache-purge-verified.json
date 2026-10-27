@@ -1,0 +1,30 @@
+{
+  "checked": "2026-10-27",
+  "purgedBy": "site owner through Cloudflare dashboard",
+  "initialSitemapCacheStatus": "MISS",
+  "results": [
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cacheStatus": "HIT",
+      "age": "29",
+      "newlyReviewedPageLinked": true,
+      "urlCount": 70,
+      "sourceHoldsExcluded": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cacheStatus": "DYNAMIC",
+      "age": null,
+      "newlyReviewedPageLinked": true
+    },
+    {
+      "path": "/archive",
+      "status": 200,
+      "cacheStatus": "HIT",
+      "age": "29",
+      "newlyReviewedPageLinked": true
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-> Follow-up: seven source holds were reviewed and released in PR #217 / Pages de213e64. Current register: 67 indexable dossiers, two holds. See SOURCE-HOLDS.md for current acceptance and the newly identified stale Cloudflare wiki-sitemap cache. The 60/9 acceptance below is historical.
+> Follow-up: seven source holds were reviewed and released in PR #217 / Pages de213e64. Current register: 67 indexable dossiers, two holds. See SOURCE-HOLDS.md for current acceptance and the resolved wiki-sitemap cache issue. The 60/9 acceptance below is historical.
 
 # Production acceptance — October 27, 2026
 
