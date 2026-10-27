@@ -32,7 +32,7 @@ export function qualityHtml(input,href,entries=[]){
  html=meta(html,'og:title',title,'property');html=meta(html,'twitter:title',title);
  const card=PAGE_CARDS[canonical];
  const oldImage=decode((html.match(/<meta\b(?=[^>]*property=["']og:image["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
- if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png/.test(oldImage))){
+ if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png|card-pinboard\.jpg|hero-desk\.jpg/.test(oldImage))){
   html=meta(html,'og:image',card.image,'property');html=meta(html,'twitter:image',card.image);html=meta(html,'twitter:card','summary_large_image');
  }
  html=html.replace(/href=(["'])(?:https:\/\/grokarchivehub\.com)?\/(?:wiki|grok-command-v4)\1/gi,'href="https://wiki.grokarchivehub.com/"');
@@ -61,6 +61,7 @@ export function qualityHtml(input,href,entries=[]){
   return open+body+close;
  });
  // Add a page entity alongside the existing publisher entity; retain record-specific schemas.
+ if(path==='/barak/entities'){const h=html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i);if(h){html=html.replace(h[0],'');html=html.replace(/<h[2-6]\b/i,h[0]+'<h'+(html.match(/<h([2-6])\b/i)||[])[1]);}}
  const types=[...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].flatMap(m=>{
   try{const d=JSON.parse(m[1]);return (Array.isArray(d)?d:d['@graph']||[d]).flatMap(n=>n['@type']||[]);}catch{return [];}
  });

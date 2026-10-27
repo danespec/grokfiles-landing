@@ -18,6 +18,7 @@ export function identifierHostPolicy(req,res){
  const id=path.match(/^\/archive\/efta(\d{1,8})(?:\.html)?$/i);
  if(id)return redirect(req,res,MAIN+'/archive/EFTA'+id[1].padStart(8,'0')+url.search);
  if(path==='/wiki'||path==='/grok-command-v4')return redirect(req,res,ORIGIN+'/');
+ if(path==='/topics')return redirect(req,res,MAIN+'/topics');
  if(path==='/methodology')return redirect(req,res,MAIN+'/methodology');
  if(path==='/barak'||path==='/dispatches/barak-archive')return redirect(req,res,MAIN+'/barak');
  if(path==='/receipts')return redirect(req,res,ORIGIN+'/archive');

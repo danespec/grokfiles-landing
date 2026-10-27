@@ -56,7 +56,7 @@ for folder in ['reels','videos']:
 section_order=['Receipt card','Document context','What the record supports','Source access and verification','Limits and open questions','Where this ID appears','Related published records']
 for id,e in entries.items():
  p=repo/'archive'/f'{id}.html';raw=baseline_html(p);soup=BeautifulSoup(raw,'html.parser');main=soup.find('main');assert main,id
- h1=main.find('h1');assert h1,id;h1=h1.extract()
+ h1=main.find('h1');assert h1,id;h1=h1.extract();h1.string=id+' — '+e['title']
  receipt=main.find(id='receipt');assert receipt,id;receipt=receipt.extract()
  for h in receipt.find_all('h2'):h.string='Receipt card'
  for old in list(main.select('#where-cited, #related-published-records, .archive-navigation')):old.decompose()
@@ -110,6 +110,7 @@ for id,e in entries.items():
 for p in repo.rglob('*.html'):
  if any(x in p.parts for x in ['node_modules','.git','staging','frozen-assets','evidence-data']):continue
  s=p.read_text(errors='replace');s=s.replace('on this indexable page','in this source note').replace('ASCEND evidence context','Document context').replace('Claim-source gate','Source references reviewed').replace('42/42 sourced','')
+ s=s.replace('indexable summary','published summary').replace('indexable source page','source note')
  s=s.replace('<div><strong>Ad policy</strong><span>Sensitive route; ad-excluded by worker policy</span></div>','').replace('<div><strong>Source references reviewed</strong><span></span></div>','')
  s=re.sub(r'<p\b[^>]*>\s*(?:<strong>)?Ad policy:(?:</strong>)?\s*Sensitive route; ad-excluded by worker policy\.?\s*</p>','',s,flags=re.I)
  if p==repo/"investigations/efta-compliance-tracker.html":s="\n".join(x.rstrip() for x in s.splitlines())+"\n"

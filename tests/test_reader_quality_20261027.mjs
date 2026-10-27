@@ -37,4 +37,12 @@ assert.equal(normalizeReaderTitle('GrokArchiveHub Reels: Source notes | Grok Arc
 const err=await readerQualityResponse(new Response('<html><head><title>Semantic AI wiki search</title></head><body>Page Not Found</body></html>',{status:404,headers:{'Content-Type':'text/html','Content-Security-Policy':"default-src 'self'"}}),new Request('https://grokarchivehub.com/archive/foo'),reg.entries);
 assert.equal(err.status,404);assert.equal(err.headers.get('X-Robots-Tag'),'noindex,follow');assert.equal(err.headers.get('Content-Security-Policy'),"default-src 'self'");assert.doesNotMatch(await err.text(),/Semantic AI/);
 const api=new Response('private contract',{status:401,headers:{'Content-Type':'text/html'}});assert.equal(await readerQualityResponse(api,new Request('https://grokarchivehub.com/api/search'),reg.entries),api);
+for(const id of ['EFTA00035147','EFTA00039025','EFTA00039356','EFTA00039416','EFTA00039660']){
+ const page=await fs.readFile(new URL('archive/'+id+'.html',root),'utf8');assert.match(page,/class="identifier-dossier shell"/);assert.doesNotMatch(page,/id="ask-gah-panel"|STAY INFORMED/);
+}
+for(const path of ['/investigations/gratitude-america-money-trail-2015-2019','/guides/how-to-search-epstein-files']){
+ const page=await(await worker.fetch(new Request('https://grokarchivehub.com'+path),env)).text();
+ for(const id of path.includes('gratitude')?['EFTA00153570','EFTA00153571']:['EFTA00646811','EFTA01410768'])assert.match(page,new RegExp('href="(?:https://grokarchivehub.com)?/archive/'+id+'"'));
+}
+for(const name of ['card-pinboard.jpg','hero-desk.jpg'])assert.ok(!qualityHtml('<html><head><title>Topics</title><meta property="og:image" content="https://grokarchivehub.com/assets/'+name+'"></head><body><main></main></body></html>','https://grokarchivehub.com/topics',reg.entries).includes(name));
 console.log('PASS full dossier section order, complete archive register, topic links, sitemap alias, safe ID linking, '+Object.keys(PAGE_CARDS).length+' share-card assets, branded 404 and API isolation');
