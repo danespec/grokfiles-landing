@@ -123,13 +123,17 @@
     },
     {
       "id": "EFTA00035206",
-      "title": "source text awaiting verification",
-      "description": "EFTA00035206: source text awaiting verification. Read the source, document context and limits of what this record establishes.",
+      "title": "Mandatory 30-minute rounds notice",
+      "description": "EFTA00035206: A one-page photograph shows an orange notice directing mandatory rounds every 30 minutes for Epstein. The printed EFTA00035206 footer is visible.",
       "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035206.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00035206.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00035206.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00035206",
+      "sourcePage": 1,
+      "sourceSha256": "fb7ed1af9e25cd99f212b81d2edb08d3d833d8732bc3dc5e9fd4259d2b035017"
     },
     {
       "id": "EFTA00035420",
@@ -203,13 +207,17 @@
     },
     {
       "id": "EFTA00035715",
-      "title": "source text awaiting verification",
-      "description": "EFTA00035715: source text awaiting verification. Read the source, document context and limits of what this record establishes.",
+      "title": "Annotated floor plan and detail",
+      "description": "EFTA00035715: A two-page PDF contains a floor plan with a black circle and a closer view of the same area. The visible page footers are EFTA00035715 and EFTA00035716.",
       "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035715.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00035715.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00035715.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00035715",
+      "sourcePage": 1,
+      "sourceSha256": "ad07fc0e0badabb974de2887f007221c53305866cc4814e386edcb08ef3c23dd"
     },
     {
       "id": "EFTA00035773",
@@ -314,23 +322,31 @@
     },
     {
       "id": "EFTA00153570",
-      "title": "Financial-Intelligence Sequence: Unresolved Bates Page",
-      "description": "EFTA00153570: Financial-Intelligence Sequence: Unresolved Bates Page. Read the source, document context and limits of what this record establishes.",
-      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153570.pdf",
-      "indexable": false,
+      "title": "French financial-intelligence inquiry — parent PDF page 2",
+      "description": "EFTA00153570: EFTA00153570 is the stamped second page of the three-page PDF beginning EFTA00153569, not a separately located PDF.",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153569.pdf#page=2",
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00153570.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00153570.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00153569",
+      "sourcePage": 2,
+      "sourceSha256": "9a0f6e67701d852cf0c6c809765d8127560f8120463fdc5affdd2afbd12f528e"
     },
     {
       "id": "EFTA00153571",
-      "title": "Financial-Intelligence Sequence: Second Unresolved Bates Page",
-      "description": "EFTA00153571: Financial-Intelligence Sequence: Second Unresolved Bates Page. Read the source, document context and limits of what this record establishes.",
-      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153571.pdf",
-      "indexable": false,
+      "title": "French financial-intelligence inquiry — parent PDF page 3",
+      "description": "EFTA00153571: EFTA00153571 is the stamped third page of the three-page PDF beginning EFTA00153569. Read it with page 2; the opening sentence continues that page.",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153569.pdf#page=3",
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00153571.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00153571.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00153569",
+      "sourcePage": 3,
+      "sourceSha256": "9a0f6e67701d852cf0c6c809765d8127560f8120463fdc5affdd2afbd12f528e"
     },
     {
       "id": "EFTA00176507",
@@ -384,33 +400,45 @@
     },
     {
       "id": "EFTA00579174",
-      "title": "source text awaiting verification",
-      "description": "EFTA00579174: source text awaiting verification. Read the source, document context and limits of what this record establishes.",
+      "title": "October 2004 wire instructions email",
+      "description": "EFTA00579174: An October 7, 2004 email from Mary Morrison provides wire instructions and says the sender told others to expect $1 million in the coming days.",
       "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00579174.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00579174.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00579174.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00579174",
+      "sourcePage": 1,
+      "sourceSha256": "fd82f3693d19b04e025ae436aebee1cfb9a66d1e025be5910e16c7135bfa9233"
     },
     {
       "id": "EFTA00579182",
-      "title": "source text awaiting verification",
-      "description": "EFTA00579182: source text awaiting verification. Read the source, document context and limits of what this record establishes.",
+      "title": "October 2004 reply chain about wire coordination",
+      "description": "EFTA00579182: An October 8, 2004 email chain includes Mary Morrison’s reply to Ghislaine Maxwell and Maxwell’s request to liaise with Darren while she was in Europe.",
       "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00579182.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00579182.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00579182.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00579182",
+      "sourcePage": 1,
+      "sourceSha256": "25083ac21ba5f6a23aae332ef8e1040092336e42536ed79c88939217773be687"
     },
     {
       "id": "EFTA00643676",
-      "title": "source text awaiting verification",
-      "description": "EFTA00643676: source text awaiting verification. Read the source, document context and limits of what this record establishes.",
+      "title": "Gratitude America trade-report email",
+      "description": "EFTA00643676: A March 2, 2016 Richard Kahn email forwards Andrew Atlas’s message saying Gratitude America had been funded and listing three stock purchases.",
       "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00643676.pdf",
-      "indexable": false,
+      "indexable": true,
       "new": false,
       "dateModified": "2026-10-27",
-      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00643676.png"
+      "image": "https://grokarchivehub.com/assets/identifier-cards/EFTA00643676.png",
+      "reviewBasis": "Existing archived source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ.",
+      "sourceDocument": "EFTA00643676",
+      "sourcePage": 1,
+      "sourceSha256": "8f1dd609eed57450cea47855547d474d7f5695342d1d58bfdfcf000a11d7574c"
     },
     {
       "id": "EFTA00646811",

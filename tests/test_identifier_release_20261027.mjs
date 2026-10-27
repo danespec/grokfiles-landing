@@ -28,3 +28,11 @@ const source=await fs.readFile(new URL('_worker.js',root),'utf8');const {rewrite
 const locator=await rewriteArchiveOcrSourceLink(new Response('<html><head></head><body>UNREVIEWED_PRIVATE_OCR <?xml plist</body></html>',{headers:{'Content-Type':'text/html'}}),new Request('https://grokarchivehub.com/archive/EFTA09999999'),'EFTA09999999');assert.equal(locator.status,200);assert.match(locator.headers.get('X-Robots-Tag'),/noindex/);assert.doesNotMatch(await locator.text(),/UNREVIEWED_PRIVATE_OCR|<\?xml|plist/);
 for(const path of ['/latest','/dispatches','/investigations','/entities']){const h=enhanceHtmlText('<html><head><title>Hub</title></head><body><main><h2>Section</h2><h1>Hub</h1></main></body></html>','https://grokarchivehub.com'+path,{},{});assert.ok(h.indexOf('<h1')<h.indexOf('<h2'));}
 console.log('PASS '+registry.entries.length+' dossier routes, '+expected.length+' sitemap entries, identifier redirects, cross-host navigation, no OCR locators, JSON-LD, per-ID images and H1 order');
+
+// An interior Bates page must link to its verified parent, not an invented PDF.
+for (const [id,page] of [['EFTA00153570',2],['EFTA00153571',3]]) {
+ const e=registry.entries.find(e=>e.id===id);assert.equal(e.sourceDocument,'EFTA00153569');assert.equal(e.sourcePage,page);assert.ok(e.source.endsWith('/EFTA00153569.pdf#page='+page));
+ const h=await(await worker.fetch(new Request('https://grokarchivehub.com/archive/'+id),env)).text();assert.ok(h.includes(e.sourceSha256));assert.ok(h.includes('select page '+page));assert.doesNotMatch(h,new RegExp('/'+id+'\\.pdf'));
+}
+for(const id of ['EFTA00704168','EFTA01245620'])assert.equal(registry.entries.find(e=>e.id===id).indexable,false);
+console.log('PASS interior Bates parent/page identities and remaining source holds');
