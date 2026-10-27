@@ -1,0 +1,18 @@
+name: Identifier publication gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  identifier-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify internal links and promoted slug targets
+        run: python3 tests/test_identifier_link_gate_20261027.py
+      - name: Verify dossier routing, sitemaps and metadata
+        run: node tests/test_identifier_release_20261027.mjs
+      - name: Verify wiki host and receipt contracts
+        run: node tests/test_identifier_wiki_20261027.mjs

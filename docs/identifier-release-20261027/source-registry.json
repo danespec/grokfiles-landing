@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "EFTA00000468",
+    "datasets": [
+      "DS1"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%201/EFTA00000468.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00007893",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00013764",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00014374",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00016622",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00020515",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00022062",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00033413",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00034221",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035035",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035053",
+    "datasets": [
+      "DS8"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035053.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035119",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035147",
+    "datasets": [
+      "DS8"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035147.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035161",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035206",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035420",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035421",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035442",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035570",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035574",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035613",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035614",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035657",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035715",
+    "datasets": [
+      "DS8"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035715.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035773",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00035828",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00038227",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00039025",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00039356",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00039416",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00039660",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00039661",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00080260",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00088020",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00128841",
+    "datasets": [
+      "DS9"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%209/EFTA00128841.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00153569",
+    "datasets": [
+      "DS9"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153569.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00153570",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00153571",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00173881",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00176507",
+    "datasets": [
+      "DS9"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%209/EFTA00176507.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190451",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190452",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190453",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190454",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190455",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190456",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190457",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190458",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190459",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190460",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190461",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190462",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190463",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190464",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190465",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190466",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190467",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00190632",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00194840",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00224262",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00225523",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00289560",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00338082",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00352969",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00356456",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00579174",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00579182",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00608040",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00628112",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00643676",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00646811",
+    "datasets": [
+      "DS9"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%209/EFTA00646811.pdf"
+    ],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00663685",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00695049",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00704168",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00749241",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00749245",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00759004",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00774231",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00881786",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA00962798",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01022356",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01050772",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01084694",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01116797",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01187999",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01245620",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01249207",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01249210",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01410768",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01648955",
+    "datasets": [
+      "DS10"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01648955.pdf"
+    ],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01703108",
+    "datasets": [
+      "DS10"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01703108.pdf"
+    ],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01781626",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01827430",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01928255",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01930501",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA01972778",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02213201",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02239649",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02239873",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02240144",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02262778",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02262778.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02300238",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02300238.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02332402",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02332402.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02338119",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02338119.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02346686",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02441899",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02441899.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02504630",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02504630.pdf"
+    ],
+    "artifactCount": 2,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02524962",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02596796",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02648868",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02656769",
+    "datasets": [
+      "DS11"
+    ],
+    "dojCandidates": [
+      "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02656769.pdf"
+    ],
+    "artifactCount": 1,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02662212",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02730265",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02730996",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02731023",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02731082",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02731146",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02731147",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02737038",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02810827",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": null,
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02858481",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": "rate_limited",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02858491",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": "rate_limited",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "EFTA02858495",
+    "datasets": [],
+    "dojCandidates": [],
+    "artifactCount": 0,
+    "metadataError": "rate_limited",
+    "checked": "2026-10-27"
+  }
+]
