@@ -14,6 +14,7 @@ def urls_from_sitemap(url):
  return [n.text for n in ET.fromstring(b).iter() if n.tag.endswith('}loc')]
 urls=[]
 for u in ['https://grokarchivehub.com/sitemap.xml','https://grokarchivehub.com/sitemap-efta.xml','https://wiki.grokarchivehub.com/sitemap.xml']:urls+=urls_from_sitemap(u)
+(out/'sitemap-urls.json').write_text(json.dumps(sorted(set(urls)),indent=2)+'\n')
 urls+=['https://wiki.grokarchivehub.com/research/evidence/black-book-epstein','https://grokarchivehub.com/archive/foo','https://grokarchivehub.com/not-a-real-gah-page','https://wiki.grokarchivehub.com/not-a-real-gah-page','https://grokarchivehub.com/sitemap-archive.xml','https://grokarchivehub.com/barak/entities']
 reg=json.loads((repo/'content/identifier-dossiers.json').read_text());published={e['id'] for e in reg['entries'] if e['indexable']}
 def collect(url):

@@ -61,7 +61,12 @@ for row in rows:
   if meta('name','robots')!='noindex,follow' or row['localRobots']!='noindex,follow':bad('Black-book robots mismatch')
   if len(re.findall(r'Official DOJ PDF',s))!=80:bad('Black-book source link count')
   if any('/archive/EFTA' in a['href'] for a in main.find_all('a',href=True)):bad('Black-book still links noindex locators')
-if checked!=334:fail.append({'issue':'Expected 334 accepted HTML pages','actual':checked})
+required=set(json.loads((root/'sitemap-urls.json').read_text()))
+captured={r['url']:r for r in rows}
+for url in sorted(required):
+ if url not in captured or captured[url]['status']!=200 or not captured[url].get('title'):fail.append({'url':url,'issue':'Sitemap HTML missing or not successful'})
+expected_count=len(required|{'https://wiki.grokarchivehub.com/research/evidence/black-book-epstein'})
+if checked!=expected_count:fail.append({'issue':'Accepted HTML coverage differs from captured sitemap inventory plus required source-guide probe','expected':expected_count,'actual':checked})
 for row in rows:
  if row.get('status')==200 and row.get('title') and '/black-book-epstein' not in row['url'] and row['robots']!='index,follow':fail.append({'url':row['url'],'issue':'Missing explicit index,follow meta'})
  if row['url'].endswith('/archive/foo') or row['url'].endswith('/not-a-real-gah-page'):
