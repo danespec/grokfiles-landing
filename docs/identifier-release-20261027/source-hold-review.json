@@ -1,0 +1,108 @@
+{
+  "reviewed": "2026-10-27",
+  "cleared": [
+    {
+      "title": "Mandatory 30-minute rounds notice",
+      "parent": "EFTA00035206",
+      "page": 1,
+      "dataset": 8,
+      "summary": "A one-page photograph shows an orange notice directing mandatory rounds every 30 minutes for Epstein. The printed EFTA00035206 footer is visible.",
+      "detail": "The notice states a checking interval. Its attribution is printed as “GOD!!!!”; the photograph does not identify an issuing official or establish when the notice was posted.",
+      "limits": "This notice does not prove that any round occurred, establish compliance, or identify who wrote or authorized it. The image supplies no independently verified date.",
+      "id": "EFTA00035206",
+      "sha256": "fb7ed1af9e25cd99f212b81d2edb08d3d833d8732bc3dc5e9fd4259d2b035017",
+      "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035206.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    },
+    {
+      "title": "Annotated floor plan and detail",
+      "parent": "EFTA00035715",
+      "page": 1,
+      "dataset": 8,
+      "summary": "A two-page PDF contains a floor plan with a black circle and a closer view of the same area. The visible page footers are EFTA00035715 and EFTA00035716.",
+      "detail": "The detail labels rooms D224–D228, a shower, stairs, elevators, medical storage and a suicide-watch area. The PDF contains a diagram, rather than a photograph of a dated event.",
+      "limits": "The circle does not independently establish where anyone was housed, a route taken, a camera view, occupancy or the date of an event. No person is identified from this plan.",
+      "id": "EFTA00035715",
+      "sha256": "ad07fc0e0badabb974de2887f007221c53305866cc4814e386edcb08ef3c23dd",
+      "source": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035715.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    },
+    {
+      "title": "French financial-intelligence inquiry — parent PDF page 2",
+      "parent": "EFTA00153569",
+      "page": 2,
+      "dataset": 9,
+      "summary": "EFTA00153570 is the stamped second page of the three-page PDF beginning EFTA00153569, not a separately located PDF.",
+      "detail": "This page contains email-chain discussion of deconfliction and a January 17, 2020 message describing a French FIU request concerning Gratitude America Ltd and an association. It says the association’s French account received €50,000 from Gratitude’s Deutsche Bank account. The sentence continues on page 3.",
+      "limits": "This is an intelligence inquiry described in correspondence, not an adjudicated finding. The page does not supply underlying bank records, the attached response, or a final investigative disposition.",
+      "id": "EFTA00153570",
+      "sha256": "9a0f6e67701d852cf0c6c809765d8127560f8120463fdc5affdd2afbd12f528e",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153569.pdf#page=2",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    },
+    {
+      "title": "French financial-intelligence inquiry — parent PDF page 3",
+      "parent": "EFTA00153569",
+      "page": 3,
+      "dataset": 9,
+      "summary": "EFTA00153571 is the stamped third page of the three-page PDF beginning EFTA00153569. Read it with page 2; the opening sentence continues that page.",
+      "detail": "The message describes suspicions about the purpose of the transfer and says research identified three SARs and commercial records. The released email does not include those SAR narratives or resolve the suspicions it describes.",
+      "limits": "A suspicious activity report or an intelligence request is not a finding of guilt. This continuation page does not establish illicit origin, a crime, the contents of unseen attachments, or a final outcome.",
+      "id": "EFTA00153571",
+      "sha256": "9a0f6e67701d852cf0c6c809765d8127560f8120463fdc5affdd2afbd12f528e",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00153569.pdf#page=3",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    },
+    {
+      "title": "October 2004 wire instructions email",
+      "parent": "EFTA00579174",
+      "page": 1,
+      "dataset": 9,
+      "summary": "An October 7, 2004 email from Mary Morrison provides wire instructions and says the sender told others to expect $1 million in the coming days.",
+      "detail": "The visible account-name field identifies Philadelphia Merger Corp; the reference includes Publicis Events and “Clinton Project.” Private banking and contact fields are redacted in the reviewed copy and are not reproduced here.",
+      "limits": "The email is an instruction and expectation, not a bank confirmation. It does not establish that the transfer settled, identify the ultimate use of funds, or prove wrongdoing by anyone named or referenced.",
+      "id": "EFTA00579174",
+      "sha256": "fd82f3693d19b04e025ae436aebee1cfb9a66d1e025be5910e16c7135bfa9233",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00579174.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    },
+    {
+      "title": "October 2004 reply chain about wire coordination",
+      "parent": "EFTA00579182",
+      "page": 1,
+      "dataset": 9,
+      "summary": "An October 8, 2004 email chain includes Mary Morrison’s reply to Ghislaine Maxwell and Maxwell’s request to liaise with Darren while she was in Europe.",
+      "detail": "The chain repeats the earlier $1 million wire-instructions email. It records correspondence and coordination; it does not add an independent bank settlement record. Redacted banking and private contact information are not reproduced.",
+      "limits": "Names, correspondence and a project reference do not establish criminal conduct. A forwarded instruction is not proof of the payer, completion, beneficial recipient or ultimate use of a transfer.",
+      "id": "EFTA00579182",
+      "sha256": "25083ac21ba5f6a23aae332ef8e1040092336e42536ed79c88939217773be687",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00579182.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    },
+    {
+      "title": "Gratitude America trade-report email",
+      "parent": "EFTA00643676",
+      "page": 1,
+      "dataset": 9,
+      "summary": "A March 2, 2016 Richard Kahn email forwards Andrew Atlas’s message saying Gratitude America had been funded and listing three stock purchases.",
+      "detail": "The listed orders are 800 LNKD shares at 119.1347, 7,500 BAC shares at 13.3725 and 3,200 EDIT shares at 31.8652. Their stated quantities and prices total $297,570.15. These are figures reported in correspondence.",
+      "limits": "The email is not a complete brokerage statement or independent settlement confirmation. It does not trace all funding, establish a realized profit, or establish wrongdoing.",
+      "id": "EFTA00643676",
+      "sha256": "8f1dd609eed57450cea47855547d474d7f5695342d1d58bfdfcf000a11d7574c",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00643676.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Existing NAS source PDF; text and rendered pages reviewed. Not freshly byte-compared against DOJ."
+    }
+  ],
+  "remainingHolds": [
+    "EFTA00704168",
+    "EFTA01245620"
+  ],
+  "cloudflare": "Dashboard sign-in returned HTTP 403; no bot or training policy changed."
+}
