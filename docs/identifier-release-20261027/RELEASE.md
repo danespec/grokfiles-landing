@@ -1,3 +1,5 @@
+> Final owner purge verified: all 69 canonical wiki cards are current and the canonical wiki sitemap has 72 URLs. No remaining source-content holds in the 69-dossier cohort. See FINAL-HOLDS.md and final-holds-production-verification.json for final scope and measured acceptance.
+
 > Latest source review: all 69 dossiers in this cohort are indexable; the final two use explicitly labelled reviewed mirror copies. Repeated robots wildcard groups were verified as valid, with merged crawl-policy checks passing on both hosts. See FINAL-HOLDS.md for scope and evidence. Earlier counts and the prior robots blocker below are historical.
 
 > Follow-up: seven source holds were reviewed and released in PR #217 / Pages de213e64. Current register: 67 indexable dossiers, two holds. See SOURCE-HOLDS.md for current acceptance and the resolved wiki-sitemap cache issue. The 60/9 acceptance below is historical.
