@@ -4,6 +4,8 @@
 
 **Third-review follow-up:** see `FINAL_POLISH.md` and `final-polish-acceptance.json` for the later deployment and new four-card cache failures. The prior purge verification below applies to the earlier release. The old three hub/404 failures were cleared; the four receipt-card failures concern this newer release.
 
+**Fourth-review follow-up:** the actual legacy body/CSS removal, wider build/ad copy cleanup and current public failures are recorded in `FOURTH_PASS.md` and `fourth-pass-acceptance.json`. Earlier shell-only acceptance was insufficient. Five wiki cache failures remain at the inspected edge; the reported sitemap topics entry was not reproduced (72 exact registry routes).
+
 Scope: all 23 findings in the owner's [independent re-audit](https://cursor.com/canvas/store-6bd0f6da-0bdb-492e-8b5c-09f71d9880a1/27ce28b8-e96f-42a9-8fdd-c4599fd301b9), plus the listed internal-link and heading follow-ups. Baseline: `d5e2a9f`. A local pass or an origin pass does not establish that a cached public URL is current.
 
 ## Current release gate
