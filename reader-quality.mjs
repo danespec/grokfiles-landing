@@ -41,6 +41,7 @@ export function qualityHtml(input,href,entries=[]){
  html=html.replace(/A topic remains indexable here only when/gi,'This guide includes a topic only when');
  html=html.replace(/The default path for unreviewed topic material is[\s\S]*?finished landing page\./i,'Material that still needs review remains available through the research tools, with its status and limits stated.');
  html=html.replace(/<p\b[^>]*>\s*(?:<strong>)?Ad policy:(?:<\/strong>)?\s*Sensitive route; ad-excluded by worker policy\.?\s*<\/p>/gi,'');
+ if(path==='/topics')html=html.replace(/strongest indexable subject lanes/g,'main subject guides').replace(/What Stays Off This Indexable Page/g,'Research material still under review').replace(/<p\b[^>]*>(?:(?!<\/p>)[\s\S])*not included in the sitemap(?:(?!<\/p>)[\s\S])*?<\/p>/g,'<p>Research directories and source collections remain available while their records receive source-specific editorial review.</p>');
  html=html.replace(/(<main\b[^>]*>)([\s\S]*?)(<\/main>)/i,(_,open,body,close)=>{
   if(path==='/barak/entities'&&!/<h1\b/i.test(body))body='<h1>Barak entities and documentary roles</h1>'+body;
   body=linkIdentifiers(body,entries,path.startsWith("/archive/")?path.slice(9):"");

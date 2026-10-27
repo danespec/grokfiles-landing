@@ -26,7 +26,7 @@ assert.doesNotMatch(archive,/Source locators awaiting verification|excluded from
 assert.ok(archive.indexOf('Start with these six records')<archive.indexOf('All 69 published dossiers'));
 const all=archive.match(/<section[^>]*id="all-published-dossiers"[^>]*>([\s\S]*?)<\/section>/)[1];assert.equal((all.match(/<li>/g)||[]).length,69);
 const topics=await(await worker.fetch(new Request('https://grokarchivehub.com/topics'),env)).text();
-assert.doesNotMatch(topics,/A topic remains indexable|href="\/wiki"/);assert.match(topics,/href="https:\/\/wiki.grokarchivehub.com\/"/);
+assert.doesNotMatch(topics,/strongest indexable|noindex,follow|A topic remains indexable|href="\/wiki"/);assert.match(topics,/href="https:\/\/wiki.grokarchivehub.com\/"/);
 const alias=await worker.fetch(new Request('https://grokarchivehub.com/sitemap-archive.xml'),env);assert.equal(alias.status,301);assert.equal(alias.headers.get('Location'),'https://grokarchivehub.com/sitemap-efta.xml');
 const blackBookAlias=await worker.fetch(new Request('https://grokarchivehub.com/research/evidence/black-book-epstein'),env);assert.equal(blackBookAlias.status,301);assert.equal(blackBookAlias.headers.get('Location'),'https://wiki.grokarchivehub.com/research/evidence/black-book-epstein');
 const sample='<html><head><title>GrokArchiveHub Videos: Watch | Grok Archive Hub</title></head><body><main><a href="/story">Read EFTA00013764</a><code>EFTA02730996</code><script>const untouched="EFTA02338119";</script></main></body></html>';
