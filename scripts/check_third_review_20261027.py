@@ -17,7 +17,10 @@ for row in rows:
   shells+=1
   if not {'identifier-dossier','shell'}<=set(main.get('class',[])) or main.find('footer') or soup.find(id='ask-gah-panel'):bad('Legacy shell/footer module remains')
  if id in changed and u.path.startswith(('/archive/','/receipts/')):
-  if entries[id]['title'] not in soup.title.get_text():bad('Old abbreviated title remains')
+  if u.path.startswith('/archive/') and entries[id]['title'] not in soup.title.get_text():bad('Old abbreviated dossier title remains')
+  if u.path.startswith('/receipts/'):
+   description=soup.find('meta',attrs={'name':'description'})
+   if not description or description.get('content')!=entries[id]['description']:bad('Receipt description metadata differs from current registry')
  if u.path=='/archive/EFTA00035147' and 'PDF page 15 / footer EFTA00035161' not in main.get_text(' ',strip=True):bad('Exact page/footer label missing')
  if u.path=='/barak/entities':
   h=soup.find(re.compile('^h[1-6]$'))
