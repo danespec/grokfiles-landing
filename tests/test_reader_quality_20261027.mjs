@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import worker from '../_worker.js';
+import {qualityHtml,readerQualityResponse,normalizeReaderTitle} from '../reader-quality.mjs';
+import {PAGE_CARDS} from '../content/reader-page-cards.mjs';
+const root=new URL('../',import.meta.url),reg=JSON.parse(await fs.readFile(new URL('content/identifier-dossiers.json',root),'utf8'));
+const env={ASSETS:{async fetch(req){const u=new URL(typeof req==='string'?req:req.url);try{return new Response(await fs.readFile(new URL('.'+u.pathname,root)),{headers:{'Content-Type':u.pathname.endsWith('.json')?'application/json':'text/html'}})}catch{return new Response('not found',{status:404})}}}};
+const order=['Receipt card','Document context','What the record supports','Source access and verification','Limits and open questions','Where this ID appears','Related published records'];
+const decode=s=>s.replace(/&amp;/g,'&').replace(/&#39;|&#x27;/g,"'").replace(/&quot;/g,'"');
+for(const e of reg.entries){
+ const r=await worker.fetch(new Request('https://grokarchivehub.com/archive/'+e.id),env);assert.equal(r.status,200);
+ const h=await r.text(),main=h.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)[1];
+ const headings=[...main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map(m=>decode(m[1].replace(/<[^>]+>/g,'')));
+ assert.deepEqual(headings,order,e.id);assert.match(main,/id="where-cited"/);
+ assert.doesNotMatch(main,/on this indexable page|ASCEND evidence context|Read the source review/);
+ for(const m of main.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>Read the related source notes/g))assert.ok(!m[1].includes('/archive/'+e.id)&&!m[1].includes('rollcall.com'));
+ if(e.sourceSha256)assert.ok(h.includes(e.sourceSha256),e.id+' source fingerprint retained');
+}
+const archive=await(await worker.fetch(new Request('https://grokarchivehub.com/archive'),env)).text();
+assert.doesNotMatch(archive,/Source locators awaiting verification|excluded from search indexing and the editorial sitemap/);
+assert.ok(archive.indexOf('Start with these six records')<archive.indexOf('All 69 published dossiers'));
+const all=archive.match(/<section[^>]*id="all-published-dossiers"[^>]*>([\s\S]*?)<\/section>/)[1];assert.equal((all.match(/<li>/g)||[]).length,69);
+const topics=await(await worker.fetch(new Request('https://grokarchivehub.com/topics'),env)).text();
+assert.doesNotMatch(topics,/A topic remains indexable|href="\/wiki"/);assert.match(topics,/href="https:\/\/wiki.grokarchivehub.com\/"/);
+const alias=await worker.fetch(new Request('https://grokarchivehub.com/sitemap-archive.xml'),env);assert.equal(alias.status,301);assert.equal(alias.headers.get('Location'),'https://grokarchivehub.com/sitemap-efta.xml');
+const blackBookAlias=await worker.fetch(new Request('https://grokarchivehub.com/research/evidence/black-book-epstein'),env);assert.equal(blackBookAlias.status,301);assert.equal(blackBookAlias.headers.get('Location'),'https://wiki.grokarchivehub.com/research/evidence/black-book-epstein');
+const sample='<html><head><title>GrokArchiveHub Videos: Watch | Grok Archive Hub</title></head><body><main><a href="/story">Read EFTA00013764</a><code>EFTA02730996</code><script>const untouched="EFTA02338119";</script></main></body></html>';
+const h=qualityHtml(sample,'https://grokarchivehub.com/videos',reg.entries);
+assert.match(h,/<title>Videos: Watch \| Grok Archive Hub<\/title>/);assert.match(h,/archive\/EFTA00013764/);assert.match(h,/<code><a[^>]+>EFTA02730996<\/a><\/code>/);assert.ok(h.includes('<script>const untouched="EFTA02338119";</script>'));assert.doesNotMatch(h,/<a[^>]*>[^]*?<a[^>]*>Read EFTA00013764/);
+for(const [url,c] of Object.entries(PAGE_CARDS)){assert.ok(url.startsWith('https://'));const p=new URL(c.image).pathname;const b=await fs.readFile(new URL('.'+p,root));assert.ok(b.length>1000,url);}
+assert.equal(normalizeReaderTitle('GrokArchiveHub Reels: Source notes | Grok Archive Hub'),'Reels: Source notes');
+const err=await readerQualityResponse(new Response('<html><head><title>Semantic AI wiki search</title></head><body>Page Not Found</body></html>',{status:404,headers:{'Content-Type':'text/html','Content-Security-Policy':"default-src 'self'"}}),new Request('https://grokarchivehub.com/archive/foo'),reg.entries);
+assert.equal(err.status,404);assert.equal(err.headers.get('X-Robots-Tag'),'noindex,follow');assert.equal(err.headers.get('Content-Security-Policy'),"default-src 'self'");assert.doesNotMatch(await err.text(),/Semantic AI/);
+const api=new Response('private contract',{status:401,headers:{'Content-Type':'text/html'}});assert.equal(await readerQualityResponse(api,new Request('https://grokarchivehub.com/api/search'),reg.entries),api);
+console.log('PASS full dossier section order, complete archive register, topic links, sitemap alias, safe ID linking, '+Object.keys(PAGE_CARDS).length+' share-card assets, branded 404 and API isolation');

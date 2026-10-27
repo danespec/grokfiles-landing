@@ -1,3 +1,4 @@
+import { qualityHtml } from './reader-quality.mjs';
 import fs from 'node:fs';
 const ORIGIN='https://wiki.grokarchivehub.com';
 const MAIN='https://grokarchivehub.com';
@@ -5,6 +6,7 @@ const manifest=JSON.parse(fs.readFileSync('/app/identifier-dossiers.json','utf8'
 const entries=new Map(manifest.entries.map(e=>[e.id,e]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function send(req,res,status,body,type='text/html; charset=utf-8',index='noindex,follow'){
+ if(type.startsWith('text/html')){body=qualityHtml(body,ORIGIN+req.url,manifest.entries);body=body.replace(/<meta\b(?=[^>]*name=["']robots["'])[^>]*>/ig,'<meta name="robots" content="'+index+'">');}
  res.writeHead(status,{'Content-Type':type,'Cache-Control':'no-store','CDN-Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Robots-Tag':index,'X-GAH-Identifier-Host-Policy':'20261027'});
  res.end(req.method==='HEAD'?'':body);return true;
 }
@@ -27,9 +29,10 @@ export function identifierHostPolicy(req,res){
  }
  if(path==='/'||path==='/archive'){
   let html=fs.readFileSync('/app/wiki-home-identifiers.html','utf8');
-  if(path==='/archive')html=html.replace(/<h1>[^<]+<\/h1>/,'<h1>Receipt-card archive</h1>').replaceAll('href="'+ORIGIN+'/"','href="'+ORIGIN+'/archive"').replace('content="'+ORIGIN+'/"','content="'+ORIGIN+'/archive"').replace('<title>Receipt cards and research index','<title>Receipt-card archive').replace('content="Receipt cards and research index"','content="Receipt-card archive"');
+  if(path==='/archive')html=html.replace(/<h1>[^<]+<\/h1>/,'<h1>Receipt-card archive</h1>').replace('<link rel="canonical" href="'+ORIGIN+'/">','<link rel="canonical" href="'+ORIGIN+'/archive">').replace('content="'+ORIGIN+'/"','content="'+ORIGIN+'/archive"').replace('<title>Receipt cards and research index','<title>Receipt-card archive').replace('content="Receipt cards and research index"','content="Receipt-card archive"');
   return send(req,res,200,html,'text/html; charset=utf-8','index,follow');
  }
+ if(path==='/research/evidence/black-book-epstein')return send(req,res,200,fs.readFileSync('/app/black-book-source-guide.html','utf8'));
  if(path==='/research-index'){
   let html=fs.readFileSync('/app/research-index.html','utf8');
   html=html.replace(/<link\b(?=[^>]*rel=["']canonical["'])[^>]*>/ig,'<link rel="canonical" href="'+ORIGIN+'/research-index">').replace(/<meta\b(?=[^>]*name=["']robots["'])[^>]*>/ig,'<meta name="robots" content="index,follow">');

@@ -1,3 +1,4 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import {readFile,stat} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
@@ -24,7 +25,7 @@ for(const m of home.matchAll(/<img\b([^>]*)>/g)){
 const assets=['assets/home-hero-064.avif','assets/home-pinboard-064.avif','assets/images/barak-archive-card-064.avif'];
 for(const file of assets){const bytes=await readFile(new URL(file,root));assert(bytes.subarray(4,32).includes(Buffer.from('avif')));assert((await stat(new URL(file,root))).size<100000);}
 const source=await read('_worker.js');
-const {default:worker}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const {default:worker}=await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)).toString('base64'));
 const response=await worker.fetch(new Request('https://grokarchivehub.com/'),{ASSETS:{fetch:async()=>new Response(home,{headers:{'Content-Type':'text/html'}})}});
 assert.equal(response.status,200);assert.match(response.headers.get('X-Robots-Tag'),/index,follow/);
 const rendered=await response.text();assert.doesNotMatch(rendered,/pagead\/js\/adsbygoogle\.js/);

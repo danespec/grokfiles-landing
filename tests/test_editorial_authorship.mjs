@@ -1,7 +1,8 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 const source = await readFile(new URL('../_worker.js',import.meta.url),'utf8');
-const {default:worker, enhanceEditorialAuthorship, enhanceHtmlText} = await import('data:text/javascript;base64,'+Buffer.from(source+'\nexport {enhanceEditorialAuthorship, enhanceHtmlText};').toString('base64'));
+const {default:worker, enhanceEditorialAuthorship, enhanceHtmlText} = await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)+'\nexport {enhanceEditorialAuthorship, enhanceHtmlText};').toString('base64'));
 const canonical='https://grokarchivehub.com/investigations/example';
 const profile='https://grokarchivehub.com/about-the-operator#editorial-responsibility';
 const article={ '@context':'https://schema.org','@type':'NewsArticle',headline:'Example',mainEntityOfPage:canonical,datePublished:'2026-09-01',author:{'@type':'Organization',name:'Grok Archive Hub Editorial Desk'}};

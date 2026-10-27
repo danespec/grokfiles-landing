@@ -1,3 +1,4 @@
+import { readerQualityResponse } from './reader-quality.mjs';
 
 const GAH_TRENDING_SLOT = "<!-- GAH-TRENDING-001 -->";
 const GAH_TRENDING_KV_KEY = "gah:public:trending:topics:v1";
@@ -18498,7 +18499,7 @@ export default {
 
   async fetch(request, env) {
     // STAGING-HARDEN-001: all staging responses carry privacy headers.
-    return applyStagingPrivacyHeaders(await this.handleStagingFetch(request, env), env);
+    return applyStagingPrivacyHeaders(await readerQualityResponse(await this.handleStagingFetch(request, env), request, [...GAH_IDENTIFIER_DOSSIERS.values()]), env);
   },
 
   async handleStagingFetch(request, env) {
@@ -18506,6 +18507,8 @@ export default {
     const path = cleanPath(url.pathname);
 
     if (request.method === "GET" || request.method === "HEAD") {
+      if (path === "/research/evidence/black-book-epstein") return new Response(null,{status:301,headers:{Location:"https://wiki.grokarchivehub.com/research/evidence/black-book-epstein","Cache-Control":"public, max-age=3600"}});
+      if (path === "/sitemap-archive.xml") return new Response(null,{status:301,headers:{Location:"https://grokarchivehub.com/sitemap-efta.xml","Cache-Control":"public, max-age=3600"}});
       const identifier = url.pathname.match(/^\/archive\/efta(\d{1,8})(?:\.html)?\/?$/i);
       if (identifier) {
         const canonicalPath = "/archive/EFTA" + identifier[1].padStart(8, "0");
@@ -18645,7 +18648,7 @@ export default {
       });
     }
 
-    if ((request.method === "GET" || request.method === "HEAD") && url.hostname === APEX_HOST && (path === "/sitemap-archive.xml" || path === "/sitemap-efta.xml")) {
+    if ((request.method === "GET" || request.method === "HEAD") && url.hostname === APEX_HOST && path === "/sitemap-efta.xml") {
       return serveCuratedArchiveSitemap(request);
     }
 

@@ -1,8 +1,9 @@
+import { workerTestSource } from './worker-test-source.mjs';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 const source = await readFile(new URL('../_worker.js', import.meta.url), 'utf8');
-const { default: worker, stripCloudflareHelperAssets } = await import('data:text/javascript;base64,' + Buffer.from(source + '\nexport { stripCloudflareHelperAssets };').toString('base64'));
+const { default: worker, stripCloudflareHelperAssets } = await import('data:text/javascript;base64,' + Buffer.from(workerTestSource(source) + '\nexport { stripCloudflareHelperAssets };').toString('base64'));
 const token = '88839203d5027c5040989186';
 const input = '<script type="' + token + '-text/javascript">window.galleryStarted=true;</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"></script>';
 const restored = stripCloudflareHelperAssets(input);
