@@ -1,0 +1,516 @@
+{
+  "checkedAt": "2026-10-27T20:36:17.970940+00:00",
+  "canonicalURLs": 72,
+  "receiptDescriptionsCompared": 69,
+  "failures": [],
+  "cacheStatuses": {
+    "HIT": 1,
+    "DYNAMIC": 71
+  },
+  "pages": [
+    {
+      "url": "https://wiki.grokarchivehub.com/",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/archive",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/research-index",
+      "status": "200",
+      "cache": "HIT",
+      "age": "3970",
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00000468",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00007893",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00013764",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00014374",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00016622",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00022062",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00033413",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00034221",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035035",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035053",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035119",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035147",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035206",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035420",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035421",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035442",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035570",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035574",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035613",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035657",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035715",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035773",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035828",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039025",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039356",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039416",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039660",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00080260",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00088020",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00128841",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00153569",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00153570",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00153571",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00176507",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00224262",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00338082",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00352969",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00356456",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00579174",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00579182",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00643676",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00646811",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00695049",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00704168",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00759004",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00962798",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01245620",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01410768",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01703108",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01972778",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02213201",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02239649",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02239873",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02240144",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02262778",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02300238",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02332402",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02338119",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02346686",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02596796",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02656769",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02662212",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02730265",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02730996",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02731023",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02731082",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02810827",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02858481",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02858491",
+      "status": "200",
+      "cache": "DYNAMIC",
+      "age": null,
+      "issues": []
+    }
+  ]
+}
