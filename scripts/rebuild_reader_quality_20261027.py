@@ -71,6 +71,7 @@ for id,e in entries.items():
  current='context'
  for node in nodes:
   if not str(node).strip():continue
+  if getattr(node,'name',None)=='footer':continue
   if getattr(node,'name',None) in ['script','style']:groups['context'].append(str(node));continue
   direct=getattr(node,'name',None) in ['h2','h3','h4']
   heading=node if direct else node.find(re.compile('^h[2-4]$')) if getattr(node,'name',None) else None

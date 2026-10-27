@@ -38,7 +38,7 @@ const err=await readerQualityResponse(new Response('<html><head><title>Semantic 
 assert.equal(err.status,404);assert.equal(err.headers.get('X-Robots-Tag'),'noindex,follow');assert.equal(err.headers.get('Content-Security-Policy'),"default-src 'self'");assert.doesNotMatch(await err.text(),/Semantic AI/);
 const api=new Response('private contract',{status:401,headers:{'Content-Type':'text/html'}});assert.equal(await readerQualityResponse(api,new Request('https://grokarchivehub.com/api/search'),reg.entries),api);
 for(const id of ['EFTA00035147','EFTA00039025','EFTA00039356','EFTA00039416','EFTA00039660']){
- const page=await fs.readFile(new URL('archive/'+id+'.html',root),'utf8');assert.match(page,/class="identifier-dossier shell"/);assert.doesNotMatch(page,/id="ask-gah-panel"|STAY INFORMED/);
+ const page=await fs.readFile(new URL('archive/'+id+'.html',root),'utf8');assert.match(page,/class="identifier-dossier shell"/);assert.doesNotMatch(page,/id="ask-gah-panel"|STAY INFORMED/);assert.doesNotMatch(page.match(/<main[\s\S]*?<\/main>/)[0],/<footer/);
 }
 for(const path of ['/investigations/gratitude-america-money-trail-2015-2019','/guides/how-to-search-epstein-files']){
  const page=await(await worker.fetch(new Request('https://grokarchivehub.com'+path),env)).text();
