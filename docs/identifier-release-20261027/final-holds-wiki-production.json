@@ -1,0 +1,15 @@
+{
+  "image": "sha256:59cd2899876f813b1a1fd43ba5316ee513a1ed5bdcaceba81314097261920f4c",
+  "tag": "gah-wiki-gateway:final-holds-20261027",
+  "rollbackContainer": "grok_wiki_gateway_before_final_holds_20261027",
+  "production": {
+    "receiptCards": 69,
+    "indexable": 69,
+    "holds": 0,
+    "sitemapUrls": 72,
+    "protectedApi": 401,
+    "publicResolver": 200,
+    "parentViewers": 6
+  },
+  "guardsUnchanged": true
+}
