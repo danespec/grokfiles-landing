@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 from bs4 import BeautifulSoup
 repo=Path(__file__).resolve().parents[1]
 for identifier in ['EFTA00035147','EFTA00039025','EFTA00039356','EFTA00039416','EFTA00039660']:
@@ -39,5 +40,6 @@ for identifier in ['EFTA00035147','EFTA00039025','EFTA00039356','EFTA00039416','
  for node in main.select('.hero-grid,.status-row'):node.attrs.pop('class',None)
  main['class']=['identifier-dossier','shell']
  assert not main.select('.hero,.hero-grid,.matrix,.fact-grid,.status-row')
- p.write_text(str(soup).rstrip()+'\n')
+ markup=str(soup);head,separator,body=markup.partition('</head>');head=re.sub(r'\n{2,}','\n',head)
+ p.write_text((head+separator+body).rstrip()+'\n')
 print('Normalized five dossier bodies; source details retained under source verification')
