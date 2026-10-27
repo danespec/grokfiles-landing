@@ -1,0 +1,226 @@
+{
+  "checkedAt": "2026-10-27T14:44:09.002541+00:00",
+  "pagesDeployment": "75361086",
+  "pagesMerge": "a6916b47863006e53e45c56c54218aa37eecae04",
+  "implementationPRs": [
+    223,
+    224
+  ],
+  "capturedRoutes": 338,
+  "acceptedHtmlChecks": {
+    "checkedPages": 334,
+    "dossierSectionVariants": 1,
+    "publishedReelPagesChecked": 24,
+    "sharedHeroImages": 0,
+    "failures": [
+      {
+        "url": "https://wiki.grokarchivehub.com/archive",
+        "issue": "Missing JSON-LD"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/archive",
+        "issue": "Missing collection schema"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/research-index",
+        "issue": "Title/OG brand mismatch: High-Value Research Index \u00b7 Grok Archive Hub / High-Value Research Index \u00b7 Grok Archive Hub"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/research-index",
+        "issue": "Missing OG image"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/research-index",
+        "issue": "Missing JSON-LD"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/research-index",
+        "issue": "Redirect-hop link"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/research-index",
+        "issue": "Missing collection schema"
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/not-a-real-gah-page",
+        "issue": "Generic 404 not branded/status 404"
+      }
+    ]
+  },
+  "archiveTargetsResolved": 138,
+  "archiveTargets404": 0,
+  "archiveTargetsNoindex": 0,
+  "shareImages": 230,
+  "shareImagesFailed": 0,
+  "redirectProbes": [
+    {
+      "url": "https://grokarchivehub.com/archive/efta00013764",
+      "status": 301,
+      "location": "https://grokarchivehub.com/archive/EFTA00013764",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/archive/EFTA00013764",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA13764",
+      "status": 301,
+      "location": "https://grokarchivehub.com/archive/EFTA00013764",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/archive/EFTA00013764",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/Efta00013764",
+      "status": 301,
+      "location": "https://grokarchivehub.com/archive/EFTA00013764",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/archive/EFTA00013764",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00013764/",
+      "status": 301,
+      "location": "https://grokarchivehub.com/archive/EFTA00013764",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/archive/EFTA00013764",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/archive/efta00013764",
+      "status": 301,
+      "location": "https://grokarchivehub.com/archive/EFTA00013764",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/archive/EFTA00013764",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/methodology",
+      "status": 301,
+      "location": "https://grokarchivehub.com/methodology",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/methodology",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/barak",
+      "status": 301,
+      "location": "https://grokarchivehub.com/barak",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/barak",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/dispatches/barak-archive",
+      "status": 301,
+      "location": "https://grokarchivehub.com/barak",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/barak",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/wiki",
+      "status": 301,
+      "location": "https://wiki.grokarchivehub.com/",
+      "expectedStatus": 301,
+      "expectedLocation": "https://wiki.grokarchivehub.com/",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/grok-command-v4",
+      "status": 301,
+      "location": "https://wiki.grokarchivehub.com/",
+      "expectedStatus": 301,
+      "expectedLocation": "https://wiki.grokarchivehub.com/",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/grok-command-v4",
+      "status": 301,
+      "location": "https://wiki.grokarchivehub.com/",
+      "expectedStatus": 301,
+      "expectedLocation": "https://wiki.grokarchivehub.com/",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/sitemap-archive.xml",
+      "status": 301,
+      "location": "https://grokarchivehub.com/sitemap-efta.xml",
+      "expectedStatus": 301,
+      "expectedLocation": "https://grokarchivehub.com/sitemap-efta.xml",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/research/evidence/black-book-epstein",
+      "status": 301,
+      "location": "https://wiki.grokarchivehub.com/research/evidence/black-book-epstein",
+      "expectedStatus": 301,
+      "expectedLocation": "https://wiki.grokarchivehub.com/research/evidence/black-book-epstein",
+      "passed": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA99999999",
+      "status": 404,
+      "location": null,
+      "expectedStatus": 404,
+      "expectedLocation": null,
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA99999999",
+      "status": 404,
+      "location": null,
+      "expectedStatus": 404,
+      "expectedLocation": null,
+      "passed": true
+    }
+  ],
+  "robots": [
+    {
+      "host": "grokarchivehub.com",
+      "status": 200,
+      "wildcardGroups": 2,
+      "sitemaps": [
+        "https://grokarchivehub.com/sitemap-index.xml"
+      ]
+    },
+    {
+      "host": "wiki.grokarchivehub.com",
+      "status": 200,
+      "wildcardGroups": 2,
+      "sitemaps": [
+        "https://wiki.grokarchivehub.com/sitemap.xml"
+      ]
+    }
+  ],
+  "cachedFailures": [
+    {
+      "url": "https://wiki.grokarchivehub.com/archive",
+      "status": 200,
+      "cache": "HIT",
+      "age": "4112",
+      "title": "Receipt-card archive | Grok Archive Hub"
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/research-index",
+      "status": 200,
+      "cache": "HIT",
+      "age": null,
+      "title": "High-Value Research Index \u00b7 Grok Archive Hub"
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/not-a-real-gah-page",
+      "status": 404,
+      "cache": "HIT",
+      "age": "2984",
+      "title": "Page Not Found | Semantic AI wiki search"
+    }
+  ],
+  "mainPagesNamingPublishedIdsWithoutLinks": 0,
+  "additionalPublicProbe": {
+    "url": "https://wiki.grokarchivehub.com/archive/foo",
+    "status": 404,
+    "cache": "DYNAMIC",
+    "title": "Page not found | Grok Archive Hub"
+  },
+  "overallAcceptance": "NOT COMPLETE: three cached wiki URLs and physical robots wildcard consolidation remain open"
+}
