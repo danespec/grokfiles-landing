@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-27T19:28:06.803383+00:00",
+  "pagesDeployment": "f91ebfe1",
+  "merge": "7b0ca9728e7dcd3a318da7134a643588263b7c30",
+  "implementationPRs": [
+    227,
+    228
+  ],
+  "publicRouteCrawl": {
+    "checkedPages": 334,
+    "dossierSectionVariants": 1,
+    "publishedReelPagesChecked": 24,
+    "sharedHeroImages": 0,
+    "failures": []
+  },
+  "thirdReviewChecks": {
+    "checkedHtmlPages": 334,
+    "legacyShellsChecked": 5,
+    "genericShareImages": 0,
+    "publishedIdsMissingLinksAcrossFullBody": 0,
+    "wikiTopicsRedirect": true,
+    "failures": [
+      {
+        "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035147",
+        "issue": "Old abbreviated title remains",
+        "cache": "HIT",
+        "age": null
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039416",
+        "issue": "Old abbreviated title remains",
+        "cache": "HIT",
+        "age": null
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039660",
+        "issue": "Old abbreviated title remains",
+        "cache": "HIT",
+        "age": null
+      },
+      {
+        "url": "https://wiki.grokarchivehub.com/receipts/EFTA02858491",
+        "issue": "Public operational jargon remains",
+        "cache": "HIT",
+        "age": null
+      }
+    ],
+    "physicalRobotsConsolidated": false,
+    "robotsDisposition": "Explicit formatting exception; preserve owner Bot Preference Sync and Training policies."
+  },
+  "imagesChecked": 261,
+  "failedImages": [],
+  "archiveTargetsChecked": 138,
+  "robots": [
+    {
+      "host": "grokarchivehub.com",
+      "status": 200,
+      "wildcardGroups": 2,
+      "sitemaps": [
+        "https://grokarchivehub.com/sitemap-index.xml"
+      ]
+    },
+    {
+      "host": "wiki.grokarchivehub.com",
+      "status": 200,
+      "wildcardGroups": 2,
+      "sitemaps": [
+        "https://wiki.grokarchivehub.com/sitemap.xml"
+      ]
+    }
+  ],
+  "overall": "All implementation changes deployed. Four cached wiki receipt cards remain pending public acceptance; physical robots consolidation remains an explicit formatting exception."
+}

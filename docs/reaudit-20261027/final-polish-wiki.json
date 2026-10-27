@@ -1,0 +1,24 @@
+{
+  "image": "sha256:a97219f07cff1cd9533af06e5ab9804abc0f78b627aac105dc65f046eaa1f18c",
+  "tag": "gah-wiki-gateway:reader-polish-20261027",
+  "rollbackContainer": "grok_wiki_gateway_before_reader_polish_20261027",
+  "production": {
+    "receiptCards": 69,
+    "wikiHubSchemas": 3,
+    "blackBookIds": 83,
+    "blackBookOfficialLinks": 80,
+    "blackBookUnconfirmedIds": 3,
+    "blackBookNoindexConsistent": true,
+    "generic404sBranded": 2,
+    "sitemapUrls": 72,
+    "protectedApi": 401,
+    "publicResolver": 200
+  },
+  "securityAuthRateLimitGuardsUnchanged": true,
+  "codeAfter": {
+    "server.js": "1e311e2089ff74aca72579c712991ac3f2a4a188971fc9fa7b1de7667159abd8",
+    "identifier-host-policy.mjs": "579d94097b18c07bbbb6f5f303f4b239675be01a52c05b6ebfe2b5aba09e9c21",
+    "reader-quality.mjs": "50035722ce730ec64ef4381b76b8ddf126a48b89d52f7158a342efd257069530",
+    "content/reader-page-cards.mjs": "dfbd8c994cc55fdd57b43e86357fa5474cf89427c933862c97bf1d6f332a325e"
+  }
+}
