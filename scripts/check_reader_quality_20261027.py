@@ -61,7 +61,9 @@ for row in rows:
   if meta('name','robots')!='noindex,follow' or row['localRobots']!='noindex,follow':bad('Black-book robots mismatch')
   if len(re.findall(r'Official DOJ PDF',s))!=80:bad('Black-book source link count')
   if any('/archive/EFTA' in a['href'] for a in main.find_all('a',href=True)):bad('Black-book still links noindex locators')
+if checked!=334:fail.append({'issue':'Expected 334 accepted HTML pages','actual':checked})
 for row in rows:
+ if row.get('status')==200 and row.get('title') and '/black-book-epstein' not in row['url'] and row['robots']!='index,follow':fail.append({'url':row['url'],'issue':'Missing explicit index,follow meta'})
  if row['url'].endswith('/archive/foo') or row['url'].endswith('/not-a-real-gah-page'):
   if row['status']!=404 or 'Page not found | Grok Archive Hub' not in row['title']:fail.append({'url':row['url'],'issue':'Generic 404 not branded/status 404'})
 for n in ['identifier-links.json','image-heads.json','probes.json']:
