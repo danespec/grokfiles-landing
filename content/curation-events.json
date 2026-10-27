@@ -87,15 +87,15 @@
       "type": "investigation_update",
       "title": "Final 48 hours timeline repair",
       "url": "/research/epstein-final-48-hours-mcc",
-      "what_changed": "The timeline's revision history states that the 2026-07-06 initial build was corrected and superseded by REPAIR-003. The page footer dates build GAH-EPSTEIN-DEATH-REPAIR-003 to 2026-07-08. The revision line does not itemize which sentence changed.",
+      "what_changed": "The timeline was first published July 6, 2026, and corrected July 8. The retained revision note does not identify the individual sentences changed.",
       "source_checked": "The methodology section names DOJ Epstein EFTA releases, SDNY discovery letter EFTA00039416, and DOJ OIG Report 23-085."
     },
     {
       "date": "2026-07-06",
       "type": "publication",
-      "title": "Final 48 hours timeline, initial build",
+      "title": "Final 48 hours timeline, first publication",
       "url": "/research/epstein-final-48-hours-mcc",
-      "what_changed": "The revision history dates the initial timeline build, GAH-SEO-STORY-002, to 2026-07-06. Structured data datePublished is 2026-07-06.",
+      "what_changed": "The revision history and publication metadata date the first timeline publication to July 6, 2026.",
       "source_checked": "The methodology section names DOJ Epstein EFTA releases, SDNY discovery letter EFTA00039416, and DOJ OIG Report 23-085."
     },
     {

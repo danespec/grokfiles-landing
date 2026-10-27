@@ -1,0 +1,25 @@
+{
+  "mainPagesScanned": 261,
+  "unexpectedOperationalCopy": [],
+  "publishingPolicyExceptions": [
+    {
+      "url": "https://grokarchivehub.com/editorial-policy",
+      "term": "indexable"
+    },
+    {
+      "url": "https://grokarchivehub.com/corrections",
+      "term": "noindex"
+    },
+    {
+      "url": "https://grokarchivehub.com/book-of-black",
+      "term": "noindex"
+    },
+    {
+      "url": "https://grokarchivehub.com/book-of-black/methodology",
+      "term": "indexable"
+    }
+  ],
+  "linkSourceCanonicalRobotsInvariants": "PASS on all 18 edited HTML sources",
+  "readerQualityTests": "PASS",
+  "identifierLinksChecked": 852
+}
