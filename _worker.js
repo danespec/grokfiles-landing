@@ -1,3 +1,4 @@
+import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { readerQualityResponse } from './reader-quality.mjs';
 
 const GAH_TRENDING_SLOT = "<!-- GAH-TRENDING-001 -->";
@@ -866,6 +867,8 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
 
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
+  if (path === "/archive/ids") return routePolicy(AD_ROUTE_STATUS.exclude, "published-identifier-register", "index,follow");
+  if (["/barak/documents","/barak/emails","/barak/legal","/barak/media","/barak/media/audio","/barak/media/photos","/barak/media/video","/barak/pdfs"].includes(path)) return routePolicy(AD_ROUTE_STATUS.exclude, "source-navigation-tool", "noindex,follow");
   if (path === "/artifacts" || path.startsWith("/artifacts/")) return routePolicy(AD_ROUTE_STATUS.exclude, "local-generated-audit-artifact", "noindex,nofollow");
   if (path.startsWith("/api/")) return routePolicy(AD_ROUTE_STATUS.exclude, "machine-api-route", "noindex,follow");
   if (path.startsWith("/admin/")) return routePolicy(AD_ROUTE_STATUS.exclude, "admin-tool-route", "noindex,nofollow");
@@ -1317,6 +1320,10 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal", "2026-10-21"],
+  ["https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026", "2026-10-16"],
+  ["https://grokarchivehub.com/news/epstein-wall-street-records-act-2026", "2026-10-20"],
+  ["https://grokarchivehub.com/news/state-attorneys-general-efta-ii-2026", "2026-10-20"],
   // GAH-MEDIA-SITEMAP BEGIN
   ["https://grokarchivehub.com/reels/barak-st-thomas-ronen-cohen", "2026-10-24"],
   ["https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996", "2026-10-24"],
@@ -18507,6 +18514,9 @@ export default {
     const path = cleanPath(url.pathname);
 
     if (request.method === "GET" || request.method === "HEAD") {
+      const researchRoute = RESEARCH_ROUTES.find(r => r.path === path);
+      if (researchRoute?.owner === "wiki") return new Response(null,{status:301,headers:{Location:"https://wiki.grokarchivehub.com"+researchRoute.path+url.search,"Cache-Control":"no-store"}});
+      if (/^\/book-of-black\/index(?:\.html)?$/.test(path)) return new Response(null,{status:301,headers:{Location:"https://grokarchivehub.com/book-of-black"+url.search,"Cache-Control":"no-store"}});
       if (path === "/research/evidence/black-book-epstein") return new Response(null,{status:301,headers:{Location:"https://wiki.grokarchivehub.com/research/evidence/black-book-epstein","Cache-Control":"public, max-age=3600"}});
       if (path === "/sitemap-archive.xml") return new Response(null,{status:301,headers:{Location:"https://grokarchivehub.com/sitemap-efta.xml","Cache-Control":"public, max-age=3600"}});
       const identifier = url.pathname.match(/^\/archive\/efta(\d{1,8})(?:\.html)?\/?$/i);

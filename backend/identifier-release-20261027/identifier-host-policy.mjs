@@ -1,3 +1,4 @@
+import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { qualityHtml } from './reader-quality.mjs';
 import fs from 'node:fs';
 const ORIGIN='https://wiki.grokarchivehub.com';
@@ -22,9 +23,17 @@ export function identifierHostPolicy(req,res){
  if(path==='/methodology')return redirect(req,res,MAIN+'/methodology');
  if(path==='/barak'||path==='/dispatches/barak-archive')return redirect(req,res,MAIN+'/barak');
  if(path==='/receipts')return redirect(req,res,ORIGIN+'/archive');
+ const research=RESEARCH_ROUTES.find(r=>r.path===path);
+ if(research){
+  if(research.owner==='main')return redirect(req,res,MAIN+research.path+url.search);
+  if(path!=='/research/evidence/black-book-epstein'){
+   const html=fs.readFileSync('/app/'+research.file,'utf8');
+   return send(req,res,200,html,'text/html; charset=utf-8',research.indexable?'index,follow':'noindex,follow');
+  }
+ }
  if(path==='/robots.txt')return send(req,res,200,'User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /pdf-viewer\nDisallow: /pdf-viewer.html\nSitemap: '+ORIGIN+'/sitemap.xml\n','text/plain; charset=utf-8','index,follow');
  if(['/sitemap.xml','/sitemap-index.xml','/sitemap-global.xml','/sitemap-archive-1.xml'].includes(path)){
-  const paths=['/','/archive','/research-index',...manifest.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id)];
+  const paths=['/','/archive','/research-index',...manifest.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id),...RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable).map(r=>r.path)];
   const xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+paths.map(p=>'<url><loc>'+ORIGIN+p+'</loc><lastmod>'+manifest.updated+'</lastmod></url>').join('\n')+'\n</urlset>\n';
   return send(req,res,200,xml,'application/xml; charset=utf-8','index,follow');
  }
