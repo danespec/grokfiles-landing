@@ -1,3 +1,5 @@
+> Final public acceptance passed after the owner’s October 27 purge: 69 current main dossiers, 69 current canonical wiki cards, 69 EFTA sitemap entries and 72 canonical wiki sitemap entries. No stale cards or remaining source-content holds in this cohort. Repeated wildcard robots groups remain valid and functional crawl-policy checks pass. Earlier edge-cache observations below are historical.
+
 # Final source holds and robots validation — October 27, 2026
 
 The two remaining identifier locators now have bounded source reviews. The register contains 69 indexable dossiers and no unresolved content holds in this cohort. This does not certify all original audit findings, verify external social captions, or increase the corpus size.
@@ -16,7 +18,7 @@ References: https://www.rfc-editor.org/rfc/rfc9309.html#section-2.2.1 ; https://
 
 PR #220 merged as 552528990862b264432c5789ab756ae4c602b6ac; main is live in Pages ae16ff05. The wiki persistent image is gah-wiki-gateway:final-holds-20261027, sha256:59cd2899876f813b1a1fd43ba5316ee513a1ed5bdcaceba81314097261920f4c. Its previous production container is retained as grok_wiki_gateway_before_final_holds_20261027. Production compose references the new tag; temporary previews are stopped. Existing server, auth, security, rate-limit and identifier-policy files remain byte-identical.
 
-Public main acceptance passes for all 69 indexable dossiers and the 69-entry EFTA sitemap; main sitemap remains 192 and disjoint. All 69 wiki receipt cards and the 72-entry wiki sitemap pass at the origin and through fresh release-query access. **Canonical edge acceptance remains incomplete:** Cloudflare still serves the old noindex cards for EFTA00704168 and EFTA01245620, and a 70-entry cached wiki sitemap. The existing credential cannot purge the zone cache. The owner must purge the following five canonical URLs; after that, rerun public acceptance and confirm 69 current wiki cards and a 72-entry canonical wiki sitemap. The previous owner purge resolved the earlier source-hold release only; this final release requires a new purge.
+Public main acceptance passes for all 69 indexable dossiers and the 69-entry EFTA sitemap; main sitemap remains 192 and disjoint. All 69 wiki receipt cards and the 72-entry wiki sitemap pass at the origin and through fresh release-query access. **Historical observation before the final owner purge:** Cloudflare still serves the old noindex cards for EFTA00704168 and EFTA01245620, and a 70-entry cached wiki sitemap. The existing credential cannot purge the zone cache. The owner must purge the following five canonical URLs; after that, rerun public acceptance and confirm 69 current wiki cards and a 72-entry canonical wiki sitemap. The previous owner purge resolved the earlier source-hold release only; this final release requires a new purge.
 
 https://wiki.grokarchivehub.com/sitemap.xml
 https://wiki.grokarchivehub.com/

@@ -1,18 +1,15 @@
 {
   "mainDossiers": 69,
   "wikiReceiptCardsAtOrigin": 69,
-  "wikiReceiptCardsCanonicalCurrent": 67,
-  "staleWikiReceiptCards": [
-    "EFTA00704168",
-    "EFTA01245620"
-  ],
+  "wikiReceiptCardsCanonicalCurrent": 69,
+  "staleWikiReceiptCards": [],
   "indexableDossiers": 69,
   "sourceHoldsPreserved": 0,
   "mainSitemapUrls": 192,
   "eftaSitemapUrls": 69,
   "wikiSitemapOriginUrls": 72,
-  "wikiSitemapCanonicalCachedUrls": 70,
-  "wikiSitemapCacheStatus": "stale edge entry; credential cannot purge",
+  "wikiSitemapCanonicalCachedUrls": 72,
+  "wikiSitemapCacheStatus": "current",
   "sitemapOverlap": 0,
   "identifierAliasRedirects": "passed on both hosts",
   "wikiNavigation": "one-hop main aliases; reciprocal per-ID links passed",
