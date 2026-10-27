@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-27T19:03:32.693341+00:00",
+  "checks": [
+    {
+      "url": "https://wiki.grokarchivehub.com/archive",
+      "status": 200,
+      "title": "Receipt-card archive | Grok Archive Hub",
+      "metaRobots": "index,follow",
+      "robotsHeader": "index,follow",
+      "cache": "HIT",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/research-index",
+      "status": 200,
+      "title": "High-Value Research Index | Grok Archive Hub",
+      "metaRobots": "index,follow",
+      "robotsHeader": "index,follow",
+      "cache": "HIT",
+      "passed": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/not-a-real-gah-page",
+      "status": 404,
+      "title": "Page not found | Grok Archive Hub",
+      "metaRobots": "noindex,follow",
+      "robotsHeader": "noindex,follow",
+      "cache": "HIT",
+      "passed": true
+    }
+  ],
+  "cacheFailuresResolved": true,
+  "physicalRobotsConsolidation": "Unchanged; Bot Preference Sync retained to preserve training policy and edge enforcement. Matching robots groups are valid under RFC 9309."
+}
