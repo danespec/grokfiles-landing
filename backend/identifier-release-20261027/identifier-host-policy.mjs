@@ -27,7 +27,7 @@ export function identifierHostPolicy(req,res){
  }
  if(path==='/'||path==='/archive'){
   let html=fs.readFileSync('/app/wiki-home-identifiers.html','utf8');
-  if(path==='/archive')html=html.replace(/<h1>[^<]+<\/h1>/,'<h1>Receipt-card archive</h1>').replace('href="'+ORIGIN+'/"','href="'+ORIGIN+'/archive"').replace('<title>Receipt cards and research index','<title>Receipt-card archive');
+  if(path==='/archive')html=html.replace(/<h1>[^<]+<\/h1>/,'<h1>Receipt-card archive</h1>').replaceAll('href="'+ORIGIN+'/"','href="'+ORIGIN+'/archive"').replace('content="'+ORIGIN+'/"','content="'+ORIGIN+'/archive"').replace('<title>Receipt cards and research index','<title>Receipt-card archive').replace('content="Receipt cards and research index"','content="Receipt-card archive"');
   return send(req,res,200,html,'text/html; charset=utf-8','index,follow');
  }
  if(path==='/research-index'){

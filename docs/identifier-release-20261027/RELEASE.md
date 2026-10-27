@@ -6,7 +6,7 @@ Promoted EFTA identifiers can currently land on missing archive pages or generic
 
 Prepared on the exact current `main` baseline `2b0a4a43f39dd283d6a028afa945e44dcbd8d039`. No production deployment, wiki cutover, Cloudflare setting change, merge, social post or caption change has occurred.
 
-An initial private Pages preview was built successfully as `2917a29d`. It predates the final stylesheet, neighbour navigation and release checks. A new preview must be deployed from the reviewed final commit before rollout. Browser inspection was blocked by automatic approval review at `https://grokfiles.cloudflareaccess.com`; the gate was not bypassed. Owner authorization for that sign-in is required to finish visual review.
+An initial private Pages preview was built successfully as `2917a29d`. It predates the final stylesheet, neighbour navigation and release checks. A final-source preview was subsequently built successfully as `0429e25d`; it includes the common dossier stylesheet and nearby navigation. Browser inspection was blocked by automatic approval review at `https://grokfiles.cloudflareaccess.com`; the gate was not bypassed. Owner authorization for that sign-in is required to finish visual review.
 
 ## Scope and source gates
 

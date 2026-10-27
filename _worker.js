@@ -598,7 +598,6 @@ const GAH_UNVERIFIED_ARCHIVE_SOURCE_GAPS = new Set([
   "EFTA01245620", "EFTA00704168", "EFTA00153570", "EFTA00153571",
   "EFTA00035206",
   "EFTA00035715",
-  "EFTA00035828",
   "EFTA00579174",
   "EFTA00579182",
   "EFTA00643676",
@@ -1550,7 +1549,7 @@ function serveCuratedArchiveSitemap(request) {
       "Content-Type": "application/xml; charset=utf-8",
       "Cache-Control": "public, max-age=300",
       "X-Content-Type-Options": "nosniff",
-      "X-GAH-Archive-Sitemap": "thirty-five-reviewed-four-source-gaps-excluded"
+      "X-GAH-Archive-Sitemap": "reviewed-identifier-register"
     }
   });
 }
