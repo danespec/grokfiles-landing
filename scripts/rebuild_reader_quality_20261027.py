@@ -120,6 +120,7 @@ for p in repo.rglob('*.html'):
 cards={};out=repo/'assets/page-cards';out.mkdir(exist_ok=True);font=os.environ.get('GAH_CARD_FONT') or next((p for p in ['/System/Library/Fonts/Supplemental/Arial.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'] if Path(p).exists()),None);assert font,'Set GAH_CARD_FONT to a readable TrueType font'
 rows=[r for r in baseline if urlsplit(r['url']).hostname=='grokarchivehub.com' and r['url'] not in ['https://grokarchivehub.com/sitemap-archive.xml'] and r['status']==200 and not re.search(r'/archive/EFTA\d{8}$',r['url'])]
 rows += [r for r in baseline if r['url'] in ['https://wiki.grokarchivehub.com/','https://wiki.grokarchivehub.com/archive','https://wiki.grokarchivehub.com/research-index','https://wiki.grokarchivehub.com/research/evidence/black-book-epstein']]
+rows.append({'url':'https://grokarchivehub.com/search','title':'Search the evidence archive'})
 for r in rows:
  u=r['url'];title=clean_title(r['title']);name=hashlib.sha256(u.encode()).hexdigest()[:20]+'.png';im=Image.new('RGB',(1200,630),'#141914');d=ImageDraw.Draw(im);d.rectangle((0,0,18,630),fill='#d5b67b');d.text((65,48),'GROK ARCHIVE HUB',font=ImageFont.truetype(font,28),fill='#d5b67b')
  if u.endswith('/black-book-epstein'):title='Epstein contact-book source guide'
@@ -128,3 +129,7 @@ for r in rows:
 (repo/'content/reader-page-cards.mjs').write_text('export const PAGE_CARDS = '+json.dumps(cards,ensure_ascii=False,indent=2)+';\n')
 (root/'build-result.json').write_text(json.dumps({'dossiers':len(entries),'sectionOrder':section_order,'socialSourcePagesUpdated':social_count,'shareCards':len(cards)},indent=2)+'\n')
 print('Rebuilt archive and',len(entries),'dossiers;',social_count,'social source pages repaired;',len(cards),'page-specific cards.')
+
+# Normalize the legacy bodies after reconstructing source-specific content.
+import sys
+subprocess.run([sys.executable,str(repo/"scripts/normalize_legacy_dossiers_20261027.py")],check=True)

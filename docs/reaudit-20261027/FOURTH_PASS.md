@@ -1,0 +1,11 @@
+# Fourth review: actual layout normalization and wider copy cleanup
+
+The previous shell checks were insufficient: a matching outer main/footer did not establish that the embedded legacy layout was gone. This patch removes the legacy evidence-dossier stylesheet, hero/breadcrumb/status block, positional fact grids and duplicate claim matrix from all five affected dossiers. Exact source identifiers, page references and SHA-256 values move to normal definition lists in the source-verification section. The matrix's record-specific Claim, Source, Bias, Silence and Confidence prose remains in the corresponding support, source and limits sections. Original source renders remain and share responsive image bounds.
+
+A provenance fixture captures the five pre-change hashes; tests require each hash under source verification and reject the legacy CSS/classes. The normalization script is idempotent and runs after dossier reconstruction, so the original builder cannot silently reintroduce the layout.
+
+Reader copy is cleaned on the final-48-hours timeline, latest page, both transcript autopsies, the Blanche evidence brief and phone-record investigation. Publication history and technical source caveats remain, while build names and ad classifications are removed from prose. Two displayed canonical-route labels now match the actual main-host canonicals. Archive-scope gives an explicitly dated snapshot of 192 editorial pages plus 69 dossiers (261 main-site URLs), with the separate 72-page wiki scope. The Barak entity index gets an H2 above its cards, and the noindex search utility gets a specific share card.
+
+The reported wiki sitemap regression was not reproducible: the live canonical sitemap has exactly 72 URLs and no /topics entry. The current gateway constructs its map from home, archive, research-index and 69 receipts, with no topics URL. Public checks will verify the actual response again; no sitemap modification is claimed. Source-specific verification sections on some wiki cards remain deliberate editorial detail rather than being removed to force identical heading counts.
+
+Production acceptance is pending deployment and visual inspection. Cached wiki receipt/archive copy remains separate from source implementation. Physical robots consolidation remains the owner-approved policy-preserving formatting exception.

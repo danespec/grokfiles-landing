@@ -4,7 +4,7 @@ import worker from '../_worker.js';
 import {qualityHtml,readerQualityResponse,normalizeReaderTitle} from '../reader-quality.mjs';
 import {PAGE_CARDS} from '../content/reader-page-cards.mjs';
 const root=new URL('../',import.meta.url),reg=JSON.parse(await fs.readFile(new URL('content/identifier-dossiers.json',root),'utf8'));
-const env={ASSETS:{async fetch(req){const u=new URL(typeof req==='string'?req:req.url);try{return new Response(await fs.readFile(new URL('.'+u.pathname,root)),{headers:{'Content-Type':u.pathname.endsWith('.json')?'application/json':'text/html'}})}catch{return new Response('not found',{status:404})}}}};
+const env={ASSETS:{async fetch(req){const u=new URL(typeof req==='string'?req:req.url);for(const path of [u.pathname,u.pathname+'.html',u.pathname.replace(/\/$/,'')+'/index.html']){try{return new Response(await fs.readFile(new URL('.'+path,root)),{headers:{'Content-Type':path.endsWith('.json')?'application/json':'text/html'}})}catch{}}return new Response('not found',{status:404});}}};
 const order=['Receipt card','Document context','What the record supports','Source access and verification','Limits and open questions','Where this ID appears','Related published records'];
 const decode=s=>s.replace(/&amp;/g,'&').replace(/&#39;|&#x27;/g,"'").replace(/&quot;/g,'"');
 for(const e of reg.entries){
@@ -45,4 +45,14 @@ for(const path of ['/investigations/gratitude-america-money-trail-2015-2019','/g
  for(const id of path.includes('gratitude')?['EFTA00153570','EFTA00153571']:['EFTA00646811','EFTA01410768'])assert.match(page,new RegExp('href="(?:https://grokarchivehub.com)?/archive/'+id+'"'));
 }
 for(const name of ['card-pinboard.jpg','hero-desk.jpg'])assert.ok(!qualityHtml('<html><head><title>Topics</title><meta property="og:image" content="https://grokarchivehub.com/assets/'+name+'"></head><body><main></main></body></html>','https://grokarchivehub.com/topics',reg.entries).includes(name));
+const provenance=JSON.parse(await fs.readFile(new URL('tests/legacy-dossier-provenance-20261027.json',root),'utf8'));
+for(const [id,hashes] of Object.entries(provenance)){
+ const page=await fs.readFile(new URL('archive/'+id+'.html',root),'utf8');assert.doesNotMatch(page,/evidence-dossier\.css|class="[^"\n]*(?:hero|matrix|fact-grid|status-row)/);
+ for(const hash of hashes){const at=page.indexOf(hash,page.indexOf('id="source-access"'));assert.ok(at>0&&at<page.indexOf('id="evidence-boundaries"'),id+' source hash retained with verification');}
+}
+for(const path of ['/research/epstein-final-48-hours-mcc','/latest','/document-autopsies/doug-band-transcript','/document-autopsies/leon-black-transcript','/evidence-briefs/todd-blanche-no-evidence','/investigations/the-motherlode/phone-cdr']){
+ const response=await worker.fetch(new Request('https://grokarchivehub.com'+path),env);assert.equal(response.status,200,path);const page=await response.text();const body=(page.match(/<body\b[^>]*>([\s\S]*?)<\/body>/i)||[])[1]||'';
+ const text=body.replace(/<!--[\s\S]*?-->|<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>/gi,'').replace(/<[^>]+>/g,' ');
+ assert.doesNotMatch(text,/GAH-SEO-STORY|DOMINANCE-001|Build: GAH-|AD-EXCLUDE|noindex by route policy|GROK-037B3|094 closeout|Non-Competing/,path);
+}
 console.log('PASS full dossier section order, complete archive register, topic links, sitemap alias, safe ID linking, '+Object.keys(PAGE_CARDS).length+' share-card assets, branded 404 and API isolation');
