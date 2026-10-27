@@ -401,7 +401,7 @@ export const PAGE_CARDS = {
   },
   "https://grokarchivehub.com/research/epstein-final-48-hours-mcc": {
     "title": "Epstein Death Timeline: Jeffrey Epstein's Final 48 Hours at MCC",
-    "image": "https://grokarchivehub.com/assets/page-cards/01fdaf061c8452c910da.png"
+    "image": "https://grokarchivehub.com/assets/page-cards/fa296fc831fc0b694e48.png"
   },
   "https://grokarchivehub.com/research/evidence/birthday-book": {
     "title": "Birthday Book Evidence Reader",
@@ -780,11 +780,347 @@ export const PAGE_CARDS = {
     "image": "https://grokarchivehub.com/assets/page-cards/1b1592931f391b732f35.png"
   },
   "https://wiki.grokarchivehub.com/research/evidence/black-book-epstein": {
-    "title": "Epstein contact-book source guide",
-    "image": "https://grokarchivehub.com/assets/page-cards/1f4e5689a9344ee09f31.png"
+    "title": "black book Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/429cd66733c62a207e06.png"
   },
   "https://grokarchivehub.com/search": {
     "title": "Search the evidence archive",
     "image": "https://grokarchivehub.com/assets/page-cards/595d79f0ec9027d68a45.png"
+  },
+  "https://wiki.grokarchivehub.com/research/ehud-barak-epstein-documentary-record": {
+    "title": "Ehud Barak and Jeffrey Epstein: Emails, Meetings, and the Documentary Record",
+    "image": "https://grokarchivehub.com/assets/page-cards/1acd8fba7680727d119e.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence-types": {
+    "title": "Evidence Types Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/03a7eacc33e401fd57a0.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/aircraft-tail-number-epstein": {
+    "title": "aircraft tail number Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/8b7168aa4ec7ccefb54c.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/alias-passenger-epstein": {
+    "title": "alias passenger Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/cd7be94c15fb89f4f747.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/assistant-travel-schedule-epstein": {
+    "title": "assistant travel schedule Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/0c2c66390a3aec6206c0.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/bank-records-epstein": {
+    "title": "bank records Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/f92be52bdb57a9822289.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/calendar-epstein": {
+    "title": "calendar Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/7b2aebd23d9f51dc52d3.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/deposition-epstein": {
+    "title": "deposition Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/9ddae001a8fca38559ad.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/deutsche-bank-epstein": {
+    "title": "Deutsche Bank Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/892d46bf8ebfe3f253ec.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/doj-victim-services": {
+    "title": "DOJ Victim Services · Source guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/22314655cd17690b17aa.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/doj-victim-services-epstein": {
+    "title": "DOJ Victim Services Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/fd3306c203dd85787658.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/driver-transport-epstein": {
+    "title": "driver transport Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/9645d0e1f5fa912e8ef8.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/efta": {
+    "title": "EFTA",
+    "image": "https://grokarchivehub.com/assets/page-cards/c580892f339b7ffca0d3.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/ehud-barak": {
+    "title": "Ehud Barak",
+    "image": "https://grokarchivehub.com/assets/page-cards/343dce62f3ad3622bce6.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/fbi-epstein": {
+    "title": "FBI Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/20909700e63556dcbabe.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/flight-logs-epstein": {
+    "title": "flight logs Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/281da6b2ff59289d0c81.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/ghislaine-maxwell": {
+    "title": "Ghislaine Maxwell",
+    "image": "https://grokarchivehub.com/assets/page-cards/b5c0d9bedf0a48b34604.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/grand-jury-epstein": {
+    "title": "grand jury Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/c2b1277e9bbec987c923.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/great-saint-james": {
+    "title": "Great Saint James",
+    "image": "https://grokarchivehub.com/assets/page-cards/2350db4603f6eaf39598.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/invoice-epstein": {
+    "title": "invoice Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/7e9f234ddb2a90a2ab5b.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/jean-luc-brunel": {
+    "title": "Jean-Luc Brunel",
+    "image": "https://grokarchivehub.com/assets/page-cards/513b6b9590f721512087.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/jeffrey-epstein": {
+    "title": "Jeffrey Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/e75db986703eea98b9da.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/josh-lucas": {
+    "title": "Josh Lucas",
+    "image": "https://grokarchivehub.com/assets/page-cards/f4e488b17d4c621e4bf0.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/jpmorgan-epstein": {
+    "title": "JPMorgan Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/703b7a64110acf467823.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/leon-black-epstein": {
+    "title": "Leon Black Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/ef588217d353a5d441e8.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/lesley-groff": {
+    "title": "Lesley Groff",
+    "image": "https://grokarchivehub.com/assets/page-cards/d01a79f099032c427ec9.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/leslie-wexner": {
+    "title": "Leslie Wexner",
+    "image": "https://grokarchivehub.com/assets/page-cards/28725544d90796c717e0.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/little-saint-james": {
+    "title": "Little Saint James",
+    "image": "https://grokarchivehub.com/assets/page-cards/9e3686fb5bc849968bb6.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/manhattan-epstein": {
+    "title": "Manhattan Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/d85f58ea48b63e2fc384.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/maxwell-prosecution": {
+    "title": "Maxwell prosecution",
+    "image": "https://grokarchivehub.com/assets/page-cards/0d0a19fdc877ff9c0373.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/mc2-epstein": {
+    "title": "MC2 Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/64861c23dcb98fb3e060.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/metadata-epstein": {
+    "title": "metadata Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/08ce8bfb71cdc5aa3ec5.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/missing-names-phonebook-epstein": {
+    "title": "missing names phonebook Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/0816f14c5aaf2d3868e1.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/nadia-marcinkova": {
+    "title": "Nadia Marcinkova",
+    "image": "https://grokarchivehub.com/assets/page-cards/8b2b1f7edddc0d6011ff.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/new-albany-epstein": {
+    "title": "New Albany Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/3a137f3acbb9d0d752ec.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/non-prosecution-agreement-epstein": {
+    "title": "non-prosecution agreement Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/5d061a3032381c59a7ae.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/palm-beach-epstein": {
+    "title": "Palm Beach Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/bda803865d8cadd02d02.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/paris-epstein": {
+    "title": "Paris Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/8edefc21f28f6e75ac66.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/phone-message-epstein": {
+    "title": "phone message Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/4ba1a00975146a8ef8e6.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/phonebook-alias-epstein": {
+    "title": "phonebook alias Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/e84dd5da439c378aea0a.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/property-records-epstein": {
+    "title": "property records Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/8e9dc768dd4577197d18.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/redacted-epstein": {
+    "title": "redacted Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/4c56415b5f51b0572a2a.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/redacted-names-epstein": {
+    "title": "redacted names Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/be6cb026f6fca899fe00.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sarah-kellen": {
+    "title": "Sarah Kellen",
+    "image": "https://grokarchivehub.com/assets/page-cards/6ac8550b7ef8cfe856be.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sdny": {
+    "title": "SDNY · Source guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/c941383608eac7ca3d5c.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sdny-epstein": {
+    "title": "SDNY Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/2ae67b639ca35232f507.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sdny-epstein-maxwell-court-filings": {
+    "title": "SDNY Epstein Maxwell court filings",
+    "image": "https://grokarchivehub.com/assets/page-cards/1b203e0f8a748b312e80.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sealed-redacted-epstein": {
+    "title": "sealed redacted Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/a7c72c12cee38e8e05b0.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sharepoint-coordination": {
+    "title": "SharePoint Coordination · Source guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/2a01c380e696f6efc1eb.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sharepoint-coordination-epstein": {
+    "title": "SharePoint coordination Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/9544e6001dae7448f101.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/sharepoint-epstein-support": {
+    "title": "SharePoint Epstein support",
+    "image": "https://grokarchivehub.com/assets/page-cards/910e5ef755f93286f5bb.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/shell-company-epstein": {
+    "title": "shell company Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/26050da4981d23dbf6a8.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/suppression-redaction-epstein": {
+    "title": "suppression redaction Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/edc4d4110b1de4b2e64a.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/tel-aviv-epstein": {
+    "title": "Tel Aviv Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/79d106e6367c0f62c311.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/unredacted-flight-log-epstein": {
+    "title": "unredacted flight log Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/5fb377462ff7490b33ec.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/victim-notification": {
+    "title": "Victim Notifications · Source guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/08d7a9751fd8c35d3c5d.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/victim-notification-epstein": {
+    "title": "victim notification Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/ae3974d121a69652a7e5.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/victim-services-coordination-epstein": {
+    "title": "Victim Services coordination Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/47a833d38edfab32e7ee.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/vns-sdny-outreach-epstein": {
+    "title": "VNS SDNY outreach Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/850cbb38072d497fec5b.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/vns-victim-notification": {
+    "title": "VNS Outreach · Source guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/76bf8d0a128a6c3bc0c9.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/vns-victim-notification-epstein": {
+    "title": "VNS victim notification Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/2ec025067f9d14d157ca.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/wire-transfer-epstein": {
+    "title": "wire transfer Epstein",
+    "image": "https://grokarchivehub.com/assets/page-cards/412563ca53698126f0ff.png"
+  },
+  "https://wiki.grokarchivehub.com/research/evidence/zorro-ranch": {
+    "title": "Zorro Ranch",
+    "image": "https://grokarchivehub.com/assets/page-cards/d58c761d8d99f8acad80.png"
+  },
+  "https://wiki.grokarchivehub.com/research/financial-logistics": {
+    "title": "Financial / Logistics Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/1b97baef0ba618ffc1f4.png"
+  },
+  "https://wiki.grokarchivehub.com/research/legal-records": {
+    "title": "Legal / Court Records Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/31ff8c57da60fb160757.png"
+  },
+  "https://wiki.grokarchivehub.com/research/open-leads": {
+    "title": "Open Leads Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/6a230d25b43bd3d0e2d7.png"
+  },
+  "https://wiki.grokarchivehub.com/research/organizations": {
+    "title": "Organizations Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/a5f5cdf138f17daab8aa.png"
+  },
+  "https://wiki.grokarchivehub.com/research/people": {
+    "title": "People Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/e553d70c9845dcf18236.png"
+  },
+  "https://wiki.grokarchivehub.com/research/places": {
+    "title": "Places Research guide",
+    "image": "https://grokarchivehub.com/assets/page-cards/412f7cafd7fdfd42d4bd.png"
+  },
+  "https://wiki.grokarchivehub.com/research/trump-epstein-documented-timeline": {
+    "title": "Donald Trump and Jeffrey Epstein: A Documented Timeline",
+    "image": "https://grokarchivehub.com/assets/page-cards/9ffd4c1d2f9481a3220f.png"
+  },
+  "https://grokarchivehub.com/open-questions": {
+    "title": "Open Questions",
+    "image": "https://grokarchivehub.com/assets/page-cards/a875a1921b13bd04b3f7.png"
+  },
+  "https://grokarchivehub.com/timeline-reconstructions": {
+    "title": "Timeline Reconstructions",
+    "image": "https://grokarchivehub.com/assets/page-cards/7c64574b899f20ad9ff9.png"
+  },
+  "https://grokarchivehub.com/live": {
+    "title": "Site updates",
+    "image": "https://grokarchivehub.com/assets/page-cards/a0a03e505b694a976cc1.png"
+  },
+  "https://grokarchivehub.com/reading-room": {
+    "title": "The Reading Room",
+    "image": "https://grokarchivehub.com/assets/page-cards/6395186d67be0bb6bb50.png"
+  },
+  "https://grokarchivehub.com/explore": {
+    "title": "Explore the Archive",
+    "image": "https://grokarchivehub.com/assets/page-cards/da69f6ba752a803fdcb1.png"
+  },
+  "https://grokarchivehub.com/book-of-black/read": {
+    "title": "Read The Book of Black",
+    "image": "https://grokarchivehub.com/assets/page-cards/b2cb870eede96e6057aa.png"
+  },
+  "https://grokarchivehub.com/book-of-black/ledger": {
+    "title": "Book of Black Resolution Ledger",
+    "image": "https://grokarchivehub.com/assets/page-cards/fedb574d5d275bb48401.png"
+  },
+  "https://grokarchivehub.com/book-of-black/search": {
+    "title": "Search The Book of Black",
+    "image": "https://grokarchivehub.com/assets/page-cards/3ab8c8df1f9e6840f58e.png"
+  },
+  "https://grokarchivehub.com/investigations/trump-in-the-epstein-files": {
+    "title": "Donald Trump in the Epstein Files: Allegations, Timeline and Source Records",
+    "image": "https://grokarchivehub.com/assets/page-cards/071fa44aedcf44542469.png"
+  },
+  "https://grokarchivehub.com/reading-room/barak-claim-candidates": {
+    "title": "Barak Claim Candidates Queue",
+    "image": "https://grokarchivehub.com/assets/page-cards/74fa81c9da1f3aaa8322.png"
+  },
+  "https://grokarchivehub.com/reading-room/open-slots": {
+    "title": "Open Slot Tracker",
+    "image": "https://grokarchivehub.com/assets/page-cards/85cc0714712318a3937c.png"
+  },
+  "https://grokarchivehub.com/reading-room/redaction-review": {
+    "title": "Redaction Review Queue",
+    "image": "https://grokarchivehub.com/assets/page-cards/281c088296e4e0aa1d57.png"
+  },
+  "https://grokarchivehub.com/reading-room/visual-review": {
+    "title": "Visual Review Queue",
+    "image": "https://grokarchivehub.com/assets/page-cards/5e9001116d40df92a69d.png"
+  },
+  "https://grokarchivehub.com/reading-room/barak-first-dispatch-outline": {
+    "title": "Barak First Dispatch Outline",
+    "image": "https://grokarchivehub.com/assets/page-cards/6996ca2c6af72bd22b7e.png"
   }
 };

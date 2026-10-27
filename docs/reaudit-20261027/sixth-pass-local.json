@@ -1,0 +1,22 @@
+{
+  "sourceCopyPagesScanned": 373,
+  "unexpectedJargon": [],
+  "researchRouteContractTests": 78,
+  "existingDossiers": 69,
+  "shareCards": 281,
+  "mainSitemap": 196,
+  "wikiSitemap": 74,
+  "internalIdentifierLinks": 902,
+  "wikiPreview": {
+    "receiptCards": 69,
+    "wikiHubSchemas": 3,
+    "blackBookIds": 83,
+    "blackBookOfficialLinks": 80,
+    "blackBookUnconfirmedIds": 3,
+    "blackBookNoindexConsistent": true,
+    "generic404sBranded": 2,
+    "sitemapUrls": 74,
+    "protectedApi": 401,
+    "publicResolver": 200
+  }
+}

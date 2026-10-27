@@ -1,3 +1,4 @@
+import { RESEARCH_ROUTES } from '../content/research-route-policy.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import worker from '../_worker.js';
@@ -56,3 +57,15 @@ for(const path of ['/research/epstein-final-48-hours-mcc','/latest','/document-a
  assert.doesNotMatch(text,/GAH-SEO-STORY|DOMINANCE-001|Build: GAH-|AD-EXCLUDE|noindex by route policy|GROK-037B3|094 closeout|Non-Competing/,path);
 }
 console.log('PASS full dossier section order, complete archive register, topic links, sitemap alias, safe ID linking, '+Object.keys(PAGE_CARDS).length+' share-card assets, branded 404 and API isolation');
+
+for(const route of RESEARCH_ROUTES.filter(r=>r.owner==='wiki')){
+ for(const method of ['GET','HEAD']){
+  const r=await worker.fetch(new Request('https://grokarchivehub.com'+route.path+'?source=nav',{method}),env);
+  assert.equal(r.status,301,route.path+' '+method);assert.equal(r.headers.get('Location'),'https://wiki.grokarchivehub.com'+route.path+'?source=nav');
+ }
+}
+for(const path of ['/book-of-black/index','/book-of-black/index.html']){const r=await worker.fetch(new Request('https://grokarchivehub.com'+path),env);assert.equal(r.status,301);assert.equal(r.headers.get('Location'),'https://grokarchivehub.com/book-of-black');}
+const mainMap=await(await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env)).text();
+for(const path of ['/archive/ids','/dispatches/doe-v-black-october-2026-dismissal','/dispatches/phang-ecf59-oct16-2026','/news/epstein-wall-street-records-act-2026','/news/state-attorneys-general-efta-ii-2026'])assert.ok(mainMap.includes('<loc>https://grokarchivehub.com'+path+'</loc>'),path+' sitemap coverage');
+assert.equal((mainMap.match(/<loc>/g)||[]).length,196,'Editorial sitemap inventory');
+console.log('PASS research aliases preserve one owning host; book landing alias and 196-page main sitemap coverage');

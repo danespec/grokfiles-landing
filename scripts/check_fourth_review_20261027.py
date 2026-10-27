@@ -19,7 +19,7 @@ for row in rows:
  visible=(soup.body or soup).get_text(' ',strip=True)
  if u.hostname=='grokarchivehub.com' and pattern.search(visible):copy_findings.append(row['url']);bad('Public build/ad code remains')
  if u.path in ['/research/evidence/epstein-death','/research/evidence/mcc-epstein-control-spine'] and 'Canonical route:' in visible and 'wiki.grokarchivehub.com'+u.path in visible:bad('Displayed canonical host contradicts canonical')
- if u.path=='/archive-scope' and not all(x in visible for x in ['192','69','261','72']):bad('Archive scope snapshot does not match sitemap scopes')
+ if u.path=='/archive-scope' and not all(x in visible for x in ['196','69','265','74']):bad('Archive scope snapshot does not match sitemap scopes')
  if u.path=='/barak/entities':
   headings=[h.name for h in soup.find_all(re.compile('^h[1-6]$'))]
   if headings[:3]!=['h1','h2','h3']:bad('Entity index heading hierarchy')
@@ -31,6 +31,7 @@ for row in rows:
   if identifier=='EFTA02858491' and 'indexable source page' in visible:cached.append(row['url']);bad('Old cached wiki wording')
   if u.path=='/archive' and any(t in visible for t in ['page 15 / footer EFTA00035161','CH0080 file windows are not video continuity','/661 - late-July psych-observation source line']):cached.append(row['url']);bad('Old cached archive labels')
 p=subprocess.run(['curl','-fsS','--max-time','30','https://wiki.grokarchivehub.com/sitemap.xml'],capture_output=True,text=True);urls=[x.text for x in ET.fromstring(p.stdout).iter() if x.tag.endswith('}loc')];reg=json.loads((repo/'content/identifier-dossiers.json').read_text());expected={'https://wiki.grokarchivehub.com'+p for p in ['/','/archive','/research-index',*['/receipts/'+e['id'] for e in reg['entries'] if e['indexable']]]}
+research=json.loads((repo/'content/research-route-policy.mjs').read_text().removeprefix('export const RESEARCH_ROUTES = ').strip().removesuffix(';'));expected.update('https://wiki.grokarchivehub.com'+r['path'] for r in research if r['owner']=='wiki' and r['indexable'])
 if set(urls)!=expected:fail.append({'url':'https://wiki.grokarchivehub.com/sitemap.xml','issue':'Sitemap differs from self-canonical registry routes','unexpected':sorted(set(urls)-expected),'missing':sorted(expected-set(urls))})
 p=subprocess.run(['curl','-sS','--max-time','30','-D','-','https://grokarchivehub.com/search'],capture_output=True,text=True);headers,_,html=p.stdout.partition('\n\n');search=BeautifulSoup(html,'html.parser');og=search.find('meta',attrs={'property':'og:image'});search_ok=bool(og and '/assets/page-cards/' in og.get('content',''))
 if not search_ok:fail.append({'url':'https://grokarchivehub.com/search','issue':'Search utility lacks page-specific social card'})
