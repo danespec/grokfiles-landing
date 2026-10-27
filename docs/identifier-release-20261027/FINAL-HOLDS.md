@@ -1,0 +1,13 @@
+# Final source holds and robots validation — October 27, 2026
+
+The two remaining identifier locators now have bounded source reviews. The register contains 69 indexable dossiers and no unresolved content holds in this cohort. This does not certify all original audit findings, verify external social captions, or increase the corpus size.
+
+EFTA00704168 is a three-page email chain captured from the Roll Call mirror. SHA-256 1bd46551b890e412968f20a6f7f4289174cf84def36a01d4c969ffe1e0ed89c5 matches the existing Gratitude America source manifest. The first rendered page and full extracted chain were checked. The summary distinguishes stated unrealized appreciation from a realized profit or withdrawal. EFTA01245620 is a nine-page FD-302 report captured from the GetKino mirror, SHA-256 2cfb18e22aa4920de1b8d65e950d2872f4f1aeea59fc071aef950ad1cec3bcc4. Rendered headers and footers confirm serial 216, file 31E-NY-3027571, the July 24, 2019 interview date and EFTA01245620–EFTA01245628. Its public summary is limited to source identity and reading limits; protected-source identities, personal information and interview narratives are not reproduced. No fresh byte comparison with DOJ is claimed for either mirror. These copies are linked as secondary access copies, not imported into the source corpus or presented as new independently authenticated originals.
+
+## Corrected robots assessment
+
+The earlier description of repeated wildcard groups as an unresolved crawling defect was too strong. RFC 9309 section 2.2.1 requires matching groups to be combined, and Google's robots specification confirms the same behavior. Cloudflare intentionally prepends its managed group to an existing origin file. Repeated wildcard groups alone are valid and do not require disabling Bot Preference Sync.
+
+The live merged policy was parsed with Protego 0.7.0 on both hosts. For each host, all 71 tested public paths (home, archive and 69 identifier routes) are allowed to Googlebot, bingbot and an unknown crawler. The API/viewer exclusions remain effective. Every explicitly listed training/other bot is blocked at the robots layer, and the ai-train=no signal is present. This tests crawler directives, not enforcement of Cloudflare WAF rules. No Cloudflare security, crawler or training setting was changed. See robots-policy-verification.json. The two textual wildcard groups remain intentionally present; the functional policy check passes.
+
+References: https://www.rfc-editor.org/rfc/rfc9309.html#section-2.2.1 ; https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec ; https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/

@@ -1,0 +1,37 @@
+{
+  "reviewed": "2026-10-27",
+  "cleared": [
+    {
+      "title": "March 2016 EDIT correspondence and unrealized gains",
+      "parent": "EFTA00704168",
+      "page": 1,
+      "dataset": 9,
+      "mirror": "https://media-cdn.rollcall.com/epstein-files/EFTA00704168.pdf",
+      "summary": "A three-page March 2016 email chain reports EDIT share prices and describes an unrealized gain. Its printed identifiers run from EFTA00704168 through EFTA00704170.",
+      "detail": "The March 8 message from Richard Kahn reports 3,200 shares, a cost basis of 31.862 and a stated unrealized gain of 32,000. The forwarded chain also contains earlier trade-report and funding messages. These figures are statements in correspondence, not independent account balances.",
+      "limits": "An unrealized gain is a paper valuation at the reported time, not a verified sale, realized profit or withdrawal. The email does not provide complete brokerage statements or establish wrongdoing.",
+      "id": "EFTA00704168",
+      "sha256": "1bd46551b890e412968f20a6f7f4289174cf84def36a01d4c969ffe1e0ed89c5",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00704168.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Third-party mirror captured October 27, 2026; printed identifiers and document metadata checked on rendered pages. No fresh byte comparison against DOJ is claimed."
+    },
+    {
+      "title": "Nine-page FD-302 report: source identity and limits",
+      "parent": "EFTA01245620",
+      "page": 1,
+      "dataset": 9,
+      "mirror": "https://assets.getkino.com/documents/EFTA01245620.pdf",
+      "summary": "The reviewed access copy is a nine-page FBI FD-302 interview report, serial 216 in file 31E-NY-3027571. Its printed EFTA identifiers run from EFTA01245620 through EFTA01245628.",
+      "detail": "The continuation headers identify an interview dated July 24, 2019. This source note verifies the report type, page count, serial and printed identifiers. Interview narratives, protected-source identities and personal information are not reproduced here. The handwritten interview notes discussed in the linked court record are separate source materials and are not supplied by this PDF.",
+      "limits": "An FD-302 summarizes an interview; it is not a verbatim transcript, a set of underlying handwritten notes or an adjudicated finding. This metadata review does not independently corroborate interview statements or establish compliance with later production orders.",
+      "id": "EFTA01245620",
+      "sha256": "2cfb18e22aa4920de1b8d65e950d2872f4f1aeea59fc071aef950ad1cec3bcc4",
+      "source": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01245620.pdf",
+      "reviewed": "2026-10-27",
+      "provenance": "Third-party mirror captured October 27, 2026; printed identifiers and document metadata checked on rendered pages. No fresh byte comparison against DOJ is claimed."
+    }
+  ],
+  "remainingHolds": [],
+  "robots": "Repeated wildcard groups are valid under RFC 9309; functional policy checks passed on both hosts. No policy weakened."
+}

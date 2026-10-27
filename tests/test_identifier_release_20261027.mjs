@@ -34,5 +34,5 @@ for (const [id,page] of [['EFTA00153570',2],['EFTA00153571',3]]) {
  const e=registry.entries.find(e=>e.id===id);assert.equal(e.sourceDocument,'EFTA00153569');assert.equal(e.sourcePage,page);assert.ok(e.source.endsWith('/EFTA00153569.pdf#page='+page));
  const h=await(await worker.fetch(new Request('https://grokarchivehub.com/archive/'+id),env)).text();assert.ok(h.includes(e.sourceSha256));assert.ok(h.includes('select page '+page));assert.doesNotMatch(h,new RegExp('/'+id+'\\.pdf'));
 }
-for(const id of ['EFTA00704168','EFTA01245620'])assert.equal(registry.entries.find(e=>e.id===id).indexable,false);
-console.log('PASS interior Bates parent/page identities and remaining source holds');
+for(const id of ['EFTA00704168','EFTA01245620']) {const e=registry.entries.find(e=>e.id===id);assert.equal(e.indexable,true);assert.equal(e.sourceCopyType,'third-party-mirror');assert.ok(e.mirrorSource.startsWith('https://'));assert.match(e.sourceSha256,/^[a-f0-9]{64}$/);const h=await(await worker.fetch(new Request('https://grokarchivehub.com/archive/'+id),env)).text();assert.ok(h.includes(e.mirrorSource));assert.ok(h.includes(e.sourceSha256));assert.match(h,/No fresh byte match against DOJ is claimed/);assert.doesNotMatch(h,/original source copy is not yet verified|source remains unresolved in GAH/);}
+console.log('PASS interior Bates parent/page identities and reviewed mirror identities');

@@ -1,0 +1,107 @@
+{
+  "checked": "2026-10-27",
+  "parser": "Protego 0.7.0",
+  "finding": "Repeated wildcard groups are valid; matching group rules combine. Functional crawl-policy checks pass. No Cloudflare policy change required.",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9309.html#section-2.2.1",
+    "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+  ],
+  "hosts": [
+    {
+      "host": "grokarchivehub.com",
+      "wildcardGroups": 2,
+      "publicPathsPerCrawler": 71,
+      "searchCrawlersAllowed": [
+        "Googlebot",
+        "bingbot"
+      ],
+      "trainingAndOtherListedBotsBlocked": [
+        "Amazonbot",
+        "Applebot-Extended",
+        "AwarioRssBot",
+        "AwarioSmartBot",
+        "Baiduspider",
+        "BorderxBot",
+        "Bytespider",
+        "CCBot",
+        "CitibotSiteCrawler",
+        "Claude-Web",
+        "ClaudeBot",
+        "Cotoyogi",
+        "Diffbot",
+        "FishBot",
+        "GPTBot",
+        "Google-CloudVertexBot",
+        "Google-Extended",
+        "GoogleOther",
+        "ICC-Crawler",
+        "KimiBot",
+        "MistralAI-Training",
+        "NavuBot",
+        "PetalBot",
+        "QualifiedBot",
+        "SemrushBot-SWA",
+        "WARDBot",
+        "anthropic-ai",
+        "atlassian-bot",
+        "cohere-ai",
+        "magpie-crawler",
+        "meta-externalagent",
+        "omgili"
+      ],
+      "viewerAndApiPathsDisallowed": true,
+      "aiTrainNoSignal": true,
+      "sitemaps": [
+        "https://grokarchivehub.com/sitemap-index.xml"
+      ]
+    },
+    {
+      "host": "wiki.grokarchivehub.com",
+      "wildcardGroups": 2,
+      "publicPathsPerCrawler": 71,
+      "searchCrawlersAllowed": [
+        "Googlebot",
+        "bingbot"
+      ],
+      "trainingAndOtherListedBotsBlocked": [
+        "Amazonbot",
+        "Applebot-Extended",
+        "AwarioRssBot",
+        "AwarioSmartBot",
+        "Baiduspider",
+        "BorderxBot",
+        "Bytespider",
+        "CCBot",
+        "CitibotSiteCrawler",
+        "Claude-Web",
+        "ClaudeBot",
+        "Cotoyogi",
+        "Diffbot",
+        "FishBot",
+        "GPTBot",
+        "Google-CloudVertexBot",
+        "Google-Extended",
+        "GoogleOther",
+        "ICC-Crawler",
+        "KimiBot",
+        "MistralAI-Training",
+        "NavuBot",
+        "PetalBot",
+        "QualifiedBot",
+        "SemrushBot-SWA",
+        "WARDBot",
+        "anthropic-ai",
+        "atlassian-bot",
+        "cohere-ai",
+        "magpie-crawler",
+        "meta-externalagent",
+        "omgili"
+      ],
+      "viewerAndApiPathsDisallowed": true,
+      "aiTrainNoSignal": true,
+      "sitemaps": [
+        "https://wiki.grokarchivehub.com/sitemap.xml"
+      ]
+    }
+  ]
+}
