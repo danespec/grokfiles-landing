@@ -1122,5 +1122,21 @@ export const PAGE_CARDS = {
   "https://grokarchivehub.com/reading-room/barak-first-dispatch-outline": {
     "title": "Barak First Dispatch Outline",
     "image": "https://grokarchivehub.com/assets/page-cards/6996ca2c6af72bd22b7e.png"
+  },
+  "https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal": {
+    "title": "Doe v. Black: Dismissal With Prejudice, Earlier Sanctions, and No Trial Verdict",
+    "image": "https://grokarchivehub.com/assets/page-cards/e7306fd7ab70d19cdcb6.png"
+  },
+  "https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026": {
+    "title": "Phang ECF 59: DOJ Reports Timely Delivery of Redacted FBI Notes",
+    "image": "https://grokarchivehub.com/assets/page-cards/f739608636d08cae0af5.png"
+  },
+  "https://grokarchivehub.com/news/epstein-wall-street-records-act-2026": {
+    "title": "Epstein Wall Street Records Act: What H.R. 10820 Would Require",
+    "image": "https://grokarchivehub.com/assets/page-cards/d46d915c3f132dec3201.png"
+  },
+  "https://grokarchivehub.com/news/state-attorneys-general-efta-ii-2026": {
+    "title": "17 State Attorneys General Back Epstein Files Transparency Act II",
+    "image": "https://grokarchivehub.com/assets/page-cards/fd586a5b48fe9c7259ab.png"
   }
 };
