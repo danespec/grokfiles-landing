@@ -1,3 +1,7 @@
+## Latest acceptance — fifth review, October 27, 2026
+
+PR #234 is deployed as Pages 97c050af. All remaining build/indexing-copy findings from the independent spot-check are corrected across 18 pages and the /latest event source. A fresh canonical crawl captured 338 routes and passed 334 HTML checks. The expanded scan covers all 261 main sitemap pages with zero unexpected operational-copy matches; 261 share images and 138 identifier targets pass. Prior layout checks and wiki cache checks pass. The accepted robots formatting exception remains unchanged. See FIFTH_PASS.md and fifth-pass-acceptance.json. Earlier dated entries below are historical and their cache failures are superseded by the later acceptance records.
+
 ## Cache rule closure — October 27, 2026, 20:36 UTC
 
 Owner saved the corrected final wiki bypass condition. All five formerly stale canonical URLs now return current content with DYNAMIC cache status. All 72 canonical wiki sitemap pages pass; all 69 receipt descriptions match the register. See CACHE_DIAGNOSIS.md and cache-rule-acceptance.json. No further purge was needed.
