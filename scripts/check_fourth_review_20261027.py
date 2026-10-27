@@ -26,7 +26,8 @@ for row in rows:
  if u.hostname=='wiki.grokarchivehub.com':
   if identifier in ['EFTA00035147','EFTA00039416','EFTA00039660']:
    reg=json.loads((repo/'content/identifier-dossiers.json').read_text());entry=next(e for e in reg['entries'] if e['id']==identifier)
-   if entry['title'] not in row['title']:cached.append(row['url']);bad('Old cached abbreviated wiki title')
+   description=soup.find('meta',attrs={'name':'description'})
+   if not description or description.get('content')!=entry['description']:cached.append(row['url']);bad('Old receipt description metadata')
   if identifier=='EFTA02858491' and 'indexable source page' in visible:cached.append(row['url']);bad('Old cached wiki wording')
   if u.path=='/archive' and any(t in visible for t in ['page 15 / footer EFTA00035161','CH0080 file windows are not video continuity','/661 - late-July psych-observation source line']):cached.append(row['url']);bad('Old cached archive labels')
 p=subprocess.run(['curl','-fsS','--max-time','30','https://wiki.grokarchivehub.com/sitemap.xml'],capture_output=True,text=True);urls=[x.text for x in ET.fromstring(p.stdout).iter() if x.tag.endswith('}loc')];reg=json.loads((repo/'content/identifier-dossiers.json').read_text());expected={'https://wiki.grokarchivehub.com'+p for p in ['/','/archive','/research-index',*['/receipts/'+e['id'] for e in reg['entries'] if e['indexable']]]}
