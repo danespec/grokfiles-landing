@@ -691,8 +691,6 @@ export const EVIDENCE_ASSETS = {
   "/evidence-data/new-mexico-doj/source/html/nmd-2026-03-09-zorro-search": "/evidence-data/new-mexico-doj/source/html/nmd-2026-03-09-zorro-search",
   "/evidence-data/new-mexico-doj/source/html/doj-2026-01-30-release.html": "/evidence-data/new-mexico-doj/source/html/doj-2026-01-30-release.html",
   "/evidence-data/new-mexico-doj/source/html/doj-2026-01-30-release": "/evidence-data/new-mexico-doj/source/html/doj-2026-01-30-release",
-  "/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b.html": "/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b.html",
-  "/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b": "/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b",
   "/evidence-data/new-mexico-doj/source/html/nmd-2026-07-15-efta-ii-release.html": "/evidence-data/new-mexico-doj/source/html/nmd-2026-07-15-efta-ii-release.html",
   "/evidence-data/new-mexico-doj/source/html/nmd-2026-07-15-efta-ii-release": "/evidence-data/new-mexico-doj/source/html/nmd-2026-07-15-efta-ii-release",
   "/evidence-data/new-mexico-doj/source/html/nmd-2026-06-09-world-without-exploitation.html": "/evidence-data/new-mexico-doj/source/html/nmd-2026-06-09-world-without-exploitation.html",
@@ -723,13 +721,14 @@ export const EVIDENCE_ASSETS = {
   "/evidence-data/new-mexico-doj/source/html/sen-hirono-2026-07-15-blanche": "/evidence-data/new-mexico-doj/source/html/sen-hirono-2026-07-15-blanche",
   "/evidence-data/new-mexico-doj/source/html/nmd-zorro-tip-page.html": "/evidence-data/new-mexico-doj/source/html/nmd-zorro-tip-page.html",
   "/evidence-data/new-mexico-doj/source/html/nmd-zorro-tip-page": "/evidence-data/new-mexico-doj/source/html/nmd-zorro-tip-page",
-  "/evidence-data/new-mexico-doj/source/html/doj-epstein-library.html": "/evidence-data/new-mexico-doj/source/html/doj-epstein-library.html",
-  "/evidence-data/new-mexico-doj/source/html/doj-epstein-library": "/evidence-data/new-mexico-doj/source/html/doj-epstein-library",
   "/evidence-data/new-mexico-doj/source/html/uscode-cvra-3771.html": "/evidence-data/new-mexico-doj/source/html/uscode-cvra-3771.html",
   "/evidence-data/new-mexico-doj/source/html/uscode-cvra-3771": "/evidence-data/new-mexico-doj/source/html/uscode-cvra-3771",
   "/evidence-data/new-mexico-doj/source/html/uscode-rule-6.html": "/evidence-data/new-mexico-doj/source/html/uscode-rule-6.html",
   "/evidence-data/new-mexico-doj/source/html/uscode-rule-6": "/evidence-data/new-mexico-doj/source/html/uscode-rule-6",
   "/evidence-data/book-of-black/source/Book_of_Black_V6HHT.pdf": "/evidence-data/book-of-black/source/Book_of_Black_V6HHT.pdf",
   "/evidence-data/book-of-black/ocr/Book_of_Black_pages.jsonl": "/evidence-data/book-of-black/ocr/Book_of_Black_pages.jsonl",
-  "/research/epstein-final-48-hours-mcc-source-ledger.tsv": "/research/epstein-final-48-hours-mcc-source-ledger.tsv"
+  "/research/epstein-final-48-hours-mcc-source-ledger.tsv": "/research/epstein-final-48-hours-mcc-source-ledger.tsv",
+  "/evidence-data/birthday-book/recovered_pages/page_118.png": "/evidence-data/birthday-book/recovered_pages/page_118.png",
+  "/evidence-data/birthday-book/recovered_pages/page_119.png": "/evidence-data/birthday-book/recovered_pages/page_119.png",
+  "/evidence-data/doug-band/source/images/angel-urena-clinton-epstein-statement-image-2019-07-08.jpg": "/evidence-data/doug-band/source/images/angel-urena-clinton-epstein-statement-image-2019-07-08.jpg"
 };

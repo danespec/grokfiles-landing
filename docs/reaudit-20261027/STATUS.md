@@ -1,3 +1,7 @@
+# October 28 asset and metadata acceptance
+
+The supplied handoff is addressed by PRs #245 and #246. See [TENTH_PASS.md](TENTH_PASS.md) for per-URL response evidence, counts, regression checks and limits. Previous entries below are historical.
+
 ## Current release — source PDFs and complete editorial metadata
 
 PR #243 is deployed as main Pages 532a38d9, with the matching immutable wiki release. All handoff acceptance checks pass: 49 linked PDFs return correct bytes and application/pdf on GET and HEAD; two fake PDF paths return 404; 829 internal destinations have no redirect debt; 336 indexable pages have complete metadata without ellipses; all 78 research contracts pass. Thirty-seven unavailable PDF links are removed with citation labels retained. Book of Black acknowledgement protection and reader controls remain intact. See NINTH_PASS.md and ninth-pass-acceptance.json for URLs, hub counts and limitations. Earlier entries are historical.

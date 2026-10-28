@@ -126,22 +126,10 @@
     "bytes": 90490
   },
   {
-    "path": "/evidence-data/new-mexico-doj/source/html/doj-epstein-library",
-    "file": "evidence-data/new-mexico-doj/source/html/doj-epstein-library.html",
-    "sha256": "a11f316c4df97db9abfa54126ea31386aaf86f6adc07d40d3931f046995a7b7d",
-    "bytes": 2207
-  },
-  {
     "path": "/evidence-data/new-mexico-doj/source/html/doj-oip-efta-foia-library",
     "file": "evidence-data/new-mexico-doj/source/html/doj-oip-efta-foia-library.html",
     "sha256": "84661b29a843304182a830ae4281bbb7ff489096f1d89796ca7a2de9eaca0e8d",
     "bytes": 429363
-  },
-  {
-    "path": "/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b",
-    "file": "evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b.html",
-    "sha256": "604777dd8d69be85cf809295f57eb82f235a659ada6f5f2c9780b35016a3d28a",
-    "bytes": 10596
   },
   {
     "path": "/evidence-data/new-mexico-doj/source/html/nmd-2026-02-19-zorro-reopen",
@@ -304,5 +292,23 @@
     "file": "evidence-data/doj-oip-epstein-review-2026-10-09/source-manifest.json",
     "sha256": "7bc07b5e9e6dac31244c6c251272d84aeaf3867fd28f2321778c46ff15c774b3",
     "bytes": 1656
+  },
+  {
+    "path": "/evidence-data/birthday-book/recovered_pages/page_118.png",
+    "file": "evidence-data/birthday-book/recovered_pages/page_118.png",
+    "sha256": "4992e27b50a3196e1bab0045d2f564e5084717ee34702498e261dc9f077eccaf",
+    "bytes": 130241
+  },
+  {
+    "path": "/evidence-data/birthday-book/recovered_pages/page_119.png",
+    "file": "evidence-data/birthday-book/recovered_pages/page_119.png",
+    "sha256": "08eb60ed099003014b65e55344d2cf12b07e16d21b1d0219dd7bf3799a88f285",
+    "bytes": 90927
+  },
+  {
+    "path": "/evidence-data/doug-band/source/images/angel-urena-clinton-epstein-statement-image-2019-07-08.jpg",
+    "file": "evidence-data/doug-band/source/images/angel-urena-clinton-epstein-statement-image-2019-07-08.jpg",
+    "sha256": "6fbef3cc7719a9504eac94a49befd9566240d18cb6ee194eba8c591b02f76c76",
+    "bytes": 227677
   }
 ]

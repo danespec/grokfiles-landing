@@ -1,5 +1,5 @@
 from pathlib import Path
-from urllib.parse import urlsplit,urlunsplit,urljoin,unquote
+from urllib.parse import urlsplit,urlunsplit,urljoin,unquote,parse_qs,urlencode
 from datetime import datetime,timezone
 from concurrent.futures import ThreadPoolExecutor
 from collections import Counter
@@ -20,6 +20,10 @@ def normal(href,base='https://grokarchivehub.com/'):
  if re.search(r'\.[a-zA-Z0-9]{1,8}$',path) and not path.endswith('.html'):skipped['non_html_file']+=1;return None
  m=re.match(r'^/(?:archive|receipts)/(EFTA\d{8})/?$',path)
  if m and m[1] not in ids:skipped['unreviewed_corpus_record']+=1;return None
+ if path in ['/pdf-lite','/pdf-lite.html']:
+  doc=parse_qs(u.query).get('id',[''])[0]
+  if not doc:skipped['viewer_requires_identifier']+=1;return None
+  return urlunsplit(('https',u.hostname,path,urlencode({'id':doc}),''))
  return urlunsplit(('https',u.hostname,path,'',''))
 seeds=set();sitemap_urls=set()
 for site in ['https://grokarchivehub.com/sitemap.xml','https://grokarchivehub.com/sitemap-efta.xml','https://wiki.grokarchivehub.com/sitemap.xml']:
