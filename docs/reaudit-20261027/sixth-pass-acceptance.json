@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-28T00:15:51.272479+00:00",
+  "mainDeployment": "a44c3d1e",
+  "mainMerge": "0c714562d84f7a8e9c0979404f032489e71b4667",
+  "sourcePRs": [
+    236,
+    237
+  ],
+  "wikiImage": "sha256:e42dff29b7936591fe400db5042b9feecafa3cb3524a1b0113d43edf96d35826",
+  "wikiTag": "gah-wiki-gateway:linked-research-final-20261027",
+  "wikiRollback": "grok_wiki_gateway_before_linked_research_final_20261027",
+  "wikiRuntimeProof": {
+    "receiptCards": 69,
+    "wikiHubSchemas": 3,
+    "blackBookIds": 83,
+    "blackBookOfficialLinks": 80,
+    "blackBookUnconfirmedIds": 3,
+    "blackBookNoindexConsistent": true,
+    "generic404sBranded": 2,
+    "sitemapUrls": 74,
+    "protectedApi": 401,
+    "publicResolver": 200
+  },
+  "guardsUnchanged": true,
+  "htmlAcceptance": {
+    "checkedPages": 340,
+    "dossierSectionVariants": 1,
+    "publishedReelPagesChecked": 24,
+    "sharedHeroImages": 0,
+    "failures": []
+  },
+  "linkedGraph": {
+    "checkedAt": "2026-10-28T00:15:13.935841+00:00",
+    "sitemapRoutes": 339,
+    "indexableRoutesMissingFromSitemaps": [],
+    "unexpectedHttpFailures": [],
+    "seedRoutes": 531,
+    "checkedRoutes": 955,
+    "html200": 866,
+    "jargonPages": [],
+    "responseCounts": {
+      "200": 866,
+      "301": 84,
+      "302": 5
+    },
+    "skipped": {
+      "action_endpoint": 1,
+      "non_html_file": 5,
+      "asset_api_or_protected_prefix": 1171,
+      "unreviewed_corpus_record": 51
+    },
+    "scope": "Main and wiki HTML linked graph plus deployed HTML and the complete research-route registry; APIs, authentication/unsubscribe actions, assets, protected staging, non-HTML files and unreviewed corpus-record URLs excluded."
+  },
+  "researchPolicyAcceptance": {
+    "researchRoutesChecked": 78,
+    "wikiResearchIndexCache": "DYNAMIC",
+    "failures": []
+  },
+  "shareImagesChecked": 267,
+  "identifierTargetsChecked": 138,
+  "redirectProbesPassed": 15,
+  "originIndex": {
+    "currentAtOrigin": true,
+    "duplicateHostLinks": [],
+    "oldStatusPanels": 0
+  },
+  "overallAcceptance": "PASS within the documented public HTML and research-route acceptance scope",
+  "remainingAction": null,
+  "cacheRuleExpression": "(http.host eq \"wiki.grokarchivehub.com\" and (not (http.request.uri.path contains \".\") or ends_with(http.request.uri.path, \".html\") or ends_with(http.request.uri.path, \".htm\") or starts_with(http.request.uri.path, \"/sitemap\")))"
+}

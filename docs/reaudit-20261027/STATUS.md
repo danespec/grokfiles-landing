@@ -1,3 +1,7 @@
+## Current release — linked-page completion, October 27, 2026
+
+PRs #236 and #237 are deployed on both hosts. The 340 HTML checks pass. A fresh post-rule crawl checks 955 linked routes with no unexpected operational copy, HTTP failures or indexable self-canonical routes missing from sitemaps. All 78 research-policy contracts pass. The formerly stale public research-index now returns DYNAMIC and current direct-owner links; all ten stale-link failures are cleared without another purge. **Overall acceptance passes within the documented scope.** See SIXTH_PASS_VERIFICATION.md and sixth-pass-acceptance.json. Search Console, other edge regions and DOJ PDF availability are outside this acceptance. The robots formatting exception remains accepted. Earlier entries below are historical.
+
 ## Latest acceptance — fifth review, October 27, 2026
 
 PR #234 is deployed as Pages 97c050af. All remaining build/indexing-copy findings from the independent spot-check are corrected across 18 pages and the /latest event source. A fresh canonical crawl captured 338 routes and passed 334 HTML checks. The expanded scan covers all 261 main sitemap pages with zero unexpected operational-copy matches; 261 share images and 138 identifier targets pass. Prior layout checks and wiki cache checks pass. The accepted robots formatting exception remains unchanged. See FIFTH_PASS.md and fifth-pass-acceptance.json. Earlier dated entries below are historical and their cache failures are superseded by the later acceptance records.
