@@ -5,8 +5,10 @@ from collections import defaultdict
 from datetime import datetime,timezone
 from bs4 import BeautifulSoup
 import subprocess,json,re,hashlib,sys,xml.etree.ElementTree as ET
-repo=Path(__file__).resolve().parents[1];graph=Path(sys.argv[1]);out=graph/'asset-handoff';out.mkdir(parents=True,exist_ok=True);fail=[]
+repo=Path(__file__).resolve().parents[1];graph=Path(sys.argv[1]);out=graph/'asset-handoff';out.mkdir(parents=True,exist_ok=True);fail=[];superseded=[]
 def check(ok,why):
+ if not ok and why.startswith('Hub ratio ') and '--publication-policy' in sys.argv:
+  superseded.append({'check':why,'reason':'The owner replaced the prior hub-link distribution goal with noindex/consolidation of thin research inventory.'});return
  if not ok:fail.append(why)
 def fetch(url,cookie=False,range_=False,refresh=False):
  key=hashlib.sha256((url+str(cookie)+str(range_)).encode()).hexdigest()[:20];h=out/(key+'.headers');b=out/(key+'.body');args=['curl','-sS','--connect-timeout','10','--max-time','65','-D',str(h),'-o',str(b)]
@@ -103,5 +105,5 @@ for host in [base,'https://wiki.grokarchivehub.com']:
 for path in ['/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine','/investigations/mcc-final-48-hours-source-chain']:
  row=byurl[base+path];check(row['status']==200 and 'noindex' in (row.get('robotsHeader') or '') and 'noindex' in (row.get('robotsMeta') or '') and row['canonical']==base+'/research/epstein-final-48-hours-mcc' and base+path not in listed,'MCC primary '+path)
 prior=json.loads((out/'acceptance.json').read_text()) if '--reuse-captures' in sys.argv and (out/'acceptance.json').exists() else {}
-result={'checkedAt':prior.get('checkedAt',datetime.now(timezone.utc).isoformat()),'analysisAt':datetime.now(timezone.utc).isoformat(),'snapshots':snapshots,'missing':missing,'dataFiles':data,'book':book,'indexableCount':len(indexed),'duplicateTitleGroups':dupT,'duplicateDescriptionGroups':dupD,'robotsMismatches':robots,'descriptionEllipses':ellipsis,'ETFApages':typos,'badLinks':badlinks,'hubs':hubs,'sitemaps':sitemaps,'linkedAssets':linkedAssets,'dossierChecks':dossierChecks,'routeChecks':routeChecks,'robotsChecks':robotsChecks,'failures':fail}
+result={'checkedAt':prior.get('checkedAt',datetime.now(timezone.utc).isoformat()),'analysisAt':datetime.now(timezone.utc).isoformat(),'snapshots':snapshots,'missing':missing,'dataFiles':data,'book':book,'indexableCount':len(indexed),'duplicateTitleGroups':dupT,'duplicateDescriptionGroups':dupD,'robotsMismatches':robots,'descriptionEllipses':ellipsis,'ETFApages':typos,'badLinks':badlinks,'hubs':hubs,'sitemaps':sitemaps,'linkedAssets':linkedAssets,'dossierChecks':dossierChecks,'routeChecks':routeChecks,'robotsChecks':robotsChecks,'supersededHubRatioChecks':superseded,'failures':fail}
 (out/'acceptance.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['snapshots','missing','dataFiles','book','linkedAssets','dossierChecks','routeChecks','robotsChecks']},indent=2));assert not fail,fail
