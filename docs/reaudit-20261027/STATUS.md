@@ -1,6 +1,6 @@
 ## Current release — linked-page completion, October 27, 2026
 
-PRs #236 and #237 are deployed on both hosts. All 340 HTML checks pass; 955 linked routes have no unexpected operational copy, broken page targets or missing sitemap entries. The shared 78-route ownership/indexing policy and origin checks pass. **Overall public acceptance remains incomplete:** the canonical wiki research-index is still cached with old duplicate-host links. The origin is current. The final Cache Rule 6 expression covers every extensionless/HTML wiki page and sitemap; a canonical recheck is required after the owner saves it. See SIXTH_PASS_VERIFICATION.md and sixth-pass-acceptance.json. The robots formatting exception remains accepted. Earlier dated entries below are historical.
+PRs #236 and #237 are deployed on both hosts. The 340 HTML checks pass. A fresh post-rule crawl checks 955 linked routes with no unexpected operational copy, HTTP failures or indexable self-canonical routes missing from sitemaps. All 78 research-policy contracts pass. The formerly stale public research-index now returns DYNAMIC and current direct-owner links; all ten stale-link failures are cleared without another purge. **Overall acceptance passes within the documented scope.** See SIXTH_PASS_VERIFICATION.md and sixth-pass-acceptance.json. Search Console, other edge regions and DOJ PDF availability are outside this acceptance. The robots formatting exception remains accepted. Earlier entries below are historical.
 
 ## Latest acceptance — fifth review, October 27, 2026
 

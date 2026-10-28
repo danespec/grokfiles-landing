@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T00:04:34.304611+00:00",
+  "checkedAt": "2026-10-28T00:15:51.272479+00:00",
   "mainDeployment": "a44c3d1e",
   "mainMerge": "0c714562d84f7a8e9c0979404f032489e71b4667",
   "sourcePRs": [
@@ -30,7 +30,7 @@
     "failures": []
   },
   "linkedGraph": {
-    "checkedAt": "2026-10-28T00:00:05.663901+00:00",
+    "checkedAt": "2026-10-28T00:15:13.935841+00:00",
     "sitemapRoutes": 339,
     "indexableRoutesMissingFromSitemaps": [],
     "unexpectedHttpFailures": [],
@@ -53,49 +53,8 @@
   },
   "researchPolicyAcceptance": {
     "researchRoutesChecked": 78,
-    "wikiResearchIndexCache": "HIT",
-    "failures": [
-      {
-        "url": "/research/epstein-final-48-hours-mcc",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/mcc-epstein-control-spine",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/source-card-efta00095936",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/verified-source-cards",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/source-card-efta00082040-black-book-epstein",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/source-card-efta00067364-calendar-epstein",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/source-card-efta00067364-calendar-epstein",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/source-card-efta00082040-black-book-epstein",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/source-card-efta00095936",
-        "issue": "Research index links to duplicate host"
-      },
-      {
-        "url": "/research/evidence/verified-source-cards",
-        "issue": "Research index links to duplicate host"
-      }
-    ]
+    "wikiResearchIndexCache": "DYNAMIC",
+    "failures": []
   },
   "shareImagesChecked": 267,
   "identifierTargetsChecked": 138,
@@ -105,6 +64,7 @@
     "duplicateHostLinks": [],
     "oldStatusPanels": 0
   },
-  "overallAcceptance": "INCOMPLETE: cached public research-index still has old relative owner links; source and origin are current",
-  "remainingAction": "Set final Cloudflare Cache Rule 6 to bypass all extensionless/HTML wiki pages and sitemap paths, last in order; then recheck the canonical research-index."
+  "overallAcceptance": "PASS within the documented public HTML and research-route acceptance scope",
+  "remainingAction": null,
+  "cacheRuleExpression": "(http.host eq \"wiki.grokarchivehub.com\" and (not (http.request.uri.path contains \".\") or ends_with(http.request.uri.path, \".html\") or ends_with(http.request.uri.path, \".htm\") or starts_with(http.request.uri.path, \"/sitemap\")))"
 }
