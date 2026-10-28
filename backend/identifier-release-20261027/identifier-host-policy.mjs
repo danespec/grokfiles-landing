@@ -23,6 +23,8 @@ export function identifierHostPolicy(req,res){
  if(path==='/methodology')return redirect(req,res,MAIN+'/methodology');
  if(path==='/barak'||path==='/dispatches/barak-archive')return redirect(req,res,MAIN+'/barak');
  if(path==='/receipts')return redirect(req,res,ORIGIN+'/archive');
+ const topicTools=["/topics/maxwell-prosecution", "/topics/epstein-victim-services-doj-coordination", "/topics/epstein-victim-notification-vns-sdny-outreach", "/topics/sdny-epstein-maxwell-court-filings"];
+ if(topicTools.includes(path))return send(req,res,200,fs.readFileSync('/app/topic-pages/'+path.split('/').pop()+'.html','utf8'));
  const research=RESEARCH_ROUTES.find(r=>r.path===path);
  if(research){
   if(research.owner==='main')return redirect(req,res,MAIN+research.path+url.search);
