@@ -1,5 +1,5 @@
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
-import { qualityHtml } from './reader-quality.mjs';
+import { qualityHtml, publicationRule } from './reader-quality.mjs';
 import fs from 'node:fs';
 const ORIGIN='https://wiki.grokarchivehub.com';
 const MAIN='https://grokarchivehub.com';
@@ -7,6 +7,7 @@ const manifest=JSON.parse(fs.readFileSync('/app/identifier-dossiers.json','utf8'
 const entries=new Map(manifest.entries.map(e=>[e.id,e]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function send(req,res,status,body,type='text/html; charset=utf-8',index='noindex,follow'){
+ if(type.startsWith('text/html')&&publicationRule(ORIGIN+req.url)?.noindex)index='noindex,follow';
  if(type.startsWith('text/html')){body=qualityHtml(body,ORIGIN+req.url,manifest.entries);body=body.replace(/<meta\b(?=[^>]*name=["']robots["'])[^>]*>/ig,'<meta name="robots" content="'+index+'">');}
  res.writeHead(status,{'Content-Type':type,'Cache-Control':'no-store','CDN-Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Robots-Tag':index,'X-GAH-Identifier-Host-Policy':'20261027'});
  res.end(req.method==='HEAD'?'':body);return true;
@@ -36,7 +37,7 @@ export function identifierHostPolicy(req,res){
  }
  if(path==='/robots.txt')return send(req,res,200,'User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /pdf-viewer\nDisallow: /pdf-viewer.html\nSitemap: '+ORIGIN+'/sitemap.xml\n','text/plain; charset=utf-8','index,follow');
  if(['/sitemap.xml','/sitemap-index.xml','/sitemap-global.xml','/sitemap-archive-1.xml'].includes(path)){
-  const paths=['/','/archive','/research-index',...manifest.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id),...RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable).map(r=>r.path)];
+  const paths=['/','/archive','/research-index',...manifest.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id),...RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable).map(r=>r.path)].filter(p=>!publicationRule(ORIGIN+p)?.noindex);
   const xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+paths.map(p=>'<url><loc>'+ORIGIN+p+'</loc><lastmod>'+manifest.updated+'</lastmod></url>').join('\n')+'\n</urlset>\n';
   return send(req,res,200,xml,'application/xml; charset=utf-8','index,follow');
  }

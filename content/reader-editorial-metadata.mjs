@@ -240,8 +240,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA02262778: Zuckerberg Contact References. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA02300238": {
-    "title": "EFTA02300238: Barak’s December 2014 Trip",
-    "description": "Read EFTA02300238: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02300238: Hoffman Travel Planning",
+    "description": "A November 2014 email forwards pilot and customs arrangements for a proposed trip involving Reid Hoffman. Planning is not proof of boarding."
   },
   "https://grokarchivehub.com/archive/EFTA02332402": {
     "title": "EFTA02332402: Maxwell’s Travel Coordination",
@@ -1285,7 +1285,7 @@ export const READER_EDITORIAL_METADATA = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02300238": {
     "title": "EFTA02300238 Receipt Card",
-    "description": "Receipt card for EFTA02300238: Barak’s December 2014 Trip. Check the source reference, documentary context and stated limits."
+    "description": "Receipt for EFTA02300238: November 2014 Hoffman travel arrangements, their source reference and limits on confirming an operated flight."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02332402": {
     "title": "EFTA02332402 Receipt Card",
