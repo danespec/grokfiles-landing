@@ -1,3 +1,7 @@
+## Current release — source PDFs and complete editorial metadata
+
+PR #243 is deployed as main Pages 532a38d9, with the matching immutable wiki release. All handoff acceptance checks pass: 49 linked PDFs return correct bytes and application/pdf on GET and HEAD; two fake PDF paths return 404; 829 internal destinations have no redirect debt; 336 indexable pages have complete metadata without ellipses; all 78 research contracts pass. Thirty-seven unavailable PDF links are removed with citation labels retained. Book of Black acknowledgement protection and reader controls remain intact. See NINTH_PASS.md and ninth-pass-acceptance.json for URLs, hub counts and limitations. Earlier entries are historical.
+
 ## Current release — hub, metadata and navigation completion
 
 PR #241 is deployed with the final source-email rendering correction. A fresh 952-route crawl checks 865 HTML pages and passes all stated polish checks, with no internal redirect links or metadata length failures. The research and Barak hubs prioritize published guides, with four labelled tool links each. The MCC research timeline is primary; its companion remains accessible and noindex outside the sitemap. Managed bot exclusions are retained. See EIGHTH_PASS.md and eighth-pass-acceptance.json. Earlier entries are historical.
