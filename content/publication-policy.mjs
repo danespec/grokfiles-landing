@@ -31,8 +31,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00033413": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00033413"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00033413"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00034221": {
     "noindex": true,
@@ -41,18 +41,18 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035035": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035035"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035035"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035053": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035053"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035053"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035119": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035119"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035119"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035147": {
     "noindex": true,
@@ -61,23 +61,23 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035420": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035420"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035420"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035421": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035421"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035421"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035442": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035442"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035442"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035570": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035570"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035570"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035574": {
     "noindex": true,
@@ -91,8 +91,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035657": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035657"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035657"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035773": {
     "noindex": true,
@@ -126,8 +126,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00080260": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00080260"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00080260"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00088020": {
     "noindex": true,
@@ -136,23 +136,23 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00128841": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00128841"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00153569": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00153569"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00176507": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00176507"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00224262": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00224262"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00338082": {
     "noindex": true,
@@ -171,8 +171,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00646811": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00646811"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00646811"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00695049": {
     "noindex": true,
@@ -191,13 +191,13 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01410768": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA01410768"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA01410768"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01703108": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA01703108"
+    "canonical": "https://grokarchivehub.com/investigations/hold-the-letter",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01972778": {
     "noindex": true,
@@ -286,63 +286,63 @@ export const PUBLICATION_POLICY = {
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02810827": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA02810827"
+    "canonical": "https://grokarchivehub.com/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02858481": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA02858481"
+    "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02858491": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA02858491"
+    "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035206": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035206"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035206"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035715": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00035715"
+    "reason": "Standalone source aid without an equivalent indexed article; noindex with a self-canonical instead of pointing at a noindex dossier",
+    "canonical": "https://wiki.grokarchivehub.com/receipts/EFTA00035715"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00153570": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00153570"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00153571": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00153571"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00579174": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00579174"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00579182": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00579182"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00643676": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00643676"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00704168": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00704168"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01245620": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA01245620"
+    "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/barak": {
     "noindex": true,
@@ -522,7 +522,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00643676": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/photos": {
     "noindex": true,
@@ -548,7 +549,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00579182": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/videos/shawn-ryan-leah-naming-allegation": {
     "noindex": true,
@@ -562,7 +564,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00579174": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/reels/barak-st-thomas-ronen-cohen": {
     "noindex": true,
@@ -580,11 +583,13 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA02810827": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00704168": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/newsletter": {
     "noindex": true,
@@ -592,11 +597,13 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00153571": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00153570": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA01410768": {
     "noindex": true,
@@ -626,11 +633,13 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00128841": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00176507": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/investigations/barak-14-leads-evidence-index": {
     "noindex": true,
@@ -638,7 +647,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00224262": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00080260": {
     "noindex": true,
@@ -646,11 +656,13 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00153569": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA01245620": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00035657": {
     "noindex": true,
@@ -666,7 +678,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA02858491": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00035035": {
     "noindex": true,
@@ -695,7 +708,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA02858481": {
     "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
+    "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/archive/EFTA00035053": {
     "noindex": true,
@@ -727,7 +741,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA01703108": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/investigations/hold-the-letter",
+    "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
   "https://grokarchivehub.com/book-of-black": {
     "noindex": true,
@@ -1017,5 +1032,29 @@ export const PUBLICATION_POLICY = {
   "https://grokarchivehub.com/videos/hold-the-letter-victim-notification": {
     "noindex": true,
     "reason": "Supporting media page outside the initial curated article index; retain watch access"
+  },
+  "https://grokarchivehub.com/latest": {
+    "noindex": true,
+    "reason": "Reader navigation and source directory; retain public access outside the substantive article search inventory"
+  },
+  "https://grokarchivehub.com/forum": {
+    "noindex": true,
+    "reason": "Reader navigation and source directory; retain public access outside the substantive article search inventory"
+  },
+  "https://grokarchivehub.com/topics": {
+    "noindex": true,
+    "reason": "Reader navigation and source directory; retain public access outside the substantive article search inventory"
+  },
+  "https://grokarchivehub.com/barak/receipts": {
+    "noindex": true,
+    "reason": "Reader navigation and source directory; retain public access outside the substantive article search inventory"
+  },
+  "https://grokarchivehub.com/barak/entities": {
+    "noindex": true,
+    "reason": "Reader navigation and source directory; retain public access outside the substantive article search inventory"
+  },
+  "https://grokarchivehub.com/barak/source-map": {
+    "noindex": true,
+    "reason": "Reader navigation and source directory; retain public access outside the substantive article search inventory"
   }
 };

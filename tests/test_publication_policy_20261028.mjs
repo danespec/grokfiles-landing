@@ -14,3 +14,14 @@ assert.equal(receipts,69);
 const reg=JSON.parse(await fs.readFile(new URL('../content/identifier-dossiers.json',import.meta.url),'utf8'));
 assert.equal(PUBLICATION_POLICY['https://grokarchivehub.com/archive/EFTA02300238'].canonical,'https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238');assert.match(reg.entries.find(e=>e.id==='EFTA02300238').title,/Hoffman/);
 console.log('PASS explicit noindex GET/HEAD and canonical decisions, all 69 wiki receipt twins, source preservation and Hoffman classification');
+
+// Final review: source-only cards may self-canonicalize, but a duplicate must
+// point directly at its selected indexable article, never another noindex URL.
+for (const [url,rule] of Object.entries(PUBLICATION_POLICY)) {
+ if (!url.includes('/receipts/') || !rule.canonical || rule.canonical===url) continue;
+ assert.ok(!PUBLICATION_POLICY[rule.canonical]?.noindex, url+' canonical target must remain indexable');
+}
+for (const path of ['/latest','/forum','/topics','/barak/receipts','/barak/entities','/barak/source-map']) {
+ assert.ok(PUBLICATION_POLICY['https://grokarchivehub.com'+path]?.noindex,path+' is a reader directory');
+}
+console.log('PASS receipt canonicals have no noindex destination chains; six listing hubs consistently excluded');
