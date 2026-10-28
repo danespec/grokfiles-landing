@@ -1,3 +1,7 @@
+## Current release — linked-page completion, October 27, 2026
+
+PRs #236 and #237 are deployed on both hosts. All 340 HTML checks pass; 955 linked routes have no unexpected operational copy, broken page targets or missing sitemap entries. The shared 78-route ownership/indexing policy and origin checks pass. **Overall public acceptance remains incomplete:** the canonical wiki research-index is still cached with old duplicate-host links. The origin is current. The final Cache Rule 6 expression covers every extensionless/HTML wiki page and sitemap; a canonical recheck is required after the owner saves it. See SIXTH_PASS_VERIFICATION.md and sixth-pass-acceptance.json. The robots formatting exception remains accepted. Earlier dated entries below are historical.
+
 ## Latest acceptance — fifth review, October 27, 2026
 
 PR #234 is deployed as Pages 97c050af. All remaining build/indexing-copy findings from the independent spot-check are corrected across 18 pages and the /latest event source. A fresh canonical crawl captured 338 routes and passed 334 HTML checks. The expanded scan covers all 261 main sitemap pages with zero unexpected operational-copy matches; 261 share images and 138 identifier targets pass. Prior layout checks and wiki cache checks pass. The accepted robots formatting exception remains unchanged. See FIFTH_PASS.md and fifth-pass-acceptance.json. Earlier dated entries below are historical and their cache failures are superseded by the later acceptance records.
