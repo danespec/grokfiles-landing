@@ -1,3 +1,7 @@
+## Current release — hub, metadata and navigation completion
+
+PR #241 is deployed with the final source-email rendering correction. A fresh 952-route crawl checks 865 HTML pages and passes all stated polish checks, with no internal redirect links or metadata length failures. The research and Barak hubs prioritize published guides, with four labelled tool links each. The MCC research timeline is primary; its companion remains accessible and noindex outside the sitemap. Managed bot exclusions are retained. See EIGHTH_PASS.md and eighth-pass-acceptance.json. Earlier entries are historical.
+
 ## Current release — final reader polish
 
 PR #239 is deployed. All 13 affected public pages pass the targeted jargon, robots consistency, alias-link and comment-marker checks. The isolated and production wiki release checks preserve 78 research routes, 69 receipt cards, the 74-URL sitemap and API isolation. All four topic pages remain noindex tools; the seven unpublished IDs open exact-ID archive search. See SEVENTH_PASS.md and seventh-pass-acceptance.json. Earlier acceptance records below are historical.
