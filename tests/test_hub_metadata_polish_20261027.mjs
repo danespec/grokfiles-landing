@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {qualityHtml,readerQualityResponse,conciseText} from '../reader-quality.mjs';
 import worker from '../_worker.js';
 const page='<html><head><title>'+('A detailed documentary title '.repeat(8))+' | Grok Archive Hub</title><meta name="description" content="'+('Source records and evidence limits. '.repeat(12))+'"></head><body><main><h1>Evidence overview</h1><a href="/cdn-cgi/l/email-protection#abc">Email</a><a href="mailto:test@example.com">Email</a><a href="/api/pdf">PDF</a><a href="/auth/patreon/start?return_to=/members" rel="noopener">Sign in</a><a href="/research/trump-epstein-documented-timeline#receipts">Timeline</a></main></body></html>';
-const html=qualityHtml(page,'https://grokarchivehub.com/example');
+const html=qualityHtml(page,'https://grokarchivehub.com/news/epstein-wall-street-records-act-2026');
 assert.ok(html.match(/<title>(.*?)<\/title>/)[1].length<=70);assert.ok(html.match(/name="description" content="([^"]*)/)[1].length<=155);
 assert.doesNotMatch(html,/cdn-cgi\/l\/email-protection|mailto:|href="[^"]*\/api\/pdf"/);assert.match(html,/rel="noopener nofollow"/);assert.match(html,/https:\/\/wiki.grokarchivehub.com\/research\/trump-epstein-documented-timeline#receipts/);
 assert.ok(conciseText('Unique EFTA00000468 source note',51).includes('EFTA00000468'));

@@ -18,3 +18,7 @@ jobs:
         run: node tests/test_identifier_wiki_20261027.mjs
       - name: Verify full reader quality regression gates
         run: node tests/test_reader_quality_20261027.mjs
+      - name: Verify source PDF bytes, route coverage and editorial metadata
+        run: node tests/test_source_pdf_release_20261027.mjs
+      - name: Verify hub metadata, source links and primary MCC policy
+        run: node tests/test_hub_metadata_polish_20261027.mjs

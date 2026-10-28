@@ -867,7 +867,7 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
 
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
-  if(path==="/investigations/mcc-final-48-hours-source-chain") return routePolicy(AD_ROUTE_STATUS.exclude, "mcc-companion-analysis", "noindex,follow");
+  if(['/investigations/mcc-final-48-hours-source-chain','/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine'].includes(path)) return routePolicy(AD_ROUTE_STATUS.exclude, "mcc-companion-analysis", "noindex,follow");
   if (path === "/archive/ids") return routePolicy(AD_ROUTE_STATUS.exclude, "published-identifier-register", "index,follow");
   if (["/barak/documents","/barak/emails","/barak/legal","/barak/media","/barak/media/audio","/barak/media/photos","/barak/media/video","/barak/pdfs"].includes(path)) return routePolicy(AD_ROUTE_STATUS.exclude, "source-navigation-tool", "noindex,follow");
   if (path === "/artifacts" || path.startsWith("/artifacts/")) return routePolicy(AD_ROUTE_STATUS.exclude, "local-generated-audit-artifact", "noindex,nofollow");
@@ -4317,7 +4317,7 @@ async function serveEvidenceAssetStrict(request, env, path) {
   }
   const response = await serveFrontdoor(request, env);
   const contentType = response.headers.get("Content-Type") || "";
-  if ((path.startsWith("/evidence-engine/v1/") || path.startsWith("/evidence-engine/v2/") || path.startsWith("/evidence-data/")) && contentType.toLowerCase().includes("text/html")) {
+  if ((/\.pdf$/i.test(path) || path.startsWith("/evidence-engine/v1/") || path.startsWith("/evidence-engine/v2/") || path.startsWith("/evidence-data/")) && contentType.toLowerCase().includes("text/html")) {
     if (ARCHIVED_SOURCE_HTML_PREFIXES.some((prefix) => path.startsWith(prefix)) && response.status === 200) {
       return rewriteArchivedSourceHtmlResponse(request, env, path, response);
     }
@@ -6531,6 +6531,7 @@ function sitemapEntryXml(entry) {
 }
 
 function sitemapEntryIsIndexable(entry) {
+  if (['https://grokarchivehub.com/dispatches/epstein-mcc-timeline','https://grokarchivehub.com/research/evidence/mcc-epstein-control-spine'].includes(Array.isArray(entry)?entry[0]:entry.loc)) return false;
   if ((Array.isArray(entry)?entry[0]:entry.loc)==="https://grokarchivehub.com/investigations/mcc-final-48-hours-source-chain") return false;
   const loc = Array.isArray(entry) ? entry[0] : entry.loc;
   try {
@@ -19030,6 +19031,8 @@ export default {
     if ((request.method === "GET" || request.method === "HEAD") && (url.pathname.startsWith("/evidence-engine/v1/") || url.pathname.startsWith("/evidence-engine/v2/") || url.pathname.startsWith("/evidence-data/"))) {
       return serveEvidenceAssetStrict(request, env, path);
     }
+
+    if ((request.method === "GET" || request.method === "HEAD") && /\.pdf$/i.test(path)) return serveEvidenceAssetStrict(request, env, path);
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/banking-records/entities") {
       return canonicalRedirectResponse("/banking-records", path, 301);
