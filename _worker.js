@@ -867,6 +867,7 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
 
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
+  if(path==="/investigations/mcc-final-48-hours-source-chain") return routePolicy(AD_ROUTE_STATUS.exclude, "mcc-companion-analysis", "noindex,follow");
   if (path === "/archive/ids") return routePolicy(AD_ROUTE_STATUS.exclude, "published-identifier-register", "index,follow");
   if (["/barak/documents","/barak/emails","/barak/legal","/barak/media","/barak/media/audio","/barak/media/photos","/barak/media/video","/barak/pdfs"].includes(path)) return routePolicy(AD_ROUTE_STATUS.exclude, "source-navigation-tool", "noindex,follow");
   if (path === "/artifacts" || path.startsWith("/artifacts/")) return routePolicy(AD_ROUTE_STATUS.exclude, "local-generated-audit-artifact", "noindex,nofollow");
@@ -6530,6 +6531,7 @@ function sitemapEntryXml(entry) {
 }
 
 function sitemapEntryIsIndexable(entry) {
+  if ((Array.isArray(entry)?entry[0]:entry.loc)==="https://grokarchivehub.com/investigations/mcc-final-48-hours-source-chain") return false;
   const loc = Array.isArray(entry) ? entry[0] : entry.loc;
   try {
     const url = new URL(loc);
