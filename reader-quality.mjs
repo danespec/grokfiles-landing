@@ -79,7 +79,7 @@ export function qualityHtml(input,href,entries=[]){
   return open+body+close;
  });
  html=html.replace(/<a\b([^>]*?)href=(["'])([^"']*)\2([^>]*)>([\s\S]*?)<\/a>/gi,(all,before,q,raw,after,label)=>{
-  if(/^mailto:/i.test(raw))return '<a href="https://grokarchivehub.com/contact">Contact</a>';
+  if(/^mailto:/i.test(raw))return path==='/contact'?'<!--email_off-->'+all+'<!--/email_off-->':'<a href="https://grokarchivehub.com/contact">Contact</a>';
   let target;try{target=new URL(decode(raw),href);}catch{return all;}
   if(target.hostname==='www.grokarchivehub.com')target.hostname='grokarchivehub.com';
   if(!['grokarchivehub.com','wiki.grokarchivehub.com'].includes(target.hostname))return all;

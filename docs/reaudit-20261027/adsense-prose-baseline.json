@@ -1,0 +1,2021 @@
+{
+  "method": "Paragraph/list prose excluding navigation, tables, code and repeated template labels; words in 12-word sequences shared by multiple indexable pages excluded. Audit heuristic, not a Google word-count requirement.",
+  "pages": [
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00000468",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00007893",
+      "proseWords": 87,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00013764",
+      "proseWords": 60,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00014374",
+      "proseWords": 74,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00016622",
+      "proseWords": 75,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00022062",
+      "proseWords": 78,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00033413",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00034221",
+      "proseWords": 51,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035035",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035053",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035119",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035147",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035420",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035421",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035442",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035570",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035574",
+      "proseWords": 129,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035613",
+      "proseWords": 119,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035657",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035773",
+      "proseWords": 135,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035828",
+      "proseWords": 181,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039025",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039356",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039416",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00039660",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00080260",
+      "proseWords": 65,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00088020",
+      "proseWords": 78,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00128841",
+      "proseWords": 65,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00153569",
+      "proseWords": 65,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00176507",
+      "proseWords": 68,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00224262",
+      "proseWords": 68,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00338082",
+      "proseWords": 69,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00352969",
+      "proseWords": 69,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00356456",
+      "proseWords": 68,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00646811",
+      "proseWords": 75,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00695049",
+      "proseWords": 62,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00759004",
+      "proseWords": 62,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00962798",
+      "proseWords": 59,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01410768",
+      "proseWords": 75,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01703108",
+      "proseWords": 60,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01972778",
+      "proseWords": 59,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02213201",
+      "proseWords": 75,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02239649",
+      "proseWords": 49,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02239873",
+      "proseWords": 49,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02240144",
+      "proseWords": 52,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02262778",
+      "proseWords": 51,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02300238",
+      "proseWords": 68,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02332402",
+      "proseWords": 87,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02338119",
+      "proseWords": 49,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02346686",
+      "proseWords": 68,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02596796",
+      "proseWords": 68,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02656769",
+      "proseWords": 105,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02662212",
+      "proseWords": 74,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02730265",
+      "proseWords": 48,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02730996",
+      "proseWords": 70,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02731023",
+      "proseWords": 70,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02731082",
+      "proseWords": 105,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02810827",
+      "proseWords": 52,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02858481",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA02858491",
+      "proseWords": 20,
+      "uniqueProseWords": 5,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035206",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00035715",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00153570",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00153571",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00579174",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00579182",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00643676",
+      "proseWords": 43,
+      "uniqueProseWords": 20,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA00704168",
+      "proseWords": 53,
+      "uniqueProseWords": 21,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/receipts/EFTA01245620",
+      "proseWords": 53,
+      "uniqueProseWords": 21,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/barak",
+      "proseWords": 56,
+      "uniqueProseWords": 56,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/document-autopsies",
+      "proseWords": 505,
+      "uniqueProseWords": 69,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00007893",
+      "proseWords": 289,
+      "uniqueProseWords": 72,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA01972778",
+      "proseWords": 278,
+      "uniqueProseWords": 81,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02213201",
+      "proseWords": 249,
+      "uniqueProseWords": 83,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00016622",
+      "proseWords": 289,
+      "uniqueProseWords": 88,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02332402",
+      "proseWords": 261,
+      "uniqueProseWords": 89,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00338082",
+      "proseWords": 213,
+      "uniqueProseWords": 93,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00352969",
+      "proseWords": 221,
+      "uniqueProseWords": 93,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00695049",
+      "proseWords": 281,
+      "uniqueProseWords": 93,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00759004",
+      "proseWords": 302,
+      "uniqueProseWords": 94,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02338119",
+      "proseWords": 206,
+      "uniqueProseWords": 94,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02239649",
+      "proseWords": 217,
+      "uniqueProseWords": 95,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02239873",
+      "proseWords": 195,
+      "uniqueProseWords": 95,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02731082",
+      "proseWords": 356,
+      "uniqueProseWords": 95,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02240144",
+      "proseWords": 228,
+      "uniqueProseWords": 97,
+      "under300": true
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/research-index",
+      "proseWords": 97,
+      "uniqueProseWords": 97,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02262778",
+      "proseWords": 199,
+      "uniqueProseWords": 99,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00014374",
+      "proseWords": 322,
+      "uniqueProseWords": 100,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02346686",
+      "proseWords": 217,
+      "uniqueProseWords": 100,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02596796",
+      "proseWords": 231,
+      "uniqueProseWords": 102,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02662212",
+      "proseWords": 280,
+      "uniqueProseWords": 102,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00962798",
+      "proseWords": 268,
+      "uniqueProseWords": 103,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos",
+      "proseWords": 320,
+      "uniqueProseWords": 104,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02730265",
+      "proseWords": 239,
+      "uniqueProseWords": 105,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00088020",
+      "proseWords": 255,
+      "uniqueProseWords": 108,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02300238",
+      "proseWords": 233,
+      "uniqueProseWords": 108,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00034221",
+      "proseWords": 211,
+      "uniqueProseWords": 109,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02730996",
+      "proseWords": 302,
+      "uniqueProseWords": 111,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02731023",
+      "proseWords": 261,
+      "uniqueProseWords": 111,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00022062",
+      "proseWords": 294,
+      "uniqueProseWords": 116,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035773",
+      "proseWords": 450,
+      "uniqueProseWords": 116,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035828",
+      "proseWords": 476,
+      "uniqueProseWords": 116,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035613",
+      "proseWords": 427,
+      "uniqueProseWords": 119,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00356456",
+      "proseWords": 284,
+      "uniqueProseWords": 127,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02656769",
+      "proseWords": 331,
+      "uniqueProseWords": 133,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/steve-bannon-barak-calendar-efta02240144",
+      "proseWords": 338,
+      "uniqueProseWords": 136,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/elon-musk-holiday-email-efta02338119",
+      "proseWords": 333,
+      "uniqueProseWords": 141,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/jeff-bezos-email-list-efta00759004",
+      "proseWords": 384,
+      "uniqueProseWords": 144,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00643676",
+      "proseWords": 207,
+      "uniqueProseWords": 146,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/photos",
+      "proseWords": 146,
+      "uniqueProseWords": 146,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/bill-gates-nikolic-points-efta02730265",
+      "proseWords": 344,
+      "uniqueProseWords": 148,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/efta00035613-july-2019-donation-proposal",
+      "proseWords": 504,
+      "uniqueProseWords": 150,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/efta00035773-oig-voluntary-interview-waiver",
+      "proseWords": 532,
+      "uniqueProseWords": 152,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/stephen-hawking-email-request-efta00695049",
+      "proseWords": 380,
+      "uniqueProseWords": 152,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035206",
+      "proseWords": 207,
+      "uniqueProseWords": 159,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/jean-luc-brunel-mc2-account-efta01972778",
+      "proseWords": 445,
+      "uniqueProseWords": 162,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/larry-summers-harvard-planning-efta02239873",
+      "proseWords": 386,
+      "uniqueProseWords": 162,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/peter-thiel-epstein-record-efta02656769",
+      "proseWords": 576,
+      "uniqueProseWords": 162,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/ghislaine-maxwell-travel-coordination-efta02332402",
+      "proseWords": 467,
+      "uniqueProseWords": 164,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/mark-zuckerberg-mentions-efta00034221",
+      "proseWords": 381,
+      "uniqueProseWords": 164,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035715",
+      "proseWords": 213,
+      "uniqueProseWords": 165,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/alan-dershowitz-schedule-efta00352969",
+      "proseWords": 406,
+      "uniqueProseWords": 165,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/shawn-ryan-released-interview-response",
+      "proseWords": 551,
+      "uniqueProseWords": 165,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00579182",
+      "proseWords": 201,
+      "uniqueProseWords": 166,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/shawn-ryan-leah-naming-allegation",
+      "proseWords": 611,
+      "uniqueProseWords": 166,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/barak-hotel-name-efta00356456",
+      "proseWords": 463,
+      "uniqueProseWords": 170,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00579174",
+      "proseWords": 207,
+      "uniqueProseWords": 172,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/barak-st-thomas-ronen-cohen",
+      "proseWords": 688,
+      "uniqueProseWords": 172,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/guides",
+      "proseWords": 263,
+      "uniqueProseWords": 173,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/bill-richardson-counsel-memo-efta00014374",
+      "proseWords": 477,
+      "uniqueProseWords": 175,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/barak-epstein-caribbean-invitation-2014",
+      "proseWords": 495,
+      "uniqueProseWords": 175,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02810827",
+      "proseWords": 223,
+      "uniqueProseWords": 176,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00704168",
+      "proseWords": 227,
+      "uniqueProseWords": 178,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/newsletter",
+      "proseWords": 186,
+      "uniqueProseWords": 186,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response",
+      "proseWords": 707,
+      "uniqueProseWords": 187,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00153571",
+      "proseWords": 213,
+      "uniqueProseWords": 190,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00153570",
+      "proseWords": 219,
+      "uniqueProseWords": 196,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA01410768",
+      "proseWords": 368,
+      "uniqueProseWords": 199,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/internet-vs-receipts",
+      "proseWords": 203,
+      "uniqueProseWords": 203,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00646811",
+      "proseWords": 374,
+      "uniqueProseWords": 205,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/efta00035828-epstein-cell-diagram",
+      "proseWords": 559,
+      "uniqueProseWords": 205,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/barak-ronen-cohen-ticket-7hlsoq",
+      "proseWords": 494,
+      "uniqueProseWords": 207,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/shawn-ryan-leah-interview-response",
+      "proseWords": 798,
+      "uniqueProseWords": 211,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035119",
+      "proseWords": 409,
+      "uniqueProseWords": 222,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00128841",
+      "proseWords": 401,
+      "uniqueProseWords": 222,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00176507",
+      "proseWords": 397,
+      "uniqueProseWords": 222,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-14-leads-evidence-index",
+      "proseWords": 250,
+      "uniqueProseWords": 223,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00224262",
+      "proseWords": 398,
+      "uniqueProseWords": 224,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/andrew-doj-judicial-review-efta00088020",
+      "proseWords": 496,
+      "uniqueProseWords": 226,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/les-wexner-attorney-proffer-efta02731082",
+      "proseWords": 520,
+      "uniqueProseWords": 230,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records",
+      "proseWords": 501,
+      "uniqueProseWords": 231,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00080260",
+      "proseWords": 412,
+      "uniqueProseWords": 233,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00153569",
+      "proseWords": 414,
+      "uniqueProseWords": 234,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA01245620",
+      "proseWords": 279,
+      "uniqueProseWords": 235,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035657",
+      "proseWords": 367,
+      "uniqueProseWords": 236,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238",
+      "proseWords": 364,
+      "uniqueProseWords": 237,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035421",
+      "proseWords": 371,
+      "uniqueProseWords": 240,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035420",
+      "proseWords": 375,
+      "uniqueProseWords": 244,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02858491",
+      "proseWords": 429,
+      "uniqueProseWords": 246,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/news/doj-march-2025-review-emails-released",
+      "proseWords": 260,
+      "uniqueProseWords": 248,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035035",
+      "proseWords": 371,
+      "uniqueProseWords": 250,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/internet-vs-receipts/doj-celebrity-names",
+      "proseWords": 308,
+      "uniqueProseWords": 250,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035442",
+      "proseWords": 372,
+      "uniqueProseWords": 251,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996",
+      "proseWords": 507,
+      "uniqueProseWords": 255,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/start",
+      "proseWords": 283,
+      "uniqueProseWords": 255,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-ushakov-2013-2015",
+      "proseWords": 256,
+      "uniqueProseWords": 256,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00000468",
+      "proseWords": 346,
+      "uniqueProseWords": 257,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA02858481",
+      "proseWords": 440,
+      "uniqueProseWords": 257,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035053",
+      "proseWords": 379,
+      "uniqueProseWords": 258,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035570",
+      "proseWords": 380,
+      "uniqueProseWords": 259,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels",
+      "proseWords": 735,
+      "uniqueProseWords": 272,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035574",
+      "proseWords": 383,
+      "uniqueProseWords": 273,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-timeline-without-causation",
+      "proseWords": 286,
+      "uniqueProseWords": 273,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/raskin-epstein-mlat-letter-october-2026",
+      "proseWords": 387,
+      "uniqueProseWords": 277,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00033413",
+      "proseWords": 399,
+      "uniqueProseWords": 278,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/internet-vs-receipts/2007-draft-indictment",
+      "proseWords": 336,
+      "uniqueProseWords": 278,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA01703108",
+      "proseWords": 383,
+      "uniqueProseWords": 282,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/book-of-black",
+      "proseWords": 284,
+      "uniqueProseWords": 284,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-receipts-presence-not-conduct",
+      "proseWords": 300,
+      "uniqueProseWords": 287,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-entity-control-layer",
+      "proseWords": 301,
+      "uniqueProseWords": 288,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026",
+      "proseWords": 291,
+      "uniqueProseWords": 291,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/source-map-methodology",
+      "proseWords": 318,
+      "uniqueProseWords": 291,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/news/gadeco-chinese-consortium-declined",
+      "proseWords": 307,
+      "uniqueProseWords": 295,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/internet-vs-receipts/efta00000468-removal",
+      "proseWords": 356,
+      "uniqueProseWords": 298,
+      "under300": true
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/august-8-attorney-log-colon-miro",
+      "proseWords": 317,
+      "uniqueProseWords": 304,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/clinton-cgi-publicis-transfer-source-audit",
+      "proseWords": 531,
+      "uniqueProseWords": 306,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/fara-review-signals-not-legal-conclusions",
+      "proseWords": 320,
+      "uniqueProseWords": 307,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-saudi-rothschild-proposal-2015",
+      "proseWords": 309,
+      "uniqueProseWords": 309,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/banking-records",
+      "proseWords": 311,
+      "uniqueProseWords": 311,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/birthday-book-source-object-not-identity-proof",
+      "proseWords": 328,
+      "uniqueProseWords": 315,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/the-motherlode/survivor-accountability",
+      "proseWords": 322,
+      "uniqueProseWords": 322,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/fbi-review-holdings-vault-parts-12-13",
+      "proseWords": 342,
+      "uniqueProseWords": 327,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-gadeco-fee-2014",
+      "proseWords": 328,
+      "uniqueProseWords": 328,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/the-motherlode",
+      "proseWords": 335,
+      "uniqueProseWords": 335,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/confidence-labels-open-slots",
+      "proseWords": 391,
+      "uniqueProseWords": 352,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+      "proseWords": 392,
+      "uniqueProseWords": 354,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/redaction-breadcrumbs",
+      "proseWords": 382,
+      "uniqueProseWords": 355,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/barak-st-thomas-december-2014",
+      "proseWords": 904,
+      "uniqueProseWords": 356,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/corrections/flight-log-count-and-aircraft-reconciliation",
+      "proseWords": 359,
+      "uniqueProseWords": 359,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/epstein-wall-street-records-act-2026",
+      "proseWords": 381,
+      "uniqueProseWords": 367,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/state-attorneys-general-efta-ii-2026",
+      "proseWords": 381,
+      "uniqueProseWords": 367,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches",
+      "proseWords": 411,
+      "uniqueProseWords": 371,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/jpmorgan-nine-sars-reporting-timeline",
+      "proseWords": 555,
+      "uniqueProseWords": 385,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00013764",
+      "proseWords": 413,
+      "uniqueProseWords": 386,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology",
+      "proseWords": 427,
+      "uniqueProseWords": 388,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news",
+      "proseWords": 521,
+      "uniqueProseWords": 388,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/late-july-watch-status-records",
+      "proseWords": 408,
+      "uniqueProseWords": 395,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/gratitude-america-10-million-efta00080260",
+      "proseWords": 572,
+      "uniqueProseWords": 395,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/open-receipt-slots-epstein-death",
+      "proseWords": 409,
+      "uniqueProseWords": 396,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/doj-oip-epstein-records-oct21-2026",
+      "proseWords": 402,
+      "uniqueProseWords": 402,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/mcc-4chan-two-posters-attribution-audit",
+      "proseWords": 402,
+      "uniqueProseWords": 402,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/epstein-open-receipt-slots",
+      "proseWords": 490,
+      "uniqueProseWords": 405,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026",
+      "proseWords": 408,
+      "uniqueProseWords": 408,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/ask-gah-search-epstein-files",
+      "proseWords": 648,
+      "uniqueProseWords": 408,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/ch0080-video-file-windows",
+      "proseWords": 435,
+      "uniqueProseWords": 409,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/epstein-black-book-redacted-doj",
+      "proseWords": 414,
+      "uniqueProseWords": 414,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/autopsy-exhibit-list-limits",
+      "proseWords": 443,
+      "uniqueProseWords": 416,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/fbi-epstein-not-evidentiary-scrub",
+      "proseWords": 421,
+      "uniqueProseWords": 421,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/how-not-to-overread-flight-logs",
+      "proseWords": 450,
+      "uniqueProseWords": 423,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/southern-trust-gates-client-definition",
+      "proseWords": 428,
+      "uniqueProseWords": 428,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/the-motherlode/us-runs",
+      "proseWords": 432,
+      "uniqueProseWords": 432,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/entities",
+      "proseWords": 1112,
+      "uniqueProseWords": 433,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs",
+      "proseWords": 881,
+      "uniqueProseWords": 437,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/document-autopsies/leon-black-transcript",
+      "proseWords": 483,
+      "uniqueProseWords": 447,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/epstein-jail-logs",
+      "proseWords": 534,
+      "uniqueProseWords": 449,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/about-the-operator",
+      "proseWords": 481,
+      "uniqueProseWords": 454,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/efta-files-guide",
+      "proseWords": 552,
+      "uniqueProseWords": 455,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/doj-oig-report-as-backbone",
+      "proseWords": 474,
+      "uniqueProseWords": 461,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00039356",
+      "proseWords": 492,
+      "uniqueProseWords": 465,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/videos/hold-the-letter-victim-notification",
+      "proseWords": 697,
+      "uniqueProseWords": 469,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/doj-epstein-data-sets",
+      "proseWords": 522,
+      "uniqueProseWords": 472,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/epstein-flight-logs-doj",
+      "proseWords": 475,
+      "uniqueProseWords": 475,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/barak/fara-review",
+      "proseWords": 552,
+      "uniqueProseWords": 479,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00039416",
+      "proseWords": 525,
+      "uniqueProseWords": 485,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/epstein-files-transparency-act",
+      "proseWords": 527,
+      "uniqueProseWords": 493,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00039660",
+      "proseWords": 507,
+      "uniqueProseWords": 495,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment",
+      "proseWords": 500,
+      "uniqueProseWords": 500,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00035147",
+      "proseWords": 512,
+      "uniqueProseWords": 512,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/editorial-policy",
+      "proseWords": 515,
+      "uniqueProseWords": 515,
+      "under300": false
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/",
+      "proseWords": 570,
+      "uniqueProseWords": 534,
+      "under300": false
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/archive",
+      "proseWords": 570,
+      "uniqueProseWords": 534,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/august-8-attorney-log-colon-miro",
+      "proseWords": 600,
+      "uniqueProseWords": 547,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/epstein-code-words-documentary-test",
+      "proseWords": 548,
+      "uniqueProseWords": 548,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/palm-beach-2006-police-jet-aviation-call-records",
+      "proseWords": 604,
+      "uniqueProseWords": 559,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/redacted-files",
+      "proseWords": 607,
+      "uniqueProseWords": 568,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/fbi-vault-epstein-review-part-14-october-2026",
+      "proseWords": 584,
+      "uniqueProseWords": 569,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/how-to-search-epstein-files",
+      "proseWords": 620,
+      "uniqueProseWords": 570,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/epstein-client-list-explained",
+      "proseWords": 605,
+      "uniqueProseWords": 571,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/barak/timeline",
+      "proseWords": 624,
+      "uniqueProseWords": 579,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/ids",
+      "proseWords": 580,
+      "uniqueProseWords": 580,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/about",
+      "proseWords": 653,
+      "uniqueProseWords": 581,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive/EFTA00039025",
+      "proseWords": 582,
+      "uniqueProseWords": 582,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/hold-the-letter",
+      "proseWords": 645,
+      "uniqueProseWords": 582,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/document-autopsies/doug-band-transcript",
+      "proseWords": 641,
+      "uniqueProseWords": 605,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/visual-evidence",
+      "proseWords": 640,
+      "uniqueProseWords": 613,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/leon-black-2023-sdny-referral-status",
+      "proseWords": 615,
+      "uniqueProseWords": 615,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/digitization-ocr-pipeline",
+      "proseWords": 620,
+      "uniqueProseWords": 620,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-npa-defense-access-victim-notification",
+      "proseWords": 659,
+      "uniqueProseWords": 628,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/book-of-black/methodology",
+      "proseWords": 630,
+      "uniqueProseWords": 630,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-acosta-epstein-doj-timeline",
+      "proseWords": 833,
+      "uniqueProseWords": 636,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive",
+      "proseWords": 640,
+      "uniqueProseWords": 640,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-moscow-deal-campaign-2015-2016",
+      "proseWords": 806,
+      "uniqueProseWords": 640,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/corrections",
+      "proseWords": 691,
+      "uniqueProseWords": 644,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-wolff-trump-cnn-emails-2015",
+      "proseWords": 788,
+      "uniqueProseWords": 645,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-phaidon-2015-tax-model-house-oversight",
+      "proseWords": 701,
+      "uniqueProseWords": 650,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-2015-campaign-records",
+      "proseWords": 1055,
+      "uniqueProseWords": 654,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/the-motherlode/phone-cdr",
+      "proseWords": 666,
+      "uniqueProseWords": 666,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/barak/receipts",
+      "proseWords": 742,
+      "uniqueProseWords": 668,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/house-judiciary-trump-epstein-staff-report-oct26-2026",
+      "proseWords": 668,
+      "uniqueProseWords": 668,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/community",
+      "proseWords": 680,
+      "uniqueProseWords": 680,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/barak/source-map",
+      "proseWords": 739,
+      "uniqueProseWords": 689,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/fara-leads-explained",
+      "proseWords": 739,
+      "uniqueProseWords": 689,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/kyara-i-unresolved-profitable-spv",
+      "proseWords": 719,
+      "uniqueProseWords": 705,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026",
+      "proseWords": 727,
+      "uniqueProseWords": 707,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/maurene-comey-unlawful-firing-ruling-oct26-2026",
+      "proseWords": 723,
+      "uniqueProseWords": 723,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/research/epstein-final-48-hours-mcc",
+      "proseWords": 773,
+      "uniqueProseWords": 735,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/financial-trust-black-family-partners-2012",
+      "proseWords": 778,
+      "uniqueProseWords": 738,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/archive-scope",
+      "proseWords": 739,
+      "uniqueProseWords": 739,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/jpmorgan-4725-wires-1-1-billion-explainer",
+      "proseWords": 782,
+      "uniqueProseWords": 744,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/raskin-epstein-state-foreign-mlat-oversight-2026",
+      "proseWords": 767,
+      "uniqueProseWords": 753,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/neoteny-3-fund-subscription-no-portfolio-attribution",
+      "proseWords": 769,
+      "uniqueProseWords": 755,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/kyara-spv-wearality-blockstream-oh2",
+      "proseWords": 804,
+      "uniqueProseWords": 759,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/epstein-source-watch-october-2026",
+      "proseWords": 770,
+      "uniqueProseWords": 770,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/coinbase-return-first-15m-exit",
+      "proseWords": 800,
+      "uniqueProseWords": 770,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-israel-russia-un-vote-2016",
+      "proseWords": 952,
+      "uniqueProseWords": 782,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/privacy",
+      "proseWords": 801,
+      "uniqueProseWords": 786,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/truesec-il-energy-twin-spvs-2013",
+      "proseWords": 799,
+      "uniqueProseWords": 787,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/research/evidence/birthday-book",
+      "proseWords": 807,
+      "uniqueProseWords": 807,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/leon-black-158m-170m-epstein-payments",
+      "proseWords": 834,
+      "uniqueProseWords": 815,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/levitection-signed-term-sheet-no-close",
+      "proseWords": 855,
+      "uniqueProseWords": 841,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+      "proseWords": 843,
+      "uniqueProseWords": 843,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/barak/entities",
+      "proseWords": 1018,
+      "uniqueProseWords": 855,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-december-6-7-2007-decision-gap",
+      "proseWords": 924,
+      "uniqueProseWords": 865,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/adfin-southern-trust-series-a-2013",
+      "proseWords": 887,
+      "uniqueProseWords": 869,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/how-to-read-the-barak-records",
+      "proseWords": 963,
+      "uniqueProseWords": 873,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/honeycomb-spv-spotify-tencent-music",
+      "proseWords": 907,
+      "uniqueProseWords": 877,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/shared-administration-no-money-crossover",
+      "proseWords": 915,
+      "uniqueProseWords": 889,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/ng911-email-planned-fcc-meetings-no-proven-access-chain",
+      "proseWords": 909,
+      "uniqueProseWords": 909,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/",
+      "proseWords": 926,
+      "uniqueProseWords": 913,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence",
+      "proseWords": 942,
+      "uniqueProseWords": 925,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records",
+      "proseWords": 995,
+      "uniqueProseWords": 929,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/norway-brende-epstein-hearing-2026",
+      "proseWords": 940,
+      "uniqueProseWords": 940,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/new-mexico-indyke-kahn-financial-network-2026",
+      "proseWords": 971,
+      "uniqueProseWords": 949,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/reporty-southern-trust-ergo-1m-2015",
+      "proseWords": 982,
+      "uniqueProseWords": 982,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review",
+      "proseWords": 1001,
+      "uniqueProseWords": 982,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/michael-chertoff-reporty-advisory-agreement",
+      "proseWords": 1000,
+      "uniqueProseWords": 988,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang",
+      "proseWords": 1046,
+      "uniqueProseWords": 988,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/darren-indyke-investment-execution-layer",
+      "proseWords": 1047,
+      "uniqueProseWords": 990,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/topics",
+      "proseWords": 1070,
+      "uniqueProseWords": 1010,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/nikolic-gates-epstein-bridge",
+      "proseWords": 1030,
+      "uniqueProseWords": 1011,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/efta-compliance-tracker",
+      "proseWords": 1082,
+      "uniqueProseWords": 1016,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap",
+      "proseWords": 1021,
+      "uniqueProseWords": 1021,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report",
+      "proseWords": 1048,
+      "uniqueProseWords": 1048,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-july-2007-decision-gap",
+      "proseWords": 1097,
+      "uniqueProseWords": 1072,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations",
+      "proseWords": 1533,
+      "uniqueProseWords": 1077,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein",
+      "proseWords": 1122,
+      "uniqueProseWords": 1080,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing",
+      "proseWords": 1112,
+      "uniqueProseWords": 1094,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal",
+      "proseWords": 1100,
+      "uniqueProseWords": 1100,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "proseWords": 1142,
+      "uniqueProseWords": 1124,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale",
+      "proseWords": 1157,
+      "uniqueProseWords": 1139,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-hfa-cycurity-2015",
+      "proseWords": 1147,
+      "uniqueProseWords": 1147,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/george-mitchell-epstein-source-audit",
+      "proseWords": 1204,
+      "uniqueProseWords": 1204,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-scheduling-records-2010-2018",
+      "proseWords": 1261,
+      "uniqueProseWords": 1261,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/forum",
+      "proseWords": 1365,
+      "uniqueProseWords": 1365,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/wyden-banker-302-deutsche-interviews",
+      "proseWords": 1674,
+      "uniqueProseWords": 1674,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/financial-trust-environmental-solutions-worldwide",
+      "proseWords": 1734,
+      "uniqueProseWords": 1704,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "proseWords": 1775,
+      "uniqueProseWords": 1754,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/sascha-riley-claims-evidence-audit",
+      "proseWords": 1820,
+      "uniqueProseWords": 1820,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne",
+      "proseWords": 2093,
+      "uniqueProseWords": 1973,
+      "under300": false
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/research/ehud-barak-epstein-documentary-record",
+      "proseWords": 1999,
+      "uniqueProseWords": 1983,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/giuffre-maxwell-docket-1320-privilege-gap",
+      "proseWords": 2069,
+      "uniqueProseWords": 2057,
+      "under300": false
+    },
+    {
+      "url": "https://wiki.grokarchivehub.com/research/trump-epstein-documented-timeline",
+      "proseWords": 2172,
+      "uniqueProseWords": 2156,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
+      "proseWords": 2506,
+      "uniqueProseWords": 2395,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/research/evidence/epstein-death",
+      "proseWords": 2542,
+      "uniqueProseWords": 2454,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/andriesz-adfin-lutnick-paper-trail",
+      "proseWords": 2626,
+      "uniqueProseWords": 2626,
+      "under300": false
+    },
+    {
+      "url": "https://grokarchivehub.com/latest",
+      "proseWords": 4774,
+      "uniqueProseWords": 4333,
+      "under300": false
+    }
+  ]
+}

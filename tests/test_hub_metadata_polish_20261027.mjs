@@ -12,3 +12,5 @@ const map=await(await worker.fetch(new Request('https://grokarchivehub.com/sitem
 console.log('PASS bounded metadata, direct owner links, contact/PDF navigation, nofollow sign-in, published-first hub and GET/HEAD primary MCC policy');
 
 const sourceAddress=qualityHtml('<html><head><title>Source note</title></head><body><main><h1>Source note</h1><p>archive@example.com</p></main></body></html>','https://grokarchivehub.com/example');assert.match(sourceAddress,/<!--email_off-->archive@example.com<!--\/email_off-->/);console.log('PASS literal source addresses retained without edge-generated utility links');
+
+const contact=qualityHtml('<html><head><title>Contact</title></head><body><main><h1>Contact</h1><a href="mailto:grokcloudflare@gmail.com">Email</a></main></body></html>','https://grokarchivehub.com/contact');assert.match(contact,/<!--email_off--><a href="mailto:grokcloudflare@gmail.com">Email<\/a><!--\/email_off-->/);console.log('PASS contact retains its published mailto action without sending mail');
