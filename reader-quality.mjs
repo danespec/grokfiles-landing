@@ -88,7 +88,7 @@ export function qualityHtml(input,href,entries=[]){
   const mapped=READER_LINK_ALIASES[target.origin+target.pathname];if(mapped){const next=new URL(mapped);next.search=target.search;next.hash=target.hash;target=next;}
   if(target.pathname.startsWith('/evidence-data/')&&target.pathname.includes('/source/html/')&&target.pathname.endsWith('.html'))target.pathname=target.pathname.slice(0,-5);
   if(target.pathname==='/api/pdf'&&target.searchParams.get('id'))target.pathname='/pdf-lite';
-  if((target.pathname.startsWith('/evidence-data/book-of-black/')||target.pathname.startsWith('/book-of-black/source/'))&&target.pathname.endsWith('.pdf'))return '<a href="https://grokarchivehub.com/book-of-black">Source access and reader notice</a>';
+  if((target.pathname.startsWith('/evidence-data/book-of-black/')||target.pathname.startsWith('/book-of-black/source/'))&&target.pathname.endsWith('.pdf'))return '<a'+before+after+' href="https://grokarchivehub.com/book-of-black">'+label+'</a>';
   let attrs=before+after;
   if(target.pathname==='/auth/patreon/start'){
    const old=attrs.match(/rel=["']([^"']*)["']/i);const values=new Set((old?old[1]:'').split(/\s+/).filter(Boolean));values.add('nofollow');attrs=attrs.replace(/\s*rel=["'][^"']*["']/i,'')+' rel="'+[...values].join(' ')+'"';
