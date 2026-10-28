@@ -12,7 +12,10 @@ for url,rule in rules.items():
  r=by.get(url);check(r is not None and r['status']==200,'Policy access '+url)
  if not r:continue
  check('noindex' in (r.get('robotsHeader') or '') and 'noindex' in (r.get('robotsMeta') or ''),'Policy robots '+url)
- if rule.get('canonical'):check(r.get('canonical')==rule['canonical'],'Policy canonical '+url)
+ if rule.get('canonical'):
+  check(r.get('canonical')==rule['canonical'],'Policy canonical '+url)
+  if '/receipts/' in url and rule['canonical']!=url:
+   target=by.get(rule['canonical']);check(target is not None and target['status']==200 and target.get('canonical')==rule['canonical'] and 'noindex' not in ((target.get('robotsHeader') or '')+(target.get('robotsMeta') or '')).lower(),'Receipt canonical destination '+url)
  policy.append({'url':url,'status':r['status'],'metaRobots':r.get('robotsMeta'),'headerRobots':r.get('robotsHeader'),'canonical':r.get('canonical'),'reason':rule['reason']})
 titles=defaultdict(list);descriptions=defaultdict(list);bodies=defaultdict(list);mismatch=[];indexed=[];comments=[]
 for r in rows:
@@ -25,7 +28,7 @@ for r in rows:
  main=soup.find('main') or soup.body
  for node in main.select('script,style,nav,footer,aside,form,button,.route-list,.archive-navigation,.reader-identifier-links'):node.decompose()
  body=re.sub(r'\s+',' ',main.get_text(' ',strip=True)).casefold();bodies[hashlib.sha256(body.encode()).hexdigest()].append(r['url'])
-dupTitles={k:v for k,v in titles.items() if len(v)>1};dupDescriptions={k:v for k,v in descriptions.items() if len(v)>1};dupBodies={k:v for k,v in bodies.items() if len(v)>1};check(not dupTitles,'Duplicate titles');check(not dupDescriptions,'Duplicate descriptions');check(not dupBodies,'Duplicate bodies');check(not mismatch,'Robots mismatch');under=[r for r in prose['pages'] if r['uniqueProseWords']<300];check(not under,'Unique prose under 300');check(len(indexed)==len(prose['pages']),'Prose inventory mismatch')
+dupTitles={k:v for k,v in titles.items() if len(v)>1};dupDescriptions={k:v for k,v in descriptions.items() if len(v)>1};dupBodies={k:v for k,v in bodies.items() if len(v)>1};check(not dupTitles,'Duplicate titles');check(not dupDescriptions,'Duplicate descriptions');check(not dupBodies,'Duplicate bodies');check(not mismatch,'Robots mismatch');strict=json.loads((graph/'strict-prose.json').read_text()) if (graph/'strict-prose.json').exists() else None;check(strict is not None,'Missing strict prose check');check(strict is not None and not strict['under300'],'Strict whole-block prose under 300');under=[r for r in prose['pages'] if r['uniqueProseWords']<300];check(not under,'Unique prose under 300');check(len(indexed)==len(prose['pages']),'Prose inventory mismatch')
 sitemaps={};listed=set()
 for host,path in [('https://grokarchivehub.com','/sitemap.xml'),('https://grokarchivehub.com','/sitemap-efta.xml'),('https://wiki.grokarchivehub.com','/sitemap.xml')]:
  xml=subprocess.check_output(['curl','-fsS','--max-time','40',host+path]);urls=[n.text for n in ET.fromstring(xml).iter() if n.tag.endswith('}loc')];sitemaps[host+path]=urls;listed.update(urls)
@@ -34,5 +37,5 @@ check(listed=={r['url'] for r in indexed},'Sitemap/indexable set mismatch');chec
 contact=by['https://grokarchivehub.com/contact'];html=(graph/contact['html']).read_text();check(html.count('href="mailto:grokcloudflare@gmail.com"')==2 and '/cdn-cgi/l/email-protection' not in html,'Contact action')
 # All explicitly expanded pages and chosen story homes must remain in the substantive index.
 for path in ['/investigations/barak-gadeco-fee-2014','/evidence-briefs/fbi-epstein-not-evidentiary-scrub','/investigations/barak-saudi-rothschild-proposal-2015','/evidence-briefs/mcc-4chan-two-posters-attribution-audit','/news/doj-march-2025-review-emails-released','/methodology/redaction-breadcrumbs','/archive/EFTA00035574','/corrections/flight-log-count-and-aircraft-reconciliation','/investigations/barak-st-thomas-dec-2014','/reels/shawn-ryan-peter-thiel-account-response']:check('https://grokarchivehub.com'+path in listed,'Requested edited home absent '+path)
-result={'checkedAt':datetime.now(timezone.utc).isoformat(),'scope':json.loads((graph/'summary.json').read_text()),'indexableCount':len(indexed),'indexed':indexed,'sitemaps':sitemaps,'policy':policy,'uniqueProseMethod':prose['method'],'uniqueProse':prose['pages'],'under300':under,'duplicateTitleGroups':dupTitles,'duplicateDescriptionGroups':dupDescriptions,'duplicateBodyGroups':dupBodies,'robotsMismatches':mismatch,'GROKCommentPages':comments,'wikiReceiptCardsNoindex':len(wikiReceipts),'contactMailtoLinks':2,'failures':fail}
+result={'checkedAt':datetime.now(timezone.utc).isoformat(),'scope':json.loads((graph/'summary.json').read_text()),'indexableCount':len(indexed),'indexed':indexed,'sitemaps':sitemaps,'policy':policy,'uniqueProseMethod':prose['method'],'uniqueProse':prose['pages'],'under300':under,'strictProse':strict,'duplicateTitleGroups':dupTitles,'duplicateDescriptionGroups':dupDescriptions,'duplicateBodyGroups':dupBodies,'robotsMismatches':mismatch,'GROKCommentPages':comments,'wikiReceiptCardsNoindex':len(wikiReceipts),'contactMailtoLinks':2,'failures':fail}
 (graph/'publication-acceptance.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['indexed','sitemaps','policy','uniqueProse']},indent=2));assert not fail,fail
