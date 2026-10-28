@@ -1,3 +1,5 @@
+import { PUBLICATION_POLICY } from './content/publication-policy.mjs';
+export function publicationRule(href){const u=new URL(href,'https://grokarchivehub.com');return PUBLICATION_POLICY[u.origin+(u.pathname.replace(/\/+$/,'')||'/')]||null;}
 import { READER_EDITORIAL_METADATA } from './content/reader-editorial-metadata.mjs';
 import { UNAVAILABLE_SOURCE_PDFS } from './content/source-pdf-status.mjs';
 import { READER_LINK_ALIASES } from './content/reader-link-aliases.mjs';
@@ -113,6 +115,9 @@ export function qualityHtml(input,href,entries=[]){
  }
  // Preserve literal source addresses without Cloudflare generating broken utility anchors.
  html=html.replace(/<!--[\s\S]*?-->|<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>|<[^>]+>|[^<]+/gi,token=>token.startsWith('<')?token:token.replace(/[A-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[A-Z0-9-]+(?:\.[A-Z0-9-]+)+/gi,address=>'<!--email_off-->'+address+'<!--/email_off-->'));
+ const publication=publicationRule(href);
+ if(publication?.noindex)html=meta(html,'robots','noindex,follow');
+ if(publication?.canonical)html=html.replace(/<link\b(?=[^>]*rel=["']canonical["'])[^>]*>/ig,'').replace(/<\/head>/i,'<link rel="canonical" href="'+escapeHtml(publication.canonical)+'"></head>');
  return html;
 }
 export function readerNotFoundHtml(href){
@@ -123,6 +128,7 @@ export async function readerQualityResponse(response,request,entries=[]){
  const u=new URL(request.url);if(!['GET','HEAD'].includes(request.method)||u.pathname.startsWith('/api/')||/\/assets\//.test(u.pathname))return response;
  const type=response.headers.get('Content-Type')||'';if(!/text\/html/i.test(type))return response;
  const headers=new Headers(response.headers);
+ if(publicationRule(request.url)?.noindex)headers.set('X-Robots-Tag','noindex,follow');
  if(['/investigations/mcc-final-48-hours-source-chain','/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine'].includes(u.pathname))headers.set('X-Robots-Tag','noindex,follow');
  if(response.status===404&&/^\/(?:archive|receipts)\/efta\d/i.test(u.pathname))return response;
  if(response.status===404){
