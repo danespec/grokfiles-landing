@@ -12,7 +12,7 @@ def fetch(url,cookie=False,range_=False):
  key=hashlib.sha256((url+str(cookie)+str(range_)).encode()).hexdigest()[:20];h=out/(key+'.headers');b=out/(key+'.body');args=['curl','-sS','--connect-timeout','10','--max-time','65','-D',str(h),'-o',str(b)]
  if cookie:args+=['-b','gah_bob_ack=1']
  if range_:args+=['-r','0-7']
- run=subprocess.run(args+[url],capture_output=True);head=h.read_text() if h.exists() else '';body=b.read_bytes() if b.exists() else b'';matches=re.findall(r'HTTP/\S+ (\d+)',head);status=int(matches[-1]) if matches else 0;headers={k.lower():v.strip() for k,v in re.findall(r'^([^:\r\n]+):\s*([^\r\n]*)',head,re.M)}
+ run=None if '--reuse-captures' in sys.argv and h.exists() and b.exists() else subprocess.run(args+[url],capture_output=True);head=h.read_text() if h.exists() else '';body=b.read_bytes() if b.exists() else b'';matches=re.findall(r'HTTP/\S+ (\d+)',head);status=int(matches[-1]) if matches else 0;headers={k.lower():v.strip() for k,v in re.findall(r'^([^:\r\n]+):\s*([^\r\n]*)',head,re.M)}
  return {'url':url,'status':status,'type':headers.get('content-type',''),'location':headers.get('location'),'firstBytes':body[:200].decode('utf8','replace'),'bytes':len(body),'sha256':hashlib.sha256(body).hexdigest(),'headers':headers,'bodyFile':str(b.relative_to(graph))},body
 base='https://grokarchivehub.com';restored=json.loads((repo/'docs/reaudit-20261027/tenth-restored-assets.json').read_text());snapshots=[]
 def snapshot(row):
@@ -62,7 +62,7 @@ for path in ['/barak/receipts','/barak/timeline']:
  for node in main.select('nav,footer'):node.decompose()
  for a in main.select('a[href]'):
   u=urlsplit(urljoin(base+path,a['href']));target=u.scheme+'://'+u.netloc+u.path
-  if u.hostname in ['grokarchivehub.com','wiki.grokarchivehub.com'] and target!=base+path and target not in template:targets.add(target)
+  if u.hostname in ['grokarchivehub.com','wiki.grokarchivehub.com'] and target!=base+path and target not in template and not re.search(r'\.[a-z0-9]{1,8}$',u.path,re.I):targets.add(target)
  noindex=[];unclassified=[]
  for target in sorted(targets):
   r=byurl.get(target)
@@ -108,5 +108,6 @@ for host in [base,'https://wiki.grokarchivehub.com']:
  r,b=fetch(host+'/robots.txt');text=b.decode();check(r['status']==200 and 'User-agent: *' in text and 'Allow: /' in text,'Robots public search '+host);check(not re.search(r'User-agent: (?:Googlebot|Bingbot)\s+Disallow: /(?:\s|$)',text,re.I),'Robots blocked search '+host);robotsChecks.append({'url':host+'/robots.txt','status':r['status'],'body':text})
 for path in ['/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine','/investigations/mcc-final-48-hours-source-chain']:
  row=byurl[base+path];check(row['status']==200 and 'noindex' in (row.get('robotsHeader') or '') and 'noindex' in (row.get('robotsMeta') or '') and row['canonical']==base+'/research/epstein-final-48-hours-mcc' and base+path not in listed,'MCC primary '+path)
-result={'checkedAt':datetime.now(timezone.utc).isoformat(),'snapshots':snapshots,'missing':missing,'dataFiles':data,'book':book,'indexableCount':len(indexed),'duplicateTitleGroups':dupT,'duplicateDescriptionGroups':dupD,'robotsMismatches':robots,'descriptionEllipses':ellipsis,'ETFApages':typos,'badLinks':badlinks,'hubs':hubs,'sitemaps':sitemaps,'linkedAssets':linkedAssets,'dossierChecks':dossierChecks,'routeChecks':routeChecks,'robotsChecks':robotsChecks,'failures':fail}
+prior=json.loads((out/'acceptance.json').read_text()) if '--reuse-captures' in sys.argv and (out/'acceptance.json').exists() else {}
+result={'checkedAt':prior.get('checkedAt',datetime.now(timezone.utc).isoformat()),'analysisAt':datetime.now(timezone.utc).isoformat(),'snapshots':snapshots,'missing':missing,'dataFiles':data,'book':book,'indexableCount':len(indexed),'duplicateTitleGroups':dupT,'duplicateDescriptionGroups':dupD,'robotsMismatches':robots,'descriptionEllipses':ellipsis,'ETFApages':typos,'badLinks':badlinks,'hubs':hubs,'sitemaps':sitemaps,'linkedAssets':linkedAssets,'dossierChecks':dossierChecks,'routeChecks':routeChecks,'robotsChecks':robotsChecks,'failures':fail}
 (out/'acceptance.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['snapshots','missing','dataFiles','book','linkedAssets','dossierChecks','routeChecks','robotsChecks']},indent=2));assert not fail,fail
