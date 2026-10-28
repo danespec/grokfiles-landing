@@ -1,8 +1,8 @@
 export const PUBLICATION_POLICY = {
   "https://wiki.grokarchivehub.com/receipts/EFTA00000468": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00000468"
+    "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+    "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00007893": {
     "noindex": true,
@@ -690,7 +690,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00000468": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+    "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://grokarchivehub.com/archive/EFTA02858481": {
     "noindex": true,
@@ -756,8 +757,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/internet-vs-receipts/efta00000468-removal": {
     "noindex": true,
-    "reason": "Companion reporting consolidated under one article",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00000468"
+    "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+    "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://grokarchivehub.com/archive": {
     "noindex": true,
