@@ -304,5 +304,23 @@
     "file": "evidence-data/doj-oip-epstein-review-2026-10-09/source-manifest.json",
     "sha256": "7bc07b5e9e6dac31244c6c251272d84aeaf3867fd28f2321778c46ff15c774b3",
     "bytes": 1656
+  },
+  {
+    "path": "/evidence-data/birthday-book/recovered_pages/page_118.png",
+    "file": "evidence-data/birthday-book/recovered_pages/page_118.png",
+    "sha256": "4992e27b50a3196e1bab0045d2f564e5084717ee34702498e261dc9f077eccaf",
+    "bytes": 130241
+  },
+  {
+    "path": "/evidence-data/birthday-book/recovered_pages/page_119.png",
+    "file": "evidence-data/birthday-book/recovered_pages/page_119.png",
+    "sha256": "08eb60ed099003014b65e55344d2cf12b07e16d21b1d0219dd7bf3799a88f285",
+    "bytes": 90927
+  },
+  {
+    "path": "/evidence-data/doug-band/source/images/angel-urena-clinton-epstein-statement-image-2019-07-08.jpg",
+    "file": "evidence-data/doug-band/source/images/angel-urena-clinton-epstein-statement-image-2019-07-08.jpg",
+    "sha256": "6fbef3cc7719a9504eac94a49befd9566240d18cb6ee194eba8c591b02f76c76",
+    "bytes": 227677
   }
 ]

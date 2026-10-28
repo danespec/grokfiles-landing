@@ -56,16 +56,19 @@ dupT={k:v for k,v in titles.items() if len(v)>1};dupD={k:v for k,v in descs.item
 hubs={}
 for path in ['/barak/receipts','/barak/timeline']:
  row=byurl[base+path];soup=BeautifulSoup((graph/row['html']).read_text(),'html.parser');main=soup.find('main');targets=set()
- for node in main.select('nav,footer,.route-list,.feature-panel,.archive-navigation,.reader-identifier-links'):node.decompose()
+ template=set()
+ for a in soup.select('header a[href],footer a[href]'):
+  u=urlsplit(urljoin(base+path,a['href']));template.add(u.scheme+'://'+u.netloc+u.path)
+ for node in main.select('nav,footer'):node.decompose()
  for a in main.select('a[href]'):
   u=urlsplit(urljoin(base+path,a['href']));target=u.scheme+'://'+u.netloc+u.path
-  if u.hostname in ['grokarchivehub.com','wiki.grokarchivehub.com'] and target!=base+path:targets.add(target)
+  if u.hostname in ['grokarchivehub.com','wiki.grokarchivehub.com'] and target!=base+path and target not in template:targets.add(target)
  noindex=[];unclassified=[]
  for target in sorted(targets):
   r=byurl.get(target)
   if not r:unclassified.append(target)
   elif 'noindex' in ((r.get('robotsMeta') or '')+(r.get('robotsHeader') or '')).lower():noindex.append(target)
- hubs[path]={'noindex':len(noindex),'contentLinks':len(targets),'noindexTargets':noindex,'unclassified':unclassified,'allTargets':sorted(targets)};check(not unclassified and len(noindex)*2<=len(targets),'Hub ratio '+path)
+ hubs[path]={'noindex':len(noindex),'contentLinks':len(targets),'templateExclusions':len(template),'noindexTargets':noindex,'unclassified':unclassified,'allTargets':sorted(targets)};check(not unclassified and len(noindex)*2<=len(targets),'Hub ratio '+path)
 # All sitemap identities, all linked PDFs and DOI/source references remain independently recorded.
 sitemaps={};listed=set()
 for url in [base+'/sitemap.xml',base+'/sitemap-efta.xml','https://wiki.grokarchivehub.com/sitemap.xml']:
