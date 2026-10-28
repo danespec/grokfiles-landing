@@ -67,5 +67,5 @@ for(const route of RESEARCH_ROUTES.filter(r=>r.owner==='wiki')){
 for(const path of ['/book-of-black/index','/book-of-black/index.html']){const r=await worker.fetch(new Request('https://grokarchivehub.com'+path),env);assert.equal(r.status,301);assert.equal(r.headers.get('Location'),'https://grokarchivehub.com/book-of-black');}
 const mainMap=await(await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env)).text();
 for(const path of ['/archive/ids','/dispatches/doe-v-black-october-2026-dismissal','/dispatches/phang-ecf59-oct16-2026','/news/epstein-wall-street-records-act-2026','/news/state-attorneys-general-efta-ii-2026'])assert.ok(mainMap.includes('<loc>https://grokarchivehub.com'+path+'</loc>'),path+' sitemap coverage');
-assert.equal((mainMap.match(/<loc>/g)||[]).length,195,'Editorial sitemap inventory');
-console.log('PASS research aliases preserve one owning host; book landing alias and 195-page main sitemap coverage');
+assert.equal((mainMap.match(/<loc>/g)||[]).length,193,'Editorial sitemap inventory');
+console.log('PASS research aliases preserve one owning host; book landing alias and 193-page main sitemap coverage');

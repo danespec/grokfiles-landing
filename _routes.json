@@ -43,7 +43,6 @@
     "/evidence-data/*.jsonl",
     "/evidence-data/*.png",
     "/evidence-data/*.jpg",
-    "/evidence-data/*.pdf",
     "/evidence-data/*.m3u8",
     "/evidence-data/*.tsv",
     "/evidence-engine/*",

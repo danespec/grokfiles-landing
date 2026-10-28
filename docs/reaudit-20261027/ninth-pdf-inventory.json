@@ -1,0 +1,289 @@
+{
+  "verified": [
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-final-transcript-2026-06-30.pdf",
+      "sha256": "63b062ff5d3f7a214c3630d2761701f659436ec461e222a55077463a48e72fe9",
+      "bytes": 454438
+    },
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-ti-request-letter-2026-03-03.pdf",
+      "sha256": "ad4d50c130891b45c2148465e921dfd067b7a5ff5bbeb134d4dbec793bb16bf0",
+      "bytes": 112008
+    },
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/doj-phase-one-flight-log-released-us-v-maxwell-2025-02-27.pdf",
+      "sha256": "10fa669e5b637d8ec05b08eebcd6135c1bb0f0915d651e141cfdc93619411215",
+      "bytes": 11669768
+    },
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf",
+      "sha256": "633183545f7bff8ef8bf050af0cb7fc92b78a251b01d39e6c5526dc3f14c49be",
+      "bytes": 449465
+    },
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/house-oversight-gates-transcript-2026-06-10.pdf",
+      "sha256": "7c8c5dd601a3d800ff3d9f459961c0227b8154c5552ebf2e3954c364b7ef7b93",
+      "bytes": 660082
+    },
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/house-oversight-groff-transcript-2026-06-09.pdf",
+      "sha256": "7c22fd0944e04cf62e7462d5db719d67da6793840b57e4ab7826132e3e2cf81d",
+      "bytes": 1095569
+    },
+    {
+      "path": "/evidence-data/doug-band/source/pdfs/house-oversight-kathryn-ruemmler-ti-request-2026-03-03.pdf",
+      "sha256": "e22e1a278e6bfff4387c6fa5b8cd7402a05078975855ad699d32d4b2ca6a4c07",
+      "bytes": 112018
+    },
+    {
+      "path": "/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf",
+      "sha256": "633183545f7bff8ef8bf050af0cb7fc92b78a251b01d39e6c5526dc3f14c49be",
+      "bytes": 449465
+    },
+    {
+      "path": "/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-ti-request-2026-03-03.pdf",
+      "sha256": "3e2584137676399f93cec0b01cf909218c418eafda2dffca6271c77b3cff4dd5",
+      "bytes": 112212
+    },
+    {
+      "path": "/evidence-data/leon-black/source/pdfs/house-oversight-groff-transcript-2026-06-09.pdf",
+      "sha256": "7c22fd0944e04cf62e7462d5db719d67da6793840b57e4ab7826132e3e2cf81d",
+      "bytes": 1095569
+    },
+    {
+      "path": "/evidence-data/leon-black/source/pdfs/house-oversight-gates-transcript-2026-06-10.pdf",
+      "sha256": "7c8c5dd601a3d800ff3d9f459961c0227b8154c5552ebf2e3954c364b7ef7b93",
+      "bytes": 660082
+    },
+    {
+      "path": "/evidence-data/leon-black/source/pdfs/house-oversight-band-transcript-2026-06-30.pdf",
+      "sha256": "63b062ff5d3f7a214c3630d2761701f659436ec461e222a55077463a48e72fe9",
+      "bytes": 454438
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf",
+      "sha256": "ae8d9cfeee736eaa3efd781716abc12b1e43d5cf53afb1e3cbecffe5bd8b1499",
+      "bytes": 95340
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf",
+      "sha256": "b175d521b77ceeb074683552a080993eb679b511716de5050e23945f247a0c9e",
+      "bytes": 269306
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf",
+      "sha256": "ba3f4e4c896d64d6b14f5a9b9a133c37aea8687397215ca122d039d75c02283e",
+      "bytes": 213913
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf",
+      "sha256": "63c51fc29a0b319b2a42013d706d3bb77a3fa11612a0fbd80eb43f31fc13e16a",
+      "bytes": 89429
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/ecf25_notice_compliance.pdf",
+      "sha256": "5289716162977d113d2698ddae877b15df9ff5ca045b08f39d4f6b2f39017bd7",
+      "bytes": 162573
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-16-memorandum-opinion-2026-06-25.pdf",
+      "sha256": "bc8b6b8e04f7137730a5e920effb2813963329be69ba4f95ce195ec924641902",
+      "bytes": 306808
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf",
+      "sha256": "94b6962088a973737d57a40ad55c6339cdb145269be5cd60006fe4c6b0488405",
+      "bytes": 1054214
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-motion-to-intervene-2026-07-15.pdf",
+      "sha256": "310835bafefd8a6872773c8df2febf48c9f017880fc11b9b984483d5f2f2eb06",
+      "bytes": 2754361
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-1-addendum-2026-07-15.pdf",
+      "sha256": "291b91b985887d7ef8dd21415d2b872025719c41f8bd8f6c01496e67f7de9c7b",
+      "bytes": 150691
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/ecf26_motion_intervene.pdf",
+      "sha256": "6cf3580fe4b57a966f29caf84c01213d639ca3980b5aa9e282012fbd766d5c95",
+      "bytes": 499048
+    },
+    {
+      "path": "/evidence-data/efta-compliance/source/pdfs/ecf26_attachment1_proposed_order.pdf",
+      "sha256": "787d53e0e56fa1f25cc534fd78f7ccc1624ea1d3e378e6519d5d4a41c906ea5d",
+      "bytes": 284150
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmd-2026-06-30-letter.pdf",
+      "sha256": "6ada36bec2781a1e1eac9a2c859f55806c4e63df6d2a7d4843339a9068c0dd62",
+      "bytes": 181507
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hr1-final.pdf",
+      "sha256": "0693111b7054a0c119bc79906e38f2a0bf878c8c52a367b5b45fb18a3c1bc4c6",
+      "bytes": 43116
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/govinfo-plaw-119-38-efta.pdf",
+      "sha256": "223eea508617cbd4238c1eb94e23c5c61cc627a6ea05dc185660cb137355cd97",
+      "bytes": 205040
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmd-efta-ii-draft.pdf",
+      "sha256": "98f0161fb3b601bba8765ab1865a9891f22eb7daf13d2987012845702efcc95f",
+      "bytes": 174926
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/doj-2026-02-14-congress-letter.pdf",
+      "sha256": "73c2008faf2893615af8217173e4e1c65f329e43cc1745cff124456041805098",
+      "bytes": 4580109
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun18-agenda.pdf",
+      "sha256": "69af3091b2c4825c5acd1598780134bbf45d6e14b5e9ec537b7c007e804fab42",
+      "bytes": 36147
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun01-handout.pdf",
+      "sha256": "8d4b71115dbce46c047c2bf1ab25b09206c7882e902a05f6a1446d6a4ad97b65",
+      "bytes": 5793364
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/doj-efta-review-protocol.pdf",
+      "sha256": "eff4797fa8485116c82948d7d73dea83fd5914451db275a9f05d75d340d3c2e4",
+      "bytes": 423826
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/doj-2026-01-30-congress-letter.pdf",
+      "sha256": "40e4fd583cd30e927da99ccf822abb1196408243e053034a314fdcbc08b05206",
+      "bytes": 272836
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/govinfo-cfr-28-part16-pdf.pdf",
+      "sha256": "56670661b256a8b1298c9e1d87cd8920e32795dbd762b156e16cc35c5d089616",
+      "bytes": 664482
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/doj-2025-12-19-congress-letter.pdf",
+      "sha256": "5d112b90e6bfee4e35f0a0a5698cf3893a72325fcba4d5e91c5d76e5a3000846",
+      "bytes": 344876
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hr1-fir.pdf",
+      "sha256": "75505d54367b7cb414955a0ff9ac8c4a21c86abb4a905195aadad59f4ec53c41",
+      "bytes": 203840
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun01-agenda.pdf",
+      "sha256": "1bbb2d5dfa705094f2e7a2e7710208bc614da144c2ef7aad18714efb58ffa5dc",
+      "bytes": 34175
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-810.pdf",
+      "sha256": "609a635b94a7e4fe5edcfdfe04c34234d210439cdc7f2631cc8a51d6afa08f67",
+      "bytes": 189746
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-811.pdf",
+      "sha256": "dcebfedf2222facde339e188881f7a6096daeedf4bf4a371daab41eabbecc3a4",
+      "bytes": 1035187
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-813.pdf",
+      "sha256": "b76f0e2f302fbf24c76a0d726141c09c364dad74377315033447b436535f2ef2",
+      "bytes": 251205
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-819.pdf",
+      "sha256": "167457adbdbea98c712eb670f8a4188cbb0bfcbf3b534fe4b16507957c11711d",
+      "bytes": 273476
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-820.pdf",
+      "sha256": "5790d0263d30b33d4e424f2e0562dd32c14543eb369a22c6a61a2068c66a73a2",
+      "bytes": 1077174
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-823.pdf",
+      "sha256": "bf3c43b1f4d0dec4001b6405fbaa2239e61fb128442a5e9d3aa0eba72c11e595",
+      "bytes": 305870
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-826.pdf",
+      "sha256": "55913dde06d00a1d7e8c6f6a21ddf9d49e89fe2a64f84448bf4c821c35d8aeb8",
+      "bytes": 260657
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-839.pdf",
+      "sha256": "70b1b67772d6bc704e31a1de04cccbe85a0e6a092a0efae0c8fdc0f5fd33ecf9",
+      "bytes": 236229
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-845.pdf",
+      "sha256": "3840b28cb82e9def76e8b0666e05b684d135997da79b4f4ba207a0c06965ee49",
+      "bytes": 255546
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-846.pdf",
+      "sha256": "12b5bf0763e7701370e78e7d031e2ffafa0ddbbf6b4c70ed108e6e5e8a8ad611",
+      "bytes": 660387
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-847.pdf",
+      "sha256": "abe3a209ecc61fb4bafa06ee366e7b19908bcee857c431f76af1f0fc0cc1cca8",
+      "bytes": 223765
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-848.pdf",
+      "sha256": "e74042497489adc1c2cf83960f8cfb64c106bfacc03134bfa945e3f98c60da23",
+      "bytes": 227064
+    },
+    {
+      "path": "/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-849.pdf",
+      "sha256": "5a27b2ab760fd74febde3e33b54c818240662bdad7660a26ee7a37d1a95427d1",
+      "bytes": 478360
+    }
+  ],
+  "unavailable": [
+    "/evidence-data/doug-band/source/pdfs/EFTA00582326.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA00582156.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA00579203.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA00579276.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA02335607.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA00011434.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA00581829.pdf",
+    "/evidence-data/doug-band/source/pdfs/EFTA00582193.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/epstein-sdny-indictment-2019-doj-dl.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/maxwell-s2-superseding-indictment-2021-recap.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/maxwell-verdict-form-2021.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/maxwell-judgment-2022-recap-document-696.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/maxwell-jury-charge-verdict-form-2021-recap.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/maxwell-appellate-opinion-2024-justia.pdf",
+    "/evidence-data/blanche-no-evidence/source/pdfs/sjc-bensky-written-testimony-2026-07-16.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/doj-efta00009664-maxwell-protective-order.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/doj-efta00009654-rule17-confidentiality-order.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-sdny.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-deutsche-bank.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-nm-doh.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-nm-prc.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-state-records-archives.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-vi.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-wdmi.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-sdfl.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-jp-morgan.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-nm-rld.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-sc.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-edmi.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-nm-state-land-office.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-office-of-ag.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-sf-institute.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-sf-county-sheriff.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-nmdps.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-office-of-governor.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-faa.pdf",
+    "/evidence-data/new-mexico-doj/source/pdfs/truth-subpoena-usao-nm.pdf"
+  ],
+  "protectedReaderPdf": "/book-of-black/source/Book_of_Black_V6HHT.pdf"
+}

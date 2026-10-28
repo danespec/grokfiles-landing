@@ -1,3 +1,5 @@
+import { READER_EDITORIAL_METADATA } from './content/reader-editorial-metadata.mjs';
+import { UNAVAILABLE_SOURCE_PDFS } from './content/source-pdf-status.mjs';
 import { READER_LINK_ALIASES } from './content/reader-link-aliases.mjs';
 import { PAGE_CARDS } from './content/reader-page-cards.mjs';
 export const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -35,11 +37,12 @@ export function qualityHtml(input,href,entries=[]){
  html=html.replace(/evidence cockpit(?: V4)?/gi,'Evidence overview').replace(/staged supermatrix/gi,'reviewed flight-log index');
  const u=new URL(href);const path=u.pathname.replace(/\/+$/,'')||'/';const canonical=u.origin+(path==='/'?'/':path);
  let title=normalizeReaderTitle((html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)||[])[1]||'Grok Archive Hub');
- title=conciseText(title,51);
+ const editorial=READER_EDITORIAL_METADATA[canonical];
+ if(editorial)title=editorial.title;
  html=html.replace(/<title[^>]*>[\s\S]*?<\/title>/i,'<title>'+escapeHtml(title)+' | Grok Archive Hub</title>');
  html=meta(html,'og:title',title,'property');html=meta(html,'twitter:title',title);
  const description=path==='/investigations/new-mexico-doj-epstein-records'?'Follow New Mexico’s requests for Epstein records, DOJ’s stated legal limits, the court-order trail, and the documents that remain unavailable.':decode((html.match(/<meta\b(?=[^>]*name=["']description["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
- if(description){const text=conciseText(description,155);html=meta(html,'description',text);html=meta(html,'og:description',text,'property');html=meta(html,'twitter:description',text);}
+ if(description){const text=editorial?.description||description;html=meta(html,'description',text);html=meta(html,'og:description',text,'property');html=meta(html,'twitter:description',text);}
  const card=PAGE_CARDS[canonical];
  const oldImage=decode((html.match(/<meta\b(?=[^>]*property=["']og:image["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
  if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png|card-pinboard\.jpg|hero-desk\.jpg/.test(oldImage))){
@@ -79,16 +82,20 @@ export function qualityHtml(input,href,entries=[]){
   if(target.hostname==='www.grokarchivehub.com')target.hostname='grokarchivehub.com';
   if(!['grokarchivehub.com','wiki.grokarchivehub.com'].includes(target.hostname))return all;
   target.protocol='https:';
+  if(UNAVAILABLE_SOURCE_PDFS.includes(target.pathname))return '<span class="source-unavailable">'+label+' — PDF unavailable</span>';
   if(target.pathname.startsWith('/cdn-cgi/l/email-protection'))return '<a href="https://grokarchivehub.com/contact">Contact</a>';
   if(target.pathname==='/api/pdf'&&!target.searchParams.get('id'))return '<a href="https://grokarchivehub.com/search">Find a document PDF</a>';
   const mapped=READER_LINK_ALIASES[target.origin+target.pathname];if(mapped){const next=new URL(mapped);next.search=target.search;next.hash=target.hash;target=next;}
+  if(target.pathname.startsWith('/evidence-data/')&&target.pathname.includes('/source/html/')&&target.pathname.endsWith('.html'))target.pathname=target.pathname.slice(0,-5);
+  if(target.pathname==='/api/pdf'&&target.searchParams.get('id'))target.pathname='/pdf-lite';
+  if((target.pathname.startsWith('/evidence-data/book-of-black/')||target.pathname.startsWith('/book-of-black/source/'))&&target.pathname.endsWith('.pdf'))return '<a href="https://grokarchivehub.com/book-of-black">Source access and reader notice</a>';
   let attrs=before+after;
   if(target.pathname==='/auth/patreon/start'){
    const old=attrs.match(/rel=["']([^"']*)["']/i);const values=new Set((old?old[1]:'').split(/\s+/).filter(Boolean));values.add('nofollow');attrs=attrs.replace(/\s*rel=["'][^"']*["']/i,'')+' rel="'+[...values].join(' ')+'"';
   }
   return '<a'+attrs+' href="'+escapeHtml(target.href)+'">'+label+'</a>';
  });
- if(path==='/investigations/mcc-final-48-hours-source-chain'){
+ if(['/investigations/mcc-final-48-hours-source-chain','/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine'].includes(path)){
   html=html.replace(/<link\b(?=[^>]*rel=["']canonical["'])[^>]*>/ig,'').replace(/<\/head>/i,'<link rel="canonical" href="https://grokarchivehub.com/research/epstein-final-48-hours-mcc"></head>');html=meta(html,'robots','noindex,follow');
  }
  // Add a page entity alongside the existing publisher entity; retain record-specific schemas.
@@ -114,7 +121,7 @@ export async function readerQualityResponse(response,request,entries=[]){
  const u=new URL(request.url);if(!['GET','HEAD'].includes(request.method)||u.pathname.startsWith('/api/')||/\/assets\//.test(u.pathname))return response;
  const type=response.headers.get('Content-Type')||'';if(!/text\/html/i.test(type))return response;
  const headers=new Headers(response.headers);
- if(u.pathname==='/investigations/mcc-final-48-hours-source-chain')headers.set('X-Robots-Tag','noindex,follow');
+ if(['/investigations/mcc-final-48-hours-source-chain','/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine'].includes(u.pathname))headers.set('X-Robots-Tag','noindex,follow');
  if(response.status===404&&/^\/(?:archive|receipts)\/efta\d/i.test(u.pathname))return response;
  if(response.status===404){
   headers.set('X-Robots-Tag','noindex,follow');headers.set('Cache-Control','no-store');headers.set('Content-Type','text/html; charset=utf-8');
