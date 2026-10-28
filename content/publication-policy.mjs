@@ -1,8 +1,8 @@
 export const PUBLICATION_POLICY = {
   "https://wiki.grokarchivehub.com/receipts/EFTA00000468": {
     "noindex": true,
-    "reason": "Duplicate receipt; main-site page owns the prose",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00000468"
+    "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+    "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00007893": {
     "noindex": true,
@@ -690,7 +690,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/archive/EFTA00000468": {
     "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
+    "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+    "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://grokarchivehub.com/archive/EFTA02858481": {
     "noindex": true,
@@ -756,8 +757,8 @@ export const PUBLICATION_POLICY = {
   },
   "https://grokarchivehub.com/internet-vs-receipts/efta00000468-removal": {
     "noindex": true,
-    "reason": "Companion reporting consolidated under one article",
-    "canonical": "https://grokarchivehub.com/archive/EFTA00000468"
+    "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+    "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://grokarchivehub.com/archive": {
     "noindex": true,
@@ -814,5 +815,195 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Source locator supporting the chosen prose home",
     "canonical": "https://grokarchivehub.com/investigations/ch0080-video-file-windows"
+  },
+  "https://grokarchivehub.com/investigations/fara-review-signals-not-legal-conclusions": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 307
+  },
+  "https://grokarchivehub.com/banking-records": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 311
+  },
+  "https://grokarchivehub.com/investigations/birthday-book-source-object-not-identity-proof": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 315
+  },
+  "https://grokarchivehub.com/investigations/fbi-review-holdings-vault-parts-12-13": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 327
+  },
+  "https://grokarchivehub.com/methodology/confidence-labels-open-slots": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 352
+  },
+  "https://grokarchivehub.com/news/epstein-wall-street-records-act-2026": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 367
+  },
+  "https://grokarchivehub.com/news/state-attorneys-general-efta-ii-2026": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 367
+  },
+  "https://grokarchivehub.com/reels/clinton-cgi-publicis-transfer-source-audit": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 369
+  },
+  "https://grokarchivehub.com/dispatches": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 371
+  },
+  "https://grokarchivehub.com/methodology": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 388
+  },
+  "https://grokarchivehub.com/investigations/late-july-watch-status-records": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 395
+  },
+  "https://grokarchivehub.com/investigations/open-receipt-slots-epstein-death": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 396
+  },
+  "https://grokarchivehub.com/dispatches/doj-oip-epstein-records-oct21-2026": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 402
+  },
+  "https://grokarchivehub.com/dispatches/epstein-open-receipt-slots": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 405
+  },
+  "https://grokarchivehub.com/news/bank-of-america-aml-penalties-epstein-settlement-2026": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 408
+  },
+  "https://grokarchivehub.com/guides/epstein-black-book-redacted-doj": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 414
+  },
+  "https://grokarchivehub.com/methodology/how-not-to-overread-flight-logs": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 423
+  },
+  "https://grokarchivehub.com/evidence-briefs/southern-trust-gates-client-definition": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 428
+  },
+  "https://grokarchivehub.com/document-autopsies/leon-black-transcript": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 447
+  },
+  "https://grokarchivehub.com/dispatches/epstein-jail-logs": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 449
+  },
+  "https://grokarchivehub.com/about-the-operator": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 454
+  },
+  "https://grokarchivehub.com/dispatches/efta-files-guide": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 455
+  },
+  "https://grokarchivehub.com/investigations/doj-oig-report-as-backbone": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 461
+  },
+  "https://grokarchivehub.com/guides/doj-epstein-data-sets": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 472
+  },
+  "https://grokarchivehub.com/guides/epstein-flight-logs-doj": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 475
+  },
+  "https://grokarchivehub.com/reels/gratitude-america-10-million-efta00080260": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 476
+  },
+  "https://grokarchivehub.com/news": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 478
+  },
+  "https://grokarchivehub.com/barak/fara-review": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 479
+  },
+  "https://grokarchivehub.com/guides/epstein-files-transparency-act": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 493
+  },
+  "https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 500
+  },
+  "https://grokarchivehub.com/editorial-policy": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 515
+  },
+  "https://grokarchivehub.com/evidence-briefs/epstein-code-words-documentary-test": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 548
+  },
+  "https://grokarchivehub.com/investigations/palm-beach-2006-police-jet-aviation-call-records": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 559
+  },
+  "https://grokarchivehub.com/redacted-files": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 568
+  },
+  "https://grokarchivehub.com/news/fbi-vault-epstein-review-part-14-october-2026": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 569
+  },
+  "https://grokarchivehub.com/guides/how-to-search-epstein-files": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 570
+  },
+  "https://grokarchivehub.com/guides/epstein-client-list-explained": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 571
+  },
+  "https://grokarchivehub.com/barak/timeline": {
+    "noindex": true,
+    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
+    "screenedUniqueProseWords": 579
   }
 };
