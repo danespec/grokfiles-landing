@@ -102,6 +102,8 @@ export function qualityHtml(input,href,entries=[]){
   const ld={'@context':'https://schema.org','@type':wanted,'@id':canonical+'#page',url:canonical,name:title,description:desc,isPartOf:{'@type':'WebSite',name:'Grok Archive Hub',url:u.origin+'/'}};
   html=html.replace(/<\/head>/i,'<script type="application/ld+json">'+JSON.stringify(ld).replace(/<\//g,'<\\/')+'</script>\n</head>');
  }
+ // Preserve literal source addresses without Cloudflare generating broken utility anchors.
+ html=html.replace(/<!--[\s\S]*?-->|<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>|<[^>]+>|[^<]+/gi,token=>token.startsWith('<')?token:token.replace(/[A-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[A-Z0-9-]+(?:\.[A-Z0-9-]+)+/gi,address=>'<!--email_off-->'+address+'<!--/email_off-->'));
  return html;
 }
 export function readerNotFoundHtml(href){
