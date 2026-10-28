@@ -14,7 +14,7 @@ const env={ASSETS:{fetch:async(input)=>{
  const type=/\.pdf$/.test(u.pathname)?'application/pdf':/\.json$/.test(u.pathname)?'application/json':/source\/html/.test(u.pathname)?'text/html':'text/plain';
  return new Response(data,{headers:{'Content-Type':type}});
 }}};
-for(const method of ['GET','HEAD'])for(const path of ['/evidence-data/zzz/nope.html','/evidence-data/zzz/nope.png','/evidence-data/zzz/nope.txt','/evidence-data/zzz/nope.json','/evidence-data/zzz/nope.tsv','/evidence-data/zzz/nope.csv','/evidence-data/zzz/nope.pdf','/evidence-data/zzz/nope','/evidence-data/new-mexico-doj/source/html/zzz-nope','/book-of-black/source/nope.txt']){
+for(const method of ['GET','HEAD'])for(const path of ['/evidence-data/zzz/nope.html','/evidence-data/zzz/nope.png','/evidence-data/zzz/nope.txt','/evidence-data/zzz/nope.json','/evidence-data/zzz/nope.tsv','/evidence-data/zzz/nope.csv','/evidence-data/zzz/nope.pdf','/evidence-data/zzz/nope','/evidence-data/new-mexico-doj/source/html/zzz-nope','/book-of-black/source/nope.html','/book-of-black/source/nope.png','/book-of-black/source/nope.txt']){
  const r=await worker.fetch(new Request('https://grokarchivehub.com'+path,{method}),env);assert.equal(r.status,404,path);
 }
 const restored=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/tenth-restored-assets.json',root),'utf8'));
@@ -28,10 +28,12 @@ for(const path of ['/api/book-of-black/status','/api/book-of-black/page/1','/api
  const r=await worker.fetch(new Request('https://grokarchivehub.com'+path,{headers:{Cookie:'gah_bob_ack=1'}}),env);assert.equal(r.status,200,path);assert.match(r.headers.get('Content-Type'),/application\/json/);await r.json();
 }
 for(const k of ['title','description']){const seen=new Set();for(const [url,m] of Object.entries(metadata)){assert.ok(!seen.has(m[k]),'Duplicate '+k+': '+url);seen.add(m[k]);}}
-console.log('PASS all restored asset hashes and 46 source bodies, GET/HEAD missing assets, route coverage, gated manuscript bytes/range and all reader JSON APIs, unique reviewed metadata');
+console.log('PASS all restored asset hashes and source bodies, GET/HEAD missing assets, route coverage, gated manuscript bytes/range and all reader JSON APIs, unique reviewed metadata');
 
 // Reproduce registered-but-missing files and misleading PDF MIME types, not just unknown URLs.
 for(const path of ["/evidence-data/new-mexico-doj/source/html/uscode-foia-552","/evidence-data/doj-oip-epstein-review-2026-10-09/source-manifest.json","/book-of-black/source/Book_of_Black_V6HHT.pdf"]){const broken={ASSETS:{fetch:async()=>new Response(home,{headers:{"Content-Type":path.endsWith(".pdf")?"application/pdf":"text/html"}})}};const r=await worker.fetch(new Request("https://grokarchivehub.com"+path,{headers:{Cookie:"gah_bob_ack=1"}}),broken);assert.equal(r.status,404,path);}
 console.log("PASS known asset fallback and falsely labelled manuscript regression cases");
 
 for(const host of ["grokarchivehub.com"]){const r=await worker.fetch(new Request("https://"+host+"/pdf-lite?id=ZZZ"),env);assert.equal(r.status,404);}
+
+const replacements=JSON.parse(await fs.readFile(new URL("docs/reaudit-20261027/tenth-source-replacements.json",root),"utf8"));const sourcePage=await fs.readFile(new URL("investigations/new-mexico-doj-epstein-records.html",root),"utf8");for(const [path,url] of Object.entries(replacements)){assert.ok(!sourcePage.includes('href="'+path+'"'));assert.ok(sourcePage.includes('href="'+url+'"'));const r=await worker.fetch(new Request("https://grokarchivehub.com"+path),env);assert.equal(r.status,404);}

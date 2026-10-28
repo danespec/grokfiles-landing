@@ -8,19 +8,20 @@ import subprocess,json,re,hashlib,sys,xml.etree.ElementTree as ET
 repo=Path(__file__).resolve().parents[1];graph=Path(sys.argv[1]);out=graph/'asset-handoff';out.mkdir(parents=True,exist_ok=True);fail=[]
 def check(ok,why):
  if not ok:fail.append(why)
-def fetch(url,cookie=False,range_=False):
+def fetch(url,cookie=False,range_=False,refresh=False):
  key=hashlib.sha256((url+str(cookie)+str(range_)).encode()).hexdigest()[:20];h=out/(key+'.headers');b=out/(key+'.body');args=['curl','-sS','--connect-timeout','10','--max-time','65','-D',str(h),'-o',str(b)]
  if cookie:args+=['-b','gah_bob_ack=1']
  if range_:args+=['-r','0-7']
- run=None if '--reuse-captures' in sys.argv and h.exists() and b.exists() else subprocess.run(args+[url],capture_output=True);head=h.read_text() if h.exists() else '';body=b.read_bytes() if b.exists() else b'';matches=re.findall(r'HTTP/\S+ (\d+)',head);status=int(matches[-1]) if matches else 0;headers={k.lower():v.strip() for k,v in re.findall(r'^([^:\r\n]+):\s*([^\r\n]*)',head,re.M)}
+ run=None if not refresh and '--reuse-captures' in sys.argv and h.exists() and b.exists() else subprocess.run(args+[url],capture_output=True);head=h.read_text() if h.exists() else '';body=b.read_bytes() if b.exists() else b'';matches=re.findall(r'HTTP/\S+ (\d+)',head);status=int(matches[-1]) if matches else 0;headers={k.lower():v.strip() for k,v in re.findall(r'^([^:\r\n]+):\s*([^\r\n]*)',head,re.M)}
  return {'url':url,'status':status,'type':headers.get('content-type',''),'location':headers.get('location'),'firstBytes':body[:200].decode('utf8','replace'),'bytes':len(body),'sha256':hashlib.sha256(body).hexdigest(),'headers':headers,'bodyFile':str(b.relative_to(graph))},body
 base='https://grokarchivehub.com';restored=json.loads((repo/'docs/reaudit-20261027/tenth-restored-assets.json').read_text());snapshots=[]
 def snapshot(row):
  r,b=fetch(base+row['path']);s=BeautifulSoup(b,'html.parser');r['title']=s.title.get_text(' ',strip=True) if s.title else '';r['homepageCanonicalCount']=len(re.findall(rb'canonical["\x27]?\s+href=["\x27]https://grokarchivehub.com/["\x27]',b,re.I));check(r['status']==200 and r['homepageCanonicalCount']==0 and 'Epstein Files & Original Investigations' not in r['title'],'Snapshot '+row['path']);return r
 with ThreadPoolExecutor(max_workers=8) as ex:snapshots=list(ex.map(snapshot,[r for r in restored if '/source/html/' in r['path']]))
-unknown=['/evidence-data/zzz/nope'+x for x in ['.txt','.json','.tsv','.csv','.pdf','.html','.png','']]+['/evidence-data/new-mexico-doj/source/html/zzz-nope','/book-of-black/source/zzz-nope.pdf','/book-of-black/source/zzz-nope.txt'];missing=[]
+unknown=['/evidence-data/zzz/nope'+x for x in ['.txt','.json','.tsv','.csv','.pdf','.html','.png','']]+['/evidence-data/new-mexico-doj/source/html/zzz-nope','/book-of-black/source/zzz-nope.pdf','/book-of-black/source/zzz-nope.txt','/book-of-black/source/zzz-nope.html','/book-of-black/source/zzz-nope.png'];missing=[]
+unknown+=list(json.loads((repo/'docs/reaudit-20261027/tenth-source-replacements.json').read_text()))
 for p in unknown:
- r,b=fetch(base+p);missing.append(r);check(r['status']==404,'Unknown '+p)
+ r,b=fetch(base+p,refresh=True);missing.append(r);check(r['status']==404,'Unknown '+p)
 data=[]
 for p,mime in [('/evidence-data/blanche-no-evidence/source/captions/senate-isvp-july15-combined-captions.txt','text/plain'),('/evidence-data/doj-oip-epstein-review-2026-10-09/source-manifest.json','application/json'),('/research/epstein-final-48-hours-mcc-source-ledger.tsv','text/tab-separated-values')]:
  r,b=fetch(base+p);data.append(r);check(r['status']==200 and mime in r['type'] and not b.lstrip().lower().startswith(b'<!doc'),'Data '+p)
@@ -35,7 +36,7 @@ for path in ['/status','/page/1','/page/2','/page/100','/search?q=black','/ledge
  try:json.loads(b)
  except ValueError:check(False,'Book non-JSON '+path)
 r,b=fetch(base+'/api/book-of-black/status');book.append(r);check(r['status']==200 and 'application/json' in r['type'],'Book public status')
-pages=json.loads((graph/'pages.json').read_text());byurl={r['url']:r for r in pages};indexed=[];titles=defaultdict(list);descs=defaultdict(list);robots=[];ellipsis=[];typos=[];badlinks=[]
+pages=json.loads((graph/'pages.json').read_text());byurl={r['url']:r for r in pages};indexed=[];titles=defaultdict(list);descs=defaultdict(list);robots=[];ellipsis=[];typos=[];badlinks=[];asset_urls=set()
 for row in pages:
  p=graph/row['html']
  if row['status']!=200 or 'text/html' not in row.get('type','') or not p.exists():continue
@@ -45,6 +46,7 @@ for row in pages:
  if '…' in desc:ellipsis.append(row['url'])
  for a in soup.select('a[href]'):
   u=urlsplit(urljoin(row['url'],a['href']))
+  if u.hostname=='grokarchivehub.com' and (u.path.startswith('/evidence-data/') or u.path.endswith('.tsv')):asset_urls.add(u.scheme+'://'+u.netloc+u.path+('?' + u.query if u.query else ''))
   if u.hostname not in ['grokarchivehub.com','wiki.grokarchivehub.com']:continue
   if '/cdn-cgi/l/email-protection' in u.path or u.path=='/api/pdf' or u.path.endswith('.html'):badlinks.append([row['url'],u.geturl()])
   if u.path=='/auth/patreon/start' and 'nofollow' not in a.get('rel',[]):badlinks.append([row['url'],'missing nofollow'])
@@ -76,14 +78,6 @@ for url in [base+'/sitemap.xml',base+'/sitemap-efta.xml','https://wiki.grokarchi
  for u in urls:row=byurl.get(u);check(row is not None and row['status']==200 and row['canonical']==u and 'noindex' not in ((row.get('robotsMeta') or '')+(row.get('robotsHeader') or '')).lower(),'Sitemap identity '+u)
 check(not ({r['url'] for r in indexed}-listed),'Indexable sitemap omissions')
 # Check every evidence asset actually linked from the crawled HTML, including noindex tools.
-asset_urls=set()
-for row in pages:
- p=graph/row['html']
- if row['status']!=200 or 'text/html' not in row.get('type','') or not p.exists():continue
- soup=BeautifulSoup(p.read_text(),'html.parser')
- for a in soup.select('a[href]'):
-  u=urlsplit(urljoin(row['url'],a['href']))
-  if u.hostname=='grokarchivehub.com' and (u.path.startswith('/evidence-data/') or u.path.endswith('.tsv')):asset_urls.add(u.scheme+'://'+u.netloc+u.path+('?' + u.query if u.query else ''))
 expected_pdfs={base+r['path']:r for r in json.loads((repo/'docs/reaudit-20261027/ninth-pdf-inventory.json').read_text())['verified']}
 asset_urls.update(expected_pdfs)
 def asset(url):

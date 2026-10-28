@@ -18538,6 +18538,8 @@ export default {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
 
+    if ((request.method === "GET" || request.method === "HEAD") && url.pathname.startsWith("/book-of-black/source/") && url.pathname !== "/book-of-black/source/Book_of_Black_V6HHT.pdf") return evidenceAssetMissing(request);
+
     // Missing evidence must fail before legacy .html canonical redirects or SPA fallback.
     if ((request.method === "GET" || request.method === "HEAD") && url.pathname.startsWith("/evidence-data/") && !EVIDENCE_ASSETS[url.pathname]) return evidenceAssetMissing(request);
 

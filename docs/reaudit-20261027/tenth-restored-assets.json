@@ -126,22 +126,10 @@
     "bytes": 90490
   },
   {
-    "path": "/evidence-data/new-mexico-doj/source/html/doj-epstein-library",
-    "file": "evidence-data/new-mexico-doj/source/html/doj-epstein-library.html",
-    "sha256": "a11f316c4df97db9abfa54126ea31386aaf86f6adc07d40d3931f046995a7b7d",
-    "bytes": 2207
-  },
-  {
     "path": "/evidence-data/new-mexico-doj/source/html/doj-oip-efta-foia-library",
     "file": "evidence-data/new-mexico-doj/source/html/doj-oip-efta-foia-library.html",
     "sha256": "84661b29a843304182a830ae4281bbb7ff489096f1d89796ca7a2de9eaca0e8d",
     "bytes": 429363
-  },
-  {
-    "path": "/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b",
-    "file": "evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b.html",
-    "sha256": "604777dd8d69be85cf809295f57eb82f235a659ada6f5f2c9780b35016a3d28a",
-    "bytes": 10596
   },
   {
     "path": "/evidence-data/new-mexico-doj/source/html/nmd-2026-02-19-zorro-reopen",

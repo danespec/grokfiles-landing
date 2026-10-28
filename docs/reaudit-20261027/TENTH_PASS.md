@@ -2,9 +2,9 @@
 
 This record replaces the earlier completion claim. It covers the supplied handoff and the additional three linked images found during its verification. It does not claim that every possible site behavior or search-engine outcome has been tested.
 
-HTML crawl captured: 2026-10-28T11:58:22.811389+00:00. Asset capture completed: 2026-10-28T12:04:57.709290+00:00. Analysis: 2026-10-28T12:07:58.216932+00:00.
+HTML crawl captured: 2026-10-28T11:58:22.811389+00:00. Asset capture completed: 2026-10-28T12:04:57.709290+00:00. Analysis: 2026-10-28T12:17:11.814154+00:00.
 
-Production: Pages `cdb8cb1e`; wiki `gah-wiki-gateway:asset-identity-tenth-20261027`, immutable image `sha256:a212985d833d6a62016103fe7dfff3d9030813976e1d56d6ca896318ce320715`. Wiki rollback: `grok_wiki_gateway_before_asset_identity_tenth_20261027`. Main rollback: `532a38d9`.
+Production: Pages `176aea34`; wiki `gah-wiki-gateway:asset-identity-tenth-20261027`, immutable image `sha256:a212985d833d6a62016103fe7dfff3d9030813976e1d56d6ca896318ce320715`. Wiki rollback: `grok_wiki_gateway_before_asset_identity_tenth_20261027`. Main rollback: `532a38d9`.
 
 Source changes: [PR #245](https://github.com/danespec/grokfiles-landing/pull/245) and [PR #246](https://github.com/danespec/grokfiles-landing/pull/246). Exact machine-readable per-URL results: [tenth-pass-acceptance.json](tenth-pass-acceptance.json).
 
@@ -17,10 +17,10 @@ Duplicate title groups: 0; duplicate description groups: 0
 Robots mismatches: 0; descriptions with ellipses: 0
 ETFA editorial HTML pages: 0; indirect/utility-link findings: 0
 HTML pages with GROK_ comments: 0
-Source snapshots: 46 real bodies; homepage canonicals: 0
-Linked evidence/data assets: 208 HTTP 200 with content checks
+Source snapshots: 44 real bodies; homepage canonicals: 0
+Linked evidence/data assets: 206 HTTP 200 with content checks
 PDF full GETs and SHA-256 checks: 49; PDF HEADs: 49
-Arbitrary missing evidence/book source paths: 11 direct 404 responses
+Arbitrary missing evidence/book source paths: 15 direct 404 responses
 Dossier ID/H1, source order and reciprocal-link checks: 69
 Failures: 0
 ```
@@ -36,7 +36,7 @@ The 82 redirects in the crawl are seeded aliases and cross-host ownership routes
 
 Counts use unique same-site page URLs inside `main`, excluding the same page, file downloads and the 20 distinct header/footer destinations actually present in these captures. All target URLs and exclusions are recorded in the JSON. This differs from the handoff’s undocumented list of 22 template URLs; the full target lists make the calculation reviewable. Unresolved detail links remain available on the explicit `/barak/raw-receipts` noindex directory, with their review limits.
 
-## All 46 source snapshots
+## 44 source snapshots and two official-source replacements
 
 | URL | Status | Content type | Archived title | Homepage canonical count |
 |---|---:|---|---|---:|
@@ -61,9 +61,7 @@ Counts use unique same-site page URLs inside `main`, excluding the same page, fi
 | https://grokarchivehub.com/evidence-data/leon-black/source/html/sec-apollo-dechert-report-ex99-1-2021-01-25 | 200 | text/plain; charset=utf-8 | EX-99.1 | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/doj-2026-01-30-release | 200 | text/plain; charset=utf-8 | Office of Public Affairs \|  Department of Justice Publishes 3.5 Million Responsive Pages in Compliance with the Epstein Files Transparency Act \| United States Department of Justice | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/doj-epstein-disclosures | 200 | text/plain; charset=utf-8 | Department of Justice \|  DOJ Disclosures \| United States Department of Justice | 0 |
-| https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/doj-epstein-library | 200 | text/plain; charset=utf-8 |  | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/doj-oip-efta-foia-library | 200 | text/plain; charset=utf-8 | Office of Information Policy \|  FOIA Library | 0 |
-| https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b | 200 | text/plain; charset=utf-8 | Federal Register :: Request Access | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/nmd-2026-02-19-zorro-reopen | 200 | text/plain; charset=utf-8 | Statement from the New Mexico Department of Justice Regarding Zorro Ranch - New Mexico Department of Justice | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/nmd-2026-03-09-zorro-search | 200 | text/plain; charset=utf-8 | Statement from New Mexico Department of Justice Spokesperson Regarding Today's Search of the Former 'Zorro Ranch’ - New Mexico Department of Justice | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/nmd-2026-06-09-world-without-exploitation | 200 | text/plain; charset=utf-8 | At World Without Exploitation Annual Conference, New Mexico Attorney General Raúl Torrez Tells Survivors: “We Will Be True and Honest Warriors on Your Behalf”   - New Mexico Department of Justice | 0 |
@@ -87,7 +85,7 @@ Counts use unique same-site page URLs inside `main`, excluding the same page, fi
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/uscode-rule-16 | 200 | text/plain; charset=utf-8 | 18 USC App Fed R Crim P Rule 16: Discovery and Inspection | 0 |
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/uscode-rule-6 | 200 | text/plain; charset=utf-8 | 18 USC App Fed R Crim P Rule 6: The Grand Jury | 0 |
 
-44 snapshot files match the SHA-256 values in their original source manifests. The two Blanche snapshots have no comparable recorded manifest hash; their restored bytes are hashed separately in `tenth-restored-assets.json`. Every returned body differs from the homepage. Snapshots remain noindex and are served as plain text to avoid executing archived third-party HTML.
+42 snapshot files match the SHA-256 values in their original source manifests. The two Blanche snapshots have no comparable recorded manifest hash; their restored bytes are hashed separately in `tenth-restored-assets.json`. Every returned body differs from the homepage. Snapshots remain noindex and are served as plain text to avoid executing archived third-party HTML.
 
 ## Missing paths, linked data and acknowledged reader
 
@@ -104,6 +102,10 @@ Counts use unique same-site page URLs inside `main`, excluding the same page, fi
 | https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/zzz-nope | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
 | https://grokarchivehub.com/book-of-black/source/zzz-nope.pdf | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
 | https://grokarchivehub.com/book-of-black/source/zzz-nope.txt | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
+| https://grokarchivehub.com/book-of-black/source/zzz-nope.html | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
+| https://grokarchivehub.com/book-of-black/source/zzz-nope.png | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
+| https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/doj-epstein-library | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
+| https://grokarchivehub.com/evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b | 404 | text/plain; charset=utf-8 | `"Evidence asset not found"` |
 | https://grokarchivehub.com/evidence-data/blanche-no-evidence/source/captions/senate-isvp-july15-combined-captions.txt | 200 | text/plain; charset=utf-8 | `"[00:15:48] SENATOR: SENATOR: WELL, SENATOR: WELL, EVERYBODY, SENATOR: WELL, EVER"` |
 | https://grokarchivehub.com/evidence-data/doj-oip-epstein-review-2026-10-09/source-manifest.json | 200 | application/json; charset=utf-8 | `"{\n  \"schema\": \"gah.editorial-source-summary.v1\",\n  \"publication\": \"2026-10-12\",\n"` |
 | https://grokarchivehub.com/research/epstein-final-48-hours-mcc-source-ledger.tsv | 200 | text/tab-separated-values; charset=utf-8 | `"event_id\ttime\tpublished_record_and_limits\tsource_links\nMCC-EVT-002\tJul. 7, 2019 "` |
@@ -135,7 +137,7 @@ Acknowledged manuscript: **17,775,835 bytes**, SHA-256 `e28da16e03c8b7e9819bf501
 | 9. robots.txt | Both captured in full in JSON; search allow rules and correct sitemap lines retained. Main managed training blocks and content signals were not edited. |
 | 10. MCC and docket watch | Three MCC companions stay noindex and canonical to the primary, outside sitemaps; five docket-watch filings retain noindex and their existing real PDF links. |
 | 11. Metadata and copy | 336 indexable pages: zero duplicate title/description groups, title <=70 and description <=155, zero ellipses. No remaining audited reader jargon. |
-| 12. Asset identity | Exact evidence inventory blocks unknown paths before canonical redirects/SPA fallback; known-file fallback and falsely labelled PDF cases are regression-tested. All 208 tested linked assets serve real content. |
+| 12. Asset identity | Exact evidence inventory blocks unknown paths before canonical redirects/SPA fallback; known-file fallback and falsely labelled PDF cases are regression-tested. All 206 tested linked assets serve real content. |
 
 ## Additional image repairs
 
@@ -147,9 +149,20 @@ Acknowledged manuscript: **17,775,835 bytes**, SHA-256 `e28da16e03c8b7e9819bf501
 
 ## Scope and limits
 
-The HTML crawl covers the sitemap URLs, deployed first-party HTML, research-route registry, and recursively followed public HTML links: 1,086 distinct routes, including 135 viewer URLs with their identifiers. Source assets, account actions, API routes and unreviewed corpus locators are handled separately rather than counted as published pages. The asset audit includes 208 unique linked evidence/data URLs plus the targeted negatives and reader APIs. Existing security/auth/rate-limit guard fingerprints were unchanged during the immutable wiki cutover.
+The HTML crawl covers the sitemap URLs, deployed first-party HTML, research-route registry, and recursively followed public HTML links: 1,086 distinct routes, including 135 viewer URLs with their identifiers. Source assets, account actions, API routes and unreviewed corpus locators are handled separately rather than counted as published pages. The asset audit includes 206 unique linked evidence/data URLs plus the targeted negatives and reader APIs. Existing security/auth/rate-limit guard fingerprints were unchanged during the immutable wiki cutover.
 
 This is one live capture from the available network location, not proof about every Cloudflare region, future deployments, upstream-site availability, Google indexing or rankings. No cache purge was required.
+
+## Two rejected access-challenge captures
+
+Of the original 46 snapshot links, 44 now serve usable archived captures. The DOJ library and eCFR captures were access-challenge responses, so their citations were repointed to the official source URLs below. Their obsolete local capture URLs now return 404. These are not counted as restored snapshots or passing linked assets.
+
+| Removed local capture | Official citation now linked | Local response |
+|---|---|---|
+| /evidence-data/new-mexico-doj/source/html/doj-epstein-library | https://www.justice.gov/epstein | 404, text/plain; Evidence asset not found |
+| /evidence-data/new-mexico-doj/source/html/ecfr-touhy-subpart-b | https://www.ecfr.gov/current/title-28/chapter-I/part-16/subpart-B | 404, text/plain; Evidence asset not found |
+
+Response captures were reused for unchanged pages/assets during final analysis; missing-path probes were fetched again after the last deployment, and the revised New Mexico citation HTML was fetched and checked. Per-response dates remain in the JSON. Upstream access challenges are not represented as complete research sources.
 
 ## Docket-watch captures
 
