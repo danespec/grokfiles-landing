@@ -1005,5 +1005,17 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
     "screenedUniqueProseWords": 579
+  },
+  "https://grokarchivehub.com/videos/jpmorgan-nine-sars-reporting-timeline": {
+    "noindex": true,
+    "reason": "Supporting media page outside the initial curated article index; retain watch access"
+  },
+  "https://grokarchivehub.com/videos/ask-gah-search-epstein-files": {
+    "noindex": true,
+    "reason": "Supporting media page outside the initial curated article index; retain watch access"
+  },
+  "https://grokarchivehub.com/videos/hold-the-letter-victim-notification": {
+    "noindex": true,
+    "reason": "Supporting media page outside the initial curated article index; retain watch access"
   }
 };
