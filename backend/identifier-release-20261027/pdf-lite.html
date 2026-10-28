@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grok PDF Lite</title>
+
+
+
+<style>
+html,body{height:100%;margin:0;background:#111;color:#eee;font-family:system-ui,sans-serif;overflow:hidden}
+#bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px;background:#07111f;border-bottom:1px solid #2b445f}
+button,a{padding:7px 10px;border-radius:8px;border:1px solid #3b5d7a;background:#020617;color:#e0f2fe;text-decoration:none;font-weight:700}
+a.main{background:#facc15;color:#111827}
+#title{font-weight:900;margin-right:auto}
+#msg{padding:8px;color:#fde68a}
+#stage{height:calc(100% - 52px);overflow:auto;text-align:center;background:#222}
+canvas{display:block;margin:10px auto;background:white;max-width:100%;height:auto}
+@media(max-width:650px){#bar{align-items:stretch}button,a{flex:1 1 42%}#title{flex:1 1 100%}}
+</style>
+
+<meta name="robots" content="noindex,follow,noarchive">
+</head>
+<body>
+<div id="bar">
+  <span id="title">PDF Lite</span>
+  <button id="prev">Prev</button>
+  <button id="next">Next</button>
+  <button id="zin">Zoom +</button>
+  <button id="zout">Zoom -</button>
+  <a id="raw" class="main" target="_blank" rel="noopener">Open raw PDF</a>
+  <a id="archive">Archive</a>
+  <button id="back">Back</button>
+</div>
+<div id="stage">
+  <div id="msg">Loading…</div>
+  <canvas id="canvas"></canvas>
+</div>
+
+<script data-cfasync="false" type="module">
+if (!Promise.withResolvers) {
+  Promise.withResolvers = function() {
+    let resolve, reject;
+    const promise = new Promise(function(res, rej){ resolve = res; reject = rej; });
+    return { promise: promise, resolve: resolve, reject: reject };
+  };
+}
+
+const qs = new URLSearchParams(location.search);
+const id = String(qs.get('id') || '').trim().toUpperCase();
+const valid = /^EFTA[0-9]{8}$/.test(id);
+const rawUrl = valid ? '/api/pdfraw?id=' + encodeURIComponent(id) : '/grok-command-v4';
+const archiveUrl = valid ? '/archive/' + encodeURIComponent(id) : '/grok-command-v4';
+
+const title = document.getElementById('title');
+const msg = document.getElementById('msg');
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d', { alpha:false });
+
+document.getElementById('raw').href = rawUrl;
+document.getElementById('archive').href = archiveUrl;
+document.getElementById('back').onclick = function(){ location.href = '/grok-command-v4'; };
+
+let pdf = null;
+let pageNum = 1;
+let zoom = 1;
+let busy = false;
+
+function note(t){ msg.textContent = t; }
+
+async function rawPdfAvailable(){
+  try {
+    const r = await fetch(rawUrl, { method:'HEAD', cache:'no-store' });
+    const ct = r.headers.get('content-type') || '';
+    return r.ok && /application\/pdf/i.test(ct);
+  } catch(e) {
+    return false;
+  }
+}
+
+async function render(){
+  if (!pdf || busy) return;
+  busy = true;
+  note('Rendering page ' + pageNum + ' of ' + pdf.numPages + '…');
+  try {
+    const page = await pdf.getPage(pageNum);
+    const base = page.getViewport({ scale:1 });
+    const fit = Math.max(0.35, Math.min(1.5, (window.innerWidth - 24) / base.width));
+    const viewport = page.getViewport({ scale: fit * zoom });
+    canvas.width = Math.floor(viewport.width);
+    canvas.height = Math.floor(viewport.height);
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    await page.render({ canvasContext:ctx, viewport:viewport }).promise;
+    try { page.cleanup(); } catch(e) {}
+    note('Page ' + pageNum + ' of ' + pdf.numPages + ' · ' + Math.round(zoom * 100) + '%');
+  } catch(e) {
+    console.error(e);
+    note('Render failed. Use Open raw PDF.');
+  }
+  busy = false;
+}
+
+document.getElementById('prev').onclick = function(){ if (pdf && pageNum > 1) { pageNum--; render(); } };
+document.getElementById('next').onclick = function(){ if (pdf && pageNum < pdf.numPages) { pageNum++; render(); } };
+document.getElementById('zin').onclick = function(){ zoom = Math.min(2, zoom + 0.2); render(); };
+document.getElementById('zout').onclick = function(){ zoom = Math.max(0.6, zoom - 0.2); render(); };
+
+if (!valid) {
+  title.textContent = 'EFTA ID required';
+  note('Enter an EFTA ID in the expected format.');
+} else {
+  title.textContent = id;
+  if (!(await rawPdfAvailable())) {
+    note('Raw PDF panel notice for ' + id + ': the archive record is available. Use Archive for OCR/context, or retry the raw PDF panel.');
+    document.getElementById('raw').textContent = 'Raw PDF unavailable';
+    document.getElementById('raw').href = archiveUrl;
+  } else try {
+    const pdfjsLib = await import('/pdfjs/build/pdf.mjs');
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/build/pdf.worker.mjs';
+    note('Loading document…');
+    pdf = await pdfjsLib.getDocument({ url: rawUrl, disableAutoFetch:true, useSystemFonts:true }).promise;
+    render();
+  } catch(e) {
+    console.error(e);
+    note('PDF.js failed to load. Use Open raw PDF.');
+  }
+}
+</script>
+</body>
+</html>

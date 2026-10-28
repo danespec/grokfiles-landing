@@ -1,3 +1,4 @@
+import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { readerQualityResponse } from './reader-quality.mjs';
 
@@ -4284,6 +4285,8 @@ async function rewriteArchivedSourceHtmlResponse(request, env, path, response) {
   const map = await loadArchivedSourceBaseMap(env);
   let base = map.get(path) || map.get(path.replace(/\.html$/i, "")) || "";
   let bodyText = await response.text();
+  if (/canonical[^>]+href=["']https:\/\/grokarchivehub\.com\/["']/i.test(bodyText)) return evidenceAssetMissing(request);
+  bodyText = bodyText.replace(/<meta\b(?=[^>]*name=["']robots["'])[^>]*>/ig, '<meta name="robots" content="noindex,follow">');
   if (!base) base = extractDocumentBaseUrl(bodyText) || "";
   const rewritten = rewriteArchivedSourceHtmlLinks(bodyText, base);
   const headers = new Headers(response.headers);
@@ -4303,6 +4306,10 @@ async function rewriteArchivedSourceHtmlResponse(request, env, path, response) {
 }
 
 
+function evidenceAssetMissing(request) {
+ return new Response(request.method === "HEAD" ? null : "Evidence asset not found", {status:404, headers:{"Content-Type":"text/plain; charset=utf-8", "Cache-Control":"no-store", "X-Robots-Tag":"noindex,follow", "X-GAH-Asset-Guard":"missing-or-invalid-asset"}});
+}
+
 async function serveEvidenceAssetStrict(request, env, path) {
   if (path.startsWith("/evidence-data/book-of-black/") && !bookOfBlackPublicMetadataPath(path) && !bookOfBlackAcknowledged(request)) {
     return new Response("Book of Black source asset requires reader acknowledgement.", {
@@ -4315,10 +4322,13 @@ async function serveEvidenceAssetStrict(request, env, path) {
       }
     });
   }
-  const response = await serveFrontdoor(request, env);
+  const registered = EVIDENCE_ASSETS[path];
+  const strict = path.startsWith("/evidence-data/") || path.startsWith("/book-of-black/source/") || path === "/research/epstein-final-48-hours-mcc-source-ledger.tsv";
+  if (strict && !registered) return evidenceAssetMissing(request);
+  const response = await serveFrontdoor(request, env, registered || "");
   const contentType = response.headers.get("Content-Type") || "";
   if ((/\.pdf$/i.test(path) || path.startsWith("/evidence-engine/v1/") || path.startsWith("/evidence-engine/v2/") || path.startsWith("/evidence-data/")) && contentType.toLowerCase().includes("text/html")) {
-    if (ARCHIVED_SOURCE_HTML_PREFIXES.some((prefix) => path.startsWith(prefix)) && response.status === 200) {
+    if (registered && ARCHIVED_SOURCE_HTML_PREFIXES.some((prefix) => path.startsWith(prefix)) && response.status === 200) {
       return rewriteArchivedSourceHtmlResponse(request, env, path, response);
     }
     return new Response("Evidence asset not found", {
@@ -4330,6 +4340,17 @@ async function serveEvidenceAssetStrict(request, env, path) {
         "X-GAH-Asset-Guard": "evidence-html-fallback-blocked"
       }
     });
+  }
+  if (strict && response.status === 200) {
+    const body = await response.arrayBuffer();
+    const text = new TextDecoder().decode(body.slice(0, 65536));
+    if (/canonical[^>]+href=["']https:\/\/grokarchivehub\.com\/["']/i.test(text) || (/\.pdf$/i.test(path) && !text.startsWith("%PDF-"))) return evidenceAssetMissing(request);
+    const headers = new Headers(response.headers);
+    headers.set("X-Robots-Tag", "noindex,follow"); headers.set("Cache-Control", "no-store");
+    if (/\.tsv$/i.test(path)) headers.set("Content-Type", "text/tab-separated-values; charset=utf-8");
+    if (/\.json$/i.test(path)) headers.set("Content-Type", "application/json; charset=utf-8");
+    if (/\.txt$/i.test(path)) headers.set("Content-Type", "text/plain; charset=utf-8");
+    return new Response(request.method === "HEAD" ? null : body, {status:200, headers});
   }
   applyRoutePolicyHeaders(response.headers, path);
   response.headers.set("X-Robots-Tag", "noindex,follow");
@@ -4399,6 +4420,7 @@ async function serveBookOfBlackSourcePdf(request, env) {
     });
   }
   const body = await response.arrayBuffer();
+  if (new TextDecoder().decode(body.slice(0,5)) !== "%PDF-") return evidenceAssetMissing(request);
   const size = body.byteLength;
   const range = parseSingleByteRange(request.headers.get("Range"), size);
   const headers = bookOfBlackPdfHeaders(response, size);
@@ -18976,9 +18998,17 @@ export default {
       return decorateWikiSearchCors(await handlePublicSearch(request, env), request);
     }
 
+    if ((request.method === "GET" || request.method === "HEAD") && path === "/barak/raw-receipts") {
+      const response = await serveFrontdoorEnhanced(request, env, "/barak/raw-receipts.html");
+      const headers = new Headers(response.headers); headers.set("X-Robots-Tag", "noindex,follow"); headers.set("Cache-Control", "no-store");
+      return new Response(response.body, {status:response.status, headers});
+    }
+    if ((request.method === "GET" || request.method === "HEAD") && path === "/research/epstein-final-48-hours-mcc-source-ledger.tsv") return serveEvidenceAssetStrict(request, env, path);
     if ((request.method === "GET" || request.method === "HEAD") && path === "/book-of-black/source/Book_of_Black_V6HHT.pdf") {
       return serveBookOfBlackSourcePdf(request, env);
     }
+
+    if ((request.method === "GET" || request.method === "HEAD") && path.startsWith("/book-of-black/source/") && path !== "/book-of-black/source/Book_of_Black_V6HHT.pdf") return evidenceAssetMissing(request);
 
     if (path === "/api/book-of-black/status") {
       return handleBookOfBlackStatus(request, env);

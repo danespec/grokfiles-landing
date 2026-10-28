@@ -16,6 +16,7 @@ export function identifierHostPolicy(req,res){
  if(!['GET','HEAD'].includes(req.method))return false;
  if(String(req.headers.host||'').split(':')[0].toLowerCase()!=='wiki.grokarchivehub.com'||req.headers['x-gah-internal-wiki-proxy'])return false;
  const url=new URL(req.url,ORIGIN);const path=url.pathname.replace(/\/+$/,'')||'/';
+ if((path==='/pdf-lite'||path==='/pdf-lite.html')&&!/^EFTA\d{8}$/.test(url.searchParams.get('id')||''))return send(req,res,404,'<!doctype html><html><head><title>Document not found | Grok Archive Hub</title><meta name="robots" content="noindex,follow"></head><body><main><h1>Document not found</h1><p>Supply a valid EFTA document identifier.</p></main></body></html>');
  const id=path.match(/^\/archive\/efta(\d{1,8})(?:\.html)?$/i);
  if(id)return redirect(req,res,MAIN+'/archive/EFTA'+id[1].padStart(8,'0')+url.search);
  if(path==='/wiki'||path==='/grok-command-v4')return redirect(req,res,ORIGIN+'/');

@@ -27,6 +27,7 @@ function linkIdentifiers(fragment,entries,omitId=""){
   return depth?token:token.replace(/\bEFTA\d{8}\b/g,id=>ids.has(id)?'<a class="identifier-link" href="https://grokarchivehub.com/archive/'+id+'">'+id+'</a>':id);
  });
 }
+function readDescription(html){const tag=(html.match(/<meta\b(?=[^>]*name=["']description["'])[^>]*>/i)||[])[0]||'';const value=tag.match(/\bcontent=(["'])([\s\S]*?)\1/i);return value?decode(value[2]):'';}
 const collections=new Set(['/','/archive','/archive/ids','/topics','/start','/research-index','/latest','/entities','/investigations','/dispatches','/reels','/videos']);
 export function conciseText(value,limit){
  const text=decode(value).replace(/\s+/g,' ').trim();if(Array.from(text).length<=limit)return text;
@@ -34,6 +35,7 @@ export function conciseText(value,limit){
 }
 export function qualityHtml(input,href,entries=[]){
  let html=String(input);if(!/<head\b/i.test(html))return html;
+ html=html.replace(/<!--(?:(?!-->)[\s\S])*GROK_(?:(?!-->)[\s\S])*-->/g,'');
  html=html.replace(/evidence cockpit(?: V4)?/gi,'Evidence overview').replace(/staged supermatrix/gi,'reviewed flight-log index');
  const u=new URL(href);const path=u.pathname.replace(/\/+$/,'')||'/';const canonical=u.origin+(path==='/'?'/':path);
  let title=normalizeReaderTitle((html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)||[])[1]||'Grok Archive Hub');
@@ -41,8 +43,8 @@ export function qualityHtml(input,href,entries=[]){
  if(editorial)title=editorial.title;
  html=html.replace(/<title[^>]*>[\s\S]*?<\/title>/i,'<title>'+escapeHtml(title)+' | Grok Archive Hub</title>');
  html=meta(html,'og:title',title,'property');html=meta(html,'twitter:title',title);
- const description=path==='/investigations/new-mexico-doj-epstein-records'?'Follow New Mexico’s requests for Epstein records, DOJ’s stated legal limits, the court-order trail, and the documents that remain unavailable.':decode((html.match(/<meta\b(?=[^>]*name=["']description["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
- if(description){const text=editorial?.description||description;html=meta(html,'description',text);html=meta(html,'og:description',text,'property');html=meta(html,'twitter:description',text);}
+ const description=path==='/investigations/new-mexico-doj-epstein-records'?'Follow New Mexico’s requests for Epstein records, DOJ’s stated legal limits, the court-order trail, and the documents that remain unavailable.':readDescription(html);
+ if(description){const text=editorial?.description||(description.includes('…')?'Review the sources, documentary context and limits on this research page before drawing conclusions.':description);html=meta(html,'description',text);html=meta(html,'og:description',text,'property');html=meta(html,'twitter:description',text);}
  const card=PAGE_CARDS[canonical];
  const oldImage=decode((html.match(/<meta\b(?=[^>]*property=["']og:image["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
  if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png|card-pinboard\.jpg|hero-desk\.jpg/.test(oldImage))){

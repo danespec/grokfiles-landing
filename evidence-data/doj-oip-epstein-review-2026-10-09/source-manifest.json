@@ -1,0 +1,47 @@
+{
+  "schema": "gah.editorial-source-summary.v1",
+  "publication": "2026-10-12",
+  "title": "DOJ OIP March 2025 review email release and Phang ECF 57",
+  "public_originals_included": false,
+  "documents": [
+    {
+      "source": "DOJ OIP FOIA library 41-page PDF",
+      "url": "https://www.justice.gov/oip/media/1465356/dl?inline=",
+      "date_posted": "2026-10-09",
+      "record_dates": "2025-03-18 to 2025-03-27",
+      "sha256": "27e80537984876c80512ea360ae8e1e674636d2540d8c112d40adcd0127351ac",
+      "relevant_pages": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        24,
+        25,
+        37,
+        38
+      ],
+      "limit": "Interim disclosure. b(5) portions withheld. Referenced public-figure spreadsheet not supplied."
+    },
+    {
+      "source": "Phang v. Blanche ECF 57, signed order",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.57.0_1.pdf",
+      "court_filing_date": "2026-10-09",
+      "relevant_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "limit": "In-camera submission of redacted handwritten notes due 2026-10-16 at 12:00 ET, not public release."
+    },
+    {
+      "source": "GAH FBI Vault Part 13 source chronology",
+      "url": "https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang",
+      "date": "2026-10-11",
+      "limit": "Separate FOIA stream; list/version comparison inconclusive."
+    }
+  ],
+  "editorial_safeguard": "Flagging public figures does not establish their redaction or wrongdoing; victim list is not a list of perpetrators; unresolved ECF 51 status remains unresolved."
+}
