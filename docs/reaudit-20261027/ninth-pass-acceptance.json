@@ -1,0 +1,869 @@
+{
+  "checkedAt": "2026-10-28T05:37:07.569326+00:00",
+  "sourcePR": 243,
+  "mainDeployment": "532a38d9",
+  "wikiRuntime": {
+    "image": "sha256:800f3b2f2b31f5ad13afe6dfdfbe0bba4b1fb7ac7b51301d8a96f80d3498bcc9",
+    "tag": "gah-wiki-gateway:source-editorial-ninth-v2-20261027",
+    "rollbackContainer": "grok_wiki_gateway_before_source_editorial_ninth_v2_20261027",
+    "production": {
+      "receiptCards": 69,
+      "wikiHubSchemas": 3,
+      "blackBookIds": 83,
+      "blackBookOfficialLinks": 80,
+      "blackBookUnconfirmedIds": 3,
+      "blackBookNoindexConsistent": true,
+      "generic404sBranded": 2,
+      "sitemapUrls": 74,
+      "protectedApi": 401,
+      "publicResolver": 200
+    },
+    "securityAuthRateLimitGuardsUnchanged": true,
+    "codeAfter": {
+      "server.js": "1e311e2089ff74aca72579c712991ac3f2a4a188971fc9fa7b1de7667159abd8",
+      "identifier-host-policy.mjs": "94c64297d17b967b7a4031f3b801ba746729424d13e7240d78a4c895215318c6",
+      "reader-quality.mjs": "3328222fad54a7d3ba3a8d59ecb5a63fc39fe6d648559870e3513399bafa5cd1",
+      "content/reader-editorial-metadata.mjs": "949319ed5c836aa6a2a492d43c990b388a5ba08a5e9f033d2d0029b79847654c",
+      "content/source-pdf-status.mjs": "d85451d1017eac5939299cea0a6bd09afc510c4b628b520e982799346ddbb47e",
+      "content/reader-link-aliases.mjs": "f8cce881814f0a4bee297a16e0717ea14bfca57d0607151aa35197c7e5fde8cc",
+      "content/reader-page-cards.mjs": "fb834fc53011d41e00490825df18ee776d2ba0054892495a096bfc48c3eb220f",
+      "content/research-route-policy.mjs": "3ea05c65200d0113d6f9477474b3494f6b8dbb2760f05dcaa777b1ee058db81f",
+      "topic-pages/sdny-epstein-maxwell-court-filings.html": "35a8b1ee811eeea43529b58b5fc6f26d5c5413c7f7250a0fe90e581dd7f92c59",
+      "topic-pages/epstein-victim-services-doj-coordination.html": "e1c9a88338a665e67ae0cff312b67429724b0cfef9c656dfc3490b165d847269",
+      "topic-pages/maxwell-prosecution.html": "d9a4f0f05ea7f3cd571f6e724775fb57d91c5492dd6b3622a983642b3b30ed5c",
+      "topic-pages/epstein-victim-notification-vns-sdny-outreach.html": "36bc39ced64fa01a086486feabbe33c04e0d1bd4da0d3d615325c1f1148766de",
+      "research-pages/ehud-barak-epstein-documentary-record.html": "fbd16a5ba095d70e8c96497521ad827b60dcde9590e945d312e09a83ba557ed1",
+      "research-pages/epstein-final-48-hours-mcc.html": "1909ad0a22105f6a8479f240976134a1666a3228ed87581b6d1ac3eb9a07af44",
+      "research-pages/evidence-types.html": "522131014e54d5979f7c887b67d2d42bedb14de65489df4a2d055af9d1262fb3",
+      "research-pages/evidence/aircraft-tail-number-epstein.html": "99c21db5c938e41f16ca9076ccccadfdc39ac273b93c9ef0fb099250b90a1f96",
+      "research-pages/evidence/alias-passenger-epstein.html": "3ba58ad325a99c073bdf083445a550ec18959d39bc76077befb18853b76e4cda",
+      "research-pages/evidence/assistant-travel-schedule-epstein.html": "b7b25c2539583bfc8c435809ccb2659f5e0e9ea2b996bdd2c6c5f6dbaa6b87f3",
+      "research-pages/evidence/bank-records-epstein.html": "a6b9c0e1b08aaba3881578a73aa28c68d0bfac5fc4c290e726f8139ecabc9f79",
+      "research-pages/evidence/black-book-epstein.html": "3e05da06b77e4911d72d4310305f8f8fd4778ad7475339348929b5978f620d66",
+      "research-pages/evidence/calendar-epstein.html": "c008760caca890b18bf7b6d0b5fa4cbeecb9a0a9d3ede5c55705f8ac76a1de6b",
+      "research-pages/evidence/deposition-epstein.html": "3033640cca57fca5904c39fdb37fdef1dde7c5809ea0084e7fe3288793c4bbde",
+      "research-pages/evidence/deutsche-bank-epstein.html": "60fd40abdf8b52335e4ccabdfe47c4f3ff1004363231c29a780044a3837b6583",
+      "research-pages/evidence/doj-victim-services.html": "16d343a6f3875013237efac887e1210320ec0e3d52d17bf65406e549c0777d5f",
+      "research-pages/evidence/doj-victim-services-epstein.html": "514775c525cca7a9dab289bf7d3a526336fbf08973dee05f24dd69937733a2ac",
+      "research-pages/evidence/driver-transport-epstein.html": "65c41ffb20552b68f8cec09b1a5db5b6f4bb79851861578ce96c37d0c7249a05",
+      "research-pages/evidence/efta.html": "a4fd1b703a2c15979446253519500d63ecb1350d7c039e70c917ff7dfdf5e0d7",
+      "research-pages/evidence/ehud-barak.html": "cb2fc7ac8b4b80a3cf8a6f8090a1fdac59a233c15fc591c042a3b72e25fd9912",
+      "research-pages/evidence/epstein-death.html": "0c30e62b28f7cc9c1bd28d839125e0da922bbc0fe2976b33be9a1fe8760b40a0",
+      "research-pages/evidence/fbi-epstein.html": "dfd0cd6ed615a12de3134589c0b3f986165e5869c39617196d497affca622dd2",
+      "research-pages/evidence/flight-logs-epstein.html": "39af27166282fc61ccc38fc8ac8c554bfc57da9e99e0212ebba55b5da4446cae",
+      "research-pages/evidence/ghislaine-maxwell.html": "d4747a07897634a658af0c11944155335b0676a100076585a2e06124a739e195",
+      "research-pages/evidence/grand-jury-epstein.html": "929f1a6938d7356d276b0c1c7d6cd28ba915f37d441c01341c9d05c6888fabf9",
+      "research-pages/evidence/great-saint-james.html": "0c776e111875bb5c52b73a7bfaeb984ab5401a6cdf81dac16b68644b5fd76164",
+      "research-pages/evidence/invoice-epstein.html": "346a6c9b7f18f9a0107472ec837db50183180887c5031b6c730e4de9297f8852",
+      "research-pages/evidence/jean-luc-brunel.html": "423fee84299b1941807e677ed9de2c0d26c0b8bc1fff0bd1a2de9e31d34cae85",
+      "research-pages/evidence/jeffrey-epstein.html": "e747ed311a9533e2d6bb3df44f064452aabcd2ec81e5eece178b6255cf9ed6bf",
+      "research-pages/evidence/josh-lucas.html": "cd7f5ec826348e133680e4a92ec388dd09ce225b4d2c7b8a1eed62d518f87de5",
+      "research-pages/evidence/jpmorgan-epstein.html": "f50eac3892b512c65b3c32c216c9150180ec1f2e1ec0797734d9b9ba53cfb7be",
+      "research-pages/evidence/leon-black-epstein.html": "53c3c233fa5a3640d69c230a2a042c7bd1efe1c7d97c700186d06e14055fdbaa",
+      "research-pages/evidence/lesley-groff.html": "58e942538f885b0e36b9c66b5530c9faf06fdcdb812ae5b717088e899373f3e1",
+      "research-pages/evidence/leslie-wexner.html": "9128fc4b34b03893f07b4cb843f033f3c866c7786d283822b7e1e8aa27e21b36",
+      "research-pages/evidence/little-saint-james.html": "02dbf53d75624b0fc1b93f38cbc67da124f593a14276395426f207734b54c7e1",
+      "research-pages/evidence/manhattan-epstein.html": "b0305791d013e8a8a96ea1cf64ff4047ece8e811be1e44e1b54ca6d72bee0bf4",
+      "research-pages/evidence/maxwell-prosecution.html": "894c01752f4ae64b8a1504b52a834f4e2fda4d9fcaae2b816ea50ee9d6f074f1",
+      "research-pages/evidence/mc2-epstein.html": "2c32c16d412319b33e309e9bd0ede12dd849540b2aae4e98278e482b823bacea",
+      "research-pages/evidence/mcc-epstein-control-spine.html": "a9fd0d8d2835bff0bb259b68d47bd51c9dc8b142b38da921c89b7ad854f74bda",
+      "research-pages/evidence/metadata-epstein.html": "ca0b67d973748678bd38e0a0ee3c32c9cd20d0bd7dbf9b6dca420ac68066b0b5",
+      "research-pages/evidence/missing-names-phonebook-epstein.html": "9b5943eec51da9b45b8ab51cd95280866eca197b5d01a99af2c94e3db0980b8a",
+      "research-pages/evidence/nadia-marcinkova.html": "49fd5c914d675eb29a3b788f0000dac1153c8a698b476b39f9031ce3617667eb",
+      "research-pages/evidence/new-albany-epstein.html": "53949c1ccca63cf8d0f0a4f6cfb20552fd0d049013d41534d85325f1fc022579",
+      "research-pages/evidence/non-prosecution-agreement-epstein.html": "71f5e07865ebdc83c5f93d486ed675a60c466042e31eccaa69b2718ef7d3c7a3",
+      "research-pages/evidence/palm-beach-epstein.html": "7afe31e80ecd057579b05be0f49deb602ca28e9854739122c32e5bf219237243",
+      "research-pages/evidence/paris-epstein.html": "b7e65342feb3a3458100bfed7a2160d97b339cf5af308a88fefe83aa7ad05592",
+      "research-pages/evidence/phone-message-epstein.html": "21e1223f0e5aed8911977038f15ec5bd61af5ad0c0cd743368dada7bdcd4f1b7",
+      "research-pages/evidence/phonebook-alias-epstein.html": "47755a0268daa16e88b82414d10c744dc1626ffd9b352f0354f995f477b99c49",
+      "research-pages/evidence/property-records-epstein.html": "8d0e3df2d5a68b1bad65a9a892a15f24efffb8ffee56e8926e9852a3ec26ce18",
+      "research-pages/evidence/redacted-epstein.html": "061fd8d9826a7b8d9916f8c1f7d39664594c2dbe892fa8417785821e627a3561",
+      "research-pages/evidence/redacted-names-epstein.html": "82d7cce7c8594fc7e63e03c19d5bd15ee003ac8a40a2d5a33b5997577bcc850f",
+      "research-pages/evidence/sarah-kellen.html": "827a282ac4afeb3229b14d3cad923a841ca39064ba25ef2584ea74cb2706250e",
+      "research-pages/evidence/sdny.html": "8deebc9be03319ca0b0c9f0842380141471e037829b4b1b69fde7b5d4c3d87b8",
+      "research-pages/evidence/sdny-epstein.html": "d82cd66c5122621286dea0aac551dd148dd4f8a3f83732af7d5596db48070e47",
+      "research-pages/evidence/sdny-epstein-maxwell-court-filings.html": "d2b77d97a3811ee14baa2c34f7679bb7dbd44ee5f2c76c39f084912aecb91870",
+      "research-pages/evidence/sealed-redacted-epstein.html": "c8470ea7e90f6889d906e428a92bd1a01ebec72bb3de7ee70eb56e78e9e2d7ea",
+      "research-pages/evidence/sharepoint-coordination.html": "3a6bd540432c52ab2296412a452250336c8c71357c0f028edd0e901bd7dd022e",
+      "research-pages/evidence/sharepoint-coordination-epstein.html": "63ec35f77e2729720499a947931fed2c7c72c718056670997bf6bbab741ca355",
+      "research-pages/evidence/sharepoint-epstein-support.html": "30d97e2628a9b5a5b6026605392d31bb8f5f8c2324ab59781d5f7fbeeb2dfddf",
+      "research-pages/evidence/shell-company-epstein.html": "4373156222224812237a4a79780ae882af13000afde8364e366bd3a0f99da37e",
+      "research-pages/evidence/source-card-efta00067364-calendar-epstein.html": "d2e46d9f483b0ccb51b5c2dfe620518819033882f27700c0736f885247b75251",
+      "research-pages/evidence/source-card-efta00082040-black-book-epstein.html": "366e71ad85a8b91f3dbd3a744aa3c1bd7d6b909dd2fb0ae9ea5e3ed581ee0bbb",
+      "research-pages/evidence/source-card-efta00095936.html": "fc5ea9852e215a8371cbcc67516e031357b7d37ec61fb5abd4faf94806f153e6",
+      "research-pages/evidence/suppression-redaction-epstein.html": "73ebc76fb042e51aa9d8aad0f0bfc57eba3dcc466520f010bb4cf3b906b49670",
+      "research-pages/evidence/tel-aviv-epstein.html": "32b08d9c349840342927c412c5494a2805f92a627e61d85f49229329ade7cc5c",
+      "research-pages/evidence/unredacted-flight-log-epstein.html": "199af5081f6d40bdf4e602a0be3cb1394ae1b8fa5ab2e0b9ffca9e7caa432687",
+      "research-pages/evidence/verified-source-cards.html": "8a320e28b8094f3f751cbf9c4b8863f7afb7963b1fdaea6d10a8d227bba500fc",
+      "research-pages/evidence/victim-notification.html": "37f50ab120ded152c232a501009856a13ae7659b0a78eded7a18d39b8f37d856",
+      "research-pages/evidence/victim-notification-epstein.html": "12e4e438f134de679c91c583615d9056ee5be1add276d50d6b46fe1b18aef92a",
+      "research-pages/evidence/victim-services-coordination-epstein.html": "a0293d8e37976999457ccc494b3b7c434d0b635cd5b1ca1a1e756e2a3dfd719b",
+      "research-pages/evidence/vns-sdny-outreach-epstein.html": "8657afbc12ca2f41462dfee5268f0753d06d041556338a5f14e82b1290d64a18",
+      "research-pages/evidence/vns-victim-notification.html": "87c4540d61434337dfe99d4cd36d102283dd3b6ee355a9e2c9d3ae0e2d278767",
+      "research-pages/evidence/vns-victim-notification-epstein.html": "3ad37b453047d8c4aca173eb1e20d935c97cc78a18b51088f665c5567d718dc5",
+      "research-pages/evidence/wire-transfer-epstein.html": "d92b880fcdee0edcbc1bd8b874fc6d30d315fe699f2c85fe7d6370731dac7599",
+      "research-pages/evidence/zorro-ranch.html": "9100524357515e1381ba8df1df9b46fd863fd446fbed2055d70d680adbb467c0",
+      "research-pages/financial-logistics.html": "554a35e58b569840f8d0a77e0cb1bf5aeaa05a274ad3b00a0655e7c9fe1cfff9",
+      "research-pages/legal-records.html": "25e6bbce0b1783d531f8ba2e9b23d806c2a3d0d25070f291b6899fab406b0208",
+      "research-pages/open-leads.html": "8eaef3cda5949ed97cd333916393fbb383471991eb0eadfddef50fb3033e829f",
+      "research-pages/organizations.html": "64a17d3757207f17768446880e7676bbea51fa475f9b7192cc5a4483af490134",
+      "research-pages/people.html": "e6ff4dc5ae2bde1967d0fd4720b3f55ffda1deb169265a1a1f3ecf5434b7fce3",
+      "research-pages/places.html": "e77be71f73b6783d187c3488a81e568bd9aae9f947b44e40380ee83bc434f53d",
+      "research-pages/trump-epstein-documented-timeline.html": "9d688f56655c135091567ffe86e6756866bd79d2aade0784e20a456f59af8f96"
+    }
+  },
+  "linkedGraph": {
+    "checkedAt": "2026-10-28T03:18:16.002936+00:00",
+    "sitemapRoutes": 336,
+    "indexableRoutesMissingFromSitemaps": [],
+    "unexpectedHttpFailures": [],
+    "seedRoutes": 531,
+    "checkedRoutes": 952,
+    "html200": 865,
+    "jargonPages": [],
+    "responseCounts": {
+      "200": 865,
+      "301": 82,
+      "302": 5
+    },
+    "skipped": {
+      "action_endpoint": 1,
+      "non_html_file": 3,
+      "asset_api_or_protected_prefix": 936,
+      "unreviewed_corpus_record": 31
+    },
+    "scope": "Main and wiki HTML linked graph plus deployed HTML and the complete research-route registry; APIs, authentication/unsubscribe actions, assets, protected staging, non-HTML files and unreviewed corpus-record URLs excluded."
+  },
+  "handoffAcceptance": {
+    "indexablePagesChecked": 336,
+    "ellipsisTitles": 0,
+    "ellipsisDescriptions": 0,
+    "linkedPdfs": [
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/doj-phase-one-flight-log-released-us-v-maxwell-2025-02-27.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "10fa669e5b637d8ec05b08eebcd6135c1bb0f0915d651e141cfdc93619411215"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-final-transcript-2026-06-30.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "63b062ff5d3f7a214c3630d2761701f659436ec461e222a55077463a48e72fe9"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-ti-request-letter-2026-03-03.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "ad4d50c130891b45c2148465e921dfd067b7a5ff5bbeb134d4dbec793bb16bf0"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-gates-transcript-2026-06-10.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "7c8c5dd601a3d800ff3d9f459961c0227b8154c5552ebf2e3954c364b7ef7b93"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-groff-transcript-2026-06-09.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "7c22fd0944e04cf62e7462d5db719d67da6793840b57e4ab7826132e3e2cf81d"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-kathryn-ruemmler-ti-request-2026-03-03.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "e22e1a278e6bfff4387c6fa5b8cd7402a05078975855ad699d32d4b2ca6a4c07"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "633183545f7bff8ef8bf050af0cb7fc92b78a251b01d39e6c5526dc3f14c49be"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/ecf25_notice_compliance.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "5289716162977d113d2698ddae877b15df9ff5ca045b08f39d4f6b2f39017bd7"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/ecf26_attachment1_proposed_order.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "787d53e0e56fa1f25cc534fd78f7ccc1624ea1d3e378e6519d5d4a41c906ea5d"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/ecf26_motion_intervene.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "6cf3580fe4b57a966f29caf84c01213d639ca3980b5aa9e282012fbd766d5c95"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "ae8d9cfeee736eaa3efd781716abc12b1e43d5cf53afb1e3cbecffe5bd8b1499"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-16-memorandum-opinion-2026-06-25.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "bc8b6b8e04f7137730a5e920effb2813963329be69ba4f95ce195ec924641902"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "b175d521b77ceeb074683552a080993eb679b511716de5050e23945f247a0c9e"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "63c51fc29a0b319b2a42013d706d3bb77a3fa11612a0fbd80eb43f31fc13e16a"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "ba3f4e4c896d64d6b14f5a9b9a133c37aea8687397215ca122d039d75c02283e"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-1-addendum-2026-07-15.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "291b91b985887d7ef8dd21415d2b872025719c41f8bd8f6c01496e67f7de9c7b"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-motion-to-intervene-2026-07-15.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "310835bafefd8a6872773c8df2febf48c9f017880fc11b9b984483d5f2f2eb06"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "94b6962088a973737d57a40ad55c6339cdb145269be5cd60006fe4c6b0488405"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-band-transcript-2026-06-30.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "63b062ff5d3f7a214c3630d2761701f659436ec461e222a55077463a48e72fe9"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-gates-transcript-2026-06-10.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "7c8c5dd601a3d800ff3d9f459961c0227b8154c5552ebf2e3954c364b7ef7b93"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-groff-transcript-2026-06-09.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "7c22fd0944e04cf62e7462d5db719d67da6793840b57e4ab7826132e3e2cf81d"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "633183545f7bff8ef8bf050af0cb7fc92b78a251b01d39e6c5526dc3f14c49be"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-ti-request-2026-03-03.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "3e2584137676399f93cec0b01cf909218c418eafda2dffca6271c77b3cff4dd5"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-810.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "609a635b94a7e4fe5edcfdfe04c34234d210439cdc7f2631cc8a51d6afa08f67"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-811.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "dcebfedf2222facde339e188881f7a6096daeedf4bf4a371daab41eabbecc3a4"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-813.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "b76f0e2f302fbf24c76a0d726141c09c364dad74377315033447b436535f2ef2"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-819.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "167457adbdbea98c712eb670f8a4188cbb0bfcbf3b534fe4b16507957c11711d"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-820.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "5790d0263d30b33d4e424f2e0562dd32c14543eb369a22c6a61a2068c66a73a2"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-823.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "bf3c43b1f4d0dec4001b6405fbaa2239e61fb128442a5e9d3aa0eba72c11e595"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-826.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "55913dde06d00a1d7e8c6f6a21ddf9d49e89fe2a64f84448bf4c821c35d8aeb8"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-839.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "70b1b67772d6bc704e31a1de04cccbe85a0e6a092a0efae0c8fdc0f5fd33ecf9"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-845.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "3840b28cb82e9def76e8b0666e05b684d135997da79b4f4ba207a0c06965ee49"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-846.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "12b5bf0763e7701370e78e7d031e2ffafa0ddbbf6b4c70ed108e6e5e8a8ad611"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-847.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "abe3a209ecc61fb4bafa06ee366e7b19908bcee857c431f76af1f0fc0cc1cca8"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-848.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "e74042497489adc1c2cf83960f8cfb64c106bfacc03134bfa945e3f98c60da23"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-849.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "5a27b2ab760fd74febde3e33b54c818240662bdad7660a26ee7a37d1a95427d1"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-2025-12-19-congress-letter.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "5d112b90e6bfee4e35f0a0a5698cf3893a72325fcba4d5e91c5d76e5a3000846"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-2026-01-30-congress-letter.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "40e4fd583cd30e927da99ccf822abb1196408243e053034a314fdcbc08b05206"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-2026-02-14-congress-letter.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "73c2008faf2893615af8217173e4e1c65f329e43cc1745cff124456041805098"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-efta-review-protocol.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "eff4797fa8485116c82948d7d73dea83fd5914451db275a9f05d75d340d3c2e4"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/govinfo-cfr-28-part16-pdf.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "56670661b256a8b1298c9e1d87cd8920e32795dbd762b156e16cc35c5d089616"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/govinfo-plaw-119-38-efta.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "223eea508617cbd4238c1eb94e23c5c61cc627a6ea05dc185660cb137355cd97"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmd-2026-06-30-letter.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "6ada36bec2781a1e1eac9a2c859f55806c4e63df6d2a7d4843339a9068c0dd62"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmd-efta-ii-draft.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "98f0161fb3b601bba8765ab1865a9891f22eb7daf13d2987012845702efcc95f"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun01-agenda.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "1bbb2d5dfa705094f2e7a2e7710208bc614da144c2ef7aad18714efb58ffa5dc"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun01-handout.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "8d4b71115dbce46c047c2bf1ab25b09206c7882e902a05f6a1446d6a4ad97b65"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun18-agenda.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "69af3091b2c4825c5acd1598780134bbf45d6e14b5e9ec537b7c007e804fab42"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hr1-final.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "0693111b7054a0c119bc79906e38f2a0bf878c8c52a367b5b45fb18a3c1bc4c6"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hr1-fir.pdf",
+        "status": 200,
+        "type": "application/pdf",
+        "location": null,
+        "pdfMagic": true,
+        "sha256": "75505d54367b7cb414955a0ff9ac8c4a21c86abb4a905195aadad59f4ec53c41"
+      }
+    ],
+    "outboundDestinationsChecked": 829,
+    "internalRedirects": [],
+    "fakePdfs": [
+      {
+        "url": "https://grokarchivehub.com/evidence-data/zzz/nope.pdf",
+        "status": 404,
+        "type": "text/plain; charset=utf-8",
+        "location": null,
+        "pdfMagic": false,
+        "sha256": null
+      },
+      {
+        "url": "https://grokarchivehub.com/nonexistent-source-check.pdf",
+        "status": 404,
+        "type": "text/plain; charset=utf-8",
+        "location": null,
+        "pdfMagic": false,
+        "sha256": null
+      }
+    ],
+    "bookPdf": {
+      "url": "https://grokarchivehub.com/book-of-black/source/Book_of_Black_V6HHT.pdf",
+      "status": 403,
+      "type": "text/plain; charset=utf-8",
+      "location": null,
+      "pdfMagic": false,
+      "sha256": null
+    },
+    "hubs": {
+      "https://grokarchivehub.com/barak": {
+        "publishedEntry": true,
+        "labelledSourceLookups": 0,
+        "outboundLinksExcludingInPageAnchors": {
+          "actionsOrUnclassified": 1,
+          "indexableHTML": 35,
+          "noindexHTML": 11
+        }
+      },
+      "https://grokarchivehub.com/barak/receipts": {
+        "publishedEntry": true,
+        "labelledSourceLookups": 26,
+        "outboundLinksExcludingInPageAnchors": {
+          "indexableHTML": 62,
+          "noindexHTML": 48
+        }
+      },
+      "https://grokarchivehub.com/barak/timeline": {
+        "publishedEntry": true,
+        "labelledSourceLookups": 12,
+        "outboundLinksExcludingInPageAnchors": {
+          "indexableHTML": 61,
+          "noindexHTML": 31,
+          "sourceFilesOrData": 1
+        }
+      },
+      "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records": {
+        "publishedEntry": true,
+        "labelledSourceLookups": 0,
+        "outboundLinksExcludingInPageAnchors": {
+          "indexableHTML": 53,
+          "noindexHTML": 17,
+          "sourceFilesOrData": 184,
+          "actionsOrUnclassified": 1
+        }
+      },
+      "https://wiki.grokarchivehub.com/research-index": {
+        "publishedEntry": true,
+        "labelledSourceLookups": 0,
+        "outboundLinksExcludingInPageAnchors": {
+          "actionsOrUnclassified": 1,
+          "indexableHTML": 13,
+          "noindexHTML": 4
+        }
+      }
+    },
+    "jargonMatches": [],
+    "failures": [],
+    "pdfHEADChecks": [
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/doj-phase-one-flight-log-released-us-v-maxwell-2025-02-27.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-final-transcript-2026-06-30.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-doug-band-ti-request-letter-2026-03-03.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-gates-transcript-2026-06-10.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-groff-transcript-2026-06-09.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-kathryn-ruemmler-ti-request-2026-03-03.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/doug-band/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/ecf25_notice_compliance.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/ecf26_attachment1_proposed_order.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/ecf26_motion_intervene.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-15-order-2026-06-25.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-16-memorandum-opinion-2026-06-25.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-19-doj-show-cause-response-2026-07-02.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-1-proposed-order-2026-07-13.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-20-plaintiff-response-2026-07-13.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-1-addendum-2026-07-15.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/phang-v-blanche-ecf-21-motion-to-intervene-2026-07-15.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/efta-compliance/source/pdfs/us-v-maxwell-ecf-863-doj-opposition-2026-06-24.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-band-transcript-2026-06-30.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-gates-transcript-2026-06-10.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-groff-transcript-2026-06-09.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-final-transcript-2026-07-16.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/leon-black/source/pdfs/house-oversight-leon-black-ti-request-2026-03-03.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-810.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-811.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-813.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-819.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-820.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-823.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-826.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-839.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-845.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-846.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-847.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-848.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/courtlistener-maxwell-849.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-2025-12-19-congress-letter.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-2026-01-30-congress-letter.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-2026-02-14-congress-letter.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/doj-efta-review-protocol.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/govinfo-cfr-28-part16-pdf.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/govinfo-plaw-119-38-efta.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmd-2026-06-30-letter.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmd-efta-ii-draft.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun01-agenda.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun01-handout.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hisc-jun18-agenda.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hr1-final.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      },
+      {
+        "url": "https://grokarchivehub.com/evidence-data/new-mexico-doj/source/pdfs/nmlegis-hr1-fir.pdf",
+        "status": 200,
+        "type": "application/pdf"
+      }
+    ],
+    "checkedAt": "2026-10-28T05:37:07.569326+00:00"
+  },
+  "researchPolicy": {
+    "researchRoutesChecked": 78,
+    "wikiResearchIndexCache": "DYNAMIC",
+    "failures": []
+  },
+  "unavailablePdfLinksRemoved": 37,
+  "protectedBookPdf": "Anonymous 403 retained; direct PDF hrefs removed from public HTML; reader controls and acknowledgement gate preserved",
+  "overallAcceptance": "PASS for all handoff checks within documented scope"
+}
