@@ -18538,6 +18538,9 @@ export default {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
 
+    // Missing evidence must fail before legacy .html canonical redirects or SPA fallback.
+    if ((request.method === "GET" || request.method === "HEAD") && url.pathname.startsWith("/evidence-data/") && !EVIDENCE_ASSETS[url.pathname]) return evidenceAssetMissing(request);
+
     if (request.method === "GET" || request.method === "HEAD") {
       const researchRoute = RESEARCH_ROUTES.find(r => r.path === path);
       if (researchRoute?.owner === "wiki") return new Response(null,{status:301,headers:{Location:"https://wiki.grokarchivehub.com"+researchRoute.path+url.search,"Cache-Control":"no-store"}});
@@ -19053,6 +19056,7 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && (path === "/pdf-lite" || path === "/pdf-lite.html")) {
+      if (!/^EFTA\d{8}$/.test(url.searchParams.get("id") || "")) return evidenceAssetMissing(request);
       const freshUrl = new URL(request.url);
       freshUrl.searchParams.set("gah_origin_fresh", `SOURCE-2-PDF-HOTFIX-${Date.now()}`);
       return proxyProofLayer(new Request(freshUrl.toString(), request));
