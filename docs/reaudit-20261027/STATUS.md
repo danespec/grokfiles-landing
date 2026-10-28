@@ -1,3 +1,7 @@
+## Current release — final reader polish
+
+PR #239 is deployed. All 13 affected public pages pass the targeted jargon, robots consistency, alias-link and comment-marker checks. The isolated and production wiki release checks preserve 78 research routes, 69 receipt cards, the 74-URL sitemap and API isolation. All four topic pages remain noindex tools; the seven unpublished IDs open exact-ID archive search. See SEVENTH_PASS.md and seventh-pass-acceptance.json. Earlier acceptance records below are historical.
+
 ## Current release — linked-page completion, October 27, 2026
 
 PRs #236 and #237 are deployed on both hosts. The 340 HTML checks pass. A fresh post-rule crawl checks 955 linked routes with no unexpected operational copy, HTTP failures or indexable self-canonical routes missing from sitemaps. All 78 research-policy contracts pass. The formerly stale public research-index now returns DYNAMIC and current direct-owner links; all ten stale-link failures are cleared without another purge. **Overall acceptance passes within the documented scope.** See SIXTH_PASS_VERIFICATION.md and sixth-pass-acceptance.json. Search Console, other edge regions and DOJ PDF availability are outside this acceptance. The robots formatting exception remains accepted. Earlier entries below are historical.
