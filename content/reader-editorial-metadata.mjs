@@ -589,7 +589,7 @@ export const READER_EDITORIAL_METADATA = {
   },
   "https://grokarchivehub.com/investigations/barak-hfa-cycurity-2015": {
     "title": "Cycurity’s 2015 HFA Proposal in Barak’s Archive",
-    "description": "A source-bound reconstruction of a July 2015 Cycurity election-campaign influence proposal preserved in Ehud Barak"
+    "description": "Read the 2015 HFA/Cycurity proposal in Barak’s records, with its documentary context and limits on what the proposal establishes."
   },
   "https://grokarchivehub.com/investigations/barak-receipts-presence-not-conduct": {
     "title": "Barak Receipts: Source Presence Is Not Conduct",
@@ -884,100 +884,100 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Permanent source notes for GAH’s Instagram reporting: Famous Names, News Desk and the MCC arc, with published captions, document receipts and their limits."
   },
   "https://grokarchivehub.com/reels/alan-dershowitz-schedule-efta00352969": {
-    "title": "EFTA00352969: Source Notes",
-    "description": "Read “EFTA00352969: Source Notes” with original sources, context and limits on what the records establish."
+    "title": "Dershowitz: The Schedule Entry",
+    "description": "Watch “Dershowitz: The Schedule Entry”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/andrew-doj-judicial-review-efta00088020": {
-    "title": "EFTA00088020: Source Notes",
-    "description": "Andrew: the separate 2020 DOJ request. Original GAH reel caption, primary-source receipts and the limits of the documented record."
+    "title": "Andrew: The DOJ Judicial Review Record",
+    "description": "Watch “Andrew: The DOJ Judicial Review Record”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/barak-st-thomas-ronen-cohen": {
-    "title": "EFTA00356456: Source Notes",
-    "description": "Original GAH reel caption and source notes for EFTA00356456, Ronen Cohen and PNR 7HLSOQ."
+    "title": "Barak, St. Thomas and Ronen Cohen",
+    "description": "Watch “Barak, St. Thomas and Ronen Cohen”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/bill-gates-nikolic-points-efta02730265": {
-    "title": "EFTA02730265: Source Notes",
-    "description": "Bill Gates: the Nikolic exit draft. Read EFTA02730265 with the original GAH reel caption, source notes and documentary limits."
+    "title": "Gates and Nikolic: The Talking Points",
+    "description": "Watch “Gates and Nikolic: The Talking Points”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/bill-richardson-counsel-memo-efta00014374": {
-    "title": "EFTA00014374: Source Notes",
-    "description": "Read “EFTA00014374: Source Notes” with original sources, context and limits on what the records establish."
+    "title": "Richardson: The Counsel Memo",
+    "description": "Watch “Richardson: The Counsel Memo”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/clinton-cgi-publicis-transfer-source-audit": {
-    "title": "EFTA00579174: Source Notes",
-    "description": "Clinton CGI: the source audit. Original GAH reel caption, primary-source receipts and the limits of the documented record."
+    "title": "Clinton, CGI and Publicis: The Source Audit",
+    "description": "Watch “Clinton, CGI and Publicis: The Source Audit”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/efta00035613-july-2019-donation-proposal": {
-    "title": "EFTA00035613: Source Notes",
-    "description": "Read the two-page EFTA00035613 letter with GAH’s original MCC reel caption, the proposed gift, institutional limits and source provenance."
+    "title": "The July 2019 Donation Proposal",
+    "description": "Watch “The July 2019 Donation Proposal”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/efta00035773-oig-voluntary-interview-waiver": {
-    "title": "EFTA00035773: Source Notes",
-    "description": "Read EFTA00035773 with GAH’s original caption, voluntary-interview terms, redactions and the unresolved August 21 versus August 27 date reading."
+    "title": "The OIG Voluntary Interview Waiver",
+    "description": "Watch “The OIG Voluntary Interview Waiver”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/efta00035828-epstein-cell-diagram": {
-    "title": "EFTA00035828: the diagram labeled Epstein’s cell",
-    "description": "Read EFTA00035828 with GAH’s original caption, a visual check of the cell diagram, its undated labels and the limits of the EFTA00035574 connection."
+    "title": "The Diagram Labelled Epstein’s Cell",
+    "description": "Watch “The Diagram Labelled Epstein’s Cell”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/elon-musk-holiday-email-efta02338119": {
-    "title": "EFTA02338119: Source Notes",
-    "description": "Elon Musk: proposed holiday visit. Read EFTA02338119 with the original GAH reel caption, source notes and documentary limits."
+    "title": "Musk: The Holiday Email",
+    "description": "Watch “Musk: The Holiday Email”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/ghislaine-maxwell-travel-coordination-efta02332402": {
-    "title": "EFTA02332402: Source Notes",
-    "description": "Read “EFTA02332402: Source Notes” with original sources, context and limits on what the records establish."
+    "title": "Maxwell: Travel Coordination Emails",
+    "description": "Watch “Maxwell: Travel Coordination Emails”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/gratitude-america-10-million-efta00080260": {
-    "title": "EFTA00080260: Source Notes",
-    "description": "The GAH reel behind the $10 million deposit, $8.45 million in internal transfers and $325,000 in 2016 external payments."
+    "title": "Gratitude America: The $10 Million Record",
+    "description": "Watch “Gratitude America: The $10 Million Record”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records": {
-    "title": "EFTA00016622: Source Notes",
-    "description": "Indyke and Kahn: roles, travel and the civil complaint. Original GAH reel caption, primary-source receipts and the limits of the documented record."
+    "title": "Indyke and Kahn: Complaint and Flight Records",
+    "description": "Watch “Indyke and Kahn: Complaint and Flight Records”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/jean-luc-brunel-mc2-account-efta01972778": {
-    "title": "EFTA01972778: Source Notes",
-    "description": "Read “EFTA01972778: Source Notes” with original sources, context and limits on what the records establish."
+    "title": "Brunel and MC2: The Account Record",
+    "description": "Watch “Brunel and MC2: The Account Record”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/jeff-bezos-email-list-efta00759004": {
-    "title": "EFTA00759004: Source Notes",
-    "description": "Jeff Bezos: the shared email recipient list. Read EFTA00759004 with the original GAH caption and carefully bounded source notes."
+    "title": "Bezos: The Email List Reference",
+    "description": "Watch “Bezos: The Email List Reference”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/larry-summers-harvard-planning-efta02239873": {
-    "title": "EFTA02239873: Source Notes",
-    "description": "Larry Summers: Harvard visit planning. Read EFTA02239873, EFTA02239649 with GAH’s original reel caption, document receipts and limits."
+    "title": "Summers: Harvard Planning Emails",
+    "description": "Watch “Summers: Harvard Planning Emails”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996": {
-    "title": "EFTA02730996: Source Notes",
-    "description": "The original GAH Leon Black reel, Dechert’s $158 million review and Wyden’s EFTA02731023 letter, with their different evidentiary limits."
+    "title": "Leon Black: Dechert’s $158 Million Review",
+    "description": "Watch “Leon Black: Dechert’s $158 Million Review”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/les-wexner-attorney-proffer-efta02731082": {
-    "title": "EFTA02731082: Source Notes",
-    "description": "Read the Wexner attorney-proffer account in EFTA02731082, pages 65–66, with the original GAH reel caption, counsel’s denial and source limits."
+    "title": "Wexner: The Attorney Proffer",
+    "description": "Watch “Wexner: The Attorney Proffer”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/mark-zuckerberg-mentions-efta00034221": {
-    "title": "EFTA00034221: Source Notes",
-    "description": "Mark Zuckerberg: mentions and contact evidence. Read EFTA00034221, EFTA02262778 with the original GAH reel caption, source notes and documentary limits."
+    "title": "Zuckerberg: What the References Say",
+    "description": "Watch “Zuckerberg: What the References Say”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/raskin-epstein-mlat-letter-october-2026": {
-    "title": "Raskin’s Epstein MLAT Letter: Source Notes",
-    "description": "Raskin: the MLAT and state-records request. Original GAH caption, documentary receipts, responses and limits."
+    "title": "Raskin’s Epstein MLAT Letter",
+    "description": "Watch “Raskin’s Epstein MLAT Letter”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238": {
-    "title": "EFTA02300238: Source Notes",
-    "description": "Reid Hoffman: island departure logistics. Read EFTA02300238 with GAH’s original reel caption, document receipts and limits."
+    "title": "Hoffman: The Island Logistics Emails",
+    "description": "Watch “Hoffman: The Island Logistics Emails”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response": {
-    "title": "EFTA02656769: Source Notes",
-    "description": "Ryan and Thiel: allegation, response and separate records. Original GAH caption, documentary receipts, responses and limits."
+    "title": "Shawn Ryan and Thiel: Account and Response",
+    "description": "Watch “Shawn Ryan and Thiel: Account and Response”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/stephen-hawking-email-request-efta00695049": {
-    "title": "EFTA00695049: Source Notes",
-    "description": "Stephen Hawking: the contact-details request. Read EFTA00695049 with the original GAH caption and carefully bounded source notes."
+    "title": "Hawking: The Email Request",
+    "description": "Watch “Hawking: The Email Request”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/steve-bannon-barak-calendar-efta02240144": {
-    "title": "EFTA02240144: Source Notes",
-    "description": "Steve Bannon: the March 2018 schedule. Read EFTA02240144 with GAH’s original reel caption, document receipts and limits."
+    "title": "Bannon and Barak: The Calendar Entry",
+    "description": "Watch “Bannon and Barak: The Calendar Entry”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/research/epstein-final-48-hours-mcc": {
     "title": "Epstein’s Final 48 Hours at MCC: The Records",
@@ -1008,48 +1008,48 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read “Videos: Watch, Read and Verify” with original sources, context and limits on what the records establish."
   },
   "https://grokarchivehub.com/videos/ask-gah-search-epstein-files": {
-    "title": "EFTA00646811: Source Notes",
-    "description": "Use Ask GAH with exact EFTA identifiers, original-source checks and clear limits. Watch the original 35-second introduction."
+    "title": "How to Search Epstein Records with Ask GAH",
+    "description": "Watch “How to Search Epstein Records with Ask GAH”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/barak-epstein-caribbean-invitation-2014": {
-    "title": "EFTA00356456: Source Notes",
-    "description": "The “Come to Carib?” invitation and proposed St. Thomas flights, traced to Barak leak IDs 18414, 18310 and 18018."
+    "title": "Barak: The 2014 Caribbean Invitation",
+    "description": "Watch “Barak: The 2014 Caribbean Invitation”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/barak-hotel-name-efta00356456": {
-    "title": "EFTA00356456: Source Notes",
-    "description": "Watch the Lesley Groff and Nili Barak hotel-name exchange, then read what EFTA00356456 establishes and leaves unresolved."
+    "title": "Barak: The Hotel Name in EFTA00356456",
+    "description": "Watch “Barak: The Hotel Name in EFTA00356456”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/barak-ronen-cohen-ticket-7hlsoq": {
-    "title": "EFTA00356456: Source Notes",
-    "description": "The Barak St. Thomas itinerary names COHEN/RONEN MR. Read the document scope and the unresolved identity behind GAH’s ticket Short."
+    "title": "Barak and Cohen: The 7HLSOQ Ticket",
+    "description": "Watch “Barak and Cohen: The 7HLSOQ Ticket”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/barak-st-thomas-december-2014": {
-    "title": "EFTA00356456: Source Notes",
-    "description": "Watch GAH’s December 2014 Barak investigation with source notes for Ronen Cohen, PNR 7HLSOQ and EFTA00356456."
+    "title": "Barak in St. Thomas: December 2014 Records",
+    "description": "Watch “Barak in St. Thomas: December 2014 Records”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/hold-the-letter-victim-notification": {
-    "title": "EFTA00013764: Source Notes",
-    "description": "Watch the GAH Short with EFTA00013764, the November 2020 OPR report, DOJ’s findings and the limits of the decision record."
+    "title": "Hold the Letter: Victim Notification",
+    "description": "Watch “Hold the Letter: Victim Notification”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/jpmorgan-nine-sars-reporting-timeline": {
     "title": "JPMorgan’s Nine SARs: The Reporting Timeline",
-    "description": "Watch GAH’s JPMorgan Short with the Senate’s nine-SAR table, overlapping activity windows, JPMorgan’s response and source limits."
+    "description": "Watch “JPMorgan’s Nine SARs: The Reporting Timeline”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/peter-thiel-epstein-record-efta02656769": {
-    "title": "EFTA02656769: Source Notes",
-    "description": "Peter Thiel and EFTA02656769: the record and its boundary. Watch GAH’s video with documentary source notes, responses and limits."
+    "title": "Thiel: What EFTA02656769 Records",
+    "description": "Watch “Thiel: What EFTA02656769 Records”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/shawn-ryan-leah-interview-response": {
-    "title": "EFTA02656769: Source Notes",
-    "description": "Shawn Ryan and Leah: the released interview and two accounts. Watch GAH’s video with documentary source notes, responses and limits."
+    "title": "Shawn Ryan: Leah’s Interview and Response",
+    "description": "Watch “Shawn Ryan: Leah’s Interview and Response”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/shawn-ryan-leah-naming-allegation": {
-    "title": "EFTA02656769: Source Notes",
-    "description": "Leah’s reported naming restriction: the allegation and Ryan’s response. Watch GAH’s video with documentary source notes, responses and limits."
+    "title": "Shawn Ryan: The Naming Allegation",
+    "description": "Watch “Shawn Ryan: The Naming Allegation”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/videos/shawn-ryan-released-interview-response": {
-    "title": "EFTA02656769: Source Notes",
-    "description": "Shawn Ryan’s release statement: what the publisher record confirms. Watch GAH’s video with documentary source notes, responses and limits."
+    "title": "Shawn Ryan: The Released Interview Response",
+    "description": "Watch “Shawn Ryan: The Released Interview Response”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/visual-evidence": {
     "title": "Visual Evidence Lane",
@@ -1064,280 +1064,280 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read “Receipt-card archive” with original sources, context and limits on what the records establish."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00000468": {
-    "title": "EFTA00000468: DOJ Removal and Restoration",
-    "description": "Read EFTA00000468: DOJ Removal and Restoration. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00000468 Receipt Card",
+    "description": "Receipt card for EFTA00000468: DOJ Removal and Restoration. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00007893": {
-    "title": "EFTA00007893: Maxwell’s Travel Coordination",
-    "description": "Read EFTA00007893: Maxwell’s Travel Coordination. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00007893 Receipt Card",
+    "description": "Receipt card for EFTA00007893: Maxwell’s Travel Coordination. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00013764": {
-    "title": "EFTA00013764: The “Hold the Letter” Email",
-    "description": "Read EFTA00013764: The “Hold the Letter” Email. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00013764 Receipt Card",
+    "description": "Receipt card for EFTA00013764: The “Hold the Letter” Email. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00014374": {
-    "title": "EFTA00014374: Richardson’s Counsel Memo",
-    "description": "Read EFTA00014374: Richardson’s Counsel Memo. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00014374 Receipt Card",
+    "description": "Receipt card for EFTA00014374: Richardson’s Counsel Memo. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00016622": {
-    "title": "EFTA00016622: Indyke and Kahn Records",
-    "description": "Read EFTA00016622: Indyke and Kahn Records. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00016622 Receipt Card",
+    "description": "Receipt card for EFTA00016622: Indyke and Kahn Records. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00022062": {
-    "title": "EFTA00022062: The 2020 DOJ Request on Andrew",
-    "description": "Read EFTA00022062: The 2020 DOJ Request on Andrew. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00022062 Receipt Card",
+    "description": "Receipt card for EFTA00022062: The 2020 DOJ Request on Andrew. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00033413": {
-    "title": "EFTA00033413: June 27 MCC Lieutenant Log",
-    "description": "Read EFTA00033413: June 27 MCC Lieutenant Log. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00033413 Receipt Card",
+    "description": "Receipt card for EFTA00033413: June 27 MCC Lieutenant Log. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00034221": {
-    "title": "EFTA00034221: Zuckerberg Contact References",
-    "description": "Read EFTA00034221: Zuckerberg Contact References. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00034221 Receipt Card",
+    "description": "Receipt card for EFTA00034221: Zuckerberg Contact References. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035035": {
-    "title": "EFTA00035035: August 14 BOP Legal Hold",
-    "description": "Read EFTA00035035: August 14 BOP Legal Hold. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035035 Receipt Card",
+    "description": "Receipt card for EFTA00035035: August 14 BOP Legal Hold. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035053": {
-    "title": "EFTA00035053: MCC Evidence Preservation Request",
-    "description": "Read EFTA00035053: MCC Evidence Preservation Request. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035053 Receipt Card",
+    "description": "Receipt card for EFTA00035053: MCC Evidence Preservation Request. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035119": {
-    "title": "EFTA00035119: MCC Handwritten Visitor Log",
-    "description": "Read EFTA00035119: MCC Handwritten Visitor Log. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035119 Receipt Card",
+    "description": "Receipt card for EFTA00035119: MCC Handwritten Visitor Log. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035147": {
-    "title": "EFTA00035147: August 8 MCC Attorney Visit Log",
-    "description": "Read EFTA00035147: August 8 MCC Attorney Visit Log. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035147 Receipt Card",
+    "description": "Receipt card for EFTA00035147: August 8 MCC Attorney Visit Log. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035206": {
-    "title": "EFTA00035206: Mandatory 30-Minute Rounds Notice",
-    "description": "Read EFTA00035206: Mandatory 30-Minute Rounds Notice. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035206 Receipt Card",
+    "description": "Receipt card for EFTA00035206: Mandatory 30-Minute Rounds Notice. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035420": {
-    "title": "EFTA00035420: MCC Draft Press Release Email",
-    "description": "Read EFTA00035420: MCC Draft Press Release Email. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035420 Receipt Card",
+    "description": "Receipt card for EFTA00035420: MCC Draft Press Release Email. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035421": {
-    "title": "EFTA00035421: MCC Inmate-Death Press Release",
-    "description": "Read EFTA00035421: MCC Inmate-Death Press Release. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035421 Receipt Card",
+    "description": "Receipt card for EFTA00035421: MCC Inmate-Death Press Release. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035442": {
-    "title": "EFTA00035442: MCC Response to CBS News",
-    "description": "Read EFTA00035442: MCC Response to CBS News. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035442 Receipt Card",
+    "description": "Receipt card for EFTA00035442: MCC Response to CBS News. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035570": {
-    "title": "EFTA00035570: July 22 MCC Lieutenant Log",
-    "description": "Read EFTA00035570: July 22 MCC Lieutenant Log. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035570 Receipt Card",
+    "description": "Receipt card for EFTA00035570: July 22 MCC Lieutenant Log. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035574": {
-    "title": "EFTA00035574: MCC Self-Harm Incident Memo",
-    "description": "Read EFTA00035574: MCC Self-Harm Incident Memo. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035574 Receipt Card",
+    "description": "Receipt card for EFTA00035574: MCC Self-Harm Incident Memo. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035613": {
-    "title": "EFTA00035613: The July 2019 $5M Proposal",
-    "description": "Read EFTA00035613: The July 2019 $5M Proposal. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035613 Receipt Card",
+    "description": "Receipt card for EFTA00035613: The July 2019 $5M Proposal. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035657": {
-    "title": "EFTA00035657: MCC Public-Affairs Draft Q&A",
-    "description": "Read EFTA00035657: MCC Public-Affairs Draft Q&A. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035657 Receipt Card",
+    "description": "Receipt card for EFTA00035657: MCC Public-Affairs Draft Q&A. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035715": {
-    "title": "EFTA00035715: Annotated MCC Floor Plan",
-    "description": "Read EFTA00035715: Annotated MCC Floor Plan. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035715 Receipt Card",
+    "description": "Receipt card for EFTA00035715: Annotated MCC Floor Plan. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035773": {
-    "title": "EFTA00035773: OIG Waiver Date Discrepancy",
-    "description": "Read EFTA00035773: OIG Waiver Date Discrepancy. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035773 Receipt Card",
+    "description": "Receipt card for EFTA00035773: OIG Waiver Date Discrepancy. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00035828": {
-    "title": "EFTA00035828: The Diagram Labelled Epstein’s Cell",
-    "description": "Read EFTA00035828: The Diagram Labelled Epstein’s Cell. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00035828 Receipt Card",
+    "description": "Receipt card for EFTA00035828: The Diagram Labelled Epstein’s Cell. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00039025": {
-    "title": "EFTA00039025: DOJ OIG Report 23-085",
-    "description": "Read EFTA00039025: DOJ OIG Report 23-085. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00039025 Receipt Card",
+    "description": "Receipt card for EFTA00039025: DOJ OIG Report 23-085. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00039356": {
-    "title": "EFTA00039356: OCME Autopsy Listing Pointer",
-    "description": "Read EFTA00039356: OCME Autopsy Listing Pointer. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00039356 Receipt Card",
+    "description": "Receipt card for EFTA00039356: OCME Autopsy Listing Pointer. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00039416": {
-    "title": "EFTA00039416: MCC Camera Files and Time Windows",
-    "description": "Read EFTA00039416: MCC Camera Files and Time Windows. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00039416 Receipt Card",
+    "description": "Receipt card for EFTA00039416: MCC Camera Files and Time Windows. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00039660": {
-    "title": "EFTA00039660: MCC Watch-Status Records",
-    "description": "Read EFTA00039660: MCC Watch-Status Records. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00039660 Receipt Card",
+    "description": "Receipt card for EFTA00039660: MCC Watch-Status Records. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00080260": {
-    "title": "EFTA00080260: Black–Rothschild Exhibit",
-    "description": "Read EFTA00080260: Black–Rothschild Exhibit. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00080260 Receipt Card",
+    "description": "Receipt card for EFTA00080260: Black–Rothschild Exhibit. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00088020": {
-    "title": "EFTA00088020: The 2020 DOJ Request on Andrew",
-    "description": "Read EFTA00088020: The 2020 DOJ Request on Andrew. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00088020 Receipt Card",
+    "description": "Receipt card for EFTA00088020: The 2020 DOJ Request on Andrew. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00128841": {
-    "title": "EFTA00128841: IRS Accounting Import Record",
-    "description": "Read EFTA00128841: IRS Accounting Import Record. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00128841 Receipt Card",
+    "description": "Receipt card for EFTA00128841: IRS Accounting Import Record. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00153569": {
-    "title": "EFTA00153569: Financial-Intelligence Email",
-    "description": "Read EFTA00153569: Financial-Intelligence Email. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00153569 Receipt Card",
+    "description": "Receipt card for EFTA00153569: Financial-Intelligence Email. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00153570": {
-    "title": "EFTA00153570: French Financial Inquiry, Page 2",
-    "description": "Read EFTA00153570: French Financial Inquiry, Page 2. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00153570 Receipt Card",
+    "description": "Receipt card for EFTA00153570: French Financial Inquiry, Page 2. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00153571": {
-    "title": "EFTA00153571: French Financial Inquiry, Page 3",
-    "description": "Read EFTA00153571: French Financial Inquiry, Page 3. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00153571 Receipt Card",
+    "description": "Receipt card for EFTA00153571: French Financial Inquiry, Page 3. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00176507": {
-    "title": "EFTA00176507: 2007 Legal Correspondence",
-    "description": "Read EFTA00176507: 2007 Legal Correspondence. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00176507 Receipt Card",
+    "description": "Receipt card for EFTA00176507: 2007 Legal Correspondence. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00224262": {
-    "title": "EFTA00224262: Koni Foundation Corporate Filing",
-    "description": "Read EFTA00224262: Koni Foundation Corporate Filing. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00224262 Receipt Card",
+    "description": "Receipt card for EFTA00224262: Koni Foundation Corporate Filing. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00338082": {
-    "title": "EFTA00338082: Dershowitz’s 2015 Appointments",
-    "description": "Read EFTA00338082: Dershowitz’s 2015 Appointments. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00338082 Receipt Card",
+    "description": "Receipt card for EFTA00338082: Dershowitz’s 2015 Appointments. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00352969": {
-    "title": "EFTA00352969: Dershowitz’s 2015 Appointments",
-    "description": "Read EFTA00352969: Dershowitz’s 2015 Appointments. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00352969 Receipt Card",
+    "description": "Receipt card for EFTA00352969: Dershowitz’s 2015 Appointments. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00356456": {
-    "title": "EFTA00356456: Barak’s December 2014 Trip",
-    "description": "Read EFTA00356456: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00356456 Receipt Card",
+    "description": "Receipt card for EFTA00356456: Barak’s December 2014 Trip. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00579174": {
-    "title": "EFTA00579174: October 2004 Wire Instructions",
-    "description": "Read EFTA00579174: October 2004 Wire Instructions. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00579174 Receipt Card",
+    "description": "Receipt card for EFTA00579174: October 2004 Wire Instructions. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00579182": {
-    "title": "EFTA00579182: October 2004 Wire Reply Chain",
-    "description": "Read EFTA00579182: October 2004 Wire Reply Chain. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00579182 Receipt Card",
+    "description": "Receipt card for EFTA00579182: October 2004 Wire Reply Chain. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00643676": {
-    "title": "EFTA00643676: Gratitude America Trade Report",
-    "description": "Read EFTA00643676: Gratitude America Trade Report. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00643676 Receipt Card",
+    "description": "Receipt card for EFTA00643676: Gratitude America Trade Report. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00646811": {
-    "title": "EFTA00646811: July 2012 Valuation Correspondence",
-    "description": "Read EFTA00646811: July 2012 Valuation Correspondence. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00646811 Receipt Card",
+    "description": "Receipt card for EFTA00646811: July 2012 Valuation Correspondence. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00695049": {
-    "title": "EFTA00695049: Hawking Contact-Details Request",
-    "description": "Read EFTA00695049: Hawking Contact-Details Request. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00695049 Receipt Card",
+    "description": "Receipt card for EFTA00695049: Hawking Contact-Details Request. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00704168": {
-    "title": "EFTA00704168: EDIT Correspondence and Gains",
-    "description": "Read EFTA00704168: EDIT Correspondence and Gains. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00704168 Receipt Card",
+    "description": "Receipt card for EFTA00704168: EDIT Correspondence and Gains. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00759004": {
-    "title": "EFTA00759004: Bezos on an Email Recipient List",
-    "description": "Read EFTA00759004: Bezos on an Email Recipient List. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00759004 Receipt Card",
+    "description": "Receipt card for EFTA00759004: Bezos on an Email Recipient List. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA00962798": {
-    "title": "EFTA00962798: Brunel and MC2 Correspondence",
-    "description": "Read EFTA00962798: Brunel and MC2 Correspondence. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00962798 Receipt Card",
+    "description": "Receipt card for EFTA00962798: Brunel and MC2 Correspondence. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01245620": {
-    "title": "EFTA01245620: Nine-Page FBI Interview Report",
-    "description": "Read EFTA01245620: Nine-Page FBI Interview Report. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA01245620 Receipt Card",
+    "description": "Receipt card for EFTA01245620: Nine-Page FBI Interview Report. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01410768": {
-    "title": "EFTA01410768: Bank-Article Correspondence",
-    "description": "Read EFTA01410768: Bank-Article Correspondence. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA01410768 Receipt Card",
+    "description": "Receipt card for EFTA01410768: Bank-Article Correspondence. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01703108": {
-    "title": "EFTA01703108: Draft Federal Indictment",
-    "description": "Read EFTA01703108: Draft Federal Indictment. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA01703108 Receipt Card",
+    "description": "Receipt card for EFTA01703108: Draft Federal Indictment. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA01972778": {
-    "title": "EFTA01972778: Brunel and MC2 Correspondence",
-    "description": "Read EFTA01972778: Brunel and MC2 Correspondence. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA01972778 Receipt Card",
+    "description": "Receipt card for EFTA01972778: Brunel and MC2 Correspondence. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02213201": {
-    "title": "EFTA02213201: Indyke and Kahn Records",
-    "description": "Read EFTA02213201: Indyke and Kahn Records. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02213201 Receipt Card",
+    "description": "Receipt card for EFTA02213201: Indyke and Kahn Records. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02239649": {
-    "title": "EFTA02239649: Summers’s Harvard Visit Planning",
-    "description": "Read EFTA02239649: Summers’s Harvard Visit Planning. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02239649 Receipt Card",
+    "description": "Receipt card for EFTA02239649: Summers’s Harvard Visit Planning. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02239873": {
-    "title": "EFTA02239873: Summers’s Harvard Visit Planning",
-    "description": "Read EFTA02239873: Summers’s Harvard Visit Planning. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02239873 Receipt Card",
+    "description": "Receipt card for EFTA02239873: Summers’s Harvard Visit Planning. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02240144": {
-    "title": "EFTA02240144: Bannon’s March 2018 Schedule",
-    "description": "Read EFTA02240144: Bannon’s March 2018 Schedule. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02240144 Receipt Card",
+    "description": "Receipt card for EFTA02240144: Bannon’s March 2018 Schedule. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02262778": {
-    "title": "EFTA02262778: Zuckerberg Contact References",
-    "description": "Read EFTA02262778: Zuckerberg Contact References. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02262778 Receipt Card",
+    "description": "Receipt card for EFTA02262778: Zuckerberg Contact References. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02300238": {
-    "title": "EFTA02300238: Barak’s December 2014 Trip",
-    "description": "Read EFTA02300238: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02300238 Receipt Card",
+    "description": "Receipt card for EFTA02300238: Barak’s December 2014 Trip. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02332402": {
-    "title": "EFTA02332402: Maxwell’s Travel Coordination",
-    "description": "Read EFTA02332402: Maxwell’s Travel Coordination. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02332402 Receipt Card",
+    "description": "Receipt card for EFTA02332402: Maxwell’s Travel Coordination. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02338119": {
-    "title": "EFTA02338119: Musk’s Proposed Holiday Visit",
-    "description": "Read EFTA02338119: Musk’s Proposed Holiday Visit. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02338119 Receipt Card",
+    "description": "Receipt card for EFTA02338119: Musk’s Proposed Holiday Visit. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02346686": {
-    "title": "EFTA02346686: Barak’s December 2014 Trip",
-    "description": "Read EFTA02346686: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02346686 Receipt Card",
+    "description": "Receipt card for EFTA02346686: Barak’s December 2014 Trip. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02596796": {
-    "title": "EFTA02596796: Barak’s December 2014 Trip",
-    "description": "Read EFTA02596796: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02596796 Receipt Card",
+    "description": "Receipt card for EFTA02596796: Barak’s December 2014 Trip. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02656769": {
-    "title": "EFTA02656769: Ryan and Thiel: Claims and Responses",
-    "description": "Read EFTA02656769: Ryan and Thiel: Claims and Responses. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02656769 Receipt Card",
+    "description": "Receipt card for EFTA02656769: Ryan and Thiel: Claims and Responses. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02662212": {
-    "title": "EFTA02662212: Richardson’s Counsel Memo",
-    "description": "Read EFTA02662212: Richardson’s Counsel Memo. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02662212 Receipt Card",
+    "description": "Receipt card for EFTA02662212: Richardson’s Counsel Memo. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02730265": {
-    "title": "EFTA02730265: Gates and the Nikolic Exit Draft",
-    "description": "Read EFTA02730265: Gates and the Nikolic Exit Draft. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02730265 Receipt Card",
+    "description": "Receipt card for EFTA02730265: Gates and the Nikolic Exit Draft. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02730996": {
-    "title": "EFTA02730996: Leon Black’s Payment Record",
-    "description": "Read EFTA02730996: Leon Black’s Payment Record. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02730996 Receipt Card",
+    "description": "Receipt card for EFTA02730996: Leon Black’s Payment Record. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02731023": {
-    "title": "EFTA02731023: Leon Black’s Payment Record",
-    "description": "Read EFTA02731023: Leon Black’s Payment Record. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02731023 Receipt Card",
+    "description": "Receipt card for EFTA02731023: Leon Black’s Payment Record. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02731082": {
-    "title": "EFTA02731082: Wexner Attorney-Proffer Account",
-    "description": "Read EFTA02731082: Wexner Attorney-Proffer Account. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02731082 Receipt Card",
+    "description": "Receipt card for EFTA02731082: Wexner Attorney-Proffer Account. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02810827": {
-    "title": "EFTA02810827: Amador’s JPMorgan Expert Report",
-    "description": "Read EFTA02810827: Amador’s JPMorgan Expert Report. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02810827 Receipt Card",
+    "description": "Receipt card for EFTA02810827: Amador’s JPMorgan Expert Report. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02858481": {
-    "title": "EFTA02858481: FBI Interview: Note Review",
-    "description": "Read EFTA02858481: FBI Interview: Note Review. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02858481 Receipt Card",
+    "description": "Receipt card for EFTA02858481: FBI Interview: Note Review. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/receipts/EFTA02858491": {
-    "title": "EFTA02858491: FBI Follow-Up: Source Protection",
-    "description": "Read EFTA02858491: FBI Follow-Up: Source Protection. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02858491 Receipt Card",
+    "description": "Receipt card for EFTA02858491: FBI Follow-Up: Source Protection. Check the source reference, documentary context and stated limits."
   },
   "https://wiki.grokarchivehub.com/research-index": {
     "title": "High-Value Research Index",

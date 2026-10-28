@@ -22,3 +22,5 @@ jobs:
         run: node tests/test_source_pdf_release_20261027.mjs
       - name: Verify hub metadata, source links and primary MCC policy
         run: node tests/test_hub_metadata_polish_20261027.mjs
+      - name: Verify all evidence asset identities and acknowledged reader APIs
+        run: node tests/test_asset_identity_20261028.mjs
