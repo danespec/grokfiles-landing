@@ -77,3 +77,11 @@ const eligibleLater=laterEditorial.filter(url=>!inventory.some(r=>r.url===url)&&
 const expectedEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).length+eligibleLater.length;
 assert.equal((mainMap.match(/<loc>/g)||[]).length,expectedEditorial,'Editorial sitemap matches explicit publication decisions');
 console.log('PASS research aliases preserve one owning host; book landing alias and policy-filtered main sitemap coverage');
+
+const cmpHome=await (await worker.fetch(new Request('https://grokarchivehub.com/'),env)).text();
+assert.match(cmpHome,/"adsenseApproved":false/);
+assert.match(cmpHome,/"googleCmpConfiguredByPublisher":true/);
+assert.ok(cmpHome.indexOf('pauseAdRequests=1')<cmpHome.indexOf('data-gah-cmp-publisher-tag'));
+assert.equal((cmpHome.match(/data-gah-cmp-publisher-tag/g)||[]).length,1);
+assert.doesNotMatch(cmpHome,/pauseAdRequests=0|<ins[^>]+class="adsbygoogle"/);
+console.log('PASS CMP publisher tag loads with requests paused and approval off');

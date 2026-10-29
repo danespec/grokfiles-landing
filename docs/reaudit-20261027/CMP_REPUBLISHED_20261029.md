@@ -1,0 +1,7 @@
+# CMP publication and integration — October 29
+
+AdSense message configuration was inspected directly. The selected site was grokarchivehub.com, but its privacy-policy URL was http://grokarchivehub.com. This was corrected to https://grokarchivehub.com/privacy. A direct Do not consent option was enabled for all supported regions. The message was republished; the dashboard confirms Published and Last modified Oct 29, 2026. Google warned that appearance may take up to an hour. No approval or review was requested.
+
+The approved publisher-tag integration is deployed. The site sets pauseAdRequests=1 before loading adsbygoogle.js, retains adsenseApproved:false and inserts no ad placement. Only the publisher bootstrap path and its managed implementation directory were added to the script policy. Existing baked consent config is replaced at response time, so the configured flag reflects this installation. Privacy wording continues to say that the live certified flow has not been verified.
+
+Local reader-quality and publication-policy checks pass. Production HTML confirms configured=true, approval=false and requests paused. End-to-end consent dialog, rejection and revocation acceptance remains pending the updated Google message becoming available. A published dashboard message and loaded tag alone do not close that acceptance gate. Do not claim AdSense-ready. The earlier inactive-message investigation remains historical evidence, not proof of the current republished message's outcome.
