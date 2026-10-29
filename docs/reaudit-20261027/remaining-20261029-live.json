@@ -151,6 +151,8 @@
   "missingPdf": "404",
   "localAdGate": false,
   "certifiedCmpVerifiedLive": false,
-  "cmpBlocker": "AdSense browser is signed out; account configuration unavailable. First-party Privacy Choices is not proof of certification.",
-  "newPhangArticlePreserved": true
+  "cmpBlocker": "Authenticated dashboard message is Published since June 22, 2026; site debug flow still displays first-party consent only. Site CMP integration remains unverified with advertising gate off.",
+  "newPhangArticlePreserved": true,
+  "dashboardCmpPublished": true,
+  "googleDebugConsentFlowVerified": false
 }
