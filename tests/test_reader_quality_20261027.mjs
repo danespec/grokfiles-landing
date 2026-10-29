@@ -68,5 +68,12 @@ for(const route of RESEARCH_ROUTES.filter(r=>r.owner==='wiki')){
 for(const path of ['/book-of-black/index','/book-of-black/index.html']){const r=await worker.fetch(new Request('https://grokarchivehub.com'+path),env);assert.equal(r.status,301);assert.equal(r.headers.get('Location'),'https://grokarchivehub.com/book-of-black');}
 const mainMap=await(await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env)).text();
 for(const path of ['/archive/ids','/dispatches/doe-v-black-october-2026-dismissal','/dispatches/phang-ecf59-oct16-2026','/news/epstein-wall-street-records-act-2026','/news/state-attorneys-general-efta-ii-2026'])assert.equal(mainMap.includes('<loc>https://grokarchivehub.com'+path+'</loc>'),!publicationRule('https://grokarchivehub.com'+path)?.noindex,path+' sitemap decision');
-const inventory=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/adsense-prose-baseline.json',root),'utf8')).pages;const expectedEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).length;assert.equal((mainMap.match(/<loc>/g)||[]).length,expectedEditorial,'Editorial sitemap matches explicit publication decisions');
+const inventory=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/adsense-prose-baseline.json',root),'utf8')).pages;
+// The October 27 inventory is an immutable historical audit, not a live count.
+// Account explicitly for this independently reviewed October 29 publication.
+const laterEditorial=['https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026'];
+for(const url of laterEditorial)assert.ok(mainMap.includes('<loc>'+url+'</loc>'),'New Phang article must be in editorial sitemap');
+const eligibleLater=laterEditorial.filter(url=>!inventory.some(r=>r.url===url)&&!publicationRule(url)?.noindex);
+const expectedEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).length+eligibleLater.length;
+assert.equal((mainMap.match(/<loc>/g)||[]).length,expectedEditorial,'Editorial sitemap matches explicit publication decisions');
 console.log('PASS research aliases preserve one owning host; book landing alias and policy-filtered main sitemap coverage');
