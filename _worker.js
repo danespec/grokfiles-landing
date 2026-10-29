@@ -6979,7 +6979,7 @@ function consentBootTag(env = {}) {
     adsenseApproved: adsenseApproved(env),
     // GAH-ADSENSE-REMEDIATION-001: first-party UI defers when Google Privacy & messaging / TCF CMP is live
     deferToGoogleCmpWhenPresent: true,
-    googleCmpConfiguredByPublisher: false,
+    googleCmpConfiguredByPublisher: !isStagingEnv(env),
     tcfVersionSupport: "2.3",
     adsDataRedaction: true
   };
@@ -6993,13 +6993,17 @@ function consentScriptTag(env = {}) {
 function ensureConsentScript(body, env = {}) {
   // STAGING-HARDEN-001: sanitize any baked-in GAH_CONSENT_BOOT config on staging.
   // Static HTML may contain production GA4 config; replace it with a disabled config.
-  if (isStagingEnv(env) && body.includes("window.GAH_CONSENT_BOOT=")) {
+  if (body.includes("window.GAH_CONSENT_BOOT=")) {
     const sanitized = consentBootTag(env);
     // Replace the entire GAH_CONSENT_BOOT script tag with the sanitized version.
     body = body.replace(
       /<script[^>]*>window\.GAH_CONSENT_BOOT=.*?<\/script>/s,
       sanitized.replace(/\$/g, "$$$$")
     );
+  }
+  // Google CMP uses the publisher tag; ad requests remain explicitly paused.
+  if (!isStagingEnv(env) && !body.includes('data-gah-cmp-publisher-tag')) {
+    body = body.replace(/<\/head>/i, '<script>(window.adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;</script><script data-gah-cmp-publisher-tag async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2417980244192018"></script>\n</head>');
   }
   if (body.includes("/frontdoor/consent.js")) return body;
   if (!/<\/head>/i.test(body)) return body;
@@ -7699,6 +7703,8 @@ function scriptSourceAllowlist(origin = "") {
   return [
     ...origins.flatMap((allowedOrigin) => exactScripts.map((scriptPath) => `${allowedOrigin}${scriptPath}`)),
     ...origins.flatMap((allowedOrigin) => directories.map((dir) => `${allowedOrigin}${dir}`)),
+    "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/",
     "https://static.cloudflareinsights.com",
     "https://www.googletagmanager.com",
     // GAH-ADSENSE-REMEDIATION-001: Google Privacy & messaging / Funding Choices / TCF CMP hosts
