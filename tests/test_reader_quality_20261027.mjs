@@ -71,8 +71,8 @@ for(const path of ['/archive/ids','/dispatches/doe-v-black-october-2026-dismissa
 const inventory=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/adsense-prose-baseline.json',root),'utf8')).pages;
 // The October 27 inventory is an immutable historical audit, not a live count.
 // Account explicitly for this independently reviewed October 29 publication.
-const laterEditorial=['https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026'];
-for(const url of laterEditorial)assert.ok(mainMap.includes('<loc>'+url+'</loc>'),'New Phang article must be in editorial sitemap');
+const laterEditorial=['https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026','https://grokarchivehub.com/news/police-scotland-balmoral-epstein-inquiries-october-30-2026'];
+for(const url of laterEditorial)assert.ok(mainMap.includes('<loc>'+url+'</loc>'),'Reviewed later article must be in editorial sitemap');
 const eligibleLater=laterEditorial.filter(url=>!inventory.some(r=>r.url===url)&&!publicationRule(url)?.noindex);
 const expectedEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).length+eligibleLater.length;
 assert.equal((mainMap.match(/<loc>/g)||[]).length,expectedEditorial,'Editorial sitemap matches explicit publication decisions');
