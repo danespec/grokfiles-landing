@@ -3,8 +3,11 @@
   "use strict";
   var start = Date.parse("2026-10-31T00:00:00-06:00");
   var end = Date.parse("2026-11-01T00:01:00-06:00");
+  var servedAt = Number(new URL(document.currentScript.src).searchParams.get("at"));
+  var began = performance.now();
+  function clock() { return servedAt ? servedAt + performance.now() - began : Date.now(); }
   function active(now) { return now >= start && now < end; }
-  if (!/^\/(?:index\.html)?$/.test(location.pathname) || !active(Date.now())) return;
+  if (!/^\/(?:index\.html)?$/.test(location.pathname) || !active(clock())) return;
   var style = document.createElement("style");
   style.id = "gah-halloween-style";
   style.textContent = `
@@ -40,7 +43,7 @@ html.gah-halloween{--page:#100d18;--paper:#1c1627;--ink:#fff2df;--slate:#d4c5df;
   document.querySelector("main").prepend(banner);
   var timer;
   function expire() {
-    if (active(Date.now())) return;
+    if (active(clock())) return;
     banner.remove();
     style.remove();
     document.documentElement.classList.remove("gah-halloween");
@@ -49,7 +52,7 @@ html.gah-halloween{--page:#100d18;--paper:#1c1627;--ink:#fff2df;--slate:#d4c5df;
     window.removeEventListener("pageshow", expire);
   }
   timer = setInterval(expire, 1000);
-  setTimeout(expire, Math.max(0, end - Date.now()));
+  setTimeout(expire, Math.max(0, end - clock()));
   document.addEventListener("visibilitychange", expire);
   window.addEventListener("pageshow", expire);
 })();

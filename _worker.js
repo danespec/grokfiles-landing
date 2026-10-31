@@ -6995,6 +6995,7 @@ function consentScriptTag(env = {}) {
 }
 
 function ensureConsentScript(body, env = {}) {
+  body = body.replace('src="/assets/halloween-2026.js"', 'src="/assets/halloween-2026.js?at=' + Date.now() + '"');
   // STAGING-HARDEN-001: sanitize any baked-in GAH_CONSENT_BOOT config on staging.
   // Static HTML may contain production GA4 config; replace it with a disabled config.
   if (body.includes("window.GAH_CONSENT_BOOT=")) {
