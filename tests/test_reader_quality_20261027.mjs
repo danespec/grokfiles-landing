@@ -69,13 +69,28 @@ for(const path of ['/book-of-black/index','/book-of-black/index.html']){const r=
 const mainMap=await(await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env)).text();
 for(const path of ['/archive/ids','/dispatches/doe-v-black-october-2026-dismissal','/dispatches/phang-ecf59-oct16-2026','/news/epstein-wall-street-records-act-2026','/news/state-attorneys-general-efta-ii-2026'])assert.equal(mainMap.includes('<loc>https://grokarchivehub.com'+path+'</loc>'),!publicationRule('https://grokarchivehub.com'+path)?.noindex,path+' sitemap decision');
 const inventory=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/adsense-prose-baseline.json',root),'utf8')).pages;
-// The October 27 inventory is an immutable historical audit, not a live count.
-// Account explicitly for this independently reviewed October 29 publication.
-const laterEditorial=['https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026','https://grokarchivehub.com/news/police-scotland-balmoral-epstein-inquiries-october-30-2026'];
-for(const url of laterEditorial)assert.ok(mainMap.includes('<loc>'+url+'</loc>'),'Reviewed later article must be in editorial sitemap');
-const eligibleLater=laterEditorial.filter(url=>!inventory.some(r=>r.url===url)&&!publicationRule(url)?.noindex);
-const expectedEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).length+eligibleLater.length;
-assert.equal((mainMap.match(/<loc>/g)||[]).length,expectedEditorial,'Editorial sitemap matches explicit publication decisions');
+// October 27 inventory is immutable: later editorial publications must be
+// explicitly listed here rather than silently raising a fixed sitemap count.
+const laterEditorial=[
+ 'https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026',
+ 'https://grokarchivehub.com/news/police-scotland-balmoral-epstein-inquiries-october-30-2026',
+ 'https://grokarchivehub.com/news/mar-a-lago-air-defense-norad-secret-service-faa-records-2026',
+ 'https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026',
+ 'https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026',
+ 'https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026',
+];
+const baselineEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).map(r=>r.url);
+const laterEligible=laterEditorial.filter(url=>!baselineEditorial.includes(url)&&!publicationRule(url)?.noindex);
+const expectedEditorial=new Set([...baselineEditorial,...laterEligible]);
+const actualEditorial=[...mainMap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+assert.equal(actualEditorial.length,new Set(actualEditorial).size,'Editorial sitemap must not contain duplicate URLs');
+assert.deepEqual([...new Set(actualEditorial)].sort(),[...expectedEditorial].sort(),'Editorial sitemap matches the October 27 baseline plus explicitly reviewed subsequent stories');
+for(const url of laterEditorial){
+ assert.ok(actualEditorial.includes(url),'Reviewed later article must be in editorial sitemap: '+url);
+ const page=await fs.readFile(new URL('.'+new URL(url).pathname+'.html',root),'utf8');
+ assert.match(page,/<meta name="robots" content="index,follow">/,'Published later story must be indexable: '+url);
+ assert.ok(page.includes('<link rel="canonical" href="'+url+'">'),'Published later story must self-canonicalize: '+url);
+}
 console.log('PASS research aliases preserve one owning host; book landing alias and policy-filtered main sitemap coverage');
 
 const cmpHome=await (await worker.fetch(new Request('https://grokarchivehub.com/'),env)).text();
