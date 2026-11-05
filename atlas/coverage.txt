@@ -1,0 +1,80 @@
+Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid; the table says so instead of forcing false precision. "Unsampled remainder" means NOT
+EXAMINED, CONTENT UNKNOWN — never "story-free." A slice
+whose method was capped FTS sweeps cannot distinguish "no
+story" from "story not yet found" in its unsampled remainder.
+
+| Set | Docs total | Sampled or anchored (method) | Image-only, unmappable from text | Unsampled remainder (not examined) |
+|---|---|---|---|---|
+| DS1–7 + DS12 | 4,253 | ~75 read directly (all DS6+DS7, DS3 largest caption docs, DS4/DS12 anchors, speckle checks) + full metadata inventory of all docs in the group | ≥3,216 no-text (3,301 for DS1–8+12 combined, less DS8 ~85); speckle-text photo docs in DS1/DS2/DS5 add uncounted unmappable | ~4,178 not read directly |
+| DS8 | 10,594 (29,348 pages) | Inventory and expanded survey in v2.0: full metadata inventory of all 10,594 docs; ~2,820 examined at opening depth or better (A ~300, B all 2,110 first-600-char openings + 59 Bates-led reads, C ~120, D ~163, E ~130); ~200 read in full, ~300 more in substantial part/excerpt; ~150 FTS sweep terms per range in places | ~85 (99.2% with text) | ~7,770 not examined beyond metadata (content unknown, never story-free); includes 414 "No Images Produced" placeholders (range D) and 5 image-only runs totaling 585 pages (range C) |
+| DS9 | 531,282 (1,223,777 pages) | ≤3,240 capped FTS hit rows (upper bound, NOT a distinct-doc count; distinct sampled IDs fewer, never deduplicated); 0 docs read in full; 15 anchor docs verified for existence/size only, content reused from prior findings | 53,822 exact (10.1%; EFTA011xxxxx 21,953 + EFTA012xxxxx 16,079) | At least 528,042 never even a sampled hit row; sampled-but-unchained remainder likewise unmapped |
+| DS10 | 503,154 (950,101 pages; 493,068 with text) | FEDWIRE chaining in v3.0 (WS3): 1,632 FEDWIRE docs inventoried (7,312 pp.); 161 FirstBank advice instances enumerated advice-by-advice; 1,761 NC-bearing statement lines parsed (345 counterparties); ~110 docs examined at opening depth or better; 12 read in full; ~40 verification reads. 917 'STATEMENT OF ACCOUNT' docs connected by counts only, not chained | ~10,086 (503,154 − 493,068; 20/20 no-text sample = 1-page, 1-image, Bates-only) | Effectively the whole slice minus the chained FEDWIRE population and ~35 cited docs; the 917 statements beyond counts, the ~330 smaller-counterparty chains beyond F-WS3-15 inventory, and the ~10,086 no-text docs |
+| DS11 | 331,655 (517,382 pages) | ~700 distinct docs surfaced, ~100 read closely, ~60 anchored (v1) + v3.0 late-Bates re-sweep (WS1): 4,130-doc cluster EFTA02720000–02730262 inventoried; 4,092 examined at opening depth or better (100% of with-text docs); 56 read in full or substantial part; 44 FTS terms × 11 windows | 2,780 (99.2% with text) | ~327,500 docs outside the late-Bates cluster remain unmapped except for v1's ~700 surfaced docs; the 38 no-text docs in the cluster and the 88 victim-list spreadsheet pages (headers only, by design) are characterized, not surveyed |
+| House Oversight | 23,160 pages | ~250–280 pages directly read (94 part-opening reads + ~90 direct anchor reads + reused 94-page dedup sample); everything else is FTS-tally evidence, NOT read evidence | Not applicable in the same way (pages, not docs); 3,534 sub-800-char pages + 51 zero-char pages are fragment/cover material | ~22,880–22,910 pages not directly read (approximation only) |
+| Barak mailbox | 43,322 rows → 31,704 canonical messages (main 31,718 + Hyperion 1,621 + part01 4,192 + part02 3,979 + part03 1,812) | Sweep-and-anchor pass (~45 FTS terms across all DBs, top-sender/subject scans); ~70 anchor rows body-read in full (v1) + v3.0 WS2 survey of parts 02/03 (~80 sweep terms, ~35 anchor rows body-read). IA Barak parts 02/03 INDEXED in v3.0 (5,791 rows; 11 truly new messages) | Not applicable (rows are emails, not scanned pages); 8,942 rows (20.6%) undated across all five DBs | Pre-2013 mailbox ~2,300 dated rows sweep-checked only (least-mapped part); Tiomkin/AT Global thread and Bendheim/PHC cluster unmapped; attachments (PDF/DOC/images) not indexed in any part; mailbox dated range ends 2016-02-15 |
+
+**Coverage headline (v3.0):** Atlas v3.0 surveys a small,
+stated fraction of the corpus (anchored documents now numbering
+in the high hundreds, plus the DS11 late-Bates inventory and expanded
+survey, the DS10 FEDWIRE chaining, and the Barak parts 02/03 indexing)
+and labels everything else unsampled-and-unknown, image-only, or
+duplicate. It makes NO claim about whether unsampled documents
+contain stories.
+The story count (72) is the number of stories v3.0 could
+confirm or probabilistically chain from surveys (57 from v2.1
+plus 15 new). Further stories may emerge from
+unsampled material; their number is unknown.
+
+## Unmapped remainder (honest accounting, corrected)
+
+- **Image-only, unmappable from text: ~70,000 docs**
+  (DS9 53,822; DS10 ~10,086; DS11 2,780; DS1/DS2/DS5
+  photo strata; DS8 ~85). Their stories, if any, live in
+  the pictures — not in this atlas.
+- **Duplicates, not new stories:** DS9↔DS11 email
+  duplicates; HO internal duplicates (19,626 pages ≥800
+  chars → 19,314 distinct texts, 307 duplicate groups);
+  Barak internal duplicates (43,322 rows → 31,704 canonical messages
+  in v3.0, WS2 — the v2.1 stored-hash figure 34,801 was inflated by a
+  pipeline entity-decoding artifact; Hyperion adds 5 messages to main,
+  part01 adds 11, parts 02/03 add 11);
+  DS11 internal mailbox-export duplicates (e.g. Jun 14,
+  2014 Wexner note at EFTA02357422 and EFTA02358529).
+- **Bulk material examined in samples that fits no arc
+  under the definition:** routine staff/aviation/household
+  correspondence (DS11 is mostly this), newsletters and
+  alerts (RelSci alone: 491 main + 82 part01 Barak rows),
+  single filings, calendar alerts, mega-statement runs
+  with no arc (Amex Epstein 9,824 pp.; Bear Stearns
+  632 pp.), 917 DS10 "STATEMENT OF ACCOUNT" docs (connected by counts only in
+  v3.0, not chained), 1,632 DS10 FEDWIRE docs (chained by beneficiary
+  account in v3.0, WS3), 3,906 HO jeevacation pages, 3,534
+  short/cover/fragment HO pages, phone-record and
+  evidence-inventory bulks (DS4, DS12). Bulk material NOT
+  examined is unknown, not arc-free.
+- **Sampled, not censused:** DS9 (≤3,240 capped hit rows,
+  zero docs read in full), DS11 (~700 docs surfaced in v1 +
+  4,130-doc late-Bates cluster inventoried in v3.0),
+  DS10 (~300 snippet rows + ~35 distinct cited docs in v1 +
+  1,632 FEDWIRE docs inventoried and chained in v3.0), HO
+  (~250–280 pages read), Barak (sweep-and-anchor pass, ~70 rows
+  body-read in v1 + ~35 in v3.0 WS2). The unsampled majority is
+  UNMAPPED, not "story-free."
+  DS8 in v2.0: full metadata inventory done; ~2,820 examined
+  at opening depth or better; ~7,770 not examined beyond
+  metadata (mostly routine SDNY emails + placeholders) —
+  content unknown, not story-free. DS8 was the manageable
+  full-pass target (10,594 docs, completable in one pass,
+  unlike DS9/DS11) — it is NOT the largest unmapped block in
+  absolute terms: DS9's unsampled remainder (≥528,042) and
+  DS11's (≈328,000) are far larger. DS11's late-Bates
+  EFTA0272xxxx–0273xxxx cluster was re-swept in v3.0 (WS1: 4,130 docs
+  inventoried, 4,092 examined at opening depth or better, 56 read in
+  full; DS11 outside the cluster, ~327,500 docs, remains unmapped
+  except for v1's ~700 surfaced docs). Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid.
+- **Indexed in v3.0 (WS2):** IA Barak parts 02/03 (5,791 rows;
+  11 truly new messages). **Still unmapped:** Barak pre-2013
+  mailbox (~2,300 dated rows, sweep-checked only); Barak
+  Tiomkin/AT Global thread (465 sender rows) and Bendheim/PHC
+  cluster (metadata muddled, no arc verified) — named follow-ups,
+  not forced stories.

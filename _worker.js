@@ -1341,6 +1341,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/atlas/", "2026-11-05"],
   ["https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026", "2026-10-16"],
   ["https://grokarchivehub.com/news/epstein-wall-street-records-act-2026", "2026-10-20"],
@@ -19166,6 +19167,22 @@ export default {
           headers
         });
       }
+    }
+
+    // Approved Story Atlas v3.1: editorial page and exact downloadable dataset.
+    if ((request.method === "GET" || request.method === "HEAD") && path === "/atlas") {
+      return serveFrontdoorEnhanced(request, env, "/atlas.html", {canonical: "https://grokarchivehub.com/atlas/"});
+    }
+    if ((request.method === "GET" || request.method === "HEAD") && ["/atlas/data.json", "/atlas/coverage.txt"].includes(path)) {
+      const assetUrl = new URL(request.url);
+      assetUrl.pathname = path;
+      assetUrl.search = "";
+      const response = await env.ASSETS.fetch(assetUrl.toString());
+      const headers = new Headers(response.headers);
+      headers.set("Content-Type", path.endsWith(".json") ? "application/json; charset=utf-8" : "text/plain; charset=utf-8");
+      headers.set("X-Content-Type-Options", "nosniff");
+      headers.set("X-Robots-Tag", "noindex,follow");
+      return new Response(request.method === "HEAD" ? null : response.body, {status: response.status, headers});
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/news") {

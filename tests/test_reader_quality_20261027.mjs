@@ -72,6 +72,7 @@ const inventory=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/adse
 // October 27 inventory is immutable: later editorial publications must be
 // explicitly listed here rather than silently raising a fixed sitemap count.
 const laterEditorial=[
+ 'https://grokarchivehub.com/atlas/',
  'https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026',
  'https://grokarchivehub.com/news/police-scotland-balmoral-epstein-inquiries-october-30-2026',
  'https://grokarchivehub.com/news/mar-a-lago-air-defense-norad-secret-service-faa-records-2026',
@@ -87,7 +88,7 @@ assert.equal(actualEditorial.length,new Set(actualEditorial).size,'Editorial sit
 assert.deepEqual([...new Set(actualEditorial)].sort(),[...expectedEditorial].sort(),'Editorial sitemap matches the October 27 baseline plus explicitly reviewed subsequent stories');
 for(const url of laterEditorial){
  assert.ok(actualEditorial.includes(url),'Reviewed later article must be in editorial sitemap: '+url);
- const page=await fs.readFile(new URL('.'+new URL(url).pathname+'.html',root),'utf8');
+ const page=await fs.readFile(new URL('.'+new URL(url).pathname.replace(/\/$/,'')+'.html',root),'utf8');
  assert.match(page,/<meta name="robots" content="index,follow">/,'Published later story must be indexable: '+url);
  assert.ok(page.includes('<link rel="canonical" href="'+url+'">'),'Published later story must self-canonicalize: '+url);
 }
