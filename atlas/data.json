@@ -1,0 +1,1809 @@
+{
+  "atlas": "story-atlas v2.0 (Phase 2 step 2: DS8 inventory and expanded survey; 17 new stories, 27 new fragments, 2 promotions; Story 4 endpoint corrected to OCME-relay level)",
+  "corpus_docs": 1380938,
+  "counts": {
+    "anchors_added_v14_story13": 3,
+    "anchors_added_v14_story8_dec2017": 6,
+    "anchors_recovered_v12": 3,
+    "anchors_restored_v14": 10,
+    "confirmed": 30,
+    "downgrades_v12": 0,
+    "fragments": 84,
+    "fully_unauditable": 0,
+    "labels_reconciled_v13": true,
+    "p13_ruling_v13": "probable story",
+    "probable": 42,
+    "recategorized_v13": 0,
+    "recategorized_v14": 0,
+    "stories_with_citation_flags": 7,
+    "tier_changes": 0,
+    "tier_changes_v14": 0,
+    "total_stories": 72,
+    "absolute_negatives_corrected_v15": 10,
+    "cohen_nidal_verdict_v15": "not established",
+    "tier_changes_v15": 0,
+    "recategorized_v15": 0,
+    "tier_changes_v20": 0,
+    "recategorized_v20": 0,
+    "stories_added_v20": 17,
+    "confirmed_added_v20": 5,
+    "probable_added_v20": 12,
+    "fragments_added_v20": 27,
+    "fragments_promoted_v20": 2,
+    "labels_corrected_v21": 3,
+    "tier_changes_v21": 0,
+    "recategorized_v21": 0,
+    "stories_added_v30": 15,
+    "confirmed_added_v30": 3,
+    "probable_added_v30": 12,
+    "fragments_added_v30": 35,
+    "downgrades_v30": 1,
+    "tier_changes_v30": 1,
+    "labels_corrected_v30": 6,
+    "anchors_removed_v30": 6,
+    "verification_v30": "57/57 carried stories document-level verified (41 fully, 7 already-verified carried, 8 verified with non-load-bearing corrections, 1 downgraded); 15/15 new stories verified in their workstreams"
+  },
+  "coverage_headline": "Atlas v3.0 surveys a small, stated fraction of the corpus (anchored documents now numbering in the high hundreds, plus the DS11 late-Bates inventory and expanded survey, the DS10 FEDWIRE chaining, and the Barak parts 02/03 indexing) and labels everything else unsampled-and-unknown, image-only, or duplicate. It makes NO claim about whether unsampled documents contain stories. The story count (72) is the number of stories v3.0 could confirm or probabilistically chain from surveys (57 from v2.1 plus 15 new). Further stories may emerge from unsampled material; their number is unknown.",
+  "coverage_table": [
+    {
+      "docs_total": 4253,
+      "image_only": ">=3216 no-text; speckle-text photo docs in DS1/DS2/DS5 add uncounted unmappable",
+      "sampled_or_anchored": "~75 read directly + full metadata inventory",
+      "set": "DS1-7 + DS12",
+      "unsampled_remainder": "~4178 not read directly"
+    },
+    {
+      "docs_total": 10594,
+      "image_only": "~85",
+      "sampled_or_anchored": "Inventory and expanded survey: full metadata inventory of all 10,594 docs; ~2,820 examined at opening depth or better; ~200 read in full, ~300 more in substantial part/excerpt",
+      "set": "DS8",
+      "unsampled_remainder": "~7,770 not examined beyond metadata (content unknown, never story-free)"
+    },
+    {
+      "docs_total": 531282,
+      "image_only": "53822",
+      "sampled_or_anchored": "<=3240 capped FTS hit rows (upper bound, not distinct docs); 0 read in full; 15 anchor docs verified for existence/size only",
+      "set": "DS9",
+      "unsampled_remainder": ">=528042 never even a sampled hit row"
+    },
+    {
+      "docs_total": 503154,
+      "image_only": "~10086",
+      "sampled_or_anchored": "FEDWIRE chaining in v3.0 (WS3): 1,632 FEDWIRE docs inventoried (7,312 pp.); 161 FirstBank advice instances enumerated advice-by-advice; 1,761 NC-bearing statement lines parsed (345 counterparties); ~110 docs examined at opening depth or better; 12 read in full; ~40 verification reads. 917 'STATEMENT OF ACCOUNT' docs connected by counts only, not chained",
+      "set": "DS10",
+      "unsampled_remainder": "Effectively the whole slice minus the chained FEDWIRE population and ~35 cited docs; the 917 statements beyond counts, the ~330 smaller-counterparty chains beyond F-WS3-15 inventory, and the ~10,086 no-text docs"
+    },
+    {
+      "docs_total": 331655,
+      "image_only": "2780",
+      "sampled_or_anchored": "~700 distinct docs surfaced, ~100 read closely, ~60 anchored (v1) + v3.0 late-Bates re-sweep (WS1): 4,130-doc cluster EFTA02720000-02730262 inventoried; 4,092 examined at opening depth or better (100% of with-text docs); 56 read in full or substantial part; 44 FTS terms x 11 windows",
+      "set": "DS11",
+      "unsampled_remainder": "~327,500 docs outside the late-Bates cluster remain unmapped except for v1's ~700 surfaced docs; the 38 no-text docs in the cluster and the 88 victim-list spreadsheet pages (headers only, by design) are characterized, not surveyed"
+    },
+    {
+      "docs_total": "23160 pages",
+      "image_only": "n/a (pages); 3534 sub-800-char + 51 zero-char fragment/cover pages",
+      "sampled_or_anchored": "~250-280 pages directly read; rest is FTS-tally evidence, not read evidence",
+      "set": "House Oversight",
+      "unsampled_remainder": "~22880-22910 pages not directly read"
+    },
+    {
+      "docs_total": "43,322 rows -> 31,704 canonical messages (main 31,718 + Hyperion 1,621 + part01 4,192 + part02 3,979 + part03 1,812)",
+      "image_only": "Not applicable (rows are emails, not scanned pages); 8,942 rows (20.6%) undated across all five DBs",
+      "sampled_or_anchored": "Sweep-and-anchor pass (~45 FTS terms across all DBs, top-sender/subject scans); ~70 anchor rows body-read in full (v1) + v3.0 WS2 survey of parts 02/03 (~80 sweep terms, ~35 anchor rows body-read). IA Barak parts 02/03 INDEXED in v3.0 (5,791 rows; 11 truly new messages)",
+      "set": "Barak mailbox",
+      "unsampled_remainder": "Pre-2013 mailbox ~2,300 dated rows sweep-checked only (least-mapped part); Tiomkin/AT Global thread and Bendheim/PHC cluster unmapped; attachments (PDF/DOC/images) not indexed in any part; mailbox dated range ends 2016-02-15"
+    }
+  ],
+  "date": "2026-11-05",
+  "fragments": 84,
+  "fragments_note": "49 carried from v2.1 + 35 new in v3.0 (WS1 16, WS2 4, WS3 15). Fragment anchor EFTA00005286 removed in v3.0 (no such document in corpus.db).",
+  "internal_only": false,
+  "phase2_priority": [
+    "DONE in v2.0 (Phase 2, step 2): DS8 inventory and expanded survey (10,594 docs; full metadata inventory; ~2,820 examined at opening depth or better; ~200 read in full). 17 new stories (5 confirmed, 12 probable), 27 new fragments, 2 promotions, Story 4 endpoint corrected to OCME-relay level.",
+    "DS11 late-Bates cluster re-sweep",
+    "Barak 02/03 indexing",
+    "DS10 FEDWIRE chaining by beneficiary",
+    "HO full pass (only if HO-only stories justify ~45h)",
+    "Fuzzy/OCR-tolerant matching",
+    "Vision pass on DS9 011/012 image blocks",
+    "DONE in v1.4: DS9 re-check of removed DS9-leg IDs (all 10 restored); Nov 2016 Bannon direct-header re-check (no direct headers found in the searched material; earliest direct contact Dec 2017); P5 EFTA00005714 citation check (both hold; interview conducted Mar 17, 2011); Story 13 bodyguard-answer DOJ citation (found; name corrected); full JSON/MD harmonization re-run",
+    "Document-level re-verification of the remaining stories (v1.2 verified only Story 12, Story 8, and P13 against underlying documents)"
+  ],
+  "stories": [
+    {
+      "anchors": [
+        "DS9: EFTA00231917",
+        "DS9: EFTA00058429",
+        "DS9: EFTA00077923",
+        "DS9: EFTA00240536",
+        "DS9: EFTA00227381",
+        "DS9: EFTA00193199",
+        "DS9: EFTA00039421",
+        "DS1-8: EFTA00007157",
+        "DS1-8: EFTA00009448",
+        "DS1-8: EFTA00009016",
+        "DS1-8: EFTA00009478",
+        "DS1-8: EFTA00009502",
+        "DS1-8: EFTA00009440",
+        "DS1-8: EFTA00009512",
+        "DS1-8: EFTA00007253",
+        "HO 8514",
+        "HO 8898",
+        "HO 8461",
+        "HO 11085",
+        "HO 2152",
+        "HO 6027",
+        "HO 1690-1693",
+        "HO 2150",
+        "HO 2148",
+        "HO 8614",
+        "DS8: EFTA00027591",
+        "DS8: EFTA00029390",
+        "DS8: EFTA00029223",
+        "DS8: EFTA00029907",
+        "DS8: EFTA00013680",
+        "DS8: EFTA00013890",
+        "DS8: EFTA00032238",
+        "DS11: EFTA02729079",
+        "DS11: EFTA02728515",
+        "DS11: EFTA02729757",
+        "DS11: EFTA02729808",
+        "DS11: EFTA02725847",
+        "DS11: EFTA02725185"
+      ],
+      "endpoint": "2008 NPA / state plea",
+      "flags": [
+        "v1 anchor list mixed slices; re-attributed by slice in v1.1",
+        "v2.0 DS8 extension: plea-hearing transcript, house-manager statement, NPA instrument, state plea form; Jun 20 vs Jun 30, 2008 date discrepancy flagged, not resolved"
+      ],
+      "id": "1",
+      "span": "2005-03/2008-06",
+      "stopping_point": "2008-06-30 (HO 6027); signed NPA text not re-verified \u2014 endpoint rests on Jun 2008 negotiation emails + case file",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Palm Beach investigation \u2192 2008 NPA",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA00230786",
+        "DS8: EFTA00013587"
+      ],
+      "endpoint": "Jun 12, 2009 breach declaration (EFTA00230786)",
+      "flags": [
+        "v2.0 DS8 extension: victim-notification mechanics (see Story 25, the OPR investigation)",
+        "v3.0 DOWNGRADE (WS4): confirmed -> probable. EFTA00039665 (Knight Capital/SEC whistleblower appeal) and EFTA00039367 (2019 BOP suicide-reconstruction memo) do not support the story and were removed; the 'decade of inaction / no federal prosecution until July 2019' half has no supporting anchor and is bounded as an unanchored claim, not a verified finding. The Jun 12, 2009 breach declaration (EFTA00230786) remains document-verified."
+      ],
+      "id": "2",
+      "span": "2009/2019",
+      "stopping_point": "2009-06-12 (EFTA00230786); the no-prosecution question is an open lead, not a finding",
+      "tier": "probable",
+      "tier_v1": "confirmed",
+      "title": "Declared NPA breach, June 12, 2009",
+      "verification": "DG"
+    },
+    {
+      "anchors": [
+        "EFTA02731039",
+        "EFTA00008529",
+        "EFTA02730486",
+        "EFTA02731082",
+        "EFTA00040478",
+        "EFTA00040495",
+        "EFTA00008585",
+        "EFTA00008599",
+        "EFTA00005718",
+        "EFTA02731069",
+        "EFTA02730741",
+        "EFTA00009658",
+        "DS8: EFTA00009809",
+        "DS8: EFTA00015606",
+        "DS8: EFTA00015293",
+        "DS8: EFTA00009834",
+        "DS8: EFTA00010386",
+        "DS8: EFTA00014508",
+        "DS8: EFTA00015006",
+        "DS8: EFTA00028388",
+        "DS8: EFTA00030151",
+        "DS8: EFTA00024509",
+        "DS8: EFTA00019994",
+        "DS8: EFTA00031395",
+        "DS8: EFTA00031397",
+        "DS8: EFTA00030708",
+        "DS8: EFTA00027424",
+        "DS8: EFTA00038617",
+        "DS8: EFTA00015657",
+        "DS11: EFTA02730048",
+        "DS11: EFTA02730050",
+        "DS11: EFTA02730052",
+        "DS11: EFTA02730067",
+        "DS11: EFTA02730069",
+        "DS11: EFTA02730005",
+        "DS11: EFTA02730010",
+        "DS11: EFTA02730014",
+        "DS11: EFTA02730027",
+        "DS11: EFTA02730034",
+        "DS11: EFTA02730071"
+      ],
+      "endpoint": "Indictment, arrest, death Aug 10 2019, post-death associate inquiry",
+      "flags": [
+        "v2.0 DS8 extension: sealed indictment, detention conference, victim outreach, proffers, search-warrant affidavit, nolle prosequi hearing, Prince Andrew MLAT intent (not a completed request), FBI summary Jul 17, 2024"
+      ],
+      "id": "3",
+      "span": "2019",
+      "stopping_point": "2019-12-19 (EFTA02731082); associate inquiry open",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "SDNY federal case 2019",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "DS9: EFTA00052963",
+        "DS9: EFTA00050963",
+        "DS9: EFTA00053963",
+        "DS9: EFTA00039895",
+        "DS8: EFTA00033441",
+        "DS8: EFTA00025431",
+        "DS8: EFTA00027247",
+        "DS8: EFTA00034997",
+        "DS8: EFTA00032995",
+        "DS8: EFTA00034607",
+        "DS8: EFTA00035735",
+        "DS8: EFTA00014628",
+        "DS8: EFTA00019348",
+        "DS8: EFTA00034275",
+        "DS8: EFTA00035031",
+        "DS8: EFTA00034232",
+        "DS8: EFTA00034061",
+        "DS8: EFTA00031025",
+        "DS8: EFTA00017955",
+        "DS8: EFTA00017953",
+        "DS8: EFTA00034558",
+        "DS8: EFTA00034341",
+        "DS8: EFTA00034367",
+        "DS8: EFTA00027969",
+        "DS8: EFTA00025226",
+        "DS8: EFTA00029733",
+        "DS8: EFTA00036082",
+        "DS8: EFTA00035986",
+        "DS8: EFTA00020165",
+        "DS8: EFTA00031006",
+        "DS8: EFTA00027732"
+      ],
+      "endpoint": "Death Aug 10, 2019; cause/manner established at OCME-relay level (Aug 11, 2019 autopsy summary EFTA00020165; Aug 16, 2019 OCME conclusion relayed EFTA00031006); investigation open",
+      "flags": [
+        "v1 anchor list mixed slices; re-attributed by slice in v1.1",
+        "v2.0 DS8 extension (major): July 23 incident, hallway-video loss, Aug 10 death morning, After Action Review, OIG draft report; endpoint corrected to OCME-relay level (Aug 11, 2019 autopsy summary; Aug 16, 2019 OCME conclusion relayed)"
+      ],
+      "id": "4",
+      "span": "2019-07/2019-08",
+      "stopping_point": "Investigation: OIG correspondence 2019-08-21/23 (EFTA00027247); latest dated DS1-8 doc 2019-09-24 (EFTA00035735)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "MCC detention and death",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "EFTA00008631",
+        "EFTA00008874",
+        "EFTA00031323",
+        "EFTA02730486",
+        "EFTA00008920",
+        "EFTA00008716",
+        "EFTA00008892",
+        "EFTA00008708",
+        "EFTA00005578",
+        "EFTA00008998",
+        "EFTA00020331",
+        "EFTA00014904",
+        "EFTA00009664",
+        "EFTA00009654",
+        "DS8: EFTA00013398",
+        "DS8: EFTA00029540",
+        "DS8: EFTA00020261",
+        "DS8: EFTA00013307",
+        "DS8: EFTA00011192",
+        "DS8: EFTA00011221",
+        "DS8: EFTA00016349",
+        "DS8: EFTA00026494",
+        "DS8: EFTA00011452",
+        "DS8: EFTA00015303",
+        "DS8: EFTA00028595",
+        "DS8: EFTA00010062",
+        "DS8: EFTA00010083",
+        "DS8: EFTA00038502",
+        "DS8: EFTA00030491",
+        "DS8: EFTA00032823",
+        "DS8: EFTA00031332",
+        "DS8: EFTA00010118",
+        "DS11: EFTA02730043",
+        "DS11: EFTA02730044",
+        "DS11: EFTA02730049",
+        "DS11: EFTA02730060"
+      ],
+      "endpoint": "Conviction Dec 29, 2021, 20-year sentence Jun 28, 2022",
+      "flags": [
+        "v2.0 DS8 extension: S2 indictment, Nathan Apr 16, 2021 opinions, cellphone warrants, Interlochen chain, TECS verification, pilot prep; FLAG: EFTA00038617 says Maxwell convicted Dec 30, 2021; atlas keeps Dec 29 (verdict date) \u2014 discrepancy noted, endpoint unchanged"
+      ],
+      "id": "5",
+      "span": "2019/2022",
+      "stopping_point": "Nov 2024 en banc denial (Apr 10, 2025 extension outcome not in slice)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Maxwell case",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "HO 126",
+        "EFTA01093549",
+        "HO 2884",
+        "HO 2883",
+        "HO 15157",
+        "HO 2879",
+        "DS11: EFTA02725054",
+        "DS11: EFTA02726638",
+        "DS11: EFTA02725185",
+        "DS11: EFTA02725012",
+        "DS11: EFTA02726062",
+        "DS11: EFTA02726063",
+        "DS11: EFTA02725090"
+      ],
+      "endpoint": "Documented to July 2010 victim letter; later resolution not in slice",
+      "flags": [],
+      "id": "6",
+      "span": "2005/2010-07",
+      "stopping_point": "2010-07-20 (HO 2884); documentary, not a verdict",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Rothstein/Edwards Ponzi dispute",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "HO 5067",
+        "HO 5069",
+        "HO 5071",
+        "HO 5074",
+        "DS8: EFTA00015726",
+        "DS8: EFTA00025469",
+        "DS8: EFTA00028850",
+        "DS8: EFTA00018778",
+        "DS11: EFTA02726040"
+      ],
+      "endpoint": "Open end in HO; ALLEGATIONS ONLY (confirmed = complaint chain, not truth of allegations)",
+      "flags": [
+        "v2.0 DS8 extension: Giuffre complaint sample-confirmed (EFTA00015726), upgraded from phrase-candidate"
+      ],
+      "id": "7",
+      "span": "2015",
+      "stopping_point": "Complaint filed (open end in HO); DOJ phrase candidates EFTA00015726/EFTA00594193/EFTA00594211 NOT sample-confirmed",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Giuffre v. Maxwell defamation complaint",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "HO 16092",
+        "HO 21656",
+        "DS11: EFTA02604794",
+        "DS11: EFTA02595720",
+        "DS11: EFTA02555189",
+        "DS11: EFTA02555629",
+        "DS11: EFTA02551944",
+        "DS11: EFTA02552129",
+        "DS11: EFTA02236483",
+        "DS11: EFTA02235692",
+        "DS11: EFTA02237237",
+        "DS11: EFTA02237901",
+        "DS11: EFTA02237514",
+        "DS11: EFTA02239308",
+        "DS9: EFTA00928269",
+        "DS10/Drive: EFTA01615691",
+        "DS10/Drive: EFTA01615824",
+        "DS10/Drive: EFTA01615976"
+      ],
+      "endpoint": "Contact to May 2019 (EFTA01615824); same thread runs to Jul 3-6, 2019 (EFTA01615976); July 2019 breakfast proposed; completion not established",
+      "flags": [
+        "DS11 portion alone supports probable only; merged confirmed rests on HO + Drive/DS10 record (v1.2 document-verified)",
+        "EFTA00928269 RESTORED in v1.4 as DS9 anchor (Jun 23, 2018; only page 1 is Epstein's own text, pp. 2-8 are a forwarded WSJ op-ed); v1.1 removal wrongly treated absence from the DS11 slice report as absence",
+        "Nov 2016: no direct headers found in the searched material in v1.4 (Check 2: HO 495 Bannon pages + 3,026 DOJ Bannon docs; closest items intermediary-only EFTA02667713, EFTA02668467 - proposed meeting only; completion not established) (v1.5 wording)",
+        "Earliest verified direct contact Dec 21-22, 2017 (EFTA02604794); '134 direct HO headers' NOT cited - not reproduced (94 phrase-match / 65 strict top-header HO pages; DOJ 343 strict top-header docs)",
+        "v1.5: 'not completed' / 'CONFIRMED ABSENT' wording corrected to 'completion not established' / 'no direct headers found in the searched material' (see changelog \u00a71)"
+      ],
+      "id": "8",
+      "span": "2017-12/2019-07",
+      "stopping_point": "Earliest direct contact: 2017-12-21/22 (EFTA02604794); DS11 scheduling: 2018-03-14; HO: 2019-07-06 (HO 21656), open end",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Epstein\u2013Bannon contact",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "HO 18596",
+        "HO 22601",
+        "HO 22602",
+        "HO 16590"
+      ],
+      "endpoint": "Open end: June 13, 2019 invitation",
+      "flags": [],
+      "id": "9",
+      "span": "2016-05/2019-05",
+      "stopping_point": "2019-06-13 (HO 16590)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Epstein\u2013Wolff correspondence",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA01265973",
+        "EFTA01265978",
+        "EFTA01656415",
+        "EFTA01656524"
+      ],
+      "endpoint": "Accounts closed; $14.95M wire canceled Jul 10, 2019; SAR filed Oct 11, 2019",
+      "flags": [],
+      "id": "10",
+      "span": "2019-04/2019-10",
+      "stopping_point": "2019-10-11 (FinCEN BSAR; bank filing, not a finding)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Schwab spring-2019 accounts",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA01273238",
+        "EFTA01269705",
+        "EFTA01272095",
+        "EFTA01670642",
+        "DS10: EFTA01273059",
+        "DS10: EFTA01273079",
+        "DS10: EFTA01273082",
+        "DS10: EFTA01273089",
+        "DS10: EFTA01273102",
+        "DS10: EFTA01273118",
+        "DS10: EFTA01273122",
+        "DS10: EFTA01273131",
+        "DS10: EFTA01273138",
+        "DS10: EFTA01273139",
+        "DS10: EFTA01273143",
+        "DS10: EFTA01273149",
+        "DS10: EFTA01273155",
+        "DS10: EFTA01273181",
+        "DS10: EFTA01273198"
+      ],
+      "endpoint": "7,537-page production Apr 15, 2020",
+      "flags": [
+        "EFTA01273238 relabeled: production cover + inventory letter, NOT the subpoena instrument (FB Num. SUB-193531 referenced, not separately verified)"
+      ],
+      "id": "11",
+      "span": "2019-12/2020-04",
+      "stopping_point": "2020-04-15; no per-account closed dates assertable (OCR-scrambled inventory table)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "FirstBank grand-jury subpoena \u2192 production",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 28024",
+        "Barak 643",
+        "Barak 23985",
+        "Barak 10241",
+        "DS11: EFTA02607775",
+        "DS11: EFTA02608387",
+        "DS11: EFTA02626244",
+        "DS11: EFTA02628004",
+        "DS11: EFTA02628648",
+        "DS11: EFTA02628761",
+        "DS11: EFTA02720041"
+      ],
+      "endpoint": "Joint project through Feb 2019; endpoint verified in v1.2 against DS11 documents, endpoint date Feb 4, 2019 (pitch + agreed follow-up contact, no completed contract or delivered 2022 Games work is documented in the chain)",
+      "flags": [
+        "Feb 2019 endpoint verified in v1.2 against underlying DS11 documents (was DOJ-dependent, disclosed in v1.1)"
+      ],
+      "id": "12",
+      "span": "2013-05/2019-02",
+      "stopping_point": "In-slice: 2015-04-23 (10241); DOJ endpoint: 2019-02-04 (EFTA02628648/EFTA02628761)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Barak\u2013Putin\u2013Qatar/Carbyne",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "Barak 18414",
+        "Barak 18310",
+        "Barak 18018",
+        "Barak 19004",
+        "Barak 18243",
+        "Barak 14998",
+        "DS9: EFTA00688080",
+        "DS11: EFTA02382107",
+        "DOJ: EFTA00356456",
+        "part03:549"
+      ],
+      "endpoint": "Trip completed Dec 12-15, 2014; Cohen identification UNPROVEN; bodyguard answer (v1.4): Nidal, a Druze guard (probably Jarrod is his last name), one of Barak's two guards (EFTA00688080, Feb 2, 2015) - v1's 'Jarrod Nadel' corrected; whether Nidal and 'Ronen Cohen' are different men is NOT established (v1.5)",
+      "flags": [
+        "Bodyguard-answer name CORRECTED in v1.4 (Check 4): 'Nidal, probably Jarrod' (EFTA00688080 DS9; DS11 copy EFTA02382107, Feb 2, 2015, 23:17 UTC); v1's 'Jarrod Nadel' reversed order and misspelled first name; hedge ('probably') kept; DOJ-slice citation flag cleared",
+        "EFTA00356456 added to JSON anchors in v1.4 (Check 5 harmonization): md endpoint document for trip completion",
+        "v1.5: 'different man from Ronen Cohen' WITHDRAWN \u2014 not established by 'one of my two guards' alone; no searched document names the second guard or gives 'Ronen Cohen' a role (see changelog \u00a72)"
+      ],
+      "id": "13",
+      "span": "2014-12/2015-02",
+      "stopping_point": "In-slice: 2015-02-02 (14998); trip completion rests on DOJ EFTA00356456",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "St. Thomas trip / \"Ronen Cohen\"",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "Barak 1753",
+        "Barak 25516",
+        "Barak 25953",
+        "Barak 21767",
+        "Barak 22505",
+        "Barak 20135",
+        "Barak 19598",
+        "Barak 19616",
+        "Barak 2796"
+      ],
+      "endpoint": "OPEN: Hungary outcome and CIFC vote unresolved",
+      "flags": [],
+      "id": "14",
+      "span": "2013-03/2016-03",
+      "stopping_point": "2016-03-16 (2796); no signed Hungary agreement in-slice",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Renova / Hungary + CIFC board",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 30162",
+        "Barak 22813",
+        "Barak part01:3208",
+        "Barak part01:3627",
+        "Barak 2485"
+      ],
+      "endpoint": "OPEN: July 2015 birthday attendance unconfirmed",
+      "flags": [],
+      "id": "15",
+      "span": "2014-02/2016-03",
+      "stopping_point": "2016-03-18 (2485)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Kazakhstan / IIAC",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 23048",
+        "Barak 23144",
+        "Barak part01:2403",
+        "Barak part01:2588",
+        "Barak 2749",
+        "Barak 2879",
+        "Barak 25739",
+        "Barak 25849",
+        "Barak 25896"
+      ],
+      "endpoint": "OPEN: Apr 2016 financing round, Barak CC'd",
+      "flags": [],
+      "id": "16",
+      "span": "2013-09/2016-04",
+      "stopping_point": "2016-04-27 in-body (2879)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Guardicore via TrueSec",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 16481",
+        "Barak 17353",
+        "Barak 15638",
+        "Barak 30117",
+        "Barak 3196",
+        "Barak 11594"
+      ],
+      "endpoint": "OPEN: Ch. 11 delivered, Ch. 12 awaited; publication not in slice",
+      "flags": [],
+      "id": "17",
+      "span": "2014-10/2016-03",
+      "stopping_point": "2016-03-20/21 (30117/3196)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Temko book project",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 25589",
+        "Barak 25005",
+        "Barak 24975"
+      ],
+      "endpoint": "Trail cold after Dec 2013 claim; payment NOT established",
+      "flags": [
+        "Qualifier must stay in title; slice forbids quoting '$5M paid'"
+      ],
+      "id": "18",
+      "span": "2013-11/2013-12",
+      "stopping_point": "2013-12-20",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Epstein\u2013Barak paid arrangement (negotiation/claim only)",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 12337",
+        "Barak 7558",
+        "Barak 7529",
+        "Barak 9406"
+      ],
+      "endpoint": "COMPLETED Sept 16, 2015, 3pm, 1 Brattle",
+      "flags": [],
+      "id": "19",
+      "span": "2015-06/2015-09",
+      "stopping_point": "2015-09-27 photo reply (9406) closing it; meeting content not speculated on",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Barak\u2013Epstein\u2013Chomsky Cambridge meeting",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 15720",
+        "Barak 15518",
+        "Barak 14308",
+        "Barak 28568",
+        "part02:2470"
+      ],
+      "endpoint": "OPEN: Feb 2016 pitch to Thiel/JE fund seniors",
+      "flags": [],
+      "id": "20",
+      "span": "2014-12/2016-02",
+      "stopping_point": "2016-02-22 (28568)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Reporty investment arc",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA02332441",
+        "EFTA02330094",
+        "EFTA02330286",
+        "EFTA02330116",
+        "EFTA02296338",
+        "EFTA02327304",
+        "DS9: EFTA00330550",
+        "DS9: EFTA00330551",
+        "DS9: EFTA00330576",
+        "DS9: EFTA00330578",
+        "DS9: EFTA00330579"
+      ],
+      "endpoint": "Bound + FedEx'd Jan 20, 2016; receipt confirmed Jan 21, 2016",
+      "flags": [
+        "DS9 leg EFTA00330550/551/576/578/579 RESTORED in v1.4 (Check 1: all exist in DS9 with text; Groff-Shuliak thread Jan 20-21, 2016 carrying endpoint verbatim); v1.1 removal was a slice-report coverage failure"
+      ],
+      "id": "21",
+      "span": "2002/2016-01",
+      "stopping_point": "2016-01-21",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Birthday book",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "EFTA02213080",
+        "EFTA02213078",
+        "EFTA02213401",
+        "EFTA02213528",
+        "EFTA02213118",
+        "EFTA02213518",
+        "EFTA02213688",
+        "EFTA02214791",
+        "EFTA02215022"
+      ],
+      "endpoint": "May 19 4pm meeting TIME confirmed; stay completed",
+      "flags": [
+        "Wording corrected: attendance at May 19 meeting not separately evidenced; span extended beyond May 2017"
+      ],
+      "id": "22",
+      "span": "2017-05/2017-06",
+      "stopping_point": "2017-06-12 (EFTA02215022)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Barak May 2017 NY stay",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA02232620",
+        "EFTA02235036",
+        "EFTA02235118",
+        "EFTA02234396",
+        "EFTA02234539",
+        "EFTA02235070",
+        "EFTA02239762",
+        "DS9: EFTA00467212"
+      ],
+      "endpoint": "'They arrived' Jan 16, 2018",
+      "flags": [
+        "DS9 leg EFTA00467212 RESTORED in v1.4 (Check 1: exists in DS9 with text; Jan 10, 2018 planning email); v1.1 removal was a slice-report coverage failure"
+      ],
+      "id": "23",
+      "span": "2017-12/2018-01",
+      "stopping_point": "2018-01-16; Mar 2018 follow-on leg (EFTA02239762)",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "LSJ island visit, Jan 16, 2018",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "EFTA00184224",
+        "EFTA00227381",
+        "EFTA00040718",
+        "EFTA00040739",
+        "HO 5067",
+        "HO 4414",
+        "EFTA00210130",
+        "DS8: EFTA00010507",
+        "DS8: EFTA00032506",
+        "DS8: EFTA00021442",
+        "DS8: EFTA00022546",
+        "DS11: EFTA02729730",
+        "DS11: EFTA02725591",
+        "DS11: EFTA02725811",
+        "DS11: EFTA02725620",
+        "DS11: EFTA02725951"
+      ],
+      "endpoint": "OPEN at 2016 filing; outcome not in slice",
+      "flags": [
+        "v2.0 DS8 extension: Marra Feb 21, 2019 opinion; Doc 466 (Jul 23, 2019) post-arrest CVRA briefing"
+      ],
+      "id": "P1",
+      "span": "2008/2016",
+      "stopping_point": "2016-02-10 filing",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "CVRA suit, Jane Doe 1 & 2 v. United States",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA00181807",
+        "EFTA00039383",
+        "EFTA00064766",
+        "DS8: EFTA00014154",
+        "DS8: EFTA00014421",
+        "DS11: EFTA02728773",
+        "DS11: EFTA02728792",
+        "DS11: EFTA02725185"
+      ],
+      "endpoint": "OPEN at 2010; discharge terms not in slice",
+      "flags": [
+        "v2.0 DS8 extension: work-release notice Dec 8, 2008; NY DCJS Sex Offender Details Page"
+      ],
+      "id": "P2",
+      "span": "2008/2010",
+      "stopping_point": "Open at 2010",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Florida supervision",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA00230786",
+        "EFTA01000223",
+        "HO 3005",
+        "HO 3006",
+        "HO 3007",
+        "HO 3008",
+        "HO 3004",
+        "DS8: EFTA00013650",
+        "DS8: EFTA00014192",
+        "DS8: EFTA00014185",
+        "DS8: EFTA00027884",
+        "DS8: EFTA00019101",
+        "DS11: EFTA02728376",
+        "DS11: EFTA02728383",
+        "DS11: EFTA02728400",
+        "DS11: EFTA02728403",
+        "DS11: EFTA02728408",
+        "DS11: EFTA02728412",
+        "DS11: EFTA02728432",
+        "DS11: EFTA02729255",
+        "DS11: EFTA02725090",
+        "DS11: EFTA02725751",
+        "DS11: EFTA02729418"
+      ],
+      "endpoint": "No single endpoint; no settlement terms asserted",
+      "flags": [
+        "v2.0 DS8 extension: Jane Doe No. 1 complaint; Jun 12, 2009 hearing transcript; 2016 Interlochen complaint (allegation only)"
+      ],
+      "id": "P3",
+      "span": "2008/2019",
+      "stopping_point": "No single endpoint; HO motion dated 2010-06-28, NOT a proved settlement",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Civil litigation & settlements (multi-thread)",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "EFTA02730996",
+        "EFTA02731018",
+        "EFTA02731023",
+        "DS8: EFTA00027019",
+        "DS8: EFTA00038617"
+      ],
+      "endpoint": "OPEN: inquiry ongoing in slice",
+      "flags": [
+        "v2.0 DS8 extension: Black/Southern Trust transaction exhibits; Manhattan DA line in EFTA00038617"
+      ],
+      "id": "P4",
+      "span": "2022/2023",
+      "stopping_point": "2023-07-24 (EFTA02731023); association only, no wrongdoing finding",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Apollo / Leon Black: Dechert review \u2192 Senate Finance inquiry",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA00005707",
+        "EFTA00005711",
+        "EFTA00005714"
+      ],
+      "endpoint": "Interview CONDUCTED Mar 17, 2011 at U.S. Consulate in Sydney; same-day follow-up interview at person's residence in New South Wales; photos obtained; lead considered covered (EFTA00005714); what was said in the interview is NOT established by this document",
+      "flags": [
+        "EFTA00005714 citation check RESOLVED in v1.4 (Check 3): both citations hold (single 2-page Mar 22, 2011 Canberra liaison memo summarizes Mar 12, 2011 Miami serial and is itself the liaison memo); endpoint revised - interview conducted, not merely arranged"
+      ],
+      "id": "P5",
+      "span": "2011-03",
+      "stopping_point": "2011-03-22 (EFTA00005714); interview conducted 2011-03-17",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Miami Division Australia/Sydney lead",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "HO 20598",
+        "HO 20597",
+        "HO 15629"
+      ],
+      "endpoint": "Stops before the election",
+      "flags": [],
+      "id": "P6",
+      "span": "2016-10/2016-11",
+      "stopping_point": "2016-11-04; 52% figure is Khan's, not Epstein's",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "2016 election watch (Khan/InsightsPod)",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "HO 11514",
+        "HO 8614",
+        "HO 11085",
+        "DS8: EFTA00016828",
+        "DS8: EFTA00013184",
+        "DS8: EFTA00030491"
+      ],
+      "endpoint": "Logs used in later depositions",
+      "flags": [
+        "v2.0 DS8 extension: Jan 22, 2020 SDNY jet-log request; AmEx \"more than 4,800 flights\"; pilot timeline"
+      ],
+      "id": "P7",
+      "span": "2005",
+      "stopping_point": "Logs Jan\u2013Oct 2005; deposition undated in excerpt; open end is testimony about logs, not a finding about any flight",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Flight logs \u2192 Palm Beach police \u2192 deposition use",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA01661868",
+        "EFTA01684802",
+        "EFTA01275407",
+        "DS8: EFTA00016038",
+        "DS8: EFTA00016542",
+        "DS8: EFTA00016084",
+        "DS8: EFTA00020368",
+        "DS8: EFTA00024310",
+        "DS8: EFTA00024311"
+      ],
+      "endpoint": "OPEN: paper trail, no single endpoint",
+      "flags": [
+        "v2.0 DS8 extension: Merrill Lynch signature-page bundles; Montpelier Trust leg ($4.84M)"
+      ],
+      "id": "P8",
+      "span": "2011/2019",
+      "stopping_point": "2019-10-03 (EFTA01661868); ~9 months before July 2020 arrest, not 'one month'",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Maxwell bank paper",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "EFTA01295221",
+        "EFTA01295547",
+        "EFTA01670642",
+        "EFTA01273181",
+        "EFTA01409916",
+        "DS10: EFTA01483532",
+        "DS10: EFTA01483762",
+        "DS10: EFTA01482281",
+        "DS10: EFTA01483825",
+        "DS10: EFTA01273198",
+        "DS10: EFTA01367891",
+        "DS10: EFTA01407899",
+        "DS10: EFTA01362152"
+      ],
+      "endpoint": "OPEN: activity documented to Jul 2019",
+      "flags": [],
+      "id": "P9",
+      "span": "renamed 2013, funded 2016-2019 (organization date not established from cited anchors)",
+      "stopping_point": "2019-07-24 (EFTA01273181); no closure document",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "LSJ Employees / LSJE island operating account",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "EFTA01282018",
+        "EFTA01297524",
+        "EFTA01273089",
+        "EFTA01265180",
+        "DS10: EFTA01366289"
+      ],
+      "endpoint": "OPEN",
+      "flags": [],
+      "id": "P10",
+      "span": "2006/2018",
+      "stopping_point": "2018-12-03 (EFTA01265180); 2006 vs 2013 trusts kept distinct; 2016/2018 wires unassigned",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Butterfly trusts",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA01284127",
+        "EFTA01269261",
+        "EFTA01297802",
+        "EFTA01297029",
+        "DS10: EFTA01273059"
+      ],
+      "endpoint": "OPEN",
+      "flags": [],
+      "id": "P11",
+      "span": "2013-09/2019-05",
+      "stopping_point": "2019-05-07 (EFTA01273059; v3.0, WS3 - was 2017-06-29)",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "J. Epstein Virgin Islands Foundation brokerage/banking",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "Barak 27747",
+        "Barak 24339",
+        "Barak 10056"
+      ],
+      "endpoint": "OPEN: direct contact established, no meeting arc proved",
+      "flags": [],
+      "id": "P12",
+      "span": "2013/2015",
+      "stopping_point": "2015-10-27 (10056); do not upgrade",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Summers introduction \u2192 direct contact",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA02318342",
+        "EFTA02318381",
+        "EFTA02318436",
+        "EFTA02318530",
+        "EFTA02318546",
+        "EFTA02318350",
+        "DS9: EFTA00559801",
+        "DS9: EFTA00559803",
+        "DS8: EFTA00027424"
+      ],
+      "endpoint": "PROBABLE: visit arranged; completion not separately proved",
+      "flags": [
+        "DS9 leg EFTA00559801/803 RESTORED in v1.4 (Check 1: both exist in DS9 with text; Nov 26, 2010 JFK pickup instruction + corroborating thread); DS11 leg verified in v1.2 - both legs now stand; v1.1 removal was a slice-report coverage failure",
+        "v2.0 DS8 cross-link: Nov 6, 2020 MLAT pursuit stated as intent, not a completed request"
+      ],
+      "id": "P13",
+      "span": "2010-11",
+      "stopping_point": "Arranged 2010-11-26; Dec 2012 greeting is contact only",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Andrew Nov 2010 NY visit arranged",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "EFTA02347019",
+        "EFTA02386080",
+        "EFTA02367027",
+        "EFTA02335898"
+      ],
+      "endpoint": "OPEN",
+      "flags": [],
+      "id": "P14",
+      "span": "2014/2015",
+      "stopping_point": "2015-07-06 (EFTA02335898 CVRA opinion); DS11-distinct in probe",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Ruemmler counsel arc",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "EFTA02727497",
+        "EFTA02437319",
+        "DS8: EFTA00016622",
+        "DS8: EFTA00012111",
+        "DS8: EFTA00011669",
+        "DS8: EFTA00010620",
+        "DS8: EFTA00011531",
+        "DS8: EFTA00009952",
+        "DS8: EFTA00017879",
+        "DS8: EFTA00017875",
+        "DS8: EFTA00037643",
+        "DS8: EFTA00037645"
+      ],
+      "endpoint": "OPEN",
+      "flags": [
+        "v2.0 DS8 extension (aircraft holdings corrected): FAA conveyance bundle, Beechjet co-ownership, G550 disposal, Plan D/Hyperion statements, registration chain closed to 2019"
+      ],
+      "id": "P15",
+      "span": "2007/2010",
+      "stopping_point": "2013 maintenance tail (EFTA02679035); DS11-distinct in probe",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Air Ghislaine / S-76 acquisition",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "EFTA02288718",
+        "EFTA02290095",
+        "EFTA02284922",
+        "EFTA02283826",
+        "EFTA02284023",
+        "EFTA02284547",
+        "EFTA02288642",
+        "EFTA02292055",
+        "EFTA02289022",
+        "EFTA02289987",
+        "EFTA02290097",
+        "DS9: EFTA00498154"
+      ],
+      "endpoint": "PROBABLE: scheduling + day-of tail N533XB; completion not separately proved",
+      "flags": [
+        "DS9 leg EFTA00498154 RESTORED in v1.4 (Check 1: exists in DS9 with text; Jun 12, 2019 calendar notice, same day as DS11 day-of tail-number anchor); v1.1 removal was a slice-report coverage failure"
+      ],
+      "id": "P16",
+      "span": "2019-04/2019-06",
+      "stopping_point": "2019-06-12 day-of tail number (EFTA02290095)",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "S76D demo flight",
+      "verification": "AV"
+    },
+    {
+      "anchors": [
+        "EFTA02213626",
+        "EFTA02214715",
+        "EFTA02216195",
+        "EFTA02215383",
+        "EFTA02214641"
+      ],
+      "endpoint": "PROBABLE: planned/scheduled; attendance not separately proved",
+      "flags": [],
+      "id": "P17",
+      "span": "2017-06",
+      "stopping_point": "2017-06-10 itinerary leg (EFTA02214641); DS11-distinct in probe",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Zorro Ranch Moskowitz visit",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00032382",
+        "DS8: EFTA00027109",
+        "DS8: EFTA00009747",
+        "DS8: EFTA00017935",
+        "DS8: EFTA00009767",
+        "DS8: EFTA00009775",
+        "DS8: EFTA00027732",
+        "DS8: EFTA00027307",
+        "DS8: EFTA00031263",
+        "DS8: EFTA00031575",
+        "DS8: EFTA00032687",
+        "DS8: EFTA00028582",
+        "DS8: EFTA00029061",
+        "DS8: EFTA00013389",
+        "DS8: EFTA00031435",
+        "DS8: EFTA00009791",
+        "DS8: EFTA00014985",
+        "DS11: EFTA02730000",
+        "DS11: EFTA02730002"
+      ],
+      "endpoint": "Nolle prosequi Jan 3, 2022 (EFTA00009791); DPAs May 20, 2021",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey); found independently in three ranges (A, C, D) \u2014 merged into one story",
+        "FLAG: range C UMR summary gives indictment date Nov 14, 2019; indictment doc EFTA00009747 and Apr 2020 memo give Nov 19, 2019 \u2014 Nov 19 used, discrepancy flagged, not resolved",
+        "EFTA00014985 text varies from EFTA00009747 \u2014 whether superseding version not established"
+      ],
+      "id": "24",
+      "span": "2019-08/2022-01",
+      "stopping_point": "2022-01-03 nolle prosequi",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "U.S. v. Noel & Thomas \u2014 the MCC guards prosecution, 19 Cr. 830",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00019480",
+        "DS8: EFTA00015719",
+        "DS8: EFTA00018568",
+        "DS8: EFTA00020454",
+        "DS8: EFTA00011475",
+        "DS8: EFTA00013359"
+      ],
+      "endpoint": "Nov 2020 OPR Executive Summary: no professional misconduct; poor judgment on NPA mechanism + victim notification",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey); found in two ranges (A, B) \u2014 merged into one story",
+        "Full OPR report not in DS8 \u2014 only the executive summary and the draft processing trail; findings reported as the summary states them"
+      ],
+      "id": "25",
+      "span": "2010-12/2020-11",
+      "stopping_point": "2020-11 Executive Summary",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "DOJ Office of Professional Responsibility investigation of the 2008 NPA",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00022706",
+        "DS8: EFTA00022696",
+        "DS8: EFTA00022855",
+        "DS8: EFTA00022793",
+        "DS8: EFTA00020095",
+        "DS8: EFTA00022666",
+        "DS8: EFTA00020098",
+        "DS10: EFTA01482357",
+        "DS10: EFTA01482743"
+      ],
+      "endpoint": "Production completed Oct 11, 2021; delivery documented (receipt executed, date not legible; FAA registration filed in purchaser's name); closing date NOT established \u2014 May 13, 2021 is the contractual final deadline only",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "Indyke signed for Hyperion Air as authorized representative \u2014 signature only, no wrongdoing implied",
+        "v2.1: closing date corrected \u2014 a contractual deadline is not evidence of when closing occurred; delivery evidence kept separate from the unverified closing date"
+      ],
+      "id": "26",
+      "span": "2021-04/2021-10",
+      "stopping_point": "2021-10-11 production completed",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Hyperion Air sells the S-76C++ helicopter N722JE for $1.8M",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00018430",
+        "DS8: EFTA00020889",
+        "DS8: EFTA00019032",
+        "DS8: EFTA00019133",
+        "DS8: EFTA00019142",
+        "DS8: EFTA00019503",
+        "DS8: EFTA00023182",
+        "DS8: EFTA00019493",
+        "DS8: EFTA00019582"
+      ],
+      "endpoint": "Trial-prep stage Oct 22, 2021; tuition-payment answer negative Oct 30, 2020",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "What the produced student records showed is NOT established from the emails read; only the tuition-payment answer (negative) is stated",
+        "The Jane Doe complaint EFTA00019101 allegation (Interlochen 1994) is allegation only; the link to the subpoenas is the shared institution, nothing more"
+      ],
+      "id": "27",
+      "span": "2020-02/2021-10",
+      "stopping_point": "2021-10-22 trial prep",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "The Interlochen subpoenas: tuition inquiry \u2192 student-records subpoena \u2192 trial prep",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00024032",
+        "DS8: EFTA00038652",
+        "DS8: EFTA00038650"
+      ],
+      "endpoint": "Case closed June 25, 2024, FBI summary judgment granted",
+      "flags": [
+        "PROMOTED in v2.0 from v1.5 fragment (outcome not established at the Mar 9, 2021 bundle tail) to confirmed chain on the June 25, 2024 order",
+        "Distinct from P18 (NYT v. BOP, 20-cv-833) \u2014 different case, different defendant"
+      ],
+      "id": "28",
+      "span": "2017-04/2024-06",
+      "stopping_point": "2024-06-25 case closed",
+      "tier": "confirmed",
+      "tier_v1": "confirmed",
+      "title": "Radar Online / National Enquirer FOIA pursuit \u2192 case closed",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00031025",
+        "DS8: EFTA00030476",
+        "DS8: EFTA00031018",
+        "DS8: EFTA00015361",
+        "DS8: EFTA00015428",
+        "DS8: EFTA00015438",
+        "DS8: EFTA00015493",
+        "DS8: EFTA00015517",
+        "DS8: EFTA00015511",
+        "DS8: EFTA00013391",
+        "DS8: EFTA00022018",
+        "DS8: EFTA00023398",
+        "DS8: EFTA00023400"
+      ],
+      "endpoint": "PROBABLE: release planned Jul 2, 2021; execution not verified",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey); found in two ranges (A, D), with B autopsy-report FOIA leg folded in",
+        "Execution of the Jul 2, 2021 release NOT verified by any in-range document \u2014 tier is probable on that ground"
+      ],
+      "id": "P18",
+      "span": "2019/2021-07",
+      "stopping_point": "2021-07-02 planned release",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "New York Times v. Bureau of Prisons FOIA suit \u2192 ~2,700-page release",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00016841",
+        "DS8: EFTA00016865",
+        "DS8: EFTA00016876",
+        "DS8: EFTA00016884"
+      ],
+      "endpoint": "PROBABLE: latest will in the 2001\u20132014 succession Nov 2014; the Aug 8, 2019 will and probate opening belong to P24 (EFTA00027979) \u2014 the v2.0 DS8-wide no-later-will/no-probate claims are withdrawn (v2.1)",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "FLAG: the 2014 will names \"Lawrence H. Summers\" as successor executor with no further identifying information \u2014 whether this is the same Lawrence Summers as in P12 is NOT established by this document",
+        "v2.1: endpoint corrected \u2014 Nov 2014 will is the latest in the 2001\u20132014 succession only; the Aug 8, 2019 will and probate opening belong to P24 (EFTA00027979, verified DS8, 21 pp.); v2.0 DS8-wide no-later-will/no-probate claims withdrawn"
+      ],
+      "id": "P19",
+      "span": "2001-12/2014-11",
+      "stopping_point": "2014-11 will",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Epstein's successive wills, 2001\u20132014",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00014300",
+        "DS8: EFTA00014286",
+        "DS8: EFTA00014298",
+        "DS8: EFTA00015657",
+        "DS8: EFTA00014337",
+        "DS8: EFTA00010260",
+        "DS8: EFTA00015190"
+      ],
+      "endpoint": "PROBABLE: Balderas letter Jul 8, 2020; seizure/forfeiture not established",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "The Balderas letter characterizations are the AG allegations/request, not findings"
+      ],
+      "id": "P20",
+      "span": "2019-06/2020-07",
+      "stopping_point": "2020-07-08 Balderas letter",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Civil forfeiture thread: Epstein properties",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00019223",
+        "DS8: EFTA00018778"
+      ],
+      "endpoint": "PROBABLE: First Amended Complaint Feb 5, 2020; no resolution in DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "All conduct allegations are the lawsuit allegations, not findings"
+      ],
+      "id": "P21",
+      "span": "2020-01/2020-09",
+      "stopping_point": "2020-02-05 amended complaint",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Government of the U.S. Virgin Islands v. Epstein estate",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00020911",
+        "DS8: EFTA00021720",
+        "DS8: EFTA00020904",
+        "DS8: EFTA00021719"
+      ],
+      "endpoint": "PROBABLE: MLAT request Jan 8, 2021; outcome not in DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "Brunel French case is an investigation/allegation, not a finding"
+      ],
+      "id": "P22",
+      "span": "2019-11/2021-01",
+      "stopping_point": "2021-01-20 follow-up",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "U.S.\u2013France cooperation on the Brunel investigation",
+      "verification": "V-C"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00027912",
+        "DS8: EFTA00027884",
+        "DS8: EFTA00027350",
+        "DS8: EFTA00029867",
+        "DS8: EFTA00028274",
+        "DS8: EFTA00029598",
+        "DS8: EFTA00028032",
+        "DS8: EFTA00011028",
+        "DS8: EFTA00010010",
+        "DS8: EFTA00037538",
+        "DS8: EFTA00038885"
+      ],
+      "endpoint": "PROBABLE: program operating by 2021; final protocol/first payments not directly documented",
+      "flags": [
+        "PROMOTED in v2.0 from v1.5 DS9 fragment (\"no filing\u2192determination\u2192payment arc traced\")",
+        "Probable, not confirmed: no in-range document shows the protocol finalization, a specific payment determination, or the program launch date",
+        "The Jan 2024 JPMorgan-fund determinations in P27 are a separate fund"
+      ],
+      "id": "P23",
+      "span": "2019-11/2021-10",
+      "stopping_point": "2021-10-26",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "The Epstein Victims' Compensation Program \u2014 contested design, then an operating fund",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00027979",
+        "DS8: EFTA00027884"
+      ],
+      "endpoint": "PROBABLE: estate opened, executors acting by Dec 11, 2019; probate order not verified in DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "The court order granting probate/appointment itself was not verified in DS8; the will dispositive provisions were not read here",
+        "Cross-link (v2.1): P19 (2001\u20132014 succession; the Aug 8, 2019 will supersedes it)"
+      ],
+      "id": "P24",
+      "span": "2019-08/2019-12",
+      "stopping_point": "2019-12-11",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "The estate probate opens \u2014 will, petition, $577.7M inventory",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00029457",
+        "DS8: EFTA00029458"
+      ],
+      "endpoint": "PROBABLE: Met reply Aug 10, 2015 \u2014 matter progressing; no outcome in DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "Allegations in the referral are allegations, not findings"
+      ],
+      "id": "P25",
+      "span": "2015-05/2015-08",
+      "stopping_point": "2015-08-10 Met reply",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "The Scotland Yard referral \u2014 Cassell to the Metropolitan Police, May\u2013Aug 2015",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00029077",
+        "DS8: EFTA00028929",
+        "DS8: EFTA00029100",
+        "DS8: EFTA00029540"
+      ],
+      "endpoint": "PROBABLE: motion briefed; suppression ruling deferred Apr 16, 2021",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "The load-bearing claim (government misled the court) is a defense allegation, not a judicial finding; the 2016 email exhibits cited are sealed and were not read",
+        "The 2016 declination assertion rests on a cited Oct 13, 2020 New York Daily News report, not on a document in DS8"
+      ],
+      "id": "P26",
+      "span": "2016-02/2021-04",
+      "stopping_point": "2021-04-16 (Nathan opinion defers suppression)",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "The Boies Schiller subpoena fight \u2014 2016 contacts, 2019 ex parte application, 2021 suppression motion",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00037109",
+        "DS8: EFTA00037104",
+        "DS8: EFTA00037099",
+        "DS8: EFTA00037059",
+        "DS8: EFTA00037141",
+        "DS8: EFTA00037135",
+        "DS8: EFTA00037147",
+        "DS8: EFTA00037149",
+        "DS8: EFTA00037176"
+      ],
+      "endpoint": "PROBABLE: determination notices Jan 16, 2024; court approval not established from DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "Whether and when the court approved the settlement is NOT established from documents read in DS8 \u2014 probable, not confirmed",
+        "The $1,000,000 figure is one claimant allocated amount, not a fund total"
+      ],
+      "id": "P27",
+      "span": "2023-06/2024-01",
+      "stopping_point": "2024-01-16 determination notices",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Doe v. JPMorgan Chase / Deutsche Bank \u2014 class settlement, objections, and claims determinations",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00039001",
+        "DS8: EFTA00039004",
+        "DS8: EFTA00038997",
+        "DS8: EFTA00039008",
+        "DS8: EFTA00039011"
+      ],
+      "endpoint": "PROBABLE: review completed May 18, 2023; disposition of flagged videos not in DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "Only the review process is described; no video content is described or asserted beyond the senders own characterisations"
+      ],
+      "id": "P28",
+      "span": "2023-04/2023-05",
+      "stopping_point": "2023-05-18 review completed",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Estate video review under a court-approved protocol \u2014 halt, FBI referral, completed review",
+      "verification": "V"
+    },
+    {
+      "anchors": [
+        "DS8: EFTA00038235",
+        "DS8: EFTA00037868"
+      ],
+      "endpoint": "PROBABLE: Legat follow-up Sep 7, 2019; investigation outcome not in DS8",
+      "flags": [
+        "new in v2.0 (DS8 inventory and expanded survey)",
+        "The threat wording and the poster identity are not established from documents read; only the fact of the post and the investigative response are",
+        "DISTINCT from P5 (March 2011 Sydney interview lead) \u2014 different year, different matter, different case number; do not merge"
+      ],
+      "id": "P29",
+      "span": "2019-07/2019-09",
+      "stopping_point": "2019-09-07 Legat follow-up",
+      "tier": "probable",
+      "tier_v1": "probable",
+      "title": "Darknet threat against a person associated with the Epstein matter \u2014 FBI investigation opened, Australia follow-up",
+      "verification": "V"
+    },
+    {
+      "id": "29",
+      "title": "Daily Mirror query re Epstein and Barak's written response",
+      "tier": "confirmed",
+      "span": "2015-01-04/2015-01-05",
+      "endpoint": "Barak's written response published (Barak unnamed); NY meeting requested, outcome not in rows read",
+      "stopping_point": "2015-01-05",
+      "anchors": [
+        "part03:1399",
+        "part03:996",
+        "part03:1393"
+      ],
+      "flags": [
+        "New in v3.0 (WS2). Anchored in already-indexed main-DB content (duplicates main 15461/15058/15455); surfaced because this pass swept terms the v2.1 slice did not. Claimant's name withheld per Standard \u00a77."
+      ],
+      "verification": "V-WS2"
+    },
+    {
+      "id": "30",
+      "title": "Barak\u2013SAIL (Shanghai Alliance Investment Ltd.) collaboration",
+      "tier": "confirmed",
+      "span": "2015-01-23/2015-06-04",
+      "endpoint": "MOU draft + budget sent Jun 4, 2015; SAIL review pending; no signed MOU in rows read (open end)",
+      "stopping_point": "2015-06-04 (WS2 rows); arc continues in main DB to Feb 19, 2016 (main 3131) - main-DB follow-up pass still owed",
+      "anchors": [
+        "part03:669",
+        "part02:3347",
+        "part02:1909",
+        "part02:490",
+        "part02:274",
+        "part02:341"
+      ],
+      "flags": [
+        "New in v3.0 (WS2). Anchored in already-indexed content; two completed visits + MOU negotiation documented. Business/association record, not an allegation."
+      ],
+      "verification": "V-WS2"
+    },
+    {
+      "id": "31",
+      "title": "Barak at SPIEF 2015 (St. Petersburg International Economic Forum)",
+      "tier": "confirmed",
+      "span": "2015-04-28/2015-06-25",
+      "endpoint": "Attendance completed (forum week Jun 18-20, 2015; thank-you Jun 25). Jun 20 session confirmed Jun 10; Jun 18 session and plenary attendance not separately confirmed; proposed meetings with named Russian officials not established as held; no Putin meeting established",
+      "stopping_point": "2015-06-25",
+      "anchors": [
+        "part02:997",
+        "part02:1161",
+        "part02:148",
+        "part02:81",
+        "part02:262",
+        "main:12310"
+      ],
+      "flags": [
+        "New in v3.0 (WS2). Confirmed for the attendance leg only; meeting/plenary legs remain proposals. Extends fragment F1 (Sochi/Ushakov prior access). Open Innovations Forum invitation (Oct 28-Nov 1, 2015) unchecked."
+      ],
+      "verification": "V-WS2"
+    },
+    {
+      "id": "P30",
+      "title": "The fight to unseal the NPA and the sealed plea records, 2008\u20132009",
+      "tier": "probable",
+      "span": "2008-09-25/2009-07",
+      "endpoint": "Jul 2009 reply citing Marra's Jul 16, 2009 order. Whether any document was unsealed is NOT established in the cluster",
+      "stopping_point": "2009-07",
+      "anchors": [
+        "EFTA02729730",
+        "EFTA02729255",
+        "EFTA02729648",
+        "EFTA02729494",
+        "EFTA02729535"
+      ],
+      "flags": [
+        "New in v3.0 (WS1). One object (the sealed NPA/plea records) across three dockets. The 4th DCA reply's own filing date was not established in the text read."
+      ],
+      "verification": "V-WS1"
+    },
+    {
+      "id": "P31",
+      "title": "FBI Victim Services victim-briefing program, Sept 2019\u2013Nov 2020",
+      "tier": "probable",
+      "span": "2019-09-17/2020-11-12",
+      "endpoint": "Nov 12, 2020 event date in availability polling; occurrence not separately established. The Sept 26, 2019 and Oct 15, 2019 briefings are documented at plan/agenda level",
+      "stopping_point": "2020-11-12",
+      "anchors": [
+        "EFTA02730071",
+        "EFTA02730072",
+        "EFTA02730073",
+        "EFTA02730079",
+        "EFTA02730088",
+        "EFTA02730195",
+        "EFTA02730258",
+        "EFTA02730261",
+        "EFTA02730037"
+      ],
+      "flags": [
+        "New in v3.0 (WS1). Miami/NYC tallies are the FBI's own running counts at the time, not a census of victims; no victim names or identifying details used."
+      ],
+      "verification": "V-WS1"
+    },
+    {
+      "id": "P32",
+      "title": "Edwards & Cassell v. Dershowitz defamation suit: depositions, 2015\u20132016",
+      "tier": "probable",
+      "span": "2015/2016-01-13",
+      "endpoint": "Jan 13, 2016 (Vol. 6 deposition). The complaint itself is not in the cluster; the outcome is NOT established in the cluster",
+      "stopping_point": "2016-01-13",
+      "anchors": [
+        "EFTA02726484",
+        "EFTA02726849"
+      ],
+      "flags": [
+        "New in v3.0 (WS1). Two substantial deposition volumes; procedural chain with a dated stopping point and no outcome (P26 precedent). Allegations are the parties' positions, not findings."
+      ],
+      "verification": "V-WS1"
+    },
+    {
+      "id": "P33",
+      "title": "Boris Nikolic separation process, Dec 2012\u2013Jul 2013",
+      "tier": "probable",
+      "span": "2012-12-16/2013-07-29",
+      "endpoint": "Jul 29, 2013. Whether the transition/separation was completed, and whether the announcement was sent, is NOT established in the cluster",
+      "stopping_point": "2013-07-29",
+      "anchors": [
+        "EFTA02720177",
+        "EFTA02720415",
+        "EFTA02720700"
+      ],
+      "flags": [
+        "New in v3.0 (WS1). The 'Larry' in the July 2013 emails is Larry Cohen, the draft's author - not Larry Summers; the Dec 2012 'Larry and Bill' is not further identified. Do not conflate with P12."
+      ],
+      "verification": "V-WS1"
+    },
+    {
+      "id": "P34",
+      "title": "Leon Black \u2192 Southern Trust, 2013: two documented transfers and the Deutsche consolidation",
+      "tier": "probable",
+      "span": "2013-05-24/2013-10-31",
+      "endpoint": "Oct 31, 2013 Deutsche statement balance $27,258,838.74 (dated stopping point, not a closure - no closure document)",
+      "stopping_point": "2013-10-31",
+      "anchors": [
+        "EFTA01500494",
+        "EFTA01578683",
+        "EFTA01284214"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). $16.5M May 24 CHIPS credit + $8.5M Oct 15 transfer. The July 15, 2014 Black wire (slice-DS10 lead L1) is a SEPARATE wire - this story does not establish that it landed; L1 stays open. No wrongdoing alleged by these documents."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P35",
+      "title": "Southern Trust FirstBank account, 2016\u20132020: funding, a $13M outbound, and the latest advice in the set",
+      "tier": "probable",
+      "span": "2016-02-11/2020-01-13",
+      "endpoint": "Jan 13, 2020 credit $348,667.02 (dated stopping point; no closure document). Dec 23, 2019 $13M debit to Interactive Brokers LLC; Dec 12, 2019 eight-credit cluster $9,336,802.55",
+      "stopping_point": "2020-01-13",
+      "anchors": [
+        "EFTA01273155"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). Single-bundle spine (25 advices, EFTA01273155) - stated as a caveat. Originators of the Nov-Dec 2019 credits were not verified from the text layer. Post-death advices are dated documents only; nothing further inferred."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P36",
+      "title": "F T Real Estate FirstBank account, 2016\u20132019",
+      "tier": "probable",
+      "span": "2016-04-07/2019-07-01",
+      "endpoint": "Jul 1, 2019 $300,000 debit (dated stopping point, no closure document)",
+      "stopping_point": "2019-07-01",
+      "anchors": [
+        "EFTA01273089",
+        "EFTA01273079"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). Two-doc spine. Sep 28, 2016 $3,738,277 from Butterfly Trust is P10's anchor, confirmed in place inside this bundle."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P37",
+      "title": "The LSJE 9295 wire that came back, Mar\u2013Apr 2019",
+      "tier": "probable",
+      "span": "2019-03-21/2019-04-09",
+      "endpoint": "Returned, Apr 9, 2019. Completed arc: sent, not received, recalled, returned - not a completed payment. Amount and beneficiary name are blank/redacted in the text layer",
+      "stopping_point": "2019-04-09",
+      "anchors": [
+        "EFTA01367891",
+        "EFTA01407899",
+        "EFTA01362152"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). Thread filed ~20 times as forwarded copies; distinct events, not filings, counted. Attaches to P9."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P38",
+      "title": "Gratitude America FirstBank account, 2016\u20132019",
+      "tier": "probable",
+      "span": "2016-04-06/2019-07-25",
+      "endpoint": "Jul 25, 2019 credit $816,765.69 (dated stopping point, no closure document). Jul 24, 2019 credit $7,112,268.98",
+      "stopping_point": "2019-07-25",
+      "anchors": [
+        "EFTA01273122",
+        "EFTA01273131"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). Two-doc spine. The Dec 11, 2017 $150,000 credit appears in both bundles - counted once. Jul 24-25, 2019 credits post-date the July 6, 2019 arrest; timing stated, nothing further inferred."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P39",
+      "title": "Cypress Inc funding, 2016\u20132019",
+      "tier": "probable",
+      "span": "2016-03-17/2019-03-29",
+      "endpoint": "Mar 29, 2019 $100,000 credit (dated stopping point, no closure document)",
+      "stopping_point": "2019-03-29",
+      "anchors": [
+        "EFTA01273143"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). Single-bundle spine (6 credits, EFTA01273143). Funding leg to the vehicle whose disposition slice-DS10 S9 records as a planned will bequest; the bequest itself remains planned, not completed - no deed, sale, or distribution document found. Cypress, Inc. inventory value $17,246,208 (P24) is an inventory value, not a flow total. Coordinator's tier call: probable, because the chain attaches to the already-documented S9 disposition, unlike the single-bundle fragment F-WS3-5."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P40",
+      "title": "LSJ LLC island funding, JPMorgan 2003\u20132011",
+      "tier": "probable",
+      "span": "2003-02/2011-12-27",
+      "endpoint": "Dec 27, 2011 $175,000 wire via FirstBank PR (dated stopping point; no closure document; the island's later funding runs through the distinct LSJ Employees LLC accounts - P9 - and is not merged into this chain)",
+      "stopping_point": "2011-12-27",
+      "anchors": [
+        "EFTA01482357",
+        "EFTA01482358",
+        "EFTA01482885",
+        "EFTA01483518"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). 316 NC-bearing Fedwire lines, 210 docs. Same shape as P9: recurring funding, open end, dated stopping point."
+      ],
+      "verification": "V-WS3"
+    },
+    {
+      "id": "P41",
+      "title": "Zorro Development Corporation funding, 2003\u20132011",
+      "tier": "probable",
+      "span": "2003-02-26/2011-11-20",
+      "endpoint": "Nov 20, 2011 $100,000 wire via Wells Fargo NA (dated stopping point, no closure document)",
+      "stopping_point": "2011-11-20",
+      "anchors": [
+        "EFTA01482358",
+        "EFTA01482885",
+        "EFTA01482779"
+      ],
+      "flags": [
+        "New in v3.0 (WS3). 97 lines, 93 docs. Zorro Development Corporation is kept distinct from Cypress, Inc. (P39) and from the ranch property itself - no document in this pass states they are the same entity."
+      ],
+      "verification": "V-WS3"
+    }
+  ],
+  "v13_note": "P13 (Andrew Nov 2010 NY visit) ruled a probable story; v1.2 changelog \u00a73c 'fragment, not a story' wording was an error and is corrected. Counts unchanged: 40 stories (23 confirmed, 17 probable), 24 fragments. v1.3 adds no new document verification.",
+  "v14_note": "Phase 2 step 1 (checks 1-5) only. Counts unchanged: 40 stories (23 confirmed, 17 probable), 24 fragments. No story added, removed, re-categorized, or tier-changed.",
+  "v20_note": "Phase 2 step 2 (DS8 inventory and expanded survey) only. Counts: 57 stories (28 confirmed, 29 probable), 49 fragments. No v1.5 story changed tier; no story downgraded. Story 4 endpoint corrected: cause/manner established at OCME-relay level (EFTA00020165, EFTA00031006).",
+  "v21_note": "v2.1 corrections: 'DS8 full pass' label replaced with 'DS8 inventory and expanded survey'; P19 endpoint corrected (Aug 8, 2019 will belongs to P24); Story 26 closing date corrected to not established. Counts unchanged: 57 stories (28 confirmed, 29 probable), 49 fragments.",
+  "v30_note": "v3.0 (Nov 5, 2026): production program - DS11 late-Bates re-sweep (WS1), Barak parts 02/03 indexing (WS2), DS10 FEDWIRE chaining by beneficiary account (WS3), document-level verification of all 57 carried stories (WS4), open-flag resolution (WS5). 15 new stories (3 confirmed, 12 probable), 35 new fragments, 1 downgrade (Story 2), 5 open flags resolved, 2 carried unresolved, torrent route deferred. Production-READY; published as part of v3.1 on Thomas's go-ahead, Nov 5, 2026.",
+  "version": "v3.1",
+  "previous_version": "v3.0",
+  "titles_narrowed_v31": [
+    "2",
+    "P13",
+    "P33"
+  ],
+  "tier_changes_v31": 0,
+  "changelog_citation_bullets_corrected_v31": 21,
+  "verification_arithmetic_corrected_v31": "v3.0 changelog \u00a73 intro \"479 support\" corrected to 480; checked-basis stated (HO 1690-1693 as 4 pages + md-only EFTA02730486)",
+  "v31_note": "Fix pass on the v3.0 external review. Changelog \u00a71/\u00a72 citation misalignments corrected in the v3.1 changelog (atlas md/JSON were right; no anchor reassignments in the atlas except P9 md prose gaining its three P37 IDs, already in JSON). Three titles narrowed (Story 2, P13, P33); 0 tier changes. Published Nov 5, 2026 on Thomas's go-ahead."
+}

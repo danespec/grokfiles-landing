@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import worker from '../_worker.js';
+const html=await fs.readFile(new URL('../atlas.html',import.meta.url),'utf8');
+const data=JSON.parse(await fs.readFile(new URL('../atlas/data.json',import.meta.url),'utf8'));
+const env={ASSETS:{async fetch(input){const path=new URL(typeof input==='string'?input:input.url).pathname;try{const text=await fs.readFile(new URL('..'+path,import.meta.url),'utf8');return new Response(text,{headers:{'Content-Type':path.endsWith('.json')?'application/json':path.endsWith('.txt')?'text/plain':'text/html'}});}catch{return new Response('missing',{status:404});}}}};
+for(const path of ['/atlas/','/atlas']){
+ const r=await worker.fetch(new Request('https://grokarchivehub.com'+path),env);
+ assert.equal(r.status,200,path); const text=await r.text();
+ assert(text.includes('href="https://grokarchivehub.com/atlas/"'));
+ assert(!/noindex/i.test(r.headers.get('X-Robots-Tag')||''));
+ assert.equal((text.match(/class="story-entry"/g)||[]).length,72);
+}
+const d=await worker.fetch(new Request('https://grokarchivehub.com/atlas/data.json'),env);
+assert.equal(d.status,200);assert.equal(d.headers.get('Content-Type'),'application/json; charset=utf-8');
+assert.deepEqual(await d.json(),data);assert.equal(data.internal_only,false);
+const head=await worker.fetch(new Request('https://grokarchivehub.com/atlas/data.json',{method:'HEAD'}),env);assert.equal(await head.text(),'');
+const sitemap=await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env);
+assert.equal(sitemap.status,200);assert((await sitemap.text()).includes('<loc>https://grokarchivehub.com/atlas/</loc>'));
+assert.equal(data.stories.filter(x=>x.tier==='confirmed').length,30);
+assert.equal(data.stories.filter(x=>x.tier==='probable').length,42);
+assert.equal(data.fragments,84);
+assert(html.includes('id="story-2"'));assert(html.includes('id="story-p2"'));
+assert(html.includes('Florida supervision'));assert(html.includes('Declared NPA breach, June 12, 2009'));
+for(const s of data.stories) assert(html.includes('id="story-'+s.id.toLowerCase()+'"'));
+console.log('PASS atlas routes, canonical, indexability, sitemap, exact JSON, HEAD, 72 unique story targets, P2 separation');
