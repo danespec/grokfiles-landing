@@ -39,7 +39,8 @@ for sid,title,body,story in blocks:
     cards.append(f'<li data-tier="{tier}" data-search="{esc((sid+" "+title+" "+body).lower(),quote=True)}"><a href="#{anchor}"><span class="story-number">{esc(sid)}</span><span>{esc(title)}</span><span class="tier {tier}">{tier.title()}</span></a></li>')
     content=render(body)
     # Link exact Bates IDs to the existing archive reader; never fabricate DOJ set URLs.
-    content=re.sub(r'\bEFTA\d{8}\b',lambda m:f'<a class="bates" href="/archive/{m[0]}">{m[0]}</a>',content)
+    dossiers={e['id'] for e in json.loads((root/'content/identifier-dossiers.json').read_text())['entries']}
+    content=re.sub(r'\bEFTA\d{8}\b',lambda m:f'<a class="bates" href="'+('/archive/'+m[0] if m[0] in dossiers else '/search?q='+m[0])+f'">{m[0]}</a>',content)
     entries.append(f'<details class="story-entry" id="{anchor}" data-tier="{tier}"><summary><span class="story-number">{esc(sid)}</span><span>{esc(title)}</span><span class="tier {tier}">{tier.title()}</span></summary><div class="entry-body"><p class="verification">Verification: {esc(story.get("verification","As stated below"))}</p>{content}<p><a href="#story-index">Back to story index ↑</a></p></div></details>')
 coverage=section('Coverage table')
 unmapped=section('Unmapped remainder')
