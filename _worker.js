@@ -6972,7 +6972,8 @@ function adsenseApproved(env = {}) {
   return displayApproved && truthyFlag(env.CMP_ADS_ENABLED);
 }
 
-const GAH_GA4_MEASUREMENT_ID = "G-48G8M0230N";
+// Main-site stream; the wiki retains its separate measurement ID.
+const GAH_GA4_MEASUREMENT_ID = "G-XHE84C8D1V";
 
 function googleTagEnabled(env = {}) {
   // STAGING-HARDEN-001: GA4 and advertising integrations are disabled on staging.
