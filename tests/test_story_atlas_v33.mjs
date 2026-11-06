@@ -9,7 +9,7 @@ for(const path of ['/atlas/','/atlas']){
  assert.equal(r.status,200,path); const text=await r.text();
  assert(text.includes('href="https://grokarchivehub.com/atlas/"'));
  assert(!/noindex/i.test(r.headers.get('X-Robots-Tag')||''));
- assert.equal((text.match(/class="story-entry"/g)||[]).length,72);
+ assert.equal((text.match(/class="story-entry"/g)||[]).length,79);
 }
 const d=await worker.fetch(new Request('https://grokarchivehub.com/atlas/data.json'),env);
 assert.equal(d.status,200);assert.equal(d.headers.get('Content-Type'),'application/json; charset=utf-8');
@@ -18,9 +18,16 @@ const head=await worker.fetch(new Request('https://grokarchivehub.com/atlas/data
 const sitemap=await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env);
 assert.equal(sitemap.status,200);assert((await sitemap.text()).includes('<loc>https://grokarchivehub.com/atlas/</loc>'));
 assert.equal(data.stories.filter(x=>x.tier==='confirmed').length,30);
-assert.equal(data.stories.filter(x=>x.tier==='probable').length,42);
-assert.equal(data.fragments,84);
+assert.equal(data.stories.filter(x=>x.tier==='probable').length,49);
+assert.equal(data.fragments,122);
 assert(html.includes('id="story-2"'));assert(html.includes('id="story-p2"'));
 assert(html.includes('Florida supervision'));assert(html.includes('Declared NPA breach, June 12, 2009'));
 for(const s of data.stories) assert(html.includes('id="story-'+s.id.toLowerCase()+'"'));
-console.log('PASS atlas routes, canonical, indexability, sitemap, exact JSON, HEAD, 72 unique story targets, P2 separation');
+console.log('PASS atlas routes, canonical, indexability, sitemap, exact JSON, HEAD, 79 unique story targets, P2 separation');
+assert.equal(data.version,'3.3-corrected');
+assert.match(data.export_basis,/Generated from the corrected Markdown/);
+assert.match(data.stories.find(s=>s.id==='P42').entry_markdown,/second statement May 1–31, 2019, Beginning Balance \$300,000.00/);
+assert.match(data.stories.find(s=>s.id==='P48').endpoint,/^Oct 1, 2015/);
+assert.match(data.stories.find(s=>s.id==='P48').entry_markdown,/the transfer itself is NOT established/);
+assert.match(html,/Publication review checked the supplied corrected Markdown/);
+console.log('PASS corrected NEPTUNE period, Picasso stopping point, scheduled transfer caveat, and derived-export provenance');
