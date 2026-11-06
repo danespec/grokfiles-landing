@@ -8,17 +8,17 @@
     "anchors_restored_v14": 10,
     "confirmed": 30,
     "downgrades_v12": 0,
-    "fragments": 123,
+    "fragments": 138,
     "fully_unauditable": 0,
     "labels_reconciled_v13": true,
     "p13_ruling_v13": "probable story",
-    "probable": 49,
+    "probable": 52,
     "recategorized_v13": 0,
     "recategorized_v14": 0,
     "stories_with_citation_flags": 7,
     "tier_changes": 0,
     "tier_changes_v14": 0,
-    "total_stories": 79,
+    "total_stories": 82,
     "absolute_negatives_corrected_v15": 10,
     "cohen_nidal_verdict_v15": "not established",
     "tier_changes_v15": 0,
@@ -67,11 +67,64 @@
     "tier_changes_v34": 0,
     "recategorized_v34": 0,
     "json_anchors_v34": 1133,
-    "json_anchors_added_v34": 61
+    "json_anchors_added_v34": 61,
+    "json_anchors_v35": 1472,
+    "json_anchors_added_v35": 339,
+    "stories_added_v35": 3,
+    "confirmed_added_v35": 0,
+    "probable_added_v35": 3,
+    "fragments_added_v35": 5,
+    "fragments_retired_v35": 0,
+    "tier_changes_v35": 0,
+    "recategorized_v35": 0,
+    "titles_narrowed_v351": 3,
+    "identity_claims_removed_v351": 1,
+    "tier_changes_v351": 0,
+    "stories_added_v36": 0,
+    "confirmed_added_v36": 0,
+    "probable_added_v36": 0,
+    "fragments_added_v36": 2,
+    "fragments_retired_v36": 0,
+    "tier_changes_v36": 0,
+    "recategorized_v36": 0,
+    "json_anchors_v36": 1483,
+    "json_anchors_added_v36": 11,
+    "corrections_v36": 1,
+    "stories_added_v37": 0,
+    "confirmed_added_v37": 0,
+    "probable_added_v37": 0,
+    "fragments_added_v37": 8,
+    "fragments_retired_v37": 0,
+    "tier_changes_v37": 0,
+    "recategorized_v37": 0,
+    "json_anchors_v37": 1527,
+    "json_anchors_added_v37": 44,
+    "corrections_v37": 1,
+    "docs_opened_v37": 274,
+    "ds8_neighbors_opened_v37": 263,
+    "labels_corrected_v38": 2,
+    "tier_changes_v38": 0,
+    "recategorized_v38": 0,
+    "stories_added_v38": 0,
+    "fragments_added_v38": 0,
+    "json_anchors_v38": 1544,
+    "json_anchors_added_v38": 17,
+    "fragment_anchors_added_v38": 1,
+    "docs_opened_v38": 448,
+    "ds8_neighbors_opened_v38": 248,
+    "ds8_general_opened_v38": 200,
+    "ds8_attempted_v38": 449,
+    "ds8_read_in_full_v38": 70,
+    "ds8_read_in_part_v38": 371,
+    "ds8_no_substantive_text_v38": 7,
+    "ds8_unopened_v38": 6333,
+    "ds8_skipped_capped_v38": 1,
+    "corrections_v38": 1
   },
+  "coverage_headline": "82 mapped stories is a survey result, not the total number of stories in the corpus.",
   "date": "2026-11-06",
-  "fragments": 123,
-  "fragments_note": "49 carried from v2.1 + 35 new in v3.0 (WS1 16, WS2 4, WS3 15) + 22 new in v3.2 (WS1 10, WS2 2, WS3 2, WS5 8) + 16 new in v3.3 (WS1 5, WS2 1, WS3 4, WS4 6) + 3 new in v3.4 (WS4 1, WS3 2). F-33-12 and F-33-13 retired in v3.4, folded into F-33-11. Fragment IDs F-34-1–F-34-3.",
+  "fragments": 138,
+  "fragments_note": "49 carried from v2.1 + 35 new in v3.0 (WS1 16, WS2 4, WS3 15) + 22 new in v3.2 (WS1 10, WS2 2, WS3 2, WS5 8) + 16 new in v3.3 (WS1 5, WS2 1, WS3 4, WS4 6) + 3 new in v3.4 (WS4 1, WS3 2). F-33-12 and F-33-13 retired in v3.4, folded into F-33-11. Fragment IDs F-34-1–F-34-3. + 5 new in v3.5 (WS1 3, WS4 2). Fragment IDs F-35-1–F-35-5. + 2 new in v3.6 (Grok Bot DS8 survey). Fragment IDs F-36-1 to F-36-2.\n + 8 new in v3.7 (Grok Bot DS8 Bates-neighbor survey). Fragment IDs F-37-1 to F-37-8.",
   "internal_only": false,
   "phase2_priority": [
     "DONE in v2.0 (Phase 2, step 2): DS8 inventory and expanded survey (10,594 docs; full metadata inventory; ~2,820 examined at opening depth or better; ~200 read in full). 17 new stories (5 confirmed, 12 probable), 27 new fragments, 2 promotions, Story 4 endpoint corrected to OCME-relay level.",
@@ -152,13 +205,32 @@
         "DS9: EFTA00153737",
         "DS9: EFTA00269841",
         "DS9: EFTA00269912",
-        "DS9: EFTA00216378"
+        "DS9: EFTA00216378",
+        "DS8: EFTA00013537",
+        "DS8: EFTA00013774",
+        "DS8: EFTA00029921",
+        "DS8: EFTA00013785",
+        "DS8: EFTA00022654",
+        "DS8: EFTA00013494",
+        "DS8: EFTA00013524",
+        "DS8: EFTA00013536",
+        "DS8: EFTA00013538",
+        "DS8: EFTA00014109",
+        "DS8: EFTA00013889",
+        "DS8: EFTA00014171",
+        "DS8: EFTA00013493",
+        "DS8: EFTA00013497",
+        "DS8: EFTA00013519",
+        "DS8: EFTA00013783"
       ],
       "endpoint": "2008 NPA / state plea",
       "flags": [
         "v1 anchor list mixed slices; re-attributed by slice in v1.1",
         "v2.0 DS8 extension: plea-hearing transcript, house-manager statement, NPA instrument, state plea form; Jun 20 vs Jun 30, 2008 date discrepancy flagged, not resolved",
-        "v3.2 WS5: 3 OCR-sweep legs (JEGE grand-jury subpoena 2005; Broward Center subpoena 2007; PBPD evidence inventory)."
+        "v3.2 WS5: 3 OCR-sweep legs (JEGE grand-jury subpoena 2005; Broward Center subpoena 2007; PBPD evidence inventory).",
+        "v3.5 WS1: pre-history to Dec 2001 via P51; Mar–Oct 2005 entries of the intelligence file (EFTA00022654) are a Story 1 leg; span unchanged Mar 2005–Jun 2008.",
+        "v3.7: EFTA00014171 asks whether to extend the grand jury; extension not shown.",
+        "v3.8: EFTA00013783 references a Thacker/CEOS response attachment; May 15 letter contents still not read. EFTA00013519 addendum form has no completed dates/signatures in the text layer; execution not established."
       ],
       "id": "1",
       "span": "2005-03/2011-08",
@@ -166,7 +238,18 @@
       "tier": "confirmed",
       "tier_v1": "confirmed",
       "title": "Palm Beach investigation → 2008 NPA",
-      "verification": "V"
+      "verification": "V",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00013493",
+            "EFTA00013497",
+            "EFTA00013519",
+            "EFTA00013783"
+          ],
+          "text": "4 documents, no endpoint change. EFTA00013493 (Aug 6, 2007) relays that Epstein rejected a proposal and asks about indictment timing; rejection is the email writer's report. EFTA00013497 (Sep 21, 2007) records Lilly Ann Sanchez saying one issue remains and the defense would be prepared to sign after its resolution; an internal reply disputes her participation in negotiations. Neither message establishes execution. EFTA00013519 is an undated NPA addendum form addressing independent selection of a representative and fee obligations, with an exception for contested litigation. Its date and signature fields have no completed values in the text layer; execution and payment are not established. EFTA00013783 (Jun 20, 2008) forwards defense submissions to ODAG's John Roth, including a listed response to CEOS's Stephanie Thacker letter. The attachment names and cover email do not supply the underlying May 15 letter or its contents. Thacker flag carried, with an additional retrieval lead only."
+        }
+      ]
     },
     {
       "anchors": [
@@ -275,13 +358,50 @@
         "DS8: EFTA00037799",
         "DS9: EFTA00083658",
         "DS10: EFTA01653215",
-        "DS8: EFTA00021914"
+        "DS8: EFTA00021914",
+        "DS8: EFTA00037716",
+        "DS8: EFTA00037896",
+        "DS8: EFTA00021419",
+        "DS8: EFTA00027374",
+        "DS8: EFTA00028334",
+        "DS8: EFTA00018586",
+        "DS8: EFTA00030745",
+        "DS8: EFTA00021576",
+        "DS8: EFTA00021627",
+        "DS8: EFTA00025539",
+        "DS8: EFTA00014469",
+        "DS8: EFTA00037790",
+        "DS8: EFTA00037335",
+        "DS8: EFTA00015838",
+        "DS8: EFTA00014526",
+        "DS8: EFTA00027214",
+        "DS8: EFTA00027194",
+        "DS8: EFTA00027199",
+        "DS8: EFTA00010454",
+        "DS8: EFTA00022527",
+        "DS8: EFTA00024861",
+        "DS8: EFTA00029928",
+        "DS9: EFTA00058429",
+        "DS8: EFTA00015532",
+        "DS8: EFTA00014482",
+        "DS8: EFTA00014493",
+        "DS8: EFTA00029441",
+        "DS8: EFTA00019481",
+        "DS8: EFTA00013354",
+        "DS8: EFTA00028387",
+        "DS8: EFTA00027590",
+        "DS8: EFTA00009975",
+        "DS8: EFTA00009976",
+        "DS8: EFTA00009977",
+        "DS8: EFTA00009936",
+        "DS8: EFTA00014467"
       ],
       "endpoint": "Indictment, arrest, death Aug 10 2019, post-death associate inquiry",
       "flags": [
         "v2.0 DS8 extension: sealed indictment, detention conference, victim outreach, proffers, search-warrant affidavit, nolle prosequi hearing, Prince Andrew MLAT intent (not a completed request), FBI summary Jul 17, 2024",
         "v3.2 WS2: 13 DS8 legs + the Apr 3, 2020 MLAT request (shared with P13).",
-        "v3.2 WS5: 6 OCR-sweep legs (2 FD-302s; JPMorgan 302; detention-hearing transcript; 2 SDNY/Berman letters)."
+        "v3.2 WS5: 6 OCR-sweep legs (2 FD-302s; JPMorgan 302; detention-hearing transcript; 2 SDNY/Berman letters).",
+        "v3.6: EFTA00029441 (Jun 19, 2019) ODAG update memo on Epstein referenced; memo contents not in the document."
       ],
       "id": "3",
       "span": "2019",
@@ -289,7 +409,19 @@
       "tier": "confirmed",
       "tier_v1": "confirmed",
       "title": "SDNY federal case 2019",
-      "verification": "V-C"
+      "verification": "V-C",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00009975",
+            "EFTA00009976",
+            "EFTA00009977",
+            "EFTA00009936",
+            "EFTA00014467"
+          ],
+          "text": "5 documents, pre-history and mid-span legs; mapped 2019 case scope and endpoint unchanged. EFTA00009975 and EFTA00009976 record an SDNY exchange on Nov 30, 2018 asking whether the matter is open, answered \"Yes. As of today\", followed by a staffing discussion. This is prosecutor-level opening correspondence, not a replacement for the separately carried FBI formal initiation date of Dec 6, 2018. EFTA00009977 records planning a Nov 30 call on the way forward and, on Dec 4, a Thursday meeting with case agents to discuss next steps. Scheduling is not proof of the meeting's content or occurrence. EFTA00009936 (May 15, 2019) transmits an attachment named as the May 10 ODAG status memo, requesting close handling because the investigation was covert. Memo contents are not supplied. EFTA00014467 (Jun 27, 2019) says prosecutors obtained the NPA side-letter list and their principal New York victim was not listed; the writer says the listed people appear to be in Florida. No identities are reproduced, and this assessment is not a judicial ruling on NPA scope."
+        }
+      ]
     },
     {
       "anchors": [
@@ -347,14 +479,46 @@
         "DS9: EFTA00140470",
         "DS9: EFTA00105651",
         "DS9: EFTA00113482",
-        "DS9: EFTA00121398"
+        "DS9: EFTA00121398",
+        "DS8: EFTA00013176",
+        "DS8: EFTA00024366",
+        "DS8: EFTA00034056",
+        "DS8: EFTA00030552",
+        "DS8: EFTA00035659",
+        "DS8: EFTA00036014",
+        "DS8: EFTA00035598",
+        "DS8: EFTA00035216",
+        "DS8: EFTA00019409",
+        "DS8: EFTA00027255",
+        "DS8: EFTA00025429",
+        "DS8: EFTA00035727",
+        "DS8: EFTA00032445",
+        "DS8: EFTA00034548",
+        "DS8: EFTA00034549",
+        "DS8: EFTA00025420",
+        "DS8: EFTA00035925",
+        "DS8: EFTA00035781",
+        "DS8: EFTA00035919",
+        "DS8: EFTA00036006",
+        "DS8: EFTA00035776",
+        "DS8: EFTA00032505",
+        "DS8: EFTA00032994",
+        "DS8: EFTA00013183",
+        "DS8: EFTA00027968",
+        "DS8: EFTA00027970",
+        "DS8: EFTA00032292",
+        "DS8: EFTA00032298",
+        "DS8: EFTA00015515"
       ],
-      "endpoint": "Death Aug 10, 2019; cause/manner established at OCME-relay level (Aug 11, 2019 autopsy summary EFTA00020165; Aug 16, 2019 OCME conclusion relayed EFTA00031006); investigation open",
+      "endpoint": "Death Aug 10, 2019; cause/manner established at OCME-relay level (Aug 11, 2019 autopsy summary EFTA00020165; Aug 16, 2019 OCME conclusion relayed EFTA00031006); investigation open; OIG final-report thread runs to Jun 30, 2025 (BOP status updates)",
       "flags": [
         "v1 anchor list mixed slices; re-attributed by slice in v1.1",
         "v2.0 DS8 extension (major): July 23 incident, hallway-video loss, Aug 10 death morning, After Action Review, OIG draft report; endpoint corrected to OCME-relay level (Aug 11, 2019 autopsy summary; Aug 16, 2019 OCME conclusion relayed)",
         "v3.2 WS2: OIG final report (Jun 26, 2023) + BOP Jul 15, 2024 status update + 11 minor legs; the OIG final report itself is NOT in DS8, only the status-update memo.",
-        "v3.2 WS5: 9 OCR-sweep legs incl. EFTA02730054 (Aug 10, 2019 FBI forward; the v3.1-unassigned file, now assigned)."
+        "v3.2 WS5: 9 OCR-sweep legs incl. EFTA02730054 (Aug 10, 2019 FBI forward; the v3.1-unassigned file, now assigned).",
+        "v3.5 WS1: OIG final-report thread extended to Jun 30, 2025 (BOP status updates EFTA00035925, EFTA00035781, EFTA00035919, EFTA00036006, EFTA00035776); 21 new legs.",
+        "v3.7: EFTA00032298 (Aug 13, 2019) identifies the Efrain Reyes to be proffered Aug 16, 2019 as Epstein's cellmate 'up until the day he died'. Whether the Efrain Reyes reported dead Nov 30, 2020 (EFTA00019925/EFTA00017827) is the same man remains NOT established.",
+        "v3.8: EFTA00015515 corrects visit to phone-log entry but repeatedly prints July 30, 2020, inconsistent with the documented Aug 2019 death. No actual post-death call inferred; year not silently repaired."
       ],
       "id": "4",
       "span": "2019-07/2019-08",
@@ -362,7 +526,15 @@
       "tier": "confirmed",
       "tier_v1": "confirmed",
       "title": "MCC detention and death",
-      "verification": "V-C"
+      "verification": "V-C",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00015515"
+          ],
+          "text": "1 document, no endpoint change. EFTA00015515, supplemental declaration filed Jan 15, 2021 in Times v. BOP, corrects a prior description of an Intake Screening Phone Log: the declarant says the entry is a phone call, not a visit. The text repeatedly dates the supposed entry July 30, 2020, after Epstein's documented Aug 2019 death. That internal date inconsistency is preserved and flagged, not silently changed to 2019. The document cannot establish an actual post-death call. No new finding on the death's cause or manner is made."
+        }
+      ]
     },
     {
       "anchors": [
@@ -451,13 +623,82 @@
         "DS9: EFTA00105307",
         "DS9: EFTA00065989",
         "DS9: EFTA00155901",
-        "DS8: EFTA00023053"
+        "DS8: EFTA00023053",
+        "DS8: EFTA00030346",
+        "DS8: EFTA00031978",
+        "DS8: EFTA00030343",
+        "DS8: EFTA00037706",
+        "DS8: EFTA00018021",
+        "DS8: EFTA00018236",
+        "DS8: EFTA00028055",
+        "DS8: EFTA00018749",
+        "DS8: EFTA00010194",
+        "DS8: EFTA00017832",
+        "DS8: EFTA00031598",
+        "DS8: EFTA00018878",
+        "DS8: EFTA00016373",
+        "DS8: EFTA00032215",
+        "DS8: EFTA00024932",
+        "DS8: EFTA00022435",
+        "DS8: EFTA00030804",
+        "DS8: EFTA00028974",
+        "DS8: EFTA00030101",
+        "DS8: EFTA00015753",
+        "DS8: EFTA00015786",
+        "DS8: EFTA00015804",
+        "DS8: EFTA00026872",
+        "DS8: EFTA00026890",
+        "DS8: EFTA00030035",
+        "DS8: EFTA00032669",
+        "DS8: EFTA00021038",
+        "DS8: EFTA00024238",
+        "DS8: EFTA00021968",
+        "DS8: EFTA00032141",
+        "DS8: EFTA00027444",
+        "DS8: EFTA00030665",
+        "DS8: EFTA00031889",
+        "DS8: EFTA00032028",
+        "DS8: EFTA00032047",
+        "DS8: EFTA00026405",
+        "DS8: EFTA00031176",
+        "DS8: EFTA00030392",
+        "DS8: EFTA00026979",
+        "DS8: EFTA00027000",
+        "DS8: EFTA00032065",
+        "DS8: EFTA00029778",
+        "DS8: EFTA00027641",
+        "DS8: EFTA00018515",
+        "DS8: EFTA00023329",
+        "DS9: EFTA00066546",
+        "DS8: EFTA00022091",
+        "DS8: EFTA00023532",
+        "DS8: EFTA00010414",
+        "DS8: EFTA00023895",
+        "DS9: EFTA00093044",
+        "DS8: EFTA00029354",
+        "DS8: EFTA00029423",
+        "DS8: EFTA00029420",
+        "DS8: EFTA00029421",
+        "DS8: EFTA00029422",
+        "DS8: EFTA00029424",
+        "DS8: EFTA00029425",
+        "DS8: EFTA00029426",
+        "DS8: EFTA00016348",
+        "DS8: EFTA00026524",
+        "DS8: EFTA00031511",
+        "DS8: EFTA00030344",
+        "DS8: EFTA00030345",
+        "DS8: EFTA00028044",
+        "DS8: EFTA00018023",
+        "DS8: EFTA00031980"
       ],
       "endpoint": "Conviction Dec 29, 2021, 20-year sentence Jun 28, 2022",
       "flags": [
         "v2.0 DS8 extension: S2 indictment, Nathan Apr 16, 2021 opinions, cellphone warrants, Interlochen chain, TECS verification, pilot prep; FLAG: EFTA00038617 says Maxwell convicted Dec 30, 2021; atlas keeps Dec 29 (verdict date) — discrepancy noted, endpoint unchanged",
         "v3.2 WS2: trial-phase and case-build legs (draft memo Mar 2020, task list, USAA keep-open, property research, cell-site warrant, NH affidavit, MDC letters, Instagram record, Rule 17 order, 20-3061 briefing, S1 indictment, bail/voir dire/Rule 412/perjury/discovery/subpoena legs, sentencing coda).",
-        "v3.2 WS5: 5 OCR-sweep legs (victim complaint letter; 3500-material email; voir dire memo in 3 copies)."
+        "v3.2 WS5: 5 OCR-sweep legs (victim complaint letter; 3500-material email; voir dire memo in 3 copies).",
+        "v3.6: EFTA00030804 attachment is in the text layer (EFTA00030805 to 30809); appraiser's name not legible; Maxwell identification rests on the cover email and a p. 4 annotation.",
+        "v3.8: EFTA00018023/EFTA00031980 limit historical travel-record completeness to CBP holdings. Missing records do not establish absent travel; additional identifier searches remain unanswered."
       ],
       "id": "5",
       "span": "2019/2022",
@@ -465,7 +706,16 @@
       "tier": "confirmed",
       "tier_v1": "confirmed",
       "title": "Maxwell case",
-      "verification": "V"
+      "verification": "V",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00018023",
+            "EFTA00031980"
+          ],
+          "text": "2 documents, one negative-result leg; endpoint unchanged. EFTA00018023 and EFTA00031980 (Jul 29 to 30, 2021) record CBP's warning that outbound travel between 1990 and 2000 was not recorded as it is today, and that the TECS records already supplied were all it could provide for Maxwell and Epstein for that period. The statement about two surname variants elsewhere in the chain concerns a redacted person, who is not identified here. The follow-up asks whether date-of-birth and document-number searches were separately run; no answer appears. A missing historical crossing is not evidence that travel did not occur. Completeness of the produced records is limited to CBP holdings, not all actual travel."
+        }
+      ]
     },
     {
       "anchors": [
@@ -483,7 +733,8 @@
         "DS11: EFTA02726063",
         "DS11: EFTA02725090",
         "DS9: EFTA00718710",
-        "DS9: EFTA00294244"
+        "DS9: EFTA00294244",
+        "DS8: EFTA00020703"
       ],
       "endpoint": "Documented to July 2010 victim letter; later resolution not in slice",
       "flags": [
@@ -514,7 +765,14 @@
         "DS8: EFTA00022960",
         "DS9: EFTA00092753",
         "DS9: EFTA00097376",
-        "HO 6005-6020"
+        "HO 6005-6020",
+        "DS9: EFTA00595583",
+        "DS9: EFTA00703620",
+        "DS9: EFTA00617951",
+        "DS9: EFTA00623075",
+        "DS9: EFTA00589467",
+        "DS9: EFTA00805407",
+        "DS9: EFTA00802948"
       ],
       "endpoint": "Open end in HO; ALLEGATIONS ONLY (confirmed = complaint chain, not truth of allegations)",
       "flags": [
@@ -549,7 +807,8 @@
         "DS9: EFTA00928269",
         "DS10/Drive: EFTA01615691",
         "DS10/Drive: EFTA01615824",
-        "DS10/Drive: EFTA01615976"
+        "DS10/Drive: EFTA01615976",
+        "DS8: EFTA00027290"
       ],
       "endpoint": "Contact to May 2019 (EFTA01615824); same thread runs to Jul 3-6, 2019 (EFTA01615976); July 2019 breakfast proposed; completion not established",
       "flags": [
@@ -635,7 +894,7 @@
       ],
       "endpoint": "7,537-page production Apr 15, 2020",
       "flags": [
-        "EFTA01273238 relabeled: production cover + inventory letter, NOT the subpoena instrument (FB Num. SUB-193531 referenced, not separately verified)"
+        "EFTA01273238 relabeled: production cover + inventory letter, NOT the subpoena instrument (FB Num. SUB-19353 referenced (v3.5 WS5 page-image read; text layer reads 'SUB-193531'); not re-verified in v3.5.1)"
       ],
       "id": "11",
       "span": "2019-12/2020-04",
@@ -663,12 +922,14 @@
         "DS10: EFTA01699932",
         "DS10: EFTA01702692",
         "DS10: EFTA01711655",
-        "DS10: EFTA01718740"
+        "DS10: EFTA01718740",
+        "DS10: EFTA01718251"
       ],
       "endpoint": "Joint project through Feb 2019; endpoint verified in v1.2 against DS11 documents, endpoint date Feb 4, 2019 (pitch + agreed follow-up contact, no completed contract or delivered 2022 Games work is documented in the chain)",
       "flags": [
         "Feb 2019 endpoint verified in v1.2 against underlying DS11 documents (was DOJ-dependent, disclosed in v1.1)",
-        "v3.2 WS5: the \"Barok\" two-guards fact, 2007 FBI ECs (shared with Story 13)."
+        "v3.2 WS5: the \"Barok\" two-guards fact, 2007 FBI ECs (shared with Story 13).",
+        "v3.5 WS3: second passenger's name resolved as 'Jenn Katlin' from page images (EFTA01718740 p. 29; EFTA01702692 p. 64); fifth copy EFTA01718251 added; destination still NOT established — the spreadsheet has NO destination column (page-image read)."
       ],
       "id": "12",
       "span": "2013-05/2019-02",
@@ -695,14 +956,16 @@
         "DS10: EFTA01699932",
         "DS10: EFTA01702692",
         "DS10: EFTA01711655",
-        "DS10: EFTA01718740"
+        "DS10: EFTA01718740",
+        "DS10: EFTA01718251"
       ],
       "endpoint": "Trip completed Dec 12-15, 2014; Cohen identification UNPROVEN; bodyguard answer (v1.4): Nidal, a Druze guard (probably Jarrod is his last name), one of Barak's two guards (EFTA00688080, Feb 2, 2015) - v1's 'Jarrod Nadel' corrected; whether Nidal and 'Ronen Cohen' are different men is NOT established (v1.5)",
       "flags": [
         "Bodyguard-answer name CORRECTED in v1.4 (Check 4): 'Nidal, probably Jarrod' (EFTA00688080 DS9; DS11 copy EFTA02382107, Feb 2, 2015, 23:17 UTC); v1's 'Jarrod Nadel' reversed order and misspelled first name; hedge ('probably') kept; DOJ-slice citation flag cleared",
         "EFTA00356456 added to JSON anchors in v1.4 (Check 5 harmonization): md endpoint document for trip completion",
         "v1.5: 'different man from Ronen Cohen' WITHDRAWN — not established by 'one of my two guards' alone; no searched document names the second guard or gives 'Ronen Cohen' a role (see changelog §2)",
-        "v3.2 WS5: the \"Barok\" two-guards fact, 2007 FBI ECs (shared with Story 12); NIDAL-JARROD sweep (87 docs) found no guard document — Nidal/Cohen stays unproven."
+        "v3.2 WS5: the \"Barok\" two-guards fact, 2007 FBI ECs (shared with Story 12); NIDAL-JARROD sweep (87 docs) found no guard document — Nidal/Cohen stays unproven.",
+        "v3.5 WS3: second passenger's name resolved as 'Jenn Katlin' from page images (EFTA01718740 p. 29; EFTA01702692 p. 64); fifth copy EFTA01718251 added; destination still NOT established — the spreadsheet has NO destination column (page-image read)."
       ],
       "id": "13",
       "span": "2014-12/2015-02",
@@ -966,7 +1229,17 @@
         "DS9: EFTA00209764",
         "DS9: EFTA00073493",
         "DS8: EFTA00029443",
-        "DS9: EFTA01249055"
+        "DS9: EFTA01249055",
+        "DS8: EFTA00020711",
+        "DS8: EFTA00013926",
+        "DS9: EFTA00205039",
+        "DS9: EFTA00205074",
+        "DS9: EFTA00800908",
+        "DS9: EFTA00071797",
+        "DS9: EFTA01081647",
+        "DS9: EFTA00807058",
+        "DS8: EFTA00014155",
+        "DS8: EFTA00021441"
       ],
       "endpoint": "Apr 15, 2021 In re Wild en banc decision (EFTA00074599): CVRA created no private right of action; petition denied",
       "flags": [
@@ -1037,7 +1310,53 @@
         "DS9: EFTA01103374",
         "DS9: EFTA00222648",
         "DS9: EFTA00206609",
-        "DS9: EFTA00726138"
+        "DS9: EFTA00726138",
+        "DS8: EFTA00025109",
+        "DS8: EFTA00029956",
+        "DS8: EFTA00030306",
+        "DS8: EFTA00014418",
+        "DS9: EFTA00234766",
+        "DS9: EFTA00234845",
+        "DS9: EFTA00067383",
+        "DS9: EFTA00222586",
+        "DS9: EFTA00234746",
+        "DS9: EFTA00234808",
+        "DS9: EFTA00234817",
+        "DS9: EFTA00067377",
+        "DS9: EFTA00222205",
+        "DS9: EFTA00212886",
+        "DS9: EFTA00214072",
+        "DS9: EFTA00234760",
+        "DS9: EFTA00201180",
+        "DS9: EFTA00182748",
+        "DS9: EFTA00722801",
+        "DS9: EFTA00222226",
+        "DS9: EFTA00222247",
+        "DS9: EFTA00221826",
+        "DS9: EFTA00222075",
+        "DS9: EFTA01098622",
+        "DS9: EFTA00728595",
+        "DS9: EFTA00222428",
+        "DS9: EFTA00222442",
+        "DS9: EFTA00728616",
+        "DS9: EFTA00317211",
+        "DS9: EFTA00175214",
+        "DS9: EFTA00185206",
+        "DS9: EFTA00609438",
+        "DS9: EFTA00298293",
+        "DS9: EFTA00750707",
+        "DS9: EFTA01246464",
+        "DS9: EFTA00235277",
+        "DS9: EFTA01079679",
+        "DS9: EFTA00207838",
+        "DS9: EFTA00728793",
+        "DS9: EFTA00285423",
+        "DS9: EFTA00615939",
+        "DS9: EFTA00791905",
+        "DS8: EFTA00023292",
+        "DS9: EFTA00616147",
+        "DS9: EFTA00731002",
+        "DS9: EFTA00614494"
       ],
       "endpoint": "No single endpoint; no settlement terms asserted",
       "flags": [
@@ -1119,7 +1438,11 @@
         "DS8: EFTA00016828",
         "DS8: EFTA00013184",
         "DS8: EFTA00030491",
-        "DS8: EFTA00037299"
+        "DS8: EFTA00037299",
+        "DS8: EFTA00021701",
+        "DS8: EFTA00027585",
+        "DS8: EFTA00023086",
+        "DS8: EFTA00037589"
       ],
       "endpoint": "Logs used in later depositions",
       "flags": [
@@ -1164,13 +1487,33 @@
         "DS9: EFTA00239686",
         "DS10: EFTA01588741",
         "DS10: EFTA01524339",
-        "DS10: EFTA01588996"
+        "DS10: EFTA01588996",
+        "DS8: EFTA00026525",
+        "DS8: EFTA00022367",
+        "DS8: EFTA00022364",
+        "DS8: EFTA00010287",
+        "DS8: EFTA00028045",
+        "DS8: EFTA00031230",
+        "DS8: EFTA00037705",
+        "DS8: EFTA00038016",
+        "DS8: EFTA00022365",
+        "DS10: EFTA01279452",
+        "DS9: EFTA01654620",
+        "DS9: EFTA01654828",
+        "DS9: EFTA00238769",
+        "DS9: EFTA00239081",
+        "DS9: EFTA00239140",
+        "DS9: EFTA00239557",
+        "DS8: EFTA00016036",
+        "DS8: EFTA00010338",
+        "DS8: EFTA00010339"
       ],
       "endpoint": "OPEN: paper trail, no single endpoint",
       "flags": [
         "v2.0 DS8 extension: Merrill Lynch signature-page bundles; Montpelier Trust leg ($4.84M)",
         "v3.2 WS2: Montpelier Trust UBS account-opening package Jan 3, 2019 (EFTA00024450).",
-        "v3.2 WS5: 11 JPMorgan \"GHISLAINE MAXWELI\" statements Mar 2011–Nov 2012 + 3 UBS statements + TerraMar wire instructions + transfer request."
+        "v3.2 WS5: 11 JPMorgan \"GHISLAINE MAXWELI\" statements Mar 2011–Nov 2012 + 3 UBS statements + TerraMar wire instructions + transfer request.",
+        "v3.7: Angara same-funds flag resolved: EFTA01654828 (Jun 12, 2020) states the use of the $14.2M proceeds cannot be specifically identified; the Nov 2016 $14.25M Angara transfer is NOT traced to the 116 E. 65th sale proceeds. The agent's ~$20M figure remains unverified."
       ],
       "id": "P8",
       "span": "2011/2019",
@@ -1178,7 +1521,17 @@
       "tier": "probable",
       "tier_v1": "probable",
       "title": "Maxwell bank paper",
-      "verification": "V-C"
+      "verification": "V-C",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00016036",
+            "EFTA00010338",
+            "EFTA00010339"
+          ],
+          "text": "1 document, no endpoint change. EFTA00016036 is a transfer recap forwarded Aug 11, 2020 with an embedded 2014 date whose month is garbled in the text layer. It separates JPM year-end 2013 values from values at UBS, and labels individual rows \"Completed\", \"In process\", zero balance, or waiting for other positions to transfer. Banking totals are $3,318,005.24 versus $192,754.09; investment totals $11,370,448.74 versus $5,839,491.96; combined columns $14,688,453.98 versus $6,032,246.05. These are the recap's differently dated valuation columns, not a single completed cash transfer or a calculated loss. Status labels are attributed to the recap; independent settlement records are not supplied. This does not resolve or reverse the negative Angara same-funds finding. Negative result: EFTA00010338 transmits UMB Bank's June 10, 2020 response, and EFTA00010339 says it could not find what was requested for the listed customer and/or subpoena dates. This is a result limited to that request and search, not proof Maxwell never held a UMB relationship; the full subpoena scope is not in the response."
+        }
+      ]
     },
     {
       "anchors": [
@@ -1321,7 +1674,8 @@
         "DS8: EFTA00037454",
         "DS8: EFTA00031512",
         "DS8: EFTA00029796",
-        "DS9: EFTA00101307"
+        "DS9: EFTA00101307",
+        "DS8: EFTA00022989"
       ],
       "endpoint": "PROBABLE: visit arranged; completion not separately proved",
       "flags": [
@@ -1368,7 +1722,8 @@
         "DS8: EFTA00017875",
         "DS8: EFTA00037643",
         "DS8: EFTA00037645",
-        "DS8: EFTA00022669"
+        "DS8: EFTA00022669",
+        "DS8: EFTA00009956"
       ],
       "endpoint": "OPEN",
       "flags": [
@@ -1381,7 +1736,15 @@
       "tier": "probable",
       "tier_v1": "probable",
       "title": "Air Ghislaine / S-76 acquisition",
-      "verification": "V-C"
+      "verification": "V-C",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00009956"
+          ],
+          "text": "1 aircraft-administration leg, endpoint unchanged. EFTA00009956 is Hyperion Air's Oct 12, 2020 request to reserve registration number 722JH, with an \"Accepted\" stamp dated Dec 9, 2020 and a notation that the $10 fee was paid. This is reservation paperwork, not proof that a particular aircraft was registered, sold or flown under that number. It is not identified as the N722JE helicopter merely because the numbers resemble each other. EFTA00009954, also opened, repeats Hyperion's sole-member/manager statement already covered by EFTA00017879; no second ownership event is added."
+        }
+      ]
     },
     {
       "anchors": [
@@ -1452,7 +1815,15 @@
         "DS8: EFTA00028580",
         "DS8: EFTA00036379",
         "DS9: EFTA00124206",
-        "DS9: EFTA00089488"
+        "DS9: EFTA00089488",
+        "DS8: EFTA00029992",
+        "DS8: EFTA00036602",
+        "DS8: EFTA00032297",
+        "DS8: EFTA00019925",
+        "DS8: EFTA00017827",
+        "DS8: EFTA00023092",
+        "DS8: EFTA00027731",
+        "DS8: EFTA00031434"
       ],
       "endpoint": "Nolle prosequi Jan 3, 2022 (EFTA00009791); DPAs May 20, 2021",
       "flags": [
@@ -1489,7 +1860,9 @@
         "DS9: EFTA00208288",
         "DS9: EFTA00205035",
         "DS9: EFTA00205183",
-        "DS8: EFTA00013355"
+        "DS8: EFTA00013355",
+        "DS9: EFTA00806869",
+        "DS8: EFTA00013358"
       ],
       "endpoint": "Nov 2020 OPR Executive Summary: no professional misconduct; poor judgment on NPA mechanism + victim notification",
       "flags": [
@@ -1546,7 +1919,8 @@
         "DS8: EFTA00023782",
         "DS8: EFTA00023783",
         "DS8: EFTA00023791",
-        "DS8: EFTA00023817"
+        "DS8: EFTA00023817",
+        "DS8: EFTA00032809"
       ],
       "endpoint": "Trial-prep stage Oct 22, 2021; tuition-payment answer negative Oct 30, 2020",
       "flags": [
@@ -1644,13 +2018,22 @@
         "DS8: EFTA00014337",
         "DS8: EFTA00010260",
         "DS8: EFTA00015190",
-        "DS8: EFTA00032856"
+        "DS8: EFTA00032856",
+        "DS8: EFTA00030980",
+        "DS8: EFTA00029439",
+        "DS8: EFTA00029427",
+        "DS8: EFTA00024510",
+        "DS8: EFTA00018020",
+        "DS8: EFTA00032446",
+        "DS8: EFTA00024507"
       ],
       "endpoint": "PROBABLE: Balderas letter Jul 8, 2020; seizure/forfeiture not established",
       "flags": [
         "new in v2.0 (DS8 inventory and expanded survey)",
         "The Balderas letter characterizations are the AG allegations/request, not findings",
-        "v3.2 WS2: forfeiture-theory meeting scheduling, Dec 4, 2019 (planning leg only)."
+        "v3.2 WS2: forfeiture-theory meeting scheduling, Dec 4, 2019 (planning leg only).",
+        "v3.6: Dec 19, 2019 trustees' counsel meeting REQUEST re resolving potential civil forfeiture claims (EFTA00029439, EFTA00029427); no held meeting or resolution documented.",
+        "v3.8: EFTA00024507 corrects discovery disposal to returned and/or destroyed. V3.7 shorthand is superseded by this correction, not silently erased."
       ],
       "id": "P20",
       "span": "2019-06/2020-07",
@@ -1658,12 +2041,21 @@
       "tier": "probable",
       "tier_v1": "probable",
       "title": "Civil forfeiture thread: Epstein properties",
-      "verification": "V"
+      "verification": "V",
+      "extensions_v38": [
+        {
+          "anchors": [
+            "EFTA00024507"
+          ],
+          "text": "1 corrective leg, endpoint unchanged. EFTA00024507 (Dec 19 to 20, 2019 correspondence, forwarded Dec 20 local date) contains the AUSA's explicit correction: defense counsel \"returned and/or destroyed\" discovery pursuant to the protective order after Epstein's death, not simply destroyed all materials. Search-warrant inventories had been provided separately and might still be obtainable from counsel. Restrictions on the Government's supplying its own copies remain under review. The same chain says the Government had not searched the New Mexico property. This corrects the disposal shorthand in the v3.7 extension; no forfeiture, held meeting, or resolution is established."
+        }
+      ]
     },
     {
       "anchors": [
         "DS8: EFTA00019223",
-        "DS8: EFTA00018778"
+        "DS8: EFTA00018778",
+        "DS8: EFTA00031727"
       ],
       "endpoint": "PROBABLE: First Amended Complaint Feb 5, 2020; no resolution in DS8",
       "flags": [
@@ -1685,7 +2077,9 @@
         "DS8: EFTA00020904",
         "DS8: EFTA00021719",
         "DS8: EFTA00018658",
-        "DS8: EFTA00023109"
+        "DS8: EFTA00023109",
+        "DS8: EFTA00017956",
+        "DS8: EFTA00026977"
       ],
       "endpoint": "PROBABLE: MLAT request Jan 8, 2021; outcome not in DS8",
       "flags": [
@@ -1714,14 +2108,20 @@
         "DS8: EFTA00010010",
         "DS8: EFTA00037538",
         "DS8: EFTA00038885",
-        "DS8: EFTA00019565"
+        "DS8: EFTA00019565",
+        "DS8: EFTA00032569",
+        "DS8: EFTA00023230",
+        "DS8: EFTA00011011",
+        "DS8: EFTA00032855"
       ],
-      "endpoint": "PROBABLE: program operating by 2021; final protocol/first payments not directly documented",
+      "endpoint": "PROBABLE: program launched Jun 25, 2020 (EFTA00032569, embargoed announcement), operating by 2021; final protocol/first payments not directly documented",
       "flags": [
         "PROMOTED in v2.0 from v1.5 DS9 fragment (\"no filing→determination→payment arc traced\")",
-        "Probable, not confirmed: no in-range document shows the protocol finalization, a specific payment determination, or the program launch date",
+        "Probable, not confirmed: no in-range document shows the protocol finalization, a specific payment determination — the program launch date is now established, Jun 25, 2020 (EFTA00032569, embargoed announcement)",
         "The Jan 2024 JPMorgan-fund determinations in P27 are a separate fund",
-        "v3.2 WS2: Dec 14, 2019 design-fight thread continues past the Dec 11 Failla conference (EFTA00019565)."
+        "v3.2 WS2: Dec 14, 2019 design-fight thread continues past the Dec 11 Failla conference (EFTA00019565).",
+        "v3.5 WS1: launch-date gap closed by the Jun 25, 2020 embargoed announcement (EFTA00032569); 3 new legs.",
+        "v3.7: EFTA00011011 page-image stamp '19 NOV 14 AM 9:02' (Nov 14, 2019)."
       ],
       "id": "P23",
       "span": "2019-11/2021-10",
@@ -1734,7 +2134,9 @@
     {
       "anchors": [
         "DS8: EFTA00027979",
-        "DS8: EFTA00027884"
+        "DS8: EFTA00027884",
+        "DS8: EFTA00019570",
+        "DS8: EFTA00015838"
       ],
       "endpoint": "PROBABLE: estate opened, executors acting by Dec 11, 2019; probate order not verified in DS8",
       "flags": [
@@ -1778,7 +2180,9 @@
         "DS8: EFTA00029540",
         "DS8: EFTA00011520",
         "DS8: EFTA00018997",
-        "DS8: EFTA00028903"
+        "DS8: EFTA00028903",
+        "DS8: EFTA00020298",
+        "DS8: EFTA00015865"
       ],
       "endpoint": "PROBABLE: motion briefed; suppression ruling deferred Apr 16, 2021",
       "flags": [
@@ -1919,12 +2323,20 @@
         "main:8034",
         "main:12855",
         "main:12677",
-        "main:9899"
+        "main:9899",
+        "main:12663",
+        "main:12954",
+        "main:13075",
+        "main:12933",
+        "main:12957",
+        "main:13010",
+        "main:12922"
       ],
       "flags": [
         "New in v3.0 (WS2). Anchored in already-indexed content; two completed visits + MOU negotiation documented. Business/association record, not an allegation.",
         "v3.2 WS3: main-DB follow-up closes the arc to Mar 13, 2016; MOU signature NOT established; Oct 2015 delegation visit and Jan 2016 Goldwasser trip planned only.",
-        "v3.3 WS2 (corrected v3.4 WS2): MOU drafts parsed from mailbox attachments (v1 May 18, 2015 main 11305; EY-comments May 28–29, 2015 Gmail11/Sent!4/1 (315), no main-DB row; SAIL comments on v19 Aug 5, 2015 main 8034); $3M/$4M annual fee and 20%/X% were internal draft positions, never put to SAIL; SAIL signed the MOU Oct 23, 2015 (main 9899; file-level anchor Gmail03/Inbox!7/1 (347)) — Founders countersignatures NOT established; the 6 further versions were recovered from the Internet Archive (item gmail-06) and parsed in v3.4 (main 7449's file excepted)."
+        "v3.3 WS2 (corrected v3.4 WS2): MOU drafts parsed from mailbox attachments (v1 May 18, 2015 main 11305; EY-comments May 28–29, 2015 Gmail11/Sent!4/1 (315), no main-DB row; SAIL comments on v19 Aug 5, 2015 main 8034); $3M/$4M annual fee and 20%/X% were internal draft positions, never put to SAIL; SAIL signed the MOU Oct 23, 2015 (main 9899; file-level anchor Gmail03/Inbox!7/1 (347)) — Founders countersignatures NOT established; the 6 further versions were recovered from the Internet Archive (item gmail-06) and parsed in v3.4 (main 7449's file excepted).",
+        "v3.5 WS2: May–Jun 2015 MOU chain completed (main 12663/12954/13075/12933/12957/13010/12922); Oct 15 tracked changes extracted (30 insertions + 14 deletions); Sight Dx/Biondvax presentation files unrecoverable; v21 file absent from all 15 zip listings; Founders' countersignature still NOT established."
       ],
       "verification": "V-WS2; v3.3 WS2: MOU versions parsed in full; v3.4 WS2: signed MOU recovered (main 9899) + remaining versions parsed"
     },
@@ -2002,7 +2414,8 @@
         "DS9: EFTA00204641",
         "DS9: EFTA00211919",
         "DS9: EFTA00183935",
-        "DS9: EFTA00214064"
+        "DS9: EFTA00214064",
+        "DS8: EFTA00014124"
       ],
       "flags": [
         "New in v3.0 (WS1). One object (the sealed NPA/plea records) across three dockets. The 4th DCA reply's own filing date was not established in the text read."
@@ -2294,11 +2707,15 @@
         "DS11: EFTA02701903",
         "DS11: EFTA02560282",
         "DS11: EFTA02560305",
-        "DS11: EFTA02560221"
+        "DS11: EFTA02560221",
+        "DS11: EFTA02339033",
+        "DS11: EFTA02559675",
+        "DS11: EFTA02365160"
       ],
       "flags": [
         "v3.3 WS2: DS11 Sep-2012 sweep (15 distinct contents / 18 IDs): arrangement arc Sep 17–24, 2012, Regency Hotel Room 1131, Summers/Osborne/Pagano/Reid converging; completion still NOT established; DOJ-only cluster ('1131' 0 hits in the leak mailbox).",
-        "v3.3-corrected (Nov 6, 2026): classification reviewed after external review — stays a standalone probable story (atlas definition + v1.3 P13 precedent); not a fragment, not a Story 12 extension (see changelog §11)."
+        "v3.3-corrected (Nov 6, 2026): classification reviewed after external review — stays a standalone probable story (atlas definition + v1.3 P13 precedent); not a fragment, not a Story 12 extension (see changelog §11).",
+        "v3.5 WS3: 'Reid' as a recurring first-name-only contact (2011–2018); Sep 25, 2012 breakfast leg (EFTA02365160) is a next-day data point, not a span move; stopping point stays Sep 24, 2012; identification stays NOT established."
       ],
       "verification": "V-WS3; v3.3 WS2: DS11 Sep-2012 sweep body-read in full"
     },
@@ -2325,11 +2742,11 @@
     },
     {
       "id": "P45",
-      "title": "Epstein advising Leon Black's family office, Feb 2014–Sep 2016",
+      "title": "Epstein advising Leon Black's family office, Feb 2014–Oct 2018",
       "tier": "probable",
-      "span": "2014-02-17/2016-09-29",
-      "endpoint": "Sep 29, 2016 (EFTA02449580) — dated stopping point, not a closure. The May 11, 2016 GRAT-backup anchor (HO 12955) is now a mid-span leg, not the endpoint. Fee disputed in Epstein's drafts (see legs); no agreed payment established",
-      "stopping_point": "2016-09-29 (EFTA02449580)",
+      "span": "2014-02/2018-10",
+      "endpoint": "Oct 9, 2018 (EFTA02619585) — Enhanced Capital thread; Cohen reply same day (EFTA02619423); scheduling-only contact continues to Nov 2018, no advisory content",
+      "stopping_point": "2018-10-09",
       "anchors": [
         "HO 12890",
         "HO 12935",
@@ -2389,11 +2806,128 @@
         "DS11: EFTA02449580",
         "DS11: EFTA02446290",
         "DS11: EFTA02655834",
-        "DS11: EFTA02655997"
+        "DS11: EFTA02655997",
+        "DS11: EFTA02449628",
+        "DS11: EFTA02448994",
+        "DS11: EFTA02446838",
+        "DS11: EFTA02446649",
+        "DS11: EFTA02446088",
+        "DS11: EFTA02445863",
+        "DS11: EFTA02670749",
+        "DS11: EFTA02670773",
+        "DS11: EFTA02669892",
+        "DS11: EFTA02670262",
+        "DS11: EFTA02667941",
+        "DS11: EFTA02667962",
+        "DS11: EFTA02669687",
+        "DS11: EFTA02666211",
+        "DS11: EFTA02662036",
+        "DS11: EFTA02654346",
+        "DS11: EFTA02654369",
+        "DS11: EFTA02654382",
+        "DS11: EFTA02655451",
+        "DS11: EFTA02655647",
+        "DS11: EFTA02655664",
+        "DS11: EFTA02655700",
+        "DS11: EFTA02655737",
+        "DS11: EFTA02655746",
+        "DS11: EFTA02655837",
+        "DS11: EFTA02655873",
+        "DS11: EFTA02655888",
+        "DS11: EFTA02655972",
+        "DS11: EFTA02655985",
+        "DS11: EFTA02656019",
+        "DS11: EFTA02657193",
+        "DS11: EFTA02404639",
+        "DS11: EFTA02651413",
+        "DS11: EFTA02653005",
+        "DS11: EFTA02653636",
+        "DS11: EFTA02654997",
+        "DS11: EFTA02396231",
+        "DS11: EFTA02398439",
+        "DS11: EFTA02398455",
+        "DS11: EFTA02398601",
+        "DS11: EFTA02639765",
+        "DS11: EFTA02351668",
+        "DS11: EFTA02351680",
+        "DS11: EFTA02639849",
+        "DS11: EFTA02367827",
+        "DS11: EFTA02639876",
+        "DS11: EFTA02638299",
+        "DS11: EFTA02638966",
+        "DS11: EFTA02339282",
+        "DS11: EFTA02608615",
+        "DS11: EFTA02593733",
+        "DS11: EFTA02366582",
+        "DS11: EFTA02615307",
+        "DS11: EFTA02366701",
+        "DS11: EFTA02605282",
+        "DS11: EFTA02582557",
+        "DS11: EFTA02582450",
+        "DS11: EFTA02611776",
+        "DS11: EFTA02612129",
+        "DS11: EFTA02611288",
+        "DS11: EFTA02614016",
+        "DS11: EFTA02614287",
+        "DS11: EFTA02231659",
+        "DS11: EFTA02231775",
+        "DS11: EFTA02231832",
+        "DS11: EFTA02550806",
+        "DS11: EFTA02524668",
+        "DS11: EFTA02520818",
+        "DS11: EFTA02462559",
+        "DS11: EFTA02462686",
+        "DS11: EFTA02462898",
+        "DS11: EFTA02462923",
+        "DS11: EFTA02574406",
+        "DS11: EFTA02622038",
+        "DS11: EFTA02622214",
+        "DS11: EFTA02622059",
+        "DS11: EFTA02620635",
+        "DS11: EFTA02620573",
+        "DS11: EFTA02622135",
+        "DS11: EFTA02621626",
+        "DS11: EFTA02620521",
+        "DS11: EFTA02620926",
+        "DS11: EFTA02620296",
+        "DS11: EFTA02619423",
+        "DS11: EFTA02620195",
+        "DS11: EFTA02619585",
+        "DS11: EFTA02568140",
+        "DS11: EFTA02568499",
+        "DS11: EFTA02569871",
+        "DS11: EFTA02579682",
+        "DS11: EFTA02580685",
+        "DS11: EFTA02581671",
+        "DS11: EFTA02583532",
+        "DS11: EFTA02349705",
+        "DS11: EFTA02512886",
+        "DS11: EFTA02513737",
+        "DS11: EFTA02508414",
+        "DS11: EFTA02504820",
+        "DS11: EFTA02503027",
+        "DS11: EFTA02391084",
+        "DS11: EFTA02461309",
+        "DS11: EFTA02337939",
+        "DS11: EFTA02704907",
+        "DS11: EFTA02703649",
+        "DS11: EFTA02469823",
+        "DS11: EFTA02639566",
+        "DS11: EFTA02639568",
+        "DS11: EFTA02639570",
+        "DS11: EFTA02639574",
+        "DS11: EFTA02639588",
+        "DS11: EFTA02639591",
+        "DS11: EFTA02639609",
+        "DS11: EFTA02594087",
+        "DS11: EFTA02593348",
+        "DS11: EFTA02595460",
+        "DS9: EFTA00321715"
       ],
       "flags": [
         "v3.3 WS4: DS11 core body-read (330 openings; 14 in full). v3.2's 8 DS11 anchors = 3 distinct emails. Span start moved Dec 28, 2014 → Feb 17, 2014 on the memo (EFTA02477032); Apr/Nov 2013 advisory contact recorded (EFTA02568359, EFTA02577989) but not used as the span start. Fee figures are Epstein's one-sided drafts, differing between drafts ($20M vs $8M) — do not quote a settled fee.",
-        "v3.4 WS2: endpoint moved May 11, 2016 → Sep 29, 2016 (EFTA02449580); the v3.3 endpoint sentence (\"no DS11-side advisory material after May 11, 2016 was found\") is corrected — Jun–Sep 2016 advisory material found in the remainder sample. Span start KEPT Feb 17, 2014 (Jan 23, 2014 outline EFTA02580146 recorded as a leg). Fee figures re-verified verbatim ($20M both Jan 6 drafts; $8M in EFTA02476964 only)."
+        "v3.4 WS2: endpoint moved May 11, 2016 → Sep 29, 2016 (EFTA02449580); the v3.3 endpoint sentence (\"no DS11-side advisory material after May 11, 2016 was found\") is corrected — Jun–Sep 2016 advisory material found in the remainder sample. Span start KEPT Feb 17, 2014 (Jan 23, 2014 outline EFTA02580146 recorded as a leg). Fee figures re-verified verbatim ($20M both Jan 6 drafts; $8M in EFTA02476964 only).",
+        "v3.5 WS2: endpoint moved Sep 29, 2016 → Oct 9, 2018 (EFTA02619585); the v3.4 endpoint check ('2017–2018 docs are non-advisory mailbox material') is corrected — Oct 2016–Oct 2018 advisory material found in the remainder survey. EFTA02594087: Spinella is a direct To: recipient alongside Cohen, not only cc'd; 'the 5' is the G5/GV. Jan 2016 DO NOT SEND letter WAS delivered to Brad S Karp Dec 7, 2017 (EFTA02550806); delivery to Leon remains not established. Fee figures widened verbatim (33% May 1, 2015; 28% after-tax / 37% pre-tax Feb 4, 2016; 25% Athene Jan 18, 2016; $40M/year Nov 15, 2016); all Epstein one-sided, no settled fee."
       ],
       "verification": "V-WS5; v3.3 WS4: DS11 core fuller read (330 openings; 14 in full); v3.4 WS2: remainder survey (181 openings + 49 full reads); endpoint moved to Sep 29, 2016"
     },
@@ -2453,6 +2987,65 @@
         "v3.3-corrected (Nov 6, 2026): endpoint moved Apr 15, 2016 → Oct 1, 2015 (payment deadline, not a documented event); title transfer restated as scheduled, not occurred (see changelog §11)."
       ],
       "verification": "V-WS4; v3.3 WS4: document-level verified"
+    },
+    {
+      "id": "P49",
+      "title": "Epstein–Jes Staley emails, 2009–2011, and SDNY's Dec 2019 contact with the FCA",
+      "tier": "probable",
+      "span": "2009-12/2019-12",
+      "endpoint": "Dec 14, 2019 (EFTA00029358) — SDNY internal email relaying a single victim's allegation as relayed; FCA outcome not established",
+      "stopping_point": "2019-12-14",
+      "anchors": [
+        "DS8: EFTA00029429",
+        "DS8: EFTA00029430",
+        "DS8: EFTA00029432",
+        "DS8: EFTA00029434",
+        "DS8: EFTA00029435",
+        "DS8: EFTA00029437",
+        "DS8: EFTA00022164",
+        "DS8: EFTA00029358"
+      ],
+      "flags": [
+        "New in v3.5 (WS1). The 2009–2011 contact is documented in JPMorgan-produced emails; the 2019 leg is an SDNY internal record of a follow-up call with the FCA and a single victim's allegation as relayed in an SDNY email (labeled as an allegation, not a finding); no FCA outcome appears in DS8. The allegation's source memo is not identified in the email.",
+        "v3.5.1: the v3.5 MD link claim that P19's 'James E. Staley' is a different person is unsupported and removed; identity relationship between P19's will entries ('Jes Staley' 2012, 'James E. Staley' 2013/2014) and this story is NOT established. Not merged, not split."
+      ],
+      "verification": "V-WS1; v3.5 WS1: document-level verified"
+    },
+    {
+      "id": "P50",
+      "title": "Maxwell's correspondence with \"The Invisible Man\" (signs \"A\"; in-thread evidence points to Andrew), 2001–2002",
+      "tier": "probable",
+      "span": "2001-08/2002-03",
+      "endpoint": "Mar 3, 2002 (EFTA00011441) — Maxwell's forwarded message names 'Andrew'; Peru trip planned, not documented as completed",
+      "stopping_point": "2002-03-03",
+      "anchors": [
+        "DS8: EFTA00011437",
+        "DS8: EFTA00011440",
+        "DS8: EFTA00011438",
+        "DS8: EFTA00011441",
+        "DS8: EFTA00011435",
+        "DS8: EFTA00018878"
+      ],
+      "flags": [
+        "New in v3.5 (WS1). Identification of the correspondent rests on in-thread evidence (he signs 'A', writes from Balmoral about the Royal Family summer camp and leaving the Royal Navy; Maxwell's forwarded message names 'Andrew') — presented as in-thread evidence per Standard §6, not flatly confirmed. Whether any meeting or introduction occurred is NOT established.",
+        "v3.5.1: EFTA00011441 is Maxwell forwarding to 'The Invisible Man' a message she sent to a third person in Peru naming 'Andrew' as the visitor; the correspondent's reply is signed 'A'. Title narrowed; identification remains in-thread inference."
+      ],
+      "verification": "V-WS1; v3.5 WS1: document-level verified"
+    },
+    {
+      "id": "P51",
+      "title": "Palm Beach Police intelligence entries on Epstein and Maxwell, Dec 2001–Nov 2004",
+      "tier": "probable",
+      "span": "2001-12/2004-11",
+      "endpoint": "Nov 29, 2004 (EFTA00022654) — last pre-2005 intelligence entry; the Apr 25, 2002 conclusion ('intelligence purposes only') is the story's internal close; header disposition UNFOUNDED as recorded, not as a finding of fact",
+      "stopping_point": "2004-11-29",
+      "anchors": [
+        "DS8: EFTA00022654"
+      ],
+      "flags": [
+        "New in v3.5 (WS1). The file is a Palm Beach Police 'Persons System Report' (case 2002-10; entries filed under File 100, 300, 300-13 and 2600). Its contents are officers' records of what students and others told them — accounts and allegations, labeled as such — and the file's own conclusion is that no illegal activity had been reported or detected at that time. The Mar–Oct 2005 entries of the same file are a Story 1 leg; span stays Dec 2001–Nov 2004."
+      ],
+      "verification": "V-WS1; v3.5 WS1: document-level verified"
     }
   ],
   "v13_note": "P13 (Andrew Nov 2010 NY visit) ruled a probable story; v1.2 changelog §3c 'fragment, not a story' wording was an error and is corrected. Counts unchanged: 40 stories (23 confirmed, 17 probable), 24 fragments. v1.3 adds no new document verification.",
@@ -2460,8 +3053,8 @@
   "v20_note": "Phase 2 step 2 (DS8 inventory and expanded survey) only. Counts: 57 stories (28 confirmed, 29 probable), 49 fragments. No v1.5 story changed tier; no story downgraded. Story 4 endpoint corrected: cause/manner established at OCME-relay level (EFTA00020165, EFTA00031006).",
   "v21_note": "v2.1 corrections: 'DS8 full pass' label replaced with 'DS8 inventory and expanded survey'; P19 endpoint corrected (Aug 8, 2019 will belongs to P24); Story 26 closing date corrected to not established. Counts unchanged: 57 stories (28 confirmed, 29 probable), 49 fragments.",
   "v30_note": "v3.0 (Nov 5, 2026): production program - DS11 late-Bates re-sweep (WS1), Barak parts 02/03 indexing (WS2), DS10 FEDWIRE chaining by beneficiary account (WS3), document-level verification of all 57 carried stories (WS4), open-flag resolution (WS5). 15 new stories (3 confirmed, 12 probable), 35 new fragments, 1 downgrade (Story 2), 5 open flags resolved, 2 carried unresolved, torrent route deferred. Production-READY, internal - not published; publication needs Thomas's explicit go-ahead.",
-  "version": "v3.4",
-  "previous_version": "v3.3",
+  "version": "v3.8",
+  "previous_version": "v3.7",
   "titles_narrowed_v31": [
     "2",
     "P13",
@@ -2474,8 +3067,119 @@
   "v32_note": "v3.2 next-expansion program: DS10 statements chaining (WS1), DS8 deeper survey (WS2), Barak follow-ups (WS3), dedup hygiene (WS4), OCR-tolerant sweep + unassigned files + HO assessment (WS5). 4 new probable stories (P42–P45), 22 new fragments (F-32-1–F-32-22), ~60 WS5 leg clusters, 18 WS2 extensions, 9 WS1 extensions, 2 WS3 extensions. Corrections: P9 stopping point → Sep 5, 2019; P18 distinct anchors 11 not 13; P35 Feb 2016 handoff not established; WS3 \"161 advice instances\" → 170; WS3 316-line FEDWIRE count is a lower bound. 0 tier changes. HO full pass NOT launched (assessment verdict). v3.2 is INTERNAL, not production-ready; v3.1 remains the production-ready atlas.",
   "v33_note": "v3.3 closes the v3.2 §10 queue: NONPROSECUTION + FIRSTBANK fuller passes (WS1), SAIL attachment parse + Nowforce outside-mailbox chase + DS11 Sep-2012 sweep (WS2), Barak remainder (WS3), money resolution (WS4), page-image reads (WS5). 3 new probable stories (P46–P48), 16 new fragments (F-33-1–F-33-16), 0 tier changes. Corrections: P35 flag rewritten (page-image verified); P9 date confirmed + p.11 → p.12; P40 FEDWIRE count 316 → 329 and span/stopping point to Feb 23, 2012; P45 span start Dec 28, 2014 → Feb 17, 2014; P12 stopping point Oct 27, 2015 → Oct 27, 2017; WS5 §2.3 Beliakov/Belyakov population correction. v3.3 is INTERNAL, not production-ready; v3.1 remains the production-ready atlas.",
   "v34_note": "v3.4 closes part of the v3.3 §10 queue: SAIL attachment parse completed + signature reversed in part (WS2), P45 remainder survey + endpoint move to Sep 29, 2016 (WS2), Barak remainder (WS3: P47 leg, P12 identity resolved, F-33-9, Stories 12/13, \"Barack\" triage), fuller reads + WS1 §7 list (WS4: 26 new anchors, F-34-1), money resolution (WS1: P40 dedup resolved mixed, P35 eight pairs, Story 11 opened dates validated, FTS cap measured corpus-wide at 210 docs), page-image reads (WS5: F-33-11/12/13 resolved, P38 corrected, count resolved at 20). 0 new stories, 3 new fragments (F-34-1–F-34-3), 2 fragments retired (F-33-12, F-33-13), 0 tier changes. v3.4 is INTERNAL, not production-ready; v3.1 remains the production-ready atlas.",
-  "publication_note": "Publication copy of supplied v3.4 JSON: internal_only set false for authorized release; historical coverage retained under coverage_table_historical, Markdown coverage preserved with an explicit historical basis label. Crew story fields and all 1,133 anchor entries preserved. Review checked supplied-file consistency, not independent re-reading of the corpus.",
-  "source_json_sha256": "e44e58c59718ad0e954e9152660030826e15a940d6c3d69db0397e3c8ac03ddb",
+  "v35_note": "v3.5 closes part of the v3.4 §12.7 queue: DS8 metadata-only survey (WS1: 514 examined, 3 new stories P49–P51, 3 new fragments, 19 extensions; cumulative ~3,676 examined, ~6,918 remain), P45 remainder survey + endpoint move to Oct 9, 2018 (WS2), SAIL May–Jun 2015 chain completion (WS2), identities (WS3: F-33-9 visa issued Jun 25, 2018, Stories 12/13 'Jenn Katlin', P43 Reid leg, F-33-10 five filings; 'B', 'Dante Indike', 'Ronen Cohen', 'Anshel Pfeffer' all carried unresolved), docket-cluster survey (WS4: P3 major extension incl. the 09-80656 $500,000 settlement, 2 new fragments, IMADs completed), page-image reads (WS5: Story 11 closed dates unresolvable, P35 eight pairs verified, Amex mega-docs closed, blind spot measured at 210 docs / ~20,991 pp. remaining). 3 new stories, 5 new fragments, 0 tier changes. JSON anchors 1,133 → 1,472 (+339; three crew-proposed IDs were already anchors — EFTA00015726 Story 7, EFTA01249055 P1, EFTA00024310 P8 — so their legs stand on prose, not new anchors).",
+  "v351_note": "Grok Bot external-review fix pass, Nov 6, 2026. No content added or re-tiered. See CHANGELOG-v3.5.1.md. v3.5 JSON previous_version read 'v3.3' (corrected: v3.5's predecessor is v3.4). v3.5 counts dropped the v1.2 to v3.4 history keys; restored from v3.4 JSON and v3.5 keys added.",
+  "fragments_v36": [
+    {
+      "id": "F-36-1",
+      "title": "SDNY and FBI search-warrant data accounting, Feb 15 to Apr 8, 2020",
+      "anchors": [
+        "DS8: EFTA00029444"
+      ],
+      "stopping_point": "2020-04-08"
+    },
+    {
+      "id": "F-36-2",
+      "title": "Epstein asks a contact to call JPMorgan's lead counsel, Feb 7, 2011",
+      "anchors": [
+        "DS8: EFTA00029436"
+      ],
+      "stopping_point": "2011-02-07"
+    }
+  ],
+  "v36_note": "v3.6 (Grok Bot, Nov 6, 2026) on v3.5.1: 0 new stories, 2 new fragments (F-36-1, F-36-2), extensions to Stories 3 and 5 and P20 (11 anchors), 1 correction (Story 5 EFTA00030804 attachment). 19 never-cited DS8 docs newly examined (all read in full) plus 5 carried-flag DS8 re-reads; WS1 209-hit list not reconstructable. P45 remainder: 1 doc examined, 0 advisory. Identities carried unresolved. Inventory + expanded survey, not a full pass. See CHANGELOG-v3.6.md and SURVEY.md.",
+  "fragments_v37": [
+    {
+      "id": "F-37-1",
+      "title": "Palm Beach Police file 2600-8 continuation, Oct 2005 to Aug 2009",
+      "anchors": [
+        "DS9: EFTA00077923",
+        "DS9: EFTA00090685"
+      ],
+      "stopping_point": "2009-08-25"
+    },
+    {
+      "id": "F-37-2",
+      "title": "DOJ Office of International Affairs letters, Apr 7 and Dec 30, 2020",
+      "anchors": [
+        "DS8: EFTA00022061",
+        "DS8: EFTA00023110"
+      ],
+      "stopping_point": "2020-12-30"
+    },
+    {
+      "id": "F-37-3",
+      "title": "Deutsche Bank counsel's correspondence with SDNY, Sep 6, 2019 and Aug 3, 2020",
+      "anchors": [
+        "DS8: EFTA00027018",
+        "DS8: EFTA00017084",
+        "DS8: EFTA00015937"
+      ],
+      "stopping_point": "2020-08-03",
+      "extension_v38": "EFTA00015937 (Nov 19, 2019, 4 pp.) adds Akin Gump's eleventh rolling response to the July 11 grand-jury subpoena: the cover letter describes DB-SDNY-0028783 to 0037559 and supplemental exhibits. It distinguishes a Butterfly Trust money-market account transaction exhibit from beneficiaries of a separate 2013 Butterfly Trust, for which counsel says the bank did not open an account but received trust documents during due diligence on the 2017 Caterpillar Trust. No beneficiaries are named here. These are counsel's production descriptions; the underlying exhibits were not supplied in this text and have not been independently read. The similarly named trust references are not merged. Production is not a finding of wrongdoing."
+    },
+    {
+      "id": "F-37-4",
+      "title": "JPMorgan supplemental grand-jury subpoena production, Nov 22 to 23, 2021",
+      "anchors": [
+        "DS8: EFTA00014878"
+      ],
+      "stopping_point": "2021-11-23"
+    },
+    {
+      "id": "F-37-5",
+      "title": "SDNY collects bank and FinCEN correspondence from a media inquiry, Aug 31, 2020",
+      "anchors": [
+        "DS8: EFTA00023397"
+      ],
+      "stopping_point": "2020-08-31"
+    },
+    {
+      "id": "F-37-6",
+      "title": "Mar-a-Lago HR reply on historical employment records, Feb 12, 2015",
+      "anchors": [
+        "DS8: EFTA00029389"
+      ],
+      "stopping_point": "2015-02-12"
+    },
+    {
+      "id": "F-37-7",
+      "title": "CEOS meeting re Epstein investigation, Dec 17, 2009",
+      "anchors": [
+        "DS8: EFTA00014184"
+      ],
+      "stopping_point": "2009-12-17"
+    },
+    {
+      "id": "F-37-8",
+      "title": "SDNY WebEx with former Gov. Bill Richardson's new attorneys, May 13, 2021",
+      "anchors": [
+        "DS8: EFTA00028594"
+      ],
+      "stopping_point": "2021-05-13"
+    }
+  ],
+  "v37_note": "v3.7 (Grok Bot, Nov 6, 2026) on v3.6: 0 new stories, 8 new fragments (F-37-1 to F-37-8), extensions to Stories 1, 3, 4, 5, 24, 25 and P1, P8, P20, P21, P23, P30, P45 (44 anchors), 1 correction (P23 EFTA00011011 date). 263 never-cited DS8 neighbor documents opened and read in full, plus 11 never-cited non-DS8 flag documents and 1 page-image re-check. Angara same-funds and PBAC 2600-8 resolved; Reyes partly resolved. Not a full pass. See CHANGELOG-v3.7.md and SURVEY.md.",
+  "editorial_corrections_v38": {
+    "F-35-1": "F-35-1. Maxwell's undated list offering to arrange appointments, and a related email to Doug Band. EFTA00011433 (1 p., 389 chars, undated, no sender in the text layer): a one-page list in Maxwell's 2001-2002 mailbox run describes four women in sexualized, physically and demographically identifying terms (ages, appearance, ethnicity, and in one case a workplace) and asks whether to \"pre set up\" appointments, \"time and place\". Those identifying descriptions are not reproduced here. EFTA00011434: Maxwell to Doug Band (doug.band@gsa.gov) offers to introduce women, using nationality and character sketches as identifiers; those descriptions are not reproduced here. Both sit in the 2001-2002 Maxwell mailbox run (P50). Single documents, no chain or endpoint; arrangement offers, not completed meetings. Links: P50.",
+    "F-35-4": "Classification: fragment, not a probable story: the complaints are filed documents forming a connected chain (two suits, same theory, same months) with a dated stopping point, but outcomes are not in the documents read, and the cluster remains a litigation-filing set rather than a completed story. This matches F-33-1 (the related Jane Doe 1 v. JPMorgan class complaint), which is also a fragment.",
+    "F-35-5": "Classification: fragment, not a probable story: the case and its claims are documented by the amended complaint and a hearing transcript, with a dated stopping point, but the original complaint's filing date and the outcome are not established from these documents."
+  },
+  "coverage_v38": {
+    "ds8_finished": false,
+    "base_neighbor_ids": 249,
+    "base_ds8_ids": 6781,
+    "neighbor_attempts_complete": true,
+    "neighbor_text_results": 248,
+    "neighbor_capped": 1,
+    "remaining_unopened_including_skipped": 6333,
+    "remaining_unopened_excluding_skipped": 6332,
+    "next_ordered_id": "EFTA00010341",
+    "stop_reason": "Session capacity reached after neighbor attempts and 200 additional ordered documents. No claim of full DS8 completion. Most opened documents received partial rapid review, not full close reading."
+  },
+  "v38_note": "Internal v3.8 on v3.7. F-35-1 editorial redaction; two fragment label corrections; 7 story-entry extensions (17 anchors), 1 fragment extension (1 anchor), 1 evidentiary correction (P20). No new stories, no new fragments, no tier changes. 448 DS8 PDFs returned text; 1 capped attempt skipped. 70 text layers fully read, 371 partially triaged, 7 without substantive text. DS8 not finished. See SURVEY.md.",
+  "source_json_sha256": "7fc38bbc5605f4ec1764c712e4cd65401592f5b4386c2ffb23d105bc0857f7a6",
+  "publication_note": "Authorized cumulative publication copy. All supplied story objects and 1,544 anchor entries preserved. internal_only is false for release. Older structured coverage retained as historical; current v3.8 survey scope remains under coverage_v38. Publication review checked supplied-file consistency, privacy edits and labels; it did not independently re-read the corpus.",
   "coverage_table_historical": [
     {
       "docs_total": 4253,
@@ -2487,9 +3191,9 @@
     {
       "docs_total": 10594,
       "image_only": "~85",
-      "sampled_or_anchored": "Inventory and expanded survey: full metadata inventory of all 10,594 docs; ~2,820 examined at opening depth or better; ~200 read in full, ~300 more in substantial part/excerpt",
+      "sampled_or_anchored": "Inventory and expanded survey: full metadata inventory of all 10,594 docs; ~2,820 examined at opening depth or better; ~200 read in full, ~300 more in substantial part/excerpt v3.5 WS1: +514 examined at opening depth or better (126 read in full); cumulative ~3,676 examined.",
       "set": "DS8",
-      "unsampled_remainder": "~7,770 not examined beyond metadata (content unknown, never story-free)"
+      "unsampled_remainder": "~6,918 not examined beyond metadata (content unknown, never story-free; v3.5 WS1 estimate)"
     },
     {
       "docs_total": 531282,
@@ -2508,7 +3212,7 @@
     {
       "docs_total": 331655,
       "image_only": "2780",
-      "sampled_or_anchored": "~700 distinct docs surfaced, ~100 read closely, ~60 anchored (v1) + v3.0 late-Bates re-sweep (WS1): 4,130-doc cluster EFTA02720000-02730262 inventoried; 4,092 examined at opening depth or better (100% of with-text docs); 56 read in full or substantial part; 44 FTS terms x 11 windows",
+      "sampled_or_anchored": "~700 distinct docs surfaced, ~100 read closely, ~60 anchored (v1) + v3.0 late-Bates re-sweep (WS1): 4,130-doc cluster EFTA02720000-02730262 inventoried; 4,092 examined at opening depth or better (100% of with-text docs); 56 read in full or substantial part; 44 FTS terms x 11 windows v3.5 WS2: P45 Spinella remainder — 802 of 2,140 examined at opening depth or better (216 read in full); 1,338 remain unexamined.",
       "set": "DS11",
       "unsampled_remainder": "~327,500 docs outside the late-Bates cluster remain unmapped except for v1's ~700 surfaced docs; the 38 no-text docs in the cluster and the 88 victim-list spreadsheet pages (headers only, by design) are characterized, not surveyed"
     },
@@ -2527,9 +3231,7 @@
       "unsampled_remainder": "Pre-2013 mailbox ~2,300 dated rows sweep-checked only (least-mapped part); Tiomkin/AT Global thread and Bendheim/PHC cluster unmapped; attachments (PDF/DOC/images) not indexed in any part; mailbox dated range ends 2016-02-15"
     }
   ],
-  "coverage_headline_historical": "Atlas v3.4 surveys a small, stated fraction of the corpus (anchored documents now numbering in the high hundreds, plus the DS11 late-Bates inventory and expanded survey, the DS10 FEDWIRE chaining and statement chaining, the Barak parts 02/03 indexing, and the pre-2013 mailbox inventory) and labels everything else unsampled-and-unknown, image-only, or duplicate. It makes NO claim about whether unsampled documents contain stories. The story count (79) is the number of stories v3.4 could confirm or probabilistically chain from surveys (72 from v3.1 plus 4 new in v3.2 plus 3 new in v3.3). Further stories may emerge from unsampled material; their number is unknown.",
-  "coverage_markdown": "Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid; the table says so instead of forcing false precision. \"Unsampled remainder\" means NOT\nEXAMINED, CONTENT UNKNOWN — never \"story-free.\" A slice\nwhose method was capped FTS sweeps cannot distinguish \"no\nstory\" from \"story not yet found\" in its unsampled remainder.\n\n| Set | Docs total | Sampled or anchored (method) | Image-only, unmappable from text | Unsampled remainder (not examined) |\n|---|---|---|---|---|\n| DS1–7 + DS12 | 4,253 | ~75 read directly (all DS6+DS7, DS3 largest caption docs, DS4/DS12 anchors, speckle checks) + full metadata inventory of all docs in the group | ≥3,216 no-text (3,301 for DS1–8+12 combined, less DS8 ~85); speckle-text photo docs in DS1/DS2/DS5 add uncounted unmappable | ~4,178 not read directly |\n| DS8 | 10,594 (29,348 pages) | Inventory and expanded survey in v2.0: full metadata inventory of all 10,594 docs; ~2,820 examined at opening depth or better (A ~300, B all 2,110 first-600-char openings + 59 Bates-led reads, C ~120, D ~163, E ~130); ~200 read in full, ~300 more in substantial part/excerpt; ~150 FTS sweep terms per range in places | ~85 (99.2% with text) | ~7,420 not examined beyond metadata (v3.2 WS2 deeper survey: ~360 eye-read, ~30 read in full; cumulative ~3,170 examined; content unknown, never story-free); includes 414 \"No Images Produced\" placeholders (range D) and 5 image-only runs totaling 585 pages (range C) |\n| DS9 | 531,282 (1,223,777 pages) | ≤3,240 capped FTS hit rows (upper bound, NOT a distinct-doc count; distinct sampled IDs fewer, never deduplicated); 0 docs read in full; 15 anchor docs verified for existence/size only, content reused from prior findings | 53,822 exact (10.1%; EFTA011xxxxx 21,953 + EFTA012xxxxx 16,079) | At least 528,042 never even a sampled hit row; sampled-but-unchained remainder likewise unmapped |\n| DS10 | 503,154 (950,101 pages; 493,068 with text) | FEDWIRE chaining in v3.0 (WS3): 1,632 FEDWIRE docs inventoried (7,312 pp.); 161 FirstBank advice instances enumerated advice-by-advice (v3.2 WS4 correction: 170); 1,761 NC-bearing statement lines parsed (345 counterparties; v3.3 WS4 correction: 1,852 genuine occurrences, LSJ lines 316 → 329); ~110 docs examined at opening depth or better; 12 read in full; ~40 verification reads. 917 'STATEMENT OF ACCOUNT' docs connected by counts only in v3.0; chained by account in v3.2 WS1 (20,425 pp.; 1 new probable story, 9 extensions, 10 fragments) | ~10,086 (503,154 − 493,068; 20/20 no-text sample = 1-page, 1-image, Bates-only) | Effectively the whole slice minus the chained FEDWIRE population and ~35 cited docs; the ~330 smaller-counterparty chains beyond F-WS3-15 inventory, and the ~10,086 no-text docs (the 917 statements are now chained, v3.2 WS1) |\n| DS11 | 331,655 (517,382 pages) | ~700 distinct docs surfaced, ~100 read closely, ~60 anchored (v1) + v3.0 late-Bates re-sweep (WS1): 4,130-doc cluster EFTA02720000–02730262 inventoried; 4,092 examined at opening depth or better (100% of with-text docs); 56 read in full or substantial part; 44 FTS terms × 11 windows | 2,780 (99.2% with text) | ~327,500 docs outside the late-Bates cluster remain unmapped except for v1's ~700 surfaced docs; the 38 no-text docs in the cluster and the 88 victim-list spreadsheet pages (headers only, by design) are characterized, not surveyed |\n| House Oversight | 23,160 pages | ~250–280 pages directly read (94 part-opening reads + ~90 direct anchor reads + reused 94-page dedup sample); everything else is FTS-tally evidence, NOT read evidence. v3.2 WS5 assessment: +231 systematic + 41 targeted pages read; 0 HO-only stories found; full pass NOT launched | Not applicable in the same way (pages, not docs); 3,534 sub-800-char pages + 51 zero-char pages are fragment/cover material | ~22,600 pages not directly read (approximation only; v3.2 adds 272 pages read) |\n| Barak mailbox | 43,322 rows → 31,704 canonical messages (main 31,718 + Hyperion 1,621 + part01 4,192 + part02 3,979 + part03 1,812) | Sweep-and-anchor pass (~45 FTS terms across all DBs, top-sender/subject scans); ~70 anchor rows body-read in full (v1) + v3.0 WS2 survey of parts 02/03 (~80 sweep terms, ~35 anchor rows body-read). IA Barak parts 02/03 INDEXED in v3.0 (5,791 rows; 11 truly new messages) | Not applicable (rows are emails, not scanned pages); 8,942 rows (20.6%) undated across all five DBs | v3.2 WS3: pre-2013 mailbox inventoried (2,299 dated main rows) + 2 new probable stories (Sep 2012 arrangement; Bendheim/Nowforce) + SAIL/SPIEF main-DB follow-ups closed; Tiomkin/AT Global resolved as an investigated non-story; Bendheim/PHC resolved (the 198-row \"I'm downstairs\" cluster is one misfiled forward duplicated); attachments (PDF/DOC/images) not indexed in any part; mailbox dated range ends 2016-02-15; DS11 Sep-2012 sweep still owed |\n\n**Coverage headline (v3.2):** Atlas v3.2 surveys a small, stated fraction of the corpus (anchored documents now numbering in the high hundreds, plus the DS11 late-Bates inventory and expanded survey, the DS10 FEDWIRE chaining and statement chaining, the Barak parts 02/03 indexing, and the pre-2013 mailbox inventory) and labels everything else unsampled-and-unknown, image-only, or duplicate. It makes NO claim about whether unsampled documents contain stories. The story count (76) is the number of stories v3.2 could confirm or probabilistically chain from surveys (72 from v3.1 plus 4 new). Further stories may emerge from unsampled material; their number is unknown.",
-  "unmapped_remainder_markdown": "- **Image-only, unmappable from text: ~70,000 docs**\n  (DS9 53,822; DS10 ~10,086; DS11 2,780; DS1/DS2/DS5\n  photo strata; DS8 ~85). Their stories, if any, live in\n  the pictures — not in this atlas.\n- **Duplicates, not new stories:** DS9↔DS11 email\n  duplicates; HO internal duplicates (19,626 pages ≥800\n  chars → 19,314 distinct texts, 307 duplicate groups);\n  Barak internal duplicates (43,322 rows → 31,704 canonical messages\n  in v3.0, WS2 — the v2.1 stored-hash figure 34,801 was inflated by a\n  pipeline entity-decoding artifact; Hyperion adds 5 messages to main,\n  part01 adds 11, parts 02/03 add 11);\n  DS11 internal mailbox-export duplicates (e.g. Jun 14,\n  2014 Wexner note at EFTA02357422 and EFTA02358529).\n- **Bulk material examined in samples that fits no arc\n  under the definition:** routine staff/aviation/household\n  correspondence (DS11 is mostly this), newsletters and\n  alerts (RelSci alone: 491 main + 82 part01 Barak rows),\n  single filings, calendar alerts, mega-statement runs\n  with no arc (Amex Epstein 9,824 pp.; Bear Stearns\n  632 pp.), 917 DS10 \"STATEMENT OF ACCOUNT\" docs (chained by account in v3.2, WS1), 1,632 DS10 FEDWIRE docs (chained by beneficiary\n  account in v3.0, WS3), 3,906 HO jeevacation pages, 3,534\n  short/cover/fragment HO pages, phone-record and\n  evidence-inventory bulks (DS4, DS12). Bulk material NOT\n  examined is unknown, not arc-free.\n- **Sampled, not censused:** DS9 (≤3,240 capped hit rows,\n  zero docs read in full), DS11 (~700 docs surfaced in v1 +\n  4,130-doc late-Bates cluster inventoried in v3.0),\n  DS10 (~300 snippet rows + ~35 distinct cited docs in v1 +\n  1,632 FEDWIRE docs inventoried and chained in v3.0), HO\n  (~250–280 pages read), Barak (sweep-and-anchor pass, ~70 rows\n  body-read in v1 + ~35 in v3.0 WS2). The unsampled majority is\n  UNMAPPED, not \"story-free.\"\n  DS8 in v2.0: full metadata inventory done; ~3,170 examined at opening depth or better (v2.0 ~2,820 + v3.2 WS2 ~350 new); ~7,420 not examined beyond metadata (mostly routine SDNY emails + placeholders) —\n  content unknown, not story-free. DS8 was the manageable\n  full-pass target (10,594 docs, completable in one pass,\n  unlike DS9/DS11) — it is NOT the largest unmapped block in\n  absolute terms: DS9's unsampled remainder (≥528,042) and\n  DS11's (≈328,000) are far larger. DS11's late-Bates\n  EFTA0272xxxx–0273xxxx cluster was re-swept in v3.0 (WS1: 4,130 docs\n  inventoried, 4,092 examined at opening depth or better, 56 read in\n  full; DS11 outside the cluster, ~327,500 docs, remains unmapped\n  except for v1's ~700 surfaced docs). Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid.\n- **Indexed in v3.0 (WS2):** IA Barak parts 02/03 (5,791 rows;\n  11 truly new messages). **Resolved in v3.2 (WS3):** Barak pre-2013 mailbox inventoried (2,299 dated main rows); Tiomkin/AT Global resolved as an investigated non-story (a 2010–2016 press-forward channel; the one \"Epstein\" hit is Jason Epstein, a different person); Bendheim/PHC resolved (2 new stories/fragments + the misfiled-forward cluster). **Still unmapped:** SAIL attachments (MOU/Agreement drafts); the DS11 Sep-2012 sweep; Nowforce follow-through outside the mailbox; Barak attachments (PDF/DOC/images) in any part.\n\n- **v3.2 sweep remainders (v3.3 candidates):** NONPROSECUTION 95.0% unsampled (2,495 of 2,627; the 5.0% sample yielded 9+ legs); FIRSTBANK 79.9% unsampled (521 of 652; the 20.1% sample yielded the P9 leg and two P40 legs); BARAK 470 non-co-token docs not individually read; DS8 ~7,420 metadata-only docs remain (machine-clustered, not eye-read).",
-  "coverage_headline": "Coverage tables retain historical survey figures. See coverage_markdown_basis and the v3.4 entries for later survey scope and limitations; no cumulative v3.4 coverage percentage is asserted.",
-  "coverage_markdown_basis": "The supplied Markdown coverage table retains v3.0/v3.2 figures. It is historical, not a complete v3.4 cumulative coverage accounting. Later surveys and limitations are described in the v3.4 story entries. No current cumulative coverage percentage is supplied."
+  "coverage_markdown": "Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid; the table says so instead of forcing false precision. \"Unsampled remainder\" means NOT\nEXAMINED, CONTENT UNKNOWN — never \"story-free.\" A slice\nwhose method was capped FTS sweeps cannot distinguish \"no\nstory\" from \"story not yet found\" in its unsampled remainder.\n\n| Set | Docs total | Sampled or anchored (method) | Image-only, unmappable from text | Unsampled remainder (not examined) |\n|---|---|---|---|---|\n| DS1–7 + DS12 | 4,253 | ~75 read directly (all DS6+DS7, DS3 largest caption docs, DS4/DS12 anchors, speckle checks) + full metadata inventory of all docs in the group | ≥3,216 no-text (3,301 for DS1–8+12 combined, less DS8 ~85); speckle-text photo docs in DS1/DS2/DS5 add uncounted unmappable | ~4,178 not read directly |\n| DS8 | 10,594 (29,348 pages) | Inventory and expanded survey in v2.0: full metadata inventory of all 10,594 docs; ~2,820 examined at opening depth or better (A ~300, B all 2,110 first-600-char openings + 59 Bates-led reads, C ~120, D ~163, E ~130); ~200 read in full, ~300 more in substantial part/excerpt; ~150 FTS sweep terms per range in places v3.5 WS1: +514 examined at opening depth or better (126 read in full); cumulative ~3,676 examined. | ~85 (99.2% with text) | ~6,918 not examined beyond metadata (v3.5 WS1 estimate; content unknown, never story-free) |\n| DS9 | 531,282 (1,223,777 pages) | ≤3,240 capped FTS hit rows (upper bound, NOT a distinct-doc count; distinct sampled IDs fewer, never deduplicated); 0 docs read in full; 15 anchor docs verified for existence/size only, content reused from prior findings | 53,822 exact (10.1%; EFTA011xxxxx 21,953 + EFTA012xxxxx 16,079) | At least 528,042 never even a sampled hit row; sampled-but-unchained remainder likewise unmapped |\n| DS10 | 503,154 (950,101 pages; 493,068 with text) | FEDWIRE chaining in v3.0 (WS3): 1,632 FEDWIRE docs inventoried (7,312 pp.); 161 FirstBank advice instances enumerated advice-by-advice (v3.2 WS4 correction: 170); 1,761 NC-bearing statement lines parsed (345 counterparties; v3.3 WS4 correction: 1,852 genuine occurrences, LSJ lines 316 → 329); ~110 docs examined at opening depth or better; 12 read in full; ~40 verification reads. 917 'STATEMENT OF ACCOUNT' docs connected by counts only in v3.0; chained by account in v3.2 WS1 (20,425 pp.; 1 new probable story, 9 extensions, 10 fragments) | ~10,086 (503,154 − 493,068; 20/20 no-text sample = 1-page, 1-image, Bates-only) | Effectively the whole slice minus the chained FEDWIRE population and ~35 cited docs; the ~330 smaller-counterparty chains beyond F-WS3-15 inventory, and the ~10,086 no-text docs (the 917 statements are now chained, v3.2 WS1) |\n| DS11 | 331,655 (517,382 pages) | ~700 distinct docs surfaced, ~100 read closely, ~60 anchored (v1) + v3.0 late-Bates re-sweep (WS1): 4,130-doc cluster EFTA02720000–02730262 inventoried; 4,092 examined at opening depth or better (100% of with-text docs); 56 read in full or substantial part; 44 FTS terms × 11 windows v3.5 WS2: P45 Spinella remainder — 802 of 2,140 examined at opening depth or better (216 read in full); 1,338 remain unexamined. | 2,780 (99.2% with text) | ~327,500 docs outside the late-Bates cluster remain unmapped except for v1's ~700 surfaced docs; the 38 no-text docs in the cluster and the 88 victim-list spreadsheet pages (headers only, by design) are characterized, not surveyed |\n| House Oversight | 23,160 pages | ~250–280 pages directly read (94 part-opening reads + ~90 direct anchor reads + reused 94-page dedup sample); everything else is FTS-tally evidence, NOT read evidence. v3.2 WS5 assessment: +231 systematic + 41 targeted pages read; 0 HO-only stories found; full pass NOT launched | Not applicable in the same way (pages, not docs); 3,534 sub-800-char pages + 51 zero-char pages are fragment/cover material | ~22,600 pages not directly read (approximation only; v3.2 adds 272 pages read) |\n| Barak mailbox | 43,322 rows → 31,704 canonical messages (main 31,718 + Hyperion 1,621 + part01 4,192 + part02 3,979 + part03 1,812) | Sweep-and-anchor pass (~45 FTS terms across all DBs, top-sender/subject scans); ~70 anchor rows body-read in full (v1) + v3.0 WS2 survey of parts 02/03 (~80 sweep terms, ~35 anchor rows body-read). IA Barak parts 02/03 INDEXED in v3.0 (5,791 rows; 11 truly new messages) | Not applicable (rows are emails, not scanned pages); 8,942 rows (20.6%) undated across all five DBs | v3.2 WS3: pre-2013 mailbox inventoried (2,299 dated main rows) + 2 new probable stories (Sep 2012 arrangement; Bendheim/Nowforce) + SAIL/SPIEF main-DB follow-ups closed; Tiomkin/AT Global resolved as an investigated non-story; Bendheim/PHC resolved (the 198-row \"I'm downstairs\" cluster is one misfiled forward duplicated); attachments (PDF/DOC/images) not indexed in any part; mailbox dated range ends 2016-02-15; DS11 Sep-2012 sweep still owed |\n\n**Coverage headline (v3.2):** Atlas v3.2 surveys a small, stated fraction of the corpus (anchored documents now numbering in the high hundreds, plus the DS11 late-Bates inventory and expanded survey, the DS10 FEDWIRE chaining and statement chaining, the Barak parts 02/03 indexing, and the pre-2013 mailbox inventory) and labels everything else unsampled-and-unknown, image-only, or duplicate. It makes NO claim about whether unsampled documents contain stories. The story count (76) is the number of stories v3.2 could confirm or probabilistically chain from surveys (72 from v3.1 plus 4 new). Further stories may emerge from unsampled material; their number is unknown.",
+  "coverage_markdown_basis": "The supplied Markdown coverage table retains historical v3.0/v3.2 accounting. Use coverage_v38 for the latest reported survey; it is not a complete cumulative corpus census.",
+  "unmapped_remainder_markdown": "- **Image-only, unmappable from text: ~70,000 docs**\n  (DS9 53,822; DS10 ~10,086; DS11 2,780; DS1/DS2/DS5\n  photo strata; DS8 ~85). Their stories, if any, live in\n  the pictures — not in this atlas.\n- **Duplicates, not new stories:** DS9↔DS11 email\n  duplicates; HO internal duplicates (19,626 pages ≥800\n  chars → 19,314 distinct texts, 307 duplicate groups);\n  Barak internal duplicates (43,322 rows → 31,704 canonical messages\n  in v3.0, WS2 — the v2.1 stored-hash figure 34,801 was inflated by a\n  pipeline entity-decoding artifact; Hyperion adds 5 messages to main,\n  part01 adds 11, parts 02/03 add 11);\n  DS11 internal mailbox-export duplicates (e.g. Jun 14,\n  2014 Wexner note at EFTA02357422 and EFTA02358529).\n- **Bulk material examined in samples that fits no arc\n  under the definition:** routine staff/aviation/household\n  correspondence (DS11 is mostly this), newsletters and\n  alerts (RelSci alone: 491 main + 82 part01 Barak rows),\n  single filings, calendar alerts, mega-statement runs\n  with no arc (Amex Epstein 9,824 pp.; Bear Stearns\n  632 pp.), 917 DS10 \"STATEMENT OF ACCOUNT\" docs (chained by account in v3.2, WS1), 1,632 DS10 FEDWIRE docs (chained by beneficiary\n  account in v3.0, WS3), 3,906 HO jeevacation pages, 3,534\n  short/cover/fragment HO pages, phone-record and\n  evidence-inventory bulks (DS4, DS12). Bulk material NOT\n  examined is unknown, not arc-free.\n- **Sampled, not censused:** DS9 (≤3,240 capped hit rows,\n  zero docs read in full), DS11 (~700 docs surfaced in v1 +\n  4,130-doc late-Bates cluster inventoried in v3.0),\n  DS10 (~300 snippet rows + ~35 distinct cited docs in v1 +\n  1,632 FEDWIRE docs inventoried and chained in v3.0), HO\n  (~250–280 pages read), Barak (sweep-and-anchor pass, ~70 rows\n  body-read in v1 + ~35 in v3.0 WS2). The unsampled majority is\n  UNMAPPED, not \"story-free.\"\n  DS8 in v2.0: full metadata inventory done; ~3,676 examined at opening depth or better (v2.0 ~2,820 + v3.2 WS2 ~350 new + v3.5 WS1 ~514 new); ~6,918 not examined beyond metadata (v3.5 WS1 estimate) (mostly routine SDNY emails + placeholders) —\n  content unknown, not story-free. DS8 was the manageable\n  full-pass target (10,594 docs, completable in one pass,\n  unlike DS9/DS11) — it is NOT the largest unmapped block in\n  absolute terms: DS9's unsampled remainder (≥528,042) and\n  DS11's (≈328,000) are far larger. DS11's late-Bates\n  EFTA0272xxxx–0273xxxx cluster was re-swept in v3.0 (WS1: 4,130 docs\n  inventoried, 4,092 examined at opening depth or better, 56 read in\n  full; DS11 outside the cluster, ~327,500 docs, remains unmapped\n  except for v1's ~700 surfaced docs). Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid.\n- **Indexed in v3.0 (WS2):** IA Barak parts 02/03 (5,791 rows;\n  11 truly new messages). **Resolved in v3.2 (WS3):** Barak pre-2013 mailbox inventoried (2,299 dated main rows); Tiomkin/AT Global resolved as an investigated non-story (a 2010–2016 press-forward channel; the one \"Epstein\" hit is Jason Epstein, a different person); Bendheim/PHC resolved (2 new stories/fragments + the misfiled-forward cluster). **Still unmapped:** SAIL attachments (MOU/Agreement drafts); the DS11 Sep-2012 sweep; Nowforce follow-through outside the mailbox; Barak attachments (PDF/DOC/images) in any part.\n\n- **v3.2 sweep remainders (v3.3 candidates):** NONPROSECUTION 95.0% unsampled (2,495 of 2,627; the 5.0% sample yielded 9+ legs); FIRSTBANK 79.9% unsampled (521 of 652; the 20.1% sample yielded the P9 leg and two P40 legs); BARAK 470 non-co-token docs not individually read; DS8 ~6,918 metadata-only docs remain (v3.5 WS1 estimate; machine-clustered, sampled, not eye-read in full)."
 }
