@@ -5,7 +5,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import json,re,html
 ROOT=Path(__file__).resolve().parents[1]
-TITLES={"EFTA02300238":"Hoffman’s November 2014 Travel Planning","EFTA02346686":"Summers island-weekend invitation"}
+TITLES={"EFTA02300238":"Hoffman Travel Planning","EFTA02346686":"Summers Weekend Invitation"}
 p=ROOT/'content/identifier-dossiers.json'
 reg=json.loads(p.read_text())
 changed=[]
@@ -29,7 +29,14 @@ for identifier,title in TITLES.items():
  for n,line in enumerate(textwrap.wrap(identifier+' — '+title,width=42)):
   draw.text((65,170+n*65),line,font=font,fill='#f2eadc')
  im.save(ROOT/'assets/identifier-cards'/(identifier+'.png'),optimize=True)
-for p in [ROOT/'archive.html',ROOT/'archive/ids.html']:
+metadata=ROOT/'content/reader-editorial-metadata.mjs'
+s=metadata.read_text();prefix=s[:s.index('{')];data=json.loads(s[s.index('{'):].strip().rstrip(';'))
+for identifier,title in TITLES.items():
+ key='https://grokarchivehub.com/archive/'+identifier
+ data[key]['title']=identifier+': '+title
+ data[key]['description']=identifier+': '+title+'. Read the source, document context and limits of what this record establishes.'
+metadata.write_text(prefix+json.dumps(data,ensure_ascii=False,indent=2)+';\n')
+for p in [ROOT/'archive.html',*sorted((ROOT/'archive').glob('*.html'))]:
  s=p.read_text()
  for identifier,title in TITLES.items():
   s=re.sub(r'(<a[^>]*href="/archive/'+identifier+r'"[^>]*>)[^<]*(</a>)',lambda m:m[1]+identifier+' — '+html.escape(title)+m[2],s)
