@@ -241,7 +241,7 @@ export const READER_EDITORIAL_METADATA = {
   },
   "https://grokarchivehub.com/archive/EFTA02300238": {
     "title": "EFTA02300238: Hoffman Travel Planning",
-    "description": "A November 2014 email forwards pilot and customs arrangements for a proposed trip involving Reid Hoffman. Planning is not proof of boarding."
+    "description": "EFTA02300238: Hoffman Travel Planning. Read the source, document context and limits of what this record establishes."
   },
   "https://grokarchivehub.com/archive/EFTA02332402": {
     "title": "EFTA02332402: Maxwell’s Travel Coordination",
@@ -252,8 +252,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA02338119: Musk’s Proposed Holiday Visit. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA02346686": {
-    "title": "EFTA02346686: Barak’s December 2014 Trip",
-    "description": "Read EFTA02346686: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02346686: Summers Weekend Invitation",
+    "description": "EFTA02346686: Summers Weekend Invitation. Read the source, document context and limits of what this record establishes."
   },
   "https://grokarchivehub.com/archive/EFTA02596796": {
     "title": "EFTA02596796: Barak’s December 2014 Trip",

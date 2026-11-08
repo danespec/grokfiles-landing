@@ -12,6 +12,7 @@ const decode=s=>s.replace(/&amp;/g,'&').replace(/&#39;|&#x27;/g,"'").replace(/&q
 for(const e of reg.entries){
  const r=await worker.fetch(new Request('https://grokarchivehub.com/archive/'+e.id),env);assert.equal(r.status,200);
  const h=await r.text(),main=h.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)[1];
+ if(['EFTA02300238','EFTA02346686'].includes(e.id))assert.ok(h.includes('<title>'+e.id+': '+e.title+' | Grok Archive Hub</title>'),e.id+' runtime metadata matches corrected subject');
  const headings=[...main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map(m=>decode(m[1].replace(/<[^>]+>/g,'')));
  assert.deepEqual(headings,order.filter(title=>headings.includes(title)),e.id);for(const title of order.filter(title=>title!=='What the record supports'))assert.ok(headings.includes(title),e.id+' missing '+title);assert.match(main,/id="where-cited"/);
  assert.doesNotMatch(main,/on this indexable page|ASCEND evidence context|Read the source review/);
