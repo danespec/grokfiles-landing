@@ -133,3 +133,4 @@ print('Rebuilt archive and',len(entries),'dossiers;',social_count,'social source
 # Normalize the legacy bodies after reconstructing source-specific content.
 import sys
 subprocess.run([sys.executable,str(repo/"scripts/normalize_legacy_dossiers_20261027.py")],check=True)
+subprocess.run([sys.executable,str(repo/"scripts/repair_dossier_consistency_20261108.py")],check=True)

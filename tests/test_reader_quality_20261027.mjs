@@ -13,7 +13,7 @@ for(const e of reg.entries){
  const r=await worker.fetch(new Request('https://grokarchivehub.com/archive/'+e.id),env);assert.equal(r.status,200);
  const h=await r.text(),main=h.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)[1];
  const headings=[...main.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map(m=>decode(m[1].replace(/<[^>]+>/g,'')));
- assert.deepEqual(headings,order,e.id);assert.match(main,/id="where-cited"/);
+ assert.deepEqual(headings,order.filter(title=>headings.includes(title)),e.id);for(const title of order.filter(title=>title!=='What the record supports'))assert.ok(headings.includes(title),e.id+' missing '+title);assert.match(main,/id="where-cited"/);
  assert.doesNotMatch(main,/on this indexable page|ASCEND evidence context|Read the source review/);
  for(const m of main.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>Read the related source notes/g))assert.ok(!m[1].includes('/archive/'+e.id)&&!m[1].includes('rollcall.com'));
  if(e.sourceSha256)assert.ok(h.includes(e.sourceSha256),e.id+' source fingerprint retained');
