@@ -1,3 +1,11 @@
+Story Atlas v3.82 — current DS8 scope
+
+82 mapped stories; 139 fragments; 2,458 story-anchor references across all sets. Surveyed counts, not a corpus census.
+
+Partial queue: 4,167 = 3,899 condensed text-layer reads + 82 opening-only reads + four structure scans + 55 near-duplicates + 127 bulk items dropped after earlier screening. Image queue: 223 lower-confidence OCR reads + 165 placeholders = 388. The queues overlap by 86 IDs. Two capped skips characterized; 66 Amex/mega documents, HO full pass and DS9 torrent deferred. DS8 is not fully read. OCR-dependent details require image confirmation; EFTA00032184 remains unreadable.
+
+Historical coverage table follows. Older DS8 estimates below are superseded by the current accounting above; do not add them together.
+
 Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid; the table says so instead of forcing false precision. "Unsampled remainder" means NOT
 EXAMINED, CONTENT UNKNOWN — never "story-free." A slice
 whose method was capped FTS sweeps cannot distinguish "no
@@ -15,7 +23,7 @@ story" from "story not yet found" in its unsampled remainder.
 
 **Coverage headline (v3.2):** Atlas v3.2 surveys a small, stated fraction of the corpus (anchored documents now numbering in the high hundreds, plus the DS11 late-Bates inventory and expanded survey, the DS10 FEDWIRE chaining and statement chaining, the Barak parts 02/03 indexing, and the pre-2013 mailbox inventory) and labels everything else unsampled-and-unknown, image-only, or duplicate. It makes NO claim about whether unsampled documents contain stories. The story count (76) is the number of stories v3.2 could confirm or probabilistically chain from surveys (72 from v3.1 plus 4 new). Further stories may emerge from unsampled material; their number is unknown.
 
-## Unmapped remainder (honest accounting, corrected)
+## Historical unmapped remainder
 
 - **Image-only, unmappable from text: ~70,000 docs**
   (DS9 53,822; DS10 ~10,086; DS11 2,780; DS1/DS2/DS5
