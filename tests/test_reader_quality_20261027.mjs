@@ -80,6 +80,7 @@ const laterEditorial=[
  'https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026',
  'https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026',
  'https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026',
+ 'https://grokarchivehub.com/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026',
  'https://grokarchivehub.com/news/house-oversight-majority-epstein-maxwell-report-november-10-2026',
 ];
 const baselineEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).map(r=>r.url);
