@@ -56,6 +56,8 @@ try {
  check('history pageview carries previous internal referrer',()=>assert(pv[1][2].page_referrer.includes('/archive/EFTA00035613')));
  await f.page.evaluate(()=>history.replaceState({},'',location.href+'#section'));
  check('hash-only changes do not duplicate views',()=>{});assert.equal((await f.events('page_view')).length,2);
+ await f.page.evaluate(()=>{history.replaceState({},'',location.pathname+'?gah_debug=1&gtm_debug=123&fc=alwaysshow&fctype=gdpr');history.replaceState({},'',location.pathname);});
+ check('Tag Assistant and CMP URL cleanup do not duplicate views',()=>{});assert.equal((await f.events('page_view')).length,2);
  await f.page.getByRole('button',{name:'Privacy choices',exact:true}).click();await f.page.getByRole('checkbox',{name:'Analytics storage',exact:true}).uncheck();await f.page.getByRole('button',{name:'Save',exact:true}).click();
  await f.page.evaluate(()=>{GAHAnalytics.event('evidence_engagement',{});history.pushState({},'','/search');});
  check('withdrawal prevents subsequent events',()=>{});assert.equal((await f.events('page_view')).length,2);assert.equal((await f.events('evidence_engagement')).length,0);

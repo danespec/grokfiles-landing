@@ -81,8 +81,15 @@
     state('tag-loading');
     document.head.appendChild(script);
   }
+  function navigationKey(value) {
+    var u = new URL(value);
+    u.hash = '';
+    // Diagnostic and CMP URL cleanup does not represent another content navigation.
+    ['gah_debug', 'gtm_debug', 'gtm_preview', 'gtm_auth', 'fc', 'fctype'].forEach(function (key) { u.searchParams.delete(key); });
+    return u.href;
+  }
   function navigate() {
-    if (new URL(location.href).href.split('#')[0] === new URL(current).href.split('#')[0]) return;
+    if (navigationKey(location.href) === navigationKey(current)) { current = location.href; return; }
     previous = current; current = location.href; navigation++; pageview();
   }
   ['pushState', 'replaceState'].forEach(function (method) {
