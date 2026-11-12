@@ -15,6 +15,3 @@ ACCESS_AUD = ""
 ACCESS_OWNER_EMAIL = ""
 CF_ACCOUNT_ID = ""
 # ANALYTICS_READ_TOKEN must be a server-side secret (Analytics:Read only).
-
-[limits]
-cpu_ms = 10
