@@ -307,20 +307,7 @@
   }
 
   function loadGoogleTagIfAllowed(consent) {
-    var boot = window.GAH_CONSENT_BOOT || {};
-    var host = String(location.hostname || "").toLowerCase();
-    var prod = host === "grokarchivehub.com" || host.endsWith(".grokarchivehub.com");
-    if (!prod) return;
-    if (!boot.googleTagEnabled || !boot.ga4MeasurementId) return;
-    if (!consent || consent.analytics_storage !== "granted") return;
-    if (document.querySelector("script[data-gah-google-tag]")) return;
-    var script = document.createElement("script");
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(boot.ga4MeasurementId);
-    script.setAttribute("data-gah-google-tag", "true");
-    document.head.appendChild(script);
-    window.gtag("js", new Date());
-    window.gtag("config", boot.ga4MeasurementId, { send_page_view: true });
+    if (window.GAHAnalytics) window.GAHAnalytics.applyConsent(consent);
   }
 
   function applyConsent(consent) {
@@ -456,6 +443,7 @@
   }
 
   function initConsent() {
+    if ((window.GAH_CONSENT_BOOT || {}).unifiedConsent) return;
     var stored = readStoredConsent();
     if (stored && stored.consent) {
       applyConsent(stored.consent);

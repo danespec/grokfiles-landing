@@ -1,7 +1,10 @@
 (function () {
   "use strict";
+  if (window.GAHConsent) return;
 
   var STORAGE_KEY = "gah_consent_v1";
+  var sessionConsent = null;
+  var cmpDecisionReady = false, cmpNotApplicable = false;
   var DEFAULT_CONSENT = {
     analytics_storage: "denied",
     ad_storage: "denied",
@@ -36,10 +39,11 @@
 
   function readStoredConsent() {
     try {
-      var raw = window.localStorage.getItem(STORAGE_KEY);
+      var cookie = document.cookie.split('; ').find(function (v) { return v.indexOf('gah_consent_shared_v1=') === 0; });
+      var raw = cookie ? decodeURIComponent(cookie.slice('gah_consent_shared_v1='.length)) : window.localStorage.getItem(STORAGE_KEY);
       if (!raw) return null;
       var parsed = JSON.parse(raw);
-      if (!parsed || parsed.version !== 1 || !parsed.choice) return null;
+      if (!parsed || parsed.version !== 1 || !parsed.choice || !Number.isFinite(Date.parse(parsed.updated_at)) || Date.now() - Date.parse(parsed.updated_at) > 15552000000) return null;
       return parsed;
     } catch (_) {
       return null;
@@ -48,12 +52,14 @@
 
   function writeStoredConsent(choice, consent) {
     try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      var record = JSON.stringify({
         version: 1,
         choice: choice,
         consent: consent,
         updated_at: new Date().toISOString()
-      }));
+      });
+      try { window.localStorage.setItem(STORAGE_KEY, record); } catch (_) {}
+      if (/^(?:www\.)?grokarchivehub\.com$|^wiki\.grokarchivehub\.com$/.test(location.hostname)) document.cookie = 'gah_consent_shared_v1=' + encodeURIComponent(record) + '; Max-Age=15552000; Path=/; Domain=grokarchivehub.com; Secure; SameSite=Lax';
     } catch (_) {
       return false;
     }
@@ -62,37 +68,20 @@
 
   function applyConsent(consent) {
     var next = Object.assign({}, DEFAULT_CONSENT, consent || {});
-    window.gtag("consent", "update", next);
+    sessionConsent = next;
+    // One runtime owns tag configuration, consent updates and pageviews.
     document.documentElement.dataset.gahConsent = JSON.stringify(next);
     loadGoogleTagIfAllowed(next);
     window.dispatchEvent(new CustomEvent("gah:consent:update", { detail: next }));
   }
 
   function loadGoogleTagIfAllowed(consent) {
-    var boot = window.GAH_CONSENT_BOOT || {};
-    var hostname = String(
-      window.location.hostname || ""
-    ).toLowerCase();
-    var productionHost =
-      hostname === "grokarchivehub.com"
-      || hostname.endsWith(".grokarchivehub.com");
-
-    if (!productionHost) return;
-    if (!boot.googleTagEnabled || !boot.ga4MeasurementId) return;
-    if (!consent || consent.analytics_storage !== "granted") return;
-    if (document.querySelector("script[data-gah-google-tag]")) return;
-    var script = document.createElement("script");
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(boot.ga4MeasurementId);
-    script.setAttribute("data-gah-google-tag", "true");
-    document.head.appendChild(script);
-    window.gtag("js", new Date());
-    window.gtag("config", boot.ga4MeasurementId, { send_page_view: true });
+    if (window.GAHAnalytics) window.GAHAnalytics.applyConsent(consent);
   }
 
   function currentConsent() {
     var stored = readStoredConsent();
-    return stored && stored.consent ? Object.assign({}, DEFAULT_CONSENT, stored.consent) : Object.assign({}, DEFAULT_CONSENT);
+    return sessionConsent || (stored && stored.consent ? Object.assign({}, DEFAULT_CONSENT, stored.consent) : Object.assign({}, DEFAULT_CONSENT));
   }
 
   function removeDuplicateUi() {
@@ -114,7 +103,7 @@
   function googleCmpPresent() {
     try {
       if (typeof window.__tcfapi === "function") return true;
-      if (window.googlefc && (window.googlefc.callbackQueue || window.googlefc.controlledMessagingFunction)) return true;
+      if (window.googlefc && window.googlefc.controlledMessagingFunction) return true;
       if (document.querySelector('script[src*="fundingchoicesmessages.google.com"], script[src*="fundingchoices"], iframe[src*="fundingchoicesmessages.google.com"]')) return true;
       if (document.documentElement && document.documentElement.getAttribute("data-google-cmp") === "active") return true;
     } catch (_) {}
@@ -123,7 +112,7 @@
 
   function shouldDeferToGoogleCmp() {
     var boot = window.GAH_CONSENT_BOOT || {};
-    if (boot.deferToGoogleCmpWhenPresent === false) return false;
+    if (boot.deferToGoogleCmpWhenPresent === false || !boot.googleCmpAnalyticsEnabled || cmpNotApplicable) return false;
     return googleCmpPresent();
   }
 
@@ -150,7 +139,6 @@
   }
 
   function showReopenControl() {
-    if (shouldDeferToGoogleCmp()) return;
     if (document.querySelector("[data-gah-consent-ui]")) return;
     if (document.querySelector("[data-gah-consent-reopen]")) return;
     var reopen = document.createElement("button");
@@ -228,7 +216,10 @@
   }
 
   function showSettings() {
-    if (shouldDeferToGoogleCmp()) return;
+    if (shouldDeferToGoogleCmp()) {
+      window.googlefc.callbackQueue.push({CONSENT_API_READY: function () { window.googlefc.showRevocationMessage(); }});
+      return;
+    }
     closeConsentUi();
     var current = currentConsent();
     var panel = document.createElement("section");
@@ -262,15 +253,7 @@
   function sendAnalyticsEvent(name, params) {
     if (!consentForAnalytics()) return;
     try {
-      var eventId = (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : String(Date.now()) + Math.random();
-      var body = {
-        event_name: name,
-        event_id: eventId,
-        route: window.location.pathname,
-        consent: currentConsent(),
-        params: Object.assign({ route: window.location.pathname, event_id: eventId }, params || {})
-      };
-      navigator.sendBeacon && navigator.sendBeacon("/api/analytics/event", new Blob([JSON.stringify(body)], { type: "application/json" }));
+      if (window.GAHAnalytics) window.GAHAnalytics.event(name, params || {});
     } catch (_) {
       return;
     }
@@ -316,7 +299,36 @@
     }
   });
 
-  applyConsent(currentConsent());
+  window.googlefc = window.googlefc || {};
+  window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+  function syncGoogleConsent() {
+    var fc = window.googlefc;
+    if (typeof fc.getGoogleConsentModeValues !== 'function' || !fc.ConsentModePurposeStatusEnum) return;
+    var value = fc.getGoogleConsentModeValues(), types = fc.ConsentModePurposeStatusEnum;
+    var status = value.analyticsStoragePurposeConsentStatus;
+    if (status === types.CONSENT_MODE_PURPOSE_STATUS_NOT_APPLICABLE || status === types.CONSENT_MODE_PURPOSE_STATUS_NOT_CONFIGURED) {
+      cmpNotApplicable = true;
+      applyConsent(currentConsent());
+      if (!readStoredConsent()) showBanner();
+      showReopenControl();
+      return;
+    }
+    if (status !== types.CONSENT_MODE_PURPOSE_STATUS_GRANTED && status !== types.CONSENT_MODE_PURPOSE_STATUS_DENIED) return;
+    cmpDecisionReady = true;
+    persistChoice('partial', {
+      analytics_storage: status === types.CONSENT_MODE_PURPOSE_STATUS_GRANTED ? 'granted' : 'denied',
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
+    });
+  }
+  window.googlefc.callbackQueue.push({ CONSENT_MODE_DATA_READY: syncGoogleConsent });
+  window.googlefc.callbackQueue.push({ CONSENT_API_READY: function () {
+    if (typeof window.__tcfapi !== 'function') return;
+    window.__tcfapi('addEventListener', 2, function (data, success) {
+      if (success && data && data.eventStatus === 'useractioncomplete') window.googlefc.callbackQueue.push({CONSENT_MODE_DATA_READY: syncGoogleConsent});
+    });
+  }});
+
+  applyConsent(shouldDeferToGoogleCmp() && !cmpDecisionReady ? DEFAULT_CONSENT : currentConsent());
   if (!readStoredConsent()) showBanner();
   showReopenControl();
   installCtaTracking();
@@ -334,7 +346,8 @@
   if (typeof MutationObserver === "function") {
     var cmpWatch = new MutationObserver(function () {
       if (!shouldDeferToGoogleCmp()) return;
-      document.querySelectorAll("[data-gah-consent-ui], [data-gah-consent-reopen]").forEach(function (node) {
+      if (!cmpDecisionReady) applyConsent(DEFAULT_CONSENT);
+      document.querySelectorAll("[data-gah-consent-ui]").forEach(function (node) {
         node.remove();
       });
       updateConsentReserve();
@@ -347,6 +360,7 @@
     current: currentConsent,
     reset: function () {
       try { window.localStorage.removeItem(STORAGE_KEY); } catch (_) {}
+      document.cookie = 'gah_consent_shared_v1=; Max-Age=0; Path=/; Domain=grokarchivehub.com; Secure; SameSite=Lax';
       applyConsent(DEFAULT_CONSENT);
       showBanner();
     },
