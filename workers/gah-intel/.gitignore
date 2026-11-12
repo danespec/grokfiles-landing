@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars*
+wrangler.production.toml
+*.png
+__pycache__/
+*.pyc
