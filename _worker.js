@@ -1,6 +1,7 @@
 import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { readerQualityResponse, publicationRule } from './reader-quality.mjs';
+import { scheduleObservation } from './workers/gah-intel/src/collector.mjs';
 
 const GAH_TRENDING_SLOT = "<!-- GAH-TRENDING-001 -->";
 const GAH_TRENDING_KV_KEY = "gah:public:trending:topics:v1";
@@ -18577,9 +18578,17 @@ export default {
     ctx.waitUntil(phangRunInternalScheduledIngest(env).catch(() => undefined));
   },
 
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     // STAGING-HARDEN-001: all staging responses carry privacy headers.
-    return applyStagingPrivacyHeaders(await readerQualityResponse(await this.handleStagingFetch(request, env), request, [...GAH_IDENTIFIER_DOSSIERS.values()]), env);
+    const started = Date.now();
+    try {
+      const response = applyStagingPrivacyHeaders(await readerQualityResponse(await this.handleStagingFetch(request, env), request, [...GAH_IDENTIFIER_DOSSIERS.values()]), env);
+      scheduleObservation(ctx, request, response, env, started);
+      return response;
+    } catch (error) {
+      scheduleObservation(ctx, request, new Response(null, { status: 500 }), env, started);
+      throw error;
+    }
   },
 
   async handleStagingFetch(request, env) {

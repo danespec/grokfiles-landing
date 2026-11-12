@@ -1,0 +1,17 @@
+name = "gah-intel"
+main = "src/worker.mjs"
+compatibility_date = "2026-11-12"
+workers_dev = false
+preview_urls = false
+
+# No routes until the owner-only Access application is verified.
+# Add custom domain intel.grokarchivehub.com only during the approved release.
+[observability]
+enabled = false
+
+[vars]
+ACCESS_TEAM_DOMAIN = ""
+ACCESS_AUD = ""
+ACCESS_OWNER_EMAIL = ""
+CF_ACCOUNT_ID = ""
+# ANALYTICS_READ_TOKEN must be a server-side secret (Analytics:Read only).

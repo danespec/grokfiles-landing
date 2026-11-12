@@ -1,0 +1,17 @@
+{
+  "name": "gah-private-intel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check:paths": "node scripts/build-public-paths.mjs --check",
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "preview": "node test/preview-server.mjs"
+  },
+  "dependencies": {
+    "jose": "6.1.3"
+  },
+  "devDependencies": {
+    "wrangler": "4.45.2"
+  }
+}
