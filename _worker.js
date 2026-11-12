@@ -7022,7 +7022,7 @@ function consentBootTag(env = {}) {
 }
 
 function consentScriptTag(env = {}) {
-  return `${consentBootTag(env)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-PARITY-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-PARITY-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-PARITY-001"></script>`;
+  return `${consentBootTag(env)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-PARITY-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-PARITY-001.1"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-PARITY-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
