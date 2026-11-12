@@ -1,6 +1,6 @@
 # GAH Intel — private operations dashboard
 
-Status: implemented on a feature branch; no release, DNS, Access, secret, binding, or active monitor changes made.
+Status: live on November 12, 2026, following PR #266 (merge 1029bdd). Initial Pages deployment: 32a57b26-4969-45e5-be3a-b848da57e72c. Standalone dashboard version: ae7f23a4-3a78-4731-a244-680adf42a987. Owner Access, dataset collection and signed monitoring were verified. The observations below describe the pre-release audit; later analytics reconciliation changes are documented in GAH-ANALYTICS-PARITY-001.md.
 
 The dashboard at `intel.grokarchivehub.com` is a separate Worker. The public Pages Worker gains one optional, non-blocking observation hook. Collection requires `GAH_INTEL_ENABLED` to equal `true` and an Analytics Engine binding. Dashboard failures cannot alter public responses.
 

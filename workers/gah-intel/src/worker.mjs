@@ -1,3 +1,4 @@
+import { readReconciliation } from './reconciliation.mjs';
 import { authorize } from './auth.mjs';
 import { queryPlan, readDashboard } from './queries.mjs';
 import { HTML, CSS, JS } from './dashboard.mjs';
@@ -29,6 +30,7 @@ export function createHandler(auth = authorize, read = readDashboard) {
       const [body, type] = assets[url.pathname];
       return reply(request.method === 'HEAD' ? null : body, 200, type);
     }
+    if (url.pathname === '/api/reconciliation') return reply(request.method === 'HEAD' ? null : JSON.stringify(await readReconciliation(env)), 200, 'application/json');
     if (url.pathname !== '/api/dashboard') return reply('Not found', 404);
     let plan;
     try { plan = queryPlan(url.searchParams); } catch { return reply('Invalid dashboard filter', 400); }

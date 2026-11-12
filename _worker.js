@@ -1,3 +1,4 @@
+import { instrumentHtmlResponse } from "./workers/lib/analytics-html.mjs";
 import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { readerQualityResponse, publicationRule } from './reader-quality.mjs';
@@ -6981,12 +6982,13 @@ function adsenseApproved(env = {}) {
   return displayApproved && truthyFlag(env.CMP_ADS_ENABLED);
 }
 
-// Main-site stream; the wiki retains its separate measurement ID.
+// Authoritative main-site stream, verified in GA4 property 525337308 on 2026-11-12.
 const GAH_GA4_MEASUREMENT_ID = "G-XHE84C8D1V";
 
 function googleTagEnabled(env = {}) {
   // STAGING-HARDEN-001: GA4 and advertising integrations are disabled on staging.
   if (isStagingEnv(env)) return false;
+  if (env.GAH_GOOGLE_TAG_ENABLED != null && !truthyFlag(env.GAH_GOOGLE_TAG_ENABLED)) return false;
   return Boolean(
     cleanText(
       env.GA4_MEASUREMENT_ID
@@ -7005,6 +7007,8 @@ function consentBootTag(env = {}) {
   const tagEnabled = googleTagEnabled(env);
   const config = {
     schema: "gah.consent.v2",
+    unifiedConsent: true,
+    googleCmpAnalyticsEnabled: truthyFlag(env.GAH_GOOGLE_CMP_ANALYTICS_ENABLED),
     googleTagEnabled: tagEnabled,
     ga4MeasurementId: tagEnabled ? measurementId : "",
     adsenseApproved: adsenseApproved(env),
@@ -7018,7 +7022,7 @@ function consentBootTag(env = {}) {
 }
 
 function consentScriptTag(env = {}) {
-  return `${consentBootTag(env)}\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-CONSENT-004"></script>`;
+  return `${consentBootTag(env)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-PARITY-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-PARITY-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-PARITY-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
@@ -18582,7 +18586,7 @@ export default {
     // STAGING-HARDEN-001: all staging responses carry privacy headers.
     const started = Date.now();
     try {
-      const response = applyStagingPrivacyHeaders(await readerQualityResponse(await this.handleStagingFetch(request, env), request, [...GAH_IDENTIFIER_DOSSIERS.values()]), env);
+      const response = applyStagingPrivacyHeaders(await instrumentHtmlResponse(await readerQualityResponse(await this.handleStagingFetch(request, env), request, [...GAH_IDENTIFIER_DOSSIERS.values()]), request, consentScriptTag(env)), env);
       scheduleObservation(ctx, request, response, env, started);
       return response;
     } catch (error) {
