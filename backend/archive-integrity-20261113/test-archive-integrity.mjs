@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {createArchiveIntegrity} from './archive-integrity-v1.mjs';
 const digest=createHash('sha256').update('%PDF-fixture').digest('hex');
+function chunkReads(readBytes){return {openSync:()=>({position:0}),readSync:(fd,out,offset,size)=>{let b=readBytes();let n=Math.max(0,Math.min(size,b.length-fd.position));b.copy(out,offset,fd.position,fd.position+n);fd.position+=n;return n;},closeSync:()=>{}};}
 const valid={version:1,pages:{EFTA00000002:{parent_id:'EFTA00000001',page:2,parent_pages:3,parent_pdf_path:'/doj/test/EFTA00000001.pdf',parent_pdf_sha256:digest,verified_bates:true,existing_public_parent:true}},documents:{EFTA00000003:{pdf_path:'/doj/test/EFTA00000003.pdf',sha256:digest,existing_public_dossier:true}}};
-function make(data=valid,missing=()=>false) {return createArchiveIntegrity({isMissing:missing,fs:{readFileSync:p=>p.endsWith('.json')?JSON.stringify(data):Buffer.from('%PDF-fixture'),statSync:()=>({isFile:()=>true,size:12})}});}
+function make(data=valid,missing=()=>false) {return createArchiveIntegrity({isMissing:missing,fs:{...chunkReads(()=>Buffer.from('%PDF-fixture')),readFileSync:p=>p.endsWith('.json')?JSON.stringify(data):Buffer.from('%PDF-fixture'),statSync:()=>({isFile:()=>true,size:12})}});}
 function response(){return {headers:{},setHeader(k,v){this.headers[k.toLowerCase()]=v;},end(b){this.body=b;}};}
 let a=make(),r=response();
 assert.equal(a.handleHttp({method:'GET'},r,new URL('https://grokarchivehub.com/archive/EFTA00000002')),true);
@@ -19,3 +20,5 @@ r=response();assert.equal(a.handleHttp({method:'GET'},r,new URL('https://grokarc
 assert.equal(a.handleHttp({method:'POST'},response(),new URL('https://grokarchivehub.com/archive/EFTA00000002')),false);
 assert.equal(a.source(response(),'EFTA99999999'),false);
 console.log('PASS: truthful page mapping, PDF-only source, source hashes, bounds, missing guards, path containment, canonical/noindex/ad policies, unrelated routes.');
+
+let revision=1,bytes=Buffer.from("%PDF-fixture");const changing=createArchiveIntegrity({isMissing:()=>false,fs:{...chunkReads(()=>bytes),readFileSync:p=>p.endsWith(".json")?JSON.stringify(valid):bytes,statSync:()=>({isFile:()=>true,size:bytes.length,mtimeMs:revision,ctimeMs:revision})}});assert(changing.page("EFTA00000002"));bytes=Buffer.from("%PDF-changed");revision++;assert.equal(changing.page("EFTA00000002"),null);console.log("PASS: changed source files invalidate cached integrity approval.");

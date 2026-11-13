@@ -2,7 +2,7 @@
 
 The archive linked identifier strings from OCR as if each were a standalone document. Some are Bates pages within another PDF. This release adds explicit, verified page mappings without publishing transcripts or expanding archive sitemaps.
 
-- The NAS gateway loads a private reviewed registry. It checks exact file hashes, identifier/path correspondence, bounds and existing missing-source guards. Unknown or changed sources fail closed.
+- The NAS gateway loads a private reviewed registry. It checks exact file hashes, identifier/path correspondence, bounds and existing missing-source guards. File hashing uses fixed-size chunks, and cached approval is invalidated when file size or timestamps change. Unknown or changed sources fail closed.
 - Mapped archive records remain noindex and ad-excluded. Metadata distinguishes a Bates page from a standalone document. PDF requests redirect to the existing parent PDF with its page fragment.
 - The Pages Worker retains its transcript privacy shield and displays only validated parent/page headers from the source gateway.
 - Automatic related links require a resolvable source or a verified mapping. At most 64 unique candidates are checked; there is no request-time corpus scan.
