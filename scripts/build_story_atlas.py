@@ -64,3 +64,7 @@ body=f'''<a class="skip" href="#main">Skip to content</a>
 page='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Story Atlas: 82 Document-Anchored Stories | Grok Archive Hub</title><meta name="description" content="Explore 82 mapped stories and 139 fragments in the Epstein document corpus, with document anchors, confidence tiers, endpoints, and explicit coverage limits."><meta name="robots" content="index,follow"><meta name="gah-ad-eligible" content="false"><meta name="gah-ad-status" content="AD-EXCLUDE"><link rel="canonical" href="https://grokarchivehub.com/atlas/"><meta property="og:title" content="Story Atlas | Grok Archive Hub"><meta property="og:description" content="82 mapped stories. 139 fragments. Follow the document chains and see where the evidence ends."><meta property="og:type" content="website"><meta property="og:url" content="https://grokarchivehub.com/atlas/"><link rel="stylesheet" href="/frontdoor/atlas-v382.css"></head><body>'''+body+'</body></html>'
 (root/'atlas.html').write_text(page)
 print(json.dumps({'stories':len(entries),'confirmed':30,'probable':52,'fragments':139,'json_sha256':hashlib.sha256(data_path.read_bytes()).hexdigest(),'coverage_preserved':True}))
+
+# Keep machine discovery version-aligned with the published data.
+import subprocess, sys
+subprocess.run([sys.executable,str(root/'scripts/build_agent_atlas_catalog.py')],check=True)

@@ -1623,6 +1623,7 @@ const AGENT_READY_ROBOTS_TXT = [
 const AGENT_DISCOVERY_LINK_HEADER = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
   '</openapi.json>; rel="service-desc"; type="application/vnd.oai.openapi+json"',
+  '</llms.txt>; rel="describedby"; type="text/plain"',
   '</auth.md>; rel="author-authorization"; type="text/markdown"',
   '</.well-known/agent-skills/index.json>; rel="service-desc"; type="application/json"',
   '</.well-known/mcp/server-card.json>; rel="service-desc"; type="application/json"',
@@ -2916,8 +2917,14 @@ async function handleGahMcp(request, env) {
     "Cache-Control": "no-store",
     "X-Robots-Tag": "noindex,nofollow"
   };
+  const origin=request.headers.get("Origin");
+  if(origin && origin!=="https://"+APEX_HOST && !(isStagingEnv(env)&&origin===new URL(request.url).origin)) {
+    return new Response(null,{status:403,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
+  }
   if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
   if (request.method !== "POST") return new Response("GAH MCP uses Streamable HTTP POST.", { status: 405, headers: { ...cors, "Allow": "POST, OPTIONS", "Content-Type": "text/plain; charset=utf-8" } });
+  const throttle=await gahSecRateLimit(env,"mcp-public",request,60);
+  if(throttle.limited) return gahAgentJsonResponse(gahMcpError(null,-32600,"Rate limited"),429,{...cors,"Retry-After":"60"});
   const declaredLength = Number(request.headers.get("Content-Length") || 0);
   if (declaredLength > 32768) return gahAgentJsonResponse(gahMcpError(null, -32600, "Request body too large"), 413, cors);
   let body;
@@ -3203,7 +3210,7 @@ const GAH_AGENT_AUDIT_VERSION = "1.0.0";
 const GAH_AGENT_EVENT_SCHEMA = "gah.agent-operation.v1";
 function gahAgentEmitMetric(env, toolName, outcome, started) {
   const knownTools = new Set(gahAllMcpTools().map(tool => tool.name));
-  const allowedRouteTags = new Set(["source_manifest_http", "citation_audit_http", "agent_health_http"]);
+  const allowedRouteTags = new Set(["source_manifest_http", "citation_audit_http", "agent_health_http", "atlas_catalog_http"]);
   const tool = knownTools.has(toolName) || allowedRouteTags.has(toolName) ? toolName : "unknown";
   const elapsed = Math.max(0, Date.now() - started);
   const latencyBucket = elapsed < 100 ? "lt100ms" : elapsed < 500 ? "100-499ms" : elapsed < 2000 ? "500-1999ms" : "ge2000ms";
@@ -3323,6 +3330,9 @@ function gahAgentHealth(){
     version:GAH_AGENT_AUDIT_VERSION,
     endpoints:{
       mcp:"/mcp",
+      atlas_catalog:"/api/v1/stories",
+      atlas_status:"/api/v1/atlas/status",
+      llms:"/llms.txt",
       source_manifest:"/api/research/source-manifest/{manifest_id}",
       citation_audit:"/api/research/citation-audit/{manifest_id}",
       citation_summary:"/evidence-data/agent-citation-quality-081/summary.json"
@@ -3466,10 +3476,92 @@ function gahDynamicMcpServerCard() {
   return JSON.stringify(card, null, 2) + "\n";
 }
 
+// GAH-AI-FUTURE-001: publication-only, bounded Atlas discovery.
+const GAH_LLM_DISCOVERY = `# Grok Archive Hub
+> Independent open-source intelligence and evidence analysis; not a government agency.
+> Cite primary sources and preserve redactions. Association is not guilt.
+## Research
+- [Story Atlas](https://grokarchivehub.com/atlas/): editorial evidence chains, confidence classes, endpoints and limitations.
+- [Atlas catalog](https://grokarchivehub.com/api/v1/stories): bounded public story locators and editorial classifications.
+- [Atlas release status](https://grokarchivehub.com/api/v1/atlas/status): published version and source-data fingerprint.
+- [Investigations](https://grokarchivehub.com/investigations): source-linked dossiers.
+- [Search](https://grokarchivehub.com/search): public archive search.
+- [Editorial policy](https://grokarchivehub.com/editorial-policy): methodology and evidence limitations.
+- [Corrections](https://grokarchivehub.com/corrections): corrections and updates.
+## Machine access
+- [OpenAPI](https://grokarchivehub.com/openapi.json): public read-only API.
+- [API catalog](https://grokarchivehub.com/.well-known/api-catalog): service discovery.
+- [Authentication policy](https://grokarchivehub.com/auth.md): supported access.
+- [MCP server card](https://grokarchivehub.com/.well-known/mcp/server-card.json): read-only research tools.
+- [DOJ source archive](https://www.justice.gov/epstein): official source provenance.
+Retrieval and citation permitted subject to published terms; training not permitted. No private or restricted material.
+`;
+const GAH_ATLAS_API_NOTE = "Editorial chain classification, not a finding of guilt or independent verification. Read the cited story and underlying sources; the catalog does not export narrative, anchors or victim/witness identities.";
+function gahAtlasCatalogHeaders(cache="no-store") {
+  return {"Content-Type":"application/json; charset=utf-8","Cache-Control":cache,"X-Content-Type-Options":"nosniff","X-Robots-Tag":"noindex,follow","Content-Signal":"ai-train=no, search=yes, ai-input=yes","X-GAH-Agent-Readiness":"atlas-catalog-v1","Access-Control-Allow-Origin":"*"};
+}
+async function gahAtlasCatalogHttp(request,env,path) {
+  const started=Date.now();
+  const url=new URL(request.url);
+  const reply=(body,status=200,headers={})=>{
+    gahAgentEmitMetric(env,"atlas_catalog_http",status===200||status===304?"ok":"error",started);
+    return new Response(request.method==="HEAD"||status===304?null:JSON.stringify(body),{status,headers:{...gahAtlasCatalogHeaders(),...headers}});
+  };
+  if(url.hostname!==APEX_HOST && !(isStagingEnv(env)&&url.hostname.endsWith(".pages.dev"))) return reply({error:"not_found"},404);
+  if(!["GET","HEAD"].includes(request.method)) return reply({error:"method_not_allowed"},405,{Allow:"GET, HEAD"});
+  const detail=path.match(/^\/api\/v1\/stories\/(P?[1-9][0-9]{0,5})$/);
+  if(!detail && !["/api/v1/stories","/api/v1/atlas/status"].includes(path)) return reply({error:"not_found"},404);
+  const query=url.searchParams;
+  const allowed=path==="/api/v1/stories"?new Set(["limit","cursor","version"]):new Set();
+  for(const key of query.keys()) if(!allowed.has(key)||query.getAll(key).length!==1) return reply({error:"invalid_query"},400);
+  const lim=query.get("limit")??"20", cur=query.get("cursor")??"0";
+  if(!/^[1-9][0-9]?$/.test(lim)||Number(lim)>50||!/^(0|[1-9][0-9]{0,5})$/.test(cur)) return reply({error:"invalid_pagination"},400);
+  let data;
+  try {
+    const asset=new URL("/atlas/agent-catalog.json",request.url);
+    const r=await env.ASSETS.fetch(asset.toString());
+    if(!r.ok) throw new Error("unavailable");
+    data=await r.json();
+    if(data.schema!=="gah.atlas.catalog.v1"||!/^v[0-9.]+$/.test(data.atlas_version)||!/^\d{4}-\d{2}-\d{2}$/.test(data.publication_date)||!/^[a-f0-9]{64}$/.test(data.published_data_sha256)||!Array.isArray(data.stories)||data.stories.length!==data.total_stories||data.stories.length>10000) throw new Error("invalid");
+  } catch (_) { return reply({error:"catalog_unavailable"},503); }
+  // Re-project even the minimized artifact. No spread of arbitrary source fields.
+  const rows=[], ids=new Set();
+  for(const row of data.stories) {
+    if(!row||!/^P?[1-9][0-9]{0,5}$/.test(row.id)||ids.has(row.id)||!["confirmed","probable"].includes(row.tier)) return reply({error:"catalog_unavailable"},503);
+    ids.add(row.id);
+    rows.push({id:row.id,tier:row.tier,canonical_url:"https://grokarchivehub.com/atlas/#story-"+row.id.toLowerCase()});
+  }
+  if(query.has("version")&&query.get("version")!==data.atlas_version) return reply({error:"version_changed",current_version:data.atlas_version},409);
+  const base={schema:"gah.atlas.catalog.v1",atlas_version:data.atlas_version,publication_date:data.publication_date,published_data_sha256:data.published_data_sha256,canonical_url:"https://grokarchivehub.com/atlas/",note:GAH_ATLAS_API_NOTE};
+  let body;
+  if(detail) {
+    const story=rows.find(r=>r.id===detail[1]);
+    if(!story) return reply({error:"not_found"},404);
+    body={...base,story};
+  } else if(path==="/api/v1/atlas/status") {
+    body={...base,total_stories:rows.length,counts:{confirmed:rows.filter(r=>r.tier==="confirmed").length,probable:rows.filter(r=>r.tier==="probable").length}};
+  } else {
+    const offset=Number(cur),limit=Number(lim);
+    if(offset>rows.length) return reply({error:"invalid_cursor"},400);
+    body={...base,total_stories:rows.length,stories:rows.slice(offset,offset+limit),next_cursor:offset+limit<rows.length?offset+limit:null};
+  }
+  // The ETag represents this exact response, including its page and schema.
+  const bytes=new TextEncoder().encode(JSON.stringify(body));
+  const digest=await crypto.subtle.digest("SHA-256",bytes);
+  const etag='"'+Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,"0")).join("")+'"';
+  const headers={"Cache-Control":isStagingEnv(env)?"no-store":"public, max-age=300",ETag:etag};
+  if((request.headers.get("If-None-Match")||"").split(",").map(x=>x.trim()).some(x=>x===etag||x==="W/"+etag||x==="*")) return reply(null,304,headers);
+  return reply(body,200,headers);
+}
+
 function gahDynamicOpenApi() {
   const spec = JSON.parse(AGENT_READY_OPENAPI);
-  spec.info = { ...(spec.info || {}), version: "1.1.0" };
+  spec.info = { ...(spec.info || {}), version: "1.2.0" };
   spec.paths = spec.paths || {};
+  const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"503":{description:"Catalog unavailable"}};
+  spec.paths["/api/v1/stories"]={get:{operationId:"listAtlasStories",summary:"Bounded public story catalog; not evidence of guilt",parameters:[{name:"limit",in:"query",schema:{type:"integer",minimum:1,maximum:50,default:20}},{name:"cursor",in:"query",schema:{type:"integer",minimum:0,default:0}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
+  spec.paths["/api/v1/stories/{id}"]={get:{operationId:"getAtlasStoryLocator",summary:"Get exact published story locator",parameters:[{name:"id",in:"path",required:true,schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}}],responses:atlasResponses}};
+  spec.paths["/api/v1/atlas/status"]={get:{operationId:"getAtlasPublicationStatus",summary:"Published Atlas version, source hash and counts",responses:atlasResponses}};
   spec.paths["/api/visual-evidence/status"] = {
     get: {
       operationId: "getVisualEvidenceStatus",
@@ -18636,6 +18728,20 @@ export default {
       if (path === "/archive/ids") return serveFrontdoorEnhanced(request, env, "/archive/ids.html");
     }
 
+    if (path==="/atlas/agent-catalog.json") return new Response(null,{status:404,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
+    if (path==="/llms.txt" || path==="/api/v1/stories" || path.startsWith("/api/v1/stories/") || path==="/api/v1/atlas/status") {
+      if(path!=="/llms.txt") {
+        if(url.hostname==="www.grokarchivehub.com" && ["GET","HEAD"].includes(request.method)) return new Response(null,{status:301,headers:{Location:"https://grokarchivehub.com"+path+url.search,"Cache-Control":"no-store"}});
+        return gahAtlasCatalogHttp(request,env,path);
+      }
+      if(url.hostname!==APEX_HOST && !(isStagingEnv(env)&&url.hostname.endsWith(".pages.dev"))) {
+        if(url.hostname==="www.grokarchivehub.com") return new Response(null,{status:301,headers:{Location:"https://grokarchivehub.com/llms.txt","Cache-Control":"no-store"}});
+        return new Response(null,{status:404,headers:{"Cache-Control":"no-store"}});
+      }
+      if(!["GET","HEAD"].includes(request.method)) return new Response(null,{status:405,headers:{Allow:"GET, HEAD","Cache-Control":"no-store"}});
+      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY,{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
+    }
+
     if (isAccountLevelAnalyticsGatewayPath(path)) {
       return blockedAccountAnalyticsResponse(request);
     }
@@ -19370,6 +19476,7 @@ export default {
           "Access-Control-Allow-Origin": "*",
           "X-Robots-Tag": "noindex,follow",
           "Content-Signal": "ai-train=no, search=yes, ai-input=yes",
+          "Link": AGENT_DISCOVERY_LINK_HEADER,
           "X-GAH-Agent-Readiness": "ard-ai-catalog-v1"
         }
       });
