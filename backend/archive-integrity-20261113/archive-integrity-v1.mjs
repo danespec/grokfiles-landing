@@ -6,13 +6,27 @@ export function createArchiveIntegrity({fs=fsDefault, isMissing, registryPath='/
   try { const parsed=JSON.parse(fs.readFileSync(registryPath,'utf8')); if(parsed.version===1)data=parsed; } catch {}
   const validId=id=>/^EFTA\d{8}$/.test(String(id));
   const confirmed=new Map();
+  function hashFile(path) {
+    const hash=createHash('sha256'),fd=fs.openSync(path,'r');
+    try {
+      const chunk=Buffer.allocUnsafe(1048576);let count;
+      while((count=fs.readSync(fd,chunk,0,chunk.length,null))>0)hash.update(chunk.subarray(0,count));
+      return hash.digest('hex');
+    }finally{fs.closeSync(fd);}
+  }
   function verifiedFile(path,id,digest) {
     if(!validId(id)||typeof path!=='string'||!path.startsWith('/doj/')||path.split('/').includes('..')||path.split('/').pop()!==id+'.pdf'||!/^[a-f0-9]{64}$/.test(digest||''))return '';
     const key=path+':'+digest;
-    if(confirmed.has(key))return confirmed.get(key);
-    let result='';
-    try {if(fs.statSync(path).isFile()&&createHash('sha256').update(fs.readFileSync(path)).digest('hex')===digest)result=path;}catch{}
-    confirmed.set(key,result);return result;
+    let result='',signature='';
+    try {
+      const stat=fs.statSync(path);
+      if(!stat.isFile())return '';
+      signature=[stat.size,stat.mtimeMs,stat.ctimeMs].join(':');
+      const cached=confirmed.get(key);
+      if(cached?.signature===signature)return cached.path;
+      if(hashFile(path)===digest)result=path;
+    }catch{}
+    confirmed.set(key,{signature,path:result});return result;
   }
   function pdfPath(id) {
     const row=data.documents?.[id];
