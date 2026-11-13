@@ -51,3 +51,9 @@ Preserve the initial TI release: PR #266 / merge `1029bdd`, Pages `32a57b26-4969
 4. For standalone dashboard rollback, deploy the retained pre-reconciliation config/version. The KV snapshot can remain private and unused; no public route depends on it.
 5. Before the wiki cutover, retain the complete original container configuration, a rollback image, original source files and the stopped original container. The candidate must preserve the original environment, readonly archive mount, network, extra hosts, restart policy and loopback-only port binding. Roll back by stopping/renaming the candidate, restoring the original container name and starting it.
 6. Stop the reconciliation LaunchAgent if rolling back its collector. Do not purge datasets, broaden Access policies, enable ads, replay historical requests as pageviews, or change evidence bytes.
+
+## Read-only provider connection and reporting calendar — November 13
+
+The GA4 Data API connection uses analytics.readonly and Viewer access on the established property only, with cost and revenue restrictions. Its credential and private collector configuration stay on the operations Mac outside the repository. The collector accepts a private `reporting_timezone` configuration; set it to the actual GA4 property timezone. Cloudflare hourly buckets are regrouped into that calendar, and API timestamp bounds are converted to UTC. DST is accounted for. Daily differences remain withheld when provider timezones differ or hourly buckets cannot represent fractional-hour boundaries. Recent GA4 data may still be revised during processing.
+
+Collector validation: `python3 workers/gah-intel/test/test_reconcile_timezone.py`. Restore the retained pre-calendar collector and private configuration to roll back this reporting-only change; public website and Access deployments do not change.

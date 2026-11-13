@@ -4,6 +4,7 @@ Config and optional Google service-account JSON live outside this repository.
 Uses the owner's existing Wrangler session for CF reads and the private KV write.
 """
 import argparse, datetime as dt, json, os, pathlib, subprocess, tempfile, tomllib, urllib.parse, time, hmac, hashlib
+from zoneinfo import ZoneInfo
 
 UTC=dt.timezone.utc
 HOSTS=['grokarchivehub.com','www.grokarchivehub.com','wiki.grokarchivehub.com']
@@ -28,7 +29,7 @@ def graph(config, token, query):
 
 def web(config, token, since, until, site):
     # Separate property+hostname groups prevent adding duplicate beacons from distinct properties.
-    query='''{viewer{accounts(filter:{accountTag:%s}){rumPageloadEventsAdaptiveGroups(limit:5000,filter:{siteTag:%s,datetime_geq:%s,datetime_lt:%s,requestHost_in:%s},orderBy:[count_DESC]){count dimensions{date requestHost countryName refererHost requestPath bot}}}}}''' % tuple(map(json.dumps,[config['account_id'],site,since,until,HOSTS]))
+    query='''{viewer{accounts(filter:{accountTag:%s}){rumPageloadEventsAdaptiveGroups(limit:5000,filter:{siteTag:%s,datetime_geq:%s,datetime_lt:%s,requestHost_in:%s},orderBy:[count_DESC]){count dimensions{datetimeHour requestHost countryName refererHost requestPath bot}}}}}''' % tuple(map(json.dumps,[config['account_id'],site,since,until,HOSTS]))
     rows=graph(config,token,query)['accounts'][0]['rumPageloadEventsAdaptiveGroups']
     if len(rows)>=5000:raise RuntimeError('provider_group_limit')
     return rows
@@ -84,8 +85,10 @@ def health(config):
     return out
 
 def collect(config,token,now=None):
-    now=now or dt.datetime.now(UTC);until=now.replace(hour=0,minute=0,second=0,microsecond=0);since=until-dt.timedelta(days=7)
-    iso=lambda d:d.isoformat().replace('+00:00','Z')
+    now=now or dt.datetime.now(UTC)
+    reporting_timezone=config.get('reporting_timezone','UTC');zone=ZoneInfo(reporting_timezone)
+    until=now.astimezone(zone).replace(hour=0,minute=0,second=0,microsecond=0);since=until-dt.timedelta(days=7)
+    iso=lambda d:d.astimezone(UTC).isoformat().replace('+00:00','Z')
     primary=web(config,token,iso(since),iso(until),config['primary_site_tag'])
     # Browser bot=0 means not identified as a bot by this dataset, never verified human.
     main=[r for r in primary if r['dimensions']['requestHost'] in HOSTS[:2] and not r['dimensions']['bot']]
@@ -103,10 +106,16 @@ def collect(config,token,now=None):
         if ga is not None:ga_status='connected'
     except Exception:ga_status='unavailable: GA4 API authorization or report validation failed'
     timezone=(ga or {}).get('metadata',{}).get('timeZone')
-    # CF date is UTC. A GA4 report in another property timezone must not be subtracted.
-    comparable=ga is not None and timezone in ['UTC','Etc/UTC']
+    # Convert CF hourly buckets into the actual GA4 calendar, including DST.
+    # Fractional-hour zones need finer CF buckets and must not be compared here.
+    whole_hours=all((since+dt.timedelta(days=i)).utcoffset().total_seconds()%3600==0 for i in range(8))
+    matching_zone=timezone==reporting_timezone or {timezone,reporting_timezone}<={'UTC','Etc/UTC'}
+    comparable=ga is not None and matching_zone and whole_hours
     days={str((since+dt.timedelta(days=i)).date()):{'date':str((since+dt.timedelta(days=i)).date()),'cloudflare':0,'ga4':None,'comparable':comparable} for i in range(7)}
-    for r in main:days[r['dimensions']['date']]['cloudflare']+=int(r['count'])
+    for r in main:
+        day=dt.datetime.fromisoformat(r['dimensions']['datetimeHour'].replace('Z','+00:00')).astimezone(zone).date().isoformat()
+        if day not in days:raise RuntimeError('cloudflare_bucket_outside_reporting_window')
+        days[day]['cloudflare']+=int(r['count'])
     if ga is not None:
         for row in ga.get('rows',[]):
             day=dt.datetime.strptime(row['dimensionValues'][0]['value'],'%Y%m%d').date().isoformat();host=row['dimensionValues'][1]['value']
@@ -120,7 +129,7 @@ def collect(config,token,now=None):
     wiki=[r for r in legacy if r['dimensions']['requestHost']==HOSTS[2] and not r['dimensions']['bot']]
     main_count=sum(int(r['count']) for r in main);non_us=sum(int(r['count']) for r in main if r['dimensions']['countryName'] not in ['US','United States','','XX','ZZ','Unknown','unknown'])
     metrics=[
-      {'label':'Cloudflare raw HTTP requests','value':raw_count,'status':raw_status,'note':'All public hosts; assets and automation included; adaptive estimates; 7 complete UTC days'},
+      {'label':'Cloudflare raw HTTP requests','value':raw_count,'status':raw_status,'note':'All public hosts; assets and automation included; adaptive estimates; 7 complete calendar days in '+reporting_timezone+' (GA4 may still revise recent data)'},
       {'label':'Cloudflare browser pageviews · main','value':main_count,'status':'connected','note':'Primary property; apex/www only; known browser bots excluded; not confirmed humans'},
       {'label':'Cloudflare browser pageviews · wiki','value':sum(int(r['count']) for r in wiki) if legacy_status=='connected' else None,'status':legacy_status,'note':'Legacy property; wiki hostname only; not added to main for a parity claim'},
       {'label':'GA4 pageviews · main','value':sum(d['ga4'] for d in days.values()) if ga is not None else None,'status':ga_status,'note':'Apex/www; consenting measured browser activity; property timezone '+str(timezone or 'unavailable')},
@@ -129,7 +138,7 @@ def collect(config,token,now=None):
       {'label':'GA4 sessions · public hosts','value':sessions,'status':ga_status,'note':'GA4 session definition; not HTTP requests or CF visits'},
       {'label':'GA4 active users · public hosts','value':users,'status':ga_status,'note':'Aggregate GA4 active users over the full period; never summed across days or hostnames'},
       {'label':'Legacy CF property · all public hosts','value':sum(int(r['count']) for r in legacy) if legacy_status=='connected' else None,'status':legacy_status,'note':'Diagnostic parallel property; do not add to primary-property counts'}]
-    return {'schema':'gah_reconciliation_v1','generated_at':iso(now),'since':iso(since),'until':iso(until),'metrics':metrics,'daily':list(days.values()),'health':health(config),'countries':group(main,'countryName'),'referrals':group(main,'refererHost'),'audience_note':str(non_us)+' of '+str(main_count)+' main-site browser views originated outside the US; country signal only. Known browser bots excluded; undetected bots may remain. CF groups and raw requests may be sampled. GA4 reporting can lag 24–48 hours. No parity conclusion while GA4 is unavailable or date boundaries differ.','provider_status':{'raw':raw_status,'ga4':ga_status,'ga4_timezone':timezone,'legacy':legacy_status}}
+    return {'schema':'gah_reconciliation_v1','generated_at':iso(now),'since':iso(since),'until':iso(until),'metrics':metrics,'daily':list(days.values()),'health':health(config),'countries':group(main,'countryName'),'referrals':group(main,'refererHost'),'reporting_timezone':reporting_timezone,'audience_note':'Calendar dates use '+reporting_timezone+'. '+str(non_us)+' of '+str(main_count)+' main-site browser views originated outside the US; country signal only. Known browser bots excluded; undetected bots may remain. CF groups and raw requests may be sampled. GA4 reporting can lag 24–48 hours. No parity conclusion while GA4 is unavailable or date boundaries differ.','provider_status':{'raw':raw_status,'ga4':ga_status,'ga4_timezone':timezone,'legacy':legacy_status}}
 
 def traffic_classes(config):
     path=config.get('analytics_read_token_file')
