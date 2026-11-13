@@ -81,7 +81,8 @@ def health(config):
         p=subprocess.run(['curl','-sS','--max-time','20','-L','--config','-','-w','\n%{http_code}','https://grokarchivehub.com'+route],input=curl_config,capture_output=True,text=True)
         body,_,status=p.stdout.rpartition('\n')
         ok=status=='200' and body.count('src="/frontdoor/analytics.js?')==1 and '"ga4MeasurementId":"G-XHE84C8D1V"' in body
-        out.append({'route':route,'status':'pass' if ok else 'check','note':'HTTP '+status+'; shared HTML instrumentation' if ok else 'HTML coverage requires review'})
+        failure='Worker resource limit (1102)' if 'error code: 1102' in body else 'HTML coverage requires review; curl exit '+str(p.returncode)
+        out.append({'route':route,'status':'pass' if ok else 'check','note':'HTTP '+status+'; '+('shared HTML instrumentation' if ok else failure)})
     return out
 
 def collect(config,token,now=None):

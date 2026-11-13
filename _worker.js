@@ -1,4 +1,4 @@
-import { instrumentHtmlResponse } from "./workers/lib/analytics-html.mjs";
+import { instrumentHtmlResponse, canInstrumentHtmlResponse, normalizeAnalyticsHtml } from "./workers/lib/analytics-html.mjs";
 import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { readerQualityResponse, publicationRule } from './reader-quality.mjs';
@@ -18586,7 +18586,16 @@ export default {
     // STAGING-HARDEN-001: all staging responses carry privacy headers.
     const started = Date.now();
     try {
-      const response = applyStagingPrivacyHeaders(await instrumentHtmlResponse(await readerQualityResponse(await this.handleStagingFetch(request, env), request, [...GAH_IDENTIFIER_DOSSIERS.values()]), request, consentScriptTag(env)), env);
+      const original = await this.handleStagingFetch(request, env);
+      const scripts = consentScriptTag(env);
+      const eligible = canInstrumentHtmlResponse(original, request);
+      let normalized = false;
+      const quality = await readerQualityResponse(original, request, [...GAH_IDENTIFIER_DOSSIERS.values()], eligible ? (html, headers) => {
+        normalized = true;
+        headers.set('X-GAH-Analytics-Instrumentation', 'GAH-ANALYTICS-PARITY-001');
+        return normalizeAnalyticsHtml(html, scripts);
+      } : undefined);
+      const response = applyStagingPrivacyHeaders(normalized ? quality : await instrumentHtmlResponse(quality, request, scripts), env);
       scheduleObservation(ctx, request, response, env, started);
       return response;
     } catch (error) {

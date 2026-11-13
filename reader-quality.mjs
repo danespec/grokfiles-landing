@@ -124,7 +124,7 @@ export function readerNotFoundHtml(href){
  const u=new URL(href,'https://grokarchivehub.com');
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Grok Archive Hub</title><meta name="robots" content="noindex,follow"><style>body{background:#141914;color:#eee8dc;font:18px/1.7 system-ui;margin:0}main{max-width:800px;margin:8vh auto;padding:28px}a{color:#efc68b}input,button{font:inherit;padding:9px;max-width:100%;box-sizing:border-box}</style></head><body><main><a href="https://grokarchivehub.com/">Grok Archive Hub</a><h1>Page not found</h1><p>The requested page is unavailable. Search the archive or browse the published dossiers.</p><form action="https://grokarchivehub.com/search"><label>Search records <input name="q" placeholder="Name, phrase or EFTA identifier"></label><button>Search</button></form><p><a href="https://grokarchivehub.com/archive">Archive</a> · <a href="https://wiki.grokarchivehub.com/">Wiki receipt cards</a> · <a href="https://www.justice.gov/epstein/search">DOJ library</a></p></main></body></html>';
 }
-export async function readerQualityResponse(response,request,entries=[]){
+export async function readerQualityResponse(response,request,entries=[],finalizeHtml){
  const u=new URL(request.url);if(!['GET','HEAD'].includes(request.method)||u.pathname.startsWith('/api/')||/\/assets\//.test(u.pathname))return response;
  const type=response.headers.get('Content-Type')||'';if(!/text\/html/i.test(type))return response;
  const headers=new Headers(response.headers);
@@ -140,6 +140,7 @@ export async function readerQualityResponse(response,request,entries=[]){
  if(request.method==='HEAD')return new Response(null,{status:response.status,headers});
  let html=qualityHtml(await response.text(),request.url,entries);
  const robots=headers.get('X-Robots-Tag');if(robots)html=meta(html,'robots',robots);
+ if(typeof finalizeHtml==='function')html=finalizeHtml(html,headers);
  for(const n of ['Content-Length','Content-Encoding','ETag'])headers.delete(n);
  headers.set('X-GAH-Reader-Quality','20261027');
  return new Response(html,{status:response.status,headers});
