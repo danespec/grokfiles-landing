@@ -6342,7 +6342,20 @@ async function rewriteArchiveOcrSourceLink(response, request, archiveId) {
   if (response.status !== 200 || !(response.headers.get("Content-Type") || "").includes("text/html")) return response;
   const source = GAH_IDENTIFIER_SOURCES.get(archiveId);
   const canonical = "https://grokarchivehub.com/archive/" + archiveId;
-  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${archiveId} — Source locator | Grok Archive Hub</title><meta name="robots" content="noindex,follow"><meta name="description" content="${archiveId}: source access and verification status."><link rel="canonical" href="${canonical}"></head><body><main><h1>${archiveId} — Source locator</h1><p>Source text awaiting verification. This page does not publish an unreviewed transcript.</p>${source ? `<p><a href="${escapeHtml(source)}">Open DOJ PDF</a></p>` : '<p><a href="https://www.justice.gov/epstein/search">Find this identifier in the DOJ library</a></p>'}<p><a href="/pdf-lite?id=${archiveId}">Open source viewer</a> · <a href="/archive/ids">Published identifier dossiers</a> · <a href="https://wiki.grokarchivehub.com/">Receipt cards (wiki)</a></p></main></body></html>`;
+  // Only display bounded mapping metadata supplied by the authenticated source gateway.
+  // Never pass an upstream transcript through this privacy shield.
+  const parent = response.headers.get("X-GAH-Bates-Parent") || "";
+  const page = Number(response.headers.get("X-GAH-Bates-Page"));
+  const pages = Number(response.headers.get("X-GAH-Bates-Pages"));
+  const mapped = response.headers.get("X-GAH-Archive-Integrity") === "bates-parent-20261113" &&
+    /^EFTA[0-9]{8}$/.test(parent) && parent !== archiveId &&
+    Number.isSafeInteger(page) && page > 0 && Number.isSafeInteger(pages) && page <= pages && pages <= 1000000;
+  const mappedPdf = mapped ? "/api/pdfraw?id=" + parent + "#page=" + page : "";
+  const notice = mapped
+    ? `<p>This Bates identifier is page ${page} of the ${pages}-page document ${parent}. It is not a separate PDF.</p><p><a href="${mappedPdf}">Open the parent PDF at page ${page}</a> · <a href="/archive/${parent}">Parent document source record</a></p><p>The printed page identifier was verified in the existing PDF. Original redactions are preserved. No transcript is published here.</p>`
+    : `<p>Source text awaiting verification. This page does not publish an unreviewed transcript.</p>${source ? `<p><a href="${escapeHtml(source)}">Open DOJ PDF</a></p>` : '<p><a href="https://www.justice.gov/epstein/search">Find this identifier in the DOJ library</a></p>'}`;
+  const viewer = mapped ? mappedPdf : "/pdf-lite?id=" + archiveId;
+  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${archiveId} — Source locator | Grok Archive Hub</title><meta name="robots" content="noindex,follow"><meta name="description" content="${archiveId}: source access and verification status."><link rel="canonical" href="${canonical}"></head><body><main><h1>${archiveId} — Source locator</h1>${notice}<p><a href="${viewer}">Open source viewer</a> · <a href="/archive/ids">Published identifier dossiers</a> · <a href="https://wiki.grokarchivehub.com/">Receipt cards (wiki)</a></p></main></body></html>`;
   const headers = new Headers(response.headers);
   for (const name of ["Content-Length","Content-Encoding","ETag"]) headers.delete(name);
   headers.set("X-Robots-Tag","noindex,follow");headers.set("Cache-Control","no-store");
