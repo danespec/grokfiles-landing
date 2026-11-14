@@ -28,3 +28,16 @@ jobs:
         run: node tests/test_publication_policy_20261028.mjs
       - name: Verify Story Atlas v3.8
         run: node tests/test_story_atlas_v382.mjs
+
+      - name: Verify minimized Atlas agent catalog and secure discovery
+        run: |
+          python3 scripts/build_agent_atlas_catalog.py --check
+          node scripts/build_prepared_atlas.mjs --check
+          node tests/test_prepared_atlas.mjs
+          node tests/test_ai_future_001.mjs
+          node tests/test_atlas_citation_graph.mjs
+          node tests/test_analytics_single_pass.mjs
+          python3 -m unittest discover -s workers/gah-intel/test -p test_reconcile_timezone.py
+          node tests/test_ai_future_004_limits.mjs
+          python3 tests/test_atlas_publication_pipeline.py
+          node tests/test_staging_harden.mjs
