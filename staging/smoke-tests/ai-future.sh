@@ -40,7 +40,11 @@ h,b=get("/api/v1/stories?limit=2");data=json.loads(b);assert len(data["stories"]
 assert h.get("Cache-Control")=="no-store"
 code,_,body=call("/api/v1/stories?limit=2",headers={"If-None-Match":h["ETag"]});assert code==304 and not body
 _,b=get("/api/v1/atlas/graph");g=json.loads(b)
-assert g["review_status"] in ("partial_citation_pilot","review_required")
+assert g["review_status"]=="partial_citation_pilot" and g["reviewed_story_count"]==5
+assert len(g["edges"])==7 and len(g["document_nodes"])==6
+_,b=get("/api/v1/atlas/graph?document=EFTA00022062"); reverse=json.loads(b)
+assert {e["from"] for e in reverse["edges"]}=={"3","P13"}
+assert all(e["relation"]=="cites_public_record" for e in reverse["edges"])
 _,b=get("/openapi.json");assert "/api/v1/atlas/graph" in json.loads(b)["paths"]
 payload=json.dumps({"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_atlas_citation_graph","arguments":{}}}).encode()
 status,h,b=call("/mcp","POST",{"Content-Type":"application/json"},payload)

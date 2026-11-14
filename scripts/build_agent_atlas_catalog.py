@@ -3,6 +3,7 @@ import argparse, hashlib, json, re
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 source=root/'atlas/data.json'
+registry=root/'content/identifier-dossiers.json'
 dest=root/'atlas/agent-catalog.json'
 raw=source.read_bytes()
 data=json.loads(raw)
@@ -20,7 +21,7 @@ for story in data['stories']:
 counts={t:sum(r['tier']==t for r in rows) for t in ('confirmed','probable')}
 assert data['counts']['total_stories']==len(rows)
 assert all(data['counts'][t]==n for t,n in counts.items())
-out=dict(schema='gah.atlas.catalog.v1',atlas_version=data['version'],publication_date=data['date'],published_data_sha256=hashlib.sha256(raw).hexdigest(),total_stories=len(rows),counts=counts,stories=rows)
+out=dict(schema='gah.atlas.catalog.v1',atlas_version=data['version'],publication_date=data['date'],published_data_sha256=hashlib.sha256(raw).hexdigest(),published_registry_sha256=hashlib.sha256(registry.read_bytes()).hexdigest(),total_stories=len(rows),counts=counts,stories=rows)
 serialized=json.dumps(out,ensure_ascii=True,separators=(',',':'))+'\n'
 p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');a=p.parse_args()
 if a.check:
