@@ -2,7 +2,7 @@
 # Owner-authorized staging-only smoke. Secrets must be supplied in environment.
 set -euo pipefail
 python3 - "$@" <<'PY'
-import json,os,re,sys,urllib.request,urllib.error
+import json,os,re,ssl,sys,urllib.request,urllib.error
 from urllib.parse import urlsplit
 if len(sys.argv)!=2: raise SystemExit("Supply the exact staging preview URL")
 url=urlsplit(sys.argv[1])
@@ -11,7 +11,12 @@ if url.scheme!="https" or not re.fullmatch(r"(?:[a-z0-9-]+\.)?gah-staging-517b84
 base="https://"+url.netloc
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs): return None
-opener=urllib.request.build_opener(NoRedirect)
+# Some Homebrew Python installations lack a default CA bundle. Use the
+# operating system trust bundle, never turn off certificate verification.
+ctx=ssl.create_default_context()
+if not ctx.get_ca_certs() and os.path.isfile("/etc/ssl/cert.pem"):
+    ctx.load_verify_locations(cafile="/etc/ssl/cert.pem")
+opener=urllib.request.build_opener(NoRedirect,urllib.request.HTTPSHandler(context=ctx))
 def call(path,method="GET",headers=None,payload=None,auth=True):
     h=dict(headers or {})
     if auth:
