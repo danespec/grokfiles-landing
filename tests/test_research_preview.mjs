@@ -31,3 +31,5 @@ assert.equal((await rpc(hostname,'tools/call',{name:'search_research_preview',ar
 assert.equal((await rpc('grokarchivehub.com','tools/call',{name:'search_research_preview',arguments:{q:'Barak'}})).result.isError,true);
 for(const [host,expected] of [[hostname,true],['grokarchivehub.com',false]]){const r=await worker.fetch(new Request('https://'+host+'/openapi.json'),fullEnv);assert.equal(Boolean((await r.json()).paths['/api/v1/research/search']),expected);}
 console.log('PASS existing MCP and OpenAPI preview integration, with production tool/schema exclusion');
+
+for(const h of ['W/'+r.headers.get('etag'),'"other", W/'+r.headers.get('etag'),'*'])assert.equal((await get('/api/v1/research/search?q=Barak',env,allow,{headers:{'If-None-Match':h}})).status,304);
