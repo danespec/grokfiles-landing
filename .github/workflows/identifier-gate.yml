@@ -49,3 +49,5 @@ jobs:
         run: node tests/test_retrieval_routing_007.mjs
       - name: Publication fingerprint and human-judgment guard
         run: python3 tests/test_retrieval_source_integrity_007.py
+      - name: Bounded production retrieval release gate
+        run: node tests/test_retrieval_release_008.mjs

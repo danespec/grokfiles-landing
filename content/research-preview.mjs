@@ -1,3 +1,4 @@
+import { RELEASE_STAGING_HOST } from './retrieval-release.mjs';
 import { routeSearch, routingModelVersion } from './retrieval-routing.mjs';
 import MODEL from './research-preview-model.mjs';
 import FEED from './research-preview-feed.mjs';
@@ -7,7 +8,7 @@ export async function researchPreviewHttp(request,env,throttle){
  const u=new URL(request.url);if(!previewPaths.includes(u.pathname))return null;
  const headers={'Content-Type':'application/json','Cache-Control':'no-store','X-Robots-Tag':'noindex,nofollow','Content-Signal':'ai-train=no, search=no, ai-input=no'};
  const reply=(x,status=200,extra={})=>new Response(request.method==='HEAD'||status===304?null:JSON.stringify(x),{status,headers:{...headers,...extra}});
- if(String(env?.GAH_STAGING)!=='true'||!u.hostname.endsWith('.gah-staging-517b8499.pages.dev'))return reply({error:'not_found'},404);
+ if(!researchPreviewEnabled(request,env))return reply({error:'not_found'},404);
  if(!['GET','HEAD'].includes(request.method))return reply({error:'method_not_allowed'},405,{Allow:'GET, HEAD'});
  const allowed=new Set(['q','limit','cursor','version','subject','document_type','published_after','published_before','fusion']);for(const k of u.searchParams.keys())if(!allowed.has(k)||u.searchParams.getAll(k).length!==1)return reply({error:'invalid_query'},400);
  const limit=u.searchParams.get('limit')||'5',cursor=u.searchParams.get('cursor')||'0';if(!/^[1-9][0-9]?$/.test(limit)||+limit>10||!/^(0|[1-9][0-9]{0,5})$/.test(cursor))return reply({error:'invalid_bounds'},400);
@@ -19,14 +20,14 @@ export async function researchPreviewHttp(request,env,throttle){
  if(u.pathname.includes('publications')&&Object.keys(options).length)return reply({error:'invalid_query'},400);if(q.length>256)return reply({error:'query_too_long'},400);
  let rate;try{rate=await throttle();}catch{}if(!rate||typeof rate.limited!=='boolean')return reply({error:'limiter_unavailable'},503);if(rate.limited)return reply({error:'rate_limited'},429,{'Retry-After':'60'});
  const version=u.pathname.includes('publications')?FEED.version:routingModelVersion;if(u.searchParams.has('version')&&u.searchParams.get('version')!==version)return reply({error:'version_changed',version},409);
- const etag='"'+version+'-'+u.search+'"';if((request.headers.get('If-None-Match')?.match(/(?:W\/)?"[^"]*"|\*/g)||[]).some(t=>t==='*'||t.replace(/^W\//,'')===etag))return reply(null,304,{ETag:etag});
+ const hash=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(u.pathname+u.search));const etag='"'+version+'-'+Array.from(new Uint8Array(hash),x=>x.toString(16).padStart(2,'0')).join('')+'"';if((request.headers.get('If-None-Match')?.match(/(?:W\/)?"[^"]*"|\*/g)||[]).some(t=>t==='*'||t.replace(/^W\//,'')===etag))return reply(null,304,{ETag:etag});
  if(u.pathname.endsWith('openapi.json'))return reply({openapi:'3.1.0',info:{title:'GAH staging research preview',version:'0.2.0'},servers:[{url:u.origin}],paths:researchPreviewOpenApiPaths},200);
  if(u.pathname.includes('publications')){if(q)return reply({error:'invalid_query'},400);const items=FEED.items.slice(+cursor,+cursor+ +limit);return reply({schema:'gah.publications.changes.v1',version,items,next_cursor:+cursor+items.length<FEED.items.length?+cursor+items.length:null,total:FEED.items.length},200,{ETag:etag});}
  if(!q.trim())return reply({error:'query_required'},400);
  return reply({schema:MODEL.schema,version,method:MODEL.method,scope:MODEL.scope,...searchPreview(q,+limit,options),origin_requests:0,nas_reads:0},200,{ETag:etag});
 }
 
-export function researchPreviewEnabled(request,env){return Boolean(request)&&String(env?.GAH_STAGING)==='true'&&new URL(request.url).hostname.endsWith('.gah-staging-517b8499.pages.dev');}
+export function researchPreviewEnabled(request,env){return Boolean(request)&&String(env?.GAH_STAGING)==='true'&&new URL(request.url).hostname.endsWith('.gah-staging-517b8499.pages.dev')&&new URL(request.url).hostname!==RELEASE_STAGING_HOST;}
 export const researchPreviewTools=[
  {name:'search_research_preview',description:'Staging-only public metadata LSA/keyword pilot; verify cited publications and primary evidence.',inputSchema:{type:'object',properties:{q:{type:'string',maxLength:256},limit:{type:'integer',minimum:1,maximum:10}},required:['q'],additionalProperties:false}},
  {name:'get_publication_changes_preview',description:'Staging-only version-pinned public publication metadata and reviewed corrections.',inputSchema:{type:'object',properties:{cursor:{type:'integer',minimum:0,maximum:999999},limit:{type:'integer',minimum:1,maximum:10},version:{type:'string'}},additionalProperties:false}}
