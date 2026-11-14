@@ -1,3 +1,4 @@
+import { ATLAS_GRAPH_REVIEW } from "./content/atlas-graph-reviewed.mjs";
 import { instrumentHtmlResponse } from "./workers/lib/analytics-html.mjs";
 import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
@@ -2813,6 +2814,20 @@ function gahCommerce082Html(){
 }
 
 async function gahMcpCallTool(name, args, request, env) {
+  if(name==="get_atlas_citation_graph"||name==="list_atlas_stories") {
+    const url=new URL(request.url);
+    url.pathname=name==="get_atlas_citation_graph"?"/api/v1/atlas/graph":"/api/v1/stories";
+    url.search="";
+    const allowed=name==="get_atlas_citation_graph"?["story","version"]:["limit","cursor","version"];
+    if(!args||typeof args!=="object"||Array.isArray(args)||Object.keys(args).some(k=>!allowed.includes(k))) throw new Error("Invalid Atlas arguments");
+    for(const k of allowed) if(args[k]!==undefined) {
+      if(!["string","number"].includes(typeof args[k])) throw new Error("Invalid Atlas arguments");
+      url.searchParams.set(k,String(args[k]));
+    }
+    const response=await gahAtlasCatalogHttp(new Request(url.toString()),env,url.pathname);
+    if(!response.ok) throw new Error("Atlas request rejected");
+    return response.json();
+  }
   if (name === "search_archive") {
     const query = cleanText(args?.query || args?.q || "").trim();
     if (!query || query.length > 180) throw new Error("query must contain 1–180 characters");
@@ -3332,6 +3347,7 @@ function gahAgentHealth(){
       mcp:"/mcp",
       atlas_catalog:"/api/v1/stories",
       atlas_status:"/api/v1/atlas/status",
+      atlas_graph:"/api/v1/atlas/graph",
       llms:"/llms.txt",
       source_manifest:"/api/research/source-manifest/{manifest_id}",
       citation_audit:"/api/research/citation-audit/{manifest_id}",
@@ -3464,6 +3480,8 @@ const GAH_CITATION_AUDIT_MCP_TOOL = {
 };
 function gahAllMcpTools() {
   return GAH_MCP_TOOLS.concat(GAH_VISUAL_MCP_TOOLS, [GAH_DOCUMENT_BUNDLE_MCP_TOOL, GAH_SOURCE_MANIFEST_MCP_TOOL, GAH_CITATION_AUDIT_MCP_TOOL,
+    {name:"list_atlas_stories",title:"List Public Atlas Story Locators",description:"Bounded published story IDs and editorial tiers; not findings of guilt.",inputSchema:{type:"object",properties:{limit:{type:"integer",minimum:1,maximum:50},cursor:{type:"integer",minimum:0},version:{type:"string"}},additionalProperties:false}},
+    {name:"get_atlas_citation_graph",title:"Get Reviewed Atlas Citation Graph",description:"Partial citation membership only, version-bound; never infer guilt or absence of evidence.",inputSchema:{type:"object",properties:{story:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"},version:{type:"string"}},additionalProperties:false}},
     {name:"get_commerce_catalog",title:"Get Preview Research Products",description:"Discovery of planned premium research products; none can be purchased or charged.",inputSchema:{type:"object",properties:{}}},
     {name:"get_commerce_readiness",title:"Get Commerce Activation Gates",description:"Read-only status of required merchant, verification and fulfillment gates; charging disabled.",inputSchema:{type:"object",properties:{}}}
   ]);
@@ -3483,6 +3501,7 @@ const GAH_LLM_DISCOVERY = `# Grok Archive Hub
 ## Research
 - [Story Atlas](https://grokarchivehub.com/atlas/): editorial evidence chains, confidence classes, endpoints and limitations.
 - [Atlas catalog](https://grokarchivehub.com/api/v1/stories): bounded public story locators and editorial classifications.
+- [Atlas evidence graph pilot](https://grokarchivehub.com/api/v1/atlas/graph): reviewed citation links only; not findings of guilt or a complete graph.
 - [Atlas release status](https://grokarchivehub.com/api/v1/atlas/status): published version and source-data fingerprint.
 - [Investigations](https://grokarchivehub.com/investigations): source-linked dossiers.
 - [Search](https://grokarchivehub.com/search): public archive search.
@@ -3509,10 +3528,11 @@ async function gahAtlasCatalogHttp(request,env,path) {
   };
   if(url.hostname!==APEX_HOST && !(isStagingEnv(env)&&url.hostname.endsWith(".pages.dev"))) return reply({error:"not_found"},404);
   if(!["GET","HEAD"].includes(request.method)) return reply({error:"method_not_allowed"},405,{Allow:"GET, HEAD"});
+  const graph=path==="/api/v1/atlas/graph";
   const detail=path.match(/^\/api\/v1\/stories\/(P?[1-9][0-9]{0,5})$/);
-  if(!detail && !["/api/v1/stories","/api/v1/atlas/status"].includes(path)) return reply({error:"not_found"},404);
+  if(!graph && !detail && !["/api/v1/stories","/api/v1/atlas/status"].includes(path)) return reply({error:"not_found"},404);
   const query=url.searchParams;
-  const allowed=path==="/api/v1/stories"?new Set(["limit","cursor","version"]):new Set();
+  const allowed=path==="/api/v1/stories"?new Set(["limit","cursor","version"]):graph?new Set(["story","version"]):new Set();
   for(const key of query.keys()) if(!allowed.has(key)||query.getAll(key).length!==1) return reply({error:"invalid_query"},400);
   const lim=query.get("limit")??"20", cur=query.get("cursor")??"0";
   if(!/^[1-9][0-9]?$/.test(lim)||Number(lim)>50||!/^(0|[1-9][0-9]{0,5})$/.test(cur)) return reply({error:"invalid_pagination"},400);
@@ -3534,7 +3554,21 @@ async function gahAtlasCatalogHttp(request,env,path) {
   if(query.has("version")&&query.get("version")!==data.atlas_version) return reply({error:"version_changed",current_version:data.atlas_version},409);
   const base={schema:"gah.atlas.catalog.v1",atlas_version:data.atlas_version,publication_date:data.publication_date,published_data_sha256:data.published_data_sha256,canonical_url:"https://grokarchivehub.com/atlas/",note:GAH_ATLAS_API_NOTE};
   let body;
-  if(detail) {
+  if(graph) {
+    const selected=query.get("story");
+    if(selected!==null&&!/^P?[1-9][0-9]{0,5}$/.test(selected)) return reply({error:"invalid_story"},400);
+    if(selected!==null&&!ids.has(selected)) return reply({error:"not_found"},404);
+    const current=data.published_data_sha256===ATLAS_GRAPH_REVIEW.published_data_sha256&&ids.has(ATLAS_GRAPH_REVIEW.story_id);
+    const include=current&&(selected===null||selected===ATLAS_GRAPH_REVIEW.story_id);
+    const reviewed=include?rows.find(r=>r.id===ATLAS_GRAPH_REVIEW.story_id):null;
+    const documents=include?ATLAS_GRAPH_REVIEW.document_ids.map(id=>({id,canonical_url:"https://grokarchivehub.com/archive/"+id})):[];
+    body={schema:"gah.atlas.citation-graph.v1",atlas_version:base.atlas_version,published_data_sha256:base.published_data_sha256,
+      review_status:!current?"review_required":include?"partial_citation_pilot":"not_reviewed",
+      reviewed_story_count:current?1:0,total_stories:rows.length,
+      story_nodes:reviewed?[reviewed]:[],document_nodes:documents,
+      edges:documents.map(d=>({from:reviewed.id,to:d.id,relation:"cites_public_record"})),
+      note:"Partial citation-membership pilot only. No inference about people, guilt, factual truth, or complete evidence coverage. No edge does not mean no evidence."};
+  } else if(detail) {
     const story=rows.find(r=>r.id===detail[1]);
     if(!story) return reply({error:"not_found"},404);
     body={...base,story};
@@ -3556,11 +3590,12 @@ async function gahAtlasCatalogHttp(request,env,path) {
 
 function gahDynamicOpenApi() {
   const spec = JSON.parse(AGENT_READY_OPENAPI);
-  spec.info = { ...(spec.info || {}), version: "1.2.0" };
+  spec.info = { ...(spec.info || {}), version: "1.3.0" };
   spec.paths = spec.paths || {};
   const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"503":{description:"Catalog unavailable"}};
   spec.paths["/api/v1/stories"]={get:{operationId:"listAtlasStories",summary:"Bounded public story catalog; not evidence of guilt",parameters:[{name:"limit",in:"query",schema:{type:"integer",minimum:1,maximum:50,default:20}},{name:"cursor",in:"query",schema:{type:"integer",minimum:0,default:0}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
   spec.paths["/api/v1/stories/{id}"]={get:{operationId:"getAtlasStoryLocator",summary:"Get exact published story locator",parameters:[{name:"id",in:"path",required:true,schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}}],responses:atlasResponses}};
+  spec.paths["/api/v1/atlas/graph"]={get:{operationId:"getAtlasCitationGraph",summary:"Partial, version-bound reviewed citation graph; no implied factual relationship",parameters:[{name:"story",in:"query",schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
   spec.paths["/api/v1/atlas/status"]={get:{operationId:"getAtlasPublicationStatus",summary:"Published Atlas version, source hash and counts",responses:atlasResponses}};
   spec.paths["/api/visual-evidence/status"] = {
     get: {
@@ -18729,7 +18764,7 @@ export default {
     }
 
     if (path==="/atlas/agent-catalog.json") return new Response(null,{status:404,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
-    if (path==="/llms.txt" || path==="/api/v1/stories" || path.startsWith("/api/v1/stories/") || path==="/api/v1/atlas/status") {
+    if (path==="/llms.txt" || path==="/api/v1/stories" || path.startsWith("/api/v1/stories/") || path==="/api/v1/atlas/status" || path==="/api/v1/atlas/graph") {
       if(path!=="/llms.txt") {
         if(url.hostname==="www.grokarchivehub.com" && ["GET","HEAD"].includes(request.method)) return new Response(null,{status:301,headers:{Location:"https://grokarchivehub.com"+path+url.search,"Cache-Control":"no-store"}});
         return gahAtlasCatalogHttp(request,env,path);

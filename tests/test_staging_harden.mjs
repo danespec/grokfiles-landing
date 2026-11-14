@@ -1,114 +1,32 @@
-// Unit tests for STAGING-HARDEN-001.
-//
-// Verifies:
-//   1. isStagingEnv detects GAH_STAGING=true.
-//   2. applyStagingPrivacyHeaders adds X-Robots-Tag: noindex, nofollow,
-//      noarchive on staging; leaves production responses untouched.
-//   3. googleTagEnabled returns false on staging (GA4/ads disabled).
-//   4. The X-publisher production fallback is blocked on staging.
-//
-// Run: node tests/test_staging_harden.mjs   (from the repo root)
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const src = fs.readFileSync(path.join(repoRoot, "_worker.js"), "utf8");
-
-function extractFn(source, name) {
-  const start = source.indexOf(`function ${name}(`);
-  if (start < 0) throw new Error(`${name} not found in _worker.js`);
-  // Skip the parameter list (may contain {} defaults) to find the body brace.
-  const parenEnd = source.indexOf(")", start);
-  let i = source.indexOf("{", parenEnd);
-  let depth = 0;
-  for (let j = i; j < source.length; j++) {
-    if (source[j] === "{") depth++;
-    else if (source[j] === "}") {
-      depth--;
-      if (depth === 0) return source.slice(start, j + 1);
-    }
-  }
-  throw new Error(`unbalanced braces in ${name}`);
-}
-
-const loader = new Function(
-  [
-    // Stubs for dependencies.
-    `function cleanText(v){ return String(v || "").trim(); }`,
-    `const GAH_GA4_MEASUREMENT_ID = "";`,
-    `function adsenseApproved(env){ return false; }`,
-    extractFn(src, "consentScriptTag"),
-    extractFn(src, "isStagingEnv"),
-    extractFn(src, "applyStagingPrivacyHeaders"),
-    extractFn(src, "googleTagEnabled"),
-    extractFn(src, "consentBootTag"),
-    extractFn(src, "ensureConsentScript"),
-    `return { isStagingEnv, applyStagingPrivacyHeaders, googleTagEnabled, consentBootTag, consentScriptTag, ensureConsentScript };`,
-  ].join("\n")
-);
-const { isStagingEnv, applyStagingPrivacyHeaders, googleTagEnabled, consentBootTag, ensureConsentScript } = loader();
-
-let pass = 0,
-  fail = 0;
-const t = (name, cond) => {
-  cond ? pass++ : fail++;
-  console.log((cond ? "PASS" : "FAIL") + " " + name);
-};
-
-// --- 1. isStagingEnv ---
-t("staging detected", isStagingEnv({ GAH_STAGING: "true" }) === true);
-t("staging case-insensitive", isStagingEnv({ GAH_STAGING: "TRUE" }) === true);
-t("not staging when unset", isStagingEnv({}) === false);
-t("not staging when false", isStagingEnv({ GAH_STAGING: "false" }) === false);
-t("not staging when undefined", isStagingEnv(undefined) === false);
-
-// --- 2. applyStagingPrivacyHeaders ---
-{
-  const res = new Response("hello", { status: 200, headers: { "Content-Type": "text/html" } });
-  const out = applyStagingPrivacyHeaders(res, { GAH_STAGING: "true" });
-  t("staging adds X-Robots-Tag", out.headers.get("X-Robots-Tag") === "noindex, nofollow, noarchive");
-  t("staging preserves status", out.status === 200);
-  t("staging preserves content-type", out.headers.get("Content-Type") === "text/html");
-}
-{
-  const res = new Response("hello", { status: 200 });
-  const out = applyStagingPrivacyHeaders(res, {});
-  t("production untouched (no X-Robots-Tag)", out.headers.get("X-Robots-Tag") === null);
-  t("production returns same response", out === res);
-}
-{
-  t("null response passthrough", applyStagingPrivacyHeaders(null, { GAH_STAGING: "true" }) === null);
-}
-
-// --- 3. googleTagEnabled disabled on staging ---
-t("GA4 disabled on staging even with ID set", googleTagEnabled({ GAH_STAGING: "true", GA4_MEASUREMENT_ID: "G-XXXX" }) === false);
-t("GA4 enabled in prod with ID", googleTagEnabled({ GA4_MEASUREMENT_ID: "G-XXXX" }) === true);
-t("GA4 disabled in prod without ID", googleTagEnabled({}) === false);
-
-// --- 4. X-publisher fallback blocked on staging (static check) ---
-t(
-  "xReadRouteHtml blocks production fetch on staging",
-  src.includes('if (isStagingEnv(env)) return { ok: false, status: 404, html: "", assetPath };')
-);
-
-// --- 5. Fetch handler wrapped ---
-t(
-  "fetch handler applies staging privacy headers",
-  src.includes("return applyStagingPrivacyHeaders(await this.handleStagingFetch(request, env), env);")
-);
-
-// --- 6. Staging HTML sanitization: GAH_CONSENT_BOOT ---
-{
-  const prodBody = `<html><head><script data-cfasync="false">window.GAH_CONSENT_BOOT={"schema":"gah.consent.v2","googleTagEnabled":true,"ga4MeasurementId":"G-48G8M0230N","adsenseApproved":false};</script></head><body></body></html>`;
-  const stagingOut = ensureConsentScript(prodBody, { GAH_STAGING: "true" });
-  t("staging sanitizes baked-in GAH_CONSENT_BOOT", !stagingOut.includes("G-48G8M0230N"));
-  t("staging GAH_CONSENT_BOOT disables googleTag", stagingOut.includes('"googleTagEnabled":false'));
-  t("staging GAH_CONSENT_BOOT clears measurement ID", stagingOut.includes('"ga4MeasurementId":""'));
-
-  const prodOut = ensureConsentScript(prodBody, {});
-  t("production does not strip GA4 ID", prodOut.includes("G-48G8M0230N"));
-}
-
-console.log(`\n${pass} passed, ${fail} failed`);
-process.exit(fail ? 1 : 0);
+// Exercise actual Worker exports, not regex-extracted functions or outdated analytics defaults.
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {workerTestSource} from './worker-test-source.mjs';
+const source=await fs.readFile(new URL('../_worker.js',import.meta.url),'utf8');
+const {default:worker,isStagingEnv,applyStagingPrivacyHeaders,googleTagEnabled,consentBootTag,ensureConsentScript,xReadRouteHtml}=await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)+'\nexport {isStagingEnv,applyStagingPrivacyHeaders,googleTagEnabled,consentBootTag,ensureConsentScript,xReadRouteHtml};').toString('base64'));
+const stage={GAH_STAGING:'true',GA4_MEASUREMENT_ID:'G-TEST',GAH_GOOGLE_TAG_ENABLED:'true'};
+for(const e of [stage,{GAH_STAGING:'TRUE'}])assert(isStagingEnv(e));
+for(const e of [{},{GAH_STAGING:'false'},undefined])assert(!isStagingEnv(e));
+const r=new Response('hello',{status:200,headers:{'Content-Type':'text/html'}});
+const staged=applyStagingPrivacyHeaders(r,stage);
+assert.equal(staged.headers.get('X-Robots-Tag'),'noindex, nofollow, noarchive');
+assert.equal(staged.status,200);assert.equal(staged.headers.get('Content-Type'),'text/html');
+const prod=new Response('hello');assert.equal(applyStagingPrivacyHeaders(prod,{}),prod);
+assert.equal(applyStagingPrivacyHeaders(null,stage),null);
+assert(!googleTagEnabled(stage));assert(googleTagEnabled({GA4_MEASUREMENT_ID:'G-TEST'}));
+assert(googleTagEnabled({}));assert(!googleTagEnabled({GAH_GOOGLE_TAG_ENABLED:'false'}));
+const body='<html><head><script>window.GAH_CONSENT_BOOT={"schema":"gah.consent.v2","googleTagEnabled":true,"ga4MeasurementId":"G-OLD"};</script></head><body></body></html>';
+const s=ensureConsentScript(body,stage);assert(!s.includes('G-OLD'));assert(s.includes('"googleTagEnabled":false'));assert(s.includes('"ga4MeasurementId":""'));
+const p=ensureConsentScript(body,{GA4_MEASUREMENT_ID:'G-TEST'});assert(p.includes('"ga4MeasurementId":"G-TEST"'));assert(!p.includes('G-OLD'));
+assert(!consentBootTag(stage).includes('G-TEST'));
+const actual=await worker.fetch(new Request('https://grokarchivehub.com/robots.txt'),stage);
+assert.equal(actual.status,200);assert.equal(actual.headers.get('X-Robots-Tag'),'noindex, nofollow, noarchive');
+const normal=await worker.fetch(new Request('https://grokarchivehub.com/robots.txt'),{});
+assert.notEqual(normal.headers.get('X-Robots-Tag'),'noindex, nofollow, noarchive');
+const original=globalThis.fetch;let network=0;
+globalThis.fetch=async()=>{network++;throw Error('external fetch forbidden')};
+try{
+ const result=await xReadRouteHtml(new Request('https://grokarchivehub.com/'),{...stage,ASSETS:{fetch:async()=>new Response(null,{status:404})}},'/investigations');
+ assert.equal(result.status,404);assert.equal(network,0);
+}finally{globalThis.fetch=original;}
+console.log('PASS actual Worker staging privacy, production analytics configuration, consent sanitation and zero production fallback network calls');
