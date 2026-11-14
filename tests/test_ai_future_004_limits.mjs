@@ -15,7 +15,7 @@ const limiter=limited=>({idFromName:x=>x,get:()=>({fetch:async(url,init)=>{calls
 const blocked=await get('/api/v1/atlas/graph',{...base,GAH_SEC_RATE_LIMITER:limiter(true)});
 assert.equal(blocked.status,429);assert.equal(blocked.headers.get('Retry-After'),'60');assert.equal(reads,0);
 assert.deepEqual(payload,{op:'check',scope:'atlas-public',key:'192.0.2.1',max:60,windowMs:60000});
-const success=await get('/api/v1/stories',{...base,GAH_SEC_RATE_LIMITER:limiter(false)});assert.equal(success.status,200);assert.equal(reads,1);
+const success=await get('/api/v1/stories',{...base,GAH_SEC_RATE_LIMITER:limiter(false)});assert.equal(success.status,200);assert.equal(reads,0);
 const env={...base,GAH_SEC_RATE_LIMITER:limiter(false)};const previous=calls;
 assert.equal((await get('/api/v1/stories',env,{},'intel.grokarchivehub.com')).status,404);
 assert.equal((await get('/api/v1/stories',env,{method:'POST'})).status,405);

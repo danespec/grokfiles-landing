@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import worker from '../_worker.js';
+import worker,{gahAtlasCatalogHttp} from '../_worker.js';
 const catalog=JSON.parse(await fs.readFile(new URL('../atlas/agent-catalog.json',import.meta.url)));
 let assetReads=0;
 const env={GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:false})})},ASSETS:{async fetch(input){
@@ -38,9 +38,10 @@ assert.equal((await req('/api/v1/stories',{},'preview.gah-staging-517b8499.pages
 assert.equal((await req('/api/v1/stories',{},'unrelated.pages.dev')).status,404);
 assert.equal((await req('/llms.txt',{},'unrelated.pages.dev')).status,404);
 const missing={...env,ASSETS:{fetch:async()=>new Response('',{status:404})}};
-assert.equal((await req('/api/v1/stories',{},'grokarchivehub.com',missing)).status,503);
+assert.equal((await req('/api/v1/stories',{},'grokarchivehub.com',missing)).status,200);
+assert.equal((await gahAtlasCatalogHttp(new Request('https://grokarchivehub.com/api/v1/stories'),env,'/api/v1/stories',null)).status,503);
 const injected=structuredClone(catalog);injected.stories[0].private_note='not public';injected.stories[0].canonical_url='https://private.invalid';
-const projected=await req('/api/v1/stories/1',{},'grokarchivehub.com',{...env,ASSETS:{fetch:async()=>Response.json(injected)}});
+const projected=await gahAtlasCatalogHttp(new Request('https://grokarchivehub.com/api/v1/stories/1'),env,'/api/v1/stories/1',injected);
 const projectedBody=await projected.text();assert(!projectedBody.includes('private_note')&&!projectedBody.includes('private.invalid'));
 const llms=await req('/llms.txt');assert.equal(llms.status,200);assert.match(await llms.text(),/Story Atlas/);
 assert.equal((await req('/llms.txt',{method:'HEAD'})).status,200);
@@ -52,4 +53,5 @@ const m=await req('/mcp',mcp);assert.equal(m.status,200);assert((await m.json())
 const rateEnv={...env,GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:true})})}};
 assert.equal((await req('/mcp',mcp,'grokarchivehub.com',rateEnv)).status,429);
 assert.equal((await req('/mcp',{...mcp,headers:{...mcp.headers,Origin:'https://grokarchivehub.com'}})).status,200);
-console.log('PASS all '+seen.size+' story IDs, pagination, version pin, ETags, privacy projection, host/method isolation, fail-closed asset, discovery, OpenAPI and MCP origin gate; '+assetReads+' local asset reads');
+assert.equal(assetReads,0,'Atlas discovery must not depend on a mutable asset service');
+console.log('PASS all '+seen.size+' story IDs, pagination, version pin, ETags, privacy projection, host/method isolation, fail-closed catalog validation, discovery, OpenAPI and MCP origin gate; '+assetReads+' local asset reads');
