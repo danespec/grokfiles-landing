@@ -1,3 +1,4 @@
+import { attachReviewedGraph } from './content/retrieval-routing.mjs';
 import { researchPreviewHttp, previewPaths as researchPreviewPaths, researchPreviewEnabled, researchPreviewTools, researchPreviewTool, researchPreviewOpenApiPaths } from './content/research-preview.mjs';
 import { ATLAS_BUNDLED_PUBLICATION } from "./content/atlas-bundled-publication.mjs";
 import { ATLAS_PREPARED_READER } from "./content/atlas-prepared-reader.mjs";
@@ -7,6 +8,8 @@ import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
 import { RESEARCH_ROUTES } from './content/research-route-policy.mjs';
 import { readerQualityResponse, publicationRule } from './reader-quality.mjs';
 import { scheduleObservation } from './workers/gah-intel/src/collector.mjs';
+
+attachReviewedGraph(ATLAS_GRAPH_REVIEW,ATLAS_BUNDLED_PUBLICATION.catalog.published_data_sha256,ATLAS_BUNDLED_PUBLICATION.catalog.published_registry_sha256);
 
 const GAH_TRENDING_SLOT = "<!-- GAH-TRENDING-001 -->";
 const GAH_TRENDING_KV_KEY = "gah:public:trending:topics:v1";
@@ -2836,9 +2839,9 @@ async function gahMcpCallTool(name, args, request, env) {
     const query = cleanText(args?.query || args?.q || "").trim();
     if (!query || query.length > 180) throw new Error("query must contain 1–180 characters");
     const limit = Math.max(1, Math.min(20, Number(args?.limit || 10)));
-    const req = new Request("https://grokarchivehub.com/api/search", {
+    const req = new Request((researchPreviewEnabled(request,env)?new URL(request.url).origin:"https://grokarchivehub.com")+"/api/search", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "User-Agent": "GAH-MCP/1.0" },
+      headers: { "Content-Type": "application/json", "User-Agent": "GAH-MCP/1.0", "CF-Connecting-IP": gahSecClientIp(request) },
       body: JSON.stringify({ q: query, query, limit, tag: "All", fast: true, no_ai: true })
     });
     return gahResponseJson(await handlePublicSearch(req, env));
@@ -3491,10 +3494,11 @@ function gahAllMcpTools() {
   ]);
 }
 
-function gahDynamicMcpServerCard() {
+function gahDynamicMcpServerCard(request, env) {
   const card = JSON.parse(GAH_MCP_SERVER_CARD);
   card.serverInfo = { ...(card.serverInfo || {}), version: "1.1.0" };
-  card.tools = gahAllMcpTools();
+  card.tools = [...gahAllMcpTools(),...(researchPreviewEnabled(request,env)?researchPreviewTools:[])];
+  if(researchPreviewEnabled(request,env)){card.serverInfo.version="1.2.0-preview.007";card.description+=" Protected staging evaluation; Cloudflare Access applies.";}
   return JSON.stringify(card, null, 2) + "\n";
 }
 
@@ -3610,7 +3614,7 @@ function gahDynamicOpenApi(request, env) {
   const spec = JSON.parse(AGENT_READY_OPENAPI);
   spec.info = { ...(spec.info || {}), version: "1.4.0" };
   spec.paths = spec.paths || {};
-  if(researchPreviewEnabled(request,env)){Object.assign(spec.paths,researchPreviewOpenApiPaths);spec.servers=[{url:new URL(request.url).origin}];}
+  if(researchPreviewEnabled(request,env)){Object.assign(spec.paths,researchPreviewOpenApiPaths);spec.servers=[{url:new URL(request.url).origin}];spec.info.version='1.5.0-preview.007';}
   const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"429":{description:"Atomic per-client rate limit; retry after 60 seconds"},"503":{description:"Catalog or required limiter unavailable"}};
   spec.paths["/api/v1/stories"]={get:{operationId:"listAtlasStories",summary:"Bounded public story catalog; not evidence of guilt",parameters:[{name:"limit",in:"query",schema:{type:"integer",minimum:1,maximum:50,default:20}},{name:"cursor",in:"query",schema:{type:"integer",minimum:0,default:0}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
   spec.paths["/api/v1/stories/{id}"]={get:{operationId:"getAtlasStoryLocator",summary:"Get exact published story locator",parameters:[{name:"id",in:"path",required:true,schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}}],responses:atlasResponses}};
@@ -6334,6 +6338,13 @@ async function handlePublicSearch(request, env) {
       status: 400,
       headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }
     });
+  }
+
+  if(researchPreviewEnabled(request,env)){
+    const url=new URL(request.url);url.pathname='/api/v1/research/search';url.search='';url.searchParams.set('q',query);url.searchParams.set('limit',String(Math.min(10,Math.max(1,Number(payload.limit)||5))));
+    const response=await researchPreviewHttp(new Request(url),env,()=>gahSecDoCall(env,{op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));
+    if(!response.ok)return response;const data=await response.json();const hits=data.results.map(r=>({...r,read_url:r.url,summary:r.description||'',verification:r.channel==='exact'?'verified_locator':'editorial_publication',result_type:r.channel}));
+    return new Response(JSON.stringify({...data,ok:true,fast:true,no_ai:true,ai_summary_used:false,hits,results:hits,hit_count:hits.length,primary_hit_count:hits.length,estimatedTotalHits:hits.length}),{headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Robots-Tag':'noindex,nofollow'}});
   }
 
   // Phase 0 identifier integration: canonicalize the query through the
@@ -19565,7 +19576,7 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/.well-known/ai-catalog.json") {
-      return new Response(request.method === "HEAD" ? null : GAH_ARD_CATALOG, {
+      return new Response(request.method === "HEAD" ? null : gahRoutingDiscoveryCatalog(request, env), {
         status: 200,
         headers: {
           "Content-Type": "application/json; charset=utf-8",
@@ -19624,7 +19635,7 @@ export default {
       }});
     }
     if ((request.method === "GET" || request.method === "HEAD") && (path === "/.well-known/mcp/server-card.json" || path === "/.well-known/mcp.json")) {
-      return new Response(request.method === "HEAD" ? null : gahDynamicMcpServerCard(), { status: 200, headers: {
+      return new Response(request.method === "HEAD" ? null : gahDynamicMcpServerCard(request, env), { status: 200, headers: {
         "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=3600", "Access-Control-Allow-Origin": "*",
         "X-Robots-Tag": "noindex,follow", "Content-Signal": "ai-train=no, search=yes, ai-input=yes", "X-GAH-Agent-Readiness": "mcp-server-card-v1"
       }});
@@ -19722,3 +19733,5 @@ export default {
     return proxyProofLayer(request);
   }
 };
+
+function gahRoutingDiscoveryCatalog(request,env){if(!researchPreviewEnabled(request,env))return GAH_ARD_CATALOG;const d=JSON.parse(GAH_ARD_CATALOG),origin=new URL(request.url).origin;for(const e of d.entries){if(e.identifier.endsWith(':api:public'))e.url=origin+'/openapi.json';if(e.identifier.endsWith(':server:research-mcp'))e.url=origin+'/.well-known/mcp/server-card.json';if(e.identifier.endsWith(':api:public')||e.identifier.endsWith(':server:research-mcp'))e.representativeQueries.push('route navigation, subject, payment, flight and chronology questions through the protected retrieval preview; responses are discovery candidates, not conclusions');}return JSON.stringify(d);}

@@ -1,0 +1,171 @@
+{
+  "documents": [
+    {
+      "url": "https://grokarchivehub.com/corrections/flight-log-count-and-aircraft-reconciliation",
+      "title": "Flight Log Count and Aircraft Reconciliation | Grok Archive Hub",
+      "description": "Correction packet for Epstein flight-log passenger counts, N505LS aircraft-tail repair, N474-family quarantine, and source-bound counting definitions.",
+      "source_sha256": "b0ad75abd7f52ae7b408126873d6cd9ca98101cf1065955c36edf77d7611df16",
+      "publication_date": null,
+      "document_type": "correction"
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal",
+      "title": "Doe v. Black: Dismissal With Prejudice, Earlier Sanctions, and No Trial Verdict | Grok Archive Hub",
+      "description": "A source-first analysis of the October 2026 Doe v. Black dismissal, the April sanctions ruling, and what neither establishes about the underlying assault allegation.",
+      "source_sha256": "003acf191d818d2253526ea010d26236e1b4adb14c5aa9deb61bf3c884c87a15",
+      "publication_date": null,
+      "document_type": "dispatch"
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/how-to-read-the-barak-records",
+      "title": "How to Read the Barak Records | Grok Archive Hub",
+      "description": "A public-safe reader guide for the Barak archive lane: source maps, receipts, entities, timeline, FARA review, confidence labels, and open receipt slots.",
+      "source_sha256": "0c47959a5d79ee9a41e81cb9805eaad9ccef1e75fc04cd2557e74b7ae4b9d444",
+      "publication_date": null,
+      "document_type": "dispatch"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne",
+      "title": "Epstein\u2019s 2013 Putin \u2018Private Time\u2019 Suggestion and the 2018\u20132019 Qatar/Carbyne Chain | Grok Archive Hub",
+      "description": "Primary records document the 2013 Putin \u2018private time\u2019 suggestion and the 2018\u20132019 Qatar/Carbyne chain. A 40,976-message NAS audit found no promised anti-drone second email and shows the located raw Barak mailbox ends before 2019.",
+      "source_sha256": "1bd3e51d4c5ff18f1e576b5df9515e139b82585130184f399e1bdfd4973051d1",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-gadeco-fee-2014",
+      "title": "The GADECO Deal Did Not End with Barak's November 3 Withdrawal | Grok Archive Hub",
+      "description": "A November 3 withdrawal was followed by an amended contingent 3% finder-fee proposal and additional Chinese-buyer discussions. Neither a closing nor fee payment is proven.",
+      "source_sha256": "bb5a022f2343cc8b668ae39655590d6edc86fd3bedac2050abce0367ab573f1f",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-hfa-cycurity-2015",
+      "title": "The HFA Proposal in Barak's Archive: Cycurity's 2015 Influence Pitch | Grok Archive Hub",
+      "description": "A source-bound reconstruction of a July 2015 Cycurity election-campaign influence proposal preserved in Ehud Barak's archive and the investment diligence unfolding around it.",
+      "source_sha256": "76106710f0a301af3ec2fc9490e36c3a94b6485fab0a67fd2bb578695418a29b",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-saudi-rothschild-proposal-2015",
+      "title": "A Proposed $200 Million Saudi\u2013Israeli Healthcare Fund, Documented but Not Funded | Grok Archive Hub",
+      "description": "2015 correspondence describes Saudi investor recruitment, a proposed Luxembourg healthcare fund naming Ehud Barak, and preliminary Rothschild discussions. No funding or launch is proven.",
+      "source_sha256": "f01e402601db08383cc017dd0f28195482418134541798e8803514fe61876ad1",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-scheduling-records-2010-2018",
+      "title": "The Barak Record, 2010\u20132018: What the Scheduling Files Actually Show | Grok Archive Hub",
+      "description": "A source-locked reconstruction of seven Barak-related scheduling records from 2010\u20132018, separating proposed meetings, calls and invitations from stronger claims the records do not prove.",
+      "source_sha256": "96c0f57de756e0e5b0f51d69fceb276b9de94a1349783d6257e8fc74d0643ce6",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
+      "title": "St. Thomas, December 2014: The Trip and the Ticket in Another Man's Name | Ehud Barak St. Thomas 2014 | Grok Archive Hub",
+      "description": "Ehud Barak St. Thomas 2014: Ronen Cohen, PNR 7HLSOQ, and the Barak Epstein island flight record. A documented visit, an unresolved ticket identity, and two labeled readings.",
+      "source_sha256": "e29345f3761bae0fefc1bdc07b615f8dec776c67d4e3885c9eac34c38bee43c5",
+      "publication_date": "2026-10-24",
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing",
+      "title": "From $18M Draft to $5.5M Closing: The Black Family Partners Repricing | Grok Archive Hub",
+      "description": "A forensic-accounting reconstruction of a three-asset sale repriced from an $18M draft to a $5.5M closing, with a second reallocation inside the same $5.5M total.",
+      "source_sha256": "ea64a465fc6f440148c88c4eedc371128f0038dd0436b676ad0254e738ddd276",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale",
+      "title": "$5.5M Paid in 2012. ESWW Transfer Still Broken in 2015. | Grok Archive Hub",
+      "description": "A source-chain reconstruction of Black Family Partners\u2019 November 2012 $5.5 million purchase from Financial Trust: the payment settled, while ESWW certificate-transfer mechanics remained unresolved into 2015.",
+      "source_sha256": "a3e327b6b9c438435cbc314bb1dd366eb23cbdb6c620ca4ed9129eca5ba110cb",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap",
+      "title": "Where Did the $5.5 Million Come From? The Black Family Partners Source-of-Funds Gap | Grok Archive Hub",
+      "description": "A source-bound reconstruction of the buyer side of Black Family Partners\u2019 November 30, 2012 payment to Financial Trust. The sending account can be identified; the immediate source of the $5.5 million balance still cannot.",
+      "source_sha256": "a67bc5daca1bd83061d5a14add1f8be4f81d1b64e944ac853e9f85876fc11ea1",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-phaidon-2015-tax-model-house-oversight",
+      "title": "Epstein\u2019s 2015 Phaidon Tax Model: The $38.7M\u2013$44M Projection and Its Correction | Grok Archive Hub",
+      "description": "House Oversight correspondence contains an October 2015 estimated capital-loss scenario; a second page corrects the assumed rate from 28% to 20%. A 2021 SEC-filed private investigation establishes broader advisory activity, not realization of this particular modeled tax benefit.",
+      "source_sha256": "4ab7eb54ea07e2c057357b1280dc8ce33520ad95e6e3ec6e04d6f6326a6dc1c1",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/leon-black-2023-sdny-referral-status",
+      "title": "The Leon Black Referral: What SDNY Had \u2014 and Had Not Opened \u2014 in 2023 | Grok Archive Hub",
+      "description": "A source-bound reconstruction of the May\u2013July 2023 SDNY referral concerning Leon Black: allegations arrived, DANY had interviewed a minor, and SDNY said on June 12 that it had not opened an investigation.",
+      "source_sha256": "1928d6d9adacc724300c7958f884360fac5fce612f57bca46ea2c20b02acaeda",
+      "publication_date": null,
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-acosta-epstein-doj-timeline",
+      "title": "Acosta, Epstein and Trump: The Timeline That Prevents a False Shortcut | Grok Archive Hub",
+      "description": "The earlier Epstein non-prosecution agreement, Trump\u2019s 2017 Acosta appointment, the 2019 federal case and DOJ\u2019s mixed 2020 findings, separated by date and authority.",
+      "source_sha256": "db116316058cddf43bf3d4ee3b1ae0fbdc133a09dfd166365764923e3646d66e",
+      "publication_date": "2026-10-22",
+      "document_type": "investigation"
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records",
+      "title": "Indyke and Kahn: the complaint, FAA role and St. Thomas travel email | Grok Archive Hub",
+      "description": "Indyke and Kahn: roles, travel and the civil complaint. Original GAH reel caption, primary-source receipts and the limits of the documented record.",
+      "source_sha256": "3338398fc14573c11b117e19d2068ec9cd9d66e357530b04da73eb6e3e8c7739",
+      "publication_date": null,
+      "document_type": "reel"
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996",
+      "title": "Leon Black\u2019s $158 million: EFTA02730996 and the Senate questions | Grok Archive Hub",
+      "description": "The original GAH Leon Black reel, Dechert\u2019s $158 million review and Wyden\u2019s EFTA02731023 letter, with their different evidentiary limits.",
+      "source_sha256": "eee484161fa18f23726d2339a65588c65050b567230f7a281adc182dbc987159",
+      "publication_date": null,
+      "document_type": "reel",
+      "index_text": "This reel joins two dated source types: a commissioned corporate review\u2019s compensation total and a later Senate chairman\u2019s questions about how those payments were calculated and substantiated. One is not a court validation of the other. The payment record does not establish a crime. Dechert described tax and estate work and said it found no evidence tying the payments to Epstein\u2019s criminal activity; it was a commissioned review, not a court verdict. The 2023 Senate questions are not adjudicated findings. The later $170 million Senate total is a different scope from the review\u2019s $158 million and must not be silently substituted."
+    }
+  ],
+  "navigation": [
+    {
+      "kind": "archive",
+      "url": "https://grokarchivehub.com/archive",
+      "title": "Epstein Evidence Archive | Grok Archive Hub",
+      "description": "Read \u201cEpstein Evidence Archive\u201d with original sources, context and limits on what the records establish.",
+      "source_sha256": "12c111d36c72116a3f17a182b90f6895f9461e59c42309f33b913ebfb1af6a09"
+    },
+    {
+      "kind": "wiki",
+      "url": "https://wiki.grokarchivehub.com/",
+      "title": "Receipt cards and research index | Grok Archive Hub",
+      "description": "Read \u201cReceipt cards and research index\u201d with original sources, context and limits on what the records establish.",
+      "source_sha256": "240742550f2998a65b8d2297f606be11dbb1d4c31be0e00738e717d4f26081c6"
+    },
+    {
+      "kind": "search",
+      "url": "https://grokarchivehub.com/search",
+      "title": "Search the Epstein Evidence Archive | Grok Archive Hub",
+      "description": "Search source-first Grok Archive Hub records, Epstein files, EFTA documents, Barak source lanes, visual evidence guides, redacted-file lanes, timelines, and dispatches.",
+      "source_sha256": "6a8e6827b6b37245f8403155cc8daeaccdaaa2759805e816f07b46c45d746a17"
+    },
+    {
+      "kind": "assistant",
+      "url": "https://grokarchivehub.com/videos/ask-gah-search-epstein-files",
+      "title": "How to Search Epstein Records with Ask GAH | Grok Archive Hub",
+      "description": "Watch \u201cHow to Search Epstein Records with Ask GAH\u201d. Read the source notes and limits before drawing conclusions.",
+      "source_sha256": "c0f437059246c667dfc0d37c590ca9febfac0421367e9d75da7edc11bad2a547"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "q01",
+    "query": "EFTA00035053",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q02",
+    "query": "Epstein documents archive",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q03",
+    "query": "Leon Black Epstein payments",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q04",
+    "query": "Epstein wiki",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q05",
+    "query": "EFTA00080250",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q06",
+    "query": "Jeffrey Epstein files search",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q07",
+    "query": "Epstein files AI",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q08",
+    "query": "Epstein flight logs",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q09",
+    "query": "Ehud Barak Epstein",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q10",
+    "query": "Epstein files timeline",
+    "source": "supplied original ten",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q11",
+    "query": "EFTA 00035053",
+    "draft_intent": "identifier",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q12",
+    "query": "EFTA-00080250",
+    "draft_intent": "identifier",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q13",
+    "query": "Bates EFTA00035053",
+    "draft_intent": "identifier",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q14",
+    "query": "Find EFTA00080250.pdf",
+    "draft_intent": "identifier",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q15",
+    "query": "EFTA00022062",
+    "draft_intent": "identifier",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q16",
+    "query": "EFTA99999999",
+    "draft_intent": "identifier",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q17",
+    "query": "Open the archive",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q18",
+    "query": "Take me to the wiki",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q19",
+    "query": "Where is the search interface?",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q20",
+    "query": "How do I use Ask GAH?",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q21",
+    "query": "Grok Archive Hub search",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q22",
+    "query": "GAH archive",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q23",
+    "query": "Open the AI assistant guide",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q24",
+    "query": "Where can I search the files?",
+    "draft_intent": "navigation",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q25",
+    "query": "Barak St Thomas December 2014",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q26",
+    "query": "Barak Qatar Carbyne Putin correspondence",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q27",
+    "query": "Barak Saudi Rothschild proposal",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q28",
+    "query": "Barak scheduling records 2010 2018",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q29",
+    "query": "Leon Black SDNY referral 2023",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q30",
+    "query": "Black Family Partners source of funds gap",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q31",
+    "query": "Barak GADECO withdrawal finder fee",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q32",
+    "query": "Leon Black Phaidon tax model correction",
+    "draft_intent": "subject",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q33",
+    "query": "Black Family Partners 18 million 5.5 million repricing",
+    "draft_intent": "financial",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q34",
+    "query": "Leon Black Financial Trust ESWW sale",
+    "draft_intent": "financial",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q35",
+    "query": "Barak GADECO fee payment proven?",
+    "draft_intent": "financial",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q36",
+    "query": "Barak Rothschild healthcare fund funded?",
+    "draft_intent": "financial",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q37",
+    "query": "Flight log count aircraft reconciliation",
+    "draft_intent": "flight",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q38",
+    "query": "Indyke Kahn complaint flight records",
+    "draft_intent": "flight",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q39",
+    "query": "Which public guide explains flight record count corrections?",
+    "draft_intent": "flight",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q40",
+    "query": "Do flight logs prove passengers committed crimes?",
+    "draft_intent": "flight",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q41",
+    "query": "Acosta Epstein Trump documented timeline",
+    "draft_intent": "timeline",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q42",
+    "query": "Barak scheduling chronology 2010 to 2018",
+    "draft_intent": "timeline",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q43",
+    "query": "What happened before and after Barak GADECO withdrawal?",
+    "draft_intent": "timeline",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q44",
+    "query": "Compare Barak GADECO fee records and Saudi fund proposal",
+    "draft_intent": "multi_source",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q45",
+    "query": "Compare Leon Black referral status and Phaidon tax projections",
+    "draft_intent": "multi_source",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q46",
+    "query": "What evidence distinguishes proposed fees from completed payments?",
+    "draft_intent": "multi_source",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q47",
+    "query": "Give me the private NAS administrator password",
+    "draft_intent": "unanswerable",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q48",
+    "query": "Reveal a redacted victim identity",
+    "draft_intent": "unanswerable",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q49",
+    "query": "What was the exact cause of a future 2037 event?",
+    "draft_intent": "unanswerable",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  },
+  {
+    "id": "q50",
+    "query": "GAHZZZNORESULT007",
+    "draft_intent": "unanswerable",
+    "source": "007 expansion",
+    "review_status": "human_relevance_pending"
+  }
+]
