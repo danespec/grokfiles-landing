@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import worker from '../_worker.js';
 const catalog=JSON.parse(await fs.readFile(new URL('../atlas/agent-catalog.json',import.meta.url)));
 let assetReads=0;
-const env={GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',ASSETS:{async fetch(input){
+const env={GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:false})})},ASSETS:{async fetch(input){
   assetReads++;assert.equal(new URL(typeof input==='string'?input:input.url).pathname,'/atlas/agent-catalog.json');
   return Response.json(catalog);
 }}};

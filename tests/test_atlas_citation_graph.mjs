@@ -28,7 +28,7 @@ for(const e of expected){
   const doc=dossiers.find(d=>d.id===e.to);assert.equal(doc?.indexable,true);assert.equal(new URL(doc.source).hostname,'www.justice.gov');
  }
 }
-const envFor=data=>({GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',ASSETS:{fetch:async input=>{
+const envFor=data=>({GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:false})})},ASSETS:{fetch:async input=>{
  assert.equal(new URL(typeof input==='string'?input:input.url).pathname,'/atlas/agent-catalog.json');return Response.json(data);
 }}});
 const env=envFor(catalog);

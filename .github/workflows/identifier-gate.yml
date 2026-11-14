@@ -34,4 +34,6 @@ jobs:
           python3 scripts/build_agent_atlas_catalog.py --check
           node tests/test_ai_future_001.mjs
           node tests/test_atlas_citation_graph.mjs
+          node tests/test_ai_future_004_limits.mjs
+          python3 tests/test_atlas_publication_pipeline.py
           node tests/test_staging_harden.mjs

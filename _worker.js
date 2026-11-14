@@ -3539,6 +3539,11 @@ async function gahAtlasCatalogHttp(request,env,path) {
   for(const key of query.keys()) if(!allowed.has(key)||query.getAll(key).length!==1) return reply({error:"invalid_query"},400);
   const lim=query.get("limit")??"20", cur=query.get("cursor")??"0";
   if(!/^[1-9][0-9]?$/.test(lim)||Number(lim)>50||!/^(0|[1-9][0-9]{0,5})$/.test(cur)) return reply({error:"invalid_pagination"},400);
+  // New Atlas endpoints require the dedicated atomic limiter. Never write
+  // their counters to unrelated production KV or silently fail open.
+  const throttle=await gahSecDoCall(env,{op:"check",scope:"atlas-public",key:gahSecClientIp(request),max:60,windowMs:60000});
+  if(!throttle||typeof throttle.limited!=="boolean") return reply({error:"rate_limiter_unavailable"},503,{"Retry-After":"60"});
+  if(throttle.limited) return reply({error:"rate_limited"},429,{"Retry-After":"60"});
   let data;
   try {
     const asset=new URL("/atlas/agent-catalog.json",request.url);
@@ -3600,7 +3605,7 @@ function gahDynamicOpenApi() {
   const spec = JSON.parse(AGENT_READY_OPENAPI);
   spec.info = { ...(spec.info || {}), version: "1.4.0" };
   spec.paths = spec.paths || {};
-  const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"503":{description:"Catalog unavailable"}};
+  const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"429":{description:"Atomic per-client rate limit; retry after 60 seconds"},"503":{description:"Catalog or required limiter unavailable"}};
   spec.paths["/api/v1/stories"]={get:{operationId:"listAtlasStories",summary:"Bounded public story catalog; not evidence of guilt",parameters:[{name:"limit",in:"query",schema:{type:"integer",minimum:1,maximum:50,default:20}},{name:"cursor",in:"query",schema:{type:"integer",minimum:0,default:0}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
   spec.paths["/api/v1/stories/{id}"]={get:{operationId:"getAtlasStoryLocator",summary:"Get exact published story locator",parameters:[{name:"id",in:"path",required:true,schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}}],responses:atlasResponses}};
   spec.paths["/api/v1/atlas/graph"]={get:{operationId:"getAtlasCitationGraph",summary:"Partial, version-bound reviewed citation graph; no implied factual relationship",parameters:[{name:"story",in:"query",schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}},{name:"document",in:"query",schema:{type:"string",pattern:"^EFTA[0-9]{8}$"}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
