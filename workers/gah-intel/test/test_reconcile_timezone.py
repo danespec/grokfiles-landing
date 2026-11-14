@@ -2,6 +2,7 @@ import datetime as dt
 import importlib.util
 from pathlib import Path
 import unittest
+from types import SimpleNamespace
 from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location('reconcile', Path(__file__).parents[1] / 'scripts/reconcile.py')
@@ -9,6 +10,12 @@ r = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(r)
 
 class ReportingCalendarTests(unittest.TestCase):
+    def test_worker_resource_failure_is_not_reported_as_missing_tag(self):
+        with patch.object(r, 'ROUTES', ['/news']), patch.object(r.subprocess, 'run', return_value=SimpleNamespace(stdout='error code: 1102\n\n503', returncode=0)):
+            health = r.health({})
+        self.assertEqual(health[0]['status'], 'check')
+        self.assertIn('HTTP 503; Worker resource limit (1102)', health[0]['note'])
+
     def collect(self, reporting, actual, now, rows=None):
         config = {'reporting_timezone': reporting, 'primary_site_tag': 'primary', 'legacy_site_tag': 'legacy'}
         report = {'metadata': {'timeZone': actual}, 'rows': [], 'aggregate': {'rows': []}}
