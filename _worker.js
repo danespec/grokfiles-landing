@@ -2824,7 +2824,7 @@ async function gahMcpCallTool(name, args, request, env) {
       if(!["string","number"].includes(typeof args[k])) throw new Error("Invalid Atlas arguments");
       url.searchParams.set(k,String(args[k]));
     }
-    const response=await gahAtlasCatalogHttp(new Request(url.toString()),env,url.pathname);
+    const response=await gahAtlasCatalogHttp(new Request(url.toString(),{headers:{"CF-Connecting-IP":gahSecClientIp(request)}}),env,url.pathname);
     if(!response.ok) throw new Error("Atlas request rejected");
     return response.json();
   }
