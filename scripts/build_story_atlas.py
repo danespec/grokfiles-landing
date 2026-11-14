@@ -71,3 +71,5 @@ subprocess.run([sys.executable,str(root/'scripts/build_agent_atlas_catalog.py')]
 
 # Prepare the reviewed public reader outside the request CPU budget.
 subprocess.run(["node",str(root/"scripts/build_prepared_atlas.mjs")],check=True)
+
+subprocess.run(["node",str(root/"scripts/build_bundled_atlas.mjs")],check=True)

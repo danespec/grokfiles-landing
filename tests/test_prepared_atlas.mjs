@@ -18,6 +18,6 @@ try{
  const h=await get('/atlas/',{method:'HEAD'});assert.equal(await h.text(),'');assert.equal(h.status,200);
  const markdown=await get('/atlas/',{headers:{Accept:'text/markdown'}});assert.match(markdown.headers.get('Content-Type'),/text\/markdown/);assert.equal(await markdown.text(),md);
  for(const path of ['/atlas/prepared-reader.html','/atlas/prepared-reader.md','/atlas/prepared-reader'])assert.equal((await get(path)).status,404);
- const missing=await get('/atlas/',{}, {...env,ASSETS:{fetch:async()=>new Response('',{status:404})}});assert.equal(missing.status,503);assert.equal(missing.headers.get('Cache-Control'),'no-store');
+ const missing=await get('/atlas/',{}, {...env,ASSETS:{fetch:async()=>{throw Error('asset service must not be called');}}});assert.equal(missing.status,200);assert.equal((await missing.text()).includes('Story Atlas'),true);
 }finally{globalThis.HTMLRewriter=originalRewriter;}
-console.log('PASS prepared Atlas hash integrity, private asset guards, streaming consent insertion, CSP/noindex, HEAD/Markdown parity and missing-asset failure');
+console.log('PASS prepared Atlas hash integrity, private asset guards, streaming consent insertion, CSP/noindex, HEAD/Markdown parity and asset-service independence');

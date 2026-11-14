@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import worker from '../_worker.js';
+import worker,{gahAtlasCatalogHttp} from '../_worker.js';
 import {ATLAS_GRAPH_REVIEW as review} from '../content/atlas-graph-reviewed.mjs';
 const raw=await fs.readFile(new URL('../atlas/data.json',import.meta.url));
 const source=JSON.parse(raw),catalog=JSON.parse(await fs.readFile(new URL('../atlas/agent-catalog.json',import.meta.url)));
@@ -28,11 +28,11 @@ for(const e of expected){
   const doc=dossiers.find(d=>d.id===e.to);assert.equal(doc?.indexable,true);assert.equal(new URL(doc.source).hostname,'www.justice.gov');
  }
 }
-const envFor=data=>({GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:false})})},ASSETS:{fetch:async input=>{
+const envFor=data=>({catalogFixture:data,GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:false})})},ASSETS:{fetch:async input=>{
  assert.equal(new URL(typeof input==='string'?input:input.url).pathname,'/atlas/agent-catalog.json');return Response.json(data);
 }}});
 const env=envFor(catalog);
-const get=(p,o={},e=env,h='grokarchivehub.com')=>worker.fetch(new Request('https://'+h+p,o),e);
+const get=(p,o={},e=env,h='grokarchivehub.com')=>{const request=new Request('https://'+h+p,o);return e===env?worker.fetch(request,e):gahAtlasCatalogHttp(request,e,new URL(request.url).pathname,e.catalogFixture);};
 const path='/api/v1/atlas/graph';
 const response=await get(path);assert.equal(response.status,200);
 const graph=await response.json();

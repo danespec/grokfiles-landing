@@ -1,3 +1,4 @@
+import { ATLAS_BUNDLED_PUBLICATION } from "./content/atlas-bundled-publication.mjs";
 import { ATLAS_PREPARED_READER } from "./content/atlas-prepared-reader.mjs";
 import { ATLAS_GRAPH_REVIEW } from "./content/atlas-graph-reviewed.mjs";
 import { instrumentHtmlResponse, canInstrumentHtmlResponse, normalizeAnalyticsHtml } from "./workers/lib/analytics-html.mjs";
@@ -3523,7 +3524,7 @@ const GAH_ATLAS_API_NOTE = "Editorial chain classification, not a finding of gui
 function gahAtlasCatalogHeaders(cache="no-store") {
   return {"Content-Type":"application/json; charset=utf-8","Cache-Control":cache,"X-Content-Type-Options":"nosniff","X-Robots-Tag":"noindex,follow","Content-Signal":"ai-train=no, search=yes, ai-input=yes","X-GAH-Agent-Readiness":"atlas-catalog-v1","Access-Control-Allow-Origin":"*"};
 }
-async function gahAtlasCatalogHttp(request,env,path) {
+export async function gahAtlasCatalogHttp(request,env,path,catalog=ATLAS_BUNDLED_PUBLICATION.catalog) {
   const started=Date.now();
   const url=new URL(request.url);
   const reply=(body,status=200,headers={})=>{
@@ -3547,10 +3548,7 @@ async function gahAtlasCatalogHttp(request,env,path) {
   if(throttle.limited) return reply({error:"rate_limited"},429,{"Retry-After":"60"});
   let data;
   try {
-    const asset=new URL("/atlas/agent-catalog.json",request.url);
-    const r=await env.ASSETS.fetch(asset.toString());
-    if(!r.ok) throw new Error("unavailable");
-    data=await r.json();
+    data=catalog;
     if(data.schema!=="gah.atlas.catalog.v1"||!/^v[0-9.]+$/.test(data.atlas_version)||!/^\d{4}-\d{2}-\d{2}$/.test(data.publication_date)||!/^[a-f0-9]{64}$/.test(data.published_data_sha256)||!Array.isArray(data.stories)||data.stories.length!==data.total_stories||data.stories.length>10000) throw new Error("invalid");
   } catch (_) { return reply({error:"catalog_unavailable"},503); }
   // Re-project even the minimized artifact. No spread of arbitrary source fields.
@@ -4302,8 +4300,8 @@ async function gahServePreparedAtlas(request,env) {
   if(adsenseApproved(env))return serveFrontdoorEnhanced(request,env,"/atlas.html",{canonical:"https://grokarchivehub.com/atlas/"});
   const markdown=/\btext\/markdown\b/i.test(request.headers.get("Accept")||"");
   const path=markdown?"/atlas/prepared-reader.md":"/atlas/prepared-reader.html";
-  const url=new URL(path,request.url);url.search="";
-  const asset=await env.ASSETS.fetch(url.toString());
+  const value=markdown?ATLAS_BUNDLED_PUBLICATION.markdown:ATLAS_BUNDLED_PUBLICATION.html;
+  const asset=typeof value==="string"&&value.length?new Response(value,{headers:{"Content-Type":markdown?"text/markdown":"text/html","Cache-Control":"public, max-age=0, must-revalidate"}}):new Response(null,{status:404});
   if(!asset.ok||ATLAS_PREPARED_READER.schema!=="gah.atlas.prepared-reader.v1")return new Response("Published Atlas reader unavailable",{status:503,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
   const headerRequest=new Request(request.url,{method:"HEAD",headers:{Accept:"text/html"}});
   const assetHeaders=new Headers(asset.headers);assetHeaders.set("Content-Type","text/html");
