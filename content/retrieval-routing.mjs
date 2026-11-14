@@ -12,6 +12,7 @@ export function classifyRetrieval(q){
  if(/\b(password|credentials?|private\s+nas|unredact|redacted.*identity|victim.*identit|witness.*identit)\b/i.test(q))return {intent:'unanswerable',subjects:[],requires_multiple_sources:false,reason:'restricted_request'};
  if([...String(q).matchAll(/\b(20[0-9]{2})\b/g)].some(m=>Number(m[1])>M.publication_cutoff_year)&&/\b(cause|happen|predict|will|future)\b/i.test(q))return {intent:'unanswerable',subjects:[],requires_multiple_sources:false,reason:'outside_publication_time_scope'};
  const ids=[...String(q).toUpperCase().matchAll(/\bEFTA[\s_.-]*([0-9]{1,8})\b/g)].map(m=>'EFTA'+m[1].padStart(8,'0'));
+ for(const m of String(q).toUpperCase().matchAll(/\bHOUSE[\s_-]*OVERSIGHT[\s_.-]*([0-9]{1,8})\b/g))ids.push('HOUSE_OVERSIGHT_'+m[1].padStart(6,'0'));
  if(ids.length)return {intent:'identifier',ids:[...new Set(ids)],subjects:[],requires_multiple_sources:false};
  const subjects=subjectOf(q),multi=/\b(compare|distinguish|multiple|before.+after|what evidence)\b/i.test(q);
  if(/\b(password|credentials?|private\s+nas|redacted.*identity|victim.*identit|prove.*committed|prove.*guilt|future)\b/i.test(q))return {intent:'unanswerable',subjects,requires_multiple_sources:false,reason:'unsupported_or_restricted_request'};

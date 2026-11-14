@@ -28,3 +28,5 @@ attachReviewedGraph(ATLAS_GRAPH_REVIEW,ATLAS_BUNDLED_PUBLICATION.catalog.publish
 r=await worker.fetch(new Request(host+'/.well-known/ai-catalog.json'),env);j=await r.json();assert.equal(j.entries.length,4);assert(j.entries.some(x=>x.identifier.endsWith(':api:public')&&x.url===host+'/openapi.json'));
 r=await worker.fetch(new Request(host+'/.well-known/mcp/server-card.json'),env);j=await r.json();assert(j.tools.some(x=>x.name==='search_research_preview'));
 console.log('PASS existing Ask GAH POST and MCP routing, zero source/NAS/asset reads, real-date validation, reviewed graph hash revocation and existing four-entry discovery catalog integration');
+
+for(const q of ['HOUSE_OVERSIGHT_013470','House Oversight 13470','Bates HOUSE-OVERSIGHT-013470']){assert.equal(classifyRetrieval(q).intent,'identifier');assert.equal(classifyRetrieval(q).ids[0],'HOUSE_OVERSIGHT_013470');assert(routeSearch(q).abstained);assert.equal(routeSearch(q).results.length,0);}
