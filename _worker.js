@@ -1,3 +1,4 @@
+import { researchPreviewHttp, previewPaths as researchPreviewPaths } from './content/research-preview.mjs';
 import { ATLAS_BUNDLED_PUBLICATION } from "./content/atlas-bundled-publication.mjs";
 import { ATLAS_PREPARED_READER } from "./content/atlas-prepared-reader.mjs";
 import { ATLAS_GRAPH_REVIEW } from "./content/atlas-graph-reviewed.mjs";
@@ -18795,6 +18796,7 @@ export default {
   async handleStagingFetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
+    if (researchPreviewPaths.includes(path)) return researchPreviewHttp(request, env, () => gahSecDoCall(env, {op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));
 
     if ((request.method === "GET" || request.method === "HEAD") && url.pathname.startsWith("/book-of-black/source/") && url.pathname !== "/book-of-black/source/Book_of_Black_V6HHT.pdf") return evidenceAssetMissing(request);
 

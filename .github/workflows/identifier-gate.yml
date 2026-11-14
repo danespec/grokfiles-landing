@@ -43,3 +43,5 @@ jobs:
           python3 tests/test_atlas_publication_pipeline.py
           node tests/test_staging_harden.mjs
           node tests/test_ai_discovery_005.mjs
+      - name: Staging research preview publication and security gate
+        run: node tests/test_research_preview.mjs
