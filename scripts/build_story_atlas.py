@@ -68,3 +68,6 @@ print(json.dumps({'stories':len(entries),'confirmed':30,'probable':52,'fragments
 # Keep machine discovery version-aligned with the published data.
 import subprocess, sys
 subprocess.run([sys.executable,str(root/'scripts/build_agent_atlas_catalog.py')],check=True)
+
+# Prepare the reviewed public reader outside the request CPU budget.
+subprocess.run(["node",str(root/"scripts/build_prepared_atlas.mjs")],check=True)

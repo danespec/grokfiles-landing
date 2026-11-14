@@ -1,3 +1,4 @@
+import { ATLAS_PREPARED_READER } from "./content/atlas-prepared-reader.mjs";
 import { ATLAS_GRAPH_REVIEW } from "./content/atlas-graph-reviewed.mjs";
 import { instrumentHtmlResponse, canInstrumentHtmlResponse, normalizeAnalyticsHtml } from "./workers/lib/analytics-html.mjs";
 import { EVIDENCE_ASSETS } from './content/evidence-assets.mjs';
@@ -4283,6 +4284,38 @@ async function serveFrontdoor(request, env, assetPath = "") {
   }
   const response = await env.ASSETS.fetch(assetRequest);
   return withHeader(response, "X-Grok-Frontdoor", "GAH-FRONTDOOR-001");
+}
+
+// Published Atlas HTML is prepared at build time. Dynamic consent and headers
+// remain request-time; no per-request scan of thousands of links or 2MB of prose.
+export async function gahPrepareAtlasForBuild(source) {
+  const request=new Request("https://grokarchivehub.com/atlas/");
+  const env={GAH_GOOGLE_TAG_ENABLED:"false",CMP_ADS_ENABLED:"false"};
+  const scripts=consentScriptTag(env);
+  const enhanced=enhanceHtmlText(source,request,{canonical:"https://grokarchivehub.com/atlas/"},env);
+  const quality=await readerQualityResponse(new Response(enhanced,{headers:{"Content-Type":"text/html"}}),request,[...GAH_IDENTIFIER_DOSSIERS.values()]);
+  const normalized=normalizeAnalyticsHtml(await quality.text(),scripts);
+  if(normalized.split(scripts).length!==2)throw new Error("Atlas consent template must have exactly one runtime slot");
+  return {html:normalized.replace(scripts,""),markdown:htmlToAgentMarkdown(normalized,request)};
+}
+async function gahServePreparedAtlas(request,env) {
+  if(adsenseApproved(env))return serveFrontdoorEnhanced(request,env,"/atlas.html",{canonical:"https://grokarchivehub.com/atlas/"});
+  const markdown=/\btext\/markdown\b/i.test(request.headers.get("Accept")||"");
+  const path=markdown?"/atlas/prepared-reader.md":"/atlas/prepared-reader.html";
+  const url=new URL(path,request.url);url.search="";
+  const asset=await env.ASSETS.fetch(url.toString());
+  if(!asset.ok||ATLAS_PREPARED_READER.schema!=="gah.atlas.prepared-reader.v1")return new Response("Published Atlas reader unavailable",{status:503,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
+  const headerRequest=new Request(request.url,{method:"HEAD",headers:{Accept:"text/html"}});
+  const assetHeaders=new Headers(asset.headers);assetHeaders.set("Content-Type","text/html");
+  const head=await enhanceHtmlResponse(new Response(null,{status:200,headers:assetHeaders}),headerRequest,{canonical:"https://grokarchivehub.com/atlas/"},env);
+  const headers=new Headers(head.headers);
+  headers.set("X-GAH-Prepared-Atlas","v1");headers.set("X-GAH-Reader-Quality","20261027");
+  headers.set("Cache-Control",isStagingEnv(env)?"no-store":(asset.headers.get("Cache-Control")||"public, max-age=0, must-revalidate"));
+  if(markdown){headers.set("Content-Type","text/markdown; charset=utf-8");headers.set("X-GAH-Agent-Readiness","markdown-negotiation-v1");headers.set("X-Markdown-Tokens",String(ATLAS_PREPARED_READER.markdown_tokens));headers.set("X-Original-Tokens",String(ATLAS_PREPARED_READER.original_tokens));return new Response(request.method==="HEAD"?null:asset.body,{headers});}
+  headers.set("X-GAH-Analytics-Instrumentation","GAH-ANALYTICS-PARITY-001");
+  const response=new Response(request.method==="HEAD"?null:asset.body,{headers});
+  if(request.method==="HEAD")return response;
+  return new HTMLRewriter().on("head",{element(element){element.append(consentScriptTag(env),{html:true});}}).transform(response);
 }
 
 async function serveFrontdoorEnhanced(request, env, assetPath = "", meta = {}) {
@@ -18785,6 +18818,7 @@ export default {
       if (path === "/archive/ids") return serveFrontdoorEnhanced(request, env, "/archive/ids.html");
     }
 
+    if (/^\/atlas\/prepared-reader(?:\.html|\.md)?$/.test(path)) return new Response(null,{status:404,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
     if (path==="/atlas/agent-catalog.json") return new Response(null,{status:404,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
     if (path==="/llms.txt" || path==="/api/v1/stories" || path.startsWith("/api/v1/stories/") || path==="/api/v1/atlas/status" || path==="/api/v1/atlas/graph") {
       if(path!=="/llms.txt") {
@@ -19369,7 +19403,7 @@ export default {
 
     // Approved Story Atlas v3.1: editorial page and exact downloadable dataset.
     if ((request.method === "GET" || request.method === "HEAD") && path === "/atlas") {
-      return serveFrontdoorEnhanced(request, env, "/atlas.html", {canonical: "https://grokarchivehub.com/atlas/"});
+      return gahServePreparedAtlas(request, env);
     }
     if ((request.method === "GET" || request.method === "HEAD") && ["/atlas/data.json", "/atlas/coverage.txt"].includes(path)) {
       const assetUrl = new URL(request.url);

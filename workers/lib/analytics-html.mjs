@@ -10,6 +10,7 @@ export function normalizeAnalyticsHtml(html, scripts) {
 }
 
 export function canInstrumentHtmlResponse(response, request) {
+  if (/^\/atlas\/?$/.test(new URL(request.url).pathname) && response.headers.get('X-GAH-Prepared-Atlas') === 'v1') return false;
   if (request.method !== 'GET' || response.status !== 200 || !/text\/html/i.test(response.headers.get('Content-Type') || '')) return false;
   const url = new URL(request.url);
   if (!['grokarchivehub.com', 'www.grokarchivehub.com', 'wiki.grokarchivehub.com'].includes(url.hostname) && !url.hostname.endsWith('.pages.dev')) return false;

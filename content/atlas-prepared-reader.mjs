@@ -1,0 +1,2 @@
+// Generated from the published Atlas and current reader transforms.
+export const ATLAS_PREPARED_READER = Object.freeze({"schema":"gah.atlas.prepared-reader.v1","source_html_sha256":"b61d25b5082bec7643d2fb3946d7f5bb3822ca921c18951e5481ee88da188438","html_sha256":"186d18bf7193841c662d9142cccfe4cbe1ba007d70cb0692ed47eee9e4ef93bc","markdown_sha256":"c34d6a85b44aef260af204825af301c1c1d292f620db66017cc31f5db67b5efc","markdown_tokens":305642,"original_tokens":579719});
