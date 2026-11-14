@@ -30,3 +30,21 @@ export async function researchPreviewHttp(request,env,throttle){
  if(!q.trim())return reply({error:'query_required'},400);
  return reply({schema:MODEL.schema,version,method:MODEL.method,scope:MODEL.scope,...searchPreview(q,+limit),origin_requests:0,nas_reads:0},200,{ETag:etag});
 }
+
+export function researchPreviewEnabled(request,env){return Boolean(request)&&String(env?.GAH_STAGING)==='true'&&new URL(request.url).hostname.endsWith('.gah-staging-517b8499.pages.dev');}
+export const researchPreviewTools=[
+ {name:'search_research_preview',description:'Staging-only public metadata LSA/keyword pilot; verify cited publications and primary evidence.',inputSchema:{type:'object',properties:{q:{type:'string',maxLength:256},limit:{type:'integer',minimum:1,maximum:10}},required:['q'],additionalProperties:false}},
+ {name:'get_publication_changes_preview',description:'Staging-only version-pinned public publication metadata and reviewed corrections.',inputSchema:{type:'object',properties:{cursor:{type:'integer',minimum:0,maximum:999999},limit:{type:'integer',minimum:1,maximum:10},version:{type:'string'}},additionalProperties:false}}
+];
+export async function researchPreviewTool(name,args,request,env,throttle){
+ if(!researchPreviewEnabled(request,env))throw Error('Unknown MCP tool: '+name);
+ const search=name==='search_research_preview',allowed=search?['q','limit']:['cursor','limit','version'];
+ if(Object.keys(args).some(k=>!allowed.includes(k)))throw Error('Invalid preview arguments');
+ const u=new URL(request.url);u.pathname=search?previewPaths[0]:previewPaths[1];u.search='';
+ for(const [k,v] of Object.entries(args)){if(typeof v!=='string'&&typeof v!=='number')throw Error('Invalid preview arguments');u.searchParams.set(k,String(v));}
+ const r=await researchPreviewHttp(new Request(u),env,throttle);if(!r.ok)throw Error('Preview temporarily unavailable');return r.json();
+}
+export const researchPreviewOpenApiPaths={
+ '/api/v1/research/search':{get:{operationId:'searchResearchPreview',summary:'Staging-only public metadata hybrid search',parameters:[{name:'q',in:'query',required:true,schema:{type:'string',maxLength:256}},{name:'limit',in:'query',schema:{type:'integer',minimum:1,maximum:10}}],responses:{200:{description:'Bounded editorial discovery candidates'},400:{description:'Invalid arguments'},429:{description:'Rate limited'},503:{description:'Limiter unavailable'}}}},
+ '/api/v1/publications/changes':{get:{operationId:'getPublicationChangesPreview',summary:'Staging-only incremental public metadata feed',parameters:[{name:'cursor',in:'query',schema:{type:'integer',minimum:0,maximum:999999}},{name:'version',in:'query',schema:{type:'string'}},{name:'limit',in:'query',schema:{type:'integer',minimum:1,maximum:10}}],responses:{200:{description:'Versioned sequence and correction records'},409:{description:'Version changed'},429:{description:'Rate limited'}}}}
+};

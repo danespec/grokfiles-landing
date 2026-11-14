@@ -20,3 +20,14 @@ const cases=[['Barak St Thomas December 2014','barak-st-thomas-dec-2014'],['Leon
 let recall=0,mrr=0;const rows=[];for(const [query,target] of cases){const t=performance.now(),results=searchPreview(query).results,rank=results.findIndex(r=>r.url.endsWith(target))+1;recall+=rank>0?1:0;mrr+=rank?1/rank:0;rows.push({query,target,rank,latency_ms:performance.now()-t});}console.log(JSON.stringify({benchmark:'development smoke set; not held-out evidence',cases:rows,recall_at_5:recall/cases.length,mrr:mrr/cases.length}));
 
 for(const d of MODEL.documents){const path=new URL(d.url).pathname;let raw;for(const suffix of [path,path+".html",path+"/index.html"]){try{raw=await fs.readFile(new URL(".."+suffix,import.meta.url));break;}catch{}}assert(raw,"published source exists");assert.equal(crypto.createHash("sha256").update(raw).digest("hex"),d.source_sha256,"Publication changed: invalidate/review metadata model and feed");}
+
+const {default:worker}=await import('../_worker.js');
+const fullEnv={GAH_STAGING:'true',GAH_AGENT_METRICS_SAMPLE_RATE:'0',GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({limited:false})})},ASSETS:{fetch:async()=>new Response(null,{status:404})}};
+const rpc=async(host,method,params={})=>(await worker.fetch(new Request('https://'+host+'/mcp',{method:'POST',headers:{'Content-Type':'application/json','CF-Connecting-IP':'192.0.2.1'},body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})}),fullEnv)).json();
+const hostname='pilot.gah-staging-517b8499.pages.dev';
+assert((await rpc(hostname,'tools/list')).result.tools.some(t=>t.name==='get_publication_changes_preview'));
+assert(!(await rpc('grokarchivehub.com','tools/list')).result.tools.some(t=>t.name==='get_publication_changes_preview'));
+assert.equal((await rpc(hostname,'tools/call',{name:'search_research_preview',arguments:{q:'Barak'}})).result.structuredContent.results[0].channel,'hybrid');
+assert.equal((await rpc('grokarchivehub.com','tools/call',{name:'search_research_preview',arguments:{q:'Barak'}})).result.isError,true);
+for(const [host,expected] of [[hostname,true],['grokarchivehub.com',false]]){const r=await worker.fetch(new Request('https://'+host+'/openapi.json'),fullEnv);assert.equal(Boolean((await r.json()).paths['/api/v1/research/search']),expected);}
+console.log('PASS existing MCP and OpenAPI preview integration, with production tool/schema exclusion');

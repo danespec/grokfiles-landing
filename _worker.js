@@ -1,4 +1,4 @@
-import { researchPreviewHttp, previewPaths as researchPreviewPaths } from './content/research-preview.mjs';
+import { researchPreviewHttp, previewPaths as researchPreviewPaths, researchPreviewEnabled, researchPreviewTools, researchPreviewTool, researchPreviewOpenApiPaths } from './content/research-preview.mjs';
 import { ATLAS_BUNDLED_PUBLICATION } from "./content/atlas-bundled-publication.mjs";
 import { ATLAS_PREPARED_READER } from "./content/atlas-prepared-reader.mjs";
 import { ATLAS_GRAPH_REVIEW } from "./content/atlas-graph-reviewed.mjs";
@@ -2817,6 +2817,7 @@ function gahCommerce082Html(){
 }
 
 async function gahMcpCallTool(name, args, request, env) {
+  if(researchPreviewTools.some(t=>t.name===name))return researchPreviewTool(name,args,request,env,()=>gahSecDoCall(env,{op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));
   if(name==="get_atlas_citation_graph"||name==="list_atlas_stories") {
     const url=new URL(request.url);
     url.pathname=name==="get_atlas_citation_graph"?"/api/v1/atlas/graph":"/api/v1/stories";
@@ -2907,7 +2908,7 @@ async function gahMcpMessage(message, request, env) {
     serverInfo: { name: "grok-archive-hub", title: "Grok Archive Hub Research MCP", version: "1.0.0" },
     instructions: "Read-only source-first research. Treat search hits as retrieval candidates and verify underlying records before strong claims."
   });
-  if (method === "tools/list") return gahMcpResult(id, { tools: gahAllMcpTools() });
+  if (method === "tools/list") return gahMcpResult(id, { tools: [...gahAllMcpTools(),...(researchPreviewEnabled(request,env)?researchPreviewTools:[])] });
   if (method === "tools/call") {
     const toolName=typeof message.params?.name==="string" ? message.params.name : "";
     const started=Date.now();
@@ -3605,10 +3606,11 @@ export async function gahAtlasCatalogHttp(request,env,path,catalog=ATLAS_BUNDLED
   return reply(body,200,headers);
 }
 
-function gahDynamicOpenApi() {
+function gahDynamicOpenApi(request, env) {
   const spec = JSON.parse(AGENT_READY_OPENAPI);
   spec.info = { ...(spec.info || {}), version: "1.4.0" };
   spec.paths = spec.paths || {};
+  if(researchPreviewEnabled(request,env)){Object.assign(spec.paths,researchPreviewOpenApiPaths);spec.servers=[{url:new URL(request.url).origin}];}
   const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"429":{description:"Atomic per-client rate limit; retry after 60 seconds"},"503":{description:"Catalog or required limiter unavailable"}};
   spec.paths["/api/v1/stories"]={get:{operationId:"listAtlasStories",summary:"Bounded public story catalog; not evidence of guilt",parameters:[{name:"limit",in:"query",schema:{type:"integer",minimum:1,maximum:50,default:20}},{name:"cursor",in:"query",schema:{type:"integer",minimum:0,default:0}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
   spec.paths["/api/v1/stories/{id}"]={get:{operationId:"getAtlasStoryLocator",summary:"Get exact published story locator",parameters:[{name:"id",in:"path",required:true,schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}}],responses:atlasResponses}};
@@ -19643,7 +19645,7 @@ export default {
     }
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/openapi.json") {
-      return new Response(request.method === "HEAD" ? null : gahDynamicOpenApi(), {
+      return new Response(request.method === "HEAD" ? null : gahDynamicOpenApi(request, env), {
         status: 200,
         headers: {
           "Content-Type": "application/vnd.oai.openapi+json; charset=utf-8",
