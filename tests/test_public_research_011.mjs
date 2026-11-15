@@ -1,7 +1,8 @@
+import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import worker,{gahResearchIndexablePublication} from '../_worker.js';
+const {default:worker,gahResearchIndexablePublication}=await import(process.env.GAH_RESEARCH_TEST_BUNDLE?pathToFileURL(process.env.GAH_RESEARCH_TEST_BUNDLE).href:new URL('../_worker.js',import.meta.url).href);
 import MODEL from '../content/research-corpus-010.mjs';
 import {SEARCH_011,CORPUS_011,STAGE_011} from '../content/public-research-011.mjs';
 const apex='https://grokarchivehub.com';
