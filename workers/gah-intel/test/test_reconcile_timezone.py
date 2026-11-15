@@ -11,7 +11,7 @@ spec.loader.exec_module(r)
 
 class ReportingCalendarTests(unittest.TestCase):
     def test_worker_resource_failure_is_not_reported_as_missing_tag(self):
-        with patch.object(r, 'ROUTES', ['/news']), patch.object(r.subprocess, 'run', return_value=SimpleNamespace(stdout='error code: 1102\n\n503', returncode=0)):
+        with patch.object(r, 'ROUTES', ['/news']), patch.object(r, 'WIKI_ROUTES', []), patch.object(r.subprocess, 'run', return_value=SimpleNamespace(stdout='error code: 1102\n\n503', returncode=0)):
             health = r.health({})
         self.assertEqual(health[0]['status'], 'check')
         self.assertIn('HTTP 503; Worker resource limit (1102)', health[0]['note'])
@@ -22,6 +22,28 @@ class ReportingCalendarTests(unittest.TestCase):
         with patch.object(r, 'web', side_effect=[rows or [], []]) as web, patch.object(r, 'raw_day', return_value=[]) as raw, patch.object(r, 'ga4', return_value=report) as ga, patch.object(r, 'health', return_value=[]):
             result = r.collect(config, 'test-token', now)
         return result, web, raw, ga
+
+    def test_wiki_and_main_ga4_are_separate_and_total_is_aggregate(self):
+        rows=[{'dimensionValues':[{'value':'20261107'},{'value':host}],'metricValues':[{'value':str(n)}]} for host,n in [('grokarchivehub.com',54),('wiki.grokarchivehub.com',6)]]
+        report={'metadata':{'timeZone':'America/Los_Angeles'},'rows':rows,'aggregate':{'rows':[{'metricValues':[{'value':'60'},{'value':'9'},{'value':'4'}]}]}}
+        config={'reporting_timezone':'America/Los_Angeles','primary_site_tag':'primary','legacy_site_tag':'legacy'}
+        with patch.object(r,'web',return_value=[]),patch.object(r,'raw_day',return_value=[]),patch.object(r,'ga4',return_value=report),patch.object(r,'health',return_value=[]):
+            result=r.collect(config,'test-token',dt.datetime(2026,11,14,16,tzinfo=r.UTC))
+        metrics={m['label']:m['value'] for m in result['metrics']}
+        self.assertEqual(metrics['GA4 pageviews · main'],54)
+        self.assertEqual(metrics['GA4 pageviews · wiki'],6)
+        self.assertEqual(metrics['GA4 pageviews · public hosts'],60)
+        self.assertEqual(sum(d['ga4'] for d in result['daily']),54)
+        with patch.object(r,'web',return_value=[]),patch.object(r,'raw_day',return_value=[]),patch.object(r,'ga4',return_value=None),patch.object(r,'health',return_value=[]):
+            missing=r.collect(config,'test-token',dt.datetime(2026,11,14,16,tzinfo=r.UTC))
+        self.assertIsNone(next(m['value'] for m in missing['metrics'] if m['label']=='GA4 pageviews · wiki'))
+
+    def test_wiki_gateway_runtime_is_accepted(self):
+        body='<script src="/__gah-analytics/analytics.js?v=test"></script><script>window.GAH_CONSENT_BOOT={"ga4MeasurementId":"G-XHE84C8D1V","googleTagEnabled":true};</script>'
+        with patch.object(r,'ROUTES',[]),patch.object(r,'WIKI_ROUTES',['https://wiki.grokarchivehub.com/']),patch.object(r.subprocess,'run',return_value=SimpleNamespace(stdout=body+'\n200',returncode=0)):
+            self.assertEqual(r.health({})[0]['status'],'pass')
+        with patch.object(r,'ROUTES',[]),patch.object(r,'WIKI_ROUTES',['https://wiki.grokarchivehub.com/']),patch.object(r.subprocess,'run',return_value=SimpleNamespace(stdout=body+body+'\n200',returncode=0)):
+            self.assertEqual(r.health({})[0]['status'],'check')
 
     def test_pacific_dates_and_hour_buckets_align(self):
         row = {'count': 7, 'dimensions': {'datetimeHour': '2026-11-07T07:00:00Z', 'requestHost': 'grokarchivehub.com', 'bot': 0, 'countryName': 'US', 'requestPath': '/', 'refererHost': ''}}
