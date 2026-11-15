@@ -7,12 +7,13 @@ const navAliases=new Map([
  ['grok archive hub search','search'],['gah archive','archive'],['open the ai assistant guide','assistant'],['where can i search the files','search']
 ]);
 export const RELEASE_STAGING_HOST='ai-retrieval-008.gah-staging-517b8499.pages.dev';
+export const RELEASE_STAGING_HOST_010='ai-retrieval-010-release.gah-staging-517b8499.pages.dev';
 export const RELEASE_STAGING_HOST_009='ai-retrieval-009.gah-staging-517b8499.pages.dev';
 export function productionResearchHost(request,env){
  return Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()!=='true'&&new URL(request.url).hostname==='grokarchivehub.com';
 }
 export function releaseSurfaceEnabled(request,env){
- return productionResearchHost(request,env)||(Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()==='true'&&[RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009].includes(new URL(request.url).hostname));
+ return productionResearchHost(request,env)||(Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()==='true'&&[RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009,RELEASE_STAGING_HOST_010].includes(new URL(request.url).hostname));
 }
 export function releaseNavigation(query){
  const key=String(query).trim().toLowerCase().replace(/[?!.]+$/,'').replace(/\s+/g,' ');

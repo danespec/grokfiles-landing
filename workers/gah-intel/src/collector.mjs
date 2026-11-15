@@ -2,8 +2,8 @@ import { PUBLIC_PATHS } from './public-paths.mjs';
 
 const encoder = new TextEncoder();
 const HOSTS = new Set(['grokarchivehub.com', 'www.grokarchivehub.com']);
-const API_PATHS = new Set(['/api/search', '/api/archive-status', '/api/book-of-black/status', '/api/book-of-black/ledger', '/mcp', '/openapi.json', '/robots.txt', '/sitemap.xml', '/sitemap-index.xml']);
-const SOURCES = [['google.com', 'google'], ['bing.com', 'bing'], ['duckduckgo.com', 'duckduckgo'], ['reddit.com', 'reddit'], ['x.com', 'x'], ['twitter.com', 'x'], ['t.co', 'x'], ['instagram.com', 'instagram'], ['facebook.com', 'facebook'], ['chatgpt.com', 'chatgpt'], ['grokarchivehub.com', 'internal']];
+const API_PATHS = new Set(['/api/search', '/api/archive-status', '/api/book-of-black/status', '/api/book-of-black/ledger', '/mcp', '/api/v1/publications/changes', '/api/v1/stories', '/api/v1/atlas/graph', '/api/v1/atlas/status', '/.well-known/ai-catalog.json', '/.well-known/mcp/server-card.json', '/llms.txt', '/openapi.json', '/robots.txt', '/sitemap.xml', '/sitemap-index.xml']);
+const SOURCES = [['google.com', 'google'], ['bing.com', 'bing'], ['duckduckgo.com', 'duckduckgo'], ['reddit.com', 'reddit'], ['x.com', 'x'], ['twitter.com', 'x'], ['t.co', 'x'], ['instagram.com', 'instagram'], ['facebook.com', 'facebook'], ['chatgpt.com', 'chatgpt'], ['claude.ai', 'claude'], ['perplexity.ai', 'perplexity'], ['gemini.google.com', 'gemini'], ['grokarchivehub.com', 'internal']];
 
 export function routeLabel(pathname) {
   // Only pre-existing published paths survive. No arbitrary URL segments or IDs.
@@ -48,6 +48,20 @@ export async function trafficLabel(request, env, now = Date.now()) {
   return 'unclassified';
 }
 
+export function researchServiceLabel(path){
+ if(path==='/mcp')return 'mcp';if(path==='/api/search')return 'archive_search';
+ if(path==='/api/v1/publications/changes')return 'publication_feed';
+ if(path.startsWith('/api/v1/atlas/')||path==='/api/v1/stories')return 'reviewed_graph';
+ if(/^\/(?:archive|api\/document-bundle)\/EFTA[0-9]{8}$/.test(path))return 'document';
+ if(/^\/(?:investigations|dispatches|corrections|evidence-briefs|guides)\//.test(path))return 'editorial';
+ if(['/llms.txt','/robots.txt','/openapi.json','/.well-known/ai-catalog.json','/.well-known/mcp/server-card.json'].includes(path))return 'discovery';
+ return 'other';
+}
+export function crawlerEvidence(request){
+ const value=request.cf?.verifiedBotCategory;
+ const category=['AI Search','AI Assistant','AI Crawler','Search Engine Crawler','Advertising & Marketing'].includes(value)?value:'unknown';
+ return {category,identity:request.cf?.botManagement?.verifiedBot===true?'provider_verified_bot':'unknown'};
+}
 export async function observeRequest(request, response, env, started, now = Date.now()) {
   try {
     if (env.GAH_INTEL_ENABLED !== 'true' || !env.GAH_INTEL_EVENTS?.writeDataPoint) return;
@@ -58,7 +72,7 @@ export async function observeRequest(request, response, env, started, now = Date
     env.GAH_INTEL_EVENTS.writeDataPoint({
       indexes: [url.hostname],
       blobs: ['gah_intel_v1', url.hostname, routeLabel(url.pathname), method, country,
-        sourceLabel(request.headers.get('referer')), await trafficLabel(request, env, now)],
+        sourceLabel(request.headers.get('referer')), await trafficLabel(request, env, now),researchServiceLabel(url.pathname),crawlerEvidence(request).category,crawlerEvidence(request).identity],
       doubles: [response.status, Math.max(0, Math.min(120000, now - started)),
         request.method === 'GET' && response.status >= 200 && response.status < 300 && /text\/html/i.test(response.headers.get('content-type') || '') ? 1 : 0],
     });

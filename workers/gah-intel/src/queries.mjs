@@ -16,7 +16,7 @@ export function queryPlan(searchParams, now = Date.now()) {
     sql: {
       summary: `SELECT ${requests} AS requests, SUM(_sample_interval * double3) AS html_responses, SUM(IF(double1 >= 500, _sample_interval, 0)) AS server_errors, SUM(IF(double1 >= 400 AND double1 < 500, _sample_interval, 0)) AS client_errors, SUM(_sample_interval * double2) / SUM(_sample_interval) AS mean_ms FROM ${DATASET} WHERE ${where} FORMAT JSON`,
       traffic: `SELECT blob7 AS label, ${requests} AS requests FROM ${DATASET} WHERE ${time} GROUP BY label ORDER BY requests DESC LIMIT 10 FORMAT JSON`,
-      routes: grouped('blob3'), countries: grouped('blob5'), sources: grouped('blob6'),
+      services: grouped('blob8'), crawler_categories: grouped('blob9'), crawler_identity: grouped('blob10'), routes: grouped('blob3'), countries: grouped('blob5'), sources: grouped('blob6'),
       timeline: `SELECT toStartOfInterval(timestamp, INTERVAL '1' ${hours > 168 ? 'DAY' : 'HOUR'}) AS bucket, ${requests} AS requests FROM ${DATASET} WHERE ${where} GROUP BY bucket ORDER BY bucket LIMIT 744 FORMAT JSON`,
     },
   };
@@ -39,7 +39,7 @@ export async function readDashboard(env, searchParams, fetcher = fetch, now = Da
   return {
     schema: 'gah_intel_dashboard_v1', generated_at: new Date(now).toISOString(),
     hours: plan.hours, traffic_filter: plan.traffic, since: plan.since, until: plan.until,
-    coverage: 'Pages Worker requests only; excluded static routes and edge-blocked requests are absent. Counts are sample-weighted estimates, not unique visitors or sessions.',
+    coverage: 'Pages Worker requests only; excluded static routes and edge-blocked requests are absent. Counts are sample-weighted estimates, not unique visitors, citations, customers or sessions. AI categories and provider verified-bot signals are separate dimensions; missing identity remains unknown. HTTP success alone does not establish retrieval relevance.',
     ...Object.fromEntries(entries),
   };
 }

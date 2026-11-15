@@ -10,9 +10,10 @@ const lanes=[
  {name:'timeline',queries:['epstein files timeline','epstein timeline','jeffrey epstein timeline','epstein chronology','epstein files chronology'],paths:['/timeline-reconstructions']}
 ];
 const byQuery=new Map(lanes.flatMap(l=>l.queries.map(q=>[q,l])));
-const hub={title:'Timeline Reconstructions | Grok Archive Hub',description:'Chronology work that keeps sequence, source confidence, and unresolved timing gaps separate from causation claims.'};
+const hub={source_sha256:'9e37b37aa0dee188247bbe3ac8f81aa2809063520860cb7a06dfd59c27455f18',title:'Timeline Reconstructions | Grok Archive Hub',description:'Chronology work that keeps sequence, source confidence, and unresolved timing gaps separate from causation claims.'};
 const allowed=new Set(['q','query','limit','tag','fast','no_ai','ai_layer']);
 const normalized=q=>String(q).trim().toLowerCase().replace(/[?!.]+$/,'').replace(/\s+/g,' ');
+export const editorialDiscoveryEnabled010=env=>!['false','0'].includes(String(env?.GAH_EDITORIAL_DISCOVERY_ENABLED??'true').toLowerCase());
 export function editorialLead009(query,payload,classification){
  if(classification!=='text'||payload?.no_ai!==true||Object.keys(payload).some(k=>!allowed.has(k)))return null;
  if(payload.tag!==undefined&&payload.tag!=='All')return null;
@@ -20,7 +21,7 @@ export function editorialLead009(query,payload,classification){
  const lane=byQuery.get(normalized(query));if(!lane)return null;
  const path=lane.paths[0],d=path==='/timeline-reconstructions'?hub:documents.get(path);
  if(!d)return null;
- return {lane:lane.name,row:{id:'GAH-EDITORIAL-009-'+lane.name.toUpperCase(),title:d.title,summary:d.description,description:d.description,read_url:APEX+path,url:APEX+path,result_type:'editorial_publication',verification:'public_editorial_locator',channel:'reviewed_editorial',citation_scope:'Published editorial locator; not independent verification of underlying claims.'}};
+ return {lane:lane.name,row:{id:'GAH-EDITORIAL-009-'+lane.name.toUpperCase(),title:d.title,summary:d.description,description:d.description,read_url:APEX+path,url:APEX+path,result_type:'editorial_publication',verification:'public_editorial_locator',channel:'reviewed_editorial',citation_scope:'Published editorial locator; not independent verification of underlying claims.',publication_sha256:d.source_sha256,citations:[{url:APEX+path,publication_sha256:d.source_sha256,kind:'published_editorial_locator',entailment:'not_independently_verified'}]}};
 }
 function canonical(row){
  try{const u=new URL(row?.read_url||row?.url||'',APEX);return u.origin===APEX?u.pathname.replace(/\/$/,''):null;}catch{return null;}
