@@ -1,4 +1,5 @@
-import M from './retrieval-routing-model.mjs';
+import DEFAULT_MODEL from './retrieval-routing-model.mjs';
+export function createRetrievalRouter(M){
 const stop=new Set('the and for from with this that into about record records document documents source sources epstein jeffrey files file how what which who where when is are was were do does did a an of in on to me i use open take get give can has had by between before after'.split(' '));
 const aliases=new Map(Object.entries({payments:'payment',paid:'payment',pay:'payment',fees:'payment',fee:'payment',flights:'flight',travel:'flight',aviation:'flight',passengers:'flight',aircraft:'aircraft',logs:'log',timelines:'timeline',chronological:'timeline',chronology:'timeline',transactions:'transaction',projections:'projection',records:'record'}));
 const words=s=>(String(s).toLowerCase().match(/[a-z0-9]{2,}/g)||[]).filter(t=>!stop.has(t)).map(t=>aliases.get(t)||t);
@@ -8,8 +9,8 @@ const hasSubject=(d,s)=>s==='barak'?/\bbarak\b/.test(hay(d)):/\bblack\b/.test(ha
 const financial=/\b(payments?|paid|pay|fees?|funds?|funded|funding|financial|finance|transaction|tax|money|wire|repricing|sale|loan|equity|million|financing)\b/i;
 const flight=/\b(flights?|logs?|travel|aviation|aircraft|passengers?)\b/i;
 const timeline=/\b(timeline|chronolog\w*|schedul\w*|before.*after)\b/i;
-export function classifyRetrieval(q){
- if(/\b(password|credentials?|private\s+nas|unredact|redacted.*identity|victim.*identit|witness.*identit)\b/i.test(q))return {intent:'unanswerable',subjects:[],requires_multiple_sources:false,reason:'restricted_request'};
+function classifyRetrieval(q){
+ if(/\b(password|credentials?|private\s+nas|unredact|redacted.*identity|victim.*identit\w*|witness.*identit\w*)\b/i.test(q))return {intent:'unanswerable',subjects:[],requires_multiple_sources:false,reason:'restricted_request'};
  if([...String(q).matchAll(/\b(20[0-9]{2})\b/g)].some(m=>Number(m[1])>M.publication_cutoff_year)&&/\b(cause|happen|predict|will|future)\b/i.test(q))return {intent:'unanswerable',subjects:[],requires_multiple_sources:false,reason:'outside_publication_time_scope'};
  const ids=[...String(q).toUpperCase().matchAll(/\bEFTA[\s_.-]*([0-9]{1,8})\b/g)].map(m=>'EFTA'+m[1].padStart(8,'0'));
  for(const m of String(q).toUpperCase().matchAll(/\bHOUSE[\s_-]*OVERSIGHT[\s_.-]*([0-9]{1,8})\b/g))ids.push('HOUSE_OVERSIGHT_'+m[1].padStart(6,'0'));
@@ -22,14 +23,17 @@ export function classifyRetrieval(q){
 const norm=v=>{const n=Math.hypot(...v);return n?v.map(x=>x/n):v;};const dot=(a,b)=>a.reduce((s,v,i)=>s+v*b[i],0);
 const docWords=M.documents.map(d=>words(d.title+' '+d.title+' '+d.title+' '+d.description+' '+(d.index_text||'')));const avg=docWords.reduce((n,x)=>n+x.length,0)/docWords.length;
 const df=new Map();for(const row of docWords)for(const t of new Set(row))df.set(t,(df.get(t)||0)+1);
+let graphEpoch=0;
+const reviewedGraphEpoch=()=>graphEpoch;
 const membership={};
-export function attachReviewedGraph(review,publicationHash,registryHash){
+function attachReviewedGraph(review,publicationHash,registryHash){
+ graphEpoch++;
  // Caller binds the existing reviewed projection to the bundled publication.
  for(const k of Object.keys(membership))delete membership[k];
  if(!review||review.published_registry_sha256!==registryHash||review.published_data_sha256!==publicationHash||publicationHash!==M.atlas_publication_sha256)return;
  for(const [id,path] of Object.entries(review.editorial_paths||{})){const url='https://grokarchivehub.com'+path;const stories=(review.stories||[]).filter(s=>s.document_ids.includes(id)).map(s=>s.id);(membership[url]??=[]).push({document_id:id,story_ids:stories,relation:'reviewed_citation_membership_only'});}
 }
-export function routeSearch(q,limit=5,options={}){
+function routeSearch(q,limit=5,options={}){
  const route=classifyRetrieval(q),base={schema:M.schema,model_version:M.version,intent:route.intent,strategy:options.fusion||'lexical_guarded',method:M.method,scope:M.documents.length+' approved public editorial publications; metadata and one bounded passage; no claim-level synthesis',answer:null,uncertainty:['Discovery candidates only; verify original evidence.','Association is not proof of wrongdoing.'],origin_requests:0,nas_reads:0};
  const done=(rows,reason)=>({...base,results:rows,abstained:rows.length===0,insufficient_evidence:route.requires_multiple_sources||rows.length===0,claim_verification:'not_performed',coverage_reason:reason||'editorial_discovery_only'});
  if(route.intent==='unanswerable')return done([],route.reason);
@@ -54,4 +58,13 @@ export function routeSearch(q,limit=5,options={}){
  rows=rows.slice(0,limit).map(({index,graph,index_text,...d})=>({...d,channel:'intent_hybrid',related_atlas:graph,citations:[{url:d.url,kind:'published_editorial',publication_sha256:d.source_sha256}],date_semantics:'publication date only; unknown dates excluded by date filters'}));
  return done(rows,rows.length?'editorial_discovery_only':'insufficient_evidence_in_preview_corpus');
 }
-export const routingModelVersion=M.version;
+const routingModelVersion=M.version;
+
+return {routeSearch,classifyRetrieval,attachReviewedGraph,routingModelVersion,reviewedGraphEpoch};
+}
+const router=createRetrievalRouter(DEFAULT_MODEL);
+export const routeSearch=router.routeSearch;
+export const classifyRetrieval=router.classifyRetrieval;
+export const attachReviewedGraph=router.attachReviewedGraph;
+export const routingModelVersion=router.routingModelVersion;
+export const reviewedGraphEpoch=router.reviewedGraphEpoch;

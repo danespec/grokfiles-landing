@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Verify internal links and promoted slug targets
         run: python3 tests/test_identifier_link_gate_20261027.py
       - name: Verify dossier routing, sitemaps and metadata
@@ -53,3 +56,17 @@ jobs:
         run: node tests/test_retrieval_release_008.mjs
       - name: Reviewed editorial ranking and full archive preservation gate
         run: node tests/test_editorial_ranking_009.mjs
+
+      - name: Research 010 provenance, privacy and isolation gates
+        run: |
+          python3 scripts/build_research_corpus_010.py --check
+          python3 scripts/build_research_runtime_010.py --check
+          node tests/test_research_010.mjs
+
+      - name: Private telemetry schema, authentication and aggregate query contracts
+        working-directory: workers/gah-intel
+        run: |
+          npm ci --ignore-scripts
+          node --test test/intel.test.mjs
+      - name: Frozen benchmark and independent-review guard
+        run: python3 tests/test_research_review_guard_010.py

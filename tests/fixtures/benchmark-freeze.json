@@ -1,0 +1,9 @@
+{
+  "schema": "gah.benchmark.freeze.v1",
+  "sha256": "53ed4627450a4b31459c52bc9c0b48b9e3219bc5d57593971b53ff7e8ab4125d",
+  "queries": 250,
+  "development": 150,
+  "held_out": 100,
+  "families": 50,
+  "split_policy": "Five-query families are kept together; freeze before evaluation. Independent human qrels are absent. Do not tune against held-out results or claim human acceptance."
+}

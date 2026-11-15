@@ -1,4 +1,5 @@
-import { editorialLead009, mergeEditorialLead009 } from './content/editorial-ranking-009.mjs';
+import {attachResearchGraph010} from './content/research-pipeline-010.mjs';
+import { editorialLead009, mergeEditorialLead009, editorialDiscoveryEnabled010 } from './content/editorial-ranking-009.mjs';
 import { releaseSurfaceEnabled, releaseNavigation, PUBLIC_FEED_PATH, publicPublicationFeed, publicFeedTool, publicFeedSpec } from './content/retrieval-release.mjs';
 import { attachReviewedGraph } from './content/retrieval-routing.mjs';
 import { researchPreviewHttp, previewPaths as researchPreviewPaths, researchPreviewEnabled, researchPreviewTools, researchPreviewTool, researchPreviewOpenApiPaths } from './content/research-preview.mjs';
@@ -12,6 +13,7 @@ import { readerQualityResponse, publicationRule } from './reader-quality.mjs';
 import { scheduleObservation } from './workers/gah-intel/src/collector.mjs';
 
 attachReviewedGraph(ATLAS_GRAPH_REVIEW,ATLAS_BUNDLED_PUBLICATION.catalog.published_data_sha256,ATLAS_BUNDLED_PUBLICATION.catalog.published_registry_sha256);
+attachResearchGraph010(ATLAS_GRAPH_REVIEW,ATLAS_BUNDLED_PUBLICATION.catalog.published_data_sha256,ATLAS_BUNDLED_PUBLICATION.catalog.published_registry_sha256);
 
 const GAH_TRENDING_SLOT = "<!-- GAH-TRENDING-001 -->";
 const GAH_TRENDING_KV_KEY = "gah:public:trending:topics:v1";
@@ -6500,7 +6502,7 @@ async function handlePublicSearch(request, env) {
   const requestedLimit = Math.min(Math.max(Number(payload.limit) || 10, 1), 50);
   // Only on successful, explicitly non-generative, unfiltered archive searches.
   // Preserve legacy result order in a separate field, with no extra origin fetch.
-  const editorial009 = upstream.ok && data?.ok !== false && !data?.degraded && data?.ai_summary_used !== true && !data?.answer && releaseSurfaceEnabled(request,env)
+  const editorial009 = upstream.ok && data?.ok !== false && !data?.degraded && data?.ai_summary_used !== true && !data?.answer && releaseSurfaceEnabled(request,env) && editorialDiscoveryEnabled010(env)
     ? (Number.isSafeInteger(requestedLimit) ? editorialLead009(query,payload,queryClassification.kind) : null)
     : null;
   rows = rows.slice(0, exact ? Math.max(1, requestedLimit) : requestedLimit);
@@ -19767,4 +19769,4 @@ export default {
   }
 };
 
-function gahRoutingDiscoveryCatalog(request,env){if(!researchPreviewEnabled(request,env))return GAH_ARD_CATALOG;const d=JSON.parse(GAH_ARD_CATALOG),origin=new URL(request.url).origin;for(const e of d.entries){if(e.identifier.endsWith(':api:public'))e.url=origin+'/openapi.json';if(e.identifier.endsWith(':server:research-mcp'))e.url=origin+'/.well-known/mcp/server-card.json';if(e.identifier.endsWith(':api:public')||e.identifier.endsWith(':server:research-mcp'))e.representativeQueries.push('route navigation, subject, payment, flight and chronology questions through the protected retrieval preview; responses are discovery candidates, not conclusions');}return JSON.stringify(d);}
+function gahRoutingDiscoveryCatalog(request,env){const d=JSON.parse(GAH_ARD_CATALOG),origin=new URL(request.url).origin;if(releaseSurfaceEnabled(request,env)){const e=d.entries.find(x=>x.identifier.endsWith(':api:public'));if(e)e.publicationFeed={url:origin+PUBLIC_FEED_PATH,scope:'bounded editorial register; not a complete archive feed',schema:'gah.publications.changes.v1'};}if(!researchPreviewEnabled(request,env))return JSON.stringify(d);for(const e of d.entries){if(e.identifier.endsWith(':api:public'))e.url=origin+'/openapi.json';if(e.identifier.endsWith(':server:research-mcp'))e.url=origin+'/.well-known/mcp/server-card.json';if(e.identifier.endsWith(':api:public')||e.identifier.endsWith(':server:research-mcp'))e.representativeQueries.push('route navigation, subject, payment, flight and chronology questions through the protected retrieval preview; responses are discovery candidates, not conclusions');}return JSON.stringify(d);}

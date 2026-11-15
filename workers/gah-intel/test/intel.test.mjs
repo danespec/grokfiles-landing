@@ -18,7 +18,7 @@ test('privacy schema discards IP, identifiers, query text, cookies, full referre
   });
   Object.defineProperty(request, 'cf', { value: { country: 'US', city: 'Parker', asn: 1234 } });
   await observeRequest(request, html, { GAH_INTEL_ENABLED: 'true', GAH_INTEL_EVENTS: { writeDataPoint: p => points.push(p) } }, now - 25, now);
-  assert.deepEqual(points, [{ indexes: ['grokarchivehub.com'], blobs: ['gah_intel_v1', 'grokarchivehub.com', '/[other]', 'GET', 'US', 'reddit', 'unclassified'], doubles: [200, 25, 1] }]);
+  assert.deepEqual(points, [{ indexes: ['grokarchivehub.com'], blobs: ['gah_intel_v1', 'grokarchivehub.com', '/[other]', 'GET', 'US', 'reddit', 'unclassified', 'other', 'unknown', 'unknown'], doubles: [200, 25, 1] }]);
   assert.doesNotMatch(JSON.stringify(points), /192\.0|private|session|example\.com|Parker|1234|unique marker/);
   assert.equal(routeLabel('/investigations.html'), '/investigations');
   assert.equal(routeLabel('/api/account/secret-id'), '/api/[other]');
@@ -102,9 +102,10 @@ test('all dashboard surfaces fail closed, never cache publicly and reject writes
 
 test('SQL filters are bounded, sample weights are used and raw SQL cannot be submitted', async () => {
   const p = queryPlan(new URLSearchParams('hours=24'), now);
-  assert.equal(p.traffic, 'unclassified'); assert.equal(Object.keys(p.sql).length, 6);
+  assert.equal(p.traffic, 'unclassified'); assert.equal(Object.keys(p.sql).length, 9);
   for (const sql of Object.values(p.sql)) { assert.match(sql, /SUM\(_sample_interval/); assert.match(sql, /FORMAT JSON$/); }
   assert.match(p.sql.summary, /blob7 = 'unclassified'/);
+  assert.match(p.sql.services,/blob8/);assert.match(p.sql.crawler_categories,/blob9/);assert.match(p.sql.crawler_identity,/blob10/);
   assert.doesNotMatch(p.sql.traffic, /blob7 = 'unclassified'/);
   assert.throws(() => queryPlan(new URLSearchParams("traffic=x' OR 1=1")), /Invalid/);
   assert.throws(() => queryPlan(new URLSearchParams('hours=-24')), /Invalid/);
@@ -113,7 +114,7 @@ test('SQL filters are bounded, sample weights are used and raw SQL cannot be sub
   const payload = await readDashboard({ CF_ACCOUNT_ID: 'a'.repeat(32), ANALYTICS_READ_TOKEN: 'test-private-token' }, new URLSearchParams(), async (url, init) => {
     calls.push({ url, init }); return Response.json({ data: [{ requests: '2' }] });
   }, now);
-  assert.equal(calls.length, 6); assert.match(calls[0].init.headers.Authorization, /Bearer/);
+  assert.equal(calls.length, 9); assert.match(calls[0].init.headers.Authorization, /Bearer/);
   assert.doesNotMatch(JSON.stringify(payload), /test-private-token|Authorization|SELECT/);
   await assert.rejects(() => readDashboard({ CF_ACCOUNT_ID: 'a'.repeat(32), ANALYTICS_READ_TOKEN: 'token' }, new URLSearchParams(), async () => new Response('secret provider detail', { status: 403 })), /Analytics query failed/);
 });
