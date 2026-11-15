@@ -51,6 +51,7 @@ export async function trafficLabel(request, env, now = Date.now()) {
 export function researchServiceLabel(path){
  if(path==='/mcp')return 'mcp';if(path==='/api/search')return 'archive_search';
  if(path==='/api/v1/publications/changes')return 'publication_feed';
+ if(path==='/api/v1/research/editorial-search')return 'editorial_search';if(path==='/api/v1/research/editorial-corpus')return 'editorial_corpus';
  if(path.startsWith('/api/v1/atlas/')||path==='/api/v1/stories')return 'reviewed_graph';
  if(/^\/(?:archive|api\/document-bundle)\/EFTA[0-9]{8}$/.test(path))return 'document';
  if(/^\/(?:investigations|dispatches|corrections|evidence-briefs|guides)\//.test(path))return 'editorial';
