@@ -39,7 +39,7 @@ export function qualityHtml(input,href,entries=[]){
  let html=String(input);if(!/<head\b/i.test(html))return html;
  html=html.replace(/<!--(?:(?!-->)[\s\S])*GROK_(?:(?!-->)[\s\S])*-->/g,'');
  html=html.replace(/evidence cockpit(?: V4)?/gi,'Evidence overview').replace(/staged supermatrix/gi,'reviewed flight-log index');
- const u=new URL(href);const path=u.pathname.replace(/\/+$/,'')||'/';const canonical=u.origin+(path==='/'?'/':path);
+ const u=new URL(href);const path=u.pathname.replace(/\/+$/,'')||'/';const canonical=(u.hostname==='seo-title-enrichment.gah-staging-517b8499.pages.dev'?'https://grokarchivehub.com':u.origin)+(path==='/'?'/':path);
  let title=normalizeReaderTitle((html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)||[])[1]||'Grok Archive Hub');
  const editorial=READER_EDITORIAL_METADATA[canonical];
  if(editorial)title=editorial.title;
