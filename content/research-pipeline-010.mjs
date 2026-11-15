@@ -1,3 +1,4 @@
+import {editorialGuard,administrativeLocator,citationPacket} from './research-evidence-closeout.mjs';
 import RUNTIME from './research-runtime-010.mjs';
 import {createRetrievalRouter} from './retrieval-routing.mjs';
 import MODEL from './research-corpus-010.mjs';
@@ -9,7 +10,7 @@ const restricted=/\b(?:unredact\w*|credentials?|password|private\s+(?:nas|intel)
 const stop=new Set('the a an is are was were what which who how why when where of in to and or for from with evidence documents records epstein jeffrey published public show find explain compare before after between'.split(' '));
 const terms=q=>(q.toLowerCase().match(/[a-z0-9]{2,}/g)||[]).filter(t=>!stop.has(t));
 function plan(q){
- const original=classifyRetrieval(q);if(restricted.test(q))return {intent:'unanswerable',parts:[],reason:'restricted_request'};
+ const original=classifyRetrieval(q);const guard=editorialGuard(q);if(guard)return {intent:'unanswerable',parts:[],reason:guard};if(restricted.test(q))return {intent:'unanswerable',parts:[],reason:'restricted_request'};
  if(original.intent==='identifier'||original.intent==='navigation'||original.intent==='unanswerable')return {intent:original.intent,parts:[q],reason:original.reason};
  if(/^\s*(?:black|who is black|tell me about black)\s*[?.!]*$/i.test(q))return {intent:'ambiguous_entity',parts:[],reason:'specify_person_or_organization'};
  const complex=/\b(compare|contradict\w*|conflict\w*|versus|changed|correction|multiple|chains?)\b/i.test(q);
@@ -18,8 +19,9 @@ function plan(q){
 }
 export function researchPipeline010(q,limit=5,options={}){
  if(typeof q!=='string'||!q.trim()||q.length>256||!Number.isSafeInteger(limit)||limit<1||limit>10)throw Error('invalid_query_bounds');
- const p=plan(q),base={schema:'gah.research.pipeline.v1',version:pipelineVersion,intent:p.intent,answer:null,generated_claims:0,claim_verification:'not_performed',scope:`${MODEL.documents.length} explicitly approved public publications; supplement to full-archive retrieval`,corpus_publications:MODEL.documents.length,stages:['intent_classification','bounded_candidate_retrieval','relevance_ranking','publication_provenance','citation_ready_results'],subquery_count:p.parts.length,origin_requests:0,nas_reads:0,uncertainty:['Publication locators and reviewed citation membership do not verify underlying claims.','Association is not proof of wrongdoing.'],archive_search:{method:'POST',path:'/api/search',supplement_only:true},limitations:['No claim synthesis.','Publication-date filters do not reconstruct event dates.','Graph membership does not assign substantive evidence roles.']};
- const finish=results=>({...base,results,abstained:results.length===0,insufficient_evidence:p.intent==='multi_source'||results.length===0,coverage_reason:p.reason||(results.length?'approved_editorial_candidates':'insufficient_evidence_in_approved_corpus')});
+ const admin=editorialGuard(q)?null:administrativeLocator(q,options);const p=admin?{intent:'navigation',parts:[],reason:'administrative_navigation_only'}:plan(q),base={schema:'gah.research.pipeline.v1',version:pipelineVersion,intent:p.intent,answer:null,generated_claims:0,claim_verification:'not_performed',scope:`${MODEL.documents.length} explicitly approved public publications; supplement to full-archive retrieval`,corpus_publications:MODEL.documents.length,stages:['intent_classification','bounded_candidate_retrieval','relevance_ranking','publication_provenance','citation_ready_results'],subquery_count:p.parts.length,origin_requests:0,nas_reads:0,uncertainty:['Publication locators and reviewed citation membership do not verify underlying claims.','Association is not proof of wrongdoing.'],archive_search:{method:'POST',path:'/api/search',supplement_only:true},limitations:['No claim synthesis.','Publication-date filters do not reconstruct event dates.','Graph membership does not assign substantive evidence roles.']};
+ const finish=results=>{const body={...base,results,abstained:results.length===0,insufficient_evidence:p.intent==='multi_source'||results.length===0,coverage_reason:p.reason||(results.length?'approved_editorial_candidates':'insufficient_evidence_in_approved_corpus')};return {...body,citation_packet:citationPacket(body)}};
+ if(admin)return finish([admin]);
  if(!p.parts.length||p.intent==='unanswerable')return finish([]);
  if(['identifier','navigation'].includes(p.intent))return finish(routeSearch(q,limit,options).results);
  const candidates=new Map();

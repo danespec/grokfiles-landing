@@ -31,7 +31,7 @@ export async function researchPreviewHttp(request,env,throttle){
  return reply({schema:MODEL.schema,version,method:MODEL.method,scope:MODEL.scope,...searchPreview(q,+limit,options),origin_requests:0,nas_reads:0},200,{ETag:etag});
 }
 
-export function researchPreviewEnabled(request,env){return Boolean(request)&&String(env?.GAH_STAGING)==='true'&&new URL(request.url).hostname.endsWith('.gah-staging-517b8499.pages.dev')&&![RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009,RELEASE_STAGING_HOST_010,'ai-retrieval-011.gah-staging-517b8499.pages.dev'].includes(new URL(request.url).hostname);}
+export function researchPreviewEnabled(request,env){return Boolean(request)&&String(env?.GAH_STAGING)==='true'&&new URL(request.url).hostname.endsWith('.gah-staging-517b8499.pages.dev')&&![RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009,RELEASE_STAGING_HOST_010,'ai-retrieval-011.gah-staging-517b8499.pages.dev','research-closeout.gah-staging-517b8499.pages.dev'].includes(new URL(request.url).hostname);}
 export const researchPreviewTools=[
  {name:'search_research_preview',description:'Staging-only public metadata LSA/keyword pilot; verify cited publications and primary evidence.',inputSchema:{type:'object',properties:{q:{type:'string',maxLength:256},limit:{type:'integer',minimum:1,maximum:10}},required:['q'],additionalProperties:false}},
  {name:'get_publication_changes_preview',description:'Staging-only version-pinned public publication metadata and reviewed corrections.',inputSchema:{type:'object',properties:{cursor:{type:'integer',minimum:0,maximum:999999},limit:{type:'integer',minimum:1,maximum:10},version:{type:'string'}},additionalProperties:false}}
