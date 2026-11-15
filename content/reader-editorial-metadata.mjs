@@ -16,8 +16,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read “Epstein Evidence Archive” with original sources, context and limits on what the records establish."
   },
   "https://grokarchivehub.com/archive-scope": {
-    "title": "Archive Scope: What Grok Archive Hub Actually Holds",
-    "description": "Read “Archive Scope: What Grok Archive Hub Actually Holds” with original sources, context and limits on what the records establish."
+    "title": "Evidence Archive: Document Holdings and Scope",
+    "description": "Understand the difference between indexed research records, published evidence, source holdings, mirrors, OCR derivatives and Google indexing."
   },
   "https://grokarchivehub.com/archive/EFTA00000468": {
     "title": "EFTA00000468: DOJ Removal and Restoration",
@@ -344,8 +344,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "How to send corrections, source tips, broken-link reports, and archive questions to Grok Archive Hub."
   },
   "https://grokarchivehub.com/corrections/flight-log-count-and-aircraft-reconciliation": {
-    "title": "Flight Log Count and Aircraft Reconciliation",
-    "description": "Correction packet for Epstein flight-log passenger counts, N505LS aircraft-tail repair, N474-family quarantine, and source-bound counting definitions."
+    "title": "Epstein Flight Logs: Passenger Counts and Aircraft",
+    "description": "Corrections to passenger-row counts and N505LS aircraft-tail records, with unsupported N474-family claims quarantined and counting methods defined."
   },
   "https://grokarchivehub.com/dispatches": {
     "title": "Dispatches",
@@ -460,8 +460,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read “Three Kyara SPVs: Wearality, Blockstream, and OH2” with original sources, context and limits on what the records establish."
   },
   "https://grokarchivehub.com/evidence-briefs/leon-black-158m-170m-epstein-payments": {
-    "title": "Tracing Leon Black’s Payments to Epstein",
-    "description": "Read “Tracing Leon Black’s Payments to Epstein” with original sources, context and limits on what the records establish."
+    "title": "Leon Black’s Epstein Payments: $158M vs. $170M",
+    "description": "Compare Dechert’s $158 million total for 2012–2017 with the later Senate Finance $170 million figure and the unresolved reconciliation."
   },
   "https://grokarchivehub.com/evidence-briefs/levitection-signed-term-sheet-no-close": {
     "title": "Levitection: A Term Sheet Without a Closing",
@@ -580,8 +580,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "An evidence brief explaining the Barak people/entity index as an identity-control layer rather than a claim engine."
   },
   "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne": {
-    "title": "Barak, Putin, Qatar and Carbyne: The Records",
-    "description": "Read “Barak, Putin, Qatar and Carbyne: The Records” with original sources, context and limits on what the records establish."
+    "title": "Epstein and Barak: Putin, Qatar and Carbyne Records",
+    "description": "Trace Epstein’s May 2013 Putin suggestion to Barak and the 2018–2019 Qatar/Carbyne correspondence, with missing follow-up and source limits identified."
   },
   "https://grokarchivehub.com/investigations/barak-gadeco-fee-2014": {
     "title": "GADECO: The Deal After Barak’s Withdrawal",
@@ -604,8 +604,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read “Barak’s Scheduling Records, 2010–2018” with original sources, context and limits on what the records establish."
   },
   "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014": {
-    "title": "Barak in St. Thomas: The December 2014 Records",
-    "description": "Read “Barak in St. Thomas: The December 2014 Records” with original sources, context and limits on what the records establish."
+    "title": "Ehud Barak and Epstein: St. Thomas, December 2014",
+    "description": "Read the records of Ehud Barak’s December 2014 St. Thomas visit, Epstein’s invitations, and the unresolved passenger identity on an airline itinerary."
   },
   "https://grokarchivehub.com/investigations/barak-timeline-without-causation": {
     "title": "Barak’s Timeline: Chronology Without Causation",
@@ -716,8 +716,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "An evidence brief on EFTA00039660/661 and how watch-status records should be used without inferring motive, knowledge, or causation."
   },
   "https://grokarchivehub.com/investigations/leon-black-2023-sdny-referral-status": {
-    "title": "Leon Black: The 2023 SDNY Referral Record",
-    "description": "Read “Leon Black: The 2023 SDNY Referral Record” with original sources, context and limits on what the records establish."
+    "title": "Leon Black: 2023 Epstein-Related SDNY Referral",
+    "description": "Released SDNY records document a 2023 referral concerning Leon Black and the June 12 investigation status, not a finding on the allegations."
   },
   "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records": {
     "title": "The New Mexico-DOJ Epstein Records Standoff",
@@ -772,8 +772,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "A dated source guide to Trump’s campaign launch, Moscow negotiations, Epstein’s 2015 emails, Israel policy and the Acosta–DOJ chronology."
   },
   "https://grokarchivehub.com/investigations/trump-acosta-epstein-doj-timeline": {
-    "title": "Acosta, Epstein and Trump: The Documented Timeline",
-    "description": "Read “Acosta, Epstein and Trump: The Documented Timeline” with original sources, context and limits on what the records establish."
+    "title": "Epstein, Acosta and Trump: DOJ Timeline, 2006–2019",
+    "description": "Separate Epstein’s 2006–2008 non-prosecution agreement, Acosta’s 2017 Cabinet appointment and the 2019 SDNY prosecution in the documentary record."
   },
   "https://grokarchivehub.com/investigations/trump-israel-russia-un-vote-2016": {
     "title": "Trump, Israel and Russia: The 2016 UN Vote",
@@ -828,8 +828,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "A 41-page DOJ disclosure identifies instructions to flag public figures and protect victim identities. The approved review plan remains partly withheld."
   },
   "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit": {
-    "title": "EFTA00000468: Removed, Restored and Unverified",
-    "description": "Read “EFTA00000468: Removed, Restored and Unverified” with original sources, context and limits on what the records establish."
+    "title": "EFTA00000468: DOJ Removal and Restoration Audit",
+    "description": "Audit the documented December 2025 removal and restoration of EFTA00000468, the unverified September 2026 claim and the October access check."
   },
   "https://grokarchivehub.com/news/epstein-wall-street-records-act-2026": {
     "title": "The Epstein Wall Street Records Act Explained",
@@ -948,8 +948,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Watch “Summers: Harvard Planning Emails”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996": {
-    "title": "Leon Black: Dechert’s $158 Million Review",
-    "description": "Watch “Leon Black: Dechert’s $158 Million Review”. Read the source notes and limits before drawing conclusions."
+    "title": "Leon Black and Epstein: Dechert’s $158M Review",
+    "description": "Source notes for EFTA02730996 and the Senate chairman’s questions: the 2021 Dechert review, the $158 million total and its evidentiary limits."
   },
   "https://grokarchivehub.com/reels/les-wexner-attorney-proffer-efta02731082": {
     "title": "Wexner: The Attorney Proffer",
@@ -980,8 +980,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Watch “Bannon and Barak: The Calendar Entry”. Read the source notes and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/research/epstein-final-48-hours-mcc": {
-    "title": "Epstein’s Final 48 Hours at MCC: The Records",
-    "description": "Read “Epstein’s Final 48 Hours at MCC: The Records” with original sources, context and limits on what the records establish."
+    "title": "Epstein Death Timeline: Final 48 Hours at MCC",
+    "description": "A source-linked chronology of August 9–10, 2019 at MCC New York, with EFTA records, OIG findings, known gaps and unresolved questions."
   },
   "https://grokarchivehub.com/research/evidence/birthday-book": {
     "title": "Birthday Book Evidence Reader",
