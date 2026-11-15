@@ -9,3 +9,7 @@
 evidence-data/birthday-book/recovered_pages/
 
 node_modules/
+
+# Private build inputs, never public source or CI artifacts
+content/editorial-passages-012.mjs
+__pycache__/
