@@ -84,6 +84,7 @@ jobs:
       - name: Filtered editorial passage search candidate
         run: |
           python3 tests/test_editorial_passages_012.py
+          python3 tests/test_private_build_012.py
           node tests/test_editorial_search_012.mjs
       - name: Private hybrid and source-bound extraction contracts
         run: |
