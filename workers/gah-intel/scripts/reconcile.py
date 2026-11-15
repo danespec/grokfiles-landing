@@ -3,12 +3,14 @@
 Config and optional Google service-account JSON live outside this repository.
 Uses the owner's existing Wrangler session for CF reads and the private KV write.
 """
-import argparse, datetime as dt, json, os, pathlib, subprocess, tempfile, tomllib, urllib.parse, time, hmac, hashlib
+import argparse, datetime as dt, json, os, pathlib, subprocess, tempfile, tomllib, urllib.parse, time, hmac, hashlib, re
 from zoneinfo import ZoneInfo
 
 UTC=dt.timezone.utc
 HOSTS=['grokarchivehub.com','www.grokarchivehub.com','wiki.grokarchivehub.com']
 ROUTES=['/','/archive/EFTA00035613','/archive/EFTA00035053','/archive/EFTA00035828','/archive/EFTA00035206','/archive/EFTA00035420','/archive/EFTA00035574','/archive/EFTA00035657','/investigations','/dispatches','/news','/research/epstein-final-48-hours-mcc','/archive','/search','/pdf-lite?id=EFTA00035613']
+
+WIKI_ROUTES=['https://wiki.grokarchivehub.com/','https://wiki.grokarchivehub.com/archive/EFTA00035053','https://wiki.grokarchivehub.com/pdf-lite?id=EFTA00035053']
 
 def curl_json(url, token, payload=None, method='POST'):
     args=['curl','--silent','--show-error','--max-time','30','--config','-','-X',method,url]
@@ -72,15 +74,18 @@ def group(rows, key):
 
 def health(config):
     out=[]
-    for route in ROUTES:
+    for route in ROUTES + WIKI_ROUTES:
         curl_config='user-agent = "GAH-Monitor/1.0 (instrumentation health)"\n'
         if config.get('monitor_secret_file'):
             secret=pathlib.Path(config['monitor_secret_file']).read_text().strip();stamp=str(int(time.time()));path=urllib.parse.urlsplit(route).path
             signature=hmac.new(secret.encode(),(stamp+'\nGET\n'+path).encode(),hashlib.sha256).hexdigest()
             curl_config+='header = "X-GAH-Monitor: '+stamp+'.'+signature+'"\n'
-        p=subprocess.run(['curl','-sS','--max-time','20','-L','--config','-','-w','\n%{http_code}','https://grokarchivehub.com'+route],input=curl_config,capture_output=True,text=True)
+        url=route if route.startswith('https://') else 'https://grokarchivehub.com'+route
+        p=subprocess.run(['curl','-sS','--max-time','20','-L','--config','-','-w','\n%{http_code}',url],input=curl_config,capture_output=True,text=True)
         body,_,status=p.stdout.rpartition('\n')
-        ok=status=='200' and body.count('src="/frontdoor/analytics.js?')==1 and '"ga4MeasurementId":"G-XHE84C8D1V"' in body
+        scripts=re.findall(r'<script\b[^>]*\bsrc=["\']([^"\']+)["\']',body,re.I)
+        runtimes=[x for x in scripts if urllib.parse.urlsplit(x).path in ['/frontdoor/analytics.js','/__gah-analytics/analytics.js']]
+        ok=status=='200' and p.returncode==0 and len(runtimes)==1 and len(re.findall(r'window\.GAH_CONSENT_BOOT\s*=',body))==1 and not any(urllib.parse.urlsplit(x).netloc=='www.googletagmanager.com' and urllib.parse.urlsplit(x).path=='/gtag/js' for x in scripts) and '"ga4MeasurementId":"G-XHE84C8D1V"' in body and '"googleTagEnabled":true' in body and 'G-48G8M0230N' not in body
         failure='Worker resource limit (1102)' if 'error code: 1102' in body else 'HTML coverage requires review; curl exit '+str(p.returncode)
         out.append({'route':route,'status':'pass' if ok else 'check','note':'HTTP '+status+'; '+('shared HTML instrumentation' if ok else failure)})
     return out
@@ -117,10 +122,13 @@ def collect(config,token,now=None):
         day=dt.datetime.fromisoformat(r['dimensions']['datetimeHour'].replace('Z','+00:00')).astimezone(zone).date().isoformat()
         if day not in days:raise RuntimeError('cloudflare_bucket_outside_reporting_window')
         days[day]['cloudflare']+=int(r['count'])
+    ga4_wiki=None
     if ga is not None:
+        ga4_wiki=0
         for row in ga.get('rows',[]):
             day=dt.datetime.strptime(row['dimensionValues'][0]['value'],'%Y%m%d').date().isoformat();host=row['dimensionValues'][1]['value']
             if day in days and host in HOSTS[:2]:days[day]['ga4']=(days[day]['ga4'] or 0)+int(row['metricValues'][0]['value'])
+            if day in days and host==HOSTS[2]:ga4_wiki+=int(row['metricValues'][0]['value'])
         for d in days.values():
             if d['ga4'] is None:d['ga4']=0
     raw_count=sum(int(r['count']) for r in raw) if raw_status=='connected' else None
@@ -134,12 +142,14 @@ def collect(config,token,now=None):
       {'label':'Cloudflare browser pageviews · main','value':main_count,'status':'connected','note':'Primary property; apex/www only; known browser bots excluded; not confirmed humans'},
       {'label':'Cloudflare browser pageviews · wiki','value':sum(int(r['count']) for r in wiki) if legacy_status=='connected' else None,'status':legacy_status,'note':'Legacy property; wiki hostname only; not added to main for a parity claim'},
       {'label':'GA4 pageviews · main','value':sum(d['ga4'] for d in days.values()) if ga is not None else None,'status':ga_status,'note':'Apex/www; consenting measured browser activity; property timezone '+str(timezone or 'unavailable')},
+      {'label':'GA4 pageviews · wiki','value':ga4_wiki,'status':ga_status,'note':'Wiki hostname only; consenting measured browser activity; same GA4 reporting calendar as main; not a count of document requests'},
+      {'label':'GA4 pageviews · public hosts','value':int(aggregate[0]['value']) if aggregate else (sum(d['ga4'] for d in days.values())+ga4_wiki if ga is not None else None),'status':ga_status,'note':'GA4 pageviews for the three public hosts only; measured consented browser activity, not raw requests or verified humans'},
       {'label':'PDF viewer browser pageviews · main','value':sum(int(r['count']) for r in main if r['dimensions']['requestPath'] in ['/pdf-lite','/pdf-lite.html']),'status':'connected','note':'Browser beacon views of viewer route; separate from PDF file requests'},
       {'label':'Non-US browser pageviews · main','value':non_us,'status':'connected','note':'Known non-US country-level browser signal; unknown countries are excluded; no confirmed-human estimate'},
       {'label':'GA4 sessions · public hosts','value':sessions,'status':ga_status,'note':'GA4 session definition; not HTTP requests or CF visits'},
       {'label':'GA4 active users · public hosts','value':users,'status':ga_status,'note':'Aggregate GA4 active users over the full period; never summed across days or hostnames'},
       {'label':'Legacy CF property · all public hosts','value':sum(int(r['count']) for r in legacy) if legacy_status=='connected' else None,'status':legacy_status,'note':'Diagnostic parallel property; do not add to primary-property counts'}]
-    return {'schema':'gah_reconciliation_v1','generated_at':iso(now),'since':iso(since),'until':iso(until),'metrics':metrics,'daily':list(days.values()),'health':health(config),'countries':group(main,'countryName'),'referrals':group(main,'refererHost'),'reporting_timezone':reporting_timezone,'audience_note':'Calendar dates use '+reporting_timezone+'. '+str(non_us)+' of '+str(main_count)+' main-site browser views originated outside the US; country signal only. Known browser bots excluded; undetected bots may remain. CF groups and raw requests may be sampled. GA4 reporting can lag 24–48 hours. No parity conclusion while GA4 is unavailable or date boundaries differ.','provider_status':{'raw':raw_status,'ga4':ga_status,'ga4_timezone':timezone,'legacy':legacy_status}}
+    return {'schema':'gah_reconciliation_v1','generated_at':iso(now),'since':iso(since),'until':iso(until),'metrics':metrics,'daily':list(days.values()),'health':health(config),'countries':group(main,'countryName'),'referrals':group(main,'refererHost'),'reporting_timezone':reporting_timezone,'audience_note':'Calendar dates use '+reporting_timezone+'. '+str(non_us)+' of '+str(main_count)+' main-site browser views originated outside the US; country signal only. Known browser bots excluded; undetected bots may remain. CF groups and raw requests may be sampled. GA4 reporting can lag 24–48 hours. Daily comparisons below are main-site only. Wiki GA4 and Cloudflare browser views are reported separately above. Consent, blocking and different collection definitions prevent interpreting these counts as a required one-to-one match. No parity conclusion while GA4 is unavailable or date boundaries differ.','provider_status':{'raw':raw_status,'ga4':ga_status,'ga4_timezone':timezone,'legacy':legacy_status}}
 
 def traffic_classes(config):
     path=config.get('analytics_read_token_file')
