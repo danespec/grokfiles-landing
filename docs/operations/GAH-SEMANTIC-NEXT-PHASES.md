@@ -11,3 +11,9 @@ Start with an evidence packet (existing canonical editorial locators, source has
 
 ## Acceptance and rollback
 Keep GAH-011 operational. Promote only a validated candidate with exact artifact identity, source/hash and privacy invariants, independent relevance results, real limiter checks, resource budgets, compatible archive and Atlas behavior, and authenticated staging evidence. Release by narrow feature flag with rollback. No changes to Access, WAF, redactions, payment or ai-train policy.
+
+## Verified archive-source invalidation gate
+Private archive index releases run deploy/prepare-archive-retrieval-release.sh with external GAH_ARCHIVE_EVIDENCE and GAH_ARCHIVE_SOURCE_OBSERVATIONS paths. A verified PDF-byte change bound to a prior audit automatically revokes its parent and all child locator mappings. Revocation is sticky; changed sources never gain admission. Unknown candidates, failed/non-PDF responses and mirror holds cannot create eligibility. Invalid provenance or inconsistent receipts stop the release. All ledger writers share an exclusive evidence lock; locator reads revalidate current state before returning a result. This consumes an observation batch; it does not claim a scheduled remote source monitor exists.
+
+## Private neural serving
+scripts/serve_neural_013.mjs loads the existing pinned cached model with network and remote inference disabled. The HTTP service binds only to loopback; it provides JSON research responses with no source text or vector export, no raw query logs, bounded request size, two active searches, a bounded short-lived cache and a request limiter. This is private serving, not a public production deployment or independent relevance certification. Explicit Barak/Leon Black subjects bind all fused candidates to published metadata. Passage and neural citation packets are rebuilt from final ranked results and tied to their response versions.
