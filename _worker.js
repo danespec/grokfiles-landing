@@ -1,3 +1,4 @@
+import {publicResearchPaths011,publicResearchHttp011,publicResearchEnabled011,publicResearchTool011,publicResearchMcp011,publicResearchSpec011,SEARCH_011,CORPUS_011} from './content/public-research-011.mjs';
 import {attachResearchGraph010} from './content/research-pipeline-010.mjs';
 import { editorialLead009, mergeEditorialLead009, editorialDiscoveryEnabled010 } from './content/editorial-ranking-009.mjs';
 import { releaseSurfaceEnabled, releaseNavigation, PUBLIC_FEED_PATH, publicPublicationFeed, publicFeedTool, publicFeedSpec } from './content/retrieval-release.mjs';
@@ -2824,6 +2825,7 @@ function gahCommerce082Html(){
 }
 
 async function gahMcpCallTool(name, args, request, env) {
+  if(name===publicResearchTool011.name)return publicResearchMcp011(args,request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}));
   if(name===publicFeedTool.name){
     if(!releaseSurfaceEnabled(request,env)||!args||typeof args!=="object"||Array.isArray(args)||Object.keys(args).some(k=>!["cursor","limit","version"].includes(k)))throw Error("Invalid publication feed arguments");
     const u=new URL(request.url);u.pathname=PUBLIC_FEED_PATH;u.search="";
@@ -2923,7 +2925,7 @@ async function gahMcpMessage(message, request, env) {
     serverInfo: { name: "grok-archive-hub", title: "Grok Archive Hub Research MCP", version: "1.0.0" },
     instructions: "Read-only source-first research. Treat search hits as retrieval candidates and verify underlying records before strong claims."
   });
-  if (method === "tools/list") return gahMcpResult(id, { tools: [...gahAllMcpTools(),...(researchPreviewEnabled(request,env)?researchPreviewTools:releaseSurfaceEnabled(request,env)?[publicFeedTool]:[])] });
+  if (method === "tools/list") return gahMcpResult(id, { tools: [...gahAllMcpTools(),...(researchPreviewEnabled(request,env)?researchPreviewTools:releaseSurfaceEnabled(request,env)?[publicFeedTool]:[]),...(publicResearchEnabled011(request,env)?[publicResearchTool011]:[])] });
   if (method === "tools/call") {
     const toolName=typeof message.params?.name==="string" ? message.params.name : "";
     const started=Date.now();
@@ -3509,7 +3511,7 @@ function gahAllMcpTools() {
 function gahDynamicMcpServerCard(request, env) {
   const card = JSON.parse(GAH_MCP_SERVER_CARD);
   card.serverInfo = { ...(card.serverInfo || {}), version: "1.1.0" };
-  card.tools = [...gahAllMcpTools(),...(researchPreviewEnabled(request,env)?researchPreviewTools:releaseSurfaceEnabled(request,env)?[publicFeedTool]:[])];
+  card.tools = [...gahAllMcpTools(),...(researchPreviewEnabled(request,env)?researchPreviewTools:releaseSurfaceEnabled(request,env)?[publicFeedTool]:[]),...(publicResearchEnabled011(request,env)?[publicResearchTool011]:[])];
   if(researchPreviewEnabled(request,env)){card.serverInfo.version="1.2.0-preview.007";card.description+=" Protected staging evaluation; Cloudflare Access applies.";}
   return JSON.stringify(card, null, 2) + "\n";
 }
@@ -3628,6 +3630,7 @@ function gahDynamicOpenApi(request, env) {
   spec.paths = spec.paths || {};
   if(researchPreviewEnabled(request,env)){Object.assign(spec.paths,researchPreviewOpenApiPaths);spec.servers=[{url:new URL(request.url).origin}];spec.info.version='1.5.0-preview.007';}
   if(releaseSurfaceEnabled(request,env)){spec.paths[PUBLIC_FEED_PATH]=publicFeedSpec;spec.info.version="1.5.0";if(isStagingEnv(env))spec.servers=[{url:new URL(request.url).origin}];}
+  if(publicResearchEnabled011(request,env)){Object.assign(spec.paths,publicResearchSpec011);spec.info.version="1.6.0";if(isStagingEnv(env))spec.servers=[{url:new URL(request.url).origin}];}
   const atlasResponses={"200":{description:"Privacy-minimized public story locators"},"304":{description:"Unchanged representation"},"400":{description:"Invalid query"},"404":{description:"Not found"},"409":{description:"Atlas version changed"},"429":{description:"Atomic per-client rate limit; retry after 60 seconds"},"503":{description:"Catalog or required limiter unavailable"}};
   spec.paths["/api/v1/stories"]={get:{operationId:"listAtlasStories",summary:"Bounded public story catalog; not evidence of guilt",parameters:[{name:"limit",in:"query",schema:{type:"integer",minimum:1,maximum:50,default:20}},{name:"cursor",in:"query",schema:{type:"integer",minimum:0,default:0}},{name:"version",in:"query",schema:{type:"string"}}],responses:atlasResponses}};
   spec.paths["/api/v1/stories/{id}"]={get:{operationId:"getAtlasStoryLocator",summary:"Get exact published story locator",parameters:[{name:"id",in:"path",required:true,schema:{type:"string",pattern:"^P?[1-9][0-9]{0,5}$"}}],responses:atlasResponses}};
@@ -6837,6 +6840,17 @@ function sitemapEntryIsIndexable(entry) {
   }
 }
 
+
+// Build-time research corpus admission uses the same route policy as the live sitemap.
+export function gahResearchIndexablePublication(loc) {
+  try {
+    const url = new URL(loc);
+    if (url.origin !== "https://grokarchivehub.com" || url.search || url.hash) return false;
+    const rule = publicationRule(loc);
+    if (rule?.canonical && rule.canonical !== loc) return false;
+    return sitemapEntryIsIndexable([loc, ""]);
+  } catch (_) { return false; }
+}
 
 // GAH-EDITORIAL-COUNTS-061: derive public newsroom counts from the same
 // canonical/indexable route inventory that feeds the sitemap. Collection
@@ -18843,6 +18857,7 @@ export default {
   async handleStagingFetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
+    if(publicResearchPaths011.includes(path))return publicResearchHttp011(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if(path===PUBLIC_FEED_PATH&&releaseSurfaceEnabled(request,env))return publicPublicationFeed(request,env,()=>gahSecDoCall(env,{op:"check",scope:"publication-feed",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if (researchPreviewPaths.includes(path)) return researchPreviewHttp(request, env, () => gahSecDoCall(env, {op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));
 
@@ -18882,7 +18897,7 @@ export default {
         return new Response(null,{status:404,headers:{"Cache-Control":"no-store"}});
       }
       if(!["GET","HEAD"].includes(request.method)) return new Response(null,{status:405,headers:{Allow:"GET, HEAD","Cache-Control":"no-store"}});
-      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY+(releaseSurfaceEnabled(request,env)?"\n- [Publication changes](https://grokarchivehub.com/api/v1/publications/changes): versioned changes to the bounded editorial register, not the entire corpus.\n":""),{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
+      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY+(publicResearchEnabled011(request,env)?"\n- [Editorial research search](https://grokarchivehub.com"+SEARCH_011+"): hybrid citation-candidate retrieval; supplement to the archive.\n- [Editorial corpus](https://grokarchivehub.com"+CORPUS_011+"): versioned public editorial metadata snapshot.\n":"")+(releaseSurfaceEnabled(request,env)?"\n- [Publication changes](https://grokarchivehub.com/api/v1/publications/changes): versioned changes to the bounded editorial register, not the entire corpus.\n":""),{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
     }
 
     if (isAccountLevelAnalyticsGatewayPath(path)) {
@@ -19769,4 +19784,4 @@ export default {
   }
 };
 
-function gahRoutingDiscoveryCatalog(request,env){const d=JSON.parse(GAH_ARD_CATALOG),origin=new URL(request.url).origin;if(releaseSurfaceEnabled(request,env)){const e=d.entries.find(x=>x.identifier.endsWith(':api:public'));if(e)e.publicationFeed={url:origin+PUBLIC_FEED_PATH,scope:'bounded editorial register; not a complete archive feed',schema:'gah.publications.changes.v1'};}if(!researchPreviewEnabled(request,env))return JSON.stringify(d);for(const e of d.entries){if(e.identifier.endsWith(':api:public'))e.url=origin+'/openapi.json';if(e.identifier.endsWith(':server:research-mcp'))e.url=origin+'/.well-known/mcp/server-card.json';if(e.identifier.endsWith(':api:public')||e.identifier.endsWith(':server:research-mcp'))e.representativeQueries.push('route navigation, subject, payment, flight and chronology questions through the protected retrieval preview; responses are discovery candidates, not conclusions');}return JSON.stringify(d);}
+function gahRoutingDiscoveryCatalog(request,env){const d=JSON.parse(GAH_ARD_CATALOG),origin=new URL(request.url).origin;if(releaseSurfaceEnabled(request,env)){const e=d.entries.find(x=>x.identifier.endsWith(':api:public'));if(e)e.publicationFeed={url:origin+PUBLIC_FEED_PATH,scope:'bounded editorial register; not a complete archive feed',schema:'gah.publications.changes.v1'};}if(publicResearchEnabled011(request,env)){const e=d.entries.find(x=>x.identifier.endsWith(':api:public'));if(e)e.editorialResearch={search:origin+SEARCH_011,corpus:origin+CORPUS_011,scope:'public editorial metadata only; no generated answers'};}if(!researchPreviewEnabled(request,env))return JSON.stringify(d);for(const e of d.entries){if(e.identifier.endsWith(':api:public'))e.url=origin+'/openapi.json';if(e.identifier.endsWith(':server:research-mcp'))e.url=origin+'/.well-known/mcp/server-card.json';if(e.identifier.endsWith(':api:public')||e.identifier.endsWith(':server:research-mcp'))e.representativeQueries.push('route navigation, subject, payment, flight and chronology questions through the protected retrieval preview; responses are discovery candidates, not conclusions');}return JSON.stringify(d);}
