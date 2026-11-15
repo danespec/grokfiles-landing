@@ -7,18 +7,19 @@ const navAliases=new Map([
  ['grok archive hub search','search'],['gah archive','archive'],['open the ai assistant guide','assistant'],['where can i search the files','search']
 ]);
 export const RELEASE_STAGING_HOST='ai-retrieval-008.gah-staging-517b8499.pages.dev';
+export const RELEASE_STAGING_HOST_009='ai-retrieval-009.gah-staging-517b8499.pages.dev';
 export function productionResearchHost(request,env){
  return Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()!=='true'&&new URL(request.url).hostname==='grokarchivehub.com';
 }
 export function releaseSurfaceEnabled(request,env){
- return productionResearchHost(request,env)||(Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()==='true'&&new URL(request.url).hostname===RELEASE_STAGING_HOST);
+ return productionResearchHost(request,env)||(Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()==='true'&&[RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009].includes(new URL(request.url).hostname));
 }
 export function releaseNavigation(query){
  const key=String(query).trim().toLowerCase().replace(/[?!.]+$/,'').replace(/\s+/g,' ');
  const kind=navAliases.get(key);if(!kind)return null;
  const d=MODEL.navigation.find(x=>x.kind===kind);if(!d)return null;
  const hit={id:'GAH-NAV-'+kind.toUpperCase(),title:d.title,url:d.url,read_url:d.url,description:d.description,summary:d.description,result_type:'navigation',verification:'public_navigation',channel:'navigation'};
- return {ok:true,intent:'navigation',hits:[hit],results:[hit],hit_count:1,primary_hit_count:1,estimatedTotalHits:1,fast:true,no_ai:true,ai_summary_used:false,answer:null};
+ return {ok:true,intent:'navigation',hits:[hit],results:[hit],hit_count:1,primary_hit_count:1,estimatedTotalHits:1,fast:true,no_ai:true,ai_summary_used:false,answer:null,degraded:false};
 }
 export const PUBLIC_FEED_PATH='/api/v1/publications/changes';
 export const publicFeedTool={name:'get_publication_changes',description:'Versioned changes to the bounded public editorial publication register, not a complete archive feed.',inputSchema:{type:'object',properties:{cursor:{type:'integer',minimum:0,maximum:999999},limit:{type:'integer',minimum:1,maximum:10},version:{type:'string',maxLength:128}},additionalProperties:false}};
