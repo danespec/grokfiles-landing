@@ -1,3 +1,4 @@
+import { editorialLead009, mergeEditorialLead009 } from './content/editorial-ranking-009.mjs';
 import { releaseSurfaceEnabled, releaseNavigation, PUBLIC_FEED_PATH, publicPublicationFeed, publicFeedTool, publicFeedSpec } from './content/retrieval-release.mjs';
 import { attachReviewedGraph } from './content/retrieval-routing.mjs';
 import { researchPreviewHttp, previewPaths as researchPreviewPaths, researchPreviewEnabled, researchPreviewTools, researchPreviewTool, researchPreviewOpenApiPaths } from './content/research-preview.mjs';
@@ -6497,6 +6498,11 @@ async function handlePublicSearch(request, env) {
   }
 
   const requestedLimit = Math.min(Math.max(Number(payload.limit) || 10, 1), 50);
+  // Only on successful, explicitly non-generative, unfiltered archive searches.
+  // Preserve legacy result order in a separate field, with no extra origin fetch.
+  const editorial009 = upstream.ok && data?.ok !== false && !data?.degraded && data?.ai_summary_used !== true && !data?.answer && releaseSurfaceEnabled(request,env)
+    ? (Number.isSafeInteger(requestedLimit) ? editorialLead009(query,payload,queryClassification.kind) : null)
+    : null;
   rows = rows.slice(0, exact ? Math.max(1, requestedLimit) : requestedLimit);
   try {
     rows = await enrichPublicSearchRowsWithVisualEvidence(rows, env);
@@ -6528,6 +6534,15 @@ async function handlePublicSearch(request, env) {
     data.document_bundle_url = verified && !localExactSource ? "/api/document-bundle/" + exact : null;
   }
 
+  if(editorial009){
+    // Use already-enriched archive rows. Keep the original page intact.
+    const ranked=mergeEditorialLead009(rows,editorial009,requestedLimit);
+    data.archive_results=ranked.archive_results;
+    data.editorial_matches=ranked.editorial_matches;
+    data.retrieval_profile=ranked.retrieval_profile;
+    data.editorial_intent=ranked.editorial_intent;
+    rows=ranked.rows;
+  }
   data.hits = rows;
   data.results = rows;
   data.hit_count = actualHitCount(rows);
