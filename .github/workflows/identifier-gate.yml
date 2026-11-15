@@ -92,3 +92,4 @@ jobs:
           python3 tests/test_archive_admission_014.py
           python3 tests/test_archive_fingerprint_reconciliation_014.py
           python3 tests/test_archive_locator_manifest_014.py
+          python3 tests/test_archive_source_urls_014.py
