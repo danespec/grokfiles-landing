@@ -1,3 +1,4 @@
+import {PATH_012,deepHttp012} from './content/editorial-search-012.mjs';
 import {publicResearchPaths011,publicResearchHttp011,publicResearchEnabled011,publicResearchTool011,publicResearchMcp011,publicResearchSpec011,SEARCH_011,CORPUS_011} from './content/public-research-011.mjs';
 import {attachResearchGraph010} from './content/research-pipeline-010.mjs';
 import { editorialLead009, mergeEditorialLead009, editorialDiscoveryEnabled010 } from './content/editorial-ranking-009.mjs';
@@ -18857,7 +18858,7 @@ export default {
   async handleStagingFetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
-    if(path==="/api/v1/research/editorial-search-preview")return new Response(JSON.stringify({error:"not_found"}),{status:404,headers:{"Content-Type":"application/json","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow"}});
+    if(path===PATH_012)return deepHttp012(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research-012",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if(publicResearchPaths011.includes(path))return publicResearchHttp011(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if(path===PUBLIC_FEED_PATH&&releaseSurfaceEnabled(request,env))return publicPublicationFeed(request,env,()=>gahSecDoCall(env,{op:"check",scope:"publication-feed",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if (researchPreviewPaths.includes(path)) return researchPreviewHttp(request, env, () => gahSecDoCall(env, {op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));

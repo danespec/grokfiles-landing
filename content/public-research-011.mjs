@@ -6,7 +6,7 @@ export const STAGE_011='ai-retrieval-011.gah-staging-517b8499.pages.dev';
 export const publicResearchPaths011=[SEARCH_011,CORPUS_011];
 export function publicResearchEnabled011(request,env){
  const host=new URL(request.url).hostname,stage=String(env?.GAH_STAGING||'').toLowerCase()==='true';
- return !['0','false'].includes(String(env?.GAH_PUBLIC_RESEARCH_ENABLED??'true').toLowerCase())&&((!stage&&host==='grokarchivehub.com')||(stage&&[STAGE_011,'research-closeout.gah-staging-517b8499.pages.dev'].includes(host)));
+ return !['0','false'].includes(String(env?.GAH_PUBLIC_RESEARCH_ENABLED??'true').toLowerCase())&&((!stage&&host==='grokarchivehub.com')||(stage&&[STAGE_011,'research-closeout.gah-staging-517b8499.pages.dev','ai-retrieval-012.gah-staging-517b8499.pages.dev'].includes(host)));
 }
 const types=['investigation','reel','correction','dispatch','guide','evidence_brief','document_autopsy','timeline','news'];
 const props={q:{type:'string',minLength:1,maxLength:256},limit:{type:'integer',minimum:1,maximum:10},document_type:{type:'string',enum:types},published_after:{type:'string',format:'date'},published_before:{type:'string',format:'date'},version:{type:'string',maxLength:160}};

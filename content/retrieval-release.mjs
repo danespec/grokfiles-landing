@@ -13,7 +13,7 @@ export function productionResearchHost(request,env){
  return Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()!=='true'&&new URL(request.url).hostname==='grokarchivehub.com';
 }
 export function releaseSurfaceEnabled(request,env){
- return productionResearchHost(request,env)||(Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()==='true'&&[RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009,RELEASE_STAGING_HOST_010,'ai-retrieval-011.gah-staging-517b8499.pages.dev','research-closeout.gah-staging-517b8499.pages.dev'].includes(new URL(request.url).hostname));
+ return productionResearchHost(request,env)||(Boolean(request)&&String(env?.GAH_STAGING||'').toLowerCase()==='true'&&[RELEASE_STAGING_HOST,RELEASE_STAGING_HOST_009,RELEASE_STAGING_HOST_010,'ai-retrieval-011.gah-staging-517b8499.pages.dev','research-closeout.gah-staging-517b8499.pages.dev','ai-retrieval-012.gah-staging-517b8499.pages.dev'].includes(new URL(request.url).hostname));
 }
 export function releaseNavigation(query){
  const key=String(query).trim().toLowerCase().replace(/[?!.]+$/,'').replace(/\s+/g,' ');
