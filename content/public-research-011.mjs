@@ -6,14 +6,14 @@ export const STAGE_011='ai-retrieval-011.gah-staging-517b8499.pages.dev';
 export const publicResearchPaths011=[SEARCH_011,CORPUS_011];
 export function publicResearchEnabled011(request,env){
  const host=new URL(request.url).hostname,stage=String(env?.GAH_STAGING||'').toLowerCase()==='true';
- return !['0','false'].includes(String(env?.GAH_PUBLIC_RESEARCH_ENABLED??'true').toLowerCase())&&((!stage&&host==='grokarchivehub.com')||(stage&&host===STAGE_011));
+ return !['0','false'].includes(String(env?.GAH_PUBLIC_RESEARCH_ENABLED??'true').toLowerCase())&&((!stage&&host==='grokarchivehub.com')||(stage&&[STAGE_011,'research-closeout.gah-staging-517b8499.pages.dev'].includes(host)));
 }
 const types=['investigation','reel','correction','dispatch','guide','evidence_brief','document_autopsy','timeline','news'];
 const props={q:{type:'string',minLength:1,maxLength:256},limit:{type:'integer',minimum:1,maximum:10},document_type:{type:'string',enum:types},published_after:{type:'string',format:'date'},published_before:{type:'string',format:'date'},version:{type:'string',maxLength:160}};
-export const publicResearchTool011={name:'search_editorial_research',description:'Publisher-authorized public editorial metadata hybrid retrieval; citation candidates only, not verified conclusions or complete archive coverage.',inputSchema:{type:'object',properties:props,required:['q'],additionalProperties:false}};
+export const publicResearchTool011={name:'search_editorial_research',description:'Publisher-authorized public editorial metadata hybrid retrieval; citation candidates with publication-fingerprinted citation packets; not verified conclusions or complete archive coverage.',inputSchema:{type:'object',properties:props,required:['q'],additionalProperties:false}};
 const responses={200:{description:'Versioned citation candidates or corpus snapshot'},400:{description:'Invalid input'},404:{description:'Disabled or unavailable'},409:{description:'Corpus version changed'},429:{description:'Rate limited'},503:{description:'Limiter or research unavailable'}};
 export const publicResearchSpec011={
- [SEARCH_011]:{get:{operationId:'searchEditorialResearch',summary:'Hybrid public editorial metadata search; no generated answer',parameters:Object.entries(props).map(([name,schema])=>({name,in:'query',required:name==='q',schema})),responses}},
+ [SEARCH_011]:{get:{operationId:'searchEditorialResearch',summary:'Hybrid public editorial metadata search with citation packets; no generated answer',parameters:Object.entries(props).map(([name,schema])=>({name,in:'query',required:name==='q',schema})),responses}},
  [CORPUS_011]:{get:{operationId:'getEditorialCorpus',summary:'Versioned publisher-authorized editorial corpus snapshot',parameters:[{name:'cursor',in:'query',schema:{type:'integer',minimum:0,maximum:999999}},{name:'limit',in:'query',schema:{type:'integer',minimum:1,maximum:25}},{name:'version',in:'query',schema:props.version}],responses}}
 };
 const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s;

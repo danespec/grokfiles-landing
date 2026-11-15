@@ -18857,6 +18857,7 @@ export default {
   async handleStagingFetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
+    if(path==="/api/v1/research/editorial-search-preview")return new Response(JSON.stringify({error:"not_found"}),{status:404,headers:{"Content-Type":"application/json","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow"}});
     if(publicResearchPaths011.includes(path))return publicResearchHttp011(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if(path===PUBLIC_FEED_PATH&&releaseSurfaceEnabled(request,env))return publicPublicationFeed(request,env,()=>gahSecDoCall(env,{op:"check",scope:"publication-feed",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if (researchPreviewPaths.includes(path)) return researchPreviewHttp(request, env, () => gahSecDoCall(env, {op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));
