@@ -1,3 +1,5 @@
+import RELEASE_FLAGS from './research-feature-config.mjs';
+import {researchFeatureEnabled} from './research-features.mjs';
 // Public candidate retrieval over owner-authorized editorial publications only.
 // Vectors/postings are injected from private build storage, never static assets.
 import {deepSearch012,deepVersion,expansionGuard012} from './editorial-search-012.mjs';
@@ -7,7 +9,7 @@ import {citationPacket} from './research-evidence-closeout.mjs';
 const MODEL_ID='@cf/baai/bge-small-en-v1.5';
 const bound=VECTORS.embedding_batch_size===1&&VECTORS.corpus_version===MODEL.version&&VECTORS.model===MODEL_ID&&VECTORS.documents.length===MODEL.documents.length&&VECTORS.documents.every((d,i)=>d.url===MODEL.documents[i].url&&d.source_sha256===MODEL.documents[i].source_sha256);
 const enabled=v=>!['0','false'].includes(String(v??'true').toLowerCase());
-export const practicalVersion=deepVersion+'.'+VECTORS.version;
+export const practicalVersion=deepVersion+'.'+VECTORS.version+'.'+RELEASE_FLAGS.version.slice(0,12);
 const environments=new WeakMap();
 function state(env){let s=environments.get(env);if(!s)environments.set(env,s={active:0,cache:new Map(),pending:new Map(),verifiedUntil:0});return s;}
 const valid=v=>Array.isArray(v)&&v.length===384&&v.every(Number.isFinite)&&Math.abs(v.reduce((n,x)=>n+x*x,0)-1)<.03;
@@ -15,10 +17,10 @@ const filtered=(d,o)=>(!o.document_type||d.document_type===o.document_type)&&(!(
 export async function practicalRetrieval({q,limit=5,options={},strategy='passage',env={},budget=async()=>false}){
  const base=deepSearch012(q,limit,options),project=(body,extra={})=>{const version=practicalVersion,results=body.results;return {...body,...extra,version,answer:null,generated_claims:0,citation_packet:citationPacket({version,results}),release:'public_editorial_beta',scope:'Owner-authorized public editorial candidate retrieval; supplements the full archive; no source text or generated conclusion',relevance_validation:'independent_human_review_not_completed'};};
  if(!bound||VECTORS.fixture_only&&String(env.GAH_STAGING)!=='true')throw Error('vector_publication_mismatch');
- if(!enabled(env.GAH_PASSAGE_ENABLED))throw Error('passage_disabled');
+ if(!researchFeatureEnabled(env,'passage'))throw Error('passage_disabled');
  const fallback=reason=>project(base,{strategy:'passage',neural_executed:false,neural_degraded:strategy==='hybrid',degradation:reason});
  if(strategy!=='hybrid'||expansionGuard012(q)||base.abstained||['identifier','navigation','unanswerable','ambiguous_entity'].includes(base.intent))return project(base,{strategy:'passage',neural_executed:false});
- if(!enabled(env.GAH_NEURAL_ENABLED)||typeof env.GAH_AI?.run!=='function')return fallback('encoder_unavailable');
+ if(!researchFeatureEnabled(env,'neural')||typeof env.GAH_AI?.run!=='function')return fallback('encoder_unavailable');
  const s=state(env),bytes=new TextEncoder().encode(JSON.stringify([practicalVersion,q,limit,options]));const key=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(x=>x.toString(16).padStart(2,'0')).join('');
  const old=s.cache.get(key);if(old&&old.until>Date.now())return {...structuredClone(old.body),retrieval_cache:'HIT'};if(old)s.cache.delete(key);
  if(s.pending.has(key))return structuredClone(await s.pending.get(key));

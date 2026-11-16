@@ -100,6 +100,7 @@ jobs:
       - name: Practical retrieval and exact cache contracts
         run: |
           node tests/test_exact_result_cache.mjs
+          node tests/test_research_features.mjs
           GAH_CONTRACT_VECTORS="$(mktemp -d)/vectors.mjs"
           python3 scripts/build_editorial_vectors_013.py --output "$GAH_CONTRACT_VECTORS" --contract-fixture
           GAH_PRIVATE_EDITORIAL_VECTORS="$GAH_CONTRACT_VECTORS" node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_practical_retrieval.mjs
