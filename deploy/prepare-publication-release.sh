@@ -20,4 +20,7 @@ else
  "$PYTHON" scripts/build_editorial_passages_012.py --output "$GAH_PRIVATE_PASSAGE_INDEX" --check
  "$PYTHON" scripts/build_research_runtime_010.py --check
 fi
+if [ -n "${GAH_PRIVATE_EDITORIAL_VECTORS:-}" ]; then
+ "$PYTHON" scripts/build_editorial_vectors_013.py --output "$GAH_PRIVATE_EDITORIAL_VECTORS" --check
+fi
 node tests/test_public_research_011.mjs

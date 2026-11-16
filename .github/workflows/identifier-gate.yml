@@ -96,3 +96,13 @@ jobs:
           python3 tests/test_archive_locator_manifest_014.py
           python3 tests/test_archive_source_urls_014.py
           python3 tests/test_archive_source_changes_014.py
+
+      - name: Practical retrieval and exact cache contracts
+        run: |
+          node tests/test_exact_result_cache.mjs
+          GAH_CONTRACT_VECTORS="$(mktemp -d)/vectors.mjs"
+          python3 scripts/build_editorial_vectors_013.py --output "$GAH_CONTRACT_VECTORS" --contract-fixture
+          GAH_PRIVATE_EDITORIAL_VECTORS="$GAH_CONTRACT_VECTORS" node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_practical_retrieval.mjs
+          GAH_ANSWER_TEST_ROOT=$(mktemp -d)
+          node scripts/build_reviewed_answer_bank_015.mjs "$GAH_ANSWER_TEST_ROOT" "$GAH_ANSWER_TEST_ROOT/answers.mjs"
+          GAH_PRIVATE_REVIEWED_ANSWERS="$GAH_ANSWER_TEST_ROOT/answers.mjs" node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_reviewed_answer_runtime.mjs

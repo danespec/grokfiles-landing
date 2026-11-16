@@ -692,6 +692,7 @@
       '<div class="ask-gah__quick-actions">' +
       '<button type="button" data-ask-gah-intent="help">Help using the site</button>' +
       '<button type="button" data-ask-gah-intent="archive">Search the archive</button>' +
+      '<button type="button" data-ask-gah-intent="editorial">Research published investigations</button>' +
       '</div>' +
       '<form class="ask-gah__form" data-ask-gah-form>' +
       '<label for="ask-gah-question">Question</label>' +
@@ -874,7 +875,9 @@
       modeNode.textContent =
         intent === "help"
           ? "Intent: site help"
-          : intent === "archive"
+          : intent === "editorial"
+            ? "Intent: published investigations"
+            : intent === "archive"
             ? "Intent: archive research"
             : "Intent: automatic";
     }
@@ -961,7 +964,7 @@
       if (!answer && items.length) {
         var countNode = document.createElement("p");
         countNode.textContent =
-          "Found " + items.length + " relevant archive result" +
+          "Found " + items.length + (selectedIntent === "editorial" ? " publication candidate" : " archive result") +
           (items.length === 1 ? "." : "s.");
         responseNode.appendChild(countNode);
       }
@@ -1064,6 +1067,7 @@
         return;
       }
 
+      if (selectedIntent === "editorial" && value.length > 256) { status.textContent = "Use 256 characters or fewer for publication research."; return; }
       submit.disabled = true;
       question.disabled = true;
       status.textContent =
@@ -1075,7 +1079,7 @@
       responseNode.innerHTML = "";
 
       try {
-        var apiResponse = await fetch("/api/ai/query", {
+        var apiResponse = selectedIntent === "editorial" ? await fetch("/api/v1/research/editorial-search?strategy=hybrid&limit=5&q=" + encodeURIComponent(value), {credentials:"same-origin",cache:"no-store",headers:{Accept:"application/json"}}) : await fetch("/api/ai/query", {
           method: "POST",
           credentials: "same-origin",
           cache: "no-store",
@@ -1111,7 +1115,9 @@
         }
 
         status.textContent =
-          data.mode === "help_desk_v1"
+          selectedIntent === "editorial"
+            ? (data.neural_degraded ? "Publication results ready; passage search used." : "Publication research results ready.")
+            : data.mode === "help_desk_v1"
             ? "Help Desk response ready."
             : "Archive response ready.";
 
