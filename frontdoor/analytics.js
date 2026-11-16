@@ -8,7 +8,8 @@
   var excluded = /^(?:\/api(?:\/|$)|\/admin(?:\/|$)|\/login(?:\/|$)|\/account(?:\/|$)|\/frontdoor\/|\/cdn-cgi\/)/.test(location.pathname);
   var eligible = allowedHost && !automation && !excluded && boot.googleTagEnabled === true && /^G-[A-Z0-9]+$/.test(id);
   var granted = false, configured = false, loading = false, navigation = 0, sentNavigation = -1;
-  var advanced = boot.advancedAnalytics === true && navigator.globalPrivacyControl !== true && navigator.doNotTrack !== '1';
+  var gateway = boot.googleTagGatewayPath === "/zrth/" ? "/zrth/" : "";
+  var advanced = !gateway && boot.advancedAnalytics === true && navigator.globalPrivacyControl !== true && navigator.doNotTrack !== '1';
   var pendingMeasurement = false, automaticGrantedNavigation = -1, sentCookielessNavigation = -1;
   var previous = document.referrer || '', current = location.href;
   var debug = new URL(location.href).searchParams.get('gah_debug') === '1';
@@ -89,7 +90,7 @@
     script.async = true;
     script.setAttribute('data-cfasync', 'false');
     script.setAttribute('data-gah-google-tag', 'true');
-    script.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(id);
+    script.src = gateway || 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(id);
     script.onerror = function () { loading = false; state('tag-load-failed'); script.remove(); };
     window.gtag('set', {page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub'});
     window.gtag('js', new Date());
