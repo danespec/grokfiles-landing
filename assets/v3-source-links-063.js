@@ -545,6 +545,8 @@
     var status = isGlobalSearchPage ? $("[data-search-status]") : null;
     var results = isGlobalSearchPage ? $("[data-search-results]") : null;
     var suggest = isGlobalSearchPage ? $("[data-search-suggest]") : null;
+    var researchScope = isGlobalSearchPage ? $("[data-research-scope]") : null;
+    if (researchScope) { var initialScope = new URL(window.location.href).searchParams.get("research"); if (["archive", "passage", "hybrid"].indexOf(initialScope) !== -1) researchScope.value = initialScope; }
     var recentKey = "gah-search-recent-v2";
     function formInput(form) { return form ? form.querySelector("input, textarea") : null; }
     function formButton(form) { return form ? form.querySelector("button") : null; }
@@ -606,6 +608,8 @@
         return;
       }
       if (!query) { if (status) status.textContent = "Enter a name, phrase, date, or EFTA identifier."; return; }
+      var scope = researchScope ? researchScope.value : "archive";
+      if (scope !== "archive" && query.length > 256) { if (status) status.textContent = "Use 256 characters or fewer for publication research."; return; }
       if (button) button.disabled = true;
       if (status) status.textContent = "Searching source records…";
       results.innerHTML = "<p class='loading'>Searching the archive…</p>";
@@ -615,11 +619,11 @@
         var input = formInput(form);
         if (input) input.value = query;
       });
-      fetch("/api/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      var request = scope === "archive" ? fetch("/api/search", {
+        method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ q: query, query: query, tag: "All", limit: 10, fast: true, no_ai: true })
-      }).then(function (res) { return res.text().then(function (raw) { return { res: res, raw: raw }; }); })
+      }) : fetch("/api/v1/research/editorial-search?strategy=" + encodeURIComponent(scope) + "&limit=10&q=" + encodeURIComponent(query), {cache:"no-store", headers:{Accept:"application/json"}});
+      request.then(function (res) { return res.text().then(function (raw) { return { res: res, raw: raw }; }); })
         .then(function (pack) {
           var data;
           try { data = JSON.parse(pack.raw); } catch (_) { data = { answer: pack.raw }; }
@@ -631,13 +635,13 @@
           rows.forEach(function (row) {
             var id = pick(row, ["efta_id", "id", "efta", "document_id"]);
             var title = pick(row, ["title", "name"]) || id || "Archive result";
-            var text = pick(row, ["snippet", "summary", "text", "content", "combined_text", "body"]);
+            var text = pick(row, ["snippet", "summary", "description", "text", "content", "combined_text", "body"]);
             var href = pick(row, ["read_url", "pdf_url", "url", "source_url"]);
             if (href && (href.indexOf("/volume") === 0 || href.indexOf("/homes") === 0)) href = "";
             if (!href && /^EFTA[0-9]{8}$/i.test(id)) href = "/archive/" + id.toUpperCase();
             addResult(title, text, href, id);
           });
-          if (/^EFTA[0-9]{8}$/i.test(query)) {
+          if (scope === "archive" && /^EFTA[0-9]{8}$/i.test(query)) {
             var wanted = query.toUpperCase();
             var found = rows.some(function (row) { return pick(row, ["efta_id", "id", "efta", "document_id"]).toUpperCase() === wanted; });
             if (!found) addResult(wanted, "Exact archive identifier route. The search index did not return an OCR hit for this identifier.", "/archive/" + wanted, wanted);
@@ -646,7 +650,7 @@
             results.innerHTML = "<div class='empty'>No readable results. Try a spelling variant, exact phrase, or EFTA identifier.</div>";
           }
           var shown = results.querySelectorAll(".search-result").length;
-          if (status) status.textContent = "Search complete · " + shown + " result" + (shown === 1 ? "" : "s") + ".";
+          if (status) status.textContent = (scope === "archive" ? "Search complete · " : "Publication research complete · ") + shown + (scope === "archive" ? " result" : " source candidate") + (shown === 1 ? "" : "s") + ".";
         })
         .catch(function (err) {
           results.innerHTML = "<div class='error-state'>Search is unavailable in this preview or the archive service did not respond. The evidence vault remains linked from Explore.</div>";
@@ -665,6 +669,7 @@
         }
         var next = new URL(window.location.href);
         next.searchParams.set("q", String(q).trim());
+        if (researchScope && researchScope.value !== "archive") next.searchParams.set("research", researchScope.value); else next.searchParams.delete("research");
         window.history.replaceState({}, "", next.pathname + next.search);
         runSearch(q, mainForm());
       });
