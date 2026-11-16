@@ -66,17 +66,17 @@
     return true;
   }
 
-  function applyConsent(consent) {
+  function applyConsent(consent, prechoice) {
     var next = Object.assign({}, DEFAULT_CONSENT, consent || {});
     sessionConsent = next;
     // One runtime owns tag configuration, consent updates and pageviews.
     document.documentElement.dataset.gahConsent = JSON.stringify(next);
-    loadGoogleTagIfAllowed(next);
+    loadGoogleTagIfAllowed(next, prechoice);
     window.dispatchEvent(new CustomEvent("gah:consent:update", { detail: next }));
   }
 
-  function loadGoogleTagIfAllowed(consent) {
-    if (window.GAHAnalytics) window.GAHAnalytics.applyConsent(consent);
+  function loadGoogleTagIfAllowed(consent, prechoice) {
+    if (window.GAHAnalytics) window.GAHAnalytics.applyConsent(consent, {prechoice: prechoice === true});
   }
 
   function currentConsent() {
@@ -123,7 +123,8 @@
     wrap.className = "gah-consent-banner";
     wrap.setAttribute("data-gah-consent-ui", "banner");
     wrap.setAttribute("aria-label", "Privacy choices");
-    wrap.innerHTML = '<div><strong>Privacy choices</strong><p>Essential site functions always stay on. Analytics and advertising storage stay off unless you allow them.</p></div>';
+    var measurementNote = (window.GAH_CONSENT_BOOT || {}).advancedAnalytics ? ' Limited cookieless Google measurement may occur before you choose. Reject nonessential stops subsequent measurement.' : '';
+    wrap.innerHTML = '<div><strong>Privacy choices</strong><p>Essential site functions always stay on. Analytics and advertising storage stay off unless you allow them.' + measurementNote + ' <a href="/privacy">Privacy policy</a>.</p></div>';
     var actions = document.createElement("div");
     actions.className = "gah-consent-actions";
     actions.appendChild(button("Reject nonessential", "reject", false));
@@ -314,7 +315,7 @@
       // Pending CMP startup temporarily applies denied consent. Recover the reader's
       // actual saved choice once the CMP explicitly says it does not govern this visit.
       var stored = readStoredConsent();
-      applyConsent(stored && stored.consent ? stored.consent : DEFAULT_CONSENT);
+      applyConsent(stored && stored.consent ? stored.consent : DEFAULT_CONSENT, !stored);
       if (!stored) showBanner();
       showReopenControl();
       return;
@@ -335,7 +336,8 @@
     });
   }});
 
-  applyConsent(shouldDeferToGoogleCmp() && !cmpDecisionReady ? DEFAULT_CONSENT : currentConsent());
+  var cmpPending = shouldDeferToGoogleCmp() && !cmpDecisionReady;
+  applyConsent(cmpPending ? DEFAULT_CONSENT : currentConsent(), !cmpPending && !readStoredConsent());
   if (!readStoredConsent()) showBanner();
   showReopenControl();
   installCtaTracking();

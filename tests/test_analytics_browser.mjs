@@ -18,7 +18,7 @@ async function fixture(options={}) {
    if(!['analytics.js','consent.js','consent.css'].includes(name))return route.abort();
    return route.fulfill({contentType:name.endsWith('.css')?'text/css':'application/javascript',body:await readFile(new URL('frontdoor/'+name,root),'utf8')});
   }
-  const boot={schema:'gah.consent.v2',googleTagEnabled:options.enabled!==false,ga4MeasurementId:'G-XHE84C8D1V',unifiedConsent:true,googleCmpAnalyticsEnabled:!!options.cmpPresent};
+  const boot={schema:'gah.consent.v2',googleTagEnabled:options.enabled!==false,ga4MeasurementId:'G-XHE84C8D1V',unifiedConsent:true,advancedAnalytics:!!options.advanced,googleCmpAnalyticsEnabled:!!options.cmpPresent};
   return route.fulfill({contentType:'text/html',body:`<!doctype html><html><head><title>Public evidence fixture</title><script>window.GAH_CONSENT_BOOT=${JSON.stringify(boot)};window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});</script><link rel="stylesheet" href="/frontdoor/consent.css"><script src="/frontdoor/analytics.js"></script><script defer src="/frontdoor/consent.js"></script></head><body><h1>Public evidence fixture</h1><a href="https://www.justice.gov/source.pdf">Original PDF</a><a href="https://wiki.grokarchivehub.com/receipts/EFTA00035613">Receipt</a></body></html>`});
  });
  const page=await context.newPage();
@@ -29,7 +29,7 @@ async function fixture(options={}) {
  }
  await page.goto(start,options.referrer?{referer:options.referrer}:{});await page.waitForSelector('[data-gah-consent-ready]');
  const commands=()=>page.evaluate(()=>Array.from(dataLayer,a=>Array.from(a)));
- const events=async name=>(await commands()).filter(a=>a[0]==='event'&&a[1]===name);
+ const events=async name=>{let consent='denied';const result=[];for(const a of await commands()){if(a[0]==='consent'&&a[2]?.analytics_storage)consent=a[2].analytics_storage;if(a[0]==='config'&&a[2]?.send_page_view&&consent==='granted'&&name==='page_view')result.push(['event','page_view',{...a[2],send_to:a[1]}]);if(a[0]==='event'&&a[1]===name)result.push(a);}return result;};
  return {context,page,commands,events,tags:()=>tagRequests};
 }
 try {
@@ -46,7 +46,7 @@ try {
  let pv=await f.events('page_view');check('accept queues exactly one pageview',()=>assert.equal(pv.length,1));
  check('direct navigation does not invent a referrer',()=>assert.equal(pv[0][2].page_referrer,''));
  check('one correct stream and manual pageview configuration',()=>assert.deepEqual((pv[0][2].send_to),'G-XHE84C8D1V'));
- const config=(await f.commands()).filter(a=>a[0]==='config');check('automatic config pageview suppressed',()=>assert.equal(config[0][2].send_page_view,false));
+ const config=(await f.commands()).filter(a=>a[0]==='config');check('one automatic initial view, no redundant manual event',()=>assert.equal(config[0][2].send_page_view,true));assert.equal((await f.commands()).filter(a=>a[0]==='event'&&a[1]==='page_view').length,0);
  check('ordinary traffic has no debug parameter',()=>assert.equal(Object.hasOwn(config[0][2],'debug_mode'),false));
  check('secret and personal query values omitted; campaign retained',()=>{assert(!pv[0][2].page_location.includes('SECRET'));assert(!pv[0][2].page_location.includes('person'));assert(pv[0][2].page_location.includes('utm_source=facebook'));});
  await f.page.evaluate(()=>GAHAnalytics.applyConsent({analytics_storage:'granted'}));
@@ -87,5 +87,17 @@ try {
  f=await fixture();await f.page.evaluate(()=>{googlefc.ConsentModePurposeStatusEnum={CONSENT_MODE_PURPOSE_STATUS_GRANTED:1,CONSENT_MODE_PURPOSE_STATUS_DENIED:2};googlefc.getGoogleConsentModeValues=()=>({analyticsStoragePurposeConsentStatus:0});googlefc.callbackQueue[0].CONSENT_MODE_DATA_READY();});check('unknown CMP signal never grants consent',()=>assert.equal(f.tags(),0));
  await f.page.evaluate(()=>{googlefc.getGoogleConsentModeValues=()=>({analyticsStoragePurposeConsentStatus:1});googlefc.callbackQueue[0].CONSENT_MODE_DATA_READY();});await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');check('explicit Google CMP grant releases one view',()=>{});assert.equal((await f.events('page_view')).length,1);
  await f.context.close();
+
+ f=await fixture({advanced:true,url:'https://grokarchivehub.com/archive/EFTA00013764'});await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='cookieless-pageview-queued');
+ const cfg=(await f.commands()).filter(a=>a[0]==='config')[0][2];
+ check('advanced prechoice uses one tag, coarse page and automatic initial view',()=>{assert.equal(f.tags(),1);assert.equal(cfg.send_page_view,true);assert.equal(cfg.page_location,'https://grokarchivehub.com/archive/');assert.equal(cfg.page_title,'Grok Archive Hub');});
+ check('advanced has no manual duplicate',()=>{});assert.equal((await f.events('page_view')).length,0);
+ await f.page.getByRole('button',{name:'Reject nonessential',exact:true}).click();
+ check('advanced explicit rejection disables tag',()=>{});assert.equal(await f.page.evaluate(()=>window['ga-disable-G-XHE84C8D1V']),true);
+ await f.page.reload();await f.page.waitForSelector('[data-gah-consent-ready]');check('stored rejection does not reload tag',()=>assert.equal(f.tags(),1));await f.context.close();
+ f=await fixture({advanced:true,url:'https://grokarchivehub.com/'});await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='cookieless-pageview-queued');await f.page.getByRole('button',{name:'Accept all',exact:true}).click();await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');
+ check('same-page grant emits one observed view after denied ping',()=>{});assert.equal((await f.events('page_view')).length,1);
+ await f.page.evaluate(()=>history.pushState({},'','/archive/EFTA00013764'));check('consented history navigation emits one additional manual pageview',()=>{});assert.equal((await f.events('page_view')).length,2);await f.context.close();
+ f=await fixture({advanced:true,url:'https://grokarchivehub.com/archive/EFTA00013764?token=SECRET'});check('sensitive query route stays consent gated',()=>assert.equal(f.tags(),0));await f.context.close();
  console.log('PASS '+checks+' isolated browser checks; zero live measurements');
 } finally {await browser.close();}

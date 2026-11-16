@@ -7261,7 +7261,14 @@ function googleTagEnabled(env = {}) {
   );
 }
 
-function consentBootTag(env = {}) {
+function advancedAnalyticsEligible(request, env = {}) {
+  if (!request || !googleTagEnabled(env) || isStagingEnv(env)) return false;
+  const url = new URL(request.url);
+  if (!["grokarchivehub.com","www.grokarchivehub.com"].includes(url.hostname) || request.cf?.country !== "US") return false;
+  if (request.headers.get("Sec-GPC") === "1" || request.headers.get("DNT") === "1" || url.search) return false;
+  return /^\/(?:$|news\/?$|latest\/?$|archive\/?$|archive\/ids\/?$|archive\/EFTA\d{8}\/?$|start\/?$|guides\/?$|investigations\/?$)/.test(url.pathname);
+}
+function consentBootTag(env = {}, request = null) {
   const measurementId = cleanText(
     env.GA4_MEASUREMENT_ID
     || env.GOOGLE_TAG_ID
@@ -7271,6 +7278,7 @@ function consentBootTag(env = {}) {
   const config = {
     schema: "gah.consent.v2",
     unifiedConsent: true,
+    advancedAnalytics: advancedAnalyticsEligible(request, env),
     googleCmpAnalyticsEnabled: truthyFlag(env.GAH_GOOGLE_CMP_ANALYTICS_ENABLED),
     googleTagEnabled: tagEnabled,
     ga4MeasurementId: tagEnabled ? measurementId : "",
@@ -7284,8 +7292,8 @@ function consentBootTag(env = {}) {
   return `<script data-cfasync="false">window.GAH_CONSENT_BOOT=${JSON.stringify(config)};window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};window.gtag("consent","default",{analytics_storage:"denied",ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500});window.gtag("set","ads_data_redaction",true);</script>`;
 }
 
-function consentScriptTag(env = {}) {
-  return `${consentBootTag(env)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-PARITY-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-PARITY-001.1"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-PARITY-001.2"></script>`;
+function consentScriptTag(env = {}, request = null) {
+  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-PARITY-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-ADVANCED-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-ADVANCED-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
@@ -18851,7 +18859,7 @@ export default {
     const started = Date.now();
     try {
       const original = await this.handleStagingFetch(request, env);
-      const scripts = consentScriptTag(env);
+      const scripts = consentScriptTag(env, request);
       const eligible = canInstrumentHtmlResponse(original, request);
       let normalized = false;
       const quality = await readerQualityResponse(original, request, [...GAH_IDENTIFIER_DOSSIERS.values()], eligible ? (html, headers) => {
@@ -18859,7 +18867,8 @@ export default {
         headers.set('X-GAH-Analytics-Instrumentation', 'GAH-ANALYTICS-PARITY-001');
         return normalizeAnalyticsHtml(html, scripts);
       } : undefined);
-      const response = applyStagingPrivacyHeaders(normalized ? quality : await instrumentHtmlResponse(quality, request, scripts), env);
+      let response = applyStagingPrivacyHeaders(normalized ? quality : await instrumentHtmlResponse(quality, request, scripts), env);
+      if (eligible && ["grokarchivehub.com","www.grokarchivehub.com"].includes(new URL(request.url).hostname) && /^\/(?:$|news\/?$|latest\/?$|archive\/?$|archive\/ids\/?$|archive\/EFTA\d{8}\/?$|start\/?$|guides\/?$|investigations\/?$)/.test(new URL(request.url).pathname)) response = withHeader(response, "Cache-Control", "private, no-store");
       scheduleObservation(ctx, request, response, env, started);
       return response;
     } catch (error) {

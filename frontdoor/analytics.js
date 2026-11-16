@@ -8,6 +8,8 @@
   var excluded = /^(?:\/api(?:\/|$)|\/admin(?:\/|$)|\/login(?:\/|$)|\/account(?:\/|$)|\/frontdoor\/|\/cdn-cgi\/)/.test(location.pathname);
   var eligible = allowedHost && !automation && !excluded && boot.googleTagEnabled === true && /^G-[A-Z0-9]+$/.test(id);
   var granted = false, configured = false, loading = false, navigation = 0, sentNavigation = -1;
+  var advanced = boot.advancedAnalytics === true && navigator.globalPrivacyControl !== true && navigator.doNotTrack !== '1';
+  var pendingMeasurement = false, automaticGrantedNavigation = -1, sentCookielessNavigation = -1;
   var previous = document.referrer || '', current = location.href;
   var debug = new URL(location.href).searchParams.get('gah_debug') === '1';
   var engagementTimer;
@@ -33,11 +35,25 @@
     if (!eligible || !granted || !configured) return;
     window.gtag('event', name, Object.assign({ send_to: id, page_location: safeUrl(location.href) }, debug ? {debug_mode:true,traffic_type:'gah_operations'} : {}, params || {}));
   }
+  function coarseLocation() {
+    var path = location.pathname;
+    if (/^\/archive\/EFTA\d{8}\/?$/.test(path)) path = '/archive/';
+    return location.origin + path;
+  }
+  function safePrechoiceRoute() {
+    return advanced && !location.search && /^\/(?:$|news\/?$|latest\/?$|archive\/?$|archive\/ids\/?$|archive\/EFTA\d{8}\/?$|start\/?$|guides\/?$|investigations\/?$)/.test(location.pathname);
+  }
   function pageview() {
-    if (!eligible || !granted || !configured || sentNavigation === navigation) return;
+    if (!eligible || !configured) return;
+    if (!granted) {
+      if (pendingMeasurement && safePrechoiceRoute() && sentCookielessNavigation === navigation) state('cookieless-pageview-queued');
+      return;
+    }
+    if (sentNavigation === navigation) return;
     sentNavigation = navigation;
     var params = {page_location: safeUrl(location.href), page_referrer: safeUrl(previous), page_title: document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0, 160)};
-    event('page_view', params);
+    // A denied-state ping is not an observed consented pageview. Count one observed view on grant.
+    if (automaticGrantedNavigation !== navigation) event('page_view', params);
     state('pageview-queued');
     if (/^\/pdf-lite(?:\.html)?$/.test(location.pathname)) event('pdf_view', {document_id: documentId(), viewer: 'pdf-lite'});
     clearTimeout(engagementTimer);
@@ -54,15 +70,19 @@
       });
     });
   }
-  function applyConsent(consent) {
+  function applyConsent(consent, options) {
     granted = !!consent && consent.analytics_storage === 'granted';
-    window['ga-disable-' + id] = !eligible || !granted;
+    pendingMeasurement = !granted && !!options && options.prechoice === true && safePrechoiceRoute();
+    window['ga-disable-' + id] = !eligible || (!granted && !pendingMeasurement);
     var next = {analytics_storage: granted ? 'granted' : 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
     // Advertising remains disabled until the independent approval and route gates pass.
     window.gtag('consent', 'update', next);
-    if (!granted) { clearTimeout(engagementTimer); clearAnalyticsCookies(); state(eligible ? 'consent-denied' : 'excluded'); return; }
+    if (!granted) { clearTimeout(engagementTimer); clearAnalyticsCookies(); if (!pendingMeasurement) { state(eligible ? 'consent-denied' : 'excluded'); return; } }
     if (!eligible) { state('excluded'); return; }
-    if (configured) { pageview(); return; }
+    if (configured) {
+      if (granted) window.gtag('set', {page_location:safeUrl(location.href),page_referrer:safeUrl(previous),page_title:document.title.replace(/[\w.+-]+@[\w.-]+/g,'[redacted]').slice(0,160)});
+      pageview(); return;
+    }
     if (loading) return;
     loading = true;
     var script = document.createElement('script');
@@ -71,11 +91,16 @@
     script.setAttribute('data-gah-google-tag', 'true');
     script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
     script.onerror = function () { loading = false; state('tag-load-failed'); script.remove(); };
+    window.gtag('set', {page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub'});
+    window.gtag('js', new Date());
+    if (granted) automaticGrantedNavigation = navigation;
+    else sentCookielessNavigation = navigation;
+    // The actual Google tag produces an initial pageview even when send_page_view is false.
+    // Configure one automatic initial view; never send an additional manual view in the same consent state.
+    window.gtag('config', id, Object.assign({send_page_view: true, cookie_domain: 'grokarchivehub.com', allow_google_signals: false, allow_ad_personalization_signals: false, page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub', url_passthrough: false}, debug ? {debug_mode:true,traffic_type:'gah_operations'} : {}));
     script.onload = function () {
-      if (configured) return;
+      if (configured || (!granted && (!pendingMeasurement || !safePrechoiceRoute()))) { loading = false; return; }
       configured = true;
-      window.gtag('js', new Date());
-      window.gtag('config', id, Object.assign({send_page_view: false, cookie_domain: 'grokarchivehub.com', allow_google_signals: false, allow_ad_personalization_signals: false, page_location: safeUrl(location.href), page_referrer: safeUrl(previous)}, debug ? {debug_mode:true,traffic_type:'gah_operations'} : {}));
       pageview();
     };
     state('tag-loading');
@@ -90,7 +115,7 @@
   }
   function navigate() {
     if (navigationKey(location.href) === navigationKey(current)) { current = location.href; return; }
-    previous = current; current = location.href; navigation++; pageview();
+    previous = current; current = location.href; navigation++; if (!granted) { pendingMeasurement = false; window['ga-disable-' + id] = true; } else if (configured) window.gtag('set', {page_location:safeUrl(location.href),page_referrer:safeUrl(previous),page_title:document.title.replace(/[\w.+-]+@[\w.-]+/g,'[redacted]').slice(0,160)}); pageview();
   }
   ['pushState', 'replaceState'].forEach(function (method) {
     var original = history[method];
