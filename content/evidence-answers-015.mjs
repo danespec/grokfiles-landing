@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 import MODEL from './research-corpus-010.mjs';
 export const evidenceHash015=s=>createHash('sha256').update(s).digest('hex');
 const unsafe=/\b(?:passwords?|credentials?|unredact\w*|victim.{0,20}(?:name|identity)|witness.{0,20}(?:name|identity))\b|[\w.+-]+@[\w.-]+\.[a-z]{2,}|\b\d{3}-\d{2}-\d{4}\b/i;
+export const evidenceUnsafe015=unsafe;
 export function assembleEvidenceAnswer015({question,claims,sources,review,version,revoked=[],now=new Date().toISOString().slice(0,10),production=true}){
  const abstain=reason=>({schema:'gah.evidence.answer.v1',version,answer:null,claims:[],abstained:true,reason});
  if(typeof question!=='string'||question.trim().length<3||question.length>256||unsafe.test(question)||typeof version!=='string'||version.length<1||version.length>128||!Array.isArray(revoked))return abstain('restricted_or_invalid_query');

@@ -3,8 +3,9 @@ import fs from 'node:fs';import path from 'node:path';import {pathToFileURL} fro
 import MODEL from '../content/research-corpus-010.mjs';
 import {deepSearch012} from '../content/editorial-search-012.mjs';
 import {researchPipeline010} from '../content/research-pipeline-010.mjs';
+const repoRoot=fs.realpathSync(new URL('..',import.meta.url));
 const previous=path.resolve(process.argv[2]),out=path.resolve(process.argv[3]);
-if(!process.argv[2]||!process.argv[3]||out.startsWith(process.cwd()+path.sep))throw Error('Private evidence paths required');
+if(!process.argv[2]||!process.argv[3]||out===repoRoot||out.startsWith(repoRoot+path.sep))throw Error('Private evidence paths required');
 const root=path.join(previous,'node-embedding/node_modules/@huggingface/transformers');
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json')));
 if(pkg.version!=='4.3.2')throw Error('Unexpected dependency version');
@@ -23,6 +24,6 @@ const {privateNeuralServer013}=await import('./private_neural_service_013.mjs');
 const service=privateNeuralServer013(runtime);
 const address=await service.listen();
 const receipt={scope:'private loopback only; no public exposure',port:address.port,corpus:MODEL.version,publications:MODEL.documents.length,model_revision:revision,dimensions:384};
-fs.mkdirSync(out,{recursive:true,mode:0o700});if(fs.realpathSync(out).startsWith(fs.realpathSync(process.cwd())+path.sep))throw Error('Private evidence outside checkout required');fs.writeFileSync(path.join(out,'neural-service.private.json'),JSON.stringify(receipt),{mode:0o600});
+fs.mkdirSync(out,{recursive:true,mode:0o700});if(fs.realpathSync(out)===repoRoot||fs.realpathSync(out).startsWith(repoRoot+path.sep))throw Error('Private evidence outside checkout required');fs.writeFileSync(path.join(out,'neural-service.private.json'),JSON.stringify(receipt),{mode:0o600});
 console.log(JSON.stringify({ready:true,loopback_only:true,publications:MODEL.documents.length}));
 process.once('SIGTERM',async()=>{await service.close();process.exit(0);});

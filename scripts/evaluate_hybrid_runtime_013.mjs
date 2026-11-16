@@ -3,8 +3,9 @@ import fs from 'node:fs';import path from 'node:path';import {pathToFileURL} fro
 import MODEL from '../content/research-corpus-010.mjs';
 import {deepSearch012} from '../content/editorial-search-012.mjs';
 import {researchPipeline010} from '../content/research-pipeline-010.mjs';
+const repoRoot=fs.realpathSync(new URL('..',import.meta.url));
 const previous=path.resolve(process.argv[2]),out=path.resolve(process.argv[3]);
-if(!process.argv[2]||!process.argv[3]||out.startsWith(process.cwd()+path.sep))throw Error('Private evidence paths required');
+if(!process.argv[2]||!process.argv[3]||out===repoRoot||out.startsWith(repoRoot+path.sep))throw Error('Private evidence paths required');
 const root=path.join(previous,'node-embedding/node_modules/@huggingface/transformers');
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json')));
 if(pkg.version!=='4.3.2')throw Error('Unexpected dependency version');

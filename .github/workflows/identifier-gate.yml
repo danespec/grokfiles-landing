@@ -89,6 +89,7 @@ jobs:
         run: |
           node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_neural_hybrid_013.mjs
           node tests/test_answers_015.mjs
+          node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_evidence_candidates_015.mjs
           node tests/test_private_neural_service_013.mjs
           python3 tests/test_archive_admission_014.py
           python3 tests/test_archive_fingerprint_reconciliation_014.py
