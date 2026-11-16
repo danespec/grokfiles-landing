@@ -1,3 +1,4 @@
+import {researchFeatureEnabled} from './research-features.mjs';
 import {cachedResearchPipeline010,pipelineVersion} from './research-pipeline-010.mjs';
 import MODEL from './research-corpus-010.mjs';
 export const SEARCH_011='/api/v1/research/editorial-search';
@@ -27,7 +28,7 @@ export async function publicResearchHttp011(request,env,throttle,budget=async()=
  for(const k of u.searchParams.keys())if(!allowed.includes(k)||u.searchParams.getAll(k).length!==1)return reply({error:'invalid_query'},400);
  const limit=u.searchParams.get('limit')??(catalog?'25':'5'),cursor=u.searchParams.get('cursor')??'0',q=u.searchParams.get('q')??'';
  if(!/^[1-9][0-9]?$/.test(limit)||+limit>(catalog?25:10)||! /^(0|[1-9][0-9]{0,5})$/.test(cursor)||+cursor>MODEL.documents.length||(!catalog&&(!q.trim()||q.length>256)))return reply({error:'invalid_bounds'},400);
- const strategy=u.searchParams.get('strategy')||'metadata';if(!['metadata','passage','hybrid'].includes(strategy))return reply({error:'invalid_strategy'},400);if(strategy!=='metadata'&&String(env?.GAH_PASSAGE_ENABLED)!=='true')return reply({error:'strategy_disabled'},404);
+ const strategy=u.searchParams.get('strategy')||'metadata';if(!['metadata','passage','hybrid'].includes(strategy))return reply({error:'invalid_strategy'},400);if(strategy!=='metadata'&&!researchFeatureEnabled(env,'passage'))return reply({error:'strategy_disabled'},404);
  const advanced=strategy==='metadata'?null:await import('./practical-retrieval.mjs');
  const expectedVersion=advanced?advanced.practicalVersion:pipelineVersion;
  const answerMode=u.searchParams.get('answer')||'none';if(!['none','reviewed'].includes(answerMode))return reply({error:'invalid_answer_mode'},400);
