@@ -14,3 +14,7 @@ console.log('PASS generation-proposal contract: current published metadata only,
 assert.equal(modelText015({response:'text'}),'text');
 assert.equal(modelText015({choices:[{finish_reason:'stop',message:{content:'text'}}]}),'text');
 for(const result of [null,{}, {choices:[]},{choices:[{finish_reason:'length',message:{content:'text'}}]},{choices:[{finish_reason:'stop',message:{content:'text',tool_calls:[{}]}}]}])assert.equal(modelText015(result),null);
+
+const selected=await run({...packet,selectionOnly:true,generate:async()=>JSON.stringify({abstain:false,source_urls:[source.url]})});assert(!selected.abstained);assert.equal(selected.candidates[0].quote,source.text);assert.equal(selected.generation_revision,'source-selection015.2');
+for(const selection of [{abstain:false,source_urls:['https://foreign.invalid']},{abstain:false,source_urls:[source.url],answer:'unverified'},{abstain:true,source_urls:[source.url]}])assert((await run({...packet,selectionOnly:true,generate:async()=>JSON.stringify(selection)})).abstained);
+console.log('PASS source-selection mode constructs quotations from current verified metadata, never model prose');
