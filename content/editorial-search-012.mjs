@@ -15,7 +15,7 @@ const unsafeInference=/\b(?:authentication cookies?|session tokens?|ignore.{0,30
 const prohibitedExpansion=/\b(?:restricted (?:evidence|records?|files?)|(?:extract|retrieve|publish|access|show|return).{0,30}(?:private|unpublished|nonpublic) (?:records?|files?|data|evidence)|(?:reverse|undo|remove|defeat|reconstruct|recover|bypass).{0,24}redact\w*|(?:identify|find|name|owner of).{0,30}unattributed|(?:conviction|guilt).{0,30}(?:from|based on).{0,20}(?:civil )?allegation|(?:resolve|determine|establish|prove|reconstruct|answer).{0,30}(?:without|absent|missing).{0,24}(?:source|evidence|document|record)|(?:definitive|certain|conclusive) answer.{0,32}(?:incomplete|absent|missing|unavailable)|(?:currency|amount|date|parties).{0,70}(?:are absent|unknown or absent)|non[- ]existent publication|fictional record|permanently unavailable source)\b/i;
 export function expansionGuard012(q){
  if(typeof q!=='string'||q.length>256||!q.trim())return 'invalid_query';
- if(privateQuery.test(q)||unsafeInference.test(q)||prohibitedExpansion.test(q)||/<\/?[a-z][^>]*>/i.test(q)||/\b(?:drop|alter|truncate|delete)\s+(?:table|database|from)\b/i.test(q))return 'restricted_or_unsupported_request';
+ if(/[\w.+-]+@[\w.-]+\.[a-z]{2,}|\b\d{3}[-. ]\d{2}[-. ]\d{4}\b|\b\d{3}[-. ]\d{3}[-. ]\d{4}\b/i.test(q)||privateQuery.test(q)||unsafeInference.test(q)||prohibitedExpansion.test(q)||/<\/?[a-z][^>]*>/i.test(q)||/\b(?:drop|alter|truncate|delete)\s+(?:table|database|from)\b/i.test(q))return 'restricted_or_unsupported_request';
  if(/\bBARAK[-_][0-9]+(?:[-_][0-9]+)?\b/i.test(q))return 'unsupported_identifier_namespace';
  if(/\b(?:versus|vs\.?|distinguish)\b.{0,40}\b(?:document )?namespace\b/i.test(q))return 'specify_entity_or_document';
  return null;

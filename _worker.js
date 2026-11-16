@@ -1,3 +1,5 @@
+import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
+import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
 const PATH_012='/api/v1/research/editorial-search-preview';
 import {publicResearchPaths011,publicResearchHttp011,publicResearchEnabled011,publicResearchTool011,publicResearchMcp011,publicResearchSpec011,SEARCH_011,CORPUS_011} from './content/public-research-011.mjs';
 import {attachResearchGraph010} from './content/research-pipeline-010.mjs';
@@ -2826,7 +2828,7 @@ function gahCommerce082Html(){
 }
 
 async function gahMcpCallTool(name, args, request, env) {
-  if(name===publicResearchTool011.name)return publicResearchMcp011(args,request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}));
+  if(name===publicResearchTool011.name)return publicResearchMcp011(args,request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}),()=>gahNeuralBudget(env));
   if(name===publicFeedTool.name){
     if(!releaseSurfaceEnabled(request,env)||!args||typeof args!=="object"||Array.isArray(args)||Object.keys(args).some(k=>!["cursor","limit","version"].includes(k)))throw Error("Invalid publication feed arguments");
     const u=new URL(request.url);u.pathname=PUBLIC_FEED_PATH;u.search="";
@@ -4376,7 +4378,7 @@ async function serveFrontdoorSiteJs(request, env) {
 }
 
 async function serveFrontdoorAssetStrict(request, env, path) {
-  if (path === "/frontdoor/site.js?v=GAH-STATUS-RESTORE-001" || path === "/frontdoor/site.js?v=GAH-GLOBAL-STATUS-REMOVED-001" || path === "/frontdoor/site.js?v=GAH-PRESENCE-002") {
+  if (path === "/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115" || path === "/frontdoor/site.js?v=GAH-GLOBAL-STATUS-REMOVED-001" || path === "/frontdoor/site.js?v=GAH-PRESENCE-002") {
     return serveFrontdoorSiteJs(request, env);
   }
   const response = await serveFrontdoor(request, env);
@@ -6404,6 +6406,8 @@ async function handlePublicSearch(request, env) {
     });
   }
 
+  const exactKey=exactCacheKey(payload,queryClassification,exactCacheVersion);
+  const cachedExact=readExactCache(env,exactKey);if(cachedExact)return cachedExact;
   const normalizedQueryForFetch = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   // SEC-REMEDIATION (ren/security-remediation): clamp the client-supplied
   // page size before proxying. The upstream engine must never receive an
@@ -6555,6 +6559,7 @@ async function handlePublicSearch(request, env) {
   data.primary_hit_count = actualHitCount(rows);
   data.estimatedTotalHits = rows.length;
   data.query = query;
+  writeExactCache(env,exactKey,exact,data,upstream.status);
 
   headers.set("Content-Type", "application/json; charset=utf-8");
   return new Response(JSON.stringify(data), {
@@ -7931,7 +7936,7 @@ function ensureV3DocumentShell(body) {
 function ensureGlobalExperienceShell(body) {
   let html = body;
   html = html.replace(/\/frontdoor\/site\.css(?:\?[^"' ]*)?/gi, "/frontdoor/site.css?v=GAH-STATUS-RESTORE-001");
-  html = html.replace(/\/frontdoor\/site\.js(?:\?[^"' ]*)?/gi, "/frontdoor/site.js?v=GAH-STATUS-RESTORE-001");
+  html = html.replace(/\/frontdoor\/site\.js(?:\?[^"' ]*)?/gi, "/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115");
   if (!/<link\b[^>]*href=["']\/frontdoor\/site\.css/i.test(html)) {
     html = html.replace(/<\/head>/i, `  <link rel="stylesheet" href="/frontdoor/site.css">\n</head>`);
   }
@@ -7963,7 +7968,7 @@ function ensureGlobalExperienceShell(body) {
     html = html.replace(/<footer\b(?=[^>]*\bdata-gah-global-footer\b)/i, `</main>\n<footer`);
   }
   if (!/<script\b[^>]*src=["']\/frontdoor\/site\.js/i.test(html)) {
-    html = html.replace(/<\/body>/i, `  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-STATUS-RESTORE-001"></script>\n</body>`);
+    html = html.replace(/<\/body>/i, `  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115"></script>\n</body>`);
   }
   return html;
 }
@@ -10751,7 +10756,7 @@ async function serveBirthdayBookSsr(request, env, baseRoute, htmlPath) {
       <p class="disclaimer">Presence-only archival research. No guilt or conduct implied unless adjudicated. A source reference may establish presence in a record while remaining silent about purpose, knowledge, relationship, or wrongdoing.</p>
     </div>
   </footer>
-  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-STATUS-RESTORE-001"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115"></script>
 </body>
 </html>`;
     const headers = new Headers({
@@ -10844,7 +10849,7 @@ function serveBirthdayBookV2Alias(request, env, path) {
       <nav><a href="/editorial-policy">Editorial policy</a><a href="/corrections">Corrections</a><a href="/privacy">Privacy</a></nav>
     </div>
   </footer>
-  <script data-cfasync="false" defer src="/frontdoor/site.js?v=GAH-STATUS-RESTORE-001"></script>
+  <script data-cfasync="false" defer src="/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115"></script>
 </body>
 </html>`;
   const headers = new Headers({
@@ -17761,7 +17766,7 @@ function memberChrome(title, activePath, member, innerHtml) {
     </article>
   </main>
   <footer class="site-footer"><div class="page-shell"><nav class="footer-links"><a href="/membership">Membership</a><a href="/privacy">Privacy</a><a href="/contact">Contact / Source Tips</a><a href="/search">Public Search</a></nav><p class="disclaimer">Member tools do not remove, hide, or paywall public evidence.</p></div></footer>
-  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-STATUS-RESTORE-001"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115"></script>
 </body>
 </html>`;
 }
@@ -18232,7 +18237,7 @@ function barakReceiptDetailHtml(record, requestUrl) {
       <p class="disclaimer">Presence-only archival research. No guilt or conduct implied unless adjudicated.</p>
     </div>
   </footer>
-  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-STATUS-RESTORE-001"></script>
+  <script data-cfasync="false" src="/frontdoor/site.js?v=GAH-PRACTICAL-RESEARCH-20261115"></script>
 </body>
 </html>`;
 }
@@ -18863,7 +18868,7 @@ export default {
       const {deepHttp012}=await import('./content/editorial-search-012.mjs');
       return deepHttp012(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research-012",key:gahSecClientIp(request),max:30,windowMs:60000}));
     }
-    if(publicResearchPaths011.includes(path))return publicResearchHttp011(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}));
+    if(publicResearchPaths011.includes(path))return publicResearchHttp011(request,env,()=>gahSecDoCall(env,{op:"check",scope:"editorial-research",key:gahSecClientIp(request),max:30,windowMs:60000}),()=>gahNeuralBudget(env));
     if(path===PUBLIC_FEED_PATH&&releaseSurfaceEnabled(request,env))return publicPublicationFeed(request,env,()=>gahSecDoCall(env,{op:"check",scope:"publication-feed",key:gahSecClientIp(request),max:30,windowMs:60000}));
     if (researchPreviewPaths.includes(path)) return researchPreviewHttp(request, env, () => gahSecDoCall(env, {op:'check',scope:'research-preview',key:gahSecClientIp(request),max:30,windowMs:60000}));
 
@@ -19790,4 +19795,5 @@ export default {
   }
 };
 
+async function gahNeuralBudget(env){try{const minute=await gahSecDoCall(env,{op:'check',scope:'neural-global-minute',key:'global',max:30,windowMs:60000});if(minute?.limited!==false)return false;const day=await gahSecDoCall(env,{op:'check',scope:'neural-global-day',key:'global',max:5000,windowMs:86400000});return day?.limited===false}catch{return false}}
 function gahRoutingDiscoveryCatalog(request,env){const d=JSON.parse(GAH_ARD_CATALOG),origin=new URL(request.url).origin;if(releaseSurfaceEnabled(request,env)){const e=d.entries.find(x=>x.identifier.endsWith(':api:public'));if(e)e.publicationFeed={url:origin+PUBLIC_FEED_PATH,scope:'bounded editorial register; not a complete archive feed',schema:'gah.publications.changes.v1'};}if(publicResearchEnabled011(request,env)){const e=d.entries.find(x=>x.identifier.endsWith(':api:public'));if(e)e.editorialResearch={search:origin+SEARCH_011,corpus:origin+CORPUS_011,scope:'public editorial metadata only; no generated answers'};}if(!researchPreviewEnabled(request,env))return JSON.stringify(d);for(const e of d.entries){if(e.identifier.endsWith(':api:public'))e.url=origin+'/openapi.json';if(e.identifier.endsWith(':server:research-mcp'))e.url=origin+'/.well-known/mcp/server-card.json';if(e.identifier.endsWith(':api:public')||e.identifier.endsWith(':server:research-mcp'))e.representativeQueries.push('route navigation, subject, payment, flight and chronology questions through the protected retrieval preview; responses are discovery candidates, not conclusions');}return JSON.stringify(d);}
