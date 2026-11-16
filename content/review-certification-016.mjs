@@ -11,7 +11,7 @@ export async function certifyAnswer016(payload,model,reviewer,date){
   s.privacy_approved=true;claims.push({quote:c.quote,classification:c.classification,citation:{url:s.url,source_id:s.id,publication_sha256:s.publication_sha256,text_sha256:s.text_sha256},limitation:s.limitation});
  }
  p.review={approved:true,independent:true,privacy_approved:true,author:payload.draft_author,reviewer,date,version:p.version,packet_sha256:await reviewHash016(JSON.stringify(p))};
- return {question:p.question,packet:p,result:{schema:'gah.evidence.answer.v1',version:p.version,answer:claims.map(c=>'“'+c.quote+'” ['+c.classification+']').join('\n'),claims,abstained:false,generation:'verbatim_reviewed_extraction_only',unsupported_synthesis:false,uncertainty:'These are human-reviewed quotations of published editorial summaries, not independent verification of the underlying primary evidence. Allegations and unresolved questions retain their classifications.'}};
+ return {question:p.question,packet:p,result:{schema:'gah.evidence.answer.v1',version:p.version,answer:claims.map(c=>'“'+c.quote+'” ['+c.classification+']'+(payload.answer_format==='scoped_extraction_v2'?'\nScope and limits: '+c.limitation:'')).join('\n'),claims,abstained:false,generation:payload.answer_format==='scoped_extraction_v2'?'reviewed_source_quotes_with_scope_notes':'verbatim_reviewed_extraction_only',unsupported_synthesis:false,uncertainty:'These are human-reviewed quotations of published editorial summaries, not independent verification of the underlying primary evidence. Allegations and unresolved questions retain their classifications.'}};
 }
 export function certifyArchive016(p){
  let u;try{u=new URL(p.primary_locator)}catch{throw Error('archive_source_gate')}
