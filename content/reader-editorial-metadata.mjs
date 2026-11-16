@@ -20,8 +20,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Understand the difference between indexed research records, published evidence, source holdings, mirrors, OCR derivatives and Google indexing."
   },
   "https://grokarchivehub.com/archive/EFTA00000468": {
-    "title": "EFTA00000468: DOJ Removal and Restoration",
-    "description": "Read EFTA00000468: DOJ Removal and Restoration. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00000468: Desk with Framed Photos",
+    "description": "EFTA00000468: Desk with Framed Photos. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA00007893": {
     "title": "EFTA00007893: Maxwell’s Travel Coordination",
@@ -36,8 +36,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA00014374: Richardson’s Counsel Memo. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA00016622": {
-    "title": "EFTA00016622: Indyke and Kahn Records",
-    "description": "Read EFTA00016622: Indyke and Kahn Records. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00016622: Shmitka Air FAA Records",
+    "description": "EFTA00016622: Shmitka Air FAA Records. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA00022062": {
     "title": "EFTA00022062: The 2020 DOJ Request on Andrew",
@@ -48,8 +48,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA00033413: June 27 MCC Lieutenant Log. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA00034221": {
-    "title": "EFTA00034221: Zuckerberg Contact References",
-    "description": "Read EFTA00034221: Zuckerberg Contact References. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00034221: Farley Donation Letter",
+    "description": "EFTA00034221: Farley Donation Letter. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA00035035": {
     "title": "EFTA00035035: August 14 BOP Legal Hold",
@@ -132,8 +132,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA00080260: Black–Rothschild Exhibit. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA00088020": {
-    "title": "EFTA00088020: The 2020 DOJ Request on Andrew",
-    "description": "Read EFTA00088020: The 2020 DOJ Request on Andrew. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00088020: DOJ Email on Andrew MLAT",
+    "description": "EFTA00088020: DOJ Email on Andrew MLAT. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA00128841": {
     "title": "EFTA00128841: IRS Accounting Import Record",
@@ -152,8 +152,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA00153571: French Financial Inquiry, Page 3. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA00176507": {
-    "title": "EFTA00176507: 2007 Legal Correspondence",
-    "description": "Read EFTA00176507: 2007 Legal Correspondence. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA00176507: Lefcourt Composite File",
+    "description": "EFTA00176507: Lefcourt Composite File. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA00224262": {
     "title": "EFTA00224262: Koni Foundation Corporate Filing",
@@ -220,8 +220,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA01972778: Brunel and MC2 Correspondence. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA02213201": {
-    "title": "EFTA02213201: Indyke and Kahn Records",
-    "description": "Read EFTA02213201: Indyke and Kahn Records. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02213201: Kahn Flight Coordination",
+    "description": "EFTA02213201: Kahn Flight Coordination. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA02239649": {
     "title": "EFTA02239649: Summers’s Harvard Visit Planning",
@@ -232,12 +232,12 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA02239873: Summers’s Harvard Visit Planning. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA02240144": {
-    "title": "EFTA02240144: Bannon’s March 2018 Schedule",
-    "description": "Read EFTA02240144: Bannon’s March 2018 Schedule. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02240144: Epstein’s March 2018 Schedule",
+    "description": "EFTA02240144: Epstein’s March 2018 Schedule. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA02262778": {
-    "title": "EFTA02262778: Zuckerberg Contact References",
-    "description": "Read EFTA02262778: Zuckerberg Contact References. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02262778: Davos Marketing Forward",
+    "description": "EFTA02262778: Davos Marketing Forward. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA02300238": {
     "title": "EFTA02300238: Hoffman Travel Planning",
@@ -260,12 +260,12 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA02596796: Barak’s December 2014 Trip. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/EFTA02656769": {
-    "title": "EFTA02656769: Ryan and Thiel: Claims and Responses",
-    "description": "Read EFTA02656769: Ryan and Thiel: Claims and Responses. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02656769: Epstein’s Carbyne Note to Thiel",
+    "description": "EFTA02656769: Epstein’s Carbyne Note to Thiel. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA02662212": {
-    "title": "EFTA02662212: Richardson’s Counsel Memo",
-    "description": "Read EFTA02662212: Richardson’s Counsel Memo. Compare the source, documentary context and limits before drawing conclusions."
+    "title": "EFTA02662212: Richardson Callback Heads-Up",
+    "description": "EFTA02662212: Richardson Callback Heads-Up. Open the DOJ source and read its document context, provenance and limits."
   },
   "https://grokarchivehub.com/archive/EFTA02730265": {
     "title": "EFTA02730265: Gates and the Nikolic Exit Draft",

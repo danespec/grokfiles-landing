@@ -10,7 +10,7 @@ const lanes=[
  {name:'timeline',queries:['epstein files timeline','epstein timeline','jeffrey epstein timeline','epstein chronology','epstein files chronology'],paths:['/timeline-reconstructions']}
 ];
 const byQuery=new Map(lanes.flatMap(l=>l.queries.map(q=>[q,l])));
-const hub={source_sha256:'9e37b37aa0dee188247bbe3ac8f81aa2809063520860cb7a06dfd59c27455f18',title:'Timeline Reconstructions | Grok Archive Hub',description:'Chronology work that keeps sequence, source confidence, and unresolved timing gaps separate from causation claims.'};
+const hub={source_sha256:'b4787f8d1a7dd4bd03c764a47eaeb0cb0104c7e57a3dc87e866747bca25f0ef1',title:'Timeline Reconstructions | Grok Archive Hub',description:'Chronology work that keeps sequence, source confidence, and unresolved timing gaps separate from causation claims.'};
 const allowed=new Set(['q','query','limit','tag','fast','no_ai','ai_layer']);
 const normalized=q=>String(q).trim().toLowerCase().replace(/[?!.]+$/,'').replace(/\s+/g,' ');
 export const editorialDiscoveryEnabled010=env=>!['false','0'].includes(String(env?.GAH_EDITORIAL_DISCOVERY_ENABLED??'true').toLowerCase());
