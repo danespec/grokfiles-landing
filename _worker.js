@@ -7278,7 +7278,9 @@ function consentBootTag(env = {}, request = null) {
   const config = {
     schema: "gah.consent.v2",
     unifiedConsent: true,
-    advancedAnalytics: advancedAnalyticsEligible(request, env),
+    // Gateway is loaded only after affirmative analytics consent until its pre-choice behavior is independently verified.
+    advancedAnalytics: false,
+    googleTagGatewayPath: tagEnabled ? "/zrth/" : "",
     googleCmpAnalyticsEnabled: truthyFlag(env.GAH_GOOGLE_CMP_ANALYTICS_ENABLED),
     googleTagEnabled: tagEnabled,
     ga4MeasurementId: tagEnabled ? measurementId : "",
@@ -7293,7 +7295,7 @@ function consentBootTag(env = {}, request = null) {
 }
 
 function consentScriptTag(env = {}, request = null) {
-  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
+  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-GATEWAY-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
@@ -7997,7 +7999,7 @@ function scriptSourceAllowlist(origin = "") {
         "https://www.grokarchivehub.com",
         "https://*.grokfiles-landing.pages.dev"
       ];
-  const directories = ["/frontdoor/", "/book-of-black/", "/evidence-engine/", "/pdfjs/build/", "/cdn-cgi/challenge-platform/", "/cdn-cgi/scripts/", "/xbjr/"];
+  const directories = ["/frontdoor/", "/book-of-black/", "/evidence-engine/", "/pdfjs/build/", "/cdn-cgi/challenge-platform/", "/cdn-cgi/scripts/", "/zrth/"];
   const exactScripts = [
     "/assets/v3-newsletter-062.js",
     "/assets/v3-source-links-063.js",
@@ -8081,7 +8083,7 @@ function applyHtmlSecurityHeaders(headers, env = {}, requestOrOrigin = "") {
 }
 
 function isAccountLevelAnalyticsGatewayPath(path) {
-  return path === "/xbjr" || path.startsWith("/xbjr/") || path.startsWith("/cdn-cgi/zaraz");
+  return path === "/zrth" || path.startsWith("/zrth/") || path === "/xbjr" || path.startsWith("/xbjr/") || path.startsWith("/cdn-cgi/zaraz");
 }
 
 function blockedAccountAnalyticsResponse(request) {

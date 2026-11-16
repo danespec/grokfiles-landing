@@ -12,13 +12,14 @@ async function fixture(options={}) {
  let tagRequests=0;
  await context.route('**/*',async route=>{
   const url=new URL(route.request().url());
-  if(url.hostname==='www.googletagmanager.com') {assert.equal(url.pathname,'/gtm.js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
+  if(url.pathname==='/zrth/'){assert(options.gateway);tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
+  if(url.hostname==='www.googletagmanager.com') {assert(!options.gateway);assert.equal(url.pathname,'/gtm.js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
   if(url.pathname.startsWith('/frontdoor/')) {
    const name=url.pathname.slice('/frontdoor/'.length);
    if(!['analytics.js','consent.js','consent.css'].includes(name))return route.abort();
    return route.fulfill({contentType:name.endsWith('.css')?'text/css; charset=utf-8':'application/javascript; charset=utf-8',body:await readFile(new URL('frontdoor/'+name,root),'utf8')});
   }
-  const boot={schema:'gah.consent.v2',googleTagEnabled:options.enabled!==false,ga4MeasurementId:'G-XHE84C8D1V',unifiedConsent:true,advancedAnalytics:!!options.advanced,googleCmpAnalyticsEnabled:!!options.cmpPresent};
+  const boot={schema:'gah.consent.v2',googleTagEnabled:options.enabled!==false,ga4MeasurementId:'G-XHE84C8D1V',unifiedConsent:true,advancedAnalytics:!!options.advanced,googleTagGatewayPath:options.gateway?'/zrth/':'',googleCmpAnalyticsEnabled:!!options.cmpPresent};
   return route.fulfill({contentType:'text/html; charset=utf-8',body:`<!doctype html><html><head><title>Public evidence fixture</title><script>window.GAH_CONSENT_BOOT=${JSON.stringify(boot)};window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});</script><link rel="stylesheet" href="/frontdoor/consent.css"><script src="/frontdoor/analytics.js"></script><script defer src="/frontdoor/consent.js"></script></head><body><h1>Public evidence fixture</h1><a href="https://www.justice.gov/source.pdf">Original PDF</a><a href="https://wiki.grokarchivehub.com/receipts/EFTA00035613">Receipt</a></body></html>`});
  });
  const page=await context.newPage();
@@ -109,5 +110,8 @@ try {
  assert.equal(await f.page.evaluate(()=>GAHConsent.current().ad_storage),'denied');
  await f.context.close();
  }
+ for(const host of ['grokarchivehub.com','wiki.grokarchivehub.com']){
+ f=await fixture({gateway:true,advanced:true,url:'https://'+host+'/'});check('Gateway never loads before consent '+host,()=>assert.equal(f.tags(),0));
+ await f.page.getByRole('button',{name:'Allow analytics',exact:true}).click();await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');check('one first-party tag after consent '+host,()=>assert.equal(f.tags(),1));assert.equal((await f.events('page_view')).length,1);await f.context.close();}
  console.log('PASS '+checks+' isolated browser checks; zero live measurements');
 } finally {await browser.close();}
