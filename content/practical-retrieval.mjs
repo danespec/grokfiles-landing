@@ -5,7 +5,7 @@ import MODEL from './research-corpus-010.mjs';
 import VECTORS from './editorial-vectors-013.mjs';
 import {citationPacket} from './research-evidence-closeout.mjs';
 const MODEL_ID='@cf/baai/bge-small-en-v1.5';
-const bound=VECTORS.corpus_version===MODEL.version&&VECTORS.model===MODEL_ID&&VECTORS.documents.length===MODEL.documents.length&&VECTORS.documents.every((d,i)=>d.url===MODEL.documents[i].url&&d.source_sha256===MODEL.documents[i].source_sha256);
+const bound=VECTORS.embedding_batch_size===1&&VECTORS.corpus_version===MODEL.version&&VECTORS.model===MODEL_ID&&VECTORS.documents.length===MODEL.documents.length&&VECTORS.documents.every((d,i)=>d.url===MODEL.documents[i].url&&d.source_sha256===MODEL.documents[i].source_sha256);
 const enabled=v=>!['0','false'].includes(String(v??'true').toLowerCase());
 export const practicalVersion=deepVersion+'.'+VECTORS.version;
 const environments=new WeakMap();
@@ -29,8 +29,9 @@ export async function practicalRetrieval({q,limit=5,options={},strategy='passage
  s.active++;
  const work=(async()=>{
   const checkCanary=s.verifiedUntil<=Date.now();const canary=MODEL.documents[0].title+' '+MODEL.documents[0].description;
-  const raw=await env.GAH_AI.run(MODEL_ID,{text:checkCanary?[q,canary]:[q]});let vector=raw?.data?.[0];if(!valid(vector))throw Error('invalid_encoder_output');
-  if(checkCanary){const probe=raw?.data?.[1];if(!valid(probe)||probe.reduce((sum,v,i)=>sum+v*VECTORS.documents[0].vector[i],0)<.999)throw Error('model_snapshot_changed');s.verifiedUntil=Date.now()+3600000;}
+  const normalize=v=>{if(!Array.isArray(v)||v.length!==384||!v.every(Number.isFinite))throw Error('invalid_encoder_output');const norm=Math.sqrt(v.reduce((n,x)=>n+x*x,0));if(norm<.001||norm>1000)throw Error('invalid_encoder_output');return v.map(x=>x/norm)};
+  if(checkCanary){const probe=normalize((await env.GAH_AI.run(MODEL_ID,{text:[canary]}))?.data?.[0]);if(probe.reduce((sum,v,i)=>sum+v*VECTORS.documents[0].vector[i],0)<.999)throw Error('model_snapshot_changed');s.verifiedUntil=Date.now()+3600000;if(!await budget())throw Error('encoder_budget');}
+  const vector=normalize((await env.GAH_AI.run(MODEL_ID,{text:[q]}))?.data?.[0]);
   const subjects=[...(/\bbarak\b/i.test(q)?[/\bbarak\b/i]:[]),...(/\bleon\s+black\b/i.test(q)?[/\bleon\s+black\b/i]:[])];
   const dense=MODEL.documents.map((d,i)=>({...d,vector:VECTORS.documents[i].vector})).filter(d=>filtered(d,options)&&(!subjects.length||subjects.some(p=>p.test(d.title+' '+d.description)))).map(d=>({url:d.url,score:d.vector.reduce((sum,v,i)=>sum+v*vector[i],0)})).filter(d=>d.score>=.35).sort((a,b)=>b.score-a.score||a.url.localeCompare(b.url)).slice(0,10);
   const scores=new Map(),docs=new Map(MODEL.documents.map(d=>[d.url,d]));
@@ -38,6 +39,6 @@ export async function practicalRetrieval({q,limit=5,options={},strategy='passage
   const results=[...scores].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,limit).map(([url,score])=>{const d=docs.get(url);return {url,title:d.title,description:d.description,document_type:d.document_type,publication_date:d.publication_date,source_sha256:d.source_sha256,score,channel:'neural_editorial_candidate',citations:[{url,publication_sha256:d.source_sha256}],citation_entailment:'not_independently_verified'};});
   const body=project({...base,results,abstained:!results.length},{strategy:'hybrid',neural_executed:true,neural_dimensions:384,model:MODEL_ID,model_revision:'provider-managed; bound to private vector snapshot '+VECTORS.version});
   if(s.cache.size>=64)s.cache.delete(s.cache.keys().next().value);s.cache.set(key,{until:Date.now()+120000,body});return body;
- })().catch(()=>fallback('encoder_failure')).finally(()=>{s.active--;s.pending.delete(key)});
+ })().catch(error=>fallback(['invalid_encoder_output','model_snapshot_changed','encoder_budget'].includes(error?.message)?error.message:'encoder_failure')).finally(()=>{s.active--;s.pending.delete(key)});
  let timer;const deadline=new Promise(resolve=>{timer=setTimeout(()=>resolve(fallback('encoder_timeout')),1500)});const bounded=Promise.race([work,deadline]).finally(()=>clearTimeout(timer));s.pending.set(key,bounded);return structuredClone(await bounded);
 }
