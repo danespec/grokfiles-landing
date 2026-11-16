@@ -96,6 +96,7 @@ jobs:
           python3 tests/test_archive_locator_manifest_014.py
           python3 tests/test_archive_source_urls_014.py
           python3 tests/test_archive_source_changes_014.py
+          python3 tests/test_archive_vectors_014.py
 
       - name: Practical retrieval and exact cache contracts
         run: |
