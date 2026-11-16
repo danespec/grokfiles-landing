@@ -305,15 +305,22 @@
     var fc = window.googlefc;
     if (typeof fc.getGoogleConsentModeValues !== 'function' || !fc.ConsentModePurposeStatusEnum) return;
     var value = fc.getGoogleConsentModeValues(), types = fc.ConsentModePurposeStatusEnum;
+    if (!value || value.analyticsStoragePurposeConsentStatus == null) return;
     var status = value.analyticsStoragePurposeConsentStatus;
-    if (status === types.CONSENT_MODE_PURPOSE_STATUS_NOT_APPLICABLE || status === types.CONSENT_MODE_PURPOSE_STATUS_NOT_CONFIGURED) {
+    var notApplicable = types.CONSENT_MODE_PURPOSE_STATUS_NOT_APPLICABLE;
+    var notConfigured = types.CONSENT_MODE_PURPOSE_STATUS_NOT_CONFIGURED;
+    if ((notApplicable != null && status === notApplicable) || (notConfigured != null && status === notConfigured)) {
       cmpNotApplicable = true;
-      applyConsent(currentConsent());
-      if (!readStoredConsent()) showBanner();
+      // Pending CMP startup temporarily applies denied consent. Recover the reader's
+      // actual saved choice once the CMP explicitly says it does not govern this visit.
+      var stored = readStoredConsent();
+      applyConsent(stored && stored.consent ? stored.consent : DEFAULT_CONSENT);
+      if (!stored) showBanner();
       showReopenControl();
       return;
     }
     if (status !== types.CONSENT_MODE_PURPOSE_STATUS_GRANTED && status !== types.CONSENT_MODE_PURPOSE_STATUS_DENIED) return;
+    cmpNotApplicable = false;
     cmpDecisionReady = true;
     persistChoice('partial', {
       analytics_storage: status === types.CONSENT_MODE_PURPOSE_STATUS_GRANTED ? 'granted' : 'denied',
@@ -350,6 +357,7 @@
       document.querySelectorAll("[data-gah-consent-ui]").forEach(function (node) {
         node.remove();
       });
+      showReopenControl();
       updateConsentReserve();
     });
     cmpWatch.observe(document.documentElement, { childList: true, subtree: true });
