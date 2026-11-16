@@ -32,6 +32,7 @@ def main():
  archive_ids={'EFTA00000468','EFTA00016622','EFTA00034221','EFTA00088020','EFTA00176507','EFTA00224262','EFTA01972778','EFTA02213201','EFTA02240144','EFTA02262778','EFTA02332402','EFTA02656769','EFTA02662212'}
  for row in rows:
   payload=json.loads(row['payload_json']);changed=False;why=None
+  if payload.get('fix_pack')=='2026-11-16':continue # A repeat run must preserve completed verification and later human decisions.
   if row['kind']=='archive' and row['item_id'].split(':')[1] in archive_ids:
    i=payload['id'];payload['title']=reg[i]['title'];payload['fix_pack']='2026-11-16';payload['draft_author']='GAH automated fix-pack preparation'
    payload['outstanding_requirements']=['Human: inspect the corrected archive and wiki title, source-specific context and retained provenance.','Human: confirm redactions, protected identities and locator-only scope before approving this new version.'];payload['recommended_disposition']='approve' if payload['release_gate'] else 'hold';payload['recommendation_reason']='Requested title/context correction is published; independent human review of the changed version remains required.';changed=True;why='Fix-pack archive correction; prior hold retained in history.'
@@ -67,7 +68,9 @@ def main():
   for x in targets:
    state='pending' if x['payload'].get('release_gate') else 'held';sql='UPDATE gah_review_items SET title=?,content_hash=?,payload_json=?,state=?,revision=revision+1,last_event_id=NULL,approved_json=NULL,updated_at=? WHERE item_id=? AND content_hash=? AND revision=? AND state<>\'revoked\''
    result=api(route,'POST',{'sql':sql,'params':[x['title'],x['content_hash'],json.dumps(x['payload'],ensure_ascii=False,separators=(',',':')),state,now,x['item_id'],x['old_hash'],x['old_revision']]})
-   if result[0]['meta']['changes']!=1:raise ValueError('Concurrent decision; do not overwrite: '+x['item_id'])
+   # D1 changes includes the existing audit trigger. Verify the exact row instead.
+   current=api(route,'POST',{'sql':'SELECT content_hash,revision,state FROM gah_review_items WHERE item_id=?','params':[x['item_id']]})[0]['results'][0]
+   if current['content_hash']!=x['content_hash'] or current['revision']!=x['old_revision']+1 or current['state']!=state:raise ValueError('Concurrent decision; do not overwrite: '+x['item_id'])
  print(json.dumps({'fix_pack_items':sum(x['item_id'] not in refresh for x in targets),'source_version_refreshes':refresh,'prepared':len(targets),'applied':a.apply,'new_human_approvals':0}))
 
 if __name__=='__main__':main()
