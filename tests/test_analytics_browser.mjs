@@ -12,7 +12,7 @@ async function fixture(options={}) {
  let tagRequests=0;
  await context.route('**/*',async route=>{
   const url=new URL(route.request().url());
-  if(url.hostname==='www.googletagmanager.com') {tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
+  if(url.hostname==='www.googletagmanager.com') {assert.equal(url.pathname,'/gtm.js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
   if(url.pathname.startsWith('/frontdoor/')) {
    const name=url.pathname.slice('/frontdoor/'.length);
    if(!['analytics.js','consent.js','consent.css'].includes(name))return route.abort();
@@ -29,7 +29,7 @@ async function fixture(options={}) {
  }
  await page.goto(start,options.referrer?{referer:options.referrer}:{});await page.waitForSelector('[data-gah-consent-ready]');
  const commands=()=>page.evaluate(()=>Array.from(dataLayer,a=>Array.from(a)));
- const events=async name=>{let consent='denied';const result=[];for(const a of await commands()){if(a[0]==='consent'&&a[2]?.analytics_storage)consent=a[2].analytics_storage;if(a[0]==='config'&&a[2]?.send_page_view&&consent==='granted'&&name==='page_view')result.push(['event','page_view',{...a[2],send_to:a[1]}]);if(a[0]==='event'&&a[1]===name)result.push(a);}return result;};
+ const events=async name=>{let consent='denied';const result=[];for(const a of await commands()){if(a[0]==='consent'&&a[2]?.analytics_storage)consent=a[2].analytics_storage;if(a[0]==='set'&&a[1]?.send_page_view&&consent==='granted'&&name==='page_view')result.push(['event','page_view',{...a[1],send_to:'G-XHE84C8D1V'}]);if(a[0]==='event'&&a[1]===name)result.push(a);}return result;};
  return {context,page,commands,events,tags:()=>tagRequests};
 }
 try {
@@ -46,8 +46,8 @@ try {
  let pv=await f.events('page_view');check('accept queues exactly one pageview',()=>assert.equal(pv.length,1));
  check('direct navigation does not invent a referrer',()=>assert.equal(pv[0][2].page_referrer,''));
  check('one correct stream and manual pageview configuration',()=>assert.deepEqual((pv[0][2].send_to),'G-XHE84C8D1V'));
- const config=(await f.commands()).filter(a=>a[0]==='config');check('one automatic initial view, no redundant manual event',()=>assert.equal(config[0][2].send_page_view,true));assert.equal((await f.commands()).filter(a=>a[0]==='event'&&a[1]==='page_view').length,0);
- check('ordinary traffic has no debug parameter',()=>assert.equal(Object.hasOwn(config[0][2],'debug_mode'),false));
+ assert.equal((await f.commands()).filter(a=>a[0]==='config').length,0);const config=(await f.commands()).filter(a=>a[0]==='set'&&a[1]?.send_page_view);check('one automatic initial view, no redundant manual event',()=>assert.equal(config[0][1].send_page_view,true));assert.equal((await f.commands()).filter(a=>a[0]==='event'&&a[1]==='page_view').length,0);
+ check('ordinary traffic has no debug parameter',()=>assert.equal(Object.hasOwn(config[0][1],'debug_mode'),false));
  check('secret and personal query values omitted; campaign retained',()=>{assert(!pv[0][2].page_location.includes('SECRET'));assert(!pv[0][2].page_location.includes('person'));assert(pv[0][2].page_location.includes('utm_source=facebook'));});
  await f.page.evaluate(()=>GAHAnalytics.applyConsent({analytics_storage:'granted'}));
  check('repeated consent produces no duplicate',()=>{});assert.equal((await f.events('page_view')).length,1);
@@ -89,7 +89,7 @@ try {
  await f.context.close();
 
  f=await fixture({advanced:true,url:'https://grokarchivehub.com/archive/EFTA00013764'});await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='cookieless-pageview-queued');
- const cfg=(await f.commands()).filter(a=>a[0]==='config')[0][2];
+ const cfg=(await f.commands()).filter(a=>a[0]==='set'&&a[1]?.send_page_view)[0][1];
  check('advanced prechoice uses one tag, coarse page and automatic initial view',()=>{assert.equal(f.tags(),1);assert.equal(cfg.send_page_view,true);assert.equal(cfg.page_location,'https://grokarchivehub.com/archive/');assert.equal(cfg.page_title,'Grok Archive Hub');});
  check('advanced has no manual duplicate',()=>{});assert.equal((await f.events('page_view')).length,0);
  await f.page.getByRole('button',{name:'Reject nonessential',exact:true}).click();
