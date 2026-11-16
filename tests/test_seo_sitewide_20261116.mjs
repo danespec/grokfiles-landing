@@ -1,7 +1,5 @@
 import {HeadHtmlRewriterFixture as Rewriter} from "./fixtures/html-rewriter-head.mjs";
 globalThis.HTMLRewriter=Rewriter;
-import {HeadHtmlRewriterFixture as Rewriter} from "./fixtures/html-rewriter-head.mjs";
-globalThis.HTMLRewriter=Rewriter;
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import worker from '../_worker.js';
