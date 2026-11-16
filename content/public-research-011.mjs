@@ -32,7 +32,7 @@ export async function publicResearchHttp011(request,env,throttle,budget=async()=
  const advanced=strategy==='metadata'?null:await import('./practical-retrieval.mjs');
  const expectedVersion=advanced?advanced.practicalVersion:pipelineVersion;
  const answerMode=u.searchParams.get('answer')||'none';if(!['none','reviewed'].includes(answerMode))return reply({error:'invalid_answer_mode'},400);
- const withAnswer=async body=>answerMode==='reviewed'?{...body,...(await import('./reviewed-answer-runtime.mjs')).reviewedAnswer015(q,env)}:body;
+ const withAnswer=async body=>answerMode==='reviewed'?{...body,...await (await import('./reviewed-answer-runtime.mjs')).reviewedAnswerLive016(q,env)}:body;
  const version=u.searchParams.get('version');if(version!==null&&version.length>320)return reply({error:'invalid_version'},400);
  const options={};for(const k of ['document_type','published_after','published_before'])if(u.searchParams.has(k))options[k]=u.searchParams.get(k);
  if(options.document_type!==undefined&&!types.includes(options.document_type))return reply({error:'invalid_filter'},400);

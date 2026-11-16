@@ -2,7 +2,7 @@ import { createRemoteJWKSet, jwtVerify } from 'jose';
 
 const keysets = new Map();
 
-export async function authorize(request, env, suppliedKeys) {
+export async function authorizeIdentity(request, env, suppliedKeys) {
   const url = new URL(request.url);
   if (url.protocol !== 'https:' || url.hostname !== 'intel.grokarchivehub.com') return false;
   const issuer = env.ACCESS_TEAM_DOMAIN;
@@ -14,6 +14,8 @@ export async function authorize(request, env, suppliedKeys) {
     const { payload } = await jwtVerify(token, suppliedKeys || keysets.get(issuer), {
       issuer, audience: env.ACCESS_AUD, algorithms: ['RS256'], requiredClaims: ['exp', 'iat', 'sub', 'email'], clockTolerance: 5,
     });
-    return typeof payload.email === 'string' && payload.email.toLowerCase() === env.ACCESS_OWNER_EMAIL.toLowerCase();
+    return typeof payload.email === 'string' && payload.email.toLowerCase() === env.ACCESS_OWNER_EMAIL.toLowerCase() ? {email:payload.email.toLowerCase(),subject:payload.sub} : false;
   } catch { return false; }
 }
+
+export async function authorize(request,env,suppliedKeys){return Boolean(await authorizeIdentity(request,env,suppliedKeys));}

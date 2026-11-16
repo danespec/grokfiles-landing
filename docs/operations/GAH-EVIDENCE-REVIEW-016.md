@@ -1,0 +1,23 @@
+# Final evidence review — November 16, 2026
+
+Review packages are served only at https://intel.grokarchivehub.com/reviews behind the existing Cloudflare Access application and signature-verified owner identity. Owner-only access, dashboard reads, existing secrets and reconciliation storage remain intact. This release reuses the existing D1 database; it creates no new hosting, database, paid service, account or external reviewer access.
+
+## The 84 items
+
+Package A contains the sixty fingerprint-pending dossiers, with EFTA IDs, primary/public locators, current local hashes, recorded manifest fingerprints, HTTP source observations, automated checks, privacy/redaction checklist, per-item requirements and approve/hold/exclude recommendations. All sixty direct DOJ checks returned HTTP 302 without PDF bytes. No access challenge was bypassed. Two source fingerprints are independently reproducible from freshly hashed local copies and previously recorded manifests: EFTA00013764 and EFTA02730996. These two are ready for human document/scope/privacy decisions. Fifty-eight have automated source holds; missing evidence cannot be approved away. Local copies alone never create privacy approval.
+
+Package B contains all twenty-four existing question/answer packets. Each displays its proposed verbatim editorial-summary extraction, individual claims, citation URLs, eligible public excerpts, publication/excerpt hash checks, unresolved classifications, limitations and human entailment/privacy checks. These are reviewed extraction candidates, not primary-evidence synthesis. Approve/revise/reject applies to the exact displayed version. No packet was approved by AI.
+
+## Owner workflow
+
+The owner selected personal review of the AI-prepared drafts, using existing owner-only access. This is a human review independent of the automated draft author, not an AI self-review. Sign in normally, open Evidence review, select Package A or B, and begin with Ready for human review. All items and automated source holds remain inspectable using the status filter. Check source documents and each remaining decision, enter a reason with page/source references, and choose the disposition. Approval requires every applicable personal human, independence, source, privacy, redaction/scope or entailment/uncertainty attestation. No checkboxes are preselected. Verified Access identity supplies the reviewer; arbitrary reviewer identities cannot be submitted.
+
+Approved and active is per item: an approved answer becomes available only for its exact reviewed question with answer=reviewed. An approved archive item advances only a verified public locator in exact-ID search; it does not authorize raw PDF/OCR text, semantic passages or a PDF mirror. These separate source-text gates remain in force. All other items remain held/pending without blocking the approved item. Revocation removes the item from the live approved set and is sticky. Public reads validate current publication fingerprints; changed, missing or unsafe material abstains. No public review-queue, reviewer-identity or ledger-export route is added.
+
+## Persistent evidence and release
+
+The existing database holds gah_review_items and an append-only application audit trail in gah_review_events. Atomic conditional updates bind each decision to its current content hash and revision. Stale/concurrent decisions fail closed. Reimporting unchanged package versions preserves decisions and completed verification; content changes clear certification and append an invalidation event. Previous events remain available. Private packages and source observations are kept outside the repository and public static assets.
+
+Preparation uses scripts/prepare_evidence_review_016.py with explicit private archive, answer and output directories. scripts/import_evidence_review_016.py idempotently loads the package into the existing database using owner-operated Cloudflare credentials. These scripts do not create human approvals. The protected dashboard and public research Worker share only narrowly scoped approved-record queries. Live answers remain human-approved, verbatim extraction only; broader generative synthesis and beta graduation are not certified by this release.
+
+Validation includes real SQLite transaction, source-change, approval persistence, stale/concurrent write, CSRF, Access denial, per-item activation, immediate revocation, source/quote mismatch and empty/missing-store tests. Synthetic human approvals exist only in isolated test databases, never production. Full existing release CI and protected-browser/HTTP boundary checks must pass before deployment.
