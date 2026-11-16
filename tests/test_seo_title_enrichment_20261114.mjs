@@ -38,3 +38,5 @@ for(const p of ['/archive','/search','/timeline-reconstructions','/guides/epstei
  if(p.endsWith('EFTA00000468'))assert(h.includes('<title>EFTA00000468: Desk with Framed Photos | Grok Archive Hub</title>'));
 }
 console.log('PASS ten enriched live Worker metadata routes, unique titles/descriptions, OG/Twitter parity, canonical/indexability, excluded controls');
+
+const guidePath='/guides/epstein-chronological-source-guide';const guideResponse=await worker.fetch(new Request(apex+guidePath),env);assert.equal(guideResponse.status,200,'New guide must have a live clean route');const guideHtml=await guideResponse.text();assert(guideHtml.includes('rel="canonical" href="'+apex+guidePath+'"'));assert(!/noindex/i.test(guideResponse.headers.get('X-Robots-Tag')||''));assert(sitemap.includes('<loc>'+apex+guidePath+'</loc>'));
