@@ -20,7 +20,7 @@ const plugin={name:'isolated-research',setup(b){
  b.onLoad({filter:/.*/,namespace:'release-flags'},()=>({contents:'export default '+JSON.stringify(flags),loader:'js'}));
  if(production){
   b.onResolve({filter:/reviewed-answer-runtime\.mjs$/},()=>({path:'disabled-answers',namespace:'production-disabled-answers'}));
-  b.onLoad({filter:/.*/,namespace:'production-disabled-answers'},()=>({contents:"export function reviewedAnswer015(){return {answer:null,answer_claims:[],answer_abstained:true,answer_reason:'reviewed_answers_disabled'}}",loader:'js'}));
+  b.onLoad({filter:/.*/,namespace:'production-disabled-answers'},()=>({contents:"export function reviewedAnswer015(){return {answer:null,answer_claims:[],answer_abstained:true,answer_reason:'reviewed_answers_disabled'}};export const reviewedAnswerLive016=reviewedAnswer015;",loader:'js'}));
   b.onResolve({filter:/practical-retrieval\.mjs$/},()=>({path:'disabled-advanced',namespace:'production-disabled-advanced'}));
   b.onLoad({filter:/.*/,namespace:'production-disabled-advanced'},()=>({contents:"export const practicalVersion='disabled';export function practicalRetrieval(){throw Error('advanced_disabled')}",loader:'js'}));
   b.onResolve({filter:/editorial-search-012\.mjs$/},()=>({path:'disabled-passages',namespace:'production-disabled'}));

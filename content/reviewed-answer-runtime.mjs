@@ -12,3 +12,8 @@ export function reviewedAnswer015(question,env){
  const result=packet.result;if(result.abstained||result.generation!=='verbatim_reviewed_extraction_only'||!result.claims?.length||result.claims.some(c=>MODEL.publication_hashes[c.citation.url]!==c.citation.publication_sha256||MODEL.documents.find(d=>d.url===c.citation.url)?.description!==c.quote))return stop('answer_sources_changed');
  return {answer:result.answer,answer_claims:result.claims,answer_abstained:false,answer_version:BANK.version,answer_generation:result.generation,uncertainty:result.uncertainty,generated_claims:0};
 }
+
+export async function reviewedAnswerLive016(question,env){
+ const base=reviewedAnswer015(question,env);if(!base.answer_abstained||!researchFeatureEnabled(env,'reviewed_answers')||editorialGuard(question))return base;
+ return await (await import('./reviewed-live-016.mjs')).liveReviewedAnswer016(question,env)||base;
+}

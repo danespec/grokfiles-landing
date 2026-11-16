@@ -1,3 +1,4 @@
+import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
 import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
 const PATH_012='/api/v1/research/editorial-search-preview';
@@ -6406,7 +6407,9 @@ async function handlePublicSearch(request, env) {
     });
   }
 
-  const exactKey=exactCacheKey(payload,queryClassification,exactCacheVersion);
+  const sourceReview016=queryClassification.kind==='efta'?await liveReviewedLocator016(queryClassification.canonical,env):null;
+  const baseExactKey016=exactCacheKey(payload,queryClassification,exactCacheVersion);
+  const exactKey=baseExactKey016&&sourceReview016?baseExactKey016+':review:'+sourceReview016.source_sha256:baseExactKey016;
   const cachedExact=readExactCache(env,exactKey);if(cachedExact)return cachedExact;
   const normalizedQueryForFetch = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   // SEC-REMEDIATION (ren/security-remediation): clamp the client-supplied
@@ -6496,7 +6499,7 @@ async function handlePublicSearch(request, env) {
   // The upstream proof index can lag a GAH-published, hash-verified
   // source dossier. Inject ONLY the explicitly verified source record,
   // before exact-ID validation; do not synthesize links for other IDs.
-  const localExactSource = exact ? GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS.get(exact) : null;
+  const localExactSource = exact ? GAH_VERIFIED_LOCAL_EXACT_SOURCE_ROWS.get(exact)||(sourceReview016?{id:exact,efta_id:exact,title:exact+' — independently reviewed source locator',summary:'Human-approved primary source locator. No raw text or semantic passages are published by this approval.',read_url:'/archive/'+exact,source_url:sourceReview016.primary_locator,source_sha256:sourceReview016.source_sha256,source_kind:'verified_primary_source_pointer',local_pdf_available:false,document_bundle_url:null}:null) : null;
   if (localExactSource && CORE_ARCHIVE_DOSSIERS.has(exact)) {
     rows = [{ ...localExactSource }, ...rows.filter((row) => publicSearchExactId(row) !== exact)];
   }

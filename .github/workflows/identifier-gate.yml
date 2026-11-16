@@ -72,7 +72,7 @@ jobs:
         working-directory: workers/gah-intel
         run: |
           npm ci --ignore-scripts
-          node --test test/intel.test.mjs
+          node --test test/intel.test.mjs test/reviews.test.mjs
       - name: Frozen benchmark and independent-review guard
         run: python3 tests/test_research_review_guard_010.py
       - name: Source-bound title enrichment and indexing preservation
@@ -97,6 +97,7 @@ jobs:
           python3 tests/test_archive_source_urls_014.py
           python3 tests/test_archive_source_changes_014.py
           python3 tests/test_archive_vectors_014.py
+          python3 tests/test_evidence_review_import_016.py
 
       - name: Practical retrieval and exact cache contracts
         run: |
