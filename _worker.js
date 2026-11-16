@@ -97,6 +97,7 @@ const FRONTDOOR_PATHS = new Set([
   "/internet-vs-receipts/doj-celebrity-names",
   "/internet-vs-receipts/efta00000468-removal",
   "/internet-vs-receipts/2007-draft-indictment",
+  "/guides/epstein-chronological-source-guide",
   "/guides/epstein-flight-logs-doj",
   "/guides/epstein-black-book-redacted-doj",
   "/guides/epstein-2007-draft-federal-indictment",
@@ -352,6 +353,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/internet-vs-receipts/doj-celebrity-names", "source-first-explainer-ad-free"],
   ["/internet-vs-receipts/efta00000468-removal", "source-first-explainer-ad-free"],
   ["/internet-vs-receipts/2007-draft-indictment", "source-first-explainer-ad-free"],
+  ["/guides/epstein-chronological-source-guide", "sensitive-public-records-news-or-guide-ad-free"],
   ["/guides/epstein-flight-logs-doj", "sensitive-public-records-news-or-guide-ad-free"],
   ["/guides/epstein-black-book-redacted-doj", "sensitive-public-records-news-or-guide-ad-free"],
   ["/guides/epstein-2007-draft-federal-indictment", "sensitive-public-records-news-or-guide-ad-free"],
@@ -1231,6 +1233,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/internet-vs-receipts/doj-celebrity-names", "/internet-vs-receipts/doj-celebrity-names.html"],
   ["/internet-vs-receipts/efta00000468-removal", "/internet-vs-receipts/efta00000468-removal.html"],
   ["/internet-vs-receipts/2007-draft-indictment", "/internet-vs-receipts/2007-draft-indictment.html"],
+  ["/guides/epstein-chronological-source-guide", "/guides/epstein-chronological-source-guide.html"],
   ["/guides/epstein-flight-logs-doj", "/guides/epstein-flight-logs-doj.html"],
   ["/guides/epstein-black-book-redacted-doj", "/guides/epstein-black-book-redacted-doj.html"],
   ["/guides/epstein-2007-draft-federal-indictment", "/guides/epstein-2007-draft-federal-indictment.html"],
@@ -1365,7 +1368,6 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
-  ["https://grokarchivehub.com/guides/epstein-chronological-source-guide", "2026-11-16"],
   ["https://grokarchivehub.com/atlas/", "2026-11-09"],
   ["https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026", "2026-10-16"],
@@ -1429,6 +1431,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/internet-vs-receipts/doj-celebrity-names", "2026-10-19"],
   ["https://grokarchivehub.com/internet-vs-receipts/efta00000468-removal", "2026-10-19"],
   ["https://grokarchivehub.com/internet-vs-receipts/2007-draft-indictment", "2026-10-19"],
+  ["https://grokarchivehub.com/guides/epstein-chronological-source-guide", "2026-11-16"],
   ["https://grokarchivehub.com/guides/epstein-flight-logs-doj", "2026-10-13"],
   ["https://grokarchivehub.com/guides/epstein-black-book-redacted-doj", "2026-10-13"],
   ["https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment", "2026-10-19"],
