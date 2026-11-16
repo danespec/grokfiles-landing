@@ -1,10 +1,11 @@
 """Prepare private, version-bound review items; never manufacture human decisions."""
 import argparse, concurrent.futures, datetime, hashlib, json, pathlib, subprocess, tempfile, sys
+from urllib.parse import urlsplit
 
 def sha(value):
     return hashlib.sha256(value if isinstance(value, bytes) else json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
 
-def prepare(root, archive, answers, output, verify=False):
+def prepare(root, archive, answers, output, verify=False, adult_confirmed=False):
     sys.path.insert(0,str(root/'scripts'))
     from verify_archive_sources_014 import approved_url
     from archive_admission_014 import write_private
@@ -18,11 +19,16 @@ def prepare(root, archive, answers, output, verify=False):
     observations=json.loads(checks_file.read_text()) if checks_file.exists() else {}
     def probe(row):
         i=row['id'];url=registry[i]['source']
-        if i in observations and observations[i].get('url')==url:return i,observations[i]
+        if i in observations and observations[i].get('url')==url:
+            if observations[i].get('status')=='primary_pdf_bytes_verified' or not adult_confirmed:return i,observations[i]
+        local_hashes={c['sha256'] for c in copies.get(i,[])}
+        if len(local_hashes)==1 and local_hashes & {v['sha256'] for v in row['fingerprints']}:return i,observations.get(i,{'url':url,'status':'primary_fetch_redundant_existing_manifest_and_fresh_local_bytes'})
         result={'url':url,'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'http':None,'pdf':False,'sha256':None,'status':'not_checked'}
         if not approved_url(url):result['status']='not_allowlisted';return i,result
         with tempfile.NamedTemporaryFile(dir=output) as f:
-            r=subprocess.run(['curl','-sS','--max-time','8','--max-filesize','25000000','--proto','=https','--max-redirs','0','-w','%{http_code}','-o',f.name,url],capture_output=True,text=True)
+            cookies=['--cookie','justiceGovAgeVerified=true'] if adult_confirmed and pathlib.PurePosixPath(urlsplit(url).path).suffix=='.pdf' and urlsplit(url).hostname in ['www.justice.gov','justice.gov'] else []
+            result['normal_doj_adult_confirmation']=bool(cookies)
+            r=subprocess.run(['curl','-sS','--max-time','8','--max-filesize','25000000','--proto','=https','--max-redirs','0','-w','%{http_code}','-o',f.name,*cookies,url],capture_output=True,text=True)
             b=pathlib.Path(f.name).read_bytes();result.update(http=r.stdout[-3:],bytes=len(b),pdf=b.startswith(b'%PDF-'),transport_exit=r.returncode)
             if r.returncode==0 and r.stdout.endswith('200') and result['pdf']:result.update(sha256=hashlib.sha256(b).hexdigest(),status='primary_pdf_bytes_verified')
             else:result['status']='primary_not_available_without_redirect_or_access_challenge'
@@ -61,6 +67,6 @@ def prepare(root, archive, answers, output, verify=False):
     print(json.dumps(result['counts']))
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--root',type=pathlib.Path,required=True);p.add_argument('--archive',type=pathlib.Path,required=True);p.add_argument('--answers',type=pathlib.Path,required=True);p.add_argument('--output',type=pathlib.Path,required=True);p.add_argument('--verify-primary',action='store_true');a=p.parse_args();a.output.mkdir(mode=0o700,parents=True,exist_ok=True)
+    p=argparse.ArgumentParser();p.add_argument('--root',type=pathlib.Path,required=True);p.add_argument('--archive',type=pathlib.Path,required=True);p.add_argument('--answers',type=pathlib.Path,required=True);p.add_argument('--output',type=pathlib.Path,required=True);p.add_argument('--verify-primary',action='store_true');p.add_argument('--adult-confirmed',action='store_true',help='Authorized source operator is confirmed age 18+; use the normal DOJ age-confirmation preference.');a=p.parse_args();a.output.mkdir(mode=0o700,parents=True,exist_ok=True)
     if a.root.resolve() in a.output.resolve().parents:raise ValueError('Private output must be outside checkout')
-    prepare(a.root,a.archive,a.answers,a.output,a.verify_primary)
+    prepare(a.root,a.archive,a.answers,a.output,a.verify_primary,a.adult_confirmed)
