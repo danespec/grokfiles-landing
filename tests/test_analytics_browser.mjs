@@ -74,6 +74,14 @@ try {
  }
  f=await fixture({cmpPresent:true});check('live CMP pending state overrides an old first-party grant',()=>assert.equal(f.tags(),0));
  await f.page.evaluate(()=>{googlefc.ConsentModePurposeStatusEnum={CONSENT_MODE_PURPOSE_STATUS_GRANTED:1,CONSENT_MODE_PURPOSE_STATUS_DENIED:2};googlefc.getGoogleConsentModeValues=()=>({analyticsStoragePurposeConsentStatus:2});googlefc.callbackQueue[0].CONSENT_MODE_DATA_READY();});check('CMP rejection preserves zero Google loads',()=>assert.equal(f.tags(),0));await f.context.close();
+ f=await fixture({cmpPresent:true});
+ check('returning visitor stays denied while CMP applicability is unresolved',()=>assert.equal(f.tags(),0));
+ await f.page.evaluate(()=>{googlefc.ConsentModePurposeStatusEnum={CONSENT_MODE_PURPOSE_STATUS_GRANTED:1,CONSENT_MODE_PURPOSE_STATUS_DENIED:2,CONSENT_MODE_PURPOSE_STATUS_NOT_APPLICABLE:3,CONSENT_MODE_PURPOSE_STATUS_NOT_CONFIGURED:4};googlefc.getGoogleConsentModeValues=()=>({});googlefc.callbackQueue[0].CONSENT_MODE_DATA_READY();});
+ check('missing CMP status does not restore analytics',()=>assert.equal(f.tags(),0));
+ await f.page.evaluate(()=>{googlefc.getGoogleConsentModeValues=()=>({analyticsStoragePurposeConsentStatus:3});googlefc.callbackQueue[0].CONSENT_MODE_DATA_READY();});
+ await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');
+ check('explicit CMP not applicable restores stored grant once',()=>assert.equal(f.tags(),1));assert.equal((await f.events('page_view')).length,1);
+ await f.context.close();
  f=await fixture({referrer:'https://m.facebook.com/some-shared-record?private=do-not-send'});await f.page.getByRole('button',{name:'Accept all',exact:true}).click();await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');pv=await f.events('page_view');check('external referral retained without private query',()=>assert.equal(pv[0][2].page_referrer,'https://m.facebook.com/some-shared-record'));await f.context.close();
  f=await fixture({url:'https://grokarchivehub.com/?gah_debug=1'});await f.page.getByRole('button',{name:'Accept all',exact:true}).click();await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');pv=await f.events('page_view');check('debug navigation is labeled operations traffic',()=>{assert.equal(pv[0][2].traffic_type,'gah_operations');assert.equal(pv[0][2].debug_mode,true);});await f.context.close();
  f=await fixture();await f.page.evaluate(()=>{googlefc.ConsentModePurposeStatusEnum={CONSENT_MODE_PURPOSE_STATUS_GRANTED:1,CONSENT_MODE_PURPOSE_STATUS_DENIED:2};googlefc.getGoogleConsentModeValues=()=>({analyticsStoragePurposeConsentStatus:0});googlefc.callbackQueue[0].CONSENT_MODE_DATA_READY();});check('unknown CMP signal never grants consent',()=>assert.equal(f.tags(),0));
