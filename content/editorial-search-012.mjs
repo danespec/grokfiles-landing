@@ -1,3 +1,4 @@
+import {citationPacket} from './research-evidence-closeout.mjs';
 import INDEX from './editorial-passages-012.mjs';
 import MODEL from './research-corpus-010.mjs';
 import {researchPipeline010,pipelineVersion} from './research-pipeline-010.mjs';
@@ -39,7 +40,7 @@ export function deepSearch012(q,limit=5,options={}){
  if(typeof q!=='string'||!q.trim()||q.length>256||!Number.isSafeInteger(limit)||limit<1||limit>10)throw Error('invalid_bounds');
  const original=researchPipeline010(q,10,options);
  const base={...original,version:deepVersion,scope:'Filtered public editorial article text and metadata; citation candidates only; not full raw archive',retrieval_profile:'passage_rerank_012_preview',passage_index_version:INDEX.version,passage_count:INDEX.passages.length,corpus_publications:MODEL.documents.length};
- const finish=(results,reason)=>({...base,results,abstained:!results.length,insufficient_evidence:original.insufficient_evidence||!results.length,coverage_reason:reason});
+ const finish=(results,reason)=>({...base,results,citation_packet:citationPacket({version:deepVersion,results}),abstained:!results.length,insufficient_evidence:original.insufficient_evidence||!results.length,coverage_reason:reason});
  const blocked=expansionGuard012(q);if(blocked)return {...finish([],blocked),intent:'unanswerable'};
  if(ambiguous.test(q)||/\b(?:unknown initials|identified only as [a-z]{2,3}|ambiguous acronym|person or location|which black entity)\b/i.test(q))return {...finish([],'specify_entity_or_document'),intent:'ambiguous_entity'};
  const admin=adminRoutes.find(([pattern])=>pattern.test(q.trim().replace(/[?!.]+$/,'')));

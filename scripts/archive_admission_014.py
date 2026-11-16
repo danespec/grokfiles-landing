@@ -4,7 +4,8 @@ This program does not read source PDF bodies, OCR, private source stores,
 or network endpoints. A prior source-byte audit is not a new privacy review.
 Unknown or altered records fail closed.
 """
-import argparse, datetime as dt, hashlib, json, os, re, tempfile
+import argparse, datetime as dt, hashlib, json, os, re, tempfile, fcntl
+from contextlib import contextmanager
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -63,23 +64,34 @@ def write_private(target,obj):
         os.chmod(name,0o600);os.replace(name,target)
     finally:
         if os.path.exists(name):os.unlink(name)
+@contextmanager
+def locked_evidence(ev):
+    ev=Path(ev);ev.mkdir(mode=0o700,parents=True,exist_ok=True)
+    fd=os.open(ev/'.archive-admission.lock',os.O_CREAT|os.O_RDWR|os.O_NOFOLLOW,0o600)
+    try:
+        fcntl.flock(fd,fcntl.LOCK_EX)
+        yield
+    finally:
+        fcntl.flock(fd,fcntl.LOCK_UN);os.close(fd)
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument('--evidence',type=Path,required=True);p.add_argument('--revoke',action='append',default=[])
     p.add_argument('--check',action='store_true');a=p.parse_args()
     ev=a.evidence.resolve()
     if ev==ROOT or ROOT in ev.parents:raise ValueError('Evidence must be outside checkout')
-    pilot=json.loads((ev/'archive-locator-manifest.private.json').read_text())
-    report=json.loads((ev/'archive-locator-pilot-report.json').read_text())
-    prior=verify_prior(pilot,report)
-    entries=json.loads((ROOT/'content/identifier-dossiers.json').read_text())['entries']
-    state=ev/'archive-admission-ledger.private.json'
-    existing=json.loads(state.read_text()) if state.exists() else {}
-    # Revocation is sticky. Reinstatement is deliberately not implemented.
-    revoked=set(existing.get('revoked',[]))|set(a.revoke)
-    result=build(entries,prior,revoked)
-    if a.check:
-        if existing!=result:raise ValueError('Ledger stale; rebuild before using')
-    else:write_private(state,result)
-    print(json.dumps({'registry_records':len(entries),'counts':result['counts'],'version':result['version'],'raw_documents_indexed':0,'public_deployment':False}))
+    with locked_evidence(ev):
+        pilot=json.loads((ev/'archive-locator-manifest.private.json').read_text())
+        report=json.loads((ev/'archive-locator-pilot-report.json').read_text())
+        prior=verify_prior(pilot,report)
+        entries=json.loads((ROOT/'content/identifier-dossiers.json').read_text())['entries']
+        state=ev/'archive-admission-ledger.private.json'
+        existing=json.loads(state.read_text()) if state.exists() else {}
+        # Revocation is sticky. Reinstatement is deliberately not implemented.
+        revoked=set(existing.get('revoked',[]))|set(a.revoke)
+        result=build(entries,prior,revoked)
+        if a.check:
+            if existing!=result:raise ValueError('Ledger stale; rebuild before using')
+        else:write_private(state,result)
+        print(json.dumps({'registry_records':len(entries),'counts':result['counts'],'version':result['version'],'raw_documents_indexed':0,'public_deployment':False}))
 if __name__=='__main__':main()

@@ -7,3 +7,9 @@ console.log('PASS hybrid exact/abstention guards, immutable corpus/model, finite
 for(const encode of [async()=>{throw Error('offline')},async()=>[NaN]]){const r=await factory({encode})('Barak GADECO',3);assert(r.neural_degraded);assert(!r.neural_executed);assert(r.results.length<=3);}
 const bounded=await factory()('Barak GADECO',1000);assert(bounded.results.length<=10);
 console.log('PASS encoder failure degradation and bounded result count');
+
+for(const q of ['Leon Black Epstein payments','Barak GADECO']){const r=await factory({allowExpansion:true})(q,10);const pattern=q.startsWith('Leon')?/\bleon\s+black\b/i:/\bbarak\b/i;assert(r.results.length>0);assert(r.results.every(d=>pattern.test(d.title+' '+d.description)));}
+console.log('PASS explicit subject binding across all fusion lanes');
+
+for(const q of ['Leon Black Epstein payments','Barak GADECO','EFTA00035053','Reveal witness identity']){const x=await factory({allowExpansion:true})(q,5);assert(x.version.endsWith('.neural013.2'));assert.equal(x.citation_packet.version,x.version);assert.deepEqual(x.citation_packet.items.map(c=>c.url),x.results.filter(d=>MODEL.publication_hashes[d.url]&&MODEL.publication_hashes[d.url]===d.source_sha256).map(d=>d.url));}
+console.log('PASS hybrid citation packets match final ranks and runtime version');

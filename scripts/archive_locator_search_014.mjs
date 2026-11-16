@@ -9,7 +9,10 @@ import {expansionGuard012} from '../content/editorial-search-012.mjs';
 const root=new URL('../',import.meta.url);
 const ev=path.resolve(process.argv[2]||''),previous=path.resolve(process.argv[3]||'');
 assert(process.argv[2]&&process.argv[3]&&!ev.startsWith(process.cwd()+path.sep));
-const check=()=>execFileSync('python3',[new URL('scripts/prepare_archive_locator_014.py',root).pathname,'--evidence',ev,'--check'],{stdio:'pipe'});
+const check=()=>{
+ execFileSync('python3',[new URL('scripts/apply_archive_source_changes_014.py',root).pathname,'--evidence',ev,'--observations',path.join(ev,'fresh-source-byte-checks.private.json'),'--apply'],{stdio:'pipe'});
+ execFileSync('python3',[new URL('scripts/prepare_archive_locator_014.py',root).pathname,'--evidence',ev,'--check'],{stdio:'pipe'});
+};
 check();
 const current=JSON.parse(fs.readFileSync(path.join(ev,'archive-active-locators.private.json')));
 const prior=JSON.parse(fs.readFileSync(path.join(ev,'archive-locator-manifest.private.json')));

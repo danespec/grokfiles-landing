@@ -51,3 +51,6 @@ try{
  assert(calls>0);
 }finally{globalThis.fetch=oldFetch}
 console.log('PASS 012: indexed source hashes, 10 selected known-item controls, exact/navigation parity, privacy/ambiguity, bounded HTTP, fail-closed staging isolation, no external reads');
+
+for(const [q] of cases){const x=deepSearch012(q,5);assert.equal(x.citation_packet.version,x.version);assert.deepEqual(x.citation_packet.items.map(d=>d.url),x.results.map(d=>d.url));}
+console.log('PASS passage citation packet is rebuilt after ranking');
