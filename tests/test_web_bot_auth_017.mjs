@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import {webBotDirectory,signedStatusRequest} from '../workers/lib/web-bot-auth.mjs';
+const pair=await crypto.subtle.generateKey('Ed25519',true,['sign','verify']);
+const raw=JSON.stringify(await crypto.subtle.exportKey('jwk',pair.privateKey));
+const base='https://grokarchivehub.com', path='/.well-known/http-message-signatures-directory';
+const env={GAH_WEB_BOT_AUTH_JWK:raw},now=Date.now();
+const response=await webBotDirectory(new Request(base+path),env,now);assert.equal(response.status,200);
+const body=await response.text(),{keys}=JSON.parse(body);assert.equal(keys.length,1);assert.equal(keys[0].crv,'Ed25519');assert.equal(keys[0].d,undefined);
+const b64=b=>Buffer.from(b).toString('base64');const digest='sha-256=:'+b64(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(body)))+':';
+assert.equal(response.headers.get('content-digest'),digest);
+const pub=await crypto.subtle.importKey('jwk',keys[0],'Ed25519',false,['verify']);
+async function verify(headers,fields){const params=headers.get('signature-input').slice(5);const sig=Buffer.from(headers.get('signature').slice(6,-1),'base64');return crypto.subtle.verify('Ed25519',pub,sig,new TextEncoder().encode(fields.concat('"@signature-params": '+params).join('\n')));}
+const fields=['"@authority";req: grokarchivehub.com','"content-type": application/http-message-signatures-directory+json','"content-digest": '+digest];
+assert(await verify(response.headers,fields));assert.equal(await verify(response.headers,fields.map(x=>x.replace('grokarchivehub.com','evil.example'))),false);
+assert(response.headers.get('signature-input').includes('tag="http-message-signatures-directory"'));
+const head=await webBotDirectory(new Request(base+path,{method:'HEAD'}),env,now);assert.equal(head.status,200);assert.equal(await head.text(),'');
+for(const [url,method,status,config] of [[base+path,'POST',405,env],[base+path,'GET',503,{}],[base+path,'GET',503,{GAH_WEB_BOT_AUTH_JWK:'{}'}],['https://example.com'+path,'GET',404,env],[base+path+'?x=1','GET',404,env]])assert.equal((await webBotDirectory(new Request(url,{method}),config,now)).status,status);
+const req=await signedStatusRequest(raw,base+'/api/archive-status',now);assert.equal(req.headers.get('signature-agent'),'"https://grokarchivehub.com"');assert(await verify(req.headers,['"@method": GET','"@authority": grokarchivehub.com','"@path": /api/archive-status','"signature-agent": "https://grokarchivehub.com"']));
+assert.equal(await verify(req.headers,['"@method": GET','"@authority": grokarchivehub.com','"@path": /api/search','"signature-agent": "https://grokarchivehub.com"']),false);
+for(const target of ['https://evil.example/api/archive-status',base+'/api/archive-status?q=x',base+'/api/commerce/catalog',base+'/members'])await assert.rejects(()=>signedStatusRequest(raw,target));
+console.log('PASS signed directory, digest, public-only key, request signing, tamper rejection, fail-closed host/method/key, restricted targets');
