@@ -1,9 +1,9 @@
 ---
-title: "Story Atlas: 82 Document-Anchored Stories | Grok Archive Hub"
+title: "Epstein Files Story Atlas: Document-Linked Research | Grok Archive Hub"
 canonical: "https://grokarchivehub.com/atlas"
-description: "Explore 82 mapped stories and 139 fragments in the Epstein document corpus, with document anchors, confidence tiers, endpoints, and explicit coverage limits."
+description: "Explore mapped stories, fragments and document references in the Epstein files, with evidence limitations and unresolved connections."
 ---
-Story Atlas: 82 Document-Anchored Stories | Grok Archive Hub
+Epstein Files Story Atlas: Document-Linked Research | Grok Archive Hub
 
 [
 GAH

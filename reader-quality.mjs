@@ -3,6 +3,7 @@ export function publicationRule(href){const u=new URL(href,'https://grokarchiveh
 import { READER_EDITORIAL_METADATA } from './content/reader-editorial-metadata.mjs';
 import { UNAVAILABLE_SOURCE_PDFS } from './content/source-pdf-status.mjs';
 import { READER_LINK_ALIASES } from './content/reader-link-aliases.mjs';
+import { searchEditorialBody } from "./content/seo-reader-links.mjs";
 import { PAGE_CARDS } from './content/reader-page-cards.mjs';
 export const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const decode=s=>String(s).replace(/&#(x[0-9a-f]+|[0-9]+);/gi,(_,n)=>String.fromCodePoint(n[0].toLowerCase()==='x'?parseInt(n.slice(1),16):Number(n))).replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>');
@@ -46,7 +47,7 @@ export function qualityHtml(input,href,entries=[]){
  html=html.replace(/<title[^>]*>[\s\S]*?<\/title>/i,'<title>'+escapeHtml(title)+' | Grok Archive Hub</title>');
  html=meta(html,'og:title',title,'property');html=meta(html,'twitter:title',title);
  const description=path==='/investigations/new-mexico-doj-epstein-records'?'Follow New Mexico’s requests for Epstein records, DOJ’s stated legal limits, the court-order trail, and the documents that remain unavailable.':readDescription(html);
- if(description){const text=editorial?.description||(description.includes('…')?'Review the sources, documentary context and limits on this research page before drawing conclusions.':description);html=meta(html,'description',text);html=meta(html,'og:description',text,'property');html=meta(html,'twitter:description',text);}
+ if(editorial?.description||description){const text=editorial?.description||(description.includes('…')?'Review the sources, documentary context and limits on this research page before drawing conclusions.':description);html=meta(html,'description',text);html=meta(html,'og:description',text,'property');html=meta(html,'twitter:description',text);}
  const card=PAGE_CARDS[canonical];
  const oldImage=decode((html.match(/<meta\b(?=[^>]*property=["']og:image["'])[^>]*content=["']([^"']*)/i)||[])[1]||'');
  if(card&&(!oldImage||/hero-hold-the-letter\.jpg|media-grokarchivehub\.png|card-pinboard\.jpg|hero-desk\.jpg/.test(oldImage))){
@@ -63,6 +64,7 @@ export function qualityHtml(input,href,entries=[]){
   if(path==='/barak')body="<h1>The Barak File</h1><p>Read the documented record, compare source notes and follow the limits before drawing conclusions.</p><section id=\"published-research\"><h2>Published guides and reviewed records</h2><ul><li><a href=\"https://wiki.grokarchivehub.com/research/ehud-barak-epstein-documentary-record\">Barak documentary record</a></li><li><a href=\"https://grokarchivehub.com/dispatches/how-to-read-the-barak-records\">How to read the Barak records</a></li><li><a href=\"https://grokarchivehub.com/barak/source-map\">Source map</a></li><li><a href=\"https://grokarchivehub.com/barak/receipts\">Reviewed receipts</a></li><li><a href=\"https://grokarchivehub.com/barak/entities\">People and documentary roles</a></li><li><a href=\"https://grokarchivehub.com/barak/timeline\">Timeline</a></li><li><a href=\"https://grokarchivehub.com/barak/fara-review\">FARA review and limits</a></li></ul></section><section id=\"research-tools\"><h2>Research tools</h2><p>Source browsers and finding aids; entries may still need review.</p><ul><li><a href=\"https://grokarchivehub.com/barak/search\">Search the Barak archive</a></li><li><a href=\"https://grokarchivehub.com/barak/emails\">Browse emails</a></li><li><a href=\"https://grokarchivehub.com/barak/pdfs\">Browse PDFs</a></li><li><a href=\"https://grokarchivehub.com/barak/media\">Browse media</a></li></ul></section>";
   if(/^\/barak\/(?:documents|emails|legal|media|pdfs)(?:\/|$)/.test(path))body='<section id="published-reading"><h2>Read the published Barak record</h2><ul><li><a href="https://wiki.grokarchivehub.com/research/ehud-barak-epstein-documentary-record">Barak documentary record</a></li><li><a href="https://grokarchivehub.com/dispatches/how-to-read-the-barak-records">How to read the Barak records</a></li><li><a href="https://grokarchivehub.com/barak/source-map">Source map</a></li></ul></section>'+body;
   if(path==='/barak/entities'&&!/<h1\b/i.test(body))body='<h1>Barak entities and documentary roles</h1>'+body;
+  if(u.hostname==="grokarchivehub.com"&&path!=="/atlas")body=searchEditorialBody(path,body,escapeHtml);
   body=linkIdentifiers(body,entries,path.startsWith("/archive/")?path.slice(9):"");
   if(u.hostname==='grokarchivehub.com'){
    const published=new Set(entries.filter(e=>e.indexable).map(e=>e.id));
