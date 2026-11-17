@@ -15,7 +15,7 @@ for(const path of ['/wiki','/grok-command-v4']){const r=await worker.fetch(new R
 const a=await worker.fetch(new Request('https://grokarchivehub.com/sitemap-efta.xml'),env);assert.equal(a.status,200);const ax=await a.text();
 assert.equal((ax.match(/<loc>/g)||[]).length,expected.length);
 for(const e of registry.entries)assert.equal(ax.includes('/archive/'+e.id+'</loc>'),indexed(e),e.id+' sitemap gate');
-const general=await(await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env)).text();assert.doesNotMatch(general,/<loc>[^<]*\/archive\/EFTA\d{8}<\/loc>/);assert.doesNotMatch(general,/\/archive\/ids<\/loc>/);
+const general=await(await worker.fetch(new Request('https://grokarchivehub.com/sitemap.xml'),env)).text();assert.doesNotMatch(general,/<loc>[^<]*\/archive\/EFTA\d{8}<\/loc>/);assert.match(general,/\/archive\/ids<\/loc>/);
 const robots=await(await worker.fetch(new Request('https://grokarchivehub.com/robots.txt'),env)).text();assert.equal((robots.match(/User-agent: \*/g)||[]).length,1);assert.match(robots,/Sitemap: https:\/\/grokarchivehub.com\/sitemap-index.xml/);
 for(const e of registry.entries){
  const r=await worker.fetch(new Request('https://grokarchivehub.com/archive/'+e.id),env);assert.equal(r.status,200,e.id);
