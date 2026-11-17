@@ -1394,5 +1394,49 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/guides/epstein-files-data-set-9": {
     "title": "Epstein Files Data Set 9: DOJ PDF & EFTA Guide",
     "description": "Find the official DOJ Epstein Data Set 9 file index, search EFTA Bates numbers, and follow source-linked GAH research and verification guidance."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-8": {
+    "title": "Epstein Files Data Set 8: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 8: find EFTA PDF identifiers and read about prosecutorial correspondence, aviation and custody records. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-1": {
+    "title": "Epstein Files Data Set 1: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 1: find EFTA PDF identifiers and read about photograph records and source versions. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-2": {
+    "title": "Epstein Files Data Set 2: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 2: find EFTA PDF identifiers and read about exact filename lookup in a numbered run. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-3": {
+    "title": "Epstein Files Data Set 3: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 3: find EFTA PDF identifiers and read about nonconsecutive file identifiers. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-4": {
+    "title": "Epstein Files Data Set 4: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 4: find EFTA PDF identifiers and read about scheduling records and evidence boundaries. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-5": {
+    "title": "Epstein Files Data Set 5: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 5: find EFTA PDF identifiers and read about a compact sequential file index. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-6": {
+    "title": "Epstein Files Data Set 6: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 6: find EFTA PDF identifiers and read about single-page index navigation. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-7": {
+    "title": "Epstein Files Data Set 7: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 7: find EFTA PDF identifiers and read about file starts and interior bates pages. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-10": {
+    "title": "Epstein Files Data Set 10: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 10: find EFTA PDF identifiers and read about draft filings and financial correspondence. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-11": {
+    "title": "Epstein Files Data Set 11: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 11: find EFTA PDF identifiers and read about proposed meetings and travel arrangements. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-12": {
+    "title": "Epstein Files Data Set 12: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 12: find EFTA PDF identifiers and read about draft agreements, payment records and proffers. Verify sources and limits."
   }
 };

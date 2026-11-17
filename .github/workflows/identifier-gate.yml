@@ -80,6 +80,8 @@ jobs:
         run: node tests/test_seo_title_enrichment_20261114.mjs
       - name: Sitewide search discovery and publication boundaries
         run: node tests/test_seo_sitewide_20261116.mjs
+      - name: All twelve source-linked dataset guides and discovery contracts
+        run: node tests/test_dataset_guides_20261117.mjs
 
       - name: Research citation packet and intent guard
         run: node tests/test_research_evidence_closeout.mjs
