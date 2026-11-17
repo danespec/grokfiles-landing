@@ -80,6 +80,7 @@ jobs:
           ASK_CONTRACT_VECTORS="$RUNNER_TEMP/ask-vectors.mjs"
           python3 scripts/build_editorial_vectors_013.py --output "$ASK_CONTRACT_VECTORS" --contract-fixture
           GAH_PRIVATE_EDITORIAL_VECTORS="$ASK_CONTRACT_VECTORS" node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_ask_editorial_staging_20261117.mjs
+          git fetch --no-tags --depth=1 origin edc663ea11ac931f8e6c1fb82618a1d7f6e31a39
           node tests/test_home_064.mjs
 
       - name: Source-bound title enrichment and indexing preservation
