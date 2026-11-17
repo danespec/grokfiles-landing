@@ -903,7 +903,7 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
   };
 }
 
-const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
+const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/guides/epstein-files-data-set-9", "/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
 
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
@@ -1268,6 +1268,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/guides/epstein-client-list-explained", "/guides/epstein-client-list-explained.html"],
   ["/guides/epstein-files-transparency-act", "/guides/epstein-files-transparency-act.html"],
   ["/guides/how-to-search-epstein-files", "/guides/how-to-search-epstein-files.html"],
+  ["/guides/epstein-files-data-set-9", "/guides/epstein-files-data-set-9.html"],
   ["/guides/doj-epstein-data-sets", "/guides/doj-epstein-data-sets.html"],
   ["/entities", "/entities.html"],
   ["/archive-scope", "/archive-scope.html"],
@@ -1452,7 +1453,8 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/epstein-client-list-explained", "2026-10-11"],
   ["https://grokarchivehub.com/guides/epstein-files-transparency-act", "2026-10-11"],
   ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-20"],
-  ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-10-20"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-9", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-11-17"],
   ["https://grokarchivehub.com/photos", "2026-10-23"],
   ["https://grokarchivehub.com/archive", "2026-10-23"],
   ["https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit", "2026-10-16"],
@@ -3567,6 +3569,7 @@ const GAH_LLM_DISCOVERY = `# Grok Archive Hub
 - [Atlas release status](https://grokarchivehub.com/api/v1/atlas/status): published version and source-data fingerprint.
 - [Investigations](https://grokarchivehub.com/investigations): source-linked dossiers.
 - [Search](https://grokarchivehub.com/search): public archive search.
+- [Data Set 9 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-9): official index navigation, parent-file identities and published source examples.
 - [DOJ Data Sets 1–12](https://grokarchivehub.com/guides/doj-epstein-data-sets): official numbered releases and Data Set 9 navigation.
 - [How to search Epstein files](https://grokarchivehub.com/guides/how-to-search-epstein-files): EFTA lookup, OCR and source verification.
 - [EFTA identifier register](https://grokarchivehub.com/archive/ids): curated identifiers with source links and evidentiary limitations.
