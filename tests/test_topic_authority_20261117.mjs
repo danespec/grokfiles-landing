@@ -11,7 +11,7 @@ const priv=new Set(atlas.privacy_minimized_document_ids);
 const env={ASSETS:{async fetch(req){const u=new URL(typeof req==='string'?req:req.url);for(const p of [u.pathname,u.pathname+'.html',u.pathname.replace(/\/$/,'')+'/index.html']){try{return new Response(await fs.readFile(new URL('.'+p,root)),{headers:{'Content-Type':p.endsWith('.json')?'application/json':'text/html'}})}catch{}}return new Response('missing',{status:404})}}};
 const get=(p,method='GET')=>worker.fetch(new Request(new URL(p,base),{method}),env);
 const sm=await(await get('/sitemap.xml')).text(),efta=await(await get('/sitemap-efta.xml')).text(),llms=await(await get('/llms.txt')).text();
-assert.equal((sm.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,166);
+assert.equal((sm.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,172);
 assert.equal(data.routes.length,7);assert.equal(Object.keys(data.backlinks).length,31);
 for(const p of ['/','/guides','/topics']){const r=await get(p);assert.equal(r.status,200,p);const h=await r.text();for(const path of data.routes)assert.ok(h.includes(base+path),p+' '+path);}
 const hub=await get('/topics');assert.equal(hub.headers.get('x-robots-tag'),'noindex,follow');
