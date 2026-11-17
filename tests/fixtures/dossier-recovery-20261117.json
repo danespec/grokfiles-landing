@@ -58,8 +58,10 @@
     },
     {
       "id": "EFTA00035119",
-      "decision": "retain-noindex",
-      "basis": "handwritten identities and transcription/redaction review unresolved"
+      "decision": "promote",
+      "prior_decision_reason": "handwritten identities and transcription/redaction review unresolved",
+      "basis": "Owner-approved redaction-safe editorial comparison; unresolved primary-source questions explicitly retained",
+      "sha256": "f5fe30707e45147d76b3b1074dc85d203518302a852ce2979e65cbaa38b5e9d3"
     },
     {
       "id": "EFTA00035206",
@@ -135,8 +137,10 @@
     },
     {
       "id": "EFTA00080260",
-      "decision": "retain-noindex",
-      "basis": "financial exhibit requires reconciliation with already published account analysis; source review contains differing levels of detail"
+      "decision": "promote",
+      "prior_decision_reason": "financial exhibit requires reconciliation with already published account analysis; source review contains differing levels of detail",
+      "basis": "Owner-approved redaction-safe editorial comparison; unresolved primary-source questions explicitly retained",
+      "sha256": "482bca86e1b17691511c1c23a4d880c8e1bd651633d23745fbefb3685e94d45b"
     },
     {
       "id": "EFTA00088020",
@@ -218,8 +222,10 @@
     },
     {
       "id": "EFTA00646811",
-      "decision": "retain-noindex",
-      "basis": "underlying valuation attachments not authenticated"
+      "decision": "promote",
+      "prior_decision_reason": "underlying valuation attachments not authenticated",
+      "basis": "Owner-approved redaction-safe editorial comparison; unresolved primary-source questions explicitly retained",
+      "sha256": "9dce311a714c68647175d79cdf6f3daa8cc254b3c1c7ee8891d1ed2d88081313"
     },
     {
       "id": "EFTA00695049",
@@ -253,8 +259,10 @@
     },
     {
       "id": "EFTA01410768",
-      "decision": "retain-noindex",
-      "basis": "confidential correspondence; primary allocation evidence not established"
+      "decision": "promote",
+      "prior_decision_reason": "confidential correspondence; primary allocation evidence not established",
+      "basis": "Owner-approved redaction-safe editorial comparison; unresolved primary-source questions explicitly retained",
+      "sha256": "354548bbc7421dd33d743b0a15f0048f0ac1a2f17fdf6eab01fab97caeea3e06"
     },
     {
       "id": "EFTA01703108",
