@@ -84,6 +84,10 @@ jobs:
         run: node tests/test_dataset_guides_20261117.mjs
       - name: Dossier recovery and canonical disposition contract
         run: node tests/test_dossier_recovery_20261117.mjs
+      - name: Investigation navigation and reciprocal evidence links
+        run: |
+          python3 scripts/build_investigation_navigation_20261117.py --check
+          node tests/test_investigation_navigation_20261117.mjs
 
       - name: Research citation packet and intent guard
         run: node tests/test_research_evidence_closeout.mjs
