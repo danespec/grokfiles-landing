@@ -1,3 +1,4 @@
+import {askEditorialCandidate,askEditorialLocators} from "./content/ask-editorial-staging.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
 import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
@@ -18779,6 +18780,13 @@ async function handleAskGahBridge(request, env = {}) {
         ? "help"
         : "archive";
 
+  // Staging-only source-bound editorial candidates; help, exact IDs and archive fallback stay unchanged.
+  const editorialStage = isStagingEnv(env) && new URL(request.url).hostname.endsWith(".gah-staging-517b8499.pages.dev");
+  if (intent === "archive" && editorialStage) {
+    const editorial = askEditorialCandidate(question, env);
+    if (editorial) return new Response(JSON.stringify(sanitizeAskGahPayload(editorial)), {headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow, noarchive","X-GAH-Ask-Intent":intent,"X-GAH-Ask-Bridge":"GAH_ASK_EDITORIAL_STAGING_V1","X-GAH-Ask-Privacy":"GAH_ASK_GAH_PRIVACY_SANITIZER_V1"}});
+  }
+
   const upstreamUrl = new URL(request.url);
   upstreamUrl.pathname = intent === "help" ? "/api/help" : "/api/search";
   upstreamUrl.search = "";
@@ -18821,6 +18829,10 @@ async function handleAskGahBridge(request, env = {}) {
   if (contentType.toLowerCase().includes("application/json")) {
     try {
       const payload = await upstreamResponse.clone().json();
+      if (editorialStage && intent === "archive" && payload && typeof payload === "object" && !Array.isArray(payload)) {
+        const locators = askEditorialLocators(question, env);
+        if (locators.length) payload.editorial_candidates = locators;
+      }
       responseBody = JSON.stringify(sanitizeAskGahPayload(payload));
       headers.set("Content-Type", "application/json; charset=utf-8");
       headers.set(

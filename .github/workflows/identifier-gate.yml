@@ -75,6 +75,9 @@ jobs:
           node --test test/intel.test.mjs test/reviews.test.mjs
       - name: Frozen benchmark and independent-review guard
         run: python3 tests/test_research_review_guard_010.py
+      - name: Ask GAH staging editorial answer and abstention gate
+        run: node tests/test_ask_editorial_staging_20261117.mjs
+
       - name: Source-bound title enrichment and indexing preservation
         run: node tests/test_seo_title_enrichment_20261114.mjs
       - name: Sitewide search discovery and publication boundaries
