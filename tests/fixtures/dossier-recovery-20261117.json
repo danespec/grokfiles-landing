@@ -1,0 +1,386 @@
+{
+  "review_date": "2026-11-17",
+  "previously_excluded": 64,
+  "records": [
+    {
+      "id": "EFTA00000468",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00007893",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/ghislaine-maxwell-travel-coordination-efta02332402",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00014374",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/bill-richardson-counsel-memo-efta00014374",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00016622",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00022062",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/andrew-doj-judicial-review-efta00088020",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00033413",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "3dfd1945309ec1ec34c98309adb36ccf21987b9953e8c378827f0919feb25ef7"
+    },
+    {
+      "id": "EFTA00034221",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/mark-zuckerberg-mentions-efta00034221",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00035035",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "44f01c98831da14004022587a95db01b31c03c7b49be63cd0c26b33824eb0278"
+    },
+    {
+      "id": "EFTA00035053",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "942342220d33458b7164fab037a8aaae2b13593c3673603e221fe5f55ea13c04"
+    },
+    {
+      "id": "EFTA00035119",
+      "decision": "retain-noindex",
+      "basis": "handwritten identities and transcription/redaction review unresolved"
+    },
+    {
+      "id": "EFTA00035206",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "bb36c89e4dc461aab13bedda79490ae47a20601be56e2b930eb40c1536187f6e"
+    },
+    {
+      "id": "EFTA00035420",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "4f86c21d459651a5129cd4f9f9f479f7dc4e49a08077779377b4ded60b58c4dd"
+    },
+    {
+      "id": "EFTA00035421",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "af8007b8a5ef33004a01a7df21ccf541fe354b97b03aca2f7be065f90578ef6a"
+    },
+    {
+      "id": "EFTA00035442",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "49d41fe487b6888499aadcb85ddf1ac3bb8223e000ea50cdf6a596a4f00db5d7"
+    },
+    {
+      "id": "EFTA00035570",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "708df986d2b0d4cee3732dc2069d2704d9a434d2c900faa5d23fe1e32350a3d9"
+    },
+    {
+      "id": "EFTA00035613",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/efta00035613-july-2019-donation-proposal",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00035657",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "a28ea35fa479a3c1efbbde8c0c598a466ae9e8e04e14e4957e8f2bfc65f9ca9c"
+    },
+    {
+      "id": "EFTA00035715",
+      "decision": "promote",
+      "basis": "expanded comparative analysis with existing source notes and official contextual records",
+      "sha256": "d774f8be17b195de63d298aaa831478a39bc582edf813b35fe92994bd660a34b"
+    },
+    {
+      "id": "EFTA00035773",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/efta00035773-oig-voluntary-interview-waiver",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00035828",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/efta00035828-epstein-cell-diagram",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00039356",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/autopsy-exhibit-list-limits",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00039416",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/ch0080-video-file-windows",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00080260",
+      "decision": "retain-noindex",
+      "basis": "financial exhibit requires reconciliation with already published account analysis; source review contains differing levels of detail"
+    },
+    {
+      "id": "EFTA00088020",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/andrew-doj-judicial-review-efta00088020",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00128841",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00153569",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00153570",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00153571",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00176507",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00224262",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00338082",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/alan-dershowitz-schedule-efta00352969",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00352969",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/alan-dershowitz-schedule-efta00352969",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00356456",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00579174",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00579182",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00643676",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00646811",
+      "decision": "retain-noindex",
+      "basis": "underlying valuation attachments not authenticated"
+    },
+    {
+      "id": "EFTA00695049",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/stephen-hawking-email-request-efta00695049",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00704168",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00759004",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/jeff-bezos-email-list-efta00759004",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA00962798",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/jean-luc-brunel-mc2-account-efta01972778",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA01245620",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA01410768",
+      "decision": "retain-noindex",
+      "basis": "confidential correspondence; primary allocation evidence not established"
+    },
+    {
+      "id": "EFTA01703108",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/hold-the-letter",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA01972778",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/jean-luc-brunel-mc2-account-efta01972778",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02213201",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02239649",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/larry-summers-harvard-planning-efta02239873",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02239873",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/larry-summers-harvard-planning-efta02239873",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02240144",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/steve-bannon-barak-calendar-efta02240144",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02262778",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/mark-zuckerberg-mentions-efta00034221",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02300238",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02332402",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/ghislaine-maxwell-travel-coordination-efta02332402",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02338119",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/elon-musk-holiday-email-efta02338119",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02346686",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02596796",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02656769",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02662212",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/bill-richardson-counsel-memo-efta00014374",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02730265",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/bill-gates-nikolic-points-efta02730265",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02730996",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02731023",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02731082",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/reels/les-wexner-attorney-proffer-efta02731082",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02810827",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02858481",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+      "basis": "target contains exact ID and dossier link"
+    },
+    {
+      "id": "EFTA02858491",
+      "decision": "retain-canonical",
+      "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+      "basis": "target contains exact ID and dossier link"
+    }
+  ]
+}

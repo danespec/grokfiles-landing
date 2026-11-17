@@ -529,18 +529,10 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Navigation directory or utility, not a substantive article"
   },
-  "https://grokarchivehub.com/archive/EFTA00035206": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
-  },
   "https://grokarchivehub.com/videos/peter-thiel-epstein-record-efta02656769": {
     "noindex": true,
     "reason": "Companion to the consolidated interview account and response",
     "canonical": "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035715": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
   },
   "https://grokarchivehub.com/videos/shawn-ryan-released-interview-response": {
     "noindex": true,
@@ -660,32 +652,12 @@ export const PUBLICATION_POLICY = {
     "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00035657": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035421": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035420": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/archive/EFTA02858491": {
     "noindex": true,
     "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00035035": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/internet-vs-receipts/doj-celebrity-names": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035442": {
     "noindex": true,
     "reason": "Below requested unique-prose threshold; retained as reader/source access"
   },
@@ -707,14 +679,6 @@ export const PUBLICATION_POLICY = {
     "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00035053": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035570": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/reels": {
     "noindex": true,
     "reason": "Navigation directory or utility, not a substantive article"
@@ -724,10 +688,6 @@ export const PUBLICATION_POLICY = {
     "reason": "Below requested unique-prose threshold; retained as reader/source access"
   },
   "https://grokarchivehub.com/reels/raskin-epstein-mlat-letter-october-2026": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00033413": {
     "noindex": true,
     "reason": "Below requested unique-prose threshold; retained as reader/source access"
   },
