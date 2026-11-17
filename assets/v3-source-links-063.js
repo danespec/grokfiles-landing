@@ -458,7 +458,7 @@
     var form = $("[data-ask-gah-form]");
     if (!form) return;
     // Protected preview only: make the existing panel reachable on touch screens.
-    if (/\.gah-staging-517b8499\.pages\.dev$/.test(location.hostname) && !$(".ask-launcher")) {
+    if (/\.gah-staging-517b8499\.pages\.dev$/.test(new URL(document.baseURI).hostname) && !$(".ask-launcher")) {
       var launcher = document.createElement("button");
       launcher.type = "button"; launcher.className = "btn btn-fill ask-launcher";
       launcher.textContent = "Ask GAH"; launcher.setAttribute("aria-controls", "ask-gah-panel");
