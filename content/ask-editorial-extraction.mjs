@@ -1,5 +1,6 @@
 // Staging-only extractive answers over the existing private passage/hybrid index.
 import MODEL from './research-corpus-010.mjs';
+import SNAPSHOT from './ask-publication-snapshot.mjs';
 import {askEditorialCandidate} from './ask-editorial-staging.mjs';
 import {editorialGuard} from './research-evidence-closeout.mjs';
 import {ASK_PUBLIC_NAV,ASK_DATASET_NAV,ASK_EXCLUDED_PUBLIC_IDS} from './ask-research-navigation.mjs';
@@ -102,22 +103,29 @@ export async function askEditorialExtract(question,env,request,budget=async()=>f
  const candidates=retrieval.results.filter(r=>MODEL.publication_hashes[r.url]===r.source_sha256&&!askSourceWithdrawn(env,r.url));
  const extra={answer_generation:'verbatim_cited_publication_extraction',review_status:'pending_independent_review',corpus_publications:MODEL.documents.length,retrieval_strategy:retrieval.strategy,neural_executed:retrieval.neural_executed,neural_degraded:retrieval.neural_degraded||false,related_research:relatedNavigation(candidates,[],env),editorial_candidates:candidates.map(r=>({title:r.title,url:r.url,publication_sha256:r.source_sha256})),evidentiary_limitations:['Source-bound staging candidates are not independently certified primary-source findings.','An inline EFTA/leak citation identifies the publication’s claimed support; Ren must verify entailment before production release.','Allegations, proposals and unresolved questions retain their wording. Association alone does not establish wrongdoing.']};
  if(!candidates.length)return abstain('insufficient_evidence',extra);
- if(!env.ASSETS?.fetch)return abstain('publication_assets_unavailable',extra);
+ if(!SNAPSHOT&&!env.ASSETS?.fetch)return abstain('publication_assets_unavailable',extra);
  const boundPacket=askEditorialCandidate(question,env,production);
  const ranked=[];
  for(const row of candidates.slice(0,8)){
-  // Pages may canonicalize .html to the extensionless route. Only local ASSETS
-  // bytes matching the registered publication digest are eligible; never fetch the public page.
+  // The advanced release uses exact, build-verified public publication bytes.
+  // No redirects, response rewriting or edge asset hostname dependencies.
+  // Do not fall back to mutable assets if a bundled snapshot fails its digest.
   const source=new URL(row.url);
   let html=null;
-  for(const path of [source.pathname+'.html',source.pathname]){
-   const local=new URL(request.url);local.pathname=path;local.search='';local.hash='';
-   try{
-    const response=await env.ASSETS.fetch(new Request(local,{redirect:'manual'}));
-    if(!response.ok)continue;
-    const bytes=await response.text();
-    if(await hash(bytes)===row.source_sha256){html=bytes;break}
-   }catch{}
+  if(SNAPSHOT!==null){
+   const bytes=Object.hasOwn(SNAPSHOT,row.url)?SNAPSHOT[row.url]:null;
+   if(typeof bytes==='string'&&await hash(bytes)===row.source_sha256)html=bytes;
+  }else{
+   // Source-only tests and unbundled staging retain the original local path.
+   for(const path of [source.pathname+'.html',source.pathname]){
+    const local=new URL(request.url);local.pathname=path;local.search='';local.hash='';
+    try{
+     const response=await env.ASSETS.fetch(new Request(local,{redirect:'manual'}));
+     if(!response.ok)continue;
+     const bytes=await response.text();
+     if(await hash(bytes)===row.source_sha256){html=bytes;break}
+    }catch{}
+   }
   }
   if(html===null)continue;
   if(boundPacket?.answer_abstained===false&&boundPacket.answer_claims.every(c=>c.publication_url===row.url&&!askSourceWithdrawn(env,row.url,c.citations.map(x=>x.id)))){

@@ -11,11 +11,27 @@ const answerBank=production?null:fs.realpathSync(process.env.GAH_PRIVATE_REVIEWE
 const vectors=production?null:fs.realpathSync(process.env.GAH_PRIVATE_EDITORIAL_VECTORS||'');
 if(!production){if(inside(vectors))throw Error('Private vectors outside checkout required');const v=JSON.parse(fs.readFileSync(vectors,'utf8').replace(/^export default /,'').trim().replace(/;$/,''));if(v.fixture_only||v.model!=='@cf/baai/bge-small-en-v1.5')throw Error('Actual bound model snapshot required');}
 const esbuild=await import(pathToFileURL(fs.realpathSync(modulePath)).href);
+// Snapshot only the authorized public corpus. Check exact checkout bytes AND
+// the staged deployment assets, so a stale or altered release cannot be built.
+const snapshot=advanced?Object.fromEntries((await import(pathToFileURL(path.join(root,'content/research-corpus-010.mjs')).href)).default.documents.map(d=>{
+ const u=new URL(d.url);
+ if(u.origin!=='https://grokarchivehub.com'||u.search||u.hash||!/^\/[a-z0-9-]+\/[a-zA-Z0-9-]+$/.test(u.pathname))throw Error('Invalid publication URL');
+ const relative=u.pathname.slice(1)+'.html';
+ const bytes=fs.readFileSync(path.join(root,relative));
+ const staged=fs.readFileSync(path.join(parent,relative));
+ if(createHash('sha256').update(bytes).digest('hex')!==d.source_sha256||!bytes.equals(staged))throw Error('Publication snapshot mismatch: '+d.url);
+ const html=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);
+ if(!Buffer.from(html,'utf8').equals(bytes))throw Error('Publication encoding mismatch: '+d.url);
+ return [d.url,html];
+})):null;
+
 const flags={schema:'gah.research.flags.v1',passage:advanced,neural:advanced,exact_cache:advanced,reviewed_answers:advanced};
 if(process.env.GAH_RESEARCH_BUILD_FLAGS){const override=JSON.parse(process.env.GAH_RESEARCH_BUILD_FLAGS);if(!override||Object.keys(override).some(k=>!['passage','neural','exact_cache','reviewed_answers'].includes(k)||typeof override[k]!=='boolean'))throw Error('Invalid research release flags');Object.assign(flags,override);}
 if(production&&Object.entries(flags).some(([k,v])=>k!=='schema'&&v===true))throw Error('Standard production build cannot enable advanced flags');
 flags.version=createHash('sha256').update(JSON.stringify(flags)).digest('hex');
 const plugin={name:'isolated-research',setup(b){
+ b.onResolve({filter:/ask-publication-snapshot\.mjs$/},()=>({path:'ask-publication-snapshot',namespace:'ask-publication-snapshot'}));
+ b.onLoad({filter:/.*/,namespace:'ask-publication-snapshot'},()=>({contents:'export default '+JSON.stringify(snapshot),loader:'js'}));
  b.onResolve({filter:/research-feature-config\.mjs$/},()=>({path:'release-flags',namespace:'release-flags'}));
  b.onLoad({filter:/.*/,namespace:'release-flags'},()=>({contents:'export default '+JSON.stringify(flags),loader:'js'}));
  if(production){
