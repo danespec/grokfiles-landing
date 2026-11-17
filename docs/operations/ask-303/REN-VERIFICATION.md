@@ -3,7 +3,7 @@ Production remains unchanged. Ren review and explicit owner deployment authoriza
 
 ## Scope and measured coverage
 The existing private passage/hybrid retrieval now feeds staging Ask GAH: 105 eligible publications, 6,411 passages and 105 real bound BGE vectors. No completed research system was rebuilt.
-There are 558 eligible source-linked extract blocks across 67 publications. The frozen 105-title probe returned 38 answers, 46 abstentions and 21 exact-ID bypasses. These figures describe this probe, not every question about those publications.
+There are 529 eligible source-linked extract blocks across 67 publications. The frozen 105-title probe returned 36 answers, 48 abstentions and 21 exact-ID bypasses. These figures describe this probe, not every question about those publications.
 See answer-coverage.json for each question, source publication, result and abstention reason. Natural variations cover Dechert payments/loans, Barak St Thomas, BFP repricing/funds and Putin/Qatar/Carbyne. MCC final-48-hours and JPMorgan nine-SAR sample questions still abstain on insufficient same-block EFTA/leak support.
 Publications lacking eligible EFTA/leak-supported blocks remain retrievable; no citation is invented to force an answer.
 

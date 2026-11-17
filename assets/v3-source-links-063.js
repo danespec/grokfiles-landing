@@ -47,7 +47,7 @@
     var raw = String(value).trim();
     if (!raw) return "";
     try {
-      var url = new URL(raw, window.location.origin);
+      var url = new URL(raw, window.location.origin === "null" ? "https://grokarchivehub.com" : window.location.origin);
       var protocol = String(url.protocol || "").toLowerCase();
       if (protocol !== "http:" && protocol !== "https:") return "";
       return url.href;

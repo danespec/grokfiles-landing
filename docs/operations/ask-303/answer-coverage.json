@@ -59,7 +59,7 @@
     {
       "url": "https://grokarchivehub.com/document-autopsies/doug-band-transcript",
       "question": "Doug Band's Epstein Testimony: What the Transcript Establishes-and What It Does Not",
-      "cited_blocks": 32,
+      "cited_blocks": 30,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -69,7 +69,7 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/adfin-southern-trust-series-a-2013",
       "question": "AdFin: Two Southern Trust Wires, 1,428,571 Series A Shares",
-      "cited_blocks": 16,
+      "cited_blocks": 14,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -79,7 +79,7 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/coinbase-return-first-15m-exit",
       "question": "Coinbase in Reverse: The $15M Exit That Proves the Position",
-      "cited_blocks": 15,
+      "cited_blocks": 14,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -89,7 +89,7 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report",
       "question": "EFTA02810827: What Jorge Amador’s Forensic Report Actually Found",
-      "cited_blocks": 4,
+      "cited_blocks": 2,
       "result": "exact_identifier_routing",
       "reason": null,
       "answer_publications": []
@@ -118,7 +118,7 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/honeycomb-spv-spotify-tencent-music",
       "question": "Two Honeycomb SPVs, Two Different Timelines: Spotify and Tencent Music",
-      "cited_blocks": 13,
+      "cited_blocks": 11,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -146,12 +146,10 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/kyara-spv-wearality-blockstream-oh2",
       "question": "Three Kyara SPVs: Wearality, Blockstream, and OH2",
-      "cited_blocks": 11,
-      "result": "answered",
-      "reason": null,
-      "answer_publications": [
-        "https://grokarchivehub.com/evidence-briefs/kyara-spv-wearality-blockstream-oh2"
-      ]
+      "cited_blocks": 8,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
     },
     {
       "url": "https://grokarchivehub.com/evidence-briefs/leon-black-158m-170m-epstein-payments",
@@ -214,7 +212,7 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/reporty-southern-trust-ergo-1m-2015",
       "question": "Reporty’s $1M March 2015 Funding: Proven Cash, Incomplete Holder Chain",
-      "cited_blocks": 17,
+      "cited_blocks": 15,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -224,13 +222,10 @@
     {
       "url": "https://grokarchivehub.com/evidence-briefs/shared-administration-no-money-crossover",
       "question": "Same Office, Same Bank Relationship, Different Money Rails",
-      "cited_blocks": 14,
-      "result": "answered",
-      "reason": null,
-      "answer_publications": [
-        "https://grokarchivehub.com/evidence-briefs/shared-administration-no-money-crossover",
-        "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019"
-      ]
+      "cited_blocks": 11,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
     },
     {
       "url": "https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence",
@@ -261,7 +256,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/andriesz-adfin-lutnick-paper-trail",
       "question": "The Andriesz Paper Trail: FBI Hits, CFTC, HMRC and FCA Review",
-      "cited_blocks": 26,
+      "cited_blocks": 25,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -325,7 +320,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
       "question": "St. Thomas, December 2014: The Trip and the Ticket in Another Man's Name",
-      "cited_blocks": 26,
+      "cited_blocks": 25,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -335,7 +330,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing",
       "question": "From $18M Draft to $5.5M Closing: The Black Family Partners Repricing",
-      "cited_blocks": 18,
+      "cited_blocks": 17,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -355,11 +350,12 @@
     {
       "url": "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap",
       "question": "Where Did the $5.5 Million Come From? The Black Family Partners Source-of-Funds Gap",
-      "cited_blocks": 7,
+      "cited_blocks": 5,
       "result": "answered",
       "reason": null,
       "answer_publications": [
-        "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap"
+        "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap",
+        "https://grokarchivehub.com/evidence-briefs/financial-trust-black-family-partners-2012"
       ]
     },
     {
@@ -394,7 +390,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/darren-indyke-investment-execution-layer",
       "question": "The Execution Layer: Darren Indyke Across Four Technology Deals",
-      "cited_blocks": 31,
+      "cited_blocks": 30,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -493,7 +489,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
       "question": "Inside Gratitude America's Money Trail: $10M In, $8.45M Between Its Own Accounts, and a French Inquiry",
-      "cited_blocks": 9,
+      "cited_blocks": 5,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -615,7 +611,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/wyden-banker-302-deutsche-interviews",
       "question": "Wyden’s Missing Banker 302 vs. Three Public Deutsche Interviews",
-      "cited_blocks": 19,
+      "cited_blocks": 17,
       "result": "answered",
       "reason": null,
       "answer_publications": [

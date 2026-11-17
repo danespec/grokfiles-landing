@@ -42,6 +42,7 @@ assert.deepEqual(extractCitedBlocks('<main><div hidden><p>A long enough hidden p
 assert.deepEqual(extractCitedBlocks('<main><p>A long enough purported documentary claim <a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA99999999</a></p></main>','https://grokarchivehub.com/example'),[]);
 const footnote=extractCitedBlocks('<main><p>A documentary passage with enough detail to test an explicit footnote <a href="#note-1">[1]</a></p><li id="note-1"><a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA00013764</a></li></main>','https://grokarchivehub.com/example');
 assert(footnote.some(c=>c.text.includes('documentary passage')&&c.citations[0].id==='EFTA00013764'));
+assert.deepEqual(extractCitedBlocks('<main><p>A disclosed corporate wire record includes account 000001200135 and cites <a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA00013764</a></p></main>','https://grokarchivehub.com/example'),[]);
 const response=await post(known),body=await response.json();assert.equal(response.status,200);assert.equal(response.headers.get('X-GAH-Ask-Bridge'),ASK_VERSION);assert(!body.answer_abstained);assert.match(response.headers.get('X-Robots-Tag'),/noindex/);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:undefined})).status,503);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>new Response('{"limited":true}')})}})).status,429);
