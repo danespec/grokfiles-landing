@@ -462,7 +462,7 @@
       var launcher = document.createElement("button");
       launcher.type = "button"; launcher.className = "btn btn-fill ask-launcher";
       launcher.textContent = "Ask GAH"; launcher.setAttribute("aria-controls", "ask-gah-panel");
-      launcher.style.cssText = "position:fixed;right:16px;bottom:24px;z-index:80;min-height:44px";
+      launcher.style.cssText = "display:block!important;position:fixed;right:16px;bottom:24px;z-index:80;min-height:44px";
       launcher.addEventListener("click", function () { openOverlay("ask-gah-panel", launcher); });
       document.body.appendChild(launcher);
     }
