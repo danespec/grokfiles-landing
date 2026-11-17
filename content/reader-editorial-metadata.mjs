@@ -1438,5 +1438,33 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/guides/epstein-files-data-set-12": {
     "title": "Epstein Files Data Set 12: DOJ PDF & EFTA Guide",
     "description": "DOJ Epstein Data Set 12: find EFTA PDF identifiers and read about draft agreements, payment records and proffers. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/topics/epstein-non-prosecution-agreement": {
+    "title": "Epstein Non-Prosecution Agreement: 2007–2008",
+    "description": "What did the 2007 Epstein non-prosecution agreement resolve? Compare the draft indictment, victim notification, Hold the Letter email and DOJ review."
+  },
+  "https://grokarchivehub.com/topics/epstein-jail-records": {
+    "title": "Epstein Jail Records: Logs, Video and Evidence",
+    "description": "Read Epstein MCC jail records by document type: custody logs, observation status, camera file lists, preservation requests and official findings."
+  },
+  "https://grokarchivehub.com/topics/epstein-bank-records": {
+    "title": "Epstein Bank Records: SARs, Wires and Accounts",
+    "description": "Compare Epstein bank records from JPMorgan and Deutsche Bank, suspicious activity reports, wire totals, forensic exhibits and account-level limits."
+  },
+  "https://grokarchivehub.com/topics/leon-black-epstein-financial-records": {
+    "title": "Leon Black and Epstein: Financial Records",
+    "description": "Compare Leon Black’s Epstein payment totals, the Dechert review, Senate Finance inquiry, settlement records and separate investment transactions."
+  },
+  "https://grokarchivehub.com/topics/epstein-investment-records": {
+    "title": "Epstein Investment Records: Trusts and Ventures",
+    "description": "Research Epstein-linked investment records, Southern Trust, investment vehicles, term sheets, payment evidence and ownership verification."
+  },
+  "https://grokarchivehub.com/topics/epstein-court-records": {
+    "title": "Epstein Court Records: Cases, Filings and Orders",
+    "description": "Find Epstein court records by case and document type. Distinguish criminal charges, civil allegations, privilege orders, FOIA and disclosure records."
+  },
+  "https://grokarchivehub.com/topics/ehud-barak-epstein-business-records": {
+    "title": "Ehud Barak and Epstein: Business Records",
+    "description": "Explore source-linked Barak and Epstein business correspondence, proposed ventures, scheduling records, investment evidence and verification limits."
   }
 };

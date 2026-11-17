@@ -73,6 +73,14 @@ const inventory=JSON.parse(await fs.readFile(new URL('docs/reaudit-20261027/adse
 // October 27 inventory is immutable: later editorial publications must be
 // explicitly listed here rather than silently raising a fixed sitemap count.
 const laterEditorial=[
+ 'https://grokarchivehub.com/topics/epstein-non-prosecution-agreement',
+ 'https://grokarchivehub.com/topics/epstein-jail-records',
+ 'https://grokarchivehub.com/topics/epstein-bank-records',
+ 'https://grokarchivehub.com/topics/leon-black-epstein-financial-records',
+ 'https://grokarchivehub.com/topics/epstein-investment-records',
+ 'https://grokarchivehub.com/topics/epstein-court-records',
+ 'https://grokarchivehub.com/topics/ehud-barak-epstein-business-records',
+
  'https://grokarchivehub.com/guides/epstein-files-data-set-1',
  'https://grokarchivehub.com/guides/epstein-files-data-set-2',
  'https://grokarchivehub.com/guides/epstein-files-data-set-3',
