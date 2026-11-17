@@ -25,10 +25,10 @@ async function consentBinding(secret,handle,subject){
  return Array.from(new Uint8Array(await crypto.subtle.sign('HMAC',key,enc.encode(JSON.stringify([handle,subject])))),b=>b.toString(16).padStart(2,'0')).join('');
 }
 const publicStatus=()=>fetch('https://grokarchivehub.com/api/archive-status',{redirect:'error',headers:{Accept:'application/json'},signal:AbortSignal.timeout(5000)});
-export function buildPilot(issuer,{verifySubject=accessSubject,fetchStatus=publicStatus}={}){
+export function buildPilot(issuer,{verifySubject=accessSubject,fetchStatus=publicStatus,tokenPath="/oauth/token"}={}){
  if(!exactOrigin(issuer)&&!/^http:\/\/127\.0\.0\.1:\d+$/.test(issuer))throw Error('invalid issuer');
  const resource=issuer+'/api/agent/v1/status';
- const as=new OAuthAuthorizationServer({issuer,resources:[resource],defaultResource:resource,authorizeEndpoint:'/authorize',tokenEndpoint:'/oauth/token',scopesSupported:[SCOPE],accessTokenTTL:300,refreshTokenTTL:0,clientIdMetadataDocumentEnabled:false,cookiePrefix:'__Host-gah-agent-pilot-'});
+ const as=new OAuthAuthorizationServer({issuer,resources:[resource],defaultResource:resource,authorizeEndpoint:'/authorize',tokenEndpoint:tokenPath,scopesSupported:[SCOPE],accessTokenTTL:300,refreshTokenTTL:0,clientIdMetadataDocumentEnabled:false,cookiePrefix:'__Host-gah-agent-pilot-'});
  const rs=new OAuthResourceServer({resourceMetadata:{resource,authorization_servers:[issuer],bearer_methods_supported:['header'],resource_name:'GAH public archive status pilot'},requiredScopes:[SCOPE],validateToken:env=>(r,t)=>as.validateToken(r,t,env),handler:{async fetch(req,env,ctx){
   if(req.method!=='GET'||req.url!==resource)return json({error:'not_found'},404);
   if(!ctx.auth.scope.includes(SCOPE))return insufficientScope(ctx.auth,[SCOPE]);
@@ -69,7 +69,7 @@ export function buildPilot(issuer,{verifySubject=accessSubject,fetchStatus=publi
   if(u.pathname==='/api/agent/v1/status'||u.pathname==='/.well-known/oauth-protected-resource/api/agent/v1/status')return rs.fetch(request,env,ctx);
   if(u.pathname==='/.well-known/oauth-protected-resource')return json({resource,authorization_servers:[issuer],scopes_supported:[SCOPE],bearer_methods_supported:['header']});
   if(u.pathname==='/auth.md')return new Response('# auth.md\n\n# GAH approved agent pilot\n\nPublic archive remains free. Pilot agents must be provisioned by an approved operator using POST /operator/clients with dedicated Access identity and provisioning credential. No self-registration, human account claim, or open-ended access. Use OAuth authorization code with S256 PKCE, scope archive:status; send the access token only via Authorization: Bearer to '+resource+'. Read metadata at /.well-known/oauth-protected-resource/api/agent/v1/status and /.well-known/oauth-authorization-server. Tokens expire in five minutes; no refresh. No ID-JAG or verified-email registration yet.\n',{headers:{'Content-Type':'text/markdown; charset=utf-8','Cache-Control':'no-store'}});
-  if(u.pathname==='/.well-known/oauth-authorization-server'||u.pathname==='/oauth/token'||u.pathname==='/oauth/revoke')return as.fetch(request,env,ctx);
+  if(u.pathname==='/.well-known/oauth-authorization-server'||u.pathname===tokenPath||u.pathname==='/oauth/revoke')return as.fetch(request,env,ctx);
   return json({error:'not_found'},404);
  }};
 }

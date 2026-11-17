@@ -1,14 +1,34 @@
-# GAH-018 — isolated agent authorization and payment validation pilot
+# GAH-018 — isolated agent authorization and payment validation
 
-**Draft, not deployed.** No production routes, database, prices, wallet, settlement or membership changes. Public archive remains free. The only OAuth resource in this candidate is an independently provisioned read-only archive status endpoint. It does not authorize access to GAH account or administration APIs.
+The dedicated production Worker gah-agent-auth-018 has been provisioned with separate KV and SQLite Durable Object storage. It is disabled and has no public routes until signing and provisioning credentials are configured. Public archive access remains free.
 
-## Reproduce
+## Tested functionality
 
-From this directory, `npm ci && npm test`. Tests run the official Cloudflare OAuth provider in a local Miniflare runtime, with synthetic operator identity and status fixtures. They check metadata, operator-only provisioning, explicit consent, S256 PKCE, origin and subject binding, narrow audience and scope, 300-second access token issuance, lack of refresh tokens, revocation, and authorization-code replay rejection. Payment tests use locally generated fixture keys; no real payments or provider calls occur.
+Run npm ci && npm test in this directory. The three local suites cover anonymous registration, signed ES256 assertions, OAuth JWT bearer exchange, access-token and registration revocation, expiry, rate limits, resource and scope binding, interactive authorization code with S256 PKCE, explicit browser consent, and negative payment-context signature tests. Tests do not collect reader identities or charge money.
 
-## Deployment gates
+The sole scope is archive:status. Interactive OAuth uses a separate preapproved client and anonymous browser consent, not GAH user identity. Anonymous agent registration does not support human account claiming, ID-JAG or verified email. No claim endpoint is advertised. Auth.md documents the actual supported flow rather than promising capabilities not implemented.
 
-- Create a dedicated Worker, separate OAuth KV, and isolated Cloudflare Access application/policy for the authorization and provisioning paths; never use member or operator production stores or reuse the existing Access audience. Set `AGENT_ISSUER` to the actual HTTPS origin and configure `AGENT_ACCESS_ISSUER`, `AGENT_ACCESS_AUD`, `AGENT_APPROVED_REDIRECT_URI`, plus separate random `AGENT_PROVISION_TOKEN` and `AGENT_CONSENT_BINDING_SECRET` through encrypted secret bindings. Keep `AGENT_PILOT_ENABLED` false until reviewed and staging tests with real Access pass. Disable public workers.dev and preview access for the eventual deployment. The fixture must never be deployed. Rate-limit issuance/provisioning, add abuse monitoring, test concurrency and KV consistency/revocation, and review consent/identity data retention before exposure.
-- OAuth metadata and RFC 9728 metadata describe only this isolated resource. The library issues opaque access tokens, so a signing JWKS is not required for RFC 8414; never repurpose the independent Web Bot Auth key. A real OIDC issuer/JWKS would require a separate supported OIDC deployment. Root discovery on GAH must not claim this pilot until actual issuer/resource routing is validated. Manual operator provisioning is not autonomous Auth.md ID-JAG/verified-email/anonymous registration. Implement and test an actual supported Auth.md flow before declaring one.
-- Cloudflare Monetization Gateway: requires approved beta access, verified recipient wallet, owner-approved atomic price/currency, exact premium route, and production settlement/replay/fulfillment tests. The module only validates Cloudflare-signed `PAYMENT-CONTEXT` with pinned remote JWKS, expiry and exact audience/amount. It is not a checkout or settlement implementation and must not be installed alone as a paid route. Do not charge for indexing, public citations, official source files, ordinary browsing or existing membership access. Establish rights, pricing, refund/support policies and a distinct premium editorial service first.
-- Pay Per Crawl is a separate Cloudflare beta and dedicated Stripe Connect onboarding. ACP, AP2, MPP and UCP discovery must reflect real working merchant services, mandate/checkout/fulfillment, and actual payable operations. Do not publish placeholder claims to satisfy a scanner. The existing Patreon and PayPal support links do not implement these protocols.
+## Activation gate
+
+The deployed Worker must have four dedicated encrypted secret bindings: AGENT_ASSERTION_JWK (private P-256 ES256 JWK), AGENT_RATE_SECRET, AGENT_CONSENT_BINDING_SECRET, and AGENT_PROVISION_TOKEN. The three non-key secrets must each be independent high-entropy values. Never use the Web Bot Auth signing key, member credentials, or payment secrets. Secure provisioning was not completed.
+
+After provisioning, review the exact routes below, enable AGENT_PILOT_ENABLED, deploy and perform an explicitly authorized end-to-end registration and revocation test. Passive scanner tests must not POST to registration endpoints. Confirm discovery metadata, the public JWKS, uncredentialed 401, scope rejection, revocation, existing public archive routes and analytics. Rollback: remove only the new Worker routes and set AGENT_PILOT_ENABLED=false.
+
+Required route patterns on grokarchivehub.com:
+
+- /auth.md*
+- /.well-known/oauth-authorization-server*
+- /.well-known/oauth-protected-resource*
+- /.well-known/jwks.json*
+- /agent/identity*
+- /authorize*
+- /oauth2/token*
+- /oauth2/revoke*
+- /operator/agent-clients*
+- /api/agent/v1/status*
+
+The Worker enforces an exact path allowlist, HTTPS apex issuer, request method and credential scope. Do not route /api/*, /.well-known/* or the entire domain to this Worker. Keep workers.dev and preview URLs disabled. Monitor quotas, KV propagation and code-flow revocation consistency. The local test fixture must never be deployed.
+
+## Payment gate
+
+Cloudflare Monetization Gateway approval, verified recipient wallet, approved price and currency, exact premium route, and settlement/replay/fulfillment tests remain required. The payment verifier is inert. No live checkout, settlement, charge, entitlement, or commerce discovery claims are enabled. Pay Per Crawl requires separate onboarding. Existing Patreon and PayPal remain unchanged.
