@@ -457,6 +457,15 @@
   function initAskGah() {
     var form = $("[data-ask-gah-form]");
     if (!form) return;
+    // Protected preview only: make the existing panel reachable on touch screens.
+    if (/\\.gah-staging-517b8499\\.pages\\.dev$/.test(location.hostname) && !$(".ask-launcher")) {
+      var launcher = document.createElement("button");
+      launcher.type = "button"; launcher.className = "btn btn-fill ask-launcher";
+      launcher.textContent = "Ask GAH"; launcher.setAttribute("aria-controls", "ask-gah-panel");
+      launcher.style.cssText = "position:fixed;right:16px;bottom:24px;z-index:80;min-height:44px";
+      launcher.addEventListener("click", function () { openOverlay("ask-gah-panel", launcher); });
+      document.body.appendChild(launcher);
+    }
     var question = $("[data-ask-gah-question]");
     var status = $("[data-ask-gah-status]");
     var responseNode = $("[data-ask-gah-response]");
@@ -490,7 +499,33 @@
           if (!responseNode) return;
           responseNode.textContent = "";
           var answer = data.answer || data.summary || data.response || data.text || "";
-          if (answer) {
+          var citedPreview = data.mode === "editorial_answer_staging";
+          if (citedPreview) {
+            if (status) status.textContent = data.answer_abstained ? "Evidence insufficient — no answer issued." : "Staging evidence extract — independent review pending.";
+            (data.answer_claims || []).forEach(function (claim) {
+              var block = document.createElement("section");
+              var quote = document.createElement("p"); quote.textContent = claim.text || ""; block.appendChild(quote);
+              (claim.citations || []).forEach(function (citation) {
+                var link = document.createElement("a");
+                if (applySafeLink(link, citation.url, citation.id || citation.source_id || "Source")) {
+                  block.appendChild(link); block.appendChild(document.createTextNode(" "));
+                }
+              });
+              var detail = document.createElement("details"), summary = document.createElement("summary");
+              summary.textContent = "Fingerprint and evidence limits"; detail.appendChild(summary);
+              var provenance = document.createElement("p");
+              provenance.textContent = "Publication SHA-256: " + (claim.publication_sha256 || "") + ". " + (claim.limitation || "Source-bound staging candidate; independent certification pending.");
+              provenance.style.overflowWrap = "anywhere"; detail.appendChild(provenance); block.appendChild(detail);
+              responseNode.appendChild(block);
+            });
+            (data.evidentiary_limitations || []).forEach(function (limit) {
+              var note = document.createElement("p"); note.className = "small"; note.textContent = limit; responseNode.appendChild(note);
+            });
+            if (data.answer_abstained) {
+              var reason = document.createElement("p"); reason.textContent = answer + " Reason: " + (data.answer_reason || "insufficient_evidence"); responseNode.appendChild(reason);
+            }
+          }
+          if (answer && !citedPreview) {
             var p = document.createElement("p");
             p.textContent = answer;
             responseNode.appendChild(p);

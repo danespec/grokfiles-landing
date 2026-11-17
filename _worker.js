@@ -1,4 +1,4 @@
-import {askEditorialCandidate,askEditorialLocators} from "./content/ask-editorial-staging.mjs";
+import {askEditorialExtract,ASK_VERSION} from "./content/ask-editorial-extraction.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
 import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
@@ -7298,6 +7298,7 @@ function consentScriptTag(env = {}, request = null) {
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
+  if(isStagingEnv(env))body=body.replace(/(\/assets\/v3-source-links-063\.js)\?v=[^"']+/g,"$1?v=GAH-ASK-303-V2");
   if (body.includes('class="home-064"') && Date.now() >= 1793426400000 && Date.now() < 1793512860000) {
     body = body.replace('<html ', '<html class="gah-halloween" ');
     body = body.replace('</head>', "<style id=\"gah-halloween-style\">\nhtml.gah-halloween{--page:#100d18;--paper:#1c1627;--ink:#fff2df;--slate:#d4c5df;--gold:#ffad56;--line:#513747;background:#100d18}\n.gah-halloween body.home-064{background:radial-gradient(ellipse at top right,#382046 0,transparent 50%),#100d18;color:#fff2df}\n.gah-halloween .site-header{background:#17101fee;border-bottom:1px solid #b86634}\n.gah-halloween .brand-mark{background:#ffad56;color:#201020;box-shadow:0 0 24px #ff8a3433}\n.gah-halloween .site-header a,.gah-halloween .site-header .brand-copy strong{color:#fff2df}\n.gah-halloween .home-news-card,.gah-halloween .home-research-panel,.gah-halloween .home-series,.gah-halloween .home-paths>a,.gah-halloween .home-more{background:#1c1627;border-color:#513747}\n.gah-halloween .hero:after{background:linear-gradient(90deg,#130d20ed,#1f1027a8)}\n.gah-halloween .hero em{color:#ffad56}\n.gah-halloween .btn-primary{background:#ffad56;color:#211121;border-color:#ffad56}\n.gah-halloween .section-head h2{color:#fff2df}\n.gah-halloween a:focus-visible,.gah-halloween button:focus-visible{outline:3px solid #ffbd79;outline-offset:4px}\n#gah-halloween{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 85% 20%,#512d60,transparent 46%),linear-gradient(120deg,#1d1429,#110f1c);border-bottom:1px solid #935b3e;padding:clamp(2.5rem,6vw,5rem) 1.25rem;text-align:center;color:#fff2df}\n#gah-halloween .hw-kicker{font:700 .75rem/1.5 system-ui,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#ffc078;margin:0 0 1rem}\n#gah-halloween h2{position:relative;z-index:1;font:700 clamp(2rem,5.7vw,4.8rem)/1.08 Georgia,serif;letter-spacing:-.025em;max-width:1000px;margin:0 auto;text-wrap:balance;color:#fff2df}\n#gah-halloween h2 span{color:#ffad56}\n#gah-halloween .hw-note{position:relative;z-index:1;font:400 1rem/1.6 system-ui,sans-serif;color:#dfcee9;margin:1.25rem 0 0}\n#gah-halloween .hw-moon{position:absolute;right:6%;top:-26px;width:150px;height:150px;border-radius:50%;background:#ffd5a2;box-shadow:0 0 70px #ffb76533;opacity:.16;z-index:-1}\n#gah-halloween .hw-pumpkin{display:inline-block;font-size:2.3rem;line-height:1;margin-bottom:1rem}\n#gah-halloween .hw-bat{position:absolute;width:70px;fill:#09070e;opacity:.75}\n#gah-halloween .hw-bat.one{left:6%;top:20%;transform:rotate(-17deg)}\n#gah-halloween .hw-bat.two{right:12%;bottom:15%;width:45px;transform:rotate(13deg)}\n@media(max-width:600px){#gah-halloween .hw-bat{opacity:.3;width:40px}#gah-halloween .hw-note{font-size:.9rem}}\n</style>" + '</head>');
@@ -18782,9 +18783,12 @@ async function handleAskGahBridge(request, env = {}) {
 
   // Staging-only source-bound editorial candidates; help, exact IDs and archive fallback stay unchanged.
   const editorialStage = isStagingEnv(env) && new URL(request.url).hostname.endsWith(".gah-staging-517b8499.pages.dev");
-  if (intent === "archive" && editorialStage) {
-    const editorial = askEditorialCandidate(question, env);
-    if (editorial) return new Response(JSON.stringify(sanitizeAskGahPayload(editorial)), {headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow, noarchive","X-GAH-Ask-Intent":intent,"X-GAH-Ask-Bridge":"GAH_ASK_EDITORIAL_STAGING_V1","X-GAH-Ask-Privacy":"GAH_ASK_GAH_PRIVACY_SANITIZER_V1"}});
+  if (intent === "archive" && editorialStage && !/\bEFTA\d{8}\b/i.test(question)) {
+    let rate;
+    try { rate=await gahSecDoCall(env,{op:"check",scope:"ask-editorial-staging",key:gahSecClientIp(request),max:30,windowMs:60000}); } catch {}
+    if (!rate || typeof rate.limited!=="boolean" || rate.limited) return jsonResponse({error:rate?.limited?"rate_limited":"limiter_unavailable"},rate?.limited?429:503,{"X-Robots-Tag":"noindex, nofollow, noarchive"});
+    const editorial = await askEditorialExtract(question, env, request, ()=>gahNeuralBudget(env));
+    if (editorial) return new Response(JSON.stringify(sanitizeAskGahPayload(editorial)), {headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow, noarchive","X-GAH-Ask-Intent":intent,"X-GAH-Ask-Bridge":ASK_VERSION,"X-GAH-Ask-Privacy":"GAH_ASK_GAH_PRIVACY_SANITIZER_V1"}});
   }
 
   const upstreamUrl = new URL(request.url);
@@ -18829,10 +18833,6 @@ async function handleAskGahBridge(request, env = {}) {
   if (contentType.toLowerCase().includes("application/json")) {
     try {
       const payload = await upstreamResponse.clone().json();
-      if (editorialStage && intent === "archive" && payload && typeof payload === "object" && !Array.isArray(payload)) {
-        const locators = askEditorialLocators(question, env);
-        if (locators.length) payload.editorial_candidates = locators;
-      }
       responseBody = JSON.stringify(sanitizeAskGahPayload(payload));
       headers.set("Content-Type", "application/json; charset=utf-8");
       headers.set(

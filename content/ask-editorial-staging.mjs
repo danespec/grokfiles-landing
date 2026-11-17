@@ -23,7 +23,9 @@ export function askEditorialCandidate(question,env){
  if(String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
  if(editorialGuard(question)||namesakes(question))return abstain('insufficient_or_restricted_evidence');
  if(question.length>256||/\bEFTA\d{8}\b/i.test(question))return null;
- const packet=packets.find(p=>p.questions.some(q=>norm(q)===norm(question)));
+ const payment=/\bleon\s+black\b/i.test(question)&&/\bdechert\b/i.test(question)&&/\b(?:pay|paid|payment|payments|fee|fees|million|loans?)\b/i.test(question);
+ const visit=/\bbarak\b/i.test(question)&&/\bst\.?\s+thomas\b/i.test(question)&&/\b2014\b/i.test(question)&&/\b(?:december|dec|visit|go|went|trip|travel)\b/i.test(question);
+ const packet=payment?packets[0]:visit?packets[1]:null;
  if(!packet)return null;
  const candidates=researchPipeline010(question,10);
  const row=candidates.results.find(r=>r.url===packet.url&&r.source_sha256===packet.sha);

@@ -76,7 +76,11 @@ jobs:
       - name: Frozen benchmark and independent-review guard
         run: python3 tests/test_research_review_guard_010.py
       - name: Ask GAH staging editorial answer and abstention gate
-        run: node tests/test_ask_editorial_staging_20261117.mjs
+        run: |
+          ASK_CONTRACT_VECTORS="$RUNNER_TEMP/ask-vectors.mjs"
+          python3 scripts/build_editorial_vectors_013.py --output "$ASK_CONTRACT_VECTORS" --contract-fixture
+          GAH_PRIVATE_EDITORIAL_VECTORS="$ASK_CONTRACT_VECTORS" node --experimental-loader ./scripts/private_passage_loader_012.mjs tests/test_ask_editorial_staging_20261117.mjs
+          node tests/test_home_064.mjs
 
       - name: Source-bound title enrichment and indexing preservation
         run: node tests/test_seo_title_enrichment_20261114.mjs
