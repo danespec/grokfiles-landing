@@ -1390,5 +1390,9 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/guides/epstein-chronological-source-guide": {
     "title": "Epstein Files Timeline: Chronological Source Guide",
     "description": "Follow dated legal, financial, travel and custody records across GAH’s investigations, separating document dates from publication dates."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-9": {
+    "title": "Epstein Files Data Set 9: DOJ PDF & EFTA Guide",
+    "description": "Find the official DOJ Epstein Data Set 9 file index, search EFTA Bates numbers, and follow source-linked GAH research and verification guidance."
   }
 };
