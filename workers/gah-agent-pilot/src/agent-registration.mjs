@@ -36,8 +36,8 @@ export class AgentRegistry{
  }
 }
 export function registrationService(issuer,{fetchStatus}){
- const resource=issuer+'/api/agent/v1/status',tokenEndpoint=issuer+'/oauth2/token';
- const challenge='Bearer resource_metadata="'+issuer+'/.well-known/oauth-protected-resource/api/agent/v1/status", scope="'+SCOPE+'"';
+ const resource=issuer,endpoint=issuer+'/api/agent/v1/status',tokenEndpoint=issuer+'/oauth2/token';
+ const challenge='Bearer resource_metadata="'+issuer+'/.well-known/oauth-protected-resource", scope="'+SCOPE+'"';
  const unauthorized=()=>json({error:'invalid_token'},401,{'WWW-Authenticate':challenge});
  const limited=()=>json({error:'rate_limited'},429,{'Retry-After':'60'});
  const error=(e='invalid_request')=>json({error:e},400);
@@ -70,7 +70,7 @@ export function registrationService(issuer,{fetchStatus}){
   return new Response(null,{status:200,headers:{'Cache-Control':'no-store'}});
  }
  async function status(request,env){
-  if(request.method!=='GET'||request.url!==resource)return json({error:'not_found'},404);
+  if(request.method!=='GET'||request.url!==endpoint)return json({error:'not_found'},404);
   const budget=await call(env,{op:'rate',rate:await rate(request,env,60,30,600)});if(budget.limited)return limited();
   const t=request.headers.get('authorization')||'';if(!/^Bearer gah_at_[0-9a-f]{64}$/.test(t))return unauthorized();
   const v=await call(env,{op:'validate',hash:await sha(t.slice(7))});if(!v.ok)return unauthorized();

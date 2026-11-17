@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {Miniflare} from 'miniflare';import {build} from 'esbuild';import {mkdtemp,rm} from 'node:fs/promises';import {join} from 'node:path';import {randomBytes,createHash} from 'node:crypto';import {generateKeyPair,exportJWK,importJWK,jwtVerify,SignJWT} from 'jose';
-const issuer='https://agent-pilot.example',resource=issuer+'/api/agent/v1/status',grant='urn:ietf:params:oauth:grant-type:jwt-bearer';
+const issuer='https://agent-pilot.example',resource=issuer,grant='urn:ietf:params:oauth:grant-type:jwt-bearer';
 test('real anonymous registration, signed assertion, scoped token, revocation, quotas, and interactive OAuth',async()=>{
  const dir=await mkdtemp(join(process.cwd(),'.build-'));let mf;
  try{

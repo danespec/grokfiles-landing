@@ -35,7 +35,7 @@
   ],
   "vars": {
     "AGENT_ISSUER": "https://grokarchivehub.com",
-    "AGENT_PILOT_ENABLED": "false",
+    "AGENT_PILOT_ENABLED": "true",
     "AGENT_APPROVED_REDIRECT_URI": "http://127.0.0.1:8765/callback"
   },
   "secrets": {
@@ -45,5 +45,47 @@
       "AGENT_CONSENT_BINDING_SECRET",
       "AGENT_PROVISION_TOKEN"
     ]
-  }
+  },
+  "routes": [
+    {
+      "pattern": "grokarchivehub.com/auth.md*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/.well-known/oauth-authorization-server*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/.well-known/oauth-protected-resource*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/.well-known/jwks.json*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/agent/identity*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/authorize*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/oauth2/token*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/oauth2/revoke*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/operator/agent-clients*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/api/agent/v1/status*",
+      "zone_name": "grokarchivehub.com"
+    }
+  ]
 }

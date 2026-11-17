@@ -24,13 +24,13 @@ async function consentBinding(secret,handle,subject){
  const enc=new TextEncoder(),key=await crypto.subtle.importKey('raw',enc.encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
  return Array.from(new Uint8Array(await crypto.subtle.sign('HMAC',key,enc.encode(JSON.stringify([handle,subject])))),b=>b.toString(16).padStart(2,'0')).join('');
 }
-const publicStatus=()=>fetch('https://grokarchivehub.com/api/archive-status',{redirect:'error',headers:{Accept:'application/json'},signal:AbortSignal.timeout(5000)});
-export function buildPilot(issuer,{verifySubject=accessSubject,fetchStatus=publicStatus,tokenPath="/oauth/token"}={}){
+const publicStatus=()=>fetch('https://grokarchivehub.com/api/archive-status',{redirect:'manual',headers:{Accept:'application/json'},signal:AbortSignal.timeout(5000)});
+export function buildPilot(issuer,{verifySubject=accessSubject,fetchStatus=publicStatus,tokenPath="/oauth/token",resourceId=issuer+"/api/agent/v1/status"}={}){
  if(!exactOrigin(issuer)&&!/^http:\/\/127\.0\.0\.1:\d+$/.test(issuer))throw Error('invalid issuer');
- const resource=issuer+'/api/agent/v1/status';
+ const resource=resourceId, endpoint=issuer+'/api/agent/v1/status';
  const as=new OAuthAuthorizationServer({issuer,resources:[resource],defaultResource:resource,authorizeEndpoint:'/authorize',tokenEndpoint:tokenPath,scopesSupported:[SCOPE],accessTokenTTL:300,refreshTokenTTL:0,clientIdMetadataDocumentEnabled:false,cookiePrefix:'__Host-gah-agent-pilot-'});
  const rs=new OAuthResourceServer({resourceMetadata:{resource,authorization_servers:[issuer],bearer_methods_supported:['header'],resource_name:'GAH public archive status pilot'},requiredScopes:[SCOPE],validateToken:env=>(r,t)=>as.validateToken(r,t,env),handler:{async fetch(req,env,ctx){
-  if(req.method!=='GET'||req.url!==resource)return json({error:'not_found'},404);
+  if(req.method!=='GET'||req.url!==endpoint)return json({error:'not_found'},404);
   if(!ctx.auth.scope.includes(SCOPE))return insufficientScope(ctx.auth,[SCOPE]);
   // Only a bounded, public status service; never forward caller headers, identity, tokens or cookies.
   const source=await fetchStatus();
