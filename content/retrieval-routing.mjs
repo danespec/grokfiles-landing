@@ -1,4 +1,6 @@
 import DEFAULT_MODEL from './retrieval-routing-model.mjs';
+import {ATLAS_GRAPH_REVIEW as CURRENT_ATLAS_REVIEW} from './atlas-graph-reviewed.mjs';
+import {ATLAS_GRAPH_REVIEW,ATLAS_GRAPH_MODEL_REBIND} from './atlas-graph-reviewed.mjs';
 export function createRetrievalRouter(M){
 const stop=new Set('the and for from with this that into about record records document documents source sources epstein jeffrey files file how what which who where when is are was were do does did a an of in on to me i use open take get give can has had by between before after'.split(' '));
 const aliases=new Map(Object.entries({payments:'payment',paid:'payment',pay:'payment',fees:'payment',fee:'payment',flights:'flight',travel:'flight',aviation:'flight',passengers:'flight',aircraft:'aircraft',logs:'log',timelines:'timeline',chronological:'timeline',chronology:'timeline',transactions:'transaction',projections:'projection',records:'record'}));
@@ -30,7 +32,8 @@ function attachReviewedGraph(review,publicationHash,registryHash){
  graphEpoch++;
  // Caller binds the existing reviewed projection to the bundled publication.
  for(const k of Object.keys(membership))delete membership[k];
- if(!review||review.published_registry_sha256!==registryHash||review.published_data_sha256!==publicationHash||publicationHash!==M.atlas_publication_sha256)return;
+ const exactRebind=review===ATLAS_GRAPH_REVIEW&&M.atlas_publication_sha256===ATLAS_GRAPH_MODEL_REBIND.model_publication_sha256&&publicationHash===ATLAS_GRAPH_MODEL_REBIND.published_data_sha256&&registryHash===ATLAS_GRAPH_MODEL_REBIND.published_registry_sha256;
+ if(!review||review.published_registry_sha256!==registryHash||review.published_data_sha256!==publicationHash||(!exactRebind&&publicationHash!==CURRENT_ATLAS_REVIEW.published_data_sha256||registryHash!==CURRENT_ATLAS_REVIEW.published_registry_sha256))return;
  for(const [id,path] of Object.entries(review.editorial_paths||{})){const url='https://grokarchivehub.com'+path;const stories=(review.stories||[]).filter(s=>s.document_ids.includes(id)).map(s=>s.id);(membership[url]??=[]).push({document_id:id,story_ids:stories,relation:'reviewed_citation_membership_only'});}
 }
 function routeSearch(q,limit=5,options={}){
