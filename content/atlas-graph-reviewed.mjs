@@ -1,9 +1,9 @@
 // Fix-pack metadata-only rebind: IDs, locators and relationships unchanged; no new factual certification.
 // Explicit review of public citation membership, not a factual or guilt finding.
-// Source: published Atlas v3.82 + existing identifier registry + live HTML canonical checks.
+// Source: published Atlas v3.117 (unchanged previously reviewed memberships) + existing identifier registry + live HTML canonical checks.
 // Any Atlas byte change invalidates the entire reviewed projection.
 export const ATLAS_GRAPH_REVIEW = Object.freeze({
-  published_data_sha256:"ab1a5c339cc025ea50b1b9d430f11ab699273aadc4a5777440ffb25002375760",
+  published_data_sha256:"17cac59178c8aea5250b4e29935bbd749b7d3d9235053bd5646aaaf09874c694",
   published_registry_sha256:"eb6c72e5a1660d0233a6a5a637e3b3d4517f829e2356c637ff464752accda638",
   stories:Object.freeze([
     Object.freeze({id:"3",document_ids:Object.freeze(["EFTA00022062","EFTA02731082"])}),
