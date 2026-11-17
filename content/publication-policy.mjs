@@ -529,18 +529,10 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Navigation directory or utility, not a substantive article"
   },
-  "https://grokarchivehub.com/archive/EFTA00035206": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
-  },
   "https://grokarchivehub.com/videos/peter-thiel-epstein-record-efta02656769": {
     "noindex": true,
     "reason": "Companion to the consolidated interview account and response",
     "canonical": "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035715": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
   },
   "https://grokarchivehub.com/videos/shawn-ryan-released-interview-response": {
     "noindex": true,
@@ -572,10 +564,6 @@ export const PUBLICATION_POLICY = {
     "reason": "Companion to the consolidated December 2014 investigation",
     "canonical": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014"
   },
-  "https://grokarchivehub.com/guides": {
-    "noindex": true,
-    "reason": "Navigation directory or utility, not a substantive article"
-  },
   "https://grokarchivehub.com/videos/barak-epstein-caribbean-invitation-2014": {
     "noindex": true,
     "reason": "Companion to the consolidated December 2014 investigation",
@@ -605,17 +593,9 @@ export const PUBLICATION_POLICY = {
     "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA01410768": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
-  },
   "https://grokarchivehub.com/internet-vs-receipts": {
     "noindex": true,
     "reason": "Navigation directory or utility, not a substantive article"
-  },
-  "https://grokarchivehub.com/archive/EFTA00646811": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
   },
   "https://grokarchivehub.com/videos/barak-ronen-cohen-ticket-7hlsoq": {
     "noindex": true,
@@ -626,10 +606,6 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Companion to the consolidated interview account and response",
     "canonical": "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035119": {
-    "noindex": true,
-    "reason": "Thin source locator; preserve original PDF and record boundaries"
   },
   "https://grokarchivehub.com/archive/EFTA00128841": {
     "noindex": true,
@@ -650,10 +626,6 @@ export const PUBLICATION_POLICY = {
     "canonical": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00080260": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/archive/EFTA00153569": {
     "noindex": true,
     "canonical": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
@@ -664,32 +636,12 @@ export const PUBLICATION_POLICY = {
     "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00035657": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035421": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035420": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/archive/EFTA02858491": {
     "noindex": true,
     "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00035035": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/internet-vs-receipts/doj-celebrity-names": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035442": {
     "noindex": true,
     "reason": "Below requested unique-prose threshold; retained as reader/source access"
   },
@@ -711,14 +663,6 @@ export const PUBLICATION_POLICY = {
     "canonical": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
     "reason": "Source record supporting the selected article; that article owns the published interpretation"
   },
-  "https://grokarchivehub.com/archive/EFTA00035053": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00035570": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
   "https://grokarchivehub.com/reels": {
     "noindex": true,
     "reason": "Navigation directory or utility, not a substantive article"
@@ -728,10 +672,6 @@ export const PUBLICATION_POLICY = {
     "reason": "Below requested unique-prose threshold; retained as reader/source access"
   },
   "https://grokarchivehub.com/reels/raskin-epstein-mlat-letter-october-2026": {
-    "noindex": true,
-    "reason": "Below requested unique-prose threshold; retained as reader/source access"
-  },
-  "https://grokarchivehub.com/archive/EFTA00033413": {
     "noindex": true,
     "reason": "Below requested unique-prose threshold; retained as reader/source access"
   },
@@ -776,10 +716,6 @@ export const PUBLICATION_POLICY = {
     "reason": "The existing detailed removal/restoration audit owns this chronology; retain source and explainer access"
   },
   "https://grokarchivehub.com/archive": {
-    "noindex": true,
-    "reason": "Navigation directory or utility, not a substantive article"
-  },
-  "https://grokarchivehub.com/archive/ids": {
     "noindex": true,
     "reason": "Navigation directory or utility, not a substantive article"
   },
@@ -876,11 +812,6 @@ export const PUBLICATION_POLICY = {
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
     "screenedUniqueProseWords": 371
   },
-  "https://grokarchivehub.com/methodology": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 388
-  },
   "https://grokarchivehub.com/investigations/late-july-watch-status-records": {
     "noindex": true,
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
@@ -905,11 +836,6 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
     "screenedUniqueProseWords": 408
-  },
-  "https://grokarchivehub.com/guides/epstein-black-book-redacted-doj": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 414
   },
   "https://grokarchivehub.com/methodology/how-not-to-overread-flight-logs": {
     "noindex": true,
@@ -946,16 +872,6 @@ export const PUBLICATION_POLICY = {
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
     "screenedUniqueProseWords": 461
   },
-  "https://grokarchivehub.com/guides/doj-epstein-data-sets": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 472
-  },
-  "https://grokarchivehub.com/guides/epstein-flight-logs-doj": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 475
-  },
   "https://grokarchivehub.com/reels/gratitude-america-10-million-efta00080260": {
     "noindex": true,
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
@@ -970,21 +886,6 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
     "screenedUniqueProseWords": 479
-  },
-  "https://grokarchivehub.com/guides/epstein-files-transparency-act": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 493
-  },
-  "https://grokarchivehub.com/guides/epstein-2007-draft-federal-indictment": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 500
-  },
-  "https://grokarchivehub.com/editorial-policy": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 515
   },
   "https://grokarchivehub.com/evidence-briefs/epstein-code-words-documentary-test": {
     "noindex": true,
@@ -1005,16 +906,6 @@ export const PUBLICATION_POLICY = {
     "noindex": true,
     "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
     "screenedUniqueProseWords": 569
-  },
-  "https://grokarchivehub.com/guides/how-to-search-epstein-files": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 570
-  },
-  "https://grokarchivehub.com/guides/epstein-client-list-explained": {
-    "noindex": true,
-    "reason": "Editorial hold in initial 120-page index: source remains accessible; prioritize greater original prose depth and designated canonical homes",
-    "screenedUniqueProseWords": 571
   },
   "https://grokarchivehub.com/barak/timeline": {
     "noindex": true,

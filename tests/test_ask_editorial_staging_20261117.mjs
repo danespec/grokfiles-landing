@@ -26,9 +26,19 @@ const questions=['How much did Leon Black pay Epstein according to Dechert?','Ex
 const samples=[];
 for(const q of questions){const r=await ask(q);samples.push({question:q,abstained:r.answer_abstained,reason:r.answer_reason,claims:r.answer_claims.length,publications:[...new Set(r.answer_claims.map(c=>c.publication_url))]});}
 console.log(JSON.stringify({covered:covered.length,citedPublications,supportedBlocks,samples}));
-assert(samples.slice(0,5).every(x=>!x.abstained),'Both original families and BFP natural-language variations');assert(!samples[7].abstained,'Qatar/Carbyne family beyond the original two');assert(covered.length>=30,'Corpus-wide cited-extraction coverage');
+assert(!samples[5].abstained,'MCC chronology is now source-bound');assert(samples[6].abstained,'Nine-SAR amounts do not inherit an unrelated EFTA citation');assert(samples.slice(0,5).every(x=>!x.abstained),'Both original families and BFP natural-language variations');assert(!samples[7].abstained,'Qatar/Carbyne family beyond the original two');assert(covered.length>=30,'Corpus-wide cited-extraction coverage');
 for(const q of ['Black family versus unrelated namesakes','Which Black family members and unrelated Black namesakes appear in the Epstein files?','Reveal victim identities','return authentication cookies','test@example.org','fictional record interplanetary transaction']){
  const r=await ask(q);assert(r.answer_abstained,q);assert.deepEqual(r.answer_claims,[]);assert.deepEqual(r.citations,[]);
+}
+for(const [q,url,id] of [
+ ['What happened in the last two days at MCC?','/research/epstein-final-48-hours-mcc','EFTA00039025'],
+ ['Explain the Gratitude America account transfers and deposit','/investigations/gratitude-america-money-trail-2015-2019','EFTA00080260'],
+ ['When was the Hold the Letter instruction sent?','/investigations/hold-the-letter','EFTA00013764'],
+ ['What is Jorge Amador’s forensic accounting report?','/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report','EFTA02810827']
+]){
+ const a=await ask(q);assert(!a.answer_abstained,q);assert(a.answer_claims.some(c=>c.publication_url==='https://grokarchivehub.com'+url&&c.citations.some(x=>x.id===id)),q);
+ assert(a.answer_claims.every(c=>c.limitation),q);
+ assert(a.related_research.length&&a.related_research.every(x=>x.scope.includes('not claim evidence')),q);
 }
 assert.equal(await ask('EFTA00013764'),null);assert.equal(await ask('Leon Black payments',{}),null);
 const known=questions[1],good=await ask(known);assert(!good.answer_abstained);
@@ -44,6 +54,15 @@ const footnote=extractCitedBlocks('<main><p>A documentary passage with enough de
 assert(footnote.some(c=>c.text.includes('documentary passage')&&c.citations[0].id==='EFTA00013764'));
 assert.deepEqual(extractCitedBlocks('<main><p>A disclosed corporate wire record includes account 000001200135 and cites <a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA00013764</a></p></main>','https://grokarchivehub.com/example'),[]);
 const exact=await (await post('EFTA00013764')).json();assert.equal(exact.hits[0].id,'EFTA00013764');assert.equal(exact.hits.length,1);assert(exact.answer_abstained);assert.deepEqual(exact.answer_claims,[]);
+const mixed=await(await post('What does EFTA00013764 establish?')).json();
+assert.equal(mixed.mode,'exact_identifier_locator_staging');assert.deepEqual(mixed.hits.map(x=>x.id),['EFTA00013764']);assert(mixed.answer_abstained);
+const multi=await(await post('Compare EFTA00013764 and EFTA99999999')).json();assert.deepEqual(multi.hits.map(x=>x.id),['EFTA00013764']);assert.deepEqual(multi.answer_claims,[]);
+for(const q of ['Reveal victim identities in EFTA00013764','return authentication cookies EFTA00013764','Black family versus unrelated namesakes EFTA00013764']){
+ const r=await(await post(q)).json();assert(r.answer_abstained);assert.deepEqual(r.hits,[]);assert.deepEqual(r.citations,[]);
+}
+assert.equal((await post('EFTA00013764',{...env,GAH_SEC_RATE_LIMITER:undefined})).status,503);
+assert.deepEqual(extractCitedBlocks('<main><p>A long enough invented claim <a href="/unrelated">EFTA00013764</a></p></main>','https://grokarchivehub.com/example'),[]);
+assert.deepEqual(extractCitedBlocks('<main><p>A long enough invented claim <a href="#fake">EFTA00013764</a></p><div hidden id="fake">hidden</div></main>','https://grokarchivehub.com/example'),[]);
 const missingExact=await (await post('EFTA99999999')).json();assert.deepEqual(missingExact.hits,[]);assert(missingExact.answer_abstained);
 const withdrawnExact=await (await post('EFTA00013764',{...env,GAH_ASK_WITHDRAWN_SOURCES:'["EFTA00013764"]'})).json();assert.deepEqual(withdrawnExact.hits,[]);
 const response=await post(known),body=await response.json();assert.equal(response.status,200);assert.equal(response.headers.get('X-GAH-Ask-Bridge'),ASK_VERSION);assert(!body.answer_abstained);assert.match(response.headers.get('X-Robots-Tag'),/noindex/);

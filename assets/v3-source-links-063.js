@@ -514,6 +514,8 @@
                   block.appendChild(link); block.appendChild(document.createTextNode(" "));
                 }
               });
+              var publication = document.createElement("a");
+              if (applySafeLink(publication, claim.publication_url, "Read the supporting publication")) { block.appendChild(document.createElement("br")); block.appendChild(publication); }
               var detail = document.createElement("details"), summary = document.createElement("summary");
               summary.textContent = "Fingerprint and evidence limits"; detail.appendChild(summary);
               var provenance = document.createElement("p");
@@ -527,6 +529,12 @@
             if (data.answer_abstained) {
               var reason = document.createElement("p"); reason.textContent = answer + " Reason: " + (data.answer_reason || "insufficient_evidence"); responseNode.appendChild(reason);
             }
+          }
+          if (citedPreview && Array.isArray(data.related_research) && data.related_research.length) {
+            var research = document.createElement("section"), heading = document.createElement("h3");
+            heading.textContent = "Related research — navigation, not claim evidence"; research.appendChild(heading);
+            data.related_research.forEach(function(row){var p = document.createElement("p"), a = document.createElement("a"); if(applySafeLink(a,row.url,row.title)){p.appendChild(a);research.appendChild(p);}});
+            responseNode.appendChild(research);
           }
           if (answer && !citedPreview) {
             var p = document.createElement("p");

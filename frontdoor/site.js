@@ -626,7 +626,7 @@
     try {
       var response = await fetch("/api/search", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: window.GAHAnalytics?.searchHeaders?.() || { "Content-Type": "application/json" },
         body: JSON.stringify({ q: query, query: query, tag: "All", limit: 10, fast: true, no_ai: true })
       });
       var raw = await response.text();

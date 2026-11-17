@@ -1,4 +1,5 @@
-import {askEditorialExtract,askSourceWithdrawn,ASK_VERSION} from "./content/ask-editorial-extraction.mjs";
+import {askEditorialExtract,askSourceWithdrawn,askEditorialRestricted,ASK_VERSION} from "./content/ask-editorial-extraction.mjs";
+import { webBotDirectory } from "./workers/lib/web-bot-auth.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
 import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
@@ -903,8 +904,11 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
   };
 }
 
+const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/timelines/epstein-npa-decision-timeline", "/timelines/epstein-custody-records-timeline", "/timelines/epstein-financial-records-timeline", "/timelines/epstein-disclosure-timeline", "/entities/epstein-public-institution-records", "/entities/epstein-financial-organization-records", "/topics/epstein-non-prosecution-agreement", "/topics/epstein-jail-records", "/topics/epstein-bank-records", "/topics/leon-black-epstein-financial-records", "/topics/epstein-investment-records", "/topics/epstein-court-records", "/topics/ehud-barak-epstein-business-records", "/guides/epstein-files-data-set-1", "/guides/epstein-files-data-set-2", "/guides/epstein-files-data-set-3", "/guides/epstein-files-data-set-4", "/guides/epstein-files-data-set-5", "/guides/epstein-files-data-set-6", "/guides/epstein-files-data-set-7", "/guides/epstein-files-data-set-8", "/guides/epstein-files-data-set-10", "/guides/epstein-files-data-set-11", "/guides/epstein-files-data-set-12", "/guides/epstein-files-data-set-9", "/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
+
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
+  if (GAH_SEARCH_RECOVERY_ROUTES.has(path)) return routePolicy(AD_ROUTE_STATUS.exclude,"reviewed-search-discovery-20261117","index,follow");
   if(publicationRule("https://grokarchivehub.com"+path)?.noindex)return routePolicy(AD_ROUTE_STATUS.exclude,"consolidated-or-research-support-page","noindex,follow");
   if(['/investigations/mcc-final-48-hours-source-chain','/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine'].includes(path)) return routePolicy(AD_ROUTE_STATUS.exclude, "mcc-companion-analysis", "noindex,follow");
   if (path === "/archive/ids") return routePolicy(AD_ROUTE_STATUS.exclude, "published-identifier-register", "index,follow");
@@ -1265,6 +1269,31 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/guides/epstein-client-list-explained", "/guides/epstein-client-list-explained.html"],
   ["/guides/epstein-files-transparency-act", "/guides/epstein-files-transparency-act.html"],
   ["/guides/how-to-search-epstein-files", "/guides/how-to-search-epstein-files.html"],
+  ["/guides/epstein-files-data-set-1", "/guides/epstein-files-data-set-1.html"],
+  ["/guides/epstein-files-data-set-2", "/guides/epstein-files-data-set-2.html"],
+  ["/guides/epstein-files-data-set-3", "/guides/epstein-files-data-set-3.html"],
+  ["/guides/epstein-files-data-set-4", "/guides/epstein-files-data-set-4.html"],
+  ["/guides/epstein-files-data-set-5", "/guides/epstein-files-data-set-5.html"],
+  ["/guides/epstein-files-data-set-6", "/guides/epstein-files-data-set-6.html"],
+  ["/guides/epstein-files-data-set-7", "/guides/epstein-files-data-set-7.html"],
+  ["/guides/epstein-files-data-set-8", "/guides/epstein-files-data-set-8.html"],
+  ["/guides/epstein-files-data-set-10", "/guides/epstein-files-data-set-10.html"],
+  ["/guides/epstein-files-data-set-11", "/guides/epstein-files-data-set-11.html"],
+  ["/guides/epstein-files-data-set-12", "/guides/epstein-files-data-set-12.html"],
+  ["/topics/epstein-non-prosecution-agreement", "/topics/epstein-non-prosecution-agreement.html"],
+  ["/topics/epstein-jail-records", "/topics/epstein-jail-records.html"],
+  ["/topics/epstein-bank-records", "/topics/epstein-bank-records.html"],
+  ["/topics/leon-black-epstein-financial-records", "/topics/leon-black-epstein-financial-records.html"],
+  ["/topics/epstein-investment-records", "/topics/epstein-investment-records.html"],
+  ["/topics/epstein-court-records", "/topics/epstein-court-records.html"],
+  ["/topics/ehud-barak-epstein-business-records", "/topics/ehud-barak-epstein-business-records.html"],
+  ["/timelines/epstein-npa-decision-timeline", "/timelines/epstein-npa-decision-timeline.html"],
+  ["/timelines/epstein-custody-records-timeline", "/timelines/epstein-custody-records-timeline.html"],
+  ["/timelines/epstein-financial-records-timeline", "/timelines/epstein-financial-records-timeline.html"],
+  ["/timelines/epstein-disclosure-timeline", "/timelines/epstein-disclosure-timeline.html"],
+  ["/entities/epstein-public-institution-records", "/entities/epstein-public-institution-records.html"],
+  ["/entities/epstein-financial-organization-records", "/entities/epstein-financial-organization-records.html"],
+  ["/guides/epstein-files-data-set-9", "/guides/epstein-files-data-set-9.html"],
   ["/guides/doj-epstein-data-sets", "/guides/doj-epstein-data-sets.html"],
   ["/entities", "/entities.html"],
   ["/archive-scope", "/archive-scope.html"],
@@ -1449,7 +1478,32 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/epstein-client-list-explained", "2026-10-11"],
   ["https://grokarchivehub.com/guides/epstein-files-transparency-act", "2026-10-11"],
   ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-20"],
-  ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-10-20"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-1", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-2", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-3", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-4", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-5", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-6", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-7", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-8", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-10", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-11", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-12", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/epstein-non-prosecution-agreement", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/epstein-jail-records", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/epstein-bank-records", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/leon-black-epstein-financial-records", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/epstein-investment-records", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/epstein-court-records", "2026-11-17"],
+  ["https://grokarchivehub.com/topics/ehud-barak-epstein-business-records", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-npa-decision-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-custody-records-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-financial-records-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-disclosure-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/entities/epstein-public-institution-records", "2026-11-17"],
+  ["https://grokarchivehub.com/entities/epstein-financial-organization-records", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-9", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-11-17"],
   ["https://grokarchivehub.com/photos", "2026-10-23"],
   ["https://grokarchivehub.com/archive", "2026-10-23"],
   ["https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit", "2026-10-16"],
@@ -1485,7 +1539,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale", "2026-09-30"],
-  ["https://grokarchivehub.com/", "2026-10-23"],
+  ["https://grokarchivehub.com/", "2026-11-17"],
   ["https://grokarchivehub.com/investigations/hold-the-letter", "2026-10-06"],
   ["https://grokarchivehub.com/research/epstein-final-48-hours-mcc", "2026-10-02"],
   ["https://grokarchivehub.com/research/evidence/birthday-book", "2026-10-02"],
@@ -1602,8 +1656,10 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA01410768", "2026-10-21"],
 ]);
 
+const GAH_DOSSIER_RECOVERY_IDS = new Set(["EFTA00033413", "EFTA00035035", "EFTA00035053", "EFTA00035206", "EFTA00035420", "EFTA00035421", "EFTA00035442", "EFTA00035570", "EFTA00035657", "EFTA00035715", "EFTA00035119", "EFTA00080260", "EFTA00646811", "EFTA01410768"]);
+
 function serveCuratedArchiveSitemap(request) {
-  const entries = [...GAH_IDENTIFIER_DOSSIERS.values()].filter(e => e.indexable && !publicationRule("https://grokarchivehub.com/archive/"+e.id)?.noindex).map(e => ["/archive/" + e.id, e.dateModified]).map(([path, updated]) =>
+  const entries = [...GAH_IDENTIFIER_DOSSIERS.values()].filter(e => e.indexable && !publicationRule("https://grokarchivehub.com/archive/"+e.id)?.noindex).map(e => ["/archive/" + e.id, GAH_DOSSIER_RECOVERY_IDS.has(e.id) ? "2026-11-17" : e.dateModified]).map(([path, updated]) =>
     "  <url><loc>https://grokarchivehub.com" + path
     + "</loc><lastmod>" + updated + "</lastmod></url>"
   ).join("\n");
@@ -1632,8 +1688,36 @@ const AGENT_READY_ROBOTS_TXT = [
   "Disallow: /api/newsletter/",
   "Disallow: /pdf-viewer",
   "Disallow: /pdf-viewer.html",
+  "Disallow: /admin/",
+  "Disallow: /members/",
+  "Disallow: /auth/",
+  "Disallow: /operator/",
+  "Disallow: /agent/identity",
+  "Disallow: /oauth2/",
+  "Disallow: /authorize",
   "Sitemap: https://grokarchivehub.com/sitemap-index.xml",
   "Agentmap: https://grokarchivehub.com/.well-known/ai-catalog.json",
+  "",
+  "User-agent: GPTBot",
+  "User-agent: ClaudeBot",
+  "User-agent: Google-Extended",
+  "User-agent: Applebot-Extended",
+  "User-agent: CCBot",
+  "User-agent: anthropic-ai",
+  "User-agent: Claude-Web",
+  "User-agent: Amazonbot",
+  "User-agent: Bytespider",
+  "User-agent: Diffbot",
+  "User-agent: omgili",
+  "User-agent: cohere-ai",
+  "User-agent: MistralAI-Training",
+  "User-agent: meta-externalagent",
+  "User-agent: GoogleOther",
+  "User-agent: Google-CloudVertexBot",
+  "User-agent: Baiduspider",
+  "User-agent: PetalBot",
+  "Disallow: /",
+  "",
   "# GAH-AGENT-READINESS-L1-001",
   "# search=yes: indexing and link/snippet discovery allowed",
   "# ai-input=yes: retrieval/grounding for AI answers allowed",
@@ -3536,6 +3620,35 @@ const GAH_LLM_DISCOVERY = `# Grok Archive Hub
 - [Atlas release status](https://grokarchivehub.com/api/v1/atlas/status): published version and source-data fingerprint.
 - [Investigations](https://grokarchivehub.com/investigations): source-linked dossiers.
 - [Search](https://grokarchivehub.com/search): public archive search.
+- [Data Set 8 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-8): Prosecutorial correspondence, aviation and custody records.
+- [Data Set 1 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-1): Photograph records and source versions.
+- [Data Set 2 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-2): Exact filename lookup in a numbered run.
+- [Data Set 3 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-3): Nonconsecutive file identifiers.
+- [Data Set 4 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-4): Scheduling records and evidence boundaries.
+- [Data Set 5 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-5): A compact sequential file index.
+- [Data Set 6 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-6): Single-page index navigation.
+- [Data Set 7 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-7): File starts and interior Bates pages.
+- [Data Set 10 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-10): Draft filings and financial correspondence.
+- [Data Set 11 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-11): Proposed meetings and travel arrangements.
+- [Data Set 12 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-12): Draft agreements, payment records and proffers.
+- [Epstein Non-Prosecution Agreement: 2007–2008](https://grokarchivehub.com/topics/epstein-non-prosecution-agreement): What did the 2007 Epstein non-prosecution agreement resolve? Compare the draft indictment, victim notification, Hold the Letter email and DOJ review.
+- [Epstein Jail Records: Logs, Video and Evidence](https://grokarchivehub.com/topics/epstein-jail-records): Read Epstein MCC jail records by document type: custody logs, observation status, camera file lists, preservation requests and official findings.
+- [Epstein Bank Records: SARs, Wires and Accounts](https://grokarchivehub.com/topics/epstein-bank-records): Compare Epstein bank records from JPMorgan and Deutsche Bank, suspicious activity reports, wire totals, forensic exhibits and account-level limits.
+- [Leon Black and Epstein: Financial Records](https://grokarchivehub.com/topics/leon-black-epstein-financial-records): Compare Leon Black’s Epstein payment totals, the Dechert review, Senate Finance inquiry, settlement records and separate investment transactions.
+- [Epstein Investment Records: Trusts and Ventures](https://grokarchivehub.com/topics/epstein-investment-records): Research Epstein-linked investment records, Southern Trust, investment vehicles, term sheets, payment evidence and ownership verification.
+- [Epstein Court Records: Cases, Filings and Orders](https://grokarchivehub.com/topics/epstein-court-records): Find Epstein court records by case and document type. Distinguish criminal charges, civil allegations, privilege orders, FOIA and disclosure records.
+- [Ehud Barak and Epstein: Business Records](https://grokarchivehub.com/topics/ehud-barak-epstein-business-records): Explore source-linked Barak and Epstein business correspondence, proposed ventures, scheduling records, investment evidence and verification limits.
+- [Epstein NPA Timeline: July–December 2007](https://grokarchivehub.com/timelines/epstein-npa-decision-timeline): Dated source trail for the 2007 federal decision, signed non-prosecution agreement and victim-notification hold, with unresolved decision gaps.
+- [Epstein Custody Records: 2019 Timeline](https://grokarchivehub.com/timelines/epstein-custody-records-timeline): Compare dated MCC operations logs, custody records, camera-file lists, evidence preservation and later OIG findings, without filling gaps.
+- [Epstein Financial Records: Dated Evidence Trail](https://grokarchivehub.com/timelines/epstein-financial-records-timeline): Compare dated bank reporting, charity-account records, commissioned reviews, Senate findings and forensic-accounting source limits.
+- [Epstein Files Disclosure Timeline: 2025–2026](https://grokarchivehub.com/timelines/epstein-disclosure-timeline): Source-linked chronology of 2025 FBI review, the Transparency Act, DOJ release announcement and selected 2026 court filings through November 2.
+- [Epstein Records: Public Institutions and Roles](https://grokarchivehub.com/entities/epstein-public-institution-records): Find agencies, courts, regulators and oversight bodies by their documented roles in Epstein investigations, disclosure and financial records.
+- [Epstein Financial Entities: Research Directory](https://grokarchivehub.com/entities/epstein-financial-organization-records): Find published research on banks, trusts, charity accounts, investment vehicles and commissioned reviews with entity-resolution and transaction limits.
+- [Data Set 9 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-9): official index navigation, parent-file identities and published source examples.
+- [DOJ Data Sets 1–12](https://grokarchivehub.com/guides/doj-epstein-data-sets): official numbered releases and Data Set 9 navigation.
+- [How to search Epstein files](https://grokarchivehub.com/guides/how-to-search-epstein-files): EFTA lookup, OCR and source verification.
+- [EFTA identifier register](https://grokarchivehub.com/archive/ids): curated identifiers with source links and evidentiary limitations.
+- [Archive scope](https://grokarchivehub.com/archive-scope): distinguishes the index from published proof.
 - [Ask GAH guide](https://grokarchivehub.com/videos/ask-gah-search-epstein-files): interactive website assistant instructions; automated clients should use the documented read-only API or MCP, not private assistant routes.
 - [St. Thomas investigation](https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014): published investigation and evidence limitations.
 - [Qatar and Carbyne investigation](https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne): published investigation and cited records.
@@ -6705,7 +6818,7 @@ function serveApexTopicsGuide(request, env) {
   </section>
 
   <section>
-    <h2>Current Public Topic Lanes</h2><!-- GAH-MEDIA-TOPICS --><section><h2>Watch and verify: GAH media source notes</h2><p>Reviewed source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p><ul><li><a href="/videos/barak-st-thomas-december-2014">Barak St. Thomas 2014: the trip, the ticket and two readings</a></li><li><a href="/videos/barak-ronen-cohen-ticket-7hlsoq">Ronen Cohen and PNR 7HLSOQ: what the ticket identifies</a></li><li><a href="/videos/barak-hotel-name-efta00356456">EFTA00356456: the Baraks’ St. Thomas hotel-name exchange</a></li><li><a href="/videos/barak-epstein-caribbean-invitation-2014">Barak and Epstein’s December 2014 Caribbean invitation</a></li><li><a href="/reels/barak-st-thomas-ronen-cohen">Barak St. Thomas 2014: the reel, the receipts and the unresolved ticket</a></li><li><a href="/reels/leon-black-dechert-158-million-efta02730996">Leon Black’s $158 million: EFTA02730996 and the Senate questions</a></li><li><a href="/reels/gratitude-america-10-million-efta00080260">Gratitude America’s $10 million: EFTA00080260 and the account trail</a></li><li><a href="/reels/bill-gates-nikolic-points-efta02730265">Bill Gates, Boris Nikolic and EFTA02730265: the Points draft</a></li><li><a href="/reels/elon-musk-holiday-email-efta02338119">Elon Musk and EFTA02338119: correspondence is not a completed visit</a></li><li><a href="/reels/mark-zuckerberg-mentions-efta00034221">Mark Zuckerberg: EFTA00034221, EFTA02262778 and the limits of mentions</a></li><li><a href="/reels/larry-summers-harvard-planning-efta02239873">Larry Summers: EFTA02239873 and the proposed Harvard visit</a></li><li><a href="/reels/reid-hoffman-island-logistics-efta02300238">Reid Hoffman and EFTA02300238: the island-to-Bedford flight arrangements</a></li><li><a href="/reels/steve-bannon-barak-calendar-efta02240144">Steve Bannon, Ehud Barak and EFTA02240144: the calendar is a plan</a></li><li><a href="/reels/stephen-hawking-email-request-efta00695049">Stephen Hawking and EFTA00695049: the contact-details request</a></li><li><a href="/reels/jeff-bezos-email-list-efta00759004">Jeff Bezos and EFTA00759004: what a shared email list establishes</a></li><li><a href="/reels/ghislaine-maxwell-travel-coordination-efta02332402">Ghislaine Maxwell: EFTA02332402 and the household-record trail</a></li><li><a href="/reels/jean-luc-brunel-mc2-account-efta01972778">Jean-Luc Brunel: EFTA01972778, MC2 and the redacted payee</a></li><li><a href="/reels/alan-dershowitz-schedule-efta00352969">Alan Dershowitz: EFTA00352969, EFTA00338082 and planned appointments</a></li><li><a href="/reels/bill-richardson-counsel-memo-efta00014374">Bill Richardson: EFTA00014374 and the limits of the counsel-call memo</a></li><li><a href="/reels/les-wexner-attorney-proffer-efta02731082">Les Wexner and EFTA02731082: the attorney proffer and the missing instrument</a></li><li><a href="/reels/clinton-cgi-publicis-transfer-source-audit">Clinton CGI and Publicis: the proposed million-dollar transfer</a></li><li><a href="/reels/andrew-doj-judicial-review-efta00088020">Andrew and EFTA00088020: anticipated judicial review in 2020</a></li><li><a href="/reels/indyke-kahn-civil-complaint-flight-records">Indyke and Kahn: the complaint, FAA role and St. Thomas travel email</a></li><li><a href="/reels/raskin-epstein-mlat-letter-october-2026">Raskin’s October 21 letter: Epstein MLAT records and the November 4 deadline</a></li><li><a href="/reels/shawn-ryan-peter-thiel-account-response">Shawn Ryan, Peter Thiel and Leah: the allegation, response and release record</a></li><li><a href="/videos/shawn-ryan-leah-interview-response">Shawn Ryan and Leah: the released interview and two accounts</a></li><li><a href="/videos/peter-thiel-epstein-record-efta02656769">Peter Thiel and EFTA02656769: the record and its boundary</a></li><li><a href="/videos/shawn-ryan-leah-naming-allegation">Leah’s reported naming restriction: the allegation and Ryan’s response</a></li><li><a href="/videos/shawn-ryan-released-interview-response">Shawn Ryan’s release statement: what the publisher record confirms</a></li><li><a href="/videos/ask-gah-search-epstein-files">Ask GAH: search the Epstein files and check the receipts</a></li><li><a href="/videos/jpmorgan-nine-sars-reporting-timeline">JPMorgan’s nine SARs: the $1.28 billion reporting question</a></li><li><a href="/videos/hold-the-letter-victim-notification">“Hold the letter”: the email, the OPR report and the unresolved decision</a></li><li><a href="/reels/efta00035613-july-2019-donation-proposal">EFTA00035613: the five-million-dollar proposal in a July 2019 letter</a></li><li><a href="/reels/efta00035773-oig-voluntary-interview-waiver">EFTA00035773: the OIG interview waiver and its date discrepancy</a></li><li><a href="/reels/efta00035828-epstein-cell-diagram">EFTA00035828: the diagram labeled Epstein’s cell</a></li></ul></section><!-- /GAH-MEDIA-TOPICS -->
+    <section id="gah-topic-research"><h2>Research by subject</h2><p>Source-linked guides by documentary question, not a list of alleged offenders.</p><ul><li><a href="/topics/epstein-non-prosecution-agreement">Epstein Non-Prosecution Agreement: 2007–2008</a> — Follow the decision record from the proposed federal charges through the non-prosecution agreement and the subsequent review of victim notification.</li><li><a href="/topics/epstein-jail-records">Epstein Jail Records: Logs, Video and Evidence</a> — Use the document classes separately to evaluate the record of Epstein’s detention, death investigation and evidence preservation.</li><li><a href="/topics/epstein-bank-records">Epstein Bank Records: SARs, Wires and Accounts</a> — Find financial records by evidence class and distinguish transaction totals, reporting obligations, regulatory findings and allegations.</li><li><a href="/topics/leon-black-epstein-financial-records">Leon Black and Epstein: Financial Records</a> — Read the payment figures and separate financial evidence without conflating a reported total, an allegation and a judicial finding.</li><li><a href="/topics/epstein-investment-records">Epstein Investment Records: Trusts and Ventures</a> — Trace the documented stages of a transaction instead of treating a pitch, investment vehicle, payment or exit as equivalent.</li><li><a href="/topics/epstein-court-records">Epstein Court Records: Cases, Filings and Orders</a> — Locate the procedural context of a filing before treating any statement inside it as an established fact.</li><li><a href="/topics/ehud-barak-epstein-business-records">Ehud Barak and Epstein: Business Records</a> — A focused business-document reading guide; travel and contact records are not interchangeable with investment, contract or payment evidence.</li></ul></section><h2>Current Public Topic Lanes</h2><!-- GAH-MEDIA-TOPICS --><section><h2>Watch and verify: GAH media source notes</h2><p>Reviewed source trails, with the original social publications and their limits.</p><p><a href="/videos">Video watch pages</a> · <a href="/reels">Reel source notes</a></p><ul><li><a href="/videos/barak-st-thomas-december-2014">Barak St. Thomas 2014: the trip, the ticket and two readings</a></li><li><a href="/videos/barak-ronen-cohen-ticket-7hlsoq">Ronen Cohen and PNR 7HLSOQ: what the ticket identifies</a></li><li><a href="/videos/barak-hotel-name-efta00356456">EFTA00356456: the Baraks’ St. Thomas hotel-name exchange</a></li><li><a href="/videos/barak-epstein-caribbean-invitation-2014">Barak and Epstein’s December 2014 Caribbean invitation</a></li><li><a href="/reels/barak-st-thomas-ronen-cohen">Barak St. Thomas 2014: the reel, the receipts and the unresolved ticket</a></li><li><a href="/reels/leon-black-dechert-158-million-efta02730996">Leon Black’s $158 million: EFTA02730996 and the Senate questions</a></li><li><a href="/reels/gratitude-america-10-million-efta00080260">Gratitude America’s $10 million: EFTA00080260 and the account trail</a></li><li><a href="/reels/bill-gates-nikolic-points-efta02730265">Bill Gates, Boris Nikolic and EFTA02730265: the Points draft</a></li><li><a href="/reels/elon-musk-holiday-email-efta02338119">Elon Musk and EFTA02338119: correspondence is not a completed visit</a></li><li><a href="/reels/mark-zuckerberg-mentions-efta00034221">Mark Zuckerberg: EFTA00034221, EFTA02262778 and the limits of mentions</a></li><li><a href="/reels/larry-summers-harvard-planning-efta02239873">Larry Summers: EFTA02239873 and the proposed Harvard visit</a></li><li><a href="/reels/reid-hoffman-island-logistics-efta02300238">Reid Hoffman and EFTA02300238: the island-to-Bedford flight arrangements</a></li><li><a href="/reels/steve-bannon-barak-calendar-efta02240144">Steve Bannon, Ehud Barak and EFTA02240144: the calendar is a plan</a></li><li><a href="/reels/stephen-hawking-email-request-efta00695049">Stephen Hawking and EFTA00695049: the contact-details request</a></li><li><a href="/reels/jeff-bezos-email-list-efta00759004">Jeff Bezos and EFTA00759004: what a shared email list establishes</a></li><li><a href="/reels/ghislaine-maxwell-travel-coordination-efta02332402">Ghislaine Maxwell: EFTA02332402 and the household-record trail</a></li><li><a href="/reels/jean-luc-brunel-mc2-account-efta01972778">Jean-Luc Brunel: EFTA01972778, MC2 and the redacted payee</a></li><li><a href="/reels/alan-dershowitz-schedule-efta00352969">Alan Dershowitz: EFTA00352969, EFTA00338082 and planned appointments</a></li><li><a href="/reels/bill-richardson-counsel-memo-efta00014374">Bill Richardson: EFTA00014374 and the limits of the counsel-call memo</a></li><li><a href="/reels/les-wexner-attorney-proffer-efta02731082">Les Wexner and EFTA02731082: the attorney proffer and the missing instrument</a></li><li><a href="/reels/clinton-cgi-publicis-transfer-source-audit">Clinton CGI and Publicis: the proposed million-dollar transfer</a></li><li><a href="/reels/andrew-doj-judicial-review-efta00088020">Andrew and EFTA00088020: anticipated judicial review in 2020</a></li><li><a href="/reels/indyke-kahn-civil-complaint-flight-records">Indyke and Kahn: the complaint, FAA role and St. Thomas travel email</a></li><li><a href="/reels/raskin-epstein-mlat-letter-october-2026">Raskin’s October 21 letter: Epstein MLAT records and the November 4 deadline</a></li><li><a href="/reels/shawn-ryan-peter-thiel-account-response">Shawn Ryan, Peter Thiel and Leah: the allegation, response and release record</a></li><li><a href="/videos/shawn-ryan-leah-interview-response">Shawn Ryan and Leah: the released interview and two accounts</a></li><li><a href="/videos/peter-thiel-epstein-record-efta02656769">Peter Thiel and EFTA02656769: the record and its boundary</a></li><li><a href="/videos/shawn-ryan-leah-naming-allegation">Leah’s reported naming restriction: the allegation and Ryan’s response</a></li><li><a href="/videos/shawn-ryan-released-interview-response">Shawn Ryan’s release statement: what the publisher record confirms</a></li><li><a href="/videos/ask-gah-search-epstein-files">Ask GAH: search the Epstein files and check the receipts</a></li><li><a href="/videos/jpmorgan-nine-sars-reporting-timeline">JPMorgan’s nine SARs: the $1.28 billion reporting question</a></li><li><a href="/videos/hold-the-letter-victim-notification">“Hold the letter”: the email, the OPR report and the unresolved decision</a></li><li><a href="/reels/efta00035613-july-2019-donation-proposal">EFTA00035613: the five-million-dollar proposal in a July 2019 letter</a></li><li><a href="/reels/efta00035773-oig-voluntary-interview-waiver">EFTA00035773: the OIG interview waiver and its date discrepancy</a></li><li><a href="/reels/efta00035828-epstein-cell-diagram">EFTA00035828: the diagram labeled Epstein’s cell</a></li></ul></section><!-- /GAH-MEDIA-TOPICS -->
     <p>These are the main subject guides on GAH right now. Each one points to original reporting or a source-controlled evidence hub, not a generated name page.</p>
 
     <article>
@@ -6860,6 +6973,8 @@ export function gahResearchIndexablePublication(loc) {
   try {
     const url = new URL(loc);
     if (url.origin !== "https://grokarchivehub.com" || url.search || url.hash) return false;
+    // SEO promotion is not admission to the separately fingerprinted research corpus.
+    if (GAH_SEARCH_RECOVERY_ROUTES.has(cleanPath(url.pathname)) || GAH_DOSSIER_RECOVERY_IDS.has(cleanPath(url.pathname).replace(/^\/archive\//,""))) return false;
     const rule = publicationRule(loc);
     if (rule?.canonical && rule.canonical !== loc) return false;
     return sitemapEntryIsIndexable([loc, ""]);
@@ -6973,7 +7088,7 @@ async function serveSitemapWithPublishedDispatches(request, env) {
   const headers = new Headers();
   headers.set("Content-Type", "application/xml; charset=utf-8");
   headers.set("Cache-Control", "no-store");
-  headers.set("X-GAH-Sitemap-AdSense-Cleanup", "strong-public-pages-only");
+  headers.set("X-GAH-Sitemap-AdSense-Cleanup", "reviewed-search-landing-pages-restored");
   headers.set("X-GAH-Sitemap-MCC-Timeline", "published");
   headers.set("X-GAH-Sitemap-Jail-Logs", "published");
   headers.set("X-GAH-Sitemap-EFTA-Guide", "published");
@@ -7294,7 +7409,7 @@ function consentBootTag(env = {}, request = null) {
 }
 
 function consentScriptTag(env = {}, request = null) {
-  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
+  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-003"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
@@ -7384,6 +7499,7 @@ function globalFooterHtml() {
         </div>
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="/investigations">Investigations</a>
+        <a href="/atlas/">Story Atlas</a>
           <a href="/evidence-briefs">Evidence Briefs</a>
           <a href="/document-autopsies">Document Autopsies</a>
           <a href="/timeline-reconstructions">Timelines</a>
@@ -7763,6 +7879,7 @@ function v3DocumentHeaderHtml() {
       </a>
       <nav class="nav-main" aria-label="Primary">
         <a href="/investigations">Investigations</a>
+        <a href="/atlas/">Story Atlas</a>
         <a href="/latest">Latest</a>
         <a href="/topics">Topics</a>
         <a href="/evidence-briefs">Evidence</a>
@@ -7783,6 +7900,7 @@ function v3DocumentHeaderHtml() {
     </div>
     <nav class="nav-mobile" id="gah-v3-mobile-nav" data-mobile>
       <a href="/investigations">Investigations</a>
+        <a href="/atlas/">Story Atlas</a>
       <a href="/latest">Latest</a>
       <a href="/topics">Topics</a>
       <a href="/dispatches">Dispatches</a>
@@ -8147,138 +8265,64 @@ function jsonResponse(payload, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(payload), { status, headers });
 }
 
-const GA4_ALLOWED_EVENTS = Object.freeze({
-  investigation_view: ["route", "content_id", "content_type", "event_id"],
-  evidence_open: ["route", "document_id_hash", "source_class", "event_id"],
-  pdf_render_success: ["route", "document_id_hash", "source_class", "event_id"],
-  pdf_render_failure: ["route", "document_id_hash", "source_class", "failure_class", "event_id"],
-  archive_search: ["route", "query_class", "result_count", "event_id"],
-  archive_search_zero_results: ["route", "query_class", "event_id"],
-  external_source_click: ["route", "destination_host", "source_class", "event_id"],
-  source_submission_start: ["route", "event_id"],
-  contact_submission: ["route", "form_type", "event_id"],
-  patreon_cta_click: ["route", "cta_id", "destination_host", "event_id"],
-  patreon_oauth_start: ["route", "result", "event_id"],
-  patreon_oauth_result: ["route", "result", "failure_class", "event_id"],
-  member_entitlement_success: ["route", "tier_class", "event_id"],
-  member_entitlement_failure: ["route", "failure_class", "event_id"],
-  correction_submission: ["route", "form_type", "event_id"]
-});
-
-const GA4_PROHIBITED_PARAM = /(?:email|token|secret|password|oauth|patreon_identity|patreon_token|session|cookie|authorization|ip_address|raw_text|document_text|source_text|content_body|full_query|search_term|user_id)/i;
-
+// GAH-MP-001: server-derived, consented search telemetry; no public event relay.
 function ga4Config(env = {}) {
-  const measurementId = cleanText(env.GA4_MEASUREMENT_ID || "");
-  const hasSecret = Boolean(env.GA4_API_SECRET);
-  const enabled = truthyFlag(env.GA4_MP_ENABLED) && measurementId && hasSecret;
-  const dryRun = !enabled || truthyFlag(env.GA4_MP_DRY_RUN);
-  return {
-    enabled,
-    dryRun,
-    debug: truthyFlag(env.GA4_MP_DEBUG),
-    measurementId,
-    hasSecret,
-    endpoint: truthyFlag(env.GA4_MP_REGION1) ? "https://region1.google-analytics.com" : "https://www.google-analytics.com"
-  };
+  const measurementId = String(env.GA4_MEASUREMENT_ID || "").trim();
+  const enabled = !isStagingEnv(env) && googleTagEnabled(env) &&
+    truthyFlag(env.GA4_MP_ENABLED) && /^G-[A-Z0-9]+$/.test(measurementId) && Boolean(env.GA4_API_SECRET);
+  return { enabled, measurementId, dryRun: !enabled || truthyFlag(env.GA4_MP_DRY_RUN),
+    debug: truthyFlag(env.GA4_MP_DEBUG) };
 }
-
-function ga4ConsentAllows(payload = {}) {
-  const consent = payload.consent || {};
-  return consent.analytics_storage === "granted";
-}
-
-function ga4CleanParamValue(value) {
-  if (value == null) return "";
-  if (typeof value === "number") return Number.isFinite(value) ? value : "";
-  if (typeof value === "boolean") return value;
-  return cleanText(value).slice(0, 100);
-}
-
-function ga4SanitizeEvent(payload = {}) {
-  const eventName = cleanText(payload.event_name || payload.name || "");
-  const allowed = GA4_ALLOWED_EVENTS[eventName];
-  if (!allowed) return { ok: false, error: "event_not_allowed" };
-  const params = {};
-  const input = payload.params && typeof payload.params === "object" ? payload.params : {};
-  for (const key of allowed) {
-    if (GA4_PROHIBITED_PARAM.test(key)) continue;
-    if (Object.prototype.hasOwnProperty.call(input, key) || Object.prototype.hasOwnProperty.call(payload, key)) {
-      const value = ga4CleanParamValue(input[key] ?? payload[key]);
-      if (value !== "") params[key] = value;
-    }
-  }
-  const route = cleanText(input.route || payload.route || "");
-  if (route && route.startsWith("/")) params.route = route.slice(0, 180);
-  const eventId = cleanText(input.event_id || payload.event_id || crypto.randomUUID());
-  params.event_id = eventId.slice(0, 80);
-  return {
-    ok: true,
-    event: {
-      name: eventName,
-      params
-    }
-  };
-}
-
-async function handleGa4Event(request, env) {
-  if (request.method === "GET" || request.method === "HEAD") {
-    return jsonResponse({
-      ok: true,
-      schema: "gah.ga4.mp.v1",
-      mode: ga4Config(env).dryRun ? "dry-run" : (ga4Config(env).debug ? "debug" : "live"),
-      allowed_events: Object.keys(GA4_ALLOWED_EVENTS)
-    }, 200, { "X-Robots-Tag": "noindex,nofollow" });
-  }
-  if (request.method !== "POST") return jsonResponse({ ok: false, error: "method_not_allowed" }, 405);
-  let payload = {};
+function ga4SearchClient(request, env) {
+  if (ga4Config(env).dryRun || request.method !== "POST") return "";
+  const url = new URL(request.url);
+  if (url.origin !== "https://grokarchivehub.com" || url.pathname !== "/api/search") return "";
+  if (request.headers.get("Origin") !== url.origin || request.headers.get("Sec-Fetch-Site") !== "same-origin" ||
+      request.headers.get("X-GAH-Analytics-Consent") !== "granted" ||
+      request.headers.get("Sec-GPC") === "1" || request.headers.get("DNT") === "1" ||
+      /bot|crawler|spider|HeadlessChrome|Playwright|Lighthouse|GAH[- /](?:Monitor|Analytics-Audit)/i.test(request.headers.get("User-Agent") || "")) return "";
   try {
-    payload = await request.json();
-  } catch (_) {
-    return jsonResponse({ ok: false, error: "invalid_json" }, 400);
-  }
-  if (!ga4ConsentAllows(payload)) {
-    return jsonResponse({ ok: true, suppressed: true, reason: "analytics_consent_denied", outbound_send_count: 0 }, 200);
-  }
-  const sanitized = ga4SanitizeEvent(payload);
-  if (!sanitized.ok) return jsonResponse({ ok: false, error: sanitized.error, outbound_send_count: 0 }, 400);
+    const cookies = parseCookies(request);
+    const c = JSON.parse(decodeURIComponent(cookies.get("gah_consent_shared_v1") || ""));
+    const age = Date.now() - Date.parse(c.updated_at);
+    if (c.version !== 1 || !["accept","partial"].includes(c.choice) || !Number.isFinite(age) || age < 0 ||
+        age > 15552000000 || c.consent?.analytics_storage !== "granted") return "";
+    const ga = /^GA1\.[0-9]{1,2}\.([0-9]{1,20}\.[0-9]{1,20})$/.exec(cookies.get("_ga") || "");
+    return ga ? ga[1] : "";
+  } catch (_) { return ""; }
+}
+async function ga4SearchObservation(request, response, env, clientId) {
+  if (!clientId || !response.ok || !/application\/json/i.test(response.headers.get("Content-Type") || "")) return;
+  const data = await response.json().catch(() => null);
+  if (!data || data.ok !== true || !Number.isSafeInteger(data.hit_count) || data.hit_count < 0) return;
+  // Fail closed if the existing atomic limiter is unavailable. IP is never sent to Google.
+  const limited = await gahSecDoCall(env, {op:"check",scope:"ga4-archive-search",key:gahSecClientIp(request),max:12,windowMs:60000});
+  if (!limited || limited.ok !== true || limited.limited !== false) return;
   const config = ga4Config(env);
-  const mpPayload = {
-    client_id: cleanText(payload.client_id || `gah.${sanitized.event.params.event_id}`),
-    events: [sanitized.event]
-  };
-  if (config.dryRun) {
-    return jsonResponse({
-      ok: true,
-      mode: "dry-run",
-      outbound_send_count: 0,
-      event: sanitized.event.name,
-      params: sanitized.event.params
-    });
-  }
-  const collectPath = config.debug ? "/debug/mp/collect" : "/mp/collect";
-  const endpoint = `${config.endpoint}${collectPath}?measurement_id=${encodeURIComponent(config.measurementId)}&api_secret=${encodeURIComponent(env.GA4_API_SECRET)}`;
+  if (config.dryRun) return;
+  const count = Math.min(1000, data.hit_count);
+  const body = { client_id: clientId, consent: {ad_user_data:"DENIED",ad_personalization:"DENIED"},
+    events:[{name:count === 0 ? "archive_search_zero_results" : "archive_search",
+      params:{route:"/search",result_count:count}}] };
+  const endpoint = new URL(config.debug ? "https://www.google-analytics.com/debug/mp/collect" : "https://www.google-analytics.com/mp/collect");
+  endpoint.searchParams.set("measurement_id",config.measurementId);
+  endpoint.searchParams.set("api_secret",env.GA4_API_SECRET);
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 1500);
+  const timeout = setTimeout(() => controller.abort(),1500);
   try {
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(mpPayload),
-      signal: controller.signal
-    });
-    const body = config.debug ? await response.text().catch(() => "") : "";
-    return jsonResponse({
-      ok: response.ok,
-      mode: config.debug ? "debug" : "live",
-      outbound_send_count: response.ok ? 1 : 0,
-      status: response.status,
-      debug_response_present: Boolean(body)
-    }, response.ok ? 200 : 202);
-  } catch (_) {
-    return jsonResponse({ ok: true, mode: "fail-open-user-request", outbound_send_count: 0, error: "analytics_send_failed" }, 202);
-  } finally {
-    clearTimeout(timeout);
+    await fetch(endpoint.toString(), {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body),signal:controller.signal,redirect:"error"});
+  } catch (_) { /* analytics never breaks archive search; do not log secrets */ }
+  finally { clearTimeout(timeout); }
+}
+async function handleGa4Event(request, env) {
+  const headers = {"X-Robots-Tag":"noindex,nofollow"};
+  if (request.method === "GET" || request.method === "HEAD") {
+    const config = ga4Config(env);
+    return jsonResponse({ok:true,schema:"gah.ga4.mp.v2",mode:config.dryRun?"dry-run":config.debug?"debug":"live",
+      allowed_events:["archive_search","archive_search_zero_results"],public_event_submission:false},200,headers);
   }
+  // No caller-supplied events, client IDs, paths, queries or asserted consent.
+  return jsonResponse({ok:false,error:"method_not_allowed"},405,{...headers,Allow:"GET, HEAD"});
 }
 
 function staticEditorialLastmod(path) {
@@ -8492,6 +8536,8 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
     body = ensureV3DocumentShell(body);
   }
   body = applyEditorialPublicationStats(body);
+  body = body.replace(/(<b data-gah-atlas-story-count>)\d+(<\/b>)/g,(_,a,b)=>a+String(ATLAS_BUNDLED_PUBLICATION.catalog.total_stories)+b);
+  if (cleanPath(policyPath)==="/atlas") body=body.replace(/<h1>(4,6,7, on the list[^<]*)<\/h1>/g,"<p>$1</p>");
   if (!/<link\b[^>]*rel=["'][^"']*\bai-catalog\b/i.test(body)) {
     body = body.replace(/<\/head>/i, '  <link rel="ai-catalog" href="/.well-known/ai-catalog.json">\n</head>');
   }
@@ -18783,18 +18829,23 @@ async function handleAskGahBridge(request, env = {}) {
 
   // Staging-only source-bound editorial candidates; help, exact IDs and archive fallback stay unchanged.
   const editorialStage = isStagingEnv(env) && new URL(request.url).hostname.endsWith(".gah-staging-517b8499.pages.dev");
-  const exactStageId=editorialStage&&intent==="archive"&&question.match(/^EFTA\d{8}$/i)?.[0]?.toUpperCase();
-  if(exactStageId){
-    const dossier=GAH_IDENTIFIER_DOSSIERS.get(exactStageId),url="https://grokarchivehub.com/archive/"+exactStageId;
-    const available=Boolean(dossier)&&!askSourceWithdrawn(env,url,[exactStageId]);
-    return jsonResponse({ok:true,mode:"exact_identifier_locator_staging",intent:"archive",answer:available?"Exact identifier located. Open the verified public dossier; this locator does not certify the document’s claims.":"This identifier has no available verified public locator in the staging catalog.",answer_abstained:true,answer_reason:available?"exact_identifier_locator_only":"exact_identifier_unavailable",answer_claims:[],citations:[],hits:available?[{id:exactStageId,efta_id:exactStageId,title:dossier.title,url,source_url:dossier.source,scope:"verified_public_locator_only"}]:[],generated_claims:0},200,{"X-GAH-Ask-Bridge":ASK_VERSION,"X-Robots-Tag":"noindex, nofollow, noarchive"});
-  }
-  if (intent === "archive" && editorialStage && !/\bEFTA\d{8}\b/i.test(question)) {
+  if (editorialStage && intent === "archive") {
     let rate;
     try { rate=await gahSecDoCall(env,{op:"check",scope:"ask-editorial-staging",key:gahSecClientIp(request),max:30,windowMs:60000}); } catch {}
     if (!rate || typeof rate.limited!=="boolean" || rate.limited) return jsonResponse({error:rate?.limited?"rate_limited":"limiter_unavailable"},rate?.limited?429:503,{"X-Robots-Tag":"noindex, nofollow, noarchive"});
+    const stageHeaders={"X-GAH-Ask-Bridge":ASK_VERSION,"X-Robots-Tag":"noindex, nofollow, noarchive","Cache-Control":"no-store"};
+    if(await askEditorialRestricted(question))return jsonResponse({ok:true,mode:"editorial_answer_staging",intent:"archive",answer:"The published evidence does not establish a sufficiently supported answer.",answer_abstained:true,answer_reason:"insufficient_or_restricted_evidence",answer_claims:[],citations:[],hits:[],generated_claims:0},200,stageHeaders);
+    const ids=[...new Set((question.match(/\bEFTA\d{8}\b/gi)||[]).map(id=>id.toUpperCase()))];
+    if(ids.length){
+      const hits=ids.slice(0,5).flatMap(id=>{
+        const dossier=GAH_IDENTIFIER_DOSSIERS.get(id),url="https://grokarchivehub.com/archive/"+id;
+        return dossier?.indexable&&!askSourceWithdrawn(env,url,[id])?[{id,efta_id:id,title:dossier.title,url,scope:"verified_public_locator_only"}]:[];
+      });
+      return jsonResponse({ok:true,mode:"exact_identifier_locator_staging",intent:"archive",answer:hits.length?"Requested public identifier locator(s). Open the source dossier; a locator does not certify claims or answer a mixed-ID question.":"No available verified public locator for the requested identifier(s).",answer_abstained:true,answer_reason:hits.length?"exact_identifier_locator_only":"exact_identifier_unavailable",answer_claims:[],citations:[],hits,generated_claims:0},200,stageHeaders);
+    }
     const editorial = await askEditorialExtract(question, env, request, ()=>gahNeuralBudget(env));
     if (editorial) return new Response(JSON.stringify(sanitizeAskGahPayload(editorial)), {headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow, noarchive","X-GAH-Ask-Intent":intent,"X-GAH-Ask-Bridge":ASK_VERSION,"X-GAH-Ask-Privacy":"GAH_ASK_GAH_PRIVACY_SANITIZER_V1"}});
+    return jsonResponse({ok:true,mode:"editorial_answer_staging",intent:"archive",answer:"No supported editorial answer is available.",answer_abstained:true,answer_reason:"editorial_unavailable",answer_claims:[],citations:[],hits:[],generated_claims:0},200,stageHeaders);
   }
 
   const upstreamUrl = new URL(request.url);
@@ -18877,6 +18928,10 @@ export default {
     const started = Date.now();
     try {
       const original = await this.handleStagingFetch(request, env);
+      const ga4Client = ga4SearchClient(request, env);
+      if (ga4Client && ctx?.waitUntil && original.ok) {
+        ctx.waitUntil(ga4SearchObservation(request, original.clone(), env, ga4Client).catch(() => {}));
+      }
       const scripts = consentScriptTag(env, request);
       const eligible = canInstrumentHtmlResponse(original, request);
       let normalized = false;
@@ -18948,7 +19003,7 @@ export default {
         return new Response(null,{status:404,headers:{"Cache-Control":"no-store"}});
       }
       if(!["GET","HEAD"].includes(request.method)) return new Response(null,{status:405,headers:{Allow:"GET, HEAD","Cache-Control":"no-store"}});
-      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY+(publicResearchEnabled011(request,env)?"\n- [Editorial research search](https://grokarchivehub.com"+SEARCH_011+"): hybrid citation-candidate retrieval; supplement to the archive.\n- [Editorial corpus](https://grokarchivehub.com"+CORPUS_011+"): versioned public editorial metadata snapshot.\n":"")+(releaseSurfaceEnabled(request,env)?"\n- [Publication changes](https://grokarchivehub.com/api/v1/publications/changes): versioned changes to the bounded editorial register, not the entire corpus.\n":""),{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
+      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY+(publicResearchEnabled011(request,env)?"\n- [Editorial research search](https://grokarchivehub.com"+SEARCH_011+"?q=EFTA00013764): requires q; hybrid citation-candidate retrieval; supplement to the archive.\n- [Editorial corpus](https://grokarchivehub.com"+CORPUS_011+"): versioned public editorial metadata snapshot.\n":"")+(releaseSurfaceEnabled(request,env)?"\n- [Publication changes](https://grokarchivehub.com/api/v1/publications/changes): versioned changes to the bounded editorial register, not the entire corpus.\n":""),{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
     }
 
     if (isAccountLevelAnalyticsGatewayPath(path)) {
@@ -19702,6 +19757,8 @@ export default {
         }
       });
     }
+
+    if (path === "/.well-known/http-message-signatures-directory") return webBotDirectory(request, env);
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/.well-known/agent-card.json") {
       return new Response(request.method === "HEAD" ? null : GAH_A2A_AGENT_CARD, {

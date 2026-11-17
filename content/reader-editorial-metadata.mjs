@@ -296,8 +296,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA02858491: FBI Follow-Up: Source Protection. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/ids": {
-    "title": "Identifier pages",
-    "description": "Read “Identifier pages” with original sources, context and limits on what the records establish."
+    "title": "Epstein Files EFTA Bates Identifier Index",
+    "description": "Find reviewed EFTA Bates-number dossiers, original DOJ PDFs and related investigations. Distinguish source records from editorial conclusions."
   },
   "https://grokarchivehub.com/banking-records": {
     "title": "Banking Records",
@@ -1390,5 +1390,105 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/guides/epstein-chronological-source-guide": {
     "title": "Epstein Files Timeline: Chronological Source Guide",
     "description": "Follow dated legal, financial, travel and custody records across GAH’s investigations, separating document dates from publication dates."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-9": {
+    "title": "Epstein Files Data Set 9: DOJ PDF & EFTA Guide",
+    "description": "Find the official DOJ Epstein Data Set 9 file index, search EFTA Bates numbers, and follow source-linked GAH research and verification guidance."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-8": {
+    "title": "Epstein Files Data Set 8: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 8: find EFTA PDF identifiers and read about prosecutorial correspondence, aviation and custody records. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-1": {
+    "title": "Epstein Files Data Set 1: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 1: find EFTA PDF identifiers and read about photograph records and source versions. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-2": {
+    "title": "Epstein Files Data Set 2: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 2: find EFTA PDF identifiers and read about exact filename lookup in a numbered run. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-3": {
+    "title": "Epstein Files Data Set 3: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 3: find EFTA PDF identifiers and read about nonconsecutive file identifiers. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-4": {
+    "title": "Epstein Files Data Set 4: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 4: find EFTA PDF identifiers and read about scheduling records and evidence boundaries. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-5": {
+    "title": "Epstein Files Data Set 5: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 5: find EFTA PDF identifiers and read about a compact sequential file index. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-6": {
+    "title": "Epstein Files Data Set 6: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 6: find EFTA PDF identifiers and read about single-page index navigation. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-7": {
+    "title": "Epstein Files Data Set 7: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 7: find EFTA PDF identifiers and read about file starts and interior bates pages. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-10": {
+    "title": "Epstein Files Data Set 10: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 10: find EFTA PDF identifiers and read about draft filings and financial correspondence. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-11": {
+    "title": "Epstein Files Data Set 11: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 11: find EFTA PDF identifiers and read about proposed meetings and travel arrangements. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/guides/epstein-files-data-set-12": {
+    "title": "Epstein Files Data Set 12: DOJ PDF & EFTA Guide",
+    "description": "DOJ Epstein Data Set 12: find EFTA PDF identifiers and read about draft agreements, payment records and proffers. Verify sources and limits."
+  },
+  "https://grokarchivehub.com/topics/epstein-non-prosecution-agreement": {
+    "title": "Epstein Non-Prosecution Agreement: 2007–2008",
+    "description": "What did the 2007 Epstein non-prosecution agreement resolve? Compare the draft indictment, victim notification, Hold the Letter email and DOJ review."
+  },
+  "https://grokarchivehub.com/topics/epstein-jail-records": {
+    "title": "Epstein Jail Records: Logs, Video and Evidence",
+    "description": "Read Epstein MCC jail records by document type: custody logs, observation status, camera file lists, preservation requests and official findings."
+  },
+  "https://grokarchivehub.com/topics/epstein-bank-records": {
+    "title": "Epstein Bank Records: SARs, Wires and Accounts",
+    "description": "Compare Epstein bank records from JPMorgan and Deutsche Bank, suspicious activity reports, wire totals, forensic exhibits and account-level limits."
+  },
+  "https://grokarchivehub.com/topics/leon-black-epstein-financial-records": {
+    "title": "Leon Black and Epstein: Financial Records",
+    "description": "Compare Leon Black’s Epstein payment totals, the Dechert review, Senate Finance inquiry, settlement records and separate investment transactions."
+  },
+  "https://grokarchivehub.com/topics/epstein-investment-records": {
+    "title": "Epstein Investment Records: Trusts and Ventures",
+    "description": "Research Epstein-linked investment records, Southern Trust, investment vehicles, term sheets, payment evidence and ownership verification."
+  },
+  "https://grokarchivehub.com/topics/epstein-court-records": {
+    "title": "Epstein Court Records: Cases, Filings and Orders",
+    "description": "Find Epstein court records by case and document type. Distinguish criminal charges, civil allegations, privilege orders, FOIA and disclosure records."
+  },
+  "https://grokarchivehub.com/topics/ehud-barak-epstein-business-records": {
+    "title": "Ehud Barak and Epstein: Business Records",
+    "description": "Explore source-linked Barak and Epstein business correspondence, proposed ventures, scheduling records, investment evidence and verification limits."
+  },
+  "https://grokarchivehub.com/timelines/epstein-npa-decision-timeline": {
+    "title": "Epstein NPA Timeline: July–December 2007",
+    "description": "Dated source trail for the 2007 federal decision, signed non-prosecution agreement and victim-notification hold, with unresolved decision gaps."
+  },
+  "https://grokarchivehub.com/timelines/epstein-custody-records-timeline": {
+    "title": "Epstein Custody Records: 2019 Timeline",
+    "description": "Compare dated MCC operations logs, custody records, camera-file lists, evidence preservation and later OIG findings, without filling gaps."
+  },
+  "https://grokarchivehub.com/timelines/epstein-financial-records-timeline": {
+    "title": "Epstein Financial Records: Dated Evidence Trail",
+    "description": "Compare dated bank reporting, charity-account records, commissioned reviews, Senate findings and forensic-accounting source limits."
+  },
+  "https://grokarchivehub.com/timelines/epstein-disclosure-timeline": {
+    "title": "Epstein Files Disclosure Timeline: 2025–2026",
+    "description": "Source-linked chronology of 2025 FBI review, the Transparency Act, DOJ release announcement and selected 2026 court filings through November 2."
+  },
+  "https://grokarchivehub.com/entities/epstein-public-institution-records": {
+    "title": "Epstein Records: Public Institutions and Roles",
+    "description": "Find agencies, courts, regulators and oversight bodies by their documented roles in Epstein investigations, disclosure and financial records."
+  },
+  "https://grokarchivehub.com/entities/epstein-financial-organization-records": {
+    "title": "Epstein Financial Entities: Research Directory",
+    "description": "Find published research on banks, trusts, charity accounts, investment vehicles and commissioned reviews with entity-resolution and transaction limits."
   }
 };

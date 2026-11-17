@@ -609,7 +609,7 @@
       });
       fetch("/api/search", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: window.GAHAnalytics?.searchHeaders?.() || { "Content-Type": "application/json" },
         body: JSON.stringify({ q: query, query: query, tag: "All", limit: 10, fast: true, no_ai: true })
       }).then(function (res) { return res.text().then(function (raw) { return { res: res, raw: raw }; }); })
         .then(function (pack) {

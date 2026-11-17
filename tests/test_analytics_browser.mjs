@@ -12,7 +12,7 @@ async function fixture(options={}) {
  let tagRequests=0;
  await context.route('**/*',async route=>{
   const url=new URL(route.request().url());
-  if(url.hostname==='www.googletagmanager.com') {assert.equal(url.pathname,'/gtm.js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
+  if(url.hostname==='www.googletagmanager.com') {assert.equal(url.pathname,'/gtag/js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
   if(url.pathname.startsWith('/frontdoor/')) {
    const name=url.pathname.slice('/frontdoor/'.length);
    if(!['analytics.js','consent.js','consent.css'].includes(name))return route.abort();
@@ -35,6 +35,7 @@ async function fixture(options={}) {
 try {
  let f=await fixture();
  check('no Google load before a decision',()=>assert.equal(f.tags(),0));
+ assert.equal(await f.page.evaluate(()=>GAHAnalytics.searchHeaders()['X-GAH-Analytics-Consent']||''),'');
  await f.page.getByRole('button',{name:'Reject nonessential',exact:true}).click();
  check('reject loads no Google tag',()=>assert.equal(f.tags(),0));
  check('reject queues no pageview',()=>{});assert.equal((await f.events('page_view')).length,0);
@@ -43,6 +44,7 @@ try {
  await f.page.getByRole('button',{name:'Save',exact:true}).click();
  await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');
  check('accept loads one Google tag',()=>assert.equal(f.tags(),1));
+ assert.equal(await f.page.evaluate(()=>GAHAnalytics.searchHeaders()['X-GAH-Analytics-Consent']),'granted');
  let pv=await f.events('page_view');check('accept queues exactly one pageview',()=>assert.equal(pv.length,1));
  check('direct navigation does not invent a referrer',()=>assert.equal(pv[0][2].page_referrer,''));
  check('one correct stream and manual pageview configuration',()=>assert.deepEqual((pv[0][2].send_to),'G-XHE84C8D1V'));
@@ -60,6 +62,7 @@ try {
  check('Tag Assistant and CMP URL cleanup do not duplicate views',()=>{});assert.equal((await f.events('page_view')).length,2);
  await f.page.getByRole('button',{name:'Privacy choices',exact:true}).click();await f.page.getByRole('checkbox',{name:'Analytics storage',exact:true}).uncheck();await f.page.getByRole('button',{name:'Save',exact:true}).click();
  await f.page.evaluate(()=>{GAHAnalytics.event('evidence_engagement',{});history.pushState({},'','/search');});
+ assert.equal(await f.page.evaluate(()=>GAHAnalytics.searchHeaders()['X-GAH-Analytics-Consent']||''),'');
  check('withdrawal prevents subsequent events',()=>{});assert.equal((await f.events('page_view')).length,2);assert.equal((await f.events('evidence_engagement')).length,0);
  check('consent cookie has no visitor identifier',()=>{});let cookie=(await f.context.cookies()).find(x=>x.name==='gah_consent_shared_v1');assert(cookie?.secure&&cookie.domain.endsWith('grokarchivehub.com'));assert(!decodeURIComponent(cookie.value).includes('client_id'));
  await f.context.close();

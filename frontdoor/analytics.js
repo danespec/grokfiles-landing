@@ -89,14 +89,14 @@
     script.async = true;
     script.setAttribute('data-cfasync', 'false');
     script.setAttribute('data-gah-google-tag', 'true');
-    script.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(id);
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
     script.onerror = function () { loading = false; state('tag-load-failed'); script.remove(); };
     window.gtag('set', {page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub'});
     window.gtag('js', new Date());
     if (granted) automaticGrantedNavigation = navigation;
     else sentCookielessNavigation = navigation;
     // The actual Google tag produces an initial pageview even when send_page_view is false.
-    // The unified loader uses Google-only container settings and gtag set, not deprecated config.
+    // Use the supported gtag.js loader for a G- measurement ID; Google-only tag settings and gtag set own configuration.
     // Configure one automatic initial view; never send an additional manual view in the same consent state.
     window.gtag('set', Object.assign({send_page_view: true, cookie_domain: 'grokarchivehub.com', allow_google_signals: false, allow_ad_personalization_signals: false, page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub', url_passthrough: false}, debug ? {debug_mode:true,traffic_type:'gah_operations'} : {}));
     script.onload = function () {
@@ -131,7 +131,11 @@
     if (/\.pdf$/i.test(u.pathname) || /\/pdf-lite(?:\.html)?$/.test(u.pathname)) event('evidence_source_click', {document_id: documentId(), destination_host: u.hostname, viewer: /pdf-lite/.test(u.pathname) ? 'pdf-lite' : 'source-pdf'});
   });
   state(eligible ? 'awaiting-consent' : 'excluded');
-  window.GAHAnalytics = Object.freeze({applyConsent: applyConsent, event: function (name, params) {
+  window.GAHAnalytics = Object.freeze({applyConsent: applyConsent, searchHeaders: function () {
+    return eligible && granted && configured && location.origin === 'https://grokarchivehub.com' &&
+      navigator.globalPrivacyControl !== true && navigator.doNotTrack !== '1'
+      ? {'Content-Type':'application/json','X-GAH-Analytics-Consent':'granted'} : {'Content-Type':'application/json'};
+  }, event: function (name, params) {
     if (!/^(?:external_source_click|patreon_cta_click|evidence_source_click)$/.test(name)) return;
     var safe = {};
     ['document_id','destination_host','viewer','cta_id'].forEach(function (key) {

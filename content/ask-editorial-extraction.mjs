@@ -2,7 +2,8 @@
 import MODEL from './research-corpus-010.mjs';
 import {askEditorialCandidate} from './ask-editorial-staging.mjs';
 import {editorialGuard} from './research-evidence-closeout.mjs';
-export const ASK_VERSION='GAH_ASK_EDITORIAL_STAGING_V2';
+import {ASK_PUBLIC_NAV,ASK_DATASET_NAV,ASK_EXCLUDED_PUBLIC_IDS} from './ask-research-navigation.mjs';
+export const ASK_VERSION='GAH_ASK_EDITORIAL_STAGING_V3';
 const hash=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text))),x=>x.toString(16).padStart(2,'0')).join('');
 const stop=new Set('what which who how why when where does did do has have was were the a an of in to and or for from with by on as at it is are can could would please tell me about explain summarize according say saying reporting separate establish evidence records record epstein jeffrey gah published'.split(' '));
 const aliases={paid:'payment',payments:'payment',fees:'payment',visited:'visit',visiting:'visit',went:'visit',go:'visit',flights:'flight',emails:'email',reports:'report',letters:'letter',loans:'loan'};
@@ -12,6 +13,7 @@ const decode=s=>s.replace(/&#(x[0-9a-f]+|\d+);/gi,(_,n)=>String.fromCodePoint(n[
 const text=s=>decode(s.replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();
 const abstain=(reason,extra={})=>({ok:true,mode:'editorial_answer_staging',intent:'archive',answer:'The published evidence does not establish a sufficiently supported answer.',answer_abstained:true,answer_reason:reason,answer_claims:[],citations:[],hits:[],generated_claims:0,review_status:'pending_independent_review',...extra});
 export function askSourceWithdrawn(env,url,ids=[]){
+ if(ids.some(id=>ASK_EXCLUDED_PUBLIC_IDS.includes(id)))return true;
  // Invalid controls fail closed; supports immediate environment-based withdrawal without re-indexing.
  for(const key of ['GAH_ASK_WITHDRAWN_PUBLICATIONS','GAH_ASK_WITHDRAWN_SOURCES']){
   let list;try{list=JSON.parse(env[key]||'[]')}catch{return true}
@@ -32,7 +34,7 @@ export function extractCitedBlocks(html,url){
   const blocked=stack.some(x=>x.blocked)||/^(script|style|nav|aside|footer|form|blockquote|details|pre|code|template|iframe|button)$/.test(name)||/\bhidden\b|aria-hidden=["']true|display\s*:\s*none|visibility\s*:\s*hidden|(?:class|id)=["'][^"']*\b(?:private|internal|sensitive|redacted|raw|transcript)\b/i.test(token);
   if(!blocked)clean+=token;if(!voids.has(name))stack.push({name,blocked});
  }
- const ids=new Set([...main.matchAll(/\bid=["']([^"']+)["']/g)].map(m=>m[1]));
+ const ids=new Set([...clean.matchAll(/\bid=["']([^"']+)["']/g)].map(m=>m[1]));
  const linkedIds=new Map(),references=new Map();
  const directLinks=fragment=>{
   const result=[];
@@ -40,7 +42,7 @@ export function extractCitedBlocks(html,url){
    let target;try{target=new URL(decode(a[1]),url)}catch{continue}
    const id=(text(a[2])+' '+a[1]).match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase();
    const locator=target.href.match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase();
-   if(id&&target.protocol==='https:'&&['grokarchivehub.com','www.justice.gov','justice.gov'].includes(target.hostname)&&(!locator||id===locator)&&(!target.hash||target.pathname!==new URL(url).pathname||ids.has(target.hash.slice(1))))result.push({id,source_id:id,title:id,url:target.href});
+   if(id&&target.protocol==='https:'&&['grokarchivehub.com','www.justice.gov','justice.gov'].includes(target.hostname)&&(locator===id||(target.origin===new URL(url).origin&&target.pathname===new URL(url).pathname&&ids.has(target.hash.slice(1))))&&(!target.hash||target.pathname!==new URL(url).pathname||ids.has(target.hash.slice(1))))result.push({id,source_id:id,title:id,url:target.href});
   }return result;
  };
  for(const citation of directLinks(clean))linkedIds.set(citation.id,citation);
@@ -63,7 +65,7 @@ export function extractCitedBlocks(html,url){
    if(target.protocol!=='https:'||!['grokarchivehub.com','www.justice.gov','justice.gov'].includes(target.hostname))continue;
    if(target.origin===new URL(url).origin&&target.pathname===new URL(url).pathname&&target.hash&&!ids.has(target.hash.slice(1)))continue;
    const locatorId=target.href.match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase();
-   if(id.startsWith('EFTA')&&locatorId&&locatorId!==id)continue;
+   if(id.startsWith('EFTA')&&locatorId!==id&&!(target.origin===new URL(url).origin&&target.pathname===new URL(url).pathname&&ids.has(target.hash.slice(1))))continue;
    if(id.startsWith('leak')&&(target.hash!=='#source-'+id.replace('leak id ','')||target.pathname!==new URL(url).pathname))continue;
    citations.push({id,source_id:id,title:id,url:target.href});
   }
@@ -77,27 +79,34 @@ export function extractCitedBlocks(html,url){
  }
  return blocks.map(block=>({...block,publication_limitations:limitations.slice(0,2)}));
 }
+export async function askEditorialRestricted(question){
+ const {expansionGuard012}=await import('./editorial-search-012.mjs');
+ return Boolean(editorialGuard(question)||expansionGuard012(question)||(/\bblack\b/i.test(question)&&/\b(?:namesakes?|unrelated|family versus|different black|which black entity)\b/i.test(question)));
+}
+function relatedNavigation(rows,claims,env){
+ const links=rows.flatMap(r=>ASK_PUBLIC_NAV[r.url]||[]).concat(claims.flatMap(c=>c.citations.map(x=>ASK_DATASET_NAV[x.id]).filter(Boolean)));
+ return [...new Map(links.filter(x=>!askSourceWithdrawn(env,x.url)).map(x=>[x.url,{...x,scope:'related research navigation only; not claim evidence'}])).values()].slice(0,8);
+}
 export async function askEditorialExtract(question,env,request,budget=async()=>false){
  if(String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
  if(/\bEFTA\d{8}\b/i.test(question))return null; // Exact-ID archive routing remains untouched.
- const {expansionGuard012}=await import('./editorial-search-012.mjs');
- if(editorialGuard(question)||expansionGuard012(question)||(/\bblack\b/i.test(question)&&/\b(?:namesakes?|unrelated|family versus|different black|which black entity)\b/i.test(question)))return abstain('insufficient_or_restricted_evidence');
+ if(await askEditorialRestricted(question))return abstain('insufficient_or_restricted_evidence');
  const q=terms(question);if(q.length<2)return abstain('question_requires_more_detail');
  const {practicalRetrieval}=await import('./practical-retrieval.mjs');
- let retrieval;try{retrieval=await practicalRetrieval({q:question,limit:5,strategy:'hybrid',env,budget})}catch{return abstain('editorial_retrieval_unavailable')}
+ let retrieval;try{retrieval=await practicalRetrieval({q:question,limit:8,strategy:'hybrid',env,budget})}catch{return abstain('editorial_retrieval_unavailable')}
  const candidates=retrieval.results.filter(r=>MODEL.publication_hashes[r.url]===r.source_sha256&&!askSourceWithdrawn(env,r.url));
- const extra={answer_generation:'verbatim_cited_publication_extraction',review_status:'pending_independent_review',corpus_publications:MODEL.documents.length,retrieval_strategy:retrieval.strategy,neural_executed:retrieval.neural_executed,neural_degraded:retrieval.neural_degraded||false,editorial_candidates:candidates.map(r=>({title:r.title,url:r.url,publication_sha256:r.source_sha256})),evidentiary_limitations:['Source-bound staging candidates are not independently certified primary-source findings.','An inline EFTA/leak citation identifies the publication’s claimed support; Ren must verify entailment before production release.','Allegations, proposals and unresolved questions retain their wording. Association alone does not establish wrongdoing.']};
+ const extra={answer_generation:'verbatim_cited_publication_extraction',review_status:'pending_independent_review',corpus_publications:MODEL.documents.length,retrieval_strategy:retrieval.strategy,neural_executed:retrieval.neural_executed,neural_degraded:retrieval.neural_degraded||false,related_research:relatedNavigation(candidates,[],env),editorial_candidates:candidates.map(r=>({title:r.title,url:r.url,publication_sha256:r.source_sha256})),evidentiary_limitations:['Source-bound staging candidates are not independently certified primary-source findings.','An inline EFTA/leak citation identifies the publication’s claimed support; Ren must verify entailment before production release.','Allegations, proposals and unresolved questions retain their wording. Association alone does not establish wrongdoing.']};
  if(!candidates.length)return abstain('insufficient_evidence',extra);
  if(!env.ASSETS?.fetch)return abstain('publication_assets_unavailable',extra);
  const boundPacket=askEditorialCandidate(question,env);
  const ranked=[];
- for(const row of candidates.slice(0,3)){
+ for(const row of candidates.slice(0,8)){
   const source=new URL(row.url),local=new URL(request.url);local.pathname=source.pathname+'.html';local.search='';local.hash='';
   let response;try{response=await env.ASSETS.fetch(new Request(local))}catch{continue}
   if(!response.ok)continue;
   const html=await response.text();if(await hash(html)!==row.source_sha256)continue;
   if(boundPacket?.answer_abstained===false&&boundPacket.answer_claims.every(c=>c.publication_url===row.url&&!askSourceWithdrawn(env,row.url,c.citations.map(x=>x.id)))){
-   return {...boundPacket,...extra,answer_generation:'source_bound_staging_candidate',publication_bytes_verified:true};
+   return {...boundPacket,...extra,related_research:relatedNavigation([row],boundPacket.answer_claims,env),answer_generation:'source_bound_staging_candidate',publication_bytes_verified:true};
   }
   for(const block of extractCitedBlocks(html,row.url)){
    if(askSourceWithdrawn(env,row.url,block.citations.map(c=>c.id)))continue;
@@ -108,8 +117,8 @@ export async function askEditorialExtract(question,env,request,budget=async()=>f
  }
  ranked.sort((a,b)=>b.score-a.score||a.text.length-b.text.length);
  const unique=[...new Map(ranked.map(c=>[c.text,c])).values()].slice(0,3);
- if(!unique.length)return abstain('no_current_claim_level_cited_support',extra);
+ if(!unique.length)return abstain('no_current_claim_level_cited_support',{...extra,hits:candidates.slice(0,3).map(r=>({title:r.title,url:r.url,description:'Candidate publication only; not a supported answer.'}))});
  const claims=await Promise.all(unique.map(async({score,...c})=>({...c,excerpt_sha256:await hash(c.text),limitation:'Verbatim published block with same-block source citations; underlying primary-source entailment awaits independent review. '+(c.publication_limitations||[]).join(' ')})));
  const citations=[...new Map(claims.flatMap(c=>c.citations).map(c=>[c.url,c])).values()];
- return {ok:true,mode:'editorial_answer_staging',intent:'archive',answer_abstained:false,answer:claims.map(c=>'“'+c.text+'” ['+c.citations.map(x=>x.id).join('; ')+']').join('\n\n'),answer_claims:claims,citations,hits:claims.map(c=>({title:MODEL.documents.find(d=>d.url===c.publication_url)?.title,url:c.publication_url,description:c.limitation})),generated_claims:0,...extra};
+ return {ok:true,mode:'editorial_answer_staging',intent:'archive',answer_abstained:false,answer:claims.map(c=>'“'+c.text+'” ['+c.citations.map(x=>x.id).join('; ')+']').join('\n\n'),answer_claims:claims,citations,hits:claims.map(c=>({title:MODEL.documents.find(d=>d.url===c.publication_url)?.title,url:c.publication_url,description:c.limitation})),generated_claims:0,...extra,related_research:relatedNavigation(candidates,claims,env)};
 }

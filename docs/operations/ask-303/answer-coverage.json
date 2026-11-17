@@ -52,9 +52,11 @@
       "url": "https://grokarchivehub.com/dispatches/how-to-read-the-barak-records",
       "question": "How to Read the Barak Records",
       "cited_blocks": 0,
-      "result": "abstained",
-      "reason": "no_current_claim_level_cited_support",
-      "answer_publications": []
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014"
+      ]
     },
     {
       "url": "https://grokarchivehub.com/document-autopsies/doug-band-transcript",
@@ -310,12 +312,10 @@
     {
       "url": "https://grokarchivehub.com/investigations/barak-scheduling-records-2010-2018",
       "question": "The Barak Record, 2010–2018: What the Scheduling Files Actually Show",
-      "cited_blocks": 14,
-      "result": "answered",
-      "reason": null,
-      "answer_publications": [
-        "https://grokarchivehub.com/investigations/barak-scheduling-records-2010-2018"
-      ]
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
     },
     {
       "url": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
@@ -340,7 +340,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale",
       "question": "$5.5M Paid in 2012. ESWW Transfer Still Broken in 2015.",
-      "cited_blocks": 18,
+      "cited_blocks": 12,
       "result": "answered",
       "reason": null,
       "answer_publications": [
@@ -408,7 +408,7 @@
     {
       "url": "https://grokarchivehub.com/investigations/efta-compliance-tracker",
       "question": "EFTA Compliance Tracker",
-      "cited_blocks": 19,
+      "cited_blocks": 12,
       "result": "abstained",
       "reason": "no_current_claim_level_cited_support",
       "answer_publications": []
@@ -469,12 +469,10 @@
     {
       "url": "https://grokarchivehub.com/investigations/george-mitchell-epstein-source-audit",
       "question": "George Mitchell in the Epstein Records: What Resolves Cleanly—and What Does Not",
-      "cited_blocks": 17,
-      "result": "answered",
-      "reason": null,
-      "answer_publications": [
-        "https://grokarchivehub.com/investigations/george-mitchell-epstein-source-audit"
-      ]
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
     },
     {
       "url": "https://grokarchivehub.com/investigations/giuffre-maxwell-docket-1320-privilege-gap",
@@ -914,9 +912,11 @@
       "url": "https://grokarchivehub.com/research/epstein-final-48-hours-mcc",
       "question": "Epstein Death Timeline: Jeffrey Epstein's Final 48 Hours at MCC",
       "cited_blocks": 7,
-      "result": "abstained",
-      "reason": "no_current_claim_level_cited_support",
-      "answer_publications": []
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/research/epstein-final-48-hours-mcc"
+      ]
     }
   ],
   "samples": [
@@ -963,10 +963,11 @@
     },
     {
       "question": "Epstein MCC final 48 hours timeline",
-      "abstained": true,
-      "reason": "no_current_claim_level_cited_support",
-      "claims": 0,
-      "publications": []
+      "abstained": false,
+      "claims": 2,
+      "publications": [
+        "https://grokarchivehub.com/research/epstein-final-48-hours-mcc"
+      ]
     },
     {
       "question": "JPMorgan nine SARs 1.3 billion",

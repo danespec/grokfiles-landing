@@ -20,5 +20,5 @@ for(const u of urls){const p=new URL(u).pathname.replace(/\/$/,"")||"/",d=meta[a
 }
 for(const p of ["/","/investigations","/evidence-briefs"]){const h=await(await worker.fetch(new Request(apex+p),env)).text();assert.match(h,/stephen-hawking-email-request-efta00695049/);}
 const hawking=await(await worker.fetch(new Request(apex+"/reels/stephen-hawking-email-request-efta00695049"),env)).text();assert.equal((hawking.match(/id="hawking-source-chronology"/g)||[]).length,1);assert.match(hawking,/do not establish sexual misconduct/);
-const guide=await worker.fetch(new Request(apex+"/guides/doj-epstein-data-sets"),env);assert.match(guide.headers.get("X-Robots-Tag"),/noindex/i);assert.match(await guide.text(),/id="data-set-9-pdf-guide"/);
-console.log(`PASS ${urls.length} sitemap pages; ${related} contextual reading blocks; source-linked Hawking chronology; held guide remains noindex`);
+const guide=await worker.fetch(new Request(apex+"/guides/doj-epstein-data-sets"),env);assert.doesNotMatch(guide.headers.get("X-Robots-Tag")||"",/noindex/i);assert(sitemap.includes("<loc>"+apex+"/guides/doj-epstein-data-sets</loc>"));assert.match(await guide.text(),/id="data-set-9-pdf-guide"/);
+console.log(`PASS ${urls.length} sitemap pages; ${related} contextual reading blocks; source-linked Hawking chronology; reviewed guide indexed`);
