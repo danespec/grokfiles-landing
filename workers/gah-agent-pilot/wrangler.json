@@ -37,5 +37,13 @@
     "AGENT_ISSUER": "https://grokarchivehub.com",
     "AGENT_PILOT_ENABLED": "false",
     "AGENT_APPROVED_REDIRECT_URI": "http://127.0.0.1:8765/callback"
+  },
+  "secrets": {
+    "required": [
+      "AGENT_ASSERTION_JWK",
+      "AGENT_RATE_SECRET",
+      "AGENT_CONSENT_BINDING_SECRET",
+      "AGENT_PROVISION_TOKEN"
+    ]
   }
 }
