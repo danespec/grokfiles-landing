@@ -7293,7 +7293,7 @@ function consentBootTag(env = {}, request = null) {
 }
 
 function consentScriptTag(env = {}, request = null) {
-  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-001"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
+  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-002"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
@@ -8145,138 +8145,64 @@ function jsonResponse(payload, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(payload), { status, headers });
 }
 
-const GA4_ALLOWED_EVENTS = Object.freeze({
-  investigation_view: ["route", "content_id", "content_type", "event_id"],
-  evidence_open: ["route", "document_id_hash", "source_class", "event_id"],
-  pdf_render_success: ["route", "document_id_hash", "source_class", "event_id"],
-  pdf_render_failure: ["route", "document_id_hash", "source_class", "failure_class", "event_id"],
-  archive_search: ["route", "query_class", "result_count", "event_id"],
-  archive_search_zero_results: ["route", "query_class", "event_id"],
-  external_source_click: ["route", "destination_host", "source_class", "event_id"],
-  source_submission_start: ["route", "event_id"],
-  contact_submission: ["route", "form_type", "event_id"],
-  patreon_cta_click: ["route", "cta_id", "destination_host", "event_id"],
-  patreon_oauth_start: ["route", "result", "event_id"],
-  patreon_oauth_result: ["route", "result", "failure_class", "event_id"],
-  member_entitlement_success: ["route", "tier_class", "event_id"],
-  member_entitlement_failure: ["route", "failure_class", "event_id"],
-  correction_submission: ["route", "form_type", "event_id"]
-});
-
-const GA4_PROHIBITED_PARAM = /(?:email|token|secret|password|oauth|patreon_identity|patreon_token|session|cookie|authorization|ip_address|raw_text|document_text|source_text|content_body|full_query|search_term|user_id)/i;
-
+// GAH-MP-001: server-derived, consented search telemetry; no public event relay.
 function ga4Config(env = {}) {
-  const measurementId = cleanText(env.GA4_MEASUREMENT_ID || "");
-  const hasSecret = Boolean(env.GA4_API_SECRET);
-  const enabled = truthyFlag(env.GA4_MP_ENABLED) && measurementId && hasSecret;
-  const dryRun = !enabled || truthyFlag(env.GA4_MP_DRY_RUN);
-  return {
-    enabled,
-    dryRun,
-    debug: truthyFlag(env.GA4_MP_DEBUG),
-    measurementId,
-    hasSecret,
-    endpoint: truthyFlag(env.GA4_MP_REGION1) ? "https://region1.google-analytics.com" : "https://www.google-analytics.com"
-  };
+  const measurementId = String(env.GA4_MEASUREMENT_ID || "").trim();
+  const enabled = !isStagingEnv(env) && googleTagEnabled(env) &&
+    truthyFlag(env.GA4_MP_ENABLED) && /^G-[A-Z0-9]+$/.test(measurementId) && Boolean(env.GA4_API_SECRET);
+  return { enabled, measurementId, dryRun: !enabled || truthyFlag(env.GA4_MP_DRY_RUN),
+    debug: truthyFlag(env.GA4_MP_DEBUG) };
 }
-
-function ga4ConsentAllows(payload = {}) {
-  const consent = payload.consent || {};
-  return consent.analytics_storage === "granted";
-}
-
-function ga4CleanParamValue(value) {
-  if (value == null) return "";
-  if (typeof value === "number") return Number.isFinite(value) ? value : "";
-  if (typeof value === "boolean") return value;
-  return cleanText(value).slice(0, 100);
-}
-
-function ga4SanitizeEvent(payload = {}) {
-  const eventName = cleanText(payload.event_name || payload.name || "");
-  const allowed = GA4_ALLOWED_EVENTS[eventName];
-  if (!allowed) return { ok: false, error: "event_not_allowed" };
-  const params = {};
-  const input = payload.params && typeof payload.params === "object" ? payload.params : {};
-  for (const key of allowed) {
-    if (GA4_PROHIBITED_PARAM.test(key)) continue;
-    if (Object.prototype.hasOwnProperty.call(input, key) || Object.prototype.hasOwnProperty.call(payload, key)) {
-      const value = ga4CleanParamValue(input[key] ?? payload[key]);
-      if (value !== "") params[key] = value;
-    }
-  }
-  const route = cleanText(input.route || payload.route || "");
-  if (route && route.startsWith("/")) params.route = route.slice(0, 180);
-  const eventId = cleanText(input.event_id || payload.event_id || crypto.randomUUID());
-  params.event_id = eventId.slice(0, 80);
-  return {
-    ok: true,
-    event: {
-      name: eventName,
-      params
-    }
-  };
-}
-
-async function handleGa4Event(request, env) {
-  if (request.method === "GET" || request.method === "HEAD") {
-    return jsonResponse({
-      ok: true,
-      schema: "gah.ga4.mp.v1",
-      mode: ga4Config(env).dryRun ? "dry-run" : (ga4Config(env).debug ? "debug" : "live"),
-      allowed_events: Object.keys(GA4_ALLOWED_EVENTS)
-    }, 200, { "X-Robots-Tag": "noindex,nofollow" });
-  }
-  if (request.method !== "POST") return jsonResponse({ ok: false, error: "method_not_allowed" }, 405);
-  let payload = {};
+function ga4SearchClient(request, env) {
+  if (ga4Config(env).dryRun || request.method !== "POST") return "";
+  const url = new URL(request.url);
+  if (url.origin !== "https://grokarchivehub.com" || url.pathname !== "/api/search") return "";
+  if (request.headers.get("Origin") !== url.origin || request.headers.get("Sec-Fetch-Site") !== "same-origin" ||
+      request.headers.get("X-GAH-Analytics-Consent") !== "granted" ||
+      request.headers.get("Sec-GPC") === "1" || request.headers.get("DNT") === "1" ||
+      /bot|crawler|spider|HeadlessChrome|Playwright|Lighthouse|GAH[- /](?:Monitor|Analytics-Audit)/i.test(request.headers.get("User-Agent") || "")) return "";
   try {
-    payload = await request.json();
-  } catch (_) {
-    return jsonResponse({ ok: false, error: "invalid_json" }, 400);
-  }
-  if (!ga4ConsentAllows(payload)) {
-    return jsonResponse({ ok: true, suppressed: true, reason: "analytics_consent_denied", outbound_send_count: 0 }, 200);
-  }
-  const sanitized = ga4SanitizeEvent(payload);
-  if (!sanitized.ok) return jsonResponse({ ok: false, error: sanitized.error, outbound_send_count: 0 }, 400);
+    const cookies = parseCookies(request);
+    const c = JSON.parse(decodeURIComponent(cookies.get("gah_consent_shared_v1") || ""));
+    const age = Date.now() - Date.parse(c.updated_at);
+    if (c.version !== 1 || !["accept","partial"].includes(c.choice) || !Number.isFinite(age) || age < 0 ||
+        age > 15552000000 || c.consent?.analytics_storage !== "granted") return "";
+    const ga = /^GA1\.[0-9]{1,2}\.([0-9]{1,20}\.[0-9]{1,20})$/.exec(cookies.get("_ga") || "");
+    return ga ? ga[1] : "";
+  } catch (_) { return ""; }
+}
+async function ga4SearchObservation(request, response, env, clientId) {
+  if (!clientId || !response.ok || !/application\/json/i.test(response.headers.get("Content-Type") || "")) return;
+  const data = await response.json().catch(() => null);
+  if (!data || data.ok !== true || !Number.isSafeInteger(data.hit_count) || data.hit_count < 0) return;
+  // Fail closed if the existing atomic limiter is unavailable. IP is never sent to Google.
+  const limited = await gahSecDoCall(env, {op:"check",scope:"ga4-archive-search",key:gahSecClientIp(request),max:12,windowMs:60000});
+  if (!limited || limited.ok !== true || limited.limited !== false) return;
   const config = ga4Config(env);
-  const mpPayload = {
-    client_id: cleanText(payload.client_id || `gah.${sanitized.event.params.event_id}`),
-    events: [sanitized.event]
-  };
-  if (config.dryRun) {
-    return jsonResponse({
-      ok: true,
-      mode: "dry-run",
-      outbound_send_count: 0,
-      event: sanitized.event.name,
-      params: sanitized.event.params
-    });
-  }
-  const collectPath = config.debug ? "/debug/mp/collect" : "/mp/collect";
-  const endpoint = `${config.endpoint}${collectPath}?measurement_id=${encodeURIComponent(config.measurementId)}&api_secret=${encodeURIComponent(env.GA4_API_SECRET)}`;
+  if (config.dryRun) return;
+  const count = Math.min(1000, data.hit_count);
+  const body = { client_id: clientId, consent: {ad_user_data:"DENIED",ad_personalization:"DENIED"},
+    events:[{name:count === 0 ? "archive_search_zero_results" : "archive_search",
+      params:{route:"/search",result_count:count}}] };
+  const endpoint = new URL(config.debug ? "https://www.google-analytics.com/debug/mp/collect" : "https://www.google-analytics.com/mp/collect");
+  endpoint.searchParams.set("measurement_id",config.measurementId);
+  endpoint.searchParams.set("api_secret",env.GA4_API_SECRET);
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 1500);
+  const timeout = setTimeout(() => controller.abort(),1500);
   try {
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(mpPayload),
-      signal: controller.signal
-    });
-    const body = config.debug ? await response.text().catch(() => "") : "";
-    return jsonResponse({
-      ok: response.ok,
-      mode: config.debug ? "debug" : "live",
-      outbound_send_count: response.ok ? 1 : 0,
-      status: response.status,
-      debug_response_present: Boolean(body)
-    }, response.ok ? 200 : 202);
-  } catch (_) {
-    return jsonResponse({ ok: true, mode: "fail-open-user-request", outbound_send_count: 0, error: "analytics_send_failed" }, 202);
-  } finally {
-    clearTimeout(timeout);
+    await fetch(endpoint.toString(), {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body),signal:controller.signal,redirect:"error"});
+  } catch (_) { /* analytics never breaks archive search; do not log secrets */ }
+  finally { clearTimeout(timeout); }
+}
+async function handleGa4Event(request, env) {
+  const headers = {"X-Robots-Tag":"noindex,nofollow"};
+  if (request.method === "GET" || request.method === "HEAD") {
+    const config = ga4Config(env);
+    return jsonResponse({ok:true,schema:"gah.ga4.mp.v2",mode:config.dryRun?"dry-run":config.debug?"debug":"live",
+      allowed_events:["archive_search","archive_search_zero_results"],public_event_submission:false},200,headers);
   }
+  // No caller-supplied events, client IDs, paths, queries or asserted consent.
+  return jsonResponse({ok:false,error:"method_not_allowed"},405,{...headers,Allow:"GET, HEAD"});
 }
 
 function staticEditorialLastmod(path) {
@@ -18859,6 +18785,10 @@ export default {
     const started = Date.now();
     try {
       const original = await this.handleStagingFetch(request, env);
+      const ga4Client = ga4SearchClient(request, env);
+      if (ga4Client && ctx?.waitUntil && original.ok) {
+        ctx.waitUntil(ga4SearchObservation(request, original.clone(), env, ga4Client).catch(() => {}));
+      }
       const scripts = consentScriptTag(env, request);
       const eligible = canInstrumentHtmlResponse(original, request);
       let normalized = false;
