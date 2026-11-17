@@ -12,7 +12,7 @@ async function fixture(options={}) {
  let tagRequests=0;
  await context.route('**/*',async route=>{
   const url=new URL(route.request().url());
-  if(url.hostname==='www.googletagmanager.com') {assert.equal(url.pathname,'/gtm.js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
+  if(url.hostname==='www.googletagmanager.com') {assert.equal(url.pathname,'/gtag/js');assert.equal(url.searchParams.get('id'),'G-XHE84C8D1V');tagRequests++;return route.fulfill({status:200,contentType:'application/javascript',body:'window.__tag_fixture_loaded = true;'});}
   if(url.pathname.startsWith('/frontdoor/')) {
    const name=url.pathname.slice('/frontdoor/'.length);
    if(!['analytics.js','consent.js','consent.css'].includes(name))return route.abort();
