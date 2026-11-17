@@ -1549,7 +1549,7 @@ invitation as SPIEF panelist with a program and an offered meeting list
 (Kudrin, Shuvalov, Dvorkovich, Sergey Ivanov, Ulyukaev, Nabiullina,
 Lavrov). Barak: "I'm planning to come. I'm highly interested in meeting
 
-# 4,6,7, on the list" (Ivanov, Nabiullina, Lavrov) — proposals, not
+4,6,7, on the list" (Ivanov, Nabiullina, Lavrov) — proposals, not
 
 meetings — "and also anyone of the others that you think is worth
 meeting"; notes prior Forums' receptions were "arranged by Yuri

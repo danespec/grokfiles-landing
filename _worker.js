@@ -4371,7 +4371,7 @@ async function gahServePreparedAtlas(request,env) {
   if(adsenseApproved(env))return serveFrontdoorEnhanced(request,env,"/atlas.html",{canonical:"https://grokarchivehub.com/atlas/"});
   const markdown=/\btext\/markdown\b/i.test(request.headers.get("Accept")||"");
   const path=markdown?"/atlas/prepared-reader.md":"/atlas/prepared-reader.html";
-  const value=markdown?ATLAS_BUNDLED_PUBLICATION.markdown.replace(/^# (4,6,7, on the list.*)$/gm,"$1"):ATLAS_BUNDLED_PUBLICATION.html.replace(/<h1>(4,6,7, on the list[^<]*)<\/h1>/g,"<p>$1</p>");
+  const value=markdown?ATLAS_BUNDLED_PUBLICATION.markdown:ATLAS_BUNDLED_PUBLICATION.html;
   const asset=typeof value==="string"&&value.length?new Response(value,{headers:{"Content-Type":markdown?"text/markdown":"text/html","Cache-Control":"public, max-age=0, must-revalidate"}}):new Response(null,{status:404});
   if(!asset.ok||ATLAS_PREPARED_READER.schema!=="gah.atlas.prepared-reader.v1")return new Response("Published Atlas reader unavailable",{status:503,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
   const headerRequest=new Request(request.url,{method:"HEAD",headers:{Accept:"text/html"}});
