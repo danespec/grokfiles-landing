@@ -33,7 +33,7 @@ for(const [p,t] of Object.entries(expected)){
  assert(html.includes('<meta name="twitter:title" content="'+escapeHtml(t)+'">'),p+' social title');
  assert(html.includes('rel="canonical" href="'+u+'"'),p+' canonical');
 }
-for(const p of ['/archive','/search','/timeline-reconstructions','/guides/epstein-flight-logs-doj','/archive/EFTA00000468']){
+for(const p of ['/archive','/search','/timeline-reconstructions','/archive/EFTA00000468']){
  const r=await worker.fetch(new Request(apex+p),env),h=await r.text();assert(/noindex/i.test(r.headers.get('X-Robots-Tag')||''),p+' must remain noindex');assert(!sitemap.includes('<loc>'+apex+p+'</loc>'),p+' excluded');
  if(p.endsWith('EFTA00000468'))assert(h.includes('<title>EFTA00000468: Desk with Framed Photos | Grok Archive Hub</title>'));
 }

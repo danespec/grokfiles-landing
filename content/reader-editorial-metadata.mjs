@@ -296,8 +296,8 @@ export const READER_EDITORIAL_METADATA = {
     "description": "Read EFTA02858491: FBI Follow-Up: Source Protection. Compare the source, documentary context and limits before drawing conclusions."
   },
   "https://grokarchivehub.com/archive/ids": {
-    "title": "Identifier pages",
-    "description": "Read “Identifier pages” with original sources, context and limits on what the records establish."
+    "title": "Epstein Files EFTA Bates Identifier Index",
+    "description": "Find reviewed EFTA Bates-number dossiers, original DOJ PDFs and related investigations. Distinguish source records from editorial conclusions."
   },
   "https://grokarchivehub.com/banking-records": {
     "title": "Banking Records",
