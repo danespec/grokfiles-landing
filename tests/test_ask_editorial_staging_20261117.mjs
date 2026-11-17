@@ -45,6 +45,12 @@ assert.equal(await ask('EFTA00013764'),null);assert.equal(await ask('Leon Black 
 const known=questions[1],good=await ask(known);assert(!good.answer_abstained);
 const changed=await ask(known,{...env,ASSETS:{fetch:async()=>new Response('<main>Changed source</main>')}});
 assert(changed.answer_abstained);
+// Cloudflare Pages may return a canonical redirect for explicit .html paths.
+const canonicalAssets={fetch:async r=>{const u=new URL(r.url);assert.equal(u.origin,stage);assert.equal(r.redirect,'manual');if(u.pathname.endsWith('.html'))return new Response(null,{status:308,headers:{Location:u.pathname.slice(0,-5)}});return ASSETS.fetch(new Request(u.origin+u.pathname+'.html'))}};
+const canonicalResult=await ask(known,{...env,ASSETS:canonicalAssets});
+assert.deepEqual(canonicalResult.answer_claims,good.answer_claims);
+const wrongCanonical=await ask(known,{...env,ASSETS:{fetch:async r=>new Response(r.url.endsWith('.html')?'Wrong explicit asset':'Wrong canonical asset')}});
+assert(wrongCanonical.answer_abstained);
 const withdrawn=await ask(known,{...env,GAH_ASK_WITHDRAWN_PUBLICATIONS:JSON.stringify(MODEL.documents.map(d=>d.url))});assert(withdrawn.answer_abstained);
 assert((await ask(known,{...env,GAH_ASK_WITHDRAWN_SOURCES:'not json'})).answer_abstained);
 const sourceWithdrawn=await ask(known,{...env,GAH_ASK_WITHDRAWN_SOURCES:JSON.stringify(good.answer_claims.flatMap(c=>c.citations.map(x=>x.id)))});

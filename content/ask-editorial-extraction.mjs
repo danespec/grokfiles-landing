@@ -106,10 +106,20 @@ export async function askEditorialExtract(question,env,request,budget=async()=>f
  const boundPacket=askEditorialCandidate(question,env,production);
  const ranked=[];
  for(const row of candidates.slice(0,8)){
-  const source=new URL(row.url),local=new URL(request.url);local.pathname=source.pathname+'.html';local.search='';local.hash='';
-  let response;try{response=await env.ASSETS.fetch(new Request(local))}catch{continue}
-  if(!response.ok)continue;
-  const html=await response.text();if(await hash(html)!==row.source_sha256)continue;
+  // Pages may canonicalize .html to the extensionless route. Only local ASSETS
+  // bytes matching the registered publication digest are eligible; never fetch the public page.
+  const source=new URL(row.url);
+  let html=null;
+  for(const path of [source.pathname+'.html',source.pathname]){
+   const local=new URL(request.url);local.pathname=path;local.search='';local.hash='';
+   try{
+    const response=await env.ASSETS.fetch(new Request(local,{redirect:'manual'}));
+    if(!response.ok)continue;
+    const bytes=await response.text();
+    if(await hash(bytes)===row.source_sha256){html=bytes;break}
+   }catch{}
+  }
+  if(html===null)continue;
   if(boundPacket?.answer_abstained===false&&boundPacket.answer_claims.every(c=>c.publication_url===row.url&&!askSourceWithdrawn(env,row.url,c.citations.map(x=>x.id)))){
    return {...boundPacket,...extra,related_research:relatedNavigation([row],boundPacket.answer_claims,env),answer_generation:'source_bound_staging_candidate',publication_bytes_verified:true};
   }

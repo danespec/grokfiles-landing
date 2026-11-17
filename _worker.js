@@ -8065,7 +8065,7 @@ function ensureV3DocumentShell(body) {
   html = html
     .replace(/(\bsrc=["'])\/assets\/v3-newsletter-062\.js(?:\?[^"']*)?(["'])/gi, '$1/assets/v3-source-links-063.js$2')
     .replace(/(\bsrc=["'])\/assets\/v3-barak-027\.js(?:\?[^"']*)?(["'])/gi, '$1/assets/v3-barak-source-links-063.js$2')
-    .replace(/(\bsrc=["'])\/assets\/v3-source-links-063\.js(?:\?[^"']*)?(["'])/gi, '$1/assets/v3-source-links-063.js?v=GAH-PRACTICAL-RESEARCH-20261115$2');
+    .replace(/(\bsrc=["'])\/assets\/v3-source-links-063\.js(?:\?[^"']*)?(["'])/gi, '$1/assets/v3-source-links-063.js?v=GAH-ASK-EDITORIAL-V3$2');
   return html;
 }
 
