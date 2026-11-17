@@ -43,12 +43,15 @@ assert.deepEqual(extractCitedBlocks('<main><p>A long enough purported documentar
 const footnote=extractCitedBlocks('<main><p>A documentary passage with enough detail to test an explicit footnote <a href="#note-1">[1]</a></p><li id="note-1"><a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA00013764</a></li></main>','https://grokarchivehub.com/example');
 assert(footnote.some(c=>c.text.includes('documentary passage')&&c.citations[0].id==='EFTA00013764'));
 assert.deepEqual(extractCitedBlocks('<main><p>A disclosed corporate wire record includes account 000001200135 and cites <a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA00013764</a></p></main>','https://grokarchivehub.com/example'),[]);
+const exact=await (await post('EFTA00013764')).json();assert.equal(exact.hits[0].id,'EFTA00013764');assert.equal(exact.hits.length,1);assert(exact.answer_abstained);assert.deepEqual(exact.answer_claims,[]);
+const missingExact=await (await post('EFTA99999999')).json();assert.deepEqual(missingExact.hits,[]);assert(missingExact.answer_abstained);
+const withdrawnExact=await (await post('EFTA00013764',{...env,GAH_ASK_WITHDRAWN_SOURCES:'["EFTA00013764"]'})).json();assert.deepEqual(withdrawnExact.hits,[]);
 const response=await post(known),body=await response.json();assert.equal(response.status,200);assert.equal(response.headers.get('X-GAH-Ask-Bridge'),ASK_VERSION);assert(!body.answer_abstained);assert.match(response.headers.get('X-Robots-Tag'),/noindex/);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:undefined})).status,503);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>new Response('{"limited":true}')})}})).status,429);
 const NativeRequest=globalThis.Request;globalThis.Request=class extends NativeRequest{constructor(input,init={}){super(input,init.body?{...init,duplex:'half'}:init)}};
 let calls=[];globalThis.fetch=async r=>{calls.push(new URL(r.url).pathname);return new Response(JSON.stringify({ok:true,answer:'Original upstream response',hits:[{id:'EFTA00013764',path:'/volume1/private'}]}),{headers:{'Content-Type':'application/json'}})};
-for(const [q,e,host,intent,expected] of [[known,{},'https://grokarchivehub.com','archive','/api/search'],[known,env,'https://grokarchivehub.com','archive','/api/search'],['Where is the contact page?',env,stage,'help','/api/help'],['EFTA00013764',env,stage,'archive','/api/search']]){
+for(const [q,e,host,intent,expected] of [[known,{},'https://grokarchivehub.com','archive','/api/search'],[known,env,'https://grokarchivehub.com','archive','/api/search'],['Where is the contact page?',env,stage,'help','/api/help']]){
  const r=await post(q,e,host,intent),a=await r.json();assert.equal(a.answer,'Original upstream response');assert.equal(calls.at(-1),expected);assert(!('path' in a.hits[0]));
 }
 if(process.env.GAH_ASK_VERIFY_OUTPUT)await fs.writeFile(process.env.GAH_ASK_VERIFY_OUTPUT,JSON.stringify({coverage:coverageRows,samples},null,2));

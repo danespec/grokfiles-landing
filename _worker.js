@@ -1,4 +1,4 @@
-import {askEditorialExtract,ASK_VERSION} from "./content/ask-editorial-extraction.mjs";
+import {askEditorialExtract,askSourceWithdrawn,ASK_VERSION} from "./content/ask-editorial-extraction.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
 import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
@@ -18783,6 +18783,12 @@ async function handleAskGahBridge(request, env = {}) {
 
   // Staging-only source-bound editorial candidates; help, exact IDs and archive fallback stay unchanged.
   const editorialStage = isStagingEnv(env) && new URL(request.url).hostname.endsWith(".gah-staging-517b8499.pages.dev");
+  const exactStageId=editorialStage&&intent==="archive"&&question.match(/^EFTA\d{8}$/i)?.[0]?.toUpperCase();
+  if(exactStageId){
+    const dossier=GAH_IDENTIFIER_DOSSIERS.get(exactStageId),url="https://grokarchivehub.com/archive/"+exactStageId;
+    const available=Boolean(dossier)&&!askSourceWithdrawn(env,url,[exactStageId]);
+    return jsonResponse({ok:true,mode:"exact_identifier_locator_staging",intent:"archive",answer:available?"Exact identifier located. Open the verified public dossier; this locator does not certify the document’s claims.":"This identifier has no available verified public locator in the staging catalog.",answer_abstained:true,answer_reason:available?"exact_identifier_locator_only":"exact_identifier_unavailable",answer_claims:[],citations:[],hits:available?[{id:exactStageId,efta_id:exactStageId,title:dossier.title,url,source_url:dossier.source,scope:"verified_public_locator_only"}]:[],generated_claims:0},200,{"X-GAH-Ask-Bridge":ASK_VERSION,"X-Robots-Tag":"noindex, nofollow, noarchive"});
+  }
   if (intent === "archive" && editorialStage && !/\bEFTA\d{8}\b/i.test(question)) {
     let rate;
     try { rate=await gahSecDoCall(env,{op:"check",scope:"ask-editorial-staging",key:gahSecClientIp(request),max:30,windowMs:60000}); } catch {}
