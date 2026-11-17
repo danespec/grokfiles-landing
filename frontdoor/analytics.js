@@ -89,14 +89,14 @@
     script.async = true;
     script.setAttribute('data-cfasync', 'false');
     script.setAttribute('data-gah-google-tag', 'true');
-    script.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(id);
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
     script.onerror = function () { loading = false; state('tag-load-failed'); script.remove(); };
     window.gtag('set', {page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub'});
     window.gtag('js', new Date());
     if (granted) automaticGrantedNavigation = navigation;
     else sentCookielessNavigation = navigation;
     // The actual Google tag produces an initial pageview even when send_page_view is false.
-    // The unified loader uses Google-only container settings and gtag set, not deprecated config.
+    // Use the supported gtag.js loader for a G- measurement ID; Google-only tag settings and gtag set own configuration.
     // Configure one automatic initial view; never send an additional manual view in the same consent state.
     window.gtag('set', Object.assign({send_page_view: true, cookie_domain: 'grokarchivehub.com', allow_google_signals: false, allow_ad_personalization_signals: false, page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub', url_passthrough: false}, debug ? {debug_mode:true,traffic_type:'gah_operations'} : {}));
     script.onload = function () {

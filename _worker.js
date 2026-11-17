@@ -7293,7 +7293,7 @@ function consentBootTag(env = {}, request = null) {
 }
 
 function consentScriptTag(env = {}, request = null) {
-  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-002"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
+  return `${consentBootTag(env, request)}\n  <link rel="stylesheet" href="/frontdoor/consent.css?v=GAH-ANALYTICS-GLOBAL-001">\n  <script data-cfasync="false" src="/frontdoor/analytics.js?v=GAH-ANALYTICS-UNIFIED-003"></script>\n  <script data-cfasync="false" defer src="/frontdoor/consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>`;
 }
 
 function ensureConsentScript(body, env = {}, policyPath = "") {
