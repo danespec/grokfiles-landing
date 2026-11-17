@@ -903,8 +903,11 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
   };
 }
 
+const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
+
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
+  if (GAH_SEARCH_RECOVERY_ROUTES.has(path)) return routePolicy(AD_ROUTE_STATUS.exclude,"reviewed-search-discovery-20261117","index,follow");
   if(publicationRule("https://grokarchivehub.com"+path)?.noindex)return routePolicy(AD_ROUTE_STATUS.exclude,"consolidated-or-research-support-page","noindex,follow");
   if(['/investigations/mcc-final-48-hours-source-chain','/dispatches/epstein-mcc-timeline','/research/evidence/mcc-epstein-control-spine'].includes(path)) return routePolicy(AD_ROUTE_STATUS.exclude, "mcc-companion-analysis", "noindex,follow");
   if (path === "/archive/ids") return routePolicy(AD_ROUTE_STATUS.exclude, "published-identifier-register", "index,follow");
@@ -1485,7 +1488,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap", "2026-10-08"],
   ["https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale", "2026-09-30"],
-  ["https://grokarchivehub.com/", "2026-10-23"],
+  ["https://grokarchivehub.com/", "2026-11-17"],
   ["https://grokarchivehub.com/investigations/hold-the-letter", "2026-10-06"],
   ["https://grokarchivehub.com/research/epstein-final-48-hours-mcc", "2026-10-02"],
   ["https://grokarchivehub.com/research/evidence/birthday-book", "2026-10-02"],
@@ -1632,8 +1635,36 @@ const AGENT_READY_ROBOTS_TXT = [
   "Disallow: /api/newsletter/",
   "Disallow: /pdf-viewer",
   "Disallow: /pdf-viewer.html",
+  "Disallow: /admin/",
+  "Disallow: /members/",
+  "Disallow: /auth/",
+  "Disallow: /operator/",
+  "Disallow: /agent/identity",
+  "Disallow: /oauth2/",
+  "Disallow: /authorize",
   "Sitemap: https://grokarchivehub.com/sitemap-index.xml",
   "Agentmap: https://grokarchivehub.com/.well-known/ai-catalog.json",
+  "",
+  "User-agent: GPTBot",
+  "User-agent: ClaudeBot",
+  "User-agent: Google-Extended",
+  "User-agent: Applebot-Extended",
+  "User-agent: CCBot",
+  "User-agent: anthropic-ai",
+  "User-agent: Claude-Web",
+  "User-agent: Amazonbot",
+  "User-agent: Bytespider",
+  "User-agent: Diffbot",
+  "User-agent: omgili",
+  "User-agent: cohere-ai",
+  "User-agent: MistralAI-Training",
+  "User-agent: meta-externalagent",
+  "User-agent: GoogleOther",
+  "User-agent: Google-CloudVertexBot",
+  "User-agent: Baiduspider",
+  "User-agent: PetalBot",
+  "Disallow: /",
+  "",
   "# GAH-AGENT-READINESS-L1-001",
   "# search=yes: indexing and link/snippet discovery allowed",
   "# ai-input=yes: retrieval/grounding for AI answers allowed",
@@ -3536,6 +3567,10 @@ const GAH_LLM_DISCOVERY = `# Grok Archive Hub
 - [Atlas release status](https://grokarchivehub.com/api/v1/atlas/status): published version and source-data fingerprint.
 - [Investigations](https://grokarchivehub.com/investigations): source-linked dossiers.
 - [Search](https://grokarchivehub.com/search): public archive search.
+- [DOJ Data Sets 1–12](https://grokarchivehub.com/guides/doj-epstein-data-sets): official numbered releases and Data Set 9 navigation.
+- [How to search Epstein files](https://grokarchivehub.com/guides/how-to-search-epstein-files): EFTA lookup, OCR and source verification.
+- [EFTA identifier register](https://grokarchivehub.com/archive/ids): curated identifiers with source links and evidentiary limitations.
+- [Archive scope](https://grokarchivehub.com/archive-scope): distinguishes the index from published proof.
 - [Ask GAH guide](https://grokarchivehub.com/videos/ask-gah-search-epstein-files): interactive website assistant instructions; automated clients should use the documented read-only API or MCP, not private assistant routes.
 - [St. Thomas investigation](https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014): published investigation and evidence limitations.
 - [Qatar and Carbyne investigation](https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne): published investigation and cited records.
@@ -6860,6 +6895,8 @@ export function gahResearchIndexablePublication(loc) {
   try {
     const url = new URL(loc);
     if (url.origin !== "https://grokarchivehub.com" || url.search || url.hash) return false;
+    // SEO promotion is not admission to the separately fingerprinted research corpus.
+    if (GAH_SEARCH_RECOVERY_ROUTES.has(cleanPath(url.pathname))) return false;
     const rule = publicationRule(loc);
     if (rule?.canonical && rule.canonical !== loc) return false;
     return sitemapEntryIsIndexable([loc, ""]);
@@ -6973,7 +7010,7 @@ async function serveSitemapWithPublishedDispatches(request, env) {
   const headers = new Headers();
   headers.set("Content-Type", "application/xml; charset=utf-8");
   headers.set("Cache-Control", "no-store");
-  headers.set("X-GAH-Sitemap-AdSense-Cleanup", "strong-public-pages-only");
+  headers.set("X-GAH-Sitemap-AdSense-Cleanup", "reviewed-search-landing-pages-restored");
   headers.set("X-GAH-Sitemap-MCC-Timeline", "published");
   headers.set("X-GAH-Sitemap-Jail-Logs", "published");
   headers.set("X-GAH-Sitemap-EFTA-Guide", "published");
@@ -7383,6 +7420,7 @@ function globalFooterHtml() {
         </div>
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="/investigations">Investigations</a>
+        <a href="/atlas/">Story Atlas</a>
           <a href="/evidence-briefs">Evidence Briefs</a>
           <a href="/document-autopsies">Document Autopsies</a>
           <a href="/timeline-reconstructions">Timelines</a>
@@ -7762,6 +7800,7 @@ function v3DocumentHeaderHtml() {
       </a>
       <nav class="nav-main" aria-label="Primary">
         <a href="/investigations">Investigations</a>
+        <a href="/atlas/">Story Atlas</a>
         <a href="/latest">Latest</a>
         <a href="/topics">Topics</a>
         <a href="/evidence-briefs">Evidence</a>
@@ -7782,6 +7821,7 @@ function v3DocumentHeaderHtml() {
     </div>
     <nav class="nav-mobile" id="gah-v3-mobile-nav" data-mobile>
       <a href="/investigations">Investigations</a>
+        <a href="/atlas/">Story Atlas</a>
       <a href="/latest">Latest</a>
       <a href="/topics">Topics</a>
       <a href="/dispatches">Dispatches</a>
@@ -8417,6 +8457,8 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
     body = ensureV3DocumentShell(body);
   }
   body = applyEditorialPublicationStats(body);
+  body = body.replace(/(<b data-gah-atlas-story-count>)\d+(<\/b>)/g,(_,a,b)=>a+String(ATLAS_BUNDLED_PUBLICATION.catalog.total_stories)+b);
+  if (cleanPath(policyPath)==="/atlas") body=body.replace(/<h1>(4,6,7, on the list[^<]*)<\/h1>/g,"<p>$1</p>");
   if (!/<link\b[^>]*rel=["'][^"']*\bai-catalog\b/i.test(body)) {
     body = body.replace(/<\/head>/i, '  <link rel="ai-catalog" href="/.well-known/ai-catalog.json">\n</head>');
   }
@@ -18856,7 +18898,7 @@ export default {
         return new Response(null,{status:404,headers:{"Cache-Control":"no-store"}});
       }
       if(!["GET","HEAD"].includes(request.method)) return new Response(null,{status:405,headers:{Allow:"GET, HEAD","Cache-Control":"no-store"}});
-      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY+(publicResearchEnabled011(request,env)?"\n- [Editorial research search](https://grokarchivehub.com"+SEARCH_011+"): hybrid citation-candidate retrieval; supplement to the archive.\n- [Editorial corpus](https://grokarchivehub.com"+CORPUS_011+"): versioned public editorial metadata snapshot.\n":"")+(releaseSurfaceEnabled(request,env)?"\n- [Publication changes](https://grokarchivehub.com/api/v1/publications/changes): versioned changes to the bounded editorial register, not the entire corpus.\n":""),{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
+      return new Response(request.method==="HEAD"?null:GAH_LLM_DISCOVERY+(publicResearchEnabled011(request,env)?"\n- [Editorial research search](https://grokarchivehub.com"+SEARCH_011+"?q=EFTA00013764): requires q; hybrid citation-candidate retrieval; supplement to the archive.\n- [Editorial corpus](https://grokarchivehub.com"+CORPUS_011+"): versioned public editorial metadata snapshot.\n":"")+(releaseSurfaceEnabled(request,env)?"\n- [Publication changes](https://grokarchivehub.com/api/v1/publications/changes): versioned changes to the bounded editorial register, not the entire corpus.\n":""),{headers:{...gahAtlasCatalogHeaders(isStagingEnv(env)?"no-store":"public, max-age=300"),"Content-Type":"text/plain; charset=utf-8","Link":AGENT_DISCOVERY_LINK_HEADER}});
     }
 
     if (isAccountLevelAnalyticsGatewayPath(path)) {
