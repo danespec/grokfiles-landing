@@ -1,0 +1,131 @@
+{
+  "scope": "Local execution of current workflow commands; not GitHub CI or independent human validation",
+  "steps": [
+    {
+      "step": "Verify internal links and promoted slug targets",
+      "exit": 0,
+      "seconds": 0.55
+    },
+    {
+      "step": "Verify dossier routing, sitemaps and metadata",
+      "exit": 0,
+      "seconds": 1.701
+    },
+    {
+      "step": "Verify wiki host and receipt contracts",
+      "exit": 0,
+      "seconds": 1.357
+    },
+    {
+      "step": "Verify full reader quality regression gates",
+      "exit": 0,
+      "seconds": 1.83
+    },
+    {
+      "step": "Verify source PDF bytes, route coverage and editorial metadata",
+      "exit": 0,
+      "seconds": 0.759
+    },
+    {
+      "step": "Verify hub metadata, source links and primary MCC policy",
+      "exit": 0,
+      "seconds": 0.494
+    },
+    {
+      "step": "Verify all evidence asset identities and acknowledged reader APIs",
+      "exit": 0,
+      "seconds": 1.5
+    },
+    {
+      "step": "Verify consolidation policy, canonical homes and receipt twins",
+      "exit": 0,
+      "seconds": 0.618
+    },
+    {
+      "step": "Verify Story Atlas v3.8",
+      "exit": 0,
+      "seconds": 0.815
+    },
+    {
+      "step": "Verify minimized Atlas agent catalog and secure discovery",
+      "exit": 0,
+      "seconds": 7.352
+    },
+    {
+      "step": "Staging research preview publication and security gate",
+      "exit": 0,
+      "seconds": 0.529
+    },
+    {
+      "step": "Intent routing and exact retrieval invariants",
+      "exit": 0,
+      "seconds": 0.543
+    },
+    {
+      "step": "Publication fingerprint and human-judgment guard",
+      "exit": 0,
+      "seconds": 0.26
+    },
+    {
+      "step": "Bounded production retrieval release gate",
+      "exit": 0,
+      "seconds": 0.531
+    },
+    {
+      "step": "Reviewed editorial ranking and full archive preservation gate",
+      "exit": 0,
+      "seconds": 0.783
+    },
+    {
+      "step": "Publication corpus freshness, public research and isolation gates",
+      "exit": 0,
+      "seconds": 7.37
+    },
+    {
+      "step": "Private telemetry schema, authentication and aggregate query contracts",
+      "exit": 0,
+      "seconds": 5.771
+    },
+    {
+      "step": "Frozen benchmark and independent-review guard",
+      "exit": 0,
+      "seconds": 7.26
+    },
+    {
+      "step": "Ask GAH staging editorial answer and abstention gate",
+      "exit": 0,
+      "seconds": 4.619
+    },
+    {
+      "step": "Source-bound title enrichment and indexing preservation",
+      "exit": 0,
+      "seconds": 0.784
+    },
+    {
+      "step": "Sitewide search discovery and publication boundaries",
+      "exit": 0,
+      "seconds": 2.991
+    },
+    {
+      "step": "Research citation packet and intent guard",
+      "exit": 0,
+      "seconds": 0.985
+    },
+    {
+      "step": "Filtered editorial passage search candidate",
+      "exit": 0,
+      "seconds": 6.664
+    },
+    {
+      "step": "Private hybrid and source-bound extraction contracts",
+      "exit": 0,
+      "seconds": 3.65
+    },
+    {
+      "step": "Practical retrieval and exact cache contracts",
+      "exit": 0,
+      "seconds": 1.73
+    }
+  ],
+  "passed": true
+}

@@ -33,31 +33,49 @@ export function extractCitedBlocks(html,url){
   if(!blocked)clean+=token;if(!voids.has(name))stack.push({name,blocked});
  }
  const ids=new Set([...main.matchAll(/\bid=["']([^"']+)["']/g)].map(m=>m[1]));
- const blocks=[];
+ const linkedIds=new Map(),references=new Map();
+ const directLinks=fragment=>{
+  const result=[];
+  for(const a of fragment.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){
+   let target;try{target=new URL(decode(a[1]),url)}catch{continue}
+   const id=(text(a[2])+' '+a[1]).match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase();
+   const locator=target.href.match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase();
+   if(id&&target.protocol==='https:'&&['grokarchivehub.com','www.justice.gov','justice.gov'].includes(target.hostname)&&(!locator||id===locator)&&(!target.hash||target.pathname!==new URL(url).pathname||ids.has(target.hash.slice(1))))result.push({id,source_id:id,title:id,url:target.href});
+  }return result;
+ };
+ for(const citation of directLinks(clean))linkedIds.set(citation.id,citation);
+ // Only explicit numbered footnotes can attach the source-register support.
+ for(const entry of clean.matchAll(/<(li|p|tr|div)\b[^>]*\bid=["']([^"']+)["'][^>]*>([\s\S]*?)<\/\1>/gi)){
+  const refs=directLinks(entry[3]);if(refs.length)references.set('#'+entry[2],refs);
+ }
+ const blocks=[],limitations=[];
  for(const m of clean.matchAll(/<(p|li|tr|td)\b([^>]*)>([\s\S]*?)<\/\1>/gi)){
   if(/\bhidden\b|aria-hidden=["']true|display\s*:\s*none|\b(?:private|internal|sensitive|redacted|raw|transcript)\b/i.test(m[2]))continue;
   const body=m[3],quote=text(body);
   if(quote.length<40||quote.length>1400||sensitive.test(quote))continue;
+  if(/\b(?:does not|do not|not establish|not prove|unresolved|unknown|unproven|cannot|limitation|missing)\b/i.test(quote)&&quote.length<=900)limitations.push(quote);
   const citations=[];
   // A citation must occur in this same block and resolve to an actual link/anchor.
   for(const a of body.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){
    const label=text(a[2]),id=(label+' '+a[1]).match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase()||(/leak\s*(?:id|#|:)?\s*(\d+)/i.exec(label)?.[1]? 'leak id '+/leak\s*(?:id|#|:)?\s*(\d+)/i.exec(label)[1]:null);
-   if(!id)continue;
+   if(!id){if(a[1].startsWith('#')&&references.has(a[1]))citations.push(...references.get(a[1]));continue}
    let target;try{target=new URL(decode(a[1]),url)}catch{continue}
    if(target.protocol!=='https:'||!['grokarchivehub.com','www.justice.gov','justice.gov'].includes(target.hostname))continue;
    if(target.origin===new URL(url).origin&&target.pathname===new URL(url).pathname&&target.hash&&!ids.has(target.hash.slice(1)))continue;
-   if(id.startsWith('leak')&&(!target.hash||target.pathname!==new URL(url).pathname))continue;
+   const locatorId=target.href.match(/\bEFTA\d{8}\b/i)?.[0]?.toUpperCase();
+   if(id.startsWith('EFTA')&&locatorId&&locatorId!==id)continue;
+   if(id.startsWith('leak')&&(target.hash!=='#source-'+id.replace('leak id ','')||target.pathname!==new URL(url).pathname))continue;
    citations.push({id,source_id:id,title:id,url:target.href});
   }
   for(const id of quote.match(/\bEFTA\d{8}\b/g)||[]){
    if(citations.some(c=>c.id===id))continue;
-   const target=ids.has('source-'+id)?url+'#source-'+id:ids.has(id)?url+'#'+id:null;
+   const target=linkedIds.get(id)?.url||(ids.has('source-'+id)?url+'#source-'+id:ids.has(id)?url+'#'+id:null);
    if(target)citations.push({id,source_id:id,title:id,url:target});
   }
   if(!citations.length)continue;
   blocks.push({text:quote,citations:[...new Map(citations.map(c=>[c.id,c])).values()],classification:/\b(?:unresolved|unknown|not establish|not prove|not evidence|missing|unproven)\b/i.test(quote)?'unresolved':/\b(?:alleged|allegation|claims?|reportedly)\b/i.test(quote)?'attributed':/\b(?:proposed|proposal|invited|invitation|draft)\b/i.test(quote)?'proposal':'published_finding'});
  }
- return blocks;
+ return blocks.map(block=>({...block,publication_limitations:limitations.slice(0,2)}));
 }
 export async function askEditorialExtract(question,env,request,budget=async()=>false){
  if(String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
@@ -91,7 +109,7 @@ export async function askEditorialExtract(question,env,request,budget=async()=>f
  ranked.sort((a,b)=>b.score-a.score||a.text.length-b.text.length);
  const unique=[...new Map(ranked.map(c=>[c.text,c])).values()].slice(0,3);
  if(!unique.length)return abstain('no_current_claim_level_cited_support',extra);
- const claims=await Promise.all(unique.map(async({score,...c})=>({...c,excerpt_sha256:await hash(c.text),limitation:'Verbatim published block with same-block source citations; underlying primary-source entailment awaits independent review.'})));
+ const claims=await Promise.all(unique.map(async({score,...c})=>({...c,excerpt_sha256:await hash(c.text),limitation:'Verbatim published block with same-block source citations; underlying primary-source entailment awaits independent review. '+(c.publication_limitations||[]).join(' ')})));
  const citations=[...new Map(claims.flatMap(c=>c.citations).map(c=>[c.url,c])).values()];
  return {ok:true,mode:'editorial_answer_staging',intent:'archive',answer_abstained:false,answer:claims.map(c=>'“'+c.text+'” ['+c.citations.map(x=>x.id).join('; ')+']').join('\n\n'),answer_claims:claims,citations,hits:claims.map(c=>({title:MODEL.documents.find(d=>d.url===c.publication_url)?.title,url:c.publication_url,description:c.limitation})),generated_claims:0,...extra};
 }

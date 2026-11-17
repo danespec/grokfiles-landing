@@ -501,6 +501,9 @@
           var answer = data.answer || data.summary || data.response || data.text || "";
           var citedPreview = data.mode === "editorial_answer_staging";
           if (citedPreview) {
+            responseNode.setAttribute("data-ask-retrieval", data.retrieval_strategy || "guard");
+            responseNode.setAttribute("data-ask-neural-executed", String(data.neural_executed === true));
+            responseNode.setAttribute("data-ask-abstained", String(data.answer_abstained === true));
             if (status) status.textContent = data.answer_abstained ? "Evidence insufficient — no answer issued." : "Staging evidence extract — independent review pending.";
             (data.answer_claims || []).forEach(function (claim) {
               var block = document.createElement("section");

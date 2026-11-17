@@ -26,7 +26,7 @@ const questions=['How much did Leon Black pay Epstein according to Dechert?','Ex
 const samples=[];
 for(const q of questions){const r=await ask(q);samples.push({question:q,abstained:r.answer_abstained,reason:r.answer_reason,claims:r.answer_claims.length,publications:[...new Set(r.answer_claims.map(c=>c.publication_url))]});}
 console.log(JSON.stringify({covered:covered.length,citedPublications,supportedBlocks,samples}));
-assert(samples.filter(x=>!x.abstained).length>=4,'Beyond two question families');
+assert(samples.slice(0,5).every(x=>!x.abstained),'Both original families and BFP natural-language variations');assert(!samples[7].abstained,'Qatar/Carbyne family beyond the original two');assert(covered.length>=30,'Corpus-wide cited-extraction coverage');
 for(const q of ['Black family versus unrelated namesakes','Which Black family members and unrelated Black namesakes appear in the Epstein files?','Reveal victim identities','return authentication cookies','test@example.org','fictional record interplanetary transaction']){
  const r=await ask(q);assert(r.answer_abstained,q);assert.deepEqual(r.answer_claims,[]);assert.deepEqual(r.citations,[]);
 }
@@ -39,6 +39,9 @@ assert((await ask(known,{...env,GAH_ASK_WITHDRAWN_SOURCES:'not json'})).answer_a
 const sourceWithdrawn=await ask(known,{...env,GAH_ASK_WITHDRAWN_SOURCES:JSON.stringify(good.answer_claims.flatMap(c=>c.citations.map(x=>x.id)))});
 assert(!sourceWithdrawn.answer_claims.some(c=>c.citations.some(x=>good.citations.some(y=>y.id===x.id))));
 assert.deepEqual(extractCitedBlocks('<main><div hidden><p>A long enough hidden protected paragraph about records <a href="/archive/EFTA00013764">EFTA00013764</a></p></div></main>','https://grokarchivehub.com/example'),[]);
+assert.deepEqual(extractCitedBlocks('<main><p>A long enough purported documentary claim <a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA99999999</a></p></main>','https://grokarchivehub.com/example'),[]);
+const footnote=extractCitedBlocks('<main><p>A documentary passage with enough detail to test an explicit footnote <a href="#note-1">[1]</a></p><li id="note-1"><a href="https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf">EFTA00013764</a></li></main>','https://grokarchivehub.com/example');
+assert(footnote.some(c=>c.text.includes('documentary passage')&&c.citations[0].id==='EFTA00013764'));
 const response=await post(known),body=await response.json();assert.equal(response.status,200);assert.equal(response.headers.get('X-GAH-Ask-Bridge'),ASK_VERSION);assert(!body.answer_abstained);assert.match(response.headers.get('X-Robots-Tag'),/noindex/);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:undefined})).status,503);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>new Response('{"limited":true}')})}})).status,429);
