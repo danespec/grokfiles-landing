@@ -1,3 +1,4 @@
+import { webBotDirectory } from "./workers/lib/web-bot-auth.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
 import {exactCacheKey,readExactCache,writeExactCache} from './content/exact-result-cache.mjs';
@@ -19609,6 +19610,8 @@ export default {
         }
       });
     }
+
+    if (path === "/.well-known/http-message-signatures-directory") return webBotDirectory(request, env);
 
     if ((request.method === "GET" || request.method === "HEAD") && path === "/.well-known/agent-card.json") {
       return new Response(request.method === "HEAD" ? null : GAH_A2A_AGENT_CARD, {
