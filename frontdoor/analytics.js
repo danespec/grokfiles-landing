@@ -131,7 +131,11 @@
     if (/\.pdf$/i.test(u.pathname) || /\/pdf-lite(?:\.html)?$/.test(u.pathname)) event('evidence_source_click', {document_id: documentId(), destination_host: u.hostname, viewer: /pdf-lite/.test(u.pathname) ? 'pdf-lite' : 'source-pdf'});
   });
   state(eligible ? 'awaiting-consent' : 'excluded');
-  window.GAHAnalytics = Object.freeze({applyConsent: applyConsent, event: function (name, params) {
+  window.GAHAnalytics = Object.freeze({applyConsent: applyConsent, searchHeaders: function () {
+    return eligible && granted && configured && location.origin === 'https://grokarchivehub.com' &&
+      navigator.globalPrivacyControl !== true && navigator.doNotTrack !== '1'
+      ? {'Content-Type':'application/json','X-GAH-Analytics-Consent':'granted'} : {'Content-Type':'application/json'};
+  }, event: function (name, params) {
     if (!/^(?:external_source_click|patreon_cta_click|evidence_source_click)$/.test(name)) return;
     var safe = {};
     ['document_id','destination_host','viewer','cta_id'].forEach(function (key) {
