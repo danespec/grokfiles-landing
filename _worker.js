@@ -903,7 +903,7 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
   };
 }
 
-const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/guides/epstein-files-data-set-9", "/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
+const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/guides/epstein-files-data-set-1", "/guides/epstein-files-data-set-2", "/guides/epstein-files-data-set-3", "/guides/epstein-files-data-set-4", "/guides/epstein-files-data-set-5", "/guides/epstein-files-data-set-6", "/guides/epstein-files-data-set-7", "/guides/epstein-files-data-set-8", "/guides/epstein-files-data-set-10", "/guides/epstein-files-data-set-11", "/guides/epstein-files-data-set-12", "/guides/epstein-files-data-set-9", "/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
 
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
@@ -1268,6 +1268,17 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/guides/epstein-client-list-explained", "/guides/epstein-client-list-explained.html"],
   ["/guides/epstein-files-transparency-act", "/guides/epstein-files-transparency-act.html"],
   ["/guides/how-to-search-epstein-files", "/guides/how-to-search-epstein-files.html"],
+  ["/guides/epstein-files-data-set-1", "/guides/epstein-files-data-set-1.html"],
+  ["/guides/epstein-files-data-set-2", "/guides/epstein-files-data-set-2.html"],
+  ["/guides/epstein-files-data-set-3", "/guides/epstein-files-data-set-3.html"],
+  ["/guides/epstein-files-data-set-4", "/guides/epstein-files-data-set-4.html"],
+  ["/guides/epstein-files-data-set-5", "/guides/epstein-files-data-set-5.html"],
+  ["/guides/epstein-files-data-set-6", "/guides/epstein-files-data-set-6.html"],
+  ["/guides/epstein-files-data-set-7", "/guides/epstein-files-data-set-7.html"],
+  ["/guides/epstein-files-data-set-8", "/guides/epstein-files-data-set-8.html"],
+  ["/guides/epstein-files-data-set-10", "/guides/epstein-files-data-set-10.html"],
+  ["/guides/epstein-files-data-set-11", "/guides/epstein-files-data-set-11.html"],
+  ["/guides/epstein-files-data-set-12", "/guides/epstein-files-data-set-12.html"],
   ["/guides/epstein-files-data-set-9", "/guides/epstein-files-data-set-9.html"],
   ["/guides/doj-epstein-data-sets", "/guides/doj-epstein-data-sets.html"],
   ["/entities", "/entities.html"],
@@ -1453,6 +1464,17 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/guides/epstein-client-list-explained", "2026-10-11"],
   ["https://grokarchivehub.com/guides/epstein-files-transparency-act", "2026-10-11"],
   ["https://grokarchivehub.com/guides/how-to-search-epstein-files", "2026-10-20"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-1", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-2", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-3", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-4", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-5", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-6", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-7", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-8", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-10", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-11", "2026-11-17"],
+  ["https://grokarchivehub.com/guides/epstein-files-data-set-12", "2026-11-17"],
   ["https://grokarchivehub.com/guides/epstein-files-data-set-9", "2026-11-17"],
   ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-11-17"],
   ["https://grokarchivehub.com/photos", "2026-10-23"],
@@ -3569,6 +3591,17 @@ const GAH_LLM_DISCOVERY = `# Grok Archive Hub
 - [Atlas release status](https://grokarchivehub.com/api/v1/atlas/status): published version and source-data fingerprint.
 - [Investigations](https://grokarchivehub.com/investigations): source-linked dossiers.
 - [Search](https://grokarchivehub.com/search): public archive search.
+- [Data Set 8 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-8): Prosecutorial correspondence, aviation and custody records.
+- [Data Set 1 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-1): Photograph records and source versions.
+- [Data Set 2 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-2): Exact filename lookup in a numbered run.
+- [Data Set 3 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-3): Nonconsecutive file identifiers.
+- [Data Set 4 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-4): Scheduling records and evidence boundaries.
+- [Data Set 5 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-5): A compact sequential file index.
+- [Data Set 6 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-6): Single-page index navigation.
+- [Data Set 7 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-7): File starts and interior Bates pages.
+- [Data Set 10 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-10): Draft filings and financial correspondence.
+- [Data Set 11 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-11): Proposed meetings and travel arrangements.
+- [Data Set 12 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-12): Draft agreements, payment records and proffers.
 - [Data Set 9 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-9): official index navigation, parent-file identities and published source examples.
 - [DOJ Data Sets 1–12](https://grokarchivehub.com/guides/doj-epstein-data-sets): official numbered releases and Data Set 9 navigation.
 - [How to search Epstein files](https://grokarchivehub.com/guides/how-to-search-epstein-files): EFTA lookup, OCR and source verification.
