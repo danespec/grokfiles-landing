@@ -1629,7 +1629,7 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA01410768", "2026-10-21"],
 ]);
 
-const GAH_DOSSIER_RECOVERY_IDS = new Set(["EFTA00033413", "EFTA00035035", "EFTA00035053", "EFTA00035206", "EFTA00035420", "EFTA00035421", "EFTA00035442", "EFTA00035570", "EFTA00035657", "EFTA00035715"]);
+const GAH_DOSSIER_RECOVERY_IDS = new Set(["EFTA00033413", "EFTA00035035", "EFTA00035053", "EFTA00035206", "EFTA00035420", "EFTA00035421", "EFTA00035442", "EFTA00035570", "EFTA00035657", "EFTA00035715", "EFTA00035119", "EFTA00080260", "EFTA00646811", "EFTA01410768"]);
 
 function serveCuratedArchiveSitemap(request) {
   const entries = [...GAH_IDENTIFIER_DOSSIERS.values()].filter(e => e.indexable && !publicationRule("https://grokarchivehub.com/archive/"+e.id)?.noindex).map(e => ["/archive/" + e.id, GAH_DOSSIER_RECOVERY_IDS.has(e.id) ? "2026-11-17" : e.dateModified]).map(([path, updated]) =>
