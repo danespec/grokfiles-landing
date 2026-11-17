@@ -47,7 +47,7 @@
     var raw = String(value).trim();
     if (!raw) return "";
     try {
-      var url = new URL(raw, window.location.origin);
+      var url = new URL(raw, window.location.origin === "null" ? "https://grokarchivehub.com" : window.location.origin);
       var protocol = String(url.protocol || "").toLowerCase();
       if (protocol !== "http:" && protocol !== "https:") return "";
       return url.href;
@@ -457,6 +457,15 @@
   function initAskGah() {
     var form = $("[data-ask-gah-form]");
     if (!form) return;
+    // Protected preview only: make the existing panel reachable on touch screens.
+    if (/\.gah-staging-517b8499\.pages\.dev$/.test(new URL(document.baseURI).hostname) && !$(".ask-launcher")) {
+      var launcher = document.createElement("button");
+      launcher.type = "button"; launcher.className = "btn btn-fill ask-launcher";
+      launcher.textContent = "Ask GAH"; launcher.setAttribute("aria-controls", "ask-gah-panel");
+      launcher.style.cssText = "display:block!important;position:fixed;right:16px;bottom:24px;z-index:80;min-height:44px";
+      launcher.addEventListener("click", function () { openOverlay("ask-gah-panel", launcher); });
+      document.body.appendChild(launcher);
+    }
     var question = $("[data-ask-gah-question]");
     var status = $("[data-ask-gah-status]");
     var responseNode = $("[data-ask-gah-response]");
@@ -490,7 +499,44 @@
           if (!responseNode) return;
           responseNode.textContent = "";
           var answer = data.answer || data.summary || data.response || data.text || "";
-          if (answer) {
+          var citedPreview = data.mode === "editorial_answer_staging" || data.mode === "editorial_answer_v3";
+          if (citedPreview) {
+            responseNode.setAttribute("data-ask-retrieval", data.retrieval_strategy || "guard");
+            responseNode.setAttribute("data-ask-neural-executed", String(data.neural_executed === true));
+            responseNode.setAttribute("data-ask-abstained", String(data.answer_abstained === true));
+            if (status) status.textContent = data.answer_abstained ? "Evidence insufficient — no answer issued." : (data.mode === "editorial_answer_v3" ? "Source-linked evidence response — review citations and limits." : "Staging evidence extract — independent review pending.");
+            (data.answer_claims || []).forEach(function (claim) {
+              var block = document.createElement("section");
+              var quote = document.createElement("p"); quote.textContent = claim.text || ""; block.appendChild(quote);
+              (claim.citations || []).forEach(function (citation) {
+                var link = document.createElement("a");
+                if (applySafeLink(link, citation.url, citation.id || citation.source_id || "Source")) {
+                  block.appendChild(link); block.appendChild(document.createTextNode(" "));
+                }
+              });
+              var publication = document.createElement("a");
+              if (applySafeLink(publication, claim.publication_url, "Read the supporting publication")) { block.appendChild(document.createElement("br")); block.appendChild(publication); }
+              var detail = document.createElement("details"), summary = document.createElement("summary");
+              summary.textContent = "Fingerprint and evidence limits"; detail.appendChild(summary);
+              var provenance = document.createElement("p");
+              provenance.textContent = "Publication SHA-256: " + (claim.publication_sha256 || "") + ". " + (claim.limitation || "Source-bound staging candidate; independent certification pending.");
+              provenance.style.overflowWrap = "anywhere"; detail.appendChild(provenance); block.appendChild(detail);
+              responseNode.appendChild(block);
+            });
+            (data.evidentiary_limitations || []).forEach(function (limit) {
+              var note = document.createElement("p"); note.className = "small"; note.textContent = limit; responseNode.appendChild(note);
+            });
+            if (data.answer_abstained) {
+              var reason = document.createElement("p"); reason.textContent = answer + " Reason: " + (data.answer_reason || "insufficient_evidence"); responseNode.appendChild(reason);
+            }
+          }
+          if (citedPreview && Array.isArray(data.related_research) && data.related_research.length) {
+            var research = document.createElement("section"), heading = document.createElement("h3");
+            heading.textContent = "Related research — navigation, not claim evidence"; research.appendChild(heading);
+            data.related_research.forEach(function(row){var p = document.createElement("p"), a = document.createElement("a"); if(applySafeLink(a,row.url,row.title)){p.appendChild(a);research.appendChild(p);}});
+            responseNode.appendChild(research);
+          }
+          if (answer && !citedPreview) {
             var p = document.createElement("p");
             p.textContent = answer;
             responseNode.appendChild(p);

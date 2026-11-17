@@ -28,7 +28,15 @@ const source=await read('_worker.js');
 const {default:worker}=await import('data:text/javascript;base64,'+Buffer.from(workerTestSource(source)).toString('base64'));
 const response=await worker.fetch(new Request('https://grokarchivehub.com/'),{ASSETS:{fetch:async()=>new Response(home,{headers:{'Content-Type':'text/html'}})}});
 assert.equal(response.status,200);assert.match(response.headers.get('X-Robots-Tag'),/index,follow/);
-const rendered=await response.text();assert.doesNotMatch(rendered,/pagead\/js\/adsbygoogle\.js/);
+const rendered=await response.text();
+// The publisher verification tag is paused before execution. It is not a display
+// ad placement; explicitly constrain it, then retain the original loader ban.
+const publisherTag=/<script data-gah-cmp-publisher-tag async crossorigin="anonymous" src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-2417980244192018"><\/script>/g;
+assert.equal((rendered.match(publisherTag)||[]).length,1,'Exactly one established CMP publisher tag');
+assert(rendered.includes('<script>(window.adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;</script><script data-gah-cmp-publisher-tag'),'Pause precedes publisher verification');
+assert.equal(response.headers.get('X-GAH-Ad-Approved'),'false');
+assert.doesNotMatch(rendered,/<ins\b[^>]*class="adsbygoogle"/);
+assert.doesNotMatch(rendered.replace(publisherTag,''),/pagead\/js\/adsbygoogle\.js/);
 assert.match(rendered,/href="\/assets\/home-064.css"/);
 assert.match(response.headers.get('Content-Security-Policy'),/frame-ancestors 'none'/);
 console.log('PASS featured lead, retained article/source links, six compact cards, native search, responsive image markup and payload limits, metadata and disabled ad loader');

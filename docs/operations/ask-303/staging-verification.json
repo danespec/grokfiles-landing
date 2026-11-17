@@ -1,0 +1,29 @@
+{
+  "deployed_code_commit": "51a84c23f9335f0c426d4f196e3cc7cbd73b9bd0",
+  "staging_deployment_id": "4453bdd3-ebd4-4344-96c1-95dac62938f3",
+  "staging_deployment_url": "https://4453bdd3.gah-staging-517b8499.pages.dev",
+  "staging_alias": "https://ask-editorial-review.gah-staging-517b8499.pages.dev/",
+  "worker_sha256": "883848bb6b26420bc604d92ae0991958fd80f5d1ebe8e79981d057e65364e916",
+  "production_deployment_id": "cb28e1f2-a7ab-479f-9af7-1dc0759d0d9d",
+  "production_commit": "77b3e04c70af6cf3751e84e6e2f8ba5c5c8cbb3b",
+  "production_deployment_unchanged": true,
+  "production_configuration_observation": "GA4_API_SECRET appeared during work; no production configuration writes were performed by this task.",
+  "local_workflow_groups": 25,
+  "local_workflow_passed": true,
+  "live_browser_checks": {
+    "authenticated_access": true,
+    "broader_answer_families": true,
+    "neural_execution_observed": true,
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "citation_links_and_fingerprint_details": true,
+    "exact_id_requested_and_returned": "EFTA00013764",
+    "namesakes_abstention": true,
+    "physical_mobile_device_tested": false
+  },
+  "github_ci": "Latest-head check not yet reported; prior failure was missing immutable baseline in shallow checkout; fixed explicit baseline fetch.",
+  "independent_review": "pending Ren verification",
+  "production_release": "blocked pending Ren verification and explicit owner authorization"
+}

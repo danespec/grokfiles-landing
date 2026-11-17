@@ -1,0 +1,988 @@
+{
+  "coverage": [
+    {
+      "url": "https://grokarchivehub.com/book-of-black/methodology",
+      "question": "Book of Black Methodology",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/corrections/flight-log-count-and-aircraft-reconciliation",
+      "question": "Flight Log Count and Aircraft Reconciliation",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/august-8-attorney-log-colon-miro",
+      "question": "August 8 Attorney Log: The Colón Miró Lead",
+      "cited_blocks": 3,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal",
+      "question": "Doe v. Black: Dismissal With Prejudice, Earlier Sanctions, and No Trial Verdict",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/epstein-source-watch-october-2026",
+      "question": "Epstein Source Watch: Eight U.S. Leads and International Evidence — October 2026",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/fara-leads-explained",
+      "question": "FARA Leads Explained: Why Foreign-Agent Questions Attach to Archive Records",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "insufficient_evidence",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/dispatches/how-to-read-the-barak-records",
+      "question": "How to Read the Barak Records",
+      "cited_blocks": 0,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/document-autopsies/doug-band-transcript",
+      "question": "Doug Band's Epstein Testimony: What the Transcript Establishes-and What It Does Not",
+      "cited_blocks": 30,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/document-autopsies/doug-band-transcript"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/adfin-southern-trust-series-a-2013",
+      "question": "AdFin: Two Southern Trust Wires, 1,428,571 Series A Shares",
+      "cited_blocks": 14,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/adfin-southern-trust-series-a-2013"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/coinbase-return-first-15m-exit",
+      "question": "Coinbase in Reverse: The $15M Exit That Proves the Position",
+      "cited_blocks": 14,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/coinbase-return-first-15m-exit"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/efta02810827-amador-jpmorgan-forensic-report",
+      "question": "EFTA02810827: What Jorge Amador’s Forensic Report Actually Found",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/fbi-epstein-not-evidentiary-scrub",
+      "question": "What the FBI Left Outside the Epstein Case File—and the Reason It Gave",
+      "cited_blocks": 5,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/fbi-epstein-not-evidentiary-scrub"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/financial-trust-black-family-partners-2012",
+      "question": "Financial Trust to Black Family Partners: What the November 2012 Records Show",
+      "cited_blocks": 10,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale",
+        "https://grokarchivehub.com/evidence-briefs/financial-trust-black-family-partners-2012"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/honeycomb-spv-spotify-tencent-music",
+      "question": "Two Honeycomb SPVs, Two Different Timelines: Spotify and Tencent Music",
+      "cited_blocks": 11,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/honeycomb-spv-spotify-tencent-music"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/jpmorgan-4725-wires-1-1-billion-explainer",
+      "question": "4,725 Wires, ~$1.1 Billion: What the JPMorgan Number Actually Means",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/kyara-i-unresolved-profitable-spv",
+      "question": "Kyara I: The Profitable SPV We Still Can't Identify",
+      "cited_blocks": 14,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/kyara-i-unresolved-profitable-spv"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/kyara-spv-wearality-blockstream-oh2",
+      "question": "Three Kyara SPVs: Wearality, Blockstream, and OH2",
+      "cited_blocks": 8,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/leon-black-158m-170m-epstein-payments",
+      "question": "$158 Million Became $170 Million: Reconstructing Leon Black’s Payments to Jeffrey Epstein",
+      "cited_blocks": 1,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/levitection-signed-term-sheet-no-close",
+      "question": "Levitection: The Signed Term Sheet That Never Closed",
+      "cited_blocks": 14,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/levitection-signed-term-sheet-no-close"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/mcc-4chan-two-posters-attribution-audit",
+      "question": "The MCC 4chan Record: Two Posters, One Attribution Overclaim",
+      "cited_blocks": 11,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/mcc-4chan-two-posters-attribution-audit"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/michael-chertoff-reporty-advisory-agreement",
+      "question": "Michael Chertoff's Signed Reporty Advisory Agreement: Terms Without a Payout Trail",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/neoteny-3-fund-subscription-no-portfolio-attribution",
+      "question": "Neoteny 3: The $1M Fund Wire That Does Not Prove a Portfolio-Company Investment",
+      "cited_blocks": 13,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/neoteny-3-fund-subscription-no-portfolio-attribution"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/ng911-email-planned-fcc-meetings-no-proven-access-chain",
+      "question": "The NG911 Email: Planned FCC Meetings, No Proven Access Chain",
+      "cited_blocks": 8,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/ng911-email-planned-fcc-meetings-no-proven-access-chain"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/reporty-southern-trust-ergo-1m-2015",
+      "question": "Reporty’s $1M March 2015 Funding: Proven Cash, Incomplete Holder Chain",
+      "cited_blocks": 15,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/reporty-southern-trust-ergo-1m-2015"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/shared-administration-no-money-crossover",
+      "question": "Same Office, Same Bank Relationship, Different Money Rails",
+      "cited_blocks": 11,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/evidence-briefs/todd-blanche-no-evidence",
+      "question": "What Todd Blanche Actually Said About Epstein Evidence",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/guides/epstein-chronological-source-guide",
+      "question": "Epstein Records: Chronological Source Guide",
+      "cited_blocks": 1,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review",
+      "question": "Andrew's Quashed Warrants and the 2020 DOJ Judicial-Review Trail",
+      "cited_blocks": 5,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/andrew-search-warrants-quashed-2026-doj-judicial-review"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/andriesz-adfin-lutnick-paper-trail",
+      "question": "The Andriesz Paper Trail: FBI Hits, CFTC, HMRC and FCA Review",
+      "cited_blocks": 25,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/andriesz-adfin-lutnick-paper-trail"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/autopsy-exhibit-list-limits",
+      "question": "The Autopsy Exhibit-List Pointer Has a Narrow Job",
+      "cited_blocks": 3,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/autopsy-exhibit-list-limits"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne",
+      "question": "Epstein’s 2013 Putin ‘Private Time’ Suggestion and the 2018–2019 Qatar/Carbyne Chain",
+      "cited_blocks": 27,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-gadeco-fee-2014",
+      "question": "The GADECO Deal Did Not End with Barak's November 3 Withdrawal",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-hfa-cycurity-2015",
+      "question": "The HFA Proposal in Barak's Archive: Cycurity's 2015 Influence Pitch",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-saudi-rothschild-proposal-2015",
+      "question": "A Proposed $200 Million Saudi–Israeli Healthcare Fund, Documented but Not Funded",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-scheduling-records-2010-2018",
+      "question": "The Barak Record, 2010–2018: What the Scheduling Files Actually Show",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014",
+      "question": "St. Thomas, December 2014: The Trip and the Ticket in Another Man's Name",
+      "cited_blocks": 25,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing",
+      "question": "From $18M Draft to $5.5M Closing: The Black Family Partners Repricing",
+      "cited_blocks": 17,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale",
+      "question": "$5.5M Paid in 2012. ESWW Transfer Still Broken in 2015.",
+      "cited_blocks": 12,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap",
+      "question": "Where Did the $5.5 Million Come From? The Black Family Partners Source-of-Funds Gap",
+      "cited_blocks": 5,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap",
+        "https://grokarchivehub.com/evidence-briefs/financial-trust-black-family-partners-2012"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/black-phaidon-2015-tax-model-house-oversight",
+      "question": "Epstein’s 2015 Phaidon Tax Model: The $38.7M–$44M Projection and Its Correction",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/ch0080-video-file-windows",
+      "question": "CH0080 File Windows Are Not Video Continuity",
+      "cited_blocks": 2,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/ch0080-video-file-windows",
+        "https://grokarchivehub.com/research/epstein-final-48-hours-mcc"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit",
+      "question": "Clinton Foundation, CGI and Epstein: What the Financial and Organizational Records Establish",
+      "cited_blocks": 4,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/clinton-foundation-cgi-epstein-source-audit"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/darren-indyke-investment-execution-layer",
+      "question": "The Execution Layer: Darren Indyke Across Four Technology Deals",
+      "cited_blocks": 30,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/darren-indyke-investment-execution-layer"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/doj-oip-epstein-review-public-figure-flags-2026",
+      "question": "DOJ Epstein Review Emails: Public-Figure Flags Explained",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/efta-compliance-tracker",
+      "question": "EFTA Compliance Tracker",
+      "cited_blocks": 12,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-december-6-7-2007-decision-gap",
+      "question": "December 6–7, 2007: The Victim Letters, the Defense Papers, and the Missing Decision Record",
+      "cited_blocks": 1,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-july-2007-decision-gap",
+      "question": "The Week the Federal Epstein Case Changed Course: July 19–31, 2007",
+      "cited_blocks": 5,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/epstein-july-2007-decision-gap"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-npa-defense-access-victim-notification",
+      "question": "Who Got a Seat at the Table? Defense Access, Victim Silence and the Epstein NPA",
+      "cited_blocks": 1,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/epstein-wolff-trump-cnn-emails-2015",
+      "question": "The 2015 Emails Where Epstein and Wolff Discussed Trump’s CNN Answer",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/fbi-vault-redaction-chronology-phang",
+      "question": "FBI Vault Part 13: Epstein Redaction Orders and DOJ Emails",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/financial-trust-environmental-solutions-worldwide",
+      "question": "Financial Trust and Environmental Solutions Worldwide: 2005–2012 Investment Lifecycle",
+      "cited_blocks": 10,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/evidence-briefs/financial-trust-black-family-partners-2012",
+        "https://grokarchivehub.com/investigations/black-family-partners-financial-trust-esww-sale"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/george-mitchell-epstein-source-audit",
+      "question": "George Mitchell in the Epstein Records: What Resolves Cleanly—and What Does Not",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/giuffre-maxwell-docket-1320-privilege-gap",
+      "question": "Giuffre v. Maxwell Docket 1320: The 57-Document Criminal-Investigation Gap",
+      "cited_blocks": 10,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/giuffre-maxwell-docket-1320-privilege-gap"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019",
+      "question": "Inside Gratitude America's Money Trail: $10M In, $8.45M Between Its Own Accounts, and a French Inquiry",
+      "cited_blocks": 5,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/gratitude-america-money-trail-2015-2019"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/hold-the-letter",
+      "question": "EFTA00013764: “Hold the Letter” Email Explained",
+      "cited_blocks": 4,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/jpmorgan-nine-sars-epstein",
+      "question": "Nine SARs, $1.28 Billion, and the Reporting Gap in Epstein’s JPMorgan Accounts",
+      "cited_blocks": 3,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/leon-black-2023-sdny-referral-status",
+      "question": "The Leon Black Referral: What SDNY Had — and Had Not Opened — in 2023",
+      "cited_blocks": 1,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/leon-black-2023-sdny-referral-status",
+        "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records",
+      "question": "The New Mexico-DOJ Epstein Records Standoff",
+      "cited_blocks": 9,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/new-mexico-doj-epstein-records"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/new-mexico-indyke-kahn-financial-network-2026",
+      "question": "New Mexico Sues Indyke and Kahn: Epstein Estate, Zorro Ranch & Flight Records",
+      "cited_blocks": 1,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/nikolic-gates-epstein-bridge",
+      "question": "The Nikolic Bridge: From Gates’s First Epstein Dinner to the 2013 Exit Negotiations",
+      "cited_blocks": 6,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/nikolic-gates-epstein-bridge",
+        "https://grokarchivehub.com/reels/bill-gates-nikolic-points-efta02730265"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/norway-brende-epstein-hearing-2026",
+      "question": "Børge Brende & Epstein: Norway’s 2017 Email Question",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/sascha-riley-claims-evidence-audit",
+      "question": "The Sascha Riley Claims: What Survived a Six-Week Evidence Audit",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/truesec-il-energy-twin-spvs-2013",
+      "question": "Twin Delaware Vehicles, Different First Deals: TrueSec and IL Energy in 2013",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-2015-campaign-records",
+      "question": "Before the White House: Trump’s 2014–2017 Paper Trail",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-acosta-epstein-doj-timeline",
+      "question": "Acosta, Epstein and Trump: The Timeline That Prevents a False Shortcut",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-israel-russia-un-vote-2016",
+      "question": "The UN Vote Where Trump’s Israel Policy Met His Russia Outreach",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/trump-moscow-deal-campaign-2015-2016",
+      "question": "Trump Was Running for President. The Moscow Project Was Still Alive.",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/investigations/wyden-banker-302-deutsche-interviews",
+      "question": "Wyden’s Missing Banker 302 vs. Three Public Deutsche Interviews",
+      "cited_blocks": 17,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/investigations/wyden-banker-302-deutsche-interviews"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/digitization-ocr-pipeline",
+      "question": "Document Digitization and OCR Pipeline",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/methodology/redaction-breadcrumbs",
+      "question": "How to Read Redactions Without Overreading Them",
+      "cited_blocks": 1,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/doj-march-2025-review-emails-released",
+      "question": "New DOJ Release Documents March 2025 Epstein File Review Instructions",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/efta00000468-removal-restoration-audit",
+      "question": "EFTA00000468: What the DOJ Removed, Restored, and What Remains Unverified",
+      "cited_blocks": 5,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026",
+      "question": "Before the 2026 Midterms: Epstein Files, Campaign Ads and the Actual Vote Record",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026",
+      "question": "Epstein Files Transparency Act II Petition Reaches 218 House Signatures",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/house-judiciary-trump-epstein-staff-report-oct26-2026",
+      "question": "House Judiciary Democrats Release 53-Page Trump–Epstein Staff Report: Claims and Evidence Checks",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/house-oversight-majority-epstein-maxwell-report-november-10-2026",
+      "question": "House Oversight Majority Report Details Epstein Investigation Failures and Reform Proposals",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/mar-a-lago-air-defense-norad-secret-service-faa-records-2026",
+      "question": "Missiles at Mar-a-Lago: What NORAD Confirmed and What FAA Records Reveal",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/maurene-comey-unlawful-firing-ruling-oct26-2026",
+      "question": "Federal Judge Rules Former Epstein–Maxwell Prosecutor Maurene Comey Was Unlawfully Fired",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/phang-dc-circuit-stay-denied-october-28-2026",
+      "question": "D.C. Circuit Denies DOJ Stay of Epstein Record Review",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/phang-fbi-notes-in-camera-october-16",
+      "question": "Judge Orders Redacted FBI Notes for Private Review by October 16",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026",
+      "question": "DOJ Says Epstein Foreign-Language Review Has Begun; November 27 Deadline Disputed",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/police-scotland-balmoral-epstein-inquiries-october-30-2026",
+      "question": "Police Scotland Confirms Balmoral Inquiries Involving Epstein, Maxwell and Andrew",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/raskin-epstein-state-foreign-mlat-oversight-2026",
+      "question": "Raskin Seeks DOJ Records on Epstein-Related Foreign and State Investigations",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026",
+      "question": "Trump's Epstein Birthday-Letter Defamation Complaint Dismissed With Prejudice",
+      "cited_blocks": 0,
+      "result": "abstained",
+      "reason": "no_current_claim_level_cited_support",
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/alan-dershowitz-schedule-efta00352969",
+      "question": "Alan Dershowitz: EFTA00352969, EFTA00338082 and planned appointments",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/andrew-doj-judicial-review-efta00088020",
+      "question": "Andrew and EFTA00088020: anticipated judicial review in 2020",
+      "cited_blocks": 1,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/bill-gates-nikolic-points-efta02730265",
+      "question": "Bill Gates, Boris Nikolic and EFTA02730265: the Points draft",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/bill-richardson-counsel-memo-efta00014374",
+      "question": "Bill Richardson: EFTA00014374 and the limits of the counsel-call memo",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/efta00035613-july-2019-donation-proposal",
+      "question": "EFTA00035613: the five-million-dollar proposal in a July 2019 letter",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/efta00035773-oig-voluntary-interview-waiver",
+      "question": "EFTA00035773: the OIG interview waiver and its date discrepancy",
+      "cited_blocks": 0,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/efta00035828-epstein-cell-diagram",
+      "question": "EFTA00035828: the diagram labeled Epstein’s cell",
+      "cited_blocks": 5,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/elon-musk-holiday-email-efta02338119",
+      "question": "Elon Musk and EFTA02338119: correspondence is not a completed visit",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/ghislaine-maxwell-travel-coordination-efta02332402",
+      "question": "Ghislaine Maxwell: EFTA02332402 and the household-record trail",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records",
+      "question": "Indyke and Kahn: the complaint, FAA role and St. Thomas travel email",
+      "cited_blocks": 1,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/reels/indyke-kahn-civil-complaint-flight-records"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/jean-luc-brunel-mc2-account-efta01972778",
+      "question": "Jean-Luc Brunel: EFTA01972778, MC2 and the redacted payee",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/jeff-bezos-email-list-efta00759004",
+      "question": "Jeff Bezos and EFTA00759004: what a shared email list establishes",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/larry-summers-harvard-planning-efta02239873",
+      "question": "Larry Summers: EFTA02239873 and the proposed Harvard visit",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996",
+      "question": "Leon Black’s $158 million: EFTA02730996 and the Senate questions",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/les-wexner-attorney-proffer-efta02731082",
+      "question": "Les Wexner and EFTA02731082: the attorney proffer and the missing instrument",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/mark-zuckerberg-mentions-efta00034221",
+      "question": "Mark Zuckerberg: EFTA00034221, EFTA02262778 and the limits of mentions",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238",
+      "question": "Reid Hoffman and EFTA02300238: the island-to-Bedford flight arrangements",
+      "cited_blocks": 3,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response",
+      "question": "Shawn Ryan, Peter Thiel and Leah: the allegation, response and release record",
+      "cited_blocks": 2,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/reels/shawn-ryan-peter-thiel-account-response"
+      ]
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/stephen-hawking-email-request-efta00695049",
+      "question": "Stephen Hawking and EFTA00695049: the contact-details request",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/reels/steve-bannon-barak-calendar-efta02240144",
+      "question": "Steve Bannon, Ehud Barak and EFTA02240144: the calendar is a plan",
+      "cited_blocks": 2,
+      "result": "exact_identifier_routing",
+      "reason": null,
+      "answer_publications": []
+    },
+    {
+      "url": "https://grokarchivehub.com/research/epstein-final-48-hours-mcc",
+      "question": "Epstein Death Timeline: Jeffrey Epstein's Final 48 Hours at MCC",
+      "cited_blocks": 7,
+      "result": "answered",
+      "reason": null,
+      "answer_publications": [
+        "https://grokarchivehub.com/research/epstein-final-48-hours-mcc"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "question": "How much did Leon Black pay Epstein according to Dechert?",
+      "abstained": false,
+      "claims": 2,
+      "publications": [
+        "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996"
+      ]
+    },
+    {
+      "question": "Explain Leon Black Dechert payments and the separate loans",
+      "abstained": false,
+      "claims": 2,
+      "publications": [
+        "https://grokarchivehub.com/reels/leon-black-dechert-158-million-efta02730996"
+      ]
+    },
+    {
+      "question": "Did Ehud Barak visit St Thomas in December 2014?",
+      "abstained": false,
+      "claims": 2,
+      "publications": [
+        "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014"
+      ]
+    },
+    {
+      "question": "What do Barak St Thomas December 2014 records establish?",
+      "abstained": false,
+      "claims": 2,
+      "publications": [
+        "https://grokarchivehub.com/investigations/barak-st-thomas-dec-2014"
+      ]
+    },
+    {
+      "question": "Black Family Partners 18 million 5.5 million repricing",
+      "abstained": false,
+      "claims": 3,
+      "publications": [
+        "https://grokarchivehub.com/investigations/black-family-partners-18m-to-5-5m-repricing",
+        "https://grokarchivehub.com/investigations/black-family-partners-source-of-funds-gap"
+      ]
+    },
+    {
+      "question": "Epstein MCC final 48 hours timeline",
+      "abstained": false,
+      "claims": 2,
+      "publications": [
+        "https://grokarchivehub.com/research/epstein-final-48-hours-mcc"
+      ]
+    },
+    {
+      "question": "JPMorgan nine SARs 1.3 billion",
+      "abstained": true,
+      "reason": "no_current_claim_level_cited_support",
+      "claims": 0,
+      "publications": []
+    },
+    {
+      "question": "Barak Putin Qatar Carbyne meeting",
+      "abstained": false,
+      "claims": 3,
+      "publications": [
+        "https://grokarchivehub.com/investigations/barak-epstein-putin-qatar-carbyne"
+      ]
+    }
+  ]
+}
