@@ -1,0 +1,312 @@
+{
+  "routes": [
+    "/timelines/epstein-npa-decision-timeline",
+    "/timelines/epstein-custody-records-timeline",
+    "/timelines/epstein-financial-records-timeline",
+    "/timelines/epstein-disclosure-timeline",
+    "/entities/epstein-public-institution-records",
+    "/entities/epstein-financial-organization-records"
+  ],
+  "backlinks": {
+    "/topics/epstein-non-prosecution-agreement": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      }
+    ],
+    "/investigations/hold-the-letter": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      }
+    ],
+    "/investigations/epstein-july-2007-decision-gap": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      }
+    ],
+    "/investigations/epstein-december-6-7-2007-decision-gap": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      }
+    ],
+    "/investigations/epstein-npa-defense-access-victim-notification": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      }
+    ],
+    "/topics/epstein-jail-records": [
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      },
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      }
+    ],
+    "/research/epstein-final-48-hours-mcc": [
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      }
+    ],
+    "/guides/epstein-files-data-set-8": [
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      }
+    ],
+    "/investigations/ch0080-video-file-windows": [
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      }
+    ],
+    "/investigations/autopsy-exhibit-list-limits": [
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      }
+    ],
+    "/topics/epstein-bank-records": [
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/topics/leon-black-epstein-financial-records": [
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/topics/epstein-investment-records": [
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/investigations/gratitude-america-money-trail-2015-2019": [
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      }
+    ],
+    "/investigations/jpmorgan-nine-sars-epstein": [
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      }
+    ],
+    "/evidence-briefs/leon-black-158m-170m-epstein-payments": [
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      }
+    ],
+    "/topics/epstein-court-records": [
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      },
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      }
+    ],
+    "/guides/epstein-files-transparency-act": [
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      }
+    ],
+    "/investigations/efta-compliance-tracker": [
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      }
+    ],
+    "/investigations/fbi-vault-redaction-chronology-phang": [
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      }
+    ],
+    "/guides/doj-epstein-data-sets": [
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      }
+    ],
+    "/timelines/epstein-disclosure-timeline": [
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      }
+    ],
+    "/timelines/epstein-npa-decision-timeline": [
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      }
+    ],
+    "/timelines/epstein-financial-records-timeline": [
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      },
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      },
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      },
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/guides": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      },
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      },
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      },
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/topics": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      },
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      },
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      },
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/timeline-reconstructions": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      },
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      },
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      }
+    ],
+    "/entities": [
+      {
+        "path": "/entities/epstein-public-institution-records",
+        "title": "Epstein Records: Public Institutions and Roles"
+      },
+      {
+        "path": "/entities/epstein-financial-organization-records",
+        "title": "Epstein Financial Entities: Research Directory"
+      }
+    ],
+    "/guides/epstein-chronological-source-guide": [
+      {
+        "path": "/timelines/epstein-npa-decision-timeline",
+        "title": "Epstein NPA Timeline: July\u2013December 2007"
+      },
+      {
+        "path": "/timelines/epstein-custody-records-timeline",
+        "title": "Epstein Custody Records: 2019 Timeline"
+      },
+      {
+        "path": "/timelines/epstein-financial-records-timeline",
+        "title": "Epstein Financial Records: Dated Evidence Trail"
+      },
+      {
+        "path": "/timelines/epstein-disclosure-timeline",
+        "title": "Epstein Files Disclosure Timeline: 2025\u20132026"
+      }
+    ]
+  },
+  "row_counts": {
+    "/timelines/epstein-npa-decision-timeline": 9,
+    "/timelines/epstein-custody-records-timeline": 10,
+    "/timelines/epstein-financial-records-timeline": 11,
+    "/timelines/epstein-disclosure-timeline": 9,
+    "/entities/epstein-public-institution-records": 9,
+    "/entities/epstein-financial-organization-records": 10
+  }
+}

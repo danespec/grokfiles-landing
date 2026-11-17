@@ -90,6 +90,8 @@ jobs:
           node tests/test_investigation_navigation_20261117.mjs
       - name: Authoritative topic discovery and source navigation
         run: node tests/test_topic_authority_20261117.mjs
+      - name: Source-linked timeline and entity directory contracts
+        run: node tests/test_timelines_directories_20261117.mjs
 
       - name: Research citation packet and intent guard
         run: node tests/test_research_evidence_closeout.mjs

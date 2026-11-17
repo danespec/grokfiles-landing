@@ -903,7 +903,7 @@ function routePolicy(status, reason, indexability = "index,follow", zone = "") {
   };
 }
 
-const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/topics/epstein-non-prosecution-agreement", "/topics/epstein-jail-records", "/topics/epstein-bank-records", "/topics/leon-black-epstein-financial-records", "/topics/epstein-investment-records", "/topics/epstein-court-records", "/topics/ehud-barak-epstein-business-records", "/guides/epstein-files-data-set-1", "/guides/epstein-files-data-set-2", "/guides/epstein-files-data-set-3", "/guides/epstein-files-data-set-4", "/guides/epstein-files-data-set-5", "/guides/epstein-files-data-set-6", "/guides/epstein-files-data-set-7", "/guides/epstein-files-data-set-8", "/guides/epstein-files-data-set-10", "/guides/epstein-files-data-set-11", "/guides/epstein-files-data-set-12", "/guides/epstein-files-data-set-9", "/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
+const GAH_SEARCH_RECOVERY_ROUTES = new Set(["/timelines/epstein-npa-decision-timeline", "/timelines/epstein-custody-records-timeline", "/timelines/epstein-financial-records-timeline", "/timelines/epstein-disclosure-timeline", "/entities/epstein-public-institution-records", "/entities/epstein-financial-organization-records", "/topics/epstein-non-prosecution-agreement", "/topics/epstein-jail-records", "/topics/epstein-bank-records", "/topics/leon-black-epstein-financial-records", "/topics/epstein-investment-records", "/topics/epstein-court-records", "/topics/ehud-barak-epstein-business-records", "/guides/epstein-files-data-set-1", "/guides/epstein-files-data-set-2", "/guides/epstein-files-data-set-3", "/guides/epstein-files-data-set-4", "/guides/epstein-files-data-set-5", "/guides/epstein-files-data-set-6", "/guides/epstein-files-data-set-7", "/guides/epstein-files-data-set-8", "/guides/epstein-files-data-set-10", "/guides/epstein-files-data-set-11", "/guides/epstein-files-data-set-12", "/guides/epstein-files-data-set-9", "/guides/doj-epstein-data-sets", "/guides/how-to-search-epstein-files", "/guides/epstein-client-list-explained", "/guides/epstein-flight-logs-doj", "/guides/epstein-black-book-redacted-doj", "/guides/epstein-files-transparency-act", "/guides/epstein-2007-draft-federal-indictment", "/guides", "/archive/ids", "/methodology", "/editorial-policy"]);
 
 function routePolicyForPath(pathname) {
   const path = cleanPath(pathname || "/");
@@ -1286,6 +1286,12 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/topics/epstein-investment-records", "/topics/epstein-investment-records.html"],
   ["/topics/epstein-court-records", "/topics/epstein-court-records.html"],
   ["/topics/ehud-barak-epstein-business-records", "/topics/ehud-barak-epstein-business-records.html"],
+  ["/timelines/epstein-npa-decision-timeline", "/timelines/epstein-npa-decision-timeline.html"],
+  ["/timelines/epstein-custody-records-timeline", "/timelines/epstein-custody-records-timeline.html"],
+  ["/timelines/epstein-financial-records-timeline", "/timelines/epstein-financial-records-timeline.html"],
+  ["/timelines/epstein-disclosure-timeline", "/timelines/epstein-disclosure-timeline.html"],
+  ["/entities/epstein-public-institution-records", "/entities/epstein-public-institution-records.html"],
+  ["/entities/epstein-financial-organization-records", "/entities/epstein-financial-organization-records.html"],
   ["/guides/epstein-files-data-set-9", "/guides/epstein-files-data-set-9.html"],
   ["/guides/doj-epstein-data-sets", "/guides/doj-epstein-data-sets.html"],
   ["/entities", "/entities.html"],
@@ -1489,6 +1495,12 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/topics/epstein-investment-records", "2026-11-17"],
   ["https://grokarchivehub.com/topics/epstein-court-records", "2026-11-17"],
   ["https://grokarchivehub.com/topics/ehud-barak-epstein-business-records", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-npa-decision-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-custody-records-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-financial-records-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/timelines/epstein-disclosure-timeline", "2026-11-17"],
+  ["https://grokarchivehub.com/entities/epstein-public-institution-records", "2026-11-17"],
+  ["https://grokarchivehub.com/entities/epstein-financial-organization-records", "2026-11-17"],
   ["https://grokarchivehub.com/guides/epstein-files-data-set-9", "2026-11-17"],
   ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-11-17"],
   ["https://grokarchivehub.com/photos", "2026-10-23"],
@@ -3625,6 +3637,12 @@ const GAH_LLM_DISCOVERY = `# Grok Archive Hub
 - [Epstein Investment Records: Trusts and Ventures](https://grokarchivehub.com/topics/epstein-investment-records): Research Epstein-linked investment records, Southern Trust, investment vehicles, term sheets, payment evidence and ownership verification.
 - [Epstein Court Records: Cases, Filings and Orders](https://grokarchivehub.com/topics/epstein-court-records): Find Epstein court records by case and document type. Distinguish criminal charges, civil allegations, privilege orders, FOIA and disclosure records.
 - [Ehud Barak and Epstein: Business Records](https://grokarchivehub.com/topics/ehud-barak-epstein-business-records): Explore source-linked Barak and Epstein business correspondence, proposed ventures, scheduling records, investment evidence and verification limits.
+- [Epstein NPA Timeline: July–December 2007](https://grokarchivehub.com/timelines/epstein-npa-decision-timeline): Dated source trail for the 2007 federal decision, signed non-prosecution agreement and victim-notification hold, with unresolved decision gaps.
+- [Epstein Custody Records: 2019 Timeline](https://grokarchivehub.com/timelines/epstein-custody-records-timeline): Compare dated MCC operations logs, custody records, camera-file lists, evidence preservation and later OIG findings, without filling gaps.
+- [Epstein Financial Records: Dated Evidence Trail](https://grokarchivehub.com/timelines/epstein-financial-records-timeline): Compare dated bank reporting, charity-account records, commissioned reviews, Senate findings and forensic-accounting source limits.
+- [Epstein Files Disclosure Timeline: 2025–2026](https://grokarchivehub.com/timelines/epstein-disclosure-timeline): Source-linked chronology of 2025 FBI review, the Transparency Act, DOJ release announcement and selected 2026 court filings through November 2.
+- [Epstein Records: Public Institutions and Roles](https://grokarchivehub.com/entities/epstein-public-institution-records): Find agencies, courts, regulators and oversight bodies by their documented roles in Epstein investigations, disclosure and financial records.
+- [Epstein Financial Entities: Research Directory](https://grokarchivehub.com/entities/epstein-financial-organization-records): Find published research on banks, trusts, charity accounts, investment vehicles and commissioned reviews with entity-resolution and transaction limits.
 - [Data Set 9 PDF and EFTA guide](https://grokarchivehub.com/guides/epstein-files-data-set-9): official index navigation, parent-file identities and published source examples.
 - [DOJ Data Sets 1–12](https://grokarchivehub.com/guides/doj-epstein-data-sets): official numbered releases and Data Set 9 navigation.
 - [How to search Epstein files](https://grokarchivehub.com/guides/how-to-search-epstein-files): EFTA lookup, OCR and source verification.

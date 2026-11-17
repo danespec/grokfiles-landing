@@ -1466,5 +1466,29 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/topics/ehud-barak-epstein-business-records": {
     "title": "Ehud Barak and Epstein: Business Records",
     "description": "Explore source-linked Barak and Epstein business correspondence, proposed ventures, scheduling records, investment evidence and verification limits."
+  },
+  "https://grokarchivehub.com/timelines/epstein-npa-decision-timeline": {
+    "title": "Epstein NPA Timeline: July–December 2007",
+    "description": "Dated source trail for the 2007 federal decision, signed non-prosecution agreement and victim-notification hold, with unresolved decision gaps."
+  },
+  "https://grokarchivehub.com/timelines/epstein-custody-records-timeline": {
+    "title": "Epstein Custody Records: 2019 Timeline",
+    "description": "Compare dated MCC operations logs, custody records, camera-file lists, evidence preservation and later OIG findings, without filling gaps."
+  },
+  "https://grokarchivehub.com/timelines/epstein-financial-records-timeline": {
+    "title": "Epstein Financial Records: Dated Evidence Trail",
+    "description": "Compare dated bank reporting, charity-account records, commissioned reviews, Senate findings and forensic-accounting source limits."
+  },
+  "https://grokarchivehub.com/timelines/epstein-disclosure-timeline": {
+    "title": "Epstein Files Disclosure Timeline: 2025–2026",
+    "description": "Source-linked chronology of 2025 FBI review, the Transparency Act, DOJ release announcement and selected 2026 court filings through November 2."
+  },
+  "https://grokarchivehub.com/entities/epstein-public-institution-records": {
+    "title": "Epstein Records: Public Institutions and Roles",
+    "description": "Find agencies, courts, regulators and oversight bodies by their documented roles in Epstein investigations, disclosure and financial records."
+  },
+  "https://grokarchivehub.com/entities/epstein-financial-organization-records": {
+    "title": "Epstein Financial Entities: Research Directory",
+    "description": "Find published research on banks, trusts, charity accounts, investment vehicles and commissioned reviews with entity-resolution and transaction limits."
   }
 };
