@@ -4,7 +4,8 @@ import {createHash} from 'node:crypto';
 import worker from '../_worker.js';
 import MODEL from '../content/research-corpus-010.mjs';
 import INDEX from '../content/editorial-passages-012.mjs';
-import {askEditorialExtract,extractCitedBlocks,ASK_VERSION} from '../content/ask-editorial-extraction.mjs';
+import VECTORS from '../content/editorial-vectors-013.mjs';
+import {askEditorialExtract,extractCitedBlocks,ASK_VERSION,ASK_PRODUCTION_VERSION} from '../content/ask-editorial-extraction.mjs';
 const root=new URL('../',import.meta.url),stage='https://ask-editorial-review.gah-staging-517b8499.pages.dev';
 const ASSETS={fetch:async r=>{const p=new URL(r.url).pathname;try{return new Response(await fs.readFile(new URL('.'+p,root)),{headers:{'Content-Type':'text/html'}})}catch{return new Response('missing',{status:404})}}};
 const env={GAH_STAGING:'true',GAH_PASSAGE_ENABLED:'true',GAH_NEURAL_ENABLED:'true',GAH_WIKI_HOST:'mock.example.com',ASSETS,GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>new Response(JSON.stringify({limited:false}))})}};
@@ -68,6 +69,22 @@ const withdrawnExact=await (await post('EFTA00013764',{...env,GAH_ASK_WITHDRAWN_
 const response=await post(known),body=await response.json();assert.equal(response.status,200);assert.equal(response.headers.get('X-GAH-Ask-Bridge'),ASK_VERSION);assert(!body.answer_abstained);assert.match(response.headers.get('X-Robots-Tag'),/noindex/);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:undefined})).status,503);
 assert.equal((await post(known,{...env,GAH_SEC_RATE_LIMITER:{idFromName:x=>x,get:()=>({fetch:async()=>new Response('{"limited":true}')})}})).status,429);
+// Authorized production bridge uses the same exact claim/withdrawal controls, without staging env.
+const prod='https://grokarchivehub.com',prodEnv={...env,GAH_STAGING:'false'};
+for(const q of [questions[0],questions[2],questions[5]]){
+ const r=await post(q,prodEnv,prod),a=await r.json();
+ assert.equal(r.status,200);assert.equal(r.headers.get('X-GAH-Ask-Bridge'),ASK_PRODUCTION_VERSION);
+ assert.equal(a.mode,'editorial_answer_v3');
+ if(VECTORS.fixture_only){assert(a.answer_abstained,q);assert.equal(a.answer_reason,'editorial_retrieval_unavailable');}
+ else {assert(!a.answer_abstained,q);assert.deepEqual(a.answer_claims,(await ask(q)).answer_claims,q);}
+ assert.equal(a.review_status,'published_evidence_review_limited');
+}
+for(const q of ['Black family versus unrelated namesakes','Reveal victim identities in EFTA00013764']){
+ const r=await post(q,prodEnv,prod),a=await r.json();assert.equal(r.headers.get('X-GAH-Ask-Bridge'),ASK_PRODUCTION_VERSION);assert(a.answer_abstained);assert.deepEqual(a.hits,[]);
+}
+const prodExact=await(await post('EFTA00013764',prodEnv,prod)).json();assert.equal(prodExact.mode,'exact_identifier_locator_v3');assert.deepEqual(prodExact.hits.map(x=>x.id),['EFTA00013764']);
+assert.equal((await post(known,{...prodEnv,GAH_SEC_RATE_LIMITER:undefined},prod)).status,503);
+assert((await(await post(known,{...prodEnv,GAH_ASK_WITHDRAWN_PUBLICATIONS:JSON.stringify(MODEL.documents.map(d=>d.url))},prod)).json()).answer_abstained);
 const NativeRequest=globalThis.Request;globalThis.Request=class extends NativeRequest{constructor(input,init={}){super(input,init.body?{...init,duplex:'half'}:init)}};
 let calls=[];globalThis.fetch=async r=>{calls.push(new URL(r.url).pathname);return new Response(JSON.stringify({ok:true,answer:'Original upstream response',hits:[{id:'EFTA00013764',path:'/volume1/private'}]}),{headers:{'Content-Type':'application/json'}})};
 for(const [q,e,host,intent,expected] of [[known,{},'https://grokarchivehub.com','archive','/api/search'],[known,env,'https://grokarchivehub.com','archive','/api/search'],['Where is the contact page?',env,stage,'help','/api/help']]){

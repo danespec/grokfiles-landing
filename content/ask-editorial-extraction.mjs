@@ -3,7 +3,11 @@ import MODEL from './research-corpus-010.mjs';
 import {askEditorialCandidate} from './ask-editorial-staging.mjs';
 import {editorialGuard} from './research-evidence-closeout.mjs';
 import {ASK_PUBLIC_NAV,ASK_DATASET_NAV,ASK_EXCLUDED_PUBLIC_IDS} from './ask-research-navigation.mjs';
+import {researchFeatureEnabled} from './research-features.mjs';
 export const ASK_VERSION='GAH_ASK_EDITORIAL_STAGING_V3';
+export const ASK_PRODUCTION_VERSION='GAH_ASK_EDITORIAL_V3';
+// Owner-authorized apex release; no staging flag or request-payload override.
+export function askEditorialProduction(env,request){const u=new URL(request.url);return u.origin==='https://grokarchivehub.com'&&String(env?.GAH_STAGING).toLowerCase()!=='true'&&researchFeatureEnabled(env,'passage');}
 const hash=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text))),x=>x.toString(16).padStart(2,'0')).join('');
 const stop=new Set('what which who how why when where does did do has have was were the a an of in to and or for from with by on as at it is are can could would please tell me about explain summarize according say saying reporting separate establish evidence records record epstein jeffrey gah published'.split(' '));
 const aliases={paid:'payment',payments:'payment',fees:'payment',visited:'visit',visiting:'visit',went:'visit',go:'visit',flights:'flight',emails:'email',reports:'report',letters:'letter',loans:'loan'};
@@ -88,7 +92,8 @@ function relatedNavigation(rows,claims,env){
  return [...new Map(links.filter(x=>!askSourceWithdrawn(env,x.url)).map(x=>[x.url,{...x,scope:'related research navigation only; not claim evidence'}])).values()].slice(0,8);
 }
 export async function askEditorialExtract(question,env,request,budget=async()=>false){
- if(String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
+ const production=askEditorialProduction(env,request);
+ if(!production&&String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
  if(/\bEFTA\d{8}\b/i.test(question))return null; // Exact-ID archive routing remains untouched.
  if(await askEditorialRestricted(question))return abstain('insufficient_or_restricted_evidence');
  const q=terms(question);if(q.length<2)return abstain('question_requires_more_detail');
@@ -98,7 +103,7 @@ export async function askEditorialExtract(question,env,request,budget=async()=>f
  const extra={answer_generation:'verbatim_cited_publication_extraction',review_status:'pending_independent_review',corpus_publications:MODEL.documents.length,retrieval_strategy:retrieval.strategy,neural_executed:retrieval.neural_executed,neural_degraded:retrieval.neural_degraded||false,related_research:relatedNavigation(candidates,[],env),editorial_candidates:candidates.map(r=>({title:r.title,url:r.url,publication_sha256:r.source_sha256})),evidentiary_limitations:['Source-bound staging candidates are not independently certified primary-source findings.','An inline EFTA/leak citation identifies the publication’s claimed support; Ren must verify entailment before production release.','Allegations, proposals and unresolved questions retain their wording. Association alone does not establish wrongdoing.']};
  if(!candidates.length)return abstain('insufficient_evidence',extra);
  if(!env.ASSETS?.fetch)return abstain('publication_assets_unavailable',extra);
- const boundPacket=askEditorialCandidate(question,env);
+ const boundPacket=askEditorialCandidate(question,env,production);
  const ranked=[];
  for(const row of candidates.slice(0,8)){
   const source=new URL(row.url),local=new URL(request.url);local.pathname=source.pathname+'.html';local.search='';local.hash='';

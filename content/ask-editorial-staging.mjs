@@ -22,9 +22,9 @@ const packets=[
 const norm=q=>q.toLowerCase().replace(/[?.!]+$/,'').replace(/\s+/g,' ').trim();
 const namesakes=q=>/\bblack\b/i.test(q)&&/\b(?:namesakes?|unrelated|family versus|different black|which black entity)\b/i.test(q);
 const abstain=reason=>({ok:true,degraded:false,mode:'editorial_answer_staging',intent:'archive',answer:'The published evidence does not establish a sufficiently supported answer.',answer_abstained:true,answer_reason:reason,answer_claims:[],citations:[],hits:[],generated_claims:0});
-export function askEditorialCandidate(question,env){
- // Staging only: independent review and explicit production authorization required.
- if(String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
+export function askEditorialCandidate(question,env,production=false){
+ // Production permission is supplied only by the host-bound bridge.
+ if(!production&&String(env?.GAH_STAGING).toLowerCase()!=='true')return null;
  if(editorialGuard(question)||namesakes(question))return abstain('insufficient_or_restricted_evidence');
  if(question.length>256||/\bEFTA\d{8}\b/i.test(question))return null;
  const payment=/\bleon\s+black\b/i.test(question)&&/\bdechert\b/i.test(question)&&/\b(?:pay|paid|payment|payments|fee|fees|million|loans?)\b/i.test(question);

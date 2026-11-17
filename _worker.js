@@ -1,4 +1,4 @@
-import {askEditorialExtract,askSourceWithdrawn,askEditorialRestricted,ASK_VERSION} from "./content/ask-editorial-extraction.mjs";
+import {askEditorialExtract,askSourceWithdrawn,askEditorialRestricted,askEditorialProduction,ASK_VERSION,ASK_PRODUCTION_VERSION} from "./content/ask-editorial-extraction.mjs";
 import { webBotDirectory } from "./workers/lib/web-bot-auth.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
 import {pipelineVersion as exactCacheVersion} from './content/research-pipeline-010.mjs';
@@ -18827,25 +18827,31 @@ async function handleAskGahBridge(request, env = {}) {
         ? "help"
         : "archive";
 
-  // Staging-only source-bound editorial candidates; help, exact IDs and archive fallback stay unchanged.
+  // Owner-authorized V3 on the production apex; protected staging and help retain their existing boundaries.
   const editorialStage = isStagingEnv(env) && new URL(request.url).hostname.endsWith(".gah-staging-517b8499.pages.dev");
-  if (editorialStage && intent === "archive") {
+  const editorialProduction=askEditorialProduction(env,request);
+  const editorialMode=editorialProduction?"editorial_answer_v3":"editorial_answer_staging";
+  const bridgeVersion=editorialProduction?ASK_PRODUCTION_VERSION:ASK_VERSION;
+  if ((editorialStage||editorialProduction) && intent === "archive") {
     let rate;
-    try { rate=await gahSecDoCall(env,{op:"check",scope:"ask-editorial-staging",key:gahSecClientIp(request),max:30,windowMs:60000}); } catch {}
+    try { rate=await gahSecDoCall(env,{op:"check",scope:editorialProduction?"ask-editorial-production":"ask-editorial-staging",key:gahSecClientIp(request),max:30,windowMs:60000}); } catch {}
     if (!rate || typeof rate.limited!=="boolean" || rate.limited) return jsonResponse({error:rate?.limited?"rate_limited":"limiter_unavailable"},rate?.limited?429:503,{"X-Robots-Tag":"noindex, nofollow, noarchive"});
-    const stageHeaders={"X-GAH-Ask-Bridge":ASK_VERSION,"X-Robots-Tag":"noindex, nofollow, noarchive","Cache-Control":"no-store"};
-    if(await askEditorialRestricted(question))return jsonResponse({ok:true,mode:"editorial_answer_staging",intent:"archive",answer:"The published evidence does not establish a sufficiently supported answer.",answer_abstained:true,answer_reason:"insufficient_or_restricted_evidence",answer_claims:[],citations:[],hits:[],generated_claims:0},200,stageHeaders);
+    const stageHeaders={"X-GAH-Ask-Bridge":bridgeVersion,"X-Robots-Tag":"noindex, nofollow, noarchive","Cache-Control":"no-store"};
+    if(await askEditorialRestricted(question))return jsonResponse({ok:true,mode:editorialMode,intent:"archive",answer:"The published evidence does not establish a sufficiently supported answer.",answer_abstained:true,answer_reason:"insufficient_or_restricted_evidence",answer_claims:[],citations:[],hits:[],generated_claims:0},200,stageHeaders);
     const ids=[...new Set((question.match(/\bEFTA\d{8}\b/gi)||[]).map(id=>id.toUpperCase()))];
     if(ids.length){
       const hits=ids.slice(0,5).flatMap(id=>{
         const dossier=GAH_IDENTIFIER_DOSSIERS.get(id),url="https://grokarchivehub.com/archive/"+id;
         return dossier?.indexable&&!askSourceWithdrawn(env,url,[id])?[{id,efta_id:id,title:dossier.title,url,scope:"verified_public_locator_only"}]:[];
       });
-      return jsonResponse({ok:true,mode:"exact_identifier_locator_staging",intent:"archive",answer:hits.length?"Requested public identifier locator(s). Open the source dossier; a locator does not certify claims or answer a mixed-ID question.":"No available verified public locator for the requested identifier(s).",answer_abstained:true,answer_reason:hits.length?"exact_identifier_locator_only":"exact_identifier_unavailable",answer_claims:[],citations:[],hits,generated_claims:0},200,stageHeaders);
+      return jsonResponse({ok:true,mode:editorialProduction?"exact_identifier_locator_v3":"exact_identifier_locator_staging",intent:"archive",answer:hits.length?"Requested public identifier locator(s). Open the source dossier; a locator does not certify claims or answer a mixed-ID question.":"No available verified public locator for the requested identifier(s).",answer_abstained:true,answer_reason:hits.length?"exact_identifier_locator_only":"exact_identifier_unavailable",answer_claims:[],citations:[],hits,generated_claims:0},200,stageHeaders);
     }
     const editorial = await askEditorialExtract(question, env, request, ()=>gahNeuralBudget(env));
-    if (editorial) return new Response(JSON.stringify(sanitizeAskGahPayload(editorial)), {headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow, noarchive","X-GAH-Ask-Intent":intent,"X-GAH-Ask-Bridge":ASK_VERSION,"X-GAH-Ask-Privacy":"GAH_ASK_GAH_PRIVACY_SANITIZER_V1"}});
-    return jsonResponse({ok:true,mode:"editorial_answer_staging",intent:"archive",answer:"No supported editorial answer is available.",answer_abstained:true,answer_reason:"editorial_unavailable",answer_claims:[],citations:[],hits:[],generated_claims:0},200,stageHeaders);
+    if (editorial) {
+      const released=editorialProduction?{...editorial,mode:editorialMode,review_status:"published_evidence_review_limited",answer_generation:editorial.answer_generation==="source_bound_staging_candidate"?"source_bound_publication_candidate":editorial.answer_generation,evidentiary_limitations:["Answers are bounded to published sources; primary-source entailment is not independently certified for every claim.","The citation identifies the publication’s claimed support. Review the cited record and its limitations.","Allegations, proposals and unresolved questions retain their wording. Association alone does not establish wrongdoing."]}:editorial;
+      return new Response(JSON.stringify(sanitizeAskGahPayload(released)), {headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Robots-Tag":"noindex, nofollow, noarchive","X-GAH-Ask-Intent":intent,"X-GAH-Ask-Bridge":bridgeVersion,"X-GAH-Ask-Privacy":"GAH_ASK_GAH_PRIVACY_SANITIZER_V1"}});
+    }
+    return jsonResponse({ok:true,mode:editorialMode,intent:"archive",answer:"No supported editorial answer is available.",answer_abstained:true,answer_reason:"editorial_unavailable",answer_claims:[],citations:[],hits:[],generated_claims:0},200,stageHeaders);
   }
 
   const upstreamUrl = new URL(request.url);
