@@ -1629,8 +1629,10 @@ const GAH_APPROVED_ARCHIVE_SITEMAP = Object.freeze([
   ["/archive/EFTA01410768", "2026-10-21"],
 ]);
 
+const GAH_DOSSIER_RECOVERY_IDS = new Set(["EFTA00033413", "EFTA00035035", "EFTA00035053", "EFTA00035206", "EFTA00035420", "EFTA00035421", "EFTA00035442", "EFTA00035570", "EFTA00035657", "EFTA00035715"]);
+
 function serveCuratedArchiveSitemap(request) {
-  const entries = [...GAH_IDENTIFIER_DOSSIERS.values()].filter(e => e.indexable && !publicationRule("https://grokarchivehub.com/archive/"+e.id)?.noindex).map(e => ["/archive/" + e.id, e.dateModified]).map(([path, updated]) =>
+  const entries = [...GAH_IDENTIFIER_DOSSIERS.values()].filter(e => e.indexable && !publicationRule("https://grokarchivehub.com/archive/"+e.id)?.noindex).map(e => ["/archive/" + e.id, GAH_DOSSIER_RECOVERY_IDS.has(e.id) ? "2026-11-17" : e.dateModified]).map(([path, updated]) =>
     "  <url><loc>https://grokarchivehub.com" + path
     + "</loc><lastmod>" + updated + "</lastmod></url>"
   ).join("\n");
@@ -6932,7 +6934,7 @@ export function gahResearchIndexablePublication(loc) {
     const url = new URL(loc);
     if (url.origin !== "https://grokarchivehub.com" || url.search || url.hash) return false;
     // SEO promotion is not admission to the separately fingerprinted research corpus.
-    if (GAH_SEARCH_RECOVERY_ROUTES.has(cleanPath(url.pathname))) return false;
+    if (GAH_SEARCH_RECOVERY_ROUTES.has(cleanPath(url.pathname)) || GAH_DOSSIER_RECOVERY_IDS.has(cleanPath(url.pathname).replace(/^\/archive\//,""))) return false;
     const rule = publicationRule(loc);
     if (rule?.canonical && rule.canonical !== loc) return false;
     return sitemapEntryIsIndexable([loc, ""]);

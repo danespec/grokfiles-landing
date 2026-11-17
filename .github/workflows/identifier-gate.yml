@@ -82,6 +82,8 @@ jobs:
         run: node tests/test_seo_sitewide_20261116.mjs
       - name: All twelve source-linked dataset guides and discovery contracts
         run: node tests/test_dataset_guides_20261117.mjs
+      - name: Dossier recovery and canonical disposition contract
+        run: node tests/test_dossier_recovery_20261117.mjs
 
       - name: Research citation packet and intent guard
         run: node tests/test_research_evidence_closeout.mjs
