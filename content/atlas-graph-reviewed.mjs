@@ -1,16 +1,16 @@
 // Fix-pack metadata-only rebind: IDs, locators and relationships unchanged; no new factual certification.
 // Explicit review of public citation membership, not a factual or guilt finding.
-// Source: published Atlas v3.119 (unchanged previously reviewed memberships) + existing identifier registry + live HTML canonical checks.
+// Source: published Atlas v3.122 (unchanged previously reviewed memberships) + existing identifier registry + live HTML canonical checks.
 // Any Atlas byte change invalidates the entire reviewed projection.
 // The immutable retrieval models still identify v3.82; this exact reviewed
-// v3.119 rebind preserves the existing citation memberships, not new edges.
+// v3.122 rebind preserves the existing citation memberships, not new edges.
 export const ATLAS_GRAPH_MODEL_REBIND = Object.freeze({
   model_publication_sha256:"ab1a5c339cc025ea50b1b9d430f11ab699273aadc4a5777440ffb25002375760",
-  published_data_sha256:"c98221c60cc87af5ed1c235f06d2ca4cad8dbca43ef5dd34fe7e56a9f9777fbe",
+  published_data_sha256:"7d5a2b6954914598ac9a2c1d778e0b97dd5e7298582fc5e3e6b8fb18932ffd41",
   published_registry_sha256:"eb6c72e5a1660d0233a6a5a637e3b3d4517f829e2356c637ff464752accda638"
 });
 export const ATLAS_GRAPH_REVIEW = Object.freeze({
-  published_data_sha256:"c98221c60cc87af5ed1c235f06d2ca4cad8dbca43ef5dd34fe7e56a9f9777fbe",
+  published_data_sha256:"7d5a2b6954914598ac9a2c1d778e0b97dd5e7298582fc5e3e6b8fb18932ffd41",
   published_registry_sha256:"eb6c72e5a1660d0233a6a5a637e3b3d4517f829e2356c637ff464752accda638",
   stories:Object.freeze([
     Object.freeze({id:"3",document_ids:Object.freeze(["EFTA00022062","EFTA02731082"])}),
