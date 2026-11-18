@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import { normalizeAnalyticsHtml } from './analytics-html.mjs';
 const files={'analytics.js':'application/javascript; charset=utf-8','consent.js':'application/javascript; charset=utf-8','consent.css':'text/css; charset=utf-8'};
 const prefix='/__gah-analytics/';
+// Match the apex's single-owner analytics strategy; preserve inline reader code and PDF.js.
+export const WIKI_ANALYTICS_CSP="script-src 'unsafe-inline' https://wiki.grokarchivehub.com/__gah-analytics/ https://wiki.grokarchivehub.com/pdfjs/build/ https://wiki.grokarchivehub.com/cdn-cgi/challenge-platform/ https://wiki.grokarchivehub.com/cdn-cgi/scripts/ https://www.googletagmanager.com https://static.cloudflareinsights.com; worker-src 'self' blob:";
 const config={schema:'gah.consent.v2',unifiedConsent:true,googleTagEnabled:true,ga4MeasurementId:'G-XHE84C8D1V',adsenseApproved:false,deferToGoogleCmpWhenPresent:true,googleCmpConfiguredByPublisher:false,googleCmpAnalyticsEnabled:false,tcfVersionSupport:'2.3',adsDataRedaction:true};
 const scripts='<script data-cfasync="false">window.GAH_CONSENT_BOOT='+JSON.stringify(config)+';window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};window.gtag("consent","default",{analytics_storage:"denied",ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied"});window.gtag("set","ads_data_redaction",true);</script><link rel="stylesheet" href="'+prefix+'consent.css?v=GAH-ANALYTICS-GLOBAL-001"><script data-cfasync="false" src="'+prefix+'analytics.js?v=GAH-ANALYTICS-UNIFIED-004"></script><script data-cfasync="false" defer src="'+prefix+'consent.js?v=GAH-ANALYTICS-GLOBAL-001"></script>';
 export function attachWikiAnalytics(req,res){
@@ -13,6 +15,6 @@ export function attachWikiAnalytics(req,res){
   res.end(req.method==='HEAD'?'':fs.readFileSync(new URL('./'+name,import.meta.url)));return true;
  }
  if(!/^\/(?:$|archive(?:\/|$)|receipts(?:\/|$)|research-index$|research(?:\/|$)|topics(?:\/|$)|pdf-lite(?:\.html)?$)/.test(path))return false;
- res.gahPublicAnalytics=body=>{res.setHeader('X-GAH-Analytics-Instrumentation','GAH-ANALYTICS-PARITY-001');return normalizeAnalyticsHtml(String(body),scripts);};
+ res.gahPublicAnalytics=body=>{res.setHeader('X-GAH-Analytics-Instrumentation','GAH-ANALYTICS-PARITY-001');if(!res.getHeader('Content-Security-Policy'))res.setHeader('Content-Security-Policy',WIKI_ANALYTICS_CSP);return normalizeAnalyticsHtml(String(body),scripts);};
  return false;
 }

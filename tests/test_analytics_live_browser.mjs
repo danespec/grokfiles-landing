@@ -4,10 +4,12 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 const {chromium}=await import(process.env.GAH_TEST_PLAYWRIGHT_MODULE||'playwright');
 const candidate=process.argv.includes('--candidate');
+const wikiGateway=await readFile(new URL('../workers/wiki-analytics/gateway-analytics.mjs',import.meta.url),'utf8');
+const wikiCsp=JSON.parse(wikiGateway.match(/export const WIKI_ANALYTICS_CSP=(.*);/)[1]);
 const source=await readFile(new URL('../frontdoor/analytics.js',import.meta.url),'utf8');
 const browser=await chromium.launch({channel:process.env.GAH_TEST_BROWSER_CHANNEL||'chrome',headless:true});
 try{
- for(const url of ['https://grokarchivehub.com/search?gah_debug=1','https://wiki.grokarchivehub.com/?gah_debug=1']){
+ for(const url of ['https://grokarchivehub.com/search?gah_debug=1','https://wiki.grokarchivehub.com/?gah_debug=1','https://wiki.grokarchivehub.com/receipts/EFTA00035613?gah_debug=1','https://wiki.grokarchivehub.com/pdf-lite?id=EFTA00035613&gah_debug=1']){
   const context=await browser.newContext({userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'});
   const page=await context.newPage();
   const views=[];
@@ -17,7 +19,13 @@ try{
    if(u.searchParams.get('en')==='page_view'||/(^|[&\n])en=page_view(?:&|$)/.test(data))views.push({tid:u.searchParams.get('tid'),url:u.searchParams.get('dl')});
    await route.fulfill({status:204,body:''});
   });
-  if(candidate)await page.route(/\/(?:frontdoor|__gah-analytics)\/analytics\.js(?:\?|$)/,route=>route.fulfill({contentType:'application/javascript',body:source}));
+  if(candidate){
+   await page.route(/\/(?:frontdoor|__gah-analytics)\/analytics\.js(?:\?|$)/,route=>route.fulfill({contentType:'application/javascript',body:source}));
+   if(url.includes('wiki.'))await page.route(url,async route=>{
+    const response=await route.fetch();
+    await route.fulfill({response,headers:{...response.headers(),'content-security-policy':wikiCsp}});
+   });
+  }
   await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
   await page.waitForTimeout(1200);
   assert.equal(views.length,0,url+': no pageview before explicit consent');
