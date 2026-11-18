@@ -19,6 +19,8 @@ jobs:
           python3 scripts/build_editorial_passages_012.py --output "$GAH_PRIVATE_PASSAGE_INDEX"
           echo "GAH_PRIVATE_PASSAGE_INDEX=$GAH_PRIVATE_PASSAGE_INDEX" >> "$GITHUB_ENV"
           test -z "$(git ls-files content/editorial-passages-012.mjs)"
+      - name: Verify consent-gated GA4 loader and wiki parity
+        run: python3 tests/test_analytics_deployment_parity.py
       - name: Verify internal links and promoted slug targets
         run: python3 tests/test_identifier_link_gate_20261027.py
       - name: Verify dossier routing, sitemaps and metadata
