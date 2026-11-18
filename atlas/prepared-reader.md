@@ -16,7 +16,7 @@ Menu
 [Skip to content](https://grokarchivehub.com/atlas/#main)
 [GAH GROK ARCHIVE HUB ](https://grokarchivehub.com/)
 
-THE DOCUMENTS, CONNECTED · V3.117
+THE DOCUMENTS, CONNECTED · V3.119
 
 # Story Atlas
 A map of connected stories in the public Epstein document corpus, built from the documents. Follow the people, events, and money through cited records to an endpoint—or the dated point where the trail goes cold.
@@ -86,7 +86,7 @@ Search stories Confidence tier All 82 stories Confirmed chains (30) Probable cha
 - [ P16 S76D demo flight Probable ](https://grokarchivehub.com/atlas/#story-p16)
 - [ P17 Zorro Ranch Moskowitz visit Probable ](https://grokarchivehub.com/atlas/#story-p17)
 - [ P18 New York Times v. Bureau of Prisons FOIA suit → ~2,700-page release Probable ](https://grokarchivehub.com/atlas/#story-p18)
-- [ P19 Epstein's successive wills, 2001–2014 Probable ](https://grokarchivehub.com/atlas/#story-p19)
+- [ P19 Epstein's successive wills, 2001–January 2019 Probable ](https://grokarchivehub.com/atlas/#story-p19)
 - [ P20 Civil forfeiture thread: Epstein properties Probable ](https://grokarchivehub.com/atlas/#story-p20)
 - [ P21 Government of the U.S. Virgin Islands v. Epstein estate Probable ](https://grokarchivehub.com/atlas/#story-p21)
 - [ P22 U.S.–France cooperation on the Brunel investigation Probable ](https://grokarchivehub.com/atlas/#story-p22)
@@ -466,6 +466,40 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00009933](https://gro
 
 - **v3.117 (4 reported entries):** An August 2, 2019 email recounts a July 29 meeting at which defense counsel discussed possible resolution or cooperation in general terms, without a specific proposal. Additional investigative records extend the chain; individual interview or contact details are minimized. No agreement or completed cooperation is established. Sources: [EFTA00073643](https://grokarchivehub.com/search?q=EFTA00073643).
 
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 16 anchor entries to this story, of which 8 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.118:** January 2020 request for approval of February travel to Stockholm for a potential corroboration interview; earlier planned trip rescheduled. Request, not evidence that the interview occurred.
+
+- **v3.118:** January 23, 2020 grand-jury subpoena to United Corporate Security seeks Maxwell passenger, payment and loyalty records for 1994–1998 and from July 2019. Issuance, not production. Source: [EFTA00074190](https://grokarchivehub.com/search?q=EFTA00074190).
+
+- **v3.119:** September 2019 calendar record schedules a proffer. Attendance or completion is not established.
+
+- **v3.119:** February 2020 correspondence arranges a cooperating-source interview; allegations and attendance remain unverified.
+
+- **v3.119:** Flight-log productions to SDNY in December 2019 and January 2020; February 2020 correspondence schedules an interview and proposed investigative questions. Neither a proposed question nor a similar name establishes identity or an event.
+
+- **v3.119:** Late 2019 and early 2020 correspondence records corroboration steps and a scheduled follow-up interview. Completion is not established; identifying details withheld.
+
+- **v3.119:** February 5, 2020 American Airlines response reports production of Maxwell reservation, ticket and usage records; contents of the protected attachment are not established here.
+
+- **v3.119:** January 23, 2020 Airline Reporting Corporation grand-jury subpoena seeks Maxwell passenger, payment and loyalty records for 1994–1998 and from July 2019. Issuance, not production. Source: [EFTA00074384](https://grokarchivehub.com/search?q=EFTA00074384).
+
+- **v3.119:** January 21–22, 2020 SDNY correspondence requests airline subpoenas and confirmation of nondisclosure before sending. Preparation, not proof of service. Source: [EFTA00074388](https://grokarchivehub.com/search?q=EFTA00074388).
+
+- **v3.119:** November 27, 2019 TD Bank response to an October 3 subpoena states it neither has nor had accounts in Epstein’s name or on which he was signatory. Scope limited to the bank’s response. Source: [EFTA00074402](https://grokarchivehub.com/search?q=EFTA00074402).
+
+- **v3.119:** September 3, 2019 credit-reporting subpoena seeks credit and related records; returnable September 17. Identifiers withheld; production not shown. Source: [EFTA00074419](https://grokarchivehub.com/search?q=EFTA00074419).
+
+- **v3.119:** September 3, 2019 MoneyGram subpoena seeks money-transfer and money-order records, returnable September 17. Identifiers withheld; production not shown. Source: [EFTA00074423](https://grokarchivehub.com/search?q=EFTA00074423).
+
+- **v3.119:** September 3, 2019 PayPal subpoena seeks account-holder and transaction records for two identifiers. Identifiers withheld; production not shown.
+
+- **v3.119:** Separate September 3, 2019 PayPal subpoena seeks records for one identifier. Identifiers withheld; production not shown.
+
+- **v3.119:** September 3, 2019 Western Union subpoena seeks transfer and money-order records. Identifiers withheld; production not shown. Source: [EFTA00074437](https://grokarchivehub.com/search?q=EFTA00074437).
+
+- **v3.119:** September 3, 2019 JPMorgan Chase subpoena seeks account, wire, KYC and online-banking records. Account holders not established in extracted text; production not shown. Source: [EFTA00074441](https://grokarchivehub.com/search?q=EFTA00074441).
+
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 4 MCC detention and death Confirmed Verification: V-C
@@ -681,6 +715,12 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00020127](https://gro
 - **v3.111 (1 reported entries):** July 23–24 correspondence relays the detention facility's initial account of the incident and the subsequent watch placement. It is a contemporaneous report, not an investigative or medical finding. Sources: [EFTA00071668](https://grokarchivehub.com/search?q=EFTA00071668).
 
 - **v3.117 (1 reported entries):** June 8, 2021 OIG correspondence requests clarification of attorney-log entries and receives an account of counsel who appeared in the case. It does not establish the purpose or content of visits, or a will-related finding. Private contact and attorney identifiers minimized.
+
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 2 anchor entries to this story, of which 1 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.118:** December 10–11, 2019 SDNY correspondence reports BOP confirmation of no recordings of cellmate interviews, no documentation of the SHU housing decision and no after-action report for July 22–23; a 53-page investigative report was compiled. This is the reported agency response, not proof no other records exist. Source: [EFTA00074082](https://grokarchivehub.com/search?q=EFTA00074082).
+
+- **v3.119:** February 28, 2020 counsel follows up on outstanding requests to inspect July 23 physical evidence and MCC cells. Grant or completion not established.
 
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
@@ -953,6 +993,22 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00014661](https://gro
 - **v3.116 (1 reported entries):** November 28, 2021 compensation-program administrator counsel correspondence addresses the court's memo-endorsed direction; it is a procedural communication rather than proof of a completed production. Sources: [EFTA00073623](https://grokarchivehub.com/search?q=EFTA00073623).
 
 - **v3.117 (4 reported entries):** November 28, 2021 court order directs the administrator to produce third-production material. October 14–15 correspondence records Government questions about expert evidence and the defense response that it did not intend to rely on a Rule 12.2 defense. A later tip received during trial is an unverified lead; identifying locator minimized. Sources: [EFTA00073629](https://grokarchivehub.com/search?q=EFTA00073629), [EFTA00073804](https://grokarchivehub.com/search?q=EFTA00073804), [EFTA00073806](https://grokarchivehub.com/search?q=EFTA00073806).
+
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 7 anchor entries to this story, of which 4 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.118:** December 17, 2020 addendum to the extradition opinion reiterates conclusions about likely extradition and bail consequences. An opinion submitted in litigation, not a ruling. Source: [EFTA00074068](https://grokarchivehub.com/search?q=EFTA00074068).
+
+- **v3.118:** January 24, 2020 subpoena seeks Maxwell flight-booking records from a travel-booking company, returnable February 7. Production not shown. Source: [EFTA00074159](https://grokarchivehub.com/search?q=EFTA00074159).
+
+- **v3.119:** December 6–10, 2019 correspondence circulates AMEX and USAA subpoena riders concerning Maxwell and distinguishes others requiring nondisclosure orders. Preparation, not issuance or service. Source: [EFTA00074446](https://grokarchivehub.com/search?q=EFTA00074446).
+
+- **v3.119:** October 18, 2021 defense motion seeks exclusion of Government Exhibit 52, disputing authorship, provenance and admissibility of the 97-page compilation. A party argument, not the court’s ruling. Source: [EFTA00074468](https://grokarchivehub.com/search?q=EFTA00074468).
+
+- **v3.119:** October 18, 2021 defense motion seeks limits on evidence and terminology relating to a protected accuser. Party arguments, not findings; identifying details withheld.
+
+- **v3.119:** October 2021 proposed joint jury instructions address six counts and statute-of-limitations requirements. Proposed language, not the final charge; protected details withheld.
+
+- **v3.119:** July–September 2021 interagency correspondence follows up on a tip concerning a former assistant. Planned conversation and underlying information not established.
 
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
@@ -1969,6 +2025,11 @@ v3.79 extension (DS8 protected pass, cut 42). [EFTA00030257](https://grokarchive
 v3.81 extension (DS8 protected pass, cut 44). [EFTA00031984](https://grokarchivehub.com/search?q=EFTA00031984) (declaration executed July 2020 in Doe v. Indyke, 20 Civ. 484 (JGK)): in lieu of a deposition under a June 10, 2020 subpoena, a pilot who flew for Epstein from 1991 attaches his 1994–1997 flight logs and says he recorded passengers' names when he knew them and otherwise generic descriptions; he says a woman whose name is redacted, [identity withheld], first appears in those logs on November 11, 1996 on a flight from West Palm Beach to Teterboro and again on May 9, 1997 on a flight from Teterboro to Santa Fe, and that he has no specific memory of either flight. A sworn declaration; the pilot is not named.
 
 v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00020541](https://grokarchivehub.com/search?q=EFTA00020541) (opinion signed Aug 27, 2018, 2018 WL 4062649): Judge Sweet grants news media and an investigative journalist leave to intervene in the defamation case but denies unsealing, holding that the presumption of access to summary-judgment filings was rebutted by the privacy interests of parties and non-parties. The journalist is not named here.
+
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 1 anchor entries to this story, of which 0 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.119:** January 22, 2020 correspondence reports judicial assignment of a civil suit filed January 17. Identifying details withheld.
+
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P4 Apollo / Leon Black: Dechert review → Senate Finance inquiry Probable Verification: V
@@ -2028,6 +2089,11 @@ pre-1999 flight-record limit ([EFTA00030491](https://grokarchivehub.com/search?q
 v3.2 (WS2) extension: Austria landing, March 22, 2019 ([EFTA00037299](https://grokarchivehub.com/search?q=EFTA00037299), 2 pp.): USMS email, June 18, 2019 — Austria confirmed Epstein's plane, Epstein himself, and three females landed and spent a couple of hours in Austria on March 22, 2019 (via the Vienna RSO). A concrete pre-arrest travel datapoint; no names or ages are stated in the email. Shared with Story 3.
 
 v3.5 (WS1) extension — DS8 metadata-only survey. 4 legs. [EFTA00021701](https://grokarchivehub.com/search?q=EFTA00021701) (Sep 26, 2019): flight records "only go back to December 1997"; SDNY to call Visoski's lawyer about whether 1990s records exist. [EFTA00027585](https://grokarchivehub.com/search?q=EFTA00027585) (Jan 28, 2020): flight-plan spreadsheets for N331JE, N491GM, N722JE, 2000–2020. [EFTA00023086](https://grokarchivehub.com/search?q=EFTA00023086) (Aug 10, 2021): Visoski prep notes, testifying witness. [EFTA00037589](https://grokarchivehub.com/search?q=EFTA00037589): TECS manifest Dec 14, 2018, N212JE — minor; traveler list redacted/garbled in the opening. (Note: MEMORY records a Dec 14, 2004 flight destination as NOT established — a different flight from this Dec 14, 2018 manifest.)
+
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 1 anchor entries to this story, of which 0 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.119:** Counsel’s December 2019 and January 2020 flight-log productions cover 1991–2013; a February 2020 proposed follow-up question is not an identification or finding. Same document as the related Story 3 entry, not independent corroboration.
+
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P8 Maxwell bank paper Probable Verification: V-C
@@ -2070,6 +2136,10 @@ v3.57 extension (DS8 deepening pass, cut 20). [EFTA00021994](https://grokarchive
 **DS9 reading update — v3.83–v3.117.** The delivered research records 2 additional anchor entries for this story; 2 public source locators are reproduced here. The remaining 0 entries are represented by minimized summaries without individual locators. The summaries are drawn from the supplied reading ledger, not newly authenticated source-level findings.
 
 - **v3.117 (2 reported entries):** A January 16, 2014 UBS adviser meeting recap describes Maxwell's reported asset allocations and proposed transactions, not evidence that plans were executed. The December 16, 2020 SDNY letter documents production of the December 15 UBS subpoena return under the July 31 protective order. It provides provenance, not an exhaustive account of the return. Private staff and account details omitted. Sources: [EFTA00073633](https://grokarchivehub.com/search?q=EFTA00073633), [EFTA00073637](https://grokarchivehub.com/search?q=EFTA00073637).
+
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 1 anchor entries to this story, of which 0 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.118:** March 5, 2020 FBI financial review reports a January 4, 2011 $3 million transfer returned the same day, and a July 28, 2011 $10,900,773.48 wire to Maxwell followed by $10,895,644.29 in onward transfers. The review attributes the June 15, 2007 $7.4 million credit to an Epstein Bear Stearns account. This is a summary; underlying statements and account identifiers are not reproduced.
 
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
@@ -2378,9 +2448,13 @@ v3.37 extension (ordered DS8 continuation, final actionable slice). [EFTA0003263
 
 - **v3.114 (1 reported entries):** August 2020 correspondence describes a proposed second production and requests review of redactions. It documents release planning rather than proof that the complete proposed file was released. Sources: [EFTA00072702](https://grokarchivehub.com/search?q=EFTA00072702).
 
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 1 anchor entries to this story, of which 1 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.118:** January 30, 2020 FOIA complaint by the New York Times Company against BOP recites requests for MCC records and the September 2019 denial, and seeks production. Filing, not judgment or production. Source: [EFTA00074140](https://grokarchivehub.com/search?q=EFTA00074140).
+
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
-P19 Epstein's successive wills, 2001–2014 Probable Verification: V
+P19 Epstein's successive wills, 2001–January 2019 Probable Verification: V
 Span: Dec 11, 2001–Nov 2014.
 Anchors: [EFTA00016841](https://grokarchivehub.com/search?q=EFTA00016841) (will Dec 11, 2001, 24 pp., with five codicils
 2003–2007 — all property to the Trustees of The Jeffrey E. Epstein
@@ -2434,6 +2508,17 @@ v3.65 extension (DS8 deepening pass, cut 28). [EFTA00028554](https://grokarchive
 
 - **v3.108 (1 reported entries):** January 31–February 3, 2020 correspondence reports that a second Rule 6(e) sharing order had been signed and discusses retrieval from chambers. A report about the order, not the text of the order or a finding about estate distributions. Sources: [EFTA00068891](https://grokarchivehub.com/search?q=EFTA00068891).
 
+**DS9 reading update — v3.118–v3.119.** The supplied reading ledger adds 4 anchor entries to this story, of which 4 exact locators are reproduced below. Other entries are summarized without individual locators; source crew findings are not independently authenticated here.
+
+- **v3.118:** October 24, 2012 will establishes a pour-over to the 2012 Trust; June 6, 2013 first codicil changes the successor executor. Distinct from the January 2012 will. Source: [EFTA00074246](https://grokarchivehub.com/search?q=EFTA00074246).
+
+- **v3.118:** June 2017 will establishes a pour-over to the 2017 Trust and names Indyke, Kahn and Rød-Larsen as executors. Day numeral and successor executor are unclear in extracted text. Source: [EFTA00074259](https://grokarchivehub.com/search?q=EFTA00074259).
+
+- **v3.119:** May 8, 2018 will establishes a pour-over to the 2018 Trust, with Indyke and Kahn named executors and Ruemmler successor. Source: [EFTA00074269](https://grokarchivehub.com/search?q=EFTA00074269).
+
+- **v3.119:** January 18, 2019 will establishes a pour-over to the 2019 Trust, with Indyke and Kahn named executors and Ruemmler successor. Extends P19 to January 2019; the August 8, 2019 will and probate remain in P24. Source: [EFTA00074279](https://grokarchivehub.com/search?q=EFTA00074279).
+
+**Chronology correction:** The earlier 2001–2014 title and stopping point reflected the prior corpus. The newly reported June 2017, May 2018 and January 2019 wills extend this chain. P24 separately covers the August 2019 will and probate. No tier change.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P20 Civil forfeiture thread: Epstein properties Probable Verification: V
@@ -4026,7 +4111,7 @@ F-33-12 and F-33-13 retired in v3.4 — folded into F-33-11 above (both resolved
 - F-39-1. Bruce Green's filed correction of a professional-role attribution. EFTA00011025 (1 p., filed Sep 4, 2019 in 19-cr-490, Doc. 55) responds to remarks at the Aug 27 hearing: Green says he had never been counsel to Epstein, his estate, or anyone in an Epstein-related case. He distinguishes an expert declaration supporting a motion to disqualify Boies and his firm in a related defamation case from serving as counsel or advocate, and says that expert work ended in June. This is Green's own correction, not an adjudicated finding; it prevents an unsupported counsel-role inference. Single filed letter, no resolution of the underlying litigation established here. Classification: fragment. Links: Story 3, P3.
 
 ## Verification and review scope
-DS9 cuts 1–35: 1,750 listing entries examined; 1,717 retrieved (1,229 full condensed reads, 316 full-text scans, 1 lower-confidence OCR read and 171 near-duplicates); 7 unavailable and 26 unobtained media. The delivered atlas reports 2,680 story-anchor entries; this public edition retains 2,458 prior entries and adds 112 exact locators, with 110 further entries represented by minimized summaries. DS9 is not finished. The latest cut reports 33/33 primary and 24/25 independent checks; the grandparent v3.115 files were not supplied, so the missing check is not a pass.
+DS9 cuts 1–37: 1,850 listing entries examined; 1,817 retrieved (1,295 full condensed reads, 329 full-text scans, 1 lower-confidence OCR read and 192 near-duplicates); 7 unavailable and 26 unobtained media. The delivery reports 2,713 story-anchor entries; the public edition contains 2,588, including 130 added exact DS9 locators and 125 additional minimized entries. Both latest cuts report 33/33 primary and 24/25 independent checks. The near-duplicate threshold check failed because crews deviated from the mechanical threshold; reviewer acceptance is not a passing check. DS9 remains incomplete.
 **Completed DS8 passes through v3.82:** the actionable first-open pass, non-protected substantive deepening pass, and 1,050-document protected pass are complete at their stated depths. The protected pass added 191 anchors. The v3.82 baseline contains 2,458 story-anchor references across all sets, 82 mapped stories and 139 fragments. These are surveyed counts, not a corpus census.
 The inherited 4,167-document partial queue now comprises 3,899 condensed text-layer reads, 82 opening-only reads, four structure scans, 55 near-duplicates with residual lines read, and 127 bulk items dropped after earlier screening. The image queue contains 223 lower-confidence OCR reads and 165 “No Images Produced” placeholders. The two queues overlap by 86 IDs and must not be added as distinct-document totals. The two earlier capped skips were characterized without an established story connection.
 **Reading method:** condensed reads inspect lines not already read in another document or packet, omitting repeated lines, selected address headers and confidentiality footers. This does not establish human review or a full page-image audit. Opening-only reads and scans are not full reads. A dropped bulk item is a screening decision, not proof it contains no story.
