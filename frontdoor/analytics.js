@@ -92,6 +92,23 @@
     script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
     script.onerror = function () { loading = false; state('tag-load-failed'); script.remove(); };
     window.gtag('set', {page_location: granted ? safeUrl(location.href) : coarseLocation(), page_referrer: granted ? safeUrl(previous) : '', page_title: granted ? document.title.replace(/[\w.+-]+@[\w.-]+/g, '[redacted]').slice(0,160) : 'Grok Archive Hub'});
+    // The direct, consent-gated runtime owns GA4. Cloudflare can inject a first-party
+    // gateway declaration even when its loader is blocked by our CSP. Google otherwise
+    // defers to that unavailable loader, leaving pageviews queued forever.
+    // Remove only this stream's stale declaration and pre-initialization commands;
+    // preserve every consent command and never reset an initialized Google runtime.
+    if (!window.google_tag_manager && Array.isArray(window.google_tags_first_party) &&
+        window.google_tags_first_party.indexOf(id) !== -1) {
+      window.google_tags_first_party = window.google_tags_first_party.filter(function (value) { return value !== id; });
+      if (Array.isArray(window.dataLayer)) {
+        for (var i = window.dataLayer.length - 1; i >= 0; i--) {
+          var command = window.dataLayer[i];
+          if (command && (command[0] === 'js' || (command[0] === 'set' && command[1] === 'developer_id.dY2E1Nz'))) {
+            window.dataLayer.splice(i, 1);
+          }
+        }
+      }
+    }
     window.gtag('js', new Date());
     if (granted) automaticGrantedNavigation = navigation;
     else sentCookielessNavigation = navigation;
