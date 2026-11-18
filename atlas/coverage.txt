@@ -1,8 +1,8 @@
-Story Atlas v3.119 — current coverage scope
+Story Atlas v3.122 — current coverage scope
 
 82 mapped stories; 139 fragments. Surveyed counts, not a corpus census.
 
-DS9 cuts 1–37: 1,850 listing entries examined; 1,817 retrieved (1,295 full condensed reads, 329 full-text scans, 1 lower-confidence OCR read and 192 near-duplicates); 7 unavailable and 26 unobtained media. The delivery reports 2,713 story-anchor entries; the public edition contains 2,588, including 130 added exact DS9 locators and 125 additional minimized entries. Both latest cuts report 33/33 primary and 24/25 independent checks. The near-duplicate threshold check failed because crews deviated from the mechanical threshold; reviewer acceptance is not a passing check. DS9 remains incomplete.
+DS9 cuts 1–40: 2,000 listing entries examined; 1,967 retrieved (1,401 full condensed reads, 341 full-text scans, 1 lower-confidence OCR read and 224 near-duplicates); 7 unavailable and 26 unobtained media. The delivery reports 2,802 story-anchor entries; the public edition contains 2,643, including 185 added exact DS9 locator entries and 159 further minimized entries. The three latest cuts report 33/33 primary and 24/25 independent checks. The near-duplicate threshold check failed in each; reviewer acceptance is not a passing check. Cut 38 adapted two primary checks to exclude exact queue-pointer and case-citation metadata. DS9 remains incomplete.
 
 Partial queue: 4,167 = 3,899 condensed text-layer reads + 82 opening-only reads + four structure scans + 55 near-duplicates + 127 bulk items dropped after earlier screening. Image queue: 223 lower-confidence OCR reads + 165 placeholders = 388. The queues overlap by 86 IDs. Two capped skips characterized; 66 Amex/mega documents, HO full pass and DS9 torrent deferred. DS8 is not fully read. OCR-dependent details require image confirmation; EFTA00032184 remains unreadable.
 
