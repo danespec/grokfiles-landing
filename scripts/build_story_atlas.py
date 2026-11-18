@@ -12,6 +12,8 @@ version=data["version"]
 publication_date=data["date"]
 new_ds9=version=="v3.117"
 ds9_note=("DS9 cuts 1–35: 1,750 listing entries examined; 1,717 retrieved (1,229 full condensed reads, 316 full-text scans, 1 lower-confidence OCR read and 171 near-duplicates); 7 unavailable and 26 unobtained media. The delivered atlas reports 2,680 story-anchor entries; this public edition retains 2,458 prior entries and adds 112 exact locators, with 110 further entries represented by minimized summaries. DS9 is not finished. The latest cut reports 33/33 primary and 24/25 independent checks; the grandparent v3.115 files were not supplied, so the missing check is not a pass." if new_ds9 else "")
+if version=="v3.119":
+    ds9_note="DS9 cuts 1–37: 1,850 listing entries examined; 1,817 retrieved (1,295 full condensed reads, 329 full-text scans, 1 lower-confidence OCR read and 192 near-duplicates); 7 unavailable and 26 unobtained media. The delivery reports 2,713 story-anchor entries; the public edition contains 2,588, including 130 added exact DS9 locators and 125 additional minimized entries. Both latest cuts report 33/33 primary and 24/25 independent checks. The near-duplicate threshold check failed because crews deviated from the mechanical threshold; reviewer acceptance is not a passing check. DS9 remains incomplete."
 assert data['internal_only'] is False
 assert len(data['stories'])==82
 assert sum(s['tier']=='confirmed' for s in data['stories'])==30
