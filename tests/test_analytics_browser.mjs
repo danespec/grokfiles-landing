@@ -19,7 +19,7 @@ async function fixture(options={}) {
    return route.fulfill({contentType:name.endsWith('.css')?'text/css; charset=utf-8':'application/javascript; charset=utf-8',body:await readFile(new URL('frontdoor/'+name,root),'utf8')});
   }
   const boot={schema:'gah.consent.v2',googleTagEnabled:options.enabled!==false,ga4MeasurementId:'G-XHE84C8D1V',unifiedConsent:true,advancedAnalytics:!!options.advanced,googleCmpAnalyticsEnabled:!!options.cmpPresent};
-  return route.fulfill({contentType:'text/html; charset=utf-8',body:`<!doctype html><html><head><title>Public evidence fixture</title><script>window.GAH_CONSENT_BOOT=${JSON.stringify(boot)};window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});</script><link rel="stylesheet" href="/frontdoor/consent.css"><script src="/frontdoor/analytics.js"></script><script defer src="/frontdoor/consent.js"></script></head><body><h1>Public evidence fixture</h1><a href="https://www.justice.gov/source.pdf">Original PDF</a><a href="https://wiki.grokarchivehub.com/receipts/EFTA00035613">Receipt</a></body></html>`});
+  return route.fulfill({contentType:'text/html; charset=utf-8',body:`<!doctype html><html><head><title>Public evidence fixture</title><script>window.GAH_CONSENT_BOOT=${JSON.stringify(boot)};window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});${options.gatewayInjected?"window.google_tags_first_party=['G-XHE84C8D1V','G-OTHER'];gtag('js',new Date());gtag('set','developer_id.dY2E1Nz',true);":''}</script><link rel="stylesheet" href="/frontdoor/consent.css"><script src="/frontdoor/analytics.js"></script><script defer src="/frontdoor/consent.js"></script></head><body><h1>Public evidence fixture</h1><a href="https://www.justice.gov/source.pdf">Original PDF</a><a href="https://wiki.grokarchivehub.com/receipts/EFTA00035613">Receipt</a></body></html>`});
  });
  const page=await context.newPage();
  const start=options.url||'https://grokarchivehub.com/archive/EFTA00035613?token=SECRET&email=person%40example.com&utm_source=facebook';
@@ -33,7 +33,26 @@ async function fixture(options={}) {
  return {context,page,commands,events,tags:()=>tagRequests};
 }
 try {
- let f=await fixture();
+ let f=await fixture({gatewayInjected:true});
+ check('gateway declaration never loads Google before consent',()=>assert.equal(f.tags(),0));
+ await f.page.getByRole('button',{name:'Allow analytics',exact:true}).click();
+ await f.page.waitForFunction(()=>document.documentElement.dataset.gahAnalytics==='pageview-queued');
+ check('stale gateway marker is removed only for this stream',()=>{});
+ assert.deepEqual(await f.page.evaluate(()=>window.google_tags_first_party),['G-OTHER']);
+ const recovered=await f.commands();
+ assert.equal(recovered.filter(a=>a[0]==='js').length,1);
+ assert.equal(recovered.filter(a=>a[0]==='set'&&a[1]==='developer_id.dY2E1Nz').length,0);
+ assert(recovered.some(a=>a[0]==='consent'&&a[2]?.analytics_storage==='denied'));
+ assert(recovered.some(a=>a[0]==='consent'&&a[2]?.analytics_storage==='granted'));
+ check('gateway recovery emits one consented view',()=>assert.equal(f.tags(),1));
+ assert.equal((await f.events('page_view')).length,1);
+ await f.context.close();
+ f=await fixture({gatewayInjected:true});
+ await f.page.getByRole('button',{name:'Reject nonessential',exact:true}).click();
+ check('gateway recovery never runs on rejection',()=>assert.equal(f.tags(),0));
+ assert.deepEqual(await f.page.evaluate(()=>window.google_tags_first_party),['G-XHE84C8D1V','G-OTHER']);
+ await f.context.close();
+ f=await fixture();
  check('no Google load before a decision',()=>assert.equal(f.tags(),0));
  assert.equal(await f.page.evaluate(()=>GAHAnalytics.searchHeaders()['X-GAH-Analytics-Consent']||''),'');
  await f.page.getByRole('button',{name:'Reject nonessential',exact:true}).click();
