@@ -109,6 +109,7 @@ const laterEditorial=[
  'https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026',
  'https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026',
  'https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026',
+ 'https://grokarchivehub.com/news/epstein-death-forensic-record-review-november-19-2026',
  'https://grokarchivehub.com/news/garcia-epstein-records-preservation-november-18-2026',
  'https://grokarchivehub.com/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026',
  'https://grokarchivehub.com/news/house-oversight-majority-epstein-maxwell-report-november-10-2026',

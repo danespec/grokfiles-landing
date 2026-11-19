@@ -13,7 +13,7 @@ const get=(p,method='GET')=>worker.fetch(new Request(new URL(p,base),{method}),e
 const cache=new Map();
 async function page(p){if(!cache.has(p)){const r=await get(p);assert.equal(r.status,200,p);cache.set(p,{h:await r.text(),r});}return cache.get(p);}
 const sm=(await page('/sitemap.xml')).h,efta=(await page('/sitemap-efta.xml')).h,llms=(await page('/llms.txt')).h;
-assert.equal((sm.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,173);
+assert.equal((sm.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,174);
 assert.equal(data.routes.length,6);assert.equal(Object.values(data.row_counts).reduce((a,b)=>a+b,0),59);
 const atlasHtml=(await page('/atlas/')).h;
 for(const p of data.routes){
