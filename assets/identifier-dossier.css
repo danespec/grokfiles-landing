@@ -3,3 +3,31 @@
 .identifier-nav{max-width:960px;width:calc(100% - 36px);margin:24px auto 0;display:flex;gap:14px 24px;flex-wrap:wrap;font:15px/1.6 system-ui,sans-serif}.identifier-nav a{color:#efc68b}
 
 .identifier-dossier img{display:block;max-width:100%;height:auto}.identifier-dossier figure{margin:24px 0}.identifier-dossier figcaption{overflow-wrap:anywhere}
+
+/* Keep the MCC timeline's source photographs within the article header. */
+main:has(.source-timeline-visual) > .hero-with-visual {
+  display: block;
+  position: relative;
+  height: auto;
+  max-height: none;
+  background: none;
+  overflow: visible;
+}
+main:has(.source-timeline-visual) > .hero-with-visual::before,
+main:has(.source-timeline-visual) > .hero-with-visual::after { display: none; }
+.hero-with-visual > .source-timeline-visual {
+  position: static;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 0 1rem;
+  overflow: hidden;
+}
+.source-timeline-visual .source-collage,
+.source-timeline-visual .source-doc-stack { display: flex; flex-wrap: wrap; gap: .7rem; }
+.source-timeline-visual .source-doc-stack { flex: 2 1 20rem; }
+.source-timeline-visual .source-panel { position: relative; flex: 1 1 8rem; min-width: 0; }
+.source-timeline-visual .source-panel img { display: block; position: static; width: 100%; height: 8rem; object-fit: contain; }
+.source-timeline-visual .source-label { position: static; font-size: .8rem; }
+.source-timeline-visual .source-label small { display: block; }
+main:has(.source-timeline-visual) > nav.nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
