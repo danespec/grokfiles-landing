@@ -13,8 +13,8 @@ const get=(p,method='GET')=>worker.fetch(new Request(new URL(p,base),{method}),e
 const cache=new Map();
 async function page(p){if(!cache.has(p)){const r=await get(p);assert.equal(r.status,200,p);cache.set(p,{h:await r.text(),r});}return cache.get(p);}
 const sm=(await page('/sitemap.xml')).h,efta=(await page('/sitemap-efta.xml')).h,llms=(await page('/llms.txt')).h;
-assert.equal((sm.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,172);
-assert.equal(data.routes.length,6);assert.equal(Object.values(data.row_counts).reduce((a,b)=>a+b,0),58);
+assert.equal((sm.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,173);
+assert.equal(data.routes.length,6);assert.equal(Object.values(data.row_counts).reduce((a,b)=>a+b,0),59);
 const atlasHtml=(await page('/atlas/')).h;
 for(const p of data.routes){
  const u=base+p,{r,h}=await page(p);
@@ -37,4 +37,4 @@ for(const [p,targets] of Object.entries(data.backlinks)){
 }
 for(const p of ['/entities','/timeline-reconstructions','/topics'])assert.equal((await page(p)).r.headers.get('x-robots-tag'),'noindex,follow',p);
 assert.equal((await page('/research/epstein-final-48-hours-mcc')).r.headers.get('x-robots-tag'),'index,follow');
-console.log('PASS six source-linked timelines/directories, 58 rows, 30 backlink origins, internal destinations, published Atlas anchors, privacy and unchanged canonical policy');
+console.log('PASS six source-linked timelines/directories, 59 rows, 30 backlink origins, internal destinations, published Atlas anchors, privacy and unchanged canonical policy');

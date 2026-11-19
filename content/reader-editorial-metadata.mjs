@@ -1371,6 +1371,10 @@ export const READER_EDITORIAL_METADATA = {
     "title": "Police Scotland: Epstein and Balmoral Inquiries",
     "description": "Police Scotland confirms early-stage Balmoral inquiries in an October 30 statement. Separate the official confirmation from allegations."
   },
+  "https://grokarchivehub.com/news/garcia-epstein-records-preservation-november-18-2026": {
+    "title": "Garcia Seeks Epstein Records Preservation",
+    "description": "Four House Oversight minority letters seek meeting details, DOJ records and Maxwell transfer records. Responses requested November 27 and December 2."
+  },
   "https://grokarchivehub.com/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026": {
     "title": "Epstein Files Act II Petition: 218 Signatures",
     "description": "Discharge petition No. 27 reached 218 signatures on November 11. See H.Res. 1430 and why a new floor vote or law does not follow yet."
