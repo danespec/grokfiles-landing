@@ -4,7 +4,7 @@ export async function forensicMedia(request, env) {
   if (!url.pathname.startsWith(prefix)) return null;
   const key = url.pathname.slice(prefix.length);
   const media = /^(photos\/photo-\d{3}\.jpg|pdf-parts\/autopsy-photos-part-pages-\d{3}-\d{3}\.pdf)$/.test(key);
-  if (!media && !['acknowledge','gallery.html','reader.js','manifest.json'].includes(key)) return null;
+  if (!media && !['acknowledge','gallery.html','gallery','reader.js','manifest.json'].includes(key)) return null;
   const headers = new Headers({'Cache-Control':'private, no-store','X-Robots-Tag':'noindex, noimageindex, noarchive','X-GAH-Ad-Eligible':'false','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'});
   const reply = (body,status) => new Response(body,{status,headers});
   if (!env.FORENSIC_MEDIA) return reply(null,404);
@@ -23,7 +23,9 @@ export async function forensicMedia(request, env) {
     headers.set('Content-Length',String(obj.size));
     return reply(request.method==='HEAD'?null:obj.body,200);
   }
-  const asset=await env.ASSETS.fetch(request);
+  const assetUrl = new URL(url);
+  if (key === "gallery.html") assetUrl.pathname = prefix + "gallery";
+  const asset=await env.ASSETS.fetch(new Request(assetUrl, request));
   headers.set('Content-Type',key.endsWith('.js')?'text/javascript':key.endsWith('.json')?'application/json':'text/html; charset=utf-8');
   headers.set('Content-Security-Policy',"default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'");
   return reply(asset.body,asset.status);
