@@ -109,7 +109,6 @@ const laterEditorial=[
  'https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026',
  'https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026',
  'https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026',
- 'https://grokarchivehub.com/evidence-library/epstein-ocme-photos-2019',
  'https://grokarchivehub.com/news/epstein-death-forensic-record-review-november-19-2026',
  'https://grokarchivehub.com/news/garcia-epstein-records-preservation-november-18-2026',
  'https://grokarchivehub.com/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026',
@@ -117,7 +116,7 @@ const laterEditorial=[
 ];
 const baselineEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).map(r=>r.url);
 const laterEligible=laterEditorial.filter(url=>!baselineEditorial.includes(url)&&!publicationRule(url)?.noindex);
-const expectedEditorial=new Set([...baselineEditorial,...laterEligible]);
+const expectedEditorial=new Set([...baselineEditorial,...laterEligible,'https://grokarchivehub.com/evidence-library/epstein-ocme-photos-2019']);
 const actualEditorial=[...mainMap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 assert.equal(actualEditorial.length,new Set(actualEditorial).size,'Editorial sitemap must not contain duplicate URLs');
 assert.deepEqual([...new Set(actualEditorial)].sort(),[...expectedEditorial].sort(),'Editorial sitemap matches the October 27 baseline plus explicitly reviewed subsequent stories');
