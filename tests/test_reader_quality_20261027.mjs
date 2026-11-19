@@ -116,7 +116,7 @@ const laterEditorial=[
 ];
 const baselineEditorial=inventory.filter(r=>r.url.startsWith('https://grokarchivehub.com/')&&!r.url.includes('/archive/EFTA')&&!publicationRule(r.url)?.noindex).map(r=>r.url);
 const laterEligible=laterEditorial.filter(url=>!baselineEditorial.includes(url)&&!publicationRule(url)?.noindex);
-const expectedEditorial=new Set([...baselineEditorial,...laterEligible]);
+const expectedEditorial=new Set([...baselineEditorial,...laterEligible,'https://grokarchivehub.com/evidence-library/epstein-ocme-photos-2019']);
 const actualEditorial=[...mainMap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 assert.equal(actualEditorial.length,new Set(actualEditorial).size,'Editorial sitemap must not contain duplicate URLs');
 assert.deepEqual([...new Set(actualEditorial)].sort(),[...expectedEditorial].sort(),'Editorial sitemap matches the October 27 baseline plus explicitly reviewed subsequent stories');

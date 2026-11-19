@@ -1371,6 +1371,10 @@ export const READER_EDITORIAL_METADATA = {
     "title": "Police Scotland: Epstein and Balmoral Inquiries",
     "description": "Police Scotland confirms early-stage Balmoral inquiries in an October 30 statement. Separate the official confirmation from allegations."
   },
+  "https://grokarchivehub.com/evidence-library/epstein-ocme-photos-2019": {
+    "title": "Epstein Forensic Photograph Source Register",
+    "description": "Check page identifiers and SHA-256 hashes for 215 photographs in the secondary compilation, with provenance and limits for each evidence group."
+  },
   "https://grokarchivehub.com/news/epstein-death-forensic-record-review-november-19-2026": {
     "title": "Epstein’s Death: Autopsy and EMS Record Review",
     "description": "Autopsy, EMS and forensic research reviewed: suicide remains best supported. Documented custody failures and unresolved record discrepancies explained."

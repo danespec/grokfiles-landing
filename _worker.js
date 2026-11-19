@@ -86,6 +86,7 @@ async function gahTrendingDecorate(response, request, env) {
 }
 
 const FRONTDOOR_PATHS = new Set([
+  "/evidence-library/epstein-ocme-photos-2019",
   "/investigations/trump-2015-campaign-records",
   "/investigations/trump-moscow-deal-campaign-2015-2016",
   "/investigations/epstein-wolff-trump-cnn-emails-2015",
@@ -343,6 +344,7 @@ const AD_MANUAL_REVIEW_EXACT_PATHS = new Map([
 ]);
 
 const AD_EXCLUDED_EXACT_PATHS = new Map([
+  ["/evidence-library/epstein-ocme-photos-2019", "forensic-source-register-ad-free"],
   ["/investigations/trump-2015-campaign-records", "public-records-historical-analysis-ad-free"],
   ["/investigations/trump-moscow-deal-campaign-2015-2016", "public-records-historical-analysis-ad-free"],
   ["/investigations/epstein-wolff-trump-cnn-emails-2015", "public-records-historical-analysis-ad-free"],
@@ -1182,6 +1184,7 @@ const BOOK_OF_BLACK_ROUTE_ASSETS = new Map([
 const GAH_MEDIA_VIDEO_PATHS = new Set(["/videos/barak-st-thomas-december-2014", "/videos/barak-ronen-cohen-ticket-7hlsoq", "/videos/barak-hotel-name-efta00356456", "/videos/barak-epstein-caribbean-invitation-2014", "/videos/shawn-ryan-leah-interview-response", "/videos/peter-thiel-epstein-record-efta02656769", "/videos/shawn-ryan-leah-naming-allegation", "/videos/shawn-ryan-released-interview-response", "/videos/ask-gah-search-epstein-files", "/videos/jpmorgan-nine-sars-reporting-timeline", "/videos/hold-the-letter-victim-notification"]);
 // GAH-MEDIA-VIDEO-PATHS END
 const FRONTDOOR_ROUTE_ASSETS = new Map([
+  ["/evidence-library/epstein-ocme-photos-2019", "/evidence-library/epstein-ocme-photos-2019/index.html"],
   // GAH-MEDIA-ROUTES BEGIN
   ["/videos/barak-st-thomas-december-2014", "/videos/barak-st-thomas-december-2014.html"],
   ["/videos/barak-ronen-cohen-ticket-7hlsoq", "/videos/barak-ronen-cohen-ticket-7hlsoq.html"],
@@ -1404,6 +1407,7 @@ const TRUST_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/contact", "2026-07-01"]
 ];
 const CORE_SITEMAP_ENTRIES = [
+  ["https://grokarchivehub.com/evidence-library/epstein-ocme-photos-2019", "2026-11-19"],
   ["https://grokarchivehub.com/atlas/", "2026-11-09"],
   ["https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026", "2026-10-16"],
@@ -8464,6 +8468,12 @@ function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   }
   if (!/<head[\s>]/i.test(body)) return body;
   const policyPath = meta.routePath || new URL(typeof requestOrUrl === "string" ? requestOrUrl : requestOrUrl.url).pathname;
+  if (policyPath === "/news/epstein-death-forensic-record-review-november-19-2026" && !body.includes('href="/evidence-library/epstein-ocme-photos-2019"')) {
+    body = body.replace('<div class="sources">', '<div class="sources"><p><a href="/evidence-library/epstein-ocme-photos-2019">Photographic evidence register and page checksums</a></p>');
+  }
+  if (policyPath === "/evidence-library/epstein-ocme-photos-2019") {
+    meta = { ...meta, robots: "index,follow,noimageindex,max-image-preview:none" };
+  }
   const policy = routePolicyForPath(policyPath);
   const canonical = meta.canonical || canonicalForRequest(requestOrUrl, meta.routePath || "");
   const rawTitle = meta.title || firstHtmlMatch(body, /<title[^>]*>([\s\S]*?)<\/title>/i) || "Grok Archive Hub";
