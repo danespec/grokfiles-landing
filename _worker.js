@@ -1,3 +1,4 @@
+import { forensicMedia } from './content/forensic-media.mjs';
 import {askEditorialExtract,askSourceWithdrawn,askEditorialRestricted,askEditorialProduction,ASK_VERSION,ASK_PRODUCTION_VERSION} from "./content/ask-editorial-extraction.mjs";
 import { webBotDirectory } from "./workers/lib/web-bot-auth.mjs";
 import {liveReviewedLocator016} from './content/reviewed-live-016.mjs';
@@ -18948,6 +18949,8 @@ export default {
   },
 
   async fetch(request, env, ctx) {
+    const forensicResponse = await forensicMedia(request, env);
+    if (forensicResponse) return forensicResponse;
     // STAGING-HARDEN-001: all staging responses carry privacy headers.
     const started = Date.now();
     try {
