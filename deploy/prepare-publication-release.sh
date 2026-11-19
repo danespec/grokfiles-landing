@@ -1,5 +1,6 @@
 #!/bin/sh
-# Standard release preparation. No network, approval fabrication, or deployment.
+# Standard release preparation. No approval fabrication or deployment.
+# With a configured private vector path, refresh only stale/new public metadata via the approved encoder.
 set -eu
 cd "$(dirname "$0")/.."
 PYTHON="${GAH_RESEARCH_PYTHON:-python3}"
@@ -21,6 +22,9 @@ else
  "$PYTHON" scripts/build_research_runtime_010.py --check
 fi
 if [ -n "${GAH_PRIVATE_EDITORIAL_VECTORS:-}" ]; then
+ if [ "${1:-}" != "--check" ]; then
+  "$PYTHON" scripts/build_editorial_vectors_013.py --output "$GAH_PRIVATE_EDITORIAL_VECTORS" --encoder "${GAH_EDITORIAL_ENCODER:-$PWD/scripts/encode_editorial_cloudflare.mjs}"
+ fi
  "$PYTHON" scripts/build_editorial_vectors_013.py --output "$GAH_PRIVATE_EDITORIAL_VECTORS" --check
 fi
 node tests/test_public_research_011.mjs

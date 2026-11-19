@@ -69,6 +69,7 @@ jobs:
       - name: Publication corpus freshness, public research and isolation gates
         run: |
           deploy/prepare-publication-release.sh --check
+          python3 tests/test_editorial_vector_refresh_013.py
           node tests/test_research_010.mjs
 
       - name: Private telemetry schema, authentication and aggregate query contracts
