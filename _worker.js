@@ -112,6 +112,7 @@ const FRONTDOOR_PATHS = new Set([
   "/news/epstein-files-2026-campaigns-pre-election-oct29-2026",
   "/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026",
   "/news/police-scotland-balmoral-epstein-inquiries-october-30-2026",
+  "/news/epstein-death-forensic-record-review-november-19-2026",
   "/news/garcia-epstein-records-preservation-november-18-2026",
   "/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026",
   "/news/house-oversight-majority-epstein-maxwell-report-november-10-2026",
@@ -369,6 +370,7 @@ const AD_EXCLUDED_EXACT_PATHS = new Map([
   ["/news/epstein-files-2026-campaigns-pre-election-oct29-2026", "election-campaign-records-sensitive-news-ad-free"],
   ["/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026", "sensitive-court-records-epstein-news-ad-free"],
   ["/news/police-scotland-balmoral-epstein-inquiries-october-30-2026", "sensitive-investigative-news-ad-free"],
+  ["/news/epstein-death-forensic-record-review-november-19-2026", "death-investigation-forensic-review-ad-free"],
   ["/news/garcia-epstein-records-preservation-november-18-2026", "sensitive-congressional-investigation-ad-free"],
   ["/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026", "sensitive-congressional-investigation-ad-free"],
   ["/news/house-oversight-majority-epstein-maxwell-report-november-10-2026", "sensitive-congressional-investigation-ad-free"],
@@ -1253,6 +1255,7 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/news/epstein-files-2026-campaigns-pre-election-oct29-2026", "/news/epstein-files-2026-campaigns-pre-election-oct29-2026.html"],
   ["/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026", "/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026.html"],
   ["/news/police-scotland-balmoral-epstein-inquiries-october-30-2026", "/news/police-scotland-balmoral-epstein-inquiries-october-30-2026.html"],
+  ["/news/epstein-death-forensic-record-review-november-19-2026", "/news/epstein-death-forensic-record-review-november-19-2026.html"],
   ["/news/garcia-epstein-records-preservation-november-18-2026", "/news/garcia-epstein-records-preservation-november-18-2026.html"],
   ["/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026", "/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026.html"],
   ["/news/house-oversight-majority-epstein-maxwell-report-november-10-2026", "/news/house-oversight-majority-epstein-maxwell-report-november-10-2026.html"],
@@ -1446,6 +1449,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026", "2026-11-02"],
   ["https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026", "2026-11-02"],
   ["https://grokarchivehub.com/news/police-scotland-balmoral-epstein-inquiries-october-30-2026", "2026-10-30"],
+  ["https://grokarchivehub.com/news/epstein-death-forensic-record-review-november-19-2026", "2026-11-19"],
   ["https://grokarchivehub.com/news/garcia-epstein-records-preservation-november-18-2026", "2026-11-18"],
   ["https://grokarchivehub.com/news/epstein-files-transparency-act-ii-discharge-petition-218-november-11-2026", "2026-11-11"],
   ["https://grokarchivehub.com/news/house-oversight-majority-epstein-maxwell-report-november-10-2026", "2026-11-10"],
@@ -7874,7 +7878,7 @@ function v3SocialUiStyle() {
   </style>`;
 }
 
-function v3DocumentHeaderHtml() {
+function v3DocumentHeaderHtml(hasAskPanel = false) {
   return `<header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="/">
@@ -7915,6 +7919,7 @@ function v3DocumentHeaderHtml() {
       <a href="/corrections">Corrections</a>
       <a href="/newsletter">Newsletter</a>
       <a href="/membership">Membership</a>
+      ${hasAskPanel ? '<button class="btn" type="button" data-overlay-open="ask-gah-panel">Ask GAH</button>' : ""}
     </nav>
   </header>`;
 }
@@ -8038,7 +8043,7 @@ function ensureV3DocumentShell(body) {
   html = html.replace(/<a\b(?=[^>]*\bclass=["'][^"']*\b(?:skip|skip-link)\b)[^>]*>/gi,
     tag => tag.replace(/\bhref=["']#(?:main|main-content)["']/i, () => 'href="#' + escapeHtml(mainTarget) + '"'));
   const hasSkip = /<a\b[^>]*class=["'][^"']*\b(?:skip|skip-link)\b/i.test(html);
-  const header = `${hasSkip ? "" : '<a class="skip" href="#' + escapeHtml(mainTarget) + '">Skip to content</a>\n'}${v3DocumentHeaderHtml()}`;
+  const header = `${hasSkip ? "" : '<a class="skip" href="#' + escapeHtml(mainTarget) + '">Skip to content</a>\n'}${v3DocumentHeaderHtml(/id=["']ask-gah-panel["']/.test(html))}`;
   const headerPattern = /<header\b(?=[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'])[\s\S]*?<\/header>/i;
   if (headerPattern.test(html)) html = html.replace(headerPattern, header);
   else if (/<body\b/i.test(html)) html = html.replace(/<body\b([^>]*)>/i, `<body$1>\n${header}`);
