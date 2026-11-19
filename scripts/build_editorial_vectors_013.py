@@ -8,7 +8,20 @@ MODEL='@cf/baai/bge-small-en-v1.5'
 def corpus():return json.loads((ROOT/'content/research-corpus-010.mjs').read_text().removeprefix('export default ').strip().removesuffix(';'))
 def read(p):return json.loads(p.read_text().removeprefix('export default ').strip().removesuffix(';'))
 def digest(d):return hashlib.sha256(json.dumps(d,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+def validate_snapshot(d,fixture=False):
+ assert d.get('embedding_batch_size')==1
+ assert d.get('schema')=='gah.private.editorial.vectors.v1' and d.get('model')==MODEL
+ assert fixture or d.get('fixture_only') is False,'Test vectors cannot pass a release gate'
+ assert isinstance(d.get('documents'),list)
+ assert len({r['url'] for r in d['documents']})==len(d['documents'])
+ for r in d['documents']:
+  assert isinstance(r['url'],str) and r['url'].startswith('https://grokarchivehub.com/')
+  assert isinstance(r['source_sha256'],str) and len(r['source_sha256'])==64
+  v=r['vector'];assert len(v)==384 and all(isinstance(x,(int,float)) and math.isfinite(x) for x in v) and abs(sum(x*x for x in v)-1)<.03
+ copy=dict(d);version=copy.pop('version');assert digest(copy)==version,'Vector cache integrity failure'
+ return d
 def validate(d,m,fixture=False):
+ validate_snapshot(d,fixture)
  assert d.get('embedding_batch_size')==1
  assert d.get('schema')=='gah.private.editorial.vectors.v1' and d.get('model')==MODEL and d.get('corpus_version')==m['version']
  assert fixture or d.get('fixture_only') is False,'Test vectors cannot pass a release gate'
@@ -23,14 +36,17 @@ if __name__=='__main__':
  if a.contract_fixture:
   docs=[{'url':d['url'],'source_sha256':d['source_sha256'],'vector':[1.0 if j==i%384 else 0.0 for j in range(384)]} for i,d in enumerate(m['documents'])];changed=0
  else:
-  assert a.encoder and a.encoder.is_file(),'Explicit private encoder executable required';old=read(out) if out.exists() else {};old_docs={d['url']:d for d in old.get('documents',[])} if old.get('model')==MODEL and old.get('embedding_batch_size')==1 and not old.get('fixture_only') else {};docs=[];pending=[]
+  assert a.encoder and a.encoder.is_file(),'Explicit private encoder executable required'
+  old=read(out) if out.exists() else None
+  if old is not None:validate_snapshot(old)
+  old_docs={d['url']:d for d in old['documents']} if old else {};docs=[];pending=[]
   for d in m['documents']:
    prior=old_docs.get(d['url']);row={'url':d['url'],'source_sha256':d['source_sha256']}
    if prior and prior['source_sha256']==d['source_sha256']:row['vector']=prior['vector']
    else:pending.append((len(docs),d['title']+' '+d['description']))
    docs.append(row)
   for start in range(0,len(pending),16):
-   batch=pending[start:start+16];result=subprocess.run([str(a.encoder.resolve())],input=json.dumps({'model':MODEL,'texts':[t for _,t in batch]}),text=True,capture_output=True,check=True);vectors=json.loads(result.stdout)['vectors'];assert len(vectors)==len(batch)
+   batch=pending[start:start+16];result=subprocess.run([str(a.encoder.resolve())],input=json.dumps({'model':MODEL,'texts':[t for _,t in batch]}),text=True,capture_output=True,check=True,timeout=180);vectors=json.loads(result.stdout)['vectors'];assert len(vectors)==len(batch)
    for (idx,_),v in zip(batch,vectors):docs[idx]['vector']=v
   changed=len(pending)
  data={'schema':'gah.private.editorial.vectors.v1','model':MODEL,'corpus_version':m['version'],'fixture_only':a.contract_fixture,'embedding_batch_size':1,'documents':docs};data['version']=digest(data);validate(data,m,a.contract_fixture);out.parent.mkdir(mode=0o700,parents=True,exist_ok=True)
