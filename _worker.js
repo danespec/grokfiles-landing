@@ -8459,6 +8459,9 @@ function enhanceEditorialAuthorship(html, canonical) {
 
 function enhanceHtmlText(html, requestOrUrl, meta = {}, env = {}) {
   let body = stripCloudflareHelperAssets(html);
+  if (body.includes("source-timeline-visual")) {
+    body = body.replace('href="/assets/identifier-dossier.css"', 'href="/assets/identifier-dossier.css?layout=330"');
+  }
   const headingPath = new URL(typeof requestOrUrl === "string" ? requestOrUrl : requestOrUrl.url).pathname;
   if (["/latest","/dispatches","/investigations","/entities"].includes(headingPath)) {
     const mainStart = body.search(/<main\b/i);
