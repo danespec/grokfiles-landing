@@ -7919,8 +7919,7 @@ function v3DocumentHeaderHtml(hasAskPanel = false) {
       <a href="/corrections">Corrections</a>
       <a href="/newsletter">Newsletter</a>
       <a href="/membership">Membership</a>
-      ${hasAskPanel ? '<button class="btn" type="button" data-overlay-open="ask-gah-panel">Ask GAH</button>' : ""}
-    </nav>
+${hasAskPanel ? '      <button class="btn" type="button" data-overlay-open="ask-gah-panel">Ask GAH</button>\n' : ""}    </nav>
   </header>`;
 }
 
@@ -8043,7 +8042,7 @@ function ensureV3DocumentShell(body) {
   html = html.replace(/<a\b(?=[^>]*\bclass=["'][^"']*\b(?:skip|skip-link)\b)[^>]*>/gi,
     tag => tag.replace(/\bhref=["']#(?:main|main-content)["']/i, () => 'href="#' + escapeHtml(mainTarget) + '"'));
   const hasSkip = /<a\b[^>]*class=["'][^"']*\b(?:skip|skip-link)\b/i.test(html);
-  const header = `${hasSkip ? "" : '<a class="skip" href="#' + escapeHtml(mainTarget) + '">Skip to content</a>\n'}${v3DocumentHeaderHtml(/id=["']ask-gah-panel["']/.test(html))}`;
+  const header = `${hasSkip ? "" : '<a class="skip" href="#' + escapeHtml(mainTarget) + '">Skip to content</a>\n'}${v3DocumentHeaderHtml(/class=["']home-064["']/.test(html) && /id=["']ask-gah-panel["']/.test(html))}`;
   const headerPattern = /<header\b(?=[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'])[\s\S]*?<\/header>/i;
   if (headerPattern.test(html)) html = html.replace(headerPattern, header);
   else if (/<body\b/i.test(html)) html = html.replace(/<body\b([^>]*)>/i, `<body$1>\n${header}`);
