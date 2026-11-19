@@ -1,0 +1,2382 @@
+{
+  "schema": "gah.forensic.media.v1",
+  "source": {
+    "filename": "photos-autopsy-and-scene.pdf",
+    "sha256": "a5a7fafa89787007b56039efa3d644b952f4f5fb54c0661ca70d68a5212e05a2",
+    "bytes": 458724884,
+    "pages": 215,
+    "title_metadata": "https://www.l3g4l.com",
+    "author_metadata": "https://www.l3g4l.com",
+    "note": "Secondary watermarked compilation; not independently authenticated camera-original photos; confirm copyright/redistribution permission before public hosting."
+  },
+  "photos": [
+    {
+      "page": 1,
+      "category": "MCC scene",
+      "image": "photos/photo-001.jpg",
+      "image_bytes": 2817156,
+      "image_sha256": "1297a22927f6263e89ffec9f36e6442d9d854802218eeb9cb22dd52dd561148c",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 1
+    },
+    {
+      "page": 2,
+      "category": "MCC scene",
+      "image": "photos/photo-002.jpg",
+      "image_bytes": 2563325,
+      "image_sha256": "5a797b54a6e2ac6308e15102b913f23032fa04ffc446833da5c62e870cc5dab2",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 1
+    },
+    {
+      "page": 3,
+      "category": "MCC scene",
+      "image": "photos/photo-003.jpg",
+      "image_bytes": 3052517,
+      "image_sha256": "45d4463a4e5ec4bd1256c92e4feb42bb6f503ba18cbce378de3acff19b7d1b3e",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 1
+    },
+    {
+      "page": 4,
+      "category": "MCC scene",
+      "image": "photos/photo-004.jpg",
+      "image_bytes": 2766771,
+      "image_sha256": "29c9f92a58b8eb90faa5404151351577bd1dcd6d359f2e23751119bd1c611720",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 1
+    },
+    {
+      "page": 5,
+      "category": "MCC scene",
+      "image": "photos/photo-005.jpg",
+      "image_bytes": 2701353,
+      "image_sha256": "e620812c57952f2b3b80163728b17099be994fe5cbec38910bbeab12deed46e9",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 1
+    },
+    {
+      "page": 6,
+      "category": "MCC scene",
+      "image": "photos/photo-006.jpg",
+      "image_bytes": 2562930,
+      "image_sha256": "d04d308a67a90b0c41b9e5915c14ea3811b73f8fb6278003e4c0b94c17609c07",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 1
+    },
+    {
+      "page": 7,
+      "category": "MCC scene",
+      "image": "photos/photo-007.jpg",
+      "image_bytes": 2930655,
+      "image_sha256": "ed2c1f3f5bf8f3aff0b1137d8dacb5b987eb9893add21ecacce8a42db6e1bc7d",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 1
+    },
+    {
+      "page": 8,
+      "category": "MCC scene",
+      "image": "photos/photo-008.jpg",
+      "image_bytes": 3097006,
+      "image_sha256": "568985b0af88e1ae350bb6b56a5ed4ebc95d881d58bf4b22f8b6102da9d06d70",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 2
+    },
+    {
+      "page": 9,
+      "category": "MCC scene",
+      "image": "photos/photo-009.jpg",
+      "image_bytes": 2271142,
+      "image_sha256": "9790ae8f700e611813310dd0f4c9ad6a00b391609a5d51a1d1eb3706f734f91d",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 2
+    },
+    {
+      "page": 10,
+      "category": "MCC scene",
+      "image": "photos/photo-010.jpg",
+      "image_bytes": 2613670,
+      "image_sha256": "7a2a96f88eab320bdd3bd2dff242af75229a6b53a64edb4592fdbebb0e26e612",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 2
+    },
+    {
+      "page": 11,
+      "category": "MCC scene",
+      "image": "photos/photo-011.jpg",
+      "image_bytes": 3362882,
+      "image_sha256": "ea31d6d776fde7f61ac20971eb8517890e330cd0334f51f43b9eb12015d97723",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 2
+    },
+    {
+      "page": 12,
+      "category": "MCC scene",
+      "image": "photos/photo-012.jpg",
+      "image_bytes": 3207364,
+      "image_sha256": "c43f2722d669a805e0cc12ffe212972a8777acfa7485ed457259fe09cc98ae1e",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 2
+    },
+    {
+      "page": 13,
+      "category": "MCC scene",
+      "image": "photos/photo-013.jpg",
+      "image_bytes": 3083191,
+      "image_sha256": "82bcf313579094893e569d240c86462ae1b687c248e16e9787c7917ce97e976d",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 2
+    },
+    {
+      "page": 14,
+      "category": "MCC scene",
+      "image": "photos/photo-014.jpg",
+      "image_bytes": 2660522,
+      "image_sha256": "f08d30bba71759bd5a02a3b255efe5a7b6524512a3abfbcd00dc70b4c38c9e2b",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 2
+    },
+    {
+      "page": 15,
+      "category": "MCC scene",
+      "image": "photos/photo-015.jpg",
+      "image_bytes": 3045591,
+      "image_sha256": "459b93eedb2a2e67b1f943bf915e5116fd143d57c4c636da3d4b9de4c36ea752",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 3
+    },
+    {
+      "page": 16,
+      "category": "MCC scene",
+      "image": "photos/photo-016.jpg",
+      "image_bytes": 2696269,
+      "image_sha256": "f43e9ea3310630218aef9be986476dca090ee95dbd6dcf4b1f6ef39f9d661fae",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 3
+    },
+    {
+      "page": 17,
+      "category": "MCC scene",
+      "image": "photos/photo-017.jpg",
+      "image_bytes": 2488169,
+      "image_sha256": "30b915995a71ece7664c7ababe6a2ccff0aab0776af994f64177cc1368b19bcc",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 3
+    },
+    {
+      "page": 18,
+      "category": "MCC scene",
+      "image": "photos/photo-018.jpg",
+      "image_bytes": 3547604,
+      "image_sha256": "d1c5e53ccfaacf14fc984ba60b1d99964321e69e4b84a6b2a9f0ae0e1f50a174",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 3
+    },
+    {
+      "page": 19,
+      "category": "MCC scene",
+      "image": "photos/photo-019.jpg",
+      "image_bytes": 2932783,
+      "image_sha256": "af4f88cb904173e18ef059e7d3cc6014e8b3e9a2c2e93e38c7d192f6998a16fd",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 3
+    },
+    {
+      "page": 20,
+      "category": "MCC scene",
+      "image": "photos/photo-020.jpg",
+      "image_bytes": 2986431,
+      "image_sha256": "faf8a60061da399cedd6630669794f14a4769f18fb05e28f6459480b8986a2e0",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 3
+    },
+    {
+      "page": 21,
+      "category": "MCC scene",
+      "image": "photos/photo-021.jpg",
+      "image_bytes": 2756556,
+      "image_sha256": "aee2f1ea9b767dc417375b1582e47a29f78cbfb036f389dfe2fdfc6ec94ee6c3",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 3
+    },
+    {
+      "page": 22,
+      "category": "MCC scene",
+      "image": "photos/photo-022.jpg",
+      "image_bytes": 3012546,
+      "image_sha256": "63f09f322de05bf22625072b740f651228719f377221da5d0f9823a25b6fbedb",
+      "width_px": 3456,
+      "height_px": 4608,
+      "pdf_part": 4
+    },
+    {
+      "page": 23,
+      "category": "MCC scene",
+      "image": "photos/photo-023.jpg",
+      "image_bytes": 3234454,
+      "image_sha256": "94db3df6179c081d27d5839a259b5939cc1562803a0817710d17c43d96a534c5",
+      "width_px": 4608,
+      "height_px": 3456,
+      "pdf_part": 4
+    },
+    {
+      "page": 24,
+      "category": "Autopsy examination",
+      "image": "photos/photo-024.jpg",
+      "image_bytes": 1425446,
+      "image_sha256": "9c6d70359f08064b9398b57af249a57a0153a9546466dce7a6c4632fe7635c98",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 25,
+      "category": "Autopsy examination",
+      "image": "photos/photo-025.jpg",
+      "image_bytes": 1346518,
+      "image_sha256": "da7e9682b009d69f8a75f715e99ec008c8af1ddde21d290cc23c1022c3e85a7d",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 26,
+      "category": "Autopsy examination",
+      "image": "photos/photo-026.jpg",
+      "image_bytes": 1362926,
+      "image_sha256": "4969818ee5cbada895ef88522b63bbff75a4ceeb72ef8755d96ed1cbea31a061",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 27,
+      "category": "Autopsy examination",
+      "image": "photos/photo-027.jpg",
+      "image_bytes": 1717007,
+      "image_sha256": "275aa9976fd60b9374ca68a9f352fd38589da90255a061858ba72b0d0a3d56a0",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 28,
+      "category": "Autopsy examination",
+      "image": "photos/photo-028.jpg",
+      "image_bytes": 1657407,
+      "image_sha256": "461e4ce2b63440562c72093cfdf562f3a9a0b5fe6a96b1e3209b3ec4d2774cd9",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 29,
+      "category": "Autopsy examination",
+      "image": "photos/photo-029.jpg",
+      "image_bytes": 1472894,
+      "image_sha256": "4c18aa60d2a6c5c64c4ac567556294492519197b936422a00ae224c11b3e2332",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 30,
+      "category": "Autopsy examination",
+      "image": "photos/photo-030.jpg",
+      "image_bytes": 1872981,
+      "image_sha256": "be77678020604797e45231723b7f943c9f0304c35cf5eea54605f00e9d9abcf6",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 31,
+      "category": "Autopsy examination",
+      "image": "photos/photo-031.jpg",
+      "image_bytes": 1343494,
+      "image_sha256": "f32eed5adf1e7757a8a624e8e0cae5c39151b9497b61b3752c48c280066c701a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 32,
+      "category": "Autopsy examination",
+      "image": "photos/photo-032.jpg",
+      "image_bytes": 1893628,
+      "image_sha256": "1fcf2a79aadb88a827e4910961ea526b0fe6c537dda80e5fd0bf156d5a75b7e2",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 4
+    },
+    {
+      "page": 33,
+      "category": "Autopsy examination",
+      "image": "photos/photo-033.jpg",
+      "image_bytes": 1593696,
+      "image_sha256": "364b3f7ac2c083deaae886797f71c4300d08b42f570626ffae519fdd442e1712",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 34,
+      "category": "Autopsy examination",
+      "image": "photos/photo-034.jpg",
+      "image_bytes": 1547972,
+      "image_sha256": "cb84bc04c84f2f67090b208fd91f5c24987c3ef3b99cf7cebb6e77c5745c1a15",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 35,
+      "category": "Autopsy examination",
+      "image": "photos/photo-035.jpg",
+      "image_bytes": 2865565,
+      "image_sha256": "aa36e90d03e6a389fca1f644b2503be97244dcb98bd29d1cd4823f6dbebd3dfc",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 36,
+      "category": "Autopsy examination",
+      "image": "photos/photo-036.jpg",
+      "image_bytes": 3075825,
+      "image_sha256": "a85345e6c6c3bd166e84647c376beeef3259daa17398c93b45d9d544935ce631",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 37,
+      "category": "Autopsy examination",
+      "image": "photos/photo-037.jpg",
+      "image_bytes": 2484520,
+      "image_sha256": "afbaad24e60fb77eb2d4e6a9474bf6e5025074e749b6bda55ceb18cb20729976",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 38,
+      "category": "Autopsy examination",
+      "image": "photos/photo-038.jpg",
+      "image_bytes": 1848543,
+      "image_sha256": "4a9232b64dbe121a531baa5581db62770a1d5caa44c8d1773a33c0448373da01",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 39,
+      "category": "Autopsy examination",
+      "image": "photos/photo-039.jpg",
+      "image_bytes": 2068380,
+      "image_sha256": "84ea8878e7c83e663dcb63be4c7cde1801b56fe443107bc198c8e438cb02fe6d",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 40,
+      "category": "Autopsy examination",
+      "image": "photos/photo-040.jpg",
+      "image_bytes": 2550378,
+      "image_sha256": "3d1153cb2f810cf130bf720f5083611187dcd94c41b1551b5687574b938d7842",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 41,
+      "category": "Autopsy examination",
+      "image": "photos/photo-041.jpg",
+      "image_bytes": 2063566,
+      "image_sha256": "62e42454e4979b795ab9545a29c190c18a462b6707ca09146260e7bb044cadcb",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 5
+    },
+    {
+      "page": 42,
+      "category": "Autopsy examination",
+      "image": "photos/photo-042.jpg",
+      "image_bytes": 1734598,
+      "image_sha256": "8d9a93b878d48091897a50afd4cfb826a6f68bc6694bc3e0dd0a3ea2ef2cd27a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 43,
+      "category": "Autopsy examination",
+      "image": "photos/photo-043.jpg",
+      "image_bytes": 2830554,
+      "image_sha256": "8d3037b41f820a2e611bfbc99a710da72ffe38b795d41ae7096f2d7412db4b00",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 44,
+      "category": "Autopsy examination",
+      "image": "photos/photo-044.jpg",
+      "image_bytes": 2441097,
+      "image_sha256": "d799642d52b2d7feea037286b68684d75a0b3e40cce63892c8011415ba04735b",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 45,
+      "category": "Autopsy examination",
+      "image": "photos/photo-045.jpg",
+      "image_bytes": 1776071,
+      "image_sha256": "26c6e7fcc67961c63d14b8e0ee9b0ac682cb6cf44c8f88faea35860b06d8deeb",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 46,
+      "category": "Autopsy examination",
+      "image": "photos/photo-046.jpg",
+      "image_bytes": 2138585,
+      "image_sha256": "34a874d255a5f7e1bd10289f70fc643b59dd3860ff3eb845ea52c2526f9231e5",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 47,
+      "category": "Autopsy examination",
+      "image": "photos/photo-047.jpg",
+      "image_bytes": 2049123,
+      "image_sha256": "6ce8927b05d4b1e504cf0b324d7755eeb1638c369f688ffed7efa5bde40323b8",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 48,
+      "category": "Autopsy examination",
+      "image": "photos/photo-048.jpg",
+      "image_bytes": 1965378,
+      "image_sha256": "82eb73df35a8834427dd6e6116aed38f37a9d52755a466334ea96e6e44f325e1",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 49,
+      "category": "Autopsy examination",
+      "image": "photos/photo-049.jpg",
+      "image_bytes": 1681333,
+      "image_sha256": "b038d2bcc85227e46a85d3355d538fa788ae5925dc1be331c9a4c5bd955d13e7",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 50,
+      "category": "Autopsy examination",
+      "image": "photos/photo-050.jpg",
+      "image_bytes": 2006677,
+      "image_sha256": "b7193b2492023e8ccda1d3dae57a856c024f709e3adae428770d1366b9b0ca24",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 51,
+      "category": "Autopsy examination",
+      "image": "photos/photo-051.jpg",
+      "image_bytes": 1869035,
+      "image_sha256": "e5d376f81cfb74dfd3c1364a410be2619899e1801981c63945e778d4fb2c5860",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 6
+    },
+    {
+      "page": 52,
+      "category": "Autopsy examination",
+      "image": "photos/photo-052.jpg",
+      "image_bytes": 2075553,
+      "image_sha256": "5b2f67cafd8f0b63b47473d85cd0b237318d40c1b6197b91f5ab297db86ff1ef",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 53,
+      "category": "Autopsy examination",
+      "image": "photos/photo-053.jpg",
+      "image_bytes": 2023805,
+      "image_sha256": "ec510c9162d25ddb7c09e949bb9981b820e0a1af76d1c339793e2cfa22ee1cdf",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 54,
+      "category": "Autopsy examination",
+      "image": "photos/photo-054.jpg",
+      "image_bytes": 3413611,
+      "image_sha256": "7a46da4db3f856e748afc897196d87f7de3513456120d9ec594bd59a49a7b952",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 55,
+      "category": "Autopsy examination",
+      "image": "photos/photo-055.jpg",
+      "image_bytes": 2307345,
+      "image_sha256": "626e6e3abca2e555a8613280a1204df89c0ddad7256352c5a71c7f476128650c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 56,
+      "category": "Autopsy examination",
+      "image": "photos/photo-056.jpg",
+      "image_bytes": 2219281,
+      "image_sha256": "76e2ede5a04dae97017b00c9eafec7918008c85d0390bef9247aabdf93ae99ec",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 57,
+      "category": "Autopsy examination",
+      "image": "photos/photo-057.jpg",
+      "image_bytes": 2315737,
+      "image_sha256": "75af9924c0566cc7e76b7ebd07ff51046a6b01cf941d84a6d5743f813a3dcbf4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 58,
+      "category": "Autopsy examination",
+      "image": "photos/photo-058.jpg",
+      "image_bytes": 2353063,
+      "image_sha256": "c76192a7fa52d5ae61c3f51d44c035b7191a492bad2cca10060c65d02ddee29d",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 59,
+      "category": "Autopsy examination",
+      "image": "photos/photo-059.jpg",
+      "image_bytes": 2254536,
+      "image_sha256": "fa81335d3da6effd8a4bc94e8d59ce7bfe76f5dbee8eb919747a77d06801e535",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 7
+    },
+    {
+      "page": 60,
+      "category": "Autopsy examination",
+      "image": "photos/photo-060.jpg",
+      "image_bytes": 2096019,
+      "image_sha256": "6c3acbd38a7b260792954f6b80ec8fffaf2d4e700f3b657c84e7db8c9b745d9f",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 61,
+      "category": "Autopsy examination",
+      "image": "photos/photo-061.jpg",
+      "image_bytes": 2120845,
+      "image_sha256": "4fd48e1d7413a93d4160884e88cd3da211237e57bfd20065885a797a3bb3eeb9",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 62,
+      "category": "Autopsy examination",
+      "image": "photos/photo-062.jpg",
+      "image_bytes": 2064910,
+      "image_sha256": "54eabef3d04247060f5ac1d7a9d5f5766fedf3241efe1ddeed19c8c7bfae1dfd",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 63,
+      "category": "Autopsy examination",
+      "image": "photos/photo-063.jpg",
+      "image_bytes": 2292526,
+      "image_sha256": "79af3a95985039296d20538bb496c59b8edd8448ad9fabc1db18b6a1e58d0ebb",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 64,
+      "category": "Autopsy examination",
+      "image": "photos/photo-064.jpg",
+      "image_bytes": 2008529,
+      "image_sha256": "ee0ce55478fb0c7e236e8d799c1be8615a597cd65738a5816c865593ae6ef82c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 65,
+      "category": "Autopsy examination",
+      "image": "photos/photo-065.jpg",
+      "image_bytes": 2641790,
+      "image_sha256": "24c7cab8d619552c23ef1e93a58f2a416489b9e828b7e8f2cb7d0a457ba8241a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 66,
+      "category": "Autopsy examination",
+      "image": "photos/photo-066.jpg",
+      "image_bytes": 2624328,
+      "image_sha256": "49f466ac21a327e5322bf7f06d9d0ea8dbb859c2eb6b5dbeec0111d5c42def38",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 67,
+      "category": "Autopsy examination",
+      "image": "photos/photo-067.jpg",
+      "image_bytes": 2679925,
+      "image_sha256": "dba3660014a9b14147d1e176ca5b603fd82290d3a6807ffc4966b25c6cbaab00",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 8
+    },
+    {
+      "page": 68,
+      "category": "Autopsy examination",
+      "image": "photos/photo-068.jpg",
+      "image_bytes": 2726404,
+      "image_sha256": "dc78723702661739850b32f4747861ed686600870515a8075b342622f9a698b8",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 69,
+      "category": "Autopsy examination",
+      "image": "photos/photo-069.jpg",
+      "image_bytes": 2058553,
+      "image_sha256": "5bca005058d6ebecfc6592147f4626fb590b84341c05809c45cfef305ff5dbd7",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 70,
+      "category": "Autopsy examination",
+      "image": "photos/photo-070.jpg",
+      "image_bytes": 1687919,
+      "image_sha256": "a61230471f29e18e1919527cba9d989ccd7bb2f964aab2db7079f0000477bec4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 71,
+      "category": "Autopsy examination",
+      "image": "photos/photo-071.jpg",
+      "image_bytes": 3045726,
+      "image_sha256": "5a6398b0a2e17c165b650d802c3f98d160b16550349513e70a26248bae1f4ada",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 72,
+      "category": "Autopsy examination",
+      "image": "photos/photo-072.jpg",
+      "image_bytes": 2740350,
+      "image_sha256": "01b8686de0b96404b1e966e8f57c3822e8d913532550d95fd1bc585e06b51fcc",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 73,
+      "category": "Autopsy examination",
+      "image": "photos/photo-073.jpg",
+      "image_bytes": 2736355,
+      "image_sha256": "9529e0932725b5d9b9332bb88fd983b92d7b4182b5a03fcaebddb66b71b49364",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 74,
+      "category": "Autopsy examination",
+      "image": "photos/photo-074.jpg",
+      "image_bytes": 2823210,
+      "image_sha256": "b589a81c2269a7358ccab9f32335805d46403835e92fd81527d9b7a402fdc24f",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 75,
+      "category": "Autopsy examination",
+      "image": "photos/photo-075.jpg",
+      "image_bytes": 2903430,
+      "image_sha256": "41f46bff0540accb6cb8d44833f55fd498f8bf6b8b5c88475d74da2cc867d278",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 9
+    },
+    {
+      "page": 76,
+      "category": "Autopsy examination",
+      "image": "photos/photo-076.jpg",
+      "image_bytes": 2517302,
+      "image_sha256": "047805539149c70dcc1f08b5f6a127a1601374598145cf6fb9dc65e2c448d150",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 77,
+      "category": "Autopsy examination",
+      "image": "photos/photo-077.jpg",
+      "image_bytes": 2578059,
+      "image_sha256": "ebdcf4c631ab6873aa50da694254bc15cb2fe6775c30ff36cb1081482c0d12b2",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 78,
+      "category": "Autopsy examination",
+      "image": "photos/photo-078.jpg",
+      "image_bytes": 3131607,
+      "image_sha256": "b9bab6b91d32fe46ffba3801e00833013c15206862e59d068f2b9900eeba2c0c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 79,
+      "category": "Autopsy examination",
+      "image": "photos/photo-079.jpg",
+      "image_bytes": 2993013,
+      "image_sha256": "088204c6b84902d8bed2a55905a66cddc47d68880e34dc8865c35c84b1a0551a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 80,
+      "category": "Autopsy examination",
+      "image": "photos/photo-080.jpg",
+      "image_bytes": 3105199,
+      "image_sha256": "7c8b472e8375bf485fbac0001e91c8b085244bf71b568f756ac75208ec140059",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 81,
+      "category": "Autopsy examination",
+      "image": "photos/photo-081.jpg",
+      "image_bytes": 2710098,
+      "image_sha256": "cc4cd2f83cf265827aabfcc0e4ae20c42e44bee8edb367e67071eaee34b809fb",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 82,
+      "category": "Autopsy examination",
+      "image": "photos/photo-082.jpg",
+      "image_bytes": 2984212,
+      "image_sha256": "04bb03202b7caedc4144512093d2641226677761c6bd83d9900c2a4b595ba434",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 10
+    },
+    {
+      "page": 83,
+      "category": "Autopsy examination",
+      "image": "photos/photo-083.jpg",
+      "image_bytes": 2986082,
+      "image_sha256": "2ab6d724eab61138ed5469d1885c4ad8e9b20c283768bb4b97af2c2423c4298e",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 84,
+      "category": "Autopsy examination",
+      "image": "photos/photo-084.jpg",
+      "image_bytes": 3056024,
+      "image_sha256": "4543244ceb41929d4a0e2ab078820afd4e753678edfbe9831121e395c9b29e47",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 85,
+      "category": "Autopsy examination",
+      "image": "photos/photo-085.jpg",
+      "image_bytes": 2704353,
+      "image_sha256": "2a99e0e79551d612e80bfa0be5707be8d454c7b093e7fdbaaf02cf3c09c0fa8b",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 86,
+      "category": "Autopsy examination",
+      "image": "photos/photo-086.jpg",
+      "image_bytes": 2902026,
+      "image_sha256": "49da6f8fc4a3595557c420d92f6c703eb47e8de8436e9d981eef3c83c17dd938",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 87,
+      "category": "Autopsy examination",
+      "image": "photos/photo-087.jpg",
+      "image_bytes": 2937325,
+      "image_sha256": "96713dee875247cc670d7984f3839e19b743b1e6e57f97951b5bba1c8827b692",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 88,
+      "category": "Autopsy examination",
+      "image": "photos/photo-088.jpg",
+      "image_bytes": 3121504,
+      "image_sha256": "4a175391f7f7bf724e1500771e12cc54ab017d80d7399aee4ec92ee41411f2fd",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 89,
+      "category": "Autopsy examination",
+      "image": "photos/photo-089.jpg",
+      "image_bytes": 3021299,
+      "image_sha256": "061bfde797bacf9f5ff7ff9445bc36f2913e6ceb6ca1892b45769abb3c5c2374",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 11
+    },
+    {
+      "page": 90,
+      "category": "Autopsy examination",
+      "image": "photos/photo-090.jpg",
+      "image_bytes": 2951369,
+      "image_sha256": "74a1795c480d37f9559bc68b827eca920d3bde4ec115a46e37d5402185f707e9",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 91,
+      "category": "Autopsy examination",
+      "image": "photos/photo-091.jpg",
+      "image_bytes": 3014268,
+      "image_sha256": "f67e7848419ce9a80d3cfa571bd6062d877a6aef63a43e40f1ea4a18d91a74a2",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 92,
+      "category": "Autopsy examination",
+      "image": "photos/photo-092.jpg",
+      "image_bytes": 2762365,
+      "image_sha256": "73eebd177c48b23ff645b706fc98889b0a644440378e6df2cf2711a306143d2c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 93,
+      "category": "Autopsy examination",
+      "image": "photos/photo-093.jpg",
+      "image_bytes": 3585337,
+      "image_sha256": "1e0b9673403b6039f02643ddaa240388a6c482a915833faee787fd1030e3f370",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 94,
+      "category": "Autopsy examination",
+      "image": "photos/photo-094.jpg",
+      "image_bytes": 3091901,
+      "image_sha256": "1d17f6c8273fbec90ffcd507c11e008acde1bd9e2fd8d5ebd3153d23856449eb",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 95,
+      "category": "Autopsy examination",
+      "image": "photos/photo-095.jpg",
+      "image_bytes": 2344162,
+      "image_sha256": "5f8c54cf2b429bacda98d2fa552ffc131deb3548bc8c5577fd469c149d3d279d",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 96,
+      "category": "Autopsy examination",
+      "image": "photos/photo-096.jpg",
+      "image_bytes": 2684287,
+      "image_sha256": "521eb9b02802971b103ab4e9e378a8856c8cb91f980f4da820071c448f69f2c3",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 12
+    },
+    {
+      "page": 97,
+      "category": "Autopsy examination",
+      "image": "photos/photo-097.jpg",
+      "image_bytes": 2808135,
+      "image_sha256": "541014344b6db810ab96ae0e4ed70983998ddfc81865a9a498a30d1950774740",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 98,
+      "category": "Autopsy examination",
+      "image": "photos/photo-098.jpg",
+      "image_bytes": 2696410,
+      "image_sha256": "5e2a7e3ee1569e41181f90d1a71c42eeba064c1e678929fe8058476872d2f656",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 99,
+      "category": "Autopsy examination",
+      "image": "photos/photo-099.jpg",
+      "image_bytes": 2557100,
+      "image_sha256": "988dc3376f17d25f4bbafd8da0c6d8353f61686cdc0e3254e05d197aa3f3dd0e",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 100,
+      "category": "Autopsy examination",
+      "image": "photos/photo-100.jpg",
+      "image_bytes": 2911567,
+      "image_sha256": "07be81df7016c06042919fcd35f83515cedf86c165f1fa70f8d508bb972a375d",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 101,
+      "category": "Autopsy examination",
+      "image": "photos/photo-101.jpg",
+      "image_bytes": 2957809,
+      "image_sha256": "24481795f824c2825d5b662b49141dc42ca4e33377669857af6a61ad02a76c90",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 102,
+      "category": "Autopsy examination",
+      "image": "photos/photo-102.jpg",
+      "image_bytes": 2633650,
+      "image_sha256": "3d2863b8c0d69565d42eb8e48ba4e758a7c6f5a7a8450527b4edbb02ac3c00e1",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 103,
+      "category": "Autopsy examination",
+      "image": "photos/photo-103.jpg",
+      "image_bytes": 2761188,
+      "image_sha256": "70d8db132df9a919f3c4dd8e3402e23556d96947ac52f4fe0c95afd6e3c34fd0",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 13
+    },
+    {
+      "page": 104,
+      "category": "Autopsy examination",
+      "image": "photos/photo-104.jpg",
+      "image_bytes": 3116959,
+      "image_sha256": "fca80b6cac57aaf75916ecbdd8eb20a5c7adcb84d37447b5e21c1bae4123ca5a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 14
+    },
+    {
+      "page": 105,
+      "category": "Autopsy examination",
+      "image": "photos/photo-105.jpg",
+      "image_bytes": 3066272,
+      "image_sha256": "8e93a68030d9d26c3178a9b401161ae772524aa6f417736a51e99e1515c84b6b",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 14
+    },
+    {
+      "page": 106,
+      "category": "Autopsy examination",
+      "image": "photos/photo-106.jpg",
+      "image_bytes": 3220898,
+      "image_sha256": "aef157db22accfff85d2016d9dda4de0a8ba02d57d0b528a6aede35d63ebdaa5",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 14
+    },
+    {
+      "page": 107,
+      "category": "Autopsy examination",
+      "image": "photos/photo-107.jpg",
+      "image_bytes": 3218361,
+      "image_sha256": "489d87b813f053ce26f202cb78309985f7fd457828c7b5042ead34ea72b9c5a1",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 14
+    },
+    {
+      "page": 108,
+      "category": "Autopsy examination",
+      "image": "photos/photo-108.jpg",
+      "image_bytes": 3514878,
+      "image_sha256": "0dd814ec46ba914b36952b529fb1a494073069495c483190b80c524ed2b8302c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 14
+    },
+    {
+      "page": 109,
+      "category": "Autopsy examination",
+      "image": "photos/photo-109.jpg",
+      "image_bytes": 3227988,
+      "image_sha256": "4d255f2ff00abc41b69920ee32a36f75c78e465858a1d1b1f14a2591ac874e24",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 14
+    },
+    {
+      "page": 110,
+      "category": "Autopsy examination",
+      "image": "photos/photo-110.jpg",
+      "image_bytes": 2790284,
+      "image_sha256": "4677b1d2544fd429bca03cf14ae5041171741c69c9f88ae26de1e86ee7b7a53c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 15
+    },
+    {
+      "page": 111,
+      "category": "Autopsy examination",
+      "image": "photos/photo-111.jpg",
+      "image_bytes": 3506188,
+      "image_sha256": "7539dbb9627cabfc2f85365005217320cf1872887e4b51d0dbc410ff033e22fe",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 15
+    },
+    {
+      "page": 112,
+      "category": "Autopsy examination",
+      "image": "photos/photo-112.jpg",
+      "image_bytes": 3694264,
+      "image_sha256": "8d5e067a442ddbb7b534343c2ab3544e1d226b0edb4aa05b140be81bd7b2f8f4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 15
+    },
+    {
+      "page": 113,
+      "category": "Autopsy examination",
+      "image": "photos/photo-113.jpg",
+      "image_bytes": 3473011,
+      "image_sha256": "5f91756f7aede54cd8743476dd5efcdd2b4313389d676bcac5eb0cb3d96c47a4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 15
+    },
+    {
+      "page": 114,
+      "category": "Autopsy examination",
+      "image": "photos/photo-114.jpg",
+      "image_bytes": 2495739,
+      "image_sha256": "f3e3871f9306453de435afdac8b3ce7120ab96779079d24918353539967cf05a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 15
+    },
+    {
+      "page": 115,
+      "category": "Autopsy examination",
+      "image": "photos/photo-115.jpg",
+      "image_bytes": 3428219,
+      "image_sha256": "6d897a4fd4d073298a8ef246bd38e7ca6227dd955109c4ad8cedf87a57c10c02",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 15
+    },
+    {
+      "page": 116,
+      "category": "Autopsy examination",
+      "image": "photos/photo-116.jpg",
+      "image_bytes": 3193188,
+      "image_sha256": "dcc23ae810ff4a47e8ed473780ff0df3a615d5c4bdaab876ecbdd36842f22f32",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 117,
+      "category": "Autopsy examination",
+      "image": "photos/photo-117.jpg",
+      "image_bytes": 2993645,
+      "image_sha256": "ab9ce91439f48da7de9d8911e006ad151c0e60183e99126828543cf837d80c84",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 118,
+      "category": "Autopsy examination",
+      "image": "photos/photo-118.jpg",
+      "image_bytes": 1901126,
+      "image_sha256": "031825b19ab7e4b6d5aed4195d3f70099f6bfb07b48bfab8f8cbd53a8e860674",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 119,
+      "category": "Autopsy examination",
+      "image": "photos/photo-119.jpg",
+      "image_bytes": 2202473,
+      "image_sha256": "87e1d0f9e644fef0c0cf70b248d2b3e8784d4b78350641cd8f6ad9fd80efd86e",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 120,
+      "category": "Autopsy examination",
+      "image": "photos/photo-120.jpg",
+      "image_bytes": 1760234,
+      "image_sha256": "3e7035249901477da24482e1d6372eba58cb89056838ce826b8a19fa23636268",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 121,
+      "category": "Autopsy examination",
+      "image": "photos/photo-121.jpg",
+      "image_bytes": 1743480,
+      "image_sha256": "e7e1550e57ff2d113011e375c91817670011ffc3af838326378347d5f36803e8",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 122,
+      "category": "Autopsy examination",
+      "image": "photos/photo-122.jpg",
+      "image_bytes": 1746747,
+      "image_sha256": "bac45a1e70ac54c30b9020ccf136024e6f7194c478f6e027281e08a106d682c5",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 123,
+      "category": "Autopsy examination",
+      "image": "photos/photo-123.jpg",
+      "image_bytes": 1786843,
+      "image_sha256": "52a6f1dec52c28a58ae5fb91baad6478d5aee0a496d94a82c37d19ba0142f8ad",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 124,
+      "category": "Autopsy examination",
+      "image": "photos/photo-124.jpg",
+      "image_bytes": 2045146,
+      "image_sha256": "a9087ad3802789f76ca051141700fac1165f0cfb781fec86352a6c8bec433b2b",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 16
+    },
+    {
+      "page": 125,
+      "category": "Autopsy examination",
+      "image": "photos/photo-125.jpg",
+      "image_bytes": 1903693,
+      "image_sha256": "c2c0ae50374ec938582a5b69eea38f483dc2ea747b34b648cba8b42462b24083",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 126,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-126.jpg",
+      "image_bytes": 2144514,
+      "image_sha256": "06e97bfef1ff1b9c15339bb9ab82826a4137f75c4b38b3cc10d6dfa35bc3a38a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 127,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-127.jpg",
+      "image_bytes": 1987855,
+      "image_sha256": "f7ff196a3cc0a0e0ecb0b5b3a7408546d1b9ad86fb420bbf49ae775325437b19",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 128,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-128.jpg",
+      "image_bytes": 3752964,
+      "image_sha256": "a6dbf80224a9e1b80c7dce5f645777b5abe81565b43589a775fc7bc370d15f3f",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 129,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-129.jpg",
+      "image_bytes": 2446579,
+      "image_sha256": "c0f93a9ea632b4da290eac3447f6bc363b6d51f645d0547e79f3185de44796be",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 130,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-130.jpg",
+      "image_bytes": 2214589,
+      "image_sha256": "bea31b8d28a3d83f9bfca47376732a782abaf175faf685923f0b8b616c6bedcf",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 131,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-131.jpg",
+      "image_bytes": 2228316,
+      "image_sha256": "05625f34ea6ec2cc22cd50e3264884888504c3f6efb09ffaddd5e3e5d9edd381",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 132,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-132.jpg",
+      "image_bytes": 2083470,
+      "image_sha256": "7114f2533f3cecd43adf3535a7f2319a7a26e1dccf82b48e6c2ccc4c5a341be9",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 17
+    },
+    {
+      "page": 133,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-133.jpg",
+      "image_bytes": 2323026,
+      "image_sha256": "422e78fcfd14dbc8e81600d43dfa28b09d214387519b836b680862218b9cfb60",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 134,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-134.jpg",
+      "image_bytes": 2043714,
+      "image_sha256": "eabcdaf255348241dba46bbcf2f69a6252b2d1ca6fe6c00b645fc6125b05dd38",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 135,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-135.jpg",
+      "image_bytes": 2836996,
+      "image_sha256": "db1ec38574b15b492d93163be9428a678d3baaaa08fda5afd177bcd378166cb9",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 136,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-136.jpg",
+      "image_bytes": 1943549,
+      "image_sha256": "1df16715ea3e3bd6e455081b918e45487113cc911ebd436b5d386a7881215701",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 137,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-137.jpg",
+      "image_bytes": 2098746,
+      "image_sha256": "05d3ff9bfa5ce15d733445cc23d195a6d143e3293c246a190a70ad4092d03dd5",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 138,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-138.jpg",
+      "image_bytes": 2039107,
+      "image_sha256": "7f249f80a8c6201b7d7ace661429e5bbe6d7bf8de98ae4b59f42139c1573b148",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 139,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-139.jpg",
+      "image_bytes": 2014507,
+      "image_sha256": "dea344a5c170a4984c31969b47e6c797d458bf2b4f6fb52d5e8f0bac08b8433f",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 140,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-140.jpg",
+      "image_bytes": 2076372,
+      "image_sha256": "6f9ad6db3ddec3fdf73cd6709722daa36cb20b7fd35659368fde795004add074",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 141,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-141.jpg",
+      "image_bytes": 2269854,
+      "image_sha256": "95ad7eed4dbbeee879ce75052fbe94f07a69ca73edb592dbdd3f68d23c56a489",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 18
+    },
+    {
+      "page": 142,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-142.jpg",
+      "image_bytes": 2264935,
+      "image_sha256": "b91c2d53669bf81bb66edf650fa31f24827ff3ec046f5a796aeee0d857acb3d5",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 143,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-143.jpg",
+      "image_bytes": 2262220,
+      "image_sha256": "225be84e1bd402e3c5dd578982af6bf8c08e67d3f5f4aa89f7b520eeb4cdf2de",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 144,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-144.jpg",
+      "image_bytes": 2407484,
+      "image_sha256": "817273d8b4d68e15ec1a572e06ea339f6da0ca47467237c8fa63abe5afec0fc5",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 145,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-145.jpg",
+      "image_bytes": 1574326,
+      "image_sha256": "43b659506659c8972a2a0d53f6b4550c15abf6a5d5a2a20755b4c4ef7de49de4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 146,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-146.jpg",
+      "image_bytes": 1587107,
+      "image_sha256": "cb33a9ba811f4c028f6031aeaa5106bd5d255081ba8aac3d9896487326d4ddea",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 147,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-147.jpg",
+      "image_bytes": 1926293,
+      "image_sha256": "588fa2ea69c1633f97633d893ac0e786be0532346c02d4ad89d37cb25219d31f",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 148,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-148.jpg",
+      "image_bytes": 1945755,
+      "image_sha256": "fa85aa92424f399b39f8bcfd2d231f02e5b009c97cc4f73986d22838121fe59a",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 149,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-149.jpg",
+      "image_bytes": 2607425,
+      "image_sha256": "5b87cf8cdb00f3b2244c08acf8803745461cc6edf6bd9c52290f027c24086f39",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 150,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-150.jpg",
+      "image_bytes": 2717813,
+      "image_sha256": "7a2c25d6ae750a85e48267a6e5a57ff5ea33f376d04761d6144a45453e0a5b14",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 19
+    },
+    {
+      "page": 151,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-151.jpg",
+      "image_bytes": 2297972,
+      "image_sha256": "b7a7c0bd7dfe7f3d1c5935d0d001fbb38c27176484ed8fa24d931e01f0a828c8",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 152,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-152.jpg",
+      "image_bytes": 2728160,
+      "image_sha256": "925c75687ad1d5dd4cf390167322a8335bdc9f75f643f5525d2bf18221d5b47e",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 153,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-153.jpg",
+      "image_bytes": 2297995,
+      "image_sha256": "a4e59d736103e7d2eb117abdf43f53b92f014c03f5105f7895e6fd931a353c47",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 154,
+      "category": "Evidence and packaging",
+      "image": "photos/photo-154.jpg",
+      "image_bytes": 3030289,
+      "image_sha256": "8a35a2da8c3320f22c8bdd7f742cf9fa4edde6c2a9e7dca1e8027a2c53e09bc9",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 155,
+      "category": "Neuropathology",
+      "image": "photos/photo-155.jpg",
+      "image_bytes": 1517342,
+      "image_sha256": "9fa35169ee88a2efed0d4ab33944ebbabd2fb9730476ed8a09da27021933b84c",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 156,
+      "category": "Neuropathology",
+      "image": "photos/photo-156.jpg",
+      "image_bytes": 1420735,
+      "image_sha256": "e13f8d7e89c2634ddaf4875b0ae0b651e913a29ff4efbe146e7302fa66e1884e",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 157,
+      "category": "Neuropathology",
+      "image": "photos/photo-157.jpg",
+      "image_bytes": 1493181,
+      "image_sha256": "0aa8512d29b8a66ab6ea941f0d806a67a86a3993eb9b2e03f32b136a1d550dcf",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 158,
+      "category": "Neuropathology",
+      "image": "photos/photo-158.jpg",
+      "image_bytes": 2354006,
+      "image_sha256": "190ce44f8cd4c7df081e1b98be7e35e386fb875c789f75267e3012bfbd0c7b25",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 159,
+      "category": "Neuropathology",
+      "image": "photos/photo-159.jpg",
+      "image_bytes": 2362171,
+      "image_sha256": "29dc444d658e2ee779d83258f63119ac62cda08d9c167b277772055b3b9472c3",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 20
+    },
+    {
+      "page": 160,
+      "category": "Neuropathology",
+      "image": "photos/photo-160.jpg",
+      "image_bytes": 2050531,
+      "image_sha256": "27febff57b0d91a4011845c74303015115e4c4a91aa6da77262a24561230979b",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 161,
+      "category": "Neuropathology",
+      "image": "photos/photo-161.jpg",
+      "image_bytes": 1982909,
+      "image_sha256": "7aecfd88eaf400c53230c071f1238541368062f706c305ac002044bbc858664f",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 162,
+      "category": "Neuropathology",
+      "image": "photos/photo-162.jpg",
+      "image_bytes": 1999663,
+      "image_sha256": "f144482895e3f220e24dc402753575de0ee60c23f327aec80e8faa522617a0e6",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 163,
+      "category": "Neuropathology",
+      "image": "photos/photo-163.jpg",
+      "image_bytes": 1960163,
+      "image_sha256": "74c805dadaa5f7e34ca447f3faa59fd0270eb9274d264c3ad5bd12759c010874",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 164,
+      "category": "Neuropathology",
+      "image": "photos/photo-164.jpg",
+      "image_bytes": 2319192,
+      "image_sha256": "e590833b3624718af3d00c6eb5d1f39c227904b50cac0ef233c3c13f243322fc",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 165,
+      "category": "Neuropathology",
+      "image": "photos/photo-165.jpg",
+      "image_bytes": 2353018,
+      "image_sha256": "47f1ec8d53c1c34f3bba9e63b0d9c96118542e886b8b93666858ac9dedc09b42",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 166,
+      "category": "Neuropathology",
+      "image": "photos/photo-166.jpg",
+      "image_bytes": 2312686,
+      "image_sha256": "cf4b1fa9c356ac326f027e6f837978d3f163f340534f04d7586ac0f5f6bcac19",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 167,
+      "category": "Neuropathology",
+      "image": "photos/photo-167.jpg",
+      "image_bytes": 2289343,
+      "image_sha256": "8171a33d34305d82326e245930b7c8d4660798100026cb5c501096c6dbb859aa",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 168,
+      "category": "Neuropathology",
+      "image": "photos/photo-168.jpg",
+      "image_bytes": 1569796,
+      "image_sha256": "6b4edb0fc59fb10ccca7988c5a00a438b2e54a8be7d898a8433caa94256a56f8",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 21
+    },
+    {
+      "page": 169,
+      "category": "Neuropathology",
+      "image": "photos/photo-169.jpg",
+      "image_bytes": 2295021,
+      "image_sha256": "ccd6c8a32d1511d54e95f1cf84fa4d68690e249bfdf5c4a838fc1d22348d70e4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 22
+    },
+    {
+      "page": 170,
+      "category": "Neuropathology",
+      "image": "photos/photo-170.jpg",
+      "image_bytes": 2442674,
+      "image_sha256": "3870d0d911712dce61f4311a3c0a1bed3f37bb7eba380f06acd868750ece3b73",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 22
+    },
+    {
+      "page": 171,
+      "category": "Neuropathology",
+      "image": "photos/photo-171.jpg",
+      "image_bytes": 2436432,
+      "image_sha256": "f8bbacb2fe82795e918316ee7a7914ef615940e7b9f7b7f12cbc5216e9d13002",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 22
+    },
+    {
+      "page": 172,
+      "category": "Neuropathology",
+      "image": "photos/photo-172.jpg",
+      "image_bytes": 2376145,
+      "image_sha256": "98fe697ffdc82a20eb7ade3d39b7667e0fded670326a5f66c6a3461bde9238c4",
+      "width_px": 3984,
+      "height_px": 2656,
+      "pdf_part": 22
+    },
+    {
+      "page": 173,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-173.jpg",
+      "image_bytes": 455366,
+      "image_sha256": "09418a106c6d4231d8810d1849075406f6ea7e505a1452ebe75e1f413a303cc8",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 22
+    },
+    {
+      "page": 174,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-174.jpg",
+      "image_bytes": 481514,
+      "image_sha256": "d5bf8938abc08429071e93ae2dd312bf13712d8996697bb1a70dea9bc1f580ad",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 22
+    },
+    {
+      "page": 175,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-175.jpg",
+      "image_bytes": 716847,
+      "image_sha256": "5a0b258431e6bdd19c1e943ed2a7c6023d39a899d97cb9031622ee9527659659",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 22
+    },
+    {
+      "page": 176,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-176.jpg",
+      "image_bytes": 667317,
+      "image_sha256": "582d85a6783799acaf3e0ba24de5b20a55ef0ac01499e194e4f438e7c977c411",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 22
+    },
+    {
+      "page": 177,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-177.jpg",
+      "image_bytes": 746406,
+      "image_sha256": "ddc7357506495d6420fc601773e28bed8004349608ab490cc868734f971fa4f6",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 22
+    },
+    {
+      "page": 178,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-178.jpg",
+      "image_bytes": 734718,
+      "image_sha256": "d13735991949471b553655bb54662f06e7977e334a3f1a8ba818921914e38f73",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 22
+    },
+    {
+      "page": 179,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-179.jpg",
+      "image_bytes": 946293,
+      "image_sha256": "6890618b4d7052a7e52b4458adb605e6244c177620cf6cc5b34f364d825623d6",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 22
+    },
+    {
+      "page": 180,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-180.jpg",
+      "image_bytes": 922078,
+      "image_sha256": "bb89e6c8bc3a3fec2451e842384f99e73807cdc163266185c5ef39fc91f96299",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 22
+    },
+    {
+      "page": 181,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-181.jpg",
+      "image_bytes": 934126,
+      "image_sha256": "8ba41b59e73bf35bb0c2c6fd9faa090db406d639f3e00665053344f4272d41cc",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 22
+    },
+    {
+      "page": 182,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-182.jpg",
+      "image_bytes": 895932,
+      "image_sha256": "55f656ecec6d3422ea28a26cd1c2f6821cfc63cb5951ca8df0a3034c9cab67f2",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 22
+    },
+    {
+      "page": 183,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-183.jpg",
+      "image_bytes": 851653,
+      "image_sha256": "6d6e5fef8cd3eebd1cf03f789c73ee2d3da4a7d9229045f3ef992ea49d840f32",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 22
+    },
+    {
+      "page": 184,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-184.jpg",
+      "image_bytes": 809573,
+      "image_sha256": "ab07ef30f0998f0884850965d72808671f4e6a97a3e33f578f30710beacb84cd",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 22
+    },
+    {
+      "page": 185,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-185.jpg",
+      "image_bytes": 855734,
+      "image_sha256": "0e98cdd1af9ff1a270bcbfafb67b0a6adce5a4f0841fe1e16fe03067fb83612b",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 22
+    },
+    {
+      "page": 186,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-186.jpg",
+      "image_bytes": 902513,
+      "image_sha256": "1d248ab5969f97b7dbfd7749fafc393c82dad6053927f3dd2b3e18d70082cf38",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 22
+    },
+    {
+      "page": 187,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-187.jpg",
+      "image_bytes": 912493,
+      "image_sha256": "088183af8e08ed460cf25512bbc55c8ec2fa856e6e203d00dbf948488636c8ef",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 23
+    },
+    {
+      "page": 188,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-188.jpg",
+      "image_bytes": 893313,
+      "image_sha256": "6d7d589847714d10ad4554e577c948d73d56a7dce991aa67f2c0c1d96661aa98",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 189,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-189.jpg",
+      "image_bytes": 883857,
+      "image_sha256": "c92b7f33d6e28dad1aa0dfc7ec487e6a89fc054008914697e4badad2a820e0f5",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 190,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-190.jpg",
+      "image_bytes": 863204,
+      "image_sha256": "f040e40096febb6145471a07c67f03ab562183734d2e2da0e252f6289c6e5c4b",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 191,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-191.jpg",
+      "image_bytes": 1197960,
+      "image_sha256": "0900263257609d099902856447b46a9ef33392e6926ea357039674c86e8c6fdc",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 192,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-192.jpg",
+      "image_bytes": 1130138,
+      "image_sha256": "6ec9f7fe07ad1e5d6621df7dde6a375571c80f947acaa6b2c6809fc7d5bab978",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 193,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-193.jpg",
+      "image_bytes": 1104064,
+      "image_sha256": "dbae22afa3347856e84ffa84d6d443ef5c1465a141d7f42e6c9e42c45ad372ef",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 23
+    },
+    {
+      "page": 194,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-194.jpg",
+      "image_bytes": 1287485,
+      "image_sha256": "d7219ecc2877629317a900ccd43b1b78e65449289feb32d29693847c60df0cbc",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 195,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-195.jpg",
+      "image_bytes": 1191969,
+      "image_sha256": "db506caebbcd57e346006785b8773833046e27b4afe462d0e904ec39cf758b6b",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 23
+    },
+    {
+      "page": 196,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-196.jpg",
+      "image_bytes": 1190929,
+      "image_sha256": "fbe19c9876d20068e451d9acfe8d9bb58648509bb5e0c4bc041822685cdabbf6",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 197,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-197.jpg",
+      "image_bytes": 1174320,
+      "image_sha256": "d7321917c0d734bcd5bc4badcf6fd3d47722b56934f3d0da7fa0d20e03751355",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 23
+    },
+    {
+      "page": 198,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-198.jpg",
+      "image_bytes": 1215762,
+      "image_sha256": "efa9281767269f4da595d28134588636ff2049fe0f4a5c73f8c7dce578ebecd5",
+      "width_px": 2000,
+      "height_px": 2992,
+      "pdf_part": 23
+    },
+    {
+      "page": 199,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-199.jpg",
+      "image_bytes": 1179276,
+      "image_sha256": "90b1105de6abc6962181d5c4cf20db0ecbcb49104db3dd12e6e3c8d507709125",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 200,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-200.jpg",
+      "image_bytes": 1139289,
+      "image_sha256": "57f48245bd4d2412d1560c24d4d62624a4dd420974c9ad6fb1fdfcd4a0177852",
+      "width_px": 2992,
+      "height_px": 2000,
+      "pdf_part": 23
+    },
+    {
+      "page": 201,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-201.jpg",
+      "image_bytes": 239331,
+      "image_sha256": "84dbddbc5b5fdb13dad18377f7375da94aef48720a481ae19ab31b25e8e042ae",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 202,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-202.jpg",
+      "image_bytes": 255253,
+      "image_sha256": "a23d889c592dc3f298195c2b03e3e81859cd7d148fad24f35846b2fb809fd936",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 203,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-203.jpg",
+      "image_bytes": 130896,
+      "image_sha256": "238183e17e1e543e552b3b82eaf5d08f0fddda316fefdc63a522aac7dd3b65ef",
+      "width_px": 1308,
+      "height_px": 1578,
+      "pdf_part": 23
+    },
+    {
+      "page": 204,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-204.jpg",
+      "image_bytes": 482806,
+      "image_sha256": "cbbd5af84914c2c67f4ef4162d1f185810ccbcb416ed2ed523f26ecbfbed2dce",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 205,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-205.jpg",
+      "image_bytes": 426443,
+      "image_sha256": "f825b8e674dbb28ea4a5a5f3b39186a062342dc56f77af3d6046ca77ba514d94",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 206,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-206.jpg",
+      "image_bytes": 461724,
+      "image_sha256": "120b2687f384453cf6ad812bddc93ec08999d24ec57b1b565650356a58e5a05a",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 207,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-207.jpg",
+      "image_bytes": 298063,
+      "image_sha256": "22c2e095935e3453743682eecf1b2a5e6c69b74ba4ae3f3bb34ef3642bc7ee73",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 208,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-208.jpg",
+      "image_bytes": 324556,
+      "image_sha256": "f1e2ad6df9e85ce83d84511967a2d5a4ba9ef18d4c6fc216c6bc970f84fa35c7",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 209,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-209.jpg",
+      "image_bytes": 306693,
+      "image_sha256": "17806a3c45f86213dbff2a1d45c448c347d013ecd0c7789fc4c7c3c2db8da474",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 210,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-210.jpg",
+      "image_bytes": 497449,
+      "image_sha256": "34fe93a71cee3be8ef90bc354278dd1fad6f3ad740300136dff402a2c3d4c16c",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 211,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-211.jpg",
+      "image_bytes": 498124,
+      "image_sha256": "8a2d51356ecf66a764bc3da68da64720732a292dba89a26befedaf0c56012c4c",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 212,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-212.jpg",
+      "image_bytes": 378839,
+      "image_sha256": "6b0e0be71645231583239fa6232c69235fc635b3aa93e815a74f86a13edd4f05",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 213,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-213.jpg",
+      "image_bytes": 463041,
+      "image_sha256": "d2fdd94ba00b3ea5213fef6edc585322bc23d7d23e100e7044f637b5f1cb5fdf",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 214,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-214.jpg",
+      "image_bytes": 499480,
+      "image_sha256": "370d1ce329e117de6a8fb655bec046115668f280d2ace2f76e469f79163fbc66",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 23
+    },
+    {
+      "page": 215,
+      "category": "Forensic anthropology",
+      "image": "photos/photo-215.jpg",
+      "image_bytes": 456161,
+      "image_sha256": "96014401ec14791d9ddf5623db7be01010c2abc3895c3e8de7735759c3f2eb0b",
+      "width_px": 2040,
+      "height_px": 1536,
+      "pdf_part": 24
+    }
+  ],
+  "pdf_parts": [
+    {
+      "part": 1,
+      "from_page": 1,
+      "to_page": 7,
+      "file": "pdf-parts/autopsy-photos-part-pages-001-007.pdf",
+      "bytes": 19440243,
+      "sha256": "83b6c8daeeb7c761f7cf13df399bc7042ba8cbf2c9dba80a80465f790c82637e",
+      "original_package_sha256": "83b6c8daeeb7c761f7cf13df399bc7042ba8cbf2c9dba80a80465f790c82637e"
+    },
+    {
+      "part": 2,
+      "from_page": 8,
+      "to_page": 14,
+      "file": "pdf-parts/autopsy-photos-part-pages-008-014.pdf",
+      "bytes": 20395502,
+      "sha256": "f723f1aebf9f2da1b293f4b460187041077ce291d5b1729e47d2979798eeac2d",
+      "original_package_sha256": "3b3192b9547aee1e01329f8dca3151cd63b3dde2e97c72734f42c4a5c28e415d"
+    },
+    {
+      "part": 3,
+      "from_page": 15,
+      "to_page": 21,
+      "file": "pdf-parts/autopsy-photos-part-pages-015-021.pdf",
+      "bytes": 20553140,
+      "sha256": "626f61f65310ccc551b842e5db565f019c6dc5b126dce26f65350a4a042a7e0e",
+      "original_package_sha256": "de1344bd961b4f75128a8a439273bbe43b7b147f429208f9e61ba62c9a7cc5f6"
+    },
+    {
+      "part": 4,
+      "from_page": 22,
+      "to_page": 32,
+      "file": "pdf-parts/autopsy-photos-part-pages-022-032.pdf",
+      "bytes": 20495673,
+      "sha256": "e2cd479a261dc0510cdd8ad3fcc26020acb633eff321530150d7b39e6c84d0db",
+      "original_package_sha256": "2bcc3ced19791f0c428dfe155cf051a1082709a78eb2d46c43148ae6a3f55710"
+    },
+    {
+      "part": 5,
+      "from_page": 33,
+      "to_page": 41,
+      "file": "pdf-parts/autopsy-photos-part-pages-033-041.pdf",
+      "bytes": 20226502,
+      "sha256": "f964cddc95643273efbd23b2614160d77aaebf21a1619874bfdc98b2f98fc158",
+      "original_package_sha256": "d9837a4139b04994735e32689be7b983997dcf719e0c717f3f5a8b7667307b4b"
+    },
+    {
+      "part": 6,
+      "from_page": 42,
+      "to_page": 51,
+      "file": "pdf-parts/autopsy-photos-part-pages-042-051.pdf",
+      "bytes": 20634670,
+      "sha256": "a05fda5041abdfc1892287c56dbe383ccddea77af9aedad14e21f3d952809f01",
+      "original_package_sha256": "c8bda58acf514474124dbf1997c41809333f5d2cfe6a72b530e055766c162b65"
+    },
+    {
+      "part": 7,
+      "from_page": 52,
+      "to_page": 59,
+      "file": "pdf-parts/autopsy-photos-part-pages-052-059.pdf",
+      "bytes": 19076827,
+      "sha256": "ed754206758c5760bb6a8e712fe4c4ec8f1362fa700b1720d545948ddbe39358",
+      "original_package_sha256": "a792543b836300aafe3221f5d0096fffdb2fb90b19a8c8ebbae6d1cf7e4af75f"
+    },
+    {
+      "part": 8,
+      "from_page": 60,
+      "to_page": 67,
+      "file": "pdf-parts/autopsy-photos-part-pages-060-067.pdf",
+      "bytes": 18642768,
+      "sha256": "98601b8909175511739042aa7321b6edd7a302a58588101580258082237326bc",
+      "original_package_sha256": "bb77ea8a4cf471fe96dc91357ed46f113630b216adf41ceef48e9dd4419c878d"
+    },
+    {
+      "part": 9,
+      "from_page": 68,
+      "to_page": 75,
+      "file": "pdf-parts/autopsy-photos-part-pages-068-075.pdf",
+      "bytes": 20835843,
+      "sha256": "3787bb2e28f08af3c91f558197d407ece9adae3c97fc3dd902e9d88a05618126",
+      "original_package_sha256": "c9cf0fc32026bd018ad5b398d30e386da153fbd28220e68da74a01181e2ff49b"
+    },
+    {
+      "part": 10,
+      "from_page": 76,
+      "to_page": 82,
+      "file": "pdf-parts/autopsy-photos-part-pages-076-082.pdf",
+      "bytes": 20119225,
+      "sha256": "850d6d066b84aab85a38905344281c98b2e72dec670b8e312347a28c454e20cc",
+      "original_package_sha256": "e33abe6ff3b0f0a6154ae79380ee85e93e00b12d4b896b7f2c2b06844a0a28ae"
+    },
+    {
+      "part": 11,
+      "from_page": 83,
+      "to_page": 89,
+      "file": "pdf-parts/autopsy-photos-part-pages-083-089.pdf",
+      "bytes": 20828348,
+      "sha256": "07834176581dd20af1a2752508e3a69ca5a60f36e6edeceddc445af884fee809",
+      "original_package_sha256": "c1d4faf52ddd4d5e490f84c4e3715c1f0367afc5fc882df022b50111b921ba0f"
+    },
+    {
+      "part": 12,
+      "from_page": 90,
+      "to_page": 96,
+      "file": "pdf-parts/autopsy-photos-part-pages-090-096.pdf",
+      "bytes": 20533424,
+      "sha256": "d245da71cb31496daed2c76818a570c4a095018efaf1cacc90e5cc1628514188",
+      "original_package_sha256": "3dc46b3c425e049b5c3c098398b86bb562f988f3b2b26421cef0cd318cd45ede"
+    },
+    {
+      "part": 13,
+      "from_page": 97,
+      "to_page": 103,
+      "file": "pdf-parts/autopsy-photos-part-pages-097-103.pdf",
+      "bytes": 19425594,
+      "sha256": "33adb57af6e8c62b34ed210ca9d8fff2673d4f811b38da422483415e12da5cb2",
+      "original_package_sha256": "00e1cd098cdcba8b8759bead9bbe2946fa5d11cde3377de2d0075e58adc9a5fa"
+    },
+    {
+      "part": 14,
+      "from_page": 104,
+      "to_page": 109,
+      "file": "pdf-parts/autopsy-photos-part-pages-104-109.pdf",
+      "bytes": 19450930,
+      "sha256": "49497018ca39c757b72c8d0e83c748437375b32aad7efb02939925105a956a27",
+      "original_package_sha256": "50ff173abee1e47f28903efdef39ad3ea98baf2c84408bcb334ae38abb156fe6"
+    },
+    {
+      "part": 15,
+      "from_page": 110,
+      "to_page": 115,
+      "file": "pdf-parts/autopsy-photos-part-pages-110-115.pdf",
+      "bytes": 19473279,
+      "sha256": "3dc4133574f43bc81c450cb8b8aea2068901bc4bb6a2a3ba8238662962a53967",
+      "original_package_sha256": "7b40e0be8761ed3d2299d640755dfc351faa7bad9a50ead7a69065b87bb80c3e"
+    },
+    {
+      "part": 16,
+      "from_page": 116,
+      "to_page": 124,
+      "file": "pdf-parts/autopsy-photos-part-pages-116-124.pdf",
+      "bytes": 19500939,
+      "sha256": "c5a9e47050ce50ed141446d46c3740e61baf41e1002980261e1afc7d4c199b92",
+      "original_package_sha256": "973b3049d3394cef72d5b7b718277e73121ef4fd026c2b7af80a760627881228"
+    },
+    {
+      "part": 17,
+      "from_page": 125,
+      "to_page": 132,
+      "file": "pdf-parts/autopsy-photos-part-pages-125-132.pdf",
+      "bytes": 18875876,
+      "sha256": "fd3ec1c156b8de9aaa377a2e54b6d47d02bd54899cf40f404c51f421e8f83811",
+      "original_package_sha256": "3258ffee359a01562992b16b6e33de0929aa52c935a90751238a152e34b181e5"
+    },
+    {
+      "part": 18,
+      "from_page": 133,
+      "to_page": 141,
+      "file": "pdf-parts/autopsy-photos-part-pages-133-141.pdf",
+      "bytes": 19773928,
+      "sha256": "6c5d15a83fa009d70054046bb2e59d78bb7252855fd80379e95850e7a81fd967",
+      "original_package_sha256": "a6958cf81388b33c57591a755c6e0ded5dec54d9607a20b50a8d3df82dea6a5c"
+    },
+    {
+      "part": 19,
+      "from_page": 142,
+      "to_page": 150,
+      "file": "pdf-parts/autopsy-photos-part-pages-142-150.pdf",
+      "bytes": 19421415,
+      "sha256": "c92cc10f6d2922cd824ac7466ee140893e974c06f119167b34ee45e185da8c15",
+      "original_package_sha256": "f1ca8ca5f3c4ade41fd7fe41f686babc28e7a127cef6ac077422dc0ab48ce28d"
+    },
+    {
+      "part": 20,
+      "from_page": 151,
+      "to_page": 159,
+      "file": "pdf-parts/autopsy-photos-part-pages-151-159.pdf",
+      "bytes": 19629908,
+      "sha256": "66869fe25f9d3f66179bef011f314fbc2753f2e147bbf213752b4ceddf1610ca",
+      "original_package_sha256": "fe0d857e126621568330eb115e4190450eff6dbc60f4ff4aacd22aaf10ea10ae"
+    },
+    {
+      "part": 21,
+      "from_page": 160,
+      "to_page": 168,
+      "file": "pdf-parts/autopsy-photos-part-pages-160-168.pdf",
+      "bytes": 18965358,
+      "sha256": "3e3e30f6fb36137a8af836adf1fddeb97e0573407cb8113f172c6566bce5b515",
+      "original_package_sha256": "cc7d2550f0cea26b31bd372358b053d2b4c1e6c5a0a6add140474d62b2a8e703"
+    },
+    {
+      "part": 22,
+      "from_page": 169,
+      "to_page": 186,
+      "file": "pdf-parts/autopsy-photos-part-pages-169-186.pdf",
+      "bytes": 20725863,
+      "sha256": "99077a7d87a88dd9f40991de60a07916c7c6ece6cdbe74e5c0b35b5af8af4169",
+      "original_package_sha256": "40da8a5db912a2f564490942ee5264fc710e975a3b05fdd9ed3e61961862fac5"
+    },
+    {
+      "part": 23,
+      "from_page": 187,
+      "to_page": 214,
+      "file": "pdf-parts/autopsy-photos-part-pages-187-214.pdf",
+      "bytes": 21024087,
+      "sha256": "323a645aff11a993fa4742aa2f44f764c56ee1ecb1b38dbda7a580fe267f131c",
+      "original_package_sha256": "5d7264b117ae2774105a46940b5984f94bdb579dc304cc0f20cf3cae674ef651"
+    },
+    {
+      "part": 24,
+      "from_page": 215,
+      "to_page": 215,
+      "file": "pdf-parts/autopsy-photos-part-pages-215-215.pdf",
+      "bytes": 470935,
+      "sha256": "e49b9c20a91a41106060ed3c7237d4f7ed9de79399195881718f37c53e4888cb",
+      "original_package_sha256": "5812ea264d76a9aad03c6646bdf4d37f8f752887fa725640b6f20fc8a57be6fa"
+    }
+  ]
+}
