@@ -1,0 +1,91 @@
+{
+  "name": "gah-agent-auth-018",
+  "main": "src/public-agent.mjs",
+  "account_id": "ce395670a4678183a4daf6f2dbf73e9f",
+  "compatibility_date": "2026-07-30",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": {
+    "enabled": false
+  },
+  "limits": {
+    "cpu_ms": 100
+  },
+  "kv_namespaces": [
+    {
+      "binding": "OAUTH_KV",
+      "id": "d9e8e2c5a6b5434ca8a9110b35bf4c3e"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "AGENT_REGISTRY",
+        "class_name": "AgentRegistry"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "AgentRegistry"
+      ]
+    }
+  ],
+  "vars": {
+    "AGENT_ISSUER": "https://grokarchivehub.com",
+    "AGENT_PILOT_ENABLED": "true",
+    "AGENT_APPROVED_REDIRECT_URI": "http://127.0.0.1:8765/callback"
+  },
+  "secrets": {
+    "required": [
+      "AGENT_ASSERTION_JWK",
+      "AGENT_RATE_SECRET",
+      "AGENT_CONSENT_BINDING_SECRET",
+      "AGENT_PROVISION_TOKEN"
+    ]
+  },
+  "routes": [
+    {
+      "pattern": "grokarchivehub.com/auth.md*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/.well-known/oauth-authorization-server*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/.well-known/oauth-protected-resource*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/.well-known/jwks.json*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/agent/identity*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/authorize*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/oauth2/token*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/oauth2/revoke*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/operator/agent-clients*",
+      "zone_name": "grokarchivehub.com"
+    },
+    {
+      "pattern": "grokarchivehub.com/api/agent/v1/status*",
+      "zone_name": "grokarchivehub.com"
+    }
+  ]
+}
