@@ -27,5 +27,17 @@ for(const [p,row] of Object.entries(nav)){
  for(const s of row.stories){assert.ok(allowed.has(s.id));assert.ok(atlas.includes('id="story-'+s.id.toLowerCase()+'"'),s.id+' anchor');assert.ok(b.includes('href="'+base+'/atlas/#story-'+s.id.toLowerCase()+'"'),p+' story link');for(const id of s.shared){assert.ok(row.evidence.includes(id));assert.ok(!excluded.has(id));assert.ok(data.stories.find(x=>x.id===s.id).anchors.some(a=>a.includes(id)));}}
  if(!row.stories.length)assert.match(b,/No specific published Atlas story is mapped/);
 }
+let dossiersWithStories=0;
+for(const [id,investigations] of Object.entries(back)){
+ const expected=new Set(investigations.flatMap(({path})=>nav[path].stories)
+  .filter(story=>story.shared.includes(id)).map(story=>story.id.toLowerCase()));
+ const {body}=await page('/archive/'+id);
+ const block=body.match(/<div id="gah-dossier-atlas-links">([\s\S]*?)<\/div>/);
+ const actual=[...(block?.[1]||'').matchAll(/href="[^"]*\/atlas\/#story-([^"]+)"/g)].map(match=>match[1]);
+ assert.deepEqual(actual.sort(),[...expected].sort(),id+' exact Atlas references');
+ if(expected.size)dossiersWithStories++;
+}
+assert.ok(dossiersWithStories>0);
+console.log('PASS direct Atlas references on '+dossiersWithStories+' dossiers');
 for(const p of ['/archive/ids','/guides/doj-epstein-data-sets','/atlas/'])await page(p);
 console.log('PASS all '+paths.length+' published investigations, related reading, safe reciprocal EFTA links and exact published Atlas anchors');
