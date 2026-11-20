@@ -15,22 +15,45 @@ for(const e of registry.entries)files.set('/app/identifier-receipts/'+e.id+'.htm
 globalThis.__wikiFixture=path=>{assert.ok(files.has(path),path);return files.get(path)};
 s=s.replace("'./content/research-route-policy.mjs'",JSON.stringify(new URL('../content/research-route-policy.mjs',import.meta.url).href));
 for(const route of RESEARCH_ROUTES)files.set('/app/'+route.file,await fs.readFile(new URL(route.file,base),'utf8'));
+for(const slug of ['maxwell-prosecution','epstein-victim-services-doj-coordination','epstein-victim-notification-vns-sdny-outreach','sdny-epstein-maxwell-court-filings'])files.set('/app/topic-pages/'+slug+'.html',await fs.readFile(new URL('topic-pages/'+slug+'.html',base),'utf8'));
 s=s.replace("'./reader-quality.mjs'",JSON.stringify(new URL('../reader-quality.mjs',import.meta.url).href));
 const {identifierHostPolicy}=await import('data:text/javascript;base64,'+Buffer.from(s).toString('base64'));
 function request(path,method='GET',headers={}){const res={status:0,headers:{},body:'',writeHead(s,h){this.status=s;this.headers=h},end(b){this.body=b||''}};const handled=identifierHostPolicy({method,url:path,headers:{host:'wiki.grokarchivehub.com',...headers}},res);return{handled,...res};}
-for(const path of ['/','/archive','/research-index']){const r=request(path);assert.equal(r.status,200);assert.equal(r.headers['X-Robots-Tag'],'noindex,follow');assert.ok(r.body.includes('href="https://wiki.grokarchivehub.com'+(path==='/'?'/':path)+'"'));}
+for(const path of ['/','/archive','/research-index']){const r=request(path);assert.equal(r.status,200);assert.equal(r.headers['X-Robots-Tag'],'index,follow');assert.ok(r.body.includes('href="https://wiki.grokarchivehub.com'+(path==='/'?'/':path)+'"'));}
 for(const path of ['/archive/efta13764','/archive/EFTA00013764','/archive/efta00013764.html']){const r=request(path);assert.equal(r.status,301);assert.equal(r.headers.Location,'https://grokarchivehub.com/archive/EFTA00013764');}
 assert.equal(request('/wiki').headers.Location,'https://wiki.grokarchivehub.com/');assert.equal(request('/methodology').headers.Location,'https://grokarchivehub.com/methodology');
-for(const e of registry.entries){const r=request('/receipts/'+e.id);assert.equal(r.status,200);assert.ok(r.body.includes('https://grokarchivehub.com/archive/'+e.id));assert.equal(r.headers['X-Robots-Tag'],'noindex,follow');}
+for(const e of registry.entries){const r=request('/receipts/'+e.id);assert.equal(r.status,200);assert.ok(r.body.includes('https://grokarchivehub.com/archive/'+e.id));assert.equal(r.headers['X-Robots-Tag'],'index,follow');}
 assert.ok(request('/archive').body.includes('property="og:url" content="https://wiki.grokarchivehub.com/archive"'));
-const xml=request('/sitemap.xml').body;assert.equal((xml.match(/<loc>/g)||[]).length,RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable&&!publicationRule('https://wiki.grokarchivehub.com'+r.path)?.noindex).length);assert.doesNotMatch(xml,/<loc>https:\/\/grokarchivehub.com/);assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki.grokarchivehub.com\/sitemap.xml/);
+const xml=request('/sitemap.xml').body;
+const homeUrls=['/','/archive','/research-index'];
+const eligibleResearch=RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable&&!publicationRule('https://wiki.grokarchivehub.com'+r.path)?.noindex).map(r=>r.path);
+const eligibleReceipts=registry.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id).filter(p=>{const url='https://wiki.grokarchivehub.com'+p,rule=publicationRule(url);return !rule?.noindex&&(!rule?.canonical||rule.canonical===url)});
+const eligibleTopics=['/topics/maxwell-prosecution','/topics/epstein-victim-services-doj-coordination','/topics/epstein-victim-notification-vns-sdny-outreach','/topics/sdny-epstein-maxwell-court-filings'];
+const expected=new Set([...homeUrls,...eligibleResearch,...eligibleReceipts,...eligibleTopics].map(p=>'https://wiki.grokarchivehub.com'+p));
+assert.equal(eligibleResearch.length,66,'64 newly opened research routes plus two existing');
+assert.equal(eligibleReceipts.length,14,'standalone source receipts, no duplicate canonical homes');
+assert.equal(expected.size,87);
+const actual=new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]));
+assert.deepEqual(actual,expected,'Only self-canonical, published wiki routes enter XML discovery');assert.doesNotMatch(xml,/<loc>https:\/\/grokarchivehub.com/);assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki.grokarchivehub.com\/sitemap.xml/);
 assert.equal(request('/receipts/EFTA09999999').status,404);assert.equal(request('/','HEAD').body,'');assert.equal(request('/','POST').handled,false);assert.equal(request('/','GET',{'x-gah-internal-wiki-proxy':'apex-proof-layer'}).handled,false);
 console.log('PASS wiki home/archive/research canonicals, '+registry.entries.length+' reciprocal receipt cards, own sitemap, aliases, HEAD and internal proxy isolation');
 
-const black=request('/research/evidence/black-book-epstein');assert.equal(black.status,200);assert.equal(black.headers['X-Robots-Tag'],'noindex,follow');assert.match(black.body,/<meta name="robots" content="noindex,follow">/);assert.doesNotMatch(black.body,/href="[^"]*\/archive\/EFTA|ASCEND|Meili status|Audit Metadata/);assert.equal((black.body.match(/Official DOJ PDF/g)||[]).length,80);
+const black=request('/research/evidence/black-book-epstein');assert.equal(black.status,200);assert.equal(black.headers['X-Robots-Tag'],'index,follow');assert.match(black.body,/<meta name="robots" content="index,follow">/);assert.doesNotMatch(black.body,/href="[^"]*\/archive\/EFTA|ASCEND|Meili status|Audit Metadata/);assert.equal((black.body.match(/Official DOJ PDF/g)||[]).length,80);
 for(const path of ['/','/archive','/research-index']) {const b=request(path).body;assert.match(b,/application\/ld\+json/);assert.match(b,/property="og:image"/);assert.doesNotMatch(b,/href="\/grok-command-v4"/);}
-console.log('PASS black-book source gaps, consistent noindex, wiki hub schemas and share images');
+console.log('PASS black-book research discovery, preserved source gaps, wiki hub schemas and share images');
 
+for(const p of ['/research/evidence/alias-passenger-epstein','/research/evidence/missing-names-phonebook-epstein','/research/evidence/phonebook-alias-epstein','/research/evidence/redacted-names-epstein','/research/evidence/unredacted-flight-log-epstein']) {
+ assert.equal(request(p).headers['X-Robots-Tag'],'noindex,follow',p+' reidentification-sensitive route');
+ assert(!actual.has('https://wiki.grokarchivehub.com'+p),'protected route omitted from sitemap');
+}
+for(const p of eligibleTopics) {
+ const r=request(p);assert.equal(r.status,200);assert.equal(r.headers['X-Robots-Tag'],'index,follow',p);
+ assert.match(r.body,/<meta name="robots" content="index,follow">/,p);
+}
+const directory=request('/research-index').body;
+assert(directory.includes('Public research topics and source guides (66)'), 'Full wiki research directory');
+assert(directory.includes('Standalone verified receipt records (14)'),'Standalone receipt discovery');
+for(const p of eligibleResearch)assert(directory.includes('https://wiki.grokarchivehub.com'+p),p+' linked from wiki directory');
 for(const route of RESEARCH_ROUTES){
  const r=request(route.path+'?source=nav');
  if(route.owner==='main'){assert.equal(r.status,301,route.path);assert.equal(r.headers.Location,'https://grokarchivehub.com'+route.path+'?source=nav');continue;}

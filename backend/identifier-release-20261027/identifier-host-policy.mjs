@@ -26,7 +26,7 @@ export function identifierHostPolicy(req,res){
  if(path==='/barak'||path==='/dispatches/barak-archive')return redirect(req,res,MAIN+'/barak');
  if(path==='/receipts')return redirect(req,res,ORIGIN+'/archive');
  const topicTools=["/topics/maxwell-prosecution", "/topics/epstein-victim-services-doj-coordination", "/topics/epstein-victim-notification-vns-sdny-outreach", "/topics/sdny-epstein-maxwell-court-filings"];
- if(topicTools.includes(path))return send(req,res,200,fs.readFileSync('/app/topic-pages/'+path.split('/').pop()+'.html','utf8'));
+ if(topicTools.includes(path))return send(req,res,200,fs.readFileSync('/app/topic-pages/'+path.split('/').pop()+'.html','utf8'),'text/html; charset=utf-8','index,follow');
  const research=RESEARCH_ROUTES.find(r=>r.path===path);
  if(research){
   if(research.owner==='main')return redirect(req,res,MAIN+research.path+url.search);
@@ -37,7 +37,7 @@ export function identifierHostPolicy(req,res){
  }
  if(path==='/robots.txt')return send(req,res,200,'User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /pdf-viewer\nDisallow: /pdf-viewer.html\nSitemap: '+ORIGIN+'/sitemap.xml\n','text/plain; charset=utf-8','index,follow');
  if(['/sitemap.xml','/sitemap-index.xml','/sitemap-global.xml','/sitemap-archive-1.xml'].includes(path)){
-  const paths=['/','/archive','/research-index',...manifest.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id),...RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable).map(r=>r.path)].filter(p=>!publicationRule(ORIGIN+p)?.noindex);
+  const paths=['/','/archive','/research-index',...manifest.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id),...RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable).map(r=>r.path),...topicTools].filter(p=>{const rule=publicationRule(ORIGIN+p);return !rule?.noindex&&(!rule?.canonical||rule.canonical===ORIGIN+p);});
   const xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+paths.map(p=>'<url><loc>'+ORIGIN+p+'</loc><lastmod>'+manifest.updated+'</lastmod></url>').join('\n')+'\n</urlset>\n';
   return send(req,res,200,xml,'application/xml; charset=utf-8','index,follow');
  }
@@ -46,12 +46,15 @@ export function identifierHostPolicy(req,res){
   if(path==='/archive')html=html.replace(/<h1>[^<]+<\/h1>/,'<h1>Receipt-card archive</h1>').replace('<link rel="canonical" href="'+ORIGIN+'/">','<link rel="canonical" href="'+ORIGIN+'/archive">').replace('content="'+ORIGIN+'/"','content="'+ORIGIN+'/archive"').replace('<title>Receipt cards and research index','<title>Receipt-card archive').replace('content="Receipt cards and research index"','content="Receipt-card archive"');
   return send(req,res,200,html,'text/html; charset=utf-8','index,follow');
  }
- if(path==='/research/evidence/black-book-epstein')return send(req,res,200,fs.readFileSync('/app/black-book-source-guide.html','utf8'));
+ if(path==='/research/evidence/black-book-epstein')return send(req,res,200,fs.readFileSync('/app/black-book-source-guide.html','utf8'),'text/html; charset=utf-8','index,follow');
  if(path==='/research-index'){
   let html=fs.readFileSync('/app/research-index.html','utf8');
   html=html.replace(/<link\b(?=[^>]*rel=["']canonical["'])[^>]*>/ig,'<link rel="canonical" href="'+ORIGIN+'/research-index">').replace(/<meta\b(?=[^>]*name=["']robots["'])[^>]*>/ig,'<meta name="robots" content="index,follow">');
   html=html.replace(/<meta\b(?=[^>]*property=["']og:url["'])[^>]*>/ig,'<meta property="og:url" content="'+ORIGIN+'/research-index">');
-  html=html.replace('</main>','<p><a href="'+MAIN+'/archive/ids">Read the published document dossiers</a> · <a href="/archive">Browse receipt cards</a></p></main>');
+    const discoveryRoutes=RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable&&!publicationRule(ORIGIN+r.path)?.noindex).sort((a,b)=>a.title.localeCompare(b.title));
+  const sourceCards=manifest.entries.filter(e=>e.indexable).filter(e=>{const u=ORIGIN+'/receipts/'+e.id;const r=publicationRule(u);return !r?.noindex&&(!r?.canonical||r.canonical===u);}).sort((a,b)=>a.id.localeCompare(b.id));
+  const discovery='<section id="open-research-index"><h2>Public research topics and source guides ('+discoveryRoutes.length+')</h2><p>Each topic is a finding aid, not a claim that all linked documents have been adjudicated. Source files and redactions retain their limits.</p><ul>'+discoveryRoutes.map(r=>'<li><a href="'+ORIGIN+esc(r.path)+'">'+esc(r.title)+'</a></li>').join('')+'</ul><h2>Standalone verified receipt records ('+sourceCards.length+')</h2><p>These receipt cards have their own source-record page. Cards with an existing main-site investigation continue to point to that canonical article.</p><ul>'+sourceCards.map(e=>'<li><a href="'+ORIGIN+'/receipts/'+esc(e.id)+'">'+esc(e.id)+' — '+esc(e.title)+'</a></li>').join('')+'</ul></section>';
+  html=html.replace('</main>','<p><a href="'+MAIN+'/archive/ids">Read the published document dossiers</a> · <a href="/archive">Browse receipt cards</a></p>'+discovery+'</main>');
   return send(req,res,200,html,'text/html; charset=utf-8','index,follow');
  }
  const receipt=path.match(/^\/receipts\/efta(\d{1,8})$/i);

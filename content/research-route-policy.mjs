@@ -20,7 +20,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence-types",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Evidence Types Research guide",
     "file": "research-pages/evidence-types.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -29,7 +29,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/aircraft-tail-number-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "aircraft tail number Epstein",
     "file": "research-pages/evidence/aircraft-tail-number-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -47,7 +47,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/assistant-travel-schedule-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "assistant travel schedule Epstein",
     "file": "research-pages/evidence/assistant-travel-schedule-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -56,7 +56,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/bank-records-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "bank records Epstein",
     "file": "research-pages/evidence/bank-records-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -65,7 +65,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/black-book-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "black book Epstein",
     "file": "research-pages/evidence/black-book-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -74,7 +74,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/calendar-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "calendar Epstein",
     "file": "research-pages/evidence/calendar-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -83,7 +83,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/deposition-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "deposition Epstein",
     "file": "research-pages/evidence/deposition-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -92,7 +92,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/deutsche-bank-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Deutsche Bank Epstein",
     "file": "research-pages/evidence/deutsche-bank-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -101,7 +101,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/doj-victim-services",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "DOJ Victim Services · Source guide",
     "file": "research-pages/evidence/doj-victim-services.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -110,7 +110,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/doj-victim-services-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "DOJ Victim Services Epstein",
     "file": "research-pages/evidence/doj-victim-services-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -119,7 +119,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/driver-transport-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "driver transport Epstein",
     "file": "research-pages/evidence/driver-transport-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -128,7 +128,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/efta",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "EFTA",
     "file": "research-pages/evidence/efta.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -137,7 +137,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/ehud-barak",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Ehud Barak",
     "file": "research-pages/evidence/ehud-barak.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -155,7 +155,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/fbi-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "FBI Epstein",
     "file": "research-pages/evidence/fbi-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -164,7 +164,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/flight-logs-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "flight logs Epstein",
     "file": "research-pages/evidence/flight-logs-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -173,7 +173,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/ghislaine-maxwell",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Ghislaine Maxwell",
     "file": "research-pages/evidence/ghislaine-maxwell.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -182,7 +182,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/grand-jury-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "grand jury Epstein",
     "file": "research-pages/evidence/grand-jury-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -191,7 +191,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/great-saint-james",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Great Saint James",
     "file": "research-pages/evidence/great-saint-james.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -200,7 +200,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/invoice-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "invoice Epstein",
     "file": "research-pages/evidence/invoice-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -209,7 +209,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/jean-luc-brunel",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Jean-Luc Brunel",
     "file": "research-pages/evidence/jean-luc-brunel.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -218,7 +218,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/jeffrey-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Jeffrey Epstein",
     "file": "research-pages/evidence/jeffrey-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -227,7 +227,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/josh-lucas",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Josh Lucas",
     "file": "research-pages/evidence/josh-lucas.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -236,7 +236,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/jpmorgan-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "JPMorgan Epstein",
     "file": "research-pages/evidence/jpmorgan-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -245,7 +245,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/leon-black-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Leon Black Epstein",
     "file": "research-pages/evidence/leon-black-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -254,7 +254,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/lesley-groff",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Lesley Groff",
     "file": "research-pages/evidence/lesley-groff.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -263,7 +263,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/leslie-wexner",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Leslie Wexner",
     "file": "research-pages/evidence/leslie-wexner.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -272,7 +272,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/little-saint-james",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Little Saint James",
     "file": "research-pages/evidence/little-saint-james.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -281,7 +281,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/manhattan-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Manhattan Epstein",
     "file": "research-pages/evidence/manhattan-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -290,7 +290,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/maxwell-prosecution",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Maxwell prosecution",
     "file": "research-pages/evidence/maxwell-prosecution.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -299,7 +299,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/mc2-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "MC2 Epstein",
     "file": "research-pages/evidence/mc2-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -317,7 +317,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/metadata-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "metadata Epstein",
     "file": "research-pages/evidence/metadata-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -335,7 +335,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/nadia-marcinkova",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Nadia Marcinkova",
     "file": "research-pages/evidence/nadia-marcinkova.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -344,7 +344,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/new-albany-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "New Albany Epstein",
     "file": "research-pages/evidence/new-albany-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -353,7 +353,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/non-prosecution-agreement-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "non-prosecution agreement Epstein",
     "file": "research-pages/evidence/non-prosecution-agreement-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -362,7 +362,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/palm-beach-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Palm Beach Epstein",
     "file": "research-pages/evidence/palm-beach-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -371,7 +371,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/paris-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Paris Epstein",
     "file": "research-pages/evidence/paris-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -380,7 +380,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/phone-message-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "phone message Epstein",
     "file": "research-pages/evidence/phone-message-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -398,7 +398,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/property-records-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "property records Epstein",
     "file": "research-pages/evidence/property-records-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -407,7 +407,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/redacted-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "redacted Epstein",
     "file": "research-pages/evidence/redacted-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -425,7 +425,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sarah-kellen",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Sarah Kellen",
     "file": "research-pages/evidence/sarah-kellen.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -434,7 +434,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sdny",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "SDNY · Source guide",
     "file": "research-pages/evidence/sdny.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -443,7 +443,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sdny-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "SDNY Epstein",
     "file": "research-pages/evidence/sdny-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -452,7 +452,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sdny-epstein-maxwell-court-filings",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "SDNY Epstein Maxwell court filings",
     "file": "research-pages/evidence/sdny-epstein-maxwell-court-filings.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -461,7 +461,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sealed-redacted-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "sealed redacted Epstein",
     "file": "research-pages/evidence/sealed-redacted-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -470,7 +470,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sharepoint-coordination",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "SharePoint Coordination · Source guide",
     "file": "research-pages/evidence/sharepoint-coordination.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -479,7 +479,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sharepoint-coordination-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "SharePoint coordination Epstein",
     "file": "research-pages/evidence/sharepoint-coordination-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -488,7 +488,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/sharepoint-epstein-support",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "SharePoint Epstein support",
     "file": "research-pages/evidence/sharepoint-epstein-support.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -497,7 +497,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/shell-company-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "shell company Epstein",
     "file": "research-pages/evidence/shell-company-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -533,7 +533,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/suppression-redaction-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "suppression redaction Epstein",
     "file": "research-pages/evidence/suppression-redaction-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -542,7 +542,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/tel-aviv-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Tel Aviv Epstein",
     "file": "research-pages/evidence/tel-aviv-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -569,7 +569,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/victim-notification",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Victim Notifications · Source guide",
     "file": "research-pages/evidence/victim-notification.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -578,7 +578,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/victim-notification-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "victim notification Epstein",
     "file": "research-pages/evidence/victim-notification-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -587,7 +587,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/victim-services-coordination-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Victim Services coordination Epstein",
     "file": "research-pages/evidence/victim-services-coordination-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -596,7 +596,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/vns-sdny-outreach-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "VNS SDNY outreach Epstein",
     "file": "research-pages/evidence/vns-sdny-outreach-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -605,7 +605,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/vns-victim-notification",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "VNS Outreach · Source guide",
     "file": "research-pages/evidence/vns-victim-notification.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -614,7 +614,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/vns-victim-notification-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "VNS victim notification Epstein",
     "file": "research-pages/evidence/vns-victim-notification-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -623,7 +623,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/wire-transfer-epstein",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "wire transfer Epstein",
     "file": "research-pages/evidence/wire-transfer-epstein.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -632,7 +632,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/evidence/zorro-ranch",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Zorro Ranch",
     "file": "research-pages/evidence/zorro-ranch.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -641,7 +641,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/financial-logistics",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Financial / Logistics Research guide",
     "file": "research-pages/financial-logistics.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -650,7 +650,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/legal-records",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Legal / Court Records Research guide",
     "file": "research-pages/legal-records.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -659,7 +659,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/open-leads",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Open Leads Research guide",
     "file": "research-pages/open-leads.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -668,7 +668,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/organizations",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Organizations Research guide",
     "file": "research-pages/organizations.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -677,7 +677,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/people",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "People Research guide",
     "file": "research-pages/people.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
@@ -686,7 +686,7 @@ export const RESEARCH_ROUTES = [
   {
     "path": "/research/places",
     "owner": "wiki",
-    "indexable": false,
+    "indexable": true,
     "title": "Places Research guide",
     "file": "research-pages/places.html",
     "basis": "Generated source navigation; not a standalone reviewed article",
