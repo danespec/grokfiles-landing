@@ -9,6 +9,8 @@ const files=new Map([['/app/identifier-dossiers.json',await fs.readFile(new URL(
 s=s.replace("import fs from 'node:fs';",'const fs={readFileSync(path){return globalThis.__wikiFixture(path)}};');
 const registry=JSON.parse(await fs.readFile(new URL('content/identifier-dossiers.json',new URL('../',import.meta.url)),'utf8'));
 files.set('/app/black-book-source-guide.html',await fs.readFile(new URL('black-book-source-guide.html',base),'utf8'));
+const EFTA_CATALOG=JSON.parse(await fs.readFile(new URL('../backend/wiki-efta-open-20261120/efta-index-eligible.json',import.meta.url),'utf8'));
+files.set('/app/efta-index-eligible-20261120.json',JSON.stringify(EFTA_CATALOG));
 files.set('/app/wiki-home-identifiers.html',await fs.readFile(new URL('wiki-home.html',base),'utf8'));
 files.set('/app/research-index.html','<html><head><link rel="canonical" href="https://grokarchivehub.com/research-index"><meta name="robots" content="noindex,nofollow"></head><body><main><h1>Research index</h1></main></body></html>');
 for(const e of registry.entries)files.set('/app/identifier-receipts/'+e.id+'.html',await fs.readFile(new URL('receipts/'+e.id+'.html',base),'utf8'));
@@ -21,10 +23,27 @@ const {identifierHostPolicy}=await import('data:text/javascript;base64,'+Buffer.
 function request(path,method='GET',headers={}){const res={status:0,headers:{},body:'',writeHead(s,h){this.status=s;this.headers=h},end(b){this.body=b||''}};const handled=identifierHostPolicy({method,url:path,headers:{host:'wiki.grokarchivehub.com',...headers}},res);return{handled,...res};}
 for(const path of ['/','/archive','/research-index']){const r=request(path);assert.equal(r.status,200);assert.equal(r.headers['X-Robots-Tag'],'index,follow');assert.ok(r.body.includes('href="https://wiki.grokarchivehub.com'+(path==='/'?'/':path)+'"'));}
 for(const path of ['/archive/efta13764','/archive/EFTA00013764','/archive/efta00013764.html']){const r=request(path);assert.equal(r.status,301);assert.equal(r.headers.Location,'https://grokarchivehub.com/archive/EFTA00013764');}
+const approvedEfta=EFTA_CATALOG.ids[0];
+assert.equal(request('/archive/'+approvedEfta).handled,false,'Approved canonical wiki EFTA must reach the real source route');
+assert.equal(request('/archive/'+approvedEfta.toLowerCase()).headers.Location,'https://wiki.grokarchivehub.com/archive/'+approvedEfta,'normalized source alias returns to wiki');
+assert.equal(request('/archive/EFTA00013764').headers.Location,'https://grokarchivehub.com/archive/EFTA00013764','main article still owns its original EFTA');
+assert.equal(request('/archive/EFTA09999999').headers.Location,'https://grokarchivehub.com/archive/EFTA09999999','unreviewed or nonexistent document stays on former route');
 assert.equal(request('/wiki').headers.Location,'https://wiki.grokarchivehub.com/');assert.equal(request('/methodology').headers.Location,'https://grokarchivehub.com/methodology');
 for(const e of registry.entries){const r=request('/receipts/'+e.id);assert.equal(r.status,200);assert.ok(r.body.includes('https://grokarchivehub.com/archive/'+e.id));assert.equal(r.headers['X-Robots-Tag'],'index,follow');}
 assert.ok(request('/archive').body.includes('property="og:url" content="https://wiki.grokarchivehub.com/archive"'));
 const xml=request('/sitemap.xml').body;
+const indexXml=request('/sitemap-index.xml').body;
+assert.match(indexXml,/<sitemapindex/);
+assert.match(indexXml,/https:\/\/wiki\.grokarchivehub\.com\/sitemap\.xml/);
+assert.match(indexXml,/https:\/\/wiki\.grokarchivehub\.com\/sitemap-efta-1\.xml/);
+const eftaXml=request('/sitemap-efta-1.xml').body;
+const actualEftaUrls=[...eftaXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+assert.equal(actualEftaUrls.length,12100);
+assert.equal(new Set(actualEftaUrls).size,12100);
+assert.equal(actualEftaUrls[0],'https://wiki.grokarchivehub.com/archive/'+EFTA_CATALOG.ids[0]);
+assert.equal(request('/sitemap-archive-1.xml').headers.Location,'https://wiki.grokarchivehub.com/sitemap-efta-1.xml');
+assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki\.grokarchivehub\.com\/sitemap-index\.xml/);
+
 const homeUrls=['/','/archive','/research-index'];
 const eligibleResearch=RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable&&!publicationRule('https://wiki.grokarchivehub.com'+r.path)?.noindex).map(r=>r.path);
 const eligibleReceipts=registry.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id).filter(p=>{const url='https://wiki.grokarchivehub.com'+p,rule=publicationRule(url);return !rule?.noindex&&(!rule?.canonical||rule.canonical===url)});
@@ -34,7 +53,7 @@ assert.equal(eligibleResearch.length,66,'64 newly opened research routes plus tw
 assert.equal(eligibleReceipts.length,14,'standalone source receipts, no duplicate canonical homes');
 assert.equal(expected.size,87);
 const actual=new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]));
-assert.deepEqual(actual,expected,'Only self-canonical, published wiki routes enter XML discovery');assert.doesNotMatch(xml,/<loc>https:\/\/grokarchivehub.com/);assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki.grokarchivehub.com\/sitemap.xml/);
+assert.deepEqual(actual,expected,'Only self-canonical, published wiki routes enter XML discovery');assert.doesNotMatch(xml,/<loc>https:\/\/grokarchivehub.com/);assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki.grokarchivehub.com\/sitemap-index.xml/);
 assert.equal(request('/receipts/EFTA09999999').status,404);assert.equal(request('/','HEAD').body,'');assert.equal(request('/','POST').handled,false);assert.equal(request('/','GET',{'x-gah-internal-wiki-proxy':'apex-proof-layer'}).handled,false);
 console.log('PASS wiki home/archive/research canonicals, '+registry.entries.length+' reciprocal receipt cards, own sitemap, aliases, HEAD and internal proxy isolation');
 

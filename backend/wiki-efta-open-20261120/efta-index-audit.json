@@ -1,0 +1,20 @@
+{
+  "bank_protected_exclusions": 168,
+  "input_urls": 49900,
+  "bank_records_all": 2007,
+  "bank_indexable": 1384,
+  "bank_eligible": 316,
+  "ocr_eligible": 11790,
+  "ocr_absent": 0,
+  "ocr_short": 22865,
+  "risk_email": 4009,
+  "risk_phone": 3423,
+  "risk_ssn": 1692,
+  "risk_address": 4108,
+  "risk_sensitive": 2375,
+  "meaningless": 56,
+  "read_errors": 0,
+  "total_input": 50802,
+  "total_eligible": 12106,
+  "excluded": 38696
+}
