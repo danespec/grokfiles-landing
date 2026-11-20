@@ -1391,6 +1391,10 @@ export const READER_EDITORIAL_METADATA = {
     "title": "House Oversight’s Epstein–Maxwell Report",
     "description": "Read the 137-page House Oversight majority staff report and distinguish findings, testimony and proposals from binding legal action."
   },
+  "https://grokarchivehub.com/news/phang-fbi-notes-release-order-november-9-2026": {
+    "title": "Phang: Court Orders FBI Notes Release",
+    "description": "A November 9 order directs publication of redacted FBI interview notes; a separate ruling denies DOJ's delay. Stay and compliance status remain open."
+  },
   "https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026": {
     "title": "DOJ Epstein File Translation Review: Phang Filing",
     "description": "A November 2 filing says DOJ began foreign-language review; Phang seeks a November 27 deadline. No new order is shown."
