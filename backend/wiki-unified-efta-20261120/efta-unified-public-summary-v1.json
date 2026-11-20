@@ -1,0 +1,18 @@
+{
+  "schema": "gah.efta.unified.source-index.v1",
+  "as_of": "2026-11-20",
+  "records": 870835,
+  "source_ids": 870834,
+  "ocr_ids": 667493,
+  "pdf_ids": 870834,
+  "media_ids": 151,
+  "video_ids": 147,
+  "audio_ids": 4,
+  "standalone_image_ids": 0,
+  "visual_indexed_ids": 53017,
+  "visual_entries": 76932,
+  "redaction_entries": 15966,
+  "manifest_media_entries": 151,
+  "bin_sha256": "558510cbe90bfdf17a0399ab8f5545f3d97f438b5f7078e4c8899eb6695a884c",
+  "bin_bytes": 4354175
+}

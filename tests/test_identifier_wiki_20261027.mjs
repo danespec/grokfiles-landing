@@ -2,6 +2,7 @@ import {publicationRule} from '../reader-quality.mjs';
 import { RESEARCH_ROUTES } from '../content/research-route-policy.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
 const base=new URL('../backend/identifier-release-20261027/',import.meta.url);
 let s=await fs.readFile(new URL('identifier-host-policy.mjs',base),'utf8');
 const files=new Map([['/app/identifier-dossiers.json',await fs.readFile(new URL('content/identifier-dossiers.json',new URL('../',import.meta.url)),'utf8')]]);
@@ -11,6 +12,14 @@ const registry=JSON.parse(await fs.readFile(new URL('content/identifier-dossiers
 files.set('/app/black-book-source-guide.html',await fs.readFile(new URL('black-book-source-guide.html',base),'utf8'));
 const EFTA_CATALOG=JSON.parse(await fs.readFile(new URL('../backend/wiki-efta-open-20261120/efta-index-eligible.json',import.meta.url),'utf8'));
 files.set('/app/efta-index-eligible-20261120.json',JSON.stringify(EFTA_CATALOG));
+const sampleId=EFTA_CATALOG.ids[0], mediaId='EFTA00040012';
+const demoIds=[sampleId,mediaId].sort();
+const catalogFixtureBin=Buffer.alloc(demoIds.length*5);
+for(const [idx,id] of demoIds.entries()){catalogFixtureBin.writeUInt32BE(Number(id.slice(4)),idx*5);catalogFixtureBin.writeUInt8(id===sampleId?7:57,idx*5+4);}
+const catalogFixtureSummary={schema:'gah.efta.unified.source-index.v1',as_of:'2026-11-20',records:demoIds.length,source_ids:2,ocr_ids:1,pdf_ids:1,video_ids:1,audio_ids:1,visual_indexed_ids:1,visual_entries:2,redaction_entries:1,bin_sha256:crypto.createHash('sha256').update(catalogFixtureBin).digest('hex')};
+files.set('/app/efta-unified-ids-v1.bin',catalogFixtureBin);
+files.set('/app/efta-unified-summary-v1.json',JSON.stringify(catalogFixtureSummary));
+
 files.set('/app/wiki-home-identifiers.html',await fs.readFile(new URL('wiki-home.html',base),'utf8'));
 files.set('/app/research-index.html','<html><head><link rel="canonical" href="https://grokarchivehub.com/research-index"><meta name="robots" content="noindex,nofollow"></head><body><main><h1>Research index</h1></main></body></html>');
 for(const e of registry.entries)files.set('/app/identifier-receipts/'+e.id+'.html',await fs.readFile(new URL('receipts/'+e.id+'.html',base),'utf8'));
@@ -21,13 +30,35 @@ for(const slug of ['maxwell-prosecution','epstein-victim-services-doj-coordinati
 s=s.replace("'./reader-quality.mjs'",JSON.stringify(new URL('../reader-quality.mjs',import.meta.url).href));
 const {identifierHostPolicy}=await import('data:text/javascript;base64,'+Buffer.from(s).toString('base64'));
 function request(path,method='GET',headers={}){const res={status:0,headers:{},body:'',writeHead(s,h){this.status=s;this.headers=h},end(b){this.body=b||''}};const handled=identifierHostPolicy({method,url:path,headers:{host:'wiki.grokarchivehub.com',...headers}},res);return{handled,...res};}
-for(const path of ['/','/archive','/research-index']){const r=request(path);assert.equal(r.status,200);assert.equal(r.headers['X-Robots-Tag'],'index,follow');assert.ok(r.body.includes('href="https://wiki.grokarchivehub.com'+(path==='/'?'/':path)+'"'));}
+for(const path of ['/','/archive','/research-index','/catalog','/catalog/media']){const r=request(path);assert.equal(r.status,200);assert.equal(r.headers['X-Robots-Tag'],'index,follow');assert.ok(r.body.includes('href="https://wiki.grokarchivehub.com'+(path==='/'?'/':path)+'"'));}
 for(const path of ['/archive/efta13764','/archive/EFTA00013764','/archive/efta00013764.html']){const r=request(path);assert.equal(r.status,301);assert.equal(r.headers.Location,'https://grokarchivehub.com/archive/EFTA00013764');}
 const approvedEfta=EFTA_CATALOG.ids[0];
 assert.equal(request('/archive/'+approvedEfta).handled,false,'Approved canonical wiki EFTA must reach the real source route');
 assert.equal(request('/archive/'+approvedEfta.toLowerCase()).headers.Location,'https://wiki.grokarchivehub.com/archive/'+approvedEfta,'normalized source alias returns to wiki');
 assert.equal(request('/archive/EFTA00013764').headers.Location,'https://grokarchivehub.com/archive/EFTA00013764','main article still owns its original EFTA');
 assert.equal(request('/archive/EFTA09999999').headers.Location,'https://grokarchivehub.com/archive/EFTA09999999','unreviewed or nonexistent document stays on former route');
+const fullCatalog=request('/catalog');
+assert.equal(fullCatalog.status,200);
+assert.equal(fullCatalog.headers['X-Robots-Tag'],'index,follow');
+assert.match(fullCatalog.body,/EFTA document inventory and source lookup/);
+const mediaCatalog=request('/catalog/media');
+assert.equal(mediaCatalog.status,200);
+assert.equal(mediaCatalog.headers['X-Robots-Tag'],'index,follow');
+assert.match(mediaCatalog.body,/Media-aware EFTA source catalog/);
+const record=request('/catalog/'+sampleId);
+assert.equal(record.status,200);
+assert.equal(record.headers['X-Robots-Tag'],'noindex,follow','Metadata-only exact-ID lookup never becomes a search result');
+assert.match(record.body,/PDF source/);
+assert.match(record.body,/Open the published EFTA source page/);
+const sourceMedia=request('/catalog/'+mediaId);
+assert.equal(sourceMedia.status,200);
+assert.match(sourceMedia.body,/Video/);
+assert.match(sourceMedia.body,/Audio/);assert.match(sourceMedia.body,/Indexed visual-artifact reference/);
+assert.doesNotMatch(sourceMedia.body,/video src|audio src|<iframe/);
+assert.equal(request('/catalog/EFTA99999999').status,404);
+assert.equal(request('/catalog/lookup?id='+sampleId).headers.Location,'https://wiki.grokarchivehub.com/catalog/'+sampleId);
+assert.equal(request('/catalog/lookup?id=../../../etc/passwd').status,400);
+assert.equal(request('/catalog/lookup?id='+sampleId,'POST').handled,false);
 assert.equal(request('/wiki').headers.Location,'https://wiki.grokarchivehub.com/');assert.equal(request('/methodology').headers.Location,'https://grokarchivehub.com/methodology');
 for(const e of registry.entries){const r=request('/receipts/'+e.id);assert.equal(r.status,200);assert.ok(r.body.includes('https://grokarchivehub.com/archive/'+e.id));assert.equal(r.headers['X-Robots-Tag'],'index,follow');}
 assert.ok(request('/archive').body.includes('property="og:url" content="https://wiki.grokarchivehub.com/archive"'));
@@ -44,14 +75,14 @@ assert.equal(actualEftaUrls[0],'https://wiki.grokarchivehub.com/archive/'+EFTA_C
 assert.equal(request('/sitemap-archive-1.xml').headers.Location,'https://wiki.grokarchivehub.com/sitemap-efta-1.xml');
 assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki\.grokarchivehub\.com\/sitemap-index\.xml/);
 
-const homeUrls=['/','/archive','/research-index'];
+const homeUrls=['/','/archive','/research-index','/catalog','/catalog/media'];
 const eligibleResearch=RESEARCH_ROUTES.filter(r=>r.owner==='wiki'&&r.indexable&&!publicationRule('https://wiki.grokarchivehub.com'+r.path)?.noindex).map(r=>r.path);
 const eligibleReceipts=registry.entries.filter(e=>e.indexable).map(e=>'/receipts/'+e.id).filter(p=>{const url='https://wiki.grokarchivehub.com'+p,rule=publicationRule(url);return !rule?.noindex&&(!rule?.canonical||rule.canonical===url)});
 const eligibleTopics=['/topics/maxwell-prosecution','/topics/epstein-victim-services-doj-coordination','/topics/epstein-victim-notification-vns-sdny-outreach','/topics/sdny-epstein-maxwell-court-filings'];
 const expected=new Set([...homeUrls,...eligibleResearch,...eligibleReceipts,...eligibleTopics].map(p=>'https://wiki.grokarchivehub.com'+p));
 assert.equal(eligibleResearch.length,66,'64 newly opened research routes plus two existing');
 assert.equal(eligibleReceipts.length,14,'standalone source receipts, no duplicate canonical homes');
-assert.equal(expected.size,87);
+assert.equal(expected.size,89);
 const actual=new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]));
 assert.deepEqual(actual,expected,'Only self-canonical, published wiki routes enter XML discovery');assert.doesNotMatch(xml,/<loc>https:\/\/grokarchivehub.com/);assert.match(request('/robots.txt').body,/Sitemap: https:\/\/wiki.grokarchivehub.com\/sitemap-index.xml/);
 assert.equal(request('/receipts/EFTA09999999').status,404);assert.equal(request('/','HEAD').body,'');assert.equal(request('/','POST').handled,false);assert.equal(request('/','GET',{'x-gah-internal-wiki-proxy':'apex-proof-layer'}).handled,false);

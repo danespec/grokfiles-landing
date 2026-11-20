@@ -1,0 +1,27 @@
+{
+  "total_ocr_ids": 667438,
+  "processed": 667438,
+  "errors": 0,
+  "prior_indexed": 10413,
+  "bank_holds": 621,
+  "main_dossier_holds": 43,
+  "short": 278692,
+  "low_letters": 209,
+  "risk_excerpt": {
+    "address": 73487,
+    "protected": 9426,
+    "phone": 32773,
+    "email": 170884,
+    "identifiers": 21167
+  },
+  "strict_additional_risk": {
+    "address": 4281,
+    "protected": 1257,
+    "phone": 1903,
+    "email": 1540,
+    "identifiers": 1010
+  },
+  "excerpt_only_eligible": 134346,
+  "strict_eligible": 126698,
+  "new_strict_eligible": 116285
+}
