@@ -29,6 +29,8 @@ for(const r of report.records){
    assert(sm.includes('<loc>'+u+'</loc><lastmod>2026-11-17</lastmod>'),r.id);
    assert.equal(gahResearchIndexablePublication(u),false,r.id);
  }else if(r.decision==='retain-canonical'){
+   const context=body.match(/<p id="gah-dossier-editorial-context">([\s\S]*?)<\/p>/);
+   assert.ok(context?.[1].includes('href="'+r.canonical+'"'),r.id+' visible canonical editorial context');
    const t=await get(r.canonical),h=await t.text();assert.equal(t.status,200,r.id);
    assert(!/noindex/i.test(t.headers.get('X-Robots-Tag')||''),r.id+' target indexability');
    assert(h.includes(u),r.id+' target link');assert(h.includes(r.id),r.id+' target identifier');
