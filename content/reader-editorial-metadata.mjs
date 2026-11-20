@@ -1518,5 +1518,5 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/research-data": {
     "title": "Research Data: EFTA and Entity Exports",
     "description": "Download privacy-reviewed EFTA dossier and curated entity metadata in CSV or JSON, with citation and source limitations."
-  },
+   }
 };
