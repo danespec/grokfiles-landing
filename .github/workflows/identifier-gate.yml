@@ -104,6 +104,12 @@ jobs:
       - name: Source-linked timeline and entity directory contracts
         run: node tests/test_timelines_directories_20261117.mjs
 
+      - name: Source-bound entity dossiers and public metadata exports
+        run: |
+          python3 scripts/seo/build_entity_dossiers.py --check
+          node scripts/seo/build_public_research_exports.mjs --check
+          node tests/test_entity_export_release_20261119.mjs
+
       - name: Research citation packet and intent guard
         run: node tests/test_research_evidence_closeout.mjs
       - name: Filtered editorial passage search candidate
