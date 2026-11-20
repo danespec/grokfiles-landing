@@ -5,15 +5,24 @@ import {qualityHtml,readerQualityResponse} from '../reader-quality.mjs';
 const sample='<html><head><title>Source</title><meta name="robots" content="index,follow"><link rel="canonical" href="https://grokarchivehub.com/example"></head><body><main><h1>Source</h1><p>Source preserved.</p></main></body></html>';
 let receipts=0;
 for(const [url,rule] of Object.entries(PUBLICATION_POLICY)){
- const html=qualityHtml(sample,url);assert.match(html,/<meta name="robots" content="noindex,follow">/);if(url!=='https://grokarchivehub.com/barak')assert.match(html,/Source preserved/);
+ const html=qualityHtml(sample,url);
+ const isSourceReceipt=url.startsWith('https://wiki.grokarchivehub.com/receipts/EFTA');
+ const wikiDiscovery=isSourceReceipt||['https://wiki.grokarchivehub.com/','https://wiki.grokarchivehub.com/archive','https://wiki.grokarchivehub.com/research-index'].includes(url);
+ const expectedRobots=wikiDiscovery?'index,follow':'noindex,follow';
+ assert.match(html,new RegExp('<meta name="robots" content="'+expectedRobots+'">'),url);
+ if(url!=='https://grokarchivehub.com/barak')assert.match(html,/Source preserved/);
  if(rule.canonical){assert.equal((html.match(/rel="canonical"/g)||[]).length,1);assert.ok(html.includes('href="'+rule.canonical+'"'));}
- for(const method of ['GET','HEAD']){const response=await readerQualityResponse(new Response(method==='HEAD'?null:sample,{headers:{'Content-Type':'text/html','X-Robots-Tag':'index,follow'}}),new Request(url,{method}));assert.equal(response.status,200);assert.equal(response.headers.get('X-Robots-Tag'),'noindex,follow');}
+ for(const method of ['GET','HEAD']){const response=await readerQualityResponse(new Response(method==='HEAD'?null:sample,{headers:{'Content-Type':'text/html','X-Robots-Tag':'index,follow'}}),new Request(url,{method}));assert.equal(response.status,200);assert.equal(response.headers.get('X-Robots-Tag'),expectedRobots,url);}
  if(url.startsWith('https://wiki.grokarchivehub.com/receipts/EFTA'))receipts++;
 }
 assert.equal(receipts,69);
+const wikiReceipts=Object.entries(PUBLICATION_POLICY).filter(([u])=>u.startsWith('https://wiki.grokarchivehub.com/receipts/EFTA'));
+assert.equal(wikiReceipts.filter(([u,p])=>p.canonical===u).length,14,'standalone receipt canonicals');
+assert.equal(wikiReceipts.filter(([u,p])=>p.canonical&&p.canonical!==u).length,55,'duplicate source receipts canonical to owning editorial article');
+assert(wikiReceipts.every(([u,p])=>!p.noindex),'Public source receipts are crawlable; canonicals consolidate duplicates');
 const reg=JSON.parse(await fs.readFile(new URL('../content/identifier-dossiers.json',import.meta.url),'utf8'));
 assert.equal(PUBLICATION_POLICY['https://grokarchivehub.com/archive/EFTA02300238'].canonical,'https://grokarchivehub.com/reels/reid-hoffman-island-logistics-efta02300238');assert.match(reg.entries.find(e=>e.id==='EFTA02300238').title,/Hoffman/);
-console.log('PASS explicit noindex GET/HEAD and canonical decisions, all 69 wiki receipt twins, source preservation and Hoffman classification');
+console.log('PASS protected noindex and opened public wiki receipts, GET/HEAD and canonical decisions, 69 receipts, source preservation and Hoffman classification');
 
 // Final review: source-only cards may self-canonicalize, but a duplicate must
 // point directly at its selected indexable article, never another noindex URL.
