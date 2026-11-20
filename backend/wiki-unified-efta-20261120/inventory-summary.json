@@ -1,0 +1,410 @@
+{
+  "schema": "gah.unified-efta-inventory.v1",
+  "as_of": "2026-11-20",
+  "unique_efta_ids": 870835,
+  "original_ids": 870834,
+  "ocr_ids": 667493,
+  "original_ocr_overlap": 667492,
+  "original_no_ocr": 203342,
+  "distinct_pdf_ids": 870834,
+  "distinct_explicit_media_ids": 151,
+  "distinct_media_by_type": {
+    "video": 147,
+    "audio": 4
+  },
+  "media_entries": 301,
+  "collections": {
+    "incoming": {
+      "files": 866599,
+      "eftaFiles": 866242,
+      "dirs": 1750,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 861534,
+        "other": 5065
+      },
+      "ext": {
+        ".pdf": 861534,
+        ".json": 7,
+        ".tsv": 5,
+        ".txt": 4995,
+        "(none)": 57,
+        ".test": 1
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "all-data": {
+      "files": 22795,
+      "eftaFiles": 22526,
+      "dirs": 99,
+      "errors": 0,
+      "symlinks": 4,
+      "types": {
+        "other": 10816,
+        "pdf": 11828,
+        "video": 147,
+        "audio": 4
+      },
+      "ext": {
+        ".txt": 10597,
+        ".html": 68,
+        ".tsv": 11,
+        ".err": 8,
+        ".out": 3,
+        ".sh": 20,
+        ".pdf": 11828,
+        ".css": 21,
+        ".js": 21,
+        ".conf": 1,
+        ".log": 23,
+        ".md": 7,
+        ".py": 1,
+        ".bak": 1,
+        ".pid": 1,
+        ".tmp": 2,
+        ".lst": 2,
+        ".mp4": 146,
+        ".m4a": 3,
+        ".xlsx": 9,
+        ".csv": 4,
+        ".xls": 2,
+        ".mp3": 1,
+        ".dat": 7,
+        ".opt": 7,
+        ".avi": 1
+      },
+      "distinctMediaIdKinds": 151
+    },
+    "data2": {
+      "files": 2254,
+      "eftaFiles": 2254,
+      "dirs": 8,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 2254
+      },
+      "ext": {
+        ".pdf": 2254
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "data3": {
+      "files": 69,
+      "eftaFiles": 67,
+      "dirs": 4,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 67,
+        "other": 2
+      },
+      "ext": {
+        ".pdf": 67,
+        ".dat": 1,
+        ".opt": 1
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "data4": {
+      "files": 154,
+      "eftaFiles": 152,
+      "dirs": 5,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 152,
+        "other": 2
+      },
+      "ext": {
+        ".pdf": 152,
+        ".dat": 1,
+        ".opt": 1
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "data5": {
+      "files": 122,
+      "eftaFiles": 120,
+      "dirs": 4,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 120,
+        "other": 2
+      },
+      "ext": {
+        ".pdf": 120,
+        ".dat": 1,
+        ".opt": 1
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "data6": {
+      "files": 15,
+      "eftaFiles": 13,
+      "dirs": 6,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 13,
+        "other": 2
+      },
+      "ext": {
+        ".pdf": 13,
+        ".dat": 1,
+        ".opt": 1
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "data7": {
+      "files": 19,
+      "eftaFiles": 17,
+      "dirs": 4,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "pdf": 17,
+        "other": 2
+      },
+      "ext": {
+        ".pdf": 17,
+        ".dat": 1,
+        ".opt": 1
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "data8": {
+      "files": 7692,
+      "eftaFiles": 7692,
+      "dirs": 16,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "video": 146,
+        "audio": 4,
+        "other": 15,
+        "pdf": 7527
+      },
+      "ext": {
+        ".mp4": 146,
+        ".m4a": 3,
+        ".xlsx": 9,
+        ".csv": 4,
+        ".xls": 2,
+        ".mp3": 1,
+        ".pdf": 7527
+      },
+      "distinctMediaIdKinds": 150
+    },
+    "vault": {
+      "files": 203,
+      "eftaFiles": 202,
+      "dirs": 22,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "other": 1,
+        "pdf": 202
+      },
+      "ext": {
+        "(none)": 1,
+        ".pdf": 202
+      },
+      "distinctMediaIdKinds": 0
+    },
+    "ocr": {
+      "files": 835022,
+      "eftaFiles": 834814,
+      "dirs": 1732,
+      "errors": 0,
+      "symlinks": 0,
+      "types": {
+        "ocr_text": 835022
+      },
+      "ext": {
+        ".txt": 835022
+      },
+      "distinctMediaIdKinds": 0
+    }
+  },
+  "segments": {
+    "EFTA000": {
+      "all": 20515,
+      "pdf": 20514,
+      "ocr": 8840,
+      "video": 147,
+      "audio": 4,
+      "image": 0
+    },
+    "EFTA001": {
+      "all": 10865,
+      "pdf": 10865,
+      "ocr": 10865,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA002": {
+      "all": 22571,
+      "pdf": 22571,
+      "ocr": 22571,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA003": {
+      "all": 52134,
+      "pdf": 52134,
+      "ocr": 52134,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA004": {
+      "all": 58862,
+      "pdf": 58862,
+      "ocr": 58862,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA005": {
+      "all": 49573,
+      "pdf": 49573,
+      "ocr": 16390,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA006": {
+      "all": 47178,
+      "pdf": 47178,
+      "ocr": 13118,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA012": {
+      "all": 4183,
+      "pdf": 4183,
+      "ocr": 4118,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA013": {
+      "all": 57986,
+      "pdf": 57986,
+      "ocr": 57986,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA014": {
+      "all": 48564,
+      "pdf": 48564,
+      "ocr": 48564,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA015": {
+      "all": 41670,
+      "pdf": 41670,
+      "ocr": 41670,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA016": {
+      "all": 19648,
+      "pdf": 19648,
+      "ocr": 16496,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA017": {
+      "all": 41896,
+      "pdf": 41896,
+      "ocr": 11738,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA018": {
+      "all": 63645,
+      "pdf": 63645,
+      "ocr": 17869,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA019": {
+      "all": 1,
+      "pdf": 1,
+      "ocr": 0,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA022": {
+      "all": 47159,
+      "pdf": 47159,
+      "ocr": 47109,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA023": {
+      "all": 63589,
+      "pdf": 63589,
+      "ocr": 63589,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA024": {
+      "all": 68007,
+      "pdf": 68007,
+      "ocr": 68007,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA025": {
+      "all": 71643,
+      "pdf": 71643,
+      "ocr": 71643,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA026": {
+      "all": 64933,
+      "pdf": 64933,
+      "ocr": 31281,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA027": {
+      "all": 16193,
+      "pdf": 16193,
+      "ocr": 4623,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    },
+    "EFTA028": {
+      "all": 20,
+      "pdf": 20,
+      "ocr": 20,
+      "video": 0,
+      "audio": 0,
+      "image": 0
+    }
+  }
+}
