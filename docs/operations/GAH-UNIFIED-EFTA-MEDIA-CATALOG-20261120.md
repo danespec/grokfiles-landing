@@ -14,13 +14,15 @@
 | Original identifiers with no OCR match | 203,342 |
 | Video-bearing EFTA identifiers | 147 |
 | Audio-bearing EFTA identifiers | 4 |
+| Identifiers with visual-artifact references | 53,017 |
+| Total indexed visual-artifact references | 76,932 |
 | Standalone image files recognized in these holdings | 0 |
 
-Formats overlap. A video file may be duplicated between datasets; unique recording count is not verified. Many photographs may be embedded in PDFs or videos; embedded images are not enumerated by filename scans. None of these numbers are asserted to be Google-indexed pages.
+Formats overlap. A video file may be duplicated between datasets; unique recording count is not verified. The preexisting GAH visual index includes 76,932 references across 53,017 EFTA IDs, which may point to PDF imagery, duplicated assets or redacted material; they are not a verified count of unique photographs. Direct standalone image extensions are not a complete media inventory. None of these numbers are asserted to be Google-indexed pages.
 
 ## Compact metadata index
 
-- An on-site scan created a record-level catalog: each exact eight-digit EFTA number encoded as an unsigned 32-bit integer plus one byte of format flags. 870,835 entries occupy 4,354,175 bytes. Expected SHA-256: 3a3d64f4908a3faaa7ed72dad2f073b5fa3347ccc34e7d1feb222e05a773c519.
+- An on-site scan created a record-level catalog: each exact eight-digit EFTA number encoded as an unsigned 32-bit integer plus one byte of format flags. 870,835 entries occupy 4,354,175 bytes. Expected SHA-256: 558510cbe90bfdf17a0399ab8f5545f3d97f438b5f7078e4c8899eb6695a884c.
 - Zero source text, personal names, addresses, victim identities, unpublished images, transcripts or private filesystem paths appear in the compressed-format index.
 - The wiki gateway checks the binary length and fingerprint before startup; a binary search resolves an exact EFTA identifier in at most 20 comparisons without loading large JavaScript object maps.
 - Public research landing pages /catalog and /catalog/media explain counts, formats and limitations; both are self-canonical and indexable.

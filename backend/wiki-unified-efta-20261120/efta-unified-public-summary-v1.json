@@ -9,6 +9,10 @@
   "video_ids": 147,
   "audio_ids": 4,
   "standalone_image_ids": 0,
-  "bin_sha256": "3a3d64f4908a3faaa7ed72dad2f073b5fa3347ccc34e7d1feb222e05a773c519",
+  "visual_indexed_ids": 53017,
+  "visual_entries": 76932,
+  "redaction_entries": 15966,
+  "manifest_media_entries": 151,
+  "bin_sha256": "558510cbe90bfdf17a0399ab8f5545f3d97f438b5f7078e4c8899eb6695a884c",
   "bin_bytes": 4354175
 }

@@ -15,8 +15,8 @@ files.set('/app/efta-index-eligible-20261120.json',JSON.stringify(EFTA_CATALOG))
 const sampleId=EFTA_CATALOG.ids[0], mediaId='EFTA00040012';
 const demoIds=[sampleId,mediaId].sort();
 const catalogFixtureBin=Buffer.alloc(demoIds.length*5);
-for(const [idx,id] of demoIds.entries()){catalogFixtureBin.writeUInt32BE(Number(id.slice(4)),idx*5);catalogFixtureBin.writeUInt8(id===sampleId?7:25,idx*5+4);}
-const catalogFixtureSummary={schema:'gah.efta.unified.source-index.v1',as_of:'2026-11-20',records:demoIds.length,source_ids:2,ocr_ids:1,pdf_ids:1,video_ids:1,audio_ids:1,bin_sha256:crypto.createHash('sha256').update(catalogFixtureBin).digest('hex')};
+for(const [idx,id] of demoIds.entries()){catalogFixtureBin.writeUInt32BE(Number(id.slice(4)),idx*5);catalogFixtureBin.writeUInt8(id===sampleId?7:57,idx*5+4);}
+const catalogFixtureSummary={schema:'gah.efta.unified.source-index.v1',as_of:'2026-11-20',records:demoIds.length,source_ids:2,ocr_ids:1,pdf_ids:1,video_ids:1,audio_ids:1,visual_indexed_ids:1,visual_entries:2,redaction_entries:1,bin_sha256:crypto.createHash('sha256').update(catalogFixtureBin).digest('hex')};
 files.set('/app/efta-unified-ids-v1.bin',catalogFixtureBin);
 files.set('/app/efta-unified-summary-v1.json',JSON.stringify(catalogFixtureSummary));
 
@@ -53,7 +53,7 @@ assert.match(record.body,/Open the published EFTA source page/);
 const sourceMedia=request('/catalog/'+mediaId);
 assert.equal(sourceMedia.status,200);
 assert.match(sourceMedia.body,/Video/);
-assert.match(sourceMedia.body,/Audio/);
+assert.match(sourceMedia.body,/Audio/);assert.match(sourceMedia.body,/Indexed visual-artifact reference/);
 assert.doesNotMatch(sourceMedia.body,/video src|audio src|<iframe/);
 assert.equal(request('/catalog/EFTA99999999').status,404);
 assert.equal(request('/catalog/lookup?id='+sampleId).headers.Location,'https://wiki.grokarchivehub.com/catalog/'+sampleId);
