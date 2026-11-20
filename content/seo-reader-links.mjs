@@ -36,8 +36,28 @@ function appendInvestigationNavigation(path,body,esc){
   body+='<section id="gah-investigation-navigation" class="reader-identifier-links" aria-labelledby="gah-investigation-navigation-heading"><h2 id="gah-investigation-navigation-heading">Follow the evidence</h2><h3>Referenced document dossiers</h3>'+refs+'<p>'+a('/archive/ids','EFTA identifier register')+' · '+a('/guides/doj-epstein-data-sets','Official DOJ dataset guides')+'</p><h3>Related reading: '+esc(row.topic)+'</h3><p>Editorial reading pathways, not findings of a connection between people or events.</p>'+reading+'<h3>Story Atlas</h3>'+stories+'<p>'+a('/atlas/','Browse all published Atlas stories')+'</p></section>';
  }
  const match=path.match(/^\/archive\/(EFTA\d{8})$/);
+ const rule=PUBLICATION_POLICY[base+path];
+ if(match&&rule?.noindex&&rule.canonical?.startsWith(base+'/')&&rule.canonical!==base+path&&!PUBLICATION_POLICY[rule.canonical]?.noindex){
+  const label=META[rule.canonical]?.title||'Read the full editorial context';
+  if(!body.includes('id="gah-dossier-editorial-context"')){
+   const link='<p id="gah-dossier-editorial-context"><strong>Editorial context</strong> '+a(rule.canonical,label)+'</p>';
+   body=body.replace(/(<h1\b[^>]*>[\s\S]*?<\/h1>)/i,(_,heading)=>heading+link);
+  }
+ }
+
  if(match&&GAH_DOSSIER_NAV[match[1]]&&!body.includes('id="gah-dossier-investigation-links"')){
   const links=GAH_DOSSIER_NAV[match[1]].filter(r=>!body.includes('href="'+r.path+'"')&&!body.includes('href="https://grokarchivehub.com'+r.path+'"'));
+  const stories=new Map();
+  for(const {path: investigation} of GAH_DOSSIER_NAV[match[1]]){
+   for(const story of GAH_INVESTIGATION_NAV[investigation]?.stories || []){
+    if(story.shared.includes(match[1]))stories.set(story.id,story);
+   }
+  }
+  if(stories.size&&!body.includes('id="gah-dossier-atlas-links"')){
+   const storyLinks=list([...stories.values()].map(story=>a('/atlas/#story-'+story.id.toLowerCase(),'Story '+story.id+' — '+story.title)));
+   body=body.replace(/(<section\b[^>]*id=["']where-cited["'][^>]*>)([\s\S]*?)(<\/section>)/i,(_,open,content,close)=>
+    open+content+'<div id="gah-dossier-atlas-links"><h3>Story Atlas references</h3><p>These published stories cite this identifier. A shared citation does not provide independent corroboration.</p>'+storyLinks+'</div>'+close);
+  }
   if(links.length)body=body.replace(/(<section\b[^>]*id=["']where-cited["'][^>]*>)([\s\S]*?)(<\/section>)/i,(_,open,content,close)=>open+content+'<div id="gah-dossier-investigation-links"><p>Additional investigations referencing this identifier (not additional findings):</p>'+list(links.map(r=>a(r.path,r.title)))+'</div>'+close);
  }
  return body;

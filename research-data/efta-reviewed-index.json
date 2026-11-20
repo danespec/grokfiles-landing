@@ -1,0 +1,180 @@
+{
+  "schema_version": "gah-public-efta-metadata-v1",
+  "release_date": "2026-11-19",
+  "scope": "Only self-canonical, publicly indexable EFTA dossiers from the curated sitemap; excludes consolidated/noindex pages and private document content",
+  "important_limit": "An identifier appearing here is not a finding of wrongdoing. SHA-256 values identify the published HTML files, not the DOJ source PDF bytes.",
+  "record_count": 19,
+  "records": [
+    {
+      "id": "EFTA00013764",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00013764",
+      "title": "December 7, 2007 “Hold the Letter” Email",
+      "description": "EFTA00013764: December 7, 2007 “Hold the Letter” Email. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013764.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "bf9a98c896e7f4197e90482b5032e08721a0f3e371f81190077e1b6ed43bf91e"
+    },
+    {
+      "id": "EFTA00033413",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00033413",
+      "title": "June 27, 2019 MCC Morning-Watch Lieutenant Log",
+      "description": "EFTA00033413: June 27, 2019 MCC Morning-Watch Lieutenant Log. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00033413.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "3dfd1945309ec1ec34c98309adb36ccf21987b9953e8c378827f0919feb25ef7"
+    },
+    {
+      "id": "EFTA00035035",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035035",
+      "title": "August 14, 2019 Bureau of Prisons Legal Hold Notice",
+      "description": "EFTA00035035: August 14, 2019 Bureau of Prisons Legal Hold Notice. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035035.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "44f01c98831da14004022587a95db01b31c03c7b49be63cd0c26b33824eb0278"
+    },
+    {
+      "id": "EFTA00035053",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035053",
+      "title": "August 12, 2019 MCC Evidence Preservation Request",
+      "description": "EFTA00035053: August 12, 2019 MCC Evidence Preservation Request. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035053.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "942342220d33458b7164fab037a8aaae2b13593c3673603e221fe5f55ea13c04"
+    },
+    {
+      "id": "EFTA00035119",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035119",
+      "title": "MCC Visitor Log: Handwritten Record and Verification Limits",
+      "description": "EFTA00035119: MCC Visitor Log: Handwritten Record and Verification Limits. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035119.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "f5fe30707e45147d76b3b1074dc85d203518302a852ce2979e65cbaa38b5e9d3"
+    },
+    {
+      "id": "EFTA00035147",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035147",
+      "title": "MCC attorney visit log: August 8 entry",
+      "description": "EFTA00035147: MCC attorney visit log: August 8 entry. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035147.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "112b90d0d6d9c8520efab8a6e91cb1233578f7c114b93d1512d3257def8b9421"
+    },
+    {
+      "id": "EFTA00035206",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035206",
+      "title": "Mandatory 30-minute rounds notice",
+      "description": "EFTA00035206: A one-page photograph shows an orange notice directing mandatory rounds every 30 minutes for Epstein. The printed EFTA00035206 footer is visible.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035206.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "bb36c89e4dc461aab13bedda79490ae47a20601be56e2b930eb40c1536187f6e"
+    },
+    {
+      "id": "EFTA00035420",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035420",
+      "title": "August 10, 2019 MCC Draft Press Release Email",
+      "description": "EFTA00035420: August 10, 2019 MCC Draft Press Release Email. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035420.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "4f86c21d459651a5129cd4f9f9f479f7dc4e49a08077779377b4ded60b58c4dd"
+    },
+    {
+      "id": "EFTA00035421",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035421",
+      "title": "August 10, 2019 MCC Inmate-Death Press Release",
+      "description": "EFTA00035421: August 10, 2019 MCC Inmate-Death Press Release. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035421.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "af8007b8a5ef33004a01a7df21ccf541fe354b97b03aca2f7be065f90578ef6a"
+    },
+    {
+      "id": "EFTA00035442",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035442",
+      "title": "August 11, 2019 MCC Response to a CBS News Inquiry",
+      "description": "EFTA00035442: August 11, 2019 MCC Response to a CBS News Inquiry. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035442.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "49d41fe487b6888499aadcb85ddf1ac3bb8223e000ea50cdf6a596a4f00db5d7"
+    },
+    {
+      "id": "EFTA00035570",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035570",
+      "title": "July 22, 2019 MCC Daily Lieutenant's Log",
+      "description": "EFTA00035570: July 22, 2019 MCC Daily Lieutenant's Log. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035570.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "708df986d2b0d4cee3732dc2069d2704d9a434d2c900faa5d23fe1e32350a3d9"
+    },
+    {
+      "id": "EFTA00035574",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035574",
+      "title": "July 23, 2019 MCC Memorandum on Reported Self-Harm Incident",
+      "description": "EFTA00035574: July 23, 2019 MCC Memorandum on Reported Self-Harm Incident. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035574.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "4a194e14f05f20467d10d29871ba5904c2111ab670d67137a937e6d014bc179c"
+    },
+    {
+      "id": "EFTA00035657",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035657",
+      "title": "August 10, 2019 MCC Draft Public-Affairs Questions and Answers",
+      "description": "EFTA00035657: August 10, 2019 MCC Draft Public-Affairs Questions and Answers. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035657.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "a28ea35fa479a3c1efbbde8c0c598a466ae9e8e04e14e4957e8f2bfc65f9ca9c"
+    },
+    {
+      "id": "EFTA00035715",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00035715",
+      "title": "Annotated floor plan and detail",
+      "description": "EFTA00035715: A two-page PDF contains a floor plan with a black circle and a closer view of the same area. The visible page footers are EFTA00035715 and EFTA00035716.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00035715.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "d774f8be17b195de63d298aaa831478a39bc582edf813b35fe92994bd660a34b"
+    },
+    {
+      "id": "EFTA00039025",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00039025",
+      "title": "DOJ OIG Report 23-085",
+      "description": "EFTA00039025: DOJ OIG Report 23-085. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00039025.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "da15751cca3d5f4ae8564abe74e4c1069bdffc434e97d600fb06844e957ae9a6"
+    },
+    {
+      "id": "EFTA00039660",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00039660",
+      "title": "MCC late-July suicide-watch and psychological-observation status rows",
+      "description": "EFTA00039660: MCC late-July suicide-watch and psychological-observation status rows. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00039660.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "a8763b324b1b9885dd04e7e885db83256870715e68b1f7139eef994837e6e744"
+    },
+    {
+      "id": "EFTA00080260",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00080260",
+      "title": "Leon Black / Rothschild Transaction Exhibit: Limits of a List",
+      "description": "EFTA00080260: Leon Black / Rothschild Transaction Exhibit: Limits of a List. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00080260.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "482bca86e1b17691511c1c23a4d880c8e1bd651633d23745fbefb3685e94d45b"
+    },
+    {
+      "id": "EFTA00646811",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA00646811",
+      "title": "July 2012 Private Valuation Correspondence: Document Scope",
+      "description": "EFTA00646811: July 2012 Private Valuation Correspondence: Document Scope. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00646811.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "9dce311a714c68647175d79cdf6f3daa8cc254b3c1c7ee8891d1ed2d88081313"
+    },
+    {
+      "id": "EFTA01410768",
+      "canonical_url": "https://grokarchivehub.com/archive/EFTA01410768",
+      "title": "July 2019 Confidential Bank-Article Correspondence",
+      "description": "EFTA01410768: July 2019 Confidential Bank-Article Correspondence. Read the source, document context and limits of what this record establishes.",
+      "document_source_url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01410768.pdf",
+      "date_modified": "2026-10-27",
+      "published_dossier_html_sha256": "354548bbc7421dd33d743b0a15f0048f0ac1a2f17fdf6eab01fab97caeea3e06"
+    }
+  ]
+}

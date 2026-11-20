@@ -1303,6 +1303,10 @@ const FRONTDOOR_ROUTE_ASSETS = new Map([
   ["/timelines/epstein-disclosure-timeline", "/timelines/epstein-disclosure-timeline.html"],
   ["/entities/epstein-public-institution-records", "/entities/epstein-public-institution-records.html"],
   ["/entities/epstein-financial-organization-records", "/entities/epstein-financial-organization-records.html"],
+  ["/entities/jpmorgan-chase-epstein-bank-records", "/entities/jpmorgan-chase-epstein-bank-records.html"],
+  ["/entities/deutsche-bank-epstein-records", "/entities/deutsche-bank-epstein-records.html"],
+  ["/entities/gratitude-america-financial-records", "/entities/gratitude-america-financial-records.html"],
+  ["/research-data", "/research-data.html"],
   ["/guides/epstein-files-data-set-9", "/guides/epstein-files-data-set-9.html"],
   ["/guides/doj-epstein-data-sets", "/guides/doj-epstein-data-sets.html"],
   ["/entities", "/entities.html"],
@@ -1515,6 +1519,10 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/timelines/epstein-disclosure-timeline", "2026-11-17"],
   ["https://grokarchivehub.com/entities/epstein-public-institution-records", "2026-11-17"],
   ["https://grokarchivehub.com/entities/epstein-financial-organization-records", "2026-11-17"],
+  ["https://grokarchivehub.com/entities/jpmorgan-chase-epstein-bank-records", "2026-11-19"],
+  ["https://grokarchivehub.com/entities/deutsche-bank-epstein-records", "2026-11-19"],
+  ["https://grokarchivehub.com/entities/gratitude-america-financial-records", "2026-11-19"],
+  ["https://grokarchivehub.com/research-data", "2026-11-19"],
   ["https://grokarchivehub.com/guides/epstein-files-data-set-9", "2026-11-17"],
   ["https://grokarchivehub.com/guides/doj-epstein-data-sets", "2026-11-17"],
   ["https://grokarchivehub.com/photos", "2026-10-23"],
@@ -18983,6 +18991,31 @@ export default {
   async handleStagingFetch(request, env) {
     const url = new URL(request.url);
     const path = cleanPath(url.pathname);
+    // GAH-SEO-EXPORT-001: serve only three reviewed public metadata snapshots.
+    // Explicit allowlist prevents the legacy proof proxy from swallowing CSV/JSON requests.
+    if ((request.method === "GET" || request.method === "HEAD") && url.hostname === APEX_HOST && path.startsWith("/research-data/")) {
+      const formats = new Map([
+        ["/research-data/efta-reviewed-index.json", "application/json; charset=utf-8"],
+        ["/research-data/efta-reviewed-index.csv", "text/csv; charset=utf-8"],
+        ["/research-data/entity-index-reviewed.csv", "text/csv; charset=utf-8"]
+      ]);
+      const mime = formats.get(path);
+      if (!mime) return new Response("Not found", {status:404,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex"}});
+      const assetUrl = new URL(request.url);
+      assetUrl.pathname = path;
+      assetUrl.search = "";
+      const asset = await env.ASSETS.fetch(new Request(assetUrl.toString(), {method:"GET"}));
+      if (!asset.ok) return new Response("Public export unavailable", {status:503,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex"}});
+      const headers = new Headers({
+        "Content-Type":mime,
+        "Content-Disposition":`attachment; filename="${path.split("/").at(-1)}"`,
+        "X-Content-Type-Options":"nosniff",
+        "X-Robots-Tag":"noindex,follow",
+        "Access-Control-Allow-Origin":"*",
+        "Cache-Control":"public, max-age=600"
+      });
+      return new Response(request.method === "HEAD" ? null : asset.body, {status:200,headers});
+    }
     if(path===PATH_012){
       if(String(env?.GAH_STAGING)!=='true'||new URL(request.url).hostname!=='ai-retrieval-012.gah-staging-517b8499.pages.dev'||['0','false'].includes(String(env?.GAH_RESEARCH_012_ENABLED??'true').toLowerCase()))return new Response(JSON.stringify({error:'not_found'}),{status:404,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Robots-Tag':'noindex,nofollow'}});
       const {deepHttp012}=await import('./content/editorial-search-012.mjs');

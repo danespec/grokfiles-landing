@@ -1502,5 +1502,21 @@ export const READER_EDITORIAL_METADATA = {
   "https://grokarchivehub.com/entities/epstein-financial-organization-records": {
     "title": "Epstein Financial Entities: Research Directory",
     "description": "Find published research on banks, trusts, charity accounts, investment vehicles and commissioned reviews with entity-resolution and transaction limits."
-  }
+  },
+  "https://grokarchivehub.com/entities/jpmorgan-chase-epstein-bank-records": {
+    "title": "JPMorgan Epstein SARs: Reporting Timeline",
+    "description": "Reviewed JPMorgan Chase research dossier: Senate SAR reporting timeline, banking evidence, response and limits."
+  },
+  "https://grokarchivehub.com/entities/deutsche-bank-epstein-records": {
+    "title": "Deutsche Bank Epstein: Interview Records",
+    "description": "Reviewed Deutsche Bank dossier: released FBI interviews, financial exhibits and unresolved records."
+  },
+  "https://grokarchivehub.com/entities/gratitude-america-financial-records": {
+    "title": "Gratitude America: Financial Record Dossier",
+    "description": "Reviewed Gratitude America dossier: financial exhibits, internal transfers, outside inquiry and missing sources."
+  },
+  "https://grokarchivehub.com/research-data": {
+    "title": "Research Data: EFTA and Entity Exports",
+    "description": "Download privacy-reviewed EFTA dossier and curated entity metadata in CSV or JSON, with citation and source limitations."
+   }
 };
