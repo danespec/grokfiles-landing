@@ -19,6 +19,14 @@ assert.equal(inventory.distinct_explicit_media_ids,151);
 assert.equal(inventory.original_no_ocr,203342);
 assert.equal(inventory.collections.incoming.files,866599);
 assert.equal(inventory.collections.ocr.files,835022);
+const scan=JSON.parse(fs.readFileSync(path.join(root,'backend/wiki-unified-efta-20261120/ocr-quality-scan-summary-20261120.json'),'utf8'));
+assert.equal(scan.total_ocr_ids,667438);
+assert.equal(scan.excerpt_only_eligible,134346);
+assert.equal(scan.strict_eligible,126698);
+assert.equal(scan.new_strict_eligible,116285);
+assert.equal(scan.prior_indexed,10413);
+assert.equal(12100-scan.prior_indexed,1687);
+
 const policy=fs.readFileSync(path.join(root,'backend/identifier-release-20261027/identifier-host-policy.mjs'),'utf8');
 assert(policy.includes('eftaCatalogFlags(id)'));
 assert(policy.includes('crypto.createHash'));

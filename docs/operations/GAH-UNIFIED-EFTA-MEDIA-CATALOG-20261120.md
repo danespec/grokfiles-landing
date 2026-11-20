@@ -36,3 +36,15 @@ Formats overlap. A video file may be duplicated between datasets; unique recordi
 Source inventory scanner, compact catalog builder and large-OCR candidate quality scanner are included in the backend/wiki-unified-efta-20261120 directory. Original path inventories and full source-content inputs must remain on the authorized NAS; do not add them to public GitHub. Release staging uses a copy of the live wiki gateway and an exact rollback tar, and verifies security/auth/reader-quality hashes.
 
 The complete corpus needs a separate review of OCR coverage, document provenance, version reconciliation, video/audio transcription, embedded PDF imagery, and protected identities before further bulk SEO admission. The automated scanner produces candidate sets, not publication authority. Google discovers candidate URLs only after sitemaps are served and processed; successful discovery does not guarantee indexing or ranking.
+
+## Full OCR admission audit (completed, not automatically published)
+
+A second read-only pass inspected 667,438 conventionally named, distinct OCR text identifiers (55 fewer than the broad filename inventory, because the strict source reader requires exact EFTA########.txt naming). It examined bounded source text with a 2,400-character public excerpt gate and an additional risk-marker scan extending through the initial 64 KB. The precise scan code is in quality-scan.cjs, and aggregate audit results are in ocr-quality-scan-summary-20261120.json.
+
+- Source excerpts passing initial criteria: **134,346**.
+- Also passing the longer 64 KB risk-indicator check: **126,698**.
+- Not previously in the 12,100-site EFTA admission set: **116,285** new candidate identifiers.
+- Previously admitted source IDs that still pass both gates: **10,413**.
+- The remaining **1,687** previously admitted URLs pass the displayed-excerpt gate but fail the deeper 64 KB screening. They require targeted review; failure alone does not demonstrate that the displayed HTML is exposing protected data.
+
+Screening reasons overlap and should not be summed as unique exclusions. The new 116,285 IDs are an **internal review queue**, not additional indexable publications, since regex passes cannot establish that all private names, sealed identifiers, and victim/witness context have been removed from every source. The publisher must preserve the existing controls while assessing these candidates, including a source fingerprint and distinct editorial context or an alternative more useful source snippet. Candidate identifier lists remain off GitHub and out of the public site.
