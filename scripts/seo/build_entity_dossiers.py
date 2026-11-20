@@ -51,7 +51,7 @@ DOSSIERS=[
     "lede":"The public record has several distinct Deutsche Bank evidence lanes: released FBI interview reports, a 2020 investigative email, and a bank-derived exhibit used in a financial reconstruction. They should not be treated as one continuous or proven account.",
     "claims":[
       ("Released interview records","Three Deutsche-linked FBI FD-302 reports were reviewed in the published investigation. They memorialize interviewees’ statements rather than FBI conclusions.","/investigations/wyden-banker-302-deutsche-interviews","Reviewed interview records"),
-      ("August 2020","EFTA00037187 describes investigators engaging a banker and anticipating a proffer. The released chain does not verify that a later interview or proffer occurred.","/archive/EFTA00037187","Released FBI email chain"),
+      ("August 2020","The released FBI email chain describes investigators engaging a banker and anticipating a proffer. The released chain does not verify that a later interview or proffer occurred.","/investigations/wyden-banker-302-deutsche-interviews","Released FBI email chain"),
       ("September 2026","A Senate Finance inquiry described a separate unreleased banker FD-302 without publicly identifying the banker or the bank. The identity must remain unresolved.","/investigations/wyden-banker-302-deutsche-interviews","Source-limited missing-record analysis"),
       ("2015–2019 accounting","EFTA00080260 is a bank-derived exhibit following one Gratitude America account. It does not represent the entirety of that charity’s accounts or banking relationships.","/archive/EFTA00080260","Account exhibit"),
     ],
@@ -64,7 +64,7 @@ DOSSIERS=[
     "research":[
       ("/investigations/wyden-banker-302-deutsche-interviews","Three FD-302s and unresolved banker report"),
       ("/investigations/gratitude-america-money-trail-2015-2019","Bank-derived exhibit and account reconstruction"),
-      ("/archive/EFTA00037187","FBI correspondence EFTA00037187"),
+      ("/investigations/wyden-banker-302-deutsche-interviews","2020 FBI correspondence review"),
       ("/archive/EFTA00080260","Bank exhibit EFTA00080260"),
     ]
   },
