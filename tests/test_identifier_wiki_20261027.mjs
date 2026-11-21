@@ -38,6 +38,7 @@ assert.equal(request('/archive/'+approvedEfta.toLowerCase()).headers.Location,'h
 assert.equal(request('/archive/EFTA00013764').headers.Location,'https://grokarchivehub.com/archive/EFTA00013764','main article still owns its original EFTA');
 assert.equal(request('/archive/EFTA09999999').headers.Location,'https://grokarchivehub.com/archive/EFTA09999999','unreviewed or nonexistent document stays on former route');
 const fullCatalog=request('/catalog');
+assert.match(fullCatalog.body,/action="\/catalog\/search"/);
 assert.equal(fullCatalog.status,200);
 assert.equal(fullCatalog.headers['X-Robots-Tag'],'index,follow');
 assert.match(fullCatalog.body,/EFTA document inventory and source lookup/);
@@ -45,6 +46,10 @@ const mediaCatalog=request('/catalog/media');
 assert.equal(mediaCatalog.status,200);
 assert.equal(mediaCatalog.headers['X-Robots-Tag'],'index,follow');
 assert.match(mediaCatalog.body,/Media-aware EFTA source catalog/);
+assert.match(mediaCatalog.body,/Browse media source identifiers/);
+assert.match(mediaCatalog.body,/Video source IDs \(1\)/);
+assert.match(mediaCatalog.body,/Audio source IDs \(1\)/);
+assert((mediaCatalog.body.match(/EFTA00040012/g)||[]).length>=2);
 const record=request('/catalog/'+sampleId);
 assert.equal(record.status,200);
 assert.equal(record.headers['X-Robots-Tag'],'noindex,follow','Metadata-only exact-ID lookup never becomes a search result');
