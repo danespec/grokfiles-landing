@@ -1,0 +1,25 @@
+{
+  "schema": "gah.media.probe.v1",
+  "timestamp": "2026-11-20",
+  "media_files": 301,
+  "unique_efta_ids": 151,
+  "audio_media_files": 8,
+  "video_media_files": 293,
+  "file_format_counts": {
+    ".avi": 1,
+    ".mp4": 292,
+    ".m4a": 6,
+    ".mp3": 2
+  },
+  "known_audio_tracks": 291,
+  "known_video_tracks": 293,
+  "duration_probed": 301,
+  "total_probe_seconds": 1008438.26,
+  "total_known_hours": 280.12,
+  "probe_states": {
+    "ok": 301
+  },
+  "total_file_bytes": 6256443850,
+  "median_file_bytes": 23876377,
+  "limitations": "Repeated source assets and missing stream metadata are not equivalent to distinct recordings or transcriptions"
+}
