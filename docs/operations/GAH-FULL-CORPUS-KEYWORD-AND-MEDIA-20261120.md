@@ -8,10 +8,10 @@ The Meilisearch indexes already existed: epstein_docs has 670,469 searchable OCR
 
 ## Public ID-only keyword search
 
-- /catalog/search?q=aviation reuses the already deployed grok_ai_search proxy, with fast mode and AI summaries disabled.
+- POST /catalog/search (form body q=aviation) reuses the already deployed grok_ai_search proxy, with fast mode and AI summaries disabled.
 - Exactly validated EFTA######## identifiers and catalog-derived format flags are the only upstream search fields allowed in returned HTML. No OCR text, private names, phone/address data, raw source paths, or upstream error details are displayed.
 - Each hit links to a separate metadata-only exact-ID page. Only the existing 12,100 admissible published EFTA source pages can be followed beyond their metadata lookup. All other source restrictions remain in place.
-- Search results return noindex,follow, no-store, an explicit ad exclusion, restrictive CSP, and no-referrer. Existing wiki auth, rate limiting, analytics and source controls remain unchanged.
+- Search terms are submitted in the POST body rather than a GET query string, avoiding query-text disclosure in browser history, referrers and GA4 page URLs. Search results return noindex,follow, no-store, an explicit ad exclusion, restrictive CSP, and no-referrer. Existing wiki auth, rate limiting, analytics and source controls remain unchanged.
 - A query returns up to 80 ranked matching identifiers; no claim of exhaustively listing all matches or independently adjudicating claims.
 - /catalog embeds the keyword-search form. /catalog/media exposes links to 151 media identifiers (without playback, transcripts or previews). The main homepage links to the wiki keyword-search entry.
 - The wiki editorial sitemap remains 89 entries, the qualified EFTA source sitemap remains 12,100, and individual search-query pages are NOT in either sitemap.

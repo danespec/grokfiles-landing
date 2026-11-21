@@ -1,0 +1,25 @@
+{
+  "source_candidates": 116285,
+  "passed_deep_gate": 116261,
+  "held_risk": 24,
+  "unique_full_ocr_hashes": 116261,
+  "identical_content_duplicate_ids": 0,
+  "duplicate_hash_groups": 0,
+  "duplicate_excess_ids": 0,
+  "ocr_bytes_median": 1524,
+  "ocr_bytes_p90": 4507,
+  "ocr_bytes_mean": 2344.0,
+  "ocr_size_bins": {
+    "800-1499": 56914,
+    "1500-2399": 26748,
+    "2400-3999": 17417,
+    "4000-7999": 13431,
+    "8000-15999": 1337,
+    "16000+": 414
+  },
+  "high_substance_unique_candidates": 15182,
+  "risk_reason_counts": {
+    "deep_screen_clear": 116261,
+    "risk_after_excerpt_window": 24
+  }
+}

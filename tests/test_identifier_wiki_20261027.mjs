@@ -39,6 +39,7 @@ assert.equal(request('/archive/EFTA00013764').headers.Location,'https://grokarch
 assert.equal(request('/archive/EFTA09999999').headers.Location,'https://grokarchivehub.com/archive/EFTA09999999','unreviewed or nonexistent document stays on former route');
 const fullCatalog=request('/catalog');
 assert.match(fullCatalog.body,/action="\/catalog\/search"/);
+assert.match(fullCatalog.body,/method="post"/);
 assert.equal(fullCatalog.status,200);
 assert.equal(fullCatalog.headers['X-Robots-Tag'],'index,follow');
 assert.match(fullCatalog.body,/EFTA document inventory and source lookup/);
