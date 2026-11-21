@@ -22,7 +22,7 @@ const extractId = hit => {
 };
 
 function renderPage({query = '',results = [],message = '',isError = false,submitted = false}) {
-  const form = '<form action="/catalog/search" method="get" role="search">'
+  const form = '<form action="/catalog/search" method="post" role="search">'
     +'<label for="efta-keyword">Search document text and exact EFTA identifiers</label>'
     +'<div><input id="efta-keyword" type="search" name="q" maxlength="120" required value="'+esc(query)+'" placeholder="Enter a document topic, term or EFTA number" style="width:min(100%,36rem);padding:12px">'
     +'<button type="submit" style="padding:12px">Search OCR records</button></div></form>';
@@ -67,12 +67,43 @@ export async function catalogSafeSearchHandler(req,res,{postSearch,catalogFlags}
     'Referrer-Policy':'no-referrer',
     'Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
   };
-  if (method !== 'GET' && method !== 'HEAD') {
-    res.writeHead(405,{...headers,'Allow':'GET, HEAD'});
-    res.end(method==='HEAD'?'':renderPage({message:'This search accepts GET requests only.',isError:true}));
+  if (!['GET','HEAD','POST'].includes(method)) {
+    res.writeHead(405,{...headers,'Allow':'GET, HEAD, POST'});
+    res.end(renderPage({message:'Unsupported search method.',isError:true}));
     return true;
   }
-  const q = String(url.searchParams.get('q') || '').trim();
+  if (method === 'GET' || method === 'HEAD') {
+    res.writeHead(200,headers);
+    const message=url.searchParams.has('q')?'For privacy, submit keyword searches using this form rather than URL parameters.':'';
+    res.end(method==='HEAD'?'':renderPage({message}));
+    return true;
+  }
+  if (!String(req.headers?.['content-type']||'').toLowerCase().startsWith('application/x-www-form-urlencoded')) {
+    res.writeHead(415,headers);
+    res.end(renderPage({message:'Unsupported form content type.',isError:true}));
+    return true;
+  }
+  // Never place a potentially sensitive query in the URL, browser history, referrers or GA4 page_location.
+  const chunks=[];
+  let bodyBytes=0;
+  try {
+    for await (const chunk of req) {
+      const part=Buffer.isBuffer(chunk)?chunk:Buffer.from(chunk);
+      bodyBytes+=part.length;
+      if (bodyBytes>4096) {
+        res.writeHead(413,headers);
+        res.end(renderPage({message:'Search form too large.',isError:true}));
+        return true;
+      }
+      chunks.push(part);
+    }
+  } catch {
+    res.writeHead(400,headers);
+    res.end(renderPage({message:'Invalid search request.',isError:true}));
+    return true;
+  }
+  const params=new URLSearchParams(Buffer.concat(chunks).toString('utf8'));
+  const q=String(params.get('q')||'').trim();
   if (q.length > 120 || /[\u0000-\u001f\u007f]/.test(q)) {
     res.writeHead(400,headers);
     res.end(method==='HEAD'?'':renderPage({message:'The search term is invalid or too long.',isError:true}));
@@ -85,7 +116,7 @@ export async function catalogSafeSearchHandler(req,res,{postSearch,catalogFlags}
   }
   if (q.length < 2) {
     res.writeHead(400,headers);
-    res.end(renderPage({query:q,message:'Enter at least two characters.',isError:true}));
+    res.end(renderPage({message:'Enter at least two characters.',isError:true}));
     return true;
   }
   try {
@@ -105,11 +136,11 @@ export async function catalogSafeSearchHandler(req,res,{postSearch,catalogFlags}
       if (found.length >= 80) break;
     }
     res.writeHead(200,headers);
-    res.end(renderPage({query:q,results:found,submitted:true,message:found.length+' matching source identifiers displayed.'}));
+    res.end(renderPage({results:found,submitted:true,message:found.length+' matching source identifiers displayed.'}));
   } catch (err) {
     // Do not expose internal hostnames, Meilisearch errors, credentials or query data.
     res.writeHead(502,headers);
-    res.end(renderPage({query:q,message:'Keyword search is temporarily unavailable. Exact-ID lookup remains available.',isError:true}));
+    res.end(renderPage({message:'Keyword search is temporarily unavailable. Exact-ID lookup remains available.',isError:true}));
   }
   return true;
 }

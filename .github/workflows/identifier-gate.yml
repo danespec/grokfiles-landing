@@ -27,6 +27,8 @@ jobs:
         run: node tests/test_identifier_release_20261027.mjs
       - name: Verify wiki host and receipt contracts
         run: node tests/test_identifier_wiki_20261027.mjs
+      - name: Verify complete OCR candidate admission audit and content fingerprints
+        run: node tests/test_deep_ocr_review_20261120.mjs
       - name: Verify full-OCR keyword discovery returns IDs only, never raw sensitive source content
         run: node tests/test_fulltext_safe_search_20261120.mjs
       - name: Verify unified 870,835 EFTA source-format catalog and privacy gates

@@ -1,0 +1,21 @@
+{
+  "schema": "gah.deep.ocr.review.v1",
+  "date": "2026-11-20",
+  "input_candidates": 116285,
+  "found_ocr_files": 116285,
+  "unresolved": 0,
+  "source_pdf_confirmed": 116285,
+  "files_with_content_beyond_64kb": 117,
+  "additional_risk_hits": 24,
+  "additional_risk_by_kind": {
+    "phone": 3,
+    "address": 20,
+    "identifiers": 1,
+    "protected": 2
+  },
+  "full_source_fingerprint_count": 116285,
+  "review_ready_flags": 116261,
+  "manual_review_large": 0,
+  "bytes_hashed": 275332614,
+  "errors": 0
+}
