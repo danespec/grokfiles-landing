@@ -1419,7 +1419,7 @@ const TRUST_SITEMAP_ENTRIES = [
 ];
 const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/evidence-library/epstein-ocme-photos-2019", "2026-11-19"],
-  ["https://grokarchivehub.com/atlas/", "2026-11-09"],
+  ["https://grokarchivehub.com/atlas/", "2026-11-25"],
   ["https://grokarchivehub.com/dispatches/doe-v-black-october-2026-dismissal", "2026-10-21"],
   ["https://grokarchivehub.com/dispatches/phang-ecf59-oct16-2026", "2026-10-16"],
   ["https://grokarchivehub.com/news/epstein-wall-street-records-act-2026", "2026-10-20"],
