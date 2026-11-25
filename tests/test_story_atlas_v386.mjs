@@ -27,11 +27,11 @@ assert(html.includes('Florida supervision'));assert(html.includes('Declared NPA 
 for(const s of data.stories) assert(html.includes('id="story-'+s.id.toLowerCase()+'"'));
 console.log('PASS atlas routes, canonical, indexability, sitemap, exact JSON, HEAD, 85 unique story targets, P2 separation');
 
-assert.equal(data.version,'v3.86');
-assert.equal(data.stories.reduce((n,s)=>n+s.anchors.length,0),3276);
+assert.equal(data.version,'v3.87');
+assert.equal(data.stories.reduce((n,s)=>n+s.anchors.length,0),3291);
 assert.equal(data.counts.total_entries,235);
 assert.equal(data.counts.merged_delivery_references,3095);
-assert(html.includes('V3.86') && html.includes('2,350 listing entries processed'));
+assert(html.includes('V3.87') && html.includes('2,400 listing entries processed'));
 const prior=JSON.parse(await fs.readFile(new URL('../content/story-atlas-v3122.json',import.meta.url),'utf8'));
 for(const before of prior.stories){
  const now=data.stories.find(s=>s.id===before.id);assert(now);
@@ -49,7 +49,7 @@ assert.match(data.stories.find(s=>s.id==='P24').stopping_point,/2020-01-31/);
 assert.equal(data.coverage_current.is_ds8_fully_read,false);
 assert.equal(data.coverage_current.partial_queue_total,3899+82+4+55+127);
 assert.equal(data.coverage_current.partial_image_overlap_ids,86);
-assert.equal(data.coverage_current.ds9_current.listing_entries_processed,2350);
+assert.equal(data.coverage_current.ds9_current.listing_entries_processed,2400);
 assert(html.includes('No current DS8 unopened total has been established'));
 assert(!html.includes('Gary Bloxsome (Interlochen'));
 assert(html.includes('withdrawn pending source review'));
@@ -59,3 +59,8 @@ assert(html.includes('[account identifier withheld]'));
 assert(html.includes('atlas-v386.css') && html.includes('atlas-v386.js'));
 assert(html.includes('citation-only') && html.includes('not independent proofs'));
 console.log('PASS all published references and narratives retained; restored stories/fragments, later endpoints, privacy, evidence roles and honest coverage');
+
+const merged=JSON.parse(await fs.readFile(new URL("../content/story-atlas-v386.json",import.meta.url),"utf8"));
+for(const before of merged.stories){const now=data.stories.find(s=>s.id===before.id);for(const key of ["title","tier","endpoint","stopping_point","span"])assert.deepEqual(now[key],before[key]);for(const a of before.anchors)assert(now.anchors.includes(a));assert(now.entry_markdown.startsWith(before.entry_markdown));}
+assert.equal(data.counts.v3130_added_public_references,15);
+console.log("PASS cut 48 adds 15 references without changing any prior endpoint, classification or narrative");

@@ -16,7 +16,7 @@ Menu
 [Skip to content](https://grokarchivehub.com/atlas/#main)
 [GAH GROK ARCHIVE HUB ](https://grokarchivehub.com/)
 
-THE DOCUMENTS, CONNECTED · V3.86
+THE DOCUMENTS, CONNECTED · V3.87
 
 # Story Atlas
 A map of connected stories in the public Epstein document corpus, built from the documents. Follow the people, events, and money through cited records to an endpoint—or the dated point where the trail goes cold.
@@ -246,6 +246,11 @@ v3.80 extension (DS8 protected pass, cut 43). [EFTA00030866](https://grokarchive
 
 - **v3.122:** December 4, 2018 case record memorializes a separate August 2007 interview relevant to the Florida investigation. Protected details and locator withheld; no identity linkage inferred.
 
+**DS9 cut 48 — v3.130 findings, merged without replacing the prior atlas:**
+
+[EFTA00078171](https://grokarchivehub.com/search?q=EFTA00078171) (email dated July 6, 2011, as printed): the office reports a lead from Operation Stolen Globe - an attempted interview of a person about information relating to the 1985 homicide of a man, including statements about an attorney and Epstein's connection to the case; the person had declined to speak to agents in October 2010 without a court-appointed attorney. A prison warden had alerted agents that the person gave a one-hour taped interview that day to two publications about his own case and his knowledge of the circumstances of the homicide. A reported lead and the interviewee's claims as relayed; no finding, and the persons are unnamed or redacted in the text read.
+
+[EFTA00078172](https://grokarchivehub.com/search?q=EFTA00078172) (fax bundle dated April 2, 2010, as printed): a federal grand jury subpoena (FGJ 08-1103, No. 067-013, S.D. Fla., dated March 22, 2010, cover letter March 29, 2010) commands the custodian of records of a wireless carrier to appear before the grand jury in West Palm Beach on April 6, 2010 at 9:30 a.m. and to produce subscriber and detailed billing information from January 1, 2004 to December 31, 2006 for a specified cellular telephone number, with early voluntary turnover requested before April 8, 2010. The carrier's legal-compliance office returned the request on April 2, 2010, noting the number belonged to a different entity of the same carrier group. A request for records; the records themselves and any compliance are not in this document, and the telephone number is not reproduced.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 3 SDNY federal case 2019 Confirmed Verification: V-C
@@ -568,6 +573,14 @@ Additional source-crew material: [EFTA00076624](https://grokarchivehub.com/searc
 Additional source-crew material: [EFTA00077377](https://grokarchivehub.com/search?q=EFTA00077377). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 
 Additional source-crew material: [EFTA00078005](https://grokarchivehub.com/search?q=EFTA00078005). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+**DS9 cut 48 — v3.130 findings, merged without replacing the prior atlas:**
+
+[EFTA00078192](https://grokarchivehub.com/search?q=EFTA00078192) — Draft discovery-disclosure language discusses a witness’s earlier account to police. This is a draft, not an established final disclosure or judicial finding; personal accounts and identifying circumstances are omitted.
+
+[EFTA00078194](https://grokarchivehub.com/search?q=EFTA00078194) (warranty deed dated March 9, 2019, recorded October 23, 2020, as printed): the grantee's name in the March 9, 2019 Laurel Inc. conveyance of the two El Bravo Park lots (already carried via [EFTA00019200](https://grokarchivehub.com/search?q=EFTA00019200)) is legible in this deed's text layer. Grantee name only; the conveyance itself is not a new fact.
+
+[EFTA00078231](https://grokarchivehub.com/search?q=EFTA00078231) (near-duplicate of the carried July 12, 2019 letter, exhibits as printed): the Palm Beach Police incident-report exhibits (Doc 11-3) record that on April 5, 2006 an officer served the parents of a victim, and on April 11, 2006 detectives traveled to a Florida city; the exhibits also record a victim having been told, 'Those who help him will be compensated and those who hurt him will be dealt with.' Exhibit detail from a duplicate filing; the letter itself is already carried via [EFTA00015532](https://grokarchivehub.com/search?q=EFTA00015532) and [EFTA00028785](https://grokarchivehub.com/search?q=EFTA00028785).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 4 MCC detention and death Confirmed Verification: V-C
@@ -1201,6 +1214,24 @@ Additional source-crew material: [EFTA00077219](https://grokarchivehub.com/searc
 Additional source-crew material: [EFTA00077358](https://grokarchivehub.com/search?q=EFTA00077358), [EFTA00077385](https://grokarchivehub.com/search?q=EFTA00077385). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 
 Additional source-crew material: [EFTA00077956](https://grokarchivehub.com/search?q=EFTA00077956), [EFTA00077958](https://grokarchivehub.com/search?q=EFTA00077958), [EFTA00078066](https://grokarchivehub.com/search?q=EFTA00078066). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+**DS9 cut 48 — v3.130 findings, merged without replacing the prior atlas:**
+
+[EFTA00078070](https://grokarchivehub.com/search?q=EFTA00078070) (email dated June 12, 2020, as printed): a Jane Doe civil complaint is circulated internally, with the note that it contains inconsistencies both with incontrovertible facts (for example, her age when she met Epstein) and with her descriptions to the office (for example, a vague reference to threats, references to frequent flights that both she and Maxwell took on the jet, and certain references to her age at the time of certain events). An internal assessment; the complainant is unnamed in the text read and the note is not a finding about the complaint's truth.
+
+[EFTA00078071](https://grokarchivehub.com/search?q=EFTA00078071) (email dated June 12, 2020, as printed): the office is asked to find time early the next week (Monday or Tuesday) to discuss some of the logistics attendant to an arrest timeline. A planning step; the arrest itself is already carried (July 2, 2020).
+
+[EFTA00078072](https://grokarchivehub.com/search?q=EFTA00078072) (email dated June 14, 2020, as printed): counsel for an unnamed person notifies the office she plans vacation travel to Mexico and elsewhere abroad and asks whether that is an issue; a prosecutor writes she is 'inclined to be fine with this,' subject to colleagues disagreeing or seeking further elevation. The traveler is unnamed in the text read and no confirmed clearance is shown.
+
+[EFTA00078073](https://grokarchivehub.com/search?q=EFTA00078073) (emails dated June 12-17, 2020, as printed): the office seeks advice on the draft indictment's overt-acts question - the coercion and conspiracy statutes seem to require identifying a particular state statute the conduct violated, and the office asks whether victims abused in ways not violating a particular state statute could still be treated as conspiracy victims with overt acts alleged as to them. A legal question posed, not a resolution; the attached draft is not in the text read.
+
+[EFTA00078080](https://grokarchivehub.com/search?q=EFTA00078080) (emails dated November 4-5, 2020, as printed): the vendor finished stamping part 5 of the seven-part production, parts 1-3 have been exported from Relativity, and part 4 is at least stamped; staff still plan to ask the judge for an extension but are hopeful the production may be ready sooner than the November 19 date under discussion. Status update; completion is not shown.
+
+[EFTA00078120](https://grokarchivehub.com/search?q=EFTA00078120) (letter dated November 6, 2020, as printed): the Government asks the judge to extend the deadline for the seventh and final electronic-discovery production - about 1.2 million documents from devices seized from Epstein's residences - from November 9 to November 23, 2020, because the outside vendor will not finish Bates-stamping them until November 19. The defense consented only on four conditions (a three-week motions extension; a laptop for Maxwell to review discovery at MDC by November 23; the Minor Victims' names by November 23; all section 3500 material by November 23); the Government agrees to the first two - proposing motions due January 11, 2021, responses February 12, replies February 19, and noting the laptop is already purchased and MDC has agreed once wireless is disabled - and refuses the last two as unrelated to the delay and without legal basis. The letter also records 350,000+ pages already produced in five productions and a sixth production due November 9. This is a request, not a ruling; whether the court granted it is not in the text read.
+
+[EFTA00078198](https://grokarchivehub.com/search?q=EFTA00078198) — Counsel supplied an allegation and supporting images for possible investigation. The account is unproven; this public summary omits the person’s identity, age, location details, image descriptions and identifying circumstances. Image review remains open.
+
+[EFTA00078209](https://grokarchivehub.com/search?q=EFTA00078209) — Counsel requested assistance arranging an overseas client’s participation in the investigation. Prosecutors described limits on immigration assistance and proposed agent contact. A request and response, not proof of the underlying allegation or a completed interview.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 6 Rothstein/Edwards Ponzi dispute Confirmed Verification: V
@@ -1316,6 +1347,12 @@ v3.73 extension (DS8 protected pass, cut 36). [EFTA00017074](https://grokarchive
 **Restored merged-line extensions (source-crew review):**
 
 Additional source-crew material: [EFTA01017472](https://grokarchivehub.com/search?q=EFTA01017472), [EFTA01017475](https://grokarchivehub.com/search?q=EFTA01017475), [EFTA01102153](https://grokarchivehub.com/search?q=EFTA01102153). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+**DS9 cut 48 — v3.130 findings, merged without replacing the prior atlas:**
+
+[EFTA00078185](https://grokarchivehub.com/search?q=EFTA00078185) (order dated August 12, 2020, as printed): Judge Preska denies Maxwell's request for a three-week stay of the unsealing process based on 'critical new information' affecting the civil action and her pending criminal case, holding that because she could not disclose the information under the criminal protective order, the court had no reasonable basis to impose a stay, and that her unsupported assertion did not provide compelling grounds for relief; she could renew the request if the protective order were modified to permit disclosure.
+
+[EFTA00078187](https://grokarchivehub.com/search?q=EFTA00078187) (order dated February 8, 2021, as printed): Judge Preska denies Maxwell's motion for limited reconsideration of the order unsealing 20 lines of her July 2016 deposition transcript (p. 112, line 17 through p. 113, line 12), holding the passage 'does not relate to private sexual activity of consenting adults, but only to massages,' her privacy interest in it was minimal, and the presumption of public access was not outweighed; her suppression arguments were left to the presiding judge in her criminal trial.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 8 Epstein–Bannon contact Confirmed Verification: AV
@@ -4884,7 +4921,7 @@ F-40-1. Post-death fund holds: Honeycomb, Aug 2019 (WS3). EFTA00068100 (DS9, 1 p
 - F-39-1. Bruce Green's filed correction of a professional-role attribution. EFTA00011025 (1 p., filed Sep 4, 2019 in 19-cr-490, Doc. 55) responds to remarks at the Aug 27 hearing: Green says he had never been counsel to Epstein, his estate, or anyone in an Epstein-related case. He distinguishes an expert declaration supporting a motion to disqualify Boies and his firm in a related defamation case from serving as counsel or advocate, and says that expert work ended in June. This is Green's own correction, not an adjudicated finding; it prevents an unsupported counsel-role inference. Single filed letter, no resolution of the underlying litigation established here. Classification: fragment. Links: Story 3, P3.
 
 ## Verification and review scope
-Merged v3.86 over the separately published v3.122: 85 stories, 150 fragments and 3,276 public story-reference entries. The delivery contained 3,095 references; this union preserves every prior public reference as well. References include repeated and citation-only material and are not independent proofs. The partial role ledgers do not establish a complete distinct-substantive total. DS9: 2,350 listing entries processed through cut 47: 1,644 condensed reads, 295 near-duplicates, 376 scans, one lower-confidence OCR read, seven unavailable entries and 27 unobtained media. These are crew-reported reading depths. Latest cuts report 33/33 primary and 25/25 independent checks; cut 42 reports 24/25, and cuts 43–45 are represented by cumulative findings rather than complete validation folders. Prior cuts retain their disclosed check failures and scope adaptations. Source-level validation was not repeated. DS8 and DS9 remain incomplete. No current DS8 unopened total has been established.
+Merged v3.87: prior merged v3.86 plus cut 48 findings only; 85 stories, 150 fragments and 3,291 public story-reference entries. The delivery contained 3,095 references; this union preserves every prior public reference as well. References include repeated and citation-only material and are not independent proofs. The partial role ledgers do not establish a complete distinct-substantive total. DS9: 2,400 listing entries processed through cut 48: 1,684 condensed reads, 299 near-duplicates, 382 scans, one lower-confidence OCR read, seven unavailable entries and 27 unobtained media. These are crew-reported reading depths. Cut 48 reports 33/33 primary and 24/25 independent checks because the grandparent seen.pkl was intentionally withheld; earlier cuts retain their reported results; cut 42 reports 24/25, and cuts 43–45 are represented by cumulative findings rather than complete validation folders. Prior cuts retain their disclosed check failures and scope adaptations. Source-level validation was not repeated. DS8 and DS9 remain incomplete. No current DS8 unopened total has been established.
 **Completed DS8 passes through v3.82:** the actionable first-open pass, non-protected substantive deepening pass, and 1,050-document protected pass are complete at their stated depths. The protected pass added 191 anchors. The v3.82 baseline contains 2,458 story-anchor references across all sets, 82 mapped stories and 139 fragments. These are surveyed counts, not a corpus census.
 The inherited 4,167-document partial queue now comprises 3,899 condensed text-layer reads, 82 opening-only reads, four structure scans, 55 near-duplicates with residual lines read, and 127 bulk items dropped after earlier screening. The image queue contains 223 lower-confidence OCR reads and 165 “No Images Produced” placeholders. The two queues overlap by 86 IDs and must not be added as distinct-document totals. The two earlier capped skips were characterized without an established story connection.
 **Reading method:** condensed reads inspect lines not already read in another document or packet, omitting repeated lines, selected address headers and confidentiality footers. This does not establish human review or a full page-image audit. Opening-only reads and scans are not full reads. A dropped bulk item is a screening decision, not proof it contains no story.
