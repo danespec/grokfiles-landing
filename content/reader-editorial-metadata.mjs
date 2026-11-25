@@ -1391,6 +1391,10 @@ export const READER_EDITORIAL_METADATA = {
     "title": "House Oversight’s Epstein–Maxwell Report",
     "description": "Read the 137-page House Oversight majority staff report and distinguish findings, testimony and proposals from binding legal action."
   },
+  "https://grokarchivehub.com/news/norway-mette-marit-epstein-commission-november-23-2026": {
+    "title": "Norway’s Queen and the Epstein Inquiry",
+    "description": "Norway’s Royal Court declined an inquiry interview Nov. 23. Review 17 EFTA records, their limits and the commission’s January 2028 deadline."
+  },
   "https://grokarchivehub.com/news/phang-appeals-expedited-briefing-november-20-2026": {
     "title": "Phang Appeal: March Argument, DOJ Record Filing",
     "description": "The D.C. Circuit fast-tracks Phang briefing toward March 2027 argument. DOJ filed ECF 68, but the public two-page PDF lacks an itemized record list."
