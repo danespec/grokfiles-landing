@@ -6,11 +6,11 @@
 // merged v3.86 rebind preserves the existing citation memberships, not new edges.
 export const ATLAS_GRAPH_MODEL_REBIND = Object.freeze({
   model_publication_sha256:"ab1a5c339cc025ea50b1b9d430f11ab699273aadc4a5777440ffb25002375760",
-  published_data_sha256:"f27b2bf207e837f605af48f98e986883fd5ddc9a2fbf71768624f0fa5f6964d0",
+  published_data_sha256:"8a4b17c4c44eeefa86761921e4f5204e925c1eae8c6c2f6e17727c0cb18332da",
   published_registry_sha256:"eb6c72e5a1660d0233a6a5a637e3b3d4517f829e2356c637ff464752accda638"
 });
 export const ATLAS_GRAPH_REVIEW = Object.freeze({
-  published_data_sha256:"f27b2bf207e837f605af48f98e986883fd5ddc9a2fbf71768624f0fa5f6964d0",
+  published_data_sha256:"8a4b17c4c44eeefa86761921e4f5204e925c1eae8c6c2f6e17727c0cb18332da",
   published_registry_sha256:"eb6c72e5a1660d0233a6a5a637e3b3d4517f829e2356c637ff464752accda638",
   stories:Object.freeze([
     Object.freeze({id:"3",document_ids:Object.freeze(["EFTA00022062","EFTA02731082"])}),
