@@ -108,6 +108,7 @@ const laterEditorial=[
  'https://grokarchivehub.com/news/mar-a-lago-air-defense-norad-secret-service-faa-records-2026',
  'https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026',
  'https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026',
+ 'https://grokarchivehub.com/news/norway-mette-marit-epstein-commission-november-23-2026',
  'https://grokarchivehub.com/news/phang-appeals-expedited-briefing-november-20-2026',
  'https://grokarchivehub.com/news/phang-fbi-notes-release-order-november-9-2026',
  'https://grokarchivehub.com/news/phang-foreign-language-review-joint-notice-november-2-2026',
