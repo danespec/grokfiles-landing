@@ -1465,7 +1465,7 @@ const CORE_SITEMAP_ENTRIES = [
   ["https://grokarchivehub.com/investigations/epstein-wolff-trump-cnn-emails-2015", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/trump-israel-russia-un-vote-2016", "2026-10-22"],
   ["https://grokarchivehub.com/investigations/trump-acosta-epstein-doj-timeline", "2026-10-22"],
-  ["https://grokarchivehub.com/news/fbi-vault-epstein-review-part-14-october-2026", "2026-10-25"],
+  ["https://grokarchivehub.com/news/fbi-vault-epstein-review-part-14-october-2026", "2026-11-25"],
   ["https://grokarchivehub.com/news/mar-a-lago-air-defense-norad-secret-service-faa-records-2026", "2026-11-02"],
   ["https://grokarchivehub.com/news/epstein-files-2026-campaigns-pre-election-oct29-2026", "2026-11-02"],
   ["https://grokarchivehub.com/news/trump-dow-jones-epstein-birthday-letter-dismissed-october-31-2026", "2026-11-02"],
