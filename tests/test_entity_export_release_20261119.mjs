@@ -19,7 +19,7 @@ const targets=[
   '/entities/gratitude-america-financial-records',
   '/research-data'
 ];
-assert.equal((sitemap.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,182,'original 175 + four reviewed research pages + two verified court publications + one Norway news report');
+assert.equal((sitemap.match(/<loc>/g)||[]).length+(efta.match(/<loc>/g)||[]).length,183,'original 175 + four reviewed research pages + two verified court publications + one Norway news report + one Privacy Act ruling');
 assert.equal((efta.match(/<loc>/g)||[]).length,19,'no newly indexed EFTA dossiers');
 for(const p of targets){
   const r=await get(p),h=await r.text();

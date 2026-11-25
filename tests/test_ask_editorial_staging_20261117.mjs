@@ -12,7 +12,7 @@ const env={GAH_STAGING:'true',GAH_PASSAGE_ENABLED:'true',GAH_NEURAL_ENABLED:'tru
 const request=new Request(stage+'/api/ai/query');
 const ask=(q,e=env)=>askEditorialExtract(q,e,request);
 const post=(q,e=env,host=stage,intent='archive')=>worker.fetch(new Request(host+'/api/ai/query',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,intent})}),e);
-assert.equal(MODEL.documents.length,110);assert.equal(INDEX.documents.length,110);assert.equal(INDEX.passages.length,6612);
+assert.equal(MODEL.documents.length,111);assert.equal(INDEX.documents.length,111);assert.equal(INDEX.passages.length,6627);
 assert(INDEX.documents.every((d,i)=>d.url===MODEL.documents[i].url&&d.source_sha256===MODEL.documents[i].source_sha256));
 const covered=[],coverageRows=[];let supportedBlocks=0,citedPublications=0,exactQueries=0;
 for(const d of MODEL.documents){
@@ -97,5 +97,5 @@ for(const [q,e,host,intent,expected] of [[known,{},'https://grokarchivehub.com',
  const r=await post(q,e,host,intent),a=await r.json();assert.equal(a.answer,'Original upstream response');assert.equal(calls.at(-1),expected);assert(!('path' in a.hits[0]));
 }
 if(process.env.GAH_ASK_VERIFY_OUTPUT)await fs.writeFile(process.env.GAH_ASK_VERIFY_OUTPUT,JSON.stringify({coverage:coverageRows,samples},null,2));
-assert.equal(MODEL.documents.length,110);assert.equal(INDEX.passages.length,6612);
-console.log(JSON.stringify({pass:true,publications:110,passages:6612,publications_with_cited_blocks:citedPublications,cited_blocks:supportedBlocks,title_query_answered:covered.length,title_query_identifier_bypass:exactQueries,title_query_abstained:110-covered.length-exactQueries,samples},null,2));
+assert.equal(MODEL.documents.length,111);assert.equal(INDEX.passages.length,6627);
+console.log(JSON.stringify({pass:true,publications:111,passages:6627,publications_with_cited_blocks:citedPublications,cited_blocks:supportedBlocks,title_query_answered:covered.length,title_query_identifier_bypass:exactQueries,title_query_abstained:111-covered.length-exactQueries,samples},null,2));
