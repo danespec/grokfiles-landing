@@ -45,8 +45,8 @@ jobs:
         run: node tests/test_asset_identity_20261028.mjs
       - name: Verify consolidation policy, canonical homes and receipt twins
         run: node tests/test_publication_policy_20261028.mjs
-      - name: Verify Story Atlas v3.8
-        run: node tests/test_story_atlas_v382.mjs
+      - name: Verify merged Story Atlas v3.86
+        run: node tests/test_story_atlas_v386.mjs
 
       - name: Verify minimized Atlas agent catalog and secure discovery
         run: |

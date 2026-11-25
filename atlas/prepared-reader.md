@@ -16,16 +16,16 @@ Menu
 [Skip to content](https://grokarchivehub.com/atlas/#main)
 [GAH GROK ARCHIVE HUB ](https://grokarchivehub.com/)
 
-THE DOCUMENTS, CONNECTED · V3.122
+THE DOCUMENTS, CONNECTED · V3.86
 
 # Story Atlas
 A map of connected stories in the public Epstein document corpus, built from the documents. Follow the people, events, and money through cited records to an endpoint—or the dated point where the trail goes cold.
-**82** mapped stories
+**85** mapped stories
 **30** confirmed chains
-**52** probable chains
-**139** fragments
+**55** probable chains
+**150** fragments
 
-221 entries · Corpus scope: 1,380,938 documents · 2026-11-17
+235 entries · Corpus scope: 1,380,938 documents · 2026-11-25
 [Explore the stories ↓](https://grokarchivehub.com/atlas/#story-index)[Download the data ↗](https://grokarchivehub.com/atlas/data.json)
 
 **A survey, not a census.** These are mapped stories from surveyed material, not the total number of stories in the files. A confirmed chain confirms only the claim described in that entry. Association does not establish wrongdoing; allegations remain allegations; a proposed meeting does not establish attendance. [See exactly what was examined.](https://grokarchivehub.com/atlas/#coverage)
@@ -34,8 +34,8 @@ FIND A THREAD
 
 ## Story index
 Search titles, dates, people, places, or document IDs. Every entry below remains available without JavaScript.
-Search stories Confidence tier All 82 stories Confirmed chains (30) Probable chains (52)
-82 stories
+Search stories Confidence tier All 85 stories Confirmed chains (30) Probable chains (55)
+85 stories
 
 - [ 1 Palm Beach investigation → 2008 NPA Confirmed ](https://grokarchivehub.com/atlas/#story-1)
 - [ 3 SDNY federal case 2019 Confirmed ](https://grokarchivehub.com/atlas/#story-3)
@@ -86,7 +86,7 @@ Search stories Confidence tier All 82 stories Confirmed chains (30) Probable cha
 - [ P16 S76D demo flight Probable ](https://grokarchivehub.com/atlas/#story-p16)
 - [ P17 Zorro Ranch Moskowitz visit Probable ](https://grokarchivehub.com/atlas/#story-p17)
 - [ P18 New York Times v. Bureau of Prisons FOIA suit → ~2,700-page release Probable ](https://grokarchivehub.com/atlas/#story-p18)
-- [ P19 Epstein's successive wills, 2001–January 2019 Probable ](https://grokarchivehub.com/atlas/#story-p19)
+- [ P19 Epstein's successive wills, 2001–2014 Probable ](https://grokarchivehub.com/atlas/#story-p19)
 - [ P20 Civil forfeiture thread: Epstein properties Probable ](https://grokarchivehub.com/atlas/#story-p20)
 - [ P21 Government of the U.S. Virgin Islands v. Epstein estate Probable ](https://grokarchivehub.com/atlas/#story-p21)
 - [ P22 U.S.–France cooperation on the Brunel investigation Probable ](https://grokarchivehub.com/atlas/#story-p22)
@@ -101,7 +101,7 @@ Search stories Confidence tier All 82 stories Confirmed chains (30) Probable cha
 - [ P31 FBI Victim Services victim-briefing program, Sept 2019–Nov 2020 Probable ](https://grokarchivehub.com/atlas/#story-p31)
 - [ P32 Edwards & Cassell v. Dershowitz defamation suit: depositions, 2015–2016 Probable ](https://grokarchivehub.com/atlas/#story-p32)
 - [ P33 Boris Nikolic separation process, Dec 2012–Jul 2013 Probable ](https://grokarchivehub.com/atlas/#story-p33)
-- [ P34 Leon Black → Southern Trust, 2013: two documented transfers and the Deutsche consolidation Probable ](https://grokarchivehub.com/atlas/#story-p34)
+- [ P34 Leon Black → Southern Trust, 2013–2015: documented transfers and the Deutsche consolidation Probable ](https://grokarchivehub.com/atlas/#story-p34)
 - [ P35 Southern Trust FirstBank account, 2016–2020: funding, a $13M outbound, and the latest advice in the set Probable ](https://grokarchivehub.com/atlas/#story-p35)
 - [ P36 F T Real Estate FirstBank account, 2016–2019 Probable ](https://grokarchivehub.com/atlas/#story-p36)
 - [ P37 The LSJE 9295 wire that came back, Mar–Apr 2019 Probable ](https://grokarchivehub.com/atlas/#story-p37)
@@ -116,9 +116,12 @@ Search stories Confidence tier All 82 stories Confirmed chains (30) Probable cha
 - [ P46 The 2010–2011 new criminal investigation, Jul 2010–Sep 2011 Probable ](https://grokarchivehub.com/atlas/#story-p46)
 - [ P47 Barak's direct requests for Putin meetings via Ambassador Ushakov, May 2013–June 2015 Probable ](https://grokarchivehub.com/atlas/#story-p47)
 - [ P48 Leon Black's $115M Picasso purchase, 2015 Probable ](https://grokarchivehub.com/atlas/#story-p48)
-- [ P49 Epstein–Jes Staley emails, 2009–2011, and SDNY's Dec 2019 contact with the FCA Probable ](https://grokarchivehub.com/atlas/#story-p49)
+- [ P49 Epstein–Jes Staley contact and the 2019 FCA inquiry Probable ](https://grokarchivehub.com/atlas/#story-p49)
 - [ P50 Maxwell's correspondence with "The Invisible Man" (signs "A"; in-thread evidence points to Andrew), 2001–2002 Probable ](https://grokarchivehub.com/atlas/#story-p50)
-- [ P51 Palm Beach Police intelligence entries on Epstein and Maxwell, Dec 2001–Nov 2004 Probable ](https://grokarchivehub.com/atlas/#story-p51)
+- [ P51 The 2001–2004 Palm Beach intelligence file on Epstein and Maxwell Probable ](https://grokarchivehub.com/atlas/#story-p51)
+- [ P52 Southern Trust invoicing Rothschild entities, Dec 2015 Probable ](https://grokarchivehub.com/atlas/#story-p52)
+- [ P53 BBJ YG006 purchase: Epstein's $25.25M Boeing Business Jet negotiation, Sep 2014 – Jun 2015 Probable ](https://grokarchivehub.com/atlas/#story-p53)
+- [ P54 Biosys fund raise — Epstein's conditional $10M LP commitment, Jun–Nov 2014 Probable ](https://grokarchivehub.com/atlas/#story-p54)
 No matching stories. Try another name, date, or ID.
 
 CONNECTED RECORDS
@@ -126,6 +129,8 @@ CONNECTED RECORDS
 ## Confirmed chains 30
 Read each entry’s endpoint, qualifications, and verification status. Open an entry to follow its cited records.
 1 Palm Beach investigation → 2008 NPA Confirmed Verification: V
+**Current dated stopping point:** 2011-08-24 ([EFTA00224943](https://grokarchivehub.com/search?q=EFTA00224943)); documented record to Aug 24, 2011 (SDFL office-wide recusal). Historical paragraphs below retain the dates of their original survey.
+
 Span: Mar 2005–Jun 2008; documented record to Aug 24, 2011.
 Anchors (slice-attributed): DS9 — [EFTA00231917](https://grokarchivehub.com/search?q=EFTA00231917) (1,120 pp
 probable-cause affidavit, Case #05-368), [EFTA00058429](https://grokarchivehub.com/search?q=EFTA00058429),
@@ -244,6 +249,8 @@ v3.80 extension (DS8 protected pass, cut 43). [EFTA00030866](https://grokarchive
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 3 SDNY federal case 2019 Confirmed Verification: V-C
+**Current dated stopping point:** 2019-12-19 ([EFTA02731082](https://grokarchivehub.com/archive/EFTA02731082)); associate inquiry open. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2019.
 Anchors: [EFTA02731039](https://grokarchivehub.com/search?q=EFTA02731039), [EFTA00008529](https://grokarchivehub.com/search?q=EFTA00008529), [EFTA02730486](https://grokarchivehub.com/search?q=EFTA02730486),
 [EFTA02731082](https://grokarchivehub.com/archive/EFTA02731082); DS9 match-only [EFTA00040478](https://grokarchivehub.com/search?q=EFTA00040478), [EFTA00040495](https://grokarchivehub.com/search?q=EFTA00040495);
@@ -546,9 +553,26 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00009933](https://gro
 
 - **v3.122:** March 11, 2019 SDNY correspondence reports drafting a memo on NPA applicability and a cooperation update. Drafting, not a filed ruling; protected details and locator withheld.
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00028785](https://grokarchivehub.com/search?q=EFTA00028785), [EFTA00080349](https://grokarchivehub.com/search?q=EFTA00080349), [EFTA00090773](https://grokarchivehub.com/search?q=EFTA00090773), [EFTA00095871](https://grokarchivehub.com/search?q=EFTA00095871), [EFTA00134151](https://grokarchivehub.com/search?q=EFTA00134151), [EFTA00159321](https://grokarchivehub.com/search?q=EFTA00159321). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00058418](https://grokarchivehub.com/search?q=EFTA00058418), [EFTA01227226](https://grokarchivehub.com/search?q=EFTA01227226), [EFTA01227326](https://grokarchivehub.com/search?q=EFTA01227326), [EFTA01227426](https://grokarchivehub.com/search?q=EFTA01227426), [EFTA01249981](https://grokarchivehub.com/search?q=EFTA01249981), [EFTA01250239](https://grokarchivehub.com/search?q=EFTA01250239). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00018159](https://grokarchivehub.com/search?q=EFTA00018159), [EFTA00073990](https://grokarchivehub.com/search?q=EFTA00073990), [EFTA00076018](https://grokarchivehub.com/search?q=EFTA00076018), [EFTA00076020](https://grokarchivehub.com/search?q=EFTA00076020), [EFTA00076021](https://grokarchivehub.com/search?q=EFTA00076021), [EFTA00076027](https://grokarchivehub.com/search?q=EFTA00076027), [EFTA00076028](https://grokarchivehub.com/search?q=EFTA00076028), [EFTA00076059](https://grokarchivehub.com/search?q=EFTA00076059), [EFTA00076119](https://grokarchivehub.com/search?q=EFTA00076119), [EFTA00076130](https://grokarchivehub.com/search?q=EFTA00076130). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00031086](https://grokarchivehub.com/search?q=EFTA00031086), [EFTA00065102](https://grokarchivehub.com/search?q=EFTA00065102), [EFTA00076273](https://grokarchivehub.com/search?q=EFTA00076273), [EFTA00076617](https://grokarchivehub.com/search?q=EFTA00076617). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00076624](https://grokarchivehub.com/search?q=EFTA00076624). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077377](https://grokarchivehub.com/search?q=EFTA00077377). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00078005](https://grokarchivehub.com/search?q=EFTA00078005). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 4 MCC detention and death Confirmed Verification: V-C
+**Current dated stopping point:** Investigation: OIG correspondence 2019-08-21/23 ([EFTA00027247](https://grokarchivehub.com/search?q=EFTA00027247)); latest dated DS1-8 doc 2019-09-24 ([EFTA00035735](https://grokarchivehub.com/search?q=EFTA00035735)). Historical paragraphs below retain the dates of their original survey.
+
 Span: Jul–Aug 2019.
 Anchors (slice-attributed): DS9 detention — [EFTA00052963](https://grokarchivehub.com/search?q=EFTA00052963)
 (Jul 7, 2019 lieutenant's log), [EFTA00050963](https://grokarchivehub.com/search?q=EFTA00050963) (Aug 11 call
@@ -790,9 +814,29 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00020127](https://gro
 
 - **v3.122:** March 9, 2020 FBI forward of a file about MCC DVR system failures. File contents not included; title alone does not establish the nature of failures. Source: [EFTA00075820](https://grokarchivehub.com/search?q=EFTA00075820).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00024376](https://grokarchivehub.com/search?q=EFTA00024376), [EFTA00029801](https://grokarchivehub.com/search?q=EFTA00029801), [EFTA00033804](https://grokarchivehub.com/search?q=EFTA00033804), [EFTA00034784](https://grokarchivehub.com/search?q=EFTA00034784), [EFTA00034929](https://grokarchivehub.com/search?q=EFTA00034929), [EFTA00035062](https://grokarchivehub.com/search?q=EFTA00035062), [EFTA00035225](https://grokarchivehub.com/search?q=EFTA00035225), [EFTA00035418](https://grokarchivehub.com/search?q=EFTA00035418), [EFTA00035907](https://grokarchivehub.com/search?q=EFTA00035907), [EFTA00035986](https://grokarchivehub.com/search?q=EFTA00035986), [EFTA00036429](https://grokarchivehub.com/search?q=EFTA00036429), [EFTA00036567](https://grokarchivehub.com/search?q=EFTA00036567), [EFTA00036620](https://grokarchivehub.com/search?q=EFTA00036620), [EFTA00039025](https://grokarchivehub.com/archive/EFTA00039025). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+v3.6 (WS-D) extension — OIG report IS in DS9 (correction 1): [EFTA00039025](https://grokarchivehub.com/archive/EFTA00039025) (128 pp, DOJ OIG report 23-085, June 2023 — custody, care, and supervision at the MCC; OPENING depth only — 2,500 of 422,371 chars read) + companions [EFTA00039153](https://grokarchivehub.com/search?q=EFTA00039153) (exhibit list, FULL) and [EFTA00039416](https://grokarchivehub.com/archive/EFTA00039416) (Mar 10, 2020 discovery letter, FULL — also a Story 24 leg). Report concerns custody/care, NOT cause/manner — Story 4’s OCME-relay position UNCHANGED. Also: Jul 17, 2019 Administrative Detention Orders for Efrain Reyes ([EFTA00060708](https://grokarchivehub.com/search?q=EFTA00060708), FULL — whether this Reyes is Epstein’s Aug 9 SHU cellmate is NOT established); Dec 23, 2019 guard FD-302, 482 pp ([EFTA00131726](https://grokarchivehub.com/search?q=EFTA00131726), HEAD — Aug 23, 2019 interview of an MCC escort officer; body alarm ~06:38–06:40); OIG→OCME correspondence, Mar 2, 2022 ([EFTA00063517](https://grokarchivehub.com/search?q=EFTA00063517), OPENING).
+
+v3.6 (WS-E) note — the WS-D findings JSON dropped the WS4 appendix Story 4 leg that its own prose cites; [EFTA00131726](https://grokarchivehub.com/search?q=EFTA00131726) (Dec 23, 2019 guard FD-302, 482 pp., HEAD — Aug 23, 2019 interview of an MCC escort officer; body alarm ~06:38–06:40) verifies per-ID against corpus.db (FTS 1 row, DS9, not already a v3.5 anchor) and is added as a JSON anchor here.
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
+
+v3.124 extension (DS9 reading pass, cut 42). [EFTA00076127](https://grokarchivehub.com/search?q=EFTA00076127) (emails dated Jul 11–12, 2019, following the carried Jul 11 MCC subpoena, [EFTA00028334](https://grokarchivehub.com/search?q=EFTA00028334)): SDNY asks the MCC whether it can get visitor logs and whether that needs a supplemental subpoena. On Jul 12 MCC staff reply that Epstein does not yet have any approved social visitors. The MCC's statement as of that date; staff are not named.
+
+v3.125 extension (DS9 reading pass, cut 43). [EFTA00076603](https://grokarchivehub.com/search?q=EFTA00076603) (emails dated Apr 3, 2020): private counsel for a woman whose case, as the email implies, is in EDNY tells SDNY that the client has tried to cooperate on several SDNY matters, including the investigation into the events surrounding Epstein's death, and that counsel will file, under seal, a motion to reduce her sentence. Counsel attaches the section describing her assistance so as not to misstate it, and asks that, even if SDNY sees no basis for a Rule 35 motion, it tell the court (or let counsel tell it) that she tried to help. SDNY asks to discuss. Counsel's request and characterization; SDNY's position and any filing are not shown, and neither the client nor counsel is named.
+
+Additional source-crew material: [EFTA00076992](https://grokarchivehub.com/search?q=EFTA00076992), [EFTA00077051](https://grokarchivehub.com/search?q=EFTA00077051), [EFTA00077052](https://grokarchivehub.com/search?q=EFTA00077052), [EFTA00077057](https://grokarchivehub.com/search?q=EFTA00077057), [EFTA00077060](https://grokarchivehub.com/search?q=EFTA00077060). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077373](https://grokarchivehub.com/search?q=EFTA00077373), [EFTA00077404](https://grokarchivehub.com/search?q=EFTA00077404), [EFTA00077407](https://grokarchivehub.com/search?q=EFTA00077407), [EFTA00077539](https://grokarchivehub.com/search?q=EFTA00077539). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+v3.129 extension (DS9 reading pass, cut 47). [EFTA00078028](https://grokarchivehub.com/search?q=EFTA00078028) (email dated Aug 12, 2019, as printed): an SDNY official tells colleagues that, that morning, he asked the official in charge of the Inspector General investigation whether SDNY should be recused from the criminal investigation of the MCC and its guards relating to Epstein's death. Per the email, that official saw no basis for recusal and authorized SDNY to convey his view to the Deputy Attorney General's office; on a call with an Associate Deputy Counsel at ODAG the same question was put, ODAG also saw no basis because any possible conflict was too speculative, and running it by the Attorney General's office was described as unnecessary. The email concludes that the office can and should proceed with the criminal investigation. This is the sender's account of oral views; no written recusal decision is in the text read, and the officials are not named here. [EFTA00078026](https://grokarchivehub.com/search?q=EFTA00078026) (emails dated Aug 11–12, 2019, as printed): late on Aug 11, 2019 SDNY asks the FBI for an urgent call and lists ten MCC staff to be interviewed the next day (duty officers, a shift supervisor and staff on the August 9 shifts), the most urgent starred and two agents requested for most. The list says interviewees are to be given Miranda and section 1001 warnings and that subpoenas will follow. On Aug 12 SDNY adds that the U.S. Attorney wants the psychologist who took Epstein off suicide watch interviewed the following day, and an FBI representative is designated for that morning's interview of the Warden. This is an interview plan: which interviews took place, and what was said, is not in this document. The carried Aug 12 legs (FBI and DOJ-IG doing that day's interviews without SDNY, and the summary of three staff interviews) are related but not merged with it. Staff are not named here. [EFTA00077552](https://grokarchivehub.com/search?q=EFTA00077552) (emails dated Aug 11, 2019, as printed): after the U.S. Attorney asks his team to draft a response for the Attorney General to question 4 of Senator Sasse's Aug 10, 2019 letter (the request is carried at [EFTA00023979](https://grokarchivehub.com/search?q=EFTA00023979)), an AUSA notes that the guidance from DOJ's Office of Legislative Affairs (OLA) has been either not to respond or to restate the question and the public record, and proposes text: as the U.S. Attorney stated the day before, the investigation into the conduct charged in the indictment, which included a conspiracy count, remains ongoing, and any evidence or potential testimony relating to it will be handled by the Department accordingly. A colleague replies that the draft is fine. This is a draft for a response; whether it was sent or used by the Attorney General is not shown. [EFTA00077550](https://grokarchivehub.com/search?q=EFTA00077550) carries the earlier part of the same thread and [EFTA00077554](https://grokarchivehub.com/search?q=EFTA00077554) is a near-duplicate; staff are not named here.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 5 Maxwell case Confirmed Verification: V
+**Current dated stopping point:** Nov 2024 en banc denial (Apr 10, 2025 extension outcome not in slice). Historical paragraphs below retain the dates of their original survey.
+
 Span: grand jury → trial → sentence.
 Anchors: [EFTA00008631](https://grokarchivehub.com/search?q=EFTA00008631), [EFTA00008874](https://grokarchivehub.com/search?q=EFTA00008874), [EFTA00031323](https://grokarchivehub.com/search?q=EFTA00031323),
 [EFTA02730486](https://grokarchivehub.com/search?q=EFTA02730486); plus [EFTA00008920](https://grokarchivehub.com/search?q=EFTA00008920), [EFTA00008716](https://grokarchivehub.com/search?q=EFTA00008716), [EFTA00008892](https://grokarchivehub.com/search?q=EFTA00008892),
@@ -1138,9 +1182,30 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00014661](https://gro
 
 - **v3.122:** October 19, 2020 discovery-production copies circulated with staffing and review deadlines. Plan, not completed production. Source: [EFTA00075815](https://grokarchivehub.com/search?q=EFTA00075815).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00010194](https://grokarchivehub.com/search?q=EFTA00010194), [EFTA00015753](https://grokarchivehub.com/search?q=EFTA00015753), [EFTA00015786](https://grokarchivehub.com/search?q=EFTA00015786), [EFTA00015804](https://grokarchivehub.com/search?q=EFTA00015804), [EFTA00016373](https://grokarchivehub.com/search?q=EFTA00016373), [EFTA00017832](https://grokarchivehub.com/search?q=EFTA00017832), [EFTA00018021](https://grokarchivehub.com/search?q=EFTA00018021), [EFTA00018236](https://grokarchivehub.com/search?q=EFTA00018236), [EFTA00018407](https://grokarchivehub.com/search?q=EFTA00018407), [EFTA00018749](https://grokarchivehub.com/search?q=EFTA00018749), [EFTA00018878](https://grokarchivehub.com/search?q=EFTA00018878), [EFTA00021038](https://grokarchivehub.com/search?q=EFTA00021038), [EFTA00021968](https://grokarchivehub.com/search?q=EFTA00021968), [EFTA00022435](https://grokarchivehub.com/search?q=EFTA00022435), [EFTA00024238](https://grokarchivehub.com/search?q=EFTA00024238), [EFTA00024594](https://grokarchivehub.com/search?q=EFTA00024594), [EFTA00024932](https://grokarchivehub.com/search?q=EFTA00024932), [EFTA00026405](https://grokarchivehub.com/search?q=EFTA00026405), [EFTA00026872](https://grokarchivehub.com/search?q=EFTA00026872), [EFTA00026890](https://grokarchivehub.com/search?q=EFTA00026890), [EFTA00026979](https://grokarchivehub.com/search?q=EFTA00026979), [EFTA00027000](https://grokarchivehub.com/search?q=EFTA00027000), [EFTA00027444](https://grokarchivehub.com/search?q=EFTA00027444), [EFTA00027641](https://grokarchivehub.com/search?q=EFTA00027641), [EFTA00028055](https://grokarchivehub.com/search?q=EFTA00028055), [EFTA00028974](https://grokarchivehub.com/search?q=EFTA00028974), [EFTA00029778](https://grokarchivehub.com/search?q=EFTA00029778), [EFTA00030035](https://grokarchivehub.com/search?q=EFTA00030035), [EFTA00030101](https://grokarchivehub.com/search?q=EFTA00030101), [EFTA00030343](https://grokarchivehub.com/search?q=EFTA00030343), [EFTA00030346](https://grokarchivehub.com/search?q=EFTA00030346), [EFTA00030392](https://grokarchivehub.com/search?q=EFTA00030392), [EFTA00030665](https://grokarchivehub.com/search?q=EFTA00030665), [EFTA00030804](https://grokarchivehub.com/search?q=EFTA00030804), [EFTA00031176](https://grokarchivehub.com/search?q=EFTA00031176), [EFTA00031598](https://grokarchivehub.com/search?q=EFTA00031598), [EFTA00031889](https://grokarchivehub.com/search?q=EFTA00031889), [EFTA00031978](https://grokarchivehub.com/search?q=EFTA00031978), [EFTA00032028](https://grokarchivehub.com/search?q=EFTA00032028), [EFTA00032047](https://grokarchivehub.com/search?q=EFTA00032047), [EFTA00032065](https://grokarchivehub.com/search?q=EFTA00032065), [EFTA00032141](https://grokarchivehub.com/search?q=EFTA00032141), [EFTA00032215](https://grokarchivehub.com/search?q=EFTA00032215), [EFTA00032669](https://grokarchivehub.com/search?q=EFTA00032669), [EFTA00037706](https://grokarchivehub.com/search?q=EFTA00037706), [EFTA00038923](https://grokarchivehub.com/search?q=EFTA00038923). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00039796](https://grokarchivehub.com/search?q=EFTA00039796), [EFTA00039815](https://grokarchivehub.com/search?q=EFTA00039815), [EFTA00040230](https://grokarchivehub.com/search?q=EFTA00040230), [EFTA00040235](https://grokarchivehub.com/search?q=EFTA00040235), [EFTA00040593](https://grokarchivehub.com/search?q=EFTA00040593), [EFTA00040820](https://grokarchivehub.com/search?q=EFTA00040820), [EFTA00066190](https://grokarchivehub.com/search?q=EFTA00066190), [EFTA00073623](https://grokarchivehub.com/search?q=EFTA00073623), [EFTA00074696](https://grokarchivehub.com/search?q=EFTA00074696), [EFTA00099135](https://grokarchivehub.com/search?q=EFTA00099135), [EFTA01245616](https://grokarchivehub.com/search?q=EFTA01245616), [EFTA01245618](https://grokarchivehub.com/search?q=EFTA01245618). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00030802](https://grokarchivehub.com/search?q=EFTA00030802), [EFTA00030804](https://grokarchivehub.com/search?q=EFTA00030804), [EFTA00030805](https://grokarchivehub.com/search?q=EFTA00030805), [EFTA00030809](https://grokarchivehub.com/search?q=EFTA00030809), [EFTA00030810](https://grokarchivehub.com/search?q=EFTA00030810), [EFTA00030812](https://grokarchivehub.com/search?q=EFTA00030812). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00076147](https://grokarchivehub.com/search?q=EFTA00076147). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00076183](https://grokarchivehub.com/search?q=EFTA00076183), [EFTA00076276](https://grokarchivehub.com/search?q=EFTA00076276), [EFTA00076294](https://grokarchivehub.com/search?q=EFTA00076294), [EFTA00076461](https://grokarchivehub.com/search?q=EFTA00076461), [EFTA00076463](https://grokarchivehub.com/search?q=EFTA00076463). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077071](https://grokarchivehub.com/search?q=EFTA00077071), [EFTA00077111](https://grokarchivehub.com/search?q=EFTA00077111), [EFTA00077117](https://grokarchivehub.com/search?q=EFTA00077117). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077219](https://grokarchivehub.com/search?q=EFTA00077219), [EFTA00077239](https://grokarchivehub.com/search?q=EFTA00077239), [EFTA00077278](https://grokarchivehub.com/search?q=EFTA00077278), [EFTA00077306](https://grokarchivehub.com/search?q=EFTA00077306). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077358](https://grokarchivehub.com/search?q=EFTA00077358), [EFTA00077385](https://grokarchivehub.com/search?q=EFTA00077385). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077956](https://grokarchivehub.com/search?q=EFTA00077956), [EFTA00077958](https://grokarchivehub.com/search?q=EFTA00077958), [EFTA00078066](https://grokarchivehub.com/search?q=EFTA00078066). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 6 Rothstein/Edwards Ponzi dispute Confirmed Verification: V
+**Current dated stopping point:** 2018-11-27. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2005–Nov 2009 scheme, documented to Jul 2010.
 Anchors: HO 126 → [EFTA01093549](https://grokarchivehub.com/search?q=EFTA01093549) (sample-confirmed, with the
 slice's warning of several near-identical DOJ copies), HO 2884
@@ -1179,9 +1244,15 @@ against Epstein (also a P3 extension).
 v3.2 (WS5) extension: [EFTA00718710](https://grokarchivehub.com/search?q=EFTA00718710) (DS9, Jun 8, 2012): Fred Haddad → Epstein: "Rothstien is as pathetic as Edwards" — "I read the depo, nothing interesting except…" Epstein-side email reacting to the Rothstein deposition. Adds a contemporaneous reaction, not new facts. [EFTA00294244](https://grokarchivehub.com/search?q=EFTA00294244) (DS9, 47 pp): Second Amended Counterclaim, Epstein v. Scott Rothstein, Bradley J. Edwards, and L.M. (Circuit Court, 15th Judicial Circuit, Palm Beach County, case 502009CA040800).
 
 v3.5 (WS1) extension — DS8 metadata-only survey. 1 leg. [EFTA00020703](https://grokarchivehub.com/search?q=EFTA00020703) (Jan 20, 2015 filing, Epstein v. Rothstein, Edwards & L.M., Fla. Circuit Court 502009CA040800): Edwards files a transcript of a telephone [call].
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Nov 2018 dismissal/settlement close: Nov 26 ([EFTA01015468](https://grokarchivehub.com/search?q=EFTA01015468)) Edwards asks whether Epstein is dismissing the case against Rothstein, release under review; Nov 27 ([EFTA01015382](https://grokarchivehub.com/search?q=EFTA01015382)) Edwards’ draft apology language and Epstein’s proposed edit. The filed dismissal order itself was not in the documents read. Documented end moves Jul 2010 → Nov 2018. Also: Bradley Edwards deposition Vol. I, Nov 10, 2017 ([EFTA00800508](https://grokarchivehub.com/search?q=EFTA00800508), 343 pp., HEAD — head + targeted-term depth only, not read cover-to-cover; 207 “Rothstein” mentions). [EFTA01016016](https://grokarchivehub.com/search?q=EFTA01016016) (Nov 21, 2018 Edwards settlement/apology draft) is shared with P3. E-service notice Nov 9, 2018 at HEAD ([EFTA01017063](https://grokarchivehub.com/search?q=EFTA01017063)).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 7 Giuffre v. Maxwell defamation complaint Confirmed Verification: V
+**Current dated stopping point:** Complaint filed (open end in HO); DOJ phrase candidates [EFTA00015726](https://grokarchivehub.com/search?q=EFTA00015726)/[EFTA00594193](https://grokarchivehub.com/search?q=EFTA00594193)/[EFTA00594211](https://grokarchivehub.com/search?q=EFTA00594211) NOT sample-confirmed. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jan 2015 statements as alleged → complaint.
 Anchors: HO 5067, 5069, 5071, plus HO 5074 (damages as
 alleged); DOJ phrase candidates [EFTA00015726](https://grokarchivehub.com/search?q=EFTA00015726), [EFTA00594193](https://grokarchivehub.com/search?q=EFTA00594193),
@@ -1242,9 +1313,14 @@ v3.73 extension (DS8 protected pass, cut 36). [EFTA00017074](https://grokarchive
 
 - **v3.122:** August 20, 2020 Maxwell opening brief, Doc 40, No. 20-2413, challenged unsealing on access, protective-order, Fifth Amendment, fair-trial and privacy grounds and discussed undisclosed criminal-discovery information. Party arguments, not judicial findings. Source: [EFTA00075477](https://grokarchivehub.com/search?q=EFTA00075477).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA01017472](https://grokarchivehub.com/search?q=EFTA01017472), [EFTA01017475](https://grokarchivehub.com/search?q=EFTA01017475), [EFTA01102153](https://grokarchivehub.com/search?q=EFTA01102153). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 8 Epstein–Bannon contact Confirmed Verification: AV
+**Current dated stopping point:** Earliest direct contact: 2017-12-21/22 ([EFTA02604794](https://grokarchivehub.com/search?q=EFTA02604794)); DS11 scheduling: 2018-03-14; HO: 2019-07-06 (HO 21656), open end. Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 2017–Jul 2019, all post–White House exit
 (Bannon left Aug 18, 2017).
 Anchors (slice-attributed): HO — 16092 (Jun 23, 2018) →
@@ -1269,9 +1345,17 @@ Links: none (association/scheduling only — no joint plan
 established).
 
 v3.5 (WS1) extension — DS8 metadata-only survey. 1 leg. [EFTA00027290](https://grokarchivehub.com/search?q=EFTA00027290) (Apr 12, 2021): "there are a number of text messages between Steve Bannon and Jeffrey Epstein on Bannon's iPhone 7. They aren't responsive to our warrant."
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Jul–Aug 2018 mid-span legs: Aug 3, 2018 Epstein→Bannon “keep close!” ([EFTA01004178](https://grokarchivehub.com/search?q=EFTA01004178), FULL); Dec 22, 2017 Epstein→Bannon, body “99” ([EFTA01001217](https://grokarchivehub.com/search?q=EFTA01001217), FULL — same date as the “Morning bro:)” contact; duplicate status vs DS11 thread not established). HEAD: [EFTA01004184](https://grokarchivehub.com/search?q=EFTA01004184), [EFTA01004690](https://grokarchivehub.com/search?q=EFTA01004690), [EFTA01004691](https://grokarchivehub.com/search?q=EFTA01004691), [EFTA01004711](https://grokarchivehub.com/search?q=EFTA01004711), [EFTA01004713](https://grokarchivehub.com/search?q=EFTA01004713), [EFTA01003863](https://grokarchivehub.com/search?q=EFTA01003863). Pre-contact proposals (WS2-only, verified new): Jan 11–12, 2017 Brock Pierce thread — Epstein “im happy to meet bannon if you think wise” ([EFTA00644189](https://grokarchivehub.com/search?q=EFTA00644189), OPENING — PROPOSED meeting only, completion not established; predates earliest documented direct contact by ~11 months); Mar 20, 2017 “Followed up with Bannon on references” ([EFTA00691192](https://grokarchivehub.com/search?q=EFTA00691192), SNIPPET). No endpoint move.
+
+v3.6 (WS-E) note — the WS-D findings JSON dropped 8 WS4 appendix legs that its own Story 8 prose cites; all eight verify per-ID against corpus.db (FTS 1 row each, DS9, none already a v3.5 anchor) and are added as JSON anchors here: Jul–Aug 2018 mid-span legs ([EFTA01004178](https://grokarchivehub.com/search?q=EFTA01004178), [EFTA01001217](https://grokarchivehub.com/search?q=EFTA01001217), [EFTA01004184](https://grokarchivehub.com/search?q=EFTA01004184), [EFTA01004690](https://grokarchivehub.com/search?q=EFTA01004690), [EFTA01004691](https://grokarchivehub.com/search?q=EFTA01004691), [EFTA01004711](https://grokarchivehub.com/search?q=EFTA01004711), [EFTA01004713](https://grokarchivehub.com/search?q=EFTA01004713), [EFTA01003863](https://grokarchivehub.com/search?q=EFTA01003863) — see the WS-D extension paragraph above). [EFTA01001217](https://grokarchivehub.com/search?q=EFTA01001217) duplicate status vs the DS11 thread not established.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 9 Epstein–Wolff correspondence Confirmed Verification: V
+**Current dated stopping point:** 2019-06-13 (HO 16590). Historical paragraphs below retain the dates of their original survey.
+
 Span: May 2016–May 31, 2019.
 Anchors: HO 18596 (May 25, 2016) → HO 22601 (May 31, 2019);
 plus HO 22602 (Apr 10, 2018), HO 16590 (Jun 13, 2019
@@ -1281,9 +1365,15 @@ point).
 Links: 8 (same era, distinct correspondent).
 
 v3.2 (WS5) extension (minor): [EFTA00625806](https://grokarchivehub.com/search?q=EFTA00625806) / [EFTA00634835](https://grokarchivehub.com/search?q=EFTA00634835) / [EFTA00669467](https://grokarchivehub.com/search?q=EFTA00669467) (DS9, May 11–22, 2015): Michael Wolff ↔ Epstein fact-checking thread for the New York magazine piece (Lauren Kern's fact-checking memo forwarded May 5, 2015; Wolff: "I agree. But let's talk about where else.").
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Jan 31, 2019 Epstein→Wolff ([EFTA01028620](https://grokarchivehub.com/search?q=EFTA01028620), FULL — head is the full text): Epstein’s own Jan 2019 claims re Giuffre/Andrew/Trump/Mar-a-Lago — his words, unverified, attribution carried. HEAD scheduling items: [EFTA01007587](https://grokarchivehub.com/search?q=EFTA01007587), [EFTA01007588](https://grokarchivehub.com/search?q=EFTA01007588), [EFTA01007594](https://grokarchivehub.com/search?q=EFTA01007594), [EFTA01009713](https://grokarchivehub.com/search?q=EFTA01009713), [EFTA01014143](https://grokarchivehub.com/search?q=EFTA01014143), [EFTA01014152](https://grokarchivehub.com/search?q=EFTA01014152), [EFTA01040828](https://grokarchivehub.com/search?q=EFTA01040828), [EFTA01040966](https://grokarchivehub.com/search?q=EFTA01040966), [EFTA01041221](https://grokarchivehub.com/search?q=EFTA01041221), [EFTA01042817](https://grokarchivehub.com/search?q=EFTA01042817).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 10 Schwab spring-2019 accounts Confirmed Verification: V
+**Current dated stopping point:** 2019-10-11 (FinCEN BSAR; bank filing, not a finding). Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr–Oct 2019.
 Anchors: [EFTA01265973](https://grokarchivehub.com/search?q=EFTA01265973) (CA11517 referral, Jul 8, 2019),
 [EFTA01265978](https://grokarchivehub.com/search?q=EFTA01265978) (transaction summary/opening dates),
@@ -1309,9 +1399,15 @@ wind-down. Neither is a Story 10 anchor (different accounts,
 different documents).
 
 v3.2 (WS1) cross-link, not an anchor: the Jul 31, 2019 $1,000,000 incoming wire from Southern Country International into the NEPTUNE sub-account ([EFTA01596159](https://grokarchivehub.com/search?q=EFTA01596159), P42) names the Story 10 Schwab-account entity as a funder of a 2019 TD account. Recorded as a cross-link, not a Story 10 anchor (different bank, different account). The Apr 5, 2019 $240,000 + $10,000 incoming wires from Aviation Development Group LLC into the main HBRK account ([EFTA01596113](https://grokarchivehub.com/search?q=EFTA01596113)) name a new entity (Aviation Development Group LLC) in the 2019 money orbit; no further document in this pass ties it to Story 10 or to any other story.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Account-opening legs: Apr 9, 2019 Kahn — STC Schwab application, RK Treasurer, Epstein President/100% beneficial owner ([EFTA01035922](https://grokarchivehub.com/search?q=EFTA01035922), HEAD — head is the full text); Apr 23–24, 2019 outgoing transfer record ([EFTA01252210](https://grokarchivehub.com/search?q=EFTA01252210), HEAD); Jul 31, 2019 SFI email re SARs ([EFTA00151583](https://grokarchivehub.com/search?q=EFTA00151583), HEAD); Jul 13, 2019 FinCEN BSAR transcript — a SECOND SAR, distinct from the Oct 11, 2019 endpoint SAR ([EFTA00151545](https://grokarchivehub.com/search?q=EFTA00151545), HEAD — filing institution/accounts not established from head). No endpoint move.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 11 FirstBank grand-jury subpoena → production Confirmed Verification: V
+**Current dated stopping point:** 2021-06-18 ([EFTA01655040](https://grokarchivehub.com/search?q=EFTA01655040)); afterlife to Jun 2021; prologue Mar 2012 ([EFTA00702348](https://grokarchivehub.com/search?q=EFTA00702348)); no per-account closed dates assertable (OCR-scrambled inventory table). Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 2019–Apr 2020 (prologue Mar 2012; afterlife to Jun 2021).
 Anchors: [EFTA01273238](https://grokarchivehub.com/search?q=EFTA01273238) (Apr 15, 2020 production cover +
 Mar 9, 2020 inventory letter, 6 pp. — LABEL CORRECTED, see
@@ -1340,9 +1436,17 @@ v3.2 (WS1) extension — the production's statement stratum: the 23 FirstBank st
 v3.3 (WS1) extension — transmittal, prologue, afterlife: Apr 15, 2020 21:42 — Holland & Knight (Michael Hantman) → AUSA "Alex": "First Bank Puerto Rico - Production Cover Letter… Please see the attached letter. And if you have a few minutes, let's speak tomorrow." Attachment: "Letter to AUSA *Production* in _ Response_ to_Subpoena.pdf" ([EFTA00091270](https://grokarchivehub.com/search?q=EFTA00091270)). The transmittal email for the Apr 15, 2020 production (distinct from the already-anchored cover letter [EFTA01273238](https://grokarchivehub.com/search?q=EFTA01273238)). Jun 15–16, 2021 — "I have a First Bank PR production. What I have may not be complete. Please provide me a copy of the production." + "we have a subpoena returns from First Bank of Puerto Rico. Do you have those as well?" ([EFTA01655036](https://grokarchivehub.com/search?q=EFTA01655036)). Same thread (Jun 15, 2021): AUSA asks a Deutsche Bank contact to "take a look at the Butterfly Trust account at Deutsche Bank? My understanding is that Maxwell was a beneficiary, but would be interested if you see any notable account activity." (Shared with P10 — the Butterfly Trust review request.) Jun 18, 2021 — "did you get the Bear Stearns and First Bank of Puerto Rico materials from Will? I think he dropped off a CD for you at our security tent earlier this week." ([EFTA01655040](https://grokarchivehub.com/search?q=EFTA01655040)). The FirstBank/Bear Stearns materials arrived by CD in Jun 2021. Mar 20, 2012 — the account-opening decision that created the FirstBank entity accounts (prologue leg): Kahn → Epstein — "I am going to open bank accounts for the following title holding USVI S corps in order to pay real estate taxes: a) Nautilus - Little Saint James b) Laurel - Florida c) Maple - 71st Street d) Cypress - New Mexico. It is easiest to navigate with JPM Chase however i am unclear if you have a preference if these accounts are local USVI First Bank accounts. Please advise JPM or First Bank." Epstein replies "Yes"; Kahn asks "Do you prefer JPM or First Bank to open account?" ([EFTA00702348](https://grokarchivehub.com/search?q=EFTA00702348) + reply-thread copy [EFTA01770077](https://grokarchivehub.com/search?q=EFTA01770077)). Nautilus = Little St. James; Laurel = Florida; Maple = 71st St.; Cypress = New Mexico. Note: the Mar 9, 2020 First Bank inventory letter ([EFTA00065864](https://grokarchivehub.com/search?q=EFTA00065864) / [EFTA01252357](https://grokarchivehub.com/search?q=EFTA01252357), 4 pp. each) is a standalone copy of the inventory letter already anchored inside [EFTA01273238](https://grokarchivehub.com/search?q=EFTA01273238) — NOT a new leg. **No per-account closed dates are asserted** — the v3.2 entry's caution stands: the table's OCR column scrambling is unchanged by this pass; page-image verification was not done.
 
 v3.4 (WS1) — inventory-table verification attempt (text layer, both copies read in full; the two copies are the same letter with different OCR passes — the diff is spacing/line-break noise only; subpoena number SUB-19353 (page image; the text layer reads "SUB-193531", the closing bracket misread as "1") fully readable only in [EFTA00065864](https://grokarchivehub.com/search?q=EFTA00065864)): the table's column semantics are VALIDATED — the 'Opened' date matches bundle first-statement evidence to the day in four cases: Poplar Inc opened 9/19/2016 (bundle: 2 statements Sep 30–Oct 31, 2016, both $0.00; closed 10/31/2016 per the table); Great St Jim LLC opened 09/08/16 (first statement Sep 2016, $0.00 beginning, Sep 8 $2,000 deposit); Gratitude America Ltd opened 02/26/15 (first statement Feb 2015, $0.00 beginning, Feb 26 $1,000 deposit); Southern Trust Company Inc payroll opened 02/22/13 (first statement Feb 2013, $500 deposit Feb 22). **No per-account closed dates are asserted** — the closed dates cannot be verified from the text layer: the Account Number column is empty in the text (numbers redacted/not OCR'd), so duplicate-holder rows (3× Financial Trust, 3× Little St James, 2× Southern Trust, 2× LSJE, 3× Island Grounds) cannot be matched to specific bundles; three 'closed 12/31/19' dates (Jeepers, Thomas World Air, FSF) coincide exactly with the Dec 31, 2019 subpoena cutoff, suggesting an administrative cutoff; Financial Trust closed dates 7/2 and 7/11/2013 precede their bundles' last statements (Jul 30, 2013); the LSJE operating account's stated Mar 4, 2020 closure postdates its bundle's end (Aug 2014) by 5.5 years with no bridging document; the Little St James bundle ([EFTA01272095](https://grokarchivehub.com/search?q=EFTA01272095), Feb 2012–Oct 2018, acct 7221101376) fits no inventory row cleanly. Closed-date verification was attempted by page image in v3.5 (WS5) and is NOT possible from the produced documents: the Account Number column is covered by solid black redaction bars in all three copies of the letter ([EFTA00065864](https://grokarchivehub.com/search?q=EFTA00065864), [EFTA01252357](https://grokarchivehub.com/search?q=EFTA01252357), and the copy attached to [EFTA01273238](https://grokarchivehub.com/search?q=EFTA01273238)) — the numbers were redacted before production, not lost to OCR — so duplicate-holder rows cannot be matched to specific statement bundles. **No per-account closed dates are asserted.** The table's opened/closed dates, statuses, account types, and authorized signers as printed are confirmed from the images and agree with the text-layer transcription (34 rows); the two Little St James rows opened 7/16/1998 and 1/22/2004 read 'Information not available' for authorized signature. Correction: the subpoena number reads SUB-19353 on the page image (the text layer's 'SUB-193531' is the closing bracket misread as '1'); it is redacted in [EFTA01252357](https://grokarchivehub.com/search?q=EFTA01252357).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Feb 8, 2019 FirstBank six-additional-accounts request + beneficial-ownership certification for 13 entities ([EFTA01029263](https://grokarchivehub.com/search?q=EFTA01029263), FULL); Jun 1, 2020 subpoena-returns delivery ([EFTA00085095](https://grokarchivehub.com/search?q=EFTA00085095), FULL; [EFTA00085096](https://grokarchivehub.com/search?q=EFTA00085096), HEAD). HEAD: [EFTA01029275](https://grokarchivehub.com/search?q=EFTA01029275), [EFTA01032176](https://grokarchivehub.com/search?q=EFTA01032176), [EFTA01029219](https://grokarchivehub.com/search?q=EFTA01029219), [EFTA01029221](https://grokarchivehub.com/search?q=EFTA01029221), [EFTA00091833](https://grokarchivehub.com/search?q=EFTA00091833), [EFTA00099226](https://grokarchivehub.com/search?q=EFTA00099226) (corrected from WS4’s “[EFTA01099226](https://grokarchivehub.com/search?q=EFTA01099226)” transcription error), [EFTA00099233](https://grokarchivehub.com/search?q=EFTA00099233). Also: 2018 SDNY subpoena-returns cover note ([EFTA00085094](https://grokarchivehub.com/search?q=EFTA00085094), SNIPPET). No endpoint move.
+
+v3.83 merge — Ren-line JSON anchors not cited literally in the v3.6 prose (12 IDs, now cited here): [EFTA01273079](https://grokarchivehub.com/search?q=EFTA01273079), [EFTA01273082](https://grokarchivehub.com/search?q=EFTA01273082), [EFTA01273089](https://grokarchivehub.com/search?q=EFTA01273089), [EFTA01273102](https://grokarchivehub.com/search?q=EFTA01273102), [EFTA01273118](https://grokarchivehub.com/search?q=EFTA01273118), [EFTA01273122](https://grokarchivehub.com/search?q=EFTA01273122), [EFTA01273131](https://grokarchivehub.com/search?q=EFTA01273131), [EFTA01273138](https://grokarchivehub.com/search?q=EFTA01273138), [EFTA01273139](https://grokarchivehub.com/search?q=EFTA01273139), [EFTA01273143](https://grokarchivehub.com/search?q=EFTA01273143), [EFTA01273149](https://grokarchivehub.com/search?q=EFTA01273149), [EFTA01273181](https://grokarchivehub.com/search?q=EFTA01273181) See changelog §15.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 12 Barak–Putin–Qatar/Carbyne Confirmed Verification: AV
+**Current dated stopping point:** In-slice: 2015-04-23 (10241); DOJ endpoint: 2019-02-19 ([EFTA01030291](https://grokarchivehub.com/search?q=EFTA01030291)/[EFTA01030113](https://grokarchivehub.com/search?q=EFTA01030113)/[EFTA01029469](https://grokarchivehub.com/search?q=EFTA01029469)). Historical paragraphs below retain the dates of their original survey.
+
 Span: May 2013–Feb 2019 (mailbox portion to Mar 2016;
 endpoint DOJ-side).
 Anchors (Barak leak/row IDs): 28024 (May 9, 2013 Putin
@@ -1363,9 +1467,15 @@ its sending is established. Minor extension only.
 v3.2 (WS5) extension — the "Barok" two-guards fact (shared with Story 13): [EFTA01245726](https://grokarchivehub.com/search?q=EFTA01245726) (DS9, FBI EC, Jun 11, 2007, case 31E-MM-108062) and [EFTA01246277](https://grokarchivehub.com/search?q=EFTA01246277) (DS9, FBI EC, Nov 28, 2007, same case). Both carry the same flight-manifest-review paragraph (verified in full context): Maxwell on 16 flights, another person on 80 flights (names redacted/garbled), "the name of Alan Derschowitz" on one manifest, "and a separate manifest with an individual with the name 'Barok' who traveled with two body guards." Neither ID is in v3.1. "Barok" is a Barak spelling variant not previously recorded. The two-guards fact appears in an FBI document from 2007, predating the Dec 2014 trip; the manifest's date is not stated in the passage — do not overclaim which trip. The Nidal/Cohen identity question is unchanged: unproven.
 
 v3.3 (WS3) extension — the "Barok" two-guards fact gains a dated flight-log counterpart (shared with Story 13): the five copies/variants of one flight-log entry in the compiled Epstein flight/call timeline spreadsheet (DS10) — [EFTA01699932](https://grokarchivehub.com/search?q=EFTA01699932), [EFTA01702692](https://grokarchivehub.com/search?q=EFTA01702692), [EFTA01711655](https://grokarchivehub.com/search?q=EFTA01711655), [EFTA01718740](https://grokarchivehub.com/search?q=EFTA01718740) (100 pp., 100 pp., 100 pp., 50 pp.), plus a fifth copy, [EFTA01718251](https://grokarchivehub.com/search?q=EFTA01718251) (76 pp., Dec 14 row garbled in the text layer) — each contains exactly one "Barok" occurrence, all the same entry: Dec 14, 2004, 10:12 PM — "Epstein's Flight departs from PBIA (Gulfstream G-1159B)", passengers: Jeffrey Epstein, "Jenn Katlin", "Barok", "1 SS Secret Service", "1 SS Secret Service", "1 Female", "1 Female". (The inbound leg, Dec 13, 2004, 6:11 PM arrival at PBIA, is a separate row — its passenger list also names Katlin.) What this adds: the FBI EC's undated "Barok … two body guards" manifest now has a dated flight-log counterpart — Dec 14, 2004, with two "SS Secret Service" travelers in the passenger list, matching the two-guards shape. What it does NOT establish: (a) the identification of the passenger "Barok" as Ehud Barak is a **candidate, not confirmed** (Standard §6) — the name is spelled "Barok" in both sources, and the "SS Secret Service" rendering is itself odd for a private citizen's travel in Dec 2004 (Barak then held no government post), which is a reason for caution, not for confirmation; (b) the **destination is not established** — the page images of two copies ([EFTA01718740](https://grokarchivehub.com/search?q=EFTA01718740) p. 29; [EFTA01702692](https://grokarchivehub.com/search?q=EFTA01702692) p. 64) show the spreadsheet has NO destination column at all (columns A–F: Date | Time | Event | From | To | Call length/message info/Passengers; From/To are call fields, empty for flight rows); the return leg (Dec 17, 2004, 10:35 PM) arrives back at PBIA with only Epstein listed ([EFTA01718740](https://grokarchivehub.com/search?q=EFTA01718740) reads 'PBIA' cleanly; 'PAM' in [EFTA01699932](https://grokarchivehub.com/search?q=EFTA01699932) and 'PSIA' in [EFTA01711655](https://grokarchivehub.com/search?q=EFTA01711655) are OCR renderings of the same return airport, not a destination); where the aircraft went Dec 14–17 is not in the spreadsheet, and no tail number appears in any document read, so no FAA/flight-record check is pursuable from this material; (c) the second passenger's NAME is now established as **"Jenn Katlin"** — the page images read "Jenn Katlin" ([EFTA01718740](https://grokarchivehub.com/search?q=EFTA01718740) p. 29) and "[first name redacted] Katlin" ([EFTA01702692](https://grokarchivehub.com/search?q=EFTA01702692) p. 64); the text layer's "Kollin" and "Jenn Kaffir'" were OCR garbles of "Katlin", which also appears as a passenger on Oct 2, 2004 ([EFTA01718251](https://grokarchivehub.com/search?q=EFTA01718251)) and on the Dec 13, 2004 inbound leg ("Kalin", [EFTA01702692](https://grokarchivehub.com/search?q=EFTA01702692) p. 64). **Who Jenn Katlin is is NOT established** — "Katlin" occurs in exactly 2 corpus docs, both this spreadsheet; no identification is claimed. None of the five Bates is in v3.2; "G-1159B" and "Dec 14, 2004" are likewise absent from v3.2; the four docs contain no other "Barak"/"Ehud"/"Israel"/"Putin" token. Cross-reference: P7 (flight-log family).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Carbyne warrants exchange, Feb 14–19, 2019: Feb 14 ([EFTA01029469](https://grokarchivehub.com/search?q=EFTA01029469)) Epstein to Junkermann on letting Barak handle the warrants; Feb 18 ([EFTA01030113](https://grokarchivehub.com/search?q=EFTA01030113)) and Feb 19 ([EFTA01030291](https://grokarchivehub.com/search?q=EFTA01030291)) on giving up warrants. Endpoint moves Feb 4 → Feb 19, 2019. Mid-span: Jun 11, 2018 Barak→Junkermann on the Carbyne B-round ([EFTA01013264](https://grokarchivehub.com/search?q=EFTA01013264)) and Jan 24, 2018 board-report forward ([EFTA01013926](https://grokarchivehub.com/search?q=EFTA01013926)). Further Feb 18–19 items at HEAD ([EFTA01030134](https://grokarchivehub.com/search?q=EFTA01030134), [EFTA01030281](https://grokarchivehub.com/search?q=EFTA01030281), [EFTA01030313](https://grokarchivehub.com/search?q=EFTA01030313)). No completed contract or delivered 2022 Games work documented. Also: Reporty/Carbyne investment text filed as [EFTA00261758](https://grokarchivehub.com/search?q=EFTA00261758) (SNIPPET; duplicates [EFTA00261828](https://grokarchivehub.com/search?q=EFTA00261828), [EFTA00261990](https://grokarchivehub.com/search?q=EFTA00261990) carry the same text).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 13 St. Thomas trip / "Ronen Cohen" Confirmed Verification: AV
+**Current dated stopping point:** In-slice: 2015-02-02 (14998); trip completion rests on DOJ [EFTA00356456](https://grokarchivehub.com/archive/EFTA00356456). Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 2014–Feb 2015.
 Anchors (Barak IDs): 18414 (invitation), 18310 (AA 1275
 proposal), 18018 (Epstein approval), 19004 (itinerary, PNR
@@ -1411,9 +1521,17 @@ v3.2 (WS5) extension — the "Barok" two-guards fact (shared with Story 12): [EF
 v3.3 (WS3) extension — the "Barok" two-guards fact gains a dated flight-log counterpart (shared with Story 12; full text in Story 12's entry above): the compiled Epstein flight/call timeline spreadsheet (DS10) carries one "Barok" entry in five copies — [EFTA01699932](https://grokarchivehub.com/search?q=EFTA01699932), [EFTA01702692](https://grokarchivehub.com/search?q=EFTA01702692), [EFTA01711655](https://grokarchivehub.com/search?q=EFTA01711655), [EFTA01718740](https://grokarchivehub.com/search?q=EFTA01718740), plus a fifth copy, [EFTA01718251](https://grokarchivehub.com/search?q=EFTA01718251) (76 pp., Dec 14 row garbled in the text layer): Dec 14, 2004, 10:12 PM, Epstein's flight departs PBIA (Gulfstream G-1159B), passengers incl. "Jenn Katlin", "Barok" + two "SS Secret Service" travelers. The FBI EC's undated two-guards manifest now has a dated Dec 14, 2004 counterpart. Identification of "Barok" as Ehud Barak remains a **candidate, not confirmed**; the destination is NOT established (the spreadsheet has NO destination column — page-image read, see Story 12); the second passenger's NAME is now established as "Jenn Katlin" (page images: [EFTA01718740](https://grokarchivehub.com/search?q=EFTA01718740) p. 29; [EFTA01702692](https://grokarchivehub.com/search?q=EFTA01702692) p. 64) — who she is is NOT established.
 
 v3.5 (WS3) note — a tension in the record: the Cohen itinerary's return (main 19004, PNR 7HLSOQ) departs Dec 14, 2014 via Miami→London→Tel Aviv, while the Baraks' stated plan was to leave Dec 15 at 2 PM to NY (Nili, Dec 7, 2014, main 18310) and their departure is recorded as Dec 15 ([EFTA00356456](https://grokarchivehub.com/archive/EFTA00356456)). No document shows a change of plan. This does not disprove the hypothesis, but it cuts against its simple form; the hypothesis stays UNPROVEN, with both readings intact.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-C) extension — Nov 2014 Barak mailbox filings as Story 13 prologue legs (trip endpoint unchanged: Dec 12–15, 2014). Oct 27, 2014 — Epstein to Barak, body '99' ([EFTA01000126](https://grokarchivehub.com/search?q=EFTA01000126), DS9) — a content-free contact datapoint; no mailbox counterpart was found (no Epstein-sent row Oct 27, 2014 in any of the four Barak mailbox DBs). Nov 13–14, 2014 — Barak (Nov 13, 10:21 PM): the Baraks met friends of Epstein's at the Breakthrough Prizes event, are in Miami, 'Will be in NY Nov 19-20. I wonder whether you're in town and can meet?'; more materials on 'the Drones investment' to follow; 'We have to let our lawyer with theirs (Viktor Tshuva). And make final decision.' Epstein (Nov 14): 'lets talk when you have time' ([EFTA01000304](https://grokarchivehub.com/search?q=EFTA01000304)). Barak: 'Which # to use?' — Epstein replies with a phone number and '99' ([EFTA01001305](https://grokarchivehub.com/search?q=EFTA01001305) / [EFTA01001312](https://grokarchivehub.com/search?q=EFTA01001312), two filings of one Nov 14 thread; the number is not reproduced here). The Nov 19–20 meeting is PROPOSED only — never presented as held; completion is NOT established, and no attendance record exists among the documents read. Nov 18, 2014 — Epstein: 'I will fly to ny tomorw stay until sat' ([EFTA01000940](https://grokarchivehub.com/search?q=EFTA01000940)) — a travel plan consistent with being in town for the proposed window, not a meeting record. (Barak's mailbox-side reply, main 16998: 'Great. Let's meet there.' — prospective, not an attendance record.) Nov 15–22, 2014 — the Sun Spark forward ([EFTA01001318](https://grokarchivehub.com/search?q=EFTA01001318)) and the Tshuva-attorneys exchange ([EFTA01001395](https://grokarchivehub.com/search?q=EFTA01001395), [EFTA01001400](https://grokarchivehub.com/search?q=EFTA01001400)) show contact continuing past the proposed window, with no meeting record; their investment substance is fragment F-40-10, shared anchors here. Cross-set duplicate status (Barak mailbox, content-level; method in the WS-C report): standalone duplicates — [EFTA01000940](https://grokarchivehub.com/search?q=EFTA01000940) (main 16909), [EFTA01001318](https://grokarchivehub.com/search?q=EFTA01001318) (main 16727), [EFTA01001395](https://grokarchivehub.com/search?q=EFTA01001395) (main 16879); embedded-only duplicates — [EFTA01000304](https://grokarchivehub.com/search?q=EFTA01000304) (main 17005), [EFTA01001400](https://grokarchivehub.com/search?q=EFTA01001400) (main 16644); [EFTA01001305](https://grokarchivehub.com/search?q=EFTA01001305)/[EFTA01001312](https://grokarchivehub.com/search?q=EFTA01001312) — the thread they reply to is in main 17005, but the replies themselves have no standalone mailbox copy; [EFTA01000126](https://grokarchivehub.com/search?q=EFTA01000126) — no counterpart found.
+
+v3.6 (WS-D) correction 10 — "Ronen Cohen" UNPROVEN stands, with nuance: "Ronen Cohen" = 0 hits and "COHEN/RONEN" = 0 in DS9 FTS text; but [EFTA00584149](https://grokarchivehub.com/search?q=EFTA00584149) contains "Ronen (Haim) Cohen" in a "Capital Table - L&S Light and Strong" (126,582 shares) — a full name existing in DS9 as a shareholder in an Israeli company cap table, with no link in the items read to St. Thomas, Dec 2014, or AA 1275. The exact-phrase absence claim is scoped to the searched text; the cap-table name is a different context, not a new footprint for the Dec 2014 itinerary passenger.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 14 Renova / Hungary + CIFC board Confirmed Verification: V
+**Current dated stopping point:** 2018-04-07 ([EFTA00841830](https://grokarchivehub.com/search?q=EFTA00841830)/[EFTA00842063](https://grokarchivehub.com/search?q=EFTA00842063)); no signed Hungary agreement in-slice. Historical paragraphs below retain the dates of their original survey.
+
 Span: Mar 2013–Mar 2016.
 Anchors (Barak IDs): 1753, 25516, 25953, 21767, 22505,
 20135, 19598, 19616, 2796.
@@ -1421,9 +1539,15 @@ Endpoint: OPEN — Hungary outcome and formal CIFC election
 vote unresolved in-slice. Dated stopping point:
 Mar 16, 2016 (2796); no signed Hungary agreement in-slice.
 Links: 12, 15.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Oct 23, 2014 Renova letter ([EFTA01139359](https://grokarchivehub.com/search?q=EFTA01139359), HEAD — head is the full text): Barak to Epstein on the letter sent to Viktor’s people. Apr 7, 2018 ([EFTA00841830](https://grokarchivehub.com/search?q=EFTA00841830), [EFTA00842063](https://grokarchivehub.com/search?q=EFTA00842063), HEAD): Epstein→Barak on Vekselberg’s designation for operating in the energy sector of the Russian Federation economy; Barak replies “Let’s discuss it when we meet next time.” Span extends Mar 2016 → Apr 7, 2018. The Apr 6, 2018 OFAC-designation context is to be verified from the document, not assumed. Thin Feb 5, 2018 item at HEAD ([EFTA00893776](https://grokarchivehub.com/search?q=EFTA00893776)).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 15 Kazakhstan / IIAC Confirmed Verification: V
+**Current dated stopping point:** 2016-03-18 (2485). Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 2014–Mar 2016.
 Anchors (Barak IDs): 30162 (Feb 20, 2014 Nazarbayev
 meeting photos), 22813 (Apr 2014 documented non-meeting
@@ -1438,6 +1562,8 @@ Links: 14.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 16 Guardicore via TrueSec Confirmed Verification: V
+**Current dated stopping point:** 2016-04-27 in-body (2879). Historical paragraphs below retain the dates of their original survey.
+
 Span: Sep 2013–Apr 2016.
 Anchors (Barak IDs): 23048/23144, part01:2403/2588, 2749
 (TrueSec owns 9.11%), 2879; plus 25739, 25849, 25896
@@ -1445,9 +1571,15 @@ Anchors (Barak IDs): 23048/23144, part01:2403/2588, 2749
 Endpoint: OPEN — Apr 2016 financing round, Barak CC'd.
 Dated stopping point: Apr 27, 2016 in-body (2879).
 Links: 12 (same investment orbit).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Sep 30, 2015 Barak→Epstein re Guardicore ([EFTA00844824](https://grokarchivehub.com/search?q=EFTA00844824), HEAD): “I’ve talked of two companies. It happened that he’d raised the third one Guardicore, he knows the company, the CEO and of my involvement. Let’s see.”
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 17 Temko book project Confirmed Verification: V
+**Current dated stopping point:** 2016-03-20/21 (30117/3196). Historical paragraphs below retain the dates of their original survey.
+
 Span: Oct 2014–Mar 2016.
 Anchors (Barak IDs): 16481, 17353, 15638, 30117/3196;
 plus 11594 chain (Jun 18, 2015 Agranat-research question,
@@ -1456,9 +1588,15 @@ Endpoint: OPEN — Ch. 11 draft delivered, Ch. 12 awaited,
 editing stage ahead; publication not in slice. Dated
 stopping point: Mar 20/21, 2016 (30117/3196).
 Links: none.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — May 15, 2010 chapter deliveries ([EFTA00759245](https://grokarchivehub.com/search?q=EFTA00759245), [EFTA00759246](https://grokarchivehub.com/search?q=EFTA00759246), [EFTA00759247](https://grokarchivehub.com/search?q=EFTA00759247), [EFTA00759248](https://grokarchivehub.com/search?q=EFTA00759248), FULL): Wegg-Prosser forwards Temko’s files — “first three”, “next three”, “7-9”, “10-12” (pmintroA, pmch1A–pmch12A filenames). A 12-chapter draft existed in 2010; attachment contents NOT in the DS9 text layer. See correction 7 — endpoint now reads “Ch. 12 (2016 revision) awaited”.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 18 Epstein–Barak paid arrangement (negotiation/claim only) Confirmed Verification: V
+**Current dated stopping point:** 2013-12-20. Historical paragraphs below retain the dates of their original survey.
+
 Span: Nov–Dec 2013.
 Anchors (Barak IDs): 25589 ($5M through March, then $2M/yr
 + profit %), 25005, 24975 (money six weeks overdue).
@@ -1471,6 +1609,8 @@ Links: 12 (same relationship, distinct arc).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 19 Barak–Epstein–Chomsky Cambridge meeting Confirmed Verification: V
+**Current dated stopping point:** 2015-09-27 photo reply (9406) closing it; meeting content not speculated on. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jun–Sep 2015.
 Anchors (Barak IDs): 12337, 7558, 7529 (Sep 10 proposal),
 9406 (Sep 27 photo reply closing it).
@@ -1479,9 +1619,15 @@ Chomsky reply confirms photo ("Good photos. Good
 memories."). Content of the meeting is not in rows read
 and is not speculated on.
 Links: none.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Chomsky’s “To whom it may concern” letter ([EFTA00804504](https://grokarchivehub.com/search?q=EFTA00804504), FULL): met Epstein “half a dozen years ago”, “regular contact since”, “highly reliable source” on finance, “highly valued friend”; Barak/Taba Jan 2001 discussion; Epstein-arranged meetings with scientists. Undated in the text layer — no date asserted. Association only.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 20 Reporty investment arc Confirmed Verification: V
+**Current dated stopping point:** 2016-02-22 (28568). Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 2014–Feb 2016.
 Anchors (Barak IDs): 15720, 15518 ($1.5MM for 25% + 6%
 director shares), 14308, 28568 (Thiel/JE fund seniors
@@ -1504,9 +1650,15 @@ change; no new endpoint.
 v3.2 (WS5) extension: [EFTA01021714](https://grokarchivehub.com/search?q=EFTA01021714) / [EFTA01021715](https://grokarchivehub.com/search?q=EFTA01021715) (DS9, Sep 27, 2018): Barak → Epstein, "Carbine/Reporty - SUM warrants", with attachments (SUM 2015 Limited Partnership Amended Partnership Agreement — SIGNED; "Re- SUM E.if. 2015 Limited Partnership"). Two copies of one email (02:57 and 03:04). Barak transmitting the signed SUM partnership agreement to Epstein. ("Carbine" is the OCR rendering of Carbyne.) [EFTA01020722](https://grokarchivehub.com/search?q=EFTA01020722) (DS9, Oct 5, 2018): Barak → Epstein, same thread: "Can we talk now?"
 
 v3.3 (WS2) extension — minor leg: the Reporty Homeland Security Ltd Business Plan 2014 ([EFTA01074376](https://grokarchivehub.com/search?q=EFTA01074376), DS9, 40 pp.) lists "NowForce — created to keep emergency response and security organizations connected, thereby minimizing response times and maximizing situational awareness," among market comparables (p. 26). The plan names no Barak, Bendheim, Yatom, or Epstein in its text layer (0 occurrences of each). It is a Reporty document first; the Nowforce mention is incidental to it. No endpoint change (Story 20 stays OPEN to Feb 2016). Shared with P44, where the outside-the-mailbox Nowforce chase is recorded.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Dec 2014 legs (HEAD unless noted): Dec 3 Barak→Yoel/Indyke/Udi on an EB investment in Reporty ([EFTA01001753](https://grokarchivehub.com/search?q=EFTA01001753)); Dec 3 Barak↔Epstein “Let’s move before someone else clever enough will grab them” / “agreed” ([EFTA01001714](https://grokarchivehub.com/search?q=EFTA01001714), [EFTA01001722](https://grokarchivehub.com/search?q=EFTA01001722), [EFTA01001734](https://grokarchivehub.com/search?q=EFTA01001734)); Dec 4 Epstein forwards Reporty materials to Junkermann ([EFTA01002879](https://grokarchivehub.com/search?q=EFTA01002879)); Dec 10 Indyke ([EFTA01002368](https://grokarchivehub.com/search?q=EFTA01002368)); Dec 18 Epstein→Barak on the Reporty CEO meeting ([EFTA01003380](https://grokarchivehub.com/search?q=EFTA01003380), FULL); Dec 26 Barak↔Epstein on the 1st-year forecast ([EFTA01003212](https://grokarchivehub.com/search?q=EFTA01003212)). Extension past Feb 2016: “REPORTY MONTHLY REPORT 12/2016” ([EFTA00614842](https://grokarchivehub.com/search?q=EFTA00614842), HEAD) — operating into late 2016; convertible bridge financing up to $3.5M, closing by Oct 1, 2017, effective date/payer blank, Epstein participation NOT established ([EFTA00583693](https://grokarchivehub.com/search?q=EFTA00583693), HEAD).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 21 Birthday book Confirmed Verification: AV
+**Current dated stopping point:** 2016-01-21. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2002 → Jan 2016.
 Anchors (DS11 leg verified): [EFTA02332441](https://grokarchivehub.com/search?q=EFTA02332441), [EFTA02330094](https://grokarchivehub.com/search?q=EFTA02330094),
 [EFTA02330286](https://grokarchivehub.com/search?q=EFTA02330286), [EFTA02330116](https://grokarchivehub.com/search?q=EFTA02330116); plus [EFTA02296338](https://grokarchivehub.com/search?q=EFTA02296338), [EFTA02327304](https://grokarchivehub.com/search?q=EFTA02327304).
@@ -1519,9 +1671,17 @@ the v1.1 removal was a slice-report coverage failure.
 Endpoint: solicited 2002, bound + FedEx'd to island Jan 20,
 2016, arrival + receipt confirmed Jan 21, 2016.
 Links: none.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — No new JSON anchors in this pass: the five DS9 legs ([EFTA00330550](https://grokarchivehub.com/search?q=EFTA00330550)/51/76/78/79) are already v3.5 JSON anchors (see correction 3). Endpoint wording corrected (correction 2). The 2025 subpoena/FOIA arc ([EFTA00172112](https://grokarchivehub.com/search?q=EFTA00172112), [EFTA00163570](https://grokarchivehub.com/search?q=EFTA00163570)/1786/1802) is candidate (e) for WS-A/B/C — placement (Story 21 extension vs distinct institutional arc) is theirs.
+
+v3.6 (WS-C) extension — Story 21 afterlife, 2025 (endpoint UNCHANGED: Jan 21, 2016; span extends to Sep 9, 2025). Aug 26, 2025 — FBI internal email, 'FOIAs 1678456, 1676982, and 1676958 — Epstein, Jeffrey — Birthday Book Requests' ([EFTA00172112](https://grokarchivehub.com/search?q=EFTA00172112), DS9, 1 p., read in full): 'We have received several requests on the subject of Jeffrey Epstein's "birthday book" that was said to be compiled by Ghislaine Maxwell for his 50th birthday celebration. Upon reviewing the files on Epstein, 50D-NY-3027571 and 90A-NY-3151227, we were unable to locate the book or birthday letters. We need to confirm whether the FBI has a copy of the birthday book/cards and whether it's within the investigative file.' The attached request letters (Aaron Brager, Reliable Resources, NBC) are not in the text layer. The 'unable to locate' finding is scoped to the files reviewed — it is not a finding that the FBI has no copy. Aug 26, 2025 — FBI Daily News Briefing ([EFTA00163570](https://grokarchivehub.com/search?q=EFTA00163570), DS9, read in full): press summary (USA Today, Aug 25) that the House Oversight Committee subpoenaed Epstein's estate for the birthday book (alleged Trump note), with a September 8 deadline; the subpoena itself is not in DS9 as read. Sep 9, 2025 — FBI Daily News Briefings ([EFTA00163786](https://grokarchivehub.com/search?q=EFTA00163786), read in full; [EFTA00163802](https://grokarchivehub.com/search?q=EFTA00163802), targeted read of the birthday-book item): press summaries (Wall Street Journal, Sep 8) that lawyers for Epstein's estate turned over 'a professionally bound birthday book from Epstein's 50th birthday to the House Oversight Committee', including a letter bearing President Donald Trump's signature, which he denies, alongside messages from figures such as former President Bill Clinton and Leon Black, with Maxwell's prologue and closing note — and (Sep 9) that the White House would support a handwriting expert examining the signature. The turnover is press-reported, not documented by a turnover receipt in DS9 as read, and the authenticity dispute is carried as the parties' and press's statements only. Placement: Story 21 extension, not a distinct arc — the subject is the same object, and the 2025 material has no standalone arc of its own in the documents read (no subpoena text, no turnover receipt, no FOIA release).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 22 Barak May 2017 NY stay Confirmed Verification: V
+**Current dated stopping point:** 2017-06-12 ([EFTA02215022](https://grokarchivehub.com/search?q=EFTA02215022)). Historical paragraphs below retain the dates of their original survey.
+
 Span: May–Jun 2017 (v1's "May 2017" extended: slice span
 runs to Jun 12, 2017, [EFTA02215022](https://grokarchivehub.com/search?q=EFTA02215022)).
 Anchors: [EFTA02213080](https://grokarchivehub.com/search?q=EFTA02213080), [EFTA02213078](https://grokarchivehub.com/search?q=EFTA02213078), [EFTA02213401](https://grokarchivehub.com/search?q=EFTA02213401),
@@ -1533,9 +1693,15 @@ stay completed. WORDING CORRECTED: attendance at the
 May 19 meeting is not separately evidenced. DS11-distinct
 in probe.
 Links: 13.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.83 merge — Ren-line JSON anchors not cited literally in the entry prose above (2 IDs, now cited here): [EFTA02213688](https://grokarchivehub.com/search?q=EFTA02213688), [EFTA02214791](https://grokarchivehub.com/search?q=EFTA02214791) See changelog §15.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 23 LSJ island visit, Jan 16, 2018 Confirmed Verification: AV
+**Current dated stopping point:** 2018-01-16; Mar 2018 follow-on leg ([EFTA02239762](https://grokarchivehub.com/search?q=EFTA02239762)). Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 2017–Jan 2018.
 Anchors (DS11 leg verified): [EFTA02232620](https://grokarchivehub.com/search?q=EFTA02232620), [EFTA02235036](https://grokarchivehub.com/search?q=EFTA02235036),
 [EFTA02235118](https://grokarchivehub.com/search?q=EFTA02235118); plus [EFTA02234396](https://grokarchivehub.com/search?q=EFTA02234396)/02234539, [EFTA02235070](https://grokarchivehub.com/search?q=EFTA02235070),
@@ -1546,9 +1712,15 @@ Jan 16) — exists in DS9 with text; the v1.1 removal was a
 slice-report coverage failure.
 Endpoint: "They arrived" Jan 16, 2018.
 Links: none.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.83 merge — Ren-line JSON anchors not cited literally in the entry prose above (1 IDs, now cited here): [EFTA02234539](https://grokarchivehub.com/search?q=EFTA02234539) See changelog §15.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 24 U.S. v. Noel & Thomas — the MCC guards prosecution, 19 Cr. 830 Confirmed Verification: V
+**Current dated stopping point:** 2022-01-03 nolle prosequi. Historical paragraphs below retain the dates of their original survey.
+
 Span: Aug 14, 2019–Jan 3, 2022.
 Anchors: [EFTA00032382](https://grokarchivehub.com/search?q=EFTA00032382), [EFTA00027109](https://grokarchivehub.com/search?q=EFTA00027109) (Aug 14, 2019 subpoenas to Noel's
 counsel); [EFTA00009747](https://grokarchivehub.com/search?q=EFTA00009747) (indictment, Doc 1, filed Nov 19, 2019 — six
@@ -1659,9 +1831,17 @@ v3.66 extension (DS8 deepening pass, cut 29). [EFTA00029185](https://grokarchive
 
 - **v3.122:** November 18, 2019 draft press release anticipated an indictment the next morning. Draft, not the issued release. Source: [EFTA00075811](https://grokarchivehub.com/search?q=EFTA00075811).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Discovery legs: Mar 10, 2020 SDNY letter ([EFTA00039416](https://grokarchivehub.com/archive/EFTA00039416), FULL) — Jul 23, 2019 SHU video produced; Aug 9 phone-call/escort times (18:53:54–18:54:46; 19:49:25–19:49:39); forensic exam of Noel/Thomas computers. Oct 13, 2020 Rule 16 letter ([EFTA00066050](https://grokarchivehub.com/search?q=EFTA00066050), FULL) — ~45,000 MCC emails, Sep 17, 2019 Psychological Reconstruction, Aug 9–10 Watch Calls. Oct 14, 2020 Production 6 ([EFTA00066074](https://grokarchivehub.com/search?q=EFTA00066074), FULL). Nov 26, 2021 nolle memo ([EFTA00068558](https://grokarchivehub.com/search?q=EFTA00068558), FULL) — run-up to the Jan 3, 2022 endpoint.
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
+
+v3.127 extension (DS9 reading pass, cut 45). [EFTA00077218](https://grokarchivehub.com/search?q=EFTA00077218) (note dated Jan 4, 2021, as printed): an SDNY prosecutor records a call from defense counsel for one of the two charged officers about the Court's email on a status conference. Counsel asked whether the Government wanted a conference that month (the prosecutor said nothing came to mind and he would check), asked whether a former inmate who had died was Epstein's cellmate (the prosecutor said yes), said he would like to make another deferred-prosecution pitch in the coming months, and suggested a March or April conference. One side's note of a call; counsel and the officer are not named here. [EFTA00077325](https://grokarchivehub.com/search?q=EFTA00077325) (21 pp.; application dated February 26, 2021, as printed): defense counsel's formal application for a deferred prosecution agreement for one of the two charged MCC officers in 19 Cr. 830 (AT). It invokes the Title 9 principles of federal prosecution and asks to meet the decision-making team. It says a December 17, 2019 Government letter estimated a guidelines range of 10–16 months. It argues that the officer had no special instructions on monitoring Epstein, that August 10, 2019 was her first midnight shift there and her first shift on the unit with her co-defendant, that she did not agree to falsify the count and round records, and that long-term understaffing, forced overtime and triple shifts at the MCC, inadequate training, collateral consequences, precedent and COVID-19 favor diversion. Defense advocacy, not findings; the April–May 2021 deferred prosecution agreements already in this entry are the later outcome. Personal, medical and background details are not reproduced, and the officer and counsel are not named here.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 25 DOJ Office of Professional Responsibility investigation of the 2008 NPA Confirmed Verification: V
+**Current dated stopping point:** 2020-11 Executive Summary. Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 2010–Nov 2020.
 Anchors: [EFTA00019480](https://grokarchivehub.com/search?q=EFTA00019480) (Dec 10, 2010 Cassell asks SDFL U.S. Attorney
 Ferrer to investigate "the most suspicious criminal case I have ever
@@ -1717,9 +1897,17 @@ v3.70 extension (DS8 deepening pass, cut 33). [EFTA00032930](https://grokarchive
 
 - **v3.114 (1 reported entries):** August 14, 2020 correspondence says OPR can make electronic records collected in its Florida handling investigation available, but cannot represent that administrative collection as complete for criminal discovery. Hard-copy review remained separate. Sources: [EFTA00072598](https://grokarchivehub.com/search?q=EFTA00072598).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Mar 5, 2019 Herald recusal/reassignment forward ([EFTA01031359](https://grokarchivehub.com/search?q=EFTA01031359), FULL — shared with P1); same-thread HEAD items ([EFTA01031368](https://grokarchivehub.com/search?q=EFTA01031368), [EFTA01031374](https://grokarchivehub.com/search?q=EFTA01031374)). NPA terms summary ([EFTA00591894](https://grokarchivehub.com/search?q=EFTA00591894), SNIPPET). Correction 6: [EFTA01250797](https://grokarchivehub.com/search?q=EFTA01250797) is a known DS9 copy of the OPR Executive Summary — corroboration, not a new anchor.
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
+
+Additional source-crew material: [EFTA00077309](https://grokarchivehub.com/search?q=EFTA00077309). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 26 Hyperion Air sells the S-76C++ helicopter N722JE for $1.8M Confirmed Verification: V
+**Current dated stopping point:** 2021-10-11 production completed. Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr–Oct 2021.
 Anchors: [EFTA00022706](https://grokarchivehub.com/search?q=EFTA00022706) (Aircraft Purchase Agreement, Apr 2021 —
 Hyperion Air sells a used 2008 Keystone/Sikorsky S-76C++, serial
@@ -1763,9 +1951,15 @@ v3.56 extension (DS8 deepening pass, cut 19). [EFTA00021666](https://grokarchive
 
 - **v3.122:** November 23, 2021 Lockheed production summary describes October 2019 and October 2020 power-train agreements with Hyperion Air, a June 2021 transfer and June 13, 2019 aircraft acceptance. No unverified entity merge. Source: [EFTA00075806](https://grokarchivehub.com/search?q=EFTA00075806).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Jan–Feb 2019 acquisition prologue: Jan 29 ([EFTA01028312](https://grokarchivehub.com/search?q=EFTA01028312)) Aetna selling S-76C++ serial 750/N722JE, $3.5M ask; Feb 4 ([EFTA01028929](https://grokarchivehub.com/search?q=EFTA01028929)) ask confirmed $3.5M; Feb 12 ([EFTA01029785](https://grokarchivehub.com/search?q=EFTA01029785)) CVS counter $3.3M, Epstein counters $2.85M, prebuy at AAG Poughkeepsie — “same place we did the PreBuy when we sold the S76 / N722JE back in 2012 ish”: Epstein SOLD N722JE ~2012 and was buying it BACK in 2019; Feb 14 ([EFTA01029474](https://grokarchivehub.com/search?q=EFTA01029474)) “$5.3 for both”. Purchase closing NOT established. Sale endpoint unchanged. HEAD: [EFTA01028718](https://grokarchivehub.com/search?q=EFTA01028718), [EFTA01029765](https://grokarchivehub.com/search?q=EFTA01029765), [EFTA01029778](https://grokarchivehub.com/search?q=EFTA01029778), [EFTA01117570](https://grokarchivehub.com/search?q=EFTA01117570), [EFTA01262049](https://grokarchivehub.com/search?q=EFTA01262049). Also: Jan 13, 2011 fuel-program leg placing N722JE in the program ([EFTA00901907](https://grokarchivehub.com/search?q=EFTA00901907), FULL); Bell 430 funds-to-close query ([EFTA00930444](https://grokarchivehub.com/search?q=EFTA00930444), SNIPPET); Hyperion Air letter ([EFTA00040825](https://grokarchivehub.com/search?q=EFTA00040825), SNIPPET) and 363-pp Hyperion manifest ([EFTA00066572](https://grokarchivehub.com/search?q=EFTA00066572), SNIPPET).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 27 The Interlochen subpoenas: tuition inquiry → student-records subpoena → trial prep Confirmed Verification: V
+**Current dated stopping point:** 2021-10-22 trial prep. Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 2020–Oct 2021.
 Anchors: [EFTA00018430](https://grokarchivehub.com/search?q=EFTA00018430) (SDNY subpoena to Interlochen; production by
 Feb 6, 2020; Mar 8, 2020 AUSA Comey follow-up — confirm the production
@@ -1799,9 +1993,15 @@ v3.41 extension (DS8 deepening pass, cut 4). [EFTA00013279](https://grokarchiveh
 
 - **v3.120:** August 2, 2020 discovery review reclassified the Interlochen production from highly confidential to confidential. This is a discovery-marking decision, not a finding about Interlochen. Source: [EFTA00074886](https://grokarchivehub.com/search?q=EFTA00074886).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Nov 12, 1993 $15,000 Interlochen contribution prologue ([EFTA01249916](https://grokarchivehub.com/search?q=EFTA01249916), HEAD); Apr 18, 2017 admissions question ([EFTA01049141](https://grokarchivehub.com/search?q=EFTA01049141), FULL); Nov 20, 2021 Interlochen-records email — three additional pages from the MI application added to the 30th production ([EFTA00068416](https://grokarchivehub.com/search?q=EFTA00068416), FULL). FD-302s at HEAD ([EFTA01245486](https://grokarchivehub.com/search?q=EFTA01245486) — OPENING read by WS2: Mar 31, 2020 interviewee account, “godfather figure”, Maxwell scholarship offer; interviewee’s account, NOT an adjudicated finding; [EFTA01245802](https://grokarchivehub.com/search?q=EFTA01245802), [EFTA01249911](https://grokarchivehub.com/search?q=EFTA01249911), [EFTA01249957](https://grokarchivehub.com/search?q=EFTA01249957), [EFTA01249962](https://grokarchivehub.com/search?q=EFTA01249962) — subject/context NOT established from heads; full reads needed before use as legs); camp form ([EFTA01262777](https://grokarchivehub.com/search?q=EFTA01262777), HEAD).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 28 Radar Online / National Enquirer FOIA pursuit → case closed Confirmed Verification: V
+**Current dated stopping point:** 2024-06-25 case closed. Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr 20, 2017–Jun 25, 2024.
 Anchors: [EFTA00024032](https://grokarchivehub.com/search?q=EFTA00024032) (v1.5 fragment anchor — 134-pp FOIA
 correspondence bundle, Exhibit A in Radar Online LLC v. FBI,
@@ -1830,9 +2030,15 @@ v3.61 extension (DS8 deepening pass, cut 24). [EFTA00025213](https://grokarchive
 
 - **v3.109 (1 reported entries):** The Government's summary-judgment memorandum in Radar Online LLC v. FBI argues for FOIA exemptions. It is a party brief, not a ruling; the later carried orders remain the endpoint. Sources: [EFTA00069312](https://grokarchivehub.com/search?q=EFTA00069312).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — May 27, 2017 filing notices ([EFTA01044871](https://grokarchivehub.com/search?q=EFTA01044871), [EFTA01045034](https://grokarchivehub.com/search?q=EFTA01045034), HEAD); FBI summary-judgment memo ([EFTA00069312](https://grokarchivehub.com/search?q=EFTA00069312), HEAD — filing date not established from head); further filing ([EFTA00098826](https://grokarchivehub.com/search?q=EFTA00098826), HEAD). Endpoint Jun 25, 2024 unchanged.
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 29 Daily Mirror query re Epstein and Barak's written response Confirmed Verification: V-WS2
+**Current dated stopping point:** 2015-01-05. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jan 4–5, 2015.
 Anchors (part03 IDs; main duplicates in brackets): part03:1399
 [main 15461] (Jan 4, 2015, Sommerlad→Barak, "Daily Mirror query re
@@ -1874,6 +2080,8 @@ body-read in full. New to the atlas, anchored in already-indexed content
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 30 Barak–SAIL (Shanghai Alliance Investment Ltd.) collaboration Confirmed Verification: V-WS2; v3.3 WS2: MOU versions parsed in full; v3.4 WS2: signed MOU recovered (main 9899) + remaining versions parsed
+**Current dated stopping point:** 2016-03-13 (main 2613); last SAIL row in main. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jan 23, 2015 – Mar 13, 2016.
 Anchors (part02/part03 IDs): part03:669 (Jan 25, 2015, Jiang
 Mianheng→Barak; body quotes the Jan 23 Jiang letter and Barak's Jan 24
@@ -1910,6 +2118,8 @@ v3.5 (WS2) extension — May–Jun 2015 MOU chain completed; Oct 15 tracked chan
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 31 Barak at SPIEF 2015 (St. Petersburg International Economic Forum) Confirmed Verification: V-WS2; v3.3 WS3: Apr 22 meeting + Beliakov record verified
+**Current dated stopping point:** 2015-07-31 (main 8321, Barak forward of the Jun 25 thank-you). Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr 22 – Jul 31, 2015.
 Anchors (part02 IDs, plus main verification): part02:997 (Apr 27–May 4,
 2015, Belyakov→Barak via Nili; Barak's May 1 reply inside): formal
@@ -1946,10 +2156,16 @@ v3.2 (WS3) extension — main-DB follow-up (all anchors body-read in full): plen
 v3.2 (WS5) extension — Beliakov, the SPIEF organizer: [EFTA00683972](https://grokarchivehub.com/search?q=EFTA00683972) (DS9, May 2, 2014): Olivier Colom → Epstein: "Sergey beliakov. He is the organiser of the Saint-Petersburg forum." Identifies Beliakov as the SPIEF organizer; pre-SPIEF contact. "Beliakov" is a Belyakov spelling variant not previously recorded. [EFTA00334798](https://grokarchivehub.com/search?q=EFTA00334798) / [EFTA00334818](https://grokarchivehub.com/search?q=EFTA00334818) (DS9, Nov 19, 2015): Groff → Beliakov, reconfirming a visit to Epstein's NY home that evening at 7pm; Beliakov confirms. [EFTA00317690](https://grokarchivehub.com/search?q=EFTA00317690) / [EFTA00317691](https://grokarchivehub.com/search?q=EFTA00317691) / [EFTA00318469](https://grokarchivehub.com/search?q=EFTA00318469) / [EFTA00318500](https://grokarchivehub.com/search?q=EFTA00318500) (DS9, Sep 22–Oct 6, 2016): Groff scheduling Beliakov's Oct 6, 2016 visit (4:30pm, 9 East 71st Street); Beliakov confirms; visit reconfirmed Oct 6. The remaining ~100 BELYAKOV docs are routine Groff schedule emails in which "Beliakov" appears in the calendar body — investigated, no chain. ([EFTA00295176](https://grokarchivehub.com/search?q=EFTA00295176), a Sergey Beliakov vCard, and [EFTA00461523](https://grokarchivehub.com/search?q=EFTA00461523), Oct 24, 2017, "Contact for the records", are contact-record notes, not legs.)
 
 v3.3 (WS3) extension — the Apr 22, 2015 Barak–Belyakov meeting + the Beliakov contact record: **Span moves back to Apr 22, 2015.** Apr 23, 2015 — Epstein→Belyakov + Barak, subject "sergey – ehud" (main 10322; part02:1184 is the same message filed in part02 — a copy of main 10322, same content): Epstein's introduction email — the formal "sergey – ehud" handoff. Apr 23, 2015 — Belyakov to Barak ([EFTA00628346](https://grokarchivehub.com/search?q=EFTA00628346), DS9; Barak's 19:54 reply quoting Belyakov's 15:41 message): **"It was a pleasure to make your acquaintance at the meeting yesterday, thank you and Jeffrey again. I sincerely hope you'll be able to attend SPIEF 2015. I think the Forum would benefit from your active participation in the program. My team will send you the official invitation next week. We'll also send you a list of people you might be interested in meeting with while in Saint Petersburg."** Barak replies the same evening: "Hi Sergey I'm trying to reach you over the phone and fail. I'll call you again in two hours." **The Barak–Belyakov meeting was held Apr 22, 2015** (Belyakov's own words, the day before this exchange); the formal invitation followed, as promised, on Apr 28 (part02:1161), which itself refers to "the 2 sessions which we discussed in NYC last week" — the Apr 22 meeting was in New York. Apr 16, 2015 — Groff→Epstein, subject "Ehud Barak (update)" ([EFTA02337245](https://grokarchivehub.com/search?q=EFTA02337245), DS11): the scheduling record — **"Ehud will now come see you for dinner on Wed. April 22nd at 7pm (instead of lunch on 23rd). Wed. April 22, 2015 NY: 12:00pm Appt w/Sergey Beliakov, 7:00pm DINNER w/Ehud."** So Apr 22, 2015 in New York: Beliakov appointment at noon, dinner with Barak at 7pm — the meeting Belyakov thanks Barak for the next day was the noon appointment. Tier stays confirmed for the attendance leg only. The Beliakov contact record, 2014–2017 (minor legs, same precedent as v3.2 WS5): May 4, 2014 — completed meeting: Epstein→Beliakov, "fun" ([EFTA02518712](https://grokarchivehub.com/search?q=EFTA02518712); copies [EFTA02716999](https://grokarchivehub.com/search?q=EFTA02716999), [EFTA02720114](https://grokarchivehub.com/search?q=EFTA02720114)): **"I enjoyed our short meeting. If there is something I can do to help let me know. I hope to see you in New York. If you think wise I will send a staff member to attend your conference. Of course I will pay normal fees."** Two days after Colom's May 2, 2014 identification of Beliakov as the SPIEF organizer ([EFTA00683972](https://grokarchivehub.com/search?q=EFTA00683972), already anchored); "your conference" is not named in the row. Jul 14, 2014 — call proposed: "Sergey Beliakov just called me (he is in Brazil for the summit). He would like to talk to you tmw. Around this time (9.30 ny time)." ([EFTA02585722](https://grokarchivehub.com/search?q=EFTA02585722); follow-ups [EFTA01748708](https://grokarchivehub.com/search?q=EFTA01748708) / [EFTA01803880](https://grokarchivehub.com/search?q=EFTA01803880) / [EFTA01918274](https://grokarchivehub.com/search?q=EFTA01918274) — scheduling only; the call itself is not confirmed in rows read). Jan 17–23, 2017 — meeting scheduled: [EFTA02663012](https://grokarchivehub.com/search?q=EFTA02663012) (Jan 17: "Sergey Beliakov can meet on Monday or Tuesday."); [EFTA02354457](https://grokarchivehub.com/search?q=EFTA02354457) (Jan 20: "Shall I confirm the meeting with sergey Beliakov on Monday?"); [EFTA02341585](https://grokarchivehub.com/search?q=EFTA02341585) (Jan 23, 08:26: "Ok, meeting Sergey Beliakov today. Will call after that!"); DS9 copy [EFTA00630749](https://grokarchivehub.com/search?q=EFTA00630749); [EFTA01056297](https://grokarchivehub.com/search?q=EFTA01056297) (Jan 20: "confrim, not sure yet about travel"). Same-day scheduling, not a post-event record — held/not-held NOT established. Oct 24–25, 2017 — visit scheduled, appointment confirmed in advance: [EFTA02365473](https://grokarchivehub.com/search?q=EFTA02365473) (Oct 24: "Will be in NYC October 25 evening till 29 morning. Will you have Time to see him?"); [EFTA02353114](https://grokarchivehub.com/search?q=EFTA02353114) (Oct 24: Beliakov "asking if you could meet later as he is landing a= 520pm!", Epstein: "evenbing 25"); [EFTA02227521](https://grokarchivehub.com/search?q=EFTA02227521) (Oct 24, 17:37: "830pm October 25th confirmed Sergey Beliakov"); [EFTA02228152](https://grokarchivehub.com/search?q=EFTA02228152) (Oct 25, 20:54 schedule: "8:30pm Appt w/Sergey Beliakov and Yulia, his wife (he lands at 5:20pm)"); [EFTA02228100](https://grokarchivehub.com/search?q=EFTA02228100) (calendar alert for the same 8:30pm Oct 25 appointment). Appointment confirmed in advance; held/not-held NOT established in rows read. This extends the Beliakov contact record to Oct 2017 — the latest Beliakov date in the corpus set. **Variant correction (WS3 §2.1):** the v3.2 entry's "'Beliakov' is a Belyakov spelling variant not previously recorded" stands as a variant note, but WS5 §2.3's "Beliakov — the dominant mailbox spelling of Belyakov (109 docs vs 58 for 'Belyakov')" is wrong as stated: measured across all five Barak DBs, the mailbox contains **Beliakov 0 times and Belyakov 109 times** (51 main + 10 part01 + 48 part02 — the 109 is the *Belyakov* mailbox count); the DOJ corpus contains **Beliakov 112 and Belyakov 59**. So **Beliakov is the dominant *DOJ-side* spelling; Belyakov is the *mailbox* spelling.** The variant list records both spellings with their populations. "Barok": mailbox 0 / corpus 6 / HO 0. "Barack" in the mailbox (v3.4 WS3, triaged in full): 317 rows — 309 Obama, 8 rows = 4 distinct "Barack"-for-Barak messages. "Barack"-for-Barak is now attested in five distinct instances: Shilin's "Dear Mr. Barack" (Jun 11, 2013, main 1155/24058, in P47); Colom's "Ehud Barack" via Epstein (Jul 5, 2013, main 23854/24025/1234); Epstein's own "ehud barack" ([EFTA00639227](https://grokarchivehub.com/search?q=EFTA00639227), Sep 12, 2013, passing mention, no chain); Barak's dictation-machine sign-off "Love best Barack" (Sep 21, 2015, main 9611); Valori's "Ehud BARACK" (Dec 29, 2015, main 6333 = hyperion 206, canonical duplicates). The spelling arises in typed mail (Shilin, Colom, Valori) and in dictation output (Barak's own message). Cross-reference: P47 (the Ushakov story) carries the Jun 2015 SPIEF Putin-request leg, which corroborates from Ushakov's office that no Putin meeting was arranged at SPIEF 2015 — consistent with main 11930's Jun 8, 2015 cancellation above.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — New leg: Jun 30, 2015 Thiel pitch ([EFTA00632147](https://grokarchivehub.com/search?q=EFTA00632147), FULL) — Epstein→Thiel: “My very good friend that I’d organizing innovation conference in Moscow… Sergey Belyakov October” (see correction 12). The Jan 27, 2015 invitation/programme items ([EFTA01191262](https://grokarchivehub.com/search?q=EFTA01191262)/63) are already cited in v3.5 (F-33-10 fifth filing) — not new; the Apr 22, 2015 programme items ([EFTA01207468](https://grokarchivehub.com/search?q=EFTA01207468)/69) are candidate (d) for WS-A/B/C.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
-## Probable chains 52
+## Probable chains 55
 2 Declared NPA breach, June 12, 2009 Probable Verification: DG
+**Current dated stopping point:** 2009-06-12 ([EFTA00230786](https://grokarchivehub.com/search?q=EFTA00230786)); documented record to Dec 17, 2018 ([EFTA01013285](https://grokarchivehub.com/search?q=EFTA01013285)); the 2010–2011 investigation is now P46. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2009–2019.
 Anchors: [EFTA00230786](https://grokarchivehub.com/search?q=EFTA00230786) (Jun 12, 2009 SDFL "willfully violated
 Term 8" letter, 1,131 pp).
@@ -1981,9 +2197,19 @@ v3.2 (WS5) extension — NPA-negotiation paper (NONPROSECUTION sample): [EFTA000
 v3.3 (WS1) extension — breach pre-history + 2010–2011 aftermath (the endpoint, the Jun 12, 2009 declaration, is unchanged): Jun 9, 2009 — "Operation Leap Year: Notification of Breach" memo (Sloman, Acting USA) ([EFTA00189787](https://grokarchivehub.com/search?q=EFTA00189787), 14 pp.): seeks approval to serve the breach notice at the Jun 12, 2009 Marra hearing; recommends "proceed to indictment promptly thereafter" (no federal indictment followed in 2009 — the recommendation's outcome is not established in the memo); case-by-case survey of 13 civil suits and the breach theory (the most conservative reading of the NPA requires Epstein to waive challenges to liability where the plaintiff proceeds exclusively under 18 U.S.C. § 2255). Nov 26, 2008 — USAO letter: "Mr. Epstein has not breached the Non-Prosecution Agreement… by serving a portion of his 18-month sentence of imprisonment in the Palm Beach County Work Release Program" ([EFTA00178359](https://grokarchivehub.com/search?q=EFTA00178359)) — the pre-breach position the Second Addendum later superseded. The "SECOND ADDENDUM TO NON-PROSECUTION AGREEMENT" ([EFTA00216077](https://grokarchivehub.com/search?q=EFTA00216077)): recitals (NPA Sep 24, 2007; Addendum Oct 29, 2007; USAO gave notice it considers current work-release participation a material breach; Epstein disputes breach); new ¶2(a): consecutive 12 + 6 months county jail, no withholding/probation/community control; confined 24 h/day to the Stockade except work release from Mar 24, 2009 under PBSO rules (≤48 hours/week outside, GPS + deputy escort, work log weekly to USAO); breach of any condition allows the US to terminate the Agreement and prosecute Epstein "and any other individual or entity for any and all federal offenses." Signature blocks present; the Dated: lines are blank in the text layer — date of execution NOT established from this copy. Sep 26, 2011 — internal USAO thread re CVRA relief: "Setting aside the non-pros and prosecuting him as though the Non-pros had never been signed"; the Jane Does' desired relief was to set aside the NPA; a USAO voice argued Epstein "already served his sentence in state court and performed all his other obligations under the Non-Pros (including paying damages to 30-some girls)" and it would be a Due Process violation to suggest setting it aside ([EFTA00205768](https://grokarchivehub.com/search?q=EFTA00205768) — shared with P1). The 2010–2011 investigation legs (shared with new story P46, where the episode is told whole): Oct 21, 2010 — Cassell to USAO: in late Jul 2010, Mike Fisten and others met the FBI re Epstein's sexual abuse of "other young girls — girls not covered by the non-prosecution agreement"; USAO reply: "Interviews have been conducted of potential new victims. Let me check in with the case agent and get back to you" ([EFTA00206650](https://grokarchivehub.com/search?q=EFTA00206650)). Mar 9, 2011 — AUSA memo "Highly Confidential — Preliminary Investigation of Additional Crimes of Jeffrey Epstein and Others" ([EFTA01249058](https://grokarchivehub.com/search?q=EFTA01249058), 3 pp.): a victim reported being flown around the US and Europe to have sex with prominent men, encounters videotaped, paid after each encounter; the memo lists named men as reported by the victim via Edwards/Fisten; Clinton came to Epstein's house several times and received erotic massages (not from her), at least once while still president; obstruction allegations (perjury, falsified probation records, a lawyer threatening a subpoenaed victim); a modeling agency as a front for trafficking with fraudulent visa applications. All of this is the victim's reported account as relayed by Edwards/Fisten to the AUSA in a preliminary-investigation memo; the AUSA states a formal memo with analysis is to follow. No finding is recorded in it. Cite only with that framing. Mar 24, 2011 — Daily Beast email to Roy Black: the Daily Beast received a letter from former US Attorney Alex Acosta describing the NPA negotiations; per the Daily Beast's summary, Acosta's letter says Epstein's defense team (a) negotiated in bad faith, agreeing to terms then appealing to DOJ in Washington; (b) investigated prosecutors' personal lives/families to discredit/disqualify two prosecutors — attempt failed; (c) threatened Acosta that his "excessive zeal" could become a book ([EFTA00664159](https://grokarchivehub.com/search?q=EFTA00664159) — cite as the Daily Beast's summary of Acosta's letter, not as the letter itself). May 18, 2010 — Palm Beach Post: Podhurst Orseck sued Epstein claiming he refused to pay its $2 million legal bill for representing more than a dozen young women; Epstein had agreed to pay for an attorney for 33 women; the firm's claim is that failure to pay "constitutes 'a material breach'" of the NPA (the firm's allegation in its suit, labeled as such) ([EFTA00190244](https://grokarchivehub.com/search?q=EFTA00190244)).
 
 v3.4 (WS4) extension — breach pre-history, Jun 2, 2009: USAO internal email ([EFTA00212882](https://grokarchivehub.com/search?q=EFTA00212882), DS9, 1 p.; [EFTA00014173](https://grokarchivehub.com/search?q=EFTA00014173) is the Jun 3, 2009 reply copy): Judge Marra asked the USAO to appear Fri, Jun 12 to address whether Epstein's defense of the civil suits breaches the NPA; the Palm Beach Post moved to intervene to unseal the NPA (hearing set Wed, Jun 10); Epstein's May 26, 2009 pleading arguing §2255 claims must all be dismissed because he was never convicted of a federal offense "directly contradicts the Non-Prosecution Agreement"; "At this point, I believe that Epstein is probably in breach of the Agreement… We are required to provide him with 'timely notice' of his breach and file an indictment within 60 days of learning of the breach. That means that we need to indict by July 24th." The immediate pre-history of the Jun 9, 2009 breach memo ([EFTA00189787](https://grokarchivehub.com/search?q=EFTA00189787)) and the Jun 12 declaration; no federal indictment followed in 2009 (see the v3.3 extension).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.2 (WS5) extension — NPA-negotiation paper (NONPROSECUTION sample): [EFTA00067260](https://grokarchivehub.com/search?q=EFTA00067260) (DS9): "CONFIDENTIAL PLEA NEGOTIATIONS — TERMS OF EPSTEIN NON-PROSECUTION AGREEMENT": Epstein pleads guilty (not nolo contendere) to an Information filed by the Palm Beach County State Attorney charging lewd and lascivious battery on a child, in violation of Fl. Stat. — a 1-page negotiation terms sheet. [EFTA00013521](https://grokarchivehub.com/search?q=EFTA00013521) (DS8, Oct 31, 2007): AUSA email to Jay Lefkowitz re NPA paragraph 8 ("we are beginning to think about what discovery we may need to take to verify any claims"). [EFTA00013968](https://grokarchivehub.com/search?q=EFTA00013968) (DS8, Jun 19, 2008): AUSA email re speaking with Roy Black about resolving the federal and state litigation. [EFTA00014110](https://grokarchivehub.com/search?q=EFTA00014110) (DS8, Nov 24, 2008): USAO letter to Roy Black re Epstein. Post-NPA correspondence. [EFTA00214042](https://grokarchivehub.com/search?q=EFTA00214042) / [EFTA00214043](https://grokarchivehub.com/search?q=EFTA00214043) (DS9, Aug 18, 2009): AUSA email chain responding to a book/documentary author's inquiry: "There are no documents that were filed in connection with this case except some sealed matters. We deferred prosecution in favor of the state's prosecution of Epstein." A contemporaneous (Aug 2009) AUSA statement of the deferral posture.
+
+v3.6 (WS-D) extension — Compiled breach-correspondence file ([EFTA01089193](https://grokarchivehub.com/search?q=EFTA01089193), FULL — TOC + Tab 1 read): “EPSTEIN BREACH CORRESPONDENCE”, Tabs 1–6, Jun 12–19, 2009; Tab 1 is the Jun 12, 2009 breach notice (already anchored as [EFTA00230786](https://grokarchivehub.com/search?q=EFTA00230786)); Tabs 2–6 are the new dated legs. No endpoint move. The Dec 2018 NPA-defense/PR thread ([EFTA01013496](https://grokarchivehub.com/search?q=EFTA01013496), [EFTA01013285](https://grokarchivehub.com/search?q=EFTA01013285)/1303, [EFTA01013458](https://grokarchivehub.com/search?q=EFTA01013458)/1500) is candidate (h) for WS-A/B/C — not placed here.
+
+v3.6 (WS-C) extension — Dec 2018 NPA-defense/PR thread (endpoint UNCHANGED: Jun 12, 2009; documented record extends Sep 26, 2011 → Dec 17, 2018). Dec 4, 2018 — Larry Summers to Epstein: 'Could you do yourself and friends a favor and instruct Dershowitz not to speak to press at all.' Epstein: 'ive done it, alas he is a dope' ([EFTA01014494](https://grokarchivehub.com/search?q=EFTA01014494)) / 'he says he responds when it directly about him. UGH' ([EFTA01014476](https://grokarchivehub.com/search?q=EFTA01014476); also a WS4-proposed P12 leg — shared). The thread's opening move: silencing Dershowitz's press comments while a defense op-ed was being prepared. Dec 13–15, 2018 — Epstein asks Ken Starr to 'take a stab at the article for the law journal'; Starr sends a draft op-ed ('Sweetheart deal!' — the critique of the NPA resolution 'is profoundly misplaced'), Cc Dershowitz ([EFTA01013496](https://grokarchivehub.com/search?q=EFTA01013496), DS9, read in full). Epstein circulates it to Joi Ito (Dec 15): 'op ed signed by either ken starr, or ken dershowitz and other defense lawyeres. . thoughts is it worth it?' Ito: 'Hmm. This is well written and I think would be positive for you. Was this written by one of them or something your team wrote? Would the really sign this?' / 'most likely be net positive.' ([EFTA01013458](https://grokarchivehub.com/search?q=EFTA01013458) / [EFTA01013500](https://grokarchivehub.com/search?q=EFTA01013500) — two filings of one exchange, head+tail depth; middles repeat the draft read in full in [EFTA01013496](https://grokarchivehub.com/search?q=EFTA01013496).) Dec 17, 2018 — Epstein sends a REVISED draft to Starr, Dershowitz, Weinberg, Hiltzik, Sanchez, then to Michael Wolff; Wolff: 'Strong.' / 'Where do you think this will be placed?' Epstein: 'wash post' ([EFTA01013285](https://grokarchivehub.com/search?q=EFTA01013285) / [EFTA01013303](https://grokarchivehub.com/search?q=EFTA01013303) — two filings of one circulation, read in full). The Dec 17 revision differs materially from the Dec 15 draft: 'some of the women he paid were under the age of 18' (Dec 15: 'some of the women had misrepresented themselves as over the age of 18'); adds 'and who has never acted as an informant' and that the declination 'was reviewed and approved at the highest levels of the U.S. Department of Justice, across multiple administrations.' The draft's claims are advocacy, not findings, and publication of the op-ed is NOT established in any document read. Cross-links: P1 (CVRA pressure is the context), Story 25 (OPR — no OPR mention in this thread, so no Story 25 placement).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P1 CVRA suit, Jane Doe 1 & 2 v. United States Probable Verification: V
+**Current dated stopping point:** 2021-04-15 ([EFTA00074599](https://grokarchivehub.com/search?q=EFTA00074599), In re Wild en banc). Historical paragraphs below retain the dates of their original survey.
+
 Span: 2008–2021. Anchors: [EFTA00184224](https://grokarchivehub.com/search?q=EFTA00184224) (982 pp Feb 2016
 filing), [EFTA00227381](https://grokarchivehub.com/search?q=EFTA00227381), [EFTA00040718](https://grokarchivehub.com/search?q=EFTA00040718)/40739; HO 5067 (Jul 7,
 2008 petition, ¶16), 4414 → [EFTA00210130](https://grokarchivehub.com/search?q=EFTA00210130) (sample-confirmed).
@@ -2067,9 +2293,15 @@ v3.78 extension (DS8 protected pass, cut 41). [EFTA00027776](https://grokarchive
 - **v3.122:** March 7, 2019 SDNY forwarded news of plea-deal litigation and noted unsealing interest. Internal query, not a filing or ruling. Source: [EFTA00075788](https://grokarchivehub.com/search?q=EFTA00075788).
 
 **Correction to earlier coverage:** The previously missing joinder ruling is now reported in the supplied record. Its printed date and accompanying declaration disagree; the date remains unresolved. The existing 2021 appellate endpoint is unchanged.
+
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00600054](https://grokarchivehub.com/search?q=EFTA00600054), [EFTA00921021](https://grokarchivehub.com/search?q=EFTA00921021), [EFTA01001361](https://grokarchivehub.com/search?q=EFTA01001361), [EFTA01009337](https://grokarchivehub.com/search?q=EFTA01009337), [EFTA01011157](https://grokarchivehub.com/search?q=EFTA01011157), [EFTA01011163](https://grokarchivehub.com/search?q=EFTA01011163), [EFTA01016802](https://grokarchivehub.com/search?q=EFTA01016802), [EFTA01031359](https://grokarchivehub.com/search?q=EFTA01031359), [EFTA01031368](https://grokarchivehub.com/search?q=EFTA01031368), [EFTA01031374](https://grokarchivehub.com/search?q=EFTA01031374), [EFTA01070608](https://grokarchivehub.com/search?q=EFTA01070608), [EFTA01079793](https://grokarchivehub.com/search?q=EFTA01079793), [EFTA01079864](https://grokarchivehub.com/search?q=EFTA01079864), [EFTA01079938](https://grokarchivehub.com/search?q=EFTA01079938), [EFTA01080086](https://grokarchivehub.com/search?q=EFTA01080086), [EFTA01081151](https://grokarchivehub.com/search?q=EFTA01081151), [EFTA01081657](https://grokarchivehub.com/search?q=EFTA01081657). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P2 Florida supervision Probable Verification: V
+**Current dated stopping point:** Open at 2010. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2008/09–2010. Anchors: [EFTA00181807](https://grokarchivehub.com/search?q=EFTA00181807) (537 pp FDOC
 obligations, 2009–2010), [EFTA00039383](https://grokarchivehub.com/search?q=EFTA00039383), [EFTA00064766](https://grokarchivehub.com/search?q=EFTA00064766).
 Endpoint: OPEN at 2010; discharge terms not verified.
@@ -2094,9 +2326,15 @@ by Palm Beach Police under 3 miles).
 v3.10 extension (ordered DS8 continuation). [EFTA00013590](https://grokarchivehub.com/search?q=EFTA00013590) (1 p., Dec 9, 2008) adds the AUSA's account of a call with the work-release supervisor: paperwork showed a late-September release date based on statutory gain time, while the supervisor reportedly described July 23 eligibility because work release earned an additional two days off per week. The email circulates a draft letter for review. This is a contemporaneous relayed eligibility calculation, not a jail credit ledger, a court ruling, proof that every projected credit was earned, or proof of release on July 23. It supplements P2's existing Dec 8 work-release notice without resolving the final supervision discharge terms or changing the stopping point. P2 remains separate from Story 2's declared NPA-breach thread.
 
 v3.11 extension (ordered DS8 continuation). [EFTA00014026](https://grokarchivehub.com/search?q=EFTA00014026) (2 pp., Dec 30, 2008, including a Dec 29 exchange) adds the AUSA's explanation of GPS exclusion zones to civil counsel. According to that explanation, Epstein was supposed to travel directly between jail and work, but a route deviation would not itself trigger an alarm unless it entered a programmed exclusion zone. The AUSA relays Captain Sleeth's assurance that identifying location information would not be provided to Epstein and says the zone radius is not known to the writer. This is a contemporaneous explanation of monitoring limits, not GPS telemetry, proof of an actual detour, proof a particular location was programmed, or evidence that every request was implemented. No victim location is reproduced. The v3.10 eligibility calculation remains a projection rather than proof of actual release; final supervision discharge remains unverified. P2 stays separate from Story 2, with its open-at-2010 stopping point and probable tier unchanged.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — SORA appeal brief, 43 pp. ([EFTA01074989](https://grokarchivehub.com/search?q=EFTA01074989), HEAD — date not established from head); sex-offender registration-form attachment ([EFTA01082119](https://grokarchivehub.com/search?q=EFTA01082119), HEAD — identifiers not reproduced).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P3 Civil litigation & settlements (multi-thread) Probable Verification: V-C
+**Current dated stopping point:** No single endpoint; HO motion dated 2010-06-28, NOT a proved settlement. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2008–2019. Anchors: [EFTA00230786](https://grokarchivehub.com/search?q=EFTA00230786),
 [EFTA01000223](https://grokarchivehub.com/search?q=EFTA01000223); HO 3005–3008 (v3.0, WS4: [EFTA00039295](https://grokarchivehub.com/search?q=EFTA00039295) — BOP Program
 Statement P5264.08, Inmate Telephone Regulations — and [EFTA00040126](https://grokarchivehub.com/search?q=EFTA00040126)
@@ -2210,9 +2448,17 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00020541](https://gro
 
 - **v3.122:** November 13, 2019 correspondence circulated notice of civil suits filed November 12 against the estate. Suits' contents not in text. Source: [EFTA00075683](https://grokarchivehub.com/search?q=EFTA00075683).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Nov 21, 2014 settlement draft ([EFTA01001926](https://grokarchivehub.com/search?q=EFTA01001926), FULL — case not identified); Dec 9, 2018 Epstein→Boies settlement draft ([EFTA01013974](https://grokarchivehub.com/search?q=EFTA01013974), FULL — case not identified); Nov 21, 2018 Epstein→Edwards settlement/apology draft ([EFTA01016016](https://grokarchivehub.com/search?q=EFTA01016016), FULL — also a Story 6 leg); Jan 5, 2019 Epstein→Edwards ([EFTA01009337](https://grokarchivehub.com/search?q=EFTA01009337), FULL — shared with P1). HEAD: [EFTA01249981](https://grokarchivehub.com/search?q=EFTA01249981) (Priscilla Doe complaint — allegations as pleaded), [EFTA01246347](https://grokarchivehub.com/search?q=EFTA01246347) (complaint v. Indyke/Kahn as executors — case number and filing date not established from head). Negotiations/drafts only — no settlement terms asserted.
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
+
+Additional source-crew material: [EFTA00076380](https://grokarchivehub.com/search?q=EFTA00076380), [EFTA00076593](https://grokarchivehub.com/search?q=EFTA00076593). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P4 Apollo / Leon Black: Dechert review → Senate Finance inquiry Probable Verification: V
+**Current dated stopping point:** 2023-07-24 ([EFTA02731023](https://grokarchivehub.com/archive/EFTA02731023)); association only, no wrongdoing finding. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2022–2023. Anchors: [EFTA02730996](https://grokarchivehub.com/archive/EFTA02730996), [EFTA02731018](https://grokarchivehub.com/search?q=EFTA02731018),
 [EFTA02731023](https://grokarchivehub.com/archive/EFTA02731023). Endpoint: OPEN — inquiry ongoing in slice.
 Dated stopping point: Jul 24, 2023 ([EFTA02731023](https://grokarchivehub.com/archive/EFTA02731023));
@@ -2222,9 +2468,15 @@ v2.0 DS8 extension: Leon Black / Rothschild transaction exhibits
 reporting as forwarded (Black stepping down; $148M Dechert finding
 as reported); one line in [EFTA00038617](https://grokarchivehub.com/search?q=EFTA00038617): the Manhattan DA looked
 into Leon Black allegations.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Feb 24, 2021 prologue leg ([EFTA00077262](https://grokarchivehub.com/search?q=EFTA00077262), FULL): NYT’s Matthew Goldstein asks SDNY whether it is looking into the fees Leon Black paid Epstein for tax and estate planning; SDNY: no comment, “I have no idea whether this is something on anyone’s radar.” This does NOT establish any SDNY inquiry — it is a press inquiry, predating P4’s span. Endpoint unchanged (Jul 24, 2023).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P5 Miami Division Australia/Sydney lead Probable Verification: AV
+**Current dated stopping point:** 2018-12-04 ([EFTA01248914](https://grokarchivehub.com/search?q=EFTA01248914)); interview conducted 2011-03-17. Historical paragraphs below retain the dates of their original survey.
+
 Span: Mar 2011. Anchors: [EFTA00005707](https://grokarchivehub.com/search?q=EFTA00005707), [EFTA00005711](https://grokarchivehub.com/search?q=EFTA00005711),
 [EFTA00005714](https://grokarchivehub.com/search?q=EFTA00005714). Endpoint: interview CONDUCTED Mar 17, 2011
 at the U.S. Consulate in Sydney, with a same-day follow-up
@@ -2237,9 +2489,15 @@ document. Dated stopping point: Mar 22, 2011
 both citations of [EFTA00005714](https://grokarchivehub.com/search?q=EFTA00005714) hold — the single memo both
 summarizes the Mar 12, 2011 Miami serial and is itself the
 Mar 22 liaison memo. Tier kept (probable). Links: 1.
+
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00005714](https://grokarchivehub.com/search?q=EFTA00005714), [EFTA00086713](https://grokarchivehub.com/search?q=EFTA00086713), [EFTA00162376](https://grokarchivehub.com/search?q=EFTA00162376), [EFTA00173240](https://grokarchivehub.com/search?q=EFTA00173240), [EFTA01248914](https://grokarchivehub.com/search?q=EFTA01248914). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P6 2016 election watch (Khan/InsightsPod) Probable Verification: V
+**Current dated stopping point:** 2016-11-07. Historical paragraphs below retain the dates of their original survey.
+
 Span: Oct–Nov 4, 2016. Anchors: HO 20598; plus HO 20597,
 HO 15629 (verbatim duplicates, count once).
 Endpoint: stops before the election. Dated stopping point:
@@ -2248,9 +2506,15 @@ Single correspondent pair, no outcome — correctly not
 confirmed. Links: 8 (same era only).
 
 v3.2 (WS5) extension — DOJ-overlapping HO legs: HO 22566 (Sep 27, 2016): Khan → Epstein: 943,338 tweets, 62% Clinton / 38% Trump. Same correspondent pair, same subject as the Nov 4 anchor, earlier date. DOJ counterparts exist: [EFTA00638777](https://grokarchivehub.com/search?q=EFTA00638777) (DS9), [EFTA01781904](https://grokarchivehub.com/search?q=EFTA01781904) (DS10) carry the "943,338 tweets" phrase — so the leg is DOJ-overlapping, anchorable DOJ-side. HO 16241 (Oct 25, 2016): InsightsPod report after the third debate ("Trump's popularity has increased"). DOJ counterpart: [EFTA00813743](https://grokarchivehub.com/search?q=EFTA00813743) (DS9) carries "popularity has increased after third debate" and "US_Report3". Context (not legs): HO 20595 (another copy of the Nov 4 email); HO 20599 (Oct 6, 2016 business-plan Skype discussion + Sep 25 business-plan thread); HO 18433–18454 (22-page InsightsPod business-plan deck, Sep 2016).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Two further filings of the InsightsPod thread: Nov 4, 2016 ([EFTA00812815](https://grokarchivehub.com/search?q=EFTA00812815) — 3M tweets processed that week) and Nov 7, 2016 ([EFTA01062618](https://grokarchivehub.com/search?q=EFTA01062618) — “Clinton has recovered”; 52% Electoral College chance for Trump per the Nov 4 data). Endpoint moves Nov 4 → Nov 7, 2016, the day before the election. Further thread filings at HEAD: [EFTA00638673](https://grokarchivehub.com/search?q=EFTA00638673), [EFTA00638684](https://grokarchivehub.com/search?q=EFTA00638684), [EFTA00812818](https://grokarchivehub.com/search?q=EFTA00812818), [EFTA00812824](https://grokarchivehub.com/search?q=EFTA00812824), [EFTA00815688](https://grokarchivehub.com/search?q=EFTA00815688).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P7 Flight logs → Palm Beach police → deposition use Probable Verification: V
+**Current dated stopping point:** Logs Jan–Oct 2005; deposition undated in excerpt; open end is testimony about logs, not a finding about any flight. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jan–Oct 2005 logs, later deposition use. Anchors:
 HO 11514 (Jan–Sep 2005 logs + October 2005 log, deposition
 pp. 431 sequence); plus HO 8614, HO 11085.
@@ -2274,9 +2538,14 @@ v3.5 (WS1) extension — DS8 metadata-only survey. 4 legs. [EFTA00021701](https:
 
 - **v3.119:** Counsel’s December 2019 and January 2020 flight-log productions cover 1991–2013; a February 2020 proposed follow-up question is not an identification or finding. Same document as the related Story 3 entry, not independent corroboration.
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.124 extension (DS9 reading pass, cut 42). [EFTA00076034](https://grokarchivehub.com/search?q=EFTA00076034) (USMS/DSS emails dated Jun 17–18, 2019): the airport police reply behind the carried Austria confirmation ([EFTA00037299](https://grokarchivehub.com/search?q=EFTA00037299)) adds the times and onward leg. Epstein's plane, with Epstein and three female passengers (no information on them), landed at Vienna at 5 PM on March 22, 2019. The group visited a Vienna café and left at 10 PM the same day for Paris. The airport police's account as relayed; no names or ages are given, and the café is not named here.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P8 Maxwell bank paper Probable Verification: V-C
+**Current dated stopping point:** 2019-10-03 ([EFTA01661868](https://grokarchivehub.com/search?q=EFTA01661868)); ~9 months before July 2020 arrest, not 'one month'. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2011–2019. Anchors (SUPPLIED — v1 deferred these):
 [EFTA01661868](https://grokarchivehub.com/search?q=EFTA01661868) (JPMorgan cover Oct 3, 2019 + affidavit +
 signature-card TOC, 7,778 pp.), [EFTA01684802](https://grokarchivehub.com/search?q=EFTA01684802) (Amex
@@ -2303,7 +2572,7 @@ v3.2 (WS2) extension: Montpelier Trust UBS account-opening package, January 3, 2
 
 v3.2 (WS5) extension — JPMorgan/UBS paper found only via OCR variants: [EFTA01520618](https://grokarchivehub.com/search?q=EFTA01520618), [EFTA01520631](https://grokarchivehub.com/search?q=EFTA01520631), [EFTA01520735](https://grokarchivehub.com/search?q=EFTA01520735), [EFTA01520868](https://grokarchivehub.com/search?q=EFTA01520868), [EFTA01520881](https://grokarchivehub.com/search?q=EFTA01520881), [EFTA01520952](https://grokarchivehub.com/search?q=EFTA01520952), [EFTA01520970](https://grokarchivehub.com/search?q=EFTA01520970), [EFTA01521078](https://grokarchivehub.com/search?q=EFTA01521078), [EFTA01521107](https://grokarchivehub.com/search?q=EFTA01521107), [EFTA01521303](https://grokarchivehub.com/search?q=EFTA01521303), [EFTA01521454](https://grokarchivehub.com/search?q=EFTA01521454) (DS10, 1 p each, Mar 2011–Nov 2012): JPMorgan statements for a Maxwell account, each headed "GHISLAINE MAXWELI / For the Period 3/1/11 to 3/31/11" (etc.). Verified in full on [EFTA01520618](https://grokarchivehub.com/search?q=EFTA01520618): JPMorgan, bond/cash summary by maturity and type. They extend P8's JPMorgan paper backward to Mar 2011. Found only because FTS stemming maps "maxweli" → "maxwe", matching the truncated text-layer name. [EFTA01278815](https://grokarchivehub.com/search?q=EFTA01278815) (DS10, Jul 2017), [EFTA01279007](https://grokarchivehub.com/search?q=EFTA01279007) (DS10, Nov 2015), [EFTA01307184](https://grokarchivehub.com/search?q=EFTA01307184) (DS10, Jan 2018): UBS Private Wealth Management statements for Ghislaine Maxwell. [EFTA00238981](https://grokarchivehub.com/search?q=EFTA00238981) (DS9, May 4, 2018) / [EFTA00239686](https://grokarchivehub.com/search?q=EFTA00239686) (DS9, Jul 17, 2019): UBS Fed Wire instructions for TerraMar Project Inc (Elyanna Rivas → Ghislaine Maxwell: "Secure Document Pick Up: MAXWELL/TERRAMAR: UBS Wire Instructions"; attachment "TERRAMAR PROJECT INC - UBS Fed Wire Instructions.pdf"). TerraMar is Maxwell's ocean project; "terramar" has 0 hits in v3.1. [EFTA01588741](https://grokarchivehub.com/search?q=EFTA01588741) (DS10, minor): Dana → Gina transfer request: "attached transfer instructions from Ghislaine." Fragment note: [EFTA00238857](https://grokarchivehub.com/search?q=EFTA00238857) (DS9, 4 pp) — "GHISLAZIE MAXWE" credit-card statement header only; no transaction content established. P8-adjacent fragment note.
 
-v3.3 (WS1) extension — 2007 statement + 2010 memo bundle: Mar 2007 JPMorgan statement, Ghislaine Maxwell, account 739-116312 ([EFTA01524339](https://grokarchivehub.com/search?q=EFTA01524339), DS10, 1 p.): ending balance $84,571.84; Mar 2, 2007 $10,000 Fedwire credit "VIA FIRST BANK"; NES LLC payroll credits; Mar 9, 2007 $105,000 MB transfer. Extends Maxwell JPMorgan paper to Mar 2007 and shows a FirstBank → Maxwell wire. (The summary's opening-balance figure and the activity's opening-balance figure disagree in the OCR — $547,204.45 vs $47,204.45 — the exact opening balance is NOT asserted.) Jul 27, 2010 JPMorgan fax memo bundle ([EFTA01588996](https://grokarchivehub.com/search?q=EFTA01588996), DS10, 12 pp., 6 memos, all Harry Beller): Maxwell → Isabel S. Maxwell $500 (Citibank, San Francisco); Epstein $68,423.75 → Nexity Bank / Merchants Commercial Bank for Big Bear Construction (Mechanical Desal Req #4); $250,000 → Darren K Indyke PLLC; Epstein → First Bank St. Thomas $2,158 → Ismail Unerli c/o A&I Development LLC, ref "LSJ — Master Suite # 1004 — Req # 2"; JEGE $135,949.74 → NES LLC; $763.28 → Wachovia, American Export Company, ref LSJ Invoice R100722. (The $250,000 → Indyke PLLC memo is also an F-WS3-15 leg; the $2,158 FirstBank wire is a P40-orbit item.)
+v3.3 (WS1) extension — 2007 statement + 2010 memo bundle: Mar 2007 JPMorgan statement, Ghislaine Maxwell, account [account identifier withheld] ([EFTA01524339](https://grokarchivehub.com/search?q=EFTA01524339), DS10, 1 p.): ending balance $84,571.84; Mar 2, 2007 $10,000 Fedwire credit "VIA FIRST BANK"; NES LLC payroll credits; Mar 9, 2007 $105,000 MB transfer. Extends Maxwell JPMorgan paper to Mar 2007 and shows a FirstBank → Maxwell wire. (The summary's opening-balance figure and the activity's opening-balance figure disagree in the OCR — $547,204.45 vs $47,204.45 — the exact opening balance is NOT asserted.) Jul 27, 2010 JPMorgan fax memo bundle ([EFTA01588996](https://grokarchivehub.com/search?q=EFTA01588996), DS10, 12 pp., 6 memos, all Harry Beller): Maxwell → Isabel S. Maxwell $500 (Citibank, San Francisco); Epstein $68,423.75 → Nexity Bank / Merchants Commercial Bank for Big Bear Construction (Mechanical Desal Req #4); $250,000 → Darren K Indyke PLLC; Epstein → First Bank St. Thomas $2,158 → Ismail Unerli c/o A&I Development LLC, ref "LSJ — Master Suite # 1004 — Req # 2"; JEGE $135,949.74 → NES LLC; $763.28 → Wachovia, American Export Company, ref LSJ Invoice R100722. (The $250,000 → Indyke PLLC memo is also an F-WS3-15 leg; the $2,158 FirstBank wire is a P40-orbit item.)
 
 v3.5 (WS1) extension — DS8 metadata-only survey. 9 legs; major extension — the $14.2M Angara chain plus the underlying statement. [EFTA00026525](https://grokarchivehub.com/search?q=EFTA00026525) (Jul 1, 2020, SDNY email summary): Apr 14, 2016 — three checks $3,609,665.75 + $9,031,636.31 + $1,561,387.91 = $14,202,689.97 deposited into UBS account "116 East 65th Street LLC" (Y123962), owner Ghislaine Maxwell; Apr 20, 2016 — $14,194,596.46 transferred from the 116 LLC account to Maxwell's UBS account (Y123575); Nov 2016 — $14,250,000 transferred from Maxwell accounts to the Angara Trust account at UBS. [EFTA00022367](https://grokarchivehub.com/search?q=EFTA00022367) (April 2016 UBS statement, 116 East 65th Street LLC, Y123962): the underlying statement — Apr 15 deposit $14,202,689.97 (UBS AG Deposit Account) and the Apr 18 withdrawal. **Detail for the coordinator:** the statement shows the withdrawal on Apr 18; the SDNY summary (26525) dates the $14,194,596.46 transfer to Apr 20 — possibly the same transfer with a value/posting-date difference; NOT asserted as identical. [EFTA00022364](https://grokarchivehub.com/search?q=EFTA00022364) (Nov 23, 2016): Maxwell letter to UBS — authorize transfer of $14,200,000 (PSDYX and cash) from her account to Angara Trust, plus transfer the entire balances of three more Maxwell accounts to Angara Trust. [EFTA00024310](https://grokarchivehub.com/search?q=EFTA00024310) (Dec 16, 2020 cover email): attachment filename "Y1451702 titled Montpelier Trust (previously the Angara Trust).pdf" — **the rename link Angara Trust → Montpelier Trust**, not recorded in v3.4 P8 (which cites 24310 only as a cover email). [EFTA00010287](https://grokarchivehub.com/search?q=EFTA00010287) / [EFTA00028045](https://grokarchivehub.com/search?q=EFTA00028045) (Oct 2, 2020 discovery production letter): index lists UBS records for "Angara Trust, Montepelier Trust, Terramar Project, Inc., Max Foundation, Ghislaine Maxwell…" [EFTA00031230](https://grokarchivehub.com/search?q=EFTA00031230) (Jul 8, 2020): UBS subpoena Jun 29, 2020; question whether it covers the Angara trust. [EFTA00037705](https://grokarchivehub.com/search?q=EFTA00037705) / [EFTA00038016](https://grokarchivehub.com/search?q=EFTA00038016) (Jul 10–13, 2020): Maxwell's 6/30/20 account balances; "how the Montpelier Trust was funded, and what expenditures it is making." **Caveat:** the Nov 2016 figure ($14.25M) exceeds the Apr 2016 deposit ($14,202,689.97), so same-funds identity is NOT established by these documents. [EFTA00016084](https://grokarchivehub.com/search?q=EFTA00016084) (Angara Trust signature-page bundle) is already in P8. The Jul 2, 2020 "~$20 million to ANGARA" agent's belief (37706, Story 5) conflicts with the documented $14.2M and is NOT a verified transfer.
 
@@ -2321,9 +2590,14 @@ v3.57 extension (DS8 deepening pass, cut 20). [EFTA00021994](https://grokarchive
 
 - **v3.118:** March 5, 2020 FBI financial review reports a January 4, 2011 $3 million transfer returned the same day, and a July 28, 2011 $10,900,773.48 wire to Maxwell followed by $10,895,644.29 in onward transfers. The review attributes the June 15, 2007 $7.4 million credit to an Epstein Bear Stearns account. This is a summary; underlying statements and account identifiers are not reproduced.
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00074147](https://grokarchivehub.com/search?q=EFTA00074147). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P9 LSJ Employees / LSJE island operating account Probable Verification: V-C; v3.3 WS5: Sep 5, 2019 date confirmed from the page image (p.12)
+**Current dated stopping point:** 2019-09-05 ([EFTA01273181](https://grokarchivehub.com/search?q=EFTA01273181) p.12, IMAD 20190905; printed Date field '05-Sep-2019' confirmed from the page image); no closure document. Historical paragraphs below retain the dates of their original survey.
+
 Span: renamed 2013, funded 2016–2019.
 Anchors (SUPPLIED — v1 deferred these): [EFTA01295221](https://grokarchivehub.com/search?q=EFTA01295221)
 (Virgin Islands certificate recording the March 13, 2013 Articles of
@@ -2338,7 +2612,7 @@ $300,000 + Jul 24, 2019 $2,536,513.89 "FUNDING OPERATING
 ACCOUNT"), [EFTA01409916](https://grokarchivehub.com/search?q=EFTA01409916) (Dec 20, 2013 five-wire bundle
 emails).
 Endpoint: OPEN — account activity documented to Sep 2019.
-Dated stopping point: Sep 5, 2019 ([EFTA01273181](https://grokarchivehub.com/search?q=EFTA01273181) p.12, stamped [EFTA01273192](https://grokarchivehub.com/search?q=EFTA01273192); the printed Date field reads '05-Sep-2019', confirmed from the page image — the OCR garble was an OCR artifact only — and agrees with IMAD 20190905 C1B76E1C 004494; $400,000 credit, originator HBRK Associates Inc / LSJE via TD Bank NA, beneficiary LSJ Employees LLC account 7322001709; FirstBankPR007491).
+Dated stopping point: Sep 5, 2019 ([EFTA01273181](https://grokarchivehub.com/search?q=EFTA01273181) p.12, stamped [EFTA01273192](https://grokarchivehub.com/search?q=EFTA01273192); the printed Date field reads '05-Sep-2019', confirmed from the page image — the OCR garble was an OCR artifact only — and agrees with IMAD 20190905 C1B76E1C 004494; $400,000 credit, originator HBRK Associates Inc / LSJE via TD Bank NA, beneficiary LSJ Employees LLC account [account identifier withheld]; FirstBankPR007491).
 No closure document. Links: 23.
 
 v3.0 DS10 extension (WS3, major — both legs): JPMorgan leg, back to
@@ -2355,14 +2629,20 @@ Employees / LSJE name discrepancy is preserved: wires still name
 the beneficiary 'LSJ EMPLOYEES LLC' after the Mar 13, 2013 rename
 to LSJE, LLC.
 
-v3.2 (WS1) extension — second FirstBank account: [EFTA01272487](https://grokarchivehub.com/search?q=EFTA01272487), a second LSJ Employees LLC FirstBank account (statement series S-05037), 51 statements, Feb 29, 2012 – Jul 31, 2016. Feb 2012: beginning $63,317.33, $80,000 incoming wire Feb 23, ending $70,925.51. Distinct from P9's operating account 7322001742 ([EFTA01670642](https://grokarchivehub.com/search?q=EFTA01670642), Feb 2012 – Aug 2014). P9's FirstBank leg now spans two accounts and runs to Jul 2016 on statements — but the Jul 24, 2019 $2,536,513.89 advice still has NO statement corroboration in the 917: the $2,536,513.89 figure occurs 0 times in both LSJ bundles.
+v3.2 (WS1) extension — second FirstBank account: [EFTA01272487](https://grokarchivehub.com/search?q=EFTA01272487), a second LSJ Employees LLC FirstBank account (statement series S-05037), 51 statements, Feb 29, 2012 – Jul 31, 2016. Feb 2012: beginning $63,317.33, $80,000 incoming wire Feb 23, ending $70,925.51. Distinct from P9's operating account [account identifier withheld] ([EFTA01670642](https://grokarchivehub.com/search?q=EFTA01670642), Feb 2012 – Aug 2014). P9's FirstBank leg now spans two accounts and runs to Jul 2016 on statements — but the Jul 24, 2019 $2,536,513.89 advice still has NO statement corroboration in the 917: the $2,536,513.89 figure occurs 0 times in both LSJ bundles.
 
 v3.2 (WS5) extension — payroll banking: [EFTA00542963](https://grokarchivehub.com/search?q=EFTA00542963) (DS9, May 16, 2018), Karyna Shuliak → Richard Kahn, re payroll: LSJ paychecks are direct-deposited to a First Bank account; Shuliak visited First Bank with Jeanne; "The account has been activated. They gave me some checks as well." LSJ payroll banking detail.
 
 v3.3 (WS1) extension — payroll mechanism in action: May 16, 2018 12:34 — Kahn → Shuliak: "did you on your last visit go to First Bank regarding account do you have access to that money via checks or online as your paychecks from LSJ will be direct deposited there every 2 weeks." ([EFTA00542934](https://grokarchivehub.com/search?q=EFTA00542934), DS9, 1 p.) May 16, 2018 08:40 — Shuliak → Kahn: "Yes, we went there with Jeanne. The account has been activated. They gave me some checks as well, Jeanne was going to order more. I have the instructions at 71st, will try to log in when I am there." ([EFTA00542935](https://grokarchivehub.com/search?q=EFTA00542935), DS9, 1 p.; [EFTA00542964](https://grokarchivehub.com/search?q=EFTA00542964) is a second copy of the same reply; [EFTA02306745](https://grokarchivehub.com/search?q=EFTA02306745) is the DS11 copy.) Jun 7, 2018 — Kahn forwards "First Bank Statement 5-31-2018" ([EFTA00543965](https://grokarchivehub.com/search?q=EFTA00543965), DS9, 1 p.): a May 31, 2018 FirstBank statement was circulating Jun 7, 2018 (the statement itself is the attachment, not in the text layer). May 2018 — FirstBank statement, Karyna Shuliak individual checking ([EFTA00525148](https://grokarchivehub.com/search?q=EFTA00525148), DS9, 1 p.): May 17, 2018 ACH credit $2,081.34 "LSJ EMPLOYEES LL PAYROLL"; May 1 deposit $250; May 4 deposit $2,081.35; ending balance $4,412.69. The payroll mechanism in action, one day after the May 16 activation emails. Jan 7, 2016 — Bella Klein → Litchford (Deutsche) ([EFTA01359653](https://grokarchivehub.com/search?q=EFTA01359653), DS10, 1 p.): "Please process the attached 3 wires." Attachments incl. "DB Wire - Southern Trust to First Bank Payroll 10.11.2013.pdf" (shared with P35 — the STC → FirstBank payroll pipeline).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — 2012 operations prologue: Epstein affidavit in USVI Dept of Labor case WD-061-12-STT ([EFTA01084748](https://grokarchivehub.com/search?q=EFTA01084748), FULL — his sworn account, not established fact; affidavit date not established); 2012 bills of sale ([EFTA01087335](https://grokarchivehub.com/search?q=EFTA01087335), [EFTA01088009](https://grokarchivehub.com/search?q=EFTA01088009), FULL). HEAD: Sep 16, 2017 hurricane legs ([EFTA01023198](https://grokarchivehub.com/search?q=EFTA01023198), [EFTA01023244](https://grokarchivehub.com/search?q=EFTA01023244)) and USVI Dept of Labor docs ([EFTA01077806](https://grokarchivehub.com/search?q=EFTA01077806), [EFTA01077815](https://grokarchivehub.com/search?q=EFTA01077815), [EFTA01079138](https://grokarchivehub.com/search?q=EFTA01079138)).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P10 Butterfly trusts Probable Verification: V
+**Current dated stopping point:** 2018-12-03 ([EFTA01265180](https://grokarchivehub.com/search?q=EFTA01265180)); 2006 vs 2013 trusts kept distinct; 2016/2018 wires unassigned. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2006 vs. 2013 trusts (kept distinct). Anchors
 (SUPPLIED — v1 deferred these): [EFTA01282018](https://grokarchivehub.com/search?q=EFTA01282018) (2006 trust),
 [EFTA01297524](https://grokarchivehub.com/search?q=EFTA01297524) (2013 trust, Dec 31, 2013), [EFTA01273089](https://grokarchivehub.com/search?q=EFTA01273089)
@@ -2397,9 +2677,16 @@ v3.2 (WS2) extension — FinCEN / SAR leg: [EFTA00020176](https://grokarchivehub
 v3.3 (WS1) extension — SAR chart + Jun 2021 review request: chart as of Oct 8, 2019, by SBH ([EFTA00151209](https://grokarchivehub.com/search?q=EFTA00151209), DS9, 2 pp., shared with P42): a 2017 entity chart + Deutsche SAR numbers (31000152862375, 31000155130250): HBRK Associates Inc JPMC $800,000 (Oct 29/30, 2014); FT Real Estate Inc First Bank of Puerto Rico $738,227 (Sep 28, 2016); "Butterfly Trust (BT) (On 5/10/2019, assets transferred to: JPMC- National Financial Services LLC, subs of Fidelity Brokerage Services LLC)"; "The Butterfly Trust JP Morgan Chase SAR 31000154806804"; entity list incl. "Alan Morton Dershowitz", "The 2001 Jeffrey E Epstein Insurance Trust", "Children's Trust II", "The Sweater Trust", "Plan D LLC". An investigator's chart, not findings about the named persons — association only, no wrongdoing implied. Jun 15, 2021 — AUSA asks a Deutsche Bank contact to "take a look at the Butterfly Trust account at Deutsche Bank? My understanding is that Maxwell was a beneficiary, but would be interested if you see any notable account activity." ([EFTA01655036](https://grokarchivehub.com/search?q=EFTA01655036), DS10, 2 pp., shared with Story 11 — the FirstBank completeness thread is the Story 11 leg; the Butterfly Trust review request is the P10 leg.)
 
 v3.67 extension (DS8 deepening pass, cut 30). [EFTA00029805](https://grokarchivehub.com/search?q=EFTA00029805) (emails dated Nov 13–18, 2019): counsel for a bank producing documents to SDNY say their review of the bank's communications turned up a chart attached to a September 12, 2013 email from Epstein's accountant, which appears to list Epstein's J.P. Morgan accounts before his move to Deutsche Bank. The chart identifies several accounts previously unknown to them, including a brokerage account of the Butterfly Trust, and the account managers. Counsel say their next production will include a significant number of emails about cash-withdrawal activity by Epstein's lawyer. SDNY acknowledges receipt. Bank counsel's description as written; the chart's contents are not reproduced here, and the bank employees are not named here.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — 2011 Butterfly Trust agreement ([EFTA01084029](https://grokarchivehub.com/search?q=EFTA01084029), HEAD); Jul 31, 2018 $30k loan — funding source unclear ([EFTA01004272](https://grokarchivehub.com/search?q=EFTA01004272), FULL); same-thread HEAD ([EFTA01004274](https://grokarchivehub.com/search?q=EFTA01004274)). The Honeycomb holding names the 2013 Butterfly Trust as an illiquid holding — see fragment F-40-1 ([EFTA00068100](https://grokarchivehub.com/search?q=EFTA00068100), fragment-only anchor; not a P10 anchor). [EFTA00128814](https://grokarchivehub.com/search?q=EFTA00128814) DEMOTED (see demoted list).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P11 J. Epstein Virgin Islands Foundation brokerage/banking Probable Verification: V
+**Current dated stopping point:** 2019-05-07 ([EFTA01273059](https://grokarchivehub.com/search?q=EFTA01273059); v3.0, WS3 - was 2017-06-29). Historical paragraphs below retain the dates of their original survey.
+
 Span: Sep 2013–May 2019. Anchors (SUPPLIED — v1 deferred
 these): [EFTA01284127](https://grokarchivehub.com/search?q=EFTA01284127) (brokerage, Sep 30, 2013), [EFTA01269261](https://grokarchivehub.com/search?q=EFTA01269261)
 (board consent, undated in this pass, 31 pp.), [EFTA01297802](https://grokarchivehub.com/search?q=EFTA01297802)
@@ -2430,6 +2717,8 @@ v3.3 (WS1) extension — FirstBank outbound + outstanding check: Sep 2, 2016 —
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P12 Summers introduction → direct contact Probable Verification: V-WS3; v3.4 WS3: identity fork resolved — correspondent is Larry Summers (in-thread proof)
+**Current dated stopping point:** 2017-10-27 ([EFTA02396194](https://grokarchivehub.com/search?q=EFTA02396194), the Manafort exchange); do not upgrade. Historical paragraphs below retain the dates of their original survey.
+
 Span: Sep 2012–Oct 2017. Anchors (Barak IDs): 27747, 24339
 (Epstein proposals/endorsement only — meetings
 unconfirmed), 10056 (direct Summers→Barak favor request,
@@ -2443,9 +2732,15 @@ v3.2 (WS5) extension — direct "Lawrence H. Summer" emails: [EFTA01917463](http
 v3.3 (WS2) extension — candidate leg (coordinator's decision, see changelog §8): direct Epstein↔Larry Summers contact about Barak, Sep 17–18, 2012 ([EFTA02560037](https://grokarchivehub.com/search?q=EFTA02560037), DS11), predating P12's Jan 2014 anchors. Epstein (Mon Sep 17, 5:05 PM): "22-24". Summers (Sep 17, 3:36 PM): "When. I'm in Korea right now." Epstein (Tue Sep 18, 5:34 AM): "any interest in Ehud, at my house". Reply at the top of the chain (Tue Sep 18, 12:32 AM; sender blank in the text layer, in the Epstein↔Summers thread): "Will be in nyc on 24 mostly free." This 2012 exchange names "Larry Summers" directly (address lhsummers@aol.com) in Epstein's own mail. It bears on P12's identity question — resolved in v3.4 (see below): the correspondent is Larry Summers, and the 2014 "Summer" spelling variant is Epstein's address-book form of the same person, proved in-thread. Shared with P43, where the Sep 2012 meeting arrangement is told whole. Tier and stopping point unchanged by this leg alone; the stopping point moves Oct 27, 2015 → Oct 27, 2017 above because the v3.2 Manafort exchange ([EFTA02396194](https://grokarchivehub.com/search?q=EFTA02396194)) already postdated the old stopping point.
 
 v3.4 (WS3) correction — the 'Lawrence H. Summer(s)' identity fork is RESOLVED: the correspondent is Larry Summers. The with-'s' correspondent self-identifies as Larry Summers — 89 documents carry both 'Lawrence H. Summers' and 'lhsummers', e.g. [EFTA02343136](https://grokarchivehub.com/search?q=EFTA02343136) (Sep 26, 2014, 'Holder resignation'): 'Follow me on twitter @lhsummers www.larrysummers.com'; [EFTA02337365](https://grokarchivehub.com/search?q=EFTA02337365) (Sep 23, 2015 thread, same signature). The no-'s' spelling is Epstein's address-book form of the same person, proved in-thread: [EFTA01916369](https://grokarchivehub.com/search?q=EFTA01916369) (Aug 5, 2014, To: 'Lawrence H. Summer') quotes 'Lawrence H. Summers wrote: Both... Follow me on twitter @lhsummers'; [EFTA01917360](https://grokarchivehub.com/search?q=EFTA01917360) (Jun 30, 2014) and [EFTA01942841](https://grokarchivehub.com/search?q=EFTA01942841) (Jan 11, 2014) do the same (quoted 'Lawrence H. Summers' + @lhsummers/larrysummers.com signature under a 'Lawrence H. Summer' To: line); [EFTA01798151](https://grokarchivehub.com/search?q=EFTA01798151) (Feb 9, 2016, From: 'Lawrence H. Summer') Cc's 'lhsoffice'. 9 documents carry the no-'s' form against 471 carrying the with-'s' form; no second Lawrence Summer appears in the corpus. The four v3.2 no-'s' emails ([EFTA01917463](https://grokarchivehub.com/search?q=EFTA01917463), [EFTA01929784](https://grokarchivehub.com/search?q=EFTA01929784), [EFTA01940442](https://grokarchivehub.com/search?q=EFTA01940442), [EFTA01942813](https://grokarchivehub.com/search?q=EFTA01942813)) are the same correspondent. The standing v3.1 open question is withdrawn for P12; the spelling variant is recorded, not a fork. Tier unchanged (probable, do not upgrade).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Nov 14, 2014 Harvard-gift exchange ([EFTA01000294](https://grokarchivehub.com/search?q=EFTA01000294), FULL); Dec 4, 2018 Summers→Epstein — “instruct Dershowitz not to speak to press at all” ([EFTA01014476](https://grokarchivehub.com/search?q=EFTA01014476), FULL; companion [EFTA01014494](https://grokarchivehub.com/search?q=EFTA01014494), HEAD). HEAD: [EFTA01000296](https://grokarchivehub.com/search?q=EFTA01000296), [EFTA01000298](https://grokarchivehub.com/search?q=EFTA01000298), [EFTA01000301](https://grokarchivehub.com/search?q=EFTA01000301), [EFTA01000202](https://grokarchivehub.com/search?q=EFTA01000202), [EFTA01000183](https://grokarchivehub.com/search?q=EFTA01000183). Do not upgrade to confirmed. Note: [EFTA01014476](https://grokarchivehub.com/search?q=EFTA01014476)/94 also sit inside candidate (h)’s Dec 2018 thread cluster; WS-A/B/C evaluates the standalone-thread candidacy, WS-D records only the P12 leg.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P13 Andrew Nov 2010 NY visit arranged Probable Verification: V-C
+**Current dated stopping point:** Arranged 2010-11-26; Dec 2012 greeting is contact only. Historical paragraphs below retain the dates of their original survey.
+
 Span: Nov 2010 (+ Dec 2012 greeting). Anchors (DS11 leg verified in v1.2 against corpus documents): [EFTA02318342](https://grokarchivehub.com/search?q=EFTA02318342), [EFTA02318381](https://grokarchivehub.com/search?q=EFTA02318381), [EFTA02318436](https://grokarchivehub.com/search?q=EFTA02318436), [EFTA02318530](https://grokarchivehub.com/search?q=EFTA02318530), [EFTA02318546](https://grokarchivehub.com/search?q=EFTA02318546) (all DS11, Nov 26, 2010 — JFK pickup + 71st lodging arranged); plus [EFTA02318350](https://grokarchivehub.com/search?q=EFTA02318350) (Dec 2012 greeting, contact only). DS9 leg RESTORED in v1.4 (Check 1): [EFTA00559801](https://grokarchivehub.com/search?q=EFTA00559801)/803
 (Nov 26, 2010 — JFK pickup instruction, "I will change your
 flight from pb to ny to Sunday so you can pick up prince
@@ -2506,17 +2801,32 @@ v3.79 extension (DS8 protected pass, cut 42). [EFTA00030190](https://grokarchive
 
 - **v3.115 (1 reported entries):** September 2020 correspondence seeks confirmation of counsel's position on voluntary interviews and written answers concerning events outside 1994–97. A request to confirm a position, not proof of an interview or statement. Sources: [EFTA00073286](https://grokarchivehub.com/search?q=EFTA00073286).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00026542](https://grokarchivehub.com/search?q=EFTA00026542), [EFTA00026609](https://grokarchivehub.com/search?q=EFTA00026609). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00559803](https://grokarchivehub.com/search?q=EFTA00559803). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077370](https://grokarchivehub.com/search?q=EFTA00077370), [EFTA00077507](https://grokarchivehub.com/search?q=EFTA00077507). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P14 Ruemmler counsel arc Probable Verification: V
+**Current dated stopping point:** 2015-07-06 ([EFTA02335898](https://grokarchivehub.com/search?q=EFTA02335898) CVRA opinion); DS11-distinct in probe. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2014–2015. Anchors: [EFTA02347019](https://grokarchivehub.com/search?q=EFTA02347019) (Epstein's own
 NPA account — his framing only, labeled as such),
 [EFTA02386080](https://grokarchivehub.com/search?q=EFTA02386080), [EFTA02367027](https://grokarchivehub.com/search?q=EFTA02367027) (Jan 2015 statement drafts),
 [EFTA02335898](https://grokarchivehub.com/search?q=EFTA02335898) (Jul 6, 2015 CVRA opinion).
 Endpoint: OPEN. DS11-distinct in probe. Links: 1, P1, P3.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Nov–Dec 2014 legs (HEAD): Nov 21 “you can talk Kathy Ruemmler. larry summer billgates…” ([EFTA01001903](https://grokarchivehub.com/search?q=EFTA01001903)); Nov 21 Ruemmler personal email ([EFTA01001950](https://grokarchivehub.com/search?q=EFTA01001950) — thin contact leg); Dec 2 Epstein asks Farkas if Ruemmler can attend a meeting, “she was white house counsel” ([EFTA01002184](https://grokarchivehub.com/search?q=EFTA01002184), [EFTA01002185](https://grokarchivehub.com/search?q=EFTA01002185)); Dec 10 “Kathy ruemmler will be in Seattle” ([EFTA01002319](https://grokarchivehub.com/search?q=EFTA01002319)). Also: Weinberg memo to Ruemmler, “CONFIDENTIAL: Jeffrey Epstein Case History” — defense-side narrative, not findings ([EFTA00625093](https://grokarchivehub.com/search?q=EFTA00625093), SNIPPET).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P15 Air Ghislaine / S-76 acquisition Probable Verification: V-C
+**Current dated stopping point:** 2013 maintenance tail ([EFTA02679035](https://grokarchivehub.com/search?q=EFTA02679035)); DS11-distinct in probe. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2007–2010. Anchors: [EFTA02727497](https://grokarchivehub.com/search?q=EFTA02727497) (2008 amendment),
 S/N 750 threads, 2010 S-76D draft contract, Aug 2010
 D-slot trade proposal; plus [EFTA02437319](https://grokarchivehub.com/search?q=EFTA02437319). (v3.0, WS4: [EFTA02679035](https://grokarchivehub.com/search?q=EFTA02679035) removed — Jun 28, 2013
@@ -2556,9 +2866,14 @@ v3.54 extension (DS8 deepening pass, cut 17). [EFTA00020592](https://grokarchive
 
 - **v3.122:** November 23, 2021 Lockheed production summary records S-76C++ deliveries N908GM in December 2007 and N722JE in March 2010. Same record as Story 26; not independent corroboration. Source: [EFTA00075806](https://grokarchivehub.com/search?q=EFTA00075806).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00040848](https://grokarchivehub.com/search?q=EFTA00040848), [EFTA00300313](https://grokarchivehub.com/search?q=EFTA00300313), [EFTA01003845](https://grokarchivehub.com/search?q=EFTA01003845), [EFTA01004862](https://grokarchivehub.com/search?q=EFTA01004862), [EFTA01004885](https://grokarchivehub.com/search?q=EFTA01004885), [EFTA01006496](https://grokarchivehub.com/search?q=EFTA01006496), [EFTA01022784](https://grokarchivehub.com/search?q=EFTA01022784), [EFTA01022785](https://grokarchivehub.com/search?q=EFTA01022785), [EFTA01022802](https://grokarchivehub.com/search?q=EFTA01022802), [EFTA01045759](https://grokarchivehub.com/search?q=EFTA01045759), [EFTA01045767](https://grokarchivehub.com/search?q=EFTA01045767), [EFTA01047655](https://grokarchivehub.com/search?q=EFTA01047655), [EFTA01047821](https://grokarchivehub.com/search?q=EFTA01047821), [EFTA01079507](https://grokarchivehub.com/search?q=EFTA01079507), [EFTA01080421](https://grokarchivehub.com/search?q=EFTA01080421), [EFTA01110326](https://grokarchivehub.com/search?q=EFTA01110326), [EFTA01118667](https://grokarchivehub.com/search?q=EFTA01118667), [EFTA01176652](https://grokarchivehub.com/search?q=EFTA01176652), [EFTA01247021](https://grokarchivehub.com/search?q=EFTA01247021), [EFTA01259872](https://grokarchivehub.com/search?q=EFTA01259872). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P16 S76D demo flight Probable Verification: AV
+**Current dated stopping point:** 2019-06-12 day-of tail number ([EFTA02290095](https://grokarchivehub.com/search?q=EFTA02290095)). Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr–Jun 2019. Anchors (DS11 leg verified):
 [EFTA02288718](https://grokarchivehub.com/search?q=EFTA02288718), [EFTA02290095](https://grokarchivehub.com/search?q=EFTA02290095) (day-of tail number N533XB,
 Jun 12, 2019); plus the full April–June scheduling chain
@@ -2572,9 +2887,15 @@ N533XB); the v1.1 removal was a slice-report coverage
 failure.
 Endpoint: PROBABLE — scheduling + day-of tail number;
 flight completion not separately proved. Links: P15.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.83 merge — Ren-line JSON anchors not cited literally in the entry prose above (2 IDs, now cited here): [EFTA02284023](https://grokarchivehub.com/search?q=EFTA02284023), [EFTA02292055](https://grokarchivehub.com/search?q=EFTA02292055) See changelog §15.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P17 Zorro Ranch Moskowitz visit Probable Verification: V
+**Current dated stopping point:** 2017-06-10 itinerary leg ([EFTA02214641](https://grokarchivehub.com/search?q=EFTA02214641)); DS11-distinct in probe. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jun 5–6, 2017. Anchors (SUPPLIED — v1 deferred
 these): [EFTA02213626](https://grokarchivehub.com/search?q=EFTA02213626) (2017-05-22, Moskowitz driving to
 ranch June 5/6), [EFTA02214715](https://grokarchivehub.com/search?q=EFTA02214715) (2017-06-02,
@@ -2589,6 +2910,8 @@ not unauditable despite v1 citing no IDs. Links: none.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P18 New York Times v. Bureau of Prisons FOIA suit → ~2,700-page release Probable Verification: V
+**Current dated stopping point:** 2021-08-23 follow-up on Jul 2 autopsy-report production. Historical paragraphs below retain the dates of their original survey.
+
 Span (extended v3.9): 2019 (FOIA Request No. 2019-05665) to Aug 23, 2021 follow-up.
 Anchors: [EFTA00031025](https://grokarchivehub.com/search?q=EFTA00031025) (Capone declaration Aug 5, 2020, 55 pp. — BOP
 summary-judgment motion; attaches the Noel indictment and the
@@ -2645,9 +2968,17 @@ v3.37 extension (ordered DS8 continuation, final actionable slice). [EFTA0003263
 
 - **v3.121:** August 5, 2020 BOP summary-judgment brief reports approximately 584 redacted pages produced across June 22, July 7 and July 10. The total is the brief's representation, not an independent count. Source: [EFTA00075437](https://grokarchivehub.com/search?q=EFTA00075437).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Capone declaration, Aug 5, 2020 ([EFTA00039908](https://grokarchivehub.com/search?q=EFTA00039908), HEAD — head + targeted depth): BOP declaration in NYT v. BOP (1:20-cv-00833-PAE), Doc 22, in support of summary judgment; attaches the Noel indictment and the Tartaglione superseding indictment; narrates the Jul 2, 2019 charges, Jul 6 arrest, MCC incarceration, Jul 10 SHU assignment. FOIA-exemption discussion head-read only — full account not extracted.
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
+
+v3.129 extension (DS9 reading pass, cut 47). [EFTA00078008](https://grokarchivehub.com/search?q=EFTA00078008) (emails dated Feb 10–20, 2020, as printed): after the Times files its FOIA complaint against BOP, SDNY's civil side tells the Epstein prosecutors that BOP had refused to produce any documents, categorically asserting exemptions 5, 6, 7(A), 7(C), 7(E) and 7(F), mainly on the basis of the ongoing investigations, including internal BOP investigations, into Epstein's death; that the answer was due March 4, 2020; that FOIA cases generally go to summary judgment on an agency declaration; and that categorical refusals can be hard to defend. A meeting on Epstein FOIA requests to SDNY and BOP is proposed for Feb 25, 2020. Internal litigation planning; the later releases and declarations are carried, and staff are not named here.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
-P19 Epstein's successive wills, 2001–January 2019 Probable Verification: V
+P19 Epstein's successive wills, 2001–2014 Probable Verification: V
+**Current dated stopping point:** 2019-01-18 will. Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 11, 2001–Nov 2014.
 Anchors: [EFTA00016841](https://grokarchivehub.com/search?q=EFTA00016841) (will Dec 11, 2001, 24 pp., with five codicils
 2003–2007 — all property to the Trustees of The Jeffrey E. Epstein
@@ -2712,9 +3043,18 @@ v3.65 extension (DS8 deepening pass, cut 28). [EFTA00028554](https://grokarchive
 - **v3.119:** January 18, 2019 will establishes a pour-over to the 2019 Trust, with Indyke and Kahn named executors and Ruemmler successor. Extends P19 to January 2019; the August 8, 2019 will and probate remain in P24. Source: [EFTA00074279](https://grokarchivehub.com/search?q=EFTA00074279).
 
 **Chronology correction:** The earlier 2001–2014 title and stopping point reflected the prior corpus. The newly reported June 2017, May 2018 and January 2019 wills extend this chain. P24 separately covers the August 2019 will and probate. No tier change.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Oct 4, 2012 will + Jun 6, 2013 First Codicil substituting executors Darren K. Indyke, Joseph Pagano, James E. Staley (successor David J. Mitchell), $250,000 per executor ([EFTA00074246](https://grokarchivehub.com/search?q=EFTA00074246), HEAD); 2012 Trust agreement, trustees Indyke, Staley, Farkas ([EFTA01071198](https://grokarchivehub.com/search?q=EFTA01071198), HEAD); will provisions naming Ruemmler and Nikolic as successor executors ([EFTA00074269](https://grokarchivehub.com/search?q=EFTA00074269), [EFTA00060795](https://grokarchivehub.com/search?q=EFTA00060795), SNIPPET); Jan 16, 2020 will-production review email — writer’s reading only, not verified against the will text ([EFTA00076006](https://grokarchivehub.com/search?q=EFTA00076006), SNIPPET).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
+
+v3.124 extension (DS9 reading pass, cut 42). [EFTA00076006](https://grokarchivehub.com/search?q=EFTA00076006) (SDNY emails dated Jan 16, 2020): SDNY reports that the estate's trustees produced eight more prior wills that day, going back to 2001, and that SDNY then asked for the trusts those wills reference; a colleague admits the first request covered only the wills. A reviewer writes that, as far as the reviewer can tell, the trust agreement did not change between 2001 and October 2012, that Indyke's name first appears around 2004 while Kahn does not appear as an executor until 2018, and that Staley appears as an executor or backup executor from 2012 to 2018. The reviewer also remarks on the appearance of Ruemmler and of Larry Summers in the documents (the reviewer's comment; their roles are not stated in the text read) and lists the trust agreements still needed (2001; October 2012; September 2013; November 2014; June 2017; May 2018). The same thread records the trustees' counsel again asking to meet DOJ about forfeiture, which they called an overhang on paying claims through a fund, ahead of a USVI hearing on Feb. 4. These are requests and one reviewer's reading; what was later produced is not shown here. [EFTA00076008](https://grokarchivehub.com/search?q=EFTA00076008) (SDNY emails dated Jan 16–17, 2020): SDNY receives the final signed grand-jury sharing order and finds it relatively narrow and not prospective, so a follow-up order would be needed to share the new will and trust materials with the Civil Division. The decision is to wait for the further trust agreements and then seek one new order covering everything. This is the stated reason for the second sharing order already carried ([EFTA00031102](https://grokarchivehub.com/search?q=EFTA00031102)); it does not show that order signed. [EFTA00076011](https://grokarchivehub.com/search?q=EFTA00076011) (SDNY emails dated Jan 29–30, 2020): a staff member circulates a revised spreadsheet analysing the Epstein trust documents received, with one tab per trust, amendments in date order, and key and summary tabs. The revision adds Indyke and Kahn to the summary tab and tracks properties and provisions that allocate a share of the remaining estate. The spreadsheet itself is an attachment not in the text read, so its contents are not represented here. [EFTA00076006](https://grokarchivehub.com/search?q=EFTA00076006) was already carried in v3.85 as a v3.6 WS-D SNIPPET leg; it gains no new anchor here — this paragraph records the full-read substance from the v3.124 pass, and only [EFTA00076008](https://grokarchivehub.com/search?q=EFTA00076008) and [EFTA00076011](https://grokarchivehub.com/search?q=EFTA00076011) are new anchors.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P20 Civil forfeiture thread: Epstein properties Probable Verification: V
+**Current dated stopping point:** 2020-07-08 Balderas letter. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jun 2019–Jul 8, 2020.
 Anchors: [EFTA00014300](https://grokarchivehub.com/search?q=EFTA00014300) (Jun 26–28, 2019 — SDNY assigns a paralegal
 for the "Epstein forfeiture side"); [EFTA00014286](https://grokarchivehub.com/search?q=EFTA00014286), [EFTA00014298](https://grokarchivehub.com/search?q=EFTA00014298)
@@ -2768,9 +3108,15 @@ v3.66 extension (DS8 deepening pass, cut 29). [EFTA00029170](https://grokarchive
 
 - **v3.112 (1 reported entries):** August 13–14, 2019 correspondence requests a theory and summary for possible forfeiture of New York, Florida and Virgin Islands residences and addresses venue and possible proceeds. It is not a decision or finding that property was forfeited. Sources: [EFTA00072128](https://grokarchivehub.com/search?q=EFTA00072128).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Forfeiture-subfile legs shared with Story 3: Jun 24, 2019 FBI forfeiture-subfile opening ([EFTA01227226](https://grokarchivehub.com/search?q=EFTA01227226), HEAD) — Jul 8, 2019 title search/appraisal for 9 E 71st St; Aug 21, 2019 Great St. James deeds ([EFTA01227326](https://grokarchivehub.com/search?q=EFTA01227326), HEAD) — Jan 18, 2016 $17.5M + Jan 21, 2016 $5M to GREAT ST JIM LLC. HEAD: [EFTA01227426](https://grokarchivehub.com/search?q=EFTA01227426), [EFTA01249981](https://grokarchivehub.com/search?q=EFTA01249981) (Priscilla Doe complaint — allegations as pleaded), [EFTA01250239](https://grokarchivehub.com/search?q=EFTA01250239).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P21 Government of the U.S. Virgin Islands v. Epstein estate Probable Verification: V
+**Current dated stopping point:** 2020-02-05 amended complaint. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jan–Sep 2020.
 Anchors: [EFTA00019223](https://grokarchivehub.com/search?q=EFTA00019223) (Jan 15, 2020 — per the NYT article forwarded
 inside SDNY the same day, the suit alleges Epstein trafficked girls
@@ -2804,9 +3150,18 @@ v3.30 extension (ordered DS8 continuation). [EFTA00028285](https://grokarchivehu
 
 - **v3.120:** January 23, 2020 probate filing packet includes the January 15 USVI CICO complaint with 22 counts and January 16 lien notice, intervention and claims-program filings. Allegations and proposed orders are not findings. Source: [EFTA00074744](https://grokarchivehub.com/search?q=EFTA00074744).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00039998](https://grokarchivehub.com/search?q=EFTA00039998). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00076488](https://grokarchivehub.com/search?q=EFTA00076488), [EFTA00076491](https://grokarchivehub.com/search?q=EFTA00076491). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00077998](https://grokarchivehub.com/search?q=EFTA00077998). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P22 U.S.–France cooperation on the Brunel investigation Probable Verification: V-C
+**Current dated stopping point:** 2021-01-20 follow-up. Historical paragraphs below retain the dates of their original survey.
+
 Span: Nov 2019–Jan 2021.
 Anchors: [EFTA00020911](https://grokarchivehub.com/search?q=EFTA00020911) (Nov 19–21, 2019 — McCawley connects DCPJ
 investigators of Brunel with SDNY prosecutors, noting the French
@@ -2840,9 +3195,15 @@ v3.53 extension (DS8 deepening pass, cut 16). [EFTA00019876](https://grokarchive
 - **v3.121:** August 16–September 9, 2019 Paris-prosecutor and SDNY channel correspondence concerns potential French connections, confidentiality and preparation of search warrants. Brunel is not named; retain as related cooperation context only, not a Brunel-specific finding or proof warrants were executed. Source: [EFTA00075274](https://grokarchivehub.com/search?q=EFTA00075274).
 
 **Scope:** The August 2019 correspondence predates the Brunel-specific chain but does not name Brunel; retain the established chain span and label this earlier related context separately.
+
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00077200](https://grokarchivehub.com/search?q=EFTA00077200), [EFTA00077207](https://grokarchivehub.com/search?q=EFTA00077207), [EFTA00077214](https://grokarchivehub.com/search?q=EFTA00077214). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P23 The Epstein Victims' Compensation Program — contested design, then an operating fund Probable Verification: V
+**Current dated stopping point:** 2021-10-26. Historical paragraphs below retain the dates of their original survey.
+
 Span: Nov 25, 2019–Oct 26, 2021.
 Anchors: [EFTA00027912](https://grokarchivehub.com/search?q=EFTA00027912) (Nov 25, 2019 — Jordy Feldman introduces
 himself as co-Designer (with Feinberg and Biros) and Administrator of
@@ -2904,9 +3265,14 @@ v3.61 extension (DS8 deepening pass, cut 24). [EFTA00025237](https://grokarchive
 
 - **v3.120:** January 23, 2020 USVI government intervention motion and opposition to the executors' proposed claims-resolution program. A party position, not the court's decision; same packet as P21. Source: [EFTA00074744](https://grokarchivehub.com/search?q=EFTA00074744).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00040555](https://grokarchivehub.com/search?q=EFTA00040555), [EFTA00040561](https://grokarchivehub.com/search?q=EFTA00040561). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P24 The estate probate opens — will, petition, $577.7M inventory Probable Verification: V
+**Current dated stopping point:** 2020-01-31 first quarterly accounting. Historical paragraphs below retain the dates of their original survey.
+
 Span: Aug 8, 2019–Dec 11, 2019.
 Anchors: [EFTA00027979](https://grokarchivehub.com/search?q=EFTA00027979) (Last Will and Testament dated Aug 8, 2019
 appoints Indyke and Kahn as executors; Aug 15, 2019 petition for
@@ -2948,9 +3314,16 @@ v3.55 extension (DS8 deepening pass, cut 18). [EFTA00021063](https://grokarchive
 - **v3.122:** First Quarterly Accounting, ST-19-PB-80, filed January 31, 2020, reports pre-appraisal assets of $628,330,500 on August 10 and $634,797,047 on December 31, 2019. The accounting directly lists a rejected $621,165 claim previously reported second-hand; not a court determination of asset value or claim validity. Source: [EFTA00075562](https://grokarchivehub.com/search?q=EFTA00075562).
 
 **Updated stopping point:** January 31, 2020 First Quarterly Accounting; the grant-of-probate order remains separately unverified. The August 2019 will and probate chain remain distinct from P19, which now ends in January 2019.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Dec 23, 2011 LSJ→Nautilus title-transfer affidavit ([EFTA01084173](https://grokarchivehub.com/search?q=EFTA01084173), FULL — affidavit date not established, postdates Dec 2011); Aug 24, 2011 hangar/fuel-truck leases ([EFTA01080421](https://grokarchivehub.com/search?q=EFTA01080421), FULL — shared with P15); Feb 28, 2011 investment summary, $292,248,175 total ([EFTA01117777](https://grokarchivehub.com/search?q=EFTA01117777), HEAD — second page not read); First Quarterly Accounting, Aug 10–Dec 31, 2019 — total assets $628,330,500 → $634,797,047; entity cash $80,845,172 → $248,702,272 ([EFTA00082467](https://grokarchivehub.com/search?q=EFTA00082467), HEAD — $628.3M ≠ P24’s $577.7M inventory figure; different documents/bases; carry side by side, do not merge). HEAD: [EFTA01114641](https://grokarchivehub.com/search?q=EFTA01114641), [EFTA01252022](https://grokarchivehub.com/search?q=EFTA01252022), [EFTA01257444](https://grokarchivehub.com/search?q=EFTA01257444), [EFTA01253111](https://grokarchivehub.com/search?q=EFTA01253111), [EFTA01255653](https://grokarchivehub.com/search?q=EFTA01255653), [EFTA01026515](https://grokarchivehub.com/search?q=EFTA01026515), [EFTA01075055](https://grokarchivehub.com/search?q=EFTA01075055), [EFTA01111476](https://grokarchivehub.com/search?q=EFTA01111476), [EFTA01116653](https://grokarchivehub.com/search?q=EFTA01116653), [EFTA01083963](https://grokarchivehub.com/search?q=EFTA01083963), [EFTA01083977](https://grokarchivehub.com/search?q=EFTA01083977), [EFTA01111475](https://grokarchivehub.com/search?q=EFTA01111475), [EFTA01047433](https://grokarchivehub.com/search?q=EFTA01047433), [EFTA01045759](https://grokarchivehub.com/search?q=EFTA01045759), [EFTA01045767](https://grokarchivehub.com/search?q=EFTA01045767), [EFTA01047655](https://grokarchivehub.com/search?q=EFTA01047655), [EFTA01047821](https://grokarchivehub.com/search?q=EFTA01047821). Also: MarketWatch/NYPost will article, Aug 19, 2019 — press reporting, not the will ([EFTA00060779](https://grokarchivehub.com/search?q=EFTA00060779), SNIPPET).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P25 The Scotland Yard referral — Cassell to the Metropolitan Police, May–Aug 2015 Probable Verification: V
+**Current dated stopping point:** 2015-08-10 Met reply. Historical paragraphs below retain the dates of their original survey.
+
 Span: May 4, 2015–Aug 10, 2015.
 Anchors: [EFTA00029457](https://grokarchivehub.com/search?q=EFTA00029457) (Cassell writes the Assistant Commissioner,
 Specialist Crime and Operations, New Scotland Yard, May 4, 2015,
@@ -2974,6 +3347,8 @@ v3.2 (WS5) extension — the May 4, 2015 letter: [EFTA00098456](https://grokarch
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P26 The Boies Schiller subpoena fight — 2016 contacts, 2019 ex parte application, 2021 suppression motion Probable Verification: V
+**Current dated stopping point:** 2021-06-25 (Nathan opinion denies the motions to suppress, Dkt. 133, 139). Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb–Mar 2016 contacts; Apr 2019 ex parte proceedings; 2021 motion practice.
 Anchors: [EFTA00029077](https://grokarchivehub.com/search?q=EFTA00029077) (Maxwell moves to suppress all evidence
 obtained from the Boies Schiller subpoena and to dismiss Counts Five
@@ -3030,9 +3405,14 @@ v3.82 extension (DS8 bulk keyword-item pass, cut 45). [EFTA00018580](https://gro
 
 - **v3.87 (2 reported entries):** The February 5, 2019 application sought permission under the All Writs Act for civil discovery to be produced in response to a grand-jury subpoena; the proposed order is unsigned. The June 25, 2021 Opinion and Order, [EFTA00040664](https://grokarchivehub.com/search?q=EFTA00040664), denies Maxwell's suppression motions Dkt. 133 and 139 and an evidentiary hearing. It rejects the Fifth and Fourth Amendment and due-process arguments described in the opinion. This corrects the earlier deferred endpoint while keeping the story probable and distinct from a finding against other persons. Sources: [EFTA00040664](https://grokarchivehub.com/search?q=EFTA00040664).
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00039802](https://grokarchivehub.com/search?q=EFTA00039802), [EFTA00039809](https://grokarchivehub.com/search?q=EFTA00039809). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P27 Doe v. JPMorgan Chase / Deutsche Bank — class settlement, objections, and claims determinations Probable Verification: V
+**Current dated stopping point:** 2024-01-16 determination notices. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jun 22, 2023 (JPM Stipulation)–Jan 16, 2024 (determination notices).
 Anchors: [EFTA00037109](https://grokarchivehub.com/search?q=EFTA00037109) (class-member Objections to Proposed
 Settlement, Doc 247, filed Oct 19, 2023, 9 pp., invoking FRCP Rule
@@ -3062,9 +3442,15 @@ asserted.
 Links: P3 (civil litigation & settlements — distinct, later case);
 P23 (separate fund — the JPMorgan fund is not the Victims'
 Compensation Program).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.83 merge — Ren-line JSON anchors not cited literally in the entry prose above (3 IDs, now cited here): [EFTA00037135](https://grokarchivehub.com/search?q=EFTA00037135), [EFTA00037147](https://grokarchivehub.com/search?q=EFTA00037147), [EFTA00037149](https://grokarchivehub.com/search?q=EFTA00037149) See changelog §15.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P28 Estate video review under a court-approved protocol — halt, FBI referral, completed review Probable Verification: V
+**Current dated stopping point:** 2023-05-18 review completed. Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr 19–May 18, 2023.
 Anchors: [EFTA00039001](https://grokarchivehub.com/search?q=EFTA00039001) (Apr 19, 2023 — Estate counsel writes FBI:
 the Estate is reviewing ~1,100 videos pulled from Epstein's emails
@@ -3090,6 +3476,8 @@ Links: 3 (same SDNY docket family); P3 (estate litigation).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P29 Darknet threat against a person associated with the Epstein matter — FBI investigation opened, Australia follow-up Probable Verification: V
+**Current dated stopping point:** 2019-09-07 Legat follow-up. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jul 25–Sep 7, 2019.
 Anchors: [EFTA00038235](https://grokarchivehub.com/search?q=EFTA00038235) (Jul 26, 2019 — FBI New York opens a full
 investigation, case 9A-NY-3144791, "UNKNOWN SUBJECT — victim;
@@ -3114,9 +3502,15 @@ matter, different case number; do not merge.
 Links: P5 (Australia thread only, by geography).
 
 v3.2 (WS2) extension: July 27–28, 2019 emails ([EFTA00037795](https://grokarchivehub.com/search?q=EFTA00037795), 2 pp.): "Threat made to US citizen living in Australia" — FBI New York / Canberra Legat thread ("in which Australian city/state your victim currently resides"). The internal coordination leg immediately after the July 26, 2019 investigation opening already in v3.1. Outcome not established (unchanged).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — New leg is Serial 2 inside [EFTA00129366](https://grokarchivehub.com/search?q=EFTA00129366) (FULL): Aug 1, 2019 request for Online Covert Employee #10179 “in a limited undercover capacity, specifically online cameo appearances.” [EFTA00129366](https://grokarchivehub.com/search?q=EFTA00129366) (Serial 1) and [EFTA01245080](https://grokarchivehub.com/search?q=EFTA01245080) are duplicate filings of already-anchored [EFTA00038235](https://grokarchivehub.com/search?q=EFTA00038235) — not new legs (correction 5). Endpoint Sep 7, 2019 unchanged.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P30 The fight to unseal the NPA and the sealed plea records, 2008–2009 Probable Verification: V-WS1
+**Current dated stopping point:** 2009-07. Historical paragraphs below retain the dates of their original survey.
+
 Span: Sept 25, 2008 – July 2009.
 Anchors: [EFTA02729730](https://grokarchivehub.com/search?q=EFTA02729730) (Sept 25, 2008, 27 pp. — Doe #1 and #2 move in the
 CVRA case, 08-cv-80736, Doc 28, to unseal the non-prosecution agreement
@@ -3166,6 +3560,8 @@ v3.7 extension (Grok Bot, DS8 Bates-neighbor survey). 1 leg; endpoint unchanged.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P31 FBI Victim Services victim-briefing program, Sept 2019–Nov 2020 Probable Verification: V-WS1
+**Current dated stopping point:** 2020-11-12. Historical paragraphs below retain the dates of their original survey.
+
 Span: Sept 17, 2019 – Nov 12, 2020.
 Anchors: [EFTA02730071](https://grokarchivehub.com/search?q=EFTA02730071) (Sept 17, 2019 — status meeting with the ADIC;
 VSD is asked how many victims have been interviewed, how many victims
@@ -3223,9 +3619,16 @@ v3.81 extension (DS8 protected pass, cut 44). [EFTA00032599](https://grokarchive
 
 - **v3.120:** August 24, 2020 DOJ invitation to a coordinator for an August 25 call. Invitation only, not a completed call; identities and locator withheld.
 
+**Restored merged-line extensions (source-crew review):**
+
+Additional source-crew material: [EFTA00040516](https://grokarchivehub.com/search?q=EFTA00040516), [EFTA00040733](https://grokarchivehub.com/search?q=EFTA00040733), [EFTA00040774](https://grokarchivehub.com/search?q=EFTA00040774), [EFTA00040778](https://grokarchivehub.com/search?q=EFTA00040778), [EFTA00040782](https://grokarchivehub.com/search?q=EFTA00040782), [EFTA00040786](https://grokarchivehub.com/search?q=EFTA00040786). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
+
+Additional source-crew material: [EFTA00076131](https://grokarchivehub.com/search?q=EFTA00076131). The public edition retains the source references and omits personal narratives and identifying circumstances. Any allegations, proposed testimony, or party accounts remain unproven unless a cited ruling expressly resolves them.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P32 Edwards & Cassell v. Dershowitz defamation suit: depositions, 2015–2016 Probable Verification: V-WS1
+**Current dated stopping point:** 2016-01-13. Historical paragraphs below retain the dates of their original survey.
+
 Span: 2015 (filing, per case number) – Jan 13, 2016.
 Anchors: [EFTA02726484](https://grokarchivehub.com/search?q=EFTA02726484) (Vol. 2 of Dershowitz's continued videotape
 deposition, pp. 180–333, Oct 16, 2015, 154 pp.; examination by Mr.
@@ -3256,9 +3659,15 @@ Verification (v3.0, WS1): document-level verified — anchors read in full
 or substantial part (head + keyword search).
 
 v3.2 (WS5) extension — the full Cassell deposition transcript: HO 11433 onward (HO, Oct 16, 2015): the full Paul G. Cassell deposition transcript, Edwards & Cassell v. Dershowitz: cover/title page (HO 11433 — rough draft, uncertified, "may NOT be cited in documents or used for examination purposes"), videotaped deposition opening (HO 11434, Oct 16, 2015, 1:33 p.m., Fort Lauderdale), Cassell sworn and examined (HO 11435+), continuing through at least HO 11550 (Part 6-3 into Part 6-4; HO 11600 is different material). The deposition covers the motion-to-strike fight and Dershowitz's Fifth Amendment invocation, among other topics. DOJ counterparts exist: [EFTA00594390](https://grokarchivehub.com/search?q=EFTA00594390) and [EFTA01116693](https://grokarchivehub.com/search?q=EFTA01116693) carry the "videotaped deposition of Paul G. Cassell" phrase — so the leg is DOJ-overlapping, anchorable DOJ-side. The "may NOT be cited" caveat on the cover must be carried with the leg.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Apr 2015–Feb 2016 filings (HEAD; pleading titles not established from heads): [EFTA01078617](https://grokarchivehub.com/search?q=EFTA01078617), [EFTA01078765](https://grokarchivehub.com/search?q=EFTA01078765), [EFTA01078855](https://grokarchivehub.com/search?q=EFTA01078855) (two copies of one filing), [EFTA01079203](https://grokarchivehub.com/search?q=EFTA01079203), [EFTA01079263](https://grokarchivehub.com/search?q=EFTA01079263). Also: privilege log incl. “Brunel information” and Trump joint work-product entries — index-level context only, not a content leg ([EFTA00602835](https://grokarchivehub.com/search?q=EFTA00602835), SNIPPET).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P33 Boris Nikolic separation process, Dec 2012–Jul 2013 Probable Verification: V-WS1
+**Current dated stopping point:** 2013-07-29. Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 16, 2012 – Jul 29, 2013.
 Anchors: [EFTA02720177](https://grokarchivehub.com/search?q=EFTA02720177) (Dec 16, 2012 — Nikolic writes that he wants "our
 new version of the proposed agreement" to send to Larry before vacation;
@@ -3294,30 +3703,32 @@ proposed-agreement leg and the Jul 29, 2013 control/legal-liability leg.
 Verification (v3.0, WS1): document-level verified — anchors read in full.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
-P34 Leon Black → Southern Trust, 2013: two documented transfers and the Deutsche consolidation Probable Verification: V-WS3
+P34 Leon Black → Southern Trust, 2013–2015: documented transfers and the Deutsche consolidation Probable Verification: V-WS3
+**Current dated stopping point:** 2015-12-30. Historical paragraphs below retain the dates of their original survey.
+
 Span: May 24 – Oct 31, 2013.
 Anchors: [EFTA01500494](https://grokarchivehub.com/search?q=EFTA01500494) (May 2013 JPMorgan statement: $16,500,000.00
 CHIPS credit from Leon D Black, Bank of America, originator account
-394001320945, lands in Southern Trust Company Inc's JPMorgan Classic
+[account identifier withheld], lands in Southern Trust Company Inc's JPMorgan Classic
 Business Checking account May 24, 2013; the same day $16,500,000.00
-leaves that account by phone instruction, From account 0000478110245 To
-account 0003040545872); [EFTA01578683](https://grokarchivehub.com/search?q=EFTA01578683) (Sep 30, 2013 letter signed by
+leaves that account by phone instruction, From account [account identifier withheld] To
+account [account identifier withheld]); [EFTA01578683](https://grokarchivehub.com/search?q=EFTA01578683) (Sep 30, 2013 letter signed by
 Jeffrey Epstein authorising transfer of "the entirety of Southern Trust
-Company, Inc's saving account (#3040545872) to Deutsche Bank"; the
+Company, Inc's saving account (#[account identifier withheld]) to Deutsche Bank"; the
 stated amount is OCR-garbled and is not cited); [EFTA01284214](https://grokarchivehub.com/search?q=EFTA01284214) (Oct 2013
 Deutsche statement: Oct 7, 2013 $12,753,048.50 from another Southern
-Trust account (ORG-003040315872); Oct 15, 2013 $8,500,000.00 from the
-same originator account (ORG-394001320945, "LEON D BLACK / DEBRA R
+Trust account (ORG-[account identifier withheld]); Oct 15, 2013 $8,500,000.00 from the
+same originator account (ORG-[account identifier withheld], "LEON D BLACK / DEBRA R
 BLACK, 760 Park Ave, New York"); Oct 17, 2013 $6,000,000.00 from the
-savings account 3040545872 itself; stated ending balance Oct 31, 2013
+savings account [account identifier withheld] itself; stated ending balance Oct 31, 2013
 $27,258,838.74). [EFTA01548378](https://grokarchivehub.com/search?q=EFTA01548378) is a duplicate filing of [EFTA01500494](https://grokarchivehub.com/search?q=EFTA01500494) and
 is not a fourth anchor. Cross-set context only: [EFTA01253390](https://grokarchivehub.com/search?q=EFTA01253390) (DS9) shows
-a Feb 2014 $4,003,093.20 incoming from 3040545872 — same account still
+a Feb 2014 $4,003,093.20 incoming from [account identifier withheld] — same account still
 moving money in 2014, not used as an anchor.
 Endpoint / stopping point: Oct 31, 2013 statement balance (dated
 stopping point, not a closure — no closure document). The May 24 onward
 leg is a same-day internal move (checking → savings, same entity),
-established by the Sep 30 letter identifying 3040545872 as Southern
+established by the Sep 30 letter identifying [account identifier withheld] as Southern
 Trust's savings account. Cautions: "DEBRA R BLACK" appears only as a
 co-named originator on the Oct 15 line; no role is characterised. The
 July 15, 2014 Leon Black wire in slice-DS10 lead L1 is a separate wire
@@ -3330,9 +3741,15 @@ Verification (v3.0, WS3): document-level verified — all three anchors
 read in full.
 
 v3.2 (WS1) extension — FirstBank Southern Trust accounts (entity level, different accounts): [EFTA01670187](https://grokarchivehub.com/search?q=EFTA01670187), Southern Trust Company Inc, FirstBank commercial checking (S-02516), 34 statements, Dec 31, 2012 – Feb 29, 2016. First statement Dec 2012: beginning $0.00, single $1,000 deposit Dec 7 — an account-opening month. [EFTA01271775](https://grokarchivehub.com/search?q=EFTA01271775), Southern Trust Company Inc — Payroll Account, FirstBank, 40 statements, Feb 28, 2013 – Mar 31, 2017. First statement Feb 2013: beginning $0.00, $500 deposit Feb 22, $259.99 ACH debit Feb 28, ending $240.01 — an account-opening month. These are DIFFERENT accounts from P34's JPMorgan Classic Business Checking / Deutsche Elite Money Market accounts (P34's anchors are not in the 917); the extension is at entity level, not account level.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Deutsche Bank transaction charts ([EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250), FULL, Aug 13, 2019 email + 5 exhibits; [EFTA00080260](https://grokarchivehub.com/archive/EFTA00080260) is the attachment copy, not a separate leg). Exhibit A extends the Black→Southern Trust series past P34’s Oct 31, 2013 endpoint through Dec 2015 (and BV70/Plan D rows to Oct 2018): Oct 15, 2013 Leon and Debra Black $8.5M; Dec 18, 2013 Black Family Partners $10M; Apr 25, 2014 $5M+$5M; Apr 29, 2014 $15M; Jul 15, 2014 Narrow Holdings LLC $20M — L1 RESOLVED, the wire landed per the chart; Oct 16, 2014 $7M+$13M; Oct 22, 2014 $2M+$3M; Oct 13, 2015 $5M+$5M; Dec 17, 2015 Edmond de Rothschild (Suisse) $10M; Dec 18, 2015 Black Family Partners $10M; Dec 21, 2015 Benjamin Edmond de Rothschild $14,999,980; Dec 30, 2015 $10M; Apr 25, 2017 $8M. Non-STC rows in Ex A (Oct 14, 2015 BV70→Gratitude America $10M; Mar 31, 2017 BV70→Plan D $22.5M; Apr 17, 2017 BV70→Plan D $8M; Oct 2, 2018 Plan D→BV70 $10M) are NOT Southern Trust receipts — see Ex A totals note. Counterpart: same-day Jul 15, 2014 $20M STC→Black “algorithms” invoice ([EFTA01108434](https://grokarchivehub.com/search?q=EFTA01108434)); payment/invoice identity NOT asserted. Charts are DB/SDNY summaries, not underlying statements; individual lines not re-verified. Honeycomb post-death holding — see fragment F-40-1 ([EFTA00068100](https://grokarchivehub.com/search?q=EFTA00068100), fragment-only anchor; not a P34 anchor).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P35 Southern Trust FirstBank account, 2016–2020: funding, a $13M outbound, and the latest advice in the set Probable Verification: V-WS3; v3.3 WS5: Feb 11, 2016 figures page-image verified; bundle extent corrected to Oct 31, 2019; v3.4 WS1: eight further pairs reconciled (text layer)
+**Current dated stopping point:** 2020-01-13. Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 11, 2016 – Jan 13, 2020.
 Anchors: [EFTA01273155](https://grokarchivehub.com/search?q=EFTA01273155) (25 advice instances, single-bundle spine):
 recurring credits — Feb 11, 2016 $300,000; Jul 14, 2016 $500,000; Dec
@@ -3362,9 +3779,15 @@ advice-by-advice.
 v3.3 (WS5) FLAG, page-image verified — the Feb 2016 handoff is NOT established: the Feb 29, 2016 statement ([EFTA01670187](https://grokarchivehub.com/search?q=EFTA01670187), PDF p.173, stamped [EFTA01670359](https://grokarchivehub.com/search?q=EFTA01670359)) records ONE credit, Feb 11, 2016 $150,000.00 incoming wire (beginning $78,600.37; 18 debits $81,581.15; ending $147,019.22), and the Feb 11 daily balance (188,602.26) is arithmetically consistent only with a $150,000 credit; the advice bundle's Feb 11, 2016 credit advice ([EFTA01273155](https://grokarchivehub.com/search?q=EFTA01273155), PDF p.1) prints Received and Credit Amount of $300,000.00 (Date 11-Feb-2016; Transaction 201602110003646; IMAD 20160211 B1Q8383C 017943; originator Southern Trust Company c/o HBRK Associates Inc via Deutsche Bank Trust Co. Americas → FirstBank Puerto Rico; $15.00 charge). Neither figure is misread — both are cleanly printed — and a $300,000 credit to this account in February 2016 is excluded by the statement's single-credit arithmetic. The two bundles may be different Southern Trust accounts (the advice prints no beneficiary account number; the statement's account number is redacted on the page), or the same movement is recorded at different amounts in the two strata. Either way the statement→advice handoff is NOT established, and P35's Feb 2016 $300,000 opening credit is NOT corroborated by the statement stratum. The only other $300,000 wire in the statement bundle is dated Aug 19, 2014 (Aug 31, 2014 statement) — a different wire. Text-layer note (v3.4 WS1, reconciled): the same-date/different-amount pattern recurs on **eight** further paired dates — Apr 4, 2017 (statement $300,000 vs advice $400,000; Apr 30, 2017 statement, PDF p.235, arithmetic closes exactly) plus Jul 14, 2016 ($125,000 vs $500,000); Dec 16, 2016 ($150,000 vs $200,000); Aug 21, 2017 ($150,000 vs $600,000); Dec 8, 2017 ($150,000 vs $300,000); Apr 19, 2018 ($100,000 vs $150,000); Oct 31, 2018 ($200,000 vs $400,000); Mar 7, 2019 ($800,000 vs $700,000). **Correction to the v3.3 flag: the statement figure is NOT smaller in each case — Mar 7, 2019's statement figure ($800,000) exceeds the advice ($700,000).** Statement-side monthly credit arithmetic closes in every pair month (Dec 2016 / Dec 2017 summary endings are OCR misreads resolved by the daily balances: 256,528.49 and 286,475.34). Advice amounts $500,000 / $600,000 / $700,000 occur 0 times anywhere in the 455-page statement bundle. Four further advice dates have no statement credit at all (Jan 10, 2018 $200,000 — the Jan 2018 statement has 0 credits; Aug 21, 2018 $400,000 — the Aug 2018 statement's only wire is Aug 20, $250,000; May 3, 2019 $91,098.69 and May 16, 2019 $397,882.59 — the May 2019 statement has only $97.81 in small deposits); Nov 20, 2019, Dec 12, 2019, Dec 23, 2019 and Jan 13, 2020 postdate the statement run (ends Oct 31, 2019). The different-accounts reading is strengthened; the same-movement-different-amounts reading is not excluded. All eight further pairs are page-image verified (v3.5 WS5): Apr 4, 2017 (statement $300,000, [EFTA01670187](https://grokarchivehub.com/search?q=EFTA01670187) PDF p.235, stamped [EFTA01670421](https://grokarchivehub.com/search?q=EFTA01670421); advice $400,000, [EFTA01273155](https://grokarchivehub.com/search?q=EFTA01273155) PDF p.4, stamped [EFTA01273158](https://grokarchivehub.com/search?q=EFTA01273158), IMAD 20170404 B1Q8383C 014160); Jul 14, 2016 ($125,000, p.196/[EFTA01670382](https://grokarchivehub.com/search?q=EFTA01670382); $500,000, p.2/[EFTA01273156](https://grokarchivehub.com/search?q=EFTA01273156), IMAD 20160714 B1Q8383C 016693); Dec 16, 2016 ($150,000, p.218/[EFTA01670404](https://grokarchivehub.com/search?q=EFTA01670404); $200,000, p.3/[EFTA01273157](https://grokarchivehub.com/search?q=EFTA01273157), IMAD 20161216 B1Q8383C 012496); Aug 21, 2017 ($150,000, p.252/[EFTA01670438](https://grokarchivehub.com/search?q=EFTA01670438); $600,000, p.5/[EFTA01273159](https://grokarchivehub.com/search?q=EFTA01273159), IMAD 20170821 B1Q8383C 006622); Dec 8, 2017 ($150,000, p.267/[EFTA01670453](https://grokarchivehub.com/search?q=EFTA01670453); $300,000, p.6/[EFTA01273160](https://grokarchivehub.com/search?q=EFTA01273160), IMAD 20171208 B1Q8383C 007791); Apr 19, 2018 ($100,000, p.287/[EFTA01670473](https://grokarchivehub.com/search?q=EFTA01670473); $150,000, p.9/[EFTA01273163](https://grokarchivehub.com/search?q=EFTA01273163), IMAD 20180419 B1Q8383C 012418); Oct 31, 2018 ($200,000, p.317/[EFTA01670503](https://grokarchivehub.com/search?q=EFTA01670503); $400,000, p.11/[EFTA01273165](https://grokarchivehub.com/search?q=EFTA01273165), IMAD 20181031 B1Q8383C 030377); Mar 7, 2019 ($800,000, p.339/[EFTA01670525](https://grokarchivehub.com/search?q=EFTA01670525); $700,000, p.12/[EFTA01273166](https://grokarchivehub.com/search?q=EFTA01273166), IMAD 20190307 B1Q8383C 015128). In every pair month the statement's monthly arithmetic closes exactly on the statement figure, and the Dec 2016 / Dec 2017 printed ending balances (256,528.49 / 286,475.34) confirm the text-layer OCR corrections at image level. The Apr 2018 month closes exactly (beginning balance 100,507.28 on the image, not 100,507.26 as the text layer read — the '$0.02' gap was an OCR artefact). Both figures in every pair are confirmed as printed, so the amount discrepancies are real discrepancies, not misreads — but which reading they support is still undecided, since the deciding account numbers are redacted on both sides of all nine pairs. All nine same-date pairs are now page-image verified. Note: the FTS text of [EFTA01670187](https://grokarchivehub.com/search?q=EFTA01670187) is capped at 1,000,000 chars and ends at the Feb 29, 2016 statement, which is why the PDF text layer was needed. Bundle-premise correction (WS5): the statement bundle [EFTA01670187](https://grokarchivehub.com/search?q=EFTA01670187) runs Dec 31, 2012 – Oct 31, 2019 (text layer; monthly statements for the same holder, with balance continuity across Feb–Mar 2016: Feb ending 147,019.22 = Mar beginning 147,019.22; post-Feb-2016 statements not page-image read in this pass) — it does NOT end Feb 29, 2016, as the v3.2 flag stated; WS1's '34 statements, Dec 31, 2012 – Feb 29, 2016' was a partial recovery, not the bundle's extent.
 
 v3.3 (WS1) extension — funding pipeline + Feb 2016 bank move + 2019 presentation: Feb 18, 2016 — Cecile de Jongh → Banco Popular ([EFTA00584006](https://grokarchivehub.com/search?q=EFTA00584006), DS9, 1 p.): STC to open a Banco Popular operating account with a $100,000 initial deposit transferred from STC's current operating account at First Bank VI; STC has 8 employees; business description (biomedical/financial informatics); "average balance will be approximately $100,000." STC was shifting its operating account from FirstBank to Banco Popular in Feb 2016 — bears directly on the P35 Feb 2016 handoff question (the Feb 11, 2016 $150k vs $300k discrepancy): it documents the bank move, not the amounts. Oct 11, 2013 — "wires (4)" ([EFTA01450161](https://grokarchivehub.com/search?q=EFTA01450161), DS10, 1 p.): attachments incl. "DB Wire - Southern Trust to First Bank Payroll 10.11.2013.pdf" and "DB Wire - Southern Trust to First Bank Operating 10-11-2013.pdf" (+ BNP Paribas + Jeepers wires). The STC → FirstBank payroll + operating pipeline in Oct 2013. ([EFTA01465278](https://grokarchivehub.com/search?q=EFTA01465278) is the 2 pp. duplicate.) Jun 11, 2015 — "7 wires" ([EFTA01366267](https://grokarchivehub.com/search?q=EFTA01366267), DS10, 1 p.): attachments incl. "DB_STC_STC First Bank payroll acc_061015.pdf", "DB_STC_STC First Bank_061015.pdf", "DBJEE_VVT_LSJE First Bank Operating_06-10-2015.pdf", "DBJEE_Maple First Bank_6-11.2015.pdf". STC → FirstBank payroll/operating wires + Maple FirstBank wire + LSJE FirstBank operating wire, Jun 2015. Amounts in attachments. Feb 4, 2016 — Epstein → Kahn: "please send 5k euros, (first bank:?)"; Kahn: "Yes will try our first wire from first bank. Just need to confirm they can send euros." ([EFTA02356105](https://grokarchivehub.com/search?q=EFTA02356105), DS11, 1 p.) The first outbound FirstBank wire attempt, Feb 4, 2016. Whether the €5,000 wire went through is NOT established in the emails read. ([EFTA02474277](https://grokarchivehub.com/search?q=EFTA02474277) is the DS11 copy of Epstein's email.) Sep 12, 2019 — Deutsche Bank presentation to SDNY ([EFTA01681865](https://grokarchivehub.com/search?q=EFTA01681865), DS10, 52 pp.): "Breakdown of Southern Financial Relationship Accounts" — FirstBank of Puerto Rico entity table with payment counts/totals as analyzed by Deutsche Bank: FT Real Estate $12,368,277 (11 payments); Cypress Inc. $1,025,000 (9 payments; "holding company associated with Epstein's New Mexican property, the Zorro Ranch"); Laurel Inc. $455,000 (3) + $995,000 (6); Maple Inc. $650,000 (5) + $1,725,000 (5); Nautilus Inc. $150,000 (2) + $200,000 (3); Southern Trust Company Inc. $450,000 (2); Thomas World Air LLC $150,000 (3) + $400,000 (4); Michelle's Transport Co. $30,000 (2). Also: "Rodriquez maintained a bank account at First Bank of Puerto Rico… In 2018 and 2019, Epstein wired two 'Loan(s)' totaling $25,000 to Rodriquez. On April 8, 2019, Epstein wired $5,000 to Rodriquez."; Jul 11, 2018 Epstein wired David Rodgers $50,000 ("Loan" per Southern Financial wire details); "does not appear to have repaid the loan." Cite as Deutsche Bank's presentation/analysis ("appears to be", "fits the profile"), not as established fact. Read by keyword-targeted passages, not cover-to-cover. Sep 6, 2016 — the full returned-wire thread ([EFTA01433153](https://grokarchivehub.com/search?q=EFTA01433153), DS10, 6 pp.): Bella initiated a wire from First Bank; Vahe Stepanian: "those are incorrect wiring instructions, which likely explains why the funds have not yet hit JEVIF brokerage. Correct instructions are here… Bank of New York… Pershing LLC… FFC: J. Epstein Virgin Islands Foundation"; Cynthia Rodriguez: "The funds were returned this morning. Please submit another wire using the correct instructions." A FirstBank-origin wire to JEVIF brokerage failed on incorrect instructions and was returned the same morning. ([EFTA01385719](https://grokarchivehub.com/search?q=EFTA01385719) is the 1 pp. version; [EFTA01421549](https://grokarchivehub.com/search?q=EFTA01421549) / [EFTA01388513](https://grokarchivehub.com/search?q=EFTA01388513) are further copies.) Jan 7, 2016 — Bella Klein → Litchford (Deutsche): "Please process the attached 3 wires" ([EFTA01359653](https://grokarchivehub.com/search?q=EFTA01359653), DS10, 1 p., shared with P9 — the STC → FirstBank payroll pipeline).
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Entity-level legs, endpoint Jan 13, 2020 unchanged: Deutsche Bank wire-authorization forms ([EFTA01097530](https://grokarchivehub.com/search?q=EFTA01097530), [EFTA01097531](https://grokarchivehub.com/search?q=EFTA01097531), HEAD — date and amount NOT legible in OCR); Aug 11, 2017 Interactive Brokers application thread ([EFTA01037772](https://grokarchivehub.com/search?q=EFTA01037772), HEAD); FirstBank wire-transfer instructions form ([EFTA01118936](https://grokarchivehub.com/search?q=EFTA01118936), HEAD — undated); Dec 21, 2018 Southern Country/IBE documents ([EFTA01010792](https://grokarchivehub.com/search?q=EFTA01010792), FULL); Feb 6, 2019 $75,000 Southern Country International check — “Not yet” ([EFTA01029038](https://grokarchivehub.com/search?q=EFTA01029038), FULL). Compliance/pitch items at HEAD ([EFTA01021267](https://grokarchivehub.com/search?q=EFTA01021267), [EFTA01021275](https://grokarchivehub.com/search?q=EFTA01021275), [EFTA01021278](https://grokarchivehub.com/search?q=EFTA01021278), [EFTA01003776](https://grokarchivehub.com/search?q=EFTA01003776), [EFTA01006351](https://grokarchivehub.com/search?q=EFTA01006351), [EFTA01049230](https://grokarchivehub.com/search?q=EFTA01049230), [EFTA01009540](https://grokarchivehub.com/search?q=EFTA01009540), [EFTA01010846](https://grokarchivehub.com/search?q=EFTA01010846), [EFTA01026968](https://grokarchivehub.com/search?q=EFTA01026968), [EFTA01028841](https://grokarchivehub.com/search?q=EFTA01028841), [EFTA01029187](https://grokarchivehub.com/search?q=EFTA01029187), [EFTA01029313](https://grokarchivehub.com/search?q=EFTA01029313), [EFTA01032089](https://grokarchivehub.com/search?q=EFTA01032089), [EFTA01051722](https://grokarchivehub.com/search?q=EFTA01051722), [EFTA01013216](https://grokarchivehub.com/search?q=EFTA01013216), [EFTA01013221](https://grokarchivehub.com/search?q=EFTA01013221), [EFTA01013606](https://grokarchivehub.com/search?q=EFTA01013606), [EFTA01018553](https://grokarchivehub.com/search?q=EFTA01018553), [EFTA01018558](https://grokarchivehub.com/search?q=EFTA01018558), [EFTA01018878](https://grokarchivehub.com/search?q=EFTA01018878)). Feb 2016 handoff NOT resolved — flag stands (correction 8). The Southern Country/IBE thread is a distinct entity thread — placement flag (P35-orbit vs separate fragment). Honeycomb holding — see fragment F-40-1 ([EFTA00068100](https://grokarchivehub.com/search?q=EFTA00068100), fragment-only anchor; not a P35 anchor). Also at HEAD: Dec 13, 2014 — "Someone by the name of Sophia called me indicating she was from southern trust and that she was coming to the ranch in 3 weeks time" ([EFTA01002780](https://grokarchivehub.com/search?q=EFTA01002780)); Dec 23, 2014 — "Rich indicated that Sophia will be starting with at Zorro on the 29th December" ([EFTA01003476](https://grokarchivehub.com/search?q=EFTA01003476)) — the Sophia/STC→Zorro thread, a P17 cross-link.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P36 F T Real Estate FirstBank account, 2016–2019 Probable Verification: V-WS3
+**Current dated stopping point:** 2019-07-01. Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr 7, 2016 – Jul 1, 2019.
 Anchors: [EFTA01273089](https://grokarchivehub.com/search?q=EFTA01273089) and [EFTA01273079](https://grokarchivehub.com/search?q=EFTA01273079) (13 distinct dated movements):
 credits Apr 7, 2016 $150,000 (originator Jeffrey Epstein); Sep 28, 2016
@@ -3386,6 +3809,8 @@ v3.2 (WS1) extension — second-stratum corroboration: [EFTA01270264](https://gr
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P37 The LSJE 9295 wire that came back, Mar–Apr 2019 Probable Verification: V-WS3
+**Current dated stopping point:** 2019-04-09. Historical paragraphs below retain the dates of their original survey.
+
 Span: Mar 21 – Apr 9, 2019.
 Anchors: [EFTA01367891](https://grokarchivehub.com/search?q=EFTA01367891) (Mar 27 trace request + Fed ref), [EFTA01407899](https://grokarchivehub.com/search?q=EFTA01407899)
 (Apr 9 return confirmation + Apr 2/3 recall chain), [EFTA01362152](https://grokarchivehub.com/search?q=EFTA01362152) (Mar 27
@@ -3410,6 +3835,8 @@ Verification (v3.0, WS3): document-level verified — anchors read in full.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P38 Gratitude America FirstBank account, 2016–2019 Probable Verification: V-WS3
+**Current dated stopping point:** 2019-07-25. Historical paragraphs below retain the dates of their original survey.
+
 Span: Apr 6, 2016 – Jul 25, 2019.
 Anchors: [EFTA01273122](https://grokarchivehub.com/search?q=EFTA01273122) and [EFTA01273131](https://grokarchivehub.com/search?q=EFTA01273131) (distinct dated credits): Apr 6,
 2016 $250,000 (originator Gratitude America Ltd — an internal move as
@@ -3435,9 +3862,14 @@ v3.3 (WS1) extension — wire instruction + audit confirmation: filename only �
 
 - **v3.121:** September 10, 2019 Deutsche Bank counsel relayed forthcoming press reporting about Epstein's control of Gratitude America and its bank accounts. The account is otherwise carried; the press claim is attributed, not a finding. Source: [EFTA00075273](https://grokarchivehub.com/search?q=EFTA00075273).
 
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Nov 21, 2018 gift ([EFTA01016069](https://grokarchivehub.com/search?q=EFTA01016069), HEAD); Nov 20, 2018 Epstein→Bach ([EFTA01016163](https://grokarchivehub.com/search?q=EFTA01016163), HEAD); Aug 2, 2017 Kahn re O’Gorman donation ([EFTA01039040](https://grokarchivehub.com/search?q=EFTA01039040), HEAD); Apr 15, 2015 $10M Gratitude America payment — Epstein’s stated figure, not verified ([EFTA01037440](https://grokarchivehub.com/search?q=EFTA01037440), HEAD — shared with P45). Deutsche MMDA side via [EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250) Ex E (see P34). Also: Gratitude America filing naming Indyke/Kahn as trustees of the 1953 Trust ([EFTA00075562](https://grokarchivehub.com/search?q=EFTA00075562), SNIPPET); Nov 1, 2017 Deutsche check — Gratitude America pays International Peace Institute $100,000 ([EFTA00802975](https://grokarchivehub.com/search?q=EFTA00802975), FULL; the $150k instruction in the attached thread is an instruction, not a shown payment).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P39 Cypress Inc funding, 2016–2019 Probable Verification: V-WS3
+**Current dated stopping point:** 2019-03-29. Historical paragraphs below retain the dates of their original survey.
+
 Span: Mar 17, 2016 – Mar 29, 2019.
 Anchors: [EFTA01273143](https://grokarchivehub.com/search?q=EFTA01273143) (6 credits, originator Jeffrey Epstein unless
 noted): Mar 17, 2016 $100,000; Apr 4, 2017 $100,000; Oct 24, 2017
@@ -3458,9 +3890,15 @@ document was found. Links: S9 (Zorro will bequest); P17 (Zorro Ranch);
 P20/P24.
 Verification (v3.0, WS3): document-level verified — bundle enumerated
 advice-by-advice.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — NM water-rights application, Cypress Inc., 49 Zorro Ranch Road ([EFTA01083169](https://grokarchivehub.com/search?q=EFTA01083169), HEAD — filing date not established from head).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P40 LSJ LLC island funding, JPMorgan 2003–2011 Probable Verification: V-WS3; v3.3 WS4: count corrected to 329 lines / 218 docs; recheck missed 0 WS3 lines; v3.4 WS1: A/C-vs-NC dedup resolved (mixed) over the full 1,833-doc population
+**Current dated stopping point:** 2012-02-23. Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 2003 – Feb 23, 2012 (329 NC-bearing Fedwire lines, 218 docs).
 Anchors: [EFTA01482357](https://grokarchivehub.com/search?q=EFTA01482357) (Feb 14, 2003 $50,000 via FirstBank PR);
 [EFTA01482358](https://grokarchivehub.com/search?q=EFTA01482358) (Feb 26, 2003 $100,000 via FirstBank PR, IMAD
@@ -3479,14 +3917,22 @@ the island).
 Verification (v3.0, WS3): document-level verified — endpoints verified
 by full-doc or segment reads; line counts are parser counts.
 
-v3.2 (WS5) extension: [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834) (DS10) — the v3.1-unassigned file, now assigned: page 10 of a 13-page May 2007 JPMorgan Premier Checking statement, account 739-110438. May 25, 2007 Fedwire debits: $27,000 to LSJ LLC via FirstBank PR (IMAD 0525B1OGCO3C002945) and $100,000 to LSJ LLC (IMAD 0525810GC04C002948), plus book transfers/CHIPS debits the same day. Mid-span leg (the v3.1 changelog correctly said it is not a P40 endpoint). Verified: it IS in WS3's fedwire_bates.tsv (in the 1,632-doc FEDWIRE population) but its IMADs are NOT in WS3's nc_lines.json or chain_table.tsv — WS3's parser missed these two LSJ lines, so the 316-line count is a lower bound (at least 2 more lines exist). [EFTA01587610](https://grokarchivehub.com/search?q=EFTA01587610) (DS10, Sep 23, 2009): Harry Beller → JPMorgan, account 739-110438 (the same account as [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834)): wire $11,021.32 to Coral Stone USA Corp., reference "LSJ — East Lawn Project Balance Due." LSJ East Lawn Project payment, Sep 2009. [EFTA00682843](https://grokarchivehub.com/search?q=EFTA00682843) / [EFTA00710144](https://grokarchivehub.com/search?q=EFTA00710144) / [EFTA01770278](https://grokarchivehub.com/search?q=EFTA01770278) / [EFTA02001874](https://grokarchivehub.com/search?q=EFTA02001874) / [EFTA02033467](https://grokarchivehub.com/search?q=EFTA02033467) (DS9/DS10, Feb 23, 2012): LSJ wire-confirmation thread: BMG → Epstein ("Rich confirmed funds Have been transferred"); Epstein: "When will it be complete?"; "send them the wire conf…". Multiple copies of one thread. Extends P40 past its 2011 stopping point to Feb 2012.
+v3.2 (WS5) extension: [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834) (DS10) — the v3.1-unassigned file, now assigned: page 10 of a 13-page May 2007 JPMorgan Premier Checking statement, account [account identifier withheld]. May 25, 2007 Fedwire debits: $27,000 to LSJ LLC via FirstBank PR (IMAD 0525B1OGCO3C002945) and $100,000 to LSJ LLC (IMAD 0525810GC04C002948), plus book transfers/CHIPS debits the same day. Mid-span leg (the v3.1 changelog correctly said it is not a P40 endpoint). Verified: it IS in WS3's fedwire_bates.tsv (in the 1,632-doc FEDWIRE population) but its IMADs are NOT in WS3's nc_lines.json or chain_table.tsv — WS3's parser missed these two LSJ lines, so the 316-line count is a lower bound (at least 2 more lines exist). [EFTA01587610](https://grokarchivehub.com/search?q=EFTA01587610) (DS10, Sep 23, 2009): Harry Beller → JPMorgan, account [account identifier withheld] (the same account as [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834)): wire $11,021.32 to Coral Stone USA Corp., reference "LSJ — East Lawn Project Balance Due." LSJ East Lawn Project payment, Sep 2009. [EFTA00682843](https://grokarchivehub.com/search?q=EFTA00682843) / [EFTA00710144](https://grokarchivehub.com/search?q=EFTA00710144) / [EFTA01770278](https://grokarchivehub.com/search?q=EFTA01770278) / [EFTA02001874](https://grokarchivehub.com/search?q=EFTA02001874) / [EFTA02033467](https://grokarchivehub.com/search?q=EFTA02033467) (DS9/DS10, Feb 23, 2012): LSJ wire-confirmation thread: BMG → Epstein ("Rich confirmed funds Have been transferred"); Epstein: "When will it be complete?"; "send them the wire conf…". Multiple copies of one thread. Extends P40 past its 2011 stopping point to Feb 2012.
 
-v3.3 (WS4) extension — FEDWIRE parser re-check, corrected count (see changelog §3): the v3.2 "lower bound" flag is now resolved. WS3's parser regex Fedwire (Debit|Credit)\b required the literal words Debit/Credit. OCR renders "Fedwire Debit" as **"Fedwire Debt"** and as **"FedwIre Debt"** / **"Fedwlre Debit"**, so those lines were missed; "Fed Wire Credit" (spaced) anchors were also missed. The variant population (WS5 FEDWIRE group) is **201 NEW documents** (sets 9/10/11; disjoint from WS3's 1,632-doc population). Re-check: **165 "Fed Wire Credit" anchors, 0 NC-bearing lines, 0 LSJ lines.** Thirteen missed lines, all verified by segment read (amount + IMAD + VIA FIRSTBANK PR + NC: LSJ LLC on the same block), in 12 documents — all debits via FirstBank PR to LSJ LLC: [EFTA01482375](https://grokarchivehub.com/search?q=EFTA01482375) (Apr 15, 2003, $5,000, "Fedwire Debt", IMAD 0415B1C1GCO7C004975); [EFTA01482408](https://grokarchivehub.com/search?q=EFTA01482408) (Aug 05, $75,000, "Fedwire Debt", IMAD 0805B1OGC08C002941); [EFTA01482493](https://grokarchivehub.com/search?q=EFTA01482493) (May 25, 2004, $10,000, "Fedwlre Debit", IMAD 0525810GCO8C00426…); [EFTA01482527](https://grokarchivehub.com/search?q=EFTA01482527) (Sep 09, 2004, $10,000, "Fedwire Debt", IMAD 0909810GC08C004225); [EFTA01482634](https://grokarchivehub.com/search?q=EFTA01482634) (Aug 26, $10,000, "Fedwire Debt", IMAD 082691OGC04C006167); [EFTA01482665](https://grokarchivehub.com/search?q=EFTA01482665) (Dec 13, 2005, $13,000, "Fedwlre Debit", IMAD 1213610GC0…); [EFTA01482695](https://grokarchivehub.com/search?q=EFTA01482695) (Mar 20, 2006, $18,000, "Fedwire Debt", IMAD 032081…); [EFTA01482763](https://grokarchivehub.com/search?q=EFTA01482763) (Sep 25, $10,000, "Fedwire Debt", IMAD 0925B10GC06C006170); [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834) (May 25, 2007, $27,000 "Fedwire Debt" IMAD 0525B1OGCO3C002945 + $100,000 "FedwIre Debt" IMAD 0525810GC04C002948 — already a P40 anchor); [EFTA01482359](https://grokarchivehub.com/search?q=EFTA01482359) (Feb 27, 2003, $50,000, "Fedwire Debt" — a second LSJ line that day beside a WS3-caught $10,000 line); [EFTA01482697](https://grokarchivehub.com/search?q=EFTA01482697) (Mar 23, $50,000, "Fedwire Debt" — same doc/date as a WS3-caught $10,000 line); [EFTA01656686](https://grokarchivehub.com/search?q=EFTA01656686) (Feb 27, $50,000, "Fedwlre Debit"). Two apparent extras, [EFTA01482927](https://grokarchivehub.com/search?q=EFTA01482927) and [EFTA01483020](https://grokarchivehub.com/search?q=EFTA01483020), were **false positives** — "Fed Wire Credit" anchors borrowing the next line's NC within the 500-char window; the underlying LSJ debit lines there were already in WS3's data — excluded. The recheck missed 0 WS3 lines. **Corrected totals (WS3's own rule — NC-named LSJ LLC lines, occurrences): 316 → 329 lines; 210 → 218 documents.** Eight of the 12 documents are new to WS3's set; [EFTA01482359](https://grokarchivehub.com/search?q=EFTA01482359), [EFTA01482697](https://grokarchivehub.com/search?q=EFTA01482697) and [EFTA01656686](https://grokarchivehub.com/search?q=EFTA01656686) already held a caught NC line each. Total NC-line population (all counterparties): WS3's 1,761 occurrences → **1,852 genuine occurrences** (1,854 parser hits minus the 2 false positives). Outside-DS10 exact-FEDWIRE documents (81 corpus-wide): **0 LSJ lines.** The earliest missed line is 2/27/2003 and the latest is 2009 — all mid-span legs; span and endpoints unchanged by the count correction (the span move to Feb 23, 2012 above is the separate v3.2-tension fix). One more LSJ item, a wire instruction rather than a Fedwire statement line (NOT counted in the 329): [EFTA01591979](https://grokarchivehub.com/search?q=EFTA01591979) — "Reference: LSJ - Inv # 7714-30", Jun 14, 2010, $3,485 to Kraus–Manning. **Not folded into the 329** (see fragments F-33-14/F-33-15): BEN: LSJ LLC lines ~200–260 (231 by the 500-char rule; 200 by the block-delimited rule) and A/C: LSJ, LLC lines 543–552, concentrated in the EFTA01526xxx–EFTA01528xxx statement block (134 docs; same account 739-110438, Feb 2003 onward). **RESOLVED in v3.4 (WS1 — see the v3.4 extension below):** the A/C-vs-NC fuzzy-IMAD dedup is resolved (mixed) — the A/C lines are ~40% duplicates of NC wires and ~60% additional distinct wires; BEN lines are distinct wires. The 329 stays defined by the NC rule; BEN and A/C lines are recorded as P40 extension strata, not folded into the count.
+v3.3 (WS4) extension — FEDWIRE parser re-check, corrected count (see changelog §3): the v3.2 "lower bound" flag is now resolved. WS3's parser regex Fedwire (Debit|Credit)\b required the literal words Debit/Credit. OCR renders "Fedwire Debit" as **"Fedwire Debt"** and as **"FedwIre Debt"** / **"Fedwlre Debit"**, so those lines were missed; "Fed Wire Credit" (spaced) anchors were also missed. The variant population (WS5 FEDWIRE group) is **201 NEW documents** (sets 9/10/11; disjoint from WS3's 1,632-doc population). Re-check: **165 "Fed Wire Credit" anchors, 0 NC-bearing lines, 0 LSJ lines.** Thirteen missed lines, all verified by segment read (amount + IMAD + VIA FIRSTBANK PR + NC: LSJ LLC on the same block), in 12 documents — all debits via FirstBank PR to LSJ LLC: [EFTA01482375](https://grokarchivehub.com/search?q=EFTA01482375) (Apr 15, 2003, $5,000, "Fedwire Debt", IMAD 0415B1C1GCO7C004975); [EFTA01482408](https://grokarchivehub.com/search?q=EFTA01482408) (Aug 05, $75,000, "Fedwire Debt", IMAD 0805B1OGC08C002941); [EFTA01482493](https://grokarchivehub.com/search?q=EFTA01482493) (May 25, 2004, $10,000, "Fedwlre Debit", IMAD 0525810GCO8C00426…); [EFTA01482527](https://grokarchivehub.com/search?q=EFTA01482527) (Sep 09, 2004, $10,000, "Fedwire Debt", IMAD 0909810GC08C004225); [EFTA01482634](https://grokarchivehub.com/search?q=EFTA01482634) (Aug 26, $10,000, "Fedwire Debt", IMAD 082691OGC04C006167); [EFTA01482665](https://grokarchivehub.com/search?q=EFTA01482665) (Dec 13, 2005, $13,000, "Fedwlre Debit", IMAD 1213610GC0…); [EFTA01482695](https://grokarchivehub.com/search?q=EFTA01482695) (Mar 20, 2006, $18,000, "Fedwire Debt", IMAD 032081…); [EFTA01482763](https://grokarchivehub.com/search?q=EFTA01482763) (Sep 25, $10,000, "Fedwire Debt", IMAD 0925B10GC06C006170); [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834) (May 25, 2007, $27,000 "Fedwire Debt" IMAD 0525B1OGCO3C002945 + $100,000 "FedwIre Debt" IMAD 0525810GC04C002948 — already a P40 anchor); [EFTA01482359](https://grokarchivehub.com/search?q=EFTA01482359) (Feb 27, 2003, $50,000, "Fedwire Debt" — a second LSJ line that day beside a WS3-caught $10,000 line); [EFTA01482697](https://grokarchivehub.com/search?q=EFTA01482697) (Mar 23, $50,000, "Fedwire Debt" — same doc/date as a WS3-caught $10,000 line); [EFTA01656686](https://grokarchivehub.com/search?q=EFTA01656686) (Feb 27, $50,000, "Fedwlre Debit"). Two apparent extras, [EFTA01482927](https://grokarchivehub.com/search?q=EFTA01482927) and [EFTA01483020](https://grokarchivehub.com/search?q=EFTA01483020), were **false positives** — "Fed Wire Credit" anchors borrowing the next line's NC within the 500-char window; the underlying LSJ debit lines there were already in WS3's data — excluded. The recheck missed 0 WS3 lines. **Corrected totals (WS3's own rule — NC-named LSJ LLC lines, occurrences): 316 → 329 lines; 210 → 218 documents.** Eight of the 12 documents are new to WS3's set; [EFTA01482359](https://grokarchivehub.com/search?q=EFTA01482359), [EFTA01482697](https://grokarchivehub.com/search?q=EFTA01482697) and [EFTA01656686](https://grokarchivehub.com/search?q=EFTA01656686) already held a caught NC line each. Total NC-line population (all counterparties): WS3's 1,761 occurrences → **1,852 genuine occurrences** (1,854 parser hits minus the 2 false positives). Outside-DS10 exact-FEDWIRE documents (81 corpus-wide): **0 LSJ lines.** The earliest missed line is 2/27/2003 and the latest is 2009 — all mid-span legs; span and endpoints unchanged by the count correction (the span move to Feb 23, 2012 above is the separate v3.2-tension fix). One more LSJ item, a wire instruction rather than a Fedwire statement line (NOT counted in the 329): [EFTA01591979](https://grokarchivehub.com/search?q=EFTA01591979) — "Reference: LSJ - Inv # 7714-30", Jun 14, 2010, $3,485 to Kraus–Manning. **Not folded into the 329** (see fragments F-33-14/F-33-15): BEN: LSJ LLC lines ~200–260 (231 by the 500-char rule; 200 by the block-delimited rule) and A/C: LSJ, LLC lines 543–552, concentrated in the EFTA01526xxx–EFTA01528xxx statement block (134 docs; same account [account identifier withheld], Feb 2003 onward). **RESOLVED in v3.4 (WS1 — see the v3.4 extension below):** the A/C-vs-NC fuzzy-IMAD dedup is resolved (mixed) — the A/C lines are ~40% duplicates of NC wires and ~60% additional distinct wires; BEN lines are distinct wires. The 329 stays defined by the NC rule; BEN and A/C lines are recorded as P40 extension strata, not folded into the count.
 
-v3.4 (WS1) extension — A/C- and BEN-format strata, fuzzy-IMAD dedup RESOLVED (see changelog §12): the v3.3 "UNRESOLVED" flag is now resolved. Re-extraction over the full 1,833-doc FEDWIRE population (WS3 popA 1,632 ∪ WS4 variant 201, overlap 0) with the improved anchor regex ("Fedwire Debt" / "FedwIre" / "Fedwlre" / "Fed Wire Credit" / "FedvAre") yields 1,037 LSJ lines, all debits: NC 323 lines / 244 docs, A/C 533 lines / 139 docs, BEN 178 lines / 90 docs, bare 3 lines / 3 docs. Exact-IMAD overlap A/C∩NC is 28/441 distinct A/C IMADs (29/533 lines); fuzzy overlap (O→0, I/l→1) is 30/441 distinct (31/533 lines) — **IMAD OCR variants do NOT explain the gap**. Seqkey test (MMDD + last 6 of the fuzzy IMAD): NC 232 distinct, A/C 429, shared 191; union 470 seqkeys (453–470 allowing same-day 1-digit sequence variants as possible duplicates). A/C lines matched to NC by seqkey: 211/533 (39.6%); unmatched: 322/533 (281 with an IMAD + 41 with no IMAD). **Verdict: MIXED — the A/C lines are ~40% duplicates of NC wires and ~60% additional distinct wires.** The gross A/C count is NOT added to P40's 329 (the 329 stays defined by the NC rule, comparable across versions); the distinct-wire union NC∪A/C is 470 seqkeys vs NC-only 232. BEN lines are distinct wires: 121 distinct seqkeys, overlap with NC 1, with A/C 0; total LSJ-wire universe NC∪A/C∪BEN 590 seqkeys. Exemplars: A/C — [EFTA01526002](https://grokarchivehub.com/search?q=EFTA01526002) (Feb 03, 2003, IMAD 0203B1QGC05C001057; no NC counterpart — no NC IMAD with prefix 0203 at all), [EFTA01482402](https://grokarchivehub.com/search?q=EFTA01482402) (Jul 15, 2003, IMAD 0715B10GC07C003540; $70,000 by balance arithmetic $488,806.36 → $418,806.36), [EFTA01482869](https://grokarchivehub.com/search?q=EFTA01482869) (Sep 18, 2007, IMAD 0918B1QGC05C005267); BEN — [EFTA01482459](https://grokarchivehub.com/search?q=EFTA01482459) (Feb 23, IMAD 022381OGC01C002797), [EFTA01482467](https://grokarchivehub.com/search?q=EFTA01482467) (Feb 23, IMAD 0223B10GCO5C002902). Same account 739-110438, same beneficiary LSJ LLC, same VIA FirstBank PR, same era Feb 2003 onward — this material extends P40, it does not form separate stories. The (date, amount) test is weak (A/C amounts mostly unavailable — 11/533 lines); the Levenshtein ≤2 same-MMDD test (188/441 distinct, 42.6%) over-matches same-day different wires and is not the verdict test. Year check: shared seqkeys year-agree 159, disagree 6 (doc-year only) — all 6 investigated and explained as year-attribution artifacts (multi-year bundle docs; Dec/Jan statement boundary; one header year mis-OCR'd 2003 for 2005), not true cross-year IMAD collisions. WS4's 13 missed lines: 12/12 (doc, MMDD) present in the NC set. My NC 323 vs WS4's 329 (6 short) is a date-key artifact on my side, not missed lines; the 329 count is not challenged.
+v3.4 (WS1) extension — A/C- and BEN-format strata, fuzzy-IMAD dedup RESOLVED (see changelog §12): the v3.3 "UNRESOLVED" flag is now resolved. Re-extraction over the full 1,833-doc FEDWIRE population (WS3 popA 1,632 ∪ WS4 variant 201, overlap 0) with the improved anchor regex ("Fedwire Debt" / "FedwIre" / "Fedwlre" / "Fed Wire Credit" / "FedvAre") yields 1,037 LSJ lines, all debits: NC 323 lines / 244 docs, A/C 533 lines / 139 docs, BEN 178 lines / 90 docs, bare 3 lines / 3 docs. Exact-IMAD overlap A/C∩NC is 28/441 distinct A/C IMADs (29/533 lines); fuzzy overlap (O→0, I/l→1) is 30/441 distinct (31/533 lines) — **IMAD OCR variants do NOT explain the gap**. Seqkey test (MMDD + last 6 of the fuzzy IMAD): NC 232 distinct, A/C 429, shared 191; union 470 seqkeys (453–470 allowing same-day 1-digit sequence variants as possible duplicates). A/C lines matched to NC by seqkey: 211/533 (39.6%); unmatched: 322/533 (281 with an IMAD + 41 with no IMAD). **Verdict: MIXED — the A/C lines are ~40% duplicates of NC wires and ~60% additional distinct wires.** The gross A/C count is NOT added to P40's 329 (the 329 stays defined by the NC rule, comparable across versions); the distinct-wire union NC∪A/C is 470 seqkeys vs NC-only 232. BEN lines are distinct wires: 121 distinct seqkeys, overlap with NC 1, with A/C 0; total LSJ-wire universe NC∪A/C∪BEN 590 seqkeys. Exemplars: A/C — [EFTA01526002](https://grokarchivehub.com/search?q=EFTA01526002) (Feb 03, 2003, IMAD 0203B1QGC05C001057; no NC counterpart — no NC IMAD with prefix 0203 at all), [EFTA01482402](https://grokarchivehub.com/search?q=EFTA01482402) (Jul 15, 2003, IMAD 0715B10GC07C003540; $70,000 by balance arithmetic $488,806.36 → $418,806.36), [EFTA01482869](https://grokarchivehub.com/search?q=EFTA01482869) (Sep 18, 2007, IMAD 0918B1QGC05C005267); BEN — [EFTA01482459](https://grokarchivehub.com/search?q=EFTA01482459) (Feb 23, IMAD 022381OGC01C002797), [EFTA01482467](https://grokarchivehub.com/search?q=EFTA01482467) (Feb 23, IMAD 0223B10GCO5C002902). Same account [account identifier withheld], same beneficiary LSJ LLC, same VIA FirstBank PR, same era Feb 2003 onward — this material extends P40, it does not form separate stories. The (date, amount) test is weak (A/C amounts mostly unavailable — 11/533 lines); the Levenshtein ≤2 same-MMDD test (188/441 distinct, 42.6%) over-matches same-day different wires and is not the verdict test. Year check: shared seqkeys year-agree 159, disagree 6 (doc-year only) — all 6 investigated and explained as year-attribution artifacts (multi-year bundle docs; Dec/Jan statement boundary; one header year mis-OCR'd 2003 for 2005), not true cross-year IMAD collisions. WS4's 13 missed lines: 12/12 (doc, MMDD) present in the NC set. My NC 323 vs WS4's 329 (6 short) is a date-key artifact on my side, not missed lines; the 329 count is not challenged.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.2 (WS5) extension: [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834) (DS10) — the v3.1-unassigned file, now assigned: page 10 of a 13-page May 2007 JPMorgan Premier Checking statement, account [account identifier withheld]. May 25, 2007 Fedwire debits: $27,000 to LSJ LLC via FirstBank PR (IMAD 0525B1OGCO3C002945) and $100,000 to LSJ LLC (IMAD 0525810GC04C002948), plus book transfers/CHIPS debits the same day. Mid-span leg (the v3.1 changelog correctly said it is not a P40 endpoint). Verified: it IS in WS3's fedwire_bates.tsv (in the 1,632-doc FEDWIRE population) but its IMADs are NOT in WS3's nc_lines.json or chain_table.tsv — WS3's parser missed these two LSJ lines, so the 316-line count is a lower bound (at least 2 more lines exist). [EFTA01587610](https://grokarchivehub.com/search?q=EFTA01587610) (DS10, Sep 23, 2009): Harry Beller → JPMorgan, account [account identifier withheld] (the same account as [EFTA01482834](https://grokarchivehub.com/search?q=EFTA01482834)): wire $11,021.32 to Coral Stone USA Corp., reference "LSJ — East Lawn Project Balance Due." LSJ East Lawn Project payment, Sep 2009. [EFTA00682843](https://grokarchivehub.com/search?q=EFTA00682843) / [EFTA00710144](https://grokarchivehub.com/search?q=EFTA00710144) / [EFTA01770278](https://grokarchivehub.com/search?q=EFTA01770278) / [EFTA02001874](https://grokarchivehub.com/search?q=EFTA02001874) / [EFTA02033467](https://grokarchivehub.com/search?q=EFTA02033467) (DS10/DS10, Feb 23, 2012): LSJ wire-confirmation thread: BMG → Epstein ("Rich confirmed funds Have been transferred"); Epstein: "When will it be complete?"; "send them the wire conf…". Multiple copies of one thread. Extends P40 past its 2011 stopping point to Feb 2012.
+
+v3.6 (WS-D) extension — No new anchors in this pass: [EFTA00128809](https://grokarchivehub.com/search?q=EFTA00128809) (Mar 27, 2015 ruble wire instruction, 13.7M rubles → AO Raiffeisenbank Moscow) is already cited in v3.5 (v3.2 extension) — not new. Placement flag carried: the item is outside P40’s 2003–2012 span (a 2015 money-orbit item). The DS9 FEDWIRE 77 docs are presumed the v3.3 population — verify before asserting.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P41 Zorro Development Corporation funding, 2003–2011 Probable Verification: V-WS3
+**Current dated stopping point:** 2011-11-20. Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 26, 2003 – Nov 20, 2011 (97 lines, 93 docs).
 Anchors: [EFTA01482358](https://grokarchivehub.com/search?q=EFTA01482358) (Feb 26, 2003); [EFTA01482885](https://grokarchivehub.com/search?q=EFTA01482885) (Nov 20, 2007
 $50,000, IMAD 112081Qgc01C003518); [EFTA01482779](https://grokarchivehub.com/search?q=EFTA01482779) (Nov 20, 2011 $100,000
@@ -3505,6 +3951,8 @@ by full-doc or segment reads; line counts are parser counts.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P42 HBRK Associates Inc, TD Bank, Feb–Sep 2019: five accounts opened, funded, and the Jul 15, 2019 Southern Trust burst Probable Verification: V-WS1
+**Current dated stopping point:** 2019-09-30 (ZORRO, JEGE, main, NEPTUNE); 2019-08-31 (HYPERION). Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 5 – Sep 30, 2019.
 Anchors: [EFTA01596113](https://grokarchivehub.com/search?q=EFTA01596113) (TD Business Interest Checking, main account, opened Feb 5, 2019 — first statement Feb 5–28, 2019, Beginning Balance $0.00; Feb 20, 2019 incoming wire $347,838.36 from HBRK Associates, Inc; Mar 26, 2019 incoming wire $500,000.00 from Southern Trust Company; Apr 5, 2019 incoming wires $240,000.00 + $10,000.00 from Aviation Development Group LLC; last statement Sep 1–30, 2019, ending balance $404,561.78); [EFTA01596073](https://grokarchivehub.com/search?q=EFTA01596073) (ZORRO sub-account, opened Apr 17, 2019 — first statement Apr 17–30, 2019, Beginning Balance $0.00; Apr 22, 2019 $100,000.00 and Apr 26, 2019 $300,000.00 from Zorro Management, LLC; May 10, 2019 $111,013.13 from Zorro Management, LLC; Jul 15, 2019 $1,500,000.00 from Southern Trust Company Inc, 6100 Red Hook Quarters; last statement Sep 1–30, 2019, ending balance $1,567,776.60); [EFTA01596095](https://grokarchivehub.com/search?q=EFTA01596095) (JEGE sub-account, opened Apr 17, 2019 — first statement Apr 17–30, 2019, Beginning Balance $0.00; Apr 18, 2019 $50,000.00 and May 3, 2019 $31,289.83 from JEGE, LLC; Jul 15, 2019 $1,000,000.00 from Southern Trust Company Inc; Sep 10, 2019 $19,040.80 from Rolls-Royce PLC; last statement Sep 1–30, 2019, ending balance $922,789.01); [EFTA01596142](https://grokarchivehub.com/search?q=EFTA01596142) (HYPERION sub-account, opened Apr 17, 2019 — first statement Apr 17–30, 2019, Beginning Balance $0.00; Apr 18, 2019 $100,000.00 and May 3, 2019 $58,333.07 from Hyperion Air, LLC; Jul 15, 2019 $1,000,000.00 from Southern Trust Company Inc; last statement Aug 1–31, 2019, ending balance $1,117,220.33); [EFTA01596159](https://grokarchivehub.com/search?q=EFTA01596159) (NEPTUNE sub-account, opened Apr 17, 2019 — first statement Apr 17–30, 2019, Beginning Balance $0.00; Apr 18, 2019 $100,000.00 and Apr 26, 2019 $200,000.00 from Neptune, LLC; second statement May 1–31, 2019, Beginning Balance $300,000.00: May 10, 2019 $152,096.87 and May 14, 2019 $600.00 from Neptune, LLC; Jul 15, 2019 $1,000,000.00 from Southern Trust Company Inc; Jul 31, 2019 $1,000,000.00 from Southern Country International; last statement Sep 1–30, 2019, ending balance $2,082,539.93).
 The Jul 15, 2019 burst: four same-day incoming wires from Southern Trust Company Inc into four HBRK sub-accounts — $1,500,000 (ZORRO) + $1,000,000 (JEGE) + $1,000,000 (HYPERION) + $1,000,000 (NEPTUNE) = $4,500,000 on Jul 15, 2019 — nine days after Epstein's Jul 6, 2019 arrest. The timing is stated; nothing is inferred about who instructed the wires. The Jul 31, 2019 $1,000,000 from Southern Country International into NEPTUNE is a fifth post-arrest inbound, from the Story 10 Schwab-account entity.
@@ -3513,9 +3961,15 @@ Tier: probable. Documented openings + recurring dated funding + dated stopping p
 Verification (v3.2, WS1): document-level verified — all five per-ID verified against corpus.db; wire lines and first/last statements read in segment form. v3.3-corrected (Nov 6, 2026): NEPTUNE first statement corrected to Apr 17–30, 2019 (was May 1–31, 2019); the May 1–31 statement is the second statement, Beginning Balance $300,000.00 — see changelog §11.
 
 v3.3 (WS1) extension — SAR chart + SAR email (shared with P10): chart as of Oct 8, 2019, by SBH ([EFTA00151209](https://grokarchivehub.com/search?q=EFTA00151209), DS9, 2 pp.): a 2017 entity chart + Deutsche SAR numbers (31000152862375, 31000155130250): HBRK Associates Inc JPMC $800,000 (Oct 29/30, 2014); FT Real Estate Inc First Bank of Puerto Rico $738,227 (Sep 28, 2016); "Butterfly Trust (BT) (On 5/10/2019, assets transferred to: JPMC- National Financial Services LLC, subs of Fidelity Brokerage Services LLC)"; "The Butterfly Trust JP Morgan Chase SAR 31000154806804". An investigator's chart, not findings about the named persons — association only, no wrongdoing implied. Jul 30, 2019 — SFI email ([EFTA00151544](https://grokarchivehub.com/search?q=EFTA00151544), DS9, 1 p.): "I thought these SARs were interesting. Look like he tried to send money from his Charles Schwab account to Switzerland. HBRK Associates, Inc is referenced in a number of SARs. Laurel, Inc (this entity owns Palm Beach property) is featured in First bank of Puerto Rico SAR [filed 07/19/2019, 31000150840679]." Attachments: Charles Schwab SAR transcript for HBRK Associates (31000150416250) + FirstBank PR Laurel Inc SAR transcript. SARs are unsubstantiated allegations per the BSA notice in the email — label as such.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — HBRK as accountant and signing authority: Jul 12, 2019 SDNY notes — Harry Beller, HBRK Associates, named as accountant in Epstein’s DB records ([EFTA00081426](https://grokarchivehub.com/search?q=EFTA00081426), FULL); undated signer-authorization sheet — “JE is ONLY authorized signer” for STC/Southern Financial/Jeepers/Haze/Butterfly checking; “HB and JB will be verbal authorization for Brokerage with POA”; “JB” unidentified ([EFTA00128822](https://grokarchivehub.com/search?q=EFTA00128822), FULL — date NOT established); Jan 21, 2014 Kahn→Kirby wire coordination, CC Beller ([EFTA00128828](https://grokarchivehub.com/search?q=EFTA00128828), FULL). Deutsche charts: Nov 17, 2014 “Jeffrey E Epstein c/o HBRK Associates (Non-DB Account)” $1,928,647 ([EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250) Ex C, FULL — shared with P34). Grand-jury subpoena schedule naming TD Bank accounts for Butterfly Trust/HBRK ([EFTA00097221](https://grokarchivehub.com/search?q=EFTA00097221), SNIPPET); Oct 3, 2019 grand-jury subpoena to TD Bank, two DS9 copies ([EFTA00090620](https://grokarchivehub.com/search?q=EFTA00090620), [EFTA00074402](https://grokarchivehub.com/search?q=EFTA00074402), SNIPPET); Apr 4, 2019 Kahn email, HBRK Associates letterhead ([EFTA01033682](https://grokarchivehub.com/search?q=EFTA01033682), SNIPPET).
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P43 Barak–Epstein meeting arrangement, Sep 2012 Probable Verification: V-WS3; v3.3 WS2: DS11 Sep-2012 sweep body-read in full
+**Current dated stopping point:** 2012-09-24 (arrangement arc); meeting window Sep 21–24, 2012; completion NOT established. Historical paragraphs below retain the dates of their original survey.
+
 Span: Sep 17–24, 2012.
 Anchor: main 26929 (Sep 18, 2012, Lesley Groff→Nili, subject "Jeffrey Epstein"): "Hi Nili... Jeffrey says he is free to meet with Ehud anytime from Friday Sept. 21st onwards... so what ever is most convenient for Ehud!... does not need to be Monday 24th.. please do let me know what suits his schedule best and we will do it." Quoted inside, Nili→Groff, Sep 18, 11:30 AM: "Hi lesley, first we would like a solo meeting with Jeffrey before Monday. On Monday o.k. around noon. We fly back at 5 p.m. Best Nili." (Friday Sep 21 and Monday Sep 24, 2012 check out as the calendar dates for that week.) New York is implied by "we fly back at 5 p.m."; the city is not named in the row.
 Endpoint / dated stopping point: Sep 24, 2012 — the arrangement arc runs to the scheduled noon gathering at the Regency Hotel, Room 1131; completion is still NOT established (no post-event record in the sweep; no Sep 25 follow-up found; the Monday-afternoon messages still speak of the noon meeting prospectively and the Friday 8:14 PM instruction postdates its own 5 PM slot — both tensions flagged, not resolved). The Sep 2012 messages are DOJ-only: '1131' scores 0 hits across all five Barak DBs and no Sep 2012 Regency message is in the leak mailbox. The v3.2 'no follow-up found' is superseded by the v3.3 WS2 DS11 sweep below; the v3.2 DOJ cross-check's inconclusive result is replaced by the sweep's dated cluster.
@@ -3527,9 +3981,17 @@ Verification (v3.2, WS3): document-level verified — anchor body-read in full.
 v3.3 (WS2) extension — the DS11 Sep-2012 sweep: the DOJ-side follow-through is now documented (15 distinct contents; 18 IDs incl. 3 duplicate copies). Windows searched: data_set : 11 AND "September 2012" → 22 docs (all 22 triaged by head; none mentions Barak); data_set : 11 AND Groff AND Barak AND September → 43 docs (all triaged by head); Bates-range windows [EFTA02559000](https://grokarchivehub.com/search?q=EFTA02559000)–[EFTA02562000](https://grokarchivehub.com/search?q=EFTA02562000) (2,212 docs, 26 keyword hits), [EFTA02558000](https://grokarchivehub.com/search?q=EFTA02558000)–[EFTA02559000](https://grokarchivehub.com/search?q=EFTA02559000) (715 docs, 0 Sep-2012 Barak hits), [EFTA02562000](https://grokarchivehub.com/search?q=EFTA02562000)–[EFTA02563000](https://grokarchivehub.com/search?q=EFTA02563000) (746 docs, 0), [EFTA02700000](https://grokarchivehub.com/search?q=EFTA02700000)–[EFTA02703000](https://grokarchivehub.com/search?q=EFTA02703000) (2,020 docs; 2 hits, both cluster duplicates). Leak-mailbox check: "Regency" and "1131" across all five Barak DBs — no Sep 2012 Regency message in the leak mailbox ("1131" scores 0 everywhere). **The cluster is DOJ-only material.** In chronological order, all Groff→Epstein unless noted: Sep 17–18, 2012 — Epstein↔Larry Summers: Epstein (Mon Sep 17, 5:05 PM): "22-24". Summers (Sep 17, 3:36 PM): "When. I'm in Korea right now." Epstein (Tue Sep 18, 5:34 AM): "any interest in Ehud, at my house". Reply at the top of the chain (Tue Sep 18, 12:32 AM; sender blank in the text layer): "Will be in nyc on 24 mostly free." ([EFTA02560037](https://grokarchivehub.com/search?q=EFTA02560037) — direct Epstein–Summers contact about Barak; also the P12 leg.) Tue Sep 18, 2012, 3:37 PM — "Barak/Larry Summers" ([EFTA02559810](https://grokarchivehub.com/search?q=EFTA02559810)): "Barak says he would like a solo meeting with you on Monday Sept. 24th at noon and he flies back at 5pm. What time do you want Larry Summers to join? Should this be a lunch?" — Groff relaying Nili's message; the mirror of main 26929, with the new element that Larry Summers was to join at some point. Tue Sep 18, 2012, 3:51 PM — "Barak — tell me exactly please" ([EFTA02559880](https://grokarchivehub.com/search?q=EFTA02559880)): "Please tell me exactly what you would like me to ask Nili for when it comes to Barak… 'A solo meeting with you and Barak sometime Sat, Sun or Mon, whenever convenient for him, possibly for a meal or just coffee'" — Epstein's instruction to Groff, 14 minutes after the previous message. Thu Sep 20, 2012, 11:41 AM — "Barak" ([EFTA02559941](https://grokarchivehub.com/search?q=EFTA02559941)): forwards Nili (Thu Sep 20, 6:49 AM): "ehud will be back from washington tomorrow friday around 4 pm, will jeffrey be so kind as to come over to the hotel (regency on park avenue and 61st… as flights are imprevisible, i shall call you upon his arrival so jeffrey won't be waiting. please confirm". **The plan shifts: Friday Sep 21, Epstein to come to Barak's hotel after ~4 PM.** Fri Sep 21, 2012, 11:41 AM — "Schedule" ([EFTA02561234](https://grokarchivehub.com/search?q=EFTA02561234); duplicate copy [EFTA02701667](https://grokarchivehub.com/search?q=EFTA02701667), same remote-id 247046, same timestamp; the copy adds "3:00 Nina Keita"): Friday schedule: "11:00 Katya; 11:30; 12:30 Lunch with Steven Kosslyn; 1:30 conf call with Kosslyn's attorneys; 3:00; **5:15 Go See Barak at Regency**; 7:00 Dinner with Michael Wood." **The Barak visit is on Epstein's calendar for Friday 5:15 PM.** Fri Sep 21, 2012, 1:58 PM — "Barak Regency Room #1131" ([EFTA02560908](https://grokarchivehub.com/search?q=EFTA02560908)): "Barak is in Room room no. 1131 at the Regency Hotel, Park Ave & 61st." Fri Sep 21, 2012, 8:14 PM — "JE to be AT REGENCY AT 5pm — Rm#1131" ([EFTA02560494](https://grokarchivehub.com/search?q=EFTA02560494), to Janusz Banasiak and Richard Barnett, Epstein CC'd): "Jeffrey is to be at the Regency at 5pm. Park Ave and 61st. Room 1131." (Sent at 8:14 PM, after the 5 PM slot — reported as written; see below.) Sun Sep 23, 2012, 8:59 PM — "Has Barak meeting been moved to 11am?" ([EFTA02561225](https://grokarchivehub.com/search?q=EFTA02561225)): "Have you heard if 11am will work for tomorrow with Barak? Larry Summers' assistants are asking because they need to change his airline tickets. Please advise." Mon Sep 24, 2012 — "Larry Summers" ([EFTA02560633](https://grokarchivehub.com/search?q=EFTA02560633); duplicate copy [EFTA02366153](https://grokarchivehub.com/search?q=EFTA02366153), same remote-id 247637, same text): "I confirmed with Larry Summers assistants you will meet Larry in the lobby of the Regency at 11am today." Mon Sep 24, 2012, 12:29 PM — "9:15 Karyna/Janusz" ([EFTA02559879](https://grokarchivehub.com/search?q=EFTA02559879)): "Janusz is a bit concerned about being back in time to get you to the Regency from dropping Karyna at school this morning. Should Karyna leave earlier than 9:15 for school to ensure Janusz is back in plenty of time for you?" — Epstein being driven to the Regency that day. Mon Sep 24, 2012, 1:56 PM — "Reid confirmed 11:45 in room" ([EFTA02560130](https://grokarchivehub.com/search?q=EFTA02560130)): "Reid has confirmed he will be at the room at the Regency at 11:45 today. Regency Hotel, Park Ave & 61st, Room 1131." "Reid" — surname not stated in the document (Reid Hoffman, who appears elsewhere in the atlas, is a candidate; the document does not establish the identification). v3.4 (WS3) note: a second 'Reid' exists in Epstein's orbit — Reid Weingarten, documented as Epstein's counsel only in 2019 (bail letter, [EFTA00058429](https://grokarchivehub.com/search?q=EFTA00058429); bail-hearing transcript, [EFTA00015606](https://grokarchivehub.com/search?q=EFTA00015606)) — but no document connects either Weingarten or Hoffman to the Sep 24, 2012 Regency meeting; the identification stays NOT established. Mon Sep 24, 2012, 3:05 PM — "Joe Pagano" ([EFTA02560251](https://grokarchivehub.com/search?q=EFTA02560251); duplicate copy [EFTA02701903](https://grokarchivehub.com/search?q=EFTA02701903), same timestamp/text): "Joe Pagano asked where he is to meet you at noon… he thought he was to come to the house… I told [name unclear in text layer] you will be at the Regency at noon… FYI — Nili has not responded to my email asking if ok for Joe Pagano to come at noon…" Mon Sep 24, 2012, 3:07 PM — "Nili! re Joe Pagano" ([EFTA02560282](https://grokarchivehub.com/search?q=EFTA02560282)): "Nili says 'we count on Jeffrey-ok' re would it be ok for Joe Pagano to come along as well at noon today.." Mon Sep 24, 2012, 3:08 PM — "Joe Pagano will be in lobby at 11:50" ([EFTA02560305](https://grokarchivehub.com/search?q=EFTA02560305)): "Joe says he will be in the lobby at the Regency at 11:50 so you don't have to wait on him…" (A phone number follows in the document; not reproduced here, per the Standard's no-PII rule.) Mon Sep 24, 2012, 2:39 PM — Ian Osborne→Epstein, "Re: What's the plan at 12 today?" ([EFTA02560221](https://grokarchivehub.com/search?q=EFTA02560221)): "Great, I will see you there." Quoting Epstein (Sep 24): "You and a few friends regency hotel 12 rm 1131". **Epstein's own words placing the noon gathering at the Regency, Room 1131, with "a few friends".** What the sweep establishes: the arrangement did not end with main 26929. The DOJ side carries the negotiation forward day by day: the Monday-noon solo plan (Sep 18) → a Friday-afternoon hotel visit plan (Sep 20) → the Friday 5:15 PM calendar entry and the Regency Room 1131 logistics (Sep 21) → the Sunday-evening open question about moving Monday to 11 AM (Sep 23) → the Monday convergence: Summers in the lobby at 11 AM, Reid at the room at 11:45, Pagano in the lobby at 11:50, Epstein expected at noon in Room 1131, with Nili's "we count on Jeffrey-ok" for Pagano joining. The venue is established (Regency Hotel, Park Ave & 61st, Room 1131); Larry Summers' participation is established as planned (invited Sep 17–18, lobby meeting 11 AM Sep 24); Ian Osborne's attendance is established as planned (Epstein's own message). **Completion is still NOT established** — no document in the sweep records the meeting as having taken place: no debrief, no thank-you, no "good meeting" note, no Sep 25 follow-up (Barak AND "September 25" → 0; Regency AND "September 25" → 0). Two cautions against over-reading: (a) the Friday 8:14 PM instruction "JE to be AT REGENCY AT 5pm" ([EFTA02560494](https://grokarchivehub.com/search?q=EFTA02560494)) was sent *after* the 5 PM slot it names; (b) the Monday 3:05–3:08 PM messages ([EFTA02560251](https://grokarchivehub.com/search?q=EFTA02560251)/282/305) still speak of the noon meeting prospectively ("would it be ok for Joe Pagano to come along as well at noon today"), which sits oddly against a noon start — the timestamps are reported as the documents state them and the tension is flagged, not resolved. A schedule is never a held event (Standard rule 3). **P43 stays probable, not confirmed.** The story's shape changes from "single exchange, no follow-up" to "a week-long arrangement arc with a scheduled venue and converging attendees, completion not established." Placement: P43 stays its own probable story — the new material strengthens it without merging it into Story 12; the eight-month gap to Apr/May 2013 still has no connecting document. Duplicate copies are cited as copies (same remote-id), not independent corroboration.
 
 v3.5 (WS3) extension — 'Reid' as a recurring first-name-only contact, and a next-day data point. The DS11 Reid+September+2012 sweep is now complete (171 docs date-filtered; exactly 4): the Sep 24 anchor ([EFTA02560130](https://grokarchivehub.com/search?q=EFTA02560130)) plus two further items. Mon Sep 10, 2012, 5:40 PM — 'Call List' ([EFTA02339033](https://grokarchivehub.com/search?q=EFTA02339033); duplicate copy [EFTA02559675](https://grokarchivehub.com/search?q=EFTA02559675), same remote-id 245036): 'Reid:' heads Epstein's call list (then 'Jean Luc:', 'Joe:', 'Peggy:'), two weeks before the Regency meeting. Tue Sep 25, 2012, 11:36 AM — 'Leon Black' ([EFTA02365160](https://grokarchivehub.com/search?q=EFTA02365160)): Groff's schedule for the day — '8:00 BREAKFAST with Reid / 12:00 Larry Newman and Darren / 12:30 or 12:45 TENTative appt w, (girl) / 1:00 Leon Black / 7:30 DINNER w/ Woody Allen / 10:00 Terje' — Reid had breakfast with Epstein the morning after the Regency meeting. This is a next-day data point, not a completion record: it shows Reid in Epstein's orbit the morning after and says nothing about whether the noon gathering happened. 'Reid' recurs as a first-name-only contact across 2011–2018 — Sep 27, 2011, 'Reid will be at the apt today about 1:30pm/2pm. He will just take a taxi.' ([EFTA02327315](https://grokarchivehub.com/search?q=EFTA02327315)); Feb 12, 2018, 'Reid 830 am tomorrow' ([EFTA02237269](https://grokarchivehub.com/search?q=EFTA02237269)) — no surname in any document read. Neither Hoffman nor Weingarten connects to Sep 24, 2012; the identification stays NOT established. Completion is still NOT established.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.3 (WS2) extension — the DS11 Sep-2012 sweep: the DOJ-side follow-through is now documented (15 distinct contents; 18 IDs incl. 3 duplicate copies). Windows searched: data_set : 11 AND "September 2012" → 22 docs (all 22 triaged by head; none mentions Barak); data_set : 11 AND Groff AND Barak AND September → 43 docs (all triaged by head); Bates-range windows [EFTA02559000](https://grokarchivehub.com/search?q=EFTA02559000)–[EFTA02562000](https://grokarchivehub.com/search?q=EFTA02562000) (2,212 docs, 26 keyword hits), [EFTA02558000](https://grokarchivehub.com/search?q=EFTA02558000)–[EFTA02559000](https://grokarchivehub.com/search?q=EFTA02559000) (715 docs, 0 Sep-2012 Barak hits), [EFTA02562000](https://grokarchivehub.com/search?q=EFTA02562000)–[EFTA02563000](https://grokarchivehub.com/search?q=EFTA02563000) (746 docs, 0), [EFTA02700000](https://grokarchivehub.com/search?q=EFTA02700000)–[EFTA02703000](https://grokarchivehub.com/search?q=EFTA02703000) (2,020 docs; 2 hits, both cluster duplicates). Leak-mailbox check: "Regency" and "1131" across all five Barak DBs — no Sep 2012 Regency message in the leak mailbox ("1131" scores 0 everywhere). **The cluster is DOJ-only material.** In chronological order, all Groff→Epstein unless noted: Sep 17–18, 2012 — Epstein↔Larry Summers: Epstein (Mon Sep 17, 5:05 PM): "22-24". Summers (Sep 17, 3:36 PM): "When. I'm in Korea right now." Epstein (Tue Sep 18, 5:34 AM): "any interest in Ehud, at my house". Reply at the top of the chain (Tue Sep 18, 12:32 AM; sender blank in the text layer): "Will be in nyc on 24 mostly free." ([EFTA02560037](https://grokarchivehub.com/search?q=EFTA02560037) — direct Epstein–Summers contact about Barak; also the P12 leg.) Tue Sep 18, 2012, 3:37 PM — "Barak/Larry Summers" ([EFTA02559810](https://grokarchivehub.com/search?q=EFTA02559810)): "Barak says he would like a solo meeting with you on Monday Sept. 24th at noon and he flies back at 5pm. What time do you want Larry Summers to join? Should this be a lunch?" — Groff relaying Nili's message; the mirror of main 26929, with the new element that Larry Summers was to join at some point. Tue Sep 18, 2012, 3:51 PM — "Barak — tell me exactly please" ([EFTA02559880](https://grokarchivehub.com/search?q=EFTA02559880)): "Please tell me exactly what you would like me to ask Nili for when it comes to Barak… 'A solo meeting with you and Barak sometime Sat, Sun or Mon, whenever convenient for him, possibly for a meal or just coffee'" — Epstein's instruction to Groff, 14 minutes after the previous message. Thu Sep 20, 2012, 11:41 AM — "Barak" ([EFTA02559941](https://grokarchivehub.com/search?q=EFTA02559941)): forwards Nili (Thu Sep 20, 6:49 AM): "ehud will be back from washington tomorrow friday around 4 pm, will jeffrey be so kind as to come over to the hotel (regency on park avenue and 61st… as flights are imprevisible, i shall call you upon his arrival so jeffrey won't be waiting. please confirm". **The plan shifts: Friday Sep 21, Epstein to come to Barak's hotel after ~4 PM.** Fri Sep 21, 2012, 11:41 AM — "Schedule" ([EFTA02561234](https://grokarchivehub.com/search?q=EFTA02561234); duplicate copy [EFTA02701667](https://grokarchivehub.com/search?q=EFTA02701667), same remote-id 247046, same timestamp; the copy adds "3:00 Nina Keita"): Friday schedule: "11:00 Katya; 11:30; 12:30 Lunch with Steven Kosslyn; 1:30 conf call with Kosslyn's attorneys; 3:00; **5:15 Go See Barak at Regency**; 7:00 Dinner with Michael Wood." **The Barak visit is on Epstein's calendar for Friday 5:15 PM.** Fri Sep 21, 2012, 1:58 PM — "Barak Regency Room #1131" ([EFTA02560908](https://grokarchivehub.com/search?q=EFTA02560908)): "Barak is in Room room no. 1131 at the Regency Hotel, Park Ave & 61st." Fri Sep 21, 2012, 8:14 PM — "JE to be AT REGENCY AT 5pm — Rm#1131" ([EFTA02560494](https://grokarchivehub.com/search?q=EFTA02560494), to Janusz Banasiak and Richard Barnett, Epstein CC'd): "Jeffrey is to be at the Regency at 5pm. Park Ave and 61st. Room 1131." (Sent at 8:14 PM, after the 5 PM slot — reported as written; see below.) Sun Sep 23, 2012, 8:59 PM — "Has Barak meeting been moved to 11am?" ([EFTA02561225](https://grokarchivehub.com/search?q=EFTA02561225)): "Have you heard if 11am will work for tomorrow with Barak? Larry Summers' assistants are asking because they need to change his airline tickets. Please advise." Mon Sep 24, 2012 — "Larry Summers" ([EFTA02560633](https://grokarchivehub.com/search?q=EFTA02560633); duplicate copy [EFTA02366153](https://grokarchivehub.com/search?q=EFTA02366153), same remote-id 247637, same text): "I confirmed with Larry Summers assistants you will meet Larry in the lobby of the Regency at 11am today." Mon Sep 24, 2012, 12:29 PM — "9:15 Karyna/Janusz" ([EFTA02559879](https://grokarchivehub.com/search?q=EFTA02559879)): "Janusz is a bit concerned about being back in time to get you to the Regency from dropping Karyna at school this morning. Should Karyna leave earlier than 9:15 for school to ensure Janusz is back in plenty of time for you?" — Epstein being driven to the Regency that day. Mon Sep 24, 2012, 1:56 PM — "Reid confirmed 11:45 in room" ([EFTA02560130](https://grokarchivehub.com/search?q=EFTA02560130)): "Reid has confirmed he will be at the room at the Regency at 11:45 today. Regency Hotel, Park Ave & 61st, Room 1131." CORRECTED in v3.6: RESOLVED for Sep 24, 2012 — the Sep 24, 2012, 11:45 Regency "Reid" is Reid Weingarten. The September 2012 calendar ([EFTA00314254](https://grokarchivehub.com/search?q=EFTA00314254), DS9, read in full) lists "11:45 Reid Weingarten to join the Barak meeting" — same date, time (11:45), room (1131), and meeting as the P43 anchor [EFTA02560130](https://grokarchivehub.com/search?q=EFTA02560130) ("Reid has confirmed he will be at the room at the Regency at 11:45 today"). The Sep 25 breakfast "Reid" is likewise Weingarten on the same evidence ([EFTA00404501](https://grokarchivehub.com/search?q=EFTA00404501), [EFTA00404190](https://grokarchivehub.com/search?q=EFTA00404190), [EFTA00404181](https://grokarchivehub.com/search?q=EFTA00404181)). Completion of the Sep 24 meeting is still NOT established. The wider "Reid" (2011–2018 recurring first-name-only contact) stays unidentified. Mon Sep 24, 2012, 3:05 PM — "Joe Pagano" ([EFTA02560251](https://grokarchivehub.com/search?q=EFTA02560251); duplicate copy [EFTA02701903](https://grokarchivehub.com/search?q=EFTA02701903), same timestamp/text): "Joe Pagano asked where he is to meet you at noon… he thought he was to come to the house… I told [name unclear in text layer] you will be at the Regency at noon… FYI — Nili has not responded to my email asking if ok for Joe Pagano to come at noon…" Mon Sep 24, 2012, 3:07 PM — "Nili! re Joe Pagano" ([EFTA02560282](https://grokarchivehub.com/search?q=EFTA02560282)): "Nili says 'we count on Jeffrey-ok' re would it be ok for Joe Pagano to come along as well at noon today.." Mon Sep 24, 2012, 3:08 PM — "Joe Pagano will be in lobby at 11:50" ([EFTA02560305](https://grokarchivehub.com/search?q=EFTA02560305)): "Joe says he will be in the lobby at the Regency at 11:50 so you don't have to wait on him…" (A phone number follows in the document; not reproduced here, per the Standard's no-PII rule.) Mon Sep 24, 2012, 2:39 PM — Ian Osborne→Epstein, "Re: What's the plan at 12 today?" ([EFTA02560221](https://grokarchivehub.com/search?q=EFTA02560221)): "Great, I will see you there." Quoting Epstein (Sep 24): "You and a few friends regency hotel 12 rm 1131". **Epstein's own words placing the noon gathering at the Regency, Room 1131, with "a few friends".** What the sweep establishes: the arrangement did not end with main 26929. The DOJ side carries the negotiation forward day by day: the Monday-noon solo plan (Sep 18) → a Friday-afternoon hotel visit plan (Sep 20) → the Friday 5:15 PM calendar entry and the Regency Room 1131 logistics (Sep 21) → the Sunday-evening open question about moving Monday to 11 AM (Sep 23) → the Monday convergence: Summers in the lobby at 11 AM, Reid at the room at 11:45, Pagano in the lobby at 11:50, Epstein expected at noon in Room 1131, with Nili's "we count on Jeffrey-ok" for Pagano joining. The venue is established (Regency Hotel, Park Ave & 61st, Room 1131); Larry Summers' participation is established as planned (invited Sep 17–18, lobby meeting 11 AM Sep 24); Ian Osborne's attendance is established as planned (Epstein's own message). **Completion is still NOT established** — no document in the sweep records the meeting as having taken place: no debrief, no thank-you, no "good meeting" note, no Sep 25 follow-up (Barak AND "September 25" → 0; Regency AND "September 25" → 0). Two cautions against over-reading: (a) the Friday 8:14 PM instruction "JE to be AT REGENCY AT 5pm" ([EFTA02560494](https://grokarchivehub.com/search?q=EFTA02560494)) was sent *after* the 5 PM slot it names; (b) the Monday 3:05–3:08 PM messages ([EFTA02560251](https://grokarchivehub.com/search?q=EFTA02560251)/282/305) still speak of the noon meeting prospectively ("would it be ok for Joe Pagano to come along as well at noon today"), which sits oddly against a noon start — the timestamps are reported as the documents state them and the tension is flagged, not resolved. A schedule is never a held event (Standard rule 3). **P43 stays probable, not confirmed.** The story's shape changes from "single exchange, no follow-up" to "a week-long arrangement arc with a scheduled venue and converging attendees, completion not established." Placement: P43 stays its own probable story — the new material strengthens it without merging it into Story 12; the eight-month gap to Apr/May 2013 still has no connecting document. Duplicate copies are cited as copies (same remote-id), not independent corroboration.
+
+v3.6 (WS-D) extension — DS9 legs: Sep 24, 2012, 2:38 PM Groff — “Regency Hotel is at Park Ave & 61st… Room 1131 at 12:00” ([EFTA00404181](https://grokarchivehub.com/search?q=EFTA00404181), FULL); Sep 24, 3:15 PM thread — Marah “We are en route… 40 minutes until we arrive”, Groff “Jeffrey knows… he is on his way now” ([EFTA00404190](https://grokarchivehub.com/search?q=EFTA00404190), FULL); Sep 23, 8:17 PM ([EFTA00404501](https://grokarchivehub.com/search?q=EFTA00404501), FULL); Sep 2012 calendar ([EFTA00314254](https://grokarchivehub.com/search?q=EFTA00314254), FULL) — “11:45 Reid Weingarten to join the Barak meeting” (see correction 9). HEAD: [EFTA00404508](https://grokarchivehub.com/search?q=EFTA00404508), [EFTA00404510](https://grokarchivehub.com/search?q=EFTA00404510), [EFTA00404511](https://grokarchivehub.com/search?q=EFTA00404511), [EFTA00404513](https://grokarchivehub.com/search?q=EFTA00404513). Completion still NOT established.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P44 Jonathan Bendheim / Nowforce.com pitch and the Yatom introduction, May–Jul 2013 Probable Verification: V-WS3; v3.3 WS2: outside-mailbox search stated
+**Current dated stopping point:** 2013-07-17. Historical paragraphs below retain the dates of their original survey.
+
 Span: May 7 – Jul 17, 2013.
 Anchors: main 27908 (May 7, 2013, Jack Bendheim→Barak, CC Jonathan): "Ehud when u have 15 minutes I would appreciate it if you could sit with Jonathan to discuss a project." Barak replies (same day, in-chain): "jack, i'll do. where is he? I'll be in IL in Shavouth. In NY this Sat for few hrs."; main 27915 (May 8, 2013, Jonathan→Barak, CC Jack): "Please let me know what dates/times would work for you to meet in Israel and I will make one of the times work."; main 27926 (May 22, 2013, Jonathan→Barak): "I wanted to thank you again for taking the time to meet with me and Anshel on Friday" — the meeting was held (Friday May 17, 2013). Follow-up: Barak asked Jonathan to reach out to Ziv Lautenberg and to "walk Doron through the offering"; Jonathan asks Barak "to once again consider getting involved with business in whatever capacity you see fit. While it has taken time for Nowforce.com to build a strong and sustainable platform, the business [is] finally at a stage where it is ready to significantly accelerate its growth and take advantage of the very real global opportunity that exists for our solution."; main 31158 (Jul 17, 2013, Barak→Jonathan, quoting the May 22–29 chain): Barak's May 22 reply — "Thanks. Will discuss it again during the wedding. In the meantime try to talk to Danny Yatom former head of Mossad and CoS to me. He runs a security co. which might help in promoting it. I've told him about your co." — and Jonathan's May 29 report: "we had a meeting with Danny Yatom and his son at their office. We agreed on next steps for him to make introductions with some of his relationships in relevant orgs/people in the US. Thank you again for making the introduction." Barak, Jul 17: "Jonathan Thx. Yatom is very practical. VG. EB".
 Endpoint / dated stopping point: Jul 17, 2013 (Barak's endorsement of Yatom). Barak's own involvement with Nowforce itself is NOT established in rows read. "Nowforce" totals 3 main hits + 2 Hyperion hits across all five DBs; nothing after Jul 17, 2013. Whether Barak ever engaged, and what Yatom's introductions produced, would need sources outside this mailbox.
@@ -3540,6 +4002,8 @@ v3.3 (WS2) extension — outside-the-mailbox chase (clean negative on follow-thr
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P45 Epstein advising Leon Black's family office, Feb 2014–Oct 2018 Probable Verification: V-WS5; v3.3 WS4: DS11 core fuller read (330 openings; 14 in full); v3.4 WS2: remainder survey (181 openings + 49 full reads); endpoint moved to Sep 29, 2016
+**Current dated stopping point:** 2018-10-09. Historical paragraphs below retain the dates of their original survey.
+
 Span: Feb 17, 2014 – Oct 9, 2018.
 Anchors: HO 12890 (friction: "I am done. its not a negotiation, out!!"); HO 12935 (Dec 28, 2014 + Feb 20, 2015 emails); HO 12920, HO 12995 (Oct 16, 2015 follow-ups); HO 12955 (May 11, 2016 re GRAT backup); DS11: [EFTA02475983](https://grokarchivehub.com/search?q=EFTA02475983), [EFTA02476118](https://grokarchivehub.com/search?q=EFTA02476118), [EFTA02476401](https://grokarchivehub.com/search?q=EFTA02476401), [EFTA02476464](https://grokarchivehub.com/search?q=EFTA02476464), [EFTA02477032](https://grokarchivehub.com/search?q=EFTA02477032), [EFTA02477150](https://grokarchivehub.com/search?q=EFTA02477150), [EFTA02499543](https://grokarchivehub.com/search?q=EFTA02499543), [EFTA02499769](https://grokarchivehub.com/search?q=EFTA02499769) ("family office needs a daddy" — 65 DS11 docs carry the phrase); DS9: [EFTA00699054](https://grokarchivehub.com/search?q=EFTA00699054) (Oct 30, 2014, Spinella→Epstein: "Leon said we can give it to Barry").
 Chain: ~100 House Oversight pages mention Melanie Spinella (dense cluster HO 12845–12996 in Part 7-2, plus scattered 2014–2018 items: HO 15833, 19988, 22031). The emails are Epstein advising Leon Black on Black's family office ("hi Leon", "your office", "your foundation", "debra and you", "Leon planning to give", "your family office needs a daddy", "Larry Delson", "Ada [Clapp]", "Eileen", "Tom", "Brad [Wechsler]", "grats, trusts, heritage will", "Apollo accounting tax", "Phaidon", "Regan", "art partnership", "100 bank accounts need to be rationalized"). The thread is DOJ-overlapping, extensively: "MELANIE SPINELLA" → 9,695 DOJ docs; "LARRY DELSON" → 2,815 DOJ docs. Its DS11 core is the EFTA0247xxxx–EFTA0249xxxx range.
@@ -3555,9 +4019,18 @@ v3.4 (WS2) extension — DS11 remainder survey (inventory + expanded survey, NOT
 v3.5 (WS2) extension — DS11 remainder survey continued (inventory + expanded survey, NOT a full pass) and endpoint move, second correction (tier stays probable — evidence remains largely one source family, Epstein's own emails/drafts plus Elysium/Apollo staff correspondence; the fee figures are Epstein's one-sided drafts; no second source family was found in the remainder survey). **CORRECTION of the v3.4 endpoint check:** the v3.4 statement that the 2017–2018 Spinella-mentioning documents are non-advisory mailbox material is WRONG. The Sample B survey (181 openings) and the late-date machine triage (95 hits, all read in full) found substantive DS11-side advisory material Oct 2016–Oct 2018, and the endpoint moves Sep 29, 2016 → **Oct 9, 2018**. Oct–Dec 2016 continuation: [EFTA02449628](https://grokarchivehub.com/search?q=EFTA02449628) (Oct 3, 2016, Epstein→Leon Black + Spinella — Alan's presentation review: "bad numbers. unclear assumptions… A clat probabaly makes sense…"); [EFTA02448994](https://grokarchivehub.com/search?q=EFTA02448994) (Oct 3, 2016, Epstein→Brad S Karp cc Spinella — 8865 experts, Deloitte or PwC); [EFTA02446838](https://grokarchivehub.com/search?q=EFTA02446838) and [EFTA02446649](https://grokarchivehub.com/search?q=EFTA02446649) (Oct 17, 2016 — E&Y not to be brought in unless Barry is there; Joslin changes; fire drill "should get done, dont be cheap"); [EFTA02446088](https://grokarchivehub.com/search?q=EFTA02446088) (Oct 24, 2016 — "1031 asap"; Jeff Brodsky retiring from E&Y; "very few things on the two years old list actually got done"; Artspace, gift tax, BRH, TRA, 8865, Regan, Phaidon, art sales, art partnership, trust distributions); [EFTA02445863](https://grokarchivehub.com/search?q=EFTA02445863) (Oct 31, 2016 — "1031 tra brh, planning for 16. artspace- regan.- phaidon- miami. -art partnership. - fire drill, -will,"); [EFTA02670749](https://grokarchivehub.com/search?q=EFTA02670749) (Nov 9, 2016 — "I have a really elegant solution for most of the following, 1 gift tax… 2. 1031. 3 fire drill brh tra etc.… I would ask that you tell me if you intend to pay for the work that was done, and for the work you expect to be done"); [EFTA02670773](https://grokarchivehub.com/search?q=EFTA02670773) (Nov 8, 2016 — 8865 call, "reasonable cause" cover note, Brad Karp); [EFTA02669892](https://grokarchivehub.com/search?q=EFTA02669892) (Nov 14, 2016 — 2016 planning decisions ASAP, gift tax, BRH/TRA review); [EFTA02670262](https://grokarchivehub.com/search?q=EFTA02670262) (Nov 15, 2016 — the long terms letter: "Congratulations on biting the bullet. at least 18 months late… There is a HUGE amount of work to be done in the next 9-12 months… a way overdue re-fresh of your estate plan. clats, trust, partnerships, grats, llcs… airplane re-do, buying another? boat sale, Miami sale, TRADING ACCOUNTS… the 8865 mess will take months to review… I will no longer, not even for one day, work on your affairs. without the compensation that is long overdue… I will only work for the usual 40 million per year. It needs to be paid, 25 million upon signing an agreement. 5 million every 2 months thereafter for 6 months ie march may june… If you want me to work this year until Jan 15, it will be 10 million. paid upfront."); [EFTA02667941](https://grokarchivehub.com/search?q=EFTA02667941) (Nov 28, 2016 agenda: 1031, 8858, Barry, Pesner, airplane); [EFTA02667962](https://grokarchivehub.com/search?q=EFTA02667962) (Nov 29, 2016 — "I have told the brads and barry, I am done. its not a negotiation, out!!" — the same "I am done" language as HO 12890 — plus the "WILLFUL NON-FILER" warning; Epstein kept advising after this date, so the "I am done" is a friction marker, not an ending); [EFTA02669687](https://grokarchivehub.com/search?q=EFTA02669687) (Nov 23, 2016 — "please direct the fire drill questions to either ada brad or leon"); [EFTA02666211](https://grokarchivehub.com/search?q=EFTA02666211) (Dec 22, 2016 — Kahn forwarding Heather Gray's Giacometti sale update). 2017 continuation: [EFTA02657193](https://grokarchivehub.com/search?q=EFTA02657193) / [EFTA02404639](https://grokarchivehub.com/search?q=EFTA02404639) (Mar 17, 2017 — Epstein's document request: bank art loan docs, BRH, TRA, shareholder agreements, org charts, LA house structure, art by highest gain; Ada Clapp replies with the AAP — executed version, current draft, redline, summary from Vanessa Eng; "AAP" is not expanded in the documents); [EFTA02651413](https://grokarchivehub.com/search?q=EFTA02651413) (Apr 24, 2017 — Dan Terlep, Elysium Tax Director candidate to replace Rich Joslin; Epstein's test questions: tenants in common, Tufts gain, SCINs, estate freezes, international tax); [EFTA02653005](https://grokarchivehub.com/search?q=EFTA02653005) (Apr 10, 2017 — Giacometti sale: Sotheby's $16M guarantee, 70/30 overage split; Christie's third-party guarantor "around $15–16 million", estimates GBP 15–25M, enhanced hammer 10% to GBP 20M then 107%); [EFTA02653636](https://grokarchivehub.com/search?q=EFTA02653636) (Apr 5, 2017 — art values with basis: Epstein to Leon Black, "good first start, total all gains/ ? all losses. I see net 1 billion gain."); [EFTA02654997](https://grokarchivehub.com/search?q=EFTA02654997) (Apr 4, 2017 — Kahn's art update: $30M+ paid for two works, estimates $19–22M, "non-deductible personal loss of between 7-10 million dollars"); [EFTA02396231](https://grokarchivehub.com/search?q=EFTA02396231) (Jul 13, 2017, Cohen→Epstein, "FW: Oxy plane": "Oxy responded that they would accept $47MM… LOI to strictly bind us, but not Oxy… BofA loan proposal… engine program… Ron P has a 7-person risk control department" — "Ron P" is not identified in the documents); Aug 19, 2017 planning fight ([EFTA02398439](https://grokarchivehub.com/search?q=EFTA02398439) + duplicate filings [EFTA02398455](https://grokarchivehub.com/search?q=EFTA02398455), [EFTA02398601](https://grokarchivehub.com/search?q=EFTA02398601); conversation-id 115428 plane-thread filings [EFTA02639765](https://grokarchivehub.com/search?q=EFTA02639765), [EFTA02351668](https://grokarchivehub.com/search?q=EFTA02351668), [EFTA02351680](https://grokarchivehub.com/search?q=EFTA02351680), [EFTA02639849](https://grokarchivehub.com/search?q=EFTA02639849), [EFTA02367827](https://grokarchivehub.com/search?q=EFTA02367827), [EFTA02639876](https://grokarchivehub.com/search?q=EFTA02639876) — Cohen: "Apollo doesn't want to be an owner or an operator. Makes 91 operations for Apollo tricky"; "Some trips for Apollo are not 135 compliant… occasionally we have to fly Part 91 on Apollo flights"); [EFTA02638299](https://grokarchivehub.com/search?q=EFTA02638299) (Aug 21, 2017, Epstein→Leon Black + Spinella, fee letter: "Ana's issue" IRS audit — "Ana" is not identified in the documents; "$600M savings / resurrection of 3 billion dollars of grats that had died"; "first hundred or the full 175"; "Gigi, Carlyn, audit, gift tax audit, 8865, gagosian contract, underpayment of Apollo offshore, tax"; "helping you save millions and millions on the Giacometti (including now for the first time, having to record a personal 5 million dollar loss in my trust"); [EFTA02638966](https://grokarchivehub.com/search?q=EFTA02638966) (Aug 21, 2017 re-forward bundle incl. the Aug 18, 2017 note on the gift-tax audit and the May 10, 2016 Turrin email — agent Falk, GRAT valuations kicking off audits, 2014 also examined); Sep 22, 2017 "Art in CLATs" ([EFTA02339282](https://grokarchivehub.com/search?q=EFTA02339282) / [EFTA02608615](https://grokarchivehub.com/search?q=EFTA02608615) — Cohen's detailed CLAT valuation analysis; Epstein 1:18 PM: "the main goal is not to avoid estate tax. leons goal is to ultimately transfer the most value to the kids. silly beyond belief"; 1:29 PM: "how many art clats has heather seen? estate audits done… with WELL KNOWN ART"; Cohen 5:31 PM: "I have thoughts on framing big picture estate issues, so we can discuss with Leon"); [EFTA02593733](https://grokarchivehub.com/search?q=EFTA02593733) (Oct 3, 2017, Epstein→Spinella forwarding Cohen's Oct 3, 9:22 AM POA note + Epstein's Sep 15, 2017 email to Cohen cc Leon Black: "good news on the sale of the g 5. I read your memo of aug 30 to leon… The Clat is anreasy one I merely asked you to ask them if they have ever seen one of size above say 500m… I have yet to hear that there is a dialogue with tax planning with either 16 or 17… there is both an issue of past fees not yet settled and if you guys want my current or future advice. you will need to pay for it… BRH TRA restructure as a small example." + Cohen POA: executed by Leon, not acknowledged by appointees as NY law requires, held in Paul Weiss's safe, broad authority to John Hannan and Richard Ressler acting jointly); [EFTA02366582](https://grokarchivehub.com/search?q=EFTA02366582) / [EFTA02615307](https://grokarchivehub.com/search?q=EFTA02615307) / [EFTA02366701](https://grokarchivehub.com/search?q=EFTA02366701) (Sep 20, 2017 — EY audit thread: Epstein asks whether any of the EY team "thoroughly reviewed the draft return"; Cohen sends the EY team's audit-experience summary; Epstein forwards the thread to Leon Black: "I was told not ready surprised to see it was already passed for comments. Told you"); [EFTA02605282](https://grokarchivehub.com/search?q=EFTA02605282) (Sep 25, 2017, Epstein→Cohen/Spinella re FET on Part 91 flights: "yes, im aware the NBAA fought and won. never has been an issue. these are technical." + Cohen forward of Ruth Wimer/McDermott on CCA 201210026 / FET suspension); [EFTA02582557](https://grokarchivehub.com/search?q=EFTA02582557) / [EFTA02582450](https://grokarchivehub.com/search?q=EFTA02582450) (Oct 13, 2017, "Returns" — Epstein→Vinciguerra/Spinella cc Cohen: "joe, leon prefers to leave everything as is. I would ask though for you to review the form with capital gai= to see art at blank cost??!"; Cohen: EY shot down ring/interest thoughts); Dec 20, 2017 boat/tax thread ([EFTA02611776](https://grokarchivehub.com/search?q=EFTA02611776) — Epstein 11:28 AM original; [EFTA02612129](https://grokarchivehub.com/search?q=EFTA02612129)'s inner copy is dated 6:28 AM, two filings with different header times: "look at prepay property tax… can you make boat loss this year? do you need a back to back with me… anyway to get phaidon out of foreign? send heather to albany to negotiate sales tax.?"; [EFTA02611288](https://grokarchivehub.com/search?q=EFTA02611288), Cohen 12:16 PM: boat buyer, "Wouldn't close until 2018… loss is worth more in 2018 since his effective Tax rate is rising due to loss of SALT deduction"; [EFTA02614016](https://grokarchivehub.com/search?q=EFTA02614016), Cohen 1:01 PM: "We have prepaid property taxes"; [EFTA02614287](https://grokarchivehub.com/search?q=EFTA02614287), Cohen 1:31 PM: Albany sales-tax auditors). Dec 7, 2017 DO NOT SEND re-filings ([EFTA02231659](https://grokarchivehub.com/search?q=EFTA02231659), [EFTA02231775](https://grokarchivehub.com/search?q=EFTA02231775), [EFTA02231832](https://grokarchivehub.com/search?q=EFTA02231832), [EFTA02550806](https://grokarchivehub.com/search?q=EFTA02550806) — Epstein re-circulating the Jan 5, 2016 fee letter, printing it, and forwarding it to Brad S Karp "for discussion"; [EFTA02231832](https://grokarchivehub.com/search?q=EFTA02231832): "no its for brad karp" — a version of the letter **was** delivered to Karp, correcting v3.4; delivery to Leon remains not established). 2018 continuation: [EFTA02524668](https://grokarchivehub.com/search?q=EFTA02524668) (Feb 16, 2018, Epstein→Spinella forwarding Jan 3, 2016 draft text — $20M passage + "I called him [Brad Karp] and he said he was never told.? I would ask that you I and Brad karp sit together… I would like to send him this email, with your consent of course" — as of Feb 16, 2018, not yet sent to Karp per Epstein's own words; the Dec 7, 2017 forwarding to Karp postdates this draft's language and is recorded separately above); [EFTA02520818](https://grokarchivehub.com/search?q=EFTA02520818) (Feb 28, 2018, Epstein→Cohen/Spinella: "if you send me a plan, Ill discuss with leon. questions re notes in heritage. are too out of context to be meaningful"); Apr 21, 2018 re-forwards ([EFTA02462559](https://grokarchivehub.com/search?q=EFTA02462559) — Dec 4, 2015 art partnership + Nov 1, 2015 Halperin recycling, $600mm party A / $1.2b bank / art partnership; [EFTA02462686](https://grokarchivehub.com/search?q=EFTA02462686) — Oct 26, 2015 draft: Phaidon + Artspace combined basis $96M + $10M restructuring = $106M, sale ~$8–15M, loss $90–98M, ~43% tax, savings $38.7–44M; [EFTA02462898](https://grokarchivehub.com/search?q=EFTA02462898) — Oct 29, 2015 "smile, can you please show to leon": Apr 26, 2015 Picasso sculpture draft contract — Epstein advising Leon buy the piece from Gagosian directly on the same payment terms plus sales tax; [EFTA02462923](https://grokarchivehub.com/search?q=EFTA02462923) — Nov 23, 2015: "we need to reach fee agreement… 3. gagosian 4 revolver 5 inspire - FBI 6. Phaidon, solution. 7 plane."); [EFTA02574406](https://grokarchivehub.com/search?q=EFTA02574406) (Jun 22, 2018, Epstein→Spinella 7-point agenda: "'17 tax planning. you should have drafts"; co liquidity vs Apollo; "TRA on your death? all grantor trusts, turn non grantor"; bank loan / swap of art / sales tax; "fire drill. redo brh tra aas., new laws"; new tax law; "phaidon. fees."); the Oct 2–9, 2018 Enhanced Capital thread (conversation-ids 326424/325826/325811): Cohen Oct 2, 10:15 PM asks Epstein's thoughts on Enhanced Capital (tax-credit company); Epstein Oct 3, 9:05 AM ([EFTA02622038](https://grokarchivehub.com/search?q=EFTA02622038) / [EFTA02622214](https://grokarchivehub.com/search?q=EFTA02622214), two filings, same content): "buying '10 m tax credits for 8.5 is there income recognition. I dont like the idea of leon being involved in any business that has an insurance company tie. the bigger money is monetization of apollo and athene…"; Oct 3, 1:13 PM ([EFTA02622059](https://grokarchivehub.com/search?q=EFTA02622059)) follow-up questions; Oct 3, 5:22/5:46 PM ([EFTA02620635](https://grokarchivehub.com/search?q=EFTA02620635)/[EFTA02620573](https://grokarchivehub.com/search?q=EFTA02620573)); Cohen Oct 3, 1:09 PM ([EFTA02622135](https://grokarchivehub.com/search?q=EFTA02622135)), 2:27 PM ([EFTA02621626](https://grokarchivehub.com/search?q=EFTA02621626)), 5:53 PM ([EFTA02620521](https://grokarchivehub.com/search?q=EFTA02620521), Greg Ruben head of investment team); [EFTA02620926](https://grokarchivehub.com/search?q=EFTA02620926) (Oct 4, 3:05 AM, Epstein→Cohen/Spinella, "Ec": "My overall view is that the biz is tax rate and interest rate sensitive…"); [EFTA02620296](https://grokarchivehub.com/search?q=EFTA02620296) (Oct 8, 2018, Epstein: "try to stay away from regulated businessses for indiv, too much scrutinu with too many states etc."); Epstein Oct 9, 7:40 AM ("work on the subject, only in oregon…" + Korejwa_MPP_Essay attachment) and 8:05 AM (pass-through / gain on use / state filings / regulators questions) inside [EFTA02619423](https://grokarchivehub.com/search?q=EFTA02619423)/[EFTA02620195](https://grokarchivehub.com/search?q=EFTA02620195); **endpoint [EFTA02619585](https://grokarchivehub.com/search?q=EFTA02619585) (Oct 9, 2018, 2:10 PM): "also what it would look like if you put it in a grat for the kids"**; Cohen 2:15 PM ([EFTA02619423](https://grokarchivehub.com/search?q=EFTA02619423)): "I feel like transferring more wealth to the kids is not a priority at the moment. This is more about investing the kids' wealth. The trusts would be the investors. (Though all taxed to Leon because of grantor trust status.)" Scheduling contact continues past the endpoint at the scheduling level only ([EFTA02249224](https://grokarchivehub.com/search?q=EFTA02249224), Jun 19, 2018: "Reconfirming Leon will see Jeffrey this morning at 8:30am!"; [EFTA02263919](https://grokarchivehub.com/search?q=EFTA02263919), Nov 1–5, 2018 — Leon asking Jeffrey for a drink; no advisory content in either). **Earlier programmatic legs (span start unchanged):** [EFTA02568140](https://grokarchivehub.com/search?q=EFTA02568140) (Mar 23, 2013 — agenda: dynasty, appts, dist. foundations, will, allocations; BFP/97/all trusts info); [EFTA02568499](https://grokarchivehub.com/search?q=EFTA02568499) (Apr 8, 2013 — split-dollar life insurance, AP IV LP advances, tangibles inventory — jewelry for Debra, rare books, bronzes for Leon, insurance); [EFTA02569871](https://grokarchivehub.com/search?q=EFTA02569871) (May 13, 2013 — full family-office org list: bookkeeper, payroll, secretary, filing counsel, accounting firm, estate lawyer Alan, international tax Phaidon, partnership tax Patrick, bankers JPM/BAM/Deutsch, valuation Empire, art Kunkel, insurance Haber, trustees John/Barry, investments Eileen, cash mgmt, Phaidon NY, Regan, charity, Met show, Athene); [EFTA02579682](https://grokarchivehub.com/search?q=EFTA02579682) (Jan 22, 2014 — establish Deutsche Bank/JPM/Goldman Sachs trading/private, "swat team mgmt"); [EFTA02580685](https://grokarchivehub.com/search?q=EFTA02580685) / [EFTA02581671](https://grokarchivehub.com/search?q=EFTA02581671) (Feb 6, 2014 checklist: new GRAT timing, financial statement, Phaidon time left, cash on hand, tax payment due, valuations, JPM DB accounts, AC/trust issues, decanting, LDB re-org, art list, insurance analysis, TRA amendments, BRH agreement, Sirius stock 1099; Joslin note that LDB expenses will now be paid via the family office); [EFTA02583532](https://grokarchivehub.com/search?q=EFTA02583532) (Apr 22, 2014 — art inventory: Joslin APO 1/APO 2 portfolio, Sotheby's June 2013 appraisal; Cohen formulating art acquisition policy for the trusts; "Jeff E thought the inventory would be done in April"); [EFTA02349705](https://grokarchivehub.com/search?q=EFTA02349705) (Jun 16, 2014, Spinella→Epstein, "plane": Phaidon employees can only fly to NON EU countries, e.g. Switzerland). **Mid-span legs:** [EFTA02512886](https://grokarchivehub.com/search?q=EFTA02512886) (Jan 26, 2015 — Topco/Midco/Bidco liquidation, passive deferred tax loss, Phaidon); [EFTA02513737](https://grokarchivehub.com/search?q=EFTA02513737) (Jan 26, 2015 — state tax payments NYS $15,150,000, CA $235,000, Iowa $75,000, GA $10,000, total $15,470,000); [EFTA02508414](https://grokarchivehub.com/search?q=EFTA02508414) (Mar 2, 2015 — charts, trusts 97/LDB 2011); [EFTA02504820](https://grokarchivehub.com/search?q=EFTA02504820) (Apr 13, 2015 agenda: 10 million, PFS, charts, paralegal, banks/loans, Phaidon); [EFTA02503027](https://grokarchivehub.com/search?q=EFTA02503027) (May 1, 2015 — fee/partnership: "I proposed 33 percent of money made for you… in the past you agreed that amount"; "agreed OCT 15, last year was the end"; JPM/DB/GS accounts still not open May 1); [EFTA02391084](https://grokarchivehub.com/search?q=EFTA02391084) (Oct 30, 2015, Heather Gray→Epstein re Gagosian/Larry/MoMA art dispute; Epstein: draft a notification to Gagosian "we want our money back immediately IF and when title clears"); [EFTA02461309](https://grokarchivehub.com/search?q=EFTA02461309) (Jun 3, 2016 — cash flow: "picasso bust ceazanne purchases (1031 timing). la house. sales use tax. boat plane."); [EFTA02337939](https://grokarchivehub.com/search?q=EFTA02337939) (Mar 4, 2016 — Brad→Epstein: fire-drill docs, estate flow doc, Akin death-implications memo on BRH/BFP/TRA; Epstein "reviewed and amended part docs with alan… if leon will allow heather or someone else to be trustee of b trust, at least for a while, i am almost done" + "fire drill report? leon, i have free time sunday, if you want to review will plus details"); [EFTA02704907](https://grokarchivehub.com/search?q=EFTA02704907) (Mar 16, 2016 — Brad hired Wendy Dulman on limited basis for Apollo-related tax planning to coordinate with Epstein on "broader planning goals"); [EFTA02703649](https://grokarchivehub.com/search?q=EFTA02703649) (Mar 18, 2016 — Epstein→Avantario/Clapp/Spinella re estate fire-drill info: discounted vs full values, appraisal dates); [EFTA02469823](https://grokarchivehub.com/search?q=EFTA02469823) (Mar 21, 2016 — Brad→Spinella cc Epstein, art partnership decanting: "jeffrey felt out of the loop on the 'decanting', alan wanted to get final sign-off from jeffrey last week"). **Re-forward bursts (corroborating only — re-circulation of already-anchored content, not new advisory events):** Mar 25–26, 2017 ([EFTA02654346](https://grokarchivehub.com/search?q=EFTA02654346), [EFTA02654369](https://grokarchivehub.com/search?q=EFTA02654369), [EFTA02654382](https://grokarchivehub.com/search?q=EFTA02654382) — re-forwards of Oct 31, Nov 9, Nov 15, 2016 content incl. the $40M/year terms; [EFTA02655451](https://grokarchivehub.com/search?q=EFTA02655451) — Oct 27, 2015 "Detailed constructive list", 25-point decision list; [EFTA02655647](https://grokarchivehub.com/search?q=EFTA02655647) — Jan 18, 2016 Athene 25% fee; [EFTA02655664](https://grokarchivehub.com/search?q=EFTA02655664) — Jan 29, 2016, "37 percent was our number"; [EFTA02655700](https://grokarchivehub.com/search?q=EFTA02655700) — Feb 4, 2016, "a long standing [agreement] that you say is 28, which is correct AFTer TAx, 37 pre"; [EFTA02655737](https://grokarchivehub.com/search?q=EFTA02655737) / [EFTA02655746](https://grokarchivehub.com/search?q=EFTA02655746) — Mar 13, 2016 fire-drill docs; [EFTA02655837](https://grokarchivehub.com/search?q=EFTA02655837) — Apr 7, 2016, "I now agree that the past is the past. and i am owed nothing for the big transaction."; [EFTA02655873](https://grokarchivehub.com/search?q=EFTA02655873) / [EFTA02655888](https://grokarchivehub.com/search?q=EFTA02655888) — Apr 12, 2016 use-tax/gift-tax-return items; [EFTA02655972](https://grokarchivehub.com/search?q=EFTA02655972) — Jun 1, 2016, "in dec when you unilaterally decided to pay me much less than our agreed amount, we agreed NO MORE money discussions NO MORE after care"; [EFTA02655985](https://grokarchivehub.com/search?q=EFTA02655985) — Jun 3, 2016, Heather Gray on the 1031 exchange agent, Calder 1031 / Cézannes; [EFTA02656019](https://grokarchivehub.com/search?q=EFTA02656019) — Sep 13, 2016 / Feb 9, 2016 office-redo list; [EFTA02662036](https://grokarchivehub.com/search?q=EFTA02662036) — Feb 1, 2017 re-forward of the Feb 24, 2015 email incl. the full Feb 17, 2014 memo text); Aug 19, 2017 midnight burst ([EFTA02639566](https://grokarchivehub.com/search?q=EFTA02639566) — May 1, 2015 33% fee email; [EFTA02639568](https://grokarchivehub.com/search?q=EFTA02639568) — May 11, 2015 art-partnership funding: $100M unencumbered art + $20M investment + same from trust; FBAR report for June; Phaidon actuals vs projections; new TRA valuation; [EFTA02639570](https://grokarchivehub.com/search?q=EFTA02639570) — Dec 28, 2014 jobs-ahead list; [EFTA02639574](https://grokarchivehub.com/search?q=EFTA02639574) — May 18, 2015 "in the beginning" agenda; [EFTA02639588](https://grokarchivehub.com/search?q=EFTA02639588) — May 28, 2015 "ulysses 2.0" — "you are sitting on over 100 m of cash???!!"; [EFTA02639591](https://grokarchivehub.com/search?q=EFTA02639591) — Jun 5, 2015 boat file, Epstein's 17-point boat-file checklist for the IRS examiner; [EFTA02639609](https://grokarchivehub.com/search?q=EFTA02639609) — bundle: Apr 15, 2015 $600M; Apr 22, 2015 "another flowery email"; May 1, 2015 33%; May 11, 2015; May 18, 2015 agenda; May 27, 2015 Brad re John Castrucci COO/CFO; May 28, 2015 ulysses 2.0; Jun 5, 2015 boat file). The re-forward bursts show Epstein re-pressing the fee case in Mar and Aug 2017; they add no new advisory content beyond the underlying emails. **Plane thread (Task 2, resolved with caveat — see changelog §2):** [EFTA02594087](https://grokarchivehub.com/search?q=EFTA02594087) (Oct 2, 2017, Epstein→Cohen AND Spinella, both direct To: recipients — v3.4's "Spinella only cc'd" is wrong) and [EFTA02593348](https://grokarchivehub.com/search?q=EFTA02593348) / [EFTA02595460](https://grokarchivehub.com/search?q=EFTA02595460) (same evening; "the 5" is the G5/GV). **Coverage (WS4 + v3.4 WS2 + this pass):** inventoried 2,140 DS11 SPINELLA docs; examined at opening depth or better: 802 (330 core + 181 Sample A + 12 late-sample + 181 Sample B + 95 triage-2 heads + 3 no-date keyword hits); read in full: 216 unique; 1,338 remainder docs unexamined. Inventory and expanded survey, NOT a full pass.
 
 v3.7 extension (Grok Bot, DS8 Bates-neighbor survey). 1 leg; endpoint unchanged. [EFTA00321715](https://grokarchivehub.com/search?q=EFTA00321715) (DS9, Jul 26, 2016): Lesley Groff and Melanie Spinella exchange arrival/departure messages ("Leon just left"). Logistics only; the location and purpose are not stated. Not an advisory document.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Exhibit A payment rows 2014–2018 ([EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250), FULL — see P34); Aug 19, 2017 forward of the Apr 15, 2015 note — “10m paid today to gratitude america… 50 million credit… 600 savings” — Epstein’s stated figures, not verified, plus May 10, 2016 gift-tax audit email ([EFTA01037440](https://grokarchivehub.com/search?q=EFTA01037440), HEAD — full 7-pp. text not read); 2012 Black trust agreements ([EFTA01087894](https://grokarchivehub.com/search?q=EFTA01087894), [EFTA01088208](https://grokarchivehub.com/search?q=EFTA01088208), HEAD); estate-planning overviews ([EFTA01088415](https://grokarchivehub.com/search?q=EFTA01088415), [EFTA01088441](https://grokarchivehub.com/search?q=EFTA01088441), HEAD). Also: Epstein letter to Black disputing a fee after a completed transaction ([EFTA00305994](https://grokarchivehub.com/search?q=EFTA00305994), SNIPPET); Southern Trust agreement / BV70 letter ([EFTA00301563](https://grokarchivehub.com/search?q=EFTA00301563), [EFTA00603342](https://grokarchivehub.com/search?q=EFTA00603342), SNIPPET); Nov 2014 scheduling items ([EFTA01000032](https://grokarchivehub.com/search?q=EFTA01000032), [EFTA01000035](https://grokarchivehub.com/search?q=EFTA01000035), [EFTA01002071](https://grokarchivehub.com/search?q=EFTA01002071), [EFTA01002121](https://grokarchivehub.com/search?q=EFTA01002121), HEAD); 2018 iPhone contact list ([EFTA00285606](https://grokarchivehub.com/search?q=EFTA00285606), HEAD — association only).
+
+v3.6 (WS-A) billing leg — a Jul 15, 2014 Southern Trust invoice bills Leon Black $20,000,000 "for the provision of algorithms for use in connection with estate planning and related purposes" ([EFTA01108434](https://grokarchivehub.com/search?q=EFTA01108434)), a billing document arising from the advisory relationship; the invoiced Black entity is not named (addressee blank), and the invoice is not proof of payment. Same-day counterpart to the Jul 15, 2014 $20M Narrow Holdings LLC → Southern Trust wire (P34, L1 resolved); payment/invoice identity NOT asserted. The Deutsche chart's Exhibit A payment rows 2014–2018 are also carried here ([EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250) — see P34 for the row series and labeled totals).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P46 The 2010–2011 new criminal investigation, Jul 2010–Sep 2011 Probable Verification: V-WS1; v3.3 WS1: document-level verified
+**Current dated stopping point:** 2011-09-26. Historical paragraphs below retain the dates of their original survey.
+
 Span: Jul 2010 – Sep 2011.
 Anchors: [EFTA00206650](https://grokarchivehub.com/search?q=EFTA00206650) (Oct 21, 2010, Cassell → USAO: in late Jul 2010 Mike Fisten and others met the FBI re Epstein's sexual abuse of "other young girls — girls not covered by the non-prosecution agreement"; USAO reply: "Interviews have been conducted of potential new victims. Let me check in with the case agent and get back to you"); [EFTA01249058](https://grokarchivehub.com/search?q=EFTA01249058) (Mar 9, 2011, AUSA memo "Highly Confidential — Preliminary Investigation of Additional Crimes of Jeffrey Epstein and Others": a victim reported being flown around the US and Europe to have sex with prominent men, encounters videotaped, paid after each encounter; the memo lists named men as reported by the victim via Edwards/Fisten; Clinton came to Epstein's house several times and received erotic massages (not from her), at least once while still president; obstruction allegations — perjury, falsified probation records, a lawyer threatening a subpoenaed victim; a modeling agency as a front for trafficking with fraudulent visa applications); [EFTA00269912](https://grokarchivehub.com/search?q=EFTA00269912) (Mar 11, 2011, FBI EC: Mar 9, 2011 interview at USAO Fort Lauderdale with a victim + attorneys + private investigator; she "is willing to cooperate fully with any FBI investigation involving JEFFREY EPSTEIN and others"); [EFTA00155090](https://grokarchivehub.com/search?q=EFTA00155090) (Jul 9–17, 2024, FBI account: FBI Miami took the case to a different district in Florida and the USAO declined to move forward; in 2016 victim-counsel approached SDNY AUSAs re a CVRA civil suit and a criminal investigation — "Nothing came from this meeting and no investigation was opened at that time"; the Miami case "officially became pending inactive due to the deal that then US Attorney Alex Acosta made with Epstein and his lawyers"; FBI Miami "was still investigating the case and were not in agreement with the non-prosecution agreement Epstein was given"); [EFTA00205768](https://grokarchivehub.com/search?q=EFTA00205768) (Sep 26, 2011, internal USAO thread re CVRA relief: "Setting aside the non-pros and prosecuting him as though the Non-pros had never been signed"; the Jane Does' desired relief was to set aside the NPA; a USAO voice argued Epstein "already served his sentence in state court and performed all his other obligations under the Non-Pros (including paying damages to 30-some girls)" and it would be a Due Process violation to suggest setting it aside).
 Endpoint / dated stopping point: Sep 26, 2011 (the set-aside debate, [EFTA00205768](https://grokarchivehub.com/search?q=EFTA00205768)). The investigation's outcome is the USAO decline, as stated in the Jul 2024 FBI account ([EFTA00155090](https://grokarchivehub.com/search?q=EFTA00155090)) — a summary written 13 years after the events, cited as the FBI's 2024 account, not as a contemporaneous record. The 2016 SDNY approach opened no investigation (same source). A discrete episode with a beginning (Jul–Oct 2010 Fisten/FBI meetings + victim interviews), a middle (Mar 9, 2011 victim interview + preliminary-investigation memo), and an endpoint (2011 USAO decline; 2016 SDNY approach opened no investigation; Jul 2024 FBI account). It answers Story 2's open "decade of inaction" lead for 2010–2011 but is not a leg of the breach-declaration chain — a connected chain with its own endpoint, kept standalone (coordinator's decision, see changelog §8). Whether anything followed between late 2011 and the 2018–2019 case is still not established in the material read.
@@ -3566,6 +4039,8 @@ Verification (v3.3, WS1): document-level verified — anchors body-read in full.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P47 Barak's direct requests for Putin meetings via Ambassador Ushakov, May 2013–June 2015 Probable Verification: V-WS3; v3.3 WS3: document-level verified
+**Current dated stopping point:** 2015-06-05. Historical paragraphs below retain the dates of their original survey.
+
 Span: May 26, 2013 – Jun 5, 2015.
 Anchors: main 28023 (May 29, 2013, filed under "economic Forum at St. Petersburg"; body is Shilin's Jun 5, 2013 message): Barak's May 26, 2013 request quoted inside — "I'm former Prime Minister of Israel and two months since ending six years of service as Israel's Minister of Defense. I would like to meet with President Putin for 30–40min at an early opportunity. Preferably before the main June Events." Shilin (Jun 5): "We respectfully ask you to call Ambassador Yuri Ushakov as soon as it is convenient for you to discuss your meeting with President Putin."; main 1407 (filed Jul 2, 2013 under "The payment VV July@VV #Invoices"; body is Barak's Jun 5, 2013, 16:16 reply): "Alexey Thanks. I will call Ambassador Ushakov in one hour from now, If that works for you." — the Jul 2 date is a filing date, not a message date; main 1155 (filed Jun 24, 2013; body is Barak's Jun 12, 2013, 22:36 sent mail) quoting Shilin, Jun 11, 2013, 14:44: "Dear Mr. Barack, On behalf of my boss I am privileged to tell you that we will do our best to organize your meeting with President Putin on June 20 at 19:30 in Saint-Petersburg. It must work. If it fails — which is unlikely — boss will find another opportunity." Barak, Jun 12: "Thank Ambassador Ushakov on my behalf for setting the meeting. I'd never spent the time of the President and won't do it now. This meeting IS important. So make sure it's done during the SPEIF."; main 24058 (filed Jul 20, 2013; body is the Jun 11 Shilin message as forwarded — same thread, shorter filing than main 1155, which additionally carries Barak's Jun 12 reply; distinct filings of the same thread, not independent corroboration); main 15467 (filed Jan 21, 2015, "Touch Base YU") and main 15540 (same thread, shorter filing): Barak, Jan 19, 2015, to Ushakov — plans "a short visit to Moscow late next week on Thursday, January 29th in the afternoon" and asks for "a brief, 30 minutes meeting" with the President. Shilin, Jan 20, 2015: "even a brief meeting with Mr. Putin on January 29 is impossible because of President's extremely tough schedule that day. So Amb. Ushakov respectfully asks whether you could suggest some other dates for this meeting." Barak, Jan 21, 2015, 12:36: "Unfortunately I cannot make it this time on another day. However, I'm confident a meeting will be interesting and fruitful for both. I'll be glad to meet with the President in any date and venue of Ambassador Ushakov choice on any day between Friday, Feb 27th and Friday, March 20th." Whether any Feb 27–Mar 20 meeting was arranged or held is NOT established in rows read (no follow-up in the Shilin rows read; the next Ushakov rows are Jun 2015); main 12708 (filed Jun 10, 2015 under "Reshef Amnon") and main 12911 (same thread, shorter filing): Barak, Jun 3, 2015, to Ushakov — "I'm going to participate in SPEIF 2015. I'll be in St. Petersburg from June 17th evening through June 21st morning. I've already set meetings with Min. Lavrov and Gov. Nabiullina. I'll highly appreciate it if I'll be allowed to have a sh[ort meeting with the President]…" Shilin, Jun 4, 2015: "Most unfortunately President's schedule in Saint-Petersburg doesn't leave any possibility for even a shortest additional meeting… Boss wonders whether you could suggest any other dates for your new visit to Russia so that he could try to arrange your meeting with the President." Barak, Jun 5, 2015, 16:49: "First, I would like to leave open with Ambassador Ushakov my request for a meeting with the President during SPEIF 2015, just in case somehow an opening will occur along the way. Second, I am really interesting in this meeting and confident it'll be mutually beneficial. So, if you give me a date and place where it is possible I will change my schedule to enable it."
 Endpoint / dated stopping point: Jun 5, 2015 — Barak leaves the SPIEF 2015 Putin request open with Ushakov ("just in case somehow an opening will occur"); no Putin meeting is arranged in rows read. Three dated legs over two years, one channel (Barak→Ushakov→Shilin), one subject (a direct Barak–Putin meeting), with an arc — arranged, then declined, then declined again. Leg (a) May–Jun 2013: meeting requested, then arranged for Jun 20, 2013, 19:30, St. Petersburg; held/not-held NOT established (no post-June-20 confirmation, report, or follow-up in the Shilin rows read; the arrangement — "we will do our best to organize", "make sure it's done" — is not a held-meeting record). Leg (b) Jan 2015: requested for Jan 29, 2015 (Moscow); declined for that date; counter-offer Feb 27–Mar 20, 2015; outcome NOT established. Leg (c) Jun 2015: requested for SPIEF 2015; declined — independent corroboration, from Ushakov's office rather than Belyakov, that no Putin meeting was arranged at SPIEF 2015, consistent with the Jun 8, 2015 Belyakov cancellation ("This year we won't be able to make the 1-1 session") already in Story 31. Distinct from Story 12's Epstein-mediated Putin proposal (May 9, 2013, leak id 28024: Epstein→Barak, "let Putin know you will be in Moscow") — the Ushakov channel is Barak acting directly, 17 days after Epstein's proposal, and no document in rows read connects the two; the connection is not claimed. Kept standalone, not a Story 12 extension (coordinator's decision, see changelog §8): the channel, participants, and arc are self-contained. Note: fragment F1 ("Sochi/Yuri Ushakov — ask Dec 2013, Feb 2014 congratulations — attendance unconfirmed") is a different, later Ushakov contact (Dec 2013–Feb 2014, Sochi); the May–Jun 2013 arrangement above predates it and is not in the atlas; the Jan/Jun 2015 legs are likewise not in the atlas. No contradiction with F1; the three stories/fragments share only the Ushakov channel.
@@ -3575,6 +4050,8 @@ Verification (v3.3, WS3): document-level verified — anchors body-read in full.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P48 Leon Black's $115M Picasso purchase, 2015 Probable Verification: V-WS4; v3.3 WS4: document-level verified
+**Current dated stopping point:** 2015-10-01. Historical paragraphs below retain the dates of their original survey.
+
 Span: May 12 – Oct 1, 2015.
 Anchors: [EFTA02486657](https://grokarchivehub.com/search?q=EFTA02486657) (Oct 1, 2015, Richard Joslin → Epstein: "Use tax payable @ 9/30/15 — 2015 acquisitions LDB= 1.55 million Narrows $2.5 million. Use tax paid 4/15 $1.9 million (with extension)." Forwarded inside it, Heather Gray (Elysium Management, May 13, 2015) to the Accounting Team: "The purchase price for the Picasso Buste de femme (Marie-Therese) is $115 million, plus $10,206,250 in NY sales tax. The payment schedule is as follows: 1. $23 million paid on May 12, 2015 2. $34.5 million due on June 30, 2015 3. $28.75 million due on October 1, 2015 4. New York State & City sales tax of $10,206,250 due in February 2016 upon transfer of title to and possession of the Work to Leon 5. $28.75 million due on April 15, 2016… Leon has emphasized to me several times how very confidential this purchase is").
 Endpoint / dated stopping point: Oct 1, 2015 — the Joslin email recording use tax payable as of Sep 30, 2015; the last dated document in the chain. Documented as paid: $23M on May 12, 2015 (Gray's schedule, item 1) and $1.9M use tax paid Apr 15, 2015 (Joslin: "Use tax paid 4/15 $1.9 million (with extension)"). The remaining instalments are schedule only — $34.5M due Jun 30, 2015; $28.75M due Oct 1, 2015; $28.75M due Apr 15, 2016; $10,206,250 NY sales tax due Feb 2016 — payment of each is NOT established in this document. Title/possession: SCHEDULED for transfer in Feb 2016 (Gray's item 4 makes the Feb 2016 sales tax due "upon transfer of title to and possession of the Work to Leon"); the transfer itself is NOT established — no document in this filing records it as having occurred. A payment deadline is not a payment, and a scheduled transfer is not a transfer (Standard rule 3). Handled through Elysium Management with Epstein's team doing the use-tax work; Gray's note stresses Leon's insistence on confidentiality. "LDB" and "Narrows" (use-tax lines in the same filing) are not identified beyond the document's wording.
@@ -3582,7 +4059,9 @@ Tier: probable, not confirmed — single-document anchor (two emails inside one 
 Verification (v3.3, WS4): document-level verified — anchor body-read in full. v3.3-corrected (Nov 6, 2026): endpoint moved Apr 15, 2016 → Oct 1, 2015 (the Apr 15, 2016 date was a payment deadline, not a documented event); title transfer restated as scheduled, not occurred — see changelog §11.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
-P49 Epstein–Jes Staley emails, 2009–2011, and SDNY's Dec 2019 contact with the FCA Probable Verification: V-WS1; v3.5 WS1: document-level verified
+P49 Epstein–Jes Staley contact and the 2019 FCA inquiry Probable Verification: V-WS1; v3.5 WS1: document-level verified
+**Current dated stopping point:** 2020-02-20. Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 3, 2009 – Dec 14, 2019.
 Anchors: DS8: [EFTA00029429](https://grokarchivehub.com/search?q=EFTA00029429), DS8: [EFTA00029430](https://grokarchivehub.com/search?q=EFTA00029430), DS8: [EFTA00029432](https://grokarchivehub.com/search?q=EFTA00029432), DS8: [EFTA00029434](https://grokarchivehub.com/search?q=EFTA00029434), DS8: [EFTA00029435](https://grokarchivehub.com/search?q=EFTA00029435), DS8: [EFTA00029437](https://grokarchivehub.com/search?q=EFTA00029437), DS8: [EFTA00022164](https://grokarchivehub.com/search?q=EFTA00022164), DS8: [EFTA00029358](https://grokarchivehub.com/search?q=EFTA00029358)
 Chain: [EFTA00029429](https://grokarchivehub.com/search?q=EFTA00029429) (Dec 3–4, 2009): Epstein↔Staley, "long heartfelt hug" in New York City. [EFTA00029430](https://grokarchivehub.com/search?q=EFTA00029430) (Jun 16, 2010): "Is she free tonight?" [EFTA00029432](https://grokarchivehub.com/search?q=EFTA00029432) (Jul 9–10, 2010): "Beauty and the Beast" / "Snow White". [EFTA00029434](https://grokarchivehub.com/search?q=EFTA00029434) (Sep 28, 2010): Epstein to Staley — "prince Andrew would like much more to represent casanov in china than tim collins". [EFTA00029435](https://grokarchivehub.com/search?q=EFTA00029435) (Dec 31, 2010): Staley to "sjeeyacation". [EFTA00029437](https://grokarchivehub.com/search?q=EFTA00029437) (Mar 5–6, 2011): FBI-reopening press coverage; "phonebook… stolen by my houseman currently in prison". [EFTA00022164](https://grokarchivehub.com/search?q=EFTA00022164) (Dec 10, 2019): SDNY follow-up call with the FCA, "looking at [J]es Staley and his potential relationship with Epstein" (text layer reads "les Staley"); SDNY to ask the FCA to "not go overt anytime soon." [EFTA00029358](https://grokarchivehub.com/search?q=EFTA00029358) (Dec 14, 2019): SDNY internal email — "one of the non/minor Epstein victims alleges that Jes Staley (reads in memo as 'Jess Daily') raped her during a massage. P. 31" — a single victim's allegation as relayed; the memo itself is not identified in the email.
@@ -3594,9 +4073,16 @@ Verification (v3.5, WS1): document-level verified — anchors body-read in full.
 v3.26 extension (ordered DS8 continuation). [EFTA00025082](https://grokarchivehub.com/search?q=EFTA00025082) (2 pp.; Thu, 13 Feb 2020 header, as printed) forwards an exchange in which a Financial Times reporter, working with London colleagues on a story that DOJ had passed information to the UK FCA about Jes Staley's relationship with Epstein, and noting Barclays' disclosure that day that the FCA and PRA were investigating Staley's statements about his links to Epstein, asks for background or comment; the reply says the office cannot provide guidance and will decline to comment. This is a press query and a decline. It does not confirm that DOJ passed any information, and no FCA or PRA outcome is shown. The carried Dec 2019 FCA-contact leg ([EFTA00022164](https://grokarchivehub.com/search?q=EFTA00022164)) is unchanged.
 
 v3.32 extension (ordered DS8 continuation). [EFTA00029283](https://grokarchivehub.com/search?q=EFTA00029283) (2 pp.; header dated Thu, 28 Nov 2019 14:24:37 +0000, as printed) is the earliest dated 2019 FCA contact now in the atlas. On Nov 28, 2019 the FCA's Executive Director of Enforcement and Market Oversight asks an SDNY contact urgently whether anyone there is handling the Epstein investigation, especially anything relating to JP Morgan, where Epstein was a client of its private wealth division, because the FCA needs to talk. The contact loops in the Public Corruption Unit, which runs the case. [EFTA00029252](https://grokarchivehub.com/search?q=EFTA00029252) is partial; its preview opens with a Dec 3, 2019 SDNY proposal for a follow-up call, and it is not relied on beyond that preview. This is an inquiry and a referral. It does not show what was said on any call, and it leaves the carried Dec 10 and Dec 14, 2019 legs, the span and the no-FCA-outcome endpoint unchanged.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) extension — Feb 12–20, 2020: the Barclays-announcement / FCA-notification sequence. Feb 12 ([EFTA00104912](https://grokarchivehub.com/search?q=EFTA00104912)): SDNY heads-up that Barclays planned a public statement noting Staley was “under investigation”. Feb 13: the FCA emailed SDNY that the investigation had been announced by Barclays ([EFTA00094148](https://grokarchivehub.com/search?q=EFTA00094148)) and confirmed it did not intend to comment ([EFTA00094151](https://grokarchivehub.com/search?q=EFTA00094151)); the FBI noted the FCA’s heads-up the same morning ([EFTA00079559](https://grokarchivehub.com/search?q=EFTA00079559)). Feb 20 ([EFTA00079569](https://grokarchivehub.com/search?q=EFTA00079569)): Reuters inquiry — UK regulators opened the Staley probe after receiving JPMorgan emails (press-sourced, not document-established). No FCA outcome is established. Mid-span: Nov–Dec 2014 Staley emails ([EFTA01000994](https://grokarchivehub.com/search?q=EFTA01000994), [EFTA01001884](https://grokarchivehub.com/search?q=EFTA01001884), [EFTA01002102](https://grokarchivehub.com/search?q=EFTA01002102), [EFTA01002494](https://grokarchivehub.com/search?q=EFTA01002494), [EFTA01002887](https://grokarchivehub.com/search?q=EFTA01002887); HEAD) plus sampled Nov–Dec 2014 items ([EFTA01001899](https://grokarchivehub.com/search?q=EFTA01001899), [EFTA01002497](https://grokarchivehub.com/search?q=EFTA01002497), [EFTA01002519](https://grokarchivehub.com/search?q=EFTA01002519); SNIPPET) and a Feb 13, 2020 SDNY news-clips press leg ([EFTA00065241](https://grokarchivehub.com/search?q=EFTA00065241), HEAD). Press: Barclays CEO to step down after the Epstein inquiry ([EFTA00077955](https://grokarchivehub.com/search?q=EFTA00077955), SNIPPET).
+**Restored in v3.84 (WS-A)** — live-line DS8 prose missing from the v3.83 merge, restored verbatim from the live v3.82 line:
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 P50 Maxwell's correspondence with "The Invisible Man" (signs "A"; in-thread evidence points to Andrew), 2001–2002 Probable Verification: V-WS1; v3.5 WS1: document-level verified
+**Current dated stopping point:** 2002-03-03. Historical paragraphs below retain the dates of their original survey.
+
 Span: Aug 16, 2001 – Mar 3, 2002.
 Anchors: DS8: [EFTA00011437](https://grokarchivehub.com/search?q=EFTA00011437), DS8: [EFTA00011440](https://grokarchivehub.com/search?q=EFTA00011440), DS8: [EFTA00011438](https://grokarchivehub.com/search?q=EFTA00011438), DS8: [EFTA00011441](https://grokarchivehub.com/search?q=EFTA00011441), DS8: [EFTA00011435](https://grokarchivehub.com/search?q=EFTA00011435), DS8: [EFTA00018878](https://grokarchivehub.com/search?q=EFTA00018878)
 Chain: [EFTA00011437](https://grokarchivehub.com/search?q=EFTA00011437) (Aug 16, 2001): "The Invisible Man" from Balmoral, Royal Family summer camp — "Have you found me some new inappropriate friends?" [EFTA00011440](https://grokarchivehub.com/search?q=EFTA00011440) (Aug 18, 2001): "lost my valet on Thursday. He died in his sleep. He had been with me since I was 2… I have left the RN". [EFTA00011438](https://grokarchivehub.com/search?q=EFTA00011438) (Feb 28, 2002): "As for girls well I leave that entirely to you and Juan Estoban!" — Peru trip planning. [EFTA00011441](https://grokarchivehub.com/search?q=EFTA00011441) (Mar 3, 2002): Maxwell forwards to "The Invisible Man" ("Thought you would like to see what I sent") a message she sent to a third person in Peru, naming "Andrew" as the visitor; "The Invisible Man" replies the same day "Got it I will ring him today if I can. Love you A xxx" — "I just gave Andrew your telephone no. He is interested in seeing the Nazca Lines… some 2 legged sight seeing (read intelligent pretty fun and from good families)". [EFTA00011435](https://grokarchivehub.com/search?q=EFTA00011435) (Nov 6, 2001, minor): Maxwell↔Gibby Cohen, "suggestions for JE trainer" — same-run minor material. [EFTA00018878](https://grokarchivehub.com/search?q=EFTA00018878) (Nov 29, 2021, provenance leg): trial subpoena to Amazon for Maxwell's email accounts gmax1@mindspring.com, gmax@mindspring.com, gmax1@ellmax.com, gmax@ellmax.com, records Jan 1, 1994–Jan 1, 2005 — the mailbox run's provenance. ([EFTA00016966](https://grokarchivehub.com/search?q=EFTA00016966)/[EFTA00037250](https://grokarchivehub.com/search?q=EFTA00037250) "mindspring" hits are Mark Epstein's izmo@mindspring.com (2020) — a different person, not carried.)
@@ -3606,7 +4092,9 @@ Links: Story 5 (Maxwell case); P13 (Andrew Nov 2010 NY visit arranged — a late
 Verification (v3.5, WS1): document-level verified — anchors body-read in full.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
-P51 Palm Beach Police intelligence entries on Epstein and Maxwell, Dec 2001–Nov 2004 Probable Verification: V-WS1; v3.5 WS1: document-level verified
+P51 The 2001–2004 Palm Beach intelligence file on Epstein and Maxwell Probable Verification: V-WS1; v3.5 WS1: document-level verified
+**Current dated stopping point:** 2004-11-29. Historical paragraphs below retain the dates of their original survey.
+
 Span: Dec 6, 2001 – Nov 29, 2004.
 Anchors: DS8: [EFTA00022654](https://grokarchivehub.com/search?q=EFTA00022654)
 Chain: [EFTA00022654](https://grokarchivehub.com/search?q=EFTA00022654) (12 pp., 48,093 chars; full text read). The document itself runs Dec 2001–Oct 10, 2005; this story uses its Dec 2001–Nov 2004 entries. The Mar–Oct 2005 entries are a Story 1 extension. No "PBAC" / "Palm Beach Atlantic" / "22654" / "OCVAN" hits exist in v3.4 or in the prior DS8 reports — new to the atlas. Dec 6–7, 2001: OCVAN received intelligence from West Palm Beach PD concerning Maxwell — "hiring young women from PBAC to come to her house and answer the phone… paid $200.00 per day… It is unclear what is occurring in the residence."
@@ -3624,11 +4112,51 @@ Endpoint / dated stopping point: Nov 29, 2004 ([EFTA00022654](https://grokarchiv
 Tier: probable, not confirmed — the file is a Palm Beach Police case report / "Persons System Report" for Epstein (case 2002-10; entries are filed under several file numbers, including File 100, 300, 300-13 and 2600; "Prostitution-Epstein"; header disposition UNFOUNDED). Its contents are officers' records of what students and others told them — accounts and allegations, labeled as such — and the file's own conclusion is that no illegal activity had been reported or detected at that time. The header disposition and the narrative conclusion are both reported as recorded; neither is treated as a finding of fact about the underlying conduct.
 Links: Story 1 (the 2005 investigation — the same file's Mar–Oct 2005 entries are a Story 1 leg); Story 5 (Maxwell case).
 Verification (v3.5, WS1): document-level verified — anchors body-read in full.
+
+**Restored merged-line extensions (source-crew review):**
+
+v3.6 (WS-D) correction 14 — duplicate status UNRESOLVED: [EFTA00090685](https://grokarchivehub.com/search?q=EFTA00090685) (31 pp., DS9 OCVAN case report, disposition UNFOUNDED) is a DS9 filing of the same OCVAN case-file family as DS8 [EFTA00022654](https://grokarchivehub.com/search?q=EFTA00022654) (12 pp.); Dec 2001 entries match verbatim; duplicate vs longer printing NOT established (page counts differ; the DS9 copy's tail contains additional appended material not characterized here). Recorded as a DS9 filing of the same file family (corroboration, not a new anchor).
+[Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
+
+P52 Southern Trust invoicing Rothschild entities, Dec 2015 Probable Verification: V-WS-A; v3.6 WS-A: document-level verified
+**Current dated stopping point:** 2015-12-17. Historical paragraphs below retain the dates of their original survey.
+
+Span: Dec 15–17, 2015.
+Anchors: DS9: [EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250), DS9: [EFTA01119622](https://grokarchivehub.com/search?q=EFTA01119622), DS9: [EFTA01119623](https://grokarchivehub.com/search?q=EFTA01119623), DS9: [EFTA01139155](https://grokarchivehub.com/search?q=EFTA01139155)
+Chain: On Dec 15, 2015 Southern Trust invoiced two Rothschild counterparties on the same day — $15M to Ariane de Rothschild (Nov 3, 2015 agreement) and $10M to Edmond de Rothschild (Suisse) S.A. (Oct 5, 2015 agreement). Two days later the Suisse leg is documented as wired: the SWIFT MT103 copy forwarded Dec 17 shows USD 10,000,000 from Edmond de Rothschild (Suisse) SA to Southern Trust, value date Dec 17, 2015, remittance 'AGREEMENT 05.10.15', and the Deutsche chart independently lists the same Dec 17, 2015 $10M payment into Southern Trust. The Ariane leg is not documented as paid: on Dec 17 Indyke asks Epstein 'Shall I ask about Ariane's wire?' — the wire was expected/pending, and no receipt, confirmation, or linked chart row for the $15M was found in the read set. The chart's Dec 21, 2015 row — Benjamin Edmond de Rothschild to STC $14,999,980 — is $20 short of the Ariane invoice, names a different sender, and is dated six days after the invoice; no document links it to the Ariane invoice, so invoice/payment identity is NOT asserted. The underlying Oct 5 and Nov 3, 2015 agreements are cited in the invoices but were not in the read set, and the purpose of the invoiced amounts is not stated beyond 'Amount due pursuant to Agreement'.
+Endpoint / dated stopping point: Dec 17, 2015 (SWIFT value date + Indyke inquiry) — a dated stopping point, not a closure. The Dec 21 chart row is a dated cross-reference, not an endpoint of this chain.
+Tier: probable, not confirmed — a dated, story-shaped chain, but thin: three core documents plus chart rows; the Suisse leg has two source families (SWIFT copy + DB chart), the Ariane leg is invoice + pending inquiry only, the underlying agreements are not in evidence, and the Dec 21 near-match is unlinked. No wrongdoing is alleged by these documents; the invoices and wire are recorded as they appear. Business/association record, not an allegation.
+Links: P34 (same entity, Southern Trust; chart [EFTA00080250](https://grokarchivehub.com/search?q=EFTA00080250) shared; P34 holds the Black-originator to STC series); P45 ([EFTA01108434](https://grokarchivehub.com/search?q=EFTA01108434) billing leg sits in the Black advisory orbit; P52 itself has no Black advisory content)
+Verification (v3.6, WS-A): document-level verified — all anchors read in full and per-ID verified against corpus.db (all DS9).
+[Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
+
+P53 BBJ YG006 purchase: Epstein's $25.25M Boeing Business Jet negotiation, Sep 2014 – Jun 2015 Probable Verification: V-WS-B; v3.6 WS-B: document-level verified
+**Current dated stopping point:** 2015-06-10. Historical paragraphs below retain the dates of their original survey.
+
+Span: Sep 3, 2014 – Jun 10, 2015.
+Anchors: DS9: [EFTA00585249](https://grokarchivehub.com/search?q=EFTA00585249), DS9: [EFTA00858323](https://grokarchivehub.com/search?q=EFTA00858323), DS9: [EFTA01000254](https://grokarchivehub.com/search?q=EFTA01000254), DS9: [EFTA01000255](https://grokarchivehub.com/search?q=EFTA01000255), DS9: [EFTA01000257](https://grokarchivehub.com/search?q=EFTA01000257), DS9: [EFTA01000259](https://grokarchivehub.com/search?q=EFTA01000259), DS9: [EFTA01001265](https://grokarchivehub.com/search?q=EFTA01001265), DS9: [EFTA01001540](https://grokarchivehub.com/search?q=EFTA01001540), DS9: [EFTA01002721](https://grokarchivehub.com/search?q=EFTA01002721), DS9: [EFTA01002750](https://grokarchivehub.com/search?q=EFTA01002750), DS9: [EFTA01002755](https://grokarchivehub.com/search?q=EFTA01002755), DS9: [EFTA01002767](https://grokarchivehub.com/search?q=EFTA01002767), DS9: [EFTA01003300](https://grokarchivehub.com/search?q=EFTA01003300), DS9: [EFTA01003359](https://grokarchivehub.com/search?q=EFTA01003359), DS9: [EFTA01119348](https://grokarchivehub.com/search?q=EFTA01119348), DS10: [EFTA01732387](https://grokarchivehub.com/search?q=EFTA01732387), DS10: [EFTA01750205](https://grokarchivehub.com/search?q=EFTA01750205), DS10: [EFTA01790331](https://grokarchivehub.com/search?q=EFTA01790331), DS10: [EFTA01790385](https://grokarchivehub.com/search?q=EFTA01790385), DS11: [EFTA02358216](https://grokarchivehub.com/search?q=EFTA02358216), DS11: [EFTA02365413](https://grokarchivehub.com/search?q=EFTA02365413), DS11: [EFTA02507279](https://grokarchivehub.com/search?q=EFTA02507279), DS11: [EFTA02508324](https://grokarchivehub.com/search?q=EFTA02508324)
+Chain: Span: Sep 3, 2014 – Jun 10, 2015. Anchors: [EFTA02507279](https://grokarchivehub.com/search?q=EFTA02507279) (DS11, Sep 3, 2014 — Freestream/Alireza pitches BBJ Serial Number 29273-YG006: lowest-time BBJ for sale, 3,743:34 hrs / 917 cycles, nine-tank, 6,000+ nm range); [EFTA02365413](https://grokarchivehub.com/search?q=EFTA02365413) (DS11, Oct 8–9, 2014 — Epstein offers $25M with a lien on the 727; owner will take $25M now plus $3M if the 727 is unsold in 6 months); [EFTA01000254](https://grokarchivehub.com/search?q=EFTA01000254)/55/57/59 (DS9, Nov 13, 2014 — LOI and updated specification; Epstein: 'inserting 25 million, and 1 million to rectify'); [EFTA01001265](https://grokarchivehub.com/search?q=EFTA01001265) (DS9, Nov 14, 2014 — draft SPA conforming to the LOI); [EFTA01001540](https://grokarchivehub.com/search?q=EFTA01001540) (DS9, Nov 24, 2014 — $25,250,000 agreed, $25M net to seller plus $250k commission, 'as long as it is closed in December'); [EFTA01002721](https://grokarchivehub.com/search?q=EFTA01002721)/50/55/67 and [EFTA01003300](https://grokarchivehub.com/search?q=EFTA01003300)/59 (DS9, Dec 9–18, 2014 — Jet Aviation modification project: theatre/office/bedroom floorplans, EASA 9G vs FAA certification, N-number question; Epstein directs details personally; ROM pricing pending); [EFTA01119348](https://grokarchivehub.com/search?q=EFTA01119348) (DS9, Jan 29, 2015 SPA draft — Picton II Ltd as Seller, Plan D, LLC as Buyer, One Boeing Business Jet B737-72U, MSN 29273, VP-BBJ) and [EFTA00585249](https://grokarchivehub.com/search?q=EFTA00585249) (DS9, undated SPA draft, same parties/aircraft); [EFTA02358216](https://grokarchivehub.com/search?q=EFTA02358216) and [EFTA02508324](https://grokarchivehub.com/search?q=EFTA02508324) (DS11, Mar 6, 2015 — Alireza offers the AVJET aircraft (30751/YG062) at $29M as an alternative, 'it has your floorplan'; Epstein counters $20M; no agreement); [EFTA01790331](https://grokarchivehub.com/search?q=EFTA01790331)/85 (DS10, Mar 27, 2015 — pre-purchase inspection planning; DAR to convert to US registry); [EFTA01732387](https://grokarchivehub.com/search?q=EFTA01732387) (DS10, Apr 3, 2015 — 18-passenger, 16G seat detail); [EFTA00858323](https://grokarchivehub.com/search?q=EFTA00858323) (DS9, Apr 20–28, 2015 — SPA V7; seller's counsel: sign without further delay or seller terminates; Epstein defers); [EFTA01750205](https://grokarchivehub.com/search?q=EFTA01750205) (DS10, Jun 3–10, 2015 — Alireza pressing for status; DAR authorisation and retainer pending).
+Endpoint / dated stopping point: Jun 10, 2015 ([EFTA01750205](https://grokarchivehub.com/search?q=EFTA01750205) — Alireza pressing for status; DAR authorisation and retainer pending). Whether the purchase closed, any payment was made, or the SPA was ever signed is NOT established in the material read — the December close date is a deadline, not an event.
+Tier: probable, not confirmed — aircraft identity established (one Boeing Business Jet B737-72U, MSN 29273, VP-BBJ; seller Picton II Ltd, buyer Plan D, LLC, broker Freestream/Alireza Ittihadieh); whether the purchase closed, any payment was made, or the SPA was ever signed is NOT established in the material read — the December close is a deadline, not an event. Distinct from "30751" (S/N 30751, N737L, 1999 BBJ, AVJET listing, $34M ask / $27M draft LOI, [EFTA01003217](https://grokarchivehub.com/search?q=EFTA01003217)); "YG062" is Freestream's code for 30751.
+Links: P15 (Air Ghislaine / aircraft acquisition — adjacent, NOT an extension); Story 26 (Hyperion S-76C++ buyback — adjacent aircraft-acquisition material). Cross-link: F-WS5-3 ('30751' $27M LOI) — the Mar 6, 2015 Alireza offer converges the two threads at negotiation level only; 30751 (S/N 30751, N737L, AVJET listing) is a DIFFERENT aircraft from YG006 (MSN 29273, VP-BBJ, Picton II Ltd). F-WS5-3 is NOT promoted by this workstream.
+Verification (v3.6, WS-B): document-level verified — all anchors per-ID verified against corpus.db (DS9 ×13, DS10 ×5, DS11 ×5); [EFTA01119348](https://grokarchivehub.com/search?q=EFTA01119348) and [EFTA00585249](https://grokarchivehub.com/search?q=EFTA00585249) read at head depth only (27 pp. each).
+[Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
+
+P54 Biosys fund raise — Epstein's conditional $10M LP commitment, Jun–Nov 2014 Probable Verification: V-WS-B; v3.6 WS-B: document-level verified
+**Current dated stopping point:** 2014-11-16. Historical paragraphs below retain the dates of their original survey.
+
+Span: Jun 11 – Nov 16, 2014.
+Anchors: DS9: [EFTA00617557](https://grokarchivehub.com/search?q=EFTA00617557), DS9: [EFTA00617635](https://grokarchivehub.com/search?q=EFTA00617635), DS9: [EFTA00640900](https://grokarchivehub.com/search?q=EFTA00640900), DS9: [EFTA00689381](https://grokarchivehub.com/search?q=EFTA00689381), DS9: [EFTA00705569](https://grokarchivehub.com/search?q=EFTA00705569), DS9: [EFTA00721157](https://grokarchivehub.com/search?q=EFTA00721157), DS9: [EFTA01000253](https://grokarchivehub.com/search?q=EFTA01000253), DS9: [EFTA01000669](https://grokarchivehub.com/search?q=EFTA01000669), DS9: [EFTA01000698](https://grokarchivehub.com/search?q=EFTA01000698), DS9: [EFTA01000704](https://grokarchivehub.com/search?q=EFTA01000704), DS9: [EFTA01000764](https://grokarchivehub.com/search?q=EFTA01000764)
+Chain: Span: Jun 11, 2014 – Nov 16, 2014. Anchors: [EFTA00640900](https://grokarchivehub.com/search?q=EFTA00640900) and [EFTA00721157](https://grokarchivehub.com/search?q=EFTA00721157) (DS9, Jun 11, 2014 — Nikolic to Epstein, fundraising distress over the fund structure: 'I am afraid that the LLC structure will get in 20M from Bill, 10 M from you, and possibly 5M from Nicolas'; Veronica, Khosla, Lehmann/Bonderman in the mix; Epstein asks 'how much will veronica committ.? david schwarz commit.?'); [EFTA00617635](https://grokarchivehub.com/search?q=EFTA00617635) (DS9, PPM draft dated 9/17/14 — Biosys Capital Partners, LP, a venture capital fund for growth-stage healthcare/life-sciences companies; principals Boris Nikolic, Hayes Nuss, David Schwarz, Peter Corsell; the PPM states it expects Bill Gates to be a significant investor through associated entities) and [EFTA00617557](https://grokarchivehub.com/search?q=EFTA00617557) (DS9, LPA draft, undated 2014 — Investment Committee Nikolic, Nuss, Schwarz, Corsell; Nikolic/Nuss key-man provisions); [EFTA01000669](https://grokarchivehub.com/search?q=EFTA01000669) (DS9, Nov 12, 2014 — Epstein: 'I have committed 10 million dollars towards your fund on the pre-condition that your other partners raise a minimum of 70 million dollars'); [EFTA01000253](https://grokarchivehub.com/search?q=EFTA01000253) (DS9, Nov 13, 2014 — Epstein: 'for months each time i told you that yuri was not serious… if david cant get 70 million, as it is a commitemnt fund, something wrong'); [EFTA00689381](https://grokarchivehub.com/search?q=EFTA00689381) (DS9, Nov 14, 2014 — Nikolic: 'Jeffrey's commitment is pending on my partners David, Hayes and Peter raising 70M'); [EFTA01000698](https://grokarchivehub.com/search?q=EFTA01000698)/704 and [EFTA00705569](https://grokarchivehub.com/search?q=EFTA00705569) (DS9, Nov 14–16, 2014 — Epstein pushes to talk to David Schwarz alone about fundraising); [EFTA01000764](https://grokarchivehub.com/search?q=EFTA01000764) (DS9, Nov 16, 2014 — Epstein: 'consistent… for over a year since the begiing of yuri issue').
+Endpoint / dated stopping point: Nov 16, 2014 ([EFTA01000764](https://grokarchivehub.com/search?q=EFTA01000764) — Epstein: "consistent… for over a year since the begiing of yuri issue"). Whether the $70M was raised and whether Epstein's $10M was ever paid is NOT established in the material read — the $10M is a conditional commitment, not a payment.
+Tier: probable, not confirmed — fund identified (Biosys Capital Partners, LP; PPM draft Sep 17, 2014, [EFTA00617635](https://grokarchivehub.com/search?q=EFTA00617635); LPA draft [EFTA00617557](https://grokarchivehub.com/search?q=EFTA00617557); principals Nikolic, Hayes Nuss, David Schwarz, Peter Corsell); the $10M is a conditional commitment (precondition: partners raise a minimum of $70M), not a payment; no raise total or wire is documented. "Yuri" appears first-name-only and is NOT expanded to Yuri Milner. Distinct from P33 (Nikolic separation, different subject, participants, and period). PPM/LPA are unexecuted drafts.
+Links: P33 (Boris Nikolic separation process, Dec 2012–Jul 2013 — adjacent, DISTINCT thread, NOT an extension: different subject, participants, and period; see report §2.5).
+Verification (v3.6, WS-B): document-level verified — all anchors per-ID verified against corpus.db (all DS9); PPM (74 pp.) and LPA (78 pp.) read at targeted depth only, not cover-to-cover.
 [Back to story index ↑](https://grokarchivehub.com/atlas/#story-index)
 
 TRAILS STILL TO CONNECT
 
-## Fragments 139
+## Fragments 150
 
 - DS1–8: Radar Online FOIA pursuit — PROMOTED in v2.0 to confirmed
 Story 28 (see above); DS3 photo-catalog travel captions only
@@ -4093,7 +4621,7 @@ v3.2 (WS5) — single transaction line: EFTA01495243 / EFTA01495253 / EFTA014952
 - F-WS3-2. Michelle's Transportation Company, 2016–2019. 4 credits in
 EFTA01273118: Jun 3, 2016 $10,000; Sep 5, 2018 $20,000; Feb 22, 2019
 $200,000; Mar 29, 2019 $100,000. Dated stopping point Mar 29, 2019.
-v3.2 (WS1) — statement leg: EFTA01270749, 63 statements Feb 2012 – May 2019 (account 7191415759) — the statement leg runs a full seven years, back to Feb 2012; the advice leg (Jun 2016 – Mar 2019) sits inside it.
+v3.2 (WS1) — statement leg: EFTA01270749, 63 statements Feb 2012 – May 2019 (account [account identifier withheld]) — the statement leg runs a full seven years, back to Feb 2012; the advice leg (Jun 2016 – Mar 2019) sits inside it.
 v3.3 (WS1) — opening file: EFTA01269192 (DS10, 6 pp.): FirstBank Virgin Islands signature card + Client Due Diligence — Michelle's Transportation Company, Ltd.; authorized signer Jeffrey Epstein; established 2001; St. Thomas. The 2007 opening file (date reads 3/19/07 in OCR — report with care).
 
 - F-WS3-3. Nautilus, Inc, 2018–2019. 3 credits: Jan 10, 2018 $50,000
@@ -4169,7 +4697,7 @@ Links: P8 (Maxwell bank paper); P15 (Air Ghislaine / S-76 acquisition).
 (instructions only — none shown completed). Three separate instructions
 to the same Moscow bank, kept distinct: (a) May 19, 2014, $2,500 from
 Epstein's Deutsche account 35266976 via Standard Chartered Bank New York
-to ZAO Raiffeisenbank, Moscow, account 40817840101000056202
+to ZAO Raiffeisenbank, Moscow, account [account identifier withheld]
 (EFTA01405343); (b) Mar 27, 2015, 13,700,000 Rubles [spelled "Rubbles" in
 the memo] via Standard Chartered to AO Raiffeisenbank, Moscow
 (EFTA01357221; duplicate filing EFTA01400208); (c) Mar 30, 2015, $237,270
@@ -4203,6 +4731,7 @@ and must not be cited as dated findings without verification.
 v3.2 (WS5) — EFTA01578903 (DS10, Sep 23, 2009 memo, faxed Oct 23, 2009). "From; Dante Indike" instructing JPMorgan's Janet to wire $28,000 to Citibank, account name KIRKLAND & ELLIS LLP, ref Jeffrey Epstein. Read as Darren K. Indyke on context (Epstein letterhead, JPMorgan wire memo, Kirkland & Ellis payee; "Dante" for "Darren" + "Indike" for "Indyke" in heavily degraded fax OCR — "Date: 9ettka 23; 209"). Identification probable, not certain — caveat carried. Fits F-WS3-15's 7 lines (incl. the Oct 16, 2009 cluster EFTA01503754) with a Sep 23, 2009 item.
 v3.3 (WS1) — Indyke wire-instruction leg: EFTA01588996 (see P8) — the Jul 27, 2010 $250,000 wire to Darren K Indyke PLLC fits the Indyke wire-instruction inventory (shared anchor with P8).
 v3.5 (WS3) note: "Indike" as an OCR variant of "Indyke" is now supported by parallel instances — "Darren K Indike" ([EFTA00224262](https://grokarchivehub.com/archive/EFTA00224262)) and "Cc: Darren indike" (EFTA00654182, EFTA00866565, EFTA01183077). "Dante" as a person's name is not supported: 0 person-like instances in a 40-doc sample of the 681 "Dante" docs ("Dear Dante" scores 0 corpus-wide); the reading stays probable, not certain.
+v3.6 (WS-D) correction 11 — re-verified Nov 10, 2026: all four DS9 "Indike" instances verified per-ID in DS9 ("Darren K Indike", [EFTA00224262](https://grokarchivehub.com/archive/EFTA00224262); "Cc: Darren indike", EFTA00654182, EFTA00866565, EFTA01183077); "Dante Indike" as a phrase = 0 in DS9; "Dante" 40-doc sample: 0 person-like instances. "Indike" = Indyke OCR variant strengthened; "Dante" as a person remains unsupported.
 
 ### New fragments in v3.2 (— 22)
 
@@ -4210,11 +4739,11 @@ v3.5 (WS3) note: "Indike" as an OCR variant of "Indyke" is now supported by para
 
 - F-32-2. Island Grounds Inc, FirstBank statements, Feb 2012–Jul 2014 (WS1). EFTA01269763, 28 statements. New entity name in the atlas (no document in this pass states what Island Grounds Inc is). Dated spine, no endpoint.
 
-- F-32-3. IGO Company LLC, FirstBank statements, Feb 2012–Dec 2019 (WS1). EFTA01269867, 56 statements, account 7171030625. New entity name. Dated spine, no endpoint.
+- F-32-3. IGO Company LLC, FirstBank statements, Feb 2012–Dec 2019 (WS1). EFTA01269867, 56 statements, account [account identifier withheld]. New entity name. Dated spine, no endpoint.
 
 - F-32-4. FSF LLC, FirstBank statements, Feb 2012–Dec 2019 (WS1). EFTA01272300, 58 statements. New entity name. Dated spine, no endpoint.
 
-- F-32-5. Freedom Air Petroleum, LLC, FirstBank statements, Feb 2012–Dec 2019 (WS1). EFTA01272870, 59 statements, account 7322001753. Opening checklist EFTA01269637 (date unreadable). New entity name. Dated spine, no endpoint.
+- F-32-5. Freedom Air Petroleum, LLC, FirstBank statements, Feb 2012–Dec 2019 (WS1). EFTA01272870, 59 statements, account [account identifier withheld]. Opening checklist EFTA01269637 (date unreadable). New entity name. Dated spine, no endpoint.
 v3.3 (WS1) — Freedom Air International, distinct entity: EFTA01579720 (DS10, 1 p., Mar 5, 2012): Beller → Janet (JPMorgan) — wire $15,000 from Freedom Air International Inc. to First Bank of Puerto Rico, Ben: Bohike International Airways Inc., Ref: PBI STT Charter. Freedom Air International Inc. is a distinct entity from Freedom Air Petroleum, LLC (the subject of this fragment); the $15,000 wire is a Freedom Air International item, recorded here as a distinguishing note, not as a Freedom Air Petroleum leg.
 
 - F-32-6. Great St Jim, LLC, FirstBank statements, Sep 2016–Jan 2020 (WS1). EFTA01271286, 8 statements. Opening Sep 2016 (beginning $0.00; Sep 8 $2,000 deposit). Name as recorded ("GREAT ST JIM" — 38 occurrences in the bundle; one "GREAT ST JILL" OCR variant). New entity name. Dated spine, no endpoint. Cross-ref: F-DS8-1 (the Great St. James deed).
@@ -4276,45 +4805,67 @@ v3.3 (WS1) — Feb 2019 wind-down snapshot: EFTA01030235 (DS9, 2 pp., Feb 18–1
 v3.4 (WS3) extension — the DOJ-side check is done. The May 28–31 dates were provisional visa-application dates, not a fixed trip: Apr 27, 2018, 'Jeffrey did not give me dates to reapply for his Russian visa... lets just use May 28-31 for now' (EFTA02242293). The ticket and hotel were booked Apr 27 as visa scaffolding — fully refundable Aeroflot 103/102, JFK→Moscow Sheremetyevo May 28, return May 31, $8,099.91, ticket issued (E-Ticket SU 55571405, GZBECQ) (EFTA02242629; EFTA02243103 books the Four Seasons for May 28–31) — 'WE need so he can apply for a Russian visa' (EFTA02242629). The trip was re-dated twice before the first window opened: May 8, 2018, 'we need to change the FULLY REFUNDABLE air and hotel stay to June 25-29!! The visa process paperwork, etc is tedious... we need more time' (EFTA02246080); the same day the rebooking is offered as Jul 24–28, with Aug 6–10 suggested instead — 'it doesn't matter really. I just need to be able to cancel it all. Jeffrey [always?] "just in case".... we get him the 3 year business visa' (EFTA02246231). Epstein was in Paris Jun 25–28, 2018 (June calendar, EFTA00474365) and in PB/LSJ/NY Jul 1–11 (July calendar, EFTA00285541); his May 2018 calendar leaves May 28–31 blank (EFTA00285565). Companions, not Epstein, traveled to Moscow in Jun–Jul 2018 (Jun 29 hotel alert, EFTA02249953; StandArt Hotel, Moscow, Jul 1–5, EFTA00285541; Jun 30 SU103 reservation for an unnamed traveler, EFTA00287453). 'Alliance of Pension Funds' occurs nowhere else in the corpus; 'Belyakov AND May/June 2018' scores 0. v3.5 (WS3) extension — the visa question is RESOLVED: the 3-year visa WAS issued, Jun 25, 2018. The May 8 rebooking was issued, not just proposed: the reissued itinerary (EFTA00473951, Groff→Darren Indyke, May 9, 2018) carries a new ticket (SU 5557143973086-08MAY), Aeroflot SU 103 Jul 23, 2018 JFK→Moscow, Four Seasons Moscow Jul 24–28 (confirmation 64571SB016679), return SU 102 Jul 28 — Indyke: 'Make sure [name] knows and it\'s on the revised invite letter'; Groff: 'yes! I did yesterday and this morning reconfirmed the dates...' (the full Apr 27 e-ticket number is SU 5557140582096-27APR, EFTA00473040; v3.4's 'SU 55571405' is the truncated form). Jun 26, 2018, Groff asks for Epstein's 'Passport and Russian Visa' to be sent back overnight by FedEx (EFTA02248257; EFTA02248477; EFTA00476933). Mar 8, 2019, Groff states it verbatim (EFTA02278512): 'he actually had a Russian Visa in his last passport that is still valid... The Russian Visa is not due to expire until June 24, 2021. It was issued on June 25, 2018.' (EFTA00491806, Mar 11, 2019, 'Valid Russian Visa for Jeffrey Epstein', attachment JeffreyRussianVisaExp6-24-21.pdf.) **The Jul 23–28, 2018 trip did NOT happen:** Epstein was in NY on Jul 23, 2018 ('12:30pm LUNCH w/Leon Black', Plaskett reception, EFTA00285541) and in Paris Jul 21–28; the August 2018 calendar (EFTA00285503) has no Moscow entry — Epstein in PB/LSJ/NY all August. **Whether Epstein traveled to Moscow at any point in summer 2018 is still NOT established** — no Moscow travel by Epstein is documented in the searches stated; the booked windows are now affirmatively closed. Mar–Apr 2019 postscript: after a new passport (sex-offender endorsement; 4-year passport revoked — Groff's words), Groff asked G3 Visas whether the still-valid visa could be transferred to the new passport or a brand-new visa sought instead (EFTA02279575; EFTA02280075, Apr 3, 2019); whether the transfer or a new visa was ever completed is NOT established in the items read. The fragment's dated stopping point moves to Jun 25, 2018 (the visa issuance). Links: Story 31 (Belyakov, post-SPIEF contact).
 
 - F-33-10. Epstein forwards Belyakov's SPIEF 2015 architecture to an unidentified "B," Jan 27, 2015 (WS3). EFTA00645167 (DS9, Jan 27, 2015): Belyakov→Epstein, 11:41 — "I enclosed the SPIEF 2015 architecture. I hope you'll be able to participate as discussed earlier. I think you'll be interested in sessions on finance from global or Russian track… We're also working on the session on cinema. If Woody Allen confirms, we'll be able to arrange it according to his wishes." Epstein forwards it at 12:45 to "B" with "research the people and presnt a report, you will be attending"; "B" replies at 14:26 — "The participants are not included in the document presented by Sergey. The forum website only provides 1) the list of the 2014 participants, 2) The Organizing Committee – interesting people, will present the report on them; Can we ask Sergey to send us the 2015 list?" Epstein, 18:28 (EFTA00865553): "yes" (this filing's To field reads "a" in the text layer — truncated, not an identification). EFTA02511925 (DS11) is a copy of the same thread ("Thank you!!"); EFTA01191262 is a fifth filing — Belyakov's Jan 27, 2015 original as a standalone message (EFTA01191263 is the programme document itself). "B" is unidentified in rows read. Barak is the leading candidate (Epstein telling "B" "you will be attending" SPIEF 2015, and Barak did attend), but the identification is NOT established: the addressee is literally "B" in the header, and no copy of this thread exists in the Barak mailbox (no Jan–Mar 2015 SPIEF rows in any of the five Barak DBs; the only earlier SPIEF rows are the three Jun–Jul 2013 Ushakov filings; "research the people" scores 0 hits in all five). The mailbox's SPIEF planning starts in Apr 2015, which cuts against a Jan 2015 Barak thread — with the qualification that Epstein↔Barak contact in Jan 2015 is documented (Jan 15 missed meeting, Jan 22 valuation business, Jan 29 message — main 15423, main 15518, main 14842), just not about SPIEF. Two further context notes (v3.5): Belyakov had already sent Epstein the architecture on Dec 11, 2014 ("FYI", EFTA02597082), so the Jan 27 forward to "B" was a re-send; and Epstein circulated SPIEF material to more than one person — on Apr 22, 2015 he offered the Woody Allen cinema session to Soon Yi Previn ("last chance if woody wanted to addresss the heads of major world biznesses on the future of film?", EFTA02718729; Soon Yi: "What an offer. I will ask him." then "It's not possible", EFTA02398083, EFTA02394749), and sent the program to Spinella the same day (EFTA00858767). Candidates named, identification not confirmed (Standard §6). Single thread, no follow-through in rows read — fragment, not a Story 31 extension.
+v3.6 (WS-C) amendment to F-33-10 — Epstein's own SPIEF 2015 invitation (NOT a Story 31 extension; the invitation as a distinct subject has no fresh anchors). EFTA01191262 (Belyakov→Epstein, Jan 27, 2015: 'I enclosed the SPIEF 2015 architecture. I hope you'll be able to participate as discussed earlier.') and EFTA01191263 (the programme synopsis/architecture) are already cited in this fragment and are NOT new. EFTA01207468 (Epstein→Spinella, Apr 22, 2015, with the SPIEF 2015 program attached: 'it seems members refreshed . ? his head guy coming today to pitch') is a byte-identical duplicate filing of already-cited EFTA00858767 — same message, different Bates stamp — and adds nothing. The one genuinely new ID is EFTA01207469 (DS9, 24 pp.): the full SPIEF 2015 program document (sessions, moderators, panellists) as circulated by Epstein to Spinella on Apr 22, 2015 — citable here as the attachment to the already-recorded send, not as a new fact about the invitation. Correction: EFTA01191262's sender is Sergey Belyakov (signature line in the filing itself; confirmed by the embedded copy in EFTA00645167) — WS4's 'sender not identifiable from OCR' is withdrawn; only the From-line OCR is garbled. Epstein's attendance at SPIEF 2015 is NOT established in any document read. Story 31 stays Barak's attendance; this fragment stays the invitation thread.
 
-- F-33-11. Gratitude America Ltd Deutsche resolutions cluster (WS4; v3.4 WS5 page-image verified). Eleven filings of ONE filled page — the Feb 11, 2015 Gratitude America Ltd resolution — document-level verified from the page images: EFTA01345300, EFTA01345333, EFTA01362350, EFTA01362374, EFTA01387085, EFTA01365889 (lightly redacted variant: 'I, Erika Kellerhals, Secretary of Gratitude America, Ltd.', US Virgin Islands, meeting 'February 11, 2015'; officers Jeffrey Epstein — President, Erika Kellerhals — Secretary, Darren Indyke — Treasurer; signatories 'President or Treasurer'); EFTA01345177, EFTA01345192, EFTA01345267, EFTA01345318 (the same page under heavier redaction: certifier name barred; officer Name line barred after 'Jeffrey Epstein' — the three titles 'President, Secretary, Treasurer' underneath belong to the three officers respectively, as the lightly redacted variant shows, and must not be read as Epstein holding all three offices); EFTA01294988 (the same page, lightly redacted variant, 2 pp. — p.2, stamped EFTA01294989, is the signature page: 'this 11 day of February 2015', signature flourish on the '(Secretary)' line, 'Confirmed:' line blank). Pixel evidence that all eleven are the one page: the 'February 11, 2015' line, the 'President or Treasurer' line, and the officer Title line are pixel-identical across all ten one-page filings, and the NAOSOD stamp is pixel-identical on nine (EFTA01365889's stamp is barred; EFTA01294988 is a separate scan of the same page). The Sawant email EFTA01362348 (Aug 23, 2018) stating Gratitude's resolution is 'dtd 02/11/2015' with Erika Kellerhals as Secretary is now confirmed from the page itself. The former F-33-12 (EFTA01345177) and F-33-13 (EFTA01294988) are folded in here — both resolved as Gratitude, Feb 11, 2015; the Southern Financial / Zorro Management candidates for EFTA01345177 are not supported by the page image, and EFTA01294988 is not an 'older layout' — it is the same two-column form as the group. Plus the two already-identified Gratitude resolutions on the newer single-column form (EFTA01384433, EFTA01388761 — page-image verified: entity Gratitude America Ltd, US Virgin Islands, in both; meeting dates genuinely BLANK on the page, not OCR-garbled — EFTA01384433's certifier name is also blank; EFTA01388761's certifier is Erika Kellerhals, signatories 'President and Treasurer') and the Apr 25, 2012 account-opening applications (EFTA01431833, EFTA01438329, 21–22 pp. Business Deposit Account Opening Applications for Gratitude America Ltd, EIN 66-0789697, each containing a Gratitude resolution) and packet doc EFTA01456746 (Gratitude packet: online account application + signature card naming Gratitude). All are Deutsche Bank Trust Company Americas 'Not-For-Profit Organization Resolution — Deposit Account' forms, authorizing designated officers to sign, endorse, and draw drafts, checks, and wire/electronic payment orders without limit as to amount. Account-opening paperwork for Gratitude America Ltd at Deutsche Bank; no allegation attached — paperwork only. Count flag RESOLVED (v3.4 WS1 + WS5): **20** Deutsche DBTCA "Not-For-Profit Organization Resolution — Deposit Account" forms in DS10. Composition: 11 filings of the one Feb 11, 2015 Gratitude page (above) + 2 identified Gratitude on the newer form (EFTA01384433, EFTA01388761) + 2 JEVIF (EFTA01449076, EFTA01449121) + 2 account-opening applications with Gratitude resolutions (EFTA01431833, EFTA01438329) + 1 Gratitude packet doc (EFTA01456746) + 2 blank templates (EFTA01464217, EFTA01472325). The FTS phrase count is 18 because both blank templates have OCR-garbled titles ("Not -For -Prof itOrganizationResolution-DepositAccoun t" / "Not - For - ProfitOrganizationResolution") whose tokens don't survive as a phrase — the discrepancy is explained, not smoothed. The second blank template, EFTA01472325 (DS10, 14 pp.), was found in the W-9-form population; it holds ONE form (the second "Secretary of" at char 14057 is inside a different assumed-name certificate). Cross-checks: "RESOLVED that Deutsche Bank Trust Company Americas" → exactly the known 20, zero outsiders; "true copy of resolutions adopted by the Board" → 15, all in the 20; "designated a depositary of this organization" → 6, all in the 20.
+- F-33-11. Gratitude America Ltd Deutsche resolutions cluster (WS4; v3.4 WS5 page-image verified). Eleven filings of ONE filled page — the Feb 11, 2015 Gratitude America Ltd resolution — document-level verified from the page images: EFTA01345300, EFTA01345333, EFTA01362350, EFTA01362374, EFTA01387085, EFTA01365889 (lightly redacted variant: 'I, Erika Kellerhals, Secretary of Gratitude America, Ltd.', US Virgin Islands, meeting 'February 11, 2015'; officers Jeffrey Epstein — President, Erika Kellerhals — Secretary, Darren Indyke — Treasurer; signatories 'President or Treasurer'); EFTA01345177, EFTA01345192, EFTA01345267, EFTA01345318 (the same page under heavier redaction: certifier name barred; officer Name line barred after 'Jeffrey Epstein' — the three titles 'President, Secretary, Treasurer' underneath belong to the three officers respectively, as the lightly redacted variant shows, and must not be read as Epstein holding all three offices); EFTA01294988 (the same page, lightly redacted variant, 2 pp. — p.2, stamped EFTA01294989, is the signature page: 'this 11 day of February 2015', signature flourish on the '(Secretary)' line, 'Confirmed:' line blank). Pixel evidence that all eleven are the one page: the 'February 11, 2015' line, the 'President or Treasurer' line, and the officer Title line are pixel-identical across all ten one-page filings, and the NAOSOD stamp is pixel-identical on nine (EFTA01365889's stamp is barred; EFTA01294988 is a separate scan of the same page). The Sawant email EFTA01362348 (Aug 23, 2018) stating Gratitude's resolution is 'dtd 02/11/2015' with Erika Kellerhals as Secretary is now confirmed from the page itself. The former F-33-12 (EFTA01345177) and F-33-13 (EFTA01294988) are folded in here — both resolved as Gratitude, Feb 11, 2015; the Southern Financial / Zorro Management candidates for EFTA01345177 are not supported by the page image, and EFTA01294988 is not an 'older layout' — it is the same two-column form as the group. Plus the two already-identified Gratitude resolutions on the newer single-column form (EFTA01384433, EFTA01388761 — page-image verified: entity Gratitude America Ltd, US Virgin Islands, in both; meeting dates genuinely BLANK on the page, not OCR-garbled — EFTA01384433's certifier name is also blank; EFTA01388761's certifier is Erika Kellerhals, signatories 'President and Treasurer') and the Apr 25, 2012 account-opening applications (EFTA01431833, EFTA01438329, 21–22 pp. Business Deposit Account Opening Applications for Gratitude America Ltd, EIN 66-0789697, each containing a Gratitude resolution) and packet doc EFTA01456746 (Gratitude packet: online account application + signature card naming Gratitude). All are Deutsche Bank Trust Company Americas 'Not-For-Profit Organization Resolution — Deposit Account' forms, authorizing designated officers to sign, endorse, and draw drafts, checks, and wire/electronic payment orders without limit as to amount. Account-opening paperwork for Gratitude America Ltd at Deutsche Bank; no allegation attached — paperwork only. Count flag RESOLVED (v3.4 WS1 + WS5): **20** Deutsche DBTCA "Not-For-Profit Organization Resolution — Deposit Account" forms in DS10. Composition: 11 filings of the one Feb 11, 2015 Gratitude page (above) + 2 identified Gratitude on the newer form (EFTA01384433, EFTA01388761) + 2 JEVIF (EFTA01449076, EFTA01449121) + 2 account-opening applications with Gratitude resolutions (EFTA01431833, EFTA01438329) + 1 Gratitude packet doc (EFTA01456746) + 2 blank templates (EFTA01464217, EFTA01472325). The FTS phrase count is 18 because both blank templates have OCR-garbled titles ("Not -For -Prof itOrganizationResolution-DepositAccoun t" / "Not - For - ProfitOrganizationResolution") whose tokens don't survive as a phrase — the discrepancy is explained, not smoothed. The second blank template, EFTA01472325 (DS10, 14 pp.), was found in the [identity withheld]-form population; it holds ONE form (the second "Secretary of" at char 14057 is inside a different assumed-name certificate). Cross-checks: "RESOLVED that Deutsche Bank Trust Company Americas" → exactly the known 20, zero outsiders; "true copy of resolutions adopted by the Board" → 15, all in the 20; "designated a depositary of this organization" → 6, all in the 20.
 F-33-12 and F-33-13 retired in v3.4 — folded into F-33-11 above (both resolved as Gratitude America Ltd, Feb 11, 2015); numbers retired, not reused.
 
-- F-33-14. FEDWIRE A/C-format LSJ lines (WS4; v3.4 WS1 RESOLVED — mixed). 533 lines / 139 docs (re-extraction over the 1,833-doc population; WS4's 543–552 was a parser-count range), concentrated in the EFTA01526xxx–EFTA01528xxx block (account 739-110438, Feb 2003 onward; e.g. EFTA01526002). Exact-IMAD overlap with the NC set: 28/441 distinct A/C IMADs (29/533 lines); fuzzy (O→0, I/l→1): 30/441 distinct (31/533 lines) — OCR variants do NOT explain the gap. Seqkey (MMDD + last 6): 429 distinct A/C seqkeys, 191 shared with NC; A/C lines matched 211/533, unmatched 322/533. Verdict: ~40% duplicates of NC wires, ~60% additional distinct wires. NOT folded into P40's count (329, NC rule); recorded as a P40 extension stratum (distinct-wire union NC∪A/C 470 seqkeys). No longer an open flag.
+- F-33-14. FEDWIRE A/C-format LSJ lines (WS4; v3.4 WS1 RESOLVED — mixed). 533 lines / 139 docs (re-extraction over the 1,833-doc population; WS4's 543–552 was a parser-count range), concentrated in the EFTA01526xxx–EFTA01528xxx block (account [account identifier withheld], Feb 2003 onward; e.g. EFTA01526002). Exact-IMAD overlap with the NC set: 28/441 distinct A/C IMADs (29/533 lines); fuzzy (O→0, I/l→1): 30/441 distinct (31/533 lines) — OCR variants do NOT explain the gap. Seqkey (MMDD + last 6): 429 distinct A/C seqkeys, 191 shared with NC; A/C lines matched 211/533, unmatched 322/533. Verdict: ~40% duplicates of NC wires, ~60% additional distinct wires. NOT folded into P40's count (329, NC rule); recorded as a P40 extension stratum (distinct-wire union NC∪A/C 470 seqkeys). No longer an open flag.
 
 - F-33-15. FEDWIRE BEN-format LSJ lines (WS4; v3.4 WS1 RESOLVED — distinct wires). 178 lines / 90 docs (re-extraction over the 1,833-doc population; WS4's ~200–260 was a parser-rule range — 231 by the 500-char rule, 200 by the block-delimited rule). 169 with IMAD (163 distinct); fuzzy IMAD overlap with the NC set: 1/162 distinct (1 line); seqkey overlap with NC 1/121, with A/C 0. BEN lines are distinct wires. Exemplars: EFTA01482459 (Feb 23, IMAD 022381OGC01C002797), EFTA01482467 (Feb 23, IMAD 0223B10GCO5C002902). Checked examples (bare "VIA … LSJ, LLC" lines with no NC:/BEN:/A/C: prefix by the tight rule): EFTA01482366, EFTA01482620, EFTA01483148. NOT folded into P40's count (329, NC rule); recorded as a P40 extension stratum. No longer an open flag.
 
-- F-33-16. Apr 15, 2015 payment-mechanics note (Epstein's accounting) (WS4). Inside EFTA02475493 (attached to the Jan 3, 2016 DO NOT SEND draft letter to Leon): "1 did the paul weiss. 10m paid today to gratitude america, a 50 c 3, will make last year complete. 20 million paid today ftc. 10 million july 15 5 million sept 30. 5 million Jan 1 for all of 16. tax savings paid at 37 percent. of net. savings. 50 million credit. net. 150 million free. 600 savings 225 million owed. - 50 credit, 175 owed." Read as Epstein's own accounting of the transaction's tax outcome: $600M savings, $225M tax owed, $50M credit, $175M net owed — with $10M paid that day to Gratitude America (a 501(c)(3)). Cross-item link between the Black advisory arc (P45) and the Gratitude resolutions (F-33-11). It is Epstein's statement, not an independently verified payment.
+-
+F-33-16. Apr 15, 2015 payment-mechanics note (Epstein's accounting) (WS4). Inside EFTA02475493 (attached to the Jan 3, 2016 DO NOT SEND draft letter to Leon): "1 did the paul weiss. 10m paid today to gratitude america, a 50 c 3, will make last year complete. 20 million paid today ftc. 10 million july 15 5 million sept 30. 5 million Jan 1 for all of 16. tax savings paid at 37 percent. of net. savings. 50 million credit. net. 150 million free. 600 savings 225 million owed. - 50 credit, 175 owed." Read as Epstein's own accounting of the transaction's tax outcome: $600M savings, $225M tax owed, $50M credit, $175M net owed — with $10M paid that day to Gratitude America (a 501(c)(3)). Cross-item link between the Black advisory arc (P45) and the Gratitude resolutions (F-33-11). It is Epstein's statement, not an independently verified payment.
 
-### New fragments in v3.4 (— 3; heading added in v3.5.1)
-
-- F-34-1. April 15, 2020 NTOC tip reporting a purported Maxwell sighting in Ontario (WS4). EFTA00153620 (DS9, 3 pp.): FBI National Threat Operations Center Threat Intake Examiner forwards a public tip submitted Apr 15, 2020 via tips.fbi.gov — a member of the public reported a purported sighting of Ghislaine Maxwell with two children in a forested area in Richmond Hill, Ontario, on Apr 13, 2020 — to FBI New York (case XXX-NY-3027571) "for your situational awareness and any action deemed appropriate." EFTA00153623 (DS9, 4 pp.): the same tip re-filed in redacted form, plus FBI New York's same-day reply: "Thank you. We will follow up as appropriate." No follow-up is documented in either document, and the tip's claims are unverified. A tip record only; not a sighting finding. No street address, vehicle plate, IP address, or tipster name is reproduced.
+-
+F-34-1. April 15, 2020 NTOC tip reporting a purported Maxwell sighting in Ontario (WS4). EFTA00153620 (DS9, 3 pp.): FBI National Threat Operations Center Threat Intake Examiner forwards a public tip submitted Apr 15, 2020 via tips.fbi.gov — a member of the public reported a purported sighting of Ghislaine Maxwell with two children in a forested area in Richmond Hill, Ontario, on Apr 13, 2020 — to FBI New York (case XXX-NY-3027571) "for your situational awareness and any action deemed appropriate." EFTA00153623 (DS9, 4 pp.): the same tip re-filed in redacted form, plus FBI New York's same-day reply: "Thank you. We will follow up as appropriate." No follow-up is documented in either document, and the tip's claims are unverified. A tip record only; not a sighting finding. No street address, vehicle plate, IP address, or tipster name is reproduced.
 
 - F-34-2. Barak in Epstein's orbit, May–Jun 2018 — calendar notes (WS3). Three terse entries in Epstein's household calendars (Groff's), all DOJ-side; the Barak mailbox holds zero May 2018 rows in any of the five DBs. May 2, 2018: 'Ehud and Nili return early today' (EFTA00285565; copies EFTA00285569, EFTA00307928). May 7, 2018: 'BREAKFAST w/Ehuu[d]' (same calendar; the time reads '9:00pm' in the text layer, reported as written). Jun 1, 2018: '7:30am Appt w/Ehud at the Waldorf in Boca Raton... Ehud and Nili to return to NY early afternoon' (EFTA00474365). No subject is stated for any meeting; no chain. Endpoint Jun 1, 2018. Links: Story 12.
 
-- F-34-3. Unidentified Epstein contact reports a 3.5-hour meeting with Lavrov in Moscow, Feb 19, 2019 (WS3). 'I'm just back from Moscow. Very good meeting with Lavrov, 3 and half hours.' — iMessage/chat message to Epstein's account, Feb 19, 2019, 19:38 UTC (EFTA00509294; EFTA00783834; EFTA01616421 — three filings of the same export). The speaker is unidentified (sender/participant name blank/redacted in all three filings). The surrounding chat (EFTA01616421) profiles a sitting European official — Pompeo in Bratislava, OSCE work, a parliament, Guaido, the migration compact — not Barak; no Barak link is claimed and no candidate speaker is named. Single item, no chain. Endpoint Feb 19, 2019. Links: P47, Story 12.
+-
+F-34-3. Unidentified Epstein contact reports a 3.5-hour meeting with Lavrov in Moscow, Feb 19, 2019 (WS3). 'I'm just back from Moscow. Very good meeting with Lavrov, 3 and half hours.' — iMessage/chat message to Epstein's account, Feb 19, 2019, 19:38 UTC (EFTA00509294; EFTA00783834; EFTA01616421 — three filings of the same export). The speaker is unidentified (sender/participant name blank/redacted in all three filings). The surrounding chat (EFTA01616421) profiles a sitting European official — Pompeo in Bratislava, OSCE work, a parliament, Guaido, the migration compact — not Barak; no Barak link is claimed and no candidate speaker is named. Single item, no chain. Endpoint Feb 19, 2019. Links: P47, Story 12.
 
-### New fragments in v3.5 (— 5; heading added in v3.5.1)
-
-- F-35-1. Maxwell's undated list offering to arrange appointments, and a related email to Doug Band. EFTA00011433 (1 p., 389 chars, undated, no sender in the text layer): a one-page list in Maxwell's 2001-2002 mailbox run describes four women in sexualized, physically and demographically identifying terms (ages, appearance, ethnicity, and in one case a workplace) and asks whether to "pre set up" appointments, "time and place". Those identifying descriptions are not reproduced here. EFTA00011434: Maxwell to Doug Band (doug.band@gsa.gov) offers to introduce women, using nationality and character sketches as identifiers; those descriptions are not reproduced here. Both sit in the 2001-2002 Maxwell mailbox run (P50). Single documents, no chain or endpoint; arrangement offers, not completed meetings. Links: P50.
+-
+F-35-1. Maxwell's undated list offering to arrange appointments, and a related email to Doug Band. EFTA00011433 (1 p., 389 chars, undated, no sender in the text layer): a one-page list in Maxwell's 2001-2002 mailbox run describes four women in sexualized, physically and demographically identifying terms (ages, appearance, ethnicity, and in one case a workplace) and asks whether to "pre set up" appointments, "time and place". Those identifying descriptions are not reproduced here. EFTA00011434: Maxwell to Doug Band (doug.band@gsa.gov) offers to introduce women, using nationality and character sketches as identifiers; those descriptions are not reproduced here. Both sit in the 2001-2002 Maxwell mailbox run (P50). Single documents, no chain or endpoint; arrangement offers, not completed meetings. Links: P50.
 
 - F-35-2. Maxwell 1996 Palm Beach traffic citation. EFTA00016522: Palm Beach PD citation report, citation date Jan 13, 1996, Saturday, 15:10 — Maxwell, Ghislaine, age 34, UK driver's licence, 1986 Mercedes, unlawful speed, Palm Beach; DOB field blank/redacted in the read. Single-document datapoint placing Maxwell in Palm Beach in January 1996; no chain.
 
 - F-35-3. The 2021 unsealing of Giuffre v. Maxwell civil discovery materials. EFTA00029951: *In re Application to Unseal Civil Discovery Materials*, 2021 WL 1164272 (S.D.N.Y.) — the decision on the application to unseal civil discovery materials; the text notes the U.S. Attorney served a grand jury subpoena on the Law Firm for documents. Single decision; the unsealing's scope and what was released are not traced here. Not P30 (which is the 2008–2009 NPA unseal fight). Links: P3.
 
-- F-35-4. Bank litigation: Jane Doe 1 v. Deutsche Bank; USVI v. JPMorgan Chase, Jan–Apr 2023 Span: Jan 10, 2023–Apr 12, 2023. Anchors: EFTA00161836 (22-cv-10904 Doc 16, filed Jan 10, 2023, DS9, 122 pp.); EFTA00161958 (22-cv-10018 Doc 42, filed Jan 13, 2023, DS9, 163 pp.); EFTA00145666 (22-cv-10904 Doc 119, filed Apr 12, 2023, DS9, 42 pp.). Dated stopping point: Apr 12, 2023 (Second Amended Complaint filed, USVI v. JPMorgan). The Government of the United States Virgin Islands sues JPMorgan Chase Bank, N.A. (First Amended Complaint, Jan 10, 2023, Doc 16, EFTA00161836) for violations of the Trafficking Victims Protection Act, 18 U.S.C. §§ 1591–1595, the Virgin Islands Criminally Influenced and Corrupt Organizations Act, and the Virgin Islands Consumer Fraud and Deceptive Business Practices Act. Jane Doe 1, individually and on behalf of all others similarly situated, sues Deutsche Bank Aktiengesellschaft (First Amended Class Action Complaint, Jan 13, 2023, Doc 42, EFTA00161958): Counts I–XII — knowing beneficiary in a sex-trafficking venture, participating in a sex-trafficking venture, aiding/ab­etting/inducing a sex-trafficking venture, conspiracy, attempt, and obstruction of enforcement, all under the TVPA; violations of RICO and conspiracy to violate RICO; aiding, abetting, and facilitating battery; intentional infliction of emotional distress; negligent failure to exercise reasonable care to prevent physical harm; negligent failure to exercise reasonable care as a banking institution providing non-routine banking services. The USVI suit's Second Amended Complaint, Apr 12, 2023, Doc 119 (EFTA00145666). All counts are the plaintiffs' allegations. Outcomes are not in the documents read. Classification: fragment, not a probable story: the complaints are filed documents forming a connected chain (two suits, same theory, same months) with a dated stopping point, but outcomes are not in the documents read, and the cluster remains a litigation-filing set rather than a completed story. This matches F-33-1 (the related Jane Doe 1 v. JPMorgan class complaint), which is also a fragment. Links: F-33-1 (Jane Doe 1 v. JPMorgan class complaint, EFTA00162121, Doc 36 — already covered; the USVI suit is the government counterpart); P3 (the civil-litigation thread, which ends in 2019 — these suits are a separate, post-2019 bank-litigation cluster, not a P3 extension).
+- F-35-4. Bank litigation: Jane Doe 1 v. Deutsche Bank; USVI v. JPMorgan Chase, Jan–Apr 2023 Span: Jan 10, 2023–Apr 12, 2023. Anchors: EFTA00161836 (22-cv-10904 Doc 16, filed Jan 10, 2023, DS9, 122 pp.); EFTA00161958 (22-cv-10018 Doc 42, filed Jan 13, 2023, DS9, 163 pp.); EFTA00145666 (22-cv-10904 Doc 119, filed Apr 12, 2023, DS9, 42 pp.). Dated stopping point: Apr 12, 2023 (Second Amended Complaint filed, USVI v. JPMorgan). The Government of the United States Virgin Islands sues JPMorgan Chase Bank, N.A. (First Amended Complaint, Jan 10, 2023, Doc 16, EFTA00161836) for violations of the Trafficking Victims Protection Act, 18 U.S.C. §§ 1591–1595, the Virgin Islands Criminally Influenced and Corrupt Organizations Act, and the Virgin Islands Consumer Fraud and Deceptive Business Practices Act. Jane Doe 1, individually and on behalf of all others similarly situated, sues Deutsche Bank Aktiengesellschaft (First Amended Class Action Complaint, Jan 13, 2023, Doc 42, EFTA00161958): Counts I–XII — knowing beneficiary in a sex-trafficking venture, participating in a sex-trafficking venture, aiding/ab­etting/inducing a sex-trafficking venture, conspiracy, attempt, and obstruction of enforcement, all under the TVPA; violations of RICO and conspiracy to violate RICO; aiding, abetting, and facilitating battery; intentional infliction of emotional distress; negligent failure to exercise reasonable care to prevent physical harm; negligent failure to exercise reasonable care as a banking institution providing non-routine banking services. The USVI suit's Second Amended Complaint, Apr 12, 2023, Doc 119 (EFTA00145666). All counts are the plaintiffs' allegations. Outcomes are not in the documents read. Classification: fragment, not a probable story: the complaints are filed documents forming a connected chain (two suits, same theory, same months) with a dated stopping point, but outcomes are not in the documents read, and the cluster remains a litigation-filing set rather than a completed story. This matches F-33-1 (the related Jane Doe 1 v. JPMorgan class complaint), which is also a fragment.
 
-- F-35-5. Giuffre v. Dershowitz, 19-cv-03377 (S.D.N.Y.), 2019 Span: 2019. Anchors: EFTA00092647 (Doc 101-1 Ex. A, filed Dec 20, 2019, DS9, 41 pp.); EFTA00092688 (Doc 101-3 Ex. C, filed Dec 20, 2019, DS9, 28 pp.). Dated stopping point: Dec 20, 2019 (exhibits filed). Amended Complaint, filed Dec 20, 2019 as Exhibit A to Doc 101 (EFTA00092647): Virginia Giuffre v. Alan Dershowitz, Civil Action No. 1:19-cv-3377 (LAP); Dershowitz counterclaim plaintiff v. Virginia L. Giuffre, counterclaim defendant. Exhibit C (EFTA00092688): transcript of a hearing before Judge Loretta A. Preska, Dec 2, 2019, 9:06 a.m., in 19-cv-3377. The claims are the parties' allegations. The original complaint's filing date and the outcome are not in the documents read. Classification: fragment, not a probable story: the case and its claims are documented by the amended complaint and a hearing transcript, with a dated stopping point, but the original complaint's filing date and the outcome are not established from these documents. Links: Story 7 (Giuffre v. Maxwell — the plaintiff's parallel defamation suit; the Dershowitz suit is a distinct case, not an extension of it).
+-
+F-35-5. Giuffre v. Dershowitz, 19-cv-03377 (S.D.N.Y.), 2019 Span: 2019. Anchors: EFTA00092647 (Doc 101-1 Ex. A, filed Dec 20, 2019, DS9, 41 pp.); EFTA00092688 (Doc 101-3 Ex. C, filed Dec 20, 2019, DS9, 28 pp.). Dated stopping point: Dec 20, 2019 (exhibits filed). Amended Complaint, filed Dec 20, 2019 as Exhibit A to Doc 101 (EFTA00092647): Virginia Giuffre v. Alan Dershowitz, Civil Action No. 1:19-cv-3377 (LAP); Dershowitz counterclaim plaintiff v. Virginia L. Giuffre, counterclaim defendant. Exhibit C (EFTA00092688): transcript of a hearing before Judge Loretta A. Preska, Dec 2, 2019, 9:06 a.m., in 19-cv-3377. The claims are the parties' allegations. The original complaint's filing date and the outcome are not in the documents read. Classification: fragment, not a probable story: the case and its claims are documented by the amended complaint and a hearing transcript, with a dated stopping point, but the original complaint's filing date and the outcome are not established from these documents.
 
-### New fragments in v3.6 (2)
+-
+F-40-1. Post-death fund holds: Honeycomb, Aug 2019 (WS3). EFTA00068100 (DS9, 1 p., read in full): Aug 18, 2019 SDNY AUSA notes of a call with counsel for Honeycomb Asset Management (Reed Brodsky / Stephanie Brooker). Per the notes of what counsel said (secondhand — attributed as such): Honeycomb is “currently holding funds for entities linked to Epstein and Richard Kahn”; counsel “wanted to reach out before returning funds in an abundance of caution”. Southern Trust: liquid — “Honeycomb has approximately $70 million, just liquid, for the benefit of Southern Trust”; “$1M in liquid funds, for benefit of Khan and his spouse”. Illiquid — 2013 Butterfly Trust (value depends on a future public listing) + a private-company LP investment (“Khan, Indyke, and Maxwell are beneficiaries” per the notes). Whether funds were held, returned, or frozen after the call is NOT established. Single call memo, 8 days after Epstein’s death; no hold order, return, or court filing in the document. Fragment, not a story. Cross-links: P34/P35 (Southern Trust), P10 (2013 Butterfly Trust); Ex B Honeycomb receipts 2016–2019 (EFTA00080250). Placement (WS-E, v3.6): fragment only — EFTA00068100 is NOT also a P34/P35/P10 anchor; the P34/P35/P10 entries cross-reference this fragment.
+
+- F-40-2. Wealth valuation, Mar 31, 2017 (WS3). EFTA00811479 (DS9, 7 pp., head + targeted-section depth): “Valuation Report 3/31/2017 — Summary of Assets”. Total assets $445,787,388 (Mar 31, 2017) vs $442,865,647 (Feb 28, 2017). Aircraft itemized: 2001 Bell 430 N331JE $2,500,000 (Hyperion Air LLC); 1988 Gulfstream G-IV N212JE $6,500,000 (JEGE LLC); 1968 Boeing 727 N908JE $250,000 (JEGE Inc); 2008 G550 $15,750,000. Also: Giacometti $25,000,000; Braque $5,000,000; “Leon Loan Payable -$22,500,000” (a line item only — its meaning is not stated in the document and is not interpreted here); “Pagano Diamonds $500,000”; 32.73-carat emerald-cut diamond, insurance value $5,400,000. Single-date snapshot, no arc — fragment, not a story. Cross-links: P15 (aircraft valuations), P38 (Gratitude America lines).
+
+- F-40-3. SPIEF 2014 silver USB seized in the Jul 2019 mansion search (WS5). EFTA00097227 (FBI Collected Item Log, event “Search Warrant Executed at 9 East 71st Street,” dated 07/16/2019, case 31E-NY-3027571); EFTA00076712 (search-warrant application, SDNY Case No. 20 MAG 6719); EFTA00153048 (the 20 MAG 6719 warrant); EFTA00075551 (warrant, same case). A “SPIEF 2014 silver USB” (FBI barcode E6515017, “Subject Device-17”) was seized July 11, 2019 “from a cabinet on the back wall of a storage closet” at 9 East 71st Street; a “Cruzer Guide USB” was seized from the same cabinet. The device inventory recurs across DS9 warrant/receipt filings — at least 21 carry “Subject Device-17” (capped sample; true count not measured), at least 18 carry barcode E6515017 — one inventory filed many times, not many devices. Boundary: the USB’s contents are NOT described in any item read; the fragment is the seizure and inventory, not what the drive held. Links: Story 31 (SPIEF/Belyakov), Story 3 (SDNY 2019 case).
+
+- F-40-4. Anonymous Nov 2019 extortion solicitation — Zorro burial claim, 1 BTC demand (WS5). EFTA00067066 (DS9, 2 pp, read in full): Nov 21, 2019 ProtonMail message, forwarded Nov 25, 2019 by Eddy Aragon, from an anonymous sender claiming to be former Zorro staff: alleges two unnamed foreign girls were buried outside Zorro, offers video links, and demands 1 bitcoin (“The USB will be sent anonymously to your attention by overnight courier upon receipt of the funds.”). ALLEGATION in a solicitation demanding payment — reported as an allegation in a document, never as fact. No victim names appear (none are given in the document). The video links were not opened, followed, or recorded. Adjacent to P29 in kind, NOT merged — no document establishes this solicitation is the P29 matter.
+
+- F-40-5. $27M aircraft purchase LOI, Dec 26, 2014 (“30751”) (WS5). EFTA01003217 (DS9, 6 pp): Darren Indyke → Epstein, Dec 26, 2014: “Draft LOI for 30751 attached. $27MM Purchase Price with 10% deposit within three business days after acceptance. Draft Sales Agreement within 5 business days after acceptance… Closing 4 business days after correction of discrepancies… LOI and purchase is subject to execution of the Aircraft Sales Agreement.” Boundary: the aircraft is identified only as “30751” in the email text — tail, model, and seller are NOT established from this document. “30751” also appears in 19 DS11 docs (cross-set thread). Links: P15 (aircraft acquisition) — adjacent, not an established leg.
+
+- F-40-6. USVI residence / travel notification, Nov 29, 2014 (WS5). EFTA01002440 (DS9, 1 p, read in full): Epstein → Darren Indyke, Nov 29, 2014, formal notice: returned Nov 28, 2014 to his permanent residence on Little St. James, U.S. Virgin Islands; plans to travel Nov 30 to Cambridge, Massachusetts (Charles Hotel, 1 Bennett Street, overnight), Dec 1 to his New York home until Dec 5, then return to the U.S. Virgin Islands. Single compliance/travel-notification letter; no trip arc is traced and no stay is corroborated beyond the letter itself. Links: P2 (supervision/travel-notification pattern) — adjacent, not an established leg.
+
+- F-40-7. (Bulk) Aircraft maintenance / logbook bundles for six tails — no Epstein link in indexed text (WS5). EFTA01095993 (718 pp, Gulfstream status/log, Oct 17, 2014), EFTA01093592 (684 pp, N62MS, Feb 20, 2016), EFTA01095330 (663 pp, N863MF, May 12, 2016), EFTA01096711 (604 pp, HB-IVZ, May 13, 2015), EFTA01094276 (609 pp, Gulfstream G550, operator Shanghai Deer Jet Co., Ltd., Dec 2, 2015), EFTA01094885 (445 pp, N93AT, GIV, Mar 2, 2012). Gulfstream maintenance/status/logbook bundles swept into DS9. No “Epstein”, “Hyperion”, “Jeffrey”, “N908JE”, “N722JE”, or “Little St” token appears in the indexed FTS text of any of the six sampled. Boundary: five of the six exceed 1M chars, so their unindexed tails (beyond the FTS cap) were NOT searched; the “no link” finding covers indexed text only. Why these records are in the production is NOT established from the items read. Links: none. Bulk, not a story.
+
+- F-40-8. (Bulk) Non-Epstein content swept into the DS9 production (WS5). EFTA01160176 (3,927 pp — a full book scan, “A Manual of Peace: 38 Steps towards Enlightened Living,” Dhammakaya Foundation, 2005); EFTA01097655 (160 pp — Deutsche Bank Markets Research, “HY E&P Sector Update & 2015 Outlook,” Jan 13, 2015); EFTA01085356 (324 pp — Apollo Global Management LLC Form 10-K, fiscal year ended Dec 31, 2011, filed Mar 9, 2012). Whole documents with no Epstein nexus on their face. The 10-K is association context for Leon Black at most (Apollo is his firm), not evidence of anything. Recorded so the atlas does not force bulk into arcs. Links: none.
+
+- F-40-9. (Bulk/note) One litigant letter filed five times in DS9 — do not count its name-hits as five sources (WS5). EFTA00039665 (24 pp), EFTA00039689 (101 pp), EFTA00039828 (39 pp), EFTA00040288 (55 pp), EFTA00040401 (55 pp). The same letter (allegations about a UBS deferred-prosecution agreement and claims involving Trump advisers/campaign staff Bannon and Parscale, Leon Black, Milken and others in OTCM money-laundering shells) recurs inside five different DS9 bundles of different sizes. Its name-hits (Clinton, Trump, Bannon, Leon Black, Summers) across these five Bates IDs are ONE letter, not five independent sources. Boundary: the contents are a litigant’s allegations, unadjudicated; nothing in the letter is adopted as fact. v3.5 md already records EFTA00039665 as removed from a story for not supporting it; it is not a story anchor in v3.5. Links: none.
+
+- F-40-10. Sun Spark / Light and Strong investment thread, Nov 14–25, 2014 (WS-C). Span: Nov 14–25, 2014. Anchors (all DS9, read in full): EFTA01000304, EFTA01001318, EFTA01001395, EFTA01001400, EFTA01001636. Dated stopping point: Nov 25, 2014. Nov 13–14 — Barak to Epstein: the Baraks met friends of Epstein's at the Breakthrough Prizes event, are in Miami, will be in NY Nov 19–20 and ask whether Epstein is in town and can meet; Barak will send more materials on 'the Drones investment' and notes 'We have to let our lawyer with theirs (Viktor Tshuva). And make final decision.' (EFTA01000304; the Nov 19–20 meeting proposal is a Story 13 prologue leg — see Story 13 — proposed only, completion not established.) Nov 15 — Barak forwards the 'SUN SPARK - Overview - 13.11.14.pptx' deck: 'I'm ready to talk. I mistakenly didn't send it 2hrs ago' / 'Pl have a look into it. I'll call you if that's ok with you in about three hours.' (EFTA01001318; the deck itself is NOT in the text layer — attachment filename only.) Nov 22 — Epstein: 'tshuva attnys have not responded' (EFTA01001395); Barak: 'Thx. I'll check it immediately.' (EFTA01001400, subject 'Re: light&strong. Tshuva.'). Nov 24–25 — Epstein forwards Indyke's 'light and strong' chain: 'we are pushing as fast as we can.' Inside, Victor Teshuva (Barak's lawyer) to Indyke: the company raised $1.4M in its last round and has put fundraising on hold at the company's request; financial statements in translation; and (Nov 24) a proposed term-sheet, the company's current cap table, and an expert report by Shlomo Tzach — Barak having set the target, on a Nov 22 call with 'Mr. Erez and Mr. Amir', of concluding drafting and executing the investment agreement by the end of November. The Nov 24 letter also raises Barak's directorship, including heading the board as chairman, remuneration, and timeline, and lists the Sun Spark deck among its attachments (filename only). (EFTA01001636.) Execution of the agreement by end of November 2014 is NOT established in the documents read, and no payment document was found. Cross-set duplicates (Barak mailbox, content-level): EFTA01001318 is a standalone duplicate of main 16727; EFTA01001395 of main 16879; EFTA01000304, EFTA01001400, and EFTA01001636 exist in the mailbox only embedded inside later forwards (main 17005, 16644, 18080). Links: Story 13 (Nov 19–20 meeting proposal).
+
+- F-40-11. Brunel U.S. visa thread, Nov 5–Dec 4, 2014 (WS-C). Span: Nov 5–Dec 4, 2014. Anchors (all DS9, read in full): EFTA01000034, EFTA01000037, EFTA01000044, EFTA01000050, EFTA01000553, EFTA01001289, EFTA01001295, EFTA01001841. Dated stopping point: Dec 4, 2014. Nov 5, 2014 — Jean-Luc Brunel to Epstein (12:36 PM): 'It seems that my visa will not be renewed because of all the Internet allegations and my involvement linked to your case. Problem'. Epstein (4:40 PM): 'is that in a letter or is it speculation from an attny'. (EFTA01000034; EFTA01000037 is a second filing of the same exchange.) Brunel's non-renewal account is HIS OWN STATEMENT, not a verified determination — and Epstein's reply questions whether it rests on a letter. Epstein (4:57 PM): 'I tried to call you' (EFTA01000044). Brunel (7:22 PM, quoting the call attempt): 'I had to withdraw the application. It is done to avoid to be denied' (EFTA01000050) — he withdrew the application himself; no denial is documented in the documents read. Nov 11 — Epstein: 'what can i do to help?' (EFTA01000553). Nov 14 — Brunel: 'Call me when you can' (EFTA01001289); Epstein: 'number' (EFTA01001295). Dec 4 — Brunel: 'Will try to be back in Ny next week' (EFTA01001841) — a plan, not a completed return. Cross-set duplicates (direct text match): the Nov 5 exchange also sits in DS11 as EFTA02360401 (Brunel's message) and EFTA02594460 (Epstein's reply) — the same exchange, counted once. Not a P22 extension: P22 is U.S.–France cooperation on the Brunel investigation (MLAT, Nov 2019–Jan 2021), a different subject and era. Links: P22. The Nov 5 exchange was also recorded as a separate WS-D fragment in v3.6 (F-36-7); in v3.83 that fragment is folded into this thread and the F-36-7 number is retired, not reused.
+**Live-line fragments carried into v3.83 (transcribed verbatim from the live v3.82 page, Grok Bot DS8 sub-passes v3.6–v3.9; anchors as recorded in the live v3.82 JSON):**
 
 - F-36-1. SDNY and FBI search-warrant data accounting, Feb 15 to Apr 8, 2020. EFTA00029444 (DS8, 6 pp., read in full): an SDNY AUSA asks the FBI/NYPD forensic team for a device-by-device accounting of what was seized, dumped, reviewed, and transferred; says the case team received "well over a million documents" without device labels; the search warrant returns list "approximately 40 devices" with storage plus "at least 60+ CDs" from the New York residence and "at least more than 25 devices, including multiple servers / server racks" from the Virgin Islands. Mar 4, 2020: the examiner reports 9 IDE drives found in the Manhattan residence "turned out to be 3 copies of 3 drives... from a July 2007 search on one of his properties"; Windows machines and loose media from New York handed over; only 2 Macs from New York and 1 from the island processed. Mar 9, 2020: SDNY lists load-file defects (no email/attachment linking, no native links, mismatched control numbers). Apr 7 to 8, 2020: a conference call is scheduled. Process record only; no finding about content. Dated stopping point Apr 8, 2020 (call scheduled; whether it was held is not established). Links: Story 3, Story 5, P28.
 
 - F-36-2. Epstein asks a contact to call JPMorgan's lead counsel, Feb 7, 2011. EFTA00029436 (DS8, 1 p., JPM-SDNY-00001413, JPMorgan production): "Kenny, Steve Culter [sic] at JPM, says he has left a number of messages for you.. I would really appreciate it if you could call him. As I had mentioned to [y]ou - He is the lead counsel for Morgan, and needs to be reassured that I am a good egg." Recipient's full name not in the text layer ("Kenny" only). Single document; same JPMorgan production run and period as P49's EFTA00029437 (Mar 2011). Not merged into P49 (no Staley in the document). Links: P49, P27.
 
-### New fragments in v3.7 (8)
-
-- F-37-1. Palm Beach Police file 2600-8 continuation, Oct 2005 to Aug 2009. EFTA00077923 and EFTA00090685 (DS9, two copies of the PBPD case report; 2600-8 portions read, not the full ~50 KB text): after the Oct 11, 2005 note, supplements are filed under 2600-8: trash pulls at 358 El Brillo on Oct 18 to 20 and Nov 14 to 18, 2005 (one note with a telephone number held for follow-up; the pulls are then discontinued on a sergeant's instruction); a residence search warrant executed (date not captured in the text read); a 07-03-08 entry on the Jun 30, 2008 plea and sentence; an entry that a planned meeting with attorney Edwards' clients did not occur because they "were already covered" by the original agreement; and an 08/25/09 entry quoting news of the Jul 22, 2009 release. Resolves the v3.5/v3.6 "PBAC file 2600-8 continuation" flag as located. Links: P51, Story 1. v3.9 extension: EFTA00013428 (1 p., Oct 11, 2021) forwards a draft 302 for files the detective says were picked up the previous Friday. EFTA00013429 (1 p., marked DRAFT, describing Oct 8, 2021) reports receipt of two boxes marked Epstein from a locked Palm Beach Police storage room, additional reports and digital notes from the case-management system, and a subpoena and property receipt. The draft reports no other related boxes observed in the locations shown; that is not proof no other records existed. This is a later collection/custody leg, not a new 2005 trash-pull event, and it does not establish that a particular 2600-8 item was inside these boxes. Draft status retained. Later collection stopping point: Oct 11, 2021 cover email.
+- F-37-1. Palm Beach Police file 2600-8 continuation, Oct 2005 to Aug 2009. EFTA00077923 and EFTA00090685 (DS9, two copies of the PBPD case report; 2600-8 portions read, not the full ~50 KB text): after the Oct 11, 2005 note, supplements are filed under 2600-8: trash pulls at 358 El Brillo on Oct 18 to 20 and Nov 14 to 18, 2005 (one note with a telephone number held for follow-up; the pulls are then discontinued on a sergeant's instruction); a residence search warrant executed (date not captured in the text read); a 07-03-08 entry on the Jun 30, 2008 plea and sentence; an entry that a planned meeting with attorney Edwards' clients did not occur because they "were already covered" by the original agreement; and an 08/25/09 entry quoting news of the Jul 22, 2009 release. Resolves the v3.5/v3.6 "PBAC file 2600-8 continuation" flag as located. Links: P51, Story 1. v3.9 extension: EFTA00013428 (1 p., Oct 11, 2021) forwards a draft 302 for files the detective says were picked up the previous Friday. EFTA00013429 (1 p., marked DRAFT, describing Oct 8, 2021) reports receipt of two boxes marked Epstein from a locked Palm Beach Police storage room, additional reports and digital notes from the case-management system, and a subpoena and property receipt. The draft reports no other related boxes observed in the locations shown; that is not proof no other records existed. This is a later collection/custody leg, not a new 2005 trash-pull event, and it does not establish that a particular 2600-8 item was inside these boxes. Draft status retained. Later collection stopping point: Oct 11, 2021 cover email. v3.86 extension — EFTA00077923 (Palm Beach Police case report, printed Oct 8, 2021) read in full in the DS9 cut-47 pass also prints five entries the atlas had not captured: (1) Jul 18, 2008 — after a press report, the officer telephoned an ASA and asked which victims the plea covered; told all victims presented originally in the probable-cause affidavit were covered; (2) Aug 19, 2009 — the officer confirmed with Epstein's probation officer what he was allowed to do while on community control for one year, and, while driving in the area, observed Epstein walking northbound along the ocean; (3) Oct 9, 2009 — a state prosecutor reported Epstein had come to a victim's deposition, in apparent breach of a no-contact condition, and was seeking prosecution; the officer suggested she contact the federal prosecutor (an account of a prosecutor's report, not a finding; not merged with the carried Sep 16, 2009 no-contact letter — dates differ); (4) Oct 17, 2019 — note on Epstein's death (Aug 10, 2019 as reported by news outlets; Jul 6, 2019 arrest on federal charges); (5) Sep 2020 — abusive email from a member of the public (Sep 6–7, 2020 forwarded email, subject "Epstein's Buddy Clinton"). Entries (1) and (2) fall inside this fragment's Oct 2005–Aug 2009 span; entries (3)–(5) are later entries printed in the same case report and are recorded here as such, not as part of the 2005–2009 continuation; the fragment's stopping point is unchanged. The "2600-8 portions read, not the full ~50 KB text" qualifier above is superseded for this copy by the full read. EFTA00077923 is NOT added as a new anchor — it was already carried in this fragment and in Story 1. Added per merge direction answering flag F-3129-4; no separate ruling by Thomas.
 
 - F-37-2. DOJ Office of International Affairs letters, Apr 7 and Dec 30, 2020. EFTA00022061 (Apr 7, 2020): OIA (U.S. Embassy London) transmits to the UK Central Authority a request for the interview of a witness and documents, captioned "Material Witness PA", for an SDNY/FBI sex-trafficking investigation; the designation is not expanded in the document and is not identified here. EFTA00023110 (Dec 30, 2020): OIA Paris forwards to an SDNY AUSA an incoming French request for legal assistance under the 1998 U.S.-France MLAT (CRM-182-74832; French MOJ/BEPI 2020002015); the investigation's subject is redacted. Requests sent/received; execution not documented. Links: Story 5, P22.
 
@@ -4330,544 +4881,20 @@ F-33-12 and F-33-13 retired in v3.4 — folded into F-33-11 above (both resolved
 
 - F-37-8. SDNY WebEx with former Gov. Bill Richardson's new attorneys, May 13, 2021. EFTA00028594: an SDNY attorney asks for time to discuss a WebEx held that day with "former Governor Bill Richardson's new attorneys", attaching 2019 correspondence about interactions with his prior counsel (embedded, not read). The subject of the discussions is not stated; contact with counsel is not an allegation.
 
-### New fragments in v3.9 (1)
-
 - F-39-1. Bruce Green's filed correction of a professional-role attribution. EFTA00011025 (1 p., filed Sep 4, 2019 in 19-cr-490, Doc. 55) responds to remarks at the Aug 27 hearing: Green says he had never been counsel to Epstein, his estate, or anyone in an Epstein-related case. He distinguishes an expert declaration supporting a motion to disqualify Boies and his firm in a related defamation case from serving as counsel or advocate, and says that expert work ended in June. This is Green's own correction, not an adjudicated finding; it prevents an unsupported counsel-role inference. Single filed letter, no resolution of the underlying litigation established here. Classification: fragment. Links: Story 3, P3.
 
 ## Verification and review scope
-DS9 cuts 1–40: 2,000 listing entries examined; 1,967 retrieved (1,401 full condensed reads, 341 full-text scans, 1 lower-confidence OCR read and 224 near-duplicates); 7 unavailable and 26 unobtained media. The delivery reports 2,802 story-anchor entries; the public edition contains 2,643, including 185 added exact DS9 locator entries and 159 further minimized entries. The three latest cuts report 33/33 primary and 24/25 independent checks. The near-duplicate threshold check failed in each; reviewer acceptance is not a passing check. Cut 38 adapted two primary checks to exclude exact queue-pointer and case-citation metadata. DS9 remains incomplete.
+Merged v3.86 over the separately published v3.122: 85 stories, 150 fragments and 3,276 public story-reference entries. The delivery contained 3,095 references; this union preserves every prior public reference as well. References include repeated and citation-only material and are not independent proofs. The partial role ledgers do not establish a complete distinct-substantive total. DS9: 2,350 listing entries processed through cut 47: 1,644 condensed reads, 295 near-duplicates, 376 scans, one lower-confidence OCR read, seven unavailable entries and 27 unobtained media. These are crew-reported reading depths. Latest cuts report 33/33 primary and 25/25 independent checks; cut 42 reports 24/25, and cuts 43–45 are represented by cumulative findings rather than complete validation folders. Prior cuts retain their disclosed check failures and scope adaptations. Source-level validation was not repeated. DS8 and DS9 remain incomplete. No current DS8 unopened total has been established.
 **Completed DS8 passes through v3.82:** the actionable first-open pass, non-protected substantive deepening pass, and 1,050-document protected pass are complete at their stated depths. The protected pass added 191 anchors. The v3.82 baseline contains 2,458 story-anchor references across all sets, 82 mapped stories and 139 fragments. These are surveyed counts, not a corpus census.
 The inherited 4,167-document partial queue now comprises 3,899 condensed text-layer reads, 82 opening-only reads, four structure scans, 55 near-duplicates with residual lines read, and 127 bulk items dropped after earlier screening. The image queue contains 223 lower-confidence OCR reads and 165 “No Images Produced” placeholders. The two queues overlap by 86 IDs and must not be added as distinct-document totals. The two earlier capped skips were characterized without an established story connection.
 **Reading method:** condensed reads inspect lines not already read in another document or packet, omitting repeated lines, selected address headers and confidentiality footers. This does not establish human review or a full page-image audit. Opening-only reads and scans are not full reads. A dropped bulk item is a screening decision, not proof it contains no story.
 **Still open:** completing the 82 opening-only reads and four structure scans; reassessing the 127 screened bulk items if warranted; image confirmation of OCR-dependent details, especially EFTA00032184 and the two P20 deeds; 66 deferred Amex/mega documents. The House Oversight full pass and DS9 torrent remain deferred. The DS9 listing-order pass is ongoing. DS8 is not represented as fully read.
-The source crew reports 33 primary and 25 independent checks passing for each protected-pass cut, with disclosed adaptations for the changed reading scope. Publication review reconciled the supplied ledgers and anchor lists and checked the site output; it did not repeat source-level validation against the full corpus. Victim and witness narratives are minimized in this public copy; placeholders never establish distinct-person counts or cross-document identity.
-
-## Document-level verification (v3.0)
-
-Workstream 4 (Nov 5, 2026) verified every carried story's anchors directly
-against corpus.db / house_oversight.db / the Barak DBs using the Standard's
-per-ID form (MATCH 'bates : EFTA…'; joins on bates, never rowid). 486 JSON
-anchors checked; 480 support; 6 do not support; 1 non-ID JSON string (P13);
-0 not found among story anchors. All 97 md-only EFTA IDs and 9 md-only HO IDs
-in the v2.1 md were checked and exist. Fragments: all anchors exist except
-EFTA00005286 (removed in v3.0 — no such document in corpus.db); 15 fragment
-anchors content spot-checked, all support their fragment descriptions.
-Caveat: most DOJ anchors are multi-hundred-page filings; support was verified
-against the passages the atlas cites (opening pages, headers, filing stamps,
-targeted full-text assertions), not by reading every page. Barak HTML bodies
-were verified after stripping CSS/style blocks. Already-verified items
-(v1.2's 3 items, Phase 2 step 1's 5 checks) were carried, not re-verified,
-except where spot-confirmed as noted.
-
-Status key: **V** = document-level verified (all anchors support) ·
-**V-C** = verified, tier kept, non-load-bearing anchor correction(s) ·
-**DG** = downgraded · **AV** = already verified, carried ·
-**V-WS1/2/3** = verified in the named v3.0 workstream.
-
-Story
-v2.1 tier
-Anchors checked
-Supports / Does-not-support / Not-found
-Status
-
-1 Palm Beach → 2008 NPA
-confirmed
-35
-35 / 0 / 0
-V
-
-2 Declared NPA breach, June 12, 2009
-confirmed
-4
-2 / 2 / 0
-**DG → probable** [v3.1 title]
-
-3 SDNY federal case 2019
-confirmed
-30
-29 / 1 / 0
-V-C
-
-4 MCC detention and death
-confirmed
-32
-32 / 0 / 0 (content) — 7 anchors misattributed to DS1–8 slice, actually DS8
-V-C
-
-5 Maxwell case
-confirmed
-32
-32 / 0 / 0
-V
-
-6 Rothstein/Edwards Ponzi
-confirmed
-6
-6 / 0 / 0
-V
-
-7 Giuffre v. Maxwell defamation
-confirmed
-8
-8 / 0 / 0
-V
-
-8 Epstein–Bannon contact
-confirmed
-18
-18 / 0 / 0
-AV (+ spot-confirmed)
-
-9 Epstein–Wolff correspondence
-confirmed
-4
-4 / 0 / 0
-V
-
-10 Schwab spring-2019 accounts
-confirmed
-4
-4 / 0 / 0
-V
-
-11 FirstBank subpoena → production
-confirmed
-4
-4 / 0 / 0
-V
-
-12 Barak–Putin–Qatar/Carbyne
-confirmed
-10
-10 / 0 / 0
-AV (+ spot-confirmed)
-
-13 St. Thomas trip / "Ronen Cohen"
-confirmed
-9
-9 / 0 / 0
-AV (all read in full this pass)
-
-14 Renova/Hungary + CIFC
-confirmed
-9
-9 / 0 / 0
-V
-
-15 Kazakhstan / IIAC
-confirmed
-5
-5 / 0 / 0
-V
-
-16 Guardicore via TrueSec
-confirmed
-9
-9 / 0 / 0
-V
-
-17 Temko book project
-confirmed
-6
-6 / 0 / 0
-V
-
-18 Paid arrangement (negotiation/claim only)
-confirmed
-3
-3 / 0 / 0
-V
-
-19 Chomsky Cambridge meeting
-confirmed
-4
-4 / 0 / 0
-V
-
-20 Reporty investment arc
-confirmed
-4
-4 / 0 / 0
-V
-
-21 Birthday book
-confirmed
-11
-11 / 0 / 0
-AV (DS9 leg) + V (DS11 leg)
-
-22 Barak May 2017 NY stay
-confirmed
-9
-9 / 0 / 0
-V
-
-23 LSJ island visit, Jan 16, 2018
-confirmed
-8
-8 / 0 / 0
-AV (DS9 leg) + V (DS11 leg)
-
-24 U.S. v. Noel & Thomas, 19 Cr. 830
-confirmed
-17
-17 / 0 / 0
-V
-
-25 OPR investigation of 2008 NPA
-confirmed
-6
-6 / 0 / 0
-V
-
-26 Hyperion S-76C++ sale $1.8M
-confirmed
-7
-7 / 0 / 0
-V
-
-27 Interlochen subpoenas
-confirmed
-9
-9 / 0 / 0
-V
-
-28 Radar Online FOIA → case closed
-confirmed
-3
-3 / 0 / 0
-V
-
-P1 CVRA suit
-probable
-11
-11 / 0 / 0
-V
-
-P2 Florida supervision
-probable
-5
-5 / 0 / 0
-V
-
-P3 Civil litigation & settlements
-probable
-14
-12 / 2 / 0
-V-C
-
-P4 Apollo / Leon Black
-probable
-5
-5 / 0 / 0
-V
-
-P5 Sydney lead
-probable
-3
-3 / 0 / 0
-AV
-
-P6 2016 election watch
-probable
-3
-3 / 0 / 0
-V
-
-P7 Flight logs → deposition use
-probable
-6
-6 / 0 / 0
-V
-
-P8 Maxwell bank paper
-probable
-9
-9 / 0 / 0 (1 cover-only)
-V-C
-
-P9 LSJ Employees / LSJE account
-probable
-5
-5 / 0 / 0 (1 misdescribed)
-V-C
-
-P10 Butterfly trusts
-probable
-4
-4 / 0 / 0
-V
-
-P11 VI Foundation brokerage/banking
-probable
-4
-4 / 0 / 0
-V
-
-P12 Summers introduction → contact
-probable
-3
-3 / 0 / 0
-V
-
-P13 Andrew Nov 2010 NY visit arranged
-probable
-10 (9 IDs + 1 non-ID string)
-9 / 0 / 0 (+1 JSON defect)
-V-C (JSON defect; legs AV) [v3.1 title]
-
-P14 Ruemmler counsel arc
-probable
-4
-4 / 0 / 0
-V
-
-P15 Air Ghislaine / S-76 acquisition
-probable
-13
-12 / 1 / 0 (1 weak)
-V-C
-
-P16 S76D demo flight
-probable
-12
-12 / 0 / 0
-AV (DS9 leg) + V (DS11 leg)
-
-P17 Zorro Ranch Moskowitz visit
-probable
-5
-5 / 0 / 0
-V
-
-P18 NYT v. BOP FOIA
-probable
-13
-13 / 0 / 0
-V
-
-P19 Successive wills 2001–2014
-probable
-4
-4 / 0 / 0
-V
-
-P20 Civil forfeiture thread
-probable
-7
-7 / 0 / 0
-V
-
-P21 USVI v. estate
-probable
-2
-2 / 0 / 0
-V
-
-P22 U.S.–France cooperation (Brunel)
-probable
-4
-4 / 0 / 0 (2 header-only stubs)
-V-C
-
-P23 Victims' Compensation Program
-probable
-11
-11 / 0 / 0
-V
-
-P24 Estate probate opens
-probable
-2
-2 / 0 / 0
-V
-
-P25 Scotland Yard referral
-probable
-2
-2 / 0 / 0
-V
-
-P26 Boies Schiller subpoena fight
-probable
-4
-4 / 0 / 0
-V
-
-P27 Doe v. JPMorgan/Deutsche
-probable
-9
-9 / 0 / 0
-V
-
-P28 Estate video review
-probable
-5
-5 / 0 / 0
-V
-
-P29 Darknet threat / Australia
-probable
-2
-2 / 0 / 0
-V
-
-29 Daily Mirror query
-confirmed
-3
-3 / 0 / 0
-V-WS2
-
-30 Barak–SAIL
-confirmed
-6
-6 / 0 / 0
-V-WS2
-
-31 Barak at SPIEF 2015
-confirmed
-6
-6 / 0 / 0
-V-WS2
-
-P30 Unseal fight
-probable
-5
-5 / 0 / 0
-V-WS1
-
-P31 Victim-briefing program
-probable
-9
-9 / 0 / 0
-V-WS1
-
-P32 Edwards v. Dershowitz depositions
-probable
-2
-2 / 0 / 0
-V-WS1
-
-P33 Nikolic separation process
-probable
-3
-3 / 0 / 0
-V-WS1 [v3.1 title]
-
-P34 Black → Southern Trust 2013
-probable
-3
-3 / 0 / 0
-V-WS3
-
-P35 Southern Trust FirstBank 2016–2020
-probable
-1 bundle (25 advices)
-25 / 0 / 0
-V-WS3
-
-P36 F T Real Estate
-probable
-2 bundles (13 movements)
-13 / 0 / 0
-V-WS3
-
-P37 LSJE 9295 returned wire
-probable
-3
-3 / 0 / 0
-V-WS3
-
-P38 Gratitude America
-probable
-2 bundles (4 dated credits)
-4 / 0 / 0
-V-WS3
-
-P39 Cypress Inc funding
-probable
-1 bundle (6 credits)
-6 / 0 / 0
-V-WS3
-
-P40 LSJ LLC funding 2003–2011
-probable
-4 (endpoints verified; 316 lines parser-counted in v3.0; v3.3 WS4 correction: 329)
-4 / 0 / 0
-V-WS3
-
-P41 Zorro Development Corp funding
-probable
-3 (endpoints verified; 97 lines parser-counted)
-3 / 0 / 0
-V-WS3
-
-Non-supporting / defective anchors corrected in v3.0 (WS4 §4): Story 3 —
-EFTA01000647 removed (2014 "ok send her to teterboro" email, no connection
-to the 2019 case). Story 4 — seven MCC anchors re-attributed from "DS1–8"
-to DS8. P3 — EFTA00039295 (BOP telephone regulations) and EFTA00040126
-(Maxwell Rule 17(c) motion) removed. P8 — EFTA00024310 re-described as
-cover-only (the $1.07M purchase leg rests on EFTA00020368); "Granite
-Realty" corrected to "Granite Reality LLC" as the document spells it. P9
-— EFTA01295221 re-described (Mar 13, 2013 rename certificate, not Oct 27,
-2011 organization). P15 — EFTA02679035 removed (metal-plating pricing
-email, no aircraft content); the "bill of sale Dec 22, 2020" claim
-withdrawn (both cited IDs are the Jul 22, 2021 N550GP temporary
-certificate). P13 — non-ID string removed from the JSON anchor list. P22
-— EFTA00020904 / EFTA00021719 re-described as header-only stubs. Fragment
-anchor EFTA00005286 deleted (no such document in corpus.db).
-
-Open flags verified in this pass (WS4 §8, carried into the v3.0 changelog):
-Story 24 indictment date Nov 19, 2019 (resolved — see WS5 flag 1); Story 5
-/ Story 3 Maxwell conviction Dec 29 vs Dec 30, 2021 (real discrepancy —
-resolved in WS5 flag 2 as Dec 29 verdict, Dec 30 the later summary's
-dating); Story 1 plea-hearing date Jun 20 vs Jun 30, 2008 (real
-in-document discrepancy — resolved in WS5 flag 3 as Jun 30, with Jun 20
-the transcript's internal error); Story 26 closing date NOT established
-(confirmed — delivery receipt cited at EFTA00022867–68); P19 "Lawrence H.
-Summers" identity NOT established (confirmed — narrowed in WS5 flag 4);
-P25 endpoint (Aug 10, 2015 Met reply) verified; Story 4 OCME endpoint
-verified at relay level; Story 7 upgrade (EFTA00015726 complaint)
-verified; Story 10 amounts verified across three anchors jointly; P11
-date verified; P24 inventory verified; P27 $1,000,000 determination
-verified (one claimant's amount, not a fund total).
-
-## Document-level verification (v3.2)
-
-Workstream verification, per crew, all against the underlying documents (Standard per-ID form MATCH 'bates : EFTA…'; joins on bates, never rowid):
-- WS1 (DS10 statements): all 58 cited anchors per-ID verified against corpus.db (exactly one DS10 row each). The 5 HBRK anchors were additionally spot-verified by the coordinator.
-- WS2 (DS8 deeper survey): all 117 anchors verified with MATCH 'bates : EFTA…' — exactly one FTS row each, data_set 8.
-- WS3 (Barak follow-ups): ~59 anchor rows body-read in full across all five Barak DBs.
-- WS4 (dedup hygiene): method is canonical-content dedup (html-unescape → delete EFTA/HOUSE_OVERSIGHT/FirstBankPR stamps → whitespace/case fold → SHA-256), cross-checked against the Nov 4 hash form; advice bundles deduped by IMAD / (date, direction, amount) signatures; IMAD-date rule validated 101 agree / 0 disagree across all 15 FirstBank bundles.
-- WS5 (OCR sweep): every claimed leg verified per-ID against document text; all 129 candidate IDs machine-checked against the v3.1 JSON (127 genuinely new; 2 already anchored — EFTA00184224, a P1 anchor cited as SORA-overlap evidence; EFTA00037868, already anchored).
-- Coordinator: the 45 key new-story and extension anchors (P42's 5, P45's 9, the WS2 MLAT/OIG/LSJ anchors, the WS5 key legs, the WS1 fragment anchors, EFTA01273181) per-ID verified against corpus.db — all exist, exactly one FTS row each, in the expected sets.
-
-JSON anchor arithmetic: v3.1 had 609 JSON anchor entries; v3.2 has 877 (added 268). The added entries include the 4 new stories' anchors (P42 5, P43 1, P44 4, P45 14) and the extension anchors listed per story in the changelog §2. Known duplicate copies kept as separate anchors (both copies exist and remain citable; they must not be counted as independent corroboration): P18's two pairs (SDNY Doc 22, SDNY Doc 40 — distinct contents now counted as 11, not 13); Story 5's voir dire memo in 3 copies (EFTA00011096/EFTA00011115/EFTA00065526); Story 4's press thread in 3 copies (EFTA00075817/EFTA00087826/EFTA00128629); Story 9's Wolff thread in 3 copies; Story 31's Beliakov legs in multi-copy groups; P12's Manafort exchange in 6 DS11 copies; Story 20's SUM email in 2 copies.
-
-Corrections applied in v3.2 (see changelog §3): P9 stopping point Jul 24, 2019 → Sep 5, 2019 (56 instances → 53 distinct movements; dated-credit spine 20 → 30); P18 distinct anchors 13 → 11; P35 Feb 2016 handoff NOT established ($150,000 statement vs $300,000 advice); WS3 "161 advice instances" → 170 (9 book-transfer advices missed: 7 in P9's bundles, 1 Jeepers fee advice, 1 Gratitude/FSG fee advice); WS3 316-line FEDWIRE count is a lower bound (EFTA01482834's two LSJ lines missed by the parser); WS2 §6's Story 4 leg count corrected 11 → 12 (the OIG memo plus 11 minor legs); WS2 §6's Story 5 leg count is "~25" by the crew's grouping — 43 DS8 IDs are added to Story 5's JSON anchors (the docket notices and trial filings counted as grouped legs by the crew).
-
-Caveat (carried from v3.0): most DOJ anchors are multi-hundred-page filings; support was verified against the passages the atlas cites (opening pages, headers, filing stamps, targeted full-text assertions), not by reading every page. Barak HTML bodies were verified after stripping CSS/style blocks. P45's DS11 core was phrase-surveyed, not body-read — its fuller read is a v3.3 item.
-
-## Document-level verification (v3.3)
-
-Workstream verification, per crew, all against the underlying documents (Standard per-ID form MATCH 'bates : EFTA…'; joins on bates, never rowid):
-- Coordinator: all 229 new EFTA anchors per-ID verified against corpus.db (exactly one docs row + one FTS row each; DS9 75, DS10 75, DS11 66, DS8 10, DS7 3). P40 tension check: EFTA00682843 carries the "Thu, 23 Feb 2012" wire-confirmation thread; EFTA01482834 carries no "2012" (May 2007 statement) — the Feb 2012 extension rests on EFTA00682843.
-- WS1 (NONPROSECUTION + FIRSTBANK): 101 anchor-check lines; 2,627 NONPROSECUTION docs inventoried, all openings triaged; 652 FIRSTBANK docs, all openings read — inventory and expanded survey, not a full pass.
-- WS2 (SAIL/Nowforce/P43): 3 MOU versions parsed in full (v1, EY-comments, SAIL comments on v19); 15 DS11 Sep-2012 cluster contents body-read in full; Nowforce/Bendheim/Yatom searches stated (DOJ corpus + HO).
-- WS3 (Barak remainder): 470 non-co-token docs full-text probed — 0 contain "Barak"; "Barok"/"Beliakov"/"Belyakov"/"Barack" variant populations counted across mailbox, corpus, and HO.
-- WS4 (money resolution): 330 DS11 Spinella core openings read, 14 in full; FEDWIRE parser re-check (316 → 329); Deutsche resolutions read in full; Amex duplication measured (0 duplicates in any testable population; FTS 1,000,000-char cap is a hard limit).
-- WS5 (page images): P35 Feb 11, 2016 figures verified from the page image (neither misread); P9 Sep 5, 2019 date confirmed from the printed Date field (p.12).
-
-JSON anchor arithmetic: v3.2 had 877 JSON anchor entries; v3.3 has 1072 (added 195). The added entries include the 3 new stories' anchors (P46 5, P47 8, P48 1) and the extension anchors listed per story in the changelog §2. Known duplicate copies kept as separate anchors (both copies exist and remain citable; they must not be counted as independent corroboration): P43's three duplicate pairs (EFTA02561234/EFTA02701667, EFTA02560633/EFTA02366153, EFTA02560251/EFTA02701903); P45's Feb 24, 2015 email in 5 filings and May 28, 2015 to-do in 2 filings (v3.2's 8 DS11 anchors = 3 distinct emails); WS4-F1's five near-identical filings of one Gratitude resolution (fragment, md-only).
-
-Corrections applied in v3.3 (see changelog §3): P35 flag rewritten (page-image verified; bundle runs to Oct 31, 2019, not Feb 29, 2016); P9 date confirmed + cite p.11 → p.12; P40 FEDWIRE count 316 → 329 lines (210 → 218 docs) and span/stopping point corrected to Feb 23, 2012; P45 span start Dec 28, 2014 → Feb 17, 2014 + title change; P12 stopping point Oct 27, 2015 → Oct 27, 2017; P1 span/stopping point/endpoint to Apr 15, 2021; Story 1 documented record to Aug 24, 2011; Story 2 record to Sep 26, 2011; Story 11 prologue Mar 2012 + afterlife to Jun 2021; Story 31 span start Apr 28 → Apr 22, 2015; P43 span/endpoint to Sep 24, 2012; WS5 §2.3 Beliakov/Belyakov population correction.
-
-Caveat (carried from v3.0, restated for v3.3): most DOJ anchors are multi-hundred-page filings; support was verified against the passages the atlas cites (opening pages, headers, filing stamps, targeted full-text assertions), not by reading every page. Barak HTML bodies were verified after stripping CSS/style blocks. The 2,140-doc DS11 Spinella space was not body-read in full (330 core openings + sample) — this is an inventory and expanded survey, not a full pass; the remainder (~1,800 docs) is unexamined.
+The source crew reports 33 primary and 25 independent checks passing for each DS8 protected-pass cut, with disclosed adaptations for the changed reading scope. Publication review reconciled the supplied ledgers and anchor lists and checked the site output; it did not repeat source-level validation against the full corpus. Victim and witness narratives are minimized in this public copy; placeholders never establish distinct-person counts or cross-document identity.
 
 WHAT THIS MAP COVERS
 
 ## Coverage and limits
-**Historical coverage table.** The supplied table retains v3.0/v3.2 survey figures and the older story-count headline. These are preserved as historical accounting, not current totals. This release has 82 mapped stories and 139 fragments; current DS8 reading depths and remaining limits are stated above. No full-corpus coverage percentage has been established.
+**Historical coverage table.** The supplied table retains v3.0/v3.2 survey figures and the older story-count headline. These are preserved as historical accounting, not current totals. This release has 85 mapped stories and 150 fragments; current DS8 reading depths and remaining limits are stated above. No full-corpus coverage percentage has been established.
 [Coverage source text](https://grokarchivehub.com/atlas/coverage.txt)
 Methods differ per slice — capped FTS hit rows vs docs read in full vs rows surfaced — so cross-set percentage comparisons are not valid; the table says so instead of forcing false precision. "Unsampled remainder" means NOT
 EXAMINED, CONTENT UNKNOWN — never "story-free." A slice
@@ -4990,6 +5017,6 @@ EXPLICIT OPEN ENDS
 - Anchor eligibility: IDs previously mentioned only in queue notes or range boundaries were excluded by the crew’s strict novelty check. They are not silently added here; a mention alone does not establish a substantive citation.
 - [“Lawrence H. Summers” in the 2014 will](https://grokarchivehub.com/atlas/#story-p19): identity with P12’s Larry Summers is not established; no document states the equation.
 - [Nidal / “Ronen Cohen”](https://grokarchivehub.com/atlas/#story-13): whether they are different people is not established. The Barak-traveled-as-Cohen hypothesis remains unproven.
-- DS9: current ledger records seven unavailable entries and 26 unobtained media. The torrent route is deferred; unavailable material is not classified as deleted.
+- DS9: current ledger records seven unavailable entries and 27 unobtained media. The torrent route is deferred; unavailable material is not classified as deleted.
 
 [Wiki receipt cards](https://wiki.grokarchivehub.com/) · [Identifier dossiers](https://grokarchivehub.com/archive/ids)
