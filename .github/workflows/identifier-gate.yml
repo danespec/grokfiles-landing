@@ -139,6 +139,12 @@ jobs:
           python3 tests/test_archive_vectors_014.py
           python3 tests/test_evidence_review_import_016.py
 
+      - name: Isolated agent authorization and payment-verification contracts
+        working-directory: workers/gah-agent-pilot
+        run: |
+          npm ci
+          npm test
+
       - name: Practical retrieval and exact cache contracts
         run: |
           node tests/test_exact_result_cache.mjs
