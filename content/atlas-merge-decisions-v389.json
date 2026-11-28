@@ -1,0 +1,22 @@
+{
+  "labels": {
+    "V-36": "EFTA00083816",
+    "V-37": "EFTA00083818",
+    "V-38": "EFTA00084191",
+    "V-39": "EFTA00082074",
+    "V-40": "EFTA00082582"
+  },
+  "limits": "Labels track accounts, not verified distinct persons or cross-document identities. V-39 identity with the civil plaintiff is an inference, not established. V-38 is distinct from the intermediary described in the proffer; no identification with the Doe 43 plaintiff is made. V-40 follows self-description through counsel; no interview completion is established. Public narratives remain minimized.",
+  "held_unnumbered": [
+    "EFTA00083823",
+    "EFTA00083885",
+    "EFTA00082513",
+    "EFTA00082648"
+  ],
+  "D6_citation_correction": {
+    "incorrect": "EFTA00081871",
+    "correct_lead": "EFTA00081833",
+    "status": "Unsolicited assertions; no victim label or substantive anchor assigned. Bank and tax identifiers omitted."
+  },
+  "Doc22_correction": "EFTA00084366 Exhibit E pp.81\u201386 reproduce Doc 22 pp.2\u20136; annotation only, no new anchor counted."
+}
